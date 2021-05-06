@@ -8,7 +8,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
 translation-type: tm+mt
-source-git-commit: 5b9e381c154420c57a66e5b41b25bd4754036c60
+source-git-commit: ac75a1c085e13cd934af0f09ceba89c54bbc560a
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 2%
@@ -28,7 +28,6 @@ Adobe Campaign附带一个内置的用户档案表：**nmsRecipient**。 此表�
 * 使用非标准结构的用户档案数据库：可能使用单个实例将保存在具有各种结构的各种表中的用户档案传送到。
 
 本节介绍映射Adobe Campaign中现有表的关键点以及应用于基于任何表执行投放的配置设置。 还介绍了如何为最终用户设计查询界面。
-
 
 >[!CAUTION]
 >

@@ -8,7 +8,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 translation-type: tm+mt
-source-git-commit: 9dcde5cff8b3bdbf240b01967cb27f9de8178f98
+source-git-commit: 0e0cd6eb9fcf656c9ba6c72cd1a782098f9399fe
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%
@@ -17,13 +17,13 @@ ht-degree: 0%
 
 # Adobe Campaign v8有哪些新增功能？{#ac-gs-what-is-new}
 
-Adobe Campaign v8提供了重要的基础架构、安全性、交付性和监控增强。 通过利用云用户档案库技术Snowflake,Adobe Campaign大幅提高了其规模和速度，并能够管理更多客户，以及更高的每小时投放率和交易。
+Adobe Campaign v8提供了重要的基础架构、安全性、交付性和监控增强。 通过利用[!DNL Snowflake](一种云用户档案库技术),Adobe Campaign大幅提高了其规模和速度，并能够管理更多客户，以及更高的投放率和每小时交易。
 
 主要功能包括：
 
 * **快速扩展**。Adobe Campaign v8利用Cloud Database Manager，使查询的速度提高了200倍，扩展了PB级，每小时消息数增加，事务性消息每小时消息数达20M或1.5M/小时，并管理了多达200M的活动用户档案，可能达到1B。
 
-* **连接Adobe Experience Platform**。Adobe Campaign v8支持Adobe Experience Platform/RT-CDP的数据连接器、统一的客户用户档案以及与Journey Orchestration的本机集成。 这些投资将优化Adobe Campaign客户体验并释放新的使用案例，如向活动添加个性化实时客户旅程的能力。
+* **连接Adobe Experience Platform**。Adobe Campaign v8支持Adobe Experience Platform/RT-CDP的数据连接器、统一的客户用户档案以及与Journey Orchestration的本机集成。 这些投资将优化Adobe Campaign客户体验，并释放新的使用案例，如向活动添加个性化实时客户旅程的能力。
 
 * **托管Cloud Services**。Adobe Campaign v8是一款一流的受管Cloud Services，可提供主动式监督、及时警报和服务治理。 营销人员的价值在于更灵活、可扩展的跨渠道活动管理。
 
@@ -40,7 +40,7 @@ Adobe Campaign v8提供了重要的基础架构、安全性、交付性和监控
 
 活动 v8简化了数据管理:没有索引，没有数据库维护。 对于活动 v8，在云数据库上不需要索引。 您只需创建表、复制数据即可进行开始。
 
-Snowflake（又称云数据库）将为您带来速度和耐久性：系统活动峰值没有过载。
+[!DNL Snowflake] 是活动 Cloud Database，它将为您带来速度和耐力：系统活动峰值没有过载。
 
 云数据库技术不需要进行特定的维护来保证性能级别。
 

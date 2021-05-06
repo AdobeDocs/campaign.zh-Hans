@@ -4,9 +4,9 @@ product: campaign
 title: 扩展活动模式
 description: 了解如何扩展活动模式
 translation-type: tm+mt
-source-git-commit: f1aed22d04bc0170b533bc088bb1a8e187b44dce
+source-git-commit: 8e90eb762a6e08077270d4f5852bfc37ac783122
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '235'
 ht-degree: 1%
 
 ---
@@ -45,20 +45,26 @@ ht-degree: 1%
 
    ![](assets/extend-schema-edit.png)
 
-   在以下示例中，我们添加“成员年”属性，为姓氏设置长度限制（此限制将覆盖默认的姓氏），并从内置模式中删除出生日期。
+   在以下示例中，我们添加MembershipYear属性，为姓氏设置长度限制（此限制将覆盖默认的姓氏），并从内置模式中删除出生日期。
+
+   ![](assets/extend-schema-sample.png)
 
    ```
    <srcSchema created="YY-MM-DD" desc="Recipient table" extendedSchema="nms:recipient"
            img="nms:recipient.png" label="Recipients" labelSingular="Recipient" lastModified="YY-MM-DD"
            mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:srcSchema">
-   <element desc="Recipient table" img="nms:recipient.png" label="Recipients" labelSingular="Recipient"
-           name="recipient">
-   <attribute name="Membership Year" label="memberYear" type="long"/>
+    <element desc="Recipient table" img="nms:recipient.png" label="Recipients" labelSingular="Recipient"
+          name="recipient">
+   <attribute label="Member since" name="MembershipYear" type="long"/>
    <attribute length="50" name="lastName"/>
    <attribute _operation="delete" name="birthDate"/>
    </element>
-   </srcSchema> 
+   </srcSchema>
    ```
+1. 断开并重新连接到活动，以检查&#x200B;**[!UICONTROL Structure]**&#x200B;选项卡中的模式结构更新。
+
+   ![](assets/extend-schema-structure.png)
 
 1. 更新数据库结构以应用更改。 [了解详情](update-database-structure.md)
+
 1. 在收件人库中实施更改后，您可以调整数据输入表单以使更改可见。 [了解详情](forms.md)

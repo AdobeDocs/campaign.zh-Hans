@@ -8,10 +8,10 @@ role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4,df76e7ff-3b97-41be-abc2-640748680ff3
 translation-type: tm+mt
-source-git-commit: 0e0cd6eb9fcf656c9ba6c72cd1a782098f9399fe
+source-git-commit: a67c83eb531c795d621fdf36696ae4bde2151dba
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 1%
+source-wordcount: '525'
+ht-degree: 0%
 
 ---
 
@@ -44,9 +44,13 @@ Adobe Campaign附带一组内置技术工作流。 技术工作流在服务器�
 
 复制策略基于表的大小。 将复制某些表。 一些表格将实时复制，而其他表格将按小时复制。 在替换其他表时，某些表将具有增量更新。
 
-**我们应该列表所有表格吗？**
-
-要检查
+| 命名空间 | 表 | 工作流复制 | 实时复制 |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | --------------------- |
+| XTK | xtk:enum<br>xtk:enumValue<br>xtk:enumAlias<br>xtk:folder<br>xtk:formRendering<br>xtk:operator<br>xtk:group<br>xtk:olapCube<br>xtk:xtk<br>xtk:olapMeasure<br>xtk:dictionaryString<br><br> | 是（增量） | 是 |
+| XTK | xtk:opsecurity<br>xtk:rights<br>xtk:operatorGroup<br>xtk:reportHistory<br>xtk:reportRights | 是（完整） | 是 |
+| NMS | nms:budget<br>nms:项目<br>nms:operation<br>nms:plan<br>nms:typologyRule<br>nms:typology<br>nms:extAccount<br>nms:deliveryMapping<br>nms:投放（即时复制）<br>nms:seedMember<br>nms:seedMembernms:webApp<br>nms:trackingUrl（即时复制）<br>nms:service<br>nms:offerEnv<br>nms:offerCategory<br>nms:offerSpace<br>:优惠<br>nms offerView<br>nms:收件人（增量？）<br>nms:<br>groupnms:<br>dlvExclusionnms:stock | 是（增量） | 是 |
+| NMS | nms:country<br>nms:localOrgUnit<br>nms:state<br>nms:suppressionAddress<br>nms:suppressionDomain<br>nms:类别<br>nms:trackingUrlInfo<br>nms:webTrackingLog<br>nms:mobip<br>nnms:budgetCategory<br>nms:costType<br>nms:costCenter<br>nms:costStructure<br>nms:stockLine<br>nms:expenseLine<br>nms:costLine | 是（完整） | 是 |
+| NMS | nms:address<br>nms:userAgent<br>nms:userAgentReject<br>nms:userAgentStats<br>nms:broadLogMsg<br>nms:broadLog<br>nms:trackingLog<br>nms:deleliveryLogSta7/>nmsLogStats<br>nms订阅<br>nms:compation<br>nms:rcpGrpRel<br>nms:broadLogRcp<br>nms:excludeLogRcp<br>nms:trackingLogRcp<br>nms:compatitionRcp<br>nms:localValidationRcp<br>nms:访客<br>nms:broadLogVisitor<br>nms:trackingLogVisitor<br>nms:compationVisitor<br>nms:webAppLogRcp<br>nms:appSubscriptionRcp<br>nms:broadLogAppSubRcp<br>nms:excludeLogAppSubRcp<br>nms:trackingLogAppSubRcp<br>nms:eventHistoa25/>nms:broadLogEventHisto<br>nms:trackingLogEventHisto<br>nms:订阅<br>nms:subHisto<br>nms:trackingStats(仅Snowflake使用)<br>nms:nms广播(仅限Snowflake使用)<br>nms:tmpBroadcastExclusion(仅限Snowflake使用)<br>nms:tmpBroadcastPaper(仅限Snowflake使用)<br> | 否 | 否 |
 
 **相关主题**
 

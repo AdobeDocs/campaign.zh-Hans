@@ -8,10 +8,10 @@ role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
 translation-type: tm+mt
-source-git-commit: d7d026422d43e8baef43b114936366071f7086e5
+source-git-commit: 29c13e6c1b08a5b0f6ba8bb433f7165e3e452942
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 8%
+source-wordcount: '747'
+ht-degree: 7%
 
 ---
 
@@ -45,7 +45,7 @@ Adobe Campaign优惠了一套解决方案，可帮助您在所有线上和线下
 
 Adobe Campaign允许您从一个统一的控制中心创建、配置、执行和分析所有营销活动。
 
-:arrow_upper_right:了解如何在[此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/about-marketing-campaigns/accessing-marketing-campaigns.html?lang=en#orchestrating-campaigns)中访问和实施营销活动
+:arrow_upper_right:了解如何在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/about-marketing-campaigns/accessing-marketing-campaigns.html?lang=en#orchestrating-campaigns)中访问和实施营销活动
 
 
 ## 实现开始的关键步骤
@@ -56,50 +56,33 @@ Adobe Campaign允许您从一个统一的控制中心创建、配置、执行和
 
    定义层次结构和计划、设置预算、添加资源、选择运算符。
 
-   :arrow_upper_right:了解如何在[此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#creating-plan-and-program-hierarchy)中创建营销计划和配置活动
+   :arrow_upper_right:了解如何在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#creating-plan-and-program-hierarchy)中创建营销计划并配置活动
 
    所有营销活动均基于存储主要设置和功能的模板。 提供内置模板以创建尚未定义特定配置的活动。 您可以创建和配置活动模板，然后从这些模板创建活动。
 
-   :arrow_upper_right:了解如何在[此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns)中使用活动模板
+   :arrow_upper_right:了解如何使用[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns)中的活动模板
 
-   :arrow_upper_right:发现重复活动，以及如何在[此页](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns)中配置它们
+   :arrow_upper_right:发现重复活动以及如何在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns)中配置它们
 
 1. **定义受众**
 
    您可以在工作流中构建受众或选择现有组，如收件人列表、新闻稿订阅者、以前投放的收件人或任何筛选条件。
 
-   :arrow_upper_right:了解如何定义[此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#orchestrating-campaigns)中消息的受众
+   :arrow_upper_right:了解如何在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#orchestrating-campaigns)中定义消息的受众
 
 1. **创建投放**
 
    选择渠道，定义消息内容和开始投放。
 
-   :arrow_upper_right:了解如何在[此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=en#creating-deliveries)中创建和开始营销活动投放
+   :arrow_upper_right:了解如何在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=en#creating-deliveries)中创建和开始营销活动投放
 
    您可以将各种文档与活动关联：报表、照片、网页、图表等。
 
-   :arrow_upper_right:了解有关[本节](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-assets.html?lang=en#adding-documents)中关联文档的更多信息
+   :arrow_upper_right:了解有关[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-assets.html?lang=en#adding-documents)中关联文档的更多信息
 
 1. **设置审批流程**
 
    Adobe Campaign允许您为营销活动的主要阶段设置协作审批流程。 对于每个活动，您可以批准投放目标、内容和成本。 负责审批的Adobe Campaign运营商可以通过电子邮件收到通知，并可以从控制台或通过Web连接接受或拒绝审批。
 
-   :arrow_upper_right:了解如何在[本页](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns)中设置和管理批准
+   :arrow_upper_right:了解如何在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns)中设置和管理批准
 
-
-1. 监视消息：控制投放和执行。 了解详情。
-
-1. 计划活动和相关成本。 了解详情。
-
-## 批准和验证
-
-
-## 服务和订阅
-
-创建服务并管理订阅/退订
-
-## 报告
-
-活动
-
-：灯泡：

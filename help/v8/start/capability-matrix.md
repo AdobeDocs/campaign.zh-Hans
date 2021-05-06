@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
 translation-type: tm+mt
-source-git-commit: 04859274593f507a0b07f46cf6a65434b6a4bc60
+source-git-commit: 0e0cd6eb9fcf656c9ba6c72cd1a782098f9399fe
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '549'
 ht-degree: 2%
 
 ---
@@ -33,9 +33,9 @@ ht-degree: 2%
 
 ## 产品配置更改
 
-### 活动和Snowflake{#ac-gs-snowflake}
+### 活动和[!DNL Snowflake] {#ac-gs-snowflake}
 
-云存储在Snowflake中执行：新的外部帐户可确保与云数据库的连接。 [了解详情](#ac-gs-snowflake)。
+云存储在[!DNL Snowflake]中执行：新的外部帐户可确保与云数据库的连接。 [了解详情](#ac-gs-snowflake)。
 
 这是软件体系结构的基本变化。 数据现在是远程的：活动将整个数据(包括用户档案)联合起来。 活动流程现在从定位到投放执行，逐个扩展：数据摄取、细分、定位、查询、投放执行现在将在几分钟内运行。
 
@@ -45,7 +45,7 @@ ht-degree: 2%
 
 需要在云模式库中移动或复制的任何内置模式/表都带有命名空间&#x200B;**xxl**&#x200B;下的内置数据扩展。 至于模式扩展，新的XXL命名空间将用于任何新的OOTB配置，如JavaScript、JSSP等。
 
-这些扩展包含将内置模式从活动本地数据库移动到Snowflake Cloud数据库并相应调整其结构所需的任何修改：新的UUID、更新的链接等。
+这些扩展包含将内置模式从活动本地数据库移动到[!DNL Snowflake]云数据库并相应调整其结构所需的任何修改：新的UUID、更新的链接等。
 
 >[!CAUTION]
 >

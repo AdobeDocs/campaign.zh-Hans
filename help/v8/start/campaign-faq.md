@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
 translation-type: tm+mt
-source-git-commit: f1aed22d04bc0170b533bc088bb1a8e187b44dce
+source-git-commit: 29c13e6c1b08a5b0f6ba8bb433f7165e3e452942
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '383'
 ht-degree: 49%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 49%
 
 1. 是否能监视工作流的执行？
 
-   :arrow_upper_right:了解如何在Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html)中监视活动工作流执行[。
+   :arrow_upper_right:了解如何在Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html)中监视活动工作流执行[。
 
 1. 活动 v8兼容哪些系统和组件？
 
@@ -53,7 +53,7 @@ ht-degree: 49%
 
 1. 活动 v8发行说明位于何处？
 
-   ：灯泡：您可以访问此页面](release-notes.md)中最新的活动发行说明[。
+   ：灯泡：您可以在此处查看最新的活动发行说明。
 
 1. 域配置的过程是什么？
 

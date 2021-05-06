@@ -8,7 +8,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 translation-type: tm+mt
-source-git-commit: 0e0cd6eb9fcf656c9ba6c72cd1a782098f9399fe
+source-git-commit: 29c13e6c1b08a5b0f6ba8bb433f7165e3e452942
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 27%
@@ -17,7 +17,7 @@ ht-degree: 27%
 
 # 活动 v8兼容性矩阵
 
-此文档列表支持[**Adobe Campaignv8**&#x200B;的最新版本](release-notes.md)的所有系统和组件。 此列表中未包含的产品和版本与 Adobe Campaign 不兼容。
+此文档列表支持&#x200B;**Adobe Campaign v8**&#x200B;最新版本的所有系统和组件。 此列表中未包含的产品和版本与 Adobe Campaign 不兼容。
 
 >[!CAUTION]
 >

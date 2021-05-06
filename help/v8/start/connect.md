@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 translation-type: tm+mt
-source-git-commit: 97cc2dd6f78fac2723306f06bea74e808c84b4ad
+source-git-commit: c26e3b1af2f1706dbe2ca6cf9078f3e427e345cb
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '664'
 ht-degree: 6%
 
 ---
@@ -36,12 +36,6 @@ ht-degree: 6%
 >[!CAUTION]
 >
 >Adobe建议取消选择选项&#x200B;**[!UICONTROL No longer ask this question]**，以确保当有新版本的Console可用时，所有用户都会收到警告。  如果选择此选项，则用户将不会收到有关新可用版本的通知。
-
-### 教程视频
-
-此视频演示如何安装和设置Adobe Campaign客户端。
-
->[!VIDEO](https://video.tv.adobe.com/v/35124?quality=12)
 
 ## 创建连接
 

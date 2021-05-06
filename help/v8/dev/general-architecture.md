@@ -5,9 +5,9 @@ title: 一般架构
 description: 活动 v8通用架构
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
 translation-type: tm+mt
-source-git-commit: 1bdc1f03a824f8867ae6066196e8e3984fa73af7
+source-git-commit: 0e0cd6eb9fcf656c9ba6c72cd1a782098f9399fe
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1162'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Adobe Campaign是一个具有不同应用程序的单一平台，这些应用程
 
 **应用程序服务器** (nlserver web)
 
-此过程通过Web服务API(SOAP - HTTP + XML)显示各种Adobe Campaign功能。 此外，它还可以动态生成用于基于HTML的访问(报告、Web 窗体等)的网页。 为此，本过程包括一个Apache Tomcat JSP服务器。 这是控制台连接到的进程。
+此过程通过Web服务API(SOAP - HTTP + XML)显示各种Adobe Campaign功能。 此外，它可动态生成用于基于HTML的访问(报表、Web 窗体等)的网页。 为此，本过程包括一个Apache Tomcat JSP服务器。 这是控制台连接到的进程。
 
 **工作流引擎** (nlserver wfserver)
 
@@ -118,7 +118,7 @@ Adobe Campaign具有本机电子邮件广播功能。 此进程用作SMTP邮件�
 
 ## 数据库容器{#db-containers}
 
-Adobe Campaign CloudSnowflake库依赖于包含功能数据(用户档案、订阅、内容等)、技术数据(投放作业和日志、跟踪日志等)的 和解决方案的工作数据（购买、潜在客户），所有Adobe Campaign组件都与数据库通信，以执行其特定任务。
+Adobe Campaign Cloud数据库依赖于[!DNL Snowflake]，其中包含功能数据(用户档案、订阅、内容等)、技术数据(投放作业和日志、跟踪日志等) 和解决方案的工作数据（购买、潜在客户），所有Adobe Campaign组件都与数据库通信，以执行其特定任务。
 
 客户可以使用预定义的Adobe Campaign集和模式部署，还可以扩展数据集。 Adobe Campaign通过SQL调用访问数据集中的所有数据。 Adobe Campaign还提供了“提取转换和加载(ETL)”工具的完整补充，以执行数据导入和将数据导出到系统和从系统中导出。
 

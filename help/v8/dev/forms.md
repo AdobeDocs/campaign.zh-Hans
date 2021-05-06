@@ -4,7 +4,7 @@ product: campaign
 title: 活动输入表单
 description: 了解如何自定义输入表单
 translation-type: tm+mt
-source-git-commit: b4d5ed24bcca46591543b835b2fec1c18b26fc74
+source-git-commit: 8e90eb762a6e08077270d4f5852bfc37ac783122
 workflow-type: tm+mt
 source-wordcount: '2557'
 ht-degree: 0%
@@ -290,9 +290,7 @@ ht-degree: 0%
 
 下拉式列表用于从已创建记录的列表中选择目标元素。
 
-**[!UICONTROL Modify the link]**（文件夹）图标将启动一个选择表单，其中包含目标元素的列表和筛选区域：
-
-![](assets/do-not-localize/form_exemple10.png)
+**[!UICONTROL Modify the link]**（文件夹）图标会启动一个选择表单，其中包含目标元素的列表和筛选区域。
 
 **[!UICONTROL Edit link]**（放大镜）图标可启动链接元素的编辑表单。 默认情况下，在目标模式的键上推导使用的形式。 通过&#x200B;**form**&#x200B;属性，可以强制使用编辑表单的名称(例如，“cus:公司2”)。
 
@@ -433,8 +431,6 @@ ht-degree: 0%
 
 此控件显示一个可编辑的列列表，其工具栏包含“添加”和“删除”按钮。
 
-![](assets/do-not-localize/form_exemple13.png)
-
 ```
 <input xpath="rcpEvent" type="list">
   <input xpath="@label"/>
@@ -452,8 +448,6 @@ ht-degree: 0%
 
 工具栏按钮可以水平对齐：
 
-![](assets/do-not-localize/form_exemple14.png)
-
 ```
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true">
   <input xpath="@label"/>
@@ -466,8 +460,6 @@ ht-degree: 0%
 ### 启用列表{#zoom-in-a-list}
 
 在列表中插入和编辑数据可以在单独的编辑表单中输入。
-
-![](assets/do-not-localize/form_exemple15.png)
 
 ```
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true" zoomOnAdd="true">
@@ -640,8 +632,6 @@ ht-degree: 0%
   ...
 </form>
 ```
-
-![](assets/do-not-localize/form_exemple19.png)
 
 `<form>`元素上存在&#x200B;**type=&quot;wizard&quot;**&#x200B;属性，允许您在表单构造中定义向导模式。 这些页面是从`<container>`元素（是`<form>`元素的子元素）完成的。 页面的`<container>`元素将填充标题的标题属性，并设计用于在页面标题下显示说明。 会自动添加&#x200B;**[!UICONTROL Previous]**&#x200B;和&#x200B;**[!UICONTROL Next]**&#x200B;按钮，以允许在页面之间进行浏览。
 

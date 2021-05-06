@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
 translation-type: tm+mt
-source-git-commit: fc258cac85f1f96b6d03d69eff4e7ac70ba4247d
+source-git-commit: 5b9e381c154420c57a66e5b41b25bd4754036c60
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '254'
 ht-degree: 2%
 
 ---
@@ -34,4 +34,3 @@ Adobe Campaign附带一个内置的用户档案表：**nmsRecipient**。 此表�
 >
 >Adobe Campaign自定义仅保留给专家用户。 它需要在输入表单和模式设计方面的专业知识。
 
-请在此处查看有效/无效内容：https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/use-a-custom-recipient-table/about-custom-recipient-table.html?lang=en#configuring-campaign-classic

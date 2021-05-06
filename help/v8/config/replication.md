@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4,df76e7ff-3b97-41be-abc2-640748680ff3
 translation-type: tm+mt
-source-git-commit: 9efd6442336a62e627b0da4e17fa742f59f715f9
+source-git-commit: 0e0cd6eb9fcf656c9ba6c72cd1a782098f9399fe
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '312'
 ht-degree: 1%
 
 ---
@@ -28,8 +28,7 @@ Adobe Campaign附带一组内置技术工作流。 技术工作流在服务器�
 除了这些技术工作流之外，活动 v8还依赖特定技术工作流来管理[数据复制](#data-replication)。
 
 * **[!UICONTROL Replicate Reference tables]**
-此工作流会自动复制需要在活动本地数据库(Postgres)和云数据库(Snowflake)上显示的参考表。计划每天每小时执行一次。 如果 
-**lastModified** 字段存在，复制会以增量方式进行，否则会复制整个表。以下数组中表的顺序是复制工作流使用的顺序。
+此工作流会自动复制需要在活动本地数据库(Postgres)和云数据库()上显示的参考[!DNL Snowflake]表。计划每天每小时执行一次。 如果存在&#x200B;**lastModified**&#x200B;字段，则复制会以增量方式进行，否则将复制整个表。 以下数组中表的顺序是复制工作流使用的顺序。
 * **[!UICONTROL Replicate Staging data]**
 此工作流将复制统一调用的暂存数据。计划每天每小时执行一次。
 * **[!UICONTROL Deploy FFDA immediately]**\
@@ -41,7 +40,7 @@ Adobe Campaign附带一组内置技术工作流。 技术工作流在服务器�
 
 ## 数据复制{#data-replication}
 
-表将通过上面描述的专用工作流从活动数据库复制到Snowflake Cloud数据库。
+表将通过上面描述的专用工作流从活动数据库复制到[!DNL Snowflake]云数据库。
 
 复制策略基于表的大小。 将复制某些表。 一些表格将实时复制，而其他表格将按小时复制。 在替换其他表时，某些表将具有增量更新。
 

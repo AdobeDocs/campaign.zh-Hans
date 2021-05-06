@@ -7,10 +7,10 @@ breadcrumb-title: 活动 v8
 title: 活动 v8文档
 hide: true
 translation-type: tm+mt
-source-git-commit: 1bdc1f03a824f8867ae6066196e8e3984fa73af7
+source-git-commit: f1aed22d04bc0170b533bc088bb1a8e187b44dce
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 36%
+source-wordcount: '164'
+ht-degree: 37%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 36%
    + [配置文件和受众](start/audiences.md)
    + [导入数据](start/import.md)
    + [创建活动](start/campaigns.md)
+   + [管理订阅](start/subscriptions.md)
    + [发送邮件](start/create-message.md)
    + [跟踪和监视](start/tracking.md)
    + [量度和报表](start/reporting.md)
@@ -80,6 +81,7 @@ ht-degree: 36%
       + [输入窗体](dev/forms.md)
    + API {#api}
       + [入门](dev/api.md)
+      + [新API](dev/new-apis.md)
       + [活动 v8 API](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html)
 
 

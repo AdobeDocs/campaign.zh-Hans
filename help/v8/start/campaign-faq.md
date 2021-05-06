@@ -8,10 +8,10 @@ role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
 translation-type: tm+mt
-source-git-commit: e802857529d2b72995ccc08563b2356d809e5309
+source-git-commit: f1aed22d04bc0170b533bc088bb1a8e187b44dce
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 55%
+source-wordcount: '384'
+ht-degree: 49%
 
 ---
 
@@ -41,11 +41,11 @@ ht-degree: 55%
 
    Adobe Campaign 提供了一组仪表板和工具来监视电子邮件投放。
 
-   [单击此处了解](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html)如何确认邮件已发送、监视执行情况并在发生错误时采取行动。
+   [阅读Campaign Classic v7文档，了](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html) 解如何确保发送邮件、监控执行情况并在出错时参与操作。
 
 1. 是否能监视工作流的执行？
 
-   :arrow_upper_right:了解如何在此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html)中监视活动工作流执行[。
+   :arrow_upper_right:了解如何在Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html)中监视活动工作流执行[。
 
 1. 活动 v8兼容哪些系统和组件？
 

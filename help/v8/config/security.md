@@ -1,10 +1,10 @@
 ---
-solution: Campaign Classic
-product: campaign
+solution: Campaign
+product: Adobe Campaign
 title: 活动安全最佳实践
 description: 开始使用活动安全最佳实践
 translation-type: tm+mt
-source-git-commit: aad5f67453079211b14e371da09e9dfc757acba9
+source-git-commit: d758b6ffaee5fdab3f600f58be5a81694162d269
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 0%

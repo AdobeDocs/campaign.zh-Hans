@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 221adcce8951a3884b83d5e5e2de1a73fbe96050
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '693'
 ht-degree: 3%
 
 ---
@@ -32,6 +32,7 @@ Adobe Campaign v8附带以下投放渠道:
 * **移动渠道**:移动渠道上的投放可让您向目标群发送个性化短信。了解有关[此页面](../send/sms.md)的详细信息
 
 * **移动应用程序渠道**:移动应用程序投放可让您向iOS和Android系统发送通知。了解有关[此页面](../send/push.md)的详细信息
+* **行渠道**:LINE投放允许您在LINE上发送消息，LINE是所有智能手机上都可用的即时消息应用程序。了解有关[此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html)的详细信息
 
 ## 选择发送消息的方式
 

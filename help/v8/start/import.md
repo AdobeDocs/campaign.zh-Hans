@@ -8,7 +8,7 @@ role: Data Engineer
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 0995e3595d2e5f38bade4f71fccc7938d7d1284b
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 8%

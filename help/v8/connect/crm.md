@@ -1,13 +1,13 @@
 ---
-solution: Campaign Classic
-product: campaign
+solution: Campaign
+product: Adobe Campaign
 title: 使用活动和您的CRM
 description: '了解如何使用活动和您的CRM '
 feature: 概述
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 8c9f59067cd0e5a39e84315e5836a32bdf7a0864
+source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 21%

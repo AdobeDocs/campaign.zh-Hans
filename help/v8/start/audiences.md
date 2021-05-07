@@ -8,10 +8,10 @@ role: Data Engineer
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 81a6d365554d87b020d47be6fd6a896f8ad33d57
 workflow-type: tm+mt
-source-wordcount: '703'
-ht-degree: 32%
+source-wordcount: '702'
+ht-degree: 30%
 
 ---
 
@@ -64,7 +64,7 @@ Adobe Campaign 是一款用于收集和处理超大量数据（包括个人信�
 
 根据您的合同，您的每个 Campaign 实例都会配置特定数量的活动用户档案，并对这些活动用户档案进行计数以计费。请参阅您的最新合同，了解已购买的活动用户档案数量。
 
-“用户档案”指信息记录(例如：[收件人表](../dev/datamodel.md)中的记录，或包含表示最终客户、潜在客户或潜在客户的cookie ID、客户ID、移动标识符或与特定渠道相关的其他信息的外部表。 如果用户档案在过去 12 个月中通过任何渠道被定向或与其联系，则视为处于活动状态。
+“用户档案”指信息记录(例如：[收件人表](../dev/datamodel.md)中的记录，或包含表示最终客户、潜在客户或潜在客户的cookie ID、客户ID、移动标识符或与特定渠道相关的其他信息的外部表。 如用户档案在过去12个月内通过任何渠道被定向或传达，则视其为活跃。
 
 您可以直接从活动用户档案监视实例上使用的活动控制面板数。
 

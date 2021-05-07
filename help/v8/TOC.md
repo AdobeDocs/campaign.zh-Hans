@@ -3,14 +3,15 @@ solution: Campaign
 product: campaign
 audience: end-user
 user-guide-title: 活动 v8
+description: 活动 v8文档
 breadcrumb-title: 活动 v8
 title: 活动 v8文档
 hide: true
 translation-type: tm+mt
-source-git-commit: f1aed22d04bc0170b533bc088bb1a8e187b44dce
+source-git-commit: 7b8de5083836e906f563250e1a86b46abcd68650
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 37%
+source-wordcount: '167'
+ht-degree: 36%
 
 ---
 

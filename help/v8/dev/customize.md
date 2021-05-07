@@ -1,6 +1,6 @@
 ---
-solution: Campaign Classic
-product: campaign
+solution: Campaign
+product: Adobe Campaign
 title: 自定义实例
 description: 了解如何自定义实例
 feature: 概述
@@ -8,7 +8,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
 translation-type: tm+mt
-source-git-commit: 805deadf994e2c4fdfb850ea5b1c3dedf565ef2d
+source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 0%

@@ -1,6 +1,6 @@
 ---
-solution: Campaign Classic
-product: campaign
+solution: Campaign
+product: Adobe Campaign
 title: 活动 v8的新增功能
 description: 了解更多关键功能
 feature: 概述
@@ -8,7 +8,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 translation-type: tm+mt
-source-git-commit: c3eaaecd33c70be0b8c7e9e69a78aa43cf5d18b8
+source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%

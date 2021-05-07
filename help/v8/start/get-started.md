@@ -8,16 +8,16 @@ role: Data Engineer
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: cebe3fedb97a5570aa404bf97709e6b26bf90d7c
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 55%
+source-wordcount: '804'
+ht-degree: 46%
 
 ---
 
 # 开始使用Adobe Campaign{#gs-ac-v8}
 
-Adobe Campaign 提供了跨渠道客户体验设计平台，并为可视化的活动编排、实时互动管理和跨渠道执行提供了环境。
+Adobe Campaign为设计跨渠道客户体验提供了一个平台，并为可视活动编排、实时交互管理和跨渠道执行提供了一个环境。
 
 使用活动可以：
 
@@ -29,7 +29,7 @@ Adobe Campaign 提供了跨渠道客户体验设计平台，并为可视化的�
 
 ## 整合的客户档案 {#integrated-customer-profile}
 
-用户档案集中在powerfull cloud数据库中。 有许多可能的机制可获取用户档案并创建此数据库：通过 Web 窗体在线收集、手动或自动导入文本文件、复制公司数据库或其他信息系统的内容。借助 Adobe Campaign，您可以整合营销历史、购买信息、偏好、CRM 数据，以及整合视图中任何相关的 PII 数据，从而进行分析并采取行动。
+用户档案集中在一个功能强大的云数据库中。 有许多可能的机制可获取用户档案并创建此数据库：通过 Web 窗体在线收集、手动或自动导入文本文件、复制公司数据库或其他信息系统的内容。借助 Adobe Campaign，您可以整合营销历史、购买信息、偏好、CRM 数据，以及整合视图中任何相关的 PII 数据，从而进行分析并采取行动。
 
 在 Adobe　Campaign 中，收件人是发送投放内容（电子邮件、SMS 等）所定位的默认用户档案。凭借数据库中存储的收件人数据，您可以过滤将接收任何给定投放的目标并在投放内容中添加个性化数据。数据库中还有其他类型的用户档案。这些用户档案是针对不同用途而设计的。例如，种子用户档案用于在将投放内容发送给最终目标前测试该投放内容。
 
@@ -74,13 +74,13 @@ Adobe Campaign 可逐步丰富客户数据和用户档案，从而让您监控�
 
 ## Adobe Experience Cloud 集成 {#adobe-experience-cloud-integrations}
 
-您可以将 Adobe Campaign 的投放功能以及高级活动管理功能与帮助您个性化用户体验的解决方案（例如　Adobe Experience Manager、Adobe Analytics、Adobe Target 或 Adobe Experience Cloud 触发程序）结合起来。此外，您也可以使用 Adobe ID 集成到 Adobe IMS 并登录 Campaign。
+您可以将 Adobe Campaign 的投放功能以及高级活动管理功能与帮助您个性化用户体验的解决方案（例如　Adobe Experience Manager、Adobe Analytics、Adobe Target 或 Adobe Experience Cloud 触发程序）结合起来。
 
 ：灯泡：了解如何与[本节](../connect/integration.md)中的Adobe服务和解决方案集成。
 
 ## 关于活动功能{#core-capabilities-and-add-ons}的更多信息
 
-根据您的需求和架构，Adobe Campaign 提供了一系列功能，帮助您实施和优化各种对话式营销功能。其中有些是核心功能，有些功能取决于软件包的安装和您的配置。产品说明详细信息请访问：[Adobe Campaignv8产品说明](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html)。
+Adobe Campaign优惠了一系列功能，帮助您根据需要和架构实施和优化会话营销功能。 其中一些是核心功能，一些取决于在您的配置上安装包。 产品说明详细信息请访问：[Adobe Campaignv8产品说明](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html)。
 
 ：灯泡：已经熟悉Campaign Classic? 了解[本页](capability-matrix.md)中Campaign Classic和活动 v8之间的主要差异。
 

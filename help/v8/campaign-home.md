@@ -1,14 +1,14 @@
 ---
 keywords: Campaign Classic；主页；热门主题
 solution: Campaign Classic
-description: to
+description: 活动 v8帮助中心
 title: Adobe Campaign v8产品文档
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
 translation-type: tm+mt
-source-git-commit: 5d62409009168045cdfd2349a2343710d879edca
+source-git-commit: 7b8de5083836e906f563250e1a86b46abcd68650
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 19%
+source-wordcount: '90'
+ht-degree: 18%
 
 ---
 

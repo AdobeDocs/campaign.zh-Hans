@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: b39cac492f4605b7d1d7aeb75f6af26a20bf43e6
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '746'
 ht-degree: 7%
 
 ---
@@ -35,7 +35,7 @@ Adobe Campaign优惠了一套解决方案，可帮助您在所有线上和线下
 
 * **计划**:营销计划可以包含多个项目。它链接到日历期间，有分配的预算，也可以链接到文档和目标。
 
-* **活动工作流**:活动工作流包含用于构建活动逻辑的活动。使用活动工作流可以定义受众并为所有可用渠道创建投放。
+* **活动工作流**:活动工作流包含用于构建活动逻辑的活动。使用活动工作流定义受众并为所有可用渠道创建投放。
 
 * **循环活动**:循环活动从定义要执行的工作流模板和执行计划的特定模板创建。
 

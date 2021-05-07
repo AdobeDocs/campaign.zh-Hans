@@ -8,7 +8,7 @@ breadcrumb-title: 活动 v8
 title: 活动 v8文档
 hide: true
 translation-type: tm+mt
-source-git-commit: 7b8de5083836e906f563250e1a86b46abcd68650
+source-git-commit: 21172287921c9188037fe6e4306f755826d783f8
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 36%
@@ -28,8 +28,8 @@ ht-degree: 36%
    + [配置文件和受众](start/audiences.md)
    + [导入数据](start/import.md)
    + [创建活动](start/campaigns.md)
-   + [管理订阅](start/subscriptions.md)
    + [发送邮件](start/create-message.md)
+   + [管理订阅](start/subscriptions.md)
    + [跟踪和监视](start/tracking.md)
    + [量度和报表](start/reporting.md)
    + [常见问题解答](start/campaign-faq.md)

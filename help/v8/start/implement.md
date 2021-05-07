@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 9b6190f48373b772a72d6c1ef1b7510ec41112be
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1159'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 ## 开始前
 
-本部分包括针对特定于其实施的开发人员的信息，开发人员在开始前需要注意隐私和安全性。
+本节包含有关隐私和安全性的重要信息，在开始实际实施之前，需要审查并考虑这些信息。
 
 ### 隐私
 
@@ -88,7 +88,7 @@ Adobe Campaign附带流程和设置，允许您在遵守适用活动隐私法和
 
 1. 熟悉活动内置的数据模型
 
-   Adobe Campaign 提供了预定义的数据模型。要实施和自定义环境，您需要熟悉Adobe Campaign数据模型的内置表及其交互。
+   Adobe Campaign 提供了预定义的数据模型。要实施和自定义环境，您需要熟悉Adobe Campaign数据模型的内置表以及它们彼此的关系。
 
    ：灯泡：[了解有关活动数据模型的更多信息](../dev/datamodel.md)。
 

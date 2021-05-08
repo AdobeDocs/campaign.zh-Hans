@@ -4,9 +4,9 @@ product: Adobe Campaign
 title: 活动安全最佳实践
 description: 开始使用活动安全最佳实践
 translation-type: tm+mt
-source-git-commit: d758b6ffaee5fdab3f600f58be5a81694162d269
+source-git-commit: 5592dd4e79391d953a4bc54cdd47475417e07b56
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -40,9 +40,9 @@ ht-degree: 0%
 
 ## 数据限制
 
-您必须确保经过身份验证的低权限用户无法访问加密的口令。 为此，有两种主要方式：仅限对密码字段或对整个实体（需要内部版本>= 8770）的访问。
+您必须确保经过身份验证的低权限用户无法访问加密的口令。 为此，有两种主要方式：仅限制对密码字段或整个实体的访问。
 
-此限制允许您删除口令字段，但允许所有用户从界面访问外部帐户。 请阅读[本页](../dev/restrict-pi-view.md)了解更多信息。
+此限制允许您删除密码字段，但允许所有用户从界面访问外部帐户。 请阅读[本页](../dev/restrict-pi-view.md)了解更多信息。
 
 1. 进入&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**。
 
@@ -98,7 +98,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >您可以通过`hasNamedRight('admin')`将`$(loginId) = 0 or $(login) = 'admin'`替换为允许具有管理员权限的所有用户查看这些密码。
+   >您可以将`$(loginId) = 0 or $(login) = 'admin'`替换为`hasNamedRight('admin')`，让具有管理员权限的所有用户查看这些密码。
 
 
 ## 访问管理
@@ -115,10 +115,10 @@ ht-degree: 0%
 
 在Adobe Campaign(工作流、Javascript、JSSP等)中进行开发时，始终遵循以下准则：
 
-* 脚本：尝试避免SQL语句，使用参数化函数而不是字符串连接，通过向允许列表添加要使用的SQL函数来避免SQL注入。
+* **脚本**:尝试避免SQL语句，使用参数化函数而不是字符串连接，通过向允许列表添加要使用的SQL函数来避免SQL注入。
 
-* 保护数据模型：使用已命名权限限制操作符操作，添加系统过滤器(sysFilter)
+* **保护数据模型**:使用已命名权限限制操作符操作，添加系统过滤器(sysFilter)
 
-* 在Web应用程序中添加捕捉：在您的公共登陆页和订阅页面中添加捕捉。
+* **在Web应用程序中添加捕捉**:在您的公共登陆页和订阅页面中添加捕捉。
 
 :arrow_upper_right:了解有关[Adobe Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic)的更多信息

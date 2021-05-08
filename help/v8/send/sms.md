@@ -7,9 +7,9 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: bbaa603e73d4c1618f326624600ea3d357b265e6
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '309'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 * 了解如何在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=en#sending-messages)中配置SMS渠道
 * 了解如何在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html?lang=en#sending-messages)中创建SMS投放
-* 优化受众的步骤详细介绍在此页](../start/audiences.md)中[
+* 定义受众的步骤在本页](../start/audiences.md)中详细介绍[
 * 了解如何在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html?lang=en#defining-the-sms-content)中定义SMS内容
 * [Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-send.html?lang=en#sending-messages)中介绍了用于发送、监视和跟踪SMS的工具
 * 了解如何对[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/troubleshooting-sms.html?lang=en#sending-messages)中的SMS投放进行疑难解答
@@ -30,7 +30,7 @@ ht-degree: 2%
 开始发送SMS之前：
 
 * 确保收件人用户档案的用户档案中至少包含手机。
-* 阅读Adobe Campaign Classic [投放最佳实践](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=en#sending-messages)，它也适用于活动 v8。
+* 查看Adobe Campaign Classic [投放最佳做法](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=en#sending-messages)，这些最佳做法也适用于活动 v8。
 
 此外，您还需要熟悉SMS协议和设置。 浏览在[此文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-protocol.html?lang=en#sending-messages)中Adobe Campaign与SMPP提供程序之间设置的连接
 

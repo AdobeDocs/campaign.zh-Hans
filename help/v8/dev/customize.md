@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: ddf60fb823cb0df99bdf3bc99f17d7a1abe6a33b
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,13 @@ ht-degree: 0%
 
 ## 创建新数据字段和模式
 
-Adobe Campaign使用数据模式来：
+Adobe Campaign利用数据模式:
 
 * 定义应用程序中数据对象与基础数据库表的绑定方式
 * 定义活动应用程序中不同数据对象之间的链接
 * 定义和描述每个对象中包含的各个字段
 
-可以向现有表(如收件人表(nms:收件人))添加字段，您必须扩展该模式。
+例如，要向现有表(如收件人表(nms:收件人))添加字段，必须扩展该模式。
 
 有两种表扩展模式可用：
 
@@ -44,7 +44,7 @@ Adobe Campaign使用数据模式来：
    ：灯泡：了解如何扩展[本节](../dev/extend-schema.md)中的现有模式。
 
 
-您可以在活动数据库中创建新表并扩展内置的数据模型。
+您还可以在活动数据库中创建新表并扩展内置的数据模型。
 
 要添加Adobe Campaign中不存在的现成数据（例如合同表）的全新类型，您可以直接创建自定义模式。 有关此问题的详细信息，请参阅[此示例](../dev/create-schema.md#example--creating-a-contract-table)。
 
@@ -57,7 +57,7 @@ Adobe Campaign使用数据模式来：
 
 ## 修改输入表单
 
-活动输入表单可以调整为适合您的实现。 您可以通过修改XML内容来添加或删除字段。
+活动输入表单可以调整以适应您的实现。 您可以通过修改XML内容来添加或删除表单域。
 
 ：灯泡：了解如何修改现有输入表单或在[本节](../dev/forms.md)中创建新表单。
 

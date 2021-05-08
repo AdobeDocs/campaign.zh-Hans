@@ -7,9 +7,9 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: e068642c1bc5bf5f0329fc09f7ca6ddbd1683d6a
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '1480'
 ht-degree: 1%
 
 ---
@@ -20,10 +20,10 @@ ht-degree: 1%
 
 :speech_balloon:作为“托管Cloud Services”用户，[联系Adobe](../start/support.md#support)以在您的环境中安装和配置活动事务消息。
 
-事务性消息用于：
+事务性消息用于发送：
 
 * 通知，例如订单确认或密码重置
-* 发送对客户行为的个人实时响应
+* 对客户行为的个人实时响应
 * 非促销内容
 
 ：灯泡：[本节](../config/transactional-msg-settings.md)中详细介绍了事务消息设置。

@@ -8,7 +8,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
 translation-type: tm+mt
-source-git-commit: 0f9827319484a84e762cf651fed18d704d4af66e
+source-git-commit: f413844de6b71b6a7d5b681af9ceb47a1f5ecaae
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 46%
@@ -25,7 +25,7 @@ ht-degree: 46%
 
    这种定期更新旨在让您掌握最新、最充分的信息，保持环境的安全，并改进您对我们产品的体验。这就是为什么我们认为运行最新版本的 Adobe Campaign 至关重要的原因。
 
-   请联系客户关怀团队，升级您的环境。
+   请联系Adobe客户关怀团队，升级您的环境。
 
 1. 如何连接到活动 v8?
 

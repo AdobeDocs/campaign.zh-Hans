@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 84ee7eb2bf2e15d30c81f32f6b25c9801b3b12b1
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '253'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 Adobe Campaign附带一个内置的用户档案表：**nmsRecipient**。 此表包含许多可轻松扩展的预定义字段和表。 在[此页](datamodel.md#ootb-profiles)中了解有关此表的详细信息。
 
-内置的表扩展优惠了良好的灵活性，但不允许删除某些未使用的字段或链接。 因此，当收件人模型与活动内置收件人表结构差异很大时，或者如果您有大量用户档案时，使用自定义表是一个不错的选择。  但是，在实现该方法时，需要采取一定的预防措施。
+内置的表扩展优惠灵活性，但它不允许删除某些未使用的字段或链接。 因此，当收件人模型与活动内置收件人表结构差异很大时，或者如果您有大量用户档案时，使用自定义表是一个不错的选择。  但是，在实现该方法时，需要采取一定的预防措施。
 
 此功能允许Adobe Campaign处理来自外部数据库的数据：此用户档案将用作一组投放。 实施此过程涉及限制，例如：
 

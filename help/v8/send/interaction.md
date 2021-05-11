@@ -7,7 +7,7 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
+source-git-commit: 6f84e739f25caf5dbd2ef964e38a6264e4b4342b
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 1%
@@ -68,7 +68,7 @@ ht-degree: 1%
 
 1. 创建用户用户档案。 [了解详情](interaction-operators.md)。
 1. （可选）为每个优惠创建环境。 [了解详情](interaction-env.md)
-1. 为每个环境创建类型规则。 [了解详情](interaction-offers.md#offer-presentation)。
+1. 为每个环境创建类型规则。 [了解详情](interaction-offer.md#offer-presentation)。
 1. 为每个环境创建优惠空间并配置渲染功能。 [了解详情](interaction-offer-spaces.md)。如果空间由标识模式上的统一渠道定义，则必须指定此空间的高级参数。
 
 ### 创建并发布优惠目录{#managing-the-offer-catalog-}

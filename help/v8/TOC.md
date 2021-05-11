@@ -8,10 +8,10 @@ breadcrumb-title: 活动 v8
 title: 活动 v8文档
 hide: true
 translation-type: tm+mt
-source-git-commit: 6f84e739f25caf5dbd2ef964e38a6264e4b4342b
+source-git-commit: 3fe4156149e9ff8724dd1ff5fc17b538e6055ef8
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 35%
+source-wordcount: '199'
+ht-degree: 34%
 
 ---
 
@@ -49,6 +49,7 @@ ht-degree: 35%
    + [电子邮件](send/email.md)
    + [短信](send/sms.md)
    + [推送通知](send/push.md)
+   + [线路消息](send/line.md)
    + [直邮](send/direct-mail.md)
    + [事务型消息传递](send/transactional.md)
    + 添加优惠{#interaction}

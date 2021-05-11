@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 1ac6b58e1d5731d4df4d6d7c6a9b25f0f41ff563
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '674'
 ht-degree: 6%
 
 ---
@@ -19,9 +19,11 @@ ht-degree: 6%
 
 活动 Client Console是一个富客户端，通过它可以连接到您的活动应用程序服务器。
 
->[!CAUTION]
->
->在启动之前，您需要检查活动[兼容性矩阵](compatibility-matrix.md)，获取活动服务器URL和用户凭据。
+在开始之前，您需要：
+
+* 在[兼容性矩阵](compatibility-matrix.md)中检查系统和工具与Adobe Campaign的兼容性
+* 获取活动服务器URL
+* 获取您的用户凭据
 
 ## 下载并安装客户端控制台
 
@@ -93,7 +95,6 @@ Adobe Campaign允许您定义和管理分配给各种运算符的权限。 这�
 了解有关用户以及如何在[本节](permissions.md)中定义其权限的更多信息。
 
 作为活动管理员，您负责创建操作符并与用户共享其凭据。
-
 
 ## 使用您的Adobe ID连接到活动{#connect-ims}
 

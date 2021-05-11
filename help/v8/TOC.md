@@ -8,10 +8,10 @@ breadcrumb-title: 活动 v8
 title: 活动 v8文档
 hide: true
 translation-type: tm+mt
-source-git-commit: b9de052de5aaeee4b089feb70bf20723be5c9cfa
+source-git-commit: 6f84e739f25caf5dbd2ef964e38a6264e4b4342b
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 34%
+source-wordcount: '197'
+ht-degree: 35%
 
 ---
 
@@ -57,6 +57,7 @@ ht-degree: 34%
          + [创建运算符](send/interaction-operators.md)
          + [创建环境](send/interaction-env.md)
          + [创建预定义过滤器](send/interaction-predefined-filters.md)
+         + [创建优惠空间](send/interaction-offer-spaces.md)
       + [创建优惠目录](send/interaction-offer-catalog.md)
       + [创建优惠](send/interaction-offer.md)
       + [发送优惠](send/interaction-send-offers.md)

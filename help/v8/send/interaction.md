@@ -7,7 +7,7 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: b9de052de5aaeee4b089feb70bf20723be5c9cfa
+source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 1%
@@ -68,21 +68,21 @@ ht-degree: 1%
 
 1. 创建用户用户档案。 [了解详情](interaction-operators.md)。
 1. （可选）为每个优惠创建环境。 [了解详情](interaction-env.md)
-1. 为每个环境创建类型规则。 [了解详情](../../interaction/using/managing-offer-presentation.md#creating-and-referencing-an-offer-presentation-rule)。
-1. 为每个环境创建优惠空间并配置渲染功能。 [了解详情](../../interaction/using/creating-offer-spaces.md)。如果空间由标识模式上的统一渠道定义，则必须指定此空间的高级参数。
+1. 为每个环境创建类型规则。 [了解详情](interaction-offers.md#offer-presentation)。
+1. 为每个环境创建优惠空间并配置渲染功能。 [了解详情](interaction-offer-spaces.md)。如果空间由标识模式上的统一渠道定义，则必须指定此空间的高级参数。
 
 ### 创建并发布优惠目录{#managing-the-offer-catalog-}
 
 作为&#x200B;**优惠管理器**，您需要执行以下任务:
 
-1. 在设计环境中创建优惠类别。 [了解详情](../../interaction/using/creating-offer-categories.md)。
-1. 在设计环境中创建优惠。 [了解详情](../../interaction/using/creating-an-offer.md)。
-1. 在一个或多个空间上批准和发布优惠，以便让投放管理器在实时环境上可用。 [了解详情](../../interaction/using/approving-and-activating-an-offer.md)。
+1. 在设计环境中创建优惠类别。 [了解详情](interaction-offer-catalog.md#creating-offer-categories)。
+1. 在设计环境中创建优惠。 [了解详情](interaction-offer.md)。
+1. 在一个或多个空间上批准和发布优惠，以便让投放管理器在实时环境上可用。 [了解详情](interaction-offer.md#approve-offers)。
 
 ### 利用优惠目录{#using-the-offer-catalog-}
 
 作为&#x200B;**投放管理器**，您需要执行以下任务:
 
 1. 创建营销策划.
-1. 在活动或投放中引用优惠。 [了解详情](../../interaction/using/about-outbound-channels.md)。
+1. 在活动或投放中引用优惠。 [了解详情](interaction-send-offers.md)。
 

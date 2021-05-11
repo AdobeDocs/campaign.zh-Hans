@@ -8,10 +8,10 @@ role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: e94080bc5e56e642494de48ff4b739b806c6e2e7
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 27%
+source-wordcount: '323'
+ht-degree: 28%
 
 ---
 
@@ -55,12 +55,54 @@ ht-degree: 27%
 * **Microsoft Windows Server**  2016、2012
 * **Microsoft Windows**  8、10（建议用于日语实例）
 
+## 客户端控制台{#ClientConsoleoperatingsystems}
+
+：警告：使用活动 Client Console需要以下操作系统和浏览器。
+
+### 操作系统
+
+<table>
+<tbody>
+<tr>
+<td>Microsoft Windows Server</td>
+<td>
+<p>2016</p>
+<p>2012</p>
+</td>
+</tr>
+<tr>
+<td>Microsoft Windows</td>
+<td>
+<p>8</p>
+<p>10（建议用于日语实例）</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+### 浏览器
+
+<table>
+<tbody>
+<tr>
+<td>
+<p>Microsoft Internet Explorer</p>
+</td>
+<td>
+<p>11</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### 移动 SDK{#MobileSDK}
 
 * **Android**  7.x、8.x、9.0（带移动SDK版本1.0.27）。
 * **Apple iOS**  9 - 14（带移动SDK版本1.0.26），与32和64位版本兼容。
 
 ## 支持的浏览器{#Browsers}
+
+以下浏览器与Web访问活动兼容。
 
 * **Microsoft Edge**、 **Mozilla Firefox**、 **Google Chrome** **** 、Safari（最新版本）
 

@@ -7,9 +7,9 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 113f4b3e91c40438c4809bdb97976b58935a2f18
+source-git-commit: 4bc62dcf806abd71e8230ce209d9151a4188b62e
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '388'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 1. 创建新运算符。
 
-在活动中创建运算符的步骤详见[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
+   :arrow_upper_right:在活动中创建运算符的步骤详见[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
 
 1. 转到&#x200B;**[!UICONTROL Groups and named rights]**&#x200B;窗口，单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择&#x200B;**[!UICONTROL Offer manager]**&#x200B;组。
 
@@ -49,7 +49,8 @@ ht-degree: 1%
 ## 创建投放管理器运算符{#delivery-manager}
 
 1. 创建新运算符。
-在活动中创建运算符的步骤详见[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
+
+   :arrow_upper_right:在活动中创建运算符的步骤详见[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
 
 1. 转到&#x200B;**[!UICONTROL Groups and named rights]**&#x200B;窗口，单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择&#x200B;**[!UICONTROL Delivery manager]**&#x200B;组。
 

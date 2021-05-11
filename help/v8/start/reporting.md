@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d257550
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 43914bcbe3cf0ddb323d99a9df16189a1f687317
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,8 @@ Adobe Campaign提供了一组报告工具：
 
 根据查询、计算和卷的复杂性，这些报表中分析的数据可以通过查询收集，并在列表(“数据管理”类型工作流)或多维数据集（使用Marketing Analytics）中预先汇总。 它将以透视表或组列表的形式显示。
 
+
 :arrow_upper_right:有关报告功能的详细信息，[请参阅此部分](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reporting-in-adobe-campaign/about-adobe-campaign-reporting-tools.html)。
 
-## 要检查的关键量度
+请注意，活动 v8报表已优化，与Campaign Classic v7相比，优惠的扩展能力更强。 现有的多维数据集限制不适用。
 

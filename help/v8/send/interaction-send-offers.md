@@ -7,9 +7,9 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: b9de052de5aaeee4b089feb70bf20723be5c9cfa
+source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1282'
 ht-degree: 2%
 
 ---
@@ -150,7 +150,7 @@ ht-degree: 2%
 
 但是，您可以按如下方式存储此信息：
 
-1. 在放置在优惠之后和投放活动之前的扩充活动中创建对查询引擎的调用。 [了解详情](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine)。
+1. 在放置在优惠之后和投放活动之前的扩充活动中创建对查询引擎的调用。 [了解详情](#specifying-an-offer-or-a-call-to-the-offer-engine)。
 1. 在活动的主窗口中，选择&#x200B;**[!UICONTROL Edit additional data...]**。
 
    ![](assets/ita_enrichment_rankweight_1.png)
@@ -203,8 +203,7 @@ ht-degree: 2%
 
       ![](assets/int_offer_per_cell1.png)
 
-1. 然后，配置与所选投放对应的活动渠道。 有关详细信息，请参阅[将优惠建议插入投放](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery)部分。
-
+1. 然后，配置与所选投放对应的活动渠道。
 
 <!--
 

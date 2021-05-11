@@ -7,7 +7,7 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: b9de052de5aaeee4b089feb70bf20723be5c9cfa
+source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
 workflow-type: tm+mt
 source-wordcount: '925'
 ht-degree: 3%
@@ -188,9 +188,9 @@ Creating hypotheses is detailed in [this page](../../campaign/using/about-respon
 
 :arrow_upper_right:有关详细信息，请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=en#approving-offer-content)
 
-## 管理优惠演示
+## 管理优惠演示{#offer-presentation}
 
-活动允许您使用推荐规则控制优惠建议流。 这些规则是特定于活动交互的类型规则。 它们允许您根据已向优惠提出的建议的历史来排除收件人。 它们在环境中引用。
+活动允许您使用推荐规则控制优惠建议流。 这些规则特定于活动交互，它们是&#x200B;**类型规则**。 它们允许您根据已向优惠提出的建议的历史来排除收件人。 它们在环境中引用。
 
 :arrow_upper_right:有关详细信息，请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=en#managing-offers)
 

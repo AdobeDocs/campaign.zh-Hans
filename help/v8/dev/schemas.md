@@ -4,9 +4,9 @@ product: Adobe Campaign
 title: 使用活动模式
 description: 开始使用模式
 translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1242'
 ht-degree: 4%
 
 ---
@@ -162,7 +162,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 ![](assets/schemaextension_2.png)
 
-在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=en#content-model)部分的`<attribute>`元素部分中，可以获得完整的属性列表。 以下是一些最常用的属性：**@advanced**、**@dataPolicy**、**@default**、**@desc**、**@enum**、**@expr**、**@label**、**@length**、**@name**、**@notNull**、&lt;a20/@required>**、&lt;a22/@ref>、&lt;a24/@xml>**,&lt;a26/@type>**。**********
+在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=en#content-model)的`<attribute>`元素部分中，可以找到属性的完整列表。 以下是一些最常用的属性：**@advanced**、**@dataPolicy**、**@default**、**@desc**、**@enum**、**@expr**、**@label**、**@length**、**@name**、**@notNull**、&lt;a20/@required>**、&lt;a22/@ref>、&lt;a24/@xml>**,&lt;a26/@type>**。**********
 
 :arrow_upper_right:有关每个属性的详细信息，请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic)中的“属性”说明。
 

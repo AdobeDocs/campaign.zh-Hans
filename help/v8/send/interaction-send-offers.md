@@ -7,7 +7,7 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
+source-git-commit: fcc0165aeba4347a53d33bed95aa7fbb5fa27005
 workflow-type: tm+mt
 source-wordcount: '1282'
 ht-degree: 2%
@@ -184,7 +184,7 @@ ht-degree: 2%
 
    ![](assets/int_offerengine_activity1.png)
 
-1. 然后，配置与所选投放对应的活动渠道。 [了解详情](inserting-an-offer-proposition-into-a-delivery)。
+1. 然后，配置与所选投放对应的活动渠道。 [了解详情](#inserting-an-offer-proposition-into-a-delivery)。
 
 ### 单元格优惠 {#offers-by-cell}
 

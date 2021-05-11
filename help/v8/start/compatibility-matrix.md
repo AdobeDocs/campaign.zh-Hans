@@ -8,10 +8,10 @@ role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 translation-type: tm+mt
-source-git-commit: e94080bc5e56e642494de48ff4b739b806c6e2e7
+source-git-commit: 3fe4156149e9ff8724dd1ff5fc17b538e6055ef8
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 28%
+source-wordcount: '307'
+ht-degree: 26%
 
 ---
 
@@ -50,37 +50,16 @@ ht-degree: 28%
    * HDInsight 3.4 (HDP 2.4)、3.5 (HDP 2.5)、3.6 (HDP 2.6
    * Cloudera CDH6.x
 
-### 客户端控制台操作系统{#ClientConsoleoperatingsystems}
+### 客户端控制台{#ClientConsoleoperatingsystems}
+
+：警告：使用活动 Client Console需要以下操作系统和浏览器。
+
+**操作系统**
 
 * **Microsoft Windows Server**  2016、2012
 * **Microsoft Windows**  8、10（建议用于日语实例）
 
-## 客户端控制台{#ClientConsoleoperatingsystems}
-
-：警告：使用活动 Client Console需要以下操作系统和浏览器。
-
-### 操作系统
-
-<table>
-<tbody>
-<tr>
-<td>Microsoft Windows Server</td>
-<td>
-<p>2016</p>
-<p>2012</p>
-</td>
-</tr>
-<tr>
-<td>Microsoft Windows</td>
-<td>
-<p>8</p>
-<p>10（建议用于日语实例）</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-### 浏览器
+**浏览器**
 
 <table>
 <tbody>
@@ -100,7 +79,7 @@ ht-degree: 28%
 * **Android**  7.x、8.x、9.0（带移动SDK版本1.0.27）。
 * **Apple iOS**  9 - 14（带移动SDK版本1.0.26），与32和64位版本兼容。
 
-## 支持的浏览器{#Browsers}
+### 支持的浏览器{#Browsers}
 
 以下浏览器与Web访问活动兼容。
 

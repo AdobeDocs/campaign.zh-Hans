@@ -7,9 +7,9 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: b9de052de5aaeee4b089feb70bf20723be5c9cfa
+source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '606'
 ht-degree: 3%
 
 ---
@@ -19,8 +19,6 @@ ht-degree: 3%
 优惠目录的内容以优惠空间配置。 默认情况下，内容可以包括以下字段：**[!UICONTROL Title]**、**[!UICONTROL Destination URL]**、**[!UICONTROL Image URL]**、**[!UICONTROL HTML content]**&#x200B;和&#x200B;**[!UICONTROL Text content]**。 字段序列在优惠空间中配置。
 
 作为&#x200B;**技术管理员**，您可以在设计环境中创建优惠空间。 您需要具有对优惠空间子文件夹的访问权限。 创建后，这些优惠空间会在优惠审批过程中自动复制到实时环境中。
-
-高级参数允许您指定联系人标识键（例如，可以由各种元素组成，名称和电子邮件字段等）。 有关详细信息，请参阅[演示已识别的优惠](../../interaction/using/integration-via-javascript--client-side-.md#presenting-an-identified-offer)部分。
 
 HTML渲染是通过渲染函数创建的。 渲染函数中定义的字段序列必须与内容中配置的序列相同。
 
@@ -66,8 +64,6 @@ HTML渲染是通过渲染函数创建的。 渲染函数中定义的字段序列
 1. 插入您的渲染功能。
 
    ![](assets/offer_space_create_007.png)
-
-如有必要，您可以使HTML和文本渲染功能过载。 [了解详情](../../interaction/using/about-inbound-channels.md)。
 
 ## 优惠建议状态{#offer-proposition-statuses}
 
@@ -161,5 +157,5 @@ As soon as a visitor clicks the offer, and therefore the URL, the **[!UICONTROL 
 ![](assets/offer_space_overview_001.png)
 
 <!--
-The preview can ignore contexts when they are restricted to a space. This is the case when the interaction schema has been extended to add fields referenced in a space using an inbound channel (for more on this, refer to [Extension example](../../interaction/using/extension-example.md)).
+The preview can ignore contexts when they are restricted to a space. This is the case when the interaction schema has been extended to add fields referenced in a space using an inbound channel (for more on this, refer to Extension example.
 -->

@@ -7,10 +7,9 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-translation-type: tm+mt
-source-git-commit: 9b6190f48373b772a72d6c1ef1b7510ec41112be
+source-git-commit: 51efce79e4195c9d53db167be80c7adcda811e21
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1220'
 ht-degree: 2%
 
 ---
@@ -23,6 +22,12 @@ ht-degree: 2%
 1. **准备环境**:导入用户档案、创建受众、设计工作流和活动模板、创建类型规则
 1. **自定义实例**:创建新数据字段，添加表/模式
 1. **扩展您的部署**:连接到Adobe解决方案、其他产品和系统 — 连接器、多解决方案设置
+
+>[!CAUTION]
+>
+>对于&#x200B;**活动托管Cloud Services**，您的环境和初始配置已由Adobe根据您的许可协议条款进行设置。 不允许修改已安装的内置包、内置模式或报告。
+>
+>如果您需要使用活动加载项或尚未设置的特定功能，则必须联系&#x200B;**Adobe客户关怀**。
 
 ## 开始前
 
@@ -40,7 +45,7 @@ Adobe Campaign附带流程和设置，允许您在遵守适用活动隐私法和
 
 ### 安全性
 
-在[活动安全清单](../config/security.md)中学习安全指南和Adobe Campaign原则
+阅读[活动安全清单](../config/security.md)，了解安全准则和Adobe Campaign原则。
 
 ## 定义活动设置
 

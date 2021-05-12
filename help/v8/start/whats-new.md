@@ -8,9 +8,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 translation-type: tm+mt
-source-git-commit: 3fe4156149e9ff8724dd1ff5fc17b538e6055ef8
+source-git-commit: 3870395ec74dd51ed42944981a3851d1052ee255
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,15 @@ Adobe Campaign v8提供了重要的基础架构、安全性、交付性和监控
 
 * **快速扩展**。Adobe Campaign v8利用Cloud Database Manager，使查询的速度提高了200倍，扩展了PB级，每小时消息数增加，事务性消息每小时消息数达20M或1.5M/小时，并管理了多达200M的活动用户档案，可能达到1B。
 
-* **连接Adobe Experience Platform**。Adobe Campaign v8支持Adobe Experience Platform/RT-CDP的数据连接器、统一的客户用户档案以及与Journey Orchestration的本机集成。 这些投资将优化Adobe Campaign客户体验并释放新的使用案例，如向活动添加个性化实时客户旅程的能力。
+* **连接Adobe Experience Platform**。Adobe Campaign v8支持Adobe Experience Platform/RT-CDP的数据连接器、统一的客户用户档案以及与Journey Orchestration的本机集成。 这些投资将优化Adobe Campaign客户体验，并释放新的使用案例，如向活动添加个性化实时客户旅程的能力。
 
-* **托管Cloud Services**。Adobe Campaign v8 **仅**&#x200B;可作为同类中最佳的受管Cloud Services提供，提供主动式监督、及时警报和服务管理。 营销人员的价值在于更灵活、可扩展的跨渠道活动管理。
+* **托管Cloud Services**。Adobe Campaign v8是一款一流的受管Cloud Services，可提供主动式监督、及时警报和服务治理。 营销人员的价值在于更灵活、可扩展的跨渠道活动管理。
 
 >[!CAUTION]
 >
->目前，活动 v8仅作为受管Cloud Service可用。 无法在内部部署或混合部署中实施活动 v8。 尚未提供从Campaign Classic v7环境迁移。
+>目前，活动 v8仅&#x200B;****&#x200B;可用作受管Cloud Service，无法部署在内部部署或混合环境。
+>
+>尚未提供从现有Campaign Classic v7环境迁移。
 
 
 ## 缩放

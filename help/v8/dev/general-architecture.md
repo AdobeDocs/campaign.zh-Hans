@@ -4,10 +4,9 @@ product: Adobe Campaign
 title: 一般架构
 description: 活动 v8通用架构
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 51efce79e4195c9d53db167be80c7adcda811e21
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1223'
 ht-degree: 0%
 
 ---
@@ -60,7 +59,7 @@ Adobe Campaign是一个具有不同应用程序的单一平台，这些应用程
 
 **应用程序服务器** (nlserver web)
 
-此过程通过Web服务API(SOAP - HTTP + XML)显示各种Adobe Campaign功能。 此外，它可动态生成用于基于HTML的访问(报表、Web 窗体等)的网页。 为此，本过程包括一个Apache Tomcat JSP服务器。 这是控制台连接到的进程。
+此过程通过Web服务API(SOAP - HTTP + XML)显示各种Adobe Campaign功能。 此外，它还可以动态生成用于基于HTML的访问(报告、Web 窗体等)的网页。 为此，本过程包括一个Apache Tomcat JSP服务器。 这是控制台连接到的进程。
 
 **工作流引擎** (nlserver wfserver)
 
@@ -123,3 +122,10 @@ Adobe Campaign Cloud数据库依赖于[!DNL Snowflake]，其中包含功能数�
 客户可以使用预定义的Adobe Campaign集和模式部署，还可以扩展数据集。 Adobe Campaign通过SQL调用访问数据集中的所有数据。 Adobe Campaign还提供了“提取转换和加载(ETL)”工具的完整补充，以执行数据导入和将数据导出到系统和从系统中导出。
 
 ![](assets/data-flow-diagram.png)
+
+
+>[!CAUTION]
+>
+>对于&#x200B;**活动托管Cloud Services**，您的环境和初始配置已由Adobe根据您的许可协议条款进行设置。 不允许修改已安装的内置包、内置模式或报告。
+>
+>如果您需要使用活动加载项或尚未设置的特定功能，则必须联系&#x200B;**Adobe客户关怀**。

@@ -7,10 +7,9 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 51efce79e4195c9d53db167be80c7adcda811e21
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '653'
 ht-degree: 0%
 
 ---
@@ -23,15 +22,15 @@ ht-degree: 0%
 
 可用于活动环境的三种类型：
 
-* 生产环境:为业务从业者托管应用程序。
+* **生产环境**:为业务从业者托管应用程序。
 
-* 舞台环境:在将应用程序更改推送到生产环境之前，用于各种性能和质量测试。
+* **舞台环境**:在将应用程序更改推送到生产环境之前，用于各种性能和质量测试。
 
-* 开发环境:允许开发人员在与舞台和生产活动相同的运行时条件下实施环境。
+* **开发环境**:允许开发人员在与舞台和生产活动相同的运行时条件下实施环境。
 
 可以将包从一个环境导出并导入到另一个包。
 
-:arrow_upper_right:了解有关[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=en#about-data-packages)中包的更多信息
+:arrow_upper_right:了解有关[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html)中包的更多信息
 
 ## 中间源部署{#mid-sourcing-deployment}
 

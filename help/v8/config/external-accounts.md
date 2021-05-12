@@ -6,11 +6,10 @@ description: 活动外部帐户
 feature: 概述
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 3f63fa1f599252311e2539aa35d4917c03e079b4
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 18%
+source-wordcount: '148'
+ht-degree: 16%
 
 ---
 
@@ -19,6 +18,12 @@ ht-degree: 18%
 Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系统的连接，您可以创建新外部帐户。
 
 技术工作流或营销策划工作流等技术流程，会使用外部帐户。例如，在工作流中设置文件传输或与任何其他应用程序(Adobe Target、Experience Manager等)进行数据交换时，您需要选择外部帐户。
+
+
+>[!CAUTION]
+>
+>不能在活动 v8中启用内部电子邮件投放路由外部帐户。
+
 
 :arrow_upper_right:了解如何在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts.html)中创建和配置外部帐户
 

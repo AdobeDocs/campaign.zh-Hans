@@ -1,51 +1,50 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: 使用活动模式
-description: 开始使用模式
-translation-type: tm+mt
-source-git-commit: e31b7e16cb4d5ed01d615e71fc15485b4e4a1859
+title: 使用Campaign模式
+description: 模式入门
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1252'
 ht-degree: 4%
 
 ---
 
-# 使用模式{#gs-ac-schemas}
+# 使用架构{#gs-ac-schemas}
 
-应用中所承载数据的物理和逻辑结构以 XML 格式进行描述。它遵循特定于Adobe Campaign的语法，称为&#x200B;**模式**。
+应用中所承载数据的物理和逻辑结构以 XML 格式进行描述。它遵循Adobe Campaign特有的语法，称为&#x200B;**schema**。
 
-模式是与数据库表关联的XML文档。 它定义数据结构并描述表的SQL定义：
+模式是与数据库表关联的XML文档。 它定义了数据结构并描述了表的SQL定义：
 
 * 表的名称
 * 字段
 * 与其他表的链接
 
-还描述了用于存储数据的XML结构：
+它还描述了用于存储数据的XML结构：
 
 * 元素和属性
-* 元素层次
+* 元素层次结构
 * 元素和属性类型
 * 默认值
-* 标签、说明和其他属性。
+* 标签、描述和其他属性。
 
-模式允许您在数据库中定义实体。 每个实体都有一个模式。
+通过架构，您可以定义数据库中的实体。 每个实体都有一个架构。
 
-Adobe Campaign使用数据模式来：
+Adobe Campaign采用数据模式：
 
-* 定义应用程序中数据对象与基础数据库表的绑定方式。
+* 定义应用程序中的数据对象如何与基础数据库表绑定。
 * 定义 Campaign 应用程序中不同数据对象之间的链接。
 * 定义并描述每个对象中包含的个别字段。
 
-要更好地了解活动内置表及其交互，请参阅[本节](datamodel.md)。
+要更好地了解Campaign内置表及其交互，请参阅[此部分](datamodel.md)。
 
 >[!CAUTION]
 >
->某些内置活动模式在云数据库上具有关联模式。 这些模式由&#x200B;**Xxl**&#x200B;命名空间标识，不得修改。
+>某些内置的Campaign架构在云数据库上具有关联的架构。 这些架构由&#x200B;**Xxl**&#x200B;命名空间标识，不得修改或扩展。
 
-## 模式{#syntax-of-schemas}的语法
+## 架构{#syntax-of-schemas}的语法
 
-模式的根元素为&#x200B;**`<srcschema>`**。 它包含&#x200B;**`<element>`**&#x200B;和&#x200B;**`<attribute>`**&#x200B;子元素。
+架构的根元素为&#x200B;**`<srcschema>`**。 它包含&#x200B;**`<element>`**&#x200B;和&#x200B;**`<attribute>`**&#x200B;子元素。
 
 第一个&#x200B;**`<element>`**&#x200B;子元素与实体的根重合。
 
@@ -63,55 +62,56 @@ Adobe Campaign使用数据模式来：
 
 >[!NOTE]
 >
->实体的根元素与模式同名。
+>实体的根元素与架构同名。
 
 ![](assets/schema_and_entity.png)
 
-**`<element>`**&#x200B;标签定义实体元素的名称。 **`<attribute>`** 模式的标签定义已链接到的标 **`<element>`** 签中属性的名称。
+**`<element>`**&#x200B;标记定义实体元素的名称。 **`<attribute>`** 架构的标记定义它们所链接的标 **`<element>`** 记中属性的名称。
 
-## 模式{#identification-of-a-schema}的标识
+## 架构{#identification-of-a-schema}的标识
 
-数据模式由其名称和命名空间标识。
+数据架构通过其名称及其命名空间进行标识。
 
-命名空间允许您按目标区域对一组模式进行分组。 例如，**cus**&#x200B;命名空间用于特定于客户的配置(**customers**)。
+命名空间允许您按关注区域对一组架构进行分组。 例如， **cus**&#x200B;命名空间用于特定于客户的配置(**customers**)。
 
 >[!CAUTION]
 >
->作为标准，命名空间的名称必须简洁明了，并且必须只包含符合XML命名规则的授权字符。
+>作为标准，命名空间的名称必须简洁明了，并且必须只包含根据XML命名规则授权的字符。
 >
->标识符不能以数字字符开头。
+>标识符不得以数字字符开头。
 
-## 保留命名空间
+## 保留的命名空间{#reserved-namespaces}
 
-某些命名空间保留用于描述操作Adobe Campaign应用程序所需的系统实体。 以下命名空间&#x200B;**不得在任何大小写组合中用于标识新模式:**
+某些命名空间是保留的，用于描述操作Adobe Campaign应用程序所需的系统实体。 在任何大写/小写组合中，不得使用以下命名空间&#x200B;**来标识新架构：**
 
-* **xxl**:保留到Cloud数据库模式,
-* **xtk**:预留给平台系统数据，
-* **nl**:保留给应用程序的整体使用，
-* **nms**:保留给投放(收件人、投放、跟踪等),
-* **ncm**:保留给内容管理,
-* **temp**:保留给临时模式。
+* **xxl**:保留给云数据库架构
+* **xtk**:平台系统数据保留
+* **nl**:保留给应用程序的整体使用
+* **nms**:保留给投放（收件人、投放、跟踪等）
+* **ncm**:内容管理保留
+* **临时**:保留给临时架构
+* **crm**:保留到CRM连接器集成
 
-模式的标识键是使用命名空间和冒号分隔的名称构建的字符串；例如：**nms:收件人**。
+架构的标识键是使用命名空间和名称以冒号分隔的字符串；例如：**nms:recipient**。
 
-## 创建或扩展活动模式{#create-or-extend-schemas}
+## 创建或扩展Campaign模式{#create-or-extend-schemas}
 
-要向活动中某个核心模式(如收件人表(nms:收件人))添加字段或其他元素，必须扩展该模式。
+要向Campaign中的一个核心数据模式(例如收件人表(nms:recipient))添加字段或其他元素，您必须扩展该模式。
 
-：灯泡：有关详细信息，请参阅[扩展模式](extend-schema.md)。
+：灯泡：有关更多信息，请参阅[扩展架构](extend-schema.md)。
 
-要添加Adobe Campaign中不存在的全新模式类型（例如合同表），您可以直接创建自定义数据。
+要添加Adobe Campaign中不存在的全新数据类型（例如合同表），您可以直接创建自定义架构。
 
-：灯泡：有关详细信息，请参阅[创建新模式](create-schema.md)。
+：灯泡：有关更多信息，请参阅[创建新架构](create-schema.md)。
 
 ![](assets/schemaextension_1.png)
 
 
-创建或扩展模式后，最佳做法是按如下顺序定义其XML内容元素。
+创建或扩展架构以在中工作后，最佳做法是按它们在下面显示的顺序定义其XML内容元素。
 
 ## 明细列表 {#enumerations}
 
-明细列表首先在模式的主元素之前定义。 它们允许您在列表中显示值，以限制用户对给定字段的选择。
+首先，在架构的主元素之前定义枚举。 利用这些值，可在列表中显示值，以限制用户对给定字段所做的选择。
 
 示例:
 
@@ -123,7 +123,7 @@ Adobe Campaign使用数据模式来：
 </enumeration>
 ```
 
-在定义字段时，您随后可以按如下方式使用此明细列表:
+在定义字段时，您随后可以使用此枚举，如下所示：
 
 ```
 <attribute desc="Type of Transaction" label="Transaction Type" name="transactionType" 
@@ -132,13 +132,13 @@ type="string" enum="exTransactionTypeEnum"/>
 
 >[!NOTE]
 >
->您还可以使用用户管理的明细列表（通常在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]**&#x200B;下）来指定给定字段的值。 这些是有效的全局明细列表，如果您的明细列表可能在您所使用的特定模式之外使用，则还是一个更好的选择。
+>您还可以使用用户管理的枚举（通常位于&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]**&#x200B;下）来指定给定字段的值。 这些是有效的全局枚举，如果枚举在您正在使用的特定架构之外使用，则最好选择这些枚举。
 
-## 键{#keys}
+## 键 {#keys}
 
-每个表必须至少有一个键，并且通常使用设置为“true”的&#x200B;**@autouuid=true**&#x200B;属性在模式的主元素中自动建立该键。
+每个表都必须至少具有一个键，并且通常使用将&#x200B;**@autouuid=true**&#x200B;属性设置为“true”，在架构的主元素中自动建立该键。
 
-主键也可以使用&#x200B;**internal**&#x200B;属性进行定义。
+也可以使用&#x200B;**internal**&#x200B;属性定义主键。
 
 示例:
 
@@ -148,25 +148,25 @@ type="string" enum="exTransactionTypeEnum"/>
 </key>
 ```
 
-在此示例中，我们指定的不是让&#x200B;**@autouuid**&#x200B;属性创建名为“id”的默认主键，而是自己的“househId”主键。
+在此示例中，我们不是让&#x200B;**@autouuid**&#x200B;属性创建名为“id”的默认主键，而是指定我们自己的“houselId”主键。
 
 >[!CAUTION]
 >
->在创建新模式或在模式扩展期间，您需要为整个模式保留相同的主键序列值(@pkSequence)。
+>创建新架构或在架构扩展期间，您需要为整个架构保留相同的主键序列值(@pkSequence)。
 
-：灯泡：了解有关[本节](database-mapping.md#management-of-keys)中的键的更多信息。
+：灯泡：了解有关[此部分](database-mapping.md#management-of-keys)中键的更多信息。
 
 ## 属性（字段）{#attributes--fields-}
 
-属性允许您定义构成数据对象的字段。 可以使用模式版工具栏中的&#x200B;**[!UICONTROL Insert]**&#x200B;按钮将空属性模板放置到光标所在的XML中。 请阅读[本节](create-schema.md)了解更多信息。
+利用属性，可定义构成数据对象的字段。 可以使用架构版工具栏中的&#x200B;**[!UICONTROL Insert]**&#x200B;按钮将空属性模板拖放到光标所在的XML中。 在[此部分](create-schema.md)中了解详情。
 
 ![](assets/schemaextension_2.png)
 
-在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=en#content-model)的`<attribute>`元素部分中，可以找到属性的完整列表。 以下是一些最常用的属性：**@advanced**、**@dataPolicy**、**@default**、**@desc**、**@enum**、**@expr**、**@label**、**@length**、**@name**、**@notNull**、&lt;a20/@required>**、&lt;a22/@ref>、&lt;a24/@xml>**,&lt;a26/@type>**。**********
+在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=en#content-model)的`<attribute>`元素部分中提供了完整的属性列表。 以下是一些最常用的属性：**@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, ****@required **、**@ref **、**@xml **、**@type **。**
 
-:arrow_upper_right:有关每个属性的详细信息，请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic)中的“属性”说明。
+:arrow_upper_right:有关每个属性的更多信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic)中的属性描述。
 
-### 示例{#examples}
+### 示例 {#examples}
 
 定义默认值的示例：
 
@@ -174,7 +174,7 @@ type="string" enum="exTransactionTypeEnum"/>
 <attribute name="transactionDate" label="Transaction Date" type="datetime" default="GetDate()"/>
 ```
 
-将公用属性用作字段模板的示例，该字段也标记为必填：
+将通用属性用作字段模板的示例也标记为必填：
 
 ```
 <attribute name="mobile" label="Mobile" template="nms:common:phone" required="true" />
@@ -194,33 +194,33 @@ XML字段的示例也存储在SQL字段中，该字段具有&#x200B;**@dataPolic
 
 >[!CAUTION]
 >
->尽管大多数属性都根据1-1基数链接到数据库的物理字段，但XML字段或计算字段的情况并非如此。\
->XML字段存储在表的备注字段(“mData”)中。\
->但是，每次启动查询时都动态地创建计算字段，因此它仅存在于应用层中。
+>尽管大多数属性都根据1-1基数链接到数据库的物理字段，但XML字段或计算字段并非如此。\
+>XML字段存储在表的Memo字段(“mData”)中。\
+>但是，每次启动查询时都会动态创建计算字段，因此它仅存在于应用层中。
 
 ## 链接 {#links}
 
-链接是您的模式主元素中最后的一些元素。 它们定义实例中所有不同模式之间的关联方式。
+链接是架构主元素中的最后一些元素。 它们定义实例中所有不同架构如何彼此关联。
 
-链接在包含其链接的表的&#x200B;**外键**&#x200B;的模式中声明。
+链接在包含其链接的表&#x200B;**外键**&#x200B;的架构中声明。
 
-有三种类型的基数：1-1、1-N和N-N。默认情况下使用的是1-N类型。
+基数有三种类型：1-1、1-N和N-N默认使用的是1-N类型。
 
 ### 示例{#examples-1}
 
-收件人表(现成模式)和自定义事务表之间的1-N链接示例：
+收件人表（即装即用模式）和自定义事务表之间的1-N链接示例：
 
 ```
 <element label="Recipient" name="lnkRecipient" revLink="lnkTransactions" target="nms:recipient" type="link"/>
 ```
 
-自定义模式“Car”(在“cus”命名空间中)与收件人表之间的1-1链接示例：
+自定义架构“Car”（位于“cus”命名空间中）与收件人表之间的1-1链接示例：
 
 ```
 <element label="Car" name="lnkCar" revCardinality="single" revLink="recipient" target="cus:car" type="link"/>
 ```
 
-收件人表和地址表之间基于电子邮件地址（而非主键）的外部连接示例：
+收件人表和地址表之间基于电子邮件地址而非主键的外部连接示例：
 
 ```
 <element name="emailInfo" label="Email Info" revLink="recipient" target="nms:address" type="link" externalJoin="true">
@@ -228,13 +228,13 @@ XML字段的示例也存储在SQL字段中，该字段具有&#x200B;**@dataPolic
 </element>
 ```
 
-此处“xpath-dst”对应于目标模式中的主键，而“xpath-src”对应于源模式中的外键。
+此处，“xpath-dst”对应于目标架构中的主键，而“xpath-src”对应于源架构中的外键。
 
 ## 审核跟踪 {#audit-trail}
 
-您可能希望在模式底部包含的一个有用元素是跟踪元素（审计跟踪）。
+您希望在架构底部包含的一个有用元素是跟踪元素（审核跟踪）。
 
-请使用下面的示例包括与创建日期、创建数据的用户、日期以及表格中所有数据的上次修改的作者相关的字段：
+使用以下示例可包含与创建日期、创建数据的用户、日期以及表格中所有数据的上次修改作者相关的字段：
 
 ```
 <element aggregate="xtk:common:auditTrail" name="auditTrail"/>
@@ -250,5 +250,5 @@ XML字段的示例也存储在SQL字段中，该字段具有&#x200B;**@dataPolic
 
 >[!NOTE]
 >
->当修改不影响数据库结构时，您只需重新生成模式。 为此，请选择要更新的模式，右键单击并选择&#x200B;**[!UICONTROL Actions > Regenerate selected schemas...]**。
+>如果修改不影响数据库结构，您只需重新生成架构即可。 要执行此操作，请选择要更新的架构，右键单击并选择&#x200B;**[!UICONTROL Actions > Regenerate selected schemas...]** 。
 

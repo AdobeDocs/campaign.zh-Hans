@@ -1,5 +1,5 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: 营销活动入门
 description: 营销活动入门
@@ -7,59 +7,57 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '350'
 ht-degree: 11%
 
 ---
 
-# Connect 活动和其他解决方案{#gs-ac-connectors}
+# 将Campaign与您的解决方案连接{#gs-ac-connectors}
 
-您可以将您的活动实例与Adobe Experience Cloud解决方案相连，以结合各种功能。
+您可以将Campaign实例与Adobe Experience Cloud解决方案连接，以结合各种功能。
 
-Adobe Campaign附带几个连接器，允许您与外部应用程序通信、连接到数据库引擎、共享和同步数据。
+Adobe Campaign附带多个连接器，允许您与外部应用程序通信、连接到数据库引擎、共享和同步数据。
 
 ## 利用Adobe解决方案{#gs-ac-integration}
 
-实现实施现代化并利用所有Adobe Experience Cloud功能。
+使您的实施符合现代化要求并利用所有Adobe Experience Cloud功能。
 
-:speech_balloon:作为受管Cloud Services用户，[与Adobe](../start/support.md#support)联系，将活动与Adobe Experience Cloud服务和解决方案连接。 您需要实施Adobe Identity Management服务(IMS)。 [了解详情](../start/connect.md#connect-ims)
+:speech_balloon:作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以将Campaign与Adobe Experience Cloud服务和解决方案连接起来。 您需要实施AdobeIdentity Management服务(IMS)。 [了解详情](../start/connect.md#connect-ims)
 
-活动 v8可以与：
+Campaign v8可以连接：
 
 * [AdobeJourney Orchestration](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=en)
 
-* [实时CDP](../connect/ac-rtcdp.md)
+* [Real-Time CDP](../connect/ac-rtcdp.md)
 
-* [Adobe Analytics数据连接器](../connect/ac-aa.md)
+* [Adobe Analytics Data Connector](../connect/ac-aa.md)
 
 * [Adobe Experience Manager](../connect/ac-aem.md)
 
 * [Adobe Target](../connect/ac-at.md)
 
-您还可以使用资产共享和受众共享功能，将您的&#x200B;**受众**&#x200B;和&#x200B;**资产**&#x200B;组合到Experience Cloud解决方案中。
+您还可以通过Experience Cloud共享和受众共享功能，在不同的受众解决方案中合并&#x200B;**受众**&#x200B;和&#x200B;**资产**。
 
-:arrow_upper_right:了解关于[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=en#integrating-with-adobe-experience-cloud)中活动和Experience Cloud解决方案之间的&#x200B;**受众共享**&#x200B;的更多信息
+:arrow_upper_right:进一步了解&#x200B;**Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=en#integrating-with-adobe-experience-cloud)中的[Campaign和Experience Cloud解决方案之间的受众共享**
 
-:arrow_upper_right:了解有关[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=en#integrating-with-adobe-experience-cloud)中活动和Experience Cloud解决方案之间的资产共享&#x200B;**的更多信息**
+:arrow_upper_right:进一步了解&#x200B;**在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=en#integrating-with-adobe-experience-cloud)中的Campaign和Experience Cloud解决方案之间共享**&#x200B;资产
 
 ## CRM 连接器{#gs-crm-connectors}
 
-您可以将Adobe Campaign平台连接到&#x200B;**CRM第三方系统**&#x200B;并同步数据：联系人、帐户、购买等。
+您可以将Adobe Campaign平台连接到&#x200B;**CRM第三方系统**&#x200B;并同步数据：联系人、帐户、购买等
 
-在跨渠道通信中激活CRM数据：了解如何将联系人从您的CRM系统传递到Adobe Campaign，以及将活动数据从Adobe Campaign共享回您的CRM系统。
-CRM连接器支持快速、轻松的数据集成：Adobe Campaign为从CRM中提供的表中收集和选择内容提供专用助理。 并且可确保双向同步处理，让整个系统中的数据随时保持最新。
+在跨渠道通信中激活CRM数据：了解如何将联系人从CRM系统传递到Adobe Campaign，以及将促销活动数据从Adobe Campaign共享回CRM系统。
+CRM连接器支持快速、轻松的数据集成：Adobe Campaign为从CRM中可用的表中进行收集和选择提供了专门的助手。 并且可确保双向同步处理，让整个系统中的数据随时保持最新。
 
-：灯泡：了解如何在[此页面](crm.md)中将活动与Microsoft Dynamics 365和Salesforce.com集成
-
+：灯泡：在[本页](crm.md)中了解如何将Campaign与Microsoft Dynamics 365和Salesforce.com集成
 
 ## 联合数据访问 (FDA){#gs-fda}
 
-使用联合数据访问连接器(联合数据访问)将活动连接到一个或多个&#x200B;**外部数据库**&#x200B;并处理存储在这些数据库中的信息，而不会影响您的活动 Cloud数据库数据。
+使用FDA连接器（联合数据访问）将Campaign连接到一个或多个&#x200B;**外部数据库**，并处理存储到它们中的信息，而不会影响您的Campaign云数据库数据。
 
-：灯泡：了解有关[此页面](fda.md)的详细信息
+：灯泡：在[此页面](fda.md)中了解详情
 
 
 <!-- 

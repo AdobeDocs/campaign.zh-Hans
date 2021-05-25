@@ -1,36 +1,35 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: 活动安全最佳实践
-description: 开始使用活动安全最佳实践
-translation-type: tm+mt
-source-git-commit: 5592dd4e79391d953a4bc54cdd47475417e07b56
+title: Campaign安全最佳实践
+description: Campaign安全最佳实践快速入门
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
 
-# 活动安全最佳实践{#ac-security}
+# Campaign安全最佳实践{#ac-security}
 
-在Adobe，我们非常重视您数字体验的安全性。 安全实践已深深地扎根于我们的内部软件开发和操作流程及工具之中，并且我们的跨职能团队会严格遵循这些实践，以便以权宜的方式预防、检测和响应事件。
+在Adobe，我们非常重视您的数字体验的安全性。 安全实践已深深扎根于我们的内部软件开发和操作流程及工具中，并且我们的跨职能团队也严格遵循这些实践，以便以便利的方式预防、检测和应对事件。
 
-此外，我们与合作伙伴、领先研究人员、安全研究机构和其他行业组织的协作有助于我们及时了解最新的威胁和漏洞，并且我们会定期将高级安全技术纳入我们优惠的产品和服务中。
+此外，我们与合作伙伴、领先研究人员、安全研究机构和其他行业组织的协作有助于我们及时了解最新的威胁和漏洞，并且我们会定期将先进的安全技术纳入我们提供的产品和服务中。
 
 ## 隐私
 
 隐私配置和强化是安全优化的关键要素。 以下是有关隐私的一些最佳实践：
 
-* Protect客户个人信息(PI)，使用HTTPS代替HTTP
-* 使用[PI视图限制](../dev/restrict-pi-view.md)保护隐私并防止数据被滥用
+* 使用HTTPS而不是HTTP来Protect客户个人信息(PI)
+* 使用[PI视图限制](../dev/restrict-pi-view.md)保护隐私并防止数据被误用
 * 确保加密密码受限
-* Protect可能包含镜像页面、Web应用程序等个人信息的页面。
+* Protect可能包含个人信息（如镜像页面、Web应用程序等）的页面。
 
-:speech_balloon:作为托管Cloud Services用户，Adobe将与您一起在您的环境上实施这些配置。
+:speech_balloon:作为托管Cloud Services用户，Adobe将与您合作，在您的环境中实施这些配置。
 
 ## 个性化
 
-在向内容添加个性化链接时，请始终避免在URL的主机名部分包含任何个性化，以避免潜在的安全漏洞。 以下示例不应用于所有URL属性&lt;`a href="">`或`<img src="">`:
+在向内容添加个性化链接时，应始终避免在URL的主机名部分进行任何个性化，以避免潜在的安全漏洞。 以下示例绝不应用于所有URL属性`a href="">`或`<img src="">`:
 
 * `<%= url >`
 * `https://<%= url >`
@@ -40,13 +39,13 @@ ht-degree: 0%
 
 ## 数据限制
 
-您必须确保经过身份验证的低权限用户无法访问加密的口令。 为此，有两种主要方式：仅限制对密码字段或整个实体的访问。
+您必须确保经过身份验证的低权限用户无法访问加密密码。 要实现此目的，主要有两种方法：限制仅访问密码字段或访问整个实体。
 
-此限制允许您删除密码字段，但允许所有用户从界面访问外部帐户。 请阅读[本页](../dev/restrict-pi-view.md)了解更多信息。
+此限制允许您删除密码字段，但允许所有用户从界面访问外部帐户。 在[此页面](../dev/restrict-pi-view.md)中了解详情。
 
 1. 进入&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**。
 
-1. 新建&#x200B;**[!UICONTROL Extension of a schema]**。
+1. 创建新的&#x200B;**[!UICONTROL Extension of a schema]**。
 
 1. 选择&#x200B;**[!UICONTROL External Account]**(extAccount)。
 
@@ -73,7 +72,7 @@ ht-degree: 0%
    </element>
    ```
 
-   因此，您的扩展srcSchema可以如下所示：
+   因此，扩展的srcSchema可能如下所示：
 
    ```
    <...>
@@ -98,27 +97,27 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >您可以将`$(loginId) = 0 or $(login) = 'admin'`替换为`hasNamedRight('admin')`，让具有管理员权限的所有用户查看这些密码。
+   >您可以将`$(loginId) = 0 or $(login) = 'admin'`替换为`hasNamedRight('admin')` ，以便具有管理员权限的所有用户都可以查看这些密码。
 
 
 ## 访问管理
 
-访问管理是加强安全的一个重要部分。 以下是一些主要的最佳实践：
+访问管理是加强安全性的重要环节。 以下是一些主要的最佳实践：
 
 * 创建足够的安全组
-* 检查每个运营商是否拥有适当的访问权限
-* 避免使用管理员操作员，并避免管理员组中的操作员过多
+* 检查每个操作员是否拥有适当的访问权限
+* 避免使用管理员操作员，并避免管理员组中的运算符过多
 
-:arrow_upper_right:了解有关[Adobe Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator)的更多信息
+:arrow_upper_right:在[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator)中了解更多信息
 
-## 编码指南
+## 编码准则
 
-在Adobe Campaign(工作流、Javascript、JSSP等)中进行开发时，始终遵循以下准则：
+在Adobe Campaign中进行开发（工作流、Javascript、JSSP等）时，请始终遵循以下准则：
 
-* **脚本**:尝试避免SQL语句，使用参数化函数而不是字符串连接，通过向允许列表添加要使用的SQL函数来避免SQL注入。
+* **脚本**:请尝试避免使用SQL语句，使用参数化函数而不是字符串连接，通过添加要用于允许列表的SQL函数来避免SQL注入。
 
-* **保护数据模型**:使用已命名权限限制操作符操作，添加系统过滤器(sysFilter)
+* **保护数据模型**:使用命名权限限制运算符操作，添加系统过滤器(sysFilter)
 
-* **在Web应用程序中添加捕捉**:在您的公共登陆页和订阅页面中添加捕捉。
+* **在Web应用程序中添加捕获**:在您的公共登陆页面和订阅页面中添加捕获。
 
-:arrow_upper_right:了解有关[Adobe Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic)的更多信息
+:arrow_upper_right:在[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic)中了解更多信息

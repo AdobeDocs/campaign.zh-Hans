@@ -1,35 +1,35 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: 开始使用用户档案
-description: 开始使用用户档案
+title: 用户档案入门
+description: 用户档案入门
 feature: 用户档案
 role: Data Engineer
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
-translation-type: tm+mt
-source-git-commit: 0995e3595d2e5f38bade4f71fccc7938d7d1284b
+source-git-commit: 905003b74a1f875432f08c5c70edf3d0451b861f
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 8%
+source-wordcount: '323'
+ht-degree: 6%
 
 ---
 
-# 将数据导入活动{#ootb-profiles}
+# 将数据导入Campaign {#ootb-profiles}
 
-活动可帮助您将联系人添加到云数据库。 您可以加载文件、计划和自动进行多个联系人更新、在Web上收集数据或直接在收件人表中输入用户档案信息。
+Campaign可帮助您将联系人添加到云数据库。 您可以加载文件、计划和自动进行多次联系人更新、在Web上收集数据或直接在收件人表中输入用户档案信息。
 
-:blub:开始使用[受众](audiences.md)
-:blub:了解活动 [datamodel](../dev/datamodel.md)
+：灯泡：[audiences](audiences.md)快速入门
+：灯泡：了解Campaign [数据模型](../dev/datamodel.md)
 
 ## 在工作流中导入用户档案
 
-用户档案导入在通过&#x200B;**导入**&#x200B;工作流执行的专用模板中配置。 它们可以根据时间表自动重复，例如用于在多个信息系统之间自动交换数据。请阅读[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/import-export-workflows.html)了解更多信息。
+配置文件导入在通过工作流通过&#x200B;**Import**&#x200B;活动执行的专用模板中配置。 它们可以根据时间表自动重复，例如用于在多个信息系统之间自动交换数据。在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/import-export-workflows.html)中了解更多信息。
 
+![](assets/import-wf.png)
 
-在Campaign Classic文档中了解更多信息：
+请参阅Campaign Classicv7文档，以了解更多信息：
 
-:arrow_upper_right:[开始导入和导出](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/get-started-data-import-export.html)
+:arrow_upper_right:[导入和导出入门](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/get-started-data-import-export.html)
 
 :arrow_upper_right:[导入和导出最佳实践](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/best-practices/import-export-best-practices.html)
 
@@ -39,15 +39,20 @@ ht-degree: 8%
 
 创建并执行通用数据导入作业，以在云数据库中加载联系人。
 
-:arrow_upper_right:了解如何运行统一的导入作业以在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html)中为数据库提供服务。
+![](assets/new-import.png)
+
+:arrow_upper_right:了解如何运行统一导入作业以在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html)中为数据库提供信息。
 
 ## 通过Web应用程序收集用户档案
 
-要添加的详细信息+链接
+使用Campaign创建Web窗体，轻松高效地收集和管理用户档案信息。 您可以将这些表单共享到您的网站中，这样您的联系人就可以轻松地提供其信息。 他们的信息会发送到Campaign以创建其用户档案或更新其信息（如果数据库中已存在）。
 
+![](assets/web-form-page.png)
+
+:arrow_upper_right:了解如何在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html)中创建Web窗体。
 
 **相关主题**
 
 * [创建受众](audiences.md)
-* [消除重复用户档案](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/deduplication-merge.html)
-* [丰富用户档案数据](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/enriching-data.html)
+* [删除重复的用户档案](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/deduplication-merge.html)
+* [扩充用户档案数据](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/enriching-data.html)

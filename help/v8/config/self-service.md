@@ -1,22 +1,25 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Campaign 控制面板
 description: Campaign 控制面板
 feature: 概述
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+hidefromtoc: true
+hide: true
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '361'
 ht-degree: 58%
 
 ---
 
 # Campaign 控制面板
 
-活动控制面板允许您管理每个实例的设置和跟踪实例，从而帮助您以Adobe Campaign产品管理员的身份提高工作效率。 其直观的界面可让您轻松监控关键资产的使用情况，并执行管理任务，如将 IP 地址添加到允许列表、SFTP 存储监控、密钥管理等。
+尚未可用
+
+Campaign控制面板可让您管理每个实例的设置和跟踪使用情况，从而帮助您作为Adobe Campaign的产品管理员提高工作效率。 其直观的界面可让您轻松监控关键资产的使用情况，并执行管理任务，如将 IP 地址添加到允许列表、SFTP 存储监控、密钥管理等。
 
 主要优点：
 
@@ -24,7 +27,7 @@ ht-degree: 58%
 * 根据不同的业务需求在不同时间配置设置。
 * 根据需要控制访问设置，从而增强安全性。
 
-您还可以使用活动控制面板配置实例设置，如IP允许列表、URL权限和检索有关实例的信息。
+您还可以使用Campaign控制面板配置实例设置，如IP允许列表、URL权限，以及检索有关实例的信息。
 
 ## 如何访问控制面板？
 
@@ -47,10 +50,10 @@ ht-degree: 58%
 
 ## 实例设置
 
-了解如何在控制面板中管理活动实例设置。
+了解如何在控制面板中管理Campaign实例设置。
 * [允许列表上的IP](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
 * [URL 权限](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html)
 * [实例详细信息](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
 * [GPG 密钥管理](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html)
 
-:arrow_upper_right:发现[本文档](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)中的所有控制面板功能
+:arrow_upper_right:在[本文档](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)中发现所有控制面板功能

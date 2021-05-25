@@ -1,36 +1,35 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: 活动交互优惠目录
+title: Campaign互动优惠目录
 description: 了解如何创建优惠目录
 feature: 概述
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: b9de052de5aaeee4b089feb70bf20723be5c9cfa
+source-git-commit: 58f294b3d17de5eca64c82fdf7720b2734320bad
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '381'
 ht-degree: 1%
 
 ---
 
 # 创建优惠目录
 
-作为&#x200B;**优惠管理器**，您负责创建优惠目录。
+作为&#x200B;**选件管理器**，您负责创建选件目录。
 
-优惠目录与单个预先存在的环境关联。 此目录中的优惠只能与在此同一环境中指定的空格关联。
+选件目录与单个预先存在的环境相关联。 此目录中的选件只能与此同一环境中指定的空间关联。
 
-在创建优惠之前，您必须首先指定[环境](interaction-env.md)，其中包含一组优惠的所有特征(资格、目标约束、推荐规则)，这些特征分为类别以及其空间的列表。
+在创建选件之前，您必须先指定一个[环境](interaction-env.md)，其中包含一组选件的所有特征（资格、目标约束、呈现规则），这些选件按类别排序，以及其空格列表。
 
 ## 创建优惠类别{#creating-offer-categories}
 
-优惠分为类别/子类别。 类别在&#x200B;**[!UICONTROL Design]**&#x200B;环境中创建，并在&#x200B;**[!UICONTROL Live]**&#x200B;环境(即，当其包含的优惠被批准时可用)中自动部署。 **[!UICONTROL Design]**&#x200B;环境包含接收所有优惠的默认类别。 可以创建子类别以将层次结构添加到目录优惠。
+选件分为类别/子类别。 类别在&#x200B;**[!UICONTROL Design]**&#x200B;环境中创建，并在批准包含的选件时自动部署在&#x200B;**[!UICONTROL Live]**&#x200B;环境（即提供）中。 **[!UICONTROL Design]**&#x200B;环境包含接收所有选件的默认类别。 可以创建子类别以将层次结构添加到目录选件中。
 
-对于每个类别，您可以定义&#x200B;**资格日期**，即向其目标显示类别中包含的优惠的期间。 您还可以调整类别的权重，以排定优惠演示的优先级。
+对于每个类别，您可以定义&#x200B;**资格日期**，该日期是类别中包含的选件可向其目标显示的时间段。 您还可以调整类别的权重，以优先显示选件。
 
 要创建新类别，请执行以下步骤：
 
-1. 浏览到&#x200B;**[!UICONTROL Offer catalog]**&#x200B;文件夹。
+1. **[!UICONTROL Offer catalog]**&#x200B;文件夹的浏览器。
 
    ![](assets/offer_cat_create_001.png)
 
@@ -38,13 +37,13 @@ ht-degree: 1%
 
    ![](assets/offer_cat_create_002.png)
 
-1. 重新命名类别。 以后可以使用&#x200B;**[!UICONTROL General]**&#x200B;选项卡编辑标签。
+1. 重新命名类别。 您稍后可以使用&#x200B;**[!UICONTROL General]**&#x200B;选项卡编辑标签。
 
    ![](assets/offer_cat_create_003.png)
 
    >[!NOTE]
    >
-   >重复这些步骤，以创建所需数量的类别。
+   >重复这些步骤以创建所需数量的类别。
 
    之后，您可以根据需要：
 
@@ -52,29 +51,19 @@ ht-degree: 1%
 
       ![](assets/offer_cat_create_004.png)
 
-   * 使用&#x200B;**[!UICONTROL Themes]**&#x200B;字段输入可用于从此类别中选择优惠的关键字。
+   * **[!UICONTROL Edit query]** 将过滤器应用到选件目标。
 
-      ![](assets/offer_cat_create_005.png)
-
-      >[!NOTE]
-      >
-      >调用优惠引擎时，只会选择主题或类别与参数匹配的目录部分。
-
-   * 通过&#x200B;**[!UICONTROL Multiplier weight]**&#x200B;字段暂时“提升”给定时段类别的优惠权重。
-
-      ![](assets/offer_cat_create_006.png)
-
-您可以在合格规则中包含的优惠的仪表板上查阅类别。 要视图它们，请单击&#x200B;**[!UICONTROL Schedule and eligibility rules of the offer]**&#x200B;链接。
+   * 资格规则的回顾。要查看这些规则，请单击&#x200B;**[!UICONTROL Schedule and eligibility rules of the offer]**&#x200B;链接。
 
 ## 添加回退类别
 
-为确保所有收件人都能收到优惠建议，可以在建议中系统地添加一个或多个优惠类别。
+为了确保所有收件人都收到优惠建议，可以在推荐中系统地添加一个或多个优惠类别。
 
-这些回退优惠必须具有低（但非空）权重，以便仅在没有较高权重优惠符合条件时才考虑这些。
+这些备用选件的权重必须较低（但非空），因此只有在没有较高权重的选件符合条件时，才会考虑这些备用选件。
 
-此外，不得对这些优惠适用推荐规则，以确保建议中始终包括这些数据。 这意味着，在提议期间，如果没有更高的权重优惠可用，收件人将从此类别接收至少一个优惠。
+此外，不得对这些选件应用任何展示规则，以确保始终将它们包含在推荐中。 这意味着，在提出建议期间，如果没有更高权重的选件可用，则收件人将至少收到此类别中的一个选件。
 
-要在建议中包含回退类别，请执行以下步骤：
+要在推荐中包含回退类别，请执行以下步骤：
 
 1. 浏览到您的优惠目录。
 1. 单击&#x200B;**[!UICONTROL Eligibility]**&#x200B;选项卡并选择&#x200B;**[!UICONTROL Always include this category in the recommendations]**&#x200B;选项。

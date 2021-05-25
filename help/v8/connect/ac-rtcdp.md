@@ -1,26 +1,25 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: 使用活动和实时客户数据平台
-description: 了解如何使用活动和实时客户数据平台
+title: 使用Campaign和实时客户数据平台
+description: 了解如何使用Campaign和实时客户数据平台
 feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '138'
 ht-degree: 0%
 
 ---
 
-# 使用活动和实时客户数据平台
+# 使用Campaign和实时客户数据平台
 
-借助Adobe Experience Platform，您可以在活动和Adobe实时客户数据平台(RTCDP)之间共享数据。 这允许您在活动工作流中目标Adobe Experience Platform受众，然后发回到与这些受众相关的Adobe实时客户数据平台数据，如发送、打开和单击。
+借助&#x200B;**Adobe Experience Platform**，您可以在Campaign和Adobe实时客户数据平台(RTCDP)之间共享数据。 这允许您在Campaign工作流中定位Adobe Experience Platform受众，然后发送回与这些受众相关的Adobe实时客户数据平台数据，如发送、打开和点击。
 
-:arrow_upper_right:了解有关[本节](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=en)中RTCDP的更多信息
+:arrow_upper_right:在[此部分](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=en)中了解有关RTCDP的更多信息
 
-:arrow_upper_right:了解如何在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/aep-sources-destinations/get-started-sources-destinations.html?lang=en#integrating-with-adobe-experience-cloud)中实施和使用带有活动的RTCDP
+:arrow_upper_right:了解如何在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/aep-sources-destinations/get-started-sources-destinations.html?lang=en#integrating-with-adobe-experience-cloud)中对Campaign实施和使用RTCDP
 
-:speech_balloon:作为“托管Cloud Services”用户，[与Adobe](../start/support.md#support)联系以连接RTCDP和活动。
+:speech_balloon:作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以连接RTCDP和Campaign。

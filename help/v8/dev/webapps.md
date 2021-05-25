@@ -1,29 +1,28 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
-title: 活动Web应用程序和Web表单
-description: 开始使用Web应用程序和Web表单
+title: Campaign Web应用程序和Web窗体
+description: Web应用程序和Web窗体入门
 feature: 概述
 role: Data Engineer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
 
-# Web应用程序和Web表单入门{#gs-ac-web}
+# Web应用程序和Web窗体入门{#gs-ac-web}
 
-Adobe Campaign集成了用于定义和发布&#x200B;**Web 窗体**&#x200B;的图形模块，用于创建包含输入和选择字段的页，并且该页可以包括数据库中的数据。 这样，您就可以设计和发布网页，供用户访问视图或输入信息。
+Adobe Campaign集成了一个图形模块，用于定义和发布&#x200B;**Web窗体**，以创建包含输入和选择字段的页面，这些页面可能包含数据在数据库中。 这样，您就可以设计和发布网页，以供用户访问以查看或输入信息。
 
-:arrow_upper_right:了解如何在[Campaign Classic文档](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=en#designing-content)中创建和发布Web表单
+:arrow_upper_right:了解如何在[Campaign Classicv7文档](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=en#designing-content)中创建和发布Web窗体
 
 ![](assets/sample.png)
 
-Adobe Campaign还允许您使用来自Web 应用程序库的数据和适合所连接用户权限的内容创建和发布动态的交互式&#x200B;****。
+Adobe Campaign还允许您创建和发布动态和交互式&#x200B;**Web应用程序**，其中包含来自数据库的数据和适合连接用户权限的内容。
 
-您可以创建页面，如外部网上的编辑表单，或包括来自数据库的数据的通知表单（包括表、图表、输入表单等）。 利用此功能，您可以设计和发布网页，用户可在其中查找或输入信息。
+您可以创建页面，如外联网上的编辑表单，或通知表单，包括来自数据库的数据，包括表、图表、输入表单等。 利用此功能，可设计和发布网页，供用户查找或输入信息。
 
-:arrow_upper_right:了解如何在[Campaign Classic文档](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html?lang=en#designing-content)中创建和发布Web应用程序
+:arrow_upper_right:了解如何在[Campaign Classicv7文档](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html?lang=en#designing-content)中创建和发布Web应用程序

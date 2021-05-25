@@ -1,5 +1,5 @@
 ---
-solution: Campaign
+solution: Campaign v8
 product: Adobe Campaign
 title: Campaign API 快速入门
 description: Campaign API 快速入门
@@ -7,42 +7,56 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 13%
+source-wordcount: '329'
+ht-degree: 4%
 
 ---
 
-# 活动 API入门{#gs-ac-api}
+# [!DNL Campaign] API{#gs-ac-api}快速入门
 
-Adobe Campaign附带一组Javascript函数，您可以使用：
+[!DNL Adobe Campaign] 附带一组Javascript函数，您可以使用：
 
-* 在脚本中 — 在Adobe Campaign工作流中
+* 在脚本中 — 在[!DNL Adobe Campaign]工作流中
 * 通过API — 从外部系统
 
-[本文档列出了所有Javascript功能](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html)
+您可以使用Javascript API在Campaign云数据库中写入内容或从数据库读取内容：
 
-您可以使用Javascript API在活动云数据库中写入内容或从数据库读取内容：
+* 允许您对每个对象执行操作的特定于业务的API:投放、工作流、订阅等。 在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html)中了解更多信息。
+* 通用数据访问用于查询数据模型数据的API。 在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html)中了解更多信息。
 
-* 业务特定API，允许您对每个对象进行操作：投放、工作流、订阅等 [请参阅面向业务的API](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html)。
-* 通用数据访问API以查询数据模型数据。 请参阅[面向数据的API](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html)。
+Campaign v8可与两个数据库配合使用：用于用户界面实时消息传送和统一查询并通过API写入的本地数据库，以及用于促销活动执行、报告、数据获取、批量查询和工作流执行的云数据库。
+
+>[!CAUTION]
+>
+>[!DNL Adobe Campaign] v8对API层的吞吐量(TPS)存在限制。超出限制会导致标准HTTP错误(429)。 作为受管Cloud Services用户，您可以联系Adobe以调整每个API的限制。
 
 
 ## 先决条件
 
-在使用Adobe Campaign API之前，您需要熟悉以下主题：
+在使用[!DNL Adobe Campaign] API之前，您需要熟悉以下主题：
 
 * Javascript
 * SOAP协议
-* Adobe Campaign数据模型
+* [!DNL Adobe Campaign] 数据模型
 
-要使用API并与Adobe Campaign交互，您还需要熟悉数据模型。
+要使用API并与[!DNL Adobe Campaign]进行交互，您还需要熟悉数据模型。
 
 >[!NOTE]
->您可以生成数据模型的完整说明。 请阅读[本页](datamodel.md)了解更多信息。
+>您可以生成数据模型的完整描述。 在[此页面](datamodel.md)中了解详情。
 
+## [!DNL Campaign] API暂存机制
+
+对于[!DNL Campaign]云数据库，由于性能（延迟和并发），不建议使用爆炸式统一调用。 批处理操作始终为首选。 为了确保API的最佳性能，Campaign会保持在本地数据库级别处理API调用。
+
+：灯泡：[此页面](staging.md)中详细介绍了API暂存机制
+
+## 新API
+
+提供了新的API，用于管理[!DNL Campaign]本地数据库与云数据库之间的数据同步。 还引入了一种新机制，用于在本地数据库级别处理API调用，以避免延迟并提高整体性能
+
+：灯泡：[此页面](new-apis.md)中详细介绍了新的API
 
 **相关主题**
 

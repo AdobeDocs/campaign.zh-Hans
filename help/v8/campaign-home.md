@@ -1,14 +1,13 @@
 ---
 keywords: Campaign Classic；主页；热门主题
-solution: Campaign
-description: 活动 v8帮助中心
+solution: Campaign v8
+description: Campaign v8帮助中心
 title: Adobe Campaign v8产品文档
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-translation-type: tm+mt
-source-git-commit: 8dd7b5a99a0cda0e0c4850d14a6cb95253715803
+source-git-commit: 30b363ca9905c71f24a9b3db2404a301a5965eac
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 18%
+source-wordcount: '85'
+ht-degree: 17%
 
 ---
 
@@ -18,13 +17,13 @@ ht-degree: 18%
 
 ## 新增功能
 
-* **[什么是Adobe Campaign](start/get-started.md)**  — 主要功能和用例
+* **[什么是 [!DNL Adobe Campaign]](start/get-started.md)**  — 关键功能和用例
 
-* **[v8的新增功能](start/whats-new.md)** - Discover 活动 v8功能
+* **[v8的新增功能](start/whats-new.md)** - Discover Campaign v8功能
 
-* **[实施指南](start/implement.md)**   — 了解如何开始您的实施
+* **[实施指南](start/implement.md)**   — 了解如何开始实施
 
-* **[从v7到v8](start/capability-matrix.md)**  — 从Campaign Classic v7到v8?了解主要差异
+* **[从v7到v8](start/capability-matrix.md)**  — 从Campaign Classicv7到v8?了解主要差异
 
 ## 入门
 
@@ -32,7 +31,7 @@ ht-degree: 18%
 <tr>
   <td valign="bottom">
     <a href="start/connect.md">
-      <img alt="Connect" src="start/assets/do-not-localize/login.jpeg"/>
+      <img alt="连接" src="start/assets/do-not-localize/login.jpeg"/>
     </a>
     <div>
     <a href="start/connect.md">连接到 Campaign</a>
@@ -62,8 +61,8 @@ ht-degree: 18%
 
 ## 更多资源
 
+* [已知问题和限制](start/known-limitations.md)
 * [架构](dev/architecture.md)
 * [测量和跟踪](start/reporting.md)
-* [与其他解决方案联系](connect/integration.md)
-* [帮助与支持](start/support.md)
-* [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+* [与其他解决方案连接](connect/integration.md)
+* [Campaign v8常见问题解答](start/campaign-faq.md)

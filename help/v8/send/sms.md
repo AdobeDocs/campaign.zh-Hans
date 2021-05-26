@@ -6,7 +6,7 @@ description: Campaign中短信快速入门
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 2%
@@ -41,4 +41,4 @@ ht-degree: 2%
 > 
 >如需详细信息，请参阅[此部分](push.md)。
 
-:[!DNL :arrow_upper_right:]:在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-channel.html)中了解更多信息
+[!DNL :arrow_upper_right:] 在Campaign Classicv7文 [档中了解详情](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-channel.html)

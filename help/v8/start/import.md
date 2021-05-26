@@ -7,7 +7,7 @@ feature: 用户档案
 role: Data Engineer
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 8%
@@ -29,11 +29,11 @@ Campaign可帮助您将联系人添加到云数据库。 您可以加载文件�
 
 请参阅Campaign Classicv7文档，以了解更多信息：
 
-:[!DNL :arrow_upper_right:]:[导入和导出入门](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/get-started-data-import-export.html)
+[!DNL :arrow_upper_right:] [进出口入门](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/get-started-data-import-export.html)
 
-:[!DNL :arrow_upper_right:]: [导入和导出最佳实践](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/best-practices/import-export-best-practices.html)
+[!DNL :arrow_upper_right:] [导入和导出最佳实践](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/best-practices/import-export-best-practices.html)
 
-:[!DNL :arrow_upper_right:]:[配置并执行import](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html)
+[!DNL :arrow_upper_right:] [配置并执行导入](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html)
 
 ## 运行统一导入
 
@@ -41,7 +41,7 @@ Campaign可帮助您将联系人添加到云数据库。 您可以加载文件�
 
 ![](assets/new-import.png)
 
-:[!DNL :arrow_upper_right:]:了解如何运行统一导入作业以在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html)中为数据库提供信息。
+[!DNL :arrow_upper_right:] 在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html)中了解如何运行统一导入作业以填充数据库。
 
 ## 通过Web应用程序收集用户档案
 
@@ -49,7 +49,7 @@ Campaign可帮助您将联系人添加到云数据库。 您可以加载文件�
 
 ![](assets/web-form-page.png)
 
-:[!DNL :arrow_upper_right:]:了解如何在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html)中创建Web窗体。
+[!DNL :arrow_upper_right:] 了解如何在 [Campaign Classicv7文档中创建Web窗体](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html)。
 
 **相关主题**
 

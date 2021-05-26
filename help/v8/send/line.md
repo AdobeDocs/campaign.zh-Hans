@@ -8,7 +8,7 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: true
 hide: true
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 1%
@@ -23,5 +23,5 @@ ht-degree: 1%
 
 LINE是免费即时消息、语音和视频呼叫的应用程序，可在所有移动设备和PC上使用。 Adobe Campaign允许您发送LINE消息。
 
-:[!DNL :arrow_upper_right:]:在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html)中了解更多信息
+[!DNL :arrow_upper_right:] 在Campaign Classicv7文 [档中了解详情](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html)
 

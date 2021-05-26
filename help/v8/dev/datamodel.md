@@ -7,7 +7,7 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896,b1319b34-ee07-48ed-9ab1-e2d12d3d99f8
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 4%
@@ -62,7 +62,7 @@ Adobe Campaign中内置的收件人表(nmsrecipient)为构建数据模型提供�
 
 [!DNL :bulb:] 在此部分中了解如何扩展现有 [模式](extend-schema.md)。
 
-:[!DNL :arrow_upper_right:]:探索[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#extending-a-table)中内置的收件人表扩展示例
+[!DNL :arrow_upper_right:] 发现Campaign Classicv7文档中内置的收件人表扩 [展示例](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#extending-a-table)
 
 您还可以使用其他收件人表来更好地满足您的业务或功能要求。 此方法存在限制，在[此部分](custom-recipient.md)中有介绍。
 

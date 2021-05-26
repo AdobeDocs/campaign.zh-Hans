@@ -7,7 +7,7 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 42%
@@ -40,9 +40,9 @@ ht-degree: 42%
 
    电子邮件投放能力是每个发件人营销计划成功的关键组件，其特点是标准和规则不断变化。 要在这个数字世界中有效导航，需要定期调整电子邮件策略，并考虑关键投放能力趋势，以便最好地吸引受众。
 
-   :[!DNL :arrow_upper_right:]:请参阅本指南，了解[投放最佳实践](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)。
+   [!DNL :arrow_upper_right:] 请参阅本指南，了解交 [付性最佳实践](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)。
 
-   :[!DNL :arrow_upper_right:]:在本指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html)中了解如何在Campaign [中实施投放能力
+   [!DNL :arrow_upper_right:] 在本指南中了解如何在Campaign中实 [施投放能力](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html)
 
 1. **如何确认我的投放已成功发送，并且未出现错误？**
 
@@ -52,7 +52,7 @@ ht-degree: 42%
 
 1. **是否能监视工作流的执行？**
 
-   :[!DNL :arrow_upper_right:]:了解如何在Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html)中监视Campaign工作流执行[。
+   [!DNL :arrow_upper_right:] 了解如何在Campaign Classicv7文档中监 [控Campaign工作流的执行](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html)。
 
 1. **Campaign v8与哪些系统和组件兼容？**
 

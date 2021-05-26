@@ -7,7 +7,7 @@ feature: 受众
 role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 7%
@@ -55,33 +55,33 @@ Adobe Campaign允许您从统一控制中心创建、配置、执行和分析所
 
    定义层次结构和计划、设置预算、添加资源、选择运算符。
 
-   :[!DNL :arrow_upper_right:]:了解如何在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#creating-plan-and-program-hierarchy)中创建营销计划并配置营销活动
+   [!DNL :arrow_upper_right:] 了解如何在Campaign Classicv7文档中创建营销计划和配 [置营销活动](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#creating-plan-and-program-hierarchy)
 
    所有营销活动都基于存储主要设置和功能的模板。 提供内置模板以创建尚未定义特定配置的营销活动。 您可以创建和配置营销活动模板，然后根据这些模板创建营销活动。
 
-   :[!DNL :arrow_upper_right:]:了解如何在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns)中使用促销活动模板
+   [!DNL :arrow_upper_right:] 了解如何在 [Campaign Classicv7文档中使用](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns)
 
-   :[!DNL :arrow_upper_right:]:探索定期促销活动以及如何在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns)中配置它们
+   [!DNL :arrow_upper_right:] 发现定期促销活动以及如何在 [Campaign Classicv7文档中配置](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns)
 
 1. **定义受众**
 
    您可以在工作流中构建受众，或选择现有群组，如收件人列表、新闻稿的订阅者、先前投放的收件人或任何筛选条件。
 
-   :[!DNL :arrow_upper_right:]:了解如何在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#orchestrating-campaigns)中定义消息的受众
+   [!DNL :arrow_upper_right:] 在v7文档中了解如何定义消 [息的受众](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#orchestrating-campaigns)
 
 1. **创建投放**
 
    选择渠道、定义消息内容并开始投放。
 
-   :[!DNL :arrow_upper_right:]:了解如何在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=en#creating-deliveries)中创建和开始营销活动投放
+   [!DNL :arrow_upper_right:] 了解如何在 [Campaign Classicv7文档中创建和开始营销活动投放](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=en#creating-deliveries)
 
    您可以将各种文档与营销活动关联：报表、照片、网页、图表等。
 
-   :[!DNL :arrow_upper_right:]:在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-assets.html?lang=en#adding-documents)中了解有关相关文档的更多信息
+   [!DNL :arrow_upper_right:] 在Campaign Classicv7文档中了解有关 [相关文档的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-assets.html?lang=en#adding-documents)
 
 1. **设置审批流程**
 
    Adobe Campaign允许您为营销活动的主要阶段设置协作式审批流程。 对于每个营销活动，您可以批准投放目标、内容和成本。 负责审批的Adobe Campaign运营商可以通过电子邮件通知，并可以通过控制台或web连接接受或拒绝审批。
 
-   :[!DNL :arrow_upper_right:]:了解如何在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns)中设置和管理批准
+   [!DNL :arrow_upper_right:] 了解如何在Campaign Classicv7文档中设置 [和管理批准](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns)
 

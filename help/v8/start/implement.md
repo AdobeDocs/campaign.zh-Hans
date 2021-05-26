@@ -7,7 +7,7 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: 0dae3431ac1ddc840244d7df4929b0c949f8011f
+source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 2%
@@ -79,17 +79,17 @@ Adobe Campaign提供了一些流程和设置，允许您按照适用的数据隐
 
    营销活动、投放、作业或工作流都基于模板，模板可存储关键设置和功能。 为每个组件提供了内置模板，尚未为其定义特定配置。 您需要配置和调整模板以满足您的需求，并向最终用户提供模板。
 
-   :[!DNL :arrow_upper_right:]:[了解有关电子邮件模板的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html)
+   [!DNL :arrow_upper_right:] [了解有关电子邮件模板的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html)
 
-   :[!DNL :arrow_upper_right:]:了解如何在[本页](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns)中使用营销活动模板
+   [!DNL :arrow_upper_right:] 在本页中了解如何使用营销活动 [模板](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns)
 
-   :[!DNL :arrow_upper_right:]:了解如何在[此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=en#workflow-templates)中配置工作流模板
+   [!DNL :arrow_upper_right:] 在此页面中了解如何配置工作 [流模板](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=en#workflow-templates)
 
 1. 配置分类规则
 
    利用Campaign分类规则过滤、控制和监控投放发送。 例如，疲劳规则控制消息传送的频率和数量，以避免收件人过度通信。 实施后，将在投放中引用分类规则。
 
-   :[!DNL :arrow_upper_right:]:[了解有关分类和疲劳管理的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=en#orchestrating-campaigns)
+   [!DNL :arrow_upper_right:] [进一步了解分类和疲劳管理](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=en#orchestrating-campaigns)
 
 1. 熟悉Campaign内置数据模型
 

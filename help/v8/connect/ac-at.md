@@ -7,9 +7,9 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '989'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 >[!NOTE]
 >集成仅支持静态图像。 其他类型的内容无法进行个性化。
 
-:speech_balloon:作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以通过Campaign实施Experience Cloud触发器。
+[!DNL :speech_balloon:] 作为受管Cloud Services用户，请 [联系](../start/campaign-faq.md#support) Adobe以通过Campaign实施Experience Cloud触发器。
 
 以下类型的数据可供Adobe Target使用：
 

@@ -6,9 +6,9 @@ description: Campaign外部帐户
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 5cafea0ca9adde6e9e7156baf44b65801f84b2a7
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1017'
 ht-degree: 4%
 
 ---
@@ -42,7 +42,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
    **退回邮件**&#x200B;外部帐户指定用于连接到电子邮件服务的外部POP3帐户。 为POP3访问配置的所有服务器都可用于接收回信。
 
-   :arrow_upper_right:在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html)中了解有关入站电子邮件的更多信息
+   :[!DNL :arrow_upper_right:]:在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html)中了解有关入站电子邮件的更多信息
 
 * **路由**
 
@@ -56,7 +56,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
    在事务型消息传递的上下文中，执行实例链接到控制实例并连接它们。 事务型消息模板将部署到执行实例。
 
-   ：灯泡：详细了解[本页](../dev/architecture.md#transac-msg-archi)中的消息中心架构。
+   [!DNL :bulb:] 在本页中了解有关消息中心架构 [的更多信息](../dev/architecture.md#transac-msg-archi)。
 
 ## 访问外部系统外部帐户
 
@@ -66,7 +66,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
    [兼容性矩阵](../start/compatibility-matrix.md)中列出了与Adobe Campaign v8兼容的外部数据库
 
-   ：灯泡：在[此部分](../connect/fda.md)中了解有关联合数据访问(FDA)选项的更多信息。
+   [!DNL :bulb:] 在此部分中了解有关联合数据访问(FDA)选项的 [更多信息](../connect/fda.md)。
 
 ## Adobe解决方案集成外部帐户
 
@@ -74,7 +74,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
    要使用Adobe ID连接到Adobe Campaign控制台，必须配置&#x200B;**[!UICONTROL Adobe Experience Cloud]**&#x200B;外部帐户。
 
-   ：灯泡：在[此部分](../start/connect.md#connect-ims)中了解有关AdobeIdentity Management服务(IMS)的更多信息。
+   [!DNL :bulb:] 在此部分中了解有关AdobeIdentity Management服务(IMS)的 [更多信息](../start/connect.md#connect-ims)。
 
    :speech_balloon:作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以通过Campaign实施AdobeIMS。
 
@@ -82,14 +82,14 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
    使用&#x200B;**[!UICONTROL Web Analytics (Adobe Analytics)]**&#x200B;外部帐户配置从Adobe Analytics到Adobe Campaign的数据传输。
 
-   ：灯泡：在[本页](../connect/ac-aa.md)中了解有关Adobe Campaign - Adobe Analytics集成的更多信息。
+   [!DNL :bulb:] 在此页面中了解有关Adobe Campaign - Adobe Analytics集 [成的更多信息](../connect/ac-aa.md)。
 
    :speech_balloon:作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以将Adobe Analytics与Campaign集成。
 
    * **Adobe Experience Manager**
    **[!UICONTROL AEM]**&#x200B;外部帐户允许您直接在Adobe Experience Manager中管理电子邮件投放内容和表单。
 
-   ：灯泡：在[本页](../connect/ac-aem.md)中了解有关Adobe Campaign - Adobe Analytics集成的更多信息。
+   [!DNL :bulb:] 在此页面中了解有关Adobe Campaign - Adobe Analytics集 [成的更多信息](../connect/ac-aem.md)。
 
    :speech_balloon:作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以将Adobe Experience Manager与Adobe Campaign集成。
 
@@ -100,7 +100,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
    **[!UICONTROL Microsoft Dynamics CRM]**&#x200B;外部帐户允许您将Microsoft Dynamics数据导入和导出到Adobe Campaign。
 
-   ：灯泡：详细了解[本页](../connect/crm.md)中的Adobe Campaign - Microsoft Dynamics CRM集成。
+   [!DNL :bulb:] 在此页面中了解有关Adobe Campaign - Microsoft Dynamics CRM集成的 [更多信息](../connect/crm.md)。
 
    通过&#x200B;**[!UICONTROL Web API]**&#x200B;部署类型和&#x200B;**[!UICONTROL Password credentials]**&#x200B;身份验证，您需要提供以下详细信息：
 
@@ -146,7 +146,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
 这些外部帐户可用于使用&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动将数据导入或导出到Adobe Campaign。
 
-:arrow_upper_right:在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html)中了解有关工作流中文件传输的更多信息
+:[!DNL :arrow_upper_right:]:在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html)中了解有关工作流中文件传输的更多信息
 
 * **FTP和SFTP**
 

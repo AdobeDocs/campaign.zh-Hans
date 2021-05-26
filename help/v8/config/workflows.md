@@ -7,9 +7,9 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 3fd91879485a33961769c684acba8ca3c48bbbed
+source-git-commit: 8ede6bc1bc08a27e74dde6a427561c33f154a883
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1187'
 ht-degree: 7%
 
 ---
@@ -59,12 +59,9 @@ ht-degree: 7%
 
 使用Campaign事务型消息传递自动化从信息系统触发的事件生成的消息。 例如，这些事务型消息可以是发票、订单确认、发运确认、密码更改、产品不可用通知、帐户对帐单或网站帐户创建。 这些消息可以单独或批量通过电子邮件、短信或推送通知发送。
 
-[!DNL :arrow_upper_right:] 了解有关Campaign Classicv7文档中事务性消 [息传递功能的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/about-transactional-messaging.html?lang=en#transactional-messaging)。
-
+[!DNL :bulb:] 在此部分 [中了解有关事务性消息传递](../send/transactional.md)功能的更多信息。
 
 连接Adobe Campaign和Adobe Analytics以检索用户操作并发送近乎实时的个性化消息。
-
-[!DNL :arrow_upper_right:] 在v7文档中了解如何将Campaign与Analytics [触发器集成](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html?lang=en#integrating-with-adobe-experience-cloud)。
 
 [!DNL :bulb:] 在此部分中了解如何将Campaign与其他解决方 [案集成](../start/connect.md)
 

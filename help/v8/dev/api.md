@@ -7,9 +7,9 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '327'
 ht-degree: 4%
 
 ---
@@ -50,13 +50,13 @@ Campaign v8可与两个数据库配合使用：用于用户界面实时消息传
 
 对于[!DNL Campaign]云数据库，由于性能（延迟和并发），不建议使用爆炸式统一调用。 批处理操作始终为首选。 为了确保API的最佳性能，Campaign会保持在本地数据库级别处理API调用。
 
-：灯泡：[此页面](staging.md)中详细介绍了API暂存机制
+[!DNL :bulb:] [本页详细介绍了API暂存机制](staging.md)
 
 ## 新API
 
 提供了新的API，用于管理[!DNL Campaign]本地数据库与云数据库之间的数据同步。 还引入了一种新机制，用于在本地数据库级别处理API调用，以避免延迟并提高整体性能
 
-：灯泡：[此页面](new-apis.md)中详细介绍了新的API
+[!DNL :bulb:] [本页详细介绍了新的API](new-apis.md)
 
 **相关主题**
 

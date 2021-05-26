@@ -7,7 +7,7 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 0dae3431ac1ddc840244d7df4929b0c949f8011f
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 2%
@@ -37,11 +37,11 @@ ht-degree: 2%
 
 Adobe Campaign提供了一些流程和设置，允许您按照适用的数据隐私法和收件人的首选项来使用Campaign。 您可以管理：
 
-* **数据获取**:Adobe Campaign允许您收集数据，包括个人和敏感信息。因此，您必须获得并管理收件人的同意。 在[Campaign Classicv7文档](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#data-acquisition)中了解更多信息
+* **数据获取**:Adobe Campaign允许您收集数据，包括个人和敏感信息。因此，您必须获得并管理收件人的同意。 在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#data-acquisition)中了解更多信息
 
-* **用户同意和数据保留**:在Campaign Classic隐私文档中了解如何获取用户同意、设置双重选择加入订阅机制、促进选择退出并配置数据 [保留](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#consent)
+* **用户同意和数据保留**:在Campaign Classic隐私文档中了解如何获取用户同意、设置双重选择加入订阅机制、促进选择退出并配置数据 [保留](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#consent)
 
-* **隐私和数据保护法规**:请参阅 [Campaign Classic](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html) 隐私文档，以了解有关欧盟《通用数据保护条例》(GDPR)、《加州消费者隐私法案》(CCPA)和其他国际隐私要求以及这些法规对贵组织和Adobe Campaign有何影响的信息。
+* **隐私和数据保护法规**:请参阅 [Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html) 隐私文档，以了解有关欧盟《通用数据保护条例》(GDPR)、《加州消费者隐私法案》(CCPA)和其他国际隐私要求以及这些法规对贵组织和Adobe Campaign有何影响的信息。
 
 ### 安全性
 

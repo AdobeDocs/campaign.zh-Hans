@@ -3,9 +3,9 @@ solution: Campaign v8
 product: Adobe Campaign
 title: 数据模型最佳实践
 description: 了解Campaign数据模型扩展最佳实践
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2681'
 ht-degree: 4%
 
 ---
@@ -18,9 +18,9 @@ Adobe Campaign系统非常灵活，可以扩展到初始实施之外。 但是�
 
 要更好地了解Campaign内置表以及它们彼此的关系，请参阅[此部分](datamodel.md) 。
 
-：灯泡：阅读[此部分](schemas.md)以开始使用Campaign模式。
+[!DNL :bulb:] 阅读此 [部](schemas.md) 分，以开始使用Campaign模式。
 
-：灯泡：了解如何配置扩展架构以在[本页](extend-schema.md)中扩展Adobe Campaign数据库的概念数据模型。
+[!DNL :bulb:] 在本页中了解如何配置扩展模式以扩展Adobe Campaign数据库的概念数据 [模型](extend-schema.md)。
 
 ## 数据模型架构{#data-model-architecture}
 

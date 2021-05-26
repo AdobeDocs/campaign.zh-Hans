@@ -6,7 +6,7 @@ description: 事务型消息传递入门
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '1484'
 ht-degree: 1%
@@ -152,7 +152,7 @@ ht-degree: 1%
 
 发送校样的过程与任何投放的过程相同。
 
-:[!DNL :arrow_upper_right:]:了解有关[Campaign Classicv7文档]((https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html))中校样的更多信息
+[!DNL :arrow_upper_right:] 在Campaign Classicv7文档中了 [解有关校样的更多信息]((https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html))
 
 但是，要发送事务型消息的校样，您需要执行以下操作：
 

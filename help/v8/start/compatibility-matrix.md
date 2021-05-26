@@ -1,8 +1,8 @@
 ---
 solution: Campaign v8
 product: Adobe Campaign
-title: Campaign v8兼容性矩阵
-description: 了解与Campaign v8兼容的系统和版本
+title: Campaign v8 兼容性矩阵
+description: 了解与 Campaign v8 兼容的系统和版本
 feature: 概述
 role: Data Engineer
 level: Beginner
@@ -10,18 +10,18 @@ exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6e
 source-git-commit: ffdfc9a2e1bec191b5a3cc7f7b40683b2456bf3e
 workflow-type: tm+mt
 source-wordcount: '274'
-ht-degree: 30%
+ht-degree: 75%
 
 ---
 
-# Campaign v8兼容性矩阵
+# Campaign v8 兼容性矩阵
 
-本文档列出了&#x200B;**Adobe Campaign v8**&#x200B;最新版本支持的所有系统和组件。 此列表中未包含的产品和版本与 Adobe Campaign 不兼容。
+本文档列出了最新版本的 **Adobe Campaign v8** 支持的所有系统和组件。此列表中未包含的产品和版本与 Adobe Campaign 不兼容。
 
 >[!CAUTION]
 >
 >* 除非另有说明，否则支持所有次要版本。
->* 由于这些第三方系统和工具的特定版本即将终止生命周期(EOL)，因此Adobe Campaign将不再与这些版本兼容，并且它们将从此兼容性矩阵中删除。 请确保您使用兼容性矩阵中列出的任何系统的受支持版本，以避免出现任何问题。
+>* 随着这些第三方系统和工具的特定版本的生命周期结束 (EOL)，Adobe Campaign 将不再与这些版本兼容，并会从兼容性矩阵中移除它们。请确保您使用兼容性矩阵中列出的任何系统的受支持版本，以避免出现任何问题。
 
 
 ## 兼容系统
@@ -33,7 +33,7 @@ ht-degree: 30%
 **操作系统**
 
 * **Microsoft Windows Server** 2016、2012
-* **Microsoft Windows**  8、10（建议用于日语实例）
+* **Microsoft Windows** 8、10（建议用于日语实例)
 
 **浏览器**
 
@@ -41,8 +41,8 @@ ht-degree: 30%
 
 ### CRM 连接器{#CRMconnectors}
 
-* **** Salesforcconnector API版本49
-* **Microsoft** Dynamicsconnector、Web API:Dynamics 365内部部署版和在线版
+* **Salesforce** connector API 版本 49
+* **Microsoft Dynamics** 连接器、Web API：Dynamics 365 内部部署版和在线版
 
 ### 联合数据访问 (FDA){#FederatedDataAccessFDA}
 
@@ -51,18 +51,18 @@ ht-degree: 30%
 
 ### 移动 SDK{#MobileSDK}
 
-* **Android** 7.x、8.x、9.0（带有Mobile SDK内部版本1.0.27）。
-* **Apple iOS**  9 - 14，带有Mobile SDK内部版本1.0.26，与32位和64位版本兼容。
+* 带有移动 SDK 内部版本 1.0.27 的&#x200B;**Android** 7.x、8.x、9.0。
+* 带有移动 SDK 版本 1.0.26 的 **Apple iOS** 9 - 14，与 32 位和 64 位版本兼容。
 
 ### 支持的浏览器 {#Browsers}
 
 以下浏览器与 Campaign 兼容，可用于进行 Web 访问。
 
-* **Microsoft Edge**、 **Mozilla Firefox**、 **Google Chrome**、 **Safari** （最新版本）
+* **Microsoft Edge**、 **Mozilla Firefox**、**Google Chrome**、**Safari** （最新版本）
 
 * **Internet Explorer** 11
 
-## 如何检查Campaign版本
+## 如何检查您的 Campaign 版本
 
 使用&#x200B;**Help > About...**&#x200B;菜单检查您的版本。
 

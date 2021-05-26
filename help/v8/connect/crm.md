@@ -6,10 +6,10 @@ description: '了解如何使用Campaign和CRM '
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 21%
+source-wordcount: '269'
+ht-degree: 22%
 
 ---
 
@@ -31,12 +31,12 @@ Campaign [兼容性矩阵](../start/compatibility-matrix.md)中详细介绍了�
 
 ## 实施步骤 {#crm-implementation-steps}
 
-:arrow_upper_right:了解在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-ms-dynamics.html?lang=en#microsoft-dynamics-implementation-steps)中连接Campaign和Microsoft Dynamics的分步过程
+:[!DNL :arrow_upper_right:]:了解在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-ms-dynamics.html?lang=en#microsoft-dynamics-implementation-steps)中连接Campaign和Microsoft Dynamics的分步过程
 
-:arrow_upper_right:了解在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-sfdc.html?lang=en#getting-started)中连接Campaign和Salesforce的分步过程
+:[!DNL :arrow_upper_right:]:了解在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-sfdc.html?lang=en#getting-started)中连接Campaign和Salesforce的分步过程
 
 
 Adobe Campaign与CRM之间的数据同步是通过专用的工作流活动执行的。 构建工作流以在Campaign和CRM之间自动同步。 您可以创建一个工作流，该工作流通过Microsoft Dynamics导入联系人，将其与现有Adobe Campaign数据同步，删除重复的联系人，然后更新Adobe Campaign数据库。
 
-:arrow_upper_right:在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-data-sync.html?lang=en#getting-started)中了解更多信息
+:[!DNL :arrow_upper_right:]:在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-data-sync.html?lang=en#getting-started)中了解更多信息
 

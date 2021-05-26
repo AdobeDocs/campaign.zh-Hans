@@ -6,9 +6,9 @@ description: 事务型消息传递入门
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
+source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
-source-wordcount: '1484'
+source-wordcount: '1482'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 事务型消息传递（消息中心）是一个Campaign模块，用于管理触发器消息。 这些消息是从信息系统触发的事件生成的，可以是：例如，发票、订单确认、发运确认、密码更改、产品不可用通知、帐户对帐单或网站帐户创建。
 
-:speech_balloon:作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以在您的环境中安装和配置Campaign事务型消息传递。
+[!DNL :speech_balloon:] 作为受管Cloud Services用户，请 [联系](../start/campaign-faq.md#support) Adobe，以在您的环境中安装和配置Campaign事务型消息传递。
 
 事务型消息用于发送：
 

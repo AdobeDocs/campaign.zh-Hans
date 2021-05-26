@@ -6,7 +6,7 @@ description: Campaign外部帐户
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 4%
@@ -42,7 +42,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
    **退回邮件**&#x200B;外部帐户指定用于连接到电子邮件服务的外部POP3帐户。 为POP3访问配置的所有服务器都可用于接收回信。
 
-   :[!DNL :arrow_upper_right:]:在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html)中了解有关入站电子邮件的更多信息
+   [!DNL :arrow_upper_right:] 在Campaign Classicv7文档中了解有关入站电 [子邮件的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html)
 
 * **路由**
 

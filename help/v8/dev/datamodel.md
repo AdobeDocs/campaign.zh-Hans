@@ -7,9 +7,9 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896,b1319b34-ee07-48ed-9ab1-e2d12d3d99f8
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '648'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,7 @@ Adobe Campaign数据模型的基本结构可描述如下：
 
 * **收件人表**:数据模型依赖于主表，该主表默认为收件人表(nmsRecipient)。此表用于存储所有营销用户档案。
 
-   ：灯泡：有关收件人表的更多信息，请参阅[此部分](#ootb-profiles)。
+   [!DNL :bulb:] 有关Recipient表的更多信息，请参 [阅此部分](#ootb-profiles)。
 
 * **提交表**:数据模型还包括专用于存储所有营销活动的部分。通常为Delivery表(NmsDelivery)。 此表中的每个记录都表示投放操作或投放模板。 它包含执行投放所需的所有参数，如目标、内容等。
 
@@ -45,7 +45,7 @@ Adobe Campaign数据模型的基本结构可描述如下：
 * [使用新字段](extend-schema.md) 扩展现有表。例如，您可以向收件人表中添加新的“忠诚度”字段。
 * [创建一个新表](create-schema.md)，例如列出数据库每个用户档案进行的所有购买的“购买”表，并将其链接到收件人表。
 
-：灯泡：了解在[此部分](datamodel-best-practices.md)中使用Campaign数据模型时的最佳实践。
+[!DNL :bulb:] 在此部分 [中了解使用Campaign数据模型时的](datamodel-best-practices.md)最佳实践。
 
 ## 内置配置文件表{#ootb-profiles}
 
@@ -60,9 +60,9 @@ Adobe Campaign中内置的收件人表(nmsrecipient)为构建数据模型提供�
 
 可以扩展收件人表，但不能减少表中字段或链接的数量。
 
-：灯泡：了解如何在[此部分](extend-schema.md)中扩展现有架构。
+[!DNL :bulb:] 在此部分中了解如何扩展现有 [模式](extend-schema.md)。
 
-:arrow_upper_right:查看[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#extending-a-table)中内置的收件人表扩展示例
+:[!DNL :arrow_upper_right:]:探索[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#extending-a-table)中内置的收件人表扩展示例
 
 您还可以使用其他收件人表来更好地满足您的业务或功能要求。 此方法存在限制，在[此部分](custom-recipient.md)中有介绍。
 
@@ -70,9 +70,9 @@ Adobe Campaign中内置的收件人表(nmsrecipient)为构建数据模型提供�
 
 为了更好地了解Campaign v8中的表管理，请注意，表是在Campaign及其Snowflake云数据库之间复制的。
 
-：灯泡：在[此部分](../config/replication.md)中了解有关复制策略和机制的更多信息。
+[!DNL :bulb:] 在此部分中了解有关复制策略和机制 [的更多信息](../config/replication.md)。
 
 **相关主题**
 
-：灯泡：了解如何在[此部分](../start/import.md)中导入用户档案
-：灯泡：在[此部分](../start/audiences.md)中了解有关Campaign受众的更多信息
+[!DNL :bulb:] 了解如何在此部分导入用户档 [案](../start/import.md)
+[!DNL :bulb:] 在此部分了解Campaign受众的更 [多信息](../start/audiences.md)

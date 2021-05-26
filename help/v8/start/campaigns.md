@@ -7,7 +7,7 @@ feature: 受众
 role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 7%
@@ -44,7 +44,7 @@ Adobe Campaign提供了一套解决方案，可帮助您在所有在线和离线
 
 Adobe Campaign允许您从统一控制中心创建、配置、执行和分析所有营销活动。
 
-:[!DNL :arrow_upper_right:]:了解如何在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/about-marketing-campaigns/accessing-marketing-campaigns.html?lang=en#orchestrating-campaigns)中访问和实施营销活动
+[!DNL :arrow_upper_right:] 了解如何在Campaign Classicv7文档中访问和实 [施营销活动](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/about-marketing-campaigns/accessing-marketing-campaigns.html?lang=en#orchestrating-campaigns)
 
 
 ## 要启动的关键步骤

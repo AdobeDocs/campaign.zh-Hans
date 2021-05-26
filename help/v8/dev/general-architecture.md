@@ -4,9 +4,9 @@ product: Adobe Campaign
 title: 一般架构
 description: Campaign v8一般架构
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1214'
 ht-degree: 0%
 
 ---
@@ -33,15 +33,15 @@ ht-degree: 0%
 
 * **客户端控制台**:该应用程序的主用户界面是一个本机应用程序（在Windows上），它与Adobe Campaign应用程序服务器通信标准Internet协议（SOAP、HTTP等）。Adobe Campaign客户端控制台为工作效率提供了极好的用户友好性，使用极少的带宽（通过使用本地缓存），并且设计为易于部署。 此控制台可以从Internet浏览器部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成HTTP(S)流量。
 
-   ：灯泡：[了解有关Campaign客户端控制台的更多信息](../start/connect.md)。
+   [!DNL :bulb:] [进一步了解Campaign客户端控制台](../start/connect.md)。
 
 * **Web访问**:部分应用程序可通过使用HTML用户界面（包括报告模块、投放批准阶段、实例监控等）的简单web浏览器访问。
 
-   ：灯泡：[了解有关Campaign Web Access的更多信息](../start/connect.md)。
+   [!DNL :bulb:] [进一步了解Campaign Web Access](../start/connect.md)。
 
 * **促销活动API**:在某些情况下，可以使用通过SOAP协议公开的Web服务API从外部应用程序调用系统。
 
-   ：灯泡：[了解有关Campaign API的更多信息](../dev/api.md)。
+   [!DNL :bulb:] [进一步了解Campaign API](../dev/api.md)。
 
 ## 开发环境{#dev-env}
 

@@ -7,7 +7,7 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 11%
@@ -40,9 +40,9 @@ Campaign v8可以连接：
 
 您还可以通过Experience Cloud共享和受众共享功能，在不同的受众解决方案中合并&#x200B;**受众**&#x200B;和&#x200B;**资产**。
 
-:[!DNL :arrow_upper_right:]:进一步了解[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=en#integrating-with-adobe-experience-cloud)中的&#x200B;**受众在Campaign和Experience Cloud解决方案之间共享**
+[!DNL :arrow_upper_right:] 在Campaign Classicv7文档中了 **解** 有关Campaign和Experience Cloud解决方案之间受众 [共享的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=en#integrating-with-adobe-experience-cloud)
 
-:[!DNL :arrow_upper_right:]:进一步了解[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=en#integrating-with-adobe-experience-cloud)中的&#x200B;**Campaign和Experience Cloud解决方案之间的资产共享**
+[!DNL :arrow_upper_right:] 在Campaign Classicv7文档中了 **解** 有关Campaign和Experience Cloud解决方案之 [间资产共享的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=en#integrating-with-adobe-experience-cloud)
 
 ## CRM 连接器{#gs-crm-connectors}
 

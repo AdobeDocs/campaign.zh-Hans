@@ -7,9 +7,9 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: c659c31c15916077e71c63f3b3f4ca135d4d7f7d
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Campaign可用的三种环境Cloud Service:
 
 您可以将资源包从一个环境导出并导入到另一个环境。
 
-:arrow_upper_right:了解有关[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html)中软件包的更多信息
+:[!DNL :arrow_upper_right:]:了解有关[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html)中软件包的更多信息
 
 ## 中间源部署{#mid-sourcing-deployment}
 
@@ -51,7 +51,7 @@ Campaign可用的三种环境Cloud Service:
 
 事务型消息传递（消息中心）是用于管理触发器消息的Campaign模块。
 
-：灯泡：了解如何在[此部分](../send/transactional.md)中发送事务型消息。
+[!DNL :bulb:] 在此部分中了解如何发送事务 [型消息](../send/transactional.md)。
 
 为响应客户在网站上的操作，通过REST API发送Campaign事件，并填充通过API调用提供的信息或数据，并向客户实时发送事务型消息。 这些消息可以单独发送，也可以通过电子邮件、短信或推送通知批量发送。
 
@@ -59,7 +59,7 @@ Campaign可用的三种环境Cloud Service:
 
 * 营销人员和IT团队使用&#x200B;**控制实例**（或营销实例）来创建、配置和发布消息模板。 此实例还将事件监控和历史记录集中在一起。
 
-   ：灯泡：了解如何在[此部分](../send/transactional.md)中创建和发布消息模板。
+   [!DNL :bulb:] 在此部分中了解如何创建和发布消 [息模板](../send/transactional.md)。
 
 * **执行实例**&#x200B;会检索传入事件（例如，密码重置或网站的订单）并发送个性化消息。 可以有多个执行实例通过负载平衡器处理消息，并扩展要进行的事件数以实现最大可用性。
 
@@ -69,7 +69,7 @@ Campaign可用的三种环境Cloud Service:
 
 ![](assets/messagecenter_diagram.png)
 
-:arrow_upper_right:[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/transactional-messaging-architecture.html?lang=en#transactional-messaging)中介绍了消息中心架构
+:[!DNL :arrow_upper_right:]:[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/transactional-messaging-architecture.html?lang=en#transactional-messaging)中介绍了消息中心架构
 
 ### 身份验证
 
@@ -82,4 +82,4 @@ Campaign可用的三种环境Cloud Service:
 * 多个执行实例
 在负载平衡器后面具有多个执行实例的多单元执行架构中，外部应用程序调用的登录方法将通过负载平衡器：因此，无法使用基于令牌的身份验证。 需要基于用户/密码的身份验证。
 
-:arrow_upper_right:在[Campaign Classicv7文档](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/event-description.html?lang=en#about-transactional-messaging-datamodel)中了解有关事务性消息传递事件的更多信息
+:[!DNL :arrow_upper_right:]:在[Campaign Classicv7文档](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/event-description.html?lang=en#about-transactional-messaging-datamodel)中了解有关事务性消息传递事件的更多信息

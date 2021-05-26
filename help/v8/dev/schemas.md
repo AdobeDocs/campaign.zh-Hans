@@ -3,9 +3,9 @@ solution: Campaign v8
 product: Adobe Campaign
 title: 使用Campaign模式
 description: 模式入门
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1246'
 ht-degree: 4%
 
 ---
@@ -98,11 +98,11 @@ Adobe Campaign采用数据模式：
 
 要向Campaign中的一个核心数据模式(例如收件人表(nms:recipient))添加字段或其他元素，您必须扩展该模式。
 
-：灯泡：有关更多信息，请参阅[扩展架构](extend-schema.md)。
+[!DNL :bulb:] 有关更多信息，请参阅 [扩展模式](extend-schema.md)。
 
 要添加Adobe Campaign中不存在的全新数据类型（例如合同表），您可以直接创建自定义架构。
 
-：灯泡：有关更多信息，请参阅[创建新架构](create-schema.md)。
+[!DNL :bulb:] 有关更多信息，请参 [阅创建新架构](create-schema.md)。
 
 ![](assets/schemaextension_1.png)
 
@@ -154,7 +154,7 @@ type="string" enum="exTransactionTypeEnum"/>
 >
 >创建新架构或在架构扩展期间，您需要为整个架构保留相同的主键序列值(@pkSequence)。
 
-：灯泡：了解有关[此部分](database-mapping.md#management-of-keys)中键的更多信息。
+[!DNL :bulb:] 在此部分中了解有关键的 [更多信息](database-mapping.md#management-of-keys)。
 
 ## 属性（字段）{#attributes--fields-}
 
@@ -164,7 +164,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=en#content-model)的`<attribute>`元素部分中提供了完整的属性列表。 以下是一些最常用的属性：**@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, ****@required **、**@ref **、**@xml **、**@type **。**
 
-:arrow_upper_right:有关每个属性的更多信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic)中的属性描述。
+:[!DNL :arrow_upper_right:]:有关每个属性的更多信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic)中的属性描述。
 
 ### 示例 {#examples}
 

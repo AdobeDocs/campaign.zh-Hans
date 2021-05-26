@@ -7,9 +7,9 @@ feature: 受众
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
+source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '752'
 ht-degree: 5%
 
 ---
@@ -104,13 +104,13 @@ Campaign用户可以使用其Adobe ID通过AdobeIdentity Management系统(IMS)�
 * 更强大的密码管理策略。
 * 使用联合 ID 帐户（外部 ID 提供商）。
 
-:speech_balloon:作为受管Cloud Services用户， [联系Adobe](campaign-faq.md#support)以通过Campaign实施AdobeIMS。
+[!DNL :speech_balloon:] 作为受管Cloud Services用户， [请](campaign-faq.md#support) 联系Adobe以通过Campaign实施AdobeIMS。
 
 ## 通过LDAP登录连接到Campaign
 
 可以配置Adobe Campaign，以便用户通过其LDAP身份验证访问平台。
 
-:speech_balloon:作为受管Cloud Services用户， [联系Adobe](campaign-faq.md#support)以配置LDAP与Campaign的集成。
+[!DNL :speech_balloon:] 作为受管Cloud Services用户，请 [联系](campaign-faq.md#support) Adobe以配置LDAP与Campaign的集成。
 
 
 ## Web访问{#web-access}

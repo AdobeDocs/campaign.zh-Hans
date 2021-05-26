@@ -7,9 +7,9 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 556cd7727c7c2bf0158d59d71ae0131b4c1013ee
+source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '364'
 ht-degree: 2%
 
 ---
@@ -40,7 +40,7 @@ Adobe Analytics连接器允许Adobe Campaign和Adobe Analytics通过&#x200B;**We
 
 在[本页](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/adobe-analytics-data-connector.html)上了解有关Adobe Campaign和Adobe Analytics的更多信息
 
-:speech_balloon: 作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以将Adobe Analytics Data Connector与Campaign集成。
+[!DNL :speech_balloon:]  作为受管Cloud Services用户， [请](../start/campaign-faq.md#support) 联系Adobe以将Adobe Analytics Data Connector与Campaign集成。
 
 
 ## Experience Cloud Triggers
@@ -49,4 +49,4 @@ Adobe Analytics连接器允许Adobe Campaign和Adobe Analytics通过&#x200B;**We
 
 在[此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html?lang=en)上了解有关Adobe Campaign和Experience Cloud触发器的更多信息。
 
-:speech_balloon: 作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以通过Campaign实施Experience Cloud触发器。
+[!DNL :speech_balloon:]  作为受管Cloud Services用户，请 [联系](../start/campaign-faq.md#support) Adobe以通过Campaign实施Experience Cloud触发器。

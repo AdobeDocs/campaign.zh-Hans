@@ -6,9 +6,9 @@ description: '了解如何使用Campaign和CRM '
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
+source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '267'
 ht-degree: 22%
 
 ---
@@ -27,7 +27,7 @@ Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台�
 
 Campaign [兼容性矩阵](../start/compatibility-matrix.md)中详细介绍了支持的CRM和版本。
 
-:speech_balloon:CRM连接器只能与安全URL(https)一起使用。
+[!DNL :speech_balloon:] CRM连接器只能与安全URL(https)一起使用。
 
 ## 实施步骤 {#crm-implementation-steps}
 

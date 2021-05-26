@@ -7,7 +7,7 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 2%
@@ -53,7 +53,7 @@ Adobe Campaign提供了一些流程和设置，允许您按照适用的数据隐
 
 您可以手动将用户添加到Cammaign，并将其与组关联，并与角色层次结构保持一致。 然后，用户将能够登录并访问适合他们的数据和权限。
 
-:[!DNL :arrow_upper_right:]:了解如何在[此部分](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=en#getting-started)中将用户添加到Adobe Campaign。
+[!DNL :arrow_upper_right:] 在此部分中了解如何将用户添 [加到Adobe Campaign](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=en#getting-started)。
 
 ### 安装Campaign客户端控制台
 

@@ -6,7 +6,7 @@ description: Campaign外部帐户
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 4%
@@ -146,7 +146,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
 这些外部帐户可用于使用&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动将数据导入或导出到Adobe Campaign。
 
-:[!DNL :arrow_upper_right:]:在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html)中了解有关工作流中文件传输的更多信息
+[!DNL :arrow_upper_right:] 在Campaign Classicv7文档中了解有关工作流中文 [件传输的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html)
 
 * **FTP和SFTP**
 

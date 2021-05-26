@@ -6,9 +6,9 @@ description: 了解如何创建优惠目录
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1276'
 ht-degree: 2%
 
 ---
@@ -79,7 +79,7 @@ ht-degree: 2%
 
 通过&#x200B;**扩充**&#x200B;活动，您可以向投放收件人的选件添加选件或链接。
 
-:arrow_upper_right:有关扩充活动的更多信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/enrichment.html)
+:[!DNL :arrow_upper_right:]:有关扩充活动的更多信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/enrichment.html)
 
 例如，您可以在投放之前扩充收件人查询的数据。
 
@@ -166,7 +166,7 @@ ht-degree: 2%
 
 **[!UICONTROL Offer engine]**&#x200B;活动还允许您在投放之前指定对选件引擎的调用。
 
-:arrow_upper_right:有关&#x200B;**选件引擎**&#x200B;活动的更多信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offer-engine.html)
+:[!DNL :arrow_upper_right:]:有关&#x200B;**选件引擎**&#x200B;活动的更多信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offer-engine.html)
 
 此活动遵循与通过引擎调用扩充&#x200B;****&#x200B;活动相同的原则，在投放之前，使用引擎计算的选件扩充集客群体数据。
 
@@ -189,7 +189,7 @@ ht-degree: 2%
 
 **[!UICONTROL Offers by cell]**&#x200B;活动允许您将集客群体（例如，从查询中）分发到多个区段，并指定要为其中每个区段显示的选件。
 
-:arrow_upper_right:有关&#x200B;**按单元格**&#x200B;提供的更多信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offers-by-cell.html)
+:[!DNL :arrow_upper_right:]:有关&#x200B;**按单元格**&#x200B;提供的更多信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offers-by-cell.html)
 
 为此，请使用以下过程：
 

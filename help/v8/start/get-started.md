@@ -7,7 +7,7 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 42%
@@ -91,9 +91,9 @@ Adobe Campaign提供一系列功能，帮助您根据您的需求和架构实施
 
 Campaign工作区可以根据您的需求进行调整。
 
-:[!DNL :arrow_upper_right:]: 了解如何在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html)中使用Campaign工作区
+[!DNL :arrow_upper_right:]  在Campaign v7文档中了解如 [何使用Campaign工作区](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html)
 
-:[!DNL :arrow_upper_right:]: 了解如何在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html)中自定义列表
+[!DNL :arrow_upper_right:]  了解如何在 [Campaign Classicv7文档中自定义列表](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html)
 
 您还可以通过Web访问某些功能。
 

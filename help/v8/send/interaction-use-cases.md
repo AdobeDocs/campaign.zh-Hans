@@ -6,9 +6,9 @@ description: 交互用例
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '73'
+source-wordcount: '64'
 ht-degree: 4%
 
 ---
@@ -17,8 +17,8 @@ ht-degree: 4%
 
 通过Campaign Classicv7文档中提供的这些分步使用案例，利用Campaign交互功能。
 
-:arrow_upper_right:[创建并应用表示规则](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/presentation-rules.html)
+:[!DNL :arrow_upper_right:]:[创建并应用表示规则](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/presentation-rules.html)
 
-:arrow_upper_right:[发送电子邮件选件投放](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html)
+:[!DNL :arrow_upper_right:]:[发送电子邮件选件投放](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html)
 
-:arrow_upper_right:[执行选件模拟](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html)
+:[!DNL :arrow_upper_right:]:[执行选件模拟](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html)

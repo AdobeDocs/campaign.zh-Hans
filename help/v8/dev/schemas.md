@@ -3,7 +3,7 @@ solution: Campaign v8
 product: Adobe Campaign
 title: 使用Campaign模式
 description: 模式入门
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 4%
@@ -164,7 +164,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=en#content-model)的`<attribute>`元素部分中提供了完整的属性列表。 以下是一些最常用的属性：**@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, ****@required **、**@ref **、**@xml **、**@type **。**
 
-:[!DNL :arrow_upper_right:]:有关每个属性的更多信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic)中的属性描述。
+[!DNL :arrow_upper_right:] 有关每个属性的更多信息，请参阅 [Campaign Classicv7文档中的属性描述](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic)。
 
 ### 示例 {#examples}
 

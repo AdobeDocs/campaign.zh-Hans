@@ -3,7 +3,7 @@ solution: Campaign v8
 product: Adobe Campaign
 title: Campaign输入表单
 description: 了解如何自定义输入表单
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '2555'
 ht-degree: 0%
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 默认情况下，每个字段都显示在一行中，并根据数据类型占用所有可用空间。
 
-:[!DNL :arrow_upper_right:]:所有表单属性都列在[Campaign Classicv7文档](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/control-Button.html)中。
+[!DNL :arrow_upper_right:] 所有表单属性都列在 [Campaign Classicv7文档](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/control-Button.html)中。
 
 ## 格式化 {#formatting}
 

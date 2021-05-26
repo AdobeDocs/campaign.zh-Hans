@@ -6,9 +6,9 @@ description: Campaign外部帐户
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
+source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1009'
 ht-degree: 4%
 
 ---
@@ -36,7 +36,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
-:speech_balloon:作为托管Cloud Services用户，Adobe会为您配置所有特定于促销活动的外部帐户。
+[!DNL :speech_balloon:] 作为托管Cloud Services用户，Adobe会为您配置所有特定于促销活动的外部帐户。
 
 * **退回邮件(POP3)**
 
@@ -76,7 +76,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
    [!DNL :bulb:] 在此部分中了解有关AdobeIdentity Management服务(IMS)的 [更多信息](../start/connect.md#connect-ims)。
 
-   :speech_balloon:作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以通过Campaign实施AdobeIMS。
+   [!DNL :speech_balloon:] 作为受管Cloud Services用户， [请](../start/campaign-faq.md#support) 联系Adobe以通过Campaign实施AdobeIMS。
 
 * **网络分析**
 
@@ -84,14 +84,14 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
    [!DNL :bulb:] 在此页面中了解有关Adobe Campaign - Adobe Analytics集 [成的更多信息](../connect/ac-aa.md)。
 
-   :speech_balloon:作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以将Adobe Analytics与Campaign集成。
+   [!DNL :speech_balloon:] 作为受管Cloud Services用户，请 [联系](../start/campaign-faq.md#support) Adobe以将Adobe Analytics与Campaign集成。
 
    * **Adobe Experience Manager**
    **[!UICONTROL AEM]**&#x200B;外部帐户允许您直接在Adobe Experience Manager中管理电子邮件投放内容和表单。
 
    [!DNL :bulb:] 在此页面中了解有关Adobe Campaign - Adobe Analytics集 [成的更多信息](../connect/ac-aem.md)。
 
-   :speech_balloon:作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以将Adobe Experience Manager与Adobe Campaign集成。
+   [!DNL :speech_balloon:] 作为受管Cloud Services用户，请 [联系](../start/campaign-faq.md#support) Adobe以将Adobe Experience Manager与Adobe Campaign集成。
 
 
 ## CRM连接器外部帐户

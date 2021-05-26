@@ -7,9 +7,9 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1193'
 ht-degree: 2%
 
 ---
@@ -53,13 +53,13 @@ Adobe Campaign提供了一些流程和设置，允许您按照适用的数据隐
 
 您可以手动将用户添加到Cammaign，并将其与组关联，并与角色层次结构保持一致。 然后，用户将能够登录并访问适合他们的数据和权限。
 
-:arrow_upper_right:了解如何在[此部分](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=en#getting-started)中将用户添加到Adobe Campaign。
+:[!DNL :arrow_upper_right:]:了解如何在[此部分](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=en#getting-started)中将用户添加到Adobe Campaign。
 
 ### 安装Campaign客户端控制台
 
 应用程序的主用户界面是一个富客户端，换句话说，是一个仅与标准Internet协议（SOAP、HTTP等）通信的与Adobe Campaign应用程序服务器通信的本机应用程序(Windows)。 Adobe Campaign客户端控制台为工作效率提供了极好的用户友好性，使用极少的带宽（通过使用本地缓存），并且设计为易于部署。 此控制台可以从Internet浏览器部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成HTTP(S)流量。
 
-：灯泡：[了解有关Campaign客户端控制台的更多信息](connect.md)。
+[!DNL :bulb:] [进一步了解Campaign客户端控制台](connect.md)。
 
 ## 准备环境
 
@@ -69,33 +69,33 @@ Adobe Campaign提供了一些流程和设置，允许您按照适用的数据隐
 
    Campaign可帮助您将联系人添加到云数据库。 您可以加载文件、计划和自动进行多次联系人更新、在Web上收集数据或直接在收件人表中输入用户档案信息。
 
-   ：灯泡：[了解如何导入用户档案](import.md)。
+   [!DNL :bulb:] [了解如何导入用户档案](import.md)。
 
    受众将分组到列表中，并可通过工作流创建。 然后，可以在跨渠道投放中定位这些量度。
 
-   ：灯泡：[了解如何定义受众](audiences.md)。
+   [!DNL :bulb:] [了解如何定义受众](audiences.md)。
 
 1. 创建模板
 
    营销活动、投放、作业或工作流都基于模板，模板可存储关键设置和功能。 为每个组件提供了内置模板，尚未为其定义特定配置。 您需要配置和调整模板以满足您的需求，并向最终用户提供模板。
 
-   :arrow_upper_right:[了解有关电子邮件模板的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html)
+   :[!DNL :arrow_upper_right:]:[了解有关电子邮件模板的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html)
 
-   :arrow_upper_right:了解如何在[本页](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns)中使用营销活动模板
+   :[!DNL :arrow_upper_right:]:了解如何在[本页](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=en#orchestrating-campaigns)中使用营销活动模板
 
-   :arrow_upper_right:了解如何在[此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=en#workflow-templates)中配置工作流模板
+   :[!DNL :arrow_upper_right:]:了解如何在[此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=en#workflow-templates)中配置工作流模板
 
 1. 配置分类规则
 
    利用Campaign分类规则过滤、控制和监控投放发送。 例如，疲劳规则控制消息传送的频率和数量，以避免收件人过度通信。 实施后，将在投放中引用分类规则。
 
-   :arrow_upper_right:[了解有关分类和疲劳管理的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=en#orchestrating-campaigns)
+   :[!DNL :arrow_upper_right:]:[了解有关分类和疲劳管理的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=en#orchestrating-campaigns)
 
 1. 熟悉Campaign内置数据模型
 
    Adobe Campaign 提供了预定义的数据模型。要实施和自定义您的环境，您需要熟悉Adobe Campaign数据模型的内置表以及它们彼此的关系。
 
-   ：灯泡：[了解有关Campaign数据模型的更多信息](../dev/datamodel.md)。
+   [!DNL :bulb:] [进一步了解Campaign数据模型](../dev/datamodel.md)。
 
 ## 自定义实例
 
@@ -105,19 +105,19 @@ Adobe Campaign提供了一些流程和设置，允许您按照适用的数据隐
 
    Adobe Campaign提供了一些用于识别数据的通用架构，例如：收件人、投放日志、订阅等。
 
-   ：灯泡：请参阅此部分，了解有关[Campaign内置数据模型](../dev/datamodel.md)的更多信息。
+   [!DNL :bulb:] 请参阅此部分，了解有关Campaign内 [置数据模型的更多信息](../dev/datamodel.md)。
 
-   ：灯泡：您可以扩展现有架构或从头开始创建新架构。 在[此页面](../dev/customize.md)中了解详情。
+   [!DNL :bulb:] 您可以扩展现有架构或从头开始创建新架构。在[此页面](../dev/customize.md)中了解详情。
 
 1. **功能板和列表**
 
    您可以轻松配置列表、添加和删除字段以及自定义列。
 
-   ：灯泡：在[本页](../dev/customize.md#gs-lists-and-filters)中了解如何在Campaign中管理过滤器和列表。
+   [!DNL :bulb:] 在本页中了解如何在Campaign中管理过滤器和 [列表](../dev/customize.md#gs-lists-and-filters)。
 
    您还可以根据自己的需求创建新功能板以显示促销活动数据。
 
-   ：灯泡：在[此页面](../dev/customize.md#gs-custom-dashboards)中了解详情。
+   [!DNL :bulb:] 在此页面中了 [解更多](../dev/customize.md#gs-custom-dashboards)。
 
 1. **报告**
 
@@ -125,7 +125,7 @@ Adobe Campaign提供了一些流程和设置，允许您按照适用的数据隐
 
    除了内置的报告，Adobe Campaign 还可用于在不同的上下文中生成各种报告，以满足不同的需求。本文详细介绍了使用原则和实施模式。
 
-   ：灯泡：在[本页](reporting.md)中了解有关Campaign中报告功能的更多信息。
+   [!DNL :bulb:] 在此页面中了解有关Campaign中报告功能 [的更多信息](reporting.md)。
 
 
 ## 设置Campaign自动化
@@ -156,22 +156,22 @@ Adobe Campaign提供了一些流程和设置，允许您按照适用的数据隐
 
 您还可以使用单点登录(SSO)连接到Campaign。 在[此页面](connect.md)中了解详情。
 
-：灯泡：在本页](../connect/integration.md)中，了解可与Adobe Campaign [集成的Adobe解决方案的完整列表。
+[!DNL :bulb:] 在此页面中了解可与Adobe Campaign集成的Adobe解决 [方案的完整列表](../connect/integration.md)。
 
 ### 连接器
 
 将Campaign与第三方系统连接起来，以组合大量功能并自动执行各个流程。
 
-：灯泡：在[此部分](../connect/integration.md)中了解有关可用连接器的更多信息。
+[!DNL :bulb:] 在此部分中了解有关可用连接器的 [更多信息](../connect/integration.md)。
 
 **将CRM连接到Campaign**
 
 您可以将Adobe Campaign平台连接到CRM第三方系统并同步数据：联系人、帐户、购买等
 
-：灯泡：在[此部分](../connect/integration.md#gs-crm-connectors)中了解如何将CRM系统连接到Campaign
+[!DNL :bulb:] 在此部分中了解如何将CRM系统连接 [到Campaign](../connect/integration.md#gs-crm-connectors)
 
 **连接到外部数据库**
 
 您可以通过联合数据访问(FDA)模块将Campaign Cloud数据库连接到外部系统。
 
-：灯泡：了解如何配置Campaign FDA模块以在[此部分](../connect/integration.md#gs-fda)中定义访问参数
+[!DNL :bulb:] 在此部分中了解如何配置Campaign FDA模块以定义访 [问参数](../connect/integration.md#gs-fda)

@@ -3,9 +3,9 @@ solution: Campaign v8
 product: Adobe Campaign
 title: 营销活动数据库映射
 description: 营销活动数据库映射
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1463'
 ht-degree: 0%
 
 ---
@@ -257,7 +257,7 @@ Adobe Campaign表的主键是由数据库引擎自动生成的&#x200B;**通用�
 * ![](assets/do-not-localize/join_fda_11.png) :基数1-1
 * ![](assets/do-not-localize/join_fda_1m.png) :基数1-N
 
-：灯泡：有关FDA表的更多信息，请参阅[联合数据访问](../connect/fda.md)。
+[!DNL :bulb:] 有关FDA表的更多信息，请参阅联 [合数据访问](../connect/fda.md)。
 
 必须在包含通过主元素链接的表的外键的架构中声明链接：
 
@@ -378,7 +378,7 @@ Adobe Campaign表的主键是由数据库引擎自动生成的&#x200B;**通用�
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
-### 示例4 {#example-4}
+### 示例5 {#example-4}
 
 链接到文件夹（“xtk:folder”架构）：
 

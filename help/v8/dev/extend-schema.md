@@ -3,9 +3,9 @@ solution: Campaign v8
 product: Adobe Campaign
 title: 扩展Campaign模式
 description: 了解如何扩展Campaign模式
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '243'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 2%
 >[!CAUTION]
 >不得直接修改内置架构。 如果您需要调整内置架构，则必须扩展该架构。
 
-：灯泡：要更好地了解Campaign内置表及其交互，请参阅[此页面](datamodel.md)。
+[!DNL :bulb:] 要更好地了解Campaign内置表及其交互，请参阅 [此页面](datamodel.md)。
 
 要扩展架构，请执行以下步骤：
 

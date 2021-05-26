@@ -6,9 +6,9 @@ description: Campaign事务型消息传递设置
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 :speech_balloon:作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以在您的环境中安装和配置Campaign事务型消息传递。
 
-：灯泡：[此部分](../send/transactional.md)中详细介绍了事务性消息传递功能。
+[!DNL :bulb:] 有关事务性消息传递功能的详 [细信息，请参阅此章节](../send/transactional.md)。
 
-：灯泡：了解[本页](../dev/architecture.md)中的事务型消息传递架构。
+[!DNL :bulb:] 了解本页中的事务型消 [息传递架构](../dev/architecture.md)。
 
 ## 定义权限
 
@@ -29,13 +29,13 @@ ht-degree: 0%
 
 对&#x200B;**消息中心技术工作流**&#x200B;在控制实例或执行实例上使用的架构所做的所有架构扩展，都需要复制到Adobe Campaign事务性消息传递模块使用的其他实例上。
 
-:arrow_upper_right:在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/instance-configuration/technical-workflows.html?lang=en#control-instance-workflows)中了解有关消息中心技术工作流的更多信息
+:[!DNL :arrow_upper_right:]:在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/instance-configuration/technical-workflows.html?lang=en#control-instance-workflows)中了解有关消息中心技术工作流的更多信息
 
 ## 发送事务推送通知
 
 与移动设备应用程序渠道模块结合使用时，事务型消息传递允许您通过移动设备上的通知推送事务型消息。
 
-:arrow_upper_right:[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages)中详细介绍了移动设备应用程序渠道。
+:[!DNL :arrow_upper_right:]:[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages)中详细介绍了移动设备应用程序渠道。
 
 要发送事务推送通知，您需要执行以下配置：
 

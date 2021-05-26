@@ -7,7 +7,7 @@ feature: 受众
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 5%
@@ -117,8 +117,8 @@ Campaign用户可以使用其Adobe ID通过AdobeIdentity Management系统(IMS)�
 
 应用程序的某些部分可通过使用HTML用户界面的简单Web浏览器访问：营销活动功能板、多维数据集报告、实例监控等。
 
-:[!DNL :arrow_upper_right:]:在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#console-and-web-access)中了解有关Web访问的更多信息
+[!DNL :arrow_upper_right:] 在Campaign Classicv7文档中了解有关Web [访问的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#console-and-web-access)
 
 验证过程中也使用Web访问：操作员可以单击批准请求电子邮件，并通过其Web浏览器连接到Campaign，以验证或拒绝投放内容或预算。
 
-:[!DNL :arrow_upper_right:]:了解如何在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns)中设置和管理批准
+[!DNL :arrow_upper_right:] 了解如何在Campaign Classicv7文档中设置 [和管理批准](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns)

@@ -6,16 +6,16 @@ description: Campaign事务型消息传递设置
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
+source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
 
 # 事务型消息传递设置
 
-:speech_balloon:作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以在您的环境中安装和配置Campaign事务型消息传递。
+[!DNL :speech_balloon:] 作为受管Cloud Services用户，请 [联系](../start/campaign-faq.md#support) Adobe，以在您的环境中安装和配置Campaign事务型消息传递。
 
 [!DNL :bulb:] 有关事务性消息传递功能的详 [细信息，请参阅此章节](../send/transactional.md)。
 

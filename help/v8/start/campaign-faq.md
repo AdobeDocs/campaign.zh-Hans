@@ -7,10 +7,10 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
+source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 42%
+source-wordcount: '638'
+ht-degree: 43%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 42%
 
    这种定期更新旨在让您掌握最新、最充分的信息，保持环境的安全，并改进您对我们产品的体验。这就是为什么我们认为运行最新版本的 Adobe Campaign 至关重要的原因。
 
-   :speech_balloon:作为托管Cloud Services用户，您的实例会在每个新版本中通过Adobe进行升级。
+   [!DNL :speech_balloon:] 作为托管Cloud Services用户，您的实例会在每个新版本中通过Adobe进行升级。
 
 1. **如何连接到Campaign v8?**
 
@@ -62,7 +62,7 @@ ht-degree: 42%
 
    子域是域的一个分支，可用于隔离您的品牌或各种类型的流量（交易消息、营销信息等）。
 
-   :speech_balloon:作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)将子域委派给Adobe。
+   [!DNL :speech_balloon:] 作为受管Cloud Services用户， [请](../start/campaign-faq.md#support) 联系Adobe以将子域委派给Adobe。
 
 1. **作为Campaign Classicv7用户，我是否可以迁移到Campaign v8?**
 

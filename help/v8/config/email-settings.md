@@ -6,9 +6,9 @@ description: Campaign电子邮件渠道设置
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '235'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ Adobe Campaign本身不管理已存档的文件。 它确实允许您将您选�
 
 * 只有成功发送的电子邮件才会被考虑在内，而退回则不会。
 
-:speech_balloon:作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以在Campaign中激活电子邮件密送。 您选择的密件抄送电子邮件地址必须提供给Adobe团队，由团队为您进行配置。
+[!DNL :speech_balloon:] 作为受管Cloud Services用户，请 [联系](../start/campaign-faq.md#support) Adobe以在Campaign中激活电子邮件密件抄送。您选择的密件抄送电子邮件地址必须提供给Adobe团队，由团队为您进行配置。
 
 配置电子邮件密送后，请确保在投放模板或通过&#x200B;**电子邮件密送**&#x200B;选项在投放中启用该功能。
 

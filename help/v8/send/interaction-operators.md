@@ -6,7 +6,7 @@ description: 创建选件管理运算符
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 167730cc3e81ee47f02bcdbc2c39fe793a99c534
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 1. 创建新运算符。
 
-   :[!DNL :arrow_upper_right:]:[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)中详细介绍了在Campaign中创建运算符的步骤
+   [!DNL :arrow_upper_right:] 有关在Campaign中创建运算符的详细步骤，请参 [阅Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
 
 1. 转到&#x200B;**[!UICONTROL Groups and named rights]**&#x200B;窗口，单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择&#x200B;**[!UICONTROL Offer manager]**&#x200B;组。
 
@@ -49,7 +49,7 @@ ht-degree: 1%
 
 1. 创建新运算符。
 
-   :[!DNL :arrow_upper_right:]:[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)中详细介绍了在Campaign中创建运算符的步骤
+   [!DNL :arrow_upper_right:] 有关在Campaign中创建运算符的详细步骤，请参 [阅Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
 
 1. 转到&#x200B;**[!UICONTROL Groups and named rights]**&#x200B;窗口，单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择&#x200B;**[!UICONTROL Delivery manager]**&#x200B;组。
 

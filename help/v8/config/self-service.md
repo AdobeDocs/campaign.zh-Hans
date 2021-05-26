@@ -11,7 +11,7 @@ hide: true
 source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 58%
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 58%
 
 尚未可用
 
-Campaign控制面板可让您管理每个实例的设置和跟踪使用情况，从而帮助您作为Adobe Campaign的产品管理员提高工作效率。 其直观的界面可让您轻松监控关键资产的使用情况，并执行管理任务，如将 IP 地址添加到允许列表、SFTP 存储监控、密钥管理等。
+Campaign 控制面板允许管理每个实例的设置并跟踪使用情况，从而帮助 Adobe Campaign 产品管理员提高工作效率。其直观的界面可让您轻松监控关键资产的使用情况，并执行管理任务，如将 IP 地址添加到允许列表、SFTP 存储监控、密钥管理等。
 
 主要优点：
 
@@ -27,15 +27,15 @@ Campaign控制面板可让您管理每个实例的设置和跟踪使用情况，
 * 根据不同的业务需求在不同时间配置设置。
 * 根据需要控制访问设置，从而增强安全性。
 
-您还可以使用Campaign控制面板配置实例设置，如IP允许列表、URL权限，以及检索有关实例的信息。
+您还可以使用 Campaign 控制面板配置实例设置，如 IP 允许列表、URL 权限和检索有关实例的信息。
 
 ## 如何访问控制面板？
 
-可直接从 Adobe Experience Cloud 访问控制面板。仅管理员用户可以访问。[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html)以了解更多信息。
+可直接从 Adobe Experience Cloud 访问控制面板。仅管理员用户可以访问。[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=zh-Hans)以了解更多信息。
 
 ## 控制面板常见问题解答
 
-[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html)以访问 Campaign 控制面板常见问题解答。
+[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans)以访问 Campaign 控制面板常见问题解答。
 
 ## SFTP 管理
 
@@ -44,16 +44,16 @@ Campaign控制面板可让您管理每个实例的设置和跟踪使用情况，
 ## 子域和证书
 
 您可以监测您的子域及其证书。了解详情：
-* [子域品牌化](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html)
-* [设置新子域](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html)
-* [监测 SSL 证书](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html)
+* [子域品牌化](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html?lang=zh-Hans)
+* [设置新子域](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hans)
+* [监测 SSL 证书](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=zh-Hans)
 
 ## 实例设置
 
-了解如何在控制面板中管理Campaign实例设置。
-* [允许列表上的IP](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
-* [URL 权限](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html)
-* [实例详细信息](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
-* [GPG 密钥管理](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html)
+了解如何在控制面板中管理 Campaign 实例设置。
+* [允许列表上的 IP](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hans)
+* [URL 权限](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hans)
+* [实例详细信息](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=zh-Hans)
+* [GPG 密钥管理](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hans)
 
 [!DNL :arrow_upper_right:] 探索此文档中的所有控制面板 [功能](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)

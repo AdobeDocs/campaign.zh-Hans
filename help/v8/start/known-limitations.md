@@ -7,21 +7,26 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 hidefromtoc: true
-source-git-commit: 6e098ffa538c4348889a35eb454da747c80d6262
+source-git-commit: 583a8f6a03b00e1eafa6d408c9949e60a6f8158d
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '158'
 ht-degree: 1%
 
 ---
 
 # 已知限制
 
-* Campaign v8尚不适用于内部部署/混合部署 — 仅作为Adobe管理Cloud Service发布
+已知限制可识别此产品版本不支持或无法与其正确互操作的功能、架构或进程。 请仔细查看这些限制。
+
+对于Adobe Campaign v8，存在以下限制：
+
+* Adobe Campaign v8不适用于内部部署/混合部署 — 仅作为Adobe管理的Cloud Service发布
 * 现有客户无法从现有Adobe Campaign环境迁移到Adobe Campaign v8
-* 没有双向数据复制，仅从Campaign本地数据库到云数据库
-* 此部分](capability-matrix.md#gs-unavailable-features)中列出的[功能在Campaign v8中尚不可用
-* 用户界面中仍显示某些暂时不可用或已删除的功能
-* 无法安装内置软件包 — 即使具有管理员权限也是如此
+* 无双向数据复制：复制仅从Campaign本地数据库到云数据库
+* 此部分](capability-matrix.md#gs-unavailable-features)中列出的[功能在当前Campaign v8内部版本中不可用
+* 用户界面中仍显示某些不可用或已删除的功能
+* 订阅（选择加入）和退订（选择退出）机制，以及移动设备注册是异步流程。 请求每小时通过特定的技术工作流进行处理。 [了解详情](../config/replication.md#tech-wf)
+* ID管理 — 重复 — 用于确认+详细信息
 * 行 — 确认+详细信息
 * 延迟 — 确认+详细信息
 

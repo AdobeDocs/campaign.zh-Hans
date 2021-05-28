@@ -7,7 +7,7 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 hidefromtoc: true
-source-git-commit: 583a8f6a03b00e1eafa6d408c9949e60a6f8158d
+source-git-commit: 15cd7228a4920702cae182c68e7a329345946e31
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 对于Adobe Campaign v8，存在以下限制：
 
-* Adobe Campaign v8不适用于内部部署/混合部署 — 仅作为Adobe管理的Cloud Service发布
+* Adobe Campaign v8不适用于内部部署/混合部署 — 仅作为Adobe管理的Cloud Service发布。
 * 现有客户无法从现有Adobe Campaign环境迁移到Adobe Campaign v8
 * 无双向数据复制：复制仅从Campaign本地数据库到云数据库
 * 此部分](capability-matrix.md#gs-unavailable-features)中列出的[功能在当前Campaign v8内部版本中不可用
@@ -29,5 +29,3 @@ ht-degree: 1%
 * ID管理 — 重复 — 用于确认+详细信息
 * 行 — 确认+详细信息
 * 延迟 — 确认+详细信息
-
-

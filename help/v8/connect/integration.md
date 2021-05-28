@@ -1,16 +1,16 @@
 ---
 solution: Campaign v8
 product: Adobe Campaign
-title: 营销活动入门
-description: 营销活动入门
+title: 开始使用营销活动
+description: 开始使用营销活动
 feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
+source-git-commit: eaad05675d2f875af2db5f71781afdad3a9ff004
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 11%
+source-wordcount: '342'
+ht-degree: 13%
 
 ---
 
@@ -29,13 +29,10 @@ Adobe Campaign附带多个连接器，允许您与外部应用程序通信、连
 Campaign v8可以连接：
 
 * [AdobeJourney Orchestration](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=en)
-
 * [Real-Time CDP](../connect/ac-rtcdp.md)
-
-* [Adobe Analytics Data Connector](../connect/ac-aa.md)
-
+* [Adobe Analytics](../connect/ac-aa.md)
 * [Adobe Experience Manager](../connect/ac-aem.md)
-
+* [Adobe Experience Cloud触发器](../connect/ac-triggers.md)
 * [Adobe Target](../connect/ac-at.md)
 
 您还可以通过Experience Cloud共享和受众共享功能，在不同的受众解决方案中合并&#x200B;**受众**&#x200B;和&#x200B;**资产**。
@@ -57,7 +54,7 @@ CRM连接器支持快速、轻松的数据集成：Adobe Campaign为从CRM中可
 
 使用FDA连接器（联合数据访问）将Campaign连接到一个或多个&#x200B;**外部数据库**，并处理存储到它们中的信息，而不会影响您的Campaign云数据库数据。
 
-[!DNL :bulb:] 在本页了解 [更多](fda.md)
+[!DNL :bulb:] 请参阅[此页面](fda.md)以了解详情
 
 
 <!-- 

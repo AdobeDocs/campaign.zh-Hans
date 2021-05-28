@@ -3,41 +3,41 @@ solution: Campaign v8
 product: Adobe Campaign
 audience: end-user
 user-guide-title: Campaign v8
-description: Campaign v8文档
+description: Campaign v8 文档
 breadcrumb-title: Campaign v8
-title: Campaign v8文档
+title: Campaign v8 文档
 hide: true
-source-git-commit: 6e098ffa538c4348889a35eb454da747c80d6262
+source-git-commit: eaad05675d2f875af2db5f71781afdad3a9ff004
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 31%
+source-wordcount: '197'
+ht-degree: 83%
 
 ---
 
 
-# Adobe Campaign v8文档{#campaign-v8}
+# Adobe Campaign v8 文档{#campaign-v8}
 
-+ [Campaign v8文档](campaign-home.md)
++ [Campaign v8 文档](campaign-home.md)
 + 新增内容? {#start}
-   + [重点功能](start/whats-new.md)
+   + [重要功能](start/whats-new.md)
    + [发行说明](start/release-notes.md)
    + [已知限制](start/known-limitations.md)
-   + [经典v7到v8](start/capability-matrix.md)
+   + [Classic v7 到 v8](start/capability-matrix.md)
 + 开始 {#start}
    + [入门](start/get-started.md)
-   + [配置文件和受众](start/audiences.md)
+   + [用户档案和受众](start/audiences.md)
    + [导入数据](start/import.md)
-   + [创建营销活动](start/campaigns.md)
+   + [创建活动](start/campaigns.md)
    + [发送邮件](start/create-message.md)
    + [管理订阅](start/subscriptions.md)
-   + [跟踪和监视](start/tracking.md)
-   + [量度和报表](start/reporting.md)
+   + [跟踪和监测](start/tracking.md)
+   + [指标和报表](start/reporting.md)
    + [常见问题解答](start/campaign-faq.md)
 + 实施{#implement}
    + [实施步骤](start/implement.md)
    + [自定义实例](dev/customize.md)
    + [安全准则](config/security.md)
-   + [设计Web应用程序和表单](dev/webapps.md)
+   + [设计 Web 应用程序和表单](dev/webapps.md)
    + [数据模型最佳实践](dev/datamodel-best-practices.md)
 + 部署{#deploy}
    + [兼容性矩阵](start/compatibility-matrix.md)
@@ -62,36 +62,37 @@ ht-degree: 31%
       + [创建优惠](send/interaction-offer.md)
       + [发送优惠](send/interaction-send-offers.md)
       + [用例](send/interaction-use-cases.md)
-+ 配置{#config}
++ 配置 {#config}
    + [使用工作流实现自动化](config/workflows.md)
    + [管理数据](config/replication.md)
    + [电子邮件设置](config/email-settings.md)
-   + [事务型消息传递设置](config/transactional-msg-settings.md)
+   + [事务性消息设置](config/transactional-msg-settings.md)
    + [外部帐户](config/external-accounts.md)
 + 连接{#connect}
-   + [与其他解决方案连接](connect/integration.md)
+   + [与其他解决方案配合使用](connect/integration.md)
    + [Campaign + Analytics](connect/ac-aa.md)
-   + [促销活动+Experience Manager](connect/ac-aem.md)
+   + [Campaign + Experience Manager](connect/ac-aem.md)
    + [Campaign + Target](connect/ac-at.md)
+   + [Campaign +Experience Cloud触发器](connect/ac-triggers.md)
    + [Campaign + RTCDP](connect/ac-rtcdp.md)
    + [Campaign + Twitter](connect/ac-tw.md)
-   + [Campaign +外部数据库](connect/fda.md)
-   + [Campaign +您的CRM](connect/crm.md)
+   + [Campaign + 外部数据库](connect/fda.md)
+   + [Campaign + 您的 CRM](connect/crm.md)
 + 开发人员资源{#architecture}
-   + [全球原则](dev/general-architecture.md)
+   + [全局原则](dev/general-architecture.md)
    + [架构](dev/architecture.md)
    + [数据模型](dev/datamodel.md)
-   + 架构和表单{#shemas-forms}
-      + [使用架构](dev/schemas.md)
-      + [创建架构](dev/create-schema.md)
+   + 模式和表单{#shemas-forms}
+      + [使用模式](dev/schemas.md)
+      + [创建模式](dev/create-schema.md)
       + [扩展模式](dev/extend-schema.md)
       + [模式结构](dev/schema-structure.md)
       + [数据库映射](dev/database-mapping.md)
-      + [限制PI视图](dev/restrict-pi-view.md)
+      + [限制 PI 视图](dev/restrict-pi-view.md)
       + [使用自定义收件人表](dev/custom-recipient.md)
       + [更新数据库](dev/update-database-structure.md)
       + [输入窗体](dev/forms.md)
    + API {#api}
       + [入门](dev/api.md)
-      + [新API](dev/new-apis.md)
+      + [新 API](dev/new-apis.md)
       + [API暂存机制](dev/staging.md)

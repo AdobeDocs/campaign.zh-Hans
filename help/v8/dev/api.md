@@ -7,10 +7,10 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 93ab81f60c96a44ca702cfc278b87903a977763c
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 4%
+source-wordcount: '331'
+ht-degree: 7%
 
 ---
 
@@ -21,10 +21,10 @@ ht-degree: 4%
 * 在脚本中 — 在[!DNL Adobe Campaign]工作流中
 * 通过API — 从外部系统
 
-您可以使用Javascript API在Campaign云数据库中写入内容或从数据库读取内容：
+您可以使用JavaScript API在Campaign云数据库中写入内容或从数据库读取内容：
 
 * 允许您对每个对象执行操作的特定于业务的API:投放、工作流、订阅等。 在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html)中了解更多信息。
-* 通用数据访问用于查询数据模型数据的API。 在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html)中了解更多信息。
+* 用于查询数据模型数据的通用数据访问API。 在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html)中了解更多信息。
 
 Campaign v8可与两个数据库配合使用：用于用户界面实时消息传送和统一查询并通过API写入的本地数据库，以及用于促销活动执行、报告、数据获取、批量查询和工作流执行的云数据库。
 
@@ -37,14 +37,14 @@ Campaign v8可与两个数据库配合使用：用于用户界面实时消息传
 
 在使用[!DNL Adobe Campaign] API之前，您需要熟悉以下主题：
 
-* Javascript
+* JavaScript
 * SOAP协议
 * [!DNL Adobe Campaign] 数据模型
 
-要使用API并与[!DNL Adobe Campaign]进行交互，您还需要熟悉数据模型。
+要使用API并与[!DNL Adobe Campaign]进行交互，您还必须熟悉您的数据模型。
 
 >[!NOTE]
->您可以生成数据模型的完整描述。 在[此页面](datamodel.md)中了解详情。
+>您可以生成数据模型的完整说明。 请参阅[此页面](datamodel.md)以了解详情。
 
 ## [!DNL Campaign] API暂存机制
 
@@ -52,9 +52,9 @@ Campaign v8可与两个数据库配合使用：用于用户界面实时消息传
 
 [!DNL :bulb:] [本页详细介绍了API暂存机制](staging.md)
 
-## 新API
+## 新 API
 
-提供了新的API，用于管理[!DNL Campaign]本地数据库与云数据库之间的数据同步。 还引入了一种新机制，用于在本地数据库级别处理API调用，以避免延迟并提高整体性能
+提供了新的API，用于管理[!DNL Campaign]本地数据库与云数据库之间的数据同步。 此外，还引入了新机制，在本地数据库级别处理API调用，以避免延迟并提高整体性能。
 
 [!DNL :bulb:] [本页详细介绍了新的API](new-apis.md)
 

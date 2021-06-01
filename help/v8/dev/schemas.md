@@ -1,16 +1,15 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: 使用Campaign模式
 description: 模式入门
-source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '1246'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
-# 使用架构{#gs-ac-schemas}
+# 使用模式{#gs-ac-schemas}
 
 应用中所承载数据的物理和逻辑结构以 XML 格式进行描述。它遵循Adobe Campaign特有的语法，称为&#x200B;**schema**。
 

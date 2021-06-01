@@ -1,5 +1,4 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: 了解如何连接到Campaign v8
 description: 连接到Campaign v8
@@ -7,10 +6,10 @@ feature: 受众
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '752'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -121,4 +120,4 @@ Campaign用户可以使用其Adobe ID通过AdobeIdentity Management系统(IMS)�
 
 验证过程中也使用Web访问：操作员可以单击批准请求电子邮件，并通过其Web浏览器连接到Campaign，以验证或拒绝投放内容或预算。
 
-[!DNL :arrow_upper_right:] 了解如何在Campaign Classicv7文档中设置 [和管理批准](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=en#orchestrating-campaigns)
+[!DNL :arrow_upper_right:] 了解如何在Campaign Classicv7文档中设置 [和管理批准](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=zh-Hans#orchestrating-campaigns)

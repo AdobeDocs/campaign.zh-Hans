@@ -1,13 +1,12 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: 一般架构
 description: Campaign v8一般架构
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: 69d69c909e6b17ca3f5fb18d6680aa51d0d701cf
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -31,7 +30,7 @@ ht-degree: 0%
 
 可以通过不同方式访问应用程序：富客户端、瘦客户端或API集成。
 
-* **客户端控制台**:该应用程序的主用户界面是一个本机应用程序（在Windows上），它与Adobe Campaign应用程序服务器通信标准Internet协议（SOAP、HTTP等）。Adobe Campaign客户端控制台为工作效率提供了极好的用户友好性，使用极少的带宽（通过使用本地缓存），并且设计为易于部署。 此控制台可以从Internet浏览器部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成HTTP(S)流量。
+* **客户端控制台**:该应用程序的主用户界面是一个本机应用程序（在Windows上），它与Adobe Campaign应用程序服务器通信标准Internet协议（SOAP、HTTP等）。Adobe Campaign Client Console 具有出色的用户友好性，可帮助提升工作效率，使用的带宽非常少（通过使用本地缓存），并且易于部署。此控制台可以从Internet浏览器部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成HTTP(S)流量。
 
    [!DNL :bulb:] [进一步了解Campaign客户端控制台](../start/connect.md)。
 

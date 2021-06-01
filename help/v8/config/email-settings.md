@@ -1,15 +1,14 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Campaign电子邮件渠道设置
 description: Campaign电子邮件渠道设置
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 3fd91879485a33961769c684acba8ca3c48bbbed
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '278'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
@@ -50,6 +49,6 @@ Adobe Campaign本身不管理已存档的文件。 它确实允许您将您选�
 
 [!DNL :arrow_upper_right:] [设置退回电子邮件地址](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#managing-bounce-emails)
 
-[!DNL :arrow_upper_right:] [使用电子邮件投放模板](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html)
+[!DNL :arrow_upper_right:] [使用电子邮件投放模板](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=zh-Hans)
 
 [!DNL :arrow_upper_right:] [了解投放失败](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html)

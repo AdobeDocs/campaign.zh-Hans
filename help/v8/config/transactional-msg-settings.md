@@ -1,19 +1,18 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Campaign事务型消息传递设置
 description: Campaign事务型消息传递设置
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# 事务型消息传递设置
+# 事务性消息设置
 
 [!DNL :speech_balloon:] 作为受管Cloud Services用户，请 [联系](../start/campaign-faq.md#support) Adobe，以在您的环境中安装和配置Campaign事务型消息传递。
 

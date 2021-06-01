@@ -1,5 +1,4 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Campaign架构快速入门
 description: Campaign架构快速入门
@@ -7,10 +6,10 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '631'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -49,7 +48,7 @@ Campaign可用的三种环境Cloud Service:
 
 ## 消息中心架构{#transac-msg-archi}
 
-事务型消息传递（消息中心）是用于管理触发器消息的Campaign模块。
+事务性消息（消息中心）是用于管理触发消息的 Campaign 模块。
 
 [!DNL :bulb:] 在此部分中了解如何发送事务 [型消息](../send/transactional.md)。
 

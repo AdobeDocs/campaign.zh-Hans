@@ -1,15 +1,14 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: 使用Adobe Campaign发送电子邮件
 description: Campaign中电子邮件入门
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '332'
-ht-degree: 2%
+ht-degree: 9%
 
 ---
 
@@ -32,7 +31,7 @@ ht-degree: 2%
 * 导入电子邮件内容
    [!DNL :arrow_upper_right:] [用例：创建用于加载投放内容的工作流](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/loading-delivery-content.html)
 * 创建和使用电子邮件模板
-   [!DNL :arrow_upper_right:] [了解有关电子邮件模板的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html)
+   [!DNL :arrow_upper_right:] [了解有关电子邮件模板的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=zh-Hans)
 * 选择电子邮件的受众
    [!DNL :arrow_upper_right:] [了解如何定义目标群体](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html)
 * 验证投放并发送校样

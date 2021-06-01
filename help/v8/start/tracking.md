@@ -1,5 +1,4 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: 跟踪和监控功能入门
 description: 跟踪和监控功能入门
@@ -7,10 +6,10 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d257550
-source-git-commit: ab7e458db5ad5696d144c17f6e89e4437a476d11
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '870'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
@@ -113,13 +112,13 @@ Web应用程序跟踪选择退出功能允许您停止跟踪选择退出行为�
 
 [!DNL :arrow_upper_right:] [在Campaign Classicv7文档中了解详情](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/reports-on-deliveries/indicator-calculation.html?lang=en#reporting)
 
-## 监控准则
+## 监测准则
 
 Adobe Campaign提供了一组功能来监控您的流程和环境。
 
 ### 监控投放
 
-监控投放发送后的投放是确保营销活动高效且能够与客户联系的关键步骤。
+在发送后监测投放是确保营销活动有效并接触到客户的重要步骤。
 
 [!DNL :arrow_upper_right:] 进一步了解在发送投放后可以监控的信息，了解投放失败和隔离在 [Campaign Classicv7文档中的管理方式](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=en#sending-messages)
 

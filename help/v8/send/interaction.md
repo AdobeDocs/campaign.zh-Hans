@@ -1,12 +1,11 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: 促销活动互动 — 选件管理
 description: 开始使用选件管理
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 1%
@@ -32,7 +31,8 @@ Campaign附带&#x200B;**Interaction**&#x200B;模块，让您能够在与给定�
 1. 创建用户配置文件。 [了解详情](interaction-operators.md)。
 1. （可选）为每个定向维度创建一个选件环境。 [了解详情](interaction-env.md)
 1. 为每个环境创建分类规则。 [了解详情](interaction-offer.md#offer-presentation)。
-1. 为每个环境创建选件空间并配置渲染功能。 [了解详情](interaction-offer-spaces.md)。如果空间由标识模式上的单一渠道定义，则必须为此空间指定高级参数。
+1. 为每个环境创建选件空间并配置渲染功能。 [了解详情](interaction-offer-spaces.md).
+如果空间由标识模式上的单一渠道定义，则必须为此空间指定高级参数。
 
 ### 创建并发布选件目录{#managing-the-offer-catalog-}
 

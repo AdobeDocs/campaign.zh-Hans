@@ -1,13 +1,12 @@
 ---
-keywords: Campaign Classic；主页；热门主题
-solution: Campaign v8
-description: Campaign v8帮助中心
-title: Adobe Campaign v8产品文档
+keywords: Campaign Classic;home;popular topics
+description: Campaign v8 帮助中心
+title: Adobe Campaign v8 产品文档
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 30b363ca9905c71f24a9b3db2404a301a5965eac
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '85'
-ht-degree: 17%
+ht-degree: 83%
 
 ---
 
@@ -19,13 +18,13 @@ ht-degree: 17%
 
 * **[什么是 [!DNL Adobe Campaign]](start/get-started.md)**  — 关键功能和用例
 
-* **[v8的新增功能](start/whats-new.md)** - Discover Campaign v8功能
+* **[v8 的新增功能](start/whats-new.md)** - 探索 Campaign v8 功能
 
-* **[实施指南](start/implement.md)**   — 了解如何开始实施
+* **[实施准则](start/implement.md)** - 了解如何开始实施
 
-* **[从v7到v8](start/capability-matrix.md)**  — 从Campaign Classicv7到v8?了解主要差异
+* **[从 v7 到 v8](start/capability-matrix.md)** - 从 Campaign Classic v7 到 v8？了解主要差异
 
-## 入门
+## 开始使用
 
 <table>
 <tr>
@@ -64,5 +63,5 @@ ht-degree: 17%
 * [已知问题和限制](start/known-limitations.md)
 * [架构](dev/architecture.md)
 * [测量和跟踪](start/reporting.md)
-* [与其他解决方案连接](connect/integration.md)
+* [与其他解决方案配合使用](connect/integration.md)
 * [Campaign v8常见问题解答](start/campaign-faq.md)

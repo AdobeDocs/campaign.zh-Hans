@@ -1,12 +1,11 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Campaign外部帐户
 description: Campaign外部帐户
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
+source-git-commit: ff2c49a2b4f22cde7ebb798d9f565e133c0268fc
 workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 4%

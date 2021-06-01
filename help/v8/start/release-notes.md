@@ -1,17 +1,16 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
-title: Campaign v8发行说明
-description: 最新Campaign v8版本
+title: Campaign v8 发行说明
+description: 最新 Campaign v8 版本
 feature: 概述
 role: Data Engineer
 level: Beginner
 hidefromtoc: true
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396e
-source-git-commit: a50a6cc28d9312910668205e528888fae5d0b1aa
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '13'
-ht-degree: 23%
+ht-degree: 100%
 
 ---
 

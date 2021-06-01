@@ -1,5 +1,4 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: 使用Campaign和Adobe Target
 description: 了解如何使用Campaign和Adobe Target
@@ -7,7 +6,7 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 1%
@@ -98,7 +97,7 @@ Adobe Campaign和Adobe Target需要采取以下步骤：
 
 1. 对于剩余的重定向选件，请按照相同的步骤操作。 有关详细信息，请参见此 [ 页面](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=en#experiences)。
 
-### 创建受众{#audiences-target}
+### 创建受众 {#audiences-target}
 
 在Adobe Target中，您需要创建两个受众，访问您选件的人员将被分类为要交付的不同内容。 对于每个受众，添加一个规则以定义谁将能够查看选件。
 

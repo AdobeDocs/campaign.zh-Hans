@@ -1,12 +1,11 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Campaign安全最佳实践
 description: Campaign安全最佳实践快速入门
-source-git-commit: 4ae0c968bd68d76d7ceffb91023d5426d6a810ea
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '499'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -41,7 +40,7 @@ ht-degree: 0%
 
 您必须确保经过身份验证的低权限用户无法访问加密密码。 要实现此目的，主要有两种方法：限制仅访问密码字段或访问整个实体。
 
-此限制允许您删除密码字段，但允许所有用户从界面访问外部帐户。 在[此页面](../dev/restrict-pi-view.md)中了解详情。
+此限制允许您删除密码字段，但允许所有用户从界面访问外部帐户。 请参阅[此页面](../dev/restrict-pi-view.md)以了解详情。
 
 1. 进入&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**。
 

@@ -1,5 +1,4 @@
 ---
-solution: Campaign v8
 product: Adobe Campaign
 title: Campaign自动化入门
 description: Campaign自动化入门
@@ -7,10 +6,10 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 8ede6bc1bc08a27e74dde6a427561c33f154a883
+source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
 workflow-type: tm+mt
 source-wordcount: '1187'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
@@ -99,7 +98,7 @@ ht-degree: 7%
    了解如何使用Campaign内容管理加载项自动创建和交付内容块。
 
 
-### 监控 {#monitoring}
+### 监测 {#monitoring}
 
 <img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
 

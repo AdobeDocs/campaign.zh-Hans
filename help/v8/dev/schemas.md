@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: 使用Campaign模式
 description: 模式入门
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1247'
 ht-degree: 5%
 
 ---
@@ -135,7 +135,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 ## 键 {#keys}
 
-每个表都必须至少具有一个键，并且通常使用将&#x200B;**@autouuid=true**&#x200B;属性设置为“true”，在架构的主元素中自动建立该键。
+每个表都必须至少具有一个键，并且通常使用设置为&#x200B;**true**&#x200B;的&#x200B;**@autouuid**&#x200B;和&#x200B;**autopk**&#x200B;属性，在架构的主元素中自动建立该键。
 
 也可以使用&#x200B;**internal**&#x200B;属性定义主键。
 

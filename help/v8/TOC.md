@@ -6,10 +6,10 @@ description: Campaign v8 文档
 breadcrumb-title: Campaign v8
 title: Campaign v8 文档
 hide: true
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 83%
+source-wordcount: '201'
+ht-degree: 81%
 
 ---
 
@@ -83,6 +83,7 @@ ht-degree: 83%
    + [数据模型](dev/datamodel.md)
    + 模式和表单{#shemas-forms}
       + [使用模式](dev/schemas.md)
+      + [密钥管理和唯一性](dev/keys.md)
       + [创建模式](dev/create-schema.md)
       + [扩展模式](dev/extend-schema.md)
       + [模式结构](dev/schema-structure.md)

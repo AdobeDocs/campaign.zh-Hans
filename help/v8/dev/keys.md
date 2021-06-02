@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: 'Campaign中的密钥管理 '
 description: 密钥管理入门
-source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
+source-git-commit: 08c1f2fbe79845fe54670e25ac4a63ab65517513
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Adobecampaign v8以Snowflake为核心数据库。 Snowflake数据库的分布式架构不提供管理表中密钥的唯一性的机制：最终用户负责确保Adobe Campaign数据库中密钥的一致性。
 
-要保持关系数据库的一致性，必须避免对键值（特别是对主键值）重复。 主键上的重复项会导致数据管理工作流活动（如查询、协调、更新等）出现问题。
+要保持关系数据库的一致性，必须避免对键值（特别是对主键值）重复。 主键上的重复项会导致数据管理工作流活动出现问题，例如&#x200B;**Query**、**Reconciliation**、**Update data**&#x200B;等。
 
-Adobe Campaign提供了功能强大的数据管理工具来协调数据，确保根据数据库中的存在（协调）插入或更新数据，并在摄取数据（重复数据删除）之前删除重复项。 作为最佳实践，如果将重复的键加载到数据库中，则Adobe建议在整个数据管理流程中采用[检测](#detect-duplicates)和[更正](#correct-duplicates)策略。
+Adobe Campaign提供了功能强大的数据管理工具来协调数据，确保根据数据库(**Reconciliation**)中的存在情况插入或更新数据，并在摄取数据(**Deduplication**)之前删除重复项。 作为最佳实践，如果将重复的键加载到数据库中，则Adobe建议在整个数据管理流程中采用[检测](#detect-duplicates)和[更正](#correct-duplicates)策略。
 
 ## 检测重复项{#detect-duplicates}
 
@@ -81,4 +81,4 @@ and urecipientid = 'c04d93f2-6012-4668-b523-88db1262cd46';
 
 ![](assets/sql-data-management.png)
 
-在使用新的UUID更新选定的行后，您可以从界面中检查已更新的行，并注意到UUID已按预期进行更新。 您还可以通过运行“检测重复项”工作流[在数据库中检测重复项，如下所述：](#detect-duplicates)。
+在使用新的UUID更新选定的行后，您可以从界面中检查已更新的行，并注意到UUID已按预期进行更新。 您还可以通过运行&#x200B;**检测重复项**&#x200B;工作流[来检测数据库中的重复项，如下所述](#detect-duplicates)。

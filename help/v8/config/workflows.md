@@ -6,7 +6,7 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
 workflow-type: tm+mt
 source-wordcount: '1187'
 ht-degree: 9%
@@ -30,7 +30,7 @@ ht-degree: 9%
 
 使用Adobe Campaign工作流可提高营销活动各个方面（从创建区段和准备消息到交付）的速度和规模。
 
-了解如何在这些[端到端用例](#end-to-end-uc)中设计工作流。
+了解如何在这些[端到端用例中设计工作流](#end-to-end-uc)。
 
 在Campaign Classicv7文档中了解有关工作流用户界面和执行的更多信息：
 

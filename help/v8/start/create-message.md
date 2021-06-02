@@ -6,10 +6,10 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 41ea85bc3c616ed7cdd0718ff3368aab971a5352
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 72%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -41,11 +41,11 @@ Adobe Campaign v8 附带以下投放渠道：
 
 * 手动将消息发送到主目标
    [!DNL :arrow_upper_right:] [了解如何发送消息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html?lang=zh-Hans)
-* 发送与[营销活动](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=zh-Hans)关联的消息
+* 发送与[营销活动](campaigns.md)关联的消息
    [!DNL :arrow_upper_right:] [了解如何在活动上下文中发送消息](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=zh-Hans)。
-* 通过[workflow](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=zh-Hans)发送消息
+* 通过[workflow](../config/workflows.md)发送消息
    [!DNL :arrow_upper_right:] [了解如何自动发送电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/delivery.html?lang=zh-Hans)
-* [触发](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/about-transactional-messaging.html?lang=zh-Hans) 来自事件的消息
+* [触发](../send/transactional.md) 来自事件的消息
    [!DNL :arrow_upper_right:] [用例：了解如何发送带有附件的事务型电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html?lang=zh-Hans)
 * 计划消息发送
    [!DNL :arrow_upper_right:] [用例：了解如何安排和发送生日电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/sending-a-birthday-email.html?lang=zh-Hans)

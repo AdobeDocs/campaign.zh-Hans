@@ -6,10 +6,10 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 57%
+source-wordcount: '800'
+ht-degree: 44%
 
 ---
 
@@ -62,7 +62,12 @@ ht-degree: 57%
 
 Campaign v8 对象现在使用&#x200B;**通用唯一标识符 (UUID)**，允许使用无限的唯一值来标识数据。
 
-请注意，此ID基于字符串，而不是连续的。
+请注意，此ID基于字符串，而不是连续的。 主键不是Campaign v8中的数字值，您需要在架构中使用&#x200B;**autouuid**&#x200B;和&#x200B;**autopk**&#x200B;属性。
+
+在Campaign Classicv7及更早版本中，架构（即表）中键的唯一性在数据库引擎的级别处理。 更一般地， PostgreSQL、Oracle或SQL Server等经典数据库引擎包括本机机制，以防止通过主键和/或唯一索引根据列或一组列插入重复的行。 在数据库级别设置正确的索引和主键后，这些版本中不存在重复的ID。
+
+Adobecampaign v8以Snowflake为核心数据库。 随着查询规模的显着增加，Snowflake数据库的分布式架构不提供这样的机制来管理然后强制表中某个密钥的唯一性。 因此，使用Adobe Campaign v8时，没有任何内容会阻止在表中摄取重复的键。 最终用户现在负责确保Adobe Campaign数据库中密钥的一致性。 [了解详情](../dev/keys.md)。
+
 
 ### 简化的维护
 

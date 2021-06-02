@@ -6,10 +6,10 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 hidefromtoc: true
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 08c1f2fbe79845fe54670e25ac4a63ab65517513
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 1%
+source-wordcount: '162'
+ht-degree: 3%
 
 ---
 
@@ -25,6 +25,6 @@ ht-degree: 1%
 * 此部分](capability-matrix.md#gs-unavailable-features)中列出的[功能在当前Campaign v8内部版本中不可用
 * 用户界面中仍显示某些不可用或已删除的功能
 * 订阅（选择加入）和退订（选择退出）机制，以及移动设备注册是异步流程。 请求每小时通过特定的技术工作流进行处理。 [了解详情](../config/replication.md#tech-wf)
-* ID管理 — 重复 — 用于确认+详细信息
+* 重复项需要由最终用户手动处理。 [了解详情](../dev/keys.md)
 * 行 — 确认+详细信息
 * 延迟 — 确认+详细信息

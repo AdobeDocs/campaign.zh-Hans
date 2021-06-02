@@ -5,9 +5,9 @@ description: Campaign中电子邮件入门
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: d1e96b1311d9de24ceb918230186cd3cad609ab2
+source-git-commit: 5762e58aafb11932d0e28d87df84704974c09564
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '790'
 ht-degree: 4%
 
 ---
@@ -77,7 +77,7 @@ ht-degree: 4%
 
    * 集成指向Web应用程序的链接
 
-      使用数字内容编辑器，您可以从Adobe Campaign控制台中集成指向Web应用程序的链接，如登陆页面或表单页面。 有关更多信息，请参阅[链接到Web应用程序](../../web/using/editing-content.md#link-to-a-web-application)。
+      使用数字内容编辑器，您可以从Adobe Campaign控制台中集成指向Web应用程序的链接，如登陆页面或表单页面。
 
       为指向Web应用程序的链接选择文本字段，然后单击第一个图标。 选择&#x200B;**[!UICONTROL Link to a Web application]**，然后单击&#x200B;**Web Application**&#x200B;字段末尾的图标以选择所需的应用程序。
 

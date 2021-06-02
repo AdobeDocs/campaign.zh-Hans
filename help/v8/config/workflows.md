@@ -1,15 +1,15 @@
 ---
 product: Adobe Campaign
-title: Campaign自动化入门
-description: Campaign自动化入门
+title: 使用Adobe Campaign工作流管理和自动化各个流程
+description: 工作流入门
 feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
+source-git-commit: 41ea85bc3c616ed7cdd0718ff3368aab971a5352
 workflow-type: tm+mt
-source-wordcount: '1187'
-ht-degree: 9%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

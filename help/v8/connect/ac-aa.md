@@ -1,14 +1,14 @@
 ---
 product: Adobe Campaign
 title: 使用Campaign和Adobe Analytics
-description: 了解如何使用Campaign和Adobe Analytics
+description: 了解如何集成Campaign和Analytics
 feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 7bb480eb69aa92e8876acaf2322e532dbb2f1f96
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1096'
 ht-degree: 0%
 
 ---
@@ -19,22 +19,15 @@ ht-degree: 0%
 
 此集成允许Adobe Campaign和Adobe Analytics通过&#x200B;**Web Analytics连接器**&#x200B;附加组件进行交互。 此集成会将Adobe Campaign提供的电子邮件促销活动的指标和属性发送到Adobe Analytics。
 
+[!DNL :speech_balloon:] 作为受管Cloud Services用户，请 [联系](../start/campaign-faq.md#support) Adobe以将Campaign与Adobe Experience Cloud服务和解决方案连接起来。AdobeIdentity Management服务(IMS)必须为您的实例实施。 [了解详情](../start/connect.md#connect-ims)。必须通过专用包在您的环境中安装Web Analytics连接器加载项。
+
 使用Adobe Analytics Connector，Adobe Campaign可以测量Internet受众(Web Analytics)。 Web分析工具使Adobe Campaign能够将指标和促销活动属性转发到Analytics。
 
 每个工具的操作周长如下所示：
 
-* **Adobe Analytics**
+* **Adobe** Analytics标记通过Adobe Campaign启动的电子邮件促销活动
 
-   * 标记通过Adobe Campaign启动的电子邮件促销活动
-   * 以区段形式保存收件人在点击促销活动电子邮件后浏览的网站上的行为。 区段与放弃的产品（已查看但未添加到购物车或已购买）、购买或购物车放弃相关。
-
-* **Adobe Campaign**
-
-   * 将指示器和营销活动属性发送到连接器，连接器又将它们转发到Web分析工具
-   * 恢复和分析区段
-   * 触发再营销活动
-
-[!DNL :speech_balloon:]  作为受管Cloud Services用户，请 [联系](../start/campaign-faq.md#support) Adobe以将Adobe Analytics Connector与Campaign集成。必须通过专用包在您的环境中安装Web Analytics连接器加载项。
+* **Adobe** 营销活动将指示器和营销活动属性发送到连接器，然后连接器将指示器和营销活动属性转发到Web分析工具
 
 
 >[!CAUTION]
@@ -47,7 +40,7 @@ ht-degree: 0%
 1. [配置转化变量和成功事件](#configure-conversion-success)
 1. [在Adobe Campaign中配置外部帐户](#external-account-ac)
 
-## 在Adobe Analytics中创建报表包{#report-suite-analytics}
+## 创建Analytics报表包{#report-suite-analytics}
 
 要在[!DNL Adobe Analytics]中创建&#x200B;**[!UICONTROL Report suite]**，请执行以下步骤：
 
@@ -122,7 +115,7 @@ ht-degree: 0%
 
 配置报表包后，您需要在Adobe Campaign中配置&#x200B;**[!UICONTROL External accounts]**。
 
-## 在Adobe Campaign中配置外部帐户{#external-account-ac}
+## 配置Campaign外部帐户{#external-account-ac}
 
 现在，您需要在Adobe Campaign中配置&#x200B;**[!UICONTROL Web Analytics]**&#x200B;外部帐户，以启用两个解决方案之间的同步。
 
@@ -192,7 +185,7 @@ ht-degree: 0%
 >
 >如果您使用多个受众测量工具，则在创建外部帐户时，可以在&#x200B;**[!UICONTROL Partners]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Other]**。 您只能在投放属性中引用一个外部帐户：因此，您需要通过添加Adobe预期的参数以及使用的所有其他测量工具来调整跟踪URL的公式。
 
-## Web分析流程的技术工作流{#technical-workflows-of-web-analytics-processes}
+## Web分析流程的技术工作流程{#technical-workflows-of-web-analytics-processes}
 
 Adobe Campaign和Adobe Analytics之间的数据交换由作为后台任务运行的技术工作流处理。
 
@@ -232,7 +225,7 @@ Adobe Campaign和Adobe Analytics之间的数据交换由作为后台任务运行
 * **[!UICONTROL Tag 3]** (webAnalytics/@tag3)
 * **[!UICONTROL Contact date]** (计划/@contactDate)
 
-## 在Adobe Campaign中跟踪投放{#tracking-deliveries-in-adobe-campaign}
+## 跟踪投放{#tracking-deliveries-in-adobe-campaign}
 
 为了让Adobe Experience Cloud能够在Adobe Campaign发送投放后跟踪站点上的活动，您需要在投放属性中引用匹配的连接器。 要执行此操作，请应用以下步骤：
 
@@ -246,46 +239,6 @@ Adobe Campaign和Adobe Analytics之间的数据交换由作为后台任务运行
    ![](assets/webanalytics_delivery_properties_002.png)
 
 1. 您现在可以发送投放内容，并在Adobe Analytics中访问其报表。
-
-## 创建再营销活动{#creating-a-re-marketing-campaign}
-
-要准备再营销活动，只需创建用于再营销类型营销活动的投放模板即可。 然后，配置再营销活动并将其链接到区段。 每个区段必须具有不同的再营销活动。
-
-在Adobe Campaign完成恢复区段后，将自动启动再营销活动，以分析初始营销活动所定向人员的行为。 如果放弃购买或查看产品而未进行购买，则会向相关收件人发送投放内容，以便其浏览网站以结束购买。
-
-Adobe Campaign提供个性化投放模板，您可以使用这些模板或将您自己的数据库设置在上以准备营销活动。
-
-1. 从&#x200B;**[!UICONTROL Explorer]**&#x200B;中，转到Adobe Campaign树的&#x200B;**[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**&#x200B;文件夹。
-
-1. 复制&#x200B;**[!UICONTROL Email delivery (re-marketing)]**&#x200B;模板或Adobe Campaign提供的再营销模板示例。
-
-   ![](assets/webanalytics_delivery_model.png)
-
-1. 根据您的需求对模板进行个性化并进行保存。
-
-1. 创建新营销活动，并从下拉列表中选择&#x200B;**[!UICONTROL Re-marketing campaign]**&#x200B;模板。
-
-   ![](assets/webanalytics_remarketing_campaign_002.png)
-
-1. 单击&#x200B;**[!UICONTROL Configure...]**&#x200B;链接以指定链接到该营销活动的客户群和投放模板。
-
-1. 选择之前配置的外部帐户。
-
-   ![](assets/webanalytics_remarketing_campaign_003.png)
-
-1. 选择相关区段。
-
-   ![](assets/webanalytics_remarketing_campaign_005.png)
-
-1. 选择要用于此再营销活动的投放模板，然后单击&#x200B;**[!UICONTROL Finish]**&#x200B;以关闭窗口。
-
-   ![](assets/webanalytics_remarketing_campaign_006.png)
-
-1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以关闭营销活动窗口。
-
-可通过全局报告页面访问&#x200B;**[!UICONTROL Re-marketing efficiency]**&#x200B;报告。 它允许您查看与Adobe Campaign再营销活动后放弃购物车的次数相关的已转换联系人数（即已购买商品）。 转化率是按周、月或自Adobe Campaign与Web分析工具开始同步后计算的。
-
-![](assets/webanalytics_reporting.png)
 
 
 **相关主题**

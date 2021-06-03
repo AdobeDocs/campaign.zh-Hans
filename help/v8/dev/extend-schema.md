@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: 扩展Campaign模式
 description: 了解如何扩展Campaign模式
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '254'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 >[!CAUTION]
 >不得直接修改内置架构。 如果您需要调整内置架构，则必须扩展该架构。
 
-[!DNL :bulb:] 要更好地了解Campaign内置表及其交互，请参阅 [此页面](datamodel.md)。
+[!DNL :bulb:] 要更好地了解Campaign内置表及其交互，请参阅 [此页面](datamodel.md)。另请参阅在[此页面](create-schema.md)中创建新架构时的建议。
 
 要扩展架构，请执行以下步骤：
 
@@ -43,7 +43,7 @@ ht-degree: 2%
 
    ![](assets/extend-schema-edit.png)
 
-   在以下示例中，我们添加了MembershipYear属性，为姓氏设置了长度限制（此限制将覆盖默认姓氏），并从内置架构中删除出生日期。
+   在以下示例中，我们添加了&#x200B;**MembershipYear**&#x200B;属性，为姓氏设置长度限制（此限制将覆盖默认姓氏），并从内置架构中删除出生日期。
 
    ![](assets/extend-schema-sample.png)
 

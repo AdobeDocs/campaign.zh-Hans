@@ -5,7 +5,7 @@ description: 创建选件管理运算符
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 1%
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 ![](assets/offer_environments_overview_002.png)
 
-投放管理器只能查看&#x200B;**[!UICONTROL Live]**&#x200B;环境并利用选件进行投放。 选件管理器可以查看和使用&#x200B;**[!UICONTROL Design]**&#x200B;环境，并查看&#x200B;**[!UICONTROL Live]**&#x200B;环境。 [了解详情](interaction-operators.md)。
+投放管理器只能查看&#x200B;**[!UICONTROL Live]**&#x200B;环境并利用选件进行投放。 选件管理器可以查看和使用&#x200B;**[!UICONTROL Design]**&#x200B;环境，并查看&#x200B;**[!UICONTROL Live]**&#x200B;环境。 [了解详情](interaction-operators.md)
 
 ## 创建选件环境{#creating-an-offer-environment}
 

@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: 数据模型最佳实践
 description: 了解Campaign数据模型扩展最佳实践
-source-git-commit: 726e8d3ba00481237af2765e2f339d755f4e6a01
+source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
 workflow-type: tm+mt
-source-wordcount: '2681'
+source-wordcount: '2683'
 ht-degree: 4%
 
 ---
@@ -93,7 +93,7 @@ Adobe Campaign资源具有三个标识符，并且可以添加其他标识符。
 | 名称（或内部名称） | <ul><li>此信息是表中记录的唯一标识符。 此值可手动更新，通常使用生成的名称。</li><li>此标识符在部署到其他Adobe Campaign实例时会保留其值，它不应为空。</li></ul> | <ul><li>如果要将Adobe Campaign生成的对象从环境部署到另一个环境，请重命名该记录名称。</li><li>当对象具有命名空间属性（例如&#x200B;*schema*）时，此通用命名空间将用于所有创建的自定义对象。 不应使用某些保留的命名空间：*nms*、*xtk*&#x200B;等。  请注意，某些命名空间仅是内部命名空间。 [了解详情](schemas.md#reserved-namespaces)。</li><li>当对象没有任何命名空间（例如&#x200B;*workflow*&#x200B;或&#x200B;*delivery*）时，将添加此命名空间概念作为内部名称对象的前缀：*namespaceMyObjectName*。</li><li>请勿使用特殊字符，如空格“”、半列“：”或连字符“ — ”。 所有这些字符都将替换为下划线“_”（允许的字符）。 例如，“abc-def”和“abc:def”将存储为“abc_def”并相互覆盖。</li></ul> |
 | 标签 | <ul><li>标签是Adobe Campaign中对象或记录的业务标识符。</li><li>此对象允许使用空格和特殊字符。</li><li>它不保证记录的唯一性。</li></ul> | <ul><li>建议确定对象标签的结构。</li><li>这是用于为Adobe Campaign用户标识记录或对象的最易用的解决方案。</li></ul> |
 
-Adobe Campaign主键是为所有内置表自动生成的UUID。 UUID也可用于自定义表。
+Adobe Campaign主键是为所有内置表自动生成的UUID。 UUID也可用于自定义表。 [了解详情](keys.md)
 
 即使ID数量是无限的，您也应该考虑数据库的大小，以确保获得最佳性能。 要防止出现任何问题，请确保调整实例清除设置。 有关更多信息，请参阅[此章节](#data-retention)。
 

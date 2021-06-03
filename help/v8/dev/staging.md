@@ -5,7 +5,7 @@ description: Campaign API暂存机制
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 * 数据架构结构会复制到本地暂存表中
 * 专门用于数据摄取的新API会直接流入本地测试表。 [了解详情](new-apis.md)
-* 计划工作流每小时触发一次，并将数据同步回云数据库。 [了解详情](../config/replication.md)。
+* 计划工作流每小时触发一次，并将数据同步回云数据库。 [了解详情](../config/replication.md)
 
 默认情况下，会暂存一些内置架构，例如nmsSubscriptionRcp、nmsAppSubscriptionRcp、nmsRecipient。
 

@@ -6,7 +6,7 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 7bb480eb69aa92e8876acaf2322e532dbb2f1f96
+source-git-commit: a7309c9ec735f958f038c6ea4e702c99c726f8bd
 workflow-type: tm+mt
 source-wordcount: '1096'
 ht-degree: 0%
@@ -135,10 +135,13 @@ ht-degree: 0%
 
 1. 从&#x200B;**[!UICONTROL Configure Analytics integration]**&#x200B;窗口中，将外部帐户映射到之前创建的报表包，其中提供以下信息：
 
+   ![](assets/analytics_connector_0.png)
+
    * **[!UICONTROL E-Mail]**
    * **[!UICONTROL IMS Org]**
    * **[!UICONTROL Analytics Company]**
    * **[!UICONTROL Report Suite]**
+
 
 1. 从&#x200B;**[!UICONTROL eVars]**&#x200B;类别中，映射在[!DNL Adobe Analytics]中配置的两个&#x200B;**[!UICONTROL Conversion variables]**。
 

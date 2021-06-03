@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: 数据模型最佳实践
 description: 了解Campaign数据模型扩展最佳实践
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 726e8d3ba00481237af2765e2f339d755f4e6a01
 workflow-type: tm+mt
 source-wordcount: '2681'
 ht-degree: 4%
@@ -66,7 +66,6 @@ Adobe Campaign是一款功能强大的跨渠道活动管理系统，可帮助您
 ### 字段{#choice-of-fields}的选择
 
 如果字段具有定位或个性化目的，则需要将其存储在表中。 换言之，如果某个字段未用于发送个性化电子邮件或用作查询中的标准，则将不必占用磁盘空间。
-
 
 ### 键的选择{#choice-of-keys}
 

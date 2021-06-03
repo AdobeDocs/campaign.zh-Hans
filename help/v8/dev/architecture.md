@@ -6,9 +6,9 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 973e04eb25887f63564b416515c6e229ed5233a4
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '626'
 ht-degree: 2%
 
 ---
@@ -68,7 +68,7 @@ Campaign可用的三种环境Cloud Service:
 
 ![](assets/messagecenter_diagram.png)
 
-[!DNL :arrow_upper_right:] Campaign Classicv7文档中介绍了 [消息中心架构](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/transactional-messaging-architecture.html?lang=en#transactional-messaging)
+[!DNL :arrow_upper_right:] Campaign Classicv7文档中介绍了 [消息中心架构](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture.html)
 
 ### 身份验证
 
@@ -81,4 +81,4 @@ Campaign可用的三种环境Cloud Service:
 * 多个执行实例
 在负载平衡器后面具有多个执行实例的多单元执行架构中，外部应用程序调用的登录方法将通过负载平衡器：因此，无法使用基于令牌的身份验证。 需要基于用户/密码的身份验证。
 
-[!DNL :arrow_upper_right:] 在Campaign Classicv7文档中了解有关事务性消息 [传递事件的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/introduction/event-description.html?lang=en#about-transactional-messaging-datamodel)
+[!DNL :arrow_upper_right:] 在Campaign Classicv7文档中了解有关事务性消息 [传递事件的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html#about-transactional-messaging-datamodel)

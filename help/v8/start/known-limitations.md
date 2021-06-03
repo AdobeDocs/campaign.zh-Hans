@@ -6,9 +6,9 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 hidefromtoc: true
-source-git-commit: 38ea3e82fca6299b067d6843424d4ccb92213d00
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '154'
 ht-degree: 3%
 
 ---
@@ -26,4 +26,3 @@ ht-degree: 3%
 * 用户界面中仍显示某些不可用或已删除的功能
 * 订阅（选择加入）和退订（选择退出）机制，以及移动设备注册是异步流程。 请求每小时通过特定的技术工作流进行处理。 [了解详情](../config/replication.md#tech-wf)
 * 重复项需要由最终用户手动处理。 [了解详情](../dev/keys.md)
-* 延迟 — 确认+详细信息

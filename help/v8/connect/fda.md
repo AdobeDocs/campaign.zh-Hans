@@ -5,7 +5,7 @@ description: 了解如何使用Campaign和外部数据库
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 3%
@@ -54,7 +54,7 @@ ht-degree: 3%
 要使用FDA设置对外部数据库的访问，配置步骤如下：
 
 1. 作为Adobe Managed Services用户，请联系Adobe以在Campaign实例上安装驱动程序。
-1. 安装驱动程序后，在Adobe Campaign服务器上设置与数据库对应的外部帐户并测试外部帐户。 [了解详情](#fda-external-account)。
+1. 安装驱动程序后，在Adobe Campaign服务器上设置与数据库对应的外部帐户并测试外部帐户。 [了解详情](#fda-external-account)
 1. 在Adobe Campaign中创建外部数据库的模式。 这允许您标识外部数据库的数据结构。 [了解详情](#create-data-schema)
 1. 如果需要，从之前创建的架构创建新的目标映射。 如果投放的收件人来自外部数据库，则需要此参数。 此实施具有与消息个性化相关的限制。 [了解详情](#define-data-mapping)
 

@@ -5,10 +5,10 @@ description: 事务型消息传递入门
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 41ea85bc3c616ed7cdd0718ff3368aab971a5352
+source-git-commit: 726e8d3ba00481237af2765e2f339d755f4e6a01
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1477'
+ht-degree: 1%
 
 ---
 
@@ -219,7 +219,7 @@ ht-degree: 0%
 
 要取消发布事务型消息模板，请执行以下步骤。
 
-1. 在控制实例中，转到树的&#x200B;**[!UICONTROL Message Center > Transactional message templates]**&#x200B;文件夹。
+1. 在控制实例上，浏览到&#x200B;**[!UICONTROL Message Center > Transactional message templates]**&#x200B;文件夹。
 1. 选择要取消发布的模板。
 1. 单击 **[!UICONTROL Unpublish]**。
 1. 单击 **[!UICONTROL Start]**。

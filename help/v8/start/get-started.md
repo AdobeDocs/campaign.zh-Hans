@@ -6,7 +6,7 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 0e99b836dc035c0076f6771b5b430dfd1bd8edaf
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 78%
@@ -78,7 +78,7 @@ Adobe Campaign 可逐步丰富客户数据和用户档案，从而让您监测�
 
 ## 关于 Campaign 功能{#core-capabilities-and-add-ons}的更多信息
 
-根据您的需求和架构，Adobe Campaign 提供了一系列功能，帮助您实施和优化各种对话式营销功能。其中有些是核心功能，有些功能取决于软件包的安装和您的配置。此处提供了详细的产品说明：[Adobe Campaign v8 产品说明](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-classic---product-description.html)。
+根据您的需求和架构，Adobe Campaign 提供了一系列功能，帮助您实施和优化各种对话式营销功能。其中有些是核心功能，有些功能取决于软件包的安装和您的配置。此处提供了详细的产品说明：[Adobe Campaign v8 产品说明](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)。
 
 [!DNL :bulb:] 已经熟悉Campaign Classic?在[此页面](capability-matrix.md)中了解 Campaign Classic 和 Campaign v8 之间的主要差异。
 

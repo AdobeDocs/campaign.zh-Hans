@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: 在Campaign中创建新架构
 description: 了解如何在Campaign中创建新模式
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '408'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->内置数据架构只能由Adobe Campaign Classic控制台的管理员删除。
+>内置数据架构只能由Adobe Campaign控制台的管理员删除。
 
 ![](assets/schema_navtree.png)
 
@@ -60,7 +60,9 @@ ht-degree: 2%
 
    ![](assets/create_new_content.png)
 
-1. 定义合同表的设置：
+1. 为合同表定义设置。
+
+   最佳做法是，通过添加`dataSource="nms:extAccount:ffda"`属性在云数据库中创建表。 默认情况下，在创建新表时会添加此属性。
 
    ```
    <srcSchema created="YYYY-MM-DD HH:MM:SS.TZ" desc="Active contracts" img="crm:crm/mscrm/mscrm_account_16x16.png"

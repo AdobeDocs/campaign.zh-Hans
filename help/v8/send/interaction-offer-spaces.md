@@ -5,9 +5,9 @@ description: 了解如何创建优惠空间
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '611'
 ht-degree: 3%
 
 ---
@@ -54,7 +54,7 @@ HTML渲染是通过渲染函数创建的。 呈现函数中定义的字段序列
 
    这些函数用于在选件空间上生成选件表示形式。 有多种可能的格式：HTML或文本。
 
-   **注意**  - XML格式仅限于集客交互，这些交互暂时不可用。[了解详情](../start/capability-matrix.md#gs-unavailable-features)
+   **注意**  - XML格式仅限于集客交互，而在此版本的产品中，这些交互不可用。[了解详情](../start/capability-matrix.md#gs-unavailable-features)
 
    ![](assets/offer_space_create_006.png)_
 

@@ -5,7 +5,7 @@ description: 了解如何创建优惠目录
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '1276'
 ht-degree: 2%
@@ -40,11 +40,11 @@ ht-degree: 2%
 
    ![](assets/offer_delivery_005.png)
 
-1. 根据需要选择&#x200B;**[!UICONTROL Exclude non-eligible recipients]**&#x200B;选项。 [了解详情](#parameters-for-calling-offer-engine)。
+1. 根据需要选择&#x200B;**[!UICONTROL Exclude non-eligible recipients]**&#x200B;选项。 [了解详情](#parameters-for-calling-offer-engine)
 
    ![](assets/offer_delivery_006.png)
 
-1. 如果需要，请选择&#x200B;**[!UICONTROL Do not display anything if no offers are selected]**&#x200B;选项。 [了解详情](#parameters-for-calling-offer-engine)。
+1. 如果需要，请选择&#x200B;**[!UICONTROL Do not display anything if no offers are selected]**&#x200B;选项。 [了解详情](#parameters-for-calling-offer-engine)
 
    ![](assets/offer_delivery_007.png)
 
@@ -110,7 +110,7 @@ ht-degree: 2%
 
       ![](assets/int_enrichment_offer4.png)
 
-1. 然后，配置与您选择的渠道对应的投放活动。 [了解详情](#offer-into-a-delivery)。
+1. 然后，配置与您选择的渠道对应的投放活动。 [了解详情](#offer-into-a-delivery)
 
    >[!NOTE]
    >
@@ -132,7 +132,7 @@ ht-degree: 2%
 
    ![](assets/int_enrichment_link2.png)
 
-1. 然后，配置与您选择的渠道对应的投放活动。 [了解详情](#offer-into-a-delivery)。
+1. 然后，配置与您选择的渠道对应的投放活动。 [了解详情](#offer-into-a-delivery)
 
    >[!NOTE]
    >
@@ -148,7 +148,7 @@ ht-degree: 2%
 
 但是，您可以按如下方式存储此信息：
 
-1. 在扩充活动中创建对选件引擎的调用，该活动放在查询之后和投放活动之前。 [了解详情](#specifying-an-offer-or-a-call-to-the-offer-engine)。
+1. 在扩充活动中创建对选件引擎的调用，该活动放在查询之后和投放活动之前。 [了解详情](#specifying-an-offer-or-a-call-to-the-offer-engine)
 1. 在活动的主窗口中，选择&#x200B;**[!UICONTROL Edit additional data...]**。
 
    ![](assets/ita_enrichment_rankweight_1.png)
@@ -182,7 +182,7 @@ ht-degree: 2%
 
    ![](assets/int_offerengine_activity1.png)
 
-1. 然后，配置与您选择的渠道对应的投放活动。 [了解详情](#inserting-an-offer-proposition-into-a-delivery)。
+1. 然后，配置与您选择的渠道对应的投放活动。 [了解详情](#inserting-an-offer-proposition-into-a-delivery)
 
 ### 单元格优惠 {#offers-by-cell}
 

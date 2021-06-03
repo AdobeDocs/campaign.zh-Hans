@@ -2,9 +2,9 @@
 product: Adobe Campaign
 title: 'Campaign中的密钥管理 '
 description: 密钥管理入门
-source-git-commit: 9a1c44f74f6558f0397617353f3e78186fb15717
+source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '676'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,10 @@ Adobecampaign v8以Snowflake为核心数据库。 Snowflake数据库的分布式
 ## 检测重复项{#detect-duplicates}
 
 Campaign提供了新护栏，用于在投放准备期间自动从受众中删除任何重复的UUID。 此新机制可防止在准备投放时发生任何错误。
+
+>[!CAUTION]
+>
+>重复的键不限于UUID。 在中，可能会发生这种情况，包括在自定义表中创建的自定义键。
 
 作为最终用户，您可以在投放日志中查看以下信息：由于重复的键值，某些收件人可能会从主目标中排除。 在这种情况下，将显示以下警告：`Exclusion of duplicates (based on the primary key or targeted records)`。
 

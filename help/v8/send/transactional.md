@@ -5,7 +5,7 @@ description: 事务型消息传递入门
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 726e8d3ba00481237af2765e2f339d755f4e6a01
+source-git-commit: 973e04eb25887f63564b416515c6e229ed5233a4
 workflow-type: tm+mt
 source-wordcount: '1477'
 ht-degree: 1%
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 每个事件都可触发个性化消息。 要实现此目的，您需要创建一个消息模板以匹配每个事件类型。 模板包含个性化事务型消息的必需信息。 您还可以使用模板来测试消息预览，并在将消息投放到最终目标之前使用种子地址发送校样。
 
-## 创建模板
+### 创建模板
 
 要创建消息模板，请执行以下步骤：
 
@@ -54,7 +54,7 @@ ht-degree: 1%
 
    ![](assets/messagecenter_create_model_003.png)
 
-   必须在控制实例中通过Adobe创建要由Adobe Campaign处理的事件类型。
+   必须在控制实例上通过Adobe创建要由Adobe Campaign处理的事件类型。
 
    >[!NOTE]
    >
@@ -62,7 +62,7 @@ ht-degree: 1%
 
 1. 输入性质和描述，然后单击&#x200B;**[!UICONTROL Continue]**&#x200B;以创建消息正文。 请参阅[创建消息内容](#create-message-content)。
 
-## 创建内容{#create-message-content}
+### 创建内容{#create-message-content}
 
 事务型消息内容的定义与Adobe Campaign中所有投放的定义相同。 例如，对于电子邮件投放，您可以创建HTML或文本格式的内容、添加附件或个性化投放对象。 如需详细信息，请参阅[此部分](../start/create-message.md)。
 
@@ -92,7 +92,7 @@ ht-degree: 1%
 
    ![](assets/messagecenter_create_custo_2.png)
 
-## 添加种子地址{#add-seeds}
+### 添加种子地址{#add-seeds}
 
 种子地址允许您在发送消息之前显示消息预览、发送校样并测试消息个性化。 种子地址已链接到投放，无法用于其他投放。
 
@@ -118,7 +118,7 @@ ht-degree: 1%
 
 创建地址后，即可访问其预览和个性化。
 
-## 添加个性化数据{#personalization-data}
+### 添加个性化数据{#personalization-data}
 
 您可以在消息模板中添加数据以测试事务型消息的个性化。 这将允许您生成预览或发送校样。 如果安装&#x200B;**可投放性**&#x200B;模块，则此数据可显示各种桌面、Web或移动设备客户端的消息渲染。
 
@@ -133,7 +133,7 @@ ht-degree: 1%
 
    ![](assets/messagecenter_create_custo_3.png)
 
-## 预览事务型消息{#transactional-message-preview}
+### 预览事务型消息{#transactional-message-preview}
 
 创建一个或多个种子地址和消息正文后，即可预览消息并检查其个性化。
 
@@ -145,7 +145,7 @@ ht-degree: 1%
 
    ![](assets/messagecenter_create_seed_7.png)
 
-## 发送验证
+### 发送验证
 
 您可以通过向之前创建的种子地址发送校样来测试消息投放。
 

@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: 扩展Campaign模式
 description: 了解如何扩展Campaign模式
-source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 2%
@@ -35,7 +35,7 @@ ht-degree: 2%
 
    ![](assets/extend-schema-select.png)
 
-   按照惯例，将扩展架构命名为与内置架构相同的架构，并使用自定义命名空间。  请注意，某些命名空间仅是内部命名空间。 [了解详情](schemas.md#reserved-namespaces)。
+   按照惯例，将扩展架构命名为与内置架构相同的架构，并使用自定义命名空间。  请注意，某些命名空间仅是内部命名空间。 [了解详情](schemas.md#reserved-namespaces)
 
    ![](assets/extend-schema-validate.png)
 

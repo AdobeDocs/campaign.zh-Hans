@@ -5,7 +5,7 @@ description: Campaign中推送通知入门
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 1%
@@ -54,4 +54,4 @@ Campaign SDK可帮助您将移动应用程序集成到Adobe Campaign平台。
 
 >[!CAUTION]
 >
->现在，使用Campaign v8进行移动注册的方式为&#x200B;**异步**。 [了解详情](../dev/staging.md)。
+>现在，使用Campaign v8进行移动注册的方式为&#x200B;**异步**。 [了解详情](../dev/staging.md)

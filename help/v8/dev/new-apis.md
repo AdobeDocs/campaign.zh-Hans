@@ -5,7 +5,7 @@ description: 新的Campaign v8 API
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 4%
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # 新的Campaign API{#gs-new-api}
 
-Campaign v8提供了两个新API，用于管理Campaign本地数据库和云数据库之间的数据。 使用这些功能的先决条件是在架构上启用暂存机制。 [了解详情](staging.md)。
+Campaign v8提供了两个新API，用于管理Campaign本地数据库和云数据库之间的数据。 使用这些功能的先决条件是在架构上启用暂存机制。 [了解详情](staging.md)
 
 * 摄取API:**xtk.session.ingest**
 

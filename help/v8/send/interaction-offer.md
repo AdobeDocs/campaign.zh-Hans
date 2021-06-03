@@ -5,7 +5,7 @@ description: 了解如何创建优惠
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 3%
@@ -50,7 +50,7 @@ ht-degree: 3%
 
 ![](assets/offer_eligibility_create_003.png)
 
-如果已创建预定义过滤器，则可以从用户过滤器列表中选择它们。 [了解详情](interaction-predefined-filters.md)。
+如果已创建预定义过滤器，则可以从用户过滤器列表中选择它们。 [了解详情](interaction-predefined-filters.md)
 
 ![](assets/offer_eligibility_create_004.png)
 
@@ -64,7 +64,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->可以根据选件所属类别的参数暂时修改分配的权重。 [了解详情](interaction-offer-catalog.md#creating-offer-categories)。
+>可以根据选件所属类别的参数暂时修改分配的权重。 [了解详情](interaction-offer-catalog.md#creating-offer-categories)
 
 要在选件中创建权重，请应用以下步骤：
 
@@ -140,7 +140,7 @@ ht-degree: 3%
 
    ![](assets/offer_content_create_002.png)
 
-   要查找在选件空间配置期间定义的必填字段，请单击&#x200B;**[!UICONTROL Content definitions]**&#x200B;链接以显示列表。 [了解详情](interaction-offer-spaces.md)。
+   要查找在选件空间配置期间定义的必填字段，请单击&#x200B;**[!UICONTROL Content definitions]**&#x200B;链接以显示列表。 [了解详情](interaction-offer-spaces.md)
 
    ![](assets/offer_content_create_003.png)
 

@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: 在Campaign中创建新架构
 description: 了解如何在Campaign中创建新模式
-source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
+source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 2%
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->“名称”编辑控件允许您输入由名称和命名空间组成的架构键。 架构根元素的“name”和“namespace”属性会在架构的XML编辑区中自动更新。 请注意，某些命名空间仅是内部命名空间。 [了解详情](schemas.md#reserved-namespaces)。
+>“名称”编辑控件允许您输入由名称和命名空间组成的架构键。 架构根元素的“name”和“namespace”属性会在架构的XML编辑区中自动更新。 请注意，某些命名空间仅是内部命名空间。 [了解详情](schemas.md#reserved-namespaces)
 
 **[!UICONTROL Preview]**&#x200B;选项卡会自动生成扩展架构：
 

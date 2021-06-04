@@ -5,9 +5,9 @@ description: Campaign中短信快速入门
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: e65750c4e9ebd0367f0430455cac2cc6502ade7e
+source-git-commit: 04f9d80e26fab372a1819590f8e79298c7a69ab5
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '583'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 3%
 
 * 在其中引用此外部帐户的投放模板。
 
-!DNL :arrow_upper_right:]了解如何在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=en#sending-messages)中配置SMS渠道
+[!DNL :arrow_upper_right:]  了解如何在Campaign Classicv7文档中配 [置短信渠道](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=en#sending-messages)
 
 开始发送短信之前：
 

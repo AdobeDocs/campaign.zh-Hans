@@ -6,10 +6,10 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 hidefromtoc: true
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+source-git-commit: cf00895f988514fc029d0060d7404bdef0c8b30e
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 3%
+source-wordcount: '177'
+ht-degree: 2%
 
 ---
 
@@ -26,3 +26,6 @@ ht-degree: 3%
 * 用户界面中仍显示某些不可用或已删除的功能
 * 订阅（选择加入）和退订（选择退出）机制，以及移动设备注册是异步流程。 请求每小时通过特定的技术工作流进行处理。 [了解详情](../config/replication.md#tech-wf)
 * 重复项需要由最终用户手动处理。 [了解详情](../dev/keys.md)
+* Adobe Campaign v8不支持API和Web应用程序的扩展吞吐量。 如果需要，请联系Adobe以获取指导。
+
+

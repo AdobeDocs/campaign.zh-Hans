@@ -5,10 +5,10 @@ description: Campaign中推送通知入门
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: b0fcdefb638a2424e9464cf520724cc492fabc55
+source-git-commit: 09979331284757527fc9a24479a53d2d488f4649
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 0%
+source-wordcount: '781'
+ht-degree: 1%
 
 ---
 
@@ -51,7 +51,7 @@ Campaign SDK可帮助您将移动应用程序集成到Adobe Campaign平台。
 
 本节详细介绍特定于iOS和Android通知交付的元素。
 
-[!DNL :arrow_upper_right:] 有关创建推送通知的所有步骤，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en#sending-notifications-on-ios)
+[!DNL :arrow_upper_right:] 有关创建推送通知的所有步骤，请参阅 [Campaign Classicv7文档](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en)
 
 >[!CAUTION]
 >
@@ -61,7 +61,9 @@ Campaign SDK可帮助您将移动应用程序集成到Adobe Campaign平台。
 
 ![](assets/delivery_step_1.png)
 
-### 在iOS {#sending-notifications-on-ios}上发送通知
+[!DNL :arrow_upper_right:] 有关如何创建投放的全局信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=en#sending-messages)。
+
+### 在iOS {#send-notifications-on-ios}上发送通知
 
 1. 选择&#x200B;**[!UICONTROL Deliver on iOS]**&#x200B;投放模板，然后单击&#x200B;**[!UICONTROL Continue]**。
 
@@ -83,33 +85,37 @@ Campaign SDK可帮助您将移动应用程序集成到Adobe Campaign平台。
 
 1. 根据所选通知类型输入&#x200B;**[!UICONTROL Message]**&#x200B;和&#x200B;**[!UICONTROL Value of the badge]**。
 
-1. **[!UICONTROL Action button]**&#x200B;允许您为出现在警报通知（有效负载的&#x200B;**action_loc_key**&#x200B;字段）中的操作按钮定义标签。
+1. 您还可以定义以下元素：
 
-1. 在&#x200B;**[!UICONTROL Play a sound]**&#x200B;字段中，选择要在收到通知时由移动终端播放的声音。
+   * **[!UICONTROL Action button]**&#x200B;允许您为出现在警报通知（有效负载的&#x200B;**action_loc_key**&#x200B;字段）中的操作按钮定义标签。
 
-1. 在&#x200B;**[!UICONTROL Application variables]**&#x200B;字段中，输入每个变量的值。 例如，您可以配置在用户激活通知时显示的特定应用程序屏幕。
+   * 在&#x200B;**[!UICONTROL Play a sound]**&#x200B;字段中，选择要在收到通知时由移动终端播放的声音。
+
+   * 在&#x200B;**[!UICONTROL Application variables]**&#x200B;字段中，输入每个变量的值。 例如，您可以配置在用户激活通知时显示的特定应用程序屏幕。
 
 1. 配置通知后，单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡以预览通知。
 
    ![](assets/push-ios-preview.png)
 
-### 在Android {#sending-notifications-on-android}上发送通知
+[!DNL :arrow_upper_right:] 有关在iOS上创建和发送推送通知的所有详细步骤，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en#sending-notifications-on-ios)
+
+### 在Android {#send-notifications-on-android}上发送通知
 
 1. 选择&#x200B;**[!UICONTROL Deliver on Android (android)]**&#x200B;投放模板。
 
-   <!--![](assets/push-template-android.png)-->
+   ![](assets/push-template-android.png)
 
 1. 要定义通知的目标，请单击&#x200B;**[!UICONTROL To]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Add]**。
 
-   <!--![](assets/nmac_delivery_android_2.png)-->
+   ![](assets/push-android-select-target.png)
 
 1. 选择&#x200B;**[!UICONTROL Subscribers of an Android mobile application]**，选择与移动应用程序相关的服务（在本例中为Neotrips），然后选择应用程序的Android版本。
 
-   <!--![](assets/push-android-select-target.png)-->
+   ![](assets/push-ios-subscribers.png)
 
 1. 然后输入通知的内容。
 
-   <!--![](assets/push-android-content.png)-->
+   ![](assets/push-android-content.png)
 
 1. 单击&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;图标以将表情符号插入推送通知。
 
@@ -119,8 +125,22 @@ Campaign SDK可帮助您将移动应用程序集成到Adobe Campaign平台。
 
    <!--![](assets/push-android-preview.png)-->
 
+[!DNL :arrow_upper_right:] 有关在Android上创建和发送推送通知的所有详细步骤，请参阅 [Campaign Classicv7文档](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en#sending-notifications-on-android)
+
 ## 测试、发送和监视推送通知
 
-要发送校样并发送最终投放，请使用与电子邮件投放相同的流程。
+要发送校样并发送最终投放，请使用与电子邮件投放相同的流程。 请参阅Campaign Classicv7文档，以了解更多信息：
 
-发送消息后，您可以监控和跟踪投放内容。
+* 验证投放并发送校样
+   [!DNL :arrow_upper_right:] [了解验证投放的关键步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)
+
+* 确认并发送投放
+   [!DNL :arrow_upper_right:] [了解发送投放的关键步骤](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en)
+
+发送消息后，您可以监控和跟踪投放内容。 请参阅Campaign Classicv7文档，以了解更多信息：
+
+* 推送通知隔离
+   [!DNL :arrow_upper_right:] [了解有关推送通知隔离的更多信息](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#push-notification-quarantines)
+
+* 故障排除
+   [!DNL :arrow_upper_right:] [了解如何排查推送通知故障](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html?lang=en)

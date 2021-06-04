@@ -6,7 +6,7 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: a7309c9ec735f958f038c6ea4e702c99c726f8bd
+source-git-commit: 36e29801bcc95565c32e51742a23d4d74d4e3049
 workflow-type: tm+mt
 source-wordcount: '1096'
 ht-degree: 0%
@@ -135,8 +135,6 @@ ht-degree: 0%
 
 1. 从&#x200B;**[!UICONTROL Configure Analytics integration]**&#x200B;窗口中，将外部帐户映射到之前创建的报表包，其中提供以下信息：
 
-   ![](assets/analytics_connector_0.png)
-
    * **[!UICONTROL E-Mail]**
    * **[!UICONTROL IMS Org]**
    * **[!UICONTROL Analytics Company]**
@@ -160,6 +158,8 @@ ht-degree: 0%
    ![](assets/analytics_connnector_12.png)
 
 1. 如果需要，您可以在&#x200B;**[!UICONTROL Update Segments]**&#x200B;选项卡中添加或删除区段。
+
+   ![](assets/analytics_connnector_12a.png)
 
 1. 在&#x200B;**[!UICONTROL External account]**&#x200B;中，单击&#x200B;**[!UICONTROL Enrich the formula...]**&#x200B;链接以更改URL计算公式，以指定Web分析工具集成信息（促销活动ID）以及必须跟踪其活动的网站的域。
 

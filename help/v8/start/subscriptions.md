@@ -5,9 +5,9 @@ description: 了解如何在Campaign v8中管理订阅和退订
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: f69d318b4ea767c44f8c19bf0cf45fb1b7001b11
+source-git-commit: 4cdf1b30584088d1c5de301d89c6d09bf5429ca1
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,13 @@ ht-degree: 0%
 
    [!DNL :arrow_upper_right:] 在Campaign Classicv7文 [档中了解详情](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#deliveries-tab)
 
-* 自动为一组收件人订阅服务。 收件人列表可以来自筛选操作、组、文件夹、导入或直接手动选择。 要订阅这些收件人，请选择用户档案并右键单击。 选择&#x200B;**[!UICONTROL Actions > Subscribe selection to a service...]**，选择相关服务，然后开始操作。
+* 自动为一组收件人订阅服务。 收件人列表可以来自筛选操作、组、文件夹、导入或直接手动选择。 要订阅这些收件人，请选择用户档案并右键单击。 选择 **[!UICONTROL Actions > Subscribe selection to a service...]**。
+
+   ![](assets/subscribe-selection.png)
+
+   选择相关服务，然后启动操作。
+
+   ![](assets/subscribe-confirm.png)
 
    [!DNL :arrow_upper_right:] 在Campaign Classicv7文 [档中了解详情](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#deliveries-tab)
 
@@ -37,13 +43,20 @@ ht-degree: 0%
 
 * 使用Web窗体，以便收件人订阅服务。
 
+   ![](assets/opt-in-webapp.png)
+
+   Campaign附带一个用于管理选择加入的默认Web窗体。 您可以对其进行个性化设置并映射用户档案数据。
+
+   ![](assets/web-app.png)
+
    [!DNL :arrow_upper_right:] 在Campaign Classicv7文 [档中了解详情](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=en#create-a-subscription--form-with-double-opt-in)
 
 
 * 创建定位工作流并使用&#x200B;**[!UICONTROL Subscription service]**&#x200B;活动。
 
-   [!DNL :arrow_upper_right:] 在Campaign Classicv7文 [档中了解详情](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/subscription-services.html?lang=en#example--subscribe-a-list-of-recipients-to-a-newsletter)
+   ![](assets/wf-subscription.png)
 
+   [!DNL :arrow_upper_right:] 在Campaign Classicv7文 [档中了解详情](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/subscription-services.html?lang=en#example--subscribe-a-list-of-recipients-to-a-newsletter)
 
 要取消订阅（选择退订）服务中的用户档案，可用选项包括：
 
@@ -56,7 +69,7 @@ ht-degree: 0%
 **自动退订**
 
 * 指定信息服务的持续时间限制：有效期届满后，收件人将自动取消订阅。 此时段在服务属性的编辑选项卡中指定。 以天表示。
-* 为群体设置退订工作流
+* 为群体设置退订工作流。
 
 [!DNL :arrow_upper_right:] 在Campaign Classicv7文 [档中了解详情](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=en#unsubscribing-a-recipient-from-a-service)
 

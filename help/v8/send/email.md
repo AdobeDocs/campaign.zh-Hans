@@ -5,9 +5,9 @@ description: Campaign中电子邮件入门
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: dc99c00f68e53a308f8c869f07aa93baed3a5129
+source-git-commit: e65750c4e9ebd0367f0430455cac2cc6502ade7e
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '605'
 ht-degree: 5%
 
 ---
@@ -107,7 +107,7 @@ Campaign提供了多种方法，用于在向受众发送电子邮件之前测试
 
 ## 监控电子邮件
 
-发送后，在投放仪表板中检查您的投放状态，并访问投放日志和报告，确认消息已正确发送。
+发送后，在投放仪表板中检查您的投放状态，并访问投放日志和报告以确认消息正确发送。
 
 [!DNL :arrow_upper_right:] [在Campaign Classicv7文档中了解详情](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html)
 

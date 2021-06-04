@@ -6,7 +6,7 @@ feature: 受众
 role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 032bee3b58948b558efe50796efa789a046ff5e4
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 85%
@@ -22,6 +22,8 @@ Adobe Campaign 提供了一套解决方案，可帮助您在所有线上和线�
 ## 跨渠道营销活动编排
 
 您可以利用 Adobe Campaign 在多个渠道上设计和编排有针对性的个性化活动：电子邮件、直邮、SMS、推送通知等。通过单个界面为您提供计划、编排、配置、个性化、自动化、执行和衡量所有活动和通信所需的全部功能。
+
+![](assets/campaign-tab.png)
 
 ### 核心概念
 
@@ -42,6 +44,8 @@ Adobe Campaign 提供了一套解决方案，可帮助您在所有线上和线�
 ## 营销活动工作区
 
 Adobe Campaign 允许您从一个统一的控制中心创建、配置、执行和分析所有营销活动。
+
+![](assets/calendar.png)
 
 [!DNL :arrow_upper_right:] 了解如何在Campaign Classicv7文档中访问和实 [施营销活动](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/about-marketing-campaigns/accessing-marketing-campaigns.html?lang=zh-Hans#orchestrating-campaigns)
 

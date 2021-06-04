@@ -6,9 +6,9 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 973e04eb25887f63564b416515c6e229ed5233a4
+source-git-commit: e6086620909277eaaf5966335df9b71c6830e726
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '608'
 ht-degree: 2%
 
 ---
@@ -67,8 +67,6 @@ Campaign可用的三种环境Cloud Service:
 >控制实例和执行实例必须安装在不同的计算机上。 他们无法共享同一Campaign实例。
 
 ![](assets/messagecenter_diagram.png)
-
-[!DNL :arrow_upper_right:] Campaign Classicv7文档中介绍了 [消息中心架构](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture.html)
 
 ### 身份验证
 

@@ -6,9 +6,9 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 36e29801bcc95565c32e51742a23d4d74d4e3049
+source-git-commit: 6a22bdd563bb0be26df12ce8d2b6da266d16f2e3
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1097'
 ht-degree: 0%
 
 ---
@@ -157,9 +157,9 @@ ht-degree: 0%
 
    ![](assets/analytics_connnector_12.png)
 
-1. 如果需要，您可以在&#x200B;**[!UICONTROL Update Segments]**&#x200B;选项卡中添加或删除区段。
-
-   ![](assets/analytics_connnector_12a.png)
+   >[!NOTE]
+   >
+   > 您无法在此版本的Campaign v8中添加或删除区段。
 
 1. 在&#x200B;**[!UICONTROL External account]**&#x200B;中，单击&#x200B;**[!UICONTROL Enrich the formula...]**&#x200B;链接以更改URL计算公式，以指定Web分析工具集成信息（促销活动ID）以及必须跟踪其活动的网站的域。
 

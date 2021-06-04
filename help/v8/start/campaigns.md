@@ -6,7 +6,7 @@ feature: 受众
 role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: 032bee3b58948b558efe50796efa789a046ff5e4
+source-git-commit: efb236fe47653ddd45f8a5a08e0595b9f6287b7d
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 85%
@@ -70,11 +70,15 @@ Adobe Campaign 允许您从一个统一的控制中心创建、配置、执行�
 
    您可以在工作流程中构建受众或选择现有群组，如收件人列表、新闻稿订阅者、以前投放的收件人或任何筛选条件。
 
+   ![](assets/campaign-wf.png)
+
    [!DNL :arrow_upper_right:] 在v7文档中了解如何定义消 [息的受众](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=zh-Hans#orchestrating-campaigns)
 
 1. **创建投放**
 
    选择渠道、定义消息内容并开始投放。
+
+   ![](assets/campaign-dashboard.png)
 
    [!DNL :arrow_upper_right:] 了解如何在 [Campaign Classicv7文档中创建和开始营销活动投放](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=zh-Hans#creating-deliveries)
 

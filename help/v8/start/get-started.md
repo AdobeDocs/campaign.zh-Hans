@@ -6,7 +6,7 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: 0e99b836dc035c0076f6771b5b430dfd1bd8edaf
+source-git-commit: bf2c44adc560d2be700a27b02ab35f6630192d00
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 78%
@@ -85,6 +85,8 @@ Adobe Campaign 可逐步丰富客户数据和用户档案，从而让您监测�
 ## 工作区和自定义
 
 可通过[客户端控制台](../dev/general-architecture.md)使用Campaign工作区。
+
+![](assets/home-page.png)
 
 [!DNL :bulb:] [进一步了解Campaign客户端控制台](../start/connect.md)。
 

@@ -5,7 +5,7 @@ description: 了解如何在Campaign v8中管理订阅和退订
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: f69d318b4ea767c44f8c19bf0cf45fb1b7001b11
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
@@ -21,6 +21,8 @@ ht-degree: 0%
 要将配置文件订阅（选择加入）到服务，可用选项包括：
 
 * 手动将服务添加到收件人用户档案：为此，请从其配置文件的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择相关的信息服务。
+
+   ![](assets/subscribe-to-a-service.png)
 
    [!DNL :arrow_upper_right:] 在Campaign Classicv7文 [档中了解详情](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#deliveries-tab)
 

@@ -6,10 +6,10 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: 36e29801bcc95565c32e51742a23d4d74d4e3049
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 62%
+ht-degree: 53%
 
 ---
 
@@ -44,7 +44,7 @@ Campaign v8在从定位到最终报告的流程中的任何步骤都提供了端
 
 ## 简化和性能提升
 
-Campaign v8 引入了&#x200B;**完全联合数据访问** (FDA) 的概念：所有数据现在都位于云数据库上的远程位置。
+Campaign v8引入了&#x200B;**完全联合数据访问**(FFDA)的概念：现在，云数据库中的所有数据都是远程的。
 
 使用此新架构，Campaign v8简化了数据管理：云数据库上不需要索引。 您只需创建表格、复制数据即可开始。
 
@@ -54,7 +54,7 @@ Campaign v8 引入了&#x200B;**完全联合数据访问** (FDA) 的概念：所�
 
 ## 综合性生态系统
 
-您可以将 Campaign 与一系列功能强大的 Adobe 解决方案集成，例如 Adobe Analytics、Workfront、Journey Orchestration、Real-Time CDP 等。
+您可以将Campaign与一组功能强大的Adobe解决方案集成，例如：Adobe Analytics、AdobeJourney Orchestration、实时CDP等。
 
 您还可以通过旅程人工智能配置预测发送时间优化和预测参与度评分，并提高打开率、点击量和收入。
 

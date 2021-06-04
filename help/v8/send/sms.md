@@ -5,7 +5,7 @@ description: Campaign中短信快速入门
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 04f9d80e26fab372a1819590f8e79298c7a69ab5
+source-git-commit: 35814053bff993d0b130bf598c8601c3f5adc407
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 3%
@@ -51,9 +51,9 @@ ht-degree: 3%
 
    ![](assets/sms-template-list.png)
 
-   [!DNL :arrow_upper_right:] 了解如何在Campaign Classicv7文档中创建 [SMPP外部帐户](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=en#creating-an-smpp-external-account)
+   [!DNL :arrow_upper_right:] 了解如何在Campaign Classicv7文档中创建 [SMPP外部帐户](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=en#creating-an-smpp-external-account)
 
-   [!DNL :arrow_upper_right:] 在Campaign Classicv7文档中了解如何创建投放模板以投放 [到手机](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=en#changing-the-delivery-template)
+   [!DNL :arrow_upper_right:] 在Campaign Classicv7文档中了解如何创建投放模板以投放 [到手机](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html?lang=en#changing-the-delivery-template)
 
 1. 使用标签、代码和描述标识投放。
 

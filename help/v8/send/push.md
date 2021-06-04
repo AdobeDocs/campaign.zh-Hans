@@ -5,10 +5,10 @@ description: Campaign中推送通知入门
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+source-git-commit: c6f1cfdec3d05a81f8885cc73b370723024f858f
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 1%
+source-wordcount: '594'
+ht-degree: 0%
 
 ---
 
@@ -49,9 +49,78 @@ Campaign SDK可帮助您将移动应用程序集成到Adobe Campaign平台。
 
 ## 创建您的第一个推送通知
 
-[!DNL :arrow_upper_right:] 在v7文档中了解如何创建您的第 [一个推送通知](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en#sending-notifications-on-ios)
+本节详细介绍特定于iOS和Android通知交付的元素。
 
+[!DNL :arrow_upper_right:] 有关创建推送通知的所有步骤，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en#sending-notifications-on-ios)
 
 >[!CAUTION]
 >
->现在，使用Campaign v8进行移动注册的方式为&#x200B;**异步**。 [了解详情](../dev/staging.md)
+>使用Campaign v8时，移动注册现在为&#x200B;**异步**。 [了解详情](../dev/staging.md)
+
+要创建新投放，请浏览&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡，单击&#x200B;**[!UICONTROL Deliveries]** ，然后单击现有投放列表上方的&#x200B;**[!UICONTROL Create]**&#x200B;按钮。
+
+![](assets/delivery_step_1.png)
+
+### 在iOS {#sending-notifications-on-ios}上发送通知
+
+1. 选择&#x200B;**[!UICONTROL Deliver on iOS]**&#x200B;投放模板，然后单击&#x200B;**[!UICONTROL Continue]**。
+
+   ![](assets/push-template-ios.png)
+
+1. 要定义通知的目标，请单击&#x200B;**[!UICONTROL To]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Add]**。
+
+   ![](assets/push-ios-select-target.png)
+
+1. 选择&#x200B;**[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**，选择与移动设备应用程序相关的服务，然后选择应用程序的iOS版本。
+
+   ![](assets/push-ios-subscribers.png)
+
+1. 选择通知类型：**[!UICONTROL Alert]**、**[!UICONTROL Badge]**、**[!UICONTROL Alert and badge]**&#x200B;或&#x200B;**[!UICONTROL Silent Push]**。
+
+   ![](assets/push-ios-alert.png)
+
+1. 在&#x200B;**[!UICONTROL Title]**&#x200B;字段中，输入要在通知中显示的标题标签。
+
+1. 根据所选通知类型输入&#x200B;**[!UICONTROL Message]**&#x200B;和&#x200B;**[!UICONTROL Value of the badge]**。
+
+1. **[!UICONTROL Action button]**&#x200B;允许您为出现在警报通知（有效负载的&#x200B;**action_loc_key**&#x200B;字段）中的操作按钮定义标签。
+
+1. 在&#x200B;**[!UICONTROL Play a sound]**&#x200B;字段中，选择要在收到通知时由移动终端播放的声音。
+
+1. 在&#x200B;**[!UICONTROL Application variables]**&#x200B;字段中，输入每个变量的值。 例如，您可以配置在用户激活通知时显示的特定应用程序屏幕。
+
+1. 配置通知后，单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡以预览通知。
+
+   ![](assets/push-ios-preview.png)
+
+### 在Android {#sending-notifications-on-android}上发送通知
+
+1. 选择&#x200B;**[!UICONTROL Deliver on Android (android)]**&#x200B;投放模板。
+
+   ![](assets/push-template-android.png)
+
+1. 要定义通知的目标，请单击&#x200B;**[!UICONTROL To]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Add]**。
+
+   ![](assets/nmac_delivery_android_2.png)
+
+1. 选择&#x200B;**[!UICONTROL Subscribers of an Android mobile application]**，选择与移动应用程序相关的服务（在本例中为Neotrips），然后选择应用程序的Android版本。
+
+   ![](assets/push-android-select-target.png)
+
+1. 然后输入通知的内容。
+
+   ![](assets/push-android-content.png)
+
+1. 单击&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;图标以将表情符号插入推送通知。
+
+1. 在&#x200B;**[!UICONTROL Application variables]**&#x200B;字段中，输入每个变量的值。 例如，您可以配置在用户激活通知时显示的特定应用程序屏幕。
+
+1. 配置通知后，单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡以预览通知。
+
+   ![](assets/push-android-preview.png)
+
+## 测试、发送和监视推送通知
+
+要发送校样并发送最终投放，请使用与电子邮件投放相同的流程。
+
+发送消息后，您可以监控和跟踪投放内容。

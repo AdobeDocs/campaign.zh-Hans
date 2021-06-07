@@ -6,10 +6,10 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+source-git-commit: 93b690d815f73d11de7de90b92ae188082a3e9e4
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 44%
+source-wordcount: '829'
+ht-degree: 43%
 
 ---
 
@@ -71,6 +71,10 @@ Adobecampaign v8以Snowflake为核心数据库。 随着查询规模的显着增
 ### 简化的维护
 
 Campaign 用户不需要成为数据库专家：不再需要执行复杂的数据库维护操作或编制复杂的表格索引。
+
+## 报告
+
+请注意，与Adobe Campaign v7相比，Campaign Classic报表已得到优化，并提供了更好的扩展功能。 多维数据集的现有限制不适用。
 
 ## 不可用功能{#gs-unavailable-features}
 

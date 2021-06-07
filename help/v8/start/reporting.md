@@ -6,7 +6,7 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d257550
-source-git-commit: 46f013dc18e504d490084a6d911b4772ce0fac2e
+source-git-commit: 983b3cfc2f1569cd071848805e6b6b3411b4d6c6
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Adobe Campaign提供了本页中列出的一组报表工具。
 
 * **多维数据集**
 
-   分析和测量数据、计算统计数据、简化和优化使用多维数据集创建和计算报告。  您可以扩展数据库探索和分析能力，同时使最终用户更容易配置报表和表：他们只需在创建其报表或表时选择一个现有（已完全配置）多维数据集，以处理计算、度量和统计。
+   分析和测量数据、计算统计数据、简化和优化使用多维数据集创建和计算报告。  您可以扩展数据库探索和分析能力，并使最终用户更容易配置报告和表。 他们只需在创建其报表或表时选择一个现有（已完全配置）多维数据集，以处理计算、度量和统计信息。
 
    ![](assets/create-a-report.png)
 

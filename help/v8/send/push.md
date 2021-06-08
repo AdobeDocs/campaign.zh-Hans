@@ -5,7 +5,7 @@ description: Campaign中推送通知入门
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 09979331284757527fc9a24479a53d2d488f4649
+source-git-commit: f75b2ddc073d05548740cb3e9371063cf0d83ca5
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 1%
@@ -51,7 +51,7 @@ Campaign SDK可帮助您将移动应用程序集成到Adobe Campaign平台。
 
 本节详细介绍特定于iOS和Android通知交付的元素。
 
-[!DNL :arrow_upper_right:] 有关创建推送通知的所有步骤，请参阅 [Campaign Classicv7文档](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en)
+[!DNL :arrow_upper_right:] 有关创建推送通知的所有步骤，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en)
 
 >[!CAUTION]
 >
@@ -125,7 +125,7 @@ Campaign SDK可帮助您将移动应用程序集成到Adobe Campaign平台。
 
    <!--![](assets/push-android-preview.png)-->
 
-[!DNL :arrow_upper_right:] 有关在Android上创建和发送推送通知的所有详细步骤，请参阅 [Campaign Classicv7文档](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en#sending-notifications-on-android)
+[!DNL :arrow_upper_right:] 有关在Android上创建和发送推送通知的所有详细步骤，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/creating-notifications.html?lang=en#sending-notifications-on-android)
 
 ## 测试、发送和监视推送通知
 
@@ -135,12 +135,12 @@ Campaign SDK可帮助您将移动应用程序集成到Adobe Campaign平台。
    [!DNL :arrow_upper_right:] [了解验证投放的关键步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)
 
 * 确认并发送投放
-   [!DNL :arrow_upper_right:] [了解发送投放的关键步骤](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en)
+   [!DNL :arrow_upper_right:] [了解发送投放的关键步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en)
 
 发送消息后，您可以监控和跟踪投放内容。 请参阅Campaign Classicv7文档，以了解更多信息：
 
 * 推送通知隔离
-   [!DNL :arrow_upper_right:] [了解有关推送通知隔离的更多信息](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#push-notification-quarantines)
+   [!DNL :arrow_upper_right:] [了解有关推送通知隔离的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#push-notification-quarantines)
 
 * 故障排除
-   [!DNL :arrow_upper_right:] [了解如何排查推送通知故障](https://experienceleague.corp.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html?lang=en)
+   [!DNL :arrow_upper_right:] [了解如何排查推送通知故障](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html?lang=en)

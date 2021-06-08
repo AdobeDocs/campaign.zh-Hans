@@ -1,12 +1,12 @@
 ---
 product: Adobe Campaign
-title: 了解如何连接到Campaign v8
-description: 连接到Campaign v8
+title: 连接到Campaign v8
+description: 了解如何连接到Campaign v8
 feature: 受众
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 03585f0c1514a80b0b0cba5a2d05fa3f44398405
+source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 7%

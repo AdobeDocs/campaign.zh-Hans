@@ -5,10 +5,10 @@ user-guide-title: Campaign v8
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8
 title: Campaign v8 文档
-source-git-commit: 35814053bff993d0b130bf598c8601c3f5adc407
+source-git-commit: d45913ac1da7dc3a447fd27294256522b399f1d0
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 81%
+source-wordcount: '204'
+ht-degree: 80%
 
 ---
 
@@ -65,6 +65,7 @@ ht-degree: 81%
    + [管理数据](config/replication.md)
    + [电子邮件设置](config/email-settings.md)
    + [事务性消息设置](config/transactional-msg-settings.md)
+   + [移动设备应用程序设置](config/push-config.md)
    + [外部帐户](config/external-accounts.md)
 + 连接{#connect}
    + [与其他解决方案配合使用](connect/integration.md)

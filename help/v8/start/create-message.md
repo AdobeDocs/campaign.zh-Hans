@@ -6,10 +6,10 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 9ecd0af7a6e8e173a89106c84a78de8b2311fef7
+source-git-commit: 9cb1b38456601bce21d458fea42a5c112d9fafb4
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 71%
+source-wordcount: '600'
+ht-degree: 68%
 
 ---
 
@@ -55,7 +55,7 @@ Adobe Campaign v8 附带以下投放渠道：
 
    [!DNL :arrow_upper_right:] [了解如何自动发送电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/delivery.html?lang=zh-Hans)
 * [触发](../send/transactional.md) 来自事件的消息
-   [!DNL :arrow_upper_right:] [用例：了解如何发送带有附件的事务型电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html?lang=zh-Hans)
+   [!DNL :arrow_upper_right:] [用例：了解如何发送带有附件的事务型电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=en)
 * 计划消息发送
 
    ![](assets/schedule-send.png)
@@ -87,7 +87,7 @@ Adobe Campaign v8 附带以下投放渠道：
 
 [!DNL :bulb:] 配置和发送事务性消息的步骤详见[此页面](../send/transactional.md)
 
-[!DNL :arrow_upper_right:] 在Campaign Classicv7文档中的端到端用例中发现 [此功能](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/use-case/transactional-email-with-attachments.html?lang=zh-Hans#transactional-messaging)
+[!DNL :arrow_upper_right:] 在Campaign Classicv7文档中的端到端用例中发现 [此功能](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=en)
 
 ## 投放和跟踪日志
 

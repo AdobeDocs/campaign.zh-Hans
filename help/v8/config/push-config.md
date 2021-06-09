@@ -8,7 +8,7 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: ee0ea4c1e086ee579e63e391683cc8e896d09f0b
+source-git-commit: 170a80942aff9951859646942657938e206959fe
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 * **在Android中**:
 
-   ```
+   ```sql
    Neolane.getInstance().setIntegrationKey("your Adobe mobile app integration key");
    Neolane.getInstance().setMarketingHost("https://yourMarketingHost:yourMarketingPort/");
    Neolane.getInstance().setTrackingHost("https://yourTrackingHost:yourTrackingPort/"); 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 * **在iOS中**:
 
-   ```
+   ```sql
    Neolane_SDK *nl = [Neolane_SDK getInstance];
    [nl setMarketingHost:strMktHost];
    [nl setTrackingHost:strTckHost];
@@ -84,7 +84,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
    在使用Android SDK之前，您需要对其进行初始化。 可以在活动的`onCreate`函数中初始化SDK。
 
-   ```
+   ```sql
    /** Called when the activity is first created. */
    @Override
    public void onCreate(Bundle savedInstanceState)
@@ -112,7 +112,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
    您必须在应用程序初始化或用户操作时，将设备注册到Adobe Campaign。 使用`registerDevice`方法可以轻松完成该操作。
 
-   ```
+   ```sql
    public void onClick(View v)
    {
    SharedPreferences settings = this.context.getSharedPreferences(YourApplicationActivity.APPLICATION_PREF_NAME, Context.MODE_PRIVATE);
@@ -127,7 +127,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
    YourApplicationActivity.java
 
-   ```
+   ```sql
    public static void registerOnNeolane(final Context ctx, String registrationId, String userKey)
    {
        NeolaneAsyncRunner neolaneAs = new NeolaneAsyncRunner(Neolane.getInstance());
@@ -188,7 +188,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
    YourApplicationFirebaseInstanceIDService.java
 
-   ```
+   ```sql
    package com.android.YourApplication;
    
    import android.content.Context;
@@ -225,7 +225,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
    YourApplicationMessagingService.java
 
-   ```
+   ```sql
    package com.android.YourApplication;
    
    import android.content.Context;
@@ -270,7 +270,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
    对于Campaign Android SDK v1.1.1
 
-   ```
+   ```sql
    public static void handleNotification(Context context, String message, String title, String url, String messageId, String deliveryId, Bundle extras)
    {
        if( message == null ) message = "No Content";
@@ -330,7 +330,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
    对于Campaign Android SDK v1.1.1
 
-   ```
+   ```sql
    public class NotificationActivity extends Activity {
        public void onCreate(Bundle savedBundle) {
            [...]
@@ -359,12 +359,13 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
            }
        }
    }
-   
+   ```
+
 1. **跟踪通知消息的打开数和点击数**
 
    对于通知消息，需要使用应用程序启动活动中的`notifyOpening`函数完成打开/点击跟踪，如下所示：
 
-   ```
+   ```sql
    /** Called when the activity is first created. */
    @Override
    public void onCreate(Bundle savedInstanceState)
@@ -373,7 +374,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
    
        SharedPreferences settings = getSharedPreferences(NeoTripActivity.APPLICATION_PREF_NAME, Context.MODE_PRIVATE);
    
-       // initialize Neolane sdk
+       // initialize Campaign SDK
        Neolane.getInstance().setIntegrationKey(settings.getString(NeoTripActivity.APPUUID_NAME, NeoTripActivity.DFT_APPUUID));
        Neolane.getInstance().setMarketingHost(settings.getString(NeoTripActivity.SOAPRT_NAME, NeoTripActivity.DFT_SOAPRT));
        Neolane.getInstance().setTrackingHost(settings.getString(NeoTripActivity.TRACKRT_NAME, NeoTripActivity.DFT_TRACKRT));
@@ -429,7 +430,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
    YourApplicationMessagingService.java
 
-   ```
+   ```sql
    package com.android.YourApplication;
    
    import android.content.Context;
@@ -472,7 +473,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
    }
    ```
 
-   ```
+   ```sql
    public static void handleNotification(Context context, String message, String title, String url, String messageId, String deliveryId, Bundle extras){
        .....
        .....
@@ -500,7 +501,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
    它需要在打开/点击跟踪的同一时间完成。
 
-   ```
+   ```sql
    /** Called when the activity is first created. */
        @Override
        public void onCreate(Bundle savedInstanceState)
@@ -564,7 +565,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
    * 将通知ID或推送ID（iOS的deviceToken和Android的registrationID）发送到Adobe Campaign。
    * 恢复协调密钥或userKey（例如，电子邮件或帐号）
 
-   ```
+   ```sql
    // Callback called on successful registration to the APNs
     - (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
    {
@@ -576,18 +577,18 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
 1. **启用跟踪函数**
 
-利用跟踪函数，可在激活（打开）通知时进行跟踪。
+   利用跟踪函数，可在激活（打开）通知时进行跟踪。
 
-```
-(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)launchOptions
-fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
-{
-if( launchOptions ) { // Retrieve notification parameters here ... // Track application opening Neolane_SDK
-*nl = [Neolane_SDK getInstance]; [nl track:launchOptions:NL_TRACK_CLICK]; } 
-...  
-completionHandler(UIBackgroundFetchResultNoData);
-}
-```
+   ```sql
+   (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)launchOptions
+   fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+   {
+   if( launchOptions ) { // Retrieve notification parameters here ... // Track application opening Neolane_SDK
+   *nl = [Neolane_SDK getInstance]; [nl track:launchOptions:NL_TRACK_CLICK]; } 
+   ...  
+   completionHandler(UIBackgroundFetchResultNoData);
+   }
+   ```
 
 1. **无提示通知跟踪**
 
@@ -595,7 +596,7 @@ completionHandler(UIBackgroundFetchResultNoData);
 
    要跟踪无提示通知，请按照以下示例操作：
 
-   ```
+   ```sql
    // AppDelegate.m
    ...
    ...
@@ -610,7 +611,7 @@ completionHandler(UIBackgroundFetchResultNoData);
    if (launchOptions) NSLog(@"IN launchOptions: %@", [launchOptions description]);
    NSLog(@"Application state: %ld", (long)application.applicationState);
    
-   // Silent Notification (specific case, can use NL_TRACK_RECEIVE as the user doesn't have click/open the notification)
+   // Silent Notification (specific case, can use NL_TRACK_RECEIVE as the user does not have click/open the notification)
    if ([launchOptions[@"aps"][@"content-available"] intValue] == 1 )
        {
    NSLog(@"Silent Push Notification");
@@ -629,13 +630,13 @@ completionHandler(UIBackgroundFetchResultNoData);
    }
    ```
 
-1. 配置注册状态
+1. **配置注册状态**
 
    委托协议允许您获取&#x200B;**registerDevice**&#x200B;调用的结果，并可用于了解注册期间是否发生错误。
 
    **registerDeviceStatus**&#x200B;原型为：
 
-   ```
+   ```sql
    - (void) registerDeviceStatus: (ACCRegisterDeviceStatus) status:(NSString *) errorReason;
    ```
 
@@ -687,7 +688,7 @@ completionHandler(UIBackgroundFetchResultNoData);
 
    **Neolane_SDKDelegate** 协议和registerDeviceStatusdelegate **** 定义如下：
 
-   ```
+   ```sql
    //  Neolane_SDK.h
    //  Campaign SDK
    ..
@@ -721,7 +722,7 @@ completionHandler(UIBackgroundFetchResultNoData);
 
    1. 在SDK初始化期间实施&#x200B;**setDelegate**。
 
-      ```
+      ```sql
       // AppDelegate.m
       ...
       ... 
@@ -750,7 +751,7 @@ completionHandler(UIBackgroundFetchResultNoData);
 
    1. 在类的&#x200B;**@interface**&#x200B;中添加协议。
 
-      ```
+      ```sql
       //  AppDelegate.h
       
       #import <UIKit/UIKit.h>
@@ -772,7 +773,7 @@ completionHandler(UIBackgroundFetchResultNoData);
 
    1. 在&#x200B;**AppDelegate**&#x200B;中实施委托。
 
-      ```
+      ```sql
       //  AppDelegate.m
       
       #import "AppDelegate.h"
@@ -832,7 +833,7 @@ completionHandler(UIBackgroundFetchResultNoData);
 
 * **在Android中**:
 
-   ```
+   ```sql
    public void onReceive(Context context, Intent intent) {
         ...
        String event = intent.getStringExtra("VAR");
@@ -842,7 +843,7 @@ completionHandler(UIBackgroundFetchResultNoData);
 
 * **在iOS中**:
 
-   ```
+   ```sql
    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
    {
        ....
@@ -880,7 +881,7 @@ completionHandler(UIBackgroundFetchResultNoData);
 
 必须在通知服务扩展级别下载媒体。
 
-```
+```sql
 #import "NotificationService.h"
 
 @interface NotificationService ()
@@ -926,7 +927,7 @@ completionHandler(UIBackgroundFetchResultNoData);
 
    您需要添加代码以将媒体数据馈送到小组件。 以下是图像的代码示例：
 
-   ```
+   ```sql
    #import "NotificationViewController.h"
    #import <UserNotifications/UserNotifications.h>
    #import <UserNotificationsUI/UserNotificationsUI.h>

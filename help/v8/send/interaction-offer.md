@@ -5,9 +5,9 @@ description: 了解如何创建优惠
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+source-git-commit: 9cb1b38456601bce21d458fea42a5c112d9fafb4
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '921'
 ht-degree: 3%
 
 ---
@@ -196,4 +196,4 @@ Campaign允许您使用演示规则控制优惠建议的流程。 这些特定�
 
 模拟会考虑以前应用于选件的上下文和资格规则及其演示规则。 这样，您就可以测试和优化选件建议的各种版本，而无需实际使用选件，或者超量/不限次地吸引目标，因为模拟对目标收件人没有影响。
 
-[!DNL :arrow_upper_right:] 有关优惠模拟的更多信息，请参 [阅Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.htm)
+[!DNL :arrow_upper_right:] 有关优惠模拟的更多信息，请参 [阅Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=en)

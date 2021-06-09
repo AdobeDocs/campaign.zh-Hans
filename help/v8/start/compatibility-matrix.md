@@ -6,7 +6,7 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: f7e2581899d965975c129cac530a7edc6a2d55dd
+source-git-commit: 42a83fefb9c4ae3cea906c5dce8ecf725909b4eb
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 75%
@@ -50,7 +50,7 @@ ht-degree: 75%
 
 ### 移动 SDK{#MobileSDK}
 
-* 带有移动 SDK 内部版本 1.0.27 的&#x200B;**Android** 7.x、8.x、9.0。
+* 带有移动 SDK 内部版本 1.1.1 的&#x200B;**Android** 7.x、8.x、9.0。
 * 带有移动 SDK 版本 1.0.26 的 **Apple iOS** 9 - 14，与 32 位和 64 位版本兼容。
 
 ### 支持的浏览器 {#Browsers}

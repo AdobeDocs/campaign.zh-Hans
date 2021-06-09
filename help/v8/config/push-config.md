@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: d45913ac1da7dc3a447fd27294256522b399f1d0
+source-git-commit: afc624ffdcc3c537bdfa23989c1ed95271edabdb
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1284'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 使用适用于iOS和Android的Campaign SDK来促进将移动应用程序集成到Adobe Campaign平台。
 
-[兼容性矩阵](../../rn/using/compatibility-matrix.md#MobileSDK)中列出了支持Android和iOS的版本以及Campaign v8的兼容版本SDK。
+[兼容性矩阵](../start/compatibility-matrix.md#MobileSDK)中列出了支持Android和iOS的版本以及Campaign v8的兼容版本SDK。
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
    `IntegrationKey`必须与在链接到此Android应用程序的Adobe Campaign移动应用程序中设置的“IntegrationKey”匹配。
 
-2. **将移动设备注册到Adobe Campaign服务器**
+1. **将移动设备注册到Adobe Campaign服务器**
 
    注册功能允许您：
 
@@ -422,6 +422,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 >
 > 如果用户在目标活动中使用`click_action`选项，则需要执行类似管理。
 
+
 1. **接收数据消息的跟踪**
 
    对于数据消息，将在`onMessageReceived`调用级别接收跟踪。 需要调用“notifyReceive”函数。
@@ -552,8 +553,6 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
        }
    }
    ```
-
-
 
 
 ## 集成iOS SDK

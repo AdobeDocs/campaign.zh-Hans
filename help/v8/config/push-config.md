@@ -8,10 +8,10 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 29d6a1545722afa3a07c98de1ab453cdb0a618d2
+source-git-commit: 35fcedd8e4d44bb6c5a97b2a48ff55aa2632947d
 workflow-type: tm+mt
-source-wordcount: '1346'
-ht-degree: 2%
+source-wordcount: '1284'
+ht-degree: 1%
 
 ---
 
@@ -644,56 +644,15 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
    * **** ErrorReason为您提供有关所发生错误的更多信息。有关可用错误及其说明的更多信息，请参阅下表。
 
+   | 状态 | 说明 | 错误原因 |
+   | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
+   | ACCRegisterDeviceStatusSuccess | 注册成功 | EMPTY |
+   | ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty | ACC营销服务器主机名为空或未设置。 | EMPTY |
+   | ACCRegisterDeviceStatusFailureIntegrationKeyEmpty | 集成键值为空或未设置。 | EMPTY |
+   | ACCRegisterDeviceStatusFailureConnectionIssue | 与ACC的连接问题 | 更多信息（使用操作系统当前语言） |
+   | ACCRegisterDeviceStatusFailureUnknownUUID | 提供的UUID（集成密钥）未知。 | EMPTY |
+   | ACCRegisterDeviceStatusFailureExpectedError | 向ACC服务器返回意外错误。 | 返回到ACC的错误消息。 |
 
-      | 状态 | 说明 | 错误原因 |
-      | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
-      | ACCRegisterDeviceStatusSuccess | 注册成功 | EMPTY |
-      | ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty | ACC营销服务器主机名为空或未设置。 | EMPTY |
-      | ACCRegisterDeviceStatusFailureIntegrationKeyEmpty | 集成键值为空或未设置。 | EMPTY |
-      | ACCRegisterDeviceStatusFailureConnectionIssue | 与ACC的连接问题 | 更多信息（使用操作系统当前语言） |
-      | ACCRegisterDeviceStatusFailureUnknownUUID | 提供的UUID（集成密钥）未知。 | EMPTY |
-      | ACCRegisterDeviceStatusFailureExpectedError | 向ACC服务器返回意外错误。 | 返回到ACC的错误消息。 |
-   <table> 
-    <thead>
-    <tr>
-    <th> 状态<br /> </th>
-    <th> 说明<br /> </th>
-    <th> ErrorReason<br /> </th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-    <td> ACCRegisterDeviceStatusSuccess <br /> </td>
-    <td> 注册成功<br /> </td>
-    <td> EMPTY<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty <br /> </td>
-    <td> ACC营销服务器主机名为空或未设置。<br /> </td>
-    <td> EMPTY<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureIntegrationKeyEmpty <br /> </td>
-    <td> 集成键值为空或未设置。<br /> </td>
-    <td> EMPTY<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureConnectionIssue<br /> </td>
-    <td> 与ACC<br />的连接问题 </td>
-    <td> 更多信息（使用操作系统当前语言）<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureUnknownUUID<br /> </td>
-    <td> 提供的UUID（集成密钥）未知。<br /> </td>
-    <td> EMPTY<br /> </td>
-    </tr>
-    <tr> 
-    <td> ACCRegisterDeviceStatusFailureExpectedError<br /> </td>
-    <td> 返回给ACC服务器的意外错误。<br /> </td>
-    <td> 返回给ACC的错误消息<br /> </td>
-    </tr>
-    </tbody>
-    </table>
 
    **Neolane_SDKDelegate** 协议和registerDeviceStatusdelegate **** 定义如下：
 
@@ -830,6 +789,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
       }
       @end
       ```
+
 
 
 ## 变量 {#variables}

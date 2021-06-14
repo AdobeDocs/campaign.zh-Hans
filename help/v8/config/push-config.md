@@ -8,7 +8,7 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: eec769a09d59034dde59983bd0a53a4ac4fddde5
+source-git-commit: 9f05209e47f35c91720f68d56593812115726817
 workflow-type: tm+mt
 source-wordcount: '1567'
 ht-degree: 1%
@@ -644,7 +644,6 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
    * **** ErrorReason为您提供有关所发生错误的更多信息。有关可用错误及其说明的更多信息，请参阅下表。
 
-
 | 状态 | 说明 | 错误原因 |
 | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
 | ACCRegisterDeviceStatusSuccess | 注册成功 | EMPTY |
@@ -653,7 +652,6 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 | ACCRegisterDeviceStatusFailureConnectionIssue | 与ACC的连接问题 | 更多信息（使用操作系统当前语言） |
 | ACCRegisterDeviceStatusFailureUnknownUUID | 提供的UUID（集成密钥）未知。 | EMPTY |
 | ACCRegisterDeviceStatusFailureExpectedError | 向ACC服务器返回意外错误。 | 返回到ACC的错误消息。 |
-
 
 {style=&quot;table-layout:auto&quot;}
 

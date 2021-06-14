@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 673d2d3ace355a9552ecf54a3cab0104943e6a99
+source-git-commit: 619edce939b39430832fd950ece734f817f9dce3
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1285'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 使用适用于iOS和Android的Campaign SDK来促进将移动应用程序集成到Adobe Campaign平台。
 
-[兼容性矩阵](../start/compatibility-matrix.md#MobileSDK)中列出了支持Android和iOS的版本以及Campaign v8的兼容版本SDK。
+[兼容性矩阵](../start/compatibility-matrix.md#MobileSDK)中列出了Android和iOS支持的版本以及Campaign v8的Campaign SDK兼容版本。
 
 >[!NOTE]
 >
@@ -61,6 +61,10 @@ ht-degree: 1%
 Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe Campaign集成：注册新设备、将设备与用户链接、跟踪行为等。
 
 在此部分中，了解如何在实施[Google Firebase Cloud Messaging(FCM)](https://firebase.google.com/docs/cloud-messaging/)的Android应用程序中使用Android SDK。
+
+>[!CAUTION]
+>
+> 对于Campaign v8，使用Campaign Android SDK v1.1.1。
 
 ### 配置FCM
 
@@ -268,7 +272,6 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
        }   
    ```
 
-   对于Campaign Android SDK v1.1.1
 
    ```sql
    public static void handleNotification(Context context, String message, String title, String url, String messageId, String deliveryId, Bundle extras)
@@ -327,8 +330,6 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 1. **跟踪数据消息的打开情况**
 
    对于数据消息，您可以使用`notifyOpening`函数跟踪用户何时单击通知以将其打开。 当用户单击通知时，将创建通知活动（在`onMessageReceived`函数调用期间创建）
-
-   对于Campaign Android SDK v1.1.1
 
    ```sql
    public class NotificationActivity extends Activity {
@@ -403,7 +404,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
                toastMessage( "error", getString(R.string.open_track_ok));
            }
            });
-           nas.notifyReceive(Integer.valueOf(messageId), deliveryId, new NeolaneAsyncRunner.RequestListener() {
+           nas.notifyReceive(messageId, deliveryId, new NeolaneAsyncRunner.RequestListener() {
            public void onNeolaneException(NeolaneException arg0, Object arg1) {
                toastMessage( "error", getString(R.string.rec_track_sdk_error) + arg0.getErrorCode());
            }
@@ -484,7 +485,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
            Neolane.getInstance().setTrackingHost(settings.getString(NeoTripActivity.TRACKRT_NAME, NeoTripActivity.DFT_TRACKRT));
    
            NeolaneAsyncRunner nas = new NeolaneAsyncRunner(Neolane.getInstance());
-           nas.notifyReceive(Integer.valueOf(messageId), deliveryId, new NeolaneAsyncRunner.RequestListener() {
+           nas.notifyReceive(messageId, deliveryId, new NeolaneAsyncRunner.RequestListener() {
                public void onNeolaneException(NeolaneException arg0, Object arg1) {}
                public void onIOException(IOException arg0, Object arg1) {}
                public void onComplete(String arg0, Object arg1){}
@@ -539,7 +540,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
                toastMessage( "error", getString(R.string.open_track_ok));
            }
            });
-           nas.notifyReceive(Integer.valueOf(messageId), deliveryId, new NeolaneAsyncRunner.RequestListener() {
+           nas.notifyReceive(messageId, deliveryId, new NeolaneAsyncRunner.RequestListener() {
            public void onNeolaneException(NeolaneException arg0, Object arg1) {
                toastMessage( "error", getString(R.string.rec_track_sdk_error) + arg0.getErrorCode());
            }

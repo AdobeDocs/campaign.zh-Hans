@@ -6,10 +6,10 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: 29d6a1545722afa3a07c98de1ab453cdb0a618d2
+source-git-commit: 619edce939b39430832fd950ece734f817f9dce3
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 75%
+source-wordcount: '278'
+ht-degree: 68%
 
 ---
 
@@ -52,8 +52,8 @@ ht-degree: 75%
 
 ### 移动 SDK{#MobileSDK}
 
-* 带有移动 SDK 内部版本 1.1.1 的&#x200B;**Android** 7.x、8.x、9.0。
-* 带有移动 SDK 版本 1.0.26 的 **Apple iOS** 9 - 14，与 32 位和 64 位版本兼容。
+* **Android** 7.x、8.x、9.0（带有Campaign Android SDK内部版本1.1.1）。
+* **Apple iOS**  9 - 14，带有Campaign iOS SDK内部版本1.0.26，与32位和64位版本兼容。
 
 ### 支持的浏览器 {#Browsers}
 

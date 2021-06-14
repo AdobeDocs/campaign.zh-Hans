@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: e5d321b9fb5fe81476197e1913eb815fb2ed758d
+source-git-commit: eec769a09d59034dde59983bd0a53a4ac4fddde5
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1567'
 ht-degree: 1%
 
 ---
@@ -644,156 +644,155 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
    * **** ErrorReason为您提供有关所发生错误的更多信息。有关可用错误及其说明的更多信息，请参阅下表。
 
-   | 状态 | 说明 | 错误原因 |
-   | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
-   | ACCRegisterDeviceStatusSuccess | 注册成功 | EMPTY |
-   | ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty | ACC营销服务器主机名为空或未设置。 | EMPTY |
-   | ACCRegisterDeviceStatusFailureIntegrationKeyEmpty | 集成键值为空或未设置。 | EMPTY |
-   | ACCRegisterDeviceStatusFailureConnectionIssue | 与ACC的连接问题 | 更多信息（使用操作系统当前语言） |
-   | ACCRegisterDeviceStatusFailureUnknownUUID | 提供的UUID（集成密钥）未知。 | EMPTY |
-   | ACCRegisterDeviceStatusFailureExpectedError | 向ACC服务器返回意外错误。 | 返回到ACC的错误消息。 |
+
+| 状态 | 说明 | 错误原因 |
+| ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
+| ACCRegisterDeviceStatusSuccess | 注册成功 | EMPTY |
+| ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty | ACC营销服务器主机名为空或未设置。 | EMPTY |
+| ACCRegisterDeviceStatusFailureIntegrationKeyEmpty | 集成键值为空或未设置。 | EMPTY |
+| ACCRegisterDeviceStatusFailureConnectionIssue | 与ACC的连接问题 | 更多信息（使用操作系统当前语言） |
+| ACCRegisterDeviceStatusFailureUnknownUUID | 提供的UUID（集成密钥）未知。 | EMPTY |
+| ACCRegisterDeviceStatusFailureExpectedError | 向ACC服务器返回意外错误。 | 返回到ACC的错误消息。 |
 
 
-   {style=&quot;table-layout:auto&quot;}
+{style=&quot;table-layout:auto&quot;}
 
-   **Neolane_SDKDelegate** 协议和registerDeviceStatusdelegate **** 定义如下：
+    **Neolane_SDKelegate**协议和**registerDeviceStatus**委托定义如下：
+    
+    &quot;&#39;sql
+    // Neolane_SDK.h
+    // Campaign SDK
+    ..
+    ..
+    //注册设备状
+    态Enumtypedef NS_ENUM(NSUInteger， ACCRegisterDeviceStatus){
+    ACCRegisterDeviceSuccess， //重新注册
+    SeciputeACCRegisterDeviceStatusFailureMarketingServerHostname， //营销活动服务器为空或未设置
+    ACCRegisterDeviceStatus/EmptyFailuteFailureFaule/集成密钥为空或未
+    设置ACCRegisterDeviceStatusFailureConnectionIssue， //与Campaign的连接问题， 
+    errorReasonACCRegisterDeviceStatusFailureUuidUUID中的更多信息， //提供的UID（集成密钥）为
+    unknownACCRegisterDeviceStatusError //ErrorError，/ErrorrrError，有关注册协议的详细信息，请
+    /
+    /Reror，请注册原因
+    /DeviceStatus委托 &lt;nsobject>
+    @protocol Neolane_SDKelegate 
+    @optional-(void)registerDeviceStatus:(ACCRegisterDeviceStatus)状态：(NSString *)errorReason;
+    @end
+    @interface Neolane_SDK:NSObject {
+    }
+    ...
+    ...
+    // registerDeviceStatus委托
+    @property（非原子、弱）id &lt;neolane_sdkdelegate> 委托；
+    ...
+    ...
+    @end
+    &quot;
+    
+    要实施**registerDeviceStatus**委托，请执行以下步骤：
+    
+    1.在SDK初始化期间实施**setDelegate**。
+    
+    &quot;&#39;sql
+    // AppDelegate.m
+    ...
+    ...
+    -(BOOL)应用程序：(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+    {
+    ..
+    ...
+    //获取存储
+    
+    的设置NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *strMktHost = [defaults objectForKey:@&quot;mktHost&quot;];
+    NSString *strHost = [defaults objectForKey:@&quot;tckHost&quot;];
+     *STRNS集成=[keyDefaults]
+    userKey = [defaults objectForKey:@&quot;userKey&quot;];
+    
+    //在首次启动时配置Campaign SDK 
+    Neolane_SDK *nl = [Neolane_SDK getInstance];
+    [nl setMarketingHost:strMktHost];
+    [nlTrackingHost:strTckHost];
+    [setIntegrationKey:strKey];
+    ;[setNl]//此处
+    ...
+    ...
+    }
+    “
+    
+    1”在类的**@interface**中添加协议。
+    
+    &quot;&#39;sql
+    // AppDelegate.h
+    
+    #import  &lt;uikit>
+    #import  &lt;corelocation>
+    #import &quot;Neolane_SDK.h&quot;
+    
+    @class LandingPageViewController;
+    
+    @interface AppDelegate :UIResponder  &lt;uiapplicationdelegate> {
+    CLLocationManager *locationManager;
+    NSString *userKey;
+    NSString *mktServerUrl;
+    NSString *tckServerUrl;
+    NSString *homeURL;
+    NSString *strLandingPageUrl;
+    NSTimer *timer}
+    &#39;
+    
+    
+    1&quot;。在**AppDelegate**中实施委托。
+    
+    &quot;&#39;sql
+    // AppDelegate.m
+    
+    #import &quot;AppDelegate.h&quot;
+    #import &quot;Neolane_SDK.h&quot;
+    #import &quot;LandingPageViewController.h&quot;
+    #import &quot;RootViewController.h&quot;
+    ..
+    ...
+    -(void)registerDeviceStatus:(ACCRegisterDeviceStatus)status :(NSString *)errorReason
+    {
+    NSLog(@&quot;registerStatus:%lu&quot;,status)；如果(
+    
+    errorReason != nil)
+    NSLog(@&quot;errorReason:%@&quot;,errorReason);
+    
+    if(status == ACCRegisterDeviceStatusSuccess)
+    {
+    //注册成功
+    ...
+    ...
+    }
+    else { //发生错误
+    NSString *message;
+    交换机（状态）{
+    case ACCRegisterDeviceStatusFailureUnknownUUID:
+    message = @&quot;Unkown IntegrationKey(UUID)&quot;;
+    break;
+    caseACCRdeviceEgstStatusServerEmptyMarketingFailule:
+    message = @&quot;营销URL未设置或为空&quot;;
+    break;
+    case ACCRegisterDeviceStatusFailureIntegrationKeyEmpty:
+    message = @&quot;集成密钥未设置或空&quot;;
+    break;
+    case ACRegDeviceStatusConnectionIonIsue: [NS/>NSS20stringWithFormat:@&quot;%@ %@&quot;,@&quot;连接问题：&quot;,errorReason];
+    break;
+    case ACCRegisterDeviceStatusFailureExceptedError:
+    default:
+    message = [NSStringWithFormat:@&quot;%@&quot;,@&quot;意外错误&quot;,errorReason];
+    a
+    ...
+    ...
+    }
+    }
+    @end
+    &quot;`
 
-   ```sql
-   //  Neolane_SDK.h
-   //  Campaign SDK
-   ..
-   .. 
-   // Register Device Status Enum
-   typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
-   ACCRegisterDeviceStatusSuccess,                               // Resistration Succeed
-   ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty,   // The Campaign marketing server hostname is Empty or not set
-   ACCRegisterDeviceStatusFailureIntegrationKeyEmpty,            // The integration key is empty or not set
-   ACCRegisterDeviceStatusFailureConnectionIssue,                // Connection issue with Campaign, more information in errorReason
-   ACCRegisterDeviceStatusFailureUnknownUUID,                    // The provided UUID (integration key) is unknown
-   ACCRegisterDeviceStatusFailureUnexpectedError                 // Unexpected error returned by Campaign server, more information in errorReason
-   };
-   // define the protocol for the registerDeviceStatus delegate
-   @protocol Neolane_SDKDelegate <NSObject>
-   @optional
-   - (void) registerDeviceStatus: (ACCRegisterDeviceStatus) status :(NSString *) errorReason;
-   @end
-   @interface Neolane_SDK: NSObject {
-   } 
-   ...
-   ...
-   // registerDeviceStatus delegate
-   @property (nonatomic, weak) id <Neolane_SDKDelegate> delegate;
-   ...
-   ...
-   @end
-   ```
-
-   要实施&#x200B;**registerDeviceStatus**&#x200B;委托，请执行以下步骤：
-
-   1. 在SDK初始化期间实施&#x200B;**setDelegate**。
-
-      ```sql
-      // AppDelegate.m
-      ...
-      ... 
-      - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-      {
-      ...
-      ...
-          // Get the stored settings
-      
-          NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-          NSString *strMktHost = [defaults objectForKey:@"mktHost"];
-          NSString *strTckHost = [defaults objectForKey:@"tckHost"];
-          NSString *strIntegrationKey = [defaults objectForKey:@"integrationKey"];
-          userKey = [defaults objectForKey:@"userKey"];
-      
-          // Configure Campaign SDK on first launch
-          Neolane_SDK *nl = [Neolane_SDK getInstance];
-          [nl setMarketingHost:strMktHost];
-          [nl setTrackingHost:strTckHost];
-          [nl setIntegrationKey:strIntegrationKey];
-          [nl setDelegate:self];    // HERE
-      ...
-      ...
-      }
-      ```
-
-   1. 在类的&#x200B;**@interface**&#x200B;中添加协议。
-
-      ```sql
-      //  AppDelegate.h
-      
-      #import <UIKit/UIKit.h>
-      #import <CoreLocation/CoreLocation.h>
-      #import "Neolane_SDK.h"
-      
-      @class LandingPageViewController;
-      
-      @interface AppDelegate : UIResponder <UIApplicationDelegate, CLLocationManagerDelegate, Neolane_SDKDelegate> {
-          CLLocationManager *locationManager;
-          NSString *userKey;
-          NSString *mktServerUrl;
-          NSString *tckServerUrl;
-          NSString *homeURL;
-          NSString *strLandingPageUrl;
-          NSTimer *timer;
-      }
-      ```
-
-   1. 在&#x200B;**AppDelegate**&#x200B;中实施委托。
-
-      ```sql
-      //  AppDelegate.m
-      
-      #import "AppDelegate.h"
-      #import "Neolane_SDK.h"
-      #import "LandingPageViewController.h"
-      #import "RootViewController.h"
-      ...
-      ...
-      - (void) registerDeviceStatus: (ACCRegisterDeviceStatus) status :(NSString *) errorReason
-      {
-          NSLog(@"registerStatus: %lu",status);
-      
-          if ( errorReason != nil )
-              NSLog(@"errorReason: %@",errorReason);
-      
-          if( status == ACCRegisterDeviceStatusSuccess )
-          {
-              // Registration successful
-              ...
-              ...
-          }
-          else { // An error occurred
-              NSString *message;
-              switch ( status ){
-                  case ACCRegisterDeviceStatusFailureUnknownUUID:
-                      message = @"Unkown IntegrationKey (UUID)";
-                      break;
-                  case ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty:
-                      message = @"Marketing URL not set or Empty";
-                      break;
-                  case ACCRegisterDeviceStatusFailureIntegrationKeyEmpty:
-                      message = @"Integration Key not set or empty";
-                      break;
-                  case ACCRegisterDeviceStatusFailureConnectionIssue:
-                      message = [NSString stringWithFormat:@"%@ %@",@"Connection issue:",errorReason];
-                      break;
-                  case ACCRegisterDeviceStatusFailureUnexpectedError:
-                  default:
-                      message = [NSString stringWithFormat:@"%@ %@",@"Unexpected Error",errorReason];
-                      break;
-              }
-          ...
-          ...
-          }
-      }
-      @end
-      ```
-
-
-
+    
+    
 ## 变量 {#variables}
 
 利用变量，可在收到通知后定义移动应用程序行为。 这些变量必须在移动设备应用程序代码和Adobe Campaign控制台的专用移动设备应用程序服务的&#x200B;**[!UICONTROL Variables]**&#x200B;选项卡中定义。

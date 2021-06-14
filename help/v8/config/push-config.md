@@ -8,10 +8,10 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 170a80942aff9951859646942657938e206959fe
+source-git-commit: 29d6a1545722afa3a07c98de1ab453cdb0a618d2
 workflow-type: tm+mt
-source-wordcount: '1284'
-ht-degree: 1%
+source-wordcount: '1346'
+ht-degree: 2%
 
 ---
 
@@ -419,9 +419,9 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
    }
    ```
 
->[!NOTE]
->
-> 如果用户在目标活动中使用`click_action`选项，则需要执行类似管理。
+   >[!NOTE]
+   >
+   > 如果用户在目标活动中使用`click_action`选项，则需要执行类似管理。
 
 
 1. **接收数据消息的跟踪**
@@ -644,6 +644,15 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
    * **** ErrorReason为您提供有关所发生错误的更多信息。有关可用错误及其说明的更多信息，请参阅下表。
 
+
+      | 状态 | 说明 | 错误原因 |
+      | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
+      | ACCRegisterDeviceStatusSuccess | 注册成功 | EMPTY |
+      | ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty | ACC营销服务器主机名为空或未设置。 | EMPTY |
+      | ACCRegisterDeviceStatusFailureIntegrationKeyEmpty | 集成键值为空或未设置。 | EMPTY |
+      | ACCRegisterDeviceStatusFailureConnectionIssue | 与ACC的连接问题 | 更多信息（使用操作系统当前语言） |
+      | ACCRegisterDeviceStatusFailureUnknownUUID | 提供的UUID（集成密钥）未知。 | EMPTY |
+      | ACCRegisterDeviceStatusFailureExpectedError | 向ACC服务器返回意外错误。 | 返回到ACC的错误消息。 |
    <table> 
     <thead>
     <tr>

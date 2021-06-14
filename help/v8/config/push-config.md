@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 35fcedd8e4d44bb6c5a97b2a48ff55aa2632947d
+source-git-commit: 68cd7d5a20dafeea3c19f35f5c9547b623319ba2
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1287'
 ht-degree: 1%
 
 ---
@@ -652,6 +652,9 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
    | ACCRegisterDeviceStatusFailureConnectionIssue | 与ACC的连接问题 | 更多信息（使用操作系统当前语言） |
    | ACCRegisterDeviceStatusFailureUnknownUUID | 提供的UUID（集成密钥）未知。 | EMPTY |
    | ACCRegisterDeviceStatusFailureExpectedError | 向ACC服务器返回意外错误。 | 返回到ACC的错误消息。 |
+
+
+   {style=&quot;table-layout:auto&quot;}
 
 
    **Neolane_SDKDelegate** 协议和registerDeviceStatusdelegate **** 定义如下：

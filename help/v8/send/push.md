@@ -5,10 +5,10 @@ description: Campaign中推送通知入门
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: d45913ac1da7dc3a447fd27294256522b399f1d0
+source-git-commit: aa3f2f17981ad10221771b3a22c76f7a445b94c9
 workflow-type: tm+mt
-source-wordcount: '780'
-ht-degree: 1%
+source-wordcount: '765'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +33,10 @@ Campaign SDK可帮助您将移动应用程序集成到Adobe Campaign平台。
 
 兼容的SDK版本列在[Campaign兼容性矩阵](../start/compatibility-matrix.md#MobileSDK)中。
 
-[!DNL :arrow_upper_right:] 在此部分中了解如何将Campaign Android和iOS SDK与您的应用程序 [集成](../config/push-config.md)
+<!--
+[!DNL :arrow_upper_right:] Learn how to integrate Campaign Android and iOS SDKs with your app in [this section](../config/push-config.md)
+-->
+
 
 ### 在Launch中配置Campaign扩展
 

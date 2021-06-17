@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1193'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 79%
 
 >[!CAUTION]
 >
->对于&#x200B;**Campaign托管Cloud Services**，您的环境和初始配置已由Adobe根据您的许可协议条款进行设置。 您不允许修改已安装的内置软件包、内置架构或报告。
+>通过使用 **Campaign 托管云服务**，您的环境和初始配置已由 Adobe 根据您的许可协议条款进行了设置。您不可修改已安装的内置软件包、内置模式或报告。
 >
->如果您需要使用Campaign附加组件或尚未为您配置的特定功能，则必须联系&#x200B;**Adobe客户关怀**。
+>如果您需要使用 Campaign 加载项或尚未为您配置的特定功能，那么您必须联系 **Adobe 客户关怀**&#x200B;团队。
 
 ## 开始前
 
@@ -36,15 +36,15 @@ ht-degree: 79%
 
 Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守适用的数据隐私法律并适应收件人的偏好。您可以管理：
 
-* **数据获取**：通过 Adobe Campaign，您可以收集数据，包括个人信息和敏感信息。因此，获得并管理收件人的同意至关重要。在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#data-acquisition)中了解更多信息
+* **数据获取**：通过 Adobe Campaign，您可以收集数据，包括个人信息和敏感信息。因此，获得并管理收件人的同意至关重要。请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans#data-acquisition)以了解详情
 
-* **用户同意和数据保留**：请参阅 [Campaign Classic 隐私文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=en#consent)以了解如何获得用户同意、设置双重选择加入订阅机制、简化选择退出并配置数据保留
+* **用户同意和数据保留**：请参阅 [Campaign Classic 隐私文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans#consent)以了解如何获得用户同意、设置双重选择加入订阅机制、简化选择退出并配置数据保留
 
-* **隐私和数据保护法规**：请参阅 [Campaign Classic 隐私文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html)，了解有关欧盟《通用数据保护条例》(GDPR)、《加州消费者隐私法案》(CCPA) 和其他国际隐私要求的信息，以及这些法规对您的组织和 Adobe Campaign 有何影响。
+* **隐私和数据保护法规**：请参阅 [Campaign Classic 隐私文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans)，了解有关欧盟《通用数据保护条例》(GDPR)、《加州消费者隐私法案》(CCPA) 和其他国际隐私要求的信息，以及这些法规对您的组织和 Adobe Campaign 有何影响。
 
 ### 安全性
 
-在[Campaign安全检查列表](../config/security.md)中了解Adobe Campaign的安全准则和原则。
+在 [Campaign 安全性检查表](../config/security.md)中了解 Adobe Campaign 的安全准则和原则。
 
 ## 确定 Campaign 设置
 
@@ -52,13 +52,13 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
 您可以手动将用户添加到 Campaign，并将他们与群组关联，与您的角色层级保持一致。随后，用户将能够登录并获取适合他们的数据和权限。
 
-[!DNL :arrow_upper_right:] 在此部分中了解如何将用户添 [加到Adobe Campaign](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=zh-Hans#getting-started)。
+[!DNL :arrow_upper_right:]请参阅[本节](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=zh-Hans#getting-started)以了解如何将用户添加到 Adobe Campaign。
 
 ### 安装 Campaign Client Console
 
 应用程序的主要用户界面是一个富客户端，换句话说，是一个仅用标准互联网协议（SOAP、HTTP 等）与 Adobe Campaign 应用程序服务器通信的本机应用程序 (Windows)。Adobe Campaign Client Console 具有出色的用户友好性，可帮助提升工作效率，使用的带宽非常少（通过使用本地缓存），并且易于部署。此 Console 可以从互联网浏览器部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成 HTTP(S) 流量。
 
-[!DNL :bulb:] [进一步了解Campaign客户端控制台](connect.md)。
+[!DNL :bulb:] [了解关于 Campaign 客户端控制台的更多信息](connect.md)。
 
 ## 准备环境
 
@@ -80,21 +80,21 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
    [!DNL :arrow_upper_right:] [了解有关电子邮件模板的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=zh-Hans)
 
-   [!DNL :arrow_upper_right:] 在本页中了解如何使用营销活动 [模板](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=zh-Hans#orchestrating-campaigns)
+   [!DNL :arrow_upper_right:]请参阅[此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=zh-Hans#orchestrating-campaigns)以了解如何使用活动模板
 
-   [!DNL :arrow_upper_right:] 在此页面中了解如何配置工作 [流模板](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=zh-Hans#workflow-templates)
+   [!DNL :arrow_upper_right:]请参阅 [此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=zh-Hans#workflow-templates)了解如何配置工作流模板
 
 1. 配置类型规则
 
    利用 Campaign 类型规则来筛选、控制和监测投放发送。例如，疲劳规则可控制消息传递的频率和数量，以避免对收件人过度宣传。实施后，类型规则就会在投放中引用。
 
-   [!DNL :arrow_upper_right:] [进一步了解分类和疲劳管理](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=zh-Hans#orchestrating-campaigns)
+   [!DNL :arrow_upper_right:] [了解关于类型和疲劳管理的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=zh-Hans#orchestrating-campaigns)
 
 1. 熟悉 Campaign 内置数据模型
 
    Adobe Campaign 提供了预定义的数据模型。为了实施和自定义环境，您需要熟悉 Adobe Campaign 数据模型的内置表格以及它们彼此的关系。
 
-   [!DNL :bulb:] [进一步了解Campaign数据模型](../dev/datamodel.md)。
+   [!DNL :bulb:] [了解关于 Campaign 数据模型的更多信息](../dev/datamodel.md)。
 
 ## 自定义实例
 
@@ -104,15 +104,15 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
    Adobe Campaign 提供用来识别数据的常用模式，例如：收件人、投放日志、订阅等。
 
-   [!DNL :bulb:] 请参阅此部分，了解有关Campaign内 [置数据模型的更多信息](../dev/datamodel.md)。
+   [!DNL :bulb:] 请参阅本节以了解关于 [Campaign 内置数据模型](../dev/datamodel.md)的更多信息。
 
-   [!DNL :bulb:] 您可以扩展现有架构或从头开始创建新架构。请参阅[此页面](../dev/customize.md)以了解详情。
+   [!DNL :bulb:]您可以扩展现有模式或从头开始创建新模式。请参阅[此页面](../dev/customize.md)以了解详情。
 
 1. **仪表板和列表**
 
    您可以轻松配置列表，添加和删除字段以及自定义列。
 
-   [!DNL :bulb:] 在本页中了解如何在Campaign中管理过滤器和 [列表](../dev/customize.md#gs-lists-and-filters)。
+   [!DNL :bulb:]请参阅[此页面](../dev/customize.md#gs-lists-and-filters)以了解如何管理 Campaign 中的过滤器和列表。
 
    您还可以创建新仪表板，以根据您的需要显示 Campaign 数据。
 
@@ -124,7 +124,7 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
    除了内置的报告，Adobe Campaign 还可用于在不同的上下文中生成各种报告，以满足不同的需求。本文档详细介绍了使用原则和实施模式。
 
-   [!DNL :bulb:] 在此页面中了解有关Campaign中报告功能 [的更多信息](reporting.md)。
+   [!DNL :bulb:]在[此页面](reporting.md)中了解关于 Campaign 报告功能的更多信息。
 
 
 ## 设置活动自动化
@@ -155,13 +155,13 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
 您还可以使用单点登录 (SSO) 连接到 Campaign。请参阅[此页面](connect.md)以了解详情。
 
-[!DNL :bulb:] 在此页面中了解可与Adobe Campaign集成的Adobe解决 [方案的完整列表](../connect/integration.md)。
+[!DNL :bulb:] 有关能够与 Adobe Campaign 集成的 Adobe 解决方案的完整列表，请参阅[此页面](../connect/integration.md)。
 
 ### 连接器
 
 将 Campaign 与第三方系统连接起来，以结合大量功能并实现流程自动化。
 
-[!DNL :bulb:] 在此部分中了解有关可用连接器的 [更多信息](../connect/integration.md)。
+[!DNL :bulb:] 在[本节](../connect/integration.md)中了解关于可用连接器的更多信息。
 
 **将您的 CRM 连接到 Campaign**
 

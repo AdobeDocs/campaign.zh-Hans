@@ -8,15 +8,15 @@ level: Beginner
 hidefromtoc: true
 hide: true
 source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '358'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Campaign 控制面板
 
-尚未可用
+尚不可用
 
 Campaign 控制面板允许管理每个实例的设置并跟踪使用情况，从而帮助 Adobe Campaign 产品管理员提高工作效率。其直观的界面可让您轻松监控关键资产的使用情况，并执行管理任务，如将 IP 地址添加到允许列表、SFTP 存储监控、密钥管理等。
 
@@ -55,4 +55,4 @@ Campaign 控制面板允许管理每个实例的设置并跟踪使用情况，�
 * [实例详细信息](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=zh-Hans)
 * [GPG 密钥管理](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hans)
 
-[!DNL :arrow_upper_right:] 探索此文档中的所有控制面板 [功能](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)
+[!DNL :arrow_upper_right:]请参阅[本文档](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)以了解控制面板的所有功能

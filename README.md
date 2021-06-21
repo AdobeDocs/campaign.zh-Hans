@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## 关于您对 Adobe 内容的参与程度
 
-请参阅 [Adobe 文档参与者指南](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)。
+请参阅 [Adobe 文档参与者指南](https://docs.adobe.com/content/help/zh-Hans/contributor/contributor-guide/introduction.html)。
 
 您的参与方式取决于您的个人身份以及您希望参与的更改类型：
 

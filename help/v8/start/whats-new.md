@@ -9,47 +9,47 @@ exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
 workflow-type: tm+mt
 source-wordcount: '455'
-ht-degree: 52%
+ht-degree: 89%
 
 ---
 
 # Adobe Campaign v8 有哪些新增功能？{#ac-gs-what-is-new}
 
-Adobe Campaign v8 在基础架构、安全性、可投放性和监测方面有着显著改进。利用[[!DNL Snowflake]](https://www.snowflake.com/)云数据库技术，Adobe Campaign可以显着提高其规模和速度，并能够管理更多的客户档案，以及更高的每小时交付率和交易。
+Adobe Campaign v8 在基础架构、安全性、可投放性和监测方面有着显著改进。通过利用 [[!DNL Snowflake]](https://www.snowflake.com/)，一种云数据库技术，Adobe Campaign 大幅提升了其规模和速度，能够管理更多的客户档案，并且可实现更高的投放速率和每小时事务处理量。
 
 关键功能包括：
 
-* **速度和规模**。通过利用 Cloud Database Manager，Adobe Campaign v8 的查询速度提高了 200 倍，具有多 PB 规模，提升了每小时消息处理量，消息处理速度高达 20M/小时或 1M/小时（事务性消息），并可管理多达 2 亿的活动用户档案（可能达到 10 亿）。
+* **速度和规模**。通过利用 Cloud Database Manager，Adobe Campaign v8 的查询速度提高了 200 倍，具有多 PB 规模，提升了每小时的消息处理量，消息处理速度高达 20M/小时或 1M/小时（事务性消息），并可管理多达 2 亿的活动用户档案（可能达到 10 亿）。
 
 * **连接至 Adobe Experience Platform**。Adobe Campaign v8 支持各种数据连接器与 Adobe Experience Platform/RT-CDP 的搭配使用、统一的客户档案以及与 Journey Orchestration 的本机集成。这些投资将可以优化 Adobe Campaign 客户体验并解锁新的用例，如向活动添加个性化实时客户旅程的能力。
 
-* **托管式云服务**。Adobe Campaign v8 是一款领先的托管式云服务，提供主动监督、及时警报和服务治理功能。对营销人员而言，这是一种更灵活、更可扩展的跨渠道营销活动管理。
+* **托管式云服务**。Adobe Campaign v8 是一款领先的托管式云服务，提供主动监督、及时警报和服务治理功能。这对于营销人员的价值在于，能够实现更灵活、可扩展的跨渠道营销活动管理。
 
 >[!CAUTION]
 >
->目前，Campaign v8仅&#x200B;****&#x200B;可用作托管Cloud Service，不能部署在内部部署或混合环境中。
+>目前，Campaign v8 **仅**&#x200B;作为托管云服务提供，不能部署在内部部署或混合环境中。
 >
->从现有Campaign Classicv7环境进行迁移的功能尚不可用。
+>从现有 Campaign Classic v7 环境进行迁移的功能尚不可用。
 >
->如果您不确定部署模型或有任何问题，请与您的客户团队联系。
+>如果您不确定部署模式或有任何问题，请与您的客户团队联系。
 
 ![](assets/home-page.png)
 
 ## 扩展
 
-Campaign v8在从定位到最终报告的流程中的任何步骤都提供了端到端规模：
+Campaign v8 在流程的任何步骤（从定位到最终报告）中都实现了端到端的扩展：
 
 * 扩展可处理的数据量（最高达 8 TB）
 * 扩展分段和定位的查询性能，还可扩展数据摄取和输出
-* 将投放准备范围从小时扩展到分钟
+* 将投放准备速度从小时扩展到分钟
 
 ## 简化和性能提升
 
 Campaign v8引入了&#x200B;**完全联合数据访问**(FFDA)的概念：现在，云数据库中的所有数据都是远程的。
 
-使用此新架构，Campaign v8简化了数据管理：云数据库上不需要索引。 您只需创建表格、复制数据即可开始。
+凭借这种新架构，Campaign v8 简化了数据管理：云数据库上不需要索引。您只需创建表格、复制数据即可开始。
 
-[!DNL Snowflake] 是Campaign Cloud数据库，它将为您带来速度和耐力：系统活动峰值没有过载。
+[!DNL Snowflake]是 Campaign 云数据库，它将为您带来速度和耐用性上的提升：不会出现系统活动峰值过载的情况。
 
 云数据库技术无需特定的维护来保证性能级别。
 
@@ -59,5 +59,5 @@ Campaign v8引入了&#x200B;**完全联合数据访问**(FFDA)的概念：现在
 
 您还可以通过旅程人工智能配置预测发送时间优化和预测参与度评分，并提高打开率、点击量和收入。
 
-[!DNL :bulb:] [了解有关 Campaign 集成的更多信息](../connect/integration.md)
+[!DNL :bulb:] [了解关于 Campaign 集成的更多信息](../connect/integration.md)
 

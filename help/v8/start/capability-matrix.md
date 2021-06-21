@@ -9,42 +9,42 @@ exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b
 source-git-commit: 93b690d815f73d11de7de90b92ae188082a3e9e4
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 43%
+ht-degree: 97%
 
 ---
 
-# [!DNL Campaign Classic] v7 -  [!DNL Campaign] v8功能{#gs-matrix}
+# [!DNL Campaign Classic] v7 - [!DNL Campaign] v8 功能{#gs-matrix}
 
-作为现有的[!DNL Campaign Classic] v7用户，您不应期望与[!DNL Adobe Campaign]的交互方式出现任何大中断。 除了 UI 和配置步骤中显现的小变化外，v8 中的大多数变化都不明显。
+作为现有的 [!DNL Campaign Classic] v7 用户，您与 [!DNL Adobe Campaign] 的交互方式不会发生任何大的变化。除了 UI 和配置步骤中显现的小变化外，v8 中的大多数变化都不明显。
 
 关键变化：
 
 * 区段创建速度提高 200 倍
 * 投放速度提升
-* 实时报告 包含多维数据集
+* 实时报告包含多维数据集
 
-作为[!DNL Campaign Classic]用户，请注意，大多数[!DNL Campaign Classic] v7功能在[!DNL Campaign] v8中可用，但在[此部分](#gs-removed)中列出的一小组功能除外。 其他功能将在未来版本中发布。[在此部分中了解更多信息](#gs-unavailable-features)
+作为 [!DNL Campaign Classic] 用户，请注意， v7 的大多数功能[!DNL Campaign Classic]都可以在[!DNL Campaign] v8 中使用，但[本节](#gs-removed)所列的一小部分功能除外。其他功能将在以后的版本中发布。[在本节中了解详情](#gs-unavailable-features)
 
-[!DNL :bulb:] 在本页了解 [!DNL Campaign] 有关v8架构的 [更多信息](../dev/architecture.md)。
+[!DNL :bulb:]如需详细了解[!DNL Campaign] v8 架构，请参阅[此页面](../dev/architecture.md)。
 
 ## 产品配置变化
 
-### [!DNL Campaign] 和  [!DNL Snowflake] {#ac-gs-snowflake}
+### [!DNL Campaign] 和 [!DNL Snowflake] {#ac-gs-snowflake}
 
-[!DNL Adobe Campaign] v8与两个数据库配合使用：用于用户界面实时消息传送和统一查询和通过API写入的本地数据库，以及用于促销活动执行、批量查询和工作流执行的云数据库。
+[!DNL Adobe Campaign] v8 可与两个数据库配合使用：用于用户界面实时消息传递和统一查询、通过 API 写入的本地数据库，以及用于活动执行、批量查询和工作流执行的云数据库。
 
-这是软件架构的重大变化。数据现在位于远程位置，Campaign 会联合所有数据（包括用户档案）。[!DNL Campaign]从定位到消息执行， 流程现在实现了端到端扩展：数据摄取、分段、定位、查询、投放现在通常可在几分钟内运行。这个新版本解决了扩展的全部难题，同时保持了相同级别的灵活性和可扩展性。用户档案的数量几乎是无限的，而且可以延长数据保留时间。
+这是软件架构的重大变化。数据现在位于远程位置，Campaign 会联合所有数据（包括用户档案）。[!DNL Campaign] 流程现在实现了端到端扩展，从定位到消息执行：数据摄取、分段、定位、查询、投放一般只需要几分钟即可运行。这个新版本解决了扩展的全部难题，同时保持了相同级别的灵活性和可扩展性。用户档案的数量几乎是无限的，而且可以延长数据保留时间。
 
-云存储在&#x200B;**[!DNL Snowflake]**&#x200B;中执行：新的内置&#x200B;**外部帐户**&#x200B;可确保与云数据库的连接。 它由Adobe配置，不得修改。 [了解详情](../config/external-accounts.md)
+云存储在 **[!DNL Snowflake]** 中执行：一种新的内置&#x200B;**外部帐户**&#x200B;可确保与云数据库的连接。它由 Adobe 配置，不可修改。[了解详情](../config/external-accounts.md)
 
-需要在云数据库中移动或复制的任何内置模式/表格都在 **xxl** 命名空间下附带内置模式扩展。这些扩展包含将内置架构从[!DNL Campaign]本地数据库移动到[!DNL Snowflake]云数据库并相应地调整其结构所需的任何修改：新UUID、更新的链接等
+需要在云数据库中移动或复制的任何内置模式/表格都在 **xxl** 命名空间下附带内置模式扩展。这些扩展包含将内置模式从[!DNL Campaign]本地数据库移动到 [!DNL Snowflake] 云数据库并相应地调整其结构所需的任何修改：新的 UUID、更新的链接等。
 
 >[!CAUTION]
 >
-> 客户数据未存储在本地[!DNL Campaign]数据库中。 因此，所有自定义表格都需要在云数据库中创建。
+> 客户数据并不存储在本地 [!DNL Campaign] 数据库中。因此，所有自定义表格都需要在云数据库中创建。
 
 
-特定API可用于管理本地数据库和云数据库之间的数据。 了解这些新API的工作方式以及如何在[本页](../dev/new-apis.md)中使用它们。
+特定 API 可用于管理本地数据库和云数据库之间的数据。在[本页面](../dev/new-apis.md)中了解这些新 API 的工作方式以及如何使用它们。
 
 ### 数据复制
 
@@ -56,17 +56,17 @@ ht-degree: 43%
 > 部分表格是实时复制的，其他表格则是每小时复制一次。部分表格将具有增量更新，而其他表格则将进行全面更新。
 
 
-[了解有关数据复制的更多信息](../config/replication.md)
+[了解关于数据复制的更多信息](../config/replication.md)
 
 ### ID 管理
 
 Campaign v8 对象现在使用&#x200B;**通用唯一标识符 (UUID)**，允许使用无限的唯一值来标识数据。
 
-请注意，此ID基于字符串，而不是连续的。 主键不是Campaign v8中的数字值，您需要在架构中使用&#x200B;**autouuid**&#x200B;和&#x200B;**autopk**&#x200B;属性。
+请注意，此 ID 是基于字符串的，而不是按顺序的。主密钥不是 Campaign v8 中的数字值，您需要在模式中使用 **autouuid** 和 **autopk** 属性。
 
-在Campaign Classicv7及更早版本中，架构（即表）中键的唯一性在数据库引擎的级别处理。 更一般地， PostgreSQL、Oracle或SQL Server等经典数据库引擎包括本机机制，以防止通过主键和/或唯一索引根据列或一组列插入重复的行。 在数据库级别设置正确的索引和主键后，这些版本中不存在重复的ID。
+在 Campaign Classic v7 及更早的版本中，模式（即表格）中密钥的唯一性在数据库引擎级别进行处理。一般来说，PostgreSQL、Oracle 或 SQL Server 等 Classic 数据库引擎包含原生机制，以防止通过主密钥和/或唯一索引根据列或一组列插入重复的行。在数据库级别设置正确的索引和主密钥后，这些版本中不存在重复的 ID。
 
-Adobecampaign v8以Snowflake为核心数据库。 随着查询规模的显着增加，Snowflake数据库的分布式架构不提供这样的机制来管理然后强制表中某个密钥的唯一性。 因此，使用Adobe Campaign v8时，没有任何内容会阻止在表中摄取重复的键。 最终用户现在负责确保Adobe Campaign数据库中密钥的一致性。 [了解详情](../dev/keys.md)
+Adobe campaign v8 以 Snowflake 为核心数据库。随着查询规模的显着增长，Snowflake 数据库的分布式架构无法提供这样的机制来管理并对表格中某个密钥强制执行唯一性。因此，使用 Adobe Campaign v8 时，没有任何内容会阻止在表格中摄取重复的密钥。现在，最终用户负责确保 Adobe Campaign 数据库中密钥的一致性。[了解详情](../dev/keys.md)
 
 ### 简化的维护
 
@@ -78,7 +78,7 @@ Campaign 用户不需要成为数据库专家：不再需要执行复杂的数�
 
 ## 不可用功能{#gs-unavailable-features}
 
-请注意，此第一个版本中没有某些功能，例如：
+请注意，在这个第一版中尚未提供某些功能，例如：
 
 * 营销资源管理
 * 分布式营销
@@ -86,16 +86,16 @@ Campaign 用户不需要成为数据库专家：不再需要执行复杂的数�
 * 活动优化
 * 响应管理器
 * 混合/内部部署模型
-* 线路报文传送
+* LINE 消息
 * Campaign 控制面板
 
 >[!CAUTION]
 >
->目前，Campaign v8仅&#x200B;****&#x200B;可用作托管Cloud Service，不能部署在内部部署或混合环境中。
+>目前，Campaign v8 **仅**&#x200B;作为托管云服务提供，不能部署在内部部署或混合环境中。
 >
->从现有Campaign Classicv7环境进行迁移的功能尚不可用。
+>从现有 Campaign Classic v7 环境进行迁移的功能尚不可用。
 >
->如果您不确定部署模型或有任何问题，请与您的客户团队联系。
+>如果您不确定部署模式或有任何问题，请与您的客户团队联系。
 
 ## 移除的功能{#gs-removed}
 

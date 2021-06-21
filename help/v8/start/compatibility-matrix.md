@@ -9,7 +9,7 @@ exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6e
 source-git-commit: 619edce939b39430832fd950ece734f817f9dce3
 workflow-type: tm+mt
 source-wordcount: '278'
-ht-degree: 68%
+ht-degree: 92%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 68%
 
 **浏览器**
 
-**Microsoft Internet Explorer**  11
+**Microsoft Internet Explorer** 11
 
 ### CRM 连接器{#CRMconnectors}
 
@@ -57,7 +57,7 @@ ht-degree: 68%
 
 ### 支持的浏览器 {#Browsers}
 
-以下浏览器与 Campaign 兼容，可用于进行 Web 访问。
+以下浏览器与 Campaign 兼容，可用于 Web 访问。
 
 * **Microsoft Edge**、 **Mozilla Firefox**、**Google Chrome**、**Safari** （最新版本）
 
@@ -65,13 +65,13 @@ ht-degree: 68%
 
 ## 如何检查您的 Campaign 版本 构建
 
-使用&#x200B;**Help > About...**&#x200B;菜单检查您的版本。
+使用 **Help > About...** 菜单检查您的版本。
 
 ![](assets/ac-version.png)
 
 您可以访问以下信息：
 
-* 客户端控制台和应用程序服务器的&#x200B;**版本**&#x200B;编号。 在上面的示例中，客户端控制台和应用程序服务器的版本均为8.1.5。
-* SHA号，在圆括号中。
-* 联系Adobe客户关怀的链接。
-* Adobe隐私政策、使用条款和Cookie政策的链接。
+* Campaign 客户端控制台和应用程序服务器的&#x200B;**版本**&#x200B;编号。在上面的示例中，客户端控制台和应用程序服务器的版本均为 8.1.5。
+* 用圆括号括起的 SHA 编号。
+* 用于联系 Adobe 客户关怀团队的链接。
+* 指向 Adobe 隐私政策、使用条款和 Cookie 政策的链接。

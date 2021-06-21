@@ -9,17 +9,17 @@ exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: 9cb1b38456601bce21d458fea42a5c112d9fafb4
 workflow-type: tm+mt
 source-wordcount: '600'
-ht-degree: 68%
+ht-degree: 97%
 
 ---
 
 # 开始使用消息{#gs-ac-audiences}
 
-借助Adobe Campaign，您可以发送跨渠道营销活动，包括电子邮件、短信、推送通知和直邮，并使用各种专用报告衡量其有效性。 这些消息通过投放设计和发送，并且可以针对每个收件人进行个性化。
+借助 Adobe Campaign，您可以发送跨渠道活动内容，包括电子邮件、短信、推送通知和直邮，并使用各种专门的报告衡量其有效性。这些消息通过投放设计和发送，并且可以针对每个收件人进行个性化。
 
 核心功能包括定位、消息定义和个性化、通信执行和相关的运营报告。主要功能接入点是投放助手。此接入点可导向 Adobe Campaign 涵盖的多种功能。
 
-了解在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=zh-Hans)中创建投放的关键步骤。
+请参阅[ Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=zh-Hans)以了解创建投放的重要步骤。
 
 Adobe Campaign v8 附带以下投放渠道：
 
@@ -48,19 +48,19 @@ Adobe Campaign v8 附带以下投放渠道：
 
    ![](assets/deliveries-in-a-campaign.png)
 
-   [!DNL :arrow_upper_right:] [了解如何在活动上下文中发送消息](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=zh-Hans)。
-* 通过[workflow](../config/workflows.md)发送消息
+   [!DNL :arrow_upper_right:] [了解如何在活动的上下文中发送消息](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=zh-Hans)。
+* 通过[工作流](../config/workflows.md)发送消息
 
    ![](assets/send-in-a-wf.png)
 
    [!DNL :arrow_upper_right:] [了解如何自动发送电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/delivery.html?lang=zh-Hans)
-* [触发](../send/transactional.md) 来自事件的消息
-   [!DNL :arrow_upper_right:] [用例：了解如何发送带有附件的事务型电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=en)
+* 从事件[触发消息](../send/transactional.md)
+   [!DNL :arrow_upper_right:] [用例：了解如何发送带有附件的事务性电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=en)
 * 计划消息发送
 
    ![](assets/schedule-send.png)
 
-   [!DNL :arrow_upper_right:] [用例：了解如何安排和发送生日电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/sending-a-birthday-email.html?lang=zh-Hans)
+   [!DNL :arrow_upper_right:] [用例：了解如何计划和发送生日电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/sending-a-birthday-email.html?lang=zh-Hans)
 
 
 ## 添加个性化内容
@@ -70,36 +70,33 @@ Adobe Campaign v8 附带以下投放渠道：
 您可以：
 
 * 插入动态的个性化字段。
-
-   [!DNL :arrow_upper_right:] 了解如何在Campaign Classicv7文档中 [使用个性化字段](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-fields.html?lang=zh-Hans)
+   [!DNL :arrow_upper_right:] 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-fields.html?lang=zh-Hans)以了解如何使用个性化字段
 * 插入预定义的个性化块。
-
-   [!DNL :arrow_upper_right:] 了解什么是个性化块以及如何在 [Campaign Classicv7文档中使用](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-blocks.html?lang=zh-Hans)
+   [!DNL :arrow_upper_right:] 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-blocks.html?lang=zh-Hans)以了解什么是个性化块及其使用方法
 * 创建条件内容。
-
-   [!DNL :arrow_upper_right:] 了解如何在Campaign Classicv7文 [档中插入条件内容](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/conditional-content.html?lang=zh-Hans)
+   [!DNL :arrow_upper_right:] 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/conditional-content.html?lang=zh-Hans)以了解如何插入条件内容
 
 ## 发送事务性消息
 
 事务性消息（消息中心）是用于管理触发消息的 Campaign 模块。
 
-[!DNL :bulb:] 请参阅[本节](../dev/architecture.md#transac-msg-archi)以进一步了解事务性消息功能
+[!DNL :bulb:] 请参阅[本节](../dev/architecture.md#transac-msg-archi)以了解关于事务性消息功能的更多信息
 
-[!DNL :bulb:] 配置和发送事务性消息的步骤详见[此页面](../send/transactional.md)
+[!DNL :bulb:] 有关配置和发送事务性消息的步骤详情，请参阅[此页面](../send/transactional.md)
 
-[!DNL :arrow_upper_right:] 在Campaign Classicv7文档中的端到端用例中发现 [此功能](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=en)
+[!DNL :arrow_upper_right:] 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=en)以了解此功能在端到端用例中的作用
 
 ## 投放和跟踪日志
 
 在发送后监测投放是确保营销活动有效并接触到客户的重要步骤。您可以在发送投放后进行监测，并了解如何管理投放失败和隔离。
 
-[!DNL :arrow_upper_right:] [在此部分中了解如何监控投放](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=zh-Hans#sending-messages)
+[!DNL :arrow_upper_right:] [在本节中了解如何监测投放](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=zh-Hans#sending-messages)
 
 
 **相关主题**
 
 [!DNL :arrow_upper_right:]  [投放最佳实践](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=zh-Hans)
 
-[!DNL :arrow_upper_right:]  [测试和发送电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html)
+[!DNL :arrow_upper_right:] [测试并发送电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html)
 
-[!DNL :arrow_upper_right:]  [发送校样](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=zh-Hans)
+[!DNL :arrow_upper_right:]  [发送验证](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=zh-Hans)

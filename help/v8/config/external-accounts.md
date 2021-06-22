@@ -5,9 +5,9 @@ description: Campaign外部帐户
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: ff2c49a2b4f22cde7ebb798d9f565e133c0268fc
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1013'
 ht-degree: 4%
 
 ---
@@ -41,7 +41,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
    **退回邮件**&#x200B;外部帐户指定用于连接到电子邮件服务的外部POP3帐户。 为POP3访问配置的所有服务器都可用于接收回信。
 
-   [!DNL :arrow_upper_right:] 在Campaign Classicv7文档中了解有关入站电 [子邮件的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html)
+   [!DNL :arrow_upper_right:] 在Campaign Classicv7文档中了解有 [关入站电子邮件的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html){target=&quot;_blank&quot;}
 
 * **路由**
 
@@ -145,7 +145,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
 这些外部帐户可用于使用&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动将数据导入或导出到Adobe Campaign。
 
-[!DNL :arrow_upper_right:] 在Campaign Classicv7文档中了解有关工作流中文 [件传输的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html)
+[!DNL :arrow_upper_right:] 在Campaign Classicv7文档中了解有关工作流中 [文件传输的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html){target=&quot;_blank&quot;}
 
 * **FTP和SFTP**
 

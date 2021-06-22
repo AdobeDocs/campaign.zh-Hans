@@ -6,10 +6,10 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 97%
+source-wordcount: '900'
+ht-degree: 95%
 
 ---
 
@@ -92,9 +92,9 @@ Campaign 工作区可通过[客户端控制台](../dev/general-architecture.md)�
 
 Campaign 工作区可以根据您的需求进行调整。
 
-[!DNL :arrow_upper_right:] 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=zh-Hans)以了解如何使用 Campaign 工作区
+[!DNL :arrow_upper_right:] 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=zh-Hans)以了解如何使用 Campaign 工作区{target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=zh-Hans)以了解如何自定义列表
+[!DNL :arrow_upper_right:]  了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=zh-Hans)中自定义列表。{target=&quot;_blank&quot;}
 
 您还可以通过 Web 访问某些功能。
 
@@ -117,7 +117,7 @@ Campaign v8 用户界面提供以下语言版本：
 >
 >创建实例后，无法更改语言。
 
-受语言影响的日期和时间格式。有关更多信息，请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=zh-Hans#date-and-time)。
+受语言影响的日期和时间格式。有关更多信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=zh-Hans#date-and-time){target=&quot;_blank&quot;}。
 
 **另请参阅**
 

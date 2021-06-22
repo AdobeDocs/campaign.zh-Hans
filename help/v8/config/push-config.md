@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 619edce939b39430832fd950ece734f817f9dce3
+source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1289'
 ht-degree: 1%
 
 ---
@@ -797,7 +797,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
 利用变量，可在收到通知后定义移动应用程序行为。 这些变量必须在移动设备应用程序代码和Adobe Campaign控制台的专用移动设备应用程序服务的&#x200B;**[!UICONTROL Variables]**&#x200B;选项卡中定义。
 
-[!DNL :arrow_upper_right:] 请参阅Campaign Classicv7 **文档，了** 解有关移动设备应用程序的更多信息： [iOS的配置步](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html) 骤和Android [的配置步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html)。
+[!DNL :arrow_upper_right:] 请参阅Campaign Classicv7 **文档，了** 解有关移动设备应用程序的更多信息： [iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;}的配置步骤和 [Android](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html){target=&quot;_blank&quot;}的配置步骤。
 
 以下是允许移动设备应用程序收集通知中任何添加变量的代码示例。 在我们的示例中，我们使用“VAR”变量。
 

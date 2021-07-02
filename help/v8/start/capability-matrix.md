@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
 source-git-commit: 93b690d815f73d11de7de90b92ae188082a3e9e4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '829'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -74,9 +74,9 @@ Campaign 用户不需要成为数据库专家：不再需要执行复杂的数�
 
 ## 报告
 
-请注意，与Adobe Campaign v7相比，Campaign Classic报表已得到优化，并提供了更好的扩展功能。 多维数据集的现有限制不适用。
+请注意，与 Adobe Campaign v7 相比，Campaign Classic 报表已得到优化，并提供了更好的扩展功能。 多维数据集的现有限制不适用。
 
-## 不可用功能{#gs-unavailable-features}
+## 功能不可用{#gs-unavailable-features}
 
 请注意，在这个第一版中尚未提供某些功能，例如：
 

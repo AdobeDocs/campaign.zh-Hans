@@ -1,6 +1,6 @@
 ---
 source-git-commit: f75b2ddc073d05548740cb3e9371063cf0d83ca5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '430'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ### 较小改动
 
-如果您出于好意而提供较小更新，请访问相应文章，然后单击文章中的&#x200B;**编辑**&#x200B;链接，该链接将转到文章的 GitHub 源。然后，只需使用 GitHub UI 进行更新。有关详细信息，请参阅常规 [Adobe 文档参与者指南](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)。
+如果您出于好意而提供较小更新，请访问相应文章，然后单击文章中的&#x200B;**编辑**&#x200B;链接，该链接将转到文章的 GitHub 源。然后，只需使用 GitHub UI 进行更新。有关详细信息，请参阅常规 [Adobe 文档参与者指南](https://docs.adobe.com/content/help/zh-Hans/contributor/contributor-guide/introduction.html)。
 
 您为此存储库中的文档和代码示例提交的较小更正或说明应遵守 Adobe 使用条款。
 
@@ -44,7 +44,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 社区参与者可以使用 GitHub UI 进行基本编辑，或者将存储库分类，做出重大贡献。
 
-有关详细信息，请参阅 [Adobe 文档贡献者指南](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)。
+有关详细信息，请参阅 [Adobe 文档贡献者指南](https://docs.adobe.com/content/help/zh-Hans/contributor/contributor-guide/introduction.html)。
 
 ## 如何使用标记设置主题格式
 

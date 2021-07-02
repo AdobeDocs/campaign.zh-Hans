@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
 source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '658'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -39,19 +39,19 @@ ht-degree: 82%
 
    电子邮件可投放性是每个发件人的营销计划取得成功的重要因素，其特点是不断变化的标准和规则。想要在这个数字化的世界中取得成果，就必须定期调整电子邮件策略，并考虑关键可投放性趋势，以便最好地吸引受众。
 
-   [!DNL :arrow_upper_right:] 请参阅本指南，了解 [交付性最佳实践](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans){target=&quot;_blank&quot;}
+   [!DNL :arrow_upper_right:]请参阅本指南以了解[可投放性最佳实践](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans){target=&quot;_blank&quot;}
 
-   [!DNL :arrow_upper_right:] 在本指南中了解如何在 [Campaign中实施投放能力](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=zh-Hans){target=&quot;_blank&quot;}
+   [!DNL :arrow_upper_right:] 请参阅[本指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=zh-Hans){target=&quot;_blank&quot;}以了解如何在 Campaign 中实施可投放性
 
 1. **如何确认我的投放已成功发送，并且未出现错误？**
 
    Adobe Campaign 提供了一组仪表板和工具来监测电子邮件投放。
 
-   [阅读Campaign Classicv7文档，了解](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=zh-Hans){target=&quot;_blank&quot;}如何确保邮件已发送、监视执行情况并在发生错误时采取行动。
+   [阅读 Campaign Classic v7 文档以了解](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=zh-Hans){target=&quot;_blank&quot;}如何确认消息已发送、监测执行情况并在发生错误时采取行动。
 
 1. **我是否能监测工作流的执行情况？**
 
-   [!DNL :arrow_upper_right:] 了解如何在Campaign Classicv7文 [档中监控Campaign工作流执行](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html?lang=zh-Hans){target=&quot;_blank&quot;}
+   [!DNL :arrow_upper_right:]请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html?lang=zh-Hans){target=&quot;_blank&quot;}以了解如何监测 Campaign 工作流的执行情况。
 
 1. **哪些系统和组件与 Campaign v8 兼容？**
 
@@ -71,9 +71,9 @@ ht-degree: 82%
 
    可以从 Adobe 下载中心获取安装程序和客户端控制台。
 
-   [单击此处](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target=&quot;_blank&quot;}以访问Experience Cloud软件分发。
+   [单击此处](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target=&quot;_blank&quot;}访问 Experience Cloud Software Distribution。
 
-   在本页](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans){target=&quot;_blank&quot;}中了解有关分发中心[的更多信息。
+   [在此页面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans){target=&quot;_blank&quot;}中进一步了解 Distribution Center。
 
 1. **我可以与 Campaign 专家联系吗？**
 
@@ -84,6 +84,6 @@ ht-degree: 82%
 
    通过创建案例，您可以就您在使用 Adobe 产品的过程中遇到的任何问题联系 Adobe 客户支持团队。为帮助您解决问题或排除疑难，Adobe Admin Console 将支持您与 Adobe 客户支持团队聊天。
 
-   要记录问题或在该新系统中启动聊天会话，请连接到[Adobe Admin Console](https://adminConsole.adobe.com/overview){target=&quot;_blank&quot;}。
+   如需在新系统中登记问题或开始聊天会话，请连接到 [Adobe Admin Console](https://adminConsole.adobe.com/overview){target=&quot;_blank&quot;}。
 
    此系统要求每个用户都有个人帐户，并具有正确的权限。如果您发现无法使用 Adobe ID 登录，请通过 Experience League 请求访问，客户关怀团队将尽快为您进行设置。[了解详情](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}

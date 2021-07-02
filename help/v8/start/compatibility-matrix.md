@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 source-git-commit: 619edce939b39430832fd950ece734f817f9dce3
-workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 92%
+workflow-type: ht
+source-wordcount: '277'
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 92%
 
 ### 客户端控制台{#ClientConsoleoperatingsystems}
 
-警告：要使用 Campaign 客户端控制台，必须配备以下操作系统和浏览器。
+:warning:警告：要使用 Campaign 客户端控制台，必须配备以下操作系统和浏览器。
 
 **操作系统**
 
@@ -52,8 +52,8 @@ ht-degree: 92%
 
 ### 移动 SDK{#MobileSDK}
 
-* **Android** 7.x、8.x、9.0（带有Campaign Android SDK内部版本1.1.1）。
-* **Apple iOS**  9 - 14，带有Campaign iOS SDK内部版本1.0.26，与32位和64位版本兼容。
+* **Android** 7.x、8.x、9.0 适用于 Campaign Android SDK 版本 1.1.1。
+* **Apple iOS** 9 - 14 适用于 Campaign iOS SDK 版本 1.0.26，与 32 位和 64 位版本兼容。
 
 ### 支持的浏览器 {#Browsers}
 
@@ -63,7 +63,7 @@ ht-degree: 92%
 
 * **Internet Explorer** 11
 
-## 如何检查您的 Campaign 版本 构建
+## 如何检查您的 Campaign 版本和版本
 
 使用 **Help > About...** 菜单检查您的版本。
 

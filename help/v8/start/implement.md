@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1214'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
 * **用户同意和数据保留**：请参阅 [Campaign Classic 隐私文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans#consent)以了解如何获得用户同意、设置双重选择加入订阅机制、简化选择退出并配置数据保留
 
-* **隐私和数据保护法规**:请参阅 [Campaign Classic隐私文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans){target=&quot;_blank&quot;}，以了解有关欧盟《通用数据保护条例》(GDPR)、《加州消费者隐私法案》(CCPA)和其他国际隐私要求以及这些法规对贵组织和Adobe Campaign有何影响的信息。
+* **隐私和数据保护法规**：请参阅 [Campaign Classic 隐私文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans){target=&quot;_blank&quot;}，了解有关欧盟《通用数据保护条例》(GDPR)、《加州消费者隐私法案》(CCPA) 和其他国际隐私要求的信息，以及这些法规对您的组织和 Adobe Campaign 有何影响。
 
 ### 安全性
 
@@ -52,7 +52,7 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
 您可以手动将用户添加到 Campaign，并将他们与群组关联，与您的角色层级保持一致。随后，用户将能够登录并获取适合他们的数据和权限。
 
-[!DNL :arrow_upper_right:] 在此部分中了解如何将用 [户添加到Adobe Campaign](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=zh-Hans#getting-started){target=&quot;_blank&quot;}。
+[!DNL :arrow_upper_right:] 请参阅[本节](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=zh-Hans#getting-started)了解如何将用户添加到 Adobe Campaign。
 
 ### 安装 Campaign Client Console
 
@@ -80,15 +80,15 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
    [!DNL :arrow_upper_right:] [了解有关电子邮件模板的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=zh-Hans){target=&quot;_blank&quot;}
 
-   [!DNL :arrow_upper_right:] 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=zh-Hans#orchestrating-campaigns){target=&quot;_blank&quot;}中使用促销活动模板
+   [!DNL :arrow_upper_right:]请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=zh-Hans#orchestrating-campaigns){target=&quot;_blank&quot;}以了解如何使用活动模板
 
-   [!DNL :arrow_upper_right:] 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=zh-Hans#workflow-templates){target=&quot;_blank&quot;}中配置工作流模板
+   [!DNL :arrow_upper_right:] 了解如何在 [Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=zh-Hans#workflow-templates){target=&quot;_blank&quot;}中配置工作流程模板
 
 1. 配置类型规则
 
    利用 Campaign 类型规则来筛选、控制和监测投放发送。例如，疲劳规则可控制消息传递的频率和数量，以避免对收件人过度宣传。实施后，类型规则就会在投放中引用。
 
-   [!DNL :arrow_upper_right:] 在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=zh-Hans#orchestrating-campaigns){target=&quot;_blank&quot;}中了解有关分类和疲劳管理的更多信息
+   [!DNL :arrow_upper_right:] 在 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=zh-Hans#orchestrating-campaigns){target=&quot;_blank&quot;}中了解有关分类和疲劳管理的更多信息
 
 1. 熟悉 Campaign 内置数据模型
 

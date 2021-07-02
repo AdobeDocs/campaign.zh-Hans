@@ -4,9 +4,9 @@ description: Campaign v8 帮助中心
 title: Adobe Campaign v8 产品文档
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
 source-git-commit: 58632224858391f673dfdc87b49417d65b2f9b09
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '93'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -65,4 +65,4 @@ ht-degree: 89%
 * [测量和跟踪](start/reporting.md)
 * [与其他解决方案配合使用](connect/integration.md)
 * [Campaign v8 常见问题解答](start/campaign-faq.md)
-* [Adobe Campaign v8产品说明](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)
+* [Adobe Campaign v8 产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)

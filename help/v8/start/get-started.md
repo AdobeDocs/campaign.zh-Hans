@@ -1,15 +1,15 @@
 ---
 product: Adobe Campaign
 title: 开始使用 Campaign v8
-description: Campaign的新用户？ 了解如何快速入门
+description: Campaign 新用户？了解如何开始使用
 feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
 source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '900'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Adobe Campaign 提供了跨渠道客户体验设计平台，并为可视化的�
 
 ![](assets/ac-capabilities.png)
 
-## 整合的客户档案 {#integrated-customer-profile}
+## Integrated Customer Profile {#integrated-customer-profile}
 
 用户档案集中存储在一个功能强大的云数据库中。有许多可能的机制可获取用户档案并创建此数据库：通过 Web 窗体在线收集、手动或自动导入文本文件、复制公司数据库或其他信息系统的内容。借助 Adobe Campaign，您可以整合营销历史、购买信息、偏好、CRM 数据，以及整合视图中任何相关的 PII 数据，从而进行分析并采取行动。
 
@@ -43,7 +43,7 @@ Adobe Campaign 具有功能强大且易于使用的市场细分和定位功能�
 
 [!DNL :bulb:]请参阅[本节](audiences.md)以了解关于分段、受众创建和个性化的更多信息。
 
-## 跨渠道活动编排 {#cross-channel-campaign-orchestration}
+## 跨渠道营销活动编排 {#cross-channel-campaign-orchestration}
 
 您可以利用 Adobe Campaign 在多个渠道上设计和编排有针对性的个性化活动：电子邮件、直邮、SMS、推送通知等。通过单个界面为您提供计划、编排、配置、个性化、自动化、执行和衡量所有活动和通信所需的全部功能。
 
@@ -64,7 +64,7 @@ Adobe Campaign 提供了一个全面的图形环境，允许您设计包括分�
 
 [!DNL :bulb:]请参阅[本节](../config/workflows.md)以了解如何设计和执行工作流。
 
-## 报告和分析{#analysis-and-reporting}
+## 报告和分析 {#analysis-and-reporting}
 
 Adobe Campaign 可逐步丰富客户数据和用户档案，从而让您监测和解读客户的行为。利用报告和分析工具，您可以充分利用每一个新活动、更有效地确定营销方案的目标，且最大限度提高活动的影响力及投资回报率。
 
@@ -78,7 +78,7 @@ Adobe Campaign 可逐步丰富客户数据和用户档案，从而让您监测�
 
 ## 关于 Campaign 功能的更多信息 {#core-capabilities-and-add-ons}
 
-根据您的需求和架构，Adobe Campaign 提供了一系列功能，帮助您实施和优化各种对话式营销功能。其中有些是核心功能，有些功能取决于软件包的安装和您的配置。此处提供了详细的产品说明：[Adobe Campaign v8 产品说明](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)。
+根据您的需求和架构，Adobe Campaign 提供了一系列功能，帮助您实施和优化各种对话式营销功能。其中有些是核心功能，有些功能取决于软件包的安装和您的配置。此处提供了详细的产品说明：[Adobe Campaign v8 产品说明](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)。
 
 [!DNL :bulb:] 已经熟悉了 Campaign Classic？在[此页面](capability-matrix.md)中了解 Campaign Classic 和 Campaign v8 之间的主要差异。
 
@@ -94,7 +94,7 @@ Campaign 工作区可以根据您的需求进行调整。
 
 [!DNL :arrow_upper_right:] 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=zh-Hans)以了解如何使用 Campaign 工作区{target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:]  了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=zh-Hans)中自定义列表。{target=&quot;_blank&quot;}
+[!DNL :arrow_upper_right:] 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=zh-Hans)以了解如何自定义列表{target=&quot;_blank&quot;}
 
 您还可以通过 Web 访问某些功能。
 
@@ -117,10 +117,10 @@ Campaign v8 用户界面提供以下语言版本：
 >
 >创建实例后，无法更改语言。
 
-受语言影响的日期和时间格式。有关更多信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=zh-Hans#date-and-time){target=&quot;_blank&quot;}。
+受语言影响的日期和时间格式。有关更多信息，请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=zh-Hans#date-and-time)。
 
 **另请参阅**
 
-* [Campaign v8兼容性矩阵](compatibility-matrix.md)
+* [Campaign v8 兼容性矩阵](compatibility-matrix.md)
 * [连接到 Campaign](connect.md)
 * [常见问题解答](campaign-faq.md)

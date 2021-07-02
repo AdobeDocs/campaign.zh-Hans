@@ -1,19 +1,19 @@
 ---
 product: Adobe Campaign
-title: Campaign v8 的新增功能
-description: 探索Campaign v8中的关键功能
+title: Campaign v8 新增功能
+description: 探索 Campaign v8 关键功能
 feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '455'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# Adobe Campaign v8 有哪些新增功能？{#ac-gs-what-is-new}
+# Adobe Campaign v8 有哪些新增功能？ {#ac-gs-what-is-new}
 
 Adobe Campaign v8 在基础架构、安全性、可投放性和监测方面有着显著改进。通过利用 [[!DNL Snowflake]](https://www.snowflake.com/)，一种云数据库技术，Adobe Campaign 大幅提升了其规模和速度，能够管理更多的客户档案，并且可实现更高的投放速率和每小时事务处理量。
 
@@ -45,7 +45,7 @@ Campaign v8 在流程的任何步骤（从定位到最终报告）中都实现�
 
 ## 简化和性能提升
 
-Campaign v8引入了&#x200B;**完全联合数据访问**(FFDA)的概念：现在，云数据库中的所有数据都是远程的。
+Campaign v8 引入了&#x200B;**完全联合数据访问** (FFDA) 概念：所有数据现在都位于云数据库上的远程位置。
 
 凭借这种新架构，Campaign v8 简化了数据管理：云数据库上不需要索引。您只需创建表格、复制数据即可开始。
 
@@ -55,7 +55,7 @@ Campaign v8引入了&#x200B;**完全联合数据访问**(FFDA)的概念：现在
 
 ## 综合性生态系统
 
-您可以将Campaign与一组功能强大的Adobe解决方案集成，例如：Adobe Analytics、AdobeJourney Orchestration、实时CDP等。
+您可以将 Campaign 与一系列功能强大的 Adobe 解决方案集成，例如 Adobe Analytics、Workfront、Journey Orchestration、Real-Time CDP 等等。
 
 您还可以通过旅程人工智能配置预测发送时间优化和预测参与度评分，并提高打开率、点击量和收入。
 

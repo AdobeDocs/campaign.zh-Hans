@@ -7,13 +7,13 @@ role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '644'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
-# 开始使用消息{#gs-ac-audiences}
+# 消息入门{#gs-ac-audiences}
 
 借助 Adobe Campaign，您可以发送跨渠道活动内容，包括电子邮件、短信、推送通知和直邮，并使用各种专门的报告衡量其有效性。这些消息通过投放设计和发送，并且可以针对每个收件人进行个性化。
 
@@ -43,22 +43,22 @@ Adobe Campaign v8 附带以下投放渠道：
 
    ![](assets/send-email.png)
 
-   [!DNL :arrow_upper_right:] 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html?lang=zh-Hans){target=&quot;_blank&quot;}中发送消息
+   [!DNL :arrow_upper_right:]请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html?lang=zh-Hans){target=&quot;_blank&quot;}以了解如何发送消息
 
 * 发送与[营销活动](campaigns.md)关联的消息
 
    ![](assets/deliveries-in-a-campaign.png)
 
-   [!DNL :arrow_upper_right:] 在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=zh-Hans){target=&quot;_blank&quot;}中了解如何在促销活动上下文中发送消息
+   [!DNL :arrow_upper_right:]在 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html?lang=zh-Hans){target=&quot;_blank&quot;}中了解如何在营销活动上下文中发送消息
 
 * 通过[工作流](../config/workflows.md)发送消息
 
    ![](assets/send-in-a-wf.png)
 
-   [!DNL :arrow_upper_right:] 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/delivery.html?lang=zh-Hans)中自动投放电子邮件{target=&quot;_blank&quot;}
+   [!DNL :arrow_upper_right:] 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/delivery.html?lang=zh-Hans)以了解如何自动投放电子邮件{target=&quot;_blank&quot;}
 
 * 从事件[触发消息](../send/transactional.md)
-   [!DNL :arrow_upper_right:] [用例：了解如何发送带有附件的事务性电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=en){target=&quot;_blank&quot;}
+   [!DNL :arrow_upper_right:] [用例：了解如何发送带有附件的事务性电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=zh-Hans){target=&quot;_blank&quot;}
 
 * 计划消息发送
 
@@ -94,13 +94,13 @@ Adobe Campaign v8 附带以下投放渠道：
 
 在发送后监测投放是确保营销活动有效并接触到客户的重要步骤。您可以在发送投放后进行监测，并了解如何管理投放失败和隔离。
 
-[!DNL :arrow_upper_right:] 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html#sending-messages){target=&quot;_blank&quot;}中监控投放
+[!DNL :arrow_upper_right:] 请参阅 [Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=zh-Hans#sending-messages){target=&quot;_blank&quot;}以了解如何监测投放
 
 
-**相关** 主题Campaign Classicv7文档：
+**Campaign Classic v7 文档**&#x200B;中的相关主题：
 
-[!DNL :arrow_upper_right:]  [交付最佳实践](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=zh-Hans){target=&quot;_blank&quot;}
+[!DNL :arrow_upper_right:][投放最佳实践](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=zh-Hans){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:]  [测试并发送电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html){target=&quot;_blank&quot;}
+[!DNL :arrow_upper_right:][测试并发送电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html?lang=zh-Hans){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:]  [发送校样](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=zh-Hans){target=&quot;_blank&quot;}
+[!DNL :arrow_upper_right:][发送验证](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=zh-Hans){target=&quot;_blank&quot;}

@@ -6,10 +6,10 @@ feature: 受众
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: 13f3122a830c723fa940290689c8e3a1baa0443a
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 4%
+source-wordcount: '691'
+ht-degree: 5%
 
 ---
 
@@ -99,11 +99,9 @@ Campaign用户使用其Adobe ID通过AdobeIdentity Management系统(IMS)连接�
 
 ## Web访问{#web-access}
 
-应用程序的某些部分可通过使用HTML用户界面的简单Web浏览器访问：营销活动功能板、多维数据集报告、实例监控等。
+应用程序的某些部分可通过Web浏览器使用HTML用户界面进行访问：报告、投放批准、实例监控等。
 
-↗️详细了解[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#console-and-web-access){target=&quot;_blank&quot;}中的Web访问
-
-Web访问提供了与控制台类似的界面，但功能集有所减少。
+Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 例如，对于给定的运算符，在控制台中将显示具有以下选项的营销活动：
 
@@ -115,4 +113,4 @@ Web访问提供了与控制台类似的界面，但功能集有所减少。
 
 验证过程中也使用Web访问：操作员可以单击批准请求电子邮件，并通过其Web浏览器连接到Campaign，以验证或拒绝投放内容或预算。
 
-↗️了解如何在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=zh-Hans#orchestrating-campaigns){target=&quot;_blank&quot;}中设置和管理批准
+要从Web访问Campaign实例，URL为： `https://<your adobe campaign server>:<port number>/view/home`。

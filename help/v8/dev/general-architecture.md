@@ -3,10 +3,10 @@ product: Adobe Campaign
 title: 一般架构
 description: 进一步了解Campaign架构和组件
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: 8b31e24e0b6cfb699179e62366bc6706e9019382
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '1217'
-ht-degree: 2%
+ht-degree: 7%
 
 ---
 
@@ -26,23 +26,23 @@ ht-degree: 2%
 
    Adobe Campaign云数据库基于关系数据库技术，将所有客户信息、促销活动组件、选件和工作流以及促销活动结果存储在客户数据库容器中。
 
-## 个性化客户端环境{#client-env}
+## 个性化客户端环境 {#client-env}
 
 可以通过不同方式访问应用程序：富客户端、瘦客户端或API集成。
 
 * **客户端控制台**:该应用程序的主用户界面是一个本机应用程序（在Windows上），它与Adobe Campaign应用程序服务器通信标准Internet协议（SOAP、HTTP等）。Adobe Campaign Client Console 具有出色的用户友好性，可帮助提升工作效率，使用的带宽非常少（通过使用本地缓存），并且易于部署。此控制台可以从Internet浏览器部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成HTTP(S)流量。
 
-   [!DNL :bulb:] [进一步了解Campaign客户端控制台](../start/connect.md)。
+   ??[了解有关Campaign客户端控制台的更多信息](../start/connect.md)。
 
 * **Web访问**:部分应用程序可通过使用HTML用户界面（包括报告模块、投放批准阶段、实例监控等）的简单web浏览器访问。
 
-   [!DNL :bulb:] [进一步了解Campaign Web Access](../start/connect.md)。
+   ??[了解有关Campaign Web Access的更多信息](../start/connect.md)。
 
 * **促销活动API**:在某些情况下，可以使用通过SOAP协议公开的Web服务API从外部应用程序调用系统。
 
-   [!DNL :bulb:] [进一步了解Campaign API](../dev/api.md)。
+   ??[了解有关Campaign API的更多信息](../dev/api.md)。
 
-## 开发环境{#dev-env}
+## 开发环境 {#dev-env}
 
 Adobe Campaign是一个具有不同应用程序的单一平台，用于创建开放且可扩展的架构。 Adobe Campaign平台是在灵活的应用程序层上编写的，可轻松配置以满足您的业务需求。 分布式架构确保了线性系统可扩展性，从数千条报文扩展到数百万条报文。
 
@@ -114,7 +114,7 @@ Adobe Campaign具有本机电子邮件广播功能。 此进程可用作SMTP邮�
 
 此过程维护有关连接数、针对每个邮件服务器发送的邮件数量及其限制（同时连接数、每小时消息数或连接数的最大值）的统计信息。 此外，如果多个实例或计算机共享相同的公共IP地址，则还可以通过此功能联合它们。
 
-## 数据库容器{#db-containers}
+## 数据库容器 {#db-containers}
 
 Adobe Campaign Cloud数据库依赖于[!DNL Snowflake]，其中包含功能数据（用户档案、订阅、内容等）、技术数据（投放作业和日志、跟踪日志等） 以及解决方案的工作数据（购买、销售线索），所有Adobe Campaign组件都与数据库通信以执行其特定任务。
 
@@ -125,6 +125,6 @@ Adobe Campaign Cloud数据库依赖于[!DNL Snowflake]，其中包含功能数�
 
 >[!CAUTION]
 >
->对于&#x200B;**Campaign托管Cloud Services**，您的环境和初始配置已由Adobe根据您的许可协议条款进行设置。 您不允许修改已安装的内置软件包、内置架构或报告。
+>通过使用 **Campaign 托管云服务**，您的环境和初始配置已由 Adobe 根据您的许可协议条款进行了设置。您不可修改已安装的内置软件包、内置模式或报告。
 >
->如果您需要使用Campaign附加组件或尚未为您配置的特定功能，则必须联系&#x200B;**Adobe客户关怀**。
+>如果您需要使用 Campaign 加载项或尚未为您配置的特定功能，那么您必须联系 **Adobe 客户关怀**&#x200B;团队。

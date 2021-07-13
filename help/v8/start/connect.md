@@ -6,10 +6,10 @@ feature: 受众
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 7%
+source-wordcount: '731'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 
 * 在[兼容性矩阵](compatibility-matrix.md)中检查您的系统和工具与Adobe Campaign的兼容性
 * 获取Campaign服务器URL
-* 获取用户凭据
+* 创建Adobe ID或从您的公司获取用户凭据
 
 ## 下载并安装客户端控制台
 
@@ -69,18 +69,15 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 
 1. 单击凭据字段右上角的链接以访问连接配置窗口。
 
+   ![](assets/connectToCampaign.png)
+
 1. 选择您需要登录的Campaign实例。
 
 1. 单击 **[!UICONTROL Ok]**。
 
-1. 输入用户登录凭据，然后单击&#x200B;**[!UICONTROL LOG IN]**。
+1. 然后，您可以登录到Campaign。
 
-   ![](assets/sign-in-v8.png)
-
-根据您的配置，您的凭据可以是：
-
-* 由您授予您访问权限的Campaign管理员提供
-* 您的Adobe ID
+   ![](assets/adobeID.png)
 
 ## 授予用户访问权限
 
@@ -96,27 +93,15 @@ Adobe Campaign允许您定义和管理分配给各种运算符的权限。 这�
 
 ## 使用Adobe ID连接到Campaign{#connect-ims}
 
-Campaign用户可以使用其Adobe ID通过AdobeIdentity Management系统(IMS)连接到Adobe Campaign控制台。 此实施具有以下优势：
+Campaign用户使用其Adobe ID通过AdobeIdentity Management系统(IMS)连接到Adobe Campaign控制台。 他们可以使用相同的ID来处理所有Adobe解决方案。 将Adobe Campaign与其他解决方案结合使用时，会保存连接。
 
-* 所有 Experience Cloud 解决方案都可以使用相同的 ID。
-* 使用具有不同集成的 Adobe Campaign 时，可以记住该连接。
-* 更强大的密码管理策略。
-* 使用联合 ID 帐户（外部 ID 提供商）。
-
-[!DNL :speech_balloon:] 作为受管Cloud Services用户， [请](campaign-faq.md#support) 联系Adobe以通过Campaign实施AdobeIMS。
-
-## 通过LDAP登录连接到Campaign
-
-可以配置Adobe Campaign，以便用户通过其LDAP身份验证访问平台。
-
-[!DNL :speech_balloon:] 作为受管Cloud Services用户，请 [联系](campaign-faq.md#support) Adobe以配置LDAP与Campaign的集成。
-
+在[此页面](https://helpx.adobe.com/enterprise/using/identity.html)中了解有关AdobeIMS的更多信息。
 
 ## Web访问{#web-access}
 
 应用程序的某些部分可通过使用HTML用户界面的简单Web浏览器访问：营销活动功能板、多维数据集报告、实例监控等。
 
-[!DNL :arrow_upper_right:] 在Campaign Classicv7文档中了 [解有关Web访问的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#console-and-web-access){target=&quot;_blank&quot;}
+↗️详细了解[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=en#console-and-web-access){target=&quot;_blank&quot;}中的Web访问
 
 Web访问提供了与控制台类似的界面，但功能集有所减少。
 
@@ -130,4 +115,4 @@ Web访问提供了与控制台类似的界面，但功能集有所减少。
 
 验证过程中也使用Web访问：操作员可以单击批准请求电子邮件，并通过其Web浏览器连接到Campaign，以验证或拒绝投放内容或预算。
 
-[!DNL :arrow_upper_right:] 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=zh-Hans#orchestrating-campaigns){target=&quot;_blank&quot;}中设置和管理批准
+↗️了解如何在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=zh-Hans#orchestrating-campaigns){target=&quot;_blank&quot;}中设置和管理批准

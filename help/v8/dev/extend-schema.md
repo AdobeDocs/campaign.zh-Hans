@@ -2,14 +2,14 @@
 product: Adobe Campaign
 title: 扩展Campaign模式
 description: 了解如何扩展Campaign模式
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 2%
 
 ---
 
-# 扩展架构{#extend-schemas}
+# 扩展模式{#extend-schemas}
 
 作为技术用户，您可以自定义Campaign数据模型以满足您的实施需求：向现有架构添加元素、修改架构中的元素或删除元素。
 
@@ -22,7 +22,7 @@ ht-degree: 2%
 >[!CAUTION]
 >不得直接修改内置架构。 如果您需要调整内置架构，则必须扩展该架构。
 
-[!DNL :bulb:] 要更好地了解Campaign内置表及其交互，请参阅 [此页面](datamodel.md)。另请参阅在[此页面](create-schema.md)中创建新架构时的建议。
+??要更好地了解Campaign内置表及其交互，请参阅[此页面](datamodel.md)。 另请参阅在[此页面](create-schema.md)中创建新架构时的建议。
 
 要扩展架构，请执行以下步骤：
 

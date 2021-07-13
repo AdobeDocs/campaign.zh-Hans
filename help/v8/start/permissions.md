@@ -6,10 +6,10 @@ feature: 受众
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
@@ -27,14 +27,14 @@ Adobe Campaign附带内置的运算符组，如促销活动管理器或工作流
 例如，为具有**Prepare Delivery**&#x200B;命名右侧的&#x200B;**Delivery Operator**&#x200B;组成员激活投放编辑器中的&#x200B;**Analyze**&#x200B;按钮
 
 * 访问文件夹
-操作员组的成员资格可以通过更改文件夹的安全设置来授予或限制对文件夹的访问权限。 [请参阅Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-folders.html?lang=en#permissions-on-a-folder){target=&quot;_blank&quot;}，以了解更多信息。例如，它会影响：**写入访问**&#x200B;以创建新实体（如投放、配置文件等），**读取访问**&#x200B;以使用实体，**删除访问**&#x200B;以删除实体。
+操作员组的成员资格可以通过更改文件夹的安全设置来授予或限制对文件夹的访问权限。 [请参阅 Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-folders.html?lang=en#permissions-on-a-folder){target=&quot;_blank&quot;}以了解详情。例如，它会影响：**写入访问**&#x200B;以创建新实体（如投放、配置文件等），**读取访问**&#x200B;以使用实体，**删除访问**&#x200B;以删除实体。
 
 ****&#x200B;请参阅 Campaign Classic v7 文档以了解详情:
 
-[!DNL :arrow_upper_right:] [内置命名权限](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-named-rights.html){target=&quot;_blank&quot;}
+↗️ [内置命名权限](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-named-rights.html){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [内置运算符组](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-groups.html?lang=en#default-groups){target=&quot;_blank&quot;}
+↗️ [内置运算符组](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-groups.html?lang=en#default-groups){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [设置权限的步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html){target=&quot;_blank&quot;}
+↗️ [设置权限的步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [文件夹](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-folders.html?lang=en#permissions-on-a-folder){target=&quot;_blank&quot;}的安全设置
+↗️ [文件夹的安全设置](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-folders.html?lang=en#permissions-on-a-folder){target=&quot;_blank&quot;}

@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: 数据模型最佳实践
 description: 了解Campaign数据模型扩展最佳实践
-source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '2683'
 ht-degree: 4%
@@ -17,15 +17,15 @@ Adobe Campaign系统非常灵活，可以扩展到初始实施之外。 但是�
 
 要更好地了解Campaign内置表以及它们彼此的关系，请参阅[此部分](datamodel.md) 。
 
-[!DNL :bulb:] 阅读此 [部](schemas.md) 分，以开始使用Campaign模式。
+??阅读[此部分](schemas.md)以开始使用Campaign模式。
 
-[!DNL :bulb:] 在本页中了解如何配置扩展模式以扩展Adobe Campaign数据库的概念数据 [模型](extend-schema.md)。
+??了解如何配置扩展架构以在[本页](extend-schema.md)中扩展Adobe Campaign数据库的概念数据模型。
 
-## 数据模型架构{#data-model-architecture}
+## 数据模型架构 {#data-model-architecture}
 
 Adobe Campaign是一款功能强大的跨渠道活动管理系统，可帮助您调整线上和线下策略以创建个性化的客户体验。
 
-### 以客户为中心的方法{#customer-centric-approach}
+### 以客户为中心的方法 {#customer-centric-approach}
 
 虽然大多数电子邮件服务提供商都在通过以列表为中心的方法与客户通信，但Adobe Campaign依赖关系数据库来利用客户及其属性的更广泛视图。
 
@@ -36,7 +36,7 @@ Adobe Campaign是一款功能强大的跨渠道活动管理系统，可帮助您
 >
 >Adobe Campaign允许构建[自定义收件人表](custom-recipient.md)。 但是，在大多数情况下，建议使用内置的[收件人表](datamodel.md#ootb-profiles)，该表已预先构建了其他表和功能。
 
-### Adobe Campaign数据{#data-for-campaign}
+### Adobe Campaign数据 {#data-for-campaign}
 
 应将哪些数据发送到Adobe Campaign? 确定营销活动所需的数据至关重要。
 
@@ -52,7 +52,7 @@ Adobe Campaign是一款功能强大的跨渠道活动管理系统，可帮助您
 
 如果不属于这些属性中的任何一个，您很可能在Adobe Campaign中不需要此属性。
 
-### 数据类型选择{#data-types}
+### 数据类型选择 {#data-types}
 
 为确保系统的良好架构和性能，请按照以下最佳实践在Adobe Campaign中设置数据。
 
@@ -63,11 +63,11 @@ Adobe Campaign是一款功能强大的跨渠道活动管理系统，可帮助您
 * **string**&#x200B;字段的长度应始终使用列进行定义。 默认情况下，Adobe Campaign中的最大长度为16K，但是如果您已经知道字段的大小不会超过较短的长度，则Adobe建议将字段保持较短。
 * 如果您确定源系统中的字段大小被高估，并且无法达到，则可以将Adobe Campaign中的字段短于源系统中的字段。 这可能表示Adobe Campaign中的字符串较短或整数较小。
 
-### 字段{#choice-of-fields}的选择
+### 字段选择 {#choice-of-fields}
 
 如果字段具有定位或个性化目的，则需要将其存储在表中。 换言之，如果某个字段未用于发送个性化电子邮件或用作查询中的标准，则将不必占用磁盘空间。
 
-### 键的选择{#choice-of-keys}
+### 键选择 {#choice-of-keys}
 
 除了在大多数表中默认定义的&#x200B;**autouuid**&#x200B;和&#x200B;**autopk**&#x200B;之外，您还应考虑添加一些逻辑或业务密钥（帐号、客户端号等）。 它稍后可用于导入/协调或数据包。 有关更多信息，请参阅[Identifiers](#identifiers)。
 
@@ -98,7 +98,7 @@ Adobe Campaign主键是为所有内置表自动生成的UUID。 UUID也可用于
 即使ID数量是无限的，您也应该考虑数据库的大小，以确保获得最佳性能。 要防止出现任何问题，请确保调整实例清除设置。 有关更多信息，请参阅[此章节](#data-retention)。
 
 
-## 自定义内部键{#custom-internal-keys}
+## 自定义内部键 {#custom-internal-keys}
 
 在Adobe Campaign中创建的每个表都需要使用主键。
 
@@ -115,7 +115,7 @@ Adobe Campaign主键是为所有内置表自动生成的UUID。 UUID也可用于
 >在工作流中，不应使用autouuid作为引用。
 
 
-## 链接和基数{#links-and-cardinality}
+## 链接和基数 {#links-and-cardinality}
 
 ### 链接 {#links}
 
@@ -175,7 +175,7 @@ Adobe Campaign既不是data warehouse，也不是报告工具。 因此，为确
 
 您可以在架构中声明“deleteStatus”属性。 将记录标记为已删除，然后在清理任务中推迟删除更为有效。
 
-[!DNL :speech_balloon:] 作为受管Cloud Services用户，请联系Adobe顾问或技术管理员，以了解有关保留率的更多信息，或者您是否需要为自定义表设置保留率。
+??作为受管Cloud Services用户，请联系Adobe顾问或技术管理员，以了解有关保留率的更多信息，或者您是否需要为自定义表设置保留率。
 
 ## 性能 {#performance}
 
@@ -191,13 +191,13 @@ Adobe Campaign既不是data warehouse，也不是报告工具。 因此，为确
 * 使用一个或多个引用表，而不是在每个行中复制字段。 使用键/值对时，最好选择数字键。
 * 短字符串仍可接受。 如果外部系统中已有引用表，则重用该表将有助于与Adobe Campaign进行数据集成。
 
-### 一对多关系{#one-to-many-relationships}
+### 一对多关系 {#one-to-many-relationships}
 
 * 数据设计会影响可用性和功能。 如果您设计的数据模型具有许多一对多关系，则用户在应用程序中构建有意义的逻辑会比较困难。 对于非技术营销人员而言，一对多过滤逻辑可能很难正确构建和理解。
 * 将所有基本字段都放在一个表中是件好事，因为这样用户就可以更轻松地构建查询。 有时，如果在表中复制某些字段以避免连接，则在性能上也会很好。
 * 某些内置功能将无法引用一对多关系，例如选件加权公式和投放。
 
-## 大表{#large-tables}
+## 大表 {#large-tables}
 
 Adobe Campaign依赖第三方数据库引擎。 根据提供商的不同，为较大的表优化性能可能需要特定的设计。
 
@@ -209,7 +209,7 @@ Adobe Campaign依赖第三方数据库引擎。 根据提供商的不同，为�
 * 对于连接键，您可以使用基于数字或字符串的值。
 * 尽量减少日志保留的深度。 如果需要更深的历史记录，您可以聚合计算和/或处理自定义日志表以存储更大的历史记录。
 
-### 表的大小{#size-of-tables}
+### 表的大小 {#size-of-tables}
 
 表大小是记录数和每个记录列数的组合。 这两种方法都会影响查询的性能。
 

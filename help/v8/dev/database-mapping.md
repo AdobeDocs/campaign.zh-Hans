@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: 营销活动数据库映射
 description: 营销活动数据库映射
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 0%
@@ -77,7 +77,7 @@ SQL字段约束如下：
 * 数字和日期字段中没有空值，
 * 数字字段已初始化为0。
 
-## XML字段{#xml-fields}
+## XML字段 {#xml-fields}
 
 默认情况下，任何键入的&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;元素都会映射到数据架构表的SQL字段。 但是，您可以在XML中引用此字段，而不是SQL ，这意味着数据存储在包含所有XML字段值的表的Memo字段(&quot;mData&quot;)中。 这些数据的存储是一个XML文档，用于观察架构结构。
 
@@ -233,7 +233,7 @@ Adobe Campaign表的主键是由数据库引擎自动生成的&#x200B;**通用�
 >
 >在创建表时，主键设置为0的记录会自动插入。 此记录用于避免外连接，这对卷表无效。 默认情况下，所有外键都将初始化为值0，以便在未填充数据项时始终在连接时返回结果。
 
-## 链接：表{#links--relation-between-tables}的关系
+## 链接：表之间的关系 {#links--relation-between-tables}
 
 链接描述一个表与另一个表之间的关联。
 
@@ -256,7 +256,7 @@ Adobe Campaign表的主键是由数据库引擎自动生成的&#x200B;**通用�
 * ![](assets/do-not-localize/join_fda_11.png) :基数1-1
 * ![](assets/do-not-localize/join_fda_1m.png) :基数1-N
 
-[!DNL :bulb:] 有关FDA表的更多信息，请参阅联 [合数据访问](../connect/fda.md)。
+??有关FDA表的更多信息，请参阅[联合数据访问](../connect/fda.md)。
 
 必须在包含通过主元素链接的表的外键的架构中声明链接：
 
@@ -297,7 +297,7 @@ Adobe Campaign表的主键是由数据库引擎自动生成的&#x200B;**通用�
 >
 >链接是在架构末尾声明的元素。
 
-### 示例1 {#example-1}
+### 示例 1 {#example-1}
 
 1-N与“cus:company”架构表相关：
 
@@ -369,7 +369,7 @@ Adobe Campaign表的主键是由数据库引擎自动生成的&#x200B;**通用�
 </srcSchema>
 ```
 
-### 示例3 {#example-3}
+### 示例 3 {#example-3}
 
 与“cus:extension”架构表的1-1关系：
 
@@ -377,7 +377,7 @@ Adobe Campaign表的主键是由数据库引擎自动生成的&#x200B;**通用�
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
-### 示例5 {#example-4}
+### 示例 4 {#example-4}
 
 链接到文件夹（“xtk:folder”架构）：
 
@@ -387,7 +387,7 @@ Adobe Campaign表的主键是由数据库引擎自动生成的&#x200B;**通用�
 
 默认值会返回在“DefaultFolder(&#39;nmsFolder&#39;)”函数中输入的第一个符合条件的参数类型文件的标识符。
 
-### 示例5 {#example-5}
+### 示例 5 {#example-5}
 
 在此示例中，我们希望在链接（“company”到“cus:company”架构）上创建一个键，该键具有&#x200B;**xlink**&#x200B;属性，并且包含(“email”)表的字段：
 

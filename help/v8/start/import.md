@@ -6,10 +6,10 @@ feature: 用户档案
 role: Data Engineer
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
-workflow-type: ht
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 100%
 
 Campaign 可帮助您将联系人添加到云数据库。您可以加载文件、计划和自动更新多个联系人，在网站上收集数据，或直接在收件人表格中输入用户档案信息。
 
-[!DNL :bulb:]开始使用[受众](audiences.md)
-[!DNL :bulb:]了解 Campaign [数据模型](../dev/datamodel.md)
+??[audiences](audiences.md)快速入门
+??了解Campaign [数据模型](../dev/datamodel.md)
 
 ## 在工作流中导入用户档案
 
@@ -28,11 +28,11 @@ Campaign 可帮助您将联系人添加到云数据库。您可以加载文件�
 
 请参阅 Campaign Classic v7 文档以了解详情：
 
-[!DNL :arrow_upper_right:] [导入和导出功能入门](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/get-started-data-import-export.html?lang=zh-Hans){target=&quot;_blank&quot;}
+↗️ [导入和导出入门](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/get-started-data-import-export.html?lang=zh-Hans){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [导入和导出最佳实践](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/best-practices/import-export-best-practices.html?lang=zh-Hans){target=&quot;_blank&quot;}
+↗️ [导入和导出最佳实践](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/best-practices/import-export-best-practices.html?lang=zh-Hans){target=&quot;_blank&quot;}
 
-[!DNL :arrow_upper_right:] [配置并执行导入](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html?lang=zh-Hans){target=&quot;_blank&quot;}
+↗️ [配置并执行导入](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html?lang=zh-Hans){target=&quot;_blank&quot;}
 
 ## 运行统一导入
 
@@ -40,7 +40,7 @@ Campaign 可帮助您将联系人添加到云数据库。您可以加载文件�
 
 ![](assets/new-import.png)
 
-[!DNL :arrow_upper_right:]请参阅[ Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=zh-Hans){target=&quot;_blank&quot;}，了解如何运行统一导入任务以馈送到数据库。
+↗️了解如何运行统一导入作业以在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=zh-Hans){target=&quot;_blank&quot;}中为数据库提供信息。
 
 ## 通过 Web 应用程序收集用户档案
 
@@ -48,7 +48,7 @@ Campaign 可帮助您将联系人添加到云数据库。您可以加载文件�
 
 ![](assets/web-form-page.png)
 
-[!DNL :arrow_upper_right:]请参阅[ Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=zh-Hans){target=&quot;_blank&quot;}了解如何创建 Web 窗体。
+↗️了解如何在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=zh-Hans){target=&quot;_blank&quot;}中创建Web窗体。
 
 **相关主题**
 

@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: Campaign输入表单
 description: 了解如何自定义输入表单
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '2555'
 ht-degree: 0%
@@ -84,7 +84,7 @@ ht-degree: 0%
 
 默认情况下，每个字段都显示在一行中，并根据数据类型占用所有可用空间。
 
-[!DNL :arrow_upper_right:] 所有表单属性都列在 [Campaign Classicv7文档](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/control-Button.html)中。
+↗️所有表单属性都列在[Campaign Classicv7文档](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/control-Button.html)中。
 
 ## 格式化 {#formatting}
 
@@ -178,7 +178,7 @@ ht-degree: 0%
 
 容器用于使用一组在页面中格式的字段来构建复杂的控件。
 
-### 添加选项卡（笔记本）{#tab-container}
+### 添加选项卡（笔记本） {#tab-container}
 
 使用&#x200B;**notebook**&#x200B;容器在可从选项卡访问的页面中设置数据格式。
 
@@ -205,7 +205,7 @@ ht-degree: 0%
 
 `<container style="down" type="notebook">  ... </container>`
 
-### 添加图标(iconbox){#icon-list}
+### 添加图标（图标框） {#icon-list}
 
 使用此容器可显示垂直图标栏，以选择要显示的页面。
 
@@ -230,7 +230,7 @@ ht-degree: 0%
 
 可从&#x200B;**[!UICONTROL Administration > Configuration > Images]**&#x200B;节点获取这些图像。
 
-### 隐藏容器(visibleGroup){#visibility-container}
+### 隐藏容器(visibleGroup) {#visibility-container}
 
 您可以通过动态条件隐藏一组控件。
 
@@ -253,7 +253,7 @@ ht-degree: 0%
 * **visibleIf=&quot;@gender >= 1和@gender != 2&quot;**:条件。
 * **visibleIf=&quot;@boolean1=true或@boolean2=false&quot;**:测试布尔字段。
 
-### 条件显示(enabledGroup){#enabling-container}
+### 条件显示(enabledGroup) {#enabling-container}
 
 利用此容器，可启用或禁用动态条件中的一组数据。 禁用控件会阻止对其进行编辑。 以下示例说明如何启用“Gender”字段值中的控件：
 
@@ -268,7 +268,7 @@ ht-degree: 0%
 
 启用容器由&#x200B;**type=&quot;enabledGroup&quot;**&#x200B;属性定义。 **enabledIf**&#x200B;属性包含激活条件。
 
-## 编辑链接{#editing-a-link}
+## 编辑链接 {#editing-a-link}
 
 请记住，链接在数据架构中声明如下：
 
@@ -312,7 +312,7 @@ ht-degree: 0%
 </input>
 ```
 
-## 控件属性{#control-properties}
+## 控制属性 {#control-properties}
 
 * **noAutoComplete**:禁用“提前键入”（值为“true”）
 * **createMode**:如果链接不存在，则即时创建该链接。可能的值包括：
@@ -324,7 +324,7 @@ ht-degree: 0%
 * **noZoom**:链接上没有编辑窗体（值为“true”）
 * **表单**:覆盖目标元素的编辑表单
 
-## 添加链接列表（未绑定）{#list-of-links}
+## 添加链接列表（未绑定） {#list-of-links}
 
 在数据架构中作为收集元素输入的链接(unbound=&quot;true&quot;)必须经过列表才能查看与其关联的所有元素。
 
@@ -374,7 +374,7 @@ ht-degree: 0%
 </input>
 ```
 
-## 定义关系表{#relationship-table}
+## 定义关系表 {#relationship-table}
 
 使用关系表可以将两个表与N-N基数链接。 关系表仅包含两个表的链接。
 
@@ -406,7 +406,7 @@ ht-degree: 0%
 >
 >通过&#x200B;**xpathEditTarget**&#x200B;属性，您可以在输入的链接上强制编辑所选行。
 
-### 列表属性{#list-properties}
+### 列表属性 {#list-properties}
 
 * **noToolbar**:隐藏工具栏（其值为“true”）
 * **toolbarCaption**:过载工具栏标签
@@ -417,13 +417,13 @@ ht-degree: 0%
 * **xpathEditTarget**:设置对输入的链接的编辑
 * **xpathChoiceTarget**:此外，在输入的链接上启动选择表单
 
-## 添加内存列表控件{#memory-list-controls}
+## 添加内存列表控件 {#memory-list-controls}
 
 内存列表允许您使用列表数据预加载功能编辑收集元素。 此列表无法过滤或配置。
 
 这些列表用于XML映射的集合元素或低容量链接。
 
-## 添加列列表{#column-list}
+## 添加列列表 {#column-list}
 
 此控件显示可编辑的列列表，其中的工具栏包含“添加”和“删除”按钮。
 
@@ -453,7 +453,7 @@ ht-degree: 0%
 
 **toolbarCaption**&#x200B;属性强制工具栏的水平对齐方式并输入列表上方的标题。
 
-### 启用对列表{#zoom-in-a-list}的缩放
+### 允许放大列表 {#zoom-in-a-list}
 
 可以在单独的编辑表单中输入列表中数据的插入和编辑。
 
@@ -475,7 +475,7 @@ ht-degree: 0%
 >
 >添加&#x200B;**zoomOnAdd=&quot;true&quot;**&#x200B;属性会强制在插入列表元素时调用编辑表单。
 
-### 列表属性{#list-properties-1}
+### 列表属性 {#list-properties-1}
 
 * **noToolbar**:隐藏工具栏（其值为“true”）
 * **toolbarCaption**:过载工具栏标签
@@ -486,7 +486,7 @@ ht-degree: 0%
 * **zoomOnAdd**:在添加的
 * **xpathChoiceTarget**:此外，在输入的链接上启动选择表单
 
-## 添加不可编辑的字段{#non-editable-fields}
+## 添加不可编辑的字段 {#non-editable-fields}
 
 要显示字段并阻止对其进行编辑，请使用&#x200B;**`<value>`**&#x200B;标记或完成&#x200B;**`<input>`**&#x200B;标记上的&#x200B;**readOnly=&quot;true&quot;**&#x200B;属性。
 
@@ -499,7 +499,7 @@ ht-degree: 0%
 <input xpath="@gender" readOnly="true"/>
 ```
 
-## 添加单选按钮{#radio-button}
+## “添加”单选按钮 {#radio-button}
 
 单选按钮允许您从多个选项中进行选择。 **`<input>`**&#x200B;标记用于列出可能的选项，而&#x200B;**checkedValue**&#x200B;属性指定与选项关联的值。
 
@@ -524,7 +524,7 @@ ht-degree: 0%
 
 ![](assets/do-not-localize/form_exemple20.png)
 
-## 编辑导航层次结构{#navigation-hierarchy-edit}
+## 编辑导航层次结构 {#navigation-hierarchy-edit}
 
 此控件在要编辑的一组字段上构建树。
 
@@ -545,7 +545,7 @@ ht-degree: 0%
 
 ![](assets/do-not-localize/form_exemple18.png)
 
-## 添加表达式字段{#expression-field}
+## 添加表达式字段 {#expression-field}
 
 表达式字段会从表达式动态更新字段；**`<input>`**&#x200B;标记与&#x200B;**xpath**&#x200B;属性一起使用，用于输入要更新的字段的路径以及包含更新表达式的&#x200B;**expr**&#x200B;属性。
 
@@ -555,11 +555,11 @@ ht-degree: 0%
 <input expr="[/ignored/@action] == 'FCP'" type="expr" xpath="@launchFCP"/>
 ```
 
-## 表单{#context-of-forms}的上下文
+## 表单上下文 {#context-of-forms}
 
 输入表单的执行初始化包含被编辑实体数据的XML文档。 本文档表示表单的上下文，可用作工作区。
 
-### 更新上下文{#updating-the-context}
+### 更新上下文 {#updating-the-context}
 
 要修改表单的上下文，请使用`<set expr="<value>" xpath="<field>"/>`标记，其中`<field>`是目标字段，`<value>`是更新表达式或值。
 
@@ -588,7 +588,7 @@ ht-degree: 0%
 >
 >`<enter>`和`<leave>`   标记可用于页面的`<container>`（“notebook”和“iconbox”类型）。
 
-### 表达式语言{#expression-language-}
+### 表达语言 {#expression-language-}
 
 可以在表单定义中使用宏语言来执行条件测试。
 
@@ -633,7 +633,7 @@ ht-degree: 0%
 
 **[!UICONTROL Finish]**&#x200B;按钮保存输入的数据并关闭表单。
 
-### SOAP方法{#soap-methods}
+### SOAP方法 {#soap-methods}
 
 可以从页面末尾填充的&#x200B;**`<leave>`**&#x200B;标记中启动SOAP方法执行。
 

@@ -6,9 +6,9 @@ feature: 受众
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 136209f05cf302a1e73a2aa18c051260edeb0762
+source-git-commit: a468597714e3974c85e4ada3b6c2ee405717106a
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '684'
 ht-degree: 5%
 
 ---
@@ -51,7 +51,7 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 
    例如，您可以使用[`https://<machine>.<domain>.com`](https://myserver.adobe.com)类型URL。
 
-1. 如果为您的组织配置了AdobeIdentity Management系统(IMS)，请选中选项&#x200B;**[!UICONTROL Connect with an Adobe ID]** 。
+1. 选中选项&#x200B;**[!UICONTROL Connect with an Adobe ID]**。
 
 1. 单击&#x200B;**[!UICONTROL Ok]**&#x200B;以保存设置。
 

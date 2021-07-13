@@ -6,9 +6,9 @@ feature: 受众
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 13f3122a830c723fa940290689c8e3a1baa0443a
+source-git-commit: 136209f05cf302a1e73a2aa18c051260edeb0762
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '695'
 ht-degree: 5%
 
 ---
@@ -75,7 +75,7 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 
 1. 单击 **[!UICONTROL Ok]**。
 
-1. 然后，您可以登录到Campaign。
+1. 然后，您可以使用[您的Adobe ID](#connect-ims)登录到Campaign。
 
    ![](assets/adobeID.png)
 

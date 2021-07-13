@@ -6,7 +6,7 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 1%
@@ -35,11 +35,11 @@ Adobe Campaign利用数据模式：
 
 * 通过界面，使用&#x200B;**New field** assistant
 
-   [!DNL :arrow_upper_right:] 了解如何在Campaign v7文档中快速在Campaign中 [添加新字段](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=en#configuring-campaign-classic)
+   ↗️了解如何在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=en#configuring-campaign-classic)中快速在Campaign中添加新字段
 
 * 以编程方式，通过扩展模式
 
-   [!DNL :bulb:] 在此部分中了解如何扩展现有 [模式](../dev/extend-schema.md)。
+   ??了解如何在[此部分](../dev/extend-schema.md)中扩展现有架构。
 
 
 您还可以在Campaign数据库中创建新表并扩展内置数据模型。
@@ -48,16 +48,16 @@ Adobe Campaign利用数据模式：
 
 **相关主题**
 
-[!DNL :arrow_upper_right:] Campaign Classicv7文档中的 [模式版示例](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#configuring-campaign-classic)
+↗️ [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#configuring-campaign-classic)中模式版的示例
 
-[!DNL :arrow_upper_right:] 用例：将字段链接到Campaign Classicv7文档中 [的现有引用表](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#uc-link)
+↗️用例：将字段链接到[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#uc-link)中的现有引用表
 
 
 ## 修改输入表单
 
 营销活动输入表单可以根据您的实施进行调整。 您可以通过修改XML内容来添加或删除表单字段。
 
-[!DNL :bulb:] 在此部分中了解如何修改现有输入表单或创建新 [表单](../dev/forms.md)。
+??了解如何在[此部分](../dev/forms.md)中修改现有输入表单或创建新表单。
 
 ## 自定义功能板{#gs-custom-dashboards}
 
@@ -65,25 +65,25 @@ Adobe Campaign界面使用许多Web应用程序来访问、管理收件人、投
 
 现成的Web应用程序存储在“管理”>“配置”>“Web应用程序”节点中。
 
-[!DNL :arrow_upper_right:] 了解如何在Campaign v7文档中创建 [概述Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=en#creating-a-single-page-web-application)
+↗️了解如何在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=en#creating-a-single-page-web-application)的Campaign中创建概述页面
 
 
-## 自定义列表并创建过滤器{#gs-lists-and-filters}
+## 自定义列表和创建过滤器 {#gs-lists-and-filters}
 
 ### 从功能板访问数据
 
 营销活动列表附带预定义过滤器，以促进导航和数据可视化。
 
-[!DNL :arrow_upper_right:] 了解有关Campaign Classicv7文档中筛 [选选项的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/filtering-options.html?lang=en#about-filtering)
+↗️了解有关[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/filtering-options.html?lang=en#about-filtering)中筛选选项的更多信息
 
 
 ### 从资源管理器访问数据
 
 在Adobe Campaign Explorer树中导航时，数据库中包含的数据将显示在列表中。 您可以过滤这些列表、运行搜索、添加信息、过滤和排序数据。
 
-[!DNL :arrow_upper_right:] 了解如何在Campaign Classicv7文档中配置列表和保 [存列表配置](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=en#getting-started)
+↗️了解如何在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=en#getting-started)中配置列表并保存列表配置
 
 
 您可以对这些列表应用过滤器，以仅显示运算符所需的数据。 然后，可以对过滤的数据执行操作。 过滤器配置允许您从列表中动态选择数据。 如果数据被修改，则会更新过滤的数据。
 
-[!DNL :arrow_upper_right:] 了解如何在 [Campaign Classicv7文档中过滤数据](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/creating-filters.html?lang=en#typology-of-available-filters)
+↗️了解如何在[Campaign Classicv7文档中过滤数据](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/creating-filters.html?lang=en#typology-of-available-filters)

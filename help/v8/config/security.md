@@ -2,14 +2,14 @@
 product: Adobe Campaign
 title: Campaign安全最佳实践
 description: Campaign安全最佳实践快速入门
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 1%
 
 ---
 
-# Campaign安全最佳实践{#ac-security}
+# Campaign安全最佳实践 {#ac-security}
 
 在Adobe，我们非常重视您的数字体验的安全性。 安全实践已深深扎根于我们的内部软件开发和操作流程及工具中，并且我们的跨职能团队也严格遵循这些实践，以便以便利的方式预防、检测和应对事件。
 
@@ -24,7 +24,7 @@ ht-degree: 1%
 * 确保加密密码受限
 * Protect可能包含个人信息（如镜像页面、Web应用程序等）的页面。
 
-[!DNL :speech_balloon:] 作为托管Cloud Services用户，Adobe将与您合作，在您的环境中实施这些配置。
+??作为托管Cloud Services用户，Adobe将与您合作，在您的环境中实施这些配置。
 
 ## 个性化
 
@@ -107,7 +107,7 @@ ht-degree: 1%
 * 检查每个操作员是否拥有适当的访问权限
 * 避免使用管理员操作员，并避免管理员组中的运算符过多
 
-[!DNL :arrow_upper_right:] 在Adobe Campaign Classic v7文 [档中了解更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator){target=&quot;_blank&quot;}
+↗️在[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator){target=&quot;_blank&quot;}中了解更多信息
 
 ## 编码准则
 
@@ -119,4 +119,4 @@ ht-degree: 1%
 
 * **在Web应用程序中添加捕获**:在您的公共登陆页面和订阅页面中添加捕获。
 
-[!DNL :arrow_upper_right:] 在Adobe Campaign Classic v7文 [档中了解更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target=&quot;_blank&quot;}
+↗️在[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target=&quot;_blank&quot;}中了解更多信息

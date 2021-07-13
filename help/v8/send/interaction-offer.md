@@ -5,7 +5,7 @@ description: 了解如何创建优惠
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 9cb1b38456601bce21d458fea42a5c112d9fafb4
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '921'
 ht-degree: 3%
@@ -42,7 +42,7 @@ ht-degree: 3%
 
 在此期间之外，将不会选择选件。 如果您还为选件类别配置了资格日期，则将适用最严格的期限。
 
-### 在目标{#filters-on-the-target}上添加过滤器
+### 在目标中添加过滤器 {#filters-on-the-target}
 
 在选件的&#x200B;**[!UICONTROL Eligibility]**&#x200B;选项卡中，将过滤器应用到选件目标。
 
@@ -54,7 +54,7 @@ ht-degree: 3%
 
 ![](assets/offer_eligibility_create_004.png)
 
-### 设置选件权重{#offer-weight}
+### 设置选件权重 {#offer-weight}
 
 要使引擎能够在目标符合条件的多个选件之间做出决定，您需要为选件分配一个或多个权重。 您还可以根据需要将过滤器应用到目标，或限制权重要应用到的选件空间。 与重量较轻的选件相比，将更喜欢权重较大的选件。
 
@@ -100,7 +100,7 @@ ht-degree: 3%
    >
    >如果目标符合为选定选件赋予多个权重的条件，则引擎会保持最佳（最高）权重。 在调用选件引擎时，每个联系人最多选择一个选件。
 
-### 选件资格规则摘要{#a-summary-of-offer-eligibility-rules}
+### 优惠资格规则摘要 {#a-summary-of-offer-eligibility-rules}
 
 配置完成后，资格规则的摘要将显示在选件仪表板中。
 
@@ -108,7 +108,7 @@ ht-degree: 3%
 
 ![](assets/offer_eligibility_create_005.png)
 
-## 创建选件内容{#creating-the-offer-content}
+## 创建选件内容 {#creating-the-offer-content}
 
 使用&#x200B;**[!UICONTROL Content]**&#x200B;选项卡定义选件内容。
 
@@ -146,7 +146,7 @@ ht-degree: 3%
 
    在此示例中，选件必须包含标题、图像、HTML内容和目标URL。
 
-## 预览选件{#previewing-the-offer}
+## 预览选件 {#previewing-the-offer}
 
 配置选件内容后，您可以预览该选件在其收件人看到时的显示效果。
 
@@ -182,13 +182,13 @@ Creating hypotheses is detailed in [this page](../../campaign/using/about-respon
 
 您现在可以批准并激活选件，以使其在&#x200B;**Live**&#x200B;环境中可用。
 
-[!DNL :arrow_upper_right:] 有关更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=en#approving-offer-content)
+↗️有关更多信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=en#approving-offer-content)
 
 ## 管理优惠演示{#offer-presentation}
 
 Campaign允许您使用演示规则控制优惠建议的流程。 这些特定于Campaign交互的规则是&#x200B;**分类规则**。 它们允许您根据已向收件人提出的建议的历史记录排除优惠。 在环境中引用了这些参数。
 
-[!DNL :arrow_upper_right:] 有关更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=en#managing-offers)
+↗️有关更多信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=en#managing-offers)
 
 ## 优惠模拟
 
@@ -196,4 +196,4 @@ Campaign允许您使用演示规则控制优惠建议的流程。 这些特定�
 
 模拟会考虑以前应用于选件的上下文和资格规则及其演示规则。 这样，您就可以测试和优化选件建议的各种版本，而无需实际使用选件，或者超量/不限次地吸引目标，因为模拟对目标收件人没有影响。
 
-[!DNL :arrow_upper_right:] 有关优惠模拟的更多信息，请参 [阅Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=en)
+↗️有关优惠模拟的更多信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=en)

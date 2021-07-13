@@ -5,7 +5,7 @@ description: Campaign API暂存机制
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 2%
@@ -56,7 +56,7 @@ Campaign Classicv7 API仍然可用，但无法从此新的暂存机制中受益�
    </srcSchema>
    ```
 
-   [!DNL :bulb:] 在此页面中了解有关创建自定义模式的 [更多信息](create-schema.md)。
+   ??了解有关在[此页面](create-schema.md)中创建自定义模式的更多信息。
 
 1. 保存并更新数据库结构。  [了解详情](update-database-structure.md)
 

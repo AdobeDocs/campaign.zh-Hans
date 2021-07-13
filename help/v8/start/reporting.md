@@ -6,10 +6,10 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 95ed0369-7215-496b-8e11-fe264c436488,e7931de5-83ce-431d-ae81-83793d257550
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Campaign提供了本页中列出的一组报表工具。
 
    ![](assets/built-in-reports.png)
 
-   [!DNL :arrow_upper_right:] Campaign内置报表在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/accessing-built-in-reports/about-campaign-built-in-reports.html){target=&quot;_blank&quot;}中提供
+   ↗️ Campaign内置报告显示在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/accessing-built-in-reports/about-campaign-built-in-reports.html){target=&quot;_blank&quot;}中
 
 * **描述性数据分析**
 
@@ -37,13 +37,13 @@ Adobe Campaign提供了本页中列出的一组报表工具。
 
    ![](assets/desc-analysis-report.png)
 
-   [!DNL :arrow_upper_right:] 促销活动描述性分析报告在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target=&quot;_blank&quot;}中提供
+   ↗️促销活动描述性分析报告在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target=&quot;_blank&quot;}中提供
 
 * **个性化报表**
 
    使用Adobe Campaign创建数据库中数据的报告。 创建这些内容后，请在相应的上下文中对其进行访问。
 
-   [!DNL :arrow_upper_right:] 有关创建报表的详细步骤，请 [参阅Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target=&quot;_blank&quot;}。个性化报表创建保留给高级用户。
+   ↗️有关创建报表的详细步骤，请参见[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target=&quot;_blank&quot;}。 个性化报表创建保留给高级用户。
 
 * **多维数据集**
 
@@ -53,8 +53,8 @@ Adobe Campaign提供了本页中列出的一组报表工具。
 
    根据查询、计算和卷的复杂性，可以通过查询收集这些报表中分析的数据，并在列表（数据管理类型工作流）或多维数据集（使用Marketing Analytics）中预聚合这些数据。 它将以数据透视表或组列表的形式显示。
 
-   [!DNL :arrow_upper_right:] 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/designing-reports-with-cubes/about-cubes.html)中创建多维数据集。{target=&quot;_blank&quot;}
+   ↗️了解如何在[Campaign Classicv7文档中创建多维数据集](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/designing-reports-with-cubes/about-cubes.html){target=&quot;_blank&quot;}
 
 
-请注意，与Adobe Campaign v7相比，Campaign Classic报表已得到优化，并提供了更好的扩展功能。 多维数据集的现有限制不适用。
+请注意，与 Adobe Campaign v7 相比，Campaign Classic 报表已得到优化，并提供了更好的扩展功能。 多维数据集的现有限制不适用。
 

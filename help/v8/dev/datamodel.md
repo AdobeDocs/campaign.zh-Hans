@@ -6,7 +6,7 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896,b1319b34-ee07-48ed-9ab1-e2d12d3d99f8
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 4%
@@ -21,7 +21,7 @@ Adobe Campaign数据模型的基本结构可描述如下：
 
 * **收件人表**:数据模型依赖于主表，该主表默认为收件人表(nmsRecipient)。此表用于存储所有营销用户档案。
 
-   [!DNL :bulb:] 有关Recipient表的更多信息，请参 [阅此部分](#ootb-profiles)。
+   ??有关收件人表的更多信息，请参阅[此部分](#ootb-profiles)。
 
 * **提交表**:数据模型还包括专用于存储所有营销活动的部分。通常为Delivery表(NmsDelivery)。 此表中的每个记录都表示投放操作或投放模板。 它包含执行投放所需的所有参数，如目标、内容等。
 
@@ -44,9 +44,9 @@ Adobe Campaign数据模型的基本结构可描述如下：
 * [使用新字段](extend-schema.md) 扩展现有表。例如，您可以向收件人表中添加新的“忠诚度”字段。
 * [创建一个新表](create-schema.md)，例如列出数据库每个用户档案进行的所有购买的“购买”表，并将其链接到收件人表。
 
-[!DNL :bulb:] 在此部分 [中了解使用Campaign数据模型时的](datamodel-best-practices.md)最佳实践。
+??了解在[此部分](datamodel-best-practices.md)中使用Campaign数据模型时的最佳实践。
 
-## 内置配置文件表{#ootb-profiles}
+## 内置配置文件表 {#ootb-profiles}
 
 Adobe Campaign中内置的收件人表(nmsrecipient)为构建数据模型提供了一个良好的起点。 它有许多预定义的字段和表链接，可轻松扩展。 当您主要定向收件人时，这种方法特别有用，因为它适合以收件人为中心的简单数据模型。
 
@@ -59,9 +59,9 @@ Adobe Campaign中内置的收件人表(nmsrecipient)为构建数据模型提供�
 
 可以扩展收件人表，但不能减少表中字段或链接的数量。
 
-[!DNL :bulb:] 在此部分中了解如何扩展现有 [模式](extend-schema.md)。
+??了解如何在[此部分](extend-schema.md)中扩展现有架构。
 
-[!DNL :arrow_upper_right:] 发现Campaign Classicv7文档中内置的收件人表扩 [展示例](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#extending-a-table)
+↗️了解[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#extending-a-table)中内置的收件人表扩展示例
 
 您还可以使用其他收件人表来更好地满足您的业务或功能要求。 此方法存在限制，在[此部分](custom-recipient.md)中有介绍。
 
@@ -69,9 +69,9 @@ Adobe Campaign中内置的收件人表(nmsrecipient)为构建数据模型提供�
 
 为了更好地了解Campaign v8中的表管理，请注意，表是在Campaign及其Snowflake云数据库之间复制的。
 
-[!DNL :bulb:] 在此部分中了解有关复制策略和机制 [的更多信息](../config/replication.md)。
+??在[此部分](../config/replication.md)中了解有关复制策略和机制的更多信息。
 
 **相关主题**
 
-[!DNL :bulb:] 了解如何在此部分导入用户档 [案](../start/import.md)
-[!DNL :bulb:] 在此部分了解Campaign受众的更 [多信息](../start/audiences.md)
+??了解如何在[此部分](../start/import.md)中导入用户档案
+??在[此部分](../start/audiences.md)中了解有关Campaign受众的更多信息

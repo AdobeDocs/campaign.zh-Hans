@@ -2,7 +2,7 @@
 product: Adobe Campaign
 title: 使用Campaign模式
 description: 模式入门
-source-git-commit: 40b38168a3704f171f1f389e2d232e6a2c6f1d85
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 5%
@@ -41,7 +41,7 @@ Adobe Campaign采用数据模式：
 >
 >某些内置的Campaign架构在云数据库上具有关联的架构。 这些架构由&#x200B;**Xxl**&#x200B;命名空间标识，不得修改或扩展。
 
-## 架构{#syntax-of-schemas}的语法
+## 架构的语法 {#syntax-of-schemas}
 
 架构的根元素为&#x200B;**`<srcschema>`**。 它包含&#x200B;**`<element>`**&#x200B;和&#x200B;**`<attribute>`**&#x200B;子元素。
 
@@ -67,7 +67,7 @@ Adobe Campaign采用数据模式：
 
 **`<element>`**&#x200B;标记定义实体元素的名称。 **`<attribute>`** 架构的标记定义它们所链接的标 **`<element>`** 记中属性的名称。
 
-## 架构{#identification-of-a-schema}的标识
+## 模式的标识 {#identification-of-a-schema}
 
 数据架构通过其名称及其命名空间进行标识。
 
@@ -79,7 +79,7 @@ Adobe Campaign采用数据模式：
 >
 >标识符不得以数字字符开头。
 
-## 保留的命名空间{#reserved-namespaces}
+## 保留的命名空间 {#reserved-namespaces}
 
 某些命名空间是保留的，用于描述操作Adobe Campaign应用程序所需的系统实体。 在任何大写/小写组合中，不得使用以下命名空间&#x200B;**来标识新架构：**
 
@@ -93,15 +93,15 @@ Adobe Campaign采用数据模式：
 
 架构的标识键是使用命名空间和名称以冒号分隔的字符串；例如：**nms:recipient**。
 
-## 创建或扩展Campaign模式{#create-or-extend-schemas}
+## 创建或扩展Campaign模式 {#create-or-extend-schemas}
 
 要向Campaign中的一个核心数据模式(例如收件人表(nms:recipient))添加字段或其他元素，您必须扩展该模式。
 
-[!DNL :bulb:] 有关更多信息，请参阅 [扩展模式](extend-schema.md)。
+??有关更多信息，请参阅[扩展架构](extend-schema.md)。
 
 要添加Adobe Campaign中不存在的全新数据类型（例如合同表），您可以直接创建自定义架构。
 
-[!DNL :bulb:] 有关更多信息，请参 [阅创建新架构](create-schema.md)。
+??有关更多信息，请参阅[创建新架构](create-schema.md)。
 
 ![](assets/schemaextension_1.png)
 
@@ -153,9 +153,9 @@ type="string" enum="exTransactionTypeEnum"/>
 >
 >创建新架构或在架构扩展期间，您需要为整个架构保留相同的主键序列值(@pkSequence)。
 
-[!DNL :bulb:] 在此部分中了解有关键的 [更多信息](database-mapping.md#management-of-keys)。
+??了解有关[此部分](database-mapping.md#management-of-keys)中键的更多信息。
 
-## 属性（字段）{#attributes--fields-}
+## 属性（字段） {#attributes--fields-}
 
 利用属性，可定义构成数据对象的字段。 可以使用架构版工具栏中的&#x200B;**[!UICONTROL Insert]**&#x200B;按钮将空属性模板拖放到光标所在的XML中。 在[此部分](create-schema.md)中了解详情。
 
@@ -163,7 +163,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=en#content-model)的`<attribute>`元素部分中提供了完整的属性列表。 以下是一些最常用的属性：**@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, ****@required **、**@ref **、**@xml **、**@type **。**
 
-[!DNL :arrow_upper_right:] 有关每个属性的更多信息，请参阅 [Campaign Classicv7文档中的属性描述](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic)。
+↗️有关每个属性的更多信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic)中的属性描述。
 
 ### 示例 {#examples}
 
@@ -205,7 +205,7 @@ XML字段的示例也存储在SQL字段中，该字段具有&#x200B;**@dataPolic
 
 基数有三种类型：1-1、1-N和N-N默认使用的是1-N类型。
 
-### 示例{#examples-1}
+### 示例 {#examples-1}
 
 收件人表（即装即用模式）和自定义事务表之间的1-N链接示例：
 

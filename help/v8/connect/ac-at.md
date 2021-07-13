@@ -6,7 +6,7 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 >[!NOTE]
 >集成仅支持静态图像。 其他类型的内容无法进行个性化。
 
-[!DNL :speech_balloon:] 作为受管Cloud Services用户，请 [联系](../start/campaign-faq.md#support) Adobe以通过Campaign实施Experience Cloud触发器。
+??作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以通过Campaign实施Experience Cloud触发器。
 
 以下类型的数据可供Adobe Target使用：
 
@@ -52,7 +52,7 @@ Adobe Campaign和Adobe Target需要采取以下步骤：
 1. [创建体验定位活动](#creating-targeting-activity)
 1. [预览和发送消息](#preview-send-email)
 
-### 在电子邮件{#inserting-dynamic-offer}中插入动态选件
+### 在电子邮件中插入动态选件 {#inserting-dynamic-offer}
 
 在Adobe Campaign中，定义电子邮件的目标和内容。 您可以从Adobe Target插入动态图像。
 
@@ -79,7 +79,7 @@ Adobe Campaign和Adobe Target需要采取以下步骤：
 
 ![](assets/target_13.png)
 
-### 创建重定向选件{#create-redirect-offers}
+### 创建重定向选件 {#create-redirect-offers}
 
 在Adobe Target中，您可以创建选件的不同版本。 根据每个用户体验，可以创建重定向选件，您可以指定将显示的图像。
 
@@ -113,7 +113,7 @@ Adobe Campaign和Adobe Target需要采取以下步骤：
 
 1. 对其余受众执行相同的操作步骤。
 
-### 创建体验定位活动{#creating-targeting-activity}
+### 创建体验定位活动 {#creating-targeting-activity}
 
 在Adobe Target中，我们需要创建体验定位活动，定义不同的体验，并将它们与相应的选件相关联。
 
@@ -161,7 +161,7 @@ Adobe Campaign和Adobe Target需要采取以下步骤：
 
 ![](assets/target_experience_2.png)
 
-## 预览并发送消息{#preview-send-email}
+## 预览和发送消息 {#preview-send-email}
 
 在Adobe Campaign中，您现在可以预览电子邮件并在不同的收件人上测试其呈现效果。
 

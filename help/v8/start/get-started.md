@@ -6,10 +6,10 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
-workflow-type: ht
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -31,9 +31,9 @@ Adobe Campaign 提供了跨渠道客户体验设计平台，并为可视化的�
 
 在 Adobe　Campaign 中，收件人是发送投放内容（电子邮件、SMS 等）所定位的默认用户档案。凭借数据库中存储的收件人数据，您可以过滤将接收任何给定投放的目标并在投放内容中添加个性化数据。数据库中还有其他类型的用户档案。这些用户档案是针对不同用途而设计的。例如，种子用户档案用于在将投放内容发送给最终目标前测试该投放内容。
 
-[!DNL :bulb:] 用户档案管理基础知识在[本节](audiences.md)中有说明。
+??[此部分](audiences.md)中说明了配置文件管理的基础知识。
 
-[!DNL :bulb:]请参阅[本节](import.md)以了解如何向 Campaign 添加用户档案。
+??了解如何在[此部分](import.md)中向Campaign添加用户档案。
 
 ## 目标市场细分 {#targeted-segmentation}
 
@@ -41,13 +41,13 @@ Adobe Campaign 具有功能强大且易于使用的市场细分和定位功能�
 
 高级数据管理功能可进一步扩展数据处理能力。通过包含未在数据集市中建模的数据，该功能可简化并优化定位流程。
 
-[!DNL :bulb:]请参阅[本节](audiences.md)以了解关于分段、受众创建和个性化的更多信息。
+??在[此部分](audiences.md)中了解有关分段、受众创建和个性化的更多信息。
 
 ## 跨渠道营销活动编排 {#cross-channel-campaign-orchestration}
 
 您可以利用 Adobe Campaign 在多个渠道上设计和编排有针对性的个性化活动：电子邮件、直邮、SMS、推送通知等。通过单个界面为您提供计划、编排、配置、个性化、自动化、执行和衡量所有活动和通信所需的全部功能。
 
-[!DNL :bulb:]请参阅[本节](campaigns.md)以了解如何设计、计划和执行活动。
+??了解如何在[此部分](campaigns.md)中设计、计划和执行营销活动。
 
 ## 工作流
 
@@ -62,25 +62,25 @@ Adobe Campaign 提供了一个全面的图形环境，允许您设计包括分�
 * 将数据导入 Campaign 数据库。
 * 数据库清理、恢复跟踪信息等技术流程。
 
-[!DNL :bulb:]请参阅[本节](../config/workflows.md)以了解如何设计和执行工作流。
+??了解如何在[此部分](../config/workflows.md)中设计和执行工作流。
 
 ## 报告和分析 {#analysis-and-reporting}
 
 Adobe Campaign 可逐步丰富客户数据和用户档案，从而让您监测和解读客户的行为。利用报告和分析工具，您可以充分利用每一个新活动、更有效地确定营销方案的目标，且最大限度提高活动的影响力及投资回报率。
 
-[!DNL :bulb:]请参阅[本节](reporting.md)以了解有关报告和跟踪功能的更多信息。
+??在[此部分](reporting.md)中了解有关报告和跟踪功能的更多信息。
 
 ## Adobe Experience Cloud 集成 {#adobe-experience-cloud-integrations}
 
 您可以将 Adobe Campaign 的投放功能以及高级营销活动管理功能与帮助您个性化用户体验的解决方案（例如 Adobe Experience Manager、Adobe Analytics、Adobe Target 或 Adobe Experience Cloud 触发程序）结合起来。
 
-[!DNL :bulb:]请参阅[本节](../connect/integration.md)以了解如何与 Adobe 服务和解决方案进行集成。
+??了解如何在[此部分](../connect/integration.md)中与Adobe服务和解决方案集成。
 
 ## 关于 Campaign 功能的更多信息 {#core-capabilities-and-add-ons}
 
 根据您的需求和架构，Adobe Campaign 提供了一系列功能，帮助您实施和优化各种对话式营销功能。其中有些是核心功能，有些功能取决于软件包的安装和您的配置。此处提供了详细的产品说明：[Adobe Campaign v8 产品说明](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)。
 
-[!DNL :bulb:] 已经熟悉了 Campaign Classic？在[此页面](capability-matrix.md)中了解 Campaign Classic 和 Campaign v8 之间的主要差异。
+??已经熟悉Campaign Classic? 在[此页面](capability-matrix.md)中了解 Campaign Classic 和 Campaign v8 之间的主要差异。
 
 ## 工作区和自定义
 
@@ -88,17 +88,17 @@ Campaign 工作区可通过[客户端控制台](../dev/general-architecture.md)�
 
 ![](assets/home-page.png)
 
-[!DNL :bulb:] [了解关于 Campaign 客户端控制台的更多信息](../start/connect.md)。
+??[了解有关Campaign客户端控制台的更多信息](../start/connect.md)。
 
 Campaign 工作区可以根据您的需求进行调整。
 
-[!DNL :arrow_upper_right:] 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=zh-Hans)以了解如何使用 Campaign 工作区{target=&quot;_blank&quot;}
+↗️了解如何在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-workspace.html?lang=zh-Hans){target=&quot;_blank&quot;}中使用Campaign工作区
 
-[!DNL :arrow_upper_right:] 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=zh-Hans)以了解如何自定义列表{target=&quot;_blank&quot;}
+↗️了解如何在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=zh-Hans){target=&quot;_blank&quot;}中自定义列表
 
 您还可以通过 Web 访问某些功能。
 
-[!DNL :bulb:] [了解关于 Campaign Web Access 的更多信息](../start/connect.md#web-access)。
+??[了解有关Campaign Web Access的更多信息](../start/connect.md#web-access)。
 
 
 ## 语言

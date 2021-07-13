@@ -5,7 +5,7 @@ description: 创建选件管理运算符
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 ---
 
 
-# 运算符配置文件{#operator-profiles}
+# 操作员配置文件 {#operator-profiles}
 
 两种类型的运算符可以使用Campaign交互：**选件管理器**&#x200B;和&#x200B;**投放管理器**。 每个权限和限制都是特定的。 在[此页面](../start/permissions.md)中了解有关Campaign操作员和权限的更多信息。
 
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 1. 创建新运算符。
 
-   [!DNL :arrow_upper_right:] 有关在Campaign中创建运算符的详细步骤，请参 [阅Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
+   ↗️有关在Campaign中创建运算符的详细步骤，请参见[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
 
 1. 转到&#x200B;**[!UICONTROL Groups and named rights]**&#x200B;窗口，单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择&#x200B;**[!UICONTROL Offer manager]**&#x200B;组。
 
@@ -44,11 +44,11 @@ ht-degree: 1%
 >
 >**选件管理器**&#x200B;只有在未指定审核人员时，或在选件所依据的选件模板中声明其为审核人员时，才能批准选件。
 
-## 创建投放管理器运算符{#delivery-manager}
+## 创建投放管理器运算符 {#delivery-manager}
 
 1. 创建新运算符。
 
-   [!DNL :arrow_upper_right:] 有关在Campaign中创建运算符的详细步骤，请参 [阅Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
+   ↗️有关在Campaign中创建运算符的详细步骤，请参见[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
 
 1. 转到&#x200B;**[!UICONTROL Groups and named rights]**&#x200B;窗口，单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择&#x200B;**[!UICONTROL Delivery manager]**&#x200B;组。
 
@@ -62,7 +62,7 @@ ht-degree: 1%
    >
    >**投放管理器**&#x200B;只有在选件配置期间被声明为审阅者时才能批准选件。
 
-## 每个交互运算符的权限矩阵{#recap-of-rights-according-to-operator}
+## 每个交互运算符的权限矩阵 {#recap-of-rights-according-to-operator}
 
 <table> 
  <tbody> 

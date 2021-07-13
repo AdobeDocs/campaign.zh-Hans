@@ -6,10 +6,10 @@ feature: 受众
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: a468597714e3974c85e4ada3b6c2ee405717106a
+source-git-commit: 44ddce019de74be96a955eefbc940e41e060a6d3
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 5%
+source-wordcount: '685'
+ht-degree: 6%
 
 ---
 
@@ -29,7 +29,7 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 
 有两个选项可用：
 
-1. 作为Campaign管理员，请连接到Adobe[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/encampaign.html)并下载客户端控制台安装程序。 然后，您可以将其安装到本地计算机上。
+1. 作为Campaign管理员，请连接到Adobe[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)并下载客户端控制台安装程序。 然后，您可以将其安装到本地计算机上。
 
 1. 作为最终用户，Adobe可以为您部署控制台：更新控制台后，系统会在弹出窗口中提示您下载最新的客户端控制台版本。
 

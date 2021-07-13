@@ -8,14 +8,14 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 1%
 
 ---
 
-# 将Campaign SDK与您的应用程序{#integrate-campaign-sdk}集成
+# 将Campaign SDK与您的应用程序集成 {#integrate-campaign-sdk}
 
 使用适用于iOS和Android的Campaign SDK来促进将移动应用程序集成到Adobe Campaign平台。
 
@@ -26,7 +26,7 @@ ht-degree: 1%
 >作为Campaign管理员，您可以从[Experience Cloud软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)下载Campaign SDK。 有关更多信息，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 
-## 声明集成设置{#declaring-integration-settings}
+## 声明集成设置 {#declaring-integration-settings}
 
 要将Campaign SDK集成到移动应用程序中，功能管理员必须向开发人员提供以下信息：
 
@@ -797,7 +797,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
 利用变量，可在收到通知后定义移动应用程序行为。 这些变量必须在移动设备应用程序代码和Adobe Campaign控制台的专用移动设备应用程序服务的&#x200B;**[!UICONTROL Variables]**&#x200B;选项卡中定义。
 
-[!DNL :arrow_upper_right:] 请参阅Campaign Classicv7 **文档，了** 解有关移动设备应用程序的更多信息： [iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;}的配置步骤和 [Android](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html){target=&quot;_blank&quot;}的配置步骤。
+↗️在移动设备应用程序的&#x200B;**Campaign Classicv7文档**&#x200B;中了解更多信息：[iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;}和[Andoid](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html){target=&quot;_blank&quot;}的配置步骤。
 
 以下是允许移动设备应用程序收集通知中任何添加变量的代码示例。 在我们的示例中，我们使用“VAR”变量。
 
@@ -845,7 +845,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 >
 >Adobe建议选择短变量名称，因为对于iOS和Android，通知大小限制为4kB。
 
-## 通知服务扩展{#notification-service-extension}
+## 通知服务扩展 {#notification-service-extension}
 
 **对于iOS**
 
@@ -879,7 +879,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
     // Perform the download to local storage
 ```
 
-## 通知内容扩展{#notification-content-extension}
+## 通知内容扩展 {#notification-content-extension}
 
 **对于iOS**
 

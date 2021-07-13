@@ -5,7 +5,7 @@ description: 事务型消息传递入门
 feature: 概述
 role: Data Engineer
 level: Beginner
-source-git-commit: 0566d40370a3e14d5205861509f7c1ae8cb4b22d
+source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 事务型消息传递（消息中心）是一个Campaign模块，用于管理触发器消息。 这些消息是从信息系统触发的事件生成的，可以是：例如，发票、订单确认、发运确认、密码更改、产品不可用通知、帐户对帐单或网站帐户创建。
 
-[!DNL :speech_balloon:] 作为受管Cloud Services用户，请 [联系](../start/campaign-faq.md#support) Adobe，以在您的环境中安装和配置Campaign事务型消息传递。
+??作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以在您的环境中安装和配置Campaign事务型消息传递。
 
 事务型消息用于发送：
 
@@ -24,9 +24,9 @@ ht-degree: 2%
 * 对客户行动的个人实时响应
 * 非促销内容
 
-[!DNL :bulb:] 有关事务性消息传递设置的详 [细信息，请参阅此章节](../config/transactional-msg-settings.md)。
+??[此部分](../config/transactional-msg-settings.md)中详细介绍了事务性消息传递设置。
 
-[!DNL :bulb:] 了解本页中的事务型消 [息传递架构](../dev/architecture.md)。
+??了解[本页](../dev/architecture.md)中的事务型消息传递架构。
 
 >[!CAUTION]
 >
@@ -151,7 +151,7 @@ ht-degree: 2%
 
 发送校样的过程与任何投放的过程相同。
 
-[!DNL :arrow_upper_right:] 了解有关Campaign Classicv7 [文档中校样的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=zh-Hans){target=&quot;_blank&quot;}
+↗️了解有关[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=zh-Hans){target=&quot;_blank&quot;}中校样的更多信息
 
 但是，要发送事务型消息的校样，您需要执行以下操作：
 

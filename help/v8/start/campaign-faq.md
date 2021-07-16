@@ -6,10 +6,10 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: 22f47bed75d78684c85471330aca7dadafb9ed65
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 89%
+source-wordcount: '663'
+ht-degree: 87%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 89%
 
    子域是域的一个分支，可用于隔离您的品牌或各种类型的流量（事务性消息、营销信息等）。
 
-   ??作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)将子域委派给Adobe。
+   ??作为受管Cloud Services用户，请联系Adobe以将子域委派给Adobe。
 
 1. **作为 Campaign Classic v7 用户，我是否可以迁移到 Campaign v8？**
 
@@ -71,7 +71,7 @@ ht-degree: 89%
 
    可以从 Adobe 下载中心获取安装程序和客户端控制台。
 
-   [单击此处](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html){target=&quot;_blank&quot;}访问 Experience Cloud Software Distribution。
+   作为管理员用户，访问Adobe[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) {target=&quot;_blank&quot;}以下载Adobe Campaign。
 
    [在此页面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans){target=&quot;_blank&quot;}中进一步了解 Distribution Center。
 

@@ -6,10 +6,10 @@ description: 了解如何授予Campaign v8的权限
 feature: 受众
 role: Data Engineer
 level: Beginner
-source-git-commit: a57855556751e85e7a1f7751a103ca157f434a8a
+source-git-commit: 22f47bed75d78684c85471330aca7dadafb9ed65
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 5%
+source-wordcount: '383'
+ht-degree: 7%
 
 ---
 
@@ -37,7 +37,7 @@ Adobe Campaign附带内置的运算符组，如促销活动管理器或工作流
 
 操作员从控制台中的配置文件链接到安全区域，可在&#x200B;**[!UICONTROL Administration > Access management > Operators]**&#x200B;节点中访问该安全区域。
 
-??作为托管Cloud Services用户，Adobe会为您设置安全区。 有关详细信息，请[联系Adobe](support.md#support)。
+??作为托管Cloud Services用户，Adobe会为您设置安全区。 有关详细信息，请[联系Adobe](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}。
 
 **请参阅 Campaign Classic v7 文档**&#x200B;以了解详情
 

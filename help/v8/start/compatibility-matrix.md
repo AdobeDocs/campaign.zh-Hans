@@ -6,10 +6,10 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: 619edce939b39430832fd950ece734f817f9dce3
-workflow-type: ht
-source-wordcount: '277'
-ht-degree: 100%
+source-git-commit: 610a818c1f5d8a43ea55659a3c5b46676405415d
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 96%
 
 ---
 
@@ -23,39 +23,39 @@ ht-degree: 100%
 >* 随着这些第三方系统和工具的特定版本的生命周期结束 (EOL)，Adobe Campaign 将不再与这些版本兼容，并会从兼容性矩阵中移除它们。请确保您使用兼容性矩阵中列出的任何系统的受支持版本，以避免出现任何问题。
 
 
-## 兼容系统
+## 客户端控制台{#ClientConsoleoperatingsystems}
 
-### 客户端控制台{#ClientConsoleoperatingsystems}
+>[!CAUTION]
+>
+> 警告：要使用 Campaign 客户端控制台，必须配备以下操作系统和浏览器。
 
-:warning:警告：要使用 Campaign 客户端控制台，必须配备以下操作系统和浏览器。
-
-**操作系统**
+### 操作系统
 
 * **Microsoft Windows Server** 2016、2012
 * **Microsoft Windows** 8、10（建议用于日语实例)
 
-**浏览器**
+### 浏览器
 
 **Microsoft Internet Explorer** 11
 
-### CRM 连接器{#CRMconnectors}
+## CRM 连接器{#CRMconnectors}
 
 * **Salesforce** connector API 版本 49
 * **Microsoft Dynamics** 连接器、Web API：Dynamics 365 内部部署版和在线版
 
-### 联合数据访问 (FDA){#FederatedDataAccessFDA}
+## 联合数据访问 (FDA){#FederatedDataAccessFDA}
 
 * **Amazon Redshift**
 * **[!DNL Google Big Query]**
 * **[!DNL Snowflake]**
 * **[!DNL Vertica]**
 
-### 移动 SDK{#MobileSDK}
+## 移动 SDK{#MobileSDK}
 
 * **Android** 7.x、8.x、9.0 适用于 Campaign Android SDK 版本 1.1.1。
 * **Apple iOS** 9 - 14 适用于 Campaign iOS SDK 版本 1.0.26，与 32 位和 64 位版本兼容。
 
-### 支持的浏览器 {#Browsers}
+## Web访问
 
 以下浏览器与 Campaign 兼容，可用于 Web 访问。
 
@@ -65,7 +65,7 @@ ht-degree: 100%
 
 ## 如何检查您的 Campaign 版本和版本
 
-使用 **Help > About...** 菜单检查您的版本。
+访问&#x200B;**帮助>关于……**&#x200B;菜单以检查您的版本。
 
 ![](assets/ac-version.png)
 

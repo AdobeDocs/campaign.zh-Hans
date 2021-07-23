@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 source-git-commit: f51c36ed426d200a4636290eb4fa1be6b077f976
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '275'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 96%
 * **Android** 7.x、8.x、9.0 适用于 Campaign Android SDK 版本 1.1.1。
 * **Apple iOS** 9 - 14 适用于 Campaign iOS SDK 版本 1.0.26，与 32 位和 64 位版本兼容。
 
-## Web访问
+## Web 访问
 
 以下浏览器与 Campaign 兼容，可用于 Web 访问。
 
@@ -61,7 +61,7 @@ ht-degree: 96%
 
 ## 如何检查您的 Campaign 版本和版本
 
-访问&#x200B;**帮助>关于……**&#x200B;菜单以检查您的版本。
+访问 **Help > About…** 菜单检查您的版本。
 
 ![](assets/ac-version.png)
 

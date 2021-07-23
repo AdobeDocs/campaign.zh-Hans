@@ -6,10 +6,10 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: bfd2df90e5e6bee89bdfc7c5da82c755ac5726df
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 94%
+source-wordcount: '916'
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 94%
 
 作为 [!DNL Campaign Classic] 用户，请注意， v7 的大多数功能[!DNL Campaign Classic]都可以在[!DNL Campaign] v8 中使用，但[本节](#gs-removed)所列的一小部分功能除外。其他功能将在以后的版本中发布。[在本节中了解详情](#gs-unavailable-features)
 
-??详细了解[本页](../dev/architecture.md)中的[!DNL Campaign] v8架构。
+?? 如需详细了解[!DNL Campaign] v8 架构，请参阅[此页面](../dev/architecture.md)。
 
 ## 产品配置变化
 
@@ -72,15 +72,23 @@ Adobe campaign v8 以 Snowflake 为核心数据库。随着查询规模的显着
 
 Campaign 用户不需要成为数据库专家：不再需要执行复杂的数据库维护操作或编制复杂的表格索引。
 
-## 与Campaign的连接
+## 连接至 Campaign
 
-Campaign用户通过其Adobe ID进行连接。 同一Adobe ID用于将您的所有Adobe计划和产品与单个帐户关联。
+Campaign 用户通过其 Adobe ID 进行连接。使用同一个 Adobe ID 来管理与单个帐户关联的所有 Adobe 计划和产品。
 
-??了解如何连接到[此页面](connect.md)中的[!DNL Campaign]。
+?? 请参阅[此页面](connect.md)以了解如何连接到 [!DNL Campaign]。
 
 ## 报告
 
 请注意，与 Adobe Campaign v7 相比，Campaign Classic 报表已得到优化，并提供了更好的扩展功能。 多维数据集的现有限制不适用。
+
+## 工作流 {#workflow}
+
+Campaign v8提供了其他定位工作流活动：**[!UICONTROL Change data source]**。
+
+利用&#x200B;**[!UICONTROL Change data source]**&#x200B;活动，可更改工作流&#x200B;**[!UICONTROL Working table]**&#x200B;的数据源，以管理跨不同数据源（如FDA、FFDA和本地数据库）的数据。
+
+??详细了解[此页面](../config/workflows.md#change-data-source-activity)中的&#x200B;**[!UICONTROL Change data source]**&#x200B;活动。
 
 ## 功能不可用{#gs-unavailable-features}
 
@@ -112,5 +120,5 @@ Campaign用户通过其Adobe ID进行连接。 同一Adobe ID用于将您的所�
 * 调查
 * 社交媒体营销
 * ACS 连接器（高级服务）
-* 与LDAP集成
+* 与 LDAP 集成
 * 用户/密码登录

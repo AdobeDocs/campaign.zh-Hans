@@ -8,9 +8,9 @@ level: Beginner
 hidefromtoc: true
 hide: true
 source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '374'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -55,4 +55,4 @@ Campaign 控制面板允许管理每个实例的设置并跟踪使用情况，�
 * [实例详细信息](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=zh-Hans){target=&quot;_blank&quot;}
 * [GPG 密钥管理](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hans){target=&quot;_blank&quot;}
 
-↗️在[本文档](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans){target=&quot;_blank&quot;}中发现所有控制面板功能
+↗️ 请参阅[本文档](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans){target=&quot;_blank&quot;}以了解控制面板的所有功能

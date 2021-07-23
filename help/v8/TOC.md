@@ -5,9 +5,9 @@ user-guide-title: Campaign v8
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8
 title: Campaign v8 文档
-source-git-commit: e41f5b37d8f13c2a17f27a27bf1803081945a8ed
+source-git-commit: 5d266b22661be2817e06ea71c1b0bec7f44a152d
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '204'
 ht-degree: 100%
 
 ---
@@ -16,11 +16,12 @@ ht-degree: 100%
 # Adobe Campaign v8 文档 {#campaign-v8}
 
 + [Campaign v8 文档](campaign-home.md)
-+ 开始 {#start}
++ 新增功能 {#start}
    + [重要功能](start/whats-new.md)
    + [发行说明](start/release-notes.md)
    + [已知限制](start/known-limitations.md)
    + [Classic v7 到 v8](start/capability-matrix.md)
++ 开始 {#start}
    + [入门](start/get-started.md)
    + [用户档案和受众](start/audiences.md)
    + [导入数据](start/import.md)

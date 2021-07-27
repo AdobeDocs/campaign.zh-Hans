@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396e
-source-git-commit: 5d266b22661be2817e06ea71c1b0bec7f44a152d
+source-git-commit: 328f1bca11f8554def6ad4ccb741a86695481e98
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '312'
 ht-degree: 7%
 
 ---
@@ -50,14 +50,13 @@ _2021年7月23日_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>LINE渠道现在可在Campaign v8中使用。 在将LINE与消息中心结合使用时，进行了以下增强：
-</p>
+<td> <p><a href="../send/line.md">LINE channel</a>现在可在Campaign v8中使用，包括与<a href="../send/transactional.md">事务性消息传递</a>模块结合使用时的以下增强功能：
 <ul> 
 <li><p>修复了可能会阻止在LINE投放中定位访客的问题。 
 </p></li>
 <li><p>修复了在从执行实例检索访客到营销实例时可能导致错误的问题。
 </p></li>
-<li><p>修复了使用消息中心处理LINE投放上下文中的实时事件时出现的问题。</p></li>
+<li><p>修复了实时事件处理过程中的问题。</p></li>
 </ul>
 </td> 
 </tr> 

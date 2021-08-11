@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
 source-git-commit: bfd2df90e5e6bee89bdfc7c5da82c755ac5726df
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '916'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -84,11 +84,11 @@ Campaign 用户通过其 Adobe ID 进行连接。使用同一个 Adobe ID 来管
 
 ## 工作流 {#workflow}
 
-Campaign v8提供了其他定位工作流活动：**[!UICONTROL Change data source]**。
+Campaign v8 增添了一个定位工作流活动：**[!UICONTROL Change data source]**。
 
-利用&#x200B;**[!UICONTROL Change data source]**&#x200B;活动，可更改工作流&#x200B;**[!UICONTROL Working table]**&#x200B;的数据源，以管理跨不同数据源（如FDA、FFDA和本地数据库）的数据。
+利用 **[!UICONTROL Change data source]** 活动，可更改工作流 **[!UICONTROL Working table]** 的数据源，以管理跨不同数据源（如 FDA、FFDA 和本地数据库）的数据。
 
-??详细了解[此页面](../config/workflows.md#change-data-source-activity)中的&#x200B;**[!UICONTROL Change data source]**&#x200B;活动。
+?? 有关 **[!UICONTROL Change data source]** 的更多信息，请参阅[此页面](../config/workflows.md#change-data-source-activity)。
 
 ## 功能不可用{#gs-unavailable-features}
 

@@ -6,9 +6,9 @@ feature: 概述
 role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4,df76e7ff-3b97-41be-abc2-640748680ff3
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: 6334178f6e5d0ad0a33975838be6cf663862d892
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '392'
 ht-degree: 3%
 
 ---
@@ -43,6 +43,13 @@ Campaign Explorer的&#x200B;**[!UICONTROL Administration > Production > Technica
 
 某些内置表通过上述专用工作流从Campaign本地数据库复制到[!DNL Snowflake]云数据库。
 
+了解Adobe Campaign v8使用哪些数据库、为何要复制数据、要复制哪些数据以及复制过程的工作方式。
+
+>[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
+
+
+### 数据复制策略
+
 复制策略基于表的大小。 有些表将实时复制，有些表将按小时复制。 某些表在替换其他表时将进行增量更新。
 
 除了内置的&#x200B;**复制参考表**&#x200B;技术工作流之外，您还可以在工作流中强制进行数据复制。
@@ -65,6 +72,8 @@ nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
 ```
 
 ![](assets/nlmodule.png)
+
+
 
 **相关主题**
 

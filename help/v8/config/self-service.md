@@ -1,14 +1,14 @@
 ---
 product: Adobe Campaign
 title: Campaign 控制面板
-description: Campaign快速入门控制面板
-feature: 概述
+description: Campaign 控制面板入门
+feature: Overview
 role: Data Engineer
 level: Beginner
 source-git-commit: f35122d5e5f5812d9a3fda9b21f2f7fd88aaaa0f
-workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 82%
+workflow-type: ht
+source-wordcount: '344'
+ht-degree: 100%
 
 ---
 
@@ -24,16 +24,15 @@ Campaign 控制面板允许管理每个实例的设置并跟踪使用情况，�
 
 您还可以使用 Campaign 控制面板配置实例设置，如 IP 允许列表、URL 权限和检索有关实例的信息。
 
-↗️在[Campaign控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans){target=&quot;_blank&quot;}中了解更多信息。
+↗️ 请参阅 [Campaign 控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans){target=&quot;_blank&quot;}以了解详情。
 
 >[!CAUTION]
-> Campaign v8尚不支持以下功能：
+> Campaign v8 尚不支持以下功能：
 >
 >* 子域管理
 >* 证书管理
 
 >
-
 
 
 ## 如何访问控制面板？
@@ -42,7 +41,7 @@ Campaign 控制面板允许管理每个实例的设置并跟踪使用情况，�
 
 ## 控制面板常见问题解答
 
-[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=en#control-panel){target=&quot;_blank&quot;}以访问Campaign控制面板常见问题解答。
+[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=zh-Hans#control-panel){target=&quot;_blank&quot;}以访问 Campaign 控制面板常见问题解答。
 
 ## SFTP 管理
 

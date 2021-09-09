@@ -2,14 +2,14 @@
 product: Adobe Campaign
 title: Campaign Classic v7 - Campaign v8 功能矩阵
 description: 了解 Campaign Classic v7 和 Campaign v8 之间的差异
-feature: 概述
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
 source-git-commit: d61888a4536d6f37f5956c8fd5404bdcd893ae6c
-workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 99%
+workflow-type: ht
+source-wordcount: '909'
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,6 @@ ht-degree: 99%
 >
 > 客户数据并不存储在本地 [!DNL Campaign] 数据库中。因此，所有自定义表格都需要在云数据库中创建。
 
-
 特定 API 可用于管理本地数据库和云数据库之间的数据。在[本页面](../dev/new-apis.md)中了解这些新 API 的工作方式以及如何使用它们。
 
 ### 数据复制
@@ -54,7 +53,6 @@ ht-degree: 99%
 >
 > 已根据表格的大小（XS、XL等）创建了多种复制策略。
 > 部分表格是实时复制的，其他表格则是每小时复制一次。部分表格将具有增量更新，而其他表格则将进行全面更新。
-
 
 [了解关于数据复制的更多信息](../config/replication.md)
 

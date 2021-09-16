@@ -8,9 +8,9 @@ level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396e
 source-git-commit: 5b81c8e9e391ea1a9ad1825e5102b66c7926c204
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '756'
-ht-degree: 43%
+ht-degree: 100%
 
 ---
 
@@ -20,41 +20,41 @@ ht-degree: 43%
 
 ## 8.1.20 版 {#release-8-1-20}
 
-_2021年9月7日_
+_2021 年 9 月 7 日_
 
 **安全性增强**
 
-* 修复了一个安全问题，以加强针对目录遍历攻击的保护。 (NEO-28547)
+* 修复了一个安全问题，以加强针对目录穿越攻击的保护。(NEO-28547)
 
 **改进**
 
-* Flash生命周期结束后，已从所有相关的Campaign功能和组件中删除，并替换为HTML5。 已删除图表的&#x200B;**量规**&#x200B;类型。 (NEO-30330)[阅读更多](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-chart.html)
-* 现在，在Windows上安装客户端控制台时，安装程序会检查是否存在父注册表节点，如果缺少该节点，则创建一个。 这可防止在启动控制台时出现潜在问题。 (NEO-34854)
-* 跟踪签名功能已得到改进，以防止与第三方工具（电子邮件客户端、Internet浏览器等）的方式相关的错误 处理特殊字符。 URL参数现已进行编码。
+* 在 Flash 生命周期结束后，已从所有相关的 Campaign 功能和组件中移除 Flash，并替换为 HTML5。**量规**&#x200B;类型的图表已被删除。(NEO-30330) [阅读更多](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-chart.html?lang=zh-Hans)
+* 在 Windows 上安装客户端控制台时，安装程序现在会检查是否存在父注册表节点，如果缺少该节点，则会创建一个。这样可防止在启动控制台时出现潜在问题。(NEO-34854)
+* 跟踪签名功能已得到改进，以防止与第三方工具（电子邮件客户端、互联网浏览器等）处理特殊字符的方式有关的错误。URL 参数现已进行编码。
 
 **其他变更**
 
-* 以前已弃用的Microsoft CRM连接器（Office 365和内部部署）已从界面中删除。 [阅读更多](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-ms-dynamics.html#configure-acc-for-microsoft)
-* 迁移到Tomcat 8后，已更新IIS设置脚本，以修复IIS集成问题。 (NEO-31019)
-* 添加了护栏，以仅允许[计费技术工作流](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/monitoring-processes.html#billing-report)在营销实例上运行。
-* 在工作流过渡的“ **查看群体**”窗口的“数据”和“架构”选项卡中，数据源标识已得到改进。
-* 缺少的数据库索引已添加到以下模式以防止数据库更新问题：xtk:rights、nms:dlvExclusion、nms:seedMember、nms:trackingUrl
+* 之前已弃用的 Microsoft CRM 连接器（Office 365 和内部部署）已从界面中移除。[阅读更多](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-ms-dynamics.html?lang=zh-Hans#configure-acc-for-microsoft)
+* 迁移到 Tomcat 8 后，已更新 IIS 设置脚本，以修复 IIS 集成问题。(NEO-31019)
+* 新增了护栏，以仅允许[计费技术工作流](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/monitoring-processes.html?lang=zh-Hans#billing-report)在营销实例上运行。
+* 在工作流过渡的 **View population** 窗口的 data 和 schema 选项卡中，数据源识别已得到改进。
+* 缺少的数据库索引已添加至以下模式，以防止数据库更新问题：xtk:rights、nms:dlvExclusion、nms:seedMember、nms:trackingUrl
 
 **修补程序**
 
-* 修复了在将选件链接到投放时，阻止&#x200B;**热门点击**&#x200B;报表工作的问题。 (NEO-26295)
-* 修复了&#x200B;**Sub-worklow**&#x200B;活动在执行时未生成输出表的问题。 (NEO-36242)
-* 修复了将&#x200B;**描述性分析**&#x200B;报表导出为PDF时出现的各种问题。 (NEO-25847)
-* 修复了在使用外部邮件投放时可能导致投放失败的问题。 (NEO-37435)
-* 修复了使用Web API连接到Microsoft CRM时的错误。 由于功能未受到影响，因此错误消息已被删除。
-* 修复了将mid服务器设置为跟踪服务器和营销服务器之间的中继时的跟踪日志重复数据删除问题。 (NEO-36285)
-* 修复了阻止将Vault用作特定代码存储的回归。
-* 修复了当来自FDA数据源的传入过渡时，阻止您在&#x200B;**扩充**&#x200B;工作流活动中使用变量的问题。
-* 修复了FFDA中无法正确复制操作员组和权限的问题。
+* 修复了在将优惠链接到投放时，导致&#x200B;**热门点击**&#x200B;报表无法工作的问题。(NEO-26295)
+* 修复了 **Sub-worklow** 活动在执行时未生成输出表的问题。(NEO-36242)
+* 修复了将&#x200B;**描述性分析**&#x200B;报表导出为 PDF 时出现的各种问题。(NEO-25847)
+* 修复了在使用外部邮件投放时可能导致投放失败的问题。(NEO-37435)
+* 修复了使用 Web API 连接到 Microsoft CRM 时的错误。由于功能未受到影响，因此错误消息已被移除。
+* 修复了将中间服务器设置为跟踪服务器和营销服务器之间的中继时出现的跟踪日志删除重复项问题。(NEO-36285)
+* 修复了导致无法将 Vault 用作特定代码存储的回归问题。
+* 修复了当传入的过渡来自 FDA 数据源时，导致无法在&#x200B;**扩充**&#x200B;工作流活动中使用变量的问题。
+* 修复了 FFDA 中无法正确复制操作员组和权限的问题。
 * 修复了可能导致通过投放发送错误的退订链接的问题。
 * 修复了复制管理中影响升级后的持续时间的问题。
-* 修复了可能阻止显示&#x200B;**热点单击**&#x200B;的问题。
-* 修复了可能导致电子邮件中的URL损坏的问题。
+* 修复了可能阻止显示&#x200B;**单击热点**&#x200B;的问题。
+* 修复了可能导致电子邮件中 URL 损坏的问题。
 
 ## 8.1.14 版 {#release-8-1-14}
 

@@ -1,8 +1,8 @@
 ---
-product: Adobe Campaign
 title: 营销活动模式结构
 description: 营销活动模式结构
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
 source-wordcount: '1397'
 ht-degree: 1%
@@ -163,7 +163,7 @@ ht-degree: 1%
 
 数据架构的&#x200B;**`<elements>`**&#x200B;和&#x200B;**`<attributes>`**&#x200B;元素可以使用各种属性进行扩充。 您可以填充标签以描述当前元素。
 
-### 标签和描述{#labels-and-descriptions}
+### 标签和描述 {#labels-and-descriptions}
 
 * **label**&#x200B;属性允许您输入简短描述。
 
@@ -195,7 +195,7 @@ ht-degree: 1%
    <attribute name="email" type="string" length="80" label="Email" desc="Email of recipient"/>
    ```
 
-### 默认值{#default-values}
+### 默认值 {#default-values}
 
 使用&#x200B;**default**&#x200B;属性可定义在内容创建时返回默认值的表达式。
 
@@ -220,7 +220,7 @@ ht-degree: 1%
 
 ### 明细列表 {#enumerations}
 
-#### 自由枚举{#free-enumeration}
+#### 自由枚举 {#free-enumeration}
 
 通过&#x200B;**userEnum**&#x200B;属性，您可以定义自由枚举来记忆和显示通过此字段输入的值。 语法如下所示：
 
@@ -236,7 +236,7 @@ ht-degree: 1%
 >
 >在Adobe Campaign客户端控制台中， **[!UICONTROL Administration > Enumerations]**&#x200B;节点用于管理枚举。
 
-#### 设置枚举{#set-enumeration}
+#### 设置枚举 {#set-enumeration}
 
 通过&#x200B;**enum**&#x200B;属性，您可以定义在事先已知可能值列表时使用的固定枚举。
 
@@ -270,7 +270,7 @@ ht-degree: 1%
 * **名称**:内部存储的值的名称，
 * **标签**:标签。
 
-#### dbenum枚举{#dbenum-enumeration}
+#### dbenum枚举 {#dbenum-enumeration}
 
 * 通过&#x200B;**dbenum**&#x200B;属性，可定义属性与&#x200B;**enum**&#x200B;属性类似的枚举。
 
@@ -326,7 +326,7 @@ ht-degree: 1%
 <group label="Group2"/>
 ```
 
-## 使用XPath {#reference-with-xpath}引用
+## 使用XPath引用 {#reference-with-xpath}
 
 Adobe Campaign中使用XPath语言来引用属于数据模式的元素或属性。
 
@@ -352,7 +352,6 @@ XPath是一种语法，用于在XML文档的树中查找节点。
 >
 
 
-
 也可以定义复杂的表达式，例如以下算术运算：
 
 * **@gender+1**:向genderattribute的内容中添加 **** 1,
@@ -370,7 +369,7 @@ XPath是一种语法，用于在XML文档的树中查找节点。
 * **Year(@created)**:返回“已创建”属性中包含的日期年份。
 * **GetEmailDomain(@email)**:返回电子邮件地址的域。
 
-## 通过计算字符串{#building-a-string-via-the-compute-string}构建字符串
+## 通过计算字符串生成字符串 {#building-a-string-via-the-compute-string}
 
 **计算字符串**&#x200B;是XPath表达式，用于构建表示与架构关联的表中的记录的字符串。 **计算** 字符串主要用于图形界面以显示所选记录的标签。
 

@@ -1,13 +1,13 @@
 ---
-product: Adobe Campaign
 title: Campaign互动优惠空间
 description: 了解如何创建优惠空间
-feature: 概述
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+exl-id: c116d86a-d3e2-47e3-a641-e2d7c8cc575c
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '610'
 ht-degree: 3%
 
 ---
@@ -63,7 +63,7 @@ HTML渲染是通过渲染函数创建的。 呈现函数中定义的字段序列
 
    ![](assets/offer_space_create_007.png)
 
-## 选件建议状态{#offer-proposition-statuses}
+## 优惠建议状态 {#offer-proposition-statuses}
 
 优惠建议状态因与目标群体的交互而异。 Campaign交互模块附带一组值，这些值可在选件的整个生命周期中应用于该选件建议。 您需要配置平台，以便在创建并接受选件建议时状态发生更改。
 
@@ -71,7 +71,7 @@ HTML渲染是通过渲染函数创建的。 呈现函数中定义的字段序列
 >
 >状态更新是一个&#x200B;**异步**&#x200B;进程。 它由每小时触发的跟踪工作流执行。
 
-### 选件状态列表{#status-list}
+### 选件状态列表 {#status-list}
 
 可用的选件状态包括：
 
@@ -88,7 +88,7 @@ HTML渲染是通过渲染函数创建的。 呈现函数中定义的字段序列
 >
 >如果选件链接到状态为“已发送”的投放，则选件建议的状态将自动更改为“已显示”。
 
-### 创建建议{#configuring-the-status-when-the-proposition-is-created}时的选件状态
+### 创建建议时的选件状态 {#configuring-the-status-when-the-proposition-is-created}
 
 当选件建议为&#x200B;**created**&#x200B;时，其状态会更新。
 
@@ -101,7 +101,7 @@ HTML渲染是通过渲染函数创建的。 呈现函数中定义的字段序列
 
    ![](assets/offer_update_status_001.png)
 
-### {#configuring-the-status-when-the-proposition-is-accepted}接受建议时的选件状态
+### 建议被接受时的优惠状态 {#configuring-the-status-when-the-proposition-is-accepted}
 
 在&#x200B;**已接受**&#x200B;选件建议后，使用默认提供的值之一配置建议的新状态。 当收件人单击选件中的链接时，将应用更新。
 
@@ -144,7 +144,7 @@ As soon as a visitor clicks the offer, and therefore the URL, the **[!UICONTROL 
 <a _urlType="11" href="<DEST_URL>">Link inserted into the delivery</a>
 ```
 
-## 每个空间的选件预览{#offer-preview-per-space}
+## 每个空间的选件预览 {#offer-preview-per-space}
 
 在&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡中，您可以通过所选方法查看收件人有资格查看的选件。 在以下示例中，收件人有资格通过邮件获得三个选件建议。
 

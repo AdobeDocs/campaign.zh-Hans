@@ -1,17 +1,16 @@
 ---
-product: Adobe Campaign
 title: Campaign外部帐户
 description: Campaign外部帐户
-feature: 概述
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1000'
 ht-degree: 4%
 
 ---
-
 
 # 配置外部帐户
 
@@ -173,4 +172,3 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
    * **[!UICONTROL Encryption]**:或之间的加密 **[!UICONTROL None]** 类 **[!UICONTROL SSL]**&#x200B;型。
 
    * **[!UICONTROL Access key]**:了解如何在Microsoft文 **[!UICONTROL Access key]** 档 [中查找](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)。
-

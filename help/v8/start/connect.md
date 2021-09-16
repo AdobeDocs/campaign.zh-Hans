@@ -1,15 +1,14 @@
 ---
-product: Adobe Campaign
 title: 连接到Campaign v8
 description: 了解如何连接到Campaign v8
-feature: 受众
+feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 44ddce019de74be96a955eefbc940e41e060a6d3
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 6%
+source-wordcount: '684'
+ht-degree: 7%
 
 ---
 
@@ -29,7 +28,7 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 
 有两个选项可用：
 
-1. 作为Campaign管理员，请连接到Adobe[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)并下载客户端控制台安装程序。 然后，您可以将其安装到本地计算机上。
+1. 作为Campaign管理员，请连接到Adobe[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)并下载客户端控制台安装程序。 然后，您可以将其安装到本地计算机上。
 
 1. 作为最终用户，Adobe可以为您部署控制台：更新控制台后，系统会在弹出窗口中提示您下载最新的客户端控制台版本。
 
@@ -97,7 +96,7 @@ Campaign用户使用其Adobe ID通过AdobeIdentity Management系统(IMS)连接�
 
 在[此页面](https://helpx.adobe.com/enterprise/using/identity.html)中了解有关AdobeIMS的更多信息。
 
-## Web访问{#web-access}
+## Web 访问{#web-access}
 
 应用程序的某些部分可通过Web浏览器使用HTML用户界面进行访问：报告、投放批准、实例监控等。
 

@@ -1,13 +1,13 @@
 ---
-product: Adobe Campaign
 title: 促销活动互动 — 选件管理
 description: 开始使用选件管理
-feature: 概述
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+exl-id: 4da3e69a-6230-4c94-a6f1-4e8c01e854ba
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1213'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Campaign附带&#x200B;**Interaction**&#x200B;模块，让您能够在与给定�
 1. 为每个环境创建选件空间并配置渲染功能。 [了](interaction-offer-spaces.md)
 解详情如果空间由标识模式上的单一渠道定义，则必须为此空间指定高级参数。
 
-### 创建并发布选件目录{#managing-the-offer-catalog-}
+### 创建和发布选件目录 {#managing-the-offer-catalog-}
 
 作为&#x200B;**选件管理器**，您需要执行以下任务：
 
@@ -42,7 +42,7 @@ Campaign附带&#x200B;**Interaction**&#x200B;模块，让您能够在与给定�
 1. 在设计环境中创建选件。 [了解详情](interaction-offer.md)
 1. 在一个或多个空间上批准和发布选件，以便选件在实时环境中可供投放管理器使用。 [了解详情](interaction-offer.md#approve-offers)
 
-### 利用优惠目录{#using-the-offer-catalog-}
+### 利用优惠目录 {#using-the-offer-catalog-}
 
 作为&#x200B;**投放管理器**，您需要执行以下任务：
 
@@ -85,4 +85,3 @@ Campaign附带&#x200B;**Interaction**&#x200B;模块，让您能够在与给定�
 * 选件的&#x200B;**预览**&#x200B;显示选件在其文件夹中的显示情况。 可从选件设置窗口或联系人资料访问选件。
 * **预定** 义过滤器共享过滤规则可以考虑选件参数（例如，选件代码）。在创建选件后，它们可以重复使用。
 * **选件表示形式**&#x200B;是渠道用于显示选件的信息。 选件表示可以由表示选件的空间的渲染功能构建，或直接输入到界面（例如，在HTML块中）中。 选件可以由空格表示。
-

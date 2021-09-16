@@ -1,13 +1,13 @@
 ---
-product: Adobe Campaign
 title: Campaign互动运算符
 description: 创建选件管理运算符
-feature: 概述
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+exl-id: 31f38870-1781-4185-9022-d4fd6a31c94a
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '258'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 投放管理器只能查看&#x200B;**[!UICONTROL Live]**&#x200B;环境并利用选件进行投放。 选件管理器可以查看和使用&#x200B;**[!UICONTROL Design]**&#x200B;环境，并查看&#x200B;**[!UICONTROL Live]**&#x200B;环境。 [了解详情](interaction-operators.md)
 
-## 创建选件环境{#creating-an-offer-environment}
+## 创建选件环境 {#creating-an-offer-environment}
 
 默认情况下，Campaign附带一个内置环境，用于定位收件人表（已识别的选件）。 要定位另一个表，请执行以下步骤：
 

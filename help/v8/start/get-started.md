@@ -1,14 +1,13 @@
 ---
-product: Adobe Campaign
 title: 开始使用 Campaign v8
 description: Campaign 新用户？了解如何开始使用
-feature: 概述
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
-workflow-type: ht
-source-wordcount: '900'
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
+source-wordcount: '899'
 ht-degree: 100%
 
 ---

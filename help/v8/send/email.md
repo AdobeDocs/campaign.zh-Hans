@@ -1,13 +1,13 @@
 ---
-product: Adobe Campaign
 title: 使用Adobe Campaign发送电子邮件
 description: Campaign中电子邮件入门
-feature: 概述
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '604'
 ht-degree: 9%
 
 ---
@@ -110,4 +110,3 @@ Campaign提供了多种方法，用于在向受众发送电子邮件之前测试
 发送后，在投放仪表板中检查您的投放状态，并访问投放日志和报告以确认消息正确发送。
 
 ↗️ [请参阅 Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html)以了解详情
-

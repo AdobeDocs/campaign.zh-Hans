@@ -1,23 +1,22 @@
 ---
-product: Adobe Campaign
 title: 使用Campaign和Twitter
 description: 了解如何使用Campaign和Twitter
-feature: 概述
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
 hidefromtoc: true
 hide: true
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 4%
+source-wordcount: '172'
+ht-degree: 5%
 
 ---
 
 # 使用Campaign和Twitter
 
-**尚未可用**
+**尚不可用**
 
 使用&#x200B;**管理社交网络（社交营销）**&#x200B;选项，通过Twitter与客户和潜在客户进行交互。
 

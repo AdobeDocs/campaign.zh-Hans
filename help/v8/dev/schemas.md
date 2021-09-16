@@ -1,8 +1,8 @@
 ---
-product: Adobe Campaign
 title: 使用Campaign模式
 description: 模式入门
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 5%
@@ -250,4 +250,3 @@ XML字段的示例也存储在SQL字段中，该字段具有&#x200B;**@dataPolic
 >[!NOTE]
 >
 >如果修改不影响数据库结构，您只需重新生成架构即可。 要执行此操作，请选择要更新的架构，右键单击并选择&#x200B;**[!UICONTROL Actions > Regenerate selected schemas...]** 。
-

@@ -1,12 +1,11 @@
 ---
-product: Adobe Campaign
 title: 一般架构
 description: 进一步了解Campaign架构和组件
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: c61d8aa8e0a68ccc81a6141782f860daf061bc61
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
 source-wordcount: '1217'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -32,11 +31,11 @@ ht-degree: 7%
 
 * **客户端控制台**:该应用程序的主用户界面是一个本机应用程序（在Windows上），它与Adobe Campaign应用程序服务器通信标准Internet协议（SOAP、HTTP等）。Adobe Campaign Client Console 具有出色的用户友好性，可帮助提升工作效率，使用的带宽非常少（通过使用本地缓存），并且易于部署。此控制台可以从Internet浏览器部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成HTTP(S)流量。
 
-   ??[了解有关Campaign客户端控制台的更多信息](../start/connect.md)。
+   ?? [了解关于 Campaign 客户端控制台的更多信息](../start/connect.md)。
 
 * **Web访问**:部分应用程序可通过使用HTML用户界面（包括报告模块、投放批准阶段、实例监控等）的简单web浏览器访问。
 
-   ??[了解有关Campaign Web Access的更多信息](../start/connect.md)。
+   ?? [了解关于 Campaign Web Access 的更多信息](../start/connect.md)。
 
 * **促销活动API**:在某些情况下，可以使用通过SOAP协议公开的Web服务API从外部应用程序调用系统。
 

@@ -1,8 +1,8 @@
 ---
-product: Adobe Campaign
 title: 在Campaign中创建新架构
 description: 了解如何在Campaign中创建新模式
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+exl-id: 796af848-b537-4b8d-a601-fe0628a1fc83
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 2%
@@ -37,7 +37,7 @@ ht-degree: 2%
 
 如果需要检查架构的完整结构，可以使用&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡。 如果架构已扩展，则将能够显示其所有扩展。 作为补充，**[!UICONTROL Documentation]**&#x200B;选项卡显示所有架构属性和元素及其属性（SQL字段、类型/长度、标签、说明）。 **[!UICONTROL Documentation]**&#x200B;选项卡仅适用于生成的架构。
 
-## 用例：创建合同表{#example--creating-a-contract-table}
+## 用例：创建合同表 {#example--creating-a-contract-table}
 
 在以下示例中，您为数据库中的&#x200B;**contracts**&#x200B;创建新表。 此表允许您存储每个合同的持有人和共同持有人的名字和姓氏以及电子邮件地址。
 
@@ -111,4 +111,3 @@ ht-degree: 2%
    ![](assets/configuration_structure.png)
 
 1. 更新数据库结构以创建模式将链接到的表。 如需详细信息，请参阅[此部分](update-database-structure.md)。
-

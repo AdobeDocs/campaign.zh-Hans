@@ -1,13 +1,13 @@
 ---
-product: Adobe Campaign
 title: 新的Campaign v8 API
 description: 新的Campaign v8 API
-feature: 概述
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: b11b42220dae7d0a878ba102523ee2825d6fb2e2
+exl-id: dd822f88-b27d-4944-879c-087f68e79825
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '431'
 ht-degree: 4%
 
 ---
@@ -204,7 +204,7 @@ xtk.session.IngestExt(xmlStagingRecipient);
 
 因此，将按照预期更新暂存表。
 
-## 订阅管理{#sub-apis}
+## 订阅管理 {#sub-apis}
 
 [此页面](../start/subscriptions.md)中介绍了Campaign中的订阅管理。
 

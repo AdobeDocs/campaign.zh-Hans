@@ -1,14 +1,14 @@
 ---
-product: Adobe Campaign
 title: Campaign互动优惠目录
 description: 了解如何创建优惠目录
-feature: 概述
+feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+exl-id: 911096e2-0307-46a8-873c-ee2248b8e3e8
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 1%
+source-wordcount: '380'
+ht-degree: 2%
 
 ---
 
@@ -69,4 +69,3 @@ ht-degree: 1%
 1. 单击 **[!UICONTROL Save]**。
 
    ![](assets/offer_cat_default_001.png)
-

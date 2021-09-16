@@ -1,8 +1,8 @@
 ---
-product: Adobe Campaign
 title: 限制 PI 视图
 description: 了解如何限制PI视图
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+exl-id: 1b833745-71d7-430d-ac7d-c830c78ea232
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 2%
@@ -50,7 +50,7 @@ ht-degree: 2%
 * 在组（列表）中存储目标群体时，所存储字段的特征与数据源相同。
 * 默认情况下，JS代码无法访问数据。
 
-## 建议 {#recommendations}
+## 推荐 {#recommendations}
 
 在每个投放中，电子邮件地址都会复制到&#x200B;**[!UICONTROL broadLog]**&#x200B;和&#x200B;**[!UICONTROL forecastLog]**&#x200B;表中：因此，这些字段也需要保护。
 

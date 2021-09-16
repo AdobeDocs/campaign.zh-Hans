@@ -1,14 +1,14 @@
 ---
-product: Adobe Campaign
 title: Campaign v8 已知限制
 description: 已知限制
-feature: 概述
+feature: Overview
 role: Data Engineer
 level: Beginner
 hidefromtoc: true
-source-git-commit: cf00895f988514fc029d0060d7404bdef0c8b30e
-workflow-type: ht
-source-wordcount: '177'
+exl-id: 50c254ba-cc33-49b2-b7d5-12aa69883c07
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+workflow-type: tm+mt
+source-wordcount: '176'
 ht-degree: 100%
 
 ---
@@ -27,5 +27,3 @@ Adobe Campaign v8 存在以下限制：
 * 订阅（选择加入）和退订（选择退出）机制以及移动设备注册是异步流程。请求是每小时通过特定的技术工作流处理的。[了解详情](../config/replication.md#tech-wf)
 * 重复项需要由最终用户手动处理。[了解详情](../dev/keys.md)
 * Adobe Campaign v8 不支持 API 和 Web 应用程序的扩展吞吐量。 如有特定需求，请联系 Adobe 获取指导。
-
-

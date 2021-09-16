@@ -1,14 +1,13 @@
 ---
-product: Adobe Campaign
 title: 使用Adobe Campaign工作流管理和自动化各个流程
 description: 工作流入门
-feature: 概述
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: cc8707c7765a47fc00d46283eb6588e63a98499d
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1545'
 ht-degree: 2%
 
 ---

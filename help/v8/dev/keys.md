@@ -1,19 +1,19 @@
 ---
-product: Adobe Campaign
-title: 'Campaign中的密钥管理 '
+title: Campaign中的密钥管理
 description: 密钥管理入门
-source-git-commit: 99a1381a0d5cef38eb708dbe6e3e8029e6ff3953
+exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
 source-wordcount: '676'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# 密钥管理和唯一性{#key-management}
+# 密钥管理和唯一性 {#key-management}
 
 在Campaign v8中，主键是通用唯一ID标识符(UUID)，该标识符是字符串。 要创建此UUID，架构的主元素必须包含设置为&#x200B;**true**&#x200B;的&#x200B;**autouuid**&#x200B;和&#x200B;**autopk**&#x200B;属性。
 
-Adobecampaign v8以Snowflake为核心数据库。 Snowflake数据库的分布式架构不提供管理表中密钥的唯一性的机制：最终用户负责确保Adobe Campaign数据库中密钥的一致性。
+Adobe campaign v8 以 Snowflake 为核心数据库。Snowflake数据库的分布式架构不提供管理表中密钥的唯一性的机制：最终用户负责确保Adobe Campaign数据库中密钥的一致性。
 
 要保持关系数据库的一致性，必须避免对键值（特别是对主键值）重复。 主键上的重复项会导致数据管理工作流活动出现问题，例如&#x200B;**Query**、**Reconciliation**、**Update data**&#x200B;等。
 

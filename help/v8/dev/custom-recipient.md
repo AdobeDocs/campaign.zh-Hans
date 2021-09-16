@@ -1,19 +1,18 @@
 ---
-product: Adobe Campaign
 title: 更改默认收件人表
 description: 了解如何使用自定义收件人表
-feature: 概述
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 0b71c76b-03d9-4023-84fc-3ecc0df9261b
-source-git-commit: 5363950db5092bc7e0a72a0823db1132a17dda33
+source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 2%
+source-wordcount: '252'
+ht-degree: 1%
 
 ---
 
-# 使用自定义收件人表{#gs-ac-custom-recipient}
+# 使用自定义收件人表格{#gs-ac-custom-recipient}
 
 Adobe Campaign附带一个内置配置文件表：**nmsRecipient**。 此表包含许多可轻松扩展的预定义字段和表。 在[此页面](datamodel.md#ootb-profiles)中了解有关此表的更多信息。
 

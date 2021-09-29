@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: 873e7df79d60e5c897d09312939bbb1d91f194b2
+source-git-commit: 8668970b0270b990232b78d527d0713efd9d1a4d
 workflow-type: tm+mt
 source-wordcount: '929'
 ht-degree: 93%
@@ -101,11 +101,12 @@ Campaign v8 增添了一个定位工作流活动：**[!UICONTROL Change data sou
 
 >[!CAUTION]
 >
->目前，Campaign v8 **仅**&#x200B;作为托管云服务提供，不能部署在内部部署或混合环境中。
+>* 目前，Campaign v8 **仅**&#x200B;作为托管云服务提供，不能部署在内部部署或混合环境中。
 >
->从现有 Campaign Classic v7 环境进行迁移的功能尚不可用。
+>* 从现有 Campaign Classic v7 环境进行迁移的功能尚不可用。
 >
->如果您不确定部署模式或有任何问题，请与您的客户团队联系。
+>* 如果您不确定部署模式或有任何问题，请与您的客户团队联系。
+
 
 ## 不支持的功能{#gs-removed}
 

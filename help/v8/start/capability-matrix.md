@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 873e7df79d60e5c897d09312939bbb1d91f194b2
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 100%
+source-wordcount: '929'
+ht-degree: 93%
 
 ---
 
@@ -89,7 +89,7 @@ Campaign v8 增添了一个定位工作流活动：**[!UICONTROL Change data sou
 
 ## 功能不可用{#gs-unavailable-features}
 
-请注意，在这个第一版中尚未提供某些功能，例如：
+请注意，此版本的Campaign中不提供某些功能，例如：
 
 * 营销资源管理
 * 分布式营销
@@ -97,6 +97,7 @@ Campaign v8 增添了一个定位工作流活动：**[!UICONTROL Change data sou
 * 活动优化
 * 响应管理器
 * 混合/内部部署模型
+* Twitter渠道
 
 >[!CAUTION]
 >
@@ -106,14 +107,18 @@ Campaign v8 增添了一个定位工作流活动：**[!UICONTROL Change data sou
 >
 >如果您不确定部署模式或有任何问题，请与您的客户团队联系。
 
-## 移除的功能{#gs-removed}
+## 不支持的功能{#gs-removed}
 
-为了与 Campaign v8 的新架构和部署模型保持一致，Campaign v8 中不再提供某些 Campaign Classic v7 的旧功能。
+为了与Campaign v8新架构和部署模型保持一致，Campaign v8不再支持某些历史Campaign Classicv7功能，例如：
 
 * 优惠券
 * Web 跟踪
 * 调查
-* 社交媒体营销
+* 社交媒体营销 与Facebook
 * ACS 连接器（高级服务）
 * 与 LDAP 集成
 * 用户/密码登录
+
+>[!NOTE]
+>
+>用户界面中仍可以看到某些不可用或不受支持的功能。

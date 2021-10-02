@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 865ddb84-3373-45e0-849d-9d3c92455d22
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: bda1fc37181396d295ee23a7161053d839d9cfc7
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '363'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->**选件管理器**&#x200B;只有在未指定审核人员时，或在选件所依据的选件模板中声明其为审核人员时，才能批准选件。
+>**选件** 管理器仅在未指定审核者或在选件模板中声明为审核者时才批准选件。
 
 ## 创建投放管理器运算符 {#delivery-manager}
 
@@ -51,15 +51,15 @@ ht-degree: 1%
 
 1. 转到&#x200B;**[!UICONTROL Groups and named rights]**&#x200B;窗口，单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择&#x200B;**[!UICONTROL Delivery manager]**&#x200B;组。
 
-分配给投放管理器的权限可用于/使他们能够执行以下任务：
+分配给投放管理器的权限使他们能够执行以下任务：
 
 * 显示&#x200B;**[!UICONTROL Live]**&#x200B;环境。
 * 显示和修改选件类别。
-* 如果指定为审阅者之一，则批准选件。
+* 审核选件（如果它们是审核者）。
 
    >[!NOTE]
    >
-   >**投放管理器**&#x200B;只有在选件配置期间被声明为审阅者时才能批准选件。
+   >**只有** 在选件配置中声明为审核者时，交付管理者才能批准选件。
 
 ## 每个交互运算符的权限矩阵 {#recap-of-rights-according-to-operator}
 

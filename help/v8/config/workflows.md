@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 780a29dab99ad2bda554134ca95c435b9e76b494
 workflow-type: tm+mt
 source-wordcount: '1545'
 ht-degree: 2%
@@ -33,19 +33,19 @@ ht-degree: 2%
 
 在Campaign Classicv7文档中了解有关工作流用户界面和执行的更多信息：
 
-↗️ [工作流入门](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows){target=&quot;_blank&quot;}
+* [工作流](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows){target=&quot;_blank&quot;}快速入门
 
-↗️ [工作流最佳实践](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/workflow-best-practices.html){target=&quot;_blank&quot;}
+* [工作流最佳实践](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/workflow-best-practices.html){target=&quot;_blank&quot;}
 
-↗️ [内置技术工作流](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html){target=&quot;_blank&quot;}
+* [内置技术工作流](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html){target=&quot;_blank&quot;}
 
-↗️ [监视工作流执行](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/monitoring-workflows/monitoring-workflow-execution.html){target=&quot;_blank&quot;}
+* [监视工作流执行](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/monitoring-workflows/monitoring-workflow-execution.html){target=&quot;_blank&quot;}
 
-↗️ [在营销活动工作流中构建受众](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#building-the-main-target-in-a-workflow){target=&quot;_blank&quot;}
+* [在营销活动工作流中构建受众](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#building-the-main-target-in-a-workflow){target=&quot;_blank&quot;}
 
 ## 工作流活动 {#wf-activities}
 
-↗️了解有关可用工作流活动的更多信息[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-activities.html){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) 了解有关可用工作流活动 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-activities.html){target=&quot;_blank&quot;}的更多信息
 
 工作流活动按类别进行分组。 提供了四个活动类别：
 
@@ -92,18 +92,18 @@ ht-degree: 2%
 
 设计定期工作流，并在每次执行工作流时创建新投放实例。 例如，如果您的工作流设计为每周运行一次，则一年后将产生52次投放。 这也意味着日志将由每个投放实例分隔。
 
-↗️了解如何在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns){target=&quot;_blank&quot;}中创建定期营销活动
+![](../assets/do-not-localize/book.png) 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/setting-up-marketing-campaigns.html?lang=en#recurring-and-periodic-campaigns){target=&quot;_blank&quot;}中创建定期促销活动
 
 
 ## 利用触发器事件
 
 使用Campaign事务型消息传递自动化从信息系统触发的事件生成的消息。 例如，这些事务型消息可以是发票、订单确认、发运确认、密码更改、产品不可用通知、帐户对帐单或网站帐户创建。 这些消息可以单独或批量通过电子邮件、短信或推送通知发送。
 
-??在[此部分](../send/transactional.md)中了解有关事务性消息传递功能的更多信息。
+![](../assets/do-not-localize/glass.png) 在此部分 [中了解有关事务性消息传递](../send/transactional.md)功能的更多信息。
 
 连接Adobe Campaign和Adobe Analytics以检索用户操作并发送近乎实时的个性化消息。
 
-??了解如何在[此部分](../start/connect.md)中将Campaign与其他解决方案集成
+![](../assets/do-not-localize/glass.png) 在此部分中了解如何将Campaign与其他解决方 [案集成](../start/connect.md)
 
 
 ## 工作流端到端用例{#end-to-end-uc}
@@ -122,7 +122,7 @@ ht-degree: 2%
 
    此用例介绍如何计划在收件人生日当天向收件人列表发送定期电子邮件。
 
-* [正在加载投放内容](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/loading-delivery-content.html){target=&quot;_blank&quot;}如果投放内容位于远程服务器上的HTML文件中可用，则可以轻松将此内容加载到Adobe Campaign投放中。
+* [正在加载投放内容](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/loading-delivery-content.html){target=&quot;_blank&quot;}如果投放内容位于远程服务器上的HTML文件中，则可以轻松地将此内容加载到Adobe Campaign投放中。
 
 * [跨渠道投放工作流](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/cross-channel-delivery-workflow.html){target=&quot;_blank&quot;}
 
@@ -143,7 +143,7 @@ ht-degree: 2%
 
 * [将报表发送到列表](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/monitoring/sending-a-report-to-a-list.html){target=&quot;_blank&quot;}
 
-   了解如何以PDF格式生成每月内置跟踪指标报告，并将其发送给Campaign操作员列表。
+   了解如何以PDF格式生成每月内置的跟踪指标报告，并将其发送到Campaign运算符列表。
 
 * [监督您的工作流](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/monitoring/supervising-workflows.html){target=&quot;_blank&quot;}
 

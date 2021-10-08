@@ -2,10 +2,10 @@
 title: 一般架构
 description: 进一步了解Campaign架构和组件
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: eb8ad88ffd9dbaaf1f9ace2e88ba4486711bc72d
 workflow-type: tm+mt
 source-wordcount: '1217'
-ht-degree: 8%
+ht-degree: 6%
 
 ---
 
@@ -31,15 +31,15 @@ ht-degree: 8%
 
 * **客户端控制台**:该应用程序的主用户界面是一个本机应用程序（在Windows上），它与Adobe Campaign应用程序服务器通信标准Internet协议（SOAP、HTTP等）。Adobe Campaign Client Console 具有出色的用户友好性，可帮助提升工作效率，使用的带宽非常少（通过使用本地缓存），并且易于部署。此控制台可以从Internet浏览器部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成HTTP(S)流量。
 
-   ?? [了解关于 Campaign 客户端控制台的更多信息](../start/connect.md)。
+   ![](../assets/do-not-localize/glass.png) [了解关于 Campaign 客户端控制台的更多信息](../start/connect.md)。
 
-* **Web访问**:部分应用程序可通过使用HTML用户界面（包括报告模块、投放批准阶段、实例监控等）的简单web浏览器访问。
+* **Web访问**:部分应用程序可通过使用HTML用户界面的简单web浏览器访问，包括报告模块、投放批准阶段、实例监控等。
 
-   ?? [了解关于 Campaign Web Access 的更多信息](../start/connect.md)。
+   ![](../assets/do-not-localize/glass.png) [了解关于 Campaign Web Access 的更多信息](../start/connect.md)。
 
 * **促销活动API**:在某些情况下，可以使用通过SOAP协议公开的Web服务API从外部应用程序调用系统。
 
-   ??[了解有关Campaign API的更多信息](../dev/api.md)。
+   ![](../assets/do-not-localize/glass.png) [进一步了解Campaign API](../dev/api.md)。
 
 ## 开发环境 {#dev-env}
 
@@ -124,6 +124,6 @@ Adobe Campaign Cloud数据库依赖于[!DNL Snowflake]，其中包含功能数�
 
 >[!CAUTION]
 >
->通过使用 **Campaign 托管云服务**，您的环境和初始配置已由 Adobe 根据您的许可协议条款进行了设置。您不可修改已安装的内置软件包、内置模式或报告。
+>对于&#x200B;**Campaign托管Cloud Services**，您的环境和初始配置已由Adobe根据您的许可协议条款进行设置。 您不可修改已安装的内置软件包、内置模式或报告。
 >
 >如果您需要使用 Campaign 加载项或尚未为您配置的特定功能，那么您必须联系 **Adobe 客户关怀**&#x200B;团队。

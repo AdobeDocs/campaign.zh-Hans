@@ -5,8 +5,8 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: ht
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
    您需要下载并安装 Campaign 客户端控制台才能连接到 Adobe Campaign。
 
-   ?? [单击此处了解更多信息](connect.md)。
+   ![](../assets/do-not-localize/glass.png) [单击此处了解详情](connect.md)。
 
 1. **Campaign v8 是否可以安装在内部部署或混合环境中？**
 
@@ -38,9 +38,9 @@ ht-degree: 100%
 
    电子邮件可投放性是每个发件人的营销计划取得成功的重要因素，其特点是不断变化的标准和规则。想要在这个数字化的世界中取得成果，就必须定期调整电子邮件策略，并考虑关键可投放性趋势，以便最好地吸引受众。
 
-   ↗️ 请参阅本指南以了解[可投放性最佳实践](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png)请参阅本指南以了解[可投放性最佳实践](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans){target=&quot;_blank&quot;}
 
-   ↗️ 请参阅[本指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=zh-Hans){target=&quot;_blank&quot;}以了解如何在 Campaign 中实施可投放性
+   ![](../assets/do-not-localize/book.png) 请参阅[本指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=zh-Hans){target=&quot;_blank&quot;}以了解如何在 Campaign 中实施可投放性
 
 1. **如何确认我的投放已成功发送，并且未出现错误？**
 
@@ -50,7 +50,7 @@ ht-degree: 100%
 
 1. **我是否能监测工作流的执行情况？**
 
-   ↗️ 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html?lang=zh-Hans){target=&quot;_blank&quot;}以了解如何监测 Campaign 工作流的执行情况。
+   ![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/executing-a-workflow/starting-a-workflow.html?lang=zh-Hans){target=&quot;_blank&quot;}以了解如何监测 Campaign 工作流的执行情况。
 
 1. **哪些系统和组件与 Campaign v8 兼容？**
 

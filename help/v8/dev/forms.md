@@ -2,9 +2,9 @@
 title: Campaign输入表单
 description: 了解如何自定义输入表单
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
 workflow-type: tm+mt
-source-wordcount: '2555'
+source-wordcount: '2552'
 ht-degree: 0%
 
 ---
@@ -84,11 +84,11 @@ ht-degree: 0%
 
 默认情况下，每个字段都显示在一行中，并根据数据类型占用所有可用空间。
 
-↗️所有表单属性都列在[Campaign Classicv7文档](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/control-Button.html)中。
+![](../assets/do-not-localize/book.png) 所有表单属性都列在 [Campaign Classicv7文档](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html)中。
 
 ## 格式化 {#formatting}
 
-控件的布局类似于HTML表中使用的布局，可能会将控件划分为多列、隔行元素或指定对可用空间的占用。 但是，请记住，格式仅允许您按比例划分区域；不能为对象指定固定维度。
+控件的布局类似于HTML表中使用的布局，它可以将控件划分为多列、隔行元素或指定可用空间的占用。 但是，请记住，格式仅允许您按比例划分区域；不能为对象指定固定维度。
 
 要在两列中显示上述示例的控件：
 

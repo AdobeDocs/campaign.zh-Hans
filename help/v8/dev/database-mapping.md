@@ -2,7 +2,7 @@
 title: 营销活动数据库映射
 description: 营销活动数据库映射
 exl-id: a804d164-58bf-4b15-a48e-8cf75d793668
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 0%
@@ -91,7 +91,7 @@ SQL字段约束如下：
    <element name="comment" xml="true" type="memo" label="Comment"/>
    ```
 
-* HTML格式的数据描述：
+* 以HTML格式描述数据：
 
    ```
    <element name="description" xml="true" type="html" label="Description"/>
@@ -256,7 +256,7 @@ Adobe Campaign表的主键是由数据库引擎自动生成的&#x200B;**通用�
 * ![](assets/do-not-localize/join_fda_11.png) :基数1-1
 * ![](assets/do-not-localize/join_fda_1m.png) :基数1-N
 
-??有关FDA表的更多信息，请参阅[联合数据访问](../connect/fda.md)。
+![](../assets/do-not-localize/glass.png) 有关FDA表的更多信息，请参阅联 [合数据访问](../connect/fda.md)。
 
 必须在包含通过主元素链接的表的外键的架构中声明链接：
 

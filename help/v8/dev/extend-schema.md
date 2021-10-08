@@ -2,7 +2,7 @@
 title: 扩展Campaign模式
 description: 了解如何扩展Campaign模式
 exl-id: e4dcb228-0683-437a-88cd-bd7ed33da921
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 2%
@@ -22,7 +22,7 @@ ht-degree: 2%
 >[!CAUTION]
 >不得直接修改内置架构。 如果您需要调整内置架构，则必须扩展该架构。
 
-??要更好地了解Campaign内置表及其交互，请参阅[此页面](datamodel.md)。 另请参阅在[此页面](create-schema.md)中创建新架构时的建议。
+![](../assets/do-not-localize/glass.png) 要更好地了解Campaign内置表及其交互，请参阅 [此页面](datamodel.md)。另请参阅在[此页面](create-schema.md)中创建新架构时的建议。
 
 要扩展架构，请执行以下步骤：
 

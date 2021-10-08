@@ -4,10 +4,9 @@ description: 创建选件管理运算符
 feature: Overview
 role: Data Engineer
 level: Beginner
-exl-id: 865ddb84-3373-45e0-849d-9d3c92455d22
-source-git-commit: bda1fc37181396d295ee23a7161053d839d9cfc7
+source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '359'
 ht-degree: 1%
 
 ---
@@ -21,9 +20,9 @@ ht-degree: 1%
 
 ## 创建选件管理器运算符{#offer-manager}
 
-1. 创建新运算符。
+1. 创建运算符。
 
-   ↗️有关在Campaign中创建运算符的详细步骤，请参见[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
+   ![](../assets/do-not-localize/book.png) 有关在Campaign中创建运算符的详细步骤，请参 [阅Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
 
 1. 转到&#x200B;**[!UICONTROL Groups and named rights]**&#x200B;窗口，单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择&#x200B;**[!UICONTROL Offer manager]**&#x200B;组。
 
@@ -37,7 +36,7 @@ ht-degree: 1%
 * 配置选件资格。
 * 批准选件。
 
-请注意，如果在工作流中使用选件，则需要将运算符添加到&#x200B;**[!UICONTROL Administrator]**&#x200B;或&#x200B;**[!UICONTROL Offer managers]**&#x200B;运算符组中才能执行工作流。
+如果在工作流中使用选件，则必须将运算符添加到&#x200B;**[!UICONTROL Administrator]**&#x200B;或&#x200B;**[!UICONTROL Offer managers]**&#x200B;运算符组中才能执行工作流。
 
 >[!NOTE]
 >
@@ -45,9 +44,9 @@ ht-degree: 1%
 
 ## 创建投放管理器运算符 {#delivery-manager}
 
-1. 创建新运算符。
+1. 创建运算符。
 
-   ↗️有关在Campaign中创建运算符的详细步骤，请参见[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
+   ![](../assets/do-not-localize/book.png) 有关在Campaign中创建运算符的详细步骤，请参 [阅Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
 
 1. 转到&#x200B;**[!UICONTROL Groups and named rights]**&#x200B;窗口，单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择&#x200B;**[!UICONTROL Delivery manager]**&#x200B;组。
 

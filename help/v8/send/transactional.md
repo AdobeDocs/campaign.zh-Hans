@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: eb8ad88ffd9dbaaf1f9ace2e88ba4486711bc72d
 workflow-type: tm+mt
 source-wordcount: '1486'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -24,13 +24,13 @@ ht-degree: 1%
 * 对客户行动的个人实时响应
 * 非促销内容
 
-??[此部分](../config/transactional-msg-settings.md)中详细介绍了事务性消息传递设置。
+![](../assets/do-not-localize/glass.png) 有关事务性消息传递设置的详 [细信息，请参阅此章节](../config/transactional-msg-settings.md)。
 
-??了解[本页](../dev/architecture.md)中的事务型消息传递架构。
+![](../assets/do-not-localize/glass.png) 了解本页中的事务型消 [息传递架构](../dev/architecture.md)。
 
 >[!CAUTION]
 >
->事务型消息传递需要特定的许可证。 请检查您的许可协议。
+>事务型消息传递需要特定的许可证。 请核实您的许可协议。
 
 ## 定义事务型消息模板
 
@@ -82,7 +82,7 @@ ht-degree: 1%
 
 要将个性化标记插入电子邮件正文，请应用以下步骤：
 
-1. 在消息模板中，单击与电子邮件格式（HTML或文本）匹配的选项卡。
+1. 在消息模板中，单击与电子邮件格式(HTML或文本)匹配的选项卡。
 1. 输入消息的正文。
 1. 在文本正文中，使用&#x200B;**[!UICONTROL Real time events>Event XML]**&#x200B;菜单插入标记。
 
@@ -151,7 +151,7 @@ ht-degree: 1%
 
 发送校样的过程与任何投放的过程相同。
 
-↗️了解有关[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=zh-Hans){target=&quot;_blank&quot;}中校样的更多信息
+![](../assets/do-not-localize/book.png) 了解有关Campaign Classicv7 [文档中校样的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=zh-Hans){target=&quot;_blank&quot;}
 
 但是，要发送事务型消息的校样，您需要执行以下操作：
 

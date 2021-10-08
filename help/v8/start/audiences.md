@@ -5,7 +5,7 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 780a29dab99ad2bda554134ca95c435b9e76b494
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 25%
@@ -35,34 +35,34 @@ ht-degree: 25%
 ![](assets/create-profile.png)
 
 
-↗️了解如何在[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/about-profiles.html){target=&quot;_blank&quot;}中管理配置文件。
+![](../assets/do-not-localize/book.png) 了解如何在Adobe Campaign Classic v7文 [档中管理配置文件](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/about-profiles.html){target=&quot;_blank&quot;}。
 
 
 ## 隐私和同意
 
 Adobe Campaign是用于收集和处理大量数据（包括个人信息和敏感数据）的强大工具。 通过 Adobe Campaign，您可以收集数据，包括个人信息和敏感信息。因此，获得并监控收件人的同意至关重要。
 
-↗️了解如何在[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html){target=&quot;_blank&quot;}中管理隐私和同意。
+![](../assets/do-not-localize/book.png) 了解如何在Adobe Campaign Classic v7文 [档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html){target=&quot;_blank&quot;}中管理隐私和同意。
 
 ## 创建列表
 
 列表是一组静态用户档案，用于在投放操作期间提供定位目标，或在导入操作或工作流执行期间进行更新。例如，通过查询从数据库中提取出的一组数据即可形成一个列表。
 
-↗️了解如何在[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/creating-and-managing-lists.html){target=&quot;_blank&quot;}中创建和管理列表。
+![](../assets/do-not-localize/book.png) 了解如何在Adobe Campaign Classic v7文 [档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/creating-and-managing-lists.html)中创建和管理列表。{target=&quot;_blank&quot;}。
 
 ## 查询数据库
 
 使用工作流中的&#x200B;**查询**&#x200B;活动查询数据库、细分数据和构建复杂受众。
 
-↗️详细了解[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/targeting-data.html){target=&quot;_blank&quot;}中的Campaign查询。
+![](../assets/do-not-localize/book.png) 在Adobe Campaign Classic v7文档中了解 [有关Campaign查询的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/targeting-data.html){target=&quot;_blank&quot;}。
 
-↗️所有定位活动均列在[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html){target=&quot;_blank&quot;}中。
+![](../assets/do-not-localize/book.png) 所有定位活动均列 [在Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/about-targeting-activities.html){target=&quot;_blank&quot;}中。
 
 ## 在工作流中创建受众
 
 定位可以通过工作流中以图形顺序排列的查询组合来创建。 您可以创建受众，以便根据您的要求进行定位。 要显示工作流编辑器，请单击营销活动仪表板中的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡。
 
-↗️了解如何在[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#building-the-main-target-in-a-workflow){target=&quot;_blank&quot;}的营销活动工作流中构建受众。
+![](../assets/do-not-localize/book.png) 了解如何在Adobe Campaign Classic v7文档 [中的促销活动工作流中](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#building-the-main-target-in-a-workflow)构建受众{target=&quot;_blank&quot;}。
 
 
 ## 使用中的用户档案{#active-profiles}
@@ -74,13 +74,13 @@ Adobe Campaign是用于收集和处理大量数据（包括个人信息和敏感
 <!--
 You can monitor the number of active profiles used on your instances directly from Campaign Control Panel. 
 
-↗️ For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+![](../assets/do-not-localize/book.png) For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
 -->
 
 **Campaign Classic v7 文档**&#x200B;中的相关主题：
 
-↗️ [设计和执行特定于促销活动的工作流](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html){target=&quot;_blank&quot;}
+* [设计和执行特定于促销活动的工作流](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html){target=&quot;_blank&quot;}
 
-↗️ [了解如何选择营销活动的受众](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html){target=&quot;_blank&quot;}
+* [了解如何选择营销活动的受众](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html){target=&quot;_blank&quot;}
 
-↗️ [工作流入门](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html){target=&quot;_blank&quot;}
+* [工作流](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html){target=&quot;_blank&quot;}快速入门

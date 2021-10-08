@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
 workflow-type: tm+mt
 source-wordcount: '604'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 9%
 
 电子邮件投放允许您向目标群体发送个性化电子邮件。
 
-↗️在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/about-email-channel.html)中了解更多信息。
+![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/about-email-channel.html)以了解详情。
 
 ## 创建您的第一个电子邮件投放
 
@@ -41,7 +41,7 @@ ht-degree: 9%
 
 1. **导入内容**
 
-   单击&#x200B;**Source**&#x200B;选项卡以粘贴HTML内容。
+   单击&#x200B;**源**&#x200B;选项卡以粘贴您的HTML内容。
 
    ![](assets/paste-content.png)
 
@@ -78,22 +78,22 @@ ht-degree: 9%
 请参阅Campaign Classicv7文档的以下部分，了解更多信息：
 
 * 在Campaign中设计电子邮件
-↗️ [了解如何设计电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/defining-the-email-content.html)
+   ![](../assets/do-not-localize/book.png) [了解如何设计电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/defining-the-email-content.html)
 * 导入电子邮件内容
-↗️ [用例：创建用于加载投放内容的工作流](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/loading-delivery-content.html)
+   ![](../assets/do-not-localize/book.png) [用例：创建用于加载投放内容的工作流](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/loading-delivery-content.html)
 * 创建和使用电子邮件模板
-↗️ [了解有关电子邮件模板的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=zh-Hans)
+   ![](../assets/do-not-localize/book.png) [了解有关电子邮件模板的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=zh-Hans)
 * 选择电子邮件的受众
-↗️ [了解如何定义目标群体](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html)
+   ![](../assets/do-not-localize/book.png) [了解如何定义目标群体](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html)
 * 验证投放并发送校样
-↗️ [了解验证投放的关键步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)
+   ![](../assets/do-not-localize/book.png) [了解验证投放的关键步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)
 * 添加[种子地址](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html)
 
 ## 测试和验证电子邮件
 
 Campaign提供了多种方法，用于在向受众发送电子邮件之前测试和验证电子邮件。
 
-↗️ [应用Campaign Classicv7文档中列出的最佳实践](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/check-before-sending.html)
+![](../assets/do-not-localize/book.png) [应用Campaign Classicv7文档中列出的最佳实践](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/check-before-sending.html)
 
 您可以：
 
@@ -103,10 +103,10 @@ Campaign提供了多种方法，用于在向受众发送电子邮件之前测试
 * 使用对照组
 * 检查电子邮件渲染
 
-↗️ [请参阅 Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)以了解详情
+![](../assets/do-not-localize/book.png) [请参阅 Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)以了解详情
 
 ## 监控电子邮件
 
 发送后，在投放仪表板中检查您的投放状态，并访问投放日志和报告以确认消息正确发送。
 
-↗️ [请参阅 Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html)以了解详情
+![](../assets/do-not-localize/book.png) [请参阅 Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html)以了解详情

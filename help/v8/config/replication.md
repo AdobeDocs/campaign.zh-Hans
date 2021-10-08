@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4,df76e7ff-3b97-41be-abc2-640748680ff3
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: eb8ad88ffd9dbaaf1f9ace2e88ba4486711bc72d
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 3%
@@ -20,7 +20,7 @@ Adobe Campaign附带一组内置的技术工作流。 技术工作流会定期�
 
 这些工作流对数据库执行维护操作，利用投放日志中的跟踪信息，创建定期活动等。
 
-↗️[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html){target=&quot;_blank&quot;}中详细列出了技术工作流的完整列表
+![](../assets/do-not-localize/book.png) 技术工作流的完整列表详见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/about-technical-workflows.html){target=&quot;_blank&quot;}
 
 
 除了这些技术工作流之外，Campaign v8还依赖特定的技术工作流来管理[数据复制](#data-replication)。
@@ -76,6 +76,6 @@ nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
 
 **相关主题**
 
-↗️了解如何开始使用[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows){target=&quot;_blank&quot;}中的工作流
+![](../assets/do-not-localize/book.png) 了解如何开始使用 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/about-workflows.html?lang=en#automating-with-workflows){target=&quot;_blank&quot;}中的工作流
 
-??访问[此部分](../dev/datamodel-best-practices.md#data-retention)中的数据保留期
+![](../assets/do-not-localize/glass.png) 在此部分中访问数据保 [留期](../dev/datamodel-best-practices.md#data-retention)

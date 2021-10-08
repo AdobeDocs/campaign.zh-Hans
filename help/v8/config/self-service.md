@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: ht
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -24,14 +24,14 @@ Campaign 控制面板允许管理每个实例的设置并跟踪使用情况，�
 
 您还可以使用 Campaign 控制面板配置实例设置，如 IP 允许列表、URL 权限和检索有关实例的信息。
 
-↗️ 请参阅 [Campaign 控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans){target=&quot;_blank&quot;}以了解详情。
+![](../assets/do-not-localize/book.png) 请参阅Campaign [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans){target=&quot;_blank&quot;}以了解更多信息。
 
 >[!CAUTION]
->
 > Campaign v8 尚不支持以下功能：
 >
 >* 子域管理
 >* 证书管理
+
 >
 
 

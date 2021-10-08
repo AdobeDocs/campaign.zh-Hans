@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: eb8ad88ffd9dbaaf1f9ace2e88ba4486711bc72d
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 ??作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以在您的环境中安装和配置Campaign事务型消息传递。
 
-??[此部分](../send/transactional.md)中详细介绍了事务性消息传递功能。
+![](../assets/do-not-localize/glass.png) 有关事务性消息传递功能的详 [细信息，请参阅此章节](../send/transactional.md)。
 
-??了解[本页](../dev/architecture.md)中的事务型消息传递架构。
+![](../assets/do-not-localize/glass.png) 了解本页中的事务型消 [息传递架构](../dev/architecture.md)。
 
 ## 定义权限
 
@@ -28,13 +28,13 @@ ht-degree: 0%
 
 对&#x200B;**消息中心技术工作流**&#x200B;在控制实例或执行实例上使用的架构所做的所有架构扩展，都需要复制到Adobe Campaign事务性消息传递模块使用的其他实例上。
 
-↗️在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/additional-configurations.html#technical-workflows)中了解有关消息中心技术工作流的更多信息
+![](../assets/do-not-localize/book.png) 在Campaign Classicv7文档中了解有关消息中心技术工 [作流的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/additional-configurations.html#technical-workflows)
 
 ## 发送事务推送通知
 
 与移动设备应用程序渠道模块结合使用时，事务型消息传递允许您通过移动设备上的通知推送事务型消息。
 
-↗️有关移动设备应用程序渠道的详细信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages)。
+![](../assets/do-not-localize/book.png) Campaign Classicv7文档中详细介绍了 [移动应用程序渠道](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages)。
 
 要发送事务推送通知，您需要执行以下配置：
 
@@ -48,9 +48,9 @@ ht-degree: 0%
 
 为了使Campaign发送事务推送通知，事件必须包含以下元素：
 
-* 移动设备ID:适用于Android的&#x200B;**registrationId**&#x200B;和适用于iOS的&#x200B;**deviceToken**。 此ID表示通知将发送到的“地址”。
+* 移动设备ID:**RegistrationId**（对于Android）和&#x200B;**deviceToken**(对于iOS)。 此ID表示通知将发送到的“地址”。
 * 指向移动应用程序或集成密钥(**uuid**)的链接，用于检索特定于应用程序的连接信息。
-* 将向其发送通知的渠道(**wishedChannel**):iOS为41,Android为42。
+* 将向其发送通知的渠道(**wishedChannel**):iOS为41，安卓为42。
 * 用于个性化的其他数据。
 
 以下是包含此信息的事件示例：

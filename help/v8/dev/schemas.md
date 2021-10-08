@@ -2,7 +2,7 @@
 title: 使用Campaign模式
 description: 模式入门
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 5%
@@ -97,11 +97,11 @@ Adobe Campaign采用数据模式：
 
 要向Campaign中的一个核心数据模式(例如收件人表(nms:recipient))添加字段或其他元素，您必须扩展该模式。
 
-??有关更多信息，请参阅[扩展架构](extend-schema.md)。
+![](../assets/do-not-localize/glass.png) 有关更多信息，请参阅 [扩展模式](extend-schema.md)。
 
 要添加Adobe Campaign中不存在的全新数据类型（例如合同表），您可以直接创建自定义架构。
 
-??有关更多信息，请参阅[创建新架构](create-schema.md)。
+![](../assets/do-not-localize/glass.png) 有关更多信息，请参 [阅创建新架构](create-schema.md)。
 
 ![](assets/schemaextension_1.png)
 
@@ -153,7 +153,7 @@ type="string" enum="exTransactionTypeEnum"/>
 >
 >创建新架构或在架构扩展期间，您需要为整个架构保留相同的主键序列值(@pkSequence)。
 
-??了解有关[此部分](database-mapping.md#management-of-keys)中键的更多信息。
+![](../assets/do-not-localize/glass.png) 在此部分中了解有关键的 [更多信息](database-mapping.md#management-of-keys)。
 
 ## 属性（字段） {#attributes--fields-}
 
@@ -163,7 +163,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=en#content-model)的`<attribute>`元素部分中提供了完整的属性列表。 以下是一些最常用的属性：**@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, ****@required **、**@ref **、**@xml **、**@type **。**
 
-↗️有关每个属性的更多信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic)中的属性描述。
+![](../assets/do-not-localize/book.png) 有关每个属性的更多信息，请参阅 [Campaign Classicv7文档中的属性描述](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic)。
 
 ### 示例 {#examples}
 

@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 4%
@@ -40,7 +40,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
    **退回邮件**&#x200B;外部帐户指定用于连接到电子邮件服务的外部POP3帐户。 为POP3访问配置的所有服务器都可用于接收回信。
 
-   ↗️在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html){target=&quot;_blank&quot;}中了解有关入站电子邮件的更多信息
+   ![](../assets/do-not-localize/book.png) 在Campaign Classicv7文档中了解有 [关入站电子邮件的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html){target=&quot;_blank&quot;}
 
 * **路由**
 
@@ -54,7 +54,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
    在事务型消息传递的上下文中，执行实例链接到控制实例并连接它们。 事务型消息模板将部署到执行实例。
 
-   ??详细了解[本页](../dev/architecture.md#transac-msg-archi)中的消息中心架构。
+   ![](../assets/do-not-localize/glass.png) 在本页中了解有关消息中心架构 [的更多信息](../dev/architecture.md#transac-msg-archi)。
 
 ## 访问外部系统外部帐户
 
@@ -64,28 +64,28 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
    [兼容性矩阵](../start/compatibility-matrix.md)中列出了与Adobe Campaign v8兼容的外部数据库
 
-   ??在[此部分](../connect/fda.md)中了解有关联合数据访问(FDA)选项的更多信息。
+   ![](../assets/do-not-localize/glass.png) 在此部分中了解有关联合数据访问(FDA)选项的 [更多信息](../connect/fda.md)。
 
 ## Adobe解决方案集成外部帐户
 
 * **Adobe Experience Cloud**
 
-   **[!UICONTROL Adobe Experience Cloud]**&#x200B;外部帐户用于实施AdobeIMS，以使用Adobe ID连接到Adobe Campaign控制台。
+   **[!UICONTROL Adobe Experience Cloud]**&#x200B;外部帐户用于实施Adobe IMS以使用Adobe ID连接到Adobe Campaign控制台。
 
-   ??在[此部分](../start/connect.md#connect-ims)中了解有关AdobeIdentity Management服务(IMS)的更多信息。
+   ![](../assets/do-not-localize/glass.png) 在此部分中了解有关AdobeIdentity Management服务(IMS)的 [更多信息](../start/connect.md#connect-ims)。
 
 * **网络分析**
 
    使用&#x200B;**[!UICONTROL Web Analytics (Adobe Analytics)]**&#x200B;外部帐户配置从Adobe Analytics到Adobe Campaign的数据传输。
 
-   ??在[本页](../connect/ac-aa.md)中了解有关Adobe Campaign - Adobe Analytics集成的更多信息。
+   ![](../assets/do-not-localize/glass.png) 在此页面中了解有关Adobe Campaign - Adobe Analytics集 [成的更多信息](../connect/ac-aa.md)。
 
    ??作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以将Adobe Analytics与Campaign集成。
 
    * **Adobe Experience Manager**
    **[!UICONTROL AEM]**&#x200B;外部帐户允许您直接在Adobe Experience Manager中管理电子邮件投放内容和表单。
 
-   ??在[本页](../connect/ac-aem.md)中了解有关Adobe Campaign - Adobe Analytics集成的更多信息。
+   ![](../assets/do-not-localize/glass.png) 在此页面中了解有关Adobe Campaign - Adobe Analytics集 [成的更多信息](../connect/ac-aem.md)。
 
    ??作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以将Adobe Experience Manager与Adobe Campaign集成。
 
@@ -96,7 +96,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
    **[!UICONTROL Microsoft Dynamics CRM]**&#x200B;外部帐户允许您将Microsoft Dynamics数据导入和导出到Adobe Campaign。
 
-   ??详细了解[本页](../connect/crm.md)中的Adobe Campaign - Microsoft Dynamics CRM集成。
+   ![](../assets/do-not-localize/glass.png) 在此页面中了解有关Adobe Campaign - Microsoft Dynamics CRM集成的 [更多信息](../connect/crm.md)。
 
    通过&#x200B;**[!UICONTROL Web API]**&#x200B;部署类型和&#x200B;**[!UICONTROL Password credentials]**&#x200B;身份验证，您需要提供以下详细信息：
 
@@ -142,7 +142,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
 这些外部帐户可用于使用&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动将数据导入或导出到Adobe Campaign。
 
-↗️了解有关[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html){target=&quot;_blank&quot;}中工作流中文件传输的更多信息
+![](../assets/do-not-localize/book.png) 在Campaign Classicv7文档中了解有关工作流中 [文件传输的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/file-transfer.html){target=&quot;_blank&quot;}
 
 * **FTP和SFTP**
 
@@ -155,11 +155,11 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
    * **[!UICONTROL AWS S3 Account Server]**:服务器的URL，填写如下：    ```<S3bucket name>.s3.amazonaws.com/<s3object path>```
 
-   * **[!UICONTROL AWS access key ID]**:了解如何在Amazon文档中查找您的AWS访问 [密钥ID](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) 。
+   * **[!UICONTROL AWS access key ID]**:了解如何在AWS文档中查找Amazon访问 [密钥ID](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) 。
 
-   * **[!UICONTROL Secret access key to AWS]**:了解如何在Amazon文档中查找AWS的秘密访 [问密钥](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/)。
+   * **[!UICONTROL Secret access key to AWS]**:在AWS文档中了解如何查找Amazon的秘密访 [问密钥](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/)。
 
-   * **[!UICONTROL AWS Region]**:在Amazon文档中了解有关AWS地区 [的更多信息](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)。
+   * **[!UICONTROL AWS Region]**:在AWS文档中了解有关Amazon地区的 [更多信息](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)。
 
    * **[!UICONTROL Use server side encryption]**&#x200B;复选框允许您以S3加密模式存储文件。 了解如何在[Amazon文档](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)中查找访问密钥ID和密钥访问密钥。
 

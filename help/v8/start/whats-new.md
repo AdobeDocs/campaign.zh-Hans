@@ -5,8 +5,8 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: ht
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 100%
 
@@ -58,5 +58,5 @@ Campaign v8 引入了&#x200B;**完全联合数据访问** (FFDA) 概念：所有
 
 您还可以通过旅程人工智能配置预测发送时间优化和预测参与度评分，并提高打开率、点击量和收入。
 
-?? [了解关于 Campaign 集成的更多信息](../connect/integration.md)
+![](../assets/do-not-localize/glass.png) [了解关于 Campaign 集成的更多信息](../connect/integration.md)
 

@@ -2,7 +2,7 @@
 title: Campaign安全最佳实践
 description: Campaign安全最佳实践快速入门
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 1%
@@ -107,7 +107,7 @@ ht-degree: 1%
 * 检查每个操作员是否拥有适当的访问权限
 * 避免使用管理员操作员，并避免管理员组中的运算符过多
 
-↗️在[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator){target=&quot;_blank&quot;}中了解更多信息
+![](../assets/do-not-localize/book.png) 在Adobe Campaign Classic v7文 [档中了解更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator){target=&quot;_blank&quot;}
 
 ## 编码准则
 
@@ -119,4 +119,4 @@ ht-degree: 1%
 
 * **在Web应用程序中添加捕获**:在您的公共登陆页面和订阅页面中添加捕获。
 
-↗️在[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target=&quot;_blank&quot;}中了解更多信息
+![](../assets/do-not-localize/book.png) 在Adobe Campaign Classic v7文 [档中了解更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target=&quot;_blank&quot;}

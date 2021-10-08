@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 2%
@@ -28,7 +28,7 @@ Campaign可用的三种环境Cloud Service:
 
 您可以将资源包从一个环境导出并导入到另一个环境。
 
-↗️详细了解[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html)中的包
+![](../assets/do-not-localize/book.png) 在Campaign Classicv7文档中了 [解有关包的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html)
 
 ## 中间源部署{#mid-sourcing-deployment}
 
@@ -49,7 +49,7 @@ Campaign可用的三种环境Cloud Service:
 
 事务性消息（消息中心）是用于管理触发消息的 Campaign 模块。
 
-??了解如何在[此部分](../send/transactional.md)中发送事务型消息。
+![](../assets/do-not-localize/glass.png) 在此部分中了解如何发送事务 [型消息](../send/transactional.md)。
 
 为响应客户在网站上的操作，通过REST API发送Campaign事件，并填充通过API调用提供的信息或数据，并向客户实时发送事务型消息。 这些消息可以单独发送，也可以通过电子邮件、短信或推送通知批量发送。
 
@@ -57,7 +57,7 @@ Campaign可用的三种环境Cloud Service:
 
 * 营销人员和IT团队使用&#x200B;**控制实例**（或营销实例）来创建、配置和发布消息模板。 此实例还将事件监控和历史记录集中在一起。
 
-   ??了解如何在[此部分](../send/transactional.md)中创建和发布消息模板。
+   ![](../assets/do-not-localize/glass.png) 在此部分中了解如何创建和发布消 [息模板](../send/transactional.md)。
 
 * **执行实例**&#x200B;会检索传入事件（例如，密码重置或网站的订单）并发送个性化消息。 可以有多个执行实例通过负载平衡器处理消息，并扩展要进行的事件数以实现最大可用性。
 
@@ -78,4 +78,4 @@ Campaign可用的三种环境Cloud Service:
 * 多个执行实例
 在负载平衡器后面具有多个执行实例的多单元执行架构中，外部应用程序调用的登录方法将通过负载平衡器：因此，无法使用基于令牌的身份验证。 需要基于用户/密码的身份验证。
 
-↗️在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html#about-transactional-messaging-datamodel)中了解有关事务性消息传递事件的更多信息
+![](../assets/do-not-localize/book.png) 在Campaign Classicv7文档中了解有关事务性消息 [传递事件的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html#about-transactional-messaging-datamodel)

@@ -1,19 +1,19 @@
 ---
-title: 将Campaign SDK与您的应用程序集成
+title: 将 Campaign SDK 与您的应用程序集成
 description: 了解如何将Campaign Android和iOS SDK与您的应用程序集成
 version: v8
 feature: Push
 role: Developer
 level: Experienced
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: ea7d540af082782114f4a3e32c9d880b0d14df43
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
 workflow-type: tm+mt
 source-wordcount: '1288'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 将Campaign SDK与您的应用程序集成 {#integrate-campaign-sdk}
+# 将 Campaign SDK 与您的应用程序集成 {#integrate-campaign-sdk}
 
 使用适用于iOS和Android的Campaign SDK来促进将移动应用程序集成到Adobe Campaign平台。
 
@@ -45,7 +45,7 @@ ht-degree: 1%
    Neolane.getInstance().setTrackingHost("https://yourTrackingHost:yourTrackingPort/"); 
    ```
 
-* **在iOS中**:
+* **在iOS**:
 
    ```sql
    Neolane_SDK *nl = [Neolane_SDK getInstance];
@@ -58,7 +58,7 @@ ht-degree: 1%
 
 Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe Campaign集成：注册新设备、将设备与用户链接、跟踪行为等。
 
-在此部分中，了解如何在实施[Google Firebase Cloud Messaging(FCM)](https://firebase.google.com/docs/cloud-messaging/)的Android应用程序中使用Android SDK。
+在本节中，了解如何在实施[Google Firebase Cloud Messaging(FCM)](https://firebase.google.com/docs/cloud-messaging/)的Android应用程序中使用Android SDK。
 
 >[!CAUTION]
 >
@@ -70,7 +70,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
 请参阅[Google文档](https://firebase.google.com/docs/android/setup) ，将Firebase添加到您的Android项目。
 
-了解如何在[Google Documentation](https://firebase.google.com/docs/android/setup)的应用程序中实施FCM。
+在[Google Documentation](https://firebase.google.com/docs/android/setup)中了解如何在应用程序中实施FCM。
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
    注册功能允许您：
 
-   * 将通知ID或推送ID（iOS的deviceToken和Android的registrationID）发送到Adobe Campaign。
+   * 将通知ID或推送ID(iOS的deviceToken和Android的registrationID)发送到Adobe Campaign。
    * 恢复协调密钥或userKey（例如，电子邮件或帐号）
 
    您必须在应用程序初始化或用户操作时，将设备注册到Adobe Campaign。 使用`registerDevice`方法可以轻松完成该操作。
@@ -560,7 +560,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
    注册功能允许您：
 
-   * 将通知ID或推送ID（iOS的deviceToken和Android的registrationID）发送到Adobe Campaign。
+   * 将通知ID或推送ID(iOS的deviceToken和Android的registrationID)发送到Adobe Campaign。
    * 恢复协调密钥或userKey（例如，电子邮件或帐号）
 
    ```sql
@@ -640,7 +640,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
    * **** 状态允许您了解注册是否成功或是否发生错误。
 
-   * **** ErrorReason为您提供有关所发生错误的更多信息。有关可用错误及其说明的更多信息，请参阅下表。
+   * **** ErrorReason为您提供有关所发生错误的详细信息。有关可用错误及其说明的更多信息，请参阅下表。
 
    | 状态 | 说明 | 错误原因 |
    | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
@@ -794,7 +794,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
 利用变量，可在收到通知后定义移动应用程序行为。 这些变量必须在移动设备应用程序代码和Adobe Campaign控制台的专用移动设备应用程序服务的&#x200B;**[!UICONTROL Variables]**&#x200B;选项卡中定义。
 
-↗️在移动设备应用程序的&#x200B;**Campaign Classicv7文档**&#x200B;中了解更多信息：[iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;}和[Andoid](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html){target=&quot;_blank&quot;}的配置步骤。
+![](../assets/do-not-localize/book.png) 请参阅Campaign Classicv7 **文档，了** 解有关移动设备应用程序的更多信息： [iOS](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;}的配置步骤和Android  [](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html){target=&quot;_blank&quot;}的配置步骤。
 
 以下是允许移动设备应用程序收集通知中任何添加变量的代码示例。 在我们的示例中，我们使用“VAR”变量。
 
@@ -808,7 +808,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
    }
    ```
 
-* **在iOS中**:
+* **在iOS**:
 
    ```sql
    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

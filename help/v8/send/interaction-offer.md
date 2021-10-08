@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 4dc2008d-681c-4a79-8fc8-c270c9224ab9
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 3%
@@ -119,7 +119,7 @@ ht-degree: 3%
    * **[!UICONTROL Title]** :指定要在选件中显示的标题。警告：这不是指选件的标签，该标签在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中定义。
    * **[!UICONTROL Destination URL]** :指定选件的URL。必须以“http://”或“https://”开头。
    * **[!UICONTROL Image URL]** :指定选件图像的URL或访问路径。
-   * **[!UICONTROL HTML content]** /  **[!UICONTROL Text content]** :在所需的选项卡中输入选件的正文。要生成跟踪，**[!UICONTROL HTML content]**&#x200B;必须由HTML元素组成，这些元素可以包含在`<div>`类型元素中。 例如，HTML页面中`<table>`元素的结果将如下所示：
+   * **[!UICONTROL HTML content]** /  **[!UICONTROL Text content]** :在所需的选项卡中输入选件的正文。要生成跟踪，**[!UICONTROL HTML content]**&#x200B;必须由可包含在`<div>`类型元素中的HTML元素组成。 例如，HTML页面中`<table>`元素的结果将如下所示：
 
    ```
       <div> 
@@ -182,13 +182,13 @@ Creating hypotheses is detailed in [this page](../../campaign/using/about-respon
 
 您现在可以批准并激活选件，以使其在&#x200B;**Live**&#x200B;环境中可用。
 
-↗️有关更多信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=en#approving-offer-content)
+![](../assets/do-not-localize/book.png) 有关更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=en#approving-offer-content)
 
 ## 管理优惠演示{#offer-presentation}
 
 Campaign允许您使用演示规则控制优惠建议的流程。 这些特定于Campaign交互的规则是&#x200B;**分类规则**。 它们允许您根据已向收件人提出的建议的历史记录排除优惠。 在环境中引用了这些参数。
 
-↗️有关更多信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=en#managing-offers)
+![](../assets/do-not-localize/book.png) 有关更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=en#managing-offers)
 
 ## 优惠模拟
 
@@ -196,4 +196,4 @@ Campaign允许您使用演示规则控制优惠建议的流程。 这些特定�
 
 模拟会考虑以前应用于选件的上下文和资格规则及其演示规则。 这样，您就可以测试和优化选件建议的各种版本，而无需实际使用选件，或者超量/不限次地吸引目标，因为模拟对目标收件人没有影响。
 
-↗️有关优惠模拟的更多信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=en)
+![](../assets/do-not-localize/book.png) 有关优惠模拟的更多信息，请参 [阅Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=en)

@@ -4,8 +4,7 @@ description: 了解如何使用Campaign和外部数据库
 feature: Overview
 role: Data Engineer
 level: Beginner
-exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
 workflow-type: tm+mt
 source-wordcount: '1843'
 ht-degree: 3%
@@ -96,7 +95,7 @@ ht-degree: 3%
 
 对于[!DNL Snowflake]，连接器支持以下选项：
 
-| 选项 | 说明 |
+| Option | 说明 |
 |---|---|
 | 工作模式 | 用于工作表的数据库模式 |
 | 仓库 | 要使用的默认仓库的名称。 它将覆盖用户的默认设置。 |

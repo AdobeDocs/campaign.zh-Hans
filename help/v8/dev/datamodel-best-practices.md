@@ -2,7 +2,7 @@
 title: 数据模型最佳实践
 description: 了解Campaign数据模型扩展最佳实践
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '2683'
 ht-degree: 4%
@@ -175,7 +175,7 @@ Adobe Campaign既不是data warehouse，也不是报告工具。 因此，为确
 
 您可以在架构中声明“deleteStatus”属性。 将记录标记为已删除，然后在清理任务中推迟删除更为有效。
 
-??作为受管Cloud Services用户，请联系Adobe顾问或技术管理员，以了解有关保留率的更多信息，或者您是否需要为自定义表设置保留率。
+![](../assets/do-not-localize/speech.png)  作为受管Cloud Services用户，请联系Adobe顾问或技术管理员，以了解有关保留率的更多信息，或者您是否需要为自定义表设置保留率。
 
 ## 性能 {#performance}
 

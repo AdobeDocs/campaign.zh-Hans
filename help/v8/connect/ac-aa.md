@@ -4,7 +4,8 @@ description: 了解如何集成Campaign和Analytics
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
+exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 75%
@@ -17,7 +18,7 @@ ht-degree: 75%
 
 此集成允许Adobe Campaign和Adobe Analytics通过&#x200B;**Web Analytics连接器**&#x200B;附加组件进行交互。 此集成会将Adobe Campaign提供的电子邮件促销活动的指标和属性发送到Adobe Analytics。
 
-??作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以将Campaign与Adobe Experience Cloud服务和解决方案连接起来。 必须通过专用包在您的环境中安装Web Analytics连接器加载项。
+![](../assets/do-not-localize/speech.png)  作为受管Cloud Services用户，请 [联系](../start/campaign-faq.md#support) Adobe以将Campaign与Adobe Experience Cloud服务和解决方案连接起来。必须通过专用包在您的环境中安装Web Analytics连接器加载项。
 
 使用 Adobe Analytics Connector，Adobe Campaign 可以对互联网受众进行评测（网站分析）。Web分析工具使Adobe Campaign能够将指标和促销活动属性转发到Analytics。
 

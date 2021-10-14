@@ -2,7 +2,7 @@
 title: Campaign安全最佳实践
 description: Campaign安全最佳实践快速入门
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 1%
@@ -24,7 +24,7 @@ ht-degree: 1%
 * 确保加密密码受限
 * Protect可能包含个人信息（如镜像页面、Web应用程序等）的页面。
 
-??作为托管Cloud Services用户，Adobe将与您合作，在您的环境中实施这些配置。
+![](../assets/do-not-localize/speech.png)  作为托管Cloud Services用户，Adobe将与您合作，在您的环境中实施这些配置。
 
 ## 个性化
 

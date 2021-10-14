@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: e4e3fb49-9942-4e2d-a020-557d1ac5dcdc
-source-git-commit: 780a29dab99ad2bda554134ca95c435b9e76b494
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 6%
@@ -31,7 +31,7 @@ Adobe Campaign本身不管理已存档的文件。 它确实允许您将您选�
 
 * 只有成功发送的电子邮件才会被考虑在内，而退回则不会。
 
-??作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以在Campaign中激活电子邮件密送。 您选择的密件抄送电子邮件地址必须提供给Adobe团队，由团队为您进行配置。
+![](../assets/do-not-localize/speech.png)  作为受管Cloud Services用户，请 [联系](../start/campaign-faq.md#support) Adobe以在Campaign中激活电子邮件密件抄送。您选择的密件抄送电子邮件地址必须提供给Adobe团队，由团队为您进行配置。
 
 配置电子邮件密送后，请确保在投放模板或通过&#x200B;**电子邮件密送**&#x200B;选项在投放中启用该功能。
 

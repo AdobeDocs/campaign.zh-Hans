@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 4%
@@ -34,7 +34,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
-??作为托管Cloud Services用户，Adobe会为您配置所有特定于促销活动的外部帐户。
+![](../assets/do-not-localize/speech.png)  作为托管Cloud Services用户，Adobe会为您配置所有特定于促销活动的外部帐户。
 
 * **退回邮件(POP3)**
 
@@ -80,14 +80,14 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
    ![](../assets/do-not-localize/glass.png) 在此页面中了解有关Adobe Campaign - Adobe Analytics集 [成的更多信息](../connect/ac-aa.md)。
 
-   ??作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以将Adobe Analytics与Campaign集成。
+   ![](../assets/do-not-localize/speech.png)  作为受管Cloud Services用户，请 [联系](../start/campaign-faq.md#support) Adobe以将Adobe Analytics与Campaign集成。
 
    * **Adobe Experience Manager**
    **[!UICONTROL AEM]**&#x200B;外部帐户允许您直接在Adobe Experience Manager中管理电子邮件投放内容和表单。
 
    ![](../assets/do-not-localize/glass.png) 在此页面中了解有关Adobe Campaign - Adobe Analytics集 [成的更多信息](../connect/ac-aem.md)。
 
-   ??作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以将Adobe Experience Manager与Adobe Campaign集成。
+   ![](../assets/do-not-localize/speech.png)  作为受管Cloud Services用户，请 [联系](../start/campaign-faq.md#support) Adobe以将Adobe Experience Manager与Adobe Campaign集成。
 
 
 ## CRM连接器外部帐户

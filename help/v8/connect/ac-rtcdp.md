@@ -4,7 +4,8 @@ description: 了解如何使用Campaign和Real-time Customer Data Platform
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
+exl-id: d1e09eae-339e-4d14-9071-097dfcc635aa
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 0%
@@ -19,4 +20,4 @@ ht-degree: 0%
 
 ![](../assets/do-not-localize/book.png) 在v7Campaign Classic中了解如何对Campaign实施和 [使用RTCDP](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/aep-sources-destinations/get-started-sources-destinations.html?lang=en#integrating-with-adobe-experience-cloud)
 
-??作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以连接RTCDP和Campaign。
+![](../assets/do-not-localize/speech.png)  作为受管Cloud Services用户，请 [联系](../start/campaign-faq.md#support) Adobe以连接RTCDP和Campaign。

@@ -4,7 +4,8 @@ description: 了解如何使用Campaign和Adobe Target
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 391eac2f5e4d4c8c5d4dadd3394798361640e1d8
+exl-id: 891a9a87-f3a4-405a-87ed-a7703be90a67
+source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 1%
@@ -20,7 +21,7 @@ ht-degree: 1%
 >[!NOTE]
 >集成仅支持静态图像。 其他类型的内容无法进行个性化。
 
-??作为受管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support)以通过Campaign实施Experience Cloud触发器。
+![](../assets/do-not-localize/speech.png)  作为受管Cloud Services用户，请 [联系](../start/campaign-faq.md#support) Adobe以通过Campaign实施Experience Cloud触发器。
 
 以下类型的数据可供Adobe Target使用：
 

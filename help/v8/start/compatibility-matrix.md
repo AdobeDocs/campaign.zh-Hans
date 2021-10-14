@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: ht
-source-wordcount: '274'
-ht-degree: 100%
+source-git-commit: 83874f4d124d7892f99e973684b1e8ee571f31e0
+workflow-type: tm+mt
+source-wordcount: '343'
+ht-degree: 78%
 
 ---
 
@@ -20,9 +20,7 @@ ht-degree: 100%
 
 ## 客户端控制台{#ClientConsoleoperatingsystems}
 
->[!CAUTION]
->
-> 警告：要使用 Campaign 客户端控制台，必须配备以下操作系统和浏览器。
+警告：要使用 Campaign 客户端控制台，必须配备以下操作系统和浏览器。[了解详情](connect.md)。
 
 ### 操作系统
 
@@ -33,12 +31,20 @@ ht-degree: 100%
 
 **Microsoft Internet Explorer** 11
 
+>[!NOTE]
+>
+>Adobe Campaign服务器和客户端控制台必须位于同一版本上。 [了解如何检查您的版本](#version)。
+
 ## CRM 连接器{#CRMconnectors}
+
+下面列出了与Adobe Campaign兼容的客户关系管理(CRM)系统。 [了解详情](../connect/crm.md)。
 
 * **Salesforce** connector API 版本 49
 * **Microsoft Dynamics** 连接器、Web API：Dynamics 365 内部部署版和在线版
 
 ## 联合数据访问 (FDA){#FederatedDataAccessFDA}
+
+下面列出了与Adobe Campaign联合数据访问(FDA)模块兼容的外部数据库。 [了解详情](../connect/fda.md)。
 
 * **Amazon Redshift**
 * **[!DNL Google Big Query]**
@@ -47,18 +53,20 @@ ht-degree: 100%
 
 ## 移动 SDK{#MobileSDK}
 
+您可以使用Campaign通过关联的Mobile SDK在下面列出的操作系统上发送[推送通知](../send/push.md)。
+
 * **Android** 7.x、8.x、9.0 适用于 Campaign Android SDK 版本 1.1.1。
 * **Apple iOS** 9 - 14 适用于 Campaign iOS SDK 版本 1.0.26，与 32 位和 64 位版本兼容。
 
 ## Web 访问
 
-以下浏览器与 Campaign 兼容，可用于 Web 访问。
+以下浏览器与Campaign for [Web Access](connect.md#web-access)兼容。
 
 * **Microsoft Edge**、 **Mozilla Firefox**、**Google Chrome**、**Safari** （最新版本）
 
 * **Internet Explorer** 11
 
-## 如何检查您的 Campaign 版本和版本
+## 如何检查您的 Campaign 版本和版本{#version}
 
 访问 **Help > About…** 菜单检查您的版本。
 

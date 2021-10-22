@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: eb8ad88ffd9dbaaf1f9ace2e88ba4486711bc72d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1213'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 95%
 
 >[!CAUTION]
 >
->对于&#x200B;**Campaign托管Cloud Services**，您的环境和初始配置已由Adobe根据您的许可协议条款进行设置。 您不可修改已安装的内置软件包、内置模式或报告。
+>通过使用 **Campaign 托管云服务**，您的环境和初始配置已由 Adobe 根据您的许可协议条款进行了设置。您不可修改已安装的内置软件包、内置模式或报告。
 >
 >如果您需要使用 Campaign 加载项或尚未为您配置的特定功能，那么您必须联系 **Adobe 客户关怀**&#x200B;团队。
 
@@ -49,7 +49,7 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
 ### 添加用户和授予权限
 
-您可以手动将用户添加到Campaign并将其与组关联，并与角色层次结构保持一致。 随后，用户将能够登录并获取适合他们的数据和权限。
+您可以手动将用户添加到 Campaign，并将其与群组关联，与您的角色层级保持一致。随后，用户将能够登录并获取适合他们的数据和权限。
 
 ![](../assets/do-not-localize/book.png) 请参阅[本节](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=zh-Hans#getting-started)了解如何将用户添加到 Adobe Campaign。
 
@@ -69,7 +69,7 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
    ![](../assets/do-not-localize/glass.png) [了解如何导入用户档案](import.md)。
 
-   受众会分组到列表中，并且可以通过工作流创建。 然后可以在跨渠道投放中定位他们。
+   受众将分组到列表中，并可通过工作流创建。然后可以在跨渠道投放中对其进行定位。
 
    ![](../assets/do-not-localize/glass.png) [了解如何定义受众](audiences.md)。
 

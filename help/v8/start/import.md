@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 source-git-commit: 780a29dab99ad2bda554134ca95c435b9e76b494
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '321'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 97%
 
 Campaign 可帮助您将联系人添加到云数据库。您可以加载文件、计划和自动更新多个联系人，在网站上收集数据，或直接在收件人表格中输入用户档案信息。
 
-![](../assets/do-not-localize/glass.png) 受众快速入 [门](audiences.md)
+![](../assets/do-not-localize/glass.png) [受众](audiences.md)入门
 
-![](../assets/do-not-localize/glass.png) 了解Campaign数据 [模型](../dev/datamodel.md)
+![](../assets/do-not-localize/glass.png) 了解 Campaign [数据模型](../dev/datamodel.md)
 
 ## 在工作流中导入用户档案
 

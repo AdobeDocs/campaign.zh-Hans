@@ -5,9 +5,9 @@ description: Campaign v8 文档
 breadcrumb-title: Campaign v8
 title: Campaign v8 文档
 source-git-commit: e0faeda87d5b84309524a72d9f021c381ac4619e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '208'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ ht-degree: 97%
       + [密钥管理和唯一性](dev/keys.md)
       + [创建模式](dev/create-schema.md)
       + [扩展模式](dev/extend-schema.md)
-      + [筛选架构](dev/filter-schema.md)
+      + [筛选模式](dev/filter-schema.md)
       + [模式结构](dev/schema-structure.md)
       + [数据库映射](dev/database-mapping.md)
       + [限制 PI 视图](dev/restrict-pi-view.md)

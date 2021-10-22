@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62,7105477f-d29e-4af8-8789-82b4459761b0
 source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '929'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ Campaign 用户不需要成为数据库专家：不再需要执行复杂的数�
 
 Campaign 用户通过其 Adobe ID 进行连接。使用同一个 Adobe ID 来管理与单个帐户关联的所有 Adobe 计划和产品。
 
-![](../assets/do-not-localize/glass.png) 在此页面中了解如 [!DNL Campaign] 何 [连接到](connect.md)。
+![](../assets/do-not-localize/glass.png) 有关如何连接到 [!DNL Campaign]，请参阅[此页面](connect.md)。
 
 ## 报告
 
@@ -85,7 +85,7 @@ Campaign v8 增添了一个定位工作流活动：**[!UICONTROL Change data sou
 
 利用 **[!UICONTROL Change data source]** 活动，可更改工作流 **[!UICONTROL Working table]** 的数据源，以管理跨不同数据源（如 FDA、FFDA 和本地数据库）的数据。
 
-![](../assets/do-not-localize/glass.png) 在此页面中了解有关 **[!UICONTROL Change data source]** 活动的 [更多信息](../config/workflows.md#change-data-source-activity)。
+![](../assets/do-not-localize/glass.png) 有关 **[!UICONTROL Change data source]** 活动的更多信息，请参阅[此页面](../config/workflows.md#change-data-source-activity)。
 
 ## 不可用功能{#gs-unavailable-features}
 

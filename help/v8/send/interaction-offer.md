@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 4dc2008d-681c-4a79-8fc8-c270c9224ab9
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 87c3f19cec5a756983def344620a1964b95a20d6
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 3%
@@ -16,19 +16,19 @@ ht-degree: 3%
 
 要创建选件，请执行以下步骤：
 
-1. 浏览到&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Offers]**&#x200B;链接。
+1. 浏览到 **[!UICONTROL Campaigns]** 选项卡上，单击 **[!UICONTROL Offers]** 链接。
 
 1. 单击 **[!UICONTROL Create]** 按钮。
 
 1. 更改标签并选择选件应属于的类别。
 
-1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建选件。
+1. 单击 **[!UICONTROL Save]** 以创建选件。
 
    该选件在平台中可用，并且可以配置其内容。
 
 ## 资格设置
 
-您现在可以使用&#x200B;**[!UICONTROL Eligibility]**&#x200B;选项卡定义：
+您现在可以使用 **[!UICONTROL Eligibility]** 选项卡来定义：
 
 * 优惠的资格期。 [了解详情](#eligibility-period)
 * 选件目标群体的过滤器。 [了解详情](#filters-on-the-target)
@@ -36,7 +36,7 @@ ht-degree: 3%
 
 ### 优惠资格期{#eligibility-period}
 
-在选件的&#x200B;**[!UICONTROL Eligibility]**&#x200B;选项卡中，定义选件的资格期。 使用下拉列表在日历中选择开始日期和结束日期。
+在 **[!UICONTROL Eligibility]** ，定义选件的资格期限。 使用下拉列表在日历中选择开始日期和结束日期。
 
 ![](assets/offer_eligibility_create_002.png)
 
@@ -44,9 +44,9 @@ ht-degree: 3%
 
 ### 在目标中添加过滤器 {#filters-on-the-target}
 
-在选件的&#x200B;**[!UICONTROL Eligibility]**&#x200B;选项卡中，将过滤器应用到选件目标。
+在 **[!UICONTROL Eligibility]** ，请将过滤器应用到选件目标。
 
-要实现此目的，请单击&#x200B;**[!UICONTROL Edit query]**&#x200B;链接，然后选择要应用的过滤器。
+为此，请单击 **[!UICONTROL Edit query]** 链接，然后选择要应用的过滤器。
 
 ![](assets/offer_eligibility_create_003.png)
 
@@ -68,7 +68,7 @@ ht-degree: 3%
 
 要在选件中创建权重，请应用以下步骤：
 
-1. 在选件的&#x200B;**[!UICONTROL Eligibility]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Add]**。
+1. 在 **[!UICONTROL Eligibility]** ，请单击 **[!UICONTROL Add]**.
 
    ![](assets/offer_weight_create_001.png)
 
@@ -92,7 +92,7 @@ ht-degree: 3%
 
    ![](assets/offer_weight_create_004.png)
 
-1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以节省重量。
+1. 单击 **[!UICONTROL OK]** 以节省重量。
 
    ![](assets/offer_weight_create_005.png)
 
@@ -104,22 +104,22 @@ ht-degree: 3%
 
 配置完成后，资格规则的摘要将显示在选件仪表板中。
 
-要查看，请单击&#x200B;**[!UICONTROL Schedule and eligibility rules]**&#x200B;链接。
+要查看该动态消息，请单击 **[!UICONTROL Schedule and eligibility rules]** 链接。
 
 ![](assets/offer_eligibility_create_005.png)
 
 ## 创建选件内容 {#creating-the-offer-content}
 
-使用&#x200B;**[!UICONTROL Content]**&#x200B;选项卡定义选件内容。
+使用 **[!UICONTROL Content]** 选项卡来定义选件内容。
 
 ![](assets/offer_content_create_001.png)
 
 1. 定义选件内容的各种参数。
 
-   * **[!UICONTROL Title]** :指定要在选件中显示的标题。警告：这不是指选件的标签，该标签在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中定义。
-   * **[!UICONTROL Destination URL]** :指定选件的URL。必须以“http://”或“https://”开头。
+   * **[!UICONTROL Title]** :指定要在选件中显示的标题。 警告：这不是指在 **[!UICONTROL General]** 选项卡。
+   * **[!UICONTROL Destination URL]** :指定选件的URL。 必须以“http://”或“https://”开头。
    * **[!UICONTROL Image URL]** :指定选件图像的URL或访问路径。
-   * **[!UICONTROL HTML content]** /  **[!UICONTROL Text content]** :在所需的选项卡中输入选件的正文。要生成跟踪，**[!UICONTROL HTML content]**&#x200B;必须由可包含在`<div>`类型元素中的HTML元素组成。 例如，HTML页面中`<table>`元素的结果将如下所示：
+   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** :在所需的选项卡中输入选件的正文。 要生成跟踪，请 **[!UICONTROL HTML content]** 必须由HTML元素组成，这些元素可以包含在 `<div>` 类型元素。 例如， `<table>` HTML页面中的元素将如下所示：
 
    ```
       <div> 
@@ -136,11 +136,11 @@ ht-degree: 3%
       </div>
    ```
 
-   了解如何在[此部分](interaction-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted)中定义接受URL。
+   了解如何在中定义接受URL [此部分](interaction-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted).
 
    ![](assets/offer_content_create_002.png)
 
-   要查找在选件空间配置期间定义的必填字段，请单击&#x200B;**[!UICONTROL Content definitions]**&#x200B;链接以显示列表。 [了解详情](interaction-offer-spaces.md)
+   要查找在选件空间配置期间定义的必填字段，请单击 **[!UICONTROL Content definitions]** 链接以显示列表。 [了解详情](interaction-offer-spaces.md)
 
    ![](assets/offer_content_create_003.png)
 
@@ -152,7 +152,7 @@ ht-degree: 3%
 
 操作步骤：
 
-1. 单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡。
+1. 单击 **[!UICONTROL Preview]** 选项卡。
 
    ![](assets/offer_preview_create_001.png)
 
@@ -180,20 +180,20 @@ Creating hypotheses is detailed in [this page](../../campaign/using/about-respon
 
 ## 批准和激活优惠{#approve-offers}
 
-您现在可以批准并激活选件，以使其在&#x200B;**Live**&#x200B;环境中可用。
+您现在可以批准并激活选件，以在 **实时** 环境。
 
 ![](../assets/do-not-localize/book.png) 有关更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=en#approving-offer-content)
 
 ## 管理优惠演示{#offer-presentation}
 
-Campaign允许您使用演示规则控制优惠建议的流程。 这些特定于Campaign交互的规则是&#x200B;**分类规则**。 它们允许您根据已向收件人提出的建议的历史记录排除优惠。 在环境中引用了这些参数。
+Campaign允许您使用演示规则控制优惠建议的流程。 这些规则专用于Campaign交互，这些规则包括 **类型规则**. 它们允许您根据已向收件人提出的建议的历史记录排除优惠。 在环境中引用了这些参数。
 
 ![](../assets/do-not-localize/book.png) 有关更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=en#managing-offers)
 
 ## 优惠模拟
 
-通过模拟模块，您可以在向收件人发送建议之前，测试属于某个类别或环境的选件的分布。
+的 **模拟** 利用模块，可在向收件人发送建议之前，测试属于类别或环境的选件的分发。
 
 模拟会考虑以前应用于选件的上下文和资格规则及其演示规则。 这样，您就可以测试和优化选件建议的各种版本，而无需实际使用选件，或者超量/不限次地吸引目标，因为模拟对目标收件人没有影响。
 
-![](../assets/do-not-localize/book.png) 有关优惠模拟的更多信息，请参 [阅Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=en)
+![](../assets/do-not-localize/book.png) 有关优惠模拟的更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=en)

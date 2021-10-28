@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
-workflow-type: ht
-source-wordcount: '344'
-ht-degree: 100%
+source-git-commit: 50e138853b047c27b106401f007043a0fcb45f07
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 89%
 
 ---
 
@@ -26,15 +26,6 @@ Campaign 控制面板允许管理每个实例的设置并跟踪使用情况，�
 
 ![](../assets/do-not-localize/book.png) 请参阅 [Campaign 控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans){target=&quot;_blank&quot;}以了解详情。
 
->[!CAUTION]
-> Campaign v8 尚不支持以下功能：
->
->* 子域管理
->* 证书管理
-
->
-
-
 ## 如何访问控制面板？
 
 可直接从 Adobe Experience Cloud 访问控制面板。仅管理员用户可以访问。[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=zh-Hans){target=&quot;_blank&quot;}以了解更多信息。
@@ -46,6 +37,19 @@ Campaign 控制面板允许管理每个实例的设置并跟踪使用情况，�
 ## SFTP 管理
 
 在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。您可以监测它们的存储容量、管理允许列表上的 IP 地址和公共 SSH 密钥。[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=zh-Hans#sftp-management){target=&quot;_blank&quot;}以了解更多信息。
+
+## 子域和证书
+
+了解如何监控子域及其证书。
+
+* [监控子域](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html){target=&quot;_blank&quot;}
+* [设置新子域](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html){target=&quot;_blank&quot;}
+* [监控子域的SSL证书](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html){target=&quot;_blank&quot;}
+
+## 性能监测
+
+控制面板提供了多项功能，帮助您监控实例并确保获得最佳性能。 [单击此处](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=zh-Hans){target=&quot;_blank&quot;}
+
 
 ## 实例设置
 

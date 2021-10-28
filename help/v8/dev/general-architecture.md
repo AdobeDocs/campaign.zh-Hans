@@ -2,10 +2,10 @@
 title: 一般架构
 description: 进一步了解Campaign架构和组件
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: eb8ad88ffd9dbaaf1f9ace2e88ba4486711bc72d
+source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
 workflow-type: tm+mt
 source-wordcount: '1217'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 6%
 
 可以通过不同方式访问应用程序：富客户端、瘦客户端或API集成。
 
-* **客户端控制台**:该应用程序的主用户界面是一个本机应用程序（在Windows上），它与Adobe Campaign应用程序服务器通信标准Internet协议（SOAP、HTTP等）。Adobe Campaign Client Console 具有出色的用户友好性，可帮助提升工作效率，使用的带宽非常少（通过使用本地缓存），并且易于部署。此控制台可以从Internet浏览器部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成HTTP(S)流量。
+* **客户端控制台**:该应用程序的主用户界面是一个本机应用程序（在Windows上），它与Adobe Campaign应用程序服务器通信标准Internet协议（SOAP、HTTP等）。 Adobe Campaign Client Console 具有出色的用户友好性，可帮助提升工作效率，使用的带宽非常少（通过使用本地缓存），并且易于部署。此控制台可以从Internet浏览器部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成HTTP(S)流量。
 
    ![](../assets/do-not-localize/glass.png) [了解关于 Campaign 客户端控制台的更多信息](../start/connect.md)。
 
@@ -37,9 +37,9 @@ ht-degree: 6%
 
    ![](../assets/do-not-localize/glass.png) [了解关于 Campaign Web Access 的更多信息](../start/connect.md)。
 
-* **促销活动API**:在某些情况下，可以使用通过SOAP协议公开的Web服务API从外部应用程序调用系统。
+* **Campaign API**:在某些情况下，可以使用通过SOAP协议公开的Web服务API从外部应用程序调用系统。
 
-   ![](../assets/do-not-localize/glass.png) [进一步了解Campaign API](../dev/api.md)。
+   ![](../assets/do-not-localize/glass.png) [进一步了解Campaign API](../dev/api.md).
 
 ## 开发环境 {#dev-env}
 
@@ -49,8 +49,8 @@ Adobe Campaign是一个具有不同应用程序的单一平台，用于创建开
 
 有三种类型的Adobe Campaign模块：
 
-* **多实例模块**:所有实例都运行一个进程。这适用于以下模块：web、syslogd、trackinglogd和watchdog。
-* **单实例模块**:每个实例运行一个进程。这适用于以下模块：mta、wfserver、inMail、sms和stat。
+* **多实例模块**:所有实例都运行一个进程。 这适用于以下模块：web、syslogd、trackinglogd和watchdog。
+* **单实例模块**:每个实例运行一个进程。 这适用于以下模块：mta、wfserver、inMail、sms和stat。
 * **实用程序模块**:这些模块有时会运行以执行偶尔或重复的操作（清理、配置、下载跟踪日志等）。
 
 主要流程包括：
@@ -65,9 +65,9 @@ Adobe Campaign是一个具有不同应用程序的单一平台，用于创建开
 
 它还可处理定期执行的技术工作流，包括：
 
-* **跟踪**:恢复和整合跟踪日志。它允许您从重定向服务器中检索日志，并创建报告模块使用的聚合指示器。
-* **清理**:数据库清理。用于清除旧记录并避免数据库呈指数级增长。
-* **账单**:自动发送平台的活动报表（数据库大小、营销操作数量等）。
+* **跟踪**:恢复和整合跟踪日志。 它允许您从重定向服务器中检索日志，并创建报告模块使用的聚合指示器。
+* **清理**:数据库清理。 用于清除旧记录并避免数据库呈指数级增长。
+* **帐单**:自动发送平台的活动报表（数据库大小、营销操作数量等）。
 
 **投放服务器** (nlserver mta)
 
@@ -93,7 +93,7 @@ Adobe Campaign具有本机电子邮件广播功能。 此进程可用作SMTP邮�
 
 此过程会轮询短信路由器以收集进度状态并更新数据库。
 
-**写入日志消息** (nlserver syslogd)
+**编写日志消息** (nlserver syslogd)
 
 此技术过程会捕获其他进程生成的日志消息和跟踪，并将它们写入硬盘。 这为出现问题时的诊断提供了充足的信息。
 
@@ -101,11 +101,11 @@ Adobe Campaign具有本机电子邮件广播功能。 此进程可用作SMTP邮�
 
 此过程会将重定向过程生成的跟踪日志保存到磁盘。
 
-**写入入站事件** (nlserver interactiond)
+**编写入站事件** (nlserver interactiond)
 
 此过程可确保在交互框架内将入站事件记录到磁盘。
 
-**监督模块** （nlserver监视程序）
+**监督模块** (nlserver watkdog)
 
 此技术过程是产生其他过程的主要过程。 它还会监控它们，并在发生事件时自动重新启动它们，从而保持最长的系统正常运行时间。
 
@@ -115,7 +115,7 @@ Adobe Campaign具有本机电子邮件广播功能。 此进程可用作SMTP邮�
 
 ## 数据库容器 {#db-containers}
 
-Adobe Campaign Cloud数据库依赖于[!DNL Snowflake]，其中包含功能数据（用户档案、订阅、内容等）、技术数据（投放作业和日志、跟踪日志等） 以及解决方案的工作数据（购买、销售线索），所有Adobe Campaign组件都与数据库通信以执行其特定任务。
+Adobe Campaign云数据库依赖 [!DNL Snowflake] 其中包含功能数据（用户档案、订阅、内容等）、技术数据（投放作业和日志、跟踪日志等） 以及解决方案的工作数据（购买、销售线索），所有Adobe Campaign组件都与数据库通信以执行其特定任务。
 
 客户可以使用预定义的数据库和模式来部署Adobe Campaign，如果需要，可以扩展此预定义的环境。 Adobe Campaign通过SQL调用访问数据集市中的所有数据。 Adobe Campaign还提供了完整的“提取转换和加载(ETL)”工具补充，用于执行数据导入和导出数据到系统和从系统导出的数据。
 
@@ -124,6 +124,6 @@ Adobe Campaign Cloud数据库依赖于[!DNL Snowflake]，其中包含功能数�
 
 >[!CAUTION]
 >
->对于&#x200B;**Campaign托管Cloud Services**，您的环境和初始配置已由Adobe根据您的许可协议条款进行设置。 您不可修改已安装的内置软件包、内置模式或报告。
+>通过使用 **Campaign 托管云服务**，您的环境和初始配置已由 Adobe 根据您的许可协议条款进行了设置。您不可修改已安装的内置软件包、内置模式或报告。
 >
 >如果您需要使用 Campaign 加载项或尚未为您配置的特定功能，那么您必须联系 **Adobe 客户关怀**&#x200B;团队。

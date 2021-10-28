@@ -6,10 +6,10 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: true
 exl-id: 50c254ba-cc33-49b2-b7d5-12aa69883c07
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
-workflow-type: ht
-source-wordcount: '176'
-ht-degree: 100%
+source-git-commit: e41816003958c3373e92d5ea82240fd7ceda5857
+workflow-type: tm+mt
+source-wordcount: '210'
+ht-degree: 87%
 
 ---
 
@@ -27,3 +27,4 @@ Adobe Campaign v8 存在以下限制：
 * 订阅（选择加入）和退订（选择退出）机制以及移动设备注册是异步流程。请求是每小时通过特定的技术工作流处理的。[了解详情](../config/replication.md#tech-wf)
 * 重复项需要由最终用户手动处理。[了解详情](../dev/keys.md)
 * Adobe Campaign v8 不支持 API 和 Web 应用程序的扩展吞吐量。 如有特定需求，请联系 Adobe 获取指导。
+* Adobe Campaign Campaign优化模块在压力分类规则中未考虑计划投放。 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html?lang=en#setting-the-period)以了解详情。

@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8
 title: Campaign v8 文档
-source-git-commit: e0faeda87d5b84309524a72d9f021c381ac4619e
-workflow-type: ht
-source-wordcount: '208'
-ht-degree: 100%
+source-git-commit: 889400a238f32968464f1425bb7d6c2dc3ff3cd0
+workflow-type: tm+mt
+source-wordcount: '236'
+ht-degree: 86%
 
 ---
 
@@ -48,8 +48,10 @@ ht-degree: 100%
    + [LINE 消息](send/line.md)
    + [直邮](send/direct-mail.md)
    + [事务性消息](send/transactional.md)
-   + 添加优惠 {#interaction}
-      + [互动入门](send/interaction.md)
+   + 通过Campaign交互管理优惠{#interaction}
+      + [实时互动入门](send/interaction.md)
+      + [环境和架构](send/interaction-architecture.md)
+      + [最佳实践](send/interaction-best-practices.md)
       + 定义设置{#interaction}
          + [创建运算符](send/interaction-operators.md)
          + [创建环境](send/interaction-env.md)
@@ -57,7 +59,12 @@ ht-degree: 100%
          + [创建优惠空间](send/interaction-offer-spaces.md)
       + [创建优惠目录](send/interaction-offer-catalog.md)
       + [创建优惠](send/interaction-offer.md)
-      + [发送优惠](send/interaction-send-offers.md)
+      + [发送优惠 （出站）](send/interaction-send-offers.md)
+      + 提供选件（入站）{#inbound}
+         + [上下文](send/interaction-present-offers.md)
+         + [在网页中调用选件](send/interaction-integration.md)
+         + [管理匿名交互](send/anonymous-interactions.md)
+      + [报告和历史记录](send/interaction-tracking.md)
       + [用例](send/interaction-use-cases.md)
 + 配置{#config}
    + [使用工作流实现自动化](config/workflows.md)

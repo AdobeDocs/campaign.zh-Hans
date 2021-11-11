@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
 source-git-commit: 50e138853b047c27b106401f007043a0fcb45f07
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '410'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -40,15 +40,15 @@ Campaign 控制面板允许管理每个实例的设置并跟踪使用情况，�
 
 ## 子域和证书
 
-了解如何监控子域及其证书。
+了解如何监测子域及其证书。
 
-* [监控子域](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html){target=&quot;_blank&quot;}
-* [设置新子域](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html){target=&quot;_blank&quot;}
-* [监控子域的SSL证书](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html){target=&quot;_blank&quot;}
+* [监测子域](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html?lang=zh-Hans){target=&quot;_blank&quot;}
+* [设置新子域](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hans){target=&quot;_blank&quot;}
+* [监测子域的 SSL 证书](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=zh-Hans){target=&quot;_blank&quot;}
 
-## 性能监测
+## 性能监控
 
-控制面板提供了多项功能，帮助您监控实例并确保获得最佳性能。 [单击此处](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=zh-Hans){target=&quot;_blank&quot;}
+控制面板提供了多项功能，可帮助您监测实例并确保实现最佳性能。[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=zh-Hans){target=&quot;_blank&quot;}
 
 
 ## 实例设置

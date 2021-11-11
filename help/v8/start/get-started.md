@@ -6,15 +6,15 @@ role: Data Engineer
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
 source-git-commit: 889400a238f32968464f1425bb7d6c2dc3ff3cd0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '898'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# 开始使用 Adobe Campaign{#gs-ac-v8}
+# Adobe Campaign 入门{#gs-ac-v8}
 
-Adobe Campaign提供了一个平台，用于设计跨渠道客户体验以及可视活动编排、实时交互管理和跨渠道执行的环境。
+Adobe Campaign 提供了一个跨渠道客户体验设计平台，以及用于进行可视化活动编排、实时互动管理和跨渠道执行的环境。
 
 使用 Campaign 可以：
 

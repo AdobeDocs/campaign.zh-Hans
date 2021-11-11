@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '643'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Adobe Campaign v8 附带以下投放渠道：
 * 插入动态的个性化字段。
    ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-fields.html?lang=zh-Hans)以了解如何使用个性化字段{target=&quot;_blank&quot;}
 * 插入预定义的个性化块。
-   ![](../assets/do-not-localize/book.png) 了解什么是个性化块以及如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-blocks.html?lang=zh-Hans){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-blocks.html?lang=zh-Hans){target=&quot;_blank&quot;}以了解什么是个性化块及其使用方法
 * 创建条件内容。
    ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/conditional-content.html?lang=zh-Hans)以了解如何插入条件内容{target=&quot;_blank&quot;}
 
@@ -100,6 +100,6 @@ Adobe Campaign v8 附带以下投放渠道：
 
 * [投放最佳实践](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=zh-Hans){target=&quot;_blank&quot;}
 
-* [测试并发送电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html){target=&quot;_blank&quot;}
+* [测试并发送电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html?lang=zh-Hans){target=&quot;_blank&quot;}
 
 * [发送验证](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=zh-Hans){target=&quot;_blank&quot;}

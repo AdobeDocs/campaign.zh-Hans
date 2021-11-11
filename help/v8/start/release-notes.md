@@ -7,9 +7,9 @@ level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396e
 source-git-commit: 4ce21dda9516a881cce39c94454d5ac7b43142a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1574'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 50%
 
 ## 8.2.8 版 {#release-8-2-8}
 
-_2021年10月28日_
+_2021 年 10 月 28 日_
 
 <table>
 <thead>
@@ -30,8 +30,8 @@ _2021年10月28日_
 <tbody>
 <tr>
 <td>
-<p>现在，实时互动管理适用于入站渠道。 使用Campaign入站互动模块，在客户访问您的网站或联系您的呼叫中心时，向客户展示最佳选件。 此功能随Campaign v8一起提供，是一个选项，需要在您的实例中进行特定配置。 请联系您的Adobe代表以访问入站交互模块。</p>
-<p>有关详细信息，请参阅<a href="../send/interaction-architecture.md">有详细说明的文档</a>。</p>
+<p>实时互动管理现适用于入站渠道。使用 Campaign 入站互动模块，在客户访问您的网站或联系您的呼叫中心时，向客户展示最佳优惠。这项功能是 Campaign v8 自带的一个选项，需要在您的实例上进行具体配置。请联系您的 Adobe 代表以获得入站互动模块的权限。</p>
+<p>有关更多信息，请参阅<a href="../send/interaction-architecture.md">详细文档</a>。</p>
 </td>
 </tr>
 </tbody>
@@ -45,8 +45,8 @@ _2021年10月28日_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>促销活动优化模块现已可用。 利用此模块，可控制、筛选和监控投放的发送。 为了避免营销活动之间发生冲突，Adobe Campaign 可以应用特定的限制规则来测试各种活动组合。这样可确保发送的消息符合客户的需求和期望以及公司通信政策。</p>
-<p>有关更多信息，请参阅 <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html">Campaign Classicv7文档</a>.</p>
+<td> <p>活动优化模块现已可用。使用此模块，您可以控制、筛选和监测投放发送情况。为了避免活动之间发生冲突，Adobe Campaign 可以应用特定的限制规则来测试各种活动组合。这可确保所发送的邮件符合客户的需求与期望以及公司的通信政策。</p>
+<p>有关更多信息，请参阅相关的 <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=zh-Hans">Campaign Classic v7 文档</a>。</p>
 </td> 
 </tr> 
 </tbody> 
@@ -54,53 +54,53 @@ _2021年10月28日_
 <table> 
 <thead>
 <tr> 
-<th> <strong>Unicity服务</strong><br /> </th> 
+<th> <strong>Unicity Service</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Unicity Service是新的Cloud Database Manager组件。 它可帮助用户保留和监视云数据库表中唯一密钥约束的完整性。 这样，您就可以降低插入重复键的风险。
-<p>由于云数据库不强制唯一性约束，因此Unicity服务在应用程序级别引入了 <b>一套新护栏</b> 使用Adobe Campaign管理数据时，请减少插入重复项的风险。</p> 
-<p>Unicity服务将启动一个名为 <b>ffdaUnicity</b> 监控在检测到重复项时的唯一性约束和警报。</p></td> </tr> 
+<td> <p>Unicity Service 是新的 Cloud Database Manager 组件。它可帮助用户维护和监测 Cloud Database 表内唯一键值约束的完整性。这样，您就可以降低插入重复键值的风险。
+<p>由于 Cloud Database 不强制执行唯一性约束，因此 Unicity Service 在应用程序级别引入了<b>一套新护栏</b>，以减少使用 Adobe Campaign 管理数据时插入重复项的风险。</p> 
+<p>Unicity Service 会启动一个名为 <b>ffdaUnicity</b> 的内置工作流程，以监测唯一性约束并在检测到重复项时发出警报。</p></td> </tr> 
 </tbody> 
 </table>
 
 **改进**
 
-* Snowflake连接器在性能方面已得到改进。
-* 为监控和测试目的， **[!UICONTROL Replicate Staging data]** 工作流现在包括已发送到FFDA（完全联合数据访问）数据库的记录数。
-* SQL代码活动现在允许您选择SQL脚本将存储在哪个数据库中：默认数据源或所选的活动FDA外部帐户。
-* 一组预定义的仓库现已可用，可用于并行运行各种查询，如分段、ETL或峰值。 [阅读更多](../config/workflows.md)
+* Snowflake 连接器在性能方面得到了改进。
+* 为监测和测试目的，**[!UICONTROL Replicate Staging data]** 工作流的审核日志现在包括已发送到 FFDA（完全联合数据访问）数据库的记录数。
+* 借助 SQL 代码活动，您现在可以选择将 SQL 脚本存储在哪个数据库中：默认数据源或选定的使用中的 FDA 外部帐户。
+* 现在提供一组预定义的仓库，可用于并行运行各种查询，如分段、ETL 或峰值。[了解更多信息](../config/workflows.md)
 
 **其他变更**
 
-* 的 **[!UICONTROL Encrypted identifier]** 字段已添加到访客架构(`nms:visitor`)。 此字段是计算的，将用于Web应用程序。
-* 修复了当某些中间源容器中存在某些IP相关性但并非全部存在这些IP相关性时，导致投放分析失败的问题。 现在，IP相关性全部存储在数据库中，以便任何容器都可以访问所有其他容器中存在的相关性。 (NEO-37564)
-* 您现在可以导入包含多个架构和导航树节点的资源包。
+* **[!UICONTROL Encrypted identifier]** 字段已添加至访客模式 (`nms:visitor`)。会计算该字段并将其用于 Web 应用程序。
+* 修复了当某些 IP 相关性存在于部分而非全部中间源容器时，导致投放分析失败的问题。现在，IP 相关性都存储在数据库中，因此任何容器都可以访问所有其他容器中存在的相关性。(NEO-37564)
+* 您现在可以导入包含多个模式和导航树节点的包。
 
-**补丁程序**
+**修补程序**
 
-* 在用户删除之后，在数据架构中， `<autoStg>` 属性，或将其值从 `true` to `false`，则不会删除相关的暂存表。 此问题已修复。
-* 修复了由于使用FFDA数据源进行ID管理而使用专用表单创建记录时导致错误的问题。
-* 修复了当选件由工作流中的扩充活动管理时，可能会阻止将选件插入投放的问题。
-* 修复了可能降低包导入速度的问题。
-* 修复了可能阻止发送带有种子地址的电子邮件投放的问题。
-* 修复了可能阻止在优惠建议表中保存建议的问题。
-* 修复了导致网络超时问题被错误记录为脚本中断问题而非网络错误的问题。 在JavaScript活动中包含的HTTP请求中，会发生此问题。
-* 修复了在Snowflake时无法将选件复制到实时选件环境的问题。
-* 修复了忽略未扩展内置架构的“autoStg”属性的问题。
-* 修复了阻止用户选择 **[!UICONTROL Country/Region]** 链接。
-* 修复了导致自定义报表中的日期选取器导致脚本错误的问题。 (NEO-36345)
-* 修复了在配置文件错误的情况下重新生成配置时导致系统崩溃的问题。
-* 修复了阻止成功升级营销和控制实例的问题。
+* 当用户在数据模式中删除表定义元素的 `<autoStg>` 属性，或将其值从 `true` 更改为 `false` 后，并没有删除相关的暂存表。此问题已修复。
+* 修复了使用专用表单创建记录时，由于使用 FFDA 数据源进行 ID 管理而导致错误的问题。
+* 修复了当优惠由工作流中的扩充活动管理时，可能会导致无法将优惠插入投放的问题。
+* 修复了可能会导致包导入速度降低的问题。
+* 修复了可能导致无法使用种子地址发送电子邮件投放的问题。
+* 修复了可能导致无法在优惠建议表中保存建议的问题。
+* 修复了导致网络超时被错误记录为脚本中断而非网络错误的问题。在 JavaScript 活动中包含的 HTTP 请求中，会发生此问题。
+* 修复了导致无法将优惠复制到 Snowflake 上的实时优惠环境的问题。
+* 修复了未扩展内置模式的“autoStg”属性被忽略的问题。
+* 修复了导致用户在预览用户档案时无法选择 **[!UICONTROL Country/Region]** 链接的问题。
+* 修复了导致自定义报表中的日期选取器引发脚本错误的问题。(NEO-36345)
+* 修复了在配置文件不正确的情况下重新生成配置时导致系统崩溃的问题。
+* 修复了导致无法成功升级营销和控制实例的问题。
 * 修复了可能导致营销实例上的计费工作流崩溃的问题。
-* 修复了可能导致FFDASnowflake现成表中出现重复键的问题。 (NEO-38583)
-* 修复了在一个接一个地编辑两个重复数据删除活动时可能导致工作流临时架构丢失的问题。 (NEO-34063)
-* 修复了在尝试提取时间组件时运行Amazon Redshift HoursDiff和MinutesDiff函数时返回错误结果的问题。(NEO-31673)
-* 修复了由于代理配置问题而阻止用户登录控制台的问题。 (NEO-38388)
-* 修复了阻止 **清除文件夹** 功能正常运行。 (NEO-37459)
-* 修复了可能阻止预览附加到工作流的移动投放的问题。
-* 修复了可能阻止 **读取列表** 使用负ID在数据库中标识列表时，工作流活动不起作用。 (NEO-39607)
+* 修复了可能导致 FFDA Snowflake 现成表格中出现重复键值的问题。(NEO-38583)
+* 修复了在连续编辑两个删除重复项活动时可能导致工作流临时模式丢失的问题。(NEO-34063)
+* 修复了在尝试提取时间组件时，运行 Amazon Redshift HoursDiff 和 MinutesDiff 函数时返回错误结果的问题。(NEO-31673)
+* 修复了由于代理配置问题而导致用户可能无法登录到控制台的问题。(NEO-38388)
+* 修复了导致&#x200B;**清除文件夹**&#x200B;功能无法正常运行的问题。(NEO-37459)
+* 修复了可能导致您无法预览附加到工作流的移动投放的问题。
+* 修复了当数据库中的列表以负值 ID 标识时，可能会导致&#x200B;**读取列表**&#x200B;工作流活动无法运行的问题。(NEO-39607)
 
 ## 8.1.20 版 {#release-8-1-20}
 

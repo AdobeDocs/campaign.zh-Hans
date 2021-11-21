@@ -2,7 +2,8 @@
 product: campaign
 title: 提供优惠（入站互动）
 description: 了解如何使用Campaign交互模块展示最佳选件
-source-git-commit: 889400a238f32968464f1425bb7d6c2dc3ff3cd0
+exl-id: 1eb0775a-5da9-4a27-aa7b-339372748f9c
+source-git-commit: 00a88cf9217faf32070a3cd34a2c1ae5243d9a6e
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 0%

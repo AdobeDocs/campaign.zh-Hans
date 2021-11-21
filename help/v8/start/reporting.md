@@ -4,7 +4,8 @@ description: Campaign报告功能入门
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 76269d65246010af60fda84b388a7c74269e236f
+exl-id: 95ed0369-7215-496b-8e11-fe264c436488
+source-git-commit: 00a88cf9217faf32070a3cd34a2c1ae5243d9a6e
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 6%
@@ -21,27 +22,27 @@ Adobe Campaign提供了本页中列出的一组报表工具。
 
    Adobe Campaign提供了有关投放、营销活动、平台活动、可选功能等的报告。 这些报告通过与之相关的各种功能提供。 它们可以根据您的特定需求进行调整。
 
-   使用&#x200B;**Reports**&#x200B;选项卡访问这些报表。
+   使用 **报表** 选项卡访问这些报表。
 
    ![](assets/built-in-reports.png)
 
-   ![](../assets/do-not-localize/book.png) Campaign内置报表在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/accessing-built-in-reports/about-campaign-built-in-reports.html){target=&quot;_blank&quot;}中提供
+   ![](../assets/do-not-localize/book.png) Campaign内置报告在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/accessing-built-in-reports/about-campaign-built-in-reports.html){target=&quot;_blank&quot;}
 
 * **描述性数据分析**
 
    Adobe Campaign提供了一个可视化工具，用于生成有关数据库中数据的统计信息。 您可以使用专用助理创建描述性分析报告，并根据需要调整其内容和布局。
 
-   使用&#x200B;**[!UICONTROL Tools > Descriptive analysis...]**&#x200B;菜单创建新报告。
+   使用 **[!UICONTROL Tools > Descriptive analysis...]** 菜单来创建新报表。
 
    ![](assets/desc-analysis-report.png)
 
-   ![](../assets/do-not-localize/book.png) 促销活动描述性分析报告在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target=&quot;_blank&quot;}中提供
+   ![](../assets/do-not-localize/book.png) 营销活动描述性分析报告在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target=&quot;_blank&quot;}
 
 * **个性化报表**
 
    使用Adobe Campaign创建数据库中数据的报告。 创建这些内容后，请在相应的上下文中对其进行访问。
 
-   ![](../assets/do-not-localize/book.png) 有关创建报表的详细步骤，请 [参阅Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target=&quot;_blank&quot;}。个性化报表创建保留给高级用户。
+   ![](../assets/do-not-localize/book.png) 有关创建报表的详细步骤，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target=&quot;_blank&quot;}。 个性化报表创建保留给高级用户。
 
 * **多维数据集**
 
@@ -51,7 +52,7 @@ Adobe Campaign提供了本页中列出的一组报表工具。
 
    根据查询、计算和卷的复杂性，可以通过查询收集这些报表中分析的数据，并在列表（数据管理类型工作流）或多维数据集（使用Marketing Analytics）中预聚合这些数据。 它将以数据透视表或组列表的形式显示。
 
-   ![](../assets/do-not-localize/book.png) 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/designing-reports-with-cubes/about-cubes.html)中创建多维数据集。{target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) 了解如何在中创建多维数据集 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/designing-reports-with-cubes/about-cubes.html){target=&quot;_blank&quot;}
 
 
 请注意，与 Adobe Campaign v7 相比，Campaign Classic 报表已得到优化，并提供了更好的扩展功能。 多维数据集的现有限制不适用。

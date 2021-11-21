@@ -23,7 +23,7 @@ ht-degree: 4%
 1. 将应用程序的iOS和Android版本添加到此服务。
 1. 为iOS和Android创建投放。
 
-![](../assets/do-not-localize/book.png) 了解如何在Campaign Classicv7文档中 [开始使用移动设备应用程序](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) 了解如何开始使用 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html){target=&quot;_blank&quot;}
 
 ## 与AdobeSDK集成
 
@@ -31,23 +31,23 @@ ht-degree: 4%
 
 Campaign SDK可帮助您将移动应用程序集成到Adobe Campaign平台。
 
-兼容的SDK版本列在[Campaign兼容性矩阵](../start/compatibility-matrix.md#MobileSDK)中。
+中列出了兼容的SDK版本 [Campaign兼容性矩阵](../start/compatibility-matrix.md#MobileSDK).
 
-![](../assets/do-not-localize/glass.png) 在此部分中了解如何将Campaign Android和iOS SDK与您的应用程序 [集成](../config/push-config.md)
+![](../assets/do-not-localize/glass.png) 了解如何在 [此部分](../config/push-config.md)
 
 ### 在Launch中配置Campaign扩展
 
 您可以利用Campaign Classic扩展，将Adobe Experience Platform Launch SDK与Campaign集成。
 
-![](../assets/do-not-localize/book.png) 请参阅 [AdobeMobile SDK文档](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic){target=&quot;_blank&quot;}，以了解更多信息
+![](../assets/do-not-localize/book.png) 在 [AdobeMobile SDK文档](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic){target=&quot;_blank&quot;}
 
 ## 在Campaign中配置应用程序设置
 
 您必须在Adobe Campaign中定义iOS和Android应用程序设置。
 
-![](../assets/do-not-localize/book.png) {target=&quot;_blank&quot;} [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en#sending-messages)中详细介绍了iOS的配置准则
+![](../assets/do-not-localize/book.png) 有关iOS的配置准则，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en#sending-messages){target=&quot;_blank&quot;}
 
-![](../assets/do-not-localize/book.png) Campaign Classicv7文档中详细介 [绍了Anddroid的配置准则](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=en#sending-messages){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Android的配置准则详见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=en#sending-messages){target=&quot;_blank&quot;}
 
 ## 创建您的第一个推送通知
 
@@ -55,9 +55,9 @@ Campaign SDK可帮助您将移动应用程序集成到Adobe Campaign平台。
 
 >[!CAUTION]
 >
->使用Campaign v8时，移动注册现在为&#x200B;**异步**。 [了解详情](../dev/staging.md)
+>现在，使用Campaign v8进行移动注册 **异步**. [了解详情](../dev/staging.md)
 
-要创建新投放，请浏览&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡，单击&#x200B;**[!UICONTROL Deliveries]** ，然后单击现有投放列表上方的&#x200B;**[!UICONTROL Create]**&#x200B;按钮。
+要创建新投放，请浏览 **[!UICONTROL Campaigns]** ，单击 **[!UICONTROL Deliveries]** ，然后单击 **[!UICONTROL Create]** 按钮。
 
 ![](assets/delivery_step_1.png)
 
@@ -65,50 +65,50 @@ Campaign SDK可帮助您将移动应用程序集成到Adobe Campaign平台。
 
 ### 在iOS上发送通知 {#send-notifications-on-ios}
 
-1. 选择&#x200B;**[!UICONTROL Deliver on iOS]**&#x200B;投放模板，然后单击&#x200B;**[!UICONTROL Continue]**。
+1. 选择 **[!UICONTROL Deliver on iOS]** 投放模板并单击 **[!UICONTROL Continue]**.
 
    ![](assets/push-template-ios.png)
 
-1. 要定义通知的目标，请单击&#x200B;**[!UICONTROL To]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Add]**。
+1. 要定义通知的目标，请单击 **[!UICONTROL To]** 链接，然后单击 **[!UICONTROL Add]**.
 
    ![](assets/push-ios-select-target.png)
 
-1. 选择&#x200B;**[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**，选择与移动应用程序相关的服务，然后选择应用程序的iOS版本。
+1. 选择 **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**，选择与移动应用程序相关的服务，然后选择应用程序的iOS版本。
 
    ![](assets/push-ios-subscribers.png)
 
-1. 选择通知类型：**[!UICONTROL Alert]**、**[!UICONTROL Badge]**、**[!UICONTROL Alert and badge]**&#x200B;或&#x200B;**[!UICONTROL Silent Push]**。
+1. 选择通知类型： **[!UICONTROL Alert]**, **[!UICONTROL Badge]**, **[!UICONTROL Alert and badge]** 或 **[!UICONTROL Silent Push]**.
 
    ![](assets/push-ios-alert.png)
 
-1. 在&#x200B;**[!UICONTROL Title]**&#x200B;字段中，输入要在通知中显示的标题标签。
+1. 在 **[!UICONTROL Title]** 字段，输入要在通知中显示的标题标签。
 
-1. 根据所选通知类型输入&#x200B;**[!UICONTROL Message]**&#x200B;和&#x200B;**[!UICONTROL Value of the badge]**。
+1. 输入 **[!UICONTROL Message]** 和 **[!UICONTROL Value of the badge]** 基于所选通知类型。
 
 1. 您还可以定义以下元素：
 
-   * **[!UICONTROL Action button]**&#x200B;允许您为出现在警报通知（有效负载的&#x200B;**action_loc_key**&#x200B;字段）中的操作按钮定义标签。
+   * 的 **[!UICONTROL Action button]** 用于为警报通知中显示的操作按钮定义标签(**action_loc_key** 字段)。
 
-   * 在&#x200B;**[!UICONTROL Play a sound]**&#x200B;字段中，选择要在收到通知时由移动终端播放的声音。
+   * 在 **[!UICONTROL Play a sound]** 字段中，选择要在收到通知时由移动终端播放的声音。
 
-   * 在&#x200B;**[!UICONTROL Application variables]**&#x200B;字段中，输入每个变量的值。 例如，您可以配置在用户激活通知时显示的特定应用程序屏幕。
+   * 在 **[!UICONTROL Application variables]** 字段，输入每个变量的值。 例如，您可以配置在用户激活通知时显示的特定应用程序屏幕。
 
-1. 配置通知后，单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡以预览通知。
+1. 配置通知后，单击 **[!UICONTROL Preview]** 选项卡来预览通知。
 
    ![](assets/push-ios-preview.png)
 
 
 ### 在Android上发送通知 {#send-notifications-on-android}
 
-1. 选择&#x200B;**[!UICONTROL Deliver on Android (android)]**&#x200B;投放模板。
+1. 选择 **[!UICONTROL Deliver on Android (android)]** 投放模板。
 
    ![](assets/push-template-android.png)
 
-1. 要定义通知的目标，请单击&#x200B;**[!UICONTROL To]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Add]**。
+1. 要定义通知的目标，请单击 **[!UICONTROL To]** 链接，然后单击 **[!UICONTROL Add]**.
 
    ![](assets/push-android-select-target.png)
 
-1. 选择&#x200B;**[!UICONTROL Subscribers of an Android mobile application]**，选择与移动应用程序相关的服务（在本例中为Neotrips），然后选择应用程序的Android版本。
+1. 选择 **[!UICONTROL Subscribers of an Android mobile application]**，选择与移动应用程序相关的服务（在本例中为Neotrips），然后选择应用程序的Android版本。
 
    ![](assets/push-ios-subscribers.png)
 
@@ -116,11 +116,11 @@ Campaign SDK可帮助您将移动应用程序集成到Adobe Campaign平台。
 
    ![](assets/push-android-content.png)
 
-1. 单击&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;图标以将表情符号插入推送通知。
+1. 单击 **[!UICONTROL Insert emoticon]** 图标将表情符号插入推送通知。
 
-1. 在&#x200B;**[!UICONTROL Application variables]**&#x200B;字段中，输入每个变量的值。 例如，您可以配置在用户激活通知时显示的特定应用程序屏幕。
+1. 在 **[!UICONTROL Application variables]** 字段，输入每个变量的值。 例如，您可以配置在用户激活通知时显示的特定应用程序屏幕。
 
-1. 配置通知后，单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡以预览通知。
+1. 配置通知后，单击 **[!UICONTROL Preview]** 选项卡来预览通知。
 
    <!--![](assets/push-android-preview.png)-->
 
@@ -132,7 +132,7 @@ Campaign SDK可帮助您将移动应用程序集成到Adobe Campaign平台。
    ![](../assets/do-not-localize/book.png) [了解验证投放的关键步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target=&quot;_blank&quot;}
 
 * 确认并发送投放
-   ![](../assets/do-not-localize/book.png) [了解发送投放](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en){target=&quot;_blank&quot;}的关键步骤
+   ![](../assets/do-not-localize/book.png) [了解发送投放的关键步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en){target=&quot;_blank&quot;}
 
 发送消息后，您可以监控和跟踪投放内容。 请参阅 Campaign Classic v7 文档以了解详情：
 
@@ -140,4 +140,4 @@ Campaign SDK可帮助您将移动应用程序集成到Adobe Campaign平台。
    ![](../assets/do-not-localize/book.png) [了解有关推送通知隔离的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#push-notification-quarantines){target=&quot;_blank&quot;}
 
 * 故障排除
-   ![](../assets/do-not-localize/book.png) [了解如何对推送通知进行故障诊断](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html?lang=en){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [了解如何排查推送通知故障](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html?lang=en){target=&quot;_blank&quot;}

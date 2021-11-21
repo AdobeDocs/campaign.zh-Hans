@@ -16,11 +16,11 @@ ht-degree: 2%
 
 Campaign v8提供了两个新API，用于管理Campaign本地数据库和云数据库之间的数据。 使用这些功能的先决条件是在架构上启用暂存机制。 [了解详情](staging.md)
 
-* 摄取API:**xtk.session.ingest**
+* 摄取API: **xtk.session.ingest**
 
    此API仅专用于数据插入。 [了解详情](#data-insert-api)
 
-* 数据更新/删除API:**xtk.session.ingestExt**
+* 数据更新/删除API: **xtk.session.ingestExt**
 
    此API用于更新或删除数据。 [了解详情](#data-update-api)
 
@@ -28,13 +28,13 @@ Campaign v8提供了两个新API，用于管理Campaign本地数据库和云数�
 
 ## 插入数据{#data-insert-api}
 
-**xtk.session.ingest** API仅专用于数据插入。 无更新/删除。
+的 **xtk.session.ingest** API仅专用于数据插入。 无更新/删除。
 
 ### 插入时不进行协调
 
 **在工作流中**
 
-在&#x200B;**Javascript代码**&#x200B;活动中使用以下代码在云数据库中插入数据，而不进行协调：
+在 **Javascript代码** 活动，在云数据库中插入数据而不进行协调：
 
 ```
 var xmlStagingSampleTable = <sampleTableStg
@@ -91,7 +91,7 @@ logInfo(strUuid);
 
 **在工作流中**
 
-在&#x200B;**Javascript代码**&#x200B;活动中使用以下代码将数据插入具有协调的Cloud数据库：
+在 **Javascript代码** 活动，以将数据插入具有协调的云数据库：
 
 ```
 var xmlStagingSampleTable = <sampleTableStg  _key="@id" id="ABC12345"
@@ -147,13 +147,13 @@ logInfo(strUuid);
 
 ## 更新或删除数据{#data-update-api}
 
-**xtk.session.IngestExt** API已优化，用于数据更新/删除。 仅对于插入，首选&#x200B;**xtk.session.ingest**。 无论记录键是否在暂存表中，插入操作都正在进行。
+的 **xtk.session.IngestExt** 优化了API以进行数据更新/删除。 仅插入，首选 **xtk.session.ingest**. 无论记录键是否在暂存表中，插入操作都正在进行。
 
 ### 插入/更新
 
 **在工作流中**
 
-在&#x200B;**Javascript代码**&#x200B;活动中使用以下代码来更新云数据库中的数据：
+在 **Javascript代码** 用于更新云数据库中数据的活动：
 
 ```
 var xmlStagingRecipient = <sampleTableStg  _key="@id" id="ABC12345"
@@ -206,9 +206,9 @@ xtk.session.IngestExt(xmlStagingRecipient);
 
 ## 订阅管理 {#sub-apis}
 
-[此页面](../start/subscriptions.md)中介绍了Campaign中的订阅管理。
+有关Campaign中的订阅管理，请参阅 [本页](../start/subscriptions.md).
 
-订阅和退订数据的插入依赖于Campaign本地数据库中的[测试机制](staging.md)。 订阅者信息临时存储在本地数据库的暂存表中，并且同步工作流会将此数据从本地数据库发送到云数据库。 因此，订阅和退订过程是&#x200B;**异步**。 选择加入和选择退出请求每小时通过特定的技术工作流进行处理。 [了解详情](../config/replication.md#tech-wf)
+订阅和退订数据的插入取决于 [分级机制](staging.md) 在Campaign本地数据库中。 订阅者信息临时存储在本地数据库的暂存表中，并且同步工作流会将此数据从本地数据库发送到云数据库。 因此，订购和退订流程 **异步**. 选择加入和选择退出请求每小时通过特定的技术工作流进行处理。 [了解详情](../config/replication.md#tech-wf)
 
 
 **相关主题**

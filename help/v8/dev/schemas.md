@@ -11,7 +11,7 @@ ht-degree: 5%
 
 # 使用模式{#gs-ac-schemas}
 
-应用中所承载数据的物理和逻辑结构以 XML 格式进行描述。它遵循Adobe Campaign特有的语法，称为&#x200B;**schema**。
+应用中所承载数据的物理和逻辑结构以 XML 格式进行描述。它遵循Adobe Campaign特有的语法，称为 **模式**.
 
 模式是与数据库表关联的XML文档。 它定义了数据结构并描述了表的SQL定义：
 
@@ -35,17 +35,17 @@ Adobe Campaign采用数据模式：
 * 定义 Campaign 应用程序中不同数据对象之间的链接。
 * 定义并描述每个对象中包含的个别字段。
 
-要更好地了解Campaign内置表及其交互，请参阅[此部分](datamodel.md)。
+要更好地了解Campaign内置表及其交互情况，请参阅 [此部分](datamodel.md).
 
 >[!CAUTION]
 >
->某些内置的Campaign架构在云数据库上具有关联的架构。 这些架构由&#x200B;**Xxl**&#x200B;命名空间标识，不得修改或扩展。
+>某些内置的Campaign架构在云数据库上具有关联的架构。 这些架构由 **Xxl** 命名空间和的值不得修改或扩展。
 
 ## 架构的语法 {#syntax-of-schemas}
 
-架构的根元素为&#x200B;**`<srcschema>`**。 它包含&#x200B;**`<element>`**&#x200B;和&#x200B;**`<attribute>`**&#x200B;子元素。
+架构的根元素为 **`<srcschema>`**. 它包含 **`<element>`** 和 **`<attribute>`** 子元素。
 
-第一个&#x200B;**`<element>`**&#x200B;子元素与实体的根重合。
+第一个 **`<element>`** 子元素与实体的根重合。
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -65,13 +65,13 @@ Adobe Campaign采用数据模式：
 
 ![](assets/schema_and_entity.png)
 
-**`<element>`**&#x200B;标记定义实体元素的名称。 **`<attribute>`** 架构的标记定义它们所链接的标 **`<element>`** 记中属性的名称。
+的 **`<element>`** 标记定义实体元素的名称。 **`<attribute>`** 架构的标记定义 **`<element>`** 标记。
 
 ## 模式的标识 {#identification-of-a-schema}
 
 数据架构通过其名称及其命名空间进行标识。
 
-命名空间允许您按关注区域对一组架构进行分组。 例如， **cus**&#x200B;命名空间用于特定于客户的配置(**customers**)。
+命名空间允许您按关注区域对一组架构进行分组。 例如， **木槿** 命名空间用于客户特定的配置(**客户**)。
 
 >[!CAUTION]
 >
@@ -81,7 +81,7 @@ Adobe Campaign采用数据模式：
 
 ## 保留的命名空间 {#reserved-namespaces}
 
-某些命名空间是保留的，用于描述操作Adobe Campaign应用程序所需的系统实体。 在任何大写/小写组合中，不得使用以下命名空间&#x200B;**来标识新架构：**
+某些命名空间是保留的，用于描述操作Adobe Campaign应用程序所需的系统实体。 以下命名空间 **不得使用** 要标识新架构，请使用任何大写/小写组合：
 
 * **xxl**:保留给云数据库架构
 * **xtk**:平台系统数据保留
@@ -91,17 +91,17 @@ Adobe Campaign采用数据模式：
 * **临时**:保留给临时架构
 * **crm**:保留到CRM连接器集成
 
-架构的标识键是使用命名空间和名称以冒号分隔的字符串；例如：**nms:recipient**。
+架构的标识键是使用命名空间和名称以冒号分隔的字符串；例如： **nms:recipient**.
 
 ## 创建或扩展Campaign模式 {#create-or-extend-schemas}
 
 要向Campaign中的一个核心数据模式(例如收件人表(nms:recipient))添加字段或其他元素，您必须扩展该模式。
 
-![](../assets/do-not-localize/glass.png) 有关更多信息，请参阅 [扩展模式](extend-schema.md)。
+![](../assets/do-not-localize/glass.png) 有关更多信息，请参阅 [扩展模式](extend-schema.md).
 
 要添加Adobe Campaign中不存在的全新数据类型（例如合同表），您可以直接创建自定义架构。
 
-![](../assets/do-not-localize/glass.png) 有关更多信息，请参 [阅创建新架构](create-schema.md)。
+![](../assets/do-not-localize/glass.png) 有关更多信息，请参阅 [创建新架构](create-schema.md).
 
 ![](assets/schemaextension_1.png)
 
@@ -131,13 +131,13 @@ type="string" enum="exTransactionTypeEnum"/>
 
 >[!NOTE]
 >
->您还可以使用用户管理的枚举（通常位于&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]**&#x200B;下）来指定给定字段的值。 这些是有效的全局枚举，如果枚举在您正在使用的特定架构之外使用，则最好选择这些枚举。
+>您还可以使用用户管理的枚举(通常在 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** )以指定给定字段的值。 这些是有效的全局枚举，如果枚举在您正在使用的特定架构之外使用，则最好选择这些枚举。
 
 ## 键 {#keys}
 
-每个表都必须至少具有一个键，并且通常使用设置为&#x200B;**true**&#x200B;的&#x200B;**@autouuid**&#x200B;和&#x200B;**autopk**&#x200B;属性，在架构的主元素中自动建立该键。
+每个表都必须至少具有一个键，并且通常情况下，可使用 **@autouuid** 和 **奥托普** 属性设置为 **true**.
 
-也可以使用&#x200B;**internal**&#x200B;属性定义主键。
+还可以使用 **内部** 属性。
 
 示例:
 
@@ -147,23 +147,23 @@ type="string" enum="exTransactionTypeEnum"/>
 </key>
 ```
 
-在此示例中，我们不是让&#x200B;**@autouuid**&#x200B;属性创建名为“id”的默认主键，而是指定我们自己的“houselId”主键。
+在本例中，不要让 **@autouuid** 属性会创建一个名为“id”的默认主键，我们将指定自己的“houselId”主键。
 
 >[!CAUTION]
 >
 >创建新架构或在架构扩展期间，您需要为整个架构保留相同的主键序列值(@pkSequence)。
 
-![](../assets/do-not-localize/glass.png) 在此部分中了解有关键的 [更多信息](database-mapping.md#management-of-keys)。
+![](../assets/do-not-localize/glass.png) 了解有关 [此部分](database-mapping.md#management-of-keys).
 
 ## 属性（字段） {#attributes--fields-}
 
-利用属性，可定义构成数据对象的字段。 可以使用架构版工具栏中的&#x200B;**[!UICONTROL Insert]**&#x200B;按钮将空属性模板拖放到光标所在的XML中。 在[此部分](create-schema.md)中了解详情。
+利用属性，可定义构成数据对象的字段。 您可以使用 **[!UICONTROL Insert]** 按钮，将空属性模板拖放到XML中光标所在的位置。 在 [此部分](create-schema.md).
 
 ![](assets/schemaextension_2.png)
 
-在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=en#content-model)的`<attribute>`元素部分中提供了完整的属性列表。 以下是一些最常用的属性：**@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, ****@required **、**@ref **、**@xml **、**@type **。**
+在 `<attribute>` 元素部分 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=en#content-model). 以下是一些最常用的属性： **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, **@notNull**, **@required**, **@ref**, **@xml**, **@type**.
 
-![](../assets/do-not-localize/book.png) 有关每个属性的更多信息，请参阅 [Campaign Classicv7文档中的属性描述](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic)。
+![](../assets/do-not-localize/book.png) 有关每个属性的更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic).
 
 ### 示例 {#examples}
 
@@ -179,13 +179,13 @@ type="string" enum="exTransactionTypeEnum"/>
 <attribute name="mobile" label="Mobile" template="nms:common:phone" required="true" />
 ```
 
-使用&#x200B;**@advanced**&#x200B;属性隐藏的计算字段示例：
+使用隐藏的计算字段的示例 **@advanced** 属性：
 
 ```
 <attribute name="domain" label="Email domain" desc="Domain of recipient email address" expr="GetEmailDomain([@email])" advanced="true" />
 ```
 
-XML字段的示例也存储在SQL字段中，该字段具有&#x200B;**@dataPolicy**&#x200B;属性。
+XML字段的示例也存储在SQL字段中，该字段具有 **@dataPolicy** 属性。
 
 ```
 <attribute name="secondaryEmail" label="Secondary email address" length="100" xml="true" sql="true" dataPolicy="email" />
@@ -201,7 +201,7 @@ XML字段的示例也存储在SQL字段中，该字段具有&#x200B;**@dataPolic
 
 链接是架构主元素中的最后一些元素。 它们定义实例中所有不同架构如何彼此关联。
 
-链接在包含其链接的表&#x200B;**外键**&#x200B;的架构中声明。
+链接在包含 **外键** 链接到的表格。
 
 基数有三种类型：1-1、1-N和N-N默认使用的是1-N类型。
 
@@ -249,4 +249,4 @@ XML字段的示例也存储在SQL字段中，该字段具有&#x200B;**@dataPolic
 
 >[!NOTE]
 >
->如果修改不影响数据库结构，您只需重新生成架构即可。 要执行此操作，请选择要更新的架构，右键单击并选择&#x200B;**[!UICONTROL Actions > Regenerate selected schemas...]** 。
+>如果修改不影响数据库结构，您只需重新生成架构即可。 为此，请选择要更新的架构，右键单击并选择 **[!UICONTROL Actions > Regenerate selected schemas...]** .

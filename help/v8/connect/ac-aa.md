@@ -16,17 +16,17 @@ ht-degree: 75%
 
 您可以配置Adobe Analytics以集成Campaign和Analytics。
 
-此集成允许Adobe Campaign和Adobe Analytics通过&#x200B;**Web Analytics连接器**&#x200B;附加组件进行交互。 此集成会将Adobe Campaign提供的电子邮件促销活动的指标和属性发送到Adobe Analytics。
+此集成允许Adobe Campaign和Adobe Analytics通过 **Web Analytics连接器** 附加组件。 此集成会将Adobe Campaign提供的电子邮件促销活动的指标和属性发送到Adobe Analytics。
 
-![](../assets/do-not-localize/speech.png)  作为受管Cloud Services用户，请 [联系](../start/campaign-faq.md#support) Adobe以将Campaign与Adobe Experience Cloud服务和解决方案连接起来。必须通过专用包在您的环境中安装Web Analytics连接器加载项。
+![](../assets/do-not-localize/speech.png)  作为托管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support) 将Campaign与Adobe Experience Cloud服务和解决方案连接起来。 必须通过专用包在您的环境中安装Web Analytics连接器加载项。
 
 使用 Adobe Analytics Connector，Adobe Campaign 可以对互联网受众进行评测（网站分析）。Web分析工具使Adobe Campaign能够将指标和促销活动属性转发到Analytics。
 
 每个工具的操作周长如下所示：
 
-* **Adobe** Analytics标记通过Adobe Campaign启动的电子邮件促销活动
+* **Adobe Analytics** 标记通过Adobe Campaign启动的电子邮件促销活动
 
-* **Adobe** 营销活动将指示器和营销活动属性发送到连接器，然后连接器将指示器和营销活动属性转发到Web分析工具
+* **Adobe Campaign** 将指示器和营销活动属性发送到连接器，连接器又将它们转发到Web分析工具
 
 
 >[!CAUTION]
@@ -41,7 +41,7 @@ ht-degree: 75%
 
 ## 创建Analytics报表包 {#report-suite-analytics}
 
-要在[!DNL Adobe Analytics]中创建&#x200B;**[!UICONTROL Report suite]**，请执行以下步骤：
+创建 **[!UICONTROL Report suite]** in [!DNL Adobe Analytics]，请执行以下步骤：
 
 1. 在 [!DNL Adobe Analytics] 中，选择 **[!UICONTROL Admin tab]**，然后单击 **[!UICONTROL All admin]**。
 
@@ -112,7 +112,7 @@ ht-degree: 75%
 
 1. 完成后单击 **[!UICONTROL Save]**。
 
-配置报表包后，您需要在Adobe Campaign中配置&#x200B;**[!UICONTROL External accounts]**。
+配置报表包后，您将需要配置 **[!UICONTROL External accounts]** 在Adobe Campaign。
 
 ## 配置Campaign外部帐户 {#external-account-ac}
 
@@ -191,11 +191,11 @@ ht-degree: 75%
 
 Adobe Campaign和Adobe Analytics之间的数据交换由作为后台任务运行的技术工作流处理。
 
-此工作流可从Campaign Explorer树中的&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** > **[!UICONTROL Web analytics process]**&#x200B;文件夹下找到。
+此工作流可在Campaign Explorer树中的 **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** > **[!UICONTROL Web analytics process]** 文件夹。
 
 ![](assets/webanalytics_workflows.png)
 
-通过&#x200B;**[!UICONTROL Sending of indicators and campaign attributes]**&#x200B;工作流，您可以使用Adobe Analytics Connector通过Adobe Campaign将电子邮件促销活动指示器发送到Adobe Experience Cloud。 此工作流在每天凌晨 4 点触发，可能需要 24 小时才能将数据发送到 Analytics。
+的 **[!UICONTROL Sending of indicators and campaign attributes]** 工作流允许您使用Adobe Analytics Connector通过Adobe Campaign将电子邮件促销活动指示器发送到Adobe Experience Cloud。 此工作流在每天凌晨 4 点触发，可能需要 24 小时才能将数据发送到 Analytics。
 
 请注意，切勿重新启动此工作流，否则它将重新发送所有先前数据，可能会影响 Analytics 结果的准确性。
 

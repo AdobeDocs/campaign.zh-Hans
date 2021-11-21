@@ -1,18 +1,19 @@
 ---
 title: 筛选营销活动模式
 description: 了解如何过滤Campaign模式
-source-git-commit: e0faeda87d5b84309524a72d9f021c381ac4619e
+exl-id: e8ad021c-ce2e-4a74-b9bf-a989d8879fd1
+source-git-commit: 00a88cf9217faf32070a3cd34a2c1ae5243d9a6e
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%
 
 ---
 
-# 筛选架构{#filter-schemas}
+# 筛选模式{#filter-schemas}
 
 ## 系统过滤器 {#system-filters}
 
-您可以根据特定用户的权限筛选对架构的访问权限。 系统筛选器允许您使用&#x200B;**readAccess**&#x200B;和&#x200B;**writeAccess**&#x200B;参数来管理架构中详细实体的读和写权限。
+您可以根据特定用户的权限筛选对架构的访问权限。 系统过滤器允许您使用 **readAccess** 和 **writeAccess** 参数。
 
 >[!NOTE]
 >
@@ -20,11 +21,11 @@ ht-degree: 0%
 
 * **readAccess**:提供对架构数据的只读访问权限。
 
-   **警告**  — 必须使用相同的限制设置所有链接的表。此配置可能会影响性能。
+   **警告**  — 必须使用相同的限制设置所有链接的表。 此配置可能会影响性能。
 
 * **writeAccess**:提供对架构数据的写入访问权限。
 
-这些筛选器是在架构的主&#x200B;**元素**&#x200B;级别输入的，如以下示例所示，可以通过构建来限制访问。
+这些过滤器在主 **元素** 架构的级别和（如以下示例所示）可以采用以限制访问的方式来形成。
 
 * 限制写入权限
 
@@ -38,7 +39,7 @@ ht-degree: 0%
 
 * 限制读和写权限：
 
-   在此，过滤器用于禁止所有运算符对架构的读取和写入权限。 仅&#x200B;**internal**&#x200B;帐户，由表达式“$(loginId)!=0”，具有这些权限。
+   在此，过滤器用于禁止所有运算符对架构的读取和写入权限。 仅 **内部** 帐户，由表达式“$(loginId)!=0”，具有这些权限。
 
    ```
    <sysFilter name="readAccess"> 
@@ -50,7 +51,7 @@ ht-degree: 0%
    </sysFilter>
    ```
 
-   用于定义条件的可能&#x200B;**expr**&#x200B;属性值为TRUE或FALSE。
+   可能 **expr** 用于定义条件的属性值为TRUE或FALSE。
 
 >[!NOTE]
 >
@@ -93,7 +94,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->**xtk:sessionInfo**&#x200B;架构的读取和写入权限只能由Adobe Campaign实例的内部帐户访问。
+>的读取和写入权限 **xtk:sessionInfo** 架构只能由Adobe Campaign实例的内部帐户访问。
 
 ## 修改内置架构的系统筛选器
 
@@ -102,5 +103,5 @@ ht-degree: 0%
 但是，在特定环境中，您可能需要修改内置架构的系统筛选器。 要执行此操作，请执行以下步骤：
 
 1. 为内置模式创建扩展或打开现有扩展。
-1. 在主元素中添加子元素&#x200B;**`<sysfilter name="<filter name>" _operation="delete"/>`**&#x200B;以忽略内置架构中同一元素下的过滤器。
-1. 您可以添加新过滤器，如[System filters](#system-filters)部分中所述。
+1. 添加子元素 **`<sysfilter name="<filter name>" _operation="delete"/>`** 在主元素中，忽略内置架构中相同下的过滤器。
+1. 您可以添加新过滤器，详情请参阅 [系统过滤器](#system-filters) 中。

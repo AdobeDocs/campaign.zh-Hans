@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # 事务性消息设置
 
-![](../assets/do-not-localize/speech.png)  作为受管Cloud Services用户，请 [联系](../start/campaign-faq.md#support) Adobe，以在您的环境中安装和配置Campaign事务型消息传递。
+![](../assets/do-not-localize/speech.png)  作为托管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support) ，以在您的环境中安装和配置Campaign事务型消息传递。
 
-![](../assets/do-not-localize/glass.png) 有关事务性消息传递功能的详 [细信息，请参阅此章节](../send/transactional.md)。
+![](../assets/do-not-localize/glass.png) 事务性消息传递功能在 [此部分](../send/transactional.md).
 
-![](../assets/do-not-localize/glass.png) 了解本页中的事务型消 [息传递架构](../dev/architecture.md)。
+![](../assets/do-not-localize/glass.png) 了解中的事务型消息传递架构 [本页](../dev/architecture.md).
 
 ## 定义权限
 
@@ -26,30 +26,30 @@ ht-degree: 0%
 
 ## 模式扩展
 
-对&#x200B;**消息中心技术工作流**&#x200B;在控制实例或执行实例上使用的架构所做的所有架构扩展，都需要复制到Adobe Campaign事务性消息传递模块使用的其他实例上。
+对使用的架构进行的所有架构扩展 **消息中心技术工作流** 在上，需要在Adobe Campaign事务型消息传递模块使用的其他实例上复制控制实例或执行实例。
 
-![](../assets/do-not-localize/book.png) 在Campaign Classicv7文档中了解有关消息中心技术工 [作流的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/additional-configurations.html#technical-workflows)
+![](../assets/do-not-localize/book.png) 了解有关消息中心技术工作流的更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/additional-configurations.html#technical-workflows)
 
 ## 发送事务推送通知
 
 与移动设备应用程序渠道模块结合使用时，事务型消息传递允许您通过移动设备上的通知推送事务型消息。
 
-![](../assets/do-not-localize/book.png) Campaign Classicv7文档中详细介绍了 [移动应用程序渠道](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages)。
+![](../assets/do-not-localize/book.png) 有关移动设备应用程序渠道的详细信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages).
 
 要发送事务推送通知，您需要执行以下配置：
 
-1. 将&#x200B;**移动设备应用程序渠道**&#x200B;包安装到控件和执行实例上。
+1. 安装 **移动设备应用程序渠道** 包到控件和执行实例上。
 
    >[!CAUTION]
    >
    >在安装新的Campaign内置包之前，请检查您的许可协议。
 
-1. 在执行实例上复制&#x200B;**移动应用程序**&#x200B;服务和关联的移动应用程序。
+1. 复制 **移动应用程序** 服务和执行实例上关联的移动应用程序。
 
 为了使Campaign发送事务推送通知，事件必须包含以下元素：
 
-* 移动设备ID:**RegistrationId**（对于Android）和&#x200B;**deviceToken**(对于iOS)。 此ID表示通知将发送到的“地址”。
-* 指向移动应用程序或集成密钥(**uuid**)的链接，用于检索特定于应用程序的连接信息。
+* 移动设备ID: **registrationId** 适用于Android和 **deviceToken** iOS。 此ID表示通知将发送到的“地址”。
+* 指向移动应用程序或集成密钥的链接(**uid**)，用于检索特定于应用程序的连接信息。
 * 将向其发送通知的渠道(**wishedChannel**):iOS为41，安卓为42。
 * 用于个性化的其他数据。
 

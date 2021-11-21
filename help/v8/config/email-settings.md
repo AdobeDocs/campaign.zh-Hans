@@ -27,13 +27,13 @@ Adobe Campaign本身不管理已存档的文件。 它确实允许您将您选�
 
 请注意：
 
-* 您只能使用&#x200B;**一个**&#x200B;密送电子邮件地址。
+* 您只能使用 **one** 密送电子邮件地址。
 
 * 只有成功发送的电子邮件才会被考虑在内，而退回则不会。
 
-![](../assets/do-not-localize/speech.png)  作为受管Cloud Services用户，请 [联系](../start/campaign-faq.md#support) Adobe以在Campaign中激活电子邮件密件抄送。您选择的密件抄送电子邮件地址必须提供给Adobe团队，由团队为您进行配置。
+![](../assets/do-not-localize/speech.png)  作为托管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support) 以在Campaign中激活电子邮件密送。 您选择的密件抄送电子邮件地址必须提供给Adobe团队，由团队为您进行配置。
 
-配置电子邮件密送后，请确保在投放模板或通过&#x200B;**电子邮件密送**&#x200B;选项在投放中启用该功能。
+配置电子邮件密件抄送后，请确保在投放模板或通过 **电子邮件密送** 选项。
 
 ![](assets/email-bcc.png)
 

@@ -94,7 +94,7 @@ ht-degree: 2%
 
 ![](../assets/do-not-localize/book.png) 详细了解 **工作流属性** in [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/workflow-properties.html?lang=en){target=&quot;_blank&quot;}
 
-从 **[!UICONTROL Execution]** 的 **[!UICONTROL Properties]**，您可以选择将工作流链接到不同的仓库并优化工作负载管理。 有关 **仓库**，请参阅 [Snowflake文档](https://docs.snowflake.com/en/user-guide/warehouses-overview.html).
+从 **[!UICONTROL Execution]** 的 **[!UICONTROL Properties]**，您可以选择将工作流链接到不同的仓库并优化工作量管理。 有关 **仓库**，请参阅 [Snowflake文档](https://docs.snowflake.com/en/user-guide/warehouses-overview.html).
 
 ![](assets/warehouse.png)
 

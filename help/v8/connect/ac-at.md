@@ -21,7 +21,7 @@ ht-degree: 1%
 >[!NOTE]
 >集成仅支持静态图像。 其他类型的内容无法进行个性化。
 
-![](../assets/do-not-localize/speech.png)  作为受管Cloud Services用户，请 [联系](../start/campaign-faq.md#support) Adobe以通过Campaign实施Experience Cloud触发器。
+![](../assets/do-not-localize/speech.png)  作为托管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support) 使用Campaign实施Experience Cloud触发器。
 
 以下类型的数据可供Adobe Target使用：
 
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 ## 插入动态内容
 
-在以下示例中，您将学习如何将&#x200B;**动态选件**&#x200B;从Adobe Target集成到Adobe Campaign电子邮件中。
+在以下示例中，您将学习如何集成 **动态优惠** 从Adobe Target发送到Adobe Campaign电子邮件。
 
 我们希望创建一条消息，其中的图像将根据收件人所在的国家/地区进行动态更改。 数据随每个mbox请求一起发送，具体取决于访客的IP地址。
 
@@ -59,22 +59,22 @@ Adobe Campaign和Adobe Target需要采取以下步骤：
 
 在Adobe Campaign中，有两种方法可将Target中的动态图像插入电子邮件：
 
-* 如果使用数字内容编辑器，请选择现有图像，然后从工具栏中选择&#x200B;**[!UICONTROL Insert]** > **[!UICONTROL Dynamic image served by Adobe Target]**。
+* 如果您使用数字内容编辑器，请选择现有图像，然后选择 **[!UICONTROL Insert]** > **[!UICONTROL Dynamic image served by Adobe Target]** 中。
 
    ![](assets/target_5.png)
 
-* 如果您使用标准编辑器，请将光标放在要插入图像的位置，然后从个性化下拉菜单中选择&#x200B;**[!UICONTROL Include]** > **[!UICONTROL Dynamic image served by Adobe Target...]**。
+* 如果您使用标准编辑器，请将光标放在要插入图像的位置，然后选择 **[!UICONTROL Include]** > **[!UICONTROL Dynamic image served by Adobe Target...]** 从“个性化”下拉菜单中。
 
    ![](assets/target_12.png)
 
 然后，您可以定义图像参数：
 
-* **[!UICONTROL Default image]**&#x200B;的URL是在未满足任何条件时将显示的图像。 您还可以从资产库中选择图像。
-* **[!UICONTROL Target location]**&#x200B;是动态选件位置的名称。 您必须在Adobe Target活动中选择此位置。
-* 使用&#x200B;**[!UICONTROL Landing Page]**&#x200B;可将默认图像重定向到默认登陆页面。 仅当默认图像显示在最终电子邮件中时，此URL才适用。 它是可选的。
-* **[!UICONTROL Additional decision parameters]**&#x200B;定义在Adobe Target区段中定义的字段与Adobe Campaign字段之间的映射。 使用的Adobe Campaign字段必须已在rawbox中指定。 在我们的示例中，我们添加了Country字段。
+* 的 **[!UICONTROL Default image]**&#x200B;的URL是在未满足任何条件时将显示的图像。 您还可以从资产库中选择图像。
+* 的 **[!UICONTROL Target location]** 是您的动态选件位置的名称。 您必须在Adobe Target活动中选择此位置。
+* 的 **[!UICONTROL Landing Page]** 允许您将默认图像重定向到默认登陆页面。 仅当默认图像显示在最终电子邮件中时，此URL才适用。 它是可选的。
+* 的 **[!UICONTROL Additional decision parameters]**  定义在Adobe Target区段中定义的字段与Adobe Campaign字段之间的映射。 使用的Adobe Campaign字段必须已在rawbox中指定。 在我们的示例中，我们添加了Country字段。
 
-如果您在Adobe Target的设置中使用企业权限，请在此字段中添加相应的资产。 在[此页面](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=en#administer)中了解有关Target企业权限的更多信息。
+如果您在Adobe Target的设置中使用企业权限，请在此字段中添加相应的资产。 在 [本页](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=en#administer).
 
 ![](assets/target_13.png)
 
@@ -84,7 +84,7 @@ Adobe Campaign和Adobe Target需要采取以下步骤：
 
 在本例中，我们需要两个重定向选件，第三个（默认选件）是在Adobe Campaign中定义。
 
-1. 要在Target Standard中新建重定向选件，请在&#x200B;**[!UICONTROL Content]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Code offers]**。
+1. 要在Target Standard中新建重定向选件，请从 **[!UICONTROL Content]** ，单击 **[!UICONTROL Code offers]**.
 
 1. 单击 **[!UICONTROL Create]**，然后单击 **[!UICONTROL Redirect Offer]**。
 
@@ -100,7 +100,7 @@ Adobe Campaign和Adobe Target需要采取以下步骤：
 
 在Adobe Target中，您需要创建两个受众，访问您选件的人员将被分类为要交付的不同内容。 对于每个受众，添加一个规则以定义谁将能够查看选件。
 
-1. 要在Target中创建新受众，请在&#x200B;**[!UICONTROL Audiences]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Create Audience]**。
+1. 要在Target中创建新受众，请从 **[!UICONTROL Audiences]** ，单击 **[!UICONTROL Create Audience]**.
 
    ![](assets/audiences_1.png)
 
@@ -108,7 +108,7 @@ Adobe Campaign和Adobe Target需要采取以下步骤：
 
    ![](assets/audiences_2.png)
 
-1. 单击&#x200B;**[!UICONTROL Add a rule]**&#x200B;并选择类别。 规则使用特定条件来定位访客。 您可以通过添加条件或在其他类别中创建新规则来优化规则。
+1. 单击 **[!UICONTROL Add a rule]** ，然后选择类别。 规则使用特定条件来定位访客。 您可以通过添加条件或在其他类别中创建新规则来优化规则。
 
 1. 对其余受众执行相同的操作步骤。
 
@@ -118,13 +118,13 @@ Adobe Campaign和Adobe Target需要采取以下步骤：
 
 首先，您需要定义受众：
 
-1. 要创建体验定位活动，请在&#x200B;**[!UICONTROL Activities]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Create Activity]**，然后单击&#x200B;**[!UICONTROL Experience Targeting]**。
+1. 要创建体验定位活动，请从 **[!UICONTROL Activities]** ，单击 **[!UICONTROL Create Activity]** then **[!UICONTROL Experience Targeting]**.
 
    ![](assets/target_10.png)
 
-1. 选择&#x200B;**[!UICONTROL Form]**&#x200B;作为&#x200B;**[!UICONTROL Experience Composer]**。
+1. 选择 **[!UICONTROL Form]** as **[!UICONTROL Experience Composer]**.
 
-1. 单击&#x200B;**[!UICONTROL Change audience]**&#x200B;按钮以选择受众。
+1. 通过单击 **[!UICONTROL Change audience]** 按钮。
 
    ![](assets/target_10_2.png)
 
@@ -132,7 +132,7 @@ Adobe Campaign和Adobe Target需要采取以下步骤：
 
    ![](assets/target_10_3.png)
 
-1. 通过单击&#x200B;**[!UICONTROL Add Experience Targeting]**&#x200B;创建其他体验。
+1. 通过单击 **[!UICONTROL Add Experience Targeting]**.
 
 然后，为每个受众添加一个内容：
 
@@ -140,7 +140,7 @@ Adobe Campaign和Adobe Target需要采取以下步骤：
 
    ![](assets/target_15.png)
 
-1. 单击下拉按钮，然后选择&#x200B;**[!UICONTROL Change Redirect Offer]**。
+1. 单击下拉按钮，然后选择 **[!UICONTROL Change Redirect Offer]**.
 
    ![](assets/target_content.png)
 
@@ -150,13 +150,13 @@ Adobe Campaign和Adobe Target需要采取以下步骤：
 
 1. 对第二个体验执行相同的步骤。
 
-**[!UICONTROL Target]**&#x200B;窗口将汇总您的活动。 如有必要，您可以添加其他体验。
+的 **[!UICONTROL Target]** 窗口将汇总您的活动。 如有必要，您可以添加其他体验。
 
 ![](assets/target_experience.png)
 
-利用&#x200B;**[!UICONTROL Goal & Settings]**&#x200B;窗口，可通过设置优先级、目标或持续时间来个性化活动。
+的 **[!UICONTROL Goal & Settings]** 窗口允许您通过设置优先级、目标或持续时间来个性化您的活动。
 
-通过&#x200B;**[!UICONTROL Reporting Settings]**&#x200B;部分，您可以选择一项操作并编辑将决定何时实现目标的参数。
+的 **[!UICONTROL Reporting Settings]** 部分，您可以选择操作并编辑将决定何时实现目标的参数。
 
 ![](assets/target_experience_2.png)
 

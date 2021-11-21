@@ -19,4 +19,4 @@ LINE是免费即时消息、语音和视频呼叫的应用程序，可在所有�
 
 ![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html?lang=zh-Hans){target=&quot;_blank&quot;}以了解详情。
 
-![](../assets/do-not-localize/book.png) 请参阅此 [端到端示](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html#example--create-and-send-a-personalized-line-message) 例Campaign Classicv7文档，以创建并发送您的第一个LINE投放。
+![](../assets/do-not-localize/book.png) 请参阅 [端到端示例](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html#example--create-and-send-a-personalized-line-message) Campaign Classicv7文档，以创建并发送您的第一个LINE投放。

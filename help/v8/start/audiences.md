@@ -58,7 +58,7 @@ Adobe Campaign是用于收集和处理大量数据（包括个人信息和敏感
 
 ## 在工作流中创建受众
 
-定位可以通过工作流中以图形顺序排列的查询组合来创建。 您可以创建受众，以便根据您的要求进行定位。 要显示工作流编辑器，请单击 **[!UICONTROL Targeting and workflows]** 选项卡。
+定位可以通过工作流中图形序列中的查询组合来创建。 您可以创建受众，以便根据您的要求进行定位。 要显示工作流编辑器，请单击 **[!UICONTROL Targeting and workflows]** 选项卡。
 
 ![](../assets/do-not-localize/book.png) 了解如何在的营销活动工作流中构建受众 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-target.html?lang=en#building-the-main-target-in-a-workflow){target=&quot;_blank&quot;}。
 

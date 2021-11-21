@@ -29,7 +29,7 @@ ht-degree: 11%
 
 1. **创建投放**
 
-   要创建新投放，请浏览&#x200B;**营销活动**&#x200B;选项卡，单击&#x200B;**投放**，然后单击现有投放列表上方的&#x200B;**创建**&#x200B;按钮。
+   要创建新投放，请浏览 **促销活动** ，单击 **投放** ，然后单击 **创建** 按钮。
 
    ![](assets/delivery_step_1.png)
 
@@ -41,7 +41,7 @@ ht-degree: 11%
 
 1. **导入内容**
 
-   单击&#x200B;**源**&#x200B;选项卡以粘贴您的HTML内容。
+   单击 **来源** 选项卡来粘贴HTML内容。
 
    ![](assets/paste-content.png)
 
@@ -51,7 +51,7 @@ ht-degree: 11%
 
    * 添加收件人的名字和姓氏
 
-      要在消息内容中插入目标用户档案的名字和姓氏，请将光标放在要插入它们的位置，单击工具栏中的最后一个图标，然后单击&#x200B;**[!UICONTROL Include]**&#x200B;并选择&#x200B;**[!UICONTROL Greetings]**。
+      要在消息内容中插入目标用户档案的名字和姓氏，请将光标放在要插入它们的位置，然后单击工具栏中的最后一个图标，然后单击 **[!UICONTROL Include]** 选择 **[!UICONTROL Greetings]**.
 
       ![](assets/include-greetings.png)
 
@@ -61,9 +61,9 @@ ht-degree: 11%
 
    * 插入跟踪链接
 
-      要通过图像或文本将投放收件人定向到外部地址，请选择该地址，然后单击工具栏中的&#x200B;**[!UICONTROL Add a link]**&#x200B;图标。
+      要通过图像或文本将投放收件人接收到外部地址，请选择该地址并单击 **[!UICONTROL Add a link]** 图标。
 
-      在&#x200B;**URL**&#x200B;字段中输入链接的URL，使用以下格式&#x200B;**https://www.myURL.com**，然后进行确认。
+      在 **URL** 字段 **https://www.myURL.com**，然后确认。
 
       ![](assets/add-a-link.png)
 
@@ -71,8 +71,8 @@ ht-degree: 11%
 
       要允许收件人在Web浏览器中查看您的投放内容，请添加指向消息镜像页面的链接。
 
-      将光标放在要插入此链接的位置，单击工具栏中的最后一个图标，然后单击&#x200B;**[!UICONTROL Include]**&#x200B;并选择&#x200B;**[!UICONTROL link to mirror page]**。
-   内容准备就绪后，单击&#x200B;**Save**:现在，它将显示在&#x200B;**[!UICONTROL Campaigns > Deliveries]**&#x200B;选项卡的投放列表中。 您的第一封电子邮件投放已准备就绪。 您现在需要定义受众、验证投放并发送它。
+      将光标放在要插入此链接的位置，单击工具栏中的最后一个图标，然后单击 **[!UICONTROL Include]** 选择 **[!UICONTROL link to mirror page]**.
+   内容准备就绪后，单击 **保存**:现在，它将显示在您的投放列表、 **[!UICONTROL Campaigns > Deliveries]** 选项卡。 您的第一封电子邮件投放已准备就绪。 您现在需要定义受众、验证投放并发送它。
 
 
 请参阅Campaign Classicv7文档的以下部分，了解更多信息：
@@ -87,7 +87,7 @@ ht-degree: 11%
    ![](../assets/do-not-localize/book.png) [了解如何定义目标群体](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html)
 * 验证投放并发送校样
    ![](../assets/do-not-localize/book.png) [了解验证投放的关键步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html)
-* 添加[种子地址](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html)
+* 添加 [种子地址](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html)
 
 ## 测试和验证电子邮件
 

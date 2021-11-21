@@ -16,7 +16,7 @@ ht-degree: 2%
 
 事务型消息传递（消息中心）是一个Campaign模块，用于管理触发器消息。 这些消息是从信息系统触发的事件生成的，可以是：例如，发票、订单确认、发运确认、密码更改、产品不可用通知、帐户对帐单或网站帐户创建。
 
-![](../assets/do-not-localize/speech.png)  作为受管Cloud Services用户，请 [联系](../start/campaign-faq.md#support) Adobe，以在您的环境中安装和配置Campaign事务型消息传递。
+![](../assets/do-not-localize/speech.png)  作为托管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support) ，以在您的环境中安装和配置Campaign事务型消息传递。
 
 事务型消息用于发送：
 
@@ -24,9 +24,9 @@ ht-degree: 2%
 * 对客户行动的个人实时响应
 * 非促销内容
 
-![](../assets/do-not-localize/glass.png) 有关事务性消息传递设置的详 [细信息，请参阅此章节](../config/transactional-msg-settings.md)。
+![](../assets/do-not-localize/glass.png) 有关事务性消息传递设置的详细信息，请参阅 [此部分](../config/transactional-msg-settings.md).
 
-![](../assets/do-not-localize/glass.png) 了解本页中的事务型消 [息传递架构](../dev/architecture.md)。
+![](../assets/do-not-localize/glass.png) 了解中的事务型消息传递架构 [本页](../dev/architecture.md).
 
 >[!CAUTION]
 >
@@ -40,8 +40,8 @@ ht-degree: 2%
 
 要创建消息模板，请执行以下步骤：
 
-1. 转到Adobe Campaign树中的&#x200B;**[!UICONTROL Message Center >Transactional message templates]**&#x200B;文件夹。
-1. 在事务型消息模板列表中，右键单击并选择下拉菜单中的&#x200B;**[!UICONTROL New]** ，或单击事务型消息模板列表上方的&#x200B;**[!UICONTROL New]**&#x200B;按钮。
+1. 转到 **[!UICONTROL Message Center >Transactional message templates]** 文件夹。
+1. 在事务型消息模板列表中，右键单击并选择 **[!UICONTROL New]** 中，或单击 **[!UICONTROL New]** 按钮。
 
    ![](assets/messagecenter_create_model_001.png)
 
@@ -60,7 +60,7 @@ ht-degree: 2%
    >
    >事件类型绝不应链接到多个模板。
 
-1. 输入性质和描述，然后单击&#x200B;**[!UICONTROL Continue]**&#x200B;以创建消息正文。 请参阅[创建消息内容](#create-message-content)。
+1. 输入性质和描述，然后单击 **[!UICONTROL Continue]** 创建消息正文。 请参阅 [创建消息内容](#create-message-content).
 
 ### 创建内容{#create-message-content}
 
@@ -69,7 +69,7 @@ ht-degree: 2%
 >[!CAUTION]
 >
 >消息中包含的图像必须可以公开访问。 Adobe Campaign不为事务型消息提供任何图像上传机制。\
->与JSSP或webApp不同，`<%=`没有任何默认转义。
+>与JSSP或webApp不同， `<%=` 没有任何默认转义。
 >
 >您必须正确转义来自事件的每个数据。 此转义取决于此字段的使用方式。 例如，在URL中，请使用encodeURIComponent。 要在HTML中显示，可以使用escXMLString。
 
@@ -84,11 +84,11 @@ ht-degree: 2%
 
 1. 在消息模板中，单击与电子邮件格式(HTML或文本)匹配的选项卡。
 1. 输入消息的正文。
-1. 在文本正文中，使用&#x200B;**[!UICONTROL Real time events>Event XML]**&#x200B;菜单插入标记。
+1. 在文本的正文中，使用 **[!UICONTROL Real time events>Event XML]** 菜单。
 
    ![](assets/messagecenter_create_custo_1.png)
 
-1. 使用以下语法填写标记：**元素名称**。@**属性名称**，如下所示。
+1. 使用以下语法填写标记： **元素名称**.@**属性名称** 如下所示。
 
    ![](assets/messagecenter_create_custo_2.png)
 
@@ -96,7 +96,7 @@ ht-degree: 2%
 
 种子地址允许您在发送消息之前显示消息预览、发送校样并测试消息个性化。 种子地址已链接到投放，无法用于其他投放。
 
-1. 在事务型消息模板中，单击&#x200B;**[!UICONTROL Seed addresses]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
+1. 在事务型消息模板中，单击 **[!UICONTROL Seed addresses]** ，然后单击 **[!UICONTROL Add]** 按钮。
 
    ![](assets/messagecenter_create_seed_1.png)
 
@@ -110,7 +110,7 @@ ht-degree: 2%
 
    ![](assets/messagecenter_create_custo_3.png)
 
-1. 单击&#x200B;**[!UICONTROL Ok]**&#x200B;以确认创建种子地址。
+1. 单击 **[!UICONTROL Ok]** 确认创建种子地址。
 
 1. 重复该过程以根据需要创建任意数量的地址。
 
@@ -120,7 +120,7 @@ ht-degree: 2%
 
 ### 添加个性化数据{#personalization-data}
 
-您可以在消息模板中添加数据以测试事务型消息的个性化。 这将允许您生成预览或发送校样。 如果安装&#x200B;**可投放性**&#x200B;模块，则此数据可显示各种桌面、Web或移动设备客户端的消息渲染。
+您可以在消息模板中添加数据以测试事务型消息的个性化。 这将允许您生成预览或发送校样。 如果安装 **投放能力** 模块中，此数据允许您显示各种桌面、web或移动客户端的消息渲染。
 
 此数据旨在在消息最终投放之前对其进行测试。 这些消息与消息中心要处理的实际数据不一致。 但是，XML结构必须与执行实例中存储的事件的结构相同，如下所示。
 
@@ -128,7 +128,7 @@ ht-degree: 2%
 
 此信息允许您使用个性化标记对消息内容进行个性化。
 
-1. 在消息模板中，单击&#x200B;**[!UICONTROL Seed addresses]**&#x200B;选项卡。
+1. 在消息模板中，单击 **[!UICONTROL Seed addresses]** 选项卡。
 1. 在事件内容中，以XML格式输入测试信息。
 
    ![](assets/messagecenter_create_custo_3.png)
@@ -137,7 +137,7 @@ ht-degree: 2%
 
 创建一个或多个种子地址和消息正文后，即可预览消息并检查其个性化。
 
-1. 在消息模板中，单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡，然后在下拉列表中选择&#x200B;**[!UICONTROL A seed address]**。
+1. 在消息模板中，单击 **[!UICONTROL Preview]** 选项卡，然后选择 **[!UICONTROL A seed address]** 中。
 
    ![](assets/messagecenter_preview_1.png)
 
@@ -151,16 +151,16 @@ ht-degree: 2%
 
 发送校样的过程与任何投放的过程相同。
 
-![](../assets/do-not-localize/book.png) 了解有关Campaign Classicv7 [文档中校样的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=zh-Hans){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) 在中了解有关校样的更多信息 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=zh-Hans){target=&quot;_blank&quot;}
 
 但是，要发送事务型消息的校样，您需要执行以下操作：
 
-* 使用个性化测试数据创建一个或多个[种子地址](#add-seeds)
+* 创建一个或多个 [种子地址](#add-seeds) 使用个性化测试数据
 * 创建消息内容
 
 要发送校样，请执行以下操作：
 
-1. 单击投放窗口中的&#x200B;**[!UICONTROL Send a proof]**&#x200B;按钮。
+1. 单击 **[!UICONTROL Send a proof]** 按钮。
 1. 分析投放。
 1. 更正任何错误并确认投放。
 
@@ -170,7 +170,7 @@ ht-degree: 2%
 
    ![](assets/messagecenter_send_proof_002.png)
 
-可通过&#x200B;**[!UICONTROL Audit]**&#x200B;选项卡访问每个模板中的校样。
+可通过 **[!UICONTROL Audit]** 选项卡。
 
 ![](assets/messagecenter_send_proof_003.png)
 
@@ -188,13 +188,13 @@ ht-degree: 2%
 >
 >每当对模板进行任何更改时，请确保再次发布该模板，以便这些更改在事务型消息投放期间生效。
 
-1. 在控制实例中，转到树的&#x200B;**[!UICONTROL Message Center > Transactional message templates]**&#x200B;文件夹。
+1. 在控制实例上，转到 **[!UICONTROL Message Center > Transactional message templates]** 文件夹。
 1. 选择要在执行实例上发布的模板。
 1. 单击 **[!UICONTROL Publish]**。
 
    ![](assets/messagecenter_publish_template.png)
 
-发布完成后，将在&#x200B;**[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]**&#x200B;文件夹的生产实例树中创建要应用于批处理事件和实时类型事件的消息模板。
+发布完成后，将在的生产实例树中创建要应用于批量事件和实时类型事件的消息模板，该树位于 **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]** 文件夹。
 
 ![](assets/messagecenter_deployed_model.png)
 
@@ -215,25 +215,25 @@ ht-degree: 2%
 
    例如，您发布了一个仅用于圣诞促销活动的消息模板。 在圣诞节结束后，您可能想要取消发布它，并在明年再次发布它。
 
-* 此外，您还无法删除状态为&#x200B;**[!UICONTROL Published]**&#x200B;的事务型消息模板。 必须先取消发布它。
+* 此外，您还无法删除具有 **[!UICONTROL Published]** 状态。 必须先取消发布它。
 
 要取消发布事务型消息模板，请执行以下步骤。
 
-1. 在控制实例上，浏览到&#x200B;**[!UICONTROL Message Center > Transactional message templates]**&#x200B;文件夹。
+1. 在控制实例上，浏览到 **[!UICONTROL Message Center > Transactional message templates]** 文件夹。
 1. 选择要取消发布的模板。
 1. 单击 **[!UICONTROL Unpublish]**。
 1. 单击 **[!UICONTROL Start]**。
 
 ![](assets/message-center-unpublish.png)
 
-事务型消息模板状态从&#x200B;**[!UICONTROL Published]**&#x200B;更改回&#x200B;**[!UICONTROL Being edited]**。
+事务型消息模板状态从 **[!UICONTROL Published]** to **[!UICONTROL Being edited]**.
 
 取消发布完成后：
 
 * 这两个消息模板（应用于批处理和实时类型事件）都将从每个执行实例中删除。
 
-   它们不再显示在&#x200B;**[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]**&#x200B;文件夹中。
+   它们不再显示在 **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]** 文件夹。
 
 * 取消发布模板后，您可以从控制实例中将其删除。
 
-   要执行此操作，请从列表中选择它，然后单击屏幕右上方的&#x200B;**[!UICONTROL Delete]**&#x200B;按钮。
+   要执行此操作，请从列表中选择它，然后单击 **[!UICONTROL Delete]** 按钮。

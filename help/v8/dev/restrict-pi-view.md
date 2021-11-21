@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ## 实施 {#implementation}
 
-可应用于任何元素或属性的特定属性已添加到架构中，它补充了现有属性&#x200B;**[!UICONTROL visibleIf]** 。 此属性为：**[!UICONTROL accessibleIf]** 。 如果包含与当前用户上下文相关的XTK表达式，则它可以利用&#x200B;**[!UICONTROL HasNamedRight]**&#x200B;或&#x200B;**[!UICONTROL $(login)]**&#x200B;等。
+可应用于任何元素或属性的特定属性已添加到架构中，它补充了现有属性 **[!UICONTROL visibleIf]** . 此属性为： **[!UICONTROL accessibleIf]** . 当包含与当前用户上下文相关的XTK表达式时，它可以利用 **[!UICONTROL HasNamedRight]** 或 **[!UICONTROL $(login)]** ，例如。
 
 您可以找到收件人模式扩展的示例，该示例显示了下面的用法：
 
@@ -36,8 +36,8 @@ ht-degree: 2%
 
 主要属性包括：
 
-* **[!UICONTROL visibleIf]** :会隐藏元数据中的字段，因此无法在架构视图、列选择或表达式生成器中访问这些字段。但这不会隐藏任何数据，如果在表达式中手动输入字段名称，则会显示值。
-* **[!UICONTROL accessibleIf]** :隐藏生成查询中的数据（用空值替换它）。如果visibleIf为空，则获得与&#x200B;**[!UICONTROL accessibleIf]**&#x200B;相同的表达式。
+* **[!UICONTROL visibleIf]** :会隐藏元数据中的字段，因此无法在架构视图、列选择或表达式生成器中访问这些字段。 但这不会隐藏任何数据，如果在表达式中手动输入字段名称，则会显示值。
+* **[!UICONTROL accessibleIf]** :隐藏生成查询中的数据（用空值替换它）。 如果visibleIf为空，则获得与 **[!UICONTROL accessibleIf]** .
 
 以下是在Campaign中使用此属性的后果：
 
@@ -52,7 +52,7 @@ ht-degree: 2%
 
 ## 推荐 {#recommendations}
 
-在每个投放中，电子邮件地址都会复制到&#x200B;**[!UICONTROL broadLog]**&#x200B;和&#x200B;**[!UICONTROL forecastLog]**&#x200B;表中：因此，这些字段也需要保护。
+在每个投放中，电子邮件地址都会复制到 **[!UICONTROL broadLog]** 和 **[!UICONTROL forecastLog]** 表：因此，这些字段也需要保护。
 
 以下是用于实施此功能的日志表扩展示例：
 

@@ -2,7 +2,8 @@
 product: campaign
 title: Adobe Campaign互动最佳实践
 description: 在Adobe Campaign中管理交互模块的最佳实践方法
-source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
+exl-id: 28f3a5bc-67f5-413e-b2ba-35c341f9ec5f
+source-git-commit: 00a88cf9217faf32070a3cd34a2c1ae5243d9a6e
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 0%
@@ -26,7 +27,7 @@ ht-degree: 0%
 
 * 下面列出了使用时的一些最佳实践 **资格规则**:
 
-   * 简化规则。 规则复杂性会随着查询的扩展而影响性能。 复杂规则是指包含5个以上条件的任何规则。
+   * 简化规则。 规则复杂性会随着查找的深入而影响性能。 复杂规则是指包含5个以上条件的任何规则。
    * 为了提高性能，可以在多个选件之间共享的不同预定义过滤器中划分规则。
    * 将限制最严格的选件类别规则放在树中尽可能高的位置。 这样，他们将首先过滤掉最多的联系人，从而减少目标数量并阻止进一步规则处理他们。
    * 在树的底部放置时间或处理方面最昂贵的规则。 这样，这些规则将仅在其余目标受众上运行。

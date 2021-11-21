@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Adobe Campaign与Adobe Experience Manager之间的集成允许您直接在Adobe Experience Manager中管理电子邮件投放的内容以及表单。
 
-在Adobe Campaign中编辑电子邮件或登陆页面时，您还可以直接从Adobe Experience Manager Assets库插入资产。 有关此功能的详情，请参阅Adobe Experience Manager Assets [chapter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/overview.html)。
+在Adobe Campaign中编辑电子邮件或登陆页面时，您还可以直接从Adobe Experience Manager Assets库插入资产。 Adobe Experience Manager Assets中详细介绍了此功能 [章节](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/overview.html).
 
 这意味着您可以充分利用Adobe Experience Manager内容编辑功能和Adobe Campaign交付功能。
 
@@ -24,4 +24,4 @@ Adobe Campaign与Adobe Experience Manager之间的集成允许您直接在Adobe 
 
 ![](../assets/do-not-localize/book.png) [在此端到端示例中发现此集成](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-experience-manager/creating-an-experience-manager-newsletter.html?lang=en#integrating-with-adobe-experience-cloud)
 
-![](../assets/do-not-localize/speech.png)  作为受管Cloud Services用户，请 [联系](../start/campaign-faq.md#support) Adobe以将Adobe Experience Manager与Campaign集成。
+![](../assets/do-not-localize/speech.png)  作为托管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support) 将Adobe Experience Manager与Campaign集成。

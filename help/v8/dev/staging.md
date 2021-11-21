@@ -28,7 +28,7 @@ Campaign Classicv7 API仍然可用，但无法从此新的暂存机制中受益�
 
 >[!CAUTION]
 >
->* 使用这一新机制，现在&#x200B;**异步**&#x200B;实现了渠道输出、订阅、退订或移动注册的数据同步。
+>* 使用这一新机制，现在可以实现渠道输出、订阅、退订或移动注册的数据同步 **异步**.
 >
 >* 暂存仅适用于存储在云数据库上的架构。 请勿在复制的架构上启用暂存。 请勿在本地架构上启用暂存。 不要在暂存架构上启用暂存
 
@@ -54,11 +54,11 @@ Campaign Classicv7 API仍然可用，但无法从此新的暂存机制中受益�
    </srcSchema>
    ```
 
-   ![](../assets/do-not-localize/glass.png) 在此页面中了解有关创建自定义模式的 [更多信息](create-schema.md)。
+   ![](../assets/do-not-localize/glass.png) 了解有关在中创建自定义模式的更多信息 [本页](create-schema.md).
 
 1. 保存并更新数据库结构。  [了解详情](update-database-structure.md)
 
-1. 通过添加&#x200B;**autoStg=&quot;true&quot;**&#x200B;参数，在架构定义中启用暂存机制。
+1. 通过添加 **autoStg=&quot;true&quot;** 参数。
 
    ```
    <srcSchema _cs="Sample Table (dem)" "YYYY-DD-MM"

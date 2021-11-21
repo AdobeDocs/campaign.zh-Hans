@@ -20,7 +20,7 @@ ht-degree: 12%
 
 1. 创建投放
 
-   根据模板创建直邮投放。 您可以复制并配置&#x200B;**[!UICONTROL Deliver by direct mail (paper)]**&#x200B;内置模板。
+   根据模板创建直邮投放。 您可以复制并配置 **[!UICONTROL Deliver by direct mail (paper)]** 内置模板。
 
    ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/creating-a-direct-mail-delivery.html)以了解详情
 
@@ -52,7 +52,7 @@ ht-degree: 12%
 
 1. 开始投放
 
-   验证提取文件后，单击&#x200B;**确认投放**&#x200B;确认消息，即可启动投放。
+   验证提取文件后，单击 **确认投放** 通过确认消息，您可以启动投放。
 
    确认会开始指定文件中的数据提取。
 

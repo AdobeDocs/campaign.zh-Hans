@@ -16,7 +16,7 @@ ht-degree: 3%
 
 要创建选件，请执行以下步骤：
 
-1. 浏览到 **[!UICONTROL Campaigns]** 选项卡上，单击 **[!UICONTROL Offers]** 链接。
+1. 浏览到 **[!UICONTROL Campaigns]** ，然后单击 **[!UICONTROL Offers]** 链接。
 
 1. 单击 **[!UICONTROL Create]** 按钮。
 

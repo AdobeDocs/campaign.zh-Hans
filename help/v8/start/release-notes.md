@@ -6,16 +6,30 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396e
-source-git-commit: 4ce21dda9516a881cce39c94454d5ac7b43142a9
+source-git-commit: acb3b60c8b390bf91acdfd568a57899594659c7e
 workflow-type: tm+mt
-source-wordcount: '1574'
-ht-degree: 100%
+source-wordcount: '1717'
+ht-degree: 92%
 
 ---
 
 # 最新版本{#latest-release}
 
 此页面列出了&#x200B;**最新 Campaign v8 版本**&#x200B;中的新功能、改进和修复。
+
+## 8.2.10 版 {#release-8-2-10}
+
+_2021 年 2 月 2 日_
+
+**修补程序**
+
+* 修复了在达到分类规则中定义的最大消息数时，导致投放准备失败的问题。 (NEO-40062)
+* 修复了配置Adobe Analytics连接器期间电子邮件地址包含“s”字符的问题。 (NEO-39082)
+* 修复了在升级后期可能导致deliveryMapping表从自定义投放映射中丢失数据的问题。 (NEO-40133)
+* 修复了当电子邮件地址包含单引号字符(&#39;)时，收件人可能会多次收到同一投放的同一消息的问题。 此字符现在已转义。 (NEO-41198)
+* 修复了使用种子或替换地址发送校样时的ID生成问题。 (NEO-42670)
+* 修复了可能阻止使用地址方法替换来发送校样的问题。 (NEO-40417)
+* 修复了阻止安装LINE包的问题。 (NEO-42503)
 
 ## 8.2.8 版 {#release-8-2-8}
 

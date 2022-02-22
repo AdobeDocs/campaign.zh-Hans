@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 6fc085d59c75399b08be44cc1647083677ed337e
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 4%
+source-wordcount: '679'
+ht-degree: 3%
 
 ---
 
@@ -35,11 +35,14 @@ Campaign SDK可帮助您将移动应用程序集成到Adobe Campaign平台。
 
 ![](../assets/do-not-localize/glass.png) 了解如何在 [此部分](../config/push-config.md)
 
-### 在Launch中配置Campaign扩展
+<!--
+### Configure Campaign Extension in Launch
 
-您可以利用Campaign Classic扩展，将Adobe Experience Platform Launch SDK与Campaign集成。
+You can integrate Adobe Experience Platorm Launch SDK with Campaign, by leveraging Campaign Classic extension.
 
-![](../assets/do-not-localize/book.png) 在 [AdobeMobile SDK文档](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Learn more in [Adobe Mobile SDK documentation](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic){target="_blank"}
+
+-->
 
 ## 在Campaign中配置应用程序设置
 

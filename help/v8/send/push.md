@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: 6fc085d59c75399b08be44cc1647083677ed337e
+source-git-commit: a18141274b4934d45ecc82ce5d872c86e141a96f
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '675'
 ht-degree: 3%
 
 ---
@@ -25,9 +25,7 @@ ht-degree: 3%
 
 ![](../assets/do-not-localize/book.png) 了解如何开始使用 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html){target=&quot;_blank&quot;}
 
-## 与AdobeSDK集成
-
-### 集成Campaign SDK
+## 集成Campaign SDK
 
 Campaign SDK可帮助您将移动应用程序集成到Adobe Campaign平台。
 

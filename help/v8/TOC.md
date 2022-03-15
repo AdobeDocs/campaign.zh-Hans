@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8
 title: Campaign v8 文档
-source-git-commit: 889400a238f32968464f1425bb7d6c2dc3ff3cd0
+source-git-commit: a6182d37e6b839c8b67c25364b4c35aa7fdde7dc
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 100%
+source-wordcount: '235'
+ht-degree: 98%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 # Adobe Campaign v8 文档 {#campaign-v8}
 
 + [Campaign v8 文档](campaign-home.md)
-+ 新增功能 {#start}
++ 新增功能 {#new}
    + [重要功能](start/whats-new.md)
    + [发行说明](start/release-notes.md)
    + [已知限制](start/known-limitations.md)
@@ -47,25 +47,26 @@ ht-degree: 100%
    + [推送通知](send/push.md)
    + [LINE 消息](send/line.md)
    + [直邮](send/direct-mail.md)
+   + [社交营销](send/twitter.md)
    + [事务性消息](send/transactional.md)
-   + 通过 Campaign 互动管理优惠{#interaction}
-      + [实时互动入门](send/interaction.md)
-      + [环境和架构](send/interaction-architecture.md)
-      + [最佳实践](send/interaction-best-practices.md)
-      + 定义设置{#interaction}
-         + [创建运算符](send/interaction-operators.md)
-         + [创建环境](send/interaction-env.md)
-         + [创建预定义过滤器](send/interaction-predefined-filters.md)
-         + [创建优惠空间](send/interaction-offer-spaces.md)
-      + [创建优惠目录](send/interaction-offer-catalog.md)
-      + [创建优惠](send/interaction-offer.md)
-      + [发送优惠（出站）](send/interaction-send-offers.md)
-      + 提供优惠（入站）{#inbound}
-         + [上下文](send/interaction-present-offers.md)
-         + [在网页中调用优惠](send/interaction-integration.md)
-         + [管理匿名互动](send/anonymous-interactions.md)
-      + [报告和历史记录](send/interaction-tracking.md)
-      + [用例](send/interaction-use-cases.md)
++ 实时交互{#interaction}
+   + [实时互动入门](interaction/interaction.md)
+   + [环境和架构](interaction/interaction-architecture.md)
+   + [最佳实践](interaction/interaction-best-practices.md)
+   + 定义设置{#interaction-settings}
+      + [创建运算符](interaction/interaction-operators.md)
+      + [创建环境](interaction/interaction-env.md)
+      + [创建预定义过滤器](interaction/interaction-predefined-filters.md)
+      + [创建优惠空间](interaction/interaction-offer-spaces.md)
+   + [创建优惠目录](interaction/interaction-offer-catalog.md)
+   + [创建优惠](interaction/interaction-offer.md)
+   + [发送优惠（出站）](interaction/interaction-send-offers.md)
+   + 提供优惠（入站）{#inbound}
+      + [上下文](interaction/interaction-present-offers.md)
+      + [在网页中调用优惠](interaction/interaction-integration.md)
+      + [管理匿名互动](interaction/anonymous-interactions.md)
+   + [报告和历史记录](interaction/interaction-tracking.md)
+   + [用例](interaction/interaction-use-cases.md)
 + 配置{#config}
    + [使用工作流实现自动化](config/workflows.md)
    + [管理数据](config/replication.md)

@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: d21dc1adc46121e5c015deed7ddb84ec6a4ec76f
+source-git-commit: 8417b1b4b7370e2a2eed76e9f1ac395eccf0ac66
 workflow-type: tm+mt
 source-wordcount: '1680'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -92,7 +92,7 @@ ht-degree: 2%
 
 创建工作流后，您可以使用 **[!UICONTROL Properties]** 按钮以进一步配置。
 
-![](../assets/do-not-localize/book.png) 详细了解 **工作流属性** in [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/workflow-properties.html?lang=en){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) 详细了解 **工作流属性** in [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/advanced-management/workflow-properties.html?lang=zh-Hans){target=&quot;_blank&quot;}
 
 从 **[!UICONTROL Execution]** 的 **[!UICONTROL Properties]**，您可以选择将工作流链接到不同的仓库并优化工作量管理。 有关 **仓库**，请参阅 [Snowflake文档](https://docs.snowflake.com/en/user-guide/warehouses-overview.html).
 

@@ -5,11 +5,11 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 hidefromtoc: false
-exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471,a9d18e75-18e7-491e-bfc4-671c3600396e
-source-git-commit: b7db9597aa6b4ca4fb2e1e13f8b7b718f4840031
+exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
+source-git-commit: 9283f1e857706455c169eb1da93cd0d04df80da0
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +45,7 @@ _2021 年 10 月 28 日_
 <tr>
 <td>
 <p>实时互动管理现适用于入站渠道。使用 Campaign 入站互动模块，在客户访问您的网站或联系您的呼叫中心时，向客户展示最佳优惠。这项功能是 Campaign v8 自带的一个选项，需要在您的实例上进行具体配置。请联系您的 Adobe 代表以获得入站互动模块的权限。</p>
-<p>有关更多信息，请参阅<a href="../send/interaction-architecture.md">详细文档</a>。</p>
+<p>有关更多信息，请参阅<a href="../interaction/interaction-architecture.md">详细文档</a>。</p>
 </td>
 </tr>
 </tbody>

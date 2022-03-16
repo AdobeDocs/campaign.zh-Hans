@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: 提供优惠（入站互动）
-description: 了解如何使用Campaign交互模块展示最佳选件
+title: 在网页中添加选件
+description: 了解如何在网页中添加选件
 exl-id: 1eb0775a-5da9-4a27-aa7b-339372748f9c
-source-git-commit: c19ac91fe7b4b825f75ec096320efabc3e78328c
+source-git-commit: 213a10fea36b3b08c1dd8525084d212e191b2fc7
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1455'
 ht-degree: 0%
 
 ---

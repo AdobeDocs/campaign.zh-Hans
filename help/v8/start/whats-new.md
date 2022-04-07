@@ -5,16 +5,18 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: def9714448ef5fdde39cee070088615e8f50e522
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 100%
+source-wordcount: '568'
+ht-degree: 81%
 
 ---
 
 # Adobe Campaign v8 有哪些新增功能？ {#ac-gs-what-is-new}
 
 Adobe Campaign v8 在基础架构、安全性、可投放性和监测方面有着显著改进。通过利用 [[!DNL Snowflake]](https://www.snowflake.com/)，一种云数据库技术，Adobe Campaign 大幅提升了其规模和速度，能够管理更多的客户档案，并且可实现更高的投放速率和每小时事务处理量。
+
+## 重要功能{#key-capabilities}
 
 关键功能包括：
 
@@ -34,7 +36,7 @@ Adobe Campaign v8 在基础架构、安全性、可投放性和监测方面有�
 
 ![](assets/home-page.png)
 
-## 扩展
+## 扩展{#scale}
 
 Campaign v8 在流程的任何步骤（从定位到最终报告）中都实现了端到端的扩展：
 
@@ -42,7 +44,23 @@ Campaign v8 在流程的任何步骤（从定位到最终报告）中都实现�
 * 扩展分段和定位的查询性能，还可扩展数据摄取和输出
 * 将投放准备速度从小时扩展到分钟
 
-## 简化和性能提升
+## 自助式管理界面{#self-service-admin}
+
+作为产品管理员，您可以通过 **营销活动控制面板**.
+
+通过直观的用户界面，管理员可以监控关键资产的使用情况、执行高级任务，如将IP地址添加到允许列表、SFTP存储监控、密钥管理等。 此自助服务界面为您提供了更大的灵活性，并可帮助您：
+
+* 无需联系Adobe支持，即可自行快速更改设置
+* 根据不同的业务需求在不同时间配置设置
+* 根据需要控制访问设置，从而增强安全性
+
+![](assets/subdomain1.png)
+
+![](../assets/do-not-localize/glass.png) [进一步了解Campaign控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans){target=&quot;_blank&quot;}
+
+
+
+## 简化和性能提升{#simplification-and-perf-increase}
 
 Campaign v8 引入了&#x200B;**完全联合数据访问** (FFDA) 概念：所有数据现在都位于云数据库上的远程位置。
 

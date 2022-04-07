@@ -1,13 +1,13 @@
 ---
-title: Campaign互动环境
+title: 使用Campaign交互环境
 description: 了解如何为Campaign交互创建环境
 feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 31f38870-1781-4185-9022-d4fd6a31c94a
-source-git-commit: 213a10fea36b3b08c1dd8525084d212e191b2fc7
+source-git-commit: 8a43f0fad9f84849745f3a0d426329efbf228105
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '399'
 ht-degree: 2%
 
 ---

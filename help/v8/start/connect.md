@@ -1,14 +1,14 @@
 ---
 title: 连接到Campaign v8
-description: 了解如何连接到Campaign v8
+description: 了解如何连接到 Campaign v8
 feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: f071fc227dac6d72873744ba56eb0b4b676de5dd
+source-git-commit: c3beb735f54606537bcc977f2f0539767d15b2d9
 workflow-type: tm+mt
 source-wordcount: '684'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -22,7 +22,7 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 * 获取Campaign服务器URL
 * 创建Adobe ID或从您的公司获取用户凭据
 
-## 下载并安装客户端控制台
+## 下载并安装客户端控制台{#download-ac-console}
 
 首次使用Campaign时，或者如果您需要升级到较新版本，则需要下载客户端控制台并安装它。
 
@@ -36,7 +36,7 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 >
 >Adobe建议将选项保留为 **[!UICONTROL No longer ask this question]** 取消选中，以确保当有新版本的控制台可用时，所有用户都会收到警报。  如果选择此选项，则用户将不会获悉新的可用版本。
 
-## 创建连接
+## 创建连接{#create-your-connection}
 
 新安装客户端控制台后，请按照以下步骤创建与应用程序服务器的连接：
 
@@ -60,7 +60,7 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 >
 >的 **[!UICONTROL Add]** 按钮 **[!UICONTROL folders]** 来组织你的所有联系。 只需将每个连接拖放到某个文件夹中。
 
-## 登录Adobe Campaign
+## 登录Adobe Campaign {#logon-to-ac}
 
 要登录到现有实例，请执行以下步骤：
 
@@ -78,7 +78,7 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 
    ![](assets/adobeID.png)
 
-## 授予用户访问权限
+## 授予用户访问权限{#grant-access}
 
 Adobe Campaign允许您定义和管理分配给各种运算符的权限。 这些权限和限制是授权或拒绝的一组权限和限制：
 

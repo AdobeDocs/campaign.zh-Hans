@@ -19,7 +19,7 @@ ht-degree: 3%
 要在Adobe Campaign中发送推送通知，您需要：
 
 1. 配置Campaign环境
-1. 为移动应用程序创建移动应用程序类型信息服务。
+1. 为移动应用程序创建Mobile应用程序类型信息服务。
 1. 将应用程序的iOS和Android版本添加到此服务。
 1. 为iOS和Android创建投放。
 

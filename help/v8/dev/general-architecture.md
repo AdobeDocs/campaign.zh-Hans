@@ -1,11 +1,11 @@
 ---
 title: 一般架构
-description: 进一步了解Campaign架构和组件
+description: 了解有关 Campaign 架构和组件的更多信息
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
+source-git-commit: 9f375f8349140885cd4b6bcc206669a264cdbc9d
 workflow-type: tm+mt
-source-wordcount: '1217'
-ht-degree: 8%
+source-wordcount: '1066'
+ht-degree: 6%
 
 ---
 
@@ -23,23 +23,13 @@ ht-degree: 8%
 
 * **数据库容器**
 
-   Adobe Campaign云数据库基于关系数据库技术，将所有客户信息、促销活动组件、选件和工作流以及促销活动结果存储在客户数据库容器中。
+   Adobe Campaign云数据库基于关系数据库技术，将所有信息、促销活动组件、选件、工作流和促销活动结果存储在数据库容器中。
 
 ## 个性化客户端环境 {#client-env}
 
 可以通过不同方式访问应用程序：富客户端、瘦客户端或API集成。
 
-* **客户端控制台**:该应用程序的主用户界面是一个本机应用程序（在Windows上），它与Adobe Campaign应用程序服务器通信标准Internet协议（SOAP、HTTP等）。 Adobe Campaign Client Console 具有出色的用户友好性，可帮助提升工作效率，使用的带宽非常少（通过使用本地缓存），并且易于部署。此控制台可以从Internet浏览器部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成HTTP(S)流量。
-
-   ![](../assets/do-not-localize/glass.png) [了解关于 Campaign 客户端控制台的更多信息](../start/connect.md)。
-
-* **Web访问**:部分应用程序可通过使用HTML用户界面的简单web浏览器访问，包括报告模块、投放批准阶段、实例监控等。
-
-   ![](../assets/do-not-localize/glass.png) [了解关于 Campaign Web Access 的更多信息](../start/connect.md)。
-
-* **Campaign API**:在某些情况下，可以使用通过SOAP协议公开的Web服务API从外部应用程序调用系统。
-
-   ![](../assets/do-not-localize/glass.png) [进一步了解Campaign API](../dev/api.md).
+![](../assets/do-not-localize/glass.png) [进一步了解Campaign表示层](../start/ac-components.md).
 
 ## 开发环境 {#dev-env}
 
@@ -65,9 +55,9 @@ Adobe Campaign是一个具有不同应用程序的单一平台，用于创建开
 
 它还可处理定期执行的技术工作流，包括：
 
-* **跟踪**:恢复和整合跟踪日志。 它允许您从重定向服务器中检索日志，并创建报告模块使用的聚合指示器。
-* **清理**:数据库清理。 用于清除旧记录并避免数据库呈指数级增长。
-* **帐单**:自动发送平台的活动报表（数据库大小、营销操作数量等）。
+* **跟踪**:恢复和整合跟踪日志，以便您能够从重定向服务器中检索日志，并创建报告模块使用的聚合指示器。
+* **清理**:清理数据库，并清除旧记录，避免数据库呈指数级增长。
+* **帐单**:发送平台的活动报表（数据库大小、营销操作数量等）。
 
 **投放服务器** (nlserver mta)
 
@@ -117,7 +107,7 @@ Adobe Campaign具有本机电子邮件广播功能。 此进程可用作SMTP邮�
 
 Adobe Campaign云数据库依赖 [!DNL Snowflake] 其中包含功能数据（用户档案、订阅、内容等）、技术数据（投放作业和日志、跟踪日志等） 以及解决方案的工作数据（购买、销售线索），所有Adobe Campaign组件都与数据库通信以执行其特定任务。
 
-客户可以使用预定义的数据库和模式来部署Adobe Campaign，如果需要，可以扩展此预定义的环境。 Adobe Campaign通过SQL调用访问数据集市中的所有数据。 Adobe Campaign还提供了完整的“提取转换和加载(ETL)”工具补充，用于执行数据导入和导出数据到系统和从系统导出的数据。
+您可以使用预定义的数据库和模式来部署Adobe Campaign，如果需要，可以扩展此预定义的环境。 Adobe Campaign通过SQL调用访问数据集市中的所有数据。 Adobe Campaign还提供了完整的“提取转换和加载(ETL)”工具补充，用于执行数据导入和导出数据到系统和从系统导出的数据。
 
 ![](assets/data-flow-diagram.png)
 

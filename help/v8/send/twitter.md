@@ -3,10 +3,10 @@ title: 使用Adobe Campaign在Twitter上发布消息
 description: 了解如何使用Adobe Campaign Social Marketing模块在Twitter上发布消息并收集联系数据
 role: Data Engineer
 level: Beginner
-hidefromtoc: true
 hide: true
+hidefromtoc: true
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
-source-git-commit: da6e585a789749ae0302f048940d104a36e2b477
+source-git-commit: 0f15112f0eec1d7cba26523adc1e88fc5d26997c
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 8%
@@ -22,7 +22,6 @@ Adobe Campaign **社交营销** 模块，让您可以通过Twitter与客户和�
 
 * 在Twitter上发送消息：Adobe Campaign允许您将消息直接发布到twitter帐户。 您还可以向所有关注者发送私信。
 * 收集新联系人：Adobe Campaign可以自动恢复用户档案数据，以便执行定位营销活动，并在可能时实施跨渠道策略。 此操作需要用户同意。
-
 
 有关将Twitter帐户与Adobe Campaign集成的配置步骤，请参阅 [本页](../connect/ac-tw.md).
 

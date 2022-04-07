@@ -348,7 +348,6 @@ XPath是一种语法，用于在XML文档的树中查找节点。
 >
 >* **location/@city** 无效；请使用 **`[location/@city]`**
 >* **`[@email]`** 和 **@email** 等于
-
 >
 
 

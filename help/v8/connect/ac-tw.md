@@ -4,10 +4,10 @@ description: 了解如何将Campaign环境与Twitter集成
 feature: Overview
 role: Data Engineer
 level: Beginner
-hidefromtoc: true
 hide: true
+hidefromtoc: true
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: 137dba3461a82621af7d2e5f54442bf87422ad47
+source-git-commit: 0f15112f0eec1d7cba26523adc1e88fc5d26997c
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 4%
@@ -83,7 +83,9 @@ ht-degree: 4%
 
    >[!CAUTION]
    >
-   >的 **[!UICONTROL Internal name]** 服务的名称必须与您的Twitter帐户完全相同。 要检查您的设置，您可以：
+   >的 **[!UICONTROL Internal name]** 服务的名称必须与您的Twitter帐户完全相同。
+
+   要检查您的设置，您可以：
 
    * 单击 **[!UICONTROL Save]** 按钮。
    * 在服务的概述中，选择 **Twitter** 您刚刚创建的服务。

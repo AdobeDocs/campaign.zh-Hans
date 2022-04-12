@@ -1,14 +1,13 @@
 ---
-source-git-commit: 4884271a9fcd96b4ad1da2e2aed5d25c8f267a7f
+source-git-commit: 5fa345591725f5118188dad59411e798caea033e
 workflow-type: tm+mt
-translation-type: tm+mt
 source-wordcount: '170'
 ht-degree: 100%
 
 ---
 # MIT 许可
 
-©版权所有 2020 Adobe。保留所有权利。
+©版权所有 2021 Adobe。保留所有权利。
 
 兹免费授权获得本软件及相关文档文件（“本软件”）副本的任何人，允许其不受限制地处理本软件，包括但不限于使用、复制、修改、合并、发布、分发、再许可和/或出售本软件副本的权利，并允许被提供本软件的人员在符合下列条件的情况下这样做：
 

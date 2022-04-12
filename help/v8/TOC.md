@@ -7,7 +7,7 @@ title: Campaign v8 文档
 source-git-commit: c3beb735f54606537bcc977f2f0539767d15b2d9
 workflow-type: tm+mt
 source-wordcount: '307'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -24,8 +24,8 @@ ht-degree: 81%
    + [入门](start/get-started.md)
    + [组件和流程](start/ac-components.md)
    + Campaign UI {#ac-ui}
-      + [了解Campaign界面](start/campaign-ui.md)
-      + [自定义Campaign界面](start/customize-ui.md)
+      + [了解 Campaign 界面](start/campaign-ui.md)
+      + [自定义 Campaign 界面](start/customize-ui.md)
    + [使用受众](start/audiences.md)
    + [导入数据](start/import.md)
    + [创建活动](start/campaigns.md)
@@ -52,7 +52,7 @@ ht-degree: 81%
       + [手动创建用户档案](audiences/create-profiles.md)
       + [从文件导入用户档案](audiences/import-profiles.md)
       + [使用外部用户档案](audiences/external-profiles.md)
-      + [在Web窗体中收集用户档案数据](audiences/collect-profiles.md)
+      + [在 Web 窗体中收集用户档案数据](audiences/collect-profiles.md)
    + 创建受众 {#create-audiences}
       + [创建联系人列表](audiences/create-audiences.md)
       + [创建和管理过滤器](audiences/create-filters.md)
@@ -64,12 +64,12 @@ ht-degree: 81%
    + [推送通知](send/push.md)
    + [LINE 消息](send/line.md)
    + [直邮](send/direct-mail.md)
-   + [社交营销](send/twitter.md)
+   + [社交媒体营销](send/twitter.md)
    + [事务性消息](send/transactional.md)
    + 失败、退回和隔离{#failures}
       + [隔离](send/quarantines.md)
       + [投放失败](send/delivery-failures.md)
-+ 实时交互{#interaction}
++ 实时互动{#interaction}
    + [实时互动入门](interaction/interaction.md)
    + [环境和架构](interaction/interaction-architecture.md)
    + [最佳实践](interaction/interaction-best-practices.md)

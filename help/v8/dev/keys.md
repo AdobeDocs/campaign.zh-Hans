@@ -5,7 +5,7 @@ exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
 source-git-commit: 2d0b40e49afdfd71e8bb5c3f0b1d569a715420b2
 workflow-type: tm+mt
 source-wordcount: '676'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 在Campaign v8中，主键是通用唯一ID标识符(UUID)，该标识符是字符串。 要创建此UUID，架构的主要元素必须包含 **autouuid** 和 **奥托普** 属性设置为 **true**.
 
-Adobe Campaign v8以Snowflake为核心数据库。 Snowflake数据库的分布式架构不提供管理表中密钥的唯一性的机制：最终用户负责确保Adobe Campaign数据库中密钥的一致性。
+Adobe Campaign v8 以 Snowflake 为核心数据库。Snowflake数据库的分布式架构不提供管理表中密钥的唯一性的机制：最终用户负责确保Adobe Campaign数据库中密钥的一致性。
 
 要保持关系数据库的一致性，必须避免对键值（特别是对主键值）重复。 主键上的重复项会导致数据管理工作流活动出现问题，例如 **查询**, **协调**, **更新数据**，等等。
 

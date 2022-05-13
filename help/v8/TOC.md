@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8
 title: Campaign v8 文档
-source-git-commit: 79a9d60175b06a11cf27b44275a8ba3fe11e4d3e
+source-git-commit: d7e0635c6fccd70ed012a5b8148258383a1f6766
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 94%
+source-wordcount: '352'
+ht-degree: 88%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 94%
       + [了解 Campaign 界面](start/campaign-ui.md)
       + [自定义 Campaign 界面](start/customize-ui.md)
    + [使用受众](start/audiences.md)
+   + [管理隐私请求](start/privacy.md)
    + [导入数据](start/import.md)
    + [创建活动](start/campaigns.md)
    + [发送消息](start/create-message.md)
@@ -34,6 +35,18 @@ ht-degree: 94%
    + [跟踪和监测](start/tracking.md)
    + [指标和报表](start/reporting.md)
    + [常见问题解答](start/campaign-faq.md)
++ 架构 {#architecture}
+   + [全局原则](architecture/general-architecture.md)
+   + [架构](architecture/architecture.md)
+   + FDASnowflake部署 {#fda}
+      + [什么是FDASnowflake?](architecture/fda-deployment.md)
+   + 企业(FFDA)部署 {#ffda}
+      + [什么是Campaign FDA?](architecture/enterprise-deployment.md)
+      + 特征 {#ffda-characteristics}
+         + [密钥管理和唯一性](architecture/keys.md)
+         + [新 API](architecture/new-apis.md)
+         + [API 暂存机制](architecture/staging.md)
+         + [复制机制](architecture/replication.md)
 + 实施 {#implement}
    + [实施步骤](start/implement.md)
    + [自定义实例](dev/customize.md)
@@ -59,7 +72,9 @@ ht-degree: 94%
    + [管理文件夹和视图](audiences/folders-and-views.md)
    + [最佳实践](audiences/audiences-best-practices.md)
 + 发送消息{#send}
-   + [电子邮件](send/email.md)
+   + 电子邮件 {#emails}
+      + [设计和发送电子邮件](send/email.md)
+      + [使用增强 MTA 发送](send/enhanced-mta.md)
    + [短信](send/sms.md)
    + [推送通知](send/push.md)
    + [LINE 消息](send/line.md)
@@ -89,7 +104,6 @@ ht-degree: 94%
    + [用例](interaction/interaction-use-cases.md)
 + 配置{#config}
    + [使用工作流实现自动化](config/workflows.md)
-   + [管理数据](config/replication.md)
    + [电子邮件设置](config/email-settings.md)
    + [事务性消息设置](config/transactional-msg-settings.md)
    + [将 Campaign SDK 与您的应用程序集成](config/push-config.md)
@@ -108,13 +122,10 @@ ht-degree: 94%
       + [使用Campaign和SFDC](connect/ac-sfdc.md)
       + [使用Campaign和Microsoft Dynamics](connect/ac-ms-dyn.md)
       + [同步数据](connect/crm-data-sync.md)
-+ 开发人员资源{#architecture}
-   + [全局原则](dev/general-architecture.md)
-   + [架构](dev/architecture.md)
-   + [数据模型](dev/datamodel.md)
++ 开发人员资源{#developer}
+   + [营销活动数据模型](dev/datamodel.md)
    + 模式和表单{#shemas-forms}
       + [使用模式](dev/schemas.md)
-      + [密钥管理和唯一性](dev/keys.md)
       + [创建模式](dev/create-schema.md)
       + [扩展模式](dev/extend-schema.md)
       + [筛选模式](dev/filter-schema.md)
@@ -124,8 +135,6 @@ ht-degree: 94%
       + [使用自定义收件人表格](dev/custom-recipient.md)
       + [更新数据库](dev/update-database-structure.md)
       + [输入表单](dev/forms.md)
-   + API {#api}
-      + [入门](dev/api.md)
-      + [新 API](dev/new-apis.md)
-      + [API 暂存机制](dev/staging.md)
+   + [Campaign API](dev/api.md)
 + [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)
+

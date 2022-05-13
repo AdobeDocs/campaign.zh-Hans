@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
-source-git-commit: 94fc2739c538f3aa8b11e0ea69d08f1bfffb5d32
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 12%
+source-wordcount: '235'
+ht-degree: 15%
 
 ---
 
@@ -43,17 +43,6 @@ Campaign v8可与两个数据库配合使用：用于用户界面实时消息传
 >[!NOTE]
 >您可以生成数据模型的完整说明。 请参阅[此页面](datamodel.md)以了解详情。
 
-## [!DNL Campaign] API 暂存机制
-
-使用 [!DNL Campaign] 由于性能（延迟和并发），不建议使用云数据库、爆炸式统一调用。 批处理操作始终为首选。 为了确保API的最佳性能，Campaign会保持在本地数据库级别处理API调用。
-
-![](../assets/do-not-localize/glass.png) [本页详细介绍了API暂存机制](staging.md)
-
-## 新 API
-
-提供了新的API，用于管理 [!DNL Campaign] 本地数据库和云数据库。 此外，还引入了新机制，在本地数据库级别处理API调用，以避免延迟并提高整体性能。
-
-![](../assets/do-not-localize/glass.png) [本页详细介绍了新的API](new-apis.md)
 
 **相关主题**
 

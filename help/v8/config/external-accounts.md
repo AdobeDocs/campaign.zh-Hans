@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
+source-git-commit: 9457652f62810eb401c4010acd9b5da42d88d796
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 4%
+source-wordcount: '1086'
+ht-degree: 5%
 
 ---
 
@@ -25,10 +25,8 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 >[!CAUTION]
 >
->特定 **[!UICONTROL Full FDA]** (ffda)外部帐户管理Campaign本地数据库与云数据库([!DNL Snowflake])。
->
->作为托管Cloud Services用户，此外部帐户是按Adobe为您的实例配置的。 不得修改。
-
+>在 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，特定 **[!UICONTROL Full FDA]** (ffda)外部帐户管理Campaign本地数据库与云数据库([!DNL Snowflake])。
+></br>作为托管Cloud Services用户，此外部帐户是按Adobe为您的实例配置的。 不得修改。
 
 ## 特定于促销活动的外部帐户
 
@@ -36,25 +34,84 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
 ![](../assets/do-not-localize/speech.png)  作为托管Cloud Services用户，Adobe会为您配置所有特定于促销活动的外部帐户。
 
-* **退回邮件(POP3)**
+### 退回邮件 {#bounce-mails-external-account}
 
-   的 **退回邮件** 外部帐户指定用于连接到电子邮件服务的外部POP3帐户。 为POP3访问配置的所有服务器都可用于接收回信。
+>[!NOTE]
+>
+>从Campaign v8.3开始，提供了Microsoft Exchange Online OAuth 2.0的POP3身份验证功能。要检查您的版本，请参阅 [此部分](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-   ![](../assets/do-not-localize/book.png) 详细了解 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html){target=&quot;_blank&quot;}
+的 **退回邮件** 外部帐户指定用于连接到电子邮件服务的外部POP3帐户。 为POP3访问配置的所有服务器都可用于接收回信。
 
-* **路由**
+![](../assets/do-not-localize/book.png) 详细了解 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/event-activities/inbound-emails.html){target=&quot;_blank&quot;}
 
-   的 **[!UICONTROL Routing]** 外部帐户允许您根据安装的包配置Adobe Campaign中可用的每个渠道。
+![](assets/bounce_external_1.png)
 
-   >[!CAUTION]
-   >
-   >的 **[!UICONTROL Internal email delivery routing]** (defaultEmailBulk)外部帐户 **必须** 在Adobe Campaign v8中启用。
+配置 **[!UICONTROL Bounce mails (defaultPopAccount)]** 外部帐户：
 
-* **执行实例**
+* **[!UICONTROL Server]**
 
-   在事务型消息传递的上下文中，执行实例链接到控制实例并连接它们。 事务型消息模板将部署到执行实例。
+   POP3服务器的URL。
 
-   ![](../assets/do-not-localize/glass.png) 了解有关 [本页](../dev/architecture.md#transac-msg-archi).
+* **[!UICONTROL Port]**
+
+   POP3连接端口号。 默认端口为110。
+
+* **[!UICONTROL Account]**
+
+   用户的名称。
+
+* **[!UICONTROL Password]**
+
+   用户帐户密码。
+
+* **[!UICONTROL Encryption]**
+
+   之间选择的加密类型 **[!UICONTROL By default]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** 或 **[!UICONTROL POP3S]**.
+的 **退回邮件** 外部帐户指定用于连接到电子邮件服务的外部POP3帐户。 为POP3访问配置的所有服务器都可用于接收回信。
+
+* **[!UICONTROL Function]**
+
+   入站电子邮件或SOAP路由器
+
+![](assets/bounce_external_2.png)
+
+>[!IMPORTANT]
+>
+>在使用Microsoft OAuth 2.0配置POP3外部帐户之前，您首先需要在Azure门户中注册应用程序。 有关详细信息，请参见此 [ 页面](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)。
+
+要使用Microsoft OAuth 2.0配置外部POP3，请检查 **[!UICONTROL Microsoft OAuth 2.0]** ，并填写以下字段：
+
+* **[!UICONTROL Azure tenant]**
+
+   可以在 **要点** Azure门户中应用程序概述的下拉列表。
+
+* **[!UICONTROL Azure Client ID]**
+
+   可以在 **要点** Azure门户中应用程序概述的下拉列表。
+
+* **[!UICONTROL Azure Client secret]**:
+
+   可以在 **客户端密钥** 列 **证书和密钥** Azure门户中的应用程序菜单。
+
+* **[!UICONTROL Azure Redirect URL]**:
+
+   可在 **身份验证** Azure门户中的应用程序菜单。 它应该以以下语法结尾 `nl/jsp/oauth.jsp`，例如 `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
+
+输入不同的凭据后，您可以单击 **[!UICONTROL Setup the connection]** 完成外部帐户配置。
+
+### 路由 {#routing}
+
+的 **[!UICONTROL Routing]** 外部帐户允许您根据安装的包配置Adobe Campaign中可用的每个渠道。
+
+>[!CAUTION]
+>
+>的 **[!UICONTROL Internal email delivery routing]** (defaultEmailBulk)外部帐户 **必须** 在Adobe Campaign v8中启用。
+
+### 执行实例 {#execution-instance}
+
+在事务型消息传递的上下文中，执行实例链接到控制实例并连接它们。 事务型消息模板将部署到执行实例。
+
+![](../assets/do-not-localize/glass.png) 了解有关 [本页](../architecture/architecture.md#transac-msg-archi).
 
 ## 访问外部系统外部帐户
 
@@ -96,47 +153,13 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
    的 **[!UICONTROL Microsoft Dynamics CRM]** 外部帐户允许您将Microsoft Dynamics数据导入和导出到Adobe Campaign。
 
-   ![](../assets/do-not-localize/glass.png) 进一步了解Adobe Campaign - Microsoft Dynamics CRM集成 [本页](../connect/crm.md).
-
-   使用 **[!UICONTROL Web API]** 部署类型和 **[!UICONTROL Password credentials]** 身份验证时，您需要提供以下详细信息：
-
-   * **[!UICONTROL Account]**:用于登录到Microsoft CRM的帐户。
-
-   * **[!UICONTROL Server]**:Microsoft CRM服务器的URL。
-
-   * **[!UICONTROL Client identifier]**:客户端ID，可从Microsoft Azure管理门户的 **[!UICONTROL Update your code]** 类别， **[!UICONTROL Client ID]** 字段。
-
-   * **[!UICONTROL CRM version]**:之间的CRM版本 **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** 或 **[!UICONTROL Dynamics CRM 2016]**.
-   使用 **[!UICONTROL Web API]** 部署类型和 **[!UICONTROL Certificate]** 身份验证时，您需要提供以下详细信息：
-
-   * **[!UICONTROL Server]**:Microsoft CRM服务器的URL。
-
-   * **[!UICONTROL Private Key (Base64 encoded)]**:已编码为Base64的私钥
-
-   * **[!UICONTROL Custom Key identifier]**
-
-   * **[!UICONTROL Key ID]**
-
-   * **[!UICONTROL Client identifier]**:客户端ID，可从Microsoft Azure管理门户的 **[!UICONTROL Update your code]** 类别， **[!UICONTROL Client ID]** 字段。
-
-   * **[!UICONTROL CRM version]**:之间的CRM版本 **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** 或 **[!UICONTROL Dynamics CRM 2016]**.
-
+   ![](../assets/do-not-localize/glass.png) 进一步了解Adobe Campaign - Microsoft Dynamics CRM集成 [本页](../connect/ac-ms-dyn.md).
 
 * **Salesforce.com**
 
    的 **[!UICONTROL Salesforce CRM]** 外部帐户允许您将Salesforce数据导入和导出到Adobe Campaign。
 
-   要配置Salesforce CRM外部帐户以与Adobe Campaign配合使用，您需要提供以下详细信息：
-
-   * **[!UICONTROL Account]**:用于登录到Salesforce CRM的帐户。
-
-   * **[!UICONTROL Password]**:用于登录到Salesforce CRM的密码。
-
-   * **[!UICONTROL Client identifier]**:了解如何在 [本页](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
-
-   * **[!UICONTROL Security token]**:了解如何在 [本页](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
-
-   * **[!UICONTROL API version]**:选择API的版本。 对于此外部帐户，您需要使用配置向导配置Salesforce CRM。
+   ![](../assets/do-not-localize/glass.png) 进一步了解Adobe Campaign - Salesforce.com中的CRM集成 [本页](../connect/ac-sfdc.md).
 
 ## 传输数据外部帐户
 

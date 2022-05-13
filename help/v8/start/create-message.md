@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 7234ca65f785b005b11851a5cd88add8cddeff4f
+source-git-commit: 79a220ad9c9c372b64db9a33efc1843c95a2a619
 workflow-type: tm+mt
 source-wordcount: '643'
 ht-degree: 100%
@@ -34,7 +34,7 @@ Adobe Campaign v8 附带以下投放渠道：
 * **LINE channel**: LINE deliveries let you send messages on LINE, an instant messaging application available on all smartphones. Learn more in [this page](../send/line.md)
 -->
 
-## 选择发送消息的方式
+## 选择发送消息的方式{#gs-send-msg}
 
 创建消息并对其内容进行设计和测试后，您可以选择发送消息的方式。Campaign 提供了一套功能用于：
 
@@ -66,7 +66,7 @@ Adobe Campaign v8 附带以下投放渠道：
    ![](../assets/do-not-localize/book.png) [用例：了解如何计划和发送生日电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/sending-a-birthday-email.html?lang=zh-Hans){target=&quot;_blank&quot;}
 
 
-## 添加个性化内容
+## 添加个性化内容{#personalization}
 
 由 Adobe Campaign 投放的消息可以通过各种方式实现个性化。
 
@@ -79,17 +79,17 @@ Adobe Campaign v8 附带以下投放渠道：
 * 创建条件内容。
    ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/conditional-content.html?lang=zh-Hans)以了解如何插入条件内容{target=&quot;_blank&quot;}
 
-## 发送事务性消息
+## 发送事务性消息{#gs-transac-messages}
 
 事务性消息（消息中心）是用于管理触发消息的 Campaign 模块。
 
-![](../assets/do-not-localize/glass.png) 请参阅[本节](../dev/architecture.md#transac-msg-archi)以了解关于事务性消息功能的更多信息
+![](../assets/do-not-localize/glass.png) 请参阅[本节](../architecture/architecture.md#transac-msg-archi)以了解关于事务性消息功能的更多信息
 
 ![](../assets/do-not-localize/glass.png) 有关配置和发送事务性消息的步骤详情，请参阅[此页面](../send/transactional.md)
 
 ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=zh-Hans)以了解此功能在端到端用例中的作用{target=&quot;_blank&quot;}
 
-## 投放和跟踪日志
+## 投放和跟踪日志{#gs-tracking-logs}
 
 在发送后监测投放是确保营销活动有效并接触到客户的重要步骤。您可以在发送投放后进行监测，并了解如何管理投放失败和隔离。
 

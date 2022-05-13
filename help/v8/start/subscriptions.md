@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->订阅和退订包括 **异步** 进程。 选择加入和选择退出请求每小时进行处理。 [了解详情](../dev/new-apis.md#sub-apis)
+>在 [企业(FFDA)部署](../architecture/enterprise-deployment.md)、订阅和退订 **异步** 进程。 选择加入和选择退出请求每小时进行处理。 [了解详情](../architecture/new-apis.md#sub-apis)
 
 您还可以让投放收件人将邮件转发给朋友。 为此，请将相关链接插入到投放中。 然后，您可以跟踪此共享过程以及相关页面的访问次数。
 

@@ -6,16 +6,108 @@ role: Data Engineer
 level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 0f15112f0eec1d7cba26523adc1e88fc5d26997c
+source-git-commit: d3137e75bfc4986e1d6badf32f21fda4c4353c8b
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 100%
+source-wordcount: '2240'
+ht-degree: 80%
 
 ---
 
 # 最新版本{#latest-release}
 
 此页面列出了&#x200B;**最新 Campaign v8 版本**&#x200B;中的新功能、改进和修复。
+
+## 8.3.7 版 {#release-8-3-7}
+
+_2022年5月16日_
+
+**新增功能**
+
+<table>
+<thead>
+<tr>
+<th><strong>响应管理器</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>营销活动响应管理允许您衡量营销活动的成功和ROI，或在所有渠道中提供建议：电子邮件、移动设备、直邮等</p>
+<p>有关更多信息，请参阅<a href="../start/campaigns.md#response-manager-add-on">详细文档</a>。</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>分布式营销</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>营销活动分布式营销让您能够在中心实体（总部、营销部门等）之间实施协作营销活动 和地方实体（销售点、地区机构等）。 通过共享工作区（营销活动包），您可以创建营销活动模板并将其推荐给本地实体。</p>
+<p>有关更多信息，请参阅<a href="../start/campaigns.md#distributed-marketing-add-on">详细文档</a>。</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>时间敏感通知</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>在iOS 15中，Apple新增了敏感通知的概念，当通知被视为敏感并且需要实时联系用户时，该概念可让应用程序开发人员控制绕过焦点模式。</p>
+<p>有关更多信息，请参阅<a href="../send/push.md#send-notifications-on-ios">详细文档</a>。</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>核心Privacy Service集成</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>Campaign v8现在与Adobe隐私核心服务集成。 从隐私核心服务推送到所有 Experience Cloud 解决方案的隐私请求由 Campaign 通过专用工作流自动处理。</p>
+<p>有关更多信息，请参阅<a href="privacy.md">详细文档</a>。</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+**兼容性更新**
+
+* Campaign v8 SDK现在支持Android 12和iOS 15进行推送通知。
+* Campaign v8现在与Windows 11兼容。
+
+请参阅 [Campaign 兼容性矩阵](capability-matrix.md)。
+
+**改进**
+
+* Microsoft Exchange Online OAuth 2.0 POP3身份验证现在在Campaign中受支持。 [了解更多信息](../config/external-accounts.md#bounce-mails-external-account)
+* 已对Microsoft Dynamics Connector Web API应用关键修复。
+* 添加了新的运算符和组架构写入(operatorWrite)命名权限，以允许用户插入、更新和删除运算符(xtk:operator)和运算符组(xtk:group)架构。
+* 现在，您可以启用电子邮件密送（盲碳拷贝）功能，通过投放属性中的专用选项，存储由Campaign发送的投放级别电子邮件。 [了解更多信息](../config/email-settings.md#email-bcc)
+* 为确保性能更好，现在默认在路由外部帐户中激活新的“拆分”选项。 此选项允许在中间源实例中自动拆分消息，以便更快地将消息发送给收件人。 链接
+* 对于中间源设置中的LINE投放，现在可以在中间实例中存在多个具有相同类型的有效帐户。
+* Web进程的默认连接数从50个增加到150个。
+* Campaign提供了一组新护栏，以防止在Snowflake数据库中插入重复的键。 [了解更多信息](../architecture/keys.md)
+
+**修补程序**
+
+* 修复了在同一定期投放中使用种子和控制组时发生的问题。 (NEO-41197)
+* 修复了FFDA上的一个问题，当个性化块包含以下字符之一时，该问题会导致在发送过程中（最多256个）阻止属于同一deliveryPart的所有收件人发送电子邮件： `' & < > "`. 个性化块现在支持这些字符(例如：firstname=&quot;Brian O&#39;Neil&quot;)。 (NEO-43184)
+* 修复了在将自定义架构用作目标映射时可能导致跟踪工作流失败的问题。 现在，在通过目标映射向导生成broadLog架构时，我们会确保指向自定义定位架构的外来链接类型正确无误。 (NEO-43506)
+* 修复了可能导致非英语语言的FFDA部署工作流失败的问题。 (NEO-44561)
 
 ## 8.2.10 版 {#release-8-2-10}
 
@@ -76,7 +168,9 @@ _2021 年 10 月 28 日_
 <tr> 
 <td> <p>Unicity Service 是新的 Cloud Database Manager 组件。它可帮助用户维护和监测 Cloud Database 表内唯一键值约束的完整性。这样，您就可以降低插入重复键值的风险。
 <p>由于 Cloud Database 不强制执行唯一性约束，因此 Unicity Service 在应用程序级别引入了<b>一套新护栏</b>，以减少使用 Adobe Campaign 管理数据时插入重复项的风险。</p> 
-<p>Unicity Service 会启动一个名为 <b>ffdaUnicity</b> 的内置工作流程，以监测唯一性约束并在检测到重复项时发出警报。</p></td> </tr> 
+<p>Unicity Service 会启动一个名为 <b>ffdaUnicity</b> 的内置工作流程，以监测唯一性约束并在检测到重复项时发出警报。</p>
+<p>有关更多信息，请参阅<a href="../architecture/keys.md">详细文档</a>。</p>
+</td> </tr> 
 </tbody> 
 </table>
 

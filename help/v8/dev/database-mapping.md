@@ -2,9 +2,9 @@
 title: 营销活动数据库映射
 description: 营销活动数据库映射
 exl-id: a804d164-58bf-4b15-a48e-8cf75d793668
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1485'
 ht-degree: 0%
 
 ---
@@ -196,9 +196,9 @@ SQL字段约束如下：
    </schema>
    ```
 
-### 主键 — 标识符
+### 主键 — 标识符{#primary-key}
 
-Adobe Campaign表的主键是 **通用唯一ID(UUID)** 由数据库引擎自动生成。 键值在整个数据库中是唯一的。 在插入记录时，将自动生成键的内容。
+在 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，则Adobe Campaign表的主键是 **通用唯一ID(UUID)** 由数据库引擎自动生成。 键值在整个数据库中是唯一的。 在插入记录时，将自动生成键的内容。
 
 **示例**
 
@@ -231,7 +231,7 @@ Adobe Campaign表的主键是 **通用唯一ID(UUID)** 由数据库引擎自动�
 
 >[!CAUTION]
 >
->在创建表时，主键设置为0的记录会自动插入。 此记录用于避免外连接，该连接对卷表无效。 默认情况下，所有外键都将初始化为值0，以便在未填充数据项时始终在连接时返回结果。
+>在创建表时，主键设置为0的记录会自动插入。 此记录用于避免外连接，这对卷表无效。 默认情况下，所有外键都将初始化为值0，以便在未填充数据项时始终在连接时返回结果。
 
 ## 链接：表之间的关系 {#links--relation-between-tables}
 
@@ -353,6 +353,8 @@ Adobe Campaign表的主键是 **通用唯一ID(UUID)** 由数据库引擎自动�
 * **目标**:链接架构的键值（“cus:recipient”架构）
 * **未绑定**:链接将声明为1-N基数的集合元素（默认情况下）
 * **完整性**:默认情况下为“define”（可以使用源架构上的链接定义中的“revIntegrity”属性强制进行）。
+
+请注意， `autouuid="true"`参数在 [企业(FFDA)部署](../architecture/enterprise-deployment.md) 仅。
 
 ### 示例 2 {#example-2}
 

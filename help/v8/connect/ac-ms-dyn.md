@@ -4,9 +4,10 @@ description: 了解如何使用Campaign和Microsoft Dynamics
 feature: Overview
 role: Data Engineer
 level: Beginner
-source-git-commit: 59ccee717d857545ed2b3ba6fb850ef8a9d0907b
+exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1366'
 ht-degree: 2%
 
 ---
@@ -48,7 +49,7 @@ ht-degree: 2%
 
 保存后，Microsoft Azure目录将分配一个唯一 **应用程序（客户端）ID** 到您的应用程序。 您稍后在Adobe Campaign中配置Dynamics 365时将需要此ID。
 
-在 [Microsoft Dynamics 365文档](https://docs.microsoft.com/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory).
+在 [Microsoft Dynamics 365文档](https://docs.microsoft.com/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory){target=&quot;_blank&quot;}。
 
 ### 生成Microsoft Dynamics证书密钥标识符和密钥ID {#config-certificate-key-id}
 

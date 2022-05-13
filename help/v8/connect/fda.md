@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-source-git-commit: 2d0b40e49afdfd71e8bb5c3f0b1d569a715420b2
+source-git-commit: 355b9219ffd9d481d15d2d0982d49923842cc27b
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1699'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,11 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->FDA的兼容数据库列在 [兼容性矩阵](../start/compatibility-matrix.md).
+>* FDA的兼容数据库列在 [兼容性矩阵](../start/compatibility-matrix.md).
+>
+>* 在 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，可使用特定外部帐户管理Campaign本地数据库与Snowflake云数据库之间的通信。 此外部帐户是按Adobe为您设置的，不得修改。
+>
+
 
 利用促销活动联合数据访问选项，可在第三方数据库中扩展您的数据模型。 它将自动检测目标表的结构并使用SQL源中的数据。
 
@@ -56,7 +60,12 @@ ht-degree: 3%
 1. 作为Adobe Managed Services用户，请联系Adobe以在Campaign实例上安装驱动程序。
 1. 安装驱动程序后，在Adobe Campaign服务器上设置与数据库对应的外部帐户并测试外部帐户。 [了解详情](#fda-external-account)
 1. 在Adobe Campaign中创建外部数据库的模式。 这允许您标识外部数据库的数据结构。 [了解详情](#create-data-schema)
-1. 如果需要，从之前创建的架构创建新的目标映射。 如果投放的收件人来自外部数据库，则需要此参数。 此实施具有与消息个性化相关的限制。 [了解详情](#define-data-mapping)
+
+<!--
+1. If needed, create a new target mapping from the previously created schema. This is required if the recipients of your deliveries come from the external database. This implementation comes with limitations related to message personalization. [Learn more](#define-data-mapping)
+-->
+
+请注意，使用Campaign [企业(FFDA)部署](../architecture/enterprise-deployment.md)，则无法从FDA访问的外部数据库中存储的模式创建目标映射。 因此，投放的收件人不能来自外部数据库。
 
 ## 外部数据库外部帐户{#fda-external-account}
 
@@ -121,39 +130,40 @@ ht-degree: 3%
 
 1. 单击 **[!UICONTROL Save]** 确认创建。
 
-## 定义目标映射{#define-data-mapping}
+<!-- 
+## Define the target mapping{#define-data-mapping}
 
-您可以在外部表中定义数据的映射。
+You can define a mapping on the data in an external table.
 
-为此，在创建外部表的架构后，您需要创建新的投放映射，以将此表中的数据用作投放目标。
+To do this, once the schema of the external table has been created, you need to create a new delivery mapping to use the data in this table as a delivery target.
 
-为此，请执行以下步骤：
+To do this, follow these steps:
 
-1. 浏览到 **[!UICONTROL Administration]** `>` **[!UICONTROL Campaign Management]** `>` **[!UICONTROL Target mappings]** 从Adobe Campaign资源管理器。
+1. Browse to **[!UICONTROL Administration]** `>` **[!UICONTROL Campaign Management]** `>` **[!UICONTROL Target mappings]** from Adobe Campaign explorer.
 
-1. 创建新的目标映射，然后选择之前创建的架构作为目标维度。
+1. Create a new target mapping and select the schema you just created as the targeting dimension.
 
    ![](assets/new-target-mapping.png)
 
 
-1. 指示存储投放信息的字段（姓氏、名字、电子邮件、地址等）。
+1. Indicate the fields where the delivery information is stored (last name, first name, email, address, etc.).
 
    ![](assets/wf_new_mapping_define_join.png)
 
-1. 指定信息存储的参数，包括扩展架构的后缀，以便它们易于识别。
+1. Specify the parameters for information storage, including the suffix of the extension schemas for them to be easily identifiable.
 
    ![](assets/wf_new_mapping_define_names.png)
 
-   您可以选择是否存储排除项(**排除日志**)，带消息(**broadlog**)或在单独的表中。
+   You can choose whether to store exclusions (**excludelog**), with messages (**broadlog**) or in a separate table.
 
-   您还可以选择是否管理此投放映射的跟踪(**trackinglog**)。
+   You can also choose whether to manage tracking for this delivery mapping (**trackinglog**).
 
-1. 然后，选择要考虑的扩展。 扩展类型取决于您平台的参数和选项（查看您的许可合同）。
+1. Then select the extensions to be taken into account. The extension type depends on your platform's parameters and options (view your license contract).
 
    ![](assets/wf_new_mapping_define_extensions.png)
 
-   单击 **[!UICONTROL Save]** 用于启动投放映射创建的按钮：所有链接的表都会根据所选参数自动创建。
-
+   Click the **[!UICONTROL Save]** button to launch delivery mapping creation: all linked tables are created automatically based on the selected parameters.
+-->
 
 ## 权限{#fda-permissions}
 

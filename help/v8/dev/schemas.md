@@ -2,9 +2,9 @@
 title: 使用Campaign模式
 description: 模式入门
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 355b9219ffd9d481d15d2d0982d49923842cc27b
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1266'
 ht-degree: 5%
 
 ---
@@ -133,9 +133,43 @@ type="string" enum="exTransactionTypeEnum"/>
 >
 >您还可以使用用户管理的枚举(通常在 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** )以指定给定字段的值。 这些是有效的全局枚举，如果枚举在您正在使用的特定架构之外使用，则最好选择这些枚举。
 
+<!--
+## Index {#index} 
+
+In the context of a [FDA Snowflake deployment](../architecture/fda-deployment.md), you need to declare indexes. Indexes are the first elements declared in the main element of the schema. 
+
+They can be unique or not, and reference one or more fields.
+
+Examples:
+
+```
+<dbindex name="email" unique="true">
+  <keyfield xpath="@email"/>
+</dbindex>
+```
+
+```
+<dbindex name="lastNameAndZip">
+  <keyfield xpath="@lastName"/>
+  <keyfield xpath="location/@zipCode"/>
+</dbindex>
+```
+
+The **xpath** attribute points to the field in your schema that you wish to index.
+
+>[!IMPORTANT]
+>
+>It is important to remember that the SQL query read performance gains provided by indexes also come with a performance hit on writing records. The indexes should therefore be used with precaution.
+
+For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-fields) section.
+
+-->
+
 ## 键 {#keys}
 
-每个表都必须至少具有一个键，并且通常情况下，可使用 **@autouuid** 和 **奥托普** 属性设置为 **true**.
+每个表都必须至少具有一个键，并且通常情况下，可使用 **奥托普** 属性设置为 **true**.
+
+此外，在 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，则使用 **@autouuid** 将其设置为 **true**.
 
 还可以使用 **内部** 属性。
 
@@ -147,7 +181,7 @@ type="string" enum="exTransactionTypeEnum"/>
 </key>
 ```
 
-在本例中，不要让 **@autouuid** 属性会创建一个名为“id”的默认主键，我们将指定自己的“houselId”主键。
+在本例中，不要让 **@autopk** 或 **@autouuid** 属性会创建一个名为“id”的默认主键，我们将指定自己的“houselId”主键。
 
 >[!CAUTION]
 >

@@ -5,18 +5,18 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
+source-git-commit: ec044d6176b4d00302d7a7e24520b97669bede49
 workflow-type: tm+mt
-source-wordcount: '1486'
-ht-degree: 2%
+source-wordcount: '1827'
+ht-degree: 1%
 
 ---
 
 # 事务型消息传递入门{#send-transactional-messages}
 
-事务型消息传递（消息中心）是一个Campaign模块，用于管理触发器消息。 这些消息是从信息系统触发的事件生成的，可以是：例如，发票、订单确认、发运确认、密码更改、产品不可用通知、帐户对帐单或网站帐户创建。
+事务型消息传递（消息中心）是一个Campaign模块，用于管理触发器消息。 这些通知是从信息系统触发的事件生成的，可以是：发票、订单确认、发运确认、密码更改、产品不可用通知、帐户对帐单、网站帐户创建等。
 
-![](../assets/do-not-localize/speech.png)  作为托管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support) ，以在您的环境中安装和配置Campaign事务型消息传递。
+![](../assets/do-not-localize/speech.png)  作为托管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support){target=&quot;_blank&quot;}，在您的环境中安装和配置Campaign事务型消息传递。
 
 事务型消息用于发送：
 
@@ -26,13 +26,58 @@ ht-degree: 2%
 
 ![](../assets/do-not-localize/glass.png) 有关事务性消息传递设置的详细信息，请参阅 [此部分](../config/transactional-msg-settings.md).
 
-![](../assets/do-not-localize/glass.png) 了解中的事务型消息传递架构 [本页](../dev/architecture.md).
+![](../assets/do-not-localize/glass.png) 了解事务型消息传递架构 [本页](../architecture/architecture.md).
 
->[!CAUTION]
+## 事务型消息传递工作原理 {#transactional-messaging-operating-principle}
+
+Adobe Campaign事务型消息传递模块集成到信息系统中，该信息系统可返回要更改为个性化事务型消息的事件。 这些消息可以单独发送，也可以通过电子邮件、短信或推送通知批量发送。
+
+例如，假设您是一家拥有网站的公司，客户可以在该网站购买产品。
+
+Adobe Campaign允许您向将产品添加到购物车的客户发送通知电子邮件。 如果其中某人离开您的网站但未完成购买（触发促销活动事件的外部事件），则会自动向他们发送购物车放弃电子邮件（事务型消息投放）。
+
+实施此功能的主要步骤如下所述：
+
+1. [创建事件类型](#create-event-types).
+1. [创建和设计消息模板](#create-message-template). 在此步骤中，您必须将事件链接到消息。
+1. [测试消息](#test-message-template).
+1. [发布消息模板](#publish-message-template).
+
+设计并发布事务型消息模板后，如果触发了相应的事件，则相关数据将通过PushEvent和PushEvents发送到Campaign [SOAP方法](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html){target=&quot;_blank&quot;}，则投放会发送到目标收件人。
+
+## 创建事件类型 {#create-event-types}
+
+要确保每个事件都可以更改为个性化消息，您首先需要创建 **事件类型**.
+
+When [创建消息模板](#create-message-template)，则将选择与要发送的消息匹配的事件类型。
+
+>[!IMPORTANT]
 >
->事务型消息传递需要特定的许可证。 请核实您的许可协议。
+>您必须先创建事件类型，然后才能在消息模板中使用它们。
 
-## 定义事务型消息模板
+要创建将由Adobe Campaign处理的事件类型，请执行以下步骤：
+
+1. 登录到 **控制实例**.
+
+1. 转到 **[!UICONTROL Administration > Platform > Enumerations]** 文件夹。
+
+1. 选择 **[!UICONTROL Event type]** 列表。
+
+1. 单击 **[!UICONTROL Add]** 创建枚举值。 这可以是订单确认、密码更改、订单交付更改等。
+
+   <!--![](assets/messagecenter_eventtype_enum_001.png)-->
+
+   >[!IMPORTANT]
+   >
+   >每个事件类型必须匹配 **[!UICONTROL Event type]** 枚举。
+
+1. 创建分项列表值后，请注销并重新登录到您的实例，以便创建生效。
+
+>[!NOTE]
+>
+>了解有关 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target=&quot;_blank&quot;}。
+
+## 定义事务型消息模板 {#create-message-template}
 
 每个事件都可触发个性化消息。 要实现此目的，您需要创建一个消息模板以匹配每个事件类型。 模板包含个性化事务型消息的必需信息。 您还可以使用模板来测试消息预览，并在将消息投放到最终目标之前使用种子地址发送校样。
 
@@ -54,9 +99,9 @@ ht-degree: 2%
 
    ![](assets/messagecenter_create_model_003.png)
 
-   必须在控制实例上通过Adobe创建要由Adobe Campaign处理的事件类型。
+   必须事先创建要由Adobe Campaign处理的事件类型。
 
-   >[!NOTE]
+   >[!CAUTION]
    >
    >事件类型绝不应链接到多个模板。
 
@@ -91,6 +136,8 @@ ht-degree: 2%
 1. 使用以下语法填写标记： **元素名称**.@**属性名称** 如下所示。
 
    ![](assets/messagecenter_create_custo_2.png)
+
+## 测试事务型消息模板 {#test-message-template}
 
 ### 添加种子地址{#add-seeds}
 
@@ -174,7 +221,7 @@ ht-degree: 2%
 
 ![](assets/messagecenter_send_proof_003.png)
 
-### 发布模板
+## 发布模板 {#publish-message-template}
 
 在控制实例上创建的消息模板完成后，您可以发布该消息模板。 此过程还将在所有执行实例上发布该实例。
 
@@ -206,8 +253,7 @@ ht-degree: 2%
 >
 >但是，如果添加非空值，则相应字段将像往常一样在下次发布后更新。
 
-
-### 取消发布模板
+## 取消发布模板
 
 在执行实例上发布消息模板后，即可取消发布该模板。
 

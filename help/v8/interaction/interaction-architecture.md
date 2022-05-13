@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 7a710960-7e41-4462-bd5e-18e874aa46f8
-source-git-commit: dafdf471fcaf2b6c6e3e8d5028cd65e35e7df3eb
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
 source-wordcount: '1314'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Adobe Campaign交互模块提出了两种类型的交互：
 
 ## 分布式架构
 
-为了能够支持可扩展性并在集客渠道24/7提供服务， **互动** 模块在分布式架构中实现。 此类架构已与 [消息中心](../dev/architecture.md#transac-msg-archi) 和由多个实例组成：
+为了能够支持可扩展性并在集客渠道24/7提供服务， **互动** 模块在分布式架构中实现。 此类架构已与 [消息中心](../architecture/architecture.md#transac-msg-archi) 和由多个实例组成：
 
 * 一个或多个专用于出站渠道并包含营销和环境设计基础的控制实例
 * 专用于入站渠道的一个或多个执行实例

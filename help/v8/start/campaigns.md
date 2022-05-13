@@ -5,10 +5,10 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: 9e07353859e63b71abb61526f40675f18837bc59
+source-git-commit: 36b7a7be766febca4448c6114f5acac35e30873a
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 100%
+source-wordcount: '905'
+ht-degree: 82%
 
 ---
 
@@ -18,13 +18,13 @@ Adobe Campaign 提供了一套解决方案，可帮助您在所有线上和线�
 
 活动包括操作（投放）和流程（导入或提取文件）以及资源（营销文档、投放概要）。 它们用于营销活动。活动是项目的一部分，项目包含在活动计划中。
 
-## 跨渠道营销活动编排
+## 跨渠道营销活动编排{#cross-channel-orchestration}
 
 您可以利用 Adobe Campaign 在多个渠道上设计和编排有针对性的个性化活动：电子邮件、直邮、SMS、推送通知等。通过单个界面为您提供计划、编排、配置、个性化、自动化、执行和衡量所有活动和通信所需的全部功能。
 
 ![](assets/campaign-tab.png)
 
-### 核心概念
+### 核心概念{#ac-core-concepts}
 
 在开始实施营销活动之前，您需要熟悉以下概念：
 
@@ -40,7 +40,7 @@ Adobe Campaign 提供了一套解决方案，可帮助您在所有线上和线�
 
 * **定期活动**：定期活动是根据模板的执行计划自动创建的活动。
 
-## 营销活动工作区
+## 营销活动工作区{#ac-workspace}
 
 Adobe Campaign 允许您从一个统一的控制中心创建、配置、执行和分析所有营销活动。
 
@@ -49,7 +49,7 @@ Adobe Campaign 允许您从一个统一的控制中心创建、配置、执行�
 ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/about-marketing-campaigns/accessing-marketing-campaigns.html?lang=zh-Hans#orchestrating-campaigns)以了解如何访问和实施营销活动{target=&quot;_blank&quot;}
 
 
-## 开始的关键步骤
+## 开始的关键步骤{#gs-ac-start}
 
 创建跨渠道营销活动的关键步骤有：
 
@@ -90,4 +90,25 @@ Adobe Campaign 允许您从一个统一的控制中心创建、配置、执行�
    Adobe Campaign 允许您为营销活动的主要阶段设置协作审批流程。对于每个活动，您可以批准投放目标、内容和成本。负责审批工作的 Adobe Campaign 操作员收到电子邮件通知后，可通过控制台或 Web 连接批准或拒绝批准相关请求。
 
    ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=zh-Hans#orchestrating-campaigns)以了解如何设置和管理审批{target=&quot;_blank&quot;}
+
+
+## 分布式营销附加组件{#distributed-marketing-add-on}
+
+Adobe Campaign提供 **分布式营销** 中央实体（总部、营销部门等）之间实施合作活动的附加内容 和地方实体（商店、区域机构等）。 此合作基于称为 **[!UICONTROL List of campaign packages]**，向本地实体提供由中央实体设计的营销活动模板。
+
+>[!NOTE]
+>
+>此功能从Campaign v8.3开始可用。要检查您的版本，请参阅 [此部分](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+
+[](../assets/do-not-localize/book.png) 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/distributed-marketing/about-distributed-marketing.html){target=&quot;_blank&quot;}
+
+## 分布式营销附加组件{#response-manager-add-on}
+
+Adobe Campaign提供 **响应管理** 可让您衡量营销活动的成功和盈利能力的附加功能，或提供跨通信渠道的建议：电子邮件、移动设备、直邮等
+
+>[!NOTE]
+>
+>此功能从Campaign v8.3开始可用。要检查您的版本，请参阅 [此部分](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+
+[](../assets/do-not-localize/book.png) 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html){target=&quot;_blank&quot;}
 

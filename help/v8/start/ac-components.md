@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: b54a39ee6d106d68446878815c068571e310aaa3
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 1%
@@ -76,4 +76,4 @@ Campaign客户端控制台使用SOAP XML通过HTTP连接到Web服务器。 Web�
 
 用户使用HTTP连接到Campaign应用程序服务器。 所有数据和信息都在Campaign数据库中管理。 如果Campaign开发人员执行任何配置更改，则会在数据库中捕获该配置。 如果营销人员创建新营销活动，则与该新营销活动相关的所有信息和数据也会在数据库中进行管理。 营销人员执行营销活动时，会通过SMTP服务器将电子邮件投放从Campaign服务器发送到用户档案。 当用户档案与电子邮件投放进行交互（如打开电子邮件）时，该跟踪数据会发送回跟踪服务器。
 
-![](../assets/do-not-localize/glass.png) [进一步了解Campaign流程](../dev/general-architecture.md#dev-env).
+![](../assets/do-not-localize/glass.png) [进一步了解Campaign流程](../architecture/general-architecture.md#dev-env).

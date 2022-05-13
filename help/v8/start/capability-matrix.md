@@ -5,81 +5,52 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 2d0b40e49afdfd71e8bb5c3f0b1d569a715420b2
+source-git-commit: 220ff4ff31e55aba085f47de67347e28bcb3e30d
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 100%
+source-wordcount: '556'
+ht-degree: 40%
 
 ---
 
 # [!DNL Campaign Classic] v7 - [!DNL Campaign] v8 功能{#gs-matrix}
 
-作为现有的 [!DNL Campaign Classic] v7 用户，您与 [!DNL Adobe Campaign] 的交互方式不会发生任何大的变化。除了 UI 和配置步骤中显现的小变化外，v8 中的大多数变化都不明显。
+作为前身 [!DNL Campaign Classic] v7用户，您不应期望与之交互的方式出现任何重大中断 [!DNL Adobe Campaign]. 除了 UI 和配置步骤中显现的小变化外，v8 中的大多数变化都不明显。
 
-关键变化：
+Adobe Campaign v8可作为a **托管Cloud Service**. 这一新产品将同类最佳服务与主动监督和及时警报相结合，重点关注三个方面：
 
-* 区段创建速度提高 200 倍
-* 投放速度提升
-* 实时报告包含多维数据集
+* **云敏捷性**  — 通过Adobe实现自动化，具有优化、标准化的云部署，以实现更可预测的性能、更高的敏捷性和更高的自助服务工作效率。
+* **服务体验**  — 主动预防性可用性、容量和性能监控和响应，以防中断、更快地解决事件，并定期审查服务以持续改进。
+* **深入的Campaign专业知识**  — 客户工程专家团队提供的高亲和度服务，可满足功能、技术或可交付性需求，降低部署风险，并改进变更管理。
 
-作为 [!DNL Campaign Classic] 用户，请注意， v7 的大多数功能[!DNL Campaign Classic]都可以在[!DNL Campaign] v8 中使用，但[本节](#gs-removed)所列的一小部分功能除外。其他功能将在以后的版本中发布。[在本节中了解详情](#gs-unavailable-features)
-
-![](../assets/do-not-localize/glass.png)如需详细了解[!DNL Campaign] v8 架构，请参阅[此页面](../dev/architecture.md)。
-
-## 产品配置变化
-
-### [!DNL Campaign] 和 [!DNL Snowflake] {#ac-gs-snowflake}
-
-[!DNL Adobe Campaign] v8 可与两个数据库配合使用：用于用户界面实时消息传递和统一查询、通过 API 写入的本地数据库，以及用于活动执行、批量查询和工作流执行的云数据库。
-
-这是软件架构的重大变化。数据现在位于远程位置，Campaign 会联合所有数据（包括用户档案）。[!DNL Campaign] 流程现在实现了端到端扩展，从定位到消息执行：数据摄取、分段、定位、查询、投放一般只需要几分钟即可运行。这个新版本解决了扩展的全部难题，同时保持了相同级别的灵活性和可扩展性。用户档案的数量几乎是无限的，而且可以延长数据保留时间。
-
-云存储在 **[!DNL Snowflake]** 中执行：一种新的内置&#x200B;**外部帐户**&#x200B;可确保与云数据库的连接。它由 Adobe 配置，不可修改。[了解详情](../config/external-accounts.md)
-
-需要在云数据库中移动或复制的任何内置模式/表格都在 **xxl** 命名空间下附带内置模式扩展。这些扩展包含将内置模式从[!DNL Campaign]本地数据库移动到 [!DNL Snowflake] 云数据库并相应地调整其结构所需的任何修改：新的 UUID、更新的链接等。
-
->[!CAUTION]
->
-> 客户数据并不存储在本地 [!DNL Campaign] 数据库中。因此，所有自定义表格都需要在云数据库中创建。
-
-特定 API 可用于管理本地数据库和云数据库之间的数据。在[本页面](../dev/new-apis.md)中了解这些新 API 的工作方式以及如何使用它们。
-
-### 数据复制
-
-特定的技术工作流可处理需要存在于两端（Campaign 本地数据库和云数据库）的表格的复制操作。此工作流每小时都会触发一次，并且依赖于新的内置 JavaScript 库。
+作为前身 [!DNL Campaign Classic] 用户，请注意， [!DNL Campaign Classic] v7功能 [!DNL Campaign] v8，除其中一小组外，列在 [此部分](#gs-removed). 其他功能将在以后的版本中发布。[在本节中了解详情](#gs-unavailable-features)
 
 >[!NOTE]
 >
-> 已根据表格的大小（XS、XL等）创建了多种复制策略。
-> 部分表格是实时复制的，其他表格则是每小时复制一次。部分表格将具有增量更新，而其他表格则将进行全面更新。
+> Campaign v8依赖于混合架构。 如果您从Campaign Classicv7进行过渡，请注意，所有投放都经过中间源服务器。 [了解详情](../architecture/architecture.md)
+>
+> 因此，内部路由是 **不可能** 在Campaign v8中，并且外部帐户已相应禁用。
 
-[了解关于数据复制的更多信息](../config/replication.md)
 
-### ID 管理
+## [!DNL Campaign] 和 [!DNL Snowflake] {#ac-gs-snowflake}
 
-Campaign v8 对象现在使用&#x200B;**通用唯一标识符 (UUID)**，允许使用无限的唯一值来标识数据。
+Campaign v8适用于 [!DNL Snowflake]. 提供了两种部署模型。
 
-请注意，此 ID 是基于字符串的，而不是按顺序的。主密钥不是 Campaign v8 中的数字值，您需要在模式中使用 **autouuid** 和 **autopk** 属性。
+![](../assets/do-not-localize/glass.png)如需详细了解[!DNL Campaign] v8 架构，请参阅[此页面](../architecture/architecture.md)。
 
-在 Campaign Classic v7 及更早的版本中，模式（即表格）中密钥的唯一性在数据库引擎级别进行处理。一般来说，PostgreSQL、Oracle 或 SQL Server 等 Classic 数据库引擎包含原生机制，以防止通过主密钥和/或唯一索引根据列或一组列插入重复的行。在数据库级别设置正确的索引和主密钥后，这些版本中不存在重复的 ID。
 
-Adobe Campaign v8 以 Snowflake 为核心数据库。随着查询规模的显着增长，Snowflake 数据库的分布式架构无法提供这样的机制来管理并对表格中某个密钥强制执行唯一性。因此，使用 Adobe Campaign v8 时，没有任何内容会阻止在表格中摄取重复的密钥。现在，最终用户负责确保 Adobe Campaign 数据库中密钥的一致性。[了解详情](../dev/keys.md)
+## 使用Adobe ID连接到Campaign{#adobe-id}
 
-### 简化的维护
-
-Campaign 用户不需要成为数据库专家：不再需要执行复杂的数据库维护操作或编制复杂的表格索引。
-
-## 连接至 Campaign
-
-Campaign 用户通过其 Adobe ID 进行连接。使用同一个 Adobe ID 来管理与单个帐户关联的所有 Adobe 计划和产品。
+Campaign 用户通过其 Adobe ID 进行连接。同一Adobe ID用于将所有Adobe计划和产品与单个帐户(适用于所有Adobe Experience Cloud解决方案)关联。
 
 ![](../assets/do-not-localize/glass.png) 有关如何连接到 [!DNL Campaign]，请参阅[此页面](connect.md)。
 
-## 报告
+## 使用多维数据集分析数据{#adobe-reporting}
 
-请注意，与 Adobe Campaign v7 相比，Campaign Classic 报表已得到优化，并提供了更好的扩展功能。 多维数据集的限制不适用。
+使用Marketing Analytics模块来分析和测量数据、计算统计数据、简化和优化报表创建和计算。 此外，创建报告并构建目标群体：识别后，这些区段会存储在可在Adobe Campaign中使用的列表（定位、分段等）中。
 
-## 工作流 {#workflow}
+Adobe Campaign多维数据集报表经过优化，比Campaign Classicv7具有更好的扩展功能。 以前对多维数据集的限制在Campaign v8中不适用。
+
+## 更改数据源 {#change-data-source}
 
 Campaign v8 增添了一个定位工作流活动：**[!UICONTROL Change data source]**。
 
@@ -102,7 +73,7 @@ Campaign v8 增添了一个定位工作流活动：**[!UICONTROL Change data sou
 >
 >* 从现有 Campaign Classic v7 环境进行迁移的功能尚不可用。
 >
->* 如果您不确定部署模式或有任何问题，请与您的客户团队联系。
+>* 如果您不确定部署模型或有任何问题，请联系您的Adobe帐户主管。
 
 
 ## 不支持的功能{#gs-removed}
@@ -119,4 +90,4 @@ Campaign v8 增添了一个定位工作流活动：**[!UICONTROL Change data sou
 
 >[!NOTE]
 >
->用户界面中仍会显示某些不可用或不支持的功能。
+>用户界面中仍可看到某些不可用或不受支持的功能。

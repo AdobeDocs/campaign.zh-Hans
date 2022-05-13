@@ -5,7 +5,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: 63b53fb6a7c6ecbfc981c93a723b6758b5736acf
+source-git-commit: fbec41a722f71ad91260f1571f6a48383e99b782
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ![](../assets/do-not-localize/glass.png) 事务性消息传递功能在 [此部分](../send/transactional.md).
 
-![](../assets/do-not-localize/glass.png) 了解中的事务型消息传递架构 [本页](../dev/architecture.md).
+![](../assets/do-not-localize/glass.png) 了解中的事务型消息传递架构 [本页](../architecture/architecture.md).
 
 ## 定义权限
 
@@ -32,19 +32,19 @@ ht-degree: 0%
 
 ## 发送事务推送通知
 
-与Mobile应用程序渠道模块结合使用时，事务型消息传送允许您在移动设备上通过通知推送事务型消息。
+与移动设备应用程序渠道模块结合使用时，事务型消息传递允许您通过移动设备上的通知推送事务型消息。
 
 ![](../assets/do-not-localize/book.png) 有关Mobile应用程序渠道的详细信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages).
 
 要发送事务推送通知，您需要执行以下配置：
 
-1. 安装 **Mobile应用程序渠道** 包到控件和执行实例上。
+1. 安装 **移动设备应用程序渠道** 包到控件和执行实例上。
 
    >[!CAUTION]
    >
    >在安装新的Campaign内置包之前，请检查您的许可协议。
 
-1. 复制 **Mobile应用程序** 服务和执行实例上关联的移动应用程序。
+1. 复制 **移动应用程序** 服务和执行实例上关联的移动应用程序。
 
 为了使Campaign发送事务推送通知，事件必须包含以下元素：
 

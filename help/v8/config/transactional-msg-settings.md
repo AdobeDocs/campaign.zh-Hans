@@ -32,13 +32,13 @@ ht-degree: 0%
 
 ## 发送事务推送通知
 
-与移动设备应用程序渠道模块结合使用时，事务型消息传递允许您通过移动设备上的通知推送事务型消息。
+与Mobile应用程序渠道模块结合使用时，事务型消息传送允许您在移动设备上通过通知推送事务型消息。
 
 ![](../assets/do-not-localize/book.png) 有关移动设备应用程序渠道的详细信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html?lang=en#sending-messages).
 
 要发送事务推送通知，您需要执行以下配置：
 
-1. 安装 **Mobile应用程序渠道** 包到控件和执行实例上。
+1. 安装 **移动设备应用程序渠道** 包到控件和执行实例上。
 
    >[!CAUTION]
    >

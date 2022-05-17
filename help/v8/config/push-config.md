@@ -76,7 +76,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 >
 > * 请不要忘记下载google-services.json并将其添加到您的项目中。
 >
-> * 的 `apiKey` 必须与 `projectKey` 在链接到此Android应用程序的Adobe Campaign移动设备应用程序中设置。
+> * 的 `apiKey` 必须与 `projectKey` 在链接到此Android应用程序的Adobe Campaign Mobile应用程序中设置。
 
 
 ### 配置Android SDK

@@ -7,7 +7,7 @@ title: Campaign v8 文档
 source-git-commit: d2f4e54b0c37cc019061dd3a7b7048cd80876ac0
 workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -104,9 +104,9 @@ ht-degree: 94%
    + [Campaign + Twitter](connect/ac-tw.md)
    + [Campaign + 外部数据库](connect/fda.md)
    + Campaign + 您的 CRM {#ac-crm}
-      + [CRM连接器入门](connect/crm.md)
-      + [使用Campaign和SFDC](connect/ac-sfdc.md)
-      + [使用Campaign和Microsoft Dynamics](connect/ac-ms-dyn.md)
+      + [CRM 连接器入门](connect/crm.md)
+      + [使用 Campaign 和 SFDC](connect/ac-sfdc.md)
+      + [使用 Campaign 和 Microsoft Dynamics](connect/ac-ms-dyn.md)
       + [同步数据](connect/crm-data-sync.md)
 + 开发人员资源{#architecture}
    + [全局原则](dev/general-architecture.md)

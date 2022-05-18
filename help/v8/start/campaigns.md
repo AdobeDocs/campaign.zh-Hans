@@ -5,10 +5,10 @@ feature: Audiences
 role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: fc0be5fe82ba11e54851a8f612ece0b310447cdd
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 82%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -102,7 +102,7 @@ Adobe Campaign提供 **分布式营销** 中央实体（总部、营销部门等
 
 [](../assets/do-not-localize/book.png) 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/distributed-marketing/about-distributed-marketing.html){target=&quot;_blank&quot;}
 
-## 分布式营销附加组件{#response-manager-add-on}
+## 响应管理附加组件{#response-manager-add-on}
 
 Adobe Campaign提供 **响应管理** 可让您衡量营销活动的成功和盈利能力的附加功能，或提供跨通信渠道的建议：电子邮件、移动设备、直邮等
 

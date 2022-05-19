@@ -4,7 +4,8 @@ description: 了解使用Adobe Campaign Enhanced MTA发送电子邮件的范围�
 feature: Email
 role: Data Engineer
 level: Beginner
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
+source-git-commit: 0fa0db62f45097755bebcbf434614c4c835d886a
 workflow-type: tm+mt
 source-wordcount: '972'
 ht-degree: 4%
@@ -112,4 +113,3 @@ Enhanced MTA有其自己的MX规则，允许根据您自己的历史电子邮件
 | 从Enhanced MTA报告软弹回消息 | 中未更改 **[!UICONTROL Success]** 百分比 | 服务提供商考虑 |
 | 软弹回消息重试成功 | **[!UICONTROL Success]** 百分比相应地增加 | 已发送 |
 | 软弹回消息重试失败 | 中未更改 **[!UICONTROL Success]** 百分比 | 失败 |
-

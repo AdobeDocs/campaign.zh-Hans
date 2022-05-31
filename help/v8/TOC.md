@@ -7,7 +7,7 @@ title: Campaign v8 文档
 source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -38,10 +38,10 @@ ht-degree: 92%
 + 架构 {#architecture}
    + [全局原则](architecture/general-architecture.md)
    + [架构](architecture/architecture.md)
-   + FDASnowflake部署 {#fda}
-      + [什么是FDASnowflake?](architecture/fda-deployment.md)
-   + 企业(FFDA)部署 {#ffda}
-      + [什么是Campaign FDA?](architecture/enterprise-deployment.md)
+   + FDA Snowflake 部署 {#fda}
+      + [什么是 FDA-Snowflake？](architecture/fda-deployment.md)
+   + 企业 (FFDA) 部署{#ffda}
+      + [什么是 Campaign FFDA？](architecture/enterprise-deployment.md)
       + 特征 {#ffda-characteristics}
          + [密钥管理和唯一性](architecture/keys.md)
          + [新 API](architecture/new-apis.md)
@@ -122,8 +122,8 @@ ht-degree: 92%
       + [使用 Campaign 和 SFDC](connect/ac-sfdc.md)
       + [使用 Campaign 和 Microsoft Dynamics](connect/ac-ms-dyn.md)
       + [同步数据](connect/crm-data-sync.md)
-+ 开发人员资源{#developer}
-   + [营销活动数据模型](dev/datamodel.md)
++ 开发人员资源 {#developer}
+   + [Campaign 数据模型](dev/datamodel.md)
    + 模式和表单{#shemas-forms}
       + [使用模式](dev/schemas.md)
       + [创建模式](dev/create-schema.md)

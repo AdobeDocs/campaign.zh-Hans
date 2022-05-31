@@ -6,15 +6,15 @@ role: Data Engineer
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '876'
-ht-degree: 30%
+ht-degree: 100%
 
 ---
 
 # Adobe Campaign v8 有哪些新增功能？ {#ac-gs-what-is-new}
 
-Adobe Campaign v8专为需要一流的云解决方案以实现企业规模跨渠道营销活动管理的跨渠道营销人员而设计。 它提供了强大的ETL和数据管理功能，以帮助策划和策划完美的营销活动。 其编排引擎提供丰富的多接触点营销计划，其核心重点是基于批处理的驱动历程。 它还与可扩展的实时消息传送服务器相配对，该服务器使营销团队能够根据来自任何IT系统的包含所有内容的有效负载发送预定义的消息，以便进行密码重置、订单确认、电子收据等操作。
+Adobe Campaign v8 专为需要同类最佳云解决方案的跨渠道营销人员而设计，可帮助实现企业规模的跨渠道营销活动管理。它提供了强大的 ETL 和数据管理功能，以帮助制定和策划完美的营销活动。它的编排引擎提供丰富的多接触点营销计划，核心重点放在基于批处理驱动的历程。它还配有一个可扩展的实时消息服务器，使营销团队能够根据任何 IT 系统的总体有效负载发送预定义的消息，如密码重置、订单确认、电子收据等。
 
 Adobe Campaign v8 在基础架构、安全性、可投放性和监测方面有着显著改进。
 
@@ -24,54 +24,54 @@ Adobe Campaign v8 在基础架构、安全性、可投放性和监测方面有�
 
 关键功能包括：
 
-* **中央工作流管理**. 从创建区段、准备消息到投放，提高营销活动各个方面的速度和规模。
+* **中央工作流管理**。从创建区段、准备消息到投放，提高营销活动各个方面的速度和规模。
 
-   Adobe Campaign通过单个易用的界面，让您能够轻松地使渠道同步进行活动编排。 因此，您的在线渠道（如电子邮件、Web、移动设备和社交渠道）与您的离线渠道（包括直邮、呼叫中心、店内等）相匹配。 它使您能够在数字和传统渠道中为客户提供一致的情境式体验。 Adobe Campaign可简化向客户在任何渠道上可能采用的所有路径交付内容的过程。
+   Adobe Campaign 提供了用于进行活动编排的简单易用的单个界面，让您能够轻松地使渠道保持同步。因此，在线渠道（如电子邮件、Web、移动设备和社交渠道）与离线渠道（包括直邮、呼叫中心、店内等）相匹配。它使您能够在数字和传统渠道中为客户提供一致的情境式体验。Adobe Campaign 使您可以通过任何渠道轻松将内容投放到客户可能选择的所有路径。
 
-   ![](../assets/do-not-localize/glass.png) [进一步了解Campaign工作流](../config/workflows.md)
+   ![](../assets/do-not-localize/glass.png) [了解关于活动工作流的更多信息](../config/workflows.md)
 
-* **个性化电子邮件营销**. 创建与上下文相关的个性化电子邮件，使其与客户的其他体验保持一致。
+* **个性化电子邮件营销**。创建上下文相关的个性化电子邮件，使它们提供的体验与客户的其他体验保持一致。
 
-   借助Adobe Campaign，您可以让电子邮件变得更好、更个性化、更盈利。 电子邮件创建简单，交付方便。 Campaign v8让您能够灵活地设计、个性化、测试、优化和改进您发送的每条消息。
+   借助 Adobe Campaign，您可以制作质量更好、更加个性化且获益更高的电子邮件内容。电子邮件的创建步骤简单且可轻松投放。 Campaign v8 让您能够灵活地设计、个性化、测试并改进您发送的每条消息。
 
-   ![](../assets/do-not-localize/glass.png) [进一步了解个性化功能](create-message.md)
+   ![](../assets/do-not-localize/glass.png) [了解关于个性化功能的更多信息](create-message.md)
 
-* **客户数据管理**. 查看客户的全貌，以便快速创建企业级的个性化营销活动。
+* **客户数据管理**。全面了解客户的情况，以便快速创建企业级的个性化营销活动。
 
-   Adobe Campaign可帮助您根据所有渠道中收集的数据构建客户用户档案。 通过此用户档案，您可以跨渠道编排活动。 通过连接所有营销渠道，您可以自定义每个客户将采用的对其有意义的方式的不同历程。
+   Adobe Campaign 可帮助您根据在所有渠道中收集的数据构建客户档案。使用此用户档案，您可以跨渠道编排营销活动。通过连接所有营销渠道，您可以根据客户的具体需求对其所经过的不同历程进行自定义。
 
    ![](../assets/do-not-localize/glass.png) [了解有关客户数据管理的更多信息](audiences.md)
 
-* **一流的营销活动管理**. Adobe Campaign v8为营销人员提供了一流的功能，可以跨渠道规划、启动和测量促销活动。
+* **同类最佳的营销活动管理**。Adobe Campaign v8 为营销人员提供了同类最佳的功能，可用于跨渠道规划、启动和衡量营销活动。
 
-   这些功能包括提供客户单一视图的集成用户档案。 用于大规模构建营销活动受众的数据管理和分段。 跨渠道工作流管理，用于自动化多渠道和多波次营销活动。 集成电子邮件，减少对成本高昂的ESP的依赖。 报告和分析，以了解客户行为和促销活动效果。
+   丰富多样的功能中包含集成式用户档案，可提供有关客户的单一视图。用于大规模构建营销活动受众的数据管理和分段功能。跨渠道工作流管理功能，用于实现多渠道和多波次营销活动的自动化。集成电子邮件，减少对成本高昂的 ESP 的依赖。用于了解客户行为和营销活动效果的报告和分析功能。
 
-   ![](../assets/do-not-localize/glass.png) [进一步了解营销活动管理](campaigns.md)
+   ![](../assets/do-not-localize/glass.png) [了解关于营销活动管理的更多信息](campaigns.md)
 
 
-* **与Adobe Experience Platform的连接**. Adobe Campaign v8支持带有Real-Time CDP和Adobe Experience Platform的Data Connectors，因此组织可以利用实时统一的客户资料。
+* **连接至 Adobe Experience Platform**。Adobe Campaign v8 支持 Real-Time CDP 和 Adobe Experience Platform 的 Data Connectors，因此组织可以利用实时一致的客户档案。
 
-   此外，Adobe Campaign v8本身与实时历程编排功能集成，以便营销人员可以重复使用Adobe Campaign中相同的模板和交付功能，以便与客户实时互动。 这些投资将可以优化 Adobe Campaign 客户体验并解锁新的用例，如向活动添加个性化实时客户旅程的能力。
+   此外，Adobe Campaign v8 与 Journey Orchestration 功能原生集成，因此营销人员可以在 Adobe Campaign 中重复使用相同的模板和投放功能，以便与客户实时互动。这些投资将可以优化 Adobe Campaign 客户体验并解锁新的用例，如向活动添加个性化实时客户旅程的能力。
 
    您还可以通过旅程人工智能配置预测发送时间优化和预测参与度评分，并提高打开率、点击量和收入。
 
    ![](../assets/do-not-localize/glass.png) [了解关于 Campaign 集成的更多信息](../connect/integration.md)
 
 
-* **托管式云服务**。Adobe Campaign v8可作为托管Cloud Service使用，提供主动预防性监督、及时警报和服务管理。
+* **托管式云服务**。Adobe Campaign v8 是一款托管式云服务，提供主动监督、及时发送警报和服务治理功能。
 
-   Adobe管理Cloud Service为营销人员提供了更灵活、安全且可扩展的跨渠道活动管理解决方案，并且总体拥有成本较低。 新产品将服务与主动监督和及时警报相结合。
+   Adobe 托管式云服务以较低的总体拥有成本为营销人员提供更加灵活、安全且可扩展性更高的跨渠道营销活动管理解决方案。新产品将各种服务与主动监督和及时发送警报的功能相结合。
 
-* **速度和规模**。Adobe Campaign现在可以利用云规模数据库技术来显着提高其规模和速度。
+* **速度和规模**。Adobe Campaign 现在可以利用云规模数据库技术显著提升其规模和速度。
 
-   [Campaign v8企业版](../architecture/enterprise-deployment.md) 将 **完全联合数据访问** (FFDA):现在，云数据库中的所有数据都是远程的。 通过此新产品，Campaign v8简化了数据管理：云数据库上不需要索引。 您只需创建表格、复制数据即可开始。[!DNL Snowflake]是 Campaign 云数据库，它将为您带来速度和耐用性上的提升：不会出现系统活动峰值过载的情况。云数据库技术无需特定的维护来保证性能级别。
+   [Campaign v8 企业版](../architecture/enterprise-deployment.md)引入了&#x200B;**完全联合数据访问** (FFDA) 概念：所有数据现在都位于云数据库上的远程位置。凭借这种新模式，Campaign v8 简化了数据管理：云数据库上不需要索引。您只需创建表格、复制数据即可开始。[!DNL Snowflake] 是 Campaign 云数据库，它将为您带来速度和耐用性上的提升：不会出现系统活动峰值过载的情况。云数据库技术无需特定的维护来保证性能级别。
 
-   ![](../assets/do-not-localize/glass.png) [了解有关企业(FFDA)部署的更多信息](../architecture/enterprise-deployment.md)
+   ![](../assets/do-not-localize/glass.png) [了解关于企业 (FFDA) 部署的更多信息](../architecture/enterprise-deployment.md)
 
 
 >[!CAUTION]
 >
->* Campaign v8是 **仅** 可作为托管Cloud Service使用，并且不能部署在内部部署或混合环境中。
+>* Campaign v8 **仅**&#x200B;作为托管式云服务提供，不能部署在内部部署或混合环境中。
 >
 >* 从现有 Campaign Classic v7 环境进行迁移的功能尚不可用。
 

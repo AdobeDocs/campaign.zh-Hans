@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1188'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -35,11 +35,11 @@ ht-degree: 94%
 
 Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守适用的数据隐私法律并适应收件人的偏好。您可以管理：
 
-* **数据获取**：通过 Adobe Campaign，您可以收集数据，包括个人信息和敏感信息。因此，获得并管理收件人的同意至关重要。在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans#data-acquisition){target=&quot;_blank&quot;}
+* **数据获取**：通过 Adobe Campaign，您可以收集数据，包括个人信息和敏感信息。因此，获得并管理收件人的同意至关重要。请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans#data-acquisition) {target=&quot;_blank&quot;} 以了解详情。
 
-* **用户同意和数据保留**:了解如何获取用户同意、设置双重选择加入订阅机制、促进选择退出并配置 [Campaign Classic隐私文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans#consent){target=&quot;_blank&quot;}
+* **用户同意和数据保留**：请参阅 [Campaign Classic 隐私文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans#consent) {target=&quot;_blank&quot;}，了解如何获得用户同意、设置双重选择加入订阅机制、简化选择退出并配置数据保留
 
-* **隐私和数据保护法规**:请参阅 [此部分](privacy.md) 有关隐私要求以及这些法规对贵组织和Adobe Campaign有何影响的信息。
+* **隐私和数据保护法规**：请参阅[此部分](privacy.md)，了解有关隐私要求的信息以及这些法规对贵组织和 Adobe Campaign 有何影响。
 
 ### 安全性
 
@@ -51,7 +51,7 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
 您可以手动将用户添加到 Campaign，并将其与群组关联，与您的角色层级保持一致。随后，用户将能够登录并获取适合他们的数据和权限。
 
-![](../assets/do-not-localize/book.png) 请参阅[本节](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=zh-Hans#getting-started)了解如何将用户添加到 Adobe Campaign。
+![](../assets/do-not-localize/book.png) 请参阅[本节](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management.html?lang=zh-Hans#getting-started){target=&quot;_blank&quot;}了解如何将用户添加到 Adobe Campaign。
 
 ### 安装 Campaign Client Console
 

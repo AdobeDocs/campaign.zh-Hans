@@ -5,9 +5,9 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 0c01b0a597e54ae93dd581ccba6f19b2ff13f956
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '550'
 ht-degree: 40%
 
 ---
@@ -63,8 +63,6 @@ Campaign v8 增添了一个定位工作流活动：**[!UICONTROL Change data sou
 请注意，在此版本 Campaign 中未提供某些功能，例如：
 
 * 营销资源管理
-* 分布式营销
-* 响应管理器
 * 混合/内部部署模型
 
 >[!CAUTION]
@@ -83,7 +81,7 @@ Campaign v8 增添了一个定位工作流活动：**[!UICONTROL Change data sou
 * 优惠券
 * Web 跟踪
 * 调查
-* 社交媒体营销使用 Facebook
+* 社交媒体营销
 * ACS 连接器（高级服务）
 * 与 LDAP 集成
 * 用户/密码登录

@@ -4,7 +4,7 @@ user-guide-title: Campaign v8
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8
 title: Campaign v8 文档
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 92%
@@ -73,8 +73,8 @@ ht-degree: 92%
    + [最佳实践](audiences/audiences-best-practices.md)
 + 发送消息{#send}
    + 电子邮件 {#emails}
-      + [设计和发送电子邮件](send/email.md)
-      + [关于增强的MTA](send/enhanced-mta.md)
+      + [设计和验证电子邮件](send/email.md)
+      + [发送和监控电子邮件](send/send.md)
    + [短信](send/sms.md)
    + [推送通知](send/push.md)
    + [LINE 消息](send/line.md)

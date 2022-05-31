@@ -5,10 +5,10 @@ feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
 workflow-type: tm+mt
-source-wordcount: '2849'
-ht-degree: 6%
+source-wordcount: '3009'
+ht-degree: 7%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 6%
 
 ## 消息投放失败的原因 {#delivery-failure-reasons}
 
-消息失败时有两种类型的错误。 每个投放失败类型均确定地址是否被发送到 [隔离](quarantines.md#quarantine-reason) 或不。
+消息失败时有两种类型的错误。 每种投放失败类型均确定地址是否被发送到 [隔离](quarantines.md#quarantine-reason) 或不。
 
 * **硬退回**
 硬退回是在ISP确定对订户地址的邮件尝试为无法发送后生成的永久故障。 在Adobe Campaign中，分类为不可交付的硬退回会添加到隔离列表，这意味着不会重新尝试这些退回。 在某些情况下，如果失败原因未知，则会忽略硬退回。
@@ -48,7 +48,7 @@ ht-degree: 6%
 
 这些类型的错误按如下方式管理：
 
-* **同步错误**:Adobe Campaign投放服务器联系的远程服务器会立即返回错误消息。 不允许将投放发送到用户档案的服务器。 Enhanced MTA可确定退件类型并确定错误的条件，并将该信息发送回Campaign，以确定是否应隔离相关的电子邮件地址。 请参阅[退回邮件鉴别](#bounce-mail-qualification)。
+* **同步错误**:Adobe Campaign投放服务器联系的远程服务器会立即返回错误消息。 不允许将投放发送到用户档案的服务器。 邮件传输代理(MTA)确定退件类型并确定错误的条件，并将该信息发送回Campaign，以确定是否应隔离相关的电子邮件地址。 请参阅[退回邮件鉴别](#bounce-mail-qualification)。
 
 * **异步错误**:接收服务器会在稍后重新发送退回邮件或重新发送SR。 此错误由与错误相关的标签限定。 最晚的异步错误，可能发生在发送投放的一周之后。
 
@@ -64,7 +64,7 @@ ht-degree: 6%
 
 目前，在Adobe Campaign中处理退回邮件鉴别的方式取决于错误类型：
 
-* **同步错误**:Enhanced MTA可确定退件类型和资格条件，并将该信息发回至Campaign。 中的退回资格 **[!UICONTROL Delivery log qualification]** 表未用于 **同步** 投放失败错误消息。
+* **同步错误**:MTA可确定退件类型和资格条件，并将该信息发回至Campaign。 中的退回资格 **[!UICONTROL Delivery log qualification]** 表未用于 **同步** 投放失败错误消息。
 
 * **异步错误**:Campaign用于确定异步投放失败的规则列在 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** 节点。 异步退回由inMail流程通过 **[!UICONTROL Inbound email]** 规则。 有关更多信息，请参阅 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target=&quot;_blank&quot;}。
 
@@ -97,9 +97,22 @@ Bounce mails can have the following qualification status:
 
 如果消息投放在出现临时错误后失败(**柔和** 或 **已忽略**),Campaign重试发送。 这些重试可一直执行到投放持续时间结束为止。
 
-重试次数和频率由Enhanced MTA根据消息ISP返回的退回响应的类型和严重性设置。
+软退件重试次数及其间隔时间由MTA根据从消息电子邮件域返回的退回响应的类型和严重性确定。
 
-<!--NO LONGER WITH MOMENTUM - The default configuration defines five retries at one-hour intervals, followed by one retry per day for four days. The number of retries can be changed globally or for each delivery or delivery template. If you need to adapt delivery duration and retries, contact Adobe Support.-->
+>[!NOTE]
+>
+>Campaign不使用投放属性中的重试设置。
+
+## 有效期
+
+Campaign投放中的有效期设置限制为 **3.5天或以下**. 对于投放，如果您在Campaign中定义的值超过3.5天，则不会将其考虑在内。
+
+例如，如果在Campaign中将有效期设置为默认值5天，则软跳出消息将进入MTA重试队列，并从该消息到达MTA后仅重试3.5天。 在这种情况下，将不使用Campaign中设置的值。
+
+消息在 MTA 队列中停留 3.5 天且投放失败后，该消息将超时，在投放日志中的状态将从 **[!UICONTROL Sent]** 更新为 **[!UICONTROL Failed]**。
+
+有关有效期的更多信息，请参阅 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target=&quot;_blank&quot;}。
+
 
 ## 电子邮件错误类型 {#email-error-types}
 
@@ -150,7 +163,7 @@ Bounce mails can have the following qualification status:
    <td> 收件人的地址是控制组的一部分。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 双线 </td> 
+   <td> 两次 </td> 
    <td> 已忽略 </td> 
    <td> 10 </td> 
    <td> 此投放中已包含收件人的地址。<br /> </td> 
@@ -195,7 +208,7 @@ Bounce mails can have the following qualification status:
    <td> 未定义 </td> 
    <td> 未定义 </td> 
    <td> 0 </td> 
-   <td> 该地址正在进行鉴别，因为错误数尚未递增。 当服务器发送新的错误消息时，会发生此类错误： 这可能是一个孤立的错误，但如果再次发生，则错误计数会增加，从而提醒技术团队。然后，他们可以执行消息分析，并通过 <span class="uicontrol">管理</span> / <span class="uicontrol">营销活动管理</span> / <span class="uicontrol">无法交付项管理</span> 树结构中的节点。<br /> </td> 
+   <td> 该地址正在进行鉴别，因为错误数尚未递增。 当服务器发送新的错误消息时，会发生此类错误： 这可能是一个孤立的错误，但如果再次发生，则错误计数会增加，从而提醒技术团队。然后，他们可以执行消息分析，并通过 <span class="uicontrol">管理</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">无法交付项管理</span> 树结构中的节点。<br /> </td> 
   </tr> 
   <tr> 
    <td> 不符合选件的资格 </td> 

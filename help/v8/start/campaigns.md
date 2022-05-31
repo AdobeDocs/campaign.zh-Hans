@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
 source-git-commit: fc0be5fe82ba11e54851a8f612ece0b310447cdd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '905'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -92,23 +92,23 @@ Adobe Campaign 允许您从一个统一的控制中心创建、配置、执行�
    ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html?lang=zh-Hans#orchestrating-campaigns)以了解如何设置和管理审批{target=&quot;_blank&quot;}
 
 
-## 分布式营销附加组件{#distributed-marketing-add-on}
+## 分布式营销附加功能{#distributed-marketing-add-on}
 
-Adobe Campaign提供 **分布式营销** 中央实体（总部、营销部门等）之间实施合作活动的附加内容 和地方实体（商店、区域机构等）。 此合作基于称为 **[!UICONTROL List of campaign packages]**，向本地实体提供由中央实体设计的营销活动模板。
-
->[!NOTE]
->
->此功能从Campaign v8.3开始可用。要检查您的版本，请参阅 [此部分](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
-
-[](../assets/do-not-localize/book.png) 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/distributed-marketing/about-distributed-marketing.html){target=&quot;_blank&quot;}
-
-## 响应管理附加组件{#response-manager-add-on}
-
-Adobe Campaign提供 **响应管理** 可让您衡量营销活动的成功和盈利能力的附加功能，或提供跨通信渠道的建议：电子邮件、移动设备、直邮等
+Adobe Campaign 提供&#x200B;**分布式营销**&#x200B;附加功能，用于在中央实体（总部、营销部门等）和本地实体（商店、区域代理等）之间实施协作营销活动。此合作基于称为 **[!UICONTROL List of campaign packages]** 的共享工作区，在其中，中央实体可以将其设计的营销活动模板提供给本地实体。
 
 >[!NOTE]
 >
->此功能从Campaign v8.3开始可用。要检查您的版本，请参阅 [此部分](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>从 Campaign v8.3 开始提供此功能。要检查您的版本，请参阅[此部分](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-[](../assets/do-not-localize/book.png) 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html){target=&quot;_blank&quot;}
+[](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/distributed-marketing/about-distributed-marketing.html?lang=zh-Hans){target=&quot;_blank&quot;} 以了解如何配置并使用 Campaign 的分布式营销功能
+
+## 响应管理附加功能{#response-manager-add-on}
+
+Adobe Campaign 提供&#x200B;**响应管理**&#x200B;附加功能，可让您衡量营销活动的成功性和盈利能力，还可提供跨通信渠道（电子邮件、移动设备、直邮等）的优惠建议。
+
+>[!NOTE]
+>
+>从 Campaign v8.3 开始提供此功能。要检查您的版本，请参阅[此部分](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+
+[](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=zh-Hans){target=&quot;_blank&quot;} 以了解如何配置并使用 Campaign 的响应管理器
 

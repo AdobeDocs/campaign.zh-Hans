@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '356'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -29,11 +29,11 @@ ht-degree: 88%
 ### 操作系统
 
 * **Microsoft Windows Server** 2019、2016、2012
-* **Microsoft Windows** 11（从Campaign v8.3开始）、10、8、
+* **Microsoft Windows** 11（从 Campaign v8.3 开始）、10、8、
 
 >[!NOTE]
 >
->Microsoft Windows 10适用于日语实例。
+>建议对日语实例使用 Microsoft Windows 10。
 
 ### 浏览器
 
@@ -59,16 +59,16 @@ ht-degree: 88%
 
 您可以使用 Campaign 通过关联的 Mobile SDK 在以下列出的操作系统上发送[推送通知](../send/push.md)。
 
-* **Android** 12（从Campaign v8.3开始）、9.0、8.x、7.x，带有Campaign Android SDK内部版本1.1.1。
-* **Apple iOS** 9 - 15 适用于 Campaign iOS SDK 版本 1.0.26，与 32 位和 64 位版本兼容。从Campaign v8开始，支持iOS 15。
+* **Android** 12（从 Campaign v8.3 开始）、9.0、8.x、7.x，带有 Campaign Android SDK 内部版本 1.1.1。
+* **Apple iOS** 9 - 15 适用于 Campaign iOS SDK 内部版本 1.0.26，与 32 位和 64 位版本兼容。从 Campaign v8 开始支持 iOS 15。
 
 ## Web 访问
 
 以下浏览器与 Campaign 兼容，可用于[进行 Web 访问](connect.md#web-access)。
 
-* **Microsoft Edge**、 **Mozilla Firefox**、**Google Chrome**、**Safari** （最新版本）
+* **Microsoft Edge**、**Mozilla Firefox**、**Google Chrome**、**Safari**（最新版本）
 
-## 如何检查Campaign版本和构建{#version}
+## 如何检查您的 Campaign 版本和内部版本{#version}
 
 访问 **Help > About…** 菜单检查您的版本。
 

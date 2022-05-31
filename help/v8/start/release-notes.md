@@ -7,9 +7,9 @@ level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2161'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 83%
 
 ## 8.3.8 版 {#release-8-3-8}
 
-_2022年5月18日_
+_2022 年 5 月 18 日_
 
 **新增功能**
 
@@ -27,12 +27,12 @@ _2022年5月18日_
 <table> 
 <thead>
 <tr> 
-<th> <strong>时间敏感通知</strong><br /> </th> 
+<th> <strong>时效性通知</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>在iOS 15中，Apple新增了敏感通知的概念，当通知被视为敏感并且需要实时联系用户时，该概念可让应用程序开发人员控制绕过焦点模式。</p>
+<td> <p>在 iOS 15 中，Apple 新增了时效性通知的概念，当通知具有时效性并且需要实时联系用户时，该概念让应用程序开发人员可以控制对“专注”模式的绕过。</p>
 <p>有关更多信息，请参阅<a href="../send/push.md#send-notifications-on-ios">详细文档</a>。</p>
 </td> 
 </tr> 
@@ -42,12 +42,12 @@ _2022年5月18日_
 <table> 
 <thead>
 <tr> 
-<th> <strong>核心Privacy Service集成</strong><br /> </th> 
+<th> <strong>Core Privacy Service 集成</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Campaign v8现在与Adobe隐私核心服务集成。 从隐私核心服务推送到所有 Experience Cloud 解决方案的隐私请求由 Campaign 通过专用工作流自动处理。</p>
+<td> <p>Campaign v8 现在与 Adobe Privacy Core Service 集成。从 Privacy Core Service 推送到所有 Experience Cloud 解决方案的隐私请求由 Campaign 通过专用工作流自动处理。</p>
 <p>有关更多信息，请参阅<a href="privacy.md">详细文档</a>。</p>
 </td> 
 </tr> 
@@ -64,7 +64,7 @@ _2022年5月18日_
 <tbody>
 <tr>
 <td>
-<p>营销活动响应管理允许您衡量营销活动的成功和ROI，或在所有渠道中提供建议：电子邮件、移动设备、直邮等</p>
+<p>通过 Campaign 的响应管理功能，您可以衡量营销活动的成功性和投资回报率，还可以衡量所有渠道中（电子邮件、移动设备、直邮等）的优惠建议。</p>
 <p>有关更多信息，请参阅<a href="../start/campaigns.md#response-manager-add-on">详细文档</a>。</p>
 </td>
 </tr>
@@ -79,7 +79,7 @@ _2022年5月18日_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>营销活动分布式营销让您能够在中心实体（总部、营销部门等）之间实施协作营销活动 和地方实体（销售点、地区机构等）。 通过共享工作区（营销活动包），您可以创建营销活动模板并将其推荐给本地实体。</p>
+<td> <p>借助 Campaign 的分布式营销营销，您可以在中央实体（总部、营销部门等）和本地实体（销售点、地区代理等）之间实施协作营销活动。通过共享工作区（营销活动包），您可以创建营销活动模板并将其推荐给本地实体。</p>
 <p>有关更多信息，请参阅<a href="../start/campaigns.md#distributed-marketing-add-on">详细文档</a>。</p>
 </td> 
 </tr> 
@@ -88,29 +88,29 @@ _2022年5月18日_
 
 **兼容性更新**
 
-* Campaign v8 SDK现在支持Android 12和iOS 15进行推送通知。
-* Campaign v8现在与Windows 11兼容。
+* Campaign v8 SDK 现在支持在 Android 12 和 iOS 15 上使用“推送通知”。
+* Campaign v8 现在与 Windows 11 兼容。
 
 请参阅 [Campaign 兼容性矩阵](compatibility-matrix.md)。
 
 **改进**
 
-* Microsoft Exchange Online OAuth 2.0 POP3身份验证现在在Campaign中受支持。 [了解更多信息](../config/external-accounts.md#bounce-mails-external-account)
-* 已对Microsoft Dynamics Connector Web API应用关键修复。
-* 添加了新的运算符和组架构写入(operatorWrite)命名权限，以允许用户插入、更新和删除运算符(xtk:operator)和运算符组(xtk:group)架构。
+* Campaign 现在支持适用于 POP3 的 Microsoft Exchange Online OAuth 2.0 身份验证。[了解更多信息](../config/external-accounts.md#bounce-mails-external-account)
+* 已对 Microsoft Dynamics Connector Web API 应用了以下重要修复。
+* 添加了新的运算符和组模式写入 (operatorWrite) 命名权限，以允许用户插入、更新和删除运算符 (xtk:operator) 和运算符组 (xtk:group) 模式。
 
 <!--* You can now enable the Email BCC (blind carbon copy) capability to store emails sent by Campaign at the delivery level, through the dedicated option in the delivery properties. [Read more](../config/email-settings.md#email-bcc)-->
 <!--* To ensure better performances, a new "Split" option is now activated by default in the Routing external account. This option allows messages to be automatically split across your mid-sourcing instances in order to be delivered faster to the recipients.-->
-* 现在，可以在单个中间源上配置多个LINE有效帐户。
-* Web进程的默认连接数从50个增加到150个。
-* Campaign提供了一组新护栏，以防止在Snowflake数据库中插入重复的键。 [了解更多信息](../architecture/keys.md)
+* 现在，可以在单个中间源上配置多个 LINE 活动帐户。
+* Web 进程的默认连接数从 50 个增加到 150 个。
+* Campaign 提供了一组新护栏，以防止在 Snowflake 数据库中插入重复的键。[了解更多信息](../architecture/keys.md)
 
 **修补程序**
 
-* 修复了在同一定期投放中使用种子和控制组时发生的问题。 (NEO-41197)
-* 修复了FFDA上的一个问题，当个性化块包含以下字符之一时，该问题会导致在发送过程中（最多256个）阻止属于同一deliveryPart的所有收件人发送电子邮件： `' & < > "`. 个性化块现在支持这些字符(例如：firstname=&quot;Brian O&#39;Neil&quot;)。 (NEO-43184)
-* 修复了在将自定义架构用作目标映射时可能导致跟踪工作流失败的问题。 现在，在通过目标映射向导生成broadLog架构时，我们会确保指向自定义定位架构的外来链接类型正确无误。 (NEO-43506)
-* 修复了可能导致非英语语言的FFDA部署工作流失败的问题。 (NEO-44561)
+* 修复了在同一循环投放中使用种子和对照组时发生的问题。(NEO-41197)
+* 修复了 FFDA 上的一个问题。当个性化块包含以下字符之一时，该问题会导致在执行发送进程（最多 256 个）期间属于同一个 deliveryPart 的对所有收件人的电子邮件发送被阻止：`' & < > "`。个性化块现在支持这些字符（例如：firstname=&quot;Brian O&#39;Neil&quot;）。(NEO-43184)
+* 修复了在将自定义模式用作目标映射时可能导致跟踪工作流失败的问题。现在，在通过目标映射向导生成 broadLog 模式时，我们会确保指向自定义定位模式的外部链接类型正确无误。(NEO-43506)
+* 修复了可能导致非英语语言的 FFDA 部署工作流失败的问题。(NEO-44561)
 
 ## 8.2.10 版 {#release-8-2-10}
 

@@ -5,9 +5,9 @@ description: Campaign v8 文档
 breadcrumb-title: Campaign v8
 title: Campaign v8 文档
 source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '351'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -74,7 +74,7 @@ ht-degree: 97%
 + 发送消息{#send}
    + 电子邮件 {#emails}
       + [设计和验证电子邮件](send/email.md)
-      + [发送和监控电子邮件](send/send.md)
+      + [发送和监测电子邮件](send/send.md)
    + [短信](send/sms.md)
    + [推送通知](send/push.md)
    + [LINE 消息](send/line.md)

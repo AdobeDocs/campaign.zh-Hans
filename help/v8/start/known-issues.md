@@ -6,10 +6,10 @@ role: Data Engineer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 1b88ca57858efbfec6467452677620d59e9c9e32
+source-git-commit: fe425f9309af31a13b52695b103d530a6b89e3b1
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 2%
+source-wordcount: '433'
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 2%
 >
 >Adobe自行发布此已知问题列表。 它基于客户报表的数量、严重性和解决方法的可用性。 如果遇到的问题未列出，则可能不符合此页面中发布的条件。
 
-## 更改数据源活动问题 {#issue-1}
+## 更改数据源活动问题#1 {#issue-1}
 
 ### 说明{#issue-1-desc}
 
@@ -32,7 +32,7 @@ ht-degree: 2%
 
 1. 连接到客户端控制台并创建工作流。
 1. 添加 **查询** 活动和 **更改数据源** 活动。
-1. 在 **电子邮件**，字符串。
+1. 在 **电子邮件**，这是一个字符串。
 1. 运行工作流并右键单击过渡以查看群体：电子邮件记录显示为 `****`.
 1. 检查工作流日志：the **更改数据源** 活动会将这些记录解释为数值。
 
@@ -57,7 +57,7 @@ ht-degree: 2%
 
 
 
-## 由于反斜线，更改数据源活动失败 {#issue-2}
+## 更改数据源活动问题#2 {#issue-2}
 
 ### 说明{#issue-2-desc}
 

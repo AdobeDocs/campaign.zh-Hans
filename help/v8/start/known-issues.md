@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: e82ae1158926fb6335380626158089c6394377a1
+source-git-commit: 2705e9b23f9f8a61f799381434f7e94a226de1b9
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '421'
 ht-degree: 3%
 
 ---
@@ -32,13 +32,13 @@ ht-degree: 3%
 
 1. 连接到客户端控制台并创建工作流。
 1. 添加 **查询** 活动和 **更改数据源** 活动。
-1. 在 **电子邮件**，字符串。
+1. 在 **电子邮件**，这是一个字符串。
 1. 运行工作流并右键单击过渡以查看群体：电子邮件记录显示为 `****`.
 1. 检查工作流日志：the **更改数据源** 活动会将这些记录解释为数值。
 
 ### 错误消息{#issue-1-error}
 
-```
+```sql
 04/13/2022 10:00:18 AM              Executing change data source 'Ok' (step 'Change Data Source')
 04/13/2022 10:00:18 AM              Starting 1 connection(s) on pool 'nms:extAccount:ffda tractorsupply_mkt_stage8' (Snowflake, server='adobe-acc_tractorsupply_us_west_2_aws.snowflakecomputing.com', login='tractorsupply_stage8_MKT:tractorsupply_stage8')
 04/13/2022 10:00:26 AM              ODB-240000 ODBC error: {*}Numeric value '{*}******{*}{{*}}' is not recognized\{*}   File 'wkf1285541_13_1_0_47504750#458318uploadPart0.chunk.gz', line 1, character 10140   Row 279, column "WKF1285541_13_1_0"["BICUST_ID":1]   If you would like to continue loading when a
@@ -61,9 +61,9 @@ ht-degree: 3%
 
 ### 说明{#issue-2-desc}
 
-在通过Campaign加载活动将数据注入Snowflake云数据库时，该过程可能会因源文件中存在反斜线字符而失败。 字符串不会转义，并且数据在Snowflake时无法正确处理。
+当通过Campaign加载活动将数据注入Snowflake云数据库时，如果源文件中存在反斜线字符，则该过程会失败。 字符串不会转义，并且数据在Snowflake时无法正确处理。
 
-仅当反斜杠位于字符串的末尾时，才会出现此问题，例如：“巴克”。
+仅当字符串的末尾有反斜杠字符时，才会出现此问题，例如： `Barker\`.
 
 
 ### 复制步骤{#issue-2-repro}
@@ -76,7 +76,7 @@ ht-degree: 3%
 
 ### 错误消息{#issue-2-error}
 
-```
+```sql
 Error:
 04/21/2022 4:01:58 PM     loading when an error is encountered, use other values such as 'SKIP_FILE' or 'CONTINUE' for the ON_ERROR option. For more information on loading options, please run 'info loading_data' in a SQL client. SQLState: 22000
 04/21/2022 4:01:58 PM    ODB-240000 ODBC error: String '100110668547' is too long and would be truncated   File 'wkf1656797_21_1_3057430574#458516uploadPart0.chunk.gz', line 1, character 0   Row 90058, column "WKF1656797_21_1"["SCARRIER_ROUTE":13]   If you would like to continue
@@ -84,7 +84,7 @@ Error:
 
 ### 解决方法{#issue-2-workaround}
 
-作为解决方法，请导出带双引号的文件，并在诸如“Barker\”之类的值周围添加一个文件格式选项FIELD_ONOPIL_CONTRIUDED_BY = &#39;&#39;
+作为解决方法，请导出带有双引号的文件，并在问题值(例如 `Barker\`)并包含文件格式选项 `FIELD_OPTIONALLY_ENCLOSED_BY = '"'`.
 
 ### 内部引用{#issue-2-ref}
 

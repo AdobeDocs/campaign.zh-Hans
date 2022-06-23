@@ -6,10 +6,10 @@ role: Data Engineer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 0d1d20f9692ffa7b7ea7a8fb1161ebd19f533bab
+source-git-commit: 2c9455a09d6b557d525b1af5da9374a1d59201d7
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 2%
+source-wordcount: '368'
+ht-degree: 3%
 
 ---
 
@@ -22,21 +22,22 @@ ht-degree: 2%
 >
 >Adobe自行发布此已知问题列表。 它基于客户报表的数量、严重性和解决方法的可用性。 如果遇到的问题未列出，则可能不符合此页面中发布的条件。
 
-## 更改数据源活动问题#1 {#issue-1}
+<!--
+## Change Data Source activity issue #1 {#issue-1}
 
-### 说明{#issue-1-desc}
+### Description{#issue-1-desc}
 
-的 **更改数据源** 将数据从Campaign本地数据库传输到Snowflake云数据库时，活动失败。 在切换方向时，活动可能会产生问题。
+The **Change Data Source** activity is failing when transfering data from Campaign local database to Snowflake cloud database. When switching directions, the activity can generate issues.
 
-### 复制步骤{#issue-1-repro}
+### Reproduction steps{#issue-1-repro}
 
-1. 连接到客户端控制台并创建工作流。
-1. 添加 **查询** 活动和 **更改数据源** 活动。
-1. 在 **电子邮件**，这是一个字符串。
-1. 运行工作流并右键单击过渡以查看群体：电子邮件记录显示为 `****`.
-1. 检查工作流日志：the **更改数据源** 活动会将这些记录解释为数值。
+1. Connect to the client console and create a workflow.
+1. Add a **Query** activity and a **Change Data Source** activity.
+1. Define a query on the **email**, which is a string.
+1. Run the workflow and right-click the transition to view the population: the email records are displayed replaced by `****`.
+1. Check the workflow logs: the **Change Data Source** activity interprets these records as numeric values.
 
-### 错误消息{#issue-1-error}
+### Error message{#issue-1-error}
 
 ```sql
 04/13/2022 10:00:18 AM              Executing change data source 'Ok' (step 'Change Data Source')
@@ -47,23 +48,23 @@ ht-degree: 2%
 04/13/2022 10:00:26 AM              D_OPTIONALLY_ENCLOSED_BY = 'NONE') ON_ERROR = ABORT_STATEMENT PURGE = TRUE' could not be executed.
 ```
 
-### 解决方法{#issue-1-workaround}
+### Workaround{#issue-1-workaround}
 
-要将Snowflake从Cloud数据库传输到Campaign本地数据库并返回Snowflake，您必须使用两种不同的 **更改数据源** 活动。
+To have the data transfered from Snowflake cloud database to Campaign local database and back to Snowflake, you must use two different **Change Data Source** activities.
 
-### 内部引用{#issue-1-ref}
+### Internal reference{#issue-1-ref}
 
-引用：NEO-45549
+Reference: NEO-45549 
+-->
 
 
-
-## 更改数据源活动问题#2 {#issue-2}
+## 更改数据源活动问题 {#issue-2}
 
 ### 说明{#issue-2-desc}
 
 使用Campaign将数据注入Snowflake云数据库时 **查询** 和 **更改数据源** 活动时，当数据中存在反斜线字符时，该过程会失败。 源字符串不会进行转义，数据在Snowflake时无法正确处理。
 
-仅当字符串的末尾有反斜杠字符时，才会出现此问题，例如： `Barker\`.
+仅当反斜线字符位于字符串末尾时，才会出现此问题，例如： `Barker\`.
 
 
 ### 复制步骤{#issue-2-repro}
@@ -85,7 +86,11 @@ Error:
 
 ### 解决方法{#issue-2-workaround}
 
-作为解决方法，请导出带有双引号的文件，并在问题值(例如 `Barker\`)并包含文件格式选项 `FIELD_OPTIONALLY_ENCLOSED_BY = '"'`.
+解决方法是排除字符串末尾包含反斜线字符的数据，或将其从源文件中删除。
+
+<!--
+As a workaround, export the files with double quotes around the problematic values (like `Barker\`) and include a file format option `FIELD_OPTIONALLY_ENCLOSED_BY = '"'`.
+-->
 
 ### 内部引用{#issue-2-ref}
 
@@ -113,7 +118,13 @@ Error:
 
 ### 解决方法{#issue-3-workaround}
 
-您应使用旧版客户端控制台，以便能够在服务器上上传文件。
+解决方法是使用较旧的客户端控制台。 然后，您将能够在服务器上上传文件。
+
+作为管理员，您可以在 [Adobe分发服务](https://experience.adobe.com/downloads).
+
+了解如何访问Adobe分发服务 [本页](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)
+
+了解如何升级客户端控制台 [本页](connect.md)
 
 ### 内部引用{#issue-3-ref}
 

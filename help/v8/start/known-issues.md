@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 2c9455a09d6b557d525b1af5da9374a1d59201d7
+source-git-commit: 5fe921e83f36675837b72ca282315692151dcf67
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '401'
 ht-degree: 3%
 
 ---
@@ -120,9 +120,9 @@ As a workaround, export the files with double quotes around the problematic valu
 
 解决方法是使用较旧的客户端控制台。 然后，您将能够在服务器上上传文件。
 
-作为管理员，您可以在 [Adobe分发服务](https://experience.adobe.com/downloads).
+作为Campaign管理员，您可以在 [Adobe分发服务](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Rovast&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=4){target=&quot;_blank&quot;}。
 
-了解如何访问Adobe分发服务 [本页](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)
+了解如何访问Adobe分发服务 [本页](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans){target=&quot;_blank&quot;}。
 
 了解如何升级客户端控制台 [本页](connect.md)
 

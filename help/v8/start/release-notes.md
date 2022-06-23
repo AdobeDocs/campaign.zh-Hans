@@ -7,7 +7,7 @@ level: Beginner
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2161'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ _2022 年 5 月 18 日_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>在 iOS 15 中，Apple 新增了时效性通知的概念，当通知具有时效性并且需要实时联系用户时，该概念让应用程序开发人员可以控制对“专注”模式的绕过。</p>
+<td> <p>在 iOS 15 中，Apple 新增了“即时通知”的概念，当通知具有时效性并且需要实时联系用户时，该概念让应用程序开发人员可以控制对“专注”模式的绕过。</p>
 <p>有关更多信息，请参阅<a href="../send/push.md#send-notifications-on-ios">详细文档</a>。</p>
 </td> 
 </tr> 

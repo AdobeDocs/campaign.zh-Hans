@@ -1,11 +1,11 @@
 ---
 title: 自定义实例
 description: 了解如何自定义实例
-feature: Overview
+feature: Application Settings
 role: Data Engineer
 level: Beginner
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
-source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
+source-git-commit: c44fb2de4ed0e1661801313ae0430ba9d19542f0
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # 自定义实例{#gs-ac-custom}
 
-了解如何 **自定义Campaign实例**
+了解如何 **自定义Campaign实例**.
 
 >[!CAUTION]
 >
@@ -60,7 +60,7 @@ Adobe Campaign利用数据模式：
 
 ## 自定义功能板{#gs-custom-dashboards}
 
-Adobe Campaign界面使用许多Web应用程序来访问、管理收件人、投放、营销活动、库存等内容并与之进行交互。 在界面中，它们以功能板的形式显示，且仅包含一个页面。
+Adobe Campaign界面使用许多Web应用程序来访问、管理收件人、投放、营销活动、库存等内容并与其进行交互。 在界面中，它们以功能板的形式显示，且仅包含一个页面。
 
 现成的Web应用程序存储在“管理”>“配置”>“Web应用程序”节点中。
 

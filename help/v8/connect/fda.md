@@ -1,11 +1,11 @@
 ---
 title: 使用Campaign和外部数据库(FDA)
 description: 了解如何使用Campaign和外部数据库
-feature: Overview
+feature: Federated Data Access
 role: Data Engineer
 level: Beginner
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
 workflow-type: tm+mt
 source-wordcount: '1699'
 ht-degree: 3%
@@ -126,7 +126,7 @@ ht-degree: 3%
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
-1. 单击 **[!UICONTROL OK]** 确认。 Adobe Campaign会自动检测所选表的结构并生成逻辑架构。 请注意，Adobe Campaign不生成链接。
+1. 单击 **[!UICONTROL OK]** 确认。Adobe Campaign会自动检测所选表的结构并生成逻辑架构。 请注意，Adobe Campaign不生成链接。
 
 1. 单击 **[!UICONTROL Save]** 确认创建。
 

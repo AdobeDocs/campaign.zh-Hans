@@ -1,14 +1,14 @@
 ---
 title: 使用Adobe Campaign发送电子邮件
 description: 在 Campaign 中开始使用电子邮件
-feature: Overview
+feature: Email
 role: Data Engineer
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
+source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
 workflow-type: tm+mt
 source-wordcount: '581'
-ht-degree: 9%
+ht-degree: 16%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 9%
 
 电子邮件投放允许您向目标群体发送个性化电子邮件。
 
-![](../assets/do-not-localize/book.png) 在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/about-email-channel.html){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/about-email-channel.html) {target=&quot;_blank&quot;} 以了解详情。
 
 ## 创建您的第一个电子邮件投放
 
-创建与上下文相关的个性化电子邮件，使其与客户的其他体验保持一致。
+创建上下文相关的个性化电子邮件，使它们提供的体验与客户的其他体验保持一致。
 
 ![](assets/new-email-content.png)
 
@@ -103,4 +103,4 @@ Campaign提供了多种方法，用于在向受众发送电子邮件之前测试
 * 使用对照组
 * 检查电子邮件渲染
 
-![](../assets/do-not-localize/book.png) [在Campaign Classicv7文档中了解详情](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png)[请参阅 Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html) {target=&quot;_blank&quot;} 以了解详情。

@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8
 title: Campaign v8 文档
-source-git-commit: 40f13fd93ff620a743fd8c826b0b914a9e89ee7a
+source-git-commit: cda523168525c24ec1c976850bc336f273276ac9
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '352'
 ht-degree: 99%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 99%
 + 新增功能 {#new}
    + [重要功能](start/whats-new.md)
    + [发行说明](start/release-notes.md)
-   + [已知限制](start/known-limitations.md)
+   + [护栏](start/ac-guardrails.md)
    + [已知问题](start/known-issues.md)
    + [Classic v7 到 v8](start/v7-to-v8.md)
 + 开始 {#start}

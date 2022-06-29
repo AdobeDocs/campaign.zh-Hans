@@ -2,9 +2,9 @@
 title: Campaign输入表单
 description: 了解如何自定义输入表单
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
 workflow-type: tm+mt
-source-wordcount: '2552'
+source-wordcount: '2554'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ ht-degree: 0%
 
 默认情况下，每个字段都显示在一行中，并根据数据类型占用所有可用空间。
 
-![](../assets/do-not-localize/book.png) 所有表单属性均列在 [Campaign Classicv7文档](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html).
+![](../assets/do-not-localize/book.png) 所有表单属性均列在 [Campaign Classicv7文档](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html){target=&quot;_blank&quot;}。
 
 ## 格式化 {#formatting}
 

@@ -1,20 +1,20 @@
 ---
-title: 新的Campaign v8 API
-description: 新的Campaign v8 API
+title: FFDA部署API
+description: FFDA特定的API
 feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: dd822f88-b27d-4944-879c-087f68e79825
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '437'
 ht-degree: 2%
 
 ---
 
-# 新的Campaign API{#gs-new-api}
+# 特定FFDA促销活动API{#gs-new-api}
 
-在 [企业(FFDA)部署](enterprise-deployment.md), Campaign v8附带两个新API，用于管理Campaign本地数据库和云数据库之间的数据。 使用这些功能的先决条件是在架构上启用暂存机制。 [了解详情](staging.md)
+在 [企业(FFDA)部署](enterprise-deployment.md), Campaign v8附带两个特定API，用于管理Campaign本地数据库和云数据库之间的数据。 使用这些功能的先决条件是在架构上启用暂存机制。 [了解详情](staging.md)
 
 * 摄取API: **xtk.session.ingest**
 
@@ -30,7 +30,7 @@ ht-degree: 2%
 
 的 **xtk.session.ingest** API仅专用于数据插入。 无更新/删除。
 
-### 插入时不进行协调
+### 插入时不进行协调{#insert-no-reconciliation}
 
 **在工作流中**
 
@@ -170,7 +170,6 @@ xtk.session.IngestExt(xmlStagingRecipient);
 
 **通过SOAP调用**
 
-
 1. 获取身份验证令牌。
 1. 触发API。 负载是：
 
@@ -213,4 +212,4 @@ xtk.session.IngestExt(xmlStagingRecipient);
 
 **相关主题**
 
-* [Campaign Classicv7 JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html)
+* [Campaign Classicv7 JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html){target=&quot;_blank&quot;}

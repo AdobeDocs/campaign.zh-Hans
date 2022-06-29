@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 0fa0db62f45097755bebcbf434614c4c835d886a
+source-git-commit: 110cf2ff705ecbc0b3a1690e9dfc2791f5744b97
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 7%
+source-wordcount: '698'
+ht-degree: 9%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 Campaign可作为单个实例使用，每个实例代表一个完整的Campaign环境。
 
-Campaign可用的两种环境Cloud Service:
+提供了两种类型的环境：
 
 * **生产环境**:为业务从业者托管应用程序。
 
@@ -26,25 +26,22 @@ Campaign可用的两种环境Cloud Service:
 
 您可以将资源包从一个环境导出并导入到另一个环境。
 
-![](../assets/do-not-localize/book.png) 了解有关 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html)
+![](../assets/do-not-localize/book.png) 了解有关 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target=&quot;_blank&quot;}
 
 ## 部署模型{#ac-deployment}
 
-在 [企业(FFDA)部署](enterprise-deployment.md), [!DNL Adobe Campaign] v8与两个数据库配合使用：本地 [!DNL Campaign] 用于用户界面实时消息传送和统一查询和通过API和云写入的数据库 [!DNL Snowflake] 用于促销活动执行、批量查询和工作流执行的数据库。
+提供了两种部署模型：
 
-Campaign v8 Enterprise将 **完全联合数据访问** (FFDA):现在，云数据库中的所有数据都是远程的。 使用这一新架构，Campaign v8企业版(FFDA)部署简化了数据管理：云数据库上不需要索引。 您只需创建表格、复制数据即可开始。云数据库技术无需特定的维护来保证性能级别。
+* **营销活动联合数据访问 [!DNL Snowflake] 部署**
 
+   在 [[!DNL Snowflake] FDA部署](fda-deployment.md), [!DNL Adobe Campaign] v8连接到 [!DNL Snowflake] 要通过“联合数据访问”功能访问数据，请执行以下操作：您可以访问和处理存储在 [!DNL Snowflake] 数据库，而不改变Adobe Campaign数据的结构。 PostgreSQL是主数据库，Snowflake是次数据库。 您可以扩展数据模型并在Snowflake上存储数据。 随后，您可以对性能卓越的大型数据集运行ETL、分段和报告。
 
+* **Campaign Enterprise(FFDA)部署**
 
-<!--Two deployment models are available:
+   在 [企业(FFDA)部署](enterprise-deployment.md), [!DNL Adobe Campaign] v8与两个数据库配合使用：本地 [!DNL Campaign] 用于用户界面实时消息传送和统一查询和通过API和云写入的数据库 [!DNL Snowflake] 用于促销活动执行、批量查询和工作流执行的数据库。
 
-* **Campaign FDA [!DNL Snowflake] deployment**
+   Campaign v8 企业版引入了&#x200B;**完全联合数据访问** (FFDA) 概念：所有数据现在都位于云数据库上的远程位置。使用这一新架构，Campaign v8企业版(FFDA)部署简化了数据管理：云数据库上不需要索引。 您只需创建表格、复制数据即可开始。云数据库技术无需特定的维护来保证性能级别。
 
-In its [[!DNL Snowflake] FDA deployment](fda-deployment.md), [!DNL Adobe Campaign] v8 is connected to [!DNL Snowflake] to access data through Federated Data Access capability: you can access and process external data and information stored in your [!DNL Snowflake] database without changing the structure of Adobe Campaign data. PostgreSQL is the primary database, and Snowflake is the secondary database. You can extend your data model and store your data on Snowflake. Subsequently, you can run ETL, segmentation and reports on a large data set with outstanding performances.
-
-* **Campaign Enterprise (FFDA) deployment**
-
--->
 
 ## 消息中心架构{#transac-msg-archi}
 
@@ -77,4 +74,4 @@ In its [[!DNL Snowflake] FDA deployment](fda-deployment.md), [!DNL Adobe Campaig
 
 * 多个执行实例在负载平衡器后面具有多个执行实例的多单元执行架构中，外部应用程序调用的登录方法将通过负载平衡器：因此，无法使用基于令牌的身份验证。 需要基于用户/密码的身份验证。
 
-![](../assets/do-not-localize/book.png) 了解有关事务性消息传递事件的更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html#about-transactional-messaging-datamodel)
+![](../assets/do-not-localize/book.png) 了解有关事务性消息传递事件的更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html#about-transactional-messaging-datamodel){target=&quot;_blank&quot;}

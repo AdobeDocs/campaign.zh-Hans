@@ -5,9 +5,9 @@ feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1097'
 ht-degree: 5%
 
 ---
@@ -42,7 +42,7 @@ Adobe Campaign根据投放失败类型及其原因管理隔离。 在错误消�
 隔离地址列表中， **[!UICONTROL Error reason]** 字段指示将选定地址置于隔离中的原因。 [了解详情](#identifying-quarantined-addresses-for-the-entire-platform)。
 
 
-如果用户将电子邮件标记为垃圾邮件，则该邮件会自动重定向到由Adobe管理的技术邮箱。 随后，该用户的电子邮件地址会自动添加到隔离，并附加 **[!UICONTROL Denylisted]** 状态。此状态仅指地址，用户档案不在阻止列表上，因此用户可继续接收短信消息和推送通知。 详细了解 [投放最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops).
+如果用户将电子邮件标记为垃圾邮件，则该邮件会自动重定向到由Adobe管理的技术邮箱。 随后，该用户的电子邮件地址会自动添加到隔离，并附加 **[!UICONTROL Denylisted]** 状态。此状态仅指地址，用户档案不在阻止列表上，因此用户可继续接收短信消息和推送通知。 详细了解 [投放最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops){target=&quot;_blank&quot;}。
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ Adobe Campaign根据投放失败类型及其原因管理隔离。 在错误消�
 
 此外， **[!UICONTROL Non-deliverables and bounces]** 内置报告，可从 **报表** 部分，按域显示有关隔离中地址、遇到的错误类型和失败划分的信息。 您可以过滤特定投放的数据，或根据需要自定义此报表。
 
-了解有关 [投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html)
+了解有关 [投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html){target=&quot;_blank&quot;}。
 
 ### 隔离的电子邮件地址 {#quarantined-recipient}
 

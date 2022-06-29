@@ -6,7 +6,8 @@ role: Data Engineer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: c803c13c6d433d2c6730f32f43209c8effab1fde
+exl-id: 89a4ab6c-de8e-4408-97d2-8b8e574227f9
+source-git-commit: cda523168525c24ec1c976850bc336f273276ac9
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # 已知问题{#known-issues}
 
-本页列出了 **最新Campaign v8版本**. 此外，还列出了Campaign v8附带的限制 [本页](known-limitations.md).
+本页列出了 **最新Campaign v8版本**. 此外，还列出了Campaign v8附带的限制 [本页](ac-guardrails.md).
 
 
 >[!NOTE]

@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: ff2be012-72f3-428d-a973-196fea7ec4ab
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 12%
+source-wordcount: '419'
+ht-degree: 15%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 12%
 
    根据模板创建直邮投放。 您可以复制并配置 **[!UICONTROL Deliver by direct mail (paper)]** 内置模板。
 
-   ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/creating-a-direct-mail-delivery.html)以了解详情
+   ![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/creating-a-direct-mail-delivery.html) {target=&quot;_blank&quot;} 以了解详情。
 
 1. 定义受众
 
@@ -32,23 +32,23 @@ ht-degree: 12%
 
    如果名称、邮政编码字段和城镇/城市字段不为空，则地址被视为完整地址。
 
-   ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html)以了解详情
+   ![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html) {target=&quot;_blank&quot;} 以了解详情。
 
 1. 定义文件的内容
 
    使用提取向导可定义要导出到输出文件中的信息（列）。
 
-   ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/defining-the-direct-mail-content.html)以了解详情
+   ![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/defining-the-direct-mail-content.html) {target=&quot;_blank&quot;} 以了解详情。
 
 1. 验证投放
 
    检查分析结果和输出文件的内容。
 
-   ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/validating.html)以了解详情
+   ![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/validating.html) {target=&quot;_blank&quot;} 以了解详情。
 
    在营销活动的上下文中，提取日期会创建提取文件。 您可以查看提取的文件内容、批准该文件，或更改格式并根据需要重新启动提取。 文件获得批准后，即可向路由器发送通知电子邮件。
 
-   ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html#approving-an-extraction-file)以了解详情
+   ![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval.html#approving-an-extraction-file) {target=&quot;_blank&quot;} 以了解详情。
 
 1. 开始投放
 
@@ -58,4 +58,4 @@ ht-degree: 12%
 
    在营销活动的上下文中，当所有批准都获得批准后，提取文件将通过特殊的工作流创建，在默认配置中，当直邮投放处于待提取状态时，该工作流将自动启动。
 
-   ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html#starting-an-offline-delivery)以了解详情
+   ![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-deliveries.html#starting-an-offline-delivery) {target=&quot;_blank&quot;} 以了解详情。

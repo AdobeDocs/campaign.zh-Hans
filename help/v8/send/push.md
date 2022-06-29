@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 110cf2ff705ecbc0b3a1690e9dfc2791f5744b97
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 5%
+source-wordcount: '1093'
+ht-degree: 6%
 
 ---
 
@@ -68,7 +68,7 @@ You can integrate Adobe Experience Platorm Launch SDK with Campaign, by leveragi
 
 >[!NOTE]
 >
->此功能从Campaign v8.3开始可用。要检查您的版本，请参阅 [此部分](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>从 Campaign v8.3 开始提供此功能。要检查您的版本，请参阅[此部分](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
 1. 选择 **[!UICONTROL Deliver on iOS]** 投放模板。
 
@@ -114,12 +114,12 @@ You can integrate Adobe Experience Platorm Launch SDK with Campaign, by leveragi
       > 
       >必须在应用程序中包含声音，并在创建服务时定义声音。
       >
-      >有关iOS的配置准则，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en).
+      >有关iOS的配置准则，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;}。
    ![](assets/push_ios_5.png)
 
 1. 从 **[!UICONTROL Application variables]** 选项卡， **[!UICONTROL Application variables]** 会自动添加。 例如，通过它们可定义通知行为，您可以将特定应用程序屏幕配置为在用户激活通知时显示。
 
-   如需详细信息，请参阅[此部分](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en)。
+   有关更多信息，请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html)。
 
 1. 从 **[!UICONTROL Advanced]** 选项卡，您可以编辑以下常规选项：
 
@@ -185,15 +185,15 @@ You can integrate Adobe Experience Platorm Launch SDK with Campaign, by leveragi
 要发送校样并发送最终投放，请使用与电子邮件投放相同的流程。 请参阅 Campaign Classic v7 文档以了解详情：
 
 * 验证投放并发送校样
-   ![](../assets/do-not-localize/book.png) [了解验证投放的关键步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [了解验证投放的关键步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=zh-Hans){target=&quot;_blank&quot;}
 
 * 确认并发送投放
-   ![](../assets/do-not-localize/book.png) [了解发送投放的关键步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [了解发送投放的关键步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html){target=&quot;_blank&quot;}
 
 发送消息后，您可以监控和跟踪投放内容。 请参阅 Campaign Classic v7 文档以了解详情：
 
 * 推送通知隔离
-   ![](../assets/do-not-localize/book.png) [了解有关推送通知隔离的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html?lang=en#push-notification-quarantines){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [了解有关推送通知隔离的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#push-notification-quarantines){target=&quot;_blank&quot;}
 
 * 故障排除
-   ![](../assets/do-not-localize/book.png) [了解如何排查推送通知故障](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html?lang=en){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [了解如何排查推送通知故障](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html){target=&quot;_blank&quot;}

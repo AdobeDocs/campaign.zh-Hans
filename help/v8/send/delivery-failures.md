@@ -5,9 +5,9 @@ feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
+source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
 workflow-type: tm+mt
-source-wordcount: '3009'
+source-wordcount: '3008'
 ht-degree: 7%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 7%
 
 ## 消息投放失败的原因 {#delivery-failure-reasons}
 
-消息失败时有两种类型的错误。 每种投放失败类型均确定地址是否被发送到 [隔离](quarantines.md#quarantine-reason) 或不。
+消息失败时有两种类型的错误。 每个投放失败类型均确定地址是否被发送到 [隔离](quarantines.md#quarantine-reason) 或不。
 
 * **硬退回**
 硬退回是在ISP确定对订户地址的邮件尝试为无法发送后生成的永久故障。 在Adobe Campaign中，分类为不可交付的硬退回会添加到隔离列表，这意味着不会重新尝试这些退回。 在某些情况下，如果失败原因未知，则会忽略硬退回。
@@ -62,7 +62,7 @@ ht-degree: 7%
 
 ![](assets/delivery-log-qualification.png)-->
 
-目前，在Adobe Campaign中处理退回邮件鉴别的方式取决于错误类型：
+在Adobe Campaign中处理退回邮件鉴别的方式取决于错误类型：
 
 * **同步错误**:MTA可确定退件类型和资格条件，并将该信息发回至Campaign。 中的退回资格 **[!UICONTROL Delivery log qualification]** 表未用于 **同步** 投放失败错误消息。
 

@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 70ad2603d299c3a848382503eb31571acae0ae48
+source-git-commit: 6f9f3ed4d2eef28b6683bf04b81431fd6a3e3dba
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 77%
+source-wordcount: '636'
+ht-degree: 75%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 77%
 >
 >* 目前，Campaign v8 **仅**&#x200B;作为托管云服务提供，不能部署在内部部署或混合环境中。[了解详情](#cloud-services)
 >
->* 从现有 Campaign Classic v7 环境进行迁移的功能尚不可用。
+>* 从现有Campaign Classicv7环境自动迁移的功能尚不可用。
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: 在Campaign中管理订阅和退订
-description: 了解如何在Campaign v8中管理订阅和退订
+description: 了解如何在 Campaign v8 中管理订阅和退订
 feature: Subscriptions
 role: Data Engineer
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
 source-git-commit: c6a234f6c43531be032354d134e4745ad77cbcc7
 workflow-type: tm+mt
 source-wordcount: '545'
-ht-degree: 10%
+ht-degree: 12%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 10%
 
    ![](assets/subscribe-to-a-service.png)
 
-   ![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#deliveries-tab) {target=&quot;_blank&quot;} 以了解详情。
+   ![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#deliveries-tab){target=&quot;_blank&quot;} 以了解详情。
 
 * 自动为一组收件人订阅服务。 收件人列表可以来自筛选操作、组、文件夹、导入或直接手动选择。 要订阅这些收件人，请选择用户档案并右键单击。 选择 **[!UICONTROL Actions > Subscribe selection to a service...]**。
 
@@ -34,12 +34,12 @@ ht-degree: 10%
 
    ![](assets/subscribe-confirm.png)
 
-   ![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#deliveries-tab) {target=&quot;_blank&quot;} 以了解详情。
+   ![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=en#deliveries-tab){target=&quot;_blank&quot;} 以了解详情。
 
 
 * 导入收件人并自动订阅信息服务。 要执行此操作，请在导入向导的最后一步中选择相关服务。
 
-   ![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html?lang=en#step-5---additional-step-when-importing-recipients) {target=&quot;_blank&quot;} 以了解详情。
+   ![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html?lang=en#step-5---additional-step-when-importing-recipients){target=&quot;_blank&quot;} 以了解详情。
 
 * 使用Web窗体，以便收件人订阅服务。
 
@@ -49,14 +49,14 @@ ht-degree: 10%
 
    ![](assets/web-app.png)
 
-   ![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=en#create-a-subscription--form-with-double-opt-in) {target=&quot;_blank&quot;} 以了解详情。
+   ![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=en#create-a-subscription--form-with-double-opt-in){target=&quot;_blank&quot;} 以了解详情。
 
 
 * 创建定位工作流并使用 **[!UICONTROL Subscription service]** 活动。
 
    ![](assets/wf-subscription.png)
 
-   ![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/subscription-services.html?lang=en#example--subscribe-a-list-of-recipients-to-a-newsletter) {target=&quot;_blank&quot;} 以了解详情。
+   ![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/subscription-services.html?lang=en#example--subscribe-a-list-of-recipients-to-a-newsletter){target=&quot;_blank&quot;} 以了解详情。
 
 要取消订阅（选择退订）服务中的用户档案，可用选项包括：
 
@@ -71,7 +71,7 @@ ht-degree: 10%
 * 指定信息服务的持续时间限制：有效期届满后，收件人将自动取消订阅。 此时段在服务属性的编辑选项卡中指定。 以天表示。
 * 为群体设置退订工作流。
 
-![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=en#unsubscribing-a-recipient-from-a-service) {target=&quot;_blank&quot;} 以了解详情。
+![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html?lang=en#unsubscribing-a-recipient-from-a-service){target=&quot;_blank&quot;} 以了解详情。
 
 
 >[!CAUTION]

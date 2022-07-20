@@ -5,10 +5,10 @@ feature: Profiles
 role: Data Engineer
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
-workflow-type: ht
-source-wordcount: '321'
-ht-degree: 100%
+source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 94%
 
 ---
 
@@ -53,5 +53,5 @@ Campaign 可帮助您将联系人添加到云数据库。您可以加载文件�
 **相关主题**
 
 * [创建受众](audiences.md)
-* [重复的配置文件](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/deduplication-merge.html?lang=zh-Hans){target=&quot;_blank&quot;}
-* [扩充配置文件数据](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/data-management/enriching-data.html?lang=zh-Hans){target=&quot;_blank&quot;}
+* [消除重复用户档案](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/deduplication-merge.html)
+* [丰富用户档案数据](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/enrich-data.html)

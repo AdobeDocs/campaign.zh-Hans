@@ -5,10 +5,10 @@ feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
 exl-id: 6fbe5616-7b8b-4504-988b-2bbbfd062548
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 59046a11c3e057cf41c322f190a9d8aef310c356
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 23%
+source-wordcount: '785'
+ht-degree: 22%
 
 ---
 
@@ -103,7 +103,7 @@ ht-degree: 23%
 
    ![](assets/targeting-wf-age-filter.png)
 
-   了解如何在的工作流中创建查询 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/query.html#creating-a-query){target=&quot;_blank&quot;}
+   了解如何在的工作流中创建查询 [此部分](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html).
 
 1. 为此查询添加标签并保存更改。
 1. 添加 **[!UICONTROL List update]** ，并对其进行编辑。
@@ -124,7 +124,7 @@ ht-degree: 23%
 
    ![](assets/access-new-list.png)
 
-   您可以通过向工作流中添加调度程序来定期执行此工作流。 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/scheduler.html){target=&quot;_blank&quot;}以了解详情。
+   您可以通过向工作流中添加调度程序来定期执行此工作流。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html)。
 
 ## 从列表中删除用户档案 {#remove-a-profile-from-a-list}
 

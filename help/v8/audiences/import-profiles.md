@@ -5,10 +5,10 @@ feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
 exl-id: b6a5083f-2b5a-4f5b-ad30-d91363752896
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 59046a11c3e057cf41c322f190a9d8aef310c356
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 17%
+source-wordcount: '268'
+ht-degree: 24%
 
 ---
 
@@ -22,17 +22,13 @@ ht-degree: 17%
 
 ### 使用列表中的数据：读取列表 {#data-from-read-list}
 
-在文件中准备和构建数据，以使用工作流导入数据。
-
-有关在工作流中使用读取列表活动的更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/read-list.html){target=&quot;_blank&quot;}。
+在文件中准备和构建数据，以使用工作流导入数据。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html)。
 
 ### 从文件加载数据 {#data-from-a-file}
 
-可以在工作流中处理的数据可以从结构化文件中提取，以便将其导入Adobe Campaign。
+可以在工作流中处理的数据可以从结构化文件中提取，以便将其导入Adobe Campaign。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading--file-.html)。
 
-有关加载数据活动的描述，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/action-activities/data-loading--file-.html){target=&quot;_blank&quot;}。
-
-收集数据后，您可以在工作流中使用它，例如扩充投放或更新数据库。 有关更多信息，请参阅 [Campaign Classicv7文档]https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/how-to-use-workflow-data.htmll){target=&quot;_blank&quot;}。
+收集数据后，您可以在工作流中使用它，例如扩充投放或更新数据库。 如需详细信息，请参阅[此部分](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html)。
 
 ## 一次性进口{#import-jobs}
 

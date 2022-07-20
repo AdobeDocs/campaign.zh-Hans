@@ -5,10 +5,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 100%
+source-wordcount: '1170'
+ht-degree: 96%
 
 ---
 
@@ -77,17 +77,19 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
    活动、投放、任务或工作流都以存储着关键设置和功能的模板为基础。我们为每个组件提供了一个内置模板，但尚未为它们定义具体配置。您需要配置和调整模板以满足您的需求，并向最终用户提供这些模板。
 
-   ![](../assets/do-not-localize/book.png) [了解有关电子邮件模板的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=zh-Hans){target=&quot;_blank&quot;}
 
-   ![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-templates.html?lang=zh-Hans#orchestrating-campaigns){target=&quot;_blank&quot;}以了解如何使用活动模板
+   ![](../assets/do-not-localize/glass.png)请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html)以了解如何使用活动模板
 
-   ![](../assets/do-not-localize/book.png) 了解如何在 [Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/introduction/building-a-workflow.html?lang=zh-Hans#workflow-templates){target=&quot;_blank&quot;}中配置工作流程模板
+   ![](../assets/do-not-localize/glass.png)请参阅 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html)了解如何配置工作流模板
+
+   ![](../assets/do-not-localize/book.png) 在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=zh-Hans){target=&quot;_blank&quot;}
+
 
 1. 配置类型规则
 
    利用 Campaign 类型规则来筛选、控制和监测投放发送。例如，疲劳规则可控制消息传递的频率和数量，以避免对收件人过度宣传。实施后，类型规则就会在投放中引用。
 
-   ![](../assets/do-not-localize/book.png) 在 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/orchestrating-campaigns/campaign-optimization/about-campaign-typologies.html?lang=zh-Hans#orchestrating-campaigns){target=&quot;_blank&quot;}中了解有关分类和疲劳管理的更多信息
+   在 [此部分](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html).
 
 1. 熟悉 Campaign 内置数据模型
 

@@ -5,10 +5,10 @@ feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 59046a11c3e057cf41c322f190a9d8aef310c356
 workflow-type: tm+mt
-source-wordcount: '1667'
-ht-degree: 1%
+source-wordcount: '1638'
+ht-degree: 0%
 
 ---
 
@@ -325,12 +325,12 @@ Adobe Campaign中提供了以下类型的过滤器：
 
 要执行高级过滤功能，请使用函数定义过滤器的内容。 高级过滤器编辑器可利用Campaign查询编辑器的所有功能。
 
-了解如何在Adobe Campaign Classic v7文档中构建高级查询。 例如：
+了解如何在这些端到端示例中构建高级查询：
 
-* 了解如何根据 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/query.html?lang=en#example--targeting-on-simple-recipient-attributes){target=&quot;_blank&quot;}。
-* 了解如何过滤过去7天内未联系的收件人(位于 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/designing-queries/querying-using-many-to-many-relationship.html){target=&quot;_blank&quot;}。
-* 了解如何恢复可按 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/designing-queries/creating-a-filter.html){target=&quot;_blank&quot;}。
-* 了解如何在  [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/use-cases/deliveries/sending-a-birthday-email.html?lang=en#identifying-recipients-whose-birthday-it-is){target=&quot;_blank&quot;}。
+* 了解如何根据 [本页](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html).
+* 了解如何过滤过去7天内未联系的收件人(位于 [本页](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html).
+* 了解如何恢复可按 [本页](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html).
+* 了解如何在  [本页](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html).
 
 
 ### 预定义过滤器的高级参数 {#param-for-data-filters}

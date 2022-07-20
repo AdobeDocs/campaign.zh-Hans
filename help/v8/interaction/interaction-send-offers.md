@@ -5,9 +5,9 @@ feature: Interaction, Offers
 role: Data Engineer
 level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1265'
 ht-degree: 3%
 
 ---
@@ -76,9 +76,7 @@ ht-degree: 3%
 
 ### 扩充 {#enrichment}
 
-的 **扩充** 活动，可向投放收件人的选件添加选件或链接。
-
-![](../assets/do-not-localize/book.png) 有关扩充活动的更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/enrichment.html)
+的 **扩充** 活动，可向投放收件人的选件添加选件或链接。[了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html)
 
 例如，您可以在投放之前扩充收件人查询的数据。
 
@@ -165,7 +163,7 @@ ht-degree: 3%
 
 的 **[!UICONTROL Offer engine]** 活动还允许您在投放之前指定对选件引擎的调用。
 
-![](../assets/do-not-localize/book.png) 有关 **优惠引擎** 活动，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offer-engine.html)
+有关 **优惠引擎** 活动，请参阅 [本页](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html)
 
 本活动的工作原理与 **扩充** 活动，方法是在投放之前，使用引擎计算的选件扩充集客群体数据。
 
@@ -188,7 +186,7 @@ ht-degree: 3%
 
 的 **[!UICONTROL Offers by cell]** 活动允许您将集客群体（例如，通过查询）分发到多个区段，并指定要为其中每个区段显示的选件。
 
-![](../assets/do-not-localize/book.png) 有关 **单元格优惠** 活动，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/targeting-activities/offers-by-cell.html)
+有关 **单元格优惠** 活动，请参阅 [本页](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html)
 
 为此，请使用以下过程：
 

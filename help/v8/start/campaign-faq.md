@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
 source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '657'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 97%
 
 1. **我是否能监测工作流的执行情况？**
 
-   了解如何监控Campaign工作流执行 [本页](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html)
+   请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html?lang=zh-Hans)以了解如何监测 Campaign 工作流执行情况
 
 1. **哪些系统和组件与 Campaign v8 兼容？**
 

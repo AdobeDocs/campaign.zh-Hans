@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '633'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -48,13 +48,13 @@ Adobe Campaign v8 附带以下投放渠道：
 
    ![](assets/deliveries-in-a-campaign.png)
 
-   了解如何在活动上下文中发送消息 [此部分](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html)
+   在[此部分](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=zh-Hans)中了解如何在营销活动上下文中发送消息
 
 * 通过[工作流](../config/workflows.md)发送消息
 
    ![](assets/send-in-a-wf.png)
 
-   ![](../assets/do-not-localize/glass.png) 了解如何在 [本页](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/delivery.html)
+   ![](../assets/do-not-localize/glass.png)请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/delivery.html?lang=zh-Hans)以了解如何自动化电子邮件投放
 
 * 从事件[触发消息](../send/transactional.md)
    ![](../assets/do-not-localize/book.png) [用例：了解如何发送带有附件的事务性电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=zh-Hans){target=&quot;_blank&quot;}
@@ -63,7 +63,7 @@ Adobe Campaign v8 附带以下投放渠道：
 
    ![](assets/schedule-send.png)
 
-   ![](../assets/do-not-localize/glass.png) [用例：了解如何计划和发送生日电子邮件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html)
+   ![](../assets/do-not-localize/glass.png) [用例：了解如何计划和发送生日电子邮件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=zh-Hans)
 
 
 ## 添加个性化内容{#personalization}
@@ -100,6 +100,6 @@ Adobe Campaign v8 附带以下投放渠道：
 
 * [投放最佳实践](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=zh-Hans){target=&quot;_blank&quot;}
 
-* [测试并发送电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html){target=&quot;_blank&quot;}
+* [测试并发送电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/sending-messages.html?lang=zh-Hans){target=&quot;_blank&quot;}
 
 * [发送验证](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=zh-Hans){target=&quot;_blank&quot;}

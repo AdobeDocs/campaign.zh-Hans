@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Campaign v8 文档
 breadcrumb-title: Campaign 概述
 title: Campaign v8 文档
-source-git-commit: ca52da16933f57181a0c4228bda9a2d33ebcedef
+source-git-commit: a41bebfeb352b2f81f81b46c39b5f9b64431455b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '363'
+ht-degree: 100%
 
 ---
 
@@ -67,6 +67,7 @@ ht-degree: 0%
       + [从文件导入用户档案](audiences/import-profiles.md)
       + [使用外部用户档案](audiences/external-profiles.md)
       + [在 Web 窗体中收集用户档案数据](audiences/collect-profiles.md)
+      + [目标映射](audiences/target-mappings.md)
    + 创建受众 {#create-audiences}
       + [创建联系人列表](audiences/create-audiences.md)
       + [创建和管理过滤器](audiences/create-filters.md)

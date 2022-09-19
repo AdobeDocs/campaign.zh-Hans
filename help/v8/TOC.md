@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Campaign v8 文档
 breadcrumb-title: Campaign 概述
 title: Campaign v8 文档
-source-git-commit: 2c79ee6ae79355fba2a5f269076cf90a683a6070
+source-git-commit: fdaf107fd22f439a728f32ceb8cfc13a8c5bc1ad
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '368'
 ht-degree: 98%
 
 ---
@@ -83,6 +83,7 @@ ht-degree: 98%
    + [直邮](send/direct-mail.md)
    + [社交媒体营销](send/twitter.md)
    + [事务性消息](send/transactional.md)
+   + [发送时间优化](send/predictive.md)
    + 失败、退回和隔离{#failures}
       + [隔离](send/quarantines.md)
       + [投放失败](send/delivery-failures.md)

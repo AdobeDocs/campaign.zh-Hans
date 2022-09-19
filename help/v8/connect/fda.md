@@ -5,9 +5,9 @@ feature: Federated Data Access
 role: Data Engineer
 level: Beginner
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-source-git-commit: bb03c804c1c65322d275d0a2ca1db0bfe974636d
+source-git-commit: ca9275017e36dae2f0152e0ff365541d7cab96de
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '727'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 使用FDA连接器（联合数据访问）将Campaign连接到一个或多个 **外部数据库** 并处理存储在其中的信息，而不影响您的Campaign云数据库数据。 然后，您便可以访问外部数据，而无需更改Adobe Campaign数据的结构。
 
-![](../assets/do-not-localize/speech.png)   作为托管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support) 使用Campaign实施Experience Cloud触发器。
+![](../assets/do-not-localize/speech.png)   作为托管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support) 将外部数据库与Campaign连接。
 
 
 >[!NOTE]

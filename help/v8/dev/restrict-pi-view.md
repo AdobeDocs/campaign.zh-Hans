@@ -1,8 +1,11 @@
 ---
 title: 限制 PI 视图
 description: 了解如何限制PI视图
+feature: PI, Privacy
+role: Developer
+level: Intermediate, Experienced
 exl-id: 1b833745-71d7-430d-ac7d-c830c78ea232
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 2%

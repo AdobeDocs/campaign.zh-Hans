@@ -1,14 +1,14 @@
 ---
 title: Campaign中的投放失败
 description: 了解使用Adobe Campaign发送消息时可能出现的故障
-feature: Audiences, Profiles
-role: Data Engineer
-level: Beginner
+feature: Profiles, Monitoring
+role: User
+level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 5c1ced7972295e79418ac7ff14a6f0888e5ed39a
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '3008'
-ht-degree: 7%
+ht-degree: 11%
 
 ---
 
@@ -187,7 +187,7 @@ Campaign投放中的有效期设置限制为 **3.5天或以下**. 对于投放�
    <td> 收件人被“SQL”类型的营销活动分类规则排除。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 域无效 </td> 
+   <td> 无效域 </td> 
    <td> 柔和 </td> 
    <td> 2 </td> 
    <td> 电子邮件地址的域不正确或不再存在。 此用户档案将被重新定向，直到错误计数达到 5 为止。此后，该记录将设置为隔离状态，并且以后不会再进行重试。<br /> </td> 
@@ -217,7 +217,7 @@ Campaign投放中的有效期设置限制为 **3.5天或以下**. 对于投放�
    <td> 收件人不符合投放中选件的条件。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 已拒绝 </td> 
+   <td> 拒绝 </td> 
    <td> 软/硬 </td> 
    <td> 20 </td> 
    <td> 由于安全反馈为垃圾邮件报告，该地址已置于隔离中。 根据错误，将重试该地址，直到错误计数达到5为止，或直接将其发送到隔离。<br /> </td> 
@@ -235,7 +235,7 @@ Campaign投放中的有效期设置限制为 **3.5天或以下**. 对于投放�
    <td> 邮政地址不符合条件。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 不可访问 </td> 
+   <td> 不可到达 </td> 
    <td> 软/硬 </td> 
    <td> 3 </td> 
    <td> 消息投放链中发生错误。 可能是SMTP中继上的事件、临时不可访问的域等。 根据错误，将重试该地址，直到错误计数达到5为止，或直接将其发送到隔离。<br /> </td> 
@@ -300,7 +300,7 @@ HTTP/V2协议允许对每次推送交付进行直接反馈和状态。 如果使
    <td> 失败<br /> </td> 
    <td> 负载过长<br /> </td> 
    <td> 柔和<br /> </td> 
-   <td> 已拒绝<br /> </td> 
+   <td> 拒绝<br /> </td> 
    <td> 否<br /> </td> 
   </tr> 
   <tr> 
@@ -316,7 +316,7 @@ HTTP/V2协议允许对每次推送交付进行直接反馈和状态。 如果使
    <td> 失败<br /> </td> 
    <td> 根据错误显示的各种错误消息<br /> </td> 
    <td> 柔和<br /> </td> 
-   <td> 已拒绝<br /> </td> 
+   <td> 拒绝<br /> </td> 
    <td> 否<br /> </td> 
   </tr> 
   <tr> 
@@ -324,7 +324,7 @@ HTTP/V2协议允许对每次推送交付进行直接反馈和状态。 如果使
    <td> 失败<br /> </td> 
    <td> 连接错误<br /> </td> 
    <td> 未定义<br /> </td> 
-   <td> 不可访问<br /> </td> 
+   <td> 不可到达<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
@@ -340,7 +340,7 @@ HTTP/V2协议允许对每次推送交付进行直接反馈和状态。 如果使
    <td> 失败<br /> </td> 
    <td> 错误消息中将存在错误拒绝原因<br /> </td> 
    <td> 柔和<br /> </td> 
-   <td> 已拒绝<br /> </td> 
+   <td> 拒绝<br /> </td> 
    <td> 否<br /> </td> 
   </tr> 
  </tbody> 
@@ -397,7 +397,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 失败<br /> </td> 
    <td> 通知过重：{1}位，而只有{2}位已授权<br /> </td> 
    <td> 柔和<br /> </td> 
-   <td> 已拒绝<br /> </td> 
+   <td> 拒绝<br /> </td> 
    <td> 否<br /> </td> 
   </tr> 
   <tr> 
@@ -405,7 +405,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 失败<br /> </td> 
    <td> 地址上没有来自Firebase Cloud Messaging服务的响应：{1}<br /> </td> 
    <td> 柔和<br /> </td> 
-   <td> 不可访问<br /> </td> 
+   <td> 不可到达<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
@@ -413,7 +413,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 失败<br /> </td> 
    <td> Firebase Cloud Messaging服务暂时不可用<br /> </td> 
    <td> 柔和<br /> </td> 
-   <td> 不可访问<br /> </td> 
+   <td> 不可到达<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
@@ -421,7 +421,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 失败<br /> </td> 
    <td> 无法识别开发人员帐户，请检查您的ID和密码<br /> </td> 
    <td> 柔和<br /> </td> 
-   <td> 已拒绝<br /> </td> 
+   <td> 拒绝<br /> </td> 
    <td> 否<br /> </td> 
   </tr> 
   <tr> 
@@ -429,7 +429,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 失败<br /> </td> 
    <td> </td> 
    <td> 柔和<br /> </td> 
-   <td> 已拒绝<br /> </td> 
+   <td> 拒绝<br /> </td> 
    <td> 是<br /> </td> 
   </tr> 
   <tr> 
@@ -445,7 +445,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 失败<br /> </td> 
    <td> Firebase Cloud Messaging服务器返回了意外的错误代码：{1} </td> 
    <td> </td> 
-   <td> 已拒绝<br /> </td> 
+   <td> 拒绝<br /> </td> 
    <td> 否<br /> </td> 
   </tr> 
     <tr> 
@@ -461,7 +461,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 失败<br /> </td> 
    <td> THIRD_PARTY_AUTH_ERROR </td> 
    <td> 已忽略</td>
-   <td> 已拒绝<br /> </td> 
+   <td> 拒绝<br /> </td> 
    <td> 是<br /> </td> 
   </tr>
     <tr> 
@@ -485,7 +485,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 失败<br /> </td> 
    <td> 内部 </td> 
    <td> 已忽略</td> 
-   <td> 已拒绝<br /> </td> 
+   <td> 拒绝<br /> </td> 
    <td> 是<br /> </td> 
   </tr>
     <tr> 
@@ -493,7 +493,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 失败<br /> </td> 
    <td> 不可用</td> 
    <td> 已忽略</td> 
-   <td> 已拒绝<br /> </td> 
+   <td> 拒绝<br /> </td> 
    <td> 是<br /> </td> 
   </tr>
     <tr> 
@@ -501,7 +501,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 失败<br /> </td> 
    <td> 意外错误代码</td> 
    <td> 已忽略</td> 
-   <td> 已拒绝<br /> </td> 
+   <td> 拒绝<br /> </td> 
    <td> 否<br /> </td> 
   </tr>
   <tr> 
@@ -509,7 +509,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 失败<br /> </td> 
    <td> 无法连接到身份验证服务器 </td> 
    <td> 已忽略</td>
-   <td> 已拒绝<br /> </td> 
+   <td> 拒绝<br /> </td> 
    <td> 是<br /> </td> 
   </tr>
     <tr> 
@@ -517,7 +517,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 失败<br /> </td> 
    <td> unauthorized_client </td> 
    <td> 已忽略</td>
-   <td> 已拒绝<br /> </td> 
+   <td> 拒绝<br /> </td> 
    <td> 否<br /> </td> 
   </tr>
     <tr> 
@@ -525,7 +525,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 失败<br /> </td> 
    <td> unauthorized_client </td> 
    <td> 已忽略</td>
-   <td> 已拒绝<br /> </td> 
+   <td> 拒绝<br /> </td> 
    <td> 否<br /> </td> 
   </tr>
     <tr> 
@@ -533,7 +533,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 失败<br /> </td>
    <td> access_denied</td> 
    <td> 已忽略</td>
-   <td> 已拒绝<br /> </td> 
+   <td> 拒绝<br /> </td> 
    <td> 否<br /> </td> 
   </tr>
     <tr> 
@@ -541,7 +541,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 失败<br /> </td> 
    <td> invalid_grant </td> 
    <td> 已忽略</td> 
-   <td> 已拒绝<br /> </td> 
+   <td> 拒绝<br /> </td> 
    <td> 否<br /> </td> 
   </tr>
     <tr> 
@@ -549,7 +549,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 失败<br /> </td> 
    <td> invalid_grant </td> 
    <td> 已忽略</td> 
-   <td> 已拒绝<br /> </td> 
+   <td> 拒绝<br /> </td> 
    <td> 否<br /> </td> 
   </tr>
     <tr> 
@@ -557,7 +557,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 失败<br /> </td> 
    <td> invalid_grant </td> 
    <td> 已忽略</td> 
-   <td> 已拒绝<br /> </td> 
+   <td> 拒绝<br /> </td> 
    <td> 否<br /> </td> 
   </tr>
     <tr> 
@@ -565,7 +565,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 失败<br /> </td> 
    <td> unauthorized_client</td> 
    <td> 已忽略</td> 
-   <td> 已拒绝<br /> </td> 
+   <td> 拒绝<br /> </td> 
    <td> 否<br /> </td> 
   </tr>
     <tr> 
@@ -573,7 +573,7 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 失败<br /> </td> 
    <td> disabled_client</td> 
    <td> 已忽略</td> 
-   <td> 已拒绝<br /> </td> 
+   <td> 拒绝<br /> </td> 
    <td> 否<br /> </td> 
   </tr>
  </tbody> 
@@ -617,21 +617,21 @@ Android V2隔离机制使用与Android V1相同的流程，这同样适用于订
    <td> 失败<br /> </td> 
    <td> 接收数据（SR或MO）时出错<br /> </td> 
    <td> 柔和<br /> </td> 
-   <td> 不可访问<br /> </td> 
+   <td> 不可到达<br /> </td> 
   </tr> 
   <tr> 
    <td> 无效的MT确认<br /> </td> 
    <td> 失败<br /> </td> 
    <td> 处理用于发送查询的确认帧时出错“{1}”<br /> </td> 
    <td> 柔和<br /> </td> 
-   <td> 不可访问<br /> </td> 
+   <td> 不可到达<br /> </td> 
   </tr> 
   <tr> 
    <td> 发送MT时出错<br /> </td> 
    <td> 失败<br /> </td> 
    <td> 发送消息时出错<br /> </td> 
    <td> 柔和<br /> </td> 
-   <td> 不可访问<br /> </td> 
+   <td> 不可到达<br /> </td> 
   </tr> 
  </tbody> 
 </table>

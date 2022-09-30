@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: 营销活动入门
+title: 创建您的第一个营销活动
 description: 了解营销活动如何开始
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: eb1a0e52-14d9-4ad2-8bf2-ea955c6fd0f5
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 16%
+ht-degree: 14%
 
 ---
 
-# 营销活动入门{#gs-marketing-campaigns}
+# 创建您的第一个营销活动{#gs-marketing-campaigns}
 
 Adobe Campaign让您能够定义、优化、执行和分析通信和营销活动。 Adobe Campaign的作用类似于营销策略的统一订单和执行中心。 通过拖放可视化工作流界面管理多个数据源、定义受众区段，以及规划和执行多步跨渠道营销活动。
 

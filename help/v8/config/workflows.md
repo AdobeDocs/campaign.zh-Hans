@@ -2,13 +2,13 @@
 title: 使用Adobe Campaign工作流管理和自动化各个流程
 description: 工作流入门
 feature: Workflows
-role: Data Engineer
+role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 59046a11c3e057cf41c322f190a9d8aef310c356
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '1574'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 1%
 
 * [监控工作流执行](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html)
 
-* [在营销活动工作流中构建受众](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html)
+* [在营销活动工作流中构建受众](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans)
 
 ## 工作流活动 {#wf-activities}
 
@@ -114,7 +114,7 @@ ht-degree: 1%
 
 设计定期工作流，并在每次执行工作流时创建新投放实例。 例如，如果您的工作流设计为每周运行一次，则一年后将产生52次投放。 这也意味着日志将由每个投放实例分隔。
 
-了解如何在 [本页](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html)
+了解如何在 [本页](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html?lang=zh-Hans)
 
 
 ## 利用触发器事件
@@ -137,7 +137,7 @@ ht-degree: 1%
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
 
-* [发送生日电子邮件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html)
+* [发送生日电子邮件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=zh-Hans)
 
    此用例介绍如何计划在收件人生日当天向收件人列表发送定期电子邮件。
 

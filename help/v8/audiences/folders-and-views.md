@@ -2,10 +2,10 @@
 title: 文件夹和视图
 description: 了解如何在Campaign资源管理器中管理文件夹和视图
 feature: Audiences, Profiles, Application Settings
-role: Data Engineer
-level: Beginner
+role: User
+level: Beginner, Intermediate
 exl-id: 762dcacc-4aeb-4990-af01-7f793bd69170
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 1%

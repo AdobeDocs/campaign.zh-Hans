@@ -2,13 +2,13 @@
 title: 将Campaign与您的解决方案连接起来
 description: 了解如何将 Campaign 与您的解决方案联系起来
 feature: Overview
-role: Data Engineer
-level: Beginner
+role: Admin, User
+level: Beginner, Intermediate
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '347'
+ht-degree: 14%
 
 ---
 
@@ -26,7 +26,7 @@ Adobe Campaign附带多个连接器，允许您与外部应用程序通信、连
 
 Campaign v8可以连接：
 
-* [Adobe Experience CloudReal-Time CDP](../connect/ac-rtcdp.md)
+* [Adobe Experience Platform](../connect/ac-aep.md)
 * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=en).
 
    请参阅端到端用例 [此处](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html?lang=zh-Hans).

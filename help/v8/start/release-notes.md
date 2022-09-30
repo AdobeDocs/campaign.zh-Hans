@@ -2,14 +2,14 @@
 title: Campaign v8 发行说明
 description: 最新 Campaign v8 版本
 feature: Overview
-role: Data Engineer
-level: Beginner
+role: Admin, Developer, User
+level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
-workflow-type: ht
-source-wordcount: '2160'
-ht-degree: 100%
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+workflow-type: tm+mt
+source-wordcount: '2758'
+ht-degree: 79%
 
 ---
 
@@ -17,12 +17,87 @@ ht-degree: 100%
 
 此页面列出了&#x200B;**最新 Campaign v8 版本**&#x200B;中的新功能、改进和修复。
 
+## 8.4.0 版 {#release-8-4-0}
+
+_2022年9月28日_
+
+**新增功能**
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Adobe Campaign与Adobe Experience Platform集成</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td><p>现在提供新的目标和源连接器，以便在Adobe Campaign和Adobe Experience Platform之间实现无缝集成：</p>
+<ul><li>使用Adobe Campaign Managed Cloud Sources连接器将Experience Platform区段发送到Adobe Campaign以进行激活，</li>
+<li>使用Adobe Campaign Managed Cloud目标连接器将Adobe Campaign投放和跟踪日志发送到Adobe Experience Platform。</li>
+</ul>
+<p>有关更多信息，请参阅<a href="privacy.md">详细文档</a>。</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Twitter渠道可用性</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>的 <a href="../send/twitter.md">Twitter社交渠道</a> 现已在Campaign v8中可用。 您可以：</p>
+<ul> 
+<li><p>在Twitter上发送消息：Adobe Campaign允许您将消息直接发布到twitter帐户。 您还可以向所有关注者发送私信。
+</p></li>
+<li><p>收集新联系人：Adobe Campaign可自动恢复用户档案数据，以便您开展定位营销活动和实施跨渠道策略。
+</p></li>
+</ul>
+<p>了解如何在 <a href="../connect/ac-tw.md">详细文档</a>.</p>
+<p>了解如何在 <a href="../connect/ac-tw.md">本页</a>.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+**改进**
+
+* Microsoft Internet Explorer 11生命周期结束后，控制台中的HTML渲染引擎现在正在使用 **Microsoft Edge Chromium**. 此外，安装 **Microsoft Edge WebView 2** 现在，任何客户端控制台安装都需要运行时。 了解更多信息
+* 通过工作流高可用性改进了工作流执行，它允许您跨不同容器同时运行工作流，以防止工作流服务丢失并避免相关的执行错误。 **注意**:此新功能仅在有限可用性中向一组客户发布。
+* 现在，针对给定的隐私命名空间批量执行隐私请求。 这项改进增加了GDPR/隐私删除请求的执行时间。 了解更多信息
+
+**兼容性更新**
+
+* Campaign v8 SDK现在支持iOS 16进行推送通知。
+
+请参阅 [Campaign 兼容性矩阵](compatibility-matrix.md)。
+
+**修补程序**
+
+* 修复了在启用FeatureFlag_GZIP_Compression选项时，影响MID实例上投放日志状态更新的问题。 (NEO-49183)
+* 修复了可能导致投放保留在 **待定** 状态（即使达到联系日期）。 (NEO-48079)
+* 修复了工作流中可能导致在使用 **数据加载（文件）** 活动。 该过程以100%的速度停止，但从未结束。 (NEO-47269)
+* 修复了在日语环境的升级后期期间的问题。 (NEO-46640)
+* 修复了在MTA过程中投放达到精确大小时可能发生的问题。 (NEO-46097)
+* 修复了跟踪日志无法返回与收件人浏览器相关的数据的问题。 (NEO-46612)
+* 修复了在使用外部投放模式发送短信消息时导致个性化问题的问题。 (NEO-46415)
+* 修复了可能在跟踪日志中生成重复项的问题。 (NEO-46409)
+* 修复了阻止 **[!UICONTROL Replicate Staging data]** (fdaReplicateStagingData)技术工作流即使在执行过程中发生错误时也无法停止。 (NEO-46280)
+* 修复了在MTA过程中投放达到精确大小时可能发生的问题。 (NEO-46097)
+* 为了防止向种子地址发送校样时速度变慢，现在将种子成员的所有连续复制分组到一个复制请求中。 (NEO-44844)
+* 修复了在尝试预览任何消息中心存档事件中的投放时显示错误的问题。 (NEO-43620)
+* 修复了使用Campaign将数据注入Snowflake云数据库时的问题 **查询** 活动和 **更改数据源** 活动：当数据中存在反斜线字符时，该过程会失败。 源字符串未转义，并且数据在Snowflake时未正确处理。 (NEO-45549)
+* 修复了在使用 **查询** 活动和过滤表。 当列名称包含“Update”一词时，出现编译错误，标识符无效，并出现以下消息：“已更新的行数”。 (NEO-46485)
+
+
 ## 8.3.8 版 {#release-8-3-8}
 
 _2022 年 5 月 18 日_
 
 **新增功能**
-
 
 <table> 
 <thead>
@@ -53,7 +128,6 @@ _2022 年 5 月 18 日_
 </tr> 
 </tbody> 
 </table>
-
 
 <table>
 <thead>
@@ -177,29 +251,6 @@ _2021 年 10 月 28 日_
 </tbody> 
 </table>
 
-<!--
-<table> 
-<thead>
-<tr> 
-<th> <strong>Twitter channel availability</strong><br /> </th> 
-</tr> 
-</thead> 
-<tbody> 
-<tr> 
-<td> <p>The <a href="../send/twitter.md">Twitter social channel</a> is now available with Campaign v8. You can:</p>
-<ul> 
-<li><p>Send messages on Twitter: Adobe Campaign lets you post messages directly to your twitter account. You can also send direct messages to all your followers.
-</p></li>
-<li><p>Collect new contacts: Adobe Campaign can automatically recovers the profile data, which enables you to carry out targeting campaigns and implement cross-channel strategies.
-</p></li>
-</ul>
-<p>Learn how to connect Campaign and Twitter in the <a href="../connect/ac-tw.md">detailed documentation</a>.</p>
-<p>Learn how to post tweets and send direct messages with Campaign in <a href="../connect/ac-tw.md">this page</a>.</p>
-</td> 
-</tr> 
-</tbody> 
-</table>
--->
 
 **改进**
 

@@ -2,10 +2,10 @@
 title: 了解Campaign工作区
 description: 了解如何浏览和使用Campaign工作区
 feature: Overview
-role: Data Engineer
+role: Admin, Developer, User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 21%

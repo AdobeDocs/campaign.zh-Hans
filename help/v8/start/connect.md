@@ -1,14 +1,14 @@
 ---
 title: 连接到Campaign v8
 description: 了解如何连接到 Campaign v8
-feature: Audiences
-role: Data Engineer
+feature: Client Console
+role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '832'
+ht-degree: 7%
 
 ---
 
@@ -21,6 +21,13 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 * 在 [兼容性矩阵](compatibility-matrix.md)
 * 获取Campaign服务器URL
 * 创建Adobe ID或从您的公司获取用户凭据
+* 在系统上安装Microsoft Edge Webview2运行时(从Campaign Classic8.4内部版本)。 [了解详情](#webview)
+
+## Microsoft Edge Webview2运行时安装 {#webview}
+
+从Campaign Classic8.4内部版本开始，任何控制台安装都需要安装Microsoft Edge Webview 2运行时。
+
+Web View默认作为Windows 11操作系统的一部分安装。 如果系统上尚不存在该服务器，Campaign控制台安装程序将提示您从下载它 [Microsoft开发人员网站](http://www.adobe.com/go/acc-ms-webview2-runtime-download_cn). 请注意，下载链接在Internet Explorer 11浏览器上不起作用，因为Microsoft已弃用其支持。 确保使用其他浏览器访问该链接。
 
 ## 下载并安装客户端控制台{#download-ac-console}
 
@@ -77,6 +84,10 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 1. 然后，您可以使用 [您的Adobe ID](#connect-ims).
 
    ![](assets/adobeID.png)
+
+>[!NOTE]
+>
+>对于Campaign Classic 8.4内部版本，Adobe Campaign客户端控制台在代理身份验证期间可能两次请求获取代理凭据。 这是因为与Internet Explorer不同，Microsoft Edge Webview2未将代理凭据保存在缓存/密码存储区中。
 
 ## 授予用户访问权限{#grant-access}
 

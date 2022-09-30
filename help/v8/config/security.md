@@ -1,8 +1,11 @@
 ---
 title: Campaign安全最佳实践
 description: Campaign安全最佳实践快速入门
+feature: Privacy, PI
+role: Developer
+level: Beginner, Intermediate, Experienced
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 1%

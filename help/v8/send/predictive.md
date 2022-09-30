@@ -3,8 +3,8 @@ title: 预测用户参与度功能
 description: 了解如何使用预测发送时间和参与度评分
 feature: Send Time Optimization
 role: User
-level: Intermediate
-source-git-commit: fdaf107fd22f439a728f32ceb8cfc13a8c5bc1ad
+level: Beginner
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 65%

@@ -1,14 +1,14 @@
 ---
 title: Campaign FDA部署入门
 description: Campaign FDA部署入门
-feature: Overview
-role: Data Engineer
-level: Beginner
+feature: Architecture, FFDA
+role: Admin, Developer, User
+level: Beginner, Intermediate, Experienced
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
-source-git-commit: 0fa0db62f45097755bebcbf434614c4c835d886a
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '1019'
-ht-degree: 53%
+ht-degree: 55%
 
 ---
 
@@ -38,7 +38,7 @@ Campaign v8 Enterprise(FFDA)在从定位到最终报告的流程中的任何步�
 
 在 [企业(FFDA)部署](../architecture/enterprise-deployment.md), [!DNL Adobe Campaign] v8与两个数据库配合使用：本地 [!DNL Campaign] 用于用户界面实时消息传送和统一查询和通过API和云写入的数据库 [!DNL Snowflake] 用于促销活动执行、批量查询和工作流执行的数据库。
 
-Campaign v8 Enterprise将 **完全联合数据访问** (FFDA):现在，云数据库中的所有数据都是远程的。
+Campaign v8 企业版引入了&#x200B;**完全联合数据访问** (FFDA) 概念：所有数据现在都位于云数据库上的远程位置。
 
 特定 API 可用于管理本地数据库和云数据库之间的数据。在[本页面](new-apis.md)中了解这些新 API 的工作方式以及如何使用它们。
 

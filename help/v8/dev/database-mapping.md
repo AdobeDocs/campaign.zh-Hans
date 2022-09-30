@@ -1,8 +1,10 @@
 ---
 title: 营销活动数据库映射
 description: 营销活动数据库映射
+role: Developer
+level: Intermediate, Experienced
 exl-id: a804d164-58bf-4b15-a48e-8cf75d793668
-source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 0%
@@ -231,7 +233,7 @@ SQL字段约束如下：
 
 >[!CAUTION]
 >
->在创建表时，主键设置为0的记录会自动插入。 此记录用于避免外连接，这对卷表无效。 默认情况下，所有外键都将初始化为值0，以便在未填充数据项时始终在连接时返回结果。
+>在创建表时，主键设置为0的记录会自动插入。 此记录用于避免外连接，该连接对卷表无效。 默认情况下，所有外键都将初始化为值0，以便在未填充数据项时始终在连接时返回结果。
 
 ## 链接：表之间的关系 {#links--relation-between-tables}
 

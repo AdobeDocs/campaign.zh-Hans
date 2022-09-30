@@ -2,13 +2,13 @@
 title: 在Campaign中使用受众
 description: 在Campaign中使用受众
 feature: Audiences
-role: Data Engineer
+role: User
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: 0a55d947a7646aab64ab2f9d0d09a6f930db576e
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '489'
-ht-degree: 18%
+ht-degree: 21%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 18%
 
 定位可以通过工作流中图形序列中的查询组合来创建。 您可以创建受众，以便根据您的要求进行定位。 要显示工作流编辑器，请单击 **[!UICONTROL Targeting and workflows]** 选项卡。
 
-了解如何在的营销活动工作流中构建受众 [本页](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html)
+了解如何在的营销活动工作流中构建受众 [本页](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans)
 
 
 ## 使用中的用户档案{#active-profiles}

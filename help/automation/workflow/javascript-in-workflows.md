@@ -4,7 +4,7 @@ title: 工作流中的 JavaScript 代码示例
 description: 以下示例显示如何在工作流中使用JavaScript代码
 feature: Workflows
 exl-id: 3412e3de-1c88-496e-8fda-ca9fc9b18e69
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
 source-wordcount: '1756'
 ht-degree: 2%
@@ -12,8 +12,6 @@ ht-degree: 2%
 ---
 
 # 工作流中的 JavaScript 代码示例{#javascript-in-workflows}
-
-
 
 以下示例显示如何在工作流中使用JavaScript代码：
 

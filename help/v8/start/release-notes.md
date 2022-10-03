@@ -6,10 +6,10 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: b90bd9b30845348e67f1340f2255327f20e7bb5f
+source-git-commit: dfe675ca0f15050a9159172be3d8d8de7e8bf848
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2833'
+ht-degree: 77%
 
 ---
 
@@ -69,8 +69,10 @@ _2022年9月30日_
 
 * 此更改仅适用于GETURL。 其他类型(包括POSTURL)不会受到影响。
 * 如果您使用自定义代码，则安全令牌不再从GETURL安全令牌参数中进行检索。 您必须使用以下JSSP代码生成新的安全令牌：
+
    ```getNewSecurityToken(jsspContext.getSessionToken(), jsspContext.getSecurityToken(), true);```
-您还可以使用登录API获取安全令牌。
+
+   您还可以使用登录API获取安全令牌。
 * 会话令牌管理没有更改。
 
 **改进**

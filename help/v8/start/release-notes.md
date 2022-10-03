@@ -6,7 +6,7 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: c1a5dd3fcad5d377acb2f9df3a090897ed3b533e
+source-git-commit: b90bd9b30845348e67f1340f2255327f20e7bb5f
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -62,6 +62,16 @@ _2022年9月30日_
 </tr> 
 </tbody> 
 </table>
+
+**安全性增强**
+
+为了优化安全性，已从Campaign生成的URL中删除安全令牌：
+
+* 此更改仅适用于GETURL。 其他类型(包括POSTURL)不会受到影响。
+* 如果您使用自定义代码，则安全令牌不再从GETURL安全令牌参数中进行检索。 您必须使用以下JSSP代码生成新的安全令牌：
+   ```getNewSecurityToken(jsspContext.getSessionToken(), jsspContext.getSecurityToken(), true);```
+您还可以使用登录API获取安全令牌。
+* 会话令牌管理没有更改。
 
 **改进**
 

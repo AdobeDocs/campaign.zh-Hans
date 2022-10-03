@@ -6,9 +6,9 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: dfe675ca0f15050a9159172be3d8d8de7e8bf848
+source-git-commit: c9a4110b8ea2d7ad3571da6f7e506c639dfaaf50
 workflow-type: tm+mt
-source-wordcount: '2833'
+source-wordcount: '2835'
 ht-degree: 77%
 
 ---
@@ -32,8 +32,8 @@ _2022年9月30日_
 <tbody> 
 <tr> 
 <td><p>现在提供新的目标和源连接器，以便在Adobe Campaign和Adobe Experience Platform之间实现无缝集成：</p>
-<ul><li>使用Adobe Campaign Managed Cloud Sources连接器将Experience Platform区段发送到Adobe Campaign以进行激活，</li>
-<li>使用Adobe Campaign Managed Cloud目标连接器将Adobe Campaign投放和跟踪日志发送到Adobe Experience Platform。</li>
+<ul><li>使用Adobe Campaign Managed Cloud Services目标连接器将Experience Platform区段发送到Adobe Campaign进行激活，</li>
+<li>使用Adobe Campaign托管Cloud Service源连接器将Adobe Campaign投放和跟踪日志发送到Adobe Experience Platform。</li>
 </ul>
 <p>有关更多信息，请参阅<a href="../connect/ac-aep.md">详细文档</a>。</p>
 </td> 

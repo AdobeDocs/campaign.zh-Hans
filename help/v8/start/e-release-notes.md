@@ -6,22 +6,22 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: acb3223a9a70179ea1cb3a126ef17cf5e234b4ba
+source-git-commit: e873e945f7101c5c54b4b18a128951e08d329b87
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '472'
 ht-degree: 5%
 
 ---
 
 # 早期发行说明 {#e-new-release}
 
-本页介绍下一个Campaign v8版本中包含的改进和修复。
+本页介绍下一个Campaign v8版本中包含的改进和修复。 在发行日期之前，此内容可能会发生更改，恕不另行通知。 此处提供了正式的发行说明 [页面](../start/release-notes.md).
+
+## 8.3.9 版 {#release-8-3-9}
 
 >[!CAUTION]
 >
-> 在发行日期之前，此内容可能会发生更改，恕不另行通知。 此处提供了正式的发行说明 [页面](../start/release-notes.md).
-
-## 8.3.9 版 {#release-8-3-9}
+> 必须升级客户端控制台。 在此中了解如何升级您的客户端控制台 [页面](../start/connect.md#download-ac-console).
 
 _2022年10月7日_
 

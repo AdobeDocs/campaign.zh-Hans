@@ -5,7 +5,7 @@ feature: Web Apps
 role: User, Developer
 level: Beginner
 exl-id: a460c1b4-4266-46ff-8cca-748050afd579
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 64bdd8332d0cf76b3e15db58f8abf09fdf163bba
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Web应用程序和Web窗体快速入门{#gs-ac-web}
 
-Adobe Campaign集成了用于定义和发布的图形模块 **Web窗体** 创建包含输入和选择字段的页面，这些页面可能包含数据库中的数据。 这样，您就可以设计和发布网页，以供用户访问以查看或输入信息。
+Adobe Campaign集成了用于定义和发布的图形模块 **Web窗体** 创建具有输入和选择字段的页面，其中可能包含来自数据库的数据。 这样，您就可以设计和发布网页，以供用户访问以查看或输入信息。
 
 ![](../assets/do-not-localize/book.png) 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=en#designing-content){target=&quot;_blank&quot;}
 

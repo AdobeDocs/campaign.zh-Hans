@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Campaign v8 文档
 breadcrumb-title: Campaign 概述
 title: Campaign v8 文档
-source-git-commit: e7772364ab46673695f498911e2246056a04790e
+source-git-commit: ec46a6f41d640b11306a88d6a966f81f8c2e43e0
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 97%
+source-wordcount: '433'
+ht-degree: 87%
 
 ---
 
@@ -15,53 +15,45 @@ ht-degree: 97%
 # Adobe Campaign v8 文档 {#campaign-v8}
 
 + [Campaign v8 文档](campaign-home.md)
-+ 新增功能 {#new}
-   + [重要功能](start/whats-new.md)
++ 版本和最新更新 {#releases}
    + [早期发行说明](start/e-release-notes.md)
    + [发行说明](start/release-notes.md)
    + [护栏](start/ac-guardrails.md)
    + [已知问题](start/known-issues.md)
-   + [Classic v7 到 v8](start/v7-to-v8.md)
-+ 开始 {#start}
-   + [入门](start/get-started.md)
+   + [兼容性矩阵](start/compatibility-matrix.md)
++ 开始使用{#start}
+   + [Adobe Campaign 入门](start/get-started.md)
+   + [重要功能](start/whats-new.md)
    + [组件和流程](start/ac-components.md)
+   + [连接到 Campaign](start/connect.md)
    + Campaign UI {#ac-ui}
       + [了解 Campaign 界面](start/campaign-ui.md)
       + [自定义 Campaign 界面](start/customize-ui.md)
-   + [使用受众](start/audiences.md)
-   + [管理隐私请求](start/privacy.md)
-   + [导入数据](start/import.md)
-   + [创建活动](start/campaigns.md)
-   + [发送消息](start/create-message.md)
-   + [管理订阅](start/subscriptions.md)
-   + [跟踪和监测](start/tracking.md)
-   + [指标和报表](start/reporting.md)
+      + [管理文件夹和视图](audiences/folders-and-views.md)
+   + [从经典v7到v8](start/v7-to-v8.md)
    + [常见问题解答](start/campaign-faq.md)
-+ 架构 {#architecture}
-   + [全局原则](architecture/general-architecture.md)
-   + [架构](architecture/architecture.md)
-   + FDA Snowflake 部署 {#fda}
-      + [什么是 FDA-Snowflake？](architecture/fda-deployment.md)
-   + 企业 (FFDA) 部署{#ffda}
-      + [什么是 Campaign FFDA？](architecture/enterprise-deployment.md)
-      + 特征 {#ffda-characteristics}
-         + [密钥管理和唯一性](architecture/keys.md)
-         + [新 API](architecture/new-apis.md)
-         + [API 暂存机制](architecture/staging.md)
-         + [复制机制](architecture/replication.md)
-+ 实施 {#implement}
-   + [实施步骤](start/implement.md)
-   + [自定义实例](dev/customize.md)
-   + [安全准则](config/security.md)
-   + [设计 Web 应用程序和表单](dev/webapps.md)
-   + [数据模型最佳实践](dev/datamodel-best-practices.md)
-+ 部署 {#deploy}
-   + [兼容性矩阵](start/compatibility-matrix.md)
-   + [连接到 Campaign](start/connect.md)
-   + [权限](start/permissions.md)
-   + [控制面板](config/self-service.md)
-+ 用户档案和受众 {#profiles-and-audiences}
-   + [入门](audiences/gs-audiences.md)
++ Campaign Management {#campaigns}
+   + [营销活动入门](start/campaigns.md)
+   + [Campaign编排文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans)
+   + 发送消息{#send}
+      + [消息入门](start/create-message.md)
+      + 电子邮件 {#emails}
+         + [设计和验证电子邮件](send/email.md)
+         + [发送和监测电子邮件](send/send.md)
+      + [短信](send/sms.md)
+      + [推送通知](send/push.md)
+      + [LINE 消息](send/line.md)
+      + [直邮](send/direct-mail.md)
+      + [Twitter](send/twitter.md)
+      + [事务性消息](send/transactional.md)
+      + 失败、退回和隔离{#failures}
+         + [隔离](send/quarantines.md)
+         + [投放失败](send/delivery-failures.md)
+      + [发送时间优化](send/predictive.md)
+      + [管理订阅](start/subscriptions.md)
++ 配置文件和受众管理 {#audience}
+   + [用户档案和受众快速入门](audiences/gs-audiences.md)
+   + [使用受众](start/audiences.md)
    + [访问用户档案](audiences/view-profiles.md)
    + 添加用户档案 {#add-profiles}
       + [手动创建用户档案](audiences/create-profiles.md)
@@ -72,23 +64,14 @@ ht-degree: 97%
    + 创建受众 {#create-audiences}
       + [创建联系人列表](audiences/create-audiences.md)
       + [创建和管理过滤器](audiences/create-filters.md)
-   + [管理文件夹和视图](audiences/folders-and-views.md)
+   + [与Adobe解决方案共享受众](start/shared-audiences.md)
    + [最佳实践](audiences/audiences-best-practices.md)
-+ 发送消息{#send}
-   + 电子邮件 {#emails}
-      + [设计和验证电子邮件](send/email.md)
-      + [发送和监测电子邮件](send/send.md)
-   + [短信](send/sms.md)
-   + [推送通知](send/push.md)
-   + [LINE 消息](send/line.md)
-   + [直邮](send/direct-mail.md)
-   + [Twitter](send/twitter.md)
-   + [事务性消息](send/transactional.md)
-   + [发送时间优化](send/predictive.md)
-   + 失败、退回和隔离{#failures}
-      + [隔离](send/quarantines.md)
-      + [投放失败](send/delivery-failures.md)
-+ 实时互动{#interaction}
++ 内容管理 {#content}
+   + [设计 Web 应用程序和表单](dev/webapps.md)
++ 隐私和安全管理 {#privacy}
+   + [管理隐私请求](start/privacy.md)
+   + [安全准则](config/security.md)
++ 决策管理 {#offers}
    + [实时互动入门](interaction/interaction.md)
    + [环境和架构](interaction/interaction-architecture.md)
    + [最佳实践](interaction/interaction-best-practices.md)
@@ -106,15 +89,17 @@ ht-degree: 97%
       + [管理匿名互动](interaction/anonymous-interactions.md)
    + [报告和历史记录](interaction/interaction-tracking.md)
    + [用例](interaction/interaction-use-cases.md)
-+ 配置{#config}
-   + [使用工作流实现自动化](config/workflows.md)
-   + [电子邮件设置](config/email-settings.md)
-   + [事务性消息设置](config/transactional-msg-settings.md)
-   + [将 Campaign SDK 与您的应用程序集成](config/push-config.md)
-   + [外部帐户](config/external-accounts.md)
-+ 连接{#connect}
-   + [与其他解决方案配合使用](connect/integration.md)
-   + [Campaign + Adobe Experience Platform](connect/ac-aep.md)
++ Reporting and Analytics {#analytics}
+   + [跟踪和监测](start/tracking.md)
+   + [指标和报表](start/reporting.md)
++ 数据管理{#data}
+   + [工作流入门](config/workflows.md)
+   + [导入数据](start/import.md)
+   + [工作流文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
++ 集成{#connect}
+   + [将Campaign与其他解决方案连接起来](connect/integration.md)
+   + [促销活动+Experience Platform](connect/ac-aep.md)
+   + [Campaign + Journey Optimizer](connect/ac-ajo.md)
    + [Campaign + Analytics](connect/ac-aa.md)
    + [Campaign + Experience Manager](connect/ac-aem.md)
    + [Campaign + Target](connect/ac-at.md)
@@ -126,6 +111,31 @@ ht-degree: 97%
       + [使用 Campaign 和 SFDC](connect/ac-sfdc.md)
       + [使用 Campaign 和 Microsoft Dynamics](connect/ac-ms-dyn.md)
       + [同步数据](connect/crm-data-sync.md)
++ 管理 {#admin}
+   + [权限](start/permissions.md)
+   + [控制面板](config/self-service.md)
++ 架构和配置 {#config}
+   + 架构 {#architecture}
+      + [全局原则](architecture/general-architecture.md)
+      + [架构](architecture/architecture.md)
+      + FDA Snowflake 部署 {#fda}
+         + [什么是 FDA-Snowflake？](architecture/fda-deployment.md)
+      + 企业 (FFDA) 部署{#ffda}
+         + [什么是 Campaign FFDA？](architecture/enterprise-deployment.md)
+         + 特征 {#ffda-characteristics}
+            + [密钥管理和唯一性](architecture/keys.md)
+            + [新 API](architecture/new-apis.md)
+            + [API 暂存机制](architecture/staging.md)
+            + [复制机制](architecture/replication.md)
+   + 实施 {#implement}
+      + [实施步骤](start/implement.md)
+      + [自定义实例](dev/customize.md)
+      + [数据模型最佳实践](dev/datamodel-best-practices.md)
+   + 配置{#configuration}
+      + [电子邮件设置](config/email-settings.md)
+      + [事务性消息设置](config/transactional-msg-settings.md)
+      + [将 Campaign SDK 与您的应用程序集成](config/push-config.md)
+      + [外部帐户](config/external-accounts.md)
 + 开发人员资源 {#developer}
    + [Campaign 数据模型](dev/datamodel.md)
    + 模式和表单{#shemas-forms}

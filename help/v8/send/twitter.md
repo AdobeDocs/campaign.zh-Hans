@@ -4,7 +4,7 @@ description: 了解如何使用Adobe Campaign Social营销模块在Twitter上发
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
-source-git-commit: 9f74e3bbff5bcbebf4f5a0ecf4ed7e458b9e38ed
+source-git-commit: 9ae93ce4e2b0424bb3b3862b2c7d016309bd630e
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 6%
@@ -21,6 +21,7 @@ Adobe Campaign **社交营销** 模块，让您可以通过Twitter与客户和�
 * 向关注者发送私信
 * 在您的Twitter帐户上发布推文
 * 通过恢复用户档案数据来收集新联系人，该数据允许您进行定位活动，并在可能时实施跨渠道策略。 此操作需要用户同意。
+
 
 有关将Twitter帐户与Adobe Campaign集成的配置步骤，请参阅 [本页](../connect/ac-tw.md).
 

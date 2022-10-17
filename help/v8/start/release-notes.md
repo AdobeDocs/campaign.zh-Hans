@@ -6,10 +6,10 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 6986f4eb017602632d11ce6e9ca9e156d94380ff
+source-git-commit: 9ae93ce4e2b0424bb3b3862b2c7d016309bd630e
 workflow-type: tm+mt
-source-wordcount: '3368'
-ht-degree: 66%
+source-wordcount: '2835'
+ht-degree: 98%
 
 ---
 
@@ -17,21 +17,23 @@ ht-degree: 66%
 
 此页面列出了&#x200B;**最新 Campaign v8 版本**&#x200B;中的新功能、改进和修复。
 
+
 ## 8.4.1 版 {#release-8-4-1}
 
-_2022年9月30日_
+_2022 年 9 月 30 日_
+
 
 **新增功能**
 
 <table> 
 <thead>
 <tr> 
-<th> <strong>Adobe Campaign与Adobe Experience Platform集成</strong><br /> </th> 
+<th> <strong>Adobe Campaign 与 Adobe Experience Platform 的集成</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
-<td><p>现在提供新的目标和源连接器，以便在Adobe Campaign和Adobe Experience Platform之间实现无缝集成：</p>
+<td><p>新的目标和源连接器现已可用，您可借助它们在 Adobe Campaign 和 Adobe Experience Platform 之间实现无缝集成：</p>
 <ul><li>使用Adobe Campaign Managed Cloud Services目标连接器将Experience Platform区段发送到Adobe Campaign进行激活，</li>
 <li>使用Adobe Campaign托管Cloud Service源连接器将Adobe Campaign投放和跟踪日志发送到Adobe Experience Platform。</li>
 </ul>
@@ -44,20 +46,20 @@ _2022年9月30日_
 <table> 
 <thead>
 <tr> 
-<th> <strong>Twitter渠道可用性</strong><br /> </th> 
+<th> <strong>Twitter 渠道的可用性</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>的 <a href="../send/twitter.md">Twitter社交渠道</a> 现已在Campaign v8中可用。 您可以：</p>
+<td> <p><a href="../send/twitter.md">Twitter 社交渠道</a>现已可在 Campaign v8 中使用。您可以：</p>
 <ul> 
-<li><p>在Twitter上发送消息：Adobe Campaign允许您将消息直接发布到twitter帐户。 您还可以向所有关注者发送私信。
+<li><p>在 Twitter 上发送消息：您可以利用 Adobe Campaign 将消息直接发送到自己的 Twitter 帐户。您还可以向所有关注者发送私信。
 </p></li>
-<li><p>收集新联系人：Adobe Campaign可自动恢复用户档案数据，以便您开展定位营销活动和实施跨渠道策略。
+<li><p>收集新联系人：Adobe Campaign 可自动收集用户档案数据，您可借此来开展定位营销活动，并实施跨渠道的营销策略。
 </p></li>
 </ul>
-<p>了解如何在 <a href="../connect/ac-tw.md">详细文档</a>.</p>
-<p>了解如何在 <a href="../connect/ac-tw.md">本页</a>.</p>
+<p>在<a href="../connect/ac-tw.md">详细文档</a>中了解如何关联 Campaign 和 Twitter。</p>
+<p>在<a href="../connect/ac-tw.md">此页面</a>中了解如何利用 Campaign 发送推文和私信。</p>
 </td> 
 </tr> 
 </tbody> 
@@ -65,80 +67,46 @@ _2022年9月30日_
 
 **安全性增强**
 
-为了优化安全性，已从Campaign生成的URL中删除安全令牌：
+为优化安全性，已从 Campaign 生成的 URL 中删除安全令牌：
 
-* 此更改仅适用于GETURL。 其他类型(包括POSTURL)不会受到影响。
-* 如果您使用自定义代码，则安全令牌不再从GETURL安全令牌参数中进行检索。 您必须使用以下JSSP代码生成新的安全令牌：
+* 此更改仅适用于“获取 URL”。包括“发布 URL”在内的其他类型操作不会受到影响。
+* 如您使用的是自定义代码，则不会再从“获取 URL”安全令牌参数中检索安全令牌。您必须使用以下 JSSP 代码生成新的安全令牌：
 
    ```getNewSecurityToken(jsspContext.getSessionToken(), jsspContext.getSecurityToken(), true);```
 
-   您还可以使用登录API获取安全令牌。
-* 会话令牌管理没有更改。
+   您还可以使用“登录 API”来获取安全令牌。
+* 会话令牌管理没有变化。
 
 **改进**
 
-* Microsoft Internet Explorer 11生命周期结束后，控制台中的HTML渲染引擎现在正在使用 **Microsoft Edge Chromium**. 此外，安装 **Microsoft Edge WebView 2** 现在，任何客户端控制台安装都需要运行时。
-* 通过工作流高可用性改进了工作流执行，它允许您跨不同容器同时运行工作流，以防止工作流服务丢失并避免相关的执行错误。 **注意**:此新功能仅在有限可用性中向一组客户发布。
-* 现在，针对给定的隐私命名空间批量执行隐私请求。 这项改进增加了GDPR/隐私删除请求的执行时间。
+* 在 Microsoft Internet Explorer 11 的生命周期终止后，控制台中的 HTML 渲染引擎现在使用的是 **Microsoft Edge Chromium**。此外，任何客户端控制台现在均需安装 **Microsoft Edge WebView 2** 运行时。
+* 工作流的高可用性使工作流的执行得到改善，此提升可使您同时跨不同容器运行工作流，以防止工作流服务丢失，并避免发生与之相关的执行错误。**注意**：此新功能仅以“有限可用”的状态向特定客户群体发布。
+* 现在可针对给定的隐私命名空间批量执行隐私请求。这项改进使 GDPR/隐私删除请求的执行时间有所增加。
 
 **兼容性更新**
 
-* Campaign v8 SDK现在支持iOS 16进行推送通知。
+* Campaign v8 SDK 现在支持在 iOS 16 上使用“推送通知”。
 
 请参阅 [Campaign 兼容性矩阵](compatibility-matrix.md)。
 
 **修补程序**
 
-* 修复了在启用FeatureFlag_GZIP_Compression选项时，影响MID实例上投放日志状态更新的问题。 (NEO-49183)
-* 修复了可能导致投放保留在 **待定** 状态（即使达到联系日期）。 (NEO-48079)
-* 修复了工作流中可能导致在使用 **数据加载（文件）** 活动。 该过程以100%的速度停止，但从未结束。 (NEO-47269)
-* 修复了在日语环境的升级后期期间的问题。 (NEO-46640)
-* 修复了在MTA过程中投放达到精确大小时可能发生的问题。 (NEO-46097)
-* 修复了跟踪日志无法返回与收件人浏览器相关的数据的问题。 (NEO-46612)
-* 修复了在使用外部投放模式发送短信消息时导致个性化问题的问题。 (NEO-46415)
-* 修复了可能在跟踪日志中生成重复项的问题。 (NEO-46409)
-* 修复了阻止 **[!UICONTROL Replicate Staging data]** (fdaReplicateStagingData)技术工作流即使在执行过程中发生错误时也无法停止。 (NEO-46280)
-* 为了防止向种子地址发送校样时速度变慢，现在将种子成员的所有连续复制分组到一个复制请求中。 (NEO-44844)
-* 修复了在尝试预览任何消息中心存档事件中的投放时显示错误的问题。 (NEO-43620)
-* 修复了使用Campaign将数据注入Snowflake云数据库时的问题 **查询** 活动和 **更改数据源** 活动：当数据中存在反斜线字符时，该过程会失败。 源字符串未转义，并且数据在Snowflake时未正确处理。 (NEO-45549)
-* 修复了在使用 **查询** 活动和过滤表。 当列名称包含“Update”一词时，出现编译错误，标识符无效，并出现以下消息：“已更新的行数”。 (NEO-46485)
-* 的 **数据库清理** 技术工作流现在还可处理自定义暂存模式。 (NEO-48974)
-* 修复了在排除已的收件人步骤期间，当定向大量收件人时，列入阻止列表可能会减慢投放分析速度的问题。 (NEO-48019)
-* 改进了在SOAP调用期间处理无效XML字符串时的稳定性。 (NEO-48027)
-* 修复了在投放使用日历和拆分模式时导致创建不必要的DeliveryParts的问题。 (NEO-48634)
-* 修复了使用基于日历的批次时的性能问题。 (NEO-48451)
-* 修复了在自定义架构上创建新目标映射后，可能导致投放列表屏幕中出现错误消息的问题。 (NEO-49237)
-* 修复了在暂存工作流出错且保留期完全过期时，可能导致数据丢失的问题。 (NEO-48975)
+* 修复了当 FeatureFlag_GZIP_Compression 选项启用时，MID 实例上的投放日志状态更新受到影响的问题。(NEO-49183)
+* 修复了即使联系日期已到，仍可能导致投放停留在&#x200B;**待定**&#x200B;状态的问题。(NEO-48079)
+* 修复了工作流中存在的问题，此问题可能导致在使用&#x200B;**数据加载（文件）**&#x200B;活动时，文件无法在服务器上完成更新。该流程的进度停留在 100%，但无法结束。(NEO-47269)
+* 修复了在日语环境中升级后出现的问题。(NEO-46640)
+* 修复了在 MTA 进程中投放达到具体某个大小时可能会发生的问题。(NEO-46097)
+* 修复了跟踪日志无法返回与收件人浏览器相关的数据的问题。(NEO-46612)
+* 修复了在使用外部投放模式发送短信时会导致出现个性化错误的问题。(NEO-46415)
+* 修复了可能会在跟踪日志中生成重复项的问题。(NEO-46409)
+* 修复了导致 **[!UICONTROL Replicate Staging data]** (ffdaReplicateStagingData) 技术工作流在执行过程中发生错误时也无法停止的问题。(NEO-46280)
+* 修复了在 MTA 进程中投放达到具体某个大小时可能会发生的问题。(NEO-46097)
+* 为防止向种子地址发送验证时速度变慢，现在将种子成员的所有连续复制操作整合到一个复制请求中。(NEO-44844)
+* 修复了尝试在任何消息中心存档事件中预览投放时显示错误的问题。(NEO-43620)
+* 修复了使用 Campaign **查询**&#x200B;活动和&#x200B;**更改数据源**&#x200B;活动将数据注入 Snowflake 云数据库时的问题：当数据中存在反斜线字符时，该流程会失败。源字符串未转义，并且数据在 Snowflake 中未得到正确处理。(NEO-45549)
+* 修复了在使用&#x200B;**查询**&#x200B;活动和筛选表格时出现的问题。当列名称包含“更新”一词时，出现标识符无效的编译错误，并显示以下消息：“行数已更新”。(NEO-46485)
 
-## 8.3.9 版 {#release-8-3-9}
 
->[!CAUTION]
->
-> 必须升级客户端控制台。 在此中了解如何升级您的客户端控制台 [页面](../start/connect.md#download-ac-console).
-
-_2022年10月7日_
-
-**改进**
-
-* 修复了在启用FeatureFlag_GZIP_Compression选项时，影响MID实例上投放日志状态更新的问题。 (NEO-49183)
-* 的 **数据库清理** 技术工作流现在还可处理自定义暂存模式。 (NEO-48974)
-* 修复了可能导致投放保留在 **待定** 状态（即使达到联系日期）。 (NEO-48079、NEO-48251)
-* 改进了在SOAP调用期间处理无效XML字符串时的稳定性。 (NEO-48027)
-* 修复了在排除已的收件人步骤期间，当定向大量收件人时，列入阻止列表可能会减慢投放分析速度的问题。 (NEO-48019)
-* 为了防止向种子地址发送校样时速度变慢，现在将种子成员的所有连续复制分组到一个复制请求中。 (NEO-44844)
-* 修复了在使用外部投放模式发送短信消息时导致个性化问题的问题。 (NEO-46415)
-* 修复了在尝试预览任何消息中心存档事件中的投放时显示错误的问题。 (NEO-43620)
-* 修复了工作流中可能导致在使用 **数据加载（文件）** 活动。 该过程以100%的速度停止，但从未结束。 (NEO-47269)
-* 修复了在投放使用日历和拆分模式时导致创建不必要的DeliveryParts的问题。 (NEO-48634)
-* 修复了使用基于日历的批次时的性能问题。 (NEO-48451)
-* 修复了在自定义架构上创建新目标映射后，可能导致投放列表屏幕中出现错误消息的问题。 (NEO-49237)
-* 修复了在MTA过程中投放达到特定大小时可能发生的问题。 (NEO-46097)
-* 修复了跟踪日志无法返回与收件人浏览器相关的数据的问题。 (NEO-46612)
-* 修复了在日语环境升级后期出现的问题。 (NEO-46640)
-* 修复了在使用 **查询** 活动和过滤表。 当列名称包含“Update”一词时，出现编译错误，标识符无效，并出现以下消息：“已更新的行数”。 (NEO-46485)
-* 修复了阻止 **[!UICONTROL Replicate Staging data]** (fdaReplicateStagingData)技术工作流即使在执行过程中发生错误时也无法停止。 (NEO-46280)
-* 修复了在暂存工作流出错且保留期完全过期时，可能导致数据丢失的问题。 (NEO-48975)
-* 修复了使用Campaign将数据注入Snowflake云数据库时的问题 **查询** 活动和 **更改数据源** 活动：当数据中存在反斜线字符时，该过程会失败。 源字符串未转义，并且数据在Snowflake时未正确处理。 (NEO-45549)
 
 ## 8.3.8 版 {#release-8-3-8}
 

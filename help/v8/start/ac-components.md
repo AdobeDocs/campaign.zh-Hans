@@ -5,9 +5,9 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '710'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Campaign数据库用作持久层，包含几乎所有由Adobe Campaign管理的�
 
 Campaign逻辑应用程序层可轻松配置以满足复杂的业务需求。 您可以将Campaign用作具有不同应用程序的单一平台，这些应用程序结合在一起可创建开放且可扩展的架构。 每个Campaign实例是应用程序层中的流程集合，其中一些流程是共享的，一些流程是专用的。
 
-## Campaign Managed Services{#ac-managed-services}
+## Campaign托管Cloud Services{#ac-managed-services}
 
 Adobe Campaign v8已部署as a Managed Service:Adobe Campaign的所有组件（包括用户界面、执行管理引擎和Campaign数据库）都由Adobe完全托管，包括电子邮件执行、镜像页面、跟踪服务器以及面向外部的Web组件（如取消订阅页面/首选项中心和登陆页面）。
 

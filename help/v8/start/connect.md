@@ -5,16 +5,16 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '841'
 ht-degree: 7%
 
 ---
 
 # 连接到Adobe Campaign v8{#gs-ac-connect}
 
-Campaign客户端控制台是一个富客户端，可让您连接到Campaign应用程序服务器。
+Campaign客户端控制台是一个富客户端，可让您连接到Campaign应用程序服务器。 进一步了解Campaign客户端控制台 [本页](ac-components.md#presentation-layer).
 
 在开始之前，您需要：
 

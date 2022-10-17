@@ -5,8 +5,8 @@ feature: Overview
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: 0fd798fd21d781f7c0bf75ecb1838f891350bff6
-workflow-type: ht
+source-git-commit: 9ae93ce4e2b0424bb3b3862b2c7d016309bd630e
+workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 100%
 
@@ -80,6 +80,7 @@ ht-degree: 100%
 
 * **Android** 12（从 Campaign v8.3 开始）、9.0、8.x、7.x，带有 Campaign Android SDK 内部版本 1.1.1。
 * **Apple iOS** 9 - 16 适用于 Campaign iOS SDK 内部版本 1.0.26，与 32 位和 64 位版本兼容。从 Campaign v8.4 开始支持 iOS 16。
+
 
 ## Web 访问
 

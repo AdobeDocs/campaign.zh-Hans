@@ -5,9 +5,9 @@ feature: Privacy, PI
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 864f2179384d3e3cfcf310fcd04fe02240bfbefa
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '664'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,30 @@ ht-degree: 1%
 * Protect可能包含个人信息（如镜像页面、Web应用程序等）的页面。
 
 ![](../assets/do-not-localize/speech.png)  作为托管Cloud Services用户，Adobe将与您合作，在您的环境中实施这些配置。
+
+
+## 访问管理
+
+访问管理是加强安全性的重要环节。 以下是一些主要的最佳实践：
+
+* 创建足够的安全组
+* 检查每个操作员是否拥有适当的访问权限
+* 避免使用管理员操作员，并避免管理员组中的运算符过多
+
+![](../assets/do-not-localize/book.png) 在 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator){target=&quot;_blank&quot;}
+
+## 编码准则
+
+在Adobe Campaign中进行开发（工作流、Javascript、JSSP等）时，请始终遵循以下准则：
+
+* **脚本**:请尝试避免使用SQL语句，使用参数化函数而不是字符串连接，通过添加要用于允许列表的SQL函数来避免SQL注入。
+
+* **保护数据模型**:使用命名权限限制运算符操作，添加系统过滤器(sysFilter)
+
+* **在Web应用程序中添加捕获**:在公共登陆页面和订阅页面中添加捕获。
+
+![](../assets/do-not-localize/book.png) 在 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target=&quot;_blank&quot;}
+
 
 ## 个性化
 

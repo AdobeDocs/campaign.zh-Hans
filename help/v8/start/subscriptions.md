@@ -5,10 +5,10 @@ feature: Subscriptions
 role: User
 level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: b323dbf9504e39cca78f7082089b864544ee1633
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 11%
+source-wordcount: '474'
+ht-degree: 13%
 
 ---
 
@@ -78,6 +78,8 @@ ht-degree: 11%
 >
 >在 [企业(FFDA)部署](../architecture/enterprise-deployment.md)、订阅和退订 **异步** 进程。 选择加入和选择退出请求每小时进行处理。 [了解详情](../architecture/new-apis.md#sub-apis)
 
-您还可以让投放收件人将邮件转发给朋友。 为此，请将相关链接插入到投放中。 然后，您可以跟踪此共享过程以及相关页面的访问次数。
+<!--
+You can also enable your delivery recipients to forward messages to a friend. To do this, insert the relevant links into your delivery. You may then track this sharing process as well as the number of visits to the concerned pages. 
 
-![](../assets/do-not-localize/book.png) 有关此功能的更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=en#viral-marketing--forward-to-a-friend){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) For more on this capability, refer to [Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/viral-and-social-marketing.html?lang=en#viral-marketing--forward-to-a-friend){target="_blank"}
+-->

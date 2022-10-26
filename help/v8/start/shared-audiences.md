@@ -1,44 +1,44 @@
 ---
-title: 与Adobe Experience Cloud解决方案共享受众
-description: 了解如何使用Adobe Experience Cloud解决方案共享受众
+title: 使用 Adobe Experience Cloud 解决方案共享受众
+description: 了解如何使用 Adobe Experience Cloud 解决方案共享受众
 feature: Subscriptions
 role: User
 level: Beginner
 hide: true
 hidefromtoc: true
 source-git-commit: ec46a6f41d640b11306a88d6a966f81f8c2e43e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '272'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
-# 与Adobe Experience Cloud解决方案共享受众{#shared-audiences}
+# 使用 Adobe Experience Cloud 解决方案共享受众{#shared-audiences}
 
 
-选项1:AEP源和目标
+选项 1：AEP 源和目标
 
-选项2:Adobe人员/AAM
+选项 2：Adobe People/AAM
 
-您可以集成 **Adobe Campaign** with **People核心服务** 或Adobe Audience Manager。 然后，您将能够：
+您可以将 **Adobe Campaign** 与 **People 核心服务** 或 Adobe Audience Manager 集成。 然后，您将能够：
 
-* 将不同Adobe Experience Cloud解决方案中的共享受众/区段导入Adobe Campaign。 受众可通过Adobe Campaign中的列表导入。
+* 从不同的 Adobe Experience Cloud 解决方案导入共享受众/区段到 Adobe Campaign 中。 可通过 Adobe Campaign 中的列表导入受众。
 
-* 以Adobe Experience Cloud共享受众的形式导出列表。 这些受众可在您使用的不同Adobe Experience Cloud解决方案中使用。 可在工作流中使用专用的 **[!UICONTROL Update shared audience]** 活动。
+* 以 Adobe Experience Cloud 共享受众的形式导出列表。您可在所用的不同 Adobe Experience Cloud 解决方案中使用这些受众。在工作流中完成定位后，可使用专门的 **[!UICONTROL Update shared audience]** 活动导出受众。
 
-此集成支持两种类型的Adobe Experience Cloud ID:
+此集成支持两种类型的 Adobe Experience Cloud ID：
 
-* **访客ID**:此类标识符可协调Adobe Experience Cloud访客与Adobe Campaign收件人。
-* **声明的ID**:此类型的标识符将所有类型的数据与Adobe Campaign数据库中的元素进行协调。 它在Adobe Campaign中表示为预定义的对帐密钥。
+* **访客 ID**：此类标识符可协调 Adobe Experience Cloud 访客与 Adobe Campaign 收件人。
+* **声明的 ID**：此类型的标识符会使所有类型的数据与 Adobe Campaign 数据库中的元素相协调。它在 Adobe Campaign 中表示为预定义的合并关键项。
 
    >[!NOTE]
    >
-   > Declared ID 数据源现在还可以与 People 核心服务集成一起使用。
+   > 声明的 ID 数据源现在还可以与 People 核心服务集成一起使用。
    >
-   >如果您使用“人员”核心服务集成并想要添加Audience Manager集成，则需要Adobe Audience Manager顾问的帮助，以避免在Adobe Audience Manager上下文中转换到使用此声明的ID数据源时收集的所有ID同步丢失。
+   >如果您使用 People 核心服务集成，并想要添加 Audience Manager 集成，则需要 Adobe Audience Manager 顾问的帮助，以避免在 Adobe Audience Manager 环境中转换为使用此声明的 ID 数据源时收集的所有 ID 同步丢失。
 
-参阅:
+请参阅：
 
-[https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=en](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=en)
+[https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=zh_Hans](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=zh_Hans)
 
-[https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=en](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=en)
+[https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=zh_Hans](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=zh_Hans)

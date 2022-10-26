@@ -7,7 +7,7 @@ title: Campaign v8 文档
 source-git-commit: f3090d1da1aaec1a50452bcfbf89e65e2669fc5c
 workflow-type: tm+mt
 source-wordcount: '433'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 87%
    + [护栏](start/ac-guardrails.md)
    + [已知问题](start/known-issues.md)
    + [兼容性矩阵](start/compatibility-matrix.md)
-+ 开始使用{#new}
++ 入门 {#new}
    + [Adobe Campaign 入门](start/get-started.md)
    + [重要功能](start/whats-new.md)
    + [组件和流程](start/ac-components.md)
@@ -30,12 +30,12 @@ ht-degree: 87%
       + [了解 Campaign 界面](start/campaign-ui.md)
       + [自定义 Campaign 界面](start/customize-ui.md)
       + [管理文件夹和视图](audiences/folders-and-views.md)
-   + [从经典v7到v8](start/v7-to-v8.md)
+   + [从 Classic v7 到 v8](start/v7-to-v8.md)
    + [常见问题解答](start/campaign-faq.md)
-+ Campaign Management {#campaigns}
-   + [营销活动入门](start/campaigns.md)
-   + [Campaign编排文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans)
-   + 发送消息{#send}
++ Campaign 管理 {#campaigns}
+   + [活动入门](start/campaigns.md)
+   + [活动编排文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans)
+   + 发送消息 {#send}
       + [消息入门](start/create-message.md)
       + 电子邮件 {#emails}
          + [设计和验证电子邮件](send/email.md)
@@ -51,8 +51,8 @@ ht-degree: 87%
          + [投放失败](send/delivery-failures.md)
       + [发送时间优化](send/predictive.md)
       + [管理订阅](start/subscriptions.md)
-+ 配置文件和受众管理 {#audience}
-   + [用户档案和受众快速入门](audiences/gs-audiences.md)
++ 用户档案和受众管理 {#audience}
+   + [用户档案和受众入门](audiences/gs-audiences.md)
    + [使用受众](start/audiences.md)
    + [访问用户档案](audiences/view-profiles.md)
    + 添加用户档案 {#add-profiles}
@@ -64,7 +64,7 @@ ht-degree: 87%
    + 创建受众 {#create-audiences}
       + [创建联系人列表](audiences/create-audiences.md)
       + [创建和管理过滤器](audiences/create-filters.md)
-   + [与Adobe解决方案共享受众](start/shared-audiences.md)
+   + [与 Adobe 解决方案共享受众](start/shared-audiences.md)
    + [最佳实践](audiences/audiences-best-practices.md)
 + 内容管理 {#content}
    + [设计 Web 应用程序和表单](dev/webapps.md)
@@ -89,16 +89,16 @@ ht-degree: 87%
       + [管理匿名互动](interaction/anonymous-interactions.md)
    + [报告和历史记录](interaction/interaction-tracking.md)
    + [用例](interaction/interaction-use-cases.md)
-+ Reporting and Analytics {#analytics}
++ 报告和分析 {#analytics}
    + [跟踪和监测](start/tracking.md)
    + [指标和报表](start/reporting.md)
-+ 数据管理{#data}
++ 数据管理 {#data}
    + [工作流入门](config/workflows.md)
    + [导入数据](start/import.md)
-   + [工作流文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
-+ 集成{#connect}
-   + [将Campaign与其他解决方案连接起来](connect/integration.md)
-   + [促销活动+Experience Platform](connect/ac-aep.md)
+   + [工作流文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)
++ 集成 {#connect}
+   + [将 Campaign 与其他解决方案配合使用](connect/integration.md)
+   + [Campaign + Experience Platform](connect/ac-aep.md)
    + [Campaign + Journey Optimizer](connect/ac-ajo.md)
    + [Campaign + Analytics](connect/ac-aa.md)
    + [Campaign + Experience Manager](connect/ac-aem.md)
@@ -131,7 +131,7 @@ ht-degree: 87%
       + [实施步骤](start/implement.md)
       + [自定义实例](dev/customize.md)
       + [数据模型最佳实践](dev/datamodel-best-practices.md)
-   + 配置{#configuration}
+   + 配置 {#configuration}
       + [电子邮件设置](config/email-settings.md)
       + [事务性消息设置](config/transactional-msg-settings.md)
       + [将 Campaign SDK 与您的应用程序集成](config/push-config.md)

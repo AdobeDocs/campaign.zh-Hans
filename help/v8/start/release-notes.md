@@ -6,16 +6,24 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: f215d10c2b8deffc73407bfc39628e2f7958650c
+source-git-commit: ad5444284a3886f02c97e94952898e1836c6b7c3
 workflow-type: tm+mt
-source-wordcount: '3368'
-ht-degree: 100%
+source-wordcount: '3391'
+ht-degree: 99%
 
 ---
 
 # 最新版本{#latest-release}
 
 此页面列出了&#x200B;**最新 Campaign v8 版本**&#x200B;中的新功能、改进和修复。
+
+## 8.4.2 版 {#release-8-4-2}
+
+_2022 年 10 月 28 日_
+
+**改进**
+
+* 修复了使用Adobe Campaign Enhanced MTA时，无法正确更新成功交付指示器的问题。 (NEO-50462)
 
 ## 8.4.1 版 {#release-8-4-1}
 

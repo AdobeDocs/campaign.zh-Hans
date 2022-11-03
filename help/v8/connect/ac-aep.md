@@ -4,7 +4,7 @@ description: 了解如何使用Campaign和Adobe Experience Platform
 feature: Platform Integration
 role: Data Engineer
 level: Beginner
-source-git-commit: 27705fc85794611d1207fe7f3eac3010601b0dc5
+source-git-commit: 9bea7904ea4507083d2cf45193877e7a2539d0c7
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # 使用Campaign和Adobe Experience Platform
 
-Adobe Campaign托管Cloud Service目标和源连接器允许在Adobe Campaign和Adobe Experience Platform之间无缝集成：
+Adobe Campaign托管Cloud Service目标和源连接器允许在Adobe Campaign和Adobe Experience Platform之间无缝集成。
 
-* 使用 **Adobe Campaign Managed Cloud Services** 目标连接，以将Experience Platform区段通过Adobe Campaign进行激活，
+* 使用 **Adobe Campaign Managed Cloud Services** 用于将Experience Platform区段发送到Adobe Campaign以进行激活的目标连接，
 
    ![](assets/aep-destination.png)
 
-* 使用 **Adobe Campaign Managed Cloud Services** 源连接，以将Adobe Campaign投放和跟踪日志发送到Adobe Experience Platform。
+* 使用 **Adobe Campaign Managed Cloud Services** 用于将Adobe Campaign投放和跟踪日志发送到Adobe Experience Platform的源连接。
 
    ![](assets/aep-logs.png)
 

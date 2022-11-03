@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Campaign v8 文档
 breadcrumb-title: Campaign 概述
 title: Campaign v8 文档
-source-git-commit: f3090d1da1aaec1a50452bcfbf89e65e2669fc5c
+source-git-commit: b9928cc3bda0c0a1a0d5a43b2604615d7472b419
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 100%
+source-wordcount: '470'
+ht-degree: 93%
 
 ---
 
@@ -91,7 +91,19 @@ ht-degree: 100%
    + [用例](interaction/interaction-use-cases.md)
 + 报告和分析 {#analytics}
    + [跟踪和监测](start/tracking.md)
-   + [指标和报表](start/reporting.md)
+   + 使用报表{#reports}
+      + [报告入门](reporting/gs-reporting.md)
+      + 创建多维数据集{#cubes}
+         + [多维数据集入门](reporting/gs-cubes.md)
+         + [创建多维数据集](reporting/cube-indicators.md)
+         + [使用多维数据集创建报告](reporting/cube-tables.md)
+         + [自定义多维数据集](reporting/cube-best-practices.md)
+      + 内置报告{#ac-reports}
+         + [内置报告列表](reporting/built-in-reports.md)
+         + [全局报告](reporting/global-reports.md)
+         + [投放报告](reporting/delivery-reports.md)
+         + [内置量度计算](reporting/metrics-calculation.md)
+      + [自定义报表](reporting/custom-reports.md)
 + 数据管理 {#data}
    + [工作流入门](config/workflows.md)
    + [导入数据](start/import.md)

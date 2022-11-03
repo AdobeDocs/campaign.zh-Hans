@@ -5,8 +5,8 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
-workflow-type: tm+mt
+source-git-commit: 9bea7904ea4507083d2cf45193877e7a2539d0c7
+workflow-type: ht
 source-wordcount: '853'
 ht-degree: 100%
 
@@ -72,7 +72,7 @@ Adobe Campaign 可逐步丰富客户数据和用户档案，从而让您监测�
 营销活动报告功能有助于创建动态报告。您可以使用拖放变量来自定义报告并分析营销活动是否成功。根据查询和计算的复杂性，可以将数据聚合到列表视图中，或以便于生成营销分析报告的格式进行访问。
 
 
-![](../assets/do-not-localize/glass.png)请参阅[本节](reporting.md)以了解有关报告和跟踪功能的更多信息。
+![](../assets/do-not-localize/glass.png)请参阅[本节](../reporting/gs-reporting.md)以了解有关报告和跟踪功能的更多信息。
 
 ## Adobe Experience Cloud 集成 {#adobe-experience-cloud-integrations}
 

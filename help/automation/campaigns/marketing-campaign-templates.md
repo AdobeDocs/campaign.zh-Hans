@@ -4,10 +4,10 @@ title: 营销活动模板
 description: 营销活动模板
 feature: Campaigns, Templates
 exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 60db4c2e8cd280845ddd0176bd10dc1b7edbb767
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 4%
+source-wordcount: '999'
+ht-degree: 5%
 
 ---
 
@@ -110,7 +110,7 @@ ht-degree: 4%
 
 ## 模块类型 {#typology-of-enabled-modules}
 
-* **控制组**
+* **对照组**
 
    选择此模块后，会在模板的高级设置和基于此模板的营销活动中添加一个额外的选项卡。 配置可通过模板进行定义，也可单独为每个营销活动定义。 在 [此部分](marketing-campaign-deliveries.md#defining-a-control-group).
 
@@ -143,7 +143,7 @@ ht-degree: 4%
 
    启用此模块后， **[!UICONTROL Jobs]** 选项卡添加到营销活动的高级设置中以定义流程执行序列。
 
-* **批准**
+* **审批**
 
    如果启用 **[!UICONTROL Approvals]**，则可以选择要批准的流程和负责审批的操作员。 了解有关批准的更多信息，请参阅 [此部分](marketing-campaign-approval.md#select-reviewers).
 
@@ -151,7 +151,7 @@ ht-degree: 4%
 
    您可以选择是否通过 **[!UICONTROL Approvals]** “模板高级设置”部分的选项卡。
 
-* **费用和目标**
+* **非劳动成本和目标**
 
    选择此模块后， **[!UICONTROL Budget]** 选项卡会添加到模板和基于此模板的营销活动的详细信息中，以便选择关联的预算。
 
@@ -166,10 +166,9 @@ ht-degree: 4%
 
 * 输入 **标签** 模板：该标签是必填的，是基于此模板的所有营销活动的默认标签。
 * 选择营销活动 **自然** 从下拉列表中。 此列表中可用的值是 **[!UICONTROL natureOp]** 枚举。
-   <!--
-  >[!NOTE]
-  >
-  >For more information on enumerations, refer to the [Getting Started](../../platform/using/managing-enumerations.md) section.-->
+
+了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target=&quot;_blank&quot;}。
+
 
 * 选择 **营销活动类型**:唯一、循环或定期。 默认情况下，促销活动模板适用于独特的促销活动。 定期和定期营销活动详见 [此部分](recurring-periodic-campaigns.md).
 * 指定营销活动的持续时间，即营销活动将发生的天数。 创建基于此模板的营销活动时，将自动填充营销活动开始和结束日期。

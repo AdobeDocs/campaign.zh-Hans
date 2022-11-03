@@ -4,7 +4,7 @@ user-guide-title: Campaign v8
 description: Campaign v8 文档
 breadcrumb-title: Campaign 概述
 title: Campaign v8 文档
-source-git-commit: b9928cc3bda0c0a1a0d5a43b2604615d7472b419
+source-git-commit: 7fc3e5b9f12ca48ef0921e27844ef9fef71ac06b
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 93%
@@ -97,7 +97,7 @@ ht-degree: 93%
          + [多维数据集入门](reporting/gs-cubes.md)
          + [创建多维数据集](reporting/cube-indicators.md)
          + [使用多维数据集创建报告](reporting/cube-tables.md)
-         + [自定义多维数据集](reporting/cube-best-practices.md)
+         + [自定义多维数据集](reporting/customize-cubes.md)
       + 内置报告{#ac-reports}
          + [内置报告列表](reporting/built-in-reports.md)
          + [全局报告](reporting/global-reports.md)

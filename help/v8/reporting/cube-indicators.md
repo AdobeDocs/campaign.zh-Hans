@@ -4,7 +4,7 @@ description: 了解如何创建多维数据集
 feature: Reporting
 role: Data Engineer
 level: Beginner
-source-git-commit: 60db4c2e8cd280845ddd0176bd10dc1b7edbb767
+source-git-commit: 7fc3e5b9f12ca48ef0921e27844ef9fef71ac06b
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 2%
@@ -58,7 +58,7 @@ ht-degree: 2%
 1. 选择工作表。 [了解详情](#select-the-work-table)。
 1. 定义维度。 [了解详情](#define-dimensions)。
 1. 定义度量。 [了解详情](#build-indicators)。
-1. 创建聚合（可选）。 [了解详情](cube-best-practices.md#calculate-and-use-aggregates)。
+1. 创建聚合（可选）。 [了解详情](customize-cubes.md#calculate-and-use-aggregates)。
 
 在以下示例中，了解如何在报表中快速创建一个简单的多维数据集以导出其度量。
 
@@ -90,7 +90,7 @@ ht-degree: 2%
 
 1. 在本例中，我们选择的是收件人 **年龄**. 对于此字段，您可以定义绑定以对页面进行分组，并使信息阅读更轻松。 当可能存在多个单独值时，我们建议使用绑定。
 
-为此，请检查 **[!UICONTROL Enable binning]** 选项。 [了解详情](cube-best-practices.md#data-binning)。
+为此，请检查 **[!UICONTROL Enable binning]** 选项。 [了解详情](customize-cubes.md#data-binning)。
 
 1. 添加 **日期** 类型维度。 在此，我们要显示收件人用户档案的创建日期。 为此，请单击 **[!UICONTROL Add]** ，然后选择 **[!UICONTROL Creation date]** 字段。
 您可以自定义日期显示模式。 要实现此目的，请选择要使用的层次结构和要生成的级别：
@@ -109,7 +109,7 @@ ht-degree: 2%
 
 将仅显示枚举中的值。 其他组将分组到 **[!UICONTROL Label of the other values]** 字段。
 
-如需详细信息，请参阅[此部分](cube-best-practices.md#dynamically-manage-bins)。
+如需详细信息，请参阅[此部分](customize-cubes.md#dynamically-manage-bins)。
 
 ### 建立指标 {#build-indicators}
 
@@ -124,7 +124,7 @@ ht-degree: 2%
 
    ![](assets/cube-new-measure.png)
 
-   使用 **[!UICONTROL Filter the measure data...]** 链接以仅选择女性。 [了解详情](cube-best-practices.md#define-measures)。
+   使用 **[!UICONTROL Filter the measure data...]** 链接以仅选择女性。 [了解详情](customize-cubes.md#define-measures)。
 
    ![](assets/cube-filter-measure-data.png)
 

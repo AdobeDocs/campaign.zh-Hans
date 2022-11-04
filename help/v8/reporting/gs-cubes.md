@@ -4,10 +4,10 @@ description: 了解如何创建多维数据集
 feature: Reporting
 role: Data Engineer
 level: Beginner
-source-git-commit: cc7195e90c38489f8e3946d6abd190effd41941a
+source-git-commit: bead34ec59f6f3dca0fbec8460d58ec7da2ed76f
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 14%
+source-wordcount: '525'
+ht-degree: 13%
 
 ---
 
@@ -18,6 +18,8 @@ Adobe Campaign提供了一款用于创建动态报告的直观数据探索工具
 使用营销分析功能来分析和测量数据、计算统计数据、简化和优化报表创建和计算。 您可以创建报表并构建目标群体，并将其存储到列表中，以便在Adobe Campaign中用于定位或分段任务。
 
 您可以扩展数据库探索和分析能力，同时使最终用户更容易配置报告和表：他们只需在创建其报告或表时选择现有（已经过完全配置）多维数据集，以处理计算、度量和统计。
+
+多维数据集用于生成某些内置报告，包括 [投放报告](delivery-reports.md) （投放跟踪、点击量、打开量等）。
 
 创建和配置多维数据集后，报告查询框和 Web 应用程序中即会使用这些多维数据集。它们可以在数据透视表中使用和操作。
 

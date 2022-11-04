@@ -4,10 +4,10 @@ title: 技术工作流
 description: 进一步了解Campaign可用的技术工作流
 feature: Workflows
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
 workflow-type: tm+mt
 source-wordcount: '1654'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -61,9 +61,9 @@ Adobe Campaign附带一组内置的技术工作流。 他们管理计划在服�
 | **交付指标** (deliveryIndicators) | 中间源平台 | 此工作流可更新投放的投放跟踪指示器。 默认情况下，此工作流每小时触发一次。 |
 | **分布式营销流程** (centralLocalMgt) | 中央/地方营销（分布式营销） | 此工作流会开始处理与使用分布式营销模块相关的问题。 它会启动本地促销活动的创建，并管理与订单和促销活动包可用性相关的通知。 |
 | **事件清除** (webAnalyticsPurgeWebEvents) | Web Analytics连接器 | 利用此工作流，可根据在“有效期”(Life)字段中配置的期间，从数据库字段中删除每个事件。 |
-| **将受众导出到Adobe Experience Cloud** (exportSharedAudience) | 与Adobe Experience Cloud集成 | 此工作流会将受众导出为共享的受众/区段。 这些受众可在您使用的不同Adobe Experience Cloud解决方案中使用。 |
+| **将受众导出到Adobe Experience Cloud** (exportSharedAudience) | 与Adobe Experience Cloud集成 | 此工作流会将受众导出为共享的受众/区段。 您可在所用的不同 Adobe Experience Cloud 解决方案中使用这些受众。 |
 | **预测** （预测） | 投放 | 此工作流会分析在临时日历中保存的投放（创建临时日志）。 默认情况下，此工作流于每日凌晨1点触发。 |
-| **完全聚合计算（propositionrcp多维数据集）** (agg_nmspropositionrcp_full) | 优惠引擎（交互） | 此工作流更新了选件建议多维数据集的完整聚合。 默认情况下，此工作流于每日早上6点触发。 此聚合会捕获以下维度：渠道、投放、营销选件和日期。 然后，使用选件建议多维数据集来根据选件生成报告。 您可以在中了解有关多维数据集的更多信息。 |
+| **完全聚合计算（propositionrcp多维数据集）** (agg_nmspropositionrcp_full) | 优惠引擎（交互） | 此工作流更新了选件建议多维数据集的完整聚合。 默认情况下，此工作流于每日早上6点触发。 此聚合会捕获以下维度：渠道、投放、营销选件和日期。 然后，使用选件建议多维数据集来根据选件生成报告。 了解有关中多维数据集的更多信息  [此部分](../../v8/reporting/gs-cubes.md). |
 | **已转换联系人的标识** (webAnalyticsFindConverted) | Web Analytics连接器 | 此工作流可为在再营销活动后完成购买的网站访客建立索引。 可通过再营销效率报表访问此工作流取回的数据（请参阅此页面）。 |
 | **从Adobe Experience Cloud导入受众** (importSharedAudience) | 与Adobe Experience Cloud集成 | 利用此工作流，可将不同Adobe Experience Cloud解决方案中的受众/区段导入Adobe Campaign。 |
 | **营销活动中投放的作业** (deliveryMgt) | 默认安装 | 此工作流会触发已批准的投放，并启动外部投放的服务提供商的后处理。 它还会发送批准通知和提醒。 |

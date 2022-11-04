@@ -3,16 +3,14 @@ product: campaign
 title: SQL 数据管理
 description: 了解有关SQL数据管理工作流活动的更多信息
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 2%
+source-wordcount: '366'
+ht-degree: 1%
 
 ---
 
 # SQL 数据管理{#sql-data-management}
-
-
 
 的 **SQL数据管理** 活动允许您编写自己的SQL脚本以创建和填充工作表。
 
@@ -20,16 +18,9 @@ ht-degree: 2%
 
 在配置活动之前，请确保满足以下先决条件：
 
-* 活动仅可用于远程数据源。 此 ** .
-
-   有关更多信息，请根据您的Campaign版本，参阅以下章节：
-
-   !
-
-   ![](assets/do-not-localize/v8.png)[  Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
-
+* 活动仅可用于远程数据源。
 * 叫客模式必须存在于数据库中，并且必须链接到FDA数据库。
-* 执行工作流的操作员必须具有** 。
+
 
 ## 配置SQL数据管理活动 {#configuring-the-sql-data-management-activity}
 

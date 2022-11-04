@@ -3,25 +3,17 @@ product: campaign
 title: 消息中心（执行）
 description: 消息中心（执行）
 feature: Workflows
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 7%
+source-wordcount: '203'
+ht-degree: 8%
 
 ---
 
 
 # 消息中心（执行）{#message-center-execution}
 
-
-
 下面详述的工作流随 **消息中心 — 执行** 默认情况下为加载项。
-
-有关更多信息，请根据您的Campaign版本，参阅以下章节：
-
-!
-
-![](assets/do-not-localize/v8.png)[  Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
 
 <table> 
  <tbody> 

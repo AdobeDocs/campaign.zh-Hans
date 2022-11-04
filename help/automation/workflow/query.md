@@ -3,9 +3,9 @@ product: campaign
 title: 查询
 description: 进一步了解查询工作流活动
 feature: Workflows, Targeting Activity, Query Editor
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
 workflow-type: tm+mt
-source-wordcount: '1592'
+source-wordcount: '1568'
 ht-degree: 0%
 
 ---
@@ -176,12 +176,6 @@ ht-degree: 0%
    一个常见的错误是： `iBlacklist='3'` where `iBlacklist` 是数字字段， `3` 表示文本值。
 
    确保知道查询的执行计划。 避免进行全表扫描，尤其是实时查询或几乎每分钟运行的实时查询。
-
-   有关更多信息，请根据您的Campaign版本，参阅以下章节：
-
-   !
-
-   ![](assets/do-not-localize/v8.png)[  Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
 
 ### 函数 {#functions}
 

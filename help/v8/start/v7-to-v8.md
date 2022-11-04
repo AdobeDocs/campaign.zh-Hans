@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 1e84fdd61bb2591bf69f5efaf8f8fc01a0d3d93f
+source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 100%
+source-wordcount: '643'
+ht-degree: 96%
 
 ---
 
@@ -66,7 +66,7 @@ Campaign 用户仅可通过其 Adobe ID 进行连接。可使用同一个 Adobe 
 
 使用 Marketing Analytics 模块来分析和测量数据，计算统计数据，简化和优化报告创建与计算。此外，创建报告并构建目标群体：确定群体后，会将它们存储于可在 Adobe Campaign 中（定位、分段等）使用的列表中。
 
-与 Campaign Classic v7 相比，凭借[企业 (FFDA) 部署](../architecture/enterprise-deployment.md)，Adobe Campaign 多维数据集报告得到了优化，并提供了更好的扩展功能。在该特定部署模型中，以前对多维数据集的限制在 Campaign v8 中不适用。
+使用Adobe Campaign v8，可优化多维数据集报表，并提供比Campaign Classicv7更好的扩展功能。 在该特定部署模型中，以前对多维数据集的限制在 Campaign v8 中不适用。了解有关中多维数据集的更多信息 [此部分](../../v8/reporting/gs-cubes.md).
 
 ## 不可用功能{#gs-unavailable-features}
 

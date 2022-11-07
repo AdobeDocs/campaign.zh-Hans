@@ -4,16 +4,14 @@ title: 加载投放内容
 description: 加载投放内容
 feature: Workflows
 exl-id: 08febcbc-1703-4d36-89e1-32c903618084
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 9dfb1acd97e529a8b60119154b3728c883dd9c97
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '304'
 ht-degree: 3%
 
 ---
 
 # 加载投放内容{#loading-delivery-content}
-
-
 
 如果您的交付内容位于Amazon S3、FTP或SFTP服务器上的HTML文件中，则可以轻松将此内容加载到Adobe Campaign交付中。
 
@@ -52,6 +50,3 @@ ht-degree: 3%
 
 1. 保存并执行工作流。 将在下创建包含加载内容的新投放 **[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**.
 
->[!NOTE]
->
->详细介绍了有关SFTP服务器使用情况的最佳实践和疑难解答。

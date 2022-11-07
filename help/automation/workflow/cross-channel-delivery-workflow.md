@@ -4,16 +4,14 @@ title: 跨渠道投放工作流
 description: 了解有关跨渠道投放工作流的更多信息
 feature: Workflows, Channels Activity
 exl-id: fb498233-4df8-4c9e-a082-3e657c6756c9
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 5b4d569a6e96c93828f63fb8376eb81301829854
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 3%
+source-wordcount: '626'
+ht-degree: 4%
 
 ---
 
 # 跨渠道投放工作流{#cross-channel-delivery-workflow}
-
-
 
 此用例展示了涉及跨渠道投放工作流的示例。 有关跨渠道投放的一般概念，请参阅 [此部分](cross-channel-deliveries.md).
 
@@ -31,7 +29,7 @@ ht-degree: 3%
 
 ![](assets/wkf_cross-channel_7.png)
 
-## 步骤1:定位受众 {#step-1--targeting-the-audience}
+## 步骤1:构建受众 {#step-1--build-the-audience}
 
 要定义目标，请创建查询以标识收件人。
 
@@ -44,9 +42,9 @@ ht-degree: 3%
 
 1. 保存更改。
 
-## 步骤2:创建包含选件的电子邮件 {#step-2--creating-an-email-including-an-offer}
+## 步骤2:创建包含选件的电子邮件 {#step-2--create-an-email-including-an-offer}
 
-1. 创建** 。
+1. 创建电子邮件投放.
 1. 设计消息并在内容中插入包含选件的链接。
 
    ![](assets/wkf_cross-channel_1.png)
@@ -65,7 +63,7 @@ ht-degree: 3%
 
    ![](assets/wkf_cross-channel_4.png)
 
-## 步骤3:对生成的受众进行分段 {#step-3--segmenting-the-resulting-audience}
+## 步骤3:对生成的受众进行分段 {#step-3--segment-the-resulting-audience}
 
 确定目标并创建首次投放后，您需要使用筛选条件将目标细分为不同的群体。
 
@@ -101,7 +99,7 @@ ht-degree: 3%
 
 1. 单击 **[!UICONTROL Finish]** 以保存更改。
 
-## 步骤4:最终完成工作流 {#step-4--finalizing-the-workflow}
+## 步骤4:完成工作流 {#step-4--finalize-the-workflow}
 
 1. 在由 **[!UICONTROL Split]** 活动：
 

@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Campaign v8 文档
 breadcrumb-title: Campaign 概述
 title: Campaign v8 文档
-source-git-commit: 7fc3e5b9f12ca48ef0921e27844ef9fef71ac06b
+source-git-commit: 43e515339a2483e82910603daf6009cad63eeeae
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 93%
+source-wordcount: '474'
+ht-degree: 92%
 
 ---
 
@@ -37,6 +37,7 @@ ht-degree: 93%
    + [活动编排文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans)
    + 发送消息 {#send}
       + [消息入门](start/create-message.md)
+      + [使用投放模板](send/create-templates.md)
       + 电子邮件 {#emails}
          + [设计和验证电子邮件](send/email.md)
          + [发送和监测电子邮件](send/send.md)

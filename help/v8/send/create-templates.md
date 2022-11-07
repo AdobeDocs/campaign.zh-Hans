@@ -5,14 +5,14 @@ description: 了解如何在Campaign中创建和使用投放模板
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 822d1bee472330b6195ad9527a7e23e90c7650b4
+source-git-commit: 1c0015a02ff950d9bf9d33aacebf899db9e580fa
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 7%
+source-wordcount: '699'
+ht-degree: 8%
 
 ---
 
-# 使用投放模板{#creating-a-delivery-template}
+# 使用投放模板{#work-with-delivery-template}
 
 使用投放模板标准化创意外观，以便更快地执行和启动活动。
 
@@ -27,9 +27,12 @@ ht-degree: 7%
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#delivery-template-video)
 
+
+## 创建模板{#create-a-delivery-template}
+
 要创建投放模板，您可以复制内置模板、将现有投放转换为模板或从头开始创建投放模板。
 
-## 复制现有模板{#copy-an-existing-template}
+### 复制现有模板{#copy-an-existing-template}
 
 Campaign附带适用于每个渠道的一组内置模板：电子邮件、推送、短信、直邮等。
 
@@ -51,7 +54,7 @@ Campaign附带适用于每个渠道的一组内置模板：电子邮件、推送
 
 ![](assets/select-the-new-template.png)
 
-## 将现有投放转换为模板 {#convert-an-existing-delivery}
+### 将现有投放转换为模板 {#convert-an-existing-delivery}
 
 可以将投放转换为模板，以便执行新的重复投放操作。
 
@@ -67,7 +70,7 @@ Campaign附带适用于每个渠道的一组内置模板：电子邮件、推送
 
    ![](assets/template-select-folders.png)
 
-## 创建新模板 {#create-a-new-template}
+### 创建新模板 {#create-a-new-template}
 
 >[!NOTE]
 >
@@ -87,7 +90,9 @@ Campaign附带适用于每个渠道的一组内置模板：电子邮件、推送
 1. 单击&#x200B;**保存**。您的模板现已准备就绪，可在投放中使用。
 
 
-## 从模板创建投放{#create-a-delivery-from-a-template}
+## 使用模板{#use-a-delivery-template}
+
+### 从模板创建投放{#create-a-delivery-from-a-template}
 
 要基于现有模板创建投放，请从可用投放模板列表中选择该模板。
 

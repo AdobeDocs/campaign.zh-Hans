@@ -3,7 +3,7 @@ product: campaign
 title: 向列表发送报告
 description: 了解如何使用工作流将报表发送到列表
 feature: Workflows
-source-git-commit: e211c0f01a4813ad29f47652fffac2b44bc0f867
+source-git-commit: 4c3caa8e31c2076d32a03a8778a28edce50cde63
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 3%
@@ -67,7 +67,7 @@ ht-degree: 3%
 
    * 选择 **[!UICONTROL Advanced]** 选项卡和检查 **[!UICONTROL Script the name of the file name displayed in the mails sent]**. 在文本区域中，在最终投放中输入附件的名称。
 
-      ![](assets/use_case_report_6bis.png)
+      ![](assets/use_case_report_6b.png)
 
 ## 步骤3:创建工作流 {#step-3--creating-the-workflow}
 

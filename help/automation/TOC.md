@@ -1,18 +1,18 @@
 ---
 audience: user
-user-guide-title: Campaign自动化指南
-user-guide-description: Campaign自动化指南
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+user-guide-title: Campaign 自动化指南
+user-guide-description: Campaign 自动化指南
+source-git-commit: 7fe079c5473fa164405753c2be6cc8be16329f58
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 83%
+ht-degree: 85%
 
 ---
 
 
 # Campaign自动化指南 {#automation}
 
-+ [Campaign自动化指南](home.md)
++ [Campaign 自动化指南](home.md)
 + 使用工作流实现自动化 {#workflows}
    + 工作流入门 {#introduction}
       + [关于工作流](workflow/about-workflows.md)
@@ -145,10 +145,10 @@ ht-degree: 83%
    + [供应商、库存和预算](campaigns/providers--stocks-and-budgets.md)
 + 促销活动优化（附加组件）{#campaign-optimization}
    + [活动分类快速入门](campaign-opt/campaign-typologies.md)
+   + [筛选规则](campaign-opt/filtering-rules.md)
+   + [控制规则](campaign-opt/control-rules.md)
    + [压力规则](campaign-opt/pressure-rules.md)
    + [一致性规则](campaign-opt/consistency-rules.md)
-   + [控制规则](campaign-opt/control-rules.md)
-   + [筛选规则](campaign-opt/filtering-rules.md)
    + [应用规则](campaign-opt/apply-rules.md)
    + [活动模拟](campaign-opt/campaign-simulations.md)
 + 分布式营销（附加组件） {#distributed-marketing}

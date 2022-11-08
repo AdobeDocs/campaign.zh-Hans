@@ -4,16 +4,16 @@ title: 配置筛选规则
 description: 了解如何配置过滤规则
 feature: Typology Rules
 exl-id: 17507cdf-211f-4fa2-abb9-33d4f6dc47bb
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 7fe079c5473fa164405753c2be6cc8be16329f58
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '523'
 ht-degree: 1%
 
 ---
 
 # 筛选规则{#filtering-rules}
 
-通过筛选规则，您可以根据查询中定义的条件定义要排除的消息。 这些规则已链接到定向维度。
+使用筛选规则根据查询中定义的条件选择要排除的消息。 这些规则已链接到定向维度。
 
 筛选规则可以链接到其他类型的规则（控制、压力等） 分类，或分组到 **筛选** 分类。 [了解详情](#create-and-use-a-filtering-typology)。
 
@@ -23,11 +23,12 @@ ht-degree: 1%
 
 要定义此过滤器，请应用以下步骤：
 
+1. 浏览到 **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** Campaign导出器的文件夹，然后单击 **新建** 图标以创建分类规则。
 1. 创建 **[!UICONTROL Filtering]** 分类规则。
 
    ![](assets/campaign_opt_create_filter_01.png)
 
-1. 更改默认定向维度并选择订阅(**nms:subscription**)。
+1. 从 **过滤器** 选项卡将默认定向维度更改为 **订阅** (**nms:subscription**)。
 
    ![](assets/campaign_opt_create_filter_02.png)
 
@@ -35,11 +36,15 @@ ht-degree: 1%
 
    ![](assets/campaign_opt_create_filter_03.png)
 
-1. 将此规则链接到营销活动分类并保存。
+1. 根据收件人年龄进行筛选并保存筛选条件。
+
+   ![](assets/campaign_opt_create_filter_03b.png)
+
+1. 从 **分类** 选项卡，将此规则链接到营销活动分类并保存。
 
    ![](assets/campaign_opt_create_filter_04.png)
 
-在投放中使用此规则时，会自动排除未成年订阅者。 特定消息指示规则应用程序：
+在投放中使用此规则时，会自动排除未成年订阅者。 特定消息指示何时应用规则：
 
 ![](assets/campaign_opt_create_filter_05.png)
 
@@ -47,9 +52,11 @@ ht-degree: 1%
 
 您可以根据链接的投放大纲或投放大纲限制筛选规则的应用程序字段。
 
-要执行此操作，请转到 **[!UICONTROL General]** ，选择要应用的限制类型并创建过滤器，如下所示：
-
+要执行此操作，请转到 **[!UICONTROL General]** 选项卡，选择要应用的限制类型并创建过滤器。
+<!--
 ![](assets/campaign_opt_create_filter_06.png)
+-->
+
 
 在这种情况下，即使规则已链接到所有投放，它也将仅应用于符合所定义过滤器标准的投放。
 

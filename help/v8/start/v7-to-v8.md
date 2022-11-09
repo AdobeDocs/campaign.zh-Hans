@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
+source-git-commit: c267bf2db7dfd524bf2b56c9ae48b42da37c0376
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 96%
+source-wordcount: '648'
+ht-degree: 93%
 
 ---
 
@@ -70,13 +70,12 @@ Campaign 用户仅可通过其 Adobe ID 进行连接。可使用同一个 Adobe 
 
 ## 不可用功能{#gs-unavailable-features}
 
-请注意，在此版本 Campaign 中未提供某些功能，例如：
+请注意，某些功能在 [企业(FFDA)部署](../architecture/enterprise-deployment.md) 营销活动，例如：
 
 * 营销资源管理
 * 优惠券
 * Web 跟踪
 * 调查
-
 
 ## 不支持的功能{#gs-removed}
 

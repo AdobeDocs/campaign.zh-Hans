@@ -5,10 +5,10 @@ feature: Architecture, FFDA
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 51bba0a2b4be03577f508d352fc7c2b514ba28e5
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 55%
+source-wordcount: '1045'
+ht-degree: 54%
 
 ---
 
@@ -112,6 +112,16 @@ Campaign v8 对象现在使用&#x200B;**通用唯一标识符 (UUID)**，允许�
 在 Campaign Classic v7 及更早的版本中，模式（即表格）中密钥的唯一性在数据库引擎级别进行处理。一般来说，PostgreSQL、Oracle 或 SQL Server 等 Classic 数据库引擎包含原生机制，以防止通过主密钥和/或唯一索引根据列或一组列插入重复的行。在数据库级别设置正确的索引和主密钥后，这些版本中不存在重复的 ID。
 
 Adobe Campaign v8 以 Snowflake 为核心数据库。随着查询规模的显着增长，Snowflake 数据库的分布式架构无法提供这样的机制来管理并对表格中某个密钥强制执行唯一性。因此，使用 Adobe Campaign v8 时，没有任何内容会阻止在表格中摄取重复的密钥。现在，最终用户负责确保 Adobe Campaign 数据库中密钥的一致性。[了解详情](keys.md)
+
+### 功能可用性 {#feature-availability}
+
+某些功能在Campaign的企业(FFDA)部署环境中不可用，例如：
+
+* 营销资源管理
+* 优惠券
+* Web 跟踪
+* 调查
+
 
 **相关主题**
 

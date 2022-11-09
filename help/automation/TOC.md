@@ -2,10 +2,10 @@
 audience: user
 user-guide-title: Campaign 自动化指南
 user-guide-description: Campaign 自动化指南
-source-git-commit: 7fe079c5473fa164405753c2be6cc8be16329f58
+source-git-commit: c835a96b315d2c68b64869082fc626243dd006e9
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 85%
+source-wordcount: '447'
+ht-degree: 83%
 
 ---
 
@@ -151,8 +151,14 @@ ht-degree: 85%
    + [一致性规则](campaign-opt/consistency-rules.md)
    + [应用规则](campaign-opt/apply-rules.md)
    + [活动模拟](campaign-opt/campaign-simulations.md)
++ 营销资源管理{#mrm}
+   + [营销资源管理(MRM)入门](mrm/about-marketing-resource-management.md)
+   + [创建和管理任务](mrm/creating-and-managing-tasks.md)
+   + [控制成本](mrm/controlling-costs.md)
+   + [管理营销资源](mrm/managing-marketing-resources.md)
+   + [论坛](mrm/discussion-forums.md)
 + 分布式营销（附加组件） {#distributed-marketing}
-   + [关于分布式营销](distributed-marketing/about-distributed-marketing.md)
+   + [分布式营销入门](distributed-marketing/about-distributed-marketing.md)
    + [创建本地活动](distributed-marketing/creating-a-local-campaign.md)
    + [创建协作活动](distributed-marketing/creating-a-collaborative-campaign.md)
    + [发布活动包](distributed-marketing/publishing-the-campaign-package.md)

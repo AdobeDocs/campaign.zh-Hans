@@ -5,10 +5,10 @@ title: Adobe Campaign自动化主页
 feature: Overview
 description: 概述
 exl-id: 9ed73e65-3626-46c6-bfeb-a9fe9c2d7f72
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 612b3a4287a5ab880b7fd251cc2727586977fbde
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 39%
+source-wordcount: '191'
+ht-degree: 38%
 
 ---
 
@@ -74,6 +74,11 @@ Adobe Campaign 提供了用于进行活动编排的简单易用的单个界面�
     <br>
     <div>
     <a href="campaign-opt/campaign-typologies.md">活动优化</a>
+    </div>
+    <br>
+    <br>
+    <div>
+    <a href="mrm/about-marketing-resource-management.md">营销资源管理(MRM)</a>
     </div>
     <br>
   </td>

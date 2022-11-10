@@ -2,7 +2,7 @@
 audience: user
 user-guide-title: Campaign 自动化指南
 user-guide-description: Campaign 自动化指南
-source-git-commit: c835a96b315d2c68b64869082fc626243dd006e9
+source-git-commit: 75b65efce6b37e3d948f6af4a89ea3b0a5ac1a86
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 83%
@@ -151,8 +151,8 @@ ht-degree: 83%
    + [一致性规则](campaign-opt/consistency-rules.md)
    + [应用规则](campaign-opt/apply-rules.md)
    + [活动模拟](campaign-opt/campaign-simulations.md)
-+ 营销资源管理{#mrm}
-   + [营销资源管理(MRM)入门](mrm/about-marketing-resource-management.md)
++ 营销资源管理（附加组件）{#mrm}
+   + [营销资源管理入门](mrm/about-marketing-resource-management.md)
    + [创建和管理任务](mrm/creating-and-managing-tasks.md)
    + [控制成本](mrm/controlling-costs.md)
    + [管理营销资源](mrm/managing-marketing-resources.md)

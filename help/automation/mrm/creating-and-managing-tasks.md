@@ -2,10 +2,11 @@
 product: campaign
 title: 创建和管理任务
 description: 创建和管理任务
-source-git-commit: c835a96b315d2c68b64869082fc626243dd006e9
+exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
+source-git-commit: 399c81276d29622a2161c8c90395df1a38954763
 workflow-type: tm+mt
-source-wordcount: '3703'
-ht-degree: 0%
+source-wordcount: '3740'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +22,7 @@ Adobe Campaign 让您可以直接在应用程序中创建任务并管理其完�
 
 它们可以显示在它们所属的程序的计划中。
 
-![](assets/d_ncs_user_tasks_in_planning.png)
+![](assets/campaign-calendar.png)
 
 ## 访问任务 {#accessing-tasks}
 
@@ -29,113 +30,123 @@ Adobe Campaign 让您可以直接在应用程序中创建任务并管理其完�
 
 任务显示在可通过 **[!UICONTROL Campaigns]** 选项卡。
 
-![](assets/s_ncs_user_task_edit_view.png)
+![](assets/campaign-task-dashboard.png)
 
-您可以在此处查看连接的操作员的所有任务。
+您可以查看当前运算符的所有任务。
 
 有关更多信息，请参阅 [任务的执行状态](#execution-status-of-a-task) 和 [任务的进度状态](#progress-status-of-a-task).
 
 ### 筛选任务 {#filtering-tasks}
 
-显示此视图时，会自动过滤该视图，以便仅显示 **[!UICONTROL operator tasks]**. 您还可以使用窗口上部分的字段过滤任务。
-
-![](assets/s_ncs_user_task_filter_from_view.png)
+显示此视图时，会自动过滤该视图，以便仅显示 **当前操作员任务**. 您还可以使用窗口上部分的字段过滤任务。
 
 ### 编辑任务 {#editing-tasks}
 
 单击任务以对其进行编辑。
 
-![](assets/s_ncs_user_task_edit_from_view.png)
+![](assets/edit-a-task.png)
 
 ## 创建新任务 {#creating-a-new-task}
 
-要创建任务，请单击 **[!UICONTROL Tasks]** 链接 **[!UICONTROL Campaigns]** 选项卡，选择 **[!UICONTROL Create]**.
+要创建任务，请执行以下步骤：
 
-![](assets/s_ncs_user_task_create_new.png)
+1. 浏览到 **[!UICONTROL Tasks]** 链接 **[!UICONTROL Campaigns]** 选项卡，单击 **[!UICONTROL Create]**.
 
-至少输入任务的名称，并选择链接到的营销活动。 您还必须指定开始和结束日期。 这三条信息是强制性的。
+   ![](assets/create-a-task-from-dashboard.png)
 
-单击 **[!UICONTROL Save]** 创建任务。
+1. 输入任务的名称，并选择与其链接的营销活动。
+1. 设置开始和结束日期。
+1. 单击 **[!UICONTROL Save]** 创建任务。
 
-![](assets/s_ncs_user_task_create_simple.png)
+   ![](assets/new-task-edit.png)
 
 您还可以通过营销策划的功能板创建任务：在这种情况下，它会自动链接到从中创建它的营销策划。
 
-![](assets/s_ncs_user_task_create_new_from_op.png)
+![](assets/add-a-task-in-a-campaign.png)
 
-创建任务后，该任务会添加到营销活动计划和任务列表中。 要编辑任务，请从计划中选择该任务，或在任务概述中单击其名称，然后单击 **[!UICONTROL Open]** 链接。
+创建任务后，该任务会添加到营销活动计划、营销活动仪表板和任务列表。 要编辑任务，请从任务列表中单击其名称，或从计划或营销活动仪表板中选择该任务，然后单击 **[!UICONTROL Open]**.
 
-![](assets/s_ncs_user_task_edit_simple.png)
+创建后，您可以通过定义以下内容来配置任务：
 
-要配置它，您必须指示：
+* 经理和参与者。 [了解详情](#manager-and-participants)
+* 创建计划。 [了解详情](#execution-schedule)
+* 承诺的成本。 [了解详情](#expenses-and-revenues)
 
-* 经理和参与者：请参阅 [经理和参与者](#manager-and-participants).
-* 创建计划：请参阅 [执行计划](#execution-schedule).
-* 承诺成本：请参阅 [开支及收入](#expenses-and-revenues).
+您还可以添加 [审阅者](#reviewers) 和 [参考文档](#documents-referenced).
 
-也可以对审阅人进行广告审查(请参阅 [审阅人](#reviewers))和引用的文档(请参阅 [引用的文档](#documents-referenced))。
-
-任务生命周期介绍于 [生命周期](#life-cycle).
+任务生命周期介绍于 [此部分](#life-cycle).
 
 ### 经理和参与者 {#manager-and-participants}
 
-只有负责任务的操作员才有权关闭该任务。
+默认情况下，任务会分配给创建该任务的操作员。 当该任务需要执行操作时，会通知此运算符。
 
-默认情况下，当Adobe Campaign运算符创建任务时，会自动将该任务分配给它们。 要选择其他运算符，请使用 **[!UICONTROL Assigned to]** 字段。
+您可以从 **[!UICONTROL Assigned to]** 下拉列表。
 
-![](assets/s_ncs_user_task_edit_simple_general_tab.png)
+![](assets/task-assigned-to.png)
 
 >[!NOTE]
 >
 >有关操作员管理的详细信息，请参阅 [此部分](../../v8/start/permissions.md).
+>
+>只允许负责任务的操作员关闭该任务。
 
-您可以指定执行任务时涉及的运算符。 这些操作员无权关闭任务。 他们只能批准分配给他们的任务。
+您可以指定执行任务时涉及的更多运算符。 不允许这些运算符关闭任务：他们只能批准分配给他们的任务。
 
-使用 **[!UICONTROL Resources]** 图标。 单击 **[!UICONTROL Add]** 并选择相关的运算符。
+要添加任务运算符，请执行以下步骤：
 
-![](assets/s_ncs_user_task_add_resources.png)
+1. 单击 **[!UICONTROL Resources]** 图标。
 
-单击 **[!UICONTROL Ok]** 然后输入使用率：这表示在任务执行期间分配给操作员的负载。 此比率仅表示，以百分比表示。
+   ![](assets/add-task-resources.png)
 
-例如，对于执行时间表设置为10天的任务，使用率为50%的操作员将在该任务中调动其10天半的工作时间。
+1. 单击 **[!UICONTROL Add]** 并选择相关的运算符。
+1. 输入使用率：这表示在任务执行期间分配给操作员的工作量。 此比率仅表示，以百分比表示。
 
-对于每个操作员，您可以输入计划工作量和实际工作量。 这些持续时间也仅供参考。
+   ![](assets/define-operator-task-workload.png)
 
-可以配置提醒，该提醒将在任务结束日期之前自动发送给任务中涉及的所有操作员。
+   例如，对于执行时间表设置为10天的任务，使用率为50%的操作员将在该任务中调动其10天半的工作时间。
 
-您可以通过 **[!UICONTROL Edit link]** 图标。
+   对于每个操作员，您可以输入计划工作量和实际工作量。 这些持续时间也仅供参考。
 
-![](assets/s_ncs_user_task_edit_resource_profile.png)
+1. 您可以在 **[!UICONTROL Add a reminder...]** 链接。 在任务结束日期之前，系统会向任务中涉及的所有操作员发送电子邮件通知。
+
+   ![](assets/task-op-add-a-reminder.png)
+
+1. 您还可以在任务开始之前发送通知。 要设置此日期，请在 **[!UICONTROL Initial notification]** 字段。
+1. 当到达结束日期且任务未关闭时，可向在 **[!UICONTROL Assignee]** 下拉列表。
+
 
 运算符仪表板允许您检查其工作量（其他正在进行的任务）。
 
-![](assets/s_ncs_user_task_edit_resource_planning.png)
+![](assets/operator-dashboard.png)
 
-### 审阅人 {#reviewers}
+### 任务批准 {#reviewers}
 
-除了参与者之外，您还可以定义操作员，在任务被负责人关闭后，操作员将审核该任务。 为此，请单击 **[!UICONTROL Enable task approval]** 选项 **[!UICONTROL Resources]** 窗口。 这可以是单个运算符、一组运算符或运算符列表。
+除了参与者之外，您还可以定义操作员，在任务关闭后，这些操作员将审核任务。
 
-![](assets/s_ncs_user_task_edit_resource_validation.png)
+为此，请单击 **[!UICONTROL Enable task approval]** 选项 **[!UICONTROL Resources]** 窗口。 这可以是单个运算符、一组运算符或运算符列表。
 
 要指定运算符列表，请单击 **[!UICONTROL Edit...]** 链接到第一个审阅人的右侧，并根据需要添加任意数量的运算符，如下所示：
 
-![](assets/s_ncs_user_task_edit_resource_operators.png)
+![](assets/enable-task-approval.png)
 
-您可以在审核人员配置窗口的下半部分定义任务的审批计划。 默认情况下，审阅人从提交日期起有三天时间批准任务。 可以配置提醒，该提醒将在批准截止时间之前自动发送给相关操作员。
+您可以在配置窗口的下半部分定义任务的审批计划。 默认情况下，审阅人从提交日期起有三天时间批准任务。 您还可以添加提醒，该提醒将在批准截止日期之前自动发送给相关操作员。
 
-![](assets/s_ncs_user_edit_op_valid_calendar.png)
-
-任务负责人可以为自己分配批准该任务的任务，即使已指派其他操作员执行此操作也是如此。 如果尚未定义审核者，则通知将发送给任务负责人。 所有其他Adobe Campaign运算符 **[!UICONTROL Administrator]** 权限也可以批准任务。 但是，他们将不会收到通知。
+任务负责人可以为自己分配批准该任务的任务，即使已指派其他操作员执行此操作也是如此。 如果尚未定义审核者，则通知将发送给任务负责人。 所有其他Adobe Campaign运算符 **[!UICONTROL Administrator]** 权限也可以批准任务。 但是，它们不会收到通知。
 
 ### 引用的文档 {#documents-referenced}
 
-您可以添加 [文档和营销资源](managing-marketing-resources.md) 任务。 为此，请打开任务并单击 **[!UICONTROL Documents]** 图标。
+您可以添加 [文档和营销资源](managing-marketing-resources.md) 任务。
 
-单击 **[!UICONTROL Add]** 并选择要添加到任务中的文档。 对营销资源应用相同的流程。
+要执行此操作，请执行以下操作：
 
-![](assets/s_ncs_user_task_edit_documents.png)
+1. 打开任务并单击 **[!UICONTROL Documents]** 图标。
 
-被引用的文档将显示在发送给任务涉及的操作员的通知中，以及任务仪表板中。
+   ![](assets/add-documents-to-a-task.png)
+
+1. 单击 **[!UICONTROL Add]** 并选择要添加到任务中的文档。 对营销资源应用相同的流程。
+
+
+引用的文档将添加到发送给任务中涉及的操作员的通知中。 任务功能板中也会添加这些组件。
 
 ![](assets/s_ncs_user_task_notification_documents.png)
 

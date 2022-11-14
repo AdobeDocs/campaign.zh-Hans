@@ -7,9 +7,9 @@ level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: ad5444284a3886f02c97e94952898e1836c6b7c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3391'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ _2022 年 10 月 28 日_
 
 **改进**
 
-* 修复了使用Adobe Campaign Enhanced MTA时，无法正确更新成功交付指示器的问题。 (NEO-50462)
+* 修复了在使用 Adobe Campaign Enhanced MTA 时，无法正确更新投放指标的问题。(NEO-50462)
 
 ## 8.4.1 版 {#release-8-4-1}
 

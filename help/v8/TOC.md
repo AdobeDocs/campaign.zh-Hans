@@ -5,9 +5,9 @@ description: Campaign v8 文档
 breadcrumb-title: Campaign 概述
 title: Campaign v8 文档
 source-git-commit: 43e515339a2483e82910603daf6009cad63eeeae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '474'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -92,7 +92,7 @@ ht-degree: 92%
    + [用例](interaction/interaction-use-cases.md)
 + 报告和分析 {#analytics}
    + [跟踪和监测](start/tracking.md)
-   + 使用报表{#reports}
+   + 使用报告{#reports}
       + [报告入门](reporting/gs-reporting.md)
       + 创建多维数据集{#cubes}
          + [多维数据集入门](reporting/gs-cubes.md)
@@ -104,7 +104,7 @@ ht-degree: 92%
          + [全局报告](reporting/global-reports.md)
          + [投放报告](reporting/delivery-reports.md)
          + [内置量度计算](reporting/metrics-calculation.md)
-      + [自定义报表](reporting/custom-reports.md)
+      + [自定义报告](reporting/custom-reports.md)
 + 数据管理 {#data}
    + [工作流入门](config/workflows.md)
    + [导入数据](start/import.md)

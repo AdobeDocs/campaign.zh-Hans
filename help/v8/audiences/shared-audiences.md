@@ -7,9 +7,9 @@ level: Beginner
 hide: true
 hidefromtoc: true
 source-git-commit: 9bea7904ea4507083d2cf45193877e7a2539d0c7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '264'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -27,12 +27,12 @@ ht-degree: 81%
 
 此集成支持两种类型的 Adobe Experience Cloud ID：
 
-* **访客ID**:此标识符可协调Adobe Experience Cloud访客与Adobe Campaign收件人。
-* **声明的ID**:此标识符可将所有类型的数据与Adobe Campaign数据库中的元素进行协调。 它是Adobe Campaign中的预定义协调键值。
+* **访客 ID**：此标识符可使 Adobe Experience Cloud 访客与 Adobe Campaign 收件人相协调。
+* **声明的 ID**：此标识符可使所有类型的数据与 Adobe Campaign 数据库中的元素相协调。它是 Adobe Campaign 中的预定义合并关键项。
 
    >[!NOTE]
    >
-   > 声明的ID数据源也可与People核心服务集成一起使用。
+   > “声明的 ID”数据源还可以与 People 核心服务集成一起使用。
    >
    >如果您使用 People 核心服务集成，并想要添加 Audience Manager 集成，则需要 Adobe Audience Manager 顾问的帮助，以避免在 Adobe Audience Manager 环境中转换为使用此声明的 ID 数据源时收集的所有 ID 同步丢失。
 

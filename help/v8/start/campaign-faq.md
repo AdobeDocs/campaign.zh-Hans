@@ -1,14 +1,14 @@
 ---
 title: Campaign v8 常见问题解答
-description: 浏览 Campaign 常见问题与答案
+description: 获取常见Adobe Campaign问题的答案。
 feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 100%
+source-wordcount: '659'
+ht-degree: 90%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 100%
 
 1. **如何改进电子邮件可投放性？**
 
-   电子邮件可投放性是每个发件人的营销计划取得成功的重要因素，其特点是不断变化的标准和规则。想要在这个数字化的世界中取得成果，就必须定期调整电子邮件策略，并考虑关键可投放性趋势，以便最好地吸引受众。
+   电子邮件投放能力是每个发件人营销计划成功的关键组件，其特点是标准和规则不断变化。 想要在这个数字化的世界中取得成果，就必须定期调整电子邮件策略，并考虑关键可投放性趋势，以便最好地吸引受众。
 
    ![](../assets/do-not-localize/book.png)请参阅本指南以了解[可投放性最佳实践](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans){target=&quot;_blank&quot;}
 
@@ -85,4 +85,4 @@ ht-degree: 100%
 
    如需在新系统中登记问题或开始聊天会话，请连接到 [Adobe Admin Console](https://adminConsole.adobe.com/overview){target=&quot;_blank&quot;}。
 
-   此系统要求每个用户都有个人帐户，并具有正确的权限。如果您发现无法使用 Adobe ID 登录，请通过 Experience League 请求访问，客户关怀团队将尽快为您进行设置。[了解详情](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}
+   此系统要求每个用户都有个人帐户，并具有正确的权限。如果您发现无法使用Adobe ID登录，请通过Experience League请求获取访问权限，客户关怀团队会尽快设置您。 [了解更多](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target=&quot;_blank&quot;}

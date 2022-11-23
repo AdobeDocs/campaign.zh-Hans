@@ -5,9 +5,9 @@ feature: Application Settings
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 6dee08f0f8673e5264f3cb111fe14493980a62fc
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1091'
 ht-degree: 5%
 
 ---
@@ -26,7 +26,8 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 >[!CAUTION]
 >
 >在 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，特定 **[!UICONTROL Full FDA]** (ffda)外部帐户管理Campaign本地数据库与云数据库([!DNL Snowflake])。
-></br>作为托管Cloud Services用户，此外部帐户是按Adobe为您的实例配置的。 不得修改。
+>
+>作为托管Cloud Services用户，外部帐户是按Adobe为您的实例配置的，不得修改。
 
 ## 特定于促销活动的外部帐户
 
@@ -117,34 +118,37 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
 * **外部数据库（联合数据访问）**
 
-   使用 **外部数据库** 键入外部帐户以通过FDA连接到外部数据库。
+   的 **外部数据库** 类型外部帐户用于通过联合数据访问(FDA)连接到外部数据库。
 
    与Adobe Campaign v8兼容的外部数据库列在 [兼容性矩阵](../start/compatibility-matrix.md)
 
    ![](../assets/do-not-localize/glass.png) 在 [此部分](../connect/fda.md).
 
+* **Twitter**
+
+   的 **Twitter** 键入外部帐户，将Campaign连接到您的twitter帐户，并代表您发布消息。
+
+   ![](../assets/do-not-localize/glass.png) 进一步了解Twitter集成 [此部分](../connect/ac-tw.md).
+
 ## Adobe解决方案集成外部帐户
 
 * **Adobe Experience Cloud**
 
-   的 **[!UICONTROL Adobe Experience Cloud]** 外部帐户用于实施Adobe IMS以使用Adobe ID连接到Adobe Campaign控制台。
+   的 **[!UICONTROL Adobe Experience Cloud]** 外部帐户用于实施AdobeIdentity Management服务(IMS)以连接到Adobe Campaign。
 
    ![](../assets/do-not-localize/glass.png) 在中了解有关AdobeIdentity Management服务(IMS)的更多信息 [此部分](../start/connect.md#connect-ims).
 
 * **网络分析**
 
-   使用 **[!UICONTROL Web Analytics (Adobe Analytics)]** 外部帐户，用于配置从Adobe Analytics到Adobe Campaign的数据传输。
+   的 **[!UICONTROL Web Analytics (Adobe Analytics)]** 外部帐户用于配置从Adobe Analytics到Adobe Campaign的数据传输。
 
    ![](../assets/do-not-localize/glass.png) 进一步了解Adobe Campaign - Adobe Analytics集成 [本页](../connect/ac-aa.md).
 
-   ![](../assets/do-not-localize/speech.png)  作为托管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support) 将Adobe Analytics与Campaign集成。
+* **Adobe Experience Manager**
 
-   * **Adobe Experience Manager**
    的 **[!UICONTROL AEM]** 外部帐户允许您直接在Adobe Experience Manager中管理电子邮件投放内容和表单。
 
    ![](../assets/do-not-localize/glass.png) 进一步了解Adobe Campaign - Adobe Analytics集成 [本页](../connect/ac-aem.md).
-
-   ![](../assets/do-not-localize/speech.png)  作为托管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support) 将Adobe Experience Manager与Adobe Campaign集成。
 
 
 ## CRM连接器外部帐户

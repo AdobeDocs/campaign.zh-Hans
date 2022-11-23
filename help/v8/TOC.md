@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Campaign v8 文档
 breadcrumb-title: Campaign 概述
 title: Campaign v8 文档
-source-git-commit: 43e515339a2483e82910603daf6009cad63eeeae
-workflow-type: ht
-source-wordcount: '474'
-ht-degree: 100%
+source-git-commit: a9f7bf9a976a7f3b5415c090c042f83a1bb64c24
+workflow-type: tm+mt
+source-wordcount: '487'
+ht-degree: 97%
 
 ---
 
@@ -125,7 +125,10 @@ ht-degree: 100%
       + [使用 Campaign 和 Microsoft Dynamics](connect/ac-ms-dyn.md)
       + [同步数据](connect/crm-data-sync.md)
 + 管理 {#admin}
-   + [权限](start/permissions.md)
+   + 用户和权限 {#permissions}
+      + [权限入门](start/gs-permissions.md)
+      + [管理用户权限](start/manage-permissions.md)
+      + [添加文件夹的权限](start/folder-permissions.md)
    + [控制面板](config/self-service.md)
 + 架构和配置 {#config}
    + 架构 {#architecture}

@@ -5,9 +5,9 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
+source-git-commit: f381a2ec91b7179a51d91f9b7414ea39db03cd71
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '823'
 ht-degree: 6%
 
 ---
@@ -27,7 +27,7 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 
 从Campaign Classic8.4内部版本开始，任何控制台安装都需要安装Microsoft Edge Webview 2运行时。
 
-Web View默认作为Windows 11操作系统的一部分安装。 如果系统上尚不存在该服务器，Campaign控制台安装程序将提示您从下载它 [Microsoft开发人员网站](http://www.adobe.com/go/acc-ms-webview2-runtime-download_cn). 请注意，下载链接在Internet Explorer 11浏览器上不起作用，因为Microsoft已弃用其支持。 确保使用其他浏览器访问该链接。
+Web View默认作为Windows 11操作系统的一部分安装。 如果系统上尚不存在该服务器，Campaign控制台安装程序将提示您从下载它 [Microsoft开发人员网站](http://www.adobe.com/go/acc-ms-webview2-runtime-download_cn){target=&quot;_blank&quot;}。 请注意，下载链接在Internet Explorer 11浏览器上不起作用，因为Microsoft已弃用其支持。 确保使用其他浏览器访问该链接。
 
 ## 下载并安装客户端控制台{#download-ac-console}
 
@@ -35,7 +35,7 @@ Web View默认作为Windows 11操作系统的一部分安装。 如果系统上�
 
 有两个选项可用：
 
-1. 作为Campaign管理员，请连接到Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) 并下载客户端控制台安装程序。 然后，您可以将其安装到本地计算机上。
+1. 作为Campaign管理员，请连接到Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html){target=&quot;_blank&quot;}并下载客户端控制台安装程序。 然后，您可以将其安装到本地计算机上。
 
 1. 作为最终用户，Adobe可以为您部署控制台：更新控制台后，系统会在弹出窗口中提示您下载最新的客户端控制台版本。
 
@@ -91,21 +91,18 @@ Web View默认作为Windows 11操作系统的一部分安装。 如果系统上�
 
 ## 授予用户访问权限{#grant-access}
 
-Adobe Campaign允许您定义和管理分配给各种运算符的权限。 这些权限和限制是授权或拒绝的一组权限和限制：
-
-* 访问特定功能（通过指定权限），
-* 访问某些元素，
-* 创建、修改和/或删除元素（投放、联系人、营销活动、群组等）。
-
-进一步了解用户以及如何在 [此部分](permissions.md).
+Adobe Campaign允许您定义和管理分配给各种运算符的权限。
 
 作为Campaign管理员，您负责创建操作员并与用户共享其凭据。
+
+进一步了解用户以及如何在 [此部分](gs-permissions.md).
+
 
 ## 使用Adobe ID连接到Campaign{#connect-ims}
 
 Campaign用户使用其Adobe ID通过AdobeIdentity Management系统(IMS)连接到Adobe Campaign控制台。 他们可以使用相同的ID来处理所有Adobe解决方案。 将Adobe Campaign与其他解决方案结合使用时，会保存连接。
 
-在 [本页](https://helpx.adobe.com/enterprise/using/identity.html).
+在 [本页](https://helpx.adobe.com/enterprise/using/identity.html){target=&quot;_blank&quot;}。
 
 ## Web 访问{#web-access}
 

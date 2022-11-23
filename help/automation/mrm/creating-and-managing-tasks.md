@@ -3,7 +3,7 @@ product: campaign
 title: 创建和管理任务
 description: 创建和管理任务
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
-source-git-commit: 399c81276d29622a2161c8c90395df1a38954763
+source-git-commit: 094743fef69e137f80b670f0bf31dce56c282c34
 workflow-type: tm+mt
 source-wordcount: '3740'
 ht-degree: 1%
@@ -86,7 +86,7 @@ Adobe Campaign 让您可以直接在应用程序中创建任务并管理其完�
 
 >[!NOTE]
 >
->有关操作员管理的详细信息，请参阅 [此部分](../../v8/start/permissions.md).
+>有关操作员管理的详细信息，请参阅 [此部分](../../v8/start/gs-permissions.md).
 >
 >只允许负责任务的操作员关闭该任务。
 

@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: eed3396584940f99a865eef2358887b6bf5c4936
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 21%
@@ -14,7 +14,7 @@ ht-degree: 21%
 
 # 了解Campaign用户界面
 
-## 访问Campaign UI
+## 访问Campaign UI{#ui-access}
 
 Campaign 工作区可通过[客户端控制台](../architecture/general-architecture.md)使用。
 
@@ -24,7 +24,7 @@ Campaign 工作区可通过[客户端控制台](../architecture/general-architec
 
 您还可以使用Web浏览器访问Campaign。 在此上下文中，只有Campaign功能的子集可用。 [了解详情](#web-browser)
 
-## 浏览UI
+## 浏览UI{#ui-browse}
 
 连接到Campaign后，即可访问主页。 浏览链接以访问功能。 UI中可用的功能集取决于您的选项和权限。
 
@@ -79,7 +79,7 @@ Web访问界面与控制台界面类似。 在浏览器中，您可以使用与�
 下部分显示选定记录的详细信息。
 
 
-## 语言
+## 语言{#languages}
 
 Campaign v8 用户界面提供以下语言版本：
 

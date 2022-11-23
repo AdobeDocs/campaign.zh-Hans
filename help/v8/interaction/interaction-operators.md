@@ -5,51 +5,31 @@ feature: Interaction, Offers
 role: Data Engineer
 level: Beginner
 exl-id: 865ddb84-3373-45e0-849d-9d3c92455d22
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: eed3396584940f99a865eef2358887b6bf5c4936
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 1%
+source-wordcount: '243'
+ht-degree: 6%
 
 ---
 
 # 操作员配置文件 {#operator-profiles}
 
-两种类型的运算符可以使用Campaign交互： **选件经理** 和 **投放管理器**. 每个权限和限制都是特定的。 进一步了解Campaign操作员和 [本页](../start/permissions.md).
+两种类型的运算符可以使用Campaign交互： **选件经理** 和 **投放管理器**. 每个权限和限制都是特定的。 进一步了解Campaign操作员和 [本页](../start/gs-permissions.md).
 
 * 的 **[!UICONTROL Offer manager]** 创建和维护选件。
 * 的 **[!UICONTROL Delivery manager]** 批准和使用选件
 
 ## 创建选件管理器运算符{#offer-manager}
 
-1. 创建运算符。
+1. 创建运算符。 [了解详情](../start/manage-permissions.md#add-users)
+1. 浏览到 **[!UICONTROL Groups and named rights]** 窗口，单击 **[!UICONTROL Add]** ，然后选择 **[!UICONTROL Offer manager]** 群组。
 
-   ![](../assets/do-not-localize/book.png) 有关在Campaign中创建运算符的详细步骤，请参见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
-
-1. 转到 **[!UICONTROL Groups and named rights]** 窗口，单击 **[!UICONTROL Add]** ，然后选择 **[!UICONTROL Offer manager]** 群组。
-
-分配给选件管理器的权限使他们能够执行以下任务：
-
-* 修改 **[!UICONTROL Design]** 环境。
-* 查看 **[!UICONTROL Live]** 环境。
-* 配置管理功能（预定义的空格和过滤器）。
-* 创建和更改类别。
-* 创建选件。
-* 配置选件资格。
-* 批准选件。
-
-如果在工作流中使用选件，则必须将运算符添加到 **[!UICONTROL Administrator]** 或 **[!UICONTROL Offer managers]** 操作员组。
-
->[!NOTE]
->
->**选件经理** 只有未指定审核者，或在选件模板中声明为审核者时，才能批准选件。
+描述了与选件管理器关联的权限 [此处](../start/manage-permissions.md#ootb-productprofiles)
 
 ## 创建投放管理器运算符 {#delivery-manager}
 
-1. 创建运算符。
-
-   ![](../assets/do-not-localize/book.png) 有关在Campaign中创建运算符的详细步骤，请参见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/permissions/access-management-operators.html)
-
-1. 转到 **[!UICONTROL Groups and named rights]** 窗口，单击 **[!UICONTROL Add]** ，然后选择 **[!UICONTROL Delivery manager]** 群组。
+1. 创建运算符。 [了解详情](../start/manage-permissions.md#add-users)
+1. 浏览到 **[!UICONTROL Groups and named rights]** ，单击 **[!UICONTROL Add]** ，然后选择 **[!UICONTROL Delivery manager]** 群组。
 
 分配给投放管理器的权限使他们能够执行以下任务：
 
@@ -101,7 +81,7 @@ ht-degree: 1%
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 分类<br /> </td> 
+   <td> 类型<br /> </td> 
    <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
@@ -116,7 +96,7 @@ ht-degree: 1%
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 选件类别<br /> </td> 
+   <td> 优惠类别<br /> </td> 
    <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
@@ -161,7 +141,7 @@ ht-degree: 1%
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 分类<br /> </td> 
+   <td> 类型<br /> </td> 
    <td> 读取<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
@@ -176,7 +156,7 @@ ht-degree: 1%
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 选件类别<br /> </td> 
+   <td> 优惠类别<br /> </td> 
    <td> </td> 
    <td> 读取<br /> </td> 
   </tr> 

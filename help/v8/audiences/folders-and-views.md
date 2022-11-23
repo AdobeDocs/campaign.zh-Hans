@@ -5,9 +5,9 @@ feature: Audiences, Profiles, Application Settings
 role: User
 level: Beginner, Intermediate
 exl-id: 762dcacc-4aeb-4990-af01-7f793bd69170
-source-git-commit: ec46a6f41d640b11306a88d6a966f81f8c2e43e0
+source-git-commit: 515520bb5b7131fc2ed2d1b2a843373f01af306a
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '672'
 ht-degree: 1%
 
 ---
@@ -106,31 +106,4 @@ Campaign文件夹是资源管理器树中的节点。 根据数据类型，它�
 
 ## 限制对文件夹的访问{#restrict-access-to-a-folder}
 
-使用文件夹的权限来组织和控制对Campaign数据的访问。
-
-要编辑对特定Campaign文件夹的权限，请执行以下步骤：
-
-1. 右键单击文件夹并选择 **[!UICONTROL Properties...]**.
-1. 浏览到 **[!UICONTROL Security]** 选项卡查看此文件夹的授权。
-
-   ![](assets/folder-permissions.png)
-
-* 至 **授权组或运算符**，请单击 **[!UICONTROL Add]** 按钮，然后选择组或运算符以分配此文件夹的权限。
-* 至 **禁止组或操作员**，单击 **[!UICONTROL Delete]** 并选择组或运算符以删除此文件夹的授权。
-* 至 **选择分配给组或运算符的权限**，选择组或运算符，选择要授予的访问权限，然后取消选择其他权限。
-
-### 传播权限 {#propagate-permissions}
-
-要传播授权和访问权限，请选择 **[!UICONTROL Propagate]** 选项。
-
-然后，此窗口中定义的授权将应用于当前节点的所有子文件夹。 您始终可以为每个子文件夹过载这些授权。
-
->[!NOTE]
->
->取消选中 **[!UICONTROL Propagate]** 文件夹的选项不会清除子文件夹：必须为每个子文件夹明确清除它。
-
-### 授予对所有运算符的访问权限 {#grant-access-to-all-operators}
-
-在 **[!UICONTROL Security]** 选项卡，选择 **[!UICONTROL System folder]** 以允许访问所有运算符，而不考虑它们的权限。
-
-如果清除此选项，则必须将运算符（或其组）明确地添加回授权列表，以供其访问。
+使用文件夹的权限来组织和控制对Campaign数据的访问。 了解有关 [此部分](../start/folder-permissions.md).

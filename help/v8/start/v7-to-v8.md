@@ -1,14 +1,14 @@
 ---
 title: 从 Campaign Classic v7 过渡到 Campaign v8
-description: 了解Campaign Classicv7和Campaign v8之间的差异。
+description: 了解 Campaign Classic v7 和 Campaign v8 之间的差异。
 feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
 source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '650'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Campaign 用户仅可通过其 Adobe ID 进行连接。可使用同一个 Adobe 
 
 ## 不可用功能{#gs-unavailable-features}
 
-请注意，某些功能在 [企业(FFDA)部署](../architecture/enterprise-deployment.md) 营销活动，例如：
+请注意，某些功能在 Campaign 的[企业 (FFDA) 部署](../architecture/enterprise-deployment.md)的环境下不可用，例如：
 
 * 营销资源管理
 * 优惠券
@@ -79,7 +79,7 @@ Campaign 用户仅可通过其 Adobe ID 进行连接。可使用同一个 Adobe 
 
 ## 不支持的功能{#gs-removed}
 
-Campaign v8 不再支持某些 Campaign Classicv7 曾支持的功能，例如：
+Campaign v8 不再支持某些 Campaign Classic v7 曾支持的功能，例如：
 
 * 通过 Facebook 进行社交媒体营销
 * ACS 连接器（高级服务）

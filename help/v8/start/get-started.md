@@ -1,14 +1,14 @@
 ---
 title: 开始使用 Campaign v8
-description: Adobe Campaign的新人？ 查找有关如何启动和运行软件以及从界面开始的位置的文档。
+description: 初次使用 Adobe Campaign？查找有关如何设置并运行软件，以及从界面的什么位置开始操作的文档。
 feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
 source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '867'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 

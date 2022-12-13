@@ -5,10 +5,10 @@ type: Event
 description: Campaign技术说明
 breadcrumb-title: Campaign技术说明
 title: Campaign技术说明
-source-git-commit: 6dceac03868db1aa43f02f4807569d9c16801ec7
+source-git-commit: 99b8b36deba39323f59755a3ed1f935a831f93d9
 workflow-type: tm+mt
-source-wordcount: '31'
-ht-degree: 29%
+source-wordcount: '33'
+ht-degree: 33%
 
 ---
 
@@ -19,4 +19,5 @@ ht-degree: 29%
 + 升级{#tn-new}
    + [升级Apache版本](upgrades/apache.md)
    + [Internet浏览器](upgrades/browsers.md)
+   + [2023 年系统升级](upgrades/tech-stack-upgrade.md)
 + [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)

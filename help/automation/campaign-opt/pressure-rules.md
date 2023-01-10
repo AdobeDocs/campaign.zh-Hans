@@ -4,9 +4,9 @@ title: 配置压力规则
 description: 了解如何配置压力规则
 feature: Fatigue Management, Typology Rules
 exl-id: d234db0e-936a-48db-b697-11c6b40bc3ab
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6a1e2e0a872ce5886e7374d266c71975941e87b8
 workflow-type: tm+mt
-source-wordcount: '3040'
+source-wordcount: '3027'
 ht-degree: 5%
 
 ---
@@ -107,7 +107,7 @@ ht-degree: 5%
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-要定义阈值，您可以使用链接到定向维度的维度：例如，要包含发送给收件人用户档案的消息(有关访客表中的更多信息，请参阅（此部分）（调查/使用/用例 — creating-a-refer-a-friend-form.md）)，或避免每周向与收件人用户档案关联的维度中标识的同一家庭发送多条消息（可能指多个电子邮件地址）。
+要定义阈值，您可以使用链接到定向维度的维度：例如，要包含发送到 [访客表](../../v8/audiences/target-mappings.md) 或者，避免每周向同一家庭发送多条消息，即在与收件人的维度中标识的同一家庭（可能指多个电子邮件地址）。
 
 要执行此操作，请选择 **[!UICONTROL Count messages on a linked dimension]** 选项，然后选择访客或联系人表。
 
@@ -352,8 +352,8 @@ ht-degree: 5%
  <thead> 
   <tr> 
    <th> 投放<br /> </th> 
-   <th> 批准<br /> </th> 
-   <th> 粗细<br /> </th> 
+   <th> 审批<br /> </th> 
+   <th> 权重<br /> </th> 
    <th> 提取日期/时间<br /> </th> 
    <th> 联系日期<br /> </th> 
    <th> 投放开始日期/时间<br /> </th> 
@@ -367,9 +367,9 @@ ht-degree: 5%
    <td> 投放1<br /> </td> 
    <td> 已禁用<br /> </td> 
    <td> 5<br /> </td> 
-   <td> 下午3点<br /> </td> 
+   <td> 3pm<br /> </td> 
    <td> 早8点（次日）<br /> </td> 
-   <td> 下午2点<br /> </td> 
+   <td> 2pm<br /> </td> 
    <td> 夜间<br /> </td> 
    <td> 已排除<br /> </td> 
    <td> 已排除<br /> </td> 
@@ -378,9 +378,9 @@ ht-degree: 5%
    <td> 投放2<br /> </td> 
    <td> 已禁用<br /> </td> 
    <td> 10<br /> </td> 
-   <td> 4点<br /> </td> 
+   <td> 4pm<br /> </td> 
    <td> 早9点（次日）<br /> </td> 
-   <td> 下午2点<br /> </td> 
+   <td> 2pm<br /> </td> 
    <td> 夜间<br /> </td> 
    <td> 已发送<br /> </td> 
    <td> 早9点（次日）<br /> </td> 

@@ -1,6 +1,6 @@
 ---
 title: 连接到Campaign v8
-description: 了解如何连接到Adobe Campaign v8并在您的计算机上安装控制台，以便更轻松地访问。
+description: 了解如何连接到 Adobe Campaign v8 并在您的计算机上安装控制台以便于访问。
 feature: Client Console
 role: User
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 source-git-commit: f381a2ec91b7179a51d91f9b7414ea39db03cd71
 workflow-type: tm+mt
 source-wordcount: '823'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 

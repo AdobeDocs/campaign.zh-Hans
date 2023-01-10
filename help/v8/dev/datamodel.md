@@ -1,6 +1,6 @@
 ---
 title: Campaign 数据模型快速入门
-description: 开始使用Campaign数据模型，并利用来源的数据，从而使您的通信和营销产出受益。
+description: 开始使用 Campaign 数据模型并利用来自您的来源的数据以使您的通信和营销输出受益。
 feature: Data Model
 role: Data Engineer
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
 source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 

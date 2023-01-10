@@ -1,6 +1,6 @@
 ---
 title: 在Campaign中管理订阅和退订
-description: 了解如何在 Campaign v8 中管理订阅和退订.
+description: 了解如何在 Campaign v8 中管理订阅和退订。
 feature: Subscriptions
 role: User
 level: Beginner

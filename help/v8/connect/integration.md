@@ -1,6 +1,6 @@
 ---
 title: 将Campaign与您的解决方案连接起来
-description: 了解如何将Adobe Campaign实例与Experience Cloud解决方案连接起来。
+description: 了解如何将您的 Adobe Campaign 实例连接到 Experience Cloud 解决方案。
 feature: Overview
 role: Admin, User
 level: Beginner, Intermediate
@@ -8,7 +8,7 @@ exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
 source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
 source-wordcount: '394'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 

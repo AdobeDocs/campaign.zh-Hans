@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Campaign v8 文档
 breadcrumb-title: Campaign 概述
 title: Campaign v8 文档
-source-git-commit: a9f7bf9a976a7f3b5415c090c042f83a1bb64c24
+source-git-commit: 38c300555b847c9d1fd210d2fe60e4ffa1e314d2
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '486'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 100%
    + [常见问题解答](start/campaign-faq.md)
 + Campaign 管理 {#campaigns}
    + [活动入门](start/campaigns.md)
-   + [活动编排文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans)
+   + [营销活动编排 >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans)
    + 发送消息 {#send}
       + [消息入门](start/create-message.md)
       + [使用投放模板](send/create-templates.md)
@@ -166,5 +166,5 @@ ht-degree: 100%
       + [更新数据库](dev/update-database-structure.md)
       + [输入表单](dev/forms.md)
    + [Campaign API](dev/api.md)
-+ [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)
-+ [Campaign 自动化指南](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=zh-Hans)
++ [Campaign 控制面板 >](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)
++ [Campaign 自动化指南 >](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=zh-Hans)

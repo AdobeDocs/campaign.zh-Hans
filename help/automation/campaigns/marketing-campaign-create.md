@@ -4,10 +4,10 @@ title: 创建营销活动
 description: 了解如何创建和执行营销活动
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 38c300555b847c9d1fd210d2fe60e4ffa1e314d2
 workflow-type: tm+mt
 source-wordcount: '1297'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -103,7 +103,7 @@ ht-degree: 3%
 * 参考文档和资源：您可以将文档与营销活动（简介、报告、图像等）关联。 支持所有文档格式。 [了解详情](marketing-campaign-deliveries.md#manage-associated-documents)。
 * 定义成本：对于每个营销活动，Adobe Campaign允许您定义可在创建营销活动时使用的成本条目和成本计算结构。 例如：印刷成本、使用外部代理、房租等。 [了解详情](providers--stocks-and-budgets.md#defining-cost-categories)。
 * 定义目标：您可以为营销活动定义可量化的目标，例如订阅者数量、业务量等。 此信息稍后会用在营销活动报表中。
-* 管理种子地址和控制组。 [了解详情](marketing-campaign-deliveries.md#defining-a-control-group)).
+* 管理种子地址和控制组。 [了解详情](marketing-campaign-deliveries.md#defining-a-control-group)。
 * 管理批准：您可以选择要批准的处理，并根据需要选择审核运算符或运算符组。 [了解详情](marketing-campaign-approval.md#checking-and-approving-deliveries)。
 
 >[!NOTE]
@@ -181,13 +181,13 @@ ht-degree: 3%
 | 营销活动、投放、选件等的列表。 | 删除列表项 |
 | 营销活动 | 取消营销活动 |
 | 投放 | 批准投放内容和目标<br/>提交投放内容<br/>确认投放<br/>暂停和停止投放 |
-| Web应用程序 | 创建Web应用程序<br/>编辑应用程序内容和属性<br/>将应用程序内容另存为模板<br/>发布应用程序 |
+| Web 应用程序 | 创建Web应用程序<br/>编辑应用程序内容和属性<br/>将应用程序内容另存为模板<br/>发布应用程序 |
 | 优惠 | 批准选件内容和资格<br/>禁用在线选件 |
 | 任务 | 完成任务<br/>取消任务 |
 | 营销资源 | 批准资源<br/>锁定和解锁资源 |
-| Campaign包 | 提交资源包以供审批<br/>批准或拒绝资源包<br/>取消资源包 |
-| 营销活动订单 | 创建订单<br/>接受或拒绝订单 |
-| Stock | 删除库存行 |
+| Campaign 包 | 提交资源包以供审批<br/>批准或拒绝资源包<br/>取消资源包 |
+| Campaign 订单 | 创建订单<br/>接受或拒绝订单 |
+| 库存 | 删除库存行 |
 | 优惠模拟 | 启动和停止模拟 |
 | 定位工作流 | 启动、暂停和停止工作流 |
 | 报告 | 在报表历史记录中保存当前数据 |

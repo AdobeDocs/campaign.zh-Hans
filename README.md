@@ -1,8 +1,8 @@
 ---
 source-git-commit: d62a185eabf9536f7198d60702c02682af05e06d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '424'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 # Contribute 文章
@@ -16,13 +16,13 @@ ht-degree: 95%
 
 ## 关于您对 Adobe 内容的参与程度
 
-请参阅 [Adobe 文档参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
+请参阅 [Adobe 文档参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hans)。
 
 您的参与方式取决于您的个人身份以及您希望参与的更改类型：
 
 ### 较小改动
 
-如果您出于好意而提供较小更新，请访问相应文章，然后单击文章中的&#x200B;**编辑**&#x200B;链接，该链接将转到文章的 GitHub 源。然后，只需使用 GitHub UI 进行更新。有关详细信息，请参阅常规 [Adobe 文档参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
+如果您出于好意而提供较小更新，请访问相应文章，然后单击文章中的&#x200B;**编辑**&#x200B;链接，该链接将转到文章的 GitHub 源。然后，只需使用 GitHub UI 进行更新。有关详细信息，请参阅常规 [Adobe 文档参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hans)。
 
 您为此存储库中的文档和代码示例提交的较小更正或说明应遵守 Adobe 使用条款。
 
@@ -44,7 +44,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 社区参与者可以使用 GitHub UI 进行基本编辑，或者将存储库分类，做出重大贡献。
 
-有关详细信息，请参阅 [Adobe 文档贡献者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
+有关详细信息，请参阅 [Adobe 文档贡献者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hans)。
 
 ## 如何使用标记设置主题格式
 

@@ -6,25 +6,25 @@ role: User, Admin, Developer
 level: Beginner, Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: a2c30979be786ce8374857eb270ba71ec0e1b2a3
-workflow-type: tm+mt
-source-wordcount: '1197'
-ht-degree: 89%
+workflow-type: ht
+source-wordcount: '1191'
+ht-degree: 100%
 
 ---
 
 # Campaign 实施准则{#gs-implementation}
 
-在本节中，了解如何根据您公司的要求调整Adobe Campaign。 请遵循以下准则来安排和组织实施。
+在本节中，您将学习如何根据公司的要求调整 Adobe Campaign。请遵循以下准则来安排和组织实施。
 
-1. **确定设置**：授予访问权限、共享 Client Console、配置渠道（电子邮件、推送、短信）. [了解详情](#implementation-ac-settings)
-1. **准备环境**：导入用户档案、创建受众、设计工作流和活动模板、创建类型规则. [了解详情](#implementation-prepare-your-env)
-1. **自定义实例**：创建新数据字段，添加表格/模式. [了解详情](#implementation-custom-your-instance)
-1. **自动化您的流程**:配置Adobe Campaign自动化功能。 [了解详情](#implementation-automation)
-1. **扩展部署**：连接到 Adobe 解决方案、其他产品和系统 - 连接器、多解决方案设置. [了解详情](#implementation-extend)
+1. **确定设置**：授予访问权限、共享 Client Console、配置渠道（电子邮件、推送、短信）。[了解详情](#implementation-ac-settings)
+1. **准备环境**：导入用户档案、创建受众、设计工作流和活动模板、创建类型规则。[了解详情](#implementation-prepare-your-env)
+1. **自定义实例**：创建新数据字段，添加表格/模式。[了解详情](#implementation-custom-your-instance)
+1. **自动化您的流程**：配置 Adobe Campaign 自动化功能。[了解详情](#implementation-automation)
+1. **扩展部署**：连接到 Adobe 解决方案、其他产品和系统 - 连接器、多解决方案设置。[了解详情](#implementation-extend)
 
 >[!CAUTION]
 >
->使用 **Campaign托管Cloud Services**，则您的环境和初始配置将根据您的许可协议条款由Adobe设置。 您不允许修改已安装的内置软件包、内置架构或报告。
+>通过使用 **Campaign Managed Cloud Services**，您的环境和初始配置会由 Adobe 根据您的许可协议条款进行设置。您不可修改已安装的内置软件包、内置模式或报告。
 >
 >如果您需要使用 Campaign 加载项或尚未为您配置的特定功能，那么您必须联系 **Adobe 客户关怀**&#x200B;团队。
 
@@ -38,11 +38,11 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
 * **数据获取**：通过 Adobe Campaign，您可以收集数据，包括个人信息和敏感信息。因此，获得并管理收件人的同意至关重要。
 
-   请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans#data-acquisition){target=&quot;_blank&quot;} 以了解详情。
+   请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans#data-acquisition){target="_blank"}以了解详情
 
-* **用户同意和数据保留**:您必须获得用户同意、设置双重选择加入订阅机制、促进选择退出并配置数据保留。
+* **用户同意和数据保留**：您必须获得用户同意、设置双重选择加入订阅机制、改善选择退出功能并配置数据保留。
 
-   在 [Campaign Classicv7隐私文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans#consent){target=&quot;_blank&quot;}
+   请参阅 [Campaign Classic v7 隐私文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans#consent){target="_blank"}以了解详情
 
 * **隐私和数据保护法规**：请参阅[此部分](privacy.md)，了解有关隐私要求的信息以及这些法规对贵组织和 Adobe Campaign 有何影响。
 
@@ -87,7 +87,7 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
    ![](../assets/do-not-localize/glass.png)请参阅 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)了解如何配置工作流模板
 
-   ![](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=zh-Hans){target=&quot;_blank&quot;}以了解有关电子邮件模板的更多信息
+   ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=zh-Hans){target="_blank"}以了解有关电子邮件模板的更多信息
 
 
 1. **配置类型规则**
@@ -137,11 +137,11 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
 要跨多个渠道编排复杂的营销活动，以便向不同受众进行宣传，请利用 Campaign 自动化功能。
 
-* 使用 **工作流** 管理流程和数据。 在 [本文档](../../automation/workflow/about-workflows.md)
+* 使用&#x200B;**工作流**&#x200B;管理流程和数据。请参阅[此文档](../../automation/workflow/about-workflows.md)以了解详情
 
-* 设置 **订阅** 流程和 **登陆页面**.  请参阅[此页面](../start/subscriptions.md)以了解详情
+* 设置&#x200B;**订阅**&#x200B;流程和&#x200B;**登陆页面**。请参阅[此页面](../start/subscriptions.md)以了解详情
 
-* 配置 **类型规则** 定义疲劳和控制管理。  在 [本文档](../../automation/campaign-opt/campaign-typologies.md)
+* 配置&#x200B;**类型规则**&#x200B;以定义疲劳和控制管理。请参阅[此文档](../../automation/campaign-opt/campaign-typologies.md)以了解详情
 
 
 ## 扩展您的部署{#implementation-extend}

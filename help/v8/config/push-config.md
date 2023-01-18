@@ -6,10 +6,10 @@ feature: Push
 role: Admin, Developer
 level: Intermediate, Experienced
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: ad286059a9f4b63d7de4fa5130760f36d0976431
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 2%
+source-wordcount: '1281'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,7 @@ Android和iOS支持的版本，以及Campaign v8的Campaign SDK兼容版本，�
 
 >[!NOTE]
 >
->作为Campaign管理员，您可以从 [Experience CloudSoftware Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html). 有关详细信息，请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>作为Campaign管理员，您可以从 [Experience CloudSoftware Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html). 有关详细信息，请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 ## 声明集成设置 {#declaring-integration-settings}
@@ -794,7 +794,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
 利用变量，可在收到通知后定义移动应用程序行为。 这些变量必须在移动设备应用程序代码和Adobe Campaign控制台(位于 **[!UICONTROL Variables]** 选项卡。
 
-![](../assets/do-not-localize/book.png) 在 **Campaign Classicv7文档** 在移动设备应用程序上： [iOS配置步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;}和 [Android配置步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html){target=&quot;_blank&quot;}。
+![](../assets/do-not-localize/book.png) 在 **Campaign Classicv7文档** 在移动设备应用程序上： [iOS配置步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target="_blank"} and [Configuration steps for Andoid](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html){target="_blank"}.
 
 以下是允许移动设备应用程序收集通知中任何添加变量的代码示例。 在我们的示例中，我们使用“VAR”变量。
 

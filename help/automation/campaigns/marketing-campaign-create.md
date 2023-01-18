@@ -4,7 +4,7 @@ title: 创建营销活动
 description: 了解如何创建和执行营销活动
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: 38c300555b847c9d1fd210d2fe60e4ffa1e314d2
+source-git-commit: ad286059a9f4b63d7de4fa5130760f36d0976431
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 4%
@@ -75,7 +75,7 @@ ht-degree: 4%
 
 单击 **[!UICONTROL OK]** 创建营销活动。 它会添加到项目计划和营销策划列表中。
 
-然后，您可以编辑刚刚创建的营销活动并定义其参数。 要打开和配置此营销活动，Ypu可以：
+然后，您可以编辑刚刚创建的营销活动并定义其参数。 要打开和配置此营销活动，您可以：
 
 1. 浏览营销活动日历并选择要显示的营销活动，然后单击 **[!UICONTROL Open]** 链接。
 1. 浏览 **[!UICONTROL Schedule]** 选项卡，选择营销策划并将其打开。

@@ -4,9 +4,9 @@ title: 技术工作流
 description: 进一步了解Campaign可用的技术工作流
 feature: Workflows
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1639'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ Adobe Campaign附带一组内置的技术工作流。 他们管理计划在服�
 
 提供的活动与定位工作流相同。 [了解详情](targeting-workflows.md)
 
-此部分中详细描述的工作流将随不同的Adobe Campaign内置包一起安装。 这些包及相关的技术工作流取决于您的许可协议。 中详细介绍了内置包。
+此部分中详细描述的工作流将随不同的Adobe Campaign内置包一起安装。 这些包及相关的技术工作流取决于您的许可协议。
 
 默认情况下，以下节点的子文件夹中提供了技术工作流： **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
@@ -55,7 +55,7 @@ Adobe Campaign附带一组内置的技术工作流。 他们管理计划在服�
 | **为HeatMap服务收集数据** (collectDataHeatMapService) | 默认安装 | 此工作流检索HeatMap服务所需的数据。 |
 | **收集隐私请求** (collectPrivacyRequests) | 隐私数据保护规定 | 此工作流会生成存储在Adobe Campaign中的收件人数据，并将其提供在隐私请求屏幕中下载。 |
 | **成本计算** (budgetMgt) | 默认安装 | 此工作流开始计算预算、计划、项目、营销策划、投放和任务中的费用和成本行。 |
-| **数据库清理** (cleanup) | 默认安装 | 此工作流是数据库维护工作流：它根据部署助手中定义的配置从数据库中删除过时的数据，从而与统计和进程进行不同的计算。 默认情况下，此工作流于每日凌晨4点触发。 有关更多信息，请参阅。 |
+| **数据库清理** (cleanup) | 默认安装 | 此工作流是数据库维护工作流：它根据部署助手中定义的配置从数据库中删除过时的数据，从而与统计和进程进行不同的计算。 默认情况下，此工作流于每日凌晨4点触发。 |
 | **删除已阻止的LINE用户** (deleteBlockedLineUsersV2) | LINE 渠道 | 此工作流可确保在LINE V2用户阻止LINE正式帐户180天后删除其数据。 |
 | **删除隐私请求数据** (deletePrivacyRequestsData) | 隐私数据保护规定 | 此工作流会删除存储在Adobe Campaign中的收件人数据。 |
 | **交付指标** (deliveryIndicators) | 中间源平台 | 此工作流可更新投放的投放跟踪指示器。 默认情况下，此工作流每小时触发一次。 |
@@ -63,7 +63,7 @@ Adobe Campaign附带一组内置的技术工作流。 他们管理计划在服�
 | **事件清除** (webAnalyticsPurgeWebEvents) | Web Analytics连接器 | 利用此工作流，可根据在“有效期”(Life)字段中配置的期间，从数据库字段中删除每个事件。 |
 | **将受众导出到Adobe Experience Cloud** (exportSharedAudience) | 与Adobe Experience Cloud集成 | 此工作流会将受众导出为共享的受众/区段。 您可在所用的不同 Adobe Experience Cloud 解决方案中使用这些受众。 |
 | **预测** （预测） | 投放 | 此工作流会分析在临时日历中保存的投放（创建临时日志）。 默认情况下，此工作流于每日凌晨1点触发。 |
-| **完全聚合计算（propositionrcp多维数据集）** (agg_nmspropositionrcp_full) | 优惠引擎（交互） | 此工作流更新了选件建议多维数据集的完整聚合。 默认情况下，此工作流于每日早上6点触发。 此聚合会捕获以下维度：渠道、投放、营销选件和日期。 然后，使用选件建议多维数据集来根据选件生成报告。 了解有关中多维数据集的更多信息  [此部分](../../v8/reporting/gs-cubes.md). |
+| **完全聚合计算（propositionrcp多维数据集）** (agg_nmspropositionrcp_full) | 优惠引擎（交互） | 此工作流更新了选件建议多维数据集的完整聚合。 默认情况下，此工作流于每日早上6点触发。 此聚合会捕获以下维度：渠道、投放、营销选件和日期。 然后，使用选件建议多维数据集来根据选件生成报告。 请在[此部分](../../v8/reporting/gs-cubes.md)中了解有关多维数据集的更多信息。 |
 | **已转换联系人的标识** (webAnalyticsFindConverted) | Web Analytics连接器 | 此工作流可为在再营销活动后完成购买的网站访客建立索引。 可通过再营销效率报表访问此工作流取回的数据（请参阅此页面）。 |
 | **从Adobe Experience Cloud导入受众** (importSharedAudience) | 与Adobe Experience Cloud集成 | 利用此工作流，可将不同Adobe Experience Cloud解决方案中的受众/区段导入Adobe Campaign。 |
 | **营销活动中投放的作业** (deliveryMgt) | 默认安装 | 此工作流会触发已批准的投放，并启动外部投放的服务提供商的后处理。 它还会发送批准通知和提醒。 |
@@ -73,7 +73,7 @@ Adobe Campaign附带一组内置的技术工作流。 他们管理计划在服�
 | **MessageCenter完整聚合计算** (agg_messageCenter_full) | 事务型消息控制（消息中心 — 控制） | 此工作流更新消息中心多维数据集的完整聚合。 默认情况下，此工作流于每日凌晨3点触发。 此聚合会捕获以下维度：渠道、日期、状态和事件类型。 然后，消息中心多维数据集用于根据事件生成报告。 您可以在  |
 | **中间源（投放计数器）** (defaultMidSourcingDlv) | 传输到中间源 | 此工作流会收集中间源服务器上投放的计数信息。 计数信息包括常规投放指示器，如发送的投放数量等。 不包括打开等跟踪信息。 默认情况下，每10分钟触发一次。 |
 | **中间源（投放日志）** (defaultMidSourcingLog) | 传输到中间源 | 此工作流在中间源服务器上收集投放日志。 默认情况下，每小时触发一次。 |
-| **NMAC选择退出管理** (mobileAppOptOutMgt) | 移动设备应用程序渠道（推送） | 此工作流可更新移动设备上的取消订阅通知。 从凌晨1点到午夜之间，每6小时触发一次。 有关更多详细信息，请参阅。 |
+| **NMAC选择退出管理** (mobileAppOptOutMgt) | 移动设备应用程序渠道（推送） | 此工作流可更新移动设备上的取消订阅通知。 从凌晨1点到午夜之间，每6小时触发一次。 |
 | **优惠通知** (offerMgt) | 默认安装 | 此工作流会将已批准的选件部署到在线环境，以及选件目录中包含的每个类别。 |
 | **暂停的工作流清理** (cleanupPausedWorkflows) | 默认安装 | 此工作流会分析严重性设置为正常的暂停工作流，并在暂停过长时触发警告和通知。 一个月后，将无条件停止暂停的技术工作流。 默认情况下，此工作流于每周一早上5点触发。 有关更多信息，请参阅 [处理暂停的工作流](monitor-workflow-execution.md#handling-of-paused-workflows). |
 | **隐私请求清理** (cleanupPrivacyRequests) | 隐私数据保护规定 | 此工作流会清除90天以前的访问请求文件。 |

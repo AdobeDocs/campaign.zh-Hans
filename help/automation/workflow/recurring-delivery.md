@@ -3,10 +3,11 @@ product: campaign
 title: 循环投放
 description: 了解有关定期投放工作流活动的更多信息
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 27308b0d-cbfc-4bc6-9061-d771ceac95fd
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 14%
+source-wordcount: '263'
+ht-degree: 15%
 
 ---
 
@@ -28,7 +29,7 @@ A **[!UICONTROL Recurring delivery]** 活动，可配置特定于营销策划的
 
 1. 配置投放模板。
 
-就可用选项而言，此活动的配置过程与创建投放模板的过程类似。 有关更多信息，请参阅此。
+就可用选项而言，此活动的配置过程与创建投放模板的过程类似。
 
 有关此活动的示例，请参阅此 [部分](send-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 

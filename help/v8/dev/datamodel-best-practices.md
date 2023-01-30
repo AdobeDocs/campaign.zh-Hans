@@ -5,7 +5,7 @@ feature: Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '2717'
 ht-degree: 4%
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 Adobe Campaign系统非常灵活，可以扩展到初始实施之外。 但是，尽管可能性是无限的，但做出明智决策并建立坚实的基础以开始设计数据模型至关重要。
 
-要更好地了解Campaign内置表及其彼此的关系，请参阅 [此部分](datamodel.md) .
+要更好地了解Campaign内置表及其彼此的关系，请参阅 [此部分](datamodel.md).
 
 ![](../assets/do-not-localize/glass.png) 阅读 [此部分](schemas.md) 以开始使用Campaign模式。
 

@@ -5,7 +5,7 @@ feature: PI, Privacy
 role: Developer
 level: Intermediate, Experienced
 exl-id: 1b833745-71d7-430d-ac7d-c830c78ea232
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 ## 实施 {#implementation}
 
-可应用于任何元素或属性的特定属性已添加到架构中，它补充了现有属性 **[!UICONTROL visibleIf]** . 此属性为： **[!UICONTROL accessibleIf]** . 当包含与当前用户上下文相关的XTK表达式时，它可以利用 **[!UICONTROL HasNamedRight]** 或 **[!UICONTROL $(login)]** ，例如。
+可应用于任何元素或属性的特定属性已添加到架构中，它补充了现有属性 **[!UICONTROL visibleIf]**. 此属性为： **[!UICONTROL accessibleIf]**. 当包含与当前用户上下文相关的XTK表达式时，它可以利用 **[!UICONTROL HasNamedRight]** 或 **[!UICONTROL $(login)]**，例如。
 
 您可以找到收件人模式扩展的示例，该示例显示了下面的用法：
 
@@ -40,7 +40,7 @@ ht-degree: 2%
 主要属性包括：
 
 * **[!UICONTROL visibleIf]** :会隐藏元数据中的字段，因此无法在架构视图、列选择或表达式生成器中访问这些字段。 但这不会隐藏任何数据，如果在表达式中手动输入字段名称，则会显示值。
-* **[!UICONTROL accessibleIf]** :隐藏生成查询中的数据（用空值替换它）。 如果visibleIf为空，则获得与 **[!UICONTROL accessibleIf]** .
+* **[!UICONTROL accessibleIf]** :隐藏生成查询中的数据（用空值替换它）。 如果visibleIf为空，则获得与 **[!UICONTROL accessibleIf]**.
 
 以下是在Campaign中使用此属性的后果：
 

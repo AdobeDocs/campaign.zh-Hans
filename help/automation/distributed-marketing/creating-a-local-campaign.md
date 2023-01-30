@@ -4,10 +4,10 @@ title: 创建本地活动
 description: 创建本地活动
 feature: Distributed Marketing
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 7e5ffbec959785971280c394c416cebe83590897
 workflow-type: tm+mt
-source-wordcount: '1559'
-ht-degree: 1%
+source-wordcount: '1554'
+ht-degree: 2%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 1%
 
 ![](assets/mkt_distr_4.png)
 
-### Web界面 {#web-interface}
+### Web 界面 {#web-interface}
 
 在 **分布式营销** 选项卡，您可以选择Web界面类型，并指定当本地实体下订单时要输入的默认值和参数。
 
@@ -69,7 +69,7 @@ Web界面对应于订购营销活动时由本地实体填写的表单。
 
    >[!NOTE]
    >
-   >此示例中使用的Web应用程序就是一个示例。 您必须创建特定的Web应用程序才能使用表单。 请参阅  .
+   >此示例中使用的Web应用程序就是一个示例。 您必须创建特定的Web应用程序才能使用表单。
 
    ![](assets/mkt_distr_7.png)
 
@@ -92,7 +92,7 @@ Web界面对应于订购营销活动时由本地实体填写的表单。
 
 ![](assets/mkg_dist_local_op_creation3.png)
 
-### 批准 {#approvals}
+### 审批 {#approvals}
 
 从 **[!UICONTROL Advanced parameters for campaign entry]** 链接时，可以指定审阅人的最大数量。
 
@@ -156,7 +156,7 @@ Web界面对应于订购营销活动时由本地实体填写的表单。
 
 >[!NOTE]
 >
->有关营销活动模板及其常规配置的详细信息，请参阅。
+>营销活动模板及其常规配置详见 [本页](../campaigns/marketing-campaign-templates.md).
 
 ## 创建营销活动包 {#creating-the-campaign-package}
 
@@ -236,10 +236,6 @@ Web界面对应于订购营销活动时由本地实体填写的表单。
 1. 单击 **[!UICONTROL Order campaign]** 或Adobe Campaign中的相应按钮。
 
    输入您的ID和密码以订购营销活动。 界面由Web应用程序中定义的一组页面组成。
-
-   >[!NOTE]
-   >
-   >中详细介绍了Web应用程序。
 
 1. 在首页中输入必需信息（订单标签和评论），然后单击 **[!UICONTROL Next]**.
 

@@ -3,22 +3,17 @@ product: campaign
 title: 创建筛选
 description: 了解如何在执行查询时创建过滤器
 feature: Query Editor, Workflows
-source-git-commit: 5cd75f18ac2f4e02f656fa016f61ba0c7c72670a
+exl-id: 8e6fd9b4-77c4-4af8-921b-c3fe104fa5bc
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '201'
 ht-degree: 2%
 
 ---
 
 # 创建筛选 {#creating-a-filter}
 
-
-
 Adobe Campaign中可用的过滤器是通过过滤条件定义的，这些条件是使用与查询相同的操作模式创建的。
-
->[!NOTE]
->
->有关创建过滤器的更多信息，请参阅。
 
 的 **[!UICONTROL Administration > Configuration > Predefined filters]** 节点包含列表和概述中使用的所有过滤器。
 

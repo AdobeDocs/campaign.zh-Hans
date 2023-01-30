@@ -3,7 +3,8 @@ product: campaign
 title: 拆分
 description: 了解有关拆分工作流活动的更多信息
 feature: Workflows, Targeting Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: bf4935dd-87dc-4c5c-becf-8c4df61805fd
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '1796'
 ht-degree: 0%
@@ -145,7 +146,6 @@ A **拆分**&#x200B;通过类型活动，您可以将目标拆分为多个子集
    * **[!UICONTROL Targeting dimension]**:输入要应用数据分发的定向维度， **[!UICONTROL Recipient]** 例如。 此模式必须始终与定位工作流中使用的数据兼容。
    * **[!UICONTROL Distribution field]**:通过定向维度选择字段。 例如，如果您选择 **[!UICONTROL Email domain]** 字段中，将按域划分收件人列表。
    * **[!UICONTROL Distribution type]**:选择在 **[!UICONTROL Distribution]** 选项卡： **[!UICONTROL Percentage]** 或 **[!UICONTROL Set]**.
-   * ** 。
    * **[!UICONTROL Approval storage]**:如果您使用 [本地批准](local-approval.md) 活动，输入将存储批准结果的架构。 必须为每个定位模式指定一个存储模式。 如果您使用 **[!UICONTROL Recipients]** 定位架构中，输入默认 **[!UICONTROL Local approval of recipients]** 存储模式。
 
       如果在未经本地批准的情况下通过数据分组进行简单限制，则无需输入 **[!UICONTROL Approvals storage]** 字段。

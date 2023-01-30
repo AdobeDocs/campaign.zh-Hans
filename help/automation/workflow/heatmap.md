@@ -4,20 +4,16 @@ title: 营销活动工作流热图
 description: 使用Workflow HeatMap监控您的工作流
 feature: Workflows, Heatmap
 exl-id: aeb35076-2f0d-456d-8562-be69e7e902eb
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1094'
 ht-degree: 3%
 
 ---
 
 # 工作流热图 {#workflow-heatmap}
 
-
-
 Campaign Workflow HeatMap以颜色编码的图形形式表示当前运行的所有工作流。 它仅可用于 **Campaign管理员**.
-
-探索在中监控Campaign流程的其他方法。
 
 ## 工作流热图入门 {#about-the-workflow-heatmap}
 
@@ -53,8 +49,7 @@ Campaign Workflow HeatMap以颜色编码的图形形式表示当前运行的所�
    默认情况下，页面会显示当天的工作流活动。 您可以更改它，并选择过去的任何日期。
 
    >[!NOTE]
-   >
-   >只有尚未被删除的工作流** 。\
+   > 
    >默认情况下，工作流热图时区是为当前管理员用户定义的时区。 例如，如果您与正在处理的营销用户不在同一区域，则可能需要更改该区域。
 
 1. 单击 **[!UICONTROL Filters]** 按钮。
@@ -153,7 +148,7 @@ Campaign Workflow HeatMap以颜色编码的图形形式表示当前运行的所�
 
 1. 转到 **[!UICONTROL Monitoring]** ，然后单击 **[!UICONTROL Workflows]** 用于显示 **[!UICONTROL Campaign Workflow HeatMap]** 页面。
 1. 设置 **[!UICONTROL Min duration]** 过滤到5分钟。
-1. 设置 **[!UICONTROL Workflow type]** 筛选 **[!UICONTROL Marketing]** .
+1. 设置 **[!UICONTROL Workflow type]** 筛选 **[!UICONTROL Marketing]**.
 1. 从热图网格中，观察以下内容：
 
    ![](assets/wkf_monitoring_without.png)

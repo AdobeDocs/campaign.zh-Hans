@@ -5,7 +5,7 @@ feature: Schema Extension
 role: Developer
 level: Intermediate, Experienced
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 5%
@@ -286,4 +286,4 @@ XML字段的示例也存储在SQL字段中，该字段具有 **@dataPolicy** 属
 
 >[!NOTE]
 >
->如果修改不影响数据库结构，您只需重新生成架构即可。 为此，请选择要更新的架构，右键单击并选择 **[!UICONTROL Actions > Regenerate selected schemas...]** .
+>如果修改不影响数据库结构，您只需重新生成架构即可。 为此，请选择要更新的架构，右键单击并选择 **[!UICONTROL Actions > Regenerate selected schemas...]**.

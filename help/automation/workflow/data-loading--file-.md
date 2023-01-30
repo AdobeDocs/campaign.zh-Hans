@@ -3,9 +3,10 @@ product: campaign
 title: 数据加载（文件）
 description: 进一步了解数据加载（文件）工作流活动
 feature: Workflows, Data Management Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1029'
 ht-degree: 14%
 
 ---
@@ -31,8 +32,6 @@ ht-degree: 14%
 您可以定义在文件导入期间执行的预处理，例如，这样就不必在服务器上解压缩文件（从而为解压缩的文件节省空间），而是在文件处理中包含解压缩。 选择 **[!UICONTROL Pre-process the file]** 选项，然后从3个选项中选择一个： **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat)或 **[!UICONTROL Decrypt]** (gpg)。
 
 ![](assets/preprocessing-dataloading.png)
-
-有关更多信息，请参阅此章节：.
 
 ## 定义文件格式 {#defining-the-file-format}
 
@@ -110,7 +109,7 @@ ht-degree: 14%
    * 第一列包含与事件一致的代码：购买（3,000欧元以上），一次或多次购买时不得购买或退款。
    * 以下四列包含客户的名字、姓氏、电子邮件和帐号。
 
-   要加载的文件的格式配置与在Adobe Campaign中数据导入期间定义的格式配置一致。 有关更多信息，请参阅此。
+   要加载的文件的格式配置与在Adobe Campaign中数据导入期间定义的格式配置一致。
 
 1. 在拆分活动中，根据 **事件** 列值。
 

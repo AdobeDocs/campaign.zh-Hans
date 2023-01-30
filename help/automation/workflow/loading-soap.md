@@ -3,9 +3,10 @@ product: campaign
 title: 加载 (SOAP)
 description: 加载 (SOAP)
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 21c42a36-9a50-49b8-8a07-b041ba8b2026
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '229'
 ht-degree: 4%
 
 ---
@@ -39,8 +40,6 @@ ht-degree: 4%
    ![](assets/soap_load_001.png)
 
    如果要更新示例，请选择 **[!UICONTROL Re-analyze the example]**.
-
-   您还可以通过**将列数据的格式个性化。
 
 1. 您可以将行号用作标识符和/或指定SOAP调用返回多个元素。
 1. 根据选项卡脚本的函数输入以下选项卡脚本：

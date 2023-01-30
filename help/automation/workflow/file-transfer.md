@@ -3,23 +3,18 @@ product: campaign
 title: 文件传输
 description: 了解有关文件传输工作流活动的更多信息
 feature: Workflows, Data Management
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 794de398-f35d-4c2b-af29-d6fd38eb9394
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 1%
+source-wordcount: '557'
+ht-degree: 2%
 
 ---
 
 # 文件传输{#file-transfer}
 
-
-
 的 **文件传输** 活动允许您接收或发送文件、测试文件存在情况或在服务器上列出文件。 使用的协议为Azure Blob Storage、Amazon Simple Storage Service(S3)、FTP或SFTP。
 通过S3、Azure Blob Storage或SFTP连接，您还可以通过Adobe实时客户数据平台将区段数据导入Adobe Campaign。 有关更多信息，请参阅此 [文档](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html).
-
->[!NOTE]
->
->详细介绍了有关SFTP服务器使用情况的最佳实践和疑难解答。
 
 ## 属性 {#properties}
 
@@ -55,7 +50,7 @@ ht-degree: 1%
 
    的 **[!UICONTROL Keep history of files sent]** 选项可让您跟踪发送的文件。 可以从目录访问此历史记录。
 
-1. **测试以查看文件是否存在**
+1. **测试文件是否存在**
 
    要测试文件是否存在，请选择 **[!UICONTROL Test to see if file exists]** 选项 **[!UICONTROL Action]** 字段。 远程服务器的配置与文件下载的配置相同。 有关更多信息，请参阅 [部分](#properties).
 

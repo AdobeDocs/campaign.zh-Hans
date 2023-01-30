@@ -4,10 +4,10 @@ title: 高级参数
 description: 高级参数
 feature: Workflows, Data Management
 exl-id: aafd977e-c8af-426b-904c-8388c9d8e595
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 2%
+source-wordcount: '492'
+ht-degree: 3%
 
 ---
 
@@ -45,11 +45,9 @@ ht-degree: 2%
 * **[!UICONTROL Do not activate]**:不会执行此任务和以下所有任务（在同一分支中）。
 * **[!UICONTROL Activate but do not execute]**:此任务和以下所有任务（在同一分支中）将自动停止。 如果您希望在任务启动时存在该位置，则此选项会非常有用。 要手动执行任务，请右键单击活动并选择 **[!UICONTROL Normal execution]**.
 
-## 亲和度 {#affinity}
+## 关联 {#affinity}
 
 您可以选择在特定计算机上强制执行工作流或工作流活动。 为此，您必须在工作流或相关活动的级别定义一个或多个倾向性。
-
-此中详细介绍了高可用性工作流配置。
 
 
 ## Max。 执行期 {#max--execution-period}

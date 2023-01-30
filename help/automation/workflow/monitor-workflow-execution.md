@@ -4,24 +4,20 @@ title: 监测工作流执行
 description: 监测工作流执行
 feature: Workflows
 exl-id: bc13d706-7888-42eb-9116-5538e68cd515
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1947'
-ht-degree: 1%
+source-wordcount: '1936'
+ht-degree: 0%
 
 ---
 
 # 监测工作流执行 {#monitoring-workflow-execution}
 
-
-
 本节介绍有关如何监控工作流执行情况的信息。
 
 有关如何创建工作流以监视“已暂停”、“已停止”或“有错误”的一组工作流状态的用例，还请参见 [此部分](workflow-supervision.md#supervising-workflows).
 
-此外，实例的管理员还可以使用 **审核跟踪** 要检查活动和上次对工作流所做的修改，请查看工作流的状态。 有关详细信息，请参见 。
-
-有关监控不同Campaign流程的其他方法，请参见。
+此外，实例的管理员还可以使用 **审核跟踪** 要检查活动和上次对工作流所做的修改，请查看工作流的状态。 在中了解有关审核跟踪的更多信息  [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/audit-trail.html?lang=en#accessing-audit-trail){target="_blank"}.
 
 ## 显示进度 {#displaying-progress}
 
@@ -139,8 +135,6 @@ ht-degree: 1%
 >
 >您可以为每个活动单独应用此配置。 为此，请编辑活动属性，并在 **[!UICONTROL Advanced]** 选项卡。
 
-有关工作流执行疑难解答的更多信息，请参阅。
-
 ## 处理错误 {#processing-errors}
 
 关于活动， **[!UICONTROL Process errors]** 选项显示一个特定过渡，该过渡将在生成错误时启用。 在这种情况下，工作流不会进入错误模式，并且会继续执行。
@@ -230,9 +224,9 @@ instance.vars.isRunning = false
 
 ## 数据库维护 {#database-maintenance}
 
-工作流使用大量工作表，这些工作表会占用空间，如果不进行维护，最终会减慢整个平台的速度。 有关数据库维护的更多信息，请参阅此。
+工作流使用大量工作表，这些工作表会占用空间，如果不进行维护，最终会减慢整个平台的速度。
 
-的 **数据库清理** 可通过 **管理>生产>技术工作流** 节点，用于删除过时的数据以避免数据库的指数增长。 工作流会自动触发，无需用户干预。 请参阅  .
+的 **数据库清理** 可通过 **管理>生产>技术工作流** 节点，用于删除过时的数据以避免数据库的指数增长。 工作流会自动触发，无需用户干预。
 
 您还可以创建特定的技术工作流，以清除不必要的数据占用空间。 请参阅和此 [部分](#purging-the-logs).
 
@@ -267,7 +261,7 @@ Campaign Classic界面允许您使用预定义的方式监控实例上所有工�
 
 1. 右键单击要添加视图的文件夹。
 1. 在 **[!UICONTROL Add new folder]** / **[!UICONTROL Administration]**，选择要添加的视图。
-1. 将文件夹添加到树中后，请确保将其配置为视图，以便显示所有工作流（无论其原始文件夹是什么）。有关如何配置视图的更多信息，请参阅。
+1. 将文件夹添加到树中后，请确保将其配置为视图，以便显示所有工作流，无论其源文件夹是什么。 有关如何配置视图的更多信息，请参阅 [本页](../../v8/audiences/folders-and-views.md#turn-a-folder-to-a-view).
 
 除了这些视图之外，您还可以设置过滤器文件夹，以便根据工作流的执行状态对其列表进行过滤。 操作步骤：
 

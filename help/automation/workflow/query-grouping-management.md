@@ -3,9 +3,10 @@ product: campaign
 title: 使用分组管理进行查询
 description: 了解如何使用分组管理执行查询
 feature: Query Editor
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 6fc4ef67-5d75-4c8c-8bcc-41e3ed155ca2
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '241'
 ht-degree: 4%
 
 ---
@@ -35,8 +36,6 @@ ht-degree: 4%
    ![](assets/query_editor_02.png)
 
 1. 在 **[!UICONTROL Data to extract]** 窗口，选择 **[!UICONTROL Email domain]** 和 **[!UICONTROL Primary key]** 字段。 运行计数 **[!UICONTROL Primary key]** 字段。
-
-   有关主键计数的更多信息，请参阅。
 
 1. 检查 **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** 框中。
 

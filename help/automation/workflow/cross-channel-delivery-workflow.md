@@ -4,9 +4,9 @@ title: 跨渠道投放工作流
 description: 了解有关跨渠道投放工作流的更多信息
 feature: Workflows, Channels Activity
 exl-id: fb498233-4df8-4c9e-a082-3e657c6756c9
-source-git-commit: 5b4d569a6e96c93828f63fb8376eb81301829854
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '588'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 4%
 
 要定义目标，请创建查询以标识收件人。
 
-1. 创建营销策划. 有关详细信息，请参见 。
+1. 创建营销策划. 请参阅[此页面](../campaigns/marketing-campaign-create.md)以了解详情。
 1. 在 **[!UICONTROL Targeting and workflows]** 的 **查询** 活动。 有关使用此活动的更多信息，请参阅 [此部分](query.md).
 1. 定义接收投放的收件人。 例如，选择“Gold”成员作为目标维度。
 1. 向查询添加筛选条件。 在此示例中，选择具有电子邮件地址和移动号码的收件人。
@@ -49,7 +49,7 @@ ht-degree: 4%
 
    ![](assets/wkf_cross-channel_1.png)
 
-   有关将优惠集成到消息正文中的更多信息，请参阅。
+   有关将优惠集成到消息正文中的更多信息，请参阅 [本页](../../v8/send/email.md).
 
 1. 保存更改。
 1. 右键单击 **[!UICONTROL Email delivery]** 活动以将其打开。
@@ -107,11 +107,8 @@ ht-degree: 4%
    * 添加 **[!UICONTROL Mobile delivery]** 活动，以向第二个子集发送短信消息。
    * 添加 **[!UICONTROL List update]** 活动，将相应的收件人添加到数据库。
 
-1. 在工作流中双击投放活动以对其进行编辑。 有关创建电子邮件和短信的更多信息，请参阅。
+1. 在工作流中双击投放活动以对其进行编辑。
 1. 双击 **[!UICONTROL List update]** 活动，然后选择 **[!UICONTROL Generate an outbound transition]** 选项。
-
-   然后，您可以将生成的收件人从Adobe Campaign导出到Adobe Experience Cloud。 例如，您可以通过添加**在Adobe Target中使用受众。
-
 1. 单击 **开始** 按钮以执行工作流。
 
 目标群体 **查询** 活动将被分段，以根据收件人的行为接收电子邮件或短信投放。 剩余群体将使用 **[!UICONTROL List update]** 活动。

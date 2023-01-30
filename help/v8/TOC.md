@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Campaign v8 文档
 breadcrumb-title: Campaign 概述
 title: Campaign v8 文档
-source-git-commit: e7f4982a9b13fe5413b6cce0a1cc58e2b3a6afa4
+source-git-commit: 366cf800a81ea9ab10fe5e3063f44e5214bda927
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '491'
 ht-degree: 99%
 
 ---
@@ -24,7 +24,6 @@ ht-degree: 99%
    + [护栏](start/ac-guardrails.md)
    + [已知问题](start/known-issues.md)
    + [兼容性矩阵](start/compatibility-matrix.md)
-   + [从 Classic v7 到 v8](start/v7-to-v8.md)
 + 入门 {#new}
    + [Adobe Campaign 入门](start/get-started.md)
    + [重要功能](start/whats-new.md)

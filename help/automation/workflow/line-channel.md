@@ -3,17 +3,17 @@ product: campaign
 title: LINE 渠道
 description: LINE 渠道
 feature: Workflows
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 11%
+source-wordcount: '95'
+ht-degree: 13%
 
 ---
 
 
 # LINE 渠道{#line-channel}
 
-下面详述的工作流随 **LINE渠道** 模块。 有关此模块的更多信息，请参阅此。
+下面详述的工作流随 **LINE渠道** 模块。 有关此模块的更多信息，请参阅 [本页](../../v8/send/line.md).
 
 <table> 
  <tbody> 

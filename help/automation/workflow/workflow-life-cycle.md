@@ -4,9 +4,9 @@ title: 工作流生命周期
 description: 了解有关工作流生命周期的更多信息
 feature: Workflows
 exl-id: 4356b90c-9d7c-49ef-88cd-716b2ccdb7f0
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '260'
 ht-degree: 3%
 
 ---
@@ -38,7 +38,5 @@ ht-degree: 3%
 字符 **574 -Ok** 显示在 **投放** 活动是指投放准备已定向574个收件人，且操作已成功完成。 此信息会在执行过渡时添加到过渡中，由处理数据的活动计算。
 
 工作流已启动，正在等待属于 **批准** 活动以做出决策。 属于该组的操作员以及具有电子邮件地址或手机号码的操作员会收到通知。
-
-此中详细介绍了操作员管理。
 
 有关如何监控工作流的更多信息，请参阅 [此部分](monitor-workflow-execution.md).

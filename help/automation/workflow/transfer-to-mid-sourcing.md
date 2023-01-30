@@ -3,19 +3,17 @@ product: campaign
 title: 传输到中间源
 description: 了解有关传输到中间源工作流的更多信息
 feature: Workflows
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 7%
+source-wordcount: '95'
+ht-degree: 10%
 
 ---
 
 
 # 传输到中间源{#transfer-to-mid-sourcing}
 
-
-
-下面详述的工作流随 **传输到中间源** 模块。 有关此模块的更多信息，请参阅。
+下面详述的工作流随 **传输到中间源** 模块。
 
 <table> 
  <tbody> 

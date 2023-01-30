@@ -4,20 +4,16 @@ title: 管理时区
 description: 管理时区
 feature: Workflows
 exl-id: 04b7638d-55dd-4317-b605-5d618ef014ba
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '266'
 ht-degree: 3%
 
 ---
 
 # 管理时区{#managing-time-zones}
 
-
-
 Adobe Campaign允许您管理同一实例所涉及的不同国家/地区之间的时间差。 在实例创建期间配置应用的配置。
-
-有关在Adobe Campaign中配置时区的更多信息，请参阅。
 
 在工作流中，您可以调整活动执行计划，并将特定时区链接到活动或整个工作流。 在导入文件时或在投放计划框架内，此配置非常有用。
 

@@ -3,10 +3,10 @@ product: campaign
 title: 中间源平台
 description: 中间源平台
 feature: Workflows
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '51'
-ht-degree: 15%
+source-wordcount: '43'
+ht-degree: 23%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 15%
 
 
 
-下面详细介绍的工作流与 **中间源平台** 模块。 有关此模块的更多信息，请参阅此。
+下面详细介绍的工作流与 **中间源平台** 模块。
 
 <table> 
  <tbody> 

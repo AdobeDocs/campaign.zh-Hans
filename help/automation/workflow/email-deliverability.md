@@ -3,20 +3,17 @@ product: campaign
 title: 电子邮件投放能力
 description: 进一步了解电子邮件可投放性包
 feature: Workflows, Deliverability
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 3%
+source-wordcount: '92'
+ht-degree: 5%
 
 ---
 
 
 # 投放能力监控（电子邮件投放能力）{#email-deliverability}
 
-
-
-下面详述的工作流默认安装在所有实例上，允许您初始化退回邮件鉴别规则列表、域列表和MX列表。 一旦 **投放能力监控（电子邮件投放能力）** 包安装完成后，此工作流每晚运行。 有关投放能力监控的更多信息，请参阅此内容。
-
+下面详述的工作流默认安装在所有实例上，允许您初始化退回邮件鉴别规则列表、域列表和MX列表。 一旦 **投放能力监控（电子邮件投放能力）** 包安装完成后，此工作流每晚运行。
 <table> 
  <tbody> 
   <tr> 

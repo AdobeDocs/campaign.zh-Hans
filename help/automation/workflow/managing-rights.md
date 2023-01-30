@@ -4,10 +4,10 @@ title: 管理工作流权限
 description: 了解如何管理工作流权限
 feature: Workflows
 exl-id: 3cb8aeec-e758-4b71-adef-67942cf9ded7
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: bff7d1d51b9847c515670e5594eed513fefbe816
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 0%
+source-wordcount: '321'
+ht-degree: 1%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 还必须将这些权限映射到与工作流执行的操作（收件人导入、文件访问、融合、SQL脚本执行等）一致的命名权限。
 
-有关管理操作员和权限的更多信息，请参阅此。
+有关管理操作员和权限的更多信息，请参阅 [此部分](../../v8/start/gs-permissions.md).
 
-## 运算符组 {#operator-groups-wf}
+## 操作员组 {#operator-groups-wf}
 
 以下运算符组与工作流关联：
 

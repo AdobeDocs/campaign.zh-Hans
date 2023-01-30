@@ -3,10 +3,10 @@ product: campaign
 title: 投放
 description: 了解有关默认投放工作流的更多信息
 feature: Workflows
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 5%
+source-wordcount: '316'
+ht-degree: 6%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 5%
   <tr> 
    <td> <span class="uicontrol">数据库清理</span> <br /> </td> 
    <td> <span class="uicontrol">cleanup</span> <br /> </td> 
-   <td> <p>此工作流是数据库维护工作流：它根据部署助手中定义的配置从数据库中删除过时的数据，从而与统计和进程进行不同的计算。 默认情况下，此工作流于每日凌晨4点触发。</p> <p>有关更多信息，请参阅此。</p> </td> 
+   <td> <p>此工作流是数据库维护工作流：它根据部署助手中定义的配置从数据库中删除过时的数据，从而与统计和进程进行不同的计算。 默认情况下，此工作流于每日凌晨4点触发。</p></td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">暂停的工作流清理</span> <br /> </td> 

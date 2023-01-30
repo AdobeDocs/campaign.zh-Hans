@@ -3,10 +3,11 @@ product: campaign
 title: 单元格优惠
 description: 单元格优惠
 feature: Workflows, Targeting Activity, Interaction
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: e2216dfd-1ef8-4747-b716-576fd6498fa6
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 8%
+source-wordcount: '151'
+ht-degree: 7%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 8%
 
 的 **[!UICONTROL Offers by cell]** 活动允许您将集客群体（例如，通过查询）分发到多个区段，并指定要为其中每个区段显示的选件。
 
-此活动只能与 **互动**. 有关更多信息，请参阅此。
+此活动只能与 **互动**. 在 [此部分](../../v8/interaction/interaction.md).
 
 操作步骤：
 

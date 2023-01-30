@@ -3,28 +3,20 @@ product: campaign
 title: 任务
 description: 了解有关任务工作流活动的更多信息
 feature: Workflows
-hide: true
-hidefromtoc: true
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '78'
 ht-degree: 2%
 
 ---
 
 # 任务{#task}
 
-
-
->[!AVAILABILITY]
->
->:warning: 此功能仅在Campaign Classicv7中可用。
-
 在营销活动工作流中， **[!UICONTROL Task]** 活动允许您指定两种方案：第一个是任务完成时的选择，第二个是任务未完成时的选择（如果手动标记为未完成或已过期）。
 
 ![](assets/mrm_task_in_workflow.png)
 
-有关如何配置和操作任务的详细信息，请参见。
+
 
 ![](assets/wkf_task_activity.png)
 

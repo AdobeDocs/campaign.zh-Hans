@@ -4,10 +4,10 @@ title: 开始工作流
 description: 了解如何启动工作流并发现工作流操作工具栏和右键单击菜单
 feature: Workflows
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 1%
+source-wordcount: '742'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## “操作”工具栏 {#actions-toolbar}
 
-此中详细介绍了工具栏按钮。 的 **[!UICONTROL Actions]** 按钮，您可以访问用于对选定工作流执行操作的其他执行选项。 您还可以使用 **[!UICONTROL File > Actions]** ，或右键单击某个工作流并选择 **[!UICONTROL Actions]**.
+的 **[!UICONTROL Actions]** 利用工具栏的按钮，可访问选定工作流上的其他执行选项。 您还可以使用 **[!UICONTROL File > Actions]** ，或右键单击某个工作流并选择 **[!UICONTROL Actions]**.
 
 ![](assets/purge_historique.png)
 
@@ -53,8 +53,6 @@ ht-degree: 1%
 
    此操作停止，然后重新启动工作流。 在大多数情况下，可以更快地重新启动。 在停止需要一定时间时自动重新启动也非常有用：这是因为在工作流停止时“停止”命令不可用。
 
-   此 ** .
-
 * **[!UICONTROL Purge history]**
 
    此操作允许您清除工作流历史记录。 有关更多信息，请参阅 [清除日志](monitor-workflow-execution.md#purging-the-logs).
@@ -78,8 +76,6 @@ ht-degree: 1%
 * **[!UICONTROL Save as template]**
 
    此操作将基于所选工作流创建新的工作流模板。 您需要指定保存该文件夹的文件夹(位于 **[!UICONTROL Folder]** 字段。
-
-   此 ** .
 
 ## 右键单击菜单 {#right-click-menu}
 
@@ -109,4 +105,3 @@ ht-degree: 1%
 >
 >您可以选择一组活动，并将其中一个命令应用到这些活动。
 
-右键单击菜单的详情也请参见。

@@ -3,10 +3,11 @@ product: campaign
 title: 订阅服务
 description: 了解有关订阅服务工作流活动的更多信息
 feature: Workflows, Targeting Activity, Subscription Services Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 919630ed-b39f-40e5-b893-f3a203713b15
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 0%
+source-wordcount: '399'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +29,7 @@ A **订阅服务**-type活动允许您为过渡中指定的群体创建或删除
 1. 单击 **[!UICONTROL Subscription]** 或 **[!UICONTROL Unsubscription]** 如果您希望订阅或退订选定信息服务的指定群体，则。
 1. 选择 **[!UICONTROL Send a confirmation message]** 通知收件人他们已订阅或退订了服务。
 
-   该消息的内容在与信息服务相关的投放模板中指定。 有关更多信息，请参阅此。
+   该消息的内容在与信息服务相关的投放模板中指定。
 
 ## 示例：订阅新闻稿的收件人列表 {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 

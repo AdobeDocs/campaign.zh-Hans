@@ -3,9 +3,10 @@ product: campaign
 title: 查询
 description: 进一步了解查询工作流活动
 feature: Workflows, Targeting Activity, Query Editor
-source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
+exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1545'
 ht-degree: 0%
 
 ---
@@ -41,15 +42,13 @@ ht-degree: 0%
 
 1. 使用向导定义群体。 要输入的字段可能因目标类型而异。 您可以使用 **[!UICONTROL Preview]** 选项卡。
 
-   有关创建和使用过滤器或查询的更多信息，请参阅此内容。
-
    ![](assets/query-sample.png)
 
 1. 如果已选择 **[!UICONTROL Filtering conditions]** 在步骤1中或使用 **[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]** 选项，则以后必须手动添加筛选条件。
 
    您还可以通过选中相应的框来添加数据分组条件。 要实现此目的，筛选维度必须与查询的定向维度不同。 有关分组的详细信息，请参阅 [部分](query-grouping-management.md).
 
-   您还可以使用表达式生成器并将其与逻辑选项AND、OR和EXCEPT组合来添加更多标准。 然后，您可以预览**。
+   您还可以使用表达式生成器并将其与逻辑选项AND、OR和EXCEPT组合来添加更多标准。
 
    如果您希望稍后重新使用过滤器，请保存该过滤器。
 
@@ -182,8 +181,6 @@ ht-degree: 0%
 * 请注意 `Lower(...)`. 使用Lower函数时，不使用Index。
 * 使用“like”指令或“upper”或“lower”指令仔细检查查询。 在用户输入上应用“Upper”，而不是在数据库字段上应用。
 
-   有关函数的更多信息，请参阅。
-
 ### 筛选维度 {#filtering-dimensions}
 
 使用查询的过滤维度，而不是使用“存在，如”运算符。
@@ -212,7 +209,7 @@ SQL中筛选维的等效项是内部连接：
    * 操作系统,
    * 版本,
    * 数据,
-   * 应用程序、
+   * 应用程序,
    * 卷。
 
    >[!NOTE]

@@ -3,9 +3,10 @@ product: campaign
 title: 更新数据
 description: 了解有关更新数据工作流活动的更多信息
 feature: Workflows, Targeting Activity, Data Management
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 63b214c7-bbbf-448b-b3af-b3b7a7a5b65c
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '841'
 ht-degree: 1%
 
 ---
@@ -99,7 +100,7 @@ ht-degree: 1%
 
 1. 选择要移动到主记录和要更新的字段的集合。
 
-   输入规则，在一个或多个辅助记录被识别后应用于这些记录。 要实现此目的，您可以使用表达式生成器。 有关更多信息，请参阅此。 例如，通过指定它是所有必须保留的不同记录中最近更新的值。
+   输入规则，在一个或多个辅助记录被识别后应用于这些记录。 要实现此目的，您可以使用表达式生成器。 例如，通过指定它是所有必须保留的不同记录中最近更新的值。
 
    然后，输入要考虑规则的条件。
 

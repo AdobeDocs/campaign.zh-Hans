@@ -4,9 +4,9 @@ title: 工作流属性
 description: 了解有关Campaign工作流属性的更多信息
 feature: Workflows
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '543'
 ht-degree: 1%
 
 ---
@@ -38,8 +38,6 @@ ht-degree: 1%
 * **[!UICONTROL Default affinity]**
 
    如果您的安装包含多个工作流服务器，请使用此字段选择要执行工作流的计算机。 如果此字段中定义的值在任何服务器上都不存在，则工作流将保持挂起状态。
-
-   请参阅此。
 
 * **[!UICONTROL History in days]**
 

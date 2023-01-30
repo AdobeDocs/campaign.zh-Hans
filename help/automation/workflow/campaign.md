@@ -4,19 +4,17 @@ title: 营销活动
 description: 营销活动
 feature: Workflows
 topic-tags: technical-workflows
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 3%
+source-wordcount: '155'
+ht-degree: 4%
 
 ---
 
 
 # 营销活动{#campaign}
 
-
-
-下面详述的工作流随 **Campaign** 模块。 有关此模块的更多信息，请参阅此。
+下面详述的工作流随 **Campaign** 模块。
 
 >[!CAUTION]
 >

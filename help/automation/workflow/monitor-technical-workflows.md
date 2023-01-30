@@ -4,20 +4,16 @@ title: 监测技术工作流
 description: 监测技术工作流
 feature: Workflows
 exl-id: 8524d916-8af7-4641-b047-9c348f1017fd
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '472'
 ht-degree: 5%
 
 ---
 
 # 监测技术工作流 {#monitoring-technical-workflows}
 
-
-
 需要监控技术工作流，并在其失败时采取相应的操作。
-
-有关监控不同Campaign流程的其他方法，请参见。
 
 ## 实例监控仪表板 {#instance-monitoring-dashboard}
 
@@ -41,8 +37,7 @@ ht-degree: 5%
 
 对于 **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
 
-1. 检查**..
-1. 查看日志，验证经过的时间是否随时间相对恒定，并且不会干扰其他工作流。
+检查日记帐，以验证经过的时间是否随时间相对恒定，并且不会干扰其他工作流。
 
 对于 **[!UICONTROL Tracking workflow (‘tracking’)]**:
 

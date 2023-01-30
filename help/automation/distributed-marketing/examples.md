@@ -4,9 +4,9 @@ title: 分布式营销示例
 description: 分布式营销示例
 feature: Distributed Marketing
 exl-id: 7825426b-c9e4-49e9-840c-dc6d6d836fbe
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1284'
 ht-degree: 0%
 
 ---
@@ -14,14 +14,11 @@ ht-degree: 0%
 # 分布式营销示例{#distributed-marketing-samples}
 
 
-
 ## 创建本地营销活动（按表单） {#creating-a-local-campaign--by-form-}
 
 的 **按表单** 类型web界面涉及使用 **Web应用程序**. 根据其配置，此Web应用程序可以包含任何类型的已定义个性化元素。 例如，您可以建议使用链接来评估目标、预算、内容等。 通过专用API。
 
 >[!NOTE]
->
->API在专用文档中进行了详细介绍。.
 >
 >此示例中使用的Web应用程序不是随Adobe Campaign一起提供的现成Web应用程序。 要在营销活动中使用表单，必须创建专用的Web应用程序。
 

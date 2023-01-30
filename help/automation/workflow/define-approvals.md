@@ -4,9 +4,9 @@ title: 定义审批
 description: 通过审批，操作员能够做出管理工作流的决策或确认其继续执行
 feature: Approvals
 exl-id: 8ac159c1-fd2e-4fb9-8275-18154f6f210c
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '826'
 ht-degree: 2%
 
 ---
@@ -27,8 +27,6 @@ ht-degree: 2%
 
 ![](assets/validation-1-in-op.png)
 
-批准示例可在中找到。
-
 操作员可以采取以下两种方式之一做出响应：使用电子邮件中链接的网页进行验证，或通过控制台进行验证。
 
 >[!NOTE]
@@ -37,9 +35,7 @@ ht-degree: 2%
 
 ## 通过电子邮件批准 {#sending-emails}
 
-可能会收到一条批准消息，其中包含一个指向网页的链接，可通过该网页做出响应。 要使目标操作员接收批准电子邮件，操作员电子邮件地址必须填写完整。 如果情况并非如此，则运算符必须使用控制台做出响应
-
-此中详细介绍了操作员管理。
+可能会收到一条批准消息，其中包含一个指向网页的链接，可通过该网页做出响应。 要使目标操作员接收批准电子邮件，操作员电子邮件地址必须填写完整。 如果不是这种情况，运算符必须使用控制台做出响应。
 
 批准电子邮件会持续发送。 默认投放模板为 **[!UICONTROL notifyAssignee]**:它保存在 **[!UICONTROL Administration > Campaign management > Technical delivery templates]** 文件夹。 此方案可以自定义，还建议制作副本并更改每个活动的模板。
 
@@ -98,7 +94,7 @@ ht-degree: 2%
    return expiration
    ```
 
-## 多次批准 {#multiple-approval}
+## 多重审批 {#multiple-approval}
 
 多个批准是一种机制，允许所有批准操作员做出响应。 为每个响应激活一个过渡。
 

@@ -1,14 +1,14 @@
 ---
 title: Campaign v8 兼容性矩阵
-description: 了解与 Campaign v8 兼容的系统和版本
+description: 发现与Campaign v8兼容的系统和版本
 feature: Overview
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: 9ae93ce4e2b0424bb3b3862b2c7d016309bd630e
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 00d95425ca9438cd03b27bbec171aa7c57d25d6f
+workflow-type: tm+mt
+source-wordcount: '370'
+ht-degree: 93%
 
 ---
 
@@ -26,37 +26,20 @@ ht-degree: 100%
 
 要使用 Campaign 客户端控制台，必须配备以下操作系统和浏览器。[了解详情](connect.md)。
 
-### 操作系统
+### 操作系统{#op-systems}
 
 * **Microsoft Windows Server** 2019、2016、2012
-* **Microsoft Windows** 11（从 Campaign v8.3 开始）、10、8
+* **Microsoft Windows** 11, 10, 8
 
 >[!NOTE]
 >
 >建议对日语实例使用 Microsoft Windows 10。
 
-### 浏览器
+### Web浏览器{#web-browsers}
 
-**Microsoft Edge**
+* Microsoft Edge
 
-### Microsoft WebView2 运行时
-
-<table>
-<tbody>
-<tr>
-<td>
-<p>Microsoft Edge WebView2 运行时
-</p>
-</td>
-<td>
-<p>最新版本</p>
-</td>
-<td>
-<p><a href="http://www.adobe.com/go/acc-ms-webview2-runtime-download_cn">从 Microsoft 开发人员网站下载</a></p>
-</td>
-</tr>
-</tbody>
-</table>
+* Microsoft Edge WebView2运行时，最新版本。 从下载 [Microsoft开发人员网站](http://www.adobe.com/go/acc-ms-webview2-runtime-download_cn){target="_blank"}.
 
 ## CRM 连接器{#CRMconnectors}
 
@@ -82,7 +65,7 @@ ht-degree: 100%
 * **Apple iOS** 9 - 16 适用于 Campaign iOS SDK 内部版本 1.0.26，与 32 位和 64 位版本兼容。从 Campaign v8.4 开始支持 iOS 16。
 
 
-## Web 访问
+## Web 访问{#web-access}
 
 以下浏览器与 Campaign 兼容，可用于[进行 Web 访问](connect.md#web-access)。
 

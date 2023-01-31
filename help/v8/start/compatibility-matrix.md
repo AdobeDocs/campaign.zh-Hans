@@ -5,10 +5,10 @@ feature: Overview
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: 00d95425ca9438cd03b27bbec171aa7c57d25d6f
+source-git-commit: 90dde8bb3bde4893971a2f364aa636ade6fff10f
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 93%
+source-wordcount: '367'
+ht-degree: 89%
 
 ---
 
@@ -37,9 +37,9 @@ ht-degree: 93%
 
 ### Web浏览器{#web-browsers}
 
-* Microsoft Edge
+* **Microsoft Edge**
 
-* Microsoft Edge WebView2运行时，最新版本。 从下载 [Microsoft开发人员网站](http://www.adobe.com/go/acc-ms-webview2-runtime-download_cn){target="_blank"}.
+* **Microsoft Edge WebView2**，最新版本。 从下载 [Microsoft开发人员网站](http://www.adobe.com/go/acc-ms-webview2-runtime-download_cn){target="_blank"}.
 
 ## CRM 连接器{#CRMconnectors}
 
@@ -61,8 +61,8 @@ ht-degree: 93%
 
 您可以使用 Campaign 通过关联的 Mobile SDK 在以下列出的操作系统上发送[推送通知](../send/push.md)。
 
-* **Android** 12（从 Campaign v8.3 开始）、9.0、8.x、7.x，带有 Campaign Android SDK 内部版本 1.1.1。
-* **Apple iOS** 9 - 16 适用于 Campaign iOS SDK 内部版本 1.0.26，与 32 位和 64 位版本兼容。从 Campaign v8.4 开始支持 iOS 16。
+* **Android** 12、9.0、8.x、7.x，带有Campaign Android SDK内部版本1.1.1。
+* **Apple iOS** 9 - 16 适用于 Campaign iOS SDK 内部版本 1.0.26，与 32 位和 64 位版本兼容。从Campaign v8.4开始，支持Apple iOS 16。
 
 
 ## Web 访问{#web-access}

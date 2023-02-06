@@ -5,10 +5,10 @@ feature: Profiles, Monitoring
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: b783b1444457b3204fea35b613582642499acf65
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 5%
+source-wordcount: '1181'
+ht-degree: 4%
 
 ---
 
@@ -42,7 +42,7 @@ Adobe Campaign根据投放失败类型及其原因管理隔离。 在错误消�
 隔离地址列表中， **[!UICONTROL Error reason]** 字段指示将选定地址置于隔离中的原因。 [了解详情](#identifying-quarantined-addresses-for-the-entire-platform)。
 
 
-如果用户将电子邮件标记为垃圾邮件，则该邮件会自动重定向到由Adobe管理的技术邮箱。 随后，该用户的电子邮件地址会自动添加到隔离，并附加 **[!UICONTROL Denylisted]** 状态。此状态仅指地址，用户档案不在阻止列表上，因此用户可继续接收短信消息和推送通知。 详细了解 [投放最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops){target=&quot;_blank&quot;}。
+如果用户将电子邮件标记为垃圾邮件，则该邮件会自动重定向到由Adobe管理的技术邮箱。 随后，该用户的电子邮件地址会自动添加到隔离，并附加 **[!UICONTROL Denylisted]** 状态。此状态仅指地址，用户档案不在阻止列表上，因此用户可继续接收短信消息和推送通知。 详细了解 [投放最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops){target="_blank"}.
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ Adobe Campaign根据投放失败类型及其原因管理隔离。 在错误消�
 
 此外， **[!UICONTROL Non-deliverables and bounces]** 内置报告，可从 **报表** 部分，按域显示有关隔离中地址、遇到的错误类型和失败划分的信息。 您可以过滤特定投放的数据，或根据需要自定义此报表。
 
-了解有关 [投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html){target=&quot;_blank&quot;}。
+了解有关 [投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html){target="_blank"}.
 
 ### 隔离的电子邮件地址 {#quarantined-recipient}
 
@@ -112,8 +112,16 @@ Adobe Campaign根据投放失败类型及其原因管理隔离。 在错误消�
 
    ![](assets/tech-quarantine-status.png)
 
-* 将其状态更改为 **[!UICONTROL Allowlisted]**:在这种情况下，地址仍保留在隔离列表中，但会系统地定位该地址，即使遇到错误也是如此。
+您可能需要对隔离列表执行批量更新，例如，在ISP中断期间，电子邮件被错误地标记为退回，因为无法将其成功发送给收件人。
 
->[!CAUTION]
->
->如果从隔离列表中删除某个地址，则将再次向此地址发送。 这可能会对您的投放能力和IP信誉造成严重影响，最终可能会导致您的IP地址或发送域被阻止。 考虑从隔离中删除任何地址时，请格外小心。 如果您需要帮助，请联系Adobe支持。
+要执行此操作，请创建一个工作流并在隔离表格中添加查询，以过滤掉所有受影响的收件人，以便从隔离列表中删除这些收件人，并将其包含在将来的Campaign电子邮件投放中。
+
+以下是此查询的建议准则：
+
+* **错误文本（隔离文本）** 包含&quot;Momen_Code10_InvalidRecipient&quot;
+* **电子邮件域(@domain)** 等于domain1.com或 **电子邮件域(@domain)** 等于domain2.com或 **电子邮件域(@domain)** 等于domain3.com
+* **更新状态(@lastModified)** YYYY/MM/DD HH或之后:MM:SS AM
+* **更新状态(@lastModified)** YYYY/MM/DD HH上或之前:MM:SS PM
+
+获得受影响的收件人列表后，添加 **[!UICONTROL Update data]** 活动，将其状态设置为 **[!UICONTROL Valid]** 这样它们就会被 **[!UICONTROL Database cleanup]** 工作流。 您也只需从隔离表格中删除它们即可。
+

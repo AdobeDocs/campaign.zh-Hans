@@ -5,10 +5,10 @@ title: Adobe Campaign自动化主页
 feature: Overview
 description: 概述
 exl-id: 9ed73e65-3626-46c6-bfeb-a9fe9c2d7f72
-source-git-commit: d8a009b1d6ea4f6921cef203d61c78032951f3ee
+source-git-commit: 143e90ef63fac4058008bc6864daf950c11ab2d1
 workflow-type: tm+mt
 source-wordcount: '191'
-ht-degree: 38%
+ht-degree: 39%
 
 ---
 
@@ -46,7 +46,7 @@ Adobe Campaign 提供了用于进行活动编排的简单易用的单个界面�
   </td>
   <td valign="top">
     <div><img src="assets/do-not-localize/campaign.jpeg">
-    <b>Campaign自动化</b>
+    <b>营销活动编排</b>
     </div>
     <br>
     <div>

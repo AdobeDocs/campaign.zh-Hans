@@ -5,7 +5,7 @@ title: Adobe Campaign自动化主页
 feature: Overview
 description: 概述
 exl-id: 9ed73e65-3626-46c6-bfeb-a9fe9c2d7f72
-source-git-commit: d6ea8bef9c62d4afbc919110775ee99052eeed7a
+source-git-commit: d8a009b1d6ea4f6921cef203d61c78032951f3ee
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 38%
@@ -22,14 +22,13 @@ Adobe Campaign 提供了用于进行活动编排的简单易用的单个界面�
 访问以下指南，并了解如何使用Adobe Campaign构建自动化。
 
 >[!NOTE]
+>
 >某些屏幕可能与您的环境不同。
 
-
 <table>
-<tr>
+<tr style="border: 0;">
   <td valign="top">
-    <div>
-    <b>工作流</b>
+    <div><img src="assets/do-not-localize/workflow.jpeg"><b>工作流</b>
     </div>
     <br>
     <div>
@@ -46,7 +45,7 @@ Adobe Campaign 提供了用于进行活动编排的简单易用的单个界面�
     <br>
   </td>
   <td valign="top">
-    <div>
+    <div><img src="assets/do-not-localize/campaign.jpeg">
     <b>Campaign自动化</b>
     </div>
     <br>
@@ -64,7 +63,7 @@ Adobe Campaign 提供了用于进行活动编排的简单易用的单个界面�
     <br>
   </td>
   <td valign="top">
-    <div>
+    <div><img src="assets/do-not-localize/add-on.jpeg">
     <b>附加组件</b>
     </div>
     <br>

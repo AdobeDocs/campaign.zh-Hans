@@ -5,9 +5,9 @@ description: Campaign v8 文档
 breadcrumb-title: Campaign 概述
 title: Campaign v8 文档
 source-git-commit: 366cf800a81ea9ab10fe5e3063f44e5214bda927
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '491'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 99%
 + 版本和最新更新 {#releases}
    + [早期发行说明](start/e-release-notes.md)
    + [发行说明](start/release-notes.md)
-   + 以前的发行说明 {#previous-rn}
+   + 之前的发行说明 {#previous-rn}
       + [2022](start/release-notes-2022.md)
       + [2021](start/release-notes-2021.md)
    + [护栏](start/ac-guardrails.md)

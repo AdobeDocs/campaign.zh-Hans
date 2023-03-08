@@ -6,16 +6,33 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: e7f4982a9b13fe5413b6cce0a1cc58e2b3a6afa4
-workflow-type: ht
-source-wordcount: '454'
-ht-degree: 100%
+source-git-commit: 55711ea42b9cc0be70e875e1544780b6983af98b
+workflow-type: tm+mt
+source-wordcount: '519'
+ht-degree: 91%
 
 ---
 
 # 最新版本{#latest-release}
 
 此页面列出了&#x200B;**最新 Campaign v8 版本**&#x200B;中的新功能、改进和修复。
+
+## 8.4.4 版 {#release-8-4-4}
+
+>[!CAUTION]
+>
+> 必须升级客户端控制台。在[此页面](../start/connect.md#download-ac-console)中了解如何升级您的客户端控制台。
+
+_2023年3月8日_
+
+**安全性增强**
+
+* 为了提高安全性，已将Tomcat从版本8.5.81更新到8.5.85。 (NEO-50530)
+
+**修补程序**
+
+* 修复了可能阻止您在中滚动的问题 **编辑** 数字内容编辑器(DCE)的选项卡。 (NEO-54474)
+* 修复了复制期间可能导致Web服务器崩溃的问题。 (NEO-53670)
 
 ## 8.4.3 版 {#release-8-4-3}
 

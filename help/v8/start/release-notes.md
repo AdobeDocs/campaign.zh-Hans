@@ -6,10 +6,10 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 55711ea42b9cc0be70e875e1544780b6983af98b
+source-git-commit: 2ec240b139394ce8f54a5835a4fa7bd377d226eb
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 91%
+source-wordcount: '522'
+ht-degree: 88%
 
 ---
 
@@ -19,26 +19,25 @@ ht-degree: 91%
 
 ## 8.4.4 版 {#release-8-4-4}
 
->[!CAUTION]
->
-> 必须升级客户端控制台。在[此页面](../start/connect.md#download-ac-console)中了解如何升级您的客户端控制台。
-
 _2023年3月8日_
 
 **安全性增强**
 
-* 为了提高安全性，已将Tomcat从版本8.5.81更新到8.5.85。 (NEO-50530)
+* 为了提高安全性，Tomcat已从版本8.5.81更新到8.5.85。 (NEO-50530)
 
 **修补程序**
 
-* 修复了可能阻止您在中滚动的问题 **编辑** 数字内容编辑器(DCE)的选项卡。 (NEO-54474)
-* 修复了复制期间可能导致Web服务器崩溃的问题。 (NEO-53670)
+* 修复了可能阻止在 **编辑** 选项卡。 (NEO-54474)
+* 修复了复制过程中可能导致Web服务器崩溃的问题。 (NEO-53670)
 
-## 8.4.3 版 {#release-8-4-3}
 
 >[!CAUTION]
 >
-> 必须升级客户端控制台。在[此页面](../start/connect.md#download-ac-console)中了解如何升级您的客户端控制台。
+> 必须升级客户端控制台。在[此页面](../start/connect.md#upgrade-ac-console)中了解如何升级您的客户端控制台。
+
+
+## 8.4.3 版 {#release-8-4-3}
+
 
 _2023 年 1 月 27 日_
 
@@ -67,3 +66,6 @@ _2023 年 1 月 27 日_
 * 改进了包含多个投放的工作流中的跟踪 URL 管理，从而提高性能。(NEO-50894) <!--OKKKK-->
 * 修复了可能导致使用 Xtkfolder 的模式复制失败的问题。(NEO-46787) <!--OKKKK-->
 * 修复了可能导致在 NmsSubscription 表中删除“lastModified”自定义列的问题。(NEO-48402)
+
+
+**此版本必须升级客户端控制台**  — 在此中了解如何升级您的客户端控制台 [页面](../start/connect.md#upgrade-ac-console).

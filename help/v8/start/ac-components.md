@@ -5,9 +5,9 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
+source-git-commit: 2ec240b139394ce8f54a5835a4fa7bd377d226eb
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '660'
 ht-degree: 1%
 
 ---
@@ -30,23 +30,15 @@ Adobe Campaign组件和全局架构如下所述。
 
 * 富客户端
 
-   Campaign富客户端是一个本机应用程序，它通过标准的Internet协议（如SOAP和HTTP）与Adobe Campaign应用程序服务器进行通信。
-
-   Campaign客户端控制台集中了所有功能和设置，并且由于依赖于本地缓存，因此需要最小的带宽。 Campaign客户端控制台专为轻松部署而设计，可从Internet浏览器进行部署，并自动更新，且不需要任何特定的网络配置，因为它只生成HTTP(S)流量。
-
-   ![](../assets/do-not-localize/glass.png) [了解关于 Campaign 客户端控制台的更多信息](../start/connect.md)。
+   Campaign富客户端是一个本机应用程序，它通过标准的Internet协议（如SOAP和HTTP）与Adobe Campaign应用程序服务器进行通信。 [ 了解关于 Campaign 客户端控制台的更多信息](../start/connect.md)。
 
 * 瘦客户端
 
-   Adobe Campaign Web访问功能允许您使用Web浏览器通过HTML用户界面访问Campaign功能的子集。 使用此Web界面访问报表、控制和验证消息、访问监控功能板等。
-
-   ![](../assets/do-not-localize/glass.png) [了解关于 Campaign Web Access 的更多信息](../start/connect.md)。
+   Adobe Campaign Web访问功能允许您使用Web浏览器通过HTML用户界面访问Campaign功能的子集。 使用此Web界面访问报表、控制和验证消息、访问监控功能板等。  [ 了解关于 Campaign Web Access 的更多信息](../start/connect.md)。
 
 * 具有API的外部应用程序
 
-   在某些情况下，可以使用通过SOAP协议公开的Web服务API从外部应用程序调用系统。
-
-   ![](../assets/do-not-localize/glass.png) [进一步了解Campaign API](../dev/api.md).
+   在某些情况下，可以使用通过SOAP协议公开的Web服务API从外部应用程序调用系统。 [进一步了解Campaign API](../dev/api.md).
 
 ### 持久层{#persistance-layer}
 

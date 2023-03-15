@@ -6,10 +6,10 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 2ec240b139394ce8f54a5835a4fa7bd377d226eb
+source-git-commit: 814f7c81aa4f154fdf289effc82b8d02bdd9b4c6
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 88%
+source-wordcount: '519'
+ht-degree: 91%
 
 ---
 
@@ -68,4 +68,6 @@ _2023 年 1 月 27 日_
 * 修复了可能导致在 NmsSubscription 表中删除“lastModified”自定义列的问题。(NEO-48402)
 
 
-**此版本必须升级客户端控制台**  — 在此中了解如何升级您的客户端控制台 [页面](../start/connect.md#upgrade-ac-console).
+>[!CAUTION]
+>
+> 必须升级客户端控制台。在[此页面](../start/connect.md#upgrade-ac-console)中了解如何升级您的客户端控制台。

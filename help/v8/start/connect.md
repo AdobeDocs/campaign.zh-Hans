@@ -5,16 +5,16 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 2ec240b139394ce8f54a5835a4fa7bd377d226eb
+source-git-commit: 445e62c290466003886f2dc49386d0c1edb80eeb
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 7%
+source-wordcount: '905'
+ht-degree: 8%
 
 ---
 
 # 连接到Adobe Campaign v8{#gs-ac-connect}
 
-您必须安装Campaign客户端控制台才能连接到Campaign应用程序服务器。
+要开始使用Campaign，必须安装和配置客户端控制台。
 
 客户端控制台是一个本机应用程序，它通过标准的Internet协议（如SOAP和HTTP）与Adobe Campaign应用程序服务器进行通信。 Campaign客户端控制台集中了所有功能和设置，并且由于依赖于本地缓存，因此需要最小的带宽。 Campaign客户端控制台专为轻松部署而设计，可从Internet浏览器进行部署，并自动更新，且不需要任何特定的网络配置，因为它只生成HTTP(S)流量。
 
@@ -22,7 +22,7 @@ ht-degree: 7%
 
 * 在 [兼容性矩阵](compatibility-matrix.md)
 * 获取Campaign服务器URL
-* 创建Adobe ID或从您的公司获取用户凭据
+* 创建Adobe ID，或从公司获取用户凭据
 * 在系统上安装Microsft Edge Webview2运行时。 [了解详情](#webview)
 
 ## 安装客户端控制台{#download-ac-console}
@@ -31,7 +31,7 @@ ht-degree: 7%
 
 从Campaign Classic8.4内部版本开始，任何客户端控制台安装都需要安装Microsoft Edge Webview 2运行时。
 
-Web View默认作为Windows 11操作系统的一部分安装。 如果系统上尚不存在该服务器，Campaign控制台安装程序将提示您从下载它 [Microsoft开发人员网站](http://www.adobe.com/go/acc-ms-webview2-runtime-download_cn){target="_blank"}. 请注意，下载链接在Internet Explorer 11浏览器上不起作用，因为Microsoft已弃用其支持。 确保使用其他浏览器访问该链接。
+Web View默认作为Windows 11操作系统的一部分安装。 如果系统上尚不存在Campaign客户端控制台安装程序，将提示您从下载它 [Microsoft开发人员网站](http://www.adobe.com/go/acc-ms-webview2-runtime-download_cn){target="_blank"}. 请注意，下载链接在Internet Explorer 11浏览器上不起作用，因为Microsoft已弃用其支持。 确保使用其他浏览器访问该链接。
 
 ### 下载控制台{#install-ac-console}
 
@@ -49,11 +49,9 @@ Web View默认作为Windows 11操作系统的一部分安装。 如果系统上�
 
 ## 创建连接{#create-your-connection}
 
-新安装客户端控制台后，请按照以下步骤创建与应用程序服务器的连接：
+安装客户端控制台后，请按照以下步骤创建与应用程序服务器的连接：
 
-1. 从窗口启动控制台 **[!UICONTROL Start]** 菜单中 **Adobe Campaign** 项目组。
-
-1. 单击凭据字段右上角的链接以访问连接配置窗口。
+1. 启动控制台并浏览右角的链接以访问连接配置屏幕。
 
 1. 单击 **[!UICONTROL Add > Connection]** 并输入Adobe Campaign应用程序服务器的标签和URL。
 
@@ -77,9 +75,7 @@ Campaign用户使用其Adobe ID通过AdobeIdentity Management系统(IMS)连接�
 
 要登录到实例，请执行以下步骤：
 
-1. 从窗口启动控制台 **[!UICONTROL Start]** 菜单中 **Adobe Campaign** 项目组。
-
-1. 单击凭据字段右上角的链接以访问连接配置窗口。
+1. 启动控制台并浏览右角的链接以访问连接配置屏幕。
 
    ![](assets/connectToCampaign.png)
 
@@ -87,13 +83,13 @@ Campaign用户使用其Adobe ID通过AdobeIdentity Management系统(IMS)连接�
 
 1. 单击 **[!UICONTROL Ok]**。
 
-1. 然后，您可以使用 [您的Adobe ID](#connect-ims).
+然后，您可以使用 [您的Adobe ID](#connect-ims).
 
-   ![](assets/adobeID.png)
+![](assets/adobeID.png)
 
 >[!NOTE]
 >
->对于Campaign Classic 8.4内部版本，Adobe Campaign客户端控制台在代理身份验证期间可能两次请求获取代理凭据。 这是因为与Internet Explorer不同，Microsoft Edge Webview2未将代理凭据保存在缓存/密码存储区中。
+>由于Microsoft Edge Webview2不保存代理凭据，因此控制台可能会要求您在首次连接时进行两次身份验证。
 
 ## 升级客户端控制台{#upgrade-ac-console}
 
@@ -103,7 +99,7 @@ Campaign用户使用其Adobe ID通过AdobeIdentity Management系统(IMS)连接�
 
 >[!CAUTION]
 >
->Adobe建议将选项保留为 **[!UICONTROL No longer ask this question]** 取消选中，以确保当有新版本的控制台可用时，所有用户都会收到警报。 如果选择此选项，则用户将不会获悉新的可用版本。
+>Adobe建议将选项保留为 **[!UICONTROL No longer ask this question]** 未选中，以确保在有新版本的控制台可用时，系统会提醒您。 如果选择此选项，则不会通知用户需要升级控制台。
 
 
 ## 授予用户访问权限{#grant-access}

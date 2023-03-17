@@ -5,14 +5,14 @@ feature: Push
 role: Data Engineer
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: c44fb2de4ed0e1661801313ae0430ba9d19542f0
+source-git-commit: d8ceefe1dd56aecb810878d99395ac900f889c2e
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 6%
+source-wordcount: '1168'
+ht-degree: 5%
 
 ---
 
-# 创建和发送推送通知
+# 创建和发送推送通知{#push-notifications-create}
 
 移动设备应用程序投放允许您向iOS和Android系统发送通知。
 
@@ -23,34 +23,27 @@ ht-degree: 6%
 1. 将应用程序的iOS和Android版本添加到此服务。
 1. 为iOS和Android创建投放。
 
-![](../assets/do-not-localize/book.png) 了解如何开始使用 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) 了解如何开始使用 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html){target="_blank"}
 
-## 集成Campaign SDK
+## 集成SDK {#push-sdk}
 
-Campaign SDK可帮助您将移动应用程序集成到Adobe Campaign平台。
+您可以通过在数据收集UI中配置Adobe Experience Platform Mobile SDK扩展来使用Adobe Campaign 。 Adobe Experience Platform Mobile SDK可帮助在您的移动设备应用程序中为Adobe的Experience Cloud解决方案和服务提供支持。 SDK配置通过数据收集UI进行管理，以实现灵活配置和基于规则的可扩展集成。 [在Adobe Developer文档中了解详情](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
-中列出了兼容的SDK版本 [Campaign兼容性矩阵](../start/compatibility-matrix.md#MobileSDK).
+了解如何配置和安装Adobe Experience Platform Mobile SDK [在此视频中](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/configure-push-using-aep-mobile-sdk.html?lang=en){target="_blank"}.
 
-![](../assets/do-not-localize/glass.png) 了解如何在 [此部分](../config/push-config.md)
+您还可以集成Campaign SDK，以促进将移动应用程序集成到Adobe Campaign平台。 中列出了兼容的SDK版本 [Campaign兼容性矩阵](../start/compatibility-matrix.md#MobileSDK).
 
-<!--
-### Configure Campaign Extension in Launch
+了解如何在 [本页](../config/push-config.md)
 
-You can integrate Adobe Experience Platorm Launch SDK with Campaign, by leveraging Campaign Classic extension.
-
-![](../assets/do-not-localize/book.png) Learn more in [Adobe Mobile SDK documentation](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic){target="_blank"}
-
--->
-
-## 在Campaign中配置应用程序设置
+## 在Campaign中配置应用程序设置{#push-config}
 
 您必须在Adobe Campaign中定义iOS和Android应用程序设置。
 
-![](../assets/do-not-localize/book.png) 有关iOS的配置准则，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en#sending-messages){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) 有关iOS的配置准则，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en#sending-messages){target="_blank"}
 
-![](../assets/do-not-localize/book.png) Android的配置准则详见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=en#sending-messages){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) Android的配置准则详见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=en#sending-messages){target="_blank"}
 
-## 创建您的第一个推送通知
+## 创建您的第一个推送通知{#push-create}
 
 本节详细介绍特定于iOS和Android通知交付的元素。
 
@@ -62,7 +55,7 @@ You can integrate Adobe Experience Platorm Launch SDK with Campaign, by leveragi
 
 ![](assets/delivery_step_1.png)
 
-![](../assets/do-not-localize/book.png) 有关如何创建投放的全局信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=en#sending-messages){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) 有关如何创建投放的全局信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=en#sending-messages){target="_blank"}
 
 ### 在iOS上发送通知 {#send-notifications-on-ios}
 
@@ -114,12 +107,12 @@ You can integrate Adobe Experience Platorm Launch SDK with Campaign, by leveragi
       > 
       >必须在应用程序中包含声音，并在创建服务时定义声音。
       >
-      >有关iOS的配置准则，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target=&quot;_blank&quot;}。
+      >有关iOS的配置准则，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target="_blank"}.
    ![](assets/push_ios_5.png)
 
 1. 从 **[!UICONTROL Application variables]** 选项卡， **[!UICONTROL Application variables]** 会自动添加。 例如，通过它们可定义通知行为，您可以将特定应用程序屏幕配置为在用户激活通知时显示。
 
-   有关更多信息，请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html)。
+   有关更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target="_blank"}.
 
 1. 从 **[!UICONTROL Advanced]** 选项卡，您可以编辑以下常规选项：
 
@@ -185,15 +178,15 @@ You can integrate Adobe Experience Platorm Launch SDK with Campaign, by leveragi
 要发送校样并发送最终投放，请使用与电子邮件投放相同的流程。 请参阅 Campaign Classic v7 文档以了解详情：
 
 * 验证投放并发送校样
-   ![](../assets/do-not-localize/book.png) [了解验证投放的关键步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=zh-Hans){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [了解验证投放的关键步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=zh-Hans){target="_blank"}
 
 * 确认并发送投放
-   ![](../assets/do-not-localize/book.png) [了解发送投放的关键步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [了解发送投放的关键步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html){target="_blank"}
 
 发送消息后，您可以监控和跟踪投放内容。 请参阅 Campaign Classic v7 文档以了解详情：
 
 * 推送通知隔离
-   ![](../assets/do-not-localize/book.png) [了解有关推送通知隔离的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#push-notification-quarantines){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [了解有关推送通知隔离的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#push-notification-quarantines){target="_blank"}
 
 * 故障排除
-   ![](../assets/do-not-localize/book.png) [了解如何排查推送通知故障](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [了解如何排查推送通知故障](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html){target="_blank"}

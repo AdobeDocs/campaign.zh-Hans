@@ -6,23 +6,25 @@ feature: Push
 role: Admin, Developer
 level: Intermediate, Experienced
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 4a017eabf1330b04939aa4bd0602c371a0ee3208
 workflow-type: tm+mt
-source-wordcount: '1281'
-ht-degree: 3%
+source-wordcount: '1311'
+ht-degree: 2%
 
 ---
 
 # 将 Campaign SDK 与您的应用程序集成 {#integrate-campaign-sdk}
 
-使用适用于iOS和Android的Campaign SDK来促进将移动应用程序集成到Adobe Campaign平台。
+您可以使用适用于iOS和Android的Campaign SDK来促进将移动应用程序集成到Adobe Campaign平台。
 
 Android和iOS支持的版本，以及Campaign v8的Campaign SDK兼容版本，如 [兼容性矩阵](../start/compatibility-matrix.md#MobileSDK).
 
+作为Campaign管理员，您可以从 [Experience CloudSoftware Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html). 有关详细信息，请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+
+
 >[!NOTE]
 >
->作为Campaign管理员，您可以从 [Experience CloudSoftware Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html). 有关详细信息，请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
-
+>您还可以通过在数据收集UI中配置Adobe Experience Platform Mobile SDK扩展来使用Adobe Campaign。 [请参阅开发人员文档，以了解更多信息](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
 ## 声明集成设置 {#declaring-integration-settings}
 
@@ -651,7 +653,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
    | ACCRegisterDeviceStatusFailureUnknownUUID | 提供的UUID（集成密钥）未知。 | EMPTY |
    | ACCRegisterDeviceStatusFailureExpectedError | 向ACC服务器返回意外错误。 | 返回到ACC的错误消息。 |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
    **Neolane_SDKelegate** 协议和 **registerDeviceStatus** 委托定义如下所示：
 

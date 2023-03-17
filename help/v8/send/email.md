@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: bd109f9d320b3009ab0d9414291d397b331373de
 workflow-type: tm+mt
-source-wordcount: '568'
-ht-degree: 16%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 16%
 
    * 添加镜像页面
 
-      要允许收件人在Web浏览器中查看您的投放内容，请添加指向消息镜像页面的链接。
+      要允许收件人在Web浏览器中查看您的投放内容，请添加指向 [镜像页面](../send/mirror-page.md) 你的留言。
 
       将光标放在要插入此链接的位置，单击工具栏中的最后一个图标，然后单击 **[!UICONTROL Include]** 选择 **[!UICONTROL link to mirror page]**.
    内容准备就绪后，单击 **保存**:现在，它将显示在您的投放列表、 **[!UICONTROL Campaigns > Deliveries]** 选项卡。 您的第一封电子邮件投放已准备就绪。 您现在需要定义受众、验证投放并发送它。

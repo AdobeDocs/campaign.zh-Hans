@@ -4,9 +4,9 @@ description: 了解如何添加和管理指向镜像页面的链接
 feature: Email
 role: User
 level: Beginner
-source-git-commit: d8ceefe1dd56aecb810878d99395ac900f889c2e
+source-git-commit: 9ebcfee199a2ba355b7b504c7f24732d30542a36
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -23,12 +23,14 @@ ht-degree: 0%
 
 ![](assets/mirror-page-link.png)
 
-
 ## 添加指向镜像页面的链接{#link-to-mirror-page}
 
 插入指向镜像页面的链接是一种好做法。 此链接可以是“在浏览器中查看此电子邮件”或“在线阅读此内容”。 它通常位于电子邮件的页眉或页脚。
 
 在Adobe Campaign中，您可以使用 **个性化块**. 内置 **链接到镜像页面** 个性化块在电子邮件内容中插入以下代码： `<%@ include view='MirrorPage' %>`.
+
+![](assets/mirror-page-insert.png)
+
 
 <!--For more on personalization blocks insertion, refer to [Personalization blocks](personalization-blocks.md).-->
 
@@ -47,5 +49,19 @@ ht-degree: 0%
 
 * **[!UICONTROL Force the generation of the mirror page]**:即使投放中未插入指向镜像页面的链接，也使用此模式生成镜像页面。
 * **[!UICONTROL Do not generate the mirror page]**:使用此模式可避免生成镜像页面，即使投放中存在链接也是如此。
-* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**:使用此选项可启用在投放日志窗口中访问包含个性化数据的镜像页面内容。 要访问此镜像页面，请执行以下操作：发送投放后，将其打开并浏览到其 **[!UICONTROL Delivery]** 选项卡。 选择收件人并单击 **[!UICONTROL Display the mirror page for this message...]** 链接。 镜像页面将显示在新选项卡中。
+* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**:如果电子邮件内容中不存在镜像页面链接，则使用此选项可启用在投放日志窗口中访问镜像页面的内容，如下所述。
+
+## 检查收件人的镜像页面{#mirror-page-access}
+
+您可以使用个性化数据访问投放特定收件人的镜像页面内容。
+
+要访问此镜像页面，请执行以下操作：
+
+1. 发送投放后，将其打开并浏览到其 **[!UICONTROL Delivery]** 选项卡。
+
+1. 选择收件人并单击 **[!UICONTROL Display the mirror page for this message...]** 链接。
+
+   ![](assets/mirror-page-display.png)
+
+   镜像页面会显示在专用屏幕中，并包含选定收件人的个性化数据。
 

@@ -2,13 +2,13 @@
 title: Adobe Campaign内置投放报告
 description: Adobe Campaign内置投放报告
 feature: Reporting
-source-git-commit: 60db4c2e8cd280845ddd0176bd10dc1b7edbb767
+exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
+source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1031'
 ht-degree: 2%
 
 ---
-
 
 # 投放报告 {#delivery-reports}
 
@@ -62,7 +62,7 @@ ht-degree: 2%
 * **[!UICONTROL Distinct opens for the population reached]** :至少一次打开消息的目标收件人数目的估计。 由于必须打开电子邮件才能单击链接，因此会考虑对跟踪URL的点击。
 * **[!UICONTROL Sum of opens for the population reached]** :目标收件人的打开总数估计。
 * **[!UICONTROL Clicks on opt-out link]** :退订链接的点击次数。
-* **[!UICONTROL Clicks on the mirror page link]** :点击指向镜像页面的链接的次数。 要考虑这一点，必须在投放向导（跟踪的URL）中将链接定义为相同的链接。 <!--Refer to this [page](../../delivery/using/about-delivery-monitoring.md).-->
+* **[!UICONTROL Clicks on the mirror page link]** :对指向 [镜像页面](../send/mirror-page.md). 要考虑这一点，必须在投放向导（跟踪的URL）中将链接定义为相同的链接。
 * **[!UICONTROL Estimation of forwards]** :目标收件人转发的电子邮件数量的估计。 此值的计算方式是减去在电子邮件中点击的不同人员数量和不同收件人的数量。
 
    >[!NOTE]
@@ -83,7 +83,7 @@ ht-degree: 2%
 >
 >此报表中显示的域名在多维数据集级别使用的明细列表中定义。 要更改、添加或删除默认域，请编辑 **[!UICONTROL Domains]** 列出列表并修改值和别名。 的 **[!UICONTROL Others]** 类别包括不属于项目列表任何值的域名。
 >
->了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target=&quot;_blank&quot;}。
+>了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target="_blank"}.
 
 
 **[!UICONTROL 4. Generated click streams]**
@@ -203,5 +203,3 @@ This chart shows the breakdown of cumulated clicks per day.
 要从列表中选择非相邻投放，请在进行选择时按住CTRL键。
 
 要选择保存在其他文件夹中的投放，请单击 **[!UICONTROL Display sub-levels]** 图标（可在工具栏中访问）。 然后，它们将显示在同一列表中。
-
-

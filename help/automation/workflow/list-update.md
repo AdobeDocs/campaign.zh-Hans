@@ -3,10 +3,11 @@ product: campaign
 title: 列表更新
 description: 列表更新
 feature: Workflows, Targeting Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: abb7f777-0b4a-4bf2-bcb6-32264f340a58
+source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -72,4 +73,4 @@ A **列表更新** 活动将过渡中指定的群体存储在收件人列表中�
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-提供了其他Campaign Classic操作方法视频 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans).
+还提供其他Campaign操作方法视频 [此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.

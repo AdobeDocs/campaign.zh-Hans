@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Campaign v8 文档
 breadcrumb-title: Campaign 概述
 title: Campaign v8 文档
-source-git-commit: 366cf800a81ea9ab10fe5e3063f44e5214bda927
-workflow-type: ht
-source-wordcount: '491'
-ht-degree: 100%
+source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
+workflow-type: tm+mt
+source-wordcount: '496'
+ht-degree: 98%
 
 ---
 
@@ -43,6 +43,7 @@ ht-degree: 100%
       + [使用投放模板](send/create-templates.md)
       + 电子邮件 {#emails}
          + [设计和验证电子邮件](send/email.md)
+         + [链接到镜像页面](send/mirror-page.md)
          + [发送和监测电子邮件](send/send.md)
       + [短信](send/sms.md)
       + [推送通知](send/push.md)

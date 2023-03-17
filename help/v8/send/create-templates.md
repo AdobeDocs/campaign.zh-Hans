@@ -5,10 +5,11 @@ description: 了解如何在Campaign中创建和使用投放模板
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 1c0015a02ff950d9bf9d33aacebf899db9e580fa
+exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
+source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 8%
 * 类型
 * 发件人和回复地址
 * 基本的个性化块
-* 镜像页面和退订的链接 链接
+* 链接到 [镜像页面](../send/mirror-page.md) 和退订链接
 * 内容、公司徽标或签名
 * 其他投放属性，如资源有效性、重试参数或隔离设置。
 
@@ -85,7 +86,7 @@ Campaign附带适用于每个渠道的一组内置模板：电子邮件、推送
 1. 从 **属性** 按钮，调整设置。
 1. 在 **常规** ，确认或更改 **执行文件夹**, **文件夹**&#x200B;和 **路由** 下拉菜单。
 1. 完成 **电子邮件参数** 类别。
-1. 添加 **HTML内容** 要个性化您的模板，您可以显示镜像页面链接和退订链接。
+1. 添加 **HTML内容** 要个性化您的模板，您可以 [镜像页面链接](../send/mirror-page.md) 和退订链接。
 1. 选择 **预览** 选项卡。 在 **测试个性化** 下拉菜单，选择 **收件人** 以预览模板作为所选配置文件。
 1. 单击&#x200B;**保存**。您的模板现已准备就绪，可在投放中使用。
 
@@ -141,4 +142,4 @@ Campaign附带适用于每个渠道的一组内置模板：电子邮件、推送
 
 >[!VIDEO](https://video.tv.adobe.com/v/338965?quality=12)
 
-提供了其他Campaign Classic操作方法视频 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans).
+还提供其他Campaign操作方法视频 [此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.

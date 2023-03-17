@@ -4,9 +4,9 @@ description: 了解如何链接到镜像页面
 feature: Email
 role: User
 level: Beginner
-source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
+source-git-commit: 2c35b169725b5300940260124a4b559eb44ffe43
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,16 @@ ht-degree: 0%
 
 由Adobe Campaign生成的镜像页面包含所有个性化数据。
 
+![](assets/mirror-page-link.png)
+
+
 ## 添加指向镜像页面的链接{#link-to-mirror-page}
 
 插入指向镜像页面的链接是一种好做法。 此链接可以是“在浏览器中查看此电子邮件”，通常位于电子邮件的页眉或页脚。
 
 在Adobe Campaign中，您可以使用 **个性化块**. 默认情况下，仅当将链接插入消息内容中时，才会生成镜像页面。
+
+内置 **链接到镜像页面** 个性化块在电子邮件内容中插入以下代码： `<%@ include view='MirrorPage' %>`.
 
 <!--For more on personalization blocks insertion, refer to [Personalization blocks](personalization-blocks.md).-->
 

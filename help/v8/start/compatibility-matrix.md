@@ -5,10 +5,10 @@ feature: Overview
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: c68218951f721dc31e70619c97b90452b72f9563
+source-git-commit: b4593dd9fbb3e4742183719281ff0e5a78b9e6c8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '375'
+ht-degree: 90%
 
 ---
 
@@ -55,11 +55,7 @@ ht-degree: 0%
 
 ## 移动 SDK{#MobileSDK}
 
-您可以使用 Campaign 通过关联的 Mobile SDK 在以下列出的操作系统上发送[推送通知](../send/push.md)。
-
-您还可以通过在数据收集UI中配置Adobe Experience Platform Mobile SDK扩展来使用Adobe Campaign。
-
-您还可以使用下面列出的Campaign SDK:
+发送 [推送通知](../send/push.md) 通过Campaign，您可以通过在数据收集UI中配置Adobe Experience Platform Mobile SDK。 您还可以使用下面列出的Campaign SDK:
 
 * **Android** 12、9.0、8.x、7.x 适用于 Campaign Android SDK 版本 1.1.1。
 * **Apple iOS** 9 - 16 适用于 Campaign iOS SDK 版本 1.0.26，与 32 位和 64 位版本兼容。Campaign v8.4 及更高版本支持 Apple iOS 16。

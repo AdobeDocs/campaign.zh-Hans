@@ -4,7 +4,7 @@ description: 了解如何添加和管理指向镜像页面的链接
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 903224da4ab15bf4221d8769bfb19933f4cbf2b0
+source-git-commit: 124d46f1a4bec1bfd5c07210c931d7fa37db08a7
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 由Adobe Campaign生成的镜像页面包含所有个性化数据。
 
-![镜像链接示例](assets/mirror-page-link.png){width="300" align="center"}
+![镜像链接示例](assets/mirror-page-link.png){width="500" align="center"}
 
 ## 添加指向镜像页面的链接{#link-to-mirror-page}
 

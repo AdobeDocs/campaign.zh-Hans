@@ -4,7 +4,7 @@ description: 了解如何添加和管理指向镜像页面的链接
 feature: Email
 role: User
 level: Beginner
-source-git-commit: e2aaf80a5a0d74161152fabe8ea157d31923ee19
+source-git-commit: 2a2887fcd476566d2105edd9824feba4c1caca8a
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 由Adobe Campaign生成的镜像页面包含所有个性化数据。
 
-![镜像链接示例](assets/mirror-page-link.png){width="500" align="left"}
+![镜像链接示例](assets/mirror-page-link.png){width="600" align="left"}
 
 ## 添加指向镜像页面的链接{#link-to-mirror-page}
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 在Adobe Campaign中，您可以使用 **个性化块**. 内置 **链接到镜像页面** 个性化块在电子邮件内容中插入以下代码： `<%@ include view='MirrorPage' %>`.
 
-![](assets/mirror-page-insert.png){width="500" align="left"}
+![](assets/mirror-page-insert.png){width="800" align="left"}
 
 
 <!--For more on personalization blocks insertion, refer to [Personalization blocks](personalization-blocks.md).-->
@@ -43,7 +43,7 @@ ht-degree: 0%
 1. 浏览到 **[!UICONTROL Validity]** 选项卡。
 1. 在 **镜像页面管理** ，请检查 **[!UICONTROL Mode]** 下拉列表。
 
-![](assets/mirror-page-generation.png){width="500" align="left"}
+![](assets/mirror-page-generation.png){width="800" align="left"}
 
 除了默认模式之外，还提供以下选项：
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 1. 选择收件人并单击 **[!UICONTROL Display the mirror page for this message...]** 链接。
 
-   ![](assets/mirror-page-display.png){width="500" align="left"}
+   ![](assets/mirror-page-display.png){width="800" align="left"}
 
    镜像页面会显示在专用屏幕中，并包含选定收件人的个性化数据。
 

@@ -1,17 +1,17 @@
 ---
-title: 个性化内容
+title: 个性化入门
 description: 了解如何个性化邮件内容
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 4885f15c71d2be27dc32a239fb22abc3a96503c7
+source-git-commit: a8568e0c1e9af11b533b7d435691dc12cc0a2485
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '471'
 ht-degree: 5%
 
 ---
 
-# 个性化内容 {#personalize-content}
+# 个性化入门 {#personalize-content}
 
 为了充分利用每个营销活动，Adobe Campaign为您提供了一种方式，以在客户级别为客户提供自定义内容。 基于用户档案数据，为不同群组和个人创建自定义体验的个性化功能：您可以利用您拥有的关于每个特定收件人的数据和信息，将消息调整为每个特定收件人。 这可以是他们的名字、兴趣、住处、购买的东西等等。
 

@@ -4,10 +4,10 @@ title: 应用分类规则
 description: 了解如何应用分类规则
 feature: Typology Rules
 exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+source-git-commit: a8568e0c1e9af11b533b7d435691dc12cc0a2485
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '951'
+ht-degree: 9%
 
 ---
 
@@ -15,7 +15,9 @@ ht-degree: 0%
 
 ## 将分类应用于投放 {#apply-a-typology-to-a-delivery}
 
-要应用您创建的分类规则，您需要将其与分类关联，然后在投放中引用此分类。 操作步骤：
+要应用您创建的分类规则，请将其与分类关联，然后在投放中引用此分类。
+
+为此请执行以下操作步骤：
 
 1. 创建营销活动分类。
 
@@ -27,7 +29,7 @@ ht-degree: 0%
 
 1. 保存分类：是否会将其添加到现有分类列表。
 1. 打开要将规则应用到的投放。
-1. 打开投放属性并访问 **[!UICONTROL Typology]** 选项卡。
+1. 浏览到投放属性并打开 **[!UICONTROL Typology]** 选项卡。
 1. 在下拉列表中选择分类。
 
    ![](assets/campaign_opt_pressure_sample_1_7.png)
@@ -56,7 +58,7 @@ ht-degree: 0%
 
 每天晚上，通过数据库清理工作流自动重新执行仲裁。 但是，值可以保存到此时段之后。
 
-事实上，某些计算使用的值每天都不会更改。 因此，每天重新计算数据和使数据库无偿过载将无关紧要。 例如，如果某个流程通过每周客户倾向得分和购买信息来丰富营销数据库，则无需每天重新计算基于这些值的数据。
+事实上，某些计算使用的值不会每天更改。 因此，每天重新计算数据和使数据库无偿过载将无关紧要。 例如，如果某个流程通过每周客户倾向得分和购买信息来丰富营销数据库，则无需每天重新计算基于这些值的数据。
 
 为此， **[!UICONTROL Frequency]** 字段 **[!UICONTROL General]** 选项卡，可定义保存定位的最长时间段。 默认情况下，该值为 **0** 表示在下次执行每日重新仲裁之前，计算仍然有效。
 
@@ -91,11 +93,11 @@ ht-degree: 0%
 
 您可以使用 **[!UICONTROL General]** 选项卡。 当在同一消息处理阶段执行多个规则时，您可以在 **[!UICONTROL Execution sequence]** 字段。
 
-例如，执行顺序为20的压力规则将在执行顺序为30的压力规则之前执行。
+例如，在执行顺序为30的压力规则之前执行执行顺序为20的压力规则。
 
 ### 控制规则 {#control-rules}
 
-对于 **[!UICONTROL Control]** 规则时，您可以决定在投放生命周期的哪个时间点应用规则（在定位之前或之后、开始个性化时、分析结束时）。 在 **[!UICONTROL Phase]** 字段，在 **[!UICONTROL General]** 选项卡。
+对于 **[!UICONTROL Control]** 规则时，您可以决定在投放生命周期的哪个时间点应用规则：定位之前或之后、个性化开始时、分析结束时。 在 **[!UICONTROL Phase]** 字段，在 **[!UICONTROL General]** 选项卡。
 
 ![](assets/campaign_opt_define_control_phase.png)
 

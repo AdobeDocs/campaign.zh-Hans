@@ -4,10 +4,10 @@ title: 丰富数据
 description: 进一步了解扩充工作流活动
 feature: Workflows, Enrichment Activity
 exl-id: 3b3fa15f-b16e-42c8-a2e6-03350aee1903
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -42,17 +42,17 @@ ht-degree: 1%
 要创建工作流，请应用以下步骤：
 
 1. 两个 **[!UICONTROL Query]** 活动和一个 **[!UICONTROL Intersection]** 活动会添加到上次竞争的目标新订阅者。
-1. 的 **[!UICONTROL Enrichment]** 活动允许我们添加存储在 **[!UICONTROL Competition results]** 表。 的 **[!UICONTROL Score]** 将进行投放个性化的字段添加到工作流的工作表中。
-1. 的 **[!UICONTROL Split]** 类型活动允许我们根据得分创建收件人子集。
-1. 对于每个子集， **[!UICONTROL Delivery]** 类型活动。
+1. 的 **[!UICONTROL Enrichment]** 活动用于添加存储在 **[!UICONTROL Competition results]** 表。 的 **[!UICONTROL Score]** 投放个性化将发生的字段添加到工作流的工作表中。
+1. 的 **[!UICONTROL Split]** 类型活动用于根据得分创建收件人子集。
+1. 对于每个子集， **[!UICONTROL Delivery]** 活动。
 
 ## 步骤1:定位 {#step-1--targeting}
 
-通过第一个查询，我们可以定位过去六个月内添加到数据库的收件人。
+第一个查询用于定位过去六个月内添加到数据库的收件人。
 
 ![](assets/uc1_enrich_4.png)
 
-第二个查询使我们能够定位参加上次比赛的收件人。
+第二个查询用于定向参加上次比赛的收件人。
 
 ![](assets/uc1_enrich_5.png)
 
@@ -60,7 +60,7 @@ ht-degree: 1%
 
 ## 步骤2:扩充 {#step-2--enrichment}
 
-在本例中，我们希望根据 **[!UICONTROL Score]** 字段 **[!UICONTROL Competition results]** 表。 此表与收件人表具有1-n类型关系。 的 **[!UICONTROL Enrichment]** 活动允许我们将来自链接到过滤维度的表的数据添加到工作流的工作表。
+在本例中，了解如何根据 **[!UICONTROL Score]** 字段 **[!UICONTROL Competition results]** 表。 此表与收件人表具有1-n类型关系。 的 **[!UICONTROL Enrichment]** 活动用于将链接到过滤维度的表中的数据添加到工作流的工作表。
 
 1. 在扩充活动的编辑屏幕中，选择 **[!UICONTROL Add data]**，则 **[!UICONTROL Data linked to the filtering dimension]** 单击 **[!UICONTROL Next]**.
 

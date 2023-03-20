@@ -4,10 +4,10 @@ title: 应用分类规则
 description: 了解如何应用分类规则
 feature: Typology Rules
 exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 1. 创建营销活动分类。
 
-   可通过 **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** 节点。
+   可通过 **[!UICONTROL Administration > Campaign Management > Typology management]** > **[!UICONTROL Typologies]** Campaign资源管理器的文件夹。
 
 1. 转到 **[!UICONTROL Rules]** ，单击 **[!UICONTROL Add]** 按钮，然后选择要应用于此分类的规则。
 

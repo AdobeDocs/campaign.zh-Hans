@@ -4,7 +4,7 @@ title: 活动分类快速入门
 description: 了解如何配置和实施Campaign分类
 feature: Typology Rules
 exl-id: 7832ffe1-eb65-4b37-9fc5-1374516755d9
-source-git-commit: 7fe079c5473fa164405753c2be6cc8be16329f58
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 19%
@@ -29,7 +29,7 @@ ht-degree: 19%
 
 营销活动分类可以包含多个分类规则，但投放只能引用一个分类。
 
-在 **[!UICONTROL Administration > Campaign management > Typology management]** Campaign Explorer节点。
+在 **[!UICONTROL Administration > Campaign management > Typology management]** Campaign资源管理器的文件夹。
 
 对于每个分类， **[!UICONTROL Rules]** 选项卡，可添加、删除或查看要应用的分类规则。
 

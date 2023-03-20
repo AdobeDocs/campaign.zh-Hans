@@ -4,9 +4,9 @@ title: 营销活动投放
 description: 了解有关营销活动投放的更多信息
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '706'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 ![](assets/select-delivery-reviewers.png)
 
-但是，您也可以允许营销活动所有者确认发送，即使在投放属性或营销活动属性中定义了特定的审阅者也是如此。 为此，请以管理员身份创建 **NmsCampaign_Activate_OwnerConfirmation** 选项，并将其设置为 **1**. 选项通过 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** 节点。
+但是，您也可以允许营销活动所有者确认发送，即使在投放属性或营销活动属性中定义了特定的审阅者也是如此。 为此，请以管理员身份创建 **NmsCampaign_Activate_OwnerConfirmation** 选项，并将其设置为 **1**. 选项通过 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** Campaign资源管理器的文件夹。
 
 
 ### 启动直邮投放 {#start-an-offline-delivery}

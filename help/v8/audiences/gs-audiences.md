@@ -5,14 +5,14 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 43483085-8aa6-47e6-89e7-9211e37beaa4
-source-git-commit: 7f9a95f3748b8322933137aa780897611de91678
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 20%
 
 ---
 
-# 用户档案和受众快速入门{#gs-profiles-and-audiences}
+# 用户档案和受众入门{#gs-profiles-and-audiences}
 
 用户档案是存储在Campaign数据库中的联系人，例如客户、服务订阅者或潜在客户。 有许多可能的机制可获取用户档案并创建此数据库：通过 Web 窗体在线收集、手动或自动导入文本文件、复制公司数据库或其他信息系统的内容。借助Adobe Campaign，您可以整合营销历史、购买信息、偏好、CRM数据以及整合视图中任何相关的PI数据，以便进行分析并采取行动。 用户档案包含定位、鉴别和跟踪个人所需的所有信息。
 
@@ -22,7 +22,9 @@ ht-degree: 20%
 
 ![](assets/recipients-in-explorer.png)
 
-在Adobe Campaign, **收件人** 是发送投放（电子邮件、短信等）的默认定向用户档案。 通过数据库中存储的收件人数据，您可以筛选将接收任何给定投放的目标，并在投放内容中添加个性化数据。 数据库中还有其他类型的用户档案。这些用户档案是针对不同用途而设计的。例如，种子用户档案用于在将投放内容发送给最终目标前测试该投放内容。
+在Adobe Campaign, **收件人** 是发送投放（电子邮件、短信等）的默认定向用户档案。
+
+通过数据库中存储的收件人数据，您可以筛选将接收任何给定投放的目标，并在投放内容中添加个性化数据。 数据库中还有其他类型的用户档案。这些用户档案是针对不同用途而设计的。例如，种子用户档案用于在将投放内容发送给最终目标前测试该投放内容。
 
 要使用用户档案数据填充Adobe Campaign，您可以：
 

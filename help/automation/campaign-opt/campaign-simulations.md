@@ -4,9 +4,9 @@ title: 活动模拟入门
 description: 了解如何配置活动模拟
 feature: Campaigns
 exl-id: 2b2b668f-87d9-4265-adbc-9098b85c5aab
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1210'
 ht-degree: 1%
 
 ---
@@ -197,7 +197,7 @@ Descriptive analysis is detailed in [this section](../../reporting/using/about-a
 >[!NOTE]
 >
 >我们建议在模拟模板中定义计算轴，而不是针对每个模拟分别定义计算轴。\
->模拟模板保存在 **[!UICONTROL Resources > Templates > Simulation templates]** Adobe Campaign树的节点。
+>模拟模板保存在 **[!UICONTROL Resources > Templates > Simulation templates]** Campaign资源管理器的文件夹。
 
 **示例:**
 

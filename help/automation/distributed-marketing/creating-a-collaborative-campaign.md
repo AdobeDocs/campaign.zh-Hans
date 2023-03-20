@@ -4,10 +4,10 @@ title: 创建协作活动
 description: 了解如何创建协作活动
 feature: Distributed Marketing
 exl-id: edf887fb-c391-405c-b3cf-dc34aed69c53
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
 source-wordcount: '910'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## 创建协作活动 {#creating-a-collaborative-campaign}
 
-要配置协作营销活动，请单击 **[!UICONTROL Campaign management > Campaigns]** 节点，然后 **[!UICONTROL New]** 图标。
+要配置协作营销活动，请单击 **[!UICONTROL Campaign management > Campaigns]** 文件夹，然后 **[!UICONTROL New]** 图标。
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ ht-degree: 3%
 
 协作促销活动数据库的配置过程与本地促销活动模板的配置过程类似。 下面详细描述了不同类型的协作活动的规格。
 
-### 按表单 {#by-form}
+### 按形状 {#by-form}
 
 要创建协作式营销活动（按表单），请 **[!UICONTROL Collaborative campaign (by form)]** 模板。
 
@@ -63,7 +63,7 @@ ht-degree: 3%
 
 ![](assets/mkg_dist_mutual_op_by_op.png)
 
-### 按目标批准 {#by-target-approval}
+### 通过目标审批 {#by-target-approval}
 
 要创建协作式营销活动（通过目标批准），请 **[!UICONTROL Collaborative campaign (by target approval)]** 模板。
 
@@ -75,8 +75,8 @@ ht-degree: 3%
 
 营销活动工作流必须集成 **本地批准** 键入活动。 活动参数如下所示：
 
-* **[!UICONTROL Action to perform]** :Target批准通知。
-* **[!UICONTROL Distribution context]** :明确。
+* **[!UICONTROL Action to perform]** : 目标审批通知.
+* **[!UICONTROL Distribution context]** : 明确.
 * **[!UICONTROL Data distribution]** :本地实体分发。
 
 **本地实体分发** 必须创建类型data distribution。 利用数据分发模板，可限制分组值列表中的记录数。 在 **[!UICONTROL Resources > Campaign management > Data distribution]**，请单击 **[!UICONTROL New]** 新建 **[!UICONTROL Data distribution]**. 有关数据分发的更多信息，请

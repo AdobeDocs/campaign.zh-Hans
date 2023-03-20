@@ -6,10 +6,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 7%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 7%
 
 使用投放模板标准化创意外观，以便更快地执行和启动活动。
 
-模板可以系统地包括：
+模板可以包括：
 
 * 类型
 * 发件人和回复地址
-* 基本的个性化块
+* 基本 [个性化块](../send/personalization-blocks.md)
 * 链接到 [镜像页面](../send/mirror-page.md) 和退订链接
 * 内容、公司徽标或签名
 * 其他投放属性，如资源有效性、重试参数或隔离设置。

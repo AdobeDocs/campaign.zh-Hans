@@ -4,10 +4,10 @@ description: 了解如何使用Adobe Campaign Social营销模块在Twitter上发
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
-source-git-commit: 9ae93ce4e2b0424bb3b3862b2c7d016309bd630e
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -124,7 +124,7 @@ Adobe Campaign **社交营销** 模块，让您可以通过Twitter与客户和�
 
    ![](assets/tw-dm-content.png)
 
-   个性化字段的使用方式与电子邮件投放相同，例如，在消息正文中添加关注者的名称。 在 [此部分](../start/create-message.md#personalization).
+   个性化字段的使用方式与电子邮件投放相同，例如，在消息正文中添加关注者的名称。 在 [此部分](../send/personalize.md).
 
 1. 预览消息
 
@@ -140,7 +140,7 @@ Adobe Campaign **社交营销** 模块，让您可以通过Twitter与客户和�
 
    在发送消息之前，请确保通过向测试帐户发送校样来验证消息：然后，您可以在专用Twitter帐户上获取消息的精确渲染，并检查内容和个性化。
 
-   ![](../assets/do-not-localize/book.png) [了解验证投放的关键步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=zh-Hans){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) [了解验证投放的关键步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=zh-Hans){target="_blank"}
 
 1. 发送私信
 
@@ -151,7 +151,7 @@ Adobe Campaign **社交营销** 模块，让您可以通过Twitter与客户和�
 
 >[!CAUTION]
 >
->您每天不能发送超过250条私信。 为避免超出此阈值，您可以分批投放。 有关更多信息，请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en#sending-using-multiple-waves)。
+>您每天不能发送超过250条私信。 为避免超出此阈值，您可以分批投放。 有关更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=en#sending-using-multiple-waves){target="_blank"}.
 
 
 ## 访问跟踪数据 {#tw-tracking}
@@ -160,5 +160,5 @@ Adobe Campaign **社交营销** 模块，让您可以通过Twitter与客户和�
 
 可以在投放报表和 **[!UICONTROL Edit > Tracking]** 选项卡。
 
-跟踪配置与电子邮件投放的相同。 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=zh-Hans){target=&quot;_blank&quot;}以了解详情。
+跟踪配置与电子邮件投放的相同。 在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=zh-Hans){target="_blank"}.
 

@@ -3,10 +3,10 @@ title: 使用工作流数据
 description: 了解如何使用工作流数据
 feature: Workflows, Data Management
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 5%
+source-wordcount: '707'
+ht-degree: 3%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 5%
 
    利用此菜单，可访问描述性分析向导，该向导可生成有关过渡数据的统计信息和报告。
 
-   有关更多信息，请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html)。
+   有关更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}.
 
 在执行工作流时会清除目标数据。 只能访问最后一个工作表。 您可以配置工作流，以便所有工作表都保持可访问状态：检查 **[!UICONTROL Keep the result of interim populations between two executions]** 选项。
 
@@ -57,7 +57,7 @@ ht-degree: 5%
 
 ### 利用目标数据 {#target-data}
 
-工作流临时工作表中存储的数据可用于个性化任务。 数据可在个性化字段中使用。
+工作流临时工作表中存储的数据可用于个性化任务。 数据可在 [个性化字段](../../v8/send/personalization-fields.md).
 
 例如，您可以使用通过投放中的列表收集的数据。 要实现此目的，请使用以下语法：
 

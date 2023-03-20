@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d,e3e9b514-a69d-4650-b1b1-1b76b4f3d63f
-source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +40,7 @@ Adobe Campaign 具有功能强大且易于使用的市场细分和定位功能�
 
 高级数据管理功能可进一步扩展数据处理能力。通过包含未在数据集市中建模的数据，该功能可简化并优化定位流程。
 
-![](../assets/do-not-localize/glass.png)请参阅[本节](audiences.md)以了解关于分段、受众创建和个性化的更多信息。
+![](../assets/do-not-localize/glass.png) 进一步了解 [此部分](audiences.md).
 
 ## 跨渠道营销活动编排 {#cross-channel-campaign-orchestration}
 

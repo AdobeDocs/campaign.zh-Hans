@@ -4,10 +4,10 @@ title: 供应商、库存和预算
 description: 供应商、库存和预算
 feature: Budget Management, Campaigns
 exl-id: 1d4a98e6-af11-4645-864e-29aa5766d9d8
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
-source-wordcount: '1816'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ Adobe Campaign允许您定义将参与营销活动中执行的作业的服务提
 
 每个服务提供商都保存在包含联系详细信息、服务模板和相关作业的文件中。
 
-在 **[!UICONTROL Administration > Campaign management]** 树的节点。
+在 **[!UICONTROL Administration > Campaign management]** Campaign资源管理器的文件夹。
 
 在投放期间执行的作业由服务提供商执行，特别是直邮和移动渠道的作业。 例如，这些服务提供商可以参与打印或分发消息。 这些作业涉及特定于每个服务提供商的配置和成本。 服务提供商的配置涉及四个阶段：
 
@@ -129,7 +129,7 @@ Adobe Campaign允许您定义将参与营销活动中执行的作业的服务提
 
 * 的 **[!UICONTROL Notification email]** 部分允许您指定在发送文件后通知服务提供商的模板。 选择用于创建警报消息的模板和收件人组。
 
-   默认情况下，通知消息的投放模板会保存在 **[!UICONTROL Administration > Campaign management > Technical delivery templates]** 节点，可从常规视图访问。
+   默认情况下，通知消息的投放模板会保存在 **[!UICONTROL Administration > Campaign management > Technical delivery templates]** 文件夹，可从常规视图访问。
 
 * 的 **[!UICONTROL Post-processing]** 部分，可让您选择要在投放获得批准后启动的工作流。 如果输入了工作流模板，则会自动创建工作流实例，然后在批准生效后立即启动该实例。 例如，此工作流可以将提取文件发送到外部服务提供商进行处理。
 
@@ -219,7 +219,7 @@ Adobe Campaign允许您定义将参与营销活动中执行的作业的服务提
 
 ![](assets/stock-alert.png)
 
-#### 订单数 {#orders}
+#### 顺序 {#orders}
 
 的 **[!UICONTROL Orders]** 使用子标签可以查看当前订单并保存新订单。
 

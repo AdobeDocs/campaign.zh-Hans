@@ -4,9 +4,9 @@ title: 分布式营销示例
 description: 分布式营销示例
 feature: Distributed Marketing
 exl-id: 7825426b-c9e4-49e9-840c-dc6d6d836fbe
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1290'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 #### 创建数据分发活动 {#creating-a-data-distribution-activity}
 
-1. 要设置协作营销活动（通过目标批准），您必须首先创建 **[!UICONTROL Data distribution activity]**. 单击 **[!UICONTROL New]** 图标 **[!UICONTROL Resources > Campaign management > Data distribution]** 节点。
+1. 要设置协作营销活动（通过目标批准），您必须首先创建 **[!UICONTROL Data distribution activity]**. 单击 **[!UICONTROL New]** 图标 **[!UICONTROL Resources > Campaign management > Data distribution]** Campaign资源管理器的文件夹。
 
    ![](assets/mkg_dist_use_case_target_valid3.png)
 
@@ -139,7 +139,7 @@ ht-degree: 0%
 
 #### 创建协作活动 {#creating-a-collaborative-campaign}
 
-1. 从 **[!UICONTROL Campaign management > Campaign]** 节点，创建新 **[!UICONTROL collaborative campaign (by target approval)]**.
+1. 从 **[!UICONTROL Campaign management > Campaign]** Campaign资源管理器的文件夹中，创建新 **[!UICONTROL collaborative campaign (by target approval)]**.
 1. 在 **[!UICONTROL Targeting and workflows]** ，为营销活动创建工作流。 此参数必须包含 **拆分** 活动，其中 **[!UICONTROL Record count limitation]** 由 **[!UICONTROL Data distribution]** 活动。
 
    ![](assets/mkg_dist_use_case_target_valid5.png)

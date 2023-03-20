@@ -4,9 +4,9 @@ description: 了解如何添加和管理指向镜像页面的链接
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 2a2887fcd476566d2105edd9824feba4c1caca8a
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 ![](assets/mirror-page-insert.png){width="800" align="left"}
 
 
-<!--For more on personalization blocks insertion, refer to [Personalization blocks](personalization-blocks.md).-->
+有关自定义内容块插入的更多信息，请参阅 [个性化块](personalization-blocks.md).
 
 ## 镜像页面生成{#mirror-page-generation}
 

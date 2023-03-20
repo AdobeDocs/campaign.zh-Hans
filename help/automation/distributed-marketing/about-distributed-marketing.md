@@ -4,7 +4,7 @@ title: 分布式营销入门
 description: 分布式营销入门
 feature: Distributed Marketing
 exl-id: c9f5b277-3ad8-4316-94b9-789d37813b8b
-source-git-commit: c835a96b315d2c68b64869082fc626243dd006e9
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
 source-wordcount: '1134'
 ht-degree: 1%
@@ -103,7 +103,7 @@ Adobe Campaign提供 **分布式营销** 中央单位（总部、营销部门等
 
 ### 组织实体 {#organizational-entities}
 
-要创建组织实体，请单击 **[!UICONTROL Administration > Access management > Organizational entities]** 节点，然后单击 **[!UICONTROL New]** 图标。
+要创建组织实体，请单击 **[!UICONTROL Administration > Access management > Organizational entities]** 文件夹，然后单击 **[!UICONTROL New]** 图标。
 
 ![](assets/s_advuser_mkg_dist_local_list.png)
 

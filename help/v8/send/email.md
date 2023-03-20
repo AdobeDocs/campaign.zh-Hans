@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: bd109f9d320b3009ab0d9414291d397b331373de
+source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '576'
+ht-degree: 16%
 
 ---
 
@@ -48,7 +48,6 @@ ht-degree: 0%
 
 1. **个性化您的消息**
 
-
    * 添加收件人的名字和姓氏
 
       要在消息内容中插入目标用户档案的名字和姓氏，请将光标放在要插入它们的位置，然后单击工具栏中的最后一个图标，然后单击 **[!UICONTROL Include]** 选择 **[!UICONTROL Greetings]**.
@@ -58,6 +57,8 @@ ht-degree: 0%
       浏览到“预览”选项卡，以通过选择收件人检查个性化。
 
       ![](assets/perso-check.png)
+
+      在中了解有关个性化选项的更多信息 [此部分](personalize.md).
 
    * 插入跟踪链接
 

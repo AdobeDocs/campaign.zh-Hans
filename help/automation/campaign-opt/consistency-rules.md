@@ -4,10 +4,10 @@ title: 一致性规则
 description: 一致性规则
 feature: Typology Rules
 exl-id: dcb4ffcf-71e5-48a2-b0f7-42915a599652
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Campaign通过营销活动分类中包含的一组规则，确保通信的
 
 要设计新的容量规则，请执行以下步骤：
 
-1. 在 **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** 节点，单击 **[!UICONTROL New]**.
+1. 在 **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** 文件夹，单击 **[!UICONTROL New]**.
 1. 选择 **[!UICONTROL Capacity]** 规则类型。
 
    ![](assets/campaign_opt_create_capacity_01.png)

@@ -1,10 +1,10 @@
 ---
-title: 个性化字段
+title: 添加个性化字段
 description: 了解如何在消息内容中插入个性化数据
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+source-git-commit: badcbb83c4bd0cf509c156557f5ea6f7cf7ae771
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 ---
 
 
-# 个性化字段{#personalization-fields}
+# 添加个性化字段{#personalization-fields}
 
 根据您为每个收件人设置的规则，使用个性化字段以一对一的方式提供个性化内容。
 

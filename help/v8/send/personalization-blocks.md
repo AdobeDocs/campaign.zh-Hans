@@ -1,10 +1,10 @@
 ---
-title: 个性化块
+title: 使用个性化块
 description: 了解如何在消息内容中使用内置个性化块
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+source-git-commit: badcbb83c4bd0cf509c156557f5ea6f7cf7ae771
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 ---
 
 
-# 个性化块{#personalization-blocks}
+# 使用个性化块{#personalization-blocks}
 
 个性化块是动态内容，其中包含可插入投放的特定渲染。 例如，您可以添加徽标、问候语消息或指向镜像页面的链接。
 

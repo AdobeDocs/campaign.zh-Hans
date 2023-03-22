@@ -5,9 +5,9 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
+source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '567'
 ht-degree: 16%
 
 ---
@@ -92,9 +92,7 @@ ht-degree: 16%
 
 ## 测试和验证电子邮件
 
-Campaign提供了多种方法，用于在向受众发送电子邮件之前测试和验证电子邮件。
-
-![](../assets/do-not-localize/book.png) [应用Campaign Classicv7文档中列出的最佳实践](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/check-before-sending.html){target="_blank"}
+Campaign提供了多种方法，用于在向受众发送电子邮件之前测试和验证电子邮件。 了解如何在 [本页](../send/preview-and-proof.md).
 
 您可以：
 
@@ -102,6 +100,5 @@ Campaign提供了多种方法，用于在向受众发送电子邮件之前测试
 *   发送验证
 * 添加种子地址
 * 使用对照组
-* 检查电子邮件渲染
 
 ![](../assets/do-not-localize/book.png) [请参阅 Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=zh-Hans)以了解详情{target="_blank"}

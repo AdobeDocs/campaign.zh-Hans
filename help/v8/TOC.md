@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Campaign v8 文档
 breadcrumb-title: Campaign 概述
 title: Campaign v8 文档
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '520'
+ht-degree: 94%
 
 ---
 
@@ -62,6 +62,9 @@ ht-degree: 0%
       + [添加个性化字段](send/personalization-fields.md)
       + [使用个性化块](send/personalization-blocks.md)
       + [创建条件](send/conditions.md)
+   + 验证投放 {#validate}
+      + [预览和校样](send/preview-and-proof.md)
+      + [投放分析](send/delivery-analysis.md)
 + 用户档案和受众管理 {#audience}
    + [用户档案和受众入门](audiences/gs-audiences.md)
    + [使用受众](start/audiences.md)

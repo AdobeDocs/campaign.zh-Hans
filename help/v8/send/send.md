@@ -5,26 +5,19 @@ feature: Email
 role: Data Engineer
 level: Beginner
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
-source-git-commit: 9fa6666532a6943c438268d7ea832f0908588208
+source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 1%
+source-wordcount: '795'
+ht-degree: 3%
 
 ---
 
 
 # 发送并监控电子邮件
 
-配置投放并准备好发送后，请确保已运行投放分析。
-
-![](../assets/do-not-localize/book.png) [在Campaign Classicv7文档中了解详情](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#confirming-delivery){target=&quot;_blank&quot;}
+配置投放并准备好发送后，请确保已运行投放分析。 [了解详情](delivery-analysis.md)
 
 完成后，确认投放以启动消息投放。
-
-您还可以：
-
-* 使用 [延后投放选项](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#scheduling-the-delivery-sending){target=&quot;_blank&quot;},
-* 使用 [多波](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves){target=&quot;_blank&quot;}。
 
 跟踪 **投放** 选项卡，可通过此投放的详细信息或投放列表访问。
 
@@ -32,7 +25,7 @@ ht-degree: 1%
 
 发送后，在投放仪表板中检查您的投放状态，并访问投放日志和报告以确认消息正确发送。
 
-![](../assets/do-not-localize/book.png) [在Campaign Classicv7文档中了解详情](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) [请参阅 Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html)以了解详情{target="_blank"}
 
 
 ## Campaign MTA {#mta}
@@ -59,7 +52,7 @@ MTA符合SMTP退回的条件，并以映射到Campaign退回原因和资格的�
 
 >[!NOTE]
 >
->当前 **异步** 退回由inMail流程通过 **[!UICONTROL Inbound email]** 规则。 有关更多信息，请参阅 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target=&quot;_blank&quot;}。 <!--Refer to [bounce mail qualification](delivery-failures.md#bounce-mail-qualification)-->
+>当前 **异步** 退回由inMail流程通过 **[!UICONTROL Inbound email]** 规则。
 
 了解有关投放失败的更多信息，请参阅 [此部分](delivery-failures.md).
 
@@ -76,7 +69,7 @@ MTA有其自己的MX规则，允许MX根据您自己的历史电子邮件信誉�
 
 在Adobe Campaign中，DKIM电子邮件身份验证签名由MTA执行。
 
-了解有关DKIM的更多信息，请参阅 [Adobe投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication){target=&quot;_blank&quot;}。
+了解有关DKIM的更多信息，请参阅 [Adobe投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication){target="_blank"}.
 
 ## 电子邮件反馈服务 {#email-feedback-service}
 
@@ -90,7 +83,7 @@ MTA有其自己的MX规则，允许MX根据您自己的历史电子邮件信誉�
 
 从MTA报告硬弹回消息时，其日志状态会从 **[!UICONTROL Taken into account by the service provider]** to **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
 
-从MTA报告软弹回消息时，其日志状态保持不变(**[!UICONTROL Taken into account by the service provider]**):只有 [错误原因](delivery-failures.md#delivery-failure-reasons) 已更新<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. 的 **[!UICONTROL Success]** 百分比保持不变。 然后，在整个投放中重试软弹回消息 [有效期](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target=&quot;_blank&quot;}:
+从MTA报告软弹回消息时，其日志状态保持不变(**[!UICONTROL Taken into account by the service provider]**):只有 [错误原因](delivery-failures.md#delivery-failure-reasons) 已更新<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. 的 **[!UICONTROL Success]** 百分比保持不变。 然后，在整个投放中重试软弹回消息 [有效期](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}:
 
 * 如果在有效期结束前重试成功，则消息状态将更改为 **[!UICONTROL Sent]** 和 **[!UICONTROL Success]** 百分比也相应地增加。
 
@@ -106,8 +99,8 @@ MTA有其自己的MX规则，允许MX根据您自己的历史电子邮件信誉�
 
 | 发送流程中的步骤 | KPI摘要 | 发送日志状态 |
 |--- |--- |--- |
-| 已成功将消息从Campaign中继到MTA | **[!UICONTROL Success]** 百分比未显示（从0%开始） | 服务提供商考虑 |
-| 硬弹回邮件从MTA返回报告 | 中未更改 **[!UICONTROL Success]** 百分比 | 失败 |
-| 软弹跳消息从MTA返回报告 | 中未更改 **[!UICONTROL Success]** 百分比 | 服务提供商考虑 |
+| 已成功将消息从Campaign中继到MTA | **[!UICONTROL Success]** 百分比未显示（从0%开始） | 由服务提供商考虑 |
+| 硬弹回邮件从MTA返回报告 | 中未更改 **[!UICONTROL Success]** 百分比 | 已失败 |
+| 软弹跳消息从MTA返回报告 | 中未更改 **[!UICONTROL Success]** 百分比 | 由服务提供商考虑 |
 | 软弹回消息重试成功 | **[!UICONTROL Success]** 百分比相应地增加 | 已发送 |
-| 软弹回消息重试失败 | 中未更改 **[!UICONTROL Success]** 百分比 | 失败 |
+| 软弹回消息重试失败 | 中未更改 **[!UICONTROL Success]** 百分比 | 已失败 |

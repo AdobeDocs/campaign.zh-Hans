@@ -5,9 +5,9 @@ feature: Privacy, PI
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 1d593c8e-4b32-4902-93a7-7b18cef27cac
-source-git-commit: 864f2179384d3e3cfcf310fcd04fe02240bfbefa
+source-git-commit: cfe559b83a7db36ab8d9223d04d348f3afd74730
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '603'
 ht-degree: 1%
 
 ---
@@ -36,9 +36,8 @@ ht-degree: 1%
 
 * 创建足够的安全组
 * 检查每个操作员是否拥有适当的访问权限
-* 避免使用管理员操作员，并避免管理员组中的运算符过多
 
-![](../assets/do-not-localize/book.png) 在 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator){target=&quot;_blank&quot;}
+了解有关 [此部分](../start/gs-permissions.md)
 
 ## 编码准则
 
@@ -50,7 +49,7 @@ ht-degree: 1%
 
 * **在Web应用程序中添加捕获**:在公共登陆页面和订阅页面中添加捕获。
 
-![](../assets/do-not-localize/book.png) 在 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) 在 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target="_blank"}
 
 
 ## 个性化
@@ -132,9 +131,8 @@ ht-degree: 1%
 
 * 创建足够的安全组
 * 检查每个操作员是否拥有适当的访问权限
-* 避免使用管理员操作员，并避免管理员组中的运算符过多
 
-![](../assets/do-not-localize/book.png) 在 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management.html?lang=en#webapp-operator){target=&quot;_blank&quot;}
+了解有关 [在此部分中](../start/gs-permissions.md).
 
 ## 编码准则
 
@@ -146,4 +144,4 @@ ht-degree: 1%
 
 * **在Web应用程序中添加捕获**:在公共登陆页面和订阅页面中添加捕获。
 
-![](../assets/do-not-localize/book.png) 在 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) 在 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=en#installing-campaign-classic){target="_blank"}

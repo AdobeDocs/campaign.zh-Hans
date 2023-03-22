@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Intermediate, Experienced
 exl-id: e4e3fb49-9942-4e2d-a020-557d1ac5dcdc
-source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
+source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 8%
+source-wordcount: '411'
+ht-degree: 5%
 
 ---
 
@@ -66,7 +66,16 @@ Adobe Campaign本身不管理已存档的文件。 它确实允许您将您选�
 
 <!--Only successfully sent emails are taken in account, bounces are not.-->
 
-**请参阅 Campaign Classic v7 文档**&#x200B;以了解详情
+**了解详情**
+
+在以下部分中：
+
+* [使用电子邮件投放模板](../send/create-templates.md)
+
+* [了解投放失败](../send/delivery-failures.md)
+
+
+在Campaign Classicv7文档中：
 
 * [选择电子邮件格式](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#selecting-message-formats){target="_blank"}
 
@@ -74,6 +83,3 @@ Adobe Campaign本身不管理已存档的文件。 它确实允许您将您选�
 
 * [设置退回电子邮件地址](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#managing-bounce-emails){target="_blank"}
 
-* [使用电子邮件投放模板](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=zh-Hans){target="_blank"}
-
-* [了解投放失败](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html){target="_blank"}

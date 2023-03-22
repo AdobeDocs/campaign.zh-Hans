@@ -5,18 +5,16 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
+source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 16%
+source-wordcount: '466'
+ht-degree: 9%
 
 ---
 
 # 设计和发送电子邮件
 
-电子邮件投放允许您向目标群体发送个性化电子邮件。
-
-![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/about-email-channel.html)以了解详情{target="_blank"}
+电子邮件投放允许您向目标群体发送个性化电子邮件。 [了解详情](../send/send.md)。
 
 ## 创建您的第一个电子邮件投放
 
@@ -78,17 +76,12 @@ ht-degree: 16%
 
 了解如何在 [用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html).
 
-在 **Campaign Classicv7文档**:
+请通过以下部分了解更多信息：
 
-* 在Campaign中设计电子邮件
-   ![](../assets/do-not-localize/book.png) [了解如何设计电子邮件](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/defining-the-email-content.html?lang=zh-Hans){target="_blank"}
-* 创建和使用电子邮件模板
-   ![](../assets/do-not-localize/book.png) [了解有关电子邮件模板的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=zh-Hans){target="_blank"}
-* 选择电子邮件的受众
-   ![](../assets/do-not-localize/book.png) [了解如何定义目标群体](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html){target="_blank"}
-* 验证投放并发送校样
-   ![](../assets/do-not-localize/book.png) [了解验证投放的关键步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=zh-Hans){target="_blank"}
-* 添加 [种子地址](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html){target="_blank"}
+* [在Campaign中设计电子邮件](../send/email.md)
+* [创建和使用电子邮件模板](../send/create-templates.md)
+* [选择电子邮件的受众](../audiences/gs-audiences.md)
+* [验证投放并发送校样](../send/preview-and-proof.md)
 
 ## 测试和验证电子邮件
 
@@ -99,6 +92,5 @@ Campaign提供了多种方法，用于在向受众发送电子邮件之前测试
 * 检查投放分析日志
 *   发送验证
 * 添加种子地址
-* 使用对照组
 
-![](../assets/do-not-localize/book.png) [请参阅 Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=zh-Hans)以了解详情{target="_blank"}
+[了解详情](../send/delivery-analysis.md)

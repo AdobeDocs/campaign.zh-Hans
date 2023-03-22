@@ -4,10 +4,10 @@ description: 了解如何将Campaign环境与Twitter集成
 role: User, Admin
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 1baeb8827a0eab4f9487bb5e5afe4d779e00efe4
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 3%
+source-wordcount: '1061'
+ht-degree: 4%
 
 ---
 
@@ -32,9 +32,9 @@ ht-degree: 3%
 
 ## Twitter开发人员帐户 {#dev-account}
 
-要开始使用此集成，您必须注册 [Twitter开发人员帐户](https://developer.twitter.com){target=&quot;_blank&quot;}。
+要开始使用此集成，您必须注册 [Twitter开发人员帐户](https://developer.twitter.com){target="_blank"}.
 
-Campaign使用1.1版本的Twitter API。 要使用它，您需要通过开发人员门户申请提升访问权限。 进一步了解Twitter Impleated Access [本页](https://developer.twitter.com/en/portal/products/elevated){target=&quot;_blank&quot;}。
+Campaign使用1.1版本的Twitter API。 要使用它，您需要通过开发人员门户申请提升访问权限。 进一步了解Twitter Impleated Access [本页](https://developer.twitter.com/en/portal/products/elevated){target="_blank"}.
 
 ## 在Twitter上创建应用程序 {#create-an-app-on-twitter}
 
@@ -111,7 +111,7 @@ Campaign和Twitter之间的同步通过专用的技术工作流进行管理。 �
 
 的 **[!UICONTROL Synchronization of Twitter accounts]** 技术工作流在Adobe Campaign中同步Twitter帐户。 此工作流取回了Twitter关注者列表，以便您可以向他们发送私信。 [了解详情](../send/twitter.md#direct-tw-messages)
 
-默认情况下，此工作流于每星期四早上7:30触发。 您可以使用 **[!UICONTROL Execute pending task(s) now]** 选项，以在您实施此集成时随时启动工作流。  您还可以编辑调度程序以更改工作流触发频率。 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/automating-with-workflows/flow-control-activities/scheduler.html){target=&quot;_blank&quot;}以了解详情。
+默认情况下，此工作流于每星期四早上7:30触发。 您可以使用 **[!UICONTROL Execute pending task(s) now]** 选项，以在您实施此集成时随时启动工作流。  您还可以编辑调度程序以更改工作流触发频率。 请参阅[此页面](../../automation/workflow/scheduler.md)以了解详情。
 
 >[!CAUTION]
 >

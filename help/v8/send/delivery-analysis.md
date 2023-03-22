@@ -4,9 +4,9 @@ description: 了解如何准备和检查投放
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 8f04981e38da79e69afc890311c559f9ffa136f4
+source-git-commit: 51b333492ad50849751208c7549dc00f66140b82
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -47,11 +47,11 @@ ht-degree: 0%
    >
    >运行时，分析会冻结投放（或校样）。 投放（或验证）的任何更改都必须随后进行其他分析，然后才能适用。
 
-分析完成后，窗口的上半部分会指示投放准备是否完成或是否发生任何错误。 列出了所有验证步骤、警告和错误。 彩色图标显示消息类型：
+   分析完成后，窗口的上半部分会指示投放准备是否完成或是否发生任何错误。 列出了所有验证步骤、警告和错误。 彩色图标显示消息类型：
 
-* 蓝色图标表示信息性消息。
-* 黄色图标表示非关键处理错误。
-* 红色图标表示阻止发送投放的严重错误。
+   * 蓝色图标表示信息性消息。
+   * 黄色图标表示非关键处理错误。
+   * 红色图标表示阻止发送投放的严重错误。
 
    ![](assets/delivery-analysis-results.png){width="800" align="left"}
 

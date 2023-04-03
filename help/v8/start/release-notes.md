@@ -6,16 +6,33 @@ role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hidefromtoc: false
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 814f7c81aa4f154fdf289effc82b8d02bdd9b4c6
+source-git-commit: 44743e585119e8cd81a8fcc9b4d667c25c0d438e
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 100%
+source-wordcount: '678'
+ht-degree: 79%
 
 ---
 
 # 最新版本{#latest-release}
 
 此页面列出了&#x200B;**最新 Campaign v8 版本**&#x200B;中的新功能、改进和修复。
+
+## 8.4.5 版 {#release-8-4-5}
+
+_2023年4月3日_
+
+**修补程序**
+
+* 修复了在将多个批准工作流设置为同一计划时可能导致密钥约束错误重复的问题。 (NEO-48968)
+* 修复了NEO-54474(8.4.4)引入的回归问题，该问题导致在数字内容编辑器(DCE)中上传图像时，body标记的样式属性发生更改。 (NEO-57697)
+* 修复了当临时表具有主键，而不是uuid，则在使用CRM连接器导出数据时，可能导致错误的问题。 (NEO-54153)
+* 修复了8.4.1中引入的回归问题，该问题可能导致包导出、通过HTTP FDA和报告中出现错误。 (NEO-57731)
+* 修复了8.3.8中引入的回归问题，该问题可能会阻止具有负ID的投放正确更新投放状态。 (NEO-54675)
+* 修复了使用Big Query连接器导入数据时布尔字段的问题(NEO-49181)
+
+>[!CAUTION]
+>
+> 必须升级客户端控制台。在[此页面](../start/connect.md#upgrade-ac-console)中了解如何升级您的客户端控制台。
 
 ## 8.4.4 版 {#release-8-4-4}
 

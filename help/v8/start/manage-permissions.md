@@ -4,9 +4,10 @@ description: 了解如何向Campaign v8用户授予权限
 feature: Permissions
 role: User, Admin
 level: Beginner
-source-git-commit: b63dc1616bc7ce1387a7bd0590c289b59f11b33f
+exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
+source-git-commit: b96ac3bd2365c548d071e626721d606dd33200b5
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1632'
 ht-degree: 1%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 1%
 
 要添加用户，请执行以下步骤：
 
-1. 在 [Admin Console](https://adminconsole.adobe.com/enterprise){target=&quot;_blank&quot;}主页，选择 **添加用户**.
+1. 在 [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"} 主页，选择 **添加用户**.
 
    ![](assets/add-a-user.png)
 
@@ -34,7 +35,7 @@ ht-degree: 1%
 
 1. 单击&#x200B;**保存**。用户即会添加，并显示在用户列表中。 如果您向用户分配管理员角色或产品配置文件，则用户会收到电子邮件通知。 用户必须单击该链接才能完成其配置文件。
 
-了解有关在Admin Console中创建用户的更多信息，请参阅 [本页](https://helpx.adobe.com/ie/enterprise/using/manage-users-individually.html){target=&quot;_blank&quot;}。
+了解有关在Admin Console中创建用户的更多信息，请参阅 [本页](https://helpx.adobe.com/ie/enterprise/using/manage-users-individually.html){target="_blank"}.
 
 新用户时 [登录到Campaign](connect.md) 使用其Adobe ID，可将其添加到客户端控制台的Campaign运算符列表。 促销活动运算符存储在 **[!UICONTROL Administration > Access management > Operators]** Campaign资源管理器的文件夹。
 
@@ -74,7 +75,7 @@ ht-degree: 1%
 
 #### 在Admin Console中创建产品配置文件{#create-profile-in-admin-console}
 
-1. 连接到 [Admin Console](https://adminconsole.adobe.com/enterprise){target=&quot;_blank&quot;}。
+1. 连接到 [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"}.
 1. 从 **产品和服务** 打开Campaign产品。
 1. 单击 **新建用户档案** 并输入要创建的产品配置文件的名称，其语法完全正确，如所述 [此处](#product-profiles). 在示例中，我们输入：营销活动 —  `<your-instance-name>`  — 审阅人
 
@@ -174,7 +175,7 @@ Adobe Campaign内置 **产品配置文件** 在Adobe启用环境时定义。
 
 您可以使用Admin Console创建用户组并为其分配用户。
 
-用户组是不同用户的集合，这些用户必须获得一组共享权限。 了解如何在 [此部分](https://helpx.adobe.com/ie/enterprise/using/user-groups.html){target=&quot;_blank&quot;}。
+用户组是不同用户的集合，这些用户必须获得一组共享权限。 了解如何在 [此部分](https://helpx.adobe.com/ie/enterprise/using/user-groups.html){target="_blank"}.
 
 您可以将产品配置文件分配给用户组。 因此，该组中的所有用户都将收到相同的产品权限集。
 

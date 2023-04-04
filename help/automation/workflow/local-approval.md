@@ -3,10 +3,11 @@ product: campaign
 title: 本地审批
 description: 本地审批
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 172b6827-ddfc-4c6e-87c9-eb49e73ab3ab
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '642'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -32,7 +33,7 @@ ht-degree: 1%
 
    ![](assets/local_validation_intro_3.png)
 
-## Target批准通知 {#target-approval-notification}
+## 目标审批通知 {#target-approval-notification}
 
 在本例中， **[!UICONTROL Local approval]** 活动位于上游定位和投放之间：
 

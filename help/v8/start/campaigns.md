@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
-workflow-type: ht
-source-wordcount: '837'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '835'
+ht-degree: 98%
 
 ---
 
@@ -109,5 +109,5 @@ Adobe Campaign 提供&#x200B;**响应管理**&#x200B;附加功能，可让您衡
 >
 >从 Campaign v8.3 开始提供此功能。要检查您的版本，请参阅[此部分](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-[](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=zh-Hans){target=&quot;_blank&quot;} 以了解如何配置并使用 Campaign 的响应管理器
+[](../assets/do-not-localize/book.png) 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=zh-Hans){target="_blank"}
 

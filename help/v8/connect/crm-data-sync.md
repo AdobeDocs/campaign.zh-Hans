@@ -216,7 +216,7 @@ Adobe Campaign与CRM之间的数据同步由 **CRM Connector** 工作流活动�
    >
    >删除期限必须与CRM特定限制一致。 例如，对于Salesforce.com，30天前删除的元素将无法恢复。
 
-## 删除CRM中的对象 {#deleting-objects-in-the-crm}
+## 删除 CRM 中的对象 {#deleting-objects-in-the-crm}
 
 要删除CRM上的对象，请指定要删除的远程元素的主键。
 

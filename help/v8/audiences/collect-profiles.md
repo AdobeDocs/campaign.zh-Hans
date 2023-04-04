@@ -7,8 +7,8 @@ level: Beginner
 exl-id: a228c0dc-80f5-4c51-b73b-ced0aa27a65a
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 44%
+source-wordcount: '88'
+ht-degree: 43%
 
 ---
 
@@ -18,4 +18,4 @@ ht-degree: 44%
 
 ![](assets/web-form-page.png)
 
-![](../assets/do-not-localize/book.png)请参阅[ Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=zh-Hans){target=&quot;_blank&quot;}了解如何创建 Web 窗体。
+![](../assets/do-not-localize/book.png)在 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=zh-Hans){target="_blank"}中了解如何创建 Web 窗体。

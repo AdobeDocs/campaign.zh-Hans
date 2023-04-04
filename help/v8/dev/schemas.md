@@ -194,7 +194,7 @@ For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-f
 
 ## 属性（字段） {#attributes--fields-}
 
-利用属性，可定义构成数据对象的字段。 您可以使用 **[!UICONTROL Insert]** 按钮，将空属性模板拖放到XML中光标所在的位置。 在 [此部分](create-schema.md).
+利用属性，可定义构成数据对象的字段。 您可以使用 **[!UICONTROL Insert]** 按钮，将空属性模板拖放到XML中光标所在的位置。 在[此部分](create-schema.md)中了解更多信息。
 
 ![](assets/schemaextension_2.png)
 

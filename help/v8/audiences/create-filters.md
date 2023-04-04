@@ -330,7 +330,7 @@ Adobe Campaign中提供了以下类型的过滤器：
 * 了解如何根据 [本页](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html).
 * 了解如何过滤过去7天内未联系的收件人(位于 [本页](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html).
 * 了解如何恢复可按 [本页](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html).
-* 了解如何在  [本页](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html).
+* 了解如何在  [本页](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=zh-Hans).
 
 
 ### 预定义过滤器的高级参数 {#param-for-data-filters}

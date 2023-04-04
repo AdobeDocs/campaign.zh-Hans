@@ -3,7 +3,8 @@ product: campaign
 title: 数据提取（文件）
 description: 进一步了解数据提取（文件）工作流活动
 feature: Workflows, Data Management Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 8510e879-2862-491f-bc52-ca8f56105932
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 1%

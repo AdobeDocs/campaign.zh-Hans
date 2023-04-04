@@ -7,8 +7,8 @@ level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
 source-git-commit: 6dee08f0f8673e5264f3cb111fe14493980a62fc
 workflow-type: tm+mt
-source-wordcount: '1091'
-ht-degree: 5%
+source-wordcount: '1081'
+ht-degree: 6%
 
 ---
 
@@ -182,13 +182,13 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
    * **[!UICONTROL AWS S3 Account Server]**:服务器的URL，填写如下：   ```<S3bucket name>.s3.amazonaws.com/<s3object path>```
 
-   * **[!UICONTROL AWS access key ID]**:了解如何在 [Amazon文档](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target=&quot;_blank&quot;}。
+   * **[!UICONTROL AWS access key ID]**:了解如何在 [Amazon文档](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
 
-   * **[!UICONTROL Secret access key to AWS]**:了解如何在 [Amazon文档](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/){target=&quot;_blank&quot;}。
+   * **[!UICONTROL Secret access key to AWS]**:了解如何在 [Amazon文档](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/){target="_blank"}.
 
-   * **[!UICONTROL AWS Region]**:详细了解AWS地区 [Amazon文档](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/){target=&quot;_blank&quot;}。
+   * **[!UICONTROL AWS Region]**:详细了解AWS地区 [Amazon文档](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/){target="_blank"}.
 
-   * 的 **[!UICONTROL Use server side encryption]** 复选框允许您以S3加密模式存储文件。 了解如何在 [Amazon文档](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target=&quot;_blank&quot;}。
+   * 的 **[!UICONTROL Use server side encryption]** 复选框允许您以S3加密模式存储文件。 了解如何在 [Amazon文档](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
 
 * **Azure Blob Storage**
 
@@ -198,4 +198,4 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
    * **[!UICONTROL Encryption]**:之间的加密类型 **[!UICONTROL None]** 或 **[!UICONTROL SSL]**.
 
-   * **[!UICONTROL Access key]**:了解如何查找 **[!UICONTROL Access key]** in [Microsoft文档](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal){target=&quot;_blank&quot;}。
+   * **[!UICONTROL Access key]**:了解如何查找 **[!UICONTROL Access key]** in [Microsoft文档](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal){target="_blank"}.

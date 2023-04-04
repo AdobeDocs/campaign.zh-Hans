@@ -5,10 +5,11 @@ description: 了解在Adobe Campaign中实施多维数据集时的最佳实践
 feature: Reporting
 role: Data Engineer
 level: Beginner
-source-git-commit: 8d9b8d3e31362c2d69ec0fc6f16ab375538d7f10
+exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '1417'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -167,7 +168,7 @@ Adobe Campaign还提供了域的枚举，用于显示数据库中所有联系人
 * 要在报表中显示/隐藏的信息。 [了解详情](#configuring-the-display)
 * 显示哪些度量：百分比、总数、小数位数等。 [了解详情](#changing-the-type-of-measure-displayed)
 
-### 显示序列 {#display-sequence}
+### 显示序列  {#display-sequence}
 
 多维数据集中计算的度量通过 **[!UICONTROL Measures]** 按钮。
 

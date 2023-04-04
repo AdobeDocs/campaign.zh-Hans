@@ -6,9 +6,9 @@ role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
-workflow-type: ht
-source-wordcount: '1080'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1042'
+ht-degree: 88%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 100%
 
 根据您的业务性质及运营所在的司法管辖区，您的数据运营可能会受到隐私法规的约束。这些法规通常赋予您的客户请求访问您从他们那里收集的数据的权利，并且这些客户有权请求删除所存储的数据。在整个文档中，这些客户对其个人数据的请求都称为“隐私请求”。
 
-Adobe 为数据控制者提供相应的工具，用于创建和处理与 Campaign 中的存储数据有关的隐私请求。但是，作为数据控制者，您有责任确认发出请求的数据主体的身份，并确认返回给请求者的数据与数据主体相关。请参阅 [Adobe Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans#personal-data){target=&quot;_blank&quot;} 以了解有关个人数据以及管理数据的不同实体的更多信息。
+Adobe 为数据控制者提供相应的工具，用于创建和处理与 Campaign 中的存储数据有关的隐私请求。但是，作为数据控制者，您有责任确认发出请求的数据主体的身份，并确认返回给请求者的数据与数据主体相关。了解有关个人数据以及管理数据的不同实体的更多信息 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans#personal-data){target="_blank"}.
 
 
 要在 Campaign 中管理隐私请求，必须先[定义命名空间](#namespaces)。然后，才能创建和管理隐私请求。要执行隐私请求，请使用 **Adobe Privacy Service** 集成。从 Privacy Service 推送到所有 Adobe Experience Cloud 解决方案的隐私请求由 Campaign 通过专门工作流自动处理。[了解详情](#create-privacy-request)
 
-![](../assets/do-not-localize/speech.png)请参阅 [Adobe Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=zh-Hans#right-access-forgotten){target=&quot;_blank&quot;} 以了解有关&#x200B;**访问权**&#x200B;和&#x200B;**被遗忘权**（删除请求）的信息。
+![](../assets/do-not-localize/speech.png) 了解 **访问权** 和 **被遗忘权** （删除请求） [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=zh-Hans#right-access-forgotten){target="_blank"}.
 
 
 >[!NOTE]
@@ -34,7 +34,7 @@ Adobe 为数据控制者提供相应的工具，用于创建和处理与 Campaig
 
 >[!NOTE]
 >
->要了解有关身份命名空间的更多信息，请参阅 [Adobe Experience Platform文档](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=zh-Hans){target=&quot;_blank&quot;}。
+>要了解有关身份命名空间的更多信息，请参阅 [Adobe Experience Platform文档](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=zh-Hans){target="_blank"}.
 
 当前，Adobe Campaign 不支持从 Experience Platform Identity Namespace Service 导入命名空间。因此，在 Identity Namespace Service 上创建命名空间后，必须在 Adobe Campaign 界面中手动创建相应的命名空间。为此，请执行以下步骤：
 
@@ -46,9 +46,9 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 >For optimal performance, it is recommended to use out-of-the-box namespaces.
 -->
 
-1. 在 [Identity Namespace Service](https://developer.adobe.com/experience-platform-apis/references/identity-service/#tag/Identity-Namespace){target=&quot;_blank&quot;} 上创建命名空间。
+1. 在 [身份命名空间服务](https://developer.adobe.com/experience-platform-apis/references/identity-service/#tag/Identity-Namespace){target="_blank"}.
 
-1. 当可供贵组织使用的[身份命名空间被列出](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target=&quot;_blank&quot;}时，您将获得命名空间的以下详细信息，例如：
+1. When [列出身份命名空间](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target="_blank"} 对于您的组织，您会获得以下详细信息的命名空间，例如：
 
    ```
    {
@@ -95,7 +95,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 借助 **[!DNL Adobe Experience Platform Privacy Service]** 集成，您可以通过单个 JSON API 调用在多解决方案上下文中自动处理隐私请求。Adobe Campaign 会自动通过专用工作流处理从 Privacy Service 推送的请求。
 
-请参阅 [Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans){target=&quot;_blank&quot;} 文档，以了解如何从 Privacy Core Service 创建隐私请求。
+请参阅 [Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans) 文档，以了解如何从隐私核心服务创建隐私请求。{target="_blank"}
 
 每个 **[!DNL Privacy Service]** 任务根据使用的命名空间数在 Adobe Campaign 中拆分为多个隐私请求，一个请求对应一个命名空间。
 
@@ -109,9 +109,9 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 >[!CAUTION]
 >
->若要使用自定义命名空间类型提交请求，请利用 [JSON 方法](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=zh-Hans#json){target=&quot;_blank&quot;}并将命名空间 Id 添加到请求中，或使用 [API 调用](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/privacy-jobs.html?lang=zh-Hans#access-delete){target=&quot;_blank&quot;}发出请求。
+>要使用自定义命名空间类型提交请求，请利用 [JSON方法](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=zh-Hans#json){target="_blank"} and add the namespaceId to the request, or use the [API call](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/privacy-jobs.html?lang=zh-Hans#access-delete){target="_blank"} 来提出请求。
 >
->仅使用[隐私用户界面](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=zh-Hans#request-builder){target=&quot;_blank&quot;}来提交使用标准命名空间类型的请求。
+>仅使用 [隐私用户界面](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=zh-Hans#request-builder){target="_blank"} 使用标准命名空间类型提交请求。
 
 ### 处理请求时搜索的表 {#list-of-tables}
 
@@ -152,10 +152,10 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 **Campaign Classic v7 文档中的相关主题：**
 
-* [隐私和同意](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans){target=&quot;_blank&quot;}
+* [隐私和同意](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans){target="_blank"}
 
-* [隐私管理入门](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=zh-Hans){target=&quot;_blank&quot;}
+* [隐私管理入门](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=zh-Hans){target="_blank"}
 
-* [隐私管理法规](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=zh-Hans#privacy-management-regulations){target=&quot;_blank&quot;}（GDPR、CCPA、PDPA 和 LGPD）
+* [隐私管理法规](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=zh-Hans#privacy-management-regulations){target="_blank"} （GDPR、CCPA、PDPA和LGPD）
 
-* [选择禁用个人信息销售](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-requests/privacy-requests-ccpa.html?lang=zh-Hans){target=&quot;_blank&quot;}（特定于 CCPA）
+* [选择退出个人信息销售](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-requests/privacy-requests-ccpa.html?lang=zh-Hans){target="_blank"} （特定于CCPA）

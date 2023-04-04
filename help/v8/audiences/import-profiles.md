@@ -7,7 +7,7 @@ level: Beginner
 exl-id: b6a5083f-2b5a-4f5b-ad30-d91363752896
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '266'
 ht-degree: 24%
 
 ---
@@ -38,4 +38,4 @@ Adobe Campaign提供了通用导入功能，例如，允许您提取随后将成
 
 ![](assets/new-import-job.png)
 
-有关执行通用导入的详细步骤，请参见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=zh-Hans){target=&quot;_blank&quot;}。
+有关执行通用导入的详细步骤，请参见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=zh-Hans){target="_blank"}.

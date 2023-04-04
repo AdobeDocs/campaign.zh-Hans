@@ -2,10 +2,11 @@
 title: CRM连接器活动
 description: 进一步了解CRM连接器和配置数据同步
 feature: Workflows, Data Management
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 9da636a7-ed57-440f-8166-6982dce0213c
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 1%
+source-wordcount: '102'
+ht-degree: 9%
 
 ---
 
@@ -16,9 +17,9 @@ ht-degree: 1%
 通过此活动，您可以：
 
 * 从CRM导入
-* 导出到CRM
+* 导出到 CRM
 * 导入在CRM中删除的对象
-* 删除CRM中的对象
+* 删除 CRM 中的对象
 
 ![](assets/crm_task_select_op.png)
 
@@ -26,4 +27,4 @@ ht-degree: 1%
 
 ![](assets/crm_task_select_obj.png)
 
-有关Adobe Campaign中CRM连接器的更多信息，请参阅 [此部分](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-crm/crm.html){target=&quot;_blank&quot;}。
+有关Adobe Campaign中CRM连接器的更多信息，请参阅 [此部分](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-crm/crm.html){target="_blank"}.

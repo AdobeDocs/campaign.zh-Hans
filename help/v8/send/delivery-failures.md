@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
 source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
 workflow-type: tm+mt
-source-wordcount: '3009'
-ht-degree: 11%
+source-wordcount: '3005'
+ht-degree: 12%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 11%
 
 * **同步错误**:MTA可确定退件类型和资格条件，并将该信息发回至Campaign。 中的退回资格 **[!UICONTROL Delivery log qualification]** 表未用于 **同步** 投放失败错误消息。
 
-* **异步错误**:Campaign用于确定异步投放失败的规则列在 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** 节点。 异步退回由inMail流程通过 **[!UICONTROL Inbound email]** 规则。 有关更多信息，请参阅 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target=&quot;_blank&quot;}。
+* **异步错误**:Campaign用于确定异步投放失败的规则列在 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** 节点。 异步退回由inMail流程通过 **[!UICONTROL Inbound email]** 规则。 有关更多信息，请参阅 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target="_blank"}.
 
 <!--NO LONGER WITH MOMENTUM - The message returned by the remote server on the first occurrence of this error type is displayed in the **[!UICONTROL First text]** column of the **[!UICONTROL Audit]** tab.
 
@@ -111,7 +111,7 @@ Campaign投放中的有效期设置限制为 **3.5天或以下**. 对于投放�
 
 消息在 MTA 队列中停留 3.5 天且投放失败后，该消息将超时，在投放日志中的状态将从 **[!UICONTROL Sent]** 更新为 **[!UICONTROL Failed]**。
 
-有关有效期的更多信息，请参阅 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target=&quot;_blank&quot;}。
+有关有效期的更多信息，请参阅 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.
 
 
 ## 电子邮件错误类型 {#email-error-types}
@@ -133,7 +133,7 @@ Campaign投放中的有效期设置限制为 **3.5天或以下**. 对于投放�
    <td> 链接到地址的帐户不再处于活动状态。 当互联网访问提供商(IAP)检测到长时间不活动时，它可以关闭用户的帐户。 然后，将无法投放到用户地址。 如果帐户因6个月不活动而暂时禁用，并且仍可以激活，则将分配状态“有错误”，并将重试该帐户，直到错误计数达到5为止。 如果错误表示该帐户已永久停用，则会直接将其设置为隔离。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 隔离中的地址 </td> 
+   <td> 隔离地址 </td> 
    <td> 硬 </td> 
    <td> 9 </td> 
    <td> 地址被隔离。<br /> </td> 
@@ -145,31 +145,31 @@ Campaign投放中的有效期设置限制为 **3.5天或以下**. 对于投放�
    <td> 收件人的地址未提供。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 质量差的地址 </td> 
+   <td> 低质量地址 </td> 
    <td> 已忽略 </td> 
    <td> 14 </td> 
    <td> 此地址的质量评级过低。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 列入阻止列表地址 </td> 
+   <td> 已列入阻止列表的地址 </td> 
    <td> 硬 </td> 
    <td> 8 </td> 
    <td> 发送时已将地阻止列表址添加到。 此状态用于将数据从外部列表和外部系统导入Adobe Campaign隔离列表。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 控制地址 </td> 
+   <td> 对照地址 </td> 
    <td> 已忽略 </td> 
    <td> 127 </td> 
    <td> 收件人的地址是控制组的一部分。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 两次 </td> 
+   <td> 双精度型 </td> 
    <td> 已忽略 </td> 
    <td> 10 </td> 
    <td> 此投放中已包含收件人的地址。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 已忽略错误 </td> 
+   <td> 错误已忽略 </td> 
    <td> 已忽略 </td> 
    <td> 25 </td> 
    <td> 地址在允许列表上。 因此，该错误会被忽略，并将发送电子邮件。<br /> </td> 
@@ -181,7 +181,7 @@ Campaign投放中的有效期设置限制为 **3.5天或以下**. 对于投放�
    <td> 收件人被“仲裁”类型的活动类型规则排除。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 由SQL规则排除 </td> 
+   <td> 由 SQL 规则排除 </td> 
    <td> 已忽略 </td> 
    <td> 11 </td> 
    <td> 收件人被“SQL”类型的营销活动分类规则排除。<br /> </td> 
@@ -211,7 +211,7 @@ Campaign投放中的有效期设置限制为 **3.5天或以下**. 对于投放�
    <td> 该地址正在进行鉴别，因为错误数尚未递增。 当服务器发送新的错误消息时，会发生此类错误： 这可能是一个孤立的错误，但如果再次发生，则错误计数会增加，从而提醒技术团队。然后，他们可以执行消息分析，并通过 <span class="uicontrol">管理</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">无法交付项管理</span> 树结构中的节点。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 不符合选件的资格 </td> 
+   <td> 不符合优惠资格 </td> 
    <td> 已忽略 </td> 
    <td> 16 </td> 
    <td> 收件人不符合投放中选件的条件。<br /> </td> 
@@ -223,7 +223,7 @@ Campaign投放中的有效期设置限制为 **3.5天或以下**. 对于投放�
    <td> 由于安全反馈为垃圾邮件报告，该地址已置于隔离中。 根据错误，将重试该地址，直到错误计数达到5为止，或直接将其发送到隔离。<br /> </td> 
   </tr> 
   <tr> 
-   <td> Target大小有限 </td> 
+   <td> 目标大小受限 </td> 
    <td> 已忽略 </td> 
    <td> 17 </td> 
    <td> 已达到收件人的最大投放大小。<br /> </td> 
@@ -232,7 +232,7 @@ Campaign投放中的有效期设置限制为 **3.5天或以下**. 对于投放�
    <td> 不合格地址 </td> 
    <td> 已忽略 </td> 
    <td> 15 </td> 
-   <td> 邮政地址不符合条件。<br /> </td> 
+   <td> 邮寄地址不合格.<br /> </td> 
   </tr> 
   <tr> 
    <td> 不可到达 </td> 

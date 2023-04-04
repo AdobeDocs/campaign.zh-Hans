@@ -3,7 +3,8 @@ product: campaign
 title: 投放控制
 description: 了解有关投放控制工作流活动的更多信息
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 09fe638d-5e1c-49d1-9196-6300c1e56703
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 5%

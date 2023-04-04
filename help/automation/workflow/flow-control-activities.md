@@ -3,7 +3,8 @@ product: campaign
 title: 工作流中的流量控制活动
 description: 流量控制活动列表
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 904f2d94-bd3e-4c46-aeab-2ef77a7bdeee
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 0%
@@ -26,4 +27,4 @@ ht-degree: 0%
 * **[测试](test.md)**:根据测试结果启用过渡。
 * **[时间约束](time-constraint.md)**:允许您暂停设置的时间段的任务。
 * **[等待](wait.md)**:在指定的时间限制后启用叫客过渡。
-<!--* **Task**: lets you configure task execution. Refer to the [Task](task.md) section.-->
+   <!--* **Task**: lets you configure task execution. Refer to the [Task](task.md) section.-->

@@ -3,7 +3,8 @@ product: campaign
 title: 工作流中的事件活动
 description: 工作流中的事件活动列表
 feature: Workflows, Data Management
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 0e8ab370-06bc-431e-a685-310ac54a1246
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%
@@ -22,5 +23,3 @@ ht-degree: 0%
 * **[入站电子邮件](inbound-emails.md)**:恢复和处理电子邮件。
 * **[入站短信](inbound-sms.md)**:恢复和处理短信
 * **[Web下载](web-download.md)**:从web下载文件。
-
-

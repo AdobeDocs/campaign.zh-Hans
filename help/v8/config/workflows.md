@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
 source-git-commit: b323dbf9504e39cca78f7082089b864544ee1633
 workflow-type: tm+mt
-source-wordcount: '1574'
-ht-degree: 3%
+source-wordcount: '1570'
+ht-degree: 4%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 3%
 
 在以下页面中了解有关工作流用户界面和执行的更多信息：
 
-* [工作流入门](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html)
+* [工作流入门](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)
 
 * [工作流最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html)
 
@@ -152,9 +152,11 @@ ht-degree: 3%
 
 Campaign v7文档中的以下页面：
 
-* [自动创建、编辑和发布内容](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/content-management/automating-via-workflows.html){target=&quot;_blank&quot;}了解如何使用Campaign内容管理加载项自动创建和交付内容块。
+* [自动创建、编辑和发布内容](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/content-management/automating-via-workflows.html){target="_blank"}
+了解如何使用Campaign内容管理加载项自动创建和交付内容块。
 
-* [A/B测试](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/a-b-testing/use-case/a-b-testing-use-case.html){target=&quot;_blank&quot;}了解如何通过定位工作流比较两个电子邮件投放内容。 消息和文本在两个投放中都相同：只有布局发生更改。 目标群体分为三个：两个测试组和其余群体。 投放的不同版本会发送到每个测试组。
+* [A/B测试](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/a-b-testing/use-case/a-b-testing-use-case.html){target="_blank"}
+了解如何通过定位工作流比较两个电子邮件投放内容。 消息和文本在两个投放中都相同：只有布局发生更改。 目标群体分为三个：两个测试组和其余群体。 投放的不同版本会发送到每个测试组。
 
 ### 监测 {#monitoring}
 
@@ -179,7 +181,7 @@ Campaign v7文档中的以下页面：
 * [创建摘要列表](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/create-a-summary-list.html)
 了解如何创建工作流，在收集文件并进行多项扩充后，该工作流允许您创建摘要列表。 此示例基于在商店中购物的联系人列表。
 
-* [丰富数据](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/enrich-data.html)
+* [丰富数据](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/enrich-data.html?lang=zh-Hans)
 了解如何根据参与最新竞争的用户档案的得分向其发送个性化投放。
 
 * [使用聚合](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html)

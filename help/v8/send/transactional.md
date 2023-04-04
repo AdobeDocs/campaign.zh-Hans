@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1519'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 事务型消息传递（消息中心）是一个Campaign模块，用于管理触发器消息。 这些通知是从信息系统触发的事件生成的，可以是：发票、订单确认、发运确认、密码更改、产品不可用通知、帐户对帐单、网站帐户创建等。
 
-![](../assets/do-not-localize/speech.png)  作为托管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support){target=&quot;_blank&quot;}在您的环境中配置Campaign事务型消息传递。
+![](../assets/do-not-localize/speech.png)  作为托管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support){target="_blank"} ，以在您的环境中配置Campaign事务型消息传递。
 
 事务型消息用于发送：
 
@@ -43,7 +43,7 @@ Adobe Campaign允许您向将产品添加到购物车的客户发送通知电子
 1. [测试消息](#test-message-template).
 1. [发布消息模板](#publish-message-template).
 
-设计并发布事务型消息模板后，如果触发了相应的事件，则相关数据将通过PushEvent和PushEvents发送到Campaign [SOAP方法](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html){target=&quot;_blank&quot;}，则投放会发送到目标收件人。
+设计并发布事务型消息模板后，如果触发了相应的事件，则相关数据将通过PushEvent和PushEvents发送到Campaign [SOAP方法](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html){target="_blank"}，则会将投放发送到目标收件人。
 
 ## 创建事件类型 {#create-event-types}
 
@@ -73,7 +73,7 @@ When [创建消息模板](#create-message-template)，则将选择与要发送�
 
 >[!NOTE]
 >
->了解有关 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target=&quot;_blank&quot;}。
+>了解有关 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target="_blank"}.
 
 ## 定义事务型消息模板 {#create-message-template}
 
@@ -199,7 +199,7 @@ This information enables you to personalize message content using personalizatio
 
 发送校样的过程与任何投放的过程相同。
 
-![](../assets/do-not-localize/book.png) 在中了解有关校样的更多信息 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html#sending-a-proof){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) 在中了解有关校样的更多信息 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html#sending-a-proof){target="_blank"}
 
 但是，要发送事务型消息的校样，您需要执行以下操作：
 

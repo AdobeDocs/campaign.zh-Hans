@@ -2,9 +2,10 @@
 product: campaign
 title: 技术说明 — Adobe Campaign - Apache版本安全更新
 description: Adobe Campaign - Apache版本安全更新
-source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
+exl-id: 68e42fe4-7fb6-4b53-9f39-e77374e3753d
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 Adobe Campaign可与第三方工具配合使用，并且会定期更新兼容性，以仅实施受支持的版本，并从最新的修复和改进中受益。
 
-Adobe Campaign包含Apache Tomcat，它通过HTTP作为应用程序服务器中的入口点，并与Apache Web服务器集成。 Apache Software Foundation已发布Apache HTTP Server 2.4.53。此版本解决了可能允许远程攻击者控制受影响系统的漏洞。 在 [Apache 2.4.53公告](https://downloads.apache.org/httpd/Announcement2.4.html){target=&quot;_blank&quot;}。
+Adobe Campaign包含Apache Tomcat，它通过HTTP作为应用程序服务器中的入口点，并与Apache Web服务器集成。 Apache Software Foundation已发布Apache HTTP Server 2.4.53。此版本解决了可能允许远程攻击者控制受影响系统的漏洞。 在 [Apache 2.4.53公告](https://downloads.apache.org/httpd/Announcement2.4.html){target="_blank"}.
 
 Adobe Campaign团队将通过 **2022年6月15日** 以缓解此Apache漏洞并使实例环境更安全。 此升级适用于在易受攻击的Apache HTTP Server版本上运行的所有Campaign Classicv7托管Cloud Services客户、Campaign v8和Campaign Standard客户。 如果您受到影响，Adobe已与您联系，以告知您此升级。
 

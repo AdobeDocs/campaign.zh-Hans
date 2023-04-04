@@ -6,7 +6,7 @@ level: Beginner, Intermediate, Experienced
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '545'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Adobe Campaign利用数据模式：
 
 * 通过界面，使用 **新建字段** 助理
 
-   ![](../assets/do-not-localize/book.png) 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=en#configuring-campaign-classic){target=&quot;_blank&quot;}
+   ![](../assets/do-not-localize/book.png) 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=en#configuring-campaign-classic){target="_blank"}
 
 * 以编程方式，通过扩展模式
 
@@ -46,9 +46,9 @@ Adobe Campaign利用数据模式：
 
 **相关主题**
 
-![](../assets/do-not-localize/book.png) 中的模式版本示例 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#configuring-campaign-classic){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) 中的模式版本示例 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#configuring-campaign-classic){target="_blank"}
 
-![](../assets/do-not-localize/book.png) 用例：将字段链接到 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#uc-link){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) 用例：将字段链接到 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#uc-link){target="_blank"}
 
 
 ## 修改输入表单
@@ -59,11 +59,11 @@ Adobe Campaign利用数据模式：
 
 ## 自定义功能板{#gs-custom-dashboards}
 
-Adobe Campaign界面使用许多Web应用程序来访问、管理收件人、投放、营销活动、库存等内容并与其进行交互。 在界面中，它们以功能板的形式显示，且仅包含一个页面。
+Adobe Campaign界面使用许多Web应用程序来访问、管理收件人、投放、营销活动、库存等内容并与之进行交互。 在界面中，它们以功能板的形式显示，且仅包含一个页面。
 
 现成的Web应用程序存储在“管理”>“配置”>“Web应用程序”节点中。
 
-![](../assets/do-not-localize/book.png) 了解如何在Campaign中创建概述页面(位于 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=en#creating-a-single-page-web-application){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) 了解如何在Campaign中创建概述页面(位于 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=en#creating-a-single-page-web-application){target="_blank"}
 
 
 ## 自定义列表和创建过滤器 {#gs-lists-and-filters}
@@ -72,16 +72,16 @@ Adobe Campaign界面使用许多Web应用程序来访问、管理收件人、投
 
 营销活动列表附带预定义过滤器，以促进导航和数据可视化。
 
-![](../assets/do-not-localize/book.png) 了解有关 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/filtering-options.html?lang=en#about-filtering){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) 了解有关 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/filtering-options.html?lang=en#about-filtering){target="_blank"}
 
 
 ### 从资源管理器访问数据
 
 在Adobe Campaign Explorer树中导航时，数据库中包含的数据将显示在列表中。 您可以过滤这些列表、运行搜索、添加信息、过滤和排序数据。
 
-![](../assets/do-not-localize/book.png) 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=en#getting-started){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=en#getting-started){target="_blank"}
 
 
 您可以对这些列表应用过滤器，以仅显示运算符所需的数据。 然后，可以对过滤的数据执行操作。 过滤器配置允许您从列表中动态选择数据。 如果数据被修改，则会更新过滤的数据。
 
-![](../assets/do-not-localize/book.png) 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/creating-filters.html?lang=en#typology-of-available-filters){target=&quot;_blank&quot;}
+![](../assets/do-not-localize/book.png) 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/creating-filters.html?lang=en#typology-of-available-filters){target="_blank"}

@@ -3,10 +3,11 @@ product: campaign
 title: SQL 代码和 JavaScript 代码
 description: 了解有关SQL和JavaScript代码工作流活动的更多信息
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 8c385847-a320-4cd9-9048-2bf9daf2ee07
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 7%
+ht-degree: 10%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 7%
 
 
 
-## SQL代码 {#sql-code}
+## SQL 代码 {#sql-code}
 
 安 **[!UICONTROL SQL code]** 活动执行SQL脚本。 脚本是JST模板。
 
@@ -37,13 +38,13 @@ ht-degree: 7%
 
 ### 执行延迟 {#exec-delay}
 
-从20.2版本开始，向 **[!UICONTROL JavaScript code]** 和 **[!UICONTROL Advanced JavaScript code]** 活动。 默认情况下，执行阶段不能超过1小时。 在此延迟后，进程将中止，并显示错误消息，并且活动执行将失败。
+从20.2版本开始，向 **[!UICONTROL JavaScript code]** 和 **[!UICONTROL Advanced JavaScript code]** 活动。 默认情况下，执行阶段不能超过1小时。 在此延迟后，进程将中止，并显示错误消息，活动执行将失败。
 
 您可以在 **[!UICONTROL Stop execution after]** 字段。
 
 要忽略此限制，您需要将值设置为 **0**.
 
-### JavaScript代码 {#js-code-desc}
+### JavaScript 代码 {#js-code-desc}
 
 ![](assets/javascript_code.png)
 
@@ -51,7 +52,7 @@ ht-degree: 7%
 
 * **[!UICONTROL Process errors]**:请参阅 [处理错误](monitor-workflow-execution.md#processing-errors).
 
-### 高级JavaScript代码 {#adv-js-code-desc}
+### 高级 JavaScript 代码 {#adv-js-code-desc}
 
 ![](assets/advanced_javascript_code.png)
 

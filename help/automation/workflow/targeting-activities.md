@@ -3,7 +3,8 @@ product: campaign
 title: 关于定位活动
 description: 关于定位活动
 feature: Workflows, Audiences, Targeting Activity
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+exl-id: e89c9f20-fc10-421f-9c14-2e33be562a8d
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 1%
@@ -34,4 +35,3 @@ ht-degree: 1%
 * **[订阅服务](subscription-services.md)**:允许管理target信息服务订阅和退订。
 * **[并集](union.md)**:允许您将多个活动的结果分组到单个目标中。
 * **[更新数据](update-data.md)**:允许您大量更新数据库中的数据。
-

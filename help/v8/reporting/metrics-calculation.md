@@ -2,10 +2,11 @@
 title: 内置报表量度计算
 description: 内置报表量度计算
 feature: Reporting
-source-git-commit: 80e5efc5998c67ce576e9f8208fab9543fc70d29
+exl-id: ad8e9f9c-df24-4a11-b8df-4b31dd54911f
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '2978'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -25,19 +26,19 @@ ht-degree: 4%
  <tbody> 
   <tr> 
    <td> 打开<br /> </td> 
-   <td> @opens<br /> </td> 
+   <td> @打开次数<br /> </td> 
    <td> URL主键@totalClicks等于1的所有值总和。<br /> </td> 
    <td> sum(Iif([@url-id]=1, @totalClicks, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 点击量<br /> </td> 
-   <td> @clicks<br /> </td> 
+   <td> 单击次数<br /> </td> 
+   <td> @点击次数<br /> </td> 
    <td> URL类型等@totalClicks于“电子邮件点击”的所有URL总和。<br /> </td> 
    <td> sum(Iif([url/@type]=1, @totalClicks, 0))<br /> </td> 
   </tr> 
   <tr> 
    <td> 交易<br /> </td> 
-   <td> @transactions<br /> </td> 
+   <td> @交易<br /> </td> 
    <td> URL类型@totalClicks等于“Transaction”的所有URL总和。<br /> </td> 
    <td> sum(Iif([url/@type]=5, @totalClicks, 0))<br /> </td> 
   </tr> 
@@ -394,7 +395,7 @@ ht-degree: 4%
    <td> Sum(@visitors)<br /> </td> 
   </tr> 
   <tr> 
-   <td> 查看的页面<br /> </td> 
+   <td> 已查看的页面<br /> </td> 
    <td> @totalPages / @days<br /> </td> 
    <td> 所有投放中每个操作系统投放链接的每日平均点击次数。<br /> </td> 
    <td> Sum(@pages)<br /> </td> 
@@ -539,7 +540,7 @@ ht-degree: 4%
    <td> count(Iif([url/@type]=6, @id, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 前向估计<br /> </td> 
+   <td> 转发数量估计<br /> </td> 
    <td> @forward<br /> </td> 
    <td> 独特访客数量与点击了电子邮件至少一次的独特收件人数量之间的差异。<br /> </td> 
    <td> @personClick - @recipientClick<br /> </td> 
@@ -563,7 +564,7 @@ ht-degree: 4%
    <td> Countdistinct([@broadLog-id])<br /> </td> 
   </tr> 
   <tr> 
-   <td> 点击量<br /> </td> 
+   <td> 单击次数<br /> </td> 
    <td> @recipientClick<br /> </td> 
    <td> URL类型等于“电@broadLog-ids点击”的非重复计数。 <br /> </td> 
    <td> Countdistinct(Iif([url/@type]=1, @broadLog-id, 0))<br /> </td> 
@@ -581,7 +582,7 @@ ht-degree: 4%
    <td> Countdistinct(Iif([url/@type]=1, @source-id, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 累计点击量<br /> </td> 
+   <td> 累计点击次数<br /> </td> 
    <td> @totalRecipientClick<br /> </td> 
    <td> URL类@ids等于“电子邮件点击”的所有计数。<br /> </td> 
    <td> count(Iif([url/@type]=1, @id, 0))<br /> </td> 
@@ -700,31 +701,31 @@ ht-degree: 4%
  </thead> 
  <tbody> 
   <tr> 
-   <td> 反应性<br /> </td> 
+   <td> 反应度<br /> </td> 
    <td> @reactivity<br /> </td> 
    <td> 点击了至少一次投放的目标收件人数量与至少打开了一次投放的预计目标收件人数量的比率。<br /> </td> 
    <td> 百分比([指标/@recipientClick], [指标/@estimatedRecipientOpen])<br /> </td> 
   </tr> 
   <tr> 
-   <td> 非重复点击<br /> </td> 
+   <td> 不同的点击次数<br /> </td> 
    <td> @distinctClicks<br /> </td> 
    <td> 至少点击一次投放的独特访客数量与成功投放的消息数量之比。<br /> </td> 
    <td> 百分比([指标/@personClick], [指标/@success])<br /> </td> 
   </tr> 
   <tr> 
-   <td> 累计点击量<br /> </td> 
+   <td> 累计点击次数<br /> </td> 
    <td> @totalClicks<br /> </td> 
    <td> 目标收件人点击总次数与成功投放消息数量之比。<br /> </td> 
    <td> 百分比([指标/@totalRecipientClick], [指标/@success])<br /> </td> 
   </tr> 
   <tr> 
-   <td> 点击量<br /> </td> 
+   <td> 单击次数<br /> </td> 
    <td> @_click<br /> </td> 
    <td> URL主键与@totalClicks 1不同的所有项计数<br /> </td> 
    <td> count(Iif([@url-id] != 1, @totalClicks, 0)<br /> </td> 
   </tr> 
   <tr> 
-   <td> 点击量 (%)<br /> </td> 
+   <td> 单击次数 (%)<br /> </td> 
    <td> -<br /> </td> 
    <td> 点击次数与累计点击总数的百分比。<br /> </td> 
    <td> 百分比(@_click, @_total)<br /> </td> 
@@ -807,19 +808,19 @@ ht-degree: 4%
  <tbody> 
   <tr> 
    <td> 交易<br /> </td> 
-   <td> @transactions<br /> </td> 
+   <td> @交易<br /> </td> 
    <td> URL类型@totalClicks为“Transaction”的所有URL总和。<br /> </td> 
    <td> sum(Iif([url/@type] = 5, @totalClicks, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 点击量<br /> </td> 
-   <td> @clicks<br /> </td> 
+   <td> 单击次数<br /> </td> 
+   <td> @点击次数<br /> </td> 
    <td> URL类型等于“电@totalClicks单击”的所有URL总和。<br /> </td> 
    <td> sum(Iif([url/@type] = 1, @totalClicks, 0))<br /> </td> 
   </tr> 
   <tr> 
    <td> 打开<br /> </td> 
-   <td> @opens<br /> </td> 
+   <td> @打开次数<br /> </td> 
    <td> URL主键@totalClicks等于1的所有总和。<br /> </td> 
    <td> sum(Iif([@url-id] = 1, @totalClicks, 0))<br /> </td> 
   </tr> 
@@ -847,7 +848,7 @@ ht-degree: 4%
    <td> @prepared + @error + @success<br /> </td> 
   </tr> 
   <tr> 
-   <td> 已投放<br /> </td> 
+   <td> 已送达<br /> </td> 
    <td> @success<br /> </td> 
    <td> 成功处理的消息数。<br /> </td> 
    <td> 指标/@success<br /> </td> 
@@ -871,7 +872,7 @@ ht-degree: 4%
    <td> Countdistinct([@broadLog-id])<br /> </td> 
   </tr> 
   <tr> 
-   <td> 点击量<br /> </td> 
+   <td> 单击次数<br /> </td> 
    <td> @personClick<br /> </td> 
    <td> URL类别@source-ids为“电子邮件点击”的总数。 <br /> </td> 
    <td> Countdistinct(Iif([url/@type]=1, @source-id, 0)) <br /> </td> 
@@ -885,7 +886,7 @@ ht-degree: 4%
  </tbody> 
 </table>
 
-## 打开次数的划分 {#breakdown-of-opens-1}
+## 打开的细分 {#breakdown-of-opens-1}
 
 此报表基于 **投放** (nms:delivery)和 **跟踪日志** (nms:trackingLogRcp)表。
 

@@ -3,10 +3,11 @@ product: campaign
 title: 重复数据删除
 description: 了解有关重复数据删除工作流活动的更多信息
 feature: Workflows, Targeting Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: f79a979d-bd1d-4a86-8844-563886692941
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '1089'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -32,7 +33,7 @@ ht-degree: 10%
 
 所选主记录将转发数据，而不会将字段数据与重复行中的其他相关数据合并。
 
-补码：
+补充:
 
 | 日期 | 名字 | 姓氏 | 电子邮件 | 手机 | 电话 |
 -----|------------|-----------|-------|--------------|------

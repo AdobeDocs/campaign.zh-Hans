@@ -3,7 +3,8 @@ product: campaign
 title: 测试
 description: 进一步了解测试工作流活动
 feature: Workflows
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 0d4d13f6-7128-44d3-ad5c-4ed02257ee64
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 4%

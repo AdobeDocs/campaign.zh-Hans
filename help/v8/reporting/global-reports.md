@@ -2,7 +2,8 @@
 title: Adobe Campaign全球报告
 description: 了解如何访问和使用全局报告
 feature: Reporting, Monitoring
-source-git-commit: 60db4c2e8cd280845ddd0176bd10dc1b7edbb767
+exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '1765'
 ht-degree: 4%
@@ -291,7 +292,7 @@ The following indicators are used:
 * **[!UICONTROL Clicks]** :与成功处理的消息数量相比，点击投放至少一次的人数百分比。
 * **[!UICONTROL Unsubscription]** :退订链接的点击次数与成功处理消息数的百分比。
 
-## 打开次数的划分 {#breakdown-of-opens}
+## 打开的细分 {#breakdown-of-opens}
 
 此报表显示了在相关时段内，操作系统、设备和浏览器的打开次数的细分情况。 对于每个类别，使用两个图表。 第一个报表显示有关计算机和移动设备上打开次数的统计信息。 第二个显示仅与移动设备上的打开次数相关的统计信息。
 

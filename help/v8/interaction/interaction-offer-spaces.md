@@ -7,7 +7,7 @@ level: Beginner
 exl-id: c116d86a-d3e2-47e3-a641-e2d7c8cc575c
 source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '838'
 ht-degree: 3%
 
 ---
@@ -156,4 +156,4 @@ HTML渲染是通过渲染函数创建的。 呈现函数中定义的字段序列
 
 当上下文被限制为空格时，预览可以忽略这些上下文。 当交互架构已扩展为使用集客渠道添加空间中引用的字段时，便属于这种情况。
 
-![](../assets/do-not-localize/book.png)  有关更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target=&quot;_blank&quot;}。
+![](../assets/do-not-localize/book.png)  有关更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target="_blank"}.

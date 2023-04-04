@@ -3,7 +3,8 @@ product: campaign
 title: 编辑架构
 description: 了解有关编辑模式工作流活动的更多信息
 feature: Workflows, Targeting Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 16fb1aa5-cf99-4461-a1a4-7a68d97e2a74
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 3%

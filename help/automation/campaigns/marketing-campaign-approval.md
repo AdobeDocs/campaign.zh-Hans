@@ -190,7 +190,7 @@ ht-degree: 2%
 操作员在将内容提交给营销活动负责人之前可以添加评论。
 通知消息允许审阅人批准或拒绝内容。
 
-#### 外部内容批准 {#external-content-approval}
+#### 外部内容审批 {#external-content-approval}
 
 利用此选项，可定义负责批准投放渲染的外部操作员，如品牌通信一致性、费率等。 当 **[!UICONTROL External content approval]** 在“批准设置”窗口中选择“选项”，在内容批准和将通知发送给营销活动负责人之间添加多个批准步骤：
 

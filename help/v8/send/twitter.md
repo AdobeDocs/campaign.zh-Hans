@@ -6,8 +6,8 @@ level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
 source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '806'
+ht-degree: 4%
 
 ---
 
@@ -124,7 +124,7 @@ Adobe Campaign **社交营销** 模块，让您可以通过Twitter与客户和�
 
    ![](assets/tw-dm-content.png)
 
-   个性化字段的使用方式与电子邮件投放相同，例如，在消息正文中添加关注者的名称。 在 [此部分](../send/personalize.md).
+   个性化字段的使用方式与电子邮件投放相同，例如，在消息正文中添加关注者的名称。 在[此部分](../send/personalize.md)中了解更多信息。
 
 1. 预览消息
 

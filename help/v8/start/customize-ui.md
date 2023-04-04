@@ -7,7 +7,7 @@ level: Beginner, Intermediate, Experienced
 exl-id: a11d3895-00f1-43d0-b0f7-330fce9fd56b
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '214'
 ht-degree: 15%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 15%
 
 ## 自定义列表{#customize-lists}
 
-了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=en){target=&quot;_blank&quot;}。
+了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=en){target="_blank"}.
 
 了解如何在 [本页](../audiences/create-filters.md).
 
@@ -37,7 +37,7 @@ Campaign管理员通过 **[!UICONTROL Administration > Platform > Enumerations]*
 
 对于 **打开** 枚举时，用户还可以在值中输入第一个字符，并显示可能的值。
 
-了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target=&quot;_blank&quot;}。
+了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target="_blank"}.
 
 
 ## 默认单位 {#default-units}

@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 7a710960-7e41-4462-bd5e-18e874aa46f8
 source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1312'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ Adobe Campaign交互模块提出了两种类型的交互：
 
 >[!NOTE]
 >
->安装包时， **long** 类型字段 **nms：建议** 表（如命题标识）成为 **int64** 类型字段。 此类数据在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html?lang=en#mapping-the-types-of-adobe-campaign-dbms-data){target=&quot;_blank&quot;}。
+>安装包时， **long** 类型字段 **nms：建议** 表（如命题标识）成为 **int64** 类型字段。 此类数据在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html?lang=en#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}.
 
 在每个实例上配置数据保留持续时间(通过 **[!UICONTROL Data purge]** )。 在执行实例中，此时段必须对应于类型学规则（滑动周期）和要计算的资格规则所必需的历史深度。
 

@@ -4,9 +4,9 @@ description: Campaign v8 帮助中心
 title: Adobe Campaign v8 产品文档
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
 source-git-commit: 9bea7904ea4507083d2cf45193877e7a2539d0c7
-workflow-type: ht
-source-wordcount: '147'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 82%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## 新增功能
 
-* **[[!DNL Adobe Campaign] 自动化指南](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=zh-Hans){target=&quot;_blank&quot;}** - 了解如何构建工作流和营销活动
+* **[[!DNL Adobe Campaign] 自动化指南](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=zh-Hans){target="_blank"}**  — 了解如何构建工作流和营销策划
 
 * **[什么是 [!DNL Adobe Campaign]](start/get-started.md)** - 主要功能和用例
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 * **[从 v7 到 v8](start/v7-to-v8.md)** - 从 Campaign Classic v7 到 v8？了解主要差异
 
-* **[Campaign v8 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans){target=&quot;_blank&quot;}** - 使用 Campaign 控制面板，自行执行重要的管理员任务
+* **[控制面板Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans){target="_blank"}**  — 通过Campaign控制面板，自行执行关键管理员任务
 
 * **[发行说明](start/release-notes.md)** - 了解最新功能和改进功能
 
@@ -72,4 +72,4 @@ ht-degree: 100%
 * [测量和跟踪](reporting/gs-reporting.md)
 * [与其他解决方案配合使用](connect/integration.md)
 * [Campaign v8 常见问题解答](start/campaign-faq.md)
-* [Adobe Campaign v8 产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target=&quot;_blank&quot;}
+* [Adobe Campaign v8 产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}

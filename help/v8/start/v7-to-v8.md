@@ -7,8 +7,8 @@ level: Beginner, Intermediate, Experienced
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
 source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 100%
+source-wordcount: '648'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 Adobe Campaign v8 是以&#x200B;**托管云服务**&#x200B;的形式提供。
 
-Adobe Campaign Managed Cloud Services 提供了可用于进行跨渠道客户体验设计的云服务平台，并为可视化的活动编排、实时互动管理和跨渠道执行提供了环境。在[产品描述页面](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target=&quot;_blank&quot;}中了解关于 Campaign Managed Cloud Services 的更多信息。
+Adobe Campaign Managed Cloud Services 提供了可用于进行跨渠道客户体验设计的云服务平台，并为可视化的活动编排、实时互动管理和跨渠道执行提供了环境。在 [产品描述页面](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 这一新产品将同类最佳服务与主动监督和及时发送警报的功能融合在一起，将重心放在三个方面：
 

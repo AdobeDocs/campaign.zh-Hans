@@ -3,13 +3,13 @@ product: campaign
 title: 向列表发送报告
 description: 了解如何使用工作流将报表发送到列表
 feature: Workflows
-source-git-commit: 4c3caa8e31c2076d32a03a8778a28edce50cde63
+exl-id: 5bc576d0-cab7-4d26-a3a5-91982a00e356
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 3%
 
 ---
-
 
 # 向列表发送报告{#send-a-report-to-a-list}
 

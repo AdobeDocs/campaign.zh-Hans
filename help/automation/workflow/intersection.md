@@ -3,10 +3,11 @@ product: campaign
 title: 交集
 description: 交集
 feature: Workflows, Targeting Activity
-source-git-commit: 2b1dec4b9c456df4dfcebfe10d18e0ab01599275
+exl-id: 12777107-5ccc-4f19-9dcd-8f6cade3ee98
+source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '398'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 安 **交集**-type活动从接收目标的交集创建目标。
 
-利用交集，可仅提取所有集客活动结果共有的群体。 将创建目标，并收到所有结果：因此，在执行交集之前，必须先完成所有之前的活动。 要配置此活动，您需要为其输入标签以及与结果相关的选项。
+交集允许您仅提取所有入站活动结果共有的群体。将创建目标，并收到所有结果：因此，在执行交集之前，必须先完成所有之前的活动。 要配置此活动，您需要为其输入标签以及与结果相关的选项。
 
 ![](assets/s_user_segmentation_inter.png)
 

@@ -5,31 +5,26 @@ feature: Push
 role: Data Engineer
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: d8ceefe1dd56aecb810878d99395ac900f889c2e
+source-git-commit: 1bcb1b3d1e6062a8b5c0368725248edfc7e3d1b4
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 5%
+source-wordcount: '1748'
+ht-degree: 3%
 
 ---
 
 # 创建和发送推送通知{#push-notifications-create}
 
-移动设备应用程序投放允许您向iOS和Android系统发送通知。
+移动设备应用程序投放允许您向iOS和Android设备发送通知。
 
 要在Adobe Campaign中发送推送通知，您需要：
 
-1. 配置Campaign环境
-1. 为移动应用程序创建移动应用程序类型信息服务。
-1. 将应用程序的iOS和Android版本添加到此服务。
-1. 为iOS和Android创建投放。
-
-![](../assets/do-not-localize/book.png) 了解如何开始使用 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/about-mobile-app-channel.html){target="_blank"}
+1. 将SDK与您的应用程序集成。 [了解详情](#push-sdk)
+1. 为移动设备应用程序创建移动设备应用程序类型信息服务，并将应用程序的iOS和Android版本添加到该服务。 [了解详情](#push-config)
+1. 为iOS和Android创建投放。 [了解详情](#push-create)
 
 ## 集成SDK {#push-sdk}
 
 您可以通过在数据收集UI中配置Adobe Experience Platform Mobile SDK扩展来使用Adobe Campaign 。 Adobe Experience Platform Mobile SDK可帮助在您的移动设备应用程序中为Adobe的Experience Cloud解决方案和服务提供支持。 SDK配置通过数据收集UI进行管理，以实现灵活配置和基于规则的可扩展集成。 [在Adobe Developer文档中了解详情](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
-
-了解如何配置和安装Adobe Experience Platform Mobile SDK [在此视频中](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/configure-push-using-aep-mobile-sdk.html?lang=en){target="_blank"}.
 
 您还可以集成Campaign SDK，以促进将移动应用程序集成到Adobe Campaign平台。 中列出了兼容的SDK版本 [Campaign兼容性矩阵](../start/compatibility-matrix.md#MobileSDK).
 
@@ -37,11 +32,131 @@ ht-degree: 5%
 
 ## 在Campaign中配置应用程序设置{#push-config}
 
-您必须在Adobe Campaign中定义iOS和Android应用程序设置。
+在发送推送通知之前，您必须在Adobe Campaign中定义iOS和Android应用程序设置。
 
-![](../assets/do-not-localize/book.png) 有关iOS的配置准则，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en#sending-messages){target="_blank"}
+推送通知通过专用服务发送给您的应用程序用户。 用户安装您的应用程序时，会订阅此服务：Adobe Campaign依赖此服务来仅定位应用程序的订阅者。 在此服务中，您需要添加iOS和Android应用程序，才能在iOS和Android设备上发送。
 
-![](../assets/do-not-localize/book.png) Android的配置准则详见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html?lang=en#sending-messages){target="_blank"}
+要创建发送推送通知的服务，请执行以下步骤：
+
+1. 浏览到 **[!UICONTROL Profiles and Targets > Services and Subscriptions]** ，然后单击 **[!UICONTROL Create]**.
+
+   ![](assets/new-service-push.png){width="800" align="left"}
+
+1. 输入 **[!UICONTROL Label]** 和 **[!UICONTROL Internal name]**，然后选择 **[!UICONTROL Mobile application]** 类型。
+
+   >[!NOTE]
+   >
+   >默认 **[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]** 目标映射已链接到收件人表。 如果要使用其他目标映射，则需要创建新的目标映射，并在 **[!UICONTROL Target mapping]** 字段。 了解有关 [本页](../audiences/target-mappings.md).
+
+1. 然后，使用 **[!UICONTROL Add]** 图标来定义使用此服务的移动设备应用程序。
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
+
+要为iOS设备创建应用程序，请执行以下步骤：
+
+1. 选择 **[!UICONTROL Create an iOS application]** 并单击 **[!UICONTROL Next]**。
+
+   ![](assets/new-ios-app.png){width="600" align="left"}
+
+1. 在 **[!UICONTROL Label]** 字段。
+1. （可选）您可以使用 **[!UICONTROL Application variables]**. 这些任务是完全可自定义的，并且是发送到移动设备的消息有效负荷的一部分。
+
+   在以下示例中， **mediaURL** 和 **mediaExt** 变量会被添加以创建富推送通知，然后向应用程序提供要在通知中显示的图像。
+
+   ![](assets/ios-app-parameters.png){width="600" align="left"}
+
+1. 浏览到 **[!UICONTROL Subscription parameters]** 选项卡，以定义具有 **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** 架构。
+
+1. 浏览到 **[!UICONTROL Sounds]** 选项卡来定义要播放的声音。 单击 **[!UICONTROL Add]** 填充 **[!UICONTROL Internal name]** 字段，其中必须包含应用程序中嵌入的文件名称或系统声音的名称。
+
+1. 单击 **[!UICONTROL Next]** 以开始配置开发应用程序。
+
+1. 集成密钥特定于每个应用程序。 它将移动应用程序链接到Adobe Campaign。
+
+   确保相同 **[!UICONTROL Integration key]** 在Adobe Campaign中和通过SDK在应用程序代码中定义。
+
+   如果您使用的是Campaign SDK，请在[本页](../config/push-config.md).
+
+
+   如果您使用的是Adobe Experience Platform SDK（数据收集），请在 [本页](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
+
+
+   >[!NOTE]
+   >
+   > 的 **[!UICONTROL Integration key]** 可通过字符串值完全自定义，但必须与SDK中指定的值完全相同。
+   >
+   > 不能将相同的证书用于应用程序的开发版本（沙盒）和生产版本。
+
+1. 从 **[!UICONTROL Application icon]** 字段来个性化服务中的移动应用程序。
+
+1. 选择 **[!UICONTROL Authentication mode]**。有两种模式可用：
+
+   * （推荐） **[!UICONTROL Token-based authentication]**:填写APNs连接设置 **[!UICONTROL Key Id]**, **[!UICONTROL Team Id]** 和 **[!UICONTROL Bundle Id]** 然后，单击 **[!UICONTROL Enter the private key...]**. 更多信息 **[!UICONTROL Token-based authentication]**，请参阅 [Apple文档](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
+
+   * **[!UICONTROL Certificate-based authentication]**:单击 **[!UICONTROL Enter the certificate...]**  然后，选择p12密钥并输入由移动应用程序开发人员提供的密码。
+   您稍后可以在 **[!UICONTROL Certificate]** 选项卡。
+
+1. 使用 **[!UICONTROL Test the connection]** 按钮以验证您的配置。
+
+1. 单击 **[!UICONTROL Next]** 要开始配置生产应用程序，请按照与上面所述相同的步骤操作。
+
+1. 单击 **[!UICONTROL Finish]**。
+
+您的iOS应用程序现已准备就绪，可在Campaign中使用。
+
+>[!TAB Android]
+
+要为Android设备创建应用程序，请执行以下步骤：
+
+1. 选择 **[!UICONTROL Create an Android application]** 并单击 **[!UICONTROL Next]**。
+
+   ![](assets/new-android-app.png){width="600" align="left"}
+
+1. 在 **[!UICONTROL Label]** 字段。
+1. 集成密钥特定于每个应用程序。 它将移动应用程序链接到Adobe Campaign。
+
+   确保相同 **[!UICONTROL Integration key]** 在Adobe Campaign中和通过SDK在应用程序代码中定义。
+
+   如果您使用的是Campaign SDK，请在 [本页](../config/push-config.md).
+
+   如果您使用的是Adobe Experience Platform SDK（数据收集），请在 [本页](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
+
+
+   >[!NOTE]
+   >
+   > 的 **[!UICONTROL Integration key]** 可通过字符串值完全自定义，但必须与SDK中指定的值完全相同。
+
+1. 从 **[!UICONTROL Application icon]** 字段来个性化服务中的移动应用程序。
+1. 选择 **HTTP v1** in  **[!UICONTROL API version]** 下拉列表。
+1. 单击 **[!UICONTROL Load project json file to extract project details...]** 链接以加载JSON密钥文件。 有关如何提取JSON文件的更多信息，请参阅 [Google Firebase文档](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
+
+   您还可以手动输入以下详细信息：
+   * **[!UICONTROL Project Id]**
+   * **[!UICONTROL Private Key]**
+   * **[!UICONTROL Client Email]**
+
+1. 使用 **[!UICONTROL Test the connection]** 按钮以验证您的配置。
+
+   >[!CAUTION]
+   >
+   >的 **[!UICONTROL Test connection]** 按钮不会检查MID服务器是否有权访问FCM服务器。
+
+1. （可选）您可以使用 **[!UICONTROL Application variables]** （如果需要）。 这些任务是完全可自定义的，并且是发送到移动设备的消息有效负荷的一部分。
+
+1. 单击 **[!UICONTROL Finish]**，然后单击 **[!UICONTROL Save]**。您的Android应用程序现已准备就绪，可在Campaign中使用。
+
+以下是用于进一步个性化推送通知的FCM有效负载名称：
+
+| 消息类型 | 可配置消息元素（FCM有效负载名称） | 可配置选项（FCM有效负载名称） |
+|:-:|:-:|:-:|
+| 数据消息 | N/A | validate_only |
+| 通知消息 | 标题， body， android_channel_id，图标，声音，标记，颜色， click_action，图像， ticker，置顶，可见性， notification_priority， notification_count <br> | validate_only |
+
+
+>[!ENDTABS]
+
 
 ## 创建您的第一个推送通知{#push-create}
 
@@ -55,13 +170,11 @@ ht-degree: 5%
 
 ![](assets/delivery_step_1.png)
 
-![](../assets/do-not-localize/book.png) 有关如何创建投放的全局信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=en#sending-messages){target="_blank"}
+>[!BEGINTABS]
 
-### 在iOS上发送通知 {#send-notifications-on-ios}
+>[!TAB iOS]
 
->[!NOTE]
->
->从 Campaign v8.3 开始提供此功能。要检查您的版本，请参阅[此部分](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+要在iOS设备上发送通知，请执行以下步骤：
 
 1. 选择 **[!UICONTROL Deliver on iOS]** 投放模板。
 
@@ -106,13 +219,9 @@ ht-degree: 5%
       >[!NOTE]
       > 
       >必须在应用程序中包含声音，并在创建服务时定义声音。
-      >
-      >有关iOS的配置准则，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target="_blank"}.
    ![](assets/push_ios_5.png)
 
 1. 从 **[!UICONTROL Application variables]** 选项卡， **[!UICONTROL Application variables]** 会自动添加。 例如，通过它们可定义通知行为，您可以将特定应用程序屏幕配置为在用户激活通知时显示。
-
-   有关更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target="_blank"}.
 
 1. 从 **[!UICONTROL Advanced]** 选项卡，您可以编辑以下常规选项：
 
@@ -147,7 +256,10 @@ ht-degree: 5%
 
    ![](assets/push-ios-preview.png)
 
-### 在Android上发送通知 {#send-notifications-on-android}
+
+>[!TAB Android]
+
+要在Android设备上发送通知，请执行以下步骤：
 
 1. 选择 **[!UICONTROL Deliver on Android (android)]** 投放模板。
 
@@ -173,20 +285,16 @@ ht-degree: 5%
 
    <!--![](assets/push-android-preview.png)-->
 
+>[!ENDTABS]
+
+
 ## 测试、发送和监视推送通知
 
-要发送校样并发送最终投放，请使用与电子邮件投放相同的流程。 请参阅 Campaign Classic v7 文档以了解详情：
+要发送校样并发送最终投放，请使用与其他投放相同的流程。
 
-* 验证投放并发送校样
-   ![](../assets/do-not-localize/book.png) [了解验证投放的关键步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=zh-Hans){target="_blank"}
+了解如何在中验证投放 [本页](preview-and-proof.md).
 
-* 确认并发送投放
-   ![](../assets/do-not-localize/book.png) [了解发送投放的关键步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html){target="_blank"}
+了解如何确认和发送投放 [本页](send.md)
 
-发送消息后，您可以监控和跟踪投放内容。 请参阅 Campaign Classic v7 文档以了解详情：
+发送消息后，您可以监控和跟踪投放内容。 详细了解 [本页](delivery-failures.md#push-error-types).
 
-* 推送通知隔离
-   ![](../assets/do-not-localize/book.png) [了解有关推送通知隔离的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-quarantine-management.html#push-notification-quarantines){target="_blank"}
-
-* 故障排除
-   ![](../assets/do-not-localize/book.png) [了解如何排查推送通知故障](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/troubleshooting.html){target="_blank"}

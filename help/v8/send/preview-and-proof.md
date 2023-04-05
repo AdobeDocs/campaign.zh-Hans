@@ -4,10 +4,10 @@ description: 了解如何在发送之前验证投放
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
+source-git-commit: e0129524a051827a52de478c3fdc45b963d6c4bb
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 4%
 
 ##   发送验证 {#send-proofs}
 
-通过发送校样，您可以检查选择退订链接、镜像页面和任何其他链接、验证消息、验证图像是否显示、检测可能的错误等。 您可能还希望检查在不同设备上的设计和渲染。
+对于电子邮件投放，您可以发送校样以验证消息内容。 通过发送校样，您可以检查选择退订链接、镜像页面和任何其他链接、验证消息、验证图像是否显示、检测可能的错误等。 您可能还希望检查在不同设备上的设计和渲染。
 
 校样是一种特定的消息，允许您在将消息发送到主受众之前对消息进行测试。 校样收件人负责批准邮件：呈现、内容、个性化设置、配置。
 

@@ -4,13 +4,13 @@ description: 了解哪些源可用于个性化
 feature: Personalization
 role: User
 level: Beginner
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+exl-id: 711256e2-ab77-404a-b052-6793a85da193
+source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 2%
 
 ---
-
 
 # 个性化数据源{#personalization-data}
 
@@ -71,7 +71,3 @@ ht-degree: 2%
 在工作流的上下文中创建投放时，您可以使用临时工作流表中的数据。 工作流临时工作表中存储的数据可用于个性化任务。 数据可在个性化字段中使用。
 
 此数据分组在 **[!UICONTROL Target extension]** 菜单。 如需详细信息，请参阅[此部分](../../automation/workflow/use-workflow-data.md#target-data)。
-
-
-
-

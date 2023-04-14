@@ -5,10 +5,10 @@ feature: Push
 role: Data Engineer
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: 1bcb1b3d1e6062a8b5c0368725248edfc7e3d1b4
+source-git-commit: e7c255d30e38c4e17779ef820e8984668ac5d48b
 workflow-type: tm+mt
-source-wordcount: '1748'
-ht-degree: 3%
+source-wordcount: '1671'
+ht-degree: 4%
 
 ---
 
@@ -24,11 +24,12 @@ ht-degree: 3%
 
 ## 集成SDK {#push-sdk}
 
-您可以通过在数据收集UI中配置Adobe Experience Platform Mobile SDK扩展来使用Adobe Campaign 。 Adobe Experience Platform Mobile SDK可帮助在您的移动设备应用程序中为Adobe的Experience Cloud解决方案和服务提供支持。 SDK配置通过数据收集UI进行管理，以实现灵活配置和基于规则的可扩展集成。 [在Adobe Developer文档中了解详情](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+要通过Adobe Campaign发送推送通知，您必须在Adobe Experience Platform Mobile SDK的数据收集UI中配置Adobe Campaign扩展。
 
-您还可以集成Campaign SDK，以促进将移动应用程序集成到Adobe Campaign平台。 中列出了兼容的SDK版本 [Campaign兼容性矩阵](../start/compatibility-matrix.md#MobileSDK).
+Adobe Experience Platform Mobile SDK可帮助在您的移动设备应用程序中为Adobe的Experience Cloud解决方案和服务提供支持。 SDK配置通过数据收集UI进行管理，以实现灵活配置和基于规则的可扩展集成。
 
-了解如何在 [本页](../config/push-config.md)
+[在Adobe Developer文档中了解详情](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+
 
 ## 在Campaign中配置应用程序设置{#push-config}
 
@@ -77,10 +78,7 @@ ht-degree: 3%
 
    确保相同 **[!UICONTROL Integration key]** 在Adobe Campaign中和通过SDK在应用程序代码中定义。
 
-   如果您使用的是Campaign SDK，请在[本页](../config/push-config.md).
-
-
-   如果您使用的是Adobe Experience Platform SDK（数据收集），请在 [本页](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
+   在 [开发人员文档](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
 
 
    >[!NOTE]
@@ -119,9 +117,7 @@ ht-degree: 3%
 
    确保相同 **[!UICONTROL Integration key]** 在Adobe Campaign中和通过SDK在应用程序代码中定义。
 
-   如果您使用的是Campaign SDK，请在 [本页](../config/push-config.md).
-
-   如果您使用的是Adobe Experience Platform SDK（数据收集），请在 [本页](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
+   在 [开发人员文档](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configuration-keys){target="_blank"}
 
 
    >[!NOTE]

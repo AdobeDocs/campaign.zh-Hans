@@ -5,20 +5,20 @@ feature: Transactional Messaging
 role: Admin, Developer
 level: Intermediate, Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: c61f03252c7cae72ba0426d6edcb839950267c0a
+source-git-commit: 2d10a8f4349b9e2405847fc6a3db1ed568c60387
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # 事务性消息设置
 
+事务型消息传递（消息中心）是一个Campaign模块，用于管理触发的消息。 了解有关事务型消息传递的更多信息，请参阅 [此部分](../send/transactional.md).
+
+了解中的事务型消息传递架构 [本页](../architecture/architecture.md#transac-msg-archi).
+
 ![](../assets/do-not-localize/speech.png) 作为托管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support) ，以在您的环境中安装和配置Campaign事务型消息传递。
-
-![](../assets/do-not-localize/glass.png) 事务性消息传递功能在 [此部分](../send/transactional.md).
-
-![](../assets/do-not-localize/glass.png) 了解中的事务型消息传递架构 [本页](../architecture/architecture.md#transac-msg-archi).
 
 ## 定义权限
 
@@ -26,15 +26,11 @@ ht-degree: 6%
 
 ## 模式扩展
 
-对使用的架构进行的所有架构扩展 **消息中心技术工作流** 在上，需要在Adobe Campaign事务型消息传递模块使用的其他实例上复制控制实例或执行实例。
-
-![](../assets/do-not-localize/book.png) 了解有关消息中心技术工作流的更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/additional-configurations.html#technical-workflows)
+对使用的架构进行的所有架构扩展 [消息中心技术工作流](#technical-workflows) 在上，需要在Adobe Campaign事务型消息传递模块使用的其他实例上复制控制实例或执行实例。
 
 ## 发送事务推送通知
 
-与移动设备应用程序渠道模块结合使用时，事务型消息传递允许您通过移动设备上的通知推送事务型消息。
-
-![](../assets/do-not-localize/book.png) 有关移动设备应用程序渠道的详细信息，请参阅 [此部分](../send/push.md).
+与 [移动应用程序渠道模块](../send/push.md)，事务型消息可让您在移动设备上通过通知推送事务型消息。
 
 要发送事务推送通知，您需要执行以下配置：
 
@@ -46,14 +42,14 @@ ht-degree: 6%
 
 1. 复制 **移动应用程序** 服务和执行实例上关联的移动应用程序。
 
-为了使Campaign发送事务推送通知，事件必须包含以下元素：
+此外，事件必须包含以下元素：
 
-* 移动设备ID: **registrationId** 适用于Android和 **deviceToken** iOS。 此ID表示通知将发送到的“地址”。
+* 移动设备ID: **registrationId** 适用于Android和 **deviceToken** iOS。 此ID表示通知发送到的“地址”。
 * 指向移动应用程序或集成密钥的链接(**uid**)，用于检索特定于应用程序的连接信息。
 * 将向其发送通知的渠道(**wishedChannel**):iOS为41，安卓为42。
-* 用于个性化的其他数据。
+* 任何其他个性化数据。
 
-以下是包含此信息的事件示例：
+以下是用于发送事务推送通知的事件配置示例：
 
 ```
 <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -76,14 +72,7 @@ ht-degree: 6%
 </SOAP-ENV:Envelope>
 ```
 
-## 监测阈值 {#monitor-thresholds}
 
-您可以为 **消息中心服务级别** 和 **消息中心处理时间** 报表。
-
-为此请执行以下操作步骤：
-
-1. 在 **执行实例**，然后浏览到 **[!UICONTROL Message Center]** 页面。
-1. 使用箭头更改阈值。
 
 
 ## 清除事件 {#purge-events}

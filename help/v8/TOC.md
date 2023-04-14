@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Campaign v8 文档
 breadcrumb-title: Campaign 概述
 title: Campaign v8 文档
-source-git-commit: 464898df7a362c137d20ebaf2b96bfef71131ae6
+source-git-commit: c61f03252c7cae72ba0426d6edcb839950267c0a
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 100%
+source-wordcount: '541'
+ht-degree: 96%
 
 ---
 
@@ -50,7 +50,13 @@ ht-degree: 100%
       + [LINE 消息](send/line.md)
       + [直邮](send/direct-mail.md)
       + [Twitter](send/twitter.md)
-      + [事务性消息](send/transactional.md)
+      + 事务性消息 {#real-time}
+         + [事务型消息入门](send/transactional.md)
+         + [创建和发布模板](send/transactional-template.md)
+         + 事件管理 {#event}
+         + [收集和处理事件](send/event-processing.md)
+         + [了解事件描述](send/event-description.md)
+         + [发送消息](send/delivery-execution.md)
       + 失败、退回和隔离{#failures}
          + [隔离](send/quarantines.md)
          + [投放失败](send/delivery-failures.md)

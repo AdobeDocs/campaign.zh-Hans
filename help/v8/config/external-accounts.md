@@ -5,12 +5,13 @@ feature: Application Settings
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 2d10a8f4349b9e2405847fc6a3db1ed568c60387
+source-git-commit: 7b8a9a323afc3154e250b4c70c4339d6c6c265c0
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 5%
+source-wordcount: '1067'
+ht-degree: 4%
 
 ---
+
 
 # 配置外部帐户
 
@@ -35,70 +36,49 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
-![](../assets/do-not-localize/speech.png)  作为托管Cloud Services用户，Adobe会为您配置所有特定于促销活动的外部帐户。
-
 ### 退回邮件 {#bounce-mails-external-account}
 
 >[!NOTE]
-从Campaign v8.3开始，提供了Microsoft Exchange Online OAuth 2.0的POP3身份验证功能。要检查您的版本，请参阅 [此部分](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+从Campaign v8.3开始，提供了Microsoft Exchange Online OAuth 2.0的POP3身份验证功能。要检查您的版本，请参阅 [此部分](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion).
 
 的 **退回邮件** 外部帐户指定用于连接到电子邮件服务的外部POP3帐户。 为POP3访问配置的所有服务器都可用于接收回信。
 
-详细了解 [本页](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html)
+详细了解 [本页](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html).
 
 ![](assets/bounce_external_1.png)
 
 配置 **[!UICONTROL Bounce mails (defaultPopAccount)]** 外部帐户：
 
-* **[!UICONTROL Server]**
+* **[!UICONTROL Server]** - POP3服务器的URL。
 
-   POP3服务器的URL。
+* **[!UICONTROL Port]** - POP3连接端口号。 默认端口为110。
 
-* **[!UICONTROL Port]**
+* **[!UICONTROL Account]**  — 用户的名称。
 
-   POP3连接端口号。 默认端口为110。
+* **[!UICONTROL Password]**  — 用户帐户密码。
 
-* **[!UICONTROL Account]**
+* **[!UICONTROL Encryption]**  — 之间选择的加密类型 **[!UICONTROL By default]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** 或 **[!UICONTROL POP3S]**.
 
-   用户的名称。
+   的 **退回邮件** 外部帐户指定用于连接到电子邮件服务的外部POP3帐户。 为POP3访问配置的所有服务器都可用于接收回信。
 
-* **[!UICONTROL Password]**
-
-   用户帐户密码。
-
-* **[!UICONTROL Encryption]**
-
-   之间选择的加密类型 **[!UICONTROL By default]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** 或 **[!UICONTROL POP3S]**.
-的 **退回邮件** 外部帐户指定用于连接到电子邮件服务的外部POP3帐户。 为POP3访问配置的所有服务器都可用于接收回信。
-
-* **[!UICONTROL Function]**
-
-   入站电子邮件或SOAP路由器
+* **[!UICONTROL Function]**  — 入站电子邮件或SOAP路由器
 
 ![](assets/bounce_external_2.png)
 
->[!IMPORTANT]
+>[!CAUTION]
 在使用Microsoft OAuth 2.0配置POP3外部帐户之前，您首先需要在Azure门户中注册应用程序。 有关更多信息，请参阅此[页面](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}.
 
 要使用Microsoft OAuth 2.0配置外部POP3，请检查 **[!UICONTROL Microsoft OAuth 2.0]** ，并填写以下字段：
 
-* **[!UICONTROL Azure tenant]**
+* **[!UICONTROL Azure tenant]**  — 在 **要点** Azure门户中应用程序概述的下拉列表。
 
-   可以在 **要点** Azure门户中应用程序概述的下拉列表。
+* **[!UICONTROL Azure Client ID]**  — 客户端ID(或应用程序（客户端）ID)可在 **要点** Azure门户中应用程序概述的下拉列表。
 
-* **[!UICONTROL Azure Client ID]**
+* **[!UICONTROL Azure Client secret]**  — 客户端密钥ID可在 **客户端密钥** 列 **证书和密钥** Azure门户中的应用程序菜单。
 
-   可以在 **要点** Azure门户中应用程序概述的下拉列表。
+* **[!UICONTROL Azure Redirect URL]**  — 重定向URL可在 **身份验证** Azure门户中的应用程序菜单。 它应该以以下语法结尾 `nl/jsp/oauth.jsp`，例如 `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
 
-* **[!UICONTROL Azure Client secret]**:
-
-   可以在 **客户端密钥** 列 **证书和密钥** Azure门户中的应用程序菜单。
-
-* **[!UICONTROL Azure Redirect URL]**:
-
-   可在 **身份验证** Azure门户中的应用程序菜单。 它应该以以下语法结尾 `nl/jsp/oauth.jsp`，例如 `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
-
-输入不同的凭据后，您可以单击 **[!UICONTROL Setup the connection]** 完成外部帐户配置。
+   输入不同的凭据后，您可以单击 **[!UICONTROL Setup the connection]** 完成外部帐户配置。
 
 ### 路由 {#routing}
 
@@ -109,9 +89,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
 ### 执行实例 {#execution-instance}
 
-在事务型消息传递的上下文中，执行实例链接到控制实例并连接它们。 事务型消息模板将部署到执行实例。
-
-![](../assets/do-not-localize/glass.png) 了解有关 [本页](../architecture/architecture.md#transac-msg-archi).
+在事务型消息传递的上下文中，执行实例链接到控制实例并连接它们。 事务型消息模板将部署到执行实例。 了解有关 [本页](../architecture/architecture.md#transac-msg-archi).
 
 ## 访问外部系统外部帐户
 
@@ -138,18 +116,15 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
 ## 传输数据外部帐户
 
-这些外部帐户可用于使用 **[!UICONTROL Transfer file]** 工作流活动。 了解有关 [本页](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html)
+这些外部帐户可用于使用 **[!UICONTROL Transfer file]** 工作流活动。 详细了解 **文件传输** 在 [本页](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html).
 
-* **FTP和SFTP**
+* **FTP和SFTP** - **FTP** 外部帐户允许您配置和测试对Adobe Campaign以外服务器的访问权限。 要设置与外部系统（如用于文件传输的SFTP或FTP服务器898）的连接，您可以创建自己的外部帐户。
 
-   的 **FTP** 外部帐户允许您配置和测试对Adobe Campaign以外服务器的访问权限。 要设置与外部系统（如用于文件传输的SFTP或FTP服务器898）的连接，您可以创建自己的外部帐户。
-为此，请在此外部帐户中指定用于建立与SFTP或FTP服务器连接的地址和凭据。
+   为此，请在此外部帐户中指定用于建立与SFTP或FTP服务器连接的地址和凭据。
 
-* **Amazon Simple Storage Service(S3)**
+* **Amazon Simple Storage Service(S3)** - **AWS S3** 连接器可用于通过 **[!UICONTROL Transfer file]** 工作流活动。 在设置此新外部帐户时，您需要提供以下详细信息：
 
-   的 **AWS S3** 连接器可用于通过 **[!UICONTROL Transfer file]** 工作流活动。 在设置此新外部帐户时，您需要提供以下详细信息：
-
-   * **[!UICONTROL AWS S3 Account Server]**:服务器的URL，填写如下：   ```<S3bucket name>.s3.amazonaws.com/<s3object path>```
+   * **[!UICONTROL AWS S3 Account Server]**:服务器的URL，填写如下：   `<S3bucket name>.s3.amazonaws.com/<s3object path>`
 
    * **[!UICONTROL AWS access key ID]**:了解如何在 [Amazon文档](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
 
@@ -159,9 +134,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 
    * 的 **[!UICONTROL Use server side encryption]** 复选框允许您以S3加密模式存储文件。 了解如何在 [Amazon文档](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}.
 
-* **Azure Blob Storage**
-
-   的 **Azure** 外部帐户可用于使用 **[!UICONTROL Transfer file]** 工作流活动。 配置 **Azure** 要与Adobe Campaign配合使用的外部帐户，您需要提供以下详细信息：
+* **Azure Blob存储** - **Azure** 外部帐户可用于使用 **[!UICONTROL Transfer file]** 工作流活动。 配置 **Azure** 要与Adobe Campaign配合使用的外部帐户，您需要提供以下详细信息：
 
    * **[!UICONTROL Server]**:您的Azure Blob存储服务器的URL。
 

@@ -5,7 +5,7 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 2a85ffc2fe3a839c14a5c844deaa7a09687743eb
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 1%
@@ -24,9 +24,9 @@ ht-degree: 1%
 * 对客户行动的个人实时响应
 * 非促销内容
 
-![](../assets/do-not-localize/glass.png) 有关事务性消息传递设置的详细信息，请参阅 [此部分](../config/transactional-msg-settings.md).
+有关事务性消息传递设置的详细信息，请参阅 [此部分](../config/transactional-msg-settings.md).
 
-![](../assets/do-not-localize/glass.png) 了解事务型消息传递架构 [本页](../architecture/architecture.md#transac-msg-archi).
+了解事务型消息传递架构 [本页](../architecture/architecture.md#transac-msg-archi).
 
 ## 事务型消息传递工作原理 {#transactional-messaging-operating-principle}
 

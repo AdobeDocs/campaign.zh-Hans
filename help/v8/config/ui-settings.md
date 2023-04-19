@@ -5,7 +5,7 @@ version: v8
 feature: Application Settings
 role: Admin, Developer
 level: Beginner, Intermediate, Experienced
-source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
+source-git-commit: 0b4483e0f16f14582a1a4bc28b0e1ff719823ef3
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 1%
@@ -89,7 +89,7 @@ ht-degree: 1%
    ![创建新别名](assets/define-new-alias.png)
 
 
->[!CAUTION]
+>[!NOTE]
 >
 >您可以在 **[!UICONTROL Hits]** 列 **[!UICONTROL Alias]** 子选项卡。 它可显示输入此值的次数。  [了解详情](#calculate-entry-occurrences)。
 

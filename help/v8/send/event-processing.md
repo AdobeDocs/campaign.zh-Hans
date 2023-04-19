@@ -4,13 +4,13 @@ description: 了解Campaign事务型消息如何收集和处理事件
 feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
-source-git-commit: c61f03252c7cae72ba0426d6edcb839950267c0a
+exl-id: c1deb0a1-aeba-4813-b674-a6a164b98b02
+source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
 workflow-type: tm+mt
 source-wordcount: '677'
 ht-degree: 1%
 
 ---
-
 
 # 事件处理 {#event-processing}
 
@@ -78,7 +78,7 @@ ht-degree: 1%
 
 可能的状态包括：
 
-* **待定**
+* **待处理**
 
    * 待定事件可以是刚刚收集且尚未处理的事件。 的 **[!UICONTROL Number of errors]** 列显示值0。 电子邮件模板尚未关联。
    * 待定事件也可以是已处理的事件，但其确认错误。 的 **[!UICONTROL Number of errors]** 列显示的值不为0。 要了解此事件何时将再次处理，请查阅 **[!UICONTROL Process requested on]** 列。
@@ -102,6 +102,3 @@ ht-degree: 1%
 >[!CAUTION]
 >
 >此步骤只能使用工作流执行，因此保留给专家用户。 有关更多信息，请联系您的Adobe客户经理。
-
-
-

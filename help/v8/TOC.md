@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 description: Campaign v8 文档
 breadcrumb-title: Campaign 概述
 title: Campaign v8 文档
-source-git-commit: 2d10a8f4349b9e2405847fc6a3db1ed568c60387
+source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '550'
+ht-degree: 94%
 
 ---
 
@@ -166,10 +166,11 @@ ht-degree: 0%
       + [实施步骤](start/implement.md)
       + [自定义实例](dev/customize.md)
       + [数据模型最佳实践](dev/datamodel-best-practices.md)
-   + 配置 {#configuration}
+   + 设置和配置 {#configuration}
+      + [用户界面设置](config/ui-settings.md)
       + [电子邮件设置](config/email-settings.md)
       + [事务性消息设置](config/transactional-msg-settings.md)
-      + [将 Campaign SDK 与您的应用程序集成](config/push-config.md)
+      + [将 Campaign SDK 与您的应用程序集成  — 已弃用页面](config/push-config.md)
       + [外部帐户](config/external-accounts.md)
 + 开发人员资源 {#developer}
    + [Campaign 数据模型](dev/datamodel.md)

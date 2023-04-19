@@ -4,13 +4,13 @@ description: 了解如何发送和监控事务型消息
 feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
-source-git-commit: 2d10a8f4349b9e2405847fc6a3db1ed568c60387
+exl-id: 084607f6-47d8-40c0-89ba-bfbb88fc2e53
+source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '778'
+ht-degree: 2%
 
 ---
-
 
 # 发送和监控事务型消息 {#delivery-execution}
 
@@ -110,4 +110,3 @@ Adobe Campaign提供了多个报表，用于控制活动并顺利运行执行实
 1. 使用箭头更改阈值。
 
    ![](assets/mc-thresholds.png)
-

@@ -3,9 +3,9 @@ title: Adobe Campaign内置投放报告
 description: Adobe Campaign内置投放报告
 feature: Reporting
 exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
-source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
+source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1021'
 ht-degree: 2%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 2%
 >
 >此报表中显示的域名在多维数据集级别使用的明细列表中定义。 要更改、添加或删除默认域，请编辑 **[!UICONTROL Domains]** 列出列表并修改值和别名。 的 **[!UICONTROL Others]** 类别包括不属于项目列表任何值的域名。
 >
->了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target="_blank"}.
+>了解如何在 [本页](../config/ui-settings.md).
 
 
 **[!UICONTROL 4. Generated click streams]**

@@ -5,10 +5,10 @@ feature: Application Settings
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: a11d3895-00f1-43d0-b0f7-330fce9fd56b
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 15%
+source-wordcount: '200'
+ht-degree: 16%
 
 ---
 
@@ -37,8 +37,7 @@ Campaign管理员通过 **[!UICONTROL Administration > Platform > Enumerations]*
 
 对于 **打开** 枚举时，用户还可以在值中输入第一个字符，并显示可能的值。
 
-了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target="_blank"}.
-
+了解有关 [本页](../../v8/config/ui-settings.md#enumerations).
 
 ## 默认单位 {#default-units}
 

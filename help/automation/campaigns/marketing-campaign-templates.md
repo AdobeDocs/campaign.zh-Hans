@@ -4,9 +4,9 @@ title: 营销活动模板
 description: 营销活动模板
 feature: Campaigns, Templates
 exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
-source-git-commit: 60db4c2e8cd280845ddd0176bd10dc1b7edbb767
+source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '987'
 ht-degree: 5%
 
 ---
@@ -167,7 +167,7 @@ ht-degree: 5%
 * 输入 **标签** 模板：该标签是必填的，是基于此模板的所有营销活动的默认标签。
 * 选择营销活动 **自然** 从下拉列表中。 此列表中可用的值是 **[!UICONTROL natureOp]** 枚举。
 
-了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target="_blank"}.
+了解如何在 [本页](../../v8/config/ui-settings.md#enumerations).
 
 
 * 选择 **营销活动类型**:唯一、循环或定期。 默认情况下，促销活动模板适用于独特的促销活动。 定期和定期营销活动详见 [此部分](recurring-periodic-campaigns.md).

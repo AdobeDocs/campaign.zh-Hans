@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: use-cases
 feature: Workflows, Data Management
 exl-id: 4fe2ae81-faa6-4777-a332-70c451bca75b
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 1%
@@ -15,8 +15,6 @@ ht-degree: 1%
 ---
 
 # 添加明细列表类型计算字段 {#adding-an-enumeration-type-calculated-field}
-
-
 
 在此，我们要使用 **[!UICONTROL Enumerations]** 类型计算字段。 此字段将在数据预览窗口中生成额外的列。 此列将为每个收件人（0、1和2）指定作为结果返回的数值。 新列中的每个值将分配一个性别：“Male”表示“1”，“Female”表示“2”，或“Not issided”（如果值等于“0”）。
 

@@ -5,9 +5,9 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: 2a85ffc2fe3a839c14a5c844deaa7a09687743eb
+source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1510'
 ht-degree: 1%
 
 ---
@@ -57,10 +57,8 @@ When [创建消息模板](#create-message-template)，则将选择与要发送�
 
 要创建将由Adobe Campaign处理的事件类型，请执行以下步骤：
 
-1. 转到 **[!UICONTROL Administration > Platform > Enumerations]** 文件夹。
-
-1. 选择 **[!UICONTROL Event type]** 列表。
-
+1. 浏览到 **[!UICONTROL Administration > Platform > Enumerations]** Campaign资源管理器的文件夹。
+1. 选择 **[!UICONTROL Event type]** 列表中的枚举。
 1. 单击 **[!UICONTROL Add]** 创建枚举值。 这可以是订单确认、密码更改、订单交付更改等。
 
    ![](assets/messagecenter_eventtype_enum_001.png)
@@ -73,7 +71,8 @@ When [创建消息模板](#create-message-template)，则将选择与要发送�
 
 >[!NOTE]
 >
->了解有关 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/managing-enumerations.html){target="_blank"}.
+>了解有关 [本页](../../v8/config/ui-settings.md#enumerations).
+
 
 ## 定义事务型消息模板 {#create-message-template}
 

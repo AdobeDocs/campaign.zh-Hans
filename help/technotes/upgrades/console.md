@@ -4,10 +4,10 @@ title: 弃用客户端控制台32位
 description: 弃用客户端控制台32位
 hide: true
 hidefromtoc: true
-source-git-commit: dd3490f43016cb7f6e0ccc5c171d78b8ee3ca234
+source-git-commit: 87e8ef65a2fea2f0d019babc69ed8a8a74017aa6
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -53,11 +53,11 @@ ht-degree: 1%
 
 **WINDOWS 10和WINDOWS 8.1**
 
-1. 选择开始按钮，然后选择 **设置** > **系统** > **关于**.
-1. 右下 **设备规范**，请参阅 **系统类型**.
+1. 单击 **开始** 按钮，然后选择 **设置** > **系统** > **关于**.
+1. 在 **设备规范**，请参阅 **系统类型**.
 
 **WINDOWS 7**
-1. 选择 **开始** 按钮，右键单击 **计算机**，然后选择 **属性**.
+1. 选择 **开始** 按钮，右键单击 **计算机** 选择 **属性**.
 1. 在 **系统**，请参阅系统类型。
 
 有关更多信息，请参阅 [32位和64位Windows:常见问题解答](https://support.microsoft.com/en-us/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d).

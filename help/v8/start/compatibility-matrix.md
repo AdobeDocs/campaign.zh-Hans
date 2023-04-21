@@ -5,10 +5,10 @@ feature: Overview
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: e7c255d30e38c4e17779ef820e8984668ac5d48b
+source-git-commit: dcb12339d891c61f308cf7b7e518784f3ba1ff31
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,6 +25,10 @@ ht-degree: 92%
 ## 客户端控制台{#ClientConsoleoperatingsystems}
 
 要使用 Campaign 客户端控制台，必须配备以下操作系统和浏览器。[了解详情](connect.md)。
+
+>[!NOTE]
+>
+>请注意，客户端控制台的32位版本将在8.5版本中弃用。 从8.6开始，客户端控制台将仅以64位提供。 有关如何升级操作系统的详细信息，请参阅此 [技术说明](https://experienceleague.corp.adobe.com/docs/campaign/technotes-ac/tn-new/console.html).
 
 ### 操作系统{#op-systems}
 

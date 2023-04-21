@@ -4,9 +4,9 @@ title: 弃用客户端控制台32位
 description: 弃用客户端控制台32位
 hide: true
 hidefromtoc: true
-source-git-commit: 52fd89d9b8b19e096173e1660982382215dad5dc
+source-git-commit: dd3490f43016cb7f6e0ccc5c171d78b8ee3ca234
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '363'
 ht-degree: 1%
 
 ---
@@ -39,13 +39,15 @@ ht-degree: 1%
 
 +++哪些版本的Campaign v8将不再支持32位操作系统？
 
-从8.5开始，所有Campaign v8版本将不再支持32位操作系统。
+从8.6开始，所有Campaign v8版本将不再支持32位操作系统。
 
 +++
 
 +++如何从Windows（32位）升级到Windows（64位）操作系统？
 
 确保计算机处理器支持安装64位操作系统。 从32位版本升级到64位版本的Windows要求您重新格式化硬盘，安装64位版本的Windows，然后重新安装设备上的其他所有内容。 有关更多信息，请参阅 [32位和64位Windows:常见问题解答](https://support.microsoft.com/en-us/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d).
+
++++
 
 +++ 如何检查我使用的是32位计算机还是64位计算机？
 

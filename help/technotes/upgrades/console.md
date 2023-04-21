@@ -4,20 +4,16 @@ title: 弃用客户端控制台32位
 description: 弃用客户端控制台32位
 hide: true
 hidefromtoc: true
-source-git-commit: dcb12339d891c61f308cf7b7e518784f3ba1ff31
+source-git-commit: 52fd89d9b8b19e096173e1660982382215dad5dc
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '364'
+ht-degree: 1%
 
 ---
 
 # 停止对32位操作系统的支持 | Adobe Campaign v8 {#console-eol}
 
-<!--
-The 32-bit version of Campaign v8 Client Console will be deprecated in 8.5 release. Starting 8.6, the Client Console will only be available in 64-bits.
--->
-
-从8.5版本开始，Campaign v8将不再支持32位操作系统，包括产品和安全更新。 Adobe强烈建议您将安全更新保持为最新。
+客户端控制台的32位版本将在8.5版本中弃用。 从8.6版本开始，Campaign v8将不再支持32位操作系统，包括产品和安全更新。 Adobe强烈建议您将安全更新保持为最新。
 
 ## 停止支持
 

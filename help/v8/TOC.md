@@ -7,7 +7,7 @@ title: Campaign v8 文档
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
 source-wordcount: '550'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -51,12 +51,12 @@ ht-degree: 94%
       + [直邮](send/direct-mail.md)
       + [Twitter](send/twitter.md)
       + 事务性消息 {#real-time}
-         + [事务型消息入门](send/transactional.md)
+         + [事务性消息入门](send/transactional.md)
          + [创建和发布模板](send/transactional-template.md)
-         + 事件管理 {#event}
+         + 事件管理{#event}
          + [收集和处理事件](send/event-processing.md)
          + [了解事件描述](send/event-description.md)
-         + [发送和监视消息](send/delivery-execution.md)
+         + [发送和监测消息](send/delivery-execution.md)
       + 失败、退回和隔离{#failures}
          + [隔离](send/quarantines.md)
          + [投放失败](send/delivery-failures.md)

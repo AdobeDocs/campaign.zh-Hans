@@ -59,7 +59,7 @@ ht-degree: 0%
 
 ## 移动 SDK{#MobileSDK}
 
-发送 [推送通知](../send/push.md) 对于Campaign，请通过在数据收集UI中配置Adobe Experience Platform Mobile SDK。
+要使用 Campaign 发送[推送通知](../send/push.md)，您可以通过在“数据收集”UI 中配置 Adobe Campaign 扩展来使用 Adobe Experience Platform Mobile SDK。
 
 
 ## Web 访问{#web-access}

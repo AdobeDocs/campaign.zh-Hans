@@ -5,7 +5,7 @@ feature: Platform Integration
 role: Data Engineer
 level: Beginner
 exl-id: 21cf5611-ccaa-4e83-8891-a1a2353515aa
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 Adobe Campaign托管Cloud Service目标和源连接器允许在Adobe Campaign和Adobe Experience Platform之间无缝集成。
 
-* 使用 **Adobe Campaign Managed Cloud Services** 用于将Experience Platform区段发送到Adobe Campaign以进行激活的目标连接，
+* 使用 **Adobe Campaign Managed Cloud Services目标** 连接将Experience Platform区段发送到Adobe Campaign以进行激活
 
    ![](assets/aep-destination.png)
 
-* 使用 **Adobe Campaign Managed Cloud Services** 用于将Adobe Campaign投放和跟踪日志发送到Adobe Experience Platform的源连接。
+* 使用 **Adobe Campaign Managed Cloud Services源** 将Adobe Campaign投放和跟踪日志发送到Adobe Experience Platform的连接
 
    ![](assets/aep-logs.png)
 
@@ -32,7 +32,7 @@ Adobe Campaign托管Cloud Service目标和源连接器允许在Adobe Campaign和
 
    [了解如何创建Adobe Campaign Managed Cloud Services目标连接](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en)
 
-1. 配置新的Adobe Campaign Managed Cloud Services源连接，以将Campaign事件摄取到Adobe体验平台。
+1. 配置新的Adobe Campaign Managed Cloud Services源连接，以将Campaign事件摄取到Adobe Experience Platform。
 
    提供有关Campaign实例和要使用的架构的详细信息，选择应摄取数据的数据集，然后配置要检索的字段。
 

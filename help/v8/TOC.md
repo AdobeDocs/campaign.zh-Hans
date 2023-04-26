@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 description: Campaign v8 文档
 breadcrumb-title: Campaign 概述
 title: Campaign v8 文档
-source-git-commit: 2aa5dd736b93990317f842bcbe1f87374279f538
+source-git-commit: 58b2f850284b68c6d65773166b895f9520718385
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '544'
 ht-degree: 98%
 
 ---
@@ -29,9 +29,7 @@ ht-degree: 98%
    + [重要功能](start/whats-new.md)
    + [组件和流程](start/ac-components.md)
    + [连接到 Campaign](start/connect.md)
-   + Campaign UI {#ac-ui}
-      + [了解 Campaign 界面](start/campaign-ui.md)
-      + [管理文件夹和视图](audiences/folders-and-views.md)
+   + [Campaign界面](start/campaign-ui.md)
    + [从 Classic v7 到 v8](start/v7-to-v8.md)
    + [常见问题解答](start/campaign-faq.md)
 + Campaign 管理 {#campaigns}
@@ -167,6 +165,7 @@ ht-degree: 98%
       + [数据模型最佳实践](dev/datamodel-best-practices.md)
    + 设置和配置 {#configuration}
       + [用户界面设置](config/ui-settings.md)
+      + [管理文件夹和视图](audiences/folders-and-views.md)
       + [电子邮件设置](config/email-settings.md)
       + [事务性消息设置](config/transactional-msg-settings.md)
       + [将 Campaign SDK 与您的应用程序集成  — 已弃用页面](config/push-config.md)

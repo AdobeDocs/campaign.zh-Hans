@@ -5,9 +5,9 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1491'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ Adobe Campaign允许您向将产品添加到购物车的客户发送通知电子
 1. [测试消息](#test-message-template).
 1. [发布消息模板](#publish-message-template).
 
-设计并发布事务型消息模板后，如果触发了相应的事件，则相关数据将通过PushEvent和PushEvents发送到Campaign [SOAP方法](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/processing/event-description.html){target="_blank"}，则会将投放发送到目标收件人。
+设计并发布事务型消息模板后，如果触发了相应的事件，则相关数据将通过PushEvent和PushEvents发送到Campaign [SOAP方法](../send/event-description.md)，则会将投放发送到目标收件人。
 
 ## 创建事件类型 {#create-event-types}
 
@@ -196,9 +196,7 @@ This information enables you to personalize message content using personalizatio
 
 您可以通过向之前创建的种子地址发送校样来测试消息投放。
 
-发送校样的过程与任何投放的过程相同。
-
-![](../assets/do-not-localize/book.png) 在中了解有关校样的更多信息 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html#sending-a-proof){target="_blank"}
+发送校样的过程与任何投放的过程相同。 在中了解有关校样的更多信息 [此部分](../send/preview-and-proof.md).
 
 但是，要发送事务型消息的校样，您需要执行以下操作：
 

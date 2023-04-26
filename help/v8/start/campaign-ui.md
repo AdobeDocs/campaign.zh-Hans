@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 2aa5dd736b93990317f842bcbe1f87374279f538
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 21%
+source-wordcount: '524'
+ht-degree: 20%
 
 ---
 
@@ -72,11 +72,11 @@ Web访问界面与控制台界面类似。 在浏览器中，您可以使用与�
 
 此工作区允许您访问资源管理器树以浏览所有功能和选项。
 
-左部分显示Campaign Explorer树，并允许您根据您的权限浏览实例的所有组件和设置。
+* 左部分显示Campaign Explorer树，并允许您根据您的权限浏览实例的所有组件和设置。 您可以添加和自定义文件夹，如 [本页](../audiences/folders-and-views.md).
 
-上部显示当前文件夹中的记录列表。 这些列表完全可自定义。 [了解详情](../config/ui-settings.md)
+* 上部显示当前文件夹中的记录列表。 这些列表完全可自定义。 [了解详情](../config/ui-settings.md)
 
-下部分显示选定记录的详细信息。
+* 下部分显示选定记录的详细信息。
 
 ## 语言{#languages}
 

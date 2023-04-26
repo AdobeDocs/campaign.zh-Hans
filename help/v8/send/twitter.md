@@ -4,10 +4,10 @@ description: 了解如何使用Adobe Campaign Social营销模块在Twitter上发
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
-source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 4%
+source-wordcount: '791'
+ht-degree: 3%
 
 ---
 
@@ -138,9 +138,7 @@ Adobe Campaign **社交营销** 模块，让您可以通过Twitter与客户和�
 
 1. 发送验证
 
-   在发送消息之前，请确保通过向测试帐户发送校样来验证消息：然后，您可以在专用Twitter帐户上获取消息的精确渲染，并检查内容和个性化。
-
-   ![](../assets/do-not-localize/book.png) [了解验证投放的关键步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=zh-Hans){target="_blank"}
+   在发送消息之前，请确保通过 [向测试帐户发送校样](../send/preview-and-proof.md):然后，您可以在专用Twitter帐户上获取消息的精确渲染，并检查内容和个性化。
 
 1. 发送私信
 

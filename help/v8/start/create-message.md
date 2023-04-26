@@ -5,9 +5,9 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '429'
 ht-degree: 100%
 
 ---
@@ -17,8 +17,6 @@ ht-degree: 100%
 借助 Adobe Campaign，您可以发送跨渠道活动内容，包括电子邮件、短信、推送通知和直邮，并使用各种专门的报告衡量其有效性。这些消息通过投放设计和发送，并且可以针对每个收件人进行个性化。
 
 核心功能包括定位、消息定义和个性化、通信执行和相关的运营报告。主要功能接入点是投放助手。此接入点可导向 Adobe Campaign 涵盖的多种功能。
-
-请参阅[ Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-about-delivery-creation-steps.html?lang=zh-Hans)以了解创建投放的重要步骤。
 
 Adobe Campaign v8 附带以下投放渠道：
 
@@ -79,11 +77,10 @@ Adobe Campaign v8 附带以下投放渠道：
 
 事务性消息（消息中心）是用于管理触发消息的 Campaign 模块。
 
-![](../assets/do-not-localize/glass.png) 请参阅[本节](../architecture/architecture.md#transac-msg-archi)以了解关于事务性消息功能的更多信息
+请参阅[本节](../architecture/architecture.md#transac-msg-archi)以了解关于事务性消息功能的更多信息
 
-![](../assets/do-not-localize/glass.png) 有关配置和发送事务性消息的步骤详情，请参阅[此页面](../send/transactional.md)
+有关配置和发送事务性消息的步骤详情，请参阅[此页面](../send/transactional.md)
 
-![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/transactional-email-with-attachments.html?lang=zh-Hans)以了解此功能在端到端用例中的作用{target="_blank"}
 
 ## 投放和跟踪日志{#gs-tracking-logs}
 

@@ -4,9 +4,9 @@ description: 了解如何自定义实例
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 18000763-5923-48bd-b62d-cccd3c11016d
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '491'
 ht-degree: 1%
 
 ---
@@ -33,12 +33,9 @@ Adobe Campaign利用数据模式：
 
 * 通过界面，使用 **新建字段** 助理
 
-   ![](../assets/do-not-localize/book.png) 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=en#configuring-campaign-classic){target="_blank"}
+   了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=en#configuring-campaign-classic){target="_blank"}
 
-* 以编程方式，通过扩展模式
-
-   ![](../assets/do-not-localize/glass.png) 了解如何在 [此部分](../dev/extend-schema.md).
-
+* 以编程方式扩展架构。 了解如何在 [此部分](../dev/extend-schema.md).
 
 您还可以在Campaign数据库中创建新表并扩展内置数据模型。
 
@@ -55,33 +52,25 @@ Adobe Campaign利用数据模式：
 
 营销活动输入表单可以根据您的实施进行调整。 您可以通过修改XML内容来添加或删除表单字段。
 
-![](../assets/do-not-localize/glass.png) 了解如何修改现有输入表单或在 [此部分](../dev/forms.md).
+了解如何修改现有输入表单或在 [此部分](../dev/forms.md).
 
 ## 自定义功能板{#gs-custom-dashboards}
 
 Adobe Campaign界面使用许多Web应用程序来访问、管理收件人、投放、营销活动、库存等内容并与之进行交互。 在界面中，它们以功能板的形式显示，且仅包含一个页面。
 
-现成的Web应用程序存储在“管理”>“配置”>“Web应用程序”节点中。
+内置的Web应用程序存储在 **管理>配置> Web应用程序** 文件夹。
 
-![](../assets/do-not-localize/book.png) 了解如何在Campaign中创建概述页面(位于 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=en#creating-a-single-page-web-application){target="_blank"}
+了解如何在Campaign中创建概述页面(位于 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=en#creating-a-single-page-web-application){target="_blank"}
 
 
 ## 自定义列表和创建过滤器 {#gs-lists-and-filters}
 
-### 从功能板访问数据
-
 营销活动列表附带预定义过滤器，以促进导航和数据可视化。
-
-![](../assets/do-not-localize/book.png) 了解有关 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/filtering-options.html?lang=en#about-filtering){target="_blank"}
-
-
-### 从资源管理器访问数据
 
 在Adobe Campaign Explorer树中导航时，数据库中包含的数据将显示在列表中。 您可以过滤这些列表、运行搜索、添加信息、过滤和排序数据。
 
-![](../assets/do-not-localize/book.png) 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/campaign-workspace/adobe-campaign-ui-lists.html?lang=en#getting-started){target="_blank"}
-
+了解如何在 [本页](../start/campaign-ui.md).
 
 您可以对这些列表应用过滤器，以仅显示运算符所需的数据。 然后，可以对过滤的数据执行操作。 过滤器配置允许您从列表中动态选择数据。 如果数据被修改，则会更新过滤的数据。
 
-![](../assets/do-not-localize/book.png) 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/filtering-data/creating-filters.html?lang=en#typology-of-available-filters){target="_blank"}
+了解有关 [本页](../audiences/create-filters.md).

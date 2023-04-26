@@ -5,9 +5,9 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1077'
 ht-degree: 1%
 
 ---
@@ -136,7 +136,7 @@ This information enables you to personalize message content using personalizatio
 
 发送校样的过程与任何投放的过程相同。
 
-![](../assets/do-not-localize/book.png) 在中了解有关校样的更多信息 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html#sending-a-proof){target="_blank"}
+在中了解有关校样的更多信息 [此部分](../send/preview-and-proof.md#proofs-send).
 
 但是，要发送事务型消息的校样，您需要执行以下操作：
 

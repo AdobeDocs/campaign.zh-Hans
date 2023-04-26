@@ -8,9 +8,9 @@ level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: e7c255d30e38c4e17779ef820e8984668ac5d48b
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1261'
 ht-degree: 4%
 
 ---
@@ -36,7 +36,7 @@ Android和iOS支持的版本，以及Campaign v8的Campaign SDK兼容版本，�
 
    >[!NOTE]
    >
-   >此集成密钥是在Adobe Campaign控制台(位于 **[!UICONTROL Information]** 专用于移动应用程序的服务选项卡。 请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html?lang=en#creating-ios-app).
+   >此集成密钥是在Adobe Campaign控制台(位于 **[!UICONTROL Information]** 专用于移动应用程序的服务选项卡。
 
 * **跟踪URL**:与Adobe Campaign跟踪服务器的地址匹配。
 * **营销URL**:以启用订阅的收集。
@@ -798,7 +798,6 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
 利用变量，可在收到通知后定义移动应用程序行为。 这些变量必须在移动设备应用程序代码和Adobe Campaign控制台(位于 **[!UICONTROL Variables]** 选项卡。
 
-![](../assets/do-not-localize/book.png) 在 **Campaign Classicv7文档** 在移动设备应用程序上： [iOS配置步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application.html){target="_blank"} and [Configuration steps for Andoid](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html){target="_blank"}.
 
 以下是允许移动设备应用程序收集通知中任何添加变量的代码示例。 在我们的示例中，我们使用“VAR”变量。
 

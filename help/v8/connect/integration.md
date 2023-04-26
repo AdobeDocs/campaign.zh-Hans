@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 11%
@@ -46,7 +46,7 @@ Campaign v8可以连接：
 在跨渠道通信中激活CRM数据：了解如何将联系人从CRM系统传递到Adobe Campaign，以及将促销活动数据从Adobe Campaign共享回CRM系统。
 CRM连接器支持快速、轻松的数据集成：Adobe Campaign为从CRM中可用的表中进行收集和选择提供了专门的助手。 并且可确保双向同步处理，让整个系统中的数据随时保持最新。
 
-![](../assets/do-not-localize/glass.png) 了解如何在中将Campaign与Microsoft Dynamics 365和Salesforce.com集成 [本页](crm.md)
+了解如何在中将Campaign与Microsoft Dynamics 365和Salesforce.com集成 [本页](crm.md)
 
 ## 使用联合数据访问连接第三方{#gs-fda}
 
@@ -64,6 +64,6 @@ CRM连接器支持快速、轻松的数据集成：Adobe Campaign为从CRM中可
 * 在您的Twitter帐户上发布推文
 * 收集新联系人
 
-![](../assets/do-not-localize/glass.png) 了解如何在中设置和使用Twitter集成 [本页](../connect/ac-tw.md).
+了解如何在中设置和使用Twitter集成 [本页](../connect/ac-tw.md).
 
-![](../assets/do-not-localize/glass.png) 了解如何在中创建Twitter帖子并向关注者发送私信 [本页](../send/twitter.md).
+了解如何在中创建Twitter帖子并向关注者发送私信 [本页](../send/twitter.md).

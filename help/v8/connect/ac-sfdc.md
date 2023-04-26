@@ -5,9 +5,9 @@ feature: Salesforce Integration
 role: Admin, User
 level: Beginner, Intermediate, Experienced
 exl-id: 1e20f3b9-d1fc-411c-810b-6271360286f9
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '348'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,6 @@ ht-degree: 3%
 >[!NOTE]
 >
 >Campaign中详细介绍了支持的SFDC版本 [兼容性矩阵](../start/compatibility-matrix.md).
-
 
 请按照以下步骤配置专用的外部帐户，以将Salesforce数据导入和导出到Adobe Campaign。
 
@@ -73,8 +72,7 @@ ht-degree: 3%
 
 1. 单击 **[!UICONTROL Next]** 然后 **[!UICONTROL Start]** 开始导入枚举。
 
-1. 浏览 **[!UICONTROL Administration > Platform > Enumerations]** 用于检查导入值的节点。
-
+1. 浏览 **[!UICONTROL Administration > Platform > Enumerations]** 用于检查导入值的节点。 了解有关 [本页](../config/ui-settings.md#enumerations).
 
 Adobe Campaign和Salesforce.com现已连接。 您可以在两个系统之间设置数据同步。
 

@@ -5,16 +5,159 @@ version: v8
 feature: Application Settings
 role: Admin, Developer
 level: Beginner, Intermediate, Experienced
-source-git-commit: 0b4483e0f16f14582a1a4bc28b0e1ff719823ef3
+source-git-commit: 5251885f0493eb41f93d07f0e22dcf77926e69dd
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 1%
+source-wordcount: '1845'
+ht-degree: 23%
 
 ---
 
 # Campaign用户界面设置 {#ui-settings}
 
-## 明细列表 {#enumerations}
+## 默认单位 {#default-units}
+
+在Adobe Campaign中，对于表示持续时间的字段（例如，资源的有效期、任务的批准截止时间等），值可以用以下方式表示 **单位**:
+
+* **[!UICONTROL s]** 表示秒
+* **[!UICONTROL mn]** 分钟
+* **[!UICONTROL h]** 表示小时
+* **[!UICONTROL d]** 表示天
+
+## 自定义Campaign Explorer{#customize-explorer}
+
+您可以向Campaign Explorer添加文件夹、创建视图和分配权限。
+
+了解如何在 [本页](../audiences/folders-and-views.md)
+
+## 管理和自定义列表{#customize-lists}
+
+在Campaign客户端控制台中，数据显示在列表中。 您可以根据自己的需要调整这些列表。 例如，您可以添加列、过滤数据、计数记录、保存和共享设置。
+
+此外，您还可以创建和保存过滤器。  了解有关 [本页](../audiences/create-filters.md).
+
+### 记录数 {#number-of-records}
+
+默认情况下，Adobe Campaign 会加载列表的前 200 条记录。这意味着不一定会显示您所查看的数据库表的所有记录。您可以统计列表中的记录数量并加载更多记录。
+
+在列表屏幕的右下角，**计数器**&#x200B;会显示已加载的记录数，以及数据库中的记录总数（应用任何过滤器之后的记录数）：
+
+![显示列表中的记录总数](assets/number-of-records.png)
+
+如果右侧显示问号而不是数字，例如 `240/?`，单击计数器以启动计算。
+
+要加载和显示其他记录，请单击 **[!UICONTROL Continue loading]**. 默认情况下，将加载200条记录。 要更改要加载的默认记录数，请使用 **[!UICONTROL Configure list]** 图标。 在列表配置窗口中，单击 **[!UICONTROL Advanced parameters]** （左下方）并更改要检索的行数。
+
+要加载所有记录，可右键单击列表，然后选择 **[!UICONTROL Load all]**。
+
+>[!CAUTION]
+>
+>当列表包含大量记录时，完全加载可能需要一些时间。
+
+### 添加和删除列 {#add-columns}
+
+对于每个列表，内置列配置可适于显示更多信息或隐藏未使用的列。
+
+当数据在记录详细信息中可见时，右键单击该字段并选择 **[!UICONTROL Add in the list]**.
+
+![在列表中添加字段](assets/add-in-the-list.png)
+
+该列会添加到现有列的右侧。
+
+![添加字段列](assets/add-a-column.png)
+
+您还可以使用列表配置屏幕添加和删除列：
+
+1. 在记录列表中，单击 **[!UICONTROL Configure list]** 图标。
+1. 双击要在 **[!UICONTROL Available fields]** 列表：它们会添加到 **[!UICONTROL Output columns]** 列表。
+
+   ![列表配置屏幕](assets/list-config-screen.png)
+
+
+   >[!NOTE]
+   >
+   >默认不会显示高级字段。要显示它们，请单击 **显示高级字段** 图标。
+   >
+   >通过具体图标标识各字段：SQL 字段、链接的表、已计算字段等。针对选中的每个字段，在可用字段的列表下会显示其说明。
+
+1. 使用向上/向下箭头修改 **显示顺序**.
+
+1. 单击 **[!UICONTROL OK]** 确认配置并显示结果。
+
+如果需要删除某列，请选择该列，然后单击 **垃圾** 图标。
+
+您可以使用 **[!UICONTROL Distribution of values]** 图标，查看当前文件夹中选定字段的值重新分区。
+
+![](assets/value-distribution.png)
+
+
+### 新建列 {#create-a-new-column}
+
+您可以创建新的列来显示列表中的其他字段。
+
+要创建列，请执行以下步骤：
+
+1. 在记录列表中，单击 **[!UICONTROL Configure list]** 图标。
+1. 单击 **[!UICONTROL Add]** 图标以在列表中显示新字段。
+1. 配置要在列中添加的字段。
+
+
+### 在子文件夹中显示数据 {#display-sub-folders-records}
+
+列表可显示：
+
+* 选定文件夹中包含的所有记录（默认）
+* 所选文件夹及其子文件夹中包含的所有记录
+
+要从一种显示模式切换到另一种显示模式，请单击 **[!UICONTROL Display sub-levels]** 中。
+
+### 保存列表配置 {#saving-a-list-configuration}
+
+列表配置在本地为每个用户定义。 清空本地缓存时，本地配置被禁用。
+
+默认情况下，设置参数将应用于具有相应文件夹类型的所有列表。 在从文件夹修改收件人列表的显示方式时，此配置将应用于所有其他收件人文件夹。
+
+您可以保存多个配置，以将其应用于同一类型的不同文件夹。 该配置会随包含数据的文件夹的属性一同保存，并可重新应用。
+
+要保存列表配置以便可重复使用，请执行以下步骤：
+
+1. 在资源管理器中，右键单击包含显示数据的文件夹。
+1. 选择 **[!UICONTROL Properties]**。
+1. 单击 **[!UICONTROL Advanced settings]** 然后在 **[!UICONTROL Configuration]** 字段。
+1. 单击 **[!UICONTROL OK]** 然后单击 **[!UICONTROL Save]**.
+
+然后，您可以将此配置应用到任何其他同类型的文件夹。 了解有关 [本页](../audiences/folders-and-views.md).
+
+### 导出列表 {#exporting-a-list}
+
+要从列表中导出数据，必须使用导出向导。要启动此向导，可从列表中选择要导出的元素，右键单击它后选择 **[!UICONTROL Export...]**。
+
+<!--The use of the import and export functions is explained in [Generic imports and exports](../../platform/using/about-generic-imports-exports.md).-->
+
+>[!CAUTION]
+>
+>不得使用“复制/粘贴”功能从列表中导出元素。
+
+### 对列表排序 {#sorting-a-list}
+
+列表中可包含大量的数据。您可以排序这些数据，或者应用简单或高级过滤器。利用排序，您可以按升序或降序顺序显示数据。您可以利用过滤器来定义并组合各种标准，从而仅显示所选的数据。
+
+单击列标题可应用升序或降序排序，或者取消数据排序。正在使用的排序状态和排序顺序会在列标签前方以蓝色箭头表示。列标签前方的红色破折号表示该排序已应用到数据库中已建立索引的数据。此排序方法用于优化排序作业。
+
+此外也可以配置排序或组合排序标准。为此请执行以下操作步骤：
+
+1. **[!UICONTROL Configure list]** 列表右侧。
+1. 在列表配置窗口中，单击 **[!UICONTROL Sorting]** 选项卡。
+1. 选择要排序的字段以及排序方向（升序或降序）。
+1. 排序优先级通过排序列的顺序来定义。要改变优先级，可使用适当的图标改变各列的顺序。
+
+   排序优先级不会影响列表中各类的显示情况。
+
+1. 单击 **[!UICONTROL Ok]** 确认此配置，并在列表中显示结果。
+
+
+
+
+## 使用枚举 {#enumerations}
 
 明细列表（也称为“明细列表”）是系统建议用于填充字段的值列表。 使用枚举来标准化这些字段的值，帮助进行数据输入或在查询中使用。
 

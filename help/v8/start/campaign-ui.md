@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: eed3396584940f99a865eef2358887b6bf5c4936
+source-git-commit: 2aa5dd736b93990317f842bcbe1f87374279f538
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 21%
@@ -74,10 +74,9 @@ Web访问界面与控制台界面类似。 在浏览器中，您可以使用与�
 
 左部分显示Campaign Explorer树，并允许您根据您的权限浏览实例的所有组件和设置。
 
-上部显示当前文件夹中的记录列表。 这些列表完全可自定义。 [了解详情](customize-ui.md)
+上部显示当前文件夹中的记录列表。 这些列表完全可自定义。 [了解详情](../config/ui-settings.md)
 
 下部分显示选定记录的详细信息。
-
 
 ## 语言{#languages}
 
@@ -96,7 +95,6 @@ Campaign v8 用户界面提供以下语言版本：
 >创建实例后，无法更改语言。
 
 语言会影响日期和时间格式。
-
 
 美式英语和英式英语的主要差别如下：
 

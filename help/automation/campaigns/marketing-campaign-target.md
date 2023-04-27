@@ -4,9 +4,9 @@ title: 营销活动目标受众
 description: 了解如何定义营销活动的受众
 feature: Campaigns, Audiences
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
-source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
+source-git-commit: a2518ea0c0ab23f50b3132b750a14e98b4ffad7d
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1457'
 ht-degree: 1%
 
 ---
@@ -236,10 +236,10 @@ To build the delivery target, you can define filtering criteria for the recipien
 此配置等同于 **[!UICONTROL Split]** 活动，您可以将目标划分为子集。 控制组是这些子集之一。
 
 
-#### 教程视频 {#create-email-video}
+### 教程视频 {#create-email-video}
 
-此视频介绍如何在Adobe Campaign中创建营销活动和电子邮件。
+此视频介绍如何向营销活动添加控制组。
 
->[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/335606?quality=12)
 
 还提供其他Campaign操作方法视频 [此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.

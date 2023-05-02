@@ -5,7 +5,7 @@ feature: Application Settings
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 7f27dbdd0ff53cd7437f956ccfef3d792020893b
+source-git-commit: c46eaa73deed643a4e92928b6ce2b1beb1596d73
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 4%
@@ -25,10 +25,10 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 
 >[!CAUTION]
->* 作为托管Cloud Services用户，外部帐户是按Adobe为您的实例配置的，不得修改。
-
 >
->* >在 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，特定 **[!UICONTROL Full FDA]** (ffda)外部帐户管理Campaign本地数据库与云数据库([!DNL Snowflake])。
+>* 作为托管Cloud Services用户，外部帐户是按Adobe为您的实例配置的，不得修改。
+>
+>* 在 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，特定 **[!UICONTROL Full FDA]** (ffda)外部帐户管理Campaign本地数据库与云数据库([!DNL Snowflake])。
 >
 
 
@@ -39,7 +39,8 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 ### 退回邮件 {#bounce-mails-external-account}
 
 >[!NOTE]
-从Campaign v8.3开始，提供了Microsoft Exchange Online OAuth 2.0的POP3身份验证功能。要检查您的版本，请参阅 [此部分](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion).
+>
+>从Campaign v8.3开始，提供了Microsoft Exchange Online OAuth 2.0的POP3身份验证功能。要检查您的版本，请参阅 [此部分](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion).
 
 的 **退回邮件** 外部帐户指定用于连接到电子邮件服务的外部POP3帐户。 为POP3访问配置的所有服务器都可用于接收回信。
 
@@ -66,7 +67,8 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 ![](assets/bounce_external_2.png)
 
 >[!CAUTION]
-在使用Microsoft OAuth 2.0配置POP3外部帐户之前，您首先需要在Azure门户中注册应用程序。 有关更多信息，请参阅此[页面](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}.
+>
+>在使用Microsoft OAuth 2.0配置POP3外部帐户之前，您首先需要在Azure门户中注册应用程序。 有关更多信息，请参阅此[页面](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}.
 
 要使用Microsoft OAuth 2.0配置外部POP3，请检查 **[!UICONTROL Microsoft OAuth 2.0]** ，并填写以下字段：
 
@@ -85,7 +87,8 @@ Adobe Campaign使用以下技术帐户来启用和执行特定进程。
 的 **[!UICONTROL Routing]** 外部帐户允许您根据安装的包配置Adobe Campaign中可用的每个渠道。
 
 >[!CAUTION]
-的 **[!UICONTROL Internal email delivery routing]** (defaultEmailBulk)外部帐户 **必须** 在Adobe Campaign v8中启用。
+>
+>的 **[!UICONTROL Internal email delivery routing]** (defaultEmailBulk)外部帐户 **必须** 在Adobe Campaign v8中启用。
 
 ### 执行实例 {#execution-instance}
 

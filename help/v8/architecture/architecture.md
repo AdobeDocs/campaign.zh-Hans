@@ -1,6 +1,6 @@
 ---
 title: Campaign架构快速入门
-description: 了解环境和部署基础知识，包括如何报告营销活动环境。
+description: 了解有关环境和部署的基础知识，包括如何报告 Campaign 环境。
 feature: Overview
 role: Data Engineer
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
 source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
 workflow-type: tm+mt
 source-wordcount: '1004'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 

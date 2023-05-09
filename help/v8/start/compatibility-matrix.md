@@ -6,9 +6,9 @@ role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
 source-git-commit: 61222c2b05f1346bd2560ff17b225153edf9e91e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->请注意，客户端控制台的32位版本将在8.5版本中弃用。 从8.6开始，客户端控制台将仅以64位提供。 有关如何升级操作系统的详细信息，请参阅此 [技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/console.html).
+>请注意，客户端控制台的 32 位版本将在 8.5 版本中弃用。从 8.6 开始，将仅支持 64 位客户端控制台。有关如何升级操作系统的详细信息，请参阅此[技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/console.html?lang=zh-Hans)。
 
 ### 操作系统{#op-systems}
 

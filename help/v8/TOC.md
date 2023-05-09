@@ -5,9 +5,9 @@ title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign 概述
 source-git-commit: 67368286cb04d97cbf4564846eab91d64b8f90f1
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '541'
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 0%
    + [重要功能](start/whats-new.md)
    + [组件和流程](start/ac-components.md)
    + [连接到 Campaign](start/connect.md)
-   + [Campaign界面](start/campaign-ui.md)
+   + [Campaign 界面](start/campaign-ui.md)
    + [从 Classic v7 到 v8](start/v7-to-v8.md)
    + [常见问题解答](start/campaign-faq.md)
 + Campaign 管理 {#campaigns}
@@ -163,12 +163,12 @@ ht-degree: 0%
       + [实施步骤](start/implement.md)
       + [自定义实例](dev/customize.md)
       + [数据模型最佳实践](dev/datamodel-best-practices.md)
-   + 设置和配置 {#configuration}
+   + 设置和配置{#configuration}
       + [用户界面设置](config/ui-settings.md)
       + [管理文件夹和视图](audiences/folders-and-views.md)
       + [电子邮件设置](config/email-settings.md)
       + [事务性消息设置](config/transactional-msg-settings.md)
-      + [将 Campaign SDK 与您的应用程序集成  — 已弃用页面](config/push-config.md)
+      + [将 Campaign SDK 与您的应用程序集成- 已弃用页面](config/push-config.md)
       + [外部帐户](config/external-accounts.md)
 + 开发人员资源 {#developer}
    + [Campaign 数据模型](dev/datamodel.md)

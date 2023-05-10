@@ -7,9 +7,9 @@ role: Admin, Developer
 level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 251ce05310f158b0f9ebccc94b42686f892338b1
+source-git-commit: 093204ca69cc0925bc1be5581e518995b50b3fc1
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '958'
 ht-degree: 2%
 
 ---
@@ -23,16 +23,15 @@ Adobe Experience Platform Mobile SDK通过与Android和iOS兼容的SDK为您的�
 
 要使用Adobe Experience Platform Mobile SDK设置您的应用程序，请执行以下步骤：
 
-1. 检查 [先决条件](#before-starting)
-1. 设置 [移动标记属性](#launch-property) 在Adobe Experience Platform数据收集中
-1. 详细获取Adobe Experience Platform Mobile SDK [本页](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"}
-1. （可选）启用日志记录和生命周期量度，如详细说明 [本页](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/){target="_blank"}
-1. （可选）添加 [Adobe Experience Platform为您的应用程序提供保证](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"} 验证实施
+1. 检查 [先决条件](#before-starting).
+1. 设置 [移动标记属性](#launch-property) 在Adobe Experience Platform数据收集中。
+1. 详细获取Adobe Experience Platform Mobile SDK [本页](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"}.
+1. （可选）启用日志记录和生命周期量度，如详细说明 [本页](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/){target="_blank"}.
+1. （可选）添加 [Adobe Experience Platform为您的应用程序提供保证](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"} 以验证您的实施。
 1. 关注 [Adobe Experience Platform Mobile SDK文档](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"} 以在您的应用程序中使用Adobe Experience Platform Mobile SDK进行设置。
-1. 安装和配置 [Adobe Campaign扩展](#configure-extension) 在移动资产中
+1. 安装和配置 [Adobe Campaign扩展](#configure-extension) 中。
 1. 在Adobe Campaign中配置iOS和Android Mobile Services，如下所述 [本页](../send/push.md#push-config).
 
-在此步骤结束时，您还应该在 [!DNL Adobe Experience Platform Data Collection]. 通常，您会为要管理的每个移动应用程序创建一个移动资产。 了解如何在 [Adobe Experience Platform Mobile SDK文档](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
 
 ## 先决条件 {#before-starting}
 
@@ -132,9 +131,7 @@ The mobile app push credential registration is required to authorize Adobe to se
 
 ## 在Adobe Experience Platform数据收集中设置移动标记属性 {#launch-property}
 
-设置移动资产后，移动设备应用程序开发人员或营销人员便可以配置移动SDK属性，例如会话超时、 [!DNL Adobe Experience Platform] 要定向的沙盒和 **[!UICONTROL Adobe Experience Platform Datasets]** 用于Mobile SDK将数据发送到的。
-
-有关如何设置 **移动属性** ，请参阅 [Adobe Experience Platform Mobile SDK文档](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
+设置移动资产后，移动设备应用程序开发人员或营销人员便可以配置移动SDK。 通常，您会为要管理的每个移动应用程序创建一个移动资产。 了解如何在 [Adobe Experience Platform Mobile SDK文档](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
 
 要获取推送通知工作所需的SDK，您将需要以下SDK扩展(适用于Android和iOS):
 

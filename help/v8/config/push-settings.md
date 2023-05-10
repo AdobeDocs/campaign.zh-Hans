@@ -7,9 +7,9 @@ role: Admin, Developer
 level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: e3ea361cc486096fe6c19ac469e8a71b636371ac
+source-git-commit: 251ce05310f158b0f9ebccc94b42686f892338b1
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1027'
 ht-degree: 2%
 
 ---
@@ -17,10 +17,24 @@ ht-degree: 2%
 
 # AEP SDK + Campaign:配置推送通知渠道 {#push-notification-configuration}
 
-开始使用Adobe Campaign发送推送通知之前，您需要确保移动设备应用程序上以及Adobe Experience Platform中标记的配置和集成均已到位……..........
+开始使用Adobe Campaign发送推送通知之前，您需要确保移动设备应用程序和Adobe Experience Platform中标记上已设置配置和集成。
 
+Adobe Experience Platform Mobile SDK通过与Android和iOS兼容的SDK为您的手机提供客户端集成API。
 
-## 开始前 {#before-starting}
+要使用Adobe Experience Platform Mobile SDK设置您的应用程序，请执行以下步骤：
+
+1. 检查 [先决条件](#before-starting)
+1. 设置 [移动标记属性](#launch-property) 在Adobe Experience Platform数据收集中
+1. 详细获取Adobe Experience Platform Mobile SDK [本页](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"}
+1. （可选）启用日志记录和生命周期量度，如详细说明 [本页](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/){target="_blank"}
+1. （可选）添加 [Adobe Experience Platform为您的应用程序提供保证](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"} 验证实施
+1. 关注 [Adobe Experience Platform Mobile SDK文档](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"} 以在您的应用程序中使用Adobe Experience Platform Mobile SDK进行设置。
+1. 安装和配置 [Adobe Campaign扩展](#configure-extension) 在移动资产中
+1. 在Adobe Campaign中配置iOS和Android Mobile Services，如下所述 [本页](../send/push.md#push-config).
+
+在此步骤结束时，您还应该在 [!DNL Adobe Experience Platform Data Collection]. 通常，您会为要管理的每个移动应用程序创建一个移动资产。 了解如何在 [Adobe Experience Platform Mobile SDK文档](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
+
+## 先决条件 {#before-starting}
 
 ### 设置权限 {#setup-permissions}
 
@@ -77,52 +91,46 @@ ht-degree: 2%
 * 对于 **AppleiOS**:了解如何在 [Apple文档](https://developer.apple.com/documentation/usernotifications/registering_your_app_with_apns){target="_blank"}
 * 对于 **Google Android**:了解如何在Android中设置Firebase Cloud Messaging客户端应用程序 [Google文档](https://firebase.google.com/docs/cloud-messaging/android/client){target="_blank"}
 
-### 将您的移动设备应用程序与Adobe Experience Platform SDK集成 {#integrate-mobile-app}
+<!--
+## Add your app push credentials in Adobe Experience Platform Data Collection {#push-credentials}
 
-Adobe Experience Platform Mobile SDK通过与Android和iOS兼容的SDK为您的手机提供客户端集成API。 关注 [Adobe Experience Platform Mobile SDK文档](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"} 以在您的应用程序中使用Adobe Experience Platform Mobile SDK进行设置。
+After granting the correct user permissions, you now need to add your mobile application push credentials in Adobe Experience Platform Data Collection. 
 
-在此步骤结束时，您还应该在 [!DNL Adobe Experience Platform Data Collection]. 通常，您会为要管理的每个移动应用程序创建一个移动资产。 了解如何在 [Adobe Experience Platform Mobile SDK文档](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
+The mobile app push credential registration is required to authorize Adobe to send push notifications on your behalf. Refer to the steps detailed below:
 
+1. From [!DNL Adobe Experience Platform Data Collection], browse to **[!UICONTROL App Surfaces]** in the left rail.
 
-## 步骤1:在Adobe Experience Platform数据收集中添加您的应用程序推送凭据 {#push-credentials}
+1. Click **[!UICONTROL Create App Surface]** to create a new configuration.
 
-授予正确的用户权限后，您现在需要在Adobe Experience Platform数据收集中添加移动应用程序推送凭据。
+1. Enter a **[!UICONTROL Name]** for the configuration.
 
-要授权Adobe代表您发送推送通知，需要注册移动设备应用程序推送凭据。 请参阅下面详述的步骤：
+1. From **[!UICONTROL Mobile Application Configuration]**, select the system and enter settings.
 
-1. 从 [!DNL Adobe Experience Platform Data Collection]，浏览至 **[!UICONTROL App Surfaces]** 中。
+    * **For iOS**
 
-1. 单击 **[!UICONTROL Create App Surface]** 创建新配置。
+        1. Enter the mobile app **Bundle Id** in the **[!UICONTROL App ID (iOS Bundle ID)]** field. The app Bundle ID can be found in the **General** tab of the primary target in **XCode**.
+        
+        1. Switched on the **[!UICONTROL Push Credentials]** button to add your credentials.
+        
+        1. Drag and drop your .p8 Apple Push Notification Authentication Key file. This key can be acquired from the **Certificates**, **Identifiers** and **Profiles** page.
 
-1. 输入 **[!UICONTROL Name]** ，以用于配置。
+        1. Provide the **Key ID**. This is a 10 character string assigned during the creation of p8 auth key. It can be found under **Keys** tab in **Certificates**, **Identifiers** and **Profiles** page.
+        
+        1. Provide the **Team ID**. This is a string value which can be found under the Membership tab.
 
-1. 从 **[!UICONTROL Mobile Application Configuration]**，选择操作系统：
+    * **For Android**
 
-   * **对于iOS**
+        1. Provide the **[!UICONTROL App ID (Android package name)]**: usually the package name is the app id in your `build.gradle` file.
 
-      1. 输入移动设备应用程序 **包Id** 在 **[!UICONTROL App ID (iOS Bundle ID)]** 字段。 可以在 **常规** 选项卡 **XCode**.
+        1. Switched on the **[!UICONTROL Push Credentials]** button to add your credentials.
 
-      1. 已打开 **[!UICONTROL Push Credentials]** 按钮以添加您的凭据。
+        1. Drag and drop the FCM push credentials. For more details on how to get the push credentials refer to [Google Documentation](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
+    
 
-      1. 拖放.p8 Apple推送通知身份验证密钥文件。 此密钥可从 **证书**, **标识符** 和 **用户档案** 页面。
+1. Click **[!UICONTROL Save]** to create your app configuration.
+-->
 
-      1. 提供 **密钥ID**. 这是在创建p8身份验证密钥期间分配的10个字符串。 可在 **键** 选项卡 **证书**, **标识符** 和 **用户档案** 页面。
-
-      1. 提供 **团队ID**. 这是一个字符串值，可在成员资格选项卡下找到。
-   * **对于Android**
-
-      1. 提供 **[!UICONTROL App ID (Android package name)]**:通常包名称是 `build.gradle` 文件。
-
-      1. 已打开 **[!UICONTROL Push Credentials]** 按钮以添加您的凭据。
-
-      1. 拖放FCM推送凭据。 有关如何获取推送凭据的更多详细信息，请参阅 [Google文档](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
-
-
-
-1. 单击 **[!UICONTROL Save]** 创建应用程序配置。
-
-
-## 步骤2:在Adobe Experience Platform数据收集中设置移动标记属性 {#launch-property}
+## 在Adobe Experience Platform数据收集中设置移动标记属性 {#launch-property}
 
 设置移动资产后，移动设备应用程序开发人员或营销人员便可以配置移动SDK属性，例如会话超时、 [!DNL Adobe Experience Platform] 要定向的沙盒和 **[!UICONTROL Adobe Experience Platform Datasets]** 用于Mobile SDK将数据发送到的。
 
@@ -145,7 +153,7 @@ Adobe Experience Platform Mobile SDK通过与Android和iOS兼容的SDK为您的�
 1. 最后，将此库设置为 **选择工作库** 按钮。
 
 
-## 步骤3:在移动资产中配置Adobe Campaign扩展 {#configure-extension}
+## 在移动资产中配置Adobe Campaign扩展 {#configure-extension}
 
 的 **Adobe Campaign Classic扩展** for Adobe Experience Platform Mobile SDK可为移动设备应用程序的推送通知提供支持，并帮助您收集用户推送令牌并管理与Adobe Experience Platform服务的交互测量。
 
@@ -158,7 +166,7 @@ Adobe Experience Platform Mobile SDK通过与Android和iOS兼容的SDK为您的�
 
 您现在可以将Campaign添加到应用程序，详情请参阅  [Adobe Experience Platform Mobile SDK文档](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#add-campaign-classic-to-your-app){target="_blank"}.
 
-## 步骤4:在Campaign中配置移动服务{#push-service}
+## 在Campaign中配置移动服务{#push-service}
 
 在 [!DNL Adobe Experience Platform Data Collection]，您需要创建两项服务(一项用于iOS设备，一项用于Android设备)，才能从发送推送通知 **[!DNL Adobe Campaign]**.
 

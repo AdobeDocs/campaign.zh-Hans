@@ -7,9 +7,9 @@ role: Admin, Developer
 level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: 3bef6d2544a86bf1d5efa4868b82ec59c7e36484
+source-git-commit: ff6990f3db1122670bff4919f417b9f9f04d3183
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '935'
 ht-degree: 2%
 
 ---
@@ -132,13 +132,14 @@ The mobile app push credential registration is required to authorize Adobe to se
 ## 在Adobe Experience Platform数据收集中设置移动标记属性 {#launch-property}
 
 设置移动资产后，移动设备应用程序开发人员或营销人员便可以配置移动SDK。 通常，您会为要管理的每个移动应用程序创建一个移动资产。 了解如何在 [Adobe Experience Platform Mobile SDK文档](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
+<!--
+To get the SDKs needed for push notification to work you will need the following SDK extensions, for both Android and iOS:
 
-要获取推送通知工作所需的SDK，您将需要以下SDK扩展(适用于Android和iOS):
-
-* **[!UICONTROL Mobile Core]** （自动安装）
-* **[!UICONTROL Profile]** （自动安装）
+* **[!UICONTROL Mobile Core]** (installed automatically)
+* **[!UICONTROL Profile]** (installed automatically)
 * **[!UICONTROL Adobe Experience Platform Edge]**
-* **[!UICONTROL Adobe Experience Platform Assurance]**，可选，但建议调试移动设备实施。
+* **[!UICONTROL Adobe Experience Platform Assurance]**, optional but recommended to debug the mobile implementation.
+-->
 
 详细了解 [!DNL Adobe Experience Platform Data Collection] 标记 [Adobe Experience Platform文档](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html){target="_blank"}.
 
@@ -154,7 +155,7 @@ The mobile app push credential registration is required to authorize Adobe to se
 
 的 **Adobe Campaign Classic扩展** for Adobe Experience Platform Mobile SDK可为移动设备应用程序的推送通知提供支持，并帮助您收集用户推送令牌并管理与Adobe Experience Platform服务的交互测量。
 
-此扩展已预安装在您的环境中，必须对其进行配置。 要为移动标记资产配置扩展，请执行以下步骤：
+此扩展适用于Campaign Classicv7和Campaign v8，它已预安装在您的环境中，必须对其进行配置。 要为移动标记资产配置扩展，请执行以下步骤：
 
 1. 打开之前创建的标记属性。
 1. 从左侧导航中，浏览到 **扩展**，然后打开 **目录** 选项卡。 使用搜索字段查找 **Adobe Campaign Classic** 扩展。

@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 5ac6bda9-86c8-4200-b285-6fee2a29039d
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
 workflow-type: tm+mt
-source-wordcount: '1585'
-ht-degree: 100%
+source-wordcount: '1583'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ _2021 年 10 月 28 日_
 <tbody> 
 <tr> 
 <td> <p>活动优化模块现已可用。使用此模块，您可以控制、筛选和监测投放发送情况。为了避免活动之间发生冲突，Adobe Campaign 可以应用特定的限制规则来测试各种活动组合。这可确保所发送的邮件符合客户的需求与期望以及公司的通信政策。</p>
-<p>有关更多信息，请参阅<a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=zh-Hans#campaign-optimization">详细文档</a>。</p>
+<p>有关更多信息，请参阅<a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html#campaign-optimization">详细文档</a>。</p>
 </td> 
 </tr> 
 </tbody> 

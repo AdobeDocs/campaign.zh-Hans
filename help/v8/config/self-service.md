@@ -5,10 +5,10 @@ feature: Control Panel
 role: User, Admin
 level: Beginner, Intermediate
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 96%
+source-wordcount: '380'
+ht-degree: 92%
 
 ---
 
@@ -24,7 +24,7 @@ Campaign 控制面板允许管理每个实例的设置并跟踪使用情况，�
 
 您还可以使用 Campaign 控制面板配置实例设置，如 IP 允许列表、URL 权限和检索有关实例的信息。
 
-![](../assets/do-not-localize/book.png) 在 [Campaign控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans){target="_blank"}.
+![](../assets/do-not-localize/book.png) 進一步瞭解 [Campaign控制面板檔案](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans){target="_blank"}.
 
 ## 如何访问控制面板？
 
@@ -32,11 +32,11 @@ Campaign 控制面板允许管理每个实例的设置并跟踪使用情况，�
 
 ## 控制面板常见问题解答
 
-[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=zh-Hans#control-panel){target="_blank"}以访问 Campaign 控制面板常见问题解答。
+[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#control-panel){target="_blank"}以访问 Campaign 控制面板常见问题解答。
 
 ## SFTP 管理
 
-在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。您可以监测它们的存储容量、管理允许列表上的 IP 地址和公共 SSH 密钥。[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=zh-Hans#sftp-management){target="_blank"}以了解更多信息。
+在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。您可以监测它们的存储容量、管理允许列表上的 IP 地址和公共 SSH 密钥。[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html#sftp-management){target="_blank"}以了解更多信息。
 
 ## 子域和证书
 
@@ -44,7 +44,7 @@ Campaign 控制面板允许管理每个实例的设置并跟踪使用情况，�
 
 * [监测子域](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html?lang=zh-Hans){target="_blank"}
 * [设置新子域](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hans){target="_blank"}
-* [监控子域的SSL证书](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=zh-Hans){target="_blank"}
+* [監視子網域的SSL憑證](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=zh-Hans){target="_blank"}
 
 ## 性能监控
 

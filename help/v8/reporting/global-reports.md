@@ -1,159 +1,159 @@
 ---
-title: Adobe Campaign全球报告
-description: 了解如何访问和使用全局报告
+title: Adobe Campaign全域報告
+description: 瞭解如何存取和使用全域報告
 feature: Reporting, Monitoring
 exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
 workflow-type: tm+mt
-source-wordcount: '1765'
-ht-degree: 4%
+source-wordcount: '1763'
+ht-degree: 8%
 
 ---
 
 # 全局报告 {#global-reports}
 
-这些报告涉及整个数据库中数据的活动。 要查看报表功能板，请转到 **[!UICONTROL Reports]** 选项卡。
+這些報表會涉及整個資料庫中的資料活動。 若要檢視報表控制面板，請前往 **[!UICONTROL Reports]** 標籤。
 
 ![](assets/reports-tab.png)
 
-要显示报表，请单击其名称。 默认情况下，可以使用以下报表：
+若要顯示報表，請按一下其名稱。 預設可使用下列報表：
 
 ![](assets/report-global-list.png)
 
 >[!NOTE]
 >
->此部分仅显示链接到投放的报表。
+>此區段僅顯示連結至傳遞的報告。
 
-* **[!UICONTROL Delivery throughput]** :请参阅 [投放吞吐量](#delivery-throughput).
-* **[!UICONTROL Browsers]** :请参阅 [浏览器](#browsers).
-* **[!UICONTROL Sharing to social networks]** :请参阅 [共享到社交网络](#sharing-to-social-networks).
-* **[!UICONTROL Statistics on sharing activities]** :请参阅 [关于共享活动的统计资料](#statistics-on-sharing-activities).
-* **[!UICONTROL Operating systems]** :请参阅 [操作系统](#operating-systems).
-* **[!UICONTROL URLs and click streams]** :请参阅 [URL和点击流](delivery-reports.md#urls-and-click-streams).
-* **[!UICONTROL Tracking indicators]** :请参阅 [跟踪指标](delivery-reports.md#tracking-indicators).
-* **[!UICONTROL Non-deliverables and bounces]** :请参阅 [无法交付项和退回](#non-deliverables-and-bounces).
-* **[!UICONTROL User activities]** :请参阅 [用户活动](#user-activities).
-* **[!UICONTROL Subscription tracking]** :请参阅 [订阅跟踪](#subscription-tracking).
-* **[!UICONTROL Delivery summary]** :请参阅 [投放摘要](delivery-reports.md#delivery-summary).
-* **[!UICONTROL Delivery statistics]** :请参阅 [投放统计](#delivery-statistics).
-* **[!UICONTROL Breakdown of opens]** :请参阅 [打开次数的划分](#breakdown-of-opens).
+* **[!UICONTROL Delivery throughput]** ：請參閱 [傳遞總處理能力](#delivery-throughput).
+* **[!UICONTROL Browsers]** ：請參閱 [瀏覽器](#browsers).
+* **[!UICONTROL Sharing to social networks]** ：請參閱 [分享至社交網路](#sharing-to-social-networks).
+* **[!UICONTROL Statistics on sharing activities]** ：請參閱 [共用活動的統計資料](#statistics-on-sharing-activities).
+* **[!UICONTROL Operating systems]** ：請參閱 [作業系統](#operating-systems).
+* **[!UICONTROL URLs and click streams]** ：請參閱 [URL和點按資料流](delivery-reports.md#urls-and-click-streams).
+* **[!UICONTROL Tracking indicators]** ：請參閱 [追蹤指標](delivery-reports.md#tracking-indicators).
+* **[!UICONTROL Non-deliverables and bounces]** ：請參閱 [無法傳遞的專案和退信](#non-deliverables-and-bounces).
+* **[!UICONTROL User activities]** ：請參閱 [使用者活動](#user-activities).
+* **[!UICONTROL Subscription tracking]** ：請參閱 [訂閱追蹤](#subscription-tracking).
+* **[!UICONTROL Delivery summary]** ：請參閱 [傳遞摘要](delivery-reports.md#delivery-summary).
+* **[!UICONTROL Delivery statistics]** ：請參閱 [傳遞統計資料](#delivery-statistics).
+* **[!UICONTROL Breakdown of opens]** ：請參閱 [開啟的劃分](#breakdown-of-opens).
 
 ## 投放吞吐量 {#delivery-throughput}
 
-此报表包含有关给定时段内整个平台的投放吞吐量的信息。 为了测量消息的传送速度，标准是每小时发送的消息数和消息的大小（以位/秒为单位）。 在以下示例中，第一个图表以蓝色显示成功投放，以橙色显示错误投放的数量。
+此報表包含指定期間內整個平台的傳遞輸送量資訊。 用于衡量邮件传送速度的标准是每小时发送的邮件数和邮件大小（以位/秒为单位）。在下面的示例中，第一个图表用蓝色显示成功投放，用橙色显示错误投放的数量。
 
 ![](assets/report-toolbar.png)
 
-您可以通过更改时间刻度来配置显示的值：1小时查看、3小时查看、24小时查看等。 单击 **[!UICONTROL Refresh]** 以确认您的选择。
+您可以透過變更時間表來設定顯示的值：1小時檢視、3小時檢視、24小時檢視等。 单击 **[!UICONTROL Refresh]** 以确认您的选择。
 
 >[!NOTE]
 >
->您还可以使用 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html).
+>您也可以使用監控每小時傳送的傳遞數量 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html).
 >
 >所有管理员用户都可访问控制面板。[此页面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)详细介绍了授予用户管理员访问权限的步骤。
 
 ## 用户活动 {#user-activities}
 
-此报表以图表形式显示每半小时、每小时或每天的打开数、点击数和交易记录的细分。
+此報表以圖表形式顯示每半小時、每小時或每日的開啟、點按和交易劃分。
 
 可以使用以下选项：
 
-* **[!UICONTROL Opens]** :已打开的消息总数。 未考虑文本格式的电子邮件。 [了解详情](metrics-calculation.md#tracking-opens-)。
-* **[!UICONTROL Clicks]** :投放中链接的总点击次数。 取消订阅链接和镜像页面的点击量不会被考虑在内。
+* **[!UICONTROL Opens]** ：已開啟的訊息總數。 未考慮文字格式的電子郵件。 [了解详情](metrics-calculation.md#tracking-opens-)。
+* **[!UICONTROL Clicks]** ：傳遞中連結的點按總數。 對取消訂閱連結和映象頁面的點選次數不會考慮在內。
 <!--
 * **[!UICONTROL Transactions]** : Total number of transactions after a message is received. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
 -->
 
 ## 无法投放项和退回 {#non-deliverables-and-bounces}
 
-此报表显示了无法交付项的细分以及每个互联网域的退回细分。
+此報表顯示無法傳遞的專案的劃分以及每個網域退信的劃分。
 
-的 **[!UICONTROL Number of messages processed]** 表示投放服务器处理的消息总数。 此值小于停止或暂停某些投放时（服务器处理之前）要投放的消息数。
+此 **[!UICONTROL Number of messages processed]** 代表傳遞伺服器處理的訊息總數。 此值低於某些傳遞已停止或暫停（在伺服器處理之前）時要傳遞的訊息數。
 
 **[!UICONTROL Breakdown of errors by type]**
 
 >[!NOTE]
 >
->此报表中显示的错误会触发隔离过程。 如需有关隔离管理的详细信息，请参阅 [隔离管理](../send/quarantines.md).
+>此報告中顯示的錯誤會觸發隔離程式。 如需隔離管理的詳細資訊，請參閱 [隔離管理](../send/quarantines.md).
 
-此报表的第一部分以值表和图表的形式显示无法交付项的划分。
+此報表的第一區段以值表格和圖表的形式顯示無法傳遞專案的劃分。
 
-对于每种错误类型，我们都有：
+對於每個錯誤型別，我們有：
 
-* 此类型的错误消息数，
-* 出现此类型错误的消息数与出现错误的消息总数的百分比，
-* 此类型的错误消息与已处理消息总数的百分比。
+* 此型別的錯誤訊息數目，
+* 此型別出現錯誤的訊息佔出現錯誤的訊息總數的百分比，
+* 此型別的錯誤訊息佔已處理訊息總數的百分比。
 
-使用以下指标：
+使用下列指標：
 
-* **[!UICONTROL User unknown]** :投放期间生成的错误类型，用于指示电子邮件地址无效。
-* **[!UICONTROL Invalid domain]** :发送投放以指示电子邮件地址的域错误或不存在时生成的错误类型。
-* **[!UICONTROL Inbox full]** :5次投放尝试表明收件人的收件箱包含过多邮件后，生成的错误类型。
-* **[!UICONTROL Account disabled]** :发送投放时生成的错误类型，用于指示地址不再存在。
-* **[!UICONTROL Rejected]** :当地址被IAP（互联网访问提供商）拒绝时(例如，在应用安全规则（防垃圾邮件软件）之后)生成的错误类型。
-* **[!UICONTROL Unreachable]** :消息分发字符串中发生的错误类型：SMTP中继事件、域名临时不可到达等
-* **[!UICONTROL Not connected]** :表示发送时收件人的手机已关闭或断开与网络的连接的错误类型。
+* **[!UICONTROL User unknown]** ：傳送期間產生的錯誤型別，表示電子郵件地址無效。
+* **[!UICONTROL Invalid domain]** ：傳送傳遞時產生的錯誤型別，指出電子郵件地址的網域錯誤或不存在。
+* **[!UICONTROL Inbox full]** ：在嘗試傳送五次後產生的錯誤型別，以指出收件者的收件匣包含太多郵件。
+* **[!UICONTROL Account disabled]** ：傳送傳遞時產生的錯誤型別，用以指出地址已不存在。
+* **[!UICONTROL Rejected]** ：當IAP （網際網路存取提供者）拒絕位址時產生的錯誤型別，例如在套用安全性規則（反垃圾郵件軟體）之後。
+* **[!UICONTROL Unreachable]** ：訊息發佈字串中發生的錯誤型別：SMTP轉送上的事件、暫時無法連線網域等
+* **[!UICONTROL Not connected]** ：錯誤型別，表示收件者的行動電話在傳送時已關閉或已中斷與網路的連線。
 
    >[!NOTE]
    >
-   >此指示器与上的投放相关 [移动渠道](../send/send.md) 仅。
+   >此指標與上的傳遞相關 [行動裝置頻道](../send/send.md) 僅限。
 
-   您可以通过单击 `[+]` 符号。 对于每种错误类型，您可以按域显示错误消息的划分。
+   您可以按一下「 」，開啟數值表格的每一行 `[+]` 符號。 對於每個錯誤型別，您可以依網域顯示錯誤訊息的劃分。
 
 **[!UICONTROL Breakdown of errors per domain]**
 
-此报告的第二部分以值表和图表的形式显示每个Internet域的错误细分。
+此報表的第二部分以值表格和圖表的形式，顯示每個網域錯誤的劃分資訊。
 
-对于每个域名，我们具有：
+對於每個網域名稱，我們有：
 
-* 此域中出错的消息数，
-* 与针对此域处理的消息总数相比，此域出错的消息百分比，
-* 此域的错误消息与错误消息总数的百分比。
+* 此網域有錯誤的訊息數，
+* 這個網域出現錯誤的訊息佔這個網域已處理訊息總數的百分比，
+* 此網域的錯誤訊息佔錯誤訊息總數的百分比。
 
-您可以通过单击 [+] 符号。 对于每种域类型，您可以按错误类型显示错误消息的划分。
+您可以按一下「 」，開啟數值表格的每一行 [+] 符號。 對於每個網域型別，您可以依錯誤型別顯示錯誤訊息的劃分。
 
 ![](assets/errors-report-details.png)
 
 >[!NOTE]
 >
->此报表中显示的域名在多维数据集级别定义。 要更改这些值，请编辑 **[!UICONTROL Delivery logs (broadlogrcp)]** 多维数据集。 如需详细信息，请参阅[此部分](gs-cubes.md)。的 **[!UICONTROL Others]** 类别包括不属于特定类的域名。
+>此報告中顯示的網域名稱是在多維資料庫層級定義的。 若要變更這些值，請編輯 **[!UICONTROL Delivery logs (broadlogrcp)]** 立方體。 如需详细信息，请参阅[此部分](gs-cubes.md)。此 **[!UICONTROL Others]** 類別包括不屬於特定類別的網域名稱。
 
 ## 浏览器 {#browsers}
 
-此报表显示投放收件人在相关时段使用的Internet浏览器的细目。
+此報表顯示有關期間傳遞收件者使用的網際網路瀏覽器劃分。
 
 >[!NOTE]
 >
->此报表中显示的值是估计值：将只考虑已单击投放的收件人。
+>此報表中顯示的值是預估值：只會考慮已點按傳送的收件者。
 
-**全局统计**
+**全域統計資料**
 
-有关浏览器使用情况的全局统计信息以值表和图表的形式呈现。
+瀏覽器使用的全域統計資料會以值表格和圖表的形式呈現。
 
 ![](assets/browser-report.png)
 
-使用以下指标：
+使用下列指標：
 
-* **[!UICONTROL Visitors]** :已定向并且已至少点击一次投放的收件人总数（每个Internet浏览器）。
-* **[!UICONTROL Pages viewed]** :投放中（每个Internet浏览器）所有投放的链接总点击次数。
-* **[!UICONTROL Usage rate]** :此比率表示访客（每个Internet浏览器）与访客总数之间的关联。
+* **[!UICONTROL Visitors]** ：已鎖定目標（每個網際網路瀏覽器）並已至少點按一次傳送的收件者總數。
+* **[!UICONTROL Pages viewed]** ：所有傳送的傳送中連結點選總數（每個網際網路瀏覽器）。
+* **[!UICONTROL Usage rate]** ：此比率代表訪客（每個網際網路瀏覽器）相對於訪客總數的劃分。
 
-**每个浏览器的统计信息**
+**每個瀏覽器的統計資料**
 
-在全局统计值表中，您可以单击每个浏览器名称以查看其使用情况统计信息。
+在全域統計值表格中，您可以按一下每個瀏覽器名稱來檢視其使用狀況統計值。
 
 ![](assets/browser-report-info.png)
 
-统计数据以曲线、图表和值表的形式呈现。
+統計資料會以曲線、圖表和值表的形式呈現。
 
-的 **[!UICONTROL History]** 曲线表示此浏览器每天的出席率。 比率是每日（在此浏览器上）访客数与当天以最高出勤率测量的访客数之比。
+此 **[!UICONTROL History]** 曲線代表此瀏覽器每日的出勤率。 此比率是每日訪客數（在此瀏覽器上）與最高出席率當日所測量訪客數的比率。
 
-的 **[!UICONTROL Breakdown per version]** 图表表示与（在此浏览器上）访客总数相比，每个版本的访客数细分。
+此 **[!UICONTROL Breakdown per version]** 圖表代表每個版本的訪客與訪客總數（在這個瀏覽器上）的比較。
 
-值表使用以下指标：
+值表使用下列指標：
 
-* **[!UICONTROL Global rate]** :此比率表示与所有浏览器上的访客总数相比，每个版本的访客的细分情况。
-* **[!UICONTROL Relative rate]** :此比率表示与访客总数（在此浏览器上）相比，每个版本的访客的细分情况。
+* **[!UICONTROL Global rate]** ：此比率代表每個版本的訪客與訪客總數（在所有瀏覽器上）的比較。
+* **[!UICONTROL Relative rate]** ：此比率代表每個版本的訪客與訪客總數（在此瀏覽器上）的比較。
 
 
 <!--
@@ -210,96 +210,96 @@ The following indicators are used:
 
 ## 操作系统 {#operating-systems}
 
-此报表显示了投放收件人在有关期间使用的操作系统的细目。
+此報表顯示相關期間內傳遞收件者使用的作業系統劃分。
 
 >[!NOTE]
 >
->此报表中显示的值是估计值：将只考虑已单击投放的收件人。
+>此報表中顯示的值是預估值：只會考慮已點按傳送的收件者。
 
-**全局统计**
+**全域統計資料**
 
-操作系统的全局使用统计数据以值表和图表的形式呈现。
+作業系統的全域使用狀況統計資料會以值表格和圖表的形式呈現。
 
 ![](assets/os-report.png)
 
-使用以下指标：
+使用下列指標：
 
-* **[!UICONTROL Visitors]** :点击投放至少一次的目标收件人（每个操作系统）总数的每日平均值。
-* **[!UICONTROL Pages viewed]** :所有投放的投放链接（每个操作系统）的每日平均点击次数。
-* **[!UICONTROL Rate of use]** :此比率表示访客（每个操作系统）与访客总数之间的关联。
+* **[!UICONTROL Visitors]** ：在傳遞中至少點按一次的目標收件者總數（每個作業系統）的每日平均數。
+* **[!UICONTROL Pages viewed]** ：所有傳送的傳送連結每日平均點按總數（每個作業系統）。
+* **[!UICONTROL Rate of use]** ：此比率代表相對於訪客總數的訪客劃分（每個作業系統）。
 
-**每个操作系统的统计信息**
+**每個作業系統的統計資料**
 
-在全局统计信息值表中，单击每个操作系统的名称以查看每个操作系统的统计信息。
+在全域統計值表格中，按一下每個作業系統的名稱，即可檢視每個作業系統的統計值。
 
 ![](assets/os-report-details.png)
 
-统计数据以曲线、图表和值表的形式呈现。
+統計資料會以曲線、圖表和值表的形式呈現。
 
-的 **[!UICONTROL History]** 曲线表示此操作系统每天的使用率。 此比率是每日（在此操作系统上）访客数与在出勤率最高的当天测量的访客数之比。
+此 **[!UICONTROL History]** 曲線代表每天使用此作業系統的速率。 此比率是每日訪客數（在此作業系統上）與最高出席人數當日所測量訪客數的比率。
 
-的 **[!UICONTROL Breakdown by version]** 图表表示每个版本的访客相对于此操作系统上的访客总数的划分。
+此 **[!UICONTROL Breakdown by version]** 圖表代表每個版本的訪客相對於此作業系統上的訪客總數的劃分。
 
-值表使用以下指标：
+值表使用下列指標：
 
-* **[!UICONTROL Global rate]** :此比率表示访客（每个版本）与整个操作系统中的访客总数之间的细分。
-* **[!UICONTROL Relative rate]** :此比率表示访客（每个版本）与此操作系统的访客总数之间的关系。
+* **[!UICONTROL Global rate]** ：此比率代表訪客（每個版本）與整個作業系統的訪客總數之間的劃分。
+* **[!UICONTROL Relative rate]** ：此比率代表此作業系統的訪客總數（每個版本）的劃分情況。
 
-## 订阅跟踪 {#subscription-tracking}
+## 訂閱追蹤 {#subscription-tracking}
 
-此报告可让您监控信息服务订阅情况。 它显示订阅和退订。
+此報告可讓您監視資訊服務的訂閱。 它會顯示訂閱和取消訂閱。
 
 ![](assets/service-report.png)
 
-通过单击 **[!UICONTROL Profiles and targets > Services and subscriptions]** 主页或资源管理器的节点。 选择所需的订阅，然后单击 **[!UICONTROL Reports]** 选项卡。 的 **[!UICONTROL Subscriptions tracking]** 报表默认可用。 它允许您查看订阅和退订趋势以及一段时间内的忠诚度比率。 您可以通过下拉列表配置此数据的表示形式。 单击 **[!UICONTROL Refresh]** 验证所选配置。
+按一下「 」以針對訂閱顯示 **[!UICONTROL Profiles and targets > Services and subscriptions]** 首頁節點或檔案總管。 選取所需的訂閱，然後按一下 **[!UICONTROL Reports]** 標籤。 此 **[!UICONTROL Subscriptions tracking]** 報告預設為可用。 它可讓您檢視一段期間的訂閱和取消訂閱趨勢以及忠誠度。 您可以透過下拉式清單設定此資料的表示方式。 按一下 **[!UICONTROL Refresh]** 驗證選取的組態。
 
 如需详细信息，请参阅[此页面](../start/subscriptions.md)。
 
-的 **[!UICONTROL Number subscribed to date]** 表示当前订阅的总人数。
+此 **[!UICONTROL Number subscribed to date]** 代表目前訂閱的總人數。
 
 **[!UICONTROL Overall evolution of subscriptions]**
 
-值表使用以下指标：
+值表使用下列指標：
 
-* **[!UICONTROL Subscribers]** :有关期间的订户总数。
-* **[!UICONTROL Subscriptions]** :有关期间的订阅数。
-* **[!UICONTROL Unsubscriptions]** :有关期间的退订次数。
-* **[!UICONTROL Evolution]** :取消订阅数减去订阅数。 该速率基于订阅者总数计算。
-* **[!UICONTROL Loyalty]** :相关时段的订阅者忠诚度比率。
+* **[!UICONTROL Subscribers]** ：相關期間的訂閱者總數。
+* **[!UICONTROL Subscriptions]** ：相關期間的訂閱數目。
+* **[!UICONTROL Unsubscriptions]** ：相關期間的取消訂閱數。
+* **[!UICONTROL Evolution]** ：取消訂閱數減去訂閱數。 此比率是根據訂閱者總數所計算。
+* **[!UICONTROL Loyalty]** ：相關期間訂閱者的忠誠度比率。
 
 **[!UICONTROL Subscription evolution curves]**
 
-此图表显示了相关期间订阅和退订的演变情况。
+此圖表顯示相關期間的訂閱和取消訂閱的演變。
 
 ## 投放统计信息 {#delivery-statistics}
 
-此报表显示按互联网域、处理和发送的所有消息、硬退回和软退回、打开、点击和退订的细分。
+此報表顯示依網際網路網域、所有已處理和已傳送訊息、硬退信和軟退信、開啟、點按和取消訂閱的劃分資訊。
 
 ![](assets/broadcast-report.png)
 
-使用以下指标：
+使用下列指標：
 
-* **[!UICONTROL Emails processed]** :投放服务器处理的消息总数。
-* **[!UICONTROL Delivered]** :成功处理的消息数量与已处理消息总数的百分比。
-* **[!UICONTROL Hard bounces]** :“硬”退回次数与已处理消息总数的百分比。
-* **[!UICONTROL Soft bounces]** :“软”退回次数与已处理消息总数的百分比。
+* **[!UICONTROL Emails processed]** ：傳遞伺服器處理的訊息總數。
+* **[!UICONTROL Delivered]** ：成功處理的訊息數相對於已處理訊息總數的百分比。
+* **[!UICONTROL Hard bounces]** ：相對於已處理訊息總數的「硬」退回數百分比。
+* **[!UICONTROL Soft bounces]** ：相對於已處理訊息總數的「軟」退回數百分比。
 
    >[!NOTE]
    >
-   >有关硬退回和软退回的更多信息，请参阅 [本页](../send/quarantines.md).
+   >如需硬跳出和軟跳出的詳細資訊，請參閱 [此頁面](../send/quarantines.md).
 
-* **[!UICONTROL Opens]** :至少打开一次消息的目标收件人数量与成功处理的消息数量之比。
-* **[!UICONTROL Clicks]** :与成功处理的消息数量相比，点击投放至少一次的人数百分比。
-* **[!UICONTROL Unsubscription]** :退订链接的点击次数与成功处理消息数的百分比。
+* **[!UICONTROL Opens]** ：至少開啟過一次訊息的目標收件者人數，與成功處理的訊息數目相比的百分比。
+* **[!UICONTROL Clicks]** ：與成功處理的訊息數相比，已至少點按一次傳遞的人數百分比。
+* **[!UICONTROL Unsubscription]** ：取消訂閱連結的點選次數與成功處理的訊息數之間的百分比。
 
 ## 打开的细分 {#breakdown-of-opens}
 
-此报表显示了在相关时段内，操作系统、设备和浏览器的打开次数的细分情况。 对于每个类别，使用两个图表。 第一个报表显示有关计算机和移动设备上打开次数的统计信息。 第二个显示仅与移动设备上的打开次数相关的统计信息。
+此報表顯示相關期間內依作業系統、裝置和瀏覽器劃分的開啟次數。 为每个类别使用了两个图表。第一个图表显示有关计算机和移动设备上的打开的统计数据。第二个图表显示仅与移动设备上的打开有关的统计数据。
 
-打开次数对应于已打开的消息总数。 不会计算文本格式电子邮件。 有关“跟踪”打开的更多信息，请参阅 [此部分](metrics-calculation.md#tracking-opens-).
+開啟次數與開啟的訊息總數相對應。 不計算文字格式電子郵件。 有關追蹤開啟的詳細資訊，請參閱 [本節](metrics-calculation.md#tracking-opens-).
 
 ![](assets/user-agent-report.png)
 
 >[!NOTE]
 >
->浏览器和操作系统名称构成了浏览器用户代理发送的已打开消息的信息的一部分。 Adobe Campaign利用其设备信息推导设备类型。
+>瀏覽器和作業系統名稱構成了已向其開啟訊息之瀏覽器使用者代理程式所傳送的部分資訊。 Adobe Campaign會使用其裝置資訊來推斷裝置型別。

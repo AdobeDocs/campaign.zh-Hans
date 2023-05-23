@@ -5,72 +5,72 @@ feature: Data Model
 role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
-source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
+source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '665'
 ht-degree: 6%
 
 ---
 
 # Campaign 数据模型快速入门{#gs-ac-datamodel}
 
-Adobe Campaign 提供了预定义的数据模型。本节详细介绍Adobe Campaign数据模型的内置表及其交互。 Adobe Campaign依赖于包含链接在一起的表的Cloud数据库。
+Adobe Campaign 提供了预定义的数据模型。本節提供Adobe Campaign資料模型的內建表格及其互動的部分詳細資訊。 Adobe Campaign仰賴包含連結在一起之表格的雲端資料庫。
 
-Adobe Campaign数据模型的基本结构可描述如下：
+Adobe Campaign資料模型的基本結構描述如下：
 
-* **收件人表**:数据模型依赖于主表，该主表默认为收件人表(nmsRecipient)。 此表存储了所有营销用户档案。
+* **收件者表格**：資料模型仰賴主要表格，該表格預設為收件者表格(nmsRecipient)。 此表格會儲存所有行銷設定檔。
 
-   ![](../assets/do-not-localize/glass.png) 有关Recipient表的更多信息，请参阅 [此部分](#ootb-profiles).
+   ![](../assets/do-not-localize/glass.png) 有關「收件者」表格的詳細資訊，請參閱 [本節](#ootb-profiles).
 
-* **投放表**:数据模型还包括专用于存储所有营销活动的部分。 通常为Delivery表(NmsDelivery)。 此表中的每个记录都表示投放操作或投放模板。 它包含执行投放所需的所有参数，如目标、内容等。
+* **傳遞表格**：資料模型也包含專用於儲存所有行銷活動的零件。 通常是傳遞表格(NmsDelivery)。 此表格中的每筆記錄都代表傳遞動作或傳遞範本。 它包含執行傳遞所需的所有引數，例如目標、內容等。
 
-* **日志表**:这些表存储与执行营销活动相关的所有日志。
+* **記錄表**：這些表格會儲存與行銷活動執行相關的所有記錄。
 
-   投放日志是所有渠道中发送给收件人或设备的所有消息。 主投放日志表(NmsBroadLogRcp)包含所有收件人的投放日志。
-主跟踪日志表(NmsTrackingLogRcp)存储所有收件人的跟踪日志。 跟踪日志是指收件人的反应，如电子邮件的打开次数和点击次数。 每个反应都对应一个跟踪日志。
-投放日志和跟踪日志将在特定时间段后删除(在Adobe Campaign中指定并可修改)。 因此，强烈建议定期导出日志。
+   傳遞記錄檔是跨所有通道傳送給收件者或裝置的所有訊息。 主要傳遞記錄表格(NmsBroadLogRcp)包含所有收件者的傳遞記錄。
+主要追蹤記錄表格(NmsTrackingLogRcp)會儲存所有收件者的追蹤記錄。 追蹤記錄會參照收件者的回應，例如電子郵件開啟次數和點按次數。 每個反應都與追蹤記錄相對應。
+傳送記錄檔和追蹤記錄檔會在特定時段後刪除，該特定時段已在Adobe Campaign中指定，且可加以修改。 因此，強烈建議定期匯出記錄檔。
 
-* **技术表**:收集用于应用程序过程的技术数据，包括运算符和用户权限(xtkGroup)、文件夹(XtkFolder)。
+* **技術表格**：收集用於應用程式流程的技術資料，包括操作員和使用者許可權(xtkGroup)、資料夾(XtkFolder)。
 
 >[!NOTE]
 >
->要访问每个表的描述，请转到管理员>配置>数据架构，从列表中选择资源，然后单击 **文档** 选项卡。
+>若要存取每個表格的說明，請前往「管理員>設定>資料結構」，從清單中選取資源並按一下 **檔案** 標籤。
 
-从Adobe Campaign开始，您需要评估默认数据模型，以检查哪个表最适合存储营销数据。
+開始使用Adobe Campaign時，您需要評估預設資料模型，以檢查哪個表格最適合儲存行銷資料。
 
-您可以将默认的“收件人”表与现成字段一起使用，如 [此部分](#ootb-profiles). 如果需要，可以使用两种机制扩展该扩展：
+您可以使用具有現成可用欄位的預設收件者表格，如中所述 [本節](#ootb-profiles). 如有需要，您可以使用兩種機制來擴充它：
 
-* [扩展现有表](extend-schema.md) 中的“隐藏主体”。 例如，您可以向收件人表中添加新的“忠诚度”字段。
-* [创建新表](create-schema.md)，例如“购买”表列出了数据库每个用户档案进行的所有购买，并将其链接到收件人表。
+* [擴充現有表格](extend-schema.md) 包含新欄位。 例如，您可以新增新的「忠誠度」欄位至收件者表格。
+* [建立新表格](create-schema.md)例如，「Purchase」表格會列出資料庫中每個設定檔進行的所有購買，並將其連結至收件者表格。
 
-![](../assets/do-not-localize/glass.png) 在中使用Campaign数据模型时了解最佳实践 [此部分](datamodel-best-practices.md).
+![](../assets/do-not-localize/glass.png) 在中使用Campaign資料模型時探索最佳實務 [本節](datamodel-best-practices.md).
 
-## 内置配置文件表 {#ootb-profiles}
+## 內建設定檔表格 {#ootb-profiles}
 
-Adobe Campaign中内置的收件人表(nmsrecipient)为构建数据模型提供了一个良好的起点。 它有许多预定义的字段和表链接，可轻松扩展。 当您主要定向收件人时，这种方法特别有用，因为它适合以收件人为中心的简单数据模型。
+Adobe Campaign中的內建收件者表格(nmsrecipient)是建立資料模型的良好起點。 它具有許多可輕鬆擴充的預先定義欄位和表格連結。 當您主要鎖定收件者時，這項功能特別有用，因為它適合簡單的收件者導向資料模型。
 
-使用标准收件人表的好处包括：
+使用標準收件者表格的好處包括：
 
-* 使用订阅、种子列表等关键功能开箱即用
-* 使用以收件人为中心的数据模型提供营销数据库
-* 更快的实施
-* 由支持人员和合作伙伴轻松维护
+* 使用重要功能（例如訂閱、種子清單等）進行開箱即用
+* 以收件者為中心的資料模型提供行銷資料庫
+* 更快速的實作
+* 由支援和合作夥伴輕鬆維護
 
-可以扩展收件人表，但不能减少表中字段或链接的数量。
+可以擴充收件者表格，但不能減少表格中的欄位或連結數量。
 
-![](../assets/do-not-localize/glass.png) 了解如何在 [此部分](extend-schema.md).
+![](../assets/do-not-localize/glass.png) 瞭解如何在中擴充現有結構描述 [本節](extend-schema.md).
 
-![](../assets/do-not-localize/book.png) 探索中内置的收件人表扩展示例 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=en#extending-a-table){target="_blank"}
+![](../assets/do-not-localize/book.png) 探索中內建收件者表格擴充功能的範例 [Campaign Classic v7檔案](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#extending-a-table){target="_blank"}
 
-您还可以使用其他收件人表来更好地满足您的业务或功能要求。 此方法存在限制，有关描述请参见 [此部分](custom-recipient.md).
+您也可以使用不同的收件者表格，以更符合您的業務或功能需求。 此方法具有限制，相關說明請參閱 [本節](custom-recipient.md).
 
-## Campaign表和云数据库
+## Campaign表格和雲端資料庫
 
-为了更好地了解Campaign v8中的表管理，请注意，在 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，则表会在Campaign及其Snowflake云数据库之间复制。
+若要更瞭解Campaign v8中的表格管理，請注意 [企業(FFDA)部署](../architecture/enterprise-deployment.md)，表格會在Campaign與其Snowflake雲端資料庫之間複製。
 
-![](../assets/do-not-localize/glass.png) 进一步了解 [此部分](../architecture/replication.md).
+![](../assets/do-not-localize/glass.png) 進一步瞭解中的復寫策略和機制 [本節](../architecture/replication.md).
 
 **相关主题**
 
-![](../assets/do-not-localize/glass.png) 了解如何在 [此部分](../start/import.md)
-![](../assets/do-not-localize/glass.png) 在 [此部分](../start/audiences.md)
+![](../assets/do-not-localize/glass.png) 探索如何在中匯入設定檔 [本節](../start/import.md)
+![](../assets/do-not-localize/glass.png) 進一步瞭解Campaign對象，位於 [本節](../start/audiences.md)

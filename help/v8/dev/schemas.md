@@ -1,54 +1,54 @@
 ---
-title: 使用Campaign模式
-description: 模式入门
+title: 使用Campaign綱要
+description: 開始使用結構描述
 feature: Schema Extension
 role: Developer
 level: Intermediate, Experienced
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1262'
 ht-degree: 5%
 
 ---
 
 # 使用模式{#gs-ac-schemas}
 
-应用中所承载数据的物理和逻辑结构以 XML 格式进行描述。它遵循Adobe Campaign特有的语法，称为 **模式**.
+应用中所承载数据的物理和逻辑结构以 XML 格式进行描述。它會遵循Adobe Campaign特有的語法，稱為 **綱要**.
 
-模式是与数据库表关联的XML文档。 它定义了数据结构并描述了表的SQL定义：
+綱要是與資料庫表格相關聯的XML檔案。 它定義資料結構，並描述表格的SQL定義：
 
-* 表的名称
+* 資料表的名稱
 * 字段
-* 与其他表的链接
+* 與其他表格的連結
 
-它还描述了用于存储数据的XML结构：
+它也說明用來儲存資料的XML結構：
 
 * 元素和属性
-* 元素层次结构
-* 元素和属性类型
-* 默认值
-* 标签、描述和其他属性。
+* 元素階層
+* 元素和屬性型別
+* 預設值
+* 標籤、說明和其他屬性。
 
-通过架构，您可以定义数据库中的实体。 每个实体都有一个架构。
+結構描述可讓您定義資料庫中的實體。 每個實體都有一個結構描述。
 
-Adobe Campaign采用数据模式：
+Adobe Campaign採用資料結構描述來：
 
-* 定义应用程序中的数据对象如何与基础数据库表绑定。
+* 定義應用程式內的資料物件如何繫結至基礎資料庫表格。
 * 定义 Campaign 应用程序中不同数据对象之间的链接。
 * 定义并描述每个对象中包含的个别字段。
 
-要更好地了解Campaign内置表及其交互情况，请参阅 [此部分](datamodel.md).
+如需Campaign內建表格及其互動的詳細資訊，請參閱 [本節](datamodel.md).
 
 >[!CAUTION]
 >
->某些内置的Campaign架构在云数据库上具有关联的架构。 这些架构由 **Xxl** 命名空间和的值不得修改或扩展。
+>某些內建的Campaign結構描述在雲端資料庫上具有相關聯的結構描述。 這些結構描述的識別方式為 **Xxl** 名稱空間和不可修改或擴充。
 
-## 架构的语法 {#syntax-of-schemas}
+## 結構描述的語法 {#syntax-of-schemas}
 
-架构的根元素为 **`<srcschema>`**. 它包含 **`<element>`** 和 **`<attribute>`** 子元素。
+結構描述的根元素為 **`<srcschema>`**. 它包含 **`<element>`** 和 **`<attribute>`** 子元素。
 
-第一个 **`<element>`** 子元素与实体的根重合。
+第一個 **`<element>`** 子元素與實體的根一致。
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -64,56 +64,56 @@ Adobe Campaign采用数据模式：
 
 >[!NOTE]
 >
->实体的根元素与架构同名。
+>實體的根元素與結構描述同名。
 
 ![](assets/schema_and_entity.png)
 
-的 **`<element>`** 标记定义实体元素的名称。 **`<attribute>`** 架构的标记定义 **`<element>`** 标记。
+此 **`<element>`** 標籤定義實體元素的名稱。 **`<attribute>`** 架構的標籤會定義 **`<element>`** 連結至的標籤。
 
-## 模式的标识 {#identification-of-a-schema}
+## 結構描述的識別 {#identification-of-a-schema}
 
-数据架构通过其名称及其命名空间进行标识。
+資料結構會以其名稱和名稱空間來識別。
 
-命名空间允许您按关注区域对一组架构进行分组。 例如， **木槿** 命名空间用于客户特定的配置(**客户**)。
+名稱空間可讓您依感興趣的區域來分組一組結構描述。 例如， **cus** 名稱空間用於客戶特定的設定(**客戶**)。
 
 >[!CAUTION]
 >
->作为标准，命名空间的名称必须简洁明了，并且必须只包含根据XML命名规则授权的字符。
+>作為標準，名稱空間的名稱必須簡潔，而且根據XML命名規則，只能包含授權字元。
 >
->标识符不得以数字字符开头。
+>識別碼不能以數字字元開頭。
 
-## 保留的命名空间 {#reserved-namespaces}
+## 保留的名稱空間 {#reserved-namespaces}
 
-某些命名空间是保留的，用于描述操作Adobe Campaign应用程序所需的系统实体。 以下命名空间 **不得使用** 要标识新架构，请使用任何大写/小写组合：
+某些名稱空間是保留的，用於說明Adobe Campaign應用程式運作所需的系統實體。 以下名稱空間 **不得使用** 若要識別任何大寫/小寫組合中的新結構描述：
 
-* **xxl**:保留给云数据库架构
-* **xtk**:平台系统数据保留
-* **nl**:保留给应用程序的整体使用
-* **nms**:保留给投放（收件人、投放、跟踪等）
-* **ncm**:内容管理保留
-* **临时**:保留给临时架构
-* **crm**:保留到CRM连接器集成
+* **xxl**：保留給雲端資料庫結構
+* **xtk**：保留給平台系統資料
+* **nl**：保留給應用程式的整體使用
+* **nms**：保留給傳遞（收件者、傳遞、追蹤等）
+* **ncm**：保留給內容管理
+* **temp**：保留給臨時結構描述
+* **crm**：保留給CRM聯結器整合
 
-架构的标识键是使用命名空间和名称以冒号分隔的字符串；例如： **nms:recipient**.
+結構描述的識別索引鍵是使用名稱空間和以冒號分隔的名稱建置的字串；例如： **nms：recipient**.
 
-## 创建或扩展Campaign模式 {#create-or-extend-schemas}
+## 建立或擴充Campaign綱要 {#create-or-extend-schemas}
 
-要向Campaign中的一个核心数据模式(例如收件人表(nms:recipient))添加字段或其他元素，您必须扩展该模式。
+若要將欄位或其他元素新增至Campaign的其中一個核心資料結構，例如收件者表格(nms：recipient)，您必須擴充該結構。
 
-![](../assets/do-not-localize/glass.png) 有关更多信息，请参阅 [扩展模式](extend-schema.md).
+![](../assets/do-not-localize/glass.png) 有關詳細資訊，請參閱 [擴充綱要](extend-schema.md).
 
-要添加Adobe Campaign中不存在的全新数据类型（例如合同表），您可以直接创建自定义架构。
+若要新增Adobe Campaign中不存在的全新資料型別（例如合約表格），您可以直接建立自訂結構描述。
 
-![](../assets/do-not-localize/glass.png) 有关更多信息，请参阅 [创建新架构](create-schema.md).
+![](../assets/do-not-localize/glass.png) 有關詳細資訊，請參閱 [建立新結構描述](create-schema.md).
 
 ![](assets/schemaextension_1.png)
 
 
-创建或扩展架构以在中工作后，最佳做法是按它们在下面显示的顺序定义其XML内容元素。
+建立或擴充要使用的結構描述後，最佳實務便是以其XML內容元素在下方出現的順序來定義該元素。
 
 ## 明细列表 {#enumerations}
 
-首先，在架构的主元素之前定义枚举。 利用这些值，可在列表中显示值，以限制用户对给定字段所做的选择。
+列舉會先於結構描述的主要元素之前定義。 它們可讓您在清單中顯示值，以限制使用者對指定欄位擁有的選擇。
 
 示例:
 
@@ -125,7 +125,7 @@ Adobe Campaign采用数据模式：
 </enumeration>
 ```
 
-在定义字段时，您随后可以使用此枚举，如下所示：
+定義欄位時，您可以使用此分項清單，如下所示：
 
 ```
 <attribute desc="Type of Transaction" label="Transaction Type" name="transactionType" 
@@ -134,7 +134,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 >[!NOTE]
 >
->您还可以使用用户管理的枚举(通常在 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** )以指定给定字段的值。 这些是有效的全局枚举，如果枚举在您正在使用的特定架构之外使用，则最好选择这些枚举。
+>您也可以使用使用者管理的分項清單(通常位於 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** )來指定指定欄位的值。 這些實際上是全域分項清單，如果您的分項清單可能用於您正在使用的特定結構描述之外，那麼這是更好的選擇。
 
 <!--
 ## Index {#index} 
@@ -168,13 +168,13 @@ For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-f
 
 -->
 
-## 键 {#keys}
+## 金鑰 {#keys}
 
-每个表都必须至少具有一个键，并且通常情况下，可使用 **奥托普** 属性设置为 **true**.
+每個資料表都必須至少有一個索引鍵，且通常會使用，在結構描述的主要元素中自動建立該資料表。 **autopk** 屬性設定為 **true**.
 
-此外，在 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，则使用 **@autouuid** 将其设置为 **true**.
+此外，在 [企業(FFDA)部署](../architecture/enterprise-deployment.md)，使用 **@autouuid** 並將其設定為 **true**.
 
-还可以使用 **内部** 属性。
+主索引鍵也可使用定義 **內部** 屬性。
 
 示例:
 
@@ -184,45 +184,45 @@ For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-f
 </key>
 ```
 
-在本例中，不要让 **@autopk** 或 **@autouuid** 属性会创建一个名为“id”的默认主键，我们将指定自己的“houselId”主键。
+在此範例中，不要讓 **@autopk** 或 **@autouuid** 屬性會建立名為「id」的預設主索引鍵，我們指定自己的「householdId」主索引鍵。
 
 >[!CAUTION]
 >
->创建新架构或在架构扩展期间，您需要为整个架构保留相同的主键序列值(@pkSequence)。
+>建立新結構描述或在結構描述擴充期間，您需要為整個結構描述保留相同的主要索引鍵序列值(@pkSequence)。
 
-![](../assets/do-not-localize/glass.png) 了解有关 [此部分](database-mapping.md#management-of-keys).
+![](../assets/do-not-localize/glass.png) 進一步瞭解中的金鑰 [本節](database-mapping.md#management-of-keys).
 
-## 属性（字段） {#attributes--fields-}
+## 屬性（欄位） {#attributes--fields-}
 
-利用属性，可定义构成数据对象的字段。 您可以使用 **[!UICONTROL Insert]** 按钮，将空属性模板拖放到XML中光标所在的位置。 在[此部分](create-schema.md)中了解更多信息。
+屬性可讓您定義組成資料物件的欄位。 您可以使用 **[!UICONTROL Insert]** 結構描述版本工具列中的按鈕，將空白屬性範本拖放至游標所在的XML中。 在[此章节](create-schema.md)中了解更多信息。
 
 ![](assets/schemaextension_2.png)
 
-在 `<attribute>` 元素部分 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=en#content-model). 以下是一些最常用的属性： **@advanced**, **@dataPolicy**, **@default**, **@desc**, **@enum**, **@expr**, **@label**, **@length**, **@name**, **@notNull**, **@required**, **@ref**, **@xml**, **@type**.
+完整的屬性清單可在 `<attribute>` 中的元素區段 [Campaign Classic v7檔案](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html#content-model). 以下是一些較常用的屬性： **@advanced**， **@dataPolicy**， **@default**， **@desc**， **@enum**， **@expr**， **@label**， **@length**， **@name**， **@notNull**， **@required**， **@ref**， **@xml**， **@type**.
 
-![](../assets/do-not-localize/book.png) 有关每个属性的更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=en#configuring-campaign-classic).
+![](../assets/do-not-localize/book.png) 如需每個屬性的詳細資訊，請參閱下列連結中的「屬性」說明： [Campaign Classic v7檔案](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic).
 
 ### 示例 {#examples}
 
-定义默认值的示例：
+定義預設值的範例：
 
 ```
 <attribute name="transactionDate" label="Transaction Date" type="datetime" default="GetDate()"/>
 ```
 
-将通用属性用作字段模板的示例也标记为必填：
+將通用屬性作為標示為必要欄位的範本的範例：
 
 ```
 <attribute name="mobile" label="Mobile" template="nms:common:phone" required="true" />
 ```
 
-使用隐藏的计算字段的示例 **@advanced** 属性：
+使用隱藏的計算欄位範例 **@advanced** 屬性：
 
 ```
 <attribute name="domain" label="Email domain" desc="Domain of recipient email address" expr="GetEmailDomain([@email])" advanced="true" />
 ```
 
-XML字段的示例也存储在SQL字段中，该字段具有 **@dataPolicy** 属性。
+XML欄位範例也儲存在SQL欄位中，而且具有 **@dataPolicy** 屬性。
 
 ```
 <attribute name="secondaryEmail" label="Secondary email address" length="100" xml="true" sql="true" dataPolicy="email" />
@@ -230,33 +230,33 @@ XML字段的示例也存储在SQL字段中，该字段具有 **@dataPolicy** 属
 
 >[!CAUTION]
 >
->尽管大多数属性都根据1-1基数链接到数据库的物理字段，但XML字段或计算字段并非如此。\
->XML字段存储在表的Memo字段(“mData”)中。\
->但是，每次启动查询时都会动态创建计算字段，因此它仅存在于应用层中。
+>雖然大多數屬性是根據1-1基數連結到資料庫的實體欄位，但XML欄位或計算欄位則不是這種情況。\
+>XML欄位會儲存在表格的備忘錄欄位(「mData」)中。\
+>不過，計算欄位會在每次啟動查詢時動態建立，因此只存在於應用程式層中。
 
 ## 链接 {#links}
 
-链接是架构主元素中的最后一些元素。 它们定义实例中所有不同架构如何彼此关联。
+連結是結構描述中主要元素的最後幾個元素。 它們定義執行個體中所有不同的結構描述如何彼此關聯。
 
-链接在包含 **外键** 链接到的表格。
+在包含下列專案的結構描述中宣告連結： **外部索引鍵** 連結至的表格中。
 
-基数有三种类型：1-1、1-N和N-N默认使用的是1-N类型。
+基數有三種型別：1-1、1-N和N-N。這是預設使用的1-N型別。
 
 ### 示例 {#examples-1}
 
-收件人表（即装即用模式）和自定义事务表之间的1-N链接示例：
+收件者表格（現成可用的綱要）和自訂交易表格之間的1-N連結範例：
 
 ```
 <element label="Recipient" name="lnkRecipient" revLink="lnkTransactions" target="nms:recipient" type="link"/>
 ```
 
-自定义架构“Car”（位于“cus”命名空间中）与收件人表之间的1-1链接示例：
+自訂結構「Car」（位於「cus」名稱空間）與收件者表格之間的1-1連結範例：
 
 ```
 <element label="Car" name="lnkCar" revCardinality="single" revLink="recipient" target="cus:car" type="link"/>
 ```
 
-收件人表和地址表之间基于电子邮件地址而非主键的外部连接示例：
+收件者表格和位址表格之間的外部聯結範例（根據電子郵件地址而非主索引鍵）：
 
 ```
 <element name="emailInfo" label="Email Info" revLink="recipient" target="nms:address" type="link" externalJoin="true">
@@ -264,13 +264,13 @@ XML字段的示例也存储在SQL字段中，该字段具有 **@dataPolicy** 属
 </element>
 ```
 
-此处，“xpath-dst”对应于目标架构中的主键，而“xpath-src”对应于源架构中的外键。
+此處「xpath-dst」對應於目標架構中的主索引鍵，「xpath-src」對應於來源架構中的外部索引鍵。
 
 ## 审核跟踪 {#audit-trail}
 
-您希望在架构底部包含的一个有用元素是跟踪元素（审核跟踪）。
+結構描述底部可能想要包含一個有用元素，即追蹤元素（稽核軌跡）。
 
-使用以下示例可包含与创建日期、创建数据的用户、日期以及表格中所有数据的上次修改作者相关的字段：
+使用下列範例來包含與建立日期、建立資料的使用者、日期和表格中所有資料的上次修改作者相關的欄位：
 
 ```
 <element aggregate="xtk:common:auditTrail" name="auditTrail"/>
@@ -278,7 +278,7 @@ XML字段的示例也存储在SQL字段中，该字段具有 **@dataPolicy** 属
 
 ## 更新数据库结构 {#updating-the-database-structure}
 
-完成并保存更改后，任何可能影响SQL结构的更改都需要应用到数据库。 为此，请使用数据库更新助手。
+完成並儲存變更後，任何可能影響SQL結構的變更都必須套用至資料庫。 要執行此操作，請使用資料庫更新輔助程式。
 
 ![](assets/schemaextension_3.png)
 
@@ -286,4 +286,4 @@ XML字段的示例也存储在SQL字段中，该字段具有 **@dataPolicy** 属
 
 >[!NOTE]
 >
->如果修改不影响数据库结构，您只需重新生成架构即可。 为此，请选择要更新的架构，右键单击并选择 **[!UICONTROL Actions > Regenerate selected schemas...]**.
+>修改不會影響資料庫結構時，您只需要重新產生結構描述即可。 要執行此操作，請選取要更新的結構描述，按一下滑鼠右鍵並選擇 **[!UICONTROL Actions > Regenerate selected schemas...]**.

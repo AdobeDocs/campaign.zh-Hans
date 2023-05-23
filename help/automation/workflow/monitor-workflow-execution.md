@@ -4,271 +4,271 @@ title: 监测工作流执行
 description: 监测工作流执行
 feature: Workflows
 exl-id: bc13d706-7888-42eb-9116-5538e68cd515
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
 workflow-type: tm+mt
-source-wordcount: '1936'
-ht-degree: 0%
+source-wordcount: '1934'
+ht-degree: 2%
 
 ---
 
 # 监测工作流执行 {#monitoring-workflow-execution}
 
-本节介绍有关如何监控工作流执行情况的信息。
+本節提供如何監視工作流程執行的資訊。
 
-有关如何创建工作流以监视“已暂停”、“已停止”或“有错误”的一组工作流状态的用例，还请参见 [此部分](workflow-supervision.md#supervising-workflows).
+您也可以參閱以下使用案例，瞭解如何建立工作流程，以監控一組「已暫停」、「已停止」或「發生錯誤」的工作流程狀態： [本節](workflow-supervision.md#supervising-workflows).
 
-此外，实例的管理员还可以使用 **审核跟踪** 要检查活动和上次对工作流所做的修改，请查看工作流的状态。 在中了解有关审核跟踪的更多信息  [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/audit-trail.html?lang=en#accessing-audit-trail){target="_blank"}.
+此外，執行個體的管理員可以使用 **稽核軌跡** 若要檢查活動和對工作流程進行的最後修改，請檢查工作流程的狀態。 進一步瞭解中的稽核軌跡  [Campaign Classic v7檔案](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/audit-trail.html#accessing-audit-trail){target="_blank"}.
 
-## 显示进度 {#displaying-progress}
+## 顯示進度 {#displaying-progress}
 
-您可以使用工具栏上的相应图标显示进度，以监控执行情况。
+您可以使用工具列上的適當圖示來顯示進度，以監視執行。
 
-的 **[!UICONTROL Display progress information]** 图标可在执行屏幕中显示状态和活动结果。
+此 **[!UICONTROL Display progress information]** 圖示可讓您在執行畫面中顯示狀態和活動結果。
 
 ![](assets/s_user_segmentation_toolbar_progr.png)
 
-选择此选项后，已执行的活动以蓝色显示，待处理活动闪烁，警告以橙色显示，错误以红色显示。 此选项还显示活动在其叫客过渡时的结果，后跟活动属性中定义的结果标签，以及作业持续时间（如果超过一秒）
+選取此選項時，執行的活動會以藍色顯示，擱置的活動會閃爍，警告會以橘色顯示，而錯誤會以紅色顯示。 此選項也會顯示其出站轉變上的活動結果，如果超過一秒，則接著顯示活動屬性中定義的結果標籤和工作持續時間
 
 ![](assets/s_user_segmentation_results.png)
 
-## 显示日志 {#displaying-logs}
+## 顯示記錄 {#displaying-logs}
 
-日志包含工作流的历史记录或审核跟踪。 它记录所有用户操作、执行的所有操作和遇到的错误。 您可以：
+記錄檔包含工作流程的歷史記錄或稽核軌跡。 它會註冊所有使用者動作、執行的所有作業和遇到的錯誤。 您可以：
 
-* 选择 **[!UICONTROL Tracking]** 选项卡。 此列表包含所有工作流消息。
+* 選取 **[!UICONTROL Tracking]** 標籤中。 此清單包含所有工作流程訊息。
 
    ![](assets/new-workflow-display-log-tab.png)
 
-* 按活动过滤日志消息。 为此，请单击 **[!UICONTROL Display the tasks and the log]** 在图表上方的工具栏上，以显示 **[!UICONTROL Log]** 和 **[!UICONTROL Tasks]** 选项卡。 选择活动以查看所有相关消息。 此列表包含未选择活动时的所有消息。
+* 依活動篩選記錄訊息。 若要這麼做，請按一下 **[!UICONTROL Display the tasks and the log]** 圖上方的工具列顯示 **[!UICONTROL Log]** 和 **[!UICONTROL Tasks]** 圖表下方的索引標籤。 選取活動以檢視所有相關訊息。 此清單包含未選取活動時的所有訊息。
 
    ![](assets/new-workflow-display-log-activity.png)
 
    >[!NOTE]
    >
-   >单击图表背景以取消选择所有元素。
+   >按一下圖表的背景以取消選取所有元素。
 
-* 仅查看链接到给定任务的消息。 为此，请选择 **[!UICONTROL Tasks]** 选项卡上，然后在图中选择活动以限制列表。 双击任务以显示信息；窗口中的最后一个选项卡包含日志。
+* 僅檢視連結至指定任務的訊息。 若要這麼做，請選取 **[!UICONTROL Tasks]** 標籤，然後在圖表中選取活動以限制清單。 連按兩下工作以顯示資訊；視窗中的最後一個標籤包含記錄。
 
    ![](assets/new-workflow-display-tasks-activity.png)
 
-   的 **[!UICONTROL Details...]** 按钮可显示有关活动执行的所有其他信息。 例如，您可以查看验证运算符，以及在适用时，在审批期间输入的注释。
+   此 **[!UICONTROL Details...]** 按鈕可讓您顯示活動執行的所有其他資訊。 例如，您可以檢視驗證運運算元，以及在適用時，檢視運運算元在核准期間輸入的註解。
 
 >[!NOTE]
 >
->重新启动工作流时，不会清除日志。 所有留言都保留。 如果要放弃先前执行中的消息，则必须清除历史记录。
+>重新啟動工作流程時不會清除記錄。 會保留所有訊息。 如果您要捨棄先前執行的訊息，則必須清除歷史記錄。
 
-日志按时间顺序显示与定向工作流活动相关的执行消息列表。
+記錄檔會依時間順序顯示與目標工作流程活動相關的執行訊息清單。
 
-* 定位营销活动的日志
+* 目標定位行銷活動的記錄
 
-   执行定位营销活动后，单击 **[!UICONTROL Tracking]** 选项卡来查看执行跟踪。
+   目標定位行銷活動執行後，按一下 **[!UICONTROL Tracking]** 標籤以檢視執行追蹤。
 
    ![](assets/s_user_segmentation_journal.png)
 
-   显示所有营销活动消息：执行的营销活动以及警告或错误。
+   所有行銷活動訊息都會顯示：已執行的行銷活動以及警告或錯誤。
 
-* 活动日志
+* 活動記錄
 
-   您还可以查看执行日志和每个活动的详细信息。 可以通过两种方式来执行此操作：
+   您也可以檢視每個活動的執行記錄檔和詳細資訊。 有兩種方法可以達成此目的：
 
-   1. 选择目标活动，然后单击 **[!UICONTROL Display the tasks and the log]** 图标。
+   1. 選取目標活動，然後按一下 **[!UICONTROL Display the tasks and the log]** 圖示。
 
       ![](assets/s_user_segmentation_show_logs.png)
 
-      图表的下部显示了两个选项卡：日志和任务。
+      圖表的下半部分顯示兩個標籤：記錄檔和工作。
 
-      在图表中选择的活动将用作日志和任务列表的过滤器。
+      在圖表中選取的活動會作為記錄和工作清單上的篩選器。
 
       ![](assets/s_user_segmentation_logs.png)
 
-   1. 右键单击目标活动并选择 **[!UICONTROL Display logs]**.
+   1. 以滑鼠右鍵按一下目標活動，然後選取 **[!UICONTROL Display logs]**.
 
       ![](assets/s_user_segmentation_logs_menu.png)
 
-      日志显示在单独的窗口中。
+      記錄會顯示在另一個視窗中。
 
-## 清除日志 {#purging-the-logs}
+## 清除記錄 {#purging-the-logs}
 
-工作流历史记录不会自动清除：默认情况下，会保留所有消息。 历史记录可以通过 **[!UICONTROL File > Actions]** 菜单或 **[!UICONTROL Actions]** 按钮。 选择 **[!UICONTROL Purge history]**。中的可用选项 **[!UICONTROL Actions]** 菜单的详细信息 [“操作”工具栏](start-a-workflow.md) 中。
+系統不會自動清除工作流程歷史記錄：所有訊息都會依預設保留。 您可以透過以下方式清除歷史記錄 **[!UICONTROL File > Actions]** 功能表或按一下 **[!UICONTROL Actions]** 按鈕的位置。 选择 **[!UICONTROL Purge history]**。中可用的選項 **[!UICONTROL Actions]** 功能表的詳細說明，請參見 [動作工具列](start-a-workflow.md) 區段。
 
 ![](assets/purge_historique.png)
 
-## 工作表和工作流架构 {#worktables-and-workflow-schema}
+## 工作表和工作流程結構描述 {#worktables-and-workflow-schema}
 
-该工作流传达了可通过特定活动处理的工作表。 Adobe Campaign允许您通过数据管理活动修改、重命名和扩充工作流工作表的列，例如，根据客户的需求使其与术语保持一致，以收集有关合同共同受益人的其他信息等。
+工作流程會傳達可透過特定活動操作的工作表。 Adobe Campaign可讓您透過「資料管理」活動，修改、重新命名及擴充工作流程工作表格的欄，例如，根據客戶需求來調整欄位與命名法，以收集合約共同受益人的其他資訊等。
 
-也可以在各种工作维度之间创建链接并定义维度更改。 例如，对于数据库中记录的每个合同，寻址主持人并在附加信息中使用共同持有人数据。
+也可以建立各種工作維度之間的連結，並定義維度變更。 例如，對於資料庫中記錄的每份合約，請處理主要持有者，並在其他資訊中使用共同持有者資料。
 
-当工作流被钝化时，工作流的工作表会被自动删除。 如果希望保留工作表，请通过 **[!UICONTROL List update]** 活动(请参阅 [列表更新](list-update.md))。
+工作流程鈍化時，工作流程的工作表會自動刪除。 如果要保留工作表，請透過以下方式將其儲存在清單中： **[!UICONTROL List update]** 活動(請參閱 [清單更新](list-update.md))。
 
-## 管理错误 {#managing-errors}
+## 管理錯誤 {#managing-errors}
 
-发生错误时，工作流暂停，发生错误时执行的活动闪烁红色。 在工作流概述中，在 **[!UICONTROL Monitoring]** 选项卡 —   **[!UICONTROL Workflows]** 链接，则只能显示出错的工作流，如下所示。
+發生錯誤時，工作流程會暫停，而發生錯誤時所執行的活動會以紅色閃爍。 在工作流程概觀中，位於 **[!UICONTROL Monitoring]** 標籤 —   **[!UICONTROL Workflows]** 連結，您只能顯示有錯誤的工作流程，如下所示。
 
 ![](assets/wf-global-view_filter_only_errors.png)
 
-在Adobe Campaign Explorer中，工作流列表显示 **[!UICONTROL Failed]** 列。
+在Adobe Campaign Explorer中，工作流程清單顯示 **[!UICONTROL Failed]** 欄依預設。
 
 ![](assets/wf-explorer_errors_col.png)
 
-当工作流出错时，只要其电子邮件地址列在其用户档案中，就会通过电子邮件通知属于工作流监督组的操作员。 此组在 **[!UICONTROL Supervisor(s)]** 字段。
+當工作流程發生錯誤時，只要屬於工作流程監督群組的操作員的電子郵件地址列在其設定檔中，就會透過電子郵件通知該操作員。 此群組選取於 **[!UICONTROL Supervisor(s)]** 工作流程屬性的欄位。
 
 ![](assets/wf-properties_select-supervisors.png)
 
-通知内容在 **[!UICONTROL Workflow manager notification]** 默认模板：此模板在 **[!UICONTROL Execution]** 选项卡。 通知会显示错误工作流的名称和相关任务。
+通知內容設定於 **[!UICONTROL Workflow manager notification]** 預設範本：此範本在 **[!UICONTROL Execution]** 工作流程屬性的索引標籤。 通知會顯示錯誤工作流程和相關任務的名稱。
 
-通知示例：
+通知範例：
 
 ![](assets/wf-notification_error-msg.png)
 
-利用链接，可在Web模式下访问Adobe Campaign控制台，并在您登录后处理错误工作流。
+連結可讓您在Web模式下存取Adobe Campaign主控台，並在您登入後處理錯誤工作流程。
 
 ![](assets/wf-notification_error-console.png)
 
-您可以配置工作流，以便在发生错误时不会暂停并继续执行。 为此，请编辑工作流 **[!UICONTROL Properties]** 和 **[!UICONTROL Error management]** 选择 **[!UICONTROL Ignore]** 选项 **[!UICONTROL In case of error]** 字段。 然后，您可以指定在暂停进程之前可忽略的连续错误数。
+可以配置工作流，使其在发生错误时不暂停并继续执行。若要這麼做，請編輯工作流程 **[!UICONTROL Properties]** 而且，在 **[!UICONTROL Error management]** 區段，選取 **[!UICONTROL Ignore]** 中的選項 **[!UICONTROL In case of error]** 欄位。 随后，您可以指定在流程暂停前可忽略的连续错误的数量。
 
-在这种情况下，错误任务被中止。 此模式特别适用于设计为稍后重新尝试营销活动（定期操作）的工作流。
+在此情況下，錯誤工作會中止。 此模式特別適合用於設計為在稍後重新嘗試行銷活動（定期動作）的工作流程。
 
 ![](assets/wf_edit_properties_for_error_mgt.png)
 
 >[!NOTE]
 >
->您可以为每个活动单独应用此配置。 为此，请编辑活动属性，并在 **[!UICONTROL Advanced]** 选项卡。
+>您可以對每個活動個別套用此設定。 若要這麼做，請編輯活動屬性，並在 **[!UICONTROL Advanced]** 標籤。
 
 ## 处理错误 {#processing-errors}
 
-关于活动， **[!UICONTROL Process errors]** 选项显示一个特定过渡，该过渡将在生成错误时启用。 在这种情况下，工作流不会进入错误模式，并且会继续执行。
+關於活動， **[!UICONTROL Process errors]** 選項會顯示特定轉變，如果產生錯誤，則會啟用此轉變。 在此情況下，工作流程不會進入錯誤模式，並繼續執行。
 
-需考虑的错误是文件系统错误（无法移动文件、无法访问目录等）。
+考慮的錯誤是檔案系統錯誤（無法移動檔案、無法存取目錄等）。
 
-此选项不处理与活动配置相关的错误，即无效值。 与错误配置相关的错误将不会启用此过渡（目录不存在等）。
+此選項不會處理與活動設定相關的錯誤，即無效值。 與錯誤設定相關的錯誤將不會啟用此轉換（目錄不存在等）。
 
-如果暂停工作流（手动或在出错后自动），则 **[!UICONTROL Start]** 按钮可在工作流停止时重新启动该工作流的执行。 将重新执行错误的活动（或暂停的活动）。 不会重新执行以前的活动。
+如果暫停工作流程（手動或在發生錯誤後自動暫停）， **[!UICONTROL Start]** 按鈕會在停止處重新啟動工作流程執行。 錯誤的活動（或已暫停的活動）將會重新執行。 先前活動不會重新執行。
 
-要重新执行所有工作流活动，请使用 **[!UICONTROL Restart]** 按钮。
+若要重新執行所有工作流程活動，請使用 **[!UICONTROL Restart]** 按鈕。
 
-如果修改已执行的活动，则重新启动工作流执行时，不会考虑这些更改。
+如果您修改已執行的活動，則重新啟動工作流程執行時不會考慮這些變更。
 
-如果修改未执行的活动，则在重新启动工作流执行时，会考虑这些活动。
+如果您修改未執行的活動，則會在重新啟動工作流程執行時將其列入考量。
 
-如果修改暂停的活动，则重新启动工作流时无法正确考虑所做的更改。
+如果您修改暫停的活動，則當工作流程重新啟動時，無法正確考量變更。
 
-如果可能，我们建议在进行修改后完全重新启动工作流。
+如有可能，建議在執行修改後完全重新啟動工作流程。
 
-## 实例监督 {#instance-supervision}
+## 執行個體監督 {#instance-supervision}
 
-的 **[!UICONTROL Instance supervision]** 页面可让您查看Adobe Campaign服务器活动，并显示工作流和出错投放的列表。
+此 **[!UICONTROL Instance supervision]** 頁面可讓您檢視Adobe Campaign伺服器活動，並顯示有錯誤的工作流程與傳遞清單。
 
-要访问此页面，请转到 **[!UICONTROL Monitoring]** ，然后单击 **[!UICONTROL General view]** 链接。
+若要存取此頁面，請移至 **[!UICONTROL Monitoring]** 標籤並按一下 **[!UICONTROL General view]** 連結。
 
 ![](assets/wf-monitoring_from-homepage.png)
 
-要显示所有工作流，请单击 **[!UICONTROL Workflows]** 链接。 使用下拉列表根据工作流的状态显示平台中的工作流。
+若要顯示所有工作流程，請按一下 **[!UICONTROL Workflows]** 連結。 使用下拉式清單，根據工作流程的狀態顯示平台中的工作流程。
 
 ![](assets/wf-monitoring_edit-wf.png)
 
-单击工作流中存在错误的链接以将其打开并查看其日志。
+按一下發生錯誤的工作流程上的連結，以開啟工作流程並檢視其記錄。
 
 ![](assets/wf-monitoring_edit-task-wf.png)
 
-## 防止同时执行多次 {#preventing-simultaneous-multiple-executions}
+## 防止同時執行多個專案 {#preventing-simultaneous-multiple-executions}
 
-单个工作流可以同时运行多个执行。 在某些情况下，您应该阻止这种情况发生。
+單一工作流程可以同時執行數個執行。 某些情況下，您應避免發生此情況。
 
-例如，您可以让调度程序每小时触发一次工作流执行，但有时整个工作流的执行需要超过一小时。 如果工作流已经运行，您可能需要跳过执行。
+例如，您可以讓排程器每小時觸發一次工作流程執行，但有時整個工作流程的執行需要超過一小時。 如果工作流程已經在執行中，您可能會想要略過執行。
 
-如果您在工作流的开始处有信号活动，则当工作流正在运行时，您可能希望跳过该信号。
+如果您在工作流程開始時有訊號活動，則在工作流程正在執行時，您可能想要略過訊號。
 
-一般原则如下：
+一般原則如下：
 
 ![](assets/workflow-reentrancy-protection-principle.png)
 
-解决方案是使用实例变量。 实例变量由工作流的所有并行执行共享。
+解決方案是使用例項變數。 執行個體變數會由工作流程的所有平行執行共用。
 
-以下是一个简单的测试工作流：
+以下是簡單的測試工作流程：
 
 ![](assets/wkf_simultaneous_execution1.png)
 
-的 **[!UICONTROL Scheduler]** 每分钟触发一个事件。 以下 **[!UICONTROL Test]** 活动将测试 **isRunning** 实例变量来确定是否继续执行：
+此 **[!UICONTROL Scheduler]** 每分鐘觸發一次事件。 下列專案 **[!UICONTROL Test]** 活動將測試 **isRun** 執行個體變數來決定是否繼續執行：
 
 ![](assets/wkf_simultaneous_execution2.png)
 
 >[!NOTE]
 >
->**isRunning** 是为此示例选择的变量名称。 这不是内置变量。
+>**isRun** 是為此範例選擇的變數名稱。 這不是內建變數。
 
-紧接 **[!UICONTROL Test]** 在 **是** 分支必须在其 **初始化脚本**:
+緊接在 **[!UICONTROL Test]** 在 **是** 分支必須在其中 **初始化指令碼**：
 
 ```
 instance.vars.isRunning = true
 ```
 
-中的最后一个活动 **是** 分支必须将其中的变量还原为false **初始化脚本**:
+中的最後一個活動 **是** 分支必須將其中的變數恢復為false **初始化指令碼**：
 
 ```
 instance.vars.isRunning = false
 ```
 
-请注意：
+請注意：
 
-* 您可以通过 **变量** 选项卡 **属性**.
-* 重新启动工作流时，会重置实例变量。
-* 在JavaScript中，测试中未定义的值为false，这允许在初始化实例变量之前对其进行测试。
-* 您可以通过向“no”结尾的初始化脚本中添加日志记录指令来监视由于此机制而未处理的活动。
+* 您可以透過以下方式檢查執行個體變數的目前值 **變數** 工作流程中的索引標籤 **屬性**.
+* 當您重新啟動工作流程時，執行個體變數會重設。
+* 在JavaScript中，未定義的值在測試中為false，允許在執行個體變數初始化之前對其進行測試。
+* 您可以在「no」結尾的初始化指令碼中新增記錄指示，以監控由於此機制而未處理的活動。
 
    ```
    logInfo("Workflow already running, parallel execution not allowed.");
    ```
 
-本节将介绍一个用例： [协调数据更新](coordinate-data-updates.md).
+本節中提供使用案例： [協調資料更新](coordinate-data-updates.md).
 
 ## 数据库维护 {#database-maintenance}
 
-工作流使用大量工作表，这些工作表会占用空间，如果不进行维护，最终会减慢整个平台的速度。
+工作流程會使用許多佔用空間的工作表，如果不加以維護，最終會導致整個平台的速度變慢。
 
-的 **数据库清理** 可通过 **管理>生产>技术工作流** 节点，用于删除过时的数据以避免数据库的指数增长。 工作流会自动触发，无需用户干预。
+此 **資料庫清理** 工作流程可透過 **管理>生產>技術工作流程** 節點時，可讓您刪除過時的資料，以避免資料庫呈指數增長。 工作流程會自動觸發，使用者無需另行干預。
 
-您还可以创建特定的技术工作流，以清除不必要的数据占用空间。 请参阅和此 [部分](#purging-the-logs).
+您也可以建立特定的技術工作流程，以清除不必要的資料佔用空間。 請參考和這個 [區段](#purging-the-logs).
 
-## 处理暂停的工作流 {#handling-of-paused-workflows}
+## 處理暫停的工作流程 {#handling-of-paused-workflows}
 
-默认情况下，如果工作流暂停，则永远不会清除其工作表。 从版本8880开始，处于暂停状态太长的工作流将自动停止并清除其工作表。 此行为的触发方式如下：
+根據預設，如果暫停工作流程，則永遠不會清除其工作表。 從Build 8880開始，已處於暫停狀態太久的工作流程會自動停止，並清除其工作表。 此行為的觸發方式如下：
 
-* 自超过7天以来已暂停的工作流在监控功能板（和监控API）中显示为警告，并且会向监控组发送通知。
-* 每周，当 **[!UICONTROL cleanupPausedWorkflows]** 技术工作流已触发。 有关工作流的更多详细信息，请参阅 [此部分](delivery.md).
-* 在4个通知（即默认处于暂停状态一个月）之后，工作流将无条件停止。 日志停止后，工作流中会显示该日志。 下次执行时将清除这些表 **[!UICONTROL cleanup]** 工作流
+* 從7天以上暫停的工作流程會在監控儀表板（和監控API）中顯示為警告，並傳送通知給主管群組。
+* 每週都會發生相同情況，當 **[!UICONTROL cleanupPausedWorkflows]** 技術工作流程已觸發。 如需工作流程的詳細資訊，請參閱 [本節](delivery.md).
+* 在4個通知後（即預設為暫停狀態一個月），工作流程會無條件停止。 記錄停止後，會顯示在工作流程中。 表格會在下次執行時清除 **[!UICONTROL cleanup]** 工作流程
 
-可通过NmsServer_PausedWorkflowPeriod选项配置这些时段。
+這些句點可透過NmsServer_PausedWorkflowPeriod選項設定。
 
-工作流监管者会收到通知。 此外，还会通知创建者和修改工作流的最后一个用户。 管理员不会收到通知。
+會通知工作流程主管。 也會通知建立者和上次修改工作流程的使用者。 管理員不會收到通知。
 
-## 根据工作流的状态筛选工作流 {#filtering-workflows-status}
+## 根據工作流程的狀態進行篩選 {#filtering-workflows-status}
 
-Campaign Classic界面允许您使用预定义的方式监控实例上所有工作流的执行状态 **视图**. 要访问这些视图，请打开 **[!UICONTROL Administration]** / **[!UICONTROL Audit]** / **[!UICONTROL Workflows Status]** 节点。
+Campaign Classic介面可讓您使用預先定義的，監控執行個體上所有工作流程的執行狀態 **檢視**. 若要存取這些檢視，請開啟 **[!UICONTROL Administration]** / **[!UICONTROL Audit]** / **[!UICONTROL Workflows Status]** 節點。
 
-提供了以下视图：
+可使用下列檢視：
 
-* **[!UICONTROL Running]**：列出所有正在运行的工作流。
-* **[!UICONTROL Paused]**：列出所有暂停的工作流。
-* **[!UICONTROL Failed]**：列出所有失败的工作流。
-* **)。
+* **[!UICONTROL Running]**：列出所有執行中的工作流程。
+* **[!UICONTROL Paused]**：列出所有暫停的工作流程。
+* **[!UICONTROL Failed]**：列出所有失敗的工作流程。
+* ** )。
 
 ![](assets/workflow-monitoring-views.png)
 
-默认情况下，这些视图可在 **[!UICONTROL Audit]** 文件夹。 但是，您可以在文件夹树中选择的位置重新创建它们。 这样，它们便可用于没有管理权限的标准用户。
+依預設，這些檢視可在以下位置存取： **[!UICONTROL Audit]** 資料夾。 不過，您可以在資料夾樹狀結構中所選擇的位置重新建立它們。 如此一來，沒有管理許可權的標準使用者將可以使用它們。
 
-要执行此操作，请执行以下操作：
+若要這麼做：
 
-1. 右键单击要添加视图的文件夹。
-1. 在 **[!UICONTROL Add new folder]** / **[!UICONTROL Administration]**，选择要添加的视图。
-1. 将文件夹添加到树中后，请确保将其配置为视图，以便显示所有工作流，无论其源文件夹是什么。 有关如何配置视图的更多信息，请参阅 [本页](../../v8/audiences/folders-and-views.md#turn-a-folder-to-a-view).
+1. 以滑鼠右鍵按一下要新增檢視的資料夾。
+1. 在 **[!UICONTROL Add new folder]** / **[!UICONTROL Administration]**，選取您要新增的檢視。
+1. 將資料夾新增至樹狀結構後，請務必將其設定為檢視，以便其顯示所有工作流程，無論其原始資料夾為何。 有關如何設定檢視的詳細資訊，請參閱 [此頁面](../../v8/audiences/folders-and-views.md#turn-a-folder-to-a-view).
 
-除了这些视图之外，您还可以设置过滤器文件夹，以便根据工作流的执行状态对其列表进行过滤。 操作步骤：
+除了這些檢視以外，您還可以設定篩選資料夾，讓您根據工作流程的執行狀態來篩選工作流程清單。 操作步骤：
 
-1. 访问工作流类型文件夹，然后选择 **[!UICONTROL Filters]** / **[!UICONTROL Advanced filter]** 菜单。
-1. 配置过滤器，以便工作流的 **[!UICONTROL @status]** 字段等于您选择的状态。
-1. 保存并命名过滤器。 然后，该过滤器将直接从过滤器列表中提供。
+1. 存取工作流程型別資料夾，然後選取 **[!UICONTROL Filters]** / **[!UICONTROL Advanced filter]** 功能表。
+1. 設定篩選器，使工作流程的 **[!UICONTROL @status]** 欄位等於您選擇的狀態。
+1. 儲存並命名篩選器。 然後，您就可以直接從篩選器清單中取得該篩選。
 
 ![](assets/workflow-monitoring-filter.png)
 
-有关更多信息，请参阅以下章节：
+如需詳細資訊，請參閱下列章節：

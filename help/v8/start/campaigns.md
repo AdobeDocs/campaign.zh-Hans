@@ -5,10 +5,10 @@ feature: Audiences
 role: User
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66,c4798c8f-619e-4a60-80d7-29b9e4c61168
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 98%
+source-wordcount: '833'
+ht-degree: 97%
 
 ---
 
@@ -88,7 +88,7 @@ Adobe Campaign 允许您从一个统一的控制中心创建、配置、执行�
 
    Adobe Campaign 允许您为营销活动的主要阶段设置协作审批流程。对于每个活动，您可以批准投放目标、内容和成本。负责审批工作的 Adobe Campaign 操作员收到电子邮件通知后，可通过控制台或 Web 连接批准或拒绝批准相关请求。
 
-   请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=zh-Hans#campaign-orchestration)以了解如何设置和管理审批。
+   请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html#campaign-orchestration)以了解如何设置和管理审批。
 
 
 ## 分布式营销附加功能{#distributed-marketing-add-on}
@@ -109,5 +109,5 @@ Adobe Campaign 提供&#x200B;**响应管理**&#x200B;附加功能，可让您衡
 >
 >从 Campaign v8.3 开始提供此功能。要检查您的版本，请参阅[此部分](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-[](../assets/do-not-localize/book.png) 了解如何在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=zh-Hans){target="_blank"}
+[](../assets/do-not-localize/book.png) 瞭解如何在中設定和使用Campaign回應管理員 [Campaign Classic v7檔案](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=zh-Hans){target="_blank"}
 

@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 数据加载 (RDBMS)
-description: 了解有关数据加载(RDBMS)工作流活动的更多信息
+description: 進一步瞭解資料載入(RDBMS)工作流程活動
 feature: Workflows, Data Management Activity
 exl-id: 2d650573-f630-4aba-bd40-2db88ef1c346
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
@@ -15,24 +15,24 @@ ht-degree: 3%
 
 
 
-的 **[!UICONTROL Data loading (RDBMS)]** 活动允许您直接访问此外部数据库，并仅收集定位所需的数据。
+此 **[!UICONTROL Data loading (RDBMS)]** 活動可讓您直接存取此外部資料庫，並僅收集定位所需的資料。
 
-为了提高性能，我们建议使用查询活动（可在其中使用外部数据库的数据）。 有关更多信息，请参阅 [访问外部数据库(FDA)](accessing-an-external-database--fda-.md).
+若要改善效能，我們建議使用查詢活動（可在其中使用外部資料庫的資料）。 有關詳細資訊，請參閱 [存取外部資料庫(FDA)](accessing-an-external-database--fda-.md).
 
 操作如下：
 
-1. 从列表中选择数据源，然后输入包含要提取的数据的表的名称。
+1. 從清單中選取資料來源，然後輸入包含要擷取之資料的表格名稱。
 
    ![](assets/s_advuser_wf_sgbd_sample_1.png)
 
-   在相应字段中输入的表名称将用作外部数据库中收集数据的模板。 通过数据加载活动的集客过渡，可以计算或传递由工作流处理的表的名称。 要选择要使用的表，请单击 **[!UICONTROL Advanced..]**. 链接并选择 **[!UICONTROL Specified in the transition]** 或 **[!UICONTROL Explicit]** 选项。
+   在對應欄位中輸入的表格名稱，會作為在外部資料庫中收集資料的範本。 工作流程處理的表格名稱，可由資料載入活動的入站轉變計算或傳送。 若要選取要使用的表格，請按一下 **[!UICONTROL Advanced..]**. 連結並選取 **[!UICONTROL Specified in the transition]** 或 **[!UICONTROL Explicit]** 選項。
 
    ![](assets/s_advuser_wf_sgbd_sample_5.png)
 
-1. 单击 **[!UICONTROL Select the columns to extract...]** 链接以选择要在数据库中收集的数据。
+1. 按一下 **[!UICONTROL Select the columns to extract...]** 用來選擇要收集到資料庫中的資料的連結。
 
    ![](assets/s_advuser_wf_sgbd_sample_2.png)
 
-1. 您可以根据此数据定义过滤器。 为此，请单击 **[!UICONTROL Edit query....]** 链接。
+1. 您可以在此資料上定義篩選器。 若要這麼做，請按一下 **[!UICONTROL Edit query....]** 連結。
 
-   像这样收集的数据可以在工作流的整个生命周期中使用。
+   如此收集的資料可在整個工作流程生命週期中使用。

@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 任务
-description: 了解有关任务工作流活动的更多信息
+description: 進一步瞭解任務工作流程活動
 feature: Workflows
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # 任务{#task}
 
-在营销活动工作流中， **[!UICONTROL Task]** 活动允许您指定两种方案：第一个是任务完成时的选择，第二个是任务未完成时的选择（如果手动标记为未完成或已过期）。
+在行銷活動工作流程中， **[!UICONTROL Task]** 活動可讓您指定兩種情境：第一種是已完成任務，第二種是未完成任務（若手動標籤為未完成或過期）。
 
 ![](assets/mrm_task_in_workflow.png)
 
@@ -20,4 +20,4 @@ ht-degree: 2%
 
 ![](assets/wkf_task_activity.png)
 
-的 **[!UICONTROL Resources]** 选项允许您定义多个运算符以及任务的批准计划。 如果批准者拒绝，则不会导致任务本身被拒绝。
+此 **[!UICONTROL Resources]** 選項可讓您定義數個運運算元以及任務的核准排程。 如果核准者拒絕，這不會導致任務本身被拒絕。

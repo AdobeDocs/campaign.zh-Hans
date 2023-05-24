@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 入站短信
-description: 进一步了解入站短信工作流活动
+description: 深入瞭解傳入簡訊工作流程活動
 feature: Workflows, Channels Activity
 exl-id: 2c12c45b-4429-4e60-bc96-ff70a95d4c9e
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
@@ -15,15 +15,15 @@ ht-degree: 4%
 
 
 
-的 **入站短信** 活动允许您从外部帐户下载和处理文本消息。
+此 **傳入簡訊** 活動可讓您從外部帳戶下載及處理文字訊息。
 
 ## 属性 {#properties}
 
 ![](assets/sms_rec_edit.png)
 
-的第一个选项卡 **入站短信** 活动允许您输入短信消息的路由参数，并输入接收每条消息时要执行的脚本。 第二个选项卡允许您为活动分配计划，第三个选项卡定义活动的过期条件。
+的第一個索引標籤 **傳入簡訊** 活動可讓您輸入SMS訊息的路由引數，並輸入要在接收每則訊息時執行的指令碼。 第二個索引標籤可讓您將排程指派給活動，第三個索引標籤會定義活動的到期條件。
 
-1. **[!UICONTROL SMS routing]**:选择要用于短信恢复的外部帐户。 外部帐户通过 **[!UICONTROL Administration > Platform > External accounts]** 树的节点。
+1. **[!UICONTROL SMS routing]**：選取要用於SMS復原的外部帳戶。 外部帳戶是透過 **[!UICONTROL Administration > Platform > External accounts]** 樹狀結構的節點。
 1. **[!UICONTROL Script]**
 1. **[!UICONTROL Schedule]**
 
@@ -31,4 +31,4 @@ ht-degree: 4%
 
 1. **[!UICONTROL Expiration]**
 
-的 **[!UICONTROL Script]**, **[!UICONTROL Schedule]** 和 **[!UICONTROL Expiry]** 选项卡的详细信息 [入站电子邮件](inbound-emails.md).
+此 **[!UICONTROL Script]**， **[!UICONTROL Schedule]** 和 **[!UICONTROL Expiry]** 詳細資訊請參閱 [傳入電子郵件](inbound-emails.md).

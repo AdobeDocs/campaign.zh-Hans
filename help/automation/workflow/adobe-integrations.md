@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 与Adobe Experience Cloud解决方案工作流程集成
-description: 了解有关与Adobe Experience Cloud解决方案工作流集成的更多信息
+title: 與Adobe Experience Cloud解決方案工作流程整合
+description: 進一步瞭解Adobe Experience Cloud解決方案工作流程的整合
 topic-tags: technical-workflows
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # 与 Adobe Experience Cloud 解决方案集成{#integrations-with-adobe-experience-cloud-solutions}
 
-下面详述的工作流随 **与Adobe Experience Cloud集成** 模块。 有关此模块的更多信息，请参阅 [本页](../../v8/connect/integration.md).
+以下詳述的工作流程會隨 **與Adobe Experience Cloud整合** 模組（預設）。 如需此模組的詳細資訊，請參閱 [此頁面](../../v8/connect/integration.md).
 
 <table> 
  <tbody> 
@@ -23,14 +23,14 @@ ht-degree: 10%
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">从Adobe Experience Cloud导入受众</span> <br /> </td> 
+   <td> <span class="uicontrol">從Adobe Experience Cloud匯入對象</span> <br /> </td> 
    <td> <span class="uicontrol">importSharedAudience</span> <br /> </td> 
-   <td> 利用此工作流，可将不同Adobe Experience Cloud解决方案中的受众/区段导入Adobe Campaign。<br /> </td> 
+   <td> 此工作流程可讓您將不同Adobe Experience Cloud解決方案中的對象/區段匯入至Adobe Campaign。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">将受众导出到Adobe Experience Cloud</span> <br /> </td> 
+   <td> <span class="uicontrol">將受眾匯出至Adobe Experience Cloud</span> <br /> </td> 
    <td> <span class="uicontrol">exportSharedAudience</span> <br /> </td> 
-   <td> 此工作流会将受众导出为共享的受众/区段。 这些受众可在您使用的不同Adobe Experience Cloud解决方案中使用。<br /> </td> 
+   <td> 此工作流程會將受眾匯出為共用受眾/區段。 這些對象可用於您所使用的不同Adobe Experience Cloud解決方案。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

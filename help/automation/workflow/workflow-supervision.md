@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 监督工作流
-description: 了解如何监督Campaign工作流
+description: 瞭解如何監督行銷活動工作流程
 feature: Workflows
 exl-id: 362b347b-f914-4ebf-84d7-9989aef28a82
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
@@ -11,51 +11,51 @@ ht-degree: 0%
 
 ---
 
-# 用例：监控工作流{#supervising-workflows}
+# 使用案例：監督您的工作流程{#supervising-workflows}
 
-此用例详细介绍了如何创建工作流，以便您监视“已暂停”、“已停止”或“有错误”的一组工作流的状态。
+此使用案例詳細說明如何建立工作流程，讓您監視一組「已暫停」、「已停止」或「發生錯誤」的工作流程的狀態。
 
 其目的是：
 
-* 使用工作流监视一组业务工作流。
-* 通过“投放”活动向主管发送消息。
+* 使用工作流程來監視一組業務工作流程。
+* 透過「傳送」活動傳送訊息給主管。
 
-要监视一组工作流的状态，您需要执行以下步骤：
+若要監視一組工作流程的狀態，您必須遵循下列步驟：
 
-1. 创建监控工作流。
-1. 编写JavaScript以确定工作流是暂停、停止还是出错。
-1. 创建 **[!UICONTROL Test]** 活动。
-1. 准备投放模板。
+1. 建立監控工作流程。
+1. 撰寫JavaScript以判斷工作流程是否已暫停、停止或發生錯誤。
+1. 建立 **[!UICONTROL Test]** 活動。
+1. 準備傳遞範本。
 
 >[!NOTE]
 >
->除了工作流之外，Campaign **工作流热图** 允许您详细分析当前运行的工作流。 有关更多信息，请参阅 [专用部分](heatmap.md).
+>除了工作流程、 Campaign **工作流程熱度圖** 可讓您詳細分析目前執行的工作流程。 如需詳細資訊，請參閱 [專用區段](heatmap.md).
 >
->有关如何操作的更多信息 **监控工作流的执行**，请参阅 [此部分](monitor-workflow-execution.md).
+>如需如何操作的詳細資訊 **監視工作流程的執行**，請參閱 [本節](monitor-workflow-execution.md).
 
-## 步骤1:创建监控工作流 {#step-1--creating-the-monitoring-workflow}
+## 步驟1：建立監控工作流程 {#step-1--creating-the-monitoring-workflow}
 
-我们要监视的工作流文件夹是 **&quot;CustomWorkflows&quot;** 存储在 **管理>生产>技术工作流** 节点。 此文件夹包含一组业务工作流。
+我們要監控的工作流程資料夾是 **&quot;CustomWorkflows&quot;** 儲存在中的資料夾 **管理>生產>技術工作流程** 節點。 此資料夾包含一組業務工作流程。
 
-的 **监控工作流** 存储在技术工作流文件夹的根目录中。 使用的标签为 **&quot;监测&quot;**.
+此 **監控工作流程** 儲存在Technical Workflows資料夾的根目錄中。 使用的標籤為 **&quot;監視&quot;**.
 
-以下架构显示了活动的顺序：
+下列結構描述顯示活動的順序：
 
 ![](assets/uc_monitoring_workflow_overview.png)
 
-此工作流由以下部分组成：
+此工作流程由下列專案組成：
 
-* a **&quot;开始&quot;** 活动。
-* a **&quot;JavaScript代码&quot;** 活动，负责分析业务工作流文件夹。
-* a **&quot;测试&quot;** 活动向主管发送投放或重新启动工作流。
-* a **&quot;投放&quot;** 活动负责消息布局。
-* a **&quot;等待&quot;** 活动，可控制工作流迭代之间的提前期。
+* a **&quot;Start&quot;** 活動。
+* a **&quot;JavaScript程式碼&quot;** 負責分析業務工作流程資料夾的活動。
+* a **&quot;Test&quot;** 活動，將傳遞傳送給主管或重新啟動工作流程。
+* a **&quot;傳送&quot;** 負責訊息配置的活動。
+* a **&quot;Wait&quot;** 控制工作流程反複專案之間前置時間的活動。
 
-## 步骤2:编写JavaScript {#step-2--writing-the-javascript}
+## 步驟2：編寫JavaScript {#step-2--writing-the-javascript}
 
-JavaScript代码的第一部分与 **查询(queryDef)** 用于识别状态为“pause”(@state == 13)、“error”(@failed == 1)或“stopped”(@state == 20)的工作流。
+JavaScript程式碼的第一部分與 **查詢(queryDef)** 可讓您識別具有「暫停」(@state == 13)、「錯誤」(@failed == 1)或「已停止」(@state == 20)狀態的工作流程。
 
-的 **内部名称** 在以下条件下，提供了要监视的工作流文件夹的以下内容：
+此 **內部名稱** 要監視的工作流程資料夾的下列條件會提供：
 
 ```
 <condition boolOperator="AND" expr="[folder/@name] = 'Folder20'" internalId="1"/>
@@ -87,11 +87,11 @@ var queryWkfError = xtk.queryDef.create(
 var ndWkfError = queryWkfError.ExecuteQuery(); 
 ```
 
-JavaScript代码的第二部分允许您 **为每个工作流显示消息** 基于查询期间恢复的状态。
+JavaScript程式碼的第二個部分可讓您 **顯示每個工作流程的訊息** 根據查詢期間復原的狀態而定。
 
 >[!NOTE]
 >
->创建的字符串必须加载到工作流的事件变量中。
+>建立的字串必須載入工作流程的事件變數中。
 
 ```
 for each ( var wkf in ndWkfError.workflow ) 
@@ -113,60 +113,60 @@ vars.strWorkflowPaused = strPaused;
 vars.strWorkflowStop = strStop;
 ```
 
-## 步骤3:创建“测试”活动 {#step-3--creating-the--test--activity}
+## 步驟3：建立「測試」活動 {#step-3--creating-the--test--activity}
 
-通过“测试”活动，您可以确定是否需要发送投放，或监控工作流是否需要基于“等待”活动运行另一个周期。
+「測試」活動可讓您判斷是否需要傳送傳遞，或監控工作流程是否需要根據「等待」活動執行另一個週期。
 
-投放将发送给主管 **如果三个事件变量“vars.strWorkflowError”、“vars.strWorkflowPaused”或“vars.strWorkflowStop”中的至少一个事件变量为非void。**
+傳送給監督員 **如果三個事件變數「vars.strWorkflowError」、「vars.strWorkflowPaused」或「vars.strWorkflowStop」中至少有一個不是無效。**
 
 ![](assets/uc_monitoring_workflow_test.png)
 
-可以将“等待”活动配置为定期重新启动监控工作流。 对于此用例， **等待时间设置为1小时**.
+「等待」活動可設定為定期重新啟動監控工作流程。 對於此使用案例， **等待時間設為一小時**.
 
 ![](assets/uc_monitoring_workflow_attente.png)
 
-## 步骤4:准备投放 {#step-4--preparing-the-delivery}
+## 步驟4：準備傳遞 {#step-4--preparing-the-delivery}
 
-“投放”活动基于 **投放模板** 存储在 **“资源”>“模板”>“投放模板”** 节点。
+「傳送」活動是根據 **傳遞範本** 儲存在 **資源>範本>傳遞範本** 節點。
 
-此模板必须包括：
+此範本必須包括：
 
-* **主管的电子邮件地址**.
-* **HTML内容** 用于插入个性化文本。
+* **主管的電子郵件地址**.
+* **HTML內容** 用於插入個人化文字。
 
    ![](assets/uc_monitoring_workflow_variables_diffusion.png)
 
-   声明的三个变量(WF_Stop、WF_Paused、WF_Error)与三个工作流事件变量匹配。
+   宣告的三個變數(WF_Stop、WF_Paused、WF_Error)符合三個工作流程事件變數。
 
-   必须在 **变量** 选项卡。
+   這些變數必須在以下位置宣告： **變數** 傳遞範本屬性的索引標籤。
 
-   恢复 **工作流事件变量的内容**，您需要声明特定于投放的变量，这些变量将使用JavaScript代码返回的值进行初始化。
+   要復原 **工作流程事件變數的內容**，您需要宣告傳送專用的變數，這些變數會使用JavaScript程式碼傳回的值進行初始化。
 
-   投放模板具有以下内容：
+   傳遞範本包含下列內容：
 
    ![](assets/uc_monitoring_workflow_model_diffusion.png)
 
-创建并批准模板后，您需要配置 **投放** 活动：
+建立並核准範本後，您需要設定 **傳遞** 活動至：
 
-* 将“投放”活动链接到之前创建的投放模板。
-* 将工作流的事件变量链接到特定于投放模板的事件变量。
+* 將「傳遞」活動連結至先前建立的傳遞範本。
+* 將工作流程的事件變數連結至傳送範本的特定事件變數。
 
-双击 **投放** 活动，然后选择以下选项：
+連按兩下 **傳遞** 活動，並選取下列選項：
 
-* 投放：选择 **新建，从模板创建**，然后选择之前创建的投放模板。
-* 对于 **收件人和内容** 字段，选择 **在投放中指定**.
-* 要执行的操作：选择 **准备和开始**.
-* 取消选中 **处理错误** 选项。
+* 傳送：選取 **新增，從範本建立**，並選取先前建立的傳遞範本。
+* 對於 **收件者和內容** 欄位，選取 **已在傳遞中指定**.
+* 要執行的動作：選取 **準備並開始**.
+* 取消勾選 **處理錯誤** 選項。
 
    ![](assets/uc_monitoring_workflow_optionmodel.png)
 
-* 转到 **脚本** 选项卡 **投放** 活动，添加三 **字符串** 通过个性化字段菜单键入变量。
+* 前往 **指令碼** 的標籤 **傳遞** 活動，新增三個 **字元字串** 透過個人化欄位功能表輸入變數。
 
    ![](assets/uc_monitoring_workflow_selectlinkvariables.png)
 
    ![](assets/uc_monitoring_workflow_linkvariables.png)
 
-   声明的三个变量为：
+   宣告的三個變數為：
 
    ```
    delivery.variables._var[0].stringValue = vars.strWorkflowError;
@@ -174,4 +174,4 @@ vars.strWorkflowStop = strStop;
    delivery.variables._var[2].stringValue = vars.strWorkflowStop; 
    ```
 
-启动此监控工作流后，会向收件人发送摘要。
+啟動此監控工作流程後，它會傳送摘要給收件者。

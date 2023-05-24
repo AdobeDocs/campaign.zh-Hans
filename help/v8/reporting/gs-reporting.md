@@ -1,6 +1,6 @@
 ---
-title: Adobe Campaign报告工具入门
-description: 衡量营销活动的成功程度并分析用户行为
+title: 開始使用Adobe Campaign報告工具
+description: 衡量行銷活動成功與分析使用者行為
 feature: Reporting
 role: Data Engineer
 level: Beginner
@@ -12,44 +12,44 @@ ht-degree: 6%
 
 ---
 
-# 报告入门{#gs-ac-reports}
+# 開始使用報告{#gs-ac-reports}
 
-Adobe Campaign提供了本页中列出的一组报表工具。
+Adobe Campaign提供此頁面所列的一組報表工具。
 
 * **多维数据集**
 
-   Adobe Campaign提供了一款用于创建动态报告的直观数据探索工具。
+   Adobe Campaign隨附直覺式資料探索工具，可用來建立動態報表。
 
-   使用营销分析功能来分析和测量数据、计算统计数据、简化和优化报表创建和计算。 您可以创建报表并构建目标群体，并将其存储到列表中，以便在Adobe Campaign中用于定位或分段任务。
+   使用行銷分析功能來分析和測量資料、計算統計資料、簡化和最佳化報告的建立和計算。 您可以建立報告並建置目標母體，並將它們儲存到清單中，以便用於Adobe Campaign中的目標定位或細分任務。
 
    ![](assets/create-a-report.png)
 
-   根据查询、计算和卷的复杂性，可以通过查询收集这些报表中分析的数据，并在列表（数据管理类型工作流）或多维数据集（使用Marketing Analytics）中预聚合这些数据。 它将以数据透视表或组列表的形式显示。
+   視查詢、計算和磁碟區的複雜度而定，這些報告中分析的資料可透過查詢收集，並預先彙總至清單（資料管理型別工作流程）或多維度資料集（使用Marketing Analytics）。 它會以樞紐分析表或群組清單的形式顯示。
 
    如需详细信息，请参阅[此部分](gs-cubes.md)。
 
 * **内置报告**
 
-   Adobe Campaign提供了有关投放、营销活动、平台活动、可选功能等的报告。 这些报告通过与之相关的各种功能提供。 它们可以根据您的特定需求进行调整。
+   Adobe Campaign隨附傳遞、行銷活動、平台活動、選用功能等報表。 這些報告可透過其相關的各種功能取得。 它們可以根據您的特定需求進行調整。
 
-   使用 **报表** 选项卡访问这些报表。
+   使用 **報表** 標籤以存取這些報表。
 
    ![](assets/built-in-reports.png)
 
    如需详细信息，请参阅[此部分](built-in-reports.md)。
 
-* **描述性数据分析**
+* **描述性資料分析**
 
-   Adobe Campaign提供了一个可视化工具，用于生成有关数据库中数据的统计信息。 您可以使用专用助理创建描述性分析报告，并根据需要调整其内容和布局。
+   Adobe Campaign提供視覺化工具，可針對資料庫中的資料產生統計資料。 您可以使用專用的助理建立描述性分析報告，並根據需要調整其內容和版面。
 
-   使用 **[!UICONTROL Tools > Descriptive analysis...]** 菜单来创建新报表。
+   使用 **[!UICONTROL Tools > Descriptive analysis...]** 功能表以建立新報表。
 
    ![](assets/desc-analysis-report.png)
 
-   ![](../assets/do-not-localize/book.png) 营销活动描述性分析报告在 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}
+   ![](../assets/do-not-localize/book.png) 行銷活動描述性分析報表顯示於 [Campaign Classic v7檔案](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}
 
 * **自定义报告**
 
-   使用Adobe Campaign创建数据库中数据的报告。 创建这些内容后，请在相应的上下文中对其进行访问。
+   使用Adobe Campaign建立資料庫中資料的報告。 建立後，可在適當的前後關聯中存取這些物件。
 
-   ![](../assets/do-not-localize/book.png) 有关创建报表的详细步骤，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target="_blank"}. 个性化报表创建保留给高级用户。
+   ![](../assets/do-not-localize/book.png) 建立報告的步驟詳見 [Campaign Classic v7檔案](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target="_blank"}. 「個人化報表」建立作業會保留給進階使用者。

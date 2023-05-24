@@ -1,6 +1,6 @@
 ---
-title: 在Campaign中导入用户档案
-description: 了解如何在Campaign中导入联系人
+title: 在Campaign中匯入設定檔
+description: 瞭解如何在Campaign中匯入連絡人
 feature: Audiences, Profiles
 role: User
 level: Beginner
@@ -14,28 +14,28 @@ ht-degree: 24%
 
 # 从文件导入用户档案{#create-profiles}
 
-要填充Campaign数据库，您可以 [手动添加用户档案](create-profiles.md) 或导入用户档案，详情如下所述。 您还可以使用导入的文件来更新联系人数据。
+若要填入Campaign資料庫，您可以 [手動新增設定檔](create-profiles.md) 或匯入設定檔，如下所述。 您也可以使用匯入的檔案來更新聯絡資料。
 
 ## 用工作流导入用户档案 {#import-profiles-with-a-wf}
 
 工作流程可以用来自动执行某些导入过程。无论是从本地文件还是从 SFTP 导入数据，都可以使用工作流程来标准化数据管理过程。
 
-### 使用列表中的数据：读取列表 {#data-from-read-list}
+### 使用清單中的資料：讀取清單 {#data-from-read-list}
 
-在文件中准备和构建数据，以使用工作流导入数据。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html)。
+在檔案中準備和建構您的資料，以使用工作流程匯入資料。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html)。
 
-### 从文件加载数据 {#data-from-a-file}
+### 從檔案載入資料 {#data-from-a-file}
 
-可以在工作流中处理的数据可以从结构化文件中提取，以便将其导入Adobe Campaign。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading--file-.html)。
+可在工作流程中處理的資料可從結構化檔案中擷取，以便將其匯入Adobe Campaign。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading--file-.html)。
 
-收集数据后，您可以在工作流中使用它，例如扩充投放或更新数据库。 如需详细信息，请参阅[此部分](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html)。
+收集到資料後，您便可以在工作流程中使用資料，例如擴充傳遞或更新資料庫。 如需详细信息，请参阅[此部分](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html)。
 
-## 一次性进口{#import-jobs}
+## 一次性匯入{#import-jobs}
 
-Adobe Campaign提供了通用导入功能，例如，允许您提取随后将成为目标群体一部分的客户或潜在客户列表，或向数据库提供来自外部文件的数据。
+Adobe Campaign提供一般匯入功能，例如，可讓您擷取隨後將成為目標人口一部分的客戶或潛在客戶清單，或從外部檔案向資料庫提供資料。
 
-从 **[!UICONTROL Profiles and Targets > Jobs]** 菜单。
+一般匯入會從以下專案進行管理： **[!UICONTROL Profiles and Targets > Jobs]** Adobe Campaign首頁的功能表。
 
 ![](assets/new-import-job.png)
 
-有关执行通用导入的详细步骤，请参见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=zh-Hans){target="_blank"}.
+執行一般匯入的步驟詳見 [Campaign Classic v7檔案](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=zh-Hans){target="_blank"}.

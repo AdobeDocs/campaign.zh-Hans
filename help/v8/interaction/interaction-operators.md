@@ -1,6 +1,6 @@
 ---
-title: 操作员配置文件
-description: 创建选件管理运算符
+title: 運運算元設定檔
+description: 建立優惠方案管理運運算元
 feature: Interaction, Offers
 role: Data Engineer
 level: Beginner
@@ -12,93 +12,93 @@ ht-degree: 8%
 
 ---
 
-# 操作员配置文件 {#operator-profiles}
+# 運運算元設定檔 {#operator-profiles}
 
-两种类型的运算符可以使用Campaign交互： **选件经理** 和 **投放管理器**. 每个权限和限制都是特定的。 进一步了解Campaign操作员和 [本页](../start/gs-permissions.md).
+有兩種型別的運運算元可以使用Campaign互動： **優惠方案管理員** 和 **傳遞管理員**. 每個檔案都有特定的許可權和限制。 進一步瞭解Campaign運運算元和許可權 [此頁面](../start/gs-permissions.md).
 
-* 的 **[!UICONTROL Offer manager]** 创建和维护选件。
-* 的 **[!UICONTROL Delivery manager]** 批准和使用选件
+* 此 **[!UICONTROL Offer manager]** 建立和維護優惠方案。
+* 此 **[!UICONTROL Delivery manager]** 核准並使用優惠方案
 
-## 创建选件管理器运算符{#offer-manager}
+## 建立優惠方案管理員運運算元{#offer-manager}
 
-1. 创建运算符。 [了解详情](../start/manage-permissions.md#add-users)
-1. 浏览到 **[!UICONTROL Groups and named rights]** 窗口，单击 **[!UICONTROL Add]** ，然后选择 **[!UICONTROL Offer manager]** 群组。
+1. 建立運運算元。 [了解详情](../start/manage-permissions.md#add-users)
+1. 瀏覽至 **[!UICONTROL Groups and named rights]** 視窗，按一下 **[!UICONTROL Add]** 並選取 **[!UICONTROL Offer manager]** 群組。
 
-描述了与选件管理器关联的权限 [此处](../start/manage-permissions.md#ootb-productprofiles)
+說明與優惠方案管理員相關的許可權 [此處](../start/manage-permissions.md#ootb-productprofiles)
 
-## 创建投放管理器运算符 {#delivery-manager}
+## 建立傳遞管理員操作員 {#delivery-manager}
 
-1. 创建运算符。 [了解详情](../start/manage-permissions.md#add-users)
-1. 浏览到 **[!UICONTROL Groups and named rights]** ，单击 **[!UICONTROL Add]** ，然后选择 **[!UICONTROL Delivery manager]** 群组。
+1. 建立運運算元。 [了解详情](../start/manage-permissions.md#add-users)
+1. 瀏覽至 **[!UICONTROL Groups and named rights]** 標籤，按一下 **[!UICONTROL Add]** 並選取 **[!UICONTROL Delivery manager]** 群組。
 
-分配给投放管理器的权限使他们能够执行以下任务：
+指派給傳遞管理員的許可權可讓他們執行下列工作：
 
-* 显示 **[!UICONTROL Live]** 环境。
-* 显示和修改选件类别。
-* 审核选件（如果它们是审核者）。
+* 顯示 **[!UICONTROL Live]** 環境。
+* 顯示和修改優惠方案類別。
+* 核准優惠方案（如果優惠方案是稽核者）。
 
    >[!NOTE]
    >
-   >**投放管理器** 只有在选件配置中声明为审阅人时，才能批准选件。
+   >**傳遞管理員** 只有當優惠方案設定中已宣告為檢閱者時，才能核准優惠方案。
 
-## 每个交互运算符的权限矩阵 {#recap-of-rights-according-to-operator}
+## 每個互動運運算元的許可權矩陣 {#recap-of-rights-according-to-operator}
 
 <table> 
  <tbody> 
   <tr> 
    <td> </td> 
-   <td> <strong>选件管理器（设计环境）</strong><br /> </td> 
-   <td> <strong>选件管理器（实时环境）</strong><br /> </td> 
+   <td> <strong>Offer Manager （設計環境）</strong><br /> </td> 
+   <td> <strong>Offer Manager （即時環境）</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>树结构级别</strong><br /> </td> 
+   <td> <strong>樹狀結構層級</strong><br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 正在编辑的选件/实时选件<br /> </td> 
-   <td> 读/写<br /> </td> 
-   <td> 读取<br /> </td> 
+   <td> 正在編輯的優惠/即時優惠<br /> </td> 
+   <td> 讀取/寫入<br /> </td> 
+   <td> 讀取<br /> </td> 
   </tr> 
   <tr> 
-   <td> Recipient — 环境<br /> </td> 
-   <td> 读/写<br /> </td> 
-   <td> 读取<br /> </td> 
+   <td> 收件者 — 環境<br /> </td> 
+   <td> 讀取/寫入<br /> </td> 
+   <td> 讀取<br /> </td> 
   </tr> 
   <tr> 
    <td> 管理<br /> </td> 
-   <td> 读/写<br /> </td> 
-   <td> 读取<br /> </td> 
+   <td> 讀取/寫入<br /> </td> 
+   <td> 讀取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 空间<br /> </td> 
-   <td> 读/写<br /> </td> 
-   <td> 读取<br /> </td> 
+   <td> 空間<br /> </td> 
+   <td> 讀取/寫入<br /> </td> 
+   <td> 讀取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 预定义的选件过滤器<br /> </td> 
-   <td> 读/写<br /> </td> 
-   <td> 读取<br /> </td> 
+   <td> 預先定義的優惠篩選器<br /> </td> 
+   <td> 讀取/寫入<br /> </td> 
+   <td> 讀取<br /> </td> 
   </tr> 
   <tr> 
    <td> 类型<br /> </td> 
-   <td> 读/写<br /> </td> 
-   <td> 读取<br /> </td> 
+   <td> 讀取/寫入<br /> </td> 
+   <td> 讀取<br /> </td> 
   </tr> 
   <tr> 
    <td> 类型规则<br /> </td> 
-   <td> 读/写<br /> </td> 
-   <td> 读取<br /> </td> 
+   <td> 讀取/寫入<br /> </td> 
+   <td> 讀取<br /> </td> 
   </tr> 
   <tr> 
    <td> 优惠目录<br /> </td> 
-   <td> 读/写<br /> </td> 
-   <td> 读取<br /> </td> 
+   <td> 讀取/寫入<br /> </td> 
+   <td> 讀取<br /> </td> 
   </tr> 
   <tr> 
    <td> 优惠类别<br /> </td> 
-   <td> 读/写<br /> </td> 
-   <td> 读取<br /> </td> 
+   <td> 讀取/寫入<br /> </td> 
+   <td> 讀取<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -107,23 +107,23 @@ ht-degree: 8%
  <tbody> 
   <tr> 
    <td> </td> 
-   <td> <strong>投放管理器（设计环境）</strong><br /> </td> 
-   <td> <strong>投放管理器（实时环境）</strong><br /> </td> 
+   <td> <strong>傳遞管理員（設計環境）</strong><br /> </td> 
+   <td> <strong>傳遞管理員（即時環境）</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>树结构级别</strong><br /> </td> 
+   <td> <strong>樹狀結構層級</strong><br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 正在编辑的选件/实时选件<br /> </td> 
+   <td> 正在編輯的優惠/即時優惠<br /> </td> 
    <td> </td> 
-   <td> 读取<br /> </td> 
+   <td> 讀取<br /> </td> 
   </tr> 
   <tr> 
-   <td> Recipient — 环境<br /> </td> 
+   <td> 收件者 — 環境<br /> </td> 
    <td> </td> 
-   <td> 读取<br /> </td> 
+   <td> 讀取<br /> </td> 
   </tr> 
   <tr> 
    <td> 管理<br /> </td> 
@@ -131,34 +131,34 @@ ht-degree: 8%
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 空间<br /> </td> 
+   <td> 空間<br /> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> 预定义的选件过滤器<br /> </td> 
-   <td> 读取<br /> </td> 
-   <td> 读取<br /> </td> 
+   <td> 預先定義的優惠篩選器<br /> </td> 
+   <td> 讀取<br /> </td> 
+   <td> 讀取<br /> </td> 
   </tr> 
   <tr> 
    <td> 类型<br /> </td> 
-   <td> 读取<br /> </td> 
-   <td> 读取<br /> </td> 
+   <td> 讀取<br /> </td> 
+   <td> 讀取<br /> </td> 
   </tr> 
   <tr> 
    <td> 类型规则<br /> </td> 
    <td> </td> 
-   <td> 读取<br /> </td> 
+   <td> 讀取<br /> </td> 
   </tr> 
   <tr> 
    <td> 优惠目录<br /> </td> 
-   <td> 读取<br /> </td> 
-   <td> 读取<br /> </td> 
+   <td> 讀取<br /> </td> 
+   <td> 讀取<br /> </td> 
   </tr> 
   <tr> 
    <td> 优惠类别<br /> </td> 
    <td> </td> 
-   <td> 读取<br /> </td> 
+   <td> 讀取<br /> </td> 
   </tr> 
  </tbody> 
 </table>

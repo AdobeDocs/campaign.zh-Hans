@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 测试
-description: 进一步了解测试工作流活动
+description: 進一步瞭解測試工作流程活動
 feature: Workflows
 exl-id: 0d4d13f6-7128-44d3-ad5c-4ed02257ee64
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
@@ -15,16 +15,16 @@ ht-degree: 4%
 
 
 
-A **测试** 类型活动可激活满足其关联条件的第一个过渡。 如果未满足条件，则 **[!UICONTROL Use the default fork]** 选项时，将激活默认过渡。
+A **測試** type activity會啟動滿足與其相關聯條件的第一個轉變。 若未滿足任何條件，且 **[!UICONTROL Use the default fork]** 選項啟動時，預設轉變將會啟動。
 
-条件是必须计算为“true”或“false”的JavaScript表达式。 要输入表达式，请单击条件名称右侧的图标，然后选择 **[!UICONTROL Edit...]**.
+條件是JavaScript運算式，必須評估為「true」或「false」。 若要輸入運算式，請按一下條件名稱右側的圖示，然後選取 **[!UICONTROL Edit...]**.
 
 ![](assets/edit_test.png)
 
-有关可通过工作流JavaScript访问的应用程序服务器的所有其他JavaScript函数和SOAP方法的更多信息，请参阅 [JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans).
+如需透過工作流程JavaScript存取之應用程式伺服器的所有其他JavaScript函式和SOAP方法的詳細資訊，請參閱 [JSAPI檔案](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans).
 
-您还可以直接从此编辑器插入变量。 有关如何使用变量的更多信息，请参阅 [此部分](javascript-scripts-and-templates.md#variables).
+您也可以直接從此編輯器插入變數。 有關如何使用變數的詳細資訊，請參閱 [本節](javascript-scripts-and-templates.md#variables).
 
-可以从活动属性编辑窗口添加、删除或排序条件，也可以从过渡中修改条件。
+可以從活動屬性編輯視窗中新增、刪除或排序條件，也可以從轉變中修改條件。
 
-如果计算结果被不同条件重用，则可以在活动的初始化脚本中计算结果。 结果必须存储在要由条件脚本(task.vars.xxx)访问的任务的变量中。
+如果計算的結果要由不同的條件重複使用，則可以在活動的初始化指令碼中計算它。 結果必須儲存在任務的變數中，才能由條件指令碼(task.vars.xxx)存取。

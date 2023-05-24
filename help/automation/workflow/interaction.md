@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # 互动{#interaction}
 
-下面详述的工作流随 **优惠引擎（交互）** 默认情况下为加载项。
+以下詳述的工作流程會隨 **優惠方案引擎（互動）** 預設為附加元件。
 
 <table> 
  <tbody> 
@@ -23,18 +23,18 @@ ht-degree: 5%
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">完全聚合计算（propositionrcp多维数据集）</span> <br /> </td> 
+   <td> <span class="uicontrol">完整彙總計算(propositionrcp cube)</span> <br /> </td> 
    <td> <span class="uicontrol">agg_nmspropositionrcp_full</span> <br /> </td> 
-   <td> 此工作流会更新 <strong>完整</strong> 聚合 <strong>优惠建议</strong> 多维数据集。 默认情况下，此工作流于每日早上6点触发。 此聚合会捕获以下维度：渠道、投放、营销选件和日期。<br /> 的 <strong>优惠建议</strong> 然后，使用多维数据集根据选件生成报表。<br /> </td> 
+   <td> 此工作流程會更新 <strong>完整</strong> 彙總 <strong>優惠方案主張</strong> 立方體。 預設會每天早上6:00觸發。 此彙總會擷取下列維度：管道、傳送、行銷優惠方案和日期。<br /> 此 <strong>優惠方案主張</strong> 然後會使用cube來根據選件產生報表。<br /> </td> 
   </tr> 
    <tr> 
-   <td> <span class="uicontrol">MessageCenter完整聚合计算</span> <br /> </td> 
+   <td> <span class="uicontrol">MessageCenter完整彙總計算</span> <br /> </td> 
    <td> <span class="uicontrol">agg_messageCenter_full</span> <br /> </td> 
-   <td> 此工作流会更新 <strong>完整</strong> 聚合 <strong>消息中心</strong> 多维数据集。 默认情况下，此工作流于每日凌晨3点触发。 此聚合会捕获以下维度：渠道、日期、状态和事件类型。<br /> 的 <strong>消息中心</strong> 然后，使用多维数据集生成基于事件的报告。 <br /> </td> 
+   <td> 此工作流程會更新 <strong>完整</strong> 彙總 <strong>訊息中心</strong> 立方體。 預設會每天凌晨3:00觸發。 此彙總會擷取下列維度：管道、日期、狀態和事件型別。<br /> 此 <strong>訊息中心</strong> 然後使用立方體來根據事件產生報表。 <br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-了解有关 [此部分](../../v8/reporting/gs-cubes.md).
+進一步瞭解中的立方結構和彙總 [本節](../../v8/reporting/gs-cubes.md).
 

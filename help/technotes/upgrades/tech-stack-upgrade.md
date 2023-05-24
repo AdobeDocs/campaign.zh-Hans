@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 技术说明 — Adobe Campaign系统升级
-description: Adobe Campaign系统升级
+title: 技術檔案 — Adobe Campaign系統升級
+description: Adobe Campaign系統升級
 hide: true
 hidefromtoc: true
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
@@ -12,44 +12,44 @@ ht-degree: 11%
 
 ---
 
-# Adobe Campaign 2023年环境升级 {#ac-system-upgrade}
+# Adobe Campaign 2023環境升級 {#ac-system-upgrade}
 
-Campaign基础架构依赖于第三方系统，必须定期更新最新版本和修复。 这些更新是强制性的，可确保服务的连续性，并保护Campaign环境免受安全风险的影响。 此外，还需要升级Campaign以确保与第三方系统更改兼容。
+Campaign基礎架構仰賴協力廠商系統，且必須定期更新為最新版本和修正。 這些更新是強制性的，以確保服務的連續性並確保Campaign環境安全無虞。 此外，必須升級Campaign，以確保與第三方系統變更相容。
 
-As a **托管Cloud Services客户**，则Adobe会在需要时通知您这些升级。 您的环境需要根据建议进行升级以确保符合要求。
+As a **Managed Cloud Services客戶**，Adobe會在您需要這些升級時通知您。 您的環境將需要根據建議升級，以確保法規遵循。
 
-出于安全考虑，Adobe必须 [安装最新的Campaign内部版本](#ac-upgrade)，然后升级 [操作系统](#os-upgrade) 和/或 [关系数据库管理系统](#pg-upgrade).
+基於安全考量，Adobe必須 [安裝最新的Campaign版本編號](#ac-upgrade)，然後升級您的 [作業系統](#os-upgrade) 和/或您的 [關係資料庫管理系統(RDBMS)](#pg-upgrade).
 
 >[!NOTE]
 >
 >有关这些更改的任何问题，请联系 [Adobe 客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
-## Campaign内部版本升级 {#ac-upgrade}
+## Campaign版本編號升級 {#ac-upgrade}
 
 **您是否受影响？**
 
-如果您受 [操作系统升级](#os-upgrade) 和/或 [数据库系统升级](#pg-upgrade) 下文详细介绍，Adobe必须将您的Campaign环境升级到 [最新的8.4.3版本](../../v8/start/release-notes.md)，与这些系统兼容。
+如果您受到 [作業系統升級](#os-upgrade) 和/或 [資料庫系統升級](#pg-upgrade) 如下所述，Adobe必須將您的Campaign環境升級至 [最新8.4.3版本](../../v8/start/release-notes.md)，這些系統相容。
 
 **如何更新？**
 
-作为受管Cloud Services客户，Adobe将与您联系并升级您的Campaign版本。
+Adobe身為Managed Cloud Services客戶，將會聯絡您並升級您的Campaign版本。
 
-## 操作系统升级 {#os-upgrade}
+## 作業系統升級 {#os-upgrade}
 
 **您是否受影响？**
 
-如果您在Debian操作系统上运行Campaign，要从最新的Debian安全更新中受益，Adobe需要将您的Campaign基础架构移至 **Debian 11**. 请注意，Debian 9的安全支持将在2023年6月30日之前提供。
+如果您在Debian作業系統上執行Campaign，若要受益於最新的Debian安全性更新，Adobe需要將您的Campaign基礎架構移至 **Debian 11**. 請注意，Debian 9的安全性支援將持續提供至2023年6月30日。
 
 **如何更新？**
 
-作为受管Cloud Services客户，Adobe将与您联系并升级您的环境。
+Adobe身為Managed Cloud Services客戶，將會聯絡您並升級您的環境。
 
-## 数据库系统升级 {#pg-upgrade}
+## 資料庫系統升級 {#pg-upgrade}
 
 **您是否受影响？**
 
-如果您的Campaign数据库系统是PostgreSQL，要从最新的PostgreSQL创新和安全更新中受益，Adobe需要升级到 **PostgreSQL 14**. 请注意，PostgreSQL 11的生命周期将于2023年11月9日终止。
+如果您的Campaign資料庫系統是PostgreSQL，若要受益於最新的PostgreSQL創新和安全性更新，Adobe需要升級至 **PostgreSQL 14**. 請注意，PostgreSQL 11將於2023年11月9日結束生命週期。
 
 **如何更新？**
 
-作为托管Cloud Services客户，Adobe将与您联系，并将数据库系统从PostgreSQL 11升级到PostgreSQL 14。
+作為「受管理的Cloud Services」客戶，Adobe將會與您連絡，並將您的資料庫系統從PostgreSQL 11升級至PostgreSQL 14。

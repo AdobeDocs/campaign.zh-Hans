@@ -1,6 +1,6 @@
 ---
-title: 筛选营销活动模式
-description: 了解如何过滤Campaign模式
+title: 篩選行銷活動結構描述
+description: 瞭解如何篩選Campaign結構描述
 feature: Schema Extension
 role: Developer
 level: Intermediate, Experienced
@@ -14,25 +14,25 @@ ht-degree: 0%
 
 # 筛选模式{#filter-schemas}
 
-## 系统过滤器 {#system-filters}
+## 系統篩選器 {#system-filters}
 
-您可以根据特定用户的权限筛选对架构的访问权限。 系统过滤器允许您使用 **readAccess** 和 **writeAccess** 参数。
+您可以根據特定使用者的許可權，篩選其結構描述存取權。 系統篩選器可讓您使用管理結構描述中詳述之實體的讀取和寫入許可權 **readAccess** 和 **writeAccess** 引數。
 
 >[!NOTE]
 >
->此限制仅适用于非技术用户：具有相关权限或使用工作流的技术用户将能够检索和更新数据。
+>此限制僅適用於非技術使用者：具有相關許可權或使用工作流程的技術使用者將能夠擷取和更新資料。
 
-* **readAccess**:提供对架构数据的只读访问权限。
+* **readAccess**：提供對結構描述資料的唯讀存取權。
 
-   **警告**  — 必须使用相同的限制设置所有链接的表。 此配置可能会影响性能。
+   **警告**  — 所有連結的表格都必須設定相同的限制。 此設定會影響效能。
 
-* **writeAccess**:提供对架构数据的写入访问权限。
+* **writeAccess**：提供對結構描述資料的寫入許可權。
 
-这些过滤器在主 **元素** 架构的级别和（如以下示例所示）可以采用以限制访问的方式来形成。
+這些篩選器輸入在主要 **元素** 如下列範例所示，可形成架構的層級和來限制存取。
 
-* 限制写入权限
+* 限制寫入許可權
 
-   在此，过滤器用于禁止在没有ADMINISTRATION权限的情况下对操作员的架构具有WRITE权限。 这意味着只有管理员才具有此架构描述的实体的写入权限。
+   在此，篩選器用於在沒有ADMINISTRATION許可權的情況下禁止操作員在結構描述上執行WRITE許可權。 這表示只有管理員擁有此結構描述所說明之實體的寫入許可權。
 
    ```
    <sysFilter name="writeAccess">      
@@ -40,9 +40,9 @@ ht-degree: 0%
    </sysFilter>
    ```
 
-* 限制读和写权限：
+* 限制讀取和寫入許可權：
 
-   在此，过滤器用于禁止所有运算符对架构的读取和写入权限。 仅 **内部** 帐户，由表达式“$(loginId)!=0”，具有这些权限。
+   在此，篩選器用於禁止所有運運算元在結構描述上同時具有讀取和寫入許可權。 僅限 **內部** 帳號，由運算式「$(loginId)」表示！=0」擁有這些許可權。
 
    ```
    <sysFilter name="readAccess"> 
@@ -54,57 +54,57 @@ ht-degree: 0%
    </sysFilter>
    ```
 
-   可能 **expr** 用于定义条件的属性值为TRUE或FALSE。
+   可能 **運算式** 用來定義條件的屬性值是TRUE或FALSE。
 
 >[!NOTE]
 >
->如果未指定过滤器，则所有运算符都将具有架构的读写权限。
+>如果未指定篩選器，則所有運運算元都將具有結構描述的讀取和寫入許可權。
 
-## Protect内置模式
+## Protect內建結構描述
 
-默认情况下，内置架构仅可通过具有ADMINISTRATION权限的操作员的WRITE权限访问：
+依預設，只有具備管理員許可權的運運算元才可透過寫入許可權存取內建結構描述：
 
-* ncm:publishing
-* nl：监控
-* nms:calendar
-* xtk:builder
-* xtk：连接
-* xtk:dbInit
-* xtk:entityBackupNew
-* xtk:entityBackupOriginal
-* xtk:entityOriginal
-* xtk:form
-* xtk:funcList
-* xtk:fusion
-* xtk:image
-* xtk:javascript
-* xtk:jssp
-* xtk:jst
-* xtk:navtree
-* xtk:operatorGroup
-* xtk:package
-* xtk:queryDef
-* xtk:resourceMenu
-* xtk:rights
-* xtk:schema
-* xtk:scriptContext
-* xtk:specFile
-* xtk:sql
-* xtk:sqlSchema
-* xtk:srcSchema
-* xtk:strings
-* xtk:xslt
+* ncm：發佈
+* nl：monitoring
+* nms：calendar
+* xtk：builder
+* xtk：連線
+* xtk：dbInit
+* xtk：entityBackupNew
+* xtk：entityBackupOriginal
+* xtk：entityOriginal
+* xtk：form
+* xtk：funcList
+* xtk：fusion
+* xtk：image
+* xtk：javascript
+* xtk：jssp
+* xtk：jst
+* xtk：navtree
+* xtk：operatorGroup
+* xtk：package
+* xtk：queryDef
+* xtk：resourceMenu
+* xtk：rights
+* xtk：schema
+* xtk：scriptContext
+* xtk：specFile
+* xtk：sql
+* xtk：sqlSchema
+* xtk：srcSchema
+* xtk：strings
+* xtk：xslt
 
 >[!CAUTION]
 >
->的读取和写入权限 **xtk:sessionInfo** 架构只能由Adobe Campaign实例的内部帐户访问。
+>的讀取和寫入許可權 **xtk：sessionInfo** 結構描述只能由Adobe Campaign執行個體的內部帳戶存取。
 
-## 修改内置架构的系统筛选器
+## 修改內建結構描述的系統篩選器
 
-内置架构受到保护，以避免与旧版本出现兼容性问题。 Adobe建议您不要修改默认架构参数，以确保最佳安全性。
+內建方案受到保護，以避免與舊版發生相容性問題。 Adobe建議您不要修改預設的結構描述引數，以確保最佳安全性。
 
-但是，在特定环境中，您可能需要修改内置架构的系统筛选器。 要执行此操作，请执行以下步骤：
+但是，在特定上下文中，您可能需要修改內建結構描述的系統篩選器。 若要執行此動作，請遵循下列步驟：
 
-1. 为内置模式创建扩展或打开现有扩展。
-1. 添加子元素 **`<sysfilter name="<filter name>" _operation="delete"/>`** 在主元素中，忽略内置架构中相同下的过滤器。
-1. 您可以添加新过滤器，详情请参阅 [系统过滤器](#system-filters) 中。
+1. 為內建方案建立擴充功能或開啟現有的擴充功能。
+1. 新增子元素 **`<sysfilter name="<filter name>" _operation="delete"/>`** 在內建結構描述中，忽略相同專案下的篩選器。
+1. 您可以新增篩選器，如 [系統篩選器](#system-filters) 區段。

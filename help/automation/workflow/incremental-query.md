@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 增量查询
-description: 了解有关增量查询工作流活动的更多信息
+description: 進一步瞭解增量查詢工作流程活動
 feature: Workflows, Targeting Activity
 exl-id: 3e9f92c3-080f-441b-a15a-2ec9d056d1f9
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
@@ -15,54 +15,54 @@ ht-degree: 3%
 
 
 
-通过增量查询，您可以根据条件定期选择目标，同时排除已针对此条件定向的人员。
+增量查詢可讓您根據條件定期選取目標，同時排除已為此條件設定了目標的人員。
 
-已定向的群体按工作流实例和活动存储在内存中，即从同一模板启动的两个工作流不共享同一日志。 另一方面，基于同一工作流实例的相同增量查询的两个任务将使用相同的日志。
+已定位的母體會依工作流程例項和活動儲存在記憶體中，即從相同範本啟動的兩個工作流程不會共用相同記錄。 另一方面，根據相同工作流程例項的相同增量查詢的兩個任務將使用相同記錄。
 
-查询的定义方式与标准查询的定义方式相同，但其执行是计划的。
+查詢的定義方式與標準查詢的定義方式相同，但已排程其執行。
 
 **相关主题：**
 
-* [用例：使用增量查询每季度更新列表](quarterly-list-update.md)
-* [创建查询](query.md#creating-a-query)
+* [使用案例：使用增量查詢每季更新清單](quarterly-list-update.md)
+* [建立查詢](query.md#creating-a-query)
 
 >[!CAUTION]
 >
->如果增量查询的结果等于 **0** 在其中一次执行期间，工作流会暂停，直到查询的下次编程执行为止。 因此，在执行后续操作之前，不会处理增量查询后的过渡和活动。
+>如果增量查詢的結果等於 **0** 在其執行之一期間，工作流程會暫停，直到查詢下一次程式化執行為止。 因此，增量查詢之後的轉變和活動不會在後續執行之前處理。
 
 操作步骤：
 
-1. 在 **[!UICONTROL Scheduling & History]** 选项卡，选择 **[!UICONTROL Schedule execution]** 选项。 创建任务后，该任务将保持活动状态，并且只会在计划指定的时间执行查询时触发。 但是，如果禁用了选项，则会立即执行查询 **一下子**.
+1. 在 **[!UICONTROL Scheduling & History]** 索引標籤中，選取 **[!UICONTROL Schedule execution]** 選項。 任務在建立後會保持作用中，而且只會在執行查詢的排程所指定的時間觸發。 但是，如果停用該選項，則會立即執行查詢 **一次完成**.
 1. 单击 **[!UICONTROL Change]** 按钮。
 
-   在 **[!UICONTROL Schedule editing wizard]** 窗口中，您可以配置频度类型、事件重复和事件有效期。
+   在 **[!UICONTROL Schedule editing wizard]** 視窗中，您可以設定頻率、事件週期和事件有效期的型別。
 
    ![](assets/s_user_segmentation_wizard_11.png)
 
-1. 单击 **[!UICONTROL Finish]** 以保存计划。
+1. 按一下 **[!UICONTROL Finish]** 以儲存排程。
 
    ![](assets/s_user_segmentation_wizard_valid.png)
 
-1. 的下部 **[!UICONTROL Scheduling & History]** 选项卡，以选择历史记录中需要考虑的天数。
+1. 的下半部 **[!UICONTROL Scheduling & History]** 索引標籤可讓您選取要在歷史記錄中考慮的天數。
 
    ![](assets/edit_request_inc.png)
 
    * **[!UICONTROL History in days]**
 
-      已定向的收件人可在自定向之日起的最大天数内被记录。 如果此值为零，则从不会从日志中清除收件人。
+      已鎖定的收件者可記錄自鎖定的日期起的最大天數。 如果此值為零，收件者永遠不會從記錄中清除。
 
    * **[!UICONTROL Keep history when starting]**
 
-      此选项允许您在启用活动时不清除日志。
+      此選項可讓您在啟用活動時不會清除記錄。
 
    * **[!UICONTROL SQL table name]**
 
-      此参数允许您使包含历史数据的默认SQL表过载。
+      此引數可讓您多載包含歷史記錄資料的預設SQL表格。
 
-## 输出参数 {#output-parameters}
+## 輸出引數 {#output-parameters}
 
 * tableName
-* 模式
+* 綱要
 * recCount
 
-这组值由三个值组成，用于标识查询所定向的群体。 **[!UICONTROL tableName]** 是记录目标标识符的表的名称， **[!UICONTROL schema]** 是群体模式（通常为nms:recipient）和 **[!UICONTROL recCount]** 是表中的元素数。
+這組三個值會識別查詢所定位的母體。 **[!UICONTROL tableName]** 是記錄目標識別碼的資料表名稱， **[!UICONTROL schema]** 為母體的結構描述（通常為nms：recipient）和 **[!UICONTROL recCount]** 是表格中的元素數量。

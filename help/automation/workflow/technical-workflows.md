@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 技术工作流
-description: 进一步了解Campaign可用的技术工作流
+description: 進一步瞭解Campaign可用的技術工作流程
 feature: Workflows
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
@@ -13,77 +13,77 @@ ht-degree: 3%
 
 # 技术工作流{#about-technical-workflows}
 
-Adobe Campaign附带一组内置的技术工作流。 他们管理计划在服务器上定期执行的操作和作业。 利用这些功能，可对数据库进行维护、转发投放的跟踪信息，或设置投放的临时进程。 技术工作流通过 **[!UICONTROL Administration > Production > Technical workflows]** 节点。
+Adobe Campaign隨附一組內建的技術工作流程。 他們管理排定在伺服器上定期執行的作業和工作。 它們可讓您對資料庫進行維護、轉發傳遞的追蹤資訊，或設定傳遞的臨時流程。 技術工作流程可透過以下方式設定： **[!UICONTROL Administration > Production > Technical workflows]** 節點。
 
 ![](assets/navtree.png)
 
-本机模板可用于创建技术工作流。 可以根据您的需求配置它们。
+原生範本可用於建立技術工作流程。 它們可以根據您的需求進行設定。
 
-的 **[!UICONTROL Campaign process]** 子文件夹集中了在营销活动中执行流程所需的工作流：任务通知、库存管理、成本计算等
+此 **[!UICONTROL Campaign process]** 子檔案夾會集中處理行銷活動中執行流程所需的工作流程：任務通知、庫存管理、成本計算等。
 
 ![](assets/campaign-processes-wf.png)
 
 
 >[!NOTE]
 >
->随每个模块一起安装的技术工作流列表位于 [专用部分](technical-workflows.md).
+>隨每個模組安裝的技術工作流程清單可在以下網址取得： [專用區段](technical-workflows.md).
 
-您可以在 **[!UICONTROL Administration > Production > Technical workflows]** 树结构的节点。 但是，此过程仅供专家用户使用。
+您可以在中建立其他技術工作流程 **[!UICONTROL Administration > Production > Technical workflows]** 樹狀結構的節點。 不過，此程式會保留給專家使用者。
 
-提供的活动与定位工作流相同。 [了解详情](targeting-workflows.md)
+提供的活動與定位工作流程相同。 [了解详情](targeting-workflows.md)
 
-此部分中详细描述的工作流将随不同的Adobe Campaign内置包一起安装。 这些包及相关的技术工作流取决于您的许可协议。
+本節中詳述的工作流程會隨不同的Adobe Campaign內建套件安裝。 這些套件和相關的技術工作流程取決於您的授權合約。
 
-默认情况下，以下节点的子文件夹中提供了技术工作流： **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
+依預設，技術工作流程可在以下節點的子資料夾中使用： **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
-请注意，只有具有管理权限的操作员才能启动和修改技术工作流。
+請注意，技術工作流程只能由具有管理許可權的運運算元啟動和修改。
 
 >[!NOTE]
 >
->默认情况下，与消息中心加载项相关的技术工作流在 **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technical workflows]** 节点。
+>與訊息中心附加元件相關的技術工作流程預設可在 **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technical workflows]** 節點。
 
-在此中了解如何监控技术工作流 [专用部分](monitor-technical-workflows.md).
+透過此瞭解如何監視技術工作流程 [專用區段](monitor-technical-workflows.md).
 
 
 ## 技术工作流的列表 {#list-technical-workflows}
 
-| 技术工作流 | 包 | 说明 |
+| 技術工作流程 | 包 | 说明 |
 |------|--------|-----------|
-| **别名清理** （别名清理） | 默认安装 | 此工作流使枚举值标准化。 默认情况下，此工作流于每日凌晨3点触发。 |
-| **帐单** （帐单） | 默认安装 | 此工作流会通过电子邮件将系统活动报告发送给“billing”操作员。 它于每月25日在营销实例上触发。 |
-| **营销活动作业** (operationMgt) | 默认安装 | 此工作流可管理营销活动的作业（启动项定位、文件提取等）。 它还会创建与定期和定期营销活动相关的工作流。 |
-| **为HeatMap服务收集数据** (collectDataHeatMapService) | 默认安装 | 此工作流检索HeatMap服务所需的数据。 |
-| **收集隐私请求** (collectPrivacyRequests) | 隐私数据保护规定 | 此工作流会生成存储在Adobe Campaign中的收件人数据，并将其提供在隐私请求屏幕中下载。 |
-| **成本计算** (budgetMgt) | 默认安装 | 此工作流开始计算预算、计划、项目、营销策划、投放和任务中的费用和成本行。 |
-| **数据库清理** (cleanup) | 默认安装 | 此工作流是数据库维护工作流：它根据部署助手中定义的配置从数据库中删除过时的数据，从而与统计和进程进行不同的计算。 默认情况下，此工作流于每日凌晨4点触发。 |
-| **删除已阻止的LINE用户** (deleteBlockedLineUsersV2) | LINE 渠道 | 此工作流可确保在LINE V2用户阻止LINE正式帐户180天后删除其数据。 |
-| **删除隐私请求数据** (deletePrivacyRequestsData) | 隐私数据保护规定 | 此工作流会删除存储在Adobe Campaign中的收件人数据。 |
-| **交付指标** (deliveryIndicators) | 中间源平台 | 此工作流可更新投放的投放跟踪指示器。 默认情况下，此工作流每小时触发一次。 |
-| **分布式营销流程** (centralLocalMgt) | 中央/地方营销（分布式营销） | 此工作流会开始处理与使用分布式营销模块相关的问题。 它会启动本地促销活动的创建，并管理与订单和促销活动包可用性相关的通知。 |
-| **事件清除** (webAnalyticsPurgeWebEvents) | Web Analytics连接器 | 利用此工作流，可根据在“有效期”(Life)字段中配置的期间，从数据库字段中删除每个事件。 |
-| **将受众导出到Adobe Experience Cloud** (exportSharedAudience) | 与Adobe Experience Cloud集成 | 此工作流会将受众导出为共享的受众/区段。 您可在所用的不同 Adobe Experience Cloud 解决方案中使用这些受众。 |
-| **预测** （预测） | 投放 | 此工作流会分析在临时日历中保存的投放（创建临时日志）。 默认情况下，此工作流于每日凌晨1点触发。 |
-| **完全聚合计算（propositionrcp多维数据集）** (agg_nmspropositionrcp_full) | 优惠引擎（交互） | 此工作流更新了选件建议多维数据集的完整聚合。 默认情况下，此工作流于每日早上6点触发。 此聚合会捕获以下维度：渠道、投放、营销选件和日期。 然后，使用选件建议多维数据集来根据选件生成报告。 请在[此部分](../../v8/reporting/gs-cubes.md)中了解有关多维数据集的更多信息。 |
-| **已转换联系人的标识** (webAnalyticsFindConverted) | Web Analytics连接器 | 此工作流可为在再营销活动后完成购买的网站访客建立索引。 可通过再营销效率报表访问此工作流取回的数据（请参阅此页面）。 |
-| **从Adobe Experience Cloud导入受众** (importSharedAudience) | 与Adobe Experience Cloud集成 | 利用此工作流，可将不同Adobe Experience Cloud解决方案中的受众/区段导入Adobe Campaign。 |
-| **营销活动中投放的作业** (deliveryMgt) | 默认安装 | 此工作流会触发已批准的投放，并启动外部投放的服务提供商的后处理。 它还会发送批准通知和提醒。 |
-| **服务提供商上的作业** (supplierMgt) | 默认安装 | 在投放获得批准后，此工作流将开始处理提供程序（向路由器发送电子邮件并进行后处理）。 |
-| **从MID迁移到LineUserID** (MIDToUserIDMigration) | LINE 渠道 | 此工作流会生成从LINE V1迁移到LINE V2的LINE V2用户ID。 |
-| **消息中心 &lt;external_account_name>** (mcSynch_&lt;external_account_name>) | 事务型消息控制（消息中心 — 控制） | 此工作流： <ul><li>取回由操作处理的事件列表。</li><li>与NmsBroadLogMsg表同步，以恢复投放消息的资格。</li><li>与NmsBroadLogMsg表同步完成后，立即恢复事件投放日志。</li><li>与NmsTrackingUrl表同步，以便恢复交付URL的跟踪。</li><li>完成与NmsTrackingUrl表的同步后，会立即恢复事件跟踪URL。</li><li>允许您在发送投放后每三小时恢复隔离的所有电子邮件地址。</li></ul> |
-| **MessageCenter完整聚合计算** (agg_messageCenter_full) | 事务型消息控制（消息中心 — 控制） | 此工作流更新消息中心多维数据集的完整聚合。 默认情况下，此工作流于每日凌晨3点触发。 此聚合会捕获以下维度：渠道、日期、状态和事件类型。 然后，消息中心多维数据集用于根据事件生成报告。 您可以在  |
-| **中间源（投放计数器）** (defaultMidSourcingDlv) | 传输到中间源 | 此工作流会收集中间源服务器上投放的计数信息。 计数信息包括常规投放指示器，如发送的投放数量等。 不包括打开等跟踪信息。 默认情况下，每10分钟触发一次。 |
-| **中间源（投放日志）** (defaultMidSourcingLog) | 传输到中间源 | 此工作流在中间源服务器上收集投放日志。 默认情况下，每小时触发一次。 |
-| **NMAC选择退出管理** (mobileAppOptOutMgt) | 移动设备应用程序渠道（推送） | 此工作流可更新移动设备上的取消订阅通知。 从凌晨1点到午夜之间，每6小时触发一次。 |
-| **优惠通知** (offerMgt) | 默认安装 | 此工作流会将已批准的选件部署到在线环境，以及选件目录中包含的每个类别。 |
-| **暂停的工作流清理** (cleanupPausedWorkflows) | 默认安装 | 此工作流会分析严重性设置为正常的暂停工作流，并在暂停过长时触发警告和通知。 一个月后，将无条件停止暂停的技术工作流。 默认情况下，此工作流于每周一早上5点触发。 有关更多信息，请参阅 [处理暂停的工作流](monitor-workflow-execution.md#handling-of-paused-workflows). |
-| **隐私请求清理** (cleanupPrivacyRequests) | 隐私数据保护规定 | 此工作流会清除90天以前的访问请求文件。 |
-| **处理批处理事件** (batchEventsProcessing) | 事务型消息执行（消息中心 — 执行） | 利用此工作流，可在将批处理事件与消息模板关联之前，先将它们放入队列中。 |
-| **处理实时事件** (rtEventsProcessing) | 事务型消息执行（消息中心 — 执行） | 利用此工作流，可在将实时事件与消息模板关联之前，将它们放入队列中。 |
-| **命题同步** （命题同步） | 具有执行实例的优惠引擎控制 | 此工作流可在用于交互的营销实例和执行实例之间同步建议。 |
-| **Web事件的恢复** (webAnalyticsGetWebEvents) | Web Analytics连接器 | 此工作流每小时会下载给定网站上Internet用户行为的区段，并将其放入Adobe Campaign数据库并启动再营销工作流。 |
-| **报表聚合** (reportingAggregates) | 投放 | 此工作流可更新报表中使用的聚合。 默认情况下，此工作流于每日凌晨2点触发。 |
-| **发送指标和营销活动属性** (webAnalyticsSendMetrics) | Web Analytics连接器 | 此工作流允许您通过Analytics®连接器将电子邮件促销活动指示器从Adobe Campaign发送到Adobe Experience Cloud Suite。 相关指标如下：已发送(iSent)、打开总数(iTotalRecipientOpen)、已单击的收件人总数(iTotalRecipientClick)、错误(iError)、选择退出（选择退出）(iOptOut)。 |
-| **股票：订单和警报** (stockMgt) | 默认安装 | 此工作流会启动订单行上的库存计算并管理警告警报阈值。 |
-| **跟踪** （跟踪） | 默认安装 | 此工作流可执行跟踪信息的恢复和整合。 它还可确保重新计算跟踪和投放统计信息，特别是消息中心归档工作流使用的跟踪和投放统计信息。 默认情况下，每小时触发一次。 |
-| **更新事件状态** (updateEventsStatus) | 事务型消息执行（消息中心 — 执行） | 利用此工作流，可为事件分配状态。 事件状态如下所示：<ul><li>待定：事件在队列中。 尚未关联消息模板。</li><li>待定投放：事件在队列中，消息模板已与其关联，且投放当前正在处理该事件。</li><li>已发送：此状态复制于投放日志。 这意味着投放已发送。</li><li>被投放忽略：此状态复制于投放日志。 这意味着投放已被忽略。</li><li>投放错误：此状态复制于投放日志。 这意味着投放失败。</li><li>未涵盖的事件：事件未能与消息模板关联。 将不会重新处理该事件。</li></ul> |
-| **可投放性更新** (deliverabilityUpdate) | 默认安装 | 安装可投放性监控（电子邮件可投放性）包后，此工作流将在夜间运行，并管理退回电子邮件鉴别规则以及域和MX列表。 这要求在平台上打开HTTPS端口。 |
+| **別名清除** (aliasCleaning) | 預設安裝 | 此工作流程會將列舉值標準化。 預設會每天凌晨3:00觸發。 |
+| **帳單** （帳單） | 預設安裝 | 此工作流程會透過電子郵件將系統活動報告傳送給「帳單」操作員。 它會在每月25日在行銷執行個體上觸發。 |
+| **行銷活動工作** (operationMgt) | 預設安裝 | 此工作流程管理行銷活動的工作（啟動鎖定目標、檔案擷取等）。 也會建立與循環和定期行銷活動相關的工作流程。 |
+| **收集熱度圖服務的資料** (collectDataHeatMapService) | 預設安裝 | 此工作流程會擷取HeatMap服務所需的資料。 |
+| **收集隱私權請求** (collectPrivacyRequests) | 隐私数据保护规定 | 此工作流程會產生儲存在Adobe Campaign中的收件者資料，並讓該資料可在隱私權請求的畫面中下載。 |
+| **成本計算** (budgetM) | 預設安裝 | 此工作流程會開始計算預算、計畫、方案、行銷活動、傳遞和任務的費用和成本行。 |
+| **資料庫清理** （清除） | 預設安裝 | 此工作流程是資料庫維護工作流程：它會根據統計資料和程式進行不同的計算，並根據Deployment Assistant中定義的設定從資料庫刪除過時的資料。 預設會每天凌晨4:00觸發。 |
+| **刪除封鎖的LINE使用者** (deleteBlockedLineUsersV2) | LINE 渠道 | 此工作流程可確保LINE V2使用者的資料在封鎖LINE正式帳戶180天後會被刪除。 |
+| **刪除隱私權請求資料** (deletePrivacyRequestsData) | 隐私数据保护规定 | 此工作流程會刪除收件者儲存在Adobe Campaign的資料。 |
+| **傳遞指標** (deliveryIndicator) | 中间源平台 | 此工作流程會更新傳送的傳送追蹤指標。 預設會每小時觸發此工作流程。 |
+| **分散式行銷流程** (centralLocalmgt) | 中央/地方行銷（分散式行銷） | 此工作流程會開始處理與使用分散式行銷模組相關。 它會啟動本機行銷活動的建立，並管理與訂單和行銷活動套件可用性相關的通知。 |
+| **事件清除** (webAnalyticsPurgeWebEvents) | 網站分析聯結器 | 此工作流程可讓您根據「有效期限」欄位中設定的期間，從資料庫欄位中刪除每個事件。 |
+| **將受眾匯出至Adobe Experience Cloud** (exportSharedAudience) | 與Adobe Experience Cloud整合 | 此工作流程會將受眾匯出為共用受眾/區段。 您可在所用的不同 Adobe Experience Cloud 解决方案中使用这些受众。 |
+| **預測** （預測） | 投放 | 此工作流程會分析臨時行事曆中儲存的傳遞（建立臨時記錄）。 預設會每天凌晨1:00觸發。 |
+| **完整彙總計算(propositionrcp cube)** (agg_nmspropositionrcp_full) | 優惠方案引擎（互動） | 此工作流程會更新優惠方案主張Cube的完整彙總。 預設會每天早上6:00觸發。 此彙總會擷取下列維度：管道、傳送、行銷優惠方案和日期。 然後，優惠方案主張多維度資料集可用來根據優惠方案產生報表。 请在[此部分](../../v8/reporting/gs-cubes.md)中了解有关多维数据集的更多信息。 |
+| **已轉換連絡人的識別** (webAnalyticsFindConverted) | 網站分析聯結器 | 此工作流程會索引在再次行銷活動後完成購買的網站訪客。 此工作流程所復原的資料可在再行銷效率報表中存取（請參閱本頁面）。 |
+| **從Adobe Experience Cloud匯入對象** (importSharedAudience) | 與Adobe Experience Cloud整合 | 此工作流程可讓您將不同Adobe Experience Cloud解決方案中的對象/區段匯入至Adobe Campaign。 |
+| **行銷活動中傳遞的工作** (deliveryMgt) | 預設安裝 | 此工作流程會觸發已核准的傳遞，並開始後續處理外部傳遞的服務提供者。 也會傳送核准通知和提醒。 |
+| **服務提供者的工作** (supplierMgt) | 預設安裝 | 在核准傳遞後，此工作流程會開始處理提供者（傳送至路由器的電子郵件並進行後續處理）。 |
+| **MID到LineUserID移轉** (MIDToUserIDMigration) | LINE 渠道 | 此工作流程會產生LINE V2使用者ID，以便從LINE V1移轉至LINE V2。 |
+| **訊息中心 &lt;external_account_name>** (mcSynch_&lt;external_account_name>) | 異動訊息控制（訊息中心 — 控制） | 此工作流程： <ul><li>恢復作業處理的事件清單。</li><li>與NmsBroadLogMsg表格同步，以復原傳遞訊息資格。</li><li>與NmsBroadLogMsg表同步完成後，立即復原事件傳送記錄檔。</li><li>與NmsTrackingUrl表格同步，以復原傳遞URL的追蹤。</li><li>與NmsTrackingUrl表同步完成後，立即復原事件追蹤URL。</li><li>可讓您在傳送後，每三小時復原一次所有置於隔離的電子郵件地址。</li></ul> |
+| **MessageCenter完整彙總計算** (agg_messageCenter_full) | 異動訊息控制（訊息中心 — 控制） | 此工作流程會更新訊息中心Cube的「完整」彙總。 預設會每天凌晨3:00觸發。 此彙總會擷取下列維度：管道、日期、狀態和事件型別。 然後，會使用訊息中心Cube來根據事件產生報表。 您可以在中進一步瞭解多維度資料集  |
+| **中間來源（傳遞計數器）** (defaultMidSourcingDlv) | 传输到中间源 | 此工作流程會收集中間來源伺服器上傳送的計數資訊。 計數資訊包括一般傳遞指標，例如已傳送的傳遞數量等。 未包含開啟之類的追蹤資訊。 預設會每十分鐘觸發一次。 |
+| **中間來源（傳遞記錄）** (defaultMidSourcingLog) | 传输到中间源 | 此工作流程會在中間來源伺服器上收集傳遞記錄。 預設會每小時觸發一次。 |
+| **NMAC選擇退出管理** (mobileAppOptOutMgt) | 行動應用程式頻道（推播） | 此工作流程會更新行動裝置上的取消訂閱通知。 從上午1:00到午夜，每6小時觸發一次。 |
+| **優惠通知** (offerMgt) | 預設安裝 | 此工作流程會將核准的優惠方案部署至線上環境，以及優惠方案目錄中包含的每個類別。 |
+| **暫停的工作流程清理** (cleanupPausedWorkflows) | 預設安裝 | 此工作流程會分析嚴重程度設定為正常的暫停工作流程，並在暫停太久時觸發警告和通知。 一個月後，暫停的技術工作流程會無條件停止。 預設會每週一早上5:00觸發。 如需詳細資訊，請參閱 [處理暫停的工作流程](monitor-workflow-execution.md#handling-of-paused-workflows). |
+| **隱私權請求清理** (cleanupPrivacyRequest) | 隐私数据保护规定 | 此工作流程會清除90天以前的存取請求檔案。 |
+| **處理批次事件** (batchEventsProcessing) | 異動訊息執行（訊息中心 — 執行） | 此工作流程可讓您在將批次事件與訊息範本產生關聯之前，先將批次事件放入佇列中。 |
+| **處理即時事件** (rtEventsProcessing) | 異動訊息執行（訊息中心 — 執行） | 此工作流程可讓您在將即時事件與訊息範本產生關聯之前，先將其放入佇列中。 |
+| **主張同步** (propositionSynch) | 透過執行例項控制優惠方案引擎 | 此工作流程會在行銷執行個體與用於互動的執行執行個體之間同步化主張。 |
+| **復原Web事件** (webAnalyticsGetWebEvents) | 網站分析聯結器 | 每小時，此工作流程都會下載指定網站上網際網路使用者行為的區段，將其放入Adobe Campaign資料庫並啟動再行銷工作流程。 |
+| **報告彙總** (reportingAggregates) | 投放 | 此工作流程會更新報告中使用的彙總。 預設會每天凌晨2:00觸發。 |
+| **傳送指標和行銷活動屬性** (webAnalyticsSendMetrics) | 網站分析聯結器 | 此工作流程可讓您透過Adobe® Analytics聯結器，從Adobe Campaign傳送電子郵件行銷活動指標至Adobe Experience Cloud套裝。 相關指標如下： Sent (iSent)、開啟總數(iTotalRecipientOpen)、點按的收件者總數(iTotalRecipientClick)、錯誤(iError)、選擇退出（選擇退出） (iOptOut)。 |
+| **庫存：訂單與警示** (stockMgt) | 預設安裝 | 此工作流程會啟動訂單明細行的庫存計算，並管理警告警示臨界值。 |
+| **追蹤** (追蹤 | 預設安裝 | 此工作流程會執行追蹤資訊的復原與合併。 此外，還可確保重新計算追蹤和傳遞統計資料，尤其是訊息中心封存工作流程所使用的資料。 預設會每小時觸發一次。 |
+| **更新事件狀態** (updateEventsStatus) | 異動訊息執行（訊息中心 — 執行） | 此工作流程可讓您為事件指派狀態。 事件狀態如下：<ul><li>擱置中：事件在佇列中。 尚未為其建立任何訊息範本的關聯。</li><li>擱置傳遞：事件在佇列中，訊息範本已與其建立關聯，且傳遞目前正在處理中。</li><li>已傳送：此狀態是從傳送記錄檔複製而來。 這表示傳遞已傳送。</li><li>已被傳送忽略：此狀態是從傳送記錄檔複製而來。 這表示已忽略傳遞。</li><li>傳送錯誤：此狀態是從傳送記錄檔複製而來。 這表示傳送失敗。</li><li>未涵蓋的事件：此事件無法與訊息範本建立關聯。 將不會重新處理事件。</li></ul> |
+| **傳遞能力更新** (deliverabilityUpdate) | 預設安裝 | 安裝傳遞能力監控（電子郵件傳遞能力）套件後，此工作流程會在夜間執行，並管理彈回電子郵件資格規則，以及網域和MX的清單。 這需要在平台上開啟HTTPS連線埠。 |

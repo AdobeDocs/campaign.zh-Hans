@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: SQL 数据管理
-description: 了解有关SQL数据管理工作流活动的更多信息
+description: 深入瞭解SQL資料管理工作流程活動
 feature: Workflows
 exl-id: a1e08d57-0387-4802-b447-f6d9ad87072a
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
@@ -13,64 +13,64 @@ ht-degree: 1%
 
 # SQL 数据管理{#sql-data-management}
 
-的 **SQL数据管理** 活动允许您编写自己的SQL脚本以创建和填充工作表。
+此 **SQL資料管理** 活動可讓您撰寫自己的SQL指令碼，以建立和填入工作表。
 
 ## 先决条件 {#prerequisites}
 
-在配置活动之前，请确保满足以下先决条件：
+在設定活動之前，請確定已符合下列先決條件：
 
-* 活动仅可用于远程数据源。
-* 叫客模式必须存在于数据库中，并且必须链接到FDA数据库。
+* 活動僅適用於遠端資料來源。
+* 傳出結構描述必須存在於資料庫中，並連結至FDA資料庫。
 
 
-## 配置SQL数据管理活动 {#configuring-the-sql-data-management-activity}
+## 設定SQL資料管理活動 {#configuring-the-sql-data-management-activity}
 
-1. 指定活动 **[!UICONTROL Label]**.
-1. 选择 **[!UICONTROL External account]** 要使用，请选择 **[!UICONTROL Outbound schema]** 链接到此外部帐户。
-
-   >[!CAUTION]
-   >
-   >叫客架构已修复，无法编辑。
-
-1. 添加SQL脚本。
+1. 指定活動 **[!UICONTROL Label]**.
+1. 選取 **[!UICONTROL External account]** ，然後選取 **[!UICONTROL Outbound schema]** 連結至此外部帳戶。
 
    >[!CAUTION]
    >
-   >SQL脚本编写器负责确保SQL脚本正常工作，并且其引用（字段名称等） 符合叫客架构。
+   >傳出結構描述是固定的，無法編輯。
 
-   如果要加载现有SQL代码，请选择 **[!UICONTROL The SQL script is contained in an entity stored in the database]** 选项。 必须在 **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]** 菜单。
+1. 新增SQL指令碼。
 
-   否则，请在专用区域中键入或复制粘贴您的SQL脚本。
+   >[!CAUTION]
+   >
+   >SQL指令碼編寫者應負責確認SQL指令碼運作正常，以及其參考（欄位名稱等） 符合傳出綱要。
+
+   如果要載入現有的SQL程式碼，請選取 **[!UICONTROL The SQL script is contained in an entity stored in the database]** 選項。 SQL指令碼必須建立並儲存在 **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]** 功能表。
+
+   否則，請在專用區域中鍵入或複製並貼上您的SQL指令碼。
 
    ![](assets/sql_datamanagement.png)
 
-   利用活动，可在脚本中使用以下变量：
+   活動可讓您在指令碼中使用下列變數：
 
-   * **activity.tableName**:出站工作表的SQL名称。
-   * **task.incomingTransitionByName(&#39;name&#39;)。tableName**:传入过渡所携带的要使用的工作表的SQL名称（过渡由其名称标识）。
+   * **activity.tableName**：傳出工作表的SQL名稱。
+   * **task.incomingTransitionByName(&#39;name&#39;)。tableName**：傳入轉變所承載要使用的工作表的SQL名稱（轉變由其名稱識別）。
 
       >[!NOTE]
       >
-      >(&#39;name&#39;)值对应于 **[!UICONTROL Name]** 字段。
+      >(&#39;name&#39;)值對應至 **[!UICONTROL Name]** 切換屬性中的欄位。
 
-1. 如果SQL脚本已包含用于创建出站工作表的命令，请取消选择 **[!UICONTROL Automatically create work table]** 选项。 否则，一旦工作流执行，将自动创建工作表。
-1. 单击 **[!UICONTROL Ok]** 以确认活动配置。
+1. 如果SQL命令檔已經包含建立出站工作表格的命令，請取消選取 **[!UICONTROL Automatically create work table]** 選項。 否則，工作流程執行後會自動建立工作表。
+1. 按一下 **[!UICONTROL Ok]** 以確認活動設定。
 
-活动现已配置完成。 它已准备好在工作流中执行。
+活動現在已設定。 它可以在工作流程中執行。
 
 >[!CAUTION]
 >
->一旦执行活动，则叫客过渡记录计数仅指示性。 它可能因SQL脚本的复杂程度而异。
+>執行活動後，出站轉變記錄計數僅供參考。 它可能會因SQL指令碼的複雜度而有所不同。
 >  
->如果活动重新启动，则无论其执行状态如何，整个脚本都会从其开头执行。
+>如果活動重新啟動，則會從頭執行整個指令碼，無論其執行狀態為何。
 
-## SQL脚本示例 {#sql-script-samples}
+## SQL指令碼範例 {#sql-script-samples}
 
 >[!NOTE]
 >
->此部分中的脚本示例将用于在PostgreSQL下执行。
+>本節中的指令碼範例旨在在PostgreSQL下執行。
 
-通过下面的脚本，您可以创建工作表并将数据插入到同一工作表中：
+以下指令碼可讓您建立工作表，並將資料插入此相同工作表中：
 
 ```
 CREATE UNLOGGED TABLE <%= activity.tableName %> (
@@ -87,7 +87,7 @@ FROM nmsRecipient
 GROUP BY iRecipientId, sFirstName, sMiddleName, sLastName, sEmail;
 ```
 
-通过以下脚本，您可以执行CTAS操作（创建表作为选择）并创建工作表索引：
+以下指令碼可讓您執行CTAS作業(CREATE TABLE AS SELECT)並建立工作表索引：
 
 ```
 CREATE TABLE <%= activity.tableName %>
@@ -101,7 +101,7 @@ CREATE INDEX ON <%= activity.tableName %> (sEmail);
 ANALYZE <%= activity.tableName %> (sEmail);
 ```
 
-通过下面的脚本，您可以合并两个工作表：
+以下指令碼可讓您合併兩個工作表格：
 
 ```
 CREATE TABLE <%= activity.tableName %>

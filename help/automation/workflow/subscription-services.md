@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 订阅服务
-description: 了解有关订阅服务工作流活动的更多信息
+description: 深入瞭解訂閱服務工作流程活動
 feature: Workflows, Targeting Activity, Subscription Services Activity
 exl-id: 919630ed-b39f-40e5-b893-f3a203713b15
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
@@ -15,57 +15,57 @@ ht-degree: 1%
 
 
 
-A **订阅服务**-type活动允许您为过渡中指定的群体创建或删除信息服务订阅。
+A **訂閱服務**-type活動可讓您為轉變中指定的母體建立或刪除資訊服務的訂閱。
 
-要配置活动，请编辑活动并输入其标签，然后选择要执行的操作（订阅或退订）和相关服务，如以下示例所示：
+若要進行設定，請編輯活動並輸入其標籤，然後選取要執行的動作（訂閱或取消訂閱）及相關服務，如下列範例所示：
 
 ![](assets/edit_service_inscription.png)
 
-1. 输入活动的标签。
-1. 选择 **[!UICONTROL Generate an outbound transition]** 如果希望在执行结束时创建过渡。
+1. 輸入活動的標籤。
+1. 選取 **[!UICONTROL Generate an outbound transition]** 如果您想在執行結束時建立轉變。
 
-   通常，Target对信息服务的订阅会标记定位工作流的结尾，这也是默认情况下未激活选项的原因。
+   一般而言，目標對資訊服務的訂閱會標籤目標定位工作流程的結尾，這也是預設未啟用選項的原因。
 
-1. 单击 **[!UICONTROL Subscription]** 或 **[!UICONTROL Unsubscription]** 如果您希望订阅或退订选定信息服务的指定群体，则。
-1. 选择 **[!UICONTROL Send a confirmation message]** 通知收件人他们已订阅或退订了服务。
+1. 按一下 **[!UICONTROL Subscription]** 或 **[!UICONTROL Unsubscription]** 如果您想要為選取的資訊服務訂閱或取消訂閱指定的母體。
+1. 選取 **[!UICONTROL Send a confirmation message]** 通知收件者他們已訂閱或取消訂閱服務。
 
-   该消息的内容在与信息服务相关的投放模板中指定。
+   此訊息的內容是在與資訊服務相關的傳遞範本中指定的。
 
-## 示例：订阅新闻稿的收件人列表 {#example--subscribe-a-list-of-recipients-to-a-newsletter}
+## 範例：訂閱電子報的收件者清單 {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 
-在单个操作中，以下工作流旨在为符合新闻通讯条件的收件人列表，这些收件人面向居住在巴黎的工作人员，以便让他们订阅。
+在單一操作中，以下工作流程旨在提供一份符合電子報資格的收件者清單，對象是居住在巴黎的工作人士，以便讓他們訂閱。
 
-要实现此目的，还必须排除已订阅的收件人。
+若要這麼做，您也必須排除已訂閱的收件者。
 
 >[!CAUTION]
 >
->在手动为收件人订阅服务之前，请确认这些收件人接受您的通信。
+>在手動訂閱收件者服務之前，請確認這些收件者接受來自您的通訊。
 
 ![](assets/subscription_services_example.png)
 
-1. 添加以下三个查询：
+1. 新增下列三個查詢：
 
-   * 1个针对18至60岁的收件人。
-   * 第二个目标是住在巴黎的收件人。
-   * 第三个定向收件人，当前未订阅新闻稿。
+   * 1個目標收件者18至60歲。
+   * 第二個目標定位位於巴黎的收件者。
+   * 第三個目標收件者目前未訂閱電子報。
 
-1. 添加交集活动以交叉引用不同的结果。
-1. 如果需要，请插入列表更新以保持最新订阅者列表为最新。
-1. 插入订阅服务活动，然后双击该活动以对其进行配置。
-1. 输入活动标签并选择 **[!UICONTROL Subscription]**.
+1. 新增交集活動以交叉參照不同的結果。
+1. 您也可以插入清單更新以將最新訂閱者的清單保持在最新狀態。
+1. 插入訂閱服務活動，然後按兩下以設定它。
+1. 輸入活動標籤並選取 **[!UICONTROL Subscription]**.
 
-   如果需要，可通过选中 **[!UICONTROL Send a confirmation message]** 框中。
+   如有需要，您可以核取「 」，通知收件者其電子報訂閱 **[!UICONTROL Send a confirmation message]** 方塊。
 
-1. 选择新闻稿所在的文件夹，然后从显示的列表中选择新闻稿。
-1. 离开 **[!UICONTROL Generate outbound transition]** 取消选中，以便此活动将标记工作流的结尾，然后单击 **[!UICONTROL Ok]**.
+1. 選取新聞稿所在的資料夾，然後從出現的清單中選取新聞稿。
+1. 離開 **[!UICONTROL Generate outbound transition]** 取消勾選，以便此活動將標示工作流程的結尾，然後按一下 **[!UICONTROL Ok]**.
 
-在工作流执行期间，与所有三个查询对应的收件人将添加到列表并订阅新闻稿。
+在工作流程執行期間，與所有三個查詢相對應的收件者會新增到清單中，並訂閱電子報。
 
-您可以转到 **[!UICONTROL Subscription]** 选项卡。
+您可以前往 **[!UICONTROL Subscription]** 索引標籤來儲存您的收件者。
 
-## 输入参数 {#input-parameters}
+## 輸入引數 {#input-parameters}
 
 * tableName
-* 模式
+* 綱要
 
-每个集客事件必须指定由这些参数定义的目标。
+每個傳入事件都必須指定由這些引數定義的目標。

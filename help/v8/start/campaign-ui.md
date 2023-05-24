@@ -1,6 +1,6 @@
 ---
-title: 了解Campaign工作区
-description: 了解如何浏览和使用Campaign工作区
+title: 探索Campaign工作區
+description: 瞭解如何瀏覽及使用Campaign工作區
 feature: Overview
 role: Admin, Developer, User
 level: Beginner
@@ -12,71 +12,71 @@ ht-degree: 20%
 
 ---
 
-# 了解Campaign用户界面
+# 探索Campaign使用者介面
 
-## 访问Campaign UI{#ui-access}
+## 存取Campaign UI{#ui-access}
 
 Campaign 工作区可通过[客户端控制台](../architecture/general-architecture.md)使用。
 
-了解如何在 [此部分](../start/connect.md).
+瞭解如何在中安裝和設定Campaign使用者端主控台 [本節](../start/connect.md).
 
 ![](assets/home-page.png)
 
-您还可以使用Web浏览器访问Campaign。 在此上下文中，只有Campaign功能的子集可用。 [了解详情](#web-browser)
+您也可以使用網頁瀏覽器來存取Campaign。 在這種情況下，僅可使用Campaign功能的子集。 [了解详情](#web-browser)
 
-## 浏览UI{#ui-browse}
+## 瀏覽UI{#ui-browse}
 
-连接到Campaign后，即可访问主页。 浏览链接以访问功能。 UI中可用的功能集取决于您的选项和权限。
+連線至Campaign後，您就可以存取首頁。 瀏覽連結以存取功能。 UI中可用的功能集取決於您的選項和許可權。
 
-从主页的中心部分，使用链接访问Campaign帮助材料、社区和支持网站。
+從首頁的中央區段，使用連結來存取Campaign說明材料、社群和支援網站。
 
-使用上部的选项卡浏览Campaign关键功能：
+使用上方區段中的標籤，瀏覽Campaign金鑰功能：
 
 ![](assets/overview-home.png)
 
 >[!NOTE]
 >
->您可以访问的核心功能列表取决于您的权限和实施。
+>您可以存取的核心功能清單取決於您的許可權和實施。
 
-对于每个功能，您都可以访问 **[!UICONTROL Browsing]** 中。 的 **[!UICONTROL More]** 链接允许您访问所有其他组件。
+針對每項功能，您可以存取以下功能集的主要功能： **[!UICONTROL Browsing]** 區段。 此 **[!UICONTROL More]** 連結可讓您存取所有其他元件。
 
-例如，浏览到 **[!UICONTROL Profiles and targets]** 选项卡，您可以访问收件人列表、订阅服务、现有定位工作流以及用于创建所有这些组件的快捷方式。
+例如，瀏覽至 **[!UICONTROL Profiles and targets]** 索引標籤中，您可以存取收件者清單、訂閱服務、現有的目標定位工作流程，以及建立所有這些元件的捷徑。
 
 ![](assets/overview-list.png)
 
-在屏幕中选择某个元素时，该元素会加载到新选项卡中，以便您能够轻松浏览内容。
+當您在畫面中選取元素時，該元素會載入新的索引標籤中，以便您輕鬆瀏覽內容。
 
 ![](assets/new-tab.png)
 
-## 创建元素 {#create-an-element}
+## 建立元素 {#create-an-element}
 
-在 **[!UICONTROL Create]** 部分来添加新元素。 您还可以使用 **[!UICONTROL Create]** 按钮向当前列表添加新元素。
+在「 」中使用捷徑 **[!UICONTROL Create]** 區段來新增元素。 您也可以使用 **[!UICONTROL Create]** 按鈕來將新元素新增至目前清單。
 
 例如，在投放页面上，使用 **[!UICONTROL Create]** 按钮创建新的投放。
 
 ![](assets/new-recipient.png)
 
-## 使用Web浏览器 {#web-browser}
+## 使用網頁瀏覽器 {#web-browser}
 
-您还可以通过Web浏览器访问Campaign功能的子集。
+您也可以透過網頁瀏覽器存取Campaign功能的子集。
 
-Web访问界面与控制台界面类似。 在浏览器中，您可以使用与控制台相同的导航和显示功能，但只能对营销活动执行一组缩减的操作。 例如，您可以查看和取消营销活动，但无法修改营销活动。
+網頁存取介面與主控台介面類似。 在瀏覽器中，您可以使用與控制檯相同的導覽和顯示功能，但您只能在行銷活動上執行縮減的動作集。 例如，您可以檢視和取消行銷活動，但無法修改行銷活動。
 
-![](../assets/do-not-localize/glass.png) [进一步了解Campaign Web访问](../start/connect.md#web-access).
+![](../assets/do-not-localize/glass.png) [進一步瞭解Campaign網頁存取](../start/connect.md#web-access).
 
-## 访问Campaign Explorer {#ac-explorer-ui}
+## 存取Campaign總管 {#ac-explorer-ui}
 
-浏览Campaign Explorer以访问所有Adobe Campaign功能和设置。
+瀏覽Campaign Explorer以存取所有Adobe Campaign功能和設定。
 
 ![](assets/explorer.png)
 
-此工作区允许您访问资源管理器树以浏览所有功能和选项。
+此工作區可讓您存取Explorer樹狀結構以瀏覽所有功能和選項。
 
-* 左部分显示Campaign Explorer树，并允许您根据您的权限浏览实例的所有组件和设置。 您可以添加和自定义文件夹，如 [本页](../audiences/folders-and-views.md).
+* 左側區段顯示Campaign Explorer樹狀結構，並讓您根據您的許可權瀏覽執行個體的所有元件和設定。 您可以新增和自訂資料夾，如中所述 [此頁面](../audiences/folders-and-views.md).
 
-* 上部显示当前文件夹中的记录列表。 这些列表完全可自定义。 [了解详情](../config/ui-settings.md)
+* 上半部分顯示目前資料夾中的記錄清單。 這些清單是完全可自訂的。 [了解详情](../config/ui-settings.md)
 
-* 下部分显示选定记录的详细信息。
+* 下方區段會顯示所選記錄的詳細資訊。
 
 ## 语言{#languages}
 
@@ -94,7 +94,7 @@ Campaign v8 用户界面提供以下语言版本：
 >
 >创建实例后，无法更改语言。
 
-语言会影响日期和时间格式。
+語言會影響日期和時間格式。
 
 美式英语和英式英语的主要差别如下：
 
@@ -119,8 +119,8 @@ Campaign v8 用户界面提供以下语言版本：
   </tr> 
   <tr> 
    <td> 带时间的短日期<br /> </td> 
-   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>例如：09/25/2018 10:47:25 PM</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>例如：25/09/2018 22:47:25</strong></p> </td> 
+   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>例如： 2018年9月25日10:47:下午25點</strong></p> </td> 
+   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>例如： 2018年9月25日22:47:25</strong></p> </td> 
   </tr> 
  </tbody> 
 </table>

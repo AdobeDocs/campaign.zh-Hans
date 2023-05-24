@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # 消息中心（控制）{#message-center-control}
 
-下面详述的工作流计划每小时运行一次。 它随 **消息中心 — 控制** 模块。
+以下詳細的工作流程已排程每小時執行一次。 它隨附於 **訊息中心 — 控制項** 模組（預設）。
 
 
 <table> 
@@ -24,16 +24,16 @@ ht-degree: 10%
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> 消息中心 &lt;external_account_name&gt;<br /> </td> 
+   <td> 訊息中心 &lt;external_account_name&gt;<br /> </td> 
    <td> mcSynch_&lt;external_account_name&gt;<br /> </td> 
-   <td> 此工作流：<br /> 
+   <td> 此工作流程：<br /> 
     <ul> 
-     <li> <p>取回由操作处理的事件列表。</p> </li> 
-     <li> <p>与NmsBroadLogMsg表同步，以恢复投放消息的资格。</p> </li> 
-     <li> <p>与NmsBroadLogMsg表同步完成后，立即恢复事件投放日志。</p> </li> 
-     <li> <p>与NmsTrackingUrl表同步，以便恢复交付URL的跟踪。</p> </li> 
-     <li> <p>完成与NmsTrackingUrl表的同步后，会立即恢复事件跟踪URL。</p> </li> 
-     <li> <p>允许您在发送投放后每三小时恢复隔离的所有电子邮件地址。</p> </li> 
+     <li> <p>恢復作業處理的事件清單。</p> </li> 
+     <li> <p>與NmsBroadLogMsg表格同步，以復原傳遞訊息資格。</p> </li> 
+     <li> <p>與NmsBroadLogMsg表同步完成後，立即復原事件傳送記錄檔。</p> </li> 
+     <li> <p>與NmsTrackingUrl表格同步，以復原傳遞URL的追蹤。</p> </li> 
+     <li> <p>與NmsTrackingUrl表同步完成後，立即復原事件追蹤URL。</p> </li> 
+     <li> <p>可讓您在傳送後，每三小時復原一次所有置於隔離的電子郵件地址。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 

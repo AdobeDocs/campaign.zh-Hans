@@ -16,7 +16,7 @@ ht-degree: 30%
 
 
 
-下面详细介绍的工作流与 **具有执行实例的优惠引擎控制** 模块。
+以下詳述的工作流程會隨 **透過執行例項控制優惠方案引擎** 模組（預設）。
 
 <table> 
  <tbody> 
@@ -26,9 +26,9 @@ ht-degree: 30%
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">命题同步</span> <br /> </td> 
-   <td> <span class="uicontrol">命题同步</span> <br /> </td> 
-   <td> 此工作流可在用于交互的营销实例和执行实例之间同步建议。<br /> </td> 
+   <td> <span class="uicontrol">主張同步</span> <br /> </td> 
+   <td> <span class="uicontrol">propositionSynch</span> <br /> </td> 
+   <td> 此工作流程會在行銷執行個體與用於互動的執行執行個體之間同步化主張。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

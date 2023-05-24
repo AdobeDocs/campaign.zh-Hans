@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 数据提取（文件）
-description: 进一步了解数据提取（文件）工作流活动
+description: 進一步瞭解資料擷取（檔案）工作流程活動
 feature: Workflows, Data Management Activity
 exl-id: 8510e879-2862-491f-bc52-ca8f56105932
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
@@ -15,52 +15,52 @@ ht-degree: 1%
 
 
 
-您可以使用 **[!UICONTROL Data extraction (file)]** 活动。
+您可以使用從外部檔案的工作流程表格中擷取資料 **[!UICONTROL Data extraction (file)]** 活動。
 
 >[!CAUTION]
 >
->此活动必须始终包含集客过渡，其中包含要提取的数据。
+>此活動必須一律具有包含要擷取之資料的入站轉變。
 
-要配置数据提取，请应用以下步骤：
+若要設定資料擷取，請套用下列步驟：
 
-1. 指定输出文件的名称：此名称可包含变量，变量可通过字段右侧的个性化按钮插入。
-1. 单击 **[!UICONTROL Edit the file format...]** 以选择要提取的数据。
+1. 指定輸出檔案的名稱：此名稱可包含變數，可透過欄位右側的個人化按鈕插入。
+1. 按一下 **[!UICONTROL Edit the file format...]** 以選取要擷取的資料。
 
    ![](assets/s_advuser_extract_file_param.png)
 
-   的 **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** 选项会添加一个额外的步骤来筛选聚合的最终结果，例如，对于给定的采购订单类型、订购次数超过10次的客户，等等。
+   此 **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** 選項會新增額外的步驟來篩選彙總的最終結果，例如特定採購單型別、已訂購超過10次的客戶等。
 
-1. 如有必要，您可以向输出文件添加新列，例如计算或处理结果。 为此，请单击 **[!UICONTROL Add]** 图标。
+1. 如有必要，您可以將新欄新增至輸出檔案，例如計算或處理結果。 若要這麼做，請按一下 **[!UICONTROL Add]** 圖示。
 
    ![](assets/s_advuser_extract_file_add_col.png)
 
-   在其他行中，单击 **[!UICONTROL Edit expression]** 图标以定义新列的内容。
+   在其他行中，按一下 **[!UICONTROL Edit expression]** 圖示來定義新欄的內容。
 
    ![](assets/s_advuser_extract_file_add_exp.png)
 
-   然后，您将访问选择窗口。 单击 **[!UICONTROL Advanced selection]** ，以选择要应用于数据的流程。
+   然後，您將存取選取視窗。 按一下 **[!UICONTROL Advanced selection]** 以選擇要套用至資料的程式。
 
    ![](assets/s_advuser_extract_file_advanced_selection.png)
 
-   从列表中选择所需的公式。
+   從清單中選擇所需的公式。
 
    ![](assets/s_advuser_extract_file_agregate_values.png)
 
-您可以定义在数据提取期间要执行的后处理，从而允许您压缩或加密文件。 要实现此目的，必须在 **[!UICONTROL Script]** 选项卡。
+您可以定義要在資料擷取期間執行的後續程式，好讓您zip或加密檔案。 若要這麼做，必須將所需的命令新增至 **[!UICONTROL Script]** 活動索引標籤中的變數。
 
-有关更多信息，请参阅此章节： [压缩或加密文件](use-workflow-data.md#zipping-or-encrypting-a-file).
+如需詳細資訊，請參閱本區段： [壓縮或加密檔案](use-workflow-data.md#zipping-or-encrypting-a-file).
 
 ![](assets/postprocessing_dataextraction.png)
 
-## 聚合函数列表 {#list-of-aggregate-functions}
+## 彙總函式清單 {#list-of-aggregate-functions}
 
-以下是可用聚合函数的列表：
+以下是可用的彙總函式清單：
 
-* **[!UICONTROL Count]** 计算要聚合的字段的所有非空值，包括（聚合字段的重复值），
+* **[!UICONTROL Count]** 若要計算要彙總之欄位的所有非空值，包括（彙總欄位）的重複值，
 
-   **[!UICONTROL Distinct]** 要计算要聚合的字段的不同值和非空值的总数（在计算之前排除重复值），
+   **[!UICONTROL Distinct]** 若要計算要彙總之欄位的不同和非空值總數（計算前會排除重複值），
 
-* **[!UICONTROL Sum]** 计算数值字段值之和，
-* **[!UICONTROL Minimum value]** 要计算字段的最小值（数值或其他），
-* **[!UICONTROL Maximum value]** 要计算字段的最大值（数值或其他），
-* **[!UICONTROL Average]** 以计算数值字段值的平均值。
+* **[!UICONTROL Sum]** 若要計算數值欄位的值總和，
+* **[!UICONTROL Minimum value]** 若要計算欄位的最小值（數值或其他），
+* **[!UICONTROL Maximum value]** 若要計算欄位的最大值（數值或其他），
+* **[!UICONTROL Average]** 計算數值欄位值的平均值。

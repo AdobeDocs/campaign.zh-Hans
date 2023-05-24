@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 投放控制
-description: 了解有关投放控制工作流活动的更多信息
+description: 進一步瞭解傳遞控制工作流程活動
 feature: Workflows
 exl-id: 09fe638d-5e1c-49d1-9196-6300c1e56703
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
@@ -15,26 +15,26 @@ ht-degree: 5%
 
 
 
-A **投放控制**-type操作允许您开始、暂停或停止投放。
+A **傳遞控制**-type動作可讓您開始、暫停或停止傳遞。
 
-这可以是过渡中指定的投放、明确选择的投放或由脚本计算的投放。 有关更多信息，请参阅 [投放](delivery.md).
+這可以是轉變中指定的傳遞、明確選取的傳遞或指令碼計算的傳遞。 有關詳細資訊，請參閱 [傳遞](delivery.md).
 
 ![](assets/edit_diffusion_act.png)
 
-如果您选择 **[!UICONTROL Start]**，则活动将执行开始交付（目标计算、内容准备、交付）所需的所有步骤。 如果之前的工作流活动已经执行了其中某些步骤，则不会再执行这些步骤。 例如，如果目标估计已由 **[!UICONTROL Delivery]** 类型活动(请参阅 [投放](delivery.md))、 **[!UICONTROL Act on the delivery]** 活动将启动其余的步骤（内容准备和交付）。
+如果您選取 **[!UICONTROL Start]**，活動會執行開始傳送所需的所有步驟（目標計算、內容準備、傳送）。 如果先前的工作流程活動已執行這些步驟中的某些步驟，則不會再執行這些步驟。 例如，如果目標估計已經由 **[!UICONTROL Delivery]** 型別活動(請參閱 [傳遞](delivery.md))， **[!UICONTROL Act on the delivery]** 活動將啟動其餘步驟（內容準備和傳送）。
 
 可以使用以下选项：
 
 * **[!UICONTROL Generate an outbound transition]**
 
-   创建将在执行结束时激活的叫客过渡。 您可以选择是否检索叫客投放的目标。
+   建立將在執行結束時啟用的出站轉變。 您可以選擇是否要擷取傳出傳遞的目標。
 
 * **[!UICONTROL Processing errors]**
 
-   请参阅 [处理错误](monitor-workflow-execution.md#processing-errors).
+   請參閱 [處理錯誤](monitor-workflow-execution.md#processing-errors).
 
-## 输入参数 {#input-parameters}
+## 輸入引數 {#input-parameters}
 
 * deliveryId
 
-投放标识符(如果选定的操作为 **[!UICONTROL Specified in the transition]**.
+傳遞識別碼，如果選取的動作為 **[!UICONTROL Specified in the transition]**.

@@ -1,6 +1,6 @@
 ---
-title: Campaign互动优惠目录
-description: 了解如何创建优惠目录
+title: 行銷活動互動優惠方案目錄
+description: 瞭解如何建立優惠方案目錄
 feature: Interaction, Offers
 role: Data Engineer
 level: Beginner
@@ -14,58 +14,58 @@ ht-degree: 2%
 
 # 创建优惠目录
 
-作为 **选件管理器**，则您负责创建优惠目录。
+作為 **優惠方案管理員**，即由您負責建立優惠方案目錄。
 
-选件目录与单个预先存在的环境相关联。 此目录中的选件只能与此同一环境中指定的空间关联。
+優惠方案目錄與單一預先存在的環境相關聯。 此目錄中的選件只能與此同一環境中指定的空間相關聯。
 
-在创建选件之前，您必须先指定 [环境](interaction-env.md) 它包含一组选件的所有特征（资格、目标约束、呈现规则），这些选件按类别排序，以及其空间列表。
+在建立優惠方案之前，您必須先指定 [環境](interaction-env.md) 包含一組優惠方案的所有特性（適用性、目標限制、呈現規則），並依類別以及其空間清單排序。
 
 ## 创建优惠类别{#creating-offer-categories}
 
-选件分为类别/子类别。 类别在 **[!UICONTROL Design]** 环境，并在中自动部署 **[!UICONTROL Live]** 环境（即提供）。 的 **[!UICONTROL Design]** 环境包含用于接收所有选件的默认类别。 可以创建子类别以将层次结构添加到目录选件中。
+選件會組織成類別/子類別。 類別建立於 **[!UICONTROL Design]** 環境，並自動部署於 **[!UICONTROL Live]** 環境（亦即可供使用）。 此 **[!UICONTROL Design]** 環境包含接收所有優惠方案的預設類別。 可以建立子類別以將階層新增至目錄選件。
 
-对于每个类别，您可以定义 **合格日期**，类别中包含的选件可在此期间显示给其目标。 您还可以调整类别的权重，以优先显示选件。
+對於每個類別，您都可以定義 **適用日期**，即可將類別中包含的優惠方案顯示給其目標的期間。 您也可以調整類別的權重，以優先處理優惠方案簡報。
 
-要创建新类别，请执行以下步骤：
+若要建立新類別，請遵循下列步驟：
 
-1. 浏览到 **[!UICONTROL Offer catalog]** 文件夹。
+1. 瀏覽至 **[!UICONTROL Offer catalog]** 資料夾。
 
    ![](assets/offer_cat_create_001.png)
 
-1. 右键单击并选择 **[!UICONTROL Create a new "Offer category" folder]** 从下拉列表中。
+1. 按一下右鍵並選取 **[!UICONTROL Create a new "Offer category" folder]** 下拉式清單中的。
 
    ![](assets/offer_cat_create_002.png)
 
-1. 重新命名类别。 您稍后可以使用 **[!UICONTROL General]** 选项卡。
+1. 重新命名類別。 您稍後可以使用編輯標籤 **[!UICONTROL General]** 標籤。
 
    ![](assets/offer_cat_create_003.png)
 
    >[!NOTE]
    >
-   >重复这些步骤以创建所需数量的类别。
+   >重複這些步驟，視需要建立儘可能多的類別。
 
-   之后，您可以根据需要：
+   此後，您可以視需要：
 
-   * 分配 **[!UICONTROL Eligibility]** 选项卡。
+   * 從以下日期指派適用日期： **[!UICONTROL Eligibility]** 標籤。
 
       ![](assets/offer_cat_create_004.png)
 
-   * **[!UICONTROL Edit query]** 将过滤器应用到选件目标。
+   * **[!UICONTROL Edit query]** 將篩選器套用至優惠方案目標。
 
-   * 资格规则的回顾。要查看这些规则，请单击 **[!UICONTROL Schedule and eligibility rules of the offer]** 链接。
+   * 適用性規則的回顧。若要檢視適用性規則，請按一下 **[!UICONTROL Schedule and eligibility rules of the offer]** 連結。
 
-## 添加回退类别
+## 新增遞補類別
 
-为了确保所有收件人都收到优惠建议，可以在推荐中系统地添加一个或多个优惠类别。
+為確保所有收件者都能收到優惠方案主張，您可以在建議中系統地新增一或多個優惠方案類別。
 
-这些备用选件的权重必须较低（但非空），因此只有在没有较高权重的选件符合条件时，才会考虑这些备用选件。
+這些遞補優惠方案的權重必須較低（但非空值），因此只有在沒有較高權重優惠方案符合資格時，才會將其考慮在內。
 
-此外，不得对这些选件应用任何展示规则，以确保始终将它们包含在推荐中。 这意味着，在提出建议期间，如果没有更高权重的选件可用，则收件人将至少收到此类别中的一个选件。
+此外，這些選件不得套用任何簡報規則，以確保建議中一律包含這些選件。 這表示在主張期間，如果沒有可用的較高權重優惠，收件者將至少收到此類別的一個優惠。
 
-要在推荐中包含回退类别，请执行以下步骤：
+若要在建議中包含遞補類別，請遵循下列步驟：
 
-1. 浏览到您的优惠目录。
-1. 单击 **[!UICONTROL Eligibility]** ，然后选择 **[!UICONTROL Always include this category in the recommendations]** 选项。
+1. 瀏覽至優惠方案目錄。
+1. 按一下 **[!UICONTROL Eligibility]** 標籤並選取 **[!UICONTROL Always include this category in the recommendations]** 選項。
 1. 单击 **[!UICONTROL Save]**。
 
    ![](assets/offer_cat_default_001.png)

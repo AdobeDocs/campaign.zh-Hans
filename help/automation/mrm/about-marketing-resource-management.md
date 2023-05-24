@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 营销资源管理快速入门
-description: 发现营销资源管理
+title: 開始行銷資源管理
+description: 探索行銷資源管理
 role: Admin, Developer, User
 exl-id: 6fa4f4e3-c5a5-4d7f-8e71-826dee4e926a
 source-git-commit: e6b1790832be6331f4b27cc50b5d034ad738a822
@@ -11,37 +11,37 @@ ht-degree: 1%
 
 ---
 
-# 营销资源管理入门{#gs-mrm}
+# 開始使用行銷資源管理{#gs-mrm}
 
-的 **营销资源管理(MRM)** 通过提供对涉及的任务、预算和营销资源的完整管理和实时跟踪，您可以以协作模式控制营销活动。
+此 **行銷資源管理(RM)** 模組可讓您透過提供相關任務、預算和行銷資源的完整管理和即時追蹤，以合作模式控制行銷動作。
 
-Adobe Campaign操作员可以通过完整的验证流程和适当的跟踪工具来协调其操作并批准其在所有阶段的进度：报告、审批跟踪、通知、论坛等。 在事件或错误或延迟以及验证周期的每个新阶段时，会向用户发送警报。
+Adobe Campaign操作者可透過完整的驗證程式和適當的追蹤工具（報告、追蹤核准、通知、討論區等），協調其行動並核准所有階段的進度。 在事件或錯誤或延遲以及驗證週期的每個新階段都會收到警報。
 
-因此，在营销计划的方案和子方案中，可以创建任务并将其分配给相关的操作员，然后管理其所有阶段。
+因此，在行銷計畫的方案和子方案的內容中，可以建立任務並將其指派給相關操作者，然後在其所有階段進行管理。
 
-**MRM** 还允许您管理涉及多个参与者的营销资源：资源的完整性和监控通过专用仪表板执行。
+**MRM** 也可讓您管理涉及多個參與者的行銷資源：透過專用控制面板執行資源的完整性和監控。
 
-最后，将预算管理能力扩展到目标和费用行管理以及扩展的内置报告。 然后，您可以监控和衡量所有营销活动的工作效率和性能。
+最後，預算管理功能已擴充至目標和費用明細行管理，以及擴充的內建報表。 然後您可以監視和測量所有行銷活動的生產力和績效。
 
 >[!AVAILABILITY]
 >
->营销资源管理(MRM)在 [企业(FFDA)部署](../../v8/architecture/enterprise-deployment.md) 营销活动。
+>行銷資源管理(MRM)不適用於 [企業(FFDA)部署](../../v8/architecture/enterprise-deployment.md) 的Campaign。
 
-## 概念和术语 {#core-concepts}
+## 概念和術語 {#core-concepts}
 
-在Adobe Campaign营销资源管理中，以下概念和术语是特定的：
+在Adobe Campaign行銷資源管理的內容中，下列概念和辭彙是特定的：
 
 * **任务**
 
-   任务对应于要在营销活动上下文中执行的操作。 任务被分配给组或人员。 子任务可能取决于父任务，这意味着在所有子任务完成之前，不会执行父任务。 任务示例包括：引用网站、预算审核、摘要等
+   任務與要在行銷活動內容中執行的動作相對應。 任務已指派給群組或人員。 子任務可以依存於父任務，這表示在完成所有子任務之前，不會執行父任務。 工作的範例包括：參照網站、預算審查、簡報等。
 
-   有关更多信息，请参阅 [创建和管理任务](creating-and-managing-tasks.md).
+   有關詳細資訊，請參閱 [建立和管理任務](creating-and-managing-tasks.md).
 
 * **营销资源**
 
-   通过Adobe Campaign，您可以跟踪协作营销项目（如通信媒体、行动计划、时事通讯等）的进度。 这些营销资源的创建和批准周期可从资源仪表板中进行跟踪，直到发布。
+   Adobe Campaign可讓您追蹤合作行銷專案的進度，例如通訊媒體、行動計畫、電子報等。 可從資源控制面板追蹤這些行銷資源的建立和核准週期，直到發佈為止。
 
-   有关更多信息，请参阅 [管理营销资源](managing-marketing-resources.md).
+   有關詳細資訊，請參閱 [管理行銷資源](managing-marketing-resources.md).
 
 <!--
 >[!NOTE]
@@ -53,10 +53,10 @@ Adobe Campaign操作员可以通过完整的验证流程和适当的跟踪工具
 >Marketing campaign functionalities are detailed in [this section](../../campaign/using/accessing-marketing-campaigns.md).
 -->
 
-通过营销资源管理(MRM)附加功能，计划和计划还附带以下列其他功能：
+使用行銷資源管理(MRM)附加元件時，計畫和方案會隨附下列附加功能：
 
-* **预算管理**. [了解详情](controlling-costs.md)
+* **預算管理**. [了解详情](controlling-costs.md)
 
-* **任务管理**. [了解更多](creating-and-managing-tasks.md)
+* **任務管理**. [瞭解更多](creating-and-managing-tasks.md)
 
-* **资源管理**. [了解详情](managing-marketing-resources.md)
+* **資源管理**. [了解详情](managing-marketing-resources.md)

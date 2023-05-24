@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 建立和管理审批流程
-description: 了解如何管理营销活动的批准
+description: 瞭解如何管理行銷活動的核准
 feature: Approvals, Campaigns
 exl-id: 03be5058-436e-4de9-99a7-91d799aa17f6
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
@@ -13,304 +13,304 @@ ht-degree: 2%
 
 # 建立和管理审批流程 {#approval-marketing-campaigns}
 
-创建和批准营销活动所涉及的方法和人员特定于每个组织。 活动批准流程涉及协调多个利益相关方：数字营销人员、投放经理、内容管理人员和外部所有者（如合作伙伴或供应商）。
+每個組織都有專屬建立和核准行銷活動的方法和人員。 行銷活動核准程式涉及協調多個利害關係人：數位行銷人員、傳遞經理、內容經理以及外部擁有者，例如合作夥伴或供應商。
 
-通过Adobe Campaign，您可以为营销活动设置批准流程，并在需要操作时通知操作员。 您可以为投放的每个步骤定义批准：定位、内容、预算、提取和校样发送。 当您的营销活动投放完成各种验证步骤时，Adobe Campaigns会编译修改和签核的历史记录，包括反馈、评论、更改请求和评论。
+透過Adobe Campaign，您可以設定行銷活動的核准流程，並在需要動作時通知操作員。 您可以為傳送的每個步驟定義核准：目標定位、內容、預算、摘錄和證明傳送。 當您的行銷活動傳遞通過各種驗證步驟時，Adobe Campaigns會編譯修改和簽核的歷史記錄，包括意見反應、評論、變更請求和評論。
 
-通知消息将发送给指定为审阅人的Adobe Campaign操作员，以通知他们批准请求。
+通知訊息會傳送給指定為稽核者的Adobe Campaign操作員，以通知他們核准請求。
 
 
-操作员可以通过以下几种方式进行批准：
+操作員可透過數種方式核准：
 
-* 从通知消息。 电子邮件中的链接可让操作员通过Web浏览器访问Campaign。 连接后，审阅人可以选择是否批准内容。
+* 來自通知訊息。 電子郵件中的連結可讓運運算元透過網頁瀏覽器前往Campaign。 連線後，稽核者可以選擇核准或不核准內容。
    ![](assets/approval-content-email.png)
 
-* 从营销活动仪表板。
+* 從行銷活動控制面板。
    ![](assets/approval-from-dashboard.png)
 
-* 从投放仪表板。
+* 從傳遞控制面板。
    ![](assets/approval-from-delivery-dashboard.png)
 
-操作员可以从批准窗口访问营销活动和投放。 用户还可以输入评论。
+操作員可以從核准視窗存取行銷活動和傳遞。 他們也可以輸入註解。
 
 ![](assets/approval-target-confirm.png)
 
-操作员验证后，该信息会显示在营销活动和投放仪表板以及日志中。
+操作員驗證後，資訊會顯示在行銷活動和傳遞控制面板以及記錄中。
 
 ![](assets/approvals-from-delivery.png)
 
-投放的批准日志和营销活动的批准日志中也提供此信息。 通过 **[!UICONTROL Edit > Audit > Approvals]** 选项卡。
+該資訊也可在傳送的核准記錄以及行銷活動的核准日誌中取得。 這些記錄檔是透過 **[!UICONTROL Edit > Audit > Approvals]** 索引標籤。
 
 ![](assets/approval-logs.png)
 
 
-## 启用批准{#enable-approvals}
+## 啟用核准{#enable-approvals}
 
-审批通知会发送给受影响的操作员，这些操作员会收到启用审批的每个流程的通知。
+核准通知會傳送給每個已啟用核准之程式受影響的操作者。
 
-可为营销活动模板、每个营销活动单独启用，或为投放启用。
+它們可以為行銷活動範本啟用、針對每個行銷活動個別啟用，或針對傳送啟用。
 
-所有需要批准的作业均通过  **[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign parameters...]** > **[!UICONTROL Approvals]** 选项卡。 从此选项卡中选择审阅人或审阅人组。 除非未启用此选项，否则用户会收到通知。 [了解详情](#approving-processes)。
+所有需要核准的工作都會透過行銷活動範本中選取  **[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign parameters...]** > **[!UICONTROL Approvals]** 標籤。 會從此標籤中選取稽核者或稽核者群組。 除非未啟用此選項，否則他們會收到通知。 [了解详情](#approving-processes)。
 
-可以使用此模板创建的每个营销活动都可以覆盖这些设置，每个投放也可以单独覆盖这些设置。 浏览 **[!UICONTROL Properties]** 按钮，然后 **[!UICONTROL Approvals]** 选项卡。
+您可以針對使用此範本建立的每個行銷活動覆寫這些設定，也可以針對每個傳送個別覆寫。 瀏覽 **[!UICONTROL Properties]** 的按鈕，然後 **[!UICONTROL Approvals]** 標籤。
 
-在以下示例中，投放内容不需要批准：
+在下列範例中，傳遞內容不需要核准：
 
 ![](assets/approval-not-enabled.png)
 
 
 >[!CAUTION]
 >
->检查审阅人是否具有 **适当的权限** ，且其安全区域已正确定义。 [了解详情](#selecting-reviewers)。
+>檢查檢閱者是否擁有 **適當的許可權** 以進行核准，並確認其安全區域已正確定義。 [了解详情](#selecting-reviewers)。
 
-有关投放的审批流程，请参阅 [此部分](#review-and-approve-deliveries).
+傳遞的核准程式詳見 [本節](#review-and-approve-deliveries).
 
-## 选择审阅人 {#select-reviewers}
+## 選取檢閱者 {#select-reviewers}
 
-对于每种类型的批准，从投放的下拉列表中选择负责批准的操作员或操作员组。 可以使用 **[!UICONTROL Edit...]** 链接。 此窗口还允许您编辑审批截止时间。 默认情况下，审阅人自提交日期起有3天时间批准流程。 要添加自动提醒，请使用 **[!UICONTROL Add a reminder]** 链接。
+對於每種核准型別，都會從傳送的下拉式清單中選取負責核准的操作員或操作員群組。 可使用新增更多運運算元 **[!UICONTROL Edit...]** 連結。 此視窗也可讓您編輯核准期限。 依預設，稽核者從提交日期起有三天時間來核准流程。 若要新增自動提醒，請使用 **[!UICONTROL Add a reminder]** 連結。
 
 ![](assets/add-reviewers.png)
 
-如果未指定审核者，则营销活动所有者负责审批并接收通知。 在 **[!UICONTROL Edit > Properties]** 选项卡：
+如果未指定稽核者，則行銷活動擁有者會負責核准並接收通知。 行銷活動擁有者指定於 **[!UICONTROL Edit > Properties]** 行銷活動的索引標籤：
 
 ![](assets/campaign-owner.png)
 
-所有其他Adobe Campaign运算符 **[!UICONTROL Administrator]** 权限也可以批准作业，但不会收到通知。
+所有其他的Adobe Campaign運運算元，搭配 **[!UICONTROL Administrator]** 許可權也可以核准工作，但不會收到通知。
 
 >[!NOTE]
 >
->默认情况下，如果定义了批准运算符，则营销活动所有者无法执行批准或启动投放。 作为Adobe Campaign管理员，您可以修改此行为，并通过创建 **NmsCampaign_Activate_OwnerConfirmation** 选项，设置为 **1**.
+>依預設，如果已定義核准操作員，行銷活動擁有者無法執行核准或開始傳遞。 作為Adobe Campaign管理員，您可以修改此行為，並透過建立 **NmsCampaign_Activate_OwnerConfirmation** 選項，設定為 **1**.
 
 
-如果定义了审阅人列表，则当一个审阅人批准了某个作业时，该作业即被批准。 然后，营销活动和投放功能板中将不再提供批准链接。 在启用通知发送后，如果其他审阅人单击通知消息中的批准链接，则系统会通知他们其他操作员已经批准了该作业。
+如果已定義稽核者清單，當稽核者核准某個工作時，就會核准該工作。 行銷活動和傳遞控制面板中不再提供核准連結。 啟用通知傳送後，如果其他稽核者按一下通知訊息中的核准連結，系統會通知他們其他操作員已核准該工作。
 
 ![](assets/delivery-target-already-approved.png)
 
 
-## 审核和批准投放 {#review-and-approve-deliveries}
+## 檢閱和核准傳遞 {#review-and-approve-deliveries}
 
-对于每个营销活动，您可以批准投放目标， [投放内容](#approving-content) 和成本。 负责审批工作的 Adobe Campaign 操作员收到电子邮件通知后，可通过控制台或 Web 连接批准或拒绝批准相关请求。[了解详情](#approving-processes)。
+對於您可以核准傳遞目標的每個行銷活動， [傳遞內容](#approving-content) 和成本。 负责审批工作的 Adobe Campaign 操作员收到电子邮件通知后，可通过控制台或 Web 连接批准或拒绝批准相关请求。[了解详情](#approving-processes)。
 
-对于直邮投放，Adobe Campaign操作员可以在提取文件发送到路由器之前查看提取文件，如有必要，他们可以更改格式并重新启动提取。 [了解详情](#approve-an-extraction-file)。
+如果是直接郵件傳送，Adobe Campaign操作員可在解壓縮檔案傳送至路由器前檢視解壓縮檔案，並可視需要變更格式及重新啟動解壓縮。 [了解详情](#approve-an-extraction-file)。
 
-完成这些验证阶段后，即可启动投放。 [了解详情](marketing-campaign-deliveries.md#starting-a-delivery)。
+完成這些驗證階段後，即可啟動傳送。 [了解详情](marketing-campaign-deliveries.md#starting-a-delivery)。
 
 >[!NOTE]
 >
->营销活动模板中会选择需要批准的流程。 [了解详情](marketing-campaign-templates.md)。
+>在行銷活動範本中選取需要核准的程式。 [了解详情](marketing-campaign-templates.md)。
 
-### 批准投放的步骤 {#approving-processes}
+### 核准傳遞的步驟 {#approving-processes}
 
-需要批准的阶段将显示在营销活动仪表板（通过控制台或Web界面）中。 它们还会显示在投放跟踪表和投放仪表板中。
+需要核准的階段會出現在行銷活動控制面板上（透過主控台或網頁介面）。 它們也會顯示在傳送追蹤表格和傳送控制面板上。
 
 ![](assets/delivery-approval-actions.png)
 
-对于营销活动中的每个投放，您可以批准以下流程：
+對於行銷活動中的每個傳遞，您可以核准以下流程：
 
-* **定位、内容和预算**
+* **目標定位、內容和預算**
 
-   当 **[!UICONTROL Enable target approval]**, **[!UICONTROL Enable content approval]** 或 **[!UICONTROL Enable budget approval]** 选项，相关链接将显示在营销活动和投放功能板中。
+   當 **[!UICONTROL Enable target approval]**， **[!UICONTROL Enable content approval]** 或 **[!UICONTROL Enable budget approval]** 在「核准設定」視窗中選取選項，相關連結會顯示在「行銷活動」和「傳送」控制面板中。
 
    ![](assets/template-activate-6.png)
 
    >[!NOTE]
    >
-   >只有在审批设置窗口中启用了目标审批后，才可进行预算审批。 仅在分析目标后，才会显示用于预算审批的链接。
+   >只有在核准設定視窗中啟用目標核準時，才能使用預算核准。 只有在分析目標之後，才會顯示預算核准連結。
 
-   如果 **[!UICONTROL Assign content editing]** 或 **[!UICONTROL External content approval]** 选项，功能板将显示 **[!UICONTROL Available content]** 和 **[!UICONTROL External content approval]** 链接。
+   如果 **[!UICONTROL Assign content editing]** 或 **[!UICONTROL External content approval]** 在核准設定視窗中選取選項，儀表板將顯示 **[!UICONTROL Available content]** 和 **[!UICONTROL External content approval]** 連結。
 
-   内容批准允许您访问发送的校样。
+   內容核准可讓您存取已傳送的校樣。
 
-* **提取批准（直邮投放）**
+* **摘取核准（直接郵件傳送）**
 
-   When **[!UICONTROL Enable extraction approval]** 在“批准设置”窗口中选择，则必须先批准提取的文件，然后才能通知路由器。
+   時間 **[!UICONTROL Enable extraction approval]** 在核准設定視窗中選取時，擷取的檔案必須先經過核准，才能通知路由器。
 
-   的 **[!UICONTROL Approve file]** 选项在营销活动和投放功能板上可用。
+   此 **[!UICONTROL Approve file]** 選項適用於行銷活動和傳遞控制面板。
 
    ![](assets/approve-file-preview.png)
 
-   您可以在验证之前预览输出文件。 提取文件预览仅显示数据示例。 不会加载整个文件。
+   您可以在驗證之前預覽輸出檔案。 擷取檔案預覽只會顯示資料範例。 未載入整個檔案。
 
-* **批准关联的投放**
+* **核准關聯的傳遞**
 
-   的 **[!UICONTROL Enable individual approval of each associated delivery]** 选项用于与辅助投放关联的主投放。 默认情况下，不会选择此选项，以便能够对主投放进行整体批准。 如果选择此选项，则必须单独批准每个投放。
+   此 **[!UICONTROL Enable individual approval of each associated delivery]** 選項適用於與次要傳遞相關聯的一個主要傳遞。 依預設，不會選取此選項，以便執行主要傳送的整體核准。 如果選取此選項，則必須個別核准每個傳遞。
 
    ![](assets/enable-ind-approval.png)
 
 
 >[!NOTE]
 >
->在定位工作流中，如果在消息准备期间发生链接到配置问题的错误，则 **[!UICONTROL Restart message preparation]** 链接。 修复错误，并使用此链接在绕过定位阶段时重新启动消息准备。
+>在目標定位工作流程中，如果在訊息準備期間發生連結至設定問題的錯誤， **[!UICONTROL Restart message preparation]** 連結會顯示在控制面板上。 修正錯誤，並使用此連結在略過目標階段時重新啟動訊息準備。
 
 
-### 批准内容 {#approve-content}
+### 核准內容 {#approve-content}
 
 >[!CAUTION]
 >
->要批准内容，必须进行校样循环。 通过校样，您可以批准信息显示、个性化数据并检查链接是否正常工作。
+>若要核准內容，校訂週期是強制性的。 校樣可讓您核准顯示資訊、個人化資料並檢查連結是否正常運作。
 >
->下面详述的内容批准功能与校样投放相关。
+>下文詳述的內容核准功能與證明傳送有關。
 
-可以配置内容批准周期。 为此，请选择 **[!UICONTROL Enable content approval]** 选项。 内容批准周期的主要步骤是：
+您可以設定內容核准週期。 若要這麼做，請選取 **[!UICONTROL Enable content approval]** 選項。 內容核准週期的主要步驟如下：
 
-1. 创建新投放后，营销活动经理单击 **[!UICONTROL Submit content]** 链接以开始内容批准周期。
+1. 建立新傳送後，行銷活動經理按一下 **[!UICONTROL Submit content]** 行銷活動控制面板上的連結，以開始內容核准週期。
 
    >[!NOTE]
    >
-   >如果 **[!UICONTROL Enable the sending of proofs]** 选项（用于电子邮件投放）或 **[!UICONTROL Enable the sending and approval of proofs]** （对于直邮投放）选项时，将会自动发送校样。
+   >如果 **[!UICONTROL Enable the sending of proofs]** 選項（用於電子郵件傳遞）或 **[!UICONTROL Enable the sending and approval of proofs]** （針對直接郵件傳送）選項已在核准設定視窗中選取，則會自動傳送校樣。
 
-1. 系统会向负责内容的人员发送通知电子邮件，该人员可以选择是否批准该内容：
+1. 系統會傳送通知電子郵件給負責內容的人，由他們選擇是否核准：
 
-   * 通过通知电子邮件：通知电子邮件包含指向已发送校样的链接，如果 **投放能力** 已为此实例启用加载项。
+   * 透過通知電子郵件：通知電子郵件包含已傳送校樣的連結，並且如果 **傳遞能力** 此執行個體已啟用附加元件。
 
-   * 通过控制台或web界面、投放跟踪、投放仪表板或营销活动仪表板。 利用此营销活动功能板，可通过单击 **[!UICONTROL Inbox rendering...]** 链接。 要查看其内容，请单击 **[!UICONTROL Detail]** 图标。
+   * 透過主控台或網頁介面、傳遞追蹤、傳遞控制面板或行銷活動控制面板。 此行銷活動儀表板可讓您按一下 **[!UICONTROL Inbox rendering...]** 連結。 若要檢視其內容，請按一下 **[!UICONTROL Detail]** 圖示加以顯示。
 
-1. 系统会向负责营销活动的人员发送通知电子邮件，通知他们内容是否已获得批准。 负责营销活动的人员可以随时重新启动内容批准周期。 为此，请单击 **[!UICONTROL Content status]** 行（在投放级别），然后单击 **[!UICONTROL Reset content approval to submit it again]**.
+1. 系統會傳送通知電子郵件給行銷活動的負責人，通知他們內容是否已核准。 行銷活動的負責人可以隨時重新開始內容核准週期。 若要這麼做，請按一下 **[!UICONTROL Content status]** 行銷活動控制面板的行（在傳遞層級），然後按一下 **[!UICONTROL Reset content approval to submit it again]**.
 
 #### 分配内容编辑 {#assign-content-editing}
 
-利用此选项，可定义负责内容编辑的人员，如网站管理员。 如果 **[!UICONTROL Assign content editing]** 在“批准设置”窗口中选择“选项”，在创建投放和将通知电子邮件发送给内容负责人之间添加了多个批准步骤：
+此選項可讓您定義負責內容編輯的人員，例如網站管理員。 如果 **[!UICONTROL Assign content editing]** 在「核准設定」視窗中選取選項，在建立傳遞與將通知電子郵件傳送給負責內容之人員之間會新增數個核准步驟：
 
-1. 创建新投放后，营销活动负责人点击 **[!UICONTROL Submit content editing]** 链接，以开始内容编辑周期。
+1. 建立新傳送後，行銷活動的負責人按一下 **[!UICONTROL Submit content editing]** 行銷活動控制面板中的連結，以開始內容編輯週期。
 
-1. 负责内容编辑的人员将收到一封电子邮件，告知他们内容可用。
+1. 負責內容編輯的人員會收到電子郵件，通知他們內容可用。
 
-1. 然后，他们可以登录到控制台，打开投放并使用简化的向导对其进行编辑，以更改主题、HTML和文本内容，并发送校样。
+1. 接著，他們可以登入主控台、開啟傳遞，並使用簡化的精靈進行編輯，以變更主題、HTML和文字內容，以及傳送校樣。
 
    >[!NOTE]
    >
-   >如果 **[!UICONTROL Enable the sending of proofs]** 选项（用于电子邮件投放）或 **[!UICONTROL Enable the sending and approval of proofs]** （对于直邮投放）选项时，将会自动发送校样。
+   >如果 **[!UICONTROL Enable the sending of proofs]** 選項（用於電子郵件傳遞）或 **[!UICONTROL Enable the sending and approval of proofs]** （針對直接郵件傳送）選項已在核准設定視窗中選取，則會自動傳送校樣。
 
-1. 负责内容编辑的人员完成对投放内容所做的任何更改后，便可以使内容可用。
+1. 一旦負責內容編輯的人員完成對傳送內容的任何變更，他們就可以提供內容。
 
-   要实现此目的，他们可以使用：
+   要執行此操作，他們可使用：
 
-   * the **[!UICONTROL Available content]** 链接。
-   * 通知消息中的链接。
-操作员在将内容提交给营销活动负责人之前可以添加评论。
-通知消息允许审阅人批准或拒绝内容。
+   * 此 **[!UICONTROL Available content]** Adobe Campaign主控台中的連結。
+   * 通知訊息中的連結。
+操作員可在將內容提交至行銷活動負責人之前新增註解。
+通知訊息可讓稽核者核准或拒絕內容。
 
 #### 外部内容审批 {#external-content-approval}
 
-利用此选项，可定义负责批准投放渲染的外部操作员，如品牌通信一致性、费率等。 当 **[!UICONTROL External content approval]** 在“批准设置”窗口中选择“选项”，在内容批准和将通知发送给营销活动负责人之间添加多个批准步骤：
+此選項可讓您定義負責核准傳遞呈現（例如品牌通訊一致性、費率等）的外部運運算元。 當 **[!UICONTROL External content approval]** 在「核准設定」視窗中選取選項，在內容核准與將通知傳送給行銷活動負責人之間會新增數個核准步驟：
 
-1. 外部内容管理器收到通知电子邮件，告知其内容已获得批准并请求外部批准。
-1. 通知电子邮件包含指向已发送校样的链接（用于查看投放渲染）以及用于批准或拒绝投放内容的按钮。
+1. 外部內容管理員會收到通知電子郵件，告知他們內容已核准並請求外部核准。
+1. 通知電子郵件包含已傳送校樣的連結（可讓您檢視傳遞呈現），以及核准或拒絕傳遞內容的按鈕。
 
-仅当发送了一个或多个校样时，这些链接才可用。 否则，投放渲染仅可通过控制台或Web界面来使用。
+只有在已傳送一或多個校樣時，才可使用這些連結。 否則，傳遞呈現只能透過主控台或Web介面使用。
 
-### 批准提取文件 {#approve-an-extraction-file}
+### 核准擷取檔案 {#approve-an-extraction-file}
 
-对于脱机投放，Adobe Campaign会生成一个提取文件，根据其设置，该文件将发送到路由器。 其内容取决于所使用的导出模板。
+離線傳送時，Adobe Campaign會產生擷取檔案，並依據其設定方式傳送至路由器。 其內容取決於所使用的匯出範本。
 
-在内容、定位和预算获得批准后，投放会更改为 **[!UICONTROL Extraction pending]** 直到启动营销活动的提取工作流。
+內容、目標定位和預算獲得核准後，傳遞內容會變更為 **[!UICONTROL Extraction pending]** 直到啟動行銷活動的擷取工作流程為止。
 
-在提取请求日期，将创建提取文件，并将投放状态更改为 **[!UICONTROL File to approve]**.
+在擷取請求日期，會建立擷取檔案並變更傳遞狀態 **[!UICONTROL File to approve]**.
 
-您可以查看提取的文件的内容（通过单击其名称）、批准该文件，或根据需要更改格式，然后使用功能板上的链接重新启动提取。
+您可以檢視解壓縮檔案的內容（按一下其名稱）、核准檔案，或視需要變更格式，然後使用控制面板上的連結重新開始解壓縮。
 
-文件获得批准后，即可向路由器发送通知电子邮件。 [了解详情](marketing-campaign-deliveries.md#start-an-offline-delivery)。
+一旦檔案獲得核准，您就可以將通知電子郵件傳送給路由器。 [了解详情](marketing-campaign-deliveries.md#start-an-offline-delivery)。
 
-## 审批模式 {#approval-modes}
+## 核准模式 {#approval-modes}
 
-可以在活动仪表板、投放跟踪选项卡、投放仪表板或发送给审阅人的电子邮件通知中批准作业。
+可以在行銷活動控制面板、傳遞追蹤標籤、傳遞控制面板，或傳送給稽核者的電子郵件通知中核准工作。
 
-### 在功能板中批准 {#approval-via-the-dashboard}
+### 在儀表板中核准 {#approval-via-the-dashboard}
 
-要通过控制台或Web界面批准作业，请单击营销活动仪表板上的相应链接。
+若要透過主控台或網頁介面核准工作，請按一下行銷活動控制面板上的適當連結。
 
-例如，执行投放分析后：
+例如，執行傳遞分析後：
 
 1. 选择 **[!UICONTROL Approve targeting]**。
 
 ![](assets/target-validation-from-console.png)
 
-1. 在弹出窗口中，检查要批准的信息。
-1. 选择 **[!UICONTROL Accept]** 或 **[!UICONTROL Reject]** 并根据需要输入评论。 此评论将显示在验证日志中。
-1. 通过 **[!UICONTROL Target approval]** 按钮。
+1. 在快顯視窗中，檢查要核准的資訊。
+1. 選取 **[!UICONTROL Accept]** 或 **[!UICONTROL Reject]** 並視需要輸入註解。 此註解將顯示在驗證記錄中。
+1. 使用「 」確認您的選擇 **[!UICONTROL Target approval]** 按鈕。
 
 ![](assets/confirm-validation-from-console.png)
 
 
-如果某个流程已经由其他操作员批准，则该批准链接不可用。
+如果某個程式已由其他操作員核准，則無法使用核准連結。
 
-如果某个流程被拒绝，该信息将按如下方式显示在投放仪表板中：
+如果處理已遭拒絕，則會在傳遞控制面板中顯示資訊，如下所示：
 
 ![](assets/target-approval-rejected.png)
 
 
-### 从通知消息批准 {#approval-via-notification-messages}
+### 從通知訊息核准 {#approval-via-notification-messages}
 
-从 [通知消息](#notifications):
+若要核准工作，請執行下列步驟： [通知訊息](#notifications)：
 
-1. 单击通知中的链接。
-1. 登录Adobe Campaign。
-1. 检查要批准的信息
-1. 选择 **[!UICONTROL Accept]** 或 **[!UICONTROL Reject]** 并根据需要输入评论。
-1. 验证. 您的选择和评论会显示在验证日志中。
+1. 按一下通知中的連結。
+1. 登入Adobe Campaign。
+1. 檢查要核准的資訊
+1. 選取 **[!UICONTROL Accept]** 或 **[!UICONTROL Reject]** 並視需要輸入註解。
+1. 验证. 您的選擇和註解會顯示在驗證記錄中。
 
 >[!NOTE]
 >
->如果在该过程中引发警告，则通知中会显示警告。
+>如果處理期間出現警告，通知中會顯示警告。
 
-### 跟踪批准{#approval-tracking}
+### 追蹤核准{#approval-tracking}
 
-用户界面中提供了批准日志：
+使用者介面中提供核准記錄：
 
-* 在营销活动批准日志中， **[!UICONTROL Approvals]** 的子选项卡 **[!UICONTROL Edit > Audit]** 选项卡：
+* 在行銷活動核准記錄檔中， **[!UICONTROL Approvals]** 的子標籤 **[!UICONTROL Edit > Audit]** 標籤：
 
    ![](assets/approval-tracking-from-campaign.png)
 
-* 在营销活动投放日志中， **[!UICONTROL Deliveries]** 的子选项卡 **[!UICONTROL Edit > Audit]** 选项卡：
+* 在行銷活動傳遞記錄檔中， **[!UICONTROL Deliveries]** 的子標籤 **[!UICONTROL Edit > Audit]** 標籤：
 
    ![](assets/approval-tracking-from-campaign-deliveries.png)
 
-* 单击 **[!UICONTROL Hide/display logs]** 的 **[!UICONTROL Summary]** 选项卡。
+* 按一下 **[!UICONTROL Hide/display logs]** 的選項 **[!UICONTROL Summary]** 標籤。
 
    ![](assets/approval-tracking-delivery-dashboard.png)
 
-* 此信息也可以通过 **[!UICONTROL Audit > Approvals]** 每个投放的选项卡：
+* 此資訊也可透過 **[!UICONTROL Audit > Approvals]** 每個傳遞的索引標籤：
 
    ![](assets/approval-tracking-delivery-tab.png)
 
 >[!NOTE]
 >
->操作员批准或拒绝某个工作后，其他审阅人便无法再更改该工作。
+>一旦操作員核准或拒絕工作，其他稽核者就無法再變更它。
 
-### 自动/手动批准 {#automatic-and-manual-approval}
+### 自動/手動核准 {#automatic-and-manual-approval}
 
-在创建定位工作流程时，如果批准是自动的（默认模式），则Adobe Campaign会显示批准链接或在需要批准时立即发送通知。
+建立目標定位工作流程時，如果核准是自動的（預設模式），Adobe Campaign會顯示核准連結，或在需要核準時立即傳送通知。
 
-要选择批准模式（手动或自动），请单击 **[!UICONTROL Edit > Properties]** 选项卡，然后单击 **[!UICONTROL Advanced campaign parameters...]** 最后 **[!UICONTROL Approvals]** 选项卡。
+若要選擇核准模式（手動或自動），請按一下 **[!UICONTROL Edit > Properties]** 行銷活動或行銷活動範本的標籤，然後按一下 **[!UICONTROL Advanced campaign parameters...]** 最後是 **[!UICONTROL Approvals]** 標籤。
 par
 ![](assets/approval-mode.png)
 
 >[!NOTE]
 >
->批准模式适用于营销活动的所有投放。
+>核准模式會套用至行銷活動的所有傳送。
 
-构建定向工作流程时，手动批准可让您避免创建批准链接或自动发送通知。 然后，营销活动仪表板提供 **[!UICONTROL Submit targeting for approval]** 链接以手动启动批准流程。
+建立目標定位工作流程時，手動核准可讓您避免自動建立核准連結或傳送通知。 行銷活動控制面板接著提供 **[!UICONTROL Submit targeting for approval]** 連結以手動啟動核准流程。
 
-通过确认消息，您可以授权对此投放选择的作业进行批准。
+確認訊息可讓您針對為此傳遞選取的工作，授權核准。
 
-然后，批准按钮会显示在营销活动仪表板（用于此投放）、投放仪表板和投放跟踪中。 如果启用了通知，则将并行发送它们。
+核准按鈕隨即會顯示在行銷活動控制面板（針對此傳遞）、傳遞控制面板及傳遞追蹤中。 如果已啟用通知，則會同時傳送通知。
 
-这种启用批准的方法可让您处理定位，而无需向审阅人发送虚假通知。
+此啟用核准的方法可讓您進行目標定位，而不會傳送虛假通知給稽核者。
 
 ## 通知 {#notifications}
 
-通知是发送给审阅人的特定电子邮件，用于通知审阅人某个流程正在等待批准。 当操作员单击消息中的链接时，将显示验证页面，登录后，操作员可以查看信息并批准或拒绝作业。 也可以在审批窗口中输入评论。
+通知是傳送給稽核者的特定電子郵件訊息，以通知他們流程正在等候核准。 當操作員按一下訊息中的連結時，驗證頁面就會顯示，在登入之後，操作員就可以檢視資訊，並核准或拒絕工作。 您也可以在核准視窗中輸入註解。
 
-通知电子邮件的内容可以个性化。 请参阅 [通知内容](#notification-content).
+通知電子郵件的內容可以個人化。 另請參閱 [通知內容](#notification-content).
 
-### 启用/禁用通知 {#enabling-disabling-notification}
+### 啟用/停用通知 {#enabling-disabling-notification}
 
-默认情况下，如果在营销活动模板、营销活动或投放中启用了相关作业的批准，则会发送通知消息。 但是，可以禁用通知，以便仅从控制台授权批准。
+根據預設，如果在行銷活動範本、行銷活動或傳遞中啟用相關工作的核准，則會傳送通知訊息。 但是，可以停用通知，以便僅從主控台授權核准。
 
-为此，请编辑营销活动或营销活动模板的批准窗口( **[!UICONTROL Edit > Properties]** > **[!UICONTROL Advanced campaign parameters...]** > **[!UICONTROL Approvals]** ) **[!UICONTROL Do not enable notification sending]**.
+若要這麼做，請編輯行銷活動或行銷活動範本的核准視窗( **[!UICONTROL Edit > Properties]** > **[!UICONTROL Advanced campaign parameters...]** > **[!UICONTROL Approvals]** 標籤)並選取 **[!UICONTROL Do not enable notification sending]**.
 
 ![](assets/enable-disable-notifications.png)
 
-### 通知内容 {#notification-content}
+### 通知內容 {#notification-content}
 
-通知内容在特定模板中定义： **[!UICONTROL Notification of validations for the marketing campaign]**. 此模板保存在 **[!UICONTROL Administration > Campaign management > Technical delivery templates]** 文件夹。
+通知內容是在特定範本中定義的： **[!UICONTROL Notification of validations for the marketing campaign]**. 此範本儲存在 **[!UICONTROL Administration > Campaign management > Technical delivery templates]** Adobe Campaign樹的資料夾。

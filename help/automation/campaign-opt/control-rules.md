@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 配置控制规则
-description: 了解如何配置控制规则
+title: 設定控制規則
+description: 瞭解如何設定控制規則
 feature: Typology Rules
 exl-id: 79e442ea-f856-41bf-b065-25cb2ad2c65b
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
@@ -13,57 +13,57 @@ ht-degree: 1%
 
 # 控制规则{#control-rules}
 
-通过控制规则，您可以在投放之前保证消息的有效性和质量：字符显示、短信大小、地址格式等。
+控制規則可讓您在傳送之前保證訊息的有效性和品質：字元顯示、SMS大小、位址格式等。
 
-一组现成的规则允许您执行常规检查。 这些检查（在界面中以粗体显示）包括：
+一組現成的規則可讓您執行一般的檢查。 這些檢查（在介面中以粗體顯示）包括：
 
-* **[!UICONTROL Object approval]** （电子邮件）：检查发件人对象和地址是否不包含可能导致某些邮件代理出现问题的特殊字符。
-* **[!UICONTROL URL label approval]** （电子邮件）：检查每个跟踪URL是否具有标签。
-* **[!UICONTROL URL approval]** （电子邮件）：检查跟踪URL（存在“&amp;”字符）。
-* **[!UICONTROL Message size approval]** （移动设备）：检查短信消息的大小。
-* **[!UICONTROL Validity period check]** （电子邮件）：检查投放的有效期是否足够长以发送所有消息。
-* **[!UICONTROL Proof size check]** （所有渠道）：如果校样目标群体超过100个收件人，则会生成错误消息。
-* **[!UICONTROL Wave scheduling check]** （电子邮件）：检查如果投放被划分为多个批次，则最后一波投放是否计划在有效期结束前开始。
-* **[!UICONTROL Unsubscription link approval]** （电子邮件）：检查每个内容(HTML和文本)中是否存在至少一个退订（选择退出）URL。
+* **[!UICONTROL Object approval]** （電子郵件）：檢查寄件者物件和地址是否不包含特殊字元，這可能造成某些郵件代理程式發生問題。
+* **[!UICONTROL URL label approval]** （電子郵件）：檢查每個追蹤URL是否都有標籤。
+* **[!UICONTROL URL approval]** （電子郵件）：檢查追蹤URL （存在「&amp;」字元）。
+* **[!UICONTROL Message size approval]** （行動）：檢查SMS訊息的大小。
+* **[!UICONTROL Validity period check]** （電子郵件）：檢查傳遞的有效期是否足夠長，足以傳送所有訊息。
+* **[!UICONTROL Proof size check]** （所有管道）：如果校樣目標母體超過100個收件者，則產生錯誤訊息。
+* **[!UICONTROL Wave scheduling check]** （電子郵件）：檢查最後一波傳送是否已排定在有效期間結束前開始（如果傳送會劃分為數個波段）。
+* **[!UICONTROL Unsubscription link approval]** （電子郵件）：檢查每個內容(HTML和文字)中是否存在至少一個取消訂閱（選擇退出） URL。
 
-## 创建控制规则 {#create-a-control-rule}
+## 建立控制規則 {#create-a-control-rule}
 
-可以创建新的控制规则以满足您的需求。 为此，请创建 **[!UICONTROL Control]** 分类规则，并在SQL的 **[!UICONTROL Code]** 选项卡。
+您可以建立新的控制規則以符合您的需求。 若要這麼做，請建立 **[!UICONTROL Control]** 型別規則，並在SQL中輸入控制公式 **[!UICONTROL Code]** 標籤。
 
 **示例:**
 
-在以下示例中，我们将创建一个规则，以阻止将短信选件发送到100多个收件人。 此规则将链接到营销活动分类，然后链接到相关选件可用的短信投放。
+在下列範例中，我們將建立規則來防止將SMS選件傳送給超過100個收件者。 此規則將連結至行銷活動型別，然後連結至可使用相關選件的SMS傳送。
 
 应用以下步骤：
 
-1. 创建 **[!UICONTROL Control]** 分类规则。 选择 **[!UICONTROL Warning]** 警报级别。
+1. 建立 **[!UICONTROL Control]** 型別規則。 選取 **[!UICONTROL Warning]** 警示等級。
 
    ![](assets/campaign_opt_create_control_01.png)
 
-1. 在 **[!UICONTROL Code]** 选项卡，输入要应用所需阈值的脚本，如下所示：
+1. 在 **[!UICONTROL Code]** 索引標籤中，輸入指令碼以套用所需的臨界值，如下所示：
 
    ![](assets/campaign_opt_create_control_02.png)
 
-   如果投放目标超过100个联系人，此脚本将触发警告：
+   如果傳送目標超過100個連絡人，此指令碼會觸發警告：
 
    ```
    if( delivery.FCP == false && delivery.properties.toDeliver > 100 ) { logWarning("Significant number of SMS to deliver (" + delivery.properties.toDeliver + "). Please make sure the target is correct.") return false; } return true
    ```
 
-1. 将此规则链接到营销活动分类，并在相关的短信投放中引用分类。
+1. 將此規則連結至行銷活動型別，並參考相關SMS傳送中的型別。
 
    ![](assets/campaign_opt_create_control_03.png)
 
-1. 在投放分析期间，将应用规则并创建警告（如果适用）。
+1. 在傳遞分析期間，會套用規則並建立警告（如適用）。
 
    ![](assets/campaign_opt_create_control_04.png)
 
-   但是，投放仍可以进行发送。
+   不過，傳遞仍可傳送。
 
-   如果提高警报级别，将阻止投放开始。
+   如果您提高警示等級，這將會阻止傳送的開始。
 
    ![](assets/campaign_opt_create_control_05.png)
 
-   分析结束时， **[!UICONTROL Confirm delivery]** 按钮将不可用。
+   分析結束時， **[!UICONTROL Confirm delivery]** 按鈕將不可用。
 
    ![](assets/campaign_opt_create_control_06.png)

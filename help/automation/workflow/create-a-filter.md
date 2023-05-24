@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 创建筛选
-description: 了解如何在执行查询时创建过滤器
+description: 瞭解如何在執行查詢時建立篩選器
 feature: Query Editor, Workflows
 exl-id: 8e6fd9b4-77c4-4af8-921b-c3fe104fa5bc
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
@@ -13,40 +13,40 @@ ht-degree: 2%
 
 # 创建筛选 {#creating-a-filter}
 
-Adobe Campaign中可用的过滤器是通过过滤条件定义的，这些条件是使用与查询相同的操作模式创建的。
+Adobe Campaign中可用的篩選器是透過篩選條件來定義，這些條件是使用與查詢相同的作業模式建立的。
 
-的 **[!UICONTROL Administration > Configuration > Predefined filters]** 节点包含列表和概述中使用的所有过滤器。
+此 **[!UICONTROL Administration > Configuration > Predefined filters]** node包含清單和概覽中使用的所有篩選器。
 
-例如，运算符列表可按 **[!UICONTROL Active accounts]**:
+例如，運運算元清單可篩選依據 **[!UICONTROL Active accounts]**：
 
 ![](assets/query_editor_filter_sample_1.png)
 
-匹配过滤器包含 **[!UICONTROL Account disabled]** 值 **[!UICONTROL Operators]** 架构：
+相符篩選器包含對下列專案的查詢： **[!UICONTROL Account disabled]** 的值 **[!UICONTROL Operators]** 綱要：
 
 ![](assets/query_editor_filter_sample_2.png)
 
-对于同一列表， **[!UICONTROL By login or label]** 过滤器允许您根据在过滤器字段中输入的值过滤列表上的数据：
+若為相同清單， **[!UICONTROL By login or label]** 篩選可讓您根據在篩選欄位中輸入的值來篩選清單上的資料：
 
 ![](assets/query_editor_filter_sample_3.png)
 
-其构建如下：
+其建置方式如下：
 
 ![](assets/query_editor_filter_sample_4.png)
 
-要匹配筛选条件，运算符帐户必须检查以下条件之一：
+若要符合篩選條件，運運算元帳戶必須勾選下列條件之一：
 
-* 其标签包含在输入字段中输入的字符，
-* 运算符名称包含在输入字段中输入的字符，
-* 描述区域的内容包含在输入字段中输入的字符。
+* 其標籤包含輸入欄位中輸入的字元。
+* 運運算元名稱包含輸入欄位中輸入的字元，
+* 說明區域的內容包含在輸入欄位中輸入的字元。
 
 >[!NOTE]
 >
->的 **[!UICONTROL Upper]** 函数，可停用区分大小写的函数。
+>此 **[!UICONTROL Upper]** 函式可讓您停用區分大小寫的函式。
 
-的 **[!UICONTROL Taken into account if]** 列中，您可以定义这些筛选条件的应用程序条件。 这里， **$(/tmp/@text)** 字符表示链接到过滤器的输入字段的内容：
+此 **[!UICONTROL Taken into account if]** 欄可讓您定義這些篩選條件的應用程式條件。 在此， **$(/tmp/@text)** 字元代表連結至篩選器的輸入欄位內容：
 
 ![](assets/query_editor_filter_sample_5.png)
 
-这里， **$(/tmp/@text)=&#39;agency&#39;**
+此處， **$(/tmp/@text)=&#39;agency&#39;**
 
-的 **$(/tmp/@text)!=&quot;** 当输入字段不为空时，表达式将应用每个条件。
+此 **$(/tmp/@text)！=&quot;** 運算式會在輸入欄位非空白時套用每個條件。

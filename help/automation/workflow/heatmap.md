@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 营销活动工作流热图
-description: 使用Workflow HeatMap监控您的工作流
+title: 行銷活動工作流程熱度圖
+description: 使用Workflow HeatMap監視您的工作流程
 feature: Workflows, Heatmap
 exl-id: aeb35076-2f0d-456d-8562-be69e7e902eb
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
@@ -13,158 +13,158 @@ ht-degree: 3%
 
 # 工作流热图 {#workflow-heatmap}
 
-Campaign Workflow HeatMap以颜色编码的图形形式表示当前运行的所有工作流。 它仅可用于 **Campaign管理员**.
+Campaign Workflow HeatMap以顏色編碼的圖形呈現方式包含目前執行的所有工作流程。 它僅適用於 **Campaign管理員**.
 
-## 工作流热图入门 {#about-the-workflow-heatmap}
+## 開始使用工作流程熱度圖 {#about-the-workflow-heatmap}
 
-通过提供并发工作流数的快速概述，Workflow HeatMap使Adobe Campaign平台管理员能够监控实例的负载并相应地规划工作流。
+「工作流程熱度圖」提供並行工作流程數目的快速概覽，讓Adobe Campaign平台管理員可監控執行個體的負載，並據此規劃工作流程。
 
-更准确地说，它有助于平台管理员：
+更準確地說，這可協助平台管理員：
 
 * 查看和了解并发工作流
 * 按持续时间筛选工作流，以查看哪些工作流可能遇到问题
-* 按持续时间筛选活动，以查看哪些活动可能遇到问题
+* 依持續時間篩選活動，以檢視哪些活動可能會遇到問題
 * 轻松查找个别工作流和所有相关活动（及持续时间）
-* 按工作流类型过滤： [技术工作流](technical-workflows.md) 或 [活动工作流](campaign-workflows.md)
+* 依工作流程型別篩選： [技術工作流程](technical-workflows.md) 或 [行銷活動工作流程](campaign-workflows.md)
 * 查找要分析的特定工作流
 
 >[!NOTE]
 >
->除 **工作流热图**，则可以创建一个工作流，用于监视一组工作流的状态并向主管发送定期消息。 有关更多信息，请参阅 [专用部分](workflow-supervision.md).
+>除了 **工作流程熱度圖**，您可以建立工作流程來監控一組工作流程的狀態，並傳送週期性訊息給主管。 如需詳細資訊，請參閱 [專用區段](workflow-supervision.md).
 
-使用工作流热图需要对以下概念有很好的了解： [工作流](about-workflows.md), [活动](activities.md) 和 [工作流最佳实践](workflow-best-practices.md).
+使用Workflow HeatMap需要充分瞭解以下概念： [工作流程](about-workflows.md)， [活動](activities.md) 和 [工作流程最佳實務](workflow-best-practices.md).
 
-## 自定义工作流热图 {#using-the-heatmap}
+## 自訂工作流程熱度圖 {#using-the-heatmap}
 
 >[!NOTE]
 >
->如果工作流热图中未显示任何数据，请单击 **[!UICONTROL Load data]** 按钮。
+>如果「工作流程熱度圖」中未顯示任何資料，請按一下 **[!UICONTROL Load data]** 按鈕。
 
-1. 转到 **[!UICONTROL Monitoring]** ，然后单击 **[!UICONTROL Workflow HeatMap]** 用于显示 **[!UICONTROL Campaign Workflow HeatMap]** 页面。
+1. 前往 **[!UICONTROL Monitoring]** 並按一下 **[!UICONTROL Workflow HeatMap]** 連結以顯示 **[!UICONTROL Campaign Workflow HeatMap]** 頁面。
 
    ![](assets/wkf_monitoring_path.png)
 
-1. 单击日历以选择日。
+1. 按一下行事曆以選取日期。
 
-   默认情况下，页面会显示当天的工作流活动。 您可以更改它，并选择过去的任何日期。
+   依預設，頁面會顯示當天的工作流程活動。 您可以加以變更，並選取過去的任何一天。
 
    >[!NOTE]
    > 
-   >默认情况下，工作流热图时区是为当前管理员用户定义的时区。 例如，如果您与正在处理的营销用户不在同一区域，则可能需要更改该区域。
+   >依預設，工作流程熱度圖時區是為目前管理員使用者定義的時區。 例如，如果您與正在使用的行銷使用者不在同一區域，您可能會想要變更此區域。
 
 1. 单击 **[!UICONTROL Filters]** 按钮。
 
    ![](assets/wkf_monitoring_filters.png)
 
-1. 使用滑块将最短持续时间从0秒设置为1小时。 这样，您就可以仅搜索运行时间超过特定秒或分钟的工作流。
+1. 使用滑桿來設定從0秒到1小時的最短持續時間。 這可讓您僅搜尋執行時間超過特定秒數或分鐘數的工作流程。
 
    ![](assets/wkf_monitoring_filters_duration.png)
 
-1. 您还可以从 **[!UICONTROL Workflows]** 下拉列表。
+1. 您也可以從以下選擇特定的工作流程： **[!UICONTROL Workflows]** 下拉式清單。
 
    ![](assets/wkf_monitoring_filters_workflows.png)
 
    >[!NOTE]
    >
-   >的 **[!UICONTROL Min duration]** 过滤器。 如果找不到特定的工作流，请将最小持续时间重置为0，以便所有工作流都显示在列表中。
+   >此 **[!UICONTROL Min duration]** 已套用篩選器。 如果找不到特定工作流程，請將最短持續期間重設為0，以便所有工作流程都顯示在清單中。
 
-1. 您还可以在 **[!UICONTROL Workflow type]** :
+1. 您也可以篩選 **[!UICONTROL Workflow type]** ：
 
-   * **[!UICONTROL Technical]** :仅 [内置的技术工作流](technical-workflows.md) 和 [数据管理工作流](targeting-workflows.md#data-management) 中。
-   * **[!UICONTROL Marketing]** :仅链接到营销活动(称为 [活动工作流](campaign-workflows.md)，则会显示。
+   * **[!UICONTROL Technical]** ：僅限 [內建技術工作流程](technical-workflows.md) 和 [資料管理工作流程](targeting-workflows.md#data-management) 都會顯示。
+   * **[!UICONTROL Marketing]** ：僅限連結至行銷活動的工作流程(稱為 [行銷活動工作流程](campaign-workflows.md)，則會顯示。
 
-1. 要按名称搜索特定工作流，您还可以使用 **[!UICONTROL Workflow name filter]** 字段。
+1. 若要依名稱搜尋特定工作流程，您也可以使用 **[!UICONTROL Workflow name filter]** 欄位。
 
-1. 如果您在这两个工作流之间的时间中编辑了一些工作流，请单击 **[!UICONTROL Reload data]** 按钮来刷新网格中显示的数据。
+1. 如果您在這段時間編輯了一些工作流程，請按一下 **[!UICONTROL Reload data]** 按鈕以重新整理網格中顯示的資料。
 
-## 解释工作流热图 {#reading-the-heatmap}
+## 解譯工作流程熱度圖 {#reading-the-heatmap}
 
-营销活动工作流热图是一个自然可读的网格，从左上角到右下角，允许查找具有绿色到红色编码范围的“热区”。
+Campaign Workflow HeatMap是從左上到右下方的自然可讀網格，允許尋找具有綠色到紅色顏色編碼範圍的「熱點區域」。
 
-* 较深的红色单元格对应于同时运行大量工作流的时段。
-* 灰色单元格对应于未运行工作流的时段。
+* 較暗的紅色儲存格對應於同時執行大量工作流程時的時段。
+* 灰色儲存格對應於沒有執行工作流程時的期間。
 
-要了解如何应用颜色代码以及如何导航热图，请单击 **[!UICONTROL Help]** 按钮。
+若要瞭解如何套用顏色代碼以及如何導覽HeatMap，請按一下 **[!UICONTROL Help]** 按鈕。
 
 ![](assets/wkf_monitoring_legend.png)
 
-每行代表一天的一小时，每个单元格代表该小时的5分钟。
+每一列代表一天中的一小時，每個儲存格代表該小時的5分鐘。
 
-网格会显示这些5分钟时段中每个时段同时运行的所有工作流。
+格線會顯示在這些5分鐘週期的每個週期中同時執行的所有工作流程。
 
-在以下示例中，从上午8点到上午8:05点，运行了三个工作流（无论其各自的持续时间如何）：
+在以下範例中，上午8點至上午8:05之間，有三個工作流程在執行中（無論其個別持續期間為何）：
 
 ![](assets/wkf_monitoring_ex_8am.png)
 
-1. 单击彩色单元格以显示在此期间运行的所有并发工作流的详细信息。
+1. 按一下彩色儲存格，以顯示在此期間執行的所有並行工作流程詳細資訊。
 
    ![](assets/wkf_monitoring_details.png)
 
-   对于每个工作流，都会列出其包含的所有活动及其持续时间。
+   對於每個工作流程，會列出其中包含的所有活動及其持續時間。
 
-1. 单击工作流ID或名称，以直接打开工作流。
-1. 返回到 **[!UICONTROL Campaign Workflow HeatMap]** 视图，单击 **[!UICONTROL Home]** 按钮。
+1. 按一下工作流程ID或名稱，直接開啟工作流程。
+1. 返回至 **[!UICONTROL Campaign Workflow HeatMap]** 檢視，按一下 **[!UICONTROL Home]** 按鈕。
 
-## 用例：使用热图执行操作 {#use-cases--using-the-heatmap-to-take-actions}
+## 使用案例：使用熱度圖採取動作 {#use-cases--using-the-heatmap-to-take-actions}
 
-在以下两种主要情况下，营销活动工作流热图非常有用。
+在兩種主要情況下，「行銷活動工作流程熱度圖」會很有用。
 
-### 减少并发工作流的数量 {#reducing-the-number-of-concurrent-workflows}
+### 減少並行工作流程的數量 {#reducing-the-number-of-concurrent-workflows}
 
-作为Campaign管理员，Workflow HeatMap可以帮助您了解实例的负载情况，并在适当时规划现有或新的工作流。
+作為Campaign管理員， Workflow HeatMap可以協助您瞭解執行個體的負載，並在適當的時間規劃現有或新的工作流程。
 
-1. 从 **[!UICONTROL Campaign Workflow HeatMap]** 视图，单击 **[!UICONTROL Filters]** 按钮。
-1. 将持续时间设置为几秒或几分钟。
-1. 通过增加持续时间过滤器来排除没有意义的最短工作流。
+1. 從 **[!UICONTROL Campaign Workflow HeatMap]** 檢視，按一下 **[!UICONTROL Filters]** 按鈕。
+1. 將持續時間設定為幾秒或幾分鐘。
+1. 透過增加持續時間篩選條件來排除不重要的最短工作流程。
 
    ![](assets/wkf_monitoring_short_duration.png)
 
-1. 浏览结果以了解实例的负载并采取适当的操作：
+1. 探索結果以瞭解執行個體的負載並採取適當的動作：
 
-   * 如果您遇到性能问题，并且网格中显示了一个或多个红色单元格，请考虑更改多个工作流的开始时间。 要求营销用户将工作流从繁忙（“热”）时段手动移至更多可用时段。 这应该能够保持当天的活动稳定级别。
-   * 要避免出现峰值并防止实例过载，请在规划新工作流之前查看HeatMap并选择最佳时间。 考虑网格中与灰色或绿色单元格对应的时隙，以启动新工作流。
+   * 如果您遇到效能問題，而且格線中顯示一或多個紅色的儲存格，請考慮變更數個工作流程的開始時間。 要求行銷使用者將手動工作流程從忙碌（「忙碌」）時段移至更多可用的時段。 這應該會維持一天的穩定活動水準。
+   * 若要避免尖峰並避免執行個體超載，請在規劃新工作流程前先檢視HeatMap，然後選擇最佳時間。 考慮與格線中灰色或綠色儲存格對應的時段，以開始新的工作流程。
 
-### 查找影响性能的长时间运行的工作流 {#finding-long-running-workflows-that-impact-performance}
+### 尋找影響效能的長期執行工作流程 {#finding-long-running-workflows-that-impact-performance}
 
-作为Campaign管理员，工作流热图可帮助您查找可能会减慢活动速度的最长工作流。
+作為Campaign管理員， Workflow HeatMap可幫助您找到拖慢活動速度的最長工作流程。
 
-1. 从 **[!UICONTROL Campaign Workflow HeatMap]** 视图，单击 **[!UICONTROL Filters]** 按钮。
-1. 将持续时间设置为1小时。
+1. 從 **[!UICONTROL Campaign Workflow HeatMap]** 檢視，按一下 **[!UICONTROL Filters]** 按鈕。
+1. 將持續時間設為1小時。
 
    ![](assets/wkf_monitoring_long_duration.png)
 
-1. 通过降低 **[!UICONTROL Min duration]** 过滤器。
-1. 浏览结果以查找最长的工作流，这些工作流可能对服务器和数据库资源（CPU、RAM、网络、IOPS等）产生更大的影响。
-1. 采取适当的措施：
+1. 減少「 」，包含更多結果 **[!UICONTROL Min duration]** 篩選。
+1. 探索結果以找出最長的工作流程，這些工作流程對伺服器和資料庫資源（CPU、RAM、網路、IOPS等）的影響可能更大。
+1. 採取適當的動作：
 
-   * 建议营销用户拆分最长的工作流，以缩短处理时间。
-   * 开始对特定工作流和特定活动（例如JavaScript、导入、导出等）进行更深入的分析，以隔离问题并更轻松地解决问题。
+   * 建議行銷使用者分割最長的工作流程，以減少處理時間。
+   * 開始更深入地分析特定工作流程和特定活動（例如JavaScript、匯入、匯出等），以隔離問題並更輕鬆地解決問題。
 
-## 使用HeatMap改进工作流规划 {#example--using-the-heatmap-to-improve-workflow-planning}
+## 使用HeatMap改善工作流程規劃 {#example--using-the-heatmap-to-improve-workflow-planning}
 
-以下示例显示了在使用Adobe Campaign Workflow HeatMap时，如何更高效地进行规划以及如何提高性能。
+以下範例說明如何在使用Adobe Campaign Workflow HeatMap時提高規劃效率，以及如何改善效能。
 
-在这种情况下，许多用户都在抱怨工作流的性能。 您需要检查哪些因素会减慢活动速度以及如何解决问题。
+在這種情況下，許多使用者抱怨工作流程效能。 您需要檢查哪些因素會減慢活動的速度，以及如何解決問題。
 
-1. 转到 **[!UICONTROL Monitoring]** ，然后单击 **[!UICONTROL Workflows]** 用于显示 **[!UICONTROL Campaign Workflow HeatMap]** 页面。
-1. 设置 **[!UICONTROL Min duration]** 过滤到5分钟。
-1. 设置 **[!UICONTROL Workflow type]** 筛选 **[!UICONTROL Marketing]**.
-1. 从热图网格中，观察以下内容：
+1. 前往 **[!UICONTROL Monitoring]** 並按一下 **[!UICONTROL Workflows]** 連結以顯示 **[!UICONTROL Campaign Workflow HeatMap]** 頁面。
+1. 設定 **[!UICONTROL Min duration]** 篩選至5分鐘。
+1. 設定 **[!UICONTROL Workflow type]** 篩選至 **[!UICONTROL Marketing]**.
+1. 在「熱度圖」格線中，觀察下列情況：
 
    ![](assets/wkf_monitoring_without.png)
 
-   * 50个持久（超过5分钟）的营销活动工作流在上午10点运行。
-   * 其中大多数具有待处理状态（默认情况下，并发限制设置为20）。
-   * 需要每天手动重新启动挂起的工作流。
-   * 性能很低。
+   * 50個長效的行銷活動工作流程會在上午10點執行（超過5分鐘）。
+   * 這些檔案大多具有擱置狀態（預設情況下，並行限制設為20）。
+   * 擱置中的工作流程每天都需要手動重新啟動。
+   * 效能低。
 
-1. 从上午10点开始，不再有50个工作流，而是在一天的其余时间平均分配工作流的开始时间。
-1. 返回到 **[!UICONTROL Campaign Workflow HeatMap]** 页面，然后单击 **[!UICONTROL Reload data]** 按钮。
-1. 现在，请注意以下事项：
+1. 與其從上午10點開始有50個工作流程，不如在一天中的其餘時間平均分配工作流程的開始時間。
+1. 返回 **[!UICONTROL Campaign Workflow HeatMap]** 頁面，然後按一下 **[!UICONTROL Reload data]** 按鈕。
+1. 現在請注意下列事項：
 
    ![](assets/wkf_monitoring_with.png)
 
-   * 上午10点，只有18个持久的营销活动工作流仍在运行。
-   * 不再有工作流处于挂起状态（并发限制仍设置为20）。
-   * 工作流开始时间会平均分布在一天中。
-   * 不再有用户抱怨性能问题。
+   * 上午10點時，只有18個長期的行銷活動工作流程仍在執行中。
+   * 沒有其他工作流程處於擱置狀態（並行限制仍設為20）。
+   * 工作流程開始時間會平均分配到全天。
+   * 沒有更多使用者抱怨效能問題。

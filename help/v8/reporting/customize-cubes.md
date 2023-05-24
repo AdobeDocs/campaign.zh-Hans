@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 自定义多维数据集
-description: 了解在Adobe Campaign中实施多维数据集时的最佳实践
+description: 瞭解在Adobe Campaign中實作多維度資料集的最佳實務
 feature: Reporting
 role: Data Engineer
 level: Beginner
@@ -15,235 +15,235 @@ ht-degree: 2%
 
 # 自定义多维数据集{#cube-custom}
 
-## 数据绑定 {#data-binning}
+## 資料量化 {#data-binning}
 
-使用数据绑定通过根据条件对值进行分组来简化数据显示。 根据您可用的信息，您可以定义年龄组、将电子邮件域分组到一起、限制为值枚举、明确限制要显示的数据以及将所有其他数据分组到专用行或列中等。
+使用資料量化，根據條件將值分組，以簡化資料顯示。 根據您可用的資訊，您可以定義年齡群組、將電子郵件網域群組在一起、限製為列舉值、明確限制資料在專用行或欄中顯示及群組所有其他資料等。
 
-总体而言，可使用三种类型的绑定：
+整體而言，有三種量化方式可供使用：
 
-1. 使用手动定义的值范围。 例如，年龄、平均购物车、已投放的次数等)。 有关更多信息，请参阅 [定义每个站](#defining-each-bin).
-1. 动态地，取决于枚举的值：只显示枚举中包含的值，所有其他值将分组到“其他”中。 有关更多信息，请参阅 [动态管理箱](#dynamically-managing-bins).
-1. 使用值范围，将所有其他值分组在一起。 例如，18至25岁、26至59岁的人，以及其他人。 有关更多信息，请参阅 [创建值范围](#creating-value-ranges).
+1. 使用手動定義的值範圍。 例如，年齡、平均購物車、開啟的傳送數量等)。 有關詳細資訊，請參閱 [定義每個資料匣](#defining-each-bin).
+1. 動態地，根據分項清單的值：僅顯示分項清單中包含的值，其他所有值都會分組到「其他」中。 有關詳細資訊，請參閱 [動態管理回收筒](#dynamically-managing-bins).
+1. 使用值範圍，將所有其他值分組在一起。 例如，18至25歲、26至59歲和其他人。 有關詳細資訊，請參閱 [建立值範圍](#creating-value-ranges).
 
-要启用绑定，请在创建维度时选中相应的框。
+若要啟用量化，請在建立維度時勾選適當的方塊。
 
 ![](assets/cube-class.png)
 
-您可以手动创建框，或将其链接到现有枚举。
+您可以手動建立回收筒，或將回收筒連結至現有的分項清單。
 
-Adobe Campaign还为自动绑定提供了助手：值可以划分为N组，或根据数据库中最频繁的值进行分组。
+Adobe Campaign也提供自動量化的輔助程式：值可以分為N個群組，或根據資料庫中最常見的值分組。
 
-### 定义每个站 {#define-each-bin}
+### 定義每個紙匣 {#define-each-bin}
 
-要单独创建每个站，请选择 **[!UICONTROL Define each bin]** 选项，然后使用表创建各种箱。
+若要個別建立每個間隔，請選取 **[!UICONTROL Define each bin]** 選項並使用表格來建立各種回收筒。
 
 ![](assets/cube-binning.png)
 
-单击 **[!UICONTROL Add]** 按钮来创建新站点，并列出将分组到站点中的值。
+按一下 **[!UICONTROL Add]** 按鈕來建立新的bin並列出將分組到bin中的值。
 
 ![](assets/cube-add-new-bin.png)
 
-在以下示例中，语言分为三类：英语/德语/荷兰语、法语/意大利语/西班牙语和其他语种。
+在下列範例中，語言分為三類：英文/德文/荷蘭文、法文/義大利文/西班牙文和其他語言。
 
 ![](assets/cube-add-new-bin-2.png)
 
-您可以使用SQL掩码将多个值合并到过滤器中。 要执行此操作，请检查 **[!UICONTROL Yes]** 在 **[!UICONTROL Use an SQL mask]** 列，并输入要在 **[!UICONTROL Value or expression]** 列。
+您可以使用SQL遮罩將數個值合併到一個篩選中。 若要這麼做，請核取 **[!UICONTROL Yes]** 在 **[!UICONTROL Use an SQL mask]** 欄並輸入要套用的SQL篩選器 **[!UICONTROL Value or expression]** 欄。
 
 <!--In the example below, all email domains that start with **yahoo** (yahoo.fr, yahoo.com, yahoo.be, etc.), or with **ymail** (ymail.com, ymail.eu, etc.) will be grouped under the label **YAHOO!**, as well as addresses with the **rocketmail.com** domain.-->
 
-### 动态管理箱 {#dynamically-manage-bins}
+### 動態管理資源回收筒 {#dynamically-manage-bins}
 
-值可以通过枚举进行动态管理。 这意味着将仅显示枚举中包含的值。 当枚举值发生更改时，立方的内容会自动进行修改。
+值可以透過列舉來動態管理。 這表示只會顯示列舉中包含的值。 當列舉值變更時，會自動調整Cube的內容。
 
-要创建此类型的值绑定，请应用以下步骤：
+若要建立此型別的值量化，請套用下列步驟：
 
-1. 创建新维度并启用绑定。
-1. 选择 **[!UICONTROL Dynamically link the values to an enumeration]** 选项，然后选择匹配的枚举。
+1. 建立新維度並啟用量化。
+1. 選取 **[!UICONTROL Dynamically link the values to an enumeration]** 選項並選取相符的列舉。
 
    ![](assets/cube-link-to-enum.png)
 
-   每当枚举值被更新时，匹配的素材箱都被自动地调整。
+   每當列舉值更新時，就會自動調整相符的回收筒。
 
-了解有关 [本页](../../v8/config/ui-settings.md#enumerations).
+進一步瞭解中的分項清單 [此頁面](../../v8/config/ui-settings.md#enumerations).
 
-### 创建值范围 {#create-value-ranges}
+### 建立值範圍 {#create-value-ranges}
 
-您可以根据所需的间隔将值分组为多个范围。
+您可以根據所需的間隔將值分組到範圍中。
 
-要手动定义范围，请单击 **[!UICONTROL Add]** 按钮，选择 **[!UICONTROL Define a range]** :
+若要手動定義範圍，請按一下 **[!UICONTROL Add]** 按鈕並選取 **[!UICONTROL Define a range]** ：
 
-然后，指定下限和上限并单击 **[!UICONTROL Ok]** 确认。
+然後指定下限和上限，並按一下 **[!UICONTROL Ok]** 以確認。
 
-### 自动生成箱 {#generate-bins-automatically}
+### 自動產生回收筒 {#generate-bins-automatically}
 
-也可以自动生成垃圾桶。 为此，请单击 **[!UICONTROL Generate bins...]** 链接。
+您也可以自動產生回收筒。 若要這麼做，請按一下 **[!UICONTROL Generate bins...]** 連結。
 
 您可以：
 
 * **[!UICONTROL Recover the most frequently used values]**
 
-   如果生成4个箱，则将显示4个最常使用的值，而其他值将被计入“其他”类别并分组。
+   如果您產生4個回收筒，將會顯示4個最常用的值，而其他值將會計算並分組到「其他」類別中。
 
 * **[!UICONTROL Generate bins in the form of slots]**
 
-   对于同一示例，Adobe Campaign会自动创建4个大小相同的值槽，以在数据库中显示值。
+   對於相同的範例，Adobe Campaign會自動建立4個大小相同的值槽，以在資料庫中顯示值。
 
-在这种情况下，将忽略事实架构中选择的过滤器。
+在此情況下，會忽略在事實結構描述中選取的篩選器。
 
 ### 明细列表 {#enumerations}
 
-为了提高报表的相关性和可读性，Adobe Campaign允许您创建特定的枚举以将不同的值重组到同一个框中。 这些为绑定而保留的枚举在多维数据集中引用，然后显示在报告中。
+為了改善報表的相關性和可讀性，Adobe Campaign可讓您建立特定的分項清單，將不同的值重新分組到相同的資料匣中。 這些列舉（保留供量化）會在多維資料庫中參考，然後顯示在報表中。
 
-Adobe Campaign还提供了域的枚举，用于显示数据库中所有联系人的电子邮件域的列表（按ISP重组），如以下示例所示：
+Adobe Campaign也提供網域列舉，可讓您顯示資料庫中所有連絡人的電子郵件網域清單（由ISP重新分組），如下列範例所示：
 
 ![](assets/nmx_report_sample.png)
 
-它使用以下模板构建：
+它是使用下列範本建置：
 
 ![](assets/nmx_enum_domain.png)
 
-要使用此枚举创建报告，请使用 **[!UICONTROL Email domain]** 维度。 选择 **[!UICONTROL Enable binning]** 选项，然后 **[!UICONTROL Dynamically link the values to an enumeration]**. 然后，选择 **域** 如上所示。 没有指定别名的所有值都将重组到 **其他** 标签。
+若要使用此分項清單建立報表，請使用 **[!UICONTROL Email domain]** 維度。 選擇 **[!UICONTROL Enable binning]** option then **[!UICONTROL Dynamically link the values to an enumeration]**. 然後選取 **網域** 分項清單，如上所示。 所有未指定別名的值都會重新分組到 **其他** 標籤。
 
-接下来，创建基于此多维数据集的报告以显示值。
+接下來，根據此Cube建立報表以顯示值。
 
-您只需修改枚举即可更新相关报告。 例如，创建 **Adobe** 值并添加 **adobe.com** 别名和报表将自动更新为枚举级别的Adobe值。
+您只需要修改分項清單即可更新相關報表。 例如，建立 **Adobe** 值並新增 **adobe.com** 別名與報表會自動以分項清單層級的Adobe值更新。
 
 ![](assets/nmx_add_alias.png)
 
-的 **[!UICONTROL Domains]** 枚举用于生成显示域列表的内置报告。 要调整这些报表的内容，您可以编辑此列表。
+此 **[!UICONTROL Domains]** 列舉用於產生顯示網域清單的內建報告。 若要調整這些報表的內容，您可以編輯此清單。
 
-您可以创建保留用于绑定的其他枚举，并将其用于其他多维数据集：所有别名值都将重组到第一个枚举选项卡中指定的区段中。
+您可以建立其他保留給量化使用的分項清單，並在其他立方結構中使用這些分項清單：所有別名值都會在第一個分項清單索引標籤中指定的分項清單中重新分組。
 
-了解有关 [本页](../../v8/config/ui-settings.md#enumerations).
+進一步瞭解中的分項清單 [此頁面](../../v8/config/ui-settings.md#enumerations).
 
-## 多维数据集中的聚合 {#calculate-and-use-aggregates}
+## 立方體中的彙總 {#calculate-and-use-aggregates}
 
-可以在聚合中计算最大的数据卷。
+最大資料量可在彙總中計算。
 
-处理大量数据时，聚合非常有用。 系统会根据专用工作流框中定义的设置自动更新这些参数，以便将最近收集的数据集成到指标中
+彙總在處理大量資料時很有用。 它們會根據專用工作流程方塊中定義的設定自動更新，以將最近收集的資料整合到指標中
 
-聚合在每个多维数据集的相关选项卡中定义。
+彙總會在每個立方體的相關索引標籤中定義。
 
 ![](assets/cube-agregate.png)
 
 >[!NOTE]
 >
->用于更新聚合计算的工作流可以在聚合本身中进行配置，或者可以通过链接到相关多维数据集的外部工作流来更新聚合。
+>您可以在彙總本身中設定更新彙總計算的工作流程，也可以透過連結至相關立方體的外部工作流程更新彙總。
 
-要创建新聚合，请应用以下步骤：
+若要建立新的彙總，請套用下列步驟：
 
-1. 单击 **[!UICONTROL Aggregates]** 选项卡，然后单击 **[!UICONTROL Add]** 按钮。
-1. 输入聚合的标签，然后添加要计算的维度。
-1. 选择维度和级别。 对每个维度和每个级别重复此过程。
-1. 单击 **[!UICONTROL Workflow]** 选项卡，以创建聚合工作流。
+1. 按一下 **[!UICONTROL Aggregates]** 定位字元，然後按一下 **[!UICONTROL Add]** 按鈕。
+1. 輸入彙總的標籤，然後新增要計算的維度。
+1. 選取維度和層級。 對每個維度和每個層級重複此程式。
+1. 按一下 **[!UICONTROL Workflow]** 定位點，以建立彙總工作流程。
 
-   * 的 **[!UICONTROL Scheduler]** 活动可让您定义计算更新的频率。 有关调度程序的详细信息，请参见 [此部分](../../automation/workflow/scheduler.md).
-   * 的 **[!UICONTROL Aggregate update]** 活动允许您选择要应用的更新模式：完整或部分。
+   * 此 **[!UICONTROL Scheduler]** 活動可讓您定義計算更新的頻率。 排程器的詳細資訊，請參閱 [本節](../../automation/workflow/scheduler.md).
+   * 此 **[!UICONTROL Aggregate update]** 活動可讓您選取要套用的更新模式：完整或部分。
 
-      默认情况下，会在每次计算期间执行完整更新。 要启用部分更新，请选择相关选项并定义更新条件。
+      依預設，每次計算期間都會執行完整更新。 若要啟用部分更新，請選取相關選項並定義更新條件。
 
-## 定义度量 {#define-measures}
+## 定義測量 {#define-measures}
 
-度量类型在 **[!UICONTROL Measures]** 选项卡。 您可以计算和、平均值、偏差等。
+量測型別定義於 **[!UICONTROL Measures]** 立方結構的頁簽。 您可以計算總和、平均值、偏差等。
 
-您可以创建所需数量的度量：然后，选择要在表格中显示或隐藏的度量。 如需详细信息，请参阅[此部分](#displaying-measures)。
+您可以視需要建立任意數量的量測：然後選取要在表格中顯示或隱藏的量測。 如需详细信息，请参阅[此部分](#displaying-measures)。
 
-要定义新测量，请应用以下步骤：
+若要定義新測量，請套用下列步驟：
 
-1. 单击 **[!UICONTROL Add]** 按钮，并选择要计算的度量类型和公式。
+1. 按一下 **[!UICONTROL Add]** 按鈕，並選取要計算的測量型別和公式。
 
    ![](assets/cube-create-a-measure.png)
 
-1. 如有必要，并根据运算符，选择操作所关注的表达式。
+1. 如有需要，並根據運運算元，選擇作業所關注的運算式。
 
-   的 **[!UICONTROL Advanced selection]** 按钮可创建复杂的计算公式。 如需详细信息，请参阅[此部分](../../automation/workflow/query.md)。
+   此 **[!UICONTROL Advanced selection]** 按鈕可讓您建立複雜的計算公式。 如需详细信息，请参阅[此部分](../../automation/workflow/query.md)。
 
-1. 的 **[!UICONTROL Filter the measure data...]** 链接允许您限制计算字段，并仅将其应用于数据库中的特定数据。
+1. 此 **[!UICONTROL Filter the measure data...]** 連結可讓您限制計算欄位，並僅將其套用至資料庫中的特定資料。
 
    ![](assets/cube-create-measure-2.png)
 
-1. 输入度量的标签并添加描述，然后单击 **[!UICONTROL Finish]** 来创建它。
+1. 輸入測量的標籤並新增說明，然後按一下 **[!UICONTROL Finish]** 以建立它。
 
-## 自定义度量 {#display-measures}
+## 自訂量值 {#display-measures}
 
-您可以根据需要在表格中配置度量的显示：
+您可以視需要設定表格中測量的顯示：
 
-* 测量的显示顺序。 [了解详情](#display-sequence)
-* 要在报表中显示/隐藏的信息。 [了解详情](#configuring-the-display)
-* 显示哪些度量：百分比、总数、小数位数等。 [了解详情](#changing-the-type-of-measure-displayed)
+* 測量的顯示順序。 [了解详情](#display-sequence)
+* 要在報告中顯示/隱藏的資訊。 [了解详情](#configuring-the-display)
+* 要顯示的測量：百分比、總計、小數點數等。 [了解详情](#changing-the-type-of-measure-displayed)
 
 ### 显示序列  {#display-sequence}
 
-多维数据集中计算的度量通过 **[!UICONTROL Measures]** 按钮。
+立方結構中計算的計量是透過 **[!UICONTROL Measures]** 按鈕。
 
-移动线条以更改显示顺序。 在以下示例中，法语数据被移动到列表底部：这表示它将显示在最后一列中。
+移動線條以變更顯示順序。 在以下範例中，法語資料會移至清單底部：這表示它將顯示在最後一欄。
 
 ![](assets/cube-in-report-settings.png)
 
-### 配置显示内容 {#configuring-the-display}
+### 設定顯示區 {#configuring-the-display}
 
-可以单独为每个测量或整体执行测量、行和列的配置。 使用特定图标可访问显示模式选择窗口。
+可針對每個測量或整體個別執行測量、直線和欄的組態。 特定圖示可讓您存取顯示模式選擇視窗。
 
-* 单击 **[!UICONTROL Edit the configuration of the pivot table]** 图标以访问配置窗口。
+* 按一下 **[!UICONTROL Edit the configuration of the pivot table]** 圖示以存取設定視窗。
 
-   您可以选择是否显示度量的标签，并配置其布局（行或列）。
+   您可以選擇是否顯示測量標籤，以及設定其版面（行或欄）。
 
 ![](assets/cube-pivot-table-config-details.png)
 
-使用颜色选项可突出显示重要值，以便轻松阅读。
+色彩選項可讓您反白標示重要的值，以方便閱讀。
 
 ![](assets/cube-pivot-table-color.png)
 
-### 更改显示的度量类型 {#changing-the-type-of-measure-displayed}
+### 變更顯示的測量型別 {#changing-the-type-of-measure-displayed}
 
-在每个度量内，您可以定义要应用的单位和格式。
+在每個測量中，您可以定義要套用的單位和格式。
 
 ![](assets/cube-pivot-table-config-units.png)
 
-## 共享您的报表 {#share-a-report}
+## 共用您的報告 {#share-a-report}
 
-配置报表后，您可以保存该报表并与其他运算符共享该报表。
+設定報告後，您可以儲存報告並與其他運運算元共用。
 
-为此，请单击 **[!UICONTROL Show the report properties]** 图标并启用 **[!UICONTROL Share this report]** 选项。
+若要這麼做，請按一下 **[!UICONTROL Show the report properties]** 圖示並啟用 **[!UICONTROL Share this report]** 選項。
 
 ![](assets/cube_share_option.png)
 
-指定报表所属的类别及其相关性。 <!--For more on this, refer in [this page](../../reporting/using/configuring-access-to-the-report.md#report-display-context) to the **Display sequence** and **Defining the filtering options** sections.-->
+指定報表所屬的類別及其相關性。 <!--For more on this, refer in [this page](../../reporting/using/configuring-access-to-the-report.md#report-display-context) to the **Display sequence** and **Defining the filtering options** sections.-->
 
-要确认这些更改，您需要保存报表。
+若要確認這些變更，您必須儲存報表。
 
 ## 创建过滤器 {#create-filters}
 
-可以创建过滤器以查看数据的某个部分。
+您可以建立篩選條件來檢視資料的區段。
 
 操作步骤：
 
-1. 单击 **[!UICONTROL Add a filter]** 图标。
+1. 按一下 **[!UICONTROL Add a filter]** 圖示。
 
    ![](assets/cube_add_filter.png)
 
-1. 选择过滤器关注的维度
+1. 選取篩選器關注的維度
 
-1. 选择滤镜的类型及其精度级别。
+1. 選取篩選型別及其精確度等級。
 
    ![](assets/cube_ceate_filter.png)
 
-1. 创建过滤器后，该过滤器会显示在报表上方。
+1. 建立篩選器後，篩選器會顯示在報表上方。
 
-   单击过滤器以对其进行编辑。 单击交叉点以将其删除。
+   按一下篩選器以進行編輯。 按一下十字以將其刪除。
 
-   您可以根据需要组合多个过滤器：这些内容都将显示在此区域中。
+   您可以視需要合併多個篩選器：所有篩選器都會顯示在此區域中。
 
    ![](assets/cube_multiple_filters.png)
 
-每次修改过滤器（添加、删除、更改）时，都必须重新计算报告。
+每次修改篩選器時（新增、移除、變更），都必須重新計算報表。
 
-也可以根据选定的内容创建过滤器。 要执行此操作，请选择源单元格、行和列，然后单击 **[!UICONTROL Add a filter]** 图标。
+您也可以根據選取專案建立篩選器。 若要這麼做，請選取來源儲存格、行與欄，然後按一下 **[!UICONTROL Add a filter]** 圖示。
 
-要选择行、列或单元格，请左键单击该行、列或单元格。 要取消选择，请再次单击。
+若要選取行、欄或儲存格，請用滑鼠左鍵按一下該行、欄或儲存格。 若要取消選取，請再按一下「 」。
 
 ![](assets/cube_create_filter_from_selection.png)
 
-过滤器会自动应用并添加到报表上方的过滤器区域。
+篩選器會自動套用，並新增至報表上方的篩選區域。
 
 ![](assets/cube_create_filter_display.png)

@@ -7,7 +7,7 @@ exl-id: aafd977e-c8af-426b-904c-8388c9d8e595
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '492'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -15,68 +15,68 @@ ht-degree: 3%
 
 
 
-活动的“属性”屏幕具有 **[!UICONTROL Advanced]** 选项卡，用于在发生错误时定义行为；和允许您输入初始化脚本。 此选项卡有两个版本：
+活動的屬性畫面具有 **[!UICONTROL Advanced]** 索引標籤可讓您定義發生錯誤時的行為、活動的執行期間，以及輸入初始化指令碼。 此標籤有兩個版本：
 
-* 简化版本( **[!UICONTROL Start]** 和 **[!UICONTROL End]** 例如活动)
+* 簡化版本(適用於 **[!UICONTROL Start]** 和 **[!UICONTROL End]** 例如活動)
 
    ![](assets/wf-advanced-basic.png)
 
-* 更详细的版本(对于 **[!UICONTROL Query]** 活动，例如
+* 更詳細的版本(適用於 **[!UICONTROL Query]** 活動)
 
    ![](assets/wf-advanced-full.png)
 
-要在 **[!UICONTROL Advanced]** 选项卡，请参阅此代码。
+要輸入的欄位 **[!UICONTROL Advanced]** 標籤會在以下各節中詳細說明。
 
 ## 名称 {#name}
 
-此字段包含活动的内部名称。
+此欄位包含活動的內部名稱。
 
 ## 图像 {#image}
 
-利用此字段，可更改链接到活动的图像。 有关更多信息，请参阅 [更改活动图像](change-activity-images.md).
+此欄位可讓您變更連結至活動的影像。 有關詳細資訊，請參閱 [變更活動影像](change-activity-images.md).
 
 ## 执行 {#execution}
 
-利用此字段，可定义在触发任务时要执行的操作。 有三种可能的选项：
+此欄位可讓您定義觸發任務時要執行的動作。 有三種可能的選項：
 
-这些选项通常通过右键单击活动在购物车中进行选择。
+通常在購物車中以滑鼠右鍵按一下活動來選取這些選項。
 
-* **[!UICONTROL Normal]**:与往常一样，执行活动。
-* **[!UICONTROL Do not activate]**:不会执行此任务和以下所有任务（在同一分支中）。
-* **[!UICONTROL Activate but do not execute]**:此任务和以下所有任务（在同一分支中）将自动停止。 如果您希望在任务启动时存在该位置，则此选项会非常有用。 要手动执行任务，请右键单击活动并选择 **[!UICONTROL Normal execution]**.
+* **[!UICONTROL Normal]**：活動會照常執行。
+* **[!UICONTROL Do not activate]**：此任務和以下所有任務（在同一分支中）不會執行。
+* **[!UICONTROL Activate but do not execute]**：此任務和以下所有任務（在同一分支中）會自動停止。 如果您想在任務啟動時到達該處，這會很有用。 若要手動執行工作，請在活動上按一下滑鼠右鍵，然後選取 **[!UICONTROL Normal execution]**.
 
 ## 关联 {#affinity}
 
-您可以选择在特定计算机上强制执行工作流或工作流活动。 为此，您必须在工作流或相关活动的级别定义一个或多个倾向性。
+您可以選擇在特定電腦上強制執行工作流程或工作流程活動。 若要這麼做，您必須在工作流程或相關活動的層級定義一或多個屬性。
 
 
-## Max。 执行期 {#max--execution-period}
+## 最大值. 執行期間 {#max--execution-period}
 
-利用此字段，可在任务过长时设置警告。 它不会影响工作流操作。 如果任务在 **[!UICONTROL Max. execution period]** 结束， **[!UICONTROL Instance monitoring]** 页面将显示此工作流的警告。 通过 **[!UICONTROL Monitoring]** 选项卡。
+此欄位可讓您為任務花費太長的時間設定警告。 這不會影響工作流程作業。 如果任務未在 **[!UICONTROL Max. execution period]** 結束， **[!UICONTROL Instance monitoring]** 頁面將顯示此工作流程的警告。 此頁面的存取方式為 **[!UICONTROL Monitoring]** 首頁的頁簽。
 
 ## 行为 {#behavior}
 
-利用此字段，可定义要使用异步任务应用的行为。 有两种可能的选项：
+此欄位可讓您定義要套用於使用非同步工作的行為。 提供了两个可能的选项：
 
-* **[!UICONTROL Several tasks authorized]**:即使第一个任务未完成，也可以同时执行多个任务。
-* **[!UICONTROL The current task has priority]**:正在进行的任务优先处理。 只要任务正在进行中，就不会执行其他任务。
+* **[!UICONTROL Several tasks authorized]**：即使第一個任務未完成，仍可一次執行多個任務。
+* **[!UICONTROL The current task has priority]**：進行中的任務優先順序。 只要工作仍在進行中，就不會執行其他工作。
 
 ## 时区 {#time-zone}
 
-利用此字段，可选择活动的时区。 有关此内容的更多信息： [管理时区](managing-time-zones.md).
+此欄位可讓您選取活動的時區。 有關詳細資訊： [管理時區](managing-time-zones.md).
 
-## 出错时 {#in-case-of-errors}
+## 發生錯誤時 {#in-case-of-errors}
 
-利用此字段，可定义在活动出错时要执行的操作。 有两种可能的选项：
+此欄位可讓您定義活動發生錯誤時要執行的動作。 提供了两个可能的选项：
 
-* **[!UICONTROL Suspend the process]**:工作流将自动停止。 其状态更改为 **[!UICONTROL Failed]**. 解决问题后，重新启动工作流。
-* **[!UICONTROL Ignore]**:不会执行此任务和以下所有任务（在同一分支中）。 这对于定期任务很有用。 如果分支具有上游调度程序，则该调度程序将像往常一样在下一个执行日期开始。
-* **[!UICONTROL Abort on error]**:工作流会自动停止，无法重新启动。 其状态更改为 **[!UICONTROL Failed]**.
+* **[!UICONTROL Suspend the process]**：工作流程會自動停止。 其狀態變更為 **[!UICONTROL Failed]**. 問題解決後，請重新啟動工作流程。
+* **[!UICONTROL Ignore]**：此任務和以下所有任務（在同一分支中）不會執行。 這對於週期性任務很有用。 如果分支有排程器放在上游，它將在下一個執行日期照常啟動。
+* **[!UICONTROL Abort on error]**：工作流程會自動停止，且無法重新啟動。 其狀態變更為 **[!UICONTROL Failed]**.
 
 ## 初始化脚本 {#initialization-script}
 
-利用此字段，可初始化变量或修改活动属性。 有关更多信息，请参阅： [JavaScript脚本和模板](javascript-scripts-and-templates.md).
+此欄位可讓您初始化變數或修改活動屬性。 有關詳細資訊，請參閱： [JavaScript指令碼和範本](javascript-scripts-and-templates.md).
 
 ## 注释 {#comment}
 
-的 **[!UICONTROL Comment]** 字段是可添加说明的自由字段。
+此 **[!UICONTROL Comment]** 欄位是自由欄位，可讓您新增說明。

@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 编辑架构
-description: 了解有关编辑模式工作流活动的更多信息
+description: 深入瞭解編輯結構描述工作流程活動
 feature: Workflows, Targeting Activity
 exl-id: 16fb1aa5-cf99-4461-a1a4-7a68d97e2a74
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
@@ -15,14 +15,14 @@ ht-degree: 3%
 
 
 
-数据可以进行转换、标准化，并在必要时使用 **[!UICONTROL Edit schema]** 活动。 它通常用于标准化数据结构：例如，您可以通过计算字段或聚合的平均值来重命名输出列或修改其内容。
+資料可轉換、正規化，如有需要，可在工作流程中使用 **[!UICONTROL Edit schema]** 活動。 它通常用於標準化資料結構：例如，您可以計算欄位或彙總的平均值，重新命名輸出欄或修改其內容。
 
-此活动不会更改工作表中的数据，只会更改其架构，即数据的逻辑视图。
+此活動不會變更工作表中的資料，只會變更其結構描述，即資料的邏輯檢視。
 
 ![](assets/wf_manipulation_box.png)
 
-您还可以通过 **[!UICONTROL Links]** 选项卡。
+您也可以透過下列方式建立與其他工作表的聯結： **[!UICONTROL Links]** 標籤。
 
 ![](assets/wf_manipulation_box_link_tab.png)
 
-利用下部分，可配置连接条件的列表，即用于协调两个表中的数据的条件。
+下方區段可讓您設定加入條件的清單，也就是用來協調兩個表格資料的條件。

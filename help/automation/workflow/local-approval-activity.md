@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 使用本地审批活动
-description: 了解如何使用本地批准活动
+description: 瞭解如何使用本機核准活動
 feature: Workflows
 exl-id: 31089026-3fc0-4491-8b70-0fb7fd1e3ac0
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
@@ -13,41 +13,41 @@ ht-degree: 2%
 
 # 使用本地审批活动{#using-the-local-approval-activity}
 
-的 **[!UICONTROL Local approval]** 通过将活动集成到定位工作流，您可以在发送投放之前设置收件人批准流程。
+此 **[!UICONTROL Local approval]** 整合至目標定位工作流程的活動可讓您在傳送傳遞前設定收件者核准流程。
 
 >[!CAUTION]
 >
->要使用此功能，您需要购买分布式营销模块，该模块是一个Campaign选项。 请核实您的许可协议。
+>若要使用此函式，您必須購買分散式行銷模組，這是行銷活動選項。 请核实您的许可协议。
 
-要设置此用例，我们创建了以下定位工作流：
+為了設定此使用案例，我們建立了以下目標定位工作流程：
 
 ![](assets/local_validation_workflow.png)
 
-本地批准流程的主要步骤是：
+本地核准流程的主要步驟如下：
 
-1. 定位后产生的人口可能会因 **[!UICONTROL Split]** 使用数据分发模型键入活动。
+1. 由於下列原因，鎖定目標所產生的人口可能會受限： **[!UICONTROL Split]** 使用資料分佈模型輸入活動。
 
    ![](assets/local_validation_intro_1.png)
 
-1. 的 **[!UICONTROL Local approval]** 然后，活动接管并向每个本地主管发送通知电子邮件。 在每个本地主管批准分配给他们的收件人之前，活动将被暂停。
+1. 此 **[!UICONTROL Local approval]** 活動接著接手並傳送通知電子郵件給每個本機主管。 活動會擱置，直到每個本機主管核准指派給他們的收件者為止。
 
-1. 一旦达到批准截止日期，工作流程将再次启动。 在本例中， **[!UICONTROL Delivery]** 活动开始，并将投放发送到批准的目标。
+1. 一旦達到核准期限，工作流程就會重新開始。 在此範例中， **[!UICONTROL Delivery]** 活動隨即開始，且傳遞內容會傳送至核准的目標。
 
    >[!NOTE]
    >
-   >到达截止时间后，将排除未获得批准的收件人。
+   >一旦到達截止日期，未獲核准的收件者即會被排除在目標定位之外。
 
    ![](assets/local_validation_intro_6.png)
 
-1. 几天后，第二个 **[!UICONTROL Local approval]** 类型活动会向每个本地主管发送通知电子邮件，其中包含其联系人执行的操作（点击次数、打开次数等）的摘要。
+1. 幾天後，第二個 **[!UICONTROL Local approval]** 型別活動會傳送通知電子郵件給每個本機主管，其中包含其聯絡人執行的動作（點選、開啟等）的摘要。
 
-## 步骤1:创建数据分发模板 {#step-1--creating-the-data-distribution-template-}
+## 步驟1：建立資料發佈範本 {#step-1--creating-the-data-distribution-template-}
 
-利用数据分发模板，可限制根据数据分组进行定位所产生的群体，同时允许您将每个值分配给本地主管。 在本例中，我们定义了 **[!UICONTROL Email address domain]** 字段作为分发字段，并为每个本地主管分配了域
+資料發佈範本可讓您根據資料分組限制目標定位所得的母體，同時讓您將每個值指派給本機主管。 在此範例中，我們已定義 **[!UICONTROL Email address domain]** 欄位做為發佈欄位，並將網域指派給每個本機主管
 
-有关创建数据分发模板的更多信息，请参阅 [限制每个数据分发的子集记录数](split.md#limiting-the-number-of-subset-records-per-data-distribution).
+如需建立資料發佈範本的詳細資訊，請參閱 [限制每個資料分佈的子集記錄數](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
-1. 要创建数据分发模板，请转到 **[!UICONTROL Resources > Campaign management > Data distribution]** 节点，单击 **[!UICONTROL New]**.
+1. 若要建立資料發佈範本，請前往 **[!UICONTROL Resources > Campaign management > Data distribution]** 節點並按一下 **[!UICONTROL New]**.
 
    ![](assets/local_validation_data_distribution_1.png)
 
@@ -55,157 +55,157 @@ ht-degree: 2%
 
    ![](assets/local_validation_data_distribution_2.png)
 
-1. 输入 **[!UICONTROL Label]** 和 **[!UICONTROL Distribution context]**. 在本例中，我们选择了 **[!UICONTROL Recipient]** 定位模式和 **[!UICONTROL Email domain]** 字段。 收件人列表将按域进行划分。
-1. 在 **[!UICONTROL Distribution type]** 字段中，选择目标限制值在 **[!UICONTROL Distribution]** 选项卡。 在这里，我们选择了 **[!UICONTROL Percentage]**.
-1. 在 **[!UICONTROL Approval storage]** 字段中，输入与正在使用的定位模式匹配的批准的存储模式。 下面我们将使用默认存储架构： **[!UICONTROL Local approval of recipients]**.
-1. 然后，单击 **[!UICONTROL Advanced parameters]** 链接。
+1. 輸入 **[!UICONTROL Label]** 和 **[!UICONTROL Distribution context]**. 在此範例中，我們已選取 **[!UICONTROL Recipient]** 目標定位結構描述和 **[!UICONTROL Email domain]** 作為分佈欄位的欄位。 收件者清單將依網域劃分。
+1. 在 **[!UICONTROL Distribution type]** 欄位中，選取目標限制值在 **[!UICONTROL Distribution]** 標籤。 在此，我們已選擇 **[!UICONTROL Percentage]**.
+1. 在 **[!UICONTROL Approval storage]** 欄位中，輸入與使用中目標結構描述相符之核准的儲存結構描述。 我們在這裡將使用預設的儲存結構描述： **[!UICONTROL Local approval of recipients]**.
+1. 然後按一下 **[!UICONTROL Advanced parameters]** 連結。
 
    ![](assets/local_validation_data_distribution_3.png)
 
-1. 保留 **[!UICONTROL Approve the targeted messages]** 选项，以便从要批准的收件人列表中预先选择所有收件人。
-1. 在 **[!UICONTROL Delivery label]** 字段中，我们保留了默认表达式（投放的计算字符串）。 投放的标准标签将用在反馈通知中。
-1. 在 **[!UICONTROL Grouping field]** 部分，我们已选择 **[!UICONTROL Gender]** 字段作为用于在批准和反馈通知中显示收件人的分组字段。
-1. 在 **[!UICONTROL Edit targeted messages]** 部分，我们已选择 **[!UICONTROL Edit recipients]** web应用程序和 **[!UICONTROL recipientId]** 参数。 在批准和反馈通知中，收件人是可单击的，并将指向Web应用程序的URL。 其他URL参数将为 **[!UICONTROL recipientId]**.
-1. 然后，单击 **[!UICONTROL Distribution]** 选项卡。 对于每个域，输入以下字段：
+1. 保留 **[!UICONTROL Approve the targeted messages]** 選項已核取，以便從要核准的收件者清單中預先選取所有收件者。
+1. 在 **[!UICONTROL Delivery label]** 欄位，我們保留預設運算式（傳遞的計算字串）。 傳遞的標準標籤將用於回饋通知。
+1. 在 **[!UICONTROL Grouping field]** 章節，我們已選取 **[!UICONTROL Gender]** 在核准和意見反應通知中顯示收件者的群組欄位欄位。
+1. 在 **[!UICONTROL Edit targeted messages]** 區段，我們已選取 **[!UICONTROL Edit recipients]** 網頁應用程式和 **[!UICONTROL recipientId]** 引數。 在核准和意見反應通知中，收件者可點選，且會指向網頁應用程式的URL。 額外的URL引數將會是 **[!UICONTROL recipientId]**.
+1. 然後按一下 **[!UICONTROL Distribution]** 標籤。 針對每個網域，輸入下列欄位：
 
    ![](assets/local_validation_data_distribution_4.png)
 
-   * **[!UICONTROL Value]**:输入域名的值。
-   * **[!UICONTROL Percentage / Fixed]**:对于每个域，输入最大值。 要将投放发送到的收件人数量。 在本例中，我们希望将投放限制为每个域10%。
-   * **[!UICONTROL Label]**:输入要在批准和反馈通知中显示的域的标签。
-   * **[!UICONTROL Group or operator]**:选择分配给域的运算符或运算符组。
+   * **[!UICONTROL Value]**：輸入網域名稱的值。
+   * **[!UICONTROL Percentage / Fixed]**：對於每個網域，輸入最大值。 您要傳送傳遞的收件者人數。 在此範例中，我們想要將傳送限製為每個網域10%。
+   * **[!UICONTROL Label]**：輸入要在核准和意見反應通知中顯示的網域標籤。
+   * **[!UICONTROL Group or operator]**：選取指派給網域的運運算元或運運算元群組。
 
       >[!CAUTION]
       >
-      >确保为运算符分配了相应的权限。
+      >請確定已指派適當的許可權給運運算元。
 
-## 步骤2:创建定位工作流 {#step-2--creating-the-targeting-workflow}
+## 步驟2：建立目標定位工作流程 {#step-2--creating-the-targeting-workflow}
 
-要设置此用例，我们创建了以下定位工作流：
+為了設定此使用案例，我們建立了以下目標定位工作流程：
 
 ![](assets/local_validation_workflow.png)
 
-添加了以下活动：
+已新增下列活動：
 
-* 两个 **[!UICONTROL Query]** 活动，
-* 一个 **[!UICONTROL Intersection]** 活动，
-* 一个 **[!UICONTROL Split]** 活动，
-* 一个 **[!UICONTROL Local approval]** 活动，
-* 一个 **[!UICONTROL Delivery]** 活动，
-* 一个 **[!UICONTROL Wait]** 活动，
-* 一秒 **[!UICONTROL Local approval]** 活动，
-* 一个 **[!UICONTROL End]** 活动。
+* 二 **[!UICONTROL Query]** 活動，
+* 一 **[!UICONTROL Intersection]** 活動，
+* 一 **[!UICONTROL Split]** 活動，
+* 一 **[!UICONTROL Local approval]** 活動，
+* 一 **[!UICONTROL Delivery]** 活動，
+* 一 **[!UICONTROL Wait]** 活動，
+* 秒 **[!UICONTROL Local approval]** 活動，
+* 一 **[!UICONTROL End]** 活動。
 
-### 查询、交集和拆分 {#queries--intersection-and-split}
+### 查詢、交集和分割 {#queries--intersection-and-split}
 
-上游定位由两个查询组成，一个交集，一个拆分。 通过使用 **[!UICONTROL Split]** 活动。
+上游目標定位由兩個查詢、一個交集和一個分割組成。 使用可限制鎖定目標所產生的母體 **[!UICONTROL Split]** 活動使用資料發佈範本。
 
-有关配置拆分活动的更多信息，请参阅 [拆分](split.md). 有关创建数据分发模板的详情，请参阅 [限制每个数据分发的子集记录数](split.md#limiting-the-number-of-subset-records-per-data-distribution).
+有關設定分割活動的詳細資訊，請參閱 [Split](split.md). 建立資料發佈範本的詳細資訊，請參閱 [限制每個資料分佈的子集記錄數](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
-如果不想限制查询中的群体，则不必使用 **[!UICONTROL Query]**, **[!UICONTROL Intersection]**&#x200B;和 **[!UICONTROL Split]** 活动。 在这种情况下，请在第一个 **[!UICONTROL Local approval]** 活动。
+如果您不想限制來自查詢的母體，則不必使用 **[!UICONTROL Query]**， **[!UICONTROL Intersection]**、和 **[!UICONTROL Split]** 活動。 在此情況下，請先完成資料發佈範本 **[!UICONTROL Local approval]** 活動。
 
-1. 在 **[!UICONTROL Record count limitation]** 选择 **[!UICONTROL Limit the selected records]** 选项，然后单击 **[!UICONTROL Edit]** 链接。
+1. 在 **[!UICONTROL Record count limitation]** 區段，選取 **[!UICONTROL Limit the selected records]** 選項，然後按一下 **[!UICONTROL Edit]** 連結。
 
    ![](assets/local_validation_split_1.png)
 
-1. 选择 **[!UICONTROL Keep only the first records after sorting]** 选项并单击 **[!UICONTROL Next]**.
+1. 選取 **[!UICONTROL Keep only the first records after sorting]** 選項並按一下 **[!UICONTROL Next]**.
 
    ![](assets/local_validation_split_1bis.png)
 
-1. 在 **[!UICONTROL Sort columns]** 部分，添加要应用排序的字段。 在这里，我们选择了 **[!UICONTROL Email]** 字段。 单击 **[!UICONTROL Next]**。
+1. 在 **[!UICONTROL Sort columns]** 區段，新增套用排序的欄位。 在此，我們已選擇 **[!UICONTROL Email]** 欄位。 单击 **[!UICONTROL Next]**。
 
    ![](assets/local_validation_split_2.png)
 
-1. 选择 **[!UICONTROL By data distribution]** 选项，选择之前创建的分发模板(请参阅 [步骤1:创建数据分发模板](#step-1--creating-the-data-distribution-template-))并单击 **[!UICONTROL Finish]**.
+1. 選取 **[!UICONTROL By data distribution]** 選項，選取先前建立的分發範本(請參閱 [步驟1：建立資料發佈範本](#step-1--creating-the-data-distribution-template-))並按一下 **[!UICONTROL Finish]**.
 
    ![](assets/local_validation_split_3.png)
 
-在分发模板中，我们选择将群体限制为每个分组值10%，该值与工作流中显示的值（340作为输入，34作为输出）一致。
+在發佈範本中，我們已選擇將母體限製為每個分組值10%，這符合工作流程中顯示的值（340作為輸入，34作為輸出）。
 
 ![](assets/local_validation_intro_1.png)
 
-### 批准通知 {#approval-notification}
+### 核准通知 {#approval-notification}
 
-的 **[!UICONTROL Local approval]** 活动允许您向每个本地主管发送通知。
+此 **[!UICONTROL Local approval]** 活動可讓您傳送通知給每個本機主管。
 
-有关配置的更多信息 **[!UICONTROL Local approval]** 活动，请参阅 [本地批准](local-approval.md).
+有關設定的詳細資訊 **[!UICONTROL Local approval]** 活動，請參閱 [本地核准](local-approval.md).
 
 ![](assets/local_validation_workflow_2.png)
 
-需要输入以下字段：
+需要輸入下列欄位：
 
 1. 在 **[!UICONTROL Action to execute]** 部分中，选择 **[!UICONTROL Target approval notification]** 选项。
 1. 在 **[!UICONTROL Distribution context]** 部分中，选择 **[!UICONTROL Specified in the transition]** 选项。
 
-   如果不想限制目标群体，请选择 **[!UICONTROL Explicit]** 选项，然后输入之前在 **[!UICONTROL Data distribution]** 字段。
+   如果您不想限制目標母體，請選取 **[!UICONTROL Explicit]** 在此選項並輸入先前在中建立的發佈範本 **[!UICONTROL Data distribution]** 欄位。
 
-1. 在 **[!UICONTROL Notification]** 部分，选择投放模板和用于通知电子邮件的主题。 在本例中，我们选择了默认模板： **[!UICONTROL Local approval notification]**.
-1. 在 **[!UICONTROL Approval schedule]** 部分，我们保留了默认的批准截止时间（3天）并添加了提醒。 交货将在批准后3天后离开。 在达到批准截止时间后，未获得批准的收件人不会被定位。
+1. 在 **[!UICONTROL Notification]** 區段，選取傳送範本及用於通知電子郵件的主旨。 在此，我們選擇了預設範本： **[!UICONTROL Local approval notification]**.
+1. 在 **[!UICONTROL Approval schedule]** 部分，我們保留預設核准期限（3天）並新增提醒。 傳遞將在開始核准後3天後離開。 一旦達到核准期限，未核准的收件者就不會被目標定位列入考量。
 
-通知电子邮件由 **[!UICONTROL Local approval]** 活动。
+通知電子郵件是由以下人員傳送： **[!UICONTROL Local approval]** 活動至本機監督員。
 
 ### 等待 {#wait}
 
-等待活动允许您推迟开始第二个将发送投放反馈通知的本地批准活动。 在 **[!UICONTROL Duration]** 字段，我们已输入 **[!UICONTROL 5d]** 值（5天）。 反馈通知中将包含收件人在发送投放后5天内执行的操作。
+等待活動可讓您延遲將傳送傳送回饋通知的第二個本機核准活動的開始。 在 **[!UICONTROL Duration]** 欄位，我們已輸入 **[!UICONTROL 5d]** 值（5天）。 傳送傳遞後5天內收件者執行的動作將包含在回饋通知中。
 
 ![](assets/local_validation_workflow_3.png)
 
-### 反馈通知 {#feedback-notification}
+### 意見反應通知 {#feedback-notification}
 
-第二个 **[!UICONTROL Local approval]** 活动允许您向每个本地主管发送投放反馈通知。
+第二個 **[!UICONTROL Local approval]** 活動可讓您傳送傳遞意見回饋通知給每個本機主管。
 
 ![](assets/local_validation_workflow_4.png)
 
-需要输入以下字段。
+需要輸入下列欄位。
 
-1. 在 **[!UICONTROL Action to execute]** ，选择 **[!UICONTROL Delivery feedback report]**.
-1. 在 **[!UICONTROL Delivery]** ，选择 **[!UICONTROL Specified in the transition]**.
-1. 在 **[!UICONTROL Notification]** 部分，选择投放模板和用于通知电子邮件的主题。
+1. 在 **[!UICONTROL Action to execute]** 區段，選擇 **[!UICONTROL Delivery feedback report]**.
+1. 在 **[!UICONTROL Delivery]** 區段，選擇 **[!UICONTROL Specified in the transition]**.
+1. 在 **[!UICONTROL Notification]** 區段，選取傳送範本及用於通知電子郵件的主旨。
 
-达到等待活动中配置的截止时间后，第二个 **[!UICONTROL Local approval]** 类型活动会向每个本地主管发送以下通知电子邮件：
+一旦達到等待活動中設定的截止日期，第二個 **[!UICONTROL Local approval]** 型別作業會傳送下列通知電子郵件給每個本機主管：
 
 ![](assets/local_validation_intro_3.png)
 
-### 管理员的批准跟踪 {#approval-tracking-by-the-administrator}
+### 管理員的核准追蹤 {#approval-tracking-by-the-administrator}
 
-每次本地批准活动启动时，都会创建一个批准任务。 管理员可以控制这些批准任务中的每项。
+每次本機核准活動開始時，都會建立核准任務。 管理員可以控制這些核准任務。
 
-转到营销活动的定位工作流，然后单击 **[!UICONTROL Local approval tasks]** 选项卡。
+前往行銷活動的目標定位工作流程，然後按一下 **[!UICONTROL Local approval tasks]** 標籤。
 
 ![](assets/local_validation_admin_1.png)
 
-也可以通过 **[!UICONTROL Approval tasks]** 选项卡。
+本機核准任務的清單也可透過 **[!UICONTROL Approval tasks]** 資料發佈範本的索引標籤。
 
 ![](assets/local_validation_admin_2.png)
 
-选择要监视的任务，然后单击 **[!UICONTROL Detail]** 按钮。 的 **[!UICONTROL General]** “本地批准”任务的选项卡，可查看有关该任务的信息。 如有必要，您可以更改批准和提醒日期。
+選取您要監視的工作，然後按一下 **[!UICONTROL Detail]** 按鈕。 此 **[!UICONTROL General]** 本機核准任務的標籤可讓您檢視任務的資訊。 如有需要，您可以變更核准和提醒日期。
 
 ![](assets/local_validation_admin_3.png)
 
-此选项卡显示以下信息：
+此標籤顯示下列資訊：
 
-* 任务的标签及其ID
-* 使用的分发模板
-* 定向消息的数量
-* 链接的工作流和营销活动
-* 任务计划
+* 任務的標籤及其ID
+* 使用的發佈範本
+* 目標訊息數
+* 連結的工作流程與行銷活動
+* 任務排程
 
-的 **[!UICONTROL Distribution]** 选项卡，用于查看批准日志、其状态、定向消息数、批准日期以及批准投放的操作员。
+此 **[!UICONTROL Distribution]** 任務的索引標籤可讓您檢視核准記錄、其狀態、目標訊息數、核准日期，以及核准傳送的操作員。
 
 ![](assets/local_validation_admin_4.png)
 
-选择批准日志，然后单击 **[!UICONTROL Detail]** 按钮以显示更多信息。 的 **[!UICONTROL General]** “本地批准日志”的选项卡可让您查看常规日志信息。 您还可以更改批准状态。
+選取核准記錄並按一下 **[!UICONTROL Detail]** 按鈕以顯示更多資訊。 此 **[!UICONTROL General]** 本機核准記錄檔的標籤可讓您檢視一般記錄檔資訊。 您也可以變更核准狀態。
 
 ![](assets/local_validation_admin_5.png)
 
-此选项卡显示以下信息：
+此標籤顯示下列資訊：
 
-* 链接的批准任务
-* 批准状态(**[!UICONTROL Approved]** 或 **[!UICONTROL Pending]**)
-* 使用的分发模板
-* 批准的地方主管和批准日期
-* 已定位和已批准的消息数
+* 連結的核准任務
+* 核准狀態(**[!UICONTROL Approved]** 或 **[!UICONTROL Pending]**)
+* 使用的發佈範本
+* 核准的當地主管和核准日期
+* 已鎖定目標和已核准的訊息數
 
-的 **[!UICONTROL Targeted]** 批准日志的选项卡会显示目标收件人的列表及其批准状态。 您可以根据需要更改此状态。
+此 **[!UICONTROL Targeted]** 核准記錄的「 」標籤會顯示目標收件者的清單及其核准狀態。 您可以視需要變更此狀態。
 
 ![](assets/local_validation_admin_6.png)

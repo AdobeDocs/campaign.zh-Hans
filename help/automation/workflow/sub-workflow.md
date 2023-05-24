@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 子工作流
-description: 进一步了解子工作流活动
+description: 進一步瞭解子工作流程活動
 feature: Workflows
 exl-id: c530fb4e-d21e-4059-88e1-77a8d33a7832
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
@@ -15,63 +15,63 @@ ht-degree: 0%
 
 
 
-的 **[!UICONTROL Sub-workflow]** 活动允许您触发另一个工作流的执行并恢复结果。 此活动可让您在使用简化界面时使用复杂的工作流。
+此 **[!UICONTROL Sub-workflow]** 活動可讓您觸發另一個工作流程的執行，並復原結果。 此活動可讓您使用複雜的工作流程，同時使用簡化的介面。
 
-您可以在一个工作流中调用多个子工作流。 子工作流同步执行。
+您可以在單一工作流程中呼叫多個子工作流程。 子工作流程會同步執行。
 
-在以下示例中，主工作流使用跳转调用子工作流。 有关跳转类型图形对象的更多信息，请参阅 [此部分](jump--start-point-and-end-point-.md).
+在以下範例中，主要工作流程是使用跳轉呼叫子工作流程。 如需跳轉型別圖形物件的詳細資訊，請參閱 [本節](jump--start-point-and-end-point-.md).
 
-1. 创建一个工作流，以将其用作另一个工作流中的子工作流。
-1. 插入 **[!UICONTROL Jump (end point)]** 活动，其优先级为1。 如果您有多个“端点”类型跳转，则Adobe Campaign将使用数字最少的“端点”跳转。
-1. 插入 **[!UICONTROL Jump (start point)]** 活动，其优先级为2。 如果您有多个“起始点”类型跳转，则Adobe Campaign将使用数字最大的“起始点”跳转。
+1. 建立您會作為另一個工作流程中的子工作流程的工作流程。
+1. 插入 **[!UICONTROL Jump (end point)]** 工作流程開頭具有1優先順序的活動。 如果您有多個「端點」型別跳轉，Adobe Campaign會使用編號最低的「端點」跳轉。
+1. 插入 **[!UICONTROL Jump (start point)]** 工作流程結束時優先順序為2的活動。 如果您有多個「起點」型別跳轉，Adobe Campaign會使用數字最高的「起點」跳轉。
 
    ![](assets/subworkflow_jumps.png)
 
    >[!NOTE]
    >
-   >如果子工作流活动引用具有多个 **[!UICONTROL Jump]** 活动时，子工作流会在数量最低的“结束点”类型跳转和数量最高的“开始点”类型跳转之间执行。
+   >如果子工作流程活動參考的工作流程具有多個 **[!UICONTROL Jump]** 活動時，子工作流程會在具有最低編號的「端點」型別跳轉與具有最高編號的「起點」型別跳轉之間執行。
    >
-   >要正确运行子工作流，您只能有一个数字最低的“端点”类型跳转，而只有一个数字最高的“起始点”类型跳转。
+   >若要讓子工作流程正確執行，您只能有一個編號最低的「終點」型別跳轉，以及只能有一個編號最高的「起點」型別跳轉。
 
-1. 完成并保存此“子工作流”。
-1. 创建主工作流。
-1. 插入 **[!UICONTROL Sub-workflow]** 活动并将其打开。
-1. 从 **[!UICONTROL Workflow template]** 下拉列表。
+1. 完成並儲存此「子工作流程」。
+1. 建立主要工作流程。
+1. 插入 **[!UICONTROL Sub-workflow]** 活動並開啟。
+1. 從中選擇您要使用的工作流程 **[!UICONTROL Workflow template]** 下拉式清單。
 
    ![](assets/subworkflow_selection.png)
 
-1. 您还可以添加配置脚本以更改引用的工作流。
-1. 单击 **[!UICONTROL Ok]**。它将自动创建标签为 **[!UICONTROL Jump (start point)]** 活动。
+1. 您也可以新增設定指令碼，以變更參考的工作流程。
+1. 单击 **[!UICONTROL Ok]**。這會自動建立外站轉變，其標籤為 **[!UICONTROL Jump (start point)]** 活動。
 
    ![](assets/subworkflow_outbound.png)
 
-1. 运行工作流。
+1. 執行工作流程。
 
-运行后，称为子工作流的工作流将保留在 **[!UICONTROL Being edited]** 状态，这表示：
+執行後，呼叫為子工作流程的工作流程會保留在 **[!UICONTROL Being edited]** status ，這表示以下內容：
 
-* 您无法右键单击过渡以显示目标。
-* 无法显示中间群体的计数。
-* 子工作流日志显示在主工作流中。
+* 您無法用滑鼠右鍵按一下轉變來顯示目標。
+* 無法顯示中間母體計數。
+* 子工作流程記錄檔會顯示在主要工作流程中。
 
    ![](assets/subworkflow_logs.png)
 
 >[!NOTE]
 >
->如果子工作流中发生任何错误，则主工作流将暂停，并创建子工作流的副本。
+>如果子工作流程中發生任何錯誤，主要工作流程將暫停，並建立子工作流程的副本。
 
-## 输入参数（可选） {#input-parameters--optional-}
-
-* tableName
-* 模式
-
-每个集客事件必须指定由这些参数定义的目标。
-
-## 输出参数 {#output-parameters}
+## 輸入引數（選擇性） {#input-parameters--optional-}
 
 * tableName
-* 模式
+* 綱要
+
+每個傳入事件都必須指定由這些引數定義的目標。
+
+## 輸出引數 {#output-parameters}
+
+* tableName
+* 綱要
 * recCount
 
-这组值由三个值组成，用于标识查询所定向的群体。 **[!UICONTROL tableName]** 是记录目标标识符的表的名称， **[!UICONTROL schema]** 是群体模式（通常为nms:recipient）和 **[!UICONTROL recCount]** 是表中的元素数。
+這組三個值會識別查詢所定位的母體。 **[!UICONTROL tableName]** 是記錄目標識別碼的資料表名稱， **[!UICONTROL schema]** 為母體的結構描述（通常為nms：recipient）和 **[!UICONTROL recCount]** 是表格中的元素數量。
 
-* targetSchema:此值是工作表的架构。 此参数适用于具有 **[!UICONTROL tableName]** 和 **[!UICONTROL schema]**.
+* targetSchema：此值是工作表的結構描述。 此引數適用於所有具有下列專案的轉變 **[!UICONTROL tableName]** 和 **[!UICONTROL schema]**.

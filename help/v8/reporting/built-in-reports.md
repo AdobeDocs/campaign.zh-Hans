@@ -1,5 +1,5 @@
 ---
-title: Adobe Campaign内置报告
+title: Adobe Campaign內建報告
 description: 内置报告
 feature: Reporting
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
@@ -10,382 +10,382 @@ ht-degree: 2%
 
 ---
 
-# Adobe Campaign内置报告{#ootb-reports}
+# Adobe Campaign內建報告{#ootb-reports}
 
-本页提供了Adobe Campaign内置报表的列表、其内容和上下文。 Adobe Campaign提供一系列内置报告，可通过客户端控制台或Internet浏览器访问。
+此頁面提供Adobe Campaign內建報告、其內容與內容的清單。 Adobe Campaign提供一系列內建報表，使用者端主控台或網際網路瀏覽器均可存取。
 
-提供了以下类型的报表：
+可用的報表型別如下：
 
-* 报告整个平台。 [了解详情](global-reports.md)。
+* 整個平台的報告。 [了解详情](global-reports.md)。
 * 投放报告. [了解详情](delivery-reports.md)。
 
-您可以从Campaign主页、专用报告仪表板或投放列表访问内置报告。 报表在UI中的显示方式取决于其上下文。
+您可以從Campaign首頁、專用報告儀表板或傳遞清單存取內建報告。 報表在UI中的顯示方式取決於其內容。
 
-主页上提供了关键报表列表，可让您快速访问投放数据。 您可以根据需要更改此列表。 您还可以了解如何将自己的报表添加到 **[!UICONTROL Reports]** 选项卡。
+首頁上提供重要報表的清單，可讓您快速存取傳遞資料。 您可依需求變更此清單。 您也可以瞭解如何將自己的報告新增至 **[!UICONTROL Reports]** 標籤。
 
-有关这些自定义配置的更多信息，请参阅此 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html).
+如需這些自訂設定的詳細資訊，請參閱此 [Campaign Classic v7檔案](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html).
 
 
 ## 访问内置报告 {#access-ootb-reports}
 
-要访问Campaign内置报告，请执行以下操作：
+若要存取Campaign內建報表：
 
-1. 选择 **[!UICONTROL Reports]** 选项卡。
+1. 選取 **[!UICONTROL Reports]** Adobe Campaign標籤中的「 」標籤。
 
    ![](assets/reporting-access-from-home.png)
 
-1. 使用搜索字段过滤显示的报表。
+1. 使用搜尋欄位來篩選顯示的報表。
 
-1. 然后，单击要显示的报表。
+1. 然後按一下您要顯示的報表。
 
    ![](assets/edit-a-report.png)
 
-1. 单击 **[!UICONTROL Back]** 屏幕顶部的链接会将您返回到报表列表。
+1. 按一下 **[!UICONTROL Back]** 畫面頂端的連結會帶您回到報表清單。
 
    ![](assets/back-button.png)
 
-特定于营销活动或投放的报表可通过其各自的功能板访问。
+行銷活動或傳送的特定報告可透過其各自的儀表板存取。
 
 ![](assets/reporting-on-delivery.png)
 
-列表、服务、选件等的原则是相同的。 如下所示：
+清單、服務、優惠方案等的原則相同。 如下所示：
 
 ![](assets/reporting-on-offer.png)
 
 
 ## 投放报告 {#reports-on-deliveries}
 
-Adobe Campaign提供的内置报告可在下表中找到。
+下表提供Adobe Campaign提供的內建報表。
 
-有关这些报表内容的更多信息，请参阅 [此部分](delivery-reports.md).
+有關這些報告內容的詳細資訊，請參閱 [本節](delivery-reports.md).
 
 <table> 
  <tbody> 
   <tr> 
-   <td> <strong>标签和内部名称</strong><br /> </td> 
+   <td> <strong>標籤和內部名稱</strong><br /> </td> 
    <td> <strong>说明</strong><br /> </td> 
    <td> <strong>架构</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> 用户活动(recipientActivity)<br /> </td> 
-   <td> 按时间段划分打开数、点击数和交易记录。<br /> </td> 
-   <td> nms:delivery<br /> </td> 
+   <td> 使用者活動(recipientActivity)<br /> </td> 
+   <td> 依時段劃分的開啟、點按和交易。<br /> </td> 
+   <td> nms：delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> 投放吞吐量（吞吐量）<br /> </td> 
-   <td> 投放吞吐量图表，以消息/小时和Mbit/s为单位。<br /> </td> 
-   <td> nms:delivery<br /> </td> 
+   <td> 傳遞輸送量（輸送量）<br /> </td> 
+   <td> 傳遞輸送量圖表，以訊息/小時和Mbits/s為單位。<br /> </td> 
+   <td> nms：delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> 失败和退回（错误）<br /> </td> 
-   <td> 退回和无法交付项（按原因和域）。<br /> </td> 
-   <td> nms:delivery<br /> </td> 
+   <td> 失敗和退回（錯誤）<br /> </td> 
+   <td> 依原因和網域區分的跳出和無法傳遞。<br /> </td> 
+   <td> nms：delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> 跟踪指标(deliveryFeedback)<br /> </td> 
-   <td> 用于跟踪收件人行为的关键指标摘要。<br /> </td> 
-   <td> nms:delivery<br /> </td> 
+   <td> 追蹤指標(deliveryFeedback)<br /> </td> 
+   <td> 追蹤收件者行為的關鍵指標摘要。<br /> </td> 
+   <td> nms：delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> 跟踪指示器(mobileAppDeliveryFeedback)<br /> </td> 
-   <td> 向移动应用程序投放的跟踪指示器。<br /> </td> 
-   <td> nms:delivery<br /> </td> 
+   <td> 追蹤指標(mobileAppDeliveryFeedback)<br /> </td> 
+   <td> 追蹤傳送至行動應用程式的指標。<br /> </td> 
+   <td> nms：delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> 浏览器(browserStatistics)<br /> </td> 
-   <td> 点击消息的收件人使用的浏览器的统计资料。<br /> </td> 
-   <td> xtk:none<br /> </td> 
+   <td> 瀏覽器(browserStatistics)<br /> </td> 
+   <td> 收件者點選訊息時所使用瀏覽器的統計資料。<br /> </td> 
+   <td> xtk：none<br /> </td> 
   </tr> 
   <tr> 
-   <td> 共享到社交网络(deliveryForward)<br /> </td> 
-   <td> 共享活动和邮件打开统计信息。<br /> </td> 
-   <td> nms:delivery<br /> </td> 
+   <td> 分享至社交網路(deliveryForward)<br /> </td> 
+   <td> 共用活動和郵件開啟統計資料。<br /> </td> 
+   <td> nms：delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> 热点点击（旋转）<br /> </td> 
-   <td> 显示消息和叠加的点击率。<br /> </td> 
-   <td> nms:delivery<br /> </td> 
+   <td> 熱門點按（熱門）<br /> </td> 
+   <td> 顯示訊息和重疊的點按率。<br /> </td> 
+   <td> nms：delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> 假设验证报告(deliveryHexishopion)<br /> </td> 
-   <td> 显示有关投放假设的测量摘要。<br /> </td> 
-   <td> nms:delivery<br /> </td> 
+   <td> 假設報告(deliveryHypothesis)<br /> </td> 
+   <td> 顯示傳遞假設的測量摘要。<br /> </td> 
+   <td> nms：delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> 传递统计信息(statisticsPerDelivery)<br /> </td> 
-   <td> 每个电子邮件域的统计信息（已处理的消息、已投放的消息、硬退回、软退回、点击、退订）。<br /> </td> 
-   <td> nms:delivery<br /> </td> 
+   <td> 傳遞統計資料(statisticsPerDelivery)<br /> </td> 
+   <td> 每個電子郵件網域的統計資料（已處理的訊息、傳遞的訊息、硬退信、軟退信、點按、取消訂閱）。<br /> </td> 
+   <td> nms：delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> 共享活动统计信息(forwardActivities)<br /> </td> 
-   <td> 每个时段共享活动、打开数和订阅数的分析。<br /> </td> 
-   <td> nms:delivery<br /> </td> 
+   <td> 共用活動統計資料(forwardActivities)<br /> </td> 
+   <td> 分析每個時段內的共用活動、開啟次數和訂閱。<br /> </td> 
+   <td> nms：delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> 跟踪统计信息(trackingStatistics)<br /> </td> 
-   <td> 打开、单击和交易费率报表。<br /> </td> 
-   <td> nms:delivery<br /> </td> 
+   <td> 追蹤統計資料(trackingStatistics)<br /> </td> 
+   <td> 開啟、按一下與交易費率報表。<br /> </td> 
+   <td> nms：delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> 投放摘要(deliverySending)<br /> </td> 
-   <td> 交付指标摘要：目标、排除和发送的消息。<br /> </td> 
-   <td> nms:delivery<br /> </td> 
+   <td> 傳遞摘要(deliverySending)<br /> </td> 
+   <td> 傳遞指標摘要：目標、排除專案和傳送的訊息。<br /> </td> 
+   <td> nms：delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> 投放摘要(deliveryStatistics)<br /> </td> 
-   <td> 选定投放的摘要表：目标、排除项和已发送的消息。<br /> </td> 
-   <td> nms:delivery<br /> </td> 
+   <td> 傳遞摘要(deliveryStatistics)<br /> </td> 
+   <td> 所選傳遞的摘要表格：目標、排除專案和傳送的訊息。<br /> </td> 
+   <td> nms：delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> 操作系统(osStatistics)<br /> </td> 
-   <td> 单击消息的收件人使用的操作系统的统计信息。<br /> </td> 
-   <td> xtk:none<br /> </td> 
+   <td> 作業系統(osStatistics)<br /> </td> 
+   <td> 收件者點選訊息時所使用作業系統的統計資料。<br /> </td> 
+   <td> xtk：none<br /> </td> 
   </tr> 
   <tr> 
-   <td> 反应率(deliveryFeedbackSocial)<br /> </td> 
-   <td> 投放反应性率和反应破裂。<br /> </td> 
-   <td> nms:delivery<br /> </td> 
+   <td> 反應率(deliveryFeedbackSocial)<br /> </td> 
+   <td> 傳遞反應率和反應劃分。<br /> </td> 
+   <td> nms：delivery<br /> </td> 
   </tr> 
   <tr> 
-   <td> URL和点击吞吐量(topUrlDelivery)<br /> </td> 
-   <td> 最反应的URL和关联的点击流。<br /> </td> 
-   <td> nms:delivery<br /> </td> 
+   <td> URL和點按輸送量(topUrlDelivery)<br /> </td> 
+   <td> 最被動的URL和相關聯的點按資料流。<br /> </td> 
+   <td> nms：delivery<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 营销活动报告 {#reports-on-campaigns}
+## 行銷活動報表 {#reports-on-campaigns}
 
-营销活动报表涉及 **nms：操作** 表。
+行銷活動的報告涉及 **nms：operation** 表格。
 
 <table> 
  <tbody> 
   <tr> 
-   <td> <strong>标签和内部名称</strong><br /> </td> 
+   <td> <strong>標籤和內部名稱</strong><br /> </td> 
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> 用户活动(operationRecipientActivity)<br /> </td> 
-   <td> 按时间段划分的打开数、点击数和交易记录，取决于促销活动。<br /> </td> 
+   <td> 使用者活動(operationRecipientActivity)<br /> </td> 
+   <td> 依時段劃分的開啟、點按和交易，視促銷活動而定。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 投放吞吐量(operationThroughput)<br /> </td> 
-   <td> 投放吞吐量图表（以邮件/小时和Mbit/s为单位）取决于促销活动。<br /> </td> 
+   <td> 傳遞輸送量(operationThroughput)<br /> </td> 
+   <td> 以郵件/小時和Mbits/s顯示的傳遞輸送量圖表取決於Campaign。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 促销活动费用(budgetOperationExpenses)<br /> </td> 
-   <td> 根据营销活动，显示营销活动行项目的详细信息。<br /> </td> 
+   <td> 行銷活動費用(budgetOperationExpenses)<br /> </td> 
+   <td> 根據行銷活動，詳細顯示行銷活動條列專案。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 失败和退回(operationErrors)<br /> </td> 
-   <td> 退回和无法交付项（按原因和域）取决于Campaign。<br /> </td> 
+   <td> 失敗和退回(operationErrors)<br /> </td> 
+   <td> 依原因和網域區分的跳出和無法傳遞專案，取決於Campaign。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 浏览成本行(budgetExplorerOperation)<br /> </td> 
-   <td> 成本行的描述性分析取决于MRM。<br /> </td> 
+   <td> 探索成本行(budgetExplorerOperation)<br /> </td> 
+   <td> 成本明細行的描述性分析，取決於MRM。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 跟踪指标(operationFeedback)<br /> </td> 
-   <td> 关键跟踪指标概述：打开数、点击数和交易数取决于促销活动。<br /> </td> 
+   <td> 追蹤指標(operationFeedback)<br /> </td> 
+   <td> 主要追蹤指標概要：開啟、點按及交易視促銷活動而定。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 共享到社交网络(operationForward)<br /> </td> 
-   <td> 共享活动和邮件打开统计信息取决于Campaign。<br /> </td> 
+   <td> 分享至社交網路(operationForward)<br /> </td> 
+   <td> 根據Campaign，共用活動和郵件開啟統計資料。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 假设验证报告（操作假设）<br /> </td> 
-   <td> 显示营销活动投放假设测量的摘要，具体取决于营销活动。<br /> </td> 
+   <td> 假設報告(operationHypothesis)<br /> </td> 
+   <td> 根據Campaign顯示行銷活動傳遞的假設測量摘要。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 共享活动统计信息(forwardActivityOpt)<br /> </td> 
-   <td> 分享活动、每个时间段的打开数和订阅数的分析取决于Campaign。<br /> </td> 
+   <td> 共用活動統計資料(forwardActivityOpt)<br /> </td> 
+   <td> 根據Campaign分析每個時段共用活動、開啟次數和訂閱。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 投放摘要(operationStatistics)<br /> </td> 
-   <td> 营销活动投放的摘要图表：目标、排除项和已发送的消息。<br /> </td> 
+   <td> 傳遞摘要(operationStatistics)<br /> </td> 
+   <td> 行銷活動傳送的摘要圖表：傳送的目標、排除專案和訊息。<br /> </td> 
   </tr> 
   <tr> 
-   <td> URL和点击吞吐量(operationTopUrlDelivery)<br /> </td> 
-   <td> 大多数反应式URL和关联的点击流取决于促销活动。<br /> </td> 
+   <td> URL和點按輸送量(operationTopUrlDelivery)<br /> </td> 
+   <td> 大多數的被動URL和相關聯的點按資料流取決於Campaign。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 服务报告 {#reports-on-services}
+## 服務報表 {#reports-on-services}
 
-有关服务的报告涉及 **nms:service** 表。
+服務的相關報表會涉及 **nms：service** 表格。
 
 <table> 
  <tbody> 
   <tr> 
-   <td> <strong>标签和内部名称</strong><br /> </td> 
+   <td> <strong>標籤和內部名稱</strong><br /> </td> 
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> 粉丝获取(socialAcquisitionsByWebapp)<br /> </td> 
-   <td> 哪些Web应用程序支持潜在客户获取？ 取决于社交营销加载项。<br /> </td> 
+   <td> 粉絲贏取(socialAcquisitionsByWebapp)<br /> </td> 
+   <td> 哪些Web應用程式啟用了潛在客戶贏取？ 取決於社交行銷附加元件。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 订阅细分(mobileAppDistribution)<br /> </td> 
-   <td> 每个移动设备应用程序的活动订阅的划分取决于移动设备应用程序渠道加载项。<br /> </td> 
+   <td> 訂閱劃分(mobileAppDistribution)<br /> </td> 
+   <td> 每個行動應用程式的作用中訂閱劃分，取決於行動應用程式頻道附加元件。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 订阅跟踪(subscriptionsProgress)<br /> </td> 
-   <td> 信息服务订阅的演变<br /> </td> 
+   <td> 訂閱追蹤(subscriptionsProgress)<br /> </td> 
+   <td> 資訊服務訂閱的演化<br /> </td> 
   </tr> 
   <tr> 
-   <td> 反应性比率(socialReactionRate)<br /> </td> 
-   <td> 最新投放的反应率是多少？ 取决于社交营销加载项。<br /> </td> 
+   <td> 反應率(socialReactionRate)<br /> </td> 
+   <td> 最新傳送的反應率是多少？ 取決於社交行銷附加元件。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 反应性比率(mobileAppRictiveRate)<br /> </td> 
-   <td> 最新投放的反应率取决于移动设备应用程序渠道加载项。<br /> </td> 
+   <td> 反應率(mobileAppReactivityRate)<br /> </td> 
+   <td> 最新傳送的反應率取決於行動應用程式頻道附加元件。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 预算报表 {#budget-reports}
+## 預算報表 {#budget-reports}
 
-Adobe Campaign提供的内置报告可在下表中找到。
+下表提供Adobe Campaign提供的內建報表。
 
 <table> 
  <tbody> 
   <tr> 
-   <td> <strong>标签和内部名称</strong><br /> </td> 
+   <td> <strong>標籤和內部名稱</strong><br /> </td> 
    <td> <strong>说明</strong><br /> </td> 
    <td> <strong>架构</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> 与方案有关的费用(budgetProgramCost)<br /> </td> 
-   <td> 方案费用细目。<br /> </td> 
-   <td> nms:program<br /> </td> 
+   <td> 連結至方案的成本(budgetProgramCost)<br /> </td> 
+   <td> 方案成本明細。<br /> </td> 
+   <td> nms：program<br /> </td> 
   </tr> 
   <tr> 
-   <td> 预算演变(budgetEvolution)<br /> </td> 
-   <td> 按承诺水平开列的预算费用演变。<br /> </td> 
-   <td> nms:budget<br /> </td> 
+   <td> 預算演變(budgetEvolution)<br /> </td> 
+   <td> 預算成本的演變（依承諾水準）。<br /> </td> 
+   <td> nms：budget<br /> </td> 
   </tr> 
   <tr> 
-   <td> 预算的累积演变(budgetCumulativeEvolution)<br /> </td> 
-   <td> 按预算分摊的累计预算费用的演变<br /> 部门级别。 </td> 
-   <td> nms:budget<br /> </td> 
+   <td> 預算的累積演變(budgetCumulativeEvolution)<br /> </td> 
+   <td> 依承諾劃分的累計預算成本的演變<br /> 時間層級。 </td> 
+   <td> nms：budget<br /> </td> 
   </tr> 
   <tr> 
-   <td> 浏览成本行(budgetExplorerBudget)<br /> </td> 
-   <td> 成本行的描述性分析。<br /> </td> 
-   <td> nms:budget<br /> </td> 
+   <td> 探索成本行(budgetExplorerBudget)<br /> </td> 
+   <td> 成本明細行的描述性分析。<br /> </td> 
+   <td> nms：budget<br /> </td> 
   </tr> 
   <tr> 
-   <td> 浏览成本行(budgetExplorer)<br /> </td> 
-   <td> 成本行的描述性分析。<br /> </td> 
-   <td> nms:costLine<br /> </td> 
+   <td> 探索成本行(budgetExplorer)<br /> </td> 
+   <td> 成本明細行的描述性分析。<br /> </td> 
+   <td> nms：costLine<br /> </td> 
   </tr> 
   <tr> 
-   <td> 浏览成本行(budgetExplorerPlan)<br /> </td> 
-   <td> 成本行的描述性分析。<br /> </td> 
-   <td> nms:plan<br /> </td> 
+   <td> 探索成本行(budgetExplorerPlan)<br /> </td> 
+   <td> 成本明細行的描述性分析。<br /> </td> 
+   <td> nms：plan<br /> </td> 
   </tr> 
   <tr> 
-   <td> 浏览成本行(budgetExplorerProgram)<br /> </td> 
-   <td> 成本行的描述性分析。<br /> </td> 
-   <td> nms:program<br /> </td> 
+   <td> 探索成本行(budgetExplorerProgram)<br /> </td> 
+   <td> 成本明細行的描述性分析。<br /> </td> 
+   <td> nms：program<br /> </td> 
   </tr> 
   <tr> 
-   <td> 预算（预算）汇总表<br /> </td> 
-   <td> 主要成本、费用类别和预算的快照。<br /> </td> 
-   <td> nms:budget<br /> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-## 模拟报告 {#reports-on-simulations}
-
-模拟报表涉及 **nms：模拟** 表。
-
-<table> 
- <tbody> 
-  <tr> 
-   <td> <strong>标签和内部名称</strong><br /> </td> 
-   <td> <strong>说明</strong><br /> </td> 
-  </tr> 
-  <tr> 
-   <td> 模拟排除的详细信息(dlvSimuLossDetail)<br /> </td> 
-   <td> 排除所有原因的详细表。<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> 按排名划分选件(offerSimulationRanking)<br /> </td> 
-   <td> 模拟中按排名划分选件。<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> 模拟摘要(dlvSimuLossSummary)<br /> </td> 
-   <td> 模拟卷和排除项的摘要。<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> 重叠统计(dlvSimuOverlapping)<br /> </td> 
-   <td> 交付目标卷重叠。<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> 因模拟(dlvSimuLossSimu)导致的排除概要<br /> </td> 
-   <td> 模拟导致的排除项表。<br /> </td> 
+   <td> 預算摘要（預算）<br /> </td> 
+   <td> 主要成本、費用類別和預算的快照。<br /> </td> 
+   <td> nms：budget<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Web应用程序报告 {#reports-on-web-applications}
+## 模擬報表 {#reports-on-simulations}
 
-Web应用程序报表涉及 **nms:WebApp** 表。
+模擬報表涉及 **nms：simulation** 表格。
 
 <table> 
  <tbody> 
   <tr> 
-   <td> <strong>标签和内部名称</strong><br /> </td> 
+   <td> <strong>標籤和內部名稱</strong><br /> </td> 
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> 文档(surveyDictionary)<br /> </td> 
-   <td> 调查结构的描述取决于调查管理器加载项。<br /> </td> 
+   <td> 模擬排除的詳細資訊(dlvSimuLossDetail)<br /> </td> 
+   <td> 排除所有原因的詳細表格。<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> 依排名劃分的優惠方案(offerSimulationRanking)<br /> </td> 
+   <td> 依排名劃分模擬中的優惠方案。<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> 模擬摘要(dlvSimuLossSummary)<br /> </td> 
+   <td> 模擬體積和排除專案的摘要。<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> 重疊統計資料(dlvSimuOverlaying)<br /> </td> 
+   <td> 傳遞目標重疊量。<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> 模擬排除的摘要(dlvSimuLossSimu)<br /> </td> 
+   <td> 因模擬而排除的表格。<br /> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+## 網頁應用程式報表 {#reports-on-web-applications}
+
+有關Web應用程式的報告涉及 **nms：WebApp** 表格。
+
+<table> 
+ <tbody> 
+  <tr> 
+   <td> <strong>標籤和內部名稱</strong><br /> </td> 
+   <td> <strong>说明</strong><br /> </td> 
+  </tr> 
+  <tr> 
+   <td> 檔案（調查字典）<br /> </td> 
+   <td> 調查結構的說明，取決於「調查管理員」附加元件。<br /> </td> 
   </tr> 
   <tr> 
    <td> 主要(surveyProperties)<br /> </td> 
-   <td> 调查属性<br /> </td> 
+   <td> 調查屬性<br /> </td> 
   </tr> 
   <tr> 
-   <td> 响应的划分(surveyDistribution)<br /> </td> 
-   <td> 对问题的回答的划分。<br /> </td> 
+   <td> 回覆的劃分(surveyDistribution)<br /> </td> 
+   <td> 問題回覆的劃分。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 其他ootb报告 {#other-ootb-reports}
+## 其他ootb報告 {#other-ootb-reports}
 
-还提供了以下内置报告。 有关更多信息，请参阅相关功能文档。
+下列報告為內建報告。 如需詳細資訊，請參閱相關功能檔案。
 
 <table> 
  <tbody> 
   <tr> 
-   <td> <strong>标签和内部名称</strong><br /> </td> 
+   <td> <strong>標籤和內部名稱</strong><br /> </td> 
    <td> <strong>说明</strong><br /> </td> 
    <td> <strong>架构</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> 选件分析(offerAnalysis)<br /> </td> 
-   <td> 按日期和渠道进行选件分析，具体取决于交互加载项。<br /> </td> 
-   <td> nms:offer<br /> </td> 
+   <td> 優惠方案分析(offerAnalysis)<br /> </td> 
+   <td> 依日期和管道的優惠方案分析，取決於互動附加元件。<br /> </td> 
+   <td> nms：offer<br /> </td> 
   </tr> 
   <tr> 
-   <td> 再营销效率（再营销效果）<br /> </td> 
-   <td> 再营销效率的衡量<br /> </td> 
-   <td> nms:webEvent<br /> </td> 
+   <td> 再行銷效率(remarketingEffect)<br /> </td> 
+   <td> 再行銷效率的測量<br /> </td> 
+   <td> nms：webEvent<br /> </td> 
   </tr> 
   <tr> 
-   <td> 社交潜在客户获取历史记录(socialVisitorStatistics)<br /> </td> 
-   <td> twitter和Facebook潜在客户获取的历史取决于社交营销附加组件。<br /> </td> 
-   <td> nms:visitor<br /> </td> 
+   <td> Social潛在客戶贏取記錄(socialVisitorStatistics)<br /> </td> 
+   <td> twitter和Facebook潛在客戶收購的歷史記錄，取決於社交行銷附加元件。<br /> </td> 
+   <td> nms：visitor<br /> </td> 
   </tr> 
   <tr> 
-   <td> 最近的建议跟踪(recentPropositions)<br /> </td> 
-   <td> 实时建议跟踪<br /> </td> 
-   <td> nms:campationRcp<br /> </td> 
+   <td> 最近的主張追蹤(recentPropositions)<br /> </td> 
+   <td> 即時主張追蹤<br /> </td> 
+   <td> nms：propositionRcp<br /> </td> 
   </tr> 
  </tbody> 
 </table>

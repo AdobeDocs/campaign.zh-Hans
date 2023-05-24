@@ -1,6 +1,6 @@
 ---
-title: Campaign中的隔离管理
-description: 了解Adobe Campaign中的隔离管理
+title: Campaign中的隔離管理
+description: 瞭解Adobe Campaign中的隔離管理
 feature: Profiles, Monitoring
 role: User, Developer
 level: Beginner, Intermediate
@@ -14,114 +14,114 @@ ht-degree: 4%
 
 # 隔离 {#quarantine-management}
 
-Adobe Campaign管理了在线渠道（电子邮件、短信、推送通知）的隔离地址列表。 如果无效地址率过高，某些互联网访问提供商会自动将电子邮件视为垃圾邮件。 因此，隔离可让您避免被这些提阻止列表供商添加到。 此外，隔离还可避免向错误的电话号码投放短信，有助于降低短信发送成本。
+Adobe Campaign會管理線上頻道（電子郵件、簡訊、推播通知）的隔離地址清單。 如果無效地址的比率過高，某些網際網路存取提供者會自動將電子郵件視為垃圾郵件。 因此，隔離可讓您避免被這些提供者新增至封鎖清單。 此外，隔离还可避免向错误的电话号码投放短信，有助于降低短信发送成本。
 
-隔离收件人的地址或电话号码后，投放分析期间会将收件人从目标中排除：您将无法向这些联系人发送营销消息（包括自动工作流电子邮件）。 如果这些隔离的地址也存在于列表中，则在发送到这些列表时，会将其排除。 例如，当邮箱已满、地址不存在或电子邮件服务器不可用时，可以隔离某个电子邮件地址。
+隔離收件者的地址或電話號碼時，會在傳遞分析期間將收件者從目標中排除：您將無法傳送行銷訊息（包括自動化工作流程電子郵件）給這些連絡人。 如果這些隔離地址也出現在清單中，則在傳送給這些清單時將排除它們。 舉例來說，信箱已滿、地址不存在或電子郵件伺服器無法使用時，可以隔離電子郵件地址。
 
 <!--For more on best practices to secure and optimize your deliveries, refer to [this page](delivery-best-practices.md).-->
 
-**隔离** 仅应用于 **地址**, a **电话号码**&#x200B;或 **设备令牌**，但对用户档案本身不是。 例如，其电子邮件地址已被隔离的用户档案可以更新其用户档案并输入新地址，然后可以再次通过投放操作定向该用户档案。 同样，如果两个用户档案的电话号码恰巧相同，那么隔离该号码后，这两个用户档案都将受到影响。 隔离的地址或电话号码显示在 [排除日志](#delivery-quarantines) （用于投放）或 [隔离列表](#non-deliverable-bounces) （适用于整个平台）。
+**隔離** 僅適用於 **地址**， a **電話號碼**，或 **裝置代號**，但不適用於設定檔本身。 例如，其電子郵件地址被隔離的設定檔可以更新其設定檔並輸入新地址，然後再次被傳送動作設為目標。 同樣地，如果兩個設定檔碰巧擁有相同的電話號碼，則兩個設定檔在隔離號碼時都會受到影響。 隔離地址或電話號碼會顯示在 [排除記錄](#delivery-quarantines) （針對傳遞）或 [隔離清單](#non-deliverable-bounces) （適用於整個平台）。
 
-另一方面，用户档案可以位于 **阻止列表** 与退订（选择退出）后的给定渠道一样：这意味着它们不再为任何目标。 因此，如果电子邮件渠道上的用阻止列表户档案具有两个电子邮件地址，则这两个地址都将被排除在投放之外。 您可以检查用户档案是否位阻止列表于上，查看 **[!UICONTROL No longer contact]** 部分 **[!UICONTROL General]** 选项卡。 [了解详情](../audiences/view-profiles.md)
+另一方面，設定檔可以位於 **封鎖清單** 和取消訂閱（選擇退出）後一樣，對於指定頻道：這表示他們不再被任何頻道設為目標。 因此，如果電子郵件通道封鎖清單上的設定檔有兩個電子郵件地址，則這兩個地址都會從傳送中排除。 您可以檢查設定檔是否位於封鎖清單中，以取得一或多個管道 **[!UICONTROL No longer contact]** 設定檔的截面 **[!UICONTROL General]** 標籤。 [了解详情](../audiences/view-profiles.md)
 
 >[!NOTE]
 >
->当收件人将您的消息报告为垃圾邮件或通过“STOP”之类的关键字回复短信消息时，其地址或电话号码将被隔离为 **[!UICONTROL Denylisted]**. 他们的用户档案会相应地更新。
+>當收件者將您的訊息回報為垃圾訊息，或使用「STOP」等關鍵字回覆簡訊訊息時，其地址或電話號碼將被隔離為 **[!UICONTROL Denylisted]**. 其設定檔會據此更新。
 
 <!--For the email channel, email addresses are quarantined. For the mobile app channel, device tokens are quarantined. For the SMS channel, phone numbers are quarantined.?-->
 
-## 为什么要将电子邮件、电话或设备添加到隔离 {#quarantine-reason}
+## 電子郵件、電話或裝置為何要傳送至隔離區 {#quarantine-reason}
 
-Adobe Campaign根据投放失败类型及其原因管理隔离。 在错误消息鉴别期间会分配这些值。 了解有关投放失败管理的更多信息 [本页](delivery-failures.md).
+Adobe Campaign會根據傳送失敗的型別及其原因來管理隔離。 這些會在錯誤訊息限定期間指派。 進一步瞭解傳遞失敗管理 [在此頁面上](delivery-failures.md).
 
-可以捕获两种类型或错误：
+可擷取兩種型別或錯誤：
 
-* **硬错误**:电子邮件地址、电话号码或设备会立即添加到隔离。
-* **软错误**:软错误会增加错误计数，并可能会隔离电子邮件、电话号码或设备令牌。 Campaign执行 [重试](delivery-failures.md#retries):当错误计数达到限制阈值时，将隔离地址、电话号码或设备令牌。 [了解详情](delivery-failures.md#retries)。
+* **硬錯誤**：會立即將電子郵件地址、電話號碼或裝置傳送至隔離區。
+* **軟錯誤**：軟錯誤會增加錯誤計數器，並可能隔離電子郵件、電話號碼或裝置Token。 行銷活動績效 [重試](delivery-failures.md#retries)：當錯誤計數器達到限制臨界值時，則會隔離地址、電話號碼或裝置Token。 [了解详情](delivery-failures.md#retries)。
 
-隔离地址列表中， **[!UICONTROL Error reason]** 字段指示将选定地址置于隔离中的原因。 [了解详情](#identifying-quarantined-addresses-for-the-entire-platform)。
+隔離地址清單中的 **[!UICONTROL Error reason]** 欄位指出將所選地址置於隔離區的原因。 [了解详情](#identifying-quarantined-addresses-for-the-entire-platform)。
 
 
-如果用户将电子邮件标记为垃圾邮件，则该邮件会自动重定向到由Adobe管理的技术邮箱。 随后，该用户的电子邮件地址会自动添加到隔离，并附加 **[!UICONTROL Denylisted]** 状态。此状态仅指地址，用户档案不在阻止列表上，因此用户可继续接收短信消息和推送通知。 详细了解 [投放最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops){target="_blank"}.
+如果使用者將電子郵件歸類為垃圾訊息，該訊息會自動重新導向至由Adobe管理的技術信箱。 随后，该用户的电子邮件地址会自动添加到隔离，并附加 **[!UICONTROL Denylisted]** 状态。此狀態僅適用於地址，而且設定檔不在封鎖清單上，因此使用者會繼續收到SMS訊息和推播通知。 進一步瞭解 [傳遞最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops){target="_blank"}.
 
 >[!NOTE]
 >
 >Adobe Campaign 中的隔离会区分大小写字母。请确保以小写方式导入电子邮件地址，这样以后就不会重新定向这些地址。
 
-## 访问隔离的地址 {#access-quarantined-addresses}
+## 存取隔離的地址 {#access-quarantined-addresses}
 
-可以为特定投放或整个平台显示隔离的地址。
+可以為特定傳送或整個平台顯示隔離的地址。
 
-### 投放的隔离{#delivery-quarantines}
+### 傳送的隔離{#delivery-quarantines}
 
-在投放准备阶段期间，投放仪表板的投放日志中会列出隔离地址。
+在傳送準備階段期間，隔離地址會列在傳送儀表板的傳送記錄中。
 
-对于每个投放，您还可以检查 **[!UICONTROL Delivery summary]** 报表：它显示投放目标中隔离的地址数，并显示：
+對於每次傳遞，您也可以檢查 **[!UICONTROL Delivery summary]** 報告：顯示傳送目標中隔離的地址數量，並顯示：
 
-* 在投放分析期间隔离的地址数，
-* 在投放操作后置于隔离中的地址数。
+* 傳遞分析期間被置於隔離的地址數量；
+* 進行傳遞動作後置於隔離區的地址數。
 
-### 不可交付和退回地址{#non-deliverable-bounces}
+### 無法傳遞和退回地址{#non-deliverable-bounces}
 
-查看隔离地址列表 **整个平台**, Campaign管理员可以浏览  **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**. 此部分列出了 **电子邮件**, **短信** 和 **推送通知** 渠道。
+若要檢視隔離地址清單 **適用於整個平台**，Campaign管理員可瀏覽至  **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**. 本節列出以下專案的隔離元素： **電子郵件**， **簡訊** 和 **推播通知** 管道。
 
 ![](assets/tech-quarantine.png)
 
 >[!NOTE]
 >
->隔离数量会随着时间的推移而增加。 例如，如果将电子邮件地址的生命周期视为三年，而收件人表每年增加50%，则隔离的增加可以按如下方式计算：
+>隔離區數量會隨時間增加。 例如，如果電子郵件地址的存留期被視為三年，而收件者表格每年增加50%，則隔離的增加可計算如下：
 >
->年末1:(1)&#42;0.33)/(1+0.5)=22%。
+>第1年年末： (1&#42;0.33)/(1+0.5)=22%。
 >
->年末2年：(1.22)&#42;0.33)+0.33)/(1.5+0.75)=32.5%。
+>年度結束2：((1.22)&#42;0.33)+0.33)/(1.5+0.75)=32.5%。
 
-此外， **[!UICONTROL Non-deliverables and bounces]** 内置报告，可从 **报表** 部分，按域显示有关隔离中地址、遇到的错误类型和失败划分的信息。 您可以过滤特定投放的数据，或根据需要自定义此报表。
+此外， **[!UICONTROL Non-deliverables and bounces]** 內建報告，可從 **報表** 部分，顯示隔離地址、遇到的錯誤型別以及依網域劃分的失敗的相關資訊。 您可以篩選特定傳送的資料，或視需要自訂此報表。
 
-了解有关 [投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html){target="_blank"}.
+進一步瞭解 [傳遞性最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html){target="_blank"}.
 
-### 隔离的电子邮件地址 {#quarantined-recipient}
+### 隔離的電子郵件地址 {#quarantined-recipient}
 
-您可以查找任何收件人的电子邮件地址状态。
+您可以查詢任何收件者之電子郵件地址的狀態。
 
-要执行此操作，请选择收件人用户档案，然后单击 **[!UICONTROL Deliveries]** 选项卡。 对于发送给该收件人的所有投放，您可以了解地址是否失败、在分析期间是否被隔离等。
+若要這麼做，請選取收件者設定檔，然後按一下 **[!UICONTROL Deliveries]** 標籤。 對於傳送給該收件者的所有郵件，您可以檢視地址是否失敗、在分析期間是否被隔離等。
 
-对于每个文件夹，您只能显示电子邮件地址处于隔离状态的收件人，并且 **[!UICONTROL Quarantined email address]** 内置过滤器，如下所示：
+對於每個資料夾，您只能顯示其電子郵件地址處於隔離狀態的收件者，並使用 **[!UICONTROL Quarantined email address]** 內建篩選器，如下所示：
 
 ![](assets/quarantine-filter.png)
 
 
-## 删除隔离地址 {#remove-a-quarantined-address}
+## 移除隔離的地址 {#remove-a-quarantined-address}
 
-符合特定条件的地址将由 **数据库清理** 内置工作流。
+符合特定條件的地址會由自動從隔離清單中刪除 **資料庫清理** 內建工作流程。
 
-在以下情况下，地址会自动从隔离列表中删除：
+在下列情況下，地址會自動從隔離清單中移除：
 
-* 中的地址 **[!UICONTROL With errors]** 成功投放后，状态将从隔离列表中删除。
-* 中的地址 **[!UICONTROL With errors]** 如果上次软退件发生在10天以前，则会从隔离列表中删除状态。 有关软错误管理的更多信息，请参阅 [此部分](#soft-error-management).
-* 中的地址 **[!UICONTROL With errors]** 状态 **[!UICONTROL Mailbox full]** 30天后将从隔离列表中删除错误。
+* 中的地址 **[!UICONTROL With errors]** 成功傳送後，狀態會從隔離清單中移除。
+* 中的地址 **[!UICONTROL With errors]** 如果最後一次軟退信發生在10天以前，則會從隔離清單中移除狀態。 如需軟性錯誤管理的詳細資訊，請參閱 [本節](#soft-error-management).
+* 中的地址 **[!UICONTROL With errors]** 已跳出的狀態 **[!UICONTROL Mailbox full]** 錯誤將在30天後從隔離清單中移除。
 
-其状态随后更改为 **[!UICONTROL Valid]**.
+其狀態會變更為 **[!UICONTROL Valid]**.
 
 >[!CAUTION]
 >
->地址在 **[!UICONTROL Quarantine]** 或 **[!UICONTROL Denylisted]** 即使收到电子邮件，状态也永远不会被删除。
+>地址在中的收件者 **[!UICONTROL Quarantine]** 或 **[!UICONTROL Denylisted]** 即使他們收到電子郵件，狀態也不會被移除。
 
-您还可以从隔离列表中手动删除地址。 要从隔离中删除地址，您可以：
+您也可以手動從隔離清單中移除地址。 若要從隔離區中移除地址，您可以：
 
-* 将其状态更改为 **[!UICONTROL Valid]** 从 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** 节点。
+* 將其狀態變更為 **[!UICONTROL Valid]** 從 **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** 節點。
 
    ![](assets/tech-quarantine-status.png)
 
-您可能需要对隔离列表执行批量更新，例如，在ISP中断期间，电子邮件被错误地标记为退回，因为无法将其成功发送给收件人。
+您可能需要對隔離清單執行大量更新，例如在ISP中斷的情況下，電子郵件會錯誤地標籤為跳出，因為它們無法成功傳遞給收件者。
 
-要执行此操作，请创建一个工作流并在隔离表格中添加查询，以过滤掉所有受影响的收件人，以便从隔离列表中删除这些收件人，并将其包含在将来的Campaign电子邮件投放中。
+要執行此操作，請建立工作流程，並在隔離表格上新增查詢，以篩選出所有受影響的收件者，以便將其從隔離清單中移除，並納入未來的Campaign電子郵件傳送。
 
-以下是此查询的建议准则：
+以下是此查詢的建議准則：
 
-* **错误文本（隔离文本）** 包含&quot;Momen_Code10_InvalidRecipient&quot;
-* **电子邮件域(@domain)** 等于domain1.com或 **电子邮件域(@domain)** 等于domain2.com或 **电子邮件域(@domain)** 等于domain3.com
-* **更新状态(@lastModified)** YYYY/MM/DD HH或之后:MM:SS AM
-* **更新状态(@lastModified)** YYYY/MM/DD HH上或之前:MM:SS PM
+* **錯誤文字（隔離文字）** 包含「Momen_Code10_InvalidRecipient」
+* **電子郵件網域(@domain)** 等於domain1.com或 **電子郵件網域(@domain)** 等於domain2.com或 **電子郵件網域(@domain)** 等於domain3.com
+* **更新狀態(@lastModified)** YYYY/MM/DD HH當天或之後:MM:SS AM
+* **更新狀態(@lastModified)** YYYY/MM/DD HH當天或之前:MM:SS PM
 
-获得受影响的收件人列表后，添加 **[!UICONTROL Update data]** 活动，将其状态设置为 **[!UICONTROL Valid]** 这样它们就会被 **[!UICONTROL Database cleanup]** 工作流。 您也只需从隔离表格中删除它们即可。
+取得受影響的收件者清單後，請新增 **[!UICONTROL Update data]** 活動以將其狀態設為 **[!UICONTROL Valid]** 因此，會將他們從隔離清單中移除， **[!UICONTROL Database cleanup]** 工作流程，. 您也可以從隔離表中刪除它們。
 

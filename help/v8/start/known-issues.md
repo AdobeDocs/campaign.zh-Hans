@@ -1,6 +1,6 @@
 ---
-title: Campaign v8已知问题
-description: 最新Campaign版本中的已知问题
+title: Campaign v8已知問題
+description: 最新Campaign版本中的已知問題
 feature: Overview
 role: Data Engineer
 level: Beginner
@@ -16,31 +16,31 @@ ht-degree: 4%
 
 # 已知问题{#known-issues}
 
-本页列出了 **最新Campaign v8版本**. 此外，还列出了Campaign v8附带的限制 [本页](ac-guardrails.md).
+本頁列出 **最新Campaign v8版本**. 此外，也列出Campaign v8的限制 [在此頁面中](ac-guardrails.md).
 
 
 >[!NOTE]
 >
->Adobe自行发布此已知问题列表。 它基于客户报表的数量、严重性和解决方法的可用性。 如果遇到的问题未列出，则可能不符合此页面中发布的条件。
+>Adobe會自行發佈此已知問題清單。 這會根據客戶報告的數量、嚴重性和變通方案可用性。 如果您遇到的問題未列出，它可能不符合在此頁面中發佈的條件。
 
 ## Campaign v8.3.8{#8.3-issues}
 
-### 更改数据源活动问题 {#issue-2}
+### 變更資料來源活動問題 {#issue-2}
 
 #### 说明{#issue-2-desc}
 
-使用Campaign将数据注入Snowflake云数据库时 **查询** 和 **更改数据源** 活动时，当数据中存在反斜线字符时，该过程会失败。 源字符串不会进行转义，数据在Snowflake时无法正确处理。
+使用Campaign將資料插入Snowflake雲端資料庫時 **查詢** 和 **變更資料來源** 活動，則當資料中出現反斜線字元時，流程會失敗。 來源字串未逸出，且資料在Snowflake時未正確處理。
 
-仅当反斜线字符位于字符串末尾时，才会出现此问题，例如： `Barker\`.
+只有在字串結尾有反斜線字元時，才會發生此問題，例如： `Barker\`.
 
 
-#### 复制步骤{#issue-2-repro}
+#### 重製步驟{#issue-2-repro}
 
-1. 连接到客户端控制台并创建工作流。
-1. 添加 **查询** 活动并对其进行配置。
-1. 选择具有上述特征的数据。
-1. 添加 **更改数据源** 活动，并对其进行配置以选择Snowflake云数据库。
-1. 运行工作流并检查工作流日志以查看错误。
+1. 連線至使用者端主控台並建立工作流程。
+1. 新增 **查詢** 活動並進行設定。
+1. 選取具有上述特性的資料。
+1. 新增 **變更資料來源** 活動，並將其設定為選取Snowflake雲端資料庫。
+1. 執行工作流程並檢查工作流程記錄檔以檢視錯誤。
 
 
 #### 错误消息{#issue-2-error}
@@ -53,44 +53,44 @@ Error:
 
 #### 解决方法{#issue-2-workaround}
 
-解决方法是排除字符串末尾包含反斜线字符的数据，或将其从源文件中删除。
+因應措施是排除字串結尾含有反斜線字元的資料，或從來源檔案中移除該資料。
 
 
-#### 内部引用{#issue-2-ref}
+#### 內部參考{#issue-2-ref}
 
-引用：NEO-45549
+參考資料： NEO-45549
 
 
-### 数据加载（文件）活动无法在服务器上上传文件 {#issue-3}
+### 資料載入（檔案）活動無法在伺服器上傳檔案 {#issue-3}
 
 #### 说明{#issue-3-desc}
 
-在Campaign服务器上上传文件时，使用 **数据加载（文件）** 活动时，该进程将在100%停止，但永远不会结束。
+使用在Campaign伺服器上傳檔案時 **資料載入（檔案）** 活動，則流程會在100%處停止，但永遠不會結束。
 
-#### 复制步骤{#issue-3-repro}
+#### 重製步驟{#issue-3-repro}
 
-1. 连接到客户端控制台并创建工作流。
-1. 添加 **数据加载（文件）** 活动并对其进行配置。
-1. 选择 **在服务器上传** 选项。
-1. 在本地计算机上选择文件，
-1. 单击 **上传**
+1. 連線至使用者端主控台並建立工作流程。
+1. 新增 **資料載入（檔案）** 活動並進行設定。
+1. 選取 **上傳至伺服器** 選項。
+1. 選取本機電腦上的檔案，
+1. 按一下 **上傳**
 
 
 #### 错误消息{#issue-3-error}
 
-这个过程永远不会结束。
+此程式永遠不會結束。
 
 #### 解决方法{#issue-3-workaround}
 
-解决方法是使用较旧的客户端控制台。 然后，您将能够在服务器上上传文件。
+因應措施是使用舊版使用者端主控台。 然後，您就可以將檔案上傳至伺服器。
 
-作为Campaign管理员，您可以在 [AdobeSoftware Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Rovast&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=4){target="_blank"}.
+身為Campaign管理員，您可以下載Campaign v8.3.1使用者端主控台，位置如下： [Adobe軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=4){target="_blank"}.
 
-了解如何访问AdobeSoftware Distribution [本页](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans){target="_blank"}.
+瞭解如何存取Adobe軟體發佈 [在此頁面中](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans){target="_blank"}.
 
-了解如何升级客户端控制台 [本页](connect.md)
+瞭解如何升級使用者端主控台 [在此頁面中](connect.md)
 
-#### 内部引用{#issue-3-ref}
+#### 內部參考{#issue-3-ref}
 
-引用：NEO-47269
+參考資料： NEO-47269
 

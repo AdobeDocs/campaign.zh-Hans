@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 使用分组管理进行查询
-description: 了解如何使用分组管理执行查询
+description: 瞭解如何使用分組管理執行查詢
 feature: Query Editor
 exl-id: 6fc4ef67-5d75-4c8c-8bcc-41e3ed155ca2
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
@@ -15,50 +15,50 @@ ht-degree: 4%
 
 
 
-在本例中，我们要运行查询以查找在先前投放期间定向超过30次的所有电子邮件域。
+在此範例中，我們要執行查詢以尋找在先前傳送期間定位超過30次的所有電子郵件網域。
 
-* 需要选择哪个表？
+* 需要選取哪個表格？
 
-   收件人表(nms:recipient)
+   收件者表格(nms：recipient)
 
-* 要在输出列中选择的字段？
+* 要在輸出欄中選取的欄位？
 
-   电子邮件域和主键（包含计数）
+   電子郵件網域和主要金鑰（含計數）
 
-* 数据分组？
+* 資料分組？
 
-   基于主键数超过30的电子邮件域。 此操作通过 **[!UICONTROL Group by + Having]** 选项。 **[!UICONTROL Group by + Having]** 允许您对数据（“分组依据”）进行分组，并选择分组的内容（“有”）。
+   根據主要金鑰計數超過30的電子郵件網域。 此作業是透過 **[!UICONTROL Group by + Having]** 選項。 **[!UICONTROL Group by + Having]** 可讓您分組資料（「分組依據」），並選取要分組的專案（「擁有」）。
 
-要创建此示例，请应用以下步骤：
+若要建立此範例，請套用下列步驟：
 
-1. 打开 **[!UICONTROL Generic query editor]** 并选择收件人表(**nms:recipient**)。
+1. 開啟 **[!UICONTROL Generic query editor]** 並選擇收件者表格(**nms：recipient**)。
 
    ![](assets/query_editor_02.png)
 
-1. 在 **[!UICONTROL Data to extract]** 窗口，选择 **[!UICONTROL Email domain]** 和 **[!UICONTROL Primary key]** 字段。 运行计数 **[!UICONTROL Primary key]** 字段。
+1. 在 **[!UICONTROL Data to extract]** 視窗，選取 **[!UICONTROL Email domain]** 和 **[!UICONTROL Primary key]** 欄位。 對以下專案執行計數： **[!UICONTROL Primary key]** 欄位。
 
-1. 检查 **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** 框中。
+1. 檢查 **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** 方塊。
 
    ![](assets/query_editor_nveau_29.png)
 
-1. 在 **[!UICONTROL Sorting]** 窗口中，按降序对电子邮件域进行排序。 要执行此操作，请检查 **[!UICONTROL Yes]** 在 **[!UICONTROL Descending sort]** 列。 单击 **[!UICONTROL Next]**。
+1. 在 **[!UICONTROL Sorting]** 視窗，以遞減順序排序電子郵件網域。 若要這麼做，請核取 **[!UICONTROL Yes]** 在 **[!UICONTROL Descending sort]** 欄。 单击 **[!UICONTROL Next]**。
 
    ![](assets/query_editor_nveau_70.png)
 
-1. 在 **[!UICONTROL Data filtering]** 中，选择 **[!UICONTROL Filtering conditions]**。转到 **[!UICONTROL Target elements]** 窗口，单击 **[!UICONTROL Next]**.
-1. 在 **[!UICONTROL Data grouping]** 窗口，选择 **[!UICONTROL Email domain]** 单击 **[!UICONTROL Add]**.
+1. 在 **[!UICONTROL Data filtering]** 中，选择 **[!UICONTROL Filtering conditions]**。前往 **[!UICONTROL Target elements]** 視窗並按一下 **[!UICONTROL Next]**.
+1. 在 **[!UICONTROL Data grouping]** 視窗，選取 **[!UICONTROL Email domain]** 按一下 **[!UICONTROL Add]**.
 
-   此数据分组窗口仅在 **[!UICONTROL Handle groupings (GROUP BY + HAVING]**&#x200B;复选框。
+   此資料分組視窗僅在 **[!UICONTROL Handle groupings (GROUP BY + HAVING]**)方塊是否已勾選。
 
    ![](assets/query_editor_blocklist_04.png)
 
-1. 在 **[!UICONTROL Grouping condition]** 窗口，指示主键计数大于30，因为我们只希望返回超过30次的电子邮件域作为结果。
+1. 在 **[!UICONTROL Grouping condition]** 視窗中，表示大於30的主索引鍵計數，因為我們只希望目標電子郵件網域作為結果傳回超過30次。
 
-   当 **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** 复选框：这是过滤分组结果(HAVING)的位置。
+   此視窗出現於 **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** 方塊已核取：這是篩選群組結果(HAVING)的位置。
 
    ![](assets/query_editor_blocklist_05.png)
 
-1. 在 **[!UICONTROL Data formatting]** 窗口，单击 **[!UICONTROL Next]**:此处不需要格式设置。
-1. 在数据预览窗口中，单击 **[!UICONTROL Launch data preview]**:在此，将返回三个定位超过30次的不同电子邮件域。
+1. 在 **[!UICONTROL Data formatting]** 視窗，按一下 **[!UICONTROL Next]**：這裡不需要格式設定。
+1. 在資料預覽視窗中，按一下 **[!UICONTROL Launch data preview]**：在這裡，會傳回30次以上定位的三個不同電子郵件網域。
 
    ![](assets/query_editor_blocklist_06.png)

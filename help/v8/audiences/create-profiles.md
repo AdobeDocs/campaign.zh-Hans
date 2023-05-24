@@ -1,6 +1,6 @@
 ---
-title: 在Campaign中创建用户档案
-description: 了解如何将联系人手动添加到Campaign
+title: 在Campaign建立設定檔
+description: 瞭解如何手動將連絡人新增至Campaign
 feature: Audiences, Profiles
 role: User
 level: Beginner
@@ -14,21 +14,21 @@ ht-degree: 3%
 
 # 手动创建用户档案{#create-profiles-manual}
 
-要填充Campaign数据库，您可以 [导入用户档案](import-profiles.md) 或手动添加，如下所述。
+若要填入Campaign資料庫，您可以 [匯入設定檔](import-profiles.md) 或手動新增，如下所述。
 
-要手动创建收件人，请执行以下步骤：
+若要手動建立收件者，請遵循下列步驟：
 
-1. 浏览到 **[!UICONTROL Profiles and targets]** ，然后选择 **[!UICONTROL Recipients]** 类别。
+1. 瀏覽至 **[!UICONTROL Profiles and targets]** 標籤並選取 **[!UICONTROL Recipients]** 類別。
 
    ![](assets/profiles-and-targets.png)
 
-   默认情况下，收件人存储在 **[!UICONTROL Profiles and Targets > Recipients]** 树的节点。 您也可以从此视图创建收件人。
+   依預設，收件者會儲存在 **[!UICONTROL Profiles and Targets > Recipients]** 樹狀結構的節點。 您也可以從此檢視建立收件者。
 
-1. 单击 **[!UICONTROL Create button]**.
-1. 输入用户档案的数据。
+1. 按一下 **[!UICONTROL Create button]**.
+1. 輸入設定檔的資料。
 
    ![](assets/new-recipient.png)
 
-   进一步了解 [本页](view-profiles.md#edit-a-profiles).
+   進一步瞭解中的收件者內建表單 [此頁面](view-profiles.md#edit-a-profiles).
 
-1. 单击 **[!UICONTROL Save]**:该用户档案将添加到Campaign的默认收件人文件夹中。
+1. 按一下 **[!UICONTROL Save]**：設定檔會新增至Campaign的預設收件者資料夾。

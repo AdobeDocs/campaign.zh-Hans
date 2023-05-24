@@ -1,6 +1,6 @@
 ---
-title: 受众最佳实践
-description: 了解受众的最佳实践
+title: 對象的最佳實務
+description: 瞭解受眾的最佳實務
 feature: Audiences, Profiles
 role: Data Engineer
 level: Beginner
@@ -14,4 +14,4 @@ ht-degree: 0%
 
 ---
 
-# 受众最佳实践
+# 對象的最佳實務

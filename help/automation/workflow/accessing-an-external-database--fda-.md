@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 访问外部数据库(FDA)
-description: 访问外部数据库(FDA)
+title: 存取外部資料庫(FDA)
+description: 存取外部資料庫(FDA)
 feature: Workflows, Data Management, Federated Data Access
 exl-id: ddafca28-1db4-42f2-9bfb-73da1240235c
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
@@ -11,15 +11,15 @@ ht-degree: 35%
 
 ---
 
-# 访问外部数据库(FDA){#accessing-an-external-database-fda}
+# 存取外部資料庫(FDA){#accessing-an-external-database-fda}
 
 Adobe Campaign 提供了联合数据访问 (FDA) 选项，以处理存储在一个或多个外部数据库中的信息：无需改变 Adobe Campaign 数据的结构就可以访问外部数据。
 
-利用多个活动，可与外部数据库中的数据交互：
+多個活動可讓您與外部資料庫的資料互動：
 
 * 查询
 * 拆分
 * 扩充
-* 数据加载
+* 資料載入中
 
-FDA选项的使用取决于您的Adobe Campaign许可证。 详细说明了如何配置此选项以及与使用此选项相关的最佳实践和限制 [在此部分中](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html){target="_blank"}.
+FDA選項的使用取決於您的Adobe Campaign授權。 詳細說明設定此選項以及使用此選項相關的最佳實務和限制 [在本節中](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html){target="_blank"}.

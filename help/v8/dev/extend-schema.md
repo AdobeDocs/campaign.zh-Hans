@@ -1,6 +1,6 @@
 ---
-title: 扩展Campaign模式
-description: 了解如何扩展Campaign模式
+title: 擴充行銷活動綱要
+description: 瞭解如何延伸Campaign綱要
 feature: Schema Extension
 role: Developer
 level: Intermediate, Experienced
@@ -12,41 +12,41 @@ ht-degree: 2%
 
 ---
 
-# 扩展模式{#extend-schemas}
+# 擴充綱要{#extend-schemas}
 
-作为技术用户，您可以自定义Campaign数据模型以满足您的实施需求：向现有架构添加元素、修改架构中的元素或删除元素。
+身為技術使用者，您可以自訂Campaign資料模型以符合實作需求：新增元素至現有結構描述、修改結構描述中的元素或刪除元素。
 
-自定义Campaign数据模型的关键步骤包括：
+自訂Campaign資料模型的重要步驟如下：
 
-1. 创建扩展模式
-1. 更新Campaign数据库
-1. 调整输入表单
+1. 建立擴充功能綱要
+1. 更新Campaign資料庫
+1. 調整輸入表單
 
 >[!CAUTION]
->不得直接修改内置架构。 如果您需要调整内置架构，则必须扩展该架构。
+>不可直接修改內建結構描述。 如果您需要調整內建方案，則必須加以擴充。
 
-![](../assets/do-not-localize/glass.png) 要更好地了解Campaign内置表及其交互情况，请参阅 [本页](datamodel.md). 另请参阅在中创建新架构时的建议 [本页](create-schema.md).
+![](../assets/do-not-localize/glass.png) 如需Campaign內建表格及其互動的詳細資訊，請參閱 [此頁面](datamodel.md). 另請參閱在中建立新結構描述時的建議 [此頁面](create-schema.md).
 
-要扩展架构，请执行以下步骤：
+若要擴充方案，請遵循下列步驟：
 
-1. 导航到 **[!UICONTROL Administration > Configuration > Data schemas]** 文件夹。
-1. 单击 **新建** 按钮，选择 **[!UICONTROL Extend the data in a table using an extension schema]**.
+1. 導覽至 **[!UICONTROL Administration > Configuration > Data schemas]** 檔案夾。
+1. 按一下 **新增** 按鈕並選取 **[!UICONTROL Extend the data in a table using an extension schema]**.
 
    ![](assets/extend-schema-option.png)
 
-1. 确定要扩展的内置架构并将其选中。
+1. 識別要擴充的內建方案並加以選取。
 
    ![](assets/extend-schema-select.png)
 
-   按照惯例，将扩展架构命名为与内置架构相同的架构，并使用自定义命名空间。  请注意，某些命名空间仅是内部命名空间。 [了解详情](schemas.md#reserved-namespaces)
+   依照慣例，將擴充功能綱要命名為與內建綱要相同的名稱，並使用自訂名稱空間。  請注意，某些名稱空間僅供內部使用。 [了解详情](schemas.md#reserved-namespaces)
 
    ![](assets/extend-schema-validate.png)
 
-1. 进入架构编辑器后，使用上下文菜单添加所需的元素，然后进行保存。
+1. 在架構編輯器中，使用內容選單新增所需的元素並儲存。
 
    ![](assets/extend-schema-edit.png)
 
-   在以下示例中，我们将 **会员年** 属性，为姓氏设置长度限制（此限制将覆盖默认的姓氏），并从内置架构中删除出生日期。
+   在以下範例中，我們新增 **MembershipYear** 屬性，輸入姓氏的長度限制（此限制會覆寫預設值），並從內建結構描述中移除出生日期。
 
    ![](assets/extend-schema-sample.png)
 
@@ -62,10 +62,10 @@ ht-degree: 2%
    </srcSchema>
    ```
 
-1. 断开与Campaign的连接并重新连接，以在 **[!UICONTROL Structure]** 选项卡。
+1. 中斷連線並重新連線至Campaign，以檢查 **[!UICONTROL Structure]** 標籤。
 
    ![](assets/extend-schema-structure.png)
 
-1. 更新数据库结构以应用更改。 [了解详情](update-database-structure.md)
+1. 更新資料庫結構以套用變更。 [了解详情](update-database-structure.md)
 
-1. 在数据库中实施更改后，您可以调整收件人输入表单以使更改可见。 [了解详情](forms.md)
+1. 在資料庫中實作變更後，您可以調整收件者輸入表單以顯示變更。 [了解详情](forms.md)

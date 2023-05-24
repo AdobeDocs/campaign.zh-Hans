@@ -1,6 +1,6 @@
 ---
 title: 预览和测试电子邮件
-description: 了解如何在发送之前验证投放
+description: 瞭解如何在傳送前驗證您的傳遞
 feature: Personalization
 role: User
 level: Beginner
@@ -8,100 +8,100 @@ exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
 source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
 # 预览和测试电子邮件 {#preview-test}
 
-定义消息内容后，即可使用测试配置文件对其进行预览和测试。如果插入 [个性化内容](personalize.md)，则可以使用测试用户档案数据检查此内容在消息中的显示方式。 此外，要检测消息内容或个性化设置中可能出现的错误，请向测试用户档案发送校样。 每次进行更改时都应发送验证，以验证最新内容。
+定义消息内容后，即可使用测试配置文件对其进行预览和测试。如果您已插入 [個人化內容](personalize.md)，您可使用測試設定檔資料檢查此內容在訊息中的顯示方式。 此外，若要偵測訊息內容或個人化設定中可能出現的錯誤，請將校樣傳送至測試設定檔。 每次進行變更時都應傳送校樣，以驗證最新內容。
 
-## 内容预览{#preview-content}
+## 內容預覽{#preview-content}
 
-在发送校样之前，最佳做法是在投放窗口的预览部分中检查消息内容。
+在傳送校樣之前，最佳實務是在傳送視窗的預覽區段中檢查訊息內容。
 
-要预览消息内容，请执行以下步骤：
+若要預覽訊息內容，請遵循下列步驟：
 
-1. 浏览到 **预览** 选项卡。
-1. 单击 **[!UICONTROL Test personalization]** 按钮来填充个性化数据。 您可以在数据库中选择特定收件人、种子地址，或从目标群体中选择用户档案（如果已定义）。 您还可以在不进行个性化的情况下检查内容。
+1. 瀏覽至 **預覽** 傳遞的索引標籤。
+1. 按一下 **[!UICONTROL Test personalization]** 按鈕以選取要填入個人化資料的設定檔。 您可以在資料庫中選擇特定的收件者、種子地址，或從目標母體選取設定檔（如果已經定義）。 您也可以檢查內容而不進行個人化。
 
    ![](assets/test-personalization.png)
 
-1. 将生成预览，以便您检查消息渲染。 在消息预览中，个性化元素会被替换为选定的测试用户档案数据。
+1. 會產生預覽，以便您檢查訊息呈現。 在訊息預覽中，個人化元素會由選取的測試設定檔資料取代。
 
    ![](assets/test-personalization-with-a-recipient.png)
 
-1. 选择其他测试用户档案，以预览消息每个变体的电子邮件呈现。
+1. 選取其他測試設定檔，以預覽訊息每個變體的電子郵件呈現。
 
 ##   发送验证 {#send-proofs}
 
-对于电子邮件投放，您可以发送校样以验证消息内容。 通过发送校样，您可以检查选择退订链接、镜像页面和任何其他链接、验证消息、验证图像是否显示、检测可能的错误等。 您可能还希望检查在不同设备上的设计和渲染。
+對於電子郵件傳遞，您可以傳送校樣以驗證訊息內容。 傳送校樣可讓您檢查選擇退出連結、映象頁面和任何其他連結、驗證訊息、驗證影像是否已顯示、偵測可能的錯誤等。 您可能也想要檢查您在不同裝置上的設計和演算。
 
-校样是一种特定的消息，允许您在将消息发送到主受众之前对消息进行测试。 校样收件人负责批准邮件：呈现、内容、个性化设置、配置。
+校樣是一種特定訊息，可讓您在將訊息傳送給主要對象之前先測試訊息。 校樣的收件者負責核准訊息：呈現、內容、個人化設定、設定。
 
-### 校样收件人 {#proofs-recipients}
+### 校樣收件者 {#proofs-recipients}
 
-可以在投放模板中定义校样目标，或者特定于投放。 在这两种情况下，请从 **[!UICONTROL To]** 链接，然后选择 **[!UICONTROL Target of the proofs]** 选项卡。
+校樣目標可以在傳遞範本中定義，或專用於傳遞。 在這兩種情況下，請從瀏覽至目標定義畫面 **[!UICONTROL To]** 連結，然後選取 **[!UICONTROL Target of the proofs]** 標籤。
 
 ![](assets/target-of-proofs.png)
 
-校样目标的类型从 **[!UICONTROL Targeting mode]** 下拉列表。
+校樣目標型別是從 **[!UICONTROL Targeting mode]** 下拉式清單。
 
-* 使用 **[!UICONTROL Definition of a specific proof target]** 选项来选择数据库中的收件人作为校样目标。
-* 使用 **[!UICONTROL Substitution of the address]** 选项，以输入电子邮件地址并使用目标收件人数据来验证内容。 可以手动输入替代地址，也可以从下拉列表中选择替代地址。 关联的枚举是“替换地址”(rcpAddress)。
-默认情况下，替换会随机执行，但您可以通过  **[!UICONTROL Detail]** 图标。
+* 使用 **[!UICONTROL Definition of a specific proof target]** 在資料庫中選取收件者作為校訂目標的選項。
+* 使用 **[!UICONTROL Substitution of the address]** 用於輸入電子郵件地址並使用目標收件者資料來驗證內容的選項。 您可以手動輸入替代地址，或從下拉式清單中選取替代地址。 關聯的列舉是替代地址(rcpAddress)。
+預設會隨機執行替代，但您可以透過  **[!UICONTROL Detail]** 圖示。
 
    ![](assets/target-of-proofs-substitution-details.png){width="800" align="left"}
 
-   选择 **[!UICONTROL Select a profile (must be included in the target)]** 选项，然后选择收件人。
+   選擇 **[!UICONTROL Select a profile (must be included in the target)]** 選項並選取收件者。
 
    ![](assets/target-of-proofs-substitution.png){width="800" align="left"}
 
 
-* 使用 **[!UICONTROL Seed addresses]**  选项来使用种子地址作为校样目标。 这些地址可以从文件导入或手动输入。
+* 使用 **[!UICONTROL Seed addresses]**  使用種子地址作為校樣目標的選項。 這些位址可以從檔案匯入或手動輸入。
 
    >[!NOTE]
    >
-   >种子地址不属于默认收件人表(nms:recipient)，它们将在单独的表中创建。 如果使用新数据扩展收件人表，则还必须使用相同的数据扩展种子地址表。
+   >種子地址不屬於預設收件者表格(nms：recipient)，它們是在單獨的表格中建立的。 如果您使用新資料擴充收件者表格，則必須使用相同資料擴充種子地址表格。
 
-   详细了解种子地址(位于 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html){target="_blank"}.
+   進一步瞭解中的種子地址 [Campaign Classic v7檔案](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html){target="_blank"}.
 
-* 使用 **[!UICONTROL Specific target and Seed addresses]** 用于组合种子地址和特定电子邮件地址的选项。 相关配置随后在两个单独的子选项卡中定义。
+* 使用 **[!UICONTROL Specific target and Seed addresses]** 結合種子地址和特定電子郵件地址的選項。 然後，相關設定會在兩個單獨的子標籤中定義。
 
 ### 发送验证{#proofs-send}
 
-要发送消息校样，请执行以下步骤：
+若要傳送訊息校樣，請遵循下列步驟：
 
-1. 在消息定义屏幕中，单击 **[!UICONTROL Send a proof]** 按钮。
-1. 从 **[!UICONTROL Send a proof]** 窗口中，检查校样收件人。
-1. 单击 **[!UICONTROL Analyze]** 以开始准备校样消息。
+1. 在訊息定義畫面中，按一下 **[!UICONTROL Send a proof]** 按鈕。
+1. 從 **[!UICONTROL Send a proof]** 視窗，檢查校樣收件者。
+1. 按一下 **[!UICONTROL Analyze]** 以開始校樣訊息準備。
 
    ![](assets/send-proof-analyze.png){width="800" align="left"}
 
-1. 投放准备完成后，使用 **[!UICONTROL Confirm delivery]** 开始发送校样消息。
+1. 傳送準備完成後，請使用 **[!UICONTROL Confirm delivery]** 以開始傳送校樣訊息。
 
-浏览到 **[!UICONTROL Audit]** 选项卡来检查校样副本的提交。
+瀏覽至 **[!UICONTROL Audit]** 標籤以檢查證明副本的傳送。
 
-建议在对消息内容进行每次修改后发送校样。
+建議在每次修改訊息內容後傳送校樣。
 
 >[!NOTE]
 >
->在发送的校样中，指向镜像页面的链接不活动。 它仅在最终消息中激活。
+>在傳送的校樣中，指向映象頁面的連結未啟用。 它仅在最终邮件中激活。
 
-### 校样属性{#proofs-properties}
+### 校訂屬性{#proofs-properties}
 
-校样属性在 **[!UICONTROL Advanced]** 选项卡。 浏览到 **[!UICONTROL Proof properties...]** 链接以定义校样的参数和标签。 您可以选择保留：
+校樣屬性設定於 **[!UICONTROL Advanced]** 傳遞屬性視窗的索引標籤。 瀏覽至 **[!UICONTROL Proof properties...]** 定義引數和校樣標籤的連結。 您可以選擇保留：
 
-* 校样中的地址重复
-* 列入阻止列表校样中的地址
-* 校样中的隔离地址
+* 證明中的重複地址
+* 校訂中的已加入封鎖清單的地址
+* 證明中的隔離地址
 
-默认情况下，校样消息由 `Proof #N` 在主题中提及，其中 `N` 是校样号。 此数字会随每次校样投放分析而增加。 您可以更改 `proof` 前缀。
+根據預設，校樣訊息的識別方式為 `Proof #N` 在主題中提及，其中 `N` 是校訂號碼。 此數字會隨著每個證明傳遞分析而增加。 您可以變更 `proof` 前置詞（視需要）。
 
 ![](assets/proof-parameters.png){width="800" align="left"}
 
 
-## 操作方法视频 {#video-proof}
+## 操作說明影片 {#video-proof}
 
 了解如何为电子邮件投放发送并确认验证。
 

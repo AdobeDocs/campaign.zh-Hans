@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 分叉
-description: 进一步了解分支工作流活动
+description: 進一步瞭解分支工作流程活動
 feature: Workflows
 exl-id: 7b94776c-2478-4e12-82a6-c94be12e7e22
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
@@ -15,65 +15,65 @@ ht-degree: 1%
 
 
 
-您可以使用 **[!UICONTROL Fork]** 活动创建多个叫客过渡，并在同一工作流中独立运行多个活动。
+您可以使用 **[!UICONTROL Fork]** 活動，以建立多個出站轉變，並在相同工作流程中獨立執行數個活動。
 
 >[!IMPORTANT]
 >
->您在 **[!UICONTROL Fork]** 活动不会同时运行。 此行为可能会影响工作流的性能。 使用 **[!UICONTROL Fork]** 活动。 或者，您也可以在工作流后续部分之前加入叫客活动。
+>您在之後新增的出站轉變 **[!UICONTROL Fork]** 活動不會同時執行。 此行為可能會影響工作流程效能。 使用 **[!UICONTROL Fork]** 活動（如果您需要獨立執行數個活動）。 或者，您可以在工作流程的後續部分之前加入外站活動。
 
-配置 **[!UICONTROL Fork]** 活动及其相关活动，请按照以下步骤操作：
+若要設定 **[!UICONTROL Fork]** 活動及其相關活動，請遵循下列步驟：
 
-1. 打开 **[!UICONTROL Fork]** 活动，并定义叫客过渡的名称和标签。
+1. 開啟 **[!UICONTROL Fork]** 活動，並定義出站轉變的名稱和標籤。
 
    ![](assets/s_user_segmentation_fork.png)
 
-1. 打开每个叫客过渡并对其进行配置。
-1. （可选）要加入叫客过渡，请添加“与”加入活动。 [了解详情](and-join.md)。
+1. 開啟每個出站轉變並進行設定。
+1. 或者，若要聯結出站轉變，請新增「與」聯結活動。 [了解详情](and-join.md)。
 
-   工作流的后续部分仅在连接的叫客过渡完成后才运行。
+   工作流程的後續部分只會在聯結的對外轉變完成後執行。
 
-## 示例：分段
+## 範例：細分
 
-在此示例中，会向不同的群体组发送不同的电子邮件。 A **[!UICONTROL Fork]** 活动在查询后使用，以并行执行两个操作：
+在此範例中，會將不同的電子郵件傳送至不同的母體群組。 A **[!UICONTROL Fork]** 活動用於查詢之後，以同時執行兩個動作：
 
-* 保存查询结果
-* 对结果进行分段以发送多个投放
+* 儲存查詢結果
+* 將結果分段以傳送多個傳遞
 
-   ![分支活动遵循两个查询的交集，并在列表更新活动和拆分活动之前。](assets/wkf_fork_example.png)
+   ![分叉活動位於兩個查詢的交集處，並在清單更新活動和分割活動之前。](assets/wkf_fork_example.png)
 
-工作流包含以下活动：
+工作流程包含下列活動：
 
-1. **[!UICONTROL Query]** 活动
+1. **[!UICONTROL Query]** 活動
 
-   选择了两个群体组：女人和巴黎人。
+   選取兩個人口群組：婦女和巴黎人。
 
-1. **[!UICONTROL Intersection]** 活动
+1. **[!UICONTROL Intersection]** 活動
 
-   选择查询结果的交集，即巴黎女人。
+   已選取查詢結果的交集，即巴黎女性。
 
-1. **[!UICONTROL Fork]** 活动
+1. **[!UICONTROL Fork]** 活動
 
-   计算的群体将被保存，并且会并行划分为两个组：
+   系統會儲存計算出的母體，並同時將其分成兩個群組：
 
-   1. 18至40岁的巴黎女性
-   1. 40岁以上巴黎女性
+   1. 18至40歲的巴黎女性
+   1. 40歲以上的巴黎女性
 
-1. **[!UICONTROL Delivery]** 活动
+1. **[!UICONTROL Delivery]** 活動
 
-   会向每个群体组发送不同的电子邮件。
+   會傳送不同的電子郵件給每個母體群組。
 
-## 用例：发送生日电子邮件
+## 使用案例：傳送生日電子郵件
 
-会在收件人的生日当天向其列表发送定期电子邮件。 A **[!UICONTROL Fork]** 活动用于包含2月29日出生于闰年的收件人。 [了解更多](send-a-birthday-email.md) 关于此用例。
+在收件者生日當天會傳送循環電子郵件給收件者清單。 A **[!UICONTROL Fork]** 活動用於包含閏年2月29日出生的收件者。 [瞭解更多](send-a-birthday-email.md) 關於此使用案例。
 
-![分支活动遵循测试活动，并位于两个查询活动之前。](assets/birthday-workflow_usecase_1.png)
+![分叉活動會依循測試活動，並在兩個查詢活動之前進行。](assets/birthday-workflow_usecase_1.png)
 
-## 用例：使用工作流自动化内容
+## 使用案例：使用工作流程自動化內容
 
 
-然后，您可以配置每个叫客过渡，然后使用 [AND — 连接](and-join.md) 活动（如果需要）。 这样，工作流的其余部分将仅在 **[!UICONTROL Fork]** 活动的叫客过渡已完成。
+然後，您可以設定每個出站轉變，然後使用 [合併連結](and-join.md) 活動（如有需要）。 如此一來，工作流程的其餘部分只會在 **[!UICONTROL Fork]** 活動的出站轉變已完成。
 
 ## 相关主题
 
-* [AND — 连接活动](and-join.md)
-* [用例：生日电子邮件](send-a-birthday-email.md)
+* [合併連結活動](and-join.md)
+* [使用案例：生日電子郵件](send-a-birthday-email.md)

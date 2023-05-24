@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 循环投放
-description: 了解有关定期投放工作流活动的更多信息
+description: 深入瞭解循環傳送工作流程活動
 feature: Workflows
 exl-id: 27308b0d-cbfc-4bc6-9061-d771ceac95fd
 source-git-commit: edb099b3e882d857752af76798012ccd1c5a99be
@@ -15,42 +15,42 @@ ht-degree: 12%
 
 
 
-A **[!UICONTROL Recurring delivery]** 活动，可配置特定于营销策划的投放模板实例。
+A **[!UICONTROL Recurring delivery]** 活動可讓您設定行銷活動特定的傳送範本發生次數。
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#recurring-delivery-video)
 
-此活动仅在 **[!UICONTROL Targeting and workflows]** 选项卡。
+此活動只能從 **[!UICONTROL Targeting and workflows]** 在行銷活動中找到的索引標籤。
 
 操作步骤：
 
-1. 选择活动所基于的投放模板。
+1. 選取活動將依據的傳遞範本。
 
    ![](assets/recurring_delivery_001.png)
 
-1. 配置投放模板。
+1. 設定傳遞範本。
 
-就可用选项而言，此活动的配置过程与创建投放模板的过程类似。
+此活動的設定程式與根據可用選項建立傳遞範本的程式類似。
 
-有关此活动的示例，请参阅此 [部分](send-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
+如需此活動使用方式的範例，請參閱以下內容 [區段](send-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
-## 如何设置循环投放
+## 如何設定循環傳遞
 
-A **循环投放** 将在每次执行时创建一个新投放实例。 例如，如果工作流计划每周运行一次，那么一年后将产生 52 次投放。这也意味着广泛的日志和跟踪日志将由每个投放实例分隔。
+A **循環傳遞** 每次執行時都會建立新的傳遞執行個體。 例如，如果工作流计划每周运行一次，那么一年后将产生 52 次投放。這也表示廣泛的記錄檔和追蹤記錄檔會依每個傳送執行個體來區隔。
 
 ![循环投放](assets/delivery_recurring.jpg)
 
-如果要停止定期投放运行，应完全取消营销活动或停止执行该活动的工作流。 从Campaign仪表板停止投放将只停止投放发生：每次执行工作流时，将继续创建循环投放的下一个实例。
+如果您想要停止執行循環傳送，您應完全取消行銷活動或停止執行它的工作流程。 從Campaign儀表板停止傳送只會停止傳送發生：循環傳送的下一個例項將繼續在每個工作流程執行時建立。
 
 >[!NOTE]
 >
->无法从 **[!UICONTROL Recurring delivery]** 键入活动。
+>無法傳送來自 **[!UICONTROL Recurring delivery]** 型別活動。
 > 
->要通过营销活动工作流直接创建投放，请使用预先配置的渠道特定活动(例如， **[!UICONTROL Email delivery]**)。
+>若要透過行銷活動工作流程直接建立傳遞，請使用預先設定的管道特定活動(例如 **[!UICONTROL Email delivery]**)。
 
-## 教程视频(#recurring-delivery-video)
+## 教學課程影片(#recurring-delivery-video)
 
-此视频介绍如何配置定期投放和调度程序活动。
+此影片說明如何設定循環傳送和排程器活動。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
-还提供其他Campaign操作方法视频 [此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.
+有其他Campaign操作說明影片可供使用 [此處](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.

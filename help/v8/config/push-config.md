@@ -1,6 +1,6 @@
 ---
 title: 将 Campaign SDK 与您的应用程序集成
-description: 了解如何将Campaign Android和iOS SDK与您的应用程序集成
+description: 瞭解如何將Campaign Android和iOS SDK與您的應用程式整合
 version: v8
 feature: Push
 role: Admin, Developer
@@ -17,31 +17,31 @@ ht-degree: 4%
 
 # 将 Campaign SDK 与您的应用程序集成 {#integrate-campaign-sdk}
 
-您可以使用适用于iOS和Android的Campaign SDK来促进将移动应用程序集成到Adobe Campaign平台。
+您可以使用適用於iOS和Android的Campaign SDK，促進將行動應用程式整合到Adobe Campaign平台。
 
-Android和iOS支持的版本，以及Campaign v8的Campaign SDK兼容版本，如 [兼容性矩阵](../start/compatibility-matrix.md#MobileSDK).
+Android和iOS支援的版本，以及Campaign SDK相容的Campaign v8版本列於 [相容性矩陣](../start/compatibility-matrix.md#MobileSDK).
 
-作为Campaign管理员，您可以从 [Experience CloudSoftware Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html). 有关详细信息，请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+身為Campaign管理員，您可以從以下網址下載Campaign SDK： [Experience Cloud軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html). 如需詳細資訊，請連絡 [Adobe客戶服務](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 >[!NOTE]
 >
->您还可以通过在“数据收集 UI”中配置 Adobe Campaign 扩展来使用 Adobe Experience Platform Mobile SDK。[请参阅开发人员文档，以了解更多信息](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+>您还可以通过在“数据收集 UI”中配置 Adobe Campaign 扩展来使用 Adobe Experience Platform Mobile SDK。[在開發人員檔案中瞭解更多](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
-## 声明集成设置 {#declaring-integration-settings}
+## 宣告整合設定 {#declaring-integration-settings}
 
-要将Campaign SDK集成到移动应用程序中，功能管理员必须向开发人员提供以下信息：
+若要將Campaign SDK整合至行動應用程式，功能管理員必須向開發人員提供下列資訊：
 
-* **集成密钥**:以启用Adobe Campaign平台来识别移动应用程序。
+* **整合索引鍵**：啟用Adobe Campaign平台以識別行動應用程式。
 
    >[!NOTE]
    >
-   >此集成密钥是在Adobe Campaign控制台(位于 **[!UICONTROL Information]** 专用于移动应用程序的服务选项卡。
+   >此整合索引鍵需在Adobe Campaign主控台的 **[!UICONTROL Information]** 行動應用程式專屬的服務標籤。
 
-* **跟踪URL**:与Adobe Campaign跟踪服务器的地址匹配。
-* **营销URL**:以启用订阅的收集。
+* **追蹤URL**：會符合Adobe Campaign追蹤伺服器的位址。
+* **行銷URL**：啟用訂閱集合。
 
-* **在Android中**:
+* **在Android中**：
 
    ```sql
    Neolane.getInstance().setIntegrationKey("your Adobe mobile app integration key");
@@ -49,7 +49,7 @@ Android和iOS支持的版本，以及Campaign v8的Campaign SDK兼容版本，�
    Neolane.getInstance().setTrackingHost("https://yourTrackingHost:yourTrackingPort/"); 
    ```
 
-* **在iOS**:
+* **在iOS中**：
 
    ```sql
    Neolane_SDK *nl = [Neolane_SDK getInstance];
@@ -58,36 +58,36 @@ Android和iOS支持的版本，以及Campaign v8的Campaign SDK兼容版本，�
    [nl setIntegrationKey:strIntegrationKey];
    ```
 
-## 集成Android SDK
+## 整合Android SDK
 
-Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe Campaign集成：注册新设备、将设备与用户链接、跟踪行为等。
+Android SDK是以JAVA撰寫的jar程式庫。 它可讓Android開發人員與Adobe Campaign整合：註冊新裝置、將裝置與使用者連結、追蹤行為等。
 
-在此部分中，了解如何在实施Android应用程序中使用Android SDK [Google Firebase Cloud Messaging(FCM)](https://firebase.google.com/docs/cloud-messaging/).
+在本節中，瞭解如何在Android應用程式實作中使用Android SDK [Google Firebase Cloud Messaging (FCM)](https://firebase.google.com/docs/cloud-messaging/).
 
 >[!CAUTION]
 >
-> 对于Campaign v8，使用Campaign Android SDK v1.1.1。
+> 若為Campaign v8，請使用Campaign Android SDK v1.1.1。
 
-### 配置FCM
+### 設定FCM
 
-要在Android上使用推送通知，您必须拥有FCM帐户，配置Android应用程序以接收通知，并将应用程序关联到FCM帐户。 在 [Google文档](https://firebase.google.com/docs/cloud-messaging/).
+若要在Android上使用推播通知，您必須擁有FCM帳戶，設定您的Android應用程式來接收通知，並將您的應用程式連結至FCM帳戶。 進一步瞭解 [Google檔案](https://firebase.google.com/docs/cloud-messaging/).
 
-请参阅 [Google文档](https://firebase.google.com/docs/android/setup) 将Firebase添加到您的Android项目。
+請參閱 [Google檔案](https://firebase.google.com/docs/android/setup) 將Firebase新增至Android專案。
 
-了解如何在 [Google文档](https://firebase.google.com/docs/android/setup).
+瞭解如何在的應用程式中實作FCM [Google檔案](https://firebase.google.com/docs/android/setup).
 
 >[!NOTE]
 >
-> * 请不要忘记下载google-services.json并将其添加到您的项目中。
+> * 別忘了下載並將google-services.json新增至您的專案。
 >
-> * 的 `apiKey` 必须与 `projectKey` 在链接到此Android应用程序的Adobe Campaign移动设备应用程序中设置。
+> * 此 `apiKey` 必須與 `projectKey` 在連結至此Android應用程式的Adobe Campaign行動應用程式中設定。
 
 
-### 配置Android SDK
+### 設定Android SDK
 
 1. **初始化SDK**
 
-   在使用Android SDK之前，您需要对其进行初始化。 SDK初始化可以在 `onCreate` 的函数。
+   在使用Android SDK之前，您必須先初始化它。 SDK初始化可在以下位置完成： `onCreate` 活動的功能。
 
    ```sql
    /** Called when the activity is first created. */
@@ -106,16 +106,16 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
    }
    ```
 
-   的 `IntegrationKey` 必须与链接到此Android应用程序的Adobe Campaign移动应用程序中设置的“IntegrationKey”匹配。
+   此 `IntegrationKey` 必須與連結至此Android應用程式的Adobe Campaign行動應用程式中設定的「IntegrationKey」相符。
 
-1. **将移动设备注册到Adobe Campaign服务器**
+1. **將行動裝置註冊至Adobe Campaign伺服器**
 
-   注册功能允许您：
+   註冊功能可讓您：
 
-   * 将通知ID或推送ID(iOS的deviceToken和Android的registrationID)发送到Adobe Campaign。
-   * 恢复协调密钥或userKey（例如，电子邮件或帐号）
+   * 將通知ID或推播ID (iOS的deviceToken和Android的註冊ID)傳送至Adobe Campaign。
+   * 復原調解金鑰或userKey （例如電子郵件或帳號）
 
-   您必须在应用程序初始化或用户操作时，将设备注册到Adobe Campaign。 使用 `registerDevice` 方法。
+   您必須在應用程式初始化或使用者動作時，將裝置註冊到Adobe Campaign。 這可以輕鬆地使用 `registerDevice` 方法。
 
    ```sql
    public void onClick(View v)
@@ -185,9 +185,9 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
    }
    ```
 
-1. **当用户的移动设备令牌发生更改时通知Campaign**
+1. **當使用者的行動裝置代號變更時通知Campaign**
 
-   我们建议您使用 `registerDevice` 函数 `onTokenRefresh` 函数，以通知Adobe Campaign用户移动设备令牌发生更改。
+   我們建議您使用 `registerDevice` 函式呼叫 `onTokenRefresh` 此函式用於在使用者的行動裝置Token變更時通知Adobe Campaign。
 
    例如：
 
@@ -224,9 +224,9 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
    }
    ```
 
-1. **配置Firebase Messaging Service**
+1. **設定Firebase傳訊服務**
 
-   扩展 `FirebaseMessagingService` 在 `onMessageReceived` 回调以接收消息。 我们建议您将 `notifyReceive` 函数 `onMessageReceived` 调用callback以在移动设备上启用通知接收跟踪。 在Adobe Campaign，这个名字是 **打印** 通知：应在请求操作系统显示通知之前调用此函数。
+   擴充 `FirebaseMessagingService` 在 `onMessageReceived` 回撥以接收訊息。 建議您呼叫 `notifyReceive` 函式當 `onMessageReceived` 呼叫callback以啟用行動裝置上通知接收的追蹤功能。 在Adobe Campaign中，此名稱為 **列印** 通知：在要求作業系統顯示通知之前，應該呼叫此函式。
 
    YourApplicationMessagingService.java
 
@@ -328,9 +328,9 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
    }
    ```
 
-1. **跟踪数据消息的打开情况**
+1. **追蹤資料訊息的開啟**
 
-   对于数据消息，您可以使用 `notifyOpening` 函数。 当用户单击通知时，将创建通知活动(在 `onMessageReceived`函数调用)
+   對於資料訊息，您可以使用追蹤使用者何時點按通知以將其開啟 `notifyOpening` 函式。 當使用者點按通知時，將建立通知活動（於以下期間建立） `onMessageReceived`函式呼叫)
 
    ```sql
    public class NotificationActivity extends Activity {
@@ -363,9 +363,9 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
    }
    ```
 
-1. **跟踪通知消息的打开数和点击数**
+1. **追蹤通知訊息的開啟和點按**
 
-   对于通知消息，需要使用 `notifyOpening` 函数，如下所示：
+   對於通知訊息，開啟/點選追蹤需要使用 `notifyOpening` 函式於應用程式啟動活動內，如下所示：
 
    ```sql
    /** Called when the activity is first created. */
@@ -423,12 +423,12 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
    >[!NOTE]
    >
-   > 如果用户使用 `click_action` 选项。
+   > 如果使用者使用，則需要完成類似管理 `click_action` 「已鎖定目標」活動內的選項。
 
 
-1. **接收数据消息的跟踪**
+1. **接收資料訊息的追蹤**
 
-   对于数据消息，将在 `onMessageReceived` 调用级别。 需要调用“notifyReceive”函数。
+   對於資料訊息，追蹤會接收於 `onMessageReceived` 呼叫層級。 需要呼叫&#39;notifyReceive&#39;函式。
 
    YourApplicationMessagingService.java
 
@@ -494,14 +494,14 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
    }
    ```
 
-1. **接收通知消息的跟踪**
+1. **接收通知訊息的追蹤**
 
-   对于通知消息，跟踪接收必须配置在两个级别：
+   對於通知訊息，追蹤接收必須在兩個層級設定：
 
-   * `onMessageReceived` （应用程序不在后台）：在上一节中已完成实施
-   * `onCreate` 启动活动(或目标活动(如果 `click_action`函数。) （应用程序不在后台）。
+   * `onMessageReceived` （應用程式不在背景中）：實施作業已於上一節完成
+   * `onCreate` 啟動活動(或目標活動，如果 `click_action`函式中)。 （應用程式不在背景中）。
 
-   它需要在打开/点击跟踪的同一时间完成。
+   它需要在開啟/點選追蹤的同時完成。
 
    ```sql
    /** Called when the activity is first created. */
@@ -558,14 +558,14 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
    ```
 
 
-## 集成iOS SDK
+## 整合iOS SDK
 
-1. **将移动设备注册到Adobe Campaign服务器**
+1. **將行動裝置註冊至Adobe Campaign伺服器**
 
-   注册功能允许您：
+   註冊功能可讓您：
 
-   * 将通知ID或推送ID(iOS的deviceToken和Android的registrationID)发送到Adobe Campaign。
-   * 恢复协调密钥或userKey（例如，电子邮件或帐号）
+   * 將通知ID或推播ID (iOS的deviceToken和Android的註冊ID)傳送至Adobe Campaign。
+   * 復原調解金鑰或userKey （例如電子郵件或帳號）
 
    ```sql
    // Callback called on successful registration to the APNs
@@ -577,9 +577,9 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
    }
    ```
 
-1. **启用跟踪函数**
+1. **啟用追蹤功能**
 
-   利用跟踪函数，可在激活（打开）通知时进行跟踪。
+   追蹤函式可讓您追蹤何時啟動（開啟）通知。
 
    ```sql
    (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)launchOptions
@@ -592,11 +592,11 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
    }
    ```
 
-1. **无提示通知跟踪**
+1. **無訊息通知追蹤**
 
-   iOS允许您发送静默通知、通知或数据，这些通知或数据将直接发送到移动应用程序，而不显示。 Adobe Campaign允许您跟踪它们。
+   iOS可讓您傳送無訊息通知、通知或資料，這些通知或資料將直接傳送至行動應用程式，而不會顯示出來。 Adobe Campaign可讓您追蹤這些事件。
 
-   要跟踪无提示通知，请按照以下示例操作：
+   若要追蹤您的無訊息通知，請遵循以下範例：
 
    ```sql
    // AppDelegate.m
@@ -632,32 +632,32 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
    }
    ```
 
-1. **配置注册状态**
+1. **設定註冊狀態**
 
-   委托协议允许您获取 **registerDevice** 调用和，可用于知道注册期间是否发生错误。
+   委派通訊協定可讓您取得 **registerDevice** 呼叫，並可用於知道註冊期間是否發生錯誤。
 
-   的 **registerDeviceStatus** 原型为：
+   此 **registerdevicestatus** 原型為：
 
    ```sql
    - (void) registerDeviceStatus: (ACCRegisterDeviceStatus) status:(NSString *) errorReason;
    ```
 
-   * **状态** 用于了解注册是否成功或是否发生错误。
+   * **狀態** 可讓您知道註冊是否成功或發生錯誤。
 
-   * **错误原因** 为您提供有关所发生错误的更多信息。 有关可用错误及其说明的更多信息，请参阅下表。
+   * **ErrorReason** 會提供發生錯誤的詳細資訊。 如需可用錯誤及其說明的詳細資訊，請參閱下表。
 
-   | 状态 | 说明 | 错误原因 |
+   | 状态 | 说明 | ErrorReason |
    | ---------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
-   | ACCRegisterDeviceStatusSuccess | 注册成功 | EMPTY |
-   | ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty | ACC营销服务器主机名为空或未设置。 | EMPTY |
-   | ACCRegisterDeviceStatusFailureIntegrationKeyEmpty | 集成键值为空或未设置。 | EMPTY |
-   | ACCRegisterDeviceStatusFailureConnectionIssue | 与ACC的连接问题 | 更多信息（使用操作系统当前语言） |
-   | ACCRegisterDeviceStatusFailureUnknownUUID | 提供的UUID（集成密钥）未知。 | EMPTY |
-   | ACCRegisterDeviceStatusFailureExpectedError | 向ACC服务器返回意外错误。 | 返回到ACC的错误消息。 |
+   | ACCRegisterDeviceStatusSuccess | 註冊成功 | 空白 |
+   | ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty | ACC行銷伺服器主機名稱是空的或未設定。 | 空白 |
+   | ACCRegisterDeviceStatusFailureIntegrationKeyEmpty | 整合金鑰為空白或未設定。 | 空白 |
+   | ACCRegisterDeviceStatusFailureConnectionIssue | ACC的連線問題 | 更多資訊（以作業系統目前的語言提供） |
+   | ACCRegisterDeviceStatusFailureUnknownUUID | 提供的UUID （整合金鑰）不明。 | 空白 |
+   | ACCRegisterDeviceStatusFailureUnexpectedError | 傳回ACC伺服器的非預期錯誤。 | 錯誤訊息傳回ACC。 |
 
    {style="table-layout:auto"}
 
-   **Neolane_SDKelegate** 协议和 **registerDeviceStatus** 委托定义如下所示：
+   **Neolane_SDKDelegate** 通訊協定和 **registerdevicestatus** 委派定義如下：
 
    ```sql
    //  Neolane_SDK.h
@@ -689,9 +689,9 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
    @end
    ```
 
-   实施 **registerDeviceStatus** 委派，请执行以下步骤：
+   實作 **registerdevicestatus** 委派，請遵循下列步驟：
 
-   1. 实施 **setDelegate** 在SDK初始化期间。
+   1. 實作 **setDelegate** 於SDK初始化期間。
 
       ```sql
       // AppDelegate.m
@@ -720,7 +720,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
       }
       ```
 
-   1. 在 **@interface** 你班的。
+   1. 在中新增通訊協定 **@interface** 您班級的。
 
       ```sql
       //  AppDelegate.h
@@ -742,7 +742,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
       }
       ```
 
-   1. 在中实施委托 **AppDelegate**.
+   1. 在中實作委派 **AppDelegate**.
 
       ```sql
       //  AppDelegate.m
@@ -796,12 +796,12 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
 ## 变量 {#variables}
 
-利用变量，可在收到通知后定义移动应用程序行为。 这些变量必须在移动设备应用程序代码和Adobe Campaign控制台(位于 **[!UICONTROL Variables]** 选项卡。
+變數可讓您定義在收到通知後的行動應用程式行為。 這些變數必須在行動應用程式程式碼中，以及在Adobe Campaign主控台的 **[!UICONTROL Variables]** 標籤中指定的Mobile Application Service。
 
 
-以下是允许移动设备应用程序收集通知中任何添加变量的代码示例。 在我们的示例中，我们使用“VAR”变量。
+以下是程式碼範例，此程式碼可讓行動應用程式收集通知中新增的任何變數。 在我們的範例中，我們使用「VAR」變數。
 
-* **在Android中**:
+* **在Android中**：
 
    ```sql
    public void onReceive(Context context, Intent intent) {
@@ -811,7 +811,7 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
    }
    ```
 
-* **在iOS**:
+* **在iOS中**：
 
    ```sql
    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -843,13 +843,13 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
 
 >[!CAUTION]
 >
->Adobe建议选择短变量名称，因为对于iOS和Android，通知大小限制为4kB。
+>Adobe建議選擇短變數名稱，因為通知大小在iOS和Android限製為4kB。
 
-## 通知服务扩展 {#notification-service-extension}
+## 通知服務延伸模組 {#notification-service-extension}
 
-**对于iOS**
+**適用於iOS**
 
-必须在通知服务扩展级别下载媒体。
+媒體必須在通知服務擴充功能層級下載。
 
 ```sql
 #import "NotificationService.h"
@@ -879,23 +879,23 @@ Android SDK是使用JAVA编写的Jar库。 它允许Android开发人员与Adobe 
     // Perform the download to local storage
 ```
 
-## 通知内容扩展 {#notification-content-extension}
+## 通知內容延伸模組 {#notification-content-extension}
 
-**对于iOS**
+**適用於iOS**
 
-在此级别，您需要：
+在此層級，您需要：
 
-* 将内容扩展关联到由Adobe Campaign发送的类别：
+* 將您的內容擴充功能與Adobe Campaign傳送的類別建立關聯：
 
-   如果您希望移动应用程序显示图像，则可以在Adobe Campaign中将类别值设置为“image”，并在移动应用程序中，使用 **UNNotificationExtensionCategory** 参数设置为“image”。 在设备上收到推送通知时，将根据定义的类别值调用扩展。
+   如果您希望行動應用程式顯示影像，可以在Adobe Campaign中將類別值設為「影像」，並在行動應用程式中，使用建立通知擴充功能 **UNNotificationExtensionCategory** 引數設為&quot;image&quot;。 在裝置上收到推播通知時，會根據定義的類別值呼叫擴充功能。
 
-* 定义通知布局
+* 定義您的通知配置
 
-   您需要使用相关小组件定义布局。 对于图像，小组件名为 **UIImageView**.
+   您需要使用相關Widget定義版面。 若為影像，Widget的名稱為 **UImageView**.
 
-* 显示媒体
+* 顯示您的媒體
 
-   您需要添加代码以将媒体数据馈送到小组件。 以下是图像的代码示例：
+   您需要新增程式碼，以將媒體資料饋送至Widget。 以下是影像的程式碼範例：
 
    ```sql
    #import "NotificationViewController.h"

@@ -1,6 +1,6 @@
 ---
-title: 个性化数据源
-description: 了解哪些源可用于个性化
+title: 個人化資料來源
+description: 瞭解哪些來源可用於個人化
 feature: Personalization
 role: User
 level: Beginner
@@ -12,62 +12,62 @@ ht-degree: 2%
 
 ---
 
-# 个性化数据源{#personalization-data}
+# 個人化資料來源{#personalization-data}
 
-可从各种类型的源中检索个性化数据：Campaign数据库数据源、外部文件数据源或外部数据库数据源。
+個人化資料可從各種型別的來源擷取：Campaign資料庫資料來源、外部檔案資料來源或外部資料庫資料來源。
 
-## Campaign数据库数据源
+## Campaign資料庫資料來源
 
-在最常见的情况下，个性化数据存储在数据库中。 例如，“收件人个性化字段”是在收件人表中定义的所有字段，即标准字段(通常为：姓氏、名字、地址、城市、出生日期等) 或自定义字段。
+在最常見的情況下，個人化資料會儲存在資料庫中。 例如，「收件者個人化欄位」是指收件者表格中定義的所有欄位、標準欄位（通常為：姓氏、名字、地址、城市、出生日期等） 或自訂欄位。
 
-![电子邮件中的促销活动个性化字段](assets/perso-campaign-datasource.png)
-
-
-## 外部文件数据源
-
-您可以使用包含列中定义的所有字段的外部文件。 在消息投放定义期间，此文件将用作输入。 您可以选择是否在数据库中插入这些用户档案。
-
-要选择要用作数据源的文件，请浏览到消息创建窗口中的“收件人”链接，然后选择 **在外部文件中定义** 选项。 加载文件后，从个性化选项中访问收件人数据 **文件中的字段** 中。
-
-![来自文件的个性化数据](assets/perso-from-file.png)
+![電子郵件中的行銷活動個人化欄位](assets/perso-campaign-datasource.png)
 
 
-## FDA数据源
+## 外部檔案資料來源
 
-个性化数据可通过 [联合数据访问](../connect/fda.md).  如果要使用外部数据库中的数据在投放中进行个性化，请收集要在工作流中使用的数据，以在临时表格中提供。
+您可以使用包含欄中定義之所有欄位的外部檔案。 此檔案在訊息傳遞定義期間用作輸入。 您可以選擇是否在資料庫中插入這些設定檔。
 
-要执行此操作，请添加 **查询** 活动，并使用 **添加数据……** 链接以选择外部数据库。 详细过程可在 [此部分](../../automation/workflow/query.md#adding-data).
+若要選取要用作資料來源的檔案，請瀏覽至訊息建立視窗中的「至」連結，然後選取 **在外部檔案中定義** 選項。 載入檔案後，從存取個人化選項中的收件者資料 **來自檔案的欄位** 登入點。
 
-然后，使用临时表格中的数据对投放进行个性化。 配置查询活动后，从 **Target扩展** 中。
+![來自檔案的個人化資料](assets/perso-from-file.png)
 
-![来自外部数据库的个性化数据](assets/perso-external-db.png)
 
-使用在FDA中访问的外部数据时，建议在专用工作流中使用 **使用工作流准备个性化数据** 选项。
+## FDA資料來源
 
-### 优化个性化 {#optimize-personalization}
+個人化資料可從外部表格中提取，提取方式如下： [同盟資料存取](../connect/fda.md).  如果您想要使用外部資料庫中的資料在傳遞中執行個人化，請收集要在工作流程中使用的資料，使其可在臨時表格中使用。
 
-您可以使用专用选项优化个性化： **[!UICONTROL Prepare the personalization data with a workflow]**，在 **[!UICONTROL Analysis]** 选项卡。
+若要執行此動作，請新增 **查詢** 目標工作流程中的活動並使用 **新增資料……** 用來選取外部資料庫的連結。 詳細流程可在以下網址取得： [本節](../../automation/workflow/query.md#adding-data).
 
-在投放分析期间，此选项会自动创建并执行一个工作流，该工作流将链接到目标的所有数据存储在临时表格中，包括来自FDA中链接表格的数据。
+然後，使用臨時表格中的資料來個人化您的傳遞。 設定查詢活動後，請從以下位置存取個人化選項中的外部資料： **目標延伸功能** 登入點。
 
-选中此选项可在处理大量数据时大大提高投放分析性能，尤其是当个性化数据通过FDA来自外部表时。 [了解详情](../connect/fda.md)。
+![來自外部資料庫的個人化資料](assets/perso-external-db.png)
 
-要使用此选项，请执行以下步骤：
+使用在FDA中存取的外部資料時，建議使用在專用工作流程中預先處理訊息個人化 **使用工作流程準備個人化資料** 選項，如下所述。
+
+### 最佳化個人化 {#optimize-personalization}
+
+您可以使用專用選項來最佳化個人化： **[!UICONTROL Prepare the personalization data with a workflow]**，可在 **[!UICONTROL Analysis]** 傳遞屬性的索引標籤。
+
+在傳遞分析期間，此選項會自動建立並執行工作流程，將所有連結至目標的資料儲存在暫存表格中，包括來自FDA連結表格的資料。
+
+勾選此選項可大幅改善處理大量資料時的傳遞分析效能，尤其是當個人化資料來自透過FDA的外部表格時。 [了解详情](../connect/fda.md)。
+
+若要使用此選項，請遵循下列步驟：
 
 1. 创建营销策划.
-1. 在 **[!UICONTROL Targeting and workflows]** 的 **查询** 活动。
-1. 添加 **[!UICONTROL Email delivery]** 活动，并将其打开。
-1. 转到 **[!UICONTROL Analysis]** 选项卡 **[!UICONTROL Delivery properties]** ，然后选择 **[!UICONTROL Prepare the personalization data with a workflow]** 选项。
-1. 配置投放并启动工作流以启动分析。
+1. 在 **[!UICONTROL Targeting and workflows]** 索引標籤中，新增 **查詢** 活動至您的工作流程。
+1. 新增 **[!UICONTROL Email delivery]** 活動以開啟工作流程。
+1. 前往 **[!UICONTROL Analysis]** 的標籤 **[!UICONTROL Delivery properties]** 並選取 **[!UICONTROL Prepare the personalization data with a workflow]** 選項。
+1. 設定傳遞並啟動工作流程以啟動分析。
 
-完成分析后，个性化数据会通过临时技术工作流存储在临时表格中，该工作流在分析过程中会即时创建。
+分析完成後，個人化資料會透過分析期間即時建立的臨時技術工作流程，儲存在臨時表格中。
 
-此工作流在Adobe Campaign界面中不可见。 它仅是快速存储和处理个性化数据的技术手段。
+Adobe Campaign介面中看不到此工作流程。 其目的僅在於作為快速儲存和處理個人化資料的技術手段。
 
-分析完成后，转到工作流 **[!UICONTROL Properties]** ，然后选择 **[!UICONTROL Variables]** 选项卡。 在此处，您可以看到可用于进行SQL调用以显示其所包含ID的临时表的名称。
+分析完成後，前往工作流程 **[!UICONTROL Properties]** 並選取 **[!UICONTROL Variables]** 標籤。 您可以在此看到可用來進行SQL呼叫以顯示其包含的ID的暫存表格名稱。
 
-## 工作流中的个性化数据
+## 工作流程中的個人化資料
 
-在工作流的上下文中创建投放时，您可以使用临时工作流表中的数据。 工作流临时工作表中存储的数据可用于个性化任务。 数据可在个性化字段中使用。
+在工作流程內容中建立傳遞時，您可以使用臨時工作流程表格中的資料。 儲存在工作流程臨時工作表中的資料可用於個人化任務。 資料可用於個人化欄位。
 
-此数据分组在 **[!UICONTROL Target extension]** 菜单。 如需详细信息，请参阅[此部分](../../automation/workflow/use-workflow-data.md#target-data)。
+此資料會分組在 **[!UICONTROL Target extension]** 功能表。 如需详细信息，请参阅[此部分](../../automation/workflow/use-workflow-data.md#target-data)。

@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 排除
-description: 进一步了解排除工作流活动
+description: 進一步瞭解排除工作流程活動
 feature: Workflows, Targeting Activity
 exl-id: 8ea831e2-8e6e-4ef0-ac05-f27ebf89ccb9
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
@@ -15,45 +15,45 @@ ht-degree: 0%
 
 
 
-安 **排除**-type活动会根据从中提取一个或多个其他目标的主目标创建目标。
+一個 **排除**-type活動會根據擷取一或多個其他目標的主要目標建立目標。
 
-要配置此活动，请输入其标签并选择主收件人集：利用主集中的群体，可构建结果。 将排除由主集和至少一个登入活动共享的用户档案。
+若要設定此活動，請輸入其標籤並選取主要收件者集：主要集的母體可讓您建構結果。 將排除主要集和至少一個登入活動共用的設定檔。
 
 ![](assets/s_user_segmentation_exclu.png)
 
 >[!NOTE]
 >
->有关配置和使用排除活动的更多信息，请参阅 [排除群体（排除）](targeting-workflows.md#excluding-a-population--exclusion-).
+>有關設定和使用排除活動的詳細資訊，請參閱 [排除人口（排除）](targeting-workflows.md#excluding-a-population--exclusion-).
 
-检查 **[!UICONTROL Generate complement]** 选项。 补码将包含主传入群体减去传出群体。 随后，将向活动添加额外的输出过渡，如下所示：
+檢查 **[!UICONTROL Generate complement]** 選項（如果要利用剩餘母體）。 補碼將包含主要傳入母體減去傳出母體。 隨後會將其他輸出轉變新增至活動，如下所示：
 
 ![](assets/s_user_segmentation_exclu_compl.png)
 
-## 排除示例 {#exclusion-examples}
+## 排除範例 {#exclusion-examples}
 
-以下示例试图汇编一份18至30岁的收件人名单，但不包括巴黎居民。
+下列範例會嘗試編譯18至30歲之間的收件者清單，但不包括巴黎居民。
 
-1. 插入并打开 **[!UICONTROL Exclusion]** -type活动。 第一个查询针对的是居住在巴黎的收件人。 第二个查询针对的是18至30岁的人。
-1. 输入主集。 在此，主集是 **18岁–30岁** 查询。 与第二组相关的元素将从最终结果中排除。
-1. 检查 **[!UICONTROL Generate complement]** 选项。 在这种情况下，补编由居住在巴黎的18至30岁的收件人组成。
-1. 批准排除配置，然后为结果插入更新列表活动。 您还可以在必要时，为补码插入额外的列表更新。
-1. 执行工作流。 在此示例中，结果由18至30岁的收件人组成，但居住在巴黎的收件人将被排除并发送到补码中。
+1. 插入並開啟 **[!UICONTROL Exclusion]** -type活動。 第一個查詢會鎖定居住在巴黎的收件者。 第二個查詢會鎖定年齡在18至30歲之間的人。
+1. 輸入主集。 主要集為 **18-30歲** 查詢。 將從最終結果中排除與第二個集合相關的元素。
+1. 檢查 **[!UICONTROL Generate complement]** 選項（如果您想要利用排除後剩餘的資料）。 在此案例中，補充是由居住在巴黎的18至30歲收件者組成。
+1. 核准排除設定，然後插入更新清單活動到結果。 您也可以視需要插入其他清單更新至補充。
+1. 執行工作流程。 在此範例中，結果由18至30歲的收件者組成，但住在巴黎者會被排除並傳送至補充。
 
    ![](assets/exclusion_example.png)
 
-## 输入参数 {#input-parameters}
+## 輸入引數 {#input-parameters}
 
 * tableName
-* 模式
+* 綱要
 
-每个集客事件必须指定由这些参数定义的目标。
+每個傳入事件都必須指定由這些引數定義的目標。
 
-## 输出参数 {#output-parameters}
+## 輸出引數 {#output-parameters}
 
 * tableName
-* 模式
+* 綱要
 * recCount
 
-这组值由三个值组成，用于标识由排除项生成的目标。 **[!UICONTROL tableName]** 是记录目标标识符的表的名称， **[!UICONTROL schema]** 是群体模式（通常为nms:recipient）和 **[!UICONTROL recCount]** 是表中的元素数。
+這組三個值會識別排除所產生的目標。 **[!UICONTROL tableName]** 是記錄目標識別碼的資料表名稱， **[!UICONTROL schema]** 為母體的結構描述（通常為nms：recipient）和 **[!UICONTROL recCount]** 是表格中的元素數量。
 
-与补码关联的过渡具有相同的参数。
+與補碼關聯的轉變具有相同的引數。

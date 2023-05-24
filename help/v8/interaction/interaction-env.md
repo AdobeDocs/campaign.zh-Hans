@@ -1,6 +1,6 @@
 ---
-title: 使用Campaign交互环境
-description: 了解如何为Campaign交互创建环境
+title: 使用Campaign互動環境
+description: 瞭解如何建立行銷活動互動的環境
 feature: Interaction, Offers
 role: Data Engineer
 level: Beginner
@@ -12,57 +12,57 @@ ht-degree: 2%
 
 ---
 
-# 使用环境{#work-with-environments}
+# 使用環境{#work-with-environments}
 
-## 实时环境和设计环境{#live-design-environments}
+## 即時和設計環境{#live-design-environments}
 
-交互可与两种类型的选件环境进行操作：
+互動適用於兩種優惠方案環境：
 
-* **[!UICONTROL Design]** 包含正在编辑且可更改的选件的选件环境。 这些选件尚未通过批准周期，也未交付给联系人。
-* **[!UICONTROL Live]** 在向联系人显示已批准选件时包含这些选件的选件环境。 此环境中的选件为只读选件。
+* **[!UICONTROL Design]** 優惠方案環境，其中包含正在編輯且可以變更的優惠方案。 這些優惠方案尚未經過核准週期，因此未傳送給連絡人。
+* **[!UICONTROL Live]** 優惠方案環境包含向連絡人呈現的已核准優惠方案。 此環境中的選件為唯讀。
 
 ![](assets/offer_environments_overview_001.png)
 
-每个 **[!UICONTROL Design]** 环境已链接到 **[!UICONTROL Live]** 环境。 选件完成后，其内容和资格规则将受到批准周期的约束。 完成此周期后，相关选件会自动部署到 **[!UICONTROL Live]** 环境。 从此刻起，它将可供投放。
+每個 **[!UICONTROL Design]** 環境連結至 **[!UICONTROL Live]** 環境。 當優惠方案完成時，其內容和適用性規則會受限於核准週期。 完成此週期後，系統會自動將相關選件部署至 **[!UICONTROL Live]** 環境。 從現在開始，該檔案將可供傳送。
 
-默认情况下，Campaign提供 **[!UICONTROL Design]** 环境和 **[!UICONTROL Live]** 链接到该环境。 这两个环境都已预配置为定位 [内置收件人表](../dev/datamodel.md#ootb-profiles).
+依預設，Campaign會提供 **[!UICONTROL Design]** 環境和 **[!UICONTROL Live]** 連結的環境。 兩個環境都已預先設定為鎖定目標 [內建收件者表格](../dev/datamodel.md#ootb-profiles).
 
 >[!NOTE]
 >
->要定位收件人表，您需要使用目标映射助手创建环境。 [了解详情](#creating-an-offer-environment)。
+>若要鎖定收件者表格，您必須使用目標對應助理員來建立環境。 [了解详情](#creating-an-offer-environment)。
 
 ![](assets/offer_environments_overview_002.png)
 
-投放管理器只能查看 **[!UICONTROL Live]** 并利用优惠来提供它们。 选件管理器可以查看和使用 **[!UICONTROL Design]** 环境，并查看 **[!UICONTROL Live]** 环境。 [了解详情](interaction-operators.md)
+傳遞管理員只能檢視 **[!UICONTROL Live]** 環境並利用選件來提供。 優惠方案經理可以檢視和使用 **[!UICONTROL Design]** 環境，並檢視 **[!UICONTROL Live]** 環境。 [了解详情](interaction-operators.md)
 
-## 为匿名交互创建环境{#create-an-offer-environment}
+## 建立匿名互動的環境{#create-an-offer-environment}
 
-默认情况下，Campaign附带一个内置环境，用于定位收件人表（已识别的选件）。 要定位其他表（如访问网站进行集客交互的匿名用户档案），您需要更新配置。
+依預設，Campaign會隨附內建環境，以鎖定收件者表格（已識別的優惠方案）。 若要鎖定其他表格（例如造訪您網站進行傳入互動的匿名設定檔），您必須更新設定。
 
 按照下面的步骤进行操作：
 
-1. 浏览到 **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**，右键单击要使用的目标映射并选择 **[!UICONTROL Actions]** > **[!UICONTROL Modify the options of the targeting dimension]**.
+1. 瀏覽至 **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**，以滑鼠右鍵按一下您要使用的目標對應，然後選取 **[!UICONTROL Actions]** > **[!UICONTROL Modify the options of the targeting dimension]**.
 
    ![](assets/offer_env_anonymous_001.png)
 
-1. 单击 **[!UICONTROL Next]**，选择 **[!UICONTROL Generate a storage schema for propositions]** 选项并单击 **[!UICONTROL Save]**.
+1. 按一下 **[!UICONTROL Next]**，選取 **[!UICONTROL Generate a storage schema for propositions]** 選項並按一下 **[!UICONTROL Save]**.
 
    ![](assets/offer_env_anonymous_002.png)
 
    >[!NOTE]
    >
-   >如果选项已选中，请取消选中它，然后重新选中它。
+   >如果已核取選項，請取消核取該選項，然後重新核取它。
 
-1. Adobe Campaign创建两个环境 —  **[!UICONTROL Design]** 和 **[!UICONTROL Live]**  — 包含先前启用的目标映射中的目标信息。 环境已预配置了定位信息。
+1. Adobe Campaign會建立兩個環境 —  **[!UICONTROL Design]** 和 **[!UICONTROL Live]**  — 使用先前啟用目標對應的目標定位資訊。 環境已預先設定目標定位資訊。
 
-如果已激活 **[!UICONTROL Visitor]** 映射， **[!UICONTROL Environment dedicated to incoming anonymous interactions]** 框中，此复选框将被自动选中 **[!UICONTROL General]** 选项卡。
+如果您已啟用 **[!UICONTROL Visitor]** 對應， **[!UICONTROL Environment dedicated to incoming anonymous interactions]** 方塊會自動在環境的 **[!UICONTROL General]** 標籤。
 
-利用此选项，可激活特定于匿名交互的函数，尤其是在配置环境选件空间时。 您还可以配置选项，以便从“已识别”环境切换到“匿名”环境。
+此選項可讓您啟用匿名互動的特定功能，尤其是在設定環境選件空間時。 您也可以設定選項來讓您從「已識別」環境切換至「匿名」環境。
 
-例如，您可以将收件人环境选件空间（已识别的联系人）与与访客环境（未识别的联系人）匹配的选件空间链接起来。 这样，联系人就可以获得不同的选件，具体取决于此联系人是否被识别。 有关更多信息，请参阅 [创建优惠空间](interaction-offer-spaces.md).
+例如，您可以將收件者環境優惠方案空間（已識別的連絡人）與符合訪客環境（未識別的連絡人）的優惠方案空間連結。 如此一來，聯絡人便可獲得不同的優惠方案，具體取決於此聯絡人是否識別。 有關詳細資訊，請參閱 [建立優惠方案空間](interaction-offer-spaces.md).
 
 ![](assets/offer_env_anonymous_003.png)
 
 >[!NOTE]
 >
->有关入站渠道上匿名交互的更多信息，请参阅 [匿名互动](anonymous-interactions.md).
+>如需傳入頻道上匿名互動的詳細資訊，請參閱 [匿名互動](anonymous-interactions.md).

@@ -1,6 +1,6 @@
 ---
-title: 新的Campaign v8 API
-description: 新的Campaign v8 API
+title: 全新Campaign v8 API
+description: 全新Campaign v8 API
 feature: API, FFDA
 role: Developer
 level: Beginner, Intermediate, Experienced
@@ -12,29 +12,29 @@ ht-degree: 2%
 
 ---
 
-# 特定FFDA促销活动API{#gs-new-api}
+# 特定FFDA Campaign API{#gs-new-api}
 
-在 [企业(FFDA)部署](enterprise-deployment.md), Campaign v8附带两个特定API，用于管理Campaign本地数据库和云数据库之间的数据。 使用这些功能的先决条件是在架构上启用暂存机制。 [了解详情](staging.md)
+在的內容中 [企業(FFDA)部署](enterprise-deployment.md)，Campaign v8隨附兩個特定API，用於管理Campaign本機資料庫和雲端資料庫之間的資料。 使用這些變數的先決條件是在綱要上啟用準備機制。 [了解详情](staging.md)
 
-* 摄取API: **xtk.session.ingest**
+* 擷取API： **xtk.session.ingest**
 
-   此API仅专用于数据插入。 [了解详情](#data-insert-api)
+   此API僅供資料插入使用。 [了解详情](#data-insert-api)
 
-* 数据更新/删除API: **xtk.session.ingestExt**
+* 資料更新/刪除API： **xtk.session.ingestExt**
 
-   此API用于更新或删除数据。 [了解详情](#data-update-api)
+   此API用於更新或刪除資料。 [了解详情](#data-update-api)
 
-专用的内置工作流将同步云数据库中的数据。
+專屬的內建工作流程將會同步雲端資料庫中的資料。
 
-## 插入数据{#data-insert-api}
+## 插入資料{#data-insert-api}
 
-的 **xtk.session.ingest** API仅专用于数据插入。 无更新/删除。
+此 **xtk.session.ingest** API僅專用於「資料插入」。 無更新/刪除。
 
-### 插入时不进行协调{#insert-no-reconciliation}
+### 插入但不進行調解{#insert-no-reconciliation}
 
-**在工作流中**
+**在工作流程中**
 
-在 **Javascript代码** 活动，在云数据库中插入数据而不进行协调：
+在中使用下列程式碼 **Javascript程式碼** 將資料插入雲端資料庫而不進行調解的活動：
 
 ```
 var xmlStagingSampleTable = <sampleTableStg
@@ -46,12 +46,12 @@ strUuid = xtk.session.Ingest(xmlStagingSampleTable);
 logInfo(strUuid);
 ```
 
-执行工作流后，将按预期提供暂存表。
+執行工作流程後，會依預期提供暫存表格。
 
-**通过SOAP调用**
+**從SOAP呼叫**
 
-1. 获取身份验证令牌。
-1. 触发API。 负载是：
+1. 取得驗證權杖。
+1. 觸發API。 承載為：
 
    ```
    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:xtk:session">
@@ -71,7 +71,7 @@ logInfo(strUuid);
    </soapenv:Envelope>
    ```
 
-1. UUID会发送回SOAP响应：
+1. UUID會傳回SOAP回應：
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -83,15 +83,15 @@ logInfo(strUuid);
    </SOAP-ENV:Envelope>
    ```
 
-因此，将按照预期提供暂存表。
+因此，會如預期提供臨時資料表。
 
 ![](assets/no-reconciliation.png)
 
-### 插入并协调
+### 插入並調解
 
-**在工作流中**
+**在工作流程中**
 
-在 **Javascript代码** 活动，以将数据插入具有协调的云数据库：
+在中使用下列程式碼 **Javascript程式碼** 使用調解在雲端資料庫中插入資料的活動：
 
 ```
 var xmlStagingSampleTable = <sampleTableStg  _key="@id" id="ABC12345"
@@ -103,15 +103,15 @@ strUuid = xtk.session.Ingest(xmlStagingSampleTable);
 logInfo(strUuid);
 ```
 
-执行工作流后，将按预期提供暂存表。
+執行工作流程後，會依預期提供暫存表格。
 
 ![](assets/with-reconciliation.png)
 
 
-**通过SOAP调用**
+**從SOAP呼叫**
 
-1. 获取身份验证令牌。
-1. 触发API。 负载是：
+1. 取得驗證權杖。
+1. 觸發API。 承載為：
 
    ```
    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:xtk:session">
@@ -131,7 +131,7 @@ logInfo(strUuid);
    </soapenv:Envelope>
    ```
 
-1. 在这种情况下，不会向响应提供UUID，因为已在有效负载中提供UUID。 响应是：
+1. 在此情況下，UUID不會提供回回應，因為它已在裝載中提供。 回應為：
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -143,17 +143,17 @@ logInfo(strUuid);
    </SOAP-ENV:Envelope>
    ```
 
-因此，将按照预期提供暂存表。
+因此，會如預期提供臨時資料表。
 
-## 更新或删除数据{#data-update-api}
+## 更新或刪除資料{#data-update-api}
 
-的 **xtk.session.IngestExt** 优化了API以进行数据更新/删除。 仅插入，首选 **xtk.session.ingest**. 无论记录键是否在暂存表中，插入操作都正在进行。
+此 **xtk.session.IngestExt** API已針對資料更新/刪除進行最佳化。 僅用於插入，首選 **xtk.session.ingest**. 無論記錄索引鍵是否不在臨時資料表中，Insert都正常運作。
 
 ### 插入/更新
 
-**在工作流中**
+**在工作流程中**
 
-在 **Javascript代码** 用于更新云数据库中数据的活动：
+在中使用下列程式碼 **Javascript程式碼** 更新雲端資料庫中資料的活動：
 
 ```
 var xmlStagingRecipient = <sampleTableStg  _key="@id" id="ABC12345"
@@ -164,14 +164,14 @@ var xmlStagingRecipient = <sampleTableStg  _key="@id" id="ABC12345"
 xtk.session.IngestExt(xmlStagingRecipient);
 ```
 
-执行工作流后，将按预期更新暂存表。
+執行工作流程後，暫存表格會如預期更新。
 
 ![](assets/updated-data.png)
 
-**通过SOAP调用**
+**從SOAP呼叫**
 
-1. 获取身份验证令牌。
-1. 触发API。 负载是：
+1. 取得驗證權杖。
+1. 觸發API。 承載為：
 
    ```
    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:xtk:session">
@@ -191,7 +191,7 @@ xtk.session.IngestExt(xmlStagingRecipient);
    </soapenv:Envelope>
    ```
 
-1. SOAP响应为：
+1. SOAP回應為：
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -201,13 +201,13 @@ xtk.session.IngestExt(xmlStagingRecipient);
    </SOAP-ENV:Envelope>
    ```
 
-因此，将按照预期更新暂存表。
+因此，臨時資料表會如預期更新。
 
-## 订阅管理 {#sub-apis}
+## 訂閱管理 {#sub-apis}
 
-有关Campaign中的订阅管理，请参阅 [本页](../start/subscriptions.md).
+Campaign中的訂閱管理說明，請參閱 [此頁面](../start/subscriptions.md).
 
-订阅和退订数据的插入取决于 [分级机制](staging.md) 在Campaign本地数据库中。 订阅者信息临时存储在本地数据库的暂存表中，并且同步工作流会将此数据从本地数据库发送到云数据库。 因此，订购和退订流程 **异步**. 选择加入和选择退出请求每小时通过特定的技术工作流进行处理。 [了解详情](replication.md#tech-wf)
+插入訂閱和取消訂閱資料仰賴 [準備機制](staging.md) 在Campaign本機資料庫中。 訂閱者資訊會暫時儲存在本機資料庫的臨時資料表中，而同步工作流程會將此資料從本機資料庫傳送至雲端資料庫。 因此，訂閱和取消訂閱程式會 **非同步**. 選擇加入和選擇退出請求會每小時透過特定技術工作流程處理。 [了解详情](replication.md#tech-wf)
 
 
 **相关主题**

@@ -1,6 +1,6 @@
 ---
-title: 更新数据库结构
-description: 更新数据库结构
+title: 更新資料庫結構
+description: 更新資料庫結構
 role: Developer
 level: Intermediate, Experienced
 exl-id: fc64f3ca-67f1-47b7-b154-9c9dd044192c
@@ -11,24 +11,24 @@ ht-degree: 0%
 
 ---
 
-# 更新数据库结构{#updating-the-database-structure}
+# 更新資料庫結構{#updating-the-database-structure}
 
-要应用对架构所做的修改，请启动数据库更新向导。 此助手可通过 **[!UICONTROL Tools > Advanced > Update database structure]**. 它检查数据库的物理结构是否与其逻辑描述匹配，并执行SQL更新脚本。
+若要套用對結構描述所做的修改，請啟動資料庫更新精靈。 此助理的存取方式為 **[!UICONTROL Tools > Advanced > Update database structure]**. 它會檢查資料庫的實體結構是否符合其邏輯描述，並執行SQL更新指令碼。
 
 ![](assets/schema_update.png)
 
-数据库中的模块会自动填充和激活。
+資料庫中的模組會自動填入並啟動。
 
 ![](assets/schema_update_select2.png)
 
-按照以下步骤查看数据库更新SQL脚本：
+請依照下列步驟操作，並檢視資料庫更新SQL指令碼：
 
 ![](assets/schema_update2.png)
 
 >[!NOTE]
 >
->它位于编辑字段中，可进行修改以删除或添加SQL代码。
+>此專案位於編輯欄位中，可以修改以刪除或新增SQL程式碼。
 
-接下来，启动数据库更新：
+接下來，啟動資料庫更新：
 
 ![](assets/schema_update3.png)

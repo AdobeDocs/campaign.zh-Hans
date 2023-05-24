@@ -1,6 +1,6 @@
 ---
-title: Campaign互动用例
-description: 交互用例
+title: Campaign互動使用案例
+description: 互動使用案例
 feature: Interaction, Offers
 role: Data Engineer
 level: Beginner
@@ -14,12 +14,12 @@ ht-degree: 2%
 
 # 用例
 
-通过Campaign Classicv7文档中提供的这些分步使用案例，利用Campaign交互功能：
+透過Campaign Classic v7檔案中提供的以下逐步使用案例，善用Campaign互動功能：
 
-![](../assets/do-not-localize/book.png) [创建并应用演示规则](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/presentation-rules.html){target="_blank"}
+![](../assets/do-not-localize/book.png) [建立並套用簡報規則](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/presentation-rules.html){target="_blank"}
 
-![](../assets/do-not-localize/book.png) [发送电子邮件选件投放](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html){target="_blank"}
+![](../assets/do-not-localize/book.png) [傳送電子郵件選件傳遞](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html){target="_blank"}
 
-![](../assets/do-not-localize/book.png) [向匿名访客提供选件](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html){target="_blank"}
+![](../assets/do-not-localize/book.png) [向匿名訪客呈現優惠方案](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html){target="_blank"}
 
-![](../assets/do-not-localize/book.png) [执行优惠模拟](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html){target="_blank"}
+![](../assets/do-not-localize/book.png) [執行優惠方案模擬](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html){target="_blank"}

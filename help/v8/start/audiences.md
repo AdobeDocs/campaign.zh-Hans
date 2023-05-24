@@ -1,6 +1,6 @@
 ---
-title: 在Campaign中使用受众
-description: 在Campaign中使用受众
+title: 在Campaign中使用對象
+description: 在Campaign中使用對象
 feature: Audiences
 role: User
 level: Beginner
@@ -12,38 +12,38 @@ ht-degree: 22%
 
 ---
 
-# 在Campaign中使用受众{#gs-ac-audiences}
+# 在Campaign中使用對象{#gs-ac-audiences}
 
-用户档案是存储在Campaign数据库中的联系人。
+設定檔是儲存在Campaign資料庫中的連絡人。
 
-在Adobe Campaign, **收件人** 是发送投放（电子邮件、短信等）的默认定向用户档案。 通过数据库中存储的收件人数据，您可以筛选将接收任何给定投放的目标，并在投放内容中添加个性化数据。 数据库中还有其他类型的用户档案。这些用户档案是针对不同用途而设计的。例如，种子用户档案用于在将投放内容发送给最终目标前测试该投放内容。
+在Adobe Campaign中， **收件者** 是用於傳送傳遞（電子郵件、簡訊等）的預設設定檔。 資料庫中儲存的收件者資料可讓您篩選將接收任何指定傳遞的目標，並在傳遞內容中新增個人化資料。 数据库中还有其他类型的用户档案。这些用户档案是针对不同用途而设计的。例如，种子用户档案用于在将投放内容发送给最终目标前测试该投放内容。
 
-了解如何导入、更新和管理用户档案和受众 [在此部分中](../audiences/gs-audiences.md).
+瞭解如何匯入、更新及管理設定檔和對象 [在本節中](../audiences/gs-audiences.md).
 
-## 创建列表{#create-lists}
+## 建立清單{#create-lists}
 
-列表是一组静态联系人，可在投放操作中定位，或在导入或其他工作流操作期间更新。 例如，通过查询从数据库中提取的群体可以存储为列表。
+清單是一組靜態的聯絡人，可在傳遞動作中定位，或在匯入或其他工作流程動作中更新。 例如，透過查詢從資料庫中擷取的母體可以儲存為清單。
 
-![](../assets/do-not-localize/glass.png) 了解如何在 [本页](../audiences/create-audiences.md).
+![](../assets/do-not-localize/glass.png) 瞭解如何在中建立和管理清單 [此頁面](../audiences/create-audiences.md).
 
-## 过滤数据库{#filter-the-database}
+## 篩選資料庫{#filter-the-database}
 
-过滤器配置允许您从列表中选择数据 **[!UICONTROL dynamically]**:修改数据时，会更新过滤的数据。 您可以创建自己的过滤器，也可以使用内置过滤器来定义目标受众。
+篩選設定可讓您從清單中選取資料 **[!UICONTROL dynamically]**：修改資料時，會更新篩選的資料。 您可以建立自己的篩選器，或使用內建篩選器來定義目標對象。
 
-![](../assets/do-not-localize/glass.png) 了解如何在 [本页](../audiences/create-filters.md).
+![](../assets/do-not-localize/glass.png) 瞭解如何在中建立和管理篩選器 [此頁面](../audiences/create-filters.md).
 
-## 在工作流中创建受众
+## 在工作流程中建立對象
 
-定位可以通过工作流中图形序列中的查询组合来创建。 您可以创建受众，以便根据您的要求进行定位。 要显示工作流编辑器，请单击 **[!UICONTROL Targeting and workflows]** 选项卡。
+目標定位可透過工作流程中圖形順序的查詢組合來建立。 您可以建立受眾，並根據您的需求鎖定這些受眾。 若要顯示工作流程編輯器，請按一下 **[!UICONTROL Targeting and workflows]** 索引標籤進行標籤。
 
-了解如何在的营销活动工作流中构建受众 [本页](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans)
+瞭解如何在的行銷活動工作流程中建立對象 [此頁面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans)
 
 
 ## 使用中的用户档案{#active-profiles}
 
-根据您的合同，您的每个Campaign实例都会配置特定数量的活动用户档案，这些活动用户档案会被计为计费用。 请参阅您的最新合同，了解已购买的活动用户档案数量。
+根據您的合約，您的每個Campaign執行個體都會布建特定數量的作用中設定檔，且會計算這些設定檔數量以結算費用。 请参阅您的最新合同，了解已购买的活动用户档案数量。
 
-**用户档案** 指信息记录(例如：记录 [收件人表](../dev/datamodel.md) 或包含Cookie ID、客户ID、移动标识符或与特定渠道相关的其他信息的外部表)，表示最终客户、潜在客户。 如果用户档案在过去12个月内通过任何渠道被定向或传达，则会将其视为活动用户档案。
+**設定檔** 表示資訊記錄(例如： [收件者表格](../dev/datamodel.md) 或包含Cookie ID、客戶ID、行動識別碼或與特定管道相關的其他資訊的外部表格)，代表最終客戶、潛在客戶或潛在客戶。 如果設定檔在過去12個月內透過任何管道被定位或通訊，則會視為作用中。
 
 <!--
 You can monitor the number of active profiles used on your instances directly from Campaign Control Panel. 
@@ -53,14 +53,14 @@ You can monitor the number of active profiles used on your instances directly fr
 
 ## 隐私和同意{#privacy-and-consent}
 
-Adobe Campaign是用于收集和处理大量数据（包括个人信息和敏感数据）的强大工具。 通过 Adobe Campaign，您可以收集数据，包括个人信息和敏感信息。因此，获得并监控收件人的同意至关重要。
+Adobe Campaign是一款強大的工具，用於收集和處理包括個人資訊及敏感資料在內的大量資料。 通过 Adobe Campaign，您可以收集数据，包括个人信息和敏感信息。因此，获得并监控收件人的同意至关重要。
 
-![](../assets/do-not-localize/book.png) 了解如何在 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans){target="_blank"}.
+![](../assets/do-not-localize/book.png) 瞭解如何在中管理隱私權與同意 [Adobe Campaign Classic v7檔案](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans){target="_blank"}.
 
 **相关主题**
 
-* [设计和执行特定于营销活动的工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/campaign-workflows.html)
+* [設計和執行行銷活動專屬的工作流程](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/campaign-workflows.html)
 
-* [了解如何选择营销活动的受众](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans)
+* [瞭解如何選取行銷活動的對象](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans)
 
 * [工作流入门](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)

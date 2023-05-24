@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 营销活动投放
-description: 了解有关营销活动投放的更多信息
+description: 進一步瞭解行銷活動傳遞
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
 source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
@@ -13,102 +13,102 @@ ht-degree: 1%
 
 # 营销活动投放 {#marketing-campaign-deliveries}
 
-在活动中编排跨渠道投放：通过个性化电子邮件、短信、推送通知和应用程序内消息简化与Adobe Campaign的通信。 您可以使用富媒体(如视频、表情符号或GIF)并直接集成它们。
+在行銷活動中協調跨管道傳送：透過個人化電子郵件、簡訊、推播通知和應用程式內訊息，簡化您與Adobe Campaign的通訊。 您可以使用影片、表情符號或GIF等豐富媒體，並直接加以整合。
 
-投放可通过营销活动仪表板、营销活动工作流创建，或直接通过投放概述创建。 从营销活动创建投放后，投放将链接到此营销活动，并在营销活动级别进行整合。
+傳遞可透過行銷活動控制面板、行銷活動工作流程建立，或直接透過傳遞概述建立。 從行銷活動建立傳遞時，會連結至此行銷活動，並在行銷活動層級合併。
 
 ## 创建投放 {#create-deliveries}
 
-您可以通过两种方式向营销活动添加投放：
+您有兩種方式可將傳遞新增至行銷活動：
 
-* 从 **[!UICONTROL Add a delivery]** 链接。
+* 從 **[!UICONTROL Add a delivery]** 行銷活動控制面板中的連結。
 
 ![](assets/campaign_op_add_delivery.png)
 
-保存后，投放会添加到营销活动仪表板。
+儲存後，傳送會新增至行銷活動控制面板。
 
-* 在营销活动工作流中， **[!UICONTROL Targeting and workflows]** 选项卡，方法是添加投放。
+* 從行銷活動工作流程，在 **[!UICONTROL Targeting and workflows]** 索引標籤中，透過新增傳送來建立。
 
    ![](assets/campaign-wf-delivery.png)
 
-   工作流启动后，投放会添加到营销活动仪表板。
+   工作流程開始後，傳送會新增至行銷活動控制面板。
 
-了解如何设置和执行投放审批流程 [本页](marketing-campaign-approval.md).
+瞭解如何設定及執行傳遞核准流程 [在此頁面中](marketing-campaign-approval.md).
 
-## 开始投放 {#start-a-delivery}
+## 開始傳遞 {#start-a-delivery}
 
-在授予所有批准后，即可发送投放。 投放执行过程取决于渠道。
+授與所有核准後，即可傳送傳遞。 傳遞執行程式取決於頻道。
 
-* 有关电子邮件或移动渠道投放，请参阅 [此部分](#start-an-online-delivery)
+* 如需電子郵件或行動裝置頻道傳遞的相關資訊，請參閱 [本節](#start-an-online-delivery)
 
-* 有关直邮投放，请参阅 [此部分](#start-an-offline-delivery)
+* 若為直接郵件傳遞，請參閱 [本節](#start-an-offline-delivery)
 
-### 开始电子邮件或移动投放 {#start-an-online-delivery}
+### 開始電子郵件或行動傳送 {#start-an-online-delivery}
 
-在授予所有批准请求后，投放状态将更改为 **[!UICONTROL Pending confirmation]** 和。 可以开始投放的审阅人会收到投放准备就绪的通知。
+在核准所有核准請求後，傳送狀態會變更為 **[!UICONTROL Pending confirmation]** 並且可以啟動。 可以開始傳送的稽核者會收到傳送已準備好開始的通知。
 
 ![](assets/confirm-delivery.png)
 
-该信息也会显示在营销活动仪表板上。 的 **[!UICONTROL Confirm delivery]** 链接允许您开始投放。
+此資訊也會顯示在行銷活動控制面板上。 此 **[!UICONTROL Confirm delivery]** 連結可讓您開始傳遞。
 
 ![](assets/confirm-delivery-from-dashboard.png)
 
-确认投放仅限于管理员，以及投放属性或营销活动属性中明确提及的操作员或操作员组。 如果未设计操作员，则管理员和营销活动所有者可以批准。
+確認傳送僅限於管理員，以及傳送或行銷活動屬性中明確提及的操作者或操作者群組。 如果未設計運運算元，則管理員和行銷活動所有者可以核准。
 
 ![](assets/select-delivery-reviewers.png)
 
-但是，您也可以允许营销活动所有者确认发送，即使在投放属性或营销活动属性中定义了特定的审阅者也是如此。 为此，请以管理员身份创建 **NmsCampaign_Activate_OwnerConfirmation** 选项，并将其设置为 **1**. 选项通过 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** Campaign资源管理器的文件夹。
+不過，您也可以允許行銷活動擁有者確認傳送，即使傳送或行銷活動屬性中已定義特定稽核者亦然。 若要這麼做，請以管理員身分建立 **NmsCampaign_Activate_OwnerConfirmation** 選項並將其設定為 **1**. 這些選項的管理方式為 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** Campaign檔案總管的資料夾。
 
 
-### 启动直邮投放 {#start-an-offline-delivery}
+### 開始直接郵件傳送 {#start-an-offline-delivery}
 
-在授予所有批准后，投放状态将更改为 **[!UICONTROL Pending extraction]**. 提取文件通过专用 [技术工作流](../workflow/technical-workflows.md) 在默认配置中，当直邮投放处于待提取状态时，将自动启动直邮投放。 进程进行中时，该进程会显示在功能板中，并可通过其链接进行编辑。
+取得所有核准後，傳遞狀態會變更為 **[!UICONTROL Pending extraction]**. 擷取檔案是透過專用的 [技術工作流程](../workflow/technical-workflows.md) 在預設設定中，當直接郵件傳遞擱置擷取時，會自動啟動。 當程式正在進行時，它會顯示於控制面板中，並可透過其連結進行編輯。
 
-成功执行提取工作流后，必须批准提取文件（前提是已在投放设置中选择提取文件的批准）。 [了解详情](marketing-campaign-approval.md#approving-an-extraction-file)。
+成功執行擷取工作流程後，必須核准擷取檔案（前提是在傳送設定中選取了擷取檔案核准）。 [了解详情](marketing-campaign-approval.md#approving-an-extraction-file)。
 
-请按照以下步骤验证内容并将文件发送给提供商：
+請依照下列步驟驗證內容，並將檔案傳送給提供者：
 
-1. 提取文件获得批准后，即可生成路由器通知电子邮件的校样。 此电子邮件基于投放模板构建。 必须获得批准。
+1. 擷取檔案獲得核准後，您就可以產生路由器通知電子郵件的校樣。 此電子郵件訊息是根據傳遞範本所建構。 必須經過核准。
 
-   此步骤仅在 **[!UICONTROL Enable the sending and validation of proofs (Direct mail)]** 选项 **[!UICONTROL Approvals]** 选项卡。
+   此步驟僅適用於 **[!UICONTROL Enable the sending and validation of proofs (Direct mail)]** 選項已啟用於 **[!UICONTROL Approvals]** 進階促銷活動引數的標籤。
 
    ![](assets/enable-proof-validation.png)
 
-1. 单击 **[!UICONTROL Send a proof]** 按钮以创建校样。
+1. 按一下 **[!UICONTROL Send a proof]** 按鈕以建立校樣。
 
-   校样目标必须事先定义。
+   必須預先定義校樣目標。
 
-   您可以创建所需数量的校样。 可通过 **[!UICONTROL Direct mail...]** 投放详细信息的链接。
+   您可以視需要建立儘可能多的校樣。 這些檔案可透過 **[!UICONTROL Direct mail...]** 傳遞詳細資料的連結。
 
-1. 投放状态将更改为 **[!UICONTROL To submit]**. 单击 **[!UICONTROL Submit proofs]** 按钮以启动批准流程。
+1. 傳遞狀態變更為 **[!UICONTROL To submit]**. 按一下 **[!UICONTROL Submit proofs]** 按鈕以開始核准流程。
 
-1. 投放状态将更改为 **[!UICONTROL Proof to validate]** 而按钮则允许您接受或拒绝批准。
+1. 傳遞狀態變更為 **[!UICONTROL Proof to validate]** 和按鈕可讓您接受或拒絕核准。
 
-   您可以接受或拒绝此批准，或返回提取步骤。
+   您可以接受或拒絕此核准，或返回擷取步驟。
 
-1. 校样获得批准后，提取文件将发送到路由器并完成传送。
+1. 校樣獲得核准後，解壓縮檔案就會傳送至路由器並完成傳送。
 
-### 预算和成本计算 {#compute-costs-and-stocks}
+### 預算與成本計算 {#compute-costs-and-stocks}
 
-文件提取会启动两个进程：预算计算和库存计算。 预算条目会更新。
+檔案擷取會啟動兩個程式：預算計算和庫存計算。 預算專案會更新。
 
-* 的 **[!UICONTROL Budget]** 选项卡，用于管理营销活动的预算。 成本分录的合计显示在 **[!UICONTROL Calculated cost]** 营销活动主选项卡及其所属项目的字段。 金额也反映在促销活动预算中。
+* 此 **[!UICONTROL Budget]** 索引標籤可讓您管理行銷活動的預算。 成本專案的總計會顯示在 **[!UICONTROL Calculated cost]** 行銷活動主要標籤及其所屬方案的欄位。 這些金額也會反映在行銷活動預算中。
 
    ![](assets/campaign-budget-tab.png)
 
-   实际成本最终将根据路由器提供的信息计算。 只有实际发送的消息才会开票。
+   實際成本最終將根據路由器提供的資訊計算。 只有實際傳送的訊息才會開立發票。
 
-* 股票于 **[!UICONTROL Administration > Campaign management > Stocks]** 树的节点。
+* 庫存定義於 **[!UICONTROL Administration > Campaign management > Stocks]** 樹狀結構的節點。
 
    ![](assets/campaign-stocks.png)
 
-   成本结构 **[!UICONTROL Administration > Campaign management > Service providers]** 节点。
+   中的成本結構 **[!UICONTROL Administration > Campaign management > Service providers]** 節點。
 
    ![](assets/campaign-service-providers.png)
 
-   库存行在库存部分中可见。 要定义初始库存，请打开库存行。 每次交货时，库存都会减少。 您可以定义警报级别和通知。
+   坯件線會顯示在坯件區段中。 若要定義初始坯件，請開啟坯件線。 每次進行交貨時，庫存都會減少。 您可以定義警示等級與通知。
 
 
    >[!NOTE]
    >
-   >了解有关预算的更多信息 [在此部分中](providers--stocks-and-budgets.md).
+   >進一步瞭解預算 [在本節中](providers--stocks-and-budgets.md).

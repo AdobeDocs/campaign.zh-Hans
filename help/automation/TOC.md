@@ -10,13 +10,13 @@ ht-degree: 84%
 ---
 
 
-# Campaign自动化指南 {#automation}
+# Campaign自動化指南 {#automation}
 
 + [Campaign 自动化指南](home.md)
 + 使用工作流实现自动化 {#workflows}
    + 工作流入门 {#introduction}
       + [关于工作流](workflow/about-workflows.md)
-      + 工作流的类型 {#wf-type}
+      + 工作流程型別 {#wf-type}
          + [定位工作流](workflow/targeting-workflows.md)
          + [活动工作流](workflow/campaign-workflows.md)
          + [技术工作流](workflow/technical-workflows.md)
@@ -26,15 +26,15 @@ ht-degree: 84%
    + 执行工作流{#executing-a-workflow}
       + [开始工作流](workflow/start-a-workflow.md)
       + [工作流生命周期](workflow/workflow-life-cycle.md)
-      + [设置批准](workflow/define-approvals.md)
+      + [設定核准](workflow/define-approvals.md)
    + 监测工作流{#monitoring-workflows}
       + [监测工作流执行](workflow/monitor-workflow-execution.md)
       + [监测技术工作流](workflow/monitor-technical-workflows.md)
       + [工作流热图](workflow/heatmap.md)
    + 工作流活动 {#wf-activities}
-      + [活动入门](workflow/activities.md)
+      + [開始使用活動](workflow/activities.md)
       + 定位活动 {#targeting-activities}
-         + [定位活动列表](workflow/targeting-activities.md)
+         + [目標定位活動清單](workflow/targeting-activities.md)
          + [单元格](workflow/cells.md)
          + [更改数据源](workflow/change-data-source.md)
          + [更改维度](workflow/change-dimension.md)
@@ -56,7 +56,7 @@ ht-degree: 84%
          + [并集](workflow/union.md)
          + [更新数据](workflow/update-data.md)
       + 流量控制活动 {#flow-control-activities}
-         + [流量控制活动列表](workflow/flow-control-activities.md)
+         + [流量控制活動清單](workflow/flow-control-activities.md)
          + [警报](workflow/alert.md)
          + [AND-连接](workflow/and-join.md)
          + [审批](workflow/approval.md)
@@ -70,7 +70,7 @@ ht-degree: 84%
          + [时间约束](workflow/time-constraint.md)
          + [等待](workflow/wait.md)
       + 操作活动 {#action-activities}
-         + [行动活动列表](workflow/action-activities.md)
+         + [動作活動清單](workflow/action-activities.md)
          + [内容管理](workflow/content-management.md)
          + [连续投放](workflow/continuous-delivery.md)
          + [跨渠道投放](workflow/cross-channel-deliveries.md)
@@ -87,7 +87,7 @@ ht-degree: 84%
          + [SQL 数据管理](workflow/sql-data-management.md)
          + [更新聚合](workflow/update-aggregate.md)
       + 事件活动 {#event-activities}
-         + [事件活动列表](workflow/event-activities.md)
+         + [事件活動清單](workflow/event-activities.md)
          + [文件收集器](workflow/file-collector.md)
          + [文件传输](workflow/file-transfer.md)
          + [入站电子邮件](workflow/inbound-emails.md)
@@ -117,7 +117,7 @@ ht-degree: 84%
       + 查询和筛选{#designing-queries}
          + [查询收件人表](workflow/querying-recipient-table.md)
          + [查询投放信息](workflow/query-delivery-info.md)
-         + [计算聚合](workflow/compute-aggregates.md)
+         + [計算彙總](workflow/compute-aggregates.md)
          + [使用分组管理进行查询](workflow/query-grouping-management.md)
          + [使用多对多关系进行查询](workflow/query-many-to-many-relationship.md)
          + [添加明细列表类型计算字段](workflow/adding-enumeration-type-calculated-field.md)
@@ -134,35 +134,35 @@ ht-degree: 84%
       + [管理时区](workflow/managing-time-zones.md)
 + 营销活动编排 {#campaign-orchestration}
    + [营销活动入门](campaigns/set-up-campaigns.md)
-   + [创建项目和营销策划](campaigns/marketing-campaign-create.md)
+   + [建立方案和行銷活動](campaigns/marketing-campaign-create.md)
    + [创建和配置模板](campaigns/marketing-campaign-templates.md)
    + [添加投放](campaigns/marketing-campaign-deliveries.md)
    + [选择受众](campaigns/marketing-campaign-target.md)
    + [管理文档和资产](campaigns/marketing-campaign-assets.md)
    + [设置和管理审批](campaigns/marketing-campaign-approval.md)
-   + [定期和定期促销活动](campaigns/recurring-periodic-campaigns.md)
+   + [循環和定期行銷活動](campaigns/recurring-periodic-campaigns.md)
    + [监测活动](campaigns/marketing-campaign-monitoring.md)
    + [供应商、库存和预算](campaigns/providers--stocks-and-budgets.md)
-+ 促销活动优化（附加组件）{#campaign-optimization}
-   + [活动分类快速入门](campaign-opt/campaign-typologies.md)
++ 行銷活動最佳化（附加元件）{#campaign-optimization}
+   + [開始使用行銷活動型別](campaign-opt/campaign-typologies.md)
    + [筛选规则](campaign-opt/filtering-rules.md)
    + [控制规则](campaign-opt/control-rules.md)
    + [压力规则](campaign-opt/pressure-rules.md)
    + [一致性规则](campaign-opt/consistency-rules.md)
    + [应用规则](campaign-opt/apply-rules.md)
    + [活动模拟](campaign-opt/campaign-simulations.md)
-+ 营销资源管理（附加组件）{#mrm}
-   + [营销资源管理入门](mrm/about-marketing-resource-management.md)
++ 行銷資源管理（附加元件）{#mrm}
+   + [開始使用行銷資源管理](mrm/about-marketing-resource-management.md)
    + [创建和管理任务](mrm/creating-and-managing-tasks.md)
    + [控制成本](mrm/controlling-costs.md)
    + [管理营销资源](mrm/managing-marketing-resources.md)
    + [论坛](mrm/discussion-forums.md)
-+ 分布式营销（附加组件） {#distributed-marketing}
-   + [分布式营销入门](distributed-marketing/about-distributed-marketing.md)
++ 分散式行銷（附加元件） {#distributed-marketing}
+   + [開始使用分散式行銷](distributed-marketing/about-distributed-marketing.md)
    + [创建本地活动](distributed-marketing/creating-a-local-campaign.md)
    + [创建协作活动](distributed-marketing/creating-a-collaborative-campaign.md)
    + [发布活动包](distributed-marketing/publishing-the-campaign-package.md)
    + [访问活动](distributed-marketing/accessing-campaigns.md)
    + [跟踪活动](distributed-marketing/tracking-a-campaign.md)
    + [用例](distributed-marketing/examples.md)
-+ [Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=zh-Hans)
++ [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=zh-Hans)

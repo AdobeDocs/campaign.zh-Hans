@@ -1,6 +1,6 @@
 ---
-title: Campaign电子邮件渠道设置
-description: Campaign电子邮件渠道设置
+title: Campaign電子郵件頻道設定
+description: Campaign電子郵件頻道設定
 feature: Email
 role: User
 level: Intermediate, Experienced
@@ -12,7 +12,7 @@ ht-degree: 5%
 
 ---
 
-# Campaign电子邮件渠道设置
+# Campaign電子郵件頻道設定
 
 ## 电子邮件密件抄送 {#email-bcc}
 
@@ -21,29 +21,29 @@ ht-degree: 5%
 >
 >This capability is available starting Campaign v8.3. To check your version, refer to [this section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)-->
 
-您可以配置Adobe Campaign以保留从您的平台发送的电子邮件副本。
+您可以設定Adobe Campaign以保留從您的平台傳送的電子郵件復本。
 
-Adobe Campaign本身不管理已存档的文件。 它确实允许您将您选择的消息发送到专用的密件抄送（盲碳拷贝）电子邮件地址，从中可以使用外部系统处理和存档这些消息。 然后，与已发送电子邮件对应的.eml文件可以传输到远程服务器，如SMTP电子邮件服务器。
-
->[!CAUTION]
->
->出于隐私原因，密件抄送电子邮件必须由能够存储安全的个人身份信息(PII)的存档系统处理。
-
-存档目标是您选择的密件抄送电子邮件地址，投放收件人将看不到该地址。
-
-![](../assets/do-not-localize/speech.png)  作为托管Cloud Services用户， [联系Adobe](../start/campaign-faq.md#support){target="_blank"} 用于传达要存档的密送电子邮件地址。
-
-定义密件抄送电子邮件地址后，必须在投放级别启用专用选项。
+Adobe Campaign本身不會管理封存的檔案。 它可讓您選擇將訊息傳送至專用的密件副本（密件副本）電子郵件地址，您可使用外部系統進行處理和封存。 與已傳送電子郵件相對應的.eml檔案可以傳送到遠端伺服器，例如SMTP電子郵件伺服器。
 
 >[!CAUTION]
 >
->创建新投放或投放模板时， **[!UICONTROL Email BCC]** 默认情况下，未启用。 您需要在电子邮件投放或投放模板中手动启用它。
+>基於隱私權考量，密件副本電子郵件必須由能夠安全儲存個人識別資訊(PII)的封存系統處理。
+
+封存目的地是您選擇的密件副本電子郵件地址，傳遞收件者將看不到該地址。
+
+![](../assets/do-not-localize/speech.png)  身為Managed Cloud Services使用者， [連絡人Adobe](../start/campaign-faq.md#support){target="_blank"} 傳達要用於封存的密件副本電子郵件地址。
+
+定義密件副本電子郵件地址後，您必須在傳送層級啟用專用選項。
+
+>[!CAUTION]
+>
+>建立新的傳遞或傳遞範本時， **[!UICONTROL Email BCC]** 預設為未啟用。 您必須在電子郵件傳遞或傳遞範本中手動啟用。
 
 
 为此请执行以下操作步骤：
 
-1. 转到 **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]**&#x200B;或 **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
-1. 选择所选的投放，或复制现成的 **[!UICONTROL Email delivery]** 模板，然后选择复制的模板。
+1. 前往 **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]**，或 **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
+1. 選取您選擇的傳遞專案或複製現成可用的傳遞專案 **[!UICONTROL Email delivery]** 範本，然後選取複製的範本。
 1. 单击 **[!UICONTROL Properties]** 按钮。
 1. 选择 **[!UICONTROL Delivery]** 选项卡。
 1. 勾选 **[!UICONTROL Email BCC]** 选项。
@@ -52,34 +52,34 @@ Adobe Campaign本身不管理已存档的文件。 它确实允许您将您选�
 
 1. 选择 **[!UICONTROL Ok]**。
 
-基于此模板的每个投放的所有已发送消息副本将发送到已配置的电子邮件密送地址。
+系統會根據此範本，將每次傳遞的所有已傳送訊息副本傳送至已設定的電子郵件密件副本地址。
 
-请注意以下特性和建议：
+請注意下列具體細節和建議：
 
-* 您只能使用一个密件抄送电子邮件地址。
+* 您只能使用一個密件副本電子郵件地址。
 
-* 确保密件抄送地址具有足够的接收容量，以存档所有已发送的电子邮件。
+* 請確定密件副本位址有足夠的接收容量，可封存所有已傳送的電子郵件。
 
-* 电子邮件密送 <!--with Enhanced MTA--> 在将邮件投放到收件人之前，会将邮件发送到密送电子邮件地址，这可能会导致发送密送消息，即使原始投放可能已退件。 有关退回的更多信息，请参阅 [了解投放失败](../send/delivery-failures.md).
+* 電子郵件密件副本 <!--with Enhanced MTA--> 會在傳遞給收件者之前傳遞給密件副本電子郵件地址，這可能會導致即使原始傳遞可能已跳出，仍會傳送密件副本訊息。 如需退信的詳細資訊，請參閱 [瞭解傳遞失敗](../send/delivery-failures.md).
 
-* 如果打开并点进发送到密件抄送地址的电子邮件，则在 **[!UICONTROL Total opens]** 和 **[!UICONTROL Clicks]** 来自发送分析，这可能会导致一些错误计算。
+* 如果傳送至密件副本地址的電子郵件被開啟並按過，這將會在 **[!UICONTROL Total opens]** 和 **[!UICONTROL Clicks]** 傳送分析，這可能會導致某些計算錯誤。
 
 <!--Only successfully sent emails are taken in account, bounces are not.-->
 
 **了解详情**
 
-在以下部分中：
+在以下小節中：
 
-* [使用电子邮件投放模板](../send/create-templates.md)
+* [使用電子郵件傳遞範本](../send/create-templates.md)
 
 * [了解投放失败](../send/delivery-failures.md)
 
 
-在Campaign Classicv7文档中：
+在Campaign Classic v7檔案中：
 
-* [选择电子邮件格式](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#selecting-message-formats){target="_blank"}
+* [選取電子郵件格式](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#selecting-message-formats){target="_blank"}
 
-* [选择字符编码](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#character-encoding){target="_blank"}
+* [選取字元編碼](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#character-encoding){target="_blank"}
 
-* [设置退回电子邮件地址](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#managing-bounce-emails){target="_blank"}
+* [設定退信電子郵件地址](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-emails/sending-an-email/email-parameters.html#managing-bounce-emails){target="_blank"}
 

@@ -14,11 +14,11 @@ ht-degree: 4%
 
 # 营销活动{#campaign}
 
-下面详述的工作流随 **Campaign** 模块。
+以下詳述的工作流程會隨 **Campaign** 模組（預設）。
 
 >[!CAUTION]
 >
->必须启动这些工作流，营销活动流程才能在营销活动级别执行。
+>必須啟動這些工作流程，才能在行銷活動層級執行行銷活動程式。
 
 <table> 
  <tbody> 
@@ -28,29 +28,29 @@ ht-degree: 4%
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">成本计算</span> <br /> </td> 
+   <td> <span class="uicontrol">成本計算</span> <br /> </td> 
    <td> <span class="uicontrol">budgetMgt</span> <br /> </td> 
-   <td> 此工作流开始计算预算、计划、项目、营销策划、投放和任务中的费用和成本行。<br /> </td> 
+   <td> 此工作流程會開始計算預算、計畫、方案、行銷活動、傳遞和任務的費用和成本行。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">股票：订单和警报</span> <br /> </td> 
+   <td> <span class="uicontrol">庫存：訂單與警示</span> <br /> </td> 
    <td> <span class="uicontrol">stockMgt</span> <br /> </td> 
-   <td> 此工作流会启动订单行上的库存计算并管理警告警报阈值。<br /> </td> 
+   <td> 此工作流程會啟動訂單明細行的庫存計算，並管理警告警示臨界值。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">营销活动中投放的作业</span> <br /> </td> 
+   <td> <span class="uicontrol">行銷活動中傳遞的工作</span> <br /> </td> 
    <td> <span class="uicontrol">deliveryMgt</span> <br /> </td> 
-   <td> 此工作流会触发已批准的投放，并启动外部投放的服务提供商的后处理。 它还会发送批准通知和提醒。<br /> </td> 
+   <td> 此工作流程會觸發已核准的傳遞，並開始後續處理外部傳遞的服務提供者。 也會傳送核准通知和提醒。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">营销活动作业</span> <br /> </td> 
+   <td> <span class="uicontrol">行銷活動工作</span> <br /> </td> 
    <td> <span class="uicontrol">operationMgt</span> <br /> </td> 
-   <td> 此工作流可管理营销活动的作业（启动项定位、文件提取等）。 它还会创建与定期和定期营销活动相关的工作流。<br /> </td> 
+   <td> 此工作流程管理行銷活動的工作（啟動鎖定目標、檔案擷取等）。 也會建立與循環和定期行銷活動相關的工作流程。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">服务提供商上的作业</span> <br /> </td> 
+   <td> <span class="uicontrol">服務提供者的工作</span> <br /> </td> 
    <td> <span class="uicontrol">supplierMgt</span> <br /> </td> 
-   <td> 在投放获得批准后，此工作流将开始处理提供程序（向路由器发送电子邮件并进行后处理）。 <br /> </td> 
+   <td> 在核准傳遞後，此工作流程會開始處理提供者（傳送至路由器的電子郵件並進行後續處理）。 <br /> </td> 
   </tr> 
  </tbody> 
 </table>

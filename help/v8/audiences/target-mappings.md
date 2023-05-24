@@ -1,6 +1,6 @@
 ---
 title: 使用目标映射
-description: 了解如何使用和创建目标映射
+description: 瞭解如何使用及建立目標對應
 feature: Audiences, Profiles
 role: User, Developer
 level: Beginner, Intermediate
@@ -14,55 +14,55 @@ ht-degree: 4%
 
 # 使用目标映射{#gs-target-mappings}
 
-默认情况下，投放模板定位 **[!UICONTROL Recipients]**. 因此，其目标映射使用 **nms:recipient** 表。
+依預設，傳遞範本的目標為 **[!UICONTROL Recipients]**. 因此，其目標對應會使用 **nms：recipient** 表格。
 
-您可以为投放使用其他目标映射，或创建新的目标映射。
+您可以針對傳遞使用其他目標對應，或建立新的目標對應。
 
-## 内置目标映射 {#ootb-mappings}
+## 內建目標對應 {#ootb-mappings}
 
-Adobe Campaign提供了以下内置目标映射：
+Adobe Campaign隨附下列內建目標對應：
 
-| 名称 | 使用 | 架构 |
+| 名称 | 使用至 | 架构 |
 |---|---|---|
-| 收件人 | 发送给收件人（内置收件人表） | nms:recipient |
-| 访客 | 将其用户档案通过反向链接（病毒式营销）收集的访客交付给。 | mns:visitor |
-| 订阅 | 向订阅新闻稿等信息服务的收件人发送 | nms:subscription |
-| 访客订阅 | 向订阅了信息服务的访客提供 | nms:visitorSub |
-| 运算符 | 交付给Adobe Campaign运营商 | nms:operator |
-| 外部文件 | 通过包含投放所需所有信息的文件进行投放 | 未链接架构，未输入目标 |
+| 收件人 | 傳遞給收件者（內建的收件者表格） | nms：recipient |
+| 访客 | 傳遞給已透過轉介（病毒式行銷）收集設定檔的訪客，例如。 | mns：visitor |
+| 订阅 | 傳遞給已訂閱資訊服務（例如電子報）的收件者 | nms：subscription |
+| 访客订阅 | 傳遞給已訂閱資訊服務的訪客 | nms：visitorSub |
+| 运算符 | 傳遞至Adobe Campaign運運算元 | nms：operator |
+| 外部檔案 | 透過包含傳遞所需所有資訊的檔案傳遞 | 沒有連結的結構描述，沒有輸入目標 |
 
-## 创建目标映射 {#new-mapping}
+## 建立目標對應 {#new-mapping}
 
-您还可以创建目标映射。 例如，在以下情况下，您可能需要添加自定义目标映射：
+您也可以建立目標對應。 例如，在下列情況下，您可能需要新增自訂目標對應：
 
-* 使用自定义收件人表，
-* 您可以配置一个与目标映射屏幕上内置定向维度不同的过滤维度。
+* 您使用自訂收件者表格，
+* 您可在目標對應畫面上設定與內建目標維度不同的篩選維度。
 
-了解有关 [本页](../dev/custom-recipient.md).
+進一步瞭解中的自訂收件者表格 [此頁面](../dev/custom-recipient.md).
 
-Adobe Campaign target映射创建向导可帮助您创建使用自定义target映射所需的所有架构。
+Adobe Campaign目標對應建立精靈可協助您建立使用自訂目標對應所需的所有結構描述。
 
-1. 浏览到 **[!UICONTROL Administration]** `>` **[!UICONTROL Campaign Management]** `>` **[!UICONTROL Target mappings]** 从Adobe Campaign资源管理器。
+1. 瀏覽至 **[!UICONTROL Administration]** `>` **[!UICONTROL Campaign Management]** `>` **[!UICONTROL Target mappings]** 來自Adobe Campaign explorer。
 
-1. 创建新的目标映射，然后选择您的自定义架构作为目标维度。
+1. 建立新的目標對應，並選取您的自訂結構描述作為目標維度。
 
    ![](assets/new-target-mapping.png)
 
 
-1. 指示存储用户档案信息的字段：姓氏、名字、电子邮件、地址等
+1. 表示儲存設定檔資訊的欄位：姓氏、名字、電子郵件、地址等。
 
    ![](assets/wf_new_mapping_define_join.png)
 
-1. 指定信息存储的参数，包括扩展架构的后缀，以便它们易于识别。
+1. 指定資訊儲存的引數，包括可輕鬆識別的擴充功能結構描述尾碼。
 
    ![](assets/wf_new_mapping_define_names.png)
 
-   您可以选择是否存储排除项(**排除日志**)，带消息(**broadlog**)或在单独的表中。
+   您可以選擇是否儲存排除專案(**excludelog**)，包含訊息(**broadlog**)或是在另一個表格中。
 
-   您还可以选择是否管理此投放映射的跟踪(**trackinglog**)。
+   您也可以選擇是否管理此傳遞對應的追蹤(**trackinglog**)。
 
-1. 然后，选择要考虑的扩展。 扩展类型取决于您的Campaign设置和加载项。
+1. 然後選取要考慮的擴充功能。 擴充功能型別取決於您的Campaign設定和附加元件。
 
    ![](assets/wf_new_mapping_define_extensions.png)
 
-   单击 **[!UICONTROL Save]** 用于启动投放映射创建的按钮：所有链接的表都会根据所选参数自动创建。
+   按一下 **[!UICONTROL Save]** 啟動傳遞對應建立的按鈕：所有連結的表格都會根據選取的引數自動建立。

@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 营销活动资产、文档和投放概述
-description: 进一步了解营销活动文档和投放概述
+title: 行銷活動資產、檔案和傳遞大網
+description: 進一步瞭解行銷活動檔案和傳遞大綱
 feature: Campaigns
 exl-id: 352f6cd5-777d-413d-af79-6f53444b336f
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
@@ -11,16 +11,16 @@ ht-degree: 0%
 
 ---
 
-# 管理资产和文档 {#manage-assets-documents}
+# 管理資產和檔案 {#manage-assets-documents}
 
-您可以将各种文档与营销活动关联：报表、照片、网页、图表等。 这些文档可以采用任何格式。
+您可以將各種檔案與行銷活動建立關聯：報告、像片、網頁、圖表等。 這些檔案可以是任何格式。
 
-在营销活动中，您还可以参考其他项目，例如促销优惠券、与特定品牌或商店相关的特惠等。 当这些元素包含在大纲中时，它们可以与直邮投放相关联。 [了解详情](#associating-and-structuring-resources-linked-via-a-delivery-outline)。
+在行銷活動中，您也可以參考其他專案，例如促銷優惠券、與特定品牌或商店相關的特殊優惠等。 當這些元素包含在大綱中時，它們可以與直接郵件傳遞相關聯。 [了解详情](#associating-and-structuring-resources-linked-via-a-delivery-outline)。
 
 
 >[!CAUTION]
 >
->此功能专为小资产和文档而设计。
+>此功能專為小型資產和檔案所設計。
 
 <!--
 >[!NOTE]
@@ -28,95 +28,95 @@ ht-degree: 0%
 >If you are using Campaign Marketing Resource Management module, you can also manage a library of marketing resources that are available for several users for collaborative work. [Learn more](../../mrm/using/managing-marketing-resources.md).
 -->
 
-## 添加文档 {#add-documents}
+## 新增檔案 {#add-documents}
 
-文档可以在营销策划级别（上下文文档）或项目级别（常规文档）进行关联。
+檔案可以在行銷活動層級（情境檔案）或方案層級（一般檔案）相關聯。
 
-对于营销活动， **[!UICONTROL Documents]** 选项卡包含：
+對於行銷活動， **[!UICONTROL Documents]** 索引標籤包含：
 
-* 内容所需的所有文档的列表（模板、图像等） 可由Adobe Campaign运营商在本地下载，
-* 包含路由器信息的文档（如果有）。
+* 內容所需的所有檔案清單（範本、影像等） 可由Adobe Campaign運運算元透過適當許可權從本機下載，
+* 包含路由器資訊的檔案（如果有）。
 
-文档通过 **[!UICONTROL Edit > Documents]** 选项卡。
+檔案透過以下連結至方案或行銷活動： **[!UICONTROL Edit > Documents]** 標籤。
 
 ![](assets/op_add_document.png)
 
-您还可以从仪表板的专用链接向营销策划添加文档。
+您也可以從控制面板的專用連結，將檔案新增至行銷活動。
 
 ![](assets/add_a_document_in_op.png)
 
-单击 **[!UICONTROL Detail...]** 图标以查看文件内容并添加信息：
+按一下 **[!UICONTROL Detail...]** 圖示可檢視檔案內容並新增資訊：
 
 ![](assets/add_document_details.png)
 
-在功能板中，与营销活动关联的文档分组在 **[!UICONTROL Document(s)]** 部分，如以下示例中所示：
+在控制面板中，與行銷活動相關聯的檔案會分組在 **[!UICONTROL Document(s)]** 區段，如下列範例所示：
 
 ![](assets/edit_documents.png)
 
-也可以从此视图编辑和修改它们。
+您也可以從此檢視編輯和修改它們。
 
-## 使用投放大纲 {#delivery-outlines}
+## 使用傳遞大綱 {#delivery-outlines}
 
-投放大纲是由元素（文档、商店、促销优惠券等）组成的结构化集合 由公司创建，用于特定营销活动。 它用于直邮投放的上下文。
+傳遞大網是結構化的元素集（檔案、商店、促銷優惠券等） 由公司針對特定行銷活動所建立。 它用於直接郵件傳遞的情境下。
 
-这些元素按投放大纲进行分组，每个投放大纲都将与投放相关联；它将在发送到的提取文件中引用 **服务提供商** 以便附在投放上。 例如，您可以创建一个投放大纲，以引用一个单位及其使用的营销手册。
+這些元素會分組在傳遞大網中，而每個傳遞大網都會與一個傳遞相關聯；它會在傳送至的擷取檔案中參考 **服務提供者** 以便附加至傳遞。 例如，您可以建立傳遞大網，以參照單位及其使用的行銷手冊。
 
-对于营销活动，投放大纲允许您根据特定条件构建要与投放关联的外部元素：相关单位、已授予的促销优惠、参加当地活动的邀请等。
+對於行銷活動，傳遞大綱可讓您根據特定條件來建構要與傳遞相關聯的外部元素：相關單位、已授與的促銷優惠、本機活動的邀請等。
 
 >[!CAUTION]
 >
->投放大纲仅限于直邮营销活动。
+>傳遞大網僅限於直接郵件行銷活動。
 
-### 创建投放大纲 {#create-an-outline}
+### 建立傳遞大網 {#create-an-outline}
 
-要创建投放大纲，请单击 **[!UICONTROL Delivery outlines]** 子选项卡 **[!UICONTROL Edit > Documents]** 选项卡。
+若要建立傳遞大網，請按一下 **[!UICONTROL Delivery outlines]** 中的子標籤 **[!UICONTROL Edit > Documents]** 相關行銷活動的索引標籤。
 
 ![](assets/add-a-delivery-outline.png)
 
 
 >[!NOTE]
 >
->如果看不到此选项卡，则此功能对于此营销活动不可用，或者实例中未启用直邮投放。 请参阅 [活动模板配置](marketing-campaign-templates.md#campaign-templates) 或您的许可协议。
+>如果您看不到此標籤，表示此功能不適用於此行銷活動，或您的執行個體中未啟用直接郵件傳送。 請參閱 [行銷活動範本設定](marketing-campaign-templates.md#campaign-templates) 或您的授權合約。
 
-接下来，单击 **[!UICONTROL Add a delivery outline]** 和为营销活动创建大纲层次结构：
+接下來，按一下 **[!UICONTROL Add a delivery outline]** 並建立行銷活動大綱的階層：
 
-1. 右键单击树的根并选择 **[!UICONTROL New > Delivery outlines]**.
-1. 右键单击刚刚创建的大纲并选择 **[!UICONTROL New > Item]** 或 **[!UICONTROL New > Personalization fields]**.
+1. 以滑鼠右鍵按一下樹狀結構的根目錄，然後選取 **[!UICONTROL New > Delivery outlines]**.
+1. 以滑鼠右鍵按一下您剛建立的大綱，然後選取 **[!UICONTROL New > Item]** 或 **[!UICONTROL New > Personalization fields]**.
 
 ![](assets/del-outline-add-new-item.png)
 
-大纲可以包含项目、个性化字段和选件：
+大綱可包含專案、個人化欄位和選件：
 
-* 项目可以是实物文档，例如，此处引用和描述的物体文档，将附加到投放。
-* 个性化字段允许您创建与投放相关的个性化元素，而不是收件人。 因此，可以创建用于特定目标（欢迎选件、折扣等）投放的值 这些配置文件将在Adobe Campaign中创建，并通过 **[!UICONTROL Import personalization fields...]** 链接。
+* 專案可以是實體檔案，例如，此處參考和說明的檔案，且會附加至傳遞。
+* 個人化欄位可讓您建立與傳遞相關的個人化元素，而不是收件者。 因此，您可以建立用於特定目標傳遞（歡迎優惠、折扣等）的值 它們是在Adobe Campaign中建立，並透過匯入大綱 **[!UICONTROL Import personalization fields...]** 連結。
 
    ![](assets/del-outline-perso-field.png)
 
-   也可以通过单击 **[!UICONTROL Add]** 图标。
+   也可以直接在大綱中建立它們，方法是按一下 **[!UICONTROL Add]** 圖示加以顯示。
 
    ![](assets/add-del-outline-button.png)
 
 
-### 选择大纲 {#select-an-outline}
+### 選取大綱 {#select-an-outline}
 
-对于每个投放，您可以从为提取大纲保留的部分中选择要关联的大纲，如以下示例中所示：
+對於每個傳送，您可以從保留給擷取大綱的區段中選取要關聯的大綱，如下列範例所示：
 
 ![](assets/select-delivery-outline.png)
 
-选定的轮廓随后显示在窗口的下部。 可以使用字段右侧的图标进行编辑，也可以使用下拉列表进行更改：
+然後所選輪廓會顯示在視窗的下半部。 您可以使用欄位右側的圖示加以編輯，或使用下拉式清單加以變更：
 
 ![](assets/delivery-outline-selected.png)
 
-的 **[!UICONTROL Summary]** 的选项卡中，还会显示以下信息：
+此 **[!UICONTROL Summary]** 傳遞的標籤也會顯示下列資訊：
 
 ![](assets/delivery-outline-in-dashboard.png)
 
-### 提取结果 {#extraction-result}
+### 擷取結果 {#extraction-result}
 
-在提取并发送给服务提供商的文件中，大纲的名称，并在适当情况下，其特征（成本、描述等） 根据与服务提供商关联的导出模板中的信息，被添加到内容中。
+在擷取並傳送給服務提供者的檔案中，大綱的名稱以及適當時其特徵（成本、說明等） 會根據與服務提供者相關聯之匯出範本中的資訊新增至內容。
 
-在以下示例中，将与投放关联的大纲的标签、估计成本和描述将添加到提取文件中。
+在下列範例中，與傳遞相關的大綱的標籤、預估成本和說明將新增至擷取檔案。
 
 ![](assets/campaign-export-template.png)
 
-导出模型必须与为相关投放选择的服务提供商关联。 请参阅[此小节](providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。
+匯出模型必須與為相關傳遞選取的服務提供者相關聯。 请参阅[此小节](providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。

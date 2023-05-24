@@ -13,7 +13,7 @@ ht-degree: 21%
 
 # 移动应用程序渠道{#mobile-app-channel}
 
-下面详细介绍的工作流与 **移动设备应用程序渠道** 模块。 有关此模块的更多信息，请参阅 [此部分](../../v8/send/push.md).
+以下詳述的工作流程會隨 **行動應用程式頻道** 模組（預設）。 如需此模組的詳細資訊，請參閱 [本節](../../v8/send/push.md).
 
 <table> 
  <tbody> 
@@ -23,9 +23,9 @@ ht-degree: 21%
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NMAC选择退出管理</span> <br /> </td> 
+   <td> <span class="uicontrol">NMAC選擇退出管理</span> <br /> </td> 
    <td> <span class="uicontrol">mobileAppOptOutMgt</span> <br /> </td> 
-   <td> 此工作流可更新移动设备上的取消订阅通知。 从凌晨1点到午夜之间，每6小时触发一次。 有关更多详细信息，请参阅此部分</a>.<br /> </td> 
+   <td> 此工作流程會更新行動裝置上的取消訂閱通知。 從上午1:00到午夜，每6小時觸發一次。 如需詳細資訊，請參閱本區段</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -13,17 +13,17 @@ ht-degree: 3%
 
 # 内容管理{#content-management}
 
-A **内容管理** 活动允许您创建和操作内容，并基于此内容生成文件。 然后，可以通过“交付”活动交付此内容。
+A **內容管理** 活動可讓您建立和操作內容，並根據此內容產生檔案。 然後可以透過「傳送」活動傳遞此內容。
 
 >[!CAUTION]
 >
->内容管理是一个可选的Adobe Campaign模块。 请核实您的许可协议。
+>內容管理是選用的Adobe Campaign模組。 请核实您的许可协议。
 
-活动的属性分为三个步骤：
+活動的屬性分為三個步驟：
 
-* **内容选择**:内容可以是以前创建的，也可以通过活动创建。
-* **内容更新**:该任务可以修改内容的主题或导入所有XML内容。
-* **操作**:可以保存或生成生成的内容。
+* **內容選擇**：內容可以先前建立，也可以透過活動建立。
+* **內容更新**：任務可以修改內容的主體或匯入所有XML內容。
+* **動作**：可儲存或產生產生的內容。
 
    ![](assets/content_mgmt_edit.png)
 
@@ -31,66 +31,66 @@ A **内容管理** 活动允许您创建和操作内容，并基于此内容生�
 
    * **[!UICONTROL Specified in the transition]**
 
-      此选项允许您使用过渡中指定的内容，即激活内容管理的事件必须包含 **[!UICONTROL contentId]** 变量。 此变量可由以前的内容管理或任何脚本进行设置。
+      此選項可讓您使用轉變中指定的內容，即啟用內容管理之事件必須包含 **[!UICONTROL contentId]** 變數。 此變數可由先前的內容管理或任何指令碼設定。
 
    * **[!UICONTROL Explicit]**
 
-      此选项允许您通过 **[!UICONTROL Content]** 字段。 仅当 **[!UICONTROL Explicit]** 选项。
+      此選項可讓您透過 **[!UICONTROL Content]** 欄位。 此欄位僅在 **[!UICONTROL Explicit]** 選項時才會選擇此選項。
 
       ![](assets/content_mgmt_explicit.png)
 
    * **[!UICONTROL Calculated by a script]**
 
-      内容标识符由脚本计算。 的 **[!UICONTROL Script]** 字段中，您可以定义用于评估内容标识符（主键）的JavaScript模板。 仅当 **[!UICONTROL Calculated by a script]** 选项。
+      內容識別碼由指令碼計算。 此 **[!UICONTROL Script]** 欄位可讓您定義評估內容識別碼（主索引鍵）的JavaScript範本。 此欄位僅在 **[!UICONTROL Calculated by a script]** 選項時才會選擇此選項。
 
       ![](assets/content_mgmt_script.png)
 
    * **[!UICONTROL New, created from a publication template]**
 
-      从发布模板创建新内容。 此新内容将保存在 **[!UICONTROL String]** 字段。 的 **[!UICONTROL Template]** 字段指定用于创建内容的发布模板。
+      從出版物範本建立新內容。 此新內容將儲存在中指定的檔案中 **[!UICONTROL String]** 欄位。 此 **[!UICONTROL Template]** 欄位會指定要用來建立內容的發佈範本。
 
       ![](assets/content_mgmt_new.png)
 
-1. **更新内容**
+1. **更新內容**
 
    * **[!UICONTROL Subject]**
 
-      利用此字段，可修改内容的主题。
+      此欄位可讓您修改內容的主旨。
 
    * **[!UICONTROL Access to data from an XML feed]**
 
-      此选项允许您从通过XSL样式表下载的XML文档构建内容。 选择此选项后， **[!UICONTROL URL]** 字段指定下载URL的XML内容。 的 **[!UICONTROL XSL stylesheet]** 可指定用于转换下载的XML文档的样式表。 此属性是可选的。
+      此選項可讓您從透過XSL樣式表下載的XML檔案建構內容。 選取此選項時， **[!UICONTROL URL]** 欄位會指定XML內容下載URL。 此 **[!UICONTROL XSL stylesheet]** 可讓您指定用來轉換已下載XML檔案的樣式表。 此屬性是選用的。
 
       ![](assets/content_mgmt_xmlcontent.png)
 
-1. **要执行的操作**
+1. **要執行的動作**
 
    * **[!UICONTROL Save]**
 
-      此选项会保存创建或修改的内容。
+      此選項會儲存已建立或已修改的內容。
 
-      叫客过渡只激活一次，内容保存在 **[!UICONTROL contentId]** 变量。
+      出站轉變只會啟動一次，其內容會儲存在 **[!UICONTROL contentId]** 變數做為引數。
 
    * **[!UICONTROL Generate]**
 
-      此选项会保存内容，然后为每个具有“File”类型发布的转换模板生成输出文件。
+      此選項會儲存內容，然後為具有「檔案」型別發佈的每個轉換範本產生輸出檔案。
 
       ![](assets/content_mgmt_generate.png)
 
-      对于使用保存在 **[!UICONTROL contentId]** 变量作为其参数，且文件名位于 **[!UICONTROL filename]** 变量。
+      系統會針對每個以儲存在中的內容識別碼產生的檔案啟動出站轉變 **[!UICONTROL contentId]** 變數做為引數，以及檔案名稱 **[!UICONTROL filename]** 變數。
 
-## 输入参数 {#input-parameters}
+## 輸入引數 {#input-parameters}
 
 * contentId
 
-要使用的内容的标识符(如果 **[!UICONTROL Specified in the transition]** 选项。
+要使用的內容識別碼，如果 **[!UICONTROL Specified in the transition]** 選項已啟用。
 
-## 输出参数 {#output-parameters}
+## 輸出引數 {#output-parameters}
 
 * contentId
 
    内容标识符.
 
-* 文件名
+* 檔案名稱
 
-   如果所选操作为，则生成文件的完整名称 **[!UICONTROL Generate]**.
+   如果選取的動作為，則為產生檔案的完整名稱 **[!UICONTROL Generate]**.

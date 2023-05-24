@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 外部信号
-description: 了解有关外部信号工作流活动的更多信息
+description: 進一步瞭解外部訊號工作流程活動
 feature: Workflows
 exl-id: 45cb95ec-77bf-4bab-895f-b94f6ce660fd
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
@@ -15,20 +15,20 @@ ht-degree: 2%
 
 
 
-的 **外部信号** 活动允许您在工作流中触发对计划的一组任务的执行。
+此 **外部訊號** 活動可讓您在工作流程中觸發對排程的一組任務執行。
 
-激活“外部信号”任务后，该任务将被无限期地暂停，或一直持续到指定时间段结束。 其过渡由SOAP调用激活 **PostEvent(sessionToken， workflowId， activity， transition， parameters， complete)。** 的 **[!UICONTROL complete]** 参数允许任务完成，因此不会对后续调用做出反应。
+「外部訊號」任務啟動時，會無限期暫停或直到指定時段結束。 其轉變由SOAP呼叫啟動 **PostEvent(sessionToken， workflowId， activity， transition， parameters， complete)。** 此 **[!UICONTROL complete]** 引數可讓任務完成，因此不會對後續呼叫做出反應。
 
-有关PostEvent函数的更多信息，请参阅有关SOAP调用的在线文档。
+如需有關PostEvent函式的進一步資訊，請參閱有關SOAP呼叫的線上檔案。
 
-您可以配置此活动，以便在未收到信号时定义事件。 为此，请编辑活动，然后单击 **[!UICONTROL Expiration]** 选项卡。 单击 **[!UICONTROL Insert]** 按钮以创建和配置事件。
+您可以設定此活動，以便在未收到訊號時定義事件。 若要這麼做，請編輯活動並按一下 **[!UICONTROL Expiration]** 標籤。 按一下 **[!UICONTROL Insert]** 按鈕來建立和設定事件。
 
 ![](assets/edit_signal.png)
 
-过期日期的配置详见 [过期](define-approvals.md).
+有關到期的設定詳情，請參閱 [有效期](define-approvals.md).
 
-的 **延迟** 字段，可以使用所选的单位指定过期延迟。 请参阅 [等待](wait.md).
+此 **延遲** 欄位可讓您以所選擇的單位指定到期延遲。 另請參閱 [等待](wait.md).
 
-每行表示过期类型，并与过渡一致。
+每行代表一種到期型別，並與轉變重合。
 
 ![](assets/external_sign_diag.png)

@@ -1,6 +1,6 @@
 ---
-title: 技术工作流和数据复制
-description: 技术工作流和数据复制
+title: 技術工作流程和資料複製
+description: 技術工作流程和資料複製
 feature: Workflows, FFDA
 role: Developer
 level: Beginner, Intermediate, Experienced
@@ -12,49 +12,49 @@ ht-degree: 5%
 
 ---
 
-# 技术工作流和数据复制
+# 技術工作流程和資料複製
 
 ## 技术工作流{#tech-wf}
 
-在 [企业(FFDA)部署](enterprise-deployment.md),Adobe Campaign附带一组内置的技术工作流。 技术工作流会定期在服务器上执行进程或作业。
+在的內容中 [企業(FFDA)部署](enterprise-deployment.md)，Adobe Campaign隨附一組內建的技術工作流程。 技術工作流程會定期在伺服器上執行排程的流程或工作。
 
-这些工作流对数据库执行维护操作，利用投放日志中的跟踪信息，创建定期活动等。
+這些工作流程會對資料庫執行維護操作、利用傳送記錄中的追蹤資訊、建立週期性行銷活動等。
 
-![](../assets/do-not-localize/glass.png) 技术工作流的完整列表详见 [本页](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html).
+![](../assets/do-not-localize/glass.png) 完整的技術工作流程清單詳見 [此頁面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html).
 
-除了这些技术工作流之外，Campaign v8还依赖特定的技术工作流来管理 [数据复制](#data-replication).
+除了這些技術工作流程外，Campaign v8還仰賴特定的技術工作流程來管理 [資料復寫](#data-replication).
 
 * **[!UICONTROL Replicate Reference tables]**
-此工作流可自动复制Campaign本地数据库(Postgres)和云数据库([!DNL Snowflake])。 计划每小时执行一次。 如果 **lastModified** 字段存在，复制会以增量方式进行，否则将复制整个表。 下面数组中表的顺序是复制工作流使用的顺序。
+此工作流程會執行內建表格的自動復寫，這些表格需要出現在Campaign本機資料庫(Postgres)和雲端資料庫([!DNL Snowflake])。 排程為每小時、每天執行一次。 若 **lastModified** 欄位存在，復寫會遞增進行，否則會復寫整個表格。 以下陣列中的表格順序是複製工作流程使用的順序。
 * **[!UICONTROL Replicate Staging data]**
-此工作流会为统一调用复制暂存数据。 计划每小时执行一次。
+此工作流程會複製單一呼叫的分段資料。 排程為每小時、每天執行一次。
 * **[!UICONTROL Deploy FFDA immediately]**\
-   此工作流会立即部署到云数据库。
+   此工作流程會執行雲端資料庫的立即部署。
 * **[!UICONTROL Replicate FFDA data immediately]**
-此工作流会复制给定外部帐户的XS数据。
+此工作流程會復寫指定外部帳戶的XS資料。
 
-这些技术工作流可从 **[!UICONTROL Administration > Production > Technical workflows > Full FFDA Replication]** Campaign Explorer节点。 **不得更改它们。**
+這些技術工作流程可從 **[!UICONTROL Administration > Production > Technical workflows > Full FFDA Replication]** Campaign Explorer節點。 **不得更改它们。**
 
-如果需要，您可以手动启动数据同步。 要执行此操作，请右键单击 **调度程序** 活动，选择 **立即执行挂起任务**.
+如有需要，您可以手動啟動資料同步處理。 若要執行此動作，請用滑鼠右鍵按一下 **排程器** 活動並選取 **立即執行擱置中的任務**.
 
 ## 数据复制{#data-replication}
 
-某些内置表从Campaign本地数据库复制到 [!DNL Snowflake] 通过上述专用工作流创建云数据库。
+有些內建表格會從Campaign本機資料庫複製到 [!DNL Snowflake] 透過上述專用工作流程建立雲端資料庫。
 
-了解Adobe Campaign v8使用哪些数据库、为何要复制数据、正在复制哪些数据以及复制过程的工作方式。
+瞭解Adobe Campaign v8使用哪些資料庫、複製資料的原因、正在複製哪些資料以及複製過程的工作方式。
 
 >[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
 
 
-### 数据复制策略{#data-replication-policies}
+### 資料複製原則{#data-replication-policies}
 
-复制策略基于表的大小。 有些表将实时复制，有些表将按小时复制。 某些表在替换其他表时将进行增量更新。
+複製原則是根據表格的大小。 有些表格會即時複製，有些表格則會每小時複製一次。 某些表格會有累加更新，而其他表格則會被取代。
 
-除了内置 **复制参考表** 技术工作流中，您可以在工作流中强制进行数据复制。
+除了內建 **復寫參考資料表** 技術工作流程，您可以在工作流程中強制進行資料復寫。
 
 您可以：
 
-* 添加特定 **Javascript代码** 活动，其代码如下：
+* 新增特定 **Javascript程式碼** 活動，代碼如下：
 
 ```
 nms.replicationStrategy.StartReplicateStagingData("dem:sampleTable")
@@ -63,7 +63,7 @@ nms.replicationStrategy.StartReplicateStagingData("dem:sampleTable")
 ![](assets/jscode.png)
 
 
-* 添加特定 **nlmodule** 活动时，使用以下命令：
+* 新增特定 **nlmodule** 使用下列命令的活動：
 
 ```
 nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
@@ -74,6 +74,6 @@ nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
 
 **相关主题**
 
-* [了解如何开始使用工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)
+* [瞭解如何開始使用工作流程](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)
 
-* [数据保留期](../dev/datamodel-best-practices.md#data-retention)
+* [資料保留期](../dev/datamodel-best-practices.md#data-retention)

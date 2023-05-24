@@ -1,6 +1,6 @@
 ---
-title: 在Campaign中创建新架构
-description: 了解如何在Campaign中创建新模式
+title: 在Campaign中建立新的結構描述
+description: 瞭解如何在Campaign中建立新結構描述
 feature: Schema Extension
 role: Developer
 level: Intermediate, Experienced
@@ -12,60 +12,60 @@ ht-degree: 2%
 
 ---
 
-# 创建新架构{#create-new-schema}
+# 建立新結構描述{#create-new-schema}
 
-要编辑、创建和配置架构，请单击 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign客户端控制台的节点。
+若要編輯、建立及設定方案，請按一下 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign使用者端主控台的節點。
 
 >[!NOTE]
 >
->内置数据架构只能由Adobe Campaign控制台的管理员删除。
+>內建資料結構描述只能由Adobe Campaign主控台的管理員刪除。
 
 ![](assets/schema_navtree.png)
 
-的 **[!UICONTROL Edit]** 选项卡显示架构的XML内容：
+此 **[!UICONTROL Edit]** 索引標籤顯示結構描述的XML內容：
 
 ![](assets/schema_edition.png)
 
 >[!NOTE]
 >
->“名称”编辑控件允许您输入由名称和命名空间组成的架构键。 架构根元素的“name”和“namespace”属性会在架构的XML编辑区中自动更新。 请注意，某些命名空间仅是内部命名空间。 [了解详情](schemas.md#reserved-namespaces)
+>「名稱」編輯控制項可讓您輸入由名稱和名稱空間組成的結構描述金鑰。 結構描述根元素的「名稱」和「名稱空間」屬性會在結構描述的XML編輯區域中自動更新。 請注意，某些名稱空間僅供內部使用。 [了解详情](schemas.md#reserved-namespaces)
 
-的 **[!UICONTROL Preview]** 选项卡会自动生成扩展架构：
+此 **[!UICONTROL Preview]** tab會自動產生擴充型結構描述：
 
 ![](assets/schema_edition2.png)
 
 >[!NOTE]
 >
->保存源架构后，将自动启动扩展架构的生成。
+>儲存來源結構描述後，就會自動產生延伸結構描述。
 
-如果需要检查架构的完整结构，可以使用 **[!UICONTROL Preview]** 选项卡。 如果架构已扩展，则将能够显示其所有扩展。 作为补充， **[!UICONTROL Documentation]** 选项卡显示所有架构属性和元素及其属性（SQL字段、类型/长度、标签、描述）。 的 **[!UICONTROL Documentation]** 选项卡仅适用于生成的架构。
+如果您需要檢查架構的完整結構，可以使用 **[!UICONTROL Preview]** 標籤。 如果結構描述已擴充，您隨後將能夠將其所有擴充功能視覺化。 作為補充， **[!UICONTROL Documentation]** 索引標籤會顯示所有綱要屬性和元素及其特性（SQL欄位、型別/長度、標籤、說明）。 此 **[!UICONTROL Documentation]** 索引標籤僅適用於產生的結構描述。
 
-## 用例：创建合同表 {#example--creating-a-contract-table}
+## 使用案例：建立合約表格 {#example--creating-a-contract-table}
 
-在以下示例中，您为 **合同** 在数据库中。 此表允许您存储每个合同的持有人和共同持有人的名字和姓氏以及电子邮件地址。
+在下列範例中，您會建立 **合約** 在資料庫中。 此表格可讓您儲存每個合約的持有者和共同持有者的名字和姓氏，以及電子郵件地址。
 
-为此，需要创建表的模式并更新数据库结构以生成相应的表。 下面列出了详细步骤。
+要執行此操作，您需要建立表格的綱要，並更新資料庫結構以產生對應的表格。 詳細步驟列於下方。
 
-1. 编辑 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign树的节点，然后单击 **[!UICONTROL New]**.
-1. 选择 **[!UICONTROL Create a new table in the data template]** 选项并单击 **[!UICONTROL Next]** .
+1. 編輯 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign樹狀結構的節點，然後按一下 **[!UICONTROL New]**.
+1. 選擇 **[!UICONTROL Create a new table in the data template]** 選項並按一下 **[!UICONTROL Next]** .
 
    ![](assets/create_new_schema.png)
 
-1. 指定表的名称和命名空间。
+1. 指定資料表的名稱和名稱空間。
 
    ![](assets/create_new_param.png)
 
    >[!NOTE]
    >
-   >默认情况下，用户创建的架构存储在“cus”命名空间中。 有关更多信息，请参阅 [模式的标识](extend-schema.md#identification-of-a-schema).
+   >依預設，使用者建立的方案會儲存在「cus」名稱空間中。 有關詳細資訊，請參閱 [結構描述的識別](extend-schema.md#identification-of-a-schema).
 
-1. 创建表的内容。 我们建议使用专用助手，以确保不缺少任何设置。 为此，请单击 **[!UICONTROL Insert]** 按钮，然后选择要添加的设置类型。
+1. 建立表格的內容。 我們建議使用專用助理，以確保沒有設定遺失。 若要這麼做，請按一下 **[!UICONTROL Insert]** 按鈕，並選擇要新增的設定型別。
 
    ![](assets/create_new_content.png)
 
-1. 为合同表定义设置。
+1. 定義合約表格的設定。
 
-   最佳做法是，通过在Cloud数据库中添加 `dataSource="nms:extAccount:ffda"` 属性。 默认情况下，在创建新表时会添加此属性。
+   最佳做法是在雲端資料庫中新增表格 `dataSource="nms:extAccount:ffda"` 屬性。 建立新表格時，預設會新增此屬性。
 
    ```
    <srcSchema created="YYYY-MM-DD HH:MM:SS.TZ" desc="Active contracts" img="crm:crm/mscrm/mscrm_account_16x16.png"
@@ -85,7 +85,7 @@ ht-degree: 2%
    </srcSchema>
    ```
 
-   添加合同明细列表的类型。
+   新增合約分項清單的型別。
 
    ```
    <srcSchema created="AA-MM-DD HH:MM:SS.TZ" desc="Active contracts" img="crm:crm/mscrm/mscrm_account_16x16.png" label="Contracts" labelSingular="Contract" AA-MM-DD HH:MM:SS.TZ"mappingType="sql" name="Contracts" namespace="cus" xtkschema="xtk:srcSchema">
@@ -109,8 +109,8 @@ ht-degree: 2%
    </srcSchema>
    ```
 
-1. 保存架构，然后单击 **[!UICONTROL Structure]** 选项卡以生成结构：
+1. 儲存結構描述並按一下 **[!UICONTROL Structure]** 索引標籤以產生結構：
 
    ![](assets/configuration_structure.png)
 
-1. 更新数据库结构以创建模式将链接到的表。 如需详细信息，请参阅[此部分](update-database-structure.md)。
+1. 更新資料庫結構以建立將連結結構描述的表格。 如需详细信息，请参阅[此部分](update-database-structure.md)。

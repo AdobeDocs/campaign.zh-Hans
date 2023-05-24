@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 使用投放模板
-description: 了解如何在Campaign中创建和使用投放模板
+description: 瞭解如何在Campaign中建立和使用傳遞範本
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
@@ -13,133 +13,133 @@ ht-degree: 5%
 
 ---
 
-# 使用投放模板{#work-with-delivery-template}
+# 使用傳遞範本{#work-with-delivery-template}
 
-使用投放模板标准化创意外观，以便更快地执行和启动活动。
+使用傳遞範本來標準化創意外觀和風格，以便更快速地執行和啟動行銷活動。
 
-模板可以包括：
+範本可包含：
 
 * 类型
 * 发件人和回复地址
-* 基本 [个性化块](../send/personalization-blocks.md)
-* 链接到 [镜像页面](../send/mirror-page.md) 和退订链接
-* 内容、公司徽标或签名
-* 其他投放属性，如资源有效性、重试参数或隔离设置。
+* 基本 [個人化區塊](../send/personalization-blocks.md)
+* 連結至 [映象頁面](../send/mirror-page.md) 和取消訂閱連結
+* 內容、公司標誌或簽名
+* 其他傳遞屬性，例如資源有效性、重試引數或隔離設定。
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#delivery-template-video)
 
 
-## 创建模板{#create-a-delivery-template}
+## 建立範本{#create-a-delivery-template}
 
-要创建投放模板，您可以复制内置模板、将现有投放转换为模板或从头开始创建投放模板。
+若要建立傳遞範本，您可以複製內建範本、將現有傳遞轉換為範本或從頭開始建立傳遞範本。
 
-### 复制现有模板{#copy-an-existing-template}
+### 複製現有範本{#copy-an-existing-template}
 
-Campaign附带适用于每个渠道的一组内置模板：电子邮件、推送、短信、直邮等。
+Campaign為每個頻道提供一組內建範本：電子郵件、推播、簡訊、直接郵件等。
 
-创建投放模板的最简单方法是复制和自定义内置模板。
+建立傳遞範本的最簡單方法是複製和自訂內建範本。
 
-要复制投放模板，请执行以下步骤：
+若要複製傳遞範本，請遵循下列步驟：
 
-1. 浏览到 **[!UICONTROL Resources > Templates > Delivery templates]** 在Adobe Campaign资源管理器中。
-1. 选择内置投放模板。 内置模板在列表中显示为粗体。
-1. 右键单击并选择 **[!UICONTROL Duplicate]**.
+1. 瀏覽至 **[!UICONTROL Resources > Templates > Delivery templates]** 在Adobe Campaign explorer中。
+1. 選取內建傳遞範本。 清單中會以粗體顯示內建範本。
+1. 按一下右鍵並選取 **[!UICONTROL Duplicate]**.
 
    ![](assets/duplicate-built-in-template.png)
 
-1. 定义模板设置并保存新模板。
+1. 定義範本設定並儲存新範本。
 
    ![](assets/delivery-template-new.png)
 
-模板将添加到投放模板列表。 现在，您可以在创建新投放时选择该投放。
+範本會新增至傳遞範本清單。 您現在可以在建立新傳送時選取它。
 
 ![](assets/select-the-new-template.png)
 
-### 将现有投放转换为模板 {#convert-an-existing-delivery}
+### 將現有傳遞轉換為範本 {#convert-an-existing-delivery}
 
-可以将投放转换为模板，以便执行新的重复投放操作。
+傳遞可以轉換為範本以供新的重複傳遞動作使用。
 
-要将投放转换为模板，请执行以下步骤：
+若要將傳送轉換為範本，請遵循下列步驟：
 
-1. 从投放列表中选择投放，可通过 **[!UICONTROL Campaign management]** Campaign资源管理器的节点。
+1. 從傳遞清單中選取傳遞，可透過以下網址存取： **[!UICONTROL Campaign management]** Campaign總管的節點。
 
-1. 右键单击并选择 **[!UICONTROL Actions > Save as template...]**.
+1. 按一下右鍵並選取 **[!UICONTROL Actions > Save as template...]**.
 
    ![](assets/save-as-template.png)
 
-1. 编辑投放属性，并选择必须保存新模板的文件夹(位于 **[!UICONTROL Folder]** 字段)，且必须在其中创建基于此模板创建的投放的文件夹(位于 **[!UICONTROL Execution folder]** 字段。
+1. 編輯傳遞屬性，並選取必須儲存新範本的資料夾(在 **[!UICONTROL Folder]** 欄位)，以及必須建立根據此範本建立的傳遞的資料夾(在 **[!UICONTROL Execution folder]** 欄位)。
 
    ![](assets/template-select-folders.png)
 
-### 创建新模板 {#create-a-new-template}
+### 建立新範本 {#create-a-new-template}
 
 >[!NOTE]
 >
->为避免配置错误，Adobe建议您 [复制内置模板](#copy-an-existing-template) 和自定义其属性，而不是创建新模板。
+>為避免設定錯誤，Adobe建議您 [複製內建範本](#copy-an-existing-template) 並自訂其屬性，而非建立新範本。
 
-要从头开始配置投放模板，请执行以下步骤：
+若要從頭開始設定傳送範本，請遵循下列步驟：
 
-1. 浏览到 **资源** 文件夹，然后选择 **模板** then **投放模板**.
-1. 单击 **新建** ，以创建新投放模板。
-1. 设置 **标签** 和 **内部名称** 的子菜单。
-1. 保存并重新打开模板。
-1. 从 **属性** 按钮，调整设置。
-1. 在 **常规** ，确认或更改 **执行文件夹**, **文件夹**&#x200B;和 **路由** 下拉菜单。
-1. 完成 **电子邮件参数** 类别。
-1. 添加 **HTML内容** 要个性化您的模板，您可以 [镜像页面链接](../send/mirror-page.md) 和退订链接。
-1. 选择 **预览** 选项卡。 在 **测试个性化** 下拉菜单，选择 **收件人** 以预览模板作为所选配置文件。
-1. 单击&#x200B;**保存**。您的模板现已准备就绪，可在投放中使用。
+1. 瀏覽至 **資源** Campaign檔案總管中的資料夾，並選取 **範本** 則 **傳遞範本**.
+1. 按一下 **新增** ，以建立新的傳遞範本。
+1. 設定 **標籤** 和 **內部名稱** 檔案夾的。
+1. 儲存範本並重新開啟。
+1. 從 **屬性** 按鈕，調整設定。
+1. 在 **一般** 標籤，確認或變更在 **執行資料夾**， **資料夾**、和 **路由** 下拉式功能表。
+1. 完成 **電子郵件引數** 類別，以及您的電子郵件主題和目標母體。
+1. 新增您的 **HTML內容** 若要個人化您的範本，您可以顯示 [映象頁面連結](../send/mirror-page.md) 和取消訂閱連結。
+1. 選取 **預覽** 標籤。 在 **測試個人化** 下拉式功能表，選取 **收件者** 以預覽範本為選取的設定檔。
+1. 单击&#x200B;**保存**。您的範本現在已準備好用於傳遞。
 
 
 ## 使用模板{#use-a-delivery-template}
 
 ### 从模板创建投放{#create-a-delivery-from-a-template}
 
-要基于现有模板创建投放，请从可用投放模板列表中选择该模板。
+若要根據現有範本建立傳遞，請從可用傳遞範本清單中選取範本。
 
 ![](assets/select-the-new-template.png)
 
-如果看不到模板，请单击 **[!UICONTROL Select link]** 文件夹来浏览Campaign文件夹。
+如果您看不到範本，請按一下 **[!UICONTROL Select link]** 欄位右側的資料夾以瀏覽Campaign資料夾。
 
 ![](assets/browse-templates.png)
 
-从 **[!UICONTROL Folder]** ，或单击 **[!UICONTROL Display sub-levels]** 图标，以在当前目录的子树中显示目录的内容。
+從中選擇所需的目錄 **[!UICONTROL Folder]** 欄位，或按一下 **[!UICONTROL Display sub-levels]** 圖示來顯示目前目錄之子樹狀結構中的目錄內容。
 
-选择要使用的投放模板，然后单击 **[!UICONTROL Ok]**.
+選取要使用的傳遞範本，然後按一下 **[!UICONTROL Ok]**.
 
-### 执行模板 {#execute-a-template}
+### 執行範本 {#execute-a-template}
 
-您可以直接从模板列表启动模板的执行，而无需先创建投放。
+您可以直接從範本清單啟動範本執行，而不需要先建立傳送。
 
-要执行此操作，请选择要执行的模板并右键单击。 选择 **[!UICONTROL Actions>Execute the delivery template...]**。
+若要這麼做，請選取要執行的範本，然後按一下滑鼠右鍵。 选择 **[!UICONTROL Actions>Execute the delivery template...]**。
 
-您还可以使用 **[!UICONTROL File>Actions>Execute the delivery template...]**.
+您也可以使用 **[!UICONTROL File>Actions>Execute the delivery template...]**.
 
 ![](assets/execute-delivery-template.png)
 
-输入投放参数并单击 **[!UICONTROL Send]**.
+輸入傳遞引數並按一下 **[!UICONTROL Send]**.
 
-此操作会在与模板关联的文件夹中生成投放。 此投放的名称是从中创建该投放模板的名称。
+此動作會在與範本關聯的資料夾中產生傳遞。 此傳遞的名稱是從中建立該傳遞的傳遞範本的名稱。
 
 
 ## 教程视频 {#delivery-template-video}
 
-### 如何配置投放模板
+### 如何設定傳遞範本
 
 以下视频演示了如何为临时投放配置模板。
 
 >[!VIDEO](https://video.tv.adobe.com/v/342082?quality=12)
 
-### 如何设置投放模板属性
+### 如何設定傳遞範本屬性
 
-以下视频演示了如何设置投放模板属性，并详细说明了每个属性。
+以下影片說明如何設定傳遞範本屬性，並詳細說明每個屬性。
 
 >[!VIDEO](https://video.tv.adobe.com/v/338969?quality=12)
 
-### 如何部署临时投放模板
+### 如何部署隨選傳遞範本
 
-此视频介绍如何部署临时电子邮件投放模板，并说明电子邮件投放与投放工作流之间的区别。
+此影片說明如何部署隨選電子郵件傳遞範本，並說明電子郵件傳遞與傳遞工作流程之間的差異。
 
 >[!VIDEO](https://video.tv.adobe.com/v/338965?quality=12)
 
-还提供其他Campaign操作方法视频 [此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.
+有其他Campaign操作說明影片可供使用 [此處](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.

@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 社交媒体营销
-description: 进一步了解社交营销技术工作流
+description: 進一步瞭解社交行銷技術工作流程
 feature: Workflows
 source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
 workflow-type: tm+mt
@@ -17,9 +17,9 @@ ht-degree: 6%
 
 >[!AVAILABILITY]
 >
->:warning: 此功能仅在Campaign Classicv7中可用。
+>:warning: 此功能僅適用於Campaign Classic v7。
 
-下面详述的工作流随 **社交营销** 模块。
+以下詳述的工作流程會隨 **社交行銷** 模組（預設）。
 
 <table> 
  <tbody> 
@@ -29,29 +29,29 @@ ht-degree: 6%
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">facebook统计数据的计算</span> <br /> </td> 
+   <td> <span class="uicontrol">計算Facebook統計資料</span> <br /> </td> 
    <td> <span class="uicontrol">statsFacebook</span> <br /> </td> 
-   <td> 此工作流会计算与Facebook粉丝的交互关联的统计信息。<br /> </td> 
+   <td> 此工作流程會計算連結至與Facebook粉絲互動的統計資料。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">同步Facebook粉丝</span> <br /> </td> 
+   <td> <span class="uicontrol">同步Facebook粉絲</span> <br /> </td> 
    <td> <span class="uicontrol">syncFacebookFans</span> <br /> </td> 
-   <td> 此工作流会在每天早上7点将Facebook粉丝导入Adobe Campaign。<br /> </td> 
+   <td> 此工作流程每天早上7:00將Facebook粉絲匯入Adobe Campaign。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">同步Facebook页面</span> <br /> </td> 
+   <td> <span class="uicontrol">同步Facebook頁面</span> <br /> </td> 
    <td> <span class="uicontrol">syncFacebook</span> <br /> </td> 
-   <td> 此工作流于每天早上7点将Facebook页面与Adobe Campaign同步。<br /> </td> 
+   <td> 此工作流程每天早上7:00與Adobe Campaign同步Facebook頁面。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">twitter统计数据的计算</span> <br /> </td> 
+   <td> <span class="uicontrol">計算Twitter統計資料</span> <br /> </td> 
    <td> <span class="uicontrol">statsTwitter</span> <br /> </td> 
-   <td> 此工作流会计算与Twitter上的转推和访问次数关联的统计资料。<br /> </td> 
+   <td> 此工作流程會計算連結至Twitter轉推和造訪的統計資料。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">同步Twitter页面</span> <br /> </td> 
+   <td> <span class="uicontrol">同步Twitter頁面</span> <br /> </td> 
    <td> <span class="uicontrol">syncTwitter</span> <br /> </td> 
-   <td> 此工作流会在每天早上7点将Twitter关注者导入Adobe Campaign。<br /> </td> 
+   <td> 此工作流程每天早上7:00將Twitter追蹤者匯入Adobe Campaign。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

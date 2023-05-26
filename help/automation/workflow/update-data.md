@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 更新数据
-description: 進一步瞭解更新資料工作流程活動
+description: 了解有关更新数据工作流活动的更多信息
 feature: Workflows, Targeting Activity, Data Management
 exl-id: 63b214c7-bbbf-448b-b3af-b3b7a7a5b65c
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
@@ -15,112 +15,112 @@ ht-degree: 1%
 
 
 
-一個 **更新資料**-type活動會大量更新資料庫中的欄位。
+An **更新数据**-type活动对数据库中的字段执行批量更新。
 
 ## 操作类型 {#operation-type}
 
-此 **[!UICONTROL Operation type]** 欄位可讓您選擇要對資料庫中的資料執行的程式：
+此 **[!UICONTROL Operation type]** 字段可让您选择对数据库中的数据执行的流程：
 
-* **[!UICONTROL Insert or update]**：新增資料，或更新資料（如果已新增）。
-* **[!UICONTROL Insert]**：僅新增資料。
-* **[!UICONTROL Update]**：僅更新資料。
-* **[!UICONTROL Update and merge collections]**：更新資料並選擇主要記錄，然後連結連結至此主要記錄中重複專案的元素。 然後可以刪除重複專案，而不需要建立孤立的附加元素。
+* **[!UICONTROL Insert or update]**：添加数据或更新数据（如果已添加）。
+* **[!UICONTROL Insert]**：仅添加数据。
+* **[!UICONTROL Update]**：仅更新数据。
+* **[!UICONTROL Update and merge collections]**：更新数据并选择主记录，然后链接链接到此主记录中重复项的元素。 然后，可以删除重复项而不创建孤立的附加元素。
 * **[!UICONTROL Delete]**：删除数据。
 
 ![](assets/s_advuser_update_data_1.png)
 
-此 **[!UICONTROL Batch size]** 欄位可讓您選取要更新的入站轉變元素數量。 例如，如果您列出500，則處理的前500筆記錄將會更新。
+此 **[!UICONTROL Batch size]** 字段允许您选择要更新的集客过渡元素数量。 例如，如果您声明500，则处理的前500条记录将被更新。
 
-## 記錄識別 {#record-identification}
+## 记录标识 {#record-identification}
 
-指定如何識別資料庫中的記錄：
+指定如何标识数据库中的记录：
 
-* 如果資料專案與現有目標維度相關，請選取 **[!UICONTROL By directly using the targeting dimension]** 選項，並在 **[!UICONTROL Updated dimension]** 欄位。
+* 如果数据条目与现有定向维度相关，请选择 **[!UICONTROL By directly using the targeting dimension]** 选项，然后在 **[!UICONTROL Updated dimension]** 字段。
 
-   您可以使用以下顯示所選維度的欄位： **[!UICONTROL Edit this link]** 放大鏡按鈕。
+   您可以使用以下方式显示所选维度的字段 **[!UICONTROL Edit this link]** 放大镜按钮。
 
-* 否則，請指定一或多個連結，以便識別資料庫中的資料或直接使用調解金鑰。
+* 否则，请指定一个或多个链接，这些链接将允许识别数据库中的数据或直接使用协调键。
 
 ![](assets/s_advuser_update_data_2.png)
 
-## 選取要更新的欄位 {#selecting-the-fields-to-be-updated}
+## 选择要更新的字段 {#selecting-the-fields-to-be-updated}
 
-使用 **[!UICONTROL Automatically associate fields with the same name]** 選項，以便Adobe Campaign自動識別要更新的欄位。
+使用 **[!UICONTROL Automatically associate fields with the same name]** 选项，以便Adobe Campaign自动标识要更新的字段。
 
 ![](assets/s_advuser_update_data_3b.png)
 
-您也可以使用 **[!UICONTROL Insert]** 圖示以手動選取要更新的資料庫欄位。
+您还可以使用 **[!UICONTROL Insert]** 图标以手动选择要更新的数据库字段。
 
 ![](assets/s_advuser_update_data_3.png)
 
-選取要更新的所有欄位，並在必要時根據要執行的更新新增條件。 要实现此目的，请使用 **[!UICONTROL Taken into account if]** 列。條件會逐一套用，並依照清單中的順序進行。 使用右側的箭頭來變更更新順序。
+选择要更新的所有字段，并根据要执行的更新添加条件（如有必要）。 要实现此目的，请使用 **[!UICONTROL Taken into account if]** 列。条件逐个应用，并遵循列表中的顺序。 使用右侧的箭头可更改更新的顺序。
 
-您可以多次使用相同的目的地欄位。
+您可以多次使用同一目标字段。
 
-在 **[!UICONTROL Insert or update]** 作業，您可以個別或針對每個欄位選取要套用的行銷活動。 若要這麼做，請在 **[!UICONTROL Operation]** 欄。
+在 **[!UICONTROL Insert or update]** 操作时，您可以逐个或为每个字段选择要应用的营销活动。 要实现此目的，请在 **[!UICONTROL Operation]** 列。
 
 ![](assets/s_advuser_update_data_5.png)
 
-此 **[!UICONTROL modifiedDate]**， **[!UICONTROL modifiedBy]**， **[!UICONTROL createdDate]** 和 **[!UICONTROL createdBy]** 欄位會在資料更新期間自動更新，除非在欄位更新表格中特別設定其管理模式。
+此 **[!UICONTROL modifiedDate]**， **[!UICONTROL modifiedBy]**， **[!UICONTROL createdDate]** 和 **[!UICONTROL createdBy]** 字段在数据更新期间自动更新，除非在字段更新表中专门配置了它们的管理模式。
 
-僅對包含至少一個差異的記錄執行記錄更新。 如果值相同，則不會執行更新。
+仅对至少包含一个差异的记录执行记录更新。 如果值相同，则不执行更新。
 
-此 **[!UICONTROL Advanced parameters]** 連結可讓您指定處理更新資料及管理重複專案的其他選項。 您也可以：
+此 **[!UICONTROL Advanced parameters]** 链接可让您指定其他选项来处理数据更新和管理重复项。 您还可以：
 
 * **[!UICONTROL Disable automatic key management]**.
 * **[!UICONTROL Disable audit]**.
-* **[!UICONTROL Empty the destination value if the source value is empty (NULL)]**. 此選項預設為自動核取。
+* **[!UICONTROL Empty the destination value if the source value is empty (NULL)]**. 默认情况下，该选项会自动选中。
 * **[!UICONTROL Update all columns with matching names]**.
-* 在「 」中使用運算式來指定考慮來源元素的條件 **[!UICONTROL Enabled if]** 欄位。
-* 使用運算式指定考慮重複專案的條件。 如果您檢查 **[!UICONTROL Ignore records which concern the same target]** 選項，則只會考量運算式清單中的第一個。
+* 指定考虑源元素的条件，这些条件在 **[!UICONTROL Enabled if]** 字段。
+* 使用表达式指定考虑重复项的条件。 如果您检查 **[!UICONTROL Ignore records which concern the same target]** 选项，则只考虑表达式列表中的第一个。
 
 **[!UICONTROL Generate an outbound transition]**
 
-建立將在執行結束時啟用的出站轉變。 更新通常表示目標工作流程結束，因此預設不會啟用選項。
+创建将在执行结束时激活的叫客过渡。 更新通常表示定位工作流的结束，因此默认情况下不激活该选项。
 
 **[!UICONTROL Generate an outbound transition for the rejects]**
 
-建立外站轉變，其中包含更新後未正確處理的記錄（例如，如果有重複記錄）。 更新通常會標籤目標工作流程的結尾，因此預設不會啟用選項。
+创建一个叫客过渡，其中包含更新后未正确处理的记录（例如，如果存在重复项）。 更新通常会标记定向工作流的结尾，因此默认情况下不激活该选项。
 
-## 更新及合併集合 {#updating-and-merging-collections}
+## 更新和合并收藏集 {#updating-and-merging-collections}
 
-更新資料和合併集合可讓您使用一或多個次要記錄的資料，更新記錄中包含的資料，以便在需要時僅保留一項。 這些更新由一組規則管理。
+通过更新数据和合并集合，您可以使用一个或多个辅助记录中的数据更新记录中包含的数据，以便在需要时仅保留一个记录。 这些更新由一组规则管理。
 
 >[!NOTE]
 >
->此選項也可讓您從工作流程工作表(targetWorkflow)、傳送(targetDelivery)和清單(targetList)處理次要記錄的參考。 如有需要，這些連結會出現在您選取欄位和集合的清單中。
+>此选项还允许您处理对工作流工作表(targetWorkflow)、投放(targetDelivery)和列表(targetList)中辅助记录的引用。 如果需要，这些链接会显示在您选择字段和收藏集的列表中。
 
-1. 選取 **[!UICONTROL Update and merge collections]** 作業。
+1. 选择 **[!UICONTROL Update and merge collections]** 操作。
 
    ![](assets/update_and_merge_collections1.png)
 
-1. 選取連結的優先順序。 這可讓您識別主要記錄。 可用的連結會因入站轉變而異。
+1. 选择链接的优先级顺序。 这允许您标识主记录。 可用的链接因集客过渡而异。
 
    ![](assets/update_and_merge_collections2.png)
 
-1. 選取要移動到主要記錄的集合和要更新的欄位。
+1. 选择要移动到主记录的收藏集和要更新的字段。
 
-   輸入在識別一或多個次要記錄後，套用至這些記錄的規則。 若要這麼做，您可以使用運算式產生器。 例如，指定它是必須保留的所有不同記錄中最近更新的值。
+   输入在标识一个或多个辅助记录后应用于这些记录的规则。 要实现此目的，您可以使用表达式生成器。 例如，通过指定该值是必须保留的所有不同记录中最近更新的值。
 
-   然後輸入規則要考慮的條件。
+   然后，输入规则要考虑的条件。
 
-   最後，指定要執行的更新型別。 例如，您可以選擇在更新資料之後刪除次要記錄。
+   最后，指定要执行的更新类型。 例如，您可以选择在更新数据后删除辅助记录。
 
-   例如，您可以設定合併包含異質性資料（例如收件者的訂閱清單）的集合。 您也可以使用規則從次要記錄訂閱建立新的訂閱歷史記錄，甚至將訂閱清單從次要記錄移至主要記錄。
+   例如，您可以配置包含异构数据（如收件人的订阅列表）的集合的合并。 使用规则，您还可以从辅助记录订阅创建新的订阅历史记录，甚至可以将订阅列表从辅助记录移动到主记录。
 
-1. 透過選取「 」，指定您要處理次要記錄的順序 **[!UICONTROL Advanced parameters]** > **[!UICONTROL Duplicates]**.
+1. 通过选择指定您希望处理辅助记录的顺序 **[!UICONTROL Advanced parameters]** > **[!UICONTROL Duplicates]**.
 
    ![](assets/update_and_merge_collections3.png)
 
-如果定義的規則適用，次要記錄的資料會與主要記錄相關聯。 根據所選更新型別，可刪除次要記錄。
+如果定义的规则适用，则辅助记录的数据与主记录相关联。 根据所选的更新类型，可以删除次要记录。
 
-## 範例：擴充後更新資料 {#example--update-data-following-an-enrichment}
+## 示例：在扩充后更新数据 {#example--update-data-following-an-enrichment}
 
-此 [步驟2：將擴充資料寫入「購買」表格](create-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) 使用案例中詳細說明建立回顧清單的區段，提供擴充活動後資料更新的範例。
+此 [步骤2：将扩充数据写入“购买”表](create-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) 用例中详细说明创建回顾列表的部分提供了扩充活动后数据更新的示例。
 
-## 輸入引數 {#input-parameters}
+## 输入参数 {#input-parameters}
 
-* tableName
-* 綱要
+* 表名
+* 架构
 
-每個傳入事件都必須指定由這些引數定義的目標。
+每个入站事件都必须指定由这些参数定义的目标。

@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 查询
-description: 進一步瞭解「查詢」工作流程活動
+description: 了解有关查询工作流活动的更多信息
 feature: Workflows, Targeting Activity, Query Editor
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
@@ -15,207 +15,207 @@ ht-degree: 0%
 
 
 
-## 建立查詢 {#creating-a-query}
+## 创建查询 {#creating-a-query}
 
-查詢可讓您根據條件選取目標。 您可以將區段代碼與查詢結果相關聯，並在其中插入其他資料。
-如需查詢範例的詳細資訊，請參閱此 [本節](querying-recipient-table.md).
+通过查询，可根据条件选择目标。 您可以将区段代码与查询结果关联起来并在其中插入其他数据。
+有关查询示例的详细信息，请参阅此 [本节](querying-recipient-table.md).
 
 ![](assets/query-activity.png)
 
-有關使用和管理其他資料的詳細資訊，請參閱 [新增資料](#adding-data).
+有关使用和管理附加数据的更多信息，请参阅 [添加数据](#adding-data).
 
-此 **[!UICONTROL Edit query...]** 連結可讓您透過下列方式定義母體的目標定位型別、限制和選擇標準：
+此 **[!UICONTROL Edit query...]** 链接允许您通过以下方式定义群体的定位类型、限制和选择标准：
 
-1. 選取目標定位和篩選維度。 依預設，會從收件者中選取目標。 限制篩選器的清單與用於傳遞目標定位的清單相同。
+1. 选择定位和筛选维度。 默认情况下，将从收件人中选择目标。 限制筛选器的列表与用于投放定位的筛选器相同。
 
-   目標維度與我們將處理的元素型別（例如作業所定位的母體）一致。
+   定向维度与我们将处理的元素类型（例如，操作定向的群体）一致。
 
-   篩選維度可讓您收集這些元素，例如與目標人員（合約、完整和最終結算等）相關的資訊。
+   利用筛选维度，可收集这些元素，例如与目标人员（合同、全部和最终结算等）相关的信息。
 
-   有關詳細資訊，請參閱 [目標定位和篩選維度](targeting-workflows.md#targeting-and-filtering-dimensions).
+   有关更多信息，请参阅 [定位和筛选维度](targeting-workflows.md#targeting-and-filtering-dimensions).
 
    ![](assets/targeting-filtering-dimensions.png)
 
-   如有需要，可透過選取「 」，以入站轉變中的資料為基礎進行查詢 **[!UICONTROL Temporary schema]** 選擇目標定位和篩選維度時。
+   查询可以基于集客过渡的数据，如有必要，可通过选择 **[!UICONTROL Temporary schema]** 选择定位和筛选维度时。
 
    ![](assets/query_temporary_table.png)
 
-1. 使用精靈定義母體。 要輸入的欄位可能會因目標型別而異。 您可以使用目前的條件預覽目標母體 **[!UICONTROL Preview]** 標籤。
+1. 使用向导定义群体。 要输入的字段可以因目标类型而异。 您可以使用以下方法预览符合您当前条件的目标群体 **[!UICONTROL Preview]** 选项卡。
 
    ![](assets/query-sample.png)
 
-1. 如果您已選取 **[!UICONTROL Filtering conditions]** 在步驟1或使用 **[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]** 選項，之後您將必須手動新增篩選條件。
+1. 如果已选择 **[!UICONTROL Filtering conditions]** 在第1步中或使用 **[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]** 选项，之后您将必须手动添加筛选条件。
 
-   您也可以核取對應的方塊，以新增資料分組條件。 若要這麼做，篩選維度必須與查詢的目標維度不同。 如需分組的詳細資訊，請參閱此 [區段](query-grouping-management.md).
+   您还可以通过选中相应的框来添加数据分组条件。 要实现此目的，筛选维度必须与查询的定向维度不同。 有关分组的详细信息，请参阅此 [部分](query-grouping-management.md).
 
-   您也可以使用運算式產生器，並將其與邏輯選項AND、OR和EXCEPT結合，以新增更多條件。
+   您也可以使用表达式生成器并将它与逻辑选项AND、OR和EXCEPT组合在一起，以添加更多标准。
 
-   如果您稍後要重複使用篩選器，請儲存篩選器。
+   如果您希望稍后重复使用过滤器，请保存该过滤器。
 
 ## 添加数据 {#adding-data}
 
-其他欄可讓您收集目標母體的其他資訊，例如合約編號、電子報訂閱或來源。 此資料可以儲存在Adobe Campaign資料庫或外部資料庫中。
+通过附加列，可收集有关目标群体的其他信息，例如合同编号、新闻稿订阅或来源。 此数据可以存储在Adobe Campaign数据库或外部数据库中。
 
-此 **[!UICONTROL Add data...]** 連結可讓您選取要收集的其他資料。
+此 **[!UICONTROL Add data...]** 链接允许您选择要收集的其他数据。
 
 ![](assets/wf_add_data_link.png)
 
-首先，選取要新增的資料型別：
+首先，选择要添加的数据类型：
 
 ![](assets/wf_add_data_1st_option.png)
 
-* 選取 **[!UICONTROL Data linked to the filtering dimension]** 以選取Adobe Campaign資料庫中的資料。
-* 選取 **[!UICONTROL External data]** 從外部資料庫新增資料。 此選項僅在您已購買 **同盟資料存取** 選項。 有關詳細資訊，請參閱 [存取外部資料庫(FDA)](accessing-an-external-database--fda-.md).
-* 選取 **[!UICONTROL An offer proposition]** 用於新增一組欄的選項，可讓您儲存優惠方案引擎產生的最佳主張。 此選項僅在您已購買 **互動** 模組。
+* 选择 **[!UICONTROL Data linked to the filtering dimension]** 以选择Adobe Campaign数据库中的数据。
+* 选择 **[!UICONTROL External data]** 从外部数据库添加数据。 此选项仅当您购买了 **联合数据访问** 选项。 有关更多信息，请参阅 [访问外部数据库（联合数据访问）](accessing-an-external-database--fda-.md).
+* 选择 **[!UICONTROL An offer proposition]** 用于添加一组列的选项，这些列允许您存储优惠引擎生成的最佳建议。 此选项仅当您购买了 **互动** 模块。
 
-如果平台上未安裝選用模組，則不會顯示此階段。 您將直接進入下一個階段。
+如果平台上未安装可选模块，则不会显示此阶段。 你将被直接带到下一个阶段。
 
-若要從Adobe Campaign資料庫新增資料：
+要从Adobe Campaign数据库添加数据，请执行以下操作：
 
-1. 選取您要新增的資料型別。 這可以是屬於篩選維度的資料，或是儲存在連結表格中的資料。
+1. 选择要添加的数据类型。 这可以是属于筛选维度的数据，也可以是存储在链接表中的数据。
 
    ![](assets/query_add_columns.png)
 
-1. 如果資料屬於查詢的篩選維度，只需在可用欄位清單中選取它，即可在輸出欄中顯示它。
+1. 如果数据属于查询的筛选维度，则只需在可用字段列表中选择该数据，即可在输出列中显示该数据。
 
    ![](assets/wf_add_data_field_selection.png)
 
-   您可以新增：
+   您可以添加：
 
-   * 根據從目標母體或彙總（上個月內未決購買的次數、收據的平均金額等）取得的資料計算的欄位。 例如，前往 [選取資料](targeting-workflows.md#selecting-data).
-   * 新欄位，使用建立 **[!UICONTROL Add]** 輸出欄清單右側的按鈕。
+   * 根据从目标群体或聚合（上个月内待定购买的次数、收据的平均金额等）获取的数据计算的字段。 例如，转到 [选择数据](targeting-workflows.md#selecting-data).
+   * 使用创建的新字段 **[!UICONTROL Add]** 按钮以将其添加到输出列列表的右侧。
 
-      您也可以新增一組資訊，例如合約清單、最近5次傳遞等。 集合與相同設定檔可以有多個值的欄位一致（1-N關係）。 有關詳細資訊，請參閱 [編輯其他資料](targeting-workflows.md#editing-additional-data).
+      您还可以添加一系列信息，例如合同列表、最近5次投放等。 收藏集与相同用户档案可以具有多个值的字段一致（1-N关系）。 有关更多信息，请参阅 [编辑其他数据](targeting-workflows.md#editing-additional-data).
 
-若要新增連結至目標母體的資訊集合：
+要添加链接到目标群体的信息集合，请执行以下操作：
 
-1. 在精靈的第一步，選取 **[!UICONTROL Data linked to the filtering dimension]** 選項：
-1. 選取包含您要收集資訊的表格，然後按一下 **[!UICONTROL Next]**.
+1. 在向导的第一步，选择 **[!UICONTROL Data linked to the filtering dimension]** 选项：
+1. 选择包含要收集信息的表，然后单击 **[!UICONTROL Next]**.
 
    ![](assets/wf_add_data_linked_table.png)
 
-1. 如有必要，請選取下列其中一個值，以指定要保留的集合元素數量： **[!UICONTROL Data collected]** 欄位。 依預設，會復原集合的所有行，然後根據下列步驟中指定的條件進行篩選。
+1. 如有必要，通过选择以下值之一，指定要保留的集合的元素数： **[!UICONTROL Data collected]** 字段。 默认情况下，将恢复集合的所有行，然后根据在后续步骤中指定的条件进行筛选。
 
-   * 如果集合的單一元素符合此集合的篩選條件，請選取 **[!UICONTROL Single row]** 在 **[!UICONTROL Data collected]** 欄位。
+   * 如果收藏集的单个元素与此收藏集的筛选条件一致，请选择 **[!UICONTROL Single row]** 在 **[!UICONTROL Data collected]** 字段。
 
       >[!IMPORTANT]
       >
-      >此模式會最佳化由於收集元素上的直接連線點而產生的SQL查詢。
+      >此模式会优化由于集合元素上的直接连接而生成的SQL查询。
       >
-      >如果未遵循初始條件，結果可能會有瑕疵（缺少線或重疊線）。
+      >如果不满足初始条件，则结果可能有缺陷（缺少线或线重叠）。
 
-   * 如果您選擇復原數行(**[!UICONTROL Limit the line count]**)您可以指定要收集的行數。
-   * 如果收集的欄包含彙總，例如宣告的失敗次數、網站上的平均費用支出等。 您可以使用 **[!UICONTROL Aggregates]** 值。
+   * 如果选择恢复多行(**[!UICONTROL Limit the line count]**)您可以指定要收集的行数。
+   * 如果收集的列包含聚合，例如声明的失败次数、网站上的平均支出等。 您可以使用 **[!UICONTROL Aggregates]** 值。
 
    ![](assets/query_add_collection_param.png)
 
-1. 指定集合的子選取範圍。
+1. 指定集合的子选择。
 
    ![](assets/query_add_columns_collection_filter.png)
 
-1. 如果您已選取 **[!UICONTROL Limit the line count]** 選項，定義篩選所收集資料的順序。 一旦收集的行數超過您指定要保留的行數時，篩選順序可讓您指定要保留的行。
+1. 如果您已选择 **[!UICONTROL Limit the line count]** 选项，定义收集的数据的过滤顺序。 一旦收集的行数超过您指定的要保留的行数，筛选顺序允许您指定要保留的行。
 
-## 範例：對簡單收件者屬性進行目標定位 {#example--targeting-on-simple-recipient-attributes}
+## 示例：基于简单收件人属性定向 {#example--targeting-on-simple-recipient-attributes}
 
-在以下範例中，查詢會尋找年齡介於18至30歲之間且居住在法國的男性。 例如，此查詢將用於工作流程，目的是使其成為專屬選件。
+在以下示例中，查询试图识别居住在法国的18至30岁男子。 例如，此查询将用于旨在使其成为独占选件的工作流中。
 
 >[!NOTE]
 >
->其他查詢範例顯示於 [本節](querying-recipient-table.md).
+>中提供了其他查询示例 [本节](querying-recipient-table.md).
 
-1. 為查詢命名，然後選取 **[!UICONTROL Edit query...]** 連結。
-1. 選取 **[!UICONTROL Filtering conditions]** 在可用的篩選器型別清單中。
-1. 為建議的目標輸入不同的條件。 這裡的標準是使用AND選項結合的。 收件者必須滿足下列四個條件，才能納入選取範圍：
+1. 命名您的查询，然后选择 **[!UICONTROL Edit query...]** 链接。
+1. 选择 **[!UICONTROL Filtering conditions]** 在可用的过滤器类型列表中。
+1. 为建议的目标输入不同的标准。 此处使用AND选项组合标准。 要包含在选择中，收件人必须满足以下四个条件：
 
-   * 標題為「先生」的收件者（也可以使用找到）。 **性別** 欄位並選取 **男性** 作為值)。
-   * 30歲以下的收件者。
-   * 18歲以上的收件者。
-   * 居住在法國的收件者。
+   * 标题为“先生”的收件人（也可以使用找到） **性别** 字段和选择 **男性** 作为值)。
+   * 年龄在30岁以下的收件人。
+   * 18岁以上的收件人。
+   * 居住在法国的收件人。
 
    ![](assets/query_example.png)
 
-   您可以檢視符合條件組合的SQL：
+   可以查看与您的条件组合匹配的SQL：
 
    ![](assets/query_example_sql.png)
 
-1. 您可以在相關索引標籤中預覽符合您查詢的收件者，以檢查條件是否正確：
+1. 您可以通过预览在相关选项卡中与查询匹配的收件人，来检查标准是否正确：
 
    ![](assets/query_example_preview.png)
 
-1. 儲存您的篩選器，以便您日後可以按一下 **[!UICONTROL Finish]** > **[!UICONTROL OK]**.
-1. 新增其他活動以繼續編輯工作流程。 一旦啟動且完成先前的查詢步驟，就會顯示找到的收件者數目。 您可以使用滑鼠躍現式選單顯示更多細節(以滑鼠右鍵按一下轉變> **[!UICONTROL Display the target...]**)。
+1. 保存您的过滤器，以便您以后可以通过单击 **[!UICONTROL Finish]** > **[!UICONTROL OK]**.
+1. 通过向工作流添加其他活动来继续编辑工作流。 启动该程序并完成上一个查询步骤后，将显示找到的收件人数量。 您可以使用鼠标弹出菜单显示更多详细信息(右键单击过渡> **[!UICONTROL Display the target...]**)。
 
    ![](assets/query_example_result.png)
 
-## 輸出引數 {#output-parameters}
+## 输出参数 {#output-parameters}
 
-* tableName
-* 綱要
+* 表名
+* 架构
 * recCount
 
-這組三個值會識別查詢所定位的母體。 **[!UICONTROL tableName]** 是記錄目標識別碼的資料表名稱， **[!UICONTROL schema]** 為母體的結構描述（通常為nms：recipient）和 **[!UICONTROL recCount]** 是表格中的元素數量。
+这组三个值标识查询所针对的群体。 **[!UICONTROL tableName]** 是记录目标标识符的表的名称， **[!UICONTROL schema]** 是群体的模式（通常为nms：recipient）和 **[!UICONTROL recCount]** 是表中的元素数。
 
-此值是工作表的結構描述。 此引數適用於所有具有下列專案的轉變 **[!UICONTROL tableName]** 和 **[!UICONTROL schema]**.
+此值是工作表的架构。 此参数对于具有的所有过渡都有效 **[!UICONTROL tableName]** 和 **[!UICONTROL schema]**.
 
-## 最佳化您的查詢 {#optimizing-queries}
+## 优化查询 {#optimizing-queries}
 
-以下章節提供最佳實務，以最佳化Adobe Campaign上執行的查詢，限制資料庫上的工作負載並改善使用者體驗。
+以下部分提供了优化在Adobe Campaign上运行的查询的最佳实践，以限制数据库上的工作负载并改善用户体验。
 
-### 聯結和索引 {#joins-and-indexes}
+### 联接和索引 {#joins-and-indexes}
 
-* 有效的查詢需要索引。
-* 對所有聯結使用索引。
-* 在結構描述上定義連結將決定加入條件。 連結的資料表應在主索引鍵上有一個唯一索引，而且聯結應在此欄位上。
-* 在數值欄位上定義鍵而非字串欄位，以執行聯結。
-* 避免執行外部聯結。 儘可能使用Zero ID記錄來達到外部聯結功能。
-* 使用正確的資料型別進行聯結。
+* 高效的查询依赖于索引。
+* 对所有连接使用索引。
+* 在架构上定义链接将确定连接条件。 链接表应具有主键上的唯一索引，并且联接应位于此字段上。
+* 通过在数字字段而不是字符串字段上定义键来执行联接。
+* 避免执行外连接。 只要有可能，请使用Zero ID记录实现外部连接功能。
+* 对连接使用正确的数据类型。
 
-   確保 `where` 子句的型別與欄位相同。
+   确保 `where` 子句与字段的类型相同。
 
-   常見的錯誤是： `iBlacklist='3'` 位置 `iBlacklist` 為數值欄位，且 `3` 表示文字值。
+   一个常见的错误是： `iBlacklist='3'` 位置 `iBlacklist` 是一个数字字段，并且 `3` 表示文本值。
 
-   請確定您知道查詢的執行計畫。 避免完整表格掃描，尤其是即時查詢或幾乎每分鐘執行的即時查詢。
+   确保您知道查询的执行计划。 避免进行完整的表扫描，尤其是实时查询或每分钟运行的近乎实时的查询。
 
 ### 函数 {#functions}
 
-* 請注意以下功能： `Lower(...)`. 使用Lower函式時，不會使用Index。
-* 仔細檢查使用「like」指示或「upper」或「lower」指示的查詢。 在使用者輸入上套用「Upper」，而不是在資料庫欄位上。
+* 注意以下功能 `Lower(...)`. 当使用Lower函数时，不使用Index。
+* 仔细检查使用“like”指令或“upper”或“lower”指令的查询。 将“Upper”应用于用户输入，而不是应用于数据库字段。
 
-### 篩選維度 {#filtering-dimensions}
+### 筛选维度 {#filtering-dimensions}
 
-使用查詢的篩選維度，而非使用「存在方式」運運算元。
+使用查询的筛选维度，而不是使用“存在方式”运算符。
 
 ![](assets/optimize-queries-filtering.png)
 
-在查詢中，篩選條件中的「存在」等條件無效。 它們等同於SQL中的子查詢：
+在查询中，过滤器中的“存在”条件无效。 它们等同于SQL中的子查询：
 
 `select iRecipientId from nmsRecipient where iRecipientId IN (select iRecipientId from nmsBroadLog where (...))`
 
-最佳實務建議改用查詢的篩選維度：
+最佳实践是改用查询的筛选维度：
 
 ![](assets/optimize-queries-filtering2.png)
 
-SQL中篩選維度的對等項是內部聯結：
+SQL中过滤维度的等效项是内部连接：
 
 `select iRecipientId from nmsRecipient INNER JOIN nmsBroadLog ON (...)`
 
-如需篩選維度的詳細資訊，請參閱 [本節](build-a-workflow.md#targeting-and-filtering-dimensions).
+有关筛选维度的更多信息，请参阅 [本节](build-a-workflow.md#targeting-and-filtering-dimensions).
 
 ### 架构 {#architecture}
 
-* 建立開發平台，使用與生產平台類似的磁碟區、引數和架構。
-* 在開發和生產環境中使用相同的值。 儘可能使用相同的：
+* 构建开发平台，使用与生产平台类似的卷、参数和架构。
+* 对开发和生产环境使用相同的值。 请尽量使用相同的规则：
 
    * 操作系统,
    * 版本,
    * 数据,
    * 应用程序,
-   * 磁碟區。
+   * 卷。
 
    >[!NOTE]
    >
-   >適用於開發環境的功能，在資料可能不同的生產環境中可能無法運作。 嘗試識別主要差異以預測風險並準備解決方案。
+   >在开发环境中工作的功能可能无法在数据可能不同的生产环境中工作。 尝试识别主要差异以预测风险并准备解决方案。
 
-* 設定符合目標磁碟區的設定。 大型磁碟區需要特定的設定。 適用於100,000位收件者的設定可能無法適用於10,000,000位收件者。
+* 进行与目标卷匹配的配置。 大型卷需要特定的配置。 适用于100,000个收件人的配置可能无法适用于10,000,000个收件人。
 
-   考慮系統上線時的擴充方式。 只是因為某些東西在小型上運作並不意味著它適合較大的體積。 應該使用與生產中的磁碟區類似的磁碟區來進行測試。 您也應該評估在高峰時間、尖峰天數和整個專案期限內磁碟區變更（呼叫次數、資料庫大小）的影響。
+   考虑系统启动后的扩展方式。 仅仅因为某件东西小规模地运作并不意味着它适合更大体积。 应该使用与生产卷类似的卷进行测试。 您还应该评估在高峰时间、高峰日以及在整个项目周期内卷更改（调用数、数据库大小）的影响。

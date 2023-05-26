@@ -1,6 +1,6 @@
 ---
 title: 投放分析
-description: 瞭解如何準備和檢查您的傳遞
+description: 了解如何准备和检查您的投放
 feature: Personalization
 role: User
 level: Beginner
@@ -14,79 +14,79 @@ ht-degree: 5%
 
 # 投放分析 {#analyze-delivery}
 
-分析是傳送準備步驟。 一旦定義目標對象，且訊息內容已準備就緒並進行測試後，即可啟動它。 在傳遞分析期間，會計算目標母體並準備傳遞內容。 完成後，即可傳送傳遞。
+分析是投放准备步骤。 一旦定义了目标受众，并且消息内容已准备就绪并进行了测试，就可以启动该功能。 在投放分析期间，会计算目标群体并准备投放内容。 完成后，投放即可发送。
 
-## 開始分析 {#start-the-analysis}
+## 开始分析 {#start-the-analysis}
 
-若要準備傳遞，請確定已定義傳遞內容和目標，然後遵循下列步驟：
+要准备投放，请确保已定义投放内容和目标，然后执行以下步骤：
 
-1. 在傳送視窗中，按一下 **[!UICONTROL Send]** 按鈕。
-1. 選取 **[!UICONTROL Deliver as soon as possible]** 執行對象計算以及為立即傳送所做的內容準備。 您也可以將傳送延遲到較晚的日期，或是在未準備內容的情況下取得母體預估值。
+1. 在投放窗口中，单击 **[!UICONTROL Send]** 按钮。
+1. 选择 **[!UICONTROL Deliver as soon as possible]** 执行受众计算并为立即发送进行内容准备。 您还可以将投放推迟到以后的日期，或在不准备内容的情况下获取群体估计。
 
    ![](assets/delivery-analysis-start.png)
 
-1. 按一下 **[!UICONTROL Analyze]** 以手動啟動分析。 進度列會顯示分析的進度。
+1. 单击 **[!UICONTROL Analyze]** 以手动启动分析。 进度条显示分析的进度。
 
-   傳遞分析期間會套用一組檢查規則。 這些規則定義於 **型別**，此專案會於 **[!UICONTROL Typology]** 索引標籤中的「傳送」屬性。 進一步瞭解中的型別 [本節](../../automation/campaign-opt/campaign-typologies.md).
+   在投放分析期间应用一组检查规则。 这些规则定义于 **类型**，该选项可在 **[!UICONTROL Typology]** 选项卡。 在中了解有关类型的更多信息 [本节](../../automation/campaign-opt/campaign-typologies.md).
 
-   根據預設，針對電子郵件，分析會涵蓋下列幾點：
+   默认情况下，对于电子邮件，分析涵盖以下几点：
 
-   * 核准物件
-   * 核准URL和影像
-   * 核准URL標籤
-   * 核准取消訂閱連結
-   * 檢查校訂的大小
-   * 檢查有效期
-   * 檢查波段排程
+   * 批准对象
+   * 批准URL和图像
+   * 批准URL标签
+   * 批准退订链接
+   * 检查验证的大小
+   * 检查有效期
+   * 检查批次计划
 
 
-1. 您可以隨時按一下 **[!UICONTROL Stop]** 按鈕。
+1. 您可以随时通过单击 **[!UICONTROL Stop]** 按钮。
 
-   在準備階段期間不會傳送任何訊息。 因此，您可以開始或取消分析而不會有風險。
+   在准备阶段不会发送任何消息。 因此，您可以启动或取消分析而不会有风险。
 
    >[!IMPORTANT]
    >
-   >執行時，分析會凍結傳送（或證明）。 對傳送（或證明）所做的任何變更都必須先進行其他分析，才能適用。
+   >运行时，分析会冻结投放（或验证）。 对投放（或证明）的任何更改必须在其他分析之后才能适用。
 
-   分析完成後，視窗的上半部會指出傳遞準備是否已完成，或是否有任何錯誤發生。 这将列出所有验证步骤、警告和错误。彩色图标显示消息类型：
+   分析完成后，窗口的上半部分将指示投放准备是否已完成或者是否发生任何错误。 这将列出所有验证步骤、警告和错误。彩色图标显示消息类型：
 
-   * 藍色圖示表示資訊訊息。
-   * 黃色圖示表示非關鍵性處理錯誤。
-   * 紅色圖示表示嚴重錯誤，無法傳送傳遞。
+   * 蓝色图标表示信息性消息。
+   * 黄色图标表示非关键处理错误。
+   * 红色图标表示阻止发送投放的严重错误。
 
    ![](assets/delivery-analysis-results.png){width="800" align="left"}
 
-1. 按一下 **[!UICONTROL Close]** 以更正錯誤（若有的話）。 進行變更後，按一下以重新啟動分析 **[!UICONTROL Analyze]**.
+1. 单击 **[!UICONTROL Close]** 以更正错误（如果有）。 进行更改后，重新启动分析，然后单击 **[!UICONTROL Analyze]**.
 
    >[!NOTE]
    >
-   >按一下 **[!UICONTROL Change the main delivery target]** 如果要傳送的訊息數目不符合您的預期時連結。 此選項可讓您變更目標母體的定義，並重新開始分析。
+   >单击 **[!UICONTROL Change the main delivery target]** 如果要发送的邮件数与您的预期不符时链接。 利用此选项，可更改目标群体的定义并重新启动分析。
 
-1. 檢查分析結果後，按一下 **[!UICONTROL Confirm delivery]** 將訊息傳送至主要目標。
+1. 检查分析结果后，单击 **[!UICONTROL Confirm delivery]** 将消息发送到主目标。
 
 
-## 分析設定 {#analysis-settings}
+## 分析设置 {#analysis-settings}
 
-瀏覽至 **[!UICONTROL Analysis]** 傳遞屬性的索引標籤，以定義分析階段中訊息準備的設定。
+浏览至 **[!UICONTROL Analysis]** 选项卡，用于定义分析阶段消息准备的设置。
 
 ![](assets/delivery-properties-analysis-tab.png){width="800" align="left"}
 
-此索引標籤可讓您存取下列選項：
+通过此选项卡可访问以下选项：
 
-* **[!UICONTROL Label and code of the delivery]** ：此區段中的選項用於在傳送分析階段期間計算這些欄位的值。 此 **[!UICONTROL Compute the execution folder during the delivery analysis]** 欄位會計算分析階段將包含此傳遞動作的資料夾名稱。
+* **[!UICONTROL Label and code of the delivery]** ：此部分中的选项用于在投放分析阶段计算这些字段的值。 此 **[!UICONTROL Compute the execution folder during the delivery analysis]** 字段计算在分析阶段将包含此投放操作的文件夹的名称。
 
-* **[!UICONTROL Approval mode]** ：此欄位可讓您定義分析完成時的手動或自動傳送。
+* **[!UICONTROL Approval mode]** ：利用此字段，可定义分析完成后手动或自动投放。
 
-   如果在分析期間產生警告（例如，如果傳送的主題中強調某些字元，等等），您可以設定傳送以定義是否仍應執行。 默认情况下，用户必须在分析阶段结束时确认消息的发送：这是&#x200B;**手动**&#x200B;验证。
+   如果在分析期间生成警告（例如，如果投放主题中强调某些字符等），则可以配置投放以定义是否仍应执行该投放。 默认情况下，用户必须在分析阶段结束时确认消息的发送：这是&#x200B;**手动**&#x200B;验证。
 
-   從適當欄位的下拉式清單中選取其他核准模式。
+   从相应字段的下拉列表中选择其他审批模式。
 
-   可使用下列核准模式：
+   可以使用以下审批模式：
 
-   * **[!UICONTROL Manual]**：在分析階段結束時，使用者必須確認傳送才能開始傳送。 若要這麼做，請按一下 **[!UICONTROL Start]** 按鈕以啟動傳遞。
-   * **[!UICONTROL Semi-automatic]**：如果分析階段未產生警告訊息，則會自動開始傳送。
-   * **[!UICONTROL Automatic]**：傳送會在分析階段結束時自動開始，無論結果為何。
+   * **[!UICONTROL Manual]**：在分析阶段结束时，用户必须确认投放才能开始发送。 要执行此操作，请单击 **[!UICONTROL Start]** 按钮以启动投放。
+   * **[!UICONTROL Semi-automatic]**：如果分析阶段未生成警告消息，则自动开始发送。
+   * **[!UICONTROL Automatic]**：在分析阶段结束时自动开始发送，而不考虑其结果。
 
-* **[!UICONTROL Start job in a detached process]** ：此選項可讓您透過個別程式開始傳送分析。 依預設，分析函式會使用Adobe Campaign應用程式伺服器處理序(web nlserver)。 選取此選項可確保即使在應用程式伺服器發生故障時，也能完成分析。
-* **[!UICONTROL Log SQL queries generated during the analysis in the journal]** ：此選項會在分析階段將SQL查詢記錄檔新增至傳遞日誌。
-* **[!UICONTROL Ignore personalization scripts during sending]** ：此選項可讓您略過HTML內容中JavaScript指示詞的解譯。 它們將顯示為已傳送內容中的原樣。 這些指示詞是隨 `<%=` 標籤之間。
+* **[!UICONTROL Start job in a detached process]** ：利用此选项，可在单独的进程中开始投放分析。 默认情况下，analysis函数使用Adobe Campaign应用程序服务器进程(web nlserver)。 通过选择此选项，可以确保即使在应用程序服务器出现故障时也能完成分析。
+* **[!UICONTROL Log SQL queries generated during the analysis in the journal]** ：此选项在分析阶段将SQL查询日志添加到投放日志。
+* **[!UICONTROL Ignore personalization scripts during sending]** ：利用此选项，可绕过对HTML内容中提供的JavaScript指令的解释。 它们将显示为已交付内容中的原样。 这些指令随 `<%=` 标记之前。

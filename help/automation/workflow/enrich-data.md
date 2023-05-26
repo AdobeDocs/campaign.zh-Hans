@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 丰富数据
-description: 進一步瞭解擴充工作流程活動
+description: 了解有关扩充工作流活动的更多信息
 feature: Workflows, Enrichment Activity
 exl-id: 3b3fa15f-b16e-42c8-a2e6-03350aee1903
 source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
@@ -15,111 +15,111 @@ ht-degree: 1%
 
 
 
-## 關於擴充資料 {#about-enriching-data}
+## 关于扩充数据 {#about-enriching-data}
 
-此使用案例詳細說明可能使用的 **[!UICONTROL Enrichment]** 定位工作流程中的活動。 有關使用的詳細資訊 **[!UICONTROL Enrichment]** 活動，請參閱： [擴充](enrichment.md).
+此用例详细介绍了的可能用法 **[!UICONTROL Enrichment]** 定位工作流中的活动。 有关使用的更多信息 **[!UICONTROL Enrichment]** 活动，请参阅： [扩充](enrichment.md).
 
-有關如何使用自訂日期擴充電子郵件傳送的使用案例，請參見 [本節](email-enrichment-with-custom-date-fields.md).
+中还提供了有关如何使用自定义日期扩充电子邮件投放的用例 [本节](email-enrichment-with-custom-date-fields.md).
 
-行銷資料庫中的連絡人會透過網頁應用程式收到加入競爭的邀請。 競爭的結果可在以下網址中恢復： **[!UICONTROL Competition results]** 表格。 此表格連結至聯絡人表格(**[!UICONTROL Recipients]**)。 此 **[!UICONTROL Competition results]** 表格包含下列欄位：
+通过Web应用程序向营销数据库中的联系人发送参加竞争的邀请。 比赛结果于2014年12月31日取得。 **[!UICONTROL Competition results]** 表格。 此表链接到联系人表(**[!UICONTROL Recipients]**)。 此 **[!UICONTROL Competition results]** 表包含以下字段：
 
-* 競爭名稱(@game)
-* 試用編號(@trial)
-* 分數(@score)
+* 竞争名称(@game)
+* 试用号(@trial)
+* 分数(@score)
 
 ![](assets/uc1_enrich_1.png)
 
-在下列位置找到聯絡人： **[!UICONTROL Recipients]** 表格可連結至 **[!UICONTROL Competition results]** 表格。 這兩個表格之間的關係是1-n型別。 以下是收件者的結果記錄檔範例：
+联系人在 **[!UICONTROL Recipients]** 表格可以链接到中的几行 **[!UICONTROL Competition results]** 表格。 这两个表之间的关系是1-n类型。 以下是收件人的结果日志示例：
 
 ![](assets/uc1_enrich_2.png)
 
-此使用案例的目的是根據參加最新競爭的人的最高得分，將個人化傳遞傳送給他們。 得分最高的收件者會獲得第一名，得分第二高的收件者會獲得安慰獎，而所有其他收件者都會收到訊息，祝他們下次好運。
+此用例的用途是，根据参加最新竞赛的人员的最高得分，向其发送个性化投放。 得分最高的获奖者获得一等奖，得分第二高的获奖者获得安慰奖，其他所有获奖者都收到一条祝他们下次好运的讯息。
 
-為了設定此使用案例，我們建立了以下目標定位工作流程：
+为了设置此用例，我们创建了以下定位工作流：
 
 ![](assets/uc1_enrich_3.png)
 
-若要建立工作流程，請套用下列步驟：
+要创建工作流，请应用以下步骤：
 
-1. 二 **[!UICONTROL Query]** 活動與一 **[!UICONTROL Intersection]** 新增活動，以定位上次進入競爭的新訂閱者。
-1. 此 **[!UICONTROL Enrichment]** 活動用於新增儲存在 **[!UICONTROL Competition results]** 表格。 此 **[!UICONTROL Score]** 會將要發生傳遞個人化的欄位新增至工作流程的工作表。
-1. 此 **[!UICONTROL Split]** 型別活動用於根據分數建立收件者子集。
-1. 對於每個子集， **[!UICONTROL Delivery]** 活動已新增。
+1. 二 **[!UICONTROL Query]** 活动和1 **[!UICONTROL Intersection]** 添加了活动，以定位最后进入竞争的新订阅者。
+1. 此 **[!UICONTROL Enrichment]** activity用于添加存储在 **[!UICONTROL Competition results]** 表格。 此 **[!UICONTROL Score]** 将在工作流的工作表中添加进行投放个性化的字段。
+1. 此 **[!UICONTROL Split]** 类型活动用于根据得分创建收件人子集。
+1. 对于每个子集，使用 **[!UICONTROL Delivery]** 活动被添加。
 
-## 步驟1：鎖定目標 {#step-1--targeting}
+## 步骤1：定位 {#step-1--targeting}
 
-第一個查詢用於定位過去六個月內新增到資料庫的收件者。
+第一个查询用于定向最近六个月添加到数据库的收件人。
 
 ![](assets/uc1_enrich_4.png)
 
-第二個查詢用於定位參加上次競爭的收件者。
+第二个查询用于定位参加上次竞争的收件人。
 
 ![](assets/uc1_enrich_5.png)
 
-一個 **[!UICONTROL Intersection]** 然後，會新增型別活動，以定位在過去六個月內新增到資料庫的收件者和上次競爭者。
+An **[!UICONTROL Intersection]** 然后，会添加type activity ，以定向在过去六个月内添加到数据库的收件人以及上次参加竞争的收件人。
 
-## 步驟2：擴充 {#step-2--enrichment}
+## 步骤2：扩充 {#step-2--enrichment}
 
-在此範例中，瞭解如何根據 **[!UICONTROL Score]** 儲存在中的欄位 **[!UICONTROL Competition results]** 表格。 此表格與收件者表格有1-n型別的關係。 此 **[!UICONTROL Enrichment]** 活動用於將連結至篩選維度的表格資料新增至工作流程的工作表。
+在此示例中，了解如何根据以下内容对投放进行个性化 **[!UICONTROL Score]** 字段存储在 **[!UICONTROL Competition results]** 表格。 此表与收件人表具有1-n类型的关系。 此 **[!UICONTROL Enrichment]** 活动用于将链接到筛选维度的表中的数据添加到工作流的工作表。
 
-1. 在擴充活動的編輯畫面中，選取 **[!UICONTROL Add data]**，則 **[!UICONTROL Data linked to the filtering dimension]** 並按一下 **[!UICONTROL Next]**.
+1. 在扩充活动的编辑屏幕中，选择 **[!UICONTROL Add data]**，则 **[!UICONTROL Data linked to the filtering dimension]** 并单击 **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_6.png)
 
-1. 然後選取 **[!UICONTROL Data linked to the filtering dimension]** 選項，選取 **[!UICONTROL Competition results]** 表格並按一下 **[!UICONTROL Next]**.
+1. 然后选择 **[!UICONTROL Data linked to the filtering dimension]** 选项，选择 **[!UICONTROL Competition results]** 表格并单击 **[!UICONTROL Next]**.
 
    ![](assets/uc1_enrich_7.png)
 
-1. 輸入ID和標籤，然後選取 **[!UICONTROL Limit the line count]** 中的選項 **[!UICONTROL Data collected]** 欄位。 在 **[!UICONTROL Lines to retrieve]** 欄位中，選取&#39;1&#39;作為值。 對於每個收件者，擴充活動會從以下專案新增單一明細行： **[!UICONTROL Competition results]** 工作流程工作表格的表格。 单击 **[!UICONTROL Next]**。
+1. 输入ID和标签，然后选择 **[!UICONTROL Limit the line count]** 中的选项 **[!UICONTROL Data collected]** 字段。 在 **[!UICONTROL Lines to retrieve]** 字段中，选择“1”作为值。 对于每个收件人，扩充活动将添加来自 **[!UICONTROL Competition results]** 工作流的表。 单击 **[!UICONTROL Next]**。
 
    ![](assets/uc1_enrich_8.png)
 
-1. 在此範例中，我們要復原收件者的最高分數，但僅限於最後的競爭。 若要這麼做，請將篩選器新增至 **[!UICONTROL Competition name]** 此欄位可排除與先前競爭相關的所有明細行。 单击 **[!UICONTROL Next]**。
+1. 在本例中，我们希望恢复收件人的最高得分，但仅针对最后的竞争。 为此，请将过滤器添加到 **[!UICONTROL Competition name]** 用于排除与先前竞争相关的所有行的字段。 单击 **[!UICONTROL Next]**。
 
    ![](assets/uc1_enrich_9.png)
 
-1. 前往 **[!UICONTROL Sort]** 畫面並按一下 **[!UICONTROL Add]** 按鈕，選取 **[!UICONTROL Score]** 欄位並勾選 **[!UICONTROL descending]** 欄以排序以下專案： **[!UICONTROL Score]** 欄位降序。 對於每個收件者，擴充活動會新增符合上一個遊戲最高分數的行。 单击 **[!UICONTROL Next]**。
+1. 转到 **[!UICONTROL Sort]** 屏幕，然后单击 **[!UICONTROL Add]** 按钮，选择 **[!UICONTROL Score]** 字段，并选中 **[!UICONTROL descending]** 列，用于对以下项的项进行排序： **[!UICONTROL Score]** 字段降序。 对于每个收件人，扩充活动会添加与上一个游戏的最高分数相匹配的行。 单击 **[!UICONTROL Next]**。
 
    ![](assets/uc1_enrich_10.png)
 
-1. 在 **[!UICONTROL Data to add]** 視窗，按兩下 **[!UICONTROL Score]** 欄位。 對於每個收件者，擴充活動只會新增 **[!UICONTROL Score]** 欄位。 单击 **[!UICONTROL Finish]**。
+1. 在 **[!UICONTROL Data to add]** 窗口中，双击 **[!UICONTROL Score]** 字段。 对于每个收件人，扩充活动将仅添加 **[!UICONTROL Score]** 字段。 单击 **[!UICONTROL Finish]**。
 
    ![](assets/uc1_enrich_11.png)
 
-以滑鼠右鍵按一下擴充活動的入站轉變，然後選取 **[!UICONTROL Display the target]**. 工作表包含下列資料：
+右键单击扩充活动的集客过渡并选择 **[!UICONTROL Display the target]**. 工作表包含以下数据：
 
 ![](assets/uc1_enrich_13.png)
 
-連結的結構描述是：
+链接的架构为：
 
 ![](assets/uc1_enrich_15.png)
 
-在擴充活動的出站轉變上續約此作業。 我們可以看到連結至收件者分數的資料已新增。 已復原每個收件者的最高分數。
+在扩充活动的叫客过渡上续订此操作。 我们可以看到，链接到收件人得分的数据已添加。 已恢复每个收件人的最高得分。
 
 ![](assets/uc1_enrich_12.png)
 
-相符的結構描述也已更加豐富。
+匹配模式也已扩充。
 
 ![](assets/uc1_enrich_14.png)
 
-## 步驟3：分割與傳送 {#step-3--split-and-delivery}
+## 步骤3：拆分和交付 {#step-3--split-and-delivery}
 
-若要根據收件者的分數來排序收件者，請 **[!UICONTROL Split]** 活動會在擴充後新增。
+要根据收件人的得分对收件人进行排序，请 **[!UICONTROL Split]** 活动是在扩充后添加的。
 
 ![](assets/uc1_enrich_18.png)
 
-1. 第一個(**獲勝者**)子集已定義為包含具有最高分數的收件者。 若要這麼做，請定義記錄數量的限制、對分數套用降序排序，並將記錄數量限製為1。
+1. 第一个(**入选者**)子集已定义为包含得分最高的收件人。 为此，请定义记录数量的限制，对分数应用降序排序，并将记录数量限制为1。
 
    ![](assets/uc1_enrich_16.png)
 
-1. 第二個(**第二名**)子集包含具有第二高分數的收件者。 設定與第一個子集的設定相同。
+1. 第二个(**第二名**)子集包含得分第二高的收件人。 配置与第一个子集的配置相同。
 
    ![](assets/uc1_enrich_17.png)
 
-1. 第三個(**失敗者**)子集包含所有其他收件者。 前往 **[!UICONTROL General]** 標籤並核取 **[!UICONTROL Generate complement]** 方塊來鎖定未達到兩個最高分的所有收件者。
+1. 第三个(**失败者**)子集包含所有其他收件人。 转到 **[!UICONTROL General]** 选项卡，然后查看 **[!UICONTROL Generate complement]** 框定位未达到两个最高分的所有收件人。
 
    ![](assets/uc1_enrich_19.png)
 
-1. 新增 **[!UICONTROL Delivery]** 為每個子集輸入活動，並為每個子集使用不同的傳遞範本。
+1. 添加 **[!UICONTROL Delivery]** 为每个子集键入活动，并为每个子集使用不同的投放模板。
 
    ![](assets/uc1_enrich_20.png)

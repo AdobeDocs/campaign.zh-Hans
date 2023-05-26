@@ -1,6 +1,6 @@
 ---
-title: 檢視Campaign中的現有設定檔
-description: 瞭解如何存取Campaign中的聯絡資料
+title: 查看Campaign中的现有用户档案
+description: 了解如何在Campaign中访问联系数据
 feature: Audiences, Profiles
 role: User
 level: Beginner
@@ -12,72 +12,72 @@ ht-degree: 16%
 
 ---
 
-# 檢視現有的設定檔{#view-profiles}
+# 查看现有配置文件{#view-profiles}
 
-瀏覽至 **[!UICONTROL Profiles and targets]** 以存取儲存在Adobe Campaign資料庫中的收件者。
+浏览到 **[!UICONTROL Profiles and targets]** 访问存储在Adobe Campaign数据库中的收件人。
 
-從此頁面，您可以 [建立新收件者](create-profiles.md)，編輯現有收件者並存取其設定檔詳細資料。
+在此页面中，您可以 [创建新收件人](create-profiles.md)，编辑现有收件人并访问其用户档案详细信息。
 
 ![](assets/profiles-and-targets.png)
 
-如需更進階的設定檔操作，請從以下位置存取Campaign樹狀結構： **[!UICONTROL Explorer]** Adobe Campaign首頁上的連結。
+要获得更高级的配置文件操作，请从以下位置访问Campaign树： **[!UICONTROL Explorer]** Adobe Campaign主页上的链接。
 
 ![](assets/recipients-in-explorer.png)
 
 
 >[!CAUTION]
 >
->內建的收件者畫面是透過XML結構描述及其相關表單來定義。 XML結構描述儲存在 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign檔案總管樹狀結構的節點。 只有专家用户才能改变这些模式。
+>内置收件人屏幕是通过XML架构及其关联表单定义的。 XML架构存储在 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign资源管理器树的节点。 只有专家用户才能改变这些模式。
 
 ## 编辑用户档案{#edit-a-profiles}
 
-選取設定檔，以在新的索引標籤中顯示詳細資訊。
+选择一个配置文件以在新选项卡中显示详细信息。
 
 ![](assets/edit-a-profile.png)
 
-用户档案相关数据被分组放在多个选项卡中。這些標籤及其內容取決於您的特定設定和已安裝的套件。
+用户档案相关数据被分组放在多个选项卡中。这些选项卡及其内容取决于您的特定设置和已安装的包。
 
-對於典型的內建收件者，您可以存取下列標籤：
+对于典型的内置收件人，您可以访问以下选项卡：
 
-* **[!UICONTROL General]**，以取得所有一般設定檔資料。 尤其是，它包含姓氏、名字、電子郵件地址、電子郵件格式等。
+* **[!UICONTROL General]**，用于所有常规配置文件数据。 其中特别包含姓氏、名字、电子邮件地址、电子邮件格式等。
 
-   此索引標籤也會儲存 **選擇退出** 設定檔的標幟：當 **[!UICONTROL No longer contact (by any channel)]** 選項時，設定檔會列在封鎖清單上。 例如，如果收件者按一下電子報中的取消訂閱連結，此資訊會新增至聯絡資料。 任何頻道（電子郵件、直接郵件等）不再以這類收件者為目標。 有关详细信息，请参见[此页面](../send/quarantines.md)。
+   此选项卡还存储 **选择退出** 配置文件的标记：当 **[!UICONTROL No longer contact (by any channel)]** 选项时，配置文件处于阻止列表状态。 例如，如果收件人单击了新闻稿中的退订链接，则此信息会添加到联系人数据中。 任何渠道（电子邮件、直邮等）不再定向此类收件人。 有关详细信息，请参见[此页面](../send/quarantines.md)。
 
-* **連絡資訊**，其中包含所選設定檔的直接郵件地址。
+* **联系信息**，其中包含所选用户档案的直邮地址。
 
-   您可以在此畫面中檢查位址的品質索引，以及位址包含多少錯誤。 此資訊由直接郵件提供者根據先前傳遞期間發現的錯誤數直接使用，並且無法手動變更。
+   您可以在此屏幕中检查地址的质量索引，以及地址包含多少错误。 此信息由直邮提供商根据在以前的投放过程中发现的错误数直接使用，不能手动更改。
 
-* **其他**，用於特定欄位，可根據您的需求進行個人化和填入。
+* **其他**，用于特定字段，这些字段可以根据您的需求进行个性化和填充。
 
-   使用 **[!UICONTROL Field properties…]** 內容功能表，以變更欄位名稱並定義其格式。
+   使用 **[!UICONTROL Field properties…]** 上下文菜单，用于更改字段名称并定义其格式。
 
    ![](assets/other-tab-field-properties.png)
 
-   輸入新設定，如下所示：
+   输入新设置，如下所示：
 
    ![](assets/change-field-properties.png)
 
-   檢查UI中的更新：
+   在UI中检查更新：
 
    ![](assets/other-tab-updated.png)
 
 
    >[!CAUTION]
-   >變更會套用至所有收件者。
+   >更改适用于所有收件人。
 
 
-* **訂閱**，適用於所有使用中的服務訂閱。 使用 **歷史記錄** 索引標籤來存取此連絡人的訂閱與取消訂閱詳細資料。
+* **订阅**，适用于所有活动的服务订阅。 使用 **历史记录** 选项卡访问该联系人的订阅和未订阅的详细信息。
 
    ![](assets/subscription-tab.png)
 
-   進一步瞭解訂閱 [在本節中](../start/subscriptions.md).
+   了解有关订阅的更多信息 [在此部分中](../start/subscriptions.md).
 
-* **傳遞**，用於所選設定檔的所有傳送記錄。 使用此索引標籤來存取連絡人的行銷記錄：透過所有管道傳送到設定檔的所有傳遞動作的標籤、日期和狀態。
+* **投放**，用于选定用户档案的所有投放日志。 使用此选项卡可访问联系人的营销历史记录：通过所有渠道针对用户档案的所有投放操作的标签、日期和状态。
 
 
-* **追蹤**，以取得所選設定檔的所有追蹤記錄。 此信息用于跟踪投放后用户档案的行为。此选项卡显示在投放中所有被跟踪的 URL 累积数目。清單可設定，通常包含：點選的URL、點選的日期和時間，以及包含URL的檔案
+* **跟踪**，用于选定用户档案的所有跟踪日志。 此信息用于跟踪投放后用户档案的行为。此选项卡显示在投放中所有被跟踪的 URL 累积数目。该列表是可配置的，通常包含：点击的URL、点击的日期和时间，以及包含该URL的文档
 
-   進一步瞭解追蹤 [在本節中](../start/tracking.md).
+   了解有关跟踪的更多信息 [在此部分中](../start/tracking.md).
 
 
 ## 使用中的用户档案 {#active-profiles}
@@ -86,10 +86,10 @@ ht-degree: 16%
 
 计费账单的开立仅会考虑&#x200B;**使用中**&#x200B;的用户档案。如果用户档案在过去 12 个月通过任何渠道被定位或进行了传输，则该用户档案被视为使用中。
 
-多次傳遞所定位的設定檔只會計算一次。
+多次投放所定向的用户档案仅计数一次。
 
-作用中設定檔計數可用於 **行銷例項** 僅限。 它不適用於執行例項，亦即MID （中間來源）和RT （訊息中心/即時傳訊）例項。
+活动配置文件计数可用于 **营销实例** 仅此而已。 它不适用于执行实例，即MID （中间源）和RT （消息中心/实时消息传递）实例。
 
 >[!NOTE]
 >
->您也可以直接從Campaign控制面板監視執行個體上的作用中設定檔數目。 如需詳細資訊，請參閱 [控制面板檔案](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+>您还可以直接通过Campaign控制面板监控实例上的活动用户档案数。 有关详情，请参阅 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html).

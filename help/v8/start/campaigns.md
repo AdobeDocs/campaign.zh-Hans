@@ -109,5 +109,5 @@ Adobe Campaign 提供&#x200B;**响应管理**&#x200B;附加功能，可让您衡
 >
 >从 Campaign v8.3 开始提供此功能。要检查您的版本，请参阅[此部分](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-[](../assets/do-not-localize/book.png) 瞭解如何在中設定和使用Campaign回應管理員 [Campaign Classic v7檔案](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=zh-Hans){target="_blank"}
+[](../assets/do-not-localize/book.png) 了解如何在中配置和使用Campaign响应管理器 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=zh-Hans){target="_blank"}
 

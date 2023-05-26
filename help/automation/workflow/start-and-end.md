@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 开始和结束
-description: 進一步瞭解開始和結束工作流程活動
+description: 了解有关开始和结束工作流活动的更多信息
 feature: Workflows
 exl-id: 1de622bc-967b-403b-86e0-2ad32cb432e3
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
@@ -15,20 +15,20 @@ ht-degree: 4%
 
 
 
-此 **[!UICONTROL Start]** 和 **[!UICONTROL End]** 活動可讓您以圖形方式標示工作流程的開始和結束。 這些活動沒有功能影響，因此是選用的。
+此 **[!UICONTROL Start]** 和 **[!UICONTROL End]** 活动允许您以图形方式标记工作流的开始和结束。 这些活动没有功能影响，因此是可选的。
 
 * **[!UICONTROL Start]**
 
-   執行工作流程會從沒有入站轉變的活動和Start-type活動開始。
+   执行工作流时，会从没有集客过渡的活动和开始类型活动开始。
 
    ![](assets/s_user_segmentation_start_stop.png)
 
 * **[!UICONTROL End]**
 
-   您可以設定 **[!UICONTROL End]** 活動以中斷所有進行中的工作。 若要這麼做，請連按兩下活動以顯示其屬性，然後核取適當的選項。
+   您可以配置 **[!UICONTROL End]** 活动以中断所有正在进行的任务。 要实现此目的，请双击该活动以显示其属性，然后选中相应的选项。
 
    ![](assets/s_user_segmentation_end.png)
 
-   啟用結束活動時，工作表中的資料會自動刪除。 如果這不是必要操作，且為了避免不必要的載入，您可以選擇在最後一個活動輸出時停用轉變。 例如，在傳送輸出中，如果未排程任何程式，請取消勾選相關選項，如下所示：
+   启用结束活动后，将自动删除工作表中的数据。 如果这不是必需的，并且为了避免不必要的加载，您可以选择在最后一个活动输出中禁用过渡。 例如，在投放输出中，如果未计划任何进程，请取消选中相关选项，如下所示：
 
    ![](assets/s_advuser_delivery_option_no_output.png)

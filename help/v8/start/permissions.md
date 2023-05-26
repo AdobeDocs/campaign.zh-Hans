@@ -1,6 +1,6 @@
 ---
-title: 授與Campaign v8的許可權
-description: 瞭解如何授與Campaign v8的許可權
+title: 向Campaign v8授予权限
+description: 了解如何向Campaign v8授予权限
 feature: Permissions
 role: User, Admin
 level: Beginner

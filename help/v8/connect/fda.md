@@ -1,6 +1,6 @@
 ---
-title: 使用Campaign和外部資料庫(FDA)
-description: 瞭解如何使用Campaign和外部資料庫
+title: 使用Campaign和外部数据库（联合数据访问）
+description: 了解如何使用Campaign和外部数据库
 feature: Federated Data Access
 role: Admin
 level: Beginner, Intermediate
@@ -14,66 +14,66 @@ ht-degree: 1%
 
 # 联合数据访问 (FDA){#gs-fda}
 
-使用FDA聯結器（同盟資料存取）將Campaign連線至一或多個 **外部資料庫** 以及處理儲存在其中的資訊，而不會影響您的Campaign Cloud資料庫資料。 然後您可以存取外部資料，而不需變更Adobe Campaign資料的結構。
+使用FDA连接器（联合数据访问）将Campaign连接到一个或多个 **外部数据库** 并处理存储到其中的信息，而不会影响您的Campaign云数据库数据。 然后，您可以访问外部数据，而无需更改Adobe Campaign数据的结构。
 
-![](../assets/do-not-localize/speech.png)   身為Managed Cloud Services使用者， [連絡人Adobe](../start/campaign-faq.md#support) 將外部資料庫與Campaign連線。
+![](../assets/do-not-localize/speech.png)   作为托管Cloud Services用户， [联系人Adobe](../start/campaign-faq.md#support) 以将外部数据库与Campaign连接。
 
 
 >[!NOTE]
 >
->* 同盟資料存取的相容資料庫列於 [相容性矩陣](../start/compatibility-matrix.md).
+>* 用于联合数据访问的兼容数据库列在 [兼容性矩阵](../start/compatibility-matrix.md).
 >
->* 在的內容中 [企業(FFDA)部署](../architecture/enterprise-deployment.md)，您可使用特定的外部帳戶來管理Campaign本機資料庫與Snowflake雲端資料庫之間的通訊。 此外部帳戶是根據Adobe和為您設定的 **不得** 修改。
+>* 在上下文中 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，可以使用特定的外部帐户管理Campaign本地数据库和Snowflake云数据库之间的通信。 此外部帐户按Adobe和为您设置 **不得** 将被修改。
 >
 
 
 
 ## 最佳实践和限制
 
-FDA選項受您使用的第三方資料庫系統限制。
+FDA选项受您使用的第三方数据库系统的限制。
 
-此外，請注意下列限制和最佳作法：
+此外，请注意以下限制和最佳实践：
 
-* FDA選項可用於在工作流程中以批次模式操控外部資料庫中的資料。 為避免效能問題，不建議在單一操作的環境中使用FDA模組，例如：個人化、互動、即時傳訊等。
+* FDA选项可用于在工作流中以批处理模式处理外部数据库中的数据。 为了避免出现性能问题，建议不要在单一操作（例如：个性化、交互、实时消息传送等）的上下文中使用FDA模块。
 
-* 儘可能避免同時使用Adobe Campaign和外部資料庫的操作。 若要這麼做，您可以：
+* 尽可能避免需要同时使用Adobe Campaign和外部数据库的操作。 要执行此操作，您可以：
 
-   * 將Adobe Campaign資料庫匯出至外部資料庫，並僅從外部資料庫執行操作，然後再將結果重新匯入Adobe Campaign。
+   * 将Adobe Campaign数据库导出到外部数据库，并仅在将结果重新导入Adobe Campaign之前从外部数据库执行操作。
 
-   * 從外部Adobe Campaign資料庫收集資料，並在本機執行操作。
-   如果您想要使用外部資料庫中的資料在傳遞中執行個人化，請收集要在工作流程中使用的資料，使其可在臨時表格中使用。 然後，使用臨時表格中的資料來個人化您的傳遞。 若要執行此作業，請使用在專用工作流程中預先處理訊息個人化 **[!UICONTROL Prepare the personalization data with a workflow]** 選項，可在 **[!UICONTROL Analysis]** 傳遞屬性的索引標籤。 在傳遞分析期間，此選項會自動建立並執行工作流程，將所有連結至目標的資料儲存在暫存表格中，包括連結至外部資料庫之表格的資料。
+   * 从外部Adobe Campaign数据库中收集数据并在本地执行操作。
+   如果要使用外部数据库中的数据在投放中实施个性化，请收集要在工作流中使用的数据，以使其在临时表中可用。 然后，使用临时表中的数据将投放个性化。 要执行此操作，请使用在专用工作流中预先处理消息个性化 **[!UICONTROL Prepare the personalization data with a workflow]** 选项，可在 **[!UICONTROL Analysis]** 选项卡中显示的投放属性。 在投放分析期间，此选项会自动创建并执行一个工作流，该工作流会将链接到目标的所有数据（包括链接在外部数据库中的表中的数据）存储在临时表中。
 
    >[!CAUTION]
    >
-   >此選項可大幅改善執行個人化步驟時的效能。
+   >此选项可显着改进执行个性化步骤时的性能。
 
 
-## 在工作流程中使用外部資料
+## 在工作流中使用外部数据
 
-Campaign提供幾個工作流程活動，可用來與外部資料庫的資料互動：
+Campaign附带多个工作流活动，您可以使用这些活动与外部数据库中的数据交互：
 
-* **篩選外部資料**  — 使用 **[!UICONTROL Query]** 活動以新增外部資料，並在定義的篩選設定中使用資料。
+* **筛选外部数据**  — 使用 **[!UICONTROL Query]** 活动，用于添加外部数据并在定义的过滤器配置中使用它。
 
-* **建立子集**  — 使用 **[!UICONTROL Split]** 建立子集的活動。 您可以使用外部資料來定義要使用的篩選條件。
+* **创建子集**  — 使用 **[!UICONTROL Split]** 创建子集的活动。 您可以使用外部数据来定义要使用的筛选条件。
 
-* **載入外部資料庫**  — 使用中的外部資料 **[!UICONTROL Data loading (RDBMS)]** 活動。
+* **加载外部数据库**  — 使用中的外部数据 **[!UICONTROL Data loading (RDBMS)]** 活动。
 
-* **新增資訊和連結**  — 使用 **[!UICONTROL Enrichment]** 活動，將其他資料新增至工作流程的工作表，以及連結至外部表格。 在這種情況下，它可以使用來自外部資料庫的資料。
+* **添加信息和链接**  — 使用 **[!UICONTROL Enrichment]** 活动，用于将其他数据添加到工作流的工作表，以及指向外部表的链接。 在这种情况下，它可以使用来自外部数据库的数据。
 
-您也可以從上述所有工作流程活動中直接定義外部資料庫的連線，以供暫時使用。 在這種情況下，它將在本機外部資料庫上，僅用於目前的工作流程。
+您也可以从上面列出的所有工作流活动中直接定义到外部数据库的连接，以供临时使用。 在这种情况下，它将在本地外部数据库上，仅在当前工作流中使用。
 
 >[!CAUTION]
 >
->此型別的設定只能暫時用於收集資料。 外部帳戶設定應優先用於任何其他用途。
+>此类型的配置必须仅用于临时收集数据。 外部帐户配置应首选用于任何其他用途。
 
-例如，在 **[!UICONTROL Query]** 活動，您可以定義與外部資料庫的暫時連線，如下所示：
+例如，在 **[!UICONTROL Query]** 活动时，可以定义与外部数据库的临时连接，如下所示：
 
-1. 開啟活動並按一下 **[!UICONTROL Add data...]**
-1. 選取 **[!UICONTROL External data]** 選項
-1. 選取 **[!UICONTROL Locally defining the data source]** option
-1. 在下拉式清單中選取目標資料庫引擎。 輸入伺服器的名稱並提供驗證引數。 同時指定外部資料庫的名稱。
-1. 選取儲存資料的表格。 您可以直接在對應欄位中輸入表格名稱，或按一下編輯圖示來存取資料庫表格的清單。
-1. 按一下 **[!UICONTROL Add]** 按鈕來定義外部資料庫資料與Adobe Campaign資料庫中資料之間的一或多個調解欄位。 此 **[!UICONTROL Edit expression]** 的圖示 **[!UICONTROL Remote field]** 和 **[!UICONTROL Local field]** 可讓您存取每個表格的欄位清單。
-1. 如有需要，請指定篩選條件和資料排序模式。
-1. 選取要在外部資料庫中收集的其他資料。 若要這麼做，請連按兩下您要新增的欄位，以便在 **[!UICONTROL Output columns]**.
-1. 按一下 **[!UICONTROL Finish]** 以確認此設定。
+1. 打开活动并单击 **[!UICONTROL Add data...]**
+1. 选择 **[!UICONTROL External data]** options
+1. 选择 **[!UICONTROL Locally defining the data source]** option
+1. 在下拉列表中选择目标数据库引擎。 输入服务器的名称并提供身份验证参数。 同时指定外部数据库的名称。
+1. 选择存储数据的表。 您可以直接在相应的字段中输入表的名称，或者单击编辑图标以访问数据库表的列表。
+1. 单击 **[!UICONTROL Add]** 按钮来定义外部数据库数据与Adobe Campaign数据库中的数据之间的一个或多个协调字段。 此 **[!UICONTROL Edit expression]** 图标 **[!UICONTROL Remote field]** 和 **[!UICONTROL Local field]** 允许您访问每个表的字段列表。
+1. 如有必要，请指定筛选条件和数据排序模式。
+1. 选择要在外部数据库中收集的其他数据。 要执行此操作，请双击要添加的字段，以在 **[!UICONTROL Output columns]**.
+1. 单击 **[!UICONTROL Finish]** 以确认此配置。

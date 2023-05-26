@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 投放
-description: 進一步瞭解傳遞型別工作流程活動
+description: 了解有关投放类型工作流活动的更多信息
 feature: Workflows, Channels Activity
 exl-id: 58574983-86c7-46f5-b41b-bae90171048d
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
@@ -15,9 +15,9 @@ ht-degree: 1%
 
 
 
-A **傳遞**-type活動可讓您建立傳遞動作。 它可以使用输入元素来构建。
+A **投放**-type活动允许您创建投放操作。 它可以使用输入元素来构建。
 
-若要設定，請編輯活動並輸入傳送選項。
+要对其进行配置，请编辑活动并输入交付选项。
 
 ![](assets/edit_diffusion.png)
 
@@ -25,144 +25,144 @@ A **傳遞**-type活動可讓您建立傳遞動作。 它可以使用输入元�
 
    您可以：
 
-   * 對入站轉變中指定的傳遞採取行動。 若要這麼做，請選取 **[!UICONTROL Delivery]** 區段。
+   * 对集客过渡中指定的投放执行操作。 要实现此目的，请选择 **[!UICONTROL Delivery]** 部分。
 
-      當先前的工作流程活動已建立或指定傳送時，可使用此選項。 此作業可由產生出站轉變的相同型別活動完成，如下例所示。
+      当之前的工作流活动已创建或指定投放时，可以使用此选项。 可以像下面的示例一样，由已生成叫客过渡的相同类型的活动执行此操作。
 
-      在以下範例中，會首次建立傳送。 母體與內容將於稍後定義。 接著，系統會使用入站轉變，將這三個元素的資訊重新輸入新的傳送活動，以便傳送。
+      在以下示例中，首次创建了投放。 群体和内容稍后定义。 接下来，使用集客过渡将这三个元素的信息重新输入到新的投放活动中，以便发送该信息。
 
       ![](assets/specified_transition_option_exemple.png)
 
-   * 直接選取相關的傳遞。 若要這麼做，請選取 **[!UICONTROL Explicit]** 選項並從「 」的下拉式清單中選取傳送 **[!UICONTROL Delivery]** 欄位。
+   * 直接选择相关的投放。 要执行此操作，请选择 **[!UICONTROL Explicit]** 选项并从的下拉列表中选择投放 **[!UICONTROL Delivery]** 字段。
 
-      此清單顯示包含在以下專案中的未完成傳遞： **傳遞** 資料夾預設為。 若要存取其他行銷活動，請按一下 **[!UICONTROL Select link]** 圖示。
+      该列表显示了中包含的未完成投放 **投放** 默认文件夹。 要访问其他营销活动，请单击 **[!UICONTROL Select link]** 图标。
 
       ![](assets/diffusion_edit_1.png)
 
-      從的下拉式清單中選取行銷活動 **[!UICONTROL Folder]** 欄位，或按一下 **[!UICONTROL Display sub-levels]** 若要顯示子資料夾中包含的所有傳遞：
+      从的下拉列表中选择营销活动 **[!UICONTROL Folder]** 字段，或单击 **[!UICONTROL Display sub-levels]** 显示子文件夹中包含的所有投放：
 
       ![](assets/diffusion_edit_2.png)
 
-      選取傳遞動作後，您可以按一下 **[!UICONTROL Edit link]** 圖示。
+      选择投放操作后，您可以通过单击 **[!UICONTROL Edit link]** 图标。
 
-   * 建立指令碼以計算傳遞。 若要這麼做，請選取 **[!UICONTROL Computed by a script]** 選項並輸入指令碼。 您可以按一下 **[!UICONTROL Edit...]** 選項。 以下範例會復原傳遞的識別碼：
+   * 创建脚本以计算投放。 要执行此操作，请选择 **[!UICONTROL Computed by a script]** 选项并输入脚本。 您可以通过单击 **[!UICONTROL Edit...]** 选项。 以下示例恢复投放的标识符：
 
       ![](assets/diffusion_edit_3.png)
 
-   * 建立新傳遞。 若要這麼做，請選取 **[!UICONTROL New, created from a template]** 選項並選取傳遞所依據的傳遞範本。
+   * 创建新投放。 要执行此操作，请选择 **[!UICONTROL New, created from a template]** 选项并选择投放所基于的投放模板。
 
       ![](assets/diffusion_edit_4.png)
 
-      按一下 **[!UICONTROL Select link]** 圖示以瀏覽資料夾，然後按一下 **[!UICONTROL Edit link]** 圖示（如果要檢視所選範本的內容）。
+      单击 **[!UICONTROL Select link]** 图标浏览文件夹，然后单击 **[!UICONTROL Edit link]** 图标（如果您要查看所选模板的内容）。
 
 1. **收件人**
 
-   收件者可由傳入事件指定（例如，在檔案匯入後），或在傳遞動作中指定。 它們也可以儲存在一個或多個檔案中。
+   收件人可由集客事件指定（例如，在文件导入后），或在投放操作中指定。 它们也可以存储在一个或多个文件中。
 
    ![](assets/diffusion_edit_5.png)
 
 1. **内容**
 
-   訊息內容可在傳遞或傳入事件中定義。
+   消息的内容可以在投放或集客事件中定义。
 
    ![](assets/diffusion_edit_6.png)
 
-1. **要執行的動作**
+1. **要执行的操作**
 
-   您可以建立傳遞、準備傳遞、開始傳遞、估計目標或傳送證明。
+   您可以创建投放、准备投放、启动投放、评估目标或发送校样。
 
    ![](assets/diffusion_edit_7.png)
 
-   選取要執行的動作型別：
+   选择要执行的操作类型：
 
-   * **[!UICONTROL Save]**：此選項可讓您建立傳送並儲存。 它不會分析或傳遞它。
-   * **[!UICONTROL Estimate the target]**：此選項可讓您計算傳送目標，以評估其潛力（第一個分析階段）。 此動作等同於選取 **[!UICONTROL Estimate the population to be targeted]** 選項並按一下 **[!UICONTROL Analyze]** 透過將傳遞傳送至主要目標時 **傳遞**.
-   * **[!UICONTROL Prepare]**：此選項可讓您執行完整分析程式（目標計算和內容準備）。 傳遞未傳送。 此動作等同於選取 **[!UICONTROL Deliver as soon as possible]** 選項並按一下 **[!UICONTROL Analyze]** 使用將傳遞傳送至主要目標時 **傳遞**.
-   * **[!UICONTROL Send a proof]**：此選項可讓您傳送傳遞的證明。 此動作等同於按一下 **[!UICONTROL Send a proof]** 使用傳遞工具列中的按鈕 **傳遞**
-   * **[!UICONTROL Prepare and start]**：此選項會啟動完整分析程式（目標計算與內容準備）並傳送傳送。 此動作等同於按一下 **[!UICONTROL Deliver as soon as possible]**， **[!UICONTROL Analyze]**、和 **[!UICONTROL Confirm delivery]** 選項（透過將傳遞傳送至主要目標時） **傳遞**.
+   * **[!UICONTROL Save]**：利用此选项可创建并保存投放。 它不会分析或提供它。
+   * **[!UICONTROL Estimate the target]**：利用此选项，可计算投放目标以评估其潜力（第一个分析阶段）。 此操作等同于选择 **[!UICONTROL Estimate the population to be targeted]** 选项并单击 **[!UICONTROL Analyze]** 通过以下方式将投放发送到主目标时 **投放**.
+   * **[!UICONTROL Prepare]**：利用此选项可运行完整分析过程（目标计算和内容准备）。 投放未发送。 此操作等同于选择 **[!UICONTROL Deliver as soon as possible]** 选项并单击 **[!UICONTROL Analyze]** 使用将投放发送到主目标时 **投放**.
+   * **[!UICONTROL Send a proof]**：利用此选项，可发送投放的证明。 此操作等同于单击 **[!UICONTROL Send a proof]** 使用进行投放的工具栏中的按钮 **投放**
+   * **[!UICONTROL Prepare and start]**：此选项启动完整分析过程（目标计算和内容准备）并发送投放。 此操作等同于单击 **[!UICONTROL Deliver as soon as possible]**， **[!UICONTROL Analyze]**、和 **[!UICONTROL Confirm delivery]** 使用将投放发送到主目标时的选项 **投放**.
 
-   此 **[!UICONTROL Act on a delivery]** 在工作流程中於上更進一步使用的活動，可讓您啟動啟動啟動傳送所需的所有剩餘步驟（目標計算、內容準備、傳送）。 有關詳細資訊，請參閱 [傳遞控制](delivery-control.md).
+   此 **[!UICONTROL Act on a delivery]** 在工作流中继续使用的活动允许您启动启动投放所需的所有剩余步骤（目标计算、内容准备、投放）。 有关更多信息，请参阅 [投放控制](delivery-control.md).
 
-   也可使用下列選項：
+   以下选项也可用：
 
    * **[!UICONTROL Generate an outbound transition]**
 
-      建立將在執行結束時啟用的出站轉變。 您可以選擇是否要擷取傳出傳遞的目標。
+      创建将在执行结束时激活的叫客过渡。 您可以选择是否检索出站投放的目标。
 
    * **[!UICONTROL Do not recover target]**
 
-      不會復原傳出傳遞動作的目標。
+      不恢复传出投放操作的目标。
 
    * **[!UICONTROL Processing errors]**
 
-      請參閱 [傳遞控制](delivery-control.md).
-   此 **指令碼** 索引標籤可讓您修改傳送引數。
+      请参阅 [投放控制](delivery-control.md).
+   此 **脚本** 选项卡可让您修改投放参数。
 
    ![](assets/edit_diffusion_fil_script.png)
 
-## 範例：傳遞工作流程 {#example--delivery-workflow}
+## 示例：投放工作流 {#example--delivery-workflow}
 
-建立新工作流程並新增活動，如下圖所示：
+创建新工作流并添加活动，如下图所示：
 
 ![](assets/new-workflow-5.png)
 
-開啟 **傳遞** 活動並定義屬性，如下所示：
+打开 **投放** 活动并定义属性，如下所示：
 
-* 在 **[!UICONTROL Delivery]** 區段，選取 **[!UICONTROL New, created from a template]** 並選取傳遞範本。
-* 在 **[!UICONTROL Recipients]** 區段，選取 **[!UICONTROL Specified in the delivery]**.
-* 在 **[!UICONTROL Action to execute]** 區段，保留 **[!UICONTROL Prepare]** 選項。
+* 在 **[!UICONTROL Delivery]** 部分，选择 **[!UICONTROL New, created from a template]** 并选择投放模板。
+* 在 **[!UICONTROL Recipients]** 部分，选择 **[!UICONTROL Specified in the delivery]**.
+* 在 **[!UICONTROL Action to execute]** 部分，保留 **[!UICONTROL Prepare]** 选项。
 
 ![](assets/new-workflow-param-delivery.png)
 
-按一下 **[!UICONTROL OK]** 以關閉屬性視窗。 您剛才已設定活動，包括根據將在其內指定目標的傳送範本建立和準備新傳送。
+单击 **[!UICONTROL OK]** 以关闭属性窗口。 您刚刚配置了一个活动，该活动包括根据将在其中指定目标的投放模板创建和准备新投放。
 
-開啟 **核准** 活動並定義屬性，如下所示：
+打开 **批准** 活动并定义属性，如下所示：
 
-1. 在 **[!UICONTROL Assignment type]** 欄位中，選取您註冊的群組。 如果您是使用「管理員」帳戶連線，請選取「管理」群組。
-1. 接下來，輸入標題，並在訊息內文中插入下列文字：
+1. 在 **[!UICONTROL Assignment type]** 字段中，选择注册所在的组。 如果您是使用“管理员”帐户连接的，请选择“管理”组。
+1. 接下来，输入标题，并在消息正文中插入以下文本：
 
    ```
    Do you wish to approve delivery (<%= vars.recCount %> recipient(s))?
    ```
 
-   此訊息包含以JavaScript撰寫的運算式： **[!UICONTROL vars.recCount]** 代表先前任務傳遞所定位的收件者人數。 如需JavaScript運算式的詳細資訊，請參閱 [JavaScript指令碼和範本](javascript-scripts-and-templates.md).
+   此消息包含使用JavaScript编写的表达式： **[!UICONTROL vars.recCount]** 表示投放前一个任务所针对的收件人数量。 有关JavaScript表达式的详细信息，请参阅 [JavaScript脚本和模板](javascript-scripts-and-templates.md).
 
    ![](assets/new-workflow-param-validation.png)
 
-   核准任務的詳細資訊，請參見 [核准](approval.md).
+   有关批准任务的详情，请参见 [批准](approval.md).
 
-## 輸入引數 {#input-parameters}
+## 输入参数 {#input-parameters}
 
-傳遞識別碼，如果 **[!UICONTROL Specified in the transition]** 選項已選取 **[!UICONTROL Delivery]** 區段。
+投放标识符，如果 **[!UICONTROL Specified in the transition]** 选项已选中 **[!UICONTROL Delivery]** 部分。
 
 * deliveryId
-* tableName
-* 綱要
+* 表名
+* 架构
 
-每個傳入事件都必須指定由這些引數定義的目標。
+每个入站事件都必须指定由这些参数定义的目标。
 
 >[!NOTE]
 >
->此引數僅在 **[!UICONTROL Specified by inbound event(s)]** 選項已選取 **[!UICONTROL Recipients]** 區段。
+>此参数仅在 **[!UICONTROL Specified by inbound event(s)]** 选项已选中 **[!UICONTROL Recipients]** 部分。
 
-* 檔案名稱
+* 文件名
 
-   檔案的完整名稱，產生條件為 **[!UICONTROL File(s) specified by inbound event(s)]** 選項已選取 **[!UICONTROL Recipients]** 區段。
+   在以下情况下生成的文件的全名： **[!UICONTROL File(s) specified by inbound event(s)]** 选项已选中 **[!UICONTROL Recipients]** 部分。
 
 * contentId
 
-   內容識別碼，如果 **[!UICONTROL Specified by inbound events]** 選項已選取 **[!UICONTROL Content]** 區段。
+   内容标识符，如果 **[!UICONTROL Specified by inbound events]** 选项已选中 **[!UICONTROL Content]** 部分。
 
-## 輸出引數 {#output-parameters}
+## 输出参数 {#output-parameters}
 
-* tableName
-* 綱要
+* 表名
+* 架构
 * recCount
 
-這組三個值可識別傳遞產生的目標。 **[!UICONTROL tableName]** 是記憶目標識別碼的表格名稱， **[!UICONTROL schema]** 為母體的結構描述（通常為nms：recipient）和 **[!UICONTROL recCount]** 是表格中的元素數量。
+这组三个值标识了投放产生的目标。 **[!UICONTROL tableName]** 是存储目标标识符的表的名称， **[!UICONTROL schema]** 是群体的模式（通常为nms：recipient）和 **[!UICONTROL recCount]** 是表中的元素数。
 
-與補碼關聯的轉變具有相同的引數。
+与补充关联的过渡具有相同的参数。
 
 >[!NOTE]
 >
->當以下情況時，沒有輸出引數： **[!UICONTROL Do not recover target]** 選項時才會選擇此選項。
+>如果符合以下条件，则没有输出参数 **[!UICONTROL Do not recover target]** 选项。

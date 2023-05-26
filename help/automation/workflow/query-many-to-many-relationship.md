@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 使用多對多關係進行查詢
-description: 瞭解如何使用多對多關係執行查詢
+title: 使用多对多关系进行查询
+description: 了解如何使用多对多关系执行查询
 feature: Query Editor
 exl-id: c320054d-7f67-4b12-aaa7-785945bf0c18
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
@@ -11,65 +11,65 @@ ht-degree: 1%
 
 ---
 
-# 使用多對多關係進行查詢 {#querying-using-a-many-to-many-relationship}
+# 使用多对多关系进行查询 {#querying-using-a-many-to-many-relationship}
 
 
 
-在此範例中，我們要復原過去7天內未聯絡的收件者。 此查詢與所有傳遞有關。
+在本例中，我们希望恢复过去7天内未联系的收件人。 此查询涉及所有投放。
 
-此範例也說明如何設定與選取的收集元素（或橘色節點）相關的篩選器。 集合元素位於 **[!UICONTROL Field to select]** 視窗。
+此示例还显示如何配置与所选收集元素（或橙色节点）相关的过滤器。 收藏集元素在以下位置提供： **[!UICONTROL Field to select]** 窗口。
 
-* 需要選取哪個表格？
+* 需要选择哪个表？
 
-   收件者表格(**nms：recipient**)
+   收件人表(**nms：recipient**)
 
-* 要為輸出欄選取的欄位
+* 要为输出列选择的字段
 
-   主索引鍵、姓氏、名字和電子郵件
+   主键、姓氏、名字和电子邮件
 
-* 根據篩選資訊的條件
+* 根据筛选信息的标准
 
-   根據今天之前7天的收件者傳遞記錄
+   基于今天之前7天的收件人投放日志
 
 应用以下步骤：
 
-1. 開啟一般查詢編輯器並選取收件者表格 **[!UICONTROL (nms:recipient)]**.
-1. 在 **[!UICONTROL Data to extract]** 視窗，選取 **[!UICONTROL Primary key]**， **[!UICONTROL First name]**， **[!UICONTROL Last name]** 和 **[!UICONTROL Email]**.
+1. 打开通用查询编辑器并选择Recipient表 **[!UICONTROL (nms:recipient)]**.
+1. 在 **[!UICONTROL Data to extract]** 窗口，选择 **[!UICONTROL Primary key]**， **[!UICONTROL First name]**， **[!UICONTROL Last name]** 和 **[!UICONTROL Email]**.
 
    ![](assets/query_editor_nveau_33.png)
 
-1. 在排序視窗中，依字母順序排序名稱。
+1. 在排序窗口中，按字母顺序对名称排序。
 
    ![](assets/query_editor_nveau_34.png)
 
-1. 在 **[!UICONTROL Data filtering]** 視窗，選取 **[!UICONTROL Filtering conditions]**.
-1. 在 **[!UICONTROL Target element]** 視窗中，擷取過去7天沒有追蹤記錄之設定檔的篩選條件涉及兩個步驟。 您需要選取的元素是多對多連結。
+1. 在 **[!UICONTROL Data filtering]** 窗口，选择 **[!UICONTROL Filtering conditions]**.
+1. 在 **[!UICONTROL Target element]** 窗口中，用于提取过去7天内无跟踪日志的用户档案的过滤条件包括两个步骤。 您需要选择的元素是多对多链接。
 
-   * 從選取 **[!UICONTROL Recipient delivery logs (broadlog)]** 第一個收集要素（橘色節點） **[!UICONTROL Value]** 欄。
+   * 首先，选择 **[!UICONTROL Recipient delivery logs (broadlog)]** 第一个收集要素（橙色节点） **[!UICONTROL Value]** 列。
 
       ![](assets/query_editor_nveau_67.png)
 
-      選擇 **[!UICONTROL do not exist as]** 運運算元。 不需要在此行中選取第二個值。
+      选择 **[!UICONTROL do not exist as]** 运算符。 无需在此行中选择第二个值。
 
-   * 第二個篩選條件的內容取決於第一個篩選條件。 在此， **[!UICONTROL Event date]** 欄位直接提供於 **[!UICONTROL Recipient delivery logs]** 表格，因為有此表格的連結。
+   * 第二过滤条件的内容取决于第一过滤条件。 在此， **[!UICONTROL Event date]** 字段直接在 **[!UICONTROL Recipient delivery logs]** 表，因为存在指向此表的链接。
 
       ![](assets/query_editor_nveau_36.png)
 
-      選取 **[!UICONTROL Event date]** 使用 **[!UICONTROL greater than or equal to]** 運運算元。 選取 **[!UICONTROL DaysAgo (7)]** 值。 若要這麼做，請按一下 **[!UICONTROL Edit expression]** 在 **[!UICONTROL Value]** 欄位。 在 **[!UICONTROL Formula type]** 視窗，選取 **[!UICONTROL Process on dates]** 和 **[!UICONTROL Current date minus n days]**，將「7」作為值提供。
+      选择 **[!UICONTROL Event date]** 使用 **[!UICONTROL greater than or equal to]** 运算符。 选择 **[!UICONTROL DaysAgo (7)]** 值。 要执行此操作，请单击 **[!UICONTROL Edit expression]** 在 **[!UICONTROL Value]** 字段。 在 **[!UICONTROL Formula type]** 窗口，选择 **[!UICONTROL Process on dates]** 和 **[!UICONTROL Current date minus n days]**，将“7”作为值提供。
 
       ![](assets/query_editor_nveau_37.png)
 
-      篩選條件已設定。
+      筛选条件已配置。
 
       ![](assets/query_editor_nveau_38.png)
 
-1. 在 **[!UICONTROL Data formatting]** 視窗中，將姓氏切換為大寫。 按一下 **[!UICONTROL Last name]** 中的行 **[!UICONTROL Transformation]** 欄並選取 **[!UICONTROL Switch to upper case]** （在下拉式功能表中）。
+1. 在 **[!UICONTROL Data formatting]** 窗口中，将姓氏切换为大写。 单击 **[!UICONTROL Last name]** 中的行 **[!UICONTROL Transformation]** 列并选择 **[!UICONTROL Switch to upper case]** （在下拉菜单中）。
 
    ![](assets/query_editor_nveau_39.png)
 
-1. 使用 **[!UICONTROL Add a calculated field]** 函式以插入欄至資料預覽視窗。
+1. 使用 **[!UICONTROL Add a calculated field]** 函数以向数据预览窗口中插入列。
 
-   在此範例中，新增計算欄位，並將收件者的名字和姓氏加入單一欄中。 按一下 **[!UICONTROL Add a calculated field]** 函式。 在 **[!UICONTROL Export calculated field definition]** 視窗，輸入標籤和內部名稱，然後選擇 **[!UICONTROL JavaScript Expression]** 型別。 然後輸入下列運算式：
+   在本例中，添加一个计算字段，将收件人的名字和姓氏添加到单列中。 单击 **[!UICONTROL Add a calculated field]** 函数。 在 **[!UICONTROL Export calculated field definition]** 窗口，输入标签和内部名称，然后选择 **[!UICONTROL JavaScript Expression]** 类型。 然后输入以下表达式：
 
    ```
    var rep = source._firstName+" - "+source._lastName
@@ -78,10 +78,10 @@ ht-degree: 1%
 
    ![](assets/query_editor_nveau_40.png)
 
-   单击 **[!UICONTROL OK]**。此 **[!UICONTROL Data formatting]** 視窗已設定。
+   单击 **[!UICONTROL OK]**。此 **[!UICONTROL Data formatting]** 窗口已配置。
 
-   如需新增計算欄位的詳細資訊，請參閱本區段。
+   有关添加计算字段的更多信息，请参阅此章节。
 
-1. 結果顯示在 **[!UICONTROL Data preview]** 視窗。 過去7天未聯絡的收件者會依字母順序顯示。 名稱會以大寫顯示，而且已建立具有名字和姓氏的欄。
+1. 结果显示在 **[!UICONTROL Data preview]** 窗口。 过去7天内未联系的收件人按字母顺序显示。 名称以大写显示，并且已创建具有名字和姓氏的列。
 
    ![](assets/query_editor_nveau_41.png)

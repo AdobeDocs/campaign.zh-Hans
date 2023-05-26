@@ -1,6 +1,6 @@
 ---
-title: 授與Campaign v8的許可權
-description: 瞭解如何授與Campaign v8使用者的許可權
+title: 向Campaign v8授予权限
+description: 了解如何向Campaign v8用户授予权限
 feature: Permissions
 role: User, Admin
 level: Beginner
@@ -14,236 +14,236 @@ ht-degree: 1%
 
 # 管理用户权限{#manage-permissions}
 
-## 新增使用者 {#add-users}
+## 添加用户 {#add-users}
 
-身為產品管理員，您可以新增使用者並授與Campaign的存取權。
+作为产品管理员，您可以添加用户并授予对Campaign的访问权限。
 
-若要新增使用者，請遵循下列步驟：
+要添加用户，请执行以下步骤：
 
-1. 在 [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"} 首頁，選取 **新增使用者**.
+1. 在 [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"} 主页，选择 **添加用户**.
 
    ![](assets/add-a-user.png)
 
-1. 輸入使用者的電子郵件地址。
-1. 使用「+」符號來選取要指派給使用者的產品設定檔或使用者群組。
+1. 输入用户的电子邮件地址。
+1. 使用“+”符号选择要分配给用户的产品配置文件或用户组。
 
    ![](assets/add-a-product-profile.png)
 
-   Campaign內建產品設定檔列於 [本節](#ootb-productprofiles).
+   中列出了Campaign内置产品配置文件 [本节](#ootb-productprofiles).
 
-   瞭解如何在中建立使用者群組 [本節](#user-groups)
+   了解如何在中创建用户组 [本节](#user-groups)
 
-1. 单击&#x200B;**保存**。使用者即會新增，並顯示在「使用者」清單中。 如果您將管理員角色或產品設定檔指派給使用者，使用者會收到電子郵件通知。 使用者必須按照連結完成其設定檔。
+1. 单击&#x200B;**保存**。用户即被添加，并显示在“用户”列表中。 如果您为用户分配管理员角色或产品配置文件，则他们会收到电子邮件通知。 用户必须单击该链接才能完成其个人资料。
 
-進一步瞭解在Admin Console中建立使用者 [此頁面](https://helpx.adobe.com/ie/enterprise/using/manage-users-individually.html){target="_blank"}.
+在中了解有关在Admin Console中创建用户的更多信息 [此页面](https://helpx.adobe.com/ie/enterprise/using/manage-users-individually.html){target="_blank"}.
 
-當新使用者時 [登入行銷活動](connect.md) 透過Adobe ID，這些選件會新增至使用者端主控台的Campaign運運算元清單中。 行銷活動運運算元儲存在 **[!UICONTROL Administration > Access management > Operators]** Campaign檔案總管的資料夾。
+新用户时 [登录Campaign](connect.md) 使用它们的Adobe ID，它们会被添加到客户端控制台的Campaign操作员列表中。 促销活动运算符存储在 **[!UICONTROL Administration > Access management > Operators]** Campaign资源管理器的文件夹。
 
-## 使用產品設定檔{#product-profiles}
+## 使用产品配置文件{#product-profiles}
 
-使用產品設定檔讓使用者有權使用產品中包含的功能。
+使用产品配置文件授予用户使用产品中所含功能的权限。
 
-* 您可以為Admin Console上的每個產品建立一個或多個產品設定檔。
-* 在每個產品設定檔中，您都會指派使用者和使用者群組（在您的組織中）。
-* 當使用者使用產品設定檔中指定的認證登入時，他們將獲得存取產品設定檔所依據之產品的應用程式和服務的許可權。
+* 您可以为Admin Console上的每个产品创建一个或多个产品配置文件。
+* 在每个产品配置文件中，您都可以分配用户和用户组（在您的组织中）。
+* 当用户使用产品配置文件中指定的凭据登录时，将授予他们访问产品配置文件所基于的产品应用程序和服务的权限。
 
-這些產品設定檔與儲存在中的運運算元群組相符 **[!UICONTROL Administration > Access management > Operator groups]** Campaign檔案總管的資料夾。
+这些产品配置文件与存储在中的运算符组匹配 **[!UICONTROL Administration > Access management > Operator groups]** Campaign资源管理器的文件夹。
 
-在Admin Console中，產品設定檔會使用以下語法：
+在Admin Console中，产品配置文件使用以下语法：
 
-行銷活動 —  `<your instance>`  — 操作員群組的內部名稱
+营销活动 —  `<your instance>`  — 操作员组的内部名称
 
-例如，對於 **傳遞操作員** 「測試」例項中的群組，Admin Console中的產品設定檔為：
+例如，对于 **投放操作员** 组，则Admin Console中的产品配置文件为：
 
-行銷活動 — 測試 — 傳送
+营销活动 — 测试 — 投放
 
-您可以使用預設的產品設定檔或建立新的設定檔。
+您可以使用默认的产品配置文件或创建新产品配置文件。
 
-### 建立產品設定檔{#create-product-profile}
+### 创建产品配置文件{#create-product-profile}
 
-若要將新產品設定檔新增至Adobe，您必須先在Campaign使用者端主控台中建立該設定檔，然後將其新增至Admin Console。
+要向Adobe添加新产品配置文件，您必须首先在Campaign客户端控制台中创建它，然后将其添加到Admin Console中。
 
-例如，若要建立「稽核者」產品設定檔，請遵循以下步驟。
+例如，要创建“审阅者”产品配置文件，请执行以下步骤。
 
-#### 在Campaign中建立運運算元群組{#create-op-group}
+#### 在Campaign中创建运算符组{#create-op-group}
 
-1. 連線至Campaign，開啟檔案總管，並瀏覽至 **[!UICONTROL Administration > Access management > Operator groups]**.
-1. 按一下 **[!UICONTROL New]**，並定義運運算元群組的名稱，然後設定其內部名稱（「稽核者」）。
+1. 连接到Campaign，打开资源管理器，然后浏览 **[!UICONTROL Administration > Access management > Operator groups]**.
+1. 单击 **[!UICONTROL New]**，并定义操作员组的名称并设置其内部名称（“审阅者”）。
    ![](assets/new-op-group.png)
-1. 透過選取已命名的許可權來定義相關許可權。 已命名的許可權詳見 [本節](#use-named-rights)
-1. 儲存新的運運算元群組。
+1. 通过选择已命名权限来定义关联的权限。 有关已命名权限的详情，请参见 [本节](#use-named-rights)
+1. 保存新的操作员组。
 
-#### 在Admin Console中建立產品設定檔{#create-profile-in-admin-console}
+#### 在Admin Console中创建产品配置文件{#create-profile-in-admin-console}
 
-1. 連線至 [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"}.
-1. 從 **產品與服務** 區段內，開啟Campaign產品。
-1. 按一下 **新設定檔** 並輸入要建立的產品描述檔名稱，其語法如說明完全正確 [此處](#product-profiles). 例如，我們輸入： campaign - `<your-instance-name>`  — 檢閱者
+1. 连接到 [Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"}.
+1. 从 **产品和服务** 打开促销活动产品。
+1. 单击 **新建配置文件** 并输入要创建的产品配置文件的名称，其中应使用正确的确切语法，如前所述 [此处](#product-profiles). 例如，我们输入：campaign - `<your-instance-name>`  — 审阅者
 
    ![](assets/new-product-profile-ui.png)
 
 1. 保存您的更改。
 
-您現在可以將使用者新增到此新產品設定檔，如中所述 [本節](#add-users).
+您现在可以将用户添加到此新产品用户档案，如中所述 [本节](#add-users).
 
-最佳實務是將產品設定檔指派給使用者群組。 依使用者管理許可權並非長久之計。
+最佳实践为将产品配置文件分配给用户组。 按用户管理权限不是一种可持续的模式。
 
 
-### 預設產品設定檔和運運算元群組 {#ootb-productprofiles}
+### 默认产品配置文件和操作员组 {#ootb-productprofiles}
 
-Adobe Campaign內建於 **產品設定檔** 在Adobe啟用您的環境時定義。
+Adobe Campaign附带内置功能 **产品配置文件** 在Adobe启用您的环境时定义。
 
 ![](assets/ootb-product-profiles.png)
 
-這些產品設定檔與Campaign相符 **運運算元群組**. 預設運運算元群組及其 [已命名的許可權](#use-named-rights) 如下所列：
+这些产品配置文件与Campaign匹配 **操作员组**. 默认运算符组及其 [已命名权限](#use-named-rights) 列于下文：
 
-1. **[!UICONTROL Administrator]** （管理員）
+1. **[!UICONTROL Administrator]** （管理员）
 
-   此群組中的運運算元擁有執行個體的完整存取權。 管理員是可存取使用者介面中最技術部分的使用者。
+   此组中的操作员对此实例具有完全访问权限。 管理员是可以访问用户界面中最技术部分的用户。
 
-   此群組包含下列已命名的許可權：
+   此组包含以下已命名权限：
 
-   * **[!UICONTROL ADMINISTRATION]**：執行/建立/編輯/刪除任何物件的權利，例如工作流程、傳送、指令碼等。
+   * **[!UICONTROL ADMINISTRATION]**：有权执行/创建/编辑/删除任何对象，例如工作流、投放、脚本等
 
 1. **[!UICONTROL Delivery operators]** (投放)
 
-   此群組中的運運算元負責管理傳送：他們可存取建立和準備傳送所需的主要資源（行銷活動型別、傳送對應、預設範本、個人化區塊等）。
+   此组中的操作员负责管理投放：他们可访问创建和准备投放所需的主要资源（活动类型、投放映射、默认模板、个性化块等）。
 
-   此群組包含下列已命名的許可權：
+   此组包含以下已命名权限：
 
-   * **[!UICONTROL PREPARE DELIVERIES]**：有權建立、編輯和開始傳遞分析，
-   * **[!UICONTROL START DELIVERIES]**：核准先前分析的傳送的權利。
+   * **[!UICONTROL PREPARE DELIVERIES]**：有权创建、编辑和开始投放分析，
+   * **[!UICONTROL START DELIVERIES]**：有权批准之前分析的投放。
 
-1. **[!UICONTROL Campaign managers]** （作業）
+1. **[!UICONTROL Campaign managers]** （操作）
 
-   此群組中的操作員可以管理行銷活動：這可讓您存取連結至行銷活動的物件（計畫、方案、工作流程、預算等） 在以下架構內： **[!UICONTROL Campaign]** (可選Adobe Campaign模組)。
+   此组中的操作员可以管理营销活动：通过此组，您可以访问链接到营销活动的对象（计划、项目、工作流、预算等） 在架构内 **[!UICONTROL Campaign]** (可选Adobe Campaign模块)。
 
-   此群組包含下列已命名的許可權：
+   此组包含以下已命名权限：
 
-   * **[!UICONTROL INSERT FOLDERS]**：將資料夾插入Adobe Campaign樹狀結構的權利（前提是您擁有相關分支的編輯許可權），
-   * **[!UICONTROL WORKFLOW]**：使用工作流程的權利。
+   * **[!UICONTROL INSERT FOLDERS]**：有权将文件夹插入Adobe Campaign树（前提是您对有关分支具有编辑权限），
+   * **[!UICONTROL WORKFLOW]**：使用工作流的权限。
 
    >[!NOTE]
    >
-   >此群組不會讓操作員開始傳遞。
+   >此组不允许操作员开始投放。
 
-1. **[!UICONTROL Content contributors]** （內容）
+1. **[!UICONTROL Content contributors]** （内容）
 
-   此群組中的使用者可以在的上下文中存取「內容」資料夾 **[!UICONTROL Content management]** 附加元件。 此群組未授予任何其他許可權。
+   此组中的用户可以访问上下文中的内容文件夹 **[!UICONTROL Content management]** 加载项。 此组未授予任何其他权限。
 
-1. **[!UICONTROL Access to reports]** （報告）
+1. **[!UICONTROL Access to reports]** （报告）
 
-   此群組是保留給外部操作者，以便透過存取傳遞報告 [網頁存取](../start/campaign-ui.md#web-browser).
+   此组是为外部操作员保留的，用于通过 [Web访问](../start/campaign-ui.md#web-browser).
 
-1. **[!UICONTROL Workflow execution]** （工作流程）
+1. **[!UICONTROL Workflow execution]** （工作流）
 
-   此 **[!UICONTROL Workflow execution]** 群組可讓您控制目標工作流程的執行和核准：名為許可權的工作流程會對應至此群組的運運算元。 除了資料檔案的存取權之外，工作流程上的所有動作都需要它。 根據預設， **[!UICONTROL Workflow execution]** 群組對標準目標定位工作流程檔案和工作流程範本具有唯讀存取權。 此群組中的操作員也擁有擱置核准檔案的讀取和寫入存取權。
+   此 **[!UICONTROL Workflow execution]** 组允许您控制定位工作流的执行和批准：已命名权限的工作流将映射到此组的操作员。 除了对数据文件的访问权限之外，还需要对工作流执行所有操作。 默认情况下， **[!UICONTROL Workflow execution]** 组对标准定位工作流文件和工作流模板具有只读访问权限。 此组中的操作员还具有对待处理审批文件的读写访问权限。
 
-1. **[!UICONTROL Workflow supervisors]** (workflowSupervisor)
+1. **[!UICONTROL Workflow supervisors]** （工作流主管）
 
-   此群組中的使用者管理工作流程核准，並在出現有關行銷活動工作流程的警報時收到電子郵件通知。
+   此组中的用户可管理工作流批准，并在出现与活动工作流相关的警报时收到电子邮件通知。
 
-1. **本機/中央管理** （中央/本機）
+1. **本地/中央管理** （中央/本地）
 
-   此群組中的使用者可以使用 **[!UICONTROL Distributed marketing]** 附加元件。
+   此组中的用户可以使用 **[!UICONTROL Distributed marketing]** 加载项。
 
 1. **[!UICONTROL Offer managers]** (优惠)
 
-   此群組中的操作員可在使用互動附加元件時建立和維護優惠方案。 [了解详情](../interaction/interaction-operators.md)。
+   此组中的操作员可以在使用交互加载项时创建和维护优惠。 [了解详情](../interaction/interaction-operators.md)。
 
-   此群組包含下列已命名的許可權：
+   此组包含以下已命名权限：
 
-   * **[!UICONTROL INSERT FOLDERS]**：將資料夾插入Adobe Campaign樹狀結構的權利（前提是您擁有相關分支的編輯許可權），
-   * **[!UICONTROL EDIT FOLDERS]**：變更資料夾屬性的權利，例如內部名稱、標籤、關聯的影像、子資料夾順序等。
+   * **[!UICONTROL INSERT FOLDERS]**：有权将文件夹插入Adobe Campaign树（前提是您对有关分支具有编辑权限），
+   * **[!UICONTROL EDIT FOLDERS]**：更改文件夹属性（如内部名称、标签、关联的图像、子文件夹顺序等）的权利。
 
-   指派給優惠方案經理的許可權可讓他們執行下列工作：
+   分配给选件管理器的权限允许他们执行以下任务：
 
-   * 修改 **[!UICONTROL Design]** 環境。
-   * 檢視 **[!UICONTROL Live]** 環境。
-   * 設定管理功能（預先定義的空格和篩選條件）。
-   * 建立和更新類別。
+   * 修改 **[!UICONTROL Design]** 环境。
+   * 视图 **[!UICONTROL Live]** 环境。
+   * 配置管理函数（预定义空格和过滤器）。
+   * 创建和更新类别。
    * 创建优惠.
-   * 設定優惠資格。
-   * 核准優惠方案。
+   * 配置优惠资格。
+   * 批准选件。
 
    >[!NOTE]
    >
-   >**優惠方案管理員** 只有在未指定稽核者或優惠方案範本中已設定為稽核者時，才能核准優惠方案。
+   >**优惠经理** 仅当未指定审阅人，或在优惠模板中已将他们设置为审阅人时，才能批准优惠。
 
-   每個環境的選件管理員許可權矩陣可在以下位置取得： [此頁面](../interaction/interaction-operators.md#recap-of-rights-according-to-operator).
+   中提供了每个环境的选件管理器权限矩阵 [此页面](../interaction/interaction-operators.md#recap-of-rights-according-to-operator).
 
-## 使用使用者群組{#user-groups}
+## 使用用户组{#user-groups}
 
-您可以使用Admin Console來建立使用者群組，並將使用者指派給他們。
+您可以使用Admin Console创建用户组并向其分配用户。
 
-使用者群組是必須獲授一組共用許可權的不同使用者的集合。 瞭解如何在中建立使用者群組 [本節](https://helpx.adobe.com/ie/enterprise/using/user-groups.html){target="_blank"}.
+用户组是必须获得一组共享权限的不同用户的集合。 了解如何在中创建用户组 [本节](https://helpx.adobe.com/ie/enterprise/using/user-groups.html){target="_blank"}.
 
-您可以將產品設定檔指派給使用者群組。 因此，該群組中的所有使用者都會獲得相同的產品許可權集。
+您可以将产品配置文件分配给用户组。 因此，该组中的所有用户都将获得相同的产品权限集。
 
 ## 已命名权限{#use-named-rights}
 
-Adobe Campaign隨附一組已命名的許可權，可讓您定義指派給使用者和使用者群組的許可權。 這些許可權可透過以下網址編輯： **[!UICONTROL Administration > Access management > Named rights]** Campaign檔案總管的資料夾。
+Adobe Campaign提供了一组已命名权限，可让您定义分配给用户和用户组的权限。 这些权限可以从 **[!UICONTROL Administration > Access management > Named rights]** Campaign资源管理器的文件夹。
 
-已命名的許可權會將許可權授予：
+已命名权限将权限授予：
 
-* 執行作業例如： **分析** 「傳遞」編輯器中的按鈕已對以下專案的成員啟用： **傳遞操作員** 擁有下列專案的群組： **準備傳遞** 已命名的右側
+* 执行操作例如， **分析** 投放编辑器中的按钮已为的成员激活 **投放操作员** 拥有 **准备投放** 已命名权限
 
-* 存取資料夾操作員群組的成員資格可以透過變更資料夾的安全性設定來授予或限制資料夾的存取許可權。 [了解详情](folder-permissions.md#restrict-access-to-a-folder)。
+* 对文件夹的访问操作员组的成员资格可以通过更改文件夹的安全性设置来授予或限制对文件夹的访问权限。 [了解详情](folder-permissions.md#restrict-access-to-a-folder)。
 
-   例如，它可能影響： **寫入許可權** 若要建立新實體（例如傳送、設定檔等）， **讀取許可權** 若要使用實體， **刪除存取權** 刪除圖元。
+   例如，它可以影响： **写入权限** 要创建新实体（如投放、用户档案等）， **读取权限** 要使用实体， **删除访问权限** 以删除实体。
 
-Adobe Campaign中的預設已命名許可權為：
+Adobe Campaign中的默认命名权限包括：
 
-* **[!UICONTROL ADMINISTRATION]**：運運算元與 **[!UICONTROL ADMINISTRATION]** right對執行個體具有完全存取權。 管理員使用者可以執行/建立/編輯/刪除任何物件，例如工作流程、傳送、指令碼等。
+* **[!UICONTROL ADMINISTRATION]**：运算符和 **[!UICONTROL ADMINISTRATION]** 权限对实例具有完全访问权限。 管理员用户可以执行/创建/编辑/删除任何对象，例如工作流、投放、脚本等。
 
-* **[!UICONTROL APPROVAL ADMINISTRATION]**：您可以在工作流程與傳送中設定多個核准步驟，以確保指派的運運算元或群組已核准目前狀態。 使用者具有 **[!UICONTROL APPROVAL ADMINISTRATION]** 許可權可以設定核准步驟，也可以指派應核准這些步驟的操作員或操作員群組。
+* **[!UICONTROL APPROVAL ADMINISTRATION]**：您可以在工作流和投放中设置多个批准步骤，以确保当前状态已由分配的操作员或组批准。 具有的用户 **[!UICONTROL APPROVAL ADMINISTRATION]** 权限可以设置批准步骤，还可以分配应批准这些步骤的操作员或操作员组。
 
-* **[!UICONTROL CENTRAL]**：適用於集中管理（分散式行銷）。
+* **[!UICONTROL CENTRAL]**：集中管理权限（分布式营销）。
 
-* **[!UICONTROL DELETE FOLDER]**：刪除資料夾的權利。 透過此許可權，使用者可以從瀏覽器檢視中刪除資料夾。
+* **[!UICONTROL DELETE FOLDER]**：有权删除文件夹。 凭借此权限，用户可以从资源管理器视图中删除文件夹。
 
-* **[!UICONTROL EDIT FOLDERS]**：變更資料夾屬性的權利，例如內部名稱、標籤、關聯的影像、子資料夾順序等。
+* **[!UICONTROL EDIT FOLDERS]**：更改文件夹属性（如内部名称、标签、关联的图像、子文件夹顺序等）的权利。
 
-* **[!UICONTROL EXPORT]**：使用者可使用將資料從其Adobe Campaign執行個體匯出至伺服器或本機電腦上的檔案。 **[!UICONTROL EXPORT]** 工作流程活動。
+* **[!UICONTROL EXPORT]**：用户可以使用将数据从其Adobe Campaign实例导出到服务器或本地计算机上的文件中。 **[!UICONTROL EXPORT]** 工作流活动。
 
-* **[!UICONTROL FILES ACCESS]**：透過指令碼對檔案的讀取和寫入許可權，該指令碼可在 **[!UICONTROL JavaScript]** 讀取/寫入伺服器檔案的工作流程活動。
+* **[!UICONTROL FILES ACCESS]**：有权通过脚本读取和写入文件，该脚本可以写入 **[!UICONTROL JavaScript]** 用于在服务器上读/写文件的工作流活动。
 
-* **[!UICONTROL IMPORT]**：一般資料匯入許可權。 **[!UICONTROL IMPORT]** 可讓您將資料匯入任何其他表格，而 **[!UICONTROL RECIPIENT IMPORT]** 許可權僅允許匯入至收件者表格。
+* **[!UICONTROL IMPORT]**：一般数据导入权限。 **[!UICONTROL IMPORT]** 允许您将数据导入到任何其他表中，而 **[!UICONTROL RECIPIENT IMPORT]** 权限仅允许导入收件人表。
 
-* **[!UICONTROL INSERT FOLDERS]**：插入資料夾的許可權。 使用者具有 **[!UICONTROL INSERT FOLDERS]** 在檔案總管檢視中，您可以在資料夾樹狀結構中建立新資料夾。
+* **[!UICONTROL INSERT FOLDERS]**：有权插入文件夹。 具有的用户 **[!UICONTROL INSERT FOLDERS]** 可在资源管理器视图的文件夹树中创建新文件夹。
 
-* **[!UICONTROL LOCAL]**：本機管理許可權（分散式行銷）。
+* **[!UICONTROL LOCAL]**：本地管理权限（分布式营销）。
 
-* **[!UICONTROL MERGE]**：將選取的記錄合併成一個記錄的許可權。 如果收件者以重複專案存在， **[!UICONTROL MERGE]** 許可權可讓使用者選取重複專案，並將其合併至主要收件者。
+* **[!UICONTROL MERGE]**：有权将选定的记录合并为一条记录。 如果收件人作为重复项存在，则 **[!UICONTROL MERGE]** 权限允许用户选择重复项并将它们合并到主收件人中。
 
-* **[!UICONTROL PREPARE DELIVERIES]**：建立、編輯和儲存傳送的權利。 使用者具有 **[!UICONTROL PREPARE DELIVERIES]** 右邊也可以開始傳遞分析程式。
+* **[!UICONTROL PREPARE DELIVERIES]**：有权创建、编辑和保存投放。 具有的用户 **[!UICONTROL PREPARE DELIVERIES]** 右侧还可以启动投放分析过程。
 
-* **[!UICONTROL PRIVACY DATA RIGHT]**：收集和刪除隱私資料的權利。 [了解详情](privacy.md)。
+* **[!UICONTROL PRIVACY DATA RIGHT]**：有权收集和删除隐私数据。 [了解详情](privacy.md)。
 
-* **[!UICONTROL PROGRAM EXECUTION]**：以各種程式語言執行命令的權利。
+* **[!UICONTROL PROGRAM EXECUTION]**：有权执行各种编程语言的命令。
 
-* **[!UICONTROL RECIPIENT IMPORT]**：匯入收件者的權利。 使用者具有 **[!UICONTROL RECIPIENT IMPORT]** 右方可以將本機檔案匯入收件者表格。
+* **[!UICONTROL RECIPIENT IMPORT]**：导入收件人的权限。 具有的用户 **[!UICONTROL RECIPIENT IMPORT]** 权限可以将本地文件导入收件人表。
 
-* **[!UICONTROL SQL SCRIPT EXECUTION]** 直接在資料庫上執行任何SQL命令的權利。
+* **[!UICONTROL SQL SCRIPT EXECUTION]** 有权直接在数据库上执行任何SQL命令。
 
-* **[!UICONTROL START DELIVERIES]**：核准先前分析的傳送的權利。 傳遞分析後，傳遞會在各種核准步驟暫停，並需要核准才能繼續。 使用者具有 **[!UICONTROL START DELIVERIES]** 允許許可權核准傳遞。
+* **[!UICONTROL START DELIVERIES]**：有权批准之前分析的投放。 投放分析后，投放将在各种批准步骤暂停，并且需要获得批准才能恢复。 具有的用户 **[!UICONTROL START DELIVERIES]** 允许权限审批投放。
 
-* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**：有權使用SQL資料管理活動撰寫您自己的SQL指令碼，以建立和填入工作表。 [了解详情](../../automation/workflow/sql-data-management.md)。
+* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**：有权使用SQL数据管理活动编写自己的SQL脚本，以便创建和填充工作表。 [了解详情](../../automation/workflow/sql-data-management.md)。
 
-* **[!UICONTROL WORKFLOW]**：此已命名的許可權是工作流程專用：可讓您建立、啟動和停止工作流程。 已命名的許可權需要工作流程檔案的讀取許可權才能適用。 針對目標工作流程，請閱讀以下文章中的 **[!UICONTROL Profiles and Targets]** 資料夾為必要項。
+* **[!UICONTROL WORKFLOW]**：此已命名权限特定于工作流：它允许您创建、启动和停止工作流。 已命名权限需要工作流文件的读取权限才能适用。 对于定位工作流，请阅读右上 **[!UICONTROL Profiles and Targets]** 文件夹是必需的。
 
 
-* **[!UICONTROL WEBAPP]**：使用Web應用程式的許可權。
+* **[!UICONTROL WEBAPP]**：有权使用Web应用程序。
 
 >[!NOTE]
 >
->此清單可能會因您環境中安裝的附加元件而異。
+>此列表可能会因环境中安装的加载项而异。
 
 
 
 ## 其他资源{#additional-res}
 
-* [管理工作流程的許可權](../../automation/workflow/managing-rights.md)
-* [管理分散式行銷的許可權](../../automation/distributed-marketing/about-distributed-marketing.md#operators)
-* [管理互動模組的許可權](../interaction/interaction-operators.md)
-* [篩選結構描述的存取權](../dev/filter-schema.md)
+* [管理工作流的权限](../../automation/workflow/managing-rights.md)
+* [管理分布式营销的权限](../../automation/distributed-marketing/about-distributed-marketing.md#operators)
+* [管理交互模块的权限](../interaction/interaction-operators.md)
+* [筛选对架构的访问权限](../dev/filter-schema.md)
 * [限制 PI 视图](../dev/restrict-pi-view.md)

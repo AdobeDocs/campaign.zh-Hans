@@ -15,19 +15,19 @@ ht-degree: 7%
 
 
 
-此 **[!UICONTROL Offers by cell]** 活動可讓您將入站母體（例如從查詢）分配至數個區段，並指定要針對每個區段呈現的選件。
+此 **[!UICONTROL Offers by cell]** 利用活动，可将集客群体（例如从查询）分配到多个区段，并指定要为每个区段呈现的选件。
 
-此活動只能用於 **互動**. 進一步瞭解中的選件管理 [本節](../../v8/interaction/interaction.md).
+此活动只能用于 **互动**. 在中了解有关选件管理的更多信息 [本节](../../v8/interaction/interaction.md).
 
 操作步骤：
 
-1. 新增 **[!UICONTROL Offers by cell]** 活動指定目標母體後，請開啟它。
-1. 在 **[!UICONTROL General]** 索引標籤中，選取您要顯示優惠方案的優惠方案空間。
-1. 在 **[!UICONTROL Cells]** 標籤中，使用指定不同的子集 **[!UICONTROL Add]** 按鈕：
+1. 添加 **[!UICONTROL Offers by cell]** 指定目标群体后打开该群体。
+1. 在 **[!UICONTROL General]** 选项卡中，选择要显示优惠的优惠空间。
+1. 在 **[!UICONTROL Cells]** 选项卡中，使用 **[!UICONTROL Add]** 按钮：
 
-   * 使用可用的篩選和限制規則指定子集母體。
-   * 接下來，選取您要呈現給子集的優惠方案。 可用的優惠方案是符合在上一步所選優惠方案空間上的優惠方案。
+   * 使用可用的筛选和限制规则指定子集群体。
+   * 接下来，选择要向子集呈现的选件。 可用优惠是在上一步中选择的优惠空间上符合条件的优惠。
 
       ![](assets/int_offer_per_cell1.png)
 
-1. 然後設定與您所選管道對應的傳送活動。 請參閱 [跨頻道傳遞](cross-channel-deliveries.md).
+1. 然后，配置与您选择的渠道对应的投放活动。 请参阅 [跨渠道投放](cross-channel-deliveries.md).

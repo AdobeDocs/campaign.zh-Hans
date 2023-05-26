@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 创建协作活动
-description: 瞭解如何建立合作行銷活動
+description: 了解如何创建协作活动
 feature: Distributed Marketing
 exl-id: edf887fb-c391-405c-b3cf-dc34aed69c53
 source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
@@ -15,162 +15,162 @@ ht-degree: 4%
 
 
 
-中央實體會從中建立合作行銷活動 **分散式行銷** 行銷活動範本。 请参见[此页面](about-distributed-marketing.md#collaborative-campaign)。
+中央实体从中创建协作营销活动 **分布式营销** 活动模板。 请参见[此页面](about-distributed-marketing.md#collaborative-campaign)。
 
 ## 创建协作活动 {#creating-a-collaborative-campaign}
 
-若要設定合作行銷活動，請按一下 **[!UICONTROL Campaign management > Campaigns]** 資料夾，然後 **[!UICONTROL New]** 圖示。
+要配置协作营销活动，请单击 **[!UICONTROL Campaign management > Campaigns]** 文件夹，然后 **[!UICONTROL New]** 图标。
 
 >[!NOTE]
 >
->除了 **[!UICONTROL collaborative campaigns (by campaign)]**，這些行銷活動可透過網頁介面設定和執行。
+>除了 **[!UICONTROL collaborative campaigns (by campaign)]**，可通过Web界面配置和执行这些营销活动。
 
-合作行銷活動資料庫的設定程式與本機行銷活動範本的設定程式類似。 不同型別的合作行銷活動的規格詳述如下。
+协作活动数据库的配置过程与本地活动模板的配置过程类似。 不同类型的协作活动的规格详见下文。
 
 ### 按形状 {#by-form}
 
-若要建立合作行銷活動（依表單），請 **[!UICONTROL Collaborative campaign (by form)]** 必須選取範本。
+要创建协作活动（按表单），请 **[!UICONTROL Collaborative campaign (by form)]** 必须选择模板。
 
 ![](assets/mkg_dist_mutual_op_form2.png)
 
-在 **[!UICONTROL Edit]** 索引標籤，按一下 **[!UICONTROL Advanced campaign parameters...]** 連結以存取 **分散式行銷** 標籤。
+在 **[!UICONTROL Edit]** 选项卡，单击 **[!UICONTROL Advanced campaign parameters...]** 链接以访问 **分布式营销** 选项卡。
 
-選取 **依表單** 網頁介面。 此型別的介面可讓您建立個人化欄位，本機實體在訂購行銷活動時將使用這些欄位。 請參閱 [建立本機行銷活動（依表單）](examples.md#creating-a-local-campaign--by-form-).
+选择 **按表单** Web界面。 此类界面允许您创建个性化字段，本地实体在订购营销活动时将使用这些字段。 请参阅 [创建本地活动（按表单）](examples.md#creating-a-local-campaign--by-form-).
 
-儲存您的行銷活動。 您現在可以從以下位置使用它： **行銷活動套件** 在中檢視 **Campaign** 索引標籤中，按一下 **[!UICONTROL Create]** 按鈕。
+保存您的营销活动。 您现在可以从以下位置使用它： **Campaign包** 在中查看 **Campaign** 选项卡，通过单击 **[!UICONTROL Create]** 按钮。
 
-此 **[!UICONTROL Campaign Package]** 檢視可讓您使用本機行銷活動範本（現成可用的或重複的），以及合作行銷活動的參考行銷活動，旨在為您不同的組織實體建立行銷活動。
+此 **[!UICONTROL Campaign Package]** 视图允许您使用本地营销活动模板（现成或重复）以及协作营销活动的引用营销活动，以便为不同的组织实体创建营销活动。
 
 ![](assets/mkg_dist_mutual_op_form1b.png)
 
-### 依行銷活動 {#by-campaign}
+### 按营销活动 {#by-campaign}
 
-若要建立合作行銷活動（依行銷活動），請 **[!UICONTROL Collaborative campaign (by campaign) (opCollaborativeByCampaign)]** 必須選取範本。
+要创建协作营销活动（按营销活动），请 **[!UICONTROL Collaborative campaign (by campaign) (opCollaborativeByCampaign)]** 必须选择模板。
 
 ![](assets/mkg_dist_mutual_op_by_op2.png)
 
-訂購行銷活動時，本機實體可完成中央實體預先定義的條件，並在訂購行銷活動之前評估行銷活動。
+订购营销活动时，本地实体可以完成由中心实体定义的标准，并在订购之前评估营销活动。
 
-訂購一次 **合作行銷活動（依行銷活動）** 中央實體已核准，則會為本機實體建立子行銷活動。 一旦可供它們使用，本機實體就可以修改：
+一次订购 **协作营销活动（按营销活动）** 由中央实体批准，则会为本地实体创建子营销活动。 一旦可供它们使用，本地实体就可以修改：
 
-* 行銷活動工作流程，
-* 型別規則，
-* 和個人化欄位。
+* 营销活动工作流，
+* 类型规则，
+* 和个性化字段。
 
-本機實體會執行子行銷活動。 中央實體執行父級行銷活動。
+本地实体执行子营销活动。 中央实体执行父营销策划。
 
-中央實體可檢視與連結的所有子行銷活動 **合作行銷活動（依行銷活動）** 從此儀表板(透過 **[!UICONTROL List of associated campaigns]** 連結)。
+中央实体可以查看与关联的所有子营销活动 **协作营销活动（按营销活动）** 从此仪表板(通过 **[!UICONTROL List of associated campaigns]** 链接)。
 
 ![](assets/mkg_dist_mutual_op_by_op.png)
 
 ### 通过目标审批 {#by-target-approval}
 
-若要建立合作行銷活動（透過目標核准），請 **[!UICONTROL Collaborative campaign (by target approval)]** 必須選取範本。
+要创建协作活动（通过目标审批），请执行以下操作 **[!UICONTROL Collaborative campaign (by target approval)]** 必须选择模板。
 
 ![](assets/mkg_dist_mutual_op_by_valid.png)
 
 >[!NOTE]
 >
->在此模式中，中央實體不需要指定本機實體。
+>在此模式下，中央实体不需要指定本地实体。
 
-行銷活動工作流程必須整合 **本地核准** 型別活動。 活動引數如下：
+活动工作流必须集成 **本地审批** 键入activity。 活动参数如下：
 
 * **[!UICONTROL Action to perform]** : 目标审批通知.
 * **[!UICONTROL Distribution context]** : 明确.
-* **[!UICONTROL Data distribution]** ：本機實體發佈。
+* **[!UICONTROL Data distribution]** ：本地实体分发。
 
-**本機實體分佈** 必須建立型別資料分佈。 資料發佈範本可讓您限制分組值清單中的記錄數。 在 **[!UICONTROL Resources > Campaign management > Data distribution]**，按一下 **[!UICONTROL New]** 圖示以建立新的 **[!UICONTROL Data distribution]**. 如需資料散佈的詳細資訊，
+**本地实体分发** 必须创建type data distribution。 通过数据分发模板，您可以限制分组值列表中的记录数。 In **[!UICONTROL Resources > Campaign management > Data distribution]**，单击 **[!UICONTROL New]** 图标以新建 **[!UICONTROL Data distribution]**. 有关数据分发的更多信息，
 
 ![](assets/mkg_dist_data_distribution.png)
 
-選取 **目標維度** 和 **[!UICONTROL Distribution field]**. 對於 **[!UICONTROL Assignment type]**，選取 **本地實體**.
+选择 **定位维度** 和 **[!UICONTROL Distribution field]**. 对于 **[!UICONTROL Assignment type]**，选择 **本地实体**.
 
-在 **[!UICONTROL Distribution]** 標籤，為每個本機實體新增欄位並指定值。
+在 **[!UICONTROL Distribution]** 选项卡，为每个本地实体添加一个字段并指定值。
 
 ![](assets/mkg_dist_data_distribution2.png)
 
-您可以新增第二個 **目標核准** 晚於 **傳遞** 輸入activity以設定相關報表。
+您可以添加第二个 **目标审批** 在 **投放** 键入activity以配置相关报表。
 
-在行銷活動建立通知訊息中，本機實體會接收已由中央實體引數預先定義的聯絡人清單。
+在营销活动创建通知消息中，本地实体接收已由中心实体参数预定义的联系人列表。
 
 ![](assets/mkg_dist_mutual_op_by_valid1.png)
 
-本機實體可以根據行銷活動內容刪除某些聯絡人。
+本地实体可以根据营销活动内容删除某些联系人。
 
 ![](assets/mkg_dist_mutual_op_by_valid2.png)
 
-### 簡單 {#simple}
+### 简单 {#simple}
 
-若要建立簡單的合作行銷活動，請 **[!UICONTROL Collaborative campaign (simple)]** 必須選取範本。
+要创建简单的协作活动，请 **[!UICONTROL Collaborative campaign (simple)]** 必须选择模板。
 
-## 建立合作行銷活動套件 {#creating-a-collaborative-campaign-package}
+## 创建协作活动包 {#creating-a-collaborative-campaign-package}
 
-若要讓本機實體可以使用行銷活動，中央實體必須建立行銷活動套件。
+要使营销活动对本地实体可用，中央实体必须创建营销活动包。
 
 应用以下步骤：
 
-1. 在 **[!UICONTROL Navigation]** 區段於 **行銷活動** 頁面，按一下 **[!UICONTROL Campaign packages]** 連結。
+1. 在 **[!UICONTROL Navigation]** 部分 **营销活动** 页面上，单击 **[!UICONTROL Campaign packages]** 链接。
 1. 单击 **[!UICONTROL Create]** 按钮。
-1. 視窗頂端的區段可讓您選取 **[!UICONTROL New collaborative package (mutualizedEmpty)]** 範本。
-1. 選取參考行銷活動。
-1. 指定行銷活動套件的標籤、資料夾和執行排程。
+1. 窗口顶部的部分允许您选择 **[!UICONTROL New collaborative package (mutualizedEmpty)]** 模板。
+1. 选择引用营销活动。
+1. 指定营销活动包的标签、文件夹和执行计划。
 
 ### 日期 {#dates}
 
-開始和結束日期會在行銷活動套件清單中定義行銷活動的可見度期間。
+开始日期和结束日期定义营销活动包列表中的营销活动可见性时段。
 
-對象 **合作行銷活動**，中央實體必須指定註冊和個人化期限。
+对象 **协作活动**，中央实体必须指定注册和个性化截止日期。
 
 >[!NOTE]
 >
->此 **[!UICONTROL Personalization deadline]** 允許中央實體選擇截止日期，本機實體必須在此日期之前傳遞檔案（試算表、影像），才能用於設定行銷活動。 這不是強制選項。 側邊步進此日期將不會影響Campaign實施。
+>此 **[!UICONTROL Personalization deadline]** 允许中央实体选择一个截止日期，本地实体必须在该日期之前交付了用于配置营销活动的文档（电子表格、图像）。 这不是强制选项。 侧步进此日期将不会影响Campaign实施。
 
 ![](assets/s_advuser_mkg_dist_create_mutual_entry.png)
 
 ### 受众 {#audience}
 
-中央實體必須在建立合作行銷活動後，立即指定每個行銷活動涉及的本機實體。
+创建协作营销活动后，中央实体必须立即指定每个营销活动所涉及的本地实体。
 
 ![](assets/s_advuser_mkg_dist_create_mutual_entry2.png)
 
 >[!CAUTION]
 >
->**[!UICONTROL Simple, by form and by campaign collaborative campaign kits]** 除非已指定相關的本機實體，否則無法核准。
+>**[!UICONTROL Simple, by form and by campaign collaborative campaign kits]** 除非已指定相关的本地实体，否则无法批准。
 
-### 核准模式 {#approval-modes}
+### 审批模式 {#approval-modes}
 
-對象 **合作行銷活動**，您可以指定訂單核准模式。
+对象 **协作活动**，您可以指定订单审批模式。
 
 ![](assets/mkg_dist_edit_kit1.png)
 
-在手動模式中，本地實體需要訂閱行銷活動才能參與。
+在手动模式下，本地实体需要订阅营销活动才能参与。
 
-在自動模式中，本機實體會預先訂閱行銷活動。 它可以在不需要中央實體核准的情況下，取消行銷活動訂閱或修改其引數。
+在自动模式下，本地实体预订阅营销活动。 它可以在不需要中央实体批准的情况下取消促销活动订阅或修改其参数。
 
 ![](assets/mkg_dist_edit_kit2.png)
 
 ### 通知 {#notifications}
 
-通知的設定與本機實體的通知相同。 请参阅[此小节](creating-a-local-campaign.md#notifications)。
+通知的配置与本地实体的通知相同。 请参阅[此小节](creating-a-local-campaign.md#notifications)。
 
-## 訂購行銷活動 {#ordering-a-campaign}
+## 订购营销活动 {#ordering-a-campaign}
 
-將合作行銷活動新增至行銷活動套件清單時，會通知屬於中央實體所定義對象的本機實體( **合作行銷活動（依目標核准）** 沒有預先定義的對象)。 傳送的訊息包含可讓您註冊促銷活動的連結，如下所示：
+当将协作营销活动添加到营销活动包列表时，会通知属于由中央实体定义的受众的本地实体(即 **协作活动（按目标批准）** 没有预定义受众)。 发送的消息包含一个链接，通过该链接可注册促销活动，如下所示：
 
 ![](assets/mkg_dist_mutual_op_notification.png)
 
-此訊息也可讓本機實體檢視建立封裝的中央運運算元輸入的說明，以及連結至行銷活動的檔案。 這些並不屬於行銷活動本身，但會提供相關的其他資訊。
+利用此消息，本地实体还可以查看由创建资源包的中央运算符输入的描述以及链接到营销活动的文档。 这些内容不属于营销策划本身，但它们提供了关于该营销策划的其他信息。
 
-一旦本地操作員透過Web介面登入，他們就可以輸入個人化資訊給想要訂購的合作行銷活動：
+一旦本地操作员通过Web界面登录，他们就可以向要订购的协作活动输入个性化信息：
 
 ![](assets/mkg_dist_mutual_op_command.png)
 
-本機實體完成註冊後，中心實體會透過電子郵件收到核准其訂單的通知。
+本地实体完成注册后，中心实体会通过电子邮件收到批准其订单的通知。
 
 ![](assets/mkg_dist_mutual_op_valid_command.png)
 
-如需詳細資訊，請參閱 [核准流程](creating-a-local-campaign.md#approval-process) 區段。
+有关详情，请参阅 [审批流程](creating-a-local-campaign.md#approval-process) 部分。
 
-## 核准訂單 {#approving-an-order}
+## 批准订单 {#approving-an-order}
 
-核准合作行銷活動套件訂單的流程與核准本機行銷活動相同。 请参阅[此小节](creating-a-local-campaign.md#approving-an-order)。
+批准协作活动包订单的流程与批准本地活动包订单的流程相同。 请参阅[此小节](creating-a-local-campaign.md#approving-an-order)。

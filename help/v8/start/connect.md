@@ -1,5 +1,5 @@
 ---
-title: 連線至Campaign v8
+title: 连接到Campaign v8
 description: 了解如何连接到 Adobe Campaign v8 并在您的计算机上安装控制台以便于访问。
 feature: Client Console
 role: User
@@ -12,112 +12,112 @@ ht-degree: 8%
 
 ---
 
-# 連線至Adobe Campaign v8{#gs-ac-connect}
+# 连接到Adobe Campaign v8{#gs-ac-connect}
 
-若要開始使用Campaign，您必須安裝並設定使用者端主控台。
+要开始使用Campaign，您必须安装和配置客户端控制台。
 
-使用者端主控台是原生應用程式，可透過標準網際網路通訊協定（例如SOAP和HTTP）與Adobe Campaign應用程式伺服器通訊。 Campaign使用者端主控台可集中所有功能和設定，且需要最少的頻寬，因為它需仰賴本機快取。 Campaign使用者端主控台專為輕鬆部署而設計，可從網際網路瀏覽器部署、自動更新，且不需要任何特定網路設定，因為它只會產生HTTP(S)流量。
+Client Console是一种本机应用程序，它通过标准Internet协议（如SOAP和HTTP）与Adobe Campaign应用程序服务器进行通信。 Campaign客户端控制台集中了所有功能和设置，并且由于依赖于本地缓存，因此需要的带宽最少。 Campaign客户端控制台专为轻松部署而设计，可从互联网浏览器部署并自动更新，无需任何特定的网络配置，因为它只会生成HTTP(S)流量。
 
-開始之前，您需要：
+在开始之前，您需要：
 
-* 在中檢查您的系統和工具與Adobe Campaign的相容性 [相容性矩陣](compatibility-matrix.md)
-* 取得您的Campaign伺服器URL
-* 建立您的Adobe ID，或從您的公司取得使用者認證
-* 在您的系統上安裝Microsoft Edge Webview2執行階段。 [了解详情](#webview)
+* 在中检查您的系统和工具与Adobe Campaign的兼容性 [兼容性矩阵](compatibility-matrix.md)
+* 获取Campaign服务器URL
+* 创建您的Adobe ID，或从您的公司获取用户凭据
+* 在系统上安装Microsoft Edge Webview2运行时。 [了解详情](#webview)
 
-## 安裝使用者端主控台{#download-ac-console}
+## 安装客户端控制台{#download-ac-console}
 
-### Microsoft Edge Webview2執行階段 {#webview}
+### Microsoft Edge Webview2运行时 {#webview}
 
-從Campaign Classic8.4建置版本，任何使用者端主控台安裝都需要安裝Microsoft Edge Webview 2執行階段。
+从Campaign Classic8.4内部版本开始，任何客户端控制台都需要安装Microsoft Edge Webview 2运行时。
 
-Web View預設會安裝為Windows 11作業系統的一部分。 如果您的系統尚未安裝該應用程式，Campaign使用者端主控台安裝程式會提示您從下載 [Microsoft開發人員網站](http://www.adobe.com/go/acc-ms-webview2-runtime-download_cn){target="_blank"}. 請注意，下載連結在Internet Explorer 11瀏覽器上無法運作，因為Microsoft已停止支援。 請確定您使用不同的瀏覽器來存取連結。
+Web View默认作为Windows 11操作系统的一部分安装。 如果您的系统中不存在该软件包，Campaign Client Console安装程序将提示您从以下位置下载它 [Microsoft开发人员网站](http://www.adobe.com/go/acc-ms-webview2-runtime-download_cn){target="_blank"}. 请注意，下载链接在Internet Explorer 11浏览器上不起作用，因为Microsoft已弃用其支持。 确保使用其他浏览器访问链接。
 
-### 下載主控台{#install-ac-console}
+### 下载控制台{#install-ac-console}
 
-第一次使用Campaign時，您需要下載並安裝使用者端主控台。
+首次使用Campaign时，您需要下载并安装客户端控制台。
 
-有兩個選項可用來下載使用者端主控台：
+有两个选项可用于下载Client Console：
 
-1. 身為Campaign管理員，請連線至Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html){target="_blank"}.
+1. 作为Campaign管理员，连接到Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html){target="_blank"}.
 
-1. 身為一般使用者，您的Campaign管理員會為您部署使用者端主控台，並透過專用的URL提供使用。
+1. 作为最终用户，您的Campaign管理员会为您部署客户端控制台，并通过专用URL提供该控制台。
 
-下載Client Console安裝程式後，請將其安裝在您的本機電腦上。
+下载Client Console安装程序后，请将其安装到本地计算机上。
 
-請注意，使用者端主控台語言安裝後即無法變更。
+请注意，一旦安装客户端控制台语言，您就无法更改该语言。
 
-## 建立您的連線{#create-your-connection}
+## 创建连接{#create-your-connection}
 
-安裝使用者端主控台後，請依照下列步驟建立與應用程式伺服器的連線：
+安装Client Console后，请按照以下步骤创建与应用程序服务器的连接：
 
-1. 啟動Console並瀏覽右上角的連結以存取連線設定畫面。
+1. 启动Console并浏览右侧的链接以访问连接配置屏幕。
 
-1. 按一下 **[!UICONTROL Add > Connection]** 並輸入Adobe Campaign應用程式伺服器的標籤和URL。
+1. 单击 **[!UICONTROL Add > Connection]** 并输入Adobe Campaign应用程序服务器的标签和URL。
 
-1. 透過URL指定與您的Adobe Campaign應用程式伺服器的連線。 使用電腦的DNS或別名，或您的IP位址。
+1. 通过URL指定与Adobe Campaign应用程序服务器的连接。 使用计算机的DNS或别名或IP地址。
 
-   例如，您可以使用 [`https://<machine>.<domain>.com`](https://myserver.adobe.com) 輸入URL。
+   例如，您可以使用 [`https://<machine>.<domain>.com`](https://myserver.adobe.com) 键入URL。
 
-1. 核取選項 **[!UICONTROL Connect with an Adobe ID]**.
+1. 选中选项 **[!UICONTROL Connect with an Adobe ID]**.
 
-1. 按一下 **[!UICONTROL Ok]** 以儲存您的設定。
+1. 单击 **[!UICONTROL Ok]** 以保存您的设置。
 
-例如，您可以視需要新增許多連線，以連線至您的測試、中繼和生產環境。
+例如，您可以根据需要添加任意数量的连接，以连接到测试、暂存和生产环境。
 
 >[!NOTE]
 >
->此 **[!UICONTROL Add]** 按鈕可讓您建立 **[!UICONTROL folders]** 以組織所有連線。 只需将每个连接拖放到某个文件夹中。
+>此 **[!UICONTROL Add]** 按钮可让您创建 **[!UICONTROL folders]** 以组织所有连接。 只需将每个连接拖放到某个文件夹中。
 
-## 登入Adobe Campaign {#logon-to-ac}
+## 登录到Adobe Campaign {#logon-to-ac}
 
-Campaign使用者透過AdobeAdobe Campaign System (IMS)，使用其Adobe ID連線至Identity Management主控台。 他們可以使用相同的ID所有Adobe解決方案。 將Adobe Campaign與其他解決方案搭配使用時，會儲存連線。 進一步瞭解Adobe IMS，請參閱 [此頁面](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
+Campaign用户通过AdobeIdentity Management System (IMS)，使用其Adobe ID连接到Adobe Campaign控制台。 他们可以在所有Adobe解决方案中使用同一ID。 将Adobe Campaign与其他解决方案结合使用时，将保存连接。 在中了解有关Adobe IMS的更多信息 [此页面](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
 
-若要登入執行個體，請遵循下列步驟：
+要登录到实例，请执行以下步骤：
 
-1. 啟動Console並瀏覽右上角的連結以存取連線設定畫面。
+1. 启动Console并浏览右侧的链接以访问连接配置屏幕。
 
    ![](assets/connectToCampaign.png)
 
-1. 選取您需要登入的Campaign執行個體。
+1. 选择您需要登录的Campaign实例。
 
 1. 单击 **[!UICONTROL Ok]**。
 
-接著，您可以使用Adobe ID登入Campaign。
+然后，您可以使用Adobe ID登录到Campaign。
 
 ![](assets/adobeID.png)
 
 >[!NOTE]
 >
->由於Microsoft Edge Webview2不會儲存Proxy認證，所以主控台可能會要求您在第一次連線時驗證兩次。
+>由于Microsoft Edge Webview2不保存代理凭据，因此控制台可能会在首次连接时要求您进行两次身份验证。
 
-## 升級您的使用者端主控台{#upgrade-ac-console}
+## 升级您的客户端控制台{#upgrade-ac-console}
 
-當您的系統升級至較新版本時，您必須將使用者端主控台更新至相同版本。 此為最佳實務，且對於某些版本而言，此升級為強制性。 在此情況下，它會在以下連結中提及： [發行說明](release-notes.md).
+当您的系统升级到较新版本时，您必须将客户端控制台更新到该版本。 这是最佳实践，对于某些版本，此升级是强制性的。 在此情况下，请参见 [发行说明](release-notes.md).
 
-Adobe身為Managed Cloud Services使用者，為您部署使用者端主控台。 當您連線到升級後的環境時，系統會提示您從快顯視窗中下載最新的使用者端主控台版本。 您必須接受此升級，並根據要求更新使用者端主控台。
+作为托管Cloud Services用户，Adobe将为您部署客户端控制台。 当您连接到升级后的环境时，系统会提示您在一个弹出窗口中下载最新的客户端控制台版本。 您必须接受此升级，并根据请求更新客户端控制台。
 
 >[!CAUTION]
 >
->Adobe建議保留選項 **[!UICONTROL No longer ask this question]** 取消選取，以確保有新版的Console可用時收到警報。 如果選取此選項，則不會通知使用者需要升級Console。
+>Adobe建议保留选项 **[!UICONTROL No longer ask this question]** 取消选择以确保当有新版本的Console可用时收到警报。 如果选择此选项，则不会通知用户需要升级Console。
 
 
-## 授予使用者存取許可權{#grant-access}
+## 授予用户访问权限{#grant-access}
 
-Adobe Campaign可讓您定義和管理指派給各種運運算元的許可權。
+Adobe Campaign允许您定义和管理分配给各种操作员的权限。
 
-身為Campaign管理員，您負責建立操作員並與使用者共用其認證。
+作为Campaign管理员，您负责创建操作员并与用户共享其凭据。
 
-進一步瞭解使用者以及如何在中定義其許可權 [本節](gs-permissions.md).
+在中了解有关用户以及如何定义其权限的更多信息 [本节](gs-permissions.md).
 
 
 ## Web 访问{#web-access}
 
-使用HTML使用者介面，可以透過網頁瀏覽器存取應用程式的某些部分：報告、傳遞核准、執行個體監控等。
+可以使用HTML用户界面通过Web浏览器访问应用程序的某些部分：报告、投放批准、实例监控等。
 
 Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
-例如，對於指定的運運算元，行銷活動會在主控台中顯示以下選項：
+例如，对于给定的运算符，营销活动将在控制台中显示以下选项：
 
 ![](assets/campaign-from-console.png)
 
@@ -125,6 +125,6 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 ![](assets/campaign-from-web.png)
 
-網路存取也用於驗證程式：操作員可以按一下核准請求電子郵件，並透過其網頁瀏覽器連線至Campaign，以驗證或拒絕傳遞內容或預算。
+验证过程中还使用Web访问：操作员可以单击审批请求电子邮件，并通过其Web浏览器连接到Campaign，以验证或拒绝投放内容或预算。
 
-若要從網頁存取您的Campaign執行個體，URL為：  `https://<your adobe campaign server>:<port number>/view/home`.
+要从Web访问Campaign实例，URL为：  `https://<your adobe campaign server>:<port number>/view/home`.

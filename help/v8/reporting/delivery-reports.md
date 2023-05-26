@@ -1,6 +1,6 @@
 ---
-title: Adobe Campaign內建傳遞報告
-description: Adobe Campaign內建傳遞報告
+title: Adobe Campaign内置投放报告
+description: Adobe Campaign内置投放报告
 feature: Reporting
 exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
@@ -12,17 +12,17 @@ ht-degree: 9%
 
 # 投放报告 {#delivery-reports}
 
-您可以透過可從傳送概述存取的各種報告，追蹤傳送的執行情況。
+您可以通过可从投放概述访问的各种报告来跟踪投放的执行情况。
 
-若要存取報表，請遵循下列步驟：
+要访问报表，请执行以下步骤：
 
-1. 瀏覽至 **[!UICONTROL Campaigns]** 標籤並按一下 **[!UICONTROL Delivery]** 顯示傳遞清單的連結。
-1. 按一下您要存取報告的傳遞名稱。
-1. 選取 **[!UICONTROL Summary]** 標籤並按一下 **[!UICONTROL Reports]** 存取傳遞特定報告的連結。
+1. 浏览至 **[!UICONTROL Campaigns]** 选项卡，然后单击 **[!UICONTROL Delivery]** 用于显示投放列表的链接。
+1. 单击要访问报告的投放的名称。
+1. 选择 **[!UICONTROL Summary]** 选项卡，然后单击 **[!UICONTROL Reports]** 用于访问特定于投放的报告的链接。
 
    ![](assets/detailed-report-2.png)
 
-   依預設，可使用下列報表：
+   默认情况下，可以使用以下报表：
 
    * **[!UICONTROL Delivery throughput]**
    * **[!UICONTROL Sharing to social networks]**
@@ -40,62 +40,62 @@ ht-degree: 9%
 
 ## 跟踪指标 {#tracking-indicators}
 
-此報表結合主要指標，用於追蹤收件者在收到傳遞時的行為。 它提供了对投放和接收统计数据、打开率和点进率、生成的点击流、Web 跟踪以及与社交网络共享的活动的访问权限。
+此报表将用于在接收投放时跟踪收件人行为的关键指标组合在一起。 它提供了对投放和接收统计数据、打开率和点进率、生成的点击流、Web 跟踪以及与社交网络共享的活动的访问权限。
 
 >[!NOTE]
 >
->根據訊息開啟計算出的值一律為預估值，因為連結至文字格式電子郵件的錯誤邊界。 此 **[!UICONTROL Distinct opens/Sum of opens for the population reached]** 指示器會將此誤差範圍列入考量。 [了解详情](metrics-calculation.md#tracking-opens-)。
+>根据消息打开次数计算的值始终是估计值，这是因为以文本格式链接到电子邮件的错误边距。 此 **[!UICONTROL Distinct opens/Sum of opens for the population reached]** 指示器会将此误差范围考虑在内。 [了解详情](metrics-calculation.md#tracking-opens-)。
 
 ![](assets/tracking-report-synthesis.png)
 
 **[!UICONTROL 1. Delivery statistics]**
 
-* **[!UICONTROL Messages to deliver]** ：傳遞分析後要傳遞的訊息總數。
+* **[!UICONTROL Messages to deliver]** ：投放分析后要投放的消息总数。
 * **[!UICONTROL Success]** : 成功处理的消息数.
 
 **[!UICONTROL 2. Reception statistics]**
 
 >[!NOTE]
 >
->相關百分比是根據成功轉送的訊息數來計算。
+>相关百分比是根据成功转发的邮件数计算的。
 
-* **[!UICONTROL Distinct opens for the population reached]** ：預估已開啟訊息至少一次的目標收件者人數。 由於必須開啟電子郵件才能點按連結，因此會考量追蹤URL的點按次數。
-* **[!UICONTROL Sum of opens for the population reached]** ：目標收件者開啟的總數預估值。
-* **[!UICONTROL Clicks on opt-out link]** ：對取消訂閱連結的點按次數。
-* **[!UICONTROL Clicks on the mirror page link]** ：對連結的點按次數 [映象頁面](../send/mirror-page.md). 若要列入考量，必須在傳遞精靈（追蹤的URL）中定義連結。
-* **[!UICONTROL Estimation of forwards]** ：目標收件者轉寄的電子郵件預估數量。 此值的計算方式為減去相異人數和已點按電子郵件之相異收件者人數。
+* **[!UICONTROL Distinct opens for the population reached]** ：估计至少已打开消息一次的目标收件人的数量。 由于必须打开电子邮件才能点击链接，因此会考虑对跟踪URL的点击量。
+* **[!UICONTROL Sum of opens for the population reached]** ：目标收件人打开总数的估计。
+* **[!UICONTROL Clicks on opt-out link]** ：取消订阅链接的点击次数。
+* **[!UICONTROL Clicks on the mirror page link]** ：指向的链接的点击次数 [镜像页面](../send/mirror-page.md). 为了便于考虑，必须在投放向导（跟踪的URL）中定义链接。
+* **[!UICONTROL Estimation of forwards]** ：目标收件人转发的电子邮件数量的估计。 此值计算方式为减去不同联系人数和单击了电子邮件的不同收件人数量。
 
    >[!NOTE]
    >
-   >如需不同對象和目標收件者之間差異的詳細資訊，請參閱 [目標對象/收件者](metrics-calculation.md#targeted-persons---recipients).
+   >有关不同用户与目标收件人之间差异的更多信息，请参阅 [目标人员/收件人](metrics-calculation.md#targeted-persons---recipients).
 
 **[!UICONTROL 3. Open and click-through rate]**
 
-此值表顯示每個網域的傳送、開啟、點按和原始反應性的劃分。 使用下列指標：
+此值表显示每个Internet域的投放、打开次数、点击次数和原始反应性的细分。 使用以下指标：
 
-* **[!UICONTROL Sent]** ：在這個網域上傳送的訊息總數。
-* **[!UICONTROL Complaints]** ：此網域被回報為收件者不想要的訊息數。 此速率是根據此網域上傳送的訊息總數來計算的。
-* **[!UICONTROL Opens]** ：此網域中至少開啟過一次訊息的不同目標收件者人數。 此速率是根據此網域上傳送的訊息總數來計算的。
-* **[!UICONTROL Clicks]** ：至少點按一次相同傳遞的不同目標收件者人數。 此速率是根據此網域上傳送的訊息總數來計算的
-* **[!UICONTROL Raw reactivity]** ：與開啟傳遞至少一次的收件者人數相比，已至少點按一次傳遞的收件者人數的百分比。
+* **[!UICONTROL Sent]** ：在此域上发送的消息总数。
+* **[!UICONTROL Complaints]** ：此域被收件人报告为不受欢迎的消息数。 费率是根据此域上发送的消息总数来计算的。
+* **[!UICONTROL Opens]** ：此域中至少打开过一次邮件的不同定向收件人的数量。 费率是根据此域上发送的消息总数来计算的。
+* **[!UICONTROL Clicks]** ：在同一个投放中至少点击一次的不同目标收件人的数量。 费率是根据此域上发送的消息总数计算的
+* **[!UICONTROL Raw reactivity]** ：与至少打开一次投放的收件人人数相比，至少点击一次投放的收件人人数的百分比。
 
 >[!NOTE]
 >
->此報告中顯示的網域名稱是在多維資料庫層級使用的逐項清單中定義。 若要變更、新增或移除預設網域，請編輯 **[!UICONTROL Domains]** 逐項清單和修改值與別名。 此 **[!UICONTROL Others]** 類別包含不屬於任何逐項清單值的網域名稱。
+>此报告中显示的域名在多维数据集级别使用的明细列表中定义。 要更改、添加或删除默认域，请编辑 **[!UICONTROL Domains]** 逐项列出并修改值和别名。 此 **[!UICONTROL Others]** 类别包括不属于明细列表任何值的域名。
 >
->瞭解如何在中存取及設定您的分項清單 [此頁面](../config/ui-settings.md).
+>了解如何在中访问和配置明细列表 [此页面](../config/ui-settings.md).
 
 
 **[!UICONTROL 4. Generated click streams]**
 
 >[!NOTE]
 >
->相關百分比是根據成功轉送的訊息數來計算。
+>相关百分比是根据成功转发的邮件数计算的。
 
-* **[!UICONTROL Distinct clicks for the population reached]** ：在傳送中按一下至少一次的不同人數。
-* **[!UICONTROL Cumulated clicks]** ：目標收件者的點選總數，不包括取消訂閱連結和映象頁面。
-* **[!UICONTROL Recipient clicks]** ：至少點按一次相同傳遞的不同目標收件者人數。
-* **[!UICONTROL Estimated recipient reactivity]** ：在傳遞中至少點選一次的收件者人數，與已開啟傳遞至少一次的估計收件者人數的比率。 選擇退出和映象頁面連結上的點選次數不會考慮在內。
+* **[!UICONTROL Distinct clicks for the population reached]** ：在投放中至少单击一次的不同人数。
+* **[!UICONTROL Cumulated clicks]** ：目标收件人的总点击次数，不包括退订链接和镜像页面。
+* **[!UICONTROL Recipient clicks]** ：在同一个投放中至少点击一次的不同目标收件人的数量。
+* **[!UICONTROL Estimated recipient reactivity]** ：投放中点击至少一次的收件人数量与至少打开投放一次的预计收件人数量的比率。 对选择退出和镜像页面链接的点击次数不会考虑在内。
 <!--
 **[!UICONTROL 5. Web tracking]**
 
@@ -148,29 +148,29 @@ This chart shows the breakdown of cumulated clicks per day.
 
 ## 投放摘要 {#delivery-summary}
 
-此報表提供有關傳遞的所有主要資訊。
+此报表提供有关投放的所有主要信息。
 
 ![](assets/user-report-summary.png)
 
 **[!UICONTROL Target population]**
 
-本節提供兩個指標：
+此部分包含两个指标：
 
-* **[!UICONTROL Initial population]** ：傳遞鎖定的收件者總數。
-* **[!UICONTROL Messages rejected by the rule]** ：套用型別規則時，分析期間忽略的地址數：地址遺失、隔離、列入封鎖清單等。 <!--For more information on typology rules, refer to this [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).-->
+* **[!UICONTROL Initial population]** ：投放所定向的收件人总数。
+* **[!UICONTROL Messages rejected by the rule]** ：应用分类规则时在分析期间忽略的地址数：地址缺失、隔离、阻止列表时等。 <!--For more information on typology rules, refer to this [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).-->
 
 **[!UICONTROL Causes of exclusion]**
 
-中間圖表顯示分析期間拒絕之訊息的每條規則劃分。
+中间图表显示分析期间拒绝的消息按规则细分。
 
 **[!UICONTROL Delivery statistics]**
 
-本節包含下列指標：
+本节包括以下指标：
 
-* **[!UICONTROL Messages to be delivered]** ：傳遞分析後要傳遞的訊息總數。
-* **[!UICONTROL Success]** ：成功處理的訊息數。 相關比率是指要傳遞的訊息數量比率。
-* **[!UICONTROL Errors]** ：傳送期間和自動復原處理期間累計的錯誤總數。 相關比率是指要傳遞的訊息數量比率。
-* **[!UICONTROL New quarantines]** ：傳送失敗（使用者不明、網域無效）後隔離的地址數。 相關比率是指要傳遞的訊息數量比率。
+* **[!UICONTROL Messages to be delivered]** ：投放分析后要投放的消息总数。
+* **[!UICONTROL Success]** ：成功处理的消息数。 关联速率是指与要投放的消息数量之比。
+* **[!UICONTROL Errors]** ：投放和自动回弹处理期间累计的错误总数。 关联速率是指与要投放的消息数量之比。
+* **[!UICONTROL New quarantines]** ：投放失败（用户未知，域无效）后隔离的地址数。 关联速率是指与要投放的消息数量之比。
 
 ## 热门点击 {#hot-clicks}
 
@@ -178,19 +178,19 @@ This chart shows the breakdown of cumulated clicks per day.
 
 >[!NOTE]
 >
->如果您的傳送包含優惠方案（互動），則報表上方的部分會出現一個方塊，顯示優惠方案的點選百分比。
+>如果您的投放包含选件（交互），则报表上方的部分中将出现一个框，显示对选件的点击百分比。
 
 
 ## 跟踪统计信息 {#tracking-statistics}
 
-此報表提供有關開啟、點按和交易的統計資料。
+此报表提供有关打开、点击和交易的统计数据。
 
-它可讓您追蹤傳送對行銷的影響。 您可以透過變更時間刻度（1小時、3小時或24小時檢視等）來設定值的顯示方式。 单击 **[!UICONTROL Refresh]** 以确认您的选择。
+通过它，您可以跟踪投放对营销的影响。 您可以通过更改时间刻度（1小时、3小时或24小时视图等）来配置值的显示方式。 单击 **[!UICONTROL Refresh]** 以确认您的选择。
 
-此報表提供值表格和柏瑞圖以顯示傳遞達到最高效率所需的時間。 使用下列指標：
+此报告提供了一个值表和一个排列图，其中显示投放达到最大效率所需的时间。 使用以下指标：
 
-* **[!UICONTROL Opens]** ：達到已開啟訊息總數百分比所需時間的預估值。 未考慮文字格式的電子郵件。 [了解详情](metrics-calculation.md#tracking-opens-)。
-* **[!UICONTROL Clicks]** ：達到記錄的總點按次數百分比所需時間的預估值。 選擇退出連結和映象頁面的點選次數不會考慮在內。
+* **[!UICONTROL Opens]** ：估算达到打开消息总数百分比所需的时间。 不考虑文本格式的电子邮件。 [了解详情](metrics-calculation.md#tracking-opens-)。
+* **[!UICONTROL Clicks]** ：估算达到记录的总点击数的百分比所需的时间。 对选择退出链接和镜像页面的点击次数不会考虑在内。
 <!--
 * **[!UICONTROL Transactions]** : Time required to achieve a percentage of the total number of transactions following message reception. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
 -->
@@ -198,8 +198,8 @@ This chart shows the breakdown of cumulated clicks per day.
 
 ## 累积报告 {#cumulated-reports}
 
-您可以顯示傳遞的累積報告。 若要這麼做，請選取要比較的傳送，以取得這些傳送的報告清單。
+您可以显示投放的累积报告。 为此，请选择要比较的投放以获取这些投放的报告列表。
 
-若要從清單中選取不相鄰的傳送，請在進行選取時按住CTRL鍵。
+要从列表中选择不相邻的投放，请在进行选择时按住CTRL键。
 
-若要選取儲存在不同資料夾中的傳送，請按一下 **[!UICONTROL Display sub-levels]** 圖示，可在工具列中存取。 然後它們將顯示在相同清單中。
+要选择保存在其他文件夹中的投放，请单击 **[!UICONTROL Display sub-levels]** 图标，可在工具栏中访问。 然后，它们将显示在同一列表中。

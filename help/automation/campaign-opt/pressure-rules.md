@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 設定壓力規則
-description: 瞭解如何設定壓力規則
+title: 配置压力规则
+description: 了解如何配置压力规则
 feature: Fatigue Management, Typology Rules
 exl-id: d234db0e-936a-48db-b697-11c6b40bc3ab
 source-git-commit: 6a1e2e0a872ce5886e7374d266c71975941e87b8
@@ -13,223 +13,223 @@ ht-degree: 8%
 
 # 压力规则{#pressure-rules}
 
-實作銷售壓力管理可讓您避免過度向資料庫中的人口行銷，也稱為行銷疲勞。 若要這麼做，您可以定義每個收件者的訊息數目上限。 它也可讓您在行銷活動之間實施仲裁規則，以將最佳訊息傳送給目標對象。
+通过实施销售压力管理，您可以避免对数据库中的人群进行过度骚扰，这也称为营销疲劳症。 要实现此目的，您可以定义每个收件人的最大消息数。 它还允许您在营销活动之间实施仲裁规则，以便向目标受众发送最佳消息。
 
-**壓力** 規則，以管理行銷疲勞，例如，將傳送給母體的信件數量限製為兩個、選擇最符合一組訂閱者利益的通訊、避免傳送SMS給不滿的客戶等。
+**压力** 例如，管理营销疲劳的规则，将发送给一个群体的信件数量限制为两个，选择最符合一组订户利益的通信，避免向不满意的客户发送SMS等。
 
-系統會根據定義的臨界值和訊息權重來選取行銷活動。
+根据定义的阈值和消息权重选择营销活动。
 
-* 臨界值是指定期間內指定收件者獲授權的最高傳遞數量。 可以是設定或變數。 這是在型別規則設定中設定或計算的。 [了解详情](#maximum-number-of-messages)。
+* 阈值是在给定时段内为给定收件人授权的最大投放数量。 它可以为set或variable。 在分类规则设置中对其进行设置或计算。 [了解详情](#maximum-number-of-messages)。
 * 利用投放权重，您可以确定压力管理框架内的优先级最高的投放。具有最高权重的消息优先。[了解详情](#message-weight)。
 
-仲裁包括確保權重大於進行中行銷活動的已排程行銷活動不會導致過多的設定檔請求：如果是這種情況，則會將設定檔從傳送中排除。
+仲裁包括确保权重大于正在进行的营销活动的计划营销活动不会导致过多的用户档案请求：如果是这种情况，则会将用户档案从投放中排除。
 
-仲裁標準（訊息權重和/或臨界值）可能因兩種資訊型別而異：
+仲裁标准（消息权重和/或阈值）可能因以下两种信息类型而异：
 
-* 收件者偏好設定，這是宣告式資訊：電子報訂閱、收件者狀態（客戶或潛在客戶）、
-* 收件者行為：購買、瀏覽的連結等。
+* 收件人首选项，它是声明性信息：新闻稿订阅、收件人状态（客户或潜在客户）、
+* 收件人行为：购买、访问的链接等。
 
-定義合格訊息的仲裁規則會在分析階段期間套用。 對於每個收件者和相關期間，如果下列公式為true，則會傳送訊息： **（已傳送的訊息數） + （權重較高的訊息數） &lt;臨界值**.
+用于定义符合条件的消息的仲裁规则在分析阶段应用。 对于相关期间的每个收件人和收件人，如果以下公式为true，则将发送消息： **（已发送的消息数）+（权重较大的消息数）&lt;阈值**.
 
-否則，收件者將 **[!UICONTROL Excluded by arbitration]**. [了解详情](#exclusion-after-arbitration)。
+否则，收件人将 **[!UICONTROL Excluded by arbitration]**. [了解详情](#exclusion-after-arbitration)。
 
-## 建立壓力規則 {#create-a-pressure-rule}
+## 创建压力规则 {#create-a-pressure-rule}
 
-若要使用Adobe Campaign設定行銷活動之間的仲裁，請從建立行銷活動型別並定義連結型別規則開始(**壓力** 規則)。
+要使用Adobe Campaign在活动之间设置仲裁，请从创建活动类型并定义链接类型规则开始(**压力** 规则)。
 
 要创建和配置 **[!UICONTROL Pressure]** 分类规则，请应用以下步骤：
 
-1. 在行銷活動型別規則清單中，選取 **[!UICONTROL New]** 圖示加以識別。
+1. 在活动类型规则列表中，选择 **[!UICONTROL New]** 图标。
 
    ![](assets/campaign_opt_create_a_rule_01.png)
 
-1. 在 **[!UICONTROL General]** 標籤中，選取 **壓力** 輸入規則並輸入其名稱和說明。
+1. 在 **[!UICONTROL General]** 选项卡中，选择 **压力** 键入rule并为其输入名称和说明。
 
    ![](assets/campaign_opt_create_a_rule_02.png)
 
-1. 視需要變更執行順序。 當多個型別規則套用為 **[!UICONTROL Typology]** 設定，系統會先套用順序較低的規則。 [了解详情](apply-rules.md#execution-order)。
-1. 在 **[!UICONTROL Calculation parameters]** 區段，定義頻率，以儲存下一個每日重新仲裁執行之後的目標定位。 [了解详情](apply-rules.md#adjust-calculation-frequency)。
-1. 按一下 **[!UICONTROL Pressure]** 標籤並選取套用型別規則的日曆期間。
+1. 根据需要更改执行顺序。 将多个分类规则应用为 **[!UICONTROL Typology]** 设置，则首先应用顺序较低的规则。 [了解详情](apply-rules.md#execution-order)。
+1. 在 **[!UICONTROL Calculation parameters]** 部分，定义频率，以保存下一个每日重新仲裁执行之后的定位。 [了解详情](apply-rules.md#adjust-calculation-frequency)。
+1. 单击 **[!UICONTROL Pressure]** 选项卡，然后选择应用分类规则的日历期间。
 
    ![](assets/campaign_opt_create_a_rule_03.png)
 
-   此規則將套用至其聯絡日期包含在相關期間的傳遞。
+   该规则将应用于联系日期包含在相关时间段的投放。
 
    >[!NOTE]
    >
-   >排程的傳遞不會考慮在內。
+   >计划的投放不会被考虑在内。
 
-1. 定義計算訊息最高數目的方法。
+1. 定义计算最大消息数的方法。
 
-   此臨界值代表在相關期間內可傳送給收件者的訊息數量上限。
+   阈值表示在相关时段内可发送给收件人的消息的最大数量。
 
    默认情况下，阈值为常量，您需要指定规则授权的消息数量上限。
 
    ![](assets/campaign_opt_create_a_rule_03b.png)
 
-   若要定義變數臨界值，請選取 **[!UICONTROL Depends on the recipient]** 中的值 **[!UICONTROL Type of threshold]** 欄位並使用右側的圖示來開啟運算式編輯器。
+   要定义变量阈值，请选择 **[!UICONTROL Depends on the recipient]** 中的值 **[!UICONTROL Type of threshold]** 字段并使用右侧的图标打开表达式编辑器。
 
    ![](assets/campaign_opt_create_a_rule_04.png)
 
-   有關詳細資訊，請參閱 [訊息數量上限](#maximum-number-of-messages).
+   有关更多信息，请参阅 [最大消息数](#maximum-number-of-messages).
 
-1. 指定計算傳遞權重的方法。
+1. 指定计算投放权重的方法。
 
-   每個傳遞都有權重，即代表其優先順序等級的值：這會啟用行銷活動之間的仲裁。 權重是使用型別規則和/或其屬性中定義的公式來計算。 [了解详情](#message-weight)。
+   每个投放都有一个权重，即表示其优先级别的值：这支持活动之间的仲裁。 权重是使用分类规则和/或其属性中定义的公式计算的。 [了解详情](#message-weight)。
 
-1. 默认情况下，所有消息都会考虑阈值计算式。此 **[!UICONTROL Restriction]** 索引標籤可讓您篩選型別規則關注的訊息：
+1. 默认情况下，所有消息都会考虑阈值计算式。此 **[!UICONTROL Restriction]** 选项卡用于筛选分类规则关注的消息：
 
-   * 此索引標籤的上方區段可讓您限制相關收件者。
-   * 此索引標籤的下方區段可讓您篩選要計數的訊息。
+   * 利用此选项卡的上半部分，可限制相关收件人。
+   * 利用此选项卡的下半部分，可筛选要计数的消息。
 
-      在以下範例中，只有收件者儲存在 **新增連絡人** 會將資料夾列入考量，並從開始進行傳送 **電子報** 相關。
+      在以下示例中，只有收件人保存在 **新建联系人** 考虑文件夹，并从以下内容开始投放 **新闻稿** 我们很担心。
    ![](assets/campaign_opt_create_a_rule_05.png)
 
-1. 此 **[!UICONTROL Typologies]** 索引標籤可讓您檢視套用此規則的促銷活動型別，或將規則連結至一或多個現有型別。 [了解详情](campaign-typologies.md#apply-typologies)。
+1. 此 **[!UICONTROL Typologies]** 选项卡允许您查看应用此规则的促销活动分类，或将规则链接到一个或多个现有分类。 [了解详情](campaign-typologies.md#apply-typologies)。
 
-## 定義臨界值和權重 {#define-thresholds-and-weights}
+## 定义阈值和权重 {#define-thresholds-and-weights}
 
 ### 最大消息数 {#maximum-number-of-messages}
 
-每個壓力規則會定義一個臨界值，即在指定時段內可以傳送給一個收件者的訊息數量上限。 达到此阈值后，只有在所考虑的时段结束后，才会再进行投放。此程式可讓您在訊息超過設定的臨界值時，自動將收件者從傳遞中排除，以避免過度請求。
+每个压力规则定义一个阈值，即在给定时间段内可以发送给一个收件人的消息的最大数量。 达到此阈值后，只有在所考虑的时段结束后，才会再进行投放。通过此流程，您可以在消息数量超过设置的阈值时自动从投放中排除收件人，从而避免过度请求。
 
-臨界值可以是常數，也可以使用包含變數的公式計算。 這表示在指定期間，臨界值可能會因收件者而異，甚至對同一收件者也會有所不同。
+阈值可以是常量，也可以由包含变量的公式计算。 这意味着在给定的时间段内，阈值可能因收件人而异，甚至对于同一收件人也可能有所不同。
 
 ![](assets/campaign_opt_create_a_rule_threshold.png)
 
 >[!CAUTION]
 >
->正在進入 **0** as臨界值會防止在考量的期間內傳送給目標母體。
+>正在进入 **0** 作为阈值，会阻止在所考虑时段内向目标群体投放的所有内容。
 
 **示例:**
 
-您可以根據收件者所屬的區段來索引授權訊息的數量。 這表示屬於網頁區段的收件者可能會收到比其他收件者更多的訊息。 一個 **[!UICONTROL Iif (@origin='Web', 5, 3)]** type formula授權傳送5則訊息給收件者，3則訊息給其他區段。 設定如下：
+您可以根据收件人所属的区段来索引授权消息的数量。 这意味着属于Web区段的收件人可能会收到比其他收件人更多的消息。 An **[!UICONTROL Iif (@origin='Web', 5, 3)]** type formula授权向收件人投放5封邮件，其他区段授权投放3封邮件。 配置将如下所示：
 
 ![](assets/campaign_opt_pressure_sample.png)
 
-若要定義臨界值，您可以使用連結至目標維度的維度：例如，包含傳送至收件者設定檔的訊息，該設定檔儲存在 [訪客表格](../../v8/audiences/target-mappings.md) 或避免每週傳送超過一封訊息給同一個家庭（可能指多個電子郵件地址），該訊息的識別維度與收件者的維度連結。
+要定义阈值，您可以使用链接到定向维度的维度：例如，包括传递到收件人用户档案(存储在 [访客表](../../v8/audiences/target-mappings.md) 或避免每周向同一家庭发送多条消息（可能指多个电子邮件地址），这些消息在与收件人链接的维度中标识。
 
-若要這麼做，請選取 **[!UICONTROL Count messages on a linked dimension]** 選項，然後選取訪客或聯絡人表格。
+要执行此操作，请选择 **[!UICONTROL Count messages on a linked dimension]** 选项，然后选择访客或contact表。
 
 ### 消息权重 {#message-weight}
 
-每个投放都有一个代表其优先级的权重。默认情况下，投放权重设置为 5。壓力規則可讓您定義要套用至的傳遞權重。
+每个投放都有一个代表其优先级的权重。默认情况下，投放权重设置为 5。压力规则允许您定义将应用这些规则的投放的权重。
 
 可以通过公式设置或计算权重以满足收件人的需求。例如，您可以根据收件人兴趣来定义投放权重。
 
 >[!CAUTION]
 >
->型別規則中定義的權重可針對每個傳遞個別多載，位於 **[!UICONTROL Properties]** 標籤。 按一下 **[!UICONTROL Typology]** 定位點，以選取行銷活動型別，並視需要指定要套用的權重。\
->不過，在A型別規則中宣告的權重不會用於計算B型別規則：此權重只會涉及使用A規則的傳送。
+>对于每次投放，类型规则中定义的权重可以单独过载，具体情况如下： **[!UICONTROL Properties]** 选项卡。 单击 **[!UICONTROL Typology]** 选项卡，以选择营销活动类型，并根据需要指定要应用的权重。\
+>但是，在A分类规则中声明的权重不会用于计算B分类规则：此权重将仅涉及使用A规则的投放。
 
 **示例:**
 
-在以下範例中，我們想要將電子報在音樂上的權重連結到其收件者的傾向分數。 操作步骤：
+在以下示例中，我们希望将新闻稿对音乐的权重链接到其收件人的倾向分数。 操作步骤：
 
-1. 建立新欄位以儲存收件者傾向分數。 欄位， **@Music** 在此案例中，將透過調查和線上投票、收集的追蹤資料等的回答來豐富內容。
-1. 建立型別規則，以根據此欄位計算訊息權重。
+1. 创建新字段以存储收件人倾向分数。 字段， **@Music** 在这种情况下，将通过调查和在线投票、收集的跟踪数据等的回答来丰富数据。
+1. 创建分类规则以根据此字段计算消息权重。
 
    ![](assets/campaign_opt_pressure_weight_sample.png)
 
-1. 將此規則套用至包含下列主題的訊息：電子報、特殊優惠等。 這些傳送的權重，以及其優先順序層級，將取決於每個收件者的傾向分數。
+1. 将此规则应用于包含以下主题的消息：新闻稿、特殊优惠等。 这些投放的权重，以及它们的优先级将取决于每个收件人的倾向分数。
 
-## 設定期間 {#setting-the-period}
+## 设置期间 {#setting-the-period}
 
-壓力規則定義於 **n** — 天滾動期間。
+压力规则定义于 **n** — 天滚动周期。
 
-此期間設定於 **[!UICONTROL Pressure]** 標籤中指定的「規則」。 您可以指定天數，並視需要選取要套用的群組型別（日、周、月、季等）。
+该周期配置于 **[!UICONTROL Pressure]** 选项卡。 您可以指定天数，并根据需要选择要应用的分组类型（日、周、月、季度等）。
 
-群組型別可讓您擴充 **[!UICONTROL Period considered]** 欄位至期間的日期的整天、行事曆周、行事曆月或行事曆年。
+分组类型允许您扩展 **[!UICONTROL Period considered]** 字段至期间的日期的整天、日历周、日历月或日历年。
 
-例如，壓力規則定義每週2則訊息的臨界值，並對每個日曆月進行分組，將阻止在同一週內以及在同一日曆月內傳送超過2則訊息。 警告：如果期間與兩個月重疊，計算臨界值會考慮這兩個日曆月的傳送量，因此可能阻止第二個月的所有新傳送量。
+例如，如果压力规则定义每周2条消息的阈值，并对每个日历月进行分组，则将阻止在同一周内和同一日历月内投放超过2条消息。 警告：如果期限与两个月重叠，则计算阈值将考虑这两个日历月的交付情况，因此可能阻止第二个月的所有新交付情况。
 
 >[!CAUTION]
 >
->計算臨界值時，只會考慮已傳送的傳遞。
+>计算阈值时，只考虑已发送的投放。
 
-若要將考慮的傳送限制在2週期間，請輸入 **15天** 在 **[!UICONTROL Concerned period]** 欄位：在計算時，會考慮在套用規則的傳送日期之前最多兩週傳送的傳送
+要将考虑的投放限制在2周内，请输入 **15天** 在 **[!UICONTROL Concerned period]** 字段：在计算时，将考虑在应用规则的投放日期前两周发送的投放
 
-期間開始日期取決於資料庫的設定方式。
+期间开始日期取决于数据库的配置方式。
 
-例如，如果您套用15天壓力規則，但沒有將日期為12/11的交貨分組，則會在11/27和12/12之間考慮交貨。 如果壓力規則將臨時行事曆中的傳遞列入考量，則所有排程在2027年11月27日至2027年12月27日期間的傳遞都將被列入考量。 最後，如果您在規則中為每個日曆月設定分組，則計算臨界值（從11/1到12/31）時將考慮11月和12月的所有傳送。
+例如，如果您应用15天压力规则，但未对日期为12/11的投放进行分组，则投放11/27至12/12期间将被考虑在内。 如果压力规则考虑到临时日程表内的交货情况，则所有预定在2027年11月27日至27年12月27日之间的交货情况都将被考虑在内。 最后，如果您在规则中按日历月配置分组，则计算阈值时将考虑11月和12月的所有投放（从11/1到12/31）。
 
 
-**常見案例**
+**常见案例**
 
-若要確保不會將目前行事曆周的傳遞計算在內，以及不會將前一週的計算臨界值計算在內，請指定 **[!UICONTROL Period considered]** 在「0」並選取「每個行事曆周分組」作為 **[!UICONTROL Period type]**.
+为了确保不将当前日历周的投放考虑在内，以及为了不将前一周的投放也考虑在内来计算阈值，请指定 **[!UICONTROL Period considered]** 在“0”并选择“按日历周分组”作为 **[!UICONTROL Period type]**.
 
-當週期高於0 （例如1）時，計算臨界值可能會將前一天傳送納入考量。 因此，如果前一天對應於前一個日曆週，且所選的期間型別是「按日曆週分組」，則會將前一週的所有時間考慮在計算臨界值內。
+当时段高于0（例如1）时，计算阈值可能会考虑前一天投放的情况。 因此，如果前一天对应于上一个日历周，且所选的期间类型为“按日历周分组”，则所有前一周都将考虑计算阈值。
 
 **示例:**
 
-我們想要建立壓力規則，將請求限製為每兩週傳送3則訊息，並將群組設定為行事曆月份。
+我们希望创建一个压力规则，将请求限制为每2周发送3条消息，并将分组归入日历月份。
 
 ![](assets/campaign_opt_pressure_period_sample_1a.png)
 
-假設有6份相同份量的電子報，排程為05/30、06/3、06/8、06/12、06/22和06/30。
+我们来看看预定在05/30、06/3、06/8、06/12、06/22和06/30期间的6份同等重量的新闻稿。
 
 ![](assets/campaign_opt_pressure_period_sample_0.png)
 
-將不會傳送排定於6月12日和30日的傳送： 06/12傳送將超過每2週期間3則訊息的臨界值，而第30傳送將超過每個日曆月授權通訊的臨界值。
+预定在6月12日和30日进行的投放将不会发送：06/12投放将超过每两周发送3条消息的阈值，第30次投放将超过每个日历月授权通信的阈值。
 
 ![](assets/campaign_opt_pressure_period_sample_1.png)
 
-在分析階段，仲裁會排除這些傳遞的所有收件者：
+在分析阶段，仲裁会排除这些投放的所有收件人：
 
 ![](assets/campaign_opt_pressure_period_sample_2.png)
 
-對於同一規則，如果您每季將傳遞分組，則收件者會 **電子報5** 也會被排除，且不會被傳送。
+对于同一规则，如果您按季度对投放进行分组，则 **新闻稿第5号** 也将被排除，并且不会被发送。
 
-最後，如果未選取分組，則僅 **電子報4** 將不會傳送，因為排程與前三份電子報相同，為期兩週。
+最后，如果未选择分组，则仅 **新闻稿第4号** 将不会发送，因为预定发送的时间与前三份新闻稿的发送时间相同，为期两周。
 
 >[!NOTE]
 >
->當您變更型別規則的定義時，可以建立 **模擬** 為了控制其對套用它的傳送的影響，並監控傳送對彼此的影響。 [了解详情](campaign-simulations.md)。
+>在更改分类规则的定义时，您可以创建 **模拟** 为控制对投放的影响，应将其应用于投放并监控投放彼此产生的影响。 [了解详情](campaign-simulations.md)。
 
-## 仲裁後排除 {#exclusion-after-arbitration}
+## 仲裁后排除 {#exclusion-after-arbitration}
 
-仲裁會每晚透過 **[!UICONTROL Forecasting]** 技術工作流程與 **[!UICONTROL Campaign jobs]** 工作流程。
+仲裁每晚通过 **[!UICONTROL Forecasting]** 技术工作流和 **[!UICONTROL Campaign jobs]** 工作流。
 
-此 **[!UICONTROL Forecasting]** 工作流程會預先計算進行中期間（從開始日期至目前日期）的資料，以便在分析期間套用型別規則。 它也會每晚重新計算排除計數器以進行仲裁。
+此 **[!UICONTROL Forecasting]** 工作流会预计算正在进行的时段（从其开始日期到当前日期）的数据，从而可在分析期间应用分类规则。 它还会每晚重新计算排除计数器以进行仲裁。
 
-因此，對於每個收件者，Adobe Campaign會考量在相關期間內已傳送的訊息數，檢查要傳送的訊息數是否不超過臨界值。 此資訊是 **指標**，因為所有計算都會在傳送時更新。
+因此，对于每个收件人，Adobe Campaign会检查要发送的消息数是否不超过阈值，同时考虑到在相关时段内已发送的消息数。 此信息是 **指示器**，因为所有计算都会在交付时更新。
 
-如果此數字超過臨界值，則會套用行銷活動型別中定義的仲裁規則，並從權重較低的行銷活動中排除收件者。
+如果此数字超过阈值，则会应用营销活动类型中定义的仲裁规则，并从权重较低的营销活动中排除收件人。
 
 ![](assets/campaign_opt_pressure_exclusion.png)
 
 >[!NOTE]
 >
->如果數個傳遞具有相同分數，則會傳送排程為最早日期的行銷活動。
+>如果多个投放得分相同，则将发送为最早日期计划的营销活动。
 
-## 壓力規則的使用案例 {#use-cases-on-pressure-rules}
+## 压力规则的用例 {#use-cases-on-pressure-rules}
 
-### 根據條件調整臨界值 {#adapt-the-threshold-based-on-criterion}
+### 根据标准调整阈值 {#adapt-the-threshold-based-on-criterion}
 
-我們想要建立型別規則，以防止每週傳送超過4則訊息給客戶，以及每週傳送2則訊息給潛在客戶。
+我们希望创建一个分类规则，以防止每周向客户发送4条以上的消息，每周向潜在客户发送2条消息。
 
-若要識別客戶和潛在客戶，請使用 **[!UICONTROL Status]** 欄位，包含0代表潛在客戶，1代表客戶。
+要识别客户和潜在客户，请使用 **[!UICONTROL Status]** 字段，其中的0表示潜在客户，1表示客户。
 
 要创建规则，请应用以下步骤：
 
-1. 建立新的 **壓力** 型別型別規則。
-1. 編輯 **[!UICONTROL Pressure]** 標籤：在 **[!UICONTROL Maximum number of messages]** 區段，我們要建立一個公式以根據每個收件者計算臨界值。 選取 **[!UICONTROL Depends on the recipient]** 中的值 **[!UICONTROL Threshold type]** 欄位，然後按一下 **[!UICONTROL Edit expression]** 右側 **[!UICONTROL Formula]** 欄位。
+1. 新建 **压力** 类型分类规则。
+1. 编辑 **[!UICONTROL Pressure]** 选项卡：在 **[!UICONTROL Maximum number of messages]** 部分，我们要创建一个公式以根据每个收件人计算阈值。 选择 **[!UICONTROL Depends on the recipient]** 中的值 **[!UICONTROL Threshold type]** 字段，然后单击 **[!UICONTROL Edit expression]** 右侧 **[!UICONTROL Formula]** 字段。
 
-   按一下 **[!UICONTROL Advanced parameters]** 按鈕以定義計算公式。
+   单击 **[!UICONTROL Advanced parameters]** 按钮以定义计算公式。
 
    ![](assets/campaign_opt_pressure_sample_1_1.png)
 
-1. 選取 **[!UICONTROL Edit the formula using an expression]** 選項並按一下 **[!UICONTROL Next]**.
+1. 选择 **[!UICONTROL Edit the formula using an expression]** 选项并单击 **[!UICONTROL Next]**.
 
    ![](assets/campaign_opt_pressure_sample_1_2.png)
 
-1. 在函式清單中，按兩下 **Iif** 中的函式 **[!UICONTROL Others]** 節點。
+1. 在函数列表中，双击 **Iif** 中的函数 **[!UICONTROL Others]** 节点。
 
-   然後選取收件者&#39; **狀態** 在 **[!UICONTROL Available fields]** 區段。
+   然后选择收件人 **状态** 在 **[!UICONTROL Available fields]** 部分。
 
    ![](assets/campaign_opt_pressure_sample_1_3.png)
 
-   輸入下列公式： **Iif(@status=0,2，4)**
+   输入以下公式： **Iif(@status=0,2，4)**
 
    ![](assets/campaign_opt_pressure_sample_1_4.png)
 
@@ -237,22 +237,22 @@ ht-degree: 8%
 
    单击 **[!UICONTROL Finish]** 以批准公式。
 
-1. 指定套用規則的期間：在此例中為7天，用於計算每週的訊息數。
+1. 指示将应用规则的时段：在本例中为7天，以计算每周的消息数量。
 
    ![](assets/campaign_opt_pressure_sample_1_5.png)
 
 1. 保存规则以批准创建。
 
-現在將您剛建立的規則連結至型別，以便套用至傳送。 操作步骤：
+现在，可将之前创建的规则链接到分类，以将其应用于投放。 操作步骤：
 
-1. 建立行銷活動型別。
-1. 前往 **[!UICONTROL Rules]** 索引標籤，按一下 **[!UICONTROL Add]** 按鈕並選取您剛才建立的規則。
+1. 创建活动类型。
+1. 转到 **[!UICONTROL Rules]** 选项卡，单击 **[!UICONTROL Add]** 按钮并选择您刚刚创建的规则。
 
    ![](assets/campaign_opt_pressure_sample_1_6.png)
 
-1. 儲存型別：是否將其新增至現有型別的清單。
+1. 保存分类：是否将其添加到现有分类的列表。
 
-若要在傳送中使用此型別，請在的傳送屬性中選取型別。 **[!UICONTROL Typology]** 標籤，如下所示：
+要在投放中使用此分类，请在投放属性的以下位置选择它： **[!UICONTROL Typology]** 选项卡，如下所示：
 
 ![](assets/campaign_opt_pressure_sample_1_7.png)
 
@@ -260,93 +260,93 @@ ht-degree: 8%
 >
 >可以在投放模板中定义分类，以自动应用至使用此模板创建的所有投放。
 
-在傳遞分析期間，傳遞收件者會根據已傳送給他們的傳遞數量，從傳遞中排除（如適用）。 若要檢視此資訊，您可以：
+在投放分析期间，会根据已发送给投放收件人的投放数量，将投放收件人从投放中排除（如果适用）。 要查看此信息，您可以：
 
-* 檢視分析結果：
+* 查看分析结果：
 
    ![](assets/campaign_opt_pressure_sample_1_8.png)
 
-* 編輯傳遞，然後按一下 **[!UICONTROL Delivery]** 標籤和 **[!UICONTROL Exclusions]** 子標籤：
+* 编辑投放并单击 **[!UICONTROL Delivery]** 选项卡和 **[!UICONTROL Exclusions]** 子选项卡：
 
    ![](assets/campaign_opt_pressure_sample_1_9.png)
 
-* 按一下 **[!UICONTROL Audit]** 標籤，然後 **[!UICONTROL Causes of exclusions]** 子標籤，顯示排除專案數和套用的型別規則：
+* 单击 **[!UICONTROL Audit]** 选项卡，然后 **[!UICONTROL Causes of exclusions]** 子选项卡，用于显示排除项数和应用的分类规则：
 
    ![](assets/campaign_opt_pressure_sample_1_10.png)
 
-### 根據行為計算傳遞權重 {#calculate-the-delivery-weight-based-on-behavior}
+### 根据行为计算投放权重 {#calculate-the-delivery-weight-based-on-behavior}
 
-您可以根據收件者行為來定義壓力規則：因此，傳遞的權重可以因應不同收件者的條件。 例如，您可以根據收件者是否造訪您的網際網路網站、點選上次電子報的特定區段、訂閱資訊服務，或甚至根據意見調查、線上遊戲等的回答來決定傳送訊息。
+您可以根据收件人行为定义压力规则：因此，投放的权重可以适应因收件人而异。 例如，您可以决定发送一条消息，这取决于收件人是否访问了您的互联网网站、点击了最近一期新闻稿的特定部分、订阅了信息服务，甚至取决于对调查、在线游戏等的回答。
 
-在以下範例中，我們要建立權重為5的傳遞。 此權重中根據收件者行為的傾向分數更為豐富：已從此網站訂購的客戶分數將為5，而從未線上上訂購的客戶分數將為4。
+在以下示例中，我们希望创建一个权重为5的投放。 此权重中根据收件人行为的倾向得分进行了扩充：已从此网站订购的客户得分将为5，而从未在线订购的客户得分将为4。
 
-若要執行此組態型別，您必須使用公式來定義訊息權重。 有關傾向分數和調查答案的資訊必須在資料模型中可供存取。 在我們的範例中， **傾向** 欄位。
+要执行此类型的配置，需要使用公式来定义消息权重。 有关倾向分数和调查答案的信息必须在数据模型中可访问。 在我们的示例中， **倾向** 字段已添加。
 
-套用下列設定步驟：
+应用以下配置步骤：
 
-1. 建立新的 **壓力** 型別型別規則。
-1. 編輯 **[!UICONTROL Pressure]** 標籤。 我們要建立以每個個別收件者為基礎的臨界值公式：按一下 **[!UICONTROL Edit expression]** 圖示右側 **[!UICONTROL Weight formula]** 欄位。
+1. 新建 **压力** 类型分类规则。
+1. 编辑 **[!UICONTROL Pressure]** 选项卡。 我们希望创建一个阈值公式，该公式将基于每个单独的收件人：单击 **[!UICONTROL Edit expression]** 图标右侧的 **[!UICONTROL Weight formula]** 字段。
 
    ![](assets/campaign_opt_pressure_sample_2_1.png)
 
-1. 預設值 **5** 會顯示在運算式編輯器的上半部分。 我們想要將每個收件者的傾向分數新增至此權重：將游標放在5的右側，輸入 **+** 字元並選取 **傾向** 欄位。
+1. 默认情况下，值 **5** 显示在表达式编辑器的上半部分。 我们想要将每个收件人的倾向分数添加到此权重中：将光标放置在5的右侧，输入 **+** 字符并选择 **倾向** 字段。
 
    ![](assets/campaign_opt_pressure_sample_2_2.png)
 
-1. 然後為已購買的收件者新增較高的值。 對於他們，傳遞的重量必須增加5，而其他人只增加4。
+1. 然后，为已购买的收件人添加更高的值。 对于他们，投放的重量必须增加5，对于其他人，仅增加4。
 
    ![](assets/campaign_opt_pressure_sample_2_3.png)
 
-1. 按一下 **[!UICONTROL Finish]** 以儲存此規則。
-1. 將規則連結至行銷活動型別，並在傳遞中參考此型別以進行核准。
+1. 单击 **[!UICONTROL Finish]** 以保存此规则。
+1. 将规则链接到活动分类，并在投放中引用此分类以进行批准。
 
-### 僅傳送加權最高的訊息 {#send-only-the-highest-weighted-messages}
+### 仅发送权重最高的报文 {#send-only-the-highest-weighted-messages}
 
-您想要在同一週內傳送不超過2則訊息（限製為每天2則訊息）給每個收件者，而且您只想要傳遞權重較高的訊息。
+您想在同一周内向每位收件人发送不超过2封邮件，限制每天发送2封邮件，并且只希望投放权重较高的邮件。
 
-為此，您需要為相同的收件者排程數個具有不同權重的傳送，並套用壓力規則以排除權重的傳送。
+为此，您需要为同一收件人计划多个具有不同权重的投放，并应用压力规则以排除权重较低的投放。
 
-首先，設定壓力規則。
+首先，配置压力规则。
 
-1. 建立壓力規則。 [了解详情](#create-a-pressure-rule)。
-1. 在 **[!UICONTROL General]** 索引標籤中，選取 **[!UICONTROL Re-apply the rule at the start of personalization]** 選項。
+1. 创建压力规则。 [了解详情](#create-a-pressure-rule)。
+1. 在 **[!UICONTROL General]** 选项卡，选择 **[!UICONTROL Re-apply the rule at the start of personalization]** 选项。
 
    ![](assets/campaign_opt_pressure_example_5.png)
 
-   此選項會覆寫以下專案中所定義的值： **[!UICONTROL Frequency]** 欄位並在個人化階段自動套用規則。 [了解详情](apply-rules.md#adjust-calculation-frequency)。
+   此选项会覆盖 **[!UICONTROL Frequency]** 字段，并在个性化阶段自动应用规则。 [了解详情](apply-rules.md#adjust-calculation-frequency)。
 
-1. 在 **[!UICONTROL Pressure]** 索引標籤，選取 **[!UICONTROL 7d]** 作為 **[!UICONTROL Period considered]** 和 **[!UICONTROL Grouping per day]** 作為 **[!UICONTROL Period type]**.
-1. 在 **[!UICONTROL Typologies]** 標籤，將規則連結至行銷活動型別。
+1. 在 **[!UICONTROL Pressure]** 选项卡，选择 **[!UICONTROL 7d]** 作为 **[!UICONTROL Period considered]** 和 **[!UICONTROL Grouping per day]** 作为 **[!UICONTROL Period type]**.
+1. 在 **[!UICONTROL Typologies]** 选项卡，将规则链接到营销活动类型。
 1. 保存您的更改。
 
-現在需為每個要套用壓力規則的傳遞建立並設定工作流程。
+现在，为要应用压力规则的每个投放创建和配置一个工作流。
 
 1. 创建营销策划. [了解详情](../campaigns/marketing-campaign-create.md#create-a-campaign)。
-1. 在 **[!UICONTROL Targeting and workflows]** 索引標籤中，新增 **查詢** 活動至您的工作流程。 有關使用此活動的詳細資訊，請參閱 [本節](../workflow/query.md).
-1. 新增 **[!UICONTROL Email delivery]** 活動以開啟工作流程。 有關使用此活動的詳細資訊，請參閱 [本節](../workflow/delivery.md).
-1. 前往 **[!UICONTROL Approvals]** 的標籤 **[!UICONTROL Delivery properties]** 並停用所有核准。
+1. 在 **[!UICONTROL Targeting and workflows]** 选项卡，添加 **查询** 活动添加到工作流。 有关使用此活动的更多信息，请参阅 [本节](../workflow/query.md).
+1. 添加 **[!UICONTROL Email delivery]** 活动以打开工作流。 有关使用此活动的更多信息，请参阅 [本节](../workflow/delivery.md).
+1. 转到 **[!UICONTROL Approvals]** 的选项卡 **[!UICONTROL Delivery properties]** 并禁用所有审批。
 
    ![](assets/campaign_opt_pressure_example_2.png)
 
-1. 在 **[!UICONTROL Typology]** 的標籤 **[!UICONTROL Delivery properties]**，參考要套用規則的行銷活動型別。 定義傳遞的權重。
+1. 在 **[!UICONTROL Typology]** 的选项卡 **[!UICONTROL Delivery properties]**，引用要应用规则的营销活动类型。 定义投放的权重。
 
    ![](assets/campaign_opt_pressure_example_3.png)
 
-1. 在傳送中，按一下 **[!UICONTROL Scheduling]** 並選取 **[!UICONTROL Schedule delivery (automatic execution when the scheduled date is reached)]**. 在此範例中，選取 **[!UICONTROL Use a calculation formula]** 選項。
-1. 將擷取日期設為10分鐘（目前日期+ 10分鐘）。
-1. 將聯絡日期設定為隔天（目前日期+ 1天）。
+1. 在投放中，单击 **[!UICONTROL Scheduling]** 并选择 **[!UICONTROL Schedule delivery (automatic execution when the scheduled date is reached)]**. 在此示例中，选择 **[!UICONTROL Use a calculation formula]** 选项。
+1. 将提取日期设置为10分钟（当前日期+ 10分钟）。
+1. 将联系日期设置为第二天（当前日期+ 1天）。
 
    ![](assets/campaign_opt_pressure_example_4.png)
 
-   為了成功實作壓力規則排除，請確保將提取日期和時間設定在聯絡日期和時間之前，以及在重新套用夜間仲裁之前。 [了解详情](#exclusion-after-arbitration)。
+   为了成功实施压力规则排除，请确保在联系日期和时间之前以及在重新应用夜间仲裁之前设置提取日期和时间。 [了解详情](#exclusion-after-arbitration)。
 
-1. 取消選取 **[!UICONTROL Confirm the delivery before sending]** 選項並儲存變更。
-1. 對於您要傳送的每個傳遞，以類似方式執行。 請務必為每個傳遞設定所需的權重。
-1. 執行相關工作流程以準備和傳送傳遞。
+1. 取消选择 **[!UICONTROL Confirm the delivery before sending]** 选项并保存更改。
+1. 对于要发送的每个投放，以类似方式继续操作。 确保为每个投放设置所需的权重。
+1. 运行相关工作流以准备和发送投放。
 
-套用夜間仲裁時，將排除相同收件者具有較低權重的傳送。 只有具有最高權重的傳遞才會被視為傳送。 [了解详情](#message-weight)。
+适用夜间仲裁时，将排除同一收件人权重较低的投放。 只考虑具有最高权重的投放进行发送。 [了解详情](#message-weight)。
 
-考慮到本週早些時候已將電子郵件傳送給相關收件者，下表顯示可套用至另外兩次傳送的設定範例。
+考虑到本周早些时候已向相关收件人发送了电子邮件，下表显示了可以再应用于两次投放的配置示例。
 
 <table> 
  <thead> 
@@ -354,40 +354,40 @@ ht-degree: 8%
    <th> 投放<br /> </th> 
    <th> 审批<br /> </th> 
    <th> 权重<br /> </th> 
-   <th> 擷取日期/時間<br /> </th> 
+   <th> 提取日期/时间<br /> </th> 
    <th> 联系日期<br /> </th> 
-   <th> 傳遞開始日期/時間<br /> </th> 
-   <th> 仲裁工作流程執行日期/時間<br /> </th> 
+   <th> 投放开始日期/时间<br /> </th> 
+   <th> 仲裁工作流执行日期/时间<br /> </th> 
    <th> 投放状态<br /> </th> 
-   <th> 傳送的傳遞（日期/時間）<br /> </th> 
+   <th> 投放已发送（日期/时间）<br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> 傳遞1<br /> </td> 
+   <td> 投放1<br /> </td> 
    <td> 已禁用<br /> </td> 
    <td> 5<br /> </td> 
    <td> 3pm<br /> </td> 
-   <td> 上午8點（次日）<br /> </td> 
+   <td> 上午8点（第二天）<br /> </td> 
    <td> 2pm<br /> </td> 
    <td> 每晚<br /> </td> 
    <td> 已排除<br /> </td> 
    <td> 已排除<br /> </td> 
   </tr> 
   <tr> 
-   <td> 傳遞2<br /> </td> 
+   <td> 交付2<br /> </td> 
    <td> 已禁用<br /> </td> 
    <td> 10<br /> </td> 
    <td> 4pm<br /> </td> 
-   <td> 上午9點（隔天）<br /> </td> 
+   <td> 上午9:00（第二天）<br /> </td> 
    <td> 2pm<br /> </td> 
    <td> 每晚<br /> </td> 
    <td> 已发送<br /> </td> 
-   <td> 上午9點（隔天）<br /> </td> 
+   <td> 上午9:00（第二天）<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-在兩次傳送的摘取日期過後，每晚仲裁會在兩次傳送的聯絡日期之前重新套用。 這可讓您尋找所有已傳送（已處理其傳送的收件者、透過廣泛記錄檔記錄的收件者）或已排程傳送的收件者（符合接收傳送條件的收件者、透過預測記錄檔記錄的收件者）。
+超过两次投放的提取日期后，将在两次投放的联系日期之前重新应用夜间仲裁。 这样，即可查找所有已发送（为其处理投放、通过广泛日志进行记录）或计划发送的投放（有资格接收投放、通过预测日志进行记录的收件人）的投放。
 
-在壓力規則定義的期間內列出所有已傳送和可能傳送後，Adobe Campaign會依權重來排序，權重最高的為前。 當達到壓力規則中設定的臨界值時（此處在同一週內不超過2封電子郵件），收件者會從傳送中排除。
+在压力规则定义的时间段内列出所有已发送和潜在投放后，Adobe Campaign会按权重对它们进行排序，权重最高的为先。 当达到压力规则中设置的阈值时（此处在同一周内不超过2封电子邮件），收件人将从投放中排除。

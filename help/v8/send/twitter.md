@@ -1,6 +1,6 @@
 ---
-title: 透過Adobe Campaign在Twitter上發佈訊息
-description: 瞭解如何使用Adobe Campaign社交行銷模組，在Twitter上發佈訊息，並傳送直接訊息給您的追隨者
+title: 使用Adobe Campaign在Twitter上发布消息
+description: 了解如何使用Adobe Campaign社交营销模块在Twitter上发布消息并向关注者发送私信
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
@@ -12,151 +12,151 @@ ht-degree: 3%
 ---
 
 
-# 透過Adobe Campaign在Twitter上發佈訊息 {#post-tw-messages}
+# 使用Adobe Campaign在Twitter上发布消息 {#post-tw-messages}
 
-Adobe Campaign隨附 **社交行銷** 可讓您透過Twitter與客戶和潛在客戶互動的模組。
+Adobe Campaign附带 **社交媒体营销** 模块，可让您通过Twitter与客户和潜在客户进行交互。
 
-設定整合後，您可以：
+配置集成后，您可以：
 
-* 傳送直接訊息給您的追隨者
-* 在您的Twitter帳戶上張貼推文
-* 透過恢復設定檔資料來收集新聯絡人，這可讓您執行目標定位行銷活動，並在可能的情況下實施跨管道策略。 此動作需要使用者同意。
+* 向关注者发送私信
+* 在您的Twitter帐户上发布推文
+* 通过恢复用户档案数据来收集新联系人，这使您能够执行定位活动，并在可能的情况下实施跨渠道策略。 此操作需要用户同意。
 
 
-有關整合Twitter帳戶與Adobe Campaign的設定步驟說明，請參閱 [此頁面](../connect/ac-tw.md).
+有关将Twitter帐户与Adobe Campaign集成的配置步骤，请参见 [此页面](../connect/ac-tw.md).
 
-## 建立並發佈Twitter貼文 {#publish-on-tw}
+## 创建和发布Twitter帖子 {#publish-on-tw}
 
-請依照下列步驟，在您的Twitter帳戶上張貼訊息：
+请按照以下步骤在您的Twitter帐户中发布消息：
 
-1. 建立Twitter傳遞
+1. 创建Twitter投放
 
-   根據以下專案建立新傳遞： **[!UICONTROL Tweet (twitter)]** 傳遞範本。
+   根据以下内容创建新投放 **[!UICONTROL Tweet (twitter)]** 投放模板。
 
    ![](assets/tw-new-delivery.png)
 
-1. 選取主要目標
+1. 选择主目标
 
-   選取您要傳送推文的帳戶。
+   选择要向其发送推文的帐户。
 
    ![](assets/tw-define-target.png)
 
    1. 单击 **[!UICONTROL To]** 链接。
    1. 单击 **[!UICONTROL Add]** 按钮。
    1. 选择 **[!UICONTROL A Twitter account]**。
-   1. 在 **[!UICONTROL Folder]** 欄位中，選取包含Twitter帳戶的服務資料夾。 然後選取您要傳送推文的Twitter帳戶。
+   1. 在 **[!UICONTROL Folder]** 字段中，选择包含Twitter帐户的服务文件夹。 然后，选择要将推文发送到的Twitter帐户。
 
-1. 選取校訂目標
+1. 选择校对目标
 
-   此 **[!UICONTROL Target of the proofs]** 索引標籤可讓您定義Twitter帳戶，以用於最終傳送前的測試傳送。
+   此 **[!UICONTROL Target of the proofs]** 选项卡允许您定义要在最终投放之前用于测试投放的Twitter帐户。
 
-   如以下文章所述： [設定步驟](../connect/ac-tw.md#tw-test-account)，您必須建立專用於傳送校樣的私人測試Twitter帳戶。
+   如 [配置步骤](../connect/ac-tw.md#tw-test-account)，则必须创建一个专用于发送校样的专用测试Twitter帐户。
 
    >[!NOTE]
    >
-   >如果您的所有傳送都使用相同的Twitter測試帳戶，您可以將校樣目標儲存在 **[!UICONTROL Tweet]** 傳遞範本，可透過以下方式存取： **[!UICONTROL Resources > Templates > Delivery templates]** 節點。 之後，系統會為每個新傳遞預設輸入校樣目標。
+   >如果您对所有投放使用相同的Twitter测试帐户，则可以将该验证目标保存在 **[!UICONTROL Tweet]** 投放模板，可通过 **[!UICONTROL Resources > Templates > Delivery templates]** 节点。 然后，将为每次新投放默认输入验证目标。
 
-1. 定義貼文內容
+1. 定义帖子内容
 
-   在「 」中輸入您張貼的內容 **[!UICONTROL Content]** 標籤。
+   在中输入帖子内容 **[!UICONTROL Content]** 选项卡。
 
    ![](assets/tw-delivery-content.png)
 
    >[!CAUTION]
    >
-   >在Twitter上張貼內容時，會有以下限制：
+   >在Twitter上发布内容时，将会受到以下限制：
    >
-   >* 訊息不能超過140個字元。
-   >* 不支援HTML格式。
+   >* 消息不能超过140个字符。
+   >* 不支持HTML格式。
 
 
-1. 預覽您的貼文
+1. 预览您的帖子
 
-   瀏覽 **[!UICONTROL Preview]** 索引標籤以檢查文章的呈現。
+   浏览 **[!UICONTROL Preview]** 制表符以检查帖子的呈现。
 
    ![](assets/tw-delivery-preview.png)
 
-   1. 按一下 **[!UICONTROL Preview]** 標籤。
-   1. 按一下 **[!UICONTROL Test personalization]** 下拉式功能表並選取 **[!UICONTROL Service]**.
-   1. 在 **[!UICONTROL Folder]** 欄位中，選取包含您Twitter帳戶的服務資料夾。
+   1. 单击 **[!UICONTROL Preview]** 选项卡。
+   1. 单击 **[!UICONTROL Test personalization]** 下拉菜单并选择 **[!UICONTROL Service]**.
+   1. 在 **[!UICONTROL Folder]** 字段中，选择包含您的Twitter帐户的服务文件夹。
 
 1. 发送验证
 
-   在張貼推文之前，請務必傳送出版物的證明來驗證推文：然後您就可以在私人Twitter測試頁面上取得出版物的確切轉譯。
+   在发布推文之前，请确保通过发送出版物校样来验证推文：然后，您可以在私有Twitter测试页面上获得出版物的精确呈现版本。
 
-1. 張貼訊息
+1. 发布消息
 
-   1. 內容獲得核准後，按一下 **[!UICONTROL Send]** 按鈕。
-   1. 選取 **[!UICONTROL Deliver as soon as possible]** 並按一下 **[!UICONTROL Analyze]** 按鈕。
-   1. 分析完成後，檢查結果。
-   1. 按一下 **[!UICONTROL Confirm delivery]**，然後按一下 **[!UICONTROL Yes]**.
+   1. 内容获得批准后，单击 **[!UICONTROL Send]** 按钮。
+   1. 选择 **[!UICONTROL Deliver as soon as possible]** 并单击 **[!UICONTROL Analyze]** 按钮。
+   1. 分析完成后，检查结果。
+   1. 单击 **[!UICONTROL Confirm delivery]**，然后单击 **[!UICONTROL Yes]**.
 
-## 傳送直接訊息給追隨者 {#direct-tw-messages}
+## 向关注者发送私信 {#direct-tw-messages}
 
-此 **[!UICONTROL Synchronize Twitter accounts]** 技術工作流程會復原Twitter追隨者清單，以便您傳送直接訊息給他們。 [了解详情](../connect/ac-tw.md#synchro-tw-accounts)
+此 **[!UICONTROL Synchronize Twitter accounts]** 技术工作流可恢复Twitter关注者的列表，以便您可以向他们发送私信。 [了解详情](../connect/ac-tw.md#synchro-tw-accounts)
 
-若要傳送直接訊息給您的追隨者，請遵循下列步驟：
+要向关注者发送私信，请执行以下步骤：
 
-1. 根據以下專案建立Twitter傳遞： **[!UICONTROL Tweet (Direct Message)]** 內建傳遞範本。
+1. 根据以下内容创建Twitter交付 **[!UICONTROL Tweet (Direct Message)]** 内置投放模板。
 
-1. 選取主要目標
+1. 选择主目标
 
    ![](assets/tw-dm-define-target.png)
 
-   1. 選取 **[!UICONTROL To]** 連結和 **[!UICONTROL Add]** 按鈕。
+   1. 选择 **[!UICONTROL To]** 链接和 **[!UICONTROL Add]** 按钮。
 
-   1. 選擇目標定位型別
+   1. 选择定位类型
 
-      * 選取 **[!UICONTROL Twitter subscribers]** 傳送直接訊息給所有追隨者。
+      * 选择 **[!UICONTROL Twitter subscribers]** 向你的所有关注者发送一条直接消息。
 
-      * 選取 **[!UICONTROL Filter conditions]** 定義查詢並檢視其結果。 瞭解如何在中建立篩選器 [本節](../audiences/create-filters.md#advanced-filters).
+      * 选择 **[!UICONTROL Filter conditions]** 定义查询并查看其结果。 了解如何在中创建过滤器 [本节](../audiences/create-filters.md#advanced-filters).
 
-1. 從中選擇校訂目標 **[!UICONTROL Target of the proofs]** 標籤：此帳戶將收到您直接訊息的證明。
+1. 从中选择验证目标 **[!UICONTROL Target of the proofs]** 选项卡：此帐户将收到您的私信证明。
 
-   如以下文章所述： [設定步驟](../connect/ac-tw.md#tw-test-account)，您必須建立專用於傳送校樣的私人測試Twitter帳戶。
+   如 [配置步骤](../connect/ac-tw.md#tw-test-account)，则必须创建一个专用于发送校样的专用测试Twitter帐户。
 
 
    >[!NOTE]
    >
-   >如果您想要將所有直接訊息校樣傳送至相同的Twitter帳戶，可以將校樣目標儲存在 **[!UICONTROL Tweet (Direct Message)]** 傳遞範本，可透過以下方式存取： **[!UICONTROL Resources > Templates > Delivery templates]** 節點。
+   >如果要将所有直接消息校样发送到同一Twitter帐户，可将校样目标保存在中 **[!UICONTROL Tweet (Direct Message)]** 投放模板，可通过 **[!UICONTROL Resources > Templates > Delivery templates]** 节点。
 
-1. 在「 」中輸入訊息的內容 **[!UICONTROL Content]** 標籤。
+1. 在中输入消息的内容 **[!UICONTROL Content]** 选项卡。
 
    ![](assets/tw-dm-content.png)
 
-   個人化欄位的使用方式與電子郵件傳遞相同，例如，在訊息本文中新增追隨者的名稱。 在[此章节](../send/personalize.md)中了解更多信息。
+   个性化字段的使用方式与电子邮件投放相同，例如，在消息正文中添加关注者的姓名。 在[此章节](../send/personalize.md)中了解更多信息。
 
-1. 預覽您的訊息
+1. 预览消息
 
-   瀏覽 **[!UICONTROL Preview]** 索引標籤以檢查文章的呈現。
+   浏览 **[!UICONTROL Preview]** 制表符以检查帖子的呈现。
 
    ![](assets/tw-dm-preview.png)
 
-   1. 按一下 **[!UICONTROL Preview]** 標籤。
-   1. 按一下 **[!UICONTROL Test personalization]** 下拉式功能表並選取 **[!UICONTROL Visitor Subscription]**.
-   1. 選擇您要用來測試預覽的Twitter帳戶。
+   1. 单击 **[!UICONTROL Preview]** 选项卡。
+   1. 单击 **[!UICONTROL Test personalization]** 下拉菜单并选择 **[!UICONTROL Visitor Subscription]**.
+   1. 选择要用于测试预览的Twitter帐户。
 
 1. 发送验证
 
-   在傳送訊息之前，請確定通過以下方式驗證訊息： [傳送證明至測試帳戶](../send/preview-and-proof.md)：然後您可以取得私人Twitter帳戶上訊息的確切轉譯，並檢查內容和個人化。
+   在发送消息之前，请确保通过以下方式验证消息 [向测试帐户发送验证](../send/preview-and-proof.md)：然后，您可以在私有Twitter帐户上获得消息的精确呈现并检查内容和个性化。
 
-1. 傳送直接訊息
+1. 发送私信
 
-   1. 內容獲得核准後，按一下 **[!UICONTROL Send]** 按鈕。
-   1. 選取 **[!UICONTROL Deliver as soon as possible]** 並按一下 **[!UICONTROL Analyze]** 按鈕。
-   1. 分析完成後，檢查結果。
-   1. 按一下 **[!UICONTROL Confirm delivery]**，然後按一下 **[!UICONTROL Yes]**.
+   1. 内容获得批准后，单击 **[!UICONTROL Send]** 按钮。
+   1. 选择 **[!UICONTROL Deliver as soon as possible]** 并单击 **[!UICONTROL Analyze]** 按钮。
+   1. 分析完成后，检查结果。
+   1. 单击 **[!UICONTROL Confirm delivery]**，然后单击 **[!UICONTROL Yes]**.
 
 >[!CAUTION]
 >
->您每天不能傳送超過250則直接訊息。 為避免超過此臨界值，您可以分批次傳送。 有關詳細資訊，請參閱 [Campaign Classic v7檔案](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves){target="_blank"}.
+>您每天发送的私信不能超过250条。 为避免超出此阈值，您可以分批发送。 有关更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves){target="_blank"}.
 
 
-## 存取追蹤資料 {#tw-tracking}
+## 访问跟踪数据 {#tw-tracking}
 
-內建 **[!UICONTROL Tweet]** 傳遞範本，預設為啟用追蹤。
+内置 **[!UICONTROL Tweet]** 投放模板，默认情况下启用跟踪。
 
-追蹤資料可在傳遞報表中檢視，也可在 **[!UICONTROL Edit > Tracking]** 傳遞和服務的索引標籤。
+跟踪数据可在投放报表中查看，也可在 **[!UICONTROL Edit > Tracking]** “交付”和“服务”选项卡。
 
-追蹤設定與電子郵件傳遞的設定相同。 進一步瞭解 [Campaign Classic v7檔案](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=zh-Hans){target="_blank"}.
+跟踪配置与电子邮件投放的配置相同。 了解详情，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=zh-Hans){target="_blank"}.
 

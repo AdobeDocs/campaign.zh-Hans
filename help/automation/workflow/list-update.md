@@ -15,62 +15,62 @@ ht-degree: 1%
 
 
 
-A **清單更新** 活動會將轉變中指定的母體儲存在收件者清單中。
+A **列表更新** 活动会将过渡中指定的群体存储在收件人列表中。
 
 ![](assets/s_user_segmentation_update_group.png)
 
-可以從現有群組的清單中選取清單。
+可以从现有组的列表中选择该列表。
 
-您也可以使用建立 **[!UICONTROL Create the list if necessary (Computed name)]** 和 **[!UICONTROL Create the list if necessary (Computed Folder and Name)]** 選項。 這些選項可讓您選取您選擇的標籤來建立清單，以及稍後選取要儲存清單的資料夾。 也可以透過插入動態欄位或指令碼來自動產生標籤。 標籤右側的躍現式選單中有不同的動態欄位。
+也可以使用创建 **[!UICONTROL Create the list if necessary (Computed name)]** 和 **[!UICONTROL Create the list if necessary (Computed Folder and Name)]** 选项。 这些选项允许您选择您选择的标签来创建列表，并在以后选择将保存该列表的文件夹。 通过插入动态字段或脚本，还可以自动生成标签。 标签右侧的弹出菜单中提供了不同的动态字段。
 
 ![](assets/s_user_segmentation_update_list_calc.png)
 
-如果清單已存在，收件者將會新增至現有內容，除非您核取 **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** 選項。 在此情況下，清單的內容會在更新前刪除。
+如果该列表已存在，则将收件人添加到现有内容，除非您选中 **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** 选项。 在这种情况下，将在更新之前删除列表的内容。
 
-如果您希望建立或更新後的清單使用收件者表格以外的表格，請核取 **[!UICONTROL Create or use a list with its own table]** 選項。
+如果您希望创建或更新的列表使用收件人表以外的表，请检查 **[!UICONTROL Create or use a list with its own table]** 选项。
 
-若要使用選項，必須在您的Adobe Campaign執行個體中設定相關的特定表格。
+要使用选项，必须在Adobe Campaign实例中配置相关的特定表。
 
-一般而言，將目標儲存在清單中會標籤工作流程的結尾。 根據預設， **[!UICONTROL List update]** 因此，活動沒有出站轉變。 檢查 **[!UICONTROL Generate an outbound transition]** 選項以新增一個。
+通常，将目标保存在列表中会标记工作流的结尾。 默认情况下， **[!UICONTROL List update]** 因此，活动没有叫客过渡。 查看 **[!UICONTROL Generate an outbound transition]** 选项以添加一个。
 
-![](assets/do-not-localize/how-to-video.png) [在影片中探索如何從檔案總管建立收件者清單](#video)
+![](assets/do-not-localize/how-to-video.png) [在视频中了解如何从资源管理器创建收件人列表](#video)
 
-## 範例：清單更新 {#example--list-update}
+## 示例：列表更新 {#example--list-update}
 
-在以下範例中，清單更新活動會依循查詢，目標是居住在法國的超過30歲的男性。 清單最初將從查詢結果中建立。 然後，每次從工作流程啟動時都會更新。 例如，它可能會定期用於行銷活動的目標促銷優惠方案。
+在以下示例中，列表更新活动紧跟一个查询，该查询针对的是居住在法国的30岁以上的男性。 列表最初将根据查询结果创建。 然后，每次从工作流中启动它时都会更新它。 例如，它可以定期用于针对促销活动提供的定向促销优惠。
 
-1. 新增 **[!UICONTROL list update activity]** 在查詢後直接開啟，然後進行編輯。
+1. 添加 **[!UICONTROL list update activity]** 紧跟查询之后，然后打开它以对其进行编辑。
 
-   有關在工作流程中建立查詢的詳細資訊，請參閱 [查詢](query.md).
+   有关在工作流中创建查询的更多信息，请参阅 [查询](query.md).
 
-1. 您可以為活動選取標籤。
-1. 選取 **[!UICONTROL Create the list if necessary (Calculated name)]** 選項來顯示清單將在第一個工作流程執行後建立，然後使用以下執行進行更新。
-1. 選取您要儲存清單的資料夾。
-1. 輸入清單的標籤。 您可以插入動態欄位，以從清單中自動產生名稱。 在此範例中，清單的名稱與查詢相同，以便輕鬆識別其內容。
-1. 離開 **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** 選項已核取，以刪除不符合目標定位條件的收件者，並將新收件者插入清單中。
-1. 另外請將 **[!UICONTROL Create or use a list with its own table]** 選項已核取。
-1. 離開 **[!UICONTROL Generate an outbound transition]** 選項未勾選。
-1. 按一下 **[!UICONTROL Ok]** 然後開始工作流程。
+1. 您可以为活动选择标签。
+1. 选择 **[!UICONTROL Create the list if necessary (Calculated name)]** 选项，用于显示将在执行第一个工作流后创建列表，然后使用以下执行进行更新。
+1. 选择要保存列表的文件夹。
+1. 输入列表的标签。 您可以插入动态字段以从列表中自动生成名称。 在此示例中，列表与查询同名，以便轻松识别其内容。
+1. 保留 **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** 选中此选项可删除不符合定位标准的收件人，并将新收件人插入到列表中。
+1. 另外，请将 **[!UICONTROL Create or use a list with its own table]** 选项已选中。
+1. 保留 **[!UICONTROL Generate an outbound transition]** 选项未选中。
+1. 单击 **[!UICONTROL Ok]** 然后启动工作流。
 
    ![](assets/s_user_segmentation_update_list_calc_example.png)
 
-   然後會建立或更新相符的收件者清單。
+   随后将创建或更新匹配的收件人列表。
 
-## 輸入引數 {#input-parameters}
+## 输入参数 {#input-parameters}
 
-* tableName
-* 綱要
+* 表名
+* 架构
 
-識別要儲存在群組中的母體。
+标识要保存在组中的群体。
 
-## 輸出引數 {#output-parameters}
+## 输出参数 {#output-parameters}
 
-* groupId：群組識別碼。
+* groupId：组标识符。
 
-## 教學課程影片 {#video}
+## 教程视频 {#video}
 
-本影片說明如何從檔案總管建立收件者清單。
+本视频说明如何从Explorer创建收件人列表。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-有其他Campaign操作說明影片可供使用 [此處](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.
+提供了其他Campaign操作方法视频 [此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.

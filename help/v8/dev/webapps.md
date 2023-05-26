@@ -1,6 +1,6 @@
 ---
-title: Campaign網路應用程式和網路表單
-description: 開始使用網路應用程式和網路表單
+title: Campaign Web应用程序和Web窗体
+description: Web应用程序和Web窗体入门
 feature: Web Apps
 role: User, Developer
 level: Beginner
@@ -12,16 +12,16 @@ ht-degree: 0%
 
 ---
 
-# 開始使用網路應用程式和網路表單{#gs-ac-web}
+# Web应用程序和Web窗体入门{#gs-ac-web}
 
-Adobe Campaign整合了圖形模組，用於定義和發佈 **網路表單** 以建立具有輸入和選取欄位的頁面，其中可能包含來自資料庫的資料。 這可讓您設計和張貼使用者可存取的網頁，以檢視或輸入資訊。
+Adobe Campaign集成了一个用于定义和发布的图形模块 **Web窗体** 创建包含输入和选择字段的页面，其中可能包含来自数据库的数据。 这样，您就可以设计和发布用户有权访问的Web页，以查看或输入信息。
 
-![](../assets/do-not-localize/book.png) 瞭解如何在中建立和發佈網路表單 [Campaign Classic v7檔案](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html#designing-content){target="_blank"}
+![](../assets/do-not-localize/book.png) 了解如何在中创建和发布Web窗体 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html#designing-content){target="_blank"}
 
 ![](assets/sample.png)
 
-Adobe Campaign也可讓您建立和發佈動態的互動式 **網頁應用程式** 使用來自資料庫的資料，並根據已連線使用者的許可權調整內容。
+Adobe Campaign还允许您创建和发布动态的交互式内容 **Web应用程序** 使用来自数据库的数据和适应所连接用户的权限的内容。
 
-您可以建立頁面，例如外部網路上的編輯表單，或通知表單，其中包含來自資料庫的資料，以及表格、圖表、輸入表單等。 此功能可讓您設計和張貼網頁，讓使用者在其中查閱或輸入資訊。
+您可以创建页面，例如外部网上的编辑表单，或者通知表单（包括来自数据库的数据，以及表、图表、输入表单等）。 此功能允许您设计和发布用户可以在其中查找或输入信息的网页。
 
-![](../assets/do-not-localize/book.png) 瞭解如何在中建立和發佈網頁應用程式 [Campaign Classic v7檔案](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html#designing-content){target="_blank"}
+![](../assets/do-not-localize/book.png) 了解如何在中创建和发布Web应用程序 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html#designing-content){target="_blank"}

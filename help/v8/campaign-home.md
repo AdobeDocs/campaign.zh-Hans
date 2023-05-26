@@ -16,7 +16,7 @@ ht-degree: 82%
 
 ## 新增功能
 
-* **[[!DNL Adobe Campaign] 自動化指南](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=zh-Hans){target="_blank"}**  — 瞭解如何建立工作流程與行銷活動
+* **[[!DNL Adobe Campaign] 自动化指南](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=zh-Hans){target="_blank"}**  — 了解如何构建工作流和营销活动
 
 * **[什么是 [!DNL Adobe Campaign]](start/get-started.md)** - 主要功能和用例
 
@@ -26,7 +26,7 @@ ht-degree: 82%
 
 * **[从 v7 到 v8](start/v7-to-v8.md)** - 从 Campaign Classic v7 到 v8？了解主要差异
 
-* **[Campaign v8的控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans){target="_blank"}**  — 使用Campaign控制面板，自行執行重要的管理員工作
+* **[Campaign v8的控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans){target="_blank"}**  — 使用Campaign控制面板自行执行重要的管理员任务
 
 * **[发行说明](start/release-notes.md)** - 了解最新功能和改进功能
 

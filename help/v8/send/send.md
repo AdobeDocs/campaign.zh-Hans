@@ -1,6 +1,6 @@
 ---
-title: 傳送及監控您的電子郵件
-description: 瞭解使用Adobe Campaign傳送電子郵件的範圍和特性
+title: 发送和监控电子邮件
+description: 了解使用Adobe Campaign发送电子邮件的范围和特性
 feature: Email
 role: Data Engineer
 level: Beginner
@@ -13,94 +13,94 @@ ht-degree: 3%
 ---
 
 
-# 傳送及監控您的電子郵件
+# 发送和监控电子邮件
 
-當傳遞已設定好並準備好傳送時，請確定您已執行傳遞分析。 [了解详情](delivery-analysis.md)
+配置投放并准备好发送后，请确保已运行投放分析。 [了解详情](delivery-analysis.md)
 
-完成後，確認傳送以啟動訊息傳送。
+完成后，确认投放以启动消息投放。
 
-從追蹤傳送的執行 **傳遞** 索引標籤，可透過此傳遞的詳細資訊或傳遞清單存取。
+从跟踪投放的执行情况 **投放** 选项卡，可通过此投放的详细信息或投放列表访问。
 
-## 監視您的電子郵件
+## 监测电子邮件
 
-傳送後，請在傳送控制面板中檢查您的傳送狀態，並存取傳送記錄檔及報告，以確認訊息已正確傳送。
+发送后，在投放仪表板中检查您的投放状态，并访问投放日志和报告以确认消息已正确发送。
 
 ![](../assets/do-not-localize/book.png) [请参阅 Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html)以了解详情{target="_blank"}
 
 
 ## Campaign MTA {#mta}
 
-Campaign v8郵件傳輸代理程式(MTA)提供同級最佳的傳送基礎架構，以實現最佳傳遞能力、信譽、輸送量、報告、跳出處理、IP提升和連線設定管理。
+Campaign v8邮件传输代理(MTA)提供了一流的发送基础架构，可实现最佳可投放性、信誉、吞吐量、报告、退回处理、IP提升和连接设置管理。
 
-此服務適用於所有Campaign v8客戶，可保證擴充性、高傳遞輸送量，並有助於更快速地傳送更多電子郵件。 這是透過新的最適化傳送技術達成，該技術會根據網際網路服務提供者的意見即時變更電子郵件傳送設定。
+它面向所有Campaign v8客户，确保可伸缩性和高投放吞吐量，并帮助更快地发送更多电子邮件。 这是通过新的自适应投放技术实现的，该技术根据互联网服务提供商的反馈实时更改电子邮件发送设置。
 
 ### 好处
 
-Adobe Campaign使用郵件傳輸代理程式(MTA)，執行SparkPost的商業電子郵件MTA，稱為 **動量**.
+Adobe Campaign使用邮件传输代理(MTA)，该代理运行SparkPost的商业电子邮件MTA，称为 **动量**.
 
-Momentum代表創新的高效能MTA技術，包括更聰明的彈回處理以及自動化傳遞能力最佳化功能，可協助寄件者達到並維持最佳收件匣傳遞率。
+Momentum代表着一种创新的、高性能的MTA技术，其中包括更智能的退回处理以及自动化可投放性优化功能，可帮助发件人实现并维持最佳的收件箱投放率。
 
-* MTA可大幅提升整體輸送速度，並大幅減少軟跳出。
-* 它使用最新的MTA技術，為您提供最佳的電子郵件傳送輸送速度。
-* 透過即時且自動地適應其收到的意見回饋，它還可以確保使用即時傳遞資料來傳送更精確且更智慧的電子郵件。
+* MTA允许大幅提高总吞吐量速度，并显着减少软退回。
+* 它使用最新的MTA技术为您提供最佳的电子邮件投放吞吐速度。
+* 通过即时和自动地适应它收到的反馈，它还可以确保使用实时投放数据更准确、更智能地投放电子邮件。
 
-### 彈回資格
+### 退回鉴别
 
-對象 **同步** 傳送失敗錯誤訊息、MTA會判斷退信型別和資格，並將該資訊傳回至Campaign。
+对象 **同步** 投放失败错误消息，MTA会确定退回类型和鉴别，并将该信息发送回Campaign。
 
-MTA會符合SMTP跳出的資格，並以對應至Campaign跳出原因和資格的跳出代碼形式，將該資格傳送回Campaign。
+MTA会鉴定SMTP退回资格，并以映射到Campaign退回原因和资格的退回代码的形式将该资格发送回Campaign。
 
 >[!NOTE]
 >
->目前 **非同步** inMail程式會透過以下方式限定退信 **[!UICONTROL Inbound email]** 規則。
+>当前 **异步** 退件由inMail流程通过 **[!UICONTROL Inbound email]** 规则。
 
-進一步瞭解中的傳送失敗 [本節](delivery-failures.md).
+在中了解有关投放失败的更多信息 [本节](delivery-failures.md).
 
 
-### 特定MX規則
+### 特定的MX规则
 
-MX規則（郵件交換器）是管理傳送伺服器與接收伺服器之間通訊的規則。
+MX规则（邮件交换器）是管理发送服务器和接收服务器之间通信的规则。
 
-MTA有自己的MX規則，可讓它根據您過去的電子郵件信譽，以及您傳送電子郵件之網域所提供的即時回饋，依網域來自訂您的輸送量。
+MTA拥有自己的MX规则，这些规则允许MTA根据您自己的历史电子邮件信誉以及来自您发送电子邮件之域名的实时反馈，按域自定义您的吞吐量。
 
-### DKIM簽署
+### DKIM签名
 
-網域金鑰識別郵件(DKIM)是一種用於偵測偽造寄件者地址（通常稱為欺騙）的驗證方法。
+域密钥识别邮件(DKIM)是一种用于检测伪造发件人地址（通常称为欺骗）的身份验证方法。
 
-在Adobe Campaign中，DKIM電子郵件驗證簽署是由MTA執行。
+在Adobe Campaign中，DKIM电子邮件身份验证签名由MTA执行。
 
-瞭解有關DKIM的更多資訊 [Adobe傳遞性最佳實務指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication){target="_blank"}.
+了解有关DKIM的更多信息，请参见 [Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication){target="_blank"}.
 
 ## 电子邮件反馈服务 {#email-feedback-service}
 
-使用電子郵件回饋服務(EFS)功能，可準確報告每封電子郵件的狀態，因為回饋會直接從MTA擷取。
+借助电子邮件反馈服务(EFS)功能，每个电子邮件的状态均可准确报告，因为反馈是直接从MTA中捕获的。
 
-開始傳送後，此專案沒有變更 **[!UICONTROL Success]** 訊息成功從Campaign轉送至MTA時的百分比。
+投放开始后， **[!UICONTROL Success]** 消息成功从Campaign中继到MTA时的百分比。
 
-傳遞記錄顯示 **[!UICONTROL Taken into account by the service provider]** 每個目標地址的狀態。
+投放日志显示 **[!UICONTROL Taken into account by the service provider]** 每个目标地址的状态。
 
-當訊息實際傳送至目標設定檔時，一旦從MTA即時回報此資訊後，傳送記錄會顯示 **[!UICONTROL Sent]** 成功收到訊息的每個位址的狀態。 此 **[!UICONTROL Success]** 百分比會隨著每次成功傳遞而相應增加。
+当消息实际发送到目标用户档案并且从MTA实时报告此信息后，投放日志显示 **[!UICONTROL Sent]** 成功接收消息的每个地址的状态。 此 **[!UICONTROL Success]** 百分比会随着每次成功交付而相应增加。
 
-當硬跳出訊息從MTA回傳時，其記錄狀態會從 **[!UICONTROL Taken into account by the service provider]** 至 **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
+从MTA报告硬退回消息时，其日志状态将从 **[!UICONTROL Taken into account by the service provider]** 到 **[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
 
-當從MTA回報軟退信時，其記錄狀態維持不變(**[!UICONTROL Taken into account by the service provider]**)：僅限 [錯誤原因](delivery-failures.md#delivery-failure-reasons) 已更新<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. 此 **[!UICONTROL Success]** 百分比保持不變。 然後，軟跳出訊息會在整個傳遞期間重試 [有效期](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}：
+当从MTA报告软退回消息时，其日志状态保持不变(**[!UICONTROL Taken into account by the service provider]**)：仅 [错误原因](delivery-failures.md#delivery-failure-reasons) 已更新<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. 此 **[!UICONTROL Success]** 百分比保持不变。 然后，在整个投放过程中重试软退回消息 [有效期](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}：
 
-* 如果在有效期結束前重試成功，則訊息狀態會變更為 **[!UICONTROL Sent]** 和 **[!UICONTROL Success]** 百分比會相應增加。
+* 如果在有效期结束前重试成功，则消息状态将更改为 **[!UICONTROL Sent]** 和 **[!UICONTROL Success]** 百分比亦会相应增加。
 
-* 否則，狀態會變更為 **[!UICONTROL Failed]**. 此 **[!UICONTROL Success]** <!--and **[!UICONTROL Bounces + errors]** -->百分比保持不變。
+* 否则，状态将更改为 **[!UICONTROL Failed]**. 此 **[!UICONTROL Success]** <!--and **[!UICONTROL Bounces + errors]** -->百分比保持不变。
 
 >[!NOTE]
 >
->如需硬跳出和軟跳出的詳細資訊，請參閱 [本節](delivery-failures.md#delivery-failure-reasons).
+>有关硬退信和软退信的更多信息，请参阅 [本节](delivery-failures.md#delivery-failure-reasons).
 >
->如需傳送暫時失敗後重試的詳細資訊，請參閱 [本節](delivery-failures.md#retries).
+>有关投放临时失败后重试的更多信息，请参阅 [本节](delivery-failures.md#retries).
 
-下表顯示如何使用EFS功能，在傳送程式的每個步驟更新KPI和傳送記錄檔狀態。
+下表显示了如何使用EFS功能在发送过程的每个步骤更新KPI和发送日志状态。
 
-| 傳送程式中的步驟 | KPI摘要 | 傳送記錄檔狀態 |
+| 发送过程中的步骤 | KPI摘要 | 发送日志状态 |
 |--- |--- |--- |
-| 訊息已成功從Campaign轉送至MTA | **[!UICONTROL Success]** 百分比未顯示（從0%開始） | 由服务提供商考虑 |
-| 系統會從MTA回報硬跳出訊息 | 無變更 **[!UICONTROL Success]** 百分比 | 已失败 |
-| 系統會從MTA回報軟退信訊息 | 無變更 **[!UICONTROL Success]** 百分比 | 由服务提供商考虑 |
-| 軟退信重試成功 | **[!UICONTROL Success]** 百分比會相應增加 | 已发送 |
-| 軟退信重試失敗 | 無變更 **[!UICONTROL Success]** 百分比 | 已失败 |
+| 消息已成功从Campaign中继到MTA | **[!UICONTROL Success]** 百分比不显示（从0%开始） | 由服务提供商考虑 |
+| 硬退回消息从MTA返回 | 无更改 **[!UICONTROL Success]** 百分比 | 已失败 |
+| 软退回消息从MTA返回 | 无更改 **[!UICONTROL Success]** 百分比 | 由服务提供商考虑 |
+| 软退回消息重试成功 | **[!UICONTROL Success]** 百分比亦相应增加 | 已发送 |
+| 软退回消息重试失败 | 无更改 **[!UICONTROL Success]** 百分比 | 已失败 |

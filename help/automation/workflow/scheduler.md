@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 调度程序
-description: 深入瞭解排程器工作流程活動
+description: 了解有关调度程序工作流活动的更多信息
 feature: Workflows
 exl-id: ed70d2d3-251e-4ee8-84d4-73ad03e8dd35
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
@@ -15,42 +15,42 @@ ht-degree: 10%
 
 
 
-此 **排程器** 是一項持續性任務，會在排程指定的時間啟動其轉變。
+此 **调度程序** 是一个持续性任务，会在计划指定的时间激活其过渡。
 
 **[!UICONTROL Scheduler]** 活动应视为排程开始的时间。图表中的活动定向规则与 **[!UICONTROL Start]** 活动相同。此活动不得包含集客过渡。
 
 ## 最佳实践 {#best-practices}
 
-* 請勿將工作流程排程為每15分鐘執行一次，因為這可能會妨礙整體系統效能並在資料庫中建立區塊。
+* 请勿将工作流安排为每15分钟运行一次以上，因为它可能会影响整体系统性能，并在数据库中创建块。
 
-* 請勿使用超過一個 **[!UICONTROL Scheduler]** 工作流程中每個分支的活動。 另請參閱 [使用活動](workflow-best-practices.md#using-activities).
+* 从不使用多个 **[!UICONTROL Scheduler]** 工作流中每个分支的活动。 参见 [使用活动](workflow-best-practices.md#using-activities).
 
-* 使用排程器活動可能會導致同時執行多個工作流程。 例如，您可以讓排程器每小時觸發一次工作流程執行，但有時整個工作流程的執行需要超過一小時。
+* 使用调度程序活动可能会导致同时运行多个工作流执行。 例如，您可以让调度程序每小时触发一次工作流执行，但有时整个工作流的执行需要超过一小时。
 
-   如果工作流程已經在執行中，您可能會想要略過執行。 有關如何防止同時執行工作流程的詳細資訊，請參閱 [此頁面](monitor-workflow-execution.md#preventing-simultaneous-multiple-executions).
+   如果工作流已在运行，则可能需要跳过执行。 有关如何防止同时执行工作流的详细信息，请参阅 [此页面](monitor-workflow-execution.md#preventing-simultaneous-multiple-executions).
 
-* 請注意，如果工作流程正在執行長期任務（例如匯入），或wfserver模組已停止一段時間，則可在數小時後啟動轉變。 在這種情況下，可能需要將排程器啟動的工作執行限制在特定的時間範圍內。
+* 请注意，如果工作流正在执行长期任务（如导入），或者wfserver模块已停止一段时间，则可以在数小时后激活过渡。 在这种情况下，可能需要将调度程序激活的任务的执行限制到特定时间范围。
 
-## 設定排程器活動 {#configuring-scheduler-activity}
+## 配置调度程序活动 {#configuring-scheduler-activity}
 
-排程器會定義轉變的啟動排程。 若要進行設定，請連按兩下圖形物件，然後按一下 **[!UICONTROL Change...]**
+调度程序定义过渡的激活调度。 要配置该对象，请双击该图形对象，然后单击 **[!UICONTROL Change...]**
 
 ![](assets/s_user_segmentation_scheduler.png)
 
-精靈可讓您定義活動的頻率和有效期間。 設定步驟如下：
+通过向导，可定义活动的频率和有效期。 配置步骤如下：
 
-1. 選取啟用頻率，然後按一下 **[!UICONTROL Next]**.
+1. 选择激活频率并单击 **[!UICONTROL Next]**.
 
    ![](assets/s_user_segmentation_scheduler2.png)
 
-1. 提供啟用時間和天數。 此步驟的引數取決於上一步驟中所選的頻率。 如果您選擇一天啟動活動多次，設定選項如下：
+1. 给出激活时间和日期。 此步骤的参数取决于上一步骤中选择的频率。 如果选择每天多次启动该活动，则配置选项将如下所示：
 
    ![](assets/s_user_segmentation_scheduler3.png)
 
-1. 定義排程的有效期，或指定執行排程的次數。
+1. 定义调度的有效期，或指定执行调度的次数。
 
    ![](assets/s_user_segmentation_scheduler4.png)
 
-1. 檢查設定並按一下 **[!UICONTROL Finish]** 以儲存。
+1. 检查配置并单击 **[!UICONTROL Finish]** 以保存。
 
    ![](assets/s_user_segmentation_scheduler5.png)

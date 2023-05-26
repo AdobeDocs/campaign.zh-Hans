@@ -15,7 +15,7 @@ ht-degree: 23%
 
 
 
-以下詳述的工作流程會隨 **中間來源平台** 模組（預設）。
+下面详述的工作流随 **中间源平台** 默认模块。
 
 <table> 
  <tbody> 
@@ -25,9 +25,9 @@ ht-degree: 23%
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">傳遞指標</span> <br /> </td> 
-   <td> <span class="uicontrol">deliveryIndicator</span> <br /> </td> 
-   <td> 此工作流程會更新傳送的傳送追蹤指標。 預設會每小時觸發此工作流程。<br /> </td> 
+   <td> <span class="uicontrol">投放指标</span> <br /> </td> 
+   <td> <span class="uicontrol">deliveryIndicators</span> <br /> </td> 
+   <td> 此工作流用于更新投放的投放跟踪指示器。 默认情况下，此工作流每小时触发一次。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

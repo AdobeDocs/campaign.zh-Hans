@@ -1,6 +1,6 @@
 ---
 title: 使用Campaign和Adobe Analytics
-description: 瞭解如何整合Campaign與Analytics
+description: 了解如何集成Campaign和Analytics
 feature: Analytics Integration, Reporting
 role: Admin, User
 level: Beginner, Intermediate
@@ -14,34 +14,34 @@ ht-degree: 71%
 
 # 使用Campaign和Adobe Analytics
 
-您可以設定Adobe Analytics以整合Campaign和Analytics。
+您可以配置Adobe Analytics以集成Campaign和Analytics。
 
-此整合可讓Adobe Campaign和Adobe Analytics透過 **網站分析聯結器** 附加元件。 此整合會將Adobe Campaign所傳送電子郵件行銷活動的指標和屬性傳送至Adobe Analytics。
+此集成允许Adobe Campaign和Adobe Analytics通过 **网站分析连接器** 加载项。 此集成将Adobe Campaign交付的电子邮件营销活动的指标和属性发送到Adobe Analytics。
 
-![](../assets/do-not-localize/speech.png)  身為Managed Cloud Services使用者， [連絡人Adobe](../start/campaign-faq.md#support) 以連結Campaign與Adobe Experience Cloud服務和解決方案。 Web Analytics聯結器附加元件必須透過專用套件安裝在您的環境中。
+![](../assets/do-not-localize/speech.png)  作为托管Cloud Services用户， [联系人Adobe](../start/campaign-faq.md#support) 将Campaign与Adobe Experience Cloud服务和解决方案连接。 必须通过专用软件包在环境中安装Web Analytics连接器加载项。
 
-使用 Adobe Analytics Connector，Adobe Campaign 可以对互联网受众进行评测（网站分析）。網站分析工具可讓Adobe Campaign將指標和行銷活動屬性轉送至Analytics。
+使用 Adobe Analytics Connector，Adobe Campaign 可以对互联网受众进行评测（网站分析）。利用Web分析工具，Adobe Campaign可将指标和营销活动属性转发到Analytics。
 
-每個工具的動作周長如下：
+每个工具的作用周长如下：
 
-* **Adobe Analytics** 標籤透過Adobe Campaign啟動的電子郵件行銷活動
+* **Adobe Analytics** 标记通过Adobe Campaign启动的电子邮件营销活动
 
-* **Adobe Campaign** 將指標和行銷活動屬性傳送至聯結器，聯結器再將它們轉送至網頁分析工具
+* **Adobe Campaign** 将指标和营销活动属性发送到连接器，连接器将它们转发到网站分析工具
 
 
 >[!CAUTION]
 >
 >Adobe Analytics Connector 与事务性消息传递（消息中心）不兼容。
 
-若要設定Campaign-Analytics連線，您必須執行下列操作：
+要设置Campaign-Analytics连接，必须执行以下操作：
 
 1. [在 Adobe Analytics 中创建报表包](#report-suite-analytics)
 1. [配置转化变量和成功事件](#configure-conversion-success)
 1. [在 Adobe Campaign 中配置外部帐户](#external-account-ac)
 
-## 建立您的Analytics報表套裝 {#report-suite-analytics}
+## 创建Analytics报表包 {#report-suite-analytics}
 
-若要建立 **[!UICONTROL Report suite]** 在 [!DNL Adobe Analytics]，請遵循下列步驟：
+要创建您的 **[!UICONTROL Report suite]** 在 [!DNL Adobe Analytics]，请按照以下步骤操作：
 
 1. 在 [!DNL Adobe Analytics] 中，选择 **[!UICONTROL Admin tab]**，然后单击 **[!UICONTROL All admin]**。
 
@@ -112,9 +112,9 @@ ht-degree: 71%
 
 1. 完成后单击 **[!UICONTROL Save]**。
 
-設定報表套裝後，您需要設定 **[!UICONTROL External accounts]** 在Adobe Campaign中。
+配置报表包后，您需要配置 **[!UICONTROL External accounts]** 在Adobe Campaign中。
 
-## 設定您的Campaign外部帳戶 {#external-account-ac}
+## 配置Campaign外部帐户 {#external-account-ac}
 
 现在，您需要在 Adobe Campaign 中配置 **[!UICONTROL Web Analytics]** 外部帐户，以启用两种解决方案之间的同步。
 
@@ -158,7 +158,7 @@ ht-degree: 71%
 
    >[!NOTE]
    >
-   > 您無法在此版本的Campaign v8中新增或移除區段。
+   > 您无法在此版本的Campaign v8中添加或删除区段。
 
 1. 在 **[!UICONTROL External account]** 中，单击 **[!UICONTROL Enrich the formula...]** 链接以更改 URL 计算公式，以指定网站分析工具集成信息（活动 ID）以及必须跟踪其活动的网站域名。
 
@@ -187,15 +187,15 @@ ht-degree: 71%
 >
 >如果您使用多个受众衡量工具，则在创建外部帐户时，可以在 **[!UICONTROL Partners]** 下拉列表中选择 **[!UICONTROL Other]**。您只能在投放属性中引用一个外部帐户：因此，您需要通过添加 Adobe 以及使用的所有其他衡量工具预期的参数来调整跟踪 URL 的公式。
 
-## 網站分析流程的技術工作流程 {#technical-workflows-of-web-analytics-processes}
+## 网站分析流程的技术工作流 {#technical-workflows-of-web-analytics-processes}
 
-Adobe Campaign與Adobe Analytics之間的資料交換由技術工作流程處理，可作為背景工作執行。
+Adobe Campaign和Adobe Analytics之间的数据交换由一个作为后台任务运行的技术工作流处理。
 
-此工作流程可從Campaign Explorer樹狀結構中的 **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** > **[!UICONTROL Web analytics process]** 資料夾。
+此工作流可从Campaign Explorer树中的 **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** > **[!UICONTROL Web analytics process]** 文件夹。
 
 ![](assets/webanalytics_workflows.png)
 
-此 **[!UICONTROL Sending of indicators and campaign attributes]** 工作流程可讓您使用Adobe Analytics Connector，透過Adobe Campaign將電子郵件行銷活動指標傳送至Adobe Experience Cloud。 此工作流在每天凌晨 4 点触发，可能需要 24 小时才能将数据发送到 Analytics。
+此 **[!UICONTROL Sending of indicators and campaign attributes]** 工作流可让您使用Adobe Analytics Connector通过Adobe Campaign将电子邮件营销活动指标发送到Adobe Experience Cloud。 此工作流在每天凌晨 4 点触发，可能需要 24 小时才能将数据发送到 Analytics。
 
 请注意，切勿重新启动此工作流，否则它将重新发送所有先前数据，可能会影响 Analytics 结果的准确性。
 
@@ -227,7 +227,7 @@ Adobe Campaign與Adobe Analytics之間的資料交換由技術工作流程處理
 * **[!UICONTROL Tag 3]** (webAnalytics/@tag3)
 * **[!UICONTROL Contact date]** (scheduling/@contactDate)
 
-## 追蹤傳遞 {#tracking-deliveries-in-adobe-campaign}
+## 跟踪投放 {#tracking-deliveries-in-adobe-campaign}
 
 为了让 Adobe Experience Cloud 能够在 Adobe Campaign 发送投放后跟踪网站上的活动，您需要在投放属性中引用匹配的连接器。要执行此操作，请应用以下步骤：
 
@@ -245,4 +245,4 @@ Adobe Campaign與Adobe Analytics之間的資料交換由技術工作流程處理
 
 **相关主题**
 
-* [Campaign -Experience Cloud觸發器整合](ac-triggers.md)
+* [Campaign -Experience Cloud触发器集成](ac-triggers.md)

@@ -70,9 +70,9 @@ ht-degree: 96%
 
    可以从 Adobe 下载中心获取安装程序和客户端控制台。
 
-   作為管理員使用者，存取Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) {target="_blank"} 以下載Adobe Campaign。
+   作为管理员用户，访问Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) {target="_blank"} 下载Adobe Campaign。
 
-   進一步瞭解發佈中心 [在此頁面中](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans){target="_blank"}.
+   了解有关分发中心的更多信息 [本页内容](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans){target="_blank"}.
 
 1. **我可以与 Campaign 专家联系吗？**
 

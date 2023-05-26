@@ -1,6 +1,6 @@
 ---
 title: 使用个性化块
-description: 瞭解如何在訊息內容中使用內建的個人化區塊
+description: 了解如何在消息内容中使用内置个性化块
 feature: Personalization
 role: User
 level: Beginner
@@ -14,69 +14,69 @@ ht-degree: 17%
 
 # 使用个性化块{#personalization-blocks}
 
-個人化區塊是動態內容，其中包含您可以插入傳送中的特定轉譯。 例如，您可以新增標誌、問候語訊息或映象頁面的連結。
+个性化块是动态内容，其中包含您可以插入到投放中的特定渲染。 例如，您可以添加徽标、问候语消息或指向镜像页面的链接。
 
-若要存取個人化內容區塊，請瀏覽至 **[!UICONTROL Resources > Campaign Management > Personalization blocks]** 檔案總管的節點。 內建的個人化區塊列於 [本節](#ootb-personalization-blocks).
+要访问个性化内容块，请浏览到 **[!UICONTROL Resources > Campaign Management > Personalization blocks]** 浏览器的节点。 中列出了内置个性化块 [本节](#ootb-personalization-blocks).
 
-您也可以定義新區塊，以最佳化您的傳送個人化。 [了解详情](#create-custom-personalization-blocks)。
+您还可以定义新块以优化投放个性化。 [了解详情](#create-custom-personalization-blocks)。
 
-## 插入個人化區塊 {#insert-personalization-blocks}
+## 插入个性化块 {#insert-personalization-blocks}
 
-若要在訊息中插入個人化區塊，請遵循下列步驟：
+要在消息中插入个性化块，请执行以下步骤：
 
-1. 在傳遞精靈的內容編輯器中，按一下個人化圖示並選取 **[!UICONTROL Include]** 功能表。
-1. 從清單中選取個人化區塊，或按一下 **[!UICONTROL Other...]** 功能表以存取完整清單。
+1. 在投放向导的内容编辑器中，单击个性化图标，然后选择 **[!UICONTROL Include]** 菜单。
+1. 从列表中选择个性化块，或单击 **[!UICONTROL Other...]** 菜单来访问完整列表。
 
    ![](assets/perso-content-block.png)
 
-1. 然後，個人化區塊會插入為指令碼。 產生個人化時，會自動調整成適合收件者設定檔。
-1. 瀏覽至 **[!UICONTROL Preview]** 索引標籤並選取收件者，以檢視特定收件者的此區塊內容。
+1. 个性化块随后作为脚本插入。 当生成个性化时，它自动适应收件人用户档案。
+1. 浏览至 **[!UICONTROL Preview]** 选项卡，然后选择收件人以查看特定收件人的此块内容。
 
-您可以在傳遞內容中包含個人化區塊的來原始碼。 要執行此操作，請選取 **[!UICONTROL Include the HTML source code of the block]** 進行選取。
+您可以在投放内容中包含个性化块的源代码。 要执行此操作，请选择 **[!UICONTROL Include the HTML source code of the block]** 选择时。
 
-## 內建個人化區塊 {#ootb-personalization-blocks}
+## 内置个性化块 {#ootb-personalization-blocks}
 
-內建的個人化區塊包括：
+内置个性化块包括：
 
-* **[!UICONTROL Enabled by Adobe Campaign]**：插入「由Adobe Campaign啟用」標誌。
-* **[!UICONTROL Formatting function for proper nouns]**：產生 **[!UICONTROL toSmartCase]** Javascript函式，會將每個字詞的第一個字母變更為大寫。
-* **[!UICONTROL Greetings]**：插入包含收件者全名，後跟逗號的問候語。 示例：“Hello John Doe,”。
-* **[!UICONTROL Insert logo]**：插入執行個體設定中定義的標誌。
-* **[!UICONTROL Link to mirror page]**：插入連結至 [映象頁面](mirror-page.md). 默认格式为：“如果您无法正确查看此邮件，请单击此处”。
-* **[!UICONTROL Mirror page URL]**：插入映象頁面URL，讓傳送設計人員可檢查連結。
-* **[!UICONTROL Offer acceptance URL in unitary mode]**：插入可設定選件的URL **[!UICONTROL Accepted]**. （如果启用了交互模块，则此块可用）
-* **[!UICONTROL Registration confirmation]**：插入確認訂閱的連結。
-* **[!UICONTROL Registration link]**：插入訂閱連結。 在实例设置中定义此链接。默认内容为：“单击此处以注册”。
-* **[!UICONTROL Registration link (with referrer)]**：插入訂閱連結，可識別訪客和傳送。 在实例设置中定义此链接。
-* **[!UICONTROL Registration page URL]**：插入訂閱URL
-* **[!UICONTROL Style of content emails]** 和 **[!UICONTROL Notification style]**：產生程式碼，使用預先定義的HTML樣式來格式化電子郵件。
-* **[!UICONTROL Unsubscription link]**：插入可取消訂閱所有傳送（封鎖清單）的連結。 默认关联内容为：“您之所以收到这封邮件，是因为您一直与&#x200B;***您的组织名称***&#x200B;或关联公司有联系。要不再接收来自&#x200B;***您的组织名称***&#x200B;的邮件，请单击此处。”
+* **[!UICONTROL Enabled by Adobe Campaign]**：插入“由Adobe Campaign启用”徽标。
+* **[!UICONTROL Formatting function for proper nouns]**：生成 **[!UICONTROL toSmartCase]** Javascript函数，可将每个单词的第一个字母更改为大写。
+* **[!UICONTROL Greetings]**：插入问候语，其中显示收件人的全名，后跟逗号。 示例：“Hello John Doe,”。
+* **[!UICONTROL Insert logo]**：插入在实例设置中定义的徽标。
+* **[!UICONTROL Link to mirror page]**：插入指向 [镜像页面](mirror-page.md). 默认格式为：“如果您无法正确查看此邮件，请单击此处”。
+* **[!UICONTROL Mirror page URL]**：插入镜像页面URL，使投放设计人员能够检查链接。
+* **[!UICONTROL Offer acceptance URL in unitary mode]**：插入允许将选件设置为的URL **[!UICONTROL Accepted]**. （如果启用了交互模块，则此块可用）
+* **[!UICONTROL Registration confirmation]**：插入用于确认订阅的链接。
+* **[!UICONTROL Registration link]**：插入订阅链接。 在实例设置中定义此链接。默认内容为：“单击此处以注册”。
+* **[!UICONTROL Registration link (with referrer)]**：插入订阅链接，用于识别访客和投放。 在实例设置中定义此链接。
+* **[!UICONTROL Registration page URL]**：插入订阅URL
+* **[!UICONTROL Style of content emails]** 和 **[!UICONTROL Notification style]**：生成使用预定义的HTML样式设置电子邮件格式的代码。
+* **[!UICONTROL Unsubscription link]**&#x200B;阻止列表 ：插入一个链接，用于取消订阅所有投放()。 默认关联内容为：“您之所以收到这封邮件，是因为您一直与&#x200B;***您的组织名称***&#x200B;或关联公司有联系。要不再接收来自&#x200B;***您的组织名称***&#x200B;的邮件，请单击此处。”
 
 ## 创建自定义个性化块 {#create-custom-personalization-blocks}
 
-您可以定義要從個人化圖示插入的新個人化內容區塊。
+您可以定义要从个性化图标插入的新个性化内容块。
 
-若要建立個人化區塊，請遵循下列步驟：
+要创建个性化块，请执行以下步骤：
 
-1. 瀏覽至 **[!UICONTROL Resources > Campaign Management > Personalization blocks]** Campaign檔案總管的資料夾。
-1. 在內建區塊清單上方，按一下 **[!UICONTROL New]**.
+1. 浏览至 **[!UICONTROL Resources > Campaign Management > Personalization blocks]** Campaign资源管理器的文件夹。
+1. 在内置块列表上方，单击 **[!UICONTROL New]**.
 
    ![](assets/perso-new-block.png)
 
-1. 填入個人化區塊的設定：
+1. 填写个性化块的设置：
 
    ![](assets/perso-custom-block.png)
 
-   * 輸入區塊的標籤。 此標籤會顯示在個人化欄位插入視窗中。
-   * 選取 **傳遞** 內容型別。
-   * 啟用 **[!UICONTROL Visible in the customization menus]** 可透過個人化欄位插入圖示存取此區塊的選項。
-   * 如有必要，請啟用 **[!UICONTROL The content of the personalization block depends upon the format]** 選項，為HTML和文字電子郵件定義兩個不同的區塊。
-   * 輸入內容(HTML、文字、JavaScript等) 個人化區塊的，然後按一下 **[!UICONTROL Save]**.
+   * 输入块的标签。 此标签显示在个性化字段插入窗口中。
+   * 选择 **投放** 内容类型。
+   * 启用 **[!UICONTROL Visible in the customization menus]** 选项，用于通过个性化字段插入图标访问此块。
+   * 如有必要，请启用 **[!UICONTROL The content of the personalization block depends upon the format]** 选项，为HTML和文本电子邮件定义两个不同的块。
+   * 输入内容(HTML、文本、JavaScript等) 个化块的每个页面上，然后单击 **[!UICONTROL Save]**.
 
-儲存後，新的個人化區塊便可在傳遞編輯器中使用。
+保存后，新的个性化块即可在投放编辑器中使用。
 
-## 教學課程影片 {#personalization-blocks-video}
+## 教程视频 {#personalization-blocks-video}
 
-在下列影片中瞭解如何建立動態內容區塊，以及如何使用動態內容區塊來個人化您的電子郵件傳送內容。
+请在以下视频中了解如何创建动态内容块以及如何使用动态内容块将电子邮件投放内容个性化。
 
 >[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)

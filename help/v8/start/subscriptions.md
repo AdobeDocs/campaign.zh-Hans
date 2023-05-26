@@ -1,5 +1,5 @@
 ---
-title: 在Campaign中管理訂閱和取消訂閱
+title: 在Campaign中管理订阅和退订
 description: 了解如何在 Campaign v8 中管理订阅和退订。
 feature: Subscriptions
 role: User
@@ -12,71 +12,71 @@ ht-degree: 11%
 
 ---
 
-# 管理訂閱和取消訂閱{#optin-optout}
+# 管理订阅和退订{#optin-optout}
 
-使用Adobe Campaign建立及監控您的資訊服務（例如電子報），並管理這些服務的訂閱/取消訂閱。 您可以同時定義數個服務，例如：特定產品類別、網站主題或區域的專業電子報、各種警報訊息的訂閱和即時通知。 請參閱管理訂閱。
+使用Adobe Campaign创建和监控新闻稿等信息服务，并管理这些服务的订阅/退订。 可以并行定义多种服务，例如：特定产品类别、网站主题或区域的专业新闻稿、各种类型警报消息的订阅和实时通知。 请参阅管理订阅。
 
-![](../assets/do-not-localize/book.png) 瞭解如何建立資訊服務、傳送電子報及管理加入和退出 [Campaign Classic v7檔案](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html){target="_blank"}
+![](../assets/do-not-localize/book.png) 了解如何在中创建信息服务、发送新闻稿和管理选择加入和选择退出 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html){target="_blank"}
 
-若要訂閱（選擇加入）服務的設定檔，可用選項包括：
+要订阅（选择加入）用户档案服务，可用选项包括：
 
-* 手動將服務新增至收件者設定檔：若要這麼做，請從 **[!UICONTROL Subscriptions]** 在其設定檔的標籤中，按一下 **[!UICONTROL Add]** 並選取相關的資訊服務。
+* 手动将服务添加到收件人配置文件：要实现此目的，请从 **[!UICONTROL Subscriptions]** 选项卡上，单击 **[!UICONTROL Add]** 并选择相关的信息服务。
 
    ![](assets/subscribe-to-a-service.png)
 
    ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html#deliveries-tab)以了解详情{target="_blank"}
 
-* 自動為一組收件者訂閱服務。 收件者清單可能來自篩選操作、群組、資料夾、匯入或直接手動選擇。 若要訂閱這些收件者，請選取設定檔，然後按一下滑鼠右鍵。 选择 **[!UICONTROL Actions > Subscribe selection to a service...]**。
+* 自动为一组收件人订阅该服务。 收件人列表可能来自筛选操作、组、文件夹、导入或直接手动选择。 要订阅这些收件人，请选择用户档案并右键单击。 选择 **[!UICONTROL Actions > Subscribe selection to a service...]**。
 
    ![](assets/subscribe-selection.png)
 
-   選取相關的服務，然後啟動作業。
+   选择相关的服务，然后启动操作。
 
    ![](assets/subscribe-confirm.png)
 
    ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html#deliveries-tab)以了解详情{target="_blank"}
 
 
-* 匯入收件者並自動訂閱資訊服務。 要執行此操作，請選取匯入精靈最後一步中涉及的服務。
+* 导入收件人并自动为其订阅信息服务。 要执行此操作，请选择导入向导的最后一步中涉及的服务。
 
    ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs.html#step-5---additional-step-when-importing-recipients)以了解详情{target="_blank"}
 
-* 使用網路表單，讓收件者可以訂閱服務。
+* 使用Web窗体，以便收件人可以订阅服务。
 
    ![](assets/opt-in-webapp.png)
 
-   Campaign隨附預設的網頁表單以管理選擇加入。 您可以加以個人化，並對應設定檔資料。
+   Campaign附带一个默认Web表单以管理选择加入。 您可以对其进行个性化并映射配置文件数据。
 
    ![](assets/web-app.png)
 
    ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html#create-a-subscription--form-with-double-opt-in)以了解详情{target="_blank"}
 
 
-* 建立目標定位工作流程並使用 **[!UICONTROL Subscription service]** 活動。
+* 创建定位工作流并使用 **[!UICONTROL Subscription service]** 活动。
 
    ![](assets/wf-subscription.png)
 
    请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html)以了解详情。
 
-若要取消訂閱（選擇退出）服務的設定檔，可用選項包括：
+要取消订阅（选择退出）服务的配置文件，可用选项包括：
 
-**手動取消訂閱**
+**手动退订**
 
-* 個人化的取消訂閱連結或網頁表單
-* 手動刪除資訊服務
-* 從特定訂閱服務手動刪除收件者
+* 个性化退订链接或Web窗体
+* 手动删除信息服务
+* 从特定订阅服务中手动删除收件人
 
-**自動取消訂閱**
+**自动退订**
 
-* 指定資訊服務的期間限制：當有效期間過期時，收件者會自動取消訂閱。 此期間在服務屬性的Edit索引標籤中指定。 以天為單位表示。
-* 設定母體的取消訂閱工作流程。
+* 指定信息服务的持续时间限制：当有效期到期时，将自动取消订阅收件人。 此时间段在服务属性的“编辑”选项卡中指定。 以天为单位表示。
+* 为群体设置退订工作流。
 
 ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html#unsubscribing-a-recipient-from-a-service)以了解详情{target="_blank"}
 
 
 >[!CAUTION]
 >
->在的內容中 [企業(FFDA)部署](../architecture/enterprise-deployment.md)，訂閱和取消訂閱為 **非同步** 程式。 每小時都會處理選擇加入和選擇退出請求。 [了解详情](../architecture/new-apis.md#sub-apis)
+>在上下文中 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，订阅和退订为 **异步** 流程。 选择启用和选择禁用请求每小时处理一次。 [了解详情](../architecture/new-apis.md#sub-apis)
 
 <!--
 You can also enable your delivery recipients to forward messages to a friend. To do this, insert the relevant links into your delivery. You may then track this sharing process as well as the number of visits to the concerned pages. 

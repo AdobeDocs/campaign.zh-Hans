@@ -1,6 +1,6 @@
 ---
-title: Campaign資料庫對應
-description: Campaign資料庫對應
+title: Campaign数据库映射
+description: Campaign数据库映射
 role: Developer
 level: Intermediate, Experienced
 exl-id: a804d164-58bf-4b15-a48e-8cf75d793668
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 数据库映射{#database-mapping}
 
-範例結構描述的SQL對應提供下列XML檔案：
+示例架构的SQL映射提供了以下XML文档：
 
 ```
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
@@ -36,25 +36,25 @@ ht-degree: 0%
 
 ## 说明 {#description}
 
-結構描述的根元素已不存在 **`<srcschema>`**，但 **`<schema>`**.
+架构的根元素不再存在 **`<srcschema>`**，但 **`<schema>`**.
 
-這會將我們帶到另一種型別的檔案，它會自動從來源結構描述產生，簡稱為結構描述。 Adobe Campaign應用程式將使用此結構描述。
+这会将我们转到另一种类型的文档，它自动从源架构生成，简称为架构。 Adobe Campaign应用程序将使用此架构。
 
-SQL名稱會根據元素名稱和型別自動決定。
+SQL名称是根据元素名称和类型自动确定的。
 
-SQL命名規則如下：
+SQL命名规则如下：
 
-* 表格：綱要名稱空間和名稱的串連
+* 表：架构命名空间和名称的连接
 
-   在我們的範例中，表格的名稱是透過 **sqltable** 屬性：
+   在我们的示例中，表的名称是通过中的架构的主元素输入的 **sqltable** 属性：
 
    ```
    <element name="recipient" sqltable="CusRecipient">
    ```
 
-* 欄位：前面有根據型別定義之前置詞的元素名稱（&#39;i&#39;代表整數，&#39;d&#39;代表雙精度浮點數，&#39;s&#39;代表字串，&#39;ts&#39;代表日期等）
+* 字段：前面有根据类型定义的前缀的元素名称（例如，“i”表示整数，“d”表示双精度，“s”表示字符串，“ts”表示日期等）
 
-   欄位名稱是透過 **sqlname** 每個型別化的屬性 **`<attribute>`** 和 **`<element>`**：
+   字段名称是通过 **sqlname** 每种类型的属性 **`<attribute>`** 和 **`<element>`**：
 
    ```
    <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
@@ -62,9 +62,9 @@ SQL命名規則如下：
 
 >[!NOTE]
 >
->可以從來源結構描述多載SQL名稱。 若要這麼做，請在相關元素上填入「sqltable」或「sqlname」屬性。
+>可以从源架构中重载SQL名称。 为此，请在相关元素中填充“sqltable”或“sqlname”属性。
 
-用來建立從擴充型綱要產生之表格的SQL命令檔如下：
+用于创建从扩展模式生成的表的SQL脚本如下：
 
 ```
 CREATE TABLE CusRecipient(
@@ -74,40 +74,40 @@ CREATE TABLE CusRecipient(
   tsCreated TIMESTAMP Default NULL);
 ```
 
-SQL欄位限制如下：
+SQL字段约束如下：
 
-* 數值和日期欄位中沒有null值，
-* 數值欄位會初始化為0。
+* 数字和日期字段中没有空值，
+* 数字字段已初始化为0。
 
-## XML欄位 {#xml-fields}
+## XML字段 {#xml-fields}
 
-依預設，任何鍵入的 **`<attribute>`** 和 **`<element>`** 元素對應至資料結構描述表格的SQL欄位。 不過，您可以以XML格式來參照此欄位，而非SQL，這表示資料會儲存在包含所有XML欄位值的表格的備忘欄位(「mData」)中。 這些資料的儲存是觀察結構描述結構的XML檔案。
+默认情况下，任何键入的 **`<attribute>`** 和 **`<element>`** 元素被映射到数据架构表的SQL字段。 但是，您可以用XML而不是SQL引用此字段，这意味着数据存储在包含所有XML字段值的表的备注字段(“mData”)中。 这些数据的存储是观察架构结构的XML文档。
 
-若要以XML填入欄位，您必須新增 **xml** 有關元素的值為「true」的屬性。
+要在XML中填充字段，您必须添加 **xml** 有关元素的值为“true”的属性。
 
-**範例**：以下是兩個XML欄位使用範例。
+**示例**：以下是两个XML字段用法示例。
 
-* 多行註解欄位：
+* 多行评论字段：
 
    ```
    <element name="comment" xml="true" type="memo" label="Comment"/>
    ```
 
-* HTML格式的資料說明：
+* HTML格式的数据描述：
 
    ```
    <element name="description" xml="true" type="html" label="Description"/>
    ```
 
-   「html」型別可讓您將HTML內容儲存在CDATA標籤中，並在Adobe Campaign使用者端介面中顯示特殊的HTML編輯檢查。
+   通过“html”类型，您可以将HTML内容存储在CDATA标签中，并在Adobe Campaign客户端界面中显示特殊的HTML编辑检查。
 
-使用XML欄位可讓您新增欄位，而不需要修改資料庫的實體結構。 另一個優點是，您使用的資源較少（分配給SQL欄位的大小、每個表格的欄位數限制等）。
+通过使用XML字段，您可以添加字段，而无需修改数据库的物理结构。 另一个优点是，您使用的资源较少（分配给SQL字段的大小、每个表的字段数限制等）。
 
 ## 密钥管理 {#management-of-keys}
 
-表格必須至少有一個索引鍵用於識別表格中的記錄。
+表必须具有至少一个用于标识表中记录的键。
 
-從資料結構描述的主要元素中宣告索引鍵。
+从数据架构的主元素中声明了一个键。
 
 ```
 <key name="name_of_key">
@@ -117,14 +117,14 @@ SQL欄位限制如下：
 </key>
 ```
 
-金鑰遵循下列規則：
+键值遵循以下规则：
 
-* 索引鍵可參考表格中的一或多個欄位。
-* 當索引鍵是結構描述中第一個要填入的索引鍵，或如果索引鍵包含 **內部** 值為「true」的屬性。
+* 键可以引用表中的一个或多个字段。
+* 如果某个键是架构中第一个要填充的键，或者如果它包含 **内部** 值为“true”的属性。
 
 **示例**:
 
-* 將金鑰新增至電子郵件地址和城市：
+* 向电子邮件地址和城市添加密钥：
 
    ```
    <srcSchema name="recipient" namespace="cus">
@@ -142,7 +142,7 @@ SQL欄位限制如下：
    </srcSchema>
    ```
 
-   產生的結構描述：
+   生成的架构：
 
    ```
    <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
@@ -160,7 +160,7 @@ SQL欄位限制如下：
    </schema>
    ```
 
-* 在「id」名稱欄位中新增主要或內部索引鍵：
+* 在“id”名称字段中添加主键或内部键：
 
    ```
    <srcSchema name="recipient" namespace="cus">
@@ -179,7 +179,7 @@ SQL欄位限制如下：
    </srcSchema>
    ```
 
-   產生的結構描述：
+   生成的架构：
 
    ```
    <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
@@ -198,13 +198,13 @@ SQL欄位限制如下：
    </schema>
    ```
 
-### 主索引鍵 — 識別碼{#primary-key}
+### 主键 — 标识符{#primary-key}
 
-在的內容中 [企業(FFDA)部署](../architecture/enterprise-deployment.md)，Adobe Campaign表格的主要索引鍵為 **通用唯一ID (UUID)** 由資料庫引擎自動產生。 索引鍵值在整個資料庫中都是唯一的。 索引鍵的內容會在插入記錄時自動產生。
+在上下文中 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，Adobe Campaign表的主键是 **通用唯一ID (UUID)** 由数据库引擎自动生成。 键值在整个数据库中是唯一的。 键的内容在插入记录时自动生成。
 
 **示例**
 
-在來源結構描述中宣告增量金鑰：
+在源架构中声明增量密钥：
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -214,7 +214,7 @@ SQL欄位限制如下：
 </srcSchema>
 ```
 
-產生的結構描述：
+生成的架构：
 
 ```
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
@@ -229,38 +229,38 @@ SQL欄位限制如下：
 </schema>
 ```
 
-除了索引鍵的定義之外，名為「id」的數值欄位已新增到擴充結構描述，以包含自動產生的主要索引鍵。
+除了键的定义之外，还向扩展架构中添加了名为“id”的数字字段，以包含自动生成的主键。
 
 >[!CAUTION]
 >
->主鍵設為0的記錄會在建立表格時自動插入。 此記錄用於避免外部聯結，這些外部聯結對磁碟區表格無效。 依預設，所有外部索引鍵都會以值0初始化，以便在未填入資料專案時，一律可在聯結上傳回結果。
+>创建表时会自动插入主键设置为0的记录。 此记录用于避免外部联接，这对于卷表无效。 默认情况下，所有外键都使用值0进行初始化，以便当数据项未填充时，始终可以在连接上返回结果。
 
-## 連結：表格之間的關係 {#links--relation-between-tables}
+## 链接：表之间的关系 {#links--relation-between-tables}
 
-連結說明一個表格與另一個表格之間的關聯。
+链接描述一个表与另一个表之间的关联。
 
-各種型別的關聯（稱為「基數」）如下：
+各种类型的关联（称为“基数”）如下所示：
 
-* 基數1-1：來源表格的一個執行個體最多可以具有目標表格的一個對應執行個體。
-* 基數1-N：來源表格的一個出現次數可以具有多個目標表格的對應出現次數，但目標表格的一個出現次數最多可以具有來源表格的一個對應出現次數。
-* 基數N-N：來源表格的一個出現次數可以具有多個目標表格的對應出現次數，反之亦然。
+* 基数1-1：源表格的一个存在最多可以具有目标表格的一个对应存在。
+* 基数1-N：源表格的一个存在可以具有多个目标表格的相应存在，但目标表格的一个存在最多可以具有源表格的一个相应存在。
+* 基数N-N：源表格的一个存在可以具有多个目标表格的相应存在，反之亦然。
 
-在介面中，您可以透過圖示輕鬆區分不同型別的關係。
+在界面中，通过图标可以轻松区分不同类型的关系。
 
-對於與Campaign表格/資料庫的聯結關係：
+对于与Campaign表/数据库的连接关系：
 
-* ![](assets/do-not-localize/join_with_campaign11.png) ：基數1-1。 例如，在收件者和目前訂單之間。 收件者一次只能與目前訂單表格的一個執行個體相關。
-* ![](assets/do-not-localize/externaljoin11.png) ：基數1-1、外部聯結。 例如，在收件者與其國家/地區之間。 收件者只能與表格國家/地區的一個執行個體相關。 將不會儲存國家資料表的內容。
-* ![](assets/do-not-localize/join_with_campaign1n.png) ：基數1-N。例如，在收件者和訂閱表格之間。 收件者可與訂閱表格上的數個專案建立關聯。
+* ![](assets/do-not-localize/join_with_campaign11.png) ：基数1-1。 例如，在收件人与当前订单之间。 收件人一次只能与当前订单表的一个实例相关。
+* ![](assets/do-not-localize/externaljoin11.png) ：基数1-1，外部连接。 例如，在收件人与其国家/地区之间。 收件人只能与表国家/地区的一个匹配项相关。 将不会保存国家/地区表的内容。
+* ![](assets/do-not-localize/join_with_campaign1n.png) ：基数1-N。例如，在收件人和订阅表之间。 收件人可以与订阅表中的多个实例相关。
 
-對於使用同盟資料庫存取權的聯結關係：
+对于使用联合数据库访问的联接关系：
 
-* ![](assets/do-not-localize/join_fda_11.png) ：基數1-1
-* ![](assets/do-not-localize/join_fda_1m.png) ：基數1-N
+* ![](assets/do-not-localize/join_fda_11.png) ：基数1-1
+* ![](assets/do-not-localize/join_fda_1m.png) ：基数1-N
 
-![](../assets/do-not-localize/glass.png) 如需FDA表格的詳細資訊，請參閱 [同盟資料存取](../connect/fda.md).
+![](../assets/do-not-localize/glass.png) 有关FDA表的详细信息，请参阅 [联合数据访问](../connect/fda.md).
 
-必須在包含透過主要元素連結之表格外部索引鍵的結構描述中宣告連結：
+必须在包含通过主元素链接的表的外键的架构中声明链接：
 
 ```
 <element name="name_of_link" type="link" target="key_of_destination_schema">
@@ -270,38 +270,38 @@ SQL欄位限制如下：
 </element>
 ```
 
-連結遵循下列規則：
+链接遵循以下规则：
 
-* 連結的定義輸入於 **連結**-type **`<element>`** 具有下列屬性：
+* 链接的定义输入于 **链接**-type **`<element>`** 具有以下属性：
 
-   * **名稱**：來源表格中的連結名稱，
-   * **目標**：目標結構描述的名稱，
-   * **標籤**：連結的標籤，
-   * **revLink** （選用）：來自目標架構的反向連結名稱（預設會自動推斷），
-   * **完整性** （選用）：來源表格出現位置與目標表格出現位置的參照完整性。 可能的值如下：
+   * **name**：源表中链接的名称，
+   * **目标**：目标架构的名称，
+   * **标签**：链接标签，
+   * **revLink** （可选）：目标架构中的反向链接的名称（默认自动推断），
+   * **完整性** （可选）：源表的出现与目标表的出现之间的参照完整性。 可能的值如下：
 
-      * **定義**：如果來源發生次數不再由目標發生次數參考，則可能會刪除該來源發生次數，
-      * **一般**：刪除來源出現位置會初始化指向目標出現位置的連結索引鍵（預設模式），此型別的完整性會初始化所有外來索引鍵，
-      * **own**：刪除來源出現位置會導致目標出現位置刪除，
-      * **owncopy**：與 **own** （若為刪除）或重複發生次數（若為重複），
-      * **中立**：不執行任何動作。
-   * **revIntegrity** （選用）：目標架構的完整性（選用，預設為「一般」）、
-   * **revCardinality** （選用）：值為「single」時，基數會填入1-1型別（預設為1-N）。
-   * **externalJoin** （選用）：強制外部聯結
-   * **revExternalJoin** （選用）：強制反向連結上的外部聯結
+      * **定义**：如果源具体值不再由目标具体值引用，则可以删除该源具体值，
+      * **普通**：删除源具体值将初始化指向目标具体值的链接的键（默认模式），此类型的完整性将初始化所有外键，
+      * **own**：删除源具体值会导致删除目标具体值，
+      * **owncopy**：与 **own** （若为删除）或重复发生次数（若为重复），
+      * **中性**：不执行任何操作。
+   * **revIntegrity** （可选）：目标架构上的完整性（可选，默认为“正常”），
+   * **revCardinality** （可选）：值为“single”时，将使用1-1类型填充基数（默认情况下为1-N）。
+   * **externalJoin** （可选）：强制外部连接
+   * **revExternalJoin** （可选）：强制反向链接上的外部连接
 
 
-* 連結會參照來源表格到目的地表格的一或多個欄位。 構成聯結的欄位( `<join>`  元素)，因為它們預設會使用目標結構描述的內部索引鍵自動推斷。
-* 連結由兩個半連結組成，其中第一個是從來源綱要宣告，第二個是在目標綱要的延伸綱要中自動建立。
-* 連線可以是外部連線，如果 **externalJoin** 加入屬性，其值為「true」（PostgreSQL支援）。
+* 链接从源表向目标表引用一个或多个字段。 构成连接的字段( `<join>`  元素)，因为它们默认使用目标架构的内部键自动推断。
+* 链接由两个半链接组成，其中第一个是从源架构中声明的，第二个是在目标架构的扩展架构中自动创建的。
+* 连接可以是外部连接，如果 **externalJoin** 添加了属性，其值为“true”（PostgreSQL支持）。
 
 >[!NOTE]
 >
->連結是在結構描述結尾宣告的元素。
+>链接是在架构末尾声明的元素。
 
 ### 示例 1 {#example-1}
 
-與「cus：company」結構描述表格相關的1-N：
+与“cus：company”模式表相关的1-N关系：
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -312,7 +312,7 @@ SQL欄位限制如下：
 </srcSchema>
 ```
 
-產生的結構描述：
+生成的架构：
 
 ```
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
@@ -326,11 +326,11 @@ SQL欄位限制如下：
 </schema>
 ```
 
-連結定義由組成聯結的欄位補充，即在目的地結構描述中主索引鍵及其XPath (&quot;@id&quot;)，而在結構描述中外索引鍵及其XPath (&quot;@company-id&quot;)。
+链接定义由组成连接的字段补充，即主键在目的架构中带有其XPath (“@id”)，外键在架构中带有其XPath (“@company-id”)。
 
-外部索引鍵會自動新增至與目的地表格中相關欄位使用相同特性的元素中，並遵循下列命名慣例：目標結構描述名稱后接相關欄位名稱（範例中為「company-id」）。
+外键会自动添加到与目标表中的关联字段使用相同特征的元素中，命名规则如下：目标架构名称后跟关联字段名称（在本例中为“company-id”）。
 
-目標(「cus：company」)的延伸結構描述：
+目标(“cus：company”)的扩展架构：
 
 ```
 <schema mappingType="sql" name="company" namespace="cus" xtkschema="xtk:schema">  
@@ -348,19 +348,19 @@ SQL欄位限制如下：
 </schema>
 ```
 
-已新增指向「cus：recipient」表格的反向連結，其中包含下列引數：
+添加了指向“cus：recipient”表的反向链接，以及以下参数：
 
-* **名稱**：自動從來源結構描述名稱推算（可在來源結構描述上的連結定義中使用「revLink」屬性強制）
-* **revLink**：反向連結的名稱
-* **目標**：連結綱要的索引鍵（「cus：recipient」綱要）
-* **未繫結**：連結會宣告為1-N基數的收集元素（預設為）
-* **完整性**：預設為「define」（可在來源結構描述上的連結定義中使用「revIntegrity」屬性強制執行）。
+* **name**：自动从源架构的名称推断（可以在源架构的链接定义中使用“revLink”属性强制）
+* **revLink**：反向链接的名称
+* **目标**：链接架构的键（“cus：recipient”架构）
+* **未绑定**：将链接声明为1-N基数的收集元素（默认情况下）
+* **完整性**：默认情况下，“define”（可以在源架构上的链接定义中使用“revIntegrity”属性强制）。
 
-請注意 `autouuid="true"`引數適用於的上下文 [企業(FFDA)部署](../architecture/enterprise-deployment.md) 僅限。
+请注意 `autouuid="true"`参数适用于的上下文 [企业(FFDA)部署](../architecture/enterprise-deployment.md) 仅此而已。
 
 ### 示例 2 {#example-2}
 
-在此範例中，我們將宣告指向「nms：address」結構描述表格的連結。 此聯結是外部聯結，並明確填入收件者的電子郵件地址和連結表格(「nms：address」)的「@address」欄位。
+在本例中，我们将声明指向“nms：address”模式表的链接。 连接是外部连接，使用收件人的电子邮件地址和链接表的“@address”字段(“nms：address”)显式填充。
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -375,7 +375,7 @@ SQL欄位限制如下：
 
 ### 示例 3 {#example-3}
 
-與「cus：extension」結構描述表格的1-1關係：
+与“cus：extension”模式表的1-1关系：
 
 ```
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
@@ -383,17 +383,17 @@ SQL欄位限制如下：
 
 ### 示例 4 {#example-4}
 
-連結至資料夾（「xtk：folder」架構）：
+链接到文件夹（“xtk：folder”架构）：
 
 ```
 <element default="DefaultFolder('nmsFolder')" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="own" revLabel="Recipients" target="xtk:folder" type="link"/>
 ```
 
-預設值會傳回在「DefaultFolder(&#39;nmsFolder&#39;)」函式中輸入的第一個合格引數型別檔案的識別碼。
+默认值会返回在“DefaultFolder(&#39;nmsFolder&#39;)”函数中输入的第一个符合条件的参数类型文件的标识符。
 
 ### 示例 5 {#example-5}
 
-在此範例中，我們想要在使用以下專案的連結（「company」到「cus：company」方案）上建立索引鍵： **xlink** （「電子郵件」）表格的屬性和欄位：
+在本例中，我们希望使用以下项的链接（“company”到“cus：company”模式）上创建键： **xlink** （“电子邮件”）表的属性和字段：
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -409,7 +409,7 @@ SQL欄位限制如下：
 </srcSchema>
 ```
 
-產生的結構描述：
+生成的架构：
 
 ```
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
@@ -428,4 +428,4 @@ SQL欄位限制如下：
 </schema>
 ```
 
-「companyEmail」名稱金鑰的定義已擴充為「company」連結的外部金鑰。
+使用“company”链接的外键扩展了“companyEmail”名称键的定义。

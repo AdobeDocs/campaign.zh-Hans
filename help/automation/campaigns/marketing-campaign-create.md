@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 建立行銷活動
-description: 瞭解如何建立和執行行銷活動
+title: 创建营销活动
+description: 了解如何创建和执行营销活动
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
 source-git-commit: ad286059a9f4b63d7de4fa5130760f36d0976431
@@ -11,199 +11,199 @@ ht-degree: 4%
 
 ---
 
-# 建立方案和行銷活動{#create-programs-and-campaigns}
+# 创建项目和活动{#create-programs-and-campaigns}
 
-Campaign協調流程元件位於 **[!UICONTROL Campaigns]** 標籤：您可在此處檢視行銷方案和行銷活動及其相關元素的概觀。
+Campaign编排组件位于 **[!UICONTROL Campaigns]** 选项卡：您可以在此处查看营销项目和营销活动及其关联元素的概述。
 
-行銷方案是由行銷活動所組成，而行銷活動是由傳遞、資源等所組成。 有關傳遞、預算、稽核者和連結檔案的所有資訊都會分組在行銷活動中。
+营销计划由营销活动组成，营销活动由投放、资源等组成。 有关投放、预算、审阅者和链接文档的所有信息均分组在营销活动中。
 
 ![](assets/campaigns-create-from-home.png)
 
-![](assets/do-not-localize/how-to-video.png) [在影片中探索方案和行銷活動](#video)
+![](assets/do-not-localize/how-to-video.png) [在视频中了解项目和营销活动](#video)
 
-## 使用方案和計畫{#work-with-plan-and-program}
+## 使用方案和计划{#work-with-plan-and-program}
 
-### 建立計畫和方案階層 {#create-plan-and-program}
+### 创建计划和方案层次结构 {#create-plan-and-program}
 
-每個行銷活動都屬於屬於屬於計畫的方案。 所有計畫、方案和行銷活動都可透過 **[!UICONTROL Campaign calendar]** 功能表 **行銷活動** 標籤。
+每个营销策划都属于属于属于一个计划的项目。 所有计划、项目和营销策划均可通过以下网站获取： **[!UICONTROL Campaign calendar]** 中的菜单 **营销活动** 选项卡。
 
-開始建立行銷活動和傳遞之前，請為行銷計畫和方案設定資料夾階層。
+在开始构建营销活动和投放之前，请为营销计划和项目配置文件夹层次结构。
 
-1. 按一下 **總管** 圖示加以檢視。
-1. 以滑鼠右鍵按一下您要建立計畫的資料夾。
-1. 選取 **新增資料夾> Campaign Management >計畫**.
+1. 单击 **资源管理器** 图标。
+1. 右键单击要创建计划的文件夹。
+1. 选择 **添加新文件夹> Campaign Management >计划**.
 
    ![](assets/create-new-plan-folder.png)
 
-1. 重新命名計畫。
-1. 以滑鼠右鍵按一下新建立的計畫並選取 **屬性……**.
-1. 在 **一般** 標籤，修改 **內部名稱** 以避免在套件匯出期間出現重複專案。
+1. 重命名计划。
+1. 右键单击新创建的计划并选择 **属性……**.
+1. 在 **常规** 选项卡，修改 **内部名称** 以避免在资源包导出期间出现重复项。
 
    ![](assets/plan-properties.png)
 
 1. 单击&#x200B;**保存**。
-1. 以滑鼠右鍵按一下新建立的計畫並選取 **建立新的&#39;Program&#39;資料夾**.
+1. 右键单击新创建的计划并选择 **创建新的“Program”文件夹**.
 
    ![](assets/program-folder.png)
 
-1. 重複上述步驟，重新命名新的程式資料夾及其內部名稱。
+1. 重复上述步骤以重命名新的程序文件夹及其内部名称。
 
 
-### 設定程式 {#edit-a-program}
+### 配置程序 {#edit-a-program}
 
-編輯程式時，請使用下述標籤來瀏覽和設定程式。
+编辑程序时，请使用下面描述的选项卡浏览和配置程序。
 
-* 此 **排程** 索引標籤會根據您在日曆標題中按一下哪個索引標籤，顯示某月、周或日的計畫行事曆。 您可以從此頁面建立行銷活動、方案或任務。 [了解详情](#campaign-calendar)
+* 此 **计划** 选项卡显示某月、周或日的项目日历，具体取决于您在日历标题中单击的选项卡。 您可以从此页面创建营销策划、项目或任务。 [了解详情](#campaign-calendar)
 
-* 此 **編輯** 索引標籤可讓您個人化方案：名稱、開始和結束日期、預算、連結的檔案等。
+* 此 **编辑** 选项卡允许您个性化项目：名称、开始日期和结束日期、预算、链接文档等。
 
    ![](assets/new-program-edit-tab.png)
 
-## 使用行銷活動{#work-with-campaigns}
+## 使用营销活动{#work-with-campaigns}
 
 ### 创建营销策划 {#create-a-campaign}
 
-您可以透過行銷活動清單建立行銷活動。 若要顯示此檢視，請選取 **[!UICONTROL Campaigns]** 功能表 **[!UICONTROL Campaigns]** 儀表板，然後按一下 **[!UICONTROL Create]**.
+您可以通过营销活动列表创建营销活动。 要显示此视图，请选择 **[!UICONTROL Campaigns]** 中的菜单 **[!UICONTROL Campaigns]** 功能板，然后单击 **[!UICONTROL Create]**.
 
-此 **[!UICONTROL Program]** 欄位可讓您選取要附加行銷活動的方案。 此信息是强制性的。
+此 **[!UICONTROL Program]** 字段可让您选择营销策划将附加到的项目。 此信息是强制性的。
 
 ![](assets/new-campaign-settings.png)
 
-行銷活動也可以透過行銷活動或方案行事曆來建立。 [了解详情](#campaign-calendar)
+营销策划也可以通过营销策划或项目日历创建。 [了解详情](#campaign-calendar)
 
-在行銷活動建立視窗中，選取行銷活動範本並新增行銷活動的名稱和說明。 您也可以指定行銷活動的開始和結束日期。
+在营销策划创建窗口中，选择营销策划模板，然后添加营销策划的名称和描述。 您还可以指定营销活动的开始和结束日期。
 
-按一下 **[!UICONTROL OK]** 以建立行銷活動。 它會新增至方案排程和行銷活動清單。
+单击 **[!UICONTROL OK]** 以创建营销活动。 它会被添加到项目计划和营销策划列表中。
 
-然後，您可以編輯剛剛建立的行銷活動並定義其引數。 若要開啟並設定此行銷活動，您可以：
+然后，您可以编辑刚刚创建的营销活动并定义其参数。 要打开并配置此营销活动，您可以：
 
-1. 瀏覽行銷活動行事曆，並選取您要顯示的行銷活動，然後按一下 **[!UICONTROL Open]** 連結。
-1. 瀏覽 **[!UICONTROL Schedule]** 索引標籤中，選取行銷活動並加以開啟。
-1. 瀏覽行銷活動清單，然後按一下要編輯的行銷活動名稱。
+1. 浏览促销活动日历并选择要显示的促销活动，然后单击 **[!UICONTROL Open]** 链接。
+1. 浏览 **[!UICONTROL Schedule]** 选项卡上，选择营销策划并将其打开。
+1. 浏览营销活动列表，然后单击要编辑的营销活动名称。
 
-所有這些動作都會將您帶往行銷活動控制面板。
+所有这些操作都会将您带到活动仪表板。
 
 ![](assets/campaigns-dashboard-approve.png)
 
-存取下列章節，瞭解如何設定行銷活動：
+访问以下部分，了解如何配置营销活动：
 
 * [添加投放](marketing-campaign-deliveries.md)
-* [管理資產和檔案](marketing-campaign-assets.md)
-* [建立目標對象](marketing-campaign-target.md)
+* [管理资源和文档](marketing-campaign-assets.md)
+* [构建目标受众](marketing-campaign-target.md)
 * [设置审批流程](marketing-campaign-approval.md)
-* [管理庫存和預算](providers--stocks-and-budgets.md)
+* [管理库存和预算](providers--stocks-and-budgets.md)
 
 
-### 編輯行銷活動設定 {#campaign-settings}
+### 编辑营销活动设置 {#campaign-settings}
 
-行銷活動是透過行銷活動範本建立。 您可以設定已選取某些選項且已儲存其他設定的可重複使用範本。
+营销活动是通过营销活动模板创建的。 您可以配置已选择某些选项并已保存其他设置的可重用模板。
 
-對於每個行銷活動，都可使用下列功能：
+对于每个活动，都提供了以下功能：
 
-* 參考檔案和資源：您可以將檔案與行銷活動建立關聯（簡介、報告、影像等）。 支援所有檔案格式。 [了解详情](marketing-campaign-deliveries.md#manage-associated-documents)。
-* 定義成本：對於每個促銷活動，Adobe Campaign可讓您定義建立行銷活動時所使用的成本輸入與成本計算結構。 例如：印刷成本、使用外部機構、房間租賃等。 [了解详情](providers--stocks-and-budgets.md#defining-cost-categories)。
-* 定義目標：您可以定義行銷活動的可量化目標，例如訂閱者人數、業務量等。 此資訊稍後會用於行銷活動報表中。
-* 管理種子地址和控制組。 [了解详情](marketing-campaign-deliveries.md#defining-a-control-group)。
-* 管理核准：您可以選取要核准的處理方式，並視需要選取稽核操作員或操作員群組。 [了解详情](marketing-campaign-approval.md#checking-and-approving-deliveries)。
+* 参考文档和资源：您可以将文档与营销活动关联（简介、报告、图像等）。 支持所有文档格式。 [了解详情](marketing-campaign-deliveries.md#manage-associated-documents)。
+* 定义成本：对于每个促销活动，Adobe Campaign允许您定义成本录入和成本计算结构，以便在创建市场营销活动时使用。 例如：印刷费、使用外部机构、房租等。 [了解详情](providers--stocks-and-budgets.md#defining-cost-categories)。
+* 定义目标：您可以定义促销活动的可量化目标，例如订户数、业务量等。 此信息稍后会在营销活动报表中使用。
+* 管理种子地址和对照组。 [了解详情](marketing-campaign-deliveries.md#defining-a-control-group)。
+* 管理审批：您可以选择要批准的处理，并根据需要选择审核操作员或操作员组。 [了解详情](marketing-campaign-approval.md#checking-and-approving-deliveries)。
 
 >[!NOTE]
 >
->若要存取和更新行銷活動設定，請瀏覽至 **[!UICONTROL Advanced campaign parameters...]** 中的連結 **[!UICONTROL Edit]** 標籤。
+>要访问和更新促销活动设置，请浏览至 **[!UICONTROL Advanced campaign parameters...]** 中的链接 **[!UICONTROL Edit]** 选项卡。
 
-### 監視行銷活動 {#monitor-a-campaign}
+### 监测活动 {#monitor-a-campaign}
 
-針對每個行銷活動，工作、資源和傳遞都會集中在控制面板中。 此介面可讓您管理和協調行銷動作。
+对于每个活动，作业、资源和投放都集中在仪表板中。 利用此界面，您可以管理和编排营销操作。
 
-透過Adobe Campaign，您可以設定合作流程，以建立和核准行銷活動的各個步驟：核准預算、目標、內容等。 此協調流程的詳細資訊請參閱 [本節](marketing-campaign-approval.md).
+借助Adobe Campaign，您可以设置协作流程，以创建和批准营销活动的各个步骤：批准预算、目标、内容等。 有关该编排的详情，请参阅 [本节](marketing-campaign-approval.md).
 
 ![](assets/campaigns-dashboard-approval-tab.png)
 
 >[!NOTE]
 >
->行銷活動中可用的元件取決於其範本。 行銷活動範本設定顯示於 [本節](marketing-campaign-templates.md#campaign-templates).
+>营销策划中可用的组件取决于其模板。 Campaign模板配置将显示在 [本节](marketing-campaign-templates.md#campaign-templates).
 
-行銷活動達成後，請使用 **[!UICONTROL Reports]** 存取行銷活動報告的連結。
+营销活动完成后，请使用 **[!UICONTROL Reports]** 用于访问营销活动报告的链接。
 
 ![](assets/campaigns-reports-dashboard.png)
 
-## 行銷活動行事曆 {#campaign-calendar}
+## 营销活动日历 {#campaign-calendar}
 
-行銷活動行事曆顯示所有方案、計畫、行銷活動和傳遞。
+营销活动日历显示所有项目、计划、营销活动和投放。
 
-若要編輯計畫、方案、行銷活動或傳遞，請在行事曆中瀏覽至其名稱，然後使用 **[!UICONTROL Open]** 連結。 然後會顯示在新標籤中，如下所示：
+要编辑计划、项目、营销策划或投放，请在日历中浏览至其名称，然后使用 **[!UICONTROL Open]** 链接。 然后，它将显示在新选项卡中，如下所示：
 
 ![](assets/campaign-calendar.png)
 
-您可以篩選行銷活動行事曆中顯示的資訊。 若要這麼做，請按一下 **[!UICONTROL Filter]** 連結並選取篩選條件。
+您可以筛选营销活动日历中显示的信息。 要执行此操作，请单击 **[!UICONTROL Filter]** 链接并选择筛选条件。
 
 ![](assets/campaign_planning_filter.png)
 
 >[!NOTE]
 >
->依日期篩選時，會顯示開始日期晚於指定日期及/或結束日期早於指定日期的所有行銷活動。 日期是使用每個欄位右側的行事曆來選取。
+>在按日期过滤时，将显示开始日期晚于指定日期和/或结束日期早于指定日期的所有营销活动。 使用每个字段右侧的日历选择日期。
 
-您也可以使用 **[!UICONTROL Search]** 欄位以篩選顯示的專案。
+您还可以使用 **[!UICONTROL Search]** 用于筛选显示项的字段。
 
-連結至每個專案的圖示可讓您檢視其狀態：已完成、進行中、正在編輯等。
+链接到每个项目的图标允许您查看其状态：已完成、进行中、正在编辑等。
 
-若要篩選要顯示的行銷活動，請按一下 **[!UICONTROL Filter]** 連結並選取要顯示的行銷活動狀態。
+要筛选要显示的促销活动，请单击 **[!UICONTROL Filter]** 链接并选择要显示的营销活动的状态。
 
 ![](assets/calendar-filter-options.png)
 
-瀏覽行事曆時，您也可以建立方案或行銷活動。
+在浏览日历时，您还可以创建项目或营销策划。
 
 ![](assets/campaign-create-from-calendar.png)
 
-當您透過建立行銷活動時 **[!UICONTROL Schedule]** 標籤中，此行銷活動會自動連結至相關方案。 此 **[!UICONTROL Program]** 在此情況下，欄位會隱藏。
+当您通过创建营销策划时 **[!UICONTROL Schedule]** 选项卡中，营销策划会自动链接到相关项目。 此 **[!UICONTROL Program]** 字段在此示例中处于隐藏状态。
 
 
-## 使用網頁介面 {#use-the-web-interface-}
+## 使用Web界面 {#use-the-web-interface-}
 
-您可以透過網際網路瀏覽器存取Adobe Campaign主控台畫面，以檢視所有行銷活動和傳送，以及資料庫中設定檔的報告和資訊。 此存取權不會啟用記錄建立。 根據操作員的許可權，您可以檢視和/或處理資料庫中的資料。 例如，您可以核准行銷活動內容和目標定位、重新啟動或停止傳送等。
+您可以通过Internet浏览器访问Adobe Campaign控制台屏幕，以查看所有营销活动和投放以及数据库中用户档案的报告和信息。 此访问不会启用记录创建。 根据操作员的权限，您可以查看和/或处理数据库中的数据。 例如，您可以批准活动内容和定位、重新启动或停止投放等。
 
-1. 照常透過https://登入`<your instance>:<port>/view/home`.
-1. 使用選單存取概觀。
+1. 照常通过https://登录`<your instance>:<port>/view/home`.
+1. 使用菜单访问概述。
 
    ![](assets/web-access-campaigns.png)
 
-除了在行銷活動中導覽及檢視行銷活動外，您還可以執行下列型別的工作：
+除了在营销策划之间导航和查看这些营销策划之外，您还可以执行以下类型的任务：
 
-* 監視執行個體上的活動
-* 參與驗證程式，例如，核准或拒絕傳遞內容
-* 執行其他快速動作，例如，暫停工作流程
-* 存取所有報告功能
-* 參與論壇討論
+* 监测实例上的活动
+* 参与验证过程，例如，批准或拒绝投放内容
+* 执行其他快速操作，例如，暂停工作流
+* 访问所有报告功能
+* 参加论坛讨论
 
-此表格總結列出您可以從瀏覽器對行銷活動採取的動作：
+此表汇总了您可以从浏览器对营销活动执行的操作：
 
 | 页面  | 操作 |
 | --- | --- |
-| 行銷活動、傳遞、優惠方案等清單。 | 刪除清單專案 |
-| 营销活动 | 取消行銷活動 |
-| 投放 | 核准傳遞內容和目標<br/>提交傳遞內容<br/>確認傳遞<br/>暫停和停止傳遞 |
-| Web 应用程序 | 建立網頁應用程式<br/>編輯應用程式內容和屬性<br/>將應用程式內容另存為範本<br/>發佈應用程式 |
-| 优惠 | 核准優惠方案內容和資格<br/>停用線上優惠方案 |
-| 任务 | 完成任務<br/>取消任務 |
-| 营销资源 | 核准資源<br/>鎖定及解除鎖定資源 |
-| Campaign 包 | 提交套件以供核准<br/>核准或拒絕套件<br/>取消封裝 |
-| Campaign 订单 | 建立訂單<br/>接受或拒絕訂單 |
-| 库存 | 刪除庫存行 |
-| 優惠方案模擬 | 開始和停止模擬 |
-| 目標定位工作流程 | 開始、暫停和停止工作流程 |
-| 报告 | 將目前的資料儲存在報告歷史記錄中 |
-| 论坛 | 新增討論<br/>回覆討論中的訊息<br/>關注討論並取消訂閱 |
+| 营销活动、投放、优惠等列表。 | 删除列表项 |
+| 营销活动 | 取消营销活动 |
+| 投放 | 批准投放内容和目标<br/>提交投放内容<br/>确认投放<br/>暂停和停止投放 |
+| Web 应用程序 | 创建Web应用程序<br/>编辑应用程序内容和属性<br/>将应用程序内容另存为模板<br/>发布应用程序 |
+| 优惠 | 批准优惠内容和资格<br/>禁用联机选件 |
+| 任务 | 完成任务<br/>取消任务 |
+| 营销资源 | 批准资源<br/>锁定和解锁资源 |
+| Campaign 包 | 提交程序包以供审批<br/>批准或拒绝程序包<br/>取消包 |
+| Campaign 订单 | 创建订单<br/>接受或拒绝订单 |
+| 库存 | 删除库存行 |
+| 优惠模拟 | 启动和停止模拟 |
+| 定位工作流 | 启动、暂停和停止工作流 |
+| 报告 | 在报告历史记录中保存当前数据 |
+| 论坛 | 添加讨论<br/>在讨论中回复消息<br/>关注讨论并取消订阅 |
 
 ### 管理批准
 
-目標或傳遞內容的核准可透過網頁存取來執行。
+目标或投放内容的批准可通过Web访问进行。
 
 ![](assets/web-access-approval.png)
 
-您也可以使用通知訊息中包含的連結。 如需详细信息，请参阅[此部分](marketing-campaign-approval.md#checking-and-approving-deliveries)。
+您还可以使用通知消息中包含的链接。 如需详细信息，请参阅[此部分](marketing-campaign-approval.md#checking-and-approving-deliveries)。
 
 
-## 教學課程影片 {#video}
+## 教程视频 {#video}
 
-本影片說明如何建立行銷計畫、方案和行銷活動。
+本视频说明如何创建营销计划、项目和营销活动。
 
 >[!VIDEO](https://video.tv.adobe.com/v/333810?quality=12)

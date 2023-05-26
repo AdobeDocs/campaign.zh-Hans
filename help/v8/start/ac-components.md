@@ -1,6 +1,6 @@
 ---
-title: 瞭解Campaign流程和元件
-description: 瞭解Campaign流程和元件
+title: 了解Campaign流程和组件
+description: 了解Campaign流程和组件
 feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
@@ -12,60 +12,60 @@ ht-degree: 1%
 
 ---
 
-# 瞭解Campaign流程和元件 {#components-and-processes}
+# 了解Campaign流程和组件 {#components-and-processes}
 
-Adobe Campaign是跨管道行銷解決方案，可自動化電子郵件、行動裝置、社交和離線行銷活動。 Adobe Campaign提供中央位置，可存取您的客戶資料和設定檔。 使用Adobe Campaign為客戶編排一致的體驗，設計、執行並個人化跨管道行銷，同時改善每個裝置和接觸點的客戶體驗。 透過Adobe Campaign，您可以透過拖放式視覺化工作流程介面管理多個資料來源、定義對象區段，以及規劃和執行多步驟、跨頻道行銷活動。
+Adobe Campaign是一种跨渠道营销解决方案，可自动执行电子邮件、移动设备、社交和离线营销活动。 Adobe Campaign提供了一个访问您的客户数据和配置文件的中心位置。 使用Adobe Campaign为客户编排一致的体验，跨渠道设计、执行和个性化您的营销，同时改进每个设备和接触点上的客户体验。 借助Adobe Campaign，您可以通过拖放式可视化工作流界面管理多个数据源、定义受众区段以及规划和执行多步骤、跨渠道营销活动。
 
-進一步瞭解Campaign的關鍵功能，位於 [此頁面](../start/get-started.md).
+在中了解有关Campaign关键功能的更多信息 [此页面](../start/get-started.md).
 
-## Campaign元件 {#ac-components}
+## Campaign组件 {#ac-components}
 
-Adobe Campaign元件和全球架構說明如下。
+Adobe Campaign组件和全局架构如下所述。
 
 ![](assets/ac-components.png)
 
-### 表現層{#presentation-layer}
+### 表示层{#presentation-layer}
 
-您可以透過Rich client、Thin client或API整合存取Adobe Campaign。
+您可以通过富客户端、瘦客户端或API集成访问Adobe Campaign。
 
-* 豐富型使用者端
+* 富客户端
 
-   Campaign Rich client是原生應用程式，可透過標準網際網路通訊協定（例如SOAP和HTTP）與Adobe Campaign應用程式伺服器通訊。 [ 了解关于 Campaign 客户端控制台的更多信息](../start/connect.md)。
+   Campaign富客户端是一种本机应用程序，它通过标准Internet协议（如SOAP和HTTP）与Adobe Campaign应用程序服务器进行通信。 [ 了解关于 Campaign 客户端控制台的更多信息](../start/connect.md)。
 
-* 精簡型使用者端
+* 瘦客户端
 
-   Adobe Campaign網頁存取功能可讓您使用HTML使用者介面，透過網頁瀏覽器存取Campaign功能的子集。 使用此Web介面存取報告、控制和驗證訊息、存取監控儀表板等。  [ 了解关于 Campaign Web Access 的更多信息](../start/connect.md)。
+   通过Adobe Campaign Web访问功能，您可以使用HTML用户界面通过Web浏览器访问Campaign功能的子集。 使用此Web界面可访问报告、控制和验证消息、访问监控功能板等。  [ 了解关于 Campaign Web Access 的更多信息](../start/connect.md)。
 
-* 具有API的外部應用程式
+* 具有API的外部应用程序
 
-   在某些情況下，可以使用透過SOAP通訊協定公開的網站服務API，從外部應用程式呼叫系統。 [進一步瞭解Campaign API](../dev/api.md).
+   在某些情况下，可以使用通过SOAP协议公开的Web服务API从外部应用程序调用系统。 [了解有关Campaign API的更多信息](../dev/api.md).
 
-### 持續層{#persistance-layer}
+### 持久层{#persistance-layer}
 
-Campaign資料庫會用作持續層，並包含Adobe Campaign管理的幾乎所有資訊和資料。 這包括：功能資料，例如設定檔、訂閱、內容；技術資料，例如傳送工作和記錄、追蹤記錄；以及工作資料（購買、潛在客戶）。
+Campaign数据库用作持久层，包含几乎所有由Adobe Campaign管理的信息和数据。 这包括：功能数据，例如用户档案、订阅、内容；技术数据，例如投放作业和日志、跟踪日志；以及工作数据（购买、商机）。
 
-資料庫的可靠性至關重要，因為大部分Adobe Campaign元件都需要存取資料庫才能執行其工作（重新導向模組除外）。
+数据库的可靠性至关重要，因为大多数Adobe Campaign组件都需要访问数据库才能执行其任务（重定向模块除外）。
 
-### 邏輯應用程式層{#logical-app-layer}
+### 逻辑应用层{#logical-app-layer}
 
-Campaign邏輯應用程式層可輕鬆設定，以符合複雜的業務需求。 您可以將Campaign作為單一平台，搭配不同的應用程式，結合起來建立開放且可擴充的架構。 每個Campaign執行個體都是應用程式層中的程式集合，部分為共用狀態，部分為專用狀態。
+Campaign逻辑应用层可轻松配置，以满足复杂的业务需求。 您可以将Campaign用作一个平台，通过结合不同的应用程序来创建开放且可伸缩的架构。 每个Campaign实例都是应用层中的进程集合，其中一些是共享的，另一些是专用的。
 
-## Campaign ManagedCloud Services{#ac-managed-services}
+## Campaign托管的Cloud Services{#ac-managed-services}
 
-Adobe Campaign v8是as a Managed Service部署：Adobe Campaign的所有元件（包括使用者介面、執行管理引擎和Campaign資料庫）都完全由Adobe託管，包括電子郵件執行、映象頁面、追蹤伺服器以及對外的Web元件（例如取消訂閱頁面/偏好設定中心和登陸頁面）。
+Adobe Campaign v8是as a Managed Service部署的：Adobe Campaign的所有组件（包括用户界面、执行管理引擎和Campaign数据库）都由Adobe完全托管，包括电子邮件执行、镜像页面、跟踪服务器和面向外部的Web组件（例如取消订阅页面/首选项中心和登陆页面）。
 
-## 行銷活動程式
+## 营销活动进程
 
-Campaign網頁伺服器可控制Campaign網頁程式的存取權。 Javascript是用於核心產品功能和自訂的伺服器端語言。 Tomcat是後端引擎，內嵌於Campaign產品中，是Web程式的一部分。 JSP或JSSP頁面會使用Javascript來呈現動態內容。
+Campaign Web服务器控制对Campaign Web进程的访问。 Javascript是用于核心产品功能和自定义的服务器端语言。 Tomcat是后端引擎，作为Web流程的一部分嵌入到Campaign产品中。 例如，在JSP或JSSP页面中使用Javascript来呈现动态内容。
 
 ![](assets/ac-processes.png)
 
-Campaign使用者端主控台會透過HTTP使用SOAP XML連線至Web伺服器。 Web伺服器提供安全性層，使用Javascript將請求傳遞至應用程式層，並使用SQL存取資料庫的Campaign內部處理作業。
+Campaign客户端控制台通过HTTP使用SOAP XML连接到Web服务器。 Web服务器提供安全层，使用Javascript将请求传递到应用程序层，Campaign内部进程使用SQL访问数据库。
 
-Campaign程式之間的整體通訊如下獨立部署圖表所述：所有Campaign元件都安裝在同一部電腦中。
+Campaign进程之间的整体通信在以下独立部署图中进行描述：所有Campaign组件都安装在同一台计算机上。
 
 ![](assets/ac-standalone.png)
 
-使用者會使用HTTP連線至Campaign應用程式伺服器。 所有資料和資訊都由Campaign資料庫管理。 如果Campaign開發人員執行任何設定變更，則會將其擷取到資料庫中。 如果行銷人員建立新行銷活動，與此新行銷活動相關的所有資訊和資料也將在資料庫中管理。 行銷人員執行行銷活動時，會透過SMTP伺服器將電子郵件傳遞從Campaign伺服器傳送至設定檔。 當設定檔與電子郵件傳遞互動（例如開啟電子郵件）時，追蹤資料會傳回至追蹤伺服器。
+用户使用HTTP连接到Campaign应用程序服务器。 所有数据和信息都在Campaign数据库中进行管理。 如果Campaign开发人员执行任何配置更改，则会将其捕获到数据库中。 如果营销人员创建新营销活动，则与此新营销活动相关的所有信息和数据也将在数据库中管理。 营销人员执行营销活动时，会通过SMTP服务器将电子邮件投放从Campaign服务器发送到用户档案。 当用户档案与电子邮件投放进行交互时（例如打开电子邮件），跟踪数据会发送回跟踪服务器。
 
-![](../assets/do-not-localize/glass.png) [進一步瞭解Campaign流程](../architecture/general-architecture.md#dev-env).
+![](../assets/do-not-localize/glass.png) [了解关于Campaign流程的更多信息](../architecture/general-architecture.md#dev-env).

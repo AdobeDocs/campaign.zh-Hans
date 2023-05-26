@@ -24,7 +24,7 @@ Campaign 控制面板允许管理每个实例的设置并跟踪使用情况，�
 
 您还可以使用 Campaign 控制面板配置实例设置，如 IP 允许列表、URL 权限和检索有关实例的信息。
 
-![](../assets/do-not-localize/book.png) 進一步瞭解 [Campaign控制面板檔案](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans){target="_blank"}.
+![](../assets/do-not-localize/book.png) 了解详情，请参阅 [Campaign控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans){target="_blank"}.
 
 ## 如何访问控制面板？
 
@@ -44,7 +44,7 @@ Campaign 控制面板允许管理每个实例的设置并跟踪使用情况，�
 
 * [监测子域](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html?lang=zh-Hans){target="_blank"}
 * [设置新子域](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hans){target="_blank"}
-* [監視子網域的SSL憑證](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=zh-Hans){target="_blank"}
+* [监控子域的SSL证书](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=zh-Hans){target="_blank"}
 
 ## 性能监控
 

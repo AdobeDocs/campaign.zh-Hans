@@ -1,6 +1,6 @@
 ---
-title: 即時互動記錄和報表
-description: 瞭解如何透過Campaign互動追蹤和評估您的優惠方案
+title: 实时互动历史记录和报告
+description: 了解如何通过Campaign互动跟踪和衡量优惠
 feature: Interaction, Offers
 role: Data Engineer
 level: Beginner
@@ -12,44 +12,44 @@ ht-degree: 4%
 
 ---
 
-# 即時互動記錄和報表
+# 实时互动历史记录和报告
 
 >[!NOTE]
 >
->這些功能僅可線上上顯示，並且僅可供 **傳遞管理員**.
+>这些功能仅在网上可见，并且仅对 **投放经理**.
 
 ## 优惠建议历史{#offer-proposition-history}
 
-提出優惠方案主張後，您可以檢視簡報歷史記錄。
+提出优惠建议后，您可以查看优惠历史记录。
 
-* 在選件層級的 **[!UICONTROL Edit]** 標籤，按一下 **[!UICONTROL Propositions]**.
+* 在选件级别，在 **[!UICONTROL Edit]** 选项卡，单击 **[!UICONTROL Propositions]**.
 
    ![](assets/offer_followup_006.png)
 
-* 在收件者的設定檔中，按一下 **[!UICONTROL Propositions]** 標籤。
+* 在收件人的配置文件中，单击 **[!UICONTROL Propositions]** 选项卡。
 
    ![](assets/offer_followup_002.png)
 
-* 在選件空間層級，按一下 **[!UICONTROL Propositions]** 標籤。
+* 在选件空间级别，单击 **[!UICONTROL Propositions]** 选项卡。
 
    ![](assets/offer_space_prop_001_b.png)
 
 ## 优惠分析报告{#offer-analysis-report}
 
-此 **[!UICONTROL Offer analysis]** 報告提供已接受或已拒絕建議數目的概觀。
+此 **[!UICONTROL Offer analysis]** 报告提供已接受或已拒绝建议数量的概览。
 
-統計資料是根據三個條件來排序：
+统计信息基于三个标准排序：
 
-* 依日期：
+* 按日期：
 
    ![](assets/offer_report_perdate.png)
 
-* 依空間：
+* 按空间：
 
    ![](assets/offer_report_perspaces.png)
 
-* 依傳遞：
+* 按投放：
 
    ![](assets/offer_report_perdeliveries.png)
 
-您可以根據報表上方區段提供的各種條件來篩選資料。 選取所需條件後，按一下 **[!UICONTROL Refresh]** 連結以將其套用至報表。
+可以根据报表上半部分提供的各种标准筛选数据。 选择所需的标准后，单击 **[!UICONTROL Refresh]** 链接以将其应用于报表。

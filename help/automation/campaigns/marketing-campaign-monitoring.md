@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 監控行銷活動
-description: 監控行銷活動
+title: 监测营销活动
+description: 监测营销活动
 feature: Campaigns, Monitoring
 exl-id: 13a7432e-6216-4a5c-84fc-bc374b5af5ee
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
@@ -11,35 +11,35 @@ ht-degree: 2%
 
 ---
 
-# 監視行銷活動 {#monitor-marketing-campaigns}
+# 监测营销活动 {#monitor-marketing-campaigns}
 
 ## 跟踪活动 {#tracking-a-campaign}
 
-對於每個行銷活動， **[!UICONTROL Tracking]** 索引標籤可讓您檢視所有工作及其狀態。
+对于每个营销活动， **[!UICONTROL Tracking]** 选项卡用于查看所有作业及其状态。
 
-下列資訊可透過此子標籤存取：
+以下信息可通过此子选项卡访问：
 
-* 此 **[!UICONTROL Audit]** 子頁簽顯示活動分錄。 它包含行銷活動上執行的作業：工作流程建立或開始、核准、摘取、庫存管理等。
+* 此 **[!UICONTROL Audit]** 子选项卡显示活动日记帐。 它包含营销活动上执行的作业：工作流创建或启动、批准、提取、库存管理等。
 
    ![](assets/campaign-audit-tab.png)
 
-* 此 **[!UICONTROL Deliveries]** 子索引標籤包含行銷活動的所有傳送。 可在此檢視中進行編輯。 若要這麼做，請選取傳遞，然後按一下 **[!UICONTROL Detail]** 圖示。
+* 此 **[!UICONTROL Deliveries]** 子选项卡包含营销活动的所有投放。 可以从此视图中编辑它们。 要执行此操作，请选择投放并单击 **[!UICONTROL Detail]** 图标。
 
    ![](assets/campaign-delivery-tab.png)
 
-* 此 **[!UICONTROL Approvals]** 子頁簽包含行銷活動的所有核准流程。 您可以檢查詳細資訊和註解
+* 此 **[!UICONTROL Approvals]** 子选项卡包含营销活动的所有批准流程。 您可以检查详细信息和注释
 
-* 為產生服務提供者訊息而建立的工作流程會顯示在 **[!UICONTROL Jobs on service providers]** 子標籤。 按一下 **[!UICONTROL Detail]** 圖示來顯示選取的工作流程。
+* 为生成服务提供商消息而创建的工作流显示在 **[!UICONTROL Jobs on service providers]** 子选项卡。 单击 **[!UICONTROL Detail]** 图标，以显示选定的工作流。
 
-## 追蹤傳遞 {#delivery-tracking}
+## 跟踪投放 {#delivery-tracking}
 
-傳遞清單可透過 **[!UICONTROL Deliveries]** 行銷活動節點的連結。
+投放列表可通过 **[!UICONTROL Deliveries]** Campaign节点的链接。
 
 ![](assets/filter-deliveries-from-homepage.png)
 
-對於每個傳遞，此清單可讓您存取關鍵指標：狀態、鎖定的收件者人數、連結的行銷活動等。
+对于每个投放，此列表允许您访问关键指标：状态、已定位的收件人数量、关联的营销活动等。
 
-若要檢查傳送的狀態，請編輯傳送並檢視其控制面板和標籤。
+要检查投放的状态，请编辑该投放并查看其功能板和选项卡。
 
 <!--
 >[!NOTE]
@@ -47,8 +47,8 @@ ht-degree: 2%
 >Information concerning delivery details is available in [this section](../../delivery/using/about-message-tracking.md) section.
 -->
 
-## 追蹤執行 {#execution-tracking}
+## 跟踪执行 {#execution-tracking}
 
-您可以按一下 **[!UICONTROL Deliveries]**，可透過Adobe Campaign首頁存取。
+您可以通过单击 **[!UICONTROL Deliveries]**，可通过Adobe Campaign主页访问它。
 
-行銷活動中執行之處理程式的詳細資訊會收集在 **[!UICONTROL Edit > Audit]** 索引標籤進行識別。 您可以在行銷活動中檢視傳遞清單。 [了解详情](#tracking-a-campaign)。
+有关在营销活动中执行的流程的详细信息，请参阅 **[!UICONTROL Edit > Audit]** 选项卡中的选定内容进行标识。 您可以在营销活动中查看投放列表。 [了解详情](#tracking-a-campaign)。

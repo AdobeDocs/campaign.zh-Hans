@@ -90,6 +90,6 @@ Adobe Campaign v8 在基础架构、安全性、可投放性和监测方面有�
 
 ![](assets/subdomain1.png)
 
-![](../assets/do-not-localize/glass.png) [深入瞭解Campaign控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans){target="_blank"}
+![](../assets/do-not-localize/glass.png) [了解有关Campaign控制面板的更多信息](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans){target="_blank"}
 
 

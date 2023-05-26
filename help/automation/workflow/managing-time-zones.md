@@ -13,15 +13,15 @@ ht-degree: 4%
 
 # 管理时区{#managing-time-zones}
 
-Adobe Campaign可讓您管理同一個執行個體所涉及不同國家/地區之間的時間延遲。 套用的設定是在建立執行個體期間設定。
+Adobe Campaign允许您管理同一实例所涉及的不同国家/地区之间的时滞。 应用的配置是在实例创建期间配置的。
 
-在工作流程中，您可以調整活動執行排程，並將特定時區連結至活動或整個工作流程。 此設定在匯入檔案時或是在傳送排程的架構內相當實用。
+在工作流中，您可以调整活动执行计划，并将特定时区链接到活动或整个工作流。 此配置在导入文件或投放计划框架内可能很有用。
 
-## 執行排程 {#execution-scheduling}
+## 执行计划 {#execution-scheduling}
 
-您可以使用排程器排程工作的執行(請參閱 [排程器](scheduler.md))。 您也可以使用提供此功能的活動中可用的排程選項。 這些活動提供 **[!UICONTROL Schedule]** 標籤： **[!UICONTROL File collector]**， **[!UICONTROL File transfer]**， **[!UICONTROL Web download]**， **[!UICONTROL Email reception]** 和 **[!UICONTROL SMS]**&#x200B;等。
+您可以使用调度程序来调度任务的执行(请参阅 [调度程序](scheduler.md))。 您还可以使用提供此功能的活动中提供的计划选项。 这些活动提供 **[!UICONTROL Schedule]** 选项卡： **[!UICONTROL File collector]**， **[!UICONTROL File transfer]**， **[!UICONTROL Web download]**， **[!UICONTROL Email reception]** 和 **[!UICONTROL SMS]**&#x200B;等。
 
-對於所有已排程的工作（即具有排程選項的所有活動），您可以選取要套用的時區。 時區是透過 **[!UICONTROL Advanced]** 相關活動的索引標籤：
+对于所有计划任务（即具有计划选项的所有活动），您可以选择要应用的时区。 时区是通过 **[!UICONTROL Advanced]** 相关活动的选项卡：
 
 ![](assets/wf-timezone-in-a-box.png)
 
@@ -29,22 +29,22 @@ Adobe Campaign可讓您管理同一個執行個體所涉及不同國家/地區�
 
 * 服务器时区
 
-   使用Adobe Campaign應用程式伺服器的時區。
+   使用Adobe Campaign应用程序服务器的时区。
 
-* 使用者時區
+* 用户时区
 
-   使用執行工作流程的Adobe Campaign運運算元的時區。
+   使用执行工作流的Adobe Campaign运算符的时区。
 
-* 資料庫時區
+* 数据库时区
 
-   使用所用資料庫伺服器的時區。
+   使用所用数据库服务器的时区。
 
-* 特定時區
+* 特定时区
 
-   使用選取的時區。
+   使用所选时区。
 
-如果 **[!UICONTROL By default]** 選取、套用工作流程的時區，或應用程式伺服器的時區。
+如果 **[!UICONTROL By default]** 值、应用工作流的时区或应用服务器的时区。
 
-## 將時區連結至活動 {#linking-a-time-zone-to-an-activity}
+## 将时区链接到活动 {#linking-a-time-zone-to-an-activity}
 
-此 **[!UICONTROL Advanced]** 工作流程活動的索引標籤可讓您選取其時區。 雖然大多數情況下，工作流程的時區就足夠了，但是可能需要為特定活動（例如資料匯入）偶爾多載該時區，才能將日期連結到其正確的時區。
+此 **[!UICONTROL Advanced]** 通过工作流活动的选项卡，可选择其时区。 虽然在大多数情况下，工作流的时区就足够了，但可能需要为特定活动（例如数据导入）现在或反复地让时区过载以便将日期链接到其正确的时区。

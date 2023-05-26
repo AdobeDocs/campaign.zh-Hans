@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 設定篩選規則
-description: 瞭解如何設定篩選規則
+title: 配置筛选规则
+description: 了解如何配置筛选规则
 feature: Typology Rules
 exl-id: 17507cdf-211f-4fa2-abb9-33d4f6dc47bb
 source-git-commit: 7fe079c5473fa164405753c2be6cc8be16329f58
@@ -13,85 +13,85 @@ ht-degree: 1%
 
 # 筛选规则{#filtering-rules}
 
-使用篩選規則，根據查詢中定義的條件來選取要排除的訊息。 這些規則會連結至目標維度。
+使用过滤规则根据查询中定义的条件选择要排除的消息。 这些规则链接到定向维度。
 
-篩選規則可以連結到其他型別的規則（控制、壓力等） 在型別中，或分組在專用的 **篩選** 型別。 [了解详情](#create-and-use-a-filtering-typology)。
+筛选规则可以链接到其他类型的规则（控制、压力等） 按类型分组，或分组到专用 **正在筛选** 类型。 [了解详情](#create-and-use-a-filtering-typology)。
 
-## 建立篩選規則 {#create-a-filtering-rule}
+## 创建筛选规则 {#create-a-filtering-rule}
 
-例如，您可以篩選新聞稿訂閱者，以防止將通訊傳送給未成年收件者。
+例如，您可以筛选新闻稿订阅者，以阻止将通信发送给未成年收件人。
 
-若要定義此篩選器，請套用下列步驟：
+要定义此过滤器，请应用以下步骤：
 
-1. 瀏覽至 **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** Campaign匯出程式的資料夾，然後按一下 **新增** 圖示以建立型別規則。
-1. 建立 **[!UICONTROL Filtering]** 適用於所有管道的型別規則。
+1. 浏览至 **[!UICONTROL Administration > Campaign management > Typology management > Typology rules]** 文件夹，然后单击 **新** 图标以创建分类规则。
+1. 创建 **[!UICONTROL Filtering]** 适用于所有渠道的分类规则。
 
    ![](assets/campaign_opt_create_filter_01.png)
 
-1. 從 **篩選** 索引標籤將預設目標維度變更為 **訂閱** (**nms：subscription**)。
+1. 从 **筛选条件** 制表符将默认定向维度更改为 **订阅** (**nms：subscription**)。
 
    ![](assets/campaign_opt_create_filter_02.png)
 
-1. 使用建立篩選器 **[!UICONTROL Edit the query from the targeting dimension...]** 連結。
+1. 使用创建过滤器 **[!UICONTROL Edit the query from the targeting dimension...]** 链接。
 
    ![](assets/campaign_opt_create_filter_03.png)
 
-1. 篩選收件者年齡並儲存篩選條件。
+1. 筛选收件人年龄并保存筛选条件。
 
    ![](assets/campaign_opt_create_filter_03b.png)
 
-1. 從 **型別** 標籤，將此規則連結至行銷活動型別並儲存。
+1. 从 **类型** 选项卡，将此规则链接到营销活动类型并保存。
 
    ![](assets/campaign_opt_create_filter_04.png)
 
-在傳送中使用此規則時，系統會自動排除未成年訂閱者。 特定訊息會指出何時套用規則：
+在投放中使用此规则时，会自动排除未成年订阅者。 此时会显示一条特定的消息，指示何时应用规则：
 
 ![](assets/campaign_opt_create_filter_05.png)
 
-## 設定篩選規則的條件 {#condition-a-filtering-rule}
+## 为筛选规则设置条件 {#condition-a-filtering-rule}
 
-您可以根據連結的傳遞或傳遞大網限制篩選規則的應用程式欄位。
+您可以根据链接的投放或投放大纲限制筛选规则的应用程序字段。
 
-若要這麼做，請前往 **[!UICONTROL General]** 型別規則的索引標籤中，選取要套用的限制型別並建立篩選器。
+为此，请转到 **[!UICONTROL General]** 类型规则的选项卡中，选择要应用的限制类型并创建过滤器。
 <!--
 ![](assets/campaign_opt_create_filter_06.png)
 -->
 
 
-在此情況下，即使規則已連結至所有傳送，它只會套用至符合所定義篩選條件的那些傳送。
+在这种情况下，即使规则链接到所有投放，它也将仅应用于符合所定义筛选条件的投放。
 
 >[!NOTE]
 >
->型別與篩選規則可用於工作流程中，位於 **[!UICONTROL Delivery outline]** 活動。 [了解详情](../workflow/delivery-outline.md)。
+>分类和筛选规则可用于工作流中，位于 **[!UICONTROL Delivery outline]** 活动。 [了解详情](../workflow/delivery-outline.md)。
 
-## 建立和使用篩選型別 {#create-and-use-a-filtering-typology}
+## 创建和使用筛选类型 {#create-and-use-a-filtering-typology}
 
-您可以建立 **[!UICONTROL Filtering]** 型別：僅包含篩選規則。
+您可以创建 **[!UICONTROL Filtering]** 类型：仅包含筛选规则。
 
 ![](assets/campaign_opt_create_typo_filtering.png)
 
-選取目標時，這些特定型別可以連結至傳遞：在傳遞精靈中，按一下 **[!UICONTROL To]** 連結，然後按一下 **[!UICONTROL Exclusions]** 標籤。
+选择目标后，这些特定分类可以链接到投放：在投放向导中，单击 **[!UICONTROL To]** 链接，然后单击 **[!UICONTROL Exclusions]** 选项卡。
 
 ![](assets/campaign_opt_apply_typo_filtering.png)
 
-然後選取要套用至傳遞的篩選型別。 若要這麼做，請按一下 **[!UICONTROL Add]** 按鈕並選取要套用的型別。
+然后，选择要应用于投放的筛选类型。 要执行此操作，请单击 **[!UICONTROL Add]** 按钮并选择要应用的类型。
 
-您也可以透過此索引標籤直接連結篩選規則，而不需將其歸類到型別中。 要執行此操作，請使用視窗的下半部。
+您还可以通过此选项卡直接链接筛选规则，而无需将它们分组到分类中。 要实现此目的，请使用窗口的下半部分。
 
 ![](assets/campaign_opt_select_typo_filtering.png)
 
 >[!NOTE]
 >
->只有型別和篩選規則可在選取視窗中使用。
+>只有分类和筛选规则在选择窗口中可用。
 >
->這些設定可在傳遞範本中定義，以自動套用至使用範本建立的所有新傳遞。
+>这些配置可以在投放模板中定义，以自动应用于使用该模板创建的所有新投放。
 
-## 預設傳遞能力排除規則 {#default-deliverability-exclusion-rules}
+## 默认可投放性排除规则 {#default-deliverability-exclusion-rules}
 
-預設提供兩種篩選規則： **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** )和 **[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** )。 在電子郵件分析期間，這些規則會將收件者電子郵件地址與傳送能力執行個體中管理的加密全域隱藏清單中所包含的禁止地址或網域名稱進行比較。 如果有相符專案，則不會傳送訊息給該收件者。
+默认情况下，有两种筛选规则可用： **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** )和 **[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** )。 在电子邮件分析期间，这些规则将收件人电子邮件地址与包含在可投放性实例中管理的加密全局禁止列表内的禁止地址或域名进行比较。 如果存在匹配项，则消息不会发送给该收件人。
 
-這是為了避免因惡意活動（尤其是使用Spamtrap）而新增至封鎖清單。 例如，如果使用Spamtrap透過您的其中一個Web表單進行訂閱，則會自動傳送確認電子郵件給該Spamtrap，而您的地址會自動新增至封鎖清單中。
+阻止列表这是为了避免由于恶意活动（尤其是使用Spamtrap）而添加到。 阻止列表例如，如果使用Spamtrap通过某个Web窗体进行订阅，则会自动向该Spamtrap发送确认电子邮件，这会导致您的地址自动添加到。
 
 >[!NOTE]
 >
->全域隱藏清單中包含的地址和網域名稱會隱藏。 傳遞分析記錄檔中只會指出已排除的收件者數目。
+>全局禁止显示列表中包含的地址和域名被隐藏。 投放分析日志中仅指示已排除的收件人的数量。

@@ -1,6 +1,6 @@
 ---
-title: 建立並發佈異動訊息傳遞的範本
-description: 瞭解如何建立和發佈異動訊息傳遞的範本
+title: 创建并发布事务型消息传递模板
+description: 了解如何创建和发布事务性消息传递模板
 feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
@@ -12,91 +12,91 @@ ht-degree: 1%
 
 ---
 
-# 建立並發佈異動訊息傳遞的範本{#template-transactional-messages}
+# 创建并发布事务型消息传递模板{#template-transactional-messages}
 
-每個事件都可以觸發個人化訊息。 為了做到這一點，您需要建立一個訊息範本以符合每個事件型別。 範本包含個人化交易式訊息的必要資訊。 您也可以使用範本來測試訊息預覽，並在傳送至最終目標之前使用種子地址傳送校樣。
+每个事件都可以触发个性化消息。 要实现此目的，您需要创建消息模板以匹配每个事件类型。 模板包含个性化事务型消息的必需信息。 您还可以使用模板测试消息预览，并在交付到最终目标之前使用种子地址发送校样。
 
-## 建立範本{#create-message-template}
+## 创建模板{#create-message-template}
 
-若要建立訊息範本，請遵循下列步驟：
+要创建消息模板，请执行以下步骤：
 
-1. 前往 **[!UICONTROL Message Center >Transactional message templates]** Adobe Campaign樹狀結構中的資料夾。
-1. 在交易式訊息範本清單中，按一下滑鼠右鍵並選取 **[!UICONTROL New]** 在下拉式功能表中，或按一下 **[!UICONTROL New]** 按鈕（異動訊息範本清單上方）。
+1. 转到 **[!UICONTROL Message Center >Transactional message templates]** 文件夹(在Adobe Campaign树中)。
+1. 在事务型消息模板的列表中，右键单击并选择 **[!UICONTROL New]** 在下拉菜单中，或单击 **[!UICONTROL New]** 按钮时，发送电子邮件给用户。
 
    ![](assets/messagecenter_create_model_001.png)
 
-1. 在傳遞視窗中，選取適用於您要使用之管道的傳遞範本。
+1. 在投放窗口中，选择适用于要使用的渠道的投放模板。
 
    ![](assets/messagecenter_create_model_002.png)
 
-1. 視需要變更其標籤。
-1. 選取符合您要傳送之訊息的事件型別。 必須預先建立預定由Adobe Campaign處理的事件型別。 [了解详情](#create-event-types)
+1. 根据需要更改其标签。
+1. 选择与要发送的消息匹配的事件类型。 必须预先创建预定由Adobe Campaign处理的事件类型。 [了解详情](#create-event-types)
 
    ![](assets/messagecenter_create_model_003.png)
 
    >[!CAUTION]
    >
-   >事件型別絕不可連結至多個範本。
+   >事件类型不得链接到多个模板。
 
-1. 輸入性質和說明，然後按一下 **[!UICONTROL Continue]** 以建立訊息內文。
+1. 输入特性和说明，然后单击 **[!UICONTROL Continue]** 以创建消息正文。
 
-## 建立內容{#create-message-content}
+## 创建内容{#create-message-content}
 
-交易式訊息內容的定義與Adobe Campaign中所有傳送的定義相同。 例如，對於電子郵件傳遞，您可以建立HTML或文字格式的內容、新增附件或個人化傳遞物件。 [了解详情](../start/create-message.md)。
+事务型消息内容的定义与Adobe Campaign中所有投放的定义相同。 例如，对于电子邮件投放，您可以创建HTML或文本格式的内容、添加附件或个性化投放对象。 [了解详情](../start/create-message.md)。
 
 >[!CAUTION]
 >
->訊息中包含的影像必須可公開存取。 Adobe Campaign不提供任何異動訊息的影像上傳機制。\
->不同於JSSP或webApp， `<%=` 沒有任何預設逸出。
+>消息中包含的图像必须可公开访问。 Adobe Campaign不提供事务型消息的任何图像上传机制。\
+>与JSSP或webApp不同， `<%=` 没有任何默认转义。
 >
->您必須正確逸出來自事件的每個資料。 此逸出取決於此欄位的使用方式。 例如，在URL中，請使用encodeURIComponent。 若要顯示在HTML中，您可以使用escapeXMLString。
+>您必须正确对来自事件的每个数据进行转义。 此转义取决于此字段的使用方式。 例如，在URL中，请使用encodeURIComponent。 要显示在HTML中，您可以使用escapeXMLString。
 
-定義訊息內容後，您可以將事件資訊整合至訊息內文並加以個人化。 由於個人化標籤，事件資訊會插入文字內文中。
+定义消息内容后，您可以将事件信息集成到消息正文中并对其进行个性化。 由于个性化标记，事件信息将插入到文本正文中。
 
 ![](assets/messagecenter_create_content.png)
 
-* 所有個人化欄位都來自裝載。
-* 可以在交易式訊息中參考一或多個個人化區塊。 <!--The block content will be added to the delivery content during the publication to the execution instance.-->
+* 所有个性化字段都来自有效负载。
+* 可以在事务型消息中引用一个或多个个性化块。 <!--The block content will be added to the delivery content during the publication to the execution instance.-->
 
-若要將個人化標籤插入電子郵件內文中，請套用下列步驟：
+要在电子邮件正文中插入个性化标记，请应用以下步骤：
 
-1. 在訊息範本中，按一下符合電子郵件格式(HTML或文字)的索引標籤。
-1. 輸入訊息內文。
-1. 在文字內文中，使用 **[!UICONTROL Real time events>Event XML]** 功能表。
+1. 在消息模板中，单击与电子邮件格式(HTML或文本)匹配的选项卡。
+1. 输入消息正文。
+1. 在文本正文中，使用插入标记 **[!UICONTROL Real time events>Event XML]** 菜单。
 
    ![](assets/messagecenter_create_custo_1.png)
 
-1. 使用下列語法填入標籤： **元素名稱**.@**屬性名稱** 如下所示。
+1. 使用以下语法填写标记： **元素名称**.@**属性名称** 如下所示。
 
    ![](assets/messagecenter_create_custo_2.png)
 
-## 測試異動訊息範本 {#test-message-template}
+## 测试事务性消息模板 {#test-message-template}
 
 ### 添加种子地址{#add-seeds}
 
-種子地址可讓您在傳送訊息之前顯示訊息預覽、傳送校樣並測試訊息個人化。 種子地址會連結至傳遞，且無法用於其他傳遞。
+种子地址允许您在发送消息之前显示消息的预览、发送校样和测试消息个性化。 种子地址链接到投放，不能用于其他投放。
 
-1. 在交易式訊息範本中，按一下 **[!UICONTROL Seed addresses]** 標籤，然後按一下 **[!UICONTROL Add]** 按鈕。
+1. 在事务型消息模板中，单击 **[!UICONTROL Seed addresses]** 选项卡，然后单击 **[!UICONTROL Add]** 按钮。
 
    ![](assets/messagecenter_create_seed_1.png)
 
-1. 為其指派標籤以便稍後輕鬆選取，然後輸入種子地址（電子郵件或行動電話，視通訊通道而定）。
+1. 为其分配标签以便稍后轻松选择，然后输入种子地址（电子邮件或移动电话，具体取决于通信渠道）。
 
-1. 輸入外部識別碼：此選擇性欄位可讓您輸入商業金鑰（唯一ID、名稱+電子郵件等） 這是網站上所有應用程式通用的功能，用來識別您的設定檔。 如果此欄位也出現在Adobe Campaign行銷資料庫中，您可以協調事件與資料庫中的設定檔。
+1. 输入外部标识符：此可选字段允许您输入业务密钥（唯一ID、名称+电子邮件等） 这是您网站上所有应用程序通用的功能，用于标识您的个人资料。 如果此字段也出现在Adobe Campaign营销数据库中，则随后可以将事件与数据库中的用户档案进行协调。
 
    ![](assets/messagecenter_create_seed_2.png)
 
-1. 插入測試資料。 请参阅[此小节](#personalization-data)。
+1. 插入测试数据。 请参阅[此小节](#personalization-data)。
 
    ![](assets/messagecenter_create_custo_3.png)
 
-1. 按一下 **[!UICONTROL Ok]** 以確認建立種子地址。
+1. 单击 **[!UICONTROL Ok]** 以确认种子地址的创建。
 
-1. 重複此程式，視需要建立多個位址。
+1. 重复此过程，根据需要创建任意数量的地址。
 
    ![](assets/messagecenter_create_seed_6.png)
 
-地址建立後，您就可以存取其預覽和個人化。
+创建地址后，即可访问其预览和个性化。
 
 <!--
 
@@ -118,50 +118,50 @@ This information enables you to personalize message content using personalizatio
    ![](assets/messagecenter_create_custo_3.png)
 -->
 
-### 預覽交易式訊息{#transactional-message-preview}
+### 预览事务型消息{#transactional-message-preview}
 
-建立一或多個種子地址和訊息內文後，您可以預覽訊息並檢查其個人化。
+创建一个或多个种子地址和消息正文后，您可以预览消息并检查其个性化。
 
-1. 在訊息範本中，按一下 **[!UICONTROL Preview]** 索引標籤，然後選取 **[!UICONTROL A seed address]** 下拉式清單中的。
+1. 在消息模板中，单击 **[!UICONTROL Preview]** 选项卡，然后选择 **[!UICONTROL A seed address]** 下拉列表中。
 
    ![](assets/messagecenter_preview_1.png)
 
-1. 選取先前建立的種子地址，以顯示個人化訊息。
+1. 选择之前创建的种子地址以显示个性化消息。
 
    ![](assets/messagecenter_create_seed_7.png)
 
 ### 发送验证
 
-您可以傳送證明至先前建立的種子地址，以測試訊息傳送。
+您可以通过向之前创建的种子地址发送校样来测试消息投放。
 
-傳送證明的過程與傳送任何證明的過程相同。
+发送证明的过程与任何投放的过程相同。
 
-進一步瞭解中的校訂 [本節](../send/preview-and-proof.md#proofs-send).
+要了解有关验证的更多信息，请参阅 [本节](../send/preview-and-proof.md#proofs-send).
 
-不過，若要傳送交易式訊息的證明，您必須執行下列操作：
+但是，要发送事务型消息的证明，您需要执行以下操作：
 
-* 建立一或多個 [種子地址](#add-seeds) 使用個人化測試資料
-* 建立訊息內容
+* 创建一个或多个 [种子地址](#add-seeds) 使用个性化测试数据
+* 创建消息内容
 
-若要傳送證明：
+要发送校样，请执行以下操作：
 
-1. 按一下 **[!UICONTROL Send a proof]** 按鈕。
-1. 分析傳遞。
-1. 更正任何錯誤並確認傳遞。
+1. 单击 **[!UICONTROL Send a proof]** 按钮。
+1. 分析投放。
+1. 更正任何错误并确认投放。
 
    ![](assets/messagecenter_send_proof_001.png)
 
-1. 檢查訊息是否已送達種子地址，其內容是否符合您的設定。
+1. 检查消息是否已送达种子地址，并且其内容符合您的配置。
 
    ![](assets/messagecenter_send_proof_002.png)
 
-校樣可在每個範本中透過 **[!UICONTROL Audit]** 標籤。
+可通过访问每个模板中的验证 **[!UICONTROL Audit]** 选项卡。
 
 ![](assets/messagecenter_send_proof_003.png)
 
-## 發佈範本 {#publish-message-template}
+## 发布模板 {#publish-message-template}
 
-訊息範本建立時<!-- on the control instance--> 完成後，您可以發佈它，這可讓您傳送連結至即時和批次事件的訊息。
+创建消息模板时<!-- on the control instance--> 完成后，您可以发布它，这将允许您发送链接到实时和批量事件的消息。
 
 <!--This process will also publish it on all execution instances.
 
@@ -171,19 +171,19 @@ Publication lets you automatically create two message templates on the execution
 
 >[!CAUTION]
 >
->每當您對範本進行任何變更時，請務必再次發佈，使這些變更在交易式訊息傳遞期間生效。
+>无论何时对模板进行任何更改，都应确保再次发布模板，以便这些更改在事务型消息投放期间生效。
 
-1. 前往 **[!UICONTROL Message Center > Transactional message templates]** 樹狀結構的資料夾。
-1. 選取您要發佈的範本<!--on your execution instances-->.
+1. 转到 **[!UICONTROL Message Center > Transactional message templates]** 树的文件夹。
+1. 选择要发布的模板<!--on your execution instances-->.
 1. 单击 **[!UICONTROL Publish]**。
 
    ![](assets/messagecenter_publish_template.png)
 
-發佈完成後，要套用至批次和即時型別事件的訊息範本都會建立在 **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]** 資料夾。
+发布完成后，将在中创建应用于批处理事件和实时类型事件的消息模板 **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]** 文件夹。
 
 ![](assets/messagecenter_deployed_model.png)
 
-發佈範本後，如果觸發了對應的事件，Adobe Campaign<!--execution instance--> 將會收到事件、將其連結至交易式範本，並將對應的交易式訊息傳送給每個收件者。
+发布模板后，如果触发了相应的事件，则Adobe Campaign<!--execution instance--> 将接收事件，将其链接到事务型模板，并将相应的事务型消息发送给每个收件人。
 
 <!--
 >[!NOTE]
@@ -193,33 +193,33 @@ Publication lets you automatically create two message templates on the execution
 >However, if you add a non-empty value, the corresponding field will be updated as usual after the next publication.
 -->
 
-## 取消發佈範本
+## 取消发布模板
 
-訊息範本發佈後 <!--on the execution instances-->，可取消發佈。
+发布消息模板后 <!--on the execution instances-->，可以取消发布。
 
-* 事實上，如果觸發對應的事件，仍可呼叫已發佈的範本：如果您不再使用訊息範本，建議將其取消發佈。 這是為了避免誤傳不必要的交易式訊息。
+* 事实上，如果触发了相应的事件，仍可以调用已发布的模板：如果您不再使用消息模板，建议取消发布该模板。 这是为了避免错误地发送不需要的事务型消息。
 
-   例如，您發佈了一個訊息範本，但只用於聖誕節行銷活動。 您可能會想要在聖誕節結束後取消發佈，並在明年再次發佈。
+   例如，您发布了一个消息模板，该模板只能用于圣诞节促销活动。 您可能需要在圣诞节结束后取消发布它，并在明年再次发布。
 
-* 此外，您無法刪除具有 **[!UICONTROL Published]** 狀態。 您必須先取消發佈。
+* 此外，您无法删除具有以下特征的事务型消息模板： **[!UICONTROL Published]** 状态。 必须先取消发布。
 
-若要取消發佈交易式訊息範本，請遵循下列步驟。
+要取消发布事务型消息模板，请执行以下步骤。
 
-1. 瀏覽至 **[!UICONTROL Message Center > Transactional message templates]** 資料夾。
-1. 選取要取消發佈的範本。
+1. 浏览至 **[!UICONTROL Message Center > Transactional message templates]** 文件夹。
+1. 选择要取消发布的模板。
 1. 单击 **[!UICONTROL Unpublish]**。
 1. 单击 **[!UICONTROL Start]**。
 
 ![](assets/message-center-unpublish.png)
 
-異動訊息範本狀態會從變更 **[!UICONTROL Published]** 至 **[!UICONTROL Being edited]**.
+事务性消息模板状态会更改回 **[!UICONTROL Published]** 到 **[!UICONTROL Being edited]**.
 
-取消發佈完成後：
+取消发布完成后：
 
-* 兩個訊息範本（套用至批次和即時型別事件）都會被刪除<!-- from each execution instance-->.
+* 两个消息模板（应用于批处理事件和实时类型事件）都会被删除<!-- from each execution instance-->.
 
-   它們不再出現在 **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]** 資料夾。
+   它们不再出现在 **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]** 文件夹。
 
-* 取消發佈範本後，您可以將其刪除<!-- from the control instance-->.
+* 取消发布模板后，您可以将其删除<!-- from the control instance-->.
 
-   若要這麼做，請從清單中選取它，然後按一下 **[!UICONTROL Delete]** 按鈕。
+   要执行此操作，请从列表中选择它，然后单击 **[!UICONTROL Delete]** 按钮。

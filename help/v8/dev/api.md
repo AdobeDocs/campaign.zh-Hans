@@ -12,36 +12,36 @@ ht-degree: 9%
 
 ---
 
-# 開始使用 [!DNL Campaign] API{#gs-ac-api}
+# 开始使用 [!DNL Campaign] API{#gs-ac-api}
 
-[!DNL Adobe Campaign] 隨附一組Javascript函式，您可使用：
+[!DNL Adobe Campaign] 随附了一组Javascript函数，您可以使用这些函数：
 
-* 在指令碼中 — 在 [!DNL Adobe Campaign] 工作流程
-* 透過API — 來自外部系統
+* 在脚本中 — 在 [!DNL Adobe Campaign] 工作流
+* 通过API — 来自外部系统
 
-您可以使用JavaScript API在Campaign雲端資料庫中寫入或從資料庫讀取：
+您可以使用JavaScript API在Campaign云数据库中写入或从数据库中读取：
 
-* 業務特定的API，可讓您對每個物件執行動作：傳送、工作流程、訂閱等。 進一步瞭解 [Campaign Classic v7檔案](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html){target="_blank"}.
-* 用於查詢資料模型資料的一般資料存取API。 進一步瞭解 [Campaign Classic v7檔案](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html){target="_blank"}.
+* 特定于业务的API，允许您对每个对象执行操作：投放、工作流、订阅等。 了解详情，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html){target="_blank"}.
+* 用于查询数据模型数据的通用数据访问API。 了解详情，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html){target="_blank"}.
 
-請注意，在其 [企業(FFDA)部署](../architecture/enterprise-deployment.md)，Campaign可與兩個資料庫搭配使用：本機資料庫，用於使用者介面即時傳送訊息及透過API統一查詢及寫入，以及雲端資料庫，用於行銷活動執行、報告、資料擷取、批次查詢及工作流程執行。
+请注意，在其 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，Campaign可与两个数据库配合使用：用于用户界面实时消息传递和统一查询、通过API写入的本地数据库，以及用于营销活动执行、报告、数据摄取、批量查询和工作流执行的云数据库。
 
 >[!CAUTION]
 >
->[!DNL Adobe Campaign] v8提供API層的輸送量(TPS)限制。 超過上限會導致標準HTTP錯誤(429)。 身為「受管理的Cloud Services」使用者，您可以聯絡Adobe以調整每個API的節流。
+>[!DNL Adobe Campaign] v8对API层的吞吐量(TPS)进行了限制。 超过此限制会导致标准HTTP错误(429)。 作为托管Cloud Services用户，您可以联系Adobe以调整每个API的限制。
 
 ## 先决条件
 
-使用前 [!DNL Adobe Campaign] API時，您必須熟悉下列主題：
+使用前 [!DNL Adobe Campaign] 因此，您需要熟悉以下主题：
 
 * JavaScript
-* soap通訊協定
-* [!DNL Adobe Campaign] 資料模型
+* SOAP协议
+* [!DNL Adobe Campaign] 数据模型
 
-為了使用API並與之互動 [!DNL Adobe Campaign]，您也必須熟悉您的資料模型。
+要使用API并与之交互 [!DNL Adobe Campaign]此外，您还必须熟悉您的数据模型。
 
 >[!NOTE]
->您可以產生資料模型的完整說明。 请参阅[此页面](datamodel.md)以了解详情。
+>您可以生成数据模型的完整描述。 请参阅[此页面](datamodel.md)以了解详情。
 
 
 **相关主题**

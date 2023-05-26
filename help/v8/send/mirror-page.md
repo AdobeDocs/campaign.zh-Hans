@@ -14,7 +14,7 @@ ht-degree: 57%
 
 # 链接到镜像页面{#mirror-page}
 
-## 關於映象頁面{#about-mirror-page}
+## 关于镜像页面{#about-mirror-page}
 
 镜像页面是电子邮件的在线版本。
 
@@ -33,35 +33,35 @@ Adobe Campaign 生成的镜像页面包含所有个性化数据。
 ![](assets/mirror-page-insert.png){width="800" align="left"}
 
 
-如需自訂內容區塊插入的詳細資訊，請參閱 [個人化區塊](personalization-blocks.md).
+有关自定义内容块插入的更多信息，请参阅 [个性化块](personalization-blocks.md).
 
 ## 镜像页面生成{#mirror-page-generation}
 
 默认情况下，如果电子邮件内容不为空，并且包含指向镜像页面的链接（也称为镜像链接），则 Adobe Campaign 会自动生成镜像页面。
 
-您可以控制电子邮件镜像页面的生成方式。投放属性中提供了选项。若要存取這些選項：
+您可以控制电子邮件镜像页面的生成方式。投放属性中提供了选项。要访问这些选项，请执行以下操作：
 
-1. 瀏覽至 **[!UICONTROL Validity]** 電子郵件屬性的索引標籤。
-1. 在 **映象頁面管理** 區段，核取 **[!UICONTROL Mode]** 下拉式清單。
+1. 浏览至 **[!UICONTROL Validity]** 电子邮件属性的选项卡。
+1. 在 **镜像页面管理** 部分，检查 **[!UICONTROL Mode]** 下拉列表。
 
 ![](assets/mirror-page-generation.png){width="800" align="left"}
 
-除了預設模式之外，還提供下列選項：
+除了默认模式外，还提供以下选项：
 
-* **[!UICONTROL Force the generation of the mirror page]**：使用此模式可產生映象頁面，即使傳送中未插入映象頁面的連結亦然。
-* **[!UICONTROL Do not generate the mirror page]**：使用此模式可避免產生映象頁面，即使連結存在於傳送中亦然。
-* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**：當電子郵件內容中不存在映象頁面連結時，請使用此選項在傳送記錄視窗中啟用對映象頁面內容的存取，如下所述。
+* **[!UICONTROL Force the generation of the mirror page]**：使用此模式可生成镜像页面，即使投放中未插入指向镜像页面的链接也是如此。
+* **[!UICONTROL Do not generate the mirror page]**：使用此模式可避免生成镜像页面，即使链接存在于投放中也是如此。
+* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**：当电子邮件内容中不存在镜像页面链接时，请使用此选项在投放日志窗口中启用对镜像页面内容的访问，如下所述。
 
-## 檢查收件者的映象頁面{#mirror-page-access}
+## 检查收件人的镜像页面{#mirror-page-access}
 
-您可以存取傳送特定收件者的映象頁面內容，其中包含個人化資料。
+您可以使用个性化数据访问投放的特定收件人镜像页面的内容。
 
-若要存取此映象頁面：
+要访问此镜像页面，请执行以下操作：
 
-1. 傳送傳遞後，請開啟並瀏覽至其 **[!UICONTROL Delivery]** 標籤。
+1. 发送投放后，打开它并浏览到其 **[!UICONTROL Delivery]** 选项卡。
 
-1. 選取收件者並按一下 **[!UICONTROL Display the mirror page for this message...]** 連結。
+1. 选择一个收件人，然后单击 **[!UICONTROL Display the mirror page for this message...]** 链接。
 
    ![](assets/mirror-page-display.png){width="800" align="left"}
 
-   映象頁面會顯示在專用畫面中，其中包含所選收件者的個人化資料。
+   镜像页面显示在专用屏幕中，其中包含所选收件人的个性化数据。

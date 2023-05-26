@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 行銷活動目標對象
-description: 瞭解如何定義行銷活動的對象
+title: 营销活动目标受众
+description: 了解如何定义营销活动的受众
 feature: Campaigns, Audiences
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
 source-git-commit: a2518ea0c0ab23f50b3132b750a14e98b4ffad7d
@@ -13,233 +13,233 @@ ht-degree: 1%
 
 # 选择营销活动受众 {#marketing-campaign-deliveries}
 
-在行銷活動中，您可以針對每次傳送定義：
+在营销活动中，您可以为每个投放定义：
 
-* 目標對象。 您可以將訊息傳送至 [收件者清單](#send-to-a-group) 或建置 [工作流程中的對象](#build-the-main-target-in-a-workflow)
-* 控制組。 您可以 [新增控制組](#add-a-control-group) 監視訊息傳遞後的收件者行為
+* 目标受众。 您可以将消息发送至 [收件人列表](#send-to-a-group) 或构建 [工作流中的受众](#build-the-main-target-in-a-workflow)
+* 对照组。 您可以 [添加对照组](#add-a-control-group) 监测消息投放后的收件人行为
 <!--
 * Seed addresses - Learn more in [this section](../../delivery/using/about-seed-addresses.md).-->
 
-此資訊中的部分內容可繼承自 [行銷活動範本](marketing-campaign-templates.md#campaign-templates).
+其中一些信息可以从 [活动模板](marketing-campaign-templates.md#campaign-templates).
 
 <!--
 To build the delivery target, you can define filtering criteria for the recipients in the database. This recipient selection mode is presented in [this section](../../delivery/using/steps-defining-the-target-population.md).
 -->
 
-## 傳送至群組{#send-to-a-group}
+## 发送到组{#send-to-a-group}
 
-您可以將母體匯入清單，然後在傳遞中鎖定此清單。 为此请执行以下操作步骤：
+您可以将群体导入列表，然后在投放中定位此列表。 为此请执行以下操作步骤：
 
-1. 編輯傳遞，然後按一下 **[!UICONTROL To]** 連結以變更目標母體。
-1. 在 **[!UICONTROL Main target]** 索引標籤中，選取 **[!UICONTROL Defined via the database]** 選項並按一下 **[!UICONTROL Add]** 以選取收件者。
+1. 编辑投放并单击 **[!UICONTROL To]** 用于更改目标群体的链接。
+1. 在 **[!UICONTROL Main target]** 选项卡，选择 **[!UICONTROL Defined via the database]** 选项并单击 **[!UICONTROL Add]** 以选择收件人。
 
    ![](assets/select-main-target.png)
 
-1. 選擇 **[!UICONTROL A list of recipients]**.
+1. 选择 **[!UICONTROL A list of recipients]**.
 
    ![](assets/target-a-list.png)
 
 
-1. 按一下 **[!UICONTROL Next]** 以選取清單。
+1. 单击 **[!UICONTROL Next]** 以选择列表。
 
    ![](assets/select-the-list.png)
 
-   您可以新增篩選條件來縮小目標範圍。
+   您可以通过添加新的筛选条件来优化目标。
 
-1. 按一下 **[!UICONTROL Finish]** 定義所有條件後，並儲存主要目標。
+1. 单击 **[!UICONTROL Finish]** 定义所有标准后，并保存主目标。
 
-## 在行銷活動工作流程中建立對象 {#build-the-main-target-in-a-workflow}
+## 在营销活动工作流中构建受众 {#build-the-main-target-in-a-workflow}
 
-傳遞的主要目標也可以在行銷活動工作流程中定義：此圖形環境可讓您使用查詢、測試和運運算元建立目標：聯合、重複資料刪除、共用等。
+投放的主要目标也可以在营销活动工作流中定义：利用此图形环境，您可以使用查询、测试和运算符构建目标：合并、重复数据删除、共享等。
 
 >[!IMPORTANT]
 >
->您不得在行銷活動中新增超過28個工作流程。 超過此限制，介面中不會顯示其他工作流程，而且可能會產生錯誤。
+>在营销策划中添加的工作流不能超过28个。 超过此限制，其他工作流在界面中不可见，并且可能会生成错误。
 
-### 建立工作流程 {#create-a-targeting-workflow}
+### 创建工作流 {#create-a-targeting-workflow}
 
-目標定位可透過工作流程中圖形序列的篩選條件組合來建立。 您可以建立母體和子母體，並根據您的需求鎖定這些母體。 若要顯示工作流程編輯器，請按一下 **[!UICONTROL Targeting and workflows]** 索引標籤進行標籤。
+定位可以通过工作流中按图形顺序显示的筛选条件组合来创建。 您可以创建群体和子群体，并根据您的要求定位这些群体。 要显示工作流编辑器，请单击 **[!UICONTROL Targeting and workflows]** 选项卡。
 
 ![](assets/targeting-and-wf-tab.png)
 
-目標母體是透過置於工作流程中的一或多個查詢從Adobe Campaign資料庫擷取。 瞭解如何在中建立查詢 [本節](../workflow/query.md).
+通过放置在工作流中的一个或多个查询，从Adobe Campaign数据库中提取目标群体。 了解如何在中构建查询 [本节](../workflow/query.md).
 
-您可以透過「聯合」、「交集」、「共用」、「排除」等方塊啟動查詢及共用母體。
+您可以通过并集、交集、共享、排除等框启动查询和共享群体。
 
-從工作區左側的清單中選取物件，然後連結它們以建構目標。
+从工作区左侧的列表中选择对象并将其链接以构建目标。
 
 ![](assets/campaign-wf.png)
 
-在圖表中，連結圖表中目標建構所需的目標定位和排程查詢。 您可以在建構過程中執行目標定位，以檢查從資料庫擷取的母體。
+在图中，链接图表中目标构建所需的定位和计划查询。 您可以在构建过程中执行定位，以检查从数据库中提取的群体。
 
 >[!NOTE]
 >
->有關定義查詢的範例和程式的詳情，請參閱 [本節](../workflow/query.md).
+>有关定义查询的示例和过程的详情，请参见 [本节](../workflow/query.md).
 
-編輯器的左側區段包含代表活動的圖形物件庫。 第一個索引標籤包含目標定位活動，第二個索引標籤則包含流量控制活動，這些活動偶爾會用來協調目標定位活動。
+编辑器的左侧部分包含一个表示活动的图形对象库。 第一个选项卡包含定向活动，第二个选项卡包含流量控制活动，这些活动有时用于协调定向活动。
 
-目標工作流程執行和格式化功能可透過圖表編輯器工具列存取。
+定位工作流执行和格式设置功能可通过图编辑器工具栏访问。
 
 ![](assets/wf-diagram.png)
 
 >[!NOTE]
 >
->可用來建置圖表的活動以及所有顯示和版面配置功能都詳載於 [本節](../workflow/about-workflows.md).
+>有关可用于构建图表的活动以及所有显示和布局功能的详情，请参见 [本节](../workflow/about-workflows.md).
 
-您可以為單一行銷活動建立數個目標定位工作流程。 若要新增工作流程：
+您可以为单个营销策划创建多个定位工作流。 要添加工作流，请执行以下操作：
 
-1. 前往工作流程建立區域的左上角區段，按一下滑鼠右鍵，然後選取 **[!UICONTROL Add]**. 您也可以使用 **[!UICONTROL New]** 按鈕的位置。
+1. 转到工作流创建区域的左上角部分，右键单击并选择 **[!UICONTROL Add]**. 您还可以使用 **[!UICONTROL New]** 按钮的位置。
 
    ![](assets/add-a-wf.png)
 
-1. 選取 **[!UICONTROL New workflow]** 範本並命名此工作流程。
-1. 按一下 **[!UICONTROL OK]** 以確認建立工作流程，然後建立此工作流程的圖表。
+1. 选择 **[!UICONTROL New workflow]** 模板并命名此工作流。
+1. 单击 **[!UICONTROL OK]** 以确认创建工作流，然后为此工作流创建图。
 
-### 執行工作流程 {#execute-a-workflow}
+### 执行工作流 {#execute-a-workflow}
 
-目標工作流程可以透過手動啟動 **[!UICONTROL Start]** 按鈕時（前提是您擁有適當的許可權）。
+可以通过手动启动定位工作流 **[!UICONTROL Start]** 按钮时（如果您具有相应的权限）。
 
-可以根據排程（排程器）或事件（外部訊號、檔案匯入等）將目標設定為自動執行。
+可以编程该定位以根据调度（调度器）或事件（外部信号、文件导入等）自动执行。
 
-與執行目標定位工作流程相關的動作（啟動、停止、暫停等） 是 **非同步** 處理程式：命令已儲存，一旦伺服器可供套用就會生效。
+与执行定位工作流相关的操作（启动、停止、暂停等） 是 **异步** 进程：命令已保存，一旦服务器可以应用它就会生效。
 
-工具列圖示可讓您執行定位工作流程的相關動作。
+利用工具栏图标，可采取有关执行定位工作流的操作。
 
-* 啟動或重新啟動
+* 启动或重新启动
 
-   * 此 **[!UICONTROL Start]** 圖示可讓您啟動目標定位工作流程。 當您按一下此圖示時，所有沒有輸入轉變的活動都會啟動（端點跳轉除外）。
+   * 此 **[!UICONTROL Start]** 图标可让您启动定位工作流。 单击此图标时，将激活所有没有输入过渡的活动（端点跳转除外）。
 
       ![](assets/start.png)
 
-      伺服器會將請求列入考量，如其狀態所示： **[!UICONTROL Start as soon as possible]**.
+      服务器会将该请求考虑在内，如其状态所示： **[!UICONTROL Start as soon as possible]**.
 
-   * 您可以透過適當的工具列圖示重新啟動目標定位工作流程。 此指令在下列情況下可能很有用： **[!UICONTROL Start]** 圖示無法使用，例如，正在停止定位工作流程。 在此情況下，請按一下 **[!UICONTROL Restart]** 圖示以預期重新啟動。 伺服器會將請求列入考量，其狀態如下： **[!UICONTROL Restart requested]**.
+   * 您可以通过相应的工具栏图标重新启动定位工作流。 在以下情况下，此命令可能很有用： **[!UICONTROL Start]** 图标不可用，例如，正在停止定位工作流时。 在这种情况下，单击 **[!UICONTROL Restart]** 图标来预期重新启动。 服务器会将请求考虑在内，其状态显示为： **[!UICONTROL Restart requested]**.
 
-* 停止或暫停
+* 停止或暂停
 
-   * 工具列圖示可讓您停止或暫停進行中的目標定位工作流程。
+   * 利用工具栏图标，可停止或暂停正在进行的定位工作流。
 
-      當您按一下 **[!UICONTROL Pause]**，作業進行中 **[!UICONTROL are not]** 已暫停，但在下次重新啟動前不會啟動其他活動。
+      当您单击 **[!UICONTROL Pause]**，正在执行操作 **[!UICONTROL are not]** 已暂停，但在下次重新启动之前不会启动其他活动。
 
       ![](assets/pause.png)
 
-      伺服器會考慮該命令，其狀態顯示如下： **[!UICONTROL Pause requested]**.
+      服务器会考虑该命令，其状态显示为： **[!UICONTROL Pause requested]**.
 
-      您也可以在執行達到特定活動時自動暫停目標定位工作流程。 若要這麼做，請以滑鼠右鍵按一下要暫停目標定位工作流程的活動，然後選取 **[!UICONTROL Enable but do not execute]**.
+      当定向工作流执行到特定活动时，您也可以自动暂停定向工作流。 要实现此目的，请右键单击要暂停定向工作流的活动，然后选择 **[!UICONTROL Enable but do not execute]**.
 
       ![](assets/donotexecute.png)
 
-      此設定會以特殊圖示顯示。
+      此配置由一个特殊图标显示。
 
       ![](assets/pause_activity.png)
 
       >[!NOTE]
       >
-      >在進階目標定位行銷活動設計和測試階段，此選項非常有用。
+      >在高级定位营销活动设计和测试阶段，此选项非常有用。
 
-      按一下 **[!UICONTROL Start]** 以繼續執行。
+      单击 **[!UICONTROL Start]** 以继续执行。
 
-   * 按一下 **[!UICONTROL Stop]** 圖示可停止進行中的執行。
+   * 单击 **[!UICONTROL Stop]** 图标来停止正在进行的执行。
 
       ![](assets/stop.png)
 
-      伺服器會考慮該命令，其狀態顯示如下： **[!UICONTROL Stop requested]**.
-   您也可以在執行到達活動時自動停止目標定位工作流程。 要執行此操作，請以滑鼠右鍵按一下將停止目標定位工作流程的活動，然後選取 **[!UICONTROL Do not activate]**.
+      服务器会考虑该命令，其状态显示为： **[!UICONTROL Stop requested]**.
+   当执行到达活动时，您还可以自动停止定位工作流。 要实现此目的，请右键单击将从中停止定位工作流的活动，然后选择 **[!UICONTROL Do not activate]**.
 
    ![](assets/donotactivate.png)
 
-   此設定會以特殊圖示顯示。
+   此配置由一个特殊图标显示。
 
    ![](assets/unactivation.png)
 
 
    >[!NOTE]
    >
-   >在進階目標定位行銷活動設計和測試階段，此選項非常有用。
+   >在高级定位营销活动设计和测试阶段，此选项非常有用。
 
 * 无条件停止
 
-   在Explorer中選取 **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** 以存取及處理每個行銷活動工作流程。
+   在资源管理器中，选择 **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** 访问每个活动工作流并对其执行操作。
 
-   您可以按一下「 」，無條件停止工作流程 **[!UICONTROL Actions]** 圖示並選取 **[!UICONTROL Unconditional]** 停止。 此動作會終止您的行銷活動工作流程。
+   您可以通过单击 **[!UICONTROL Actions]** 图标并选择 **[!UICONTROL Unconditional]** 停下。 此操作终止您的营销活动工作流。
 
    ![](assets/stop_unconditional.png)
 
-## 新增控制組 {#add-a-control-group}
+## 添加控制组 {#add-a-control-group}
 
-控制組是不接收傳遞的母體；它可用來追蹤傳遞後的行為，以及行銷活動影響，方法是比較已接收傳遞的目標母體的行為。
+控制组是不接收投放的群体；它用于通过与接收投放的目标群体的行为进行比较，来跟踪投放后的行为和营销活动影响。
 
-控制組可從主要目標擷取和/或來自特定群組或查詢。
+控制组可以从主目标中提取和/或来自特定组或查询。
 
-### 啟用行銷活動的控制組 {#activate-the-control-group-for-a-campaign}
+### 为营销活动激活控制组 {#activate-the-control-group-for-a-campaign}
 
-您可以在行銷活動層級定義控制組，在這種情況下，控制組將套用至相關行銷活動的每次傳送。
+您可以在活动级别定义控制组，在这种情况下，控制组将应用于相关活动的每次投放。
 
-1. 編輯相關的行銷活動，然後按一下 **[!UICONTROL Edit]** 標籤。
+1. 编辑相关的营销活动，然后单击 **[!UICONTROL Edit]** 选项卡。
 1. 单击 **[!UICONTROL Advanced campaign parameters...]**。
 
    ![](assets/enable-control-group.png)
 
-1. 選取 **[!UICONTROL Enable and edit control group configuration]** 選項。
-1. 按一下 **[!UICONTROL Edit...]** 以設定控制組。
+1. 选择 **[!UICONTROL Enable and edit control group configuration]** 选项。
+1. 单击 **[!UICONTROL Edit...]** 配置控制组。
 
    ![](assets/edit-control-group.png)
 
-有關完整程式的詳情，請參閱 [本節](#extract-the-control-group-from-the-main-target). 進一步瞭解中的控制組 [本節](#add-a-population).
+有关完整过程的详情，请参见 [本节](#extract-the-control-group-from-the-main-target). 在中了解有关控制组的更多信息 [本节](#add-a-population).
 
-### 啟用傳遞的控制組 {#activate-the-control-group-for-a-delivery}
+### 为投放激活对照组 {#activate-the-control-group-for-a-delivery}
 
-您可以在傳送層級定義控制組，此時控制組將套用至相關行銷活動的每個傳送。
+您可以在投放级别定义控制组，在这种情况下，控制组将应用于相关营销活动的每次投放。
 
-根據預設，在行銷活動層級定義的控制群組設定會套用至該行銷活動的每次傳送。 不過，您可以為個別傳遞調整控制組。
+默认情况下，在营销活动级别定义的控制组配置将应用于该营销活动的每次投放。 但是，您可以为单个投放调整控制组。
 
 >[!NOTE]
 >
->如果您已定義行銷活動的控制組，且還將其設定為連結至此行銷活動的傳送，則只會套用為傳送定義的控制組。
+>如果您为营销活动定义了控制组，并且还为链接到此营销活动的投放配置了该控制组，则只会应用为该投放定义的控制组。
 
-1. 編輯相關的傳遞，然後按一下 **[!UICONTROL To]** 連結。
-1. 按一下 **[!UICONTROL Control group]** 標籤，然後選取 **[!UICONTROL Enable and edit control group configuration]**.
+1. 编辑相关的投放，然后单击 **[!UICONTROL To]** 链接。
+1. 单击 **[!UICONTROL Control group]** 选项卡，然后选择 **[!UICONTROL Enable and edit control group configuration]**.
 
    ![](assets/enable-control-group-for-a-delivery.png)
 
-1. 按一下 **[!UICONTROL Edit...]** 以設定控制組。
+1. 单击 **[!UICONTROL Edit...]** 配置控制组。
 
-有關完整程式的詳情，請參閱 [本節](#extract-the-control-group-from-the-main-target).
+有关完整过程的详情，请参见 [本节](#extract-the-control-group-from-the-main-target).
 
-### 使用新母體作為控制組 {#add-a-population}
+### 使用新群体作为对照组 {#add-a-population}
 
-您可以對控制組使用特定母體。 在這種情況下，請在相關欄位中選取要作為控制組的清單。
+您可以将特定群体用于对照组。 在这种情况下，请在相关字段中选择要用作控制组的列表。
 
-此母體可能來自收件者清單，或者您可以透過特定查詢加以定義。
+此群体可以来自收件人列表，也可以通过特定查询对其进行定义。
 
 ![](assets/new-population-as-control-group.png)
 
 >[!NOTE]
 >
->Adobe Campaign查詢編輯器顯示於 [本節](../workflow/query.md).
+>Adobe Campaign查询编辑器的介绍 [本节](../workflow/query.md).
 
-### 從主要目標擷取控制組 {#extract-the-control-group-from-the-main-target}
+### 从主目标中提取控制组 {#extract-the-control-group-from-the-main-target}
 
-您也可以從傳遞的主要目標擷取收件者。 在此情況下，收件者將會從受此設定影響的傳遞動作目標中取得。 此擷取可以是隨機的，也可以是排序收件者的結果。
+您还可以从投放的主目标中提取收件人。 在这种情况下，收件人将从受此配置影响的投放操作目标中获取。 此提取可以是随机的，也可以是对收件人进行排序的结果。
 
 ![](assets/extract-control-group-from-target.png)
 
-若要擷取控制組，請啟用行銷活動或傳送的控制組，並選取下列其中一個選項： **[!UICONTROL Activate random sampling]** 或 **[!UICONTROL Keep only the first records after sorting]**.
+要提取控制组，请为活动或投放启用控制组，然后选择以下选项之一： **[!UICONTROL Activate random sampling]** 或 **[!UICONTROL Keep only the first records after sorting]**.
 
-* 使用 **[!UICONTROL Activate random sampling]** 將隨機抽樣套用至主要母體中的收件者的選項。 如果您然後將臨界值設為100，控制組將由從目標人口隨機選取的100個收件者組成。 隨機抽樣取決於資料庫引擎。
-* 使用 **[!UICONTROL Keep only the first records after sorting]** 根據一或多個排序順序定義限制的選項。 如果您選取 **[!UICONTROL Age]** 欄位做為排序標準，然後將100定義為臨界值，控制組將由100個最年輕的收件者組成。 例如，定義包含很少購買的收件者或經常購買的收件者的控制組，並將其行為與已聯絡的收件者的行為進行比較，可能會很有趣。
+* 使用 **[!UICONTROL Activate random sampling]** 选项可将随机抽样应用于主群体中的收件人。 如果您随后将阈值设置为100，则控制组将由从目标群体中随机选择的100位收件人组成。 随机抽样取决于数据库引擎。
+* 使用 **[!UICONTROL Keep only the first records after sorting]** 根据一个或多个排序顺序定义限制的选项。 如果您选择 **[!UICONTROL Age]** 字段作为排序标准，然后将100定义为阈值，则控制组将由100个最年轻的收件人组成。 例如，定义包含很少购买的收件人或频繁购买的收件人的控制组，并将其行为与联系的收件人的行为进行比较，这可能很有趣。
 
-按一下 **[!UICONTROL Next]** 以定義排序順序（如有必要）並選取收件者限制模式。
+单击 **[!UICONTROL Next]** 以定义排序顺序（如有必要）并选择收件人限制模式。
 
 ![](assets/limit-control-group.png)
 
-此設定等同於 **[!UICONTROL Split]** 工作流程中的活動，可讓您將目標分割成子集。 控制組是這些子集之一。
+此配置等同于 **[!UICONTROL Split]** 工作流中的活动，它允许您将target划分为子集。 控制组是上述子组之一。
 
 
-### 教學課程影片 {#create-email-video}
+### 教程视频 {#create-email-video}
 
-此影片說明如何將控制組新增至行銷活動。
+此视频介绍如何向营销活动添加控制组。
 
 >[!VIDEO](https://video.tv.adobe.com/v/335606?quality=12)
 
-有其他Campaign操作說明影片可供使用 [此處](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.
+提供了其他Campaign操作方法视频 [此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.

@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 建立循環和定期行銷活動
-description: 瞭解如何建立和執行週期性行銷活動
+title: 创建循环和定期活动
+description: 了解如何创建和执行循环和定期活动
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: 68c5b903-5043-4e74-b3f6-90a7f2fb3b9a
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
@@ -11,103 +11,103 @@ ht-degree: 0%
 
 ---
 
-# 循環和定期行銷活動 {#recurring-and-periodic-campaigns}
+# 循环和定期活动 {#recurring-and-periodic-campaigns}
 
-A **週期性行銷活動** 是基於特定範本的行銷活動，其工作流程已設定為根據關聯的排程執行。 目標定位會在每次執行時複製，並追蹤各種流程和目標母體。  設定後，循環行銷活動會自動建立新工作流程（透過複製工作流程範本）並執行它。 例如，如果您需要傳送每月提醒給對象區段，請設定循環行銷活動，以便在每年年初建立12個工作流程，每個月一個。 [了解详情](#create-a-recurring-campaign)
+A **周期性营销活动** 是基于特定模板的营销活动，其工作流配置为根据关联的计划执行。 每次执行时都会重复定位，并跟踪各种进程和目标群体。  配置完毕后，循环营销活动会自动创建新工作流（通过复制工作流模板）并运行它。 例如，如果您需要向受众区段发送每月提醒，请配置定期营销活动，以便在每年年初创建12个工作流，每个月一个。 [了解详情](#create-a-recurring-campaign)
 
-A **定期行銷活動** 是根據特定範本的行銷活動，可讓您根據執行排程建立行銷活動執行個體。 系統會根據週期性行銷活動範本，根據範本排程中定義的頻率，自動建立行銷活動執行個體。 [了解详情](#create-a-periodic-campaign)
+A **定期营销活动** 是基于特定模板的营销活动，通过它，可根据执行计划创建营销活动实例。 活动实例是根据定期活动模板自动创建的，具体取决于模板计划中定义的频率。 [了解详情](#create-a-periodic-campaign)
 
-## 建立週期性行銷活動 {#create-a-recurring-campaign}
+## 创建定期活动 {#create-a-recurring-campaign}
 
-循環行銷活動是從定義要執行的工作流程範本和執行排程的特定範本建立的。
+循环活动是从定义要执行的工作流模板和执行计划的特定模板创建的。
 
-### 建立週期性行銷活動的範本 {#create-the-campaign-template}
+### 为定期活动创建模板 {#create-the-campaign-template}
 
-若要建立週期性行銷活動的範本，請遵循下列步驟：
+要为定期活动创建模板，请执行以下步骤：
 
-1. 開啟Campaign檔案總管並瀏覽至 **[!UICONTROL Resources > Templates > Campaign templates]**.
-1. 複製內建 **[!UICONTROL Recurring campaign]** 範本。
+1. 打开Campaign Explorer并浏览至 **[!UICONTROL Resources > Templates > Campaign templates]**.
+1. 复制内置 **[!UICONTROL Recurring campaign]** 模板。
    ![](assets/recurring-campaign-duplicate.png)
-1. 輸入範本名稱和行銷活動的持續時間。
-1. 對於這類行銷活動， **[!UICONTROL Schedule]** 索引標籤以建立範本執行排程。 使用此索引標籤可根據此範本定義行銷活動的執行日期。
+1. 输入模板名称和营销活动的持续时间。
+1. 对于此类营销活动， **[!UICONTROL Schedule]** 添加了选项卡，以便创建模板执行计划。 使用此选项卡可基于此模板定义营销活动的执行日期。
    ![](assets/recurring-campaign-schedule.png)
 
-   執行排程的設定模式與 **[!UICONTROL Scheduler]** 工作流程的物件。 [了解详情](../workflow/scheduler.md)。
+   执行计划的配置模式与 **[!UICONTROL Scheduler]** 工作流对象。 [了解详情](../workflow/scheduler.md)。
 
    >[!CAUTION]
    >
-   >執行排程設定必須小心執行。 週期性行銷活動會根據指定的排程複製其範本的工作流程。 此作業可能會使資料庫過載。
+   >必须仔细执行执行计划配置。 周期性营销活动会根据指定的计划复制其模板的工作流。 此操作可能会使数据库过载。
 
-1. 在中指定一個值 **[!UICONTROL Create in advance for]** 欄位，以針對指出的期間建立對應的工作流程。
-1. 在 **[!UICONTROL Targeting and workflows]** 索引標籤中，根據此範本設計用於行銷活動的工作流程範本。 此工作流程通常包含目標定位引數以及一或多個傳送。
+1. 在中指定一个值 **[!UICONTROL Create in advance for]** 字段以创建指定期间的相应工作流。
+1. 在 **[!UICONTROL Targeting and workflows]** 选项卡，根据此模板设计要在营销活动中使用的工作流模板。 此工作流通常包含定位参数和一个或多个投放。
 
    >[!NOTE]
    >
-   >此工作流程必須儲存為週期性工作流程範本。 若要這麼做，請編輯工作流程屬性並選取 **[!UICONTROL Recurring workflow template]** 中的選項 **[!UICONTROL Execution]** 標籤。
+   >此工作流必须另存为循环工作流模板。 要执行此操作，请编辑工作流属性并选择 **[!UICONTROL Recurring workflow template]** 中的选项 **[!UICONTROL Execution]** 选项卡。
 
    ![](assets/recurring-campaign-wf-properties.png)
 
-### 建立週期性行銷活動 {#create-the-recurring-campaign}
+### 创建定期活动 {#create-the-recurring-campaign}
 
-若要建立週期性行銷活動，並根據範本中定義的排程執行其工作流程，您必須：
+要创建定期活动并根据模板中定义的计划执行其工作流，您必须：
 
-1. 根據您的週期性行銷活動範本建立新的行銷活動。
-1. 填寫工作流程執行排程，在 **[!UICONTROL Schedule]** 標籤。 行銷活動排程可讓您輸入每行的自動工作流程建立或執行開始日期。
+1. 根据您的循环活动模板创建新活动。
+1. 填写工作流执行计划，在 **[!UICONTROL Schedule]** 选项卡。 促销活动计划允许您为每个行输入自动工作流创建或执行起始日期。
 
-   您可以為每行新增下列其他選項：
+   对于每一行，可以添加以下附加选项：
 
-   * 啟用 **[!UICONTROL To be approved]** 在工作流程中強制傳送核准請求的選項。
-   * 啟用 **[!UICONTROL To be started]** 達到開始日期時啟動工作流程的選項。
+   * 启用 **[!UICONTROL To be approved]** 用于在工作流中强制投放审批请求的选项。
+   * 启用 **[!UICONTROL To be started]** 在到达开始日期后启动工作流的选项。
 
-   此 **[!UICONTROL Create in advance for]** 欄位可讓您建立涵蓋輸入期間的所有工作流程。
+   此 **[!UICONTROL Create in advance for]** 字段允许您创建涵盖输入期间的所有工作流。
 
-   執行時 **[!UICONTROL Jobs on campaigns]** 工作流程，專用工作流程會根據行銷活動排程中定義的發生次數來建立。 因此會為每個執行日期建立工作流程。
+   于本公司股权证 **[!UICONTROL Jobs on campaigns]** 工作流，则根据活动计划中定义的发生次数创建专用工作流。 因此，将为每个执行日期创建工作流。
 
-1. 系統會自動從行銷活動中存在的工作流程範本建立週期性工作流程。 可從以下位置檢視： **[!UICONTROL Targeting and workflows]** 索引標籤進行識別。
+1. 自动根据营销策划中存在的工作流模板创建定期工作流。 它们可从以下位置查看 **[!UICONTROL Targeting and workflows]** 选项卡中的选定内容进行标识。
 
    ![](assets/recurring-wf-created.png)
 
-   循環工作流程例項的標籤由其範本標籤和工作流程編號組成，其中的#字元介於。
+   定期工作流实例的标签由其模板标签和工作流编号组成，其中的#字符介于。
 
-   從排程建立的工作流程會自動在 **[!UICONTROL Workflow]** 的欄 **[!UICONTROL Schedule]** 標籤。
+   根据计划创建的工作流会自动在中 **[!UICONTROL Workflow]** 列 **[!UICONTROL Schedule]** 选项卡。
 
    ![](assets/recurring-wf-schedule-executed.png)
 
-   每個工作流程都可從此索引標籤進行編輯。
+   可以从此选项卡中编辑每个工作流。
 
    >[!NOTE]
    >
-   >與工作流程相關之排程明細行的開始日期可從工作流程的變數取得，其語法如下：\
+   >工作流变量中提供了与工作流关联的计划行的开始日期，语法如下：\
    >`$date(instance/vars/@startPlanningDate)`
 
-## 建立定期行銷活動 {#create-a-periodic-campaign}
+## 创建定期营销活动 {#create-a-periodic-campaign}
 
-定期行銷活動是根據特定範本的行銷活動，可讓您根據執行排程建立行銷活動執行個體。 系統會根據週期性行銷活動範本，根據範本排程中定義的頻率，自動建立行銷活動執行個體。
+定期营销活动是基于特定模板的营销活动，通过它，可根据执行计划创建营销活动实例。 活动实例是根据定期活动模板自动创建的，具体取决于模板计划中定义的频率。
 
-### 建立行銷活動範本 {#create-the-campaign-template-1}
+### 创建活动模板 {#create-the-campaign-template-1}
 
-1. 開啟Campaign檔案總管並瀏覽至 **[!UICONTROL Resources > Templates > Campaign templates]**.
-1. 複製內建 **[!UICONTROL Periodic campaign]** 範本。
-1. 輸入範本的屬性。
-
-   >[!NOTE]
-   >
-   >指派範本的操作者必須具有適當許可權，才能在選取的方案建立行銷活動。
-
-1. 建立與此範本關聯的工作流程。 此工作流程在範本建立的每個定期行銷活動中重複。
+1. 打开Campaign Explorer并浏览至 **[!UICONTROL Resources > Templates > Campaign templates]**.
+1. 复制内置 **[!UICONTROL Periodic campaign]** 模板。
+1. 输入模板的属性。
 
    >[!NOTE]
    >
-   >此工作流程是工作流程範本。 無法從行銷活動範本執行。
+   >分配了模板的操作员必须具有相应的权限，才能在所选项目群中创建营销策划。
 
-1. 完成其執行排程，如同週期性行銷活動範本：按一下 **[!UICONTROL Add]** 按鈕並定義開始和結束日期，或透過連結填寫執行排程。
+1. 创建与此模板关联的工作流。 模板创建的每个定期营销活动中都会复制此工作流。
+
+   >[!NOTE]
+   >
+   >此工作流是一个工作流模板。 无法从营销活动模板执行该操作。
+
+1. 与定期活动模板一样，完成其执行计划：单击 **[!UICONTROL Add]** 按钮并定义开始日期和结束日期，或通过链接填写执行计划。
 
    >[!CAUTION]
    >
-   >定期行銷活動範本會根據上述定義的排程建立新的行銷活動。 因此，必須小心完成，以避免超載Adobe Campaign資料庫。
+   >定期活动模板根据以上定义的计划创建新活动。 因此，必须仔细完成此操作，以避免超载Adobe Campaign数据库。
 
-1. 一旦達到執行開始日期，就會自動建立相符的行銷活動。 它會採用其範本的所有特性。
+1. 一旦达到执行开始日期，就会自动创建匹配的营销活动。 它具备了模板的所有特征。
 
-   每個行銷活動都可透過範本排程進行編輯。
+   可以通过模板计划编辑每个营销活动。
 
-   每個定期行銷活動都包含相同的元素。 建立後，即會將其管理為標準行銷活動。
+   每个定期营销活动都包含相同的元素。 创建后，即作为标准营销活动进行管理。

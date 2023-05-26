@@ -1,6 +1,6 @@
 ---
 title: 使用工作流数据
-description: 瞭解如何使用工作流程資料
+description: 了解如何使用工作流数据
 feature: Workflows, Data Management
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
 source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
@@ -12,29 +12,29 @@ ht-degree: 8%
 
 # 使用工作流数据{#how-to-use-workflow-data}
 
-您可以使用工作流程活動來執行多個任務。 請尋找以下使用範例，說明如何透過建立清單、管理訂閱、透過工作流程傳送訊息，或豐富您的傳送內容及其閱聽眾，來更新資料庫。
+您可以使用工作流活动执行多个任务。 查找以下使用示例，这些示例用于通过创建列表来更新数据库、管理订阅、通过工作流发送消息，或丰富您的投放及其受众。
 
-以下提供一組工作流程使用案例： [本節](workflow-use-cases.md).
+中提供了一系列工作流用例 [本节](workflow-use-cases.md).
 
 ## 数据生命周期 {#data-life-cycle}
 
-### 工作流程臨時工作表 {#work-table}
+### 工作流临时工作表 {#work-table}
 
-在工作流程中，從一個活動傳輸到另一個活動的資料會儲存在臨時工作表中。
+在工作流中，从一个活动传输到另一个活动的数据存储在临时工作表中。
 
-在適當的轉變上按一下滑鼠右鍵，即可顯示和分析此資料。
+可以通过右键单击相应的过渡来显示和分析此数据。
 
 ![](assets/wf-right-click-analyze.png)
 
-要執行此操作，請選取相關功能表：
+要执行此操作，请选择相关菜单：
 
 * **[!UICONTROL Display the target...]**
 
-   此功能表會顯示目標母體上的可用資料。
+   此菜单显示目标群体的可用数据。
 
    ![](assets/wf-right-click-display.png)
 
-   您可以在下列位置存取工作表結構： **[!UICONTROL Schema]** 標籤。
+   您可以在以下位置访问工作表的结构 **[!UICONTROL Schema]** 选项卡。
 
    ![](assets/wf-right-click-schema.png)
 
@@ -42,11 +42,11 @@ ht-degree: 8%
 
 * **[!UICONTROL Analyze target...]**
 
-   此功能表可讓您存取描述性分析精靈，該精靈可讓您產生轉變資料的統計資料和報告。
+   通过此菜单，您可以访问描述性分析向导，该向导允许您生成有关过渡数据的统计和报告。
 
-   有關詳細資訊，請參閱 [Campaign Classic v7檔案](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}.
+   有关更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}.
 
-在執行工作流程時清除目標資料。 只能存取最後一個工作表。 您可以設定工作流程，讓所有工作表都保持可存取狀態：檢查 **[!UICONTROL Keep the result of interim populations between two executions]** 工作流程屬性中的選項。
+在执行工作流时清除目标数据。 只能访问最后一个工作表。 您可以配置工作流，以便所有工作表都保持可访问状态：选中 **[!UICONTROL Keep the result of interim populations between two executions]** 选项。
 
 ![](assets/wf-purge-data-option.png)
 
@@ -55,25 +55,25 @@ ht-degree: 8%
 >**不得**&#x200B;在&#x200B;**生产**&#x200B;工作流中选中此选项。此选项用于分析结果，并且是仅为测试目的而设计，因此只能用于开发或暂存环境。
 
 
-### 善用目標資料 {#target-data}
+### 利用目标数据 {#target-data}
 
-儲存在工作流程臨時工作表中的資料可用於個人化任務。 資料可用於 [個人化欄位](../../v8/send/personalization-fields.md).
+工作流临时工作表中存储的数据可用于个性化任务。 数据可用于 [个性化字段](../../v8/send/personalization-fields.md).
 
-舉例來說，這可讓您使用透過傳送中的清單收集的資料。 要執行此操作，請使用下列語法：
+例如，这使您能够在投放中使用通过列表收集的数据。 为此，请使用以下语法：
 
 ```
 %= targetData.FIELD %
 ```
 
-**[!UICONTROL Target extension]** (targetData)型別個人化元素不適用於目標工作流程。 必須在工作流程中建立傳遞目標，並在傳遞的入站轉變中指定。
+**[!UICONTROL Target extension]** (targetData)类型的个性化元素不适用于定位工作流。 必须在工作流中构建投放目标，并在投放的集客过渡中指定。
 
-在以下範例中，您正在收集客戶資訊清單，以用於個人化電子郵件中。 应用以下步骤：
+在以下示例中，您将收集客户信息列表，以便在个性化电子邮件中使用。 应用以下步骤：
 
-1. 建立工作流程以收集資訊，將其與資料庫中已存在的資料進行調解，然後開始傳送。
+1. 创建一个工作流以收集信息，将其与数据库中已有的数据进行协调，然后开始投放。
 
    ![](assets/wf-targetdata-sample-1.png)
 
-1. 在我們的範例中，檔案內容如下：
+1. 在我们的示例中，文件内容如下所示：
 
    ```
    Music,First name,Last name,Account,CD/DVD,Card
@@ -85,57 +85,57 @@ ht-degree: 8%
    [...]
    ```
 
-   若要載入檔案，請設定 **[!UICONTROL Data loading (file)]** 活動如下：
+   要加载文件，请配置 **[!UICONTROL Data loading (file)]** 活动如下所示：
 
    ![](assets/wf-targetdata-sample-2.png)
 
-1. 設定 **[!UICONTROL Enrichment]** 調解收集到的資料與Adobe Campaign資料庫中現有資料的活動。 在此，調解金鑰是帳號：
+1. 配置 **[!UICONTROL Enrichment]** 活动将收集的数据与Adobe Campaign数据库中已有的数据进行协调。 在此，对帐密钥是帐号：
 
    ![](assets/wf-targetdata-sample-3.png)
 
-1. 然後設定 **[!UICONTROL Delivery]**：此變數根據範本建立，收件者則由入站轉變指定。
+1. 然后配置 **[!UICONTROL Delivery]**：根据模板创建，收件人由集客过渡指定。
 
    ![](assets/wf-targetdata-sample-4.png)
 
    >[!CAUTION]
    >
-   >只能使用轉變中包含的資料來個人化傳遞。 **targetdata** 型別個人化欄位僅適用於 **[!UICONTROL Delivery]** 活動。
+   >只能使用过渡中包含的数据来个性化投放。 **targetdata** 类型个性化字段仅适用于的集客群体 **[!UICONTROL Delivery]** 活动。
 
-1. 在傳遞範本中，使用在工作流程中收集的欄位。
+1. 在投放模板中，使用在工作流中收集的字段。
 
-   要執行此操作，請插入 **[!UICONTROL Target extension]** 輸入個人化欄位。
+   要执行此操作，请插入 **[!UICONTROL Target extension]** 键入个性化字段。
 
    ![](assets/wf-targetdata-sample-5.png)
 
-   在此，我們要插入客戶最愛的音樂流派和媒體型別（CD或DVD），如工作流程收集的檔案中所述。
+   在此，我们要插入客户最喜爱的音乐流派和媒体类型（CD或DVD），如工作流收集的文件中所述。
 
-   此外，我們將為熟客卡持有者（即「卡片」值等於1的收件者）新增優惠券。
+   作为补充，我们将为会员卡持有者（即“卡”值等于1的收件人）添加一张优惠券。
 
    ![](assets/wf-targetdata-sample-6.png)
 
-   **[!UICONTROL Target extension]** (targetData)型別資料會使用與所有個人化欄位相同的特性，插入傳遞中。 它們也可用於主旨、連結標籤或連結本身。
+   **[!UICONTROL Target extension]** (targetData)类型数据使用与所有个性化字段相同的特征插入到投放中。 它们还可以在主题、链接标签或链接本身中使用。
 
 
 ## 更新数据库 {#update-the-database}
 
-所有收集的資料都可用於更新資料庫或用於傳遞。 例如，您可以豐富訊息內容個人化的可能性（包括訊息中的合約數、指定去年的平均購物車數等） 或詳細母體目標定位（傳送訊息給合約共同持有者、目標定位線上服務的1,000個最佳訂閱者等）。 此資料也可以匯出或封存於清單中。
+所有收集的数据都可用于更新数据库或在投放中使用。 例如，您可以丰富消息内容个性化可能性（包括消息中的合同数、指定去年购物车的平均数量等） 或详细群体定位（向合同共同所有者发送消息，将目标定位为在线服务的1,000个最佳订阅者，等等）。 此数据也可以导出或存档在列表中。
 
-### 更新清單  {#list-updates}
+### 更新列表  {#list-updates}
 
-Adobe Campaign資料庫和現有清單的資料可以使用兩個專用活動進行更新：
+Adobe Campaign数据库和现有列表的数据可以使用两个专用活动进行更新：
 
-* 此 **[!UICONTROL List update]** 活動可讓您將工作表儲存在資料表中。
+* 此 **[!UICONTROL List update]** 通过活动，可将工作表存储在数据列表中。
 
-   您可以選取或建立現有清單。 在這種情況下，會計算記錄資料夾的名稱與可能。
+   您可以选择或创建现有列表。 在这种情况下，将计算记录文件夹的名称，并可能需要计算记录文件夹。
 
    ![](assets/s_user_create_list.png)
 
-   請參閱 [清單更新](list-update.md).
+   请参阅 [列表更新](list-update.md).
 
-* 此 **[!UICONTROL Update data]** 活動會大量更新資料庫中的欄位。
+* 此 **[!UICONTROL Update data]** 活动对数据库中的字段执行批量更新。
 
-   有關詳細資訊，請參閱 [更新資料](update-data.md).
+   有关更多信息，请参阅 [更新数据](update-data.md).
 
 ### 管理订阅 {#subscription-management}
 
-若要瞭解透過工作流程訂閱和取消訂閱資訊服務的收件者，請參閱 [訂閱服務](subscription-services.md).
+要了解如何通过工作流订阅和取消订阅信息服务的收件人，请参阅 [订阅服务](subscription-services.md).

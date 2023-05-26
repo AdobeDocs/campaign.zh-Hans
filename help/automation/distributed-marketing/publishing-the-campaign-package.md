@@ -15,50 +15,50 @@ ht-degree: 2%
 
 
 
-中央實體運運算元會發佈他們想要提供給中本地實體的行銷活動 **[!UICONTROL list of campaign packages]**.
+中央实体操作员在中发布他们希望提供给本地实体的营销活动 **[!UICONTROL list of campaign packages]**.
 
-在行銷活動套件清單中發佈行銷活動套件之前，必須先由中央實體核准行銷活動套件。 要執行此操作，您可以透過 **[!UICONTROL Approval parameters]** 行銷活動套件中的連結。
+在营销活动包列表中发布营销活动包之前，必须由中央实体批准营销活动包。 要执行此操作，您可以通过 **[!UICONTROL Approval parameters]** 营销活动包中的链接。
 
-## 指派稽核者 {#assigning-a-reviewer}
+## 分配审阅人 {#assigning-a-reviewer}
 
-若要選取稽核者，請按一下 **[!UICONTROL Approval parameters]** 從campaign套件連結並從下拉式清單中選擇相關的稽核者。
+要选择审阅人，请单击 **[!UICONTROL Approval parameters]** 链接，然后从下拉列表中选择相关的审阅者。
 
 ![](assets/s_advuser_mkg_dist_define_valid.png)
 
-接著，您可以按一下「 」，開始核准程式 **[!UICONTROL Submit for approval]**.
+然后，您可以通过单击 **[!UICONTROL Submit for approval]**.
 
 ![](assets/s_advuser_mkg_dist_valid_process.png)
 
-然後會傳送通知訊息給檢閱者，以確認此行銷活動套件的可用性。 該訊息包含透過網頁存取接受或拒絕核准的連結。
+然后，会向审核者发送一条通知消息，以确认此营销活动包的可用性。 该消息包含通过Web访问接受或拒绝批准的链接。
 
 ![](assets/s_advuser_mkg_dist_valid_process1.png)
 
 >[!NOTE]
 >
->在組織實體層級，您也可以指定稽核者來核准訂單。 有關詳細資訊，請參閱 [組織實體](about-distributed-marketing.md#organizational-entities).
+>在组织实体级别，您还可以指定审阅人来批准订单。 有关更多信息，请参阅 [组织实体](about-distributed-marketing.md#organizational-entities).
 
-## 新增其他稽核者 {#adding-other-reviewers}
+## 添加其他审阅人 {#adding-other-reviewers}
 
-您可以從以下位置新增其他稽核者： **[!UICONTROL Edit...]** 連結，可在行銷活動套件中找到 **[!UICONTROL Approval parameters...]** 標籤。
+您可以从以下位置添加其他审阅人 **[!UICONTROL Edit...]** 链接，可在campaign包的 **[!UICONTROL Approval parameters...]** 选项卡。
 
 ![](assets/s_advuser_mkg_dist_select_op_valid.png)
 
-## 核准期間 {#approval-periods}
+## 审批期 {#approval-periods}
 
-依預設，稽核者可在提交日期起的三天內處理核准。
+默认情况下，审核者将在提交日期起三天后进行审批。
 
-在編輯稽核者視窗中，您也可以設定提醒，以在行銷活動套件未核準時傳送一或多則訊息。 若要這麼做，請按一下 **[!UICONTROL Add reminder]** 連結，然後 **[!UICONTROL Add]** 按鈕。
+在“编辑审阅者”窗口中，您还可以设置提醒，以便在活动包未获批准时发送一条或多条消息。 要执行此操作，请单击 **[!UICONTROL Add reminder]** 链接，然后 **[!UICONTROL Add]** 按钮。
 
-可以在指定日期傳送提醒和/或 **x** 提交日期後幾天。 可以在提醒表的第一欄中設定提醒型別。 在以下範例中，稽核者將在2014年1月29日的收到提醒訊息，即在 **[!UICONTROL Date]** 欄，以及核准期結束前一天（即提交核准日期後兩天）的第二個提醒。
+可以在给定日期发送提醒和/或 **x** 天后提交。 可以在提醒表的第一列中配置提醒类型。 在以下示例中，查看者将在2014年1月29日(即在 **[!UICONTROL Date]** 栏内提交第二次提醒，且为批准期结束前一天，即提交批准日期后两天。
 
 ![](assets/s_advuser_mkg_dist_reminder_planning.png)
 
-定義好封裝且提交封裝以供核准後，執行排程會顯示在 **[!UICONTROL Audit]** 標籤。 它會顯示根據先前設定計算出的處理截止日期，以及所有已設定提醒的日期。
+定义包并提交包以供批准后，执行计划将显示在 **[!UICONTROL Audit]** 选项卡。 它显示根据以前的配置计算出的处理截止日期，以及所有已配置提醒的日期。
 
-## 透過Adobe Campaign主控台核准 {#approving-via-the-adobe-campaign-console}
+## 通过Adobe Campaign控制台进行审批 {#approving-via-the-adobe-campaign-console}
 
-如果未指定稽核者或如果通知的操作者均未核准該套件，則 **[!UICONTROL Approve the package]** 按鈕可讓您直接從行銷活動套件進行核准 **[!UICONTROL Dashboard]** 或來自套件概觀。
+如果未指定审查者或通知的操作员均未批准包，则 **[!UICONTROL Approve the package]** 按钮允许您直接从营销活动包进行审批 **[!UICONTROL Dashboard]** 或包概述中的。
 
 ![](assets/s_advuser_mkg_dist_valid_button.png)
 
-核准後，行銷活動會發佈、新增到清單中，並在達到可用日期後立即供本地實體使用。 如果在建立行銷活動時指定了本機實體，則會傳送訊息給通知群組中的操作員，讓他們知道行銷活動可用。 如果事先未指定實體，則預設情況下，所有本機實體都可使用促銷活動。 有關詳細資訊，請參閱 [組織實體](about-distributed-marketing.md#organizational-entities).
+批准后，将发布营销活动并将其添加到列表，在达到其可用日期后，本地实体即可使用它。 如果在创建营销策划时指定了本地实体，则会向通知组中的操作员发送一条消息，让他们知道营销策划可用。 如果未预先指定实体，则默认情况下所有本地实体都可以使用营销活动。 有关更多信息，请参阅 [组织实体](about-distributed-marketing.md#organizational-entities).

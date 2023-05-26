@@ -1,6 +1,6 @@
 ---
-title: 使用Adobe Campaign傳送直接LINE訊息
-description: 開始使用連線訊息
+title: 使用Adobe Campaign发送直接LINE消息
+description: LINE消息传递入门
 feature: Line App
 role: Data Engineer
 level: Beginner
@@ -12,11 +12,11 @@ ht-degree: 8%
 
 ---
 
-# 建立LINE傳遞
+# 创建行投放
 
-LINE是免費立即訊息、語音和視訊通話的應用程式，可在所有行動裝置和個人電腦上使用。 Adobe Campaign可讓您傳送LINE訊息。
+LINE是一款免费即时消息、语音和视频呼叫应用程序，可在所有移动设备和个人电脑上使用。 Adobe Campaign允许您发送LINE消息。
 
 
-![](../assets/do-not-localize/book.png) 進一步瞭解 [Campaign Classic v7檔案](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html?lang=zh-Hans){target="_blank"}.
+![](../assets/do-not-localize/book.png) 了解详情，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html?lang=zh-Hans){target="_blank"}.
 
-![](../assets/do-not-localize/book.png) 請參閱此 [端對端範例](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html#example--create-and-send-a-personalized-line-message){target="_blank"} 在Campaign Classic v7檔案中建立並傳送您的第一個LINE傳遞。
+![](../assets/do-not-localize/book.png) 请参阅此 [端到端示例](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html#example--create-and-send-a-personalized-line-message){target="_blank"} 在Campaign Classicv7文档中创建并发送您的第一个LINE投放。

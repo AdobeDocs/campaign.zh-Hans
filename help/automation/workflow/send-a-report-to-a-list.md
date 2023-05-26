@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 向列表发送报告
-description: 瞭解如何使用工作流程將報告傳送至清單
+description: 了解如何使用工作流将报告发送到列表
 feature: Workflows
 exl-id: 5bc576d0-cab7-4d26-a3a5-91982a00e356
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
@@ -13,92 +13,92 @@ ht-degree: 3%
 
 # 向列表发送报告{#send-a-report-to-a-list}
 
-此使用案例詳細說明如何產生每月現成可用的 **[!UICONTROL Tracking indicators]** 以PDF格式報告，以及如何將其傳送給收件者清單。
+此用例详细说明了如何每月生成一个现成的版本 **[!UICONTROL Tracking indicators]** PDF格式的报告，以及如何将其发送给收件人列表。
 
 ![](assets/use_case_report_intro.png)
 
-此使用案例的主要實施步驟為：
+此用例的主要实施步骤包括：
 
-* 為此報告建立收件者清單。 [了解详情](#step-1--create-the-recipient-list)。
-* 建立傳遞範本，每次執行工作流程時都會建立新的傳遞。 [了解详情](#step-2--create-the-delivery-template)。
-* 建立工作流程，以產生PDF格式的報告並傳送給收件者清單。 [了解详情](#step-3--create-the-workflow)).
+* 为此报告创建收件人列表。 [了解详情](#step-1--create-the-recipient-list)。
+* 创建一个投放模板，每次执行工作流时都会创建一个新投放。 [了解详情](#step-2--create-the-delivery-template)。
+* 创建一个工作流，以生成PDF格式的报告，并将其发送到收件人列表。 [了解详情](#step-3--create-the-workflow)).
 
-## 步驟1：建立收件者清單 {#step-1--create-the-recipient-list}
+## 步骤1：创建收件人列表 {#step-1--create-the-recipient-list}
 
-若要建立目標收件者清單，請遵循下列步驟：
+要创建定向收件人列表，请执行以下步骤：
 
-1. 瀏覽至 **[!UICONTROL Profiles and targets]** 索引標籤，按一下 **[!UICONTROL Lists]** 連結。
+1. 浏览至 **[!UICONTROL Profiles and targets]** 选项卡，单击 **[!UICONTROL Lists]** 链接。
 1. 单击 **[!UICONTROL Create]** 按钮。
-1. 選取 **[!UICONTROL New list]** 和建立新收件者清單，以供報表傳送至。
+1. 选择 **[!UICONTROL New list]** 并为要发送的报告创建新的收件人列表。
 
-有關建立清單的詳細資訊，請參閱 [本節](../../v8/audiences/create-audiences.md).
+有关创建列表的详细信息，请参阅 [本节](../../v8/audiences/create-audiences.md).
 
-## 步驟2：建立傳遞範本 {#step-2--create-the-delivery-template}
+## 步骤2：创建投放模板 {#step-2--create-the-delivery-template}
 
-若要建立傳遞範本，請遵循下列步驟：
+要创建投放模板，请执行以下步骤：
 
-1. 瀏覽至 **[!UICONTROL Resources > Templates > Delivery templates]** Adobe Campaign檔案總管的節點並複製 **[!UICONTROL Email delivery]** 內建範本。
+1. 浏览至 **[!UICONTROL Resources > Templates > Delivery templates]** Adobe Campaign节点并复制 **[!UICONTROL Email delivery]** 内置模板。
 
-   如需建立傳遞範本的詳細資訊，請參閱 [本節](../../v8/send/create-templates.md).
+   有关创建投放模板的更多信息，请参阅 [本节](../../v8/send/create-templates.md).
 
-1. 輸入範本引數：標籤、目標（先前建立的收件者清單）、主旨與內容。
+1. 输入模板参数：标签、目标（以前创建的收件人列表）、主题和内容。
 
-   每次執行工作流程時， **[!UICONTROL Tracking indicators]** 報告已更新，如中所述： [步驟3：建立工作流程](#step-3--creating-the-workflow))。
+   每次执行工作流时， **[!UICONTROL Tracking indicators]** 报告已更新，如中所述 [步骤3：创建工作流](#step-3--creating-the-workflow))。
 
-1. 若要在傳送中包含最新版本的報告，您需要新增 **[!UICONTROL Calculated attachment]**：
+1. 要在投放中包含最新版本的报表，您需要添加 **[!UICONTROL Calculated attachment]**：
 
-   * 按一下 **[!UICONTROL Attachments]** 連結，並按一下 **[!UICONTROL Add]** 按鈕。 选择 **[!UICONTROL Calculated attachment...]**。
+   * 单击 **[!UICONTROL Attachments]** 链接，然后单击 **[!UICONTROL Add]** 按钮。 选择 **[!UICONTROL Calculated attachment...]**。
 
       ![](assets/use_case_report_4.png)
 
-   * 在 **[!UICONTROL Type]** 下拉式清單，選取最新的選項： **[!UICONTROL File name is computed during delivery of each message (it may then depend on the recipient profile)]**.
+   * 在 **[!UICONTROL Type]** 从下拉列表中，选择最新的选项： **[!UICONTROL File name is computed during delivery of each message (it may then depend on the recipient profile)]**.
 
       ![](assets/use_case_report_5.png)
 
-      在中輸入的值 **[!UICONTROL Label]** 欄位不會出現在最終傳遞中。
+      在中输入的值 **[!UICONTROL Label]** 字段不会显示在最终投放中。
 
-   * 在文字區域中，輸入檔案的存取路徑和名稱。
+   * 在文本区域中，输入文件的访问路径和名称。
 
       ![](assets/use_case_report_6.png)
 
       >[!CAUTION]
       >
-      >路徑和名稱必須與 **[!UICONTROL JavaScript code]** 輸入工作流程的活動，如中所述 [步驟3：建立工作流程](#step-3--creating-the-workflow).
+      >路径和名称必须与 **[!UICONTROL JavaScript code]** 键入工作流的活动，如中所述 [步骤3：创建工作流](#step-3--creating-the-workflow).
 
-   * 選取 **[!UICONTROL Advanced]** 標籤並核取 **[!UICONTROL Script the name of the file name displayed in the mails sent]**. 在文字區域中，輸入最終傳遞中的附件名稱。
+   * 选择 **[!UICONTROL Advanced]** 制表符和勾选 **[!UICONTROL Script the name of the file name displayed in the mails sent]**. 在文本区域中，输入最终投放中的附件名称。
 
       ![](assets/use_case_report_6b.png)
 
-## 步驟3：建立工作流程 {#step-3--creating-the-workflow}
+## 步骤3：创建工作流 {#step-3--creating-the-workflow}
 
-針對此使用案例建立下列工作流程。
+为此用例创建以下工作流。
 
 ![](assets/use_case_report_8.png)
 
-它使用三個活動：
+它使用三个活动：
 
-* A **[!UICONTROL Scheduler]** 每月執行一次工作流程的活動，
-* A **[!UICONTROL JavaScript code]** 會以PDF格式產生報表的活動，
-* A **[!UICONTROL Delivery]** 活動，會參考先前建立的傳遞範本。
+* A **[!UICONTROL Scheduler]** 每月执行一次工作流的活动，
+* A **[!UICONTROL JavaScript code]** 活动生成PDF格式的报告，
+* A **[!UICONTROL Delivery]** 活动，引用之前创建的投放模板。
 
-若要建立此工作流程，請遵循下列步驟：
+要构建此工作流，请执行以下步骤：
 
-1. 瀏覽至 **[!UICONTROL Administration > Production > Technical workflows]** Campaign節點探索並建立新資料夾以儲存您的工作流程。
-1. 建立新的工作流程。
+1. 浏览至 **[!UICONTROL Administration > Production > Technical workflows]** 节点，并创建一个新文件夹来存储您的工作流。
+1. 创建新工作流。
 
    ![](assets/use_case_report_7.png)
 
-1. 從新增開始 **[!UICONTROL Scheduler]** 輸入活動並進行設定，讓工作流程在當月第一個星期一執行。
+1. 首先添加 **[!UICONTROL Scheduler]** 键入并配置活动，以便工作流在每月第一个星期一执行。
 
    ![](assets/use_case_report_9.png)
 
-   有關設定排程器的詳細資訊，請參閱 [排程器](scheduler.md).
+   有关配置调度程序的详细信息，请参阅 [调度程序](scheduler.md).
 
-1. 然後新增 **[!UICONTROL JavaScript code]** 型別活動。
+1. 然后添加 **[!UICONTROL JavaScript code]** 键入activity。
 
    ![](assets/use_case_report_10.png)
 
-   在編輯區域中輸入下列程式碼：
+   在编辑区域中输入以下代码：
 
    ```sql
    var reportName = "indicators";
@@ -112,25 +112,25 @@ ht-degree: 3%
    ```
 
 
-   ，並使用下列變數：
+   变量：
 
-   * **var reportName**：以雙引號輸入報表的內部名稱。 在此案例中， **追蹤指標** 報表為「deliveryFeedback」。
-   * **var路徑**：輸入檔案的儲存路徑(「tmp」)、您要提供檔案的名稱(「deliveryFeedback」)和副檔名(「.pdf」)。 在此案例中，我們使用內部名稱作為檔案名稱。 值必須位於雙引號之間，並以「+」字元分隔。
+   * **var reportName**：用双引号输入报表的内部名称。 在本例中， **跟踪指示器** 报告为“deliveryFeedback”。
+   * **var路径**：输入文件的保存路径(“tmp”)、要为文件指定的名称(“deliveryFeedback”)和文件扩展名(“.pdf”)。 在本例中，我们使用内部名称作为文件名。 值需要位于双引号之间并以“+”字符分隔。
 
       >[!CAUTION]
       >
-      >檔案必須儲存在伺服器上。 您必須輸入與中的相同的路徑和相同的名稱 **[!UICONTROL General]** 已計算附件之編輯視窗的索引標籤（如詳細） [此處](#step-2--create-the-delivery-template))。
+      >该文件必须保存在服务器上。 您必须输入与中相同的路径和名称 **[!UICONTROL General]** 已计算附件的“编辑”窗口的“选项卡”（详细信息） [此处](#step-2--create-the-delivery-template))。
 
-   * **var exportFormat**：輸入檔案的匯出格式(「PDF」)。
-   * **var _ctx** （內容）：在此案例中，我們使用 **[!UICONTROL Tracking indicators]** 在其全域內容中報告。
+   * **var exportFormat**：输入文件的导出格式(PDF)。
+   * **var _ctx** （上下文）：在本例中，我们使用 **[!UICONTROL Tracking indicators]** 在其全局上下文中报告。
 
-1. 完成方式是新增 **[!UICONTROL Delivery]** 活動，包含下列選項：
+1. 通过添加 **[!UICONTROL Delivery]** 活动，选项如下：
 
    ![](assets/use_case_report_11.png)
 
-   * **[!UICONTROL Delivery]**：選取 **[!UICONTROL New, created from a template]**，並選取先前建立的傳遞範本。
-   * 對於 **[!UICONTROL Recipients]** 和 **[!UICONTROL Content]** 欄位，選取 **[!UICONTROL Specified in the delivery]**.
-   * **[!UICONTROL Action to perform]**：選取 **[!UICONTROL Prepare and start]**.
-   * 取消勾選 **[!UICONTROL Generate an outbound transition]** 和 **[!UICONTROL Process errors]** 選項。
+   * **[!UICONTROL Delivery]**：选择 **[!UICONTROL New, created from a template]**，然后选择之前创建的投放模板。
+   * 对于 **[!UICONTROL Recipients]** 和 **[!UICONTROL Content]** 字段，选择 **[!UICONTROL Specified in the delivery]**.
+   * **[!UICONTROL Action to perform]**：选择 **[!UICONTROL Prepare and start]**.
+   * 取消选中 **[!UICONTROL Generate an outbound transition]** 和 **[!UICONTROL Process errors]** 选项。
 
-1. 儲存變更並啟動工作流程。 該訊息會在該月第一個星期一傳送至收件者清單，並附上報告。
+1. 保存更改并启动工作流。 该消息将于每月第一个星期一发送到收件人列表，并随附报告。

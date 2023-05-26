@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 收件匣轉譯技術工作流程
-description: 本節說明隨收件匣轉譯套件安裝的技術工作流程
+title: 收件箱呈现技术工作流
+description: 本节介绍随收件箱呈现包一起安装的技术工作流
 feature: Workflows, Inbox Rendering
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
@@ -11,11 +11,11 @@ ht-degree: 6%
 ---
 
 
-# 收件匣轉譯(IR){#inbox-rendering}
+# 收件箱呈现(IR){#inbox-rendering}
 
 
 
-以下詳述的工作流程會隨 **收件匣轉譯(IR)** 模組（預設）。
+下面详述的工作流随 **收件箱呈现(IR)** 默认模块。
 
 <table> 
  <tbody> 
@@ -25,9 +25,9 @@ ht-degree: 6%
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>更新收件匣轉譯的種子網路</strong><br /> </td> 
-   <td> <span class="uicontrol">updateRenderingSeeds</span> <br /> </td> 
-   <td> 此工作流程會更新用於收件匣轉譯的電子郵件地址，而且只有在HTTPS連線埠開啟的情況下，才能運作。 <strong>deliverability.neolane.net</strong>.<br /> </td> 
+   <td> <strong>更新收件箱渲染的种子网络</strong><br /> </td> 
+   <td> <span class="uicontrol">updateRenderingSeed</span> <br /> </td> 
+   <td> 此工作流会更新用于收件箱渲染的电子邮件地址，并且仅在打开HTTPS端口时有效。 <strong>deliverability.neolane.net</strong>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

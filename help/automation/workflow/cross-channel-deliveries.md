@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 跨渠道投放
-description: 進一步瞭解跨頻道傳遞
+description: 了解有关跨渠道投放的更多信息
 feature: Workflows, Channels Activity
 exl-id: fedcffcd-cf9b-4c3d-bd25-cb87dda30192
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
@@ -13,42 +13,42 @@ ht-degree: 4%
 
 # 跨渠道投放{#cross-channel-deliveries}
 
-跨頻道傳遞適用於 **[!UICONTROL Deliveries]** 索引標籤/ [行銷活動工作流程](campaign-workflows.md) 活動。
+跨渠道投放可在 **[!UICONTROL Deliveries]** 选项卡/ [活动工作流](campaign-workflows.md) 活动。
 
-選取傳遞所依據的範本，並定義其內容。
+选择投放所基于的模板并定义其内容。
 
-您可以使用不同的目標定位活動，在工作流程上游指定傳送目標。
+您可以使用不同的定向活动，在工作流上游指定投放目标。
 
-在以下範例中，瞭解如何建立工作流程，以傳送推播通知訂閱者的電子郵件或簡訊，然後在一週後傳送推播通知。 操作步骤：
+在以下示例中，了解如何创建工作流来向推送通知订阅者发送电子邮件或短信，然后在一周后发送推送通知。 操作步骤：
 
 1. 创建营销策划.
-1. 在 **[!UICONTROL Targeting and workflows]** 索引標籤中，新增 **[!UICONTROL Query]** 活動。
-1. 設定查詢：選取訂閱推播通知的收件者作為目標維度。
+1. 在 **[!UICONTROL Targeting and workflows]** 选项卡，添加 **[!UICONTROL Query]** 活动。
+1. 配置查询：选择订阅推送通知的收件人作为目标维度。
 
    >[!NOTE]
    >
-   >對於推播通知，請使用 **訂閱者應用程式** 目標維度。
+   >对于推送通知，请使用 **订阅者申请** 目标维度。
 
    ![](assets/cross_channel_delivery_1.png)
 
-1. 將篩選條件新增至您的查詢。 在此情況下，我們將選取擁有行動電話號碼或電子郵件地址的收件者。
+1. 将筛选条件添加到查询。 在这种情况下，我们将选择具有手机号码或电子邮件地址的收件人。
 
    ![](assets/cross_channel_delivery_2.png)
 
-1. 新增 **[!UICONTROL Split]** 活動到您的工作流程，以劃分擁有行動號碼和電子郵件地址的收件者。
-1. 在 **[!UICONTROL Delivery]** 索引標籤中，選取每個目標的傳送。
+1. 添加 **[!UICONTROL Split]** 活动到您的工作流，以划分具有手机号码的收件人和具有电子邮件地址的收件人。
+1. 在 **[!UICONTROL Delivery]** 选项卡，为每个目标选择一个投放。
 
-   按兩下工作流程中的傳送活動，以傳統傳送精靈相同的方式建立您的傳送。
+   通过双击工作流中的投放活动，以与使用经典投放向导相同的方式创建投放。
 
    ![](assets/cross_channel_delivery_3.png)
 
-1. 新增並設定 **[!UICONTROL Wait]** 活動，讓收件者無法一次收到太多傳遞。
-1. 新增 **[!UICONTROL Split]** 劃分iOS或Android行動應用程式訂閱者的活動。
+1. 添加和配置 **[!UICONTROL Wait]** 活动，以便收件人不会一次收到太多投放。
+1. 添加 **[!UICONTROL Split]** 活动以划分iOS或Android移动应用程序的订阅者。
 
-   選取每個作業系統的服務。
+   为每个操作系统选择服务。
 
    ![](assets/cross_channel_delivery_4.png)
 
-1. 選取並設定每個作業系統的行動應用程式傳送。
+1. 为每个操作系统选择并配置移动应用程序投放。
 
    ![](assets/cross_channel_delivery_5.png)

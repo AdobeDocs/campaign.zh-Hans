@@ -1,6 +1,6 @@
 ---
-title: 在Campaign中建立設定檔對象
-description: 瞭解如何建立清單和建立受眾
+title: 在Campaign中创建用户档案受众
+description: 了解如何创建列表和构建受众
 feature: Audiences, Profiles
 role: User
 level: Beginner
@@ -12,28 +12,28 @@ ht-degree: 22%
 
 ---
 
-# 在清單中建立對象{#create-segments}
+# 在列表中创建受众{#create-segments}
 
-使用Campaign清單來建立及組織您的對象。
+使用Campaign列表创建和组织受众。
 
-清單是一組靜態的聯絡人，可在傳遞動作中定位，或在匯入或其他工作流程動作中更新。 例如，透過查詢從資料庫中擷取的母體可以儲存為清單。
+列表是一组静态联系人，可在投放操作中定向，或在导入或其他工作流操作期间更新。 例如，通过查询从数据库中提取的群体可以存储为列表。
 
-清單是透過以下方式建立和管理的： **[!UICONTROL Lists]** 中的連結 **[!UICONTROL Profiles and targets]** 標籤。 這些清單是根據預設的Adobe Campaign設定檔表格(nms：recipient)。 [了解详情](../dev/datamodel.md#ootb-profiles.md)
+列表是通过 **[!UICONTROL Lists]** 中的链接 **[!UICONTROL Profiles and targets]** 选项卡。 这些列表基于默认的Adobe Campaign配置文件表(nms：recipient)。 [了解详情](../dev/datamodel.md#ootb-profiles.md)
 
 ![](assets/list-dashboard.png)
 
-您可以使用 **更新清單** 活動的工作流程。 此活動會將產生的母體儲存在清單中。 使用它來建立新清單或更新現有清單。 若要建立包含內建設定檔表格以外其他資料型別的清單，您必須執行工作流程。 例如，通过在访客表上运行查询并更新列表，您可以创建一个访客列表。[了解详情](#create-a-list-wf)。
+您可以使用创建列表 **更新列表** 活动。 此活动会将生成的群体存储到一个列表中。 使用它创建新列表或更新现有列表。 要创建包含除内置用户档案表以外的其他类型数据的列表，必须运行工作流。 例如，通过在访客表上运行查询并更新列表，您可以创建一个访客列表。[了解详情](#create-a-list-wf)。
 
-觀看此影片以進一步瞭解Adobe Campaign中的清單管理。
+观看本视频，了解有关Adobe Campaign中列表管理的更多信息。
 
 >[!VIDEO](https://video.tv.adobe.com/v/334909?quality=12)
 
 
 ## 创建联系人列表 {#create-a-list-of-contacts}
 
-若要建立連絡人清單，請遵循下列步驟：
+要创建联系人列表，请执行以下步骤：
 
-1. 按一下 **[!UICONTROL Create]** 按鈕並選取 **[!UICONTROL New list]**.
+1. 单击 **[!UICONTROL Create]** 按钮并选择 **[!UICONTROL New list]**.
 
    ![](assets/new-list.png)
 
@@ -50,24 +50,24 @@ ht-degree: 22%
 
    ![](assets/add-profiles-to-a-list.png)
 
-   您可以使用建立新的設定檔，並直接從此視窗將其新增到清單中。 **[!UICONTROL Create]** 圖示。 该用户档案也会被添加到数据库中。
+   您可以创建新配置文件，并使用直接从此窗口将其添加到列表中。 **[!UICONTROL Create]** 图标。 该用户档案也会被添加到数据库中。
 
 1. 单击 **[!UICONTROL Save]** 保存列表。然后系统会将其添加到列表概要中。
 
 
-## 將篩選的連絡人轉換為清單 {#convert-data-to-a-list}
+## 将过滤的联系人转换为列表 {#convert-data-to-a-list}
 
-您可以選取設定檔並將其新增至清單。 若要執行此動作，請遵循下列步驟：
+您可以选择用户档案并将其添加到列表中。 要执行此操作，请执行以下步骤：
 
-1. 在Campaign Explorer中選取設定檔，然後按一下滑鼠右鍵。
+1. 在Campaign Explorer中，选择用户档案并右键单击。
 
-   您可以篩選這些設定檔以符合特定條件。
+   可以筛选这些配置文件以满足特定条件。
 
 1. 选择 **[!UICONTROL Actions > Associate selection with a list...]**。
 
    ![](assets/add-selection-to-a-list.png)
 
-1. 選取現有清單或建立新清單，然後按一下 **[!UICONTROL Next]**.
+1. 选择现有列表或创建新列表，然后单击 **[!UICONTROL Next]**.
 
    ![](assets/select-the-list.png)
 
@@ -75,64 +75,64 @@ ht-degree: 22%
 
    ![](assets/record-a-list.png)
 
-選取 **[!UICONTROL Recreate the list]** 從清單中刪除現有內容並最佳化清單建立的選項（無需查詢即可驗證設定檔是否已連結至清單）。
+选择 **[!UICONTROL Recreate the list]** 用于从列表中删除现有内容并优化列表创建的选项（无需查询即可验证用户档案是否已链接到列表）。
 
-如果您取消勾選 **[!UICONTROL No trace of this job is saved in the database]** 選項，您可以選取（或建立）執行資料夾，連結至此流程的資訊將儲存於此資料夾。
+如果取消选中 **[!UICONTROL No trace of this job is saved in the database]** 选项，您可以选择（或创建）执行文件夹，链接到此进程的信息将存储在该文件夹中。
 
 可在窗口的上半部监控该执行过程。可以通过 **[!UICONTROL Stop]** 按钮停止该过程。已处理的联系人将会链接到列表。
 
-執行完成後，存取 **[!UICONTROL Profiles and Targets > Lists]** 功能表並選取清單： **[!UICONTROL Content]** 索引標籤會顯示連結至此清單的設定檔。
+执行完成后，访问 **[!UICONTROL Profiles and Targets > Lists]** 菜单并选择列表： **[!UICONTROL Content]** 选项卡显示链接到此列表的用户档案。
 
 
-## 使用工作流程建立清單  {#create-a-list-wf}
+## 使用工作流创建列表  {#create-a-list-wf}
 
-您可以使用 **[!UICONTROL List update]** 建立清單或新增母體至收件者清單的活動。
+您可以使用 **[!UICONTROL List update]** 创建列表或向收件人列表添加群体的活动。
 
-在以下範例中，您會建立25到40歲之間所有收件者的清單。
+在以下示例中，您将创建一个包含25到40岁的所有收件人的列表。
 
-1. 選取 **[!UICONTROL Profiles and targets]**、和 **[!UICONTROL Targeting workflows]**，然後從建立新的工作流程 **[!UICONTROL Create]** 按鈕。
-1. 輸入此工作流程的標籤，例如「25-40位連絡人」、新增說明，然後按一下 **[!UICONTROL Next]**.
+1. 选择 **[!UICONTROL Profiles and targets]**、和 **[!UICONTROL Targeting workflows]**，然后从创建新工作流 **[!UICONTROL Create]** 按钮。
+1. 输入此工作流的标签，例如“25-40位联系人”，添加说明，然后单击 **[!UICONTROL Next]**.
 
    ![](assets/targeting-wf-sample.png)
 
-1. 插入 **[!UICONTROL Query]** 活動，以定義目標母體並編輯查詢。
+1. 插入 **[!UICONTROL Query]** 活动，以定义目标群体并编辑查询。
 
    ![](assets/targeting-wf-edit-query.png)
 
-1. 定義篩選條件，如下所示：
+1. 定义筛选条件，如下所示：
 
    ![](assets/targeting-wf-age-filter.png)
 
-   瞭解如何在的工作流程中建立查詢 [本節](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html).
+   了解如何在的工作流中创建查询 [本节](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html).
 
-1. 新增此查詢的標籤並儲存變更。
-1. 新增 **[!UICONTROL List update]** 活動，並加以編輯。
+1. 为此查询添加标签并保存更改。
+1. 添加 **[!UICONTROL List update]** 活动，并编辑它。
 
    ![](assets/list-update-activity.png)
 
-1. 輸入活動的標籤。
-1. 選取 **[!UICONTROL Create the list if necessary (Computed name)]** 選項來顯示清單將在第一個工作流程執行後建立，然後使用以下執行進行更新。
-1. 選取資料夾並輸入清單的標籤。
-1. 選取 **[!UICONTROL Database of the targeting dimension]** 以儲存表格。
-1. 離開 **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** 選項已核取，以刪除不符合目標定位條件的收件者，並將新收件者插入清單中。
-1. 另外請將 **[!UICONTROL Create or use a list with its own table]** 選項已核取。
-1. 離開 **[!UICONTROL Generate an outbound transition]** 選項未勾選。
-1. 按一下 **[!UICONTROL Ok]**，並儲存工作流程。
+1. 输入活动的标签。
+1. 选择 **[!UICONTROL Create the list if necessary (Computed name)]** 选项，用于显示将在执行第一个工作流后创建列表，然后使用以下执行进行更新。
+1. 选择一个文件夹并输入列表的标签。
+1. 选择 **[!UICONTROL Database of the targeting dimension]** 以存储表。
+1. 保留 **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** 选项选中以删除不符合定位标准的收件人，并将新收件人插入到列表中。
+1. 另外，请将 **[!UICONTROL Create or use a list with its own table]** 选项已选中。
+1. 保留 **[!UICONTROL Generate an outbound transition]** 选项未选中。
+1. 单击 **[!UICONTROL Ok]**，并保存工作流。
 1. 启动工作流。
 
-   接著會建立相符的收件者清單。 您可從「 」存取此清單 **[!UICONTROL Lists]** 首頁的輸入項。
+   随后将创建匹配的收件人列表。 您可以从以下位置访问此列表 **[!UICONTROL Lists]** 主页的条目。
 
    ![](assets/access-new-list.png)
 
-   您可以將排程器新增至工作流程，讓此工作流程重複執行。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html)。
+   您可以通过向工作流添加调度程序来重复执行此工作流。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html)。
 
-## 從清單中移除設定檔 {#remove-a-profile-from-a-list}
+## 从列表中删除配置文件 {#remove-a-profile-from-a-list}
 
-若要從清單中移除設定檔，請編輯清單，然後在 **[!UICONTROL Content]** 標籤，然後按一下 **[!UICONTROL Delete]** 圖示。
+要从列表中删除配置文件，请编辑该列表，然后在 **[!UICONTROL Content]** 选项卡，然后单击 **[!UICONTROL Delete]** 图标。
 
-## 刪除設定檔清單 {#delete-a-list-of-profiles}
+## 删除配置文件列表 {#delete-a-list-of-profiles}
 
-若要刪除清單，請從Campaign Explorer瀏覽至該清單，選取該清單，然後按一下滑鼠右鍵。 選擇 **[!UICONTROL Delete]**. 警告消息会要求您确认此删除操作。
+要删除列表，请从Campaign Explorer浏览到该列表，选择它并右键单击。 选择 **[!UICONTROL Delete]**. 警告消息会要求您确认此删除操作。
 
 >[!NOTE]
 >

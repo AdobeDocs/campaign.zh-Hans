@@ -1,6 +1,6 @@
 ---
-title: Campaign API準備機制
-description: Campaign API準備機制
+title: Campaign API暂存机制
+description: Campaign API暂存机制
 feature: API, FFDA
 role: Developer
 level: Beginner, Intermediate, Experienced
@@ -12,33 +12,33 @@ ht-degree: 2%
 
 ---
 
-# Campaign API準備機制
+# Campaign API暂存机制
 
-在的內容中 [企業(FFDA)部署](enterprise-deployment.md)，不建議在效能（延遲和並行）方面引發單一呼叫。 批次處理作業一律為首選。 為了提高效能，擷取API會重新導向至本機資料庫。
+在上下文中 [企业(FFDA)部署](enterprise-deployment.md)，不建议在性能（延迟和并发）方面引发单一调用。 批处理操作始终是首选操作。 为了提高性能，引入API将被重定向到本地数据库。
 
-根據預設，某些內建方案會啟用行銷活動準備功能。 我們也可以在任何自訂結構描述上啟用它。 簡而言之，暫存機制：
+默认情况下，某些内置架构启用了Campaign暂存功能。 我们还可以在任何自定义架构上启用它。 暂存机制简述：
 
-* 資料結構描述結構會複製到本機中繼資料表中
-* 專用於資料擷取的新API會直接流入本機中繼表格。 [了解详情](new-apis.md)
-* 排程的工作流程每小時都會觸發一次，並將資料同步回雲端資料庫。 [了解详情](replication.md)
+* 数据架构结构复制到本地暂存表中
+* 专门用于数据摄取的新API直接流入本地暂存表。 [了解详情](new-apis.md)
+* 计划的工作流每小时触发一次，并将数据同步回云数据库。 [了解详情](replication.md)
 
-某些內建結構依預設為暫存，例如nmsSubscriptionRcp、nmsAppSubscriptionRcp、nmsRecipient。
+默认情况下，某些内置模式处于暂存状态，例如nmsSubscriptionRcp、nmsAppSubscriptionRcp、nmsRecipient。
 
-Campaign Classicv7 API仍然可用，但無法從這個新的準備機制受益： API呼叫直接流向雲端資料庫。 Adobe建議儘可能使用新的準備機制，以減少Campaign Cloud資料庫的整體壓力和延遲。
+Campaign Classicv7 API仍然可用，但无法从这种新的暂存机制中获益： API调用直接流向云数据库。 Adobe建议尽量使用新的暂存机制，以减少Campaign Cloud数据库的总体压力和延迟。
 
 >[!CAUTION]
 >
->* 透過此新機制，頻道選擇、訂閱、取消訂閱或行動註冊的資料同步現在已開始 **非同步**.
+>* 通过这一新机制，现在可以为渠道选择退出、订阅、取消订阅或移动注册进行数据同步 **异步**.
 >
->* 中繼僅適用於儲存在雲端資料庫上的結構描述。 請勿在復寫的結構描述上啟用暫存。 請勿在本機結構描述上啟用測試。 不要在已暫存綱要上啟用暫存
+>* 暂存仅适用于存储在云数据库中的架构。 请勿在复制的架构上启用暂存。 请勿在本地架构上启用暂存。 不要在暂存方案上启用暂存
 >
 
 
 ## 实施步骤{#implement-staging}
 
-若要在特定表格上實作Campaign準備機制，請遵循下列步驟：
+要在特定表上实施Campaign暂存机制，请执行以下步骤：
 
-1. 在Campaign Cloud資料庫上建立範例自訂結構描述。 此步驟未啟用暫存。
+1. 在Campaign Cloud数据库上创建示例自定义架构。 此步骤未启用暂存。
 
    ```
    <srcSchema _cs="Sample Table (dem)" created="YYYY-DD-MM"
@@ -53,11 +53,11 @@ Campaign Classicv7 API仍然可用，但無法從這個新的準備機制受益�
    </srcSchema>
    ```
 
-   ![](../assets/do-not-localize/glass.png) 進一步瞭解在中建立自訂結構描述 [此頁面](../dev/create-schema.md).
+   ![](../assets/do-not-localize/glass.png) 在中了解有关自定义架构创建的更多信息 [此页面](../dev/create-schema.md).
 
-1. 儲存並更新資料庫結構。  [了解详情](../dev/update-database-structure.md)
+1. 保存并更新数据库结构。  [了解详情](../dev/update-database-structure.md)
 
-1. 在架構定義中啟用暫存機制，方法是新增 **autoStg=&quot;true&quot;** 引數。
+1. 通过添加以下内容，在模式定义中启用暂存机制 **autoStg=&quot;true&quot;** 参数。
 
    ```
    <srcSchema _cs="Sample Table (dem)" "YYYY-DD-MM"
@@ -72,8 +72,8 @@ Campaign Classicv7 API仍然可用，但無法從這個新的準備機制受益�
    </srcSchema>
    ```
 
-1. 儲存修改。 有新的中繼結構描述可供使用，這是初始結構描述的本機副本。
+1. 保存修改。 提供了一个新的暂存架构，它是初始架构的本地副本。
 
    ![](assets/staging-mechanism.png)
 
-1. 更新資料庫結構。 將在Campaign本機資料庫上建立臨時資料表。
+1. 更新数据库结构。 将在Campaign本地数据库上创建临时表。

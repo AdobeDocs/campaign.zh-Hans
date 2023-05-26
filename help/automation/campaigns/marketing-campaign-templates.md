@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 行銷活動範本
-description: 行銷活動範本
+title: 营销活动模板
+description: 营销活动模板
 feature: Campaigns, Templates
 exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
@@ -13,169 +13,169 @@ ht-degree: 5%
 
 # 创建和配置营销活动模板 {#campaign-templates}
 
-所有行銷活動都以儲存主要特性和功能的範本為基礎。 Campaign隨附建立行銷活動的內建範本。 此範本已啟用所有功能：檔案、種子地址、核准、傳遞大網等。
+所有营销活动都基于存储主要特性和功能的模板。 Campaign附带一个创建营销活动的内置模板。 此模板启用了以下所有功能：文档、种子地址、审批、投放大纲等。
 
-可用功能取決於您的許可權、附加元件和Adobe Campaign平台的設定。
+可用功能取决于您的权限、插件以及Adobe Campaign平台的配置。
 
 
 >[!NOTE]
 >
->當您按一下 **[!UICONTROL Explorer]** 圖示加以檢視。
+>单击 **[!UICONTROL Explorer]** 图标。
 
 提供了内置模板以用于创建尚未定义特定配置的活动。您可以创建和配置活动模板，然后从这些模板创建活动。
 
-## 建立行銷活動範本 {#create-a-campaign-template}
+## 创建活动模板 {#create-a-campaign-template}
 
-若要建立行銷活動範本，請遵循下列步驟：
+要创建活动模板，请执行以下步骤：
 
-1. 開啟行銷活動 **總管**，並瀏覽至 **資源>範本>行銷活動範本**.
-1. 按一下 **新增** 範本清單上方的工具列中。
+1. 打开营销活动 **资源管理器**，并浏览到 **资源>模板>促销活动模板**.
+1. 单击 **新** 模板列表上方的工具栏中。
 
 ![](assets/campaign-template-node.png)
 
-您也可以 **重複** 可重複使用和調整其設定的內建範本。 若要這麼做，請在範本上按一下滑鼠右鍵，然後選取 **複製**.
+您还可以 **重复** 可重复使用和调整其配置的内置模板。 要实现此目的，请右键单击模板并选择 **复制**.
 
-1. 輸入新行銷活動範本的標籤。
-1. 按一下 **儲存** 並重新開啟範本。
-1. 在 **編輯** 標籤中，定義範本屬性。
-1. 選取 **進階行銷活動引數……** 連結以將工作流程新增至行銷活動範本。
+1. 输入新营销活动模板的标签。
+1. 单击 **保存** 然后重新打开您的模板。
+1. 在 **编辑** 选项卡，定义模板属性。
+1. 选择 **高级促销活动参数……** 用于将工作流添加到活动模板的链接。
 
    ![](assets/campaign-template-parameters.png)
 
-1. 變更 **目標定位和工作流程** 值至 **是**.，然後確認。 瞭解如何在中新增功能 [本節](#typology-of-enabled-modules).
-1. 此 **目標定位和工作流程** 索引標籤會新增至範本。 按一下 **新增工作流程……**，輸入 **標籤** 並按一下 **確定**.
-1. 根據您的需求建立工作流程。
+1. 更改 **定位和工作流** 值至 **是**.，然后确认。 了解如何在中添加功能 [本节](#typology-of-enabled-modules).
+1. 此 **定位和工作流** 选项卡将添加到模板中。 单击 **添加工作流……**，输入 **标签** 并单击 **确定**.
+1. 根据需要创建工作流。
 
    ![](assets/campaign-template-create-wf.png)
 
-1. 单击&#x200B;**保存**。您的範本現在已準備好用來建立新的行銷活動。
+1. 单击&#x200B;**保存**。您的模板现在可用于创建新营销活动。
 
-行銷活動範本的各種標籤和子標籤可讓您存取其設定，如所述 [一般設定](#general-configuration).
+利用活动模板的各种选项卡和子选项卡，可访问其设置，如中所述 [常规配置](#general-configuration).
 
-## 選取模組 {#select-modules}
+## 选择模块 {#select-modules}
 
-此 **[!UICONTROL Advanced campaign parameters...]** 連結可讓您根據此範本為行銷活動啟用和停用工作。 選取您要在根據此範本建立的行銷活動中啟用的功能。
+此 **[!UICONTROL Advanced campaign parameters...]** 通过链接，您可以基于此模板启用和禁用营销活动的作业。 选择要在基于此模板创建的营销活动中启用的功能。
 
 ![](assets/campaign-template-select-modules.png)
 
-如果未選取功能，則與流&#39;b5&#39;7b有關的元素（選單、圖示、選項、標籤、子標籤等） 不會出現在範本的介面或根據此範本的行銷活動中。 行銷活動詳細資訊左側的標籤和可用標籤與範本中選取的功能一致。 例如， **費用與目標** 功能未啟用，則對應至 **[!UICONTROL Budget]** 索引標籤不會顯示在根據此範本的促銷活動中。
+如果未选择某个功能，则涉及该流程的元素（菜单、图标、选项、选项卡、子选项卡等） 不会显示在模板的界面中或基于此模板的营销活动中。 营销活动详细信息左侧的选项卡，以及可用的选项卡，与模板中选择的功能一致。 例如， **费用和目标** 功能未启用，则相应的 **[!UICONTROL Budget]** 选项卡不显示在基于此模板的营销活动中。
 
-此外，設定視窗的捷徑會新增至行銷活動控制面板。 啟用功能時，直接連結可讓您從行銷活動控制面板存取該功能。
+此外，配置窗口的快捷方式已添加到营销活动仪表板。 启用某个功能后，可通过直接链接从Campaign仪表板访问该功能。
 
-### 設定範例
+### 配置示例
 
-* 例如，使用下列設定：
+* 例如，使用以下设置：
 
    ![](assets/campaign-template-select-functionalities.png)
 
-   行銷活動控制面板會顯示：
+   营销活动仪表板显示：
 
    ![](assets/campaign-template-dashboard-sample-1.png)
 
-   請注意 **[!UICONTROL Targeting and workflows]** 索引標籤遺失。
+   请注意 **[!UICONTROL Targeting and workflows]** 选项卡缺失。
 
-   提供下列功能：
+   提供了以下功能：
 
    ![](assets/campaign-template-edit-sample-1.png)
 
-   請注意 **[!UICONTROL Budget]** 索引標籤遺失。
+   请注意 **[!UICONTROL Budget]** 选项卡缺失。
 
-   行銷活動進階設定也會反映此設定。
+   Campaign高级设置也反映此配置。
 
    ![](assets/campaign-template-parameters-sample-1.png)
 
-   請注意 **[!UICONTROL Approvals]** 索引標籤無法使用。
+   请注意 **[!UICONTROL Approvals]** 选项卡不可用。
 
-* 使用此設定：
+* 使用此配置：
    ![](assets/campaign-template-dashboard-sample-2.png)
 
-   行銷活動控制面板會顯示：
+   营销活动仪表板显示：
 
    ![](assets/campaign-template-select-functionalities-2.png)
 
-   請注意 **[!UICONTROL Targeting and workflows]** 標籤可用，但 **新增檔案** 缺少連結。
+   请注意 **[!UICONTROL Targeting and workflows]** 选项卡可用，但 **添加文档** 缺少链接。
 
-   提供下列功能：
+   提供了以下功能：
 
    ![](assets/campaign-template-edit-sample-2.png)
 
-   請注意 **[!UICONTROL Budget]** 索引標籤可供使用。
+   请注意 **[!UICONTROL Budget]** 选项卡可用。
 
-   行銷活動進階設定也會反映此設定。
+   Campaign高级设置也反映此配置。
 
    ![](assets/campaign-template-parameters-sample-2.png)
 
-   請注意 **[!UICONTROL Approvals]** 標籤可用，但 **[!UICONTROL Control population]** 和 **[!UICONTROL Seed addresses]** 索引標籤未啟用。
+   请注意 **[!UICONTROL Approvals]** 选项卡可用，但 **[!UICONTROL Control population]** 和 **[!UICONTROL Seed addresses]** 未启用选项卡。
 
 
-## 模組型別 {#typology-of-enabled-modules}
+## 模块类型 {#typology-of-enabled-modules}
 
 * **对照组**
 
-   選取此模組時，範本的進階設定和根據此範本的行銷活動會新增一個標籤。 可透過範本或為每個行銷活動個別定義設定。 進一步瞭解中的控制組 [本節](marketing-campaign-deliveries.md#defining-a-control-group).
+   选择此模块后，模板和基于此模板的营销活动的高级设置中添加了一个附加选项卡。 可以通过模板定义配置，也可以单独为每个营销活动定义配置。 在中了解有关控制组的更多信息 [本节](marketing-campaign-deliveries.md#defining-a-control-group).
 
    ![](assets/template-activate-1.png)
 
 
 * **种子地址**
 
-   選取此模組時，範本的進階設定和根據此範本的行銷活動會新增一個標籤。 可透過範本或為每個行銷活動個別定義設定。
+   选择此模块后，模板和基于此模板的营销活动的高级设置中添加了一个附加选项卡。 可以通过模板定义配置，也可以单独为每个营销活动定义配置。
 
    ![](assets/template-activate-2.png)
 
 * **文档**
 
-   選取此模組時，會將其他索引標籤新增至 **[!UICONTROL Edit]** 範本的索引標籤和基於此範本的行銷活動。 可從範本新增附加檔案，或針對每個行銷活動個別新增。 進一步瞭解中的檔案 [本節](marketing-campaign-deliveries.md#manage-associated-documents).
+   选择此模块后，将向中添加一个附加选项卡 **[!UICONTROL Edit]** 基于此模板的营销活动的选项卡。 可以从模板添加附加文档，也可以单独为每个营销活动添加附加文档。 了解有关文档的更多信息，请参阅 [本节](marketing-campaign-deliveries.md#manage-associated-documents).
 
    ![](assets/template-activate-3.png)
 
 * **投放概要**
 
-   選取此模組時， **[!UICONTROL Delivery outlines]** 子標籤會新增至 **[!UICONTROL Documents]** 索引標籤來定義行銷活動的傳遞大綱。 進一步瞭解中的傳遞大綱 [本節](marketing-campaign-assets.md#delivery-outlines).
+   选择此模块后， **[!UICONTROL Delivery outlines]** 子选项卡将添加到 **[!UICONTROL Documents]** 选项卡，以定义营销活动的投放大纲。 要了解有关投放概要的更多信息，请参阅 [本节](marketing-campaign-assets.md#delivery-outlines).
 
    ![](assets/template-activate-4.png)
 
 * **定位和工作流**
 
-   當您選取 **[!UICONTROL Targeting and workflows]** 模組，新增了標籤，讓您根據此範本建立一或多個行銷活動的工作流程。 您也可以根據此範本個別設定每個行銷活動的工作流程。進一步瞭解 [本節](marketing-campaign-deliveries.md#build-the-main-target-in-a-workflow).
+   当您选择 **[!UICONTROL Targeting and workflows]** 模块时，会添加一个选项卡，以便您可以基于此模板为营销活动创建一个或多个工作流。 还可以基于此模板为每个营销活动单独配置工作流。要了解有关营销活动工作流的更多信息，请参阅 [本节](marketing-campaign-deliveries.md#build-the-main-target-in-a-workflow).
 
    ![](assets/template-activate-5.png)
 
-   啟用此模組時， **[!UICONTROL Jobs]** 索引標籤會新增至行銷活動的進階設定，以定義流程執行順序。
+   启用此模块后， **[!UICONTROL Jobs]** 选项卡会添加到营销活动的高级设置中，以定义流程执行顺序。
 
 * **审批**
 
-   如果您啟用 **[!UICONTROL Approvals]**，您可以選取要核准的程式以及負責核准的運運算元。 進一步瞭解中的核准 [本節](marketing-campaign-approval.md#select-reviewers).
+   如果您启用 **[!UICONTROL Approvals]**，您可以选择要批准的流程以及负责批准的操作员。 要了解有关批准的更多信息，请参阅 [本节](marketing-campaign-approval.md#select-reviewers).
 
    ![](assets/template-activate-6.png)
 
-   您可以選擇是否透過 **[!UICONTROL Approvals]** 「範本進階設定」區段的「 」索引標籤。
+   您可以选择是否通过启用流程审批 **[!UICONTROL Approvals]** 模板高级设置部分的选项卡。
 
 * **非劳动成本和目标**
 
-   選取此模組時， **[!UICONTROL Budget]** 索引標籤會新增至範本的詳細資訊以及以此範本為依據的行銷活動，以便選取關聯的預算。
+   选择此模块后， **[!UICONTROL Budget]** 选项卡会添加到基于此模板的模板和营销活动的详细信息中，以便可以选择关联的预算。
 
    ![](assets/template-activate-7.png)
 
 
-## 範本屬性 {#template-properties}
+## 模板属性 {#template-properties}
 
 ![](assets/template-op-type.png)
 
-建立行銷活動範本時，需要輸入下列資訊：
+创建活动模板时，需要输入以下信息：
 
-* 輸入 **標籤** 範本的：標籤為必填欄位，且是所有根據此範本的行銷活動的預設標籤。
-* 選取行銷活動 **性質** 下拉式清單中的。 此清單中可用的值是儲存在 **[!UICONTROL natureOp]** 分項清單。
+* 输入 **标签** 模板的：标签是必需的，并且是基于此模板的所有营销活动的默认标签。
+* 选择营销活动 **性质** 下拉列表中。 此列表中可用的值是保存在中的值。 **[!UICONTROL natureOp]** 明细列表。
 
-瞭解如何在中存取及設定您的分項清單 [此頁面](../../v8/config/ui-settings.md#enumerations).
+了解如何在中访问和配置明细列表 [此页面](../../v8/config/ui-settings.md#enumerations).
 
 
-* 選取 **行銷活動型別**：唯一、循環或定期。 依預設，行銷活動範本適用於不重複行銷活動。 循環和定期行銷活動的詳細資訊，請參見 [本節](recurring-periodic-campaigns.md).
-* 指定行銷活動的持續時間，即行銷活動將發生的天數。 根據此範本建立行銷活動時，會自動填入行銷活動的開始和結束日期。
+* 选择 **营销活动类型**：唯一、循环或定期。 默认情况下，营销活动模板适用于独特营销活动。 有关循环和定期活动的详情，请参阅 [本节](recurring-periodic-campaigns.md).
+* 指定营销活动的持续时间，即营销活动将发生的天数。 基于此模板创建营销活动时，将自动填充营销活动的开始和结束日期。
 
-   如果行銷活動為週期性，您必須直接在範本中指定行銷活動的開始和結束日期。
+   如果促销活动是重复性的，则必须直接在模板中指定促销活动的开始和结束日期。
 
-* 指定 **相關程式** 範本的：根據此範本的行銷活動會連結至選取的方案。
+* 指定 **相关项目** 模板的：基于此模板的营销活动将链接到选定的项目。
 
 <!--
 ## Track campaign execution{#campaign-reverse-scheduling}

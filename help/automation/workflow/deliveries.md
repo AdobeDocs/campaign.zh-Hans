@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 投放
-description: 進一步瞭解預設傳遞工作流程
+description: 了解有关默认投放工作流的更多信息
 feature: Workflows
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 
 
-以下詳述的工作流程會隨 **傳遞** 模組（預設）。
+下面详述的工作流将随 **投放** 默认模块。
 
 <table> 
  <tbody> 
@@ -27,47 +27,47 @@ ht-degree: 6%
   <tr> 
    <td> <span class="uicontrol">报告聚合</span> <br /> </td> 
    <td> <span class="uicontrol">reportingAggregates</span> <br /> </td> 
-   <td> 此工作流程會更新報告中使用的彙總。 預設會每天凌晨2:00觸發。<br /> </td> 
+   <td> 此工作流可更新报告中使用的聚合。 默认情况下，此工作流于每日凌晨2点触发。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">付费</span> <br /> </td> 
    <td> <span class="uicontrol">billing</span> <br /> </td> 
-   <td> 此工作流程會透過電子郵件將系統活動報告傳送給「帳單」操作員。 預設會於每月25日觸發。<br /> </td> 
+   <td> 此工作流会通过电子邮件将系统活动报告发送到“billing”操作员。 默认情况下，此工作流于每月25日触发。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">別名清除</span> <br /> </td> 
-   <td> <span class="uicontrol">aliasCleaning</span> <br /> </td> 
-   <td> 此工作流程會將列舉值標準化。 預設會每天凌晨3:00觸發。<br /> </td> 
+   <td> <span class="uicontrol">别名清理</span> <br /> </td> 
+   <td> <span class="uicontrol">aliasCleansing</span> <br /> </td> 
+   <td> 此工作流可标准化枚举值。 默认情况下，此工作流于每日凌晨3点触发。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">可投放性更新</span> <br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
-   <td> 此工作流程可讓您建立退信限定規則清單，以及平台中的網域和MX清單。 此工作流程僅適用於HTTPS連線埠開啟的情況。 除非安裝傳遞能力模組，否則不會更新這些清單。<br /> </td> 
+   <td> 利用此工作流，可创建退回邮件鉴别规则的列表，以及平台中的域和MX的列表。 此工作流仅在HTTPS端口打开时有效。 除非安装了可投放性模块，否则不会更新这些列表。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">数据库清理</span> <br /> </td> 
    <td> <span class="uicontrol">cleanup</span> <br /> </td> 
-   <td> <p>此工作流程是資料庫維護工作流程：它會根據統計資料和程式進行不同的計算，並根據Deployment Assistant中定義的設定從資料庫刪除過時的資料。 預設會每天凌晨4:00觸發。</p></td> 
+   <td> <p>此工作流是数据库维护工作流：它根据统计和流程进行不同的计算，并根据部署助手中定义的配置从数据库中删除过时的数据。 默认情况下，此工作流于每日凌晨4点触发。</p></td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">暫停的工作流程清理</span> <br /> </td> 
+   <td> <span class="uicontrol">暂停的工作流清理</span> <br /> </td> 
    <td> <span class="uicontrol">cleanupPausedWorkflows</span> <br /> </td> 
-   <td> <p>此工作流程會分析嚴重程度設定為正常的暫停工作流程，並在暫停太久時觸發警告和通知。 一個月後，暫停的技術工作流程會無條件停止。 預設會每週一早上5:00觸發。</p> <p>如需詳細資訊，請參閱處理暫停的工作流程</a>.</p></td> 
+   <td> <p>此工作流会分析严重性设置为正常的已暂停工作流，并在暂停时间过长时触发警告和通知。 一个月后，暂停的技术工作流将无条件停止。 默认情况下，此工作流于每周一凌晨5点触发。</p> <p>有关更多信息，请参阅处理暂停的工作流</a>.</p></td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">優惠通知</span> <br /> </td> 
+   <td> <span class="uicontrol">优惠通知</span> <br /> </td> 
    <td> <span class="uicontrol">offerMgt</span> <br /> </td> 
-   <td> 此工作流程會將核准的優惠方案部署至線上環境，以及優惠方案目錄中包含的每個類別。<br /> </td> 
+   <td> 此工作流可将已批准的优惠部署到在线环境中，以及优惠目录中包含的每个类别。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">预测</span> <br /> </td> 
    <td> <span class="uicontrol">forecasting</span> <br /> </td> 
-   <td> 此工作流程會分析臨時行事曆中儲存的傳遞（建立臨時記錄）。 預設會每天凌晨1:00觸發。<br /> </td> 
+   <td> 此工作流会分析保存在临时日历中的投放（创建临时日志）。 默认情况下，此工作流于每日凌晨1点触发。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">跟踪</span> <br /> </td> 
-   <td> <span class="uicontrol">追蹤</span> <br /> </td> 
-   <td> 此工作流程會執行追蹤資訊的復原與合併。 此外，還可確保重新計算追蹤和傳遞統計資料，尤其是訊息中心封存工作流程所使用的資料。 預設會每小時觸發一次。 <br /> </td> 
+   <td> <span class="uicontrol">跟踪</span> <br /> </td> 
+   <td> 此工作流执行跟踪信息的恢复和整合。 它还确保重新计算跟踪和投放统计数据，特别是消息中心归档工作流使用的统计数据。 默认情况下，每小时触发一次。 <br /> </td> 
   </tr> 
  </tbody> 
 </table>

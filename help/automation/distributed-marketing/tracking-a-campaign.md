@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 跟踪活动
-description: 瞭解如何使用Campaign分散式行銷追蹤行銷活動
+description: 了解如何使用Campaign分布式营销跟踪营销活动
 feature: Distributed Marketing
 exl-id: 9904c1c6-c233-4aa2-a237-338ebde15661
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
@@ -15,90 +15,90 @@ ht-degree: 1%
 
 
 
-中央實體運運算元可以追蹤行銷活動套件清單中的行銷活動訂單。
+中央实体运算符可以跟踪营销活动包列表中的营销活动订单。
 
-如此可讓他們：
+这允许他们：
 
-* [篩選封裝](#filter-packages)，
-* [編輯套裝](#edit-packages)，
-* [取消封裝](#cancel-a-package)，
-* [重新初始化封裝](#reinitializing-a-package).
+* [筛选包](#filter-packages)，
+* [编辑包](#edit-packages)，
+* [取消包](#cancel-a-package)，
+* [重新初始化包](#reinitializing-a-package).
 
-## 篩選封裝 {#filter-packages}
+## 筛选包 {#filter-packages}
 
-從 **[!UICONTROL Campaigns]** 索引標籤中，您可以顯示以下專案的清單 **[!UICONTROL Campaign packages]** ，會重新分組所有現有的分散式行銷活動。 您可以篩選此清單，使其僅顯示已發佈、延遲、未決核准等行銷活動。 若要這麼做，請按一下此檢視上方區段中的連結，或使用 **[!UICONTROL Filter list]** 連結並選取要顯示的行銷活動套件狀態。
+从 **[!UICONTROL Campaigns]** 选项卡中，您可以显示 **[!UICONTROL Campaign packages]** ，可重组所有现有的分布式营销活动。 您可以筛选此列表，使其仅显示已发布、延迟、未决批准等的营销活动。 要执行此操作，请单击此视图上部的链接，或使用 **[!UICONTROL Filter list]** 链接并选择要显示的促销活动包状态。
 
 ![](assets/mkg_dist_catalog_filter.png)
 
-## 編輯套裝 {#edit-packages}
+## 编辑包 {#edit-packages}
 
-此 **[!UICONTROL Campaign packages]** 頁面可讓您檢視每個套件的摘要。
+此 **[!UICONTROL Campaign packages]** 页面允许您查看每个包的摘要。
 
-此摘要會顯示下列資訊：標籤、行銷活動型別，以及從中建立行銷活動的名稱和資料夾。
+此摘要显示以下信息：标签、促销活动类型、创建促销活动的名称以及文件夹。
 
-按一下封裝名稱以進行編輯。 您也可以依其本機實體及其狀態來檢視訂單。
+单击包名称可对其进行编辑。 您还可以按其本地实体和状态查看订单。
 
-此資訊也提供在 **[!UICONTROL Campaign orders]** 檢視列出所有訂單的。
+此信息还可在以下位置提供： **[!UICONTROL Campaign orders]** 查看其中列出了所有订单的信息。
 
 ![](assets/mkg_dist_catalog_op_command_details.png)
 
-中央運運算元可以編輯順序。 有兩種方法可以達成此目的：
+中心操作员可以编辑顺序。 有两种方法可以做到这一点：
 
-1. 運運算元可以按一下訂單名稱來進行編輯：這會顯示訂單詳細資料。
+1. 操作员可以单击订单名称对其进行编辑：这将显示订单详细信息。
 
    ![](assets/mkg_dist_catalog_op_command_edit1.png)
 
-   此 **[!UICONTROL Edit > General]** 索引標籤可讓您檢視由本機實體在訂購行銷活動時輸入的資訊。
+   此 **[!UICONTROL Edit > General]** 选项卡允许您查看本地实体在订购营销活动时输入的信息。
 
    ![](assets/mkg_dist_catalog_op_command_edit1a.png)
 
-1. 操作員可以按一下行銷活動套件標籤以編輯並變更某些設定。
+1. 操作员可以单击营销活动包标签以编辑它并更改某些设置。
 
    ![](assets/mkg_dist_catalog_op_command_edit2.png)
 
-## 取消封裝 {#cancel-a-package}
+## 取消包 {#cancel-a-package}
 
-中央實體可隨時取消行銷活動套件。
+中央实体可以随时取消营销活动包。
 
-按一下 **[!UICONTROL Cancel]** 在行銷活動套件中 **[!UICONTROL Dashboard]**.
+单击 **[!UICONTROL Cancel]** 在营销活动包中 **[!UICONTROL Dashboard]**.
 
 ![](assets/mkg_dist_cancel_op_from_dashboard.png)
 
-此 **[!UICONTROL Comment]** 欄位可讓您論證取消的合理性。
+此 **[!UICONTROL Comment]** 字段允许您论证取消的合理性。
 
-對象 **本地行銷活動**，取消套件會將其從可用行銷活動清單中移除。
+对象 **本地营销活动**，取消资源包会将其从可用营销活动列表中删除。
 
-對象 **合作行銷活動**，取消套件會觸發許多動作：
+对象 **协作活动**，取消包会触发许多操作：
 
-1. 任何與此套件相關的訂單都會被取消，
+1. 与此程序包相关的任何订单均被取消，
 
    ![](assets/mkg_dist_mutual_op_cancelled.png)
 
-1. 參考行銷活動已取消，且所有作用中的流程（工作流程、傳送）都已停止。
+1. 引用营销活动已取消，所有活动进程（工作流、投放）已停止，
 
    ![](assets/mkg_dist_mutual_op_cancelled1.png)
 
-1. 會傳送通知給所有相關本機實體。
+1. 向所有有关的本地实体发送通知。
 
    ![](assets/mkg_dist_mutual_op_cancelled2.png)
 
-如有必要，中央實體（請參閱下文）仍可存取及重新初始化已取消的套件。 只有當它們獲得核准並啟動後，才會再次提供給本機實體。 封裝重新初始化程式如下所示。
+如有必要，中央实体（请参阅下文）仍可以访问和重新初始化已取消的包。 它们只有在获得批准并启动后，才会再次提供给本地实体。 软件包重新初始化过程如下所示。
 
-## 重新初始化封裝 {#reinitializing-a-package}
+## 重新初始化包 {#reinitializing-a-package}
 
-已發佈的行銷活動套件可以重新初始化、修改並供本機實體使用。
+已发布的营销活动包可以重新初始化、修改并对本地实体可用。
 
-1. 選取相關的套件。
-1. 按一下 **[!UICONTROL Reinitialize the package to reuse it]** 連結並按一下 **[!UICONTROL OK]**.
+1. 选择相关的包。
+1. 单击 **[!UICONTROL Reinitialize the package to reuse it]** 链接并单击 **[!UICONTROL OK]**.
 
    ![](assets/mkg_dist_mutual_op_reinit.png)
 
-1. 按一下 **[!UICONTROL Save]** 按鈕以核准封裝重新初始化。
+1. 单击 **[!UICONTROL Save]** 按钮批准包的重新初始化。
 
    ![](assets/mkg_dist_mutual_op_reinit2.png)
 
-1. 封裝狀態變更為 **[!UICONTROL Being edited]**. 再次修改、核准並發佈，以將其還原至行銷活動套件清單。
+1. 包状态更改为 **[!UICONTROL Being edited]**. 再次修改、批准并发布它，以将其还原到Campaign包列表。
 
 >[!NOTE]
 >
->您也可以重新初始化已取消的行銷活動套件。
+>您还可以重新初始化已取消的营销活动包。

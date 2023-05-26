@@ -13,80 +13,80 @@ ht-degree: 5%
 
 # 监测技术工作流 {#monitoring-technical-workflows}
 
-技術工作流程需要監控，並在失敗時採取行動。
+需要对技术工作流进行监控，并在工作流失败时采取行动。
 
-## 執行個體監視儀表板 {#instance-monitoring-dashboard}
+## 实例监视仪表板 {#instance-monitoring-dashboard}
 
-執行個體監控控制面板的存取方式為 **[!UICONTROL Monitoring]** 標籤。
+可以通过以下方式访问实例监控仪表板 **[!UICONTROL Monitoring]** 选项卡。
 
 ![](assets/monitoring_technical_workflows1.png)
 
-在「系統指示器和核心檔案」下，檢查指示器是否未以紅色反白顯示。 如果是這種情況，並且有些是這種情況，您應該：
+在“System Indicators and core files（系统指示器和核心文件）”下，检查指示器是否未以红色突出显示。 如果情况确实如此，而某些情况确实如此，则您应：
 
-* 檢查必要的程式是否一律在執行中，
-* 檢查流程是否都不太舊，
-* 檢查不同處理序的記錄檔是否不包含警示和重複錯誤。
+* 检查必要的进程是否始终运行，
+* 检查流程是否都不太旧，
+* 检查不同进程的日志文件是否不包含警报和重复错误。
 
 ## 技术工作流 {#technical-workflows}
 
-技術工作流程可從以下網址取得： **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
+技术工作流可从以下位置获取： **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
 
-根據技術工作流程，請遵循以下詳細步驟以確保一切都按預期運作。
+根据技术工作流，请按照下面详述的步骤操作，以确保一切都按预期工作。
 
-若要進一步瞭解每個技術工作流程的用途，請參閱此 [區段](technical-workflows.md).
+要更好地了解每个技术工作流应该执行的操作，请参阅此 [部分](technical-workflows.md).
 
-對象 **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**：
+对象 **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**：
 
-檢查日誌，驗證經過的時間在一段時間內相對穩定，不會干擾其他工作流程。
+检查日志，验证经过的时间在一段时间内相对恒定，不会干扰其他工作流。
 
-對象 **[!UICONTROL Tracking workflow (‘tracking’)]**：
+对象 **[!UICONTROL Tracking workflow (‘tracking’)]**：
 
-檢查「追蹤」工作流程是否以排程方式執行（預設為每小時執行一次），以及分錄是否未反白顯示重複錯誤。 有关更多信息，请参阅此](delivery.md)章节[。
+检查跟踪工作流是否按计划运行（默认情况下每小时运行一次），以及日记帐是否未突出显示重复出现的错误。 有关更多信息，请参阅此](delivery.md)章节[。
 
-對象 **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**：
+对象 **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**：
 
-1. 檢查 **[!UICONTROL Deliverability update]** 工作流程每天都會順利執行並完成。
-1. 在日誌中驗證規則是否定期更新。
+1. 检查 **[!UICONTROL Deliverability update]** 工作流每天都运行并成功完成。
+1. 在日志中验证规则是否定期更新。
 
-對象 **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**：
+对象 **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**：
 
-1. 檢視位於「 」下方的所有工作流程 **[!UICONTROL Campaign process]** 資料夾。 有关详细信息，请参见此 [ 页面](technical-workflows.md)。
-1. 檢查工作流程是否按排程執行，以及分錄是否未反白顯示重複錯誤。
+1. 查看位于 **[!UICONTROL Campaign process]** 文件夹。 有关详细信息，请参见此 [ 页面](technical-workflows.md)。
+1. 检查工作流是否按计划运行，以及日记帐是否未突出显示重复出现的错误。
 
-## 工作流程監督 {#workflow-supervision}
+## 工作流监督 {#workflow-supervision}
 
-此 **[!UICONTROL Workflow supervisors]** 群組應包含需要隨時通知失敗情況的操作者，以及可以及時採取行動的操作者。
+此 **[!UICONTROL Workflow supervisors]** 组应包含需要随时了解失败情况并且可以及时采取操作的操作员。
 
 ![](assets/monitoring_technical_workflows3.png)
 
-應產生警示，並在發生問題時傳送至正確的群組。
+应生成警报，并在出现问题时发送给正确的组。
 
-請確定每個運運算元都有有效的電子郵件地址。
+确保每个操作员都有有效的电子邮件地址。
 
-任何為了讓平台運作而執行的工作流程（例如每日資料匯入）都應宣告為「生產」（核取方塊），並以粗體顯示。
+任何应该运行以保持平台正常工作的工作流（如每日数据导入）都应声明为“生产”（复选框），并以粗体显示。
 
-## 工作流程維護清單 {#workflow-maintenance-list}
+## 工作流维护列表 {#workflow-maintenance-list}
 
-所有自訂技術工作流程都應記錄在包含下列內容的工作表中：
+所有自定义技术工作流都应记录在包含以下内容的工作表中：
 
-* 工作流程的名稱和位置。
+* 工作流的名称和位置。
 * 目的。
-* 排程和相依性。
-* 負責監控的操作員。
-* 發生錯誤時的操作說明。
+* 计划和依赖关系。
+* 负责监控的操作员。
+* 出错时执行的操作说明。
 
 ![](assets/monitoring_technical_workflows4.png)
 
-## 規劃及自動化監控 {#planning-and-automation-of-monitoring}
+## 监控的规划和自动化 {#planning-and-automation-of-monitoring}
 
-計畫工作流程監控可提升效率。 有些任務需要每天執行，而其他任務則可以每週或每月執行。
+规划工作流监控提高了工作效率。 有些任务需要每天执行，而其他任务可以每周或每月执行。
 
-在按週期命名並按執行排程排序的資料夾中設定工作流程，可提高監控效率。
+在按循环命名并按执行计划排序的文件夹中设置工作流可提高监控效率。
 
-監控自動化可減少資源負荷，並確保以適當的頻率排程工作。
+监控自动化可减少资源开销，并确保以适当的频率安排任务。
 
-您可以建立監控工作流程，以便在某些任務失敗或重要表格變得太大時傳送電子郵件。
+您可以构建监控工作流，以便在某些任务失败或关键表变得过大时发送电子邮件。
 
-您可以建立檢視，以便監視跨功能區域或系統範圍的所有工作流程。
+您可以创建一个视图，以便可以监视某个功能区域或系统范围内的所有工作流。
 
-您也可以使用Adobe Campaign工作或報表功能來隨需建置檔案，隨時保持在最新狀態。
+您还可以使用Adobe Campaign作业或报表功能根据需要构建文档，这些文档始终保持最新。

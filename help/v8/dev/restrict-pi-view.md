@@ -1,6 +1,6 @@
 ---
 title: 限制 PI 视图
-description: 瞭解如何限制PI檢視
+description: 了解如何限制PI视图
 feature: PI, Privacy
 role: Developer
 level: Intermediate, Experienced
@@ -16,13 +16,13 @@ ht-degree: 2%
 
 ## 概述 {#overview}
 
-如果您需要行銷使用者能夠存取資料記錄，但不希望他們看到收件者個人資訊(PI)，例如名字、姓氏或電子郵件地址，請套用以下准則以保護隱私權，並防止資料被一般行銷活動操作員濫用。
+如果您需要营销用户能够访问数据记录，但不希望他们查看收件人个人信息(PI)（如名字、姓氏或电子邮件地址），请应用以下准则以保护隐私，并防止数据被常规营销活动操作员滥用。
 
 ## 实施 {#implementation}
 
-可套用至任何元素或屬性的特定屬性已新增至結構描述，以補充現有屬性 **[!UICONTROL visibleIf]**. 此屬性是： **[!UICONTROL accessibleIf]**. 當包含與目前使用者內容相關的XTK運算式時，它可以利用 **[!UICONTROL HasNamedRight]** 或 **[!UICONTROL $(login)]**，例如。
+架构中添加了可应用于任何元素或属性的特定属性，它补充了现有属性 **[!UICONTROL visibleIf]**. 此属性为： **[!UICONTROL accessibleIf]**. 当包含与当前用户上下文相关的XTK表达式时，它可以利用 **[!UICONTROL HasNamedRight]** 或 **[!UICONTROL $(login)]**&#x200B;例如。
 
-收件者方案擴充功能的範例顯示以下用法：
+您可以找到收件人模式扩展的示例，该示例显示以下用法：
 
 ```
 <srcSchema desc="Recipient table (profiles" entitySchema="xtk:srcSchema" extendedSchema="xxl:nmsRecipientXl"
@@ -37,27 +37,27 @@ ht-degree: 2%
 </srcSchema>
 ```
 
-主要屬性包括：
+主要属性包括：
 
-* **[!UICONTROL visibleIf]** ：隱藏中繼資料中的欄位，因此無法在結構描述檢視、欄選擇或運算式產生器中存取這些欄位。 但這不會隱藏任何資料，如果手動在運算式中輸入欄位名稱，則會顯示值。
-* **[!UICONTROL accessibleIf]** ：隱藏產生的查詢中的資料（以空白值取代）。 如果visibleIf空白，則會取得與相同的運算式 **[!UICONTROL accessibleIf]**.
+* **[!UICONTROL visibleIf]** ：从元数据中隐藏字段，因此在架构视图、列选择或表达式生成器中无法访问这些字段。 但这不会隐藏任何数据，如果手动在表达式中输入字段名称，则会显示值。
+* **[!UICONTROL accessibleIf]** ：隐藏生成的查询中的数据（将其替换为空值）。 如果visibleIf为空，则它将获得与相同的表达式 **[!UICONTROL accessibleIf]**.
 
-在Campaign中使用此屬性的後果如下：
+以下是在Campaign中使用此属性的后果：
 
-* 資料將不會在主控台中使用一般查詢編輯器顯示。
-* 資料不會顯示在概述清單和記錄清單（主控台）中。
-* 詳細檢視中的資料將變成唯讀。
-* 資料只能在篩選器中使用（這表示使用某些二分法策略，您仍然可以猜測值）。
-* 使用限制欄位建立的任何運算式也會受到限制： lower(@email)會變得與@email一樣可存取。
-* 在工作流程中，您可以將受限制的欄新增至目標母體，作為轉變的額外欄，但Adobe Campaign使用者仍無法存取。
-* 將目標母體儲存在群組（清單）中時，所儲存欄位的特性與資料來源相同。
-* 依預設，JS程式碼無法存取資料。
+* 在控制台中使用通用查询编辑器不会显示数据，
+* 数据在概述列表和记录列表（控制台）中不可见。
+* 在详细视图中，数据将变为只读。
+* 数据只能在筛选器中使用（这意味着使用某些二分法，您仍然可以猜测值）。
+* 使用受限字段构建的任何表达式也会受到限制：lower(@email)变得与@email一样可访问。
+* 在工作流中，您可以将受限列作为过渡的额外列添加到目标群体，但Adobe Campaign用户仍无法访问它。
+* 当将目标群体存储在一个组（列表）中时，所存储字段的特征与数据源相同。
+* 默认情况下，JS代码无法访问数据。
 
 ## 推荐 {#recommendations}
 
-每次傳送時，電子郵件地址都會複製到 **[!UICONTROL broadLog]** 和 **[!UICONTROL forecastLog]** 表格：因此，這些欄位也需要受到保護。
+在每次投放中，电子邮件地址都会复制到 **[!UICONTROL broadLog]** 和 **[!UICONTROL forecastLog]** 表：因此，这些字段也需要受到保护。
 
-以下為實作此專案的記錄表擴充功能範例：
+以下是实施此操作的日志表扩展示例：
 
 ```
 <srcSchema entitySchema="xtk:srcSchema" extendedSchema="nms:broadLogRcp" img="nms:broadLog.png"
@@ -88,4 +88,4 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->此限制僅適用於非技術使用者，不會隔離資料：具有相關許可權的技術使用者可以擷取資料。
+>此限制仅适用于非技术用户，并且不会隔离数据：具有相关权限的技术用户可以检索数据。

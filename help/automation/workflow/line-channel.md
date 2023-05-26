@@ -13,7 +13,7 @@ ht-degree: 13%
 
 # LINE 渠道{#line-channel}
 
-以下詳述的工作流程會隨 **LINE頻道** 模組（預設）。 如需此模組的詳細資訊，請參閱 [此頁面](../../v8/send/line.md).
+下面详述的工作流将随 **LINE渠道** 默认模块。 有关此模块的更多信息，请参阅 [此页面](../../v8/send/line.md).
 
 <table> 
  <tbody> 
@@ -23,19 +23,19 @@ ht-degree: 13%
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">LINE V2存取權杖更新</span> <br /> </td> 
+   <td> <span class="uicontrol">LINE V2访问令牌更新</span> <br /> </td> 
    <td> <span class="uicontrol">updateLineV2AccessToken</span> <br /> </td> 
-   <td> 此工作流程會將存取Token重新整理至LINE V2。<br /> </td> 
+   <td> 此工作流将刷新对LINE V2的访问令牌。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">刪除封鎖的LINE使用者</span> <br /> </td> 
+   <td> <span class="uicontrol">删除被阻止的LINE用户</span> <br /> </td> 
    <td> <span class="uicontrol">deleteBlockedLineUsersV2</span> <br /> </td> 
-   <td> 此工作流程可確保LINE V2使用者的資料在封鎖LINE正式帳戶180天後會被刪除。<br /> </td> 
+   <td> 此工作流可确保在LINE V2用户阻止LINE官方帐户180天后删除这些用户数据。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">MID到LineUserID移轉</span> <br /> </td> 
+   <td> <span class="uicontrol">MID到LineUserID迁移</span> <br /> </td> 
    <td> <span class="uicontrol">MIDToUserIDMigration</span> <br /> </td> 
-   <td> 此工作流程會產生LINE V2使用者ID，以便從LINE V1移轉至LINE V2。<br /> </td> 
+   <td> 此工作流会生成LINE V2用户的ID，以便从LINE V1迁移到LINE V2。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

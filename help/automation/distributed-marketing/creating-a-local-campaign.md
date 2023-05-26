@@ -15,334 +15,334 @@ ht-degree: 2%
 
 
 
-本機行銷活動是從清單中參照的範本建立的例項 **[!UICONTROL campaign packages]** 搭配 **特定執行排程**. 其目標是使用由中央實體設定和設定的行銷活動範本，滿足本機通訊需求。 實作本機作業的主要階段如下：
+本地营销活动是从列表中引用的模板创建的实例 **[!UICONTROL campaign packages]** 带有 **特定执行计划**. 其目标是使用由中央实体设置和配置的活动模板满足本地通信需求。 实施本地操作的主要阶段如下：
 
-**中央實體**
+**对于中央实体**
 
-1. 建立本機行銷活動範本。
-1. 從範本建立行銷活動套件。
-1. 發佈行銷活動套件。
-1. 正在核准訂單。
+1. 创建本地活动模板。
+1. 从模板创建营销活动包。
+1. 发布营销活动包。
+1. 正在批准订单。
 
-**針對本機實體**
+**对于本地实体**
 
-1. 訂購行銷活動。
-1. 執行行銷活動。
+1. 订购营销活动。
+1. 执行营销活动。
 
-## 建立本機行銷活動範本 {#creating-a-local-campaign-template}
+## 创建本地活动模板 {#creating-a-local-campaign-template}
 
-若要建立行銷活動套件，您必須先建立 **行銷活動範本** 透過 **[!UICONTROL Resources > Templates]** 節點。
+要创建营销活动包，您必须首先创建 **活动模板** 通过 **[!UICONTROL Resources > Templates]** 节点。
 
-若要建立新的本機範本，請複製預設值 **[!UICONTROL Local campaign (opLocal)]** 範本。
+要创建新的本地模板，请复制默认模板 **[!UICONTROL Local campaign (opLocal)]** 模板。
 
 ![](assets/mkg_dist_local_op_creation.png)
 
-為行銷活動範本命名，並填寫可用欄位。
+命名您的营销活动模板并填写可用字段。
 
 ![](assets/mkg_dist_local_op_creation1.png)
 
-在行銷活動視窗中，按一下 **[!UICONTROL Edit]** 標籤，然後按一下 **[!UICONTROL Advanced campaign parameters...]** 連結。
+在campaign窗口中，单击 **[!UICONTROL Edit]** 选项卡，然后单击 **[!UICONTROL Advanced campaign parameters...]** 链接。
 
 ![](assets/mkt_distr_4.png)
 
 ### Web 界面 {#web-interface}
 
-在 **分散式行銷** 標籤上，您可以選擇Web介面的型別，並指定當本機實體下訂單時要輸入的預設值和引數。
+在 **分布式营销** 选项卡，可以选择Web界面的类型，并指定本地实体下订单时要输入的默认值和参数。
 
-Web介面對應於在訂購行銷活動時要由本機實體填寫的表單。
+Web界面对应于在订购营销活动时要由本地实体填写的表单。
 
-選取要套用至從範本建立之行銷活動的網頁介面型別：
+选择要应用于从模板创建的营销活动的Web界面类型：
 
 ![](assets/mkt_distr_1.png)
 
-可用的網頁介面有四種型別：
+有四种类型的Web界面可用：
 
-* **[!UICONTROL By brief]** ：本機實體必須提供說明，其中說明行銷活動設定。 訂單獲得核准後，中央實體會設定並執行整個行銷活動。
+* **[!UICONTROL By brief]** ：本地实体必须提供描述，用于描述campaign配置。 订单获得批准后，中央实体会配置并执行整个营销活动。
 
    ![](assets/mkt_distr_6.png)
 
-* **[!UICONTROL By form]** ：本機實體可存取網路表單，其中他們可以使用個人化欄位編輯內容、目標、其大小上限，以及建立和擷取日期（視使用的範本而定）。 本機實體可以評估目標並預覽此網路表單的內容。
+* **[!UICONTROL By form]** ：本地实体有权访问Web窗体，根据使用的模板，他们可以在其中编辑内容、目标、其最大大小以及使用个性化字段的创建和提取日期。 本地实体可以评估目标并预览此Web窗体中的内容。
 
    ![](assets/mkt_distr_8.png)
 
-   提供的表單是在Web應用程式中指定的，必須在下拉式清單中從 **[!UICONTROL web Interface]** 範本中的欄位 **[!UICONTROL Advanced campaign parameters...]** 連結。 請參閱 [建立本機行銷活動（依表單）](examples.md#creating-a-local-campaign--by-form-).
+   提供的表单在Web应用程序中指定，必须从下拉列表中选择 **[!UICONTROL web Interface]** 模板的 **[!UICONTROL Advanced campaign parameters...]** 链接。 请参阅 [创建本地活动（按表单）](examples.md#creating-a-local-campaign--by-form-).
 
    >[!NOTE]
    >
-   >此範例中使用的Web應用程式就是一個範例。 您必須建立特定的網頁應用程式才能使用表單。
+   >本示例中使用的Web应用程序就是一个示例。 您必须创建特定的Web应用程序才能使用表单。
 
    ![](assets/mkt_distr_7.png)
 
-* **[!UICONTROL By external form]** ：本機實體可存取其外部網路(非Adobe Campaign)中的促銷活動引數。 這些引數與 **本地行銷活動（依表單）**.
-* **[!UICONTROL Pre-set]** ：本機實體使用預設表單訂購行銷活動，而不進行當地語系化。
+* **[!UICONTROL By external form]** ：本地实体有权访问其外网(非Adobe Campaign)中的营销活动参数。 这些参数与 **本地营销活动（按表单）**.
+* **[!UICONTROL Pre-set]** ：本地实体订单营销活动使用默认表单，而不进行本地化。
 
    ![](assets/mkt_distr_5.png)
 
-### 預設值 {#default-values}
+### 默认值 {#default-values}
 
 
-選取 **[!UICONTROL Default values]** 將由本機實體完成。 例如：
+选择 **[!UICONTROL Default values]** 将由本地实体完成。 例如：
 
-* 聯絡和擷取日期，
-* 目標特性（年齡區段等）。
+* 联系和提取日期，
+* 目标特征（年龄段等）。
 
 ![](assets/mkg_dist_local_op_creation2.png)
 
-完成 **[!UICONTROL Parent marketing program]** 和 **[!UICONTROL Charge]** 欄位。
+完成 **[!UICONTROL Parent marketing program]** 和 **[!UICONTROL Charge]** 字段。
 
 ![](assets/mkg_dist_local_op_creation3.png)
 
 ### 审批 {#approvals}
 
-從 **[!UICONTROL Advanced parameters for campaign entry]** 連結，您可以指定稽核者數目上限。
+从 **[!UICONTROL Advanced parameters for campaign entry]** 链接，则可以指定审阅人的最大数量。
 
 ![](assets/s_advuser_mkg_dist_add_valid_op1.png)
 
-排序行銷活動時，檢閱者將由本機實體輸入。
+订购营销活动时，审阅人将由本地实体输入。
 
 ![](assets/mkt_distr_5.png)
 
-如果您不想為行銷活動的稽核者命名，請輸入0。
+如果不希望为促销活动指定审阅人，请输入0。
 
 ### 文档 {#documents}
 
-您可以允許本機實體運運算元連結檔案（文字檔案、試算表、影像、行銷活動說明等） 至本機行銷活動。 此 **[!UICONTROL Advanced parameters for campaign entry...]** 連結可讓您限制檔案數量。 要執行此操作，只需輸入 **[!UICONTROL Number of documents]** 欄位。
+您可以允许本地实体运算符链接文档（文本文件、电子表格、图像、营销活动描述等） 创建订单时添加到本地营销活动。 此 **[!UICONTROL Advanced parameters for campaign entry...]** 链接允许您限制文档数量。 要执行此操作，只需输入 **[!UICONTROL Number of documents]** 字段。
 
 ![](assets/s_advuser_mkg_dist_local_docs.png)
 
-訂購行銷活動套件時，表單會建議連結範本中對應欄位所指示數量的檔案。
+订购促销活动包时，表单建议关联模板中相应字段中所指示的任意数量的文档。
 
 ![](assets/s_advuser_mkg_dist_add_docs.png)
 
-如果您不想顯示檔案上傳欄位，請輸入 **[!UICONTROL 0]** 在 **[!UICONTROL Number of documents]** 欄位。
+如果不希望显示文档上传字段，请输入 **[!UICONTROL 0]** 在 **[!UICONTROL Number of documents]** 字段。
 
 >[!NOTE]
 >
->此 **[!UICONTROL Advanced parameters for campaign entry]** 可透過檢查來停用 **[!UICONTROL Do not display the page used to enter the campaign parameters]**.
+>此 **[!UICONTROL Advanced parameters for campaign entry]** 可以通过检查取消激活 **[!UICONTROL Do not display the page used to enter the campaign parameters]**.
 
 ![](assets/s_advuser_mkg_dist_disable_op_parameters.png)
 
 ### 工作流 {#workflow}
 
-在 **[!UICONTROL Targeting and workflows]** 索引標籤中，建立行銷活動工作流程，以收集 **[!UICONTROL Default values]** 指定於 **[!UICONTROL Advanced campaign parameters...]** 和建立傳遞。
+在 **[!UICONTROL Targeting and workflows]** 选项卡，创建用于收集 **[!UICONTROL Default values]** 指定于 **[!UICONTROL Advanced campaign parameters...]** 和创建投放。
 
 ![](assets/mkg_dist_local_op_creation4b.png)
 
-按兩下 **[!UICONTROL Query]** 活動，以根據指定的進行設定 **[!UICONTROL Default values]**.
+双击 **[!UICONTROL Query]** 根据指定的进行配置的活动 **[!UICONTROL Default values]**.
 
 ![](assets/mkt_dist_local_campaign_localize_query.png)
 
 ### 投放 {#delivery}
 
-在 **[!UICONTROL Audit]** 索引標籤，按一下 **[!UICONTROL Detail...]** 圖示以檢視 **[!UICONTROL Scheduling]** 用於選取的傳遞。
+在 **[!UICONTROL Audit]** 选项卡，单击 **[!UICONTROL Detail...]** 图标以查看 **[!UICONTROL Scheduling]** 用于选定的投放。
 
 ![](assets/mkg_dist_local_op_creation4c.png)
 
-此 **[!UICONTROL Scheduling]** 圖示可讓您設定傳送的聯絡人及執行日期。
+此 **[!UICONTROL Scheduling]** 图标可让您配置投放的联系和执行日期。
 
 ![](assets/mkg_dist_local_op_creation4d.png)
 
-如有必要，請設定傳遞的大小上限：
+如有必要，请配置投放的最大大小：
 
 ![](assets/mkg_dist_local_op_creation4e.png)
 
-找到您的傳遞HTML。 例如，在 **[!UICONTROL Delivery > Current order > Additional fields]**，使用 **[!UICONTROL Age segment]** 根據目標年齡尋找傳送的欄位。
+找到投放的HTML。 例如，在 **[!UICONTROL Delivery > Current order > Additional fields]**，使用 **[!UICONTROL Age segment]** 字段，用于根据目标的年龄定位投放。
 
 ![](assets/mkt_dist_local_campaign_localize_html.png)
 
-儲存您的行銷活動範本。 您現在可以從以下位置使用它： **[!UICONTROL Campaign packages]** 在中檢視 **[!UICONTROL Campaigns]** 索引標籤中，按一下 **[!UICONTROL Create]** 按鈕。
+保存活动模板。 您现在可以从以下位置使用它： **[!UICONTROL Campaign packages]** 在中查看 **[!UICONTROL Campaigns]** 选项卡，通过单击 **[!UICONTROL Create]** 按钮。
 
 ![](assets/mkt_distr_9.png)
 
 >[!NOTE]
 >
->行銷活動範本及其一般設定會在中詳細說明 [此頁面](../campaigns/marketing-campaign-templates.md).
+>有关营销活动模板及其常规配置的详情，请参见 [此页面](../campaigns/marketing-campaign-templates.md).
 
-## 建立行銷活動套件 {#creating-the-campaign-package}
+## 创建活动包 {#creating-the-campaign-package}
 
-若要讓本機實體可使用行銷活動範本，需將其新增至清單。 為此，中央機構需要建立新的套件。
+要使营销活动模板可供本地实体使用，需要将其添加到列表中。 为此，中央机构需要制定新的方案。
 
 应用以下步骤：
 
-1. 在 **[!UICONTROL Navigation]** 區段於 **行銷活動** 頁面，按一下 **[!UICONTROL Campaign packages]** 連結。
+1. 在 **[!UICONTROL Navigation]** 部分 **营销活动** 页面上，单击 **[!UICONTROL Campaign packages]** 链接。
 1. 单击 **[!UICONTROL Create]** 按钮。
 
    ![](assets/mkg_dist_add_an_entry.png)
 
-1. 視窗上方的區段可讓您選取 [先前](#creating-a-local-campaign-template) 指定的行銷活動套件範本。
+1. 窗口上方的部分允许您选择 [以前](#creating-a-local-campaign-template) 指定的营销活动包模板。
 
-   根據預設， **[!UICONTROL New local campaign package (localEmpty)]** 範本用於本機行銷活動。
+   默认情况下， **[!UICONTROL New local campaign package (localEmpty)]** 模板用于本地营销活动。
 
-1. 指定行銷活動套件的標籤、資料夾和執行排程。
+1. 指定营销活动包的标签、文件夹和执行计划。
 
 ### 日期 {#dates}
 
-開始和結束日期會在行銷活動套件清單中定義行銷活動的可見度期間。
+开始日期和结束日期定义营销活动包列表中的营销活动可见性时段。
 
-可用日期是促銷活動可供本機實體使用（訂購）的日期。
+可用日期是营销活动对本地实体（要订购）可用的日期。
 
 >[!CAUTION]
 >
->如果本機實體未在截止日期前預留行銷活動，則將無法使用。
+>如果本地实体未在截止日期前预留营销活动，则将无法使用该营销活动。
 
-此資訊可在傳送給當地代理商的通知訊息中找到，如下所示：
+此信息可在发送给本地机构的通知消息中找到，如下所示：
 
 ![](assets/s_advuser_mkg_dist_local_notif.png)
 
 ### 受众 {#audience}
 
-對於本機行銷活動，中央實體可透過核取以指定相關的本機實體。 **[!UICONTROL Limit the package to a set of local entities]**.
+对于本地活动，中央实体可以通过检查 **[!UICONTROL Limit the package to a set of local entities]**.
 
 ![](assets/s_advuser_mkg_dist_create_mutual_entry3.png)
 
-### 其他設定 {#additional-settings}
+### 其他设置 {#additional-settings}
 
-儲存封裝後，中央實體便可從編輯 **[!UICONTROL Edit]** 標籤。
+保存资源包后，中央实体可以从编辑它 **[!UICONTROL Edit]** 选项卡。
 
 ![](assets/mkg_dist_edit_kit.png)
 
-從 **[!UICONTROL General]** 索引標籤中，中央實體可以：
+从 **[!UICONTROL General]** 选项卡，中心实体可以：
 
-* 從設定campaign套件檢閱者 **[!UICONTROL Approval parameters...]** 連結，
-* 檢閱執行排程，
-* 新增或刪除本機實體。
+* 从配置campaign包审阅者 **[!UICONTROL Approval parameters...]** 链接，
+* 查看执行计划，
+* 添加或删除本地实体。
 
 >[!NOTE]
 >
->依預設，每個實體都可以排序 **本地行銷活動** 僅一次。
+>默认情况下，每个实体都可以对 **本地营销活动** 仅一次。
 >   
->檢查 **[!UICONTROL Enable multiple creation]** 可允許從行銷活動套件建立數個本機行銷活動的選項。
+>查看 **[!UICONTROL Enable multiple creation]** 选项，用于允许从营销活动包创建多个本地营销活动。
 
 ![](assets/mkg_dist_local_op_multi_crea.png)
 
 ### 通知 {#notifications}
 
-當行銷活動可用或達到註冊截止日期時，會傳送訊息給本機通知群組的操作員。 有關詳細資訊，請參閱 [組織實體](about-distributed-marketing.md#organizational-entities).
+当营销活动可用或达到注册截止日期时，会向本地通知组的操作员发送消息。 有关更多信息，请参阅 [组织实体](about-distributed-marketing.md#organizational-entities).
 
-## 訂購行銷活動 {#ordering-a-campaign}
+## 订购营销活动 {#ordering-a-campaign}
 
-行銷活動套件一經核准且開始實作期間後，即可供本機實體存取。 本機實體會收到電子郵件，通知他們新的行銷活動套件可供使用（一旦達到可用日期）。
+活动包一旦获得批准并且开始实施，本地实体即可访问这些活动包。 本地实体会收到一封电子邮件，通知他们新的Campaign包可用（一旦达到可用日期）。
 
 >[!NOTE]
 >
->如果在建立行銷活動套件時指定了某些本機實體，則這些實體將是唯一接收通知的實體。 如果未指定本機實體，則所有本機實體都會收到通知。
+>如果在创建营销活动包时指定了某些本地实体，则这些实体将是唯一接收通知的实体。 如果未指定本地实体，则所有本地实体都将收到通知。
 
 ![](assets/mkg_dist_local_op_notification.png)
 
-若要使用中央實體提供的行銷活動，本機實體必須加以排序。
+要使用中央实体提供的活动，本地实体必须对其进行排序。
 
-若要訂購行銷活動，請執行下列步驟：
+要订购活动，请执行以下操作：
 
-1. 按一下 **[!UICONTROL Order campaign]** 或Adobe Campaign中對應的按鈕中設定。
+1. 单击 **[!UICONTROL Order campaign]** 或Adobe Campaign中的相应按钮进行修改。
 
-   輸入您的ID和密碼以訂購行銷活動。 介面是由網頁應用程式中定義的一組頁面所組成。
+   输入您的ID和密码以订购营销策划。 该界面由Web应用程序中定义的一组页面组成。
 
-1. 在第一頁輸入必要的資訊（訂單標籤和註解），然後按一下 **[!UICONTROL Next]**.
+1. 在首页中输入必需的信息（订单标签和备注），然后单击 **[!UICONTROL Next]**.
 
    ![](assets/mkg_dist_subscribe_step1.png)
 
-1. 完成可用引數並核准訂單。
+1. 完成可用参数并批准订单。
 
-1. 會傳送通知給本機實體所屬組織實體的經理，以核准此訂單。
+1. 系统会向本地实体所属组织实体的经理发送通知，以批准此订单。
 
    ![](assets/mkg_dist_subscribe_step3.png)
 
-1. 資訊會傳回至本機與中央實體。 雖然本機實體只能檢視自己的訂單，但中央實體可以檢視任何本機實體的所有訂單，如下所示：
+1. 信息被返回到本地和中央实体。 虽然本地实体只能查看自己的订单，但中央实体可以查看任何本地实体的所有订单，如下所示：
 
    ![](assets/mkg_dist_subscribe_central_view.png)
 
-   操作員可以顯示訂單詳細資料：
+   操作员可以显示订单详细信息：
 
    ![](assets/mkg_dist_local_op_catalog_detail_1.png)
 
-   此 **[!UICONTROL Edit]** 索引標籤包含由本機實體在訂購行銷活動時輸入的資訊。
+   此 **[!UICONTROL Edit]** 选项卡包含本地实体在订购营销活动时输入的信息。
 
    ![](assets/mkg_dist_local_op_catalog_detail_1b.png)
 
-1. 訂單必須由中央實體核准才能完成。
+1. 该命令必须得到中央实体的批准才能最终确定。
 
    ![](assets/mkg_dist_local_op_catalog_detail_3.png)
 
-   如需詳細資訊，請參閱 [核准流程](#approval-process) 區段。
+   有关详情，请参阅 [审批流程](#approval-process) 部分。
 
-1. 接著，本機運運算元會收到行銷活動可用的通知：行銷活動可用性可在內的行銷活動套件清單中找到。 **行銷活動** 標籤。 然後可以使用行銷活動。 有關詳細資訊，請參閱 [存取行銷活動](accessing-campaigns.md).
+1. 然后，会通知本地操作员该营销活动可用：可以在 **营销活动** 选项卡。 然后，可以使用营销策划。 有关更多信息，请参阅 [访问活动](accessing-campaigns.md).
 
-   此 **[!UICONTROL Start targeting with order approval]** 選項可讓本機實體在核准訂單後立即執行行銷活動。
+   此 **[!UICONTROL Start targeting with order approval]** 选项允许本地实体在订单获得批准后立即运行营销活动。
 
    ![](assets/mkg_dist_local_op_catalog_use.png)
 
-## 核准訂單 {#approving-an-order}
+## 批准订单 {#approving-an-order}
 
-若要確認行銷活動訂單，中央實體必須核准它。
+要确认促销活动订单，必须由中央实体批准。
 
-此 **[!UICONTROL Campaign orders]** 概述，存取： **行銷活動** 索引標籤可讓您檢視行銷活動訂單的狀態並核准它們。
+此 **[!UICONTROL Campaign orders]** 概述，可通过 **营销活动** 选项卡允许您查看营销活动订单的状态并批准它们。
 
 >[!NOTE]
 >
->本地實體可以變更訂單，直到訂單獲得核准為止。
+>本地实体可以对订单进行更改，直至订单获得批准。
 
-### 核准流程 {#approval-process}
+### 审批流程 {#approval-process}
 
-#### 電子郵件通知 {#email-notification}
+#### 电子邮件通知 {#email-notification}
 
-當行銷活動由本機實體訂購時，其稽核者會收到電子郵件通知，如下所示：
+当营销活动由本地实体订购时，其查看者会收到电子邮件通知，如下所示：
 
 ![](assets/mkg_dist_valid_notif_email.png)
 
 >[!NOTE]
 >
->選擇稽核者會出現在 [檢閱者](#reviewers) 區段。 他們可以接受或拒絕訂單。
+>选择审阅人将显示在 [审阅者](#reviewers) 部分。 他们可以接受或拒绝该订单。
 
 ![](assets/mkg_dist_command_valid_web.png)
 
-#### 透過Adobe Campaign主控台核准 {#approving-via-the-adobe-campaign-console}
+#### 通过Adobe Campaign控制台进行审批 {#approving-via-the-adobe-campaign-console}
 
-您也可以在行銷活動訂單總覽中，透過主控台核准訂單。 若要核准訂單，請選取訂單並按一下 **[!UICONTROL Approve the order]**.
+订单也可以通过控制台在促销活动订单概述中审批。 要批准订单，请选择该订单并单击 **[!UICONTROL Approve the order]**.
 
 ![](assets/mkg_dist_local_order_valid.png)
 
 >[!NOTE]
 >
->在行銷活動推出日期之前，仍可編輯及重新設定行銷活動。 本機實體也可以按一下 **[!UICONTROL Cancel]** 按鈕。
+>在营销活动可用日期之前，仍可以编辑和重新配置营销活动。 本地实体还可以通过单击 **[!UICONTROL Cancel]** 按钮。
 
 #### 创建营销策划 {#creating-a-campaign}
 
-行銷活動訂單獲得核准後，即可由本機實體進行設定及執行。
+营销活动订单获得批准后，便可由本地实体配置并执行。
 
 ![](assets/mkg_dist_mutual_op_created.png)
 
-有關詳細資訊，請參閱 [存取行銷活動](accessing-campaigns.md).
+有关更多信息，请参阅 [访问活动](accessing-campaigns.md).
 
-### 拒絕核准 {#rejecting-an-approval}
+### 拒绝审批 {#rejecting-an-approval}
 
-負責核准的操作員可以拒絕訂單或行銷活動套件。
+负责审批的操作员可以拒绝订单或活动包。
 
 ![](assets/mkg_dist_do_not_valid.png)
 
-如果複查者拒絕訂單，系統會自動將相關通知傳送給相關的當地實體：它會顯示拒絕核准的運運算元所輸入的註解。
+如果复查人拒绝订单，则相关通知会自动发送给相关本地实体：显示拒绝审批的操作员输入的备注。
 
-資訊會顯示在行銷活動套件清單頁面或行銷活動訂單頁面上。 如果他們能存取Adobe Campaign主控台，本機實體就會收到此拒絕的通知。
+信息显示在营销活动包列表页面或营销活动订单页面上。 如果他们有权访问Adobe Campaign控制台，则会将此拒绝通知本地实体。
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 
-他們可以檢視行銷活動套件中的相關註解 **[!UICONTROL Edit]** 標籤。
+他们可以查看营销活动包的相关评论 **[!UICONTROL Edit]** 选项卡。
 
 ![](assets/mkg_dist_do_not_valid_tab.png)
 
-### 檢閱者 {#reviewers}
+### 审阅者 {#reviewers}
 
-每次需要核準時，稽核者都會收到電子郵件通知。
+每次需要审批时，审阅人都会收到电子邮件通知。
 
-對於每個本機實體，會選取稽核者以進行行銷活動訂單核准和行銷活動核准。 如需有關選取本機檢閱者的詳細資訊，請參閱 [組織實體](about-distributed-marketing.md#organizational-entities).
+对于每个本地实体，将选择审阅人进行营销活动订单批准和营销活动批准。 有关选择本地审阅人的详细信息，请参阅 [组织实体](about-distributed-marketing.md#organizational-entities).
 
 >[!NOTE]
 >
->若要讓此選取成為可能，訂單核准必須尚未生效。
+>要使此选择成为可能，订单审批必须尚未生效。
 
-### 取消訂單 {#canceling-an-order}
+### 取消订单 {#canceling-an-order}
 
-中央機構可使用以下工具取消訂單： **[!UICONTROL Delete]** 按鈕，位於訂單控制面板上。
+中央机构可使用以下方式取消订单 **[!UICONTROL Delete]** 按钮，位于订单功能板上。
 
 ![](assets/mkg_dist_local_op_cancel.png)
 
-這會取消中的行銷活動 **[!UICONTROL Campaign orders]** 檢視。
+这将取消中的营销活动 **[!UICONTROL Campaign orders]** 视图。

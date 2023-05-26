@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 拆分
-description: 進一步瞭解分割工作流程活動
+description: 了解有关拆分工作流活动的更多信息
 feature: Workflows, Targeting Activity
 exl-id: bf4935dd-87dc-4c5c-becf-8c4df61805fd
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
@@ -13,219 +13,219 @@ ht-degree: 0%
 
 # 拆分{#split}
 
-A **Split**-type活動可讓您將目標分割成數個子集。 使用所有收到的結果建構目標：所有先前的活動都必須已完成，才能執行此活動。
+A **Split**-type活动允许您将目标拆分为多个子集。 使用所有接收的结果构建目标：因此，必须完成所有以前的活动，才能执行此活动。
 
-此活動不會觸發入站母體的聯合。 如果數個轉變位於一個分割活動中，建議插入 **[!UICONTROL Union]** 活動。
+此活动不会触发集客群体的联合。 如果多个过渡登陆在一个拆分活动中，我们建议插入 **[!UICONTROL Union]** 前面的活动。
 
-如需所使用分割活動的範例，請參閱 [本節](targeting-workflows.md#create-subsets-using-the-split-activity).
+有关正在使用的拆分活动的示例，请参阅 [本节](targeting-workflows.md#create-subsets-using-the-split-activity).
 
-以下說明如何使用分割活動，以使用篩選條件將目標分割成不同母體的範例，請參閱 [本節](cross-channel-delivery-workflow.md).
+有关说明如何使用拆分活动通过筛选条件将目标分段为不同群体的示例，请参见 [本节](cross-channel-delivery-workflow.md).
 
-以下提供如何在分割活動中使用執行個體變數的範例： [本節](javascript-scripts-and-templates.md).
+有关如何在拆分活动中使用实例变量的示例，请参阅 [本节](javascript-scripts-and-templates.md).
 
-若要設定此活動，請在「 」中定義子集內容和標籤 **[!UICONTROL Subsets]** 索引標籤中，然後選擇目標維度 **[!UICONTROL General]** 標籤。
+要配置此活动，请在 **[!UICONTROL Subsets]** 选项卡，然后在中选择目标维度 **[!UICONTROL General]** 选项卡。
 
-## 建立子集 {#create-subsets}
+## 创建子集 {#create-subsets}
 
-若要建立子集，請執行下列動作：
+要创建子集，请执行以下操作：
 
-1. 按一下相符欄位中的標籤，然後選取要套用的篩選器。
-1. 若要篩選入站母體，請選取 **[!UICONTROL Add a filtering condition]** 選項，然後按一下 **[!UICONTROL Edit...]** 連結。
+1. 单击匹配字段中的标签，然后选择要应用的过滤器。
+1. 要筛选集客群体，请选择 **[!UICONTROL Add a filtering condition]** 选项，然后单击 **[!UICONTROL Edit...]** 链接。
 
-   選取要套用至資料的篩選器型別，以將其納入此集。
+   选择要应用于要包含在此集中的数据的过滤器类型。
 
-   此程式與的相同 **查詢**-type活動。
+   该过程与 **查询**&#x200B;类型活动。
 
    >[!NOTE]
    >
-   >您最多可以篩選兩個外部資料庫(FDA)中的資料。
+   >您最多可以筛选两个外部数据库(FDA)中的数据。
 
-1. 您可以指定要從目標擷取以建立子集的記錄數上限。 若要這麼做，請核取 **[!UICONTROL Limit the selected records]** 選項，然後按一下 **[!UICONTROL Edit...]** 連結。
+1. 您可以指定从目标提取的最大记录数以创建子集。 要执行此操作，请查看 **[!UICONTROL Limit the selected records]** 选项，然后单击 **[!UICONTROL Edit...]** 链接。
 
-   精靈可讓您選擇此子集記錄的選擇模式。 [了解详情](#limit-the-number-of-subset-records)。
+   向导允许您为此子集的记录选择模式。 [了解详情](#limit-the-number-of-subset-records)。
 
    ![](assets/s_user_segmentation_partage4.png)
 
-1. 如果您願意，可以 **新增其他子集** 使用 **[!UICONTROL Add]** 按鈕。
+1. 如果您愿意，可以 **添加其他子集** 使用 **[!UICONTROL Add]** 按钮。
 
    ![](assets/s_user_segmentation_partage_add.png)
 
    >[!NOTE]
    >
-   >如果 **[!UICONTROL Enable overlapping of output populations]** 選項未核取，子集會以標籤順序建立。 使用此視窗右上方的箭頭來移動它們。 舉例來說，如果第一個子集復原了初始母體的70%，則下一個子集將只會套用其選取准則至剩餘的30%，以此類推。
+   >如果 **[!UICONTROL Enable overlapping of output populations]** 选项未选中，子集将按选项卡的顺序创建。 使用此窗口右上方的箭头移动它们。 例如，如果第一个子集恢复初始群体的70%，则下一个子集将仅对其余30%应用其选择标准，依此类推。
 
-   對於每個建立的子集，出站轉變將會新增到分割活動中。
+   对于创建的每个子集，叫客过渡都将添加到拆分活动中。
 
    ![](assets/s_user_segmentation_partage_add2.png)
 
-   您可以選擇產生單一出站轉變（例如，使用區段代碼識別集）：若要這麼做，請選取 **[!UICONTROL Generate subsets in the same table]** 中的選項 **[!UICONTROL General]** 標籤。
+   您可以选择生成单个叫客过渡（例如，使用段代码标识集）：要执行此操作，请选择 **[!UICONTROL Generate subsets in the same table]** 中的选项 **[!UICONTROL General]** 选项卡。
 
-   完成後，每個子集的區段代碼會自動儲存在其他欄中。 此欄可在傳遞層級的個人化欄位中存取。
+   如果完成，则每个子集的段代码将自动存储在一个附加列中。 可在投放级别的个性化字段中访问此列。
 
-## 限制子集記錄數量 {#limit-the-number-of-subset-records}
+## 限制子集记录数 {#limit-the-number-of-subset-records}
 
-如果您不想使用子集內包含的整個母體，您可以限制它包含的記錄數。
+如果不希望使用子集中包含的整个群体，则可以限制它包含的记录数。
 
-1. 在子集編輯視窗中，核取 **[!UICONTROL Limit the selected records]** 選項，然後按一下 **[!UICONTROL Edit...]** 連結。
-1. 選取您選擇的限制型別：
+1. 在子集编辑窗口中，选中 **[!UICONTROL Limit the selected records]** 选项，然后单击 **[!UICONTROL Edit...]** 链接。
+1. 为您的选择选择选择限制类型：
 
-   * **[!UICONTROL Activate random sampling]**：此選項會採用記錄的隨機抽樣。 套用的隨機抽樣型別取決於資料庫引擎。
-   * **[!UICONTROL Keep only the first records after sorting]**：此選項可讓您根據一或多個排序順序定義限制。 如果您選取 **[!UICONTROL Age]** 欄位做為排序標準，100做為限制，則只會保留最年輕的100位收件者。
-   * **[!UICONTROL Keep the first ones after sorting (criteria, random)]**：此選項會結合前兩個選項。 它可讓您根據一或多個排序順序來定義限制，然後在某些記錄具有與所定義條件相同的值時，在第一筆記錄上套用隨機選擇。
+   * **[!UICONTROL Activate random sampling]**：此选项对记录进行随机取样。 应用的随机抽样类型取决于数据库引擎。
+   * **[!UICONTROL Keep only the first records after sorting]**：利用此选项可根据一个或多个排序顺序定义限制。 如果您选择 **[!UICONTROL Age]** 字段作为排序标准，100作为限制，将仅保留最年轻的100个收件人。
+   * **[!UICONTROL Keep the first ones after sorting (criteria, random)]**：此选项是前两个选项的组合。 它允许您根据一个或多个排序顺序定义限制，然后在某些记录具有与定义的标准相同的值时，对第一个记录应用随机选择。
 
-      例如，如果您選取 **[!UICONTROL Age]** 欄位作為排序條件，然後您定義100的限制，但資料庫中2000個最年輕的收件者皆為18個，則會從這2000個收件者中隨機選取100個收件者。
+      例如，如果您选择 **[!UICONTROL Age]** 字段作为排序标准，然后您定义限制100，但数据库中2000个最年轻的收件人全部为18人，将从这些2000名收件人中随机选择100名。
    ![](assets/s_user_segmentation_partage_wz1.png)
 
-1. 如果您想要定義排序條件，另一個步驟可讓您定義欄和排序順序。
+1. 如果要定义排序标准，还可以通过额外的步骤来定义列和排序顺序。
 
    ![](assets/s_user_segmentation_partage_wz1.1.png)
 
-1. 然後選擇資料限制方法。
+1. 然后选择数据限制方法。
 
    ![](assets/s_user_segmentation_partage_wz2.png)
 
-   有數種方法可以達成此目的：
+   有多种方法可以做到这一点：
 
-   * **[!UICONTROL Size (in %)]**：記錄的百分比。 例如，下列設定會擷取總母體的10%。
+   * **[!UICONTROL Size (in %)]**：记录的百分比。 例如，以下配置提取了总人口的10%。
 
-      百分比適用於初始母體，而非活動的結果。
+      百分比适用于初始群体，而不是活动结果。
 
-   * **[!UICONTROL Size (as a % of the segment)]**：只與子集相關而不與初始母體相關的記錄百分比。
-   * **[!UICONTROL Maximum size]**：記錄數上限。
-   * **[!UICONTROL By data grouping]**：您可以根據入站母體的指定欄位中的值，設定記錄數限制。 [了解详情](#limit-the-number-of-subset-records-by-data-grouping)。
-   * **[!UICONTROL By data grouping (in %)]**：您可以根據入站母體的指定欄位中的值，使用百分比來設定記錄數限制。 [了解详情](#limit-the-number-of-subset-records-by-data-grouping)。
-   * **[!UICONTROL By data distribution]**：如果您的分組欄位有太多值，或是您想避免為每個新的分割活動再次輸入值，Adobe Campaign可讓您設定 **[!UICONTROL By data distribution]** 限制（選用的分散式行銷模組）。 [了解详情](#limit-the-number-of-subset-records-per-data-distribution)。
+   * **[!UICONTROL Size (as a % of the segment)]**：仅与子集而非初始群体相关的记录的百分比。
+   * **[!UICONTROL Maximum size]**：最大记录数。
+   * **[!UICONTROL By data grouping]**：您可以根据集客群体的指定字段中的值设置记录数限制。 [了解详情](#limit-the-number-of-subset-records-by-data-grouping)。
+   * **[!UICONTROL By data grouping (in %)]**：您可以根据集客群体的指定字段中的值，使用百分比设置记录数限制。 [了解详情](#limit-the-number-of-subset-records-by-data-grouping)。
+   * **[!UICONTROL By data distribution]**：如果分组字段的值太多，或者如果您希望避免为每个新的拆分活动再次输入值，可使用Adobe Campaign配置 **[!UICONTROL By data distribution]** 限制（可选分布式营销模块）。 [了解详情](#limit-the-number-of-subset-records-per-data-distribution)。
 
-1. 按一下 **[!UICONTROL Finish]** 以核准記錄選取條件。 然後定義的設定會顯示在編輯器的中間視窗中。
+1. 单击 **[!UICONTROL Finish]** 批准记录选择标准。 然后，定义的配置将显示在编辑器的中间窗口中。
 
-## 依資料分組限制子集記錄數量 {#limit-the-number-of-subset-records-by-data-grouping}
+## 按数据分组限制子集记录数 {#limit-the-number-of-subset-records-by-data-grouping}
 
-您可以依資料分組來限制記錄數量。 此限制可使用固定值或百分比來執行。
+您可以按数据分组限制记录数。 可使用固定值或百分比执行此限制。
 
-例如，如果您選取 **[!UICONTROL Language]** 欄位做為群組欄位，您可以為每種語言定義記錄清單。
+例如，如果您选择 **[!UICONTROL Language]** 字段作为组字段，您可以为每种语言定义记录列表。
 
-1. 選取資料限制值後，選取 **[!UICONTROL By data grouping]** 或 **[!UICONTROL By data grouping (as a %)]** 並按一下 **[!UICONTROL Next]**.
+1. 选择数据限制值后，选择 **[!UICONTROL By data grouping]** 或 **[!UICONTROL By data grouping (as a %)]** 并单击 **[!UICONTROL Next]**.
 
    ![](assets/s_user_segmentation_partage_wz3.png)
 
-1. 然後選取分組欄位( **[!UICONTROL Language]** 欄位)，然後按一下 **[!UICONTROL Next]**.
+1. 然后选择分组字段( **[!UICONTROL Language]** 字段)，然后单击 **[!UICONTROL Next]**.
 
    ![](assets/s_user_segmentation_partage_wz4.png)
 
-1. 最後，指定資料分組臨界值（使用固定值或百分比，視先前選取的分組方法而定）。 若要為每個值設定相同的臨界值（例如，如果您要將每種語言的記錄數設為10），請選取 **[!UICONTROL All data groupings are the same size]** 選項。 若要為每個值設定不同的限制，請選取 **[!UICONTROL Limitations by grouping value]** 選項。 這可讓您為英文、法文等選擇不同的限制。
+1. 最后，指定数据分组阈值（使用固定值或百分比，具体取决于之前选择的分组方法）。 要为每个值设置相同的阈值，例如，如果您希望将每种语言的记录数设置为10，请选择 **[!UICONTROL All data groupings are the same size]** 选项。 要为每个值设置不同的限制，请选择 **[!UICONTROL Limitations by grouping value]** 选项。 这将允许您为英语、法语等语言选择不同的限制。
 
    ![](assets/s_user_segmentation_partage_wz5.png)
 
-1. 按一下 **[!UICONTROL Finish]** 以核准限制並返回編輯分割活動。
+1. 单击 **[!UICONTROL Finish]** 以批准该限制并返回到编辑拆分活动。
 
-## 限制每個資料分佈的子集記錄數 {#limit-the-number-of-subset-records-per-data-distribution}
+## 限制每个数据分布的子集记录数 {#limit-the-number-of-subset-records-per-data-distribution}
 
-如果您的分組欄位包含太多值，或您想避免為每個新的分割活動重設值，Adobe Campaign可讓您為每個資料分佈建立限制。 選取 [資料限制值](#create-subsets) 區段)，選取 **[!UICONTROL By data distribution]** 選項並從下拉式選單中選取範本。 建立資料發佈範本的示例如下。
+如果您的分组字段包含的值过多，或者如果您希望避免为每个新的拆分活动重置值，则可以使用Adobe Campaign为每次数据分配创建一个限制。 选择时 [数据限制值](#create-subsets) 部分)，选择 **[!UICONTROL By data distribution]** 选项并从下拉菜单中选择模板。 下面演示了如何创建数据分发模板。
 
-例如 **[!UICONTROL Local approval]** 具有發佈範本的活動，請參閱 [此頁面](local-approval-activity.md).
+例如， **[!UICONTROL Local approval]** 使用分发模板的活动，请参阅 [此页面](local-approval-activity.md).
 
 ![](assets/s_user_segmentation_partage_wz6.png)
 
 >[!CAUTION]
 >
->此函式僅適用於 [分散式行銷附加元件](../distributed-marketing/about-distributed-marketing.md). 请核实您的许可协议。
+>此函数仅适用于 [分布式营销加载项](../distributed-marketing/about-distributed-marketing.md). 请核实您的许可协议。
 
-資料發佈範本可讓您使用分組值清單來限制記錄數量。 若要建立資料發佈範本，請套用下列步驟：
+通过数据分发模板，您可以使用分组值列表限制记录数。 要创建数据分发模板，请应用以下步骤：
 
-1. 若要建立資料發佈範本，請前往 **[!UICONTROL Resources > Campaign management > Data distribution]** 節點並按一下 **[!UICONTROL New]**.
+1. 要创建数据分发模板，请转到 **[!UICONTROL Resources > Campaign management > Data distribution]** 节点并单击 **[!UICONTROL New]**.
 
    ![](assets/local_validation_data_distribution_1.png)
 
-1. 此 **[!UICONTROL General]** 索引標籤可讓您輸入發佈的標籤和執行內容（目標維度、發佈欄位）。
+1. 此 **[!UICONTROL General]** 选项卡允许您输入分发的标签和执行上下文（定向维度、分发字段）。
 
    ![](assets/local_validation_data_distribution_2.png)
 
-   需要輸入下列欄位：
+   需要输入以下字段：
 
-   * **[!UICONTROL Label]**：發佈範本的標籤。
-   * **[!UICONTROL Targeting dimension]**：輸入資料發佈將套用的目標維度， **[!UICONTROL Recipient]** 例如。 此結構描述必須始終與定位工作流程中使用的資料相容。
-   * **[!UICONTROL Distribution field]**：透過目標維度選取欄位。 例如，如果您選取 **[!UICONTROL Email domain]** 欄位，收件者清單將依網域劃分。
-   * **[!UICONTROL Distribution type]**：選取目標限制值在中劃分的方式 **[!UICONTROL Distribution]** 標籤： **[!UICONTROL Percentage]** 或 **[!UICONTROL Set]**.
-   * **[!UICONTROL Approval storage]**：如果您使用 [本地核准](local-approval.md) 活動，輸入將儲存核准結果的結構描述。 您必須為每個目標結構描述指定一個儲存結構描述。 如果您使用 **[!UICONTROL Recipients]** 目標結構描述，輸入預設值 **[!UICONTROL Local approval of recipients]** 儲存結構描述。
+   * **[!UICONTROL Label]**：分发模板的标签。
+   * **[!UICONTROL Targeting dimension]**：输入数据分发将应用到的定向维度， **[!UICONTROL Recipient]** 例如。 此架构必须始终与定位工作流中使用的数据兼容。
+   * **[!UICONTROL Distribution field]**：通过定向维度选择字段。 例如，如果您选择 **[!UICONTROL Email domain]** 字段中，收件人列表将按域细分。
+   * **[!UICONTROL Distribution type]**：选择在中划分目标限制值的方式 **[!UICONTROL Distribution]** 选项卡： **[!UICONTROL Percentage]** 或 **[!UICONTROL Set]**.
+   * **[!UICONTROL Approval storage]**：如果您使用 [本地审批](local-approval.md) 活动时，输入将存储审批结果的架构。 您必须为每个定位架构指定一个存储架构。 如果您使用 **[!UICONTROL Recipients]** 定位架构，输入默认值 **[!UICONTROL Local approval of recipients]** 存储模式。
 
-      如果資料分組受到簡單限制而沒有本地核准，則不需要輸入 **[!UICONTROL Approvals storage]** 欄位。
+      如果由于数据分组而没有本地批准而存在简单限制，则无需输入 **[!UICONTROL Approvals storage]** 字段。
 
-1. 如果您使用 [本地核准](local-approval.md) 活動，請輸入 **[!UICONTROL Advanced settings]** 對於發佈範本：
+1. 如果您使用 [本地审批](local-approval.md) 活动，请输入 **[!UICONTROL Advanced settings]** 对于分发模板：
 
    ![](assets/local_validation_data_distribution_3.png)
 
-   需要輸入下列欄位：
+   需要输入以下字段：
 
-   * **[!UICONTROL Approve targeted messages]**：如果您想要從要核准的收件者清單中預先選取所有收件者，請核取此選項。 如果未核取此選項，則不會預先選取任何收件者。
+   * **[!UICONTROL Approve targeted messages]**：如果您希望从要批准的收件人列表中预选所有收件人，请选中此选项。 如果未选中此选项，则不会预先选择任何收件人。
 
       >[!NOTE]
       >
-      >此選項預設為勾選。
+      >此选项默认处于选中状态。
 
       ![](assets/local_validation_notification.png)
 
-   * **[!UICONTROL Delivery label]**：可讓您定義運算式，以在回訪通知中顯示傳遞標籤。 預設運算式提供有關傳遞標準標籤（計算字串）的資訊。 您可以修改此運算式。
+   * **[!UICONTROL Delivery label]**：可让您定义一个表达式，以便在退货通知中显示投放标签。 默认表达式提供有关投放的标准标签（计算字符串）的信息。 您可以修改此表达式。
 
       ![](assets/local_validation_notification_3.png)
 
-   * **[!UICONTROL Grouping field]**：此欄位可讓您定義用於在核准和傳回通知中顯示收件者的群組。
+   * **[!UICONTROL Grouping field]**：利用此字段，可定义用于在批准和返回通知中显示收件人的分组。
 
       ![](assets/local_validation_notification_4.png)
 
-   * **[!UICONTROL Web Interface]**：可讓您將網頁應用程式連結至收件者清單。 在核准和回訪通知中，每個收件者都可點按，並連結至選取的網頁應用程式。 此 **[!UICONTROL Parameters]** 欄位(例如 **[!UICONTROL recipientId]**)可讓您設定要在URL和Web應用程式中使用的其他引數。
+   * **[!UICONTROL Web Interface]**：用于将Web应用程序链接到收件人列表。 在批准和返回通知中，每个收件人都可点击，并将链接到选定的Web应用程序。 此 **[!UICONTROL Parameters]** 字段(例如 **[!UICONTROL recipientId]**)可让您配置要在URL和Web应用程序中使用的其他参数。
 
-1. 此 **[!UICONTROL Breakdown]** 索引標籤可讓您定義分佈值清單。
+1. 此 **[!UICONTROL Breakdown]** 选项卡用于定义分发值的列表。
 
    ![](assets/local_validation_data_distribution_4.png)
 
-   * **[!UICONTROL Value]**：輸入分佈值。
-   * **[!UICONTROL Percentage / Set]**：輸入連結至每個值的記錄限制（固定或百分比）。
+   * **[!UICONTROL Value]**：输入分布值。
+   * **[!UICONTROL Percentage / Set]**：输入链接到每个值的记录限制（固定或百分比）。
 
-      此欄由 **[!UICONTROL Distribution type]** 內的欄位 **[!UICONTROL General]** 標籤。
+      此列由 **[!UICONTROL Distribution type]** 中的字段 **[!UICONTROL General]** 选项卡。
 
-   * **[!UICONTROL Label]**：輸入連結至每個值的標籤。
-   * **[!UICONTROL Group or operator]**：如果您使用[本地核准](local-approval.md) 活動，選取指派給每個分配值的運運算元或運運算元群組。
+   * **[!UICONTROL Label]**：输入链接到每个值的标签。
+   * **[!UICONTROL Group or operator]**：如果您使用的是[本地审批](local-approval.md) 活动，选择分配给每个分配值的操作员或操作员组。
 
-      如果資料分組受到簡單限制而沒有本地核准，則不需要輸入 **[!UICONTROL Group or operator]** 欄位。
+      如果由于数据分组而没有本地批准而存在简单限制，则无需输入 **[!UICONTROL Group or operator]** 字段。
 
       >[!CAUTION]
       >
-      >請確定已指派適當的許可權給運運算元。
+      >确保为操作员分配了适当的权限。
 
-## 篩選引數 {#filtering-parameters}
+## 筛选参数 {#filtering-parameters}
 
-按一下 **[!UICONTROL General]** 索引標籤來輸入活動標籤。 選取此分割的目標和篩選維度。 如有必要，您可以變更指定子集的這些維度。
+单击 **[!UICONTROL General]** 选项卡，输入活动标签。 为此拆分选择目标和筛选维度。 如有必要，可以更改给定子集的这些维度。
 
 ![](assets/s_user_segmentation_partage_general.png)
 
-檢查 **[!UICONTROL Generate complement]** 選項（如果要利用剩餘母體）。 補碼為入站目標減去子集的聯合。 然後，會將額外的出站轉變新增至活動，如下所示：
+查看 **[!UICONTROL Generate complement]** 选项。 补充是集客目标减去子集的并集。 然后，将向该活动添加其他叫客过渡，如下所示：
 
 ![](assets/s_user_segmentation_partage_compl.png)
 
-若要讓此選項正確運作，傳入資料必須具有主索引鍵。
+要使此选项正常工作，集客数据必须具有主键。
 
-例如，如果資料是直接從Netezza （不支援索引的概念）之類的外部資料庫透過 **[!UICONTROL Data loading (RDBMS)]** 活動，由產生的補充 **[!UICONTROL Split]** 活動將不正確。
+例如，如果数据是通过Netezza（不支持索引的概念）从外部数据库直接读取的， **[!UICONTROL Data loading (RDBMS)]** 活动，由生成的补充 **[!UICONTROL Split]** 活动将不正确。
 
-若要避免此問題，您可以拖放 **[!UICONTROL Enrichment]** 之前的活動 **[!UICONTROL Split]** 活動。 在 **[!UICONTROL Enrichment]** 活動，請檢查 **[!UICONTROL Keep all additional data from the main set]** 並在其他資料中指定您要用來設定篩選器的欄 **[!UICONTROL Split]** 活動。 來自入站轉變的資料 **[!UICONTROL Split]** 活動會儲存在Adobe Campaign伺服器上的暫時表格中，且補碼可以正確產生。
+要避免此情况，您可以拖放 **[!UICONTROL Enrichment]** 之前的活动 **[!UICONTROL Split]** 活动。 在 **[!UICONTROL Enrichment]** 活动，请检查 **[!UICONTROL Keep all additional data from the main set]** 并在附加数据中指定要用于配置过滤器的 **[!UICONTROL Split]** 活动。 来自集客过渡的数据 **[!UICONTROL Split]** 然后，活动将本地存储在Adobe Campaign服务器上的临时表中，并且补充可以正确生成。
 
-此 **[!UICONTROL Enable overlapping of output populations]** 選項可讓您管理屬於數個子集的母體：
+此 **[!UICONTROL Enable overlapping of output populations]** 选项允许您管理属于多个子集的群体：
 
-* 如果未核取此方塊，分割活動會確定收件者無法出現在數個輸出轉變中，即使它符合數個子集的條件亦然。 它們會位於具有相符條件的第一個索引標籤的目標中。
-* 核取此方塊後，如果收件者符合篩選條件，便可在數個子集中找到他們。 Adobe Campaign建議使用專屬條件。
+* 如果未选中该框，则拆分活动可确保收件人无法出现在多个输出转换中，即使它满足多个子集的条件也是如此。 它们将位于第一个选项卡的目标中，并带有匹配条件。
+* 选中该框后，如果收件人满足筛选条件，则可以在多个子集中找到他们。 Adobe Campaign建议使用排他性标准。
 
-## 輸入引數 {#input-parameters}
+## 输入参数 {#input-parameters}
 
-* tableName
-* 綱要
+* 表名
+* 架构
 
-每個傳入事件都必須指定由這些引數定義的目標。
+每个入站事件都必须指定由这些参数定义的目标。
 
-## 輸出引數 {#output-parameters}
+## 输出参数 {#output-parameters}
 
-* tableName
-* 綱要
+* 表名
+* 架构
 * recCount
 
-這組三個值會識別排除所產生的目標。 **[!UICONTROL tableName]** 是記錄目標識別碼的資料表名稱， **[!UICONTROL schema]** 為母體的結構描述（通常為nms：recipient）和 **[!UICONTROL recCount]** 是表格中的元素數量。
+这组三个值标识排除项导致的目标。 **[!UICONTROL tableName]** 是记录目标标识符的表的名称， **[!UICONTROL schema]** 是群体的模式（通常为nms：recipient）和 **[!UICONTROL recCount]** 是表中的元素数。
 
-與補碼關聯的轉變具有相同的引數。
+与补充关联的过渡具有相同的参数。

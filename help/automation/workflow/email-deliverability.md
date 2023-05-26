@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 電子郵件傳遞能力
-description: 深入瞭解電子郵件傳遞能力套件
+title: 电子邮件可投放性
+description: 了解有关电子邮件可投放性包的更多信息
 feature: Workflows, Deliverability
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
@@ -11,9 +11,9 @@ ht-degree: 5%
 ---
 
 
-# 傳遞能力監控（電子郵件傳遞能力）{#email-deliverability}
+# 可投放性监控（电子邮件可投放性）{#email-deliverability}
 
-依預設，所有執行個體都會安裝以下詳細的工作流程，並讓您初始化退回郵件資格規則的清單、網域清單和MX清單。 一旦 **傳遞能力監控（電子郵件傳遞能力）** 安裝套件後，此工作流程會在夜間執行。
+默认情况下，所有实例上都会安装下面详细介绍的工作流，该工作流允许您初始化退回邮件鉴别规则的列表、域列表和MX列表。 一旦 **可投放性监控（电子邮件可投放性）** 包已安装，此工作流每夜运行。
 <table> 
  <tbody> 
   <tr> 
@@ -22,9 +22,9 @@ ht-degree: 5%
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>重新整理傳遞能力</strong><br /> </td> 
+   <td> <strong>刷新可投放性</strong><br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
-   <td>  一旦 <strong>傳遞能力監控（電子郵件傳遞能力）</strong> 套件已安裝完成，此工作流程每晚執行以定期更新規則清單，並允許主動管理平台傳遞能力。<br /> </td> 
+   <td>  一旦 <strong>可投放性监控（电子邮件可投放性）</strong> 安装包，此工作流每夜运行以定期更新规则列表，并允许主动管理平台可投放性。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

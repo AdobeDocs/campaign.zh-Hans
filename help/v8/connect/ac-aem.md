@@ -1,6 +1,6 @@
 ---
 title: 使用Campaign和Adobe Experience Manager
-description: 瞭解如何使用Campaign和Adobe Experience Manager
+description: 了解如何使用Campaign和Adobe Experience Manager
 feature: Experience Manager Integration
 role: Admin, User
 level: Beginner, Intermediate
@@ -14,14 +14,14 @@ ht-degree: 0%
 
 # 使用Campaign和Adobe Experience Manager
 
-Adobe Campaign與Adobe Experience Manager的整合可讓您直接在Adobe Experience Manager中管理電子郵件傳送的內容及表單。
+Adobe Campaign与Adobe Experience Manager之间的集成允许您直接在Adobe Experience Manager中管理电子邮件投放的内容以及表单。
 
-您也可以在Adobe Campaign中編輯電子郵件或登入頁面時，直接從Adobe Experience Manager資產資料庫插入資產。 Adobe Experience Manager資產中會詳細說明此功能 [章節](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/overview.html).
+在Adobe Campaign中编辑电子邮件或登陆页面时，您还可以直接从Adobe Experience Manager资源库插入资源。 Adobe Experience Manager Assets中详细介绍了此功能 [章节](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/overview.html).
 
-這表示您可以充分利用Adobe Experience Manager內容編輯功能和Adobe Campaign傳送功能。
+这意味着您可以充分利用Adobe Experience Manager内容编辑功能和Adobe Campaign交付功能。
 
-![](../assets/do-not-localize/book.png) [在本檔案中瞭解更多](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html#aem-and-adobe-campaign-integration-workflow)
+![](../assets/do-not-localize/book.png) [请参阅本文档以了解详情](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html#aem-and-adobe-campaign-integration-workflow)
 
-![](../assets/do-not-localize/book.png) [在此端對端範例中探索這項整合](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-experience-manager/creating-an-experience-manager-newsletter.html#integrating-with-adobe-experience-cloud)
+![](../assets/do-not-localize/book.png) [在此端到端示例中了解此集成](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-experience-manager/creating-an-experience-manager-newsletter.html#integrating-with-adobe-experience-cloud)
 
-![](../assets/do-not-localize/speech.png)  身為Managed Cloud Services使用者， [連絡人Adobe](../start/campaign-faq.md#support) 將Adobe Experience Manager與Campaign整合。
+![](../assets/do-not-localize/speech.png)  作为托管Cloud Services用户， [联系人Adobe](../start/campaign-faq.md#support) 将Adobe Experience Manager与Campaign集成。

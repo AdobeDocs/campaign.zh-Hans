@@ -1,6 +1,6 @@
 ---
-title: 使用網路表單收集和更新設定檔
-description: 瞭解如何使用網路表單收集和更新設定檔
+title: 使用Web窗体收集和更新用户档案
+description: 了解如何使用Web窗体收集和更新用户档案
 feature: Audiences, Profiles, Web Forms
 role: Data Engineer
 level: Beginner
@@ -12,9 +12,9 @@ ht-degree: 43%
 
 ---
 
-# 使用網路表單收集和更新設定檔
+# 使用Web窗体收集和更新用户档案
 
-使用Campaign建立網路表單，輕鬆有效率地收集和管理設定檔資料。 您可以将这些表单共享到您的网站中，这样您的联系人就可以轻松地提供其信息。資料會傳送至Campaign以建立或更新其設定檔。
+使用Campaign创建Web窗体，轻松、高效地收集和管理用户档案数据。 您可以将这些表单共享到您的网站中，这样您的联系人就可以轻松地提供其信息。数据会发送到Campaign以创建或更新其用户档案。
 
 ![](assets/web-form-page.png)
 

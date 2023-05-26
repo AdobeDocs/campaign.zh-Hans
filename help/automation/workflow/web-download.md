@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Web 下载
-description: 進一步瞭解網頁下載工作流程活動
+description: 了解有关Web下载工作流活动的更多信息
 feature: Workflows
 exl-id: 73bacf61-ac03-4a5c-b03b-6dfbe3fb9538
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
@@ -15,54 +15,54 @@ ht-degree: 2%
 
 
 
-此 **網頁下載** 活動可讓您在明確URL、外部帳戶或Adobe Campaign執行個體上下載檔案。 會使用HTTP通訊協定。 這可以是GET或POST下載。
+此 **Web下载** 活动可启动文件下载，下载对象可以是显式URL、外部帐户或Adobe Campaign实例。 使用HTTP协议。 这可以是GET或POST下载。
 
 ## 属性 {#properties}
 
-1. **選取網頁檔案**
+1. **选择Web文件**
 
-   若要指定要下載的檔案，您可以輸入檔案URL、使用儲存檔案的外部HTTP帳戶，或透過Adobe Campaign執行個體載入檔案。 可用的引數詳述如下：
+   要指定要下载的文件，您可以输入文件URL，使用存储文件的外部HTTP帐户，或通过Adobe Campaign实例加载文件。 可用参数的详细信息如下：
 
-   * 若要直接輸入要下載的檔案URL，請選取 **[!UICONTROL Explicit URL]** 選項並在適當欄位中指定URL。 此URL可使用變數資料建構。
+   * 要直接输入要下载的文件的URL，请选择 **[!UICONTROL Explicit URL]** 选项，并在相应的字段中指定URL。 此URL可使用变量数据构建。
 
       ![](assets/download_web_edit.png)
 
-   * 若要使用 **[!UICONTROL External account]**，從下拉式清單中選取帳戶，並指定要下載的檔案。
+   * 使用 **[!UICONTROL External account]**，从下拉列表中选择帐户，并指定要下载的文件。
 
-      外部帳戶是從 **[!UICONTROL Administration > Platform > External accounts]** Adobe Campaign樹的節點。 帳戶引數可透過以下方式編輯： **[!UICONTROL Edit link]** 圖示。
+      外部帐户是从 **[!UICONTROL Administration > Platform > External accounts]** Adobe Campaign树的节点。 帐户参数可通过 **[!UICONTROL Edit link]** 图标。
 
       ![](assets/download_web_edit_external.png)
 
-   * 若要從Adobe Campaign例項下載檔案，請選取 **[!UICONTROL Adobe Campaign Instance]** 選項。
+   * 要从Adobe Campaign实例下载文件，请选择 **[!UICONTROL Adobe Campaign Instance]** 选项。
 
       ![](assets/download_web_edit_instance.png)
 
-1. **檔案歷史化**
+1. **文件历史化**
 
-   此 **[!UICONTROL File historization settings...]** 連結可讓您指定檔案儲存目錄和此目錄的清除頻率。
+   此 **[!UICONTROL File historization settings...]** 链接允许您指定文件存储目录和此目录的清除频率。
 
    ![](assets/download_web_edit_hist.png)
 
    可以使用以下选项：
 
-   * **[!UICONTROL Use a default storage directory]**：檔案一律會在處理前移動。 如果勾選此選項，檔案會移至預設儲存目錄( **變數** Adobe Campaign安裝資料夾的目錄)。 若要指定儲存目錄，請取消核取方塊，然後在 **[!UICONTROL Storage directory]** 欄位
-   * **[!UICONTROL Number of files]**：輸入要保留在儲存目錄中的檔案數上限。
-   * **[!UICONTROL Maximum size (in Mb)]**：輸入儲存目錄的最大容量(MB)。
+   * **[!UICONTROL Use a default storage directory]**：文件始终在处理之前移动。 如果选中此选项，文件将移动到默认存储目录( **变量** Adobe Campaign安装文件夹的目录)。 要指定存储目录，请取消选中该框，然后在 **[!UICONTROL Storage directory]** 字段
+   * **[!UICONTROL Number of files]**：输入存储目录中保留的最大文件数。
+   * **[!UICONTROL Maximum size (in Mb)]**：输入存储目录的最大容量（以MB为单位）。
 
-   每個檔案會保留24小時，之後才會受到定義的清除規則的限制。 清除作業會在活動開始之前進行，因此不會考慮進行中的工作流程檔案。
+   每个文件在遵守定义的清除规则之前保留24小时。 清除操作在活动开始之前执行，因此不考虑正在进行的工作流文件。
 
-   檔案會根據其年齡（從最舊到最新）刪除。 系統會清除最舊的檔案，直到兩個清除規則都通過驗證為止。 因此，如果定義了100個檔案的限制，這表示儲存目錄在工作流程開始之前將一律包含100個最新檔案，以及在進行中的工作流程中正在處理的檔案。
+   文件会根据其存在时间（从最旧到最新）进行删除。 最早的文件将被清除，直到两个清除规则都得到验证为止。 因此，如果定义了100个文件的限制，这意味着存储目录将始终包含工作流开始前的100个最新文件，以及正在进行的工作流中正在处理的文件。
 
-   如果您不想再為 **[!UICONTROL Number of files]** 和 **[!UICONTROL Maximum size (in Mb)]** 選項，請輸入0作為值。
+   如果您不想再为 **[!UICONTROL Number of files]** 和 **[!UICONTROL Maximum size (in Mb)]** 选项，请输入0作为值。
 
 1. **高级参数**
 
-   此 **[!UICONTROL Advanced parameters...]** 連結可讓您指定下列其他選項：
+   此 **[!UICONTROL Advanced parameters...]** 链接允许您指定下面显示的其他选项：
 
    ![](assets/download_web_edit_advanced.png)
 
-   此 **[!UICONTROL Process errors]** 選項的詳細資訊，請參閱 [處理錯誤](monitor-workflow-execution.md#processing-errors).
+   此 **[!UICONTROL Process errors]** 有关选项的详情，请参见 [处理错误](monitor-workflow-execution.md#processing-errors).
 
-## 輸出引數 {#output-parameters}
+## 输出参数 {#output-parameters}
 
-* 檔案名稱：下載檔案的完整名稱。
+* filename：下载文件的完整名称。

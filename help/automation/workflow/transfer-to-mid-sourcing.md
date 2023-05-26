@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 传输到中间源
-description: 進一步了解轉移至中間來源工作流程
+description: 了解有关传输到中间源工作流的更多信息
 feature: Workflows
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # 传输到中间源{#transfer-to-mid-sourcing}
 
-以下詳述的工作流程會隨 **轉移至中間來源** 模組（預設）。
+下面详述的工作流将随 **传输到中间源** 默认模块。
 
 <table> 
  <tbody> 
@@ -23,14 +23,14 @@ ht-degree: 10%
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">中間來源（傳遞計數器）</span> <br /> </td> 
+   <td> <span class="uicontrol">中间源（投放计数器）</span> <br /> </td> 
    <td> <span class="uicontrol">defaultMidSourcingDlv</span> <br /> </td> 
-   <td> <p>此工作流程會收集中間來源伺服器上傳送的計數資訊。 計數資訊包括一般傳遞指標，例如已傳送的傳遞數量等。</p> <p>未包含開啟之類的追蹤資訊。</p> <p>預設會每十分鐘觸發一次。</p> </td> 
+   <td> <p>此工作流收集中间源服务器上投放的计数信息。 计数信息包括常规投放指标，例如已发送的投放数量等。</p> <p>不包括打开次数等跟踪信息。</p> <p>默认情况下，每10分钟触发一次。</p> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">中間來源（傳遞記錄）</span> <br /> </td> 
+   <td> <span class="uicontrol">中间源（投放日志）</span> <br /> </td> 
    <td> <span class="uicontrol">defaultMidSourcingLog</span> <br /> </td> 
-   <td> 此工作流程會在中間來源伺服器上收集傳遞記錄。 預設會每小時觸發一次。<br /> </td> 
+   <td> 此工作流在中间源服务器上收集投放日志。 默认情况下，每小时触发一次。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

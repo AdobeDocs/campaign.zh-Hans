@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 工作流程使用案例
-description: 進一步瞭解您可以使用Campaign工作流程執行的使用案例
+title: 工作流用例
+description: 了解关于您可以使用Campaign工作流执行的用例的更多信息
 feature: Workflows, Data Management
 exl-id: 6e899937-5ca0-4ca5-bb14-f914e41559ab
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
@@ -11,9 +11,9 @@ ht-degree: 56%
 
 ---
 
-# 工作流程使用案例 {#about-workflow-use-cases}
+# 工作流用例 {#about-workflow-use-cases}
 
-瞭解可在其中使用工作流程的不同內容，以及如何透過端對端使用案例實作工作流程。
+了解可以在其中使用工作流的不同上下文，以及如何通过端到端用例实施这些工作流。
 
 ## 投放 {#deliveries}
 
@@ -32,7 +32,7 @@ ht-degree: 56%
 * [向列表发送报告](send-a-report-to-a-list.md)
 * [监督工作流](workflow-supervision.md)
 * [向操作员发送个性化提醒](send-alerts-to-operators.md)
-* [在傳送傳遞前設定收件者核准流程](local-approval-activity.md)
+* [在发送投放之前设置收件人审批流程](local-approval-activity.md)
 
 ## 数据管理 {#management}
 
@@ -42,7 +42,7 @@ ht-degree: 56%
 * [创建摘要列表](create-a-summary-list.md)
 * [丰富数据](enrich-data.md)
 * [使用聚合](using-aggregates.md)
-* [使用安裝於控制面板的金鑰加密及匯出資料](use-workflow-data.md#use-case-gpg-encrypt)
+* [使用安装在控制面板上的密钥加密和导出数据](use-workflow-data.md#use-case-gpg-encrypt)
 * [使用增量查询每季度更新列表](quarterly-list-update.md)
 * [使用重复数据删除活动的合并功能](deduplication-merge.md)
 * [设置循环导入工作流](recurring-import-workflow.md)
@@ -53,11 +53,11 @@ ht-degree: 56%
 
 * [查询收件人表](querying-recipient-table.md)
 * [查询投放信息](query-delivery-info.md)
-* [執行彙總計算](compute-aggregates.md)
+* [执行聚合计算](compute-aggregates.md)
 * [使用分组管理进行查询](query-grouping-management.md)
 * [使用多对多关系进行查询](query-many-to-many-relationship.md)
 * [添加明细列表类型计算字段](adding-enumeration-type-calculated-field.md)
 * [创建筛选](create-a-filter.md)
 * [筛选重复的收件人](filter-duplicated-recipients.md)
-* [呼叫查詢中的執行個體變數](javascript-scripts-and-templates.md#calling-an-instance-variable-in-a-query)
-* [對母體套用分割百分比](javascript-scripts-and-templates.md#example)
+* [在查询中调用实例变量](javascript-scripts-and-templates.md#calling-an-instance-variable-in-a-query)
+* [对群体应用拆分百分比](javascript-scripts-and-templates.md#example)

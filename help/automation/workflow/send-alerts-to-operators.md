@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 向操作员发送个性化提醒
-description: 瞭解如何傳送個人化警示給營運商
+description: 了解如何向运营商发送个性化提醒
 feature: Workflows
 exl-id: 41a009f6-d1e9-40c9-8494-3bbb4bd3d134
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
@@ -15,22 +15,22 @@ ht-degree: 2%
 
 
 
-在此範例中，我們想傳送警報給運運算元，該運運算元將包含開啟電子報但未點按其中所含連結的設定檔名稱。
+在本例中，我们希望向操作员发送警报，该操作员将包含打开了新闻稿但未单击新闻稿所包含链接的用户档案的名称。
 
-設定檔的名字和姓氏欄位會連結至 **[!UICONTROL Recipients]** 目標維度，而 **[!UICONTROL Alert]** 活動已連結至 **[!UICONTROL Operator]** 目標維度。 因此，這兩個目標維度之間沒有可用的欄位來執行調解，並擷取名字和姓氏欄位，以及將它們顯示在警報活動中。
+用户档案的名字和姓氏字段链接到 **[!UICONTROL Recipients]** 定位维度，而 **[!UICONTROL Alert]** 活动链接到 **[!UICONTROL Operator]** 定位维度。 因此，两个定向维度之间没有可用字段来执行协调，检索名字和姓氏字段并在警报活动中显示它们。
 
-建立工作流程的過程如下：
+该过程将构建一个工作流，如下所示：
 
-1. 使用 **[!UICONTROL Query]** 目標資料的活動。
-1. 新增 **[!UICONTROL JavaScript code]** 活動放入工作流程，以將查詢中的母體儲存至執行個體變數。
-1. 使用 **[!UICONTROL Test]** 活動以檢查母體計數。
-1. 使用 **[!UICONTROL Alert]** 傳送警報給操作員的活動，視 **[!UICONTROL Test]** 活動結果。
+1. 使用 **[!UICONTROL Query]** 活动以定位数据。
+1. 添加 **[!UICONTROL JavaScript code]** 活动添加到工作流中，以将群体从查询保存到实例变量。
+1. 使用 **[!UICONTROL Test]** 用于检查群体计数的活动。
+1. 使用 **[!UICONTROL Alert]** 活动向操作员发送警报，具体取决于 **[!UICONTROL Test]** 活动结果。
 
 ![](assets/uc_operator_1.png)
 
-## 將母體儲存至執行個體變數 {#saving-the-population-to-the-instance-variable}
+## 将群体保存到实例变量 {#saving-the-population-to-the-instance-variable}
 
-將下列程式碼新增至 **[!UICONTROL JavaScript code]** 活動。
+将以下代码添加到 **[!UICONTROL JavaScript code]** 活动。
 
 ```
 var query = xtk.queryDef.create(  
@@ -44,30 +44,30 @@ var query = xtk.queryDef.create(
   var items = query.ExecuteQuery();
 ```
 
-請確定Javascript程式碼對應於您的工作流程資訊：
+确保Javascript代码与您的工作流信息相对应：
 
-* 此 **[!UICONTROL queryDef schema]** 標籤應該對應到查詢活動中使用的目標維度名稱。
-* 此 **[!UICONTROL node expr]** 標籤應該對應到您要擷取的欄位名稱。
+* 此 **[!UICONTROL queryDef schema]** 标记应对应于查询活动中使用的定向维度的名称。
+* 此 **[!UICONTROL node expr]** 标记应该对应于要检索的字段的名称。
 
 ![](assets/uc_operator_3.png)
 
-若要擷取這些資訊，請遵循下列步驟：
+要检索这些信息，请执行以下步骤：
 
-1. 以滑鼠右鍵按一下中的出站轉變 **[!UICONTROL Query]** 活動，然後選取 **[!UICONTROL Display the target]**.
+1. 从右键单击叫客过渡 **[!UICONTROL Query]** 活动，然后选择 **[!UICONTROL Display the target]**.
 
    ![](assets/uc_operator_4.png)
 
-1. 以滑鼠右鍵按一下清單，然後選取 **[!UICONTROL Configure list]**.
+1. 右键单击列表，然后选择 **[!UICONTROL Configure list]**.
 
    ![](assets/uc_operator_5.png)
 
-1. 查詢目標維度和欄位名稱會顯示在清單中。
+1. 查询定向维度和字段名称显示在列表中。
 
    ![](assets/uc_operator_6.png)
 
-## 測試母體計數 {#testing-the-population-count}
+## 测试群体计数 {#testing-the-population-count}
 
-將下列程式碼新增至 **[!UICONTROL Test]** 活動以檢查目標母體是否包含至少1個設定檔。
+将以下代码添加到 **[!UICONTROL Test]** 活动以检查目标群体是否至少包含1个用户档案。
 
 ```
 var.recCount>0
@@ -75,11 +75,11 @@ var.recCount>0
 
 ![](assets/uc_operator_7.png)
 
-## 設定警報 {#setting-up-the-alert}
+## 设置警报 {#setting-up-the-alert}
 
-現在，母體已新增到具有所需欄位的例項變數中，您可以將這些資訊新增到 **[!UICONTROL Alert]** 活動。
+现在，群体已通过所需字段添加到实例变量中，您可以将这些信息添加到 **[!UICONTROL Alert]** 活动。
 
-若要這麼做，請將新增至 **[!UICONTROL Source]** 將程式碼標示為下方：
+为此，请将添加到 **[!UICONTROL Source]** 选项卡下面的代码：
 
 ```
 <ul>
@@ -94,7 +94,7 @@ for each (var item in items){
 
 >[!NOTE]
 >
->此 **[!UICONTROL <%= item.target.recipient.@fieldName %>]** command可讓您新增已透過「 」儲存至執行個體變數的其中一個欄位。 **[!UICONTROL JavaScript code]** 活動。\
->只要欄位已插入JavaScript程式碼中，您就可以視需要新增任意數目的欄位。
+>此 **[!UICONTROL <%= item.target.recipient.@fieldName %>]** 命令允许您添加已通过保存到实例变量的字段之一 **[!UICONTROL JavaScript code]** 活动。\
+>您可以根据需要添加任意数量的字段，只要这些字段已插入JavaScript代码中即可。
 
 ![](assets/uc_operator_8.png)

@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: 筛选重复的收件人
-description: 瞭解如何篩選重複的收件者
+description: 了解如何筛选重复的收件人
 feature: Workflows
 exl-id: cfa1f45c-e1ac-4055-996c-6e8d041889bb
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
@@ -15,26 +15,26 @@ ht-degree: 4%
 
 
 
-在此範例中，我們要篩選在傳送中出現兩次或更多次的收件者，以復原重複的設定檔。
+在本例中，我们希望筛选在投放中出现两次或更多次的收件人，以恢复重复的用户档案。
 
-若要建立此範例，請套用下列步驟：
+要创建此示例，请应用以下步骤：
 
-1. 拖放 **[!UICONTROL Query]** 活動並開啟活動。
-1. 按一下 **[!UICONTROL Edit query]** 並將目標和篩選維度設為 **[!UICONTROL Recipients]**.
+1. 拖放 **[!UICONTROL Query]** 活动，并打开该活动。
+1. 单击 **[!UICONTROL Edit query]** 并将目标和筛选维度设置为 **[!UICONTROL Recipients]**.
 
    ![](assets/query_recipients_1.png)
 
-1. 定義下列篩選條件，以定位存在於傳遞記錄檔中的收件者。 選擇 **收件者傳遞記錄(broadlog)** 在 **運算式** 欄，選擇 **存在，例如** 在 **運運算元** 欄。
+1. 定义以下筛选条件，以定位投放日志中存在的收件人。 选择 **收件人投放日志(broadlog)** 在 **表达式** 列，选择 **存在，例如** 在 **运算符** 列。
 
    ![](assets/query_recipients_2.png)
 
-1. 定義下列篩選條件，以定位您的傳遞。 選擇 **[!UICONTROL Internal name]** 在「運算式」欄中和 **[!UICONTROL equal to]** （在運運算元欄中）。
-1. 在值欄中，新增目標傳送的內部名稱。
+1. 定义以下筛选条件以定向投放。 选择 **[!UICONTROL Internal name]** 在“表达式”列和 **[!UICONTROL equal to]** 在运算符列中。
+1. 在值列中，添加目标投放的内部名称。
 
    ![](assets/query_recipients_3.png)
 
-1. 使用 **[!UICONTROL AND]** 運運算元，重複相同的操作來鎖定其他傳送。
+1. 带有 **[!UICONTROL AND]** 运算符，重复相同的操作以定位其他投放。
 
    ![](assets/query_recipients_4.png)
 
-您的出站轉變包含傳遞中鎖定的重複收件者。
+叫客过渡包含投放中针对的重复收件人。

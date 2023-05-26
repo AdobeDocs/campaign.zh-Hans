@@ -15,53 +15,53 @@ ht-degree: 9%
 
 
 
-A **持續傳遞** type動作可讓您將新收件者新增至現有傳遞。 此傳送型別可避免您每次都建立新傳送：此模式通常更有效率，尤其是當需要時會傳送少量警報或通知。
+A **连续投放** type操作允许您将新收件人添加到现有投放。 此投放类型可避免您每次都创建新投放：此模式通常更有效，尤其是对于在需要时发送的小量警报或通知。
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#continuous-delivery-video)
 
-在傳遞範本層級，您可以指定指令碼以計算相關傳遞的標籤（和行銷活動資料夾）。 如果指令碼計算尚未存在的傳遞，則會即時建立。
+在投放模板级别，您可以指定一个脚本来计算关联投放的标签（和营销活动文件夹）。 如果脚本计算的投放尚不存在，则会动态创建。
 
 ![](assets/edit_diffusion_fil.png)
 
-此 **[!UICONTROL Process errors]** 選項會顯示特定轉變，如果產生錯誤，則會啟動該轉變。 在此情況下，工作流程不會進入錯誤模式並繼續執行。
+此 **[!UICONTROL Process errors]** 选项显示特定过渡，如果生成错误，将激活该过渡。 在这种情况下，工作流不会进入错误模式并继续执行。
 
-考慮的錯誤是檔案系統錯誤（無法移動檔案、無法存取目錄等）。
+考虑的错误是文件系统错误（无法移动文件、无法访问目录等）。
 
-此選項不會處理與活動設定相關的錯誤，即無效值。
+此选项不处理与活动配置相关的错误，即无效值。
 
-## 輸入引數 {#input-parameters}
+## 输入参数 {#input-parameters}
 
-* tableName
-* 綱要
+* 表名
+* 架构
 
-每個傳入事件都必須指定由這些引數定義的目標。
+每个入站事件都必须指定由这些参数定义的目标。
 
-僅當 **[!UICONTROL Specified by the inbound event]** 選項時才會選擇此選項。
+仅当 **[!UICONTROL Specified by the inbound event]** 选项。
 
-## 輸出引數 {#output-parameters}
+## 输出参数 {#output-parameters}
 
-* tableName
-* 綱要
+* 表名
+* 架构
 * recCount
 
-這組三個值會識別即時傳送所產生的目標。 **[!UICONTROL tableName]** 是記憶目標識別碼的表格名稱， **[!UICONTROL schema]** 為母體的結構描述（通常為nms：recipient）和 **[!UICONTROL recCount]** 是表格中的元素數量。
+这组三个值标识动态投放产生的目标。 **[!UICONTROL tableName]** 是存储目标标识符的表的名称， **[!UICONTROL schema]** 是群体的模式（通常为nms：recipient）和 **[!UICONTROL recCount]** 是表中的元素数。
 
-與補碼關聯的轉變具有相同的引數。
+与补充关联的过渡具有相同的参数。
 
 ## 如何设置连续投放
 
-本節說明如何設定持續傳遞。
+本节介绍如何设置连续投放。
 
-此 **持續傳遞** 可讓您將新收件者新增至現有傳遞，並避免每次新增收件者時都必須建立新傳遞。 您可以直接在行銷活動工作流程中更新創意，它將會更新傳遞範本「資源」資料夾中的範本。
+此 **连续投放** 允许您将新收件人添加到现有投放，并避免每次添加新收件人时都必须创建新投放。 您可以直接在活动工作流中更新创意，它将会更新投放模板资源文件夹中的模板。
 
-持續傳遞會建立「單一」傳遞和傳遞記錄(broadLog)及追蹤記錄，每次執行傳遞時都會參照新增。
+连续投放将创建单个投放和投放日志(broadLog)以及跟踪日志，这些日志引用每次执行投放时都添加一个投放。
 
 ![连续投放](assets/delivery_continuous.jpg)
 
-## 教學課程影片 {#continuous-delivery-video}
+## 教程视频 {#continuous-delivery-video}
 
 本视频演示了如何使用增量查询配置连续投放。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 
-有其他Campaign操作說明影片可供使用 [此處](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.
+提供了其他Campaign操作方法视频 [此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.

@@ -1,6 +1,6 @@
 ---
-title: Campaign異動訊息設定
-description: Campaign異動訊息設定
+title: Campaign事务性消息设置
+description: Campaign事务性消息设置
 feature: Transactional Messaging
 role: Admin, Developer
 level: Intermediate, Experienced
@@ -14,42 +14,42 @@ ht-degree: 5%
 
 # 事务性消息设置
 
-異動訊息（訊息中心）是用於管理觸發式訊息的Campaign模組。 進一步瞭解中的異動訊息傳送 [本節](../send/transactional.md).
+事务性消息传递（消息中心）是用于管理触发消息的Campaign模块。 要了解有关事务型消息传递的更多信息，请参阅 [本节](../send/transactional.md).
 
-瞭解中的交易式傳訊架構 [此頁面](../architecture/architecture.md#transac-msg-archi).
+了解中的事务性消息传递架构 [此页面](../architecture/architecture.md#transac-msg-archi).
 
-![](../assets/do-not-localize/speech.png) 身為Managed Cloud Services使用者， [連絡人Adobe](../start/campaign-faq.md#support) 在您的環境中安裝和設定Campaign異動訊息。
+![](../assets/do-not-localize/speech.png) 作为托管Cloud Services用户， [联系人Adobe](../start/campaign-faq.md#support) 在环境中安装和配置Campaign事务型消息传递。
 
-## 定義許可權
+## 定义权限
 
-若要為Adobe Cloud上託管的訊息中心執行例項建立新使用者，您需要聯絡Adobe客戶服務。 訊息中心使用者是特定的操作者，需要專用許可權才能存取「即時事件」(nmsRtEvent)資料夾。
+要为托管在Adobe云上的消息中心执行实例创建新用户，您需要联系Adobe客户关怀部门。 消息中心用户是特定的操作员，需要专用权限才能访问“实时事件”(nmsRtEvent)文件夹。
 
-## 結構描述延伸模組
+## 架构扩展
 
-在使用的結構描述上進行的所有結構描述擴充功能 [訊息中心技術工作流程](#technical-workflows) 在Adobe Campaign異動訊息模組使用的其他執行個體上，需要複製控制或執行執行個體。
+对使用的架构进行的所有架构扩展 [消息中心技术工作流](#technical-workflows) 需要在Adobe Campaign事务性消息传递模块使用的其他实例上复制控制实例或执行实例。
 
-## 傳送異動推播通知
+## 发送事务性推送通知
 
-合併時 [行動應用程式頻道模組](../send/push.md)，異動訊息可讓您透過行動裝置上的通知推送異動訊息。
+当与 [移动应用程序渠道模块](../send/push.md)，事务型消息传递允许您通过移动设备上的通知推送事务型消息。
 
-若要傳送異動推播通知，您必須執行下列設定：
+要发送事务性推送通知，您需要执行以下配置：
 
-1. 安裝 **行動應用程式頻道** 封裝至控制和執行執行個體。
+1. 安装 **移动应用程序渠道** 打包到控制实例和执行实例上。
 
    >[!CAUTION]
    >
-   >在安裝新的Campaign內建套件之前，請檢查您的授權合約。
+   >在安装新的Campaign内置包之前，请查看您的许可协议。
 
-1. 復寫 **行動應用計畫** 以及執行例項上關聯的行動應用程式。
+1. 复制 **移动应用程序** 以及执行实例上关联的移动应用程序。
 
-此外，事件必須包含下列元素：
+此外，事件必须包含以下元素：
 
-* 行動裝置ID： **registrationId** 適用於Android和 **deviceToken** 適用於iOS。 此ID代表傳送通知的「地址」。
-* 行動應用程式或整合金鑰的連結(**uuid**)，可讓您擷取應用程式的特定連線資訊。
-* 通知將傳送到的頻道(**Wisdechannel**)：41適用於iOS，42適用於Android。
-* 任何其他個人化資料。
+* 移动设备ID： **registrationId** 适用于Android和 **deviceToken** 适用于iOS的。 此ID表示发送通知的“地址”。
+* 指向移动应用程序或集成键的链接(**uuid**)，可以检索特定于应用程序的连接信息。
+* 将向其发送通知的频道(**希望渠道**)：iOS为41，Android为42。
+* 任何其他个性化数据。
 
-以下是傳送異動推播通知的事件設定範例：
+以下是发送事务性推送通知的事件配置示例：
 
 ```
 <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -76,36 +76,36 @@ ht-degree: 5%
 
 ## 清除事件 {#purge-events}
 
-您可以調整部署精靈設定，以設定資料在資料庫中儲存的時間長度。
+您可以调整部署向导设置，以配置数据在数据库中存储的时长。
 
-事件清除會由 **資料庫清理** 技術工作流程。 此工作流程會清除在執行例項上接收和儲存的事件，以及控制例項上封存的事件。
+事件清除由自动执行 **数据库清理** 技术工作流。 此工作流会清除在执行实例上接收并存储的事件，以及在控制实例上存档的事件。
 
-視需要使用箭頭來變更清除設定 **事件** （在執行例項上）和 **已封存的事件** （在控制例項上）。
+使用适当的箭头可更改清除设置 **事件** （在执行实例上）和 **已存档事件** （在控制实例上）。
 
 
 ## 技术工作流 {#technical-workflows}
 
-在部署任何交易式訊息範本之前，您必須確保已啟動控制項和執行例項上的技術工作流程。
+在部署任何事务性消息模板之前，必须确保已启动控制实例和执行实例上的技术工作流。
 
-接著，您就可以從以下位置存取這些工作流程： **管理>生產>訊息中心** 資料夾。
+然后，可以从访问这些工作流 **管理>生产>消息中心** 文件夹。
 
-### 控制例項工作流程 {#control-instance-workflows}
+### 控制实例工作流 {#control-instance-workflows}
 
-在控制執行個體上，您必須為每個執行個體建立一個封存工作流程 **[!UICONTROL Message Center execution instance]** 外部帳戶。 按一下 **[!UICONTROL Create the archiving workflow]** 按鈕來建立和啟動工作流程。
+在控制实例上，必须为每个实例创建一个存档工作流 **[!UICONTROL Message Center execution instance]** 外部帐户。 单击 **[!UICONTROL Create the archiving workflow]** 按钮创建和启动工作流。
 
-### 執行例項工作流程 {#execution-instance-workflows}
+### 执行实例工作流 {#execution-instance-workflows}
 
-在執行例項上，您必須開始以下技術工作流程：
+在执行实例上，必须启动以下技术工作流：
 
-* **[!UICONTROL Processing batch events]** (內部名稱： **[!UICONTROL batchEventsProcessing]** )：此工作流程可讓您在佇列中劃分批次事件，然後再將其連結至訊息範本。
-* **[!UICONTROL Processing real time events]** (內部名稱： **[!UICONTROL rtEventsProcessing]** )：此工作流程可讓您在佇列中的即時事件連結至訊息範本之前，先加以劃分。
-* **[!UICONTROL Update event status]** (內部名稱： **[!UICONTROL updateEventStatus]** )：此工作流程可讓您將狀態歸因於事件。
+* **[!UICONTROL Processing batch events]** (内部名称： **[!UICONTROL batchEventsProcessing]** )：利用此工作流，可在批次事件链接到消息模板之前对队列中的批次事件进行划分。
+* **[!UICONTROL Processing real time events]** (内部名称： **[!UICONTROL rtEventsProcessing]** )：利用此工作流，可在将队列中的实时事件链接到消息模板之前对其进行划分。
+* **[!UICONTROL Update event status]** (内部名称： **[!UICONTROL updateEventStatus]** )：利用此工作流，可将状态归因于事件。
 
-   可能的事件狀態包括：
+   可能的事件状态为：
 
-   * **[!UICONTROL Pending]**：事件在佇列中。 尚未为其分配消息模板。
-   * **[!UICONTROL Pending delivery]**：事件在佇列中，已指派訊息範本給該事件，並由傳遞處理。
-   * **[!UICONTROL Sent]**：此狀態是從傳送記錄檔複製而來。 這表示傳遞已傳送。
-   * **[!UICONTROL Ignored by the delivery]**：此狀態是從傳送記錄檔複製而來。 这意味着该投放被忽略。
-   * **[!UICONTROL Delivery failed]**：此狀態是從傳送記錄檔複製而來。 这意味着投放失败了。
-   * **[!UICONTROL Event not taken into account]**：無法將事件連結至訊息範本。 将不会处理该事件。
+   * **[!UICONTROL Pending]**：事件在队列中。 尚未为其分配消息模板。
+   * **[!UICONTROL Pending delivery]**：事件处于队列中，已为其分配消息模板，并且投放正在处理该模板。
+   * **[!UICONTROL Sent]**：此状态复制于投放日志。 这意味着投放已发送。
+   * **[!UICONTROL Ignored by the delivery]**：此状态复制于投放日志。 这意味着该投放被忽略。
+   * **[!UICONTROL Delivery failed]**：此状态复制于投放日志。 这意味着投放失败了。
+   * **[!UICONTROL Event not taken into account]**：无法将事件链接到消息模板。 将不会处理该事件。

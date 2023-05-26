@@ -1,6 +1,6 @@
 ---
-title: 資料夾和檢視
-description: 瞭解如何在Campaign檔案總管中管理資料夾和檢視
+title: 文件夹和视图
+description: 了解如何在Campaign资源管理器中管理文件夹和视图
 feature: Audiences, Profiles, Application Settings
 role: User
 level: Beginner, Intermediate
@@ -14,96 +14,96 @@ ht-degree: 1%
 
 # 管理文件夹和视图 {#folders-and-views}
 
-Campaign資料夾是瀏覽器樹狀結構中的節點。 根據其型別，它們包含特定型別的資料。
+Campaign文件夹是资源管理器树中的节点。 它们根据其类型，包含特定类型的数据。
 
-檢視是不包含任何資料但顯示實際儲存在相同型別之其他資料夾中的資料的特定資料夾。 例如，如果您將傳送資料夾轉換為檢視，此資料夾將顯示所有傳送。 然後可以篩選此資料。
+视图是一个特定的文件夹，它不包含任何数据，但显示实际存储在相同类型的其他文件夹中的数据。 例如，如果将投放文件夹转换为视图，则此文件夹将显示所有投放。 然后，可以筛选此数据。
 
 
 >[!NOTE]
->若要將檢視與標準資料夾區分開來，其名稱會以淺藍色顯示，而非黑色。
+>为了将视图与标准文件夹区分开来，其名称以浅蓝色显示，而不是以黑色显示。
 
-請注意，您可以指派許可權給資料夾，以限制對特定資料的存取。 [了解详情](#restrict-access-to-a-folder)
+请注意，您可以为文件夹分配权限以限制对特定数据的访问。 [了解详情](#restrict-access-to-a-folder)
 
-## 使用資料夾時的最佳實務{#best-practices-folders}
+## 使用文件夹时的最佳实践{#best-practices-folders}
 
-* **使用內建資料夾** 讓專案中涉及的每個人都能更輕鬆地使用、維護和疑難排解應用程式。 避免建立收件者、清單、傳遞等的自訂資料夾結構，但使用標準資料夾，例如 **管理**， **設定檔與目標**， **行銷活動管理**.
+* **使用内置文件夹** 使参与项目的每个人都能更轻松地使用、维护和排除应用程序故障。 避免为收件人、列表、投放等创建自定义文件夹结构，但使用标准文件夹，例如 **管理**， **配置文件和目标**， **营销活动管理**.
 
-* **建立子資料夾**，例如將您的技術工作流程儲存在內建資料夾下： **[!UICONTROL Administration > Production > Technical Workflows]**，並按每個工作流程型別建立子資料夾。
+* **创建子文件夹**，例如，将技术工作流保存在内置文件夹下： **[!UICONTROL Administration > Production > Technical Workflows]**，并按工作流类型创建子文件夹。
 
-* **定義並套用命名慣例**&#x200B;例如，您可以按字母順序命名工作流程，好讓工作流程按執行順序排序，例如：
+* **定义和应用命名约定**&#x200B;例如，您可以按字母顺序命名工作流，以便它们按执行顺序排序，例如：
 
-   A1 — 匯入收件者，從10:00開始；A2 — 匯入票證，從11:00開始。
+   A1 — 导入收件人，从10:00开始；A2 — 导入票证，从11:00开始。
 
 ## 创建文件夹{#create-a-folder}
 
-若要建立資料夾，請在現有資料夾上按一下滑鼠右鍵，然後使用內容功能表。
+要创建文件夹，请右键单击现有文件夹并使用上下文菜单。
 
-若要建立與您選取的資料夾相同的資料夾型別，請選擇內容功能表中的第一個選項。 例如，從「收件者」資料夾中，選取 **[!UICONTROL Create a new 'Recipients' folder]**.
+要创建与所选文件夹相同的文件夹类型，请在上下文菜单中选择第一个选项。 例如，从“收件人”文件夹中，选择 **[!UICONTROL Create a new 'Recipients' folder]**.
 
 ![](assets/create-recipient-folder.png)
 
-您可以視需要拖放新資料夾以整理Campaign檔案總管樹狀結構。
+您可以根据需要拖放新文件夹以整理Campaign资源管理器树。
 
-若要建立其他型別的資料夾，請在現有資料夾上按一下滑鼠右鍵，然後選取 **[!UICONTROL Add new folder]**. 您可以根據要儲存的資料，建立所有型別的資料夾。
+要创建其他类型的文件夹，请右键单击现有文件夹并选择 **[!UICONTROL Add new folder]**. 您可以根据要存储的数据创建所有类型的文件夹。
 
 ![](assets/add-new-folder.png)
 
 >[!CAUTION]
->這些變更適用於所有Campaign使用者。
+>这些更改适用于所有Campaign用户。
 
-## 將資料夾轉換為檢視{#turn-a-folder-to-a-view}
+## 将文件夹转换为视图{#turn-a-folder-to-a-view}
 
-檢視是不包含任何資料但顯示實際儲存在相同型別之其他資料夾中的資料的特定資料夾。
+视图是一个特定的文件夹，它不包含任何数据，但显示实际存储在相同类型的其他文件夹中的数据。
 
-您可以將任何資料夾轉換為檢視，但資料夾必須是空的。 將資料夾轉換為檢視時，會刪除資料夾中儲存的任何資料。
+您可以将任何文件夹转换为视图，但文件夹必须为空。 在将文件夹转换为视图时，将删除文件夹中存储的任何数据。
 
 >[!CAUTION]
 >
->檢視會顯示資料並提供存取權，即使資料並未實際儲存在檢視資料夾中亦然。 若要存取內容，操作員必須在來源資料夾中擁有適當的許可權，至少是讀取存取權。
+>视图显示数据并提供对数据的访问，即使数据并未实际存储在视图文件夹中也是如此。 要访问内容，操作员必须在源文件夹中具有适当的权限，至少具有读取权限。
 >
->若要授予檢視的存取權而不授予其來源資料夾的存取權，請勿授予來源資料夾之父節點的讀取存取權。
+>要授予对视图的访问权限而不授予对其源文件夹的访问权限，请不要授予对源文件夹父节点的读取权限。
 
-在以下範例中，我們將建立一個新資料夾，以根據其內部名稱僅顯示美國的傳送。
+在下面的示例中，我们将创建一个新文件夹，以根据其内部名称仅显示美国投放。
 
-1. 建立 **[!UICONTROL Deliveries]** 資料夾，並為其命名 **美國傳遞**.
-1. 以滑鼠右鍵按一下此資料夾並選取 **[!UICONTROL Properties...]**.
-1. 在 **[!UICONTROL Restriction]** 选项卡中，选择 **[!UICONTROL This folder is a view]**。然後會顯示資料庫中的所有傳送。
+1. 创建 **[!UICONTROL Deliveries]** 文件夹，并为其命名 **美国投放**.
+1. 右键单击此文件夹并选择 **[!UICONTROL Properties...]**.
+1. 在 **[!UICONTROL Restriction]** 选项卡中，选择 **[!UICONTROL This folder is a view]**。随后将显示数据库中的所有投放。
 
    ![](assets/this-folder-is-a-view.png)
 
-1. 在視窗的中央區段中，從查詢編輯器定義篩選條件：只有與篩選對應的傳送才會顯示在資料夾中。
+1. 从窗口中央部分的查询编辑器定义筛选条件：文件夹中仅显示与筛选条件对应的投放。
 
    ![](assets/filter-view.png)
 
    >[!NOTE]
    >
-   >瞭解如何在中設計查詢 [此頁面](create-filters.md#advanced-filters)
+   >了解如何在中设计查询 [此页面](create-filters.md#advanced-filters)
 
 
 >[!CAUTION]
 >
->管理時 [異動訊息傳送](../send/transactional.md) 事件， **[!UICONTROL Real time events]** 或 **[!UICONTROL Batch events]** 資料夾不得在執行例項上設定為檢視，因為這可能會導致許可權問題。
+>管理时 [事务性消息传递](../send/transactional.md) 事件， **[!UICONTROL Real time events]** 或 **[!UICONTROL Batch events]** 不能将文件夹设置为执行实例上的视图，因为这可能会导致权限问题。
 
-## 組織您的資料夾{#organize-your-folders}
+## 组织您的文件夹{#organize-your-folders}
 
-依預設，會在階層頂端新增新資料夾。
+默认情况下，新文件夹将添加到层次结构的顶部。
 
-瀏覽 **子資料夾** 資料夾屬性的索引標籤，以組織其子資料夾。
+浏览 **子文件夹** 文件夹属性的选项卡，以组织其子文件夹。
 
-您可以使用右側的箭頭行動資料夾，或選取 **[!UICONTROL Sort the sub-folders in alphabetical order]** 自動排序的選項。
+您可以使用右侧的箭头移动文件夹，也可以选择 **[!UICONTROL Sort the sub-folders in alphabetical order]** 选项以自动对它们进行排序。
 
 ![](assets/sort-folders.png)
 
 
-## 篩選資料夾中的資料{#filter-data-in-a-folder}
+## 过滤文件夹中的数据{#filter-data-in-a-folder}
 
-若要篩選儲存在資料夾中的資料，請存取資料夾屬性並選取「限制」標籤。
+要筛选存储在文件夹中的数据，请访问文件夹属性并选择“限制”选项卡。
 
-例如，下列資料夾只會包含具有電子郵件地址且其來源未標籤為「外部」的連絡人 — 或空白。
+例如，下面的文件夹将仅包含具有电子邮件地址且其来源未标记为“外部”或为空的联系人。
 
 ![](assets/add-a-filter-to-a-folder.png)
 
 
-## 限制對資料夾的存取{#restrict-access-to-a-folder}
+## 限制对文件夹的访问{#restrict-access-to-a-folder}
 
-使用資料夾的許可權來組織和控制Campaign資料的存取。 進一步瞭解中檔案夾的許可權 [本節](../start/folder-permissions.md).
+使用文件夹的权限来组织和控制对Campaign数据的访问。 了解有关文件夹权限的详细信息 [本节](../start/folder-permissions.md).

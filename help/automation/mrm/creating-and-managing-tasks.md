@@ -12,501 +12,501 @@ ht-degree: 1%
 
 # 创建和管理任务{#creating-and-managing-tasks}
 
-Adobe Campaign 让您可以直接在应用程序中创建任务并管理其完整的生命周期. 方案和行銷活動實作可以細分為指派給Adobe Campaign操作員或外部服務提供者的任務。 此作業模式可讓您建立包含所有方案參與者和外部參與者的開放式共同作業環境。
+Adobe Campaign 让您可以直接在应用程序中创建任务并管理其完整的生命周期. 项目和营销策划的实施可以划分为分配给Adobe Campaign操作员或外部服务提供商的任务。 这种操作模式允许您创建包括所有项目参与者和外部参与者的开放式协作环境。
 
-您可以從任務清單或行銷活動儀表板建立、檢視和監控任務。 您也可以在行銷計畫、方案和行銷活動的排程中檢視和追蹤這些活動。
+可以从任务列表或营销活动仪表板创建、查看和监控任务。 还可以在营销计划、项目和营销策划的时间表中查看和跟踪这些指标。
 
-任務會附加至行銷活動，且可以具有相依性，即相關任務。 每個任務都有狀態、優先順序、預估負載和相關成本。
+任务会附加到营销策划，并且可能具有依赖关系，即关联的任务。 每个任务都有一个状态、优先级、预计负荷和相关成本。
 
-所有任務都會分組在清單中，可透過以下方式存取： **行銷活動** 標籤。 有關詳細資訊，請參閱 [存取任務](#accessing-tasks).
+所有任务都分组到一个列表中，该列表可通过 **营销活动** 选项卡。 有关更多信息，请参阅 [访问任务](#accessing-tasks).
 
-它們可以顯示在所屬方案的排程中。
+它们可以显示在所属项目的计划中。
 
 ![](assets/campaign-calendar.png)
 
-## 存取任務 {#accessing-tasks}
+## 访问任务 {#accessing-tasks}
 
-### 顯示任務 {#displaying-tasks}
+### 显示任务 {#displaying-tasks}
 
-任務會顯示在可透過存取的任務清單中 **[!UICONTROL Campaigns]** 標籤。
+任务显示在任务列表中，可通过访问 **[!UICONTROL Campaigns]** 选项卡。
 
 ![](assets/campaign-task-dashboard.png)
 
-您可以檢視目前運運算元的所有工作。
+您可以查看当前操作员的所有任务。
 
-有關詳細資訊，請參閱 [任務的執行狀態](#execution-status-of-a-task) 和 [任務的進度狀態](#progress-status-of-a-task).
+有关更多信息，请参阅 [任务的执行状态](#execution-status-of-a-task) 和 [任务的进度状态](#progress-status-of-a-task).
 
-### 篩選任務 {#filtering-tasks}
+### 筛选任务 {#filtering-tasks}
 
-當您顯示此檢視時，系統會自動篩選該檢視，以便只顯示 **目前操作員任務**. 您也可以使用視窗上半部分的欄位來篩選任務。
+显示此视图时，将自动进行筛选，以便仅显示 **当前操作员任务**. 您还可以使用窗口上半部分中的字段筛选任务。
 
-### 編輯任務 {#editing-tasks}
+### 编辑任务 {#editing-tasks}
 
-按一下任務以進行編輯。
+单击任务以进行编辑。
 
 ![](assets/edit-a-task.png)
 
-## 建立新任務 {#creating-a-new-task}
+## 创建新任务 {#creating-a-new-task}
 
-若要建立任務，請遵循下列步驟：
+要创建任务，请执行以下步骤：
 
-1. 瀏覽至 **[!UICONTROL Tasks]** 中的連結 **[!UICONTROL Campaigns]** 標籤並按一下 **[!UICONTROL Create]**.
+1. 浏览至 **[!UICONTROL Tasks]** 中的链接 **[!UICONTROL Campaigns]** 选项卡，然后单击 **[!UICONTROL Create]**.
 
    ![](assets/create-a-task-from-dashboard.png)
 
-1. 輸入任務名稱，並選取其連結的行銷活動。
-1. 設定開始和結束日期。
-1. 按一下 **[!UICONTROL Save]** 以建立任務。
+1. 输入任务的名称并选择它链接到的营销策划。
+1. 设置开始日期和结束日期。
+1. 单击 **[!UICONTROL Save]** 以创建任务。
 
    ![](assets/new-task-edit.png)
 
-您也可以透過行銷活動的控制面板建立任務：在此情況下，會自動連結至從中建立任務的行銷活動。
+您也可以通过营销策划的仪表板创建任务：在这种情况下，任务会自动链接到从中创建任务的营销策划。
 
 ![](assets/add-a-task-in-a-campaign.png)
 
-建立任務後，任務會新增至行銷活動排程、行銷活動控制面板和任務清單。 若要編輯任務，請從任務清單中按一下其名稱，或從排程或行銷活動控制面板中選取該任務，然後按一下 **[!UICONTROL Open]**.
+创建任务后，该任务会添加到营销活动计划、营销活动功能板和任务列表。 要编辑任务，请在任务列表中单击其名称，或从计划或营销策划仪表板中选择它，然后单击 **[!UICONTROL Open]**.
 
-建立之後，您可以透過定義以下專案來設定任務：
+创建任务后，您可以通过定义以下内容来配置任务：
 
-* 管理者和參與者。 [了解详情](#manager-and-participants)
-* 建立排程。 [了解详情](#execution-schedule)
-* 承諾成本。 [了解详情](#expenses-and-revenues)
+* 经理和参与者。 [了解详情](#manager-and-participants)
+* 创建计划。 [了解详情](#execution-schedule)
+* 承诺成本。 [了解详情](#expenses-and-revenues)
 
-您也可以新增 [檢閱者](#reviewers) 和 [參考檔案](#documents-referenced).
+您还可以添加 [审阅者](#reviewers) 和 [参考文档](#documents-referenced).
 
-任務生命週期顯示於 [本節](#life-cycle).
+任务生命周期在 [本节](#life-cycle).
 
-### 經理與參與者 {#manager-and-participants}
+### 经理和参与者 {#manager-and-participants}
 
-依預設，任務會指派給建立它的運運算元。 當該任務需要動作時，會通知此運運算元。
+默认情况下，任务被分配给创建它的操作员。 当该任务需要操作时，将通知此运算符。
 
-您可以從中選擇不同的運運算元 **[!UICONTROL Assigned to]** 下拉式清單。
+您可以从中选择其他运算符 **[!UICONTROL Assigned to]** 下拉列表。
 
 ![](assets/task-assigned-to.png)
 
 >[!NOTE]
 >
->操作員管理的詳細資訊，請參閱 [本節](../../v8/start/gs-permissions.md).
+>操作员管理详情，请参见 [本节](../../v8/start/gs-permissions.md).
 >
->只允許負責任務的操作員將其關閉。
+>仅允许负责任务的操作员关闭任务。
 
-您可以指定更多參與執行工作的運運算元。 不允許這些運運算元關閉任務：他們只能核准指派給他們的任務。
+您可以指定更多参与执行任务的操作员。 不允许这些操作员关闭任务：他们只能批准分配给他们的任务。
 
-若要新增任務運運算元，請遵循下列步驟：
+要添加任务运算符，请执行以下步骤：
 
-1. 按一下 **[!UICONTROL Resources]** 圖示加以檢視。
+1. 单击 **[!UICONTROL Resources]** 图标。
 
    ![](assets/add-task-resources.png)
 
-1. 按一下 **[!UICONTROL Add]** 並選取相關的運運算元。
-1. 輸入使用率：此比率代表工作執行期間指派給運運算元的工作負載。 此比率僅供參考，並以百分比表示。
+1. 单击 **[!UICONTROL Add]** 并选择相关的运算符。
+1. 输入使用率：表示在任务执行期间分配给操作员的工作量。 此比率仅用于指示，并以百分比表示。
 
    ![](assets/define-operator-task-workload.png)
 
-   例如，對於執行排程設定為10天的任務，使用率為50%的運運算元將會在此任務上動員10天的工作時間的一半。
+   例如，对于执行计划设置为10天的任务，使用率为50%的操作员将在此任务上调动10天的工作时间的一半。
 
-   對於每個運運算元，您可以輸入排程工作負載與實際工作負載。 這些持續時間也僅供參考。
+   对于每个操作员，您可以输入计划工作量和实际工作量。 这些持续时间也仅供参考。
 
-1. 您可以透過以下網址設定提醒： **[!UICONTROL Add a reminder...]** 連結。 將會在任務結束日期之前傳送電子郵件通知給所有參與任務的操作員。
+1. 您可以从以下位置配置提醒 **[!UICONTROL Add a reminder...]** 链接。 在任务结束日期之前，将向任务涉及的所有操作员发送电子邮件通知。
 
    ![](assets/task-op-add-a-reminder.png)
 
-1. 您也可以在工作開始之前傳送通知。 若要進行此設定，請選取 **[!UICONTROL Initial notification]** 欄位。
-1. 當到達結束日期且任務未關閉時，可以傳送通知給受指派人或受指派人群組(在 **[!UICONTROL Assignee]** 下拉式清單。
+1. 您还可以在任务开始之前发送通知。 要设置此项，请在 **[!UICONTROL Initial notification]** 字段。
+1. 在到达结束日期且任务未关闭时，可以向被分派人或在 **[!UICONTROL Assignee]** 下拉列表。
 
 
-操作員儀表板可讓您檢查其工作量（其他正在進行的任務）。
+操作员仪表板允许您检查其工作负载（其他正在进行的任务）。
 
 ![](assets/operator-dashboard.png)
 
-### 任務核准 {#reviewers}
+### 任务审批 {#reviewers}
 
-除了參與者之外，您還可以定義在任務關閉後稽核任務的操作者。
+除了参与者之外，您还可以定义在任务关闭后负责审阅任务的操作员。
 
-若要這麼做，請按一下 **[!UICONTROL Enable task approval]** 下方的選項 **[!UICONTROL Resources]** 視窗。 這可以是個別運運算元、一組運運算元或運運算元清單。
+要执行此操作，请单击 **[!UICONTROL Enable task approval]** 下部的选项 **[!UICONTROL Resources]** 窗口。 这可以是单个操作员、一组操作员或操作员列表。
 
-若要指定運運算元清單，請按一下 **[!UICONTROL Edit...]** 連結至第一個檢閱者的右側，並視需要新增運運算元，如下所示：
+要指定运算符列表，请单击 **[!UICONTROL Edit...]** 链接到第一个审阅人的右侧，并根据需要添加任意数量的运算符，如下所示：
 
 ![](assets/enable-task-approval.png)
 
-您可以在設定視窗的下半部定義任務的核准排程。 依預設，稽核者從提交日期起有三天時間來核准任務。 您也可以新增提醒，提醒會在核准期限之前自動傳送給相關操作員。
+您可以在配置窗口的下半部分定义任务的审批计划。 默认情况下，审阅人从提交日期起有三天时间来批准任务。 您还可以添加提醒，该提醒将在审批截止日期之前自动发送给相关操作员。
 
-即使已指派其他操作員進行核准，負責此工作的人員仍可指派自己進行核准。 如果尚未定義稽核者，則會將通知傳送給負責任務的人。 所有其他的Adobe Campaign運運算元，搭配 **[!UICONTROL Administrator]** 許可權也可以核准任務。 但是，他們不會收到通知。
+任务负责人可以为自己分配批准任务，即使已经分配了其他操作员来执行该任务。 如果未定义审阅人，则通知将发送给负责该任务的人员。 所有其他Adobe Campaign运算符，具有 **[!UICONTROL Administrator]** 权限也可以批准任务。 但是，他们不会收到通知。
 
-### 引用的檔案 {#documents-referenced}
+### 引用的文档 {#documents-referenced}
 
-您可以新增 [檔案和行銷資源](managing-marketing-resources.md) 至任務。
+您可以添加 [文档和营销资源](managing-marketing-resources.md) 完成一项任务。
 
-若要執行此動作：
+要执行此操作，请执行以下操作：
 
-1. 開啟工作並按一下 **[!UICONTROL Documents]** 圖示加以檢視。
+1. 打开任务并单击 **[!UICONTROL Documents]** 图标。
 
    ![](assets/add-documents-to-a-task.png)
 
-1. 按一下 **[!UICONTROL Add]** 並選取要新增至您工作的檔案。 對行銷資源套用相同的程式。
+1. 单击 **[!UICONTROL Add]** 并选择要添加到任务的文档。 对营销资源应用相同的流程。
 
 
-參考的檔案會新增至傳送給工作相關操作員的通知中。 它們也會新增到任務控制面板上。
+引用的文档会添加到发送给任务中涉及操作员的通知中。 它们也会添加到任务仪表板中。
 
 ![](assets/s_ncs_user_task_notification_documents.png)
 
-### 執行排程 {#execution-schedule}
+### 执行计划 {#execution-schedule}
 
-任務的有效期顯示在 **[!UICONTROL Start]** 和 **[!UICONTROL End]** 欄位。 排定的負載表示在期間內要執行的工作負載。 以天或小時表示。
+任务的有效期显示在 **[!UICONTROL Start]** 和 **[!UICONTROL End]** 字段。 计划负荷表示在该时段内要执行的工作量。 它以天或小时表示。
 
 >[!NOTE]
 >
->任務的生命週期會顯示在中 [生命週期](#life-cycle).
+>任务生命周期在 [生命周期](#life-cycle).
 
-此 **[!UICONTROL Workload performed]** 欄位也以天和小時表示，可讓您手動更新與排程工作負載相關的任務進度。
+此 **[!UICONTROL Workload performed]** 字段也以天和小时表示，允许您手动更新与计划工作负载相关的任务进度。
 
 ![](assets/s_ncs_user_task_percentage_done_enter.png)
 
-此 **[!UICONTROL Progress status]** 會根據相關操作員執行的任務自動更新任務的（以百分比表示）。 可以手動輸入。
+此 **[!UICONTROL Progress status]** 以百分比表示，根据相关操作员执行的任务自动更新。 可以手动输入。
 
-您可在任務儀表板中檢視此資訊。
+可在任务仪表板中查看此信息。
 
 ![](assets/s_ncs_user_task_percentage_done_from_dashboard.png)
 
-它也會顯示在行銷活動標籤中。
+它也会显示在营销策划选项卡中。
 
 ![](assets/s_ncs_user_task_percentage_done_from_op.png)
 
-如果已達到任務執行排程結束日期，但任務尚未完成，則任務將 **[!UICONTROL Late]**. 警告訊息也會顯示給警示操作者。
+如果已达到任务执行计划结束日期，但任务未完成，则任务将 **[!UICONTROL Late]**. 警告消息也会显示给警告操作员。
 
-有關詳細資訊，請參閱 [任務的進度狀態](#progress-status-of-a-task).
+有关更多信息，请参阅 [任务的进度状态](#progress-status-of-a-task).
 
-### 費用與收入 {#expenses-and-revenues}
+### 支出和收入 {#expenses-and-revenues}
 
-您可以定義每個作業的相關費用與預測收入。 系統會計算這些值，然後針對附加任務的行銷活動將其合併。
+您可以为每个任务定义相关费用和预测收入。 这将进行计算，然后针对任务所附加到的营销活动对其进行合并。
 
-若要指定此資訊，請按一下 **[!UICONTROL Expenses and revenue]** 圖示加以檢視。
+要指定此信息，请单击 **[!UICONTROL Expenses and revenue]** 图标。
 
 ![](assets/s_ncs_user_task_edit_costs.png)
 
-依預設，記入的預算是附加任務的行銷活動的預算。 它會顯示在任務詳細資訊中。
+默认情况下，计入的预算是附加任务的营销活动的预算。 它显示在任务详细信息中。
 
 >[!NOTE]
 >
->如需有關費用與預算的詳細資訊，請參閱 [本節](../campaigns/providers--stocks-and-budgets.md#cost-commitment--calculation-and-charging).
+>有关费用和预算的详细信息，请参阅 [本节](../campaigns/providers--stocks-and-budgets.md#cost-commitment--calculation-and-charging).
 
-在此視窗中，您也可以定義要達成的目標。 目標以任務的預測收入表示。
+在此窗口中，您还可以定义要达到的目标。 目标以任务的预测收入表示。
 
 ### 服务提供商 {#service-providers}
 
-外部服務提供者可以參與任務管理。
+外部服务提供商可以参与任务管理。
 
-要執行此操作，請編輯工作屬性並選取相關的服務提供者。 與服務提供者相關的成本類別會自動列在視窗的中央區段中。
+为此，请编辑任务属性并选择相关的服务提供程序。 与服务提供商关联的成本类别会自动列在窗口的中央部分。
 
-選取與工作執行相關的成本類別。 若要這麼做，請選取成本型態，並視需要新增附加費金額。
+选择与任务执行相关的成本类别。 要执行此操作，请选择成本类型，并根据需要添加附加费金额。
 
 ![](assets/s_ncs_user_task_edit_simple_costs_tab.png)
 
 >[!NOTE]
 >
->管理預算與成本的方法顯示於 [控制成本](controlling-costs.md).
+>预算与成本管理方法于下列栏目呈列： [控制成本](controlling-costs.md).
 
-選取服務提供者時，它會顯示在工作儀表板中：
+选择某个服务提供程序后，该服务提供程序将显示在任务仪表板中：
 
 ![](assets/s_ncs_user_task_supplier_view.png)
 
-### 延遲任務 {#late-tasks}
+### 延迟任务 {#late-tasks}
 
-如果任務已達到其結束日期，但其狀態未變更為，則任務會延遲 **[!UICONTROL Finished]**. 依預設，當任務延遲時，不會警告運運算元。 您可以設定通知電子郵件的傳送：即使操作員未參與工作，也可以通知所有操作員。
+如果任务已达到结束日期但其状态未更改为，则该任务会延迟 **[!UICONTROL Finished]**. 默认情况下，当任务延迟时，不会警告任何运算符。 您可以配置通知电子邮件的投放：即使操作员未参与任务，也可以通知所有操作员。
 
-前往 **[!UICONTROL Resources]** 方塊並將運運算元新增至 **[!UICONTROL Assignation]** 欄位。 若要通知幾個人，請選取一組操作員。
+转到 **[!UICONTROL Resources]** 框并将运算符添加到 **[!UICONTROL Assignation]** 字段。 要通知多个人，请选择一组操作员。
 
 ![](assets/mrm_task_alert_if_late.png)
 
 ### 初始通知 {#initial-notifications}
 
-當您建立或修改具有未來開始日期的任務時，Adobe Campaign會提供傳送電子郵件給負責任務的人，讓他們知道何時開始。
+当您创建或修改具有未来开始日期的任务时，Adobe Campaign会提供向负责任务的人发送电子邮件，让他们知道任务何时开始。
 
 ![](assets/mrm_task_first_notif.png)
 
-不過，如果您要建立的任務還有很長的路要走，最好在任務開始前排程要傳送的通知。 例如，如果工作在一個月內開始，您可以在工作開始前一週通知負責人員。
+但是，如果您正在创建的任务还有很长的路要走，最好在任务开始之前安排发送通知。 例如，如果任务在一个月内开始，您可以在任务开始前一周通知负责该任务的人员。
 
-若要排程通知，請前往 **[!UICONTROL Resources]** 方塊並使用 **[!UICONTROL Initial notification]** 欄位。
+要计划通知，请转到 **[!UICONTROL Resources]** 框并使用 **[!UICONTROL Initial notification]** 字段。
 
 ![](assets/mrm_task_alert_before.png)
 
-* 針對行銷活動內的任務，選取特定的日期和時間。
-* 對於行銷活動範本內的任務，通知時間以任務開始前的剩餘時間表示(例如，如果您在 **[!UICONTROL Initial notification]** 欄位)，電子郵件將在任務開始日期2天前傳送。
+* 对于营销活动中的任务，选择特定的日期和时间。
+* 对于活动模板内的任务，通知时间表示为任务开始前的剩余时间(例如，如果在 **[!UICONTROL Initial notification]** 字段，电子邮件将在任务开始日期之前2天发送)。
 
-如果您已排程通知，當您儲存任務時，Adobe Campaign仍會提供立即傳送通知的優惠。 您可以決定傳送，這不會取代排程通知。
+如果您已计划通知，则在保存任务时，Adobe Campaign仍会提供立即发送通知的功能。 您可以决定发送它，这不会替换计划的通知。
 
-### 連結至方案的任務 {#task-linked-to-a-program}
+### 链接到项目的任务 {#task-linked-to-a-program}
 
-您可以直接在方案中建立任務，以管理與其整體組織而非特定行銷活動相關的動作（例如，討論方案中即將開展行銷活動之主題的會議）。 該任務將顯示在方案排程中。
+您可以直接在项目群中创建任务，以管理与其整个组织相关，而不是与特定营销策划相关的操作（例如，召开会议以讨论项目群内即将开展的营销策划的主题）。 该任务将显示在项目群计划中。
 
-若要建立直接連結至方案的工作：
+要创建直接链接到项目的任务，请执行以下操作：
 
-1. 開啟方案排程：在首頁上，前往 **[!UICONTROL Campaigns > Browse > Other choices > Programs]**. 整個方案排程會在視窗的右側部分開啟。
-1. 在排程中，按一下所需的程式：畫面會隨即顯示其中程式的視窗。
-1. 在此視窗中，按一下 **[!UICONTROL Open]**. 程式排程隨即開啟。
-1. 按一下 **[!UICONTROL Add]** 按鈕於排程上方，然後按一下 **[!UICONTROL Add a task]**.
+1. 打开项目计划：在主页上，转到 **[!UICONTROL Campaigns > Browse > Other choices > Programs]**. 整个项目计划将在窗口的右侧部分打开。
+1. 在计划中，单击所需的程序：此时会出现一个窗口，其中显示程序。
+1. 在此窗口中，单击 **[!UICONTROL Open]**. 项目计划随即打开。
+1. 单击 **[!UICONTROL Add]** 按钮，然后单击 **[!UICONTROL Add a task]**.
 
 ![](assets/mrm_task_create_from_prg.png)
 
-### 操作員可用性 {#operator-availability}
+### 操作员可用性 {#operator-availability}
 
-在任務儀表板中，操作員名稱旁的圖示表示操作員已在任務所涵蓋的期間處理另一個任務或事件。 運運算元負責或參與的任務會出現在 **[!UICONTROL Assigned to]** 欄位或任務中 **[!UICONTROL Resources]** 方塊。
+在任务仪表板中，操作员姓名旁边的图标表示操作员在任务所涵盖的期间已经在处理另一个任务或事件。 操作员负责或参与的任务显示在 **[!UICONTROL Assigned to]** 字段或任务中 **[!UICONTROL Resources]** 盒子。
 
 ![](assets/mrm_task_alert_operator_busy.png)
 
-### 工作流程中的任務 {#task-in-a-workflow}
+### 工作流中的任务 {#task-in-a-workflow}
 
-使用 **[!UICONTROL Task]** 行銷活動工作流程中的元素可讓您根據任務是否核准來定義兩個案例。
+使用 **[!UICONTROL Task]** 活动工作流中的要素允许您根据任务是否获得批准来定义两种方案。
 
 ![](assets/mrm_task_in_workflow.png)
 
-在行銷活動工作流程中， **[!UICONTROL Task]** 活動可在以下位置找到： **[!UICONTROL Flow control]** 標籤。
+在营销活动工作流中， **[!UICONTROL Task]** 可在以下位置找到活动： **[!UICONTROL Flow control]** 选项卡。
 
-## 任務型別 {#types-of-task}
+## 任务类型 {#types-of-task}
 
-當您透過行銷活動建立任務時，可以建立特定任務。 在選取的範本中定義任務型別。
+通过营销策划创建任务时，您可以创建特定任务。 任务的类型在所选模板中定义。
 
 ![](assets/s_ncs_user_task_select_template.png)
 
-可以排程下列工作：
+可以计划以下任务：
 
-* [控制任務](#control-tasks)，
+* [控制任务](#control-tasks)，
 * [分组任务](#grouping-task),
 * [分组任务](#grouping-task),
-* [通知任務](#notification-task).
+* [通知任务](#notification-task).
 
 >[!NOTE]
 >
->**[!UICONTROL Control task]** 和 **[!UICONTROL Grouping]** 可以建立任務 **僅限** 透過campaign控制面板。\
->它們會顯示在指派給它們的運運算元的工作圖中。 另請參閱 [存取任務](#accessing-tasks).
+>**[!UICONTROL Control task]** 和 **[!UICONTROL Grouping]** 可以创建任务 **仅限** 通过营销活动仪表板。\
+>它们显示在它们被分配到的操作员的任务图中。 参见 [访问任务](#accessing-tasks).
 
-### 控制任務 {#control-tasks}
+### 控制任务 {#control-tasks}
 
-A **[!UICONTROL Control task]** 連結至傳遞核准：目標定位、內容、擷取檔案、預算或校訂的核准。
+A **[!UICONTROL Control task]** 链接到投放审批：对定位、内容、提取文件、预算或验证的审批。
 
 ![](assets/s_ncs_user_task_new_control.png)
 
-任務建立後，即會新增至行銷活動控制面板。
+创建任务后，该任务即添加到营销活动功能板。
 
 ![](assets/s_ncs_user_task_edit_from_board.png)
 
-然後您可以編輯並指定其引數。
+然后，您可以对其进行编辑并指定其参数。
 
-### 行銷資源建立任務 {#marketing-resource-creation-task}
+### 营销资源创建任务 {#marketing-resource-creation-task}
 
-行銷資源建立任務可用於管理行銷資源的建立和發佈。 如果您是透過任務而非透過資源本身管理資源，您可以：
+营销资源创建任务可用于管理营销资源的创建和发布。 如果您是通过任务而不是通过资源本身来管理资源，则可以：
 
-* 透過行銷活動控制資源建立流程。
-* 檢視排程中的資源建立程式。
-* 管理資源建立程式（提醒、通知）。
-* 計算並控制連結至資源建立的成本。
-* 透過任務核准和發佈資源（如果已啟用相關選項）。
+* 通过营销策划控制资源创建过程。
+* 在计划中查看资源创建流程。
+* 管理资源创建过程（提醒、通知）。
+* 计算和控制链接到资源创建的成本。
+* 通过任务批准和发布资源（如果已启用相关选项）。
 
-#### 任務與其連結資源之間的互動 {#interaction-between-the-task-and-its-linked-resource}
+#### 任务与其链接资源之间的交互 {#interaction-between-the-task-and-its-linked-resource}
 
-行銷資源建立任務會與連結至它的資源互動。 這表示：
+营销资源创建任务与链接到该任务的资源进行交互。 这意味着：
 
-* 資源建立排程和連結至該排程的成本會透過任務來管理。
-* 操作員可在資源上正常運作（下載或上傳、鎖定和解除鎖定）：這不會影響工作。
-* 資源核准和發佈可透過任務執行：如果 **[!UICONTROL Publish the marketing resource]** 選項啟用，則資源會在任務完成後自動核准和發佈。 如果未啟用該選項，則任務和資源不會互動：對一個專案執行操作不會影響另一個專案。
+* 资源创建计划和与其关联的成本通过任务进行管理。
+* 操作员可以像处理普通资源一样处理资源（下载或上传、锁定和解锁）：这不会影响任务。
+* 可以通过任务执行资源批准和发布：如果 **[!UICONTROL Publish the marketing resource]** 选项时，资源会在任务完成后自动批准和发布。 如果未启用该选项，则任务和资源不会进行交互：对一个任务执行操作不会影响另一个任务。
 
-   您可以使用一系列連結的任務來定義完整的核准週期。 檢查 **[!UICONTROL Publish the marketing resource]** 僅用於最後一個任務的選項：所有任務都需要完成，才能發佈資源。 此外，當您建立子行銷資源任務時，系統會自動在子任務中選取資源。
+   您可以使用一系列链接的任务来定义完整的审批周期。 查看 **[!UICONTROL Publish the marketing resource]** 仅用于最后一个任务的选项：所有任务都需要完成，才能发布资源。 此外，在创建子营销资源任务时，将在子任务中自动选择资源。
 
-   * **透過資源**：如果您提交資源以供核准或核准，這些動作將不會影響任務。
-   * **透過任務**：如果 **[!UICONTROL Publish the marketing resource]** 選項時，資源會在任務完成後自動核准和發佈（請參閱上文）。 如果未核取該選項，則任務和資源不會互動：對一個專案執行操作不會影響另一個專案。
+   * **通过资源**：如果您提交资源以供审批或批准，则这些操作不会影响任务。
+   * **通过任务**：如果 **[!UICONTROL Publish the marketing resource]** 选项时，资源会在任务完成后自动批准和发布（请参阅上文）。 如果未选中该选项，则任务和资源不会进行交互：对一个任务执行操作不会影响另一个任务。
 
-#### 設定行銷資源建立任務 {#configuring-a-marketing-resource-creation-task}
+#### 配置营销资源创建任务 {#configuring-a-marketing-resource-creation-task}
 
-檢閱任務的人不必是檢閱資源中定義內容的同一個人。 但是，如果 **[!UICONTROL Publish the marketing resource]** 核取選項（見下文），任務稽核者被授權核准資源內容，因為完成任務會自動核准資源（如果未定義稽核者，則為任務管理員）。
+审阅任务的人员不必是审阅资源中定义内容的同一人员。 但是，如果 **[!UICONTROL Publish the marketing resource]** 选项（见下文），任务审阅人有权审批资源内容，因为完成任务将自动审批资源（如果未定义审阅人，则为任务经理）。
 
 ![](assets/mrm_task_asset_creation.png)
 
-在 **[!UICONTROL Marketing resource]** 欄位，定義您要透過此任務管理的資源。 您可以：
+在 **[!UICONTROL Marketing resource]** 字段，定义要通过此任务管理的资源。 您可以：
 
-* 選取現有資源：下拉式清單會提供所有具有狀態的資源 **[!UICONTROL Being edited]**.
-* 建立資源：按一下 **[!UICONTROL Select the link]** 圖示，然後按一下 **[!UICONTROL Create]** 圖示。
+* 选择现有资源：下拉列表提供状态为的所有资源 **[!UICONTROL Being edited]**.
+* 创建资源：单击 **[!UICONTROL Select the link]** 图标，然后单击 **[!UICONTROL Create]** 图标。
 
-此 **[!UICONTROL Publish the marketing resource]** 選項可讓您自動發佈資源：一旦任務完成 **[!UICONTROL Finished]**，資源的狀態會自動切換為 **[!UICONTROL Published]**，即使作業未提交核准或未獲核准，包括完成任務的檢閱者不是資源中定義的內容檢閱者。
+此 **[!UICONTROL Publish the marketing resource]** 选项可让您自动发布资源：在任务完成之后 **[!UICONTROL Finished]**&#x200B;时，资源的状态会自动切换到 **[!UICONTROL Published]**，即使它既未提交以供审批也未获得批准，包括完成任务的审阅人不是资源中定义的内容审阅人。
 
-此 **[!UICONTROL Publish the resource]** 按鈕變為可用，資源發佈稽核者會收到通知電子郵件，通知他們按鈕已準備好發佈。 在 **[!UICONTROL Edit > Tracking]** 標籤，任務檢閱者的檢閱和發佈會變得可見。 如果已定義資源後處理工作流程，則會立即執行。
+此 **[!UICONTROL Publish the resource]** 按钮已变为可用，资源发布审核者会收到通知电子邮件，通知他们该按钮已准备好发布。 在 **[!UICONTROL Edit > Tracking]** 选项卡，任务审阅者审阅和发布变得可见。 如果已定义资源后处理工作流，则会立即执行该工作流。
 
 ![](assets/mrm_resource_audit_tab.png)
 
-### 群組任務 {#grouping-task}
+### 组任务 {#grouping-task}
 
-此 **[!UICONTROL Grouping task]** 「型別」任務可讓您將數個任務分組，並同步管理其進度和核准。
+此 **[!UICONTROL Grouping task]** 通过类型任务，可将多个任务分组，并同步管理其进度和批准。
 
-群組任務沒有連結的費用或資源。
+分组任务没有链接费用或资源。
 
-分組到分組任務的所有任務都可以在自己的儀表板上看到。 這可讓您篩選任務清單，以僅顯示您感興趣的任務。
+分组到分组任务的所有任务都可以在其自己的功能板中看到。 这样，您就可以筛选任务列表，以仅显示您感兴趣的任务。
 
-分組任務有一個連結，可讓您輕鬆建立分組任務。
+分组任务具有一个链接，可让您轻松创建分组任务。
 
-若要根據分組任務建立分組任務，請前往行銷活動控制面板，按一下分組任務的名稱以顯示其說明，然後按一下 **[!UICONTROL Add a task]**.
+要根据分组任务创建分组任务，请转到活动仪表板，单击分组任务的名称以显示其说明，然后单击 **[!UICONTROL Add a task]**.
 
 ![](assets/mrm_task_grouped_create.png)
 
-不過，如果您已建立要連結至分組任務的任務，則可透過 **[!UICONTROL Linked to]** 的欄位 **[!UICONTROL Properties]** 方塊。
+但是，如果您已创建要链接到分组任务的任务，则可以通过 **[!UICONTROL Linked to]** 字段 **[!UICONTROL Properties]** 盒子。
 
 ![](assets/s_ncs_user_task_group_with.png)
 
-### 通知任務 {#notification-task}
+### 通知任务 {#notification-task}
 
-通知任務可讓您排程電子郵件傳送（傳送給操作員、一組操作員、服務提供者等）。 這可讓您排程提醒，例如，通知某人行銷活動即將完成，或在行銷活動開始之前傳送檔案，以便操作員進行準備。 這表示您可以追蹤行銷活動或方案中的通訊，並更密切地關注已執行的動作。
+通过通知任务，可计划电子邮件投放（投放到操作员、操作员组、服务提供商等）。 这允许您计划提醒，例如，通知某人某个营销活动即将结束，或者在营销活动开始之前发送文档，以便操作员可以准备营销活动。 这意味着您可以跟踪营销策划或项目中的通信，并更密切地关注执行的操作。
 
-#### 生命週期 {#life-cycle}
+#### 生命周期 {#life-cycle}
 
-通知任務不需要核准。 這表示它們的生命週期比標準任務的生命週期更簡單：
+通知任务不需要审批。 这意味着它们的生命周期比标准任务的生命周期更简单：
 
 ![](assets/mrm_task_notif_lifecycle.png)
 
-通知任務可以有下列狀態：
+通知任务可以具有以下状态：
 
-* **[!UICONTROL Scheduled]** 直到傳送電子郵件為止
-* **[!UICONTROL In progress]** 傳送電子郵件後並直到到達結束日期為止
-* **[!UICONTROL Finished]** 一旦到達結束日期。
+* **[!UICONTROL Scheduled]** 在发送电子邮件之前
+* **[!UICONTROL In progress]** 发送电子邮件后，直到到达结束日期
+* **[!UICONTROL Finished]** 一旦到达结束日期。
 
 #### 配置 {#configuration}
 
 ![](assets/mrm_task_notif_dashboard.png)
 
-建立期間，必須在任務中輸入下列元素：
+在创建期间，必须在任务中输入以下元素：
 
-* **[!UICONTROL Assigned to]** ：將收到電子郵件的操作員或操作員群組。 如果您在傳送電子郵件後重新指派任務，則不會將電子郵件傳送給新運運算元（若要發生這種情況，您需要重新初始化任務並變更其開始日期）。
-* **任務開始日期**：傳送通知電子郵件的日期。 此日期必須在未來錄製任務時發生。
-* **任務結束日期**：任務狀態變更的日期 **[!UICONTROL Finished]**. 依預設，結束日期與開始日期相同。 不過，為任務指派持續時間可讓您表示運運算元必須在排程中執行的時間量（如有必要）。
-* **[!UICONTROL Description]** ：此處輸入的文字會出現在通知電子郵件的內文中。
+* **[!UICONTROL Assigned to]** ：将收到电子邮件的操作员或操作员组。 如果在发送电子邮件后重新分配任务，则不会将电子邮件发送给新操作员（要实现此目的，您需要重新初始化任务并更改其开始日期）。
+* **任务开始日期**：发送通知电子邮件的日期。 此日期必须在将来录制任务时发生。
+* **任务结束日期**：任务状态更改为的日期 **[!UICONTROL Finished]**. 默认情况下，结束日期与开始日期相同。 但是，通过为任务分配持续时间，可以表示操作员必须在计划中执行操作的时间量（如有必要）。
+* **[!UICONTROL Description]** ：此处输入的文本将显示在通知电子邮件的正文中。
 
    ![](assets/mrm_task_notif_dashboard_msg.png)
 
-您可以將附件新增至工作及通知電子郵件。 若要這麼做，請按一下 **[!UICONTROL Documents]** 圖示加以檢視。
+您可以将附件添加到任务和通知电子邮件中。 要执行此操作，请单击 **[!UICONTROL Documents]** 图标。
 
-## 生命週期 {#life-cycle-1}
+## 生命周期 {#life-cycle-1}
 
-### 任務之間的連結 {#links-between-tasks}
+### 任务之间的链接 {#links-between-tasks}
 
-此 **[!UICONTROL Properties]** 每個任務中的按鈕可讓您定義行銷活動中任務之間的連結。 您可以使用分組任務將任務分割為子任務(請參閱 [連結的任務](#linked-tasks))，或定義任務之間的相依性(請參閱 [分組任務](#grouping-tasks))。
+此 **[!UICONTROL Properties]** 通过每个任务中的按钮，可定义营销策划中任务之间的链接。 您可以使用分组任务将任务拆分为子任务(请参阅 [链接的任务](#linked-tasks))，或定义任务之间的依赖关系(请参阅 [分组任务](#grouping-tasks))。
 
-#### 連結的任務 {#linked-tasks}
+#### 链接的任务 {#linked-tasks}
 
-使用 **[!UICONTROL Linked task]** 將任務與分組任務相關聯的欄位。 另請參閱 [任務型別](#types-of-task).
+使用 **[!UICONTROL Linked task]** 用于将任务与分组任务关联的字段。 参见 [任务类型](#types-of-task).
 
-在下列範例中，目標定位的核准會分成四個子任務。
+在下面的示例中，定位的批准被细分为四个子任务。
 
 ![](assets/s_ncs_user_task_linked_tasks.png)
 
-每個子任務都是連結至主要任務的標準任務。
+每个子任务都是链接到主任务的标准任务。
 
 ![](assets/s_ncs_user_task_depends_on.png)
 
-#### 群組任務 {#grouping-tasks}
+#### 组任务 {#grouping-tasks}
 
-使用 **[!UICONTROL Grouped to]** 使任務的執行取決於另一個任務的執行的欄位。
+使用 **[!UICONTROL Grouped to]** 字段使任务的执行取决于另一个任务的执行。
 
 ![](assets/s_ncs_user_task_group_with.png)
 
-任務之間的相依性以行銷活動控制面板中的箭頭表示。
+任务之间的依赖关系由活动仪表板中的箭头表示。
 
 ![](assets/s_ncs_user_task_dependencies_from_board.png)
 
-若為分組任務，Adobe Campaign會自動將父任務的結束日期指派給子任務，作為開始日期。 例如，如果 **建立邀請** 任務於10月15日下午3:30結束， **傳送邀請電子郵件** 子任務將於10月15日下午3:30開始。
+对于分组任务，Adobe Campaign会自动将父任务的结束日期作为开始日期分配给子任务。 例如，如果 **创建邀请** 任务于10月15日下午3:30结束， **发送邀请电子邮件** 子任务将于10月15日下午3:30开始。
 
-此外，如果您延遲父系任務的結束，其某些子系任務可能會受到影響：這些是子系任務，其狀態為 **[!UICONTROL Scheduled]** 且其開始日期早於父系任務的新結束日期。 任務的持續時間保持不變。 如果子任務的開始日期晚於父任務的新結束日期，則子任務不受影響。
+此外，如果推迟父任务的结束，其某些子任务可能会受到影响：这些是状态为 **[!UICONTROL Scheduled]** 且其开始日期早于父任务的新结束日期。 任务的持续时间保持不变。 如果子任务的开始日期晚于父任务的新结束日期，则子任务不受影响。
 
 **示例**
 
-排定於10月9日下午5點結束的父系任務有兩個子系任務，即任務A和任務B。任務A排定於10月10日下午2點開始，任務B排定於10月12日上午8點開始。
+计划于10月9日下午5点结束的父任务有两个子任务，即任务A和任务B。任务A计划于10月10日下午2点开始，任务B计划于10月12日上午8点开始。
 
-讓我們延遲父系任務：現在於10月11日下午1點結束。 只有任務A會延遲，10月11日下午1點開始。
+让我们推迟父任务：该任务现在于10月11日下午1点结束。 只有任务A被推迟，将于10月11日下午1点开始。
 
 ![](assets/mrm_task_parent_postpones_child.png)
 
-### 任務的執行狀態 {#execution-status-of-a-task}
+### 任务的执行状态 {#execution-status-of-a-task}
 
-任務狀態可在任務地圖中檢視。 任務的執行狀態會根據運運算元動作自動更新。
+任务状态可以在任务图中查看。 任务的执行状态会根据操作员操作自动更新。
 
-任務可以是： **[!UICONTROL Scheduled]**， **[!UICONTROL In progress]**， **[!UICONTROL Finished]**， **[!UICONTROL Canceled]**， **[!UICONTROL Pending approval]** 或 **[!UICONTROL Rejected]**.
+任务可以是： **[!UICONTROL Scheduled]**， **[!UICONTROL In progress]**， **[!UICONTROL Finished]**， **[!UICONTROL Canceled]**， **[!UICONTROL Pending approval]** 或 **[!UICONTROL Rejected]**.
 
-* 建立任務時，它 **[!UICONTROL Scheduled]** 若其開始日期為未來。 它會保持此狀態，直到到達開始日期為止。
-* 啟動後，任務會變成 **[!UICONTROL In progress]**. 當任務負責人關閉任務時，它會變更為 **[!UICONTROL Finished]**.
-* 如果已定義稽核者，任務將為 **[!UICONTROL Pending approval]** 一旦負責該檔案的人關閉它，直到稽核者核准它為止。 如果稽核者拒絕，任務將為 **[!UICONTROL Rejected]**.
-* 任務負責人可透過儀表板或 **[!UICONTROL Task map]** 按一下 **[!UICONTROL Cancel]** 按鈕。
-* 若要排程工作，請輸入未來的開始日期。 然後，您可以傳送第一則通知給與執行任務有關的Adobe Campaign操作員。 另請參閱 [完成任務生命週期](#complete-task-life-cycle).
+* 创建任务时，任务是 **[!UICONTROL Scheduled]** 如果其开始日期是将来的话。 它将保持此状态，直到达到其开始日期。
+* 启动后，任务是 **[!UICONTROL In progress]**. 当任务负责人关闭任务时，任务将更改为 **[!UICONTROL Finished]**.
+* 如果已经定义了审阅人，任务将 **[!UICONTROL Pending approval]** 一旦主管人员关闭它，直到审核者批准。 如果审核者拒绝，任务将为 **[!UICONTROL Rejected]**.
+* 任务可由负责人员通过仪表板或 **[!UICONTROL Task map]** 单击 **[!UICONTROL Cancel]** 按钮。
+* 要计划任务，请输入将来的开始日期。 然后，您可以向参与执行任务的Adobe Campaign操作员发送第一条通知。 参见 [完整的任务生命周期](#complete-task-life-cycle).
 
 >[!NOTE]
 >
->* 任務狀態會自動更新。
->* 即使有效期已完成，未關閉的任務仍會出現在進行中的任務清單中。 警告會通知操作員任務已延遲。
+>* 任务状态会自动更新。
+>* 即使已完成有效期，未关闭的任务仍会显示在进行中的任务列表中。 出现警告，通知操作员任务延迟。
 >
 
 
-### 任務的進度狀態 {#progress-status-of-a-task}
+### 任务的进度状态 {#progress-status-of-a-task}
 
-除了其執行狀態之外，任務還可以與進度狀態相關聯： **[!UICONTROL Late]**， **[!UICONTROL To approve]**， **[!UICONTROL To do today]** 或 **[!UICONTROL To do this week]**. 此資訊會根據工作排程自動輸入。
+除了任务的执行状态之外，任务还可以与进度状态相关联： **[!UICONTROL Late]**， **[!UICONTROL To approve]**， **[!UICONTROL To do today]** 或 **[!UICONTROL To do this week]**. 根据任务计划自动输入此信息。
 
-您可以依程式或進度狀態來篩選工作清單。
+您可以按进程或进度状态筛选任务列表。
 
-有關詳細資訊，請參閱 [存取任務](#accessing-tasks).
+有关更多信息，请参阅 [访问任务](#accessing-tasks).
 
-### 完成任務生命週期 {#complete-task-life-cycle}
+### 完整的任务生命周期 {#complete-task-life-cycle}
 
-以下為負責人員已定義參與者和稽核者之完整任務生命週期的階段。
+下面是负责人员已定义参与者和审阅者的完整任务生命周期的各个阶段。
 
-1. 負責人建立任務並輸入各個欄位。 有關詳細資訊，請參閱 [建立新任務](#creating-a-new-task).
+1. 负责人创建任务并进入各个字段。 有关更多信息，请参阅 [创建新任务](#creating-a-new-task).
 
-   建立和編輯任務時 **排程在未來** （只要未到達任務開始日期），就可以傳送通知給參與者和管理者，讓他們知道已排程新任務。
+   创建和编辑任务时 **计划在将来的时间** （只要未到达任务开始日期），就可以向参与者和管理者发送通知，让他们知道已计划了新任务。
 
    ![](assets/s_ncs_user_task_planed_send_message.png)
 
-   若要傳送第一個通知，請按一下 **[!UICONTROL Yes]**. 此通知會告訴他們下一個任務的相關資訊，並包含內容的詳細資訊以及到截止日期前的剩餘天數。
+   要发送第一个通知，请单击 **[!UICONTROL Yes]**. 此通知将告诉他们下一个任务的信息，并包括有关内容的详细信息以及到截止日期前的剩余天数。
 
-   當任務建立並排程於未來時，其狀態為 **[!UICONTROL Scheduled]**.
+   创建任务并为未来安排任务时，其状态为 **[!UICONTROL Scheduled]**.
 
-1. 在任務開始日期時，負責人和參與者會收到通知，告知他們任務已開始。 其狀態變更為 **[!UICONTROL In progress]**.
-1. 完成指派給他們的區段後，參與者可以核准任務：
+1. 在任务开始日期时，负责人员和参与者会收到通知，告知他们任务已开始。 其状态更改为 **[!UICONTROL In progress]**.
+1. 完成分配给他们的部分后，参与者可以通过以下任一方式批准任务：
 
-   * 透過通知電子郵件。
-   * 透過主控台或Web介面，在任務儀表板中。
+   * 通过通知电子邮件。
+   * 通过控制台或Web界面，在任务仪表板中。
 
       ![](assets/s_ncs_user_task_start_rea.png)
 
-1. 每次參與者核准工作時，任務的進度狀態都會更新。
+1. 每次参与者批准作业时，任务的进度状态都会更新。
 
    ![](assets/s_ncs_user_task_percentage_done_op.png)
 
-1. 稽核者會收到通知電子郵件，告知他們操作員已完成指派給他們的區段。
+1. 查看者会收到一封通知电子邮件，告知他们操作员已完成分配给他们的部分。
 
-   他們可以追蹤任務控制面板上的進度。
+   他们可以关注任务仪表板上的进度。
 
    ![](assets/s_ncs_user_task_follow_from_dashboard.png)
 
-1. 一旦負責任務的人確定任務已完成，他們就可以使用任務啟動時傳送的通知電子郵件中的連結、主控台或介面來關閉任務。
+1. 一旦负责任务的人确定任务已完成，他们可以使用任务启动时发送的通知电子邮件中的链接、控制台或界面将其关闭。
 
    ![](assets/s_ncs_user_task_console_ressource_validation.png)
 
    >[!NOTE]
    >
-   >任務負責人可以隨時關閉任務，即使缺少核准也是如此。 進度狀態會自動變更為100%。
+   >任务负责人可以随时关闭任务，即使缺少批准也是如此。 进度状态会自动更改为100%。
 
-1. 任務狀態變更為 **[!UICONTROL To approve]**，系統會傳送通知給稽核者。
+1. 任务状态更改为 **[!UICONTROL To approve]**，并向审阅人发送通知。
 
-   他們透過通知電子郵件、主控台或Web介面核准任務。
+   他们通过通知电子邮件、控制台或Web界面批准任务。
 
-   他們可以透過行銷活動儀表板採取行動：
+   他们可以通过营销活动仪表板执行操作：
 
    ![](assets/s_ncs_user_task_console_validation.png)
 
-   他們也可以使用任務核准按鈕：
+   他们还可以使用任务审批按钮：
 
    ![](assets/s_ncs_user_task__validation.png)
 
    >[!NOTE]
    >
-   >任務狀態只會變更為 **[!UICONTROL To approve]** 如果您已啟用 **[!UICONTROL Enable task validation]** 中的選項 **[!UICONTROL Resources]** 工作視窗。\
-   >如果稽核者拒絕該任務，其狀態會變更為 **[!UICONTROL Rejected]**，則任務生命週期會自動重新啟動。
+   >任务状态将仅更改为 **[!UICONTROL To approve]** 如果您已启用 **[!UICONTROL Enable task validation]** 中的选项 **[!UICONTROL Resources]** 任务窗口。\
+   >如果审核者拒绝该任务，其状态将更改为 **[!UICONTROL Rejected]**，任务生命周期将自动重新启动。
 
-1. 任務狀態變更為 **[!UICONTROL Finished]**. 會傳送通知給每個相關人員。
+1. 任务状态更改为 **[!UICONTROL Finished]**. 向每个相关人员发送通知。
 
    >[!NOTE]
    >
-   >一旦任務完成，其生命週期可以由負責該任務的人重新初始化。 若要這麼做，請開啟工作並按一下 **[!UICONTROL Reset task to execute it again...]** 控制面板底部的連結。
+   >一旦任务完成，其生命周期可以由负责该任务的人重新初始化。 要执行此操作，请打开任务并单击 **[!UICONTROL Reset task to execute it again...]** 仪表板底部的链接。

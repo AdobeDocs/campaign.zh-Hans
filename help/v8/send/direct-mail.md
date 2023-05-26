@@ -1,6 +1,6 @@
 ---
-title: 使用Adobe Campaign傳送直接郵件
-description: 開始使用Campaign中的直接郵件
+title: 使用Adobe Campaign发送直邮
+description: Campaign中的直邮入门
 feature: Direct Mail
 role: Data Engineer
 level: Beginner
@@ -14,44 +14,44 @@ ht-degree: 12%
 
 # 创建直邮投放
 
-直接郵件傳遞可讓您產生擷取檔案，其中包含目標群體的資料。 然後，您可以與將傳送訊息給目標母體的提供者共用此檔案。
+通过直邮投放，可生成包含目标群体数据的提取文件。 然后，您可以与将消息交付给目标群体的提供商共享此文件。
 
-產生檔案的步驟如下：
+生成文件的步骤如下：
 
-1. 建立傳遞
+1. 创建投放
 
-   根據範本建立直接郵件傳遞。 您可以複製並設定 **[!UICONTROL Deliver by direct mail (paper)]** 內建範本。
+   根据模板创建直邮投放。 您可以复制并配置 **[!UICONTROL Deliver by direct mail (paper)]** 内置模板。
 
    ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/creating-a-direct-mail-delivery.html)以了解详情{target="_blank"}
 
 1. 定义受众
 
-   收件者設定檔必須至少包含其名稱和郵寄地址。
+   收件人用户档案必须至少包含其姓名和邮政地址。
 
-   郵寄地址為計算欄位。 依預設，地址最多可包含六行：第一行包含名字和姓氏，下一行包含郵遞區號（道路等），最後一行包含郵遞區號和城鎮或城市。
+   邮政地址是计算字段。 默认情况下，地址最多可包含六行：第一行包含名字和姓氏，下一行包含邮政地址（门牌号码等），最后一行包含邮政编码和城镇或城市。
 
-   如果名稱、郵遞區號欄位和城鎮/城市欄位並非空白，則會視為完整的地址。
+   如果名称、邮政编码字段和城镇/城市字段不为空，则认为地址完整。
 
    ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html)以了解详情{target="_blank"}
 
-1. 定義檔案內容
+1. 定义文件的内容
 
-   使用擷取精靈來定義要匯出至輸出檔案的資訊（欄）。
+   使用提取向导定义要导出到输出文件中的信息（列）。
 
    ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/defining-the-direct-mail-content.html)以了解详情{target="_blank"}
 
 1. 验证投放
 
-   檢查分析結果和輸出檔案的內容。
+   检查分析结果和输出文件的内容。
 
    ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/validating.html)以了解详情{target="_blank"}
 
-   在行銷活動的內容中，在解壓縮日期，會建立解壓縮檔案。 您可以檢視解壓縮檔案的內容、核准解壓縮檔案，或變更格式，然後視需要重新啟動解壓縮。 一旦檔案獲得核准，您就可以將通知電子郵件傳送給路由器。 请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html)以了解详情
+   在营销活动上下文中，在提取日期创建提取文件。 您可以查看提取文件的内容、批准它或更改格式并根据需要重新启动提取。 文件获得批准后，即可向路由器发送通知电子邮件。 请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html)以了解详情
 
-1. 開始傳遞
+1. 开始投放
 
-   驗證解壓縮檔案後，請按一下 **確認傳遞** 確認訊息可讓您啟動傳送。
+   验证提取文件后，单击 **确认投放** 确认消息可让您启动投放。
 
-   確認作業會開始擷取指定檔案中的資料。
+   确认操作将开始提取指定文件中的数据。
 
-   在行銷活動的內容中，當所有核准皆已授與後，擷取檔案會透過特殊工作流程建立，在預設設定中，當直接郵件傳送擱置擷取時，會自動啟動。 進一步瞭解 [本節](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=zh-Hans)
+   在营销活动上下文中，当所有批准都获得授权后，将通过特殊工作流创建提取文件，在默认配置中，当直邮投放挂起提取时，将自动启动该工作流。 了解详情，请参阅 [本节](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=zh-Hans)

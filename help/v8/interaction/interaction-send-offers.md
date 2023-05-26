@@ -1,6 +1,6 @@
 ---
-title: 透過Campaign互動傳送優惠方案
-description: 瞭解如何傳送優惠方案
+title: 通过Campaign交互发送优惠
+description: 了解如何发送优惠
 feature: Interaction, Offers
 role: Data Engineer
 level: Beginner
@@ -14,61 +14,61 @@ ht-degree: 3%
 
 # 发送优惠{#send}
 
-為了讓優惠方案引擎選取優惠方案，此優惠方案已獲得核准，並可在 **即時** 環境。 [了解详情](interaction-offer.md#approve-offers)
+为了让优惠引擎选择优惠，该优惠已获得批准，并且可在 **实时** 环境。 [了解详情](interaction-offer.md#approve-offers)
 
-透過對外通訊通道的優惠方案簡報，會透過直接郵件、電子郵件或行動傳送來執行。 您也可以對「異動訊息」（訊息中心）使用單一模式。
+通过出站通信渠道进行优惠呈现是通过直邮、电子邮件或移动投放执行的。 您还可以对事务性消息传递（消息中心）使用统一模式。
 
-## 在傳遞中插入優惠方案 {#offer-into-a-delivery}
+## 在投放中插入优惠 {#offer-into-a-delivery}
 
-若要將優惠方案主張插入傳送中，請遵循下列步驟：
+要在投放中插入优惠建议，请执行以下步骤：
 
-1. 在傳遞視窗中，按一下 **選件** 圖示。
+1. 在投放窗口中，单击 **选件** 图标。
 
    ![](assets/offer_delivery_001.png)
 
-1. 選取符合優惠方案環境的空間。
+1. 选择与优惠环境匹配的空间。
 
    ![](assets/offer_delivery_002.png)
 
-1. 若要調整引擎對優惠方案的選擇，請選取要呈現的優惠方案所屬類別，或選取一/數個主題。 我們建議一次只使用其中一個欄位，以避免多載限制。
+1. 要优化引擎的选件选择，请选择要显示的选件所属类别或一个/多个主题。 我们建议一次只使用这些字段之一，以避免超出限制。
 
    ![](assets/offer_delivery_003.png)
 
    ![](assets/offer_delivery_004.png)
 
-1. 指定您要插入傳遞內文的選件數目。
+1. 指定要插入到投放正文中的优惠数量。
 
    ![](assets/offer_delivery_005.png)
 
-1. 選取 **[!UICONTROL Exclude non-eligible recipients]** 選項（如有需要）。 [了解详情](#parameters-for-calling-offer-engine)
+1. 选择 **[!UICONTROL Exclude non-eligible recipients]** 选项（如有必要）。 [了解详情](#parameters-for-calling-offer-engine)
 
    ![](assets/offer_delivery_006.png)
 
-1. 如有需要，請選取 **[!UICONTROL Do not display anything if no offers are selected]** 選項。 [了解详情](#parameters-for-calling-offer-engine)
+1. 如果需要，请选择 **[!UICONTROL Do not display anything if no offers are selected]** 选项。 [了解详情](#parameters-for-calling-offer-engine)
 
    ![](assets/offer_delivery_007.png)
 
-1. 使用合併欄位將屬性插入傳遞內容。 可用主張的數量取決於引擎呼叫的設定方式，而其順序則取決於優惠方案的優先順序。
+1. 使用合并字段将属性插入到投放内容中。 可用建议的数目取决于引擎调用的配置方式，其顺序取决于优惠的优先级。
 
    ![](assets/offer_delivery_008.png)
 
-1. 完成內容、測試並傳送您的傳遞。
+1. 完成内容、测试并发送投放。
 
    ![](assets/offer_delivery_010.png)
 
 
-### 優惠方案引擎的引數 {#parameters-for-calling-offer-engine}
+### 优惠引擎的参数 {#parameters-for-calling-offer-engine}
 
-* **[!UICONTROL Space]** ：必須選取優惠方案環境的空間，才能啟用優惠方案引擎。
-* **[!UICONTROL Category]** ：優惠排序所在的特定資料夾。 如果未指定類別，則優惠方案引擎將會考慮環境中包含的所有優惠方案，除非選取了主題。
-* **[!UICONTROL Themes]** ：類別中上游定義的關鍵字。 這些可作為篩選條件，讓您藉由在一組類別中選取優惠方案，調整要呈現的優惠方案數量。
-* **[!UICONTROL Number of propositions]** ：引擎傳回的可插入傳遞內文的優惠方案數。 如果未插入訊息中，仍會產生優惠，但不會顯示。
-* **[!UICONTROL Exclude non-eligible recipients]** ：此選項可讓您針對沒有足夠的合格優惠方案來啟用或停用收件者排除功能。 合格主張的數量可能低於要求的主張數量。 如果核取此方塊，則沒有足夠主張的收件者將會從傳遞中排除。 如果您未選取此選項，這些收件者將不會被排除，但他們不會有要求的建議數量。
-* **[!UICONTROL Do not display anything if no offer is selected]** ：此選項可讓您選擇當其中一個主張不存在時，如何處理訊息。 核取此方塊時，不會顯示缺少主張的表現，且此主張的訊息中不會出現任何內容。 如果未核取此方塊，訊息本身會在傳送期間取消，收件者將不再接收任何訊息。
+* **[!UICONTROL Space]** ：必须选择优惠环境的空间才能激活优惠引擎。
+* **[!UICONTROL Category]** ：用于对选件进行排序的特定文件夹。 如果未指定类别，则选件引擎将会考虑环境中包含的所有选件，除非选择了主题。
+* **[!UICONTROL Themes]** ：在类别中上游定义的关键字。 这些类别可充当过滤器，让您通过在一组类别中选择选件来优化要显示的选件数量。
+* **[!UICONTROL Number of propositions]** ：引擎返回的可插入到投放主体中的选件数。 如果未将选件插入到消息中，则仍会生成选件，但不会显示选件。
+* **[!UICONTROL Exclude non-eligible recipients]** ：利用此选项，可激活或取消激活对没有足够的合格优惠的收件人的排除。 合格建议的数目可能低于请求的建议数目。 如果选中此框，则将从投放中排除没有足够建议的收件人。 如果不选择此选项，这些收件人将不会被排除，但他们将不会具有所请求数量的建议。
+* **[!UICONTROL Do not display anything if no offer is selected]** ：利用此选项可选择在某个建议不存在时如何处理消息。 选中此框后，将不显示缺少的建议的表示形式，并且此建议的消息中不会显示任何内容。 如果未选中该框，则消息本身将在发送期间被取消，收件人将不再收到任何消息。
 
-## 在工作流程中傳送優惠方案{#offer-via-wf}
+## 在工作流中发送优惠{#offer-via-wf}
 
-數個工作流程活動可讓您定義優惠方案的顯示方式：
+您可以通过多个工作流活动定义优惠的显示方式：
 
 * 扩充
 * 优惠引擎
@@ -76,130 +76,130 @@ ht-degree: 3%
 
 ### 扩充 {#enrichment}
 
-此 **擴充** 活動可讓您將優惠或連結新增至傳送收件者的優惠方案。[了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html)
+此 **扩充** 通过活动，您可以将选件或链接添加到投放收件人的选件。[了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html)
 
-例如，您可以在傳遞前擴充收件者查詢的資料。
+例如，您可以在投放之前扩充收件人查询的数据。
 
 ![](assets/int_enrichment_offer1.png)
 
-指定優惠方案主張有兩個方法。
+指定优惠建议的方法有两种。
 
-* 指定優惠方案或優惠方案引擎呼叫。
-* 引用優惠方案的連結。
+* 指定优惠或优惠引擎调用。
+* 引用优惠的链接。
 
-#### 指定優惠方案或呼叫優惠方案引擎 {#specifying-an-offer-or-a-call-to-the-offer-engine}
+#### 指定优惠或调用优惠引擎 {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-設定您的 **查詢** 活動：
+配置之后 **查询** 活动：
 
-1. 新增並開啟 **擴充** 活動。
+1. 添加并打开 **扩充** 活动。
 1. 在 **[!UICONTROL Enrichment]** 选项卡中，选择 **[!UICONTROL Add data]**。
-1. 選取 **[!UICONTROL An offer proposition]** 在要新增的資料型別中。
+1. 选择 **[!UICONTROL An offer proposition]** 在要添加的数据类型中。
 
    ![](assets/int_enrichment_offer2.png)
 
-1. 指定要新增之主張的識別碼和標籤。
-1. 指定優惠方案選取範圍。 對此有兩種可能的選項：
+1. 指定要添加的建议的标识符和标签。
+1. 指定选件选择。 对此有两种可能的选项：
 
-   * **[!UICONTROL Search for the best offer in a category]** ：核取此選項並指定優惠方案引擎呼叫引數（優惠方案空間、類別或主題、聯絡日期、要保留的優惠方案數量）。 引擎會自動根據這些引數計算要新增的選件。 建議您完成 **[!UICONTROL Category]** 或 **[!UICONTROL Theme]** 欄位，而非同時使用兩者。
+   * **[!UICONTROL Search for the best offer in a category]** ：选中此选项并指定选件引擎调用参数（选件空间、类别或主题、联系日期、要保留的选件数）。 引擎将根据这些参数自动计算要添加的选件。 我们建议您完成 **[!UICONTROL Category]** 或 **[!UICONTROL Theme]** 字段，而不是同时使用两者。
 
       ![](assets/int_enrichment_offer3.png)
 
-   * **[!UICONTROL A pre-defined offer]** ：核取此選項，並指定優惠方案空間、特定優惠方案和聯絡日期，以直接設定您要新增的優惠方案，而不呼叫優惠方案引擎。
+   * **[!UICONTROL A pre-defined offer]** ：选中此选项并指定优惠空间、特定优惠和联系日期，以直接配置要添加的优惠，而无需调用优惠引擎。
 
       ![](assets/int_enrichment_offer4.png)
 
-1. 然後設定與您所選管道對應的傳送活動。 [了解详情](#offer-into-a-delivery)
+1. 然后，配置与您选择的渠道对应的投放活动。 [了解详情](#offer-into-a-delivery)
 
    >[!NOTE]
    >
-   >可供預覽的建議數量取決於擴充活動中執行的設定，而不是直接在傳送中執行的任何可能設定。
+   >可用于预览的建议数量取决于扩充活动中执行的配置，而不是直接在投放中执行的任何可能配置。
 
-#### 參考優惠方案的連結 {#referencing-a-link-to-an-offer}
+#### 引用指向优惠的链接 {#referencing-a-link-to-an-offer}
 
-您也可以參照中選件的連結 **擴充** 活動。
+您还可以引用中选件的链接 **扩充** 活动。
 
 为此请执行以下操作步骤：
 
-1. 選取 **[!UICONTROL Add data]** 在活動的 **[!UICONTROL Enrichment]** 標籤。
-1. 在您選擇要新增的資料型別視窗中，選取 **[!UICONTROL A link]**.
-1. 選取您要建立的連結型別及其目標。 在此情況下，目標是優惠方案結構。
+1. 选择 **[!UICONTROL Add data]** 在活动的 **[!UICONTROL Enrichment]** 选项卡。
+1. 在选择要添加的数据类型的窗口中，选择 **[!UICONTROL A link]**.
+1. 选择要建立的链接类型及其目标。 在本例中，目标是选件架构。
 
    ![](assets/int_enrichment_link1.png)
 
-1. 指定擴充活動（此處為收件者表格）中傳入表格資料與優惠方案表格之間的聯結。 例如，您可以將優惠代碼連結至收件者。
+1. 指定扩充活动（此处为收件人表）中的集客表数据与优惠表之间的联接。 例如，您可以将优惠代码链接到收件人。
 
    ![](assets/int_enrichment_link2.png)
 
-1. 然後設定與您所選管道對應的傳送活動。 [了解详情](#offer-into-a-delivery)
+1. 然后，配置与您选择的渠道对应的投放活动。 [了解详情](#offer-into-a-delivery)
 
    >[!NOTE]
    >
-   >可供預覽的建議數量取決於傳送中執行的設定。
+   >可用于预览的建议数量取决于投放中执行的配置。
 
-#### 商店優惠排名和權重 {#storing-offer-rankings-and-weights}
+#### 商店优惠排名和权重 {#storing-offer-rankings-and-weights}
 
-根據預設，當 **擴充** 活動用於傳遞優惠方案，其排名和權重不會儲存在主張表格中。
+默认情况下，当 **扩充** 活动用于提供优惠，其排名和权重不会存储在建议表中。
 
 >[!NOTE]
 >
->此 **[!UICONTROL Offer engine]** 活動預設會儲存此資訊。
+>此 **[!UICONTROL Offer engine]** 默认情况下，活动会存储此信息。
 
-不過，您可以依照以下方式儲存此資訊：
+但是，您可以按如下方式存储此信息：
 
-1. 在查詢之後和傳遞活動之前的擴充活動中，建立對優惠方案引擎的呼叫。 [了解详情](#specifying-an-offer-or-a-call-to-the-offer-engine)
-1. 在活動的主視窗中，選取 **[!UICONTROL Edit additional data...]**.
+1. 在查询之后和投放活动之前的扩充活动中创建对优惠引擎的调用。 [了解详情](#specifying-an-offer-or-a-call-to-the-offer-engine)
+1. 在活动的主窗口中，选择 **[!UICONTROL Edit additional data...]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)
 
-1. 新增 **[!UICONTROL @rank]** 排名和欄位 **[!UICONTROL @weight]** 優惠權重。
+1. 添加 **[!UICONTROL @rank]** 排名和的列 **[!UICONTROL @weight]** 选件权重。
 
    ![](assets/ita_enrichment_rankweight_2.png)
 
-1. 確認新增並儲存工作流程。
+1. 确认添加并保存工作流。
 
-傳遞會自動儲存優惠方案的排名和權重。 此資訊會顯示在傳送的 **[!UICONTROL Offers]** 標籤。
+投放会自动存储优惠的排名和权重。 此信息在投放的 **[!UICONTROL Offers]** 选项卡。
 
 ### 优惠引擎 {#offer-engine}
 
-此 **[!UICONTROL Offer engine]** 活動也可讓您指定在傳送前對優惠方案引擎的呼叫。
+此 **[!UICONTROL Offer engine]** 利用活动，您还可在投放之前指定对优惠引擎的调用。
 
-如需詳細資訊，請參閱 **優惠方案引擎** 活動，請參閱 [此頁面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html)
+欲知详情，请参阅 **优惠引擎** 活动，请参阅 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html)
 
-此活動的運作原理與以下相同： **擴充** 具有引擎呼叫的活動，方法是在傳送前，使用引擎計算的優惠方案擴充入站母體資料。
+这项活动的原理与 **扩充** 在投放之前，使用引擎调用通过引擎计算的选件扩充集客群体数据，从而执行活动。
 
 ![](assets/int_offerengine_activity2.png)
 
-設定您的 **查詢** 活動：
+配置之后 **查询** 活动：
 
-1. 新增並開啟 **[!UICONTROL Offer engine]** 活動。
-1. 完成各種可用欄位，以指定對優惠方案引擎引數的呼叫（優惠方案空間、類別或主題、聯絡日期、要保留的優惠方案數量）。 引擎會自動根據這些引數計算要新增的選件。
+1. 添加并打开 **[!UICONTROL Offer engine]** 活动。
+1. 填写各种可用字段以指定对优惠引擎参数的调用（优惠空间、类别或主题、联系日期、要保留的优惠数量）。 引擎将根据这些参数自动计算要添加的选件。
 
    >[!CAUTION]
    >
-   >如果您使用此活動，則只會儲存傳送中使用的優惠方案主張。
+   >如果您使用此活动，则只会存储投放中使用的优惠建议。
 
    ![](assets/int_offerengine_activity1.png)
 
-1. 然後設定與您所選管道對應的傳送活動。 [了解详情](#inserting-an-offer-proposition-into-a-delivery)
+1. 然后，配置与您选择的渠道对应的投放活动。 [了解详情](#inserting-an-offer-proposition-into-a-delivery)
 
 ### 单元格优惠 {#offers-by-cell}
 
-此 **[!UICONTROL Offers by cell]** 活動可讓您將入站母體（例如從查詢）分配至數個區段，並指定要針對每個區段呈現的選件。
+此 **[!UICONTROL Offers by cell]** 利用活动，可将集客群体（例如从查询）分配到多个区段，并指定要为每个区段呈现的选件。
 
-如需詳細資訊，請參閱 **依儲存格列出的優惠** 活動，請參閱 [此頁面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html)
+欲知详情，请参阅 **按单元格优惠** 活动，请参阅 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html)
 
-要執行此操作，請使用下列程式：
+为此，请使用以下流程：
 
-1. 新增 **[!UICONTROL Offers by cell]** 活動指定目標母體後，請開啟它。
-1. 在 **[!UICONTROL General]** 索引標籤中，選取您要顯示優惠方案的優惠方案空間。
-1. 在 **[!UICONTROL Cells]** 標籤中，使用指定不同的子集 **[!UICONTROL Add]** 按鈕：
+1. 添加 **[!UICONTROL Offers by cell]** 指定目标群体后打开该群体。
+1. 在 **[!UICONTROL General]** 选项卡中，选择要显示优惠的优惠空间。
+1. 在 **[!UICONTROL Cells]** 选项卡中，使用 **[!UICONTROL Add]** 按钮：
 
-   * 使用可用的篩選和限制規則指定子集母體。
-   * 然後選取您要呈現給子集的優惠方案。 可用的優惠方案是符合在上一步所選優惠方案環境上的優惠方案。
+   * 使用可用的筛选和限制规则指定子集群体。
+   * 然后，选择要提供给子集的选件。 可用的优惠是在上一步中选择的优惠环境中符合条件的优惠。
 
       ![](assets/int_offer_per_cell1.png)
 
-1. 然後設定與您所選管道對應的傳送活動。
+1. 然后，配置与您选择的渠道对应的投放活动。
 
 <!--
 

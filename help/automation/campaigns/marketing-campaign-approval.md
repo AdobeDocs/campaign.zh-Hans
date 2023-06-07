@@ -4,10 +4,10 @@ title: 建立和管理审批流程
 description: 了解如何管理营销活动的批准
 feature: Approvals, Campaigns
 exl-id: 03be5058-436e-4de9-99a7-91d799aa17f6
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 382f0b1c4ee014f6ae5d62eaf93f5ae8c72c06b1
 workflow-type: tm+mt
-source-wordcount: '2272'
-ht-degree: 2%
+source-wordcount: '2280'
+ht-degree: 1%
 
 ---
 
@@ -89,7 +89,7 @@ ht-degree: 2%
 
 ## 审阅和批准投放 {#review-and-approve-deliveries}
 
-对于每个活动，您可以批准投放目标， [投放内容](#approving-content) 和成本。 负责审批工作的 Adobe Campaign 操作员收到电子邮件通知后，可通过控制台或 Web 连接批准或拒绝批准相关请求。[了解详情](#approving-processes)。
+对于每个活动，您可以批准投放目标， [投放内容](#approving-content) 和成本。 负责批准工作的Adobe Campaign操作员收到电子邮件通知后，可通过客户端控制台或Web连接批准或拒绝批准相关请求。 [了解详情](#approving-processes)。
 
 对于直邮投放，Adobe Campaign操作员可以在提取文件发送到路由器之前查看该文件，如有必要，他们可以更改格式并重新提取该文件。 [了解详情](#approve-an-extraction-file)。
 
@@ -101,7 +101,7 @@ ht-degree: 2%
 
 ### 批准投放的步骤 {#approving-processes}
 
-需要批准的阶段会显示在活动仪表板上（通过控制台或Web界面）。 它们还会显示在投放跟踪表和投放仪表板中。
+需要批准的阶段将显示在Campaign功能板上（通过客户端控制台或Web界面）。 它们还会显示在投放跟踪表和投放仪表板中。
 
 ![](assets/delivery-approval-actions.png)
 
@@ -163,7 +163,7 @@ ht-degree: 2%
 
    * 通过通知电子邮件：通知电子邮件包含指向已发送校样的链接，并且如果 **可投放性** 已为此实例启用加载项。
 
-   * 通过控制台或Web界面、投放跟踪、投放仪表板或营销活动仪表板。 利用此营销活动信息板，您可以通过单击 **[!UICONTROL Inbox rendering...]** 链接。 要查看其内容，请单击 **[!UICONTROL Detail]** 图标。
+   * 通过客户端控制台或Web界面、投放跟踪、投放仪表板或营销活动仪表板。 利用此营销活动信息板，您可以通过单击 **[!UICONTROL Inbox rendering...]** 链接。 要查看其内容，请单击 **[!UICONTROL Detail]** 图标。
 
 1. 将向营销策划负责人发送通知电子邮件，通知他们内容是否已被批准。 营销活动的负责人可以随时重新开始内容审批周期。 要执行此操作，请单击 **[!UICONTROL Content status]** 营销活动仪表板的行（在投放级别），然后单击 **[!UICONTROL Reset content approval to submit it again]**.
 
@@ -175,7 +175,7 @@ ht-degree: 2%
 
 1. 负责内容编辑的人员将收到一封电子邮件，告诉他们内容可用。
 
-1. 然后，他们可以登录到控制台，打开投放并使用简化的向导进行编辑，以更改主题、HTML和文本内容，并发送校样。
+1. 然后，他们可以登录到Client Console，打开投放并使用简化的向导进行编辑，以更改主题、HTML和文本内容，并发送校样。
 
    >[!NOTE]
    >
@@ -185,7 +185,7 @@ ht-degree: 2%
 
    为此，他们可以使用：
 
-   * 此 **[!UICONTROL Available content]** Adobe Campaign控制台中的链接。
+   * 此 **[!UICONTROL Available content]** Adobe Campaign客户端控制台中的链接。
    * 通知消息中的链接。
 操作员可在将内容提交到营销策划负责人之前添加评论。
 通知消息允许审阅人批准或拒绝内容。
@@ -197,7 +197,7 @@ ht-degree: 2%
 1. 外部内容经理会收到通知电子邮件，告知他们内容已获批准并请求外部批准。
 1. 通知电子邮件包含指向已发送校样的链接（用于查看投放渲染），以及一个用于批准或拒绝投放内容的按钮。
 
-这些链接仅在发送了一个或多个验证后才可用。 否则，只能通过控制台或Web界面进行投放渲染。
+这些链接仅在发送了一个或多个验证后才可用。 否则，只能通过客户端控制台或Web界面进行投放渲染。
 
 ### 批准提取文件 {#approve-an-extraction-file}
 
@@ -217,7 +217,7 @@ ht-degree: 2%
 
 ### 在仪表板中批准 {#approval-via-the-dashboard}
 
-要通过控制台或Web界面批准作业，请单击营销活动仪表板上的相应链接。
+要通过客户端控制台或Web界面批准作业，请单击营销活动仪表板上的相应链接。
 
 例如，执行投放分析后：
 
@@ -305,7 +305,7 @@ ht-degree: 2%
 
 ### 启用/禁用通知 {#enabling-disabling-notification}
 
-默认情况下，如果在活动模板、活动或投放中启用了相关作业的审批，则会发送通知消息。 但是，可以禁用通知，以便仅从控制台中授权审批。
+默认情况下，如果在活动模板、活动或投放中启用了相关作业的审批，则会发送通知消息。 但是，可以禁用通知，以便仅从客户端控制台中授权审批。
 
 要执行此操作，请编辑活动或活动模板的批准窗口( **[!UICONTROL Edit > Properties]** > **[!UICONTROL Advanced campaign parameters...]** > **[!UICONTROL Approvals]** 选项卡)并选择 **[!UICONTROL Do not enable notification sending]**.
 

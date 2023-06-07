@@ -3,9 +3,9 @@ title: 在开发人员控制台上将技术用户迁移到技术帐户
 description: 在开发人员控制台上将技术用户迁移到技术帐户
 hide: true
 hidefromtoc: true
-source-git-commit: 8842404511bd6166d920ebdeee942007b33a1bab
+source-git-commit: 1f9efc0744792c1173e77965ff81eaee0ed2c618
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Campaign常规用户已通过AdobeIdentity Management System (IMS)，使用他们的Adobe ID连接到Adobe Campaign控制台。 作为加强安全和身份验证流程工作的一部分，Adobe Campaign客户端应用程序现在使用IMS技术帐户令牌直接调用Campaign API。
 
-了解有关新服务器到服务器身份验证过程的更多信息 [在Adobe Developer Console文档中](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
+了解中关于新服务器到服务器身份验证过程的更多信息 [Adobe Developer控制台文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
 此更改适用于Campaign v8.5，并且将 **必需** 从Campaign v8.6开始。
 
@@ -46,7 +46,7 @@ Campaign常规用户已通过AdobeIdentity Management System (IMS)，使用他�
 
 ### 步骤2 — 使用服务器到服务器身份验证将API添加到您的项目中{#ims-migration-step-2}
 
-在Adobe Developer控制台中创建项目后，添加一个使用服务器到服务器身份验证的API。 了解如何在中设置OAuth服务器到服务器凭据 [在Adobe Developer Console文档中](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/){target="_blank"}.
+在Adobe Developer控制台中创建项目后，添加一个使用服务器到服务器身份验证的API。 了解如何在中设置OAuth服务器到服务器凭据 [Adobe Developer控制台文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/){target="_blank"}.
 
 成功连接API后，您可以访问新生成的凭据（包括客户端ID和客户端密钥），并生成访问令牌。
 

@@ -3,7 +3,7 @@ title: 在开发人员控制台上将技术用户迁移到技术帐户
 description: 在开发人员控制台上将技术用户迁移到技术帐户
 hide: true
 hidefromtoc: true
-source-git-commit: a598c37dac999c93fa50c9a243e7b9cbfbed3cda
+source-git-commit: 8842404511bd6166d920ebdeee942007b33a1bab
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 0%
@@ -175,7 +175,7 @@ Campaign常规用户已通过AdobeIdentity Management System (IMS)，使用他�
            <urn:sessiontoken>SESSION_TOKEN</urn:sessiontoken>
            <urn:domEvent>
                <!--You may enter ANY elements at this point-->
-               <rtEvent type="melon" email="dchavan@adobe.com"/>
+               <rtEvent type="type" email="name@domain.com"/>
            </urn:domEvent>
        </urn:PushEvent>
    </soapenv:Body>
@@ -184,7 +184,7 @@ Campaign常规用户已通过AdobeIdentity Management System (IMS)，使用他�
 
 * 迁移后
 
-   ```
+   ```sql
    POST /nl/jsp/soaprouter.jsp HTTP/1.1
    Host: localhost:8080
    Content-Type: application/soap+xml;
@@ -199,7 +199,7 @@ Campaign常规用户已通过AdobeIdentity Management System (IMS)，使用他�
            <urn:sessiontoken></urn:sessiontoken>
            <urn:domEvent>
                <!--You may enter ANY elements at this point-->
-               <rtEvent type="melon" email="dchavan@adobe.com"/>
+               <rtEvent type="type" email="name@domain.com"/>
            </urn:domEvent>
        </urn:PushEvent>
    </soapenv:Body>

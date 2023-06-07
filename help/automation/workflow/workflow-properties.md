@@ -4,9 +4,9 @@ title: 工作流属性
 description: 了解有关Campaign工作流属性的更多信息
 feature: Workflows
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '544'
 ht-degree: 39%
 
 ---
@@ -76,6 +76,6 @@ ht-degree: 39%
 
    ![](assets/wf-properties_select-supervisors.png)
 
-   此 **[!UICONTROL Notification to a workflow supervisor]** 默认模板包括用于通过Web访问Adobe Campaign控制台的链接，以便收件人可以在登录后处理问题。
+   此 **[!UICONTROL Notification to a workflow supervisor]** 默认模板包含一个链接，用于通过Web访问Adobe Campaign客户端控制台，以便收件人可以在登录后处理问题。
 
    要创建个性化模板，请转到 **[!UICONTROL Administration>Campaign management>Technical deliveries and templates]**.

@@ -3,7 +3,7 @@ title: 在开发人员控制台上将技术用户迁移到技术帐户
 description: 在开发人员控制台上将技术用户迁移到技术帐户
 hide: true
 hidefromtoc: true
-source-git-commit: 1f9efc0744792c1173e77965ff81eaee0ed2c618
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '807'
 ht-degree: 0%
@@ -72,7 +72,7 @@ Campaign常规用户已通过AdobeIdentity Management System (IMS)，使用他�
 
 要将技术操作员身份验证模式更新为IMS，请执行以下步骤：
 
-1. 在Campaign客户端控制台资源管理器中，浏览到 **管理>访问管理>运算符**.
+1. 在Campaign Client Console资源管理器中，浏览到 **管理>访问管理>运算符**.
 1. 编辑用于API的现有技术操作员。
 1. 更换 **名称（登录）** 之前检索到的技术帐户电子邮件发送给该技术操作员的电子邮件。
 1. 浏览至 **编辑** 按钮位于旁边的左上方 **文件**，并选择 **编辑XML源**.

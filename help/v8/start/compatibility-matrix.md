@@ -4,11 +4,11 @@ description: 了解与 Campaign v8 兼容的系统和版本
 feature: Overview
 role: Admin
 level: Beginner, Intermediate, Experienced
-exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9,870a336f-94ac-4171-891b-67614feef6ef,bebdd930-c7f6-4629-a489-3c704b33f058,d493e613-eb61-43b1-9c6d-1bd881af0734
-source-git-commit: 61222c2b05f1346bd2560ff17b225153edf9e91e
+exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 100%
 
 您可以访问以下信息：
 
-* Campaign 客户端控制台和应用程序服务器的&#x200B;**版本**&#x200B;编号。在上面的示例中，客户端控制台和应用程序服务器的版本均为 8.1.5。
+* 此 **version** 客户端控制台和应用程序服务器的编号。 在上面的示例中，客户端控制台和应用程序服务器的版本均为8.1.5。
 * 用圆括号括起的 SHA 编号。
 * 用于联系 Adobe 客户关怀团队的链接。
 * 指向 Adobe 隐私政策、使用条款和 Cookie 政策的链接。

@@ -4,11 +4,11 @@ description: 获取 Adobe Campaign 常见问题的答案。
 feature: Overview
 role: Admin, Developer, User
 level: Beginner
-exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d,f5688357-db90-4f88-9596-91e9d0a20d75
-source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
+exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '643'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 96%
 
 1. **如何下载 Campaign？**
 
-   可以从 Adobe 下载中心获取安装程序和客户端控制台。
+   您可以从Adobe下载中心获取安装程序和客户端控制台。
 
    作为管理员用户，访问Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) {target="_blank"} 下载Adobe Campaign。
 

@@ -4,9 +4,9 @@ title: 创建营销活动
 description: 了解如何创建和执行营销活动
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: ad286059a9f4b63d7de4fa5130760f36d0976431
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1298'
 ht-degree: 4%
 
 ---
@@ -159,7 +159,7 @@ Campaign编排组件位于 **[!UICONTROL Campaigns]** 选项卡：您可以在�
 
 ## 使用Web界面 {#use-the-web-interface-}
 
-您可以通过Internet浏览器访问Adobe Campaign控制台屏幕，以查看所有营销活动和投放以及数据库中用户档案的报告和信息。 此访问不会启用记录创建。 根据操作员的权限，您可以查看和/或处理数据库中的数据。 例如，您可以批准活动内容和定位、重新启动或停止投放等。
+您可以通过Internet浏览器访问Adobe Campaign客户端控制台屏幕，以查看所有营销活动和投放以及数据库中用户档案的报告和信息。 此访问不会启用记录创建。 根据操作员的权限，您可以查看和/或处理数据库中的数据。 例如，您可以批准活动内容和定位、重新启动或停止投放等。
 
 1. 照常通过https://登录`<your instance>:<port>/view/home`.
 1. 使用菜单访问概述。

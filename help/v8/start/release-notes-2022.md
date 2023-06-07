@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '1839'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -84,7 +84,7 @@ _2022 年 9 月 30 日_
 
 **改进**
 
-* 在 Microsoft Internet Explorer 11 的生命周期终止后，控制台中的 HTML 渲染引擎现在使用的是 **Microsoft Edge Chromium**。此外，任何客户端控制台现在均需安装 **Microsoft Edge WebView 2** 运行时。
+* 在 Microsoft Internet Explorer 11 的生命周期终止后，控制台中的 HTML 渲染引擎现在使用的是 **Microsoft Edge Chromium**。此外，安装 **Microsoft Edge WebView 2** 现在，任何客户端控制台安装都需要运行时。
 * 工作流的高可用性使工作流的执行得到改善，此提升可使您同时跨不同容器运行工作流，以防止工作流服务丢失，并避免发生与之相关的执行错误。**注意**：此新功能仅以“有限可用”的状态向特定客户群体发布。
 * 现在可针对给定的隐私命名空间批量执行隐私请求。这项改进使 GDPR/隐私删除请求的执行时间有所增加。
 

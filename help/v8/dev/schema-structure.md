@@ -5,7 +5,7 @@ feature: Schema Extension
 role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 1%
@@ -213,7 +213,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >在Adobe Campaign客户端控制台中， **[!UICONTROL Administration>Counters]** 节点用于管理计数器。
+   >在Adobe Campaign Client Console中， **[!UICONTROL Administration>Counters]** 节点用于管理计数器。
 
 要将默认值链接到字段，您可以使用 `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
@@ -237,7 +237,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->在Adobe Campaign客户端控制台中， **[!UICONTROL Administration > Enumerations]** 节点用于管理枚举。
+>在Adobe Campaign Client Console中， **[!UICONTROL Administration > Enumerations]** 节点用于管理枚举。
 
 #### 设置明细列表 {#set-enumeration}
 

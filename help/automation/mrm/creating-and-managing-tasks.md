@@ -3,9 +3,9 @@ product: campaign
 title: 创建和管理任务
 description: 创建和管理任务
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
-source-git-commit: 094743fef69e137f80b670f0bf31dce56c282c34
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '3740'
+source-wordcount: '3743'
 ht-degree: 1%
 
 ---
@@ -466,7 +466,7 @@ A **[!UICONTROL Control task]** 链接到投放审批：对定位、内容、提
 1. 完成分配给他们的部分后，参与者可以通过以下任一方式批准任务：
 
    * 通过通知电子邮件。
-   * 通过控制台或Web界面，在任务仪表板中。
+   * 通过Client Console或Web界面，在任务仪表板中。
 
       ![](assets/s_ncs_user_task_start_rea.png)
 
@@ -480,7 +480,7 @@ A **[!UICONTROL Control task]** 链接到投放审批：对定位、内容、提
 
    ![](assets/s_ncs_user_task_follow_from_dashboard.png)
 
-1. 一旦负责任务的人确定任务已完成，他们可以使用任务启动时发送的通知电子邮件中的链接、控制台或界面将其关闭。
+1. 一旦负责任务的人确定任务已完成，他们可以使用任务启动时发送的通知电子邮件中的链接、客户端控制台或界面将其关闭。
 
    ![](assets/s_ncs_user_task_console_ressource_validation.png)
 
@@ -490,7 +490,7 @@ A **[!UICONTROL Control task]** 链接到投放审批：对定位、内容、提
 
 1. 任务状态更改为 **[!UICONTROL To approve]**，并向审阅人发送通知。
 
-   他们通过通知电子邮件、控制台或Web界面批准任务。
+   他们通过通知电子邮件、客户端控制台或Web界面批准任务。
 
    他们可以通过营销活动仪表板执行操作：
 

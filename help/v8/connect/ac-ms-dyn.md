@@ -5,9 +5,9 @@ feature: Microsoft CRM Integration
 role: Admin, User
 level: Beginner, Intermediate, Experienced
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1365'
 ht-degree: 3%
 
 ---
@@ -165,7 +165,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->要批准设置，请注销并重新登录到Adobe Campaign控制台。
+>要批准设置，请注销并重新登录到Adobe Campaign客户端控制台。
 
 ### 选择要同步的表{#ms-dyn-create-tables}
 

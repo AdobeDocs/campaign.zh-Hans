@@ -4,9 +4,9 @@ title: 本地审批
 description: 本地审批
 feature: Workflows
 exl-id: 172b6827-ddfc-4c6e-87c9-eb49e73ab3ab
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '645'
 ht-degree: 2%
 
 ---
@@ -81,13 +81,13 @@ ht-degree: 2%
 
 此示例说明如何为工作流投放设置批准流程。 有关创建投放工作流的更多信息，请参阅 [示例：投放工作流](delivery.md#example--delivery-workflow) 部分。
 
-操作员可通过以下两种方式之一批准投放：使用电子邮件中链接的网页，或通过控制台。
+操作员可通过以下两种方式之一批准投放：使用电子邮件中链接的网页，或通过Client Console。
 
 * Web审批
 
    发送给管理员组操作员的电子邮件允许您批准投放目标。 该消息使用定义的文本，JavaScript表达式被替换为计算值（在本例中为“574”）
 
-   要批准投放，请单击相关链接并登录到Adobe Campaign控制台。
+   要批准投放，请单击相关链接，然后登录到Adobe Campaign客户端控制台。
 
    ![](assets/new-workflow-valid-webaccess.png)
 
@@ -95,7 +95,7 @@ ht-degree: 2%
 
    ![](assets/new-workflow-valid-webaccess-confirm.png)
 
-* 通过控制台审批
+* 通过客户端控制台进行审批
 
    在树结构中， **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** 节点包含要由当前连接的操作员批准的任务的列表。 列表应显示一行。 双击此行以响应。 将显示以下窗口：
 

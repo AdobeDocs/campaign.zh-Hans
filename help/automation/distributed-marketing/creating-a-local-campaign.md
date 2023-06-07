@@ -4,9 +4,9 @@ title: 创建本地活动
 description: 创建本地活动
 feature: Distributed Marketing
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
-source-git-commit: 7e5ffbec959785971280c394c416cebe83590897
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '1554'
+source-wordcount: '1555'
 ht-degree: 2%
 
 ---
@@ -295,9 +295,9 @@ Web界面对应于在订购营销活动时要由本地实体填写的表单。
 
 ![](assets/mkg_dist_command_valid_web.png)
 
-#### 通过Adobe Campaign控制台进行审批 {#approving-via-the-adobe-campaign-console}
+#### 通过客户端控制台批准 {#approving-via-the-adobe-campaign-console}
 
-订单也可以通过控制台在促销活动订单概述中审批。 要批准订单，请选择该订单并单击 **[!UICONTROL Approve the order]**.
+也可以通过客户控制台在促销活动订单概述中批准该订单。 要批准订单，请选择该订单并单击 **[!UICONTROL Approve the order]**.
 
 ![](assets/mkg_dist_local_order_valid.png)
 
@@ -321,7 +321,7 @@ Web界面对应于在订购营销活动时要由本地实体填写的表单。
 
 如果复查人拒绝订单，则相关通知会自动发送给相关本地实体：显示拒绝审批的操作员输入的备注。
 
-信息显示在营销活动包列表页面或营销活动订单页面上。 如果他们有权访问Adobe Campaign控制台，则会将此拒绝通知本地实体。
+信息显示在营销活动包列表页面或营销活动订单页面上。 如果他们有权访问Adobe Campaign客户端控制台，则会将此拒绝通知本地实体。
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 

@@ -4,16 +4,14 @@ title: 发布活动包
 description: 发布活动包
 feature: Distributed Marketing
 exl-id: 2cd1981d-f192-41dc-b2f2-4fcd60493079
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '455'
 ht-degree: 2%
 
 ---
 
 # 发布活动包{#publishing-the-campaign-package}
-
-
 
 中央实体操作员在中发布他们希望提供给本地实体的营销活动 **[!UICONTROL list of campaign packages]**.
 
@@ -43,19 +41,19 @@ ht-degree: 2%
 
 ![](assets/s_advuser_mkg_dist_select_op_valid.png)
 
-## 审批期 {#approval-periods}
+## 审批时间线 {#approval-periods}
 
 默认情况下，审核者将在提交日期起三天后进行审批。
 
 在“编辑审阅者”窗口中，您还可以设置提醒，以便在活动包未获批准时发送一条或多条消息。 要执行此操作，请单击 **[!UICONTROL Add reminder]** 链接，然后 **[!UICONTROL Add]** 按钮。
 
-可以在给定日期发送提醒和/或 **x** 天后提交。 可以在提醒表的第一列中配置提醒类型。 在以下示例中，查看者将在2014年1月29日(即在 **[!UICONTROL Date]** 栏内提交第二次提醒，且为批准期结束前一天，即提交批准日期后两天。
+可以在给定日期发送提醒和/或 **x** 天后提交。 可以在提醒表的第一列中配置提醒类型。 在以下示例中，查看者将在2023年1月11日收到一条提醒消息，即在 **[!UICONTROL Date]** 栏内提交第二次提醒，且为批准期结束前一天，即提交批准日期后两天。
 
 ![](assets/s_advuser_mkg_dist_reminder_planning.png)
 
 定义包并提交包以供批准后，执行计划将显示在 **[!UICONTROL Audit]** 选项卡。 它显示根据以前的配置计算出的处理截止日期，以及所有已配置提醒的日期。
 
-## 通过Adobe Campaign控制台进行审批 {#approving-via-the-adobe-campaign-console}
+## 通过客户端控制台批准 {#approving-via-the-adobe-campaign-console}
 
 如果未指定审查者或通知的操作员均未批准包，则 **[!UICONTROL Approve the package]** 按钮允许您直接从营销活动包进行审批 **[!UICONTROL Dashboard]** 或包概述中的。
 

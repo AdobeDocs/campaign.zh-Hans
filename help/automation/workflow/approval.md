@@ -4,9 +4,9 @@ title: 审批
 description: 审批
 feature: Workflows, Approvals
 exl-id: 9e57d21c-ce16-448d-97f1-8c6844acb37b
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ An **批准** 任务需要操作员的参与。 操作员被分配了一项任�
 
 此活动不会阻止处理，工作流在等待回复时可以执行其他任务。
 
-操作员可以从控制台批准分配给该操作员的任务。 具有管理员权限的操作员可以查看和删除分配给任何操作员的任务，但不能回复这些任务。
+操作员可以从客户端控制台批准分配给该操作员的任务。 具有管理员权限的操作员可以查看和删除分配给任何操作员的任务，但不能回复这些任务。
 
 修改活动的标题或消息正文不会影响当前任务，但另一方面，修改可能的选项会直接影响当前任务，这会自动继承新的选项列表。
 

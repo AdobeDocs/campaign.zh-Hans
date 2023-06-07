@@ -3,9 +3,9 @@ product: campaign
 title: 管理营销资源
 description: 了解如何管理营销资源
 exl-id: 4d91fb7d-f846-4644-b83d-5a6a988ae297
-source-git-commit: 399c81276d29622a2161c8c90395df1a38954763
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1111'
 ht-degree: 1%
 
 ---
@@ -99,7 +99,7 @@ ht-degree: 1%
 
 ![](assets/mkt-resouce-approve.png)
 
-授权操作员随后可以接受或拒绝批准。 此操作是可能的：通过发送的电子邮件（单击通知消息中的链接）或通过控制台(单击 **[!UICONTROL Approve]** )按钮。
+授权操作员随后可以接受或拒绝批准。 此操作可通过以下方式执行：通过发送的电子邮件（单击通知消息中的链接），或通过客户端控制台(单击 **[!UICONTROL Approve]** )按钮。
 
 您可以在批准窗口中输入备注。
 

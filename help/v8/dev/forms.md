@@ -5,7 +5,7 @@ feature: Web Forms
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
 source-wordcount: '2552'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 创建或扩展架构时，需要创建或修改关联的输入表单，以使最终用户能够看到这些更改。
 
-输入表单允许您从Adobe Campaign客户端控制台编辑与数据架构关联的实例。 表单由其名称和命名空间进行标识。
+通过输入表单，您可以从Adobe Campaign客户端控制台编辑与数据架构关联的实例。 表单由其名称和命名空间进行标识。
 
 表单的标识键是由命名空间和用冒号分隔的名称组成的字符串，例如：“cus：contact”。
 

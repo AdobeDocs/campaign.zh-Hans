@@ -8,9 +8,9 @@ level: Intermediate, Experienced
 hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
+source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1262'
 ht-degree: 4%
 
 ---
@@ -796,7 +796,7 @@ Android SDK是使用JAVA编写的jar库。 它允许Android开发人员与Adobe 
 
 ## 变量 {#variables}
 
-通过变量，您可以在收到通知后定义移动应用程序行为。 这些变量必须在移动设备应用程序代码中定义，并且必须在Adobe Campaign控制台的 **[!UICONTROL Variables]** 选项卡。
+通过变量，您可以在收到通知后定义移动应用程序行为。 必须在移动设备应用程序代码以及Adobe Campaign客户端控制台的 **[!UICONTROL Variables]** 选项卡。
 
 
 下面是一个代码示例，该代码允许移动应用程序收集通知中添加的任何变量。 在我们的示例中，我们使用“VAR”变量。

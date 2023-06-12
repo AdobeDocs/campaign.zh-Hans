@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign 概述
-source-git-commit: eadd204088bc9ca6cf526a2ef4af3e8a61e48a25
+source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '553'
 ht-degree: 98%
 
 ---
@@ -80,6 +80,7 @@ ht-degree: 98%
       + [使用外部用户档案](audiences/external-profiles.md)
       + [在 Web 窗体中收集用户档案数据](audiences/collect-profiles.md)
       + [使用目标映射](audiences/target-mappings.md)
+      + [创建测试配置文件](audiences/test-profiles.md)
    + 创建受众 {#create-audiences}
       + [创建联系人列表](audiences/create-audiences.md)
       + [创建和管理过滤器](audiences/create-filters.md)

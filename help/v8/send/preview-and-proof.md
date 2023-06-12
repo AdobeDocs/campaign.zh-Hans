@@ -5,9 +5,9 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '703'
 ht-degree: 7%
 
 ---
@@ -51,20 +51,20 @@ ht-degree: 7%
 * 使用 **[!UICONTROL Substitution of the address]** 选项，用于输入电子邮件地址并使用目标收件人数据验证内容。 可以手动输入替代地址，也可以从下拉列表中选择替代地址。 关联的枚举是替代地址(rcpAddress)。
 默认情况下，替换是随机执行的，但您可以从主目标中通过  **[!UICONTROL Detail]** 图标。
 
-   ![](assets/target-of-proofs-substitution-details.png){width="800" align="left"}
+  ![](assets/target-of-proofs-substitution-details.png){width="800" align="left"}
 
-   选择 **[!UICONTROL Select a profile (must be included in the target)]** 选项并选择收件人。
+  选择 **[!UICONTROL Select a profile (must be included in the target)]** 选项并选择收件人。
 
-   ![](assets/target-of-proofs-substitution.png){width="800" align="left"}
+  ![](assets/target-of-proofs-substitution.png){width="800" align="left"}
 
 
 * 使用 **[!UICONTROL Seed addresses]**  使用种子地址作为验证目标的选项。 这些地址可以从文件导入或手动输入。
 
-   >[!NOTE]
-   >
-   >种子地址不属于默认收件人表(nms：recipient)，它们是在单独的表中创建的。 如果使用新数据扩展收件人表，则必须使用相同数据扩展种子地址表。
+  >[!NOTE]
+  >
+  >种子地址不属于默认收件人表(nms：recipient)，它们是在单独的表中创建的。 如果使用新数据扩展收件人表，则必须使用相同数据扩展种子地址表。
 
-   要了解有关种子地址的更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html){target="_blank"}.
+  要了解有关种子地址的更多信息，请参阅 [本节](../audiences/test-profiles.md).
 
 * 使用 **[!UICONTROL Specific target and Seed addresses]** 用于组合种子地址和特定电子邮件地址的选项。 随后，将在两个独立的子选项卡中定义相关配置。
 

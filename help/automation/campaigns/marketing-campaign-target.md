@@ -4,9 +4,9 @@ title: 营销活动目标受众
 description: 了解如何定义营销活动的受众
 feature: Campaigns, Audiences
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
-source-git-commit: a2518ea0c0ab23f50b3132b750a14e98b4ffad7d
+source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1464'
 ht-degree: 1%
 
 ---
@@ -17,8 +17,7 @@ ht-degree: 1%
 
 * 目标受众。 您可以将消息发送至 [收件人列表](#send-to-a-group) 或构建 [工作流中的受众](#build-the-main-target-in-a-workflow)
 * 对照组。 您可以 [添加对照组](#add-a-control-group) 监测消息投放后的收件人行为
-<!--
-* Seed addresses - Learn more in [this section](../../delivery/using/about-seed-addresses.md).-->
+* 种子地址 — 了解详情，请参阅 [本节](../../v8/audiences/test-profiles.md).—>
 
 其中一些信息可以从 [活动模板](marketing-campaign-templates.md#campaign-templates).
 
@@ -109,9 +108,9 @@ To build the delivery target, you can define filtering criteria for the recipien
 
    * 此 **[!UICONTROL Start]** 图标可让您启动定位工作流。 单击此图标时，将激活所有没有输入过渡的活动（端点跳转除外）。
 
-      ![](assets/start.png)
+     ![](assets/start.png)
 
-      服务器会将该请求考虑在内，如其状态所示： **[!UICONTROL Start as soon as possible]**.
+     服务器会将该请求考虑在内，如其状态所示： **[!UICONTROL Start as soon as possible]**.
 
    * 您可以通过相应的工具栏图标重新启动定位工作流。 在以下情况下，此命令可能很有用： **[!UICONTROL Start]** 图标不可用，例如，正在停止定位工作流时。 在这种情况下，单击 **[!UICONTROL Restart]** 图标来预期重新启动。 服务器会将请求考虑在内，其状态显示为： **[!UICONTROL Restart requested]**.
 
@@ -119,51 +118,52 @@ To build the delivery target, you can define filtering criteria for the recipien
 
    * 利用工具栏图标，可停止或暂停正在进行的定位工作流。
 
-      当您单击 **[!UICONTROL Pause]**，正在执行操作 **[!UICONTROL are not]** 已暂停，但在下次重新启动之前不会启动其他活动。
+     当您单击 **[!UICONTROL Pause]**，正在执行操作 **[!UICONTROL are not]** 已暂停，但在下次重新启动之前不会启动其他活动。
 
-      ![](assets/pause.png)
+     ![](assets/pause.png)
 
-      服务器会考虑该命令，其状态显示为： **[!UICONTROL Pause requested]**.
+     服务器会考虑该命令，其状态显示为： **[!UICONTROL Pause requested]**.
 
-      当定向工作流执行到特定活动时，您也可以自动暂停定向工作流。 要实现此目的，请右键单击要暂停定向工作流的活动，然后选择 **[!UICONTROL Enable but do not execute]**.
+     当定向工作流执行到特定活动时，您也可以自动暂停定向工作流。 要实现此目的，请右键单击要暂停定向工作流的活动，然后选择 **[!UICONTROL Enable but do not execute]**.
 
-      ![](assets/donotexecute.png)
+     ![](assets/donotexecute.png)
 
-      此配置由一个特殊图标显示。
+     此配置由一个特殊图标显示。
 
-      ![](assets/pause_activity.png)
+     ![](assets/pause_activity.png)
 
-      >[!NOTE]
-      >
-      >在高级定位营销活动设计和测试阶段，此选项非常有用。
+     >[!NOTE]
+     >
+     >在高级定位营销活动设计和测试阶段，此选项非常有用。
 
-      单击 **[!UICONTROL Start]** 以继续执行。
+     单击 **[!UICONTROL Start]** 以继续执行。
 
    * 单击 **[!UICONTROL Stop]** 图标来停止正在进行的执行。
 
-      ![](assets/stop.png)
+     ![](assets/stop.png)
 
-      服务器会考虑该命令，其状态显示为： **[!UICONTROL Stop requested]**.
-   当执行到达活动时，您还可以自动停止定位工作流。 要实现此目的，请右键单击将从中停止定位工作流的活动，然后选择 **[!UICONTROL Do not activate]**.
+     服务器会考虑该命令，其状态显示为： **[!UICONTROL Stop requested]**.
 
-   ![](assets/donotactivate.png)
+  当执行到达活动时，您还可以自动停止定位工作流。 要实现此目的，请右键单击将从中停止定位工作流的活动，然后选择 **[!UICONTROL Do not activate]**.
 
-   此配置由一个特殊图标显示。
+  ![](assets/donotactivate.png)
 
-   ![](assets/unactivation.png)
+  此配置由一个特殊图标显示。
+
+  ![](assets/unactivation.png)
 
 
-   >[!NOTE]
-   >
-   >在高级定位营销活动设计和测试阶段，此选项非常有用。
+  >[!NOTE]
+  >
+  >在高级定位营销活动设计和测试阶段，此选项非常有用。
 
 * 无条件停止
 
-   在资源管理器中，选择 **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** 访问每个活动工作流并对其执行操作。
+  在资源管理器中，选择 **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** 访问每个活动工作流并对其执行操作。
 
-   您可以通过单击 **[!UICONTROL Actions]** 图标并选择 **[!UICONTROL Unconditional]** 停下。 此操作终止您的营销活动工作流。
+  您可以通过单击 **[!UICONTROL Actions]** 图标并选择 **[!UICONTROL Unconditional]** 停下。 此操作终止您的营销活动工作流。
 
-   ![](assets/stop_unconditional.png)
+  ![](assets/stop_unconditional.png)
 
 ## 添加控制组 {#add-a-control-group}
 

@@ -5,9 +5,9 @@ feature: Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: df08cdb90271f4d18fd37b8ae528ebd872d0ea63
 workflow-type: tm+mt
-source-wordcount: '2717'
+source-wordcount: '2718'
 ht-degree: 4%
 
 ---
@@ -115,7 +115,6 @@ Adobe Campaign资源有三个标识符，可以添加额外的标识符。
 > * 此 **autouuid** 属性仅适用于 [企业(FFDA)部署](../architecture/enterprise-deployment.md).
 >
 
-
 ## 链接和基数 {#links-and-cardinality}
 
 ### 链接 {#links}
@@ -138,7 +137,7 @@ Adobe Campaign资源有三个标识符，可以添加额外的标识符。
 
 设计链接时，请确保在声明了1-1关系时目标记录是唯一的。 否则，当仅需要一条连接时，该连接可能会返回多条记录。 当“查询返回的行数超过预期值”时，这会导致在投放准备期间出现错误。 将链接名称设置为与目标架构相同的名称。
 
-在(1)侧的架构中定义具有基数(1-N)的链接。 例如，应在事务模式中定义关系Recipient (1) - (N) Transaction。
+在(N)侧的架构中定义具有基数(1-N)的链接。 例如，应在事务模式中定义关系Recipient (1) - (N) Transaction。
 
 请注意，默认情况下，链接的反向基数为(N)。 可以通过向链接定义添加属性revCardinality=&#39;single&#39;来定义链接(1-1)。
 

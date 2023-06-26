@@ -5,9 +5,9 @@ description: 弃用客户端控制台32位
 hide: true
 hidefromtoc: true
 exl-id: eaa20b88-4ba2-4146-b6bd-1eada34ecc53
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: ac356acdbbc8072ce8263b1c62804a4703781ca9
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '390'
 ht-degree: 1%
 
 ---
@@ -25,6 +25,12 @@ ht-degree: 1%
 为了利用最新的功能和改进的安全性，Adobe建议将计算机升级到64位操作系统。
 
 ## 常见问题解答
+
++++如何从Campaign v8 32位升级到Campaign v8 64位？
+
+升级过程是无缝的。 您只需通过安装来安装新版本，就像定期升级一样。
+
++++
 
 +++64位版本的Campaign v8客户端控制台是否与32位计算机兼容？
 

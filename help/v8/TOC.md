@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign 概述
-source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
+source-git-commit: d941d9a364ffb2df77ba6726e655ca2916448f89
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 98%
+source-wordcount: '560'
+ht-degree: 97%
 
 ---
 
@@ -38,14 +38,16 @@ ht-degree: 98%
    + [活动入门](start/campaigns.md)
    + [营销活动编排 >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans)
    + 发送消息 {#send}
-      + [消息入门](start/create-message.md)
+      + [开始使用消息](start/create-message.md)
       + [使用投放模板](send/create-templates.md)
       + 电子邮件 {#emails}
          + [设计和验证电子邮件](send/email.md)
          + [链接到镜像页面](send/mirror-page.md)
          + [发送和监测电子邮件](send/send.md)
       + [短信](send/sms.md)
-      + [推送通知](send/push.md)
+      + 推送通知 {#push}
+         + [创建和发送推送通知](send/push.md)
+         + [配置推送通知渠道](config/push-settings.md)
       + [LINE 消息](send/line.md)
       + [直邮](send/direct-mail.md)
       + [Twitter](send/twitter.md)
@@ -170,7 +172,6 @@ ht-degree: 98%
       + [用户界面设置](config/ui-settings.md)
       + [管理文件夹和视图](audiences/folders-and-views.md)
       + [电子邮件设置](config/email-settings.md)
-      + [推送设置](config/push-settings.md)
       + [事务性消息设置](config/transactional-msg-settings.md)
       + [将 Campaign SDK 与您的应用程序集成- 已弃用页面](config/push-config.md)
       + [外部帐户](config/external-accounts.md)

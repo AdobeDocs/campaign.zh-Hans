@@ -7,7 +7,7 @@ level: Beginner, Intermediate, Experienced
 hide: true
 hidefromtoc: true
 exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
-source-git-commit: ac356acdbbc8072ce8263b1c62804a4703781ca9
+source-git-commit: 9736ebb3d2a60bfe23b135318b899acb657a580c
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 20%
@@ -59,7 +59,7 @@ _2023年6月30日_
 **修补程序**
 
 * 修复了可能导致投放的HTML内容中的特殊字符在若干浏览器中编码不正确的问题。 (NEO-60081)
-* 修复了可能导致无法在Campaign v8企业(FFDA)部署中保存报告的问题。 (NEO-56836)
+* 修复了可能导致无法在Campaign v8企业(FFDA)部署中保存报表的问题。 (NEO-56836)
 * 修复了通过更新数据工作流活动将数据插入或更新到自定义FFDA架构中时发生的问题。 (NEO-54708)
 * 修复了阻止数据库清理工作流删除FFDA上nms：address表中的地址的问题。 (NEO-54460)
 * 修复了计费工作流可能因“编译内存耗尽”错误而失败的问题。 (NEO-51137)

@@ -4,9 +4,9 @@ title: 技术工作流
 description: 详细了解Campaign提供的技术工作流
 feature: Workflows
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1667'
 ht-degree: 3%
 
 ---
@@ -84,6 +84,7 @@ Adobe Campaign附带一组内置的技术工作流。 他们管理计划在服�
 | **报告聚合** (reportingAggregates) | 投放 | 此工作流可更新报告中使用的聚合。 默认情况下，此工作流于每日凌晨2点触发。 |
 | **发送指标和营销活动属性** (webAnalyticsSendMetrics) | 网站分析连接器 | 此工作流允许您通过Adobe® Analytics连接器，将电子邮件促销活动指标从Adobe Campaign发送到Adobe Experience Cloud Suite。 相关指标如下： Sent (iSent)、打开总数(iTotalRecipientOpen)、点击的收件人总数(iTotalRecipientClick)、错误(iError)、选择退出（选择退出）(iOptOut)。 |
 | **库存：订单和警报** (stockMgt) | 默认安装 | 此工作流可启动订单行上的库存计算，并管理警告警报阈值。 |
-| **跟踪** (跟踪 | 默认安装 | 此工作流执行跟踪信息的恢复和整合。 它还确保重新计算跟踪和投放统计数据，特别是消息中心归档工作流使用的统计数据。 默认情况下，每小时触发一次。 |
+| **从Adobe Experience Platform数据收集同步移动应用程序** (syncWithLaunch) | 默认安装，从v8.5开始 | 此工作流会自动将移动资产从数据收集同步到Adobe Campaign。 |
+| **跟踪** （跟踪） | 默认安装 | 此工作流执行跟踪信息的恢复和整合。 它还确保重新计算跟踪和投放统计数据，特别是消息中心归档工作流使用的统计数据。 默认情况下，每小时触发一次。 |
 | **更新事件状态** (updateEventsStatus) | 事务性消息执行（消息中心 — 执行） | 利用此工作流，可为事件分配状态。 事件状态如下：<ul><li>挂起：事件在队列中。 尚未为其关联任何消息模板。</li><li>待处理投放：事件处于队列中，已为其关联消息模板，并且投放当前正在处理该模板。</li><li>已发送：此状态复制于投放日志。 这意味着投放已发送。</li><li>被投放忽略：此状态复制于投放日志。 这意味着投放已被忽略。</li><li>投放错误：此状态复制于投放日志。 这意味着投放失败。</li><li>未涵盖的事件：该事件未能与消息模板关联。 将不会重新处理该事件。</li></ul> |
 | **可投放性更新** (deliverabilityUpdate) | 默认安装 | 安装可投放性监控（电子邮件可投放性）包后，此工作流将在夜间运行，并管理退回电子邮件鉴别规则以及域和MX的列表。 这要求在平台上打开HTTPS端口。 |

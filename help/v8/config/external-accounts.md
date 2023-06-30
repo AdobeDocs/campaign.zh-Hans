@@ -5,9 +5,9 @@ feature: Application Settings
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: c46eaa73deed643a4e92928b6ce2b1beb1596d73
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1085'
 ht-degree: 4%
 
 ---
@@ -31,7 +31,6 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 >* 在上下文中 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，特定 **[!UICONTROL Full FDA]** (ffda)外部帐户管理Campaign本地数据库与云数据库之间的连接([!DNL Snowflake])。
 >
 
-
 ## Campaign特定的外部帐户
 
 Adobe Campaign使用以下技术帐户来启用和执行特定流程。
@@ -41,6 +40,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 >[!NOTE]
 >
 >从Campaign v8.3开始，提供了适用于POP3功能的Microsoft Exchange Online OAuth 2.0身份验证。要检查您的版本，请参阅 [本节](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion).
+>
 
 此 **退回邮件** 外部帐户指定要用于连接到电子邮件服务的外部POP3帐户。 所有为POP3访问配置的服务器都可以用来接收回信。
 
@@ -60,7 +60,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
 * **[!UICONTROL Encryption]**  — 选择的加密类型，介于 **[!UICONTROL By default]**， **[!UICONTROL POP3 + STARTTLS]**， **[!UICONTROL POP3]** 或 **[!UICONTROL POP3S]**.
 
-   此 **退回邮件** 外部帐户指定要用于连接到电子邮件服务的外部POP3帐户。 所有为POP3访问配置的服务器都可以用来接收回信。
+  此 **退回邮件** 外部帐户指定要用于连接到电子邮件服务的外部POP3帐户。 所有为POP3访问配置的服务器都可以用来接收回信。
 
 * **[!UICONTROL Function]**  — 入站电子邮件或SOAP路由器
 
@@ -69,6 +69,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 >[!CAUTION]
 >
 >在使用Microsoft OAuth 2.0配置POP3外部帐户之前，您首先需要在Azure门户中注册应用程序。 有关更多信息，请参阅此[页面](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}.
+>
 
 要使用Microsoft OAuth 2.0配置POP3外部，请检查 **[!UICONTROL Microsoft OAuth 2.0]** 并填写以下字段：
 
@@ -80,15 +81,11 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
 * **[!UICONTROL Azure Redirect URL]**  — 可在以下位置找到重定向URL： **身份验证** Azure门户中应用程序的菜单。 它应以下列语法结尾 `nl/jsp/oauth.jsp`，例如 `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
 
-   输入其他凭据后，您可以单击 **[!UICONTROL Setup the connection]** 以完成外部帐户配置。
+  输入其他凭据后，您可以单击 **[!UICONTROL Setup the connection]** 以完成外部帐户配置。
 
 ### 路由 {#routing}
 
 此 **[!UICONTROL Routing]** 外部帐户允许您根据安装的包来配置Adobe Campaign中可用的每个渠道。
-
->[!CAUTION]
->
->此 **[!UICONTROL Internal email delivery routing]** (defaultEmailBulk)外部帐户 **不得** 在Adobe Campaign v8中启用。
 
 ### 执行实例 {#execution-instance}
 
@@ -98,7 +95,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
 * **外部数据库（联合数据访问）** - **外部数据库** 类型外部帐户用于通过联合数据访问(FDA)连接到外部数据库。 要了解有关联合数据访问(FDA)选项的更多信息，请参阅 [本节](../connect/fda.md).
 
-   与Adobe Campaign v8兼容的外部数据库列在 [兼容性矩阵](../start/compatibility-matrix.md)
+  与Adobe Campaign v8兼容的外部数据库列在 [兼容性矩阵](../start/compatibility-matrix.md)
 
 * **twitter** - **twitter** type external account用于将Campaign连接到您的twitter帐户，以代表您发布消息。 在中了解有关Twitter集成的更多信息 [本节](../connect/ac-tw.md).
 
@@ -123,7 +120,11 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
 * **FTP和SFTP** - **FTP** 外部帐户允许您配置和测试对Adobe Campaign外部服务器的访问权限。 要与外部系统（如用于文件传输的SFTP或FTP服务器898）建立连接，您可以创建自己的外部帐户。
 
-   为此，请在此外部帐户中指定用于建立与SFTP或FTP服务器连接的地址和凭据。
+  为此，请在此外部帐户中指定用于建立与SFTP或FTP服务器连接的地址和凭据。
+
+  >[!NOTE]
+  >
+  >从版本8.5开始，您现在可以在配置SFTP外部帐户时使用私钥安全进行身份验证。 [了解有关密钥管理的更多信息](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html)
 
 * **Amazon Simple Storage Service (S3)** - **AWS S3** 连接器可用于使用以下工具将数据导入或导出到Adobe Campaign： **[!UICONTROL Transfer file]** 工作流活动。 在设置此新外部帐户时，您需要提供以下详细信息：
 

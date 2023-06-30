@@ -5,9 +5,9 @@ feature: FFDA
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '549'
 ht-degree: 3%
 
 ---
@@ -74,19 +74,6 @@ Campaign提供了一组新护栏，以防止在中插入重复的键 [!DNL Snowf
 在上下文中 [企业(FFDA)部署](enterprise-deployment.md)中，您不能选择内部键值(UUID)作为字段来更新工作流中的数据。
 
 ![](assets/update-data-no-internal-key.png)
-
-使用显式协调键值时， **更新数据** 活动通过以下方式自动确保基于此键的目标架构的唯一性：
-
-1. 删除传入数据的重复项（从过渡）
-1. 使用目标表删除重复数据（合并）
-
-
-![](assets/update-data-deduplicate.png)
-
->[!CAUTION]
->
->此护栏仅适用于选项 **[!UICONTROL Using reconciliation keys]**.
-
 
 ### 查询包含重复项的架构{#query-with-duplicates}
 

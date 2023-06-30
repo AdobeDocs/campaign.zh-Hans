@@ -5,7 +5,7 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 8%
@@ -100,6 +100,8 @@ Campaign用户通过AdobeIdentity Management System (IMS)，使用其Adobe ID连
 >[!CAUTION]
 >
 >Adobe建议保留选项 **[!UICONTROL No longer ask this question]** 取消选择以确保当有新版本的Console可用时收到警报。 如果选择此选项，则不会通知用户需要升级Console。
+>
+
 
 
 ## 授予用户访问权限{#grant-access}

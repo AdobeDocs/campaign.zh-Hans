@@ -5,7 +5,7 @@ feature: Federated Data Access
 role: Admin
 level: Beginner, Intermediate
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 使用FDA连接器（联合数据访问）将Campaign连接到一个或多个 **外部数据库** 并处理存储到其中的信息，而不会影响您的Campaign云数据库数据。 然后，您可以访问外部数据，而无需更改Adobe Campaign数据的结构。
 
-![](../assets/do-not-localize/speech.png)   作为托管Cloud Services用户， [联系人Adobe](../start/campaign-faq.md#support) 以将外部数据库与Campaign连接。
+![](../assets/do-not-localize/speech.png) 作为托管Cloud Services用户， [联系人Adobe](../start/campaign-faq.md#support) 以将外部数据库与Campaign连接。
 
 
 >[!NOTE]
@@ -25,7 +25,6 @@ ht-degree: 1%
 >
 >* 在上下文中 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，可以使用特定的外部帐户管理Campaign本地数据库和Snowflake云数据库之间的通信。 此外部帐户按Adobe和为您设置 **不得** 将被修改。
 >
-
 
 
 ## 最佳实践和限制
@@ -41,11 +40,12 @@ FDA选项受您使用的第三方数据库系统的限制。
    * 将Adobe Campaign数据库导出到外部数据库，并仅在将结果重新导入Adobe Campaign之前从外部数据库执行操作。
 
    * 从外部Adobe Campaign数据库中收集数据并在本地执行操作。
-   如果要使用外部数据库中的数据在投放中实施个性化，请收集要在工作流中使用的数据，以使其在临时表中可用。 然后，使用临时表中的数据将投放个性化。 要执行此操作，请使用在专用工作流中预先处理消息个性化 **[!UICONTROL Prepare the personalization data with a workflow]** 选项，可在 **[!UICONTROL Analysis]** 选项卡中显示的投放属性。 在投放分析期间，此选项会自动创建并执行一个工作流，该工作流会将链接到目标的所有数据（包括链接在外部数据库中的表中的数据）存储在临时表中。
 
-   >[!CAUTION]
-   >
-   >此选项可显着改进执行个性化步骤时的性能。
+  如果要使用外部数据库中的数据在投放中实施个性化，请收集要在工作流中使用的数据，以使其在临时表中可用。 然后，使用临时表中的数据将投放个性化。 要执行此操作，请使用在专用工作流中预先处理消息个性化 **[!UICONTROL Prepare the personalization data with a workflow]** 选项，可在 **[!UICONTROL Analysis]** 选项卡中显示的投放属性。 在投放分析期间，此选项会自动创建并执行一个工作流，该工作流会将链接到目标的所有数据（包括链接在外部数据库中的表中的数据）存储在临时表中。
+
+  >[!CAUTION]
+  >
+  >此选项可显着改进执行个性化步骤时的性能。
 
 
 ## 在工作流中使用外部数据

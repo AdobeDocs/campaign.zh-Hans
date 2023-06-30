@@ -5,10 +5,10 @@ feature: Overview
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 93%
+source-wordcount: '378'
+ht-degree: 88%
 
 ---
 
@@ -26,14 +26,14 @@ ht-degree: 93%
 
 要使用 Campaign 客户端控制台，必须配备以下操作系统和浏览器。[了解详情](connect.md)。
 
->[!NOTE]
->
->请注意，客户端控制台的 32 位版本将在 8.5 版本中弃用。从 8.6 开始，将仅支持 64 位客户端控制台。有关如何升级操作系统的详细信息，请参阅此[技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/console.html?lang=zh-Hans)。
-
 ### 操作系统{#op-systems}
 
 * **Microsoft Windows Server** 2019、2016、2012
 * **Microsoft Windows** 11、10、8
+
+>[!NOTE]
+>
+>请注意，从8.5版本开始，已弃用32位版本的客户端控制台。 从 8.6 开始，将仅支持 64 位客户端控制台。有关如何升级操作系统的详细信息，请参阅此[技术说明](../../technotes/upgrades/console.md)。
 
 ### Web 浏览器{#web-browsers}
 
@@ -52,7 +52,8 @@ ht-degree: 93%
 
 下面列出了与 Adobe Campaign 联合数据访问 (FDA) 模块兼容的外部数据库。[了解详情](../connect/fda.md)。
 
-* **Amazon Redshift**
+* **[!DNL Amazon Redshift]**
+* **[!DNL Azure Synapse]**，从Campaign v8.5开始
 * **[!DNL Google Big Query]**
 * **[!DNL Snowflake]**
 * **[!DNL Vertica]**

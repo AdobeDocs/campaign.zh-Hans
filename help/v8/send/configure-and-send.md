@@ -4,10 +4,10 @@ description: 了解如何在Adobe Campaign中配置电子邮件。
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 44f30f753e3ed75b7e56caf7bd8cdfa7cbee5c35
+source-git-commit: 21e251acd76f2bbb751f8e295934d597af336559
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 7%
+source-wordcount: '1129'
+ht-degree: 8%
 
 ---
 
@@ -102,6 +102,74 @@ ht-degree: 7%
 
   ![](assets/delivery-waves-ex-call-center.png)
 
+## 确认投放 {#confirm-delivery}
+
+当投放已配置并准备好发送时，请确保在确认发送之前已运行投放分析。
+
+为此，请执行以下步骤：
+
+1. 单击 **[!UICONTROL Send]**&#x200B;中，选择所需的操作。
+
+   * 要立即发送投放，请选择 [**尽快投放**].
+   * 要安排在以后的日期发送，请选择 **[!UICONTROL Postpone the delivery]**. [了解详情](#schedule-delivery-sending)
+
+1. 单击 **[!UICONTROL Analyze]**。有关此内容的更多信息，请参阅 [启动分析](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+
+   ![](assets/delivery-send-analyze.png)
+
+1. 完成后，单击 **[!UICONTROL Confirm delivery]** 以启动消息投放。
+
+   ![](assets/delivery-send-confirm.png)
+
+1. 您可以关闭投放向导，并从以下位置跟踪投放的执行情况 **[!UICONTROL Delivery]** 选项卡，可通过此投放的详细信息或投放列表访问。
+
+   有关更多信息，请参阅以下部分：
+
+   * [监测投放](send.md)
+   * [了解投放失败](delivery-failures.md)
+
+<!--About message tracking-->
+
+## 计划投放发送 {#schedule-delivery-sending}
+
+您可以推迟邮件的投放，以便计划内容的投放或管理销售压力并避免过度营销。
+
+1. 单击 **[!UICONTROL Send]** 按钮并选择 **[!UICONTROL Postpone delivery]** 选项。
+
+1. 在中指定开始日期 **[!UICONTROL Contact date]** 字段。
+
+   ![](assets/delivery-send-postpone.png)
+
+1. 开始投放分析并确认投放发送。 但是，直到中给定的日期才会开始投放发送 **[!UICONTROL Contact date]** 字段。
+
+   >[!IMPORTANT]
+   >
+   >开始分析后，您定义的联系日期即是固定的。 如果修改此日期，则必须重新开始分析，以便考虑所做的修改。
+
+   ![](assets/delivery-send-scheduled.png)
+
+在投放列表中，投放将与 **[!UICONTROL Pending]** 状态。
+
+您还可以通过在上游配置计划 **[!UICONTROL Scheduling]** 投放的按钮。
+
+![](assets/delivery-scheduling-button.png)
+
+它可让您将投放推迟到以后的日期，或将投放保存在临时日程表中。
+
+* 此 **[!UICONTROL Schedule delivery (no automatic execution)]** 选项允许您计划投放的临时分析。
+
+  保存此配置后，投放将更改为 **[!UICONTROL Targeting pending]** 状态。 分析将在指定的日期启动。
+
+* 此 **[!UICONTROL Schedule delivery (automatic execution on planned date)]** 选项可让您指定提交日期。
+
+  单击 **[!UICONTROL Send]** 并选择 **[!UICONTROL Postpone delivery]** 然后启动分析并确认投放。 分析完成后，投放目标已准备就绪，并在指定日期自动发送消息。
+
+日期和时间以当前运算符的时区表示。 此 **[!UICONTROL Time zone]** 通过位于联系日期输入字段下方的下拉列表，您可以将输入的日期和时间自动转换为所选时区。
+
+例如，如果您安排在伦敦时间8点自动执行投放，则该时间将自动转换为所选时区：
+
+![](assets/delivery-schedule-time-zone.png)
+
 <!--
 ## Adjust delivery failure management {#delivery-failure-management}
 
@@ -136,65 +204,4 @@ When the delivery has been launched, the messages (and any retries) can be sent 
 * **Validity limit of resources**: The **[!UICONTROL Validity limit]** field is used for uploaded resources, mainly for the mirror page and images. The resources on this page are valid for a limited time (to save disk space).
 
   The values in this field can be expressed in the units listed in [this section](../../platform/using/adobe-campaign-workspace.md#default-units).
-
-## Confirm the delivery {#confirm-delivery}
-
-When the delivery is configured and ready to be sent, make sure you have run the delivery analysis.
-
-To do this, click **[!UICONTROL Send]**, select the desired action and click **[!UICONTROL Analyze]**. For more on this, see [Launching the analysis](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
-
-![](assets/s_ncs_user_email_del_send.png)
-
-Once done, click **[!UICONTROL Confirm delivery]** to launch the delivery of messages.
-
-You can then close the delivery wizard and track the execution of the delivery from the **[!UICONTROL Delivery]** tab, accessible via the detail of this delivery or via the list of deliveries.
-
-After sending messages, you can monitor and track your deliveries. For more on this, refer to these sections:
-
-* [Monitoring a delivery](send.md)
-* [Understanding delivery failures](delivery-failures.md)
-* [About message tracking]
-
-## Schedule the delivery sending {#schedule-delivery-sending}
-
-You can defer the delivery of messages in order to schedule the delivery or to manage sales pressure and avoid over-soliciting a population.
-
-1. Click the **[!UICONTROL Send]** button and select the **[!UICONTROL Postpone delivery]** option.
-
-1. Specify a start date in the **[!UICONTROL Contact date]** field.
-
-  ![](assets/)
-
-1. You can then start the delivery analysis, then confirm the delivery sending. However, the delivery sending will not start until the date given in the **[!UICONTROL Contact date]** field.
-
-  >[!IMPORTANT]
-  >
-  >Once you have started the analysis, the contact date that you defined is fixed. If you modify this date, you will have to restart the analysis so that your modifications are taken into account.
-
-  ![](assets/)
-
-In the delivery list, the delivery will appear with **[!UICONTROL Pending]** status.
-
-![](assets/send-schedule-pending-status.png)
-
-Scheduling can also be configured upstream via the **[!UICONTROL Scheduling]** button of the delivery.
-
-![](assets/send-scheduling-button.png)
-
-It lets you defer the delivery to a later date or save the delivery in the provisional calendar.
-
-* The **[!UICONTROL Schedule delivery (no automatic execution)]** option lets you schedule a provisional analysis of the delivery.
-
-  When this configuration is saved, the delivery changes to **[!UICONTROL Targeting pending]** status. The analysis will be launched on the specified date.
-
-* The **[!UICONTROL Schedule delivery (automatic execution on planned date)]** option lets you specify the delivery date.
-
-  Click **[!UICONTROL Send]** and select **[!UICONTROL Postpone delivery]** then launch the analysis and confirm delivery. When the analysis is complete, the delivery target is ready and messages will automatically be sent on the specified date.
-
-Dates and times are expressed in the time zone of the current operator. The **[!UICONTROL Time zone]** drop-down list located below the contact date input field lets you automatically convert the entered date and time into the selected time zone.
-
-For instance, if you schedule a delivery to be executed automatically at 8 o'clock London time, the time is automatically converted into the selected time zone:
-
-![](assets/send-schedule-time-zone.png)
-
 -->

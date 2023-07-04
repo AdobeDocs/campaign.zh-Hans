@@ -5,20 +5,22 @@ feature: Push
 role: Data Engineer
 level: Beginner
 badge: label="Limited availability" type="Informative"
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+source-git-commit: 441310dc1cdcb96296c0cbe5bf3fb7cd1502709f
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1392'
 ht-degree: 1%
 
 ---
 
 # 修订了推送通知配置 {#push-notifications-config}
 
+Campaign v8.5正在推出我们最新的推送通知服务，该服务基于现代尖端技术构建的强大框架提供支持。 此服务旨在解锁更高级别的可扩展性，确保您的通知能够以无缝的效率接触到更多受众。 通过我们增强的基础架构和优化的流程，您可以期待更高的规模和可靠性，使您能够以前所未有的方式吸引移动应用程序用户并与之建立联系。
+
 >[!AVAILABILITY]
 >
-> 从8.5版开始，新客户可以专门访问此功能，并逐步向一组选定的客户推出。 如果您的环境是在2023年6月之前配置的，则必须按照详细说明的过程操作 [本页内容](push-settings.md).
+> 从Campaign v8.5开始，并逐步向一组选定的客户推出，新客户可专门访问此功能。 如果您的环境是在2023年6月之前配置的，则此页面不适用于您，您必须按照详细说明的过程操作 [本页内容](push-settings.md).
 
-要在Adobe Campaign中发送推送通知，您需要：
+对于此更新的实施，要在Adobe Campaign中发送推送通知，请执行以下步骤：
 
 1. [在Adobe Experience Platform数据收集中创建应用程序表面](#create-app-surface)
 

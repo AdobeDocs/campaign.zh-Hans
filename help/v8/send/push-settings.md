@@ -6,14 +6,14 @@ feature: Push
 role: Admin, Developer
 level: Intermediate, Experienced
 exl-id: b5a0fe46-f7b4-4be1-abf0-162fc1412886
-source-git-commit: d941d9a364ffb2df77ba6726e655ca2916448f89
+source-git-commit: 441310dc1cdcb96296c0cbe5bf3fb7cd1502709f
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1659'
 ht-degree: 3%
 
 ---
 
-# AEP SDK + Campaign：配置推送通知渠道 {#push-notification-configuration}
+# 配置推送通知渠道 {#push-notification-configuration}
 
 在开始使用Adobe Campaign发送推送通知之前，您需要确保为移动应用程序和Adobe Experience Platform中的标记配置并集成到位。
 
@@ -186,7 +186,7 @@ To get the SDKs needed for push notification to work you will need the following
 
 1. 浏览至 **[!UICONTROL Subscription parameters]** 选项卡，以定义扩展名为 **[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]** 架构。
 
-1. 浏览至 **[!UICONTROL Sounds]** 制表符来定义要播放的声音。 单击 **[!UICONTROL Add]** 和填充 **[!UICONTROL Internal name]** 字段，必须包含应用程序中嵌入的文件的名称或系统声音的名称。
+1. 浏览至 **[!UICONTROL Sounds]** 制表符来定义要播放的声音。 单击 **[!UICONTROL Add]** 和填充 **[!UICONTROL Internal name]** 字段，必须包含应用程序中嵌入的文件名称或系统声音的名称。
 
 1. 单击 **[!UICONTROL Next]** 以开始配置开发应用程序。
 

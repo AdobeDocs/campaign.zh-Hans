@@ -4,9 +4,9 @@ description: 了解如何在Adobe Campaign中配置电子邮件。
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 21e251acd76f2bbb751f8e295934d597af336559
+source-git-commit: 263ec61c3717c054cc135f1c4fb1f7e287e4a154
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1128'
 ht-degree: 8%
 
 ---
@@ -113,7 +113,7 @@ ht-degree: 8%
    * 要立即发送投放，请选择 [**尽快投放**].
    * 要安排在以后的日期发送，请选择 **[!UICONTROL Postpone the delivery]**. [了解详情](#schedule-delivery-sending)
 
-1. 单击 **[!UICONTROL Analyze]**。有关此内容的更多信息，请参阅 [启动分析](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+1. 单击 **[!UICONTROL Analyze]**。有关更多信息，请参阅[此章节](delivery-analysis.md)。
 
    ![](assets/delivery-send-analyze.png)
 

@@ -5,16 +5,16 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 7bf3937c-484d-4404-8a9b-de7a10f5455a
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: b333db04dd10cc28956959a446f6567e2a89b2d4
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 57%
+source-wordcount: '434'
+ht-degree: 56%
 
 ---
 
-# 链接到镜像页面{#mirror-page}
+# 链接到镜像页面 {#mirror-page}
 
-## 关于镜像页面{#about-mirror-page}
+## 关于镜像页面 {#about-mirror-page}
 
 镜像页面是电子邮件的在线版本。
 
@@ -24,7 +24,7 @@ Adobe Campaign 生成的镜像页面包含所有个性化数据。
 
 ![镜像链接示例](assets/mirror-page-link.png){width="600" align="left"}
 
-## 添加指向镜像页面的链接{#link-to-mirror-page}
+## 添加指向镜像页面的链接 {#link-to-mirror-page}
 
 插入指向镜像页面的链接是一种好的做法。例如，此链接可以是“在浏览器中查看此电子邮件”或“在线阅读此电子邮件”。它通常位于电子邮件的页眉或页脚。
 
@@ -33,9 +33,9 @@ Adobe Campaign 生成的镜像页面包含所有个性化数据。
 ![](assets/mirror-page-insert.png){width="800" align="left"}
 
 
-有关自定义内容块插入的更多信息，请参阅 [个性化块](personalization-blocks.md).
+有关插入个性化内容块的更多信息，请参阅 [个性化块](personalization-blocks.md).
 
-## 镜像页面生成{#mirror-page-generation}
+## 管理镜像页面生成 {#mirror-page-generation}
 
 默认情况下，如果电子邮件内容不为空，并且包含指向镜像页面的链接（也称为镜像链接），则 Adobe Campaign 会自动生成镜像页面。
 
@@ -52,7 +52,7 @@ Adobe Campaign 生成的镜像页面包含所有个性化数据。
 * **[!UICONTROL Do not generate the mirror page]**：使用此模式可避免生成镜像页面，即使链接存在于投放中也是如此。
 * **[!UICONTROL Generates a mirror page accessible using only the message identifier]**：当电子邮件内容中不存在镜像页面链接时，请使用此选项在投放日志窗口中启用对镜像页面内容的访问，如下所述。
 
-## 检查收件人的镜像页面{#mirror-page-access}
+## 检查收件人的镜像页面 {#mirror-page-access}
 
 您可以使用个性化数据访问投放的特定收件人镜像页面的内容。
 

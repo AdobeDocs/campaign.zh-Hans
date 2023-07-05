@@ -7,7 +7,7 @@ level: Beginner, Intermediate, Experienced
 hide: true
 hidefromtoc: true
 exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
-source-git-commit: 9736ebb3d2a60bfe23b135318b899acb657a580c
+source-git-commit: 958d2e8acdb9edee74f55bc3ea808f5072bf8f4d
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 20%
@@ -18,7 +18,7 @@ ht-degree: 20%
 
 此页面介绍了下一个 Campaign v8 版本中包含的改进和修复。在发行之日前，此内容可能会有所变动，恕不另行通知。[此页面](../start/release-notes.md)中提供了正式的发行说明。
 
-## 8.5 版 {#release-8-5}
+## 8.5.1 版 {#release-8-5}
 
 _2023年6月30日_
 
@@ -32,7 +32,7 @@ _2023年6月30日_
 </thead> 
 <tbody> 
 <tr> 
-<td><p>Campaign 8.5将在v8上推出我们最新的推送通知服务，该服务基于现代尖端技术构建的强大框架提供支持。 此服务旨在解锁更高级别的可扩展性，确保您的通知能够以无缝的效率接触到更多受众。 通过我们增强的基础架构和优化的流程，您可以期待更高的规模和可靠性，使您能够以前所未有的方式吸引移动应用程序用户并与之建立联系。 此功能仅适用于选定的客户组（限量发布）。</p>
+<td><p>Campaign 8.5.1在v8上推出了我们最新的推送通知服务，该服务基于现代尖端技术构建的强大框架提供支持。 此服务旨在解锁更高级别的可扩展性，确保您的通知能够以无缝的效率接触到更多受众。 通过我们增强的基础架构和优化的流程，您可以期待更高的规模和可靠性，使您能够以前所未有的方式吸引移动应用程序用户并与之建立联系。 此功能仅适用于选定的客户组（限量发布）。</p>
 </td> 
 </tr> 
 </tbody> 
@@ -46,7 +46,7 @@ _2023年6月30日_
 **改进**
 
 * 通过实施一系列优化，短信吞吐量得到了显着提升，从而提升了短信通信的速度和效率。
-* 从Campaign v8.5开始，改进了Campaign v8的身份验证过程。 技术操作员必须使用AdobeIdentity Management System (IMS)连接到Campaign。
+* 从Campaign v8.5.1开始，改进了Campaign v8的身份验证过程。 技术操作员必须使用AdobeIdentity Management System (IMS)连接到Campaign。
 * 您现在可以利用目标和源连接来同步配置文件属性，例如Adobe Experience Platform和Campaign v8数据库之间的选择退出数据
 * 投放准备已优化。
 * 除了现有的用户/密码身份验证方法之外，还为SFTP外部帐户添加了一个新的基于密钥的身份验证选项。 用户现在可以使用私钥安全地进行身份验证，从而增强安全性并为SFTP访问提供替代身份验证机制。

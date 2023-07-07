@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: d5bd383dca524e15a098fc63661236b50144cb3d
+source-git-commit: dc2ccd7092fd31f043b338868762440ae0394991
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 57%
@@ -42,12 +42,10 @@ _2023年6月30日_
 </tbody> 
 </table>
 
-**兼容性更新**
-
-* 现已弃用32位版本的客户端控制台。 从 8.6 开始，将仅支持 64 位客户端控制台。客户端控制台可无缝升级到64位版本。 有关如何升级操作系统的详细信息，请参阅此[技术说明](../../technotes/upgrades/console.md)。
-* 您现在可以将Campaign v8实例连接到Azure synapse外部数据库。 此连接通过新的外部帐户管理。了解详情，请参阅 [Campaign兼容性矩阵](../start/compatibility-matrix.md#federated-data-access-fdafederateddataaccessfda).
-
 **改进**
+
+
+
 
 * 通过实施一系列优化，短信吞吐量得到了显着提升，从而提升了短信通信的速度和效率。
 * 您现在可以利用Adobe Experience Platform目标连接来同步配置文件属性，例如Adobe Experience Platform和Campaign v8数据库之间的选择退出数据。
@@ -59,6 +57,13 @@ _2023年6月30日_
 * 从Campaign v8.5.1开始，改进了Campaign v8的身份验证过程。 技术操作员必须使用AdobeIdentity Management System (IMS)连接到Campaign。 了解如何在中迁移现有技术帐户 [此技术说明](../../technotes/upgrades/ims-migration.md).
 * 您无法再从Campaign客户端控制台创建运算符。 相应更新了用户界面。 您现在必须使用Adobe Admin Console。 [了解详情](../start/gs-permissions.md)。
 * 更新了多个第三方工具以优化安全性。
+
+**兼容性更新**
+
+* 现已弃用32位版本的客户端控制台。 从 8.6 开始，将仅支持 64 位客户端控制台。客户端控制台可无缝升级到64位版本。 有关如何升级操作系统的详细信息，请参阅此[技术说明](../../technotes/upgrades/console.md)。
+* 您现在可以将Campaign v8实例连接到Azure synapse外部数据库。 此连接通过新的外部帐户管理。了解详情，请参阅 [Campaign兼容性矩阵](../start/compatibility-matrix.md#federated-data-access-fdafederateddataaccessfda).
+
+
 
 **修补程序**
 

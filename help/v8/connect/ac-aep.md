@@ -5,7 +5,7 @@ feature: Platform Integration
 role: Data Engineer
 level: Beginner
 exl-id: 21cf5611-ccaa-4e83-8891-a1a2353515aa
-source-git-commit: 8f7c723b8ef7ab6c8449eaec8ff6c87b9ee5deec
+source-git-commit: d9a91fddbdcfae0f59fe780f8b6962238b89c886
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Adobe Campaign托管Cloud Service目标和源连接器允许Adobe Campaign与Ado
 
       ![](assets/aep-audience-sync.png){width="800" align="center"}
 
-   1. 选择要发送到Adobe营销活动的区段。
+   1. 选择要发送到Adobe Campaign的区段。
    1. 配置要在受众中导出的属性。
    1. 配置流后，即可将选定的受众激活到Adobe Campaign中。
 
@@ -52,7 +52,7 @@ Adobe Campaign托管Cloud Service目标和源连接器允许Adobe Campaign与Ado
 
 >[!NOTE]
 >
->配置文件属性同步适用于AdobeCampaign数据库中已存在的配置文件。
+>配置文件属性同步适用于Adobe Campaign数据库中已存在的配置文件。
 
 将Adobe Experience Platform配置文件属性与Adobe Campaign同步的主要步骤如下：
 

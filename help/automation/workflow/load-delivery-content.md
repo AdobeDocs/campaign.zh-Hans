@@ -4,7 +4,7 @@ title: 加载投放内容
 description: 加载投放内容
 feature: Workflows
 exl-id: 08febcbc-1703-4d36-89e1-32c903618084
-source-git-commit: 9dfb1acd97e529a8b60119154b3728c883dd9c97
+source-git-commit: 23026cf93c89c1f6a410337b17bfa2553e41c987
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 3%
@@ -43,7 +43,7 @@ ht-degree: 3%
 1. 在 **[!UICONTROL Script]** 的选项卡 **[!UICONTROL Delivery]** 活动，添加以下命令以在投放中加载导入文件的内容：
 
    ```
-   delivery.content.md.source=loadFile(vars.filename)
+   delivery.content.html.source=loadFile(vars.filename)
    ```
 
    ![](assets/delivery_loadcontent_script.png)

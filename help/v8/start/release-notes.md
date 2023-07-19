@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: dc2ccd7092fd31f043b338868762440ae0394991
+source-git-commit: 70171ecfb39116f4db4c05ab03b55502e3faed43
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 57%
+source-wordcount: '1337'
+ht-degree: 56%
 
 ---
 
@@ -80,6 +80,7 @@ _2023年6月30日_
 * 修复了在电子邮件内容编辑器中单击图像时导致弹出窗口打开的问题。 (NEO-60752)
 * 修复了在编辑投放内容时可能导致错误并阻止滚动的问题。 (NEO-61364)
 * Adobe Analytics connector现在会导出具有正确渠道类型的量度。 以前，它始终设置为“电子邮件”渠道。 (NEO-26340)
+* 修复了在将Big Query连接器与日期时间字段结合使用时可能导致错误的问题。 (NEO-49768)
 
 
 ## 8.4.5 版 {#release-8-4-5}

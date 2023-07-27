@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner, Intermediate, Experienced
 exl-id: 50c254ba-cc33-49b2-b7d5-12aa69883c07
-source-git-commit: 58fff46ba12f5c6221bbcd88a40fa0806a6c98b9
+source-git-commit: 5810f9b53bd3ad5383d4b9767bc65a3d595862c7
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 100%
+source-wordcount: '254'
+ht-degree: 84%
 
 ---
 
@@ -26,6 +26,7 @@ ht-degree: 100%
 * [此部分](v7-to-v8.md#gs-unavailable-features)列出的功能在当前 Campaign v8 内部版本中不可用
 * 用户界面中仍显示某些不可用或已删除的功能
 * 采用[企业版 (FFDA) 部署](../architecture/enterprise-deployment.md)时，订阅（选择启用）和退订（选择禁用）机制以及移动设备注册是异步流程。请求是每小时通过特定的技术工作流处理的。[了解详情](../architecture/replication.md#tech-wf)
-* 重复项需要由最终用户手动处理。[了解详情](../architecture/keys.md)
+* 
+   * 在上下文中 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，重复项需要由最终用户手动处理。 [了解详情](../architecture/keys.md)
 * Adobe Campaign v8 不支持 API 和 Web 应用程序的扩展吞吐量 - 如有特定需求，请联系 Adobe 以获取指导
-* Adobe Campaign 活动优化模块不考虑压力类型规则中的计划投放。请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=zh-Hans)以了解详情
+* 在上下文中 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，Adobe Campaign活动优化模块不考虑压力类型规则中的计划投放。 请参阅[此页面](../../automation/campaign-opt/pressure-rules.md)以了解详情

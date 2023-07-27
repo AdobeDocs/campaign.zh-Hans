@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
+source-git-commit: 5d307e0fcafdc4d25402c62c6869ecc07c1a47e4
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 98%
+source-wordcount: '682'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +21,6 @@ ht-degree: 98%
 >* 目前，Campaign v8 **仅**&#x200B;作为托管云服务提供，不能部署在内部部署或混合环境中。[了解详情](#cloud-services)
 >
 >* 从现有 Campaign Classic v7 环境进行自动迁移的功能尚不可用。
-
 
 
 ## Managed Cloud Services{#cloud-services}
@@ -44,6 +43,7 @@ Adobe Campaign Managed Cloud Services 提供了可用于进行跨渠道客户体
 >
 > 因此，内部路由在 Campaign v8 中&#x200B;**不受支持**，并且已相应地禁用外部帐户。
 
+新的云架构使Campaign能够简化流程、降低成本、管理风险并提高数据安全性。 您的Campaign v8环境附带为您预配置的专用虚拟专用云(VPC)。
 
 ## [!DNL Campaign] 和 [!DNL Snowflake] {#ac-gs-snowflake}
 

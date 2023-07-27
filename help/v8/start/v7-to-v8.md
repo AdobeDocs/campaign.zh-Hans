@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 5d307e0fcafdc4d25402c62c6869ecc07c1a47e4
+source-git-commit: 1297d5a602d125cb80ca6efb490b12174bcea8d6
 workflow-type: tm+mt
 source-wordcount: '682'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -37,13 +37,11 @@ Adobe Campaign Managed Cloud Services 提供了可用于进行跨渠道客户体
 
 作为之前的 [!DNL Campaign Classic] 用户，请注意，v7 的大多数功能[!DNL Campaign Classic]都可以在 [!DNL Campaign] v8 中使用，但[本节](#gs-removed)中所列的一小部分功能除外。
 
+Campaign v8依赖于 **混合架构**. 请注意，如果从 Campaign Classic v7 进行过渡，所有投放都要经过中间源服务器。[了解详情](../architecture/architecture.md)。因此，内部路由在 Campaign v8 中&#x200B;**不受支持**，并且已相应地禁用外部帐户。
+
 >[!NOTE]
 >
-> Campaign v8 依赖于混合架构。请注意，如果从 Campaign Classic v7 进行过渡，所有投放都要经过中间源服务器。[了解详情](../architecture/architecture.md)
->
-> 因此，内部路由在 Campaign v8 中&#x200B;**不受支持**，并且已相应地禁用外部帐户。
-
-新的云架构使Campaign能够简化流程、降低成本、管理风险并提高数据安全性。 您的Campaign v8环境附带为您预配置的专用虚拟专用云(VPC)。
+>新的云架构使Campaign能够简化流程、降低成本、管理风险并提高数据安全性。 您的Campaign v8环境附带为您预配置的专用虚拟专用云(VPC)。
 
 ## [!DNL Campaign] 和 [!DNL Snowflake] {#ac-gs-snowflake}
 

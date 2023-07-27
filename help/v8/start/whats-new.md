@@ -5,7 +5,7 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 1297d5a602d125cb80ca6efb490b12174bcea8d6
+source-git-commit: f16fe79b8417a3fa146baf432f829c73fb839953
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 92%
@@ -32,7 +32,7 @@ Adobe Campaign 提供了用于进行活动编排的简单易用的单个界面�
 
 ![](../assets/do-not-localize/glass.png) [了解关于活动工作流的更多信息](../config/workflows.md)
 
-## 个性化电子邮件营销 {#perso-email-mkt}
+### 个性化电子邮件营销 {#perso-email-mkt}
 
 创建上下文相关的个性化电子邮件，使它们提供的体验与客户的其他体验保持一致。
 

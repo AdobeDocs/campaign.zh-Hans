@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 70171ecfb39116f4db4c05ab03b55502e3faed43
+source-git-commit: 32d0264c03eb4ec6ab1959d0a66be78c06a0dccb
 workflow-type: tm+mt
-source-wordcount: '1337'
-ht-degree: 56%
+source-wordcount: '1453'
+ht-degree: 51%
 
 ---
 
@@ -24,39 +24,64 @@ Adobe Campaign 会定期更新。这种定期更新旨在让您掌握最新、�
 
 _2023年6月30日_
 
-**新增功能**
 
-<table> 
-<thead>
-<tr> 
-<th> <strong>增强的推送通知服务</strong><br /> </th> 
-</tr> 
-</thead> 
-<tbody> 
-<tr> 
-<td><p>Campaign v8.5.1引入了我们最新的推送通知服务，该服务由基于现代尖端技术构建的强大框架提供支持。 此服务旨在解锁更高级别的可扩展性，确保您的通知能够以无缝的效率接触到更多受众。 通过我们增强的基础架构和优化的流程，您可以期待更高的规模和可靠性，使您能够以前所未有的方式吸引移动应用程序用户并与之建立联系。 此功能仅适用于选定的客户组（限量发布）。</p>
-<p>有关更多信息，请参阅<a href="../send/push-data-collection.md">详细文档</a>。</p>
+**增强的推送通知服务**
 
-</td> 
-</tr> 
-</tbody> 
-</table>
+Campaign v8.5.1引入了我们最新的推送通知服务，该服务由基于现代尖端技术构建的强大框架提供支持。 此服务旨在解锁更高级别的可扩展性，确保您的通知能够以无缝效率接触到更多受众。 通过我们增强的基础架构和优化的流程，您可以期待更高的扩展性和可靠性，使您能够以前所未有的方式吸引移动应用程序用户并与之建立联系。 此功能仅适用于选定的客户组（限量发布）。
 
-**改进**
+有关更多信息，请参阅[详细文档](../send/push-data-collection.md)。
 
 
+**移动渠道吞吐量增加**
+
+<!--
+The newly introduced Push notification service showcases significant improvements in throughput for both Push Android and Push iOS compared to our previous version (v8.4). Users will experience notably enhanced performance with the upgraded service in the latest version (v8.5).
+
+* Push Notifications (Android): up to **5x** faster
+* Push Notifications (iOS): up to **2.2x** faster
+
+SMS throughput has undergone substantial enhancements through a series of optimizations, resulting in notable improvements in speed and efficiency for SMS communication. These upgrades have led to increased throughput from the previous version (v8.4) to the latest version (v8.5), encompassing both sending and feedback updates. Users can now experience the benefits of this enhanced SMS service.</p>
+
+* SMS throughput: up to **5x** faster
+
+These max throughput performances have been measured by Adobe testing teams, in lab conditions.
+-->
+
+<table style="table-layout:fixed" text-align="bottom"><tr style="border: 0;">
+<td>
+<img alt="吞吐量改进" src="../start/assets/do-not-localize/improvements.jpeg">
+<p>
+</td>
+<td>
+<div>
+
+<p>与以前的版本(v8.4)相比，新引入的推送通知服务显示推送Android和推送iOS的吞吐量有了显着改进。 最新版本(v8.5)中的升级服务将会显着提升用户性能。 </p>
+<ul>
+<li>推送通知(Android)：最多 <strong>5倍</strong> 更快 </li>
+<li>推送通知(iOS)：最多 <strong>2.2倍</strong> 更快</li>
+</ul>
+<p>通过一系列优化，短信吞吐量得到了大幅提升，从而显着提高了短信通信的速度和效率。 这些升级已导致吞吐量从以前的版本(v8.4)增加到最新的版本(v8.5)，包括发送和反馈更新。 用户现在可以体验此增强型短信服务的好处。</p>
+<ul>
+<li>SMS吞吐量：最高 <strong>5倍</strong> 更快</li>
+</ul>
+<p><em>Adobe测试小组已在实验室条件下测量了这些最大吞吐量性能。</em></p>
+</div>
+<p></p>
+</td>
+</tr></table>
 
 
-* 通过实施一系列优化，短信吞吐量得到了显着提升，从而提升了短信通信的速度和效率。
-* 您现在可以利用Adobe Experience Platform目标连接来同步配置文件属性，例如Adobe Experience Platform和Campaign v8数据库之间的选择退出数据。
-* 投放准备已优化。
-* 除了现有的用户/密码身份验证方法之外，还为SFTP外部帐户添加了一个新的基于密钥的身份验证选项。 用户现在可以使用私钥安全地进行身份验证，从而增强安全性并为SFTP访问提供替代身份验证机制。 在[此章节](../config/external-accounts.md)中了解更多信息。
+**一般改进**
+
+* 您现在可以利用Adobe Experience Platform目标连接在Adobe Experience Platform和Campaign v8数据库之间同步配置文件属性，例如选择退出数据。
+* 已跨所有渠道优化投放准备。
+* 除了现有的用户/密码身份验证方法之外，还为SFTP外部帐户添加了基于密钥的新身份验证选项。 用户现在可以使用私钥安全地进行身份验证，从而增强安全性并为SFTP访问提供替代身份验证机制。 在[此章节](../config/external-accounts.md)中了解更多信息。
 
 **安全性增强**
 
-* 从Campaign v8.5.1开始，改进了Campaign v8的身份验证过程。 技术操作员必须使用AdobeIdentity Management System (IMS)连接到Campaign。 了解如何在中迁移现有技术帐户 [此技术说明](../../technotes/upgrades/ims-migration.md).
-* 您无法再从Campaign客户端控制台创建运算符。 相应更新了用户界面。 您现在必须使用Adobe Admin Console。 [了解详情](../start/gs-permissions.md)。
-* 更新了多个第三方工具以优化安全性。
+* 从Campaign v8.5.1开始，对Campaign v8的身份验证过程已得到改进。 技术操作员必须使用AdobeIdentity Management System (IMS)连接到Campaign。 了解如何在中迁移现有技术帐户 [此技术说明](../../technotes/upgrades/ims-migration.md).
+* 您无法再从Campaign客户端控制台创建运算符。 用户界面已相应地更新。 您现在必须使用Adobe Admin Console。 [了解详情](../start/gs-permissions.md)。
+* 已更新多个第三方工具以优化安全性。
 
 **兼容性更新**
 
@@ -64,22 +89,21 @@ _2023年6月30日_
 * 您现在可以将Campaign v8实例连接到Azure synapse外部数据库。 此连接通过新的外部帐户管理。了解详情，请参阅 [Campaign兼容性矩阵](../start/compatibility-matrix.md#federated-data-access-fdafederateddataaccessfda).
 
 
-
 **修补程序**
 
-* 修复了可能导致投放的HTML内容中的特殊字符在若干浏览器中编码不正确的问题。 (NEO-60081)
+* 修复了可能导致投放的HTML内容中的特殊字符在多个浏览器中被错误编码的问题。 (NEO-60081)
 * 修复了可能导致无法在Campaign v8企业(FFDA)部署中保存报表的问题。 (NEO-56836)
-* 修复了通过更新数据工作流活动将数据插入或更新到自定义FFDA架构中时发生的问题。 (NEO-54708)
+* 修复了通过更新数据工作流活动将数据插入或更新到自定义FFDA架构中的问题。 (NEO-54708)
 * 修复了阻止数据库清理工作流删除FFDA上nms：address表中的地址的问题。 (NEO-54460)
-* 修复了计费工作流可能因“编译内存耗尽”错误而失败的问题。 (NEO-51137)
-* 修复了可能阻止GPG解密在数据加载（文件）工作流活动中正常工作的问题。 (NEO-50257)
+* 修复了计费工作流可能由于“编译内存耗尽”错误而失败的问题。 (NEO-51137)
+* 修复了可能会阻止GPG解密在数据加载（文件）工作流活动中正确工作的问题。 (NEO-50257)
 * 修复了会导致 `JSPContext.sqlExecWithOneParam` 功能无法正常运行的问题。(NEO-50066)
 * 修复了在个性化字段中使用不可打印字符时导致投放失败的问题。 (NEO-48588)
 * 修复了在插入Adobe Target动态图像时可能导致投放错误的问题。 (NEO-62689)
 * 修复了在投放中使用条件内容时阻止浏览器添加额外空格的问题。 (NEO-62132)
 * 修复了在电子邮件内容编辑器中单击图像时导致弹出窗口打开的问题。 (NEO-60752)
 * 修复了在编辑投放内容时可能导致错误并阻止滚动的问题。 (NEO-61364)
-* Adobe Analytics connector现在会导出具有正确渠道类型的量度。 以前，它始终设置为“电子邮件”渠道。 (NEO-26340)
+* Adobe Analytics连接器现在可导出渠道类型正确的量度。 它以前始终设置为“电子邮件”渠道。 (NEO-26340)
 * 修复了在将Big Query连接器与日期时间字段结合使用时可能导致错误的问题。 (NEO-49768)
 
 

@@ -5,9 +5,9 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: e5aa245afb6954e7b1be795c42362da5754fb2a4
+source-git-commit: 758d542b353a2d784407954089586e761825d740
 workflow-type: tm+mt
-source-wordcount: '1453'
+source-wordcount: '1466'
 ht-degree: 51%
 
 ---
@@ -20,7 +20,13 @@ Adobe Campaign 会定期更新。这种定期更新旨在让您掌握最新、�
 
 此外，作为客户，请确保您使用的是 [兼容性矩阵](compatibility-matrix.md).
 
-## 8.5.1 版 {#release-8-5}
+## 8.5.2版 {#release-8-5-2}
+
+_2023年8月2日_
+
+修复了升级到8.5.1时可能发生的安全问题。 (NEO-64767)
+
+## 8.5.1版 {#release-8-5}
 
 _2023年6月30日_
 

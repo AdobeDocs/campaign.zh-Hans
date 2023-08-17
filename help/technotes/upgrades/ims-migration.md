@@ -1,6 +1,6 @@
 ---
 title: 将技术用户迁移到Adobe Developer控制台
-description: 了解如何在Adobe Developer控制台上将Campaign技术操作员迁移到技术帐户
+description: 了解如何将Campaign技术操作员迁移到Adobe Developer控制台上的技术帐户
 source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
 workflow-type: tm+mt
 source-wordcount: '779'
@@ -14,16 +14,16 @@ ht-degree: 0%
 
 ## 更改了哪些内容？{#ims-changes}
 
-Campaign常规用户已通过AdobeIdentity Management System (IMS)，使用他们的Adobe ID连接到Adobe Campaign控制台。 作为加强安全和身份验证流程工作的一部分，Adobe Campaign客户端应用程序现在使用IMS技术帐户令牌直接调用Campaign API。
+Campaign常规用户已通过AdobeIdentity Management System (IMS)，使用其Adobe ID连接到Adobe Campaign控制台。 作为加强安全和身份验证过程的一部分，Adobe Campaign客户端应用程序现在使用IMS技术帐户令牌直接调用Campaign API。
 
 了解中关于新服务器到服务器身份验证过程的更多信息 [Adobe Developer控制台文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
-此更改适用于Campaign v8.5，并且将 **必需** 从Campaign v8.6开始。
+此更改适用于从Campaign v8.5开始的，并且将 **必需** 从Campaign v8.6开始。
 
 
 ## 您是否受影响？{#ims-impacts}
 
-如果您使用的是Campaign API，则需要将技术操作员迁移到Adobe Developer控制台，如下所述。
+如果您使用的是Campaign API，则需要将技术运算符迁移到Adobe Developer控制台，如下所述。
 
 ## 如何迁移？{#ims-migration-procedure}
 
@@ -35,9 +35,9 @@ Campaign常规用户已通过AdobeIdentity Management System (IMS)，使用他�
 
 集成是作为的一部分创建的 **项目** 在Adobe Developer控制台中。 了解有关中项目的更多信息 [Adobe Developer控制台文档](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.
 
-作为Campaign v8用户，您应已在Adobe Developer Console中拥有项目。 如果不能，则必须创建一个项目。 详细说明创建项目的步骤 [在Adobe Developer Console文档中](https://developer.adobe.com/developer-console/docs/guides/getting-started/){target="_blank"}.
+作为Campaign v8用户，您应已在Adobe Developer控制台中拥有项目。 如果不能，则必须创建一个项目。 详细说明创建项目的步骤 [在Adobe Developer Console文档中](https://developer.adobe.com/developer-console/docs/guides/getting-started/){target="_blank"}.
 
-在访问Campaign项目后，您可以添加包括API、Adobe Campaign和I/O管理API在内的服务。 对于此迁移，您必须在项目中添加以下API： **I/O管理API** 和 **Adobe Campaign**.
+访问Campaign项目后，您可以添加各种服务，包括API、Adobe Campaign和I/O管理API。 对于此迁移，您必须在项目中添加以下API： **I/O管理API** 和 **Adobe Campaign**.
 
 ![](assets/do-not-localize/ims-products-and-services.png)
 
@@ -63,9 +63,9 @@ Campaign常规用户已通过AdobeIdentity Management System (IMS)，使用他�
 ### 步骤4 — 在客户端控制台中更新技术操作员 {#ims-migration-step-4}
 
 
-只有在为此操作员（而不是通过操作员的组）定义了特定文件夹权限或命名权限时，才需要执行此步骤。
+仅当已为此操作员（而不是通过操作员的组）定义了特定文件夹权限或命名权限时，才需要执行此步骤。
 
-您现在需要在Adobe Campaign客户端控制台中更新新创建的技术运算符。 您必须将现有技术操作员文件夹权限应用到新的技术操作员。
+现在，您需要在Adobe Campaign客户端控制台中更新新创建的技术运算符。 您必须将现有的技术操作员文件夹权限应用到新的技术操作员。
 要更新此运算符，请执行以下步骤：
 
 1. 在Campaign Client Console资源管理器中，浏览到 **管理>访问管理>运算符**.
@@ -77,7 +77,7 @@ Campaign常规用户已通过AdobeIdentity Management System (IMS)，使用他�
 
 >[!CAUTION]
 >
->新的技术操作员必须已发出至少一个API调用，才能添加到Campaign客户端控制台。
+>新的技术操作员必须至少进行了一次要添加到Campaign客户端控制台的API调用。
 >
 
 <!--
@@ -162,7 +162,7 @@ You can also update the technical operator programmatically, using SQL scripts o
 
 ### 步骤5 — 验证配置 {#ims-migration-step-5}
 
-要尝试连接，请按照 [Adobe Developer Console凭据指南](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/#generate-access-tokens){target="_blank"} ，以生成访问令牌并复制提供的示例cURL命令。
+要尝试连接，请按照 [Adobe Developer Console凭据指南](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/#generate-access-tokens){target="_blank"} ，用于生成访问令牌并复制提供的示例cURL命令。
 
 
 ### 步骤6 — 更新第三方API集成 {#ims-migration-step-6}
@@ -175,7 +175,7 @@ You can also update the technical operator programmatically, using SQL scripts o
 ### 步骤7 — 删除旧的技术操作员 {#ims-migration-step-7}
 
 
-迁移完与技术帐户用户的所有API/自定义代码集成后。 您可以从Campaign客户端控制台中删除旧的技术运算符。
+在迁移所有API/自定义代码与技术帐户用户的集成后。 您可以从Campaign客户端控制台中删除旧的技术运算符。
 
 ### Soap调用示例{#ims-migration-samples}
 

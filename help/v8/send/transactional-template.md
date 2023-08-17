@@ -1,5 +1,5 @@
 ---
-title: 创建并发布事务型消息传递模板
+title: 创建并发布事务性消息传递模板
 description: 了解如何创建和发布事务性消息传递模板
 feature: Transactional Messaging
 role: User
@@ -12,16 +12,16 @@ ht-degree: 1%
 
 ---
 
-# 创建并发布事务型消息传递模板{#template-transactional-messages}
+# 创建并发布事务性消息传递模板{#template-transactional-messages}
 
-每个事件都可以触发个性化消息。 要实现此目的，您需要创建消息模板以匹配每个事件类型。 模板包含个性化事务型消息的必需信息。 您还可以使用模板测试消息预览，并在交付到最终目标之前使用种子地址发送校样。
+每个事件都可以触发个性化消息。 要做到这一点，您需要创建一个消息模板以匹配每个事件类型。 模板包含个性化事务型消息的必需信息。 您还可以使用模板测试消息预览，并在将消息交付到最终目标之前使用种子地址发送校样。
 
 ## 创建模板{#create-message-template}
 
 要创建消息模板，请执行以下步骤：
 
-1. 转到 **[!UICONTROL Message Center >Transactional message templates]** 文件夹(在Adobe Campaign树中)。
-1. 在事务型消息模板的列表中，右键单击并选择 **[!UICONTROL New]** 在下拉菜单中，或单击 **[!UICONTROL New]** 按钮时，发送电子邮件给用户。
+1. 转到 **[!UICONTROL Message Center >Transactional message templates]** Adobe Campaign树中的文件夹。
+1. 在事务性消息模板的列表中，右键单击并选择 **[!UICONTROL New]** 在下拉菜单中，或单击 **[!UICONTROL New]** 按钮进行标记。
 
    ![](assets/messagecenter_create_model_001.png)
 
@@ -38,7 +38,7 @@ ht-degree: 1%
    >
    >事件类型不得链接到多个模板。
 
-1. 输入特性和说明，然后单击 **[!UICONTROL Continue]** 以创建消息正文。
+1. 输入性质和说明，然后单击 **[!UICONTROL Continue]** 以创建消息正文。
 
 ## 创建内容{#create-message-content}
 
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->消息中包含的图像必须可公开访问。 Adobe Campaign不提供事务型消息的任何图像上传机制。\
+>消息中包含的图像必须可公开访问。 Adobe Campaign没有为事务性消息提供任何图像上传机制。\
 >与JSSP或webApp不同， `<%=` 没有任何默认转义。
 >
 >您必须正确对来自事件的每个数据进行转义。 此转义取决于此字段的使用方式。 例如，在URL中，请使用encodeURIComponent。 要显示在HTML中，您可以使用escapeXMLString。
@@ -74,7 +74,7 @@ ht-degree: 1%
 
 ### 添加种子地址{#add-seeds}
 
-种子地址允许您在发送消息之前显示消息的预览、发送校样和测试消息个性化。 种子地址链接到投放，不能用于其他投放。
+利用种子地址，可显示消息预览、发送校样并在发送消息之前测试消息个性化。 种子地址已链接到投放，并且无法用于其他投放。
 
 1. 在事务型消息模板中，单击 **[!UICONTROL Seed addresses]** 选项卡，然后单击 **[!UICONTROL Add]** 按钮。
 
@@ -82,7 +82,7 @@ ht-degree: 1%
 
 1. 为其分配标签以便稍后轻松选择，然后输入种子地址（电子邮件或移动电话，具体取决于通信渠道）。
 
-1. 输入外部标识符：此可选字段允许您输入业务密钥（唯一ID、名称+电子邮件等） 这是您网站上所有应用程序通用的功能，用于标识您的个人资料。 如果此字段也出现在Adobe Campaign营销数据库中，则随后可以将事件与数据库中的用户档案进行协调。
+1. 输入外部标识符：此可选字段允许您输入业务密钥（唯一ID、名称+电子邮件等） 这是您网站上所有应用程序通用的功能，用于识别您的配置文件。 如果此字段也出现在Adobe Campaign营销数据库中，则之后可以将事件与数据库中的用户档案进行协调。
 
    ![](assets/messagecenter_create_seed_2.png)
 
@@ -92,7 +92,7 @@ ht-degree: 1%
 
 1. 单击 **[!UICONTROL Ok]** 以确认种子地址的创建。
 
-1. 重复此过程，根据需要创建任意数量的地址。
+1. 重复此过程，根据需要创建所需数量的地址。
 
    ![](assets/messagecenter_create_seed_6.png)
 
@@ -122,7 +122,7 @@ This information enables you to personalize message content using personalizatio
 
 创建一个或多个种子地址和消息正文后，您可以预览消息并检查其个性化。
 
-1. 在消息模板中，单击 **[!UICONTROL Preview]** 选项卡，然后选择 **[!UICONTROL A seed address]** 下拉列表中。
+1. 在消息模板中，单击 **[!UICONTROL Preview]** 选项卡，然后选择 **[!UICONTROL A seed address]** （在下拉列表中）。
 
    ![](assets/messagecenter_preview_1.png)
 
@@ -134,16 +134,16 @@ This information enables you to personalize message content using personalizatio
 
 您可以通过向之前创建的种子地址发送校样来测试消息投放。
 
-发送证明的过程与任何投放的过程相同。
+发送验证的过程与发送任何投放的过程相同。
 
-要了解有关验证的更多信息，请参阅 [本节](../send/preview-and-proof.md#proofs-send).
+了解有关验证的更多信息，请参阅 [本节](../send/preview-and-proof.md#proofs-send).
 
-但是，要发送事务型消息的证明，您需要执行以下操作：
+但是，要发送事务型消息的验证，您需要执行以下操作：
 
-* 创建一个或多个 [种子地址](#add-seeds) 使用个性化测试数据
+* 创建一个或多个 [种子地址](#add-seeds) 包含个性化测试数据
 * 创建消息内容
 
-要发送校样，请执行以下操作：
+要发送证明：
 
 1. 单击 **[!UICONTROL Send a proof]** 按钮。
 1. 分析投放。
@@ -151,11 +151,11 @@ This information enables you to personalize message content using personalizatio
 
    ![](assets/messagecenter_send_proof_001.png)
 
-1. 检查消息是否已送达种子地址，并且其内容符合您的配置。
+1. 检查邮件是否已发送到种子地址，以及邮件内容是否符合您的配置。
 
    ![](assets/messagecenter_send_proof_002.png)
 
-可通过访问每个模板中的验证 **[!UICONTROL Audit]** 选项卡。
+可以通过访问每个模板中的校样 **[!UICONTROL Audit]** 选项卡。
 
 ![](assets/messagecenter_send_proof_003.png)
 
@@ -171,7 +171,7 @@ Publication lets you automatically create two message templates on the execution
 
 >[!CAUTION]
 >
->无论何时对模板进行任何更改，都应确保再次发布模板，以便这些更改在事务型消息投放期间生效。
+>无论何时对模板进行更改，请确保再次发布模板，以便这些更改在事务型消息投放期间生效。
 
 1. 转到 **[!UICONTROL Message Center > Transactional message templates]** 树的文件夹。
 1. 选择要发布的模板<!--on your execution instances-->.
@@ -179,11 +179,11 @@ Publication lets you automatically create two message templates on the execution
 
    ![](assets/messagecenter_publish_template.png)
 
-发布完成后，将在中创建应用于批处理事件和实时类型事件的消息模板 **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]** 文件夹。
+发布完成后，将在中创建要应用于批量事件和实时类型事件的消息模板 **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]** 文件夹。
 
 ![](assets/messagecenter_deployed_model.png)
 
-发布模板后，如果触发了相应的事件，则Adobe Campaign<!--execution instance--> 将接收事件，将其链接到事务型模板，并将相应的事务型消息发送给每个收件人。
+发布模板后，如果触发了相应的事件，则返回Adobe Campaign<!--execution instance--> 将接收事件，将其链接到事务型模板，并将相应的事务型消息发送给每个收件人。
 
 <!--
 >[!NOTE]
@@ -195,13 +195,13 @@ Publication lets you automatically create two message templates on the execution
 
 ## 取消发布模板
 
-发布消息模板后 <!--on the execution instances-->，可以取消发布。
+发布消息模板后 <!--on the execution instances-->，可以取消发布它。
 
-* 事实上，如果触发了相应的事件，仍可以调用已发布的模板：如果您不再使用消息模板，建议取消发布该模板。 这是为了避免错误地发送不需要的事务型消息。
+* 事实上，如果触发了相应的事件，仍可调用已发布的模板：如果您不再使用消息模板，则建议取消发布该模板。 这是为了避免错误地发送不需要的事务型消息。
 
-   例如，您发布了一个消息模板，该模板只能用于圣诞节促销活动。 您可能需要在圣诞节结束后取消发布它，并在明年再次发布。
+  例如，您发布了一个消息模板，该模板仅用于圣诞节促销活动。 您可能需要在圣诞节结束后取消发布它，并在明年再次发布。
 
-* 此外，您无法删除具有以下特征的事务型消息模板： **[!UICONTROL Published]** 状态。 必须先取消发布。
+* 此外，无法删除具有以下特征的事务型消息模板： **[!UICONTROL Published]** 状态。 必须先取消发布它。
 
 要取消发布事务型消息模板，请执行以下步骤。
 
@@ -216,10 +216,10 @@ Publication lets you automatically create two message templates on the execution
 
 取消发布完成后：
 
-* 两个消息模板（应用于批处理事件和实时类型事件）都会被删除<!-- from each execution instance-->.
+* 已删除消息模板（应用于批处理事件和实时类型事件）<!-- from each execution instance-->.
 
-   它们不再出现在 **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]** 文件夹。
+  它们不再出现在 **[!UICONTROL Administration > Production > Message Center Execution > Default > Transactional message templates]** 文件夹。
 
 * 取消发布模板后，您可以将其删除<!-- from the control instance-->.
 
-   要执行此操作，请从列表中选择它，然后单击 **[!UICONTROL Delete]** 按钮。
+  要执行此操作，请从列表中选择它，然后单击 **[!UICONTROL Delete]** 按钮。

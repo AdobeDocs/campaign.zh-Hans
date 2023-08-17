@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # 工作流中的事件活动{#about-event-activities}
 
-这些活动的主要任务包括等待事件。 例如，它可以是接收文件、电子邮件或由第三方系统发送的信号。
+这些活动的主要任务包括等待事件。 例如，它可以是接收文件、电子邮件或第三方系统发送的信号。
 
-这些活动在中不可用 [营销活动特定的工作流](campaign-workflows.md).
+这些活动在中不可用 [特定于营销活动的工作流](campaign-workflows.md).
 
 
-* **[文件收集器](file-collector.md)**：监控一个或多个文件到达目录的情况，并为每个接收的文件启用过渡。
+* **[文件收集器](file-collector.md)**：监视一个或多个文件到达目录并启用每个接收文件的转换。
 * **[文件传输](file-transfer.md)**：将文件传输到服务器。
 * **[入站电子邮件](inbound-emails.md)**：恢复和处理电子邮件。
-* **[入站SMS](inbound-sms.md)**：恢复并处理短信。
+* **[入站SMS](inbound-sms.md)**：恢复和处理短信。
 * **[Web下载](web-download.md)**：从Web下载文件。

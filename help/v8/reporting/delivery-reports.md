@@ -17,7 +17,7 @@ ht-degree: 9%
 要访问报表，请执行以下步骤：
 
 1. 浏览至 **[!UICONTROL Campaigns]** 选项卡，然后单击 **[!UICONTROL Delivery]** 用于显示投放列表的链接。
-1. 单击要访问报告的投放的名称。
+1. 单击要访问报告的投放名称。
 1. 选择 **[!UICONTROL Summary]** 选项卡，然后单击 **[!UICONTROL Reports]** 用于访问特定于投放的报告的链接。
 
    ![](assets/detailed-report-2.png)
@@ -44,7 +44,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->根据消息打开次数计算的值始终是估计值，这是因为以文本格式链接到电子邮件的错误边距。 此 **[!UICONTROL Distinct opens/Sum of opens for the population reached]** 指示器会将此误差范围考虑在内。 [了解详情](metrics-calculation.md#tracking-opens-)。
+>根据消息打开次数计算的值始终为估计值，这是因为文本格式中链接至电子邮件的错误边距。 此 **[!UICONTROL Distinct opens/Sum of opens for the population reached]** 指示器会将此误差范围考虑在内。 [了解详情](metrics-calculation.md#tracking-opens-)。
 
 ![](assets/tracking-report-synthesis.png)
 
@@ -57,27 +57,27 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->相关百分比是根据成功转发的邮件数计算的。
+>相关百分比是根据成功转发的邮件数来计算的。
 
-* **[!UICONTROL Distinct opens for the population reached]** ：估计至少已打开消息一次的目标收件人的数量。 由于必须打开电子邮件才能点击链接，因此会考虑对跟踪URL的点击量。
-* **[!UICONTROL Sum of opens for the population reached]** ：目标收件人打开总数的估计。
+* **[!UICONTROL Distinct opens for the population reached]** ：估计已打开消息至少一次的目标收件人的数量。 由于必须打开电子邮件才能单击链接，因此会考虑对跟踪URL的点击量。
+* **[!UICONTROL Sum of opens for the population reached]** ：估计目标收件人打开的总数。
 * **[!UICONTROL Clicks on opt-out link]** ：取消订阅链接的点击次数。
-* **[!UICONTROL Clicks on the mirror page link]** ：指向的链接的点击次数 [镜像页面](../send/mirror-page.md). 为了便于考虑，必须在投放向导（跟踪的URL）中定义链接。
-* **[!UICONTROL Estimation of forwards]** ：目标收件人转发的电子邮件数量的估计。 此值计算方式为减去不同联系人数和单击了电子邮件的不同收件人数量。
+* **[!UICONTROL Clicks on the mirror page link]** ：指向的链接的点击次数 [镜像页面](../send/mirror-page.md). 要将其考虑在内，必须在投放向导（跟踪的URL）中定义链接。
+* **[!UICONTROL Estimation of forwards]** ：估计目标收件人转发的电子邮件数量。 此值计算方式为减去点击电子邮件的不同人员的数量和不同收件人的数量。
 
-   >[!NOTE]
-   >
-   >有关不同用户与目标收件人之间差异的更多信息，请参阅 [目标人员/收件人](metrics-calculation.md#targeted-persons---recipients).
+  >[!NOTE]
+  >
+  >有关不同人员和目标收件人之间差异的更多信息，请参阅 [目标人员/收件人](metrics-calculation.md#targeted-persons---recipients).
 
 **[!UICONTROL 3. Open and click-through rate]**
 
-此值表显示每个Internet域的投放、打开次数、点击次数和原始反应性的细分。 使用以下指标：
+此值表显示每个Internet域的投放、打开次数、点击次数和原始反应性的细分。 使用以下指示器：
 
 * **[!UICONTROL Sent]** ：在此域上发送的消息总数。
-* **[!UICONTROL Complaints]** ：此域被收件人报告为不受欢迎的消息数。 费率是根据此域上发送的消息总数来计算的。
-* **[!UICONTROL Opens]** ：此域中至少打开过一次邮件的不同定向收件人的数量。 费率是根据此域上发送的消息总数来计算的。
-* **[!UICONTROL Clicks]** ：在同一个投放中至少点击一次的不同目标收件人的数量。 费率是根据此域上发送的消息总数计算的
-* **[!UICONTROL Raw reactivity]** ：与至少打开一次投放的收件人人数相比，至少点击一次投放的收件人人数的百分比。
+* **[!UICONTROL Complaints]** ：此域被收件人报告为不受欢迎的消息数。 根据此域上发送的消息总数来计算速率。
+* **[!UICONTROL Opens]** ：此域中至少打开过一次消息的不同目标收件人的数量。 根据此域上发送的消息总数来计算速率。
+* **[!UICONTROL Clicks]** ：在同一个投放中至少点击一次的不同目标收件人的数量。 根据此域上发送的消息总数来计算速率
+* **[!UICONTROL Raw reactivity]** ：与至少打开一次投放的收件人数量相比，已至少点击一次投放的收件人数量的百分比。
 
 >[!NOTE]
 >
@@ -90,12 +90,12 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->相关百分比是根据成功转发的邮件数计算的。
+>相关百分比是根据成功转发的邮件数来计算的。
 
-* **[!UICONTROL Distinct clicks for the population reached]** ：在投放中至少单击一次的不同人数。
+* **[!UICONTROL Distinct clicks for the population reached]** ：在投放中至少单击一次的不同人员的数量。
 * **[!UICONTROL Cumulated clicks]** ：目标收件人的总点击次数，不包括退订链接和镜像页面。
 * **[!UICONTROL Recipient clicks]** ：在同一个投放中至少点击一次的不同目标收件人的数量。
-* **[!UICONTROL Estimated recipient reactivity]** ：投放中点击至少一次的收件人数量与至少打开投放一次的预计收件人数量的比率。 对选择退出和镜像页面链接的点击次数不会考虑在内。
+* **[!UICONTROL Estimated recipient reactivity]** ：投放中至少点击一次的收件人数量与至少打开投放一次的预计收件人数量的比率。 选择退出和镜像页面链接的点击次数不包含在内。
 <!--
 **[!UICONTROL 5. Web tracking]**
 
@@ -178,19 +178,19 @@ This chart shows the breakdown of cumulated clicks per day.
 
 >[!NOTE]
 >
->如果您的投放包含选件（交互），则报表上方的部分中将出现一个框，显示对选件的点击百分比。
+>如果您的投放包含选件（交互），则报表上方部分会显示一个框，其中显示了对选件点击的百分比。
 
 
 ## 跟踪统计信息 {#tracking-statistics}
 
 此报表提供有关打开、点击和交易的统计数据。
 
-通过它，您可以跟踪投放对营销的影响。 您可以通过更改时间刻度（1小时、3小时或24小时视图等）来配置值的显示方式。 单击 **[!UICONTROL Refresh]** 以确认您的选择。
+通过它，您可以跟踪投放的营销影响。 您可以通过更改时间刻度（1小时、3小时或24小时视图等）来配置值的显示方式。 单击 **[!UICONTROL Refresh]** 以确认您的选择。
 
-此报告提供了一个值表和一个排列图，其中显示投放达到最大效率所需的时间。 使用以下指标：
+此报告提供了一个值表和一个排列图，其中显示投放达到最大效率所需的时间。 使用以下指示器：
 
 * **[!UICONTROL Opens]** ：估算达到打开消息总数百分比所需的时间。 不考虑文本格式的电子邮件。 [了解详情](metrics-calculation.md#tracking-opens-)。
-* **[!UICONTROL Clicks]** ：估算达到记录的总点击数的百分比所需的时间。 对选择退出链接和镜像页面的点击次数不会考虑在内。
+* **[!UICONTROL Clicks]** ：估算达到记录的总点击数百分比所需的时间。 选择退出链接和镜像页面的点击次数不会考虑在内。
 <!--
 * **[!UICONTROL Transactions]** : Time required to achieve a percentage of the total number of transactions following message reception. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
 -->
@@ -198,8 +198,8 @@ This chart shows the breakdown of cumulated clicks per day.
 
 ## 累积报告 {#cumulated-reports}
 
-您可以显示投放的累积报告。 为此，请选择要比较的投放以获取这些投放的报告列表。
+您可以显示投放的累积报告。 要实现此目的，请选择要比较的投放，以获取这些投放的报告列表。
 
 要从列表中选择不相邻的投放，请在进行选择时按住CTRL键。
 
-要选择保存在其他文件夹中的投放，请单击 **[!UICONTROL Display sub-levels]** 图标，可在工具栏中访问。 然后，它们将显示在同一列表中。
+要选择保存在其他文件夹中的投放，请单击 **[!UICONTROL Display sub-levels]** 图标（可在工具栏中访问）。 然后，它们将显示在同一列表中。

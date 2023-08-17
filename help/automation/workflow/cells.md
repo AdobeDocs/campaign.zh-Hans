@@ -17,15 +17,15 @@ ht-degree: 2%
 
 ![](assets/wf_split_cells.png)
 
-可将此活动配置为根据用户需求输入特定参数。 默认情况下，每个子集的详细信息都会在专用窗口中通过 **[!UICONTROL Cells]** 和 **[!UICONTROL Advanced]** 选项卡。
+此活动可配置为根据用户需求输入特定参数。 默认情况下，每个子集的详细信息都会在专用窗口中通过 **[!UICONTROL Cells]** 和 **[!UICONTROL Advanced]** 选项卡。
 
 ![](assets/wf_split_cells_with_customization.png)
 
-在以下示例中，输入表单已修改： **[!UICONTROL Data]** 添加了选项卡，以启用优惠与每个子集的优先级之间的关联。
+在下面的示例中，输入表单已修改： **[!UICONTROL Data]** 添加了选项卡，以启用选件与每个子集的优先级之间的关联。
 
 ![](assets/cells-activity-sample.png)
 
-对于此配置，已将以下信息添加到工作流表单的 **[!UICONTROL Administration > Configurations > Input forms]** Adobe Campaign资源管理器的节点：
+对于此配置，已将以下信息添加到工作流表单的 **[!UICONTROL Administration > Configurations > Input forms]** Adobe Campaign资源管理器节点：
 
 ```
 <container img="nms:miniatures/mini-enrich.png" label="Data">
@@ -50,4 +50,4 @@ ht-degree: 2%
                 </container>
 ```
 
-Adobe Campaign中的输入表单个性化是为专家用户保留的。
+Adobe Campaign中的输入表单个性化仅适用于专家用户。

@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 向匿名用户档案展示优惠（入站交互）
-description: 了解如何向匿名用户档案提供优惠
+title: 向匿名用户档案展示优惠（入站互动）
+description: 了解如何向匿名用户档案展示优惠
 exl-id: b7a04360-f8c6-4c69-9594-2b44d3f819b7
 source-git-commit: 6de5c93453ffa7761cf185dcbb9f1210abd26a0c
 workflow-type: tm+mt
@@ -20,17 +20,17 @@ ht-degree: 0%
 
 此 **[!UICONTROL Targeting dimension]** 将自动完成。 默认情况下，该链接会链接到访客表。
 
-此 **[!UICONTROL Visitor folder]** 字段。 自动完成以链接到 **[!UICONTROL Visitors]** 文件夹。 此字段允许您选择存储访客配置文件的位置。
+此 **[!UICONTROL Visitor folder]** 字段。 系统会自动完成链接到 **[!UICONTROL Visitors]** 文件夹。 此字段允许您选择存储访客配置文件的位置。
 
 ![](assets/anonymous_environment_option.png)
 
 >[!NOTE]
 >
->如果要筛选多种类型的访客，例如，为一个或多个品牌提供的匿名优惠，则需要为每个品牌创建一个环境，并且 **[!UICONTROL Visitors]** 为每个环境键入文件夹。
+>如果要过滤多种类型的访客，例如为一个或多个品牌提供的匿名优惠，则需要为每个品牌创建一个环境，并且 **[!UICONTROL Visitors]** 为每个环境键入文件夹。
 
 ## 匿名交互的优惠目录 {#offer-catalog-for-anonymous-interactions}
 
-与叫客交互一样，入站交互也是在由类别和优惠组成的优惠目录中组织的。
+与叫客交互一样，入站交互也会在优惠目录中组织，该优惠目录由类别和优惠组成。
 
 要创建类别和空间，请应用与已识别访客相同的流程。 请参阅 [创建优惠类别](interaction-offer-catalog.md#creating-offer-categories) 和 [创建优惠环境](interaction-env.md#creating-an-offer-environment))。
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 匿名访客在连接时可能会提交到Cookie识别流程。 此隐式识别基于访客的浏览器历史记录。
 
-在此步骤中，将Cookie恢复的数据与数据库中的数据进行比较。 在一些情况下，访客会被识别（然后被隐式识别），而在其他情况下，访客不会被识别（因此保持匿名）。
+在此步骤中，将比较由Cookie恢复的数据与数据库中的数据。 在一些情况下，访客会被识别（然后被隐式识别），而在其他情况下，访客不会被识别（因此保持匿名）。
 
 要运行此分析，对于选件空间，请选中 **[!UICONTROL Implicitly identify the individual based on their browser history]** 选项。
 
@@ -46,10 +46,10 @@ ht-degree: 0%
 
 ## 处理未识别的匿名访客 {#processing-unidentified-anonymous-visitors}
 
-经过分析后，如果未识别匿名访客，则可以将他们的数据存储在给定的空间中。 这样，您就可以根据指定的分类规则，提出专门针对此类访客的优惠建议。
+经过分析后，如果匿名访客未识别，则可以将他们的数据存储在给定空间中。 这样，您就可以根据指定的分类规则，提出专门针对此类访客的优惠建议。
 
-如果没有允许您识别联系人的元素，或者如果您不想向可以隐式识别的联系人建议已识别的选件，则可以选择对匿名环境执行回退。
+如果没有允许您识别联系人的元素，或者如果您不想向可以隐式识别的联系人建议已识别的优惠，则可以选择对匿名环境进行替代。
 
-要执行此操作，请查看 **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]**，然后在中指定专门为这些未识别的访客提供的环境 **[!UICONTROL Linked anonymous space]** 指定优惠空间时。
+要执行此操作，请查看 **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]**，然后在中指定专用于这些未识别访客的环境 **[!UICONTROL Linked anonymous space]** 指定选件空间时。
 
 ![](assets/anonymous_to_anonymous_environment.png)

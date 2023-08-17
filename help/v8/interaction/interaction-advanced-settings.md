@@ -20,5 +20,5 @@ Campaign交互模块配置已保留给专家用户。 有关高级设置的详�
 
 ![](../assets/do-not-localize/book.png) 了解创建测试环境的步骤  [本页内容](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/creating-a-test-environment.html){target="_blank"}.
 
-![](../assets/do-not-localize/book.png) 了解如何使用挂接修改优惠引擎的标准行为 [本页内容](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/hooks.html){target="_blank"}.
+![](../assets/do-not-localize/book.png) 了解如何使用挂接来修改优惠引擎的标准行为 [本页内容](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/hooks.html){target="_blank"}.
 

@@ -23,11 +23,11 @@ An **[!UICONTROL SQL code]** 活动执行SQL脚本。 脚本是JST模板。
 
 * **[!UICONTROL Script]**
 
-   编辑器的中心区域包含要执行的脚本。 此脚本是一个JST模板，因此可以根据工作流上下文进行配置。
+  编辑器的中心区域包含要执行的脚本。 此脚本是一个JST模板，因此可以根据工作流上下文进行配置。
 
 * **[!UICONTROL Processing errors]**
 
-   请参阅 [处理错误](monitor-workflow-execution.md#processing-errors).
+  请参阅 [正在处理错误](monitor-workflow-execution.md#processing-errors).
 
 ## JavaScript代码和高级JavaScript代码 {#javascript-code}
 
@@ -50,7 +50,7 @@ An **[!UICONTROL SQL code]** 活动执行SQL脚本。 脚本是JST模板。
 
 * **[!UICONTROL Script]**：编辑器的中心区域包含要执行的脚本。
 
-* **[!UICONTROL Process errors]**：请参阅 [处理错误](monitor-workflow-execution.md#processing-errors).
+* **[!UICONTROL Process errors]**：请参阅 [正在处理错误](monitor-workflow-execution.md#processing-errors).
 
 ### 高级 JavaScript 代码 {#adv-js-code-desc}
 
@@ -59,9 +59,9 @@ An **[!UICONTROL SQL code]** 活动执行SQL脚本。 脚本是JST模板。
 * **[!UICONTROL First call]**：编辑器的第一个区域包含要在第一次调用期间执行的脚本。
 * **[!UICONTROL Next calls]**：编辑器的第二个区域包含要在下次调用期间执行的脚本。
 * **[!UICONTROL Transitions]**：您可以定义多个活动输出过渡。
-* **[!UICONTROL Schedule]**：此 **[!UICONTROL Schedule]** 选项卡允许您安排何时触发活动。
+* **[!UICONTROL Schedule]**：和 **[!UICONTROL Schedule]** 选项卡允许您计划何时触发活动。
 
-高级JavaScript是一个永久性任务，如果未标记为已完成，则会定期回调。 要终止任务并防止将来出现撤回情况，您必须使用 **task.setCompleted()** 中的方法 **[!UICONTROL Next calls]** 部分：
+高级JavaScript是一个持续性任务，如果未标记为已完成，则会定期回调。 要终止任务并防止将来出现撤回情况，您必须使用 **task.setCompleted()** 中的方法 **[!UICONTROL Next calls]** 部分：
 
 ```
 task.postEvent(task.transitionByName("ok")); // to transition to Ok branch

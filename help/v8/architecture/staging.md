@@ -16,23 +16,22 @@ ht-degree: 2%
 
 在上下文中 [企业(FFDA)部署](enterprise-deployment.md)，不建议在性能（延迟和并发）方面引发单一调用。 批处理操作始终是首选操作。 为了提高性能，引入API将被重定向到本地数据库。
 
-默认情况下，某些内置架构启用了Campaign暂存功能。 我们还可以在任何自定义架构上启用它。 暂存机制简述：
+默认情况下，某些内置架构启用了Campaign暂存功能。 我们也可以在任何自定义架构上启用它。 暂存机制简介：
 
 * 数据架构结构复制到本地暂存表中
 * 专门用于数据摄取的新API直接流入本地暂存表。 [了解详情](new-apis.md)
 * 计划的工作流每小时触发一次，并将数据同步回云数据库。 [了解详情](replication.md)
 
-默认情况下，某些内置模式处于暂存状态，例如nmsSubscriptionRcp、nmsAppSubscriptionRcp、nmsRecipient。
+默认情况下，某些内置模式处于暂存状态，如nmsSubscriptionRcp、nmsAppSubscriptionRcp、nmsRecipient。
 
-Campaign Classicv7 API仍然可用，但无法从这种新的暂存机制中获益： API调用直接流向云数据库。 Adobe建议尽量使用新的暂存机制，以减少Campaign Cloud数据库的总体压力和延迟。
+Campaign Classicv7 API仍然可用，但无法从这种新的暂存机制受益： API调用直接流向云数据库。 Adobe建议尽可能使用新的暂存机制，以减少Campaign Cloud数据库的总体压力和延迟。
 
 >[!CAUTION]
 >
->* 通过这一新机制，现在可以为渠道选择退出、订阅、取消订阅或移动注册进行数据同步 **异步**.
+>* 借助此新机制，现在可以针对渠道选择、订阅、取消订阅或移动注册执行数据同步 **异步**.
 >
 >* 暂存仅适用于存储在云数据库中的架构。 请勿在复制的架构上启用暂存。 请勿在本地架构上启用暂存。 不要在暂存方案上启用暂存
 >
-
 
 ## 实施步骤{#implement-staging}
 
@@ -57,7 +56,7 @@ Campaign Classicv7 API仍然可用，但无法从这种新的暂存机制中获�
 
 1. 保存并更新数据库结构。  [了解详情](../dev/update-database-structure.md)
 
-1. 通过添加以下内容，在模式定义中启用暂存机制 **autoStg=&quot;true&quot;** 参数。
+1. 在模式定义中启用暂存机制，方法是添加 **autoStg=&quot;true&quot;** 参数。
 
    ```
    <srcSchema _cs="Sample Table (dem)" "YYYY-DD-MM"

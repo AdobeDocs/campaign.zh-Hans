@@ -15,13 +15,13 @@ ht-degree: 8%
 
 ## 设置其他参数 {#delivery-additional-parameters}
 
-在发送投放之前，您可以通过 **[!UICONTROL Delivery]** 选项卡。
+在发送投放之前，您可以在投放属性中定义发送参数，方法是 **[!UICONTROL Delivery]** 选项卡。
 
 ![](assets/delivery-properties-delivery.png)
 
-* **[!UICONTROL Delivery priority]**：使用此选项可以通过设置投放的优先级来更改投放的发送顺序，从 **[!UICONTROL Very low]** 到 **[!UICONTROL Very high]** (默认值为 **[!UICONTROL Normal]**)。
+* **[!UICONTROL Delivery priority]**：使用此选项可通过从设置投放的优先级来更改其发送顺序 **[!UICONTROL Very low]** 到 **[!UICONTROL Very high]** (默认值为 **[!UICONTROL Normal]**)。
 
-* **[!UICONTROL Message batch quantity]**：使用此选项可定义在同一XML投放包中分组的消息数。 如果参数设置为0，则消息将自动分组。 程序包大小由计算定义 `<delivery size>/1024`，每个包至少8条消息，最多256条消息。
+* **[!UICONTROL Message batch quantity]**：使用此选项可定义在同一个XML投放包中分组的消息数。 如果参数设置为0，则消息将自动分组。 程序包大小由计算定义 `<delivery size>/1024`，则每个包最少8条消息，最多256条消息。
 
   >[!IMPORTANT]
   >
@@ -29,7 +29,7 @@ ht-degree: 8%
 
 * **[!UICONTROL Send using multiple waves]**：使用此选项可分批发送消息，而不是一次发送给整个受众。 [了解详情](#sending-using-multiple-waves)。
 
-* **[!UICONTROL Test SMTP delivery]**：使用此选项测试通过SMTP发送的邮件。 处理投放直至连接到 SMTP 服务器，但不发送：对于投放的每个收件人，Campaign 连接到 SMTP 提供商服务器，执行 SMTP RCPT TO 命令，并在执行 SMTP DATA 命令之前关闭连接。
+* **[!UICONTROL Test SMTP delivery]**：使用此选项测试通过SMTP进行的发送。 处理投放直至连接到 SMTP 服务器，但不发送：对于投放的每个收件人，Campaign 连接到 SMTP 提供商服务器，执行 SMTP RCPT TO 命令，并在执行 SMTP DATA 命令之前关闭连接。
 
   >[!NOTE]
   >
@@ -37,15 +37,15 @@ ht-degree: 8%
   >
   >* 在中了解有关SMTP服务器配置的更多信息 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html#smtp-relay){target="_blank"}.
 
-* **[!UICONTROL Email BCC]**：使用此选项可以通过密件抄送将电子邮件存储在外部系统上，只需将密件抄送电子邮件地址添加到消息目标即可。 [了解详情](email-parameters.md)。
+* **[!UICONTROL Email BCC]**：使用此选项可以通过密件抄送在外部系统上存储电子邮件，只需将密件抄送电子邮件地址添加到消息目标即可。 [了解详情](email-parameters.md)。
 
 ## 使用多批次发送 {#sending-using-multiple-waves}
 
-要平衡负载，您可以将投放划分为多个批次。 配置批次数量及其相对于整个投放的比例。
+要平衡负荷，您可以将投放分为多个批。 配置批次数量及其相对于整个投放的比例。
 
 >[!NOTE]
 >
->只能定义两个连续波形之间的大小和延迟。 无法配置每个波次的收件人选择标准。
+>您只能定义两个连续波形之间的大小和延迟。 无法配置每个波次的收件人选择标准。
 
 1. 打开投放属性窗口，然后单击 **[!UICONTROL Delivery]** 选项卡。
 1. 选择 **[!UICONTROL Send using multiple waves]** 选项，然后单击 **[!UICONTROL Define waves...]** 链接。
@@ -54,9 +54,9 @@ ht-degree: 8%
 
 1. 要配置批次，您可以：
 
-   * 定义每个波段的大小。 例如，如果您输入 **[!UICONTROL 30%]** 在相应字段中，每个波次将代表投放中所包含报文的30%，但最后一个波次除外，后者将代表报文的10%。
+   * 定义每个波次的大小。 例如，如果您输入 **[!UICONTROL 30%]** 在相应的字段中，每个波次将代表投放中所包含报文的30%，但最后一条代表10%的报文。
 
-     在 **[!UICONTROL Period]** 字段，指定两个连续批次开始之间的延迟。 例如，如果您输入 **[!UICONTROL 2d]**，第一波立即开始，第二波在两天后开始，第三波在四天后开始，依此类推。
+     在 **[!UICONTROL Period]** 字段，指定两个连续批次开始之间的延迟。 例如，如果您输入 **[!UICONTROL 2d]**，第一波立即开始，第二波在两天内开始，第三波在四天内开始，以此类推。
 
      ![](assets/delivery-waves-size.png)
 
@@ -64,31 +64,31 @@ ht-degree: 8%
 
      在 **[!UICONTROL Start]** 列，指定两个连续批次开始之间的延迟。 在 **[!UICONTROL Size]** 列中，输入固定数字或百分比。
 
-     在下面的示例中，第一波表示投放中包含的消息总数的25%，并将立即启动。 接下来的两个批次将完成投放，并设置为以六小时间隔开始。
+     在下面的示例中，第一波表示投放中包含的消息总数的25%，将立即启动。 接下来的两个批次将完成投放，并设置为以六小时间隔开始。
 
      ![](assets/delivery-waves-calendar.png)
 
-   特定的分类规则， **[!UICONTROL Wave scheduling check]**，确保最后一个波次是在投放有效期限制之前规划的。 促销活动类型及其规则，配置于 **[!UICONTROL Typology]** 选项卡中显示的投放属性 [本节](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->.
+   特定的分类规则， **[!UICONTROL Wave scheduling check]**，确保最后一个波次的计划时间早于投放有效期限。 营销活动类型及其规则，配置于 **[!UICONTROL Typology]** 的选项卡中显示 [本节](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->.
 
    >[!IMPORTANT]
    >
-   >确保最后一个批次不超过中定义的投放截止日期 **[!UICONTROL Validity]** 选项卡。 否则，某些消息可能无法发送。
+   >确保最后批次不超过投放截止日期，投放截止日期在中定义 **[!UICONTROL Validity]** 选项卡。 否则，某些消息可能不会发送。
    >
-   >配置最后一个批次时，还必须留出足够的时间进行重试。 <!--See [this section]().-->
+   >在配置最后批次时，还必须留出足够的时间进行重试。 <!--See [this section]().-->
 
 1. 要监控您的发送，请转到投放日志。 请参阅[此页](send.md)<!--ref TBC-->。
 
-   您可以看到已处理批次中发送的投放(**[!UICONTROL Sent]** 状态)和将在剩余批次中发送的投放(**[!UICONTROL Pending]** 状态)。
+   您可以看到已在已处理批次中发送的投放(**[!UICONTROL Sent]** 状态)和要在剩余批次中发送的投放(**[!UICONTROL Pending]** 状态)。
 
 以下两个示例是使用多个批次的最常见用例。
 
 * **启动过程中**
 
-  使用新平台发送电子邮件时，Internet服务提供商(ISP)怀疑无法识别的IP地址。 如果突然发送大量电子邮件，ISP通常会将其标记为垃圾邮件。
+  使用新平台发送电子邮件时，Internet服务提供商(ISP)会怀疑无法识别的IP地址。 如果突然发送大量电子邮件，ISP通常会将其标记为垃圾邮件。
 
-  为避免被标记为垃圾邮件，您可以逐步增加使用批次发送的数量。 这应能确保启动阶段的顺利发展，并使您能够降低无效地址的总速率。
+  要避免被标记为垃圾邮件，您可以逐步增加使用批次发送的数量。 这应该可以确保启动阶段的顺利发展，并帮助您降低地址无效的总比率。
 
-  要执行此操作，请使用 **[!UICONTROL Schedule waves according to a calendar]** 选项。 例如，将第一个波段设置为10%，将第二个波段设置为15%，以此类推。
+  要执行此操作，请使用 **[!UICONTROL Schedule waves according to a calendar]** 选项。 例如，将第一个波次设置为10%，将第二个波次设置为15%，以此类推。
 
   ![](assets/delivery-waves-ex-ramp-up.png)
 
@@ -96,9 +96,9 @@ ht-degree: 8%
 
   在管理电话忠诚度促销活动时，贵组织处理致电订阅者的能力有限。
 
-  通过使用批次，您可以将消息数量限制为每天20条，这是呼叫中心的每日处理能力。
+  使用批次，您可以将每天的消息数量限制为20，这是呼叫中心的每日处理能力。
 
-  要执行此操作，请选择 **[!UICONTROL Schedule multiple waves of the same size]** 选项。 输入 **[!UICONTROL 20]** 海浪的大小和 **[!UICONTROL 1d]** 在 **[!UICONTROL Period]** 字段。
+  要执行此操作，请选择 **[!UICONTROL Schedule multiple waves of the same size]** 选项。 输入 **[!UICONTROL 20]** 因为波浪的大小和 **[!UICONTROL 1d]** 在 **[!UICONTROL Period]** 字段。
 
   ![](assets/delivery-waves-ex-call-center.png)
 
@@ -117,7 +117,7 @@ ht-degree: 8%
 
    ![](assets/delivery-send-analyze.png)
 
-1. 完成后，单击 **[!UICONTROL Confirm delivery]** 以启动消息投放。
+1. 完成后，单击 **[!UICONTROL Confirm delivery]** 以启动消息的投放。
 
    ![](assets/delivery-send-confirm.png)
 
@@ -144,7 +144,7 @@ ht-degree: 8%
 
    >[!IMPORTANT]
    >
-   >开始分析后，您定义的联系日期即是固定的。 如果修改此日期，则必须重新开始分析，以便考虑所做的修改。
+   >开始分析后，您定义的联系日期即是固定的。 如果修改此日期，则必须重新启动分析，以便考虑所做的修改。
 
    ![](assets/delivery-send-scheduled.png)
 
@@ -154,7 +154,7 @@ ht-degree: 8%
 
 ![](assets/delivery-scheduling-button.png)
 
-它可让您将投放推迟到以后的日期，或将投放保存在临时日程表中。
+这样，您可以将投放推迟到以后的日期，或将投放保存在临时日程表中。
 
 * 此 **[!UICONTROL Schedule delivery (no automatic execution)]** 选项允许您计划投放的临时分析。
 

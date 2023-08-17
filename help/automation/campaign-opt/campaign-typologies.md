@@ -25,9 +25,9 @@ ht-degree: 19%
 
 默认情况下，Campaign附带内置分类和分类规则。
 
-分类是在投放分析期间应用于所有消息的一组验证规则。
+类型是在投放分析期间对所有消息应用的一组验证规则。
 
-活动类型可以包含多个类型规则，但投放只能引用一个类型。
+活动分类可以包含多个分类规则，但投放只能引用一个分类。
 
 中提供了内置分类规则和分类 **[!UICONTROL Administration > Campaign management > Typology management]** Campaign资源管理器的文件夹。
 
@@ -35,30 +35,30 @@ ht-degree: 19%
 
 ![](assets/campaign_opt_rules_tab.png)
 
-创建分类规则后，这些规则会按活动进行分组 **类型** 在投放中引用的。 [了解详情](#apply-typologies)。
+创建后，类型规则即会按活动分组 **类型** 在投放中引用的ID。 [了解详情](#apply-typologies)。
 
 
-Campaign附带一组默认值 **正在筛选** 和 **控制** 规则：
+Campaign附带一组默认值 **正在筛选** 和 **控件** 规则：
 
 * **正在筛选** 规则用于根据条件排除部分目标。 [了解详情](filtering-rules.md)。
-* **控制** 规则允许您在发送消息之前检查消息的有效性。 [了解详情](control-rules.md)。
+* **控件** 规则允许您在发送消息之前检查消息的有效性。 [了解详情](control-rules.md)。
 
 Campaign Optimization加载项提供另外两种类型 **类型规则**：
 
 * **压力** 可让您控制营销疲劳的规则。 [了解详情](pressure-rules.md)。
-* **容量** 允许您限制负载以确保最佳处理条件的规则。 [了解详情](consistency-rules.md#controlling-capacity)。
+* **容量** 可让您限制负载以确保最佳处理条件的规则。 [了解详情](consistency-rules.md#controlling-capacity)。
 
 
 >[!NOTE]
 >
->如果您使用 **互动** 用于管理优惠的模块，您还可以创建 **优惠呈现** 类型规则，使用表示规则控制优惠建议的流程。 [了解详情](../../v8/interaction/interaction-offer.md#offer-presentation)。
+>如果您使用 **互动** 模块以管理优惠，您还可以创建 **优惠呈现** 类型规则，使用呈现规则控制优惠建议的流程。 [了解详情](../../v8/interaction/interaction-offer.md#offer-presentation)。
 
 
 ## 创建和使用分类的关键步骤 {#apply-typologies}
 
 要创建和使用投放的分类，请执行以下步骤：
 
-1. 创建分类规则并创建分类以将其引用到其中。
+1. 创建分类规则并创建分类以在其中引用这些规则。
 以下部分列出了详细步骤：
 
    * [筛选规则](filtering-rules.md)
@@ -69,7 +69,7 @@ Campaign Optimization加载项提供另外两种类型 **类型规则**：
 1. 配置投放以使用创建的分类。 [了解详情](apply-rules.md#apply-a-typology-to-a-delivery)。
 1. 通过活动模拟测试和控制行为。 [了解详情](campaign-simulations.md)。
 
-在投放准备期间，如果满足标准，则会排除收件人。 您可以检查日志以监视排除情况。
+在投放准备期间，当满足条件时，将排除收件人。 您可以检查日志以监视排除情况。
 
 有关压力类型规则的示例用例，请参见 [此页面](pressure-rules.md#use-cases-on-pressure-rules).
 
@@ -83,6 +83,6 @@ Campaign Optimization加载项提供另外两种类型 **类型规则**：
 
 ### 使用预定义过滤器设置疲劳管理
 
-疲劳管理控制消息传送的频度和数量，以避免过度招徕收件人。如果您的营销活动实例中没有营销活动优化模块，则可以配置一个预定义过滤器，该过滤器将根据收到的消息数过滤目标群体。本视频介绍如何使用过滤器在Adobe Campaign中实施疲劳管理。
+疲劳管理控制消息传送的频度和数量，以避免过度招徕收件人。如果您的活动实例中没有活动优化模块，则可以配置一个预定义过滤器，以根据收到的消息数过滤目标群体。此视频介绍如何使用过滤器在Adobe Campaign中实施疲劳管理。
 
 >[!VIDEO](https://video.tv.adobe.com/v/333778?quality=12)

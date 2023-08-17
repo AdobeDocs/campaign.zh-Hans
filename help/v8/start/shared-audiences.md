@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 exl-id: c4d30771-db5e-40be-8af6-50f0fab9f9af
 source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 100%
 
@@ -32,11 +32,11 @@ ht-degree: 100%
 * **访客 ID**：此类标识符可协调 Adobe Experience Cloud 访客与 Adobe Campaign 收件人。
 * **声明的 ID**：此类型的标识符会使所有类型的数据与 Adobe Campaign 数据库中的元素相协调。它在 Adobe Campaign 中表示为预定义的合并关键项。
 
-   >[!NOTE]
-   >
-   > 声明的 ID 数据源现在还可以与 People 核心服务集成一起使用。
-   >
-   >如果您使用 People 核心服务集成，并想要添加 Audience Manager 集成，则需要 Adobe Audience Manager 顾问的帮助，以避免在 Adobe Audience Manager 环境中转换为使用此声明的 ID 数据源时收集的所有 ID 同步丢失。
+  >[!NOTE]
+  >
+  > 声明的 ID 数据源现在还可以与 People 核心服务集成一起使用。
+  >
+  >如果您使用 People 核心服务集成，并想要添加 Audience Manager 集成，则需要 Adobe Audience Manager 顾问的帮助，以避免在 Adobe Audience Manager 环境中转换为使用此声明的 ID 数据源时收集的所有 ID 同步丢失。
 
 请参阅：
 

@@ -17,7 +17,7 @@ ht-degree: 3%
 
 此 **[!UICONTROL Data loading (RDBMS)]** 通过活动，您可以直接访问此外部数据库，并仅收集定位所需的数据。
 
-为了提高性能，我们建议使用查询活动（其中可以使用外部数据库的数据）。 有关更多信息，请参阅 [访问外部数据库（联合数据访问）](accessing-an-external-database--fda-.md).
+为了提高性能，我们建议使用查询活动（可在其中使用外部数据库的数据）。 有关详细信息，请参见 [访问外部数据库（联合数据访问）](accessing-an-external-database--fda-.md).
 
 操作如下：
 
@@ -29,7 +29,7 @@ ht-degree: 3%
 
    ![](assets/s_advuser_wf_sgbd_sample_5.png)
 
-1. 单击 **[!UICONTROL Select the columns to extract...]** 用于选择要在数据库中收集的数据的链接。
+1. 单击 **[!UICONTROL Select the columns to extract...]** 用于选择要从数据库中收集的数据的链接。
 
    ![](assets/s_advuser_wf_sgbd_sample_2.png)
 

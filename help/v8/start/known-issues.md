@@ -21,7 +21,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Adobe自行发布此已知问题列表。 它基于客户报告的数量、严重性和解决方法的可用性。 如果您遇到的问题未列出，则该问题可能不符合在此页面中发布的条件。
+>Adobe会自行发布此已知问题列表。 它基于客户报告的数量、严重性和变通方案可用性。 如果您遇到的问题未列出，则该问题可能不符合在此页面中发布的条件。
 
 ## Campaign v8.3.8{#8.3-issues}
 
@@ -29,7 +29,7 @@ ht-degree: 4%
 
 #### 说明{#issue-2-desc}
 
-使用Campaign将数据注入Snowflake云数据库时 **查询** 和 **更改数据源** 活动，则当数据中存在反斜杠字符时，该过程会失败。 源字符串未转义，并且数据在Snowflake时处理不正确。
+使用Campaign将数据注入Snowflake云数据库时 **查询** 和 **更改数据源** 活动，则当数据中存在反斜线字符时，该进程会失败。 源字符串未转义，并且数据在Snowflake时无法正确处理。
 
 仅当反斜杠字符位于字符串的结尾时，才会出现此问题，例如： `Barker\`.
 
@@ -65,12 +65,12 @@ Error:
 
 #### 说明{#issue-3-desc}
 
-在使用的Campaign服务器上传文件时 **正在加载数据（文件）** 活动时，该进程将停止在100%处，但永远不会结束。
+在使用的Campaign服务器上传文件时 **数据加载（文件）** 活动时，该进程将停止在100%处，但永远不会结束。
 
 #### 复制步骤{#issue-3-repro}
 
 1. 连接到客户端控制台并创建工作流。
-1. 添加 **正在加载数据（文件）** 并配置活动。
+1. 添加 **数据加载（文件）** 并配置活动。
 1. 选择 **在服务器上上传** 选项。
 1. 选择本地计算机上的文件，
 1. 单击 **上传**
@@ -84,7 +84,7 @@ Error:
 
 解决方法是使用旧版的客户端控制台。 然后，您便能够将文件上传到服务器上。
 
-作为Campaign管理员，您可以下载Campaign v8.3.1客户端控制台，位于 [Adobe软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=4){target="_blank"}.
+作为Campaign管理员，您可以下载Campaign v8.3.1客户端控制台，位于 [AdobeSoftware Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=4){target="_blank"}.
 
 了解如何访问Adobe软件分发 [本页内容](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans){target="_blank"}.
 

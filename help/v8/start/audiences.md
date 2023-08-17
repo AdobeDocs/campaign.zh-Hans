@@ -16,27 +16,27 @@ ht-degree: 22%
 
 用户档案是存储在Campaign数据库中的联系人。
 
-在Adobe Campaign中， **收件人** 是用于发送投放（电子邮件、短信等）的默认用户档案。 通过存储在数据库中的收件人数据，您可以筛选将接收任何给定投放的目标，并在投放内容中添加个性化数据。 数据库中还有其他类型的用户档案。这些用户档案是针对不同用途而设计的。例如，种子用户档案用于在将投放内容发送给最终目标前测试该投放内容。
+在Adobe Campaign中， **收件人** 是发送投放（电子邮件、短信等）所定位的默认用户档案。 通过存储在数据库中的收件人数据，您可以筛选将接收任何给定投放的目标，并在投放内容中添加个性化数据。 数据库中还有其他类型的用户档案。这些用户档案是针对不同用途而设计的。例如，种子用户档案用于在将投放内容发送给最终目标前测试该投放内容。
 
 了解如何导入、更新和管理用户档案和受众 [在此部分中](../audiences/gs-audiences.md).
 
 ## 创建列表{#create-lists}
 
-列表是一组静态联系人，可在投放操作中定向，或在导入或其他工作流操作期间更新。 例如，通过查询从数据库中提取的群体可以存储为列表。
+列表是一组静态的联系人，在投放操作中可以定位这些联系人，或在导入或其他工作流操作期间对其进行更新。 例如，通过查询从数据库中提取的群体可以存储为列表。
 
 ![](../assets/do-not-localize/glass.png) 了解如何在中创建和管理列表 [此页面](../audiences/create-audiences.md).
 
 ## 筛选数据库{#filter-the-database}
 
-筛选器配置允许您从列表中选择数据 **[!UICONTROL dynamically]**：修改数据时，会更新过滤的数据。 您可以创建自己的过滤器，也可以使用内置过滤器来定义目标受众。
+筛选器配置允许您从列表中选择数据 **[!UICONTROL dynamically]**：修改数据时，将更新过滤的数据。 您可以创建自己的过滤器，也可以使用内置的过滤器来定义目标受众。
 
 ![](../assets/do-not-localize/glass.png) 了解如何在中创建和管理过滤器 [此页面](../audiences/create-filters.md).
 
 ## 在工作流中创建受众
 
-可以通过工作流中以图形顺序显示的查询组合来创建定位。 您可以创建受众，并根据您的要求定位这些受众。 要显示工作流编辑器，请单击 **[!UICONTROL Targeting and workflows]** 选项卡。
+定位可以通过工作流中以图形顺序显示的查询组合来创建。 您可以创建根据要求定向的受众。 要显示工作流编辑器，请单击 **[!UICONTROL Targeting and workflows]** 选项卡。
 
-了解如何在中在营销活动工作流中构建受众 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans)
+了解如何在的营销活动工作流中构建受众 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans)
 
 
 ## 使用中的用户档案{#active-profiles}

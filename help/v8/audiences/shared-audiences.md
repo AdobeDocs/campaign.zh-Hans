@@ -9,7 +9,7 @@ hidefromtoc: true
 source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
 workflow-type: tm+mt
 source-wordcount: '256'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -30,14 +30,14 @@ ht-degree: 88%
 * **访客 ID**：此标识符可使 Adobe Experience Cloud 访客与 Adobe Campaign 收件人相协调。
 * **声明的 ID**：此标识符可使所有类型的数据与 Adobe Campaign 数据库中的元素相协调。它是 Adobe Campaign 中的预定义合并关键项。
 
-   >[!NOTE]
-   >
-   > “声明的 ID”数据源还可以与 People 核心服务集成一起使用。
-   >
-   >如果您使用 People 核心服务集成，并想要添加 Audience Manager 集成，则需要 Adobe Audience Manager 顾问的帮助，以避免在 Adobe Audience Manager 环境中转换为使用此声明的 ID 数据源时收集的所有 ID 同步丢失。
+  >[!NOTE]
+  >
+  > “声明的 ID”数据源还可以与 People 核心服务集成一起使用。
+  >
+  >如果您使用 People 核心服务集成，并想要添加 Audience Manager 集成，则需要 Adobe Audience Manager 顾问的帮助，以避免在 Adobe Audience Manager 环境中转换为使用此声明的 ID 数据源时收集的所有 ID 同步丢失。
 
 请参阅：
 
-[https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html)
+[https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=zh-Hans](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=zh-Hans)
 
-[https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html)
+[https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=zh_Hans](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=zh_Hans)

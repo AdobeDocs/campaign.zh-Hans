@@ -16,12 +16,12 @@ ht-degree: 0%
 
 Adobe Campaign与Adobe Experience Manager之间的集成允许您直接在Adobe Experience Manager中管理电子邮件投放的内容以及表单。
 
-在Adobe Campaign中编辑电子邮件或登陆页面时，您还可以直接从Adobe Experience Manager资源库插入资源。 Adobe Experience Manager Assets中详细介绍了此功能 [章节](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/overview.html).
+在Adobe Campaign中编辑电子邮件或登陆页面时，您也可以直接从Adobe Experience Manager资源库插入资源。 Adobe Experience Manager Assets中详细介绍了此功能 [章节](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/overview.html).
 
 这意味着您可以充分利用Adobe Experience Manager内容编辑功能和Adobe Campaign交付功能。
 
-![](../assets/do-not-localize/book.png) [请参阅本文档以了解详情](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html#aem-and-adobe-campaign-integration-workflow)
+![](../assets/do-not-localize/book.png) [在本文档中了解详情](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html#aem-and-adobe-campaign-integration-workflow)
 
-![](../assets/do-not-localize/book.png) [在此端到端示例中了解此集成](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-experience-manager/creating-an-experience-manager-newsletter.html#integrating-with-adobe-experience-cloud)
+![](../assets/do-not-localize/book.png) [在此端到端示例中发现此集成](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-experience-manager/creating-an-experience-manager-newsletter.html#integrating-with-adobe-experience-cloud)
 
-![](../assets/do-not-localize/speech.png)  作为托管Cloud Services用户， [联系人Adobe](../start/campaign-faq.md#support) 将Adobe Experience Manager与Campaign集成。
+![](../assets/do-not-localize/speech.png)  作为托管Cloud Service用户， [联系人Adobe](../start/campaign-faq.md#support) 将Adobe Experience Manager与Campaign集成。

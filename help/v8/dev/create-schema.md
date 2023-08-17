@@ -1,6 +1,6 @@
 ---
-title: 在营销活动中创建新架构
-description: 了解如何在Campaign
+title: 在Campaign中创建新架构
+description: 了解如何在营销活动中创建新架构
 feature: Schema Extension
 role: Developer
 level: Intermediate, Experienced
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->通过“名称”编辑控件，可输入由名称和命名空间组成的架构键。 架构的根元素的“name”和“namespace”属性会在架构的XML编辑区域中自动更新。 请注意，某些命名空间仅是内部命名空间。 [了解详情](schemas.md#reserved-namespaces)
+>通过“名称”编辑控件，可输入由名称和命名空间组成的架构键。 架构的根元素的“名称”和“命名空间”属性会在架构的XML编辑区域中自动更新。 请注意，某些命名空间仅是内部命名空间。 [了解详情](schemas.md#reserved-namespaces)
 
 此 **[!UICONTROL Preview]** 选项卡自动生成扩展架构：
 
@@ -38,13 +38,13 @@ ht-degree: 2%
 >
 >保存源架构后，将自动启动扩展架构的生成。
 
-如果需要检查架构的完整结构，您可以使用 **[!UICONTROL Preview]** 选项卡。 如果架构已扩展，则随后您将能够可视化其所有扩展。 作为补充， **[!UICONTROL Documentation]** 选项卡显示所有方案属性和元素及其属性（SQL字段、类型/长度、标签、说明）。 此 **[!UICONTROL Documentation]** 选项卡仅适用于生成的架构。
+如果需要检查架构的完整结构，可以使用 **[!UICONTROL Preview]** 选项卡。 如果架构已扩展，则随后您将能够可视化其所有扩展。 作为补充， **[!UICONTROL Documentation]** 选项卡显示所有方案属性和元素及其属性（SQL字段、类型/长度、标签、说明）。 此 **[!UICONTROL Documentation]** 选项卡仅适用于生成的架构。
 
 ## 用例：创建合同表 {#example--creating-a-contract-table}
 
-在以下示例中，您将为创建一个新表 **合同** 在数据库中。 此表允许您存储每个合同的持有者和共同持有者的名字和姓氏以及电子邮件地址。
+在下例中，您为创建一个新表 **合同** 在数据库中。 此表允许您存储每个合同的持有者和共同持有者的名字和姓氏以及电子邮件地址。
 
-为此，您需要创建表的模式并更新数据库结构以生成相应的表。 下面列出了详细的步骤。
+为此，您需要创建表的模式并更新数据库结构以生成相应的表。 下面列出了详细步骤。
 
 1. 编辑 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign节点，然后单击 **[!UICONTROL New]**.
 1. 选择 **[!UICONTROL Create a new table in the data template]** 选项并单击 **[!UICONTROL Next]** .
@@ -57,15 +57,15 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >默认情况下，用户创建的架构存储在“cus”命名空间中。 有关更多信息，请参阅 [架构的标识](extend-schema.md#identification-of-a-schema).
+   >默认情况下，用户创建的架构存储在“cus”命名空间中。 有关详细信息，请参见 [架构的标识](extend-schema.md#identification-of-a-schema).
 
-1. 创建表的内容。 我们建议使用专用助手以确保未丢失任何设置。 要执行此操作，请单击 **[!UICONTROL Insert]** 按钮，并选择要添加的设置类型。
+1. 创建表的内容。 我们建议使用专用助手以确保不缺少设置。 要执行此操作，请单击 **[!UICONTROL Insert]** 按钮，并选择要添加的设置的类型。
 
    ![](assets/create_new_content.png)
 
 1. 定义合同表的设置。
 
-   作为最佳实践，可通过添加 `dataSource="nms:extAccount:ffda"` 属性。 默认情况下，创建新表时会添加此属性。
+   作为最佳实践，通过在云数据库中添加 `dataSource="nms:extAccount:ffda"` 属性。 默认情况下，创建新表时会添加此属性。
 
    ```
    <srcSchema created="YYYY-MM-DD HH:MM:SS.TZ" desc="Active contracts" img="crm:crm/mscrm/mscrm_account_16x16.png"
@@ -113,4 +113,4 @@ ht-degree: 2%
 
    ![](assets/configuration_structure.png)
 
-1. 更新数据库结构以创建架构将链接到的表。 如需详细信息，请参阅[此部分](update-database-structure.md)。
+1. 更新数据库结构以创建将链接架构的表。 如需详细信息，请参阅[此部分](update-database-structure.md)。

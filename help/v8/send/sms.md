@@ -34,14 +34,14 @@ ht-degree: 3%
 
 开始发送短信之前：
 
-* 确保收件人的配置文件中至少包含一部手机。
-* 查看Adobe Campaign Classic [投放最佳实践](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html#sending-messages){target="_blank"} 同样适用于Campaign v8。
+* 确保收件人配置文件中至少包含一部手机。
+* 查看Adobe Campaign Classic [投放最佳实践](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html#sending-messages){target="_blank"} 这也适用于Campaign v8。
 
-此外，您需要熟悉短信协议和设置。 浏览Adobe Campaign与中的SMPP提供商之间的连接设置 [本文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-protocol.html#sending-messages){target="_blank"}.
+此外，您需要熟悉短信协议和设置。 在中逐步完成Adobe Campaign和SMPP提供商之间的连接设置 [本文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-protocol.html#sending-messages){target="_blank"}.
 
 ## 创建您的第一个短信投放
 
-1. 要创建新投放，请浏览到 **[!UICONTROL Campaigns]** 选项卡，单击 **[!UICONTROL Deliveries]** 并单击 **[!UICONTROL Create]** 按钮时，发送电子邮件给现有投放列表的上方。
+1. 要创建新投放，请浏览至 **[!UICONTROL Campaigns]** 选项卡，单击 **[!UICONTROL Deliveries]** 然后单击 **[!UICONTROL Create]** 按钮来指定现有投放列表的上方。
 
    ![](assets/delivery_step_1.png)
 
@@ -53,7 +53,7 @@ ht-degree: 3%
 
    ![](../assets/do-not-localize/book.png) 了解如何在中创建SMPP外部帐户 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html#creating-an-smpp-external-account){target="_blank"}
 
-   ![](../assets/do-not-localize/book.png) 了解如何在中创建要交付给移动设备的交付模板 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html#changing-the-delivery-template){target="_blank"}
+   ![](../assets/do-not-localize/book.png) 了解如何在中创建投放模板以投放给移动设备 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up.html#changing-the-delivery-template){target="_blank"}
 
 1. 使用标签、代码和描述标识投放。
 
@@ -69,39 +69,39 @@ ht-degree: 3%
 
 * 创建短信
 
-   ![](../assets/do-not-localize/book.png) [了解如何创建短信投放](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html#sending-messages){target="_blank"}
+  ![](../assets/do-not-localize/book.png) [了解如何创建短信投放](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html#sending-messages){target="_blank"}
 
 * 设计短信内容
 
-   ![](../assets/do-not-localize/book.png) [了解如何定义短信内容](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html#defining-the-sms-content){target="_blank"}
+  ![](../assets/do-not-localize/book.png) [了解如何定义短信内容](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-create.html#defining-the-sms-content){target="_blank"}
 
 * 选择电子邮件的受众
 
-   ![](../assets/do-not-localize/book.png) [了解如何定义目标群体](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html){target="_blank"}
+  ![](../assets/do-not-localize/book.png) [了解如何定义目标群体](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-defining-the-target-population.html){target="_blank"}
 
 ![](../assets/do-not-localize/glass.png) 有关定义受众的详细步骤，请参见 [此页面](../start/audiences.md).
 
 ## 测试短信
 
-要查看消息及其个性化的呈现方式，请单击 **[!UICONTROL Preview]** 并选择收件人。
+要查看消息的呈现及其个性化设置，请单击 **[!UICONTROL Preview]** 并选择收件人。
 
 ![](assets/sms-preview.png)
 
 要发送校样，请参阅Campaign Classicv7文档的以下部分：
 
 * 验证投放并发送校样
-   ![](../assets/do-not-localize/book.png) [了解验证投放的关键步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=zh-Hans){target="_blank"}
+  ![](../assets/do-not-localize/book.png) [了解验证投放的关键步骤](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-validating-the-delivery.html?lang=zh-Hans){target="_blank"}
 * 添加种子地址
-   ![](../assets/do-not-localize/book.png) [了解种子地址](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html){target="_blank"}
+  ![](../assets/do-not-localize/book.png) [了解种子地址](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses.html){target="_blank"}
 
-## 发送和监控短信投放
+## 发送和监测SMS投放
 
-有关发送和监控SMS的关键步骤，请参阅Campaign Classicv7文档：
+有关发送和监控短信的关键步骤，请参阅Campaign Classicv7文档：
 
 * 发送、监控和跟踪短信投放
 
-   ![](../assets/do-not-localize/book.png) [了解用于发送、监控和跟踪短信的工具](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-send.html#sending-messages){target="_blank"}
+  ![](../assets/do-not-localize/book.png) [了解用于发送、监控和跟踪短信的工具](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-send.html#sending-messages){target="_blank"}
 
 * 短信投放疑难解答
 
-   ![](../assets/do-not-localize/book.png) [了解短信疑难解答](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/troubleshooting-sms.html#sending-messages){target="_blank"}
+  ![](../assets/do-not-localize/book.png) [了解短信疑难解答](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/troubleshooting-sms.html#sending-messages){target="_blank"}

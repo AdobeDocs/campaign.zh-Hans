@@ -13,22 +13,22 @@ ht-degree: 1%
 
 # 控制规则{#control-rules}
 
-通过控制规则，您可以保证消息在投放前的有效性和质量：字符显示、短信大小、地址格式等。
+利用控制规则，您可以保证消息在投放前的有效性和质量：字符显示、短信大小、地址格式等。
 
-通过一组现成的规则可执行常规检查。 这些检查（在界面中以粗体显示）包括：
+通过一组现成的规则，可执行常规检查。 这些检查（在界面中以粗体显示）包括：
 
 * **[!UICONTROL Object approval]** （电子邮件）：检查发件人对象和地址是否不包含可能导致某些邮件代理出现问题的特殊字符。
 * **[!UICONTROL URL label approval]** （电子邮件）：检查每个跟踪URL是否都有标签。
 * **[!UICONTROL URL approval]** （电子邮件）：检查跟踪URL（存在“&amp;”字符）。
-* **[!UICONTROL Message size approval]** （移动设备）：检查短信消息的大小。
-* **[!UICONTROL Validity period check]** （电子邮件）：检查投放的有效期是否足够长，可以发送所有邮件。
+* **[!UICONTROL Message size approval]** （移动设备）：检查SMS消息的大小。
+* **[!UICONTROL Validity period check]** （电子邮件）：检查投放的有效期是否足以发送所有消息。
 * **[!UICONTROL Proof size check]** （所有渠道）：如果验证目标群体超过100个收件人，则生成错误消息。
-* **[!UICONTROL Wave scheduling check]** （电子邮件）：检查如果投放被细分为多个阶段，则是否计划最后一个投放阶段在有效期结束之前开始。
+* **[!UICONTROL Wave scheduling check]** （电子邮件）：检查如果投放被细分为多个阶段，则计划的最后一波投放是否在有效期结束前开始。
 * **[!UICONTROL Unsubscription link approval]** （电子邮件）：检查每个内容(HTML和文本)中是否存在至少一个退订（选择退出）URL。
 
 ## 创建控制规则 {#create-a-control-rule}
 
-可以根据您的需要创建新的控制规则。 为此，请创建 **[!UICONTROL Control]** 类型规则，然后在 **[!UICONTROL Code]** 选项卡。
+可以创建新的控制规则以满足您的需求。 为此，请创建 **[!UICONTROL Control]** 类型规则，然后在 **[!UICONTROL Code]** 选项卡。
 
 **示例:**
 
@@ -50,7 +50,7 @@ ht-degree: 1%
    if( delivery.FCP == false && delivery.properties.toDeliver > 100 ) { logWarning("Significant number of SMS to deliver (" + delivery.properties.toDeliver + "). Please make sure the target is correct.") return false; } return true
    ```
 
-1. 将此规则链接到活动分类，并在相关短信投放中引用分类。
+1. 将此规则链接到活动分类，并在相关短信投放中引用该分类。
 
    ![](assets/campaign_opt_create_control_03.png)
 
@@ -60,7 +60,7 @@ ht-degree: 1%
 
    但是，投放仍然可以发送。
 
-   如果提高警报级别，则会阻止投放的开始。
+   如果提高警报级别，则会阻止开始投放。
 
    ![](assets/campaign_opt_create_control_05.png)
 

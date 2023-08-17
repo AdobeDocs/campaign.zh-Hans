@@ -1,5 +1,5 @@
 ---
-title: 在Campaign中创建用户档案受众
+title: 在Campaign中创建配置文件受众
 description: 了解如何创建列表和构建受众
 feature: Audiences, Profiles
 role: User
@@ -16,13 +16,13 @@ ht-degree: 22%
 
 使用Campaign列表创建和组织受众。
 
-列表是一组静态联系人，可在投放操作中定向，或在导入或其他工作流操作期间更新。 例如，通过查询从数据库中提取的群体可以存储为列表。
+列表是一组静态的联系人，在投放操作中可以定位这些联系人，或在导入或其他工作流操作期间对其进行更新。 例如，通过查询从数据库中提取的群体可以存储为列表。
 
 列表是通过 **[!UICONTROL Lists]** 中的链接 **[!UICONTROL Profiles and targets]** 选项卡。 这些列表基于默认的Adobe Campaign配置文件表(nms：recipient)。 [了解详情](../dev/datamodel.md#ootb-profiles.md)
 
 ![](assets/list-dashboard.png)
 
-您可以使用创建列表 **更新列表** 活动。 此活动会将生成的群体存储到一个列表中。 使用它创建新列表或更新现有列表。 要创建包含除内置用户档案表以外的其他类型数据的列表，必须运行工作流。 例如，通过在访客表上运行查询并更新列表，您可以创建一个访客列表。[了解详情](#create-a-list-wf)。
+您可以使用以下方式创建列表 **更新列表** 活动。 此活动会将生成的群体存储到列表中。 使用它创建新列表或更新现有列表。 要创建包含内置用户档案表以外的其他类型数据的列表，必须运行工作流。 例如，通过在访客表上运行查询并更新列表，您可以创建一个访客列表。[了解详情](#create-a-list-wf)。
 
 观看本视频，了解有关Adobe Campaign中列表管理的更多信息。
 
@@ -57,11 +57,11 @@ ht-degree: 22%
 
 ## 将过滤的联系人转换为列表 {#convert-data-to-a-list}
 
-您可以选择用户档案并将其添加到列表中。 要执行此操作，请执行以下步骤：
+您可以选择配置文件并将它们添加到列表中。 要执行此操作，请执行以下步骤：
 
 1. 在Campaign Explorer中，选择用户档案并右键单击。
 
-   可以筛选这些配置文件以满足特定条件。
+   可以筛选这些用户档案以满足特定条件。
 
 1. 选择 **[!UICONTROL Actions > Associate selection with a list...]**。
 
@@ -77,7 +77,7 @@ ht-degree: 22%
 
 选择 **[!UICONTROL Recreate the list]** 用于从列表中删除现有内容并优化列表创建的选项（无需查询即可验证用户档案是否已链接到列表）。
 
-如果取消选中 **[!UICONTROL No trace of this job is saved in the database]** 选项，您可以选择（或创建）执行文件夹，链接到此进程的信息将存储在该文件夹中。
+如果您取消选中 **[!UICONTROL No trace of this job is saved in the database]** 选项，您可以选择（或创建）执行文件夹，其中将存储链接到该进程的信息。
 
 可在窗口的上半部监控该执行过程。可以通过 **[!UICONTROL Stop]** 按钮停止该过程。已处理的联系人将会链接到列表。
 
@@ -86,9 +86,9 @@ ht-degree: 22%
 
 ## 使用工作流创建列表  {#create-a-list-wf}
 
-您可以使用 **[!UICONTROL List update]** 创建列表或向收件人列表添加群体的活动。
+您可以使用 **[!UICONTROL List update]** 活动，以创建列表或向收件人列表添加群体。
 
-在以下示例中，您将创建一个包含25到40岁的所有收件人的列表。
+在以下示例中，您将创建一个25到40之间的所有收件人的列表。
 
 1. 选择 **[!UICONTROL Profiles and targets]**、和 **[!UICONTROL Targeting workflows]**，然后从创建新工作流 **[!UICONTROL Create]** 按钮。
 1. 输入此工作流的标签，例如“25-40位联系人”，添加说明，然后单击 **[!UICONTROL Next]**.
@@ -112,11 +112,11 @@ ht-degree: 22%
 
 1. 输入活动的标签。
 1. 选择 **[!UICONTROL Create the list if necessary (Computed name)]** 选项，用于显示将在执行第一个工作流后创建列表，然后使用以下执行进行更新。
-1. 选择一个文件夹并输入列表的标签。
+1. 选择文件夹并输入列表的标签。
 1. 选择 **[!UICONTROL Database of the targeting dimension]** 以存储表。
-1. 保留 **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** 选项选中以删除不符合定位标准的收件人，并将新收件人插入到列表中。
-1. 另外，请将 **[!UICONTROL Create or use a list with its own table]** 选项已选中。
-1. 保留 **[!UICONTROL Generate an outbound transition]** 选项未选中。
+1. 离开 **[!UICONTROL Purge the list if it exists (otherwise add to the list)]** 选中此选项可删除不符合定位标准的收件人，并将新收件人插入到列表中。
+1. 另请保留 **[!UICONTROL Create or use a list with its own table]** 选项已选中。
+1. 离开 **[!UICONTROL Generate an outbound transition]** 选项未选中。
 1. 单击 **[!UICONTROL Ok]**，并保存工作流。
 1. 启动工作流。
 
@@ -124,15 +124,15 @@ ht-degree: 22%
 
    ![](assets/access-new-list.png)
 
-   您可以通过向工作流添加调度程序来重复执行此工作流。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html)。
+   您可以通过向工作流添加调度程序使此工作流重复出现。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html)。
 
 ## 从列表中删除配置文件 {#remove-a-profile-from-a-list}
 
-要从列表中删除配置文件，请编辑该列表，然后在 **[!UICONTROL Content]** 选项卡，然后单击 **[!UICONTROL Delete]** 图标。
+要从列表中删除配置文件，请编辑该列表，在 **[!UICONTROL Content]** 选项卡，然后单击 **[!UICONTROL Delete]** 图标。
 
 ## 删除配置文件列表 {#delete-a-list-of-profiles}
 
-要删除列表，请从Campaign Explorer浏览到该列表，选择它并右键单击。 选择 **[!UICONTROL Delete]**. 警告消息会要求您确认此删除操作。
+要删除列表，请从Campaign Explorer中浏览到该列表，选择它并右键单击。 选择 **[!UICONTROL Delete]**. 警告消息会要求您确认此删除操作。
 
 >[!NOTE]
 >

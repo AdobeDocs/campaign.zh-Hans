@@ -43,7 +43,7 @@ ht-degree: 84%
          + [投放概要](workflow/delivery-outline.md)
          + [编辑架构](workflow/edit-schema.md)
          + [扩充](workflow/enrichment.md)
-         + [排除](workflow/exclusion.md)
+         + [差集](workflow/exclusion.md)
          + [增量查询](workflow/incremental-query.md)
          + [交集](workflow/intersection.md)
          + [列表更新](workflow/list-update.md)
@@ -143,7 +143,7 @@ ht-degree: 84%
    + [循环和定期活动](campaigns/recurring-periodic-campaigns.md)
    + [监测活动](campaigns/marketing-campaign-monitoring.md)
    + [供应商、库存和预算](campaigns/providers--stocks-and-budgets.md)
-+ 活动优化（加载项）{#campaign-optimization}
++ 活动优化（插件）{#campaign-optimization}
    + [营销活动类型入门](campaign-opt/campaign-typologies.md)
    + [筛选规则](campaign-opt/filtering-rules.md)
    + [控制规则](campaign-opt/control-rules.md)
@@ -157,7 +157,7 @@ ht-degree: 84%
    + [控制成本](mrm/controlling-costs.md)
    + [管理营销资源](mrm/managing-marketing-resources.md)
    + [论坛](mrm/discussion-forums.md)
-+ 分布式营销（插件） {#distributed-marketing}
++ 分布式营销（附加） {#distributed-marketing}
    + [分布式营销入门](distributed-marketing/about-distributed-marketing.md)
    + [创建本地活动](distributed-marketing/creating-a-local-campaign.md)
    + [创建协作活动](distributed-marketing/creating-a-collaborative-campaign.md)

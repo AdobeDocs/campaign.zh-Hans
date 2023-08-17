@@ -12,9 +12,9 @@ ht-degree: 8%
 
 ---
 
-# 创建行投放
+# 创建LINE投放
 
-LINE是一款免费即时消息、语音和视频呼叫应用程序，可在所有移动设备和个人电脑上使用。 Adobe Campaign允许您发送LINE消息。
+LINE是一款免费即时消息传递、语音和视频呼叫应用程序，可在所有移动设备和个人电脑上使用。 Adobe Campaign允许您发送LINE消息。
 
 
 ![](../assets/do-not-localize/book.png) 了解详情，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/line-channel.html?lang=zh-Hans){target="_blank"}.

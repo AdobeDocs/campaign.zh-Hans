@@ -16,13 +16,13 @@ ht-degree: 71%
 
 您可以配置Adobe Analytics以集成Campaign和Analytics。
 
-此集成允许Adobe Campaign和Adobe Analytics通过 **网站分析连接器** 加载项。 此集成将Adobe Campaign交付的电子邮件营销活动的指标和属性发送到Adobe Analytics。
+此集成允许Adobe Campaign和Adobe Analytics通过 **网站分析连接器** 加载项。 此集成将Adobe Campaign投放的电子邮件营销活动的指标和属性发送到Adobe Analytics。
 
-![](../assets/do-not-localize/speech.png)  作为托管Cloud Services用户， [联系人Adobe](../start/campaign-faq.md#support) 将Campaign与Adobe Experience Cloud服务和解决方案连接。 必须通过专用软件包在环境中安装Web Analytics连接器加载项。
+![](../assets/do-not-localize/speech.png)  作为托管Cloud Service用户， [联系人Adobe](../start/campaign-faq.md#support) 将Campaign与Adobe Experience Cloud服务和解决方案配合使用。 必须通过专用软件包在您的环境中安装Web Analytics连接器加载项。
 
 使用 Adobe Analytics Connector，Adobe Campaign 可以对互联网受众进行评测（网站分析）。利用Web分析工具，Adobe Campaign可将指标和营销活动属性转发到Analytics。
 
-每个工具的作用周长如下：
+每个工具的操作周边如下所示：
 
 * **Adobe Analytics** 标记通过Adobe Campaign启动的电子邮件营销活动
 
@@ -189,9 +189,9 @@ ht-degree: 71%
 
 ## 网站分析流程的技术工作流 {#technical-workflows-of-web-analytics-processes}
 
-Adobe Campaign和Adobe Analytics之间的数据交换由一个作为后台任务运行的技术工作流处理。
+Adobe Campaign和Adobe Analytics之间的数据交换由作为后台任务运行的技术工作流处理。
 
-此工作流可从Campaign Explorer树中的 **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** > **[!UICONTROL Web analytics process]** 文件夹。
+此工作流可从Campaign Explorer树的 **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** > **[!UICONTROL Web analytics process]** 文件夹。
 
 ![](assets/webanalytics_workflows.png)
 
@@ -245,4 +245,4 @@ Adobe Campaign和Adobe Analytics之间的数据交换由一个作为后台任务
 
 **相关主题**
 
-* [Campaign -Experience Cloud触发器集成](ac-triggers.md)
+* [Campaign - Experience Cloud Triggers集成](ac-triggers.md)

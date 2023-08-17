@@ -30,7 +30,7 @@ ht-degree: 8%
 >
 >* 从Campaign v8.5.1开始，更改了Campaign v8的身份验证过程。 技术操作员必须使用AdobeIdentity Management System (IMS)连接到Campaign。 了解如何在中迁移现有技术帐户 [此技术说明](../../technotes/upgrades/ims-migration.md).
 >
->* [!DNL Adobe Campaign] v8对API层的吞吐量(TPS)进行了限制。 超出此限制会导致标准HTTP错误(429)。 作为托管Cloud Services用户，您可以联系Adobe以调整每个API的限制。
+>* [!DNL Adobe Campaign] v8对API层的吞吐量(TPS)进行了限制。 超出此限制会导致标准HTTP错误(429)。 作为托管Cloud Service用户，您可以联系Adobe以调整每个API的限制。
 > 
 
 ## 先决条件

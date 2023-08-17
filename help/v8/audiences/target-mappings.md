@@ -1,6 +1,6 @@
 ---
 title: 使用目标映射
-description: 了解如何使用并创建目标映射
+description: 了解如何使用和创建目标映射
 feature: Audiences, Profiles
 role: User, Developer
 level: Beginner, Intermediate
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 对于推送通知，默认目标映射为 **订阅者应用程序(nms：appSubscriptionRcp)**，链接到收件人表。
 
-您可以为投放使用其他目标映射，也可以创建新的目标映射。
+您可以为投放使用其他目标映射，或创建新的目标映射。
 
 ## 内置目标映射 {#ootb-mappings}
 
@@ -26,25 +26,25 @@ Adobe Campaign附带以下内置目标映射：
 
 | 名称 | 使用至 | 架构 |
 |---|---|---|
-| 收件人 | 发送给收件人（内置收件人表） | nms：recipient |
-| 访客 | 向已通过反向链接（病毒式营销）收集用户档案的访客投放，例如。 | mns：visitor |
+| 收件人 | 投放到收件人（内置收件人表） | nms：recipient |
+| 访客 | 向通过反向链接（病毒式营销）收集用户档案的访客投放，例如。 | mns：visitor |
 | 订阅 | 发送给订阅了新闻稿等信息服务的收件人 | nms：subscription |
 | 访客订阅 | 向订阅了信息服务的访客投放 | nms：visitorSub |
-| 运算符 | 交付到Adobe Campaign操作员 | nms：operator |
+| 运算符 | 交付给Adobe Campaign操作员 | nms：operator |
 | 外部文件 | 通过包含投放所需所有信息的文件投放 | 无链接架构，未输入目标 |
 
 ## 创建目标映射 {#new-mapping}
 
 您还可以创建目标映射。 例如，在下列情况下，您可能需要添加自定义目标映射：
 
-* 使用自定义收件人表，
-* 可在目标映射屏幕上配置与内置定向维度不同的筛选维度。
+* 您使用自定义收件人表，
+* 您可以配置一个过滤维度，它与“目标映射”屏幕上的内置定向维度不同。
 
 在中了解有关自定义收件人表的更多信息 [此页面](../dev/custom-recipient.md).
 
 Adobe Campaign目标映射创建向导可帮助您创建使用自定义目标映射所需的所有架构。
 
-1. 浏览到 **[!UICONTROL Administration]** `>` **[!UICONTROL Campaign Management]** `>` **[!UICONTROL Target mappings]** 来自Adobe Campaign explorer。
+1. 浏览至 **[!UICONTROL Administration]** `>` **[!UICONTROL Campaign Management]** `>` **[!UICONTROL Target mappings]** 来自Adobe Campaign explorer。
 
 1. 创建新的目标映射，并选择自定义架构作为定向维度。
 
@@ -59,7 +59,7 @@ Adobe Campaign目标映射创建向导可帮助您创建使用自定义目标映
 
    ![](assets/wf_new_mapping_define_names.png)
 
-   您可以选择是否存储排除项(**excludelog**)，包含消息(**broadlog**)，或者在单独的表中。
+   您可以选择是否存储排除项(**excludelog**)，消息为(**broadlog**)，或者在单独的表中。
 
    您还可以选择是否管理此投放映射的跟踪(**trackinglog**)。
 
@@ -67,4 +67,4 @@ Adobe Campaign目标映射创建向导可帮助您创建使用自定义目标映
 
    ![](assets/wf_new_mapping_define_extensions.png)
 
-   单击 **[!UICONTROL Save]** 按钮以启动投放映射创建：根据选定的参数自动创建所有链接表。
+   单击 **[!UICONTROL Save]** 按钮以启动投放映射创建：根据所选参数自动创建所有链接表。

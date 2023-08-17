@@ -22,31 +22,31 @@ ht-degree: 8%
 
 在工作流中，从一个活动传输到另一个活动的数据存储在临时工作表中。
 
-可以通过右键单击相应的过渡来显示和分析此数据。
+通过右键单击相应的过渡，可以显示和分析此数据。
 
 ![](assets/wf-right-click-analyze.png)
 
-要执行此操作，请选择相关菜单：
+要实现此目的，请选择相关菜单：
 
 * **[!UICONTROL Display the target...]**
 
-   此菜单显示目标群体的可用数据。
+  此菜单显示目标群体的可用数据。
 
-   ![](assets/wf-right-click-display.png)
+  ![](assets/wf-right-click-display.png)
 
-   您可以在以下位置访问工作表的结构 **[!UICONTROL Schema]** 选项卡。
+  您可以在以下位置访问工作表的结构： **[!UICONTROL Schema]** 选项卡。
 
-   ![](assets/wf-right-click-schema.png)
+  ![](assets/wf-right-click-schema.png)
 
-   如需详细信息，请参阅[此部分](monitor-workflow-execution.md#worktables-and-workflow-schema)。
+  如需详细信息，请参阅[此部分](monitor-workflow-execution.md#worktables-and-workflow-schema)。
 
 * **[!UICONTROL Analyze target...]**
 
-   通过此菜单，您可以访问描述性分析向导，该向导允许您生成有关过渡数据的统计和报告。
+  通过此菜单，您可以访问描述性分析向导，该向导允许您生成有关过渡数据的统计和报告。
 
-   有关更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}.
+  有关详细信息，请参见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}.
 
-在执行工作流时清除目标数据。 只能访问最后一个工作表。 您可以配置工作流，以便所有工作表都保持可访问状态：选中 **[!UICONTROL Keep the result of interim populations between two executions]** 选项。
+在执行工作流时清除目标数据。 只能访问最后一个工作表。 您可以配置工作流，使所有工作表保持可访问状态：选中 **[!UICONTROL Keep the result of interim populations between two executions]** 选项。
 
 ![](assets/wf-purge-data-option.png)
 
@@ -57,19 +57,19 @@ ht-degree: 8%
 
 ### 利用目标数据 {#target-data}
 
-工作流临时工作表中存储的数据可用于个性化任务。 数据可用于 [个性化字段](../../v8/send/personalization-fields.md).
+存储在工作流临时工作表中的数据可用于个性化任务。 数据可用于 [个性化字段](../../v8/send/personalization-fields.md).
 
-例如，这使您能够在投放中使用通过列表收集的数据。 为此，请使用以下语法：
+例如，您可以在投放中使用通过列表收集的数据。 为此，请使用以下语法：
 
 ```
 %= targetData.FIELD %
 ```
 
-**[!UICONTROL Target extension]** (targetData)类型的个性化元素不适用于定位工作流。 必须在工作流中构建投放目标，并在投放的集客过渡中指定。
+**[!UICONTROL Target extension]** (targetData)类型个性化元素不适用于定位工作流。 必须在工作流中构建投放目标，并在投放的集客过渡中指定。
 
-在以下示例中，您将收集客户信息列表，以便在个性化电子邮件中使用。 应用以下步骤：
+在下方的示例中，您将收集要用于个性化电子邮件中的客户信息列表。 应用以下步骤：
 
-1. 创建一个工作流以收集信息，将其与数据库中已有的数据进行协调，然后开始投放。
+1. 创建工作流以收集信息，将其与数据库中已有的数据相协调，然后开始投放。
 
    ![](assets/wf-targetdata-sample-1.png)
 
@@ -93,7 +93,7 @@ ht-degree: 8%
 
    ![](assets/wf-targetdata-sample-3.png)
 
-1. 然后配置 **[!UICONTROL Delivery]**：根据模板创建，收件人由集客过渡指定。
+1. 然后配置 **[!UICONTROL Delivery]**：工作流基于模板创建，收件人由集客过渡指定。
 
    ![](assets/wf-targetdata-sample-4.png)
 
@@ -109,33 +109,33 @@ ht-degree: 8%
 
    在此，我们要插入客户最喜爱的音乐流派和媒体类型（CD或DVD），如工作流收集的文件中所述。
 
-   作为补充，我们将为会员卡持有者（即“卡”值等于1的收件人）添加一张优惠券。
+   此外，我们将为会员卡持有者（即“卡”值等于1的收件人）添加优惠券。
 
    ![](assets/wf-targetdata-sample-6.png)
 
-   **[!UICONTROL Target extension]** (targetData)类型数据使用与所有个性化字段相同的特征插入到投放中。 它们还可以在主题、链接标签或链接本身中使用。
+   **[!UICONTROL Target extension]** (targetData)类型数据使用与所有个性化字段相同的特性插入投放。 它们还可以在主题、链接标签或链接本身中使用。
 
 
 ## 更新数据库 {#update-the-database}
 
-所有收集的数据都可用于更新数据库或在投放中使用。 例如，您可以丰富消息内容个性化可能性（包括消息中的合同数、指定去年购物车的平均数量等） 或详细群体定位（向合同共同所有者发送消息，将目标定位为在线服务的1,000个最佳订阅者，等等）。 此数据也可以导出或存档在列表中。
+所有收集的数据都可用于更新数据库或在投放中使用。 例如，您可以丰富消息内容个性化可能性（包括消息中的合同数、指定去年的平均购物车数量等） 或详细群体定位（向合同共同所有者发送消息，定向1,000个在线服务最佳订阅者等）。 此数据还可以在列表中导出或存档。
 
 ### 更新列表  {#list-updates}
 
 Adobe Campaign数据库和现有列表的数据可以使用两个专用活动进行更新：
 
-* 此 **[!UICONTROL List update]** 通过活动，可将工作表存储在数据列表中。
+* 此 **[!UICONTROL List update]** 利用活动，可将工作表存储在数据表中。
 
-   您可以选择或创建现有列表。 在这种情况下，将计算记录文件夹的名称，并可能需要计算记录文件夹。
+  您可以选择现有列表或创建现有列表。 在这种情况下，将计算名称，并可能计算记录文件夹。
 
-   ![](assets/s_user_create_list.png)
+  ![](assets/s_user_create_list.png)
 
-   请参阅 [列表更新](list-update.md).
+  请参阅 [列表更新](list-update.md).
 
 * 此 **[!UICONTROL Update data]** 活动对数据库中的字段执行批量更新。
 
-   有关更多信息，请参阅 [更新数据](update-data.md).
+  有关详细信息，请参见 [更新数据](update-data.md).
 
 ### 管理订阅 {#subscription-management}
 
-要了解如何通过工作流订阅和取消订阅信息服务的收件人，请参阅 [订阅服务](subscription-services.md).
+要了解如何通过工作流为收件人订阅和取消订阅信息服务，请参阅 [订阅服务](subscription-services.md).

@@ -6,7 +6,7 @@ role: User, Admin, Developer
 level: Beginner, Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1187'
 ht-degree: 100%
 
@@ -38,11 +38,11 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
 * **数据获取**：通过 Adobe Campaign，您可以收集数据，包括个人信息和敏感信息。因此，获得并管理收件人的同意至关重要。
 
-   请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans#data-acquisition){target="_blank"}以了解详情
+  请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans#data-acquisition){target="_blank"}以了解详情
 
 * **用户同意和数据保留**：您必须获得用户同意、设置双重选择加入订阅机制、改善选择退出功能并配置数据保留。
 
-   请参阅 [Campaign Classic v7 隐私文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans#consent){target="_blank"}以了解详情
+  请参阅 [Campaign Classic v7 隐私文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans#consent){target="_blank"}以了解详情
 
 * **隐私和数据保护法规**：请参阅[此部分](privacy.md)，了解有关隐私要求的信息以及这些法规对贵组织和 Adobe Campaign 有何影响。
 

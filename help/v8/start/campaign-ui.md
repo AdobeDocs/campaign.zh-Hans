@@ -22,7 +22,7 @@ Campaign 工作区可通过[客户端控制台](../architecture/general-architec
 
 ![](assets/home-page.png)
 
-您还可以使用Web浏览器访问Campaign。 在此上下文中，仅有一组Campaign功能可用。 [了解详情](#web-browser)
+您还可以使用Web浏览器访问Campaign。 在这种情况下，仅有一组Campaign功能可用。 [了解详情](#web-browser)
 
 ## 浏览UI{#ui-browse}
 
@@ -30,7 +30,7 @@ Campaign 工作区可通过[客户端控制台](../architecture/general-architec
 
 从主页的中心部分，使用链接访问Campaign帮助材料、社区和支持网站。
 
-使用上半部分的选项卡浏览Campaign关键功能：
+使用上部的选项卡浏览Campaign关键功能：
 
 ![](assets/overview-home.png)
 
@@ -38,19 +38,19 @@ Campaign 工作区可通过[客户端控制台](../architecture/general-architec
 >
 >您可以访问的核心功能列表取决于您的权限和实施情况。
 
-对于每个功能，您可以访问 **[!UICONTROL Browsing]** 部分。 此 **[!UICONTROL More]** 通过链接，可访问所有其他组件。
+对于每个功能，您都可以访问 **[!UICONTROL Browsing]** 部分。 此 **[!UICONTROL More]** 通过链接，可访问所有其他组件。
 
-例如，在浏览到 **[!UICONTROL Profiles and targets]** 选项卡中，您可以访问收件人列表、订阅服务、现有的定位工作流以及创建所有这些组件的快捷方式。
+例如，在浏览到 **[!UICONTROL Profiles and targets]** 选项卡上，您可以访问收件人列表、订阅服务、现有的定位工作流以及创建所有这些组件的快捷方式。
 
 ![](assets/overview-list.png)
 
-在屏幕中选择元素时，该元素将加载到一个新选项卡中，以便您轻松浏览内容。
+在屏幕中选择元素时，该元素将加载到新选项卡中，以便您轻松浏览内容。
 
 ![](assets/new-tab.png)
 
 ## 创建元素 {#create-an-element}
 
-在中使用快捷键 **[!UICONTROL Create]** 部分，以添加新元素。 您还可以使用 **[!UICONTROL Create]** 按钮来向当前列表添加新元素。
+在中使用快捷键 **[!UICONTROL Create]** 部分，以添加新元素。 您也可以使用 **[!UICONTROL Create]** 按钮向当前列表添加新元素。
 
 例如，在投放页面上，使用 **[!UICONTROL Create]** 按钮创建新的投放。
 
@@ -60,11 +60,11 @@ Campaign 工作区可通过[客户端控制台](../architecture/general-architec
 
 您还可以通过Web浏览器访问Campaign功能的子集。
 
-Web访问界面类似于控制台界面。 在浏览器中，您可以使用与控制台中相同的导航和显示功能，但您只能在营销策划上执行一组缩减的操作。 例如，您可以查看和取消营销活动，但无法修改营销活动。
+Web访问界面与控制台界面类似。 在浏览器中，您可以使用与控制台中相同的导航和显示功能，但您只能对营销策划执行一组缩减的操作。 例如，您可以查看和取消营销活动，但无法修改营销活动。
 
 ![](../assets/do-not-localize/glass.png) [了解有关Campaign Web访问的更多信息](../start/connect.md#web-access).
 
-## 访问Campaign Explorer {#ac-explorer-ui}
+## 访问Campaign资源管理器 {#ac-explorer-ui}
 
 浏览Campaign Explorer以访问所有Adobe Campaign功能和设置。
 
@@ -72,7 +72,7 @@ Web访问界面类似于控制台界面。 在浏览器中，您可以使用与�
 
 此工作区允许您访问资源管理器树以浏览所有功能和选项。
 
-* 左侧部分显示Campaign Explorer树，并允许您根据权限浏览实例的所有组件和设置。 您可以添加和自定义文件夹，如中所述 [此页面](../audiences/folders-and-views.md).
+* 左侧部分显示Campaign Explorer树，并允许您根据权限浏览实例的所有组件和设置。 您可以按照中的说明添加和自定义文件夹 [此页面](../audiences/folders-and-views.md).
 
 * 上半部分显示当前文件夹中的记录列表。 这些列表是完全可自定义的。 [了解详情](../config/ui-settings.md)
 

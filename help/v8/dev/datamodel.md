@@ -14,21 +14,21 @@ ht-degree: 6%
 
 # Campaign 数据模型快速入门{#gs-ac-datamodel}
 
-Adobe Campaign 提供了预定义的数据模型。此部分提供了有关Adobe Campaign数据模型的内置表及其交互的一些详细信息。 Adobe Campaign依赖于包含链接在一起的表的Cloud数据库。
+Adobe Campaign 提供了预定义的数据模型。本节提供了有关Adobe Campaign数据模型的内置表及其交互的一些详细信息。 Adobe Campaign依赖于包含链接在一起的表的云数据库。
 
-Adobe Campaign数据模型的基本结构可以描述如下：
+Adobe Campaign数据模型的基本结构可描述如下：
 
-* **收件人表**：数据模型依赖于主表，该主表默认为收件人表(nmsRecipient)。 此表存储了所有营销配置文件。
+* **收件人表**：数据模型依赖于主表，该主表默认为收件人表(nmsRecipient)。 此表存储了所有营销用户档案。
 
-   ![](../assets/do-not-localize/glass.png) 有关“收件人”表的详细信息，请参阅 [本节](#ootb-profiles).
+  ![](../assets/do-not-localize/glass.png) 有关“收件人”表的详细信息，请参阅 [本节](#ootb-profiles).
 
-* **投放表**：数据模型还包括专用于存储所有营销活动的部分。 通常为投放表(NmsDelivery)。 此表中的每条记录都表示一个投放操作或投放模板。 它包含执行投放所需的所有参数，如目标、内容等。
+* **投放表**：数据模型还包括专用于存储所有营销活动的部件。 通常为投放表(NmsDelivery)。 此表中的每条记录表示一个投放操作或投放模板。 它包含执行投放所需的所有参数，如目标、内容等。
 
 * **日志表**：这些表存储与活动执行关联的所有日志。
 
-   投放日志是跨所有渠道发送给收件人或设备的所有消息。 主投放日志表(NmsBroadLogRcp)包含所有收件人的投放日志。
-主跟踪日志表(NmsTrackingLogRcp)存储所有收件人的跟踪日志。 跟踪日志是指收件人的反应，例如电子邮件打开次数和点击次数。 每个反应都与一个跟踪日志相对应。
-投放日志和跟踪日志会在特定时段后删除，该特定时段在Adobe Campaign中指定并可修改。 因此，强烈建议定期导出日志。
+  投放日志是跨所有渠道发送给收件人或设备的所有消息。 主投放日志表(NmsBroadLogRcp)包含所有收件人的投放日志。
+主跟踪日志表(NmsTrackingLogRcp)存储所有收件人的跟踪日志。 跟踪日志是指收件人的反应，例如电子邮件打开次数和点击次数。 每个反应对应于一个跟踪日志。
+投放日志和跟踪日志会在特定时段后删除，该特定时段在Adobe Campaign中指定并可进行修改。 因此，强烈建议定期导出日志。
 
 * **技术表**：收集用于应用进程的技术数据，包括操作员和用户权限(xtkGroup)、文件夹(XtkFolder)。
 
@@ -38,9 +38,9 @@ Adobe Campaign数据模型的基本结构可以描述如下：
 
 开始使用Adobe Campaign时，您需要评估默认数据模型，以检查哪个表最适合存储营销数据。
 
-您可以将默认的收件人表与现成的字段一起使用，如中所述 [本节](#ootb-profiles). 如果需要，可以使用以下两种机制来扩展它：
+您可以将默认收件人表与现成字段一起使用，如中所述 [本节](#ootb-profiles). 如果需要，您可以使用两种机制来扩展它：
 
-* [扩展现有表](extend-schema.md) 包含新字段。 例如，您可以向收件人表添加新的“忠诚度”字段。
+* [扩展现有表](extend-schema.md) 新增字段。 例如，您可以向收件人表添加新的“忠诚度”字段。
 * [创建新表](create-schema.md)例如，有一个“Purchase”表，其中列出了数据库的每个用户档案进行的所有购买，并将其链接到收件人表。
 
 ![](../assets/do-not-localize/glass.png) 在中使用Campaign数据模型时了解最佳实践 [本节](datamodel-best-practices.md).
@@ -52,21 +52,21 @@ Adobe Campaign中的内置收件人表(nmsrecipient)为构建数据模型提供�
 使用标准收件人表的好处包括：
 
 * 开箱即用地使用关键功能，如订阅、种子列表等
-* 为营销数据库提供以收件人为中心的数据模型
-* 更快实施
+* 提供具有以收件人为中心的数据模型的营销数据库
+* 更快的实施
 * 由支持和合作伙伴轻松维护
 
-可以扩展收件人表，但不能减少表中的字段或链接数量。
+可以扩展收件人表，但不能减少表中的字段或链接数。
 
-![](../assets/do-not-localize/glass.png) 了解如何扩展中的现有架构 [本节](extend-schema.md).
+![](../assets/do-not-localize/glass.png) 了解如何在中扩展现有架构 [本节](extend-schema.md).
 
 ![](../assets/do-not-localize/book.png) 在中发现内置收件人表扩展的示例 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#extending-a-table){target="_blank"}
 
-您还可以使用不同的收件人表，以更好地满足您的业务或功能要求。 此方法具有限制，具体说明见 [本节](custom-recipient.md).
+您还可以使用其他收件人表以更好地满足您的业务或功能要求。 此方法具有限制，具体说明见 [本节](custom-recipient.md).
 
 ## Campaign表和云数据库
 
-要更好地了解Campaign v8中的表管理，请注意 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，表将在Campaign及其Snowflake云数据库之间复制。
+要更好地了解Campaign v8中的表管理，请注意 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，这些表将在Campaign及其Snowflake云数据库之间复制。
 
 ![](../assets/do-not-localize/glass.png) 了解有关复制策略和机制的更多信息，请参见 [本节](../architecture/replication.md).
 

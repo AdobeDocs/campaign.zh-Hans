@@ -16,13 +16,13 @@ ht-degree: 8%
 
 要开始使用Campaign，您必须安装和配置客户端控制台。
 
-Client Console是一种本机应用程序，它通过标准Internet协议（如SOAP和HTTP）与Adobe Campaign应用程序服务器进行通信。 Campaign客户端控制台集中了所有功能和设置，并且由于依赖于本地缓存，因此需要的带宽最少。 Campaign客户端控制台专为轻松部署而设计，可从互联网浏览器部署并自动更新，无需任何特定的网络配置，因为它只会生成HTTP(S)流量。
+Client Console是一个本机应用程序，它通过标准Internet协议（如SOAP和HTTP）与Adobe Campaign应用程序服务器进行通信。 Campaign客户端控制台集中了所有功能和设置，并且由于依赖本地缓存，因此需要的带宽最少。 Campaign客户端控制台专为轻松部署而设计，可从互联网浏览器部署并自动更新，无需任何特定的网络配置，因为它只生成HTTP(S)流量。
 
 在开始之前，您需要：
 
 * 在中检查您的系统和工具与Adobe Campaign的兼容性 [兼容性矩阵](compatibility-matrix.md)
 * 获取Campaign服务器URL
-* 创建您的Adobe ID，或从您的公司获取用户凭据
+* 创建您的Adobe ID，或从您的公司获取您的用户凭据
 * 在系统上安装Microsoft Edge Webview2运行时。 [了解详情](#webview)
 
 ## 安装客户端控制台{#download-ac-console}
@@ -31,7 +31,7 @@ Client Console是一种本机应用程序，它通过标准Internet协议（如S
 
 从Campaign Classic8.4内部版本开始，任何客户端控制台都需要安装Microsoft Edge Webview 2运行时。
 
-Web View默认作为Windows 11操作系统的一部分安装。 如果您的系统中不存在该软件包，Campaign Client Console安装程序将提示您从以下位置下载它 [Microsoft开发人员网站](http://www.adobe.com/go/acc-ms-webview2-runtime-download_cn){target="_blank"}. 请注意，下载链接在Internet Explorer 11浏览器上不起作用，因为Microsoft已弃用其支持。 确保使用其他浏览器访问链接。
+默认情况下，Web View作为Windows 11操作系统的一部分安装。 如果您的系统中不存在该扩展，Campaign客户端控制台安装程序将提示您从以下位置下载该扩展 [Microsoft开发人员网站](http://www.adobe.com/go/acc-ms-webview2-runtime-download_cn){target="_blank"}. 请注意，下载链接在Internet Explorer 11浏览器上不起作用，因为Microsoft已弃用其支持。 确保使用其他浏览器来访问该链接。
 
 ### 下载控制台{#install-ac-console}
 
@@ -43,15 +43,15 @@ Web View默认作为Windows 11操作系统的一部分安装。 如果您的系�
 
 1. 作为最终用户，您的Campaign管理员会为您部署客户端控制台，并通过专用URL提供该控制台。
 
-下载Client Console安装程序后，请将其安装到本地计算机上。
+下载Client Console安装程序后，将其安装到本地计算机上。
 
-请注意，一旦安装客户端控制台语言，您就无法更改该语言。
+请注意，安装客户端控制台语言后，您无法对其进行更改。
 
 ## 创建连接{#create-your-connection}
 
 安装Client Console后，请按照以下步骤创建与应用程序服务器的连接：
 
-1. 启动Console并浏览右侧的链接以访问连接配置屏幕。
+1. 启动Console并浏览右角的链接以访问连接配置屏幕。
 
 1. 单击 **[!UICONTROL Add > Connection]** 并输入Adobe Campaign应用程序服务器的标签和URL。
 
@@ -71,11 +71,11 @@ Web View默认作为Windows 11操作系统的一部分安装。 如果您的系�
 
 ## 登录到Adobe Campaign {#logon-to-ac}
 
-Campaign用户通过AdobeIdentity Management System (IMS)，使用其Adobe ID连接到Adobe Campaign控制台。 他们可以在所有Adobe解决方案中使用同一ID。 将Adobe Campaign与其他解决方案结合使用时，将保存连接。 在中了解有关Adobe IMS的更多信息 [此页面](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
+Campaign用户通过AdobeAdobe Campaign System (IMS)，使用其Adobe ID连接到Identity Management控制台。 他们可以在所有Adobe解决方案中使用相同的ID。 将Adobe Campaign与其他解决方案一起使用时，将会保存连接。 在中了解有关Adobe IMS的更多信息 [此页面](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}.
 
 要登录到实例，请执行以下步骤：
 
-1. 启动Console并浏览右侧的链接以访问连接配置屏幕。
+1. 启动Console并浏览右角的链接以访问连接配置屏幕。
 
    ![](assets/connectToCampaign.png)
 
@@ -83,19 +83,19 @@ Campaign用户通过AdobeIdentity Management System (IMS)，使用其Adobe ID连
 
 1. 单击 **[!UICONTROL Ok]**。
 
-然后，您可以使用Adobe ID登录到Campaign。
+然后，您可以使用您的Adobe ID登录到Campaign。
 
 ![](assets/adobeID.png)
 
 >[!NOTE]
 >
->由于Microsoft Edge Webview2不保存代理凭据，因此控制台可能会在首次连接时要求您进行两次身份验证。
+>由于Microsoft Edge Webview2不保存代理凭据，因此控制台可能会要求您在首次连接时进行两次身份验证。
 
 ## 升级您的客户端控制台{#upgrade-ac-console}
 
-当您的系统升级到较新版本时，您必须将客户端控制台更新到该版本。 这是最佳实践，对于某些版本，此升级是强制性的。 在此情况下，请参见 [发行说明](release-notes.md).
+当您的系统升级到较新版本时，您必须将客户端控制台更新到该版本。 这是最佳实践，对于某些版本，此升级是强制性的。 在这种情况下， [发行说明](release-notes.md).
 
-作为托管Cloud Services用户，Adobe将为您部署客户端控制台。 当您连接到升级后的环境时，系统会提示您在一个弹出窗口中下载最新的客户端控制台版本。 您必须接受此升级，并根据请求更新客户端控制台。
+作为托管Cloud Service用户，Adobe将为您部署客户端控制台。 当您连接到已升级的环境时，系统会提示您在一个弹出窗口中下载最新的Client Console版本。 您必须接受此升级，并根据请求更新客户端控制台。
 
 >[!CAUTION]
 >
@@ -115,11 +115,11 @@ Adobe Campaign允许您定义和管理分配给各种操作员的权限。
 
 ## Web 访问{#web-access}
 
-可以使用HTML用户界面通过Web浏览器访问应用程序的某些部分：报告、投放批准、实例监控等。
+可以通过Web浏览器使用HTML用户界面访问应用程序的某些部分：报告、投放批准、实例监控等。
 
 Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
-例如，对于给定的运算符，营销活动将在控制台中显示以下选项：
+例如，对于给定的运算符，促销活动将在控制台中显示以下选项：
 
 ![](assets/campaign-from-console.png)
 
@@ -127,6 +127,6 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 ![](assets/campaign-from-web.png)
 
-验证过程中还使用Web访问：操作员可以单击审批请求电子邮件，并通过其Web浏览器连接到Campaign，以验证或拒绝投放内容或预算。
+在验证过程中还会使用Web访问：操作员可以单击审批请求电子邮件，并通过其Web浏览器连接到Campaign，以验证或拒绝投放内容或预算。
 
 要从Web访问Campaign实例，URL为：  `https://<your adobe campaign server>:<port number>/view/home`.

@@ -12,7 +12,7 @@ ht-degree: 2%
 
 ---
 
-# 扩展架构{#extend-schemas}
+# 扩展模式{#extend-schemas}
 
 作为技术用户，您可以自定义Campaign数据模型以满足实施的需求：将元素添加到现有架构、修改架构中的元素或删除元素。
 
@@ -23,14 +23,14 @@ ht-degree: 2%
 1. 调整输入表单
 
 >[!CAUTION]
->不得直接修改内置架构。 如果需要调整内置模式，则必须对其进行扩展。
+>不得直接修改内置架构。 如果您需要调整内置模式，则必须对其进行扩展。
 
 ![](../assets/do-not-localize/glass.png) 要更好地了解Campaign内置表及其交互，请参阅 [此页面](datamodel.md). 另请参阅在中创建新架构时的建议 [此页面](create-schema.md).
 
 要扩展架构，请执行以下步骤：
 
-1. 导航到 **[!UICONTROL Administration > Configuration > Data schemas]** 文件夹。
-1. 单击 **新** 按钮并选择 **[!UICONTROL Extend the data in a table using an extension schema]**.
+1. 导航至 **[!UICONTROL Administration > Configuration > Data schemas]** 文件夹。
+1. 单击 **新建** 按钮并选择 **[!UICONTROL Extend the data in a table using an extension schema]**.
 
    ![](assets/extend-schema-option.png)
 
@@ -38,7 +38,7 @@ ht-degree: 2%
 
    ![](assets/extend-schema-select.png)
 
-   按照惯例，将扩展模式命名为与内置模式相同的模式，并使用自定义命名空间。  请注意，某些命名空间仅是内部命名空间。 [了解详情](schemas.md#reserved-namespaces)
+   按照惯例，将扩展模式命名为与内置模式相同的名称，并使用自定义命名空间。  请注意，某些命名空间仅是内部命名空间。 [了解详情](schemas.md#reserved-namespaces)
 
    ![](assets/extend-schema-validate.png)
 
@@ -46,7 +46,7 @@ ht-degree: 2%
 
    ![](assets/extend-schema-edit.png)
 
-   在以下示例中，我们添加了 **MembershipYear** 属性，为姓氏设置长度限制（此限制将覆盖默认长度），并从内置架构中删除出生日期。
+   在以下示例中，我们添加了 **MembershipYear** 属性，为姓氏设置长度限制（此限制将覆盖默认限制），并从内置架构中删除出生日期。
 
    ![](assets/extend-schema-sample.png)
 
@@ -62,7 +62,7 @@ ht-degree: 2%
    </srcSchema>
    ```
 
-1. 断开连接并重新连接到Campaign，以检查架构结构更新 **[!UICONTROL Structure]** 选项卡。
+1. 断开并重新连接到Campaign，以检查架构结构更新 **[!UICONTROL Structure]** 选项卡。
 
    ![](assets/extend-schema-structure.png)
 

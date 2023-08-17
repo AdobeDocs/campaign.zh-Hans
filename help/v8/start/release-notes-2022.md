@@ -77,14 +77,14 @@ _2022 年 9 月 30 日_
 * 此更改仅适用于“获取 URL”。包括“发布 URL”在内的其他类型操作不会受到影响。
 * 如您使用的是自定义代码，则不会再从“获取 URL”安全令牌参数中检索安全令牌。您必须使用以下 JSSP 代码生成新的安全令牌：
 
-   ```getNewSecurityToken(jsspContext.getSessionToken(), jsspContext.getSecurityToken(), true);```
+  ```getNewSecurityToken(jsspContext.getSessionToken(), jsspContext.getSecurityToken(), true);```
 
-   您还可以使用“登录 API”来获取安全令牌。
+  您还可以使用“登录 API”来获取安全令牌。
 * 会话令牌管理没有变化。
 
 **改进**
 
-* 在 Microsoft Internet Explorer 11 的生命周期终止后，控制台中的 HTML 渲染引擎现在使用的是 **Microsoft Edge Chromium**。此外，安装 **Microsoft Edge WebView 2** 现在，任何客户端控制台安装都需要运行时。
+* 在 Microsoft Internet Explorer 11 的生命周期终止后，控制台中的 HTML 渲染引擎现在使用的是 **Microsoft Edge Chromium**。此外，安装 **Microsoft Edge WebView 2** 现在，任何Client Console安装都需要运行时。
 * 工作流的高可用性使工作流的执行得到改善，此提升可使您同时跨不同容器运行工作流，以防止工作流服务丢失，并避免发生与之相关的执行错误。**注意**：此新功能仅以“有限可用”的状态向特定客户群体发布。
 * 现在可针对给定的隐私命名空间批量执行隐私请求。这项改进使 GDPR/隐私删除请求的执行时间有所增加。
 
@@ -226,9 +226,8 @@ _2022 年 5 月 18 日_
 * Campaign 现在支持适用于 POP3 的 Microsoft Exchange Online OAuth 2.0 身份验证。[了解更多信息](../config/external-accounts.md#bounce-mails-external-account)
 * 已对 Microsoft Dynamics Connector Web API 应用了以下重要修复。
 * 添加了新的运算符和组模式写入 (operatorWrite) 命名权限，以允许用户插入、更新和删除运算符 (xtk:operator) 和运算符组 (xtk:group) 模式。
-   <!--* You can now enable the Email BCC (blind carbon copy) capability to store emails sent by Campaign at the delivery level, through the dedicated option in the delivery properties. [Read more](../config/email-settings.md#email-bcc)-->
-
-   <!--* To ensure better performances, a new "Split" option is now activated by default in the Routing external account. This option allows messages to be automatically split across your mid-sourcing instances in order to be delivered faster to the recipients.-->
+  <!--* You can now enable the Email BCC (blind carbon copy) capability to store emails sent by Campaign at the delivery level, through the dedicated option in the delivery properties. [Read more](../config/email-settings.md#email-bcc)-->
+  <!--* To ensure better performances, a new "Split" option is now activated by default in the Routing external account. This option allows messages to be automatically split across your mid-sourcing instances in order to be delivered faster to the recipients.-->
 * 现在，可以在单个中间源上配置多个 LINE 活动帐户。
 * Web 进程的默认连接数从 50 个增加到 150 个。
 * Campaign 提供了一组新护栏，以防止在 Snowflake 数据库中插入重复的键。[了解更多信息](../architecture/keys.md)

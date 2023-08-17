@@ -14,20 +14,20 @@ ht-degree: 1%
 
 # Campaign安全最佳实践 {#ac-security}
 
-在Adobe，我们非常重视您的数字体验的安全性。 安全实践深深地植入我们内部软件开发与运行流程和工具中，我们的跨职能团队严格遵循这些实践，以预防、检测和快速响应事件。
+在Adobe，我们非常重视您的数字体验的安全性。 安全实践深深地植入到我们的内部软件开发与运行流程和工具中，我们的跨职能团队严格遵循这些惯例，以预防、检测事件并快速做出响应。
 
-此外，我们与合作伙伴、领先的研究人员、安全研究机构和其他行业组织开展的协作还有助于我们及时了解最新的威胁和漏洞，并且我们经常将先进的安全技术融入到我们提供的产品和服务中。
+此外，我们与合作伙伴、领先的研究人员、安全研究机构和其他行业组织开展的协作也有助于我们及时了解最新的威胁和漏洞，并且我们经常将先进的安全技术融入我们提供的产品和服务中。
 
 ## 隐私
 
-隐私配置和强化是安全优化的关键要素。 以下是一些有关隐私的最佳实践：
+隐私配置和强化是安全优化的关键元素。 以下是有关隐私的一些可遵循的最佳实践：
 
 * 使用HTTPS而不是HTTPProtect您的客户个人信息(PI)
 * 使用 [PI视图限制](../dev/restrict-pi-view.md) 保护隐私并防止数据被滥用
-* 确保限制加密的密码
-* Protect可能包含个人信息的页面，例如镜像页面、Web应用程序等。
+* 确保加密密码受到限制
+* Protect可能包含个人信息的页面，如镜像页面、Web应用程序等。
 
-![](../assets/do-not-localize/speech.png)  作为托管Cloud Services用户，Adobe将帮助您在环境中实施这些配置。
+![](../assets/do-not-localize/speech.png)  作为托管Cloud Service用户，Adobe将与您合作在您的环境中实施这些配置。
 
 
 ## 访问管理
@@ -43,18 +43,18 @@ ht-degree: 1%
 
 在Adobe Campaign（工作流、Javascript、JSSP等）中进行开发时，请始终遵循以下准则：
 
-* **脚本**：尝试避免SQL语句，使用参数化函数而不是字符串连接，通过向允许列表添加要使用的SQL函数来避免SQL注入。
+* **脚本**：尝试避免SQL语句，使用参数化函数而不是字符串连接，通过添加要用于允许列表的SQL函数来避免SQL注入。
 
-* **保护数据模型**：使用已命名权限限制操作员操作，添加系统筛选器(sysFilter)
+* **保护数据模型**：使用已命名权限限制操作员操作，添加系统过滤器(sysFilter)
 
-* **在Web应用程序中添加字幕**：在您的公共登陆页面和订阅页面中添加字幕。
+* **在Web应用程序中添加captcha**：在您的公共登陆页面和订阅页面中添加资本编码。
 
 ![](../assets/do-not-localize/book.png) 了解详情，请参阅 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}
 
 
 ## 个性化
 
-向内容添加个性化链接时，请始终避免在URL的主机名部分进行任何个性化设置，以避免潜在的安全漏洞。 切勿在所有URL属性中使用以下示例&lt;`a href="">` 或 `<img src="">`：
+向内容添加个性化链接时，请始终避免在URL的主机名部分进行任何个性化设置，以避免潜在的安全缺口。 绝不应该在所有URL属性中使用以下示例&lt;`a href="">` 或 `<img src="">`：
 
 * `<%= url >`
 * `https://<%= url >`
@@ -76,7 +76,7 @@ ht-degree: 1%
 
 1. 在最后一个屏幕中，可以编辑新的srcSchema以限制对所有密码字段的访问：
 
-   您可以替换主元素(`<element name="extAccount" ... >`)：
+   您可以替换主元素(`<element name="extAccount" ... >`)，按照：
 
    ```
    <element name="extAccount">
@@ -122,7 +122,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >您可以替换 `$(loginId) = 0 or $(login) = 'admin'` 作者： `hasNamedRight('admin')` 让所有具有管理员权限的用户都能够查看这些密码。
+   >您可以替换 `$(loginId) = 0 or $(login) = 'admin'` 按 `hasNamedRight('admin')` 让所有拥有管理员权限的用户都能看到这些密码。
 
 
 ## 访问管理
@@ -138,10 +138,10 @@ ht-degree: 1%
 
 在Adobe Campaign（工作流、Javascript、JSSP等）中进行开发时，请始终遵循以下准则：
 
-* **脚本**：尝试避免SQL语句，使用参数化函数而不是字符串连接，通过向允许列表添加要使用的SQL函数来避免SQL注入。
+* **脚本**：尝试避免SQL语句，使用参数化函数而不是字符串连接，通过添加要用于允许列表的SQL函数来避免SQL注入。
 
-* **保护数据模型**：使用已命名权限限制操作员操作，添加系统筛选器(sysFilter)
+* **保护数据模型**：使用已命名权限限制操作员操作，添加系统过滤器(sysFilter)
 
-* **在Web应用程序中添加字幕**：在您的公共登陆页面和订阅页面中添加字幕。
+* **在Web应用程序中添加captcha**：在您的公共登陆页面和订阅页面中添加资本编码。
 
 ![](../assets/do-not-localize/book.png) 了解详情，请参阅 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}

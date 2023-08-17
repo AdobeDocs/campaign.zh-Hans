@@ -25,20 +25,20 @@ ht-degree: 2%
 
 ## 外部文件数据源
 
-您可以使用包含列中定义的所有字段的外部文件。 此文件在消息投放定义期间用作输入。 您可以选择是否在数据库中插入这些配置文件。
+您可以使用包含列中所定义的所有字段的外部文件。 此文件在消息投放定义期间用作输入。 您可以选择是否在数据库中插入这些配置文件。
 
-要选择用作数据源的文件，请浏览到消息创建窗口中的“至”链接，然后选择 **在外部文件中定义** 选项。 加载文件后，请在个性化选项中访问收件人数据，网址为 **文件中的字段** 登入。
+要选择用作数据源的文件，请浏览到消息创建窗口中的至链接，然后选择 **在外部文件中定义** 选项。 加载文件后，从访问个性化选项中的收件人数据 **文件中的字段** 进入。
 
 ![来自文件的个性化数据](assets/perso-from-file.png)
 
 
 ## FDA数据源
 
-个性化数据可通过从外部表中提取 [联合数据访问](../connect/fda.md).  如果要使用外部数据库中的数据在投放中实施个性化，请收集要在工作流中使用的数据，以使其在临时表中可用。
+个性化数据可通过从外部表中提取 [联合数据访问](../connect/fda.md).  如果要使用外部数据库中的数据在投放中进行个性化，请收集要在工作流中使用的数据，以使其在临时表中可用。
 
-要执行此操作，请添加 **查询** 定位工作流中的活动并使用 **添加数据……** 用于选择外部数据库的链接。 详细流程位于 [本节](../../automation/workflow/query.md#adding-data).
+要执行此操作，请添加 **查询** 活动，并使用 **添加数据……** 用于选择外部数据库的链接。 详细流程请参见 [本节](../../automation/workflow/query.md#adding-data).
 
-然后，使用临时表中的数据将投放个性化。 配置查询活动后，可从以下位置访问个性化选项中的外部数据： **目标扩展** 登入。
+然后，使用临时表中的数据将投放个性化。 配置查询活动后，可从访问个性化选项中的外部数据 **目标扩展** 进入。
 
 ![来自外部数据库的个性化数据](assets/perso-external-db.png)
 
@@ -46,28 +46,28 @@ ht-degree: 2%
 
 ### 优化个性化 {#optimize-personalization}
 
-您可以使用专用选项优化个性化： **[!UICONTROL Prepare the personalization data with a workflow]**，可在 **[!UICONTROL Analysis]** 选项卡中显示的投放属性。
+您可以使用专用选项优化个性化： **[!UICONTROL Prepare the personalization data with a workflow]**，可在 **[!UICONTROL Analysis]** 投放属性的选项卡。
 
-在投放分析期间，此选项会自动创建并执行一个工作流，该工作流会将链接到目标的所有数据（包括来自FDA中链接的表的数据）存储在临时表中。
+在投放分析期间，此选项会自动创建和执行工作流，该工作流会将链接到目标的所有数据（包括来自FDA中链接的表的数据）存储在临时表中。
 
-当处理大量数据时，尤其是当个性化数据通过FDA来自外部表时，选中此选项可以极大地提高投放分析性能。 [了解详情](../connect/fda.md)。
+选中此选项可以极大地改进处理大量数据时的投放分析性能，尤其是当个性化数据通过FDA来自外部表时。 [了解详情](../connect/fda.md)。
 
 要使用此选项，请执行以下步骤：
 
 1. 创建营销策划.
 1. 在 **[!UICONTROL Targeting and workflows]** 选项卡，添加 **查询** 活动添加到工作流。
 1. 添加 **[!UICONTROL Email delivery]** 活动以打开工作流。
-1. 转到 **[!UICONTROL Analysis]** 的选项卡 **[!UICONTROL Delivery properties]** 并选择 **[!UICONTROL Prepare the personalization data with a workflow]** 选项。
+1. 转到 **[!UICONTROL Analysis]** 选项卡 **[!UICONTROL Delivery properties]** 并选择 **[!UICONTROL Prepare the personalization data with a workflow]** 选项。
 1. 配置投放并启动工作流以启动分析。
 
-分析完成后，个性化数据将通过分析期间动态创建的临时技术工作流存储在临时表中。
+分析完成后，个性化数据会通过分析期间动态创建的临时技术工作流存储在临时表中。
 
-此工作流在Adobe Campaign界面中不可见。 它仅仅是一种快速存储和处理个性化数据的技术手段。
+此工作流在Adobe Campaign界面中不可见。 它仅用于作为快速存储和处理个性化数据的技术手段。
 
-分析完成后，转到工作流 **[!UICONTROL Properties]** 并选择 **[!UICONTROL Variables]** 选项卡。 您可以在此处看到可用于进行SQL调用的临时表的名称，以显示它包含的ID。
+分析完成后，转到工作流 **[!UICONTROL Properties]** 并选择 **[!UICONTROL Variables]** 选项卡。 在这里，您可以看到可用于进行SQL调用的临时表的名称，以显示它包含的ID。
 
 ## 工作流中的个性化数据
 
-在工作流上下文中创建投放时，您可以使用临时工作流表中的数据。 工作流临时工作表中存储的数据可用于个性化任务。 数据可用于个性化字段。
+在工作流上下文中创建投放时，您可以使用临时工作流表中的数据。 存储在工作流临时工作表中的数据可用于个性化任务。 数据可用于个性化字段。
 
 此数据分组在 **[!UICONTROL Target extension]** 菜单。 如需详细信息，请参阅[此部分](../../automation/workflow/use-workflow-data.md#target-data)。

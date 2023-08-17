@@ -1,6 +1,6 @@
 ---
-title: 筛选营销活动模式
-description: 了解如何筛选Campaign架构
+title: 筛选营销活动架构
+description: 了解如何筛选Campaign模式
 feature: Schema Extension
 role: Developer
 level: Intermediate, Experienced
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 系统筛选器 {#system-filters}
 
-您可以筛选对特定用户的架构访问权限，具体取决于其权限。 通过系统筛选器，您可以使用管理架构中详述的实体的读取和写入权限 **readAccess** 和 **writeraccess** 参数。
+您可以筛选对特定用户的架构访问权限，具体取决于其权限。 通过系统筛选器，您可以使用管理架构中详述的实体的读写权限 **readAccess** 和 **writeAccess** 参数。
 
 >[!NOTE]
 >
@@ -24,37 +24,37 @@ ht-degree: 0%
 
 * **readAccess**：提供对架构数据的只读访问权限。
 
-   **警告**  — 所有链接表都必须设置相同的限制。 此配置可能会影响性能。
+  **警告**  — 必须对所有链接表设置相同的限制。 此配置可能会影响性能。
 
-* **writeraccess**：提供对架构数据的写入权限。
+* **writeAccess**：提供对架构数据的写入权限。
 
-这些筛选器输入在主页面 **元素** 架构的级别和可以形成来限制访问，如以下示例所示。
+这些筛选器在主 **元素** 架构的级别，如以下示例中所示，可以形成来限制访问。
 
 * 限制写入权限
 
-   此处，过滤器用于禁止没有管理权限的运算符在架构上具有“写入”权限。 这意味着只有管理员才对此架构描述的实体具有写入权限。
+  此处，过滤器用于禁止没有“管理”权限的操作员在架构上具有“写入”权限。 这意味着只有管理员对此架构描述的实体具有写入权限。
 
-   ```
-   <sysFilter name="writeAccess">      
-    <condition enabledIf="hasNamedRight('admin')=false" expr="FALSE"/>    
-   </sysFilter>
-   ```
+  ```
+  <sysFilter name="writeAccess">      
+   <condition enabledIf="hasNamedRight('admin')=false" expr="FALSE"/>    
+  </sysFilter>
+  ```
 
 * 限制读取和写入权限：
 
-   此处，该过滤器用于禁止所有操作员在架构上同时具有“读取”和“写入”权限。 仅 **内部** 帐户，由表达式“$(loginId)”表示！=0”，具有这些权限。
+  此处，该过滤器用于禁止所有操作员在架构上同时具有“读取”和“写入”权限。 仅 **内部** 帐户，由表达式“$(loginId)”表示！=0”，具有这些权限。
 
-   ```
-   <sysFilter name="readAccess"> 
-    <condition enabledIf="$(loginId)!=0" expr="FALSE"/>
-   </sysFilter>
-   
-   <sysFilter name="writeAccess">  
-    <condition enabledIf="$(loginId)!=0" expr="FALSE"/>
-   </sysFilter>
-   ```
+  ```
+  <sysFilter name="readAccess"> 
+   <condition enabledIf="$(loginId)!=0" expr="FALSE"/>
+  </sysFilter>
+  
+  <sysFilter name="writeAccess">  
+   <condition enabledIf="$(loginId)!=0" expr="FALSE"/>
+  </sysFilter>
+  ```
 
-   可能 **表达式** 用于定义条件的属性值是TRUE或FALSE。
+  可能 **表达式** 用于定义条件的属性值是TRUE或FALSE。
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ## Protect内置架构
 
-默认情况下，只有具有管理权限的操作员才可以通过“写入”权限访问内置架构：
+默认情况下，只有具有ADMINISTRATION权限的操作员才可以通过WRITE权限访问内置架构：
 
 * ncm：publishing
 * nl：monitoring
@@ -101,10 +101,10 @@ ht-degree: 0%
 
 ## 修改内置模式的系统筛选器
 
-内置模式受到保护，以避免与旧版本发生兼容性问题。 Adobe建议您不要修改默认架构参数以确保最佳安全性。
+内置模式受到保护，以避免与旧版本出现兼容性问题。 Adobe建议您不要修改默认架构参数以确保最佳安全性。
 
 但是，在特定上下文中，您可能需要修改内置模式的系统筛选器。 要执行此操作，请执行以下步骤：
 
 1. 为内置模式创建扩展或打开现有扩展。
-1. 添加子元素 **`<sysfilter name="<filter name>" _operation="delete"/>`** ，以忽略内置模式中相同项下的筛选器。
+1. 添加子元素 **`<sysfilter name="<filter name>" _operation="delete"/>`** 中的筛选条件，以忽略内置模式中相同项下的筛选条件。
 1. 您可以添加新过滤器，如中所述 [系统筛选器](#system-filters) 部分。

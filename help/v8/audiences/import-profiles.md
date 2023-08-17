@@ -1,5 +1,5 @@
 ---
-title: 在Campaign中导入用户档案
+title: 在Campaign导入用户档案
 description: 了解如何在Campaign中导入联系人
 feature: Audiences, Profiles
 role: User
@@ -32,10 +32,10 @@ ht-degree: 24%
 
 ## 一次性导入{#import-jobs}
 
-Adobe Campaign提供了一般导入功能，例如，您可以通过该功能提取随后将成为目标群体一部分的客户或潜在客户列表，或者向数据库提供来自外部文件的数据。
+Adobe Campaign提供了一般导入功能，例如，可让您提取随后将成为目标群体一部分的客户或潜在客户列表，或向您的数据库提供来自外部文件的数据。
 
 通用导入由管理 **[!UICONTROL Profiles and Targets > Jobs]** Adobe Campaign主页的菜单。
 
 ![](assets/new-import-job.png)
 
-有关执行通用导入的详细步骤，请参见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=zh-Hans){target="_blank"}.
+有关执行一般导入的详细步骤，请参见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=zh-Hans){target="_blank"}.

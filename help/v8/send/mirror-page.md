@@ -35,7 +35,7 @@ Adobe Campaign 生成的镜像页面包含所有个性化数据。
 
 有关插入个性化内容块的更多信息，请参阅 [个性化块](personalization-blocks.md).
 
-## 管理镜像页面生成 {#mirror-page-generation}
+## 管理镜像页面的生成 {#mirror-page-generation}
 
 默认情况下，如果电子邮件内容不为空，并且包含指向镜像页面的链接（也称为镜像链接），则 Adobe Campaign 会自动生成镜像页面。
 
@@ -46,15 +46,15 @@ Adobe Campaign 生成的镜像页面包含所有个性化数据。
 
 ![](assets/mirror-page-generation.png){width="800" align="left"}
 
-除了默认模式外，还提供以下选项：
+除默认模式外，还提供以下选项：
 
 * **[!UICONTROL Force the generation of the mirror page]**：使用此模式可生成镜像页面，即使投放中未插入指向镜像页面的链接也是如此。
-* **[!UICONTROL Do not generate the mirror page]**：使用此模式可避免生成镜像页面，即使链接存在于投放中也是如此。
-* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**：当电子邮件内容中不存在镜像页面链接时，请使用此选项在投放日志窗口中启用对镜像页面内容的访问，如下所述。
+* **[!UICONTROL Do not generate the mirror page]**：使用此模式可避免生成镜像页面，即使投放中存在链接也是如此。
+* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**：当电子邮件内容中不存在镜像页面链接时，使用此选项可在投放日志窗口中启用对镜像页面内容的访问，如下所述。
 
 ## 检查收件人的镜像页面 {#mirror-page-access}
 
-您可以使用个性化数据访问投放的特定收件人镜像页面的内容。
+您可以为投放的特定收件人访问镜像页面的内容，其中包含个性化数据。
 
 要访问此镜像页面，请执行以下操作：
 
@@ -64,4 +64,4 @@ Adobe Campaign 生成的镜像页面包含所有个性化数据。
 
    ![](assets/mirror-page-display.png){width="800" align="left"}
 
-   镜像页面显示在专用屏幕中，其中包含所选收件人的个性化数据。
+   镜像页面显示在专用屏幕中，其中包含选定收件人的个性化数据。

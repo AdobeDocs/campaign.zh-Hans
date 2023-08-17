@@ -38,27 +38,27 @@ Adobe Campaign v8 附带以下投放渠道：
 
 * 手动将消息发送到主目标
 
-   ![](assets/send-email.png)
+  ![](assets/send-email.png)
 
-   在[此部分](../send/send.md)中了解如何发送消息
+  在[此部分](../send/send.md)中了解如何发送消息
 
 * 发送与[营销活动](campaigns.md)关联的消息
 
-   ![](assets/deliveries-in-a-campaign.png)
+  ![](assets/deliveries-in-a-campaign.png)
 
-   在[此部分](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=zh-Hans)中了解如何在营销活动上下文中发送消息
+  在[此部分](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=zh-Hans)中了解如何在营销活动上下文中发送消息
 
 * 通过[工作流](../config/workflows.md)发送消息
 
-   ![](assets/send-in-a-wf.png)
+  ![](assets/send-in-a-wf.png)
 
-   请参阅[此页面](../../automation/workflow/delivery.md)以了解如何自动化电子邮件投放
+  请参阅[此页面](../../automation/workflow/delivery.md)以了解如何自动化电子邮件投放
 
 * 从事件[触发消息](../send/transactional.md)
 
 * 计划消息发送
 
-   ![](assets/schedule-send.png)
+  ![](assets/schedule-send.png)
 
 [用例：了解如何计划和发送生日电子邮件](../../automation/workflow/send-a-birthday-email.md)
 

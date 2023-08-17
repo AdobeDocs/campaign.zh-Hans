@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 向列表发送报告{#send-a-report-to-a-list}
 
-此用例详细说明了如何每月生成一个现成的版本 **[!UICONTROL Tracking indicators]** PDF格式的报告，以及如何将其发送给收件人列表。
+此用例详细说明了如何生成每月开箱即用的报表 **[!UICONTROL Tracking indicators]** PDF格式的报告以及如何将其发送给收件人列表。
 
 ![](assets/use_case_report_intro.png)
 
@@ -25,15 +25,15 @@ ht-degree: 3%
 
 ## 步骤1：创建收件人列表 {#step-1--create-the-recipient-list}
 
-要创建定向收件人列表，请执行以下步骤：
+要创建目标收件人列表，请执行以下步骤：
 
 1. 浏览至 **[!UICONTROL Profiles and targets]** 选项卡，单击 **[!UICONTROL Lists]** 链接。
 1. 单击 **[!UICONTROL Create]** 按钮。
-1. 选择 **[!UICONTROL New list]** 并为要发送的报告创建新的收件人列表。
+1. 选择 **[!UICONTROL New list]** 并为要发送到的报告创建新的收件人列表。
 
 有关创建列表的详细信息，请参阅 [本节](../../v8/audiences/create-audiences.md).
 
-## 步骤2：创建投放模板 {#step-2--create-the-delivery-template}
+## 第2步：创建投放模板 {#step-2--create-the-delivery-template}
 
 要创建投放模板，请执行以下步骤：
 
@@ -43,33 +43,33 @@ ht-degree: 3%
 
 1. 输入模板参数：标签、目标（以前创建的收件人列表）、主题和内容。
 
-   每次执行工作流时， **[!UICONTROL Tracking indicators]** 报告已更新，如中所述 [步骤3：创建工作流](#step-3--creating-the-workflow))。
+   每次执行工作流时， **[!UICONTROL Tracking indicators]** 报告已更新，如中所述 [第3步：创建工作流](#step-3--creating-the-workflow))。
 
 1. 要在投放中包含最新版本的报表，您需要添加 **[!UICONTROL Calculated attachment]**：
 
    * 单击 **[!UICONTROL Attachments]** 链接，然后单击 **[!UICONTROL Add]** 按钮。 选择 **[!UICONTROL Calculated attachment...]**。
 
-      ![](assets/use_case_report_4.png)
+     ![](assets/use_case_report_4.png)
 
    * 在 **[!UICONTROL Type]** 从下拉列表中，选择最新的选项： **[!UICONTROL File name is computed during delivery of each message (it may then depend on the recipient profile)]**.
 
-      ![](assets/use_case_report_5.png)
+     ![](assets/use_case_report_5.png)
 
-      在中输入的值 **[!UICONTROL Label]** 字段不会显示在最终投放中。
+     在中输入的值 **[!UICONTROL Label]** 字段不会显示在最终投放中。
 
    * 在文本区域中，输入文件的访问路径和名称。
 
-      ![](assets/use_case_report_6.png)
+     ![](assets/use_case_report_6.png)
 
-      >[!CAUTION]
-      >
-      >路径和名称必须与 **[!UICONTROL JavaScript code]** 键入工作流的活动，如中所述 [步骤3：创建工作流](#step-3--creating-the-workflow).
+     >[!CAUTION]
+     >
+     >路径和名称必须与 **[!UICONTROL JavaScript code]** 键入工作流的活动，如中所述 [第3步：创建工作流](#step-3--creating-the-workflow).
 
-   * 选择 **[!UICONTROL Advanced]** 制表符和勾选 **[!UICONTROL Script the name of the file name displayed in the mails sent]**. 在文本区域中，输入最终投放中的附件名称。
+   * 选择 **[!UICONTROL Advanced]** 制表符和勾选 **[!UICONTROL Script the name of the file name displayed in the mails sent]**. 在文本区域中，在最终投放中输入附件的名称。
 
-      ![](assets/use_case_report_6b.png)
+     ![](assets/use_case_report_6b.png)
 
-## 步骤3：创建工作流 {#step-3--creating-the-workflow}
+## 第3步：创建工作流 {#step-3--creating-the-workflow}
 
 为此用例创建以下工作流。
 
@@ -83,7 +83,7 @@ ht-degree: 3%
 
 要构建此工作流，请执行以下步骤：
 
-1. 浏览至 **[!UICONTROL Administration > Production > Technical workflows]** 节点，并创建一个新文件夹来存储您的工作流。
+1. 浏览至 **[!UICONTROL Administration > Production > Technical workflows]** 节点，并创建新文件夹以存储工作流。
 1. 创建新工作流。
 
    ![](assets/use_case_report_7.png)
@@ -92,7 +92,7 @@ ht-degree: 3%
 
    ![](assets/use_case_report_9.png)
 
-   有关配置调度程序的详细信息，请参阅 [调度程序](scheduler.md).
+   有关配置调度程序的详细信息，请参阅 [计划程序](scheduler.md).
 
 1. 然后添加 **[!UICONTROL JavaScript code]** 键入activity。
 
@@ -112,19 +112,19 @@ ht-degree: 3%
    ```
 
 
-   变量：
+   变量一起使用：
 
-   * **var reportName**：用双引号输入报表的内部名称。 在本例中， **跟踪指示器** 报告为“deliveryFeedback”。
-   * **var路径**：输入文件的保存路径(“tmp”)、要为文件指定的名称(“deliveryFeedback”)和文件扩展名(“.pdf”)。 在本例中，我们使用内部名称作为文件名。 值需要位于双引号之间并以“+”字符分隔。
+   * **var reportName**：用双引号输入报表的内部名称。 在本例中，的 **跟踪指示器** 报告为“deliveryFeedback”。
+   * **变量路径**：输入文件的保存路径(“tmp”)、要为文件指定的名称(“deliveryFeedback”)以及文件扩展名(“.pdf”)。 在本例中，我们使用内部名称作为文件名。 值需要位于双引号之间并以“+”字符分隔。
 
-      >[!CAUTION]
-      >
-      >该文件必须保存在服务器上。 您必须输入与中相同的路径和名称 **[!UICONTROL General]** 已计算附件的“编辑”窗口的“选项卡”（详细信息） [此处](#step-2--create-the-delivery-template))。
+     >[!CAUTION]
+     >
+     >文件必须保存在服务器上。 您必须输入与中相同的路径和名称 **[!UICONTROL General]** 已计算附件的“编辑”窗口的选项卡（详见） [此处](#step-2--create-the-delivery-template))。
 
-   * **var exportFormat**：输入文件的导出格式(PDF)。
+   * **var exportFormat**：输入文件的导出格式(“PDF”)。
    * **var _ctx** （上下文）：在本例中，我们使用 **[!UICONTROL Tracking indicators]** 在其全局上下文中报告。
 
-1. 通过添加 **[!UICONTROL Delivery]** 活动，选项如下：
+1. 通过添加 **[!UICONTROL Delivery]** 活动：
 
    ![](assets/use_case_report_11.png)
 
@@ -133,4 +133,4 @@ ht-degree: 3%
    * **[!UICONTROL Action to perform]**：选择 **[!UICONTROL Prepare and start]**.
    * 取消选中 **[!UICONTROL Generate an outbound transition]** 和 **[!UICONTROL Process errors]** 选项。
 
-1. 保存更改并启动工作流。 该消息将于每月第一个星期一发送到收件人列表，并随附报告。
+1. 保存更改并启动工作流。 该消息将于当月第一个星期一发送到收件人列表，并随附报告。

@@ -14,19 +14,19 @@ ht-degree: 8%
 
 # 操作员配置文件 {#operator-profiles}
 
-有两种类型的操作员可以使用Campaign交互： **优惠经理** 和 **投放经理**. 每个角色都有特定的权限和限制。 在中了解有关Campaign操作员和权限的更多信息 [此页面](../start/gs-permissions.md).
+两种类型的操作员可以使用Campaign交互： **优惠经理** 和 **投放经理**. 每个用户都有特定的权限和限制。 在中了解有关Campaign操作员和权限的更多信息 [此页面](../start/gs-permissions.md).
 
 * 此 **[!UICONTROL Offer manager]** 创建和维护选件。
 * 此 **[!UICONTROL Delivery manager]** 批准和使用优惠
 
-## 创建选件管理器运算符{#offer-manager}
+## 创建优惠管理器运算符{#offer-manager}
 
 1. 创建运算符。 [了解详情](../start/manage-permissions.md#add-users)
 1. 浏览至 **[!UICONTROL Groups and named rights]** 窗口，单击 **[!UICONTROL Add]** 并选择 **[!UICONTROL Offer manager]** 组。
 
-说明了与选件管理器关联的权限 [此处](../start/manage-permissions.md#ootb-productprofiles)
+介绍了与选件管理器关联的权限 [此处](../start/manage-permissions.md#ootb-productprofiles)
 
-## 创建投放经理操作员 {#delivery-manager}
+## 创建投放管理器操作员 {#delivery-manager}
 
 1. 创建运算符。 [了解详情](../start/manage-permissions.md#add-users)
 1. 浏览至 **[!UICONTROL Groups and named rights]** 选项卡，单击 **[!UICONTROL Add]** 并选择 **[!UICONTROL Delivery manager]** 组。
@@ -37,9 +37,9 @@ ht-degree: 8%
 * 显示和修改优惠类别。
 * 批准选件（如果选件是审阅者）。
 
-   >[!NOTE]
-   >
-   >**投放经理** 仅当在选件配置中声明了某个选件为审阅人时，才能批准该选件。
+  >[!NOTE]
+  >
+  >**投放经理** 仅当在选件配置中声明了选件为审阅者时，才能批准选件。
 
 ## 每个交互运算符的权限矩阵 {#recap-of-rights-according-to-operator}
 
@@ -108,7 +108,7 @@ ht-degree: 8%
   <tr> 
    <td> </td> 
    <td> <strong>投放管理器（设计环境）</strong><br /> </td> 
-   <td> <strong>投放管理器（正式启用）</strong><br /> </td> 
+   <td> <strong>Delivery Manager（正式启用）</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>树结构级别</strong><br /> </td> 

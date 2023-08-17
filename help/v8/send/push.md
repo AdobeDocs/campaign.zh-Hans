@@ -8,7 +8,7 @@ exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
 source-git-commit: d941d9a364ffb2df77ba6726e655ca2916448f89
 workflow-type: tm+mt
 source-wordcount: '813'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 3%
 
 移动应用程序投放可让您向iOS和Android设备发送通知。
 
-在开始使用Adobe Campaign发送推送通知之前，您需要确保为移动应用程序和Adobe Experience Platform中的标记配置并集成到位。 [了解有关推送配置的更多信息。](push-settings.md)
+在开始使用Adobe Campaign发送推送通知之前，您需要确保移动应用程序和Adobe Experience Platform中的标记已具有配置和集成。 [了解有关推送配置的更多信息。](push-settings.md)
 
 ## 创建您的第一个推送通知{#push-create}
 
-此部分详细介绍特定于iOS和Android通知交付的元素。
+此部分详细介绍特定于iOS和Android通知投放的元素。
 
 >[!CAUTION]
 >
 >在上下文中 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，移动注册现在为 **异步**. [了解详情](../architecture/staging.md)
 
-要创建新投放，请浏览到 **[!UICONTROL Campaigns]** 选项卡，单击 **[!UICONTROL Deliveries]** 并单击 **[!UICONTROL Create]** 按钮时，发送电子邮件给现有投放列表的上方。
+要创建新投放，请浏览至 **[!UICONTROL Campaigns]** 选项卡，单击 **[!UICONTROL Deliveries]** 然后单击 **[!UICONTROL Create]** 按钮来指定现有投放列表的上方。
 
 ![](assets/delivery_step_1.png)
 
@@ -54,13 +54,13 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >此 **静默推送** 模式允许向移动应用程序发送“静默”通知。 用户未意识到通知的到达。 它将直接传输到应用程序。
+   >此 **静默推送** 模式允许向移动应用程序发送“静默”通知。 其中并不通知用户已送达通知。而是直接将通知传送到应用程序。
 
-1. 在 **[!UICONTROL Title]** 字段中，输入要显示在通知中心可用通知列表中的标题标签。
+1. 在 **[!UICONTROL Title]** 字段，输入要显示在通知中心可用通知列表中的标题标签。
 
    此字段允许您定义 **标题** iOS通知有效负载的参数。
 
-1. 您可以添加 **[!UICONTROL Subtitle]**，的值 **字幕** iOS通知有效负载的参数。
+1. 您可以添加 **[!UICONTROL Subtitle]**，的值 **子标题** iOS通知有效负载的参数。
 
 1. 在中输入消息的内容 **[!UICONTROL Message content]** 部分。
 
@@ -68,11 +68,11 @@ ht-degree: 3%
 
    * **[!UICONTROL Clean Badge]**：启用此选项以刷新标记值。
 
-   * **[!UICONTROL Value]**：设置一个数字，该数字将用于直接在应用程序图标上显示新未读信息的数量。
+   * **[!UICONTROL Value]**：设置一个数字，该数字将用于直接在应用程序图标上显示新的未读信息数。
 
-   * **[!UICONTROL Critical alert mode]**：启用此选项，以便即使用户的手机设置为焦点模式或iPhone处于静音状态，也可以向通知中添加声音。
+   * **[!UICONTROL Critical alert mode]**：启用此选项，以便在用户的手机设置为焦点模式或iPhone处于静音状态时向通知中添加声音。
 
-   * **[!UICONTROL Name]**：在收到通知时，选择移动终端要播放的声音。
+   * **[!UICONTROL Name]**：选择在收到通知时移动终端要播放的声音。
 
    * **[!UICONTROL Volume]**：音量从0到100。
 
@@ -87,25 +87,25 @@ ht-degree: 3%
 
 1. 从 **[!UICONTROL Advanced]** 选项卡，可以编辑以下常规选项：
 
-   * **[!UICONTROL Mutable content]**：启用此选项可允许移动应用程序下载媒体内容。
+   * **[!UICONTROL Mutable content]**：启用此选项可允许移动设备应用程序下载媒体内容。
 
-   * **[!UICONTROL Thread-id]**：用于将相关通知分组在一起的标识符。
+   * **[!UICONTROL Thread-id]**：用于将相关通知分组的标识符。
 
    * **[!UICONTROL Category]**：将显示操作按钮的类别ID的名称。 这些通知为用户提供了一种更快的方式，无需在应用程序中打开或导航即可响应通知执行不同任务。
 
    ![](assets/push_ios_6.png)
 
-1. 对于时效性通知，您可以指定以下选项：
+1. 对于时效性通知，可以指定以下选项：
 
-   * **[!UICONTROL Target content ID]**：用于在打开通知时定位要前转的应用程序窗口的标识符。
+   * **[!UICONTROL Target content ID]**：用于在打开通知时定位要转发的应用程序窗口的标识符。
 
-   * **[!UICONTROL Launch image]**：要显示的启动图像文件的名称。 如果用户选择启动应用程序，将显示选定的图像而不是应用程序的启动屏幕。
+   * **[!UICONTROL Launch image]**：要显示的启动图像文件的名称。 如果用户选择启动您的应用程序，则会显示选定的图像而不是应用程序的启动屏幕。
 
    * **[!UICONTROL Interruption level]**：
 
       * **[!UICONTROL Active]**：默认情况下，系统会立即显示通知，打开屏幕并播放声音。 通知不会突破焦点模式。
 
-      * **[!UICONTROL Passive]**：系统会将通知添加到通知列表，而不会打开屏幕或播放声音。 通知不会突破焦点模式。
+      * **[!UICONTROL Passive]**：系统将通知添加到通知列表，而不打开屏幕或播放声音。 通知不会突破焦点模式。
 
       * **[!UICONTROL Time sensitive]** 系统立即显示通知，打开屏幕，可以播放声音并突破焦点模式。 此级别不需要Apple的特殊权限。
 
@@ -140,7 +140,7 @@ ht-degree: 3%
 
    ![](assets/push-android-content.png)
 
-1. 单击 **[!UICONTROL Insert emoticon]** 图标，以将表情符号插入到您的推送通知中。
+1. 单击 **[!UICONTROL Insert emoticon]** 图标，用于将表情符号插入到您的推送通知中。
 
 1. 在 **[!UICONTROL Application variables]** 字段中，输入每个变量的值。 例如，您可以配置在用户激活通知时显示的特定应用程序屏幕。
 
@@ -152,7 +152,7 @@ ht-degree: 3%
 
 ## 测试、发送和监控推送通知
 
-要发送证明并发送最终投放，请使用与其他投放相同的流程。
+要发送验证并发送最终投放，请按照与其他投放相同的流程操作。
 
 了解如何在中验证投放 [此页面](preview-and-proof.md).
 

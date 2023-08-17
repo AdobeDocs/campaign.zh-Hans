@@ -13,9 +13,9 @@ ht-degree: 1%
 
 # 营销活动投放 {#marketing-campaign-deliveries}
 
-在营销活动中编排跨渠道投放：通过个性化的电子邮件、短信、推送通知和应用程序内消息，简化与Adobe Campaign的通信。 您可以使用视频、表情符号或GIF等富媒体，并直接集成它们。
+在营销策划中编排跨渠道投放：通过个性化的电子邮件、短信、推送通知和应用程序内消息，简化与Adobe Campaign的通信。 您可以使用视频、表情符号或GIF等富媒体，并直接集成它们。
 
-可通过活动功能板、活动工作流或直接通过投放概述来创建投放。 从营销活动创建投放时，会将投放链接到此营销活动，并在营销活动级别进行合并。
+可通过活动功能板、活动工作流或直接通过投放概述创建投放。 从营销活动创建投放后，这些投放将链接到此营销活动，并在营销活动级别合并。
 
 ## 创建投放 {#create-deliveries}
 
@@ -25,27 +25,27 @@ ht-degree: 1%
 
 ![](assets/campaign_op_add_delivery.png)
 
-保存后，投放即添加到营销活动仪表板。
+保存后，投放即会添加到活动仪表板。
 
 * 从活动工作流中，在 **[!UICONTROL Targeting and workflows]** 选项卡，通过添加投放。
 
-   ![](assets/campaign-wf-delivery.png)
+  ![](assets/campaign-wf-delivery.png)
 
-   工作流启动后，投放即会添加到活动仪表板。
+  启动工作流后，投放即会添加到活动仪表板。
 
 了解如何设置和执行投放审批流程 [本页内容](marketing-campaign-approval.md).
 
 ## 开始投放 {#start-a-delivery}
 
-在获得所有批准后，可以发送投放。 投放执行过程取决于渠道。
+获得所有批准后，可以发送投放。 投放执行过程取决于渠道。
 
 * 有关电子邮件或移动渠道投放，请参阅 [本节](#start-an-online-delivery)
 
-* 有关直邮投放，请参阅 [本节](#start-an-offline-delivery)
+* 对于直邮投放，请参阅 [本节](#start-an-offline-delivery)
 
 ### 开始电子邮件或移动投放 {#start-an-online-delivery}
 
-批准所有审批请求后，投放状态将更改为 **[!UICONTROL Pending confirmation]** 并且可以启动。 可以开始投放的审阅人会收到投放已准备好开始的通知。
+在批准所有审批请求后，投放状态将更改为 **[!UICONTROL Pending confirmation]** 并且可以启动。 可以开始投放的审阅人会收到投放已准备就绪可供开始的通知。
 
 ![](assets/confirm-delivery.png)
 
@@ -68,9 +68,9 @@ ht-degree: 1%
 
 请按照以下步骤验证内容并将文件发送给提供商：
 
-1. 提取文件获得批准后，即可生成路由器通知电子邮件的证明。 此电子邮件基于投放模板构建。 它必须获得批准。
+1. 提取文件获得批准后，即可生成路由器通知电子邮件的证明。 此电子邮件基于投放模板构建。 它必须被批准。
 
-   此步骤仅在 **[!UICONTROL Enable the sending and validation of proofs (Direct mail)]** 选项在中启用 **[!UICONTROL Approvals]** 选项卡。
+   此步骤仅在 **[!UICONTROL Enable the sending and validation of proofs (Direct mail)]** 选项在中已启用 **[!UICONTROL Approvals]** 选项卡。
 
    ![](assets/enable-proof-validation.png)
 
@@ -78,37 +78,37 @@ ht-degree: 1%
 
    必须预先定义验证目标。
 
-   您可以创建所需数量的验证。 这些权限可通过 **[!UICONTROL Direct mail...]** 投放详细信息的链接。
+   您可以创建所需数量的验证。 这些资源可通过 **[!UICONTROL Direct mail...]** 投放详细信息的链接。
 
-1. 投放状态更改为 **[!UICONTROL To submit]**. 单击 **[!UICONTROL Submit proofs]** 按钮以启动审批流程。
+1. 投放状态更改为 **[!UICONTROL To submit]**. 单击 **[!UICONTROL Submit proofs]** 按钮以开始审批流程。
 
-1. 投放状态更改为 **[!UICONTROL Proof to validate]** 和按钮可让您接受或拒绝审批。
+1. 投放状态更改为 **[!UICONTROL Proof to validate]** 和按钮允许您接受或拒绝审批。
 
    您可以接受或拒绝此批准，或返回提取步骤。
 
-1. 验证获批后，提取文件即被发送到路由器并完成投放。
+1. 验证获批后，提取文件将发送到路由器并完成投放。
 
 ### 预算和成本计算 {#compute-costs-and-stocks}
 
-文件提取会启动两个流程：预算计算和库存计算。 更新预算条目。
+文件提取将启动两个流程：预算计算和库存计算。 更新预算条目。
 
-* 此 **[!UICONTROL Budget]** 选项卡允许您管理营销活动的预算。 成本条目的总数显示在 **[!UICONTROL Calculated cost]** 营销活动的主要选项卡及其所属项目的字段。 这些金额也反映在营销活动预算中。
+* 此 **[!UICONTROL Budget]** 选项卡允许您管理营销活动的预算。 成本条目的总数显示在 **[!UICONTROL Calculated cost]** 营销活动主选项卡及其所属项目的字段。 这些金额还反映在营销活动预算中。
 
-   ![](assets/campaign-budget-tab.png)
+  ![](assets/campaign-budget-tab.png)
 
-   实际成本最终将根据路由器提供的信息计算。 只有实际发送的消息才会开票。
+  最终将根据路由器提供的信息计算实际成本。 只有实际发送的消息才会被计费。
 
 * 库存定义于 **[!UICONTROL Administration > Campaign management > Stocks]** 树节点。
 
-   ![](assets/campaign-stocks.png)
+  ![](assets/campaign-stocks.png)
 
-   中的成本结构 **[!UICONTROL Administration > Campaign management > Service providers]** 节点。
+  中的成本结构 **[!UICONTROL Administration > Campaign management > Service providers]** 节点。
 
-   ![](assets/campaign-service-providers.png)
+  ![](assets/campaign-service-providers.png)
 
-   坯件线在坯件区中可见。 要定义初始坯件，请打开坯件线。 每次进行交货时，库存都会减少。 您可以定义警报级别和通知。
+  库存行在库存区中可见。 要定义初始坯件，请打开坯件线。 每次进行交货时，库存都会减少。 您可以定义警报级别和通知。
 
 
-   >[!NOTE]
-   >
-   >了解有关预算的更多信息 [在此部分中](providers--stocks-and-budgets.md).
+  >[!NOTE]
+  >
+  >了解有关预算的更多信息 [在此部分中](providers--stocks-and-budgets.md).

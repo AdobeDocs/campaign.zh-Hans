@@ -1,5 +1,5 @@
 ---
-title: Campaign互动选件预定义过滤器
+title: Campaign交互选件预定义过滤器
 description: 了解如何创建预定义过滤器
 feature: Interaction, Offers
 role: Data Engineer
@@ -38,6 +38,6 @@ ht-degree: 3%
 
    ![](assets/offer_filter_create_004.png)
 
-1. 单击 **[!UICONTROL Preview]** 以查看筛选器的结果。
+1. 单击 **[!UICONTROL Preview]** 以查看筛选结果。
 
    ![](assets/offer_filter_create_006.png)

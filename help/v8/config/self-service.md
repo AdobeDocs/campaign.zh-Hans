@@ -8,7 +8,7 @@ exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
 source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
 workflow-type: tm+mt
 source-wordcount: '380'
-ht-degree: 92%
+ht-degree: 95%
 
 ---
 
@@ -36,7 +36,7 @@ Campaign 控制面板允许管理每个实例的设置并跟踪使用情况，�
 
 ## SFTP 管理
 
-在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。您可以监测它们的存储容量、管理允许列表上的 IP 地址和公共 SSH 密钥。[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html#sftp-management){target="_blank"}以了解更多信息。
+在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。您可以监测它们的存储容量、管理允许列表上的 IP 地址和公共 SSH 密钥。[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=zh-Hans#sftp-management){target="_blank"}以了解更多信息。
 
 ## 子域和证书
 

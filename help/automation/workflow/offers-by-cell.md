@@ -21,13 +21,13 @@ ht-degree: 7%
 
 操作步骤：
 
-1. 添加 **[!UICONTROL Offers by cell]** 指定目标群体后打开该群体。
-1. 在 **[!UICONTROL General]** 选项卡中，选择要显示优惠的优惠空间。
-1. 在 **[!UICONTROL Cells]** 选项卡中，使用 **[!UICONTROL Add]** 按钮：
+1. 添加 **[!UICONTROL Offers by cell]** 指定目标群体后，请打开该群体。
+1. 在 **[!UICONTROL General]** 选项卡上，选择要显示选件的选件空间。
+1. 在 **[!UICONTROL Cells]** 选项卡，使用 **[!UICONTROL Add]** 按钮：
 
    * 使用可用的筛选和限制规则指定子集群体。
-   * 接下来，选择要向子集呈现的选件。 可用优惠是在上一步中选择的优惠空间上符合条件的优惠。
+   * 接下来，选择要向子集呈现的选件。 可用优惠是在上一步骤中选择的优惠空间上符合条件的优惠。
 
-      ![](assets/int_offer_per_cell1.png)
+     ![](assets/int_offer_per_cell1.png)
 
 1. 然后，配置与您选择的渠道对应的投放活动。 请参阅 [跨渠道投放](cross-channel-deliveries.md).

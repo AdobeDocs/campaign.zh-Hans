@@ -6,7 +6,7 @@ feature: Workflows
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '43'
-ht-degree: 23%
+ht-degree: 27%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 23%
 
 
 
-下面详述的工作流随 **中间源平台** 默认模块。
+下面详细介绍的工作流随 **中间源平台** 默认模块。
 
 <table> 
  <tbody> 
@@ -25,9 +25,9 @@ ht-degree: 23%
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">投放指标</span> <br /> </td> 
+   <td> <span class="uicontrol">投放指示器</span> <br /> </td> 
    <td> <span class="uicontrol">deliveryIndicators</span> <br /> </td> 
-   <td> 此工作流用于更新投放的投放跟踪指示器。 默认情况下，此工作流每小时触发一次。<br /> </td> 
+   <td> 此工作流可更新投放的投放跟踪指示器。 默认情况下，此工作流每小时触发一次。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

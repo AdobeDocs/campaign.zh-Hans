@@ -27,7 +27,7 @@ ht-degree: 4%
 
 ## 设计和使用工作流{#gs-ac-wf}
 
-使用Adobe Campaign工作流提高营销活动各个方面的速度和规模，从创建区段、准备消息到投放。
+使用Adobe Campaign工作流从创建区段、准备消息到投放，提高营销活动各个方面的速度和规模。
 
 了解如何在中设计工作流 [端到端用例](#end-to-end-uc).
 
@@ -49,7 +49,7 @@ ht-degree: 4%
 
 工作流活动按类别分组。 提供了四个活动类别：
 
-* [定位活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities.html)：查询、读取列表、扩充、并集等
+* [定位活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities.html)：查询、读取列表、扩充、合并等
 * [流量控制活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/flow-control-activities.html)：调度程序、分支、警报、外部信号等
 * [操作活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html)：跨渠道投放、Javascript代码、CRM活动、更新聚合等
 * [事件活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/event-activities.html)：文件传输、Web下载等
@@ -59,10 +59,10 @@ ht-degree: 4%
 此 **[!UICONTROL Change data source]** 活动允许您更改工作流的数据源 **[!UICONTROL Working table]**. 这为跨不同数据源（如FDA、FFDA和本地数据库）管理数据提供了更大的灵活性。
 
 此 **[!UICONTROL Working table]** 允许Adobe Campaign工作流处理数据并与工作流活动共享数据。
-默认情况下， **[!UICONTROL Working table]** 是在与我们查询的数据源相同的数据库中创建的。
+默认情况下， **[!UICONTROL Working table]** 在与我们查询的数据源相同的数据库中创建。
 
-例如，在查询 **[!UICONTROL Profiles]** 表，存储在云数据库中，您将创建 **[!UICONTROL Working table]** 在同一云数据库上。
-要更改此项，您可以添加 **[!UICONTROL Change Data Source]** 活动，为您的选择其他数据源 **[!UICONTROL Working table]**.
+例如，当查询 **[!UICONTROL Profiles]** 表，存储在云数据库中，您将创建 **[!UICONTROL Working table]** 在同一云数据库中。
+要更改此设置，您可以添加 **[!UICONTROL Change Data Source]** 活动，为您的选择其他数据源 **[!UICONTROL Working table]**.
 
 请注意，在使用时 **[!UICONTROL Change Data Source]** 活动，则需要切换回云数据库才能继续执行工作流。
 
@@ -70,21 +70,21 @@ ht-degree: 4%
 
 1. 创建工作流.
 
-1. 使用查询定向收件人 **[!UICONTROL Query]** 活动。
+1. 使用查询目标收件人 **[!UICONTROL Query]** 活动。
 
    欲知关于 **[!UICONTROL Query]** 活动，请参阅 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html).
 
-1. 从 **[!UICONTROL Targeting]** 选项卡，添加 **[!UICONTROL Change data source]** 活动并双击它以选择 **[!UICONTROL Default data source]**.
+1. 从 **[!UICONTROL Targeting]** 选项卡，添加 **[!UICONTROL Change data source]** 活动并双击以将其选中 **[!UICONTROL Default data source]**.
 
-   然后，包含查询结果的工作表将移至默认的PostgreSQL数据库。
+   随后会将包含查询结果的工作表移动到默认的PostgreSQL数据库。
 
 1. 从 **[!UICONTROL Actions]** 选项卡，拖放 **[!UICONTROL JavaScript code]** 对工作表执行单一操作的活动。
 
    欲知关于 **[!UICONTROL JavaScript code]** 活动，请参阅 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code.html).
 
-1. 添加另一个 **[!UICONTROL Change data source]** 活动以切换回云数据库。
+1. 添加其他 **[!UICONTROL Change data source]** 活动以切换回云数据库。
 
-   双击活动并选择 **[!UICONTROL Active FDA external account]** 然后是相应的外部帐户。
+   双击您的活动并选择 **[!UICONTROL Active FDA external account]** 然后是相应的外部帐户。
 
 1. 您现在可以启动工作流。
 
@@ -92,19 +92,19 @@ ht-degree: 4%
 
 创建工作流后，您可以使用访问其他选项 **[!UICONTROL Properties]** 按钮进行进一步配置。
 
-详细了解 **工作流属性** 在 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/workflow-properties.html).
+了解有关 **工作流属性** 在 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/workflow-properties.html).
 
 从 **[!UICONTROL Execution]** 工作流的选项卡 **[!UICONTROL Properties]**，您可以选择将工作流链接到不同的仓库并优化工作负载管理。 有关的详细信息 **仓库**，请参阅 [Snowflake文档](https://docs.snowflake.com/en/user-guide/warehouses-overview.html).
 
 ![](assets/warehouse.png)
 
-根据工作流的用途，您可以从以下三个仓库中选择一个 **[!UICONTROL Warehouse]** 下拉列表：
+根据工作流的用途，您可以从以下三个仓库中进行选择 **[!UICONTROL Warehouse]** 下拉列表：
 
 * **[!UICONTROL Default]** / **[!UICONTROL Campaign]**：创建新工作流时默认设置。
 
-* **[!UICONTROL Import / Export]**：应该使用导入或导出工作流设置以优化活动的性能。
+* **[!UICONTROL Import / Export]**：应该使用导入或导出工作流进行设置，以优化活动的性能。
 
-* **[!UICONTROL Campaign Burst]**：应使用活动或投放工作流设置，以优化投放处理时间。
+* **[!UICONTROL Campaign Burst]**：应使用活动或投放工作流进行设置，以优化投放处理时间。
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ ht-degree: 4%
 
 ## 利用触发事件
 
-使用Campaign事务型消息传递可自动执行从信息系统触发的事件生成的消息。 这些事务型消息可以是发票、订单确认、送货确认、密码更改、产品不可用通知、帐户对帐单或网站帐户创建等。 这些消息可以单独发送，也可以通过电子邮件、短信或推送通知批量发送。
+使用Campaign事务型消息传递可自动执行从信息系统触发的事件生成的消息。 这些事务型消息可以是发票、订单确认、送货确认、密码更改、产品不可用通知、帐户对帐单或网站帐户创建等。 这些消息可以通过电子邮件、短信或推送通知单独或批量发送。
 
 ![](../assets/do-not-localize/glass.png) 在中了解有关事务性消息传递功能的更多信息 [本节](../send/transactional.md).
 
@@ -139,16 +139,16 @@ ht-degree: 4%
 
 * [发送生日电子邮件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=zh-Hans)
 
-   此用例介绍了如何规划在收件人的生日当天向收件人列表发送定期电子邮件。
+  此用例介绍了如何计划在收件人生日当天向其列表发送定期电子邮件。
 
 * [加载投放内容](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html)
-当投放内容位于远程服务器的HTML文件中可用时，您可以轻松地将此内容加载到Adobe Campaign投放中。
+当您的投放内容位于远程服务器上的HTML文件中可用时，您可以轻松将此内容加载到Adobe Campaign投放中。
 
 * [跨渠道投放工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/cross-channel-delivery-workflow.html)
-了解如何构建跨渠道投放工作流。 目标是将受众从数据库的收件人划分为不同的组，并向第一组发送电子邮件，向另一组发送短信。
+了解如何构建跨渠道投放工作流。 目标在于将受众从数据库的收件人划分为不同的组，并向第一组发送电子邮件，向另一组发送短信。
 
 * [使用自定义日期字段扩充电子邮件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/email-enrichment-with-custom-date-fields.html)
-了解如何向本月庆祝生日的用户档案发送包含自定义数据字段的电子邮件。 该电子邮件将包含优惠券，在孩子生日前一周和生后一周有效。
+了解如何向本月庆祝生日的用户档案发送包含自定义数据字段的电子邮件。 该电子邮件将包含优惠券，有效期限为他们的生日前后一周。
 
 以及Campaign v7文档中的以下页面：
 
@@ -156,33 +156,33 @@ ht-degree: 4%
 了解如何使用Campaign内容管理加载项自动创建和交付内容块。
 
 * [A/B测试](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/a-b-testing/use-case/a-b-testing-use-case.html){target="_blank"}
-了解如何通过定位工作流比较两个电子邮件投放内容。 消息和文本在两种投放中完全相同：只有布局会更改。 目标群体分为三类：两个测试群体和其余群体。 向每个测试组发送投放的不同版本。
+了解如何通过定位工作流比较两个电子邮件投放内容。 消息和文本在两种投放中都相同：只有布局发生变化。 目标群体分为三类：两个测试群体和其余群体。 向每个测试组发送投放的不同版本。
 
 ### 监测 {#monitoring}
 
 <img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
 
 * [向列表发送报告](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/send-a-report-to-a-list.html)
-了解如何以PDF格式生成每月内置跟踪指标报告，并将其发送给Campaign操作员列表。
+了解如何以PDF格式生成每月内置的跟踪指标报告，并将其发送给Campaign操作员的列表。
 
 * [监督工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html)
-了解如何创建工作流，以允许您监控一组“已暂停”、“已停止”或“出现错误”的工作流的状态。
+了解如何创建工作流，以便您监控一组“已暂停”、“已停止”或“出现错误”的工作流的状态。
 
 * [向操作员发送个性化提醒](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/send-alerts-to-operators.html)
-了解如何向操作员发送警报，该操作员将包含打开了新闻稿但未单击新闻稿所含链接的用户档案的名称。
+了解如何向操作员发送警报，该操作员将包含打开了新闻稿但未单击新闻稿所包含链接的用户档案的名称。
 
 ### 数据管理 {#management}
 
 <img src="assets/do-not-localize/icon_manage.svg" width="60px">
 
 * [协调数据更新](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/coordinate-data-updates.html)
-了解如何在执行其他更新操作之前检查更新进程是否已结束。 为此，我们将设置一个实例变量，并让工作流测试实例是否正在运行，以决定是否继续执行工作流并执行更新。
+了解如何检查更新进程是否已在执行其他更新操作之前结束。 为此，我们将设置一个实例变量，并让工作流测试实例是否正在运行，以决定是否继续执行工作流并执行更新。
 
 * [创建摘要列表](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/create-a-summary-list.html)
-了解如何创建工作流，在收集文件并完成几项增强后，该工作流允许您创建摘要列表。 此示例基于在商店中进行购买的联系人列表。
+了解如何创建工作流，在收集文件并完成几项增强后，可让您创建摘要列表。 此示例基于在商店中进行购买的联系人列表。
 
 * [丰富数据](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/enrich-data.html?lang=zh-Hans)
-了解如何根据参加最新竞赛的用户档案得分向其发送个性化投放。
+了解如何根据参加最新竞争的用户档案得分向其发送个性化投放。
 
 * [使用聚合](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html)
 了解如何识别最后添加到数据库的收件人。
@@ -191,14 +191,14 @@ ht-degree: 4%
 了解如何使用增量查询自动更新收件人列表。
 
 * [设置循环导入工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/recurring-import-workflow.html)
-了解如何设计可重复用于导入来自Adobe Campaign数据库中CRM的用户档案的工作流。
+了解如何设计一个可重复使用的工作流，用于导入来自Adobe Campaign数据库中CRM的用户档案。
 
 ### 设定目标 {#designing-queries}
 
 <img src="assets/do-not-localize/icon_filter.svg" width="60px">
 
 * [查询收件人表](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/querying-recipient-table.html)
-了解如何恢复电子邮件域为“orange.co.uk”且不在伦敦居住的收件人的姓名和电子邮件。
+了解如何恢复其电子邮件域为“orange.co.uk”且不在伦敦居住的收件人的姓名和电子邮件。
 
 * [查询投放信息](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-delivery-info.html)
 了解如何定义有关投放信息的查询以检索用户档案的行为。

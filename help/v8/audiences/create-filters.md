@@ -1,6 +1,6 @@
 ---
-title: 在Adobe Campaign中创建筛选器
-description: 了解如何在Campaign中筛选数据和保存筛选器
+title: 在Adobe Campaign中创建过滤器
+description: 了解如何在Campaign中过滤数据和保存过滤器
 feature: Audiences, Profiles
 role: User
 level: Beginner
@@ -14,29 +14,29 @@ ht-degree: 1%
 
 # 创建和管理过滤器{#create-filters}
 
-数据筛选是指选择数据集中的较小部分（仅与特定条件匹配的记录），并将该子集用于特定操作（更新、受众创建）或分析的过程。
+数据过滤是选择数据集的较小部分（仅限符合特定标准的记录），并将此子集用于特定操作（更新、受众创建）或分析的过程。
 
-从Campaign浏览 **[!UICONTROL Explorer]**&#x200B;中，数据会显示在列表中。 您可以使用现有的内置过滤器来访问此数据的特定子集：例如隔离的地址、未定位的收件人、特定年龄范围或创建日期。
+从浏览Campaign时 **[!UICONTROL Explorer]**&#x200B;中，数据会显示在列表中。 您可以使用现有的内置过滤器来访问此数据的特定子集：例如隔离的地址、未定位的收件人、特定年龄范围或创建日期。
 
-您也可以创建自己的过滤器、保存它们以供将来使用或与其他Campaign用户共享。
+您也可以创建自己的过滤器，保存它们以供将来使用或与其他Campaign用户共享。
 
-筛选器配置允许您从列表中选择数据 **[!UICONTROL dynamically]**：修改数据时，会更新过滤的数据。
+筛选器配置允许您从列表中选择数据 **[!UICONTROL dynamically]**：修改数据时，将更新过滤的数据。
 
 >[!NOTE]
 >
->用户界面配置设置是在设备级别本地定义的。 有时可能有必要清除此数据，尤其是在刷新数据时出现问题的情况下。 要执行此操作，请使用 **[!UICONTROL File > Clear the local cache]** 菜单。
+>用户界面配置设置在设备级别本地定义。 有时可能有必要清理此数据，尤其是在刷新数据时出现问题的情况下。 为此，请使用 **[!UICONTROL File > Clear the local cache]** 菜单。
 
 Adobe Campaign中提供了以下类型的过滤器：
 
 ## 预定义过滤器{#predefined-filters}
 
-预定义过滤器可从 **筛选器** 按钮时，单击此按钮。
+预定义过滤器可从以下位置获取： **过滤器** 按钮进行标记。
 
-例如，对于用户档案，可以使用以下内置过滤器：
+例如，对于用户档案，以下内置过滤器可用：
 
 ![](assets/built-in-filters.png)
 
-您可以访问 **[!UICONTROL Profiles and Targets > Pre-defined filters]** 节点。
+您可以在以下位置访问过滤器详细信息： **[!UICONTROL Profiles and Targets > Pre-defined filters]** Explorer节点。
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ Adobe Campaign中提供了以下类型的过滤器：
 
 ![](assets/predefined-filter-list.png)
 
-使用最后一个选项卡预览筛选后的数据。
+使用最后一个选项卡预览过滤的数据。
 
 ![](assets/built-in-filter-preview.png)
 
@@ -72,16 +72,16 @@ Adobe Campaign中提供了以下类型的过滤器：
    <td> 选择在X个月内未打开投放的收件人。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 按设备类型显示的上次活动<br /> </td> 
-   <td> 选择在过去Z天内使用设备X单击或打开了投放Y的收件人。<br /> </td> 
+   <td> 按设备类型的最后一次活动<br /> </td> 
+   <td> 选择过去Z天内使用设备X单击或打开过投放Y的收件人。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 按设备类型显示的上次活动（跟踪）<br /> </td> 
-   <td> 选择在过去Z天内使用设备X单击或打开了投放Y的收件人。<br /> </td> 
+   <td> 按设备类型的最后一次活动（跟踪）<br /> </td> 
+   <td> 选择过去Z天内使用设备X单击或打开过投放Y的收件人。<br /> </td> 
   </tr> 
   <tr> 
    <td> 未定位的收件人<br /> </td> 
-   <td> 选择在X个月内从未通过渠道Y定位的收件人。<br /> </td> 
+   <td> 选择在X个月内从未通过渠道Y进行定位的收件人。<br /> </td> 
   </tr> 
   <tr> 
    <td> 非常活跃的收件人<br /> </td> 
@@ -121,7 +121,7 @@ Adobe Campaign中提供了以下类型的过滤器：
   </tr> 
   <tr> 
    <td> 通过单击特定链接<br /> </td> 
-   <td> 选择在投放中单击特定URL的收件人。<br /> </td> 
+   <td> 选择单击投放中特定URL的收件人。<br /> </td> 
   </tr> 
   <tr> 
    <td> 按帖子投放行为<br /> </td> 
@@ -145,7 +145,7 @@ Adobe Campaign中提供了以下类型的过滤器：
   </tr> 
   <tr> 
    <td> 按打开次数<br /> </td> 
-   <td> 选择在X和Y投放之间在Z时间内打开的收件人。<br /> </td> 
+   <td> 选择在X和Y投放之间超过Z个时间量打开的收件人。<br /> </td> 
   </tr> 
   <tr> 
    <td> 按名称或电子邮件<br /> </td> 
@@ -153,15 +153,15 @@ Adobe Campaign中提供了以下类型的过滤器：
   </tr> 
   <tr> 
    <td> 按年龄范围<br /> </td> 
-   <td> 根据收件人的年龄选择收件人。<br /> </td> 
+   <td> 根据年龄选择收件人。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 
-### 默认筛选条件{#default-filters}
+### 默认筛选器{#default-filters}
 
-通过每个列表上方的字段，您可以使用 **预定义默认过滤器** 此列表的。 对于收件人列表，您可以默认根据姓名和电子邮件地址进行筛选。
+通过每个列表上方的字段，您可以使用 **预定义的默认筛选器** 此列表的。 对于收件人列表，您可以默认根据姓名和电子邮件地址进行筛选。
 
 ![](assets/filter-recipient-name.png)
 
@@ -176,26 +176,26 @@ Adobe Campaign中提供了以下类型的过滤器：
 
 应用以下步骤：
 
-1. 选择您希望默认使用的过滤器。
+1. 选择您希望默认使用的筛选器。
 1. 单击 **[!UICONTROL Parameters]** 选项卡并选择 **[!UICONTROL Default filter for the associated document type]**.
 
    ![](assets/change-default-filter.png)
 
-1. 取消选中当前默认预定义过滤器的相同选项。
+1. 为当前默认预定义过滤器取消选中相同选项。
 1. 单击 **[!UICONTROL Save]** 以应用过滤器。
-1. 浏览到收件人文件夹，然后单击 **[!UICONTROL Remove this filter]** 图标：新的默认过滤器可用。
+1. 浏览到收件人文件夹，然后单击 **[!UICONTROL Remove this filter]** 图标图标：新的默认过滤器可用。
    ![](assets/updated-default-filter.png)
 
 
 ## 快速过滤器{#quick-filters}
 
-使用和组合 **快速过滤器** 以针对特定字段定义过滤器。
+使用和组合 **快速过滤器** 以定义特定字段的过滤器。
 
 添加后，快速过滤器字段会逐个显示在数据列表上方。 它们可以相互独立地删除。
 
 快速过滤器特定于每个运算符，每当运算符清除其客户端控制台的缓存时，都会重新初始化快速过滤器。
 
-如果需要重用过滤器，请创建 **高级过滤器** 并保存它。 [了解详情](#advanced-filters)。
+如果需要重复使用过滤器，请创建 **高级过滤器** 并保存它。 [了解详情](#advanced-filters)。
 
 创建 **快速筛选**，请按照以下步骤操作：
 
@@ -203,12 +203,12 @@ Adobe Campaign中提供了以下类型的过滤器：
 
    ![](assets/quick-filter-on-this-field.png)
 
-   默认筛选条件字段显示在列表上方。
+   默认筛选字段显示在列表上方。
 
    ![](assets/quick-filter-above-list.png)
 
 1. 选择过滤器选项。
-1. 如果需要，可使用过滤器右侧的灰色图标将其删除。
+1. 如果需要，请使用过滤器右侧的灰色图标将其删除。
 1. 您可以组合过滤器以优化您的过滤器。
 
    ![](assets/add-filter-above-the-list.png)
@@ -234,7 +234,7 @@ Adobe Campaign中提供了以下类型的过滤器：
 
 ## 高级过滤器{#advanced-filters}
 
-在中组合复杂的标准 **高级过滤器**. 使用这些筛选器对您的数据创建复杂查询或查询组合。 这些过滤器可以保存并与其他Campaign用户共享。
+在中组合复杂的标准 **高级过滤器**. 使用这些筛选器创建复杂查询或数据查询组合。 这些过滤器可以保存并与其他Campaign用户共享。
 
 ### 创建高级过滤器{#create-adv-filters}
 
@@ -242,7 +242,7 @@ Adobe Campaign中提供了以下类型的过滤器：
 
 ![](assets/adv-filter.png)
 
-您还可以右键单击数据列表并选择 **[!UICONTROL Advanced filter...]**.
+您还可以右键单击数据列表，然后选择 **[!UICONTROL Advanced filter...]**.
 
 定义筛选条件。 在下面的示例中，您将筛选其帐号不以NL开头的收件人以及居住在巴黎或洛杉矶的收件人。
 
@@ -255,7 +255,7 @@ Adobe Campaign中提供了以下类型的过滤器：
 
    ![](assets/select-operator.png)
 
-1. 从中选择预期值 **[!UICONTROL Value]** 列。 您可以组合多个筛选器以优化查询。 要添加筛选条件，请单击 **[!UICONTROL Add]**.
+1. 从中选择预期值 **[!UICONTROL Value]** 列。 您可以合并多个筛选器以优化查询。 要添加筛选条件，请单击 **[!UICONTROL Add]**.
 
    ![](assets/add-an-exp.png)
 
@@ -263,17 +263,17 @@ Adobe Campaign中提供了以下类型的过滤器：
    >
    >您可以为表达式分配层次结构，也可以使用工具栏箭头更改查询表达式的顺序。
 
-1. 可以使用三个运算符来组合表达式：  **和**， **或**， **例外**. 单击箭头以切换到 **或**.
+1. 可以使用三个运算符来组合表达式：  **和**， **或**， **排除**. 单击箭头以切换到 **或**.
 
    ![](assets/select-or-operator.png)
 
-1. 单击 **[!UICONTROL Ok]** 以创建过滤器并将其应用于当前列表。
+1. 单击 **[!UICONTROL Ok]** 创建筛选器并将其应用于当前列表。
 
 应用的过滤器显示在列表上方。
 
 ![](assets/adv-filter-link.png)
 
-要编辑或修改此过滤器，请单击列表上方蓝色的“描述”链接。
+要编辑或修改此过滤器，请单击列表上蓝色的“描述”链接。
 
 
 ### 保存高级过滤器{#save-adv-filters}
@@ -282,7 +282,7 @@ Adobe Campaign中提供了以下类型的过滤器：
 
 要保存高级过滤器，请执行以下步骤：
 
-1. 单击筛选器的描述以进行编辑。
+1. 单击筛选器的描述可对其进行编辑。
 1. 单击 **[!UICONTROL Save as filter]** 图标。
 
    ![](assets/save-as-filter.png)
@@ -291,7 +291,7 @@ Adobe Campaign中提供了以下类型的过滤器：
 
    ![](assets/application-filter-save.png)
 
-该过滤器即添加到 [预定义过滤器](#predefined-filters). 可以从此节点更新它。
+该过滤器将添加到 [预定义过滤器](#predefined-filters). 可以从此节点更新它。
 
 ![](assets/added-to-predefined-filters.png)
 
@@ -301,7 +301,7 @@ Adobe Campaign中提供了以下类型的过滤器：
 
 
 
-收件人列表的预定义过滤器中也提供了此过滤器。
+此外，收件人列表的预定义过滤器中也提供了此过滤器。
 
 ![](assets/access-to-new-predefined-filter.png)
 
@@ -318,7 +318,7 @@ Adobe Campaign中提供了以下类型的过滤器：
 
 >[!NOTE]
 >
->使用 **[!UICONTROL Exclude recipients from this segment]** 仅定向不符合筛选条件的联系人。
+>使用 **[!UICONTROL Exclude recipients from this segment]** 以仅定向不符合筛选条件的联系人。
 
 
 ### 使用函数构建高级过滤器{#use-functions-adv-filters}
@@ -329,7 +329,7 @@ Adobe Campaign中提供了以下类型的过滤器：
 
 * 了解如何在中定位简单的收件人属性 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html).
 * 了解如何过滤过去7天内未联系的收件人 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html).
-* 了解如何恢复可按以下项的活动帐户筛选的操作员列表： [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html).
+* 了解如何恢复可按活动帐户过滤的运算符列表，请参见 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html).
 * 了解如何在中构建生日电子邮件受众  [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=zh-Hans).
 
 
@@ -339,11 +339,11 @@ Adobe Campaign中提供了以下类型的过滤器：
 
 * 要默认显示基于此文档类型的所有列表的筛选器，请选择 **[!UICONTROL Default filter for the associated document type]** 选项。
 
-   例如， **[!UICONTROL By name or login]** 筛选器应用于运算符选择此选项时，筛选器将始终显示在所有运算符列表中。
+  例如， **[!UICONTROL By name or login]** 筛选器应用于运算符选择此选项时，筛选器将始终显示在所有运算符列表中。
 
 * 要使过滤器可用于所有Campaign运算符，请选择  **[!UICONTROL Filter shared with other operators]** 选项。
 
-* 要定义表单以选择筛选条件，请选择  **[!UICONTROL Use parameter entry form]** 选项。 此表单必须以XML格式输入，并且必须 **[!UICONTROL Form]** 选项卡。 例如，内置预定义过滤器 **[!UICONTROL Recipients who have opened]**&#x200B;在收件人列表中可用，显示过滤器字段，从中可选择要应用过滤器的投放。
+* 要定义表单以选择筛选条件，请选择  **[!UICONTROL Use parameter entry form]** 选项。 此表单必须以XML格式输入，格式为 **[!UICONTROL Form]** 选项卡。 例如，内置预定义过滤器 **[!UICONTROL Recipients who have opened]**（可在收件人列表中找到）显示过滤器字段，从中可选择要应用过滤器的投放。
 
 ![](assets/predefined-filters-parameters.png)
 
@@ -351,4 +351,4 @@ Adobe Campaign中提供了以下类型的过滤器：
 * 此 **[!UICONTROL Advanced parameters]** 链接允许您定义其他设置。
 
    * 您可以将SQL表与过滤器关联，使其对共享该表的所有编辑器通用。
-   * 要防止任何用户覆盖过滤器，请选择 **[!UICONTROL Do not restrict the filter]** 选项。 例如，此选项对投放向导中可用的“投放的收件人”和“属于文件夹的投放的收件人”过滤器有效。 无法重载这些筛选器。
+   * 要防止任何用户覆盖过滤器，请选择 **[!UICONTROL Do not restrict the filter]** 选项。 例如，此选项对投放向导中可用的“投放的收件人”和“属于文件夹的投放的收件人”过滤器有效。 这些过滤器不能过载。

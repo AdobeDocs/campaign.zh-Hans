@@ -21,7 +21,7 @@ Adobe Campaign与Adobe Journey Optimizer之间的集成允许您在Adobe Journey
 ![](assets/ajo-integration.png)
 
 
-![](../assets/do-not-localize/book.png) [在此端到端示例中了解此集成](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html){target="_blank"}.
+![](../assets/do-not-localize/book.png) [在此端到端示例中发现此集成](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html){target="_blank"}.
 
 
 ![](../assets/do-not-localize/book.png) [请参阅Journey Optimizer文档以了解详情](https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-classic.html){target="_blank"}.

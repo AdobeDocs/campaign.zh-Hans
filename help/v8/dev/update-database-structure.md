@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ![](assets/schema_update.png)
 
-自动填充和激活数据库中的模块。
+数据库中的模块将自动填充和激活。
 
 ![](assets/schema_update_select2.png)
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->该代码位于编辑字段中，可以修改该代码以删除或添加SQL代码。
+>此代码位于编辑字段中，可以修改以删除或添加SQL代码。
 
 接下来，启动数据库更新：
 

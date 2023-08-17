@@ -14,7 +14,7 @@ ht-degree: 12%
 
 # 创建直邮投放
 
-通过直邮投放，可生成包含目标群体数据的提取文件。 然后，您可以与将消息交付给目标群体的提供商共享此文件。
+直邮投放允许您生成包含目标群体数据的提取文件。 然后，您可以与将向其定向群体投放消息的提供商共享此文件。
 
 生成文件的步骤如下：
 
@@ -46,12 +46,12 @@ ht-degree: 12%
 
    ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-direct-mail/validating.html)以了解详情{target="_blank"}
 
-   在营销活动上下文中，在提取日期创建提取文件。 您可以查看提取文件的内容、批准它或更改格式并根据需要重新启动提取。 文件获得批准后，即可向路由器发送通知电子邮件。 请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html)以了解详情
+   在营销活动上下文中，在提取日期创建提取文件。 您可以查看提取文件的内容、批准该文件或更改格式并根据需要重新启动提取。 文件获得批准后，即可向路由器发送通知电子邮件。 请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html)以了解详情
 
 1. 开始投放
 
-   验证提取文件后，单击 **确认投放** 确认消息可让您启动投放。
+   验证提取文件后，单击 **确认投放** 确认消息允许您启动投放。
 
-   确认操作将开始提取指定文件中的数据。
+   确认会启动指定文件中的数据提取。
 
-   在营销活动上下文中，当所有批准都获得授权后，将通过特殊工作流创建提取文件，在默认配置中，当直邮投放挂起提取时，将自动启动该工作流。 了解详情，请参阅 [本节](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=zh-Hans)
+   在营销活动上下文中，当所有批准都获得后，将通过一个特殊工作流创建提取文件，在默认配置中，当直邮投放挂起提取时，将自动启动该工作流。 了解详情，请参阅 [本节](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=zh-Hans)

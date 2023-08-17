@@ -42,7 +42,7 @@ Adobe Campaign使用数据架构来：
 
 >[!CAUTION]
 >
->某些内置的Campaign架构在云数据库上具有关联的架构。 这些架构由以下代码标识 **Xxl** 不得修改或扩展命名空间和。
+>某些内置Campaign架构在云数据库上具有关联的架构。 这些架构由以下代码标识 **Xxl** 且不得修改或扩展。
 
 ## 架构的语法 {#syntax-of-schemas}
 
@@ -64,7 +64,7 @@ Adobe Campaign使用数据架构来：
 
 >[!NOTE]
 >
->实体的根元素与架构同名。
+>实体的根元素与架构具有相同的名称。
 
 ![](assets/schema_and_entity.png)
 
@@ -78,42 +78,42 @@ Adobe Campaign使用数据架构来：
 
 >[!CAUTION]
 >
->作为标准，命名空间名称必须简洁，并且根据XML命名规则只能包含经过授权的字符。
+>作为标准，命名空间的名称必须简洁，并且根据XML命名规则只能包含授权字符。
 >
 >标识符不能以数字字符开头。
 
 ## 保留的命名空间 {#reserved-namespaces}
 
-某些命名空间是保留的，用于描述Adobe Campaign应用程序操作所需的系统实体。 以下命名空间 **不得使用** 要识别任何大写/小写组合中的新架构，请执行以下操作：
+某些命名空间是保留空间，用于描述Adobe Campaign应用程序操作所需的系统实体。 以下命名空间 **不得使用** 要识别新架构，请在任意大写/小写组合中执行以下操作：
 
 * **xxl**：保留给云数据库架构
 * **xtk**：保留给平台系统数据
-* **nl**：保留给应用程序的整体使用
-* **nms**：保留给投放（收件人、投放、跟踪等）
+* **nl**：保留给应用程序的总体使用
+* **nms**：为投放预留（收件人、投放、跟踪等）
 * **ncm**：保留给内容管理
 * **临时**：保留给临时架构
 * **crm**：保留给CRM连接器集成
 
-架构的标识键是使用命名空间和用冒号分隔的名称构建的字符串；例如： **nms：recipient**.
+架构的标识键是使用命名空间和名称构建的字符串，名称之间用冒号分隔；例如： **nms：recipient**.
 
 ## 创建或扩展Campaign模式 {#create-or-extend-schemas}
 
-要将字段或其他元素添加到Campaign中的某个核心数据架构(例如收件人表(nms：recipient))，您必须扩展该架构。
+要将字段或其他元素添加到Campaign中的某个核心数据架构，例如收件人表(nms：recipient)，您必须扩展该架构。
 
-![](../assets/do-not-localize/glass.png) 有关更多信息，请参阅 [扩展架构](extend-schema.md).
+![](../assets/do-not-localize/glass.png) 有关详细信息，请参见 [扩展模式](extend-schema.md).
 
-要添加在Adobe Campaign中不存在的全新类型的数据（例如，合同表），您可以直接创建自定义架构。
+要添加Adobe Campaign中不存在的全新类型数据（例如合同表），您可以直接创建自定义架构。
 
-![](../assets/do-not-localize/glass.png) 有关更多信息，请参阅 [创建新架构](create-schema.md).
+![](../assets/do-not-localize/glass.png) 有关详细信息，请参见 [创建新架构](create-schema.md).
 
 ![](assets/schemaextension_1.png)
 
 
-创建或扩展要在其中工作的架构后，最佳实践是按照下面显示的XML内容元素顺序来定义其XML内容元素。
+创建或扩展要在其中工作的架构后，最佳做法是按照下面显示的XML内容元素顺序来定义其XML内容元素。
 
 ## 明细列表 {#enumerations}
 
-枚举首先在架构的主元素之前定义。 它们允许您在列表中显示值，以限制用户对给定字段的选择。
+枚举先于架构的主元素之前定义。 它们允许您在列表中显示值，以限制用户对给定字段的选择。
 
 示例:
 
@@ -125,7 +125,7 @@ Adobe Campaign使用数据架构来：
 </enumeration>
 ```
 
-定义字段时，您可以使用此明细列表，如下所示：
+在定义字段时，您可以使用此枚举，如下所示：
 
 ```
 <attribute desc="Type of Transaction" label="Transaction Type" name="transactionType" 
@@ -134,7 +134,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 >[!NOTE]
 >
->您还可以使用用户管理的枚举(通常位于 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** )，以指定给定字段的值。 这些实际上是全局枚举，如果您可以在使用的特定架构之外使用枚举，则这是一个更好的选择。
+>您还可以使用用户管理的枚举(通常位于 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** )，指定给定字段的值。 这些实际上是全局枚举，如果您可以在所使用的特定架构之外使用枚举，则最好选择它们。
 
 <!--
 ## Index {#index} 
@@ -184,21 +184,21 @@ For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-f
 </key>
 ```
 
-在本例中，请不要让 **@autopk** 或 **@autouuid** 属性创建一个名为“id”的默认主键，我们将指定自己的“householdId”主键。
+在此示例中，不要让 **@autopk** 或 **@autouuid** 属性创建一个名为“id”的默认主键，我们将指定自己的“householdId”主键。
 
 >[!CAUTION]
 >
 >创建新架构或在架构扩展期间，您需要为整个架构保留相同的主键序列值(@pkSequence)。
 
-![](../assets/do-not-localize/glass.png) 了解有关密钥的更多信息，请参阅 [本节](database-mapping.md#management-of-keys).
+![](../assets/do-not-localize/glass.png) 了解中有关键的更多信息 [本节](database-mapping.md#management-of-keys).
 
 ## 属性（字段） {#attributes--fields-}
 
-属性允许您定义组成数据对象的字段。 您可以使用 **[!UICONTROL Insert]** 按钮将空属性模板拖放到光标所在的XML中。 在[此章节](create-schema.md)中了解更多信息。
+属性允许您定义组成数据对象的字段。 您可以使用 **[!UICONTROL Insert]** 模式版工具栏中的按钮，将空属性模板拖放到光标所在的XML中。 在[此章节](create-schema.md)中了解更多信息。
 
 ![](assets/schemaextension_2.png)
 
-属性的完整列表可在 `<attribute>` 中的元素部分 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html#content-model). 以下是一些更常用的属性： **@advanced**， **@dataPolicy**， **@default**， **@desc**， **@enum**， **@expr**， **@label**， **@length**， **@name**， **@notNull**， **@required**， **@ref**， **@xml**， **@type**.
+完整的属性列表可在 `<attribute>` 中的元素部分 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html#content-model). 以下是一些更常用的属性： **@advanced**， **@dataPolicy**， **@default**， **@desc**， **@enum**， **@expr**， **@label**， **@length**， **@name**， **@notNull**， **@required**， **@ref**， **@xml**， **@type**.
 
 ![](../assets/do-not-localize/book.png) 有关每个属性的详细信息，请参阅中的属性说明 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic).
 
@@ -210,7 +210,7 @@ For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-f
 <attribute name="transactionDate" label="Transaction Date" type="datetime" default="GetDate()"/>
 ```
 
-将公共属性用作字段的模板的示例，这些字段也标记为必需：
+将公共属性用作标记为必填字段的模板的示例：
 
 ```
 <attribute name="mobile" label="Mobile" template="nms:common:phone" required="true" />
@@ -230,15 +230,15 @@ XML字段的示例也存储在SQL字段中，该字段具有 **@dataPolicy** 属
 
 >[!CAUTION]
 >
->尽管大多数属性根据1-1基数链接到数据库的物理字段，但XML字段或计算字段并非如此。\
+>尽管大多数属性根据1-1基数与数据库的物理字段相关联，但XML字段或计算字段并非如此。\
 >XML字段存储在表的备注字段(“mData”)中。\
 >但是，计算字段是在每次启动查询时动态创建的，因此它仅存在于应用层中。
 
 ## 链接 {#links}
 
-链接是架构主元素中的最后几个元素。 它们定义实例中的所有不同架构如何相互关联。
+链接是架构主元素的最后几个元素之一。 它们定义实例中所有不同的架构如何相互关联。
 
-在包含 **外键** 所链接到的表的URL编号。
+在包含 **外键** 所链接到的表的URL值。
 
 基数有三种类型：1-1、1-N和N-N。默认使用1-N类型。
 
@@ -256,7 +256,7 @@ XML字段的示例也存储在SQL字段中，该字段具有 **@dataPolicy** 属
 <element label="Car" name="lnkCar" revCardinality="single" revLink="recipient" target="cus:car" type="link"/>
 ```
 
-收件人表和地址表之间的外部联接示例，地址表基于电子邮件地址而不是主键：
+收件人表和地址表之间的外部联接示例，该表基于电子邮件地址而不是主键：
 
 ```
 <element name="emailInfo" label="Email Info" revLink="recipient" target="nms:address" type="link" externalJoin="true">
@@ -270,7 +270,7 @@ XML字段的示例也存储在SQL字段中，该字段具有 **@dataPolicy** 属
 
 架构底部可能想要包含一个有用元素，即跟踪元素（审核跟踪）。
 
-使用下面的示例包含与创建日期、创建数据的用户、日期和表格中所有数据的上次修改作者相关的字段：
+使用下面的示例包含与创建日期、创建数据的用户、日期和表格中所有数据的上次修改的作者相关的字段：
 
 ```
 <element aggregate="xtk:common:auditTrail" name="auditTrail"/>
@@ -278,7 +278,7 @@ XML字段的示例也存储在SQL字段中，该字段具有 **@dataPolicy** 属
 
 ## 更新数据库结构 {#updating-the-database-structure}
 
-完成并保存更改后，任何可能影响SQL结构的更改都需要应用到数据库。 要执行此操作，请使用数据库更新助手。
+完成并保存更改后，任何可能影响SQL结构的更改都需要应用到数据库。 为此，请使用数据库更新助手。
 
 ![](assets/schemaextension_3.png)
 
@@ -286,4 +286,4 @@ XML字段的示例也存储在SQL字段中，该字段具有 **@dataPolicy** 属
 
 >[!NOTE]
 >
->如果修改不会影响数据库结构，则只需重新生成架构即可。 要执行此操作，请选择要更新的架构，右键单击并选择 **[!UICONTROL Actions > Regenerate selected schemas...]**.
+>当修改不会影响数据库结构时，只需重新生成模式即可。 要执行此操作，请选择要更新的架构，右键单击并选择 **[!UICONTROL Actions > Regenerate selected schemas...]**.

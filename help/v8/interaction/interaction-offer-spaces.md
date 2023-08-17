@@ -16,7 +16,7 @@ ht-degree: 3%
 
 优惠目录的内容在优惠空间中配置。 默认情况下，内容可包含以下字段： **[!UICONTROL Title]**， **[!UICONTROL Destination URL]**， **[!UICONTROL Image URL]**， **[!UICONTROL HTML content]** 和 **[!UICONTROL Text content]**. 字段序列在选件空间中配置。
 
-As a **技术管理员**&#x200B;中，您可以在“设计”环境中创建选件空间。 您需要具有优惠空间子文件夹的访问权限。 创建优惠后，这些优惠空间会在优惠审批期间自动复制到实时环境中。
+作为 **技术管理员**&#x200B;中，您可以在“设计”环境中创建选件空间。 您需要具有优惠空间子文件夹的访问权限。 创建后，在批准优惠期间，这些优惠空间会自动复制到实时环境中。
 
 HTML渲染通过渲染函数创建。 渲染函数中定义的字段序列必须与内容中配置的序列相同。
 
@@ -46,15 +46,15 @@ HTML渲染通过渲染函数创建。 渲染函数中定义的字段序列必须
 
    >[!NOTE]
    >
-   >此选项在预览中使用，如果选件中缺少某个必填字段，则在发布时使选件空格无效。 但是，如果优惠空间中已存在优惠，则不会将这些标准考虑在内。
+   >该选项在预览中使用，如果选件中缺少必填字段之一，则会在发布时使选件空格无效。 但是，如果优惠空间中已存在优惠，则不会考虑这些标准。
 
    ![](assets/offer_space_create_005.png)
 
 1. 单击 **[!UICONTROL Edit functions]** 创建渲染函数。
 
-   这些函数用于在优惠空间上生成优惠呈现。 有几种可能的格式：HTML或文本。
+   这些函数用于在优惠空间上生成优惠呈现。 有多种可能的格式：HTML或文本。
 
-   **注释** - XML格式仅限于在此版本的产品中不可用的入站交互。 [了解详情](../start/v7-to-v8.md#gs-unavailable-features)
+   **注意** - XML格式仅限于在此版本的产品中不可用的入站交互。 [了解详情](../start/v7-to-v8.md#gs-unavailable-features)
 
    ![](assets/offer_space_create_006.png)_
 
@@ -65,11 +65,11 @@ HTML渲染通过渲染函数创建。 渲染函数中定义的字段序列必须
 
 ## 优惠建议状态 {#offer-proposition-statuses}
 
-优惠建议状态因与目标群体的交互而异。 Campaign交互模块提供了一组值，这些值可以在优惠命名的整个生命周期中应用于优惠命题。 您需要配置平台，以便在创建和接受优惠建议时更改状态。
+优惠建议状态因与目标群体的交互而异。 Campaign交互模块提供了一组值，可在优惠建议整个生命周期中应用于这些值。 您需要配置平台，以便在创建和接受优惠建议时更改状态。
 
 >[!NOTE]
 >
->状态更新是一个 **异步** 进程。 跟踪由跟踪工作流执行，该工作流每小时触发一次。
+>状态更新为 **异步** 进程。 跟踪由跟踪工作流执行，跟踪工作流每小时触发一次。
 
 ### 优惠状态列表 {#status-list}
 
@@ -82,56 +82,56 @@ HTML渲染通过渲染函数创建。 渲染函数中定义的字段序列必须
 * **[!UICONTROL Presented]**
 * **[!UICONTROL Rejected]**
 
-默认情况下不应用这些值：必须配置它们。
+默认情况下不应用这些值：必须配置这些值。
 
 >[!NOTE]
 >
->如果优惠已链接到状态为“已发送”的投放，则优惠建议的状态将自动更改为“已呈现”。
+>如果优惠与状态为“已发送”的投放关联，则优惠建议的状态将自动更改为“已呈现”。
 
 ### 创建建议时的优惠状态 {#configuring-the-status-when-the-proposition-is-created}
 
 当优惠建议为 **已创建**，其状态会更新。
 
-在 **[!UICONTROL Design]** 环境，对于每个选件空间，根据您希望在选件报表中显示的信息，配置在创建建议时要应用的状态。
+在 **[!UICONTROL Design]** 环境，根据要在优惠报表中显示的信息，为每个优惠空间配置在创建建议时要应用的状态。
 
 为此请执行以下操作步骤：
 
 1. 转到 **[!UICONTROL Storage]** 选项卡。
-1. 选择创建建议时应用于建议的状态。
+1. 选择建议在创建时应用于建议的状态。
 
    ![](assets/offer_update_status_001.png)
 
 ### 建议被接受时的优惠状态 {#configuring-the-status-when-the-proposition-is-accepted}
 
-一旦优惠建议获得 **已接受**，使用默认提供的值之一来配置建议的新状态。 当收件人单击选件中的链接时，将应用更新。
+一旦优惠建议获得批准 **已接受**，使用默认提供的值之一来配置建议的新状态。 当收件人单击优惠中的链接时，将应用更新。
 
 为此请执行以下操作步骤：
 
 1. 转到 **[!UICONTROL Storage]** 选项卡。
-1. 选择建议被接受时您希望应用于建议的状态。
+1. 选择建议被接受时您希望应用于该建议的状态。
 
    ![](assets/offer_update_status_002.png)
 
 
 **入站互动**
 
-此 **[!UICONTROL Storage]** 选项卡用于定义状态 **已建议** 和 **已接受** 仅限优惠建议。 对于入站交互，应直接在用于调用优惠引擎的URL中指定优惠建议的状态，而不是通过界面指定。 这样，您将能够指定在其他情况下要应用的状态，例如，如果优惠建议被拒绝。
+此 **[!UICONTROL Storage]** 选项卡允许您定义状态 **已建议** 和 **已接受** 仅限优惠建议。 对于入站交互，应直接在用于调用优惠引擎的URL中指定优惠建议的状态，而不是通过界面指定。 这样，您将能够指定在其他情况下要应用的状态，例如，如果优惠建议被拒绝。
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
 ```
 
-例如，建议(标识符 **40004**)，它与 **家庭保险** 选件显示在 **新银行** 站点包含以下URL：
+例如，建议(标识符 **40004**)匹配 **家庭保险** 选件显示在 **新银行** 站点包含以下URL：
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<40004>&st=<3>&r=<"http://www.neobank.com/insurance/subscribe.html">
 ```
 
-一旦访客点击了选件，随后又点击了URL， **[!UICONTROL Accepted]** 状态（值） **3**)应用于建议，并且访客被重定向到 **新银行** 办理保险合约的地点。
+只要访客点击了选件，因此也点击了URL， **[!UICONTROL Accepted]** 状态（值） **3**)应用于建议，并且访客将被重定向到 **新银行** 保险合同办理地点。
 
 >[!NOTE]
 >
->如果要在URL中指定其他状态（例如，如果优惠建议被拒绝），请使用与所需状态对应的值。 示例： **[!UICONTROL Rejected]** = &quot;5&quot;， **[!UICONTROL Presented]** =“1”等。
+>如果要在URL中指定其他状态（例如，如果优惠建议被拒绝），请使用与所需状态对应的值。 示例： **[!UICONTROL Rejected]** =“5”， **[!UICONTROL Presented]** =“1”等。
 >
 >状态及其值可在 **[!UICONTROL Offer propositions (nms)]** 数据架构。 有关详细信息，请参见[此页面](../dev/create-schema.md)。
 
@@ -145,7 +145,7 @@ HTML渲染通过渲染函数创建。 渲染函数中定义的字段序列必须
 
 ## 每个空间的优惠预览 {#offer-preview-per-space}
 
-在 **[!UICONTROL Preview]** 选项卡，您可以通过选择的方法查看收件人有资格获得的优惠。 在下面的示例中，收件人有资格通过邮件获得三个优惠建议。
+在 **[!UICONTROL Preview]** 选项卡中，您可以通过所选方法查看收件人符合条件的优惠。 在下面的示例中，收件人可以通过邮件获得三个优惠建议。
 
 ![](assets/offer_space_overview_002.png)
 
@@ -154,6 +154,6 @@ HTML渲染通过渲染函数创建。 渲染函数中定义的字段序列必须
 ![](assets/offer_space_overview_001.png)
 
 
-当上下文限制为空格时，预览可以忽略上下文。 当扩展交互架构以使用入站渠道添加空间中引用的字段时，会出现这种情况。
+当上下文限制为空格时，预览可以忽略上下文。 扩展交互架构以使用入站渠道添加空间中引用的字段时，会出现这种情况。
 
 ![](../assets/do-not-localize/book.png)  有关更多信息，请参阅以下示例中的 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target="_blank"}.

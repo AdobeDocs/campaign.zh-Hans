@@ -21,5 +21,5 @@ ht-degree: 31%
    + [升级Apache版本](upgrades/apache.md)
    + [Internet 浏览器](upgrades/browsers.md)
    + [2023 年系统升级](upgrades/tech-stack-upgrade.md)
-   + [弃用客户端控制台32位](upgrades/console.md)
+   + [客户端控制台32位弃用](upgrades/console.md)
 + [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)

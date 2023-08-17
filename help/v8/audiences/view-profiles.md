@@ -14,24 +14,25 @@ ht-degree: 16%
 
 # 查看现有配置文件{#view-profiles}
 
-浏览到 **[!UICONTROL Profiles and targets]** 访问存储在Adobe Campaign数据库中的收件人。
+浏览至 **[!UICONTROL Profiles and targets]** 访问存储在Adobe Campaign数据库中的收件人。
 
 在此页面中，您可以 [创建新收件人](create-profiles.md)，编辑现有收件人并访问其用户档案详细信息。
 
 ![](assets/profiles-and-targets.png)
 
-要获得更高级的配置文件操作，请从以下位置访问Campaign树： **[!UICONTROL Explorer]** Adobe Campaign主页上的链接。
+要获得更高级的配置文件操作，请从访问Campaign树 **[!UICONTROL Explorer]** Adobe Campaign主页上的链接。
 
 ![](assets/recipients-in-explorer.png)
 
 
 >[!CAUTION]
 >
->内置收件人屏幕是通过XML架构及其关联表单定义的。 XML架构存储在 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign资源管理器树的节点。 只有专家用户才能改变这些模式。
+>内置收件人屏幕是通过XML架构及其相关表单定义的。 XML架构存储在 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign节点。 只有专家用户才能改变这些模式。
+>
 
 ## 编辑用户档案{#edit-a-profiles}
 
-选择一个配置文件以在新选项卡中显示详细信息。
+选择配置文件以在新选项卡中显示详细信息。
 
 ![](assets/edit-a-profile.png)
 
@@ -39,45 +40,46 @@ ht-degree: 16%
 
 对于典型的内置收件人，您可以访问以下选项卡：
 
-* **[!UICONTROL General]**，用于所有常规配置文件数据。 其中特别包含姓氏、名字、电子邮件地址、电子邮件格式等。
+* **[!UICONTROL General]**，用于所有常规配置文件数据。 特别是，它包含姓氏、名字、电子邮件地址、电子邮件格式等。
 
-   此选项卡还存储 **选择退出** 配置文件的标记：当 **[!UICONTROL No longer contact (by any channel)]** 选项时，配置文件处于阻止列表状态。 例如，如果收件人单击了新闻稿中的退订链接，则此信息会添加到联系人数据中。 任何渠道（电子邮件、直邮等）不再定向此类收件人。 有关详细信息，请参见[此页面](../send/quarantines.md)。
+  此选项卡还存储 **选择退出** 配置文件的标记：当 **[!UICONTROL No longer contact (by any channel)]** 选项时，配置文件处于阻止列表状态。 例如，如果收件人点击了新闻稿中的退订链接，则此信息会添加到联系人数据中。 任何渠道（电子邮件、直邮等）不再定向此类收件人。 有关详细信息，请参见[此页面](../send/quarantines.md)。
 
 * **联系信息**，其中包含所选用户档案的直邮地址。
 
-   您可以在此屏幕中检查地址的质量索引，以及地址包含多少错误。 此信息由直邮提供商根据在以前的投放过程中发现的错误数直接使用，不能手动更改。
+  您可以在此屏幕中检查地址的质量索引，以及地址包含的错误数。 此信息由直邮提供商根据在之前的投放过程中发现的错误数直接使用，不能手动更改。
 
-* **其他**，用于特定字段，这些字段可以根据您的需求进行个性化和填充。
+* **其他**，用于可以根据您的需求进行个性化和填充的特定字段。
 
-   使用 **[!UICONTROL Field properties…]** 上下文菜单，用于更改字段名称并定义其格式。
+  使用 **[!UICONTROL Field properties…]** 上下文菜单，用于更改字段名称并定义其格式。
 
-   ![](assets/other-tab-field-properties.png)
+  ![](assets/other-tab-field-properties.png)
 
-   输入新设置，如下所示：
+  输入新设置，如下所示：
 
-   ![](assets/change-field-properties.png)
+  ![](assets/change-field-properties.png)
 
-   在UI中检查更新：
+  在UI中检查更新：
 
-   ![](assets/other-tab-updated.png)
-
-
-   >[!CAUTION]
-   >更改适用于所有收件人。
+  ![](assets/other-tab-updated.png)
 
 
-* **订阅**，适用于所有活动的服务订阅。 使用 **历史记录** 选项卡访问该联系人的订阅和未订阅的详细信息。
+  >[!CAUTION]
+  >更改适用于所有收件人。
+  >
 
-   ![](assets/subscription-tab.png)
 
-   了解有关订阅的更多信息 [在此部分中](../start/subscriptions.md).
+* **订阅**，适用于所有活动的服务订阅。 使用 **历史记录** 选项卡访问该联系人的订阅和取消订阅的详细信息。
 
-* **投放**，用于选定用户档案的所有投放日志。 使用此选项卡可访问联系人的营销历史记录：通过所有渠道针对用户档案的所有投放操作的标签、日期和状态。
+  ![](assets/subscription-tab.png)
+
+  了解有关订阅的更多信息 [在此部分中](../start/subscriptions.md).
+
+* **投放**，适用于选定用户档案的所有投放日志。 使用此选项卡可访问联系人的营销历史记录：通过所有渠道针对用户档案的所有投放操作的标签、日期和状态。
 
 
 * **跟踪**，用于选定用户档案的所有跟踪日志。 此信息用于跟踪投放后用户档案的行为。此选项卡显示在投放中所有被跟踪的 URL 累积数目。该列表是可配置的，通常包含：点击的URL、点击的日期和时间，以及包含该URL的文档
 
-   了解有关跟踪的更多信息 [在此部分中](../start/tracking.md).
+  了解有关跟踪的更多信息 [在此部分中](../start/tracking.md).
 
 
 ## 使用中的用户档案 {#active-profiles}
@@ -86,10 +88,10 @@ ht-degree: 16%
 
 计费账单的开立仅会考虑&#x200B;**使用中**&#x200B;的用户档案。如果用户档案在过去 12 个月通过任何渠道被定位或进行了传输，则该用户档案被视为使用中。
 
-多次投放所定向的用户档案仅计数一次。
+被多次投放定向的用户档案只会被计数一次。
 
-活动配置文件计数可用于 **营销实例** 仅此而已。 它不适用于执行实例，即MID （中间源）和RT （消息中心/实时消息传递）实例。
+活动用户档案计数可用于 **营销实例** 仅限。 它不适用于执行实例，即MID （中间源）和RT （消息中心/实时消息传递）实例。
 
 >[!NOTE]
 >
->您还可以直接通过Campaign控制面板监控实例上的活动用户档案数。 有关详情，请参阅 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+>您还可以直接从Campaign控制面板监控实例上的活动用户档案数。 有关详细信息，请参见 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html).

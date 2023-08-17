@@ -1,5 +1,5 @@
 ---
-title: 在营销活动中创建用户档案
+title: 在Campaign中创建配置文件
 description: 了解如何手动将联系人添加到Campaign
 feature: Audiences, Profiles
 role: User
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 要手动创建收件人，请执行以下步骤：
 
-1. 浏览到 **[!UICONTROL Profiles and targets]** 选项卡，然后选择 **[!UICONTROL Recipients]** 类别。
+1. 浏览至 **[!UICONTROL Profiles and targets]** 选项卡，然后选择 **[!UICONTROL Recipients]** 类别。
 
    ![](assets/profiles-and-targets.png)
 

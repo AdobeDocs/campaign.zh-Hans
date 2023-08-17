@@ -16,14 +16,14 @@ ht-degree: 0%
 
 ## 限制对文件夹的访问{#restrict-access-to-a-folder}
 
-使用文件夹的权限来组织和控制对Campaign数据的访问。
+使用文件夹的权限可组织和控制对Campaign数据的访问。
 
 有关文件夹管理的详情，请参见 [此页面](../audiences/folders-and-views.md).
 
 要编辑特定Campaign文件夹的权限，请执行以下步骤：
 
-1. 右键单击文件夹并选择 **[!UICONTROL Properties...]**.
-1. 浏览至 **[!UICONTROL Security]** 选项卡以查看此文件夹的授权。
+1. 右键单击文件夹，然后选择 **[!UICONTROL Properties...]**.
+1. 浏览至 **[!UICONTROL Security]** 选项卡查看此文件夹的授权。
 
    ![](assets/folder-permissions.png)
 
@@ -35,13 +35,13 @@ ht-degree: 0%
 
 要传播授权和访问权限，请选择 **[!UICONTROL Propagate]** 选项。
 
-然后，此窗口中定义的授权将应用于当前节点的所有子文件夹。 您始终可以为每个子文件夹重载这些授权。
+此窗口中定义的授权随后将应用于当前节点的所有子文件夹。 您始终可以为每个子文件夹重载这些授权。
 
 >[!NOTE]
 >
 >取消选中 **[!UICONTROL Propagate]** 文件夹选项不会为子文件夹清除它：您必须为每个子文件夹显式清除它。
 
-## 授予所有操作员的访问权限 {#grant-access-to-all-operators}
+## 向所有操作员授予访问权限 {#grant-access-to-all-operators}
 
 在 **[!UICONTROL Security]** 选项卡，选择 **[!UICONTROL System folder]** 允许访问所有操作员，而不管其权限如何。
 

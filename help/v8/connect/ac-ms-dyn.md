@@ -16,7 +16,7 @@ ht-degree: 3%
 
 在跨渠道通信上激活您的CRM数据：了解如何从传递联系人 **Microsoft Dynamics 365** 到Adobe Campaign，并将促销活动效果数据（发送、打开、点击和退回）从Adobe Campaign共享回Microsoft Dynamics 365。
 
-完成配置后，系统之间的数据同步将通过专用工作流活动执行。 [了解详情](crm-data-sync.md)。
+完成配置后，通过专用工作流活动在系统之间执行数据同步。 [了解详情](crm-data-sync.md)。
 
 >[!NOTE]
 >
@@ -31,21 +31,21 @@ ht-degree: 3%
 
 ## 配置 Microsoft Dynamics 365 {#config-crm-microsoft}
 
-要连接Microsoft Adobe Campaign Dynamics 365以通过 **Web API**，登录到 [Microsoft Azure目录](https://portal.azure.com) 使用 **全局管理员** 凭据，然后执行以下步骤：
+要通过连接Microsoft Dynamics 365以使用Adobe Campaign，请执行以下操作 **Web API**，登录到 [Microsoft Azure目录](https://portal.azure.com) 使用 **全局管理员** 凭据，然后执行以下步骤：
 
 1. 获取Dynamics 365应用程序（客户端）ID。 [了解详情](#get-client-id-microsoft)
 1. 生成Microsoft Dynamics证书密钥标识符和密钥ID。 [了解详情](#config-certificate-key-id)
 1. 配置权限。 [了解详情](#config-permissions-microsoft)
 1. 创建应用程序用户。 [了解详情](#create-app-user-microsoft)
-1. 编码私钥。 [了解详情](#configure-acc-for-microsoftt)
+1. 对私钥进行编码。 [了解详情](#configure-acc-for-microsoftt)
 
 
-### 获取Dynamics 365客户端ID {#get-client-id-microsoft}
+### 获取Dynamics 365客户端标识 {#get-client-id-microsoft}
 
 要获取应用程序（客户端）ID，您需要在Azure Active Directory中注册应用程序。
 
-1. 浏览到 **Azure Active Directory >应用程序注册**，并选择 **新注册**.
-1. 输入有助于标识实例的唯一名称，例如 **adobecampaign`<instance identifier>`**.
+1. 浏览至 **Azure Active Directory >应用程序注册**，并选择 **新建注册**.
+1. 输入有助于识别实例的唯一名称，例如 **adobecampaign`<instance identifier>`**.
 
 保存后，Microsoft Azure Directory会分配一个唯一的 **应用程序（客户端）ID** 到您的应用程序。 稍后在Adobe Campaign中配置Dynamics 365时，您将需要此ID。
 
@@ -53,17 +53,17 @@ ht-degree: 3%
 
 ### 生成Microsoft Dynamics证书密钥标识符和密钥ID {#config-certificate-key-id}
 
-获取 **证书密钥标识符(customKeyIdentifier)** 和 **密钥ID (keyId)**，您必须上传证书。 证书可用作密钥，以便在请求令牌时证明应用程序的身份。 也可以称为公钥。
+要获取 **证书密钥标识符(customKeyIdentifier)** 和 **密钥ID (keyId)**，您必须上传证书。 证书可用作密钥，以便在请求令牌时证明应用程序的身份。 也可以称为公钥。
 
 按照下面的步骤进行操作：
 
-1. 浏览到 **Azure Active Directory >应用程序注册** 并选择之前创建的应用程序。
-1. 选择日期 **证书和密码**.
+1. 浏览至 **Azure Active Directory >应用程序注册** 并选择之前创建的应用程序。
+1. 选择于 **证书和密码**.
 1. 从 **证书** 选项卡，单击 **上传证书**
-1. 上传您的公共证书。
+1. 上载您的公共证书。
 1. 浏览至 **清单** 链接以获取 **证书密钥标识符(customKeyIdentifier)** 和 **密钥ID (keyId)**.
 
-此 **证书密钥标识符(customKeyIdentifier)** 和 **密钥ID (keyId)** 需要在Campaign中使用证书配置Microsoft Dynamics 365 CRM外部帐户 **[!UICONTROL CRM O-Auth type]**.
+此 **证书密钥标识符(customKeyIdentifier)** 和 **密钥ID (keyId)** 需要在Campaign中使用证书配置您的Microsoft Dynamics 365 CRM外部帐户 **[!UICONTROL CRM O-Auth type]**.
 
 +++ 如何生成公共证书
 
@@ -79,20 +79,20 @@ ht-degree: 3%
 >
 >您可以在此处更改天数 `-days 365`，在代码示例中获取较长的证书有效期。
 
-然后，您必须在base64中编码证书。 为此，您可以使用Base64编码器帮助或使用命令行 `base64 -w0 private.key` 适用于Linux的。
+然后，您必须在base64中编码证书。 为此，您可以使用Base64编码器帮助或使用命令行 `base64 -w0 private.key` 用于Linux。
 
 +++
 
 ### 配置权限 {#config-permissions-microsoft}
 
-**步骤1**：配置 **所需权限** （对于创建的应用程序）。
+**步骤1**：配置 **所需权限** （对于已创建的应用程序）。
 
 1. 导航到 **Azure Active Directory >应用程序注册** 并选择之前创建的应用程序。
 1. 单击 **设置** 左上角。
-1. 日期 **所需权限**，单击 **添加** 和 **选择API > Dynamics CRM Online**.
+1. 开启 **所需权限**，单击 **添加** 和 **选择API > Dynamics CRM Online**.
 1. 单击 **选择**，启用 **以组织用户身份访问Dynamics 365** 复选框，然后单击 **选择**.
 1. 然后，从应用程序中选择 **清单** 在 **管理** 菜单。
-1. 从 **清单** 编辑者，设置 `allowPublicClient` 属性自 `null` 到 `true` 并单击 **保存**.
+1. 从 **清单** 编辑者，设置 `allowPublicClient` 属性来源 `null` 到 `true` 并单击 **保存**.
 
 **步骤2**：授予管理员同意
 
@@ -101,7 +101,7 @@ ht-degree: 3%
 1. 从左窗格菜单中，选择 **权限** 下 **安全性**.
 1. 单击 **授予管理员同意**.
 
-欲知更多信息，请参见 [Azure文档](https://docs.microsoft.com/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-from-the-azure-portal).
+有关详情，请参阅 [Azure文档](https://docs.microsoft.com/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-from-the-azure-portal).
 
 ### 创建应用程序用户 {#create-app-user-microsoft}
 
@@ -119,17 +119,17 @@ ht-degree: 3%
 
 **步骤2**：为创建的用户分配适当的许可证
 
-1. 起始日期 [Microsoft Azure](https://portal.azure.com)，单击 **管理应用程序**.
-1. 转到 **“用户”>“活动用户”** ，然后单击新创建的用户。
+1. 从 [Microsoft Azure](https://portal.azure.com)，单击 **管理应用程序**.
+1. 转到 **“用户”>“活动用户”** 并单击新创建的用户。
 1. 单击 **编辑产品许可证** 并选择 **Dynamics 365客户参与计划**.
 1. 单击&#x200B;**关闭**。
 
 **步骤3**：在Dynamics CRM上创建应用程序用户
 
-1. 起始日期 [Microsoft Azure](https://portal.azure.com)，导航到 **“设置”>“安全”>“用户”**.
-1. 单击下拉列表，选择 **应用程序用户**，然后单击 **新**.
+1. 从 [Microsoft Azure](https://portal.azure.com)，导航到 **“设置”>“安全”>“用户”**.
+1. 单击下拉列表，选择 **应用程序用户**，然后单击 **新建**.
 1. 使用与上述在Active Directory上创建的用户相同的用户名。
-1. 分配 **应用程序ID** 对象 [您之前创建的应用程序](#get-client-id-microsoft).
+1. 分配 **应用程序Id** 对象 [您之前创建的应用程序](#get-client-id-microsoft).
 1. 单击 **管理角色** 并选择 **系统管理员** 角色到用户。
 
 ## 配置 Campaign {#configure-acc-for-microsoft}
@@ -149,17 +149,17 @@ ht-degree: 3%
       * **服务器**：Microsoft CRM服务器的URL。 要查找您的Microsoft CRM服务器URL，请访问您的Microsoft Dynamics CRM帐户，然后单击Dynamics 365并选择您的应用程序。 然后，您可以在浏览器的地址栏中找到服务器URL，例如https://myserver.crm.dynamics.com/。
       * **帐户**：用于登录到Microsoft CRM的帐户。
       * **密码**：用于登录到Microsoft CRM的帐户。
-      * **客户端标识符**：可以在Microsoft Azure管理门户的更新代码类别客户端ID字段中找到应用程序（客户端）ID。
+      * **客户端标识符**：可从Microsoft Azure管理门户的更新代码类别客户端ID字段中找到的应用程序（客户端）ID。
       * **CRM版本**：选择Dynamics CRM 365 CRM版本。
-   1. 要将Microsoft Adobe Campaign Dynamics CRM外部帐户配置为使用 **证书**，提供以下详细信息：
+
+   1. 要配置Microsoft Adobe Campaign Dynamics CRM外部帐户以使用 **证书**，提供以下详细信息：
 
       * **服务器**：Microsoft CRM服务器的URL。 要查找您的Microsoft CRM服务器URL，请访问您的Microsoft Dynamics CRM帐户，然后单击Dynamics 365并选择您的应用程序。 然后，您可以在浏览器的地址栏中找到服务器URL，例如https://myserver.crm.dynamics.com/。
-      * **私钥**：复制/粘贴私钥（编码为base64），如 [本节](#config-certificate-key-id).
-      * **密钥ID**：中可用的键 **清单** 选项卡，如中所述 [本节](#config-certificate-key-id).
-      * **自定义密钥标识符**：中可用的标识符 **清单** 选项卡，如中所述 [本节](#config-certificate-key-id).
-      * **客户端标识符**：可以从Microsoft Azure管理门户中找到的应用程序（客户端）ID，如中所述 [本节](#get-client-id-microsoft).
+      * **私钥**：复制/粘贴私钥（以base64编码，如中所述） [本节](#config-certificate-key-id).
+      * **密钥ID**：中可用的键 **清单** 选项卡中，如中所述 [本节](#config-certificate-key-id).
+      * **自定义密钥标识符**：中可用的标识符 **清单** 选项卡中，如中所述 [本节](#config-certificate-key-id).
+      * **客户端标识符**：可从Microsoft Azure管理门户中找到的应用程序（客户端）ID，如中所述 [本节](#get-client-id-microsoft).
       * **CRM版本**：选择Dynamics CRM 365 CRM版本。
-
 
 1. 选择 **启用** 用于在Campaign中激活帐户的选项。
 
@@ -173,11 +173,11 @@ ht-degree: 3%
 
 1. 单击 **[!UICONTROL Microsoft CRM configuration wizard...]**.
 1. 选择要同步的表，然后启动进程。
-1. 在中检查Adobe Campaign中生成的架构 **[!UICONTROL Administration > Configuration > Data schemas]** 节点。
+1. 在中检查在Adobe Campaign中生成的架构 **[!UICONTROL Administration > Configuration > Data schemas]** 节点。
 
 >[!NOTE]
 >
->确保将两个URL添加到允许列表：服务器URL和 `login.microsoftonline.com`. 要执行此操作，请联系您的Adobe代表。
+>确保将两个URL添加到允许列表中：服务器URL和 `login.microsoftonline.com`. 要执行此操作，请联系您的Adobe代表。
 
 ## 同步枚举{#sfdc-enum-sync}
 
@@ -187,13 +187,13 @@ ht-degree: 3%
 1. 选择与Dynamics 365枚举匹配的Adobe Campaign枚举。
 您可以将Adobe Campaign枚举的所有值替换为CRM的值：要实现此目的，请选择 **[!UICONTROL Yes]** 在 **[!UICONTROL Replace]** 列。
 1. 单击 **[!UICONTROL Next]** 然后 **[!UICONTROL Start]** 以开始导入明细列表。
-1. 浏览 **[!UICONTROL Administration > Platform > Enumerations]** 节点以检查导入的值。
+1. 浏览 **[!UICONTROL Administration > Platform > Enumerations]** 节点，以检查导入的值。
 
 Adobe Campaign和Microsoft Dynamics 365现已连接。 您可以设置两个系统之间的数据同步。
 
 要在Adobe Campaign数据和Microsoft CRM之间同步数据，请创建工作流并使用 **[!UICONTROL CRM connector]** 活动。
 
-了解有关数据同步的更多信息 [本页内容](crm-data-sync.md).
+了解有关数据同步的详细信息 [本页内容](crm-data-sync.md).
 
 ### 支持的字段数据类型 {#ms-dyn-supported-types}
 
@@ -203,9 +203,9 @@ Adobe Campaign和Microsoft Dynamics 365现已连接。 您可以设置两个系�
 | 属性类型 | 支持 |
 | --------------------------------------------------------------------------------- | --------- |
 | 基本类型：boolean、datetime、decimal、float、double、integer、bigint、string | 是 |
-| 货币（双倍） | 是 |
-| memo、entityname、primarykey、uniqueidentifier（作为字符串） | 是 |
-| 状态、选择列表（我们会将可能的值存储在枚举中）、状态（字符串） | 是 |
+| 货币（双精度浮点数） | 是 |
+| memo， entityname， primarykey， uniqueidentifier（作为字符串） | 是 |
+| 状态、选取列表（我们以枚举形式存储可能的值）、状态（字符串） | 是 |
 | 所有者（字符串） | 是 |
 | 查找（仅单个实体引用查找） | 是 |
 | 客户 | 否 |

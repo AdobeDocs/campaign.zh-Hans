@@ -4,9 +4,9 @@ title: 数据加载（文件）
 description: 了解有关数据加载（文件）工作流活动的更多信息
 feature: Workflows, Data Management Activity
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: cf88140d1e8b71203729732163f66060423965a0
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1037'
 ht-degree: 14%
 
 ---
@@ -32,6 +32,10 @@ ht-degree: 14%
 您可以定义在文件导入期间要执行的预处理过程，例如，不必在服务器上解压缩文件（从而节省解压缩文件的空间），而要在文件处理中包括解压缩。 选择 **[!UICONTROL Pre-process the file]** 选项并从3个选项中选择一个： **[!UICONTROL None]**， **[!UICONTROL Decompression]** (zcat)或 **[!UICONTROL Decrypt]** (gpg)。
 
 ![](assets/preprocessing-dataloading.png)
+
+>[!IMPORTANT]
+>
+>不能解压缩大于4Gb的压缩文件。
 
 ## 定义文件格式 {#defining-the-file-format}
 

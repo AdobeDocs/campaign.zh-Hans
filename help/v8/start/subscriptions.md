@@ -5,16 +5,16 @@ feature: Subscriptions
 role: User
 level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: b0150b38b50b04c08b10ed73b3be3064a09d7b88
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '448'
 ht-degree: 11%
 
 ---
 
 # 管理订阅和退订{#optin-optout}
 
-使用Adobe Campaign创建和监控信息服务（如新闻稿），并管理这些服务的订阅/退订。 可以并行定义多种服务，例如：特定产品类别、网站主题或区域的专业通讯、各种类型警报消息的订阅和实时通知。 请参阅管理订阅。
+使用Adobe Campaign创建和监控信息服务（如新闻稿），并管理这些服务的订阅/退订。 可以并行定义多种服务，例如：特定产品类别、网站主题或区域的专业通讯、各种类型警报消息的订阅和实时通知。
 
 ![](../assets/do-not-localize/book.png) 了解如何在中创建信息服务、发送新闻稿和管理选择加入和选择退出 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions.html){target="_blank"}
 

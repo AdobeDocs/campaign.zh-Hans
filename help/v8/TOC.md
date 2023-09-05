@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign 概述
-source-git-commit: 4f3e6227193fc607a968f9170484017e551fa560
+source-git-commit: 4ff6e8134c887da6c207afc7f9532a60ff9ef31e
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 95%
+source-wordcount: '570'
+ht-degree: 94%
 
 ---
 
@@ -35,44 +35,43 @@ ht-degree: 95%
 + Campaign 管理 {#campaigns}
    + [活动入门](start/campaigns.md)
    + [营销活动编排 >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans)
-   + 发送消息 {#send}
-      + [开始使用消息](start/create-message.md)
-      + [使用投放模板](send/create-templates.md)
-      + 电子邮件 {#emails}
-         + [设计和验证电子邮件](send/email.md)
-         + [链接到镜像页面](send/mirror-page.md)
-         + [定义其他电子邮件参数](send/email-parameters.md)
-         + [发送和监测电子邮件](send/send.md)
-      + [短信](send/sms.md)
-      + 推送通知 {#push}
-         + [创建和发送推送通知](send/push.md)
-         + [配置推送通知渠道](send/push-settings.md)
-         + [使用数据收集配置推送通知](send/push-data-collection.md)
-      + [LINE 消息](send/line.md)
-      + [直邮](send/direct-mail.md)
-      + [Twitter](send/twitter.md)
-      + 事务性消息 {#real-time}
-         + [事务性消息入门](send/transactional.md)
-         + [创建和发布模板](send/transactional-template.md)
-         + 事件管理{#event}
++ 发送消息 {#send}
+   + [消息入门](start/create-message.md)
+   + 电子邮件 {#emails}
+      + [设计和验证电子邮件](send/email.md)
+      + [链接到镜像页面](send/mirror-page.md)
+      + [定义其他电子邮件参数](send/email-parameters.md)
+      + [发送和监测电子邮件](send/send.md)
+   + [短信](send/sms.md)
+   + 推送通知 {#push}
+      + [创建和发送推送通知](send/push.md)
+      + [配置推送通知渠道](send/push-settings.md)
+      + [使用数据收集配置推送通知](send/push-data-collection.md)
+   + [LINE 消息](send/line.md)
+   + [直邮](send/direct-mail.md)
+   + [Twitter](send/twitter.md)
+   + 个性化内容{#personalize}
+      + [个性化入门](send/personalize.md)
+      + [个性化数据](send/personalization-data.md)
+      + [添加个性化字段](send/personalization-fields.md)
+      + [使用个性化块](send/personalization-blocks.md)
+      + [创建条件](send/conditions.md)
+   + 验证并发送投放 {#validate}
+   + [预览和验证](send/preview-and-proof.md)
+   + [投放分析](send/delivery-analysis.md)
+   + [配置并发送投放](send/configure-and-send.md)
+   + [发送时间优化](send/predictive.md)
+   + 失败、退回和隔离{#failures}
+      + [隔离](send/quarantines.md)
+      + [投放失败](send/delivery-failures.md)
+   + [使用投放模板](send/create-templates.md)
+   + 事务性消息 {#real-time}
+      + [事务性消息入门](send/transactional.md)
+      + [创建和发布模板](send/transactional-template.md)
+      + 事件管理{#event}
          + [收集和处理事件](send/event-processing.md)
          + [了解事件描述](send/event-description.md)
          + [发送和监测消息](send/delivery-execution.md)
-      + 失败、退回和隔离{#failures}
-         + [隔离](send/quarantines.md)
-         + [投放失败](send/delivery-failures.md)
-      + [发送时间优化](send/predictive.md)
-      + [管理订阅](start/subscriptions.md)
-      + 个性化内容{#personalize}
-         + [个性化入门](send/personalize.md)
-         + [个性化数据](send/personalization-data.md)
-         + [添加个性化字段](send/personalization-fields.md)
-         + [使用个性化块](send/personalization-blocks.md)
-         + [创建条件](send/conditions.md)
-      + 验证投放{#validate}
-         + [预览和验证](send/preview-and-proof.md)
-         + [投放分析](send/delivery-analysis.md)
-      + [配置并发送投放](send/configure-and-send.md)
 + 用户档案和受众管理 {#audience}
    + [用户档案和受众入门](audiences/gs-audiences.md)
    + [使用受众](start/audiences.md)
@@ -87,8 +86,9 @@ ht-degree: 95%
    + 创建受众 {#create-audiences}
       + [创建联系人列表](audiences/create-audiences.md)
       + [创建和管理过滤器](audiences/create-filters.md)
-   + [与 Adobe 解决方案共享受众](start/shared-audiences.md)
+      + [与Adobe解决方案共享受众](start/shared-audiences.md)
    + [最佳实践](audiences/audiences-best-practices.md)
+   + [管理订阅](start/subscriptions.md)
 + 内容管理 {#content}
    + [设计 Web 应用程序和表单](dev/webapps.md)
 + 隐私和安全管理 {#privacy}

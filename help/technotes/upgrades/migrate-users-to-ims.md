@@ -3,9 +3,9 @@ title: 将Campaign操作员迁移到AdobeIdentity Management System (IMS)
 description: 了解如何将Campaign操作员迁移到AdobeIdentity Management System (IMS)
 hide: true
 hidefromtoc: true
-source-git-commit: 11128dcb26119383b86aa62561ec0ce1a3c138ad
+source-git-commit: a141ba08b9c40fb89cfdf63c3078082d32afd861
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '951'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ IMS迁移对于确保环境的安全性和标准化至关重要，因为大多�
 您现在可以根据以下条件计划技术用户迁移到IMS [此技术说明](ims-migration.md)，并在完成后向Adobe过渡管理器确认。
 然后，Adobe会将迁移标记为完成，并打开标记以阻止创建新的本机用户和本机用户登录。
 
-## 常见问题解答? {#ims-migration-faq}
+## 常见问题解答 {#ims-migration-faq}
 
 ### 何时可以开始迁移？ {#ims-migration-start}
 
@@ -58,7 +58,7 @@ IMS迁移对于确保环境的安全性和标准化至关重要，因为大多�
 
 升级到Campaign v8.5.2后，您可以在暂存环境中启动IMS迁移，并相应地规划生产环境。
 
-### 8.5.2内部版本升级后会出现什么情况？ {#ims-migration-after-upgrade}
+### 内部版本升级到Campaign v8.5.2后会发生什么？ {#ims-migration-after-upgrade}
 
 将环境升级到Campaign v8.5.2后，您可以执行AdobeIdentity Management System (IMS)迁移。
 
@@ -90,3 +90,20 @@ IMS迁移对于确保环境的安全性和标准化至关重要，因为大多�
 ### 如何通过IMS登录Campaign？ {#ims-migration-log}
 
 了解如何在中使用Adobe ID连接到Campaign [本节](../../v8/start/connect.md).
+
+### 此迁移期间是否会发生停机？ {#ims-migration-downtime}
+
+要完成迁移（迁移用户和产品配置文件），Adobe需要一小时的时间，任何实例（工作流等）无需停机。
+
+在此时间范围内，所有Campaign用户都需要注销，并在完成向IMS的迁移后使用其Adobe ID重新登录。
+
+
+### 在IMS用户迁移期间登录的用户会发生什么情况？ {#ims-migration-log-off}
+
+Adobe强烈建议在迁移时段注销所有用户。
+
+### 我组织中的用户已在使用IMS，我仍然需要执行IMS迁移吗？
+
+此迁移包括两个方面：非技术“人工”用户迁移和技术用户迁移（在自定义代码的API中使用）。
+
+如果您的所有用户（Campaign操作员）都在IMS上，则无需执行此迁移。 但是，您仍需要迁移可能在自定义代码中使用的技术用户。 请参阅[此页面](ims-migration.md)以了解详情。

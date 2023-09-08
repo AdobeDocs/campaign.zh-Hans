@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign 概述
-source-git-commit: 4ff6e8134c887da6c207afc7f9532a60ff9ef31e
+source-git-commit: cb5bec3107872d4d6da83b4ddbc7cad3e9276b00
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 94%
+source-wordcount: '578'
+ht-degree: 92%
 
 ---
 
@@ -133,7 +133,9 @@ ht-degree: 94%
    + [工作流文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)
 + 集成 {#connect}
    + [将 Campaign 与其他解决方案配合使用](connect/integration.md)
-   + [Campaign + Experience Platform](connect/ac-aep.md)
+   + Campaign + Experience Platform {#ac-aep}
+      + [受众和配置文件属性](connect/ac-aep.md)
+      + [Campaign登陆页面和配置文件属性](connect/ac-aep-landing-pages.md)
    + [Campaign + Journey Optimizer](connect/ac-ajo.md)
    + [Campaign + Analytics](connect/ac-aa.md)
    + [Campaign + Experience Manager](connect/ac-aem.md)

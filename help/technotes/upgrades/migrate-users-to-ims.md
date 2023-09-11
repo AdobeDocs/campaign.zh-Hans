@@ -3,9 +3,9 @@ title: 将Campaign操作员迁移到AdobeIdentity Management System (IMS)
 description: 了解如何将Campaign操作员迁移到AdobeIdentity Management System (IMS)
 hide: true
 hidefromtoc: true
-source-git-commit: 74d97c4c61a305aff1d2f108a8a24cb6943dea07
+source-git-commit: 53412ab167721c8a8f9d84e07112b0f410d4785d
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1094'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,6 @@ ht-degree: 1%
 此外，作为加强安全和身份验证过程的一部分，Adobe Campaign客户端应用程序现在使用IMS技术帐户令牌直接调用Campaign API。 有关技术操作员的迁移详情，请参阅中提供的专门文章 [此页面](ims-migration.md).
 
 此更改适用于Campaign v8.5.2，并且将 **必需** 从Campaign v8.6开始。
-
 
 ## 您是否受影响？{#migrate-ims-impacts}
 
@@ -49,8 +48,9 @@ ht-degree: 1%
 1. 与Adobe合作，确定Adobe运行非技术用户（操作员）和产品配置文件的自动迁移的日期。 此步骤需要一个小时窗口，您的任何实例都不会出现停机。
 1. 您的内部Campaign管理员会验证这些更改并提供注销。 进行此迁移后，不能再创建任何进一步的操作员使用其登录名和密码进行身份验证。
 
-您现在可以根据以下条件计划技术用户迁移到IMS [此技术说明](ims-migration.md)，并在完成后向Adobe过渡管理器确认。
-然后，Adobe会将迁移标记为完成，并打开标记以阻止创建新的本机用户和本机用户登录。
+您现在可以将技术操作员迁移到Adobe Developer控制台，如中所述 [此技术说明](ims-migration.md). 如果您使用的是Campaign API，则必须执行此步骤。
+
+完成此迁移后，请向您的Adobe过渡管理器确认：Adobe，然后将迁移标记为完成，并阻止创建新的本机用户和本机用户登录。 然后，您的环境将得到保护和标准化。
 
 ## 常见问题解答 {#ims-migration-faq}
 
@@ -105,10 +105,19 @@ ht-degree: 1%
 
 Adobe强烈建议在迁移时段注销所有用户。
 
-### 我组织中的用户已在使用IMS，我仍然需要执行IMS迁移吗？
+### 我组织中的用户已在使用IMS，我仍然需要执行IMS迁移吗？{#ims-migration-needed}
 
 此迁移包括两个方面：最终用户迁移和技术用户迁移（在自定义代码的API中使用）。
 
 如果您的所有用户（Campaign操作员）都在IMS上，则无需执行此迁移。 但是，您仍需要迁移可能在自定义代码中使用的技术用户。 请参阅[此页面](ims-migration.md)以了解详情。
 
 完成此迁移后，必须联系Adobe过渡经理，以便Adobe完成迁移。
+
+## 有用的链接 {#ims-useful-links}
+
+* [将技术用户迁移到Adobe Developer控制台](ims-migration.md)
+* [如何连接到Adobe Campaign v8](../../v8/start/connect.md)
+* [Adobe Campaign v8中的访问和权限](../../v8/start/gs-permissions.md)
+* [Adobe Campaign v8发行说明](../../v8/start/release-notes.md)
+* [什么是AdobeIdentity Management System (IMS)](https://helpx.adobe.com/enterprise/using/identity.html){target="_blank"}
+

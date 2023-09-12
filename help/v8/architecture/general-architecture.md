@@ -5,9 +5,9 @@ feature: Architecture
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: 507f30d16eecf5400ee88a4d29913e4cdaca9cba
+source-git-commit: d791cb9afc51457e799ee62f8bb845fd888fecf2
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1129'
 ht-degree: 7%
 
 ---
@@ -78,6 +78,7 @@ Adobe Campaign是一个使用不同应用程序的平台，用于创建开放且
 
 * **统计服务器** (nlserver stat) — 此进程维护有关连接数、每个邮件服务器发送的邮件数、邮件发送目标及其限制（最大同时连接数、每小时邮件数/和/或连接数）的统计数据。 它还允许您联合多个实例或计算机（如果它们共享相同的公共IP地址）。
 
+
 ## 数据库容器 {#db-containers}
 
 Adobe Campaign云数据库依赖于 [!DNL Snowflake] ，其中包含功能数据（用户档案、订阅、内容等）、技术数据（投放作业和日志、跟踪日志等） 和解决方案的工作数据（购买、商机），以及所有Adobe Campaign组件与数据库通信以执行其特定任务。
@@ -92,3 +93,9 @@ Adobe Campaign云数据库依赖于 [!DNL Snowflake] ，其中包含功能数据
 >通过使用 **Campaign 托管云服务**，您的环境和初始配置已由 Adobe 根据您的许可协议条款进行了设置。您不可修改已安装的内置软件包、内置模式或报告。
 >
 >如果您需要使用 Campaign 加载项或尚未为您配置的特定功能，那么您必须联系 **Adobe 客户关怀**&#x200B;团队。
+
+## 数据库存储 {#db-storage}
+
+总存储容量在主数据库和Snowflake仓库之间分配。 存储数据的位置应在实施或升级时确定，具体取决于客户特定的用例。
+
+了解如何在中监测数据库使用情况 [Campaign控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html){target="_blank"}.

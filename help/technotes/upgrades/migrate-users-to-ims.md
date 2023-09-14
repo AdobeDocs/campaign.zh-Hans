@@ -1,11 +1,9 @@
 ---
 title: 将Campaign操作员迁移到AdobeIdentity Management System (IMS)
 description: 了解如何将Campaign操作员迁移到AdobeIdentity Management System (IMS)
-hide: true
-hidefromtoc: true
-source-git-commit: 53412ab167721c8a8f9d84e07112b0f410d4785d
+source-git-commit: a85368a8cd34c9bcdfcea91b71fa4b519b6437a3
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1078'
 ht-degree: 1%
 
 ---
@@ -88,7 +86,7 @@ ht-degree: 1%
 1. 输入操作员的电子邮件 **联系方式** 操作员表单的部分。
 1. 保存您的更改。
 
-您还可以导入CSV文件，以使用操作员的电子邮件更新所有操作员用户档案。
+<!--You can also import a CSV file to update all your operator profiles with their email.-->
 
 
 ### 如何通过IMS登录Campaign？ {#ims-migration-log}

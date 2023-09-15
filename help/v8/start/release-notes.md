@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 758d542b353a2d784407954089586e761825d740
+source-git-commit: c4a1539f140e85e1e8c97f743f9c6c0bba52e4de
 workflow-type: tm+mt
-source-wordcount: '1466'
-ht-degree: 51%
+source-wordcount: '1489'
+ht-degree: 55%
 
 ---
 
@@ -38,7 +38,6 @@ Campaign v8.5.1引入了我们最新的推送通知服务，该服务由基于�
 有关更多信息，请参阅[详细文档](../send/push-data-collection.md)。
 
 
-**移动渠道吞吐量增加**
 
 <!--
 The newly introduced Push notification service showcases significant improvements in throughput for both Push Android and Push iOS compared to our previous version (v8.4). Users will experience notably enhanced performance with the upgraded service in the latest version (v8.5).
@@ -60,7 +59,7 @@ These max throughput performances have been measured by Adobe testing teams, in 
 </td>
 <td>
 <div>
-
+<p><strong>移动渠道吞吐量增加</strong></p>
 <p>与以前的版本(v8.4)相比，新引入的推送通知服务显示推送Android和推送iOS的吞吐量有了显着改进。 最新版本(v8.5)中的升级服务将会显着提升用户性能。 </p>
 <ul>
 <li>推送通知(Android)：最多 <strong>5倍</strong> 更快 </li>
@@ -85,8 +84,8 @@ These max throughput performances have been measured by Adobe testing teams, in 
 
 **安全性增强**
 
-* 从Campaign v8.5.1开始，对Campaign v8的身份验证过程已得到改进。 技术操作员必须使用AdobeIdentity Management System (IMS)连接到Campaign。 了解如何在中迁移现有技术帐户 [此技术说明](../../technotes/upgrades/ims-migration.md).
-* 您无法再从Campaign客户端控制台创建运算符。 用户界面已相应地更新。 您现在必须使用Adobe Admin Console。 [了解详情](../start/gs-permissions.md)。
+* 使用Campaign v8.5.1时，对Campaign v8的身份验证过程已得到改进并得到了保护。 技术操作员现在必须使用AdobeIdentity Management System (IMS)连接到Campaign。 了解如何在中迁移现有技术帐户 [此技术说明](../../technotes/upgrades/ims-migration.md).
+* 从即将推出的v8.6开始，您将不再允许从Campaign客户端控制台创建运算符。 如果您使用login/password本机身份验证，则必须将操作员迁移到AdobeIdentity Management System (IMS)。 了解如何在中迁移操作员 [此技术说明](../../technotes/upgrades/migrate-users-to-ims.md).
 * 已更新多个第三方工具以优化安全性。
 
 **兼容性更新**
@@ -97,7 +96,7 @@ These max throughput performances have been measured by Adobe testing teams, in 
 
 **修补程序**
 
-* 修复了可能导致投放的HTML内容中的特殊字符在多个浏览器中被错误编码的问题。 (NEO-60081)
+* 修复了可能导致投放的 HTML 内容中的特殊字符在多个浏览器中被错误编码的问题。(NEO-60081)
 * 修复了可能导致无法在Campaign v8企业(FFDA)部署中保存报表的问题。 (NEO-56836)
 * 修复了通过更新数据工作流活动将数据插入或更新到自定义FFDA架构中的问题。 (NEO-54708)
 * 修复了阻止数据库清理工作流删除FFDA上nms：address表中的地址的问题。 (NEO-54460)
@@ -106,9 +105,9 @@ These max throughput performances have been measured by Adobe testing teams, in 
 * 修复了会导致 `JSPContext.sqlExecWithOneParam` 功能无法正常运行的问题。(NEO-50066)
 * 修复了在个性化字段中使用不可打印字符时导致投放失败的问题。 (NEO-48588)
 * 修复了在插入Adobe Target动态图像时可能导致投放错误的问题。 (NEO-62689)
-* 修复了在投放中使用条件内容时阻止浏览器添加额外空格的问题。 (NEO-62132)
-* 修复了在电子邮件内容编辑器中单击图像时导致弹出窗口打开的问题。 (NEO-60752)
-* 修复了在编辑投放内容时可能导致错误并阻止滚动的问题。 (NEO-61364)
+* 修复了在投放中使用条件内容时导致浏览器无法添加额外空格的问题。(NEO-62132)
+* 修复了在电子邮件内容编辑器中单击图像时导致打开弹出窗口的问题。(NEO-60752)
+* 修复了在编辑投放内容时可能导致出现错误且无法滚动的问题。(NEO-61364)
 * Adobe Analytics连接器现在可导出渠道类型正确的量度。 它以前始终设置为“电子邮件”渠道。 (NEO-26340)
 * 修复了在将Big Query连接器与日期时间字段结合使用时可能导致错误的问题。 (NEO-49768)
 

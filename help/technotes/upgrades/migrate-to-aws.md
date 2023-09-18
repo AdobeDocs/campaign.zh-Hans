@@ -3,7 +3,7 @@ title: 将Campaign发送基础设施迁移到Amazon Web Services (AWS)
 description: 将Campaign发送基础设施迁移到Amazon Web Services (AWS)
 hide: true
 hidefromtoc: true
-source-git-commit: d0935df57d8a25fa023dd93e7923c2728d889577
+source-git-commit: 53080e3641e0070b0b6e47d1ec8b55b4c7aa2b1a
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 5%
@@ -31,7 +31,7 @@ ht-degree: 5%
 
 作为Campaign客户，您将在安排迁移批次时收到其他通知。 迁移前至少七天会发送通知。
 
-## 会有什么影响？{#aws-impact}
+## 会有什么影响？{#impact}
 
 此举将对客户透明：
 

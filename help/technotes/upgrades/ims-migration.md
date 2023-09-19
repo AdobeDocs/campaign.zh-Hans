@@ -1,7 +1,7 @@
 ---
 title: 将技术用户迁移到Adobe Developer控制台
 description: 了解如何将Campaign技术操作员迁移到Adobe Developer控制台上的技术帐户
-source-git-commit: 825e8147f6080e1d943184c97c4b64ac681f9411
+source-git-commit: 43a124dd64532ffe84ca2b300113cacc545a811a
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 0%
@@ -190,7 +190,7 @@ You can also update the technical operator programmatically, using SQL scripts o
 
 完成并验证迁移过程后，Soap调用将更新如下：
 
-* 迁移之前：不支持技术帐户访问令牌。
+* 迁移前：不支持技术帐户访问令牌。
 
   ```sql
   POST /nl/jsp/soaprouter.jsp HTTP/1.1

@@ -3,9 +3,9 @@ title: 将Campaign发送基础设施迁移到Amazon Web Services (AWS)
 description: 将Campaign发送基础设施迁移到Amazon Web Services (AWS)
 hide: true
 hidefromtoc: true
-source-git-commit: 3a8fd0a0c721d03f1818dce45b58a841284bbb00
+source-git-commit: f1b4002063c8b94eb7251a9bcde9fe11791d0be3
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '401'
 ht-degree: 2%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 2%
 
 * **客户是否需要执行任何迁移操作？**
 
-  由于迁移将由Adobe自动运行，因此无需执行任何操作。
+  无需执行任何操作，因为Adobe会自动运行迁移。
 
 * **客户需要运行哪些验证？**
 

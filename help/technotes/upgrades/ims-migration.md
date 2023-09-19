@@ -1,9 +1,9 @@
 ---
 title: 将技术用户迁移到Adobe Developer控制台
 description: 了解如何将Campaign技术操作员迁移到Adobe Developer控制台上的技术帐户
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+source-git-commit: 825e8147f6080e1d943184c97c4b64ac681f9411
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '919'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,16 @@ Campaign常规用户已通过AdobeIdentity Management System (IMS)，使用其Ad
 如果您使用的是Campaign API，则需要将技术运算符迁移到Adobe Developer控制台，如下所述。
 
 ## 如何迁移？{#ims-migration-procedure}
+
+每个技术操作员应至少有一个技术帐户。
+
+关键步骤包括：
+
+1. 首先创建与技术操作员对应的技术帐户。 例如，假设为技术操作员(TO1)新建的技术帐户(TA1)。
+1. 执行下面技术帐户TA1上详述的步骤
+   [步骤4](#ims-migration-step-4) 是可选的，并且仅在技术操作员具有特定文件夹权限时才需要使用此设置。
+1. 将所有Campaign API集成实施迁移到新创建的技术帐户TA1。
+1. 一旦所有面向客户的API/集成在TA1上完全正常工作，请用技术帐户TA1替换技术操作员TO1。
 
 ### 先决条件{#ims-migration-prerequisites}
 
@@ -61,7 +71,6 @@ Campaign常规用户已通过AdobeIdentity Management System (IMS)，使用其Ad
 1. 浏览至 **凭据详细信息** 选项卡，并复制 **技术帐户电子邮件** 值。
 
 ### 步骤4 — 在客户端控制台中更新技术操作员 {#ims-migration-step-4}
-
 
 仅当已为此操作员（而不是通过操作员的组）定义了特定文件夹权限或命名权限时，才需要执行此步骤。
 
@@ -181,7 +190,7 @@ You can also update the technical operator programmatically, using SQL scripts o
 
 完成并验证迁移过程后，Soap调用将更新如下：
 
-* 迁移前
+* 迁移之前：不支持技术帐户访问令牌。
 
   ```sql
   POST /nl/jsp/soaprouter.jsp HTTP/1.1
@@ -204,7 +213,7 @@ You can also update the technical operator programmatically, using SQL scripts o
   </soapenv:Envelope>
   ```
 
-* 迁移后
+* 迁移后：支持技术帐户访问令牌。 访问令牌应在中提供 `Authorization` 标头作为持有者令牌。 应在此处忽略会话令牌的使用，如以下soap调用示例中所示。
 
   ```sql
   POST /nl/jsp/soaprouter.jsp HTTP/1.1

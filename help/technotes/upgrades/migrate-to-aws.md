@@ -3,9 +3,9 @@ title: 将Campaign发送基础设施迁移到Amazon Web Services (AWS)
 description: 将Campaign发送基础设施迁移到Amazon Web Services (AWS)
 hide: true
 hidefromtoc: true
-source-git-commit: 15beb6e4aae7a00b245277bcb4c6c60c13b22884
+source-git-commit: 9401e3564b53b920dd6a640ca6d00531992a2f21
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '481'
 ht-degree: 2%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 2%
 
 此举将对客户透明：
 
-* 迁移预计需要30分钟到60分钟之间的时间
+* 每个迁移波次的长度可能因受影响的Campaign实例数而异。 当计划了迁移波次时，通知将包含预期的持续时间。
 
 * Campaign实例在迁移时段将无法发送邮件。 任何其他Campaign功能都不会受到影响。
 
@@ -59,7 +59,7 @@ ht-degree: 2%
 
 * **预计停机时间是多少？**
 
-  预计停机时间为30到60分钟。
+  迁移过程预计需要30分钟到60分钟之间，但每个迁移波次的长度可能因受影响的Campaign实例数而异。 当计划了迁移波次时，通知将包含预期的持续时间。
 
 * **客户是否需要执行任何迁移操作？**
 
@@ -72,7 +72,6 @@ ht-degree: 2%
 
 * **我是否可以请求更改计划安全升级插槽的日期/时间？**
 
-  由于这是强制性迁移，我们强烈建议您调整现有计划。
-
+  由于这是强制性迁移，因此我们无法适应对现有计划的修改。
 
 对于任何其他问题，您可以联系 [Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.

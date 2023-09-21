@@ -1,9 +1,9 @@
 ---
 title: 将技术用户迁移到Adobe Developer控制台
 description: 了解如何将Campaign技术操作员迁移到Adobe Developer控制台上的技术帐户
-source-git-commit: 43a124dd64532ffe84ca2b300113cacc545a811a
+source-git-commit: 35263dc042642a6ba2f162461364b9399c30ad18
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '894'
 ht-degree: 0%
 
 ---
@@ -39,15 +39,15 @@ Campaign常规用户已通过AdobeIdentity Management System (IMS)，使用其Ad
 
 ### 先决条件{#ims-migration-prerequisites}
 
-在开始迁移过程之前，您必须联系Adobe代表，以便Adobe技术团队能够将您现有的操作员组和已命名权限迁移到AdobeIdentity Management System (IMS)。
+在开始迁移过程之前，您必须联系Adobe过渡经理，以便Adobe技术团队能够将您现有的操作员组和已命名权限迁移到AdobeIdentity Management System (IMS)。
 
 ### 步骤1 — 在Adobe Developer控制台中创建/更新Campaign项目{#ims-migration-step-1}
 
 集成是作为的一部分创建的 **项目** 在Adobe Developer控制台中。 了解有关中项目的更多信息 [Adobe Developer控制台文档](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.
 
-作为Campaign v8用户，您应已在Adobe Developer控制台中拥有项目。 如果不能，则必须创建一个项目。 详细说明创建项目的步骤 [在Adobe Developer Console文档中](https://developer.adobe.com/developer-console/docs/guides/getting-started/){target="_blank"}.
+您可以使用之前创建的任何项目，也可以创建新项目。 有关创建项目的详细步骤，请参见 [Adobe Developer控制台文档](https://developer.adobe.com/developer-console/docs/guides/getting-started/){target="_blank"}.
 
-访问Campaign项目后，您可以添加各种服务，包括API、Adobe Campaign和I/O管理API。 对于此迁移，您必须在项目中添加以下API： **I/O管理API** 和 **Adobe Campaign**.
+对于此迁移，您必须在项目中添加以下API： **I/O管理API** 和 **Adobe Campaign**.
 
 ![](assets/do-not-localize/ims-products-and-services.png)
 

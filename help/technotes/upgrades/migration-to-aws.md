@@ -3,9 +3,9 @@ title: Campaign电子邮件发送基础架构升级
 description: Campaign电子邮件发送基础架构升级
 hide: true
 hidefromtoc: true
-source-git-commit: 45ef2b46f2612bdb814270d8ef9e257fcaf98e5b
+source-git-commit: aa3ec8e96d3bda80d5cbd4b4d98cad07b4560b14
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '366'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,6 @@ ht-degree: 2%
 * Adobe Campaign Classic Managed Services客户
 * Adobe Campaign Managed Cloud Services客户
 * Adobe Campaign Standard On-demand客户
-* Adobe Campaign Cloud Messaging按需客户
 
 ## 何时进行此迁移？{#aws-timeline}
 

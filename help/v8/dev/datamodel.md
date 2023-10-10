@@ -5,10 +5,10 @@ feature: Data Model
 role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 87e56e7c296884458a0c8fd704b82611f56e695d
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 6%
+source-wordcount: '713'
+ht-degree: 5%
 
 ---
 
@@ -18,19 +18,19 @@ Adobe Campaign 提供了预定义的数据模型。本节提供了有关Adobe Ca
 
 Adobe Campaign数据模型的基本结构可描述如下：
 
-* **收件人表**：数据模型依赖于主表，该主表默认为收件人表(nmsRecipient)。 此表存储了所有营销用户档案。
+* **收件人表**：数据模型依赖于主表，该主表默认为收件人表(**nmsRecipient**)。 此表存储了所有营销用户档案。 在中了解有关收件人表的更多信息 [本节](#ootb-profiles).
 
-  ![](../assets/do-not-localize/glass.png) 有关“收件人”表的详细信息，请参阅 [本节](#ootb-profiles).
-
-* **投放表**：数据模型还包括专用于存储所有营销活动的部件。 通常为投放表(NmsDelivery)。 此表中的每条记录表示一个投放操作或投放模板。 它包含执行投放所需的所有参数，如目标、内容等。
+* **投放表**：此表为每个投放操作存储一个记录。 通常为投放表(**NmsDelivery**)。 此表表示投放操作或投放模板。 它包含执行投放所需的所有参数，如目标、内容等。 每个记录都更新多次，以反映投放进度
 
 * **日志表**：这些表存储与活动执行关联的所有日志。
 
-  投放日志是跨所有渠道发送给收件人或设备的所有消息。 主投放日志表(NmsBroadLogRcp)包含所有收件人的投放日志。
-主跟踪日志表(NmsTrackingLogRcp)存储所有收件人的跟踪日志。 跟踪日志是指收件人的反应，例如电子邮件打开次数和点击次数。 每个反应对应于一个跟踪日志。
-投放日志和跟踪日志会在特定时段后删除，该特定时段在Adobe Campaign中指定并可进行修改。 因此，强烈建议定期导出日志。
+   * 投放日志是跨所有渠道发送给收件人或设备的所有消息。 主投放日志表(**NmsBroadLogRcp**)包含所有收件人的投放日志。
+   * 此 **nmsBroadlog** table是系统中最大的表。 它为每条发送的消息存储一条记录，这些记录会被插入、更新以跟踪投放状态，并在历史记录被清除时删除。
+   * 主跟踪日志表(**NmsTrackingLogRcp**)存储所有收件人的跟踪日志。 跟踪日志是指收件人的反应，例如电子邮件打开次数和点击次数。 每个反应对应于一个跟踪日志。
 
-* **技术表**：收集用于应用进程的技术数据，包括操作员和用户权限(xtkGroup)、文件夹(XtkFolder)。
+  投放日志和跟踪日志会在特定时段后删除，该特定时段在Adobe Campaign中指定并可进行修改。 因此，强烈建议定期导出日志。
+
+* **技术表**：收集用于应用流程的技术数据，包括操作员和用户权限(**xtkGroup**)，用户会话(**xtkSessionInfo**)，浏览器树中的文件夹(**XtkFolder**)，工作流(**xtkWorkflow**)，等等。
 
 >[!NOTE]
 >

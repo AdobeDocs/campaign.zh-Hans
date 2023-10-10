@@ -3,8 +3,9 @@ product: campaign
 title: 使用分组管理进行查询
 description: 了解如何使用分组管理执行查询
 feature: Query Editor
+role: User, Data Engineer
 exl-id: 6fc4ef67-5d75-4c8c-8bcc-41e3ed155ca2
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 4%

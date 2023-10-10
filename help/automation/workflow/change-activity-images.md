@@ -3,8 +3,9 @@ product: campaign
 title: 更改活动图像
 description: 了解如何更改活动图像
 feature: Workflows
+role: Admin
 exl-id: f5580401-3305-4915-88a2-3400a32aa7aa
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 3%

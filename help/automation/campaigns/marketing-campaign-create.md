@@ -3,8 +3,9 @@ product: campaign
 title: 创建营销活动
 description: 了解如何创建和执行营销活动
 feature: Campaigns, Cross Channel Orchestration, Programs
+role: User
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1298'
 ht-degree: 4%

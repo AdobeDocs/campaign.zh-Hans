@@ -2,10 +2,10 @@
 title: 实时互动历史记录和报告
 description: 了解如何通过Campaign互动跟踪和衡量优惠
 feature: Interaction, Offers
-role: Data Engineer
+role: User, Admin
 level: Beginner
 exl-id: 83947f69-9f8e-4829-9a64-fd734d0cde37
-source-git-commit: 8eb92dd1cacc321fc79ac4480a791690fc18511c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 4%

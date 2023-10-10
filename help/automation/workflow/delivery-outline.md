@@ -3,8 +3,9 @@ product: campaign
 title: 投放概要
 description: 了解有关投放概要工作流活动的更多信息
 feature: Workflows, Targeting Activity
+role: User
 exl-id: 3c06b329-b2d8-4ac8-ab9b-3ab3e525d109
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 1%

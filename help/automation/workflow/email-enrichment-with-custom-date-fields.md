@@ -3,8 +3,9 @@ product: campaign
 title: 具有自定义日期字段的电子邮件扩充
 description: 了解如何使用自定义日期字段丰富电子邮件
 feature: Workflows
+role: User, Developer
 exl-id: 2bb3443c-37d8-4d49-9be1-81217f56823c
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 3%

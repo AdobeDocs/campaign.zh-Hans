@@ -3,8 +3,9 @@ product: campaign
 title: 工作流中的 JavaScript 代码示例
 description: 这些示例说明如何在工作流中使用JavaScript代码
 feature: Workflows
+role: Developer
 exl-id: 3412e3de-1c88-496e-8fda-ca9fc9b18e69
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1752'
 ht-degree: 3%
@@ -50,7 +51,7 @@ ht-degree: 3%
    1. 调用 `Write` 上的方法 `xtk:session` 架构。
 
       >[!IMPORTANT]
-      > 如果您使用Adobe Campaign v8，我们建议您将暂存机制与 **摄取** 和 **数据更新/删除** 的API `Write` Snowflake表中的方法。 [了解更多信息](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
+      > 如果您使用Adobe Campaign v8，我们建议您将暂存机制与 **摄取** 和 **数据更新/删除** 的API `Write` Snowflake表中的方法。 [了解更多信息](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}。
 
    1. 将XML代码作为写入请求的参数传递。
 
@@ -560,7 +561,7 @@ for each (var w in res.recipient)
 * 此 `delete` 操作
 
 >[!IMPORTANT]
-> 如果您使用Adobe Campaign v8，我们建议您将暂存机制与 **摄取** 和 **数据更新/删除** 的API `Write` Snowflake表中的方法。 [了解更多信息](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}.
+> 如果您使用Adobe Campaign v8，我们建议您将暂存机制与 **摄取** 和 **数据更新/删除** 的API `Write` Snowflake表中的方法。 [了解更多信息](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}。
 
 #### 示例1：插入或更新记录
 

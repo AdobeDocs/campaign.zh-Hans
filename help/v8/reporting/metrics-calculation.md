@@ -2,11 +2,12 @@
 title: 内置报告量度计算
 description: 内置报告量度计算
 feature: Reporting
+role: Data Engineer
 exl-id: ad8e9f9c-df24-4a11-b8df-4b31dd54911f
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '2978'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
@@ -45,7 +46,7 @@ ht-degree: 7%
  </tbody> 
 </table>
 
-此报表基于 **[!UICONTROL Consolidated tracking]** 表(nms：trackingStats)。 显示报表时，出于性能原因，使用此汇总表代替 **[!UICONTROL Recipient tracking logs]** 表(nms：trackingLogRcp)，并且不会实时计算它。 该表将在检索跟踪日志后几分钟生成。 如果指标是最新的，则结果将与以下各项指标相同： **跟踪指标** 报告。 @totalclicks指示器表示5分钟内的点击总数。
+此报表基于 **[!UICONTROL Consolidated tracking]** 表(nms：trackingStats)。 显示报表时，出于性能原因，使用此汇总表代替 **[!UICONTROL Recipient tracking logs]** 表(nms：trackingLogRcp)，并且不会实时计算它。 该表在检索跟踪日志几分钟后生成。如果指标是最新的，则结果将与以下各项指标相同： **跟踪指标** 报告。 @totalclicks指示器表示5分钟内的点击总数。
 
 ## 无法投放项和退回 {#non-deliverables-and-bounces-1}
 
@@ -95,7 +96,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> 帐户被禁用<br /> </td> 
-   <td> @disabled<br /> </td> 
+   <td> @已禁用<br /> </td> 
    <td> 状态等于“失败”且原因等于“帐户已禁用”的所有邮件的计数。<br /> </td> 
    <td> Count(@status=2和msg/@failureReason=4)<br /> </td> 
   </tr> 
@@ -181,7 +182,7 @@ ht-degree: 7%
  <tbody> 
   <tr> 
    <td> 使用率<br /> </td> 
-   <td> @visitors<br /> </td> 
+   <td> @访客<br /> </td> 
    <td> 每日使用此浏览器的访客数与当天访问次数最多的访客数的百分比。<br /> </td> 
    <td> 百分比(sum(@visitors)，max(@visitorsOfTheDay))<br /> </td> 
   </tr> 
@@ -423,7 +424,7 @@ ht-degree: 7%
  <tbody> 
   <tr> 
    <td> 使用率<br /> </td> 
-   <td> @visitors<br /> </td> 
+   <td> @访客<br /> </td> 
    <td> 此操作系统上每天的访客数与访问次数最多的当天测量的访客数的百分比。<br /> </td> 
    <td> percent(@visitors)， max(@visitorsOfTheDay)<br /> </td> 
   </tr> 
@@ -919,7 +920,7 @@ ht-degree: 7%
 
 ## 跟踪打开次数 {#tracking-opens-}
 
-为了让Adobe Campaign检测邮件打开，收件人必须下载电子邮件中的图像。 HTML和多部分/替代电子邮件包括0像素图像，用于检测已打开的邮件。 由于文本格式的消息不包含任何图像，因此无法检测这些消息是否已打开。 由于与图像显示相关的容差，根据消息打开度计算的值始终为估计值。
+为了让Adobe Campaign检测邮件打开，收件人必须下载电子邮件中的图像。 HTML 和多部分/替代电子邮件包含 0 像素图像，可让您检测已打开的消息。由于采用文本格式的消息不包含任何图像，因此，无法检测它们是否已打开。由于与图像显示相关的误差范围，基于消息打开次数计算的值始终是估计值。
 
 ## 目标人员/收件人 {#targeted-persons---recipients}
 

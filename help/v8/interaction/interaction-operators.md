@@ -2,10 +2,10 @@
 title: 操作员配置文件
 description: 创建选件管理操作员
 feature: Interaction, Offers
-role: Data Engineer
+role: User, Admin
 level: Beginner
 exl-id: 865ddb84-3373-45e0-849d-9d3c92455d22
-source-git-commit: eed3396584940f99a865eef2358887b6bf5c4936
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 8%
@@ -86,7 +86,7 @@ ht-degree: 8%
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 类型规则<br /> </td> 
+   <td> 分类规则<br /> </td> 
    <td> 读/写<br /> </td> 
    <td> 读取<br /> </td> 
   </tr> 
@@ -146,7 +146,7 @@ ht-degree: 8%
    <td> 读取<br /> </td> 
   </tr> 
   <tr> 
-   <td> 类型规则<br /> </td> 
+   <td> 分类规则<br /> </td> 
    <td> </td> 
    <td> 读取<br /> </td> 
   </tr> 

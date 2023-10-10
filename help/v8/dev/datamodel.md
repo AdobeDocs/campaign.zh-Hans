@@ -5,7 +5,7 @@ feature: Data Model
 role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
-source-git-commit: 87e56e7c296884458a0c8fd704b82611f56e695d
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 5%
@@ -34,7 +34,7 @@ Adobe Campaign数据模型的基本结构可描述如下：
 
 >[!NOTE]
 >
->要访问每个表的说明，请转到管理员>配置>数据架构，从列表中选择资源，然后单击 **文档** 选项卡。
+>要访问每个表的说明，请浏览 **管理>配置>数据架构**，从列表中选择资源，然后单击 **文档** 选项卡。
 
 开始使用Adobe Campaign时，您需要评估默认数据模型，以检查哪个表最适合存储营销数据。
 

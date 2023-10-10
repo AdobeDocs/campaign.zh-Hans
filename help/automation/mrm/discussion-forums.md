@@ -2,8 +2,9 @@
 product: campaign
 title: 论坛
 description: 了解如何使用Campaign论坛
+role: User
 exl-id: c2336507-beea-4ddb-aa8c-1ec591eb5683
-source-git-commit: 72fc29c49fca5767133be4a9927b57b3cfb51a14
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 0%

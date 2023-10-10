@@ -2,10 +2,10 @@
 title: 使用Adobe Campaign发送短信
 description: Campaign短信入门
 feature: SMS
-role: Data Engineer
+role: User, Data Engineer
 level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 3%
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Adobe Campaign还允许您通过其 **Adobe Campaign移动设备应用程序渠道(NMAC)** 选项。 在[此章节](push.md)中了解更多信息。
+>Adobe Campaign还允许您通过其 **Adobe Campaign移动设备应用程序渠道(NMAC)** 选项。 可在[此部分](push.md)中了解详情。
 
 ## 配置短信渠道
 

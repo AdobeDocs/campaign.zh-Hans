@@ -3,8 +3,9 @@ product: campaign
 title: 监测技术工作流
 description: 监测技术工作流
 feature: Workflows
+role: Admin
 exl-id: 8524d916-8af7-4641-b047-9c348f1017fd
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 5%
@@ -35,15 +36,15 @@ ht-degree: 5%
 
 要更好地了解每个技术工作流的功能，请参阅此 [部分](technical-workflows.md).
 
-对象 **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**：
+对象 **[!UICONTROL Database Cleanup workflow ('cleanup')]**：
 
 检查日志，验证所用的时间在一段时间内相对稳定，不会影响其他工作流。
 
-对象 **[!UICONTROL Tracking workflow (‘tracking’)]**：
+对象 **[!UICONTROL Tracking workflow ('tracking')]**：
 
 检查跟踪工作流是否按计划运行（默认情况下每小时运行一次），以及日记帐是否未高亮显示重复错误。 有关更多信息，请参阅此](delivery.md)章节[。
 
-对象 **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**：
+对象 **[!UICONTROL Deliverability update ('deliverabilityUpdate')]**：
 
 1. 检查 **[!UICONTROL Deliverability update]** 工作流每天都运行并成功完成。
 1. 在日志中验证规则是否定期更新。

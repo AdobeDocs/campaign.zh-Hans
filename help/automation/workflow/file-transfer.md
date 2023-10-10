@@ -3,8 +3,9 @@ product: campaign
 title: 文件传输
 description: 了解有关文件传输工作流活动的更多信息
 feature: Workflows, Data Management
+role: User
 exl-id: 794de398-f35d-4c2b-af29-d6fd38eb9394
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 2%

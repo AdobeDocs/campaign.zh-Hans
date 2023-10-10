@@ -3,8 +3,9 @@ product: campaign
 title: 丰富数据
 description: 了解有关扩充工作流活动的更多信息
 feature: Workflows, Enrichment Activity
+role: User
 exl-id: 3b3fa15f-b16e-42c8-a2e6-03350aee1903
-source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '744'
 ht-degree: 1%

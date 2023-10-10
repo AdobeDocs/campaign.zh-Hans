@@ -3,8 +3,9 @@ product: campaign
 title: 查询投放信息
 description: 了解如何查询投放信息
 feature: Query Editor
+role: User
 exl-id: d11a1992-c07b-4133-8f0a-65f1b7552a99
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 1%

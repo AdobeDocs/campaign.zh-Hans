@@ -3,11 +3,12 @@ product: campaign
 title: 定义审批
 description: 通过批准，操作员能够做出管理工作流的决策或确认工作流的继续执行
 feature: Approvals
+role: User
 exl-id: 8ac159c1-fd2e-4fb9-8275-18154f6f210c
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '826'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -49,7 +50,7 @@ ht-degree: 2%
 
 ![](assets/validation-node.png)
 
-## 组 {#groups}
+## 群组 {#groups}
 
 批准被分配给通过筛选条件选择的一组操作员、单个操作员或一组操作员。
 

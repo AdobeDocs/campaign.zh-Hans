@@ -1,11 +1,11 @@
 ---
 title: Campaign v8 新增功能
 description: 了解 Adobe Campaign v8 中的重要功能、新增功能以及最新版本中将会提供的功能。
-feature: Overview
+feature: Overview, Release Notes
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: f16fe79b8417a3fa146baf432f829c73fb839953
+source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 92%
@@ -20,7 +20,7 @@ Adobe Campaign v8 在基础架构、安全性、可投放性和监测方面有�
 
 ![](assets/home-page.png)
 
-## 重要功能{#key-capabilities}
+## 关键功能{#key-capabilities}
 
 下面列出了关键功能。
 

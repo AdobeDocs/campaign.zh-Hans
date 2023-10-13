@@ -1,16 +1,16 @@
 ---
 title: 使用 Adobe Experience Cloud 解决方案共享受众
 description: 了解如何使用 Adobe Experience Cloud 解决方案共享受众
-feature: Subscriptions
+feature: Audiences
 role: User
 level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: c4d30771-db5e-40be-8af6-50f0fab9f9af
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
 workflow-type: tm+mt
 source-wordcount: '264'
-ht-degree: 100%
+ht-degree: 80%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 100%
   >
   > 声明的 ID 数据源现在还可以与 People 核心服务集成一起使用。
   >
-  >如果您使用 People 核心服务集成，并想要添加 Audience Manager 集成，则需要 Adobe Audience Manager 顾问的帮助，以避免在 Adobe Audience Manager 环境中转换为使用此声明的 ID 数据源时收集的所有 ID 同步丢失。
+  >如果您使用People核心服务集成，并想要添加Audience Manager集成，则需要Adobe Audience Manager顾问的帮助，以避免在Adobe Audience Manager上下文中转换为使用此声明的ID数据源时收集的所有ID同步丢失。
 
 请参阅：
 

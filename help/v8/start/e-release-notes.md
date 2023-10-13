@@ -1,16 +1,16 @@
 ---
 title: 早期 Campaign v8 发行说明
 description: 早期 Campaign v8 版本
-feature: Overview
+feature: Release Notes
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 hide: true
 hidefromtoc: true
 exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
-source-git-commit: 958d2e8acdb9edee74f55bc3ea808f5072bf8f4d
+source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
 workflow-type: tm+mt
 source-wordcount: '586'
-ht-degree: 20%
+ht-degree: 33%
 
 ---
 
@@ -58,7 +58,7 @@ _2023年6月30日_
 
 **修补程序**
 
-* 修复了可能导致投放的HTML内容中的特殊字符在多个浏览器中被错误编码的问题。 (NEO-60081)
+* 修复了可能导致投放的 HTML 内容中的特殊字符在多个浏览器中被错误编码的问题。(NEO-60081)
 * 修复了可能导致无法在Campaign v8企业(FFDA)部署中保存报表的问题。 (NEO-56836)
 * 修复了通过更新数据工作流活动将数据插入或更新到自定义FFDA架构中的问题。 (NEO-54708)
 * 修复了阻止数据库清理工作流删除FFDA上nms：address表中的地址的问题。 (NEO-54460)
@@ -67,6 +67,6 @@ _2023年6月30日_
 * 修复了会导致 `JSPContext.sqlExecWithOneParam` 功能无法正常运行的问题。(NEO-50066)
 * 修复了在个性化字段中使用不可打印字符时导致投放失败的问题。 (NEO-48588)
 * 修复了在插入Adobe Target动态图像时可能导致投放错误的问题。 (NEO-62689)
-* 修复了在投放中使用条件内容时阻止浏览器添加额外空格的问题。 (NEO-62132)
-* 修复了在电子邮件内容编辑器中单击图像时导致弹出窗口打开的问题。 (NEO-60752)
-* 修复了在编辑投放内容时可能导致错误并阻止滚动的问题。 (NEO-61364)
+* 修复了在投放中使用条件内容时导致浏览器无法添加额外空格的问题。(NEO-62132)
+* 修复了在电子邮件内容编辑器中单击图像时导致打开弹出窗口的问题。(NEO-60752)
+* 修复了在编辑投放内容时可能导致出现错误且无法滚动的问题。(NEO-61364)

@@ -1,11 +1,11 @@
 ---
 title: Campaign v8 发行说明
 description: 最新 Campaign v8 版本
-feature: Overview
+feature: Release Notes
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: c4a1539f140e85e1e8c97f743f9c6c0bba52e4de
+source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
 workflow-type: tm+mt
 source-wordcount: '1489'
 ht-degree: 55%
@@ -80,7 +80,7 @@ These max throughput performances have been measured by Adobe testing teams, in 
 
 * 您现在可以利用Adobe Experience Platform目标连接在Adobe Experience Platform和Campaign v8数据库之间同步配置文件属性，例如选择退出数据。
 * 已跨所有渠道优化投放准备。
-* 除了现有的用户/密码身份验证方法之外，还为SFTP外部帐户添加了基于密钥的新身份验证选项。 用户现在可以使用私钥安全地进行身份验证，从而增强安全性并为SFTP访问提供替代身份验证机制。 在[此章节](../config/external-accounts.md)中了解更多信息。
+* 除了现有的用户/密码身份验证方法之外，还为SFTP外部帐户添加了基于密钥的新身份验证选项。 用户现在可以使用私钥安全地进行身份验证，从而增强安全性并为SFTP访问提供替代身份验证机制。 可在[此部分](../config/external-accounts.md)中了解详情。
 
 **安全性增强**
 

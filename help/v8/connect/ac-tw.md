@@ -2,16 +2,17 @@
 title: 使用Campaign和Twitter
 description: 了解如何将Campaign环境与Twitter集成
 role: User, Admin
+feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1062'
 ht-degree: 4%
 
 ---
 
-# 使用Campaign和Twitter{#tw-ac-ovv}
+# 使用Campaign和Twitter {#tw-ac-ovv}
 
 此 **管理社交网络（社交营销）** 通过Twitter，您可以与客户进行互动。 使用此功能可以：
 

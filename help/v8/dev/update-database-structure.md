@@ -1,17 +1,18 @@
 ---
 title: 更新数据库结构
 description: 更新数据库结构
+feature: Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: fc64f3ca-67f1-47b7-b154-9c9dd044192c
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 0%
 
 ---
 
-# 更新数据库结构{#updating-the-database-structure}
+# 更新数据库结构 {#updating-the-database-structure}
 
 要应用对架构所做的修改，请启动数据库更新向导。 此助理可通过以下方式访问： **[!UICONTROL Tools > Advanced > Update database structure]**. 它检查数据库的物理结构是否与其逻辑描述匹配，并执行SQL更新脚本。
 

@@ -3,8 +3,10 @@ product: campaign
 title: SQL 代码和 JavaScript 代码
 description: 了解有关SQL和JavaScript代码工作流活动的更多信息
 feature: Workflows
+Role: User
+Level: Experienced
 exl-id: 8c385847-a320-4cd9-9048-2bf9daf2ee07
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 10%

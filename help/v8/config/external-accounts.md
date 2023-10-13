@@ -1,11 +1,11 @@
 ---
 title: Campaign外部帐户
 description: Campaign外部帐户
-feature: Application Settings
+feature: Application Settings, External Account
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1085'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 ---
 
 
-# 配置外部帐户
+# 配置外部帐户 {#config-external-accounts}
 
 Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系统的连接，您可以创建新的外部帐户。
 
@@ -31,7 +31,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 >* 在上下文中 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，特定 **[!UICONTROL Full FDA]** (ffda)外部帐户管理Campaign本地数据库与云数据库之间的连接([!DNL Snowflake])。
 >
 
-## Campaign特定的外部帐户
+## Campaign特定的外部帐户 {#ac-external-accounts}
 
 Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
@@ -91,7 +91,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
 在事务型消息的上下文中，执行实例将链接到控制实例并将它们连接起来。 将事务性消息模板部署到执行实例。 在中了解有关消息中心架构的更多信息 [此页面](../architecture/architecture.md#transac-msg-archi).
 
-## 访问外部系统外部帐户
+## 访问外部系统外部帐户 {#external-syst-external-accounts}
 
 * **外部数据库（联合数据访问）** - **外部数据库** 类型外部帐户用于通过联合数据访问(FDA)连接到外部数据库。 要了解有关联合数据访问(FDA)选项的更多信息，请参阅 [本节](../connect/fda.md).
 
@@ -99,7 +99,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
 * **twitter** - **twitter** type external account用于将Campaign连接到您的twitter帐户，以代表您发布消息。 在中了解有关Twitter集成的更多信息 [本节](../connect/ac-tw.md).
 
-## Adobe解决方案集成外部帐户
+## Adobe解决方案集成外部帐户 {#adobe-integration-external-accounts}
 
 * **Adobe Experience Cloud** - **[!UICONTROL Adobe Experience Cloud]** 外部帐户用于实施AdobeIdentity Management服务(IMS)以连接到Adobe Campaign。 在中了解有关AdobeIdentity Management服务(IMS)的更多信息 [本节](../start/connect.md#logon-to-ac).
 
@@ -108,13 +108,13 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 * **Adobe Experience Manager** - **[!UICONTROL AEM]** 外部帐户允许您直接在Adobe Experience Manager中管理电子邮件投放和表单的内容。 在中详细了解Adobe Campaign - Adobe Analytics集成 [此页面](../connect/ac-aem.md).
 
 
-## CRM连接器外部帐户
+## CRM连接器外部帐户 {#crm-external-accounts}
 
 * **Microsoft Dynamics CRM** - **[!UICONTROL Microsoft Dynamics CRM]** 外部帐户允许您将Microsoft Dynamics数据导入和导出到Adobe Campaign。 在中详细了解Adobe Campaign - Microsoft Dynamics CRM集成 [此页面](../connect/ac-ms-dyn.md).
 
 * **Salesforce.com** - **[!UICONTROL Salesforce CRM]** 外部帐户允许您将Salesforce数据导入和导出到Adobe Campaign中。 详细了解Adobe Campaign - Salesforce.com CRM集成，位于 [此页面](../connect/ac-sfdc.md).
 
-## 传输数据外部帐户
+## 传输数据外部帐户 {#transfer-data-external-accounts}
 
 这些外部帐户可用于通过以下方式将数据导入或导出到Adobe Campaign **[!UICONTROL Transfer file]** 工作流活动。 了解有关 **文件传输** 在的工作流中 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html).
 

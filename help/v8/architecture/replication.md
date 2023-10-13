@@ -5,16 +5,16 @@ feature: Workflows, FFDA
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 5%
 
 ---
 
-# 技术工作流和数据复制
+# 技术工作流和数据复制 {#wf-data-replication}
 
-## 技术工作流{#tech-wf}
+## 技术工作流 {#tech-wf}
 
 在上下文中 [企业(FFDA)部署](enterprise-deployment.md)，Adobe Campaign附带一组内置的技术工作流。 技术工作流在服务器上定期执行进程或作业。
 
@@ -37,7 +37,7 @@ ht-degree: 5%
 
 如果需要，您可以手动启动数据同步。 要执行此操作，请右键单击 **计划程序** 活动和选择 **立即执行挂起的任务**.
 
-## 数据复制{#data-replication}
+## 数据复制 {#data-replication}
 
 某些内置表从Campaign本地数据库复制到 [!DNL Snowflake] 通过上述专用工作流访问云数据库。
 
@@ -46,7 +46,7 @@ ht-degree: 5%
 >[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
 
 
-### 数据复制策略{#data-replication-policies}
+### 数据复制策略 {#data-replication-policies}
 
 复制策略基于表的大小。 有些表将实时复制，有些表将每小时复制一次。 某些表将具有增量更新，而其他表将被替换。
 

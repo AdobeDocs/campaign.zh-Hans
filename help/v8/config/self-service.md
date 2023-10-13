@@ -1,18 +1,18 @@
 ---
 title: Campaign 控制面板
 description: Campaign 控制面板入门
-feature: Control Panel
+feature: Control Panel, Monitoring
 role: User, Admin
 level: Beginner, Intermediate
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 95%
 
 ---
 
-# Campaign 控制面板
+# Campaign 控制面板 {#ac-control-panel}
 
 Campaign 控制面板允许管理每个实例的设置并跟踪使用情况，从而帮助 Adobe Campaign 产品管理员提高工作效率。其直观的界面可让您轻松监控关键资产的使用情况，并执行管理任务，如将 IP 地址添加到允许列表、SFTP 存储监控、密钥管理等。
 
@@ -26,19 +26,19 @@ Campaign 控制面板允许管理每个实例的设置并跟踪使用情况，�
 
 ![](../assets/do-not-localize/book.png) 了解详情，请参阅 [Campaign控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans){target="_blank"}.
 
-## 如何访问控制面板？
+## 如何访问控制面板？ {#ac-control-panel-access}
 
 可直接从 Adobe Experience Cloud 访问控制面板。仅管理员用户可以访问。[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=zh-Hans){target="_blank"}以了解更多信息。
 
-## 控制面板常见问题解答
+## 控制面板常见问题解答 {#ac-control-faq}
 
 [单击此处](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#control-panel){target="_blank"}以访问 Campaign 控制面板常见问题解答。
 
-## SFTP 管理
+## SFTP 管理 {#ac-control-sftp}
 
 在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。您可以监测它们的存储容量、管理允许列表上的 IP 地址和公共 SSH 密钥。[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=zh-Hans#sftp-management){target="_blank"}以了解更多信息。
 
-## 子域和证书
+## 子域和证书 {#ac-control-subdomain}
 
 了解如何监测子域及其证书。
 

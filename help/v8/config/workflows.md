@@ -5,7 +5,7 @@ feature: Workflows
 role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: b323dbf9504e39cca78f7082089b864544ee1633
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1570'
 ht-degree: 4%
@@ -25,7 +25,7 @@ ht-degree: 4%
 * 自动报告发送
 * 触发的事件
 
-## 设计和使用工作流{#gs-ac-wf}
+## 设计和使用工作流 {#gs-ac-wf}
 
 使用Adobe Campaign工作流从创建区段、准备消息到投放，提高营销活动各个方面的速度和规模。
 

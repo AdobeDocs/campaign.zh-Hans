@@ -1,11 +1,11 @@
 ---
 title: Campaign架构入门
 description: 了解有关环境和部署的基础知识，包括如何报告 Campaign 环境。
-feature: Overview
+feature: Architecture, Deployment
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1004'
 ht-degree: 10%

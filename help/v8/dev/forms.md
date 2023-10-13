@@ -1,18 +1,18 @@
 ---
 title: Campaign输入表单
 description: 了解如何自定义输入表单
-feature: Web Forms
+feature: Web Forms, Landing Pages
 role: Developer
 level: Beginner, Intermediate, Experienced
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '2552'
 ht-degree: 0%
 
 ---
 
-# 输入表单入门{#gs-ac-forms}
+# 输入表单入门 {#gs-ac-forms}
 
 创建或扩展架构时，需要创建或修改关联的输入表单，以使最终用户能够看到这些更改。
 

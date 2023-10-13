@@ -1,11 +1,11 @@
 ---
 title: 使用Campaign模式
 description: 架构入门
-feature: Schema Extension
+feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1262'
 ht-degree: 5%
@@ -194,7 +194,7 @@ For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-f
 
 ## 属性（字段） {#attributes--fields-}
 
-属性允许您定义组成数据对象的字段。 您可以使用 **[!UICONTROL Insert]** 模式版工具栏中的按钮，将空属性模板拖放到光标所在的XML中。 在[此章节](create-schema.md)中了解更多信息。
+属性允许您定义组成数据对象的字段。 您可以使用 **[!UICONTROL Insert]** 模式版工具栏中的按钮，将空属性模板拖放到光标所在的XML中。 可在[此部分](create-schema.md)中了解详情。
 
 ![](assets/schemaextension_2.png)
 

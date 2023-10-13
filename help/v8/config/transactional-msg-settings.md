@@ -5,14 +5,14 @@ feature: Transactional Messaging
 role: Admin, Developer
 level: Intermediate, Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 5%
 
 ---
 
-# 事务性消息设置
+# 事务性消息设置 {#mc-settings}
 
 事务性消息（消息中心）是用于管理触发消息的Campaign模块。 在中了解有关事务型消息传递的更多信息 [本节](../send/transactional.md).
 
@@ -20,15 +20,15 @@ ht-degree: 5%
 
 ![](../assets/do-not-localize/speech.png) 作为托管Cloud Service用户， [联系人Adobe](../start/campaign-faq.md#support) 要在环境中安装和配置Campaign事务型消息传递，请执行以下操作：
 
-## 定义权限
+## 定义权限 {#mc-permissions}
 
 要为托管在Adobe云上的消息中心执行实例创建新用户，您需要联系Adobe客户关怀部门。 消息中心用户是特定的操作员，需要专用权限才能访问“实时事件”(nmsRtEvent)文件夹。
 
-## 架构扩展
+## 架构扩展  {#mc-schema-ext}
 
 在使用的架构上进行的所有架构扩展 [消息中心技术工作流](#technical-workflows) 需要在Adobe Campaign事务性消息传递模块使用的其他实例上复制控制实例或执行实例。
 
-## 发送事务性推送通知
+## 发送事务性推送通知 {#mc-transactional-push}
 
 当与 [移动应用程序渠道模块](../send/push.md)、事务型消息传递允许您通过移动设备上的通知推送事务型消息。
 
@@ -59,7 +59,7 @@ ht-degree: 5%
          <urn:domEvent>
 
               <rtEvent wishedChannel="41" type="DELIVERY" registrationToken="2cefnefzef758398493srefzefkzq483974">
-                <mobileApp _operation=”none” uuid="com.adobe.NeoMiles"/>
+                <mobileApp _operation="none" uuid="com.adobe.NeoMiles"/>
                 <ctx>
                     <deliveryTime>1:30 PM</deliveryTime>
                     <url>http://www.adobe.com</url>
@@ -71,8 +71,6 @@ ht-degree: 5%
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```
-
-
 
 ## 清除事件 {#purge-events}
 

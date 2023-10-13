@@ -1,18 +1,18 @@
 ---
 title: Campaign FFDA部署入门
 description: Campaign FFDA部署入门
-feature: Architecture, FFDA
+feature: Architecture, FFDA, Deployment
 role: Admin, Developer, User
 level: Beginner, Intermediate, Experienced
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
-source-git-commit: 51bba0a2b4be03577f508d352fc7c2b514ba28e5
+source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 54%
 
 ---
 
-# [!DNL Campaign] FFDA部署{#gs-ac-ffda}
+# [!DNL Campaign] FFDA部署 {#gs-ac-ffda}
 
 利用 [[!DNL Snowflake]](https://www.snowflake.com/)Adobe Campaign企业完全联合访问(FFDA)部署是一项云数据库技术，它大幅提升了其规模和速度，能够管理更多的客户档案，并且可实现更高的投放率和每小时事务处理量。
 

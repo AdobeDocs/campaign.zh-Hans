@@ -5,9 +5,9 @@ description: 了解有关数据加载（文件）工作流活动的更多信息
 feature: Workflows, Data Management Activity
 role: User
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: d946d4a50a4fc13e848b22ee87b02a10b7dfd2ad
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1060'
 ht-degree: 14%
 
 ---
@@ -51,6 +51,10 @@ ht-degree: 14%
 常规文件格式允许您定义识别列的方式（文件编码、使用的分隔符等）。
 
 利用列格式，可定义每个列的值处理：
+
+>[!NOTE]
+>
+>您可以根据需要添加任意数量的列。 每列中值的最大长度由所选的数据类型决定。
 
 * **[!UICONTROL Ignore column]**：在数据加载过程中不处理此列。
 * **[!UICONTROL Data type]**：指定每个列所需的数据类型。

@@ -5,10 +5,10 @@ feature: Audiences, Profiles
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5256fc15-1878-4064-9c75-7876a3826b83
-source-git-commit: db27abf860b0744a4120166c68e2cc2ae8a3d172
+source-git-commit: 4c787abbf9b13c08263e602930bc532d73e08a5a
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 4%
+source-wordcount: '379'
+ht-degree: 5%
 
 ---
 
@@ -32,6 +32,8 @@ Adobe Campaign附带以下内置目标映射：
 | 访客订阅 | 向订阅了信息服务的访客投放 | nms：visitorSub |
 | 运算符 | 交付给Adobe Campaign操作员 | nms：operator |
 | 外部文件 | 通过包含投放所需所有信息的文件投放 | 无链接架构，未输入目标 |
+| 订阅者申请 | 投放到订阅了应用程序的收件人 | nms：appSubscriptionRcp |
+
 
 ## 创建目标映射 {#new-mapping}
 

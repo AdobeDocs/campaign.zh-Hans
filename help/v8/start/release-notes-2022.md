@@ -2,10 +2,10 @@
 title: Campaign v8 2022 发行说明
 description: 2022 Campaign v8 版本的功能和改进列表
 feature: Release Notes
-role: Admin, Developer, User
-level: Beginner, Intermediate, Experienced
+role: User
+level: Beginner
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
-source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '1839'
 ht-degree: 94%
@@ -97,7 +97,7 @@ _2022 年 9 月 30 日_
 **修补程序**
 
 * 修复了当 FeatureFlag_GZIP_Compression 选项启用时，MID 实例上的投放日志状态更新受到影响的问题。(NEO-49183)
-* 修复了即使联系日期已到，仍可能导致投放停留在&#x200B;**待定**&#x200B;状态的问题。(NEO-48079)
+* 修复了即使联系日期已到，仍可能导致投放停留在&#x200B;**待处理**&#x200B;状态的问题。(NEO-48079)
 * 修复了工作流中存在的问题，此问题可能导致在使用&#x200B;**数据加载（文件）**&#x200B;活动时，文件无法在服务器上完成更新。该流程的进度停留在 100%，但无法结束。(NEO-47269)
 * 修复了在日语环境中升级后出现的问题。(NEO-46640)
 * 修复了在 MTA 进程中投放达到具体某个大小时可能会发生的问题。(NEO-46097)

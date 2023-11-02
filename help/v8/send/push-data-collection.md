@@ -3,9 +3,10 @@ title: 使用Adobe Campaign发送推送通知
 description: Campaign中的推送通知入门
 feature: Push
 role: Data Engineer
-level: Beginner
+level: Intermediate
 badge: label="有限可用性" type="Informative"
-source-git-commit: 441310dc1cdcb96296c0cbe5bf3fb7cd1502709f
+exl-id: 0f22b17c-ed01-4add-8300-8689b8a9f963
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '1389'
 ht-degree: 1%

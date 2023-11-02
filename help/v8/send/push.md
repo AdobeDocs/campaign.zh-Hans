@@ -2,10 +2,10 @@
 title: 使用Adobe Campaign发送推送通知
 description: Campaign中的推送通知入门
 feature: Push
-role: Data Engineer
+role: User
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: d941d9a364ffb2df77ba6726e655ca2916448f89
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 5%

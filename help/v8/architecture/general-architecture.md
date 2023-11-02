@@ -2,10 +2,10 @@
 title: 一般架构
 description: 详细了解 Adobe Campaign 架构和组件。详细了解使您的客户端控制台和环境个性化。
 feature: Architecture, Deployment
-role: Admin, Developer, User
-level: Beginner, Intermediate, Experienced
+role: Admin, Developer
+level: Beginner
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '1129'
 ht-degree: 7%

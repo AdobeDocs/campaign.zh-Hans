@@ -4,24 +4,22 @@ title: 推送通知渠道即将更改
 description: 推送通知渠道即将更改
 hide: true
 hidefromtoc: true
-source-git-commit: 11330ed8e79ec256b158747914f178b8b6857a33
+source-git-commit: 70d1e7336cce7660890b13def5efcb614c0dc12e
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 1%
+source-wordcount: '699'
+ht-degree: 2%
 
 ---
 
 # 推送通知渠道即将更改 {#push-upgrade}
 
-本页介绍即将更改的Adobe Campaign Classic中通过Firebase Cloud Messaging的推送通知渠道。
+Firebase Cloud Messaging (FCM)服务存在重要更改，这些更改可能会影响您的Adobe Campaign Classic实施。
 
-对Firebase Cloud Messaging (FCM)服务所做的哪些重要更改可能会影响您的Adobe Campaign Classic实施。
-
-作为Google不断努力改进其服务的一部分，旧版FCM API将于2024年6月停止使用(Firebase Cloud Messaging HTTP协议：https://firebase.google.com/docs/cloud-messaging/http-server-ref)
+作为Google不断努力改进其服务的一部分，旧版FCM API将于2024年6月停用([Firebase Cloud Messaging HTTP协议](https://firebase.google.com/docs/cloud-messaging/http-server-ref))
 
 这些API当前与Adobe Campaign Classic集成以发送推送通知消息。 我们了解到，像您这样的许多客户都依赖这些服务来满足您的营销活动和通信需求，尤其是对于Android设备而言。
 
-## 这对您有何影响？
+## 您是否受影响？
 
 * **HTTP（旧版）API用户**：如果您的任何活动推送通知营销活动使用HTTP（旧版） API，则您的设置将直接受到此更改的影响。 我们强烈建议您查看当前配置，并为迁移到较新API做准备。
 
@@ -35,7 +33,7 @@ ht-degree: 1%
 
 * **支持**：我们的客户支持团队将在整个过渡过程中协助您。 我们还可能主办网络研讨会和支持会议，以涵盖过渡的技术方面和最佳实践。
 
-## 这对您有何影响？
+## 我们期望你做什么？
 
 * **随时了解最新信息**：密切关注您的收件箱，以便我们进一步通信，包括详细的过渡计划。
 
@@ -53,7 +51,7 @@ ht-degree: 1%
 
 ### 内部版本升级
 
-* Campaign Classic： AC7 20.3.1版本中添加了对HTTPv1的支持。 如果您使用的是以前的版本，则必须首先升级到最新的Campaign Classic内部版本。
+* Campaign Classic： 20.3.1版本中添加了对HTTPv1的支持。 如果您使用的是以前的版本，则必须首先升级到最新的Campaign Classic内部版本。
 
 * Campaign v8：所有Campaign v8版本都支持HTTPv1。 无需升级。
 

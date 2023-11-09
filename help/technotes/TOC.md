@@ -5,10 +5,10 @@ type: Event
 title: Adobe Campaign技术说明
 description: Campaign技术说明
 breadcrumb-title: Campaign技术说明
-source-git-commit: 47fc1ee7e0a1cb96d66151cf79137c80ef2d67d5
+source-git-commit: 11330ed8e79ec256b158747914f178b8b6857a33
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 25%
+source-wordcount: '61'
+ht-degree: 22%
 
 ---
 
@@ -25,4 +25,5 @@ ht-degree: 25%
    + [Internet 浏览器](upgrades/browsers.md)
    + [2023 年系统升级](upgrades/tech-stack-upgrade.md)
    + [客户端控制台32位弃用](upgrades/console.md)
+   + [推送通知渠道即将更改](upgrades/push-technote.md)
 + [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)

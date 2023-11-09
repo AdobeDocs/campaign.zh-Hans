@@ -1,13 +1,13 @@
 ---
 title: Campaign电子邮件发送基础架构升级
 description: Campaign电子邮件发送基础架构升级
-source-git-commit: 4478c4b4b1eb3697ff03acfcd618ebfb1d875df9
+exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
+source-git-commit: 557a74dbfbd0af385cc5104801ce3ab91dd33a95
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 2%
 
 ---
-
 
 # Campaign电子邮件发送基础架构升级 {#migrate-infra-to-aws}
 
@@ -64,4 +64,4 @@ ht-degree: 2%
 
   没有。我们无法容纳对现有计划请求的任何修改，因为这样可能会中断为其他客户分配的升级事件。
 
-对于任何其他问题，您可以联系 [Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+对于任何其他问题，您可以联系 [Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}..

@@ -4,7 +4,7 @@ title: 推送通知渠道即将更改
 description: 推送通知渠道即将更改
 hide: true
 hidefromtoc: true
-source-git-commit: 9ff84e523e7de6f1d6bb4e8cd193d19743fcf90c
+source-git-commit: fc274e1266d37611c8781a007ccb6a293a683c21
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 1%
@@ -49,11 +49,8 @@ Adobe Campaign Classic v7和Adobe Campaign v8已支持用于发送推送通知�
 要将环境迁移到HTTP v1，请在营销和实时执行服务器上执行以下步骤：
 
 1. 浏览到您的列表 **服务和订阅**.
-
 1. 使用找到所有移动应用程序 **HTTP（旧版）** api版本。
-
 1. 对于这些移动设备应用程序中的每一个，设置 **API版本** 到 **HTTP v1**.
-
 1. 单击 **[!UICONTROL Load project json file to extract project details...]** 用于直接加载JSON密钥文件的链接。
 
    您还可以手动输入以下详细信息：
@@ -64,9 +61,7 @@ Adobe Campaign Classic v7和Adobe Campaign v8已支持用于发送推送通知�
    ![](assets/android-http-v1-config.png)
 
 1. 单击 **[!UICONTROL Test the connection]** 以检查您的配置是否正确，以及营销服务器是否有权访问FCM。 请注意，对于中间源部署， **[!UICONTROL Test connection]** 按钮无法检查服务器是否有权访问Android Firebase Cloud Messaging (FCM)服务。
-
 1. 作为一个选项，您可以使用一些来扩充推送消息内容 **[!UICONTROL Application variables]** 如果需要。 这些都是完全可自定义的，并且是发送到移动设备的消息有效负载的一部分。
-
 1. 单击 **[!UICONTROL Finish]**，然后单击 **[!UICONTROL Save]**。
 
 以下是FCM有效负荷名称，用于进一步个性化您的推送通知。 这些选项是详细的 [此处](#fcm-apps).

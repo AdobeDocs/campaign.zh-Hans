@@ -4,9 +4,9 @@ title: 推送通知渠道即将更改
 description: 推送通知渠道即将更改
 hide: true
 hidefromtoc: true
-source-git-commit: 4072421cd8f0f3ab3b15c4a475428a59503aa955
+source-git-commit: 9ff84e523e7de6f1d6bb4e8cd193d19743fcf90c
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '772'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ Adobe Campaign Classic v7和Adobe Campaign v8已支持用于发送推送通知�
 
 1. 单击 **[!UICONTROL Finish]**，然后单击 **[!UICONTROL Save]**。
 
-以下是FCM有效负荷名称，用于进一步个性化您的推送通知：
+以下是FCM有效负荷名称，用于进一步个性化您的推送通知。 这些选项是详细的 [此处](#fcm-apps).
 
 | 消息类型 | 可配置消息元素（FCM有效负荷名称） | 可配置选项（FCM有效负荷名称） |
 |:-:|:-:|:-:|
@@ -79,7 +79,7 @@ Adobe Campaign Classic v7和Adobe Campaign v8已支持用于发送推送通知�
 
 >[!NOTE]
 >
->切换到HTTP v1 API适用于所有新投放。 正在重试、正在进行和正在使用的投放仍使用HTTP（旧版）API。
+>一旦在所有服务器中应用了这些更改，则交付到Android设备的所有新推送通知都将使用HTTP v1 API。 正在重试、进行中和正在使用的现有推送投放仍使用HTTP（旧版）API。
 
 ### 这对我的Android应用程序有何影响？ {#fcm-apps}
 
@@ -89,6 +89,7 @@ Adobe Campaign Classic v7和Adobe Campaign v8已支持用于发送推送通知�
 
 ![](assets/android-push-additional-options.png)
 
+您可以：
 
 * 使用 **[!UICONTROL Ticker]** 用于设置通知的滚动条文本的字段。
 * 使用 **[!UICONTROL Image]** 用于设置要在通知中显示的图像URL的字段。

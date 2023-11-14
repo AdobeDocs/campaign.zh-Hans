@@ -4,90 +4,98 @@ title: 推送通知渠道即将更改
 description: 推送通知渠道即将更改
 hide: true
 hidefromtoc: true
-source-git-commit: 70d1e7336cce7660890b13def5efcb614c0dc12e
+source-git-commit: 4072421cd8f0f3ab3b15c4a475428a59503aa955
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 2%
+source-wordcount: '753'
+ht-degree: 1%
 
 ---
 
 # 推送通知渠道即将更改 {#push-upgrade}
 
-Firebase Cloud Messaging (FCM)服务存在重要更改，这些更改可能会影响您的Adobe Campaign Classic实施。
+您可以使用Campaign在Android设备上发送推送通知。 为此，Campaign依赖于特定的Android外部帐户和订阅服务。 Android Firebase Cloud Messaging (FCM)服务的一些重要更改将于2024年发布，可能会影响Adobe Campaign实施。
 
-作为Google不断努力改进其服务的一部分，旧版FCM API将于2024年6月停用([Firebase Cloud Messaging HTTP协议](https://firebase.google.com/docs/cloud-messaging/http-server-ref))
+## 更改了哪些内容？ {#fcm-changes}
 
-这些API当前与Adobe Campaign Classic集成以发送推送通知消息。 我们了解到，像您这样的许多客户都依赖这些服务来满足您的营销活动和通信需求，尤其是对于Android设备而言。
+作为Google持续努力改进其服务的一部分，旧版FCM API将在以下日期停用 **2024年6月20日**. 在中了解有关Firebase云消息HTTP协议的更多信息 [Google文档](https://firebase.google.com/docs/cloud-messaging/http-server-ref){target="_blank"}.
 
-## 您是否受影响？
+Adobe Campaign Classic v7和Adobe Campaign v8已支持用于发送推送通知消息的最新API。 但是，某些旧实施仍依赖旧版API。 必须更新这些实施。
 
-* **HTTP（旧版）API用户**：如果您的任何活动推送通知营销活动使用HTTP（旧版） API，则您的设置将直接受到此更改的影响。 我们强烈建议您查看当前配置，并为迁移到较新API做准备。
+## 您是否受影响？ {#fcm-impact}
 
-* **HTTP v1 API用户的好消息**：如果您的设置专门将HTTP v1 API用于Android推送通知，则表明您已经符合要求，无需执行进一步操作。
+如果您当前的实施支持使用旧版API连接到FCM的订阅服务，则您会受到影响。 为了避免任何服务中断，必须迁移到最新API。 在这种情况下，Adobe团队将会与您联系。
 
-## 我们在做什么？
+要检查您是否受到影响，您可以筛选 **服务和订阅** 根据以下过滤器：
 
-* **过渡计划**：我们的团队正在积极制定全面的过渡计划。 这将确保您可以根据需要将实施更新到Adobe Campaign最新版本中已提供的新FCM API，并且将对营销活动造成的中断降至最低。
+![](assets/filter-services-fcm.png)
 
-* **详细说明**：我们将提供分步指南和其他资源，以促进顺利过渡过程。
 
-* **支持**：我们的客户支持团队将在整个过渡过程中协助您。 我们还可能主办网络研讨会和支持会议，以涵盖过渡的技术方面和最佳实践。
+* 如果您的任何活动推送通知营销活动利用 **HTTP（旧版）** API，您的设置将直接受到此更改的影响。 您必须按照以下所述查看当前配置并迁移到较新的API。
 
-## 我们期望你做什么？
+* 如果您的设置仅使用 **HTTP v1** API用于Android推送通知，则您已符合要求，无需执行进一步操作。
 
-* **随时了解最新信息**：密切关注您的收件箱，以便我们进一步通信，包括详细的过渡计划。
+## 如何迁移？{#fcm-migration-procedure}
 
-* **查看当前设置**：利用此时间来查看Adobe Campaign Classic中的当前配置和自定义，以便根据需要做好进行任何必要更改的准备。
+### 先决条件{#fcm-migration-prerequisites}
 
-* **联系我们**：如果您有任何紧迫的疑虑或问题，请随时联系我们的支持团队。
+* 对于Campaign Classicv7,20.3.1版本中添加了对HTTP v1的支持。 如果您的环境运行在旧版本上，则迁移到HTTP v1的先决条件是将您的环境升级到 [最新Campaign Classic版本](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. 对于Campaign v8，所有版本都支持HTTP v1。 无需升级。
 
-## 实施步骤
+* 要执行迁移，需要使用Android Firebase Admin SDK服务的帐户JSON文件将移动应用程序移动到HTTPv1。 请参阅此 [页面](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
-在接下来的几周内，我们将分享有关旧版FCM API过渡计划的更多详细信息，包括时间表和操作项。 放心，我们的主要目标是让您和您的团队尽可能顺利地进行此过渡。
+* 对于混合、托管和Managed Services部署，请联系Adobe以更新实时(RT)执行服务器。
 
-我们感谢您的合作，并感谢您对我们适应这些变化的理解。 您的成功是我们的首要任务，我们致力于支持您工作的每一步骤。
+### 迁移过程 {#fcm-migration-steps}
 
-为了让您能够预见更改，以下是将推送配置从HTTP（旧版）迁移到FCM HTTPv1 API所需的一般步骤。
+要将环境迁移到HTTP v1，请在营销和实时执行服务器上执行以下步骤：
 
-### 内部版本升级
+1. 浏览到您的列表 **服务和订阅**.
 
-* Campaign Classic： 20.3.1版本中添加了对HTTPv1的支持。 如果您使用的是以前的版本，则必须首先升级到最新的Campaign Classic内部版本。
+1. 使用找到所有移动应用程序 **HTTP（旧版）** api版本。
 
-* Campaign v8：所有Campaign v8版本都支持HTTPv1。 无需升级。
+1. 对于这些移动设备应用程序中的每一个，设置 **API版本** 到 **HTTP v1**.
 
-### 营销服务器
+1. 单击 **[!UICONTROL Load project json file to extract project details...]** 用于直接加载JSON密钥文件的链接。
 
-配置更改可由客户/合作伙伴执行。
+   您还可以手动输入以下详细信息：
+   * **[!UICONTROL Project Id]**
+   * **[!UICONTROL Private Key]**
+   * **[!UICONTROL Client Email]**
 
-1. 首先，您需要提取JSON文件。 需要Firebase Admin SDK服务的帐户JSON文件才能将移动应用程序移动到HTTPv1。 请参阅此 [页面](https://firebase.google.com/docs/admin/setup#initialize-sdk).
+   ![](assets/android-http-v1-config.png)
 
-1. 导航到您的列表 **服务和订阅**.
+1. 单击 **[!UICONTROL Test the connection]** 以检查您的配置是否正确，以及营销服务器是否有权访问FCM。 请注意，对于中间源部署， **[!UICONTROL Test connection]** 按钮无法检查服务器是否有权访问Android Firebase Cloud Messaging (FCM)服务。
 
-1. 使用HTTP（旧版）API版本找到所有移动应用程序。
+1. 作为一个选项，您可以使用一些来扩充推送消息内容 **[!UICONTROL Application variables]** 如果需要。 这些都是完全可自定义的，并且是发送到移动设备的消息有效负载的一部分。
 
-1. 对于这些移动设备应用程序中的每一个，设置 **API版本** 到HTTPv1 ，并按照 [文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android.html).
+1. 单击 **[!UICONTROL Finish]**，然后单击 **[!UICONTROL Save]**。
+
+以下是FCM有效负荷名称，用于进一步个性化您的推送通知：
+
+| 消息类型 | 可配置消息元素（FCM有效负荷名称） | 可配置选项（FCM有效负荷名称） |
+|:-:|:-:|:-:|
+| 数据消息 | N/A | validate_only |
+| 通知消息 | title，标题，正文， android_channel_id，图标，声音，标记，颜色， click_action，图像，滚动条，粘性，可见性， notification_priority，通知优先级， notification_count <br> | validate_only |
+
 
 >[!NOTE]
 >
->新投放将考虑切换到HTTPv1 API。 正在重试、进行中和正在使用的投放仍将使用HTTP（旧版）API。
+>切换到HTTP v1 API适用于所有新投放。 正在重试、正在进行和正在使用的投放仍使用HTTP（旧版）API。
 
-### 中间源服务器
-
-无需进行更改。
-
-### 实时执行服务器
-
-您需要就此联系Adobe Campaign支持。 迁移过程与营销服务器的迁移过程相同。
-
-### Android OS和Android移动应用程序
+### 这对我的Android应用程序有何影响？ {#fcm-apps}
 
 无需对Android移动应用程序的代码进行特定更改，通知行为不应发生变化。
 
-尽管如此，HTTPv1仍引入了三个新的有效负载元素：
+但是，使用HTTP v1，您可以通过以下方式进一步个性化推送通知 **[!UICONTROL HTTPV1 additional options]**.
 
-| 名称 | 默认值 |
-|---|---|
-| 粘性 | 假 |
-| 优先级 | 默认 |
-| 可见性 | 假 |
-| 粘性 | 私人 |
+![](assets/android-push-additional-options.png)
+
+
+* 使用 **[!UICONTROL Ticker]** 用于设置通知的滚动条文本的字段。
+* 使用 **[!UICONTROL Image]** 用于设置要在通知中显示的图像URL的字段。
+* 使用 **[!UICONTROL Notification Count]** 字段，用于设置直接在应用程序图标上显示的新未读信息的数量。
+* 设置 **[!UICONTROL Sticky]** 选项设置为false，以便在用户单击通知时自动将其关闭。 如果设置为true，则即使用户单击通知，也会显示通知。
+* 设置 **[!UICONTROL Notification Priority]** 通知的级别为“默认”、“最小”、“低”或“高”。
+* 设置 **[!UICONTROL Visibility]** 您向公共、私人或机密发送的通知的级别。
+
+欲知详情，请参阅 **[!UICONTROL HTTP v1 additional options]** 以及如何填写这些字段，请参阅 [FCM文档](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
+

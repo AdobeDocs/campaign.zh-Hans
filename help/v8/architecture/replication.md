@@ -5,9 +5,9 @@ feature: Workflows, FFDA
 role: Developer
 level: Intermediate
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: f807963a7640773ac18d49999b561f2f3b894d7f
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '380'
 ht-degree: 5%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 5%
 
 ### 数据复制策略 {#data-replication-policies}
 
-复制策略基于表的大小。 有些表将实时复制，有些表将每小时复制一次。 某些表将具有增量更新，而其他表将被替换。
+复制策略基于表的大小。 有些表是实时复制的，有些表是每小时复制一次。 某些表将具有增量更新，而其他表将被替换。
 
 除了内置 **复制引用表** 技术工作流，您可以在工作流中强制数据复制。
 

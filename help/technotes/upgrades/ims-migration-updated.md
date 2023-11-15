@@ -3,9 +3,9 @@ title: 将技术用户迁移到Adobe Developer控制台
 description: 了解如何将Campaign技术操作员迁移到Adobe Developer控制台上的技术帐户
 hide: true
 hidefromtoc: true
-source-git-commit: 6655a62e18ea14e8ae126dfec88a17dd04c7b488
+source-git-commit: 87d155cbc2a5c6f4cbeeadb6ae7ae8aa3166a321
 workflow-type: tm+mt
-source-wordcount: '1599'
+source-wordcount: '1580'
 ht-degree: 0%
 
 ---
@@ -19,32 +19,32 @@ ht-degree: 0%
 
 ## 您是否受影响？{#ims-impacts}
 
-所有从Campaign外部系统将API调用发送到其Campaign营销实例或实时消息中心实例的Campaign客户，都需要通过Adobe Developer控制台将技术操作员迁移到技术帐户，如下所述。
+如果您从Campaign外部的系统将API调用发送到其Campaign营销实例或实时消息中心实例，则必须通过Adobe Developer控制台将技术操作员迁移到技术帐户，如下所述。
 
 此更改适用于Campaign v8.5。
 
 
 ## 迁移过程 {#ims-migration-procedure}
 
-按照以下步骤，您将能够在Adobe Developer控制台中创建技术帐户，然后使用这些新创建的帐户能够更改在Adobe Campaign中进行API调用的所有外部系统的身份验证方法。
+按照以下步骤在Adobe Developer控制台中创建技术帐户，然后使用这些新创建的帐户能够更改在Adobe Campaign中进行API调用的所有外部系统的身份验证方法。
 
 这些步骤概述如下：
 
 * 在Adobe Developer控制台中创建项目
 * 为新创建的项目分配相应的API
 * 将所需的Campaign产品配置文件授予项目
-* 更新您的客户端API以使用新创建的技术帐户凭据
+* 更新API以使用新创建的技术帐户凭据
 * 从Campaign实例中删除旧版技术运算符
 
 ### 迁移的先决条件{#ims-migration-prerequisites}
 
-为了能够创建用于替换技术操作员的技术帐户，需要验证所有Campaign实例的Admin Console中存在正确Campaign产品配置文件的先决条件。 您可以在的Adobe控制台中了解有关产品配置文件的更多信息 [Adobe Developer控制台文档](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.
+为了能够创建技术帐户来取代技术操作员，需要验证所有Campaign实例的Admin Console中存在正确Campaign产品配置文件的先决条件。 您可以在的Adobe控制台中了解有关产品配置文件的更多信息 [Adobe Developer控制台文档](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}.
 
-对于进入消息中心实例的API调用，在升级到Campaign v8.5期间或配置实例期间应已创建产品配置文件。 此产品配置文件的名称将为：
+对于进入消息中心实例的API调用，在升级到Campaign v8.5期间或配置实例期间应已创建产品配置文件。 此产品配置文件的名称为：
 
 `campaign - <your campaign instance> - messagecenter`
 
-如果您已使用基于IMS的身份验证来使用户访问Campaign，则Admin Console中应已存在API调用所需的产品配置文件。 如果您在Campaign中为对营销实例的API调用使用自定义操作员组，则需要在Admin Console中创建该产品配置文件。
+如果您已使用基于IMS的身份验证来使用户访问Campaign，则Admin Console中应已存在API调用所需的产品配置文件。 如果您在Campaign中使用自定义运算符组来调用营销实例的API，则必须在Admin Console中创建该产品配置文件。
 
 对于其他情况，您必须联系Adobe过渡经理，以便Adobe技术团队能够将您现有的操作员组和已命名权限迁移到Admin Console中的产品配置文件。
 
@@ -67,7 +67,7 @@ For this migration, you must add below APIs in your project: **I/O Management AP
 您可以使用 **编辑项目** 按钮以重命名此项目。
 
 
-### 步骤2 — 将API添加到您的项目中{#ims-migration-step-2}
+### 步骤2 — 将API添加到您的项目中 {#ims-migration-step-2}
 
 从新创建的项目屏幕中，根据需要添加API，以便能够将此项目用作您对Adobe Campaign的API调用的技术帐户。
 
@@ -131,7 +131,7 @@ You can now add your Campaign product profile to the project, as detailed below:
 这会将您带回新创建项目的I/O管理API中的项目屏幕。 单击屏幕顶部的痕迹导航中的项目名称，可返回到项目详细信息主页。
 
 
-### 步骤6 — 验证项目设置{#ims-migration-step-6}
+### 步骤6 — 验证项目设置 {#ims-migration-step-6}
 
 请查看您的项目，确保它类似于以下内容，带有 **I/O管理API** 和 **ADOBE CAMPAIGN API** 在“产品和服务”部分中显示并 **OAuth服务器到服务器** 在“凭据”部分中。
 
@@ -203,16 +203,13 @@ You can now add your Campaign product profile to the project, as detailed below:
 
 
 
-
-
-
-### 步骤9 — （可选）在Campaign客户端控制台中更新“技术帐户”运算符 {#ims-migration-step-9}
+### 步骤9 — （可选）在Campaign客户端控制台中更新技术帐户操作员 {#ims-migration-step-9}
 
 此步骤是可选的，并且仅在营销实例中可用，不能在任何消息中心实例中使用。 如果已经为技术操作员定义了特定文件夹权限或已命名权限，但未通过分配的操作员组。 现在，您需要更新Admin Console中新创建的技术帐户用户，以授予所需的文件夹权限或命名权限。
 
 请注意，在对Campaign实例至少进行API调用后（IMS届时将在Campaign中创建用户），技术帐户用户才会存在于Adobe Campaign中。 如果您在Campaign中找不到技术用户，请确保您能够按概述成功发送API调用 [步骤7](#ims-migration-step-7).
 
-1. 要应用新的技术帐户用户所需的更改，请按电子邮件地址在Campaign客户端控制台中查找这些更改。 此电子邮件地址是在上述项目创建和身份验证步骤中创建的。
+1. 要应用新的技术帐户用户所需的更改，请按照电子邮件地址在Campaign客户端控制台中找到它们。 此电子邮件地址是在上述项目创建和身份验证步骤中创建的。
 
    您可以通过单击 **OAuth服务器到服务器** 标题位于 **凭据** 部分。
 
@@ -238,7 +235,7 @@ You can now add your Campaign product profile to the project, as detailed below:
 >新的技术操作员必须至少进行了一次要添加到Campaign客户端控制台的API调用。
 >
 
-### 步骤10 — 从Adobe Campaign中删除旧的技术操作员 {#ims-migration-step-10}
+### 步骤10 — 从Adobe Campaign中删除旧的技术运算符 {#ims-migration-step-10}
 
 在迁移所有第三方系统以将新的技术帐户用于IMS身份验证后，您可以从Campaign客户端控制台中删除旧的技术操作员。
 

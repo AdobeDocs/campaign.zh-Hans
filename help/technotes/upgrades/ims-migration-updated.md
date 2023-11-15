@@ -3,7 +3,7 @@ title: 将技术用户迁移到Adobe Developer控制台
 description: 了解如何将Campaign技术操作员迁移到Adobe Developer控制台上的技术帐户
 hide: true
 hidefromtoc: true
-source-git-commit: 4863679106dec92d6b63f63cec0911738853dc04
+source-git-commit: 6655a62e18ea14e8ae126dfec88a17dd04c7b488
 workflow-type: tm+mt
 source-wordcount: '1599'
 ht-degree: 0%
@@ -66,9 +66,10 @@ For this migration, you must add below APIs in your project: **I/O Management AP
 
 您可以使用 **编辑项目** 按钮以重命名此项目。
 
-从新创建的项目屏幕中，根据需要添加API，以便能够将此项目用作您对Adobe Campaign的API调用的技术帐户。
 
 ### 步骤2 — 将API添加到您的项目中{#ims-migration-step-2}
+
+从新创建的项目屏幕中，根据需要添加API，以便能够将此项目用作您对Adobe Campaign的API调用的技术帐户。
 
 要将API添加到项目中，请执行以下步骤：
 

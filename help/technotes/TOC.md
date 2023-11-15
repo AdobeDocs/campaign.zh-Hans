@@ -5,10 +5,10 @@ type: Event
 title: Adobe Campaign技术说明
 description: Campaign技术说明
 breadcrumb-title: Campaign技术说明
-source-git-commit: 11330ed8e79ec256b158747914f178b8b6857a33
+source-git-commit: 4863679106dec92d6b63f63cec0911738853dc04
 workflow-type: tm+mt
-source-wordcount: '61'
-ht-degree: 22%
+source-wordcount: '67'
+ht-degree: 20%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 22%
 + 升级次数{#tn-new}
    + [将用户迁移到IMS](upgrades/migrate-users-to-ims.md)
    + [将技术操作员迁移到开发人员控制台](upgrades/ims-migration.md)
+   + [将技术操作员迁移到开发人员控制台](upgrades/ims-migration-updated.md)
    + [Campaign将基础设施迁移至AWS](upgrades/migrate-to-aws.md)
    + [Campaign电子邮件发送基础架构升级](upgrades/upgrade-to-aws.md)
    + [升级Apache版本](upgrades/apache.md)

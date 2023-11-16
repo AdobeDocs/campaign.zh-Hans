@@ -3,7 +3,7 @@ title: 将技术用户迁移到Adobe Developer控制台
 description: 了解如何将Campaign技术操作员迁移到Adobe Developer控制台上的技术帐户
 hide: true
 hidefromtoc: true
-source-git-commit: 87d155cbc2a5c6f4cbeeadb6ae7ae8aa3166a321
+source-git-commit: d52744e1d798447bb6b90909607e42082f7eeaf5
 workflow-type: tm+mt
 source-wordcount: '1580'
 ht-degree: 0%

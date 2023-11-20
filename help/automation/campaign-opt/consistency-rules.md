@@ -4,9 +4,9 @@ title: 一致性规则
 description: 一致性规则
 feature: Typology Rules
 exl-id: dcb4ffcf-71e5-48a2-b0f7-42915a599652
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+source-git-commit: 8247bed87deb3fb19a01447dab180ed9c97ea96c
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '736'
 ht-degree: 4%
 
 ---
@@ -40,14 +40,14 @@ Adobe Campaign通过营销活动类型中包含的一组规则，确保通信的
    >
    >可用性行仅供参考。 如果在达到容量限制时需要排除消息，请参阅 [本节](#exclude-messages-when-capacity-limit-reached).
 
-1. 将此规则与分类关联，然后将该分类引用到您的投放以应用此容量规则。 如需详细信息，请参阅[此部分](apply-rules.md#apply-a-typology-to-a-delivery)。
+1. 将此规则与分类关联，然后将该分类引用到您的投放以应用此容量规则。 如需详细信息，请参阅[此小节](apply-rules.md#apply-a-typology-to-a-delivery)。
 1. 您可以通过规则监控消耗量 **[!UICONTROL Consumptions]** 和 **[!UICONTROL Capacity]** 选项卡。
 
    在投放中使用规则时， **[!UICONTROL Consumed]** 和 **[!UICONTROL Remaining]** 列提供了有关负载的信息，如下所示：
 
    ![](assets/campaign_opt_create_capacity_03.png)
 
-   如需详细信息，请参阅[此部分](#monitor-consumption)。
+   如需详细信息，请参阅[此小节](#monitor-consumption)。
 
 ## 定义最大负载 {#define-the-maximum-load}
 
@@ -97,7 +97,7 @@ Adobe Campaign通过营销活动类型中包含的一组规则，确保通信的
 
 ![](assets/campaign_opt_create_capacity_04.png)
 
-要处理的消息数在定义的可用性范围内平均细分。 这尤其与呼叫中心相关，因为它们每天的最大呼叫数是有限的。 如果是电子邮件投放，则 **[!UICONTROL Do not limit instantaneous delivery capacity]** 选项可让您忽略此可用性范围，并同时发送电子邮件。
+可处理的最大消息数在定义的可用性范围内平均细分。 这尤其与呼叫中心相关，因为它们每天的最大呼叫数是有限的。 如果是电子邮件投放，则 **[!UICONTROL Do not limit instantaneous delivery capacity]** 选项可让您忽略此可用性范围，并同时发送电子邮件。
 
 ![](assets/campaign_opt_create_capacity_05.png)
 

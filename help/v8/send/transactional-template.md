@@ -5,9 +5,9 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
+source-git-commit: 555e1d64ada12dc145fbba9124611e30d7746ba5
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1170'
 ht-degree: 1%
 
 ---
@@ -158,6 +158,18 @@ This information enables you to personalize message content using personalizatio
 可以通过访问每个模板中的校样 **[!UICONTROL Audit]** 选项卡。
 
 ![](assets/messagecenter_send_proof_003.png)
+
+#### 过渡自 [!DNL Campaign Classic] v7
+
+如果您是 [从Campaign Classicv7转换](../start/v7-to-v8.md)，则所有投放都将通过中间源服务器。
+
+但是，在创建事务型消息模板时，成功使用模板所需的路由是 **内部电子邮件投放**. 此路由会阻止您发送校样。
+
+因此，要发送事务型消息模板的验证，必须将路由从内部电子邮件投放更改为 **中间源路由帐户**.
+
+![](assets/messagecenter_send_proof_004.png)
+
+发送校样后，必须先将路由更改回内部电子邮件投放，然后再发布事务型消息模板。
 
 ## 发布模板 {#publish-message-template}
 

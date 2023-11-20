@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 973c799be51226510549290376f129aaeb86f6ab
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 92%
+source-wordcount: '694'
+ht-degree: 90%
 
 ---
 
@@ -37,7 +37,9 @@ Adobe Campaign Managed Cloud Services 提供了可用于进行跨渠道客户体
 
 作为之前的 [!DNL Campaign Classic] 用户，请注意，v7 的大多数功能[!DNL Campaign Classic]都可以在 [!DNL Campaign] v8 中使用，但[本节](#gs-removed)中所列的一小部分功能除外。
 
-Campaign v8依赖于 **混合架构**. 请注意，如果从 Campaign Classic v7 进行过渡，所有投放都要经过中间源服务器。因此，内部路由在 Campaign v8 中&#x200B;**不受支持**，并且已相应地禁用外部帐户。[了解详情](../architecture/architecture.md)。
+Campaign v8依赖于 **混合架构**. 请注意，如果从 Campaign Classic v7 进行过渡，所有投放都要经过中间源服务器。因此，内部路由在 Campaign v8 中&#x200B;**不受支持**，并且已相应地禁用外部帐户。
+
+![](../assets/do-not-localize/glass.png) 了解有关在从v7过渡时发送事务性消息校样的更多信息 [此页面](../send/transactional-template.md#transition-from-v7).
 
 >[!NOTE]
 >

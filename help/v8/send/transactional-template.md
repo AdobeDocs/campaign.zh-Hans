@@ -5,7 +5,7 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-source-git-commit: 555e1d64ada12dc145fbba9124611e30d7746ba5
+source-git-commit: 973c799be51226510549290376f129aaeb86f6ab
 workflow-type: tm+mt
 source-wordcount: '1170'
 ht-degree: 1%
@@ -130,7 +130,7 @@ This information enables you to personalize message content using personalizatio
 
    ![](assets/messagecenter_create_seed_7.png)
 
-### 发送验证
+### 发送验证 {#send-proof}
 
 您可以通过向之前创建的种子地址发送校样来测试消息投放。
 
@@ -159,7 +159,7 @@ This information enables you to personalize message content using personalizatio
 
 ![](assets/messagecenter_send_proof_003.png)
 
-#### 过渡自 [!DNL Campaign Classic] v7
+#### 过渡自 [!DNL Campaign Classic] v7 {#transition-from-v7}
 
 如果您是 [从Campaign Classicv7转换](../start/v7-to-v8.md)，则所有投放都将通过中间源服务器。
 

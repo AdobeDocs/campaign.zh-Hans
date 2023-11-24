@@ -1,18 +1,18 @@
 ---
-title: 了解Campaign流程和组件
-description: 了解Campaign流程和组件
+title: 了解Campaign组件和流程
+description: 了解Campaign组件和流程
 feature: Overview, Architecture, Configuration
 role: User
 level: Beginner
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 7deb5e8f646b086adec2e0652538a187e68adbee
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 1%
 
 ---
 
-# 了解Campaign流程和组件 {#components-and-processes}
+# 了解Campaign组件和流程 {#components-and-processes}
 
 Adobe Campaign是一款跨渠道营销解决方案，可自动执行电子邮件、移动设备、社交和离线营销活动。 Adobe Campaign提供了一个访问您的客户数据和配置文件的中心位置。 使用Adobe Campaign为客户编排一致的体验，跨渠道设计、执行和个性化您的营销，同时改进每个设备和接触点上的客户体验。 借助Adobe Campaign，您可以通过拖放式可视化工作流界面管理多个数据源、定义受众区段，以及规划和执行多步骤、跨渠道营销活动。
 

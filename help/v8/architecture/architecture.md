@@ -5,9 +5,9 @@ feature: Architecture, Deployment
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 16367814b53344e4cd68025dfe925cc17aac6bcf
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1032'
 ht-degree: 10%
 
 ---
@@ -32,9 +32,14 @@ Campaign可用作单个实例，每个实例代表一个完整的Campaign环境�
 
 提供了两种部署模型：
 
-* **Campaign FDA [!DNL Snowflake] 部署**
+* **Campaign FDA部署**
 
-  在 [[!DNL Snowflake] FDA部署](fda-deployment.md)， [!DNL Adobe Campaign] v8已连接到 [!DNL Snowflake] 要通过联合数据访问功能访问数据：您可以访问和处理存储在以下位置中的外部数据和信息： [!DNL Snowflake] 在不更改Adobe Campaign数据结构的情况下创建数据库。 PostgreSQL是主数据库，Snowflake是辅助数据库。 您可以扩展数据模型并将数据存储在Snowflake上。 随后，您可以对具有出色性能的大型数据集运行ETL、分段和报告。
+  在 [FDA部署](fda-deployment.md)， [!DNL Adobe Campaign] v8可以连接到 [!DNL Snowflake] 要通过联合数据访问功能访问数据：您可以访问和处理存储在以下位置中的外部数据和信息： [!DNL Snowflake] 在不更改Adobe Campaign数据结构的情况下创建数据库。 PostgreSQL是主数据库，您可以将Snowflake用作辅助数据库，以扩展数据模型并将数据存储到Snowflake中。 随后，您可以对具有出色性能的大型数据集运行ETL、分段和报告。
+
+  >[!NOTE]
+  >
+  >在此部署模型中， [!DNL Snowflake] 辅助数据库仅在请求时可用。 使用更新部署 [!DNL Snowflake]，请联系您的Adobe技术客户经理。
+  >
 
 * **Campaign Enterprise (FFDA)部署**
 

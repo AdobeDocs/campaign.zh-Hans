@@ -4,10 +4,10 @@ user-guide-title: Campaign v8
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign 概述
-source-git-commit: cb5bec3107872d4d6da83b4ddbc7cad3e9276b00
+source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
 workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -155,11 +155,10 @@ ht-degree: 92%
       + [添加文件夹权限](start/folder-permissions.md)
    + [控制面板](config/self-service.md)
 + 架构和配置 {#config}
-   + 架构 {#architecture}
+   + Campaign v8架构 {#architecture}
       + [全局原则](architecture/general-architecture.md)
-      + [架构](architecture/architecture.md)
-      + FDA Snowflake 部署 {#fda}
-         + [什么是 FDA-Snowflake？](architecture/fda-deployment.md)
+      + [架构 模型](architecture/architecture.md)
+      + [Campaign FDA部署](architecture/fda-deployment.md)
       + 企业 (FFDA) 部署{#ffda}
          + [什么是 Campaign FFDA？](architecture/enterprise-deployment.md)
          + 特征 {#ffda-characteristics}

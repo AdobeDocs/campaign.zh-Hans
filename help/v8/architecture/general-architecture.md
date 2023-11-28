@@ -5,9 +5,9 @@ feature: Architecture, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1136'
 ht-degree: 7%
 
 ---
@@ -81,7 +81,7 @@ Adobe Campaign是一个使用不同应用程序的平台，用于创建开放且
 
 ## 数据库容器 {#db-containers}
 
-Adobe Campaign云数据库依赖于 [!DNL Snowflake] ，其中包含功能数据（用户档案、订阅、内容等）、技术数据（投放作业和日志、跟踪日志等） 和解决方案的工作数据（购买、商机），以及所有Adobe Campaign组件与数据库通信以执行其特定任务。
+在 [企业(FFDA)部署](enterprise-deployment.md)，Adobe Campaign云数据库依赖于 [!DNL Snowflake] ，其中包含功能数据（用户档案、订阅、内容等）、技术数据（投放作业和日志、跟踪日志等） 和解决方案的工作数据（购买、商机），以及所有Adobe Campaign组件与数据库通信以执行其特定任务。
 
 您可以使用预定义的数据库和架构部署Adobe Campaign，如果需要，可以扩展此预定义的环境。 Adobe Campaign通过SQL调用访问数据集市中的所有数据。 Adobe Campaign还提供了提取转换和加载(ETL)工具的完整补充，用于执行数据导入和导出到系统中的数据。
 
@@ -96,6 +96,6 @@ Adobe Campaign云数据库依赖于 [!DNL Snowflake] ，其中包含功能数据
 
 ## 数据库存储 {#db-storage}
 
-总存储容量在主数据库和Snowflake仓库之间分配。 存储数据的位置应在实施或升级时确定，具体取决于客户特定的用例。
+总存储容量在主数据库和（可选）Snowflake辅助数据库之间拆分。 存储数据的位置应在实施或升级时确定，具体取决于客户特定的用例。
 
 了解如何在中监测数据库使用情况 [Campaign控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html){target="_blank"}.

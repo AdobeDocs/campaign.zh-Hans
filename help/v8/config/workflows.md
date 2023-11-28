@@ -5,7 +5,7 @@ feature: Workflows
 role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
 workflow-type: tm+mt
 source-wordcount: '1570'
 ht-degree: 4%
@@ -94,7 +94,7 @@ ht-degree: 4%
 
 了解有关 **工作流属性** 在 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/workflow-properties.html).
 
-从 **[!UICONTROL Execution]** 工作流的选项卡 **[!UICONTROL Properties]**，您可以选择将工作流链接到不同的仓库并优化工作负载管理。 有关的详细信息 **仓库**，请参阅 [Snowflake文档](https://docs.snowflake.com/en/user-guide/warehouses-overview.html).
+从 **[!UICONTROL Execution]** 工作流的选项卡 **[!UICONTROL Properties]**，您可以选择将工作流链接到不同的仓库并优化工作负载管理。 有关的详细信息 **仓库**，请参阅 [Snowflake文档](https://docs.snowflake.com/en/user-guide/warehouses-overview.html){target="_blank"}.
 
 ![](assets/warehouse.png)
 

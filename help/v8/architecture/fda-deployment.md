@@ -1,20 +1,20 @@
 ---
-title: Campaign FDASnowflake部署入门
-description: Campaign FDASnowflake部署入门
+title: Campaign FDA部署入门
+description: Campaign FDA部署入门
 feature: Architecture, Federated Data Access, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: b3df0336-f40e-4ac1-b6a4-068b8827dca2
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 16367814b53344e4cd68025dfe925cc17aac6bcf
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
 
-# [!DNL Campaign] FDA [!DNL Snowflake] 部署{#gs-fda-snowflake}
+# [!DNL Campaign] FDA部署{#gs-fda}
 
-在 [!DNL Snowflake] FDA（默认）部署， [!DNL Adobe Campaign] v8已连接到 [!DNL Snowflake] 访问数据 [联合数据访问](../connect/fda.md) 功能：您可以访问和处理存储在贵机构中的 [!DNL Snowflake] 在不更改Adobe Campaign数据结构的情况下创建数据库。
+在其Campaign FDA（默认）部署中， [!DNL Adobe Campaign] v8可以连接到 [!DNL Snowflake] 访问数据 [联合数据访问](../connect/fda.md) 功能：然后，您可以访问和处理存储在贵机构中的 [!DNL Snowflake] 在不更改Adobe Campaign数据结构的情况下创建数据库。
 
 ## 好处{#fda-benefits}
 
@@ -37,4 +37,4 @@ ht-degree: 0%
 
 ![](assets/fda-architecture.png)
 
-PostgreSQL是主数据库，Snowflake是辅助数据库。 您可以扩展数据模型并将数据存储在Snowflake上。 随后，您可以对具有出色性能的大型数据集运行ETL、分段和报告。
+PostgreSQL是主数据库，Snowflake可用作辅助数据库。 您可以扩展数据模型并将数据存储在Snowflake上。 随后，您可以对具有出色性能的大型数据集运行ETL、分段和报告。

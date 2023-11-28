@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 5c4bbbd06eb7bf6dc9ada1d08c3fc696e88ee760
+source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 91%
+source-wordcount: '910'
+ht-degree: 89%
 
 ---
 
@@ -82,7 +82,7 @@ Adobe 托管式云服务以较低的总体拥有成本为营销人员提供更�
 
 Adobe Campaign 现在可以利用云规模数据库技术显著提升其规模和速度。
 
-[Campaign v8 企业版](../architecture/enterprise-deployment.md)引入了&#x200B;**完全联合数据访问** (FFDA) 概念：所有数据现在都位于云数据库上的远程位置。凭借这种新模式，Campaign v8 简化了数据管理：云数据库上不需要索引。您只需创建表格、复制数据即可开始。[!DNL Snowflake] 是 Campaign 云数据库，它将为您带来速度和耐用性上的提升：不会出现系统活动峰值过载的情况。云数据库技术无需特定的维护来保证性能级别。
+[Campaign v8 企业版](../architecture/enterprise-deployment.md)引入了&#x200B;**完全联合数据访问** (FFDA) 概念：所有数据现在都位于云数据库上的远程位置。凭借这种新模式，Campaign v8 简化了数据管理：云数据库上不需要索引。您只需创建表格、复制数据即可开始。[!DNL Snowflake] 是Campaign云数据库，它为您带来速度和耐用性上的提升：不会出现系统活动峰值过载的情况。 云数据库技术无需特定的维护来保证性能级别。
 
 ![](../assets/do-not-localize/glass.png) [了解关于企业 (FFDA) 部署的更多信息](../architecture/enterprise-deployment.md)
 

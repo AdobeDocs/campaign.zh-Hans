@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 973c799be51226510549290376f129aaeb86f6ab
+source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 90%
+source-wordcount: '690'
+ht-degree: 84%
 
 ---
 
@@ -47,9 +47,7 @@ Campaign v8依赖于 **混合架构**. 请注意，如果从 Campaign Classic v7
 
 ## [!DNL Campaign] 和 [!DNL Snowflake] {#ac-gs-snowflake}
 
-Campaign v8 适用于 [!DNL Snowflake]。
-
-在其[企业版 (FFDA) 部署](../architecture/enterprise-deployment.md)中，[!DNL Adobe Campaign] v8 可与两个数据库配合使用：用于用户界面实时消息传递和统一查询、通过 API 写入的本地 [!DNL Campaign] 数据库，以及用于营销活动执行、批量查询和工作流执行的云端 [!DNL Snowflake] 数据库。
+在 [企业(FFDA)部署](../architecture/enterprise-deployment.md)， [!DNL Adobe Campaign] v8可与两个数据库配合使用：本地 [!DNL Campaign] 数据库用于用户界面实时消息传递和统一查询，并通过API进行编写，以及建立一个云 [!DNL Snowflake] 数据库，用于活动执行、批量查询和工作流执行。
 
 Campaign v8 企业版引入了&#x200B;**完全联合数据访问** (FFDA) 概念：所有数据现在都位于云数据库上的远程位置。凭借这种新架构，Campaign v8 企业版 (FFDA) 部署简化了数据管理：云数据库上不需要索引。您只需创建表格、复制数据即可开始。云数据库技术无需特定的维护来保证性能级别。
 

@@ -4,9 +4,9 @@ user-guide-title: Campaign v8
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign 概述
-source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
+source-git-commit: b9e4cb3cbbb5a29879146eeecf7261b59f413993
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '577'
 ht-degree: 91%
 
 ---
@@ -161,11 +161,10 @@ ht-degree: 91%
       + [Campaign FDA部署](architecture/fda-deployment.md)
       + 企业 (FFDA) 部署{#ffda}
          + [什么是 Campaign FFDA？](architecture/enterprise-deployment.md)
-         + 特征 {#ffda-characteristics}
-            + [密钥管理和唯一性](architecture/keys.md)
-            + [新 API](architecture/new-apis.md)
-            + [API 暂存机制](architecture/staging.md)
-            + [复制机制](architecture/replication.md)
+         + [密钥管理和唯一性](architecture/keys.md)
+         + [新 API](architecture/new-apis.md)
+         + [API 暂存机制](architecture/staging.md)
+         + [复制机制](architecture/replication.md)
    + 实施 {#implement}
       + [实施步骤](start/implement.md)
       + [自定义实例](dev/customize.md)

@@ -5,10 +5,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
 workflow-type: tm+mt
-source-wordcount: '1839'
-ht-degree: 94%
+source-wordcount: '1847'
+ht-degree: 91%
 
 ---
 
@@ -51,20 +51,20 @@ _2022 年 9 月 30 日_
 <table> 
 <thead>
 <tr> 
-<th> <strong>Twitter 渠道的可用性</strong><br /> </th> 
+<th> <strong>X (以前称为Twitter)渠道可用性</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
-<td> <p><a href="../send/twitter.md">Twitter 社交渠道</a>现已可在 Campaign v8 中使用。您可以：</p>
+<td> <p>此 <a href="../send/twitter.md">X社交渠道</a> 现已可在Campaign v8中使用。 您可以：</p>
 <ul> 
-<li><p>在 Twitter 上发送消息：您可以利用 Adobe Campaign 将消息直接发送到自己的 Twitter 帐户。您还可以向所有关注者发送私信。
+<li><p>在X(以前称为Twitter)上发送消息：通过Adobe Campaign，可直接将消息发送到您的X帐户。 您还可以向所有关注者发送私信。
 </p></li>
 <li><p>收集新联系人：Adobe Campaign 可自动收集用户档案数据，您可借此来开展定位营销活动，并实施跨渠道的营销策略。
 </p></li>
 </ul>
-<p>在<a href="../connect/ac-tw.md">详细文档</a>中了解如何关联 Campaign 和 Twitter。</p>
-<p>在<a href="../connect/ac-tw.md">此页面</a>中了解如何利用 Campaign 发送推文和私信。</p>
+<p>了解如何在中连接Campaign和X <a href="../connect/ac-tw.md">详细文档</a>.</p>
+<p>了解如何在中使用Campaign创建帖子并发送私信 <a href="../connect/ac-tw.md">此页面</a>.</p>
 </td> 
 </tr> 
 </tbody> 

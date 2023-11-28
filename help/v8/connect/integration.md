@@ -5,9 +5,9 @@ feature: Overview
 role: Admin, User
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '393'
 ht-degree: 11%
 
 ---
@@ -56,14 +56,14 @@ CRM连接器支持快速轻松地集成数据：Adobe Campaign提供了一个专
 
 ## 使用社交媒体{#gs-social}
 
-使用Adobe Campaign通过Twitter与客户和潜在客户进行交互。
+使用Adobe Campaign通过X (以前称为Twitter)与客户和潜在客户进行交互。
 
 您可以：
 
 * 向关注者发送私信
-* 在您的Twitter账户上发布推文
+* 在您的X帐户上发帖
 * 收集新联系人
 
-了解如何在中设置和使用Twitter集成 [此页面](../connect/ac-tw.md).
+了解如何在中设置和使用X集成 [此页面](../connect/ac-tw.md).
 
-了解如何在中创建Twitter帖子并向关注者发送私信 [此页面](../send/twitter.md).
+了解如何在中创建X帖子并向关注者发送私信 [此页面](../send/twitter.md).

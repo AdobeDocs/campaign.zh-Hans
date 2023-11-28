@@ -3,9 +3,9 @@ product: campaign
 title: 社交媒体营销
 description: 了解有关社交营销技术工作流的更多信息
 feature: Workflows
-source-git-commit: 72467caf94e652ede70c00f1ea413012fc4c7e1f
+source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '120'
 ht-degree: 18%
 
 ---
@@ -46,12 +46,12 @@ ht-degree: 18%
   <tr> 
    <td> <span class="uicontrol">计算 Twitter 统计数据</span> <br /> </td> 
    <td> <span class="uicontrol">statsTwitter</span> <br /> </td> 
-   <td> 此工作流用于计算链接到Twitter转推和访问的统计数据。<br /> </td> 
+   <td> 此工作流用于计算链接到X上的转推和访问(以前称为Twitter)的统计数据。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">同步Twitter页</span> <br /> </td> 
    <td> <span class="uicontrol">syncTwitter</span> <br /> </td> 
-   <td> 此工作流可在每天早上7点将Twitter关注者导入Adobe Campaign。<br /> </td> 
+   <td> 此工作流每天早上7:00将X关注者导入Adobe Campaign。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

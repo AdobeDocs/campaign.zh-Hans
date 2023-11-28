@@ -5,9 +5,9 @@ feature: Application Settings, External Account
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1089'
 ht-degree: 4%
 
 ---
@@ -97,7 +97,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
   与Adobe Campaign v8兼容的外部数据库列在 [兼容性矩阵](../start/compatibility-matrix.md)
 
-* **twitter** - **twitter** type external account用于将Campaign连接到您的twitter帐户，以代表您发布消息。 在中了解有关Twitter集成的更多信息 [本节](../connect/ac-tw.md).
+* **X(以前称为Twitter)** - **twitter** 类型外部帐户用于将Campaign连接到您的X帐户，以代表您发布消息。 在中了解有关X集成的更多信息 [本节](../connect/ac-tw.md).
 
 ## Adobe解决方案集成外部帐户 {#adobe-integration-external-accounts}
 

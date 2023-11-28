@@ -5,7 +5,7 @@ feature: Architecture, Deployment
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 16367814b53344e4cd68025dfe925cc17aac6bcf
+source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
 workflow-type: tm+mt
 source-wordcount: '1032'
 ht-degree: 10%
@@ -38,7 +38,7 @@ Campaign可用作单个实例，每个实例代表一个完整的Campaign环境�
 
   >[!NOTE]
   >
-  >在此部署模型中， [!DNL Snowflake] 辅助数据库仅在请求时可用。 使用更新部署 [!DNL Snowflake]，请联系您的Adobe技术客户经理。
+  >在此部署模型中， [!DNL Snowflake] 辅助数据库仅在请求时可用。 使用更新部署 [!DNL Snowflake]，请联系您的Adobe过渡经理。
   >
 
 * **Campaign Enterprise (FFDA)部署**
@@ -70,7 +70,7 @@ Campaign可用作单个实例，每个实例代表一个完整的Campaign环境�
 
 >[!IMPORTANT]
 >
->默认情况下，“拆分投放 — 电子邮件”帐户启用拆分路由模式。 对于所有其他渠道的外部帐户，请联系客户关怀团队以启用此选项。
+>默认情况下，“拆分投放 — 电子邮件”帐户启用拆分路由模式。 对于所有其他渠道外部帐户，请联系您的Adobe过渡经理以启用此选项。
 >
 >默认情况下，在多个mid之间拆分投放的阈值为100K。 您可以在的“NmsDelivery_MultiMidSplitThreshold”选项中更改此值。 **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL Options]** 菜单。
 

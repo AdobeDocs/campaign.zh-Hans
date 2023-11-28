@@ -5,9 +5,9 @@ feature: Architecture, Federated Data Access, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: b3df0336-f40e-4ac1-b6a4-068b8827dca2
-source-git-commit: 16367814b53344e4cd68025dfe925cc17aac6bcf
+source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,11 @@ ht-degree: 0%
 # [!DNL Campaign] FDA部署{#gs-fda}
 
 在其Campaign FDA（默认）部署中， [!DNL Adobe Campaign] v8可以连接到 [!DNL Snowflake] 访问数据 [联合数据访问](../connect/fda.md) 功能：然后，您可以访问和处理存储在贵机构中的 [!DNL Snowflake] 在不更改Adobe Campaign数据结构的情况下创建数据库。
+
+>[!NOTE]
+>
+>在此部署模型中， [!DNL Snowflake] 辅助数据库仅在请求时可用。 使用更新部署 [!DNL Snowflake]，请联系您的Adobe过渡经理。
+>
 
 ## 好处{#fda-benefits}
 

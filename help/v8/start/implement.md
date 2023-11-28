@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
 workflow-type: tm+mt
-source-wordcount: '1187'
-ht-degree: 100%
+source-wordcount: '1188'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 >
 >通过使用 **Campaign Managed Cloud Services**，您的环境和初始配置会由 Adobe 根据您的许可协议条款进行设置。您不可修改已安装的内置软件包、内置模式或报告。
 >
->如果您需要使用 Campaign 加载项或尚未为您配置的特定功能，那么您必须联系 **Adobe 客户关怀**&#x200B;团队。
+>如果您需要使用Campaign加载项或尚未为您配置的特定功能，则必须联系 **Adobe过渡管理器**.
 
 ## 开始前{#before-starting}
 

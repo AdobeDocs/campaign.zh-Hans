@@ -5,9 +5,9 @@ feature: Transactional Messaging
 role: Admin, Developer
 level: Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '598'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 5%
 
 ## 定义权限 {#mc-permissions}
 
-要为托管在Adobe云上的消息中心执行实例创建新用户，您需要联系Adobe客户关怀部门。 消息中心用户是特定的操作员，需要专用权限才能访问“实时事件”(nmsRtEvent)文件夹。
+要为托管在Adobe云上的消息中心执行实例创建新用户，请联系您的Adobe过渡经理。 消息中心用户是特定的操作员，需要专用权限才能访问“实时事件”(nmsRtEvent)文件夹。
 
 ## 架构扩展  {#mc-schema-ext}
 

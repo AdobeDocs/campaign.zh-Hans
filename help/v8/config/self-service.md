@@ -5,10 +5,10 @@ feature: Control Panel, Monitoring
 role: Admin
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 95%
+source-wordcount: '379'
+ht-degree: 91%
 
 ---
 
@@ -18,7 +18,7 @@ Campaign 控制面板允许管理每个实例的设置并跟踪使用情况，�
 
 主要优点：
 
-* 无需联系客户关怀团队，即可自行快速更改设置。
+* 无需联系Adobe，即可自行快速更改设置。
 * 根据不同的业务需求在不同时间配置设置。
 * 根据需要控制访问设置，从而增强安全性。
 
@@ -42,7 +42,7 @@ Campaign 控制面板允许管理每个实例的设置并跟踪使用情况，�
 
 了解如何监测子域及其证书。
 
-* [监测子域](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html?lang=zh-Hans){target="_blank"}
+* [监控子域](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-subdomains.html?lang=zh-Hans){target="_blank"}
 * [设置新子域](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hans){target="_blank"}
 * [监控子域的SSL证书](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=zh-Hans){target="_blank"}
 

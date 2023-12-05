@@ -3,16 +3,14 @@ keywords: Campaign Classic;home;popular topics
 description: Campaign v8 帮助中心
 title: Adobe Campaign v8 产品文档
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: b0f5f5b4871752651c43c6f582d0f543be7bb5bd
+source-git-commit: a242b4aad44b84cc3faf54e26a523b7f11b864ab
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 10%
+source-wordcount: '429'
+ht-degree: 5%
 
 ---
 
 # Adobe Campaign v8 文档 {#campaign-documentation}
-
-<!--![](assets/banner-documentationv8.png) -->
 
 ## 新增功能
 
@@ -46,7 +44,7 @@ Adobe测试小组已在实验室条件下测量了这些最大吞吐量性能。
 <table style="table-layout:fixed">
   <tr style="border: 0;">
     <td>
-    <a href="start/whats-new.md"><img src="assets/do-not-localize/start-capabilities.png"></a></a>
+    <a href="start/whats-new.md"><img src="assets/do-not-localize/start-capabilities.png"></a>
     <div><strong>主要功能</strong><br/>探索Adobe Campaign v8的跨渠道活动管理关键功能。</div>
     </td>
     <td>
@@ -62,6 +60,12 @@ Adobe测试小组已在实验室条件下测量了这些最大吞吐量性能。
     <div><strong>导入用户档案</strong><br/>轻松探索在Adobe Campaign v8数据库中创建用户档案。 手动或通过导入添加用户档案，轻松优化客户数据和自定义营销活动。</div>
     </td>
   </tr>
+  <tr style="border: 0;">
+    <td align="center"><a href="start/whats-new.md"><img src="using/assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="start/connect.md"><img src="using/assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="start/create-message.md"><img src="using/assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="audiences/create-profiles.md"><img src="using/assets/do-not-localize/learn-more-button.svg"></a></td>
+    </tr>
 </table>
 
 ## 浏览文档
@@ -69,40 +73,35 @@ Adobe测试小组已在实验室条件下测量了这些最大吞吐量性能。
 <table style="table-layout:auto">
   <tr style="border: 0;">
     <td>
-      <img src="assets/do-not-localize/icon-start.svg" width="70px">
-    <td>
+      <img src="assets/do-not-localize/icon-start.svg" width="35px">
+    <br/>
       <strong>入门</strong><br/><a href="start/campaign-ui.md">用户界面</a> - <a href="start/ac-components.md">组件和流程</a> - <a href="start/v7-to-v8.md">从Classic v7到v8</a> - <a href="start/campaign-faq.md">常见问题解答</a>
     </td>
     <td>
-      <img src="assets/do-not-localize/icon-experience.svg" width="70px">
-    </td>
-    <td>
+      <img src="assets/do-not-localize/icon-experience.svg" width="35px">
+    <br/>
       <strong>客户体验</strong><br/><a href="../automation/workflow/about-workflows.md" target="_blank">使用工作流实现自动化</a> - <a href="../automation/campaigns/set-up-campaigns.md" target="_blank">活动编排</a> - <a href="interaction/interaction.md">决策管理</a> - <a href="send/personalize.md">个性化</a>
     </td>
     <td>
-      <img src="assets/do-not-localize/icon-send.svg" width="70px">
-    </td>
-    <td>
+      <img src="assets/do-not-localize/icon-send.svg" width="35px">
+    <br/>
       <strong>发送消息</strong><br/><a href="start/create-message.md">入门</a> - <a href="send/preview-and-proof.md">预览和验证</a> - <a href="send/predictive.md">发送时间优化</a> - <a href="reporting/gs-reporting.md">报告和分析</a>
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
-      <img src="assets/do-not-localize/icon_profile-audience.svg" width="70px">
-    </td>
-    <td>
+      <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
+    <br/>
       <strong>用户档案和受众</strong><br/><a href="audiences/create-profiles.md">添加用户档案</a> - <a href="audiences/create-audiences.md">创建受众</a> - <a href="start/subscriptions.md">管理订阅</a> - <a href="start/privacy.md">隐私</a>
     </td>
     <td>
-      <img src="assets/do-not-localize/icon-configure.svg" width="70px">
-    </td>
-    <td>
+      <img src="assets/do-not-localize/icon-configure.svg" width="35px">
+    <br/>
       <strong>架构和配置</strong><br/><a href="architecture/architecture.md">架构</a> - <a href="start/implement.md">Campaign v8实施</a> - <a href="connect/integration.md">与其他解决方案配合使用</a> - <a href="start/gs-permissions.md">用户和权限</a>
     </td>
     <td>
-      <img src="assets/do-not-localize/icon-dev.svg" width="70px">
-    </td>
-    <td>
+      <img src="assets/do-not-localize/icon-dev.svg" width="35px">
+    <br/>
       <strong>开发人员资源</strong><br/><a href="dev/datamodel.md">Campaign v8数据模型</a> - <a href="dev/schemas.md">架构</a> - <a href="dev/api.md">API</a>
     </td>
   </tr>
@@ -110,8 +109,5 @@ Adobe测试小组已在实验室条件下测量了这些最大吞吐量性能。
 
 ## 其他资源
 
-* [Adobe Campaign v8 产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}
-* [教程](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html){target="_blank"}
-* [[!DNL Adobe Campaign] 自动化指南](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=zh-Hans){target="_blank"}
-* [Campaign v8的控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans){target="_blank"}
+[Adobe Campaign v8产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html){target="_blank"} - [[!DNL Adobe Campaign] automation guide](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=zh-Hans){target="_blank"} - [Control Panel for Campaign v8](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans){target="_blank"}
 

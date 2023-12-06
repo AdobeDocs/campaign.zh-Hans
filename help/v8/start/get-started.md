@@ -5,9 +5,9 @@ feature: Overview, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '862'
 ht-degree: 100%
 
 ---
@@ -22,13 +22,13 @@ Adobe Campaign 提供了一个跨渠道客户体验设计平台，以及用于�
 * 将电子邮件、移动设备、线上和线下渠道&#x200B;**整合**&#x200B;到客户历程中
 * **自动**&#x200B;投放有意义、及时的消息和优惠
 
-![](assets/ac-capabilities.png)
+![](assets/do-not-localize/ac-capabilities.png)
 
 ## Integrated Customer Profile {#integrated-customer-profile}
 
 用户档案集中存储在一个功能强大的云数据库中。有许多可能的机制可获取用户档案并创建此数据库：通过 Web 窗体在线收集、手动或自动导入文本文件、复制公司数据库或其他信息系统的内容。借助 Adobe Campaign，您可以整合营销历史、购买信息、偏好、CRM 数据，以及整合视图中任何相关的 PII 数据，从而进行分析并采取行动。
 
-在 Adobe　Campaign 中，收件人是发送投放内容（电子邮件、SMS 等）所定位的默认用户档案。凭借数据库中存储的收件人数据，您可以过滤将接收任何给定投放的目标并在投放内容中添加个性化数据。数据库中还有其他类型的用户档案。这些用户档案是针对不同用途而设计的。例如，种子用户档案用于在将投放内容发送给最终目标前测试该投放内容。
+在 Adobe　Campaign 中，收件人是发送投放内容（电子邮件、短信等）所定位的默认用户档案。凭借数据库中存储的收件人数据，您可以过滤将接收任何给定投放的目标并在投放内容中添加个性化数据。数据库中还有其他类型的用户档案。这些用户档案是针对不同用途而设计的。例如，种子用户档案用于在将投放内容发送给最终目标前测试该投放内容。
 
 ![](../assets/do-not-localize/glass.png) 用户档案管理基础知识在[本节](audiences.md)中有说明。
 

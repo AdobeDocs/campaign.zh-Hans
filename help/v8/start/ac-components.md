@@ -5,10 +5,10 @@ feature: Overview, Architecture, Configuration
 role: User
 level: Beginner
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: 7deb5e8f646b086adec2e0652538a187e68adbee
+source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
 workflow-type: tm+mt
 source-wordcount: '660'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ Adobe Campaign是一款跨渠道营销解决方案，可自动执行电子邮件
 
 Adobe Campaign组件和全局架构如下所述。
 
-![](assets/ac-components.png)
+![](assets/do-not-localize//ac-components.png)
 
 ### 表示层{#presentation-layer}
 
@@ -30,11 +30,11 @@ Adobe Campaign组件和全局架构如下所述。
 
 * 富客户端
 
-  Campaign富客户端是一种本机应用程序，它通过标准互联网协议（如SOAP和HTTP）与Adobe Campaign应用程序服务器进行通信。 [ 了解关于 Campaign 客户端控制台的更多信息](../start/connect.md)。
+  Campaign富客户端是一种本机应用程序，它通过标准互联网协议（如SOAP和HTTP）与Adobe Campaign应用程序服务器进行通信。 [了解有关Campaign客户端控制台的更多信息](../start/connect.md).
 
 * 瘦客户端
 
-  Adobe Campaign Web访问功能允许您使用HTML用户界面通过Web浏览器访问Campaign功能的子集。 使用此Web界面可访问报告、控制和验证消息、访问监控功能板等。  [ 了解关于 Campaign Web Access 的更多信息](../start/connect.md)。
+  Adobe Campaign Web访问功能允许您使用HTML用户界面通过Web浏览器访问Campaign功能的子集。 使用此Web界面可访问报告、控制和验证消息、访问监控功能板等。  [了解有关Campaign Web Access的更多信息](../start/connect.md).
 
 * 具有API的外部应用程序
 
@@ -58,13 +58,13 @@ Adobe Campaign v8是as a Managed Service部署的：Adobe Campaign的所有组�
 
 Campaign Web服务器控制对Campaign Web进程的访问。 Javascript是用于核心产品功能和自定义的服务器端语言。 Tomcat是后端引擎，作为Web流程的一部分嵌入到Campaign产品中。 例如，在JSP或JSSP页面中使用Javascript来呈现动态内容。
 
-![](assets/ac-processes.png)
+![](assets/do-not-localize/ac-processes.png)
 
 Campaign客户端控制台通过HTTP使用SOAP XML连接到Web服务器。 Web服务器提供安全层，使用Javascript将请求传递到应用程序层，Campaign内部进程使用SQL访问数据库。
 
 以下独立部署图说明了Campaign进程之间的整体通信：所有Campaign组件都安装在同一台计算机上。
 
-![](assets/ac-standalone.png)
+![](assets/do-not-localize//ac-standalone.png)
 
 用户使用HTTP连接到Campaign应用程序服务器。 所有数据和信息都在Campaign数据库中进行管理。 如果Campaign开发人员执行任何配置更改，则会将其捕获到数据库中。 如果营销人员创建新营销活动，则与此新营销活动相关的所有信息和数据也将在数据库中管理。 营销人员执行营销活动时，会通过SMTP服务器将电子邮件投放从Campaign服务器发送到用户档案。 当用户档案与电子邮件投放交互时（如打开电子邮件），跟踪数据会发送回跟踪服务器。
 

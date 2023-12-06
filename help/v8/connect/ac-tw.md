@@ -5,9 +5,9 @@ role: User, Admin
 feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
+source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1065'
 ht-degree: 3%
 
 ---
@@ -124,7 +124,7 @@ Campaign和X之间的同步通过专门的技术工作流进行管理。 这些�
 
 对于每个关注者，Adobe Campaign都会存储以下信息：
 
-* **[!UICONTROL Origin]**: Twitter
+* **[!UICONTROL Origin]**：Twitter
 * **[!UICONTROL External ID]**：用户标识符
 * **[!UICONTROL Username]**：用户的帐户名称
 * **[!UICONTROL Full name]**：用户的名称
@@ -141,6 +141,6 @@ Campaign和X之间的同步通过专门的技术工作流进行管理。 这些�
 1. 访问帐户  **设置**.
 1. 浏览至 **隐私和安全** 和 **受众和标记** 并查看 **Protect您的帖子** 选项。 您的帖子和其他帐户信息仅对关注您的用户可见。
 
-![](assets/social_tw_test_page.png)
+![](assets/do-not-localize/social_tw_test_page.png)
 
 如上所述，配置您的X应用程序和Campaign服务以使其与此测试帐户配合使用。

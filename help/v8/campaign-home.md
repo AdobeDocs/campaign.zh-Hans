@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 description: Campaign v8 帮助中心
 title: Adobe Campaign v8 产品文档
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 0f86b6303bd380f5079b38de88ee3d097e415695
+source-git-commit: 9d0ddad6acf349a9498471af228640444565ed72
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 5%
+source-wordcount: '348'
+ht-degree: 7%
 
 ---
 
@@ -18,24 +18,17 @@ ht-degree: 5%
 
 >[!BEGINTABS]
 
+>[!TAB 推送渠道即将更改]
+
+Android Firebase Cloud Messaging (FCM)服务的一些重要更改将于2024年发布，可能会影响Adobe Campaign实施。 您可能需要更新Android推送消息的订阅服务配置才能支持此更改。 您已经可以检查并执行操作。
+
+[![图像](assets/do-not-localize/learn-more-button.svg)](../technotes/upgrades/push-technote.md)
+
 >[!TAB 增强的推送通知服务]
 
 Campaign v8.5.1引入了我们最新的推送通知服务，该服务由基于现代尖端技术构建的强大框架提供支持。 此服务旨在解锁更高级别的可扩展性，确保您的通知能够以无缝效率接触到更多受众。 通过我们增强的基础架构和优化的流程，您可以期待更高的扩展性和可靠性，使您能够以前所未有的方式吸引移动应用程序用户并与之建立联系。 此功能仅适用于选定的客户组（限量发布）。
 
 [![图像](assets/do-not-localize/learn-more-button.svg)](send/push-data-collection.md)
-
->[!TAB 移动渠道吞吐量增加]
-
-与以前的版本(v8.4)相比，新引入的推送通知服务显示推送Android和推送iOS的吞吐量有了显着改进。 最新版本(v8.5)中的升级服务将会显着提升用户性能。
-
-* 推送通知(Android)：最多 **5倍** 更快
-* 推送通知(iOS)：最多 **2.2倍** 更快
-
-通过一系列优化，短信吞吐量得到了大幅提升，从而显着提高了短信通信的速度和效率。 这些升级已导致吞吐量从以前的版本(v8.4)增加到最新的版本(v8.5)，包括发送和反馈更新。 用户现在可以体验此增强型短信服务的好处。
-
-* SMS吞吐量：最高 <strong>5倍</strong> 更快</li>
-
-Adobe测试小组已在实验室条件下测量了这些最大吞吐量性能。
 
 >[!ENDTABS]
 

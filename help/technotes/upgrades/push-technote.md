@@ -1,22 +1,21 @@
 ---
 product: campaign
-title: 推送通知渠道即将更改
-description: 推送通知渠道即将更改
+title: 推送通知渠道即将发生的变化
+description: 推送通知渠道即将发生的变化
 feature: Push
 role: Admin
 level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="也适用于Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="适用于Campaign v8"
-hide: true
-hidefromtoc: true
-source-git-commit: 65b8d84e600e1814484fa81fb814475c0a8b9296
+exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
+source-git-commit: 9d0ddad6acf349a9498471af228640444565ed72
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 1%
+source-wordcount: '804'
+ht-degree: 3%
 
 ---
 
-# 推送通知渠道即将更改 {#push-upgrade}
+# 推送通知渠道即将发生的变化 {#push-upgrade}
 
 您可以使用Campaign在Android设备上发送推送通知。 要执行此操作，Campaign需要依赖特定的订阅服务。 Android Firebase Cloud Messaging (FCM)服务的一些重要更改将于2024年发布，可能会影响Adobe Campaign实施。 您可能需要更新Android推送消息的订阅服务配置才能支持此更改。
 
@@ -102,4 +101,3 @@ Adobe Campaign Classic v7和Adobe Campaign v8已支持用于发送推送通知�
 * 设置 **[!UICONTROL Visibility]** 您向公共、私人或机密发送的通知的级别。
 
 欲知详情，请参阅 **[!UICONTROL HTTP v1 additional options]** 以及如何填写这些字段，请参阅 [FCM文档](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
-

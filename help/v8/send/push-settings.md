@@ -6,18 +6,22 @@ feature: Push
 role: Admin, Developer
 level: Intermediate
 exl-id: 1a75f411-3f71-4114-b738-277820dc6138
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 9d0ddad6acf349a9498471af228640444565ed72
 workflow-type: tm+mt
-source-wordcount: '1659'
-ht-degree: 3%
+source-wordcount: '1631'
+ht-degree: 2%
 
 ---
 
 # 配置推送通知渠道 {#push-notification-configuration}
 
-在开始使用Adobe Campaign发送推送通知之前，您需要确保移动应用程序和Adobe Experience Platform中的标记已具有配置和集成。
+要使用Adobe Campaign发送推送通知，您必须首先配置环境和应用程序，如本页所述。 在Adobe Campaign中，发送推送通知的渠道是移动设备应用程序渠道。
 
-Adobe Experience Platform Mobile SDK通过与Android和iOS兼容的SDK为您的移动设备提供客户端集成API。
+>[!CAUTION]
+>
+>Android Firebase Cloud Messaging (FCM)服务的一些重要更改将于2024年发布，可能会影响Adobe Campaign实施。 您可能需要更新Android推送消息的订阅服务配置才能支持此更改。 您已经可以检查并执行操作。 [了解详情](../../technotes/upgrades/push-technote.md)。
+
+在开始使用Adobe Campaign发送推送通知之前，您需要确保移动应用程序和Adobe Experience Platform中的标记已具有配置和集成。 Adobe Experience Platform Mobile SDK通过与Android和iOS兼容的SDK为您的移动设备提供客户端集成API。
 
 要使用Adobe Experience Platform Mobile SDK设置应用程序，请执行以下步骤：
 
@@ -259,7 +263,7 @@ To get the SDKs needed for push notification to work you will need the following
 
 1. （可选）您可以使用某些变量扩充推送消息内容 **[!UICONTROL Application variables]** 如果需要。 这些都是完全可自定义的，并且是发送到移动设备的消息有效负载的一部分。
 
-1. 单击 **[!UICONTROL Finish]**，然后单击 **[!UICONTROL Save]**。您的Android应用程序现在已准备好在Campaign中使用。
+1. 单击 **[!UICONTROL Finish]** 则 **[!UICONTROL Save]**. 您的Android应用程序现在已准备好在Campaign中使用。
 
 以下是FCM有效负荷名称，用于进一步个性化您的推送通知：
 

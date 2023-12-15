@@ -5,9 +5,9 @@ feature: Push
 role: User
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 9d0ddad6acf349a9498471af228640444565ed72
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '866'
 ht-degree: 5%
 
 ---
@@ -17,6 +17,11 @@ ht-degree: 5%
 移动应用程序投放可让您向iOS和Android设备发送通知。
 
 在开始使用Adobe Campaign发送推送通知之前，您需要确保移动应用程序和Adobe Experience Platform中的标记已具有配置和集成。 [了解有关推送配置的更多信息。](push-settings.md)
+
+>[!CAUTION]
+>
+>Android Firebase Cloud Messaging (FCM)服务的一些重要更改将于2024年发布，可能会影响Adobe Campaign实施。 您可能需要更新Android推送消息的订阅服务配置才能支持此更改。 您已经可以检查并执行操作。 [了解详情](../../technotes/upgrades/push-technote.md)。
+
 
 ## 创建您的第一个推送通知{#push-create}
 

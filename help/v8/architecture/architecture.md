@@ -5,7 +5,7 @@ feature: Architecture, Deployment
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 6d54f072ad0e67b435cd6e03433fa9ddd0794dea
+source-git-commit: 06a505988579d38b4425643aaf85f5e4fa4d00b6
 workflow-type: tm+mt
 source-wordcount: '1035'
 ht-degree: 10%
@@ -37,7 +37,7 @@ Campaign可用作单个实例，每个实例代表一个完整的Campaign环境�
 在 [FDA部署](fda-deployment.md)， [!DNL Adobe Campaign] v8可以连接到 [!DNL Snowflake] 要通过联合数据访问功能访问数据：您可以访问和处理存储在以下位置中的外部数据和信息： [!DNL Snowflake] 在不更改Adobe Campaign数据结构的情况下创建数据库。 PostgreSQL是主数据库，您可以将Snowflake用作辅助数据库，以扩展数据模型并将数据存储到Snowflake中。 随后，您可以对具有出色性能的大型数据集运行ETL、分段和报告。
 
 
-![](assets/P1-P3-architecture)
+![](assets/P1-P3-architecture.png)
 
 >[!NOTE]
 >

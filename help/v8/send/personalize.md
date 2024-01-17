@@ -5,10 +5,10 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 1da45746-4d69-415b-a793-9a08ce80091d
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: 6d54f072ad0e67b435cd6e03433fa9ddd0794dea
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 47%
+source-wordcount: '473'
+ht-degree: 48%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 47%
 
 为了充分利用每一个营销活动，Adobe Campaign为您提供了一种方法，可向您提供与客户级别相关的自定义内容。 根据用户档案数据，利用个性化功能为不同的组和个人创建自定义体验：利用您拥有的关于每个特定收件人的数据和信息，您可以根据他们来调整消息。 这可以是他们的名字、兴趣、居住地、购买的内容等等。
 
-Adobe Campaign简化了个性化：您可以使用单个页面显示为每个收件人自定义的不同类型的内容 [电子邮件模板](create-templates.md). 在事务型消息（如购买确认或购物车放弃电子邮件）中，将每个人的产品列表信息包含在单个电子邮件模板中。
+Adobe Campaign简化了个性化：您可以使用单个页面显示为每个收件人自定义的不同类型的内容 [消息模板](create-templates.md). 在事务型消息（如购买确认或购物车放弃电子邮件）中，将每个人的产品列表信息包含在单个电子邮件模板中。
 
 
 ## 个性化策略 {#personalization-strategy}

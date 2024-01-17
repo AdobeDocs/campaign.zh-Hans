@@ -5,9 +5,9 @@ feature: Architecture, Deployment
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
+source-git-commit: 6d54f072ad0e67b435cd6e03433fa9ddd0794dea
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1035'
 ht-degree: 10%
 
 ---
@@ -28,24 +28,30 @@ Campaign可用作单个实例，每个实例代表一个完整的Campaign环境�
 
 ![](../assets/do-not-localize/book.png) 在中了解有关包的更多信息 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target="_blank"}
 
-## 部署模型{#ac-deployment}
+## 部署模型 {#ac-deployment}
 
-提供了两种部署模型：
+提供了两种部署模型： **Campaign FDA部署** (P1-P3)和 **Campaign Enterprise (FFDA)部署** (P4)。
 
-* **Campaign FDA部署**
+### Campaign FDA部署 {#ac-deployment-fda}
 
-  在 [FDA部署](fda-deployment.md)， [!DNL Adobe Campaign] v8可以连接到 [!DNL Snowflake] 要通过联合数据访问功能访问数据：您可以访问和处理存储在以下位置中的外部数据和信息： [!DNL Snowflake] 在不更改Adobe Campaign数据结构的情况下创建数据库。 PostgreSQL是主数据库，您可以将Snowflake用作辅助数据库，以扩展数据模型并将数据存储到Snowflake中。 随后，您可以对具有出色性能的大型数据集运行ETL、分段和报告。
+在 [FDA部署](fda-deployment.md)， [!DNL Adobe Campaign] v8可以连接到 [!DNL Snowflake] 要通过联合数据访问功能访问数据：您可以访问和处理存储在以下位置中的外部数据和信息： [!DNL Snowflake] 在不更改Adobe Campaign数据结构的情况下创建数据库。 PostgreSQL是主数据库，您可以将Snowflake用作辅助数据库，以扩展数据模型并将数据存储到Snowflake中。 随后，您可以对具有出色性能的大型数据集运行ETL、分段和报告。
 
-  >[!NOTE]
-  >
-  >在此部署模型中， [!DNL Snowflake] 辅助数据库仅在请求时可用。 使用更新部署 [!DNL Snowflake]，请联系您的Adobe过渡经理。
-  >
 
-* **Campaign Enterprise (FFDA)部署**
+![](assets/P1-P3-architecture)
 
-  在上下文中 [企业(FFDA)部署](enterprise-deployment.md)， [!DNL Adobe Campaign] v8可与两个数据库配合使用：本地 [!DNL Campaign] 数据库用于用户界面实时消息传递和统一查询，并通过API进行编写，以及使用Cloud [!DNL Snowflake] 数据库，用于活动执行、批量查询和工作流执行。
+>[!NOTE]
+>
+>在此部署模型中， [!DNL Snowflake] 辅助数据库仅在请求时可用。 使用更新部署 [!DNL Snowflake]，请联系您的Adobe过渡经理。
+>
 
-  Campaign v8 企业版引入了&#x200B;**完全联合数据访问** (FFDA) 概念：所有数据现在都位于云数据库上的远程位置。凭借这种新架构，Campaign v8 企业版 (FFDA) 部署简化了数据管理：云数据库上不需要索引。您只需创建表格、复制数据即可开始。云数据库技术无需特定的维护来保证性能级别。
+### Campaign Enterprise (FFDA)部署 {#ac-deployment-ffda}
+
+在上下文中 [企业(FFDA)部署](enterprise-deployment.md)， [!DNL Adobe Campaign] v8可与两个数据库配合使用：本地 [!DNL Campaign] 数据库用于用户界面实时消息传递和统一查询，并通过API进行编写，以及使用Cloud [!DNL Snowflake] 数据库，用于活动执行、批量查询和工作流执行。
+
+Campaign v8 企业版引入了&#x200B;**完全联合数据访问** (FFDA) 概念：所有数据现在都位于云数据库上的远程位置。凭借这种新架构，Campaign v8 企业版 (FFDA) 部署简化了数据管理：云数据库上不需要索引。您只需创建表格、复制数据即可开始。云数据库技术无需特定的维护来保证性能级别。
+
+![](assets/P4-architecture.png)
+
 
 ## 拆分投放执行 {#split}
 

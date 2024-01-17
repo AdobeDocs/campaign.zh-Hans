@@ -1,7 +1,7 @@
 ---
 audience: end-user
 user-guide-title: Campaign v8
-user-guide-description: Adobe Campaign v8 产品文档。
+user-guide-description: Adobe Campaign v8 的产品文档。
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档

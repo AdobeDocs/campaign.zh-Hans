@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 description: Campaign v8 帮助中心
 title: Adobe Campaign v8 产品文档
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 9d0ddad6acf349a9498471af228640444565ed72
+source-git-commit: f04db53bee75c935bc8737eef93fa05ec6868ebc
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 7%
+source-wordcount: '363'
+ht-degree: 13%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 7%
 
 ## 新增功能
 
-大致了解Adobe Campaign v8产品和文档中的最新增强功能！ 有关功能、改进和修复的完整列表，请查看详细信息 [发行说明](start/release-notes.md).
+大致了解Adobe Campaign v8产品和文档中的最新增强功能！ 有关功能、改进和修复的完整列表，请查看详细的[发行说明](start/release-notes.md)。请访问我们的网站，及时了解我们文档的最新更改 [文档更新](start/documentation-updates.md) 页面。
 
 >[!BEGINTABS]
 

@@ -22,7 +22,7 @@ ht-degree: 13%
 
 Android Firebase Cloud Messaging (FCM)服务的一些重要更改将于2024年发布，可能会影响Adobe Campaign实施。 您可能需要更新Android推送消息的订阅服务配置才能支持此更改。 您已经可以检查并执行操作。
 
-[![图像](assets/do-not-localize/learn-more-button.svg)](../technotes/upgrades/push-technote.md)
+[![image](assets/do-not-localize/learn-more-button.svg)](../technotes/upgrades/push-technote.md)
 
 >[!TAB 增强的推送通知服务]
 

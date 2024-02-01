@@ -7,7 +7,7 @@ level: Beginner
 source-git-commit: f04db53bee75c935bc8737eef93fa05ec6868ebc
 workflow-type: tm+mt
 source-wordcount: '48'
-ht-degree: 33%
+ht-degree: 89%
 
 ---
 
@@ -19,4 +19,4 @@ ht-degree: 33%
 
 ## 2024 年 1 月 {#jan-2024}
 
-* 新增了有关如何定义直邮的默认邮政地址字段以及确保地址完整的重要原因的信息。 [了解更多信息](../send/direct-mail.md)
+* 添加了有关如何定义直邮的默认 postalAddress 字段以及为什么确保地址完整很重要的信息。[了解更多信息](../send/direct-mail.md)

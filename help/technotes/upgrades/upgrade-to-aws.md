@@ -2,10 +2,10 @@
 title: Campaign电子邮件发送基础架构升级
 description: Campaign电子邮件发送基础架构升级
 exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
-source-git-commit: 557a74dbfbd0af385cc5104801ce3ab91dd33a95
+source-git-commit: 68252db5ad53e2a37c76765cd35650f824101289
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 2%
+source-wordcount: '331'
+ht-degree: 1%
 
 ---
 
@@ -25,11 +25,9 @@ ht-degree: 2%
 
 ## 何时进行此升级？{#aws-timeline}
 
-开发和暂存环境升级预计将在以下位置进行： **2023年10**.
+开发和暂存环境升级开始于 **2023年10**.
 
-我们计划从开始安排生产环境升级 **2024年1月**.
-
-作为Campaign客户，您将至少提前三十(30)天收到有关生产升级的附加通知。
+生产环境升级开始于 **2024年1月**.
 
 ## 期待完成的任务{#impact}
 
@@ -41,7 +39,7 @@ ht-degree: 2%
 
 * **是否必须升级？**
 
-  是. 作为Campaign客户，您的电子邮件发送功能要求使用电子邮件发送基础架构。
+  是的。 作为Campaign客户，您的电子邮件发送功能要求使用电子邮件发送基础架构。
 
 * **此升级针对哪些客户？**
 

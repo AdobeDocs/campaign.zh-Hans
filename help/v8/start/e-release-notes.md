@@ -7,10 +7,10 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: fefdf71acc921cdddcf5b3f4bf81dca594a84486
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 33%
+source-wordcount: '364'
+ht-degree: 21%
 
 ---
 
@@ -18,55 +18,33 @@ ht-degree: 33%
 
 此页面介绍了下一个 Campaign v8 版本中包含的改进和修复。在发行之日前，此内容可能会有所变动，恕不另行通知。[此页面](../start/release-notes.md)中提供了正式的发行说明。
 
-## 8.5.1版 {#release-8-5}
+## 8.6.1版 {#release-8-6-1}
 
-_2023年6月30日_
+_2024年2月14日_
 
-**新增功能**
 
-<table> 
-<thead>
-<tr> 
-<th> <strong>增强的推送通知服务</strong><br /> </th> 
-</tr> 
-</thead> 
-<tbody> 
-<tr> 
-<td><p>Campaign 8.5.1将在v8上推出我们最新的推送通知服务，该服务基于现代尖端技术构建的强大框架提供支持。 此服务旨在解锁更高级别的可扩展性，确保您的通知能够以无缝效率接触到更多受众。 通过我们增强的基础架构和优化的流程，您可以期待更高的扩展性和可靠性，使您能够以前所未有的方式吸引移动应用程序用户并与之建立联系。 此功能仅适用于选定的客户组（限量发布）。</p>
-</td> 
-</tr> 
-</tbody> 
-</table>
+### 新增功能 {#new-8-6-1}
 
-**兼容性更新**
+* 从此版本开始，您有权访问新的 **Campaign Web用户界面**，可通过中心的Adobe Experience Cloud环境使用。 Experience Cloud 是 Adobe 的数字营销应用程序、产品和服务的集成系列。通过其直观的界面，您可以快速访问云应用程序、产品功能和服务。了解如何连接到Adobe Experience Cloud并访问Adobe Campaign Web界面 [本页内容](campaign-ui.md#ac-web-ui).
 
-* 现已弃用32位版本的客户端控制台。 从 8.6 开始，将仅支持 64 位客户端控制台。客户端控制台可无缝升级到64位版本。 有关如何升级操作系统的详细信息，请参阅此[技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/console.html?lang=zh-Hans)。
-* 您现在可以将Campaign v8实例连接到Azure synapse外部数据库。 此连接通过新的外部帐户管理。
 
-**改进**
+* Adobe Campaign v8现在集成了 **Adobe Experience Manager as a Cloud Service**，创作功能通过Adobe Campaign Web用户界面专门提供。
 
-* 通过实施一系列优化，短信吞吐量得到了显着提升，从而提升了短信通信的速度和效率。
-* 从Campaign v8.5.1开始，对Campaign v8的身份验证过程已得到改进。 技术操作员必须使用AdobeIdentity Management System (IMS)连接到Campaign。
-* 您现在可以利用目标和源连接来同步配置文件属性，例如Adobe Experience Platform和Campaign v8数据库之间的选择退出数据
-* 投放准备已优化。
-* 除了现有的用户/密码身份验证方法之外，还为SFTP外部帐户添加了基于密钥的新身份验证选项。 用户现在可以使用私钥安全地进行身份验证，从而增强安全性并为SFTP访问提供替代身份验证机制。
+* 您现在可以使用 **Adobe Experience Manager Assets library** 此外，即使您的Adobe Campaign实例上安装了与Adobe Experience Cloud的集成，也会您的Experience Cloud资源。
 
-**安全性增强**
 
-* 您无法再从客户端控制台创建运算符。 现在，您需要使用Admin Console。 [了解详情](../start/gs-permissions.md)。
-* 已更新多个第三方工具以优化安全性。
+### 一般改进 {#improvements-8-6-1}
 
-**修补程序**
+* Campaign v8.6提高了以下各项的吞吐量 **电子邮件投放跟踪指标**. 通过我们优化的流程，可缩短跟踪摄取和计算时间，并且您可以更快地检查投放关键指标。
 
-* 修复了可能导致投放的 HTML 内容中的特殊字符在多个浏览器中被错误编码的问题。(NEO-60081)
-* 修复了可能导致无法在Campaign v8企业(FFDA)部署中保存报表的问题。 (NEO-56836)
-* 修复了通过更新数据工作流活动将数据插入或更新到自定义FFDA架构中的问题。 (NEO-54708)
-* 修复了阻止数据库清理工作流删除FFDA上nms：address表中的地址的问题。 (NEO-54460)
-* 修复了计费工作流可能由于“编译内存耗尽”错误而失败的问题。 (NEO-51137)
-* 修复了可能会阻止GPG解密在数据加载（文件）工作流活动中正确工作的问题。 (NEO-50257)
-* 修复了会导致 `JSPContext.sqlExecWithOneParam` 功能无法正常运行的问题。(NEO-50066)
-* 修复了在个性化字段中使用不可打印字符时导致投放失败的问题。 (NEO-48588)
-* 修复了在插入Adobe Target动态图像时可能导致投放错误的问题。 (NEO-62689)
-* 修复了在投放中使用条件内容时导致浏览器无法添加额外空格的问题。(NEO-62132)
-* 修复了在电子邮件内容编辑器中单击图像时导致打开弹出窗口的问题。(NEO-60752)
-* 修复了在编辑投放内容时可能导致出现错误且无法滚动的问题。(NEO-61364)
+
+### 可投放性更新 {#deliverability-8-6-1}
+
+* 到2024年2月，任何公司通过Google或Yahoo！ 必须开始使用一种称为基于域的消息身份验证报告和符合性(DMARC)的身份验证技术。 确保为您与Adobe Campaign一起使用的所有子域设置了DMARC记录。 [了解详情](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=zh-Hans){target="_blank"}
+
+* 从2024年6月1日开始，Google和Yahoo！ 将要求发件人遵守一键式列表取消订阅。 Adobe Campaign现在支持此选项。 [了解详情](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#one-click-list-unsubscribe){target="_blank"}
+
+
+### 修复 {#fixes-8-6-1}
+
+本发行版中修复了以下问题：NEO-67892、NEO-67235、NEO-66797、NEO-66462、NEO-65091、NEO-65036、NEO-64984、NEO-64680、NEO-63973、NEO-63879、NEO-63815、NEO-63657、NEO-63539、NEO-63387、NEO-63294、NEO-63174、NEO-62964、NEO-62750、NEO-62686、NEO-62455， NEO-62406， NEO-61580， NEO-61199， NEO-60786， NEO-59544， NEO-59198， NEO-59059 58637 55197 52542 50488 47789

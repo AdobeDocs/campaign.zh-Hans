@@ -5,9 +5,9 @@ feature: Experience Manager Integration
 role: Admin, User
 level: Beginner
 exl-id: e83893f7-a8be-48a3-a7a6-aced7b4d4f69
-source-git-commit: 92fe7c41047aafd26cca70a547025a3eff73e398
+source-git-commit: 2f8cee4522efb59782a568334fc1300fc39d559f
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Adobe Campaign与Adobe Experience Manager之间的集成允许您直接在Adobe 
 
 ![](../assets/do-not-localize/book.png) [在本文档中了解有关Adobe Experience Manager的更多信息](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html#aem-and-adobe-campaign-integration-workflow)
 
-## 使用Adobe Experience Manager创作 {#integrating-with-aem}
+## 从Adobe Experience Manager导入内容 {#integrating-with-aem}
 
 ![](../assets/do-not-localize/speech.png)  作为托管Cloud Service用户， [联系人Adobe](../start/campaign-faq.md#support) 将Adobe Experience Manager与Campaign集成。
 
@@ -80,7 +80,13 @@ Adobe Campaign与Adobe Experience Manager之间的集成允许您直接在Adobe 
 
 1. 选择之前在中创建的AEM投放 [!DNL Adobe Experience Manager] 并通过单击确认 **[!UICONTROL Ok]**.
 
+   ![](assets/aem_authoring_11.png)
+
 1. 确保单击 **[!UICONTROL Refresh content]** 每次对AEM投放进行修改时，此按钮都会出现。
+
+   ![](assets/aem_authoring_12.png)
+
+1. 要删除Experience Manager与Campaign之间的关联，请单击 **[!UICONTROL Desynchronize]**.
 
 您的电子邮件现已准备就绪，可发送给受众。
 
@@ -88,22 +94,42 @@ Adobe Campaign与Adobe Experience Manager之间的集成允许您直接在Adobe 
 
 您还可以直接从插入资源 [!DNL Adobe Experience Manager Assets Library] 在Adobe Campaign中编辑电子邮件或登陆页面时。 有关此功能详情，请参阅 [Adobe Experience Manager Assets文档](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html?lang=en).
 
-1. 将您的资产上传到 **Adobe Experience Manager Assets Library**. [了解更多](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html?lang=en#uploading-assets)
+**从Adobe Experience Manager：**
+
+1. 导航到 [!DNL Adobe Experience Manager] 创作实例，然后单击页面左上角的Adobe体验。 选择 **[!UICONTROL Assets]** `>` **[!UICONTROL Files]** 菜单。
+
+   ![](assets/aem_assets_1.png)
+
+1. 单击 **创建** 则 **文件** 要将您的资产导入 **Adobe Experience Manager Assets Library**. [了解详情](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html?lang=en#uploading-assets)
+
+   ![](assets/aem_assets_2.png)
+
+1. 根据需要重命名您的资源并选择 **上传**.
+
+您的资产现已上传到 **Adobe Experience Manager Assets Library**.
+
+**从Adobe Campaign：**
 
 1. 在Adobe Campaign中，通过浏览至 **营销活动** 选项卡，单击 **投放** 然后单击 **创建** 按钮来指定现有投放列表的上方。
+
+   ![](assets/aem_assets_3.png)
 
 1. 选择 **投放模板**，然后命名您的投放。
 
 1. 定义消息内容并使其个性化。 [了解详情](../send/email.md)
 
-1. 使用您的 **Adobe Experience Manager Assets library**，访问 **[!UICONTROL Properties]** AEM ，然后选择 **[!UICONTROL Advanced]** 选项卡。 启用 **[!UICONTROL Use above AEM instance as shared asset library]** 选项。
+1. 使用您的 **Adobe Experience Manager Assets library**，访问 **[!UICONTROL Properties]** AEM ，然后选择 **[!UICONTROL Advanced]** 选项卡。
+
+   选择您的 **AEM帐户** 并启用 **[!UICONTROL Use above AEM instance as shared asset library]** 选项。
 
    ![](assets/aem_authoring_9.png)
 
 1. 从 **图像** 图标，访问 **[!UICONTROL Select a shared asset]** 菜单。
 
-   ![](assets/aem_authoring_10.png)
+   ![](assets/aem_assets_4.png)
 
-1. 从选择窗口中，从 **Adobe Experience Manager Assets library**，然后确认。
+1. 从选择窗口中，从 **Adobe Experience Manager Assets library**，则 **选择**.
 
-您的电子邮件投放已准备就绪。 您现在可以指定目标受众，确认投放，然后继续发送。
+   ![](assets/aem_assets_5.png)
+
+您的资产现已上传至您的电子邮件投放。 您现在可以指定目标受众，确认投放，然后继续发送。

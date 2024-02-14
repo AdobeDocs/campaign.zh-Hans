@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Beginner
 exl-id: ad75f01e-2c6c-4607-b15a-8870d399002a
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 87c971ac6cf4abb6b04d52ce60ac2036055e1e02
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 8%
+source-wordcount: '594'
+ht-degree: 10%
 
 ---
 
@@ -18,54 +18,7 @@ ht-degree: 8%
 
 ## 使用电子邮件密送 {#email-bcc}
 
-<!--
->[!NOTE]
->
->This capability is available starting Campaign v8.3. To check your version, refer to [this section](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)-->
-
-您可以配置Adobe Campaign以保留从您的平台发送的电子邮件副本。
-
-Adobe Campaign本身不会管理存档文件。 它允许您选择将邮件发送到专用的密件抄送（密件抄送）电子邮件地址，从中可以使用外部系统处理和存档这些邮件。 然后，对应于所发送电子邮件的.eml文件可以传送到远程服务器，如SMTP电子邮件服务器。
-
->[!CAUTION]
->
->出于隐私原因，密件抄送电子邮件必须由能够安全存储个人身份信息(PII)的归档系统处理。
-
-存档目标是您选择的密件抄送电子邮件地址，该地址对投放收件人保持不可见。
-
-![](../assets/do-not-localize/speech.png)  作为托管Cloud Service用户， [联系人Adobe](../start/campaign-faq.md#support){target="_blank"} 用于传达要用于归档的密件抄送电子邮件地址。
-
-定义密件抄送电子邮件地址后，必须在投放级别启用专用选项。
-
->[!CAUTION]
->
->**[!UICONTROL Email BCC]** 默认不启用。 您需要在电子邮件投放或投放模板中手动启用它。
-
-为此请执行以下操作步骤：
-
-1. 转到 **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]**，或 **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
-1. 选择您选择的投放或复制现成的投放内容 **[!UICONTROL Email delivery]** 模板，然后选择复制的模板。
-1. 单击 **[!UICONTROL Properties]** 按钮。
-1. 选择 **[!UICONTROL Delivery]** 选项卡。
-1. 勾选 **[!UICONTROL Email BCC]** 选项。
-
-   ![](assets/email-bcc.png)
-
-1. 选择 **[!UICONTROL Ok]**。
-
-基于此模板每次投放的所有已发送消息的副本将发送到已配置的电子邮件密件抄送地址。
-
-请注意以下具体情况和建议：
-
-* 您只能使用一个密件抄送电子邮件地址。
-
-* 确保密件抄送地址有足够的接收容量来存档发送的所有电子邮件。
-
-* 电子邮件密送 <!--with Enhanced MTA--> 在发送给收件人之前发送给密件抄送电子邮件地址，这可能会导致即使原始投放可能已退回，仍发送密件抄送消息。 有关退回的详细信息，请参阅 [了解投放失败](delivery-failures.md).
-
-* 如果发送到密件抄送地址的电子邮件被打开并单击通过，则中会考虑这一点 **[!UICONTROL Total opens]** 和 **[!UICONTROL Clicks]** ，这可能会导致某些计算错误。
-
-<!--Only successfully sent emails are taken in account, bounces are not.-->
+您可以配置Adobe Campaign以保留从您的平台发送的电子邮件副本。 有关此选项的详情，请参阅 [此页面](email-bcc.md).
 
 ## 选择消息格式 {#selecting-message-formats}
 
@@ -132,15 +85,15 @@ Adobe Campaign本身不会管理存档文件。 它允许您选择将邮件发�
 
 >[!IMPORTANT]
 >
->高级用户可随时添加脚本以插入其他 SMTP 标头。
+>高级用户可随时添加脚本以插入其他SMTP标头。
 >
 >此脚本的语法必须符合此内容类型的要求：没有未使用的空格，没有空行等。
 
 ![](assets/email-smtp-headers.png)
 
-<!--
-## Generate mirror page {#generating-mirror-page}
 
-The mirror page is an HTML page accessible online via a web browser. Its content is identical to the email. It can be useful if your recipients are experiencing rendering issues or broken images when trying to view your email in their inbox.
+## 生成镜像页面 {#generating-mirror-page}
 
-Learn how to insert a link to the mirror page in [this section](mirror-page.md).-->
+镜像页面是可通过 Web 浏览器在线访问的 HTML 页面。其内容与电子邮件的内容相同。如果收件人尝试在收件箱中查看电子邮件时遇到渲染问题或图像损坏，此功能会很有用。
+
+了解如何在中插入指向镜像页面的链接 [本节](mirror-page.md)

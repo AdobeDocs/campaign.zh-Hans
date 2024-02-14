@@ -5,9 +5,9 @@ description: 本地审批
 feature: Workflows, Approvals
 role: User
 exl-id: 172b6827-ddfc-4c6e-87c9-eb49e73ab3ab
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '646'
 ht-degree: 3%
 
 ---
@@ -88,7 +88,7 @@ ht-degree: 3%
 
   发送给管理员组操作员的电子邮件允许您批准投放目标。 该消息使用定义的文本，并且JavaScript表达式会被替换为计算值（在本例中为“574”）
 
-  要批准投放，请单击相关链接，然后登录到Adobe Campaign客户端控制台。
+  要批准投放，请单击相关链接并登录到Adobe Campaign客户端控制台。
 
   ![](assets/new-workflow-valid-webaccess.png)
 
@@ -96,7 +96,7 @@ ht-degree: 3%
 
   ![](assets/new-workflow-valid-webaccess-confirm.png)
 
-* 通过Client Console审批
+* 通过客户端控制台进行审批
 
   在树结构中， **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** 节点包含要由当前连接的操作员批准的任务的列表。 列表应显示一行。 双击此行以响应。 将显示以下窗口：
 

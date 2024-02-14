@@ -5,10 +5,10 @@ description: 创建本地活动
 feature: Distributed Marketing
 role: User
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1555'
-ht-degree: 2%
+source-wordcount: '1553'
+ht-degree: 1%
 
 ---
 
@@ -46,17 +46,17 @@ ht-degree: 2%
 
 ![](assets/mkt_distr_4.png)
 
-### Web 界面 {#web-interface}
+### 接口类型 {#web-interface}
 
-在 **分布式营销** 选项卡，可以选择Web界面的类型，并指定本地实体下订单时要输入的默认值和参数。
+在 **分布式营销** 选项卡，您可以选择界面类型并指定本地实体下订单时要输入的默认值和参数。
 
-Web界面对应于本地实体在订购营销活动时要填充的表单。
+该界面对应于本地实体在订购营销活动时要填充的表单。
 
-选择要应用于从模板创建的营销活动的Web界面类型：
+选择要应用于从模板创建的营销活动的界面类型：
 
 ![](assets/mkt_distr_1.png)
 
-有四种类型的Web界面可用：
+有四种类型的接口可用：
 
 * **[!UICONTROL By brief]** ：本地实体必须提供描述，用于描述campaign配置。 订单获得批准后，中央实体会配置并执行整个营销活动。
 
@@ -298,7 +298,7 @@ Web界面对应于本地实体在订购营销活动时要填充的表单。
 
 #### 通过客户端控制台批准 {#approving-via-the-adobe-campaign-console}
 
-也可以通过客户控制台在促销活动订单概述中批准该订单。 要批准订单，请选择该订单并单击 **[!UICONTROL Approve the order]**.
+订单也可以通过客户控制台在促销活动订单概述中审批。 要批准订单，请选择该订单并单击 **[!UICONTROL Approve the order]**.
 
 ![](assets/mkg_dist_local_order_valid.png)
 
@@ -306,7 +306,7 @@ Web界面对应于本地实体在订购营销活动时要填充的表单。
 >
 >在营销活动可用日期之前，仍可以编辑和重新配置营销活动。 本地实体也可以通过单击 **[!UICONTROL Cancel]** 按钮。
 
-#### 创建营销策划 {#creating-a-campaign}
+#### 创建活动 {#creating-a-campaign}
 
 营销活动订单获得批准后，可以由本地实体配置并执行。
 
@@ -322,7 +322,7 @@ Web界面对应于本地实体在订购营销活动时要填充的表单。
 
 如果复查人拒绝订单，则系统会自动将相关通知发送给相关的本地实体：显示拒绝审批的操作员输入的备注。
 
-信息显示在活动包列表页面或活动订单页面上。 如果他们有权访问Adobe Campaign Client Console，则会将此拒绝通知本地实体。
+信息显示在活动包列表页面或活动订单页面上。 如果他们有权访问Adobe Campaign客户端控制台，则会将此拒绝通知本地实体。
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 

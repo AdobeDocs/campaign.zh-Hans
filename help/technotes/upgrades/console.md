@@ -2,10 +2,10 @@
 product: campaign
 title: 客户端控制台32位弃用
 description: 客户端控制台32位弃用
-exl-id: eaa20b88-4ba2-4146-b6bd-1eada34ecc53
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+exl-id: 9411e38a-5783-439c-ad54-f33bd374f2b8
+source-git-commit: 9df599ec0a898a1af16cb92d334d50375fde86ba
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '338'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 8.5版本中弃用了客户端控制台的32位版本。 客户端控制台的新64位版本可用于无缝升级。
 
-从8.6版本开始，Campaign v8将停止支持32位操作系统，包括产品和安全更新。 Adobe强烈建议您使安全更新保持最新。
+从8.6版本开始，Campaign停止支持32位操作系统，包括产品和安全更新。 Adobe强烈建议您使安全更新保持最新。
 
 只有当您具有32位版本的Windows 8或10时，才会受到此更改的影响。
 
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 终止支持意味着Adobe不再为某个产品或产品版本的所有派生项（本地化版本、次要升级、操作系统、点发行和双点发行以及连接器产品）提供技术支持，包括产品和/或安全更新。
 
-## 推荐{#console-eol-recommendations}
+## 推荐做法{#console-eol-recommendations}
 
 要利用最新功能和改进的安全性，必须将您的计算机升级到64位操作系统。
 
@@ -42,7 +42,7 @@ ht-degree: 1%
 
 +++是否有计划停止新的Campaign v8 32位客户端控制台安装？
 
-是. 从8.6版本开始，Campaign v8客户端控制台将不再提供32位版本。 只有64位版本可用。
+是的。 从8.6版本开始，Campaign v8客户端控制台将不再提供32位版本。 只有64位版本可用。
 
 +++
 

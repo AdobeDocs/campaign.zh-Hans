@@ -5,9 +5,9 @@ feature: Web Forms, Landing Pages
 role: Developer
 level: Beginner, Intermediate
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '2552'
+source-wordcount: '2551'
 ht-degree: 0%
 
 ---
@@ -666,7 +666,7 @@ SOAP方法执行可以从填充的 **`<leave>`** 标签进行标记。
 
 此 **exprIn** 属性包含作为参数传递的数据的位置。
 
-**示例**:
+**示例**：
 
 ```
 <leave>

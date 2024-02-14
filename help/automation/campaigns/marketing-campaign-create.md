@@ -5,10 +5,10 @@ description: 了解如何创建和执行营销活动
 feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: d7750add8d71bb51ea1c099a45a7bce05da3b4d7
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 4%
+source-wordcount: '1327'
+ht-degree: 3%
 
 ---
 
@@ -62,7 +62,7 @@ Campaign编排组件位于 **[!UICONTROL Campaigns]** 选项卡：您可以在�
 
 ## 使用营销活动{#work-with-campaigns}
 
-### 创建营销策划 {#create-a-campaign}
+### 创建营销活动 {#create-a-campaign}
 
 您可以通过营销活动列表创建营销活动。 要显示此视图，请选择 **[!UICONTROL Campaigns]** 中的菜单 **[!UICONTROL Campaigns]** 功能板，然后单击 **[!UICONTROL Create]**.
 
@@ -158,9 +158,14 @@ Campaign编排组件位于 **[!UICONTROL Campaigns]** 选项卡：您可以在�
 当您通过创建促销活动时 **[!UICONTROL Schedule]** 选项卡中，营销策划会自动链接到相关的项目。 此 **[!UICONTROL Program]** 字段在此示例中处于隐藏状态。
 
 
-## 使用Web界面 {#use-the-web-interface-}
+## 使用Web浏览器访问Campaign {#use-the-web-interface}
 
-您可以通过Internet浏览器访问Adobe Campaign客户端控制台屏幕，以查看所有营销活动和投放以及数据库中用户档案的报告和信息。 此访问不会启用记录创建。 根据操作员的权限，您可以查看和/或处理数据库中的数据。 例如，您可以批准活动内容和定位、重新启动或停止投放等。
+
+>[!AVAILABILITY]
+>
+>从Campaign v8.6开始，Campaign在Web用户界面中提供。 通过此新界面可以执行大多数营销操作。 [了解详情](../../v8/start/campaign-ui.md#discover-the-user-interface)。
+
+您可以通过互联网浏览器访问某些Adobe Campaign客户端控制台屏幕，以查看所有营销活动和投放以及数据库中用户档案的报告和信息。 不能通过此Web访问创建组件，但根据访问权限的不同，您可以查看和/或处理数据库中的数据。 通常，您可以批准活动内容和定位、重新启动或停止投放等。
 
 1. 照常通过https://登录`<your instance>:<port>/view/home`.
 1. 使用菜单访问概述。
@@ -200,7 +205,7 @@ Campaign编排组件位于 **[!UICONTROL Campaigns]** 选项卡：您可以在�
 
 ![](assets/web-access-approval.png)
 
-您还可以使用通知消息中包含的链接。 如需详细信息，请参阅[此部分](marketing-campaign-approval.md#checking-and-approving-deliveries)。
+您还可以使用通知消息中包含的链接。 如需详细信息，请参阅[此小节](marketing-campaign-approval.md#checking-and-approving-deliveries)。
 
 
 ## 教程视频 {#video}

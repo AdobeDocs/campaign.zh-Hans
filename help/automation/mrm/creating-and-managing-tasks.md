@@ -5,16 +5,16 @@ description: 创建和管理任务
 feature: Campaigns, Resource Management
 role: User
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '3743'
-ht-degree: 1%
+source-wordcount: '3758'
+ht-degree: 0%
 
 ---
 
 # 创建和管理任务{#creating-and-managing-tasks}
 
-Adobe Campaign 让您可以直接在应用程序中创建任务并管理其完整的生命周期. 项目和营销策划实施可以划分为分配给Adobe Campaign操作员或外部服务提供商的任务。 这种操作模式允许您创建包括所有项目参与者和外部参与者的开放协作环境。
+Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的生命周期。 项目和营销策划实施可以划分为分配给Adobe Campaign操作员或外部服务提供商的任务。 这种操作模式允许您创建包括所有项目参与者和外部参与者的开放协作环境。
 
 可以从任务列表或活动仪表板创建、查看和监控任务。 还可以在营销计划、项目和营销策划的时间表中查看和跟踪这些指标。
 
@@ -273,8 +273,8 @@ Adobe Campaign 让您可以直接在应用程序中创建任务并管理其完�
 可以计划以下任务：
 
 * [控制任务](#control-tasks)，
-* [分组任务](#grouping-task),
-* [分组任务](#grouping-task),
+* [分组任务](#grouping-task)，
+* [分组任务](#grouping-task)，
 * [通知任务](#notification-task).
 
 >[!NOTE]
@@ -467,7 +467,7 @@ A **[!UICONTROL Control task]** 链接到投放审批：审批定位、内容、
 1. 完成分配给他们的部分后，参与者可以通过以下任一方式批准任务：
 
    * 通过通知电子邮件。
-   * 通过Client Console或Web界面，在任务仪表板中。
+   * 通过客户端控制台或Web访问，在任务仪表板中。
 
      ![](assets/s_ncs_user_task_start_rea.png)
 
@@ -491,7 +491,7 @@ A **[!UICONTROL Control task]** 链接到投放审批：审批定位、内容、
 
 1. 任务状态更改为 **[!UICONTROL To approve]**，并向审阅人发送通知。
 
-   他们通过通知电子邮件、客户端控制台或Web界面批准任务。
+   他们通过通知电子邮件、客户端控制台或Web浏览器批准任务。
 
    他们可以通过营销活动仪表板执行操作：
 

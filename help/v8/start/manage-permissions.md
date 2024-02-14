@@ -5,9 +5,9 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
-source-git-commit: 290f4e9a0d13ef49caacb7a128ccc266bafd5e69
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1632'
+source-wordcount: '1618'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 1%
 
    了解如何在中创建用户组 [本节](#user-groups)
 
-1. 单击&#x200B;**保存**。用户即被添加，并显示在“用户”列表中。 如果您为用户分配管理员角色或产品配置文件，用户将收到电子邮件通知。 用户必须单击该链接才能完成其个人资料。
+1. 单击 **保存**. 用户即被添加，并显示在“用户”列表中。 如果您为用户分配管理员角色或产品配置文件，用户将收到电子邮件通知。 用户必须单击该链接才能完成其个人资料。
 
 在中了解有关在Admin Console中创建用户的更多信息 [此页面](https://helpx.adobe.com/ie/enterprise/using/manage-users-individually.html){target="_blank"}.
 
@@ -104,7 +104,7 @@ Adobe Campaign附带内置功能 **产品配置文件** 在Adobe启用您的环�
 
    * **[!UICONTROL ADMINISTRATION]**：有权执行/创建/编辑/删除任何对象，例如工作流、投放、脚本等
 
-1. **[!UICONTROL Delivery operators]** (投放)
+1. **[!UICONTROL Delivery operators]** （投放）
 
    此组中的操作员负责管理投放：他们可访问创建和准备投放所需的主要资源（活动类型、投放映射、默认模板、个性化块等）。
 
@@ -146,7 +146,7 @@ Adobe Campaign附带内置功能 **产品配置文件** 在Adobe启用您的环�
 
    此组中的用户可以使用 **[!UICONTROL Distributed marketing]** 加载项。
 
-1. **[!UICONTROL Offer managers]** (优惠)
+1. **[!UICONTROL Offer managers]** （选件）
 
    此组中的操作员可以在使用交互加载项时创建和维护优惠。 [了解详情](../interaction/interaction-operators.md)。
 
@@ -161,7 +161,7 @@ Adobe Campaign附带内置功能 **产品配置文件** 在Adobe启用您的环�
    * 视图 **[!UICONTROL Live]** 环境。
    * 配置管理函数（预定义的空间和过滤器）。
    * 创建和更新类别。
-   * 创建优惠.
+   * 创建选件。
    * 配置优惠资格。
    * 批准选件。
 

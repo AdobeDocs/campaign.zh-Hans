@@ -5,9 +5,9 @@ feature: Overview, Architecture, Configuration
 role: User
 level: Beginner
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
+source-git-commit: 79d916c4d65c0c55ec20f2f5850fec40fe4e99a3
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -24,21 +24,7 @@ Adobe Campaign组件和全局架构如下所述。
 
 ![](assets/do-not-localize//ac-components.png)
 
-### 表示层{#presentation-layer}
 
-您可以通过富客户端、瘦客户端或API集成访问Adobe Campaign。
-
-* 富客户端
-
-  Campaign富客户端是一种本机应用程序，它通过标准互联网协议（如SOAP和HTTP）与Adobe Campaign应用程序服务器进行通信。 [了解有关Campaign客户端控制台的更多信息](../start/connect.md).
-
-* 瘦客户端
-
-  Adobe Campaign Web访问功能允许您使用HTML用户界面通过Web浏览器访问Campaign功能的子集。 使用此Web界面可访问报告、控制和验证消息、访问监控功能板等。  [了解有关Campaign Web Access的更多信息](../start/connect.md).
-
-* 具有API的外部应用程序
-
-  在某些情况下，可以使用通过SOAP协议公开的Web服务API从外部应用程序调用系统。 [了解有关Campaign API的更多信息](../dev/api.md).
 
 ### 持久层{#persistance-layer}
 

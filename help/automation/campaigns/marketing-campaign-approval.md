@@ -5,9 +5,9 @@ description: 了解如何管理营销活动的批准
 feature: Approvals, Campaigns
 role: User
 exl-id: 03be5058-436e-4de9-99a7-91d799aa17f6
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '2280'
+source-wordcount: '2281'
 ht-degree: 1%
 
 ---
@@ -90,7 +90,7 @@ ht-degree: 1%
 
 ## 审阅和批准投放 {#review-and-approve-deliveries}
 
-对于每个活动，您可以批准投放目标， [投放内容](#approving-content) 和成本。 负责审批工作的Adobe Campaign操作员收到电子邮件通知后，可通过客户端控制台或Web连接批准或拒绝批准相关请求。 [了解详情](#approving-processes)。
+对于每个活动，您可以批准投放目标， [投放内容](#approving-content) 和成本。 负责审批工作的Adobe Campaign操作员收到电子邮件通知后，可通过客户端控制台或Web浏览器批准或拒绝批准相关请求。 [了解详情](#approving-processes)。
 
 对于直邮投放，Adobe Campaign操作员可以在提取文件发送到路由器之前查看该文件，如有必要，他们可以更改格式并重新执行提取。 [了解详情](#approve-an-extraction-file)。
 
@@ -103,7 +103,7 @@ ht-degree: 1%
 
 ### 批准投放的步骤 {#approving-processes}
 
-需要批准的阶段将显示在Campaign仪表板上（通过客户端控制台或Web界面）。 它们还会显示在投放跟踪表和投放仪表板中。
+需要批准的步骤将显示在Campaign功能板上（通过客户端控制台或Web浏览器）。 它们还会显示在投放跟踪表和投放仪表板中。
 
 ![](assets/delivery-approval-actions.png)
 
@@ -165,7 +165,7 @@ ht-degree: 1%
 
    * 通过通知电子邮件：通知电子邮件包含指向已发送校样的链接，如果符合以下条件，则可能包含指向各种网页邮件的消息呈现的链接 **可投放性** 已为此实例启用加载项。
 
-   * 通过客户端控制台或Web界面、投放跟踪、投放仪表板或活动仪表板。 利用此营销活动信息板，您可以通过单击 **[!UICONTROL Inbox rendering...]** 链接。 要查看其内容，请单击 **[!UICONTROL Detail]** 图标（位于列表的右侧）。
+   * 通过客户端控制台或Web浏览器、投放跟踪、投放仪表板或活动仪表板。 利用此营销活动信息板，您可以通过单击 **[!UICONTROL Inbox rendering...]** 链接。 要查看其内容，请单击 **[!UICONTROL Detail]** 图标（位于列表的右侧）。
 
 1. 将向营销策划负责人发送通知电子邮件，告知他们内容是否已被批准。 活动负责人可以随时重新开始内容审批周期。 为此，请单击 **[!UICONTROL Content status]** 营销活动仪表板的行（在投放级别），然后单击 **[!UICONTROL Reset content approval to submit it again]**.
 
@@ -177,7 +177,7 @@ ht-degree: 1%
 
 1. 负责内容编辑的人员将收到一封电子邮件，告知他们内容可用。
 
-1. 然后，他们可以登录到Client Console，打开投放并使用简化的向导对其进行编辑，以更改主题、HTML和文本内容，并发送校样。
+1. 然后，他们可以登录到客户端控制台，打开投放并使用简化的向导进行编辑，以更改主题、HTML和文本内容，并发送校样。
 
    >[!NOTE]
    >
@@ -199,7 +199,7 @@ ht-degree: 1%
 1. 外部内容经理会收到通知电子邮件，告知他们内容已获批准并请求外部批准。
 1. 通知电子邮件包含指向已发送校样的链接（允许您查看投放渲染），以及一个用于批准或拒绝投放内容的按钮。
 
-这些链接仅在发送了一个或多个验证后才可用。 否则，只能通过客户端控制台或Web界面进行交付渲染。
+这些链接仅在发送了一个或多个验证后才可用。 否则，只能通过客户端控制台或Web浏览器进行交付渲染。
 
 ### 批准提取文件 {#approve-an-extraction-file}
 
@@ -219,7 +219,7 @@ ht-degree: 1%
 
 ### 在仪表板中批准 {#approval-via-the-dashboard}
 
-要通过客户端控制台或Web界面批准作业，请单击Campaign仪表板上的相应链接。
+要通过客户端控制台或使用Web浏览器批准作业，请单击活动仪表板上的相应链接。
 
 例如，执行投放分析后：
 
@@ -249,7 +249,7 @@ ht-degree: 1%
 1. 登录到Adobe Campaign。
 1. 检查要批准的信息
 1. 选择 **[!UICONTROL Accept]** 或 **[!UICONTROL Reject]** 并根据需要输入评论。
-1. 验证. 您的选择和注释将显示在验证日志中。
+1. 验证。 您的选择和注释将显示在验证日志中。
 
 >[!NOTE]
 >

@@ -5,10 +5,10 @@ feature: Microsoft CRM Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1365'
-ht-degree: 3%
+source-wordcount: '1376'
+ht-degree: 2%
 
 ---
 
@@ -132,7 +132,7 @@ ht-degree: 3%
 1. 分配 **应用程序Id** 对象 [您之前创建的应用程序](#get-client-id-microsoft).
 1. 单击 **管理角色** 并选择 **系统管理员** 角色到用户。
 
-## 配置 Campaign {#configure-acc-for-microsoft}
+## 配置营销活动 {#configure-acc-for-microsoft}
 
 ### 创建连接{#new-ms-dyn-external-account}
 

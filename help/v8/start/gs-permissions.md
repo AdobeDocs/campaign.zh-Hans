@@ -5,10 +5,10 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
-source-git-commit: b71197027d9521fd648a0c2657b6b76a1aa7fc9a
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 2%
+source-wordcount: '515'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Campaign允许您定义和管理分配给用户的权限。 这些权限�
 
 ## 授予权限的关键步骤{#key-steps-permissions}
 
-作为产品管理员，您可以向组织的用户授予权限。 权限是通过Adobe Admin Console和Campaign Client Console授予的。 用户使用其Adobe ID登录到Adobe Campaign。 了解如何在中连接到Adobe Campaign [此页面](connect.md).
+作为产品管理员，您可以向组织的用户授予权限。 权限是通过Adobe Admin Console和Campaign客户端控制台授予的。 用户使用其Adobe ID登录到Adobe Campaign。 了解如何在中连接到Adobe Campaign [此页面](connect.md).
 
 关键步骤包括：
 

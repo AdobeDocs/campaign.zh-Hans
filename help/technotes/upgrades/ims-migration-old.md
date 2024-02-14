@@ -4,10 +4,10 @@ description: 了解如何将Campaign技术操作员迁移到Adobe Developer控�
 exl-id: 63008b58-4384-4d2b-864a-57f11d701c01
 hide: true
 hidefromtoc: true
-source-git-commit: 9f93057d2d729d4251d914426488f46b6ef24bbb
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 1%
+source-wordcount: '861'
+ht-degree: 0%
 
 ---
 
@@ -77,10 +77,10 @@ Campaign常规用户已通过AdobeIdentity Management System (IMS)，使用其Ad
 
 仅当已为此操作员（而不是通过操作员的组）定义了特定文件夹权限或命名权限时，才需要执行此步骤。
 
-现在，您需要在Adobe Campaign客户端控制台中更新新创建的技术运算符。 您必须将现有的技术操作员文件夹权限应用到新的技术操作员。
+您现在需要在Adobe Campaign客户端控制台中更新新创建的技术运算符。 您必须将现有的技术操作员文件夹权限应用到新的技术操作员。
 要更新此运算符，请执行以下步骤：
 
-1. 在Campaign Client Console资源管理器中，浏览到 **管理>访问管理>运算符**.
+1. 在Campaign客户端控制台资源管理器中，浏览到 **管理>访问管理>运算符**.
 1. 访问用于API的现有技术操作员。
 1. 浏览到文件夹权限并检查权限。
 1. 将相同的权限应用到新创建的技术操作员。 该操作员的电子邮件是 **技术帐户电子邮件** 值之前已复制。
@@ -100,7 +100,7 @@ Campaign常规用户已通过AdobeIdentity Management System (IMS)，使用其Ad
 
 To update the technical operator authentication mode to IMS, follow these steps:
 
-1. From Campaign Client Console explorer, browse to the **Administration > Access Management > Operators**.
+1. From Campaign client console explorer, browse to the **Administration > Access Management > Operators**.
 1. Edit the existing technical operator used for APIs.
 1. Replace the **Name (login)** of this technical operator by the technical account email retrieved earlier.
 1. Browse to the **Edit** button on the top left beside **File**, and select **Edit the XML source**.

@@ -5,10 +5,10 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 03f7a736-e0b9-4216-9550-507f10e6fcf6
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: b5574ba2d9fa520b701f7af4e34862304b825a66
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 16%
+source-wordcount: '552'
+ht-degree: 4%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 16%
 
 ![](assets/edit-a-profile.png)
 
-用户档案相关数据被分组放在多个选项卡中。这些选项卡及其内容取决于您的特定设置和已安装的包。
+有关用户档案的数据将分组到选项卡中。 这些选项卡及其内容取决于您的特定设置和已安装的包。
 
 对于典型的内置收件人，您可以访问以下选项卡：
 
@@ -77,21 +77,19 @@ ht-degree: 16%
 * **投放**，适用于选定用户档案的所有投放日志。 使用此选项卡可访问联系人的营销历史记录：通过所有渠道针对用户档案的所有投放操作的标签、日期和状态。
 
 
-* **跟踪**，用于选定用户档案的所有跟踪日志。 此信息用于跟踪投放后用户档案的行为。此选项卡显示在投放中所有被跟踪的 URL 累积数目。该列表是可配置的，通常包含：点击的URL、点击的日期和时间，以及包含该URL的文档
+* **跟踪**，用于选定用户档案的所有跟踪日志。 此信息用于跟踪投放后的用户档案行为。 此选项卡显示投放中跟踪的所有URL的累积总数。 该列表是可配置的，通常包含：点击的URL、点击的日期和时间，以及包含该URL的文档
 
   了解有关跟踪的更多信息 [在此部分中](../start/tracking.md).
 
 
 ## 使用中的用户档案 {#active-profiles}
 
-使用中的用户档案是指可计费开立账单的用户档案。
+活动用户档案是客户在过去12个月内尝试通过任何渠道与之通信的用户档案。 许可证量度基于活动用户档案。 了解详情，请参阅 [Adobe Campaign产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-计费账单的开立仅会考虑&#x200B;**使用中**&#x200B;的用户档案。如果用户档案在过去 12 个月通过任何渠道被定位或进行了传输，则该用户档案被视为使用中。
-
-被多次投放定向的用户档案只会被计数一次。
-
-活动用户档案计数可用于 **营销实例** 仅限。 它不适用于执行实例，即MID （中间源）和RT （消息中心/实时消息传递）实例。
-
->[!NOTE]
+>[!CAUTION]
 >
->您还可以直接从Campaign控制面板监控实例上的活动用户档案数。 有关详细信息，请参见 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+>* 被多次投放定向的用户档案只会被计数一次。
+>
+>* 在X上的社交营销上下文中定位的用户档案(以前称为Twitter)不被视为活动用户档案。
+
+您可以直接从Campaign控制面板监控实例上的活动用户档案数。 有关详细信息，请参见 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.

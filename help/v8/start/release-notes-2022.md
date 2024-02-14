@@ -5,9 +5,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
+source-git-commit: 43994eb29af2b85272de0ce4dc34cc66aba2e04a
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '1919'
 ht-degree: 91%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 91%
 
 _2022 年 10 月 28 日_
 
-**改进**
+**修复**
 
-* 修复了在使用 Adobe Campaign Enhanced MTA 时，无法正确更新投放指标的问题。(NEO-50462)
+* 修复了在使用 Adobe Campaign Enhanced MTA 时，无法正确更新传递指示器的问题。(NEO-50462)
 
 ## 8.4.1 版 {#release-8-4-1}
 
@@ -84,7 +84,7 @@ _2022 年 9 月 30 日_
 
 **改进**
 
-* 在 Microsoft Internet Explorer 11 的生命周期终止后，控制台中的 HTML 渲染引擎现在使用的是 **Microsoft Edge Chromium**。此外，安装 **Microsoft Edge WebView 2** 现在，任何Client Console安装都需要运行时。
+* 在 Microsoft Internet Explorer 11 的生命周期终止后，控制台中的 HTML 渲染引擎现在使用的是 **Microsoft Edge Chromium**。此外，任何客户端控制台现在均需安装 **Microsoft Edge WebView 2** 运行时。
 * 工作流的高可用性使工作流的执行得到改善，此提升可使您同时跨不同容器运行工作流，以防止工作流服务丢失，并避免发生与之相关的执行错误。**注意**：此新功能仅以“有限可用”的状态向特定客户群体发布。
 * 现在可针对给定的隐私命名空间批量执行隐私请求。这项改进使 GDPR/隐私删除请求的执行时间有所增加。
 
@@ -94,7 +94,7 @@ _2022 年 9 月 30 日_
 
 请参阅 [Campaign 兼容性矩阵](compatibility-matrix.md)。
 
-**修补程序**
+**修复**
 
 * 修复了当 FeatureFlag_GZIP_Compression 选项启用时，MID 实例上的投放日志状态更新受到影响的问题。(NEO-49183)
 * 修复了即使联系日期已到，仍可能导致投放停留在&#x200B;**待处理**&#x200B;状态的问题。(NEO-48079)
@@ -121,11 +121,11 @@ _2022 年 9 月 30 日_
 
 >[!CAUTION]
 >
-> 必须升级客户端控制台。在[此页面](../start/connect.md#download-ac-console)中了解如何升级您的客户端控制台。
+> 必须升级客户端控制台。 通过此页面了解如何升级您的客户端控制台 [页面](../start/connect.md#download-ac-console).
 
 _2022 年 10 月 7 日_
 
-**改进**
+**修复**
 
 * 修复了当 FeatureFlag_GZIP_Compression 选项启用时，MID 实例上的投放日志状态更新受到影响的问题。(NEO-49183)
 * 现在，**数据库清理**&#x200B;技术工作流还可处理自定义暂存模式。(NEO-48974)
@@ -232,7 +232,7 @@ _2022 年 5 月 18 日_
 * Web 进程的默认连接数从 50 个增加到 150 个。
 * Campaign 提供了一组新护栏，以防止在 Snowflake 数据库中插入重复的键。[了解更多信息](../architecture/keys.md)
 
-**修补程序**
+**修复**
 
 * 修复了在同一循环投放中使用种子和对照组时发生的问题。(NEO-41197)
 * 修复了 FFDA 上的一个问题。当个性化块包含以下字符之一时，该问题会导致在执行发送进程（最多 256 个）期间属于同一个 deliveryPart 的对所有收件人的电子邮件发送被阻止：`' & < > "`。个性化块现在支持这些字符（例如：firstname=&quot;Brian O&#39;Neil&quot;）。(NEO-43184)
@@ -243,7 +243,7 @@ _2022 年 5 月 18 日_
 
 _2022 年 2 月 2 日_
 
-**修补程序**
+**修复**
 
 * 修复了在达到类型规则中定义的最大消息数时，导致投放准备失败的问题。
 * 修复了在配置 Adobe Analytics Connector 期间电子邮件地址包含“s”字符时的问题。

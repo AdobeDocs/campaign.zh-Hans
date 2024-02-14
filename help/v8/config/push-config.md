@@ -8,10 +8,10 @@ level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 4%
+source-wordcount: '1231'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ Android和iOS支持的版本，以及与Campaign SDK兼容的Campaign v8版本�
 
 >[!NOTE]
 >
->您还可以通过在“数据收集 UI”中配置 Adobe Campaign 扩展来使用 Adobe Experience Platform Mobile SDK。[在开发人员文档中了解详情](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+>您还可以通过在数据收集UI中配置Adobe Experience Platform扩展来使用Adobe Campaign Mobile SDK。 [在开发人员文档中了解详情](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 >
 
 ## 声明集成设置 {#declaring-integration-settings}

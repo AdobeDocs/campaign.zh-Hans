@@ -2,10 +2,10 @@
 title: 将Campaign操作员迁移到AdobeIdentity Management System (IMS)
 description: 了解如何将Campaign操作员迁移到AdobeIdentity Management System (IMS)
 exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
-source-git-commit: 1cdb21533138623fc603424503063cf3dbc2d94c
+source-git-commit: b539b84907c7232f236b96ae8dfd11c8998a06b9
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 2%
+source-wordcount: '1345'
+ht-degree: 1%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 2%
 
 对于新客户 — 不允许从头开始创建新的本机用户。
 
-作为Campaign管理员，您可以通过Adobe Admin Console和Campaign Client Console向组织用户授予权限。 用户使用其Adobe ID登录到Adobe Campaign。 了解详情，请参阅 [本文档](../../v8/start/gs-permissions.md).
+作为Campaign管理员，您可以通过Adobe Admin Console和Campaign客户端控制台向您的组织用户授予权限。 用户使用其Adobe ID登录到Adobe Campaign。 了解详情，请参阅 [本文档](../../v8/start/gs-permissions.md).
 
 ### 如何为当前本机用户添加电子邮件？ {#ims-migration-id}
 
@@ -87,7 +87,41 @@ ht-degree: 2%
 1. 输入操作员的电子邮件 **联系方式** 操作员表单的部分。
 1. 保存您的更改。
 
-<!--You can also import a CSV file to update all your operator profiles with their email.-->
+作为工作流主管或Campaign管理员，您还可以使用工作流对操作员执行批量更新。
+
++++使用工作流更新操作员的关键步骤
+
+要对本机运算符执行批量更新，请执行以下步骤：
+
+1. 创建工作流以在CSV文件中提取所有使用本机身份验证模式连接到Campaign的操作员。 使用 **查询** 活动和 **数据提取（文件）** 创建CSV文件的活动。 对于每个运算符，可以根据其用户档案数据导出以下列： `Name, Label`.
+
+   了解关于 **查询** 中的活动 [此页面](../../automation/workflow/query.md)
+
+   了解关于 **数据提取（文件）** 中的活动 [此页面](../../automation/workflow/extraction--file-.md)
+
+1. 使用包含操作员电子邮件的新列更新CSV文件。
+
+1. 创建工作流以导入更新的数据，使用 **数据加载（文件）** 活动和 **更新数据** 活动。
+
+   ![](assets/update-operators-wf.png){width="70%"}
+
+1. 编辑 **数据加载（文件）** 活动，并定义用于加载更新的CSV文件的设置，如下面的示例所示。
+
+   ![](assets/data-loading-activity.png){width="70%"}
+
+   了解关于 **数据加载（文件）** 中的活动 [此页面](../../automation/workflow/data-loading--file-.md)
+
+1. 编辑 **更新数据** 活动，并根据以下示例定义设置。 请注意 **已更新维度** 已更改为 `Operators (xtk)`.
+
+   ![](assets/update-data-activity.png){width="70%"}
+
+   了解关于 **更新数据** 中的活动 [此页面](../../automation/workflow/update-data.md)
+
+1. 运行工作流并检查结果。 电子邮件地址已添加到操作员的配置文件。
+
+   ![](assets/updated-operator.png){width="70%"}
+
++++
 
 
 ### 如何通过IMS登录Campaign？ {#ims-migration-log}

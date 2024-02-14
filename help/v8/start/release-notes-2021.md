@@ -5,10 +5,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 5ac6bda9-86c8-4200-b285-6fee2a29039d
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1583'
-ht-degree: 98%
+source-wordcount: '1581'
+ht-degree: 100%
 
 ---
 
@@ -116,7 +116,7 @@ _2021 年 9 月 7 日_
 **改进**
 
 * Flash 生命周期结束后，已从所有相关的 Campaign 功能和组件中删除，并替换为 HTML5。已删除&#x200B;**量规**&#x200B;类型的图表。(NEO-30330) [阅读更多](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-chart.html?lang=zh-Hans)
-* 在Windows上安装客户端控制台时，安装程序现在会检查是否存在父注册表节点，如果缺少该节点，则会创建一个。 这可防止在启动控制台时出现潜在问题。(NEO-34854)
+* 现在，在 Windows 上安装客户端控制台时，安装程序会检查是否存在父注册表节点，如果缺少该节点，则会创建一个。这可防止在启动控制台时出现潜在问题。(NEO-34854)
 * 跟踪签名功能已得到改进，以防止与第三方工具（电子邮件客户端、互联网浏览器等）链接的方式出现错误处理特殊字符。URL 参数现已经过编码。
 
 **其他变更**

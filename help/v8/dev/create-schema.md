@@ -5,7 +5,7 @@ feature: Schema Extension, Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: 796af848-b537-4b8d-a601-fe0628a1fc83
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 2%
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # 创建新架构 {#create-new-schema}
 
-要编辑、创建和配置架构，请单击 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign客户端控制台的节点。
+要编辑、创建和配置架构，请单击 **[!UICONTROL Administration > Configuration > Data schemas]** Adobe Campaign节点。
 
 >[!NOTE]
 >
@@ -113,4 +113,4 @@ ht-degree: 2%
 
    ![](assets/configuration_structure.png)
 
-1. 更新数据库结构以创建将链接架构的表。 如需详细信息，请参阅[此部分](update-database-structure.md)。
+1. 更新数据库结构以创建将链接架构的表。 如需详细信息，请参阅[此小节](update-database-structure.md)。

@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 94%
+source-wordcount: '594'
+ht-degree: 82%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 94%
 
 1. **如何连接到 Campaign v8？**
 
-   您需要下载并安装 Campaign 客户端控制台才能连接到 Adobe Campaign。
+   您需要下载并安装Campaign客户端控制台才能连接到Adobe Campaign。
 
    ![](../assets/do-not-localize/glass.png) [单击此处了解详情](connect.md)。
 
@@ -38,15 +38,15 @@ ht-degree: 94%
 
    电子邮件可投放性是每个发件人的营销计划取得成功的重要因素，其特点是不断变化的标准和规则。想要在这个数字化的世界中取得成果，就必须定期调整电子邮件策略，并考虑关键可投放性趋势，以便最好地吸引受众。
 
-   ![](../assets/do-not-localize/book.png) 请参阅本指南以了解[可投放性最佳实践](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans){target="_blank"}
+   ![](../assets/do-not-localize/book.png) 请参阅本指南以了解详情 [可投放性最佳实践](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans){target="_blank"}
 
-   ![](../assets/do-not-localize/book.png)请参阅[本指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=zh-Hans)以了解如何在 Campaign 中实施可投放性{target="_blank"}
+   ![](../assets/do-not-localize/book.png) 了解如何在Campaign中实施可投放性 [本指南内容](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=zh-Hans){target="_blank"}
 
 1. **如何确认我的投放已成功发送，并且未出现错误？**
 
    Adobe Campaign 提供了一组仪表板和工具来监测电子邮件投放。
 
-   [阅读 Campaign Classic v7 文档以了解](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=zh-Hans){target="_blank"}如何确认邮件已发送、监测执行情况并在发生错误时采取行动。
+   [阅读Campaign Classicv7文档以了解](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=zh-Hans){target="_blank"} 如何确认消息已发送、监测执行情况并在发生错误时采取行动。
 
 1. **我是否能监测工作流的执行情况？**
 
@@ -68,7 +68,7 @@ ht-degree: 94%
 
 1. **如何下载 Campaign？**
 
-   您可以从Adobe下载中心获取安装程序和客户端控制台。
+   可以从 Adobe 下载中心获取安装程序和客户端控制台。
 
    作为管理员用户，访问Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html) {target="_blank"} 下载Adobe Campaign。
 
@@ -83,6 +83,6 @@ ht-degree: 94%
 
    通过创建案例，您可以就您在使用 Adobe 产品的过程中遇到的任何问题联系 Adobe 客户支持团队。为帮助您解决问题或排除疑难，Adobe Admin Console 将支持您与 Adobe 客户支持团队聊天。
 
-   如需在新系统中登记问题或开始聊天会话，请连接到 [Adobe Admin Console](https://adminConsole.adobe.com/overview){target="_blank"}.
+   要在该新系统中登记问题或启动聊天会话，请连接到 [Adobe Admin Console](https://adminConsole.adobe.com/overview){target="_blank"}.
 
    此系统要求每个用户都有个人帐户，并具有正确的权限。如果您发现无法使用 Adobe ID 登录，请通过 Experience League 提出访问请求，客户关怀团队将尽快为您进行设置。[了解详情](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}

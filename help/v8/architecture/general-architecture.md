@@ -1,14 +1,14 @@
 ---
 title: 一般架构
-description: 详细了解 Adobe Campaign 架构和组件。详细了解使您的客户端控制台和环境个性化。
+description: 详细了解 Adobe Campaign 架构和组件。了解有关使您的客户端控制台和环境个性化的更多信息。
 feature: Architecture, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
+source-git-commit: 79d916c4d65c0c55ec20f2f5850fec40fe4e99a3
 workflow-type: tm+mt
 source-wordcount: '1136'
-ht-degree: 7%
+ht-degree: 6%
 
 ---
 
@@ -30,9 +30,9 @@ ht-degree: 7%
 
 ## 个性化客户端环境 {#client-env}
 
-可以通过不同的方式访问应用程序：富客户端、瘦客户端或API集成。
+可以通过不同的方式访问该应用程序：Web用户界面、客户端控制台（富客户端）、Web访问（瘦客户端）或API集成。
 
-![](../assets/do-not-localize/glass.png) [了解有关Campaign展示层的更多信息](../start/ac-components.md).
+![](../assets/do-not-localize/glass.png) [了解关于Campaign用户界面的更多信息](../start/campaign-ui.md).
 
 ## 开发环境 {#dev-env}
 

@@ -5,26 +5,26 @@ feature: Release Notes
 role: Admin
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 374c0df2cd95e656cfbaa1fb355bf1f48828dfee
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 88%
+source-wordcount: '360'
+ht-degree: 63%
 
 ---
 
-# Campaign v8 兼容性矩阵
+# Campaign v8 兼容性矩阵 {#compat-matrix}
 
-本文档列出了最新版本的 **Adobe Campaign v8** 支持的所有系统和组件。除非另有说明，否则支持所有次要版本。此列表中未包含的产品和版本与 Adobe Campaign 不兼容。
+本文档列出了最新内部版本支持的所有系统和组件 **Adobe Campaign v8** 客户端控制台。 除非另有说明，否则支持所有次要版本。此列表中未包含的产品和版本与 Adobe Campaign 不兼容。
 
 随着这些第三方系统和工具的特定版本的生命周期结束 (EOL)，Adobe Campaign 将不再与这些版本兼容，并会从兼容性矩阵中移除它们。请确保您使用兼容性矩阵中列出的任何系统的受支持版本，以避免出现任何问题。
 
 >[!NOTE]
 >
->Adobe Campaign 服务器和客户端控制台必须使用同一版本。[如何检查您的版本](#version)。
+>Adobe Campaign服务器和Campaign客户端控制台必须使用同一版本。 [如何检查您的版本](upgrades.md#version)。
 
-## 客户端控制台{#ClientConsoleoperatingsystems}
+## 客户端控制台 {#ClientConsoleoperatingsystems}
 
-要使用 Campaign 客户端控制台，必须配备以下操作系统和浏览器。[了解详情](connect.md)。
+要使用Campaign客户端控制台，必须配备以下操作系统和浏览器。 [了解详情](connect.md)。
 
 ### 操作系统{#op-systems}
 
@@ -33,15 +33,15 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->请注意，从8.5版本开始，已弃用32位版本的客户端控制台。 从 8.6 开始，将仅支持 64 位客户端控制台。有关如何升级操作系统的详细信息，请参阅此[技术说明](../../technotes/upgrades/console.md)。
+>请注意，客户端控制台的32位版本自8.5版本以来已被弃用。 从8.6开始，客户端控制台仅以64位提供。 有关如何升级系统的详细信息，请参阅此 [技术说明](../../technotes/upgrades/console.md).
 
-### Web 浏览器{#web-browsers}
+### Web 浏览器 {#web-browsers}
 
 * **Microsoft Edge**
 
 * **Microsoft Edge WebView2**，最新版本。从 [Microsoft 开发人员网站](http://www.adobe.com/go/acc-ms-webview2-runtime-download_cn){target="_blank"}下载该浏览器。
 
-## CRM 连接器{#CRMconnectors}
+## CRM 连接器 {#CRMconnectors}
 
 下面列出了与 Adobe Campaign 兼容的客户关系管理 (CRM) 系统。[了解详情](../connect/crm.md)。
 
@@ -58,26 +58,24 @@ ht-degree: 88%
 * **[!DNL Snowflake]**
 * **[!DNL Vertica]**
 
-## 移动 SDK{#MobileSDK}
+## 移动 SDK {#MobileSDK}
 
 要使用 Campaign 发送[推送通知](../send/push.md)，您可以通过在“数据收集”UI 中配置 Adobe Campaign 扩展来使用 Adobe Experience Platform Mobile SDK。
 
+中详细介绍了iOS和Android的兼容版本 [Adobe Developer文档](https://developer.adobe.com/client-sdks/home/)
 
-## Web 访问{#web-access}
+## Web 访问 {#web-access}
 
 以下浏览器与 Campaign 兼容，可用于[进行 Web 访问](connect.md#web-access)。
 
 * **Microsoft Edge**、**Mozilla Firefox**、**Google Chrome**、**Safari**（最新版本）
 
-## 如何检查您的 Campaign 版本和内部版本{#version}
 
-访问 **Help > About…** 菜单检查您的版本。
+## 其他资源 {#support}
 
-![](assets/ac-version.png)
+* [Campaign版本更新](upgrades.md)
+* [检查您的Campaign版本](upgrades.md#version)
+* [安装Campaign客户端控制台](connect.md)
+* [控制面板版本](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=zh-Hans){target="_blank"}.
 
-您可以访问以下信息：
-
-* 此 **版本** 客户端控制台和应用程序服务器的编号。 在上面的示例中，客户端控制台和应用程序服务器的版本均为8.1.5。
-* 用圆括号括起的 SHA 编号。
-* 用于联系 Adobe 客户关怀团队的链接。
-* 指向 Adobe 隐私政策、使用条款和 Cookie 政策的链接。
+要获悉新的Experience Cloud解决方案版本，请订阅 [Adobe优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html){target="_blank"}.

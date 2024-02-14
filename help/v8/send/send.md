@@ -5,15 +5,15 @@ feature: Email
 role: Data Engineer
 level: Beginner
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
-source-git-commit: 4c79078e32c77499f15906fc81f31ce2b26559d7
+source-git-commit: 84b90cbd150c81edc81f5cc653db6fbe96af80aa
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 3%
+source-wordcount: '808'
+ht-degree: 2%
 
 ---
 
 
-# 发送和监控电子邮件
+# 发送和监控电子邮件  {#send-and-monitor-emails}
 
 当投放已配置并准备好发送时，请确保已运行投放分析。 [了解详情](delivery-analysis.md)
 
@@ -21,12 +21,18 @@ ht-degree: 3%
 
 从跟踪投放的执行情况 **投放** 选项卡，可通过此投放的详细信息或投放列表访问。
 
-## 监测电子邮件
+## 监测电子邮件 {#email-monitoring}
 
-发送后，在投放仪表板中检查您的投放状态，并访问投放日志和报告以确认消息已正确发送。
+发送后，请在 **投放仪表板** 和访问投放日志和报告以确认消息已正确发送。
 
-![](../assets/do-not-localize/book.png) [请参阅 Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html)以了解详情{target="_blank"}
+在投放仪表板中，您可以检查已处理的消息和投放审核日志。 您还可以控制投放日志中消息的状态。
 
+>[!NOTE]
+>
+>投放状态不会实时显示。 了解有关电子邮件反馈服务的更多信息 [在此部分中](#email-feedback-service).
+
+
+![](../assets/do-not-localize/book.png) [请参阅Campaign Classic v7文档以了解有关投放监视的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html){target="_blank"}
 
 ## Campaign MTA {#mta}
 
@@ -73,11 +79,9 @@ MTA有自己的MX规则，根据您自己的历史电子邮件信誉以及来自
 
 ## 电子邮件反馈服务 {#email-feedback-service}
 
-借助电子邮件反馈服务(EFS)功能，每个电子邮件的状态均可进行准确报告，因为反馈是直接从MTA中捕获的。
+Campaign电子邮件反馈服务(EFS)报告使用Adobe Campaign发送的每个电子邮件投放的状态。
 
-投放开始后， **[!UICONTROL Success]** 消息成功从Campaign中继到MTA时的百分比。
-
-投放日志显示 **[!UICONTROL Taken into account by the service provider]** 每个目标地址的状态。
+投放开始后， **[!UICONTROL Success]** 消息成功从Campaign中继到MTA时的百分比。 投放日志显示 **[!UICONTROL Taken into account by the service provider]** 每个目标地址的状态。
 
 当消息实际发送到目标用户档案并从MTA实时报告此信息后，投放日志显示 **[!UICONTROL Sent]** 成功接收消息的每个地址的状态。 此 **[!UICONTROL Success]** 百分比会随着每次成功投放而相应增加。
 
@@ -95,7 +99,7 @@ MTA有自己的MX规则，根据您自己的历史电子邮件信誉以及来自
 >
 >有关投放临时失败后重试的更多信息，请参阅 [本节](delivery-failures.md#retries).
 
-下表显示了如何使用EFS功能在发送过程的每个步骤更新KPI和发送日志状态。
+下表显示在发送过程的每个步骤如何更新KPI和发送日志状态。
 
 | 发送过程中的步骤 | KPI摘要 | 发送日志状态 |
 |--- |--- |--- |

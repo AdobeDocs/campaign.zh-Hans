@@ -5,9 +5,9 @@ feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1394'
 ht-degree: 1%
 
 ---
@@ -174,13 +174,13 @@ ht-degree: 1%
   >
   >标签与实例的当前语言关联。
 
-  **示例**:
+  **示例**：
 
   ```
   <attribute name="email" type="string" length="80" label="Email"/>
   ```
 
-  可从Adobe Campaign客户端控制台输入表单中看到标签：
+  从Adobe Campaign客户端控制台输入表单中可以看到标签：
 
   ![](assets/schema_label.png)
 
@@ -192,7 +192,7 @@ ht-degree: 1%
   >
   >该描述与实例的当前语言相关联。
 
-  **示例**:
+  **示例**：
 
   ```
   <attribute name="email" type="string" length="80" label="Email" desc="Email of recipient"/>
@@ -202,9 +202,9 @@ ht-degree: 1%
 
 此 **默认** 属性允许您定义在创建内容时返回默认值的表达式。
 
-该值必须是符合XPath语言的表达式。 如需详细信息，请参阅[此部分](#reference-with-xpath)。
+该值必须是符合XPath语言的表达式。 如需详细信息，请参阅[此小节](#reference-with-xpath)。
 
-**示例**:
+**示例**：
 
 * 当前日期： **default=&quot;GetDate()&quot;**
 * 计数器： **default=&quot;&#39;FRM&#39;+CounterValue(&#39;myCounter&#39;)&quot;**
@@ -213,7 +213,7 @@ ht-degree: 1%
 
   >[!NOTE]
   >
-  >在Adobe Campaign Client Console中， **[!UICONTROL Administration>Counters]** 节点用于管理计数器。
+  >在Adobe Campaign客户端控制台中， **[!UICONTROL Administration>Counters]** 节点用于管理计数器。
 
 要将默认值链接到字段，您可以使用 `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
@@ -237,7 +237,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->在Adobe Campaign Client Console中， **[!UICONTROL Administration > Enumerations]** 节点用于管理枚举。
+>在Adobe Campaign客户端控制台中， **[!UICONTROL Administration > Enumerations]** 节点用于管理枚举。
 
 #### 设置明细列表 {#set-enumeration}
 
@@ -337,7 +337,7 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 
 元素由名称指定，属性由名称指定，名称前面加有字符“@”。
 
-**示例**:
+**示例**：
 
 * **@email**：选择电子邮件，
 * **location/@city**：选择“城市”属性位于 **`<location>`** 元素
@@ -360,11 +360,11 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 
 在表达式中添加了高级函数，以丰富此语言的潜力。
 
-您可以在Adobe Campaign客户端控制台中通过任何表达式编辑器访问可用函数的列表：
+您可以通过Adobe Campaign客户端控制台中的任意表达式编辑器访问可用函数的列表：
 
 ![](assets/schema_function.png)
 
-**示例**:
+**示例**：
 
 * **GetDate()**：返回当前日期
 * **年(@created)**：返回“已创建”属性中包含的日期的年份。

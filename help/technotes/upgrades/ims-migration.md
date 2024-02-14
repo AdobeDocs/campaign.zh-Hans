@@ -4,7 +4,7 @@ description: 了解如何将Campaign技术操作员迁移到Adobe Developer控�
 feature: Technote
 role: Admin
 exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
-source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
+source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 0%
@@ -220,11 +220,11 @@ You can now add your Campaign product profile to the project, as detailed below:
 
    ![](assets/do-not-localize/ims-updates-08.png)
 
-1. 现在，您需要在Adobe Campaign客户端控制台中更新新创建的技术运算符。 您必须将现有的技术操作员文件夹权限应用到新的技术操作员。
+1. 您现在需要在Adobe Campaign客户端控制台中更新新创建的技术运算符。 您必须将现有的技术操作员文件夹权限应用到新的技术操作员。
 
    要更新此运算符，请执行以下步骤：
 
-   1. 在Campaign Client Console资源管理器中，浏览到 **管理>访问管理>运算符**.
+   1. 在Campaign客户端控制台资源管理器中，浏览到 **管理>访问管理>运算符**.
    1. 访问用于API的现有技术操作员。
    1. 浏览到文件夹权限并检查权限。
    1. 将相同的权限应用到新创建的技术操作员。 该操作员的电子邮件是 **技术帐户电子邮件** 值之前已复制。

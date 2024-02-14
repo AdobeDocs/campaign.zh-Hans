@@ -5,10 +5,10 @@ feature: Audiences, Profiles, Seed Address, Proofs
 role: User
 level: Beginner
 exl-id: 878b5963-100c-4dd7-97a0-c59a62c493b1
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 79d916c4d65c0c55ec20f2f5850fec40fe4e99a3
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 0%
+source-wordcount: '928'
+ht-degree: 1%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 ## 什么是种子地址？ {#gs-seeds}
 
-测试用户档案作为种子地址创建。 它们用于定位不符合所规定目标标准的收件人。 种子地址允许您通过在发送投放之前发送校样来预览和测试个性化和渲染。
+测试配置文件被创建为种子地址。它们用于定位不符合所规定目标标准的收件人。 种子地址允许您通过在发送投放之前发送校样来预览和测试个性化和渲染。
 
 种子地址具有以下优点：
 
-* 使用从收件人用户档案中获取的数据随机替换字段：例如，您可以在种子地址部分仅输入电子邮件地址，并让Campaign自动填写用户档案的其他字段。 了解详情，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case--selecting-seed-addresses-on-criteria.html?lang=en){target="_blank"}.
+* 使用从收件人用户档案中获取的数据随机替换字段：例如，您可以在种子地址部分仅输入电子邮件地址，并让Campaign自动填写用户档案的其他字段。 了解详情，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case--selecting-seed-addresses-on-criteria.html){target="_blank"}.
 * 使用具有数据管理功能的工作流时，可在种子地址级别输入投放中已处理的其他数据，以强制使用该值：这可以作为随机值替代的另一做法。
 * 系统会自动从以下投放统计信息的报表中排除种子地址： **[!UICONTROL Clicks]**， **[!UICONTROL Opens]**， **[!UICONTROL Unsubscriptions]**.
 

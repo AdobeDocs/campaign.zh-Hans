@@ -5,7 +5,7 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 2dbe73df0cbc194ec6c239e13851395a0b94c991
+source-git-commit: 92fe7c41047aafd26cca70a547025a3eff73e398
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 16%
@@ -33,7 +33,7 @@ _2024年2月14日_
 
 * Adobe Campaign v8现在集成了 **Adobe Experience Manager as a Cloud Service**，创作功能通过Adobe Campaign Web用户界面专门提供。 [了解详情](../connect/ac-aem.md)
 
-* 您现在可以使用 **Adobe Experience Manager Assets library** 此外，即使您的Adobe Campaign实例上安装了与Adobe Experience Cloud的集成，也会您的Experience Cloud资源。[了解详情](../connect/ac-aem.md)
+* 您现在可以使用 **Adobe Experience Manager Assets library** 此外，即使您的Adobe Campaign实例上安装了与Adobe Experience Cloud的集成，也会您的Experience Cloud资源。[了解详情](../connect/ac-aem.md#assets-library)
 
 ### 一般改进 {#improvements-8-6-1}
 

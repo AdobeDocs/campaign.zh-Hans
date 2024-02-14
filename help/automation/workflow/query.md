@@ -5,10 +5,10 @@ description: 了解有关查询工作流活动的更多信息
 feature: Workflows, Targeting Activity, Query Editor
 role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
-source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
+source-git-commit: 0191ca8c29813c448040fc887f98550c74197578
 workflow-type: tm+mt
-source-wordcount: '1545'
-ht-degree: 1%
+source-wordcount: '1553'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 通过查询，您可以根据条件选择目标。 您可以将区段代码关联到查询结果并在其中插入附加数据。
 有关查询示例的详细信息，请参阅此 [本节](querying-recipient-table.md).
 
-![](assets/query-activity.png)
+![](assets/query-activity.png){width="70%" align="center" zoomable="yes"}
 
 有关使用和管理附加数据的更多信息，请参阅 [添加数据](#adding-data).
 
@@ -35,15 +35,15 @@ ht-degree: 1%
 
    有关详细信息，请参见 [定位和筛选维度](targeting-workflows.md#targeting-and-filtering-dimensions).
 
-   ![](assets/targeting-filtering-dimensions.png)
+   ![](assets/targeting-filtering-dimensions.png){width="70%" align="center" zoomable="yes"}
 
    查询可以基于集客过渡的数据，如有必要，可通过选择 **[!UICONTROL Temporary schema]** 选择定位和过滤维度时。
 
-   ![](assets/query_temporary_table.png)
+   ![](assets/query_temporary_table.png){width="70%" align="center" zoomable="yes"}
 
 1. 使用向导定义群体。 要输入的字段可以因目标类型而异。 您可以使用以下工具预览符合您当前条件的目标群体 **[!UICONTROL Preview]** 选项卡。
 
-   ![](assets/query-sample.png)
+   ![](assets/query-sample.png){width="70%" align="center" zoomable="yes"}
 
 1. 如果您已选择 **[!UICONTROL Filtering conditions]** 在步骤1中或使用 **[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]** 选项，之后您将必须手动添加筛选条件。
 
@@ -59,11 +59,11 @@ ht-degree: 1%
 
 此 **[!UICONTROL Add data...]** 链接允许您选择要收集的其他数据。
 
-![](assets/wf_add_data_link.png)
+![](assets/wf_add_data_link.png){width="70%" align="center" zoomable="yes"}
 
 首先，选择要添加的数据类型：
 
-![](assets/wf_add_data_1st_option.png)
+![](assets/wf_add_data_1st_option.png){width="70%" align="center" zoomable="yes"}
 
 * 选择 **[!UICONTROL Data linked to the filtering dimension]** 以选择Adobe Campaign数据库中的数据。
 * 选择 **[!UICONTROL External data]** 从外部数据库添加数据。 此选项仅在您购买了 **联合数据访问** 选项。 有关详细信息，请参见 [访问外部数据库（联合数据访问）](accessing-an-external-database--fda-.md).
@@ -75,11 +75,11 @@ ht-degree: 1%
 
 1. 选择要添加的数据类型。 这可以是属于筛选维度的数据或存储在链接表中的数据。
 
-   ![](assets/query_add_columns.png)
+   ![](assets/query_add_columns.png){width="70%" align="center" zoomable="yes"}
 
 1. 如果数据属于查询的过滤维度，则只需在可用字段列表中选择该数据，即可在输出列中显示该数据。
 
-   ![](assets/wf_add_data_field_selection.png)
+   ![](assets/wf_add_data_field_selection.png){width="70%" align="center" zoomable="yes"}
 
    您可以添加：
 
@@ -93,7 +93,7 @@ ht-degree: 1%
 1. 在向导的第一步，选择 **[!UICONTROL Data linked to the filtering dimension]** 选项：
 1. 选择包含要收集信息的表，然后单击 **[!UICONTROL Next]**.
 
-   ![](assets/wf_add_data_linked_table.png)
+   ![](assets/wf_add_data_linked_table.png){width="70%" align="center" zoomable="yes"}
 
 1. 如有必要，通过选择集合中的值之一来指定要保留的集合元素数。 **[!UICONTROL Data collected]** 字段。 默认情况下，将恢复集合中的所有行，然后根据在以下步骤中指定的条件进行筛选。
 
@@ -108,11 +108,11 @@ ht-degree: 1%
    * 如果选择恢复多行(**[!UICONTROL Limit the line count]**)您可以指定要收集的行数。
    * 如果收集的列包含聚合，例如声明的失败次数、网站的平均支出等等 您可以使用 **[!UICONTROL Aggregates]** 值。
 
-   ![](assets/query_add_collection_param.png)
+   ![](assets/query_add_collection_param.png){width="70%" align="center" zoomable="yes"}
 
 1. 指定集合的子选择。
 
-   ![](assets/query_add_columns_collection_filter.png)
+   ![](assets/query_add_columns_collection_filter.png){width="70%" align="center" zoomable="yes"}
 
 1. 如果您已选择 **[!UICONTROL Limit the line count]** 选项，定义所收集数据的过滤顺序。 一旦收集的行数超过您指定的要保留的行数，则筛选顺序允许您指定要保留的行。
 
@@ -133,20 +133,20 @@ ht-degree: 1%
    * 18岁以上的收件人。
    * 居住在法国的收件人。
 
-   ![](assets/query_example.png)
+   ![](assets/query_example.png){width="70%" align="center" zoomable="yes"}
 
    您可以查看与您的条件组合匹配的SQL：
 
-   ![](assets/query_example_sql.png)
+   ![](assets/query_example_sql.png){width="70%" align="center" zoomable="yes"}
 
 1. 您可以通过预览在相关选项卡中与您的查询匹配的收件人，来检查您的标准是否正确：
 
-   ![](assets/query_example_preview.png)
+   ![](assets/query_example_preview.png){width="70%" align="center" zoomable="yes"}
 
 1. 保存您的过滤器，以便您以后可以通过单击 **[!UICONTROL Finish]** > **[!UICONTROL OK]**.
 1. 通过向工作流中添加其他活动来继续编辑工作流。 启动查询并完成上一个查询步骤后，将显示找到的收件人数量。 您可以使用鼠标弹出菜单显示更多详细信息(右键单击过渡> **[!UICONTROL Display the target...]**)。
 
-   ![](assets/query_example_result.png)
+   ![](assets/query_example_result.png){width="70%" align="center" zoomable="yes"}
 
 ## 输出参数 {#output-parameters}
 
@@ -177,7 +177,7 @@ ht-degree: 1%
 
   确保您知道查询的执行计划。 避免进行完整的表扫描，特别是对于每分钟运行的实时查询或近乎实时的查询。
 
-### 函数 {#functions}
+### 功能 {#functions}
 
 * 请注意以下功能 `Lower(...)`. 当使用Lower函数时，不使用Index。
 * 仔细检查使用“like”指令或“upper”或“lower”指令的查询。 将“Upper”应用于用户输入，而不是数据库字段。
@@ -186,7 +186,7 @@ ht-degree: 1%
 
 使用查询的筛选维度，而不是使用“存在方式”运算符。
 
-![](assets/optimize-queries-filtering.png)
+![](assets/optimize-queries-filtering.png){width="70%" align="center" zoomable="yes"}
 
 在查询中，过滤器中的“存在”条件无效。 它们等同于SQL中的子查询：
 
@@ -194,7 +194,7 @@ ht-degree: 1%
 
 最佳实践是改用查询的筛选维度：
 
-![](assets/optimize-queries-filtering2.png)
+![](assets/optimize-queries-filtering2.png){width="70%" align="center" zoomable="yes"}
 
 SQL中过滤维度的等效项是内部联接：
 
@@ -207,10 +207,10 @@ SQL中过滤维度的等效项是内部联接：
 * 构建开发平台，其卷、参数和架构与生产平台相似。
 * 对开发和生产环境使用相同的值。 请尽量使用相同的方式：
 
-   * 操作系统,
-   * 版本,
-   * 数据,
-   * 应用程序,
+   * 操作系统，
+   * 版本，
+   * 数据，
+   * 应用程序，
    * 卷。
 
   >[!NOTE]

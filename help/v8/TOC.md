@@ -1,14 +1,14 @@
 ---
 audience: end-user
 user-guide-title: Campaign v8
-user-guide-description: Adobe Campaign v8 的产品文档。
+user-guide-description: Adobe Campaign v8（客户端控制台）的产品文档。
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: f04db53bee75c935bc8737eef93fa05ec6868ebc
+source-git-commit: df0c05495788fc497af51092f482e879fe2dffa7
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 86%
+source-wordcount: '575'
+ht-degree: 83%
 
 ---
 
@@ -19,8 +19,10 @@ ht-degree: 86%
 + 版本和最新更新 {#releases}
    + [文档更新](start/documentation-updates.md)
    + [早期发行说明](start/e-release-notes.md)
+   + [版本和升级](start/upgrades.md)
    + [发行说明](start/release-notes.md)
    + 之前的发行说明 {#previous-rn}
+      + [2023](start/release-notes-2023.md)
       + [2022](start/release-notes-2022.md)
       + [2021](start/release-notes-2021.md)
    + [护栏](start/ac-guardrails.md)
@@ -29,9 +31,9 @@ ht-degree: 86%
 + 入门 {#new}
    + [Adobe Campaign 入门](start/get-started.md)
    + [重要功能](start/whats-new.md)
-   + [组件和流程](start/ac-components.md)
+   + [了解用户界面](start/campaign-ui.md)
    + [连接到 Campaign](start/connect.md)
-   + [Campaign 界面](start/campaign-ui.md)
+   + [组件和流程](start/ac-components.md)
    + [从 Classic v7 到 v8](start/v7-to-v8.md)
    + [常见问题解答](start/campaign-faq.md)
 + Campaign 管理 {#campaigns}
@@ -42,6 +44,7 @@ ht-degree: 86%
    + 电子邮件 {#emails}
       + [设计和验证电子邮件](send/email.md)
       + [链接到镜像页面](send/mirror-page.md)
+      + [添加密送地址](send/email-bcc.md)
       + [定义其他电子邮件参数](send/email-parameters.md)
       + [发送和监测电子邮件](send/send.md)
    + [短信](send/sms.md)
@@ -174,7 +177,6 @@ ht-degree: 86%
    + 设置和配置{#configuration}
       + [用户界面设置](config/ui-settings.md)
       + [管理文件夹和视图](audiences/folders-and-views.md)
-      + [电子邮件设置](config/email-settings.md)
       + [事务性消息设置](config/transactional-msg-settings.md)
       + [将Campaign SDK与您的应用程序集成 — 已弃用页面](config/push-config.md)
       + [外部帐户](config/external-accounts.md)

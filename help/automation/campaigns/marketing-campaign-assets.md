@@ -5,7 +5,7 @@ description: 了解有关营销活动文档和投放概要的更多信息
 feature: Campaigns
 role: User
 exl-id: 352f6cd5-777d-413d-af79-6f53444b336f
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 0%
@@ -120,4 +120,4 @@ ht-degree: 0%
 
 ![](assets/campaign-export-template.png)
 
-导出模型必须与为相关投放选择的服务提供商关联。 请参阅[此章节](providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。
+导出模型必须与为相关投放选择的服务提供商关联。 请参阅 [本节](providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).

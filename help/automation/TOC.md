@@ -1,18 +1,18 @@
 ---
 audience: user
-user-guide-title: Campaign 自动化指南
-user-guide-description: Campaign 自动化指南
-source-git-commit: 75b65efce6b37e3d948f6af4a89ea3b0a5ac1a86
+user-guide-title: Campaign自动化指南
+user-guide-description: Campaign自动化指南
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 84%
+source-wordcount: '442'
+ht-degree: 81%
 
 ---
 
 
 # Campaign自动化指南 {#automation}
 
-+ [Campaign 自动化指南](home.md)
++ [Campaign自动化指南](home.md)
 + 使用工作流实现自动化 {#workflows}
    + 工作流入门 {#introduction}
       + [关于工作流](workflow/about-workflows.md)
@@ -62,7 +62,7 @@ ht-degree: 84%
          + [审批](workflow/approval.md)
          + [外部信号](workflow/external-signal.md)
          + [分叉](workflow/fork.md)
-         + [跳转（开始点和结束点）](workflow/jump--start-point-and-end-point-.md)
+         + [跳转（开始点和结束点）](workflow/jump-start-point-and-end-point.md)
          + [开始和结束](workflow/start-and-end.md)
          + [调度程序](workflow/scheduler.md)
          + [子工作流](workflow/sub-workflow.md)
@@ -74,9 +74,9 @@ ht-degree: 84%
          + [内容管理](workflow/content-management.md)
          + [连续投放](workflow/continuous-delivery.md)
          + [跨渠道投放](workflow/cross-channel-deliveries.md)
-         + [数据提取（文件）](workflow/extraction--file-.md)
-         + [数据加载（文件）](workflow/data-loading--file-.md)
-         + [数据加载 (RDBMS)](workflow/data-loading--rdbms-.md)
+         + [数据提取（文件）](workflow/extraction-file.md)
+         + [数据加载（文件）](workflow/data-loading-file.md)
+         + [数据加载 (RDBMS)](workflow/data-loading-rdbms.md)
          + [投放](workflow/delivery.md)
          + [投放控制](workflow/delivery-control.md)
          + [本地审批](workflow/local-approval.md)
@@ -128,7 +128,7 @@ ht-degree: 84%
       + [高级参数](workflow/advanced-parameters.md)
       + [JavaScript 脚本和模板](workflow/javascript-scripts-and-templates.md)
       + [工作流中的 JavaScript 代码示例](workflow/javascript-in-workflows.md)
-      + [访问外部数据库](workflow/accessing-an-external-database--fda-.md)
+      + [访问外部数据库](workflow/accessing-an-external-database-fda.md)
       + [管理权限](workflow/managing-rights.md)
       + [更改活动图像](workflow/change-activity-images.md)
       + [管理时区](workflow/managing-time-zones.md)
@@ -142,7 +142,7 @@ ht-degree: 84%
    + [设置和管理审批](campaigns/marketing-campaign-approval.md)
    + [循环和定期活动](campaigns/recurring-periodic-campaigns.md)
    + [监测活动](campaigns/marketing-campaign-monitoring.md)
-   + [供应商、库存和预算](campaigns/providers--stocks-and-budgets.md)
+   + [供应商、库存和预算](campaigns/providers-stocks-and-budgets.md)
 + 活动优化（插件）{#campaign-optimization}
    + [营销活动类型入门](campaign-opt/campaign-typologies.md)
    + [筛选规则](campaign-opt/filtering-rules.md)

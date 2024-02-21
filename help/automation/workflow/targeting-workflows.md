@@ -3,9 +3,9 @@ title: 创建定位工作流
 description: 了解如何在工作流中创建目标受众
 feature: Query Editor, Data Management
 exl-id: 27be9d5a-168c-470e-a480-f3c71858fc75
-source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
-source-wordcount: '2248'
+source-wordcount: '2252'
 ht-degree: 6%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 6%
 
 ### 使用其他数据 {#select-data}
 
-A **[!UICONTROL Query]** 通过活动，可选择基本数据以构建目标群体。 如需详细信息，请参阅[此部分](query.md#create-a-query)。
+A **[!UICONTROL Query]** 通过活动，可选择基本数据以构建目标群体。 如需详细信息，请参阅[此小节](query.md#create-a-query)。
 
 您还可以使用以下活动来查询和优化数据库中的数据： [增量查询](incremental-query.md)， [读取列表](read-list.md).
 
@@ -123,7 +123,7 @@ A **[!UICONTROL Query]** 通过活动，可选择基本数据以构建目标群�
 
 除了目标数据之外，您还可以仅使用附加数据作为筛选条件将目标分割成多个子集。 如果您已购买 **联合数据访问** 选项。
 
-如需详细信息，请参阅[此部分](#create-subsets-using-the-split-activity)。
+如需详细信息，请参阅[此小节](#create-subsets-using-the-split-activity)。
 
 ## 区段数据 {#segment-data}
 
@@ -270,7 +270,7 @@ A **[!UICONTROL Query]** 通过活动，可选择基本数据以构建目标群�
 
 为了实施这些操作，Adobe Campaign提供：
 
-* 数据收集活动： [文件传输](file-transfer.md)， [数据加载（文件）](data-loading--file-.md)， [数据加载(RDBMS)](data-loading--rdbms-.md)， [更新数据](update-data.md). 收集数据的第一个步骤是准备数据，以便在其他活动中处理这些数据。 为了确保工作流正确执行并提供预期结果，需要监控多个参数。 例如，在导入数据时，此数据的主键(Pkey)对于每个记录都必须是唯一的。
+* 数据收集活动： [文件传输](file-transfer.md)， [数据加载（文件）](data-loading-file.md)， [数据加载(RDBMS)](data-loading-rdbms.md)， [更新数据](update-data.md). 收集数据的第一个步骤是准备数据，以便在其他活动中处理这些数据。 为了确保工作流正确执行并提供预期结果，需要监控多个参数。 例如，在导入数据时，此数据的主键(Pkey)对于每个记录都必须是唯一的。
 * 已使用数据管理选项扩充定向活动： [查询](query.md)， [并集](union.md)， [交叉](intersection.md)， [Split](split.md). 这允许您在来自多个不同定向维的数据之间配置并集或交集，只要能够协调数据即可。
 * 数据转换活动： [扩充](enrichment.md)， [更改维度](change-dimension.md).
 

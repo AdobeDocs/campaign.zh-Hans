@@ -5,10 +5,10 @@ description: 创建摘要列表
 feature: Workflows, Data Management
 role: User
 exl-id: 86dee66a-357a-4927-916e-51cde6c006d5
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 2%
+source-wordcount: '975'
+ht-degree: 1%
 
 ---
 
@@ -56,7 +56,7 @@ Phone;500;London 5
 
    此 **文件收集器** 通过活动，您可以收集文件，并将其发送到Adobe Campaign服务器。
 
-   此 **正在加载数据（文件）** 通过活动，您可以使用收集的数据扩充工作流的工作表。 有关此活动的更多信息，请参阅 [此页面](data-loading--file-.md).
+   此 **正在加载数据（文件）** 通过活动，您可以使用收集的数据扩充工作流的工作表。 有关此活动的更多信息，请参阅 [此页面](data-loading-file.md).
 
 1. 配置 **文件收集器** 收集文本的活动(&#42;.txt)从所选目录中键入文件。
 

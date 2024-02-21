@@ -5,7 +5,7 @@ description: 了解有关查询工作流活动的更多信息
 feature: Workflows, Targeting Activity, Query Editor
 role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
-source-git-commit: 0191ca8c29813c448040fc887f98550c74197578
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1553'
 ht-degree: 0%
@@ -66,7 +66,7 @@ ht-degree: 0%
 ![](assets/wf_add_data_1st_option.png){width="70%" align="center" zoomable="yes"}
 
 * 选择 **[!UICONTROL Data linked to the filtering dimension]** 以选择Adobe Campaign数据库中的数据。
-* 选择 **[!UICONTROL External data]** 从外部数据库添加数据。 此选项仅在您购买了 **联合数据访问** 选项。 有关详细信息，请参见 [访问外部数据库（联合数据访问）](accessing-an-external-database--fda-.md).
+* 选择 **[!UICONTROL External data]** 从外部数据库添加数据。 此选项仅在您购买了 **联合数据访问** 选项。 有关详细信息，请参见 [访问外部数据库（联合数据访问）](accessing-an-external-database-fda.md).
 * 选择 **[!UICONTROL An offer proposition]** 用于添加一组列的选项，这些列允许您存储优惠引擎生成的最佳建议。 此选项仅在您购买了 **互动** 模块。
 
 如果平台上未安装可选模块，则不会显示此阶段。 你将被直接带往下一个阶段。

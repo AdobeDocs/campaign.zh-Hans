@@ -2,7 +2,7 @@
 title: 将Campaign操作员迁移到AdobeIdentity Management System (IMS)
 description: 了解如何将Campaign操作员迁移到AdobeIdentity Management System (IMS)
 exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
-source-git-commit: b539b84907c7232f236b96ae8dfd11c8998a06b9
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 1%
@@ -97,7 +97,7 @@ ht-degree: 1%
 
    了解关于 **查询** 中的活动 [此页面](../../automation/workflow/query.md)
 
-   了解关于 **数据提取（文件）** 中的活动 [此页面](../../automation/workflow/extraction--file-.md)
+   了解关于 **数据提取（文件）** 中的活动 [此页面](../../automation/workflow/extraction-file.md)
 
 1. 使用包含操作员电子邮件的新列更新CSV文件。
 
@@ -109,7 +109,7 @@ ht-degree: 1%
 
    ![](assets/data-loading-activity.png){width="70%"}
 
-   了解关于 **数据加载（文件）** 中的活动 [此页面](../../automation/workflow/data-loading--file-.md)
+   了解关于 **数据加载（文件）** 中的活动 [此页面](../../automation/workflow/data-loading-file.md)
 
 1. 编辑 **更新数据** 活动，并根据以下示例定义设置。 请注意 **已更新维度** 已更改为 `Operators (xtk)`.
 

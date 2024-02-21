@@ -5,9 +5,9 @@ description: 了解如何控制成本
 feature: Campaigns, Resource Management
 role: User
 exl-id: 51f3add9-a083-4db1-84a6-3aaaeec0465c
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
-source-wordcount: '2409'
+source-wordcount: '2428'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 1. 定义预算。 [了解详情](#creating-a-budget)。
 
-1. 定义成本计算方法：为服务提供商定义成本结构。 [了解详情](../campaigns/providers--stocks-and-budgets.md)。
+1. 定义成本计算方法：为服务提供商定义成本结构。 [了解详情](../campaigns/providers-stocks-and-budgets.md)。
 
 1. 定义营销活动成本（投放/任务） ：投放和任务产生的成本为营销活动模板单独或全局输入。 [了解详情](../campaigns/marketing-campaign-deliveries.md#compute-costs-and-stocks)。
 
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->您可以选择相关预算。 如需详细信息，请参阅[此部分](#linking-a-budget-to-another)。
+>您可以选择相关预算。 如需详细信息，请参阅[此小节](#linking-a-budget-to-another)。
 >
 
 ### 计算金额 {#calculating-amounts}
@@ -144,7 +144,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->成本类别及结构呈列于 [此页面](../campaigns/providers--stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories)
+>成本类别及结构呈列于 [此页面](../campaigns/providers-stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories)
 
 ## 成本承诺、计算及计费 {#cost-commitment--calculation-and-charging}
 
@@ -207,7 +207,7 @@ ht-degree: 1%
 
 #### 第2步 — 配置服务提供商并定义成本结构 {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-1. 从创建服务提供商和服务模板及其成本结构 **[!UICONTROL Administration > Campaigns]** 节点。 如需详细信息，请参阅[此部分](../campaigns/providers--stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories)。
+1. 从创建服务提供商和服务模板及其成本结构 **[!UICONTROL Administration > Campaigns]** 节点。 如需详细信息，请参阅[此小节](../campaigns/providers-stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories)。
 
    对于直邮投放，创建成本类别 **[!UICONTROL Envelopes]** （类型114x229和162x229）， **[!UICONTROL Postage]** 和 **[!UICONTROL Print]** （类型A3和A4）。 然后，创建以下成本结构：
 

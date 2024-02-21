@@ -5,7 +5,7 @@ description: 了解如何创建和执行营销活动
 feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: d7750add8d71bb51ea1c099a45a7bce05da3b4d7
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 3%
@@ -92,7 +92,7 @@ Campaign编排组件位于 **[!UICONTROL Campaigns]** 选项卡：您可以在�
 * [管理资源和文档](marketing-campaign-assets.md)
 * [构建目标受众](marketing-campaign-target.md)
 * [设置审批流程](marketing-campaign-approval.md)
-* [管理库存和预算](providers--stocks-and-budgets.md)
+* [管理库存和预算](providers-stocks-and-budgets.md)
 
 
 ### 编辑Campaign设置 {#campaign-settings}
@@ -102,7 +102,7 @@ Campaign编排组件位于 **[!UICONTROL Campaigns]** 选项卡：您可以在�
 对于每个活动，都提供以下功能：
 
 * 参考文档和资源：您可以将文档与营销活动关联（简介、报告、图像等）。 支持所有文档格式。 [了解详情](marketing-campaign-deliveries.md#manage-associated-documents)。
-* 定义成本：对于每个市场活动，Adobe Campaign允许您定义成本录入和成本计算结构，在创建市场营销活动时使用这些结构。 例如：印刷费用、使用外部代理、房间租赁等。 [了解详情](providers--stocks-and-budgets.md#defining-cost-categories)。
+* 定义成本：对于每个市场活动，Adobe Campaign允许您定义成本录入和成本计算结构，在创建市场营销活动时使用这些结构。 例如：印刷费用、使用外部代理、房间租赁等。 [了解详情](providers-stocks-and-budgets.md#defining-cost-categories)。
 * 定义目标：您可以定义促销活动的可量化目标，例如订户数、业务量等。 此信息稍后将在营销活动报表中使用。
 * 管理种子地址和对照组。 [了解详情](marketing-campaign-deliveries.md#defining-a-control-group)。
 * 管理审批：您可以选择要批准的处理，并根据需要选择审核操作员或操作员组。 [了解详情](marketing-campaign-approval.md#checking-and-approving-deliveries)。

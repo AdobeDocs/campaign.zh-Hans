@@ -5,7 +5,7 @@ description: 了解如何管理营销资源
 feature: Campaigns, Resource Management
 role: User
 exl-id: 4d91fb7d-f846-4644-b83d-5a6a988ae297
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1111'
 ht-degree: 1%
@@ -172,7 +172,7 @@ ht-degree: 1%
 
 要将营销资源与股票相关联，请执行以下步骤：
 
-1. 编辑股票或创建新股票。 进一步了解中的股票 [本节](../campaigns/providers--stocks-and-budgets.md#stock-management).
+1. 编辑股票或创建新股票。 进一步了解中的股票 [本节](../campaigns/providers-stocks-and-budgets.md#stock-management).
 
 1. 添加库存行，然后选择相应的营销资源。
 

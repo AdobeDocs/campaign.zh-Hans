@@ -4,9 +4,9 @@ title: 子工作流
 description: 了解有关子工作流活动的更多信息
 feature: Workflows
 exl-id: c530fb4e-d21e-4059-88e1-77a8d33a7832
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 您可以在单个工作流中调用多个子工作流。 子工作流被同步执行。
 
-在下面的示例中，主工作流使用跳转调用子工作流。 有关跳转类型图形对象的详细信息，请参见 [本节](jump--start-point-and-end-point-.md).
+在下面的示例中，主工作流使用跳转调用子工作流。 有关跳转类型图形对象的详细信息，请参见 [本节](jump-start-point-and-end-point.md).
 
 1. 创建要用作另一个工作流中的子工作流的工作流。
 1. 插入 **[!UICONTROL Jump (end point)]** 工作流开头优先级为1的活动。 如果您有多个“端点”类型跳转，Adobe Campaign将使用编号最低的“端点”跳转。

@@ -1,6 +1,6 @@
 ---
 title: 使用客户端控制台连接到Campaign
-description: 了解如何在计算机上安装Campaign客户端控制台并连接到Adobe Campaign
+description: 了解如何在您的计算机上安装 Campaign 客户端控制台以及如何连接到 Adobe Campaign
 feature: Client Console
 role: User
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 source-git-commit: 9df599ec0a898a1af16cb92d334d50375fde86ba
 workflow-type: tm+mt
 source-wordcount: '850'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 

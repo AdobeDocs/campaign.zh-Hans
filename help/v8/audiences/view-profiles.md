@@ -5,9 +5,9 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 03f7a736-e0b9-4216-9550-507f10e6fcf6
-source-git-commit: b5574ba2d9fa520b701f7af4e34862304b825a66
+source-git-commit: 59d33983db930b3a7dc022693d72704bda99e3a1
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '452'
 ht-degree: 4%
 
 ---
@@ -80,16 +80,3 @@ ht-degree: 4%
 * **跟踪**，用于选定用户档案的所有跟踪日志。 此信息用于跟踪投放后的用户档案行为。 此选项卡显示投放中跟踪的所有URL的累积总数。 该列表是可配置的，通常包含：点击的URL、点击的日期和时间，以及包含该URL的文档
 
   了解有关跟踪的更多信息 [在此部分中](../start/tracking.md).
-
-
-## 使用中的用户档案 {#active-profiles}
-
-活动用户档案是客户在过去12个月内尝试通过任何渠道与之通信的用户档案。 许可证量度基于活动用户档案。 了解详情，请参阅 [Adobe Campaign产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
-
->[!CAUTION]
->
->* 被多次投放定向的用户档案只会被计数一次。
->
->* 在X上的社交营销上下文中定位的用户档案(以前称为Twitter)不被视为活动用户档案。
-
-您可以直接从Campaign控制面板监控实例上的活动用户档案数。 有关详细信息，请参见 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.

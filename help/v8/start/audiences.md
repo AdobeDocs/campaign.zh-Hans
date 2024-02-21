@@ -5,10 +5,10 @@ feature: Audiences
 role: User
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 59d33983db930b3a7dc022693d72704bda99e3a1
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 22%
+source-wordcount: '453'
+ht-degree: 16%
 
 ---
 
@@ -39,17 +39,17 @@ ht-degree: 22%
 了解如何在的营销活动工作流中构建受众 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans)
 
 
-## 使用中的用户档案{#active-profiles}
+## 使用中的用户档案 {#active-profiles}
 
-根据您的合同，您的每个Campaign实例都会配置特定数量的活动用户档案，并对这些活动用户档案进行计数以计费。 请参阅您的最新合同，了解已购买的活动用户档案数量。
+活动用户档案是客户在过去12个月内尝试通过任何渠道与之通信的用户档案。 许可证量度基于活动用户档案。 了解详情，请参阅 [Adobe Campaign产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-**个人资料** 是指信息记录(例如： [收件人表](../dev/datamodel.md) 或包含表示最终客户、潜在客户或潜在客户的Cookie ID、客户ID、移动标识符或与特定渠道相关的其他信息的外部表。 如果用户档案在过去12个月内通过任何渠道被定向或传达，则视为处于活动状态。
+您可以直接从Campaign控制面板监控实例上的活动用户档案数。 有关详细信息，请参见 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
 
-<!--
-You can monitor the number of active profiles used on your instances directly from Campaign Control Panel. 
-
-![](../assets/do-not-localize/book.png) For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
--->
+>[!CAUTION]
+>
+>* 被多次投放定向的用户档案只会被计数一次。
+>
+>* 在X(Twitter)的社交营销上下文中定位的用户档案不会计为活动用户档案。
 
 ## 隐私和同意{#privacy-and-consent}
 

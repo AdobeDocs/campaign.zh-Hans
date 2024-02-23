@@ -5,9 +5,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 2f8cee4522efb59782a568334fc1300fc39d559f
+source-git-commit: 3b790305984436f1168f9c73aa09df509b2217f0
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '478'
 ht-degree: 16%
 
 ---
@@ -21,10 +21,19 @@ Adobe Campaign 会定期更新。这种定期更新旨在让您掌握最新、�
 此外，作为客户，请确保您使用的是 [兼容性矩阵](compatibility-matrix.md).
 
 
+## 8.6.2版 {#release-8-6-2}
+
+_2024年2月23日_
+
+### 修复 {#fixes-8-6-2}
+
+此版本修复了以下问题：
+
+* 修复了中间源实例上可能发生的性能问题(NEO-72595)。
+
 ## 8.6.1版 {#release-8-6-1}
 
 _2024年2月14日_
-
 
 ### 新增功能 {#new-8-6-1}
 

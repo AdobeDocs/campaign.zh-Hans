@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
+source-git-commit: 9ad8158f280acae2c2d10161f8ac6157398b9e3d
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 90%
+source-wordcount: '1029'
+ht-degree: 77%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 90%
 
 Adobe Campaign v8 专为需要同类最佳云解决方案的跨渠道营销人员而设计，可帮助实现企业规模的跨渠道营销活动管理。它提供了强大的 ETL 和数据管理功能，以帮助制定和策划完美的营销活动。它的编排引擎提供丰富的多接触点营销计划，核心重点放在基于批处理驱动的历程。它还配有一个可扩展的实时消息服务器，使营销团队能够根据任何 IT 系统的总体有效负载发送预定义的消息，如密码重置、订单确认、电子收据等。
 
-Adobe Campaign v8 在基础架构、安全性、可投放性和监测方面有着显著改进。
+Adobe Campaign v8 在基础架构、安全性、可投放性和监测方面有着显著改进。它可用作 **托管Cloud Service** 它将各种服务与主动监督和及时交流相结合。 了解有关Campaign托管Cloud Service的更多信息 [在此部分中](#acms-desc).
 
 ![](assets/home-page.png)
 
@@ -70,9 +70,11 @@ Adobe Campaign v8 支持 Real-Time CDP 和 Adobe Experience Platform 的 Data Co
 
 ### Managed Cloud Services {#acms-desc}
 
-Adobe Campaign v8 是一款托管式云服务，提供主动监督、及时发送警报和服务治理功能。
+Adobe Campaign v8作为托管Cloud Service提供，提供主动监督、及时警报和服务治理。 Adobe 托管式云服务以较低的总体拥有成本为营销人员提供更加灵活、安全且可扩展性更高的跨渠道营销活动管理解决方案。新产品将各种服务与主动监督和及时发送警报的功能相结合。
 
-Adobe 托管式云服务以较低的总体拥有成本为营销人员提供更加灵活、安全且可扩展性更高的跨渠道营销活动管理解决方案。新产品将各种服务与主动监督和及时发送警报的功能相结合。
+托管服务方法使营销人员能够利用云基础架构的运营规模和经济性，而无需内部IT资源的大量支持。 Adobe咨询和实施团队与您合作，评估您的营销计划、现有实践、数据要求和消息传送量，然后他们推荐最合适的服务、支持和可投放性包。 然后，Adobe Campaign Managed Cloud Services团队可以监控和报告营销活动效果、品牌声誉、客户体验量度等。
+
+[下载此白皮书](assets/do-not-localize/IDC-Report-BusinessValueOfAdobeCampaign.pdf) 以进一步了解Adobe Campaign Managed Cloud Services的业务价值。
 
 >[!NOTE]
 >

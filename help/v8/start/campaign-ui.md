@@ -4,9 +4,9 @@ description: 了解如何浏览和使用Campaign用户界面
 feature: Overview
 role: User
 level: Beginner
-source-git-commit: 8666c04f0e98cd6444af831d47056c46019c6088
+source-git-commit: 9ad8158f280acae2c2d10161f8ac6157398b9e3d
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1003'
 ht-degree: 6%
 
 ---
@@ -23,17 +23,7 @@ ht-degree: 6%
 
   了解如何在中安装和配置Campaign客户端控制台 [本节](../start/connect.md).
 
-<!--    ![](assets/home-page.png) -->
-
 * **Web用户界面**  — 作为Campaign v8用户，从v8.6.1版本开始，您现在可以通过Adobe Experience Cloud中央用户界面访问Web环境。 然后，您可以从Web浏览器连接到Adobe Campaign。 通过这个新的界面，您可以创建、管理和执行重要的营销行动。 但是，并非所有Campaign功能都可用。 [了解详情](#ac-web-ui)。
-
-  Campaign Campaign Web用户界面可通过客户端控制台主页使用。
-
-  ![](assets/web-ui.png)
-
-  >[!NOTE]
-  >
-  >如果未显示新的访问卡，请确保在Adobe Experience Cloud外部帐户中以下字段不留空： **服务器**， **租户**， **回调服务器**、和 **关联标记**.
 
 * **Web访问** - Adobe Campaign Web访问功能允许您使用HTML用户界面通过Web浏览器访问Campaign功能的子集。 使用此Web界面可访问报告、控制和验证消息、访问监控功能板等。  了解有关Campaign Web Access的更多信息 [在此部分中](../start/connect.md#web-access).
 
@@ -42,9 +32,15 @@ ht-degree: 6%
 
 ## 使用客户端控制台 {#ui-access}
 
-Campaign客户端控制台是一个本机应用程序，它通过标准互联网协议（如SOAP和HTTP）与Adobe Campaign应用程序服务器进行通信。 Campaign客户端控制台集中了所有功能和设置，并且由于依赖本地缓存，因此需要的带宽最少。 Campaign客户端控制台专为轻松部署而设计，可从互联网浏览器部署并自动更新，无需任何特定的网络配置，因为它只生成HTTP(S)流量。  [了解有关Campaign客户端控制台的更多信息](../start/connect.md).
+Campaign客户端控制台是一个本机应用程序，它通过标准互联网协议（如SOAP和HTTP）与Adobe Campaign应用程序服务器进行通信。 Campaign客户端控制台集中了所有功能和设置，并且由于依赖本地缓存，因此需要的带宽最少。 Campaign客户端控制台专为轻松部署而设计，可从互联网浏览器部署并自动更新，无需任何特定的网络配置，因为它只生成HTTP(S)流量。  [了解有关Campaign客户端控制台的更多信息](../start/connect.md). 您可以从客户端控制台主页的专用卡切换到Campaign Web用户界面。
 
-![](assets/home-page.png)
+![](assets/web-ui.png)
+
+
+>[!NOTE]
+>
+>如果未显示新的访问卡，请确保在Adobe Experience Cloud外部帐户中以下字段不留空： **服务器**， **租户**， **回调服务器**、和 **关联标记**.
+
 
 您还可以使用Web浏览器访问Campaign。 在这种情况下，仅有一组Campaign功能可用。 [了解详情](#web-browser)
 

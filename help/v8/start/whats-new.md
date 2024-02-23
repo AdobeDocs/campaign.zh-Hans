@@ -5,9 +5,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: c8eb0972226da40aae5def0518660f9297697eb2
+source-git-commit: 55324243c70f2bbdace4acac233d1dd470562414
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1028'
 ht-degree: 77%
 
 ---
@@ -72,7 +72,7 @@ Adobe Campaign v8作为托管Cloud Service提供，提供主动监督、及时�
 
 托管服务方法使营销人员能够利用云基础架构的运营规模和经济性，而无需内部IT资源的大量支持。 Adobe咨询和实施团队与您合作，评估您的营销计划、现有实践、数据要求和消息传送量，然后他们推荐最合适的服务、支持和可投放性包。 然后，Adobe Campaign Managed Cloud Services团队可以监控和报告营销活动效果、品牌声誉、客户体验量度等。
 
-[!BADGE PDF]{type=Informative}[阅读本白皮书](https://experienceleague.adobe.com/docs/campaign/assets/IDC-Report-BusinessValueOfAdobeCampaign.pdf){target="_blank"} 以进一步了解Adobe Campaign Managed Cloud Services的业务价值。
+[!BADGE PDF]{type=Informative}[阅读本白皮书](assets/do-not-localize/IDC-Report-BusinessValueOfAdobeCampaign.pdf){target="_blank"} 以进一步了解Adobe Campaign Managed Cloud Services的业务价值。
 
 请注意，新的云架构使Campaign能够简化流程、降低成本、管理风险并提高数据安全性。 您的Campaign v8环境附带为您预配置的专用虚拟专用云(VPC)。
 

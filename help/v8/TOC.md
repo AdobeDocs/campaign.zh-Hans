@@ -5,10 +5,10 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: 05b911d0675fa69fb8041bbc6d5c465266d9f806
+source-git-commit: a79ae8611f413b910fe31c1e1c5213f40e873879
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 85%
+source-wordcount: '577'
+ht-degree: 84%
 
 ---
 
@@ -146,6 +146,7 @@ ht-degree: 85%
    + [Campaign + Experience Manager](connect/ac-aem.md)
    + [Campaign + Target](connect/ac-at.md)
    + [Campaign + Experience Cloud Triggers](connect/ac-triggers.md)
+   + [Campaign + Workfront](connect/ac-workfront.md)
    + [Campaign + X(Twitter)](connect/ac-tw.md)
    + [Campaign + 外部数据库](connect/fda.md)
    + Campaign +您的CRM {#ac-crm}

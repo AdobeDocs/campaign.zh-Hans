@@ -5,10 +5,10 @@ feature: Release Notes
 role: User
 level: Beginner
 hidefromtoc: true
-source-git-commit: 6a77b472a09e19d569bb0e9a778a3a7819068033
+source-git-commit: 032c11f794956d5bdd4a6540ee5dd5b2f92c94dc
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 36%
+source-wordcount: '112'
+ht-degree: 34%
 
 ---
 
@@ -21,6 +21,8 @@ ht-degree: 36%
 
 * 随附的所有新增功能、更改和改进 [!DNL Campaign] 文档中详细介绍了v8.6版本。 [了解更多信息](release-notes.md)
 * 现在，在专用页面中详细介绍了Campaign v8版本管理和升级机制。 [了解更多信息](upgrades.md)
+* 添加了有关Adobe Campaign + Adobe Workfront集成的页面。 [了解更多信息](../connect/ac-workfront.md)
+
 
 
 ## 2024 年 1 月 {#jan-2024}

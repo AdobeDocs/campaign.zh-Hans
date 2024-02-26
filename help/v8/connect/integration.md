@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, User
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
+source-git-commit: 032c11f794956d5bdd4a6540ee5dd5b2f92c94dc
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 11%
+source-wordcount: '380'
+ht-degree: 10%
 
 ---
 
@@ -26,12 +26,13 @@ Adobe Campaign附带几个连接器，允许您与外部应用程序通信、连
 
 Campaign v8可以连接到：
 
+* [Adobe Analytics](../connect/ac-aa.md)
+* [Adobe Experience Cloud触发器](../connect/ac-triggers.md)
+* [Adobe Experience Manager](../connect/ac-aem.md)
 * [Adobe Experience Platform](../connect/ac-aep.md)
 * [Adobe Journey Optimizer](../connect/ac-ajo.md)
-* [Adobe Analytics](../connect/ac-aa.md)
-* [Adobe Experience Manager](../connect/ac-aem.md)
-* [Adobe Experience Cloud触发器](../connect/ac-triggers.md)
 * [Adobe Target](../connect/ac-at.md)
+* [Adobe Workfront](../connect/ac-workfront.md)
 
 您也可以合并 **受众** 和 **资产** 跨Experience Cloud解决方案进行资产共享和受众共享。
 
@@ -52,7 +53,7 @@ CRM连接器支持快速轻松地集成数据：Adobe Campaign提供了一个专
 
 使用FDA连接器（联合数据访问）将Campaign连接到一个或多个服务器 **外部数据库** 并处理存储到其中的信息，而不会影响您的Campaign云数据库数据。
 
-![](../assets/do-not-localize/glass.png) 请参阅[此页面](fda.md)以了解详情
+![](../assets/do-not-localize/glass.png) 了解详情，请参阅 [此页面](fda.md)
 
 ## 使用社交媒体{#gs-social}
 

@@ -4,7 +4,7 @@ description: 了解Adobe Campaign架构中的链接管理
 feature: Data Model, Configuration
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: c7171a121f03eff0d945e64758e3ba1842e5436f
+source-git-commit: 6db351c8b5d30f722ddc4b0261af93cd8e3b72cd
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 * ![](assets/do-not-localize/join_fda_11.png) ：基数1-1
 * ![](assets/do-not-localize/join_fda_1m.png) ：基数1-N
 
-有关FDA表的详细信息，请参阅 [访问外部数据库](../../installation/using/about-fda.md).
+有关FDA表的详细信息，请参阅 [访问外部数据库](../connect/fda.md).
 
 必须在包含通过主元素链接的表的外键的架构中声明链接：
 

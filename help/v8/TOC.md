@@ -5,9 +5,9 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: a79ae8611f413b910fe31c1e1c5213f40e873879
+source-git-commit: 673298a60927902bba71fd9167c5408e538f4929
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '581'
 ht-degree: 84%
 
 ---
@@ -190,6 +190,8 @@ ht-degree: 84%
       + [筛选模式](dev/filter-schema.md)
       + [模式结构](dev/schema-structure.md)
       + [数据库映射](dev/database-mapping.md)
+      + [关键管理](dev/database-keys.md)
+      + [链接管理](dev/database-links.md)
       + [限制 PI 视图](dev/restrict-pi-view.md)
       + [使用自定义收件人表格](dev/custom-recipient.md)
       + [更新数据库](dev/update-database-structure.md)

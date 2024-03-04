@@ -3,11 +3,10 @@ title: 创建自定义报表的关键步骤
 description: 了解创建自定义报告的关键步骤
 feature: Reporting
 role: User, Data Engineer
-exl-id: 262c1469-94b4-4f81-9f6f-5c7f481765da
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: c362e6ff932f5017530434c4b458070ec1a97abc
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 3%
+source-wordcount: '175'
+ht-degree: 1%
 
 ---
 
@@ -21,9 +20,9 @@ ht-degree: 3%
 
 要创建、发布和提交数据分析报表，请执行以下步骤：
 
-1. 创建新报告：请参阅 [创建新报告](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-new-report.html){target="_blank"}，
+1. 创建新报告：请参阅 [创建新报告](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-new-report.html?lang=zh-Hans){target="_blank"}，
 1. 收集数据进行分析：请参阅 [收集数据进行分析](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/collecting-data-to-analyze.html){target="_blank"}, and [Use the context](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/collecting-data-to-analyze.html){target="_blank"}，
 1. 定义包含活动及其容器的报表内容：请参阅 [创建表](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-table.html){target="_blank"}, [Creating a chart](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-chart.html?lang=zh-Hans){target="_blank"} and [Element layout](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/element-layout.html){target="_blank"}，
-1. 配置显示选项：显示类型、共享报表：请参阅 [定义条件内容](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/defining-a-conditional-content.html){target="_blank"} and [Configure access to the report](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html){target="_blank"}，
+1. 配置显示选项：显示类型、共享报表：请参阅 [定义条件内容](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/defining-a-conditional-content.html){target="_blank"} and [Configure access to the report](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html?lang=zh-Hans){target="_blank"}，
 1. 发布报告（发布向导）：请参阅 [发布报告](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html#publishing-the-report){target="_blank"}，
 1. 转换报告：导出、历史记录、在浏览器中显示：请参阅 [对报告执行操作](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports.html){target="_blank"}.

@@ -5,7 +5,7 @@ feature: Experience Manager Integration
 role: Admin, User
 level: Beginner
 exl-id: e83893f7-a8be-48a3-a7a6-aced7b4d4f69
-source-git-commit: 2f8cee4522efb59782a568334fc1300fc39d559f
+source-git-commit: fc461fbbae23925dd29f17c8674cc287ba360147
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Adobe Campaign与Adobe Experience Manager之间的集成允许您直接在Adobe Experience Manager中管理电子邮件投放的内容以及表单。 您可以选择导入 **Adobe Experience Manager** 将内容导入Campaign或连接 **Adobe Experience Manager即云服务** 帐户，允许您直接在Web界面中编辑内容。
 
-![](../assets/do-not-localize/book.png) [了解如何在Campaign Web界面中将Adobe Experience Manager编辑为Cloud Service内容](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/content/integrations/aem-content.html?lang=en)
+![](../assets/do-not-localize/book.png) [了解如何在Campaign Web界面中将Adobe Experience Manager编辑为Cloud Service内容](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-content.html?lang=en)
 
 ![](../assets/do-not-localize/book.png) [在本文档中了解有关Adobe Experience Manager的更多信息](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html#aem-and-adobe-campaign-integration-workflow)
 

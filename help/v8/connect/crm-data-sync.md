@@ -5,9 +5,9 @@ feature: Salesforce Integration, Microsoft CRM Integration
 role: Admin
 level: Beginner
 exl-id: 2a7ae88e-d47f-416b-84cd-986ab9be6aef
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: e45799f0f3849d53d2c5f593bc02954b3a55fc28
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1315'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ Adobe Campaign与您的CRM之间的数据同步由管理 **CRM连接器** 工作
 
 1. 选择 **[!UICONTROL Use automatic index...]** 选项，用于根据日期和上次修改情况自动管理CRM和Adobe Campaign之间的增量对象同步。
 
-   如需详细信息，请参阅[此部分](#variable-management)。
+   如需详细信息，请参阅[此小节](#variable-management)。
 
 ### 管理变量 {#variable-management}
 
@@ -87,7 +87,7 @@ Adobe Campaign与您的CRM之间的数据同步由管理 **CRM连接器** 工作
 >
 >此注释仅适用于通用部件 **[!UICONTROL CRM Connector]** 活动。 对于其他CRM活动，该流程是自动的。
 >
->此选项必须手动创建并填充到 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. 它必须是文本选项，其值需要匹配以下格式： **yyyy/MM/dd hh:mm:ss**.
+>此选项必须手动创建并填充到 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. 它必须是文本选项，其值需要匹配以下格式： **`yyyy/MM/dd hh:mm:ss`**.
 > 
 >您需要手动更新此选项以进行任何进一步的导入。
 
@@ -106,7 +106,7 @@ Adobe Campaign与您的CRM之间的数据同步由管理 **CRM连接器** 工作
 
   >[!NOTE]
   >
-  >这些日期按以下格式显示： **yyyy/MM/dd hh:mm:ss**.
+  >这些日期按以下格式显示： **`yyyy/MM/dd hh:mm:ss`**.
 
 ### 筛选数据 {#filtering-data}
 

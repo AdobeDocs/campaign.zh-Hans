@@ -5,9 +5,9 @@ feature: Profiles, Monitoring
 role: User, Data Engineer
 level: Beginner
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: e45799f0f3849d53d2c5f593bc02954b3a55fc28
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1167'
 ht-degree: 4%
 
 ---
@@ -73,7 +73,7 @@ Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在�
 >
 >第1年年末：(1&#42;0.33)/(1+0.5)=22%。
 >
->第2年年末：((1.22)&#42;0.33)+0.33)/(1.5+0.75)=32.5%。
+第2年年末：((1.22)&#42;0.33)+0.33)/(1.5+0.75)=32.5%。
 
 此外， **[!UICONTROL Non-deliverables and bounces]** 内置报告，可从 **报表** 部分，显示有关隔离地址、遇到的错误类型以及按域划分的失败的信息。 您可以过滤特定投放的数据，或根据需要自定义此报表。
 
@@ -104,7 +104,7 @@ Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在�
 
 >[!CAUTION]
 >
->地址在中的收件人 **[!UICONTROL Quarantine]** 或 **[!UICONTROL Denylisted]** 即使他们收到电子邮件，状态也永远不会删除。
+地址在中的收件人 **[!UICONTROL Quarantine]** 或 **[!UICONTROL Denylisted]** 即使他们收到电子邮件，状态也永远不会删除。
 
 您也可以从隔离列表中手动删除地址。 要从隔离中删除地址，您可以：
 
@@ -120,8 +120,8 @@ Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在�
 
 * **错误文本（隔离文本）** 包含“Momen_Code10_InvalidRecipient”
 * **电子邮件域(@domain)** 等于domain1.com或 **电子邮件域(@domain)** 等于domain2.com或 **电子邮件域(@domain)** 等于domain3.com
-* **更新状态(@lastModified)** YYYY/MM/DD HH当天或之后:MM:SS AM
-* **更新状态(@lastModified)** 在MM/DD/YYYY HH或之前:MM:SS PM
+* **更新状态(@lastModified)** 在或晚于 `MM/DD/YYYY HH:MM:SS AM`
+* **更新状态(@lastModified)** 早于 `MM/DD/YYYY HH:MM:SS PM`
 
 获得受影响的收件人列表后，添加 **[!UICONTROL Update data]** 活动以将它们的状态设置为 **[!UICONTROL Valid]** 因此它们将被从隔离列表中删除 **[!UICONTROL Database cleanup]** 工作流，。 也可以直接从隔离表中删除它们。
 

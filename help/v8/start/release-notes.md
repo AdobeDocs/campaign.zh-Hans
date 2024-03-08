@@ -5,7 +5,7 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 3b790305984436f1168f9c73aa09df509b2217f0
+source-git-commit: 3a63539bc6bb20fa79bdac76dd60efe7b232458b
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 16%
@@ -16,7 +16,7 @@ ht-degree: 16%
 
 Adobe Campaign 会定期更新。这种定期更新旨在让您掌握最新、最充分的信息，保持环境的安全，并改进您对我们产品的体验。Adobe强烈建议所有客户升级到最新版本。 了解有关Campaign版本和推荐的更多信息 [本页内容](upgrades.md).
 
-作为“托管Cloud Service”用户，您的实例会按Adobe升级，升级时将包含每个新版本。 Adobe将与您联系并升级您的环境。 Campaign客户端控制台 **必须升级到相同版本** 作为Campaign服务器。 通过此页面了解如何升级您的客户端控制台 [页面](../start/connect.md#upgrade-ac-console).
+作为“托管Cloud Service”用户，您的实例会按Adobe升级，升级时将包含每个新版本。 Adobe将与您联系并升级您的环境。 Campaign客户端控制台 **必须升级到相同版本** 作为Campaign服务器。 了解如何升级您的客户端控制台 [本页内容](../start/connect.md#upgrade-ac-console).
 
 此外，作为客户，请确保您使用的是 [兼容性矩阵](compatibility-matrix.md).
 

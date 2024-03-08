@@ -1,20 +1,20 @@
 ---
-title: Campaign登陆页面和配置文件属性
+title: 从Adobe Campaign登陆页面更新Adobe Experience Platform配置文件
 description: 了解如何同步Adobe Campaign登陆页面和Adobe Experience Platform配置文件属性
 feature: Experience Platform Integration
 role: Data Engineer
 level: Beginner
 exl-id: 565a1c8b-1930-4b43-bc11-ae517df077d6
-source-git-commit: a17c4325917ef1466bbb2c397aea55ebcf7fbcb5
+source-git-commit: ea37b72efd03afb212c060f809b6ba077b996701
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1031'
 ht-degree: 1%
 
 ---
 
-# 从Adobe Campaign登陆页面更新Adobe Experience Platform配置文件
+# 从Adobe Campaign登陆页面更新Adobe Experience Platform配置文件 {#ac-aep-lp}
 
-Adobe Campaign与Adobe Experience Platform之间的集成允许您在Adobe Campaign登陆页面与Adobe Experience Platform之间无缝同步数据。 通过此集成，您可以：
+Adobe Campaign与Adobe Experience Platform之间的集成允许您在Adobe Campaign登陆页面与Adobe Experience Platform之间无缝同步配置文件数据。 通过此集成，您可以：
 
 * 检索Adobe Experience Platform配置文件属性，以在Adobe Campaign登陆页面中显示更新的信息。
 * 将更新的用户档案属性发送回Adobe Experience Platform，以根据登陆页面中已填写和提交的内容更新相应的属性。
@@ -40,9 +40,9 @@ Adobe Cloud Platform API使用OAuth 2.0协议进行身份验证和授权。 要�
 1. 使用Adobe Experience Platform API产品创建新的API连接。 有关如何获取OAuth 2.0访问令牌的详细步骤，请参阅 [Adobe Developer控制台文档](https://developer.adobe.com/developer-console/docs/guides/authentication/Tools/OAuthPlayground/).
 1. 创建连接后，导航至 **[!UICONTROL OAuth Server-to-Server]** 菜单并复制以下详细信息，这些是Campaign进行身份验证所必需的：
 
-   * 客户端ID
-   * 客户端密码
-   * 组织ID
+   * `CLIENT ID`
+   * `CLIENT SECRET`
+   * &#39;组织标识
 
    ![](assets/ac-lp-oauth.png){width="70%"}
 
@@ -102,7 +102,7 @@ Adobe Cloud Platform API使用OAuth 2.0协议进行身份验证和授权。 要�
 
 在执行工作流时，系统会自动在Campaign控制台中使用提供的值创建选项。
 
-    ```
+    ```javascript
     loadLibrary(&quot;xtk：shared/nl.js&quot;)；
     loadLibrary(&quot;xtk：shared/xtk.js&quot;)；
     loadLibrary(&quot;xtk：shared/json2.js&quot;)；
@@ -138,7 +138,7 @@ Adobe Cloud Platform API使用OAuth 2.0协议进行身份验证和授权。 要�
 
    此代码在加载登陆页面之前检查配置文件是否存在于Adobe Experience Platform中。 它会检索用户档案属性，并将其显示在登陆页面的相应字段中。
 
-   ```
+   ```javascript
    // API implementation to read profile from AEP
    function getProfileInfo(email)
    {
@@ -161,7 +161,7 @@ Adobe Cloud Platform API使用OAuth 2.0协议进行身份验证和授权。 要�
 
    此代码会使用登陆页面中提交的值更新Adobe Experience Platform中的配置文件属性。
 
-   ```
+   ```javascript
    // API implementation to update profile in AEP
    loadLibrary("xtk:shared/nl.js");
    loadLibrary("xtk:shared/xtk.js");
@@ -215,7 +215,7 @@ Adobe Cloud Platform API使用OAuth 2.0协议进行身份验证和授权。 要�
 
 +++ 脚本1 — 从Experience Platform加载配置文件属性
 
-  ```
+  ```javascript
   // Script code to read profile from AEP.
   
   logInfo("Loading profile from AEP");
@@ -255,7 +255,7 @@ Adobe Cloud Platform API使用OAuth 2.0协议进行身份验证和授权。 要�
 
 +++ 脚本2 — 更新Experience Platform配置文件属性
 
-  ```
+  ```javascript
   // Script code to update profile in AEP and ACC.
   
   logInfo("Executing script to update AEP profile.");

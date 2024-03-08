@@ -1,18 +1,18 @@
 ---
-title: 受众和配置文件属性
+title: 与Adobe Experience Platform共享和同步受众和配置文件属性
 description: 了解如何将Adobe Experience Platform受众和配置文件属性与Campaign同步
 feature: Experience Platform Integration
 role: Data Engineer
 level: Beginner
 exl-id: 21cf5611-ccaa-4e83-8891-a1a2353515aa
-source-git-commit: 6ebbdf2ab57577594a4f964e2cfcba46fcb7b4ca
+source-git-commit: ea37b72efd03afb212c060f809b6ba077b996701
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 0%
 
 ---
 
-# 使用Campaign和Adobe Experience Platform
+# 与Adobe Experience Platform共享和同步受众 {#gs-ac-aep}
 
 Adobe Campaign托管Cloud Service目标和源连接器允许Adobe Campaign与Adobe Experience Platform之间的无缝集成。 通过此集成，您可以：
 

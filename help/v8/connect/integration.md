@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, User
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 032c11f794956d5bdd4a6540ee5dd5b2f92c94dc
+source-git-commit: f6ccec05d63c397d0a286c18f4114eb414156d45
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 10%
+source-wordcount: '410'
+ht-degree: 11%
 
 ---
 
@@ -24,15 +24,15 @@ Adobe Campaign附带几个连接器，允许您与外部应用程序通信、连
 
 ![](../assets/do-not-localize/speech.png)  作为托管Cloud Service用户， [联系人Adobe](../start/campaign-faq.md#support) 将Campaign与Adobe Experience Cloud服务和解决方案配合使用。
 
-Campaign v8可以连接到：
+Campaign v8可与以下Adobe解决方案配合使用。 浏览链接以了解有关用例、配置和准则的更多信息：
 
-* [Adobe Analytics](../connect/ac-aa.md)
-* [Adobe Experience Cloud触发器](../connect/ac-triggers.md)
-* [Adobe Experience Manager](../connect/ac-aem.md)
-* [Adobe Experience Platform](../connect/ac-aep.md)
-* [Adobe Journey Optimizer](../connect/ac-ajo.md)
-* [Adobe Target](../connect/ac-at.md)
-* [Adobe Workfront](../connect/ac-workfront.md)
+* Adobe Analytics。[了解详情](../connect/ac-aa.md)
+* Adobe Experience Cloud triggers. [了解详情](../connect/ac-triggers.md)
+* Adobe Experience Manager。[了解详情](../connect/ac-aem.md)
+* Adobe Experience Platform。 [了解详情](../connect/ac-aep.md)
+* Adobe Journey Optimizer。 [了解详情](../connect/ac-ajo.md)
+* Adobe Target。 [了解详情](../connect/ac-at.md)
+* Adobe Workfront。 [了解详情](../connect/ac-workfront.md)
 
 您也可以合并 **受众** 和 **资产** 跨Experience Cloud解决方案进行资产共享和受众共享。
 

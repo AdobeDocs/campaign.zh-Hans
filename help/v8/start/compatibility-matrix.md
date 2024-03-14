@@ -5,10 +5,10 @@ feature: Release Notes
 role: Admin
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: 374c0df2cd95e656cfbaa1fb355bf1f48828dfee
+source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 63%
+source-wordcount: '406'
+ht-degree: 52%
 
 ---
 
@@ -26,14 +26,13 @@ ht-degree: 63%
 
 要使用Campaign客户端控制台，必须配备以下操作系统和浏览器。 [了解详情](connect.md)。
 
-### 操作系统{#op-systems}
+### 操作系统 {#op-systems}
 
 * **Microsoft Windows Server** 2019、2016
 * **Microsoft Windows** 11， 10
 
 >[!NOTE]
->
->请注意，客户端控制台的32位版本自8.5版本以来已被弃用。 从8.6开始，客户端控制台仅以64位提供。 有关如何升级系统的详细信息，请参阅此 [技术说明](../../technotes/upgrades/console.md).
+>客户端控制台的32位版本自8.5版本以来已被弃用。 从8.6开始，客户端控制台仅以64位提供。 有关如何升级系统的详细信息，请参阅此 [技术说明](../../technotes/upgrades/console.md).
 
 ### Web 浏览器 {#web-browsers}
 
@@ -43,14 +42,14 @@ ht-degree: 63%
 
 ## CRM 连接器 {#CRMconnectors}
 
-下面列出了与 Adobe Campaign 兼容的客户关系管理 (CRM) 系统。[了解详情](../connect/crm.md)。
+下面列出了与 Adobe Campaign 兼容的客户关系管理 (CRM) 系统。了解有关CRM连接器的更多信息 [本页内容](../connect/crm.md).
 
 * **Salesforce** 连接器 API 版本 49
 * **Microsoft Dynamics** 连接器、Web API：Dynamics 365 内部部署版和在线版
 
 ## 联合数据访问 (FDA){#FederatedDataAccessFDA}
 
-下面列出了与 Adobe Campaign 联合数据访问 (FDA) 模块兼容的外部数据库。[了解详情](../connect/fda.md)。
+下面列出了与 Adobe Campaign 联合数据访问 (FDA) 模块兼容的外部数据库。了解有关FDA的更多信息 [本页内容](../connect/fda.md).
 
 * **[!DNL Amazon Redshift]**
 * **[!DNL Azure Synapse]**，从Campaign v8.5开始
@@ -62,14 +61,19 @@ ht-degree: 63%
 
 要使用 Campaign 发送[推送通知](../send/push.md)，您可以通过在“数据收集”UI 中配置 Adobe Campaign 扩展来使用 Adobe Experience Platform Mobile SDK。
 
-中详细介绍了iOS和Android的兼容版本 [Adobe Developer文档](https://developer.adobe.com/client-sdks/home/)
+中详细介绍了iOS和Android的兼容版本 [Adobe Developer文档](https://developer.adobe.com/client-sdks/home/){target="_blank"}.
+
+## Web用户界面 {#web-ui}
+
+以下浏览器与Campaign Web用户界面兼容。 了解有关Campaign Web UI的更多信息 [本页内容](campaign-ui.md#ac-web-ui).
+
+* **Microsoft Edge**， **Google Chrome**， **Safari** （最新版本）
 
 ## Web 访问 {#web-access}
 
-以下浏览器与 Campaign 兼容，可用于[进行 Web 访问](connect.md#web-access)。
+以下浏览器与Campaign兼容，可用于进行Web访问。 了解有关Campaign Web访问的更多信息 [本页内容](connect.md#web-access).
 
 * **Microsoft Edge**、**Mozilla Firefox**、**Google Chrome**、**Safari**（最新版本）
-
 
 ## 其他资源 {#support}
 

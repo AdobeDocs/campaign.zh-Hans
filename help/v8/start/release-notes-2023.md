@@ -5,16 +5,16 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b860c843-155e-4abb-bdd6-b68dc7eaa0ee
-source-git-commit: 3a63539bc6bb20fa79bdac76dd60efe7b232458b
+source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
 workflow-type: tm+mt
 source-wordcount: '1474'
-ht-degree: 57%
+ht-degree: 56%
 
 ---
 
 # 2023版发行说明 {#2023-rn}
 
-此页面列出了 **2023 Campaign v8 版本**&#x200B;中的新功能、改进和修复。
+此页面列出了随附的新功能、改进和修复 **2023 Campaign v8版本**.
 
 ## 8.5.2版 {#release-8-5-2}
 

@@ -5,7 +5,7 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
+source-git-commit: 10b1113a20c11e0b97804f597cb0a48568fcae3d
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 8%
@@ -127,7 +127,7 @@ Adobe Campaign允许您定义和管理分配给各种操作员的权限。
 
 在中了解详情 [Adobe Campaign Web用户界面文档](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 
-### Web访问 {#web-access}
+### Web 访问 {#web-access}
 
 可以通过Web浏览器使用HTML用户界面访问应用程序的某些部分：报告、投放批准、实例监控等。
 

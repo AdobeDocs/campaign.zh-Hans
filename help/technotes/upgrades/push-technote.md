@@ -8,9 +8,9 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="也适用于Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="适用于Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: a494ac834b1febcafe04f4bb05eb74834df7b024
+source-git-commit: a280e560a6e84f5afa214daaded9ac5331018d7c
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1357'
 ht-degree: 1%
 
 ---
@@ -136,7 +136,7 @@ Adobe Campaign Classic v7和Adobe Campaign v8支持基于令牌和基于证书�
 ![](assets/filter-services-ios.png)
 
 
-* 如果您的任何活动推送通知服务使用 **基于证书的身份验证** 模式，则您当前的实施应已审查并移至 **基于令牌的身份验证** 模式，如下所述。
+* 如果您的任何活动推送通知服务使用 **基于证书的身份验证** 模式(.p12)下，您当前的实施应已审查并移至 **基于令牌的身份验证** 模式(.p8)，如下所述。
 
 * 如果您的设置仅使用 **基于令牌的身份验证** iOS模式，则您的实施已处于最新状态，无需您执行任何进一步操作。
 
@@ -157,9 +157,9 @@ Adobe Campaign Classic v7和Adobe Campaign v8支持基于令牌和基于证书�
 要将iOS移动应用程序移动到基于令牌的身份验证模式，请执行以下步骤：
 
 1. 浏览到您的列表 **服务和订阅**.
-1. 使用列出所有移动应用程序 **基于证书的身份验证** 模式。
+1. 使用列出所有移动应用程序 **基于证书的身份验证** 模式(.p12)。
 1. 编辑每个移动设备应用程序，并浏览到 **证书/私钥** 选项卡。
-1. 从 **身份验证模式** 下拉列表，选择 **基于令牌的身份验证**.
+1. 从 **身份验证模式** 下拉列表，选择 **基于令牌的身份验证** 模式(.p8)。
 1. 填写APN连接设置 **[!UICONTROL Key Id]**， **[!UICONTROL Team Id]** 和 **[!UICONTROL Bundle Id]** 然后，通过单击 **[!UICONTROL Enter the private key...]**.
 
    ![](assets/token-based-certif.png)

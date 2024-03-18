@@ -8,14 +8,14 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="也适用于Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="适用于Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: 550e3cbd064ae7831855377f1d08d6acecd55c9e
+source-git-commit: c81744fdf4a4fc47820c077f69288a0ea66fa5e4
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 2%
+source-wordcount: '1352'
+ht-degree: 1%
 
 ---
 
-# 推送通知渠道即将发生的变化 {#push-upgrade}
+# 推送通知渠道更改 {#push-upgrade}
 
 您可以使用Campaign在iOS和Android设备上发送推送通知。 为此，Campaign依赖于移动应用程序订阅服务。
 

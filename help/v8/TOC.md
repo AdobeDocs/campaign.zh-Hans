@@ -8,7 +8,7 @@ breadcrumb-title: Campaign v8 文档
 source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 82%
+ht-degree: 99%
 
 ---
 
@@ -30,8 +30,8 @@ ht-degree: 82%
    + [文档更新](start/documentation-updates.md)
 + 入门 {#new}
    + [Adobe Campaign 入门](start/get-started.md)
-   + [重要功能](start/whats-new.md)
-   + [了解用户界面](start/campaign-ui.md)
+   + [关键功能](start/whats-new.md)
+   + [探索用户界面](start/campaign-ui.md)
    + [连接到 Campaign](start/connect.md)
    + [组件和流程](start/ac-components.md)
    + [从 Classic v7 到 v8](start/v7-to-v8.md)
@@ -54,23 +54,23 @@ ht-degree: 82%
       + [使用数据收集配置推送通知](send/push-data-collection.md)
    + [LINE 消息](send/line.md)
    + [直邮](send/direct-mail.md)
-   + [X(Twitter)](send/twitter.md)
+   + [X (Twitter)](send/twitter.md)
    + 个性化内容{#personalize}
       + [个性化入门](send/personalize.md)
       + [个性化数据](send/personalization-data.md)
       + [添加个性化字段](send/personalization-fields.md)
       + [使用个性化块](send/personalization-blocks.md)
       + [创建条件](send/conditions.md)
-   + 验证并发送投放 {#validate}
+   + 验证和发送投放{#validate}
    + [预览和验证](send/preview-and-proof.md)
    + [投放分析](send/delivery-analysis.md)
-   + [配置并发送投放](send/configure-and-send.md)
+   + [配置和发送投放](send/configure-and-send.md)
    + [发送时间优化](send/predictive.md)
    + 失败、退回和隔离{#failures}
       + [隔离](send/quarantines.md)
       + [投放失败](send/delivery-failures.md)
    + [使用投放模板](send/create-templates.md)
-   + 事务性消息 {#real-time}
+   + 事务性消息{#real-time}
       + [事务性消息入门](send/transactional.md)
       + [创建和发布模板](send/transactional-template.md)
       + 事件管理{#event}
@@ -87,11 +87,11 @@ ht-degree: 82%
       + [使用外部用户档案](audiences/external-profiles.md)
       + [在 Web 窗体中收集用户档案数据](audiences/collect-profiles.md)
       + [使用目标映射](audiences/target-mappings.md)
-      + [创建测试配置文件](audiences/test-profiles.md)
+      + [创建测试用户档案](audiences/test-profiles.md)
    + 创建受众 {#create-audiences}
       + [创建联系人列表](audiences/create-audiences.md)
       + [创建和管理过滤器](audiences/create-filters.md)
-      + [与Adobe解决方案共享受众](start/shared-audiences.md)
+      + [与 Adobe 解决方案共享受众](start/shared-audiences.md)
    + [最佳实践](audiences/audiences-best-practices.md)
    + [管理订阅](start/subscriptions.md)
 + 内容管理 {#content}
@@ -110,7 +110,7 @@ ht-degree: 82%
       + [创建优惠空间](interaction/interaction-offer-spaces.md)
    + [创建优惠目录](interaction/interaction-offer-catalog.md)
    + [创建优惠](interaction/interaction-offer.md)
-   + [发送选件（出站）](interaction/interaction-send-offers.md)
+   + [发送优惠（出站）](interaction/interaction-send-offers.md)
    + 提供优惠（入站）{#inbound}
       + [上下文](interaction/interaction-present-offers.md)
       + [在网页中调用优惠](interaction/interaction-integration.md)
@@ -138,18 +138,18 @@ ht-degree: 82%
    + [工作流文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)
 + 集成 {#connect}
    + [将 Campaign 与其他解决方案配合使用](connect/integration.md)
-   + Campaign +Experience Platform {#ac-aep}
-      + [共享和同步受众及配置文件属性](connect/ac-aep.md)
-      + [从Campaign登陆页面更新AEP用户档案](connect/ac-aep-landing-pages.md)
+   + Campaign + Experience 平台{#ac-aep}
+      + [共享和同步受众及用户档案属性](connect/ac-aep.md)
+      + [从 Campaign 登陆页更新 AEP 用户档案](connect/ac-aep-landing-pages.md)
    + [Campaign + Journey Optimizer](connect/ac-ajo.md)
    + [Campaign + Analytics](connect/ac-aa.md)
    + [Campaign + Experience Manager](connect/ac-aem.md)
    + [Campaign + Target](connect/ac-at.md)
    + [Campaign + Experience Cloud Triggers](connect/ac-triggers.md)
    + [Campaign + Workfront](connect/ac-workfront.md)
-   + [Campaign + X(Twitter)](connect/ac-tw.md)
+   + [Campaign + X (Twitter)](connect/ac-tw.md)
    + [Campaign + 外部数据库](connect/fda.md)
-   + Campaign +您的CRM {#ac-crm}
+   + Campaign + 您的 CRM{#ac-crm}
       + [CRM 连接器入门](connect/crm.md)
       + [使用 Campaign 和 SFDC](connect/ac-sfdc.md)
       + [使用 Campaign 和 Microsoft Dynamics](connect/ac-ms-dyn.md)
@@ -161,10 +161,10 @@ ht-degree: 82%
       + [添加文件夹权限](start/folder-permissions.md)
    + [控制面板](config/self-service.md)
 + 架构和配置 {#config}
-   + Campaign v8架构 {#architecture}
+   + Campaign v8 架构{#architecture}
       + [全局原则](architecture/general-architecture.md)
       + [架构模型](architecture/architecture.md)
-      + [Campaign FDA部署](architecture/fda-deployment.md)
+      + [Campaign FDA 部署](architecture/fda-deployment.md)
       + 企业 (FFDA) 部署{#ffda}
          + [什么是 Campaign FFDA？](architecture/enterprise-deployment.md)
          + [密钥管理和唯一性](architecture/keys.md)
@@ -179,7 +179,7 @@ ht-degree: 82%
       + [用户界面设置](config/ui-settings.md)
       + [管理文件夹和视图](audiences/folders-and-views.md)
       + [事务性消息设置](config/transactional-msg-settings.md)
-      + [将Campaign SDK与您的应用程序集成 — 已弃用页面](config/push-config.md)
+      + [将 Campaign SDK 与您的应用程序集成 - 已弃用页面](config/push-config.md)
       + [外部帐户](config/external-accounts.md)
 + 开发人员资源 {#developer}
    + [Campaign 数据模型](dev/datamodel.md)
@@ -190,7 +190,7 @@ ht-degree: 82%
       + [筛选模式](dev/filter-schema.md)
       + [模式结构](dev/schema-structure.md)
       + [数据库映射](dev/database-mapping.md)
-      + [关键管理](dev/database-keys.md)
+      + [密钥管理](dev/database-keys.md)
       + [链接管理](dev/database-links.md)
       + [限制 PI 视图](dev/restrict-pi-view.md)
       + [使用自定义收件人表格](dev/custom-recipient.md)

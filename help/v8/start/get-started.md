@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
 source-git-commit: 86a6979b8258bbe3136ed9e4de6ce44a8164d5d9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '994'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Campaign 提供了一个跨渠道客户体验设计平台，以及用于�
 
 Adobe Campaign v8 是新一代营销活动工具，专为各种营销渠道（如电子邮件、推送通知、短信和直邮）构建。它提供了强大的 ETL 和数据管理功能，以帮助制定和策划完美的营销活动。它的编排引擎提供丰富的多接触点营销计划，核心重点放在基于批处理驱动的历程。它还配有一个可扩展的实时消息服务器，使营销团队能够根据任何 IT 系统的总体有效负载发送预定义的消息，如密码重置、订单确认、电子收据等。
 
-Adobe Campaign v8 在基础架构、安全性、可投放性和监测方面有着显著改进。它可用作 **托管Cloud Service** 它将各种服务与主动监督和及时交流相结合。 了解有关Campaign托管Cloud Service的更多信息 [本页内容](whats-new.md#acms-desc).
+Adobe Campaign v8 在基础架构、安全性、可投放性和监测方面有着显著改进。它是一款&#x200B;**托管式云服务**，将各种服务与主动监督和及时发送警报功能相结合。[在此页面中](whats-new.md#acms-desc)了解有关 Campaign Managed Cloud Services 的详情。
 
 使用 Campaign 可以：
 

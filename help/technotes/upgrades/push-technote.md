@@ -8,7 +8,7 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="也适用于Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="适用于Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: c81744fdf4a4fc47820c077f69288a0ea66fa5e4
+source-git-commit: a494ac834b1febcafe04f4bb05eb74834df7b024
 workflow-type: tm+mt
 source-wordcount: '1352'
 ht-degree: 1%
@@ -33,32 +33,32 @@ Adobe Campaign Classic v7和Adobe Campaign v8已支持用于发送推送通知�
 
 ### 您是否受影响？ {#fcm-impact}
 
-如果您当前的实施支持使用旧版API连接到FCM的订阅服务，则您会受到影响。 为了避免任何服务中断，必须迁移到最新API。 在这种情况下，Adobe团队将会与您联系。
+如果您当前的实施支持使用旧版API连接到FCM的订阅服务，则您会受到影响。 必须转换为最新的API才能避免任何服务中断。 在这种情况下，Adobe团队将会与您联系。
 
 要检查您是否受到影响，您可以筛选 **服务和订阅** 根据以下过滤器：
 
 ![](assets/filter-services-fcm.png)
 
 
-* 如果您的任何活动推送通知服务使用 **HTTP（旧版）** API，您的设置将直接受到此更改的影响。 您必须按照以下所述查看当前配置并迁移到较新的API。
+* 如果您的任何活动推送通知服务使用 **HTTP（旧版）** API，您的设置将直接受到此更改的影响。 您必须查看当前配置并迁移到如下所述的新API。
 
 * 如果您的设置仅使用 **HTTP v1** API用于Android推送通知，则您已符合要求，无需执行进一步操作。
 
-### 如何迁移？ {#fcm-migration-procedure}
+### 如何更新？ {#fcm-transition-procedure}
 
-#### 先决条件 {#fcm-migration-prerequisites}
+#### 先决条件 {#fcm-transition-prerequisites}
 
-* 对于Campaign Classicv7,20.3.1版本中添加了对HTTP v1的支持。 如果您的环境运行在旧版本上，则迁移到HTTP v1的先决条件是将您的环境升级到 [最新Campaign Classic版本](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. 对于Campaign v8，所有版本都支持HTTP v1，无需升级。
+* 对于Campaign Classicv7,20.3.1版本中添加了对HTTP v1的支持。 如果您的环境运行在旧版本上，则迁移到HTTP v1的先决条件是将环境升级到 [最新Campaign Classic版本](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. 对于Campaign v8，所有版本都支持HTTP v1，无需升级。
 
 * 需要Android Firebase Admin SDK服务的帐户JSON文件才能将移动应用程序移动到HTTP v1。 了解如何在中获取此文件 [Google Firebase文档](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
-* 对于混合、托管和Managed Services部署，除了下面的迁移过程外，请联系Adobe以更新实时(RT)执行服务器。 不影响中间源服务器。
+* 对于混合、托管和Managed Services部署，除了下面的过渡过程之外，请联系Adobe以更新实时(RT)执行服务器。 不影响中间源服务器。
 
 * 作为Campaign Classic v7内部部署用户，您必须同时升级营销和实时执行服务器。 不影响中间源服务器。
 
-#### 迁移过程 {#fcm-migration-steps}
+#### 过渡过程 {#fcm-transition-steps}
 
-要将环境迁移到HTTP v1，请执行以下步骤：
+要将环境移动到HTTP v1，请执行以下步骤：
 
 1. 浏览到您的列表 **服务和订阅**.
 1. 使用列出所有移动应用程序 **HTTP（旧版）** api版本。
@@ -129,7 +129,7 @@ Adobe Campaign Classic v7和Adobe Campaign v8支持基于令牌和基于证书�
 
 ### 您是否受影响？ {#ios-impact}
 
-如果您当前的实施依赖于基于证书的请求来连接到APN，则您会受到影响。 建议迁移到基于令牌的连接。
+如果您当前的实施依赖于基于证书的请求来连接到APN，则您会受到影响。 建议转换为基于令牌的连接。
 
 要检查您是否受到影响，您可以筛选 **服务和订阅** 根据以下过滤器：
 
@@ -140,21 +140,21 @@ Adobe Campaign Classic v7和Adobe Campaign v8支持基于令牌和基于证书�
 
 * 如果您的设置仅使用 **基于令牌的身份验证** iOS模式，则您的实施已处于最新状态，无需您执行任何进一步操作。
 
-### 如何迁移？ {#ios-migration-procedure}
+### 如何更新？ {#ios-transition-procedure}
 
-#### 先决条件 {#ios-migration-prerequisites}
+#### 先决条件 {#ios-transition-prerequisites}
 
 * 对于Campaign Classicv7，支持 **基于令牌的身份验证** 模式已在20.2版本中添加。 如果您的环境运行在旧版本上，则此更改的先决条件是将您的环境升级到 [最新Campaign Classic版本](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}. 对于Campaign v8， **基于令牌的身份验证** 所有版本都支持模式，无需升级。
 
 * 您需要APN身份验证令牌签名密钥来生成您的服务器使用的令牌。 您从Apple开发人员帐户请求此密钥，如中所述 [Apple开发人员文档](https://developer.apple.com/documentation/usernotifications/establishing-a-token-based-connection-to-apns){target="_blank"}.
 
-* 对于混合、托管和Managed Services部署，除了下面的迁移过程外，请联系Adobe以更新实时(RT)执行服务器。 不影响中间源服务器。
+* 对于混合、托管和Managed Services部署，除了下面的过渡过程之外，请联系Adobe以更新实时(RT)执行服务器。 不影响中间源服务器。
 
 * 作为Campaign Classic v7内部部署用户，您必须同时升级营销和实时执行服务器。 不影响中间源服务器。
 
-#### 迁移过程 {#ios-migration-steps}
+#### 过渡过程 {#ios-transition-steps}
 
-要将iOS移动应用程序迁移到基于令牌的身份验证模式，请执行以下步骤：
+要将iOS移动应用程序移动到基于令牌的身份验证模式，请执行以下步骤：
 
 1. 浏览到您的列表 **服务和订阅**.
 1. 使用列出所有移动应用程序 **基于证书的身份验证** 模式。

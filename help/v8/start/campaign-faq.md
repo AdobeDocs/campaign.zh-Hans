@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 193d2459d5a4ba55822c20a7e376d18b3c6d8795
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 82%
+source-wordcount: '706'
+ht-degree: 73%
 
 ---
 
@@ -30,9 +30,14 @@ ht-degree: 82%
 
    ![](../assets/do-not-localize/glass.png) [单击此处了解详情](connect.md)。
 
+   从Campaign v8.6版本开始，您可以访问新的 **Campaign Web用户界面**，可通过中心的Adobe Experience Cloud环境使用。 Experience Cloud 是 Adobe 的数字营销应用程序、产品和服务的集成系列。通过其直观界面，您可以快速访问云应用程序、产品功能和服务。
+
+   [在此页面中](campaign-ui.md#ac-web-ui)了解如何连接到 Adobe Experience Cloud 并访问 Adobe Campaign Web 界面。
+
+   在中了解详情 [Adobe Campaign Web用户界面文档](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 1. **Campaign v8 是否可以安装在内部部署或混合环境中？**
 
-   目前，Campaign v8 仅以托管云服务的形式提供，并完全由 Adobe 托管。
+   Campaign v8仅适用于托管Cloud Service，完全由Adobe托管。
 
 1. **如何改进电子邮件可投放性？**
 
@@ -60,11 +65,15 @@ ht-degree: 82%
 
    子域是域的一个分支，可用于隔离您的品牌或各种类型的流量（事务性消息、营销信息等）。
 
-   ![](../assets/do-not-localize/speech.png)作为托管云服务用户，请联系 Adobe 以将子域委派给 Adobe。
+   ![](../assets/do-not-localize/speech.png) 作为托管Cloud Service用户，请联系Adobe以将子域委派给Adobe。
 
 1. **作为 Campaign Classic v7 用户，我是否可以迁移到 Campaign v8？**
 
-   目前，Campaign v8 仅适用于新的实施。
+   从现有 Campaign Classic v7 环境进行自动迁移的功能尚不可用。
+
+   Campaign v8 **仅**&#x200B;作为托管式云服务提供，不能部署在内部部署或混合环境中。
+
+   ![](../assets/do-not-localize/speech.png) 有关迁移过程的更多信息，请联系您的Adobe代表。
 
 1. **如何下载 Campaign？**
 

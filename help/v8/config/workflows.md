@@ -1,18 +1,18 @@
 ---
 title: 使用Adobe Campaign工作流管理和自动化流程
-description: 开始使用工作流
+description: 工作流入门
 feature: Workflows
 role: User, Admin
 level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
-source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '1570'
-ht-degree: 4%
+source-wordcount: '1307'
+ht-degree: 2%
 
 ---
 
-# 开始使用工作流{#gs-with-workflows}
+# 工作流入门{#gs-with-workflows}
 
 配置Campaign以利用强大的营销活动自动化功能。
 
@@ -45,7 +45,7 @@ ht-degree: 4%
 
 ## 工作流活动 {#wf-activities}
 
-在中详细了解可用的工作流活动 [本节](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html)
+在中详细了解可用的工作流活动 [本节](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=zh-Hans)
 
 工作流活动按类别分组。 提供了四个活动类别：
 
@@ -68,7 +68,7 @@ ht-degree: 4%
 
 要使用 **[!UICONTROL Change Data Source]** 活动：
 
-1. 创建工作流.
+1. 创建工作流。
 
 1. 使用查询目标收件人 **[!UICONTROL Query]** 活动。
 
@@ -121,11 +121,11 @@ ht-degree: 4%
 
 使用Campaign事务型消息传递可自动执行从信息系统触发的事件生成的消息。 这些事务型消息可以是发票、订单确认、送货确认、密码更改、产品不可用通知、帐户对帐单或网站帐户创建等。 这些消息可以通过电子邮件、短信或推送通知单独或批量发送。
 
-![](../assets/do-not-localize/glass.png) 在中了解有关事务性消息传递功能的更多信息 [本节](../send/transactional.md).
+在中了解有关事务性消息传递功能的更多信息 [本节](../send/transactional.md).
 
 连接Adobe Campaign和Adobe Analytics以检索用户操作并发送近乎实时的个性化消息。
 
-![](../assets/do-not-localize/glass.png) 了解如何将Campaign与中的其他解决方案集成 [本节](../start/connect.md)
+了解如何将Campaign与中的其他解决方案集成 [本节](../start/connect.md)
 
 
 ## 工作流端到端用例{#end-to-end-uc}
@@ -158,7 +158,7 @@ ht-degree: 4%
 * [A/B测试](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/a-b-testing/use-case/a-b-testing-use-case.html){target="_blank"}
 了解如何通过定位工作流比较两个电子邮件投放内容。 消息和文本在两种投放中都相同：只有布局发生变化。 目标群体分为三类：两个测试群体和其余群体。 向每个测试组发送投放的不同版本。
 
-### 监测 {#monitoring}
+### 监控 {#monitoring}
 
 <img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
 
@@ -193,7 +193,7 @@ ht-degree: 4%
 * [设置循环导入工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/recurring-import-workflow.html)
 了解如何设计一个可重复使用的工作流，用于导入来自Adobe Campaign数据库中CRM的用户档案。
 
-### 设定目标 {#designing-queries}
+### 定位 {#designing-queries}
 
 <img src="assets/do-not-localize/icon_filter.svg" width="60px">
 

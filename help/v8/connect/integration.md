@@ -5,10 +5,10 @@ feature: Overview
 role: Admin, User
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: f6ccec05d63c397d0a286c18f4114eb414156d45
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '410'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -36,9 +36,9 @@ Campaign v8可与以下Adobe解决方案配合使用。 浏览链接以了解有
 
 您也可以合并 **受众** 和 **资产** 跨Experience Cloud解决方案进行资产共享和受众共享。
 
-![](../assets/do-not-localize/book.png) 了解有关 **受众共享** 中的Campaign和Experience Cloud解决方案之间的差异 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud)
+了解有关 **受众共享** 中的Campaign和Experience Cloud解决方案之间的差异 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud)
 
-![](../assets/do-not-localize/book.png) 了解有关 **资产共享** 中的Campaign和Experience Cloud解决方案之间的差异 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud)
+了解有关 **资产共享** 中的Campaign和Experience Cloud解决方案之间的差异 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud)
 
 ## 与您的CRM连接器集成{#gs-crm-connectors}
 
@@ -53,7 +53,7 @@ CRM连接器支持快速轻松地集成数据：Adobe Campaign提供了一个专
 
 使用FDA连接器（联合数据访问）将Campaign连接到一个或多个服务器 **外部数据库** 并处理存储到其中的信息，而不会影响您的Campaign云数据库数据。
 
-![](../assets/do-not-localize/glass.png) 了解详情，请参阅 [此页面](fda.md)
+请参阅[此页面](fda.md)以了解详情
 
 ## 使用社交媒体{#gs-social}
 

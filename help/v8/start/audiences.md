@@ -5,7 +5,7 @@ feature: Audiences
 role: User
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: 59d33983db930b3a7dc022693d72704bda99e3a1
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 16%
@@ -24,13 +24,13 @@ ht-degree: 16%
 
 列表是一组静态的联系人，在投放操作中可以定位这些联系人，或在导入或其他工作流操作期间对其进行更新。 例如，通过查询从数据库中提取的群体可以存储为列表。
 
-![](../assets/do-not-localize/glass.png) 了解如何在中创建和管理列表 [此页面](../audiences/create-audiences.md).
+了解如何在中创建和管理列表 [此页面](../audiences/create-audiences.md).
 
 ## 筛选数据库{#filter-the-database}
 
 筛选器配置允许您从列表中选择数据 **[!UICONTROL dynamically]**：修改数据时，将更新过滤的数据。 您可以创建自己的过滤器，也可以使用内置的过滤器来定义目标受众。
 
-![](../assets/do-not-localize/glass.png) 了解如何在中创建和管理过滤器 [此页面](../audiences/create-filters.md).
+了解如何在中创建和管理过滤器 [此页面](../audiences/create-filters.md).
 
 ## 在工作流中创建受众
 
@@ -55,7 +55,7 @@ ht-degree: 16%
 
 Adobe Campaign是一款用于收集和处理大量数据（包括个人信息和敏感数据）的强大工具。 通过 Adobe Campaign，您可以收集数据，包括个人信息和敏感信息。因此，获得并监控收件人的同意至关重要。
 
-![](../assets/do-not-localize/book.png) 了解如何在中管理隐私和同意 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans){target="_blank"}.
+了解如何在中管理隐私和同意 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans){target="_blank"}.
 
 **相关主题**
 

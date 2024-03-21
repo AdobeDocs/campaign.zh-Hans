@@ -1,13 +1,13 @@
 ---
 title: 使用Campaign模式
-description: 架构入门
+description: 模式入门
 feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '1262'
+source-wordcount: '1250'
 ht-degree: 5%
 
 ---
@@ -100,11 +100,11 @@ Adobe Campaign使用数据架构来：
 
 要将字段或其他元素添加到Campaign中的某个核心数据架构，例如收件人表(nms：recipient)，您必须扩展该架构。
 
-![](../assets/do-not-localize/glass.png) 有关详细信息，请参见 [扩展模式](extend-schema.md).
+有关详细信息，请参见 [扩展模式](extend-schema.md).
 
 要添加Adobe Campaign中不存在的全新类型数据（例如合同表），您可以直接创建自定义架构。
 
-![](../assets/do-not-localize/glass.png) 有关详细信息，请参见 [创建新架构](create-schema.md).
+有关详细信息，请参见 [创建新架构](create-schema.md).
 
 ![](assets/schemaextension_1.png)
 
@@ -115,7 +115,7 @@ Adobe Campaign使用数据架构来：
 
 枚举先于架构的主元素之前定义。 它们允许您在列表中显示值，以限制用户对给定字段的选择。
 
-示例:
+例如：
 
 ```
 <enumeration basetype="byte" name="exTransactionTypeEnum" default="store">
@@ -176,7 +176,7 @@ For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-f
 
 也可使用定义主键 **内部** 属性。
 
-示例:
+例如：
 
 ```
 <key name="householdId" internal="true">
@@ -190,7 +190,7 @@ For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-f
 >
 >创建新架构或在架构扩展期间，您需要为整个架构保留相同的主键序列值(@pkSequence)。
 
-![](../assets/do-not-localize/glass.png) 了解中有关键的更多信息 [本节](database-mapping.md#management-of-keys).
+了解中有关键的更多信息 [本节](database-mapping.md#management-of-keys).
 
 ## 属性（字段） {#attributes--fields-}
 
@@ -200,7 +200,7 @@ For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-f
 
 完整的属性列表可在 `<attribute>` 中的元素部分 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html#content-model). 以下是一些更常用的属性： **@advanced**， **@dataPolicy**， **@default**， **@desc**， **@enum**， **@expr**， **@label**， **@length**， **@name**， **@notNull**， **@required**， **@ref**， **@xml**， **@type**.
 
-![](../assets/do-not-localize/book.png) 有关每个属性的详细信息，请参阅中的属性说明 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic).
+有关每个属性的详细信息，请参阅中的属性说明 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic).
 
 ### 示例 {#examples}
 
@@ -282,7 +282,7 @@ XML字段的示例也存储在SQL字段中，该字段具有 **@dataPolicy** 属
 
 ![](assets/schemaextension_3.png)
 
-如需详细信息，请参阅[此部分](update-database-structure.md)。
+如需详细信息，请参阅[此小节](update-database-structure.md)。
 
 >[!NOTE]
 >

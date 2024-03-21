@@ -5,7 +5,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
-source-git-commit: 193d2459d5a4ba55822c20a7e376d18b3c6d8795
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 73%
@@ -28,7 +28,7 @@ ht-degree: 73%
 
    您需要下载并安装Campaign客户端控制台才能连接到Adobe Campaign。
 
-   ![](../assets/do-not-localize/glass.png) [单击此处了解详情](connect.md)。
+   [单击此处了解更多信息](connect.md)。
 
    从Campaign v8.6版本开始，您可以访问新的 **Campaign Web用户界面**，可通过中心的Adobe Experience Cloud环境使用。 Experience Cloud 是 Adobe 的数字营销应用程序、产品和服务的集成系列。通过其直观界面，您可以快速访问云应用程序、产品功能和服务。
 
@@ -43,9 +43,9 @@ ht-degree: 73%
 
    电子邮件可投放性是每个发件人的营销计划取得成功的重要因素，其特点是不断变化的标准和规则。想要在这个数字化的世界中取得成果，就必须定期调整电子邮件策略，并考虑关键可投放性趋势，以便最好地吸引受众。
 
-   ![](../assets/do-not-localize/book.png) 请参阅本指南以了解详情 [可投放性最佳实践](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans){target="_blank"}
+   请参阅本指南以了解详情 [可投放性最佳实践](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans){target="_blank"}
 
-   ![](../assets/do-not-localize/book.png) 了解如何在Campaign中实施可投放性 [本指南内容](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=zh-Hans){target="_blank"}
+   了解如何在Campaign中实施可投放性 [本指南内容](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=zh-Hans){target="_blank"}
 
 1. **如何确认我的投放已成功发送，并且未出现错误？**
 

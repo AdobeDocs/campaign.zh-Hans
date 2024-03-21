@@ -5,10 +5,10 @@ feature: Reporting
 role: Data Engineer
 level: Beginner
 exl-id: f931fc0d-12c1-4bff-a4f2-153e8d91c339
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 6%
+source-wordcount: '308'
+ht-degree: 5%
 
 ---
 
@@ -26,7 +26,7 @@ Adobe Campaign提供本页中列出的一组报表工具。
 
   根据查询、计算和卷的复杂性，这些报告中分析的数据可以通过查询收集，并预聚合到列表（数据管理类型工作流）或多维数据集（使用Marketing Analytics）中。 它将以透视表或组列表的形式显示。
 
-  如需详细信息，请参阅[此部分](gs-cubes.md)。
+  如需详细信息，请参阅[此小节](gs-cubes.md)。
 
 * **内置报告**
 
@@ -36,7 +36,7 @@ Adobe Campaign提供本页中列出的一组报表工具。
 
   ![](assets/built-in-reports.png)
 
-  如需详细信息，请参阅[此部分](built-in-reports.md)。
+  如需详细信息，请参阅[此小节](built-in-reports.md)。
 
 * **描述性分析**
 
@@ -46,10 +46,10 @@ Adobe Campaign提供本页中列出的一组报表工具。
 
   ![](assets/desc-analysis-report.png)
 
-  ![](../assets/do-not-localize/book.png) 有关营销活动描述性分析报表的信息，请参见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}
+  有关营销活动描述性分析报表的信息，请参见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=zh-Hans){target="_blank"}
 
-* **自定义报告**
+* **自定义报表**
 
   使用Adobe Campaign创建有关数据库中数据的报表。 创建这些组件后，可在相应的上下文中访问它们。
 
-  ![](../assets/do-not-localize/book.png) 有关创建报告的详细步骤，请参见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target="_blank"}. 高级用户可自行创建个性化报表。
+  有关创建报告的详细步骤，请参见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target="_blank"}. 高级用户可自行创建个性化报表。

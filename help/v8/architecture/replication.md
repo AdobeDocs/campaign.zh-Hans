@@ -5,10 +5,10 @@ feature: Workflows, FFDA
 role: Developer
 level: Intermediate
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
-source-git-commit: f807963a7640773ac18d49999b561f2f3b894d7f
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 5%
+source-wordcount: '365'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 5%
 
 这些工作流对数据库执行维护操作，利用投放日志中的跟踪信息，创建循环活动等。
 
-![](../assets/do-not-localize/glass.png) 有关技术工作流的完整列表，请参见 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html).
+有关技术工作流的完整列表，请参见 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html).
 
 除了这些技术工作流之外，Campaign v8还依靠特定的技术工作流来管理 [数据复制](#data-replication).
 
@@ -33,7 +33,7 @@ ht-degree: 5%
 * **[!UICONTROL Replicate FFDA data immediately]**
 此工作流会复制给定外部帐户的XS数据。
 
-这些技术工作流可从 **[!UICONTROL Administration > Production > Technical workflows > Full FFDA Replication]** Campaign资源管理器节点。 **不得更改它们。**
+这些技术工作流可从 **[!UICONTROL Administration > Production > Technical workflows > Full FFDA Replication]** Campaign资源管理器节点。 **不得对其进行修改。**
 
 如果需要，您可以手动启动数据同步。 要执行此操作，请右键单击 **计划程序** 活动和选择 **立即执行挂起的任务**.
 

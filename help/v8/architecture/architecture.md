@@ -5,7 +5,7 @@ feature: Architecture, Deployment
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 86fa52c445b89227cfabb65e74627c5da7d3db1f
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 10%
@@ -26,13 +26,13 @@ Campaign可用作单个实例，每个实例代表一个完整的Campaign环境�
 
 您可以将资源包从一个环境导出和导入到另一个环境。
 
-![](../assets/do-not-localize/book.png) 在中了解有关包的更多信息 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target="_blank"}
+在中了解有关包的更多信息 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target="_blank"}
 
 ## 部署模型 {#ac-deployment}
 
 提供了两种部署模型： **Campaign FDA部署** (P1-P3)和 **Campaign Enterprise (FFDA)部署** (P4)。
 
-### Campaign FDA部署 {#ac-deployment-fda}
+### Campaign FDA 部署 {#ac-deployment-fda}
 
 在 [FDA部署](fda-deployment.md)， [!DNL Adobe Campaign] v8可以连接到 [!DNL Snowflake] 要通过联合数据访问功能访问数据：您可以访问和处理存储在以下位置中的外部数据和信息： [!DNL Snowflake] 在不更改Adobe Campaign数据结构的情况下创建数据库。 PostgreSQL是主数据库，您可以将Snowflake用作辅助数据库，以扩展数据模型并将数据存储到Snowflake中。 随后，您可以对具有出色性能的大型数据集运行ETL、分段和报告。
 
@@ -100,7 +100,7 @@ Campaign v8 企业版引入了&#x200B;**完全联合数据访问** (FFDA) 概念
 
 事务性消息（消息中心）是用于管理触发消息的 Campaign 模块。
 
-![](../assets/do-not-localize/glass.png) 了解如何在中发送事务性消息 [本节](../send/transactional.md).
+了解如何在中发送事务性消息 [本节](../send/transactional.md).
 
 响应客户在网站上的操作，通过REST API发送事件Campaign，使用通过API调用提供的信息或数据填充消息模板，并将事务型消息实时发送给客户。 这些消息可以通过电子邮件、短信或推送通知单独或批量发送。
 
@@ -108,7 +108,7 @@ Campaign v8 企业版引入了&#x200B;**完全联合数据访问** (FFDA) 概念
 
 * 此 **控制实例** 营销人员和IT团队使用（或营销实例）创建、配置和发布消息模板。 此实例还集中了事件监控和历史记录。
 
-  ![](../assets/do-not-localize/glass.png) 了解如何在中创建和发布消息模板 [本节](../send/transactional.md).
+  了解如何在中创建和发布消息模板 [本节](../send/transactional.md).
 
 * 此 **执行实例** 检索传入事件（例如密码重置或网站订单）并发送个性化消息。 可以有多个执行实例通过负载平衡器处理消息，并扩展要处理的事件数以实现最大可用性。
 

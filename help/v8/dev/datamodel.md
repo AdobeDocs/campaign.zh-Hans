@@ -1,18 +1,18 @@
 ---
-title: Campaign 数据模型快速入门
+title: 开始使用 Campaign 数据模型
 description: 开始使用 Campaign 数据模型并利用来自您的来源的数据以使您的通信和营销输出受益。
 feature: Data Model
 role: Data Engineer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '705'
 ht-degree: 5%
 
 ---
 
-# Campaign 数据模型快速入门 {#gs-ac-datamodel}
+# 开始使用 Campaign 数据模型 {#gs-ac-datamodel}
 
 Adobe Campaign 提供了预定义的数据模型。本节提供了有关Adobe Campaign数据模型的内置表及其交互的一些详细信息。 Adobe Campaign依赖于包含链接在一起的表的云数据库。
 
@@ -43,7 +43,7 @@ Adobe Campaign数据模型的基本结构可描述如下：
 * [扩展现有表](extend-schema.md) 新增字段。 例如，您可以向收件人表添加新的“忠诚度”字段。
 * [创建新表](create-schema.md)例如，有一个“Purchase”表，其中列出了数据库的每个用户档案进行的所有购买，并将其链接到收件人表。
 
-![](../assets/do-not-localize/glass.png) 在中使用Campaign数据模型时了解最佳实践 [本节](datamodel-best-practices.md).
+在中使用Campaign数据模型时了解最佳实践 [本节](datamodel-best-practices.md).
 
 ## 内置配置文件表 {#ootb-profiles}
 
@@ -58,9 +58,9 @@ Adobe Campaign中的内置收件人表(nmsrecipient)为构建数据模型提供�
 
 可以扩展收件人表，但不能减少表中的字段或链接数。
 
-![](../assets/do-not-localize/glass.png) 了解如何在中扩展现有架构 [本节](extend-schema.md).
+了解如何在中扩展现有架构 [本节](extend-schema.md).
 
-![](../assets/do-not-localize/book.png) 在中发现内置收件人表扩展的示例 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#extending-a-table){target="_blank"}
+在中发现内置收件人表扩展的示例 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#extending-a-table){target="_blank"}
 
 您还可以使用其他收件人表以更好地满足您的业务或功能要求。 此方法具有限制，具体说明见 [本节](custom-recipient.md).
 
@@ -68,9 +68,9 @@ Adobe Campaign中的内置收件人表(nmsrecipient)为构建数据模型提供�
 
 要更好地了解Campaign v8中的表管理，请注意 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，这些表将在Campaign及其Snowflake云数据库之间复制。
 
-![](../assets/do-not-localize/glass.png) 了解有关复制策略和机制的更多信息，请参见 [本节](../architecture/replication.md).
+了解有关复制策略和机制的更多信息，请参见 [本节](../architecture/replication.md).
 
 **相关主题**
 
-![](../assets/do-not-localize/glass.png) 了解如何在中导入用户档案 [本节](../start/import.md)
-![](../assets/do-not-localize/glass.png) 在中了解有关Campaign受众的更多信息 [本节](../start/audiences.md)
+了解如何在中导入用户档案 [本节](../start/import.md)
+在中了解有关Campaign受众的更多信息 [本节](../start/audiences.md)

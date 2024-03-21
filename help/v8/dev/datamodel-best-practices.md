@@ -5,9 +5,9 @@ feature: Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '2718'
+source-wordcount: '2740'
 ht-degree: 4%
 
 ---
@@ -20,9 +20,9 @@ Adobe Campaign系统非常灵活，可以在初始实施之后扩展。 但是�
 
 要更好地了解Campaign内置表以及它们之间的关系，请参阅 [本节](datamodel.md).
 
-![](../assets/do-not-localize/glass.png) 读取 [本节](schemas.md) 以开始使用Campaign模式。
+读取 [本节](schemas.md) 以开始使用Campaign模式。
 
-![](../assets/do-not-localize/glass.png) 了解如何配置扩展模式以扩展Adobe Campaign数据库的概念数据模型，请参见 [此页面](extend-schema.md).
+了解如何配置扩展模式以扩展Adobe Campaign数据库的概念数据模型，请参见 [此页面](extend-schema.md).
 
 ## 数据模型架构 {#data-model-architecture}
 
@@ -94,7 +94,7 @@ Adobe Campaign资源具有三个标识符，可以添加额外的标识符。
 
 在上下文中 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，Adobe Campaign主键是为所有内置表自动生成的UUID。 UUID也可用于自定义表。 [了解详情](../architecture/keys.md)
 
-即使ID的数量是无限的，您也应该注意数据库的大小以确保最佳性能。 要防止出现任何问题，请确保调整实例清除设置。 有关更多信息，请参阅[此章节](#data-retention)。
+即使ID的数量是无限的，您也应该注意数据库的大小以确保最佳性能。 要防止出现任何问题，请确保调整实例清除设置。 有关更多信息，请参阅[此小节](#data-retention)。
 
 
 ## 自定义内部键 {#custom-internal-keys}

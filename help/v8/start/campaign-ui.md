@@ -4,20 +4,21 @@ description: 了解如何浏览和使用Campaign用户界面
 feature: Overview
 role: User
 level: Beginner
-source-git-commit: 9ad8158f280acae2c2d10161f8ac6157398b9e3d
+exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '1003'
 ht-degree: 6%
 
 ---
 
-# 了解用户界面 {#ui-client-console}
+# 探索用户界面 {#ui-client-console}
 
 您可以通过客户端控制台或Web用户界面访问Adobe Campaign。 您还可以使用API在Campaign平台中管理数据和执行任务。
 
 >[!CAUTION]
 >
->本文档重点介绍Campaign客户端控制台用法。 如果您使用的是Campaign Web用户界面，请参阅 [本文档](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"}.
+>本文档重点介绍Campaign客户端控制台用法。 如果您使用的是Campaign Web用户界面，请参阅 [本文档](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=zh-Hans){target="_blank"}.
 
 * **客户端控制台** - Campaign客户端控制台是一个本机应用程序，它通过标准Internet协议（如SOAP和HTTP）与Adobe Campaign应用程序服务器进行通信。 Campaign客户端控制台集中了所有功能和设置，并且由于依赖本地缓存，因此需要的带宽最少。 Campaign客户端控制台专为轻松部署而设计，可从互联网浏览器部署并自动更新，无需任何特定的网络配置，因为它只生成HTTP(S)流量。 [了解详情](#ui-access)
 
@@ -83,7 +84,7 @@ You can also access a subset of Campaign capabilities through the a web browser.
 
 The web access interface is similar to the console interface. From a browser, you can use the same navigation and display features as in the console, but you can perform only a reduced set of actions on campaigns. For example, you can view and cancel campaigns, but you cannot modify campaigns. 
 
-![](../assets/do-not-localize/glass.png) [Learn more about Campaign web access](../start/connect.md#web-access).-->
+[Learn more about Campaign web access](../start/connect.md#web-access).-->
 
 ### 访问Campaign资源管理器 {#ac-explorer-ui}
 
@@ -106,9 +107,9 @@ The web access interface is similar to the console interface. From a browser, yo
 
 ![Adobe Campaign Web用户界面主页](assets/ac-web-home.png)
 
-在中详细了解新的Campaign Web用户界面 [本文档](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html){target="_blank"}.
+在中详细了解新的Campaign Web用户界面 [本文档](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=zh-Hans){target="_blank"}.
 
-其他高级功能、配置和设置仅在客户端控制台中可用。 了解有关这两个用户界面中可用的功能的更多信息 [Campaign Web用户界面文档中的](https://experienceleague.adobe.com/docs/campaign-web/v8/start/capability-matrix.html){target="_blank"}.
+其他高级功能、配置和设置仅在客户端控制台中可用。 了解有关这两个用户界面中可用的功能的更多信息 [Campaign Web用户界面文档中的](https://experienceleague.adobe.com/docs/campaign-web/v8/start/capability-matrix.html?lang=zh-Hans){target="_blank"}.
 
 
 ## 支持的语言 {#languages}

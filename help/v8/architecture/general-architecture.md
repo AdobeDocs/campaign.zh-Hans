@@ -5,7 +5,7 @@ feature: Architecture, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
-source-git-commit: 79d916c4d65c0c55ec20f2f5850fec40fe4e99a3
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '1136'
 ht-degree: 7%
@@ -32,7 +32,7 @@ ht-degree: 7%
 
 可以通过不同的方式访问该应用程序：Web用户界面、客户端控制台（富客户端）、Web访问（瘦客户端）或API集成。
 
-![](../assets/do-not-localize/glass.png) [了解关于Campaign用户界面的更多信息](../start/campaign-ui.md).
+[了解关于Campaign用户界面的更多信息](../start/campaign-ui.md).
 
 ## 开发环境 {#dev-env}
 

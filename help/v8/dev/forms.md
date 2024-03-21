@@ -5,7 +5,7 @@ feature: Web Forms, Landing Pages
 role: Developer
 level: Beginner, Intermediate
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '2551'
 ht-degree: 0%
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 默认情况下，每个字段显示在一行中，并占用所有可用空间，具体取决于数据类型。
 
-![](../assets/do-not-localize/book.png) 所有表单属性都列在 [Campaign Classicv7文档](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html){target="_blank"}.
+所有表单属性都列在 [Campaign Classicv7文档](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html){target="_blank"}.
 
 ## 格式化 {#formatting}
 

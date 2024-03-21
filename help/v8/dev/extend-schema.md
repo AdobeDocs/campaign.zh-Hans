@@ -5,7 +5,7 @@ feature: Schema Extension, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: e4dcb228-0683-437a-88cd-bd7ed33da921
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 2%
@@ -25,7 +25,7 @@ ht-degree: 2%
 >[!CAUTION]
 >不得直接修改内置架构。 如果您需要调整内置模式，则必须对其进行扩展。
 
-![](../assets/do-not-localize/glass.png) 要更好地了解Campaign内置表及其交互，请参阅 [此页面](datamodel.md). 另请参阅在中创建新架构时的建议 [此页面](create-schema.md).
+要更好地了解Campaign内置表及其交互，请参阅 [此页面](datamodel.md). 另请参阅在中创建新架构时的建议 [此页面](create-schema.md).
 
 要扩展架构，请执行以下步骤：
 

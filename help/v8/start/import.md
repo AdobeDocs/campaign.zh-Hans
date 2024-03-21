@@ -5,10 +5,10 @@ feature: Profiles, Data Management
 role: User
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
-source-git-commit: e0ec2940db3120dc8fbfd17dd2f5083bbf31232c
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 100%
+source-wordcount: '213'
+ht-degree: 84%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 100%
 
 Campaign 可帮助您将联系人添加到云数据库。您可以加载文件、计划和自动更新多个联系人，在网站上收集数据，或直接在收件人表格中输入用户档案信息。
 
-![](../assets/do-not-localize/glass.png) [受众](audiences.md)入门
+开始使用 [受众](audiences.md)
 
-![](../assets/do-not-localize/glass.png) 了解 Campaign [数据模型](../dev/datamodel.md)
+了解营销活动 [数据模型](../dev/datamodel.md)
 
 ## 在工作流中导入用户档案
 
@@ -33,7 +33,7 @@ Campaign 可帮助您将联系人添加到云数据库。您可以加载文件�
 
 ![](assets/new-import.png)
 
-![](../assets/do-not-localize/book.png)在 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=zh-Hans){target="_blank"}中了解如何运行统一导入任务以馈送到数据库。
+了解如何运行统一导入作业以馈送您的数据库 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=zh-Hans){target="_blank"}.
 
 ## 通过 Web 应用程序收集用户档案
 
@@ -41,7 +41,7 @@ Campaign 可帮助您将联系人添加到云数据库。您可以加载文件�
 
 ![](assets/web-form-page.png)
 
-![](../assets/do-not-localize/book.png)在 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=zh-Hans){target="_blank"}中了解如何创建 Web 窗体。
+了解如何在中创建Web窗体 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=zh-Hans){target="_blank"}.
 
 **相关主题**
 

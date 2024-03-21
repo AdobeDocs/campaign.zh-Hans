@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '1146'
-ht-degree: 92%
+ht-degree: 80%
 
 ---
 
@@ -56,13 +56,13 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
 您可以手动将用户添加到 Campaign，并将其与群组关联，与您的角色层级保持一致。随后，用户将能够登录并获取适合他们的数据和权限。
 
-![](../assets/do-not-localize/glass.png)请参阅[本节](../start/gs-permissions.md)以了解如何将用户添加到 Adobe Campaign。
+了解如何在中将用户添加到Adobe Campaign [本节](../start/gs-permissions.md).
 
 ### 安装Campaign客户端控制台{#implementation-install-console}
 
 应用程序的主要用户界面是一个富客户端，换句话说，是一个仅用标准互联网协议（SOAP、HTTP 等）与 Adobe Campaign 应用程序服务器通信的本机应用程序 (Windows)。Adobe Campaign客户端控制台具有出色的用户友好性，可帮助提升工作效率，使用的带宽非常少（通过使用本地缓存），并且易于部署。 此 Console 可以从互联网浏览器部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成 HTTP(S) 流量。
 
-![](../assets/do-not-localize/glass.png) [了解有关Campaign客户端控制台的更多信息](connect.md).
+[了解有关Campaign客户端控制台的更多信息](connect.md).
 
 ## 准备环境{#implementation-prepare-your-env}
 
@@ -72,22 +72,22 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
    Campaign 可帮助您将联系人添加到云数据库。您可以加载文件、计划和自动更新多个联系人，在网站上收集数据，或直接在收件人表格中输入用户档案信息。
 
-   ![](../assets/do-not-localize/glass.png) [了解如何导入用户档案](import.md)。
+   [了解如何导入用户档案](import.md).
 
    受众将分组到列表中，并可通过工作流创建。然后可以在跨渠道投放中对其进行定位。
 
-   ![](../assets/do-not-localize/glass.png) [了解如何定义受众](audiences.md)。
+   [了解如何定义受众](audiences.md).
 
 1. **使用模板**
 
    活动、投放、任务或工作流都以存储着关键设置和功能的模板为基础。我们为每个组件提供了一个内置模板，但尚未为它们定义具体配置。您需要配置和调整模板以满足您的需求，并向最终用户提供这些模板。
 
 
-   ![](../assets/do-not-localize/glass.png)请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html?lang=zh-Hans)以了解如何使用活动模板
+   在中了解如何使用活动模板 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html?lang=zh-Hans)
 
-   ![](../assets/do-not-localize/glass.png)请参阅 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)了解如何配置工作流模板
+   了解如何在中配置工作流模板 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)
 
-   ![](../assets/do-not-localize/book.png) 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=zh-Hans){target="_blank"}以了解有关电子邮件模板的更多信息
+   要了解有关电子邮件模板的更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=zh-Hans){target="_blank"}
 
 
 1. **配置类型规则**
@@ -100,7 +100,7 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
    Adobe Campaign 提供了预定义的数据模型。为了实施和自定义环境，您需要熟悉 Adobe Campaign 数据模型的内置表格以及它们彼此的关系。
 
-   ![](../assets/do-not-localize/glass.png) [了解关于 Campaign 数据模型的更多信息](../dev/datamodel.md)。
+   [了解有关Campaign数据模型的更多信息](../dev/datamodel.md).
 
 ## 自定义实例{#implementation-custom-your-instance}
 
@@ -110,19 +110,19 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
    Adobe Campaign 提供用来识别数据的常用模式，例如：收件人、投放日志、订阅等。
 
-   ![](../assets/do-not-localize/glass.png) 请参阅本节以了解关于 [Campaign 内置数据模型](../dev/datamodel.md)的更多信息。
+   请参阅此部分以了解有关 [Campaign内置数据模型](../dev/datamodel.md).
 
-   ![](../assets/do-not-localize/glass.png)您可以扩展现有模式或从头开始创建新模式。请参阅[此页面](../dev/customize.md)以了解详情。
+   您可以扩展现有模式或从头开始创建新模式。 请参阅[此页面](../dev/customize.md)以了解详情。
 
 1. **仪表板和列表**
 
    您可以轻松配置列表，添加和删除字段以及自定义列。
 
-   ![](../assets/do-not-localize/glass.png)请参阅[此页面](../dev/customize.md#gs-lists-and-filters)以了解如何管理 Campaign 中的过滤器和列表。
+   了解如何在中管理Campaign中的过滤器和列表 [此页面](../dev/customize.md#gs-lists-and-filters).
 
    您还可以创建新仪表板，以根据您的需要显示 Campaign 数据。
 
-   ![](../assets/do-not-localize/glass.png)请参阅[此页面](../dev/customize.md#gs-custom-dashboards)以了解详情。
+   请参阅[此页面](../dev/customize.md#gs-custom-dashboards)以了解详情。
 
 1. **报告**
 
@@ -130,7 +130,7 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
    除了内置的报告，Adobe Campaign 还可用于在不同的上下文中生成各种报告，以满足不同的需求。本文档详细介绍了使用原则和实施模式。
 
-   ![](../assets/do-not-localize/glass.png)在[此页面](../reporting/gs-reporting.md)中了解关于 Campaign 报告功能的更多信息。
+   在中了解关于Campaign报告功能的更多信息 [此页面](../reporting/gs-reporting.md).
 
 
 ## 设置活动自动化{#implementation-automation}
@@ -160,24 +160,24 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 * Campaign - Analytics Data connectors
 
 
-您只能使用单点登录(SSO)连接到Campaign。 请参阅[此页面](connect.md)以了解详情。
+仅可使用单点登录 (SSO) 连接到 Campaign。请参阅[此页面](connect.md)以了解详情。
 
-![](../assets/do-not-localize/glass.png) 有关能够与 Adobe Campaign 集成的 Adobe 解决方案的完整列表，请参阅[此页面](../connect/integration.md)。
+了解可与Adobe Campaign集成的Adobe解决方案的完整列表 [本页内容](../connect/integration.md).
 
 ### 连接器{#implementation-connectors}
 
 将 Campaign 与第三方系统连接起来，以结合大量功能并实现流程自动化。
 
-![](../assets/do-not-localize/glass.png) 在[本节](../connect/integration.md)中了解关于可用连接器的更多信息。
+要了解有关可用连接器的更多信息，请参阅 [本节](../connect/integration.md).
 
 **将您的 CRM 连接到 Campaign**
 
 您可以将 Adobe Campaign 平台连接到您的 CRM 第三方系统并同步数据：联系人、帐户、购买等。
 
-![](../assets/do-not-localize/glass.png) 请参阅[本节](../connect/integration.md#gs-crm-connectors)以了解如何将您的 CRM 系统连接到 Campaign
+了解如何在中将您的CRM系统连接到Campaign [本节](../connect/integration.md#gs-crm-connectors)
 
 **连接到外部数据库**
 
 您可以通过联合数据访问 (FDA) 模块将 Campaign 云数据库连接到外部系统。
 
-![](../assets/do-not-localize/glass.png) 请参阅[本节](../connect/integration.md#gs-fda)，了解如何配置 Campaign FDA 模块以定义访问参数
+了解如何在中配置Campaign FDA模块以定义访问参数 [本节](../connect/integration.md#gs-fda)

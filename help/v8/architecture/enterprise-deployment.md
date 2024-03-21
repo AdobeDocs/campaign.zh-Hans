@@ -5,10 +5,10 @@ feature: Architecture, FFDA, Deployment
 role: Admin, Developer
 level: Beginner
 exl-id: 0a6f6701-b137-4320-9732-31946509ee03
-source-git-commit: cfc1043e30bdd43e1acaeaf399fde01c6473f1b4
+source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 54%
+ht-degree: 50%
 
 ---
 
@@ -39,7 +39,7 @@ Campaign v8企业版(FFDA)在流程的任何步骤（从定位到最终报告）
 
 在 [企业(FFDA)部署](../architecture/enterprise-deployment.md)， [!DNL Adobe Campaign] v8可与两个数据库配合使用：本地 [!DNL Campaign] 数据库用于用户界面实时消息传递和统一查询，并通过API进行编写，以及使用Cloud [!DNL Snowflake] 数据库，用于活动执行、批量查询和工作流执行。
 
-Campaign v8 企业版引入了&#x200B;**完全联合数据访问** (FFDA) 概念：所有数据现在都位于云数据库上的远程位置。
+Campaign v8企业版引入了以下概念 **完全联合数据访问** (FFDA)：所有数据现在都位于云数据库上的远程位置。
 
 特定 API 可用于管理本地数据库和云数据库之间的数据。在[本页面](new-apis.md)中了解这些新 API 的工作方式以及如何使用它们。
 
@@ -80,17 +80,17 @@ Campaign v8 企业版引入了&#x200B;**完全联合数据访问** (FFDA) 概念
 
 ## 影响{#ffda-impacts}
 
-### [!DNL Campaign] API 暂存机制{#staging-api}
+### [!DNL Campaign] API暂存机制{#staging-api}
 
 替换为 [!DNL Campaign] 云数据库，由于性能（延迟和并发），不建议使用Blast统一调用。 始终首选批处理操作。 为了保证API的最佳性能，Campaign会继续在本地数据库级别处理API调用。
 
-![](../assets/do-not-localize/glass.png) [本页中详细介绍了API暂存机制](staging.md)
+[本页中详细介绍了API暂存机制](staging.md)
 
 ### 新 API{#new-apis}
 
 新API可用于管理以下对象之间的数据同步： [!DNL Campaign] 本地数据库和云数据库。 还引入了一种新的机制，用于在本地数据库级别处理API调用，以避免延迟并提高整体性能。
 
-![](../assets/do-not-localize/glass.png) [有关新API的详情，请参阅此页面](new-apis.md)
+[有关新API的详情，请参阅此页面](new-apis.md)
 
 
 ### 数据复制{#data-replication}
@@ -107,7 +107,7 @@ Campaign v8 企业版引入了&#x200B;**完全联合数据访问** (FFDA) 概念
 
 ### ID 管理{#id-mgt-ffda}
 
-Campaign v8 对象现在使用&#x200B;**通用唯一标识符 (UUID)**，允许使用无限的唯一值来标识数据。
+Campaign v8对象现在使用 **通用唯一ID (UUID)**，允许使用无限的唯一值来标识数据。
 
 请注意，此 ID 是基于字符串的，而不是按顺序的。主密钥不是 Campaign v8 中的数字值，您需要在模式中使用 **autouuid** 和 **autopk** 属性。
 

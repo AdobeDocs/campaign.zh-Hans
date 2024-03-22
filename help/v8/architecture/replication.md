@@ -5,7 +5,7 @@ feature: Workflows, FFDA
 role: Developer
 level: Intermediate
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 这些工作流对数据库执行维护操作，利用投放日志中的跟踪信息，创建循环活动等。
 
-有关技术工作流的完整列表，请参见 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html).
+有关技术工作流的完整列表，请参见 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}.
 
 除了这些技术工作流之外，Campaign v8还依靠特定的技术工作流来管理 [数据复制](#data-replication).
 
@@ -74,6 +74,6 @@ nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
 
 **相关主题**
 
-* [了解如何开始使用工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)
+* [了解如何开始使用工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target="_blank"}
 
 * [数据保留期](../dev/datamodel-best-practices.md#data-retention)

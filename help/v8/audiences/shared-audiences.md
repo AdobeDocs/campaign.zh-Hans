@@ -6,10 +6,10 @@ role: User
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 100%
+source-wordcount: '242'
+ht-degree: 73%
 
 ---
 
@@ -34,10 +34,10 @@ ht-degree: 100%
   >
   > “声明的 ID”数据源还可以与 People 核心服务集成一起使用。
   >
-  >如果您使用 People 核心服务集成，并想要添加 Audience Manager 集成，则需要 Adobe Audience Manager 顾问的帮助，以避免在 Adobe Audience Manager 环境中转换为使用此声明的 ID 数据源时收集的所有 ID 同步丢失。
+  >如果您使用People核心服务集成，并想要添加Audience Manager集成，则需要Adobe Audience Manager顾问的帮助，以避免在Adobe Audience Manager上下文中转换为使用此声明的ID数据源时收集的所有ID同步丢失。
 
 请参阅：
 
-[https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=zh-Hans](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=zh-Hans)
+[Adobe Audience Manager知识库](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16471.html?lang=zh-Hans){target="_blank"}.
 
-[https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=zh_Hans](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=zh_Hans)
+[《Adobe Experience Cloud中央界面组件指南》](https://experienceleague.adobe.com/docs/core-services/interface/services/audiences/audience-library.html?lang=zh_Hans){target="_blank"}.

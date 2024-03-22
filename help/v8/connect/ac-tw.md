@@ -5,7 +5,7 @@ role: User, Admin
 feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 3%
@@ -20,7 +20,10 @@ ht-degree: 3%
 
 * 收集新联系人 — Adobe Campaign Social Marketing还可让您轻松获取新联系人：联系用户并询问他们是否要共享其个人资料信息。 如果他们接受，Adobe Campaign会自动恢复数据，以便您执行定向活动，并在可能的情况下实施跨渠道策略。
 
-![](../assets/do-not-localize/speech.png) 作为托管Cloud Service用户， [联系人Adobe](../start/campaign-faq.md#support) 连接Campaign与X。  **管理社交网络（社交营销）** 必须在您的环境中通过专用软件包安装加载项，并且必须配置Twitter外部帐户。
+
+>[!NOTE]
+>
+>作为托管Cloud Service用户， [联系人Adobe](../start/campaign-faq.md#support) 连接Campaign与X。  **管理社交网络（社交营销）** 必须在您的环境中通过专用软件包安装加载项，并且必须配置Twitter外部帐户。
 
 
 要将Adobe Campaign配置为将推文发布到您的X帐户，请为这些帐户委派对Adobe Campaign的写入权限。 为此，您必须：
@@ -42,7 +45,7 @@ Campaign使用1.1版本的X API。 要使用它，您需要通过开发人员门
 获得提升的访问权限批准后，创建一个X应用程序以使Adobe Campaign能够在您的X帐户上创建帖子。 为此请执行以下操作步骤：
 
 1. 登录到您的X帐户。
-1. 连接到 [X开发人员门户](https://developer.twitter.com/en/apps).
+1. 连接到 [X开发人员门户](https://developer.twitter.com/en/apps){target="_blank"}.
 1. 选择 **创建应用程序**.
 1. 让X助手引导您完成该过程。
 1. 要允许Adobe Campaign在您的帐户上创建帖子，请编辑到 **应用程序权限** 从应用程序的用户身份验证设置部分。 选择 **读取、写入和直接消息**.

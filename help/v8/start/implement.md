@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1146'
-ht-degree: 80%
+ht-degree: 79%
 
 ---
 
@@ -83,18 +83,18 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
    活动、投放、任务或工作流都以存储着关键设置和功能的模板为基础。我们为每个组件提供了一个内置模板，但尚未为它们定义具体配置。您需要配置和调整模板以满足您的需求，并向最终用户提供这些模板。
 
 
-   在中了解如何使用活动模板 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html?lang=zh-Hans)
+   在中了解如何使用活动模板 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html?lang=zh-Hans){target="_blank"}.
 
-   了解如何在中配置工作流模板 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)
+   了解如何在中配置工作流模板 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target="_blank"}.
 
-   要了解有关电子邮件模板的更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=zh-Hans){target="_blank"}
+   要了解有关电子邮件模板的更多信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=zh-Hans){target="_blank"}.
 
 
 1. **配置类型规则**
 
    利用 Campaign 类型规则来筛选、控制和监测投放发送。例如，疲劳规则可控制消息传递的频率和数量，以避免对收件人过度宣传。实施后，类型规则就会在投放中引用。
 
-   请参阅[此部分](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=zh-Hans)以了解有关分类和疲劳管理的更多信息。
+   在中了解有关类型和疲劳管理的更多信息 [本节](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=zh-Hans){target="_blank"}.
 
 1. **熟悉 Campaign 内置数据模型**
 

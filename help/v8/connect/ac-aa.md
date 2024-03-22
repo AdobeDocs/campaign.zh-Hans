@@ -5,10 +5,10 @@ feature: Analytics Integration, Reporting
 role: Admin, User
 level: Beginner
 exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 71%
+source-wordcount: '1051'
+ht-degree: 66%
 
 ---
 
@@ -18,7 +18,9 @@ ht-degree: 71%
 
 此集成允许Adobe Campaign和Adobe Analytics通过 **网站分析连接器** 加载项。 此集成将Adobe Campaign投放的电子邮件营销活动的指标和属性发送到Adobe Analytics。
 
-![](../assets/do-not-localize/speech.png)  作为托管Cloud Service用户， [联系人Adobe](../start/campaign-faq.md#support) 将Campaign与Adobe Experience Cloud服务和解决方案配合使用。 必须通过专用软件包在您的环境中安装Web Analytics连接器加载项。
+>[!NOTE]
+>
+>作为托管Cloud Service用户， [联系人Adobe](../start/campaign-faq.md#support) 将Campaign与Adobe Experience Cloud服务和解决方案配合使用。 必须通过专用软件包在您的环境中安装Web Analytics连接器加载项。
 
 使用 Adobe Analytics Connector，Adobe Campaign 可以对互联网受众进行评测（网站分析）。利用Web分析工具，Adobe Campaign可将指标和营销活动属性转发到Analytics。
 
@@ -37,7 +39,7 @@ ht-degree: 71%
 
 1. [在 Adobe Analytics 中创建报表包](#report-suite-analytics)
 1. [配置转化变量和成功事件](#configure-conversion-success)
-1. [在 Adobe Campaign 中配置外部帐户](#external-account-ac)
+1. [在Adobe Campaign中配置外部帐户](#external-account-ac)
 
 ## 创建Analytics报表包 {#report-suite-analytics}
 
@@ -53,7 +55,7 @@ ht-degree: 71%
 
 1. 在 **[!UICONTROL Report suite manager]** 页面中，依次单击 **[!UICONTROL Create new]** 和 **[!UICONTROL Report suite]**。
 
-   有关创建 **[!UICONTROL Report suite]** 的详细过程，请参阅此[部分](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html#prerequisites)。
+   有关详细过程，请参阅 **[!UICONTROL Report suite]** 创建，请参阅 [Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html#prerequisites){target="_blank"}.
 
    ![](assets/analytics_connnector_3.png)
 
@@ -83,7 +85,7 @@ ht-degree: 71%
 
 1. 单击 **[!UICONTROL Add new]** 以创建评测电子邮件营销活动影响所需的标识符，即内部营销活动名称 (cid) 和 iNmsBroadlog (bid) 表 ID。
 
-   如需了解如何编辑 **[!UICONTROL Conversion variables]**，请参阅此[部分](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html#admin-tools)。
+   了解如何编辑 **[!UICONTROL Conversion variables]**，请参阅此 [Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html#admin-tools){target="_blank"}.
 
    ![](assets/analytics_connnector_6.png)
 
@@ -106,7 +108,7 @@ ht-degree: 71%
    * **[!UICONTROL Unique Opens]**
    * **[!UICONTROL Unsubscribed]**
 
-   要了解如何配置 **[!UICONTROL Success events]**，请参阅此[部分](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html#admin-tools)
+   了解如何配置 **[!UICONTROL Success events]**，请参阅此 [Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html#admin-tools)
 
    ![](assets/analytics_connnector_8.png)
 
@@ -120,7 +122,7 @@ ht-degree: 71%
 
 请注意，如果在配置外部帐户时，您的 **[!UICONTROL Report suite]**、**[!UICONTROL Conversion variables]** 或 **[!UICONTROL Success events]** 不可见，这意味着您在与用户关联的 **[!UICONTROL Product profile]** 中缺少对此新创建组件的权限。
 
-有关此内容的更多信息，请参阅 [Adobe Analytics 的产品配置文件](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html#product-profile-admins)页面。
+有关详情，请参阅 [Adobe Analytics的产品配置文件](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html#product-profile-admins){target="_blank"} 页面。
 
 1. 转到 Adobe Campaign 树的 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** 文件夹，然后单击 **[!UICONTROL New]**。
 
@@ -180,7 +182,7 @@ ht-degree: 71%
 
 1. **[!UICONTROL Advanced]** 选项卡可让您配置或修改更多技术设置。
 
-   * **[!UICONTROL Lifespan]**：可让您指定延迟（以天为单位），在此之后技术工作流会在 Adobe Campaign 中恢复网站事件。默认值：180 天。
+   * **[!UICONTROL Lifespan]**：可让您指定延迟（以天为单位），在此之后技术工作流会在Adobe Campaign中恢复Web事件。 默认值：180 天。
    * **[!UICONTROL Persistence]**：可让您指定将所有网站事件（例如购买）归因到再营销活动的时段，默认值：7 天。
 
 >[!NOTE]
@@ -236,7 +238,7 @@ Adobe Campaign和Adobe Analytics之间的数据交换由作为后台任务运行
    ![](assets/webanalytics_delivery_properties_003.png)
 
 1. 打开投放属性。
-1. 转到 **[!UICONTROL Web Analytics]** 选项卡，然后选择之前创建的外部帐户。请参阅[在 Adobe Campaign 中配置外部帐户](#external-account-ac)。
+1. 转到 **[!UICONTROL Web Analytics]** 选项卡，然后选择之前创建的外部帐户。请参阅 [在Adobe Campaign中配置外部帐户](#external-account-ac).
 
    ![](assets/webanalytics_delivery_properties_002.png)
 

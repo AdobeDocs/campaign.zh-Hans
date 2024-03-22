@@ -5,10 +5,10 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: a08dd72a2be703e5e9cd3cdc20dbb3064b06b35d
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 9%
+source-wordcount: '510'
+ht-degree: 10%
 
 ---
 
@@ -77,13 +77,13 @@ ht-degree: 9%
 
      在中了解有关管理镜像页面的更多信息 [本节](mirror-page.md#link-to-mirror-page).
 
-1. 您可以为电子邮件定义其他参数，如将邮件副本发送到BBC地址、更改邮件格式、设置特定编码等。 在[此章节](email-parameters.md)中了解更多信息。
+1. 您可以为电子邮件定义其他参数，如将邮件副本发送到BBC地址、更改邮件格式、设置特定编码等。 可在[此部分](email-parameters.md)中了解详情。
 
 1. 内容准备就绪后，单击 **保存**：它现在将显示在您的投放列表中，位于 **[!UICONTROL Campaigns > Deliveries]** 选项卡。
 
 您的第一个电子邮件投放已准备就绪。 您现在需要定义受众、验证投放并发送它。
 
-请参阅此以了解如何导入电子邮件内容 [用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html).
+请参阅此以了解如何导入电子邮件内容 [用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
 
 请在以下部分中了解详情：
 
@@ -91,7 +91,7 @@ ht-degree: 9%
 * [创建和使用电子邮件模板](../send/create-templates.md)
 * [选择电子邮件的受众](../audiences/gs-audiences.md)
 * [验证投放并发送校样](preview-and-proof.md)
-* [配置并发送投放](configure-and-send.md)
+* [配置和发送投放](configure-and-send.md)
 
 ## 测试和验证电子邮件
 
@@ -99,7 +99,7 @@ Campaign提供了多种方法，可在将电子邮件发送给受众之前测试
 
 您可以：
 
-* [  发送验证](preview-and-proof.md)
+* [发送校样](preview-and-proof.md)
 * [添加种子地址](../audiences/test-profiles.md)
 * [检查投放分析日志](delivery-analysis.md)
 

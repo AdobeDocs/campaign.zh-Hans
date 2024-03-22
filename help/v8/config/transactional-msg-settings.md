@@ -5,10 +5,10 @@ feature: Transactional Messaging
 role: Admin, Developer
 level: Experienced
 exl-id: 2899f627-696d-422c-ae49-c1e293b283af
-source-git-commit: 561e4b6d2c99e98e068132c80c2bebb756b60a44
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 5%
+source-wordcount: '600'
+ht-degree: 4%
 
 ---
 
@@ -18,7 +18,10 @@ ht-degree: 5%
 
 了解中的事务性消息架构 [此页面](../architecture/architecture.md#transac-msg-archi).
 
-![](../assets/do-not-localize/speech.png) 作为托管Cloud Service用户， [联系人Adobe](../start/campaign-faq.md#support) 要在环境中安装和配置Campaign事务型消息传递，请执行以下操作：
+
+>[!NOTE]
+>
+>作为托管Cloud Service用户， [联系人Adobe](../start/campaign-faq.md#support) 要在环境中安装和配置Campaign事务型消息传递，请执行以下操作：
 
 ## 定义权限 {#mc-permissions}
 
@@ -51,7 +54,7 @@ ht-degree: 5%
 
 以下是发送事务推送通知的事件配置示例：
 
-```
+```xml
 <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Body>
      <urn:PushEvent>

@@ -5,7 +5,7 @@ feature: Release Notes
 role: Admin
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 52%
@@ -80,6 +80,6 @@ ht-degree: 52%
 * [Campaign版本更新](upgrades.md)
 * [检查您的Campaign版本](upgrades.md#version)
 * [安装Campaign客户端控制台](connect.md)
-* [控制面板版本](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=zh-Hans){target="_blank"}.
+* [控制面板版本](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=zh-Hans){target="_blank"}
 
 要获悉新的Experience Cloud解决方案版本，请订阅 [Adobe优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html){target="_blank"}.

@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '706'
-ht-degree: 73%
+ht-degree: 70%
 
 ---
 
@@ -22,7 +22,9 @@ ht-degree: 73%
 
    这种定期更新旨在让您掌握最新、最充分的信息，保持环境的安全，并改进您对我们产品的体验。这就是为什么我们认为运行最新版本的 Adobe Campaign 至关重要的原因。
 
-   ![](../assets/do-not-localize/speech.png)作为托管云服务用户，您的实例会由 Adobe 通过每个新版本升级。
+   >[!NOTE]
+   >
+   >作为托管Cloud Service用户，您的实例会通过Adobe在每个新版本中升级。
 
 1. **如何连接到 Campaign v8？**
 
@@ -65,7 +67,9 @@ ht-degree: 73%
 
    子域是域的一个分支，可用于隔离您的品牌或各种类型的流量（事务性消息、营销信息等）。
 
-   ![](../assets/do-not-localize/speech.png) 作为托管Cloud Service用户，请联系Adobe以将子域委派给Adobe。
+   >[!NOTE]
+   >
+   >作为托管Cloud Service用户，请联系Adobe以将子域委派给Adobe。
 
 1. **作为 Campaign Classic v7 用户，我是否可以迁移到 Campaign v8？**
 
@@ -73,7 +77,7 @@ ht-degree: 73%
 
    Campaign v8 **仅**&#x200B;作为托管式云服务提供，不能部署在内部部署或混合环境中。
 
-   ![](../assets/do-not-localize/speech.png) 有关迁移过程的更多信息，请联系您的Adobe代表。
+   有关迁移过程的更多信息，请联系您的Adobe代表。
 
 1. **如何下载 Campaign？**
 

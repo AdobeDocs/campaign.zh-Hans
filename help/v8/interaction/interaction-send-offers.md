@@ -5,9 +5,9 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1241'
 ht-degree: 3%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 3%
 
 ### 扩充 {#enrichment}
 
-此 **扩充** 利用活动，可将优惠或链接添加到投放收件人的优惠中。[了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html)
+此 **扩充** 利用活动，可将优惠或链接添加到投放收件人的优惠中。[了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}。
 
 例如，您可以在投放之前扩充收件人查询的数据。
 
@@ -92,7 +92,7 @@ ht-degree: 3%
 配置后 **查询** 活动：
 
 1. 添加并打开 **扩充** 活动。
-1. 在 **[!UICONTROL Enrichment]** 选项卡中，选择 **[!UICONTROL Add data]**。
+1. 在 **[!UICONTROL Enrichment]** 选项卡，选择 **[!UICONTROL Add data]**.
 1. 选择 **[!UICONTROL An offer proposition]** 在要添加的数据类型中。
 
    ![](assets/int_enrichment_offer2.png)
@@ -163,7 +163,7 @@ ht-degree: 3%
 
 此 **[!UICONTROL Offer engine]** 利用活动，您还可在投放之前指定对选件引擎的调用。
 
-欲知详情，请参阅 **优惠引擎** 活动，请参阅 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html)
+欲知详情，请参阅 **优惠引擎** 活动，请参阅 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html){target="_blank"}.
 
 本练习的原理与 **扩充** 使用引擎调用进行的活动，方法是在投放之前使用引擎计算的优惠扩充集客群体数据。
 
@@ -186,7 +186,7 @@ ht-degree: 3%
 
 此 **[!UICONTROL Offers by cell]** 利用活动，可将集客群体（例如从查询）分配到多个区段，并指定要为每个区段呈现的选件。
 
-欲知详情，请参阅 **单元格优惠** 活动，请参阅 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html)
+欲知详情，请参阅 **单元格优惠** 活动，请参阅 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html){target="_blank"}.
 
 为此，请使用以下流程：
 

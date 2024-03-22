@@ -5,10 +5,10 @@ feature: Profiles, Monitoring
 role: User
 level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 46be0379610a6a4a3491d49ce096c64270ed8016
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '3005'
-ht-degree: 12%
+source-wordcount: '2990'
+ht-degree: 5%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 12%
 
 此过程会阻止系统继续发送无效的电子邮件地址。 退回是ISP用于确定IP信誉的关键数据之一。 关注此指标很重要。 “已投放”与“已退回”可能是衡量营销消息投放的最常见方式：投放百分比越高越好。
 
-如果消息无法发送到配置文件，则远程服务器会自动向Adobe Campaign发送错误消息。 此错误用于确定是应隔离电子邮件地址、电话号码还是设备。 请参阅 [退回邮件管理](#bounce-mail-qualification).
+如果无法将消息发送到配置文件，远程服务器会自动向 Adobe Campaign 发送错误消息。此错误用于确定是应隔离电子邮件地址、电话号码还是设备。 请参阅 [退回邮件管理](#bounce-mail-qualification).
 
 发送消息后，您可以在投放日志中查看每个用户档案的投放状态以及相关失败的类型和原因。
 
@@ -40,7 +40,7 @@ ht-degree: 12%
 
 此  **已忽略** 已知的错误类型是临时的，如“不在办公室”，或技术错误，例如，如果发件人类型为“邮递员”。
 
-反馈循环的运行方式与退回电子邮件类似：当用户将电子邮件标记为垃圾邮件时，您可以在Adobe Campaign中配置电子邮件规则以阻止向该用户的所有投放。 即使这些用户没有单击退订链接，也会对其地址进行列入阻止列表。 地址将添加到(**NmsAddress**)隔离表而非(**NmsRecipient**)收件人表，使用 **[!UICONTROL Denylisted]** 状态。 要了解有关反馈循环机制的更多信息，请参阅 [《Adobe可投放性最佳实践指南》](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops).
+反馈循环的运行方式与退回电子邮件类似：当用户将电子邮件标记为垃圾邮件时，您可以在Adobe Campaign中配置电子邮件规则以阻止向该用户的所有投放。 即使这些用户没有单击退订链接，也会对其地址进行列入阻止列表。 地址将添加到(**NmsAddress**)隔离表而非(**NmsRecipient**)收件人表，使用 **[!UICONTROL Denylisted]** 状态。 要了解有关反馈循环机制的更多信息，请参阅 [《Adobe可投放性最佳实践指南》](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops){target="_blank"}.
 
 ## 同步和异步错误 {#synchronous-and-asynchronous-errors}
 
@@ -109,7 +109,7 @@ Campaign投放中的有效期设置为 **3.5天或以下**. 对于投放，如�
 
 例如，如果在Campaign中将有效期设置为默认值5天，则软退回消息将进入MTA重试队列，并从该消息达到MTA时起最多重试3.5天。 在这种情况下，将不使用Campaign中设置的值。
 
-消息在 MTA 队列中停留 3.5 天且投放失败后，该消息将超时，在投放日志中的状态将从 **[!UICONTROL Sent]** 更新为 **[!UICONTROL Failed]**。
+消息在MTA队列中停留3.5天且投放失败后，该消息将超时，其状态将从更新 **[!UICONTROL Sent]** 到 **[!UICONTROL Failed]** 在投放日志中。
 
 有关有效期的更多信息，请参见 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.
 
@@ -139,7 +139,7 @@ Campaign投放中的有效期设置为 **3.5天或以下**. 对于投放，如�
    <td> 地址被隔离。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 未指定地址 </td> 
+   <td> 地址未指定 </td> 
    <td> 硬 </td> 
    <td> 7 </td> 
    <td> 没有给收件人地址。<br /> </td> 
@@ -163,7 +163,7 @@ Campaign投放中的有效期设置为 **3.5天或以下**. 对于投放，如�
    <td> 收件人的地址是控制组的一部分。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 双精度型 </td> 
+   <td> 双精度 </td> 
    <td> 已忽略 </td> 
    <td> 10 </td> 
    <td> 收件人的地址已在此投放中。<br /> </td> 
@@ -190,7 +190,7 @@ Campaign投放中的有效期设置为 **3.5天或以下**. 对于投放，如�
    <td> 无效域 </td> 
    <td> 柔光 </td> 
    <td> 2 </td> 
-   <td> 电子邮件地址的域不正确或不再存在。 此用户档案将被重新定向，直到错误计数达到 5 为止。此后，该记录将设置为隔离状态，并且以后不会再进行重试。<br /> </td> 
+   <td> 电子邮件地址的域不正确或不再存在。 此用户档案将被重新定向，直到错误计数达到 5 为止。之后，该记录将设置为隔离状态，并且以后不会再重试。<br /> </td> 
   </tr> 
   <tr> 
    <td> 邮箱已满 </td> 
@@ -208,7 +208,7 @@ Campaign投放中的有效期设置为 **3.5天或以下**. 对于投放，如�
    <td> 未定义 </td> 
    <td> 未定义 </td> 
    <td> 0 </td> 
-   <td> 地址正在进行鉴别，因为错误尚未递增。 当服务器发送新的错误消息时，会发生此类错误： 这可能是一个孤立的错误，但如果再次发生，则错误计数会增加，从而提醒技术团队。然后，他们可以通过以下方式执行报文分析并确定此错误的资格： <span class="uicontrol">管理</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">不可交付结果管理</span> 树结构中的节点。<br /> </td> 
+   <td> 地址正在进行鉴别，因为错误尚未递增。 当服务器发送新错误消息时，会发生此类错误：它可能是孤立的错误，但如果再次发生，错误计数会增加，这会提醒技术团队。 然后，他们可以通过以下方式执行报文分析并确定此错误的资格： <span class="uicontrol">管理</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">不可交付结果管理</span> 树结构中的节点。<br /> </td> 
   </tr> 
   <tr> 
    <td> 不符合优惠资格 </td> 
@@ -232,7 +232,7 @@ Campaign投放中的有效期设置为 **3.5天或以下**. 对于投放，如�
    <td> 不合格地址 </td> 
    <td> 已忽略 </td> 
    <td> 15 </td> 
-   <td> 邮寄地址不合格.<br /> </td> 
+   <td> 邮寄地址不合格。<br /> </td> 
   </tr> 
   <tr> 
    <td> 不可到达 </td> 
@@ -244,7 +244,7 @@ Campaign投放中的有效期设置为 **3.5天或以下**. 对于投放，如�
    <td> 用户未知 </td> 
    <td> 硬 </td> 
    <td> 1 </td> 
-   <td> 地址不存在。 不再尝试对该用户档案进行投放。<br /> </td> 
+   <td> 地址不存在。 不再尝试对此用户档案进行投放。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

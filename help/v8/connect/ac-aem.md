@@ -5,9 +5,9 @@ feature: Experience Manager Integration
 role: Admin, User
 level: Beginner
 exl-id: e83893f7-a8be-48a3-a7a6-aced7b4d4f69
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,16 @@ ht-degree: 0%
 
 Adobe Campaign与Adobe Experience Manager之间的集成允许您直接在Adobe Experience Manager中管理电子邮件投放的内容以及表单。 您可以选择导入 **Adobe Experience Manager** 将内容导入Campaign或连接 **Adobe Experience Manager即云服务** 帐户，允许您直接在Web界面中编辑内容。
 
-[了解如何在Campaign Web界面中将Adobe Experience Manager编辑为Cloud Service内容](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-content.html?lang=en)
+[了解如何在Campaign Web界面中将Adobe Experience Manager编辑为Cloud Service内容](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-content.html){target="_blank"}.
 
-[在本文档中了解有关Adobe Experience Manager的更多信息](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html#aem-and-adobe-campaign-integration-workflow)
+[在本文档中了解有关Adobe Experience Manager的更多信息](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html#aem-and-adobe-campaign-integration-workflow){target="_blank"}.
+
+
+>[!NOTE]
+>
+>作为托管Cloud Service用户， [联系人Adobe](../start/campaign-faq.md#support) 将Adobe Experience Manager与Campaign集成。
 
 ## 从Adobe Experience Manager导入内容 {#integrating-with-aem}
-
-![](../assets/do-not-localize/speech.png)  作为托管Cloud Service用户， [联系人Adobe](../start/campaign-faq.md#support) 将Adobe Experience Manager与Campaign集成。
 
 例如，此集成可用于在Adobe Experience Manager中创建新闻稿，然后在Adobe Campaign中将其用作电子邮件营销活动的一部分。
 
@@ -44,7 +47,7 @@ Adobe Campaign与Adobe Experience Manager之间的集成允许您直接在Adobe 
 
    ![](assets/aem_authoring_3.png)
 
-1. 通过添加组件(例如Adobe Campaign中的个性化字段)自定义电子邮件内容。 [了解详情](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/aem-adobe-campaign/campaign.html?lang=en#editing-email-content)
+1. 通过添加组件(例如Adobe Campaign中的个性化字段)自定义电子邮件内容。 了解详情，请参阅 [Adobe Experience Manager文档](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/aem-adobe-campaign/campaign.html#editing-email-content){target="_blank"}.
 
 1. 电子邮件准备就绪后，导航到 **[!UICONTROL Page information]** 菜单并单击 **[!UICONTROL Start workflow]**.
 
@@ -92,7 +95,7 @@ Adobe Campaign与Adobe Experience Manager之间的集成允许您直接在Adobe 
 
 ## 从Adobe Experience Manager Assets库导入资源 {#assets-library}
 
-您还可以直接从插入资源 [!DNL Adobe Experience Manager Assets Library] 在Adobe Campaign中编辑电子邮件或登陆页面时。 有关此功能详情，请参阅 [Adobe Experience Manager Assets文档](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html?lang=en).
+您还可以直接从插入资源 [!DNL Adobe Experience Manager Assets Library] 在Adobe Campaign中编辑电子邮件或登陆页面时。 有关此功能详情，请参阅 [Adobe Experience Manager Assets文档](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html){target="_blank"}.
 
 **从Adobe Experience Manager：**
 
@@ -100,7 +103,7 @@ Adobe Campaign与Adobe Experience Manager之间的集成允许您直接在Adobe 
 
    ![](assets/aem_assets_1.png)
 
-1. 单击 **创建** 则 **文件** 要将您的资产导入 **Adobe Experience Manager Assets Library**. [了解详情](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html?lang=en#uploading-assets)
+1. 单击 **创建** 则 **文件** 要将您的资产导入 **Adobe Experience Manager Assets Library**. 了解详情，请参阅 [AdobeExperience Manager文档](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/managing/manage-assets.html#uploading-assets){target="_blank"}.
 
    ![](assets/aem_assets_2.png)
 

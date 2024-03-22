@@ -5,10 +5,10 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 6fbe5616-7b8b-4504-988b-2bbbfd062548
-source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 22%
+source-wordcount: '773'
+ht-degree: 13%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 22%
 
 ![](assets/list-dashboard.png)
 
-您可以使用以下方式创建列表 **更新列表** 活动。 此活动会将生成的群体存储到列表中。 使用它创建新列表或更新现有列表。 要创建包含内置用户档案表以外的其他类型数据的列表，必须运行工作流。 例如，通过在访客表上运行查询并更新列表，您可以创建一个访客列表。[了解详情](#create-a-list-wf)。
+您可以使用以下方式创建列表 **更新列表** 活动。 此活动会将生成的群体存储到列表中。 使用它创建新列表或更新现有列表。 要创建包含内置用户档案表以外的其他类型数据的列表，必须运行工作流。 例如，通过在访客表上使用查询，然后更新列表，您可以创建访客列表。 [了解详情](#create-a-list-wf)。
 
 观看本视频，了解有关Adobe Campaign中列表管理的更多信息。
 
@@ -37,27 +37,27 @@ ht-degree: 22%
 
    ![](assets/new-list.png)
 
-1. 在列表创建窗口的 **[!UICONTROL Edit]** 选项卡中输入信息。
+1. 在 **[!UICONTROL Edit]** 列表创建窗口的选项卡。
 
    ![](assets/list-details.png)
 
-   * 在 **[!UICONTROL Label]** 字段中输入列表名，如有必要，更改內部名称。
+   * 在 **[!UICONTROL Label]** 字段，并根据需要更改内部名称。
    * 添加此列表的描述。
    * 可指定失效日期：达到此日期后，会清空并自动删除此列表。
 
 
-1. 在 **[!UICONTROL Content]** 选项卡中，单击 **[!UICONTROL Add]** 选择哪些用户档案属于此列表。
+1. 在 **[!UICONTROL Content]** 选项卡，单击 **[!UICONTROL Add]** 以选择属于该列表的用户档案。
 
    ![](assets/add-profiles-to-a-list.png)
 
    您可以创建新配置文件，并使用直接从此窗口将其添加到列表中。 **[!UICONTROL Create]** 图标。 该用户档案也会被添加到数据库中。
 
-1. 单击 **[!UICONTROL Save]** 保存列表。然后系统会将其添加到列表概要中。
+1. 单击 **[!UICONTROL Save]** 以保存列表。 然后系统会将其添加到列表概要中。
 
 
 ## 将过滤的联系人转换为列表 {#convert-data-to-a-list}
 
-您可以选择配置文件并将它们添加到列表中。 要执行此操作，请执行以下步骤：
+您可以选择配置文件并将它们添加到列表中。 要执行此操作，请按照以下步骤进行：
 
 1. 在Campaign Explorer中，选择用户档案并右键单击。
 
@@ -79,7 +79,7 @@ ht-degree: 22%
 
 如果您取消选中 **[!UICONTROL No trace of this job is saved in the database]** 选项，您可以选择（或创建）执行文件夹，其中将存储链接到该进程的信息。
 
-可在窗口的上半部监控该执行过程。可以通过 **[!UICONTROL Stop]** 按钮停止该过程。已处理的联系人将会链接到列表。
+通过窗口的上半部分，您可以监视执行情况。 此 **[!UICONTROL Stop]** 按钮允许您停止进程。 已处理的联系人将会链接到列表。
 
 执行完成后，访问 **[!UICONTROL Profiles and Targets > Lists]** 菜单并选择列表： **[!UICONTROL Content]** 选项卡显示链接到此列表的用户档案。
 
@@ -103,7 +103,7 @@ ht-degree: 22%
 
    ![](assets/targeting-wf-age-filter.png)
 
-   了解如何在的工作流中创建查询 [本节](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html).
+   了解如何在的工作流中创建查询 [本节](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
 
 1. 为此查询添加标签并保存更改。
 1. 添加 **[!UICONTROL List update]** 活动，并编辑它。
@@ -124,7 +124,7 @@ ht-degree: 22%
 
    ![](assets/access-new-list.png)
 
-   您可以通过向工作流添加调度程序使此工作流重复出现。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html)。
+   您可以通过向工作流添加调度程序使此工作流重复出现。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}。
 
 ## 从列表中删除配置文件 {#remove-a-profile-from-a-list}
 

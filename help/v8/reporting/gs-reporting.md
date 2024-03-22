@@ -5,7 +5,7 @@ feature: Reporting
 role: Data Engineer
 level: Beginner
 exl-id: f931fc0d-12c1-4bff-a4f2-153e8d91c339
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 5%
@@ -46,7 +46,7 @@ Adobe Campaign提供本页中列出的一组报表工具。
 
   ![](assets/desc-analysis-report.png)
 
-  有关营销活动描述性分析报表的信息，请参见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=zh-Hans){target="_blank"}
+  有关营销活动描述性分析报表的信息，请参见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=zh-Hans){target="_blank"}.
 
 * **自定义报表**
 

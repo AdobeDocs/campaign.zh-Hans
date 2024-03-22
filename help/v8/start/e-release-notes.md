@@ -7,10 +7,10 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
-source-git-commit: eae364fb3d082c91022fee6bf29802c9eb6dfcf5
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '464'
-ht-degree: 22%
+ht-degree: 68%
 
 ---
 
@@ -18,21 +18,21 @@ ht-degree: 22%
 
 此页面介绍了下一个 Campaign v8 版本中包含的改进和修复。在发行之日前，此内容可能会有所变动，恕不另行通知。[此页面](../start/release-notes.md)中提供了正式的发行说明。
 
-## 8.6.1版 {#release-8-6-1}
+## 版本 8.6.1 {#release-8-6-1}
 
-_2024年2月14日_
+_2024 年 2 月 14 日_
 
 
 ### 新增功能 {#new-8-6-1}
 
-* 从此版本开始，您有权访问新的 **Campaign Web用户界面**，可通过中心的Adobe Experience Cloud环境使用。 Experience Cloud 是 Adobe 的数字营销应用程序、产品和服务的集成系列。通过其直观的界面，您可以快速访问云应用程序、产品功能和服务。了解如何连接到Adobe Experience Cloud并访问Adobe Campaign Web界面 [本页内容](campaign-ui.md#ac-web-ui).
+* 从此版本开始，您可以访问新的 **Campaign Web 用户界面**，该界面可通过中央 Adobe Experience Cloud 环境使用。Experience Cloud 是 Adobe 的数字营销应用程序、产品和服务的集成系列。通过其直观的界面，您可以快速访问云应用程序、产品功能和服务。[在此页面中](campaign-ui.md#ac-web-ui)了解如何连接到 Adobe Experience Cloud 并访问 Adobe Campaign Web 界面。
 
-* 客户端控制台的32位版本现已弃用。 从8.6开始，客户端控制台将仅以64位提供。 客户端控制台可无缝升级到64位版本。 有关如何升级操作系统的详细信息，请参阅此[技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/console.html?lang=zh-Hans)。
+* 客户端控制台的32位版本现已弃用。 从8.6开始，客户端控制台将仅以64位提供。 客户端控制台可无缝升级到64位版本。 有关如何升级操作系统的详细信息，请参阅此 [技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/console.html?lang=zh-Hans){target="_blank"}.
 
 
 ### 一般改进 {#improvements-8-6-1}
 
-* Campaign v8.6提高了以下各项的吞吐量 **电子邮件投放跟踪指标**. 通过我们优化的流程，可缩短跟踪摄取和计算时间，并且您可以更快地检查投放关键指标。
+* Campaign v8.6 提高了&#x200B;**电子邮件投放跟踪指标的吞吐量**。通过我们优化的流程，可以减少跟踪收录和计算时间，并且可以更快地检查投放关键指标。
 
 * 您现在可以将Campaign v8实例连接到Azure synapse外部数据库。 此连接通过新的外部帐户管理。
 
@@ -46,11 +46,12 @@ _2024年2月14日_
 
 ### 可投放性更新 {#deliverability-8-6-1}
 
-* 到2024年2月，任何公司通过Google或Yahoo！ 必须开始使用一种称为基于域的消息身份验证报告和符合性(DMARC)的身份验证技术。 确保为您与Adobe Campaign一起使用的所有子域设置了DMARC记录。 [了解详情](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=zh-Hans){target="_blank"}
+* 到 2024 年 2 月，任何通过 Google 或 Yahoo! 发送超过 5000 封电子邮件的公司将必须开始使用身份验证技术，即“基于域的邮件身份验证、报告和符合性”(DMARC)。确保为您在 Adobe Campaign 中使用的所有子域设置 DMARC 记录。[了解详情](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=zh-Hans){target="_blank"}
 
-* 从2024年6月1日开始，Google和Yahoo！ 将要求发件人遵守一键式列表取消订阅。 Adobe Campaign现在支持此选项。 [了解详情](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#one-click-list-unsubscribe){target="_blank"}
+* 自 2024 年 6 月 1 日起，Google 和 Yahoo! 将要求发件人使用一键式 List-Unsubscribe 功能。Adobe Campaign 现在支持此选项。[了解详情](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=zh-Hans#one-click-list-unsubscribe){target="_blank"}
 
 
 ### 修复 {#fixes-8-6-1}
 
-本发行版中修复了以下问题：NEO-67892、NEO-67235、NEO-66797、NEO-66462、NEO-65091、NEO-65036、NEO-64984、NEO-64680、NEO-63973、NEO-63879、NEO-63815、NEO-63657、NEO-63539、NEO-63387、NEO-63294、NEO-63174、NEO-62964、NEO-62750、NEO-62686、NEO-62455， NEO-62406， NEO-61580， NEO-61199， NEO-60786， NEO-59544， NEO-59198， NEO-59059 58637 55197 52542 50488 47789
+此版本修复了以下问题：
+NEO-67892、NEO-67235、NEO-66797、NEO-66462、NEO-65091、NEO-65036、NEO-64984、NEO-64680、NEO-63973、NEO-63879、NEO-63815、NEO-63657、NEO-63539、NEO-63387、NEO-63294、NEO-63174、NEO-62964、NEO-62750、NEO-62686、NEO-62455、NEO-62406、NEO-61580、NEO-61199、NEO-60786、NEO-59544、NEO-59198、NEO-59059、NEO-58637、NEO-55197、NEO-52542、NEO-50488、NEO-47789

@@ -5,10 +5,10 @@ feature: Target Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 891a9a87-f3a4-405a-87ed-a7703be90a67
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 1%
+source-wordcount: '970'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 1%
 此集成可帮助您实施如下用例：当收件人打开通过Adobe Campaign发送的电子邮件时，您可通过调用Adobe Target来显示内容的动态版本。 此动态版本根据创建电子邮件时预先指定的规则进行计算。
 
 >[!NOTE]
->该集成仅支持静态图像。 其他类型的内容无法个性化。
-
-![](../assets/do-not-localize/speech.png)  作为托管Cloud Service用户， [联系人Adobe](../start/campaign-faq.md#support) 通过Campaign实施Experience Cloud触发器。
+>* 该集成仅支持静态图像。 其他类型的内容无法个性化。
+>
+>* 作为托管Cloud Service用户， [联系人Adobe](../start/campaign-faq.md#support) 通过Campaign实施Experience Cloud触发器。
 
 Adobe Target可以使用以下类型的数据：
 
@@ -74,7 +74,7 @@ Adobe Target可以使用以下类型的数据：
 * 此 **[!UICONTROL Landing Page]** 用于将默认图像重定向到默认登陆页面。 此URL仅在最终电子邮件中显示默认图像时适用。 它是可选的。
 * 此 **[!UICONTROL Additional decision parameters]**  定义Adobe Target区段中定义的字段与Adobe Campaign字段之间的映射。 使用的Adobe Campaign字段必须在rawbox中指定。 在我们的示例中，我们添加了“国家/地区”字段。
 
-如果您在Adobe Target的设置中使用企业权限，请在此字段中添加相应的资产。 在中了解有关Target企业权限的更多信息 [此页面](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#administer).
+如果您在Adobe Target的设置中使用企业权限，请在此字段中添加相应的资产。 在中了解有关Target企业权限的更多信息 [Adobe Target文档](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}.
 
 ![](assets/target_13.png)
 
@@ -94,7 +94,7 @@ Adobe Target可以使用以下类型的数据：
 
    ![](assets/target_6.png)
 
-1. 对其余重定向选件执行相同的过程。 有关详细信息，请参见此 [ 页面](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html#experiences)。
+1. 对其余重定向选件执行相同的过程。 有关详细信息，请参阅此 [Adobe Target文档](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html#experiences){target="_blank"}.
 
 ### 创建受众 {#audiences-target}
 

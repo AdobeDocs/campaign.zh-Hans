@@ -5,7 +5,7 @@ feature: Federated Data Access
 role: Admin
 level: Beginner
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 1%
@@ -16,15 +16,13 @@ ht-degree: 1%
 
 使用FDA连接器（联合数据访问）将Campaign连接到一个或多个服务器 **外部数据库** 并处理存储到其中的信息，而不会影响您的Campaign云数据库数据。 然后，您可以访问外部数据，而无需更改Adobe Campaign数据的结构。
 
-![](../assets/do-not-localize/speech.png) 作为托管Cloud Service用户， [联系人Adobe](../start/campaign-faq.md#support) 以将外部数据库连接到Campaign。
-
-
 >[!NOTE]
 >
 >* 用于联合数据访问的兼容数据库列在 [兼容性矩阵](../start/compatibility-matrix.md).
 >
 >* 在上下文中 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，可以使用特定的外部帐户管理Campaign本地数据库和Snowflake云数据库之间的通信。 此外部帐户按Adobe和进行设置 **不得** 将被修改。
 >
+>* 作为托管Cloud Service用户， [联系人Adobe](../start/campaign-faq.md#support) 以将外部数据库连接到Campaign。
 
 
 ## 最佳实践和限制

@@ -5,9 +5,9 @@ feature: Application Settings, External Account
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1037'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
 此 **退回邮件** 外部帐户指定要用于连接到电子邮件服务的外部POP3帐户。 所有配置为POP3访问的服务器都可以接收回邮。
 
-在中了解有关入站电子邮件的更多信息 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html).
+在中了解有关入站电子邮件的更多信息 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}.
 
 ![](assets/bounce_external_1.png)
 
@@ -68,7 +68,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
 >[!CAUTION]
 >
->在使用Microsoft OAuth 2.0配置POP3外部帐户之前，您首先需要在Azure门户中注册应用程序。 有关更多信息，请参阅此[页面](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}.
+>在使用Microsoft OAuth 2.0配置POP3外部帐户之前，您首先需要在Azure门户中注册应用程序。 有关详细信息，请参阅此 [页面](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}.
 >
 
 要使用Microsoft OAuth 2.0配置POP3外部连接，请检查 **[!UICONTROL Microsoft OAuth 2.0]** 并填写以下字段：
@@ -116,7 +116,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
 ## 传输数据外部帐户 {#transfer-data-external-accounts}
 
-这些外部帐户可用于通过以下方式将数据导入或导出到Adobe Campaign **[!UICONTROL Transfer file]** 工作流活动。 了解有关 **文件传输** 在的工作流中 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html).
+这些外部帐户可用于通过以下方式将数据导入或导出到Adobe Campaign **[!UICONTROL Transfer file]** 工作流活动。 了解有关 **文件传输** 在的工作流中 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}.
 
 * **FTP和SFTP** - **FTP** 外部帐户允许您配置和测试对Adobe Campaign外部服务器的访问。 要与外部系统（如用于文件传输的SFTP或FTP服务器898）建立连接，您可以创建自己的外部帐户。
 
@@ -124,7 +124,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
   >[!NOTE]
   >
-  >从版本8.5开始，您现在可以在配置SFTP外部帐户时使用私钥安全进行身份验证。 [了解有关密钥管理的更多信息](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html)
+  >从版本8.5开始，您现在可以在配置SFTP外部帐户时使用私钥安全进行身份验证。 [了解有关密钥管理的更多信息](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html){target="_blank"}.
 
 * **Amazon Simple Storage Service (S3)** - **AWS S3** connector可用于使用以下工具将数据导入或导出Adobe Campaign **[!UICONTROL Transfer file]** 工作流活动。 在设置此新外部帐户时，您需要提供以下详细信息：
 

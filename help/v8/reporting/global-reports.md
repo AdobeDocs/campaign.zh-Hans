@@ -4,10 +4,10 @@ description: 了解如何访问和使用全局报告
 feature: Reporting, Monitoring
 role: User, Data Engineer
 exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '1763'
-ht-degree: 8%
+source-wordcount: '1750'
+ht-degree: 6%
 
 ---
 
@@ -49,9 +49,9 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->您还可以使用监控每小时发送的投放数量 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html).
+>您还可以使用监控每小时发送的投放数量 [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}.
 >
->所有管理员用户都可访问控制面板。[此页面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)详细介绍了授予用户管理员访问权限的步骤。
+>所有管理员用户均可访问控制面板。授予用户管理员访问权限的步骤详见 [此页面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel){target="_blank"}.
 >
 
 ## 用户活动 {#user-activities}
@@ -118,7 +118,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->此报告中显示的域名在多维数据集级别定义。 要更改这些值，请编辑 **[!UICONTROL Delivery logs (broadlogrcp)]** 多维数据集。 如需详细信息，请参阅[此部分](gs-cubes.md)。此 **[!UICONTROL Others]** 类别包括不属于特定类的域名。
+>此报告中显示的域名在多维数据集级别定义。 要更改这些值，请编辑 **[!UICONTROL Delivery logs (broadlogrcp)]** 多维数据集。 有关详细信息，请参见 [本节](gs-cubes.md). 此 **[!UICONTROL Others]** 类别包括不属于特定类的域名。
 
 ## 浏览器 {#browsers}
 

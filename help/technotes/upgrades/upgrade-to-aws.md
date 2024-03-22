@@ -2,7 +2,7 @@
 title: Campaign电子邮件发送基础架构升级
 description: Campaign电子邮件发送基础架构升级
 exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
-source-git-commit: 4c41e5d1fef1dcb3279a26f6025338e41525e6b3
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 1%
@@ -62,4 +62,4 @@ ht-degree: 1%
 
   没有。我们无法容纳对现有计划请求的任何修改，因为这样可能会中断为其他客户分配的升级事件。
 
-对于任何其他问题，您可以联系 [Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}..
+对于任何其他问题，您可以联系 [Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.

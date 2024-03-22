@@ -5,7 +5,7 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1607'
 ht-degree: 1%
@@ -327,10 +327,10 @@ Adobe Campaign中提供了以下类型的过滤器：
 
 了解如何在这些端到端示例中构建高级查询：
 
-* 了解如何在中定位简单的收件人属性 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html).
-* 了解如何过滤过去7天内未联系的收件人 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html).
-* 了解如何恢复可按活动帐户过滤的运算符列表，请参见 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html).
-* 了解如何在中构建生日电子邮件受众  [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=zh-Hans).
+* 了解如何在中定位简单的收件人属性 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+* 了解如何过滤过去7天内未联系的收件人 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html){target="_blank"}.
+* 了解如何恢复可按活动帐户过滤的运算符列表，请参见 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}.
+* 了解如何在中构建生日电子邮件受众  [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=zh-Hans){target="_blank"}.
 
 
 ### 预定义过滤器的高级参数 {#param-for-data-filters}

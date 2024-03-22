@@ -5,10 +5,10 @@ feature: Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: b5a6c845-13a7-4746-b856-a08a3cf80b66
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 94%
+ht-degree: 85%
 
 ---
 
@@ -46,7 +46,7 @@ Adobe Campaign 允许您从一个统一的控制中心创建、配置、执行�
 
 ![](assets/calendar.png)
 
-了解如何在中访问和实施营销活动 [本节](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans).
+了解如何在中访问和实施营销活动 [本节](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans){target="_blank"}.
 
 ## 开始的关键步骤{#gs-ac-start}
 
@@ -56,13 +56,13 @@ Adobe Campaign 允许您从一个统一的控制中心创建、配置、执行�
 
    定义层次结构和计划、设置预算、添加资源、选择运算符。
 
-   了解如何在中创建营销计划并配置活动 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=zh-Hans).
+   了解如何在中创建营销计划并配置活动 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=zh-Hans){target="_blank"}.
 
    所有营销活动均基于存储主要设置和功能的模板。提供了内置模板以用于创建尚未定义特定配置的活动。您可以创建和配置活动模板，然后从这些模板创建活动。
 
-   请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html?lang=zh-Hans)以了解如何使用营销活动模板。
+   在中了解如何使用活动模板 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html?lang=zh-Hans){target="_blank"}.
 
-   请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html?lang=zh-Hans)以了解周期性营销活动以及其配置方法。
+   了解周期性活动以及如何在中配置它们 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/recurring-periodic-campaigns.html?lang=zh-Hans){target="_blank"}.
 
 1. **定义受众**
 
@@ -70,7 +70,7 @@ Adobe Campaign 允许您从一个统一的控制中心创建、配置、执行�
 
    ![](assets/campaign-wf.png)
 
-   请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans)以了解如何定义消息的受众。
+   了解如何在中定义消息的受众 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans){target="_blank"}.
 
 1. **创建投放**
 
@@ -78,17 +78,17 @@ Adobe Campaign 允许您从一个统一的控制中心创建、配置、执行�
 
    ![](assets/campaign-dashboard.png)
 
-   了解如何在中创建和开始营销活动投放 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=zh-Hans).
+   了解如何在中创建和开始营销活动投放 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=zh-Hans){target="_blank"}.
 
    您可以将各种文档与活动关联起来：报表、照片、网页、图表等。
 
-   在中了解有关关联文档的更多信息 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets.html?lang=zh-Hans).
+   在中了解有关关联文档的更多信息 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets.html?lang=zh-Hans){target="_blank"}.
 
 1. **设置审批流程**
 
    Adobe Campaign 允许您为营销活动的主要阶段设置协作审批流程。对于每个活动，您可以批准投放目标、内容和成本。负责审批工作的 Adobe Campaign 操作员收到电子邮件通知后，可通过控制台或 Web 连接批准或拒绝批准相关请求。
 
-   请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=zh-Hans#campaign-orchestration)以了解如何设置和管理审批。
+   了解如何在中设置和管理审批 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=zh-Hans#campaign-orchestration){target="_blank"}.
 
 
 ## 分布式营销附加功能{#distributed-marketing-add-on}
@@ -99,7 +99,7 @@ Adobe Campaign 提供&#x200B;**分布式营销**&#x200B;附加功能，用于在
 >
 >从 Campaign v8.3 开始提供此功能。要检查您的版本，请参阅[此部分](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=zh-Hans)以了解如何配置和使用 Campaign 分布式营销功能
+了解如何在中配置和使用Campaign分布式营销功能 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=zh-Hans){target="_blank"}.
 
 ## 响应管理附加功能{#response-manager-add-on}
 
@@ -109,4 +109,4 @@ Adobe Campaign 提供&#x200B;**响应管理**&#x200B;附加功能，可让您衡
 >
 >从 Campaign v8.3 开始提供此功能。要检查您的版本，请参阅[此部分](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-[](../assets/do-not-localize/book.png)请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=zh-Hans){target="_blank"}以了解如何配置并使用 Campaign 的响应管理器
+[](../assets/do-not-localize/book.png) 了解如何在中配置和使用Campaign响应管理器 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=zh-Hans){target="_blank"}.

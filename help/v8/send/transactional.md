@@ -5,7 +5,7 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: 3c7455f348468a8f00fb853a3269a1d63b81e7b8
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 1%
@@ -16,7 +16,9 @@ ht-degree: 1%
 
 事务性消息（消息中心）是用于管理触发消息的Campaign模块。 这些通知是从信息系统触发的事件生成的，可以是：发票、订单确认、发运确认、密码更改、产品不可用通知、帐户对帐单、网站帐户创建等。
 
-![](../assets/do-not-localize/speech.png)  作为托管Cloud Service用户， [联系人Adobe](../start/campaign-faq.md#support){target="_blank"} 要在环境中配置Campaign事务型消息传递，请执行以下操作：
+>[!NOTE]
+>
+>作为托管Cloud Service用户， [联系人Adobe](../start/campaign-faq.md#support){target="_blank"} 要在环境中配置Campaign事务型消息传递，请执行以下操作：
 
 事务型消息用于发送：
 

@@ -5,7 +5,7 @@ feature: Reporting
 role: User
 level: Beginner
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 主页上有关键报告的列表，通过它，可快速访问投放数据。 此列表可以根据您的需求进行更改。 您还可以了解如何将自己的报告添加到 **[!UICONTROL Reports]** 选项卡。
 
-有关这些自定义配置的更多信息，请参阅此 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html).
+有关这些自定义配置的更多信息，请参阅此 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/configuring-access-to-the-report.html?lang=zh-Hans){target="_blank"}.
 
 
 ## 访问内置报告 {#access-ootb-reports}

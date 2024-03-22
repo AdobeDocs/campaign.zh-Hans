@@ -3,9 +3,9 @@ product: campaign
 title: 技术说明 — Adobe Campaign - Apache版本安全更新
 description: Adobe Campaign - Apache版本安全更新
 exl-id: 68e42fe4-7fb6-4b53-9f39-e77374e3753d
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Adobe Campaign团队将通过以下方式执行Apache版本安全升级活动 **
 
 此升级预计在正常工作时间之外自动运行，以便您能够继续使用Campaign服务而不会造成任何中断。
 
-您的非生产实例将由我们的团队首先升级，然后再升级您的生产实例。 由于这是由Adobe拥有的自动升级过程，因此无需您执行任何操作。 但是，如果您遇到任何问题，请联系 [Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+您的非生产实例将由我们的团队首先升级，然后再升级您的生产实例。 由于这是由Adobe拥有的自动升级过程，因此无需您执行任何操作。 但是，如果您遇到任何问题，请联系 [Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
 
 
 >[!NOTE]
@@ -51,7 +51,7 @@ Adobe Campaign团队将通过以下方式执行Apache版本安全升级活动 **
 
 * **客户需要运行哪些验证？**
 
-  此安全升级不需要任何特定测试。 如果发现任何问题，请联系 [Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support)
+  此安全升级不需要任何特定测试。 如果发现任何问题，请联系 [Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
 
 
 * **我是否可以请求更改计划安全升级插槽的日期/时间？**
@@ -59,4 +59,4 @@ Adobe Campaign团队将通过以下方式执行Apache版本安全升级活动 **
   由于这是安全修复，因此我们强烈建议您调整到现有计划。
 
 
-对于任何其他问题，您可以联系 [Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+对于任何其他问题，您可以联系 [Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.

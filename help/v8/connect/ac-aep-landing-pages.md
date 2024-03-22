@@ -5,7 +5,7 @@ feature: Experience Platform Integration
 role: Data Engineer
 level: Beginner
 exl-id: 565a1c8b-1930-4b43-bc11-ae517df077d6
-source-git-commit: bbe3ba03bfecf5b0931795ff827d25560f955702
+source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 1%
@@ -56,7 +56,7 @@ Adobe Cloud Platform API使用OAuth 2.0协议进行身份验证和授权。 要�
 
    ![](assets/ac-lp-source.png){width="70%"}
 
-1. 根据需要配置连接。 有关如何配置HTTP API连接的详细信息，请参阅 [Adobe Experience Platform源文档](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html).
+1. 根据需要配置连接。 有关如何配置HTTP API连接的详细信息，请参阅 [Adobe Experience Platform源文档](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html){target="_blank"}.
 
    在 **[!UICONTROL Authentication]** 步骤，打开 **[!UICONTROL Enable authentication]** 使用通过OAuth集成生成的访问令牌进行身份验证的选项。
 
@@ -98,7 +98,7 @@ Adobe Cloud Platform API使用OAuth 2.0协议进行身份验证和授权。 要�
 
 >[!TAB 使用JavaScript代码活动添加选项]
 
-要在执行登陆页面工作流时自动配置这些选项，请添加 **[!UICONTROL JavaScript code]** 使用下面的代码访问您的工作流。 [了解如何配置JavaScript代码活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-JavaScript-code.html#JavaScript-code).
+要在执行登陆页面工作流时自动配置这些选项，请添加 **[!UICONTROL JavaScript code]** 使用下面的代码访问您的工作流。 [了解如何配置JavaScript代码活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-JavaScript-code.html#JavaScript-code){target="_blank"}.
 
 在执行工作流时，系统会自动在Campaign控制台中使用提供的值创建选项。
 
@@ -344,5 +344,5 @@ Adobe Cloud Platform API使用OAuth 2.0协议进行身份验证和授权。 要�
 ### 更多信息
 
 * [配置JavaScript代码活动](../../automation/workflow/sql-code-and-javascript-code.md#javascript-code)
-* [创建登陆页面](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html)
+* [创建登陆页面](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html){target="_blank"}
 * [管理订阅和退订](../start/subscriptions.md)

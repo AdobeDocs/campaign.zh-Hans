@@ -5,10 +5,10 @@ feature: Analytics Integration, Reporting
 role: Admin, User
 level: Beginner
 exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: adfde71faebf3cec7e7b730c9753e6765aeadab0
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 66%
+source-wordcount: '1308'
+ht-degree: 67%
 
 ---
 
@@ -124,7 +124,7 @@ ht-degree: 66%
 
 有关详情，请参阅 [Adobe Analytics的产品配置文件](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html#product-profile-admins){target="_blank"} 页面。
 
-1. 转到 Adobe Campaign 树的 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** 文件夹，然后单击 **[!UICONTROL New]**。
+1. 浏览至 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** Adobe Campaign资源管理器树的文件夹，然后单击 **[!UICONTROL New]**.
 
    ![](assets/analytics_connnector_9.png)
 
@@ -244,6 +244,25 @@ Adobe Campaign和Adobe Analytics之间的数据交换由作为后台任务运行
 
 1. 您现在可以发送投放，并在 Adobe Analytics 中访问其报表。
 
+
+## 创建再营销活动 {#create-a-re-marketing-campaign}
+
+要准备再营销活动，只需创建用于再营销类型的营销活动的投放模板即可。然后，配置再营销活动并将其链接到区段。每个区段必须具有不同的再营销活动。
+
+在 Adobe Campaign 恢复区段，完成对初始营销活动目标人群的行为分析后，将自动启动再营销活动。对于购物车放弃或查看产品但未购买的情况，会向相关收件人发送投放内容，以便他们的网站浏览完成购买。
+
+Adobe Campaign 提供个性化投放模板，您可以使用这些模板或建立您自己的数据库以准备营销活动。
+
+1. 在 **[!UICONTROL Explorer]** 中，转到 Adobe Campaign 树的 **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]** 文件夹。
+1. 复制 **[!UICONTROL Email delivery (re-marketing)]** 模板或 Adobe Campaign 提供的再营销模板示例。
+1. 根据您的需求对模板进行个性化并保存。
+1. 创建新营销活动，并从下拉列表中选择 **[!UICONTROL Re-marketing campaign]** 模板。
+1. 单击 **[!UICONTROL Configure...]** 链接以指定链接到该营销活动的区段和投放模板。
+1. 选择分析e[外部帐户](#external-account-ac)，以及相关的区段。
+1. 选择要用于此再营销活动的投放模板，然后单击 **[!UICONTROL Finish]** 以关闭窗口。
+1. 单击 **[!UICONTROL OK]** 以关闭营销活动窗口。
+
+可通过全局报告页面访问 **[!UICONTROL Re-marketing efficiency]** 报告。它可以让您查看在 Adobe Campaign 再营销活动后，已转化联系人数（即已购买商品）与购物车放弃数的关系。转化率在每周、每月或自Adobe Campaign与Adobe Analytics之间开始同步后进行计算。
 
 **相关主题**
 

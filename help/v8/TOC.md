@@ -16,7 +16,7 @@ ht-degree: 98%
 # Adobe Campaign v8 文档 {#campaign-v8}
 
 + [Campaign v8 文档](campaign-home.md)
-+ 发行说明 {#releases}
++ 发行说明{#releases}
    + [早期发行说明](start/e-release-notes.md)
    + [版本和升级](start/upgrades.md)
    + [最新版本](start/release-notes.md)

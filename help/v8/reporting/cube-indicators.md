@@ -110,7 +110,7 @@ ht-degree: 3%
 
 将仅显示枚举中的值。 其他组将按照 **[!UICONTROL Label of the other values]** 字段。
 
-如需详细信息，请参阅[此部分](customize-cubes.md#dynamically-manage-bins)。
+如需详细信息，请参阅[此小节](customize-cubes.md#dynamically-manage-bins)。
 
 ### 构建指标 {#build-indicators}
 

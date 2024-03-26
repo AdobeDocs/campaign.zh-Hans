@@ -4,14 +4,15 @@ description: 了解如何在Adobe Campaign中配置电子邮件。
 feature: Email
 role: User
 level: Beginner
-source-git-commit: 263ec61c3717c054cc135f1c4fb1f7e287e4a154
+exl-id: 36033255-1e75-41c1-9816-126777f7330a
+source-git-commit: 3e95a56825a143a4457ab7ee242208d7daaeb414
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 8%
+source-wordcount: '1130'
+ht-degree: 9%
 
 ---
 
-# 配置并发送投放 {#configure-delivery}
+# 配置和发送投放 {#configure-delivery}
 
 ## 设置其他参数 {#delivery-additional-parameters}
 
@@ -106,14 +107,14 @@ ht-degree: 8%
 
 当投放已配置并准备好发送时，请确保在确认发送之前已运行投放分析。
 
-为此，请执行以下步骤：
+为此，请执行以下步骤。
 
 1. 单击 **[!UICONTROL Send]**&#x200B;中，选择所需的操作。
 
    * 要立即发送投放，请选择 [**尽快投放**].
    * 要安排在以后的日期发送，请选择 **[!UICONTROL Postpone the delivery]**. [了解详情](#schedule-delivery-sending)
 
-1. 单击 **[!UICONTROL Analyze]**。有关更多信息，请参阅[此章节](delivery-analysis.md)。
+1. 单击 **[!UICONTROL Analyze]**。有关更多信息，请参阅[此小节](delivery-analysis.md)。
 
    ![](assets/delivery-send-analyze.png)
 
@@ -130,7 +131,7 @@ ht-degree: 8%
 
 <!--About message tracking-->
 
-## 计划投放发送 {#schedule-delivery-sending}
+## 安排发送投放 {#schedule-delivery-sending}
 
 您可以推迟邮件的投放，以便计划内容的投放或管理销售压力并避免过度营销。
 

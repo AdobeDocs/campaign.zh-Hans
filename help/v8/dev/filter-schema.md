@@ -7,8 +7,8 @@ level: Intermediate, Experienced
 exl-id: e8ad021c-ce2e-4a74-b9bf-a989d8879fd1
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 0%
+source-wordcount: '426'
+ht-degree: 2%
 
 ---
 
@@ -103,7 +103,7 @@ ht-degree: 0%
 
 内置模式受到保护，以避免与旧版本出现兼容性问题。 Adobe建议您不要修改默认架构参数以确保最佳安全性。
 
-但是，在特定上下文中，您可能需要修改内置模式的系统筛选器。 要执行此操作，请执行以下步骤：
+但是，在特定上下文中，您可能需要修改内置模式的系统筛选器。 要执行此操作，请按照以下步骤进行：
 
 1. 为内置模式创建扩展或打开现有扩展。
 1. 添加子元素 **`<sysfilter name="<filter name>" _operation="delete"/>`** 中的筛选条件，以忽略内置模式中相同项下的筛选条件。

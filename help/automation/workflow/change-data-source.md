@@ -7,7 +7,7 @@ exl-id: ca7eca9d-9112-4ea1-9a0c-a24cf6a978e6
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 3%
 
 要使用 **[!UICONTROL Change Data Source]** 活动，您必须：
 
-1. 创建工作流.
+1. 创建工作流。
 
 1. 使用查询目标收件人 **[!UICONTROL Query]** 活动。
 

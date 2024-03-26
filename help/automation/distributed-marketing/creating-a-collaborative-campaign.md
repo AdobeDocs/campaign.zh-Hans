@@ -76,8 +76,8 @@ ht-degree: 4%
 
 必须集成活动工作流 **本地审批** 键入activity。 活动参数如下：
 
-* **[!UICONTROL Action to perform]** : 目标审批通知.
-* **[!UICONTROL Distribution context]** : 明确.
+* **[!UICONTROL Action to perform]** ：目标审批通知。
+* **[!UICONTROL Distribution context]** ：显式。
 * **[!UICONTROL Data distribution]** ：本地实体分发。
 
 **本地实体分发** 必须创建type data distribution。 使用数据分发模板，您可以限制分组值列表中的记录数。 在 **[!UICONTROL Resources > Campaign management > Data distribution]**，单击 **[!UICONTROL New]** 图标以新建 **[!UICONTROL Data distribution]**. 有关数据分发的更多信息，

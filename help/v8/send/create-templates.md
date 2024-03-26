@@ -8,7 +8,7 @@ level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
 source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '692'
 ht-degree: 33%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 33%
 * 内容、公司徽标或签名
 * 其他投放属性，例如资源有效性、重试参数或隔离设置。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#delivery-template-video)
+![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#delivery-template-video)
 
 
 ## 创建模板{#create-a-delivery-template}
@@ -88,7 +88,7 @@ Campaign为每个渠道提供了一组内置模板：电子邮件、推送、短
 1. 完成 **电子邮件参数** 类别中包含您的电子邮件主题和目标群体。
 1. 添加您的 **HTML内容** 要个性化您的模板，您可以显示 [镜像页面链接](../send/mirror-page.md) 和退订链接。
 1. 选择 **预览** 选项卡。 在 **测试个性化** 下拉菜单，选择 **收件人** 以预览模板作为所选用户档案。
-1. 单击&#x200B;**保存**。您的模板现已准备就绪，可用于投放。
+1. 单击 **保存**. 您的模板现已准备就绪，可用于投放。
 
 
 ## 使用模板{#use-a-delivery-template}

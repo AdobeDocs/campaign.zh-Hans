@@ -7,8 +7,8 @@ role: User
 exl-id: 23bfabac-62cc-4f86-a739-a34a0e183c31
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '1291'
-ht-degree: 2%
+source-wordcount: '1297'
+ht-degree: 1%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 2%
 
 以下章节还提供了详细介绍扩充活动在其上下文中运作的用例：
 
-* [具有自定义日期字段的电子邮件扩充](email-enrichment-with-custom-date-fields.md).
+* [使用自定义日期字段扩充电子邮件](email-enrichment-with-custom-date-fields.md).
 * [丰富数据](enrich-data.md)
 * [创建摘要列表](create-a-summary-list.md)
 
@@ -124,7 +124,7 @@ ht-degree: 2%
 
    ![](assets/enrichment_edit_after_file_box.png)
 
-1. 选择 **[!UICONTROL Link definition]** 选项，然后单击 **[!UICONTROL Next]** 按钮。 指定要创建的链接类型。 在本例中，我们希望将文件收件人的国家/地区与数据库专用表中可用国家/地区列表中的国家/地区进行协调。 选择 **[!UICONTROL Define a link by searching for a reference among several options]** 选项。选择国家/地区表 **[!UICONTROL Target schema]** 字段。
+1. 选择 **[!UICONTROL Link definition]** 选项，然后单击 **[!UICONTROL Next]** 按钮。 指定要创建的链接类型。 在本例中，我们希望将文件收件人的国家/地区与数据库专用表中可用国家/地区列表中的国家/地区进行协调。 选择 **[!UICONTROL Define a link by searching for a reference among several options]** 选项。 选择国家/地区表 **[!UICONTROL Target schema]** 字段。
 
    ![](assets/enrichment_add_a_link_select_option4.png)
 
@@ -142,7 +142,7 @@ ht-degree: 2%
 
 选择 **[!UICONTROL Identify the targeting document based on work data]** 选项，指定要创建链接的架构并定义连接条件：要实现此目的，请选择工作数据中要协调的字段(**[!UICONTROL Source expression]**)和定向维度中(**[!UICONTROL Destination expression]**)。
 
-您可以使用一个或多个协调条件。
+您可以使用一个或多个协调标准。
 
 ![](assets/enrichment_reconciliations_tab_01.png)
 
@@ -161,7 +161,7 @@ ht-degree: 2%
 配置查询后(请参阅此 [部分](query.md))：
 
 1. 添加并打开扩充活动。
-1. 在 **[!UICONTROL Enrichment]** 选项卡中，选择 **[!UICONTROL Add data]**。
+1. 在 **[!UICONTROL Enrichment]** 选项卡，选择 **[!UICONTROL Add data]**.
 1. 选择 **[!UICONTROL An offer proposition]** 在要添加的数据类型中。
 
    ![](assets/int_enrichment_offer2.png)

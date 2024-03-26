@@ -7,8 +7,8 @@ role: User
 exl-id: f79a979d-bd1d-4a86-8844-563886692941
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 11%
+source-wordcount: '1115'
+ht-degree: 9%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 11%
 
 所选主记录将结转数据，而不会将字段数据与重复行中的其他相关数据合并。
 
-补充:
+补充：
 
 | 日期 | 名字 | 姓氏 | 电子邮件 | 手机 | 电话 |
 -----|------------|-----------|-------|--------------|------

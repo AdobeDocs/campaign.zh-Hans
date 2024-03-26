@@ -15,7 +15,7 @@ ht-degree: 19%
 
 **活动优化** 是Adobe Campaign模块，用于控制、过滤和监控投放的发送。 为了避免活动之间发生冲突，Adobe Campaign 可以应用特定的限制规则来测试各种活动组合。这可确保所发送的邮件符合客户的需求与期望以及公司的通信政策。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#typologies-video)
+![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#typologies-video)
 
 >[!NOTE]
 >

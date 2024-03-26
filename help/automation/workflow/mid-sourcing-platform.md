@@ -7,7 +7,7 @@ role: User
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '43'
-ht-degree: 27%
+ht-degree: 4%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 27%
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">投放指示器</span> <br /> </td> 
+   <td> <span class="uicontrol">投放指标</span> <br /> </td> 
    <td> <span class="uicontrol">deliveryIndicators</span> <br /> </td> 
    <td> 此工作流可更新投放的投放跟踪指示器。 默认情况下，此工作流每小时触发一次。<br /> </td> 
   </tr> 

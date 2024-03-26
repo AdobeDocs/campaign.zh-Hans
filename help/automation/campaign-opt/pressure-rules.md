@@ -6,8 +6,8 @@ feature: Fatigue Management, Typology Rules
 exl-id: d234db0e-936a-48db-b697-11c6b40bc3ab
 source-git-commit: 5810f9b53bd3ad5383d4b9767bc65a3d595862c7
 workflow-type: tm+mt
-source-wordcount: '3037'
-ht-degree: 8%
+source-wordcount: '3102'
+ht-degree: 7%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 8%
 根据定义的阈值和消息权重选择营销活动。
 
 * 阈值是在给定时段内为给定收件人授权的最大投放数量。 它可以为set或variable。 在分类规则设置中对其进行设置或计算。 [了解详情](#maximum-number-of-messages)。
-* 利用投放权重，您可以确定压力管理框架内的优先级最高的投放。具有最高权重的消息优先。[了解详情](#message-weight)。
+* 利用投放权重，您可以确定压力管理框架内的优先级最高的投放。具有最高权重的消息具有优先级。 [了解详情](#message-weight)。
 
 仲裁包括确保权重大于正在进行的营销活动的计划营销活动不会导致过多的用户档案请求：如果是这种情况，则将从投放中排除用户档案。
 
@@ -102,7 +102,7 @@ ht-degree: 8%
 >
 >正在进入 **0** 作为阈值，会阻止在所考虑时段内向目标群体投放所有内容。
 
-**示例:**
+**示例：**
 
 您可以根据收件人所属的区段索引授权消息的数量。 这意味着属于Web区段的收件人可能会收到比其他收件人更多的消息。 An **[!UICONTROL Iif (@origin='Web', 5, 3)]** type formula授权向收件人投放5条消息，为其他区段投放3条消息。 配置将如下所示：
 
@@ -123,7 +123,7 @@ ht-degree: 8%
 >对于每种投放，在类型规则中定义的权重可单独过载，具体情况如下： **[!UICONTROL Properties]** 选项卡。 单击 **[!UICONTROL Typology]** 选项卡以选择营销活动类型，并根据需要指定要应用的权重。\
 >但是，在A分类规则中声明的权重不会用于计算B分类规则：此权重将仅涉及使用A规则的投放。
 
-**示例:**
+**示例：**
 
 在以下示例中，我们希望将新闻稿在音乐中的权重与其收件人的倾向分数关联起来。 操作步骤：
 
@@ -161,7 +161,7 @@ ht-degree: 8%
 
 当时段高于0（例如1）时，计算阈值可能会考虑前天的投放。 因此，如果前一天对应于上一个日历周，并且所选的期间类型是“按日历周分组”，则将考虑所有上一周的计算阈值。
 
-**示例:**
+**示例：**
 
 我们希望创建一个压力规则，将每两周的请求限制为3条消息，并将分组限制在日历月份。
 
@@ -322,7 +322,7 @@ ht-degree: 8%
 
 现在，为要应用压力规则的每个投放创建和配置工作流。
 
-1. 创建营销策划. [了解详情](../campaigns/marketing-campaign-create.md#create-a-campaign)。
+1. 创建营销策划。 [了解详情](../campaigns/marketing-campaign-create.md#create-a-campaign)。
 1. 在 **[!UICONTROL Targeting and workflows]** 选项卡，添加 **查询** 活动添加到工作流。 有关使用此活动的更多信息，请参阅 [本节](../workflow/query.md).
 1. 添加 **[!UICONTROL Email delivery]** 活动以打开工作流。 有关使用此活动的更多信息，请参阅 [本节](../workflow/delivery.md).
 1. 转到 **[!UICONTROL Approvals]** 选项卡 **[!UICONTROL Delivery properties]** 并禁用所有审批。
@@ -354,7 +354,7 @@ ht-degree: 8%
   <tr> 
    <th> 投放<br /> </th> 
    <th> 审批<br /> </th> 
-   <th> 权重<br /> </th> 
+   <th> 粗细<br /> </th> 
    <th> 提取日期/时间<br /> </th> 
    <th> 联系日期<br /> </th> 
    <th> 投放开始日期/时间<br /> </th> 
@@ -368,9 +368,9 @@ ht-degree: 8%
    <td> 投放1<br /> </td> 
    <td> 已禁用<br /> </td> 
    <td> 5<br /> </td> 
-   <td> 3pm<br /> </td> 
+   <td> 下午3点<br /> </td> 
    <td> 上午8点（第二天）<br /> </td> 
-   <td> 2pm<br /> </td> 
+   <td> 下午2点<br /> </td> 
    <td> 每晚<br /> </td> 
    <td> 已排除<br /> </td> 
    <td> 已排除<br /> </td> 
@@ -379,9 +379,9 @@ ht-degree: 8%
    <td> 交付2<br /> </td> 
    <td> 已禁用<br /> </td> 
    <td> 10<br /> </td> 
-   <td> 4pm<br /> </td> 
+   <td> 下午4点<br /> </td> 
    <td> 上午9:00（第二天）<br /> </td> 
-   <td> 2pm<br /> </td> 
+   <td> 下午2点<br /> </td> 
    <td> 每晚<br /> </td> 
    <td> 已发送<br /> </td> 
    <td> 上午9:00（第二天）<br /> </td> 

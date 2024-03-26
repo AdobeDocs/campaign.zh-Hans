@@ -7,8 +7,8 @@ role: User, Data Engineer
 exl-id: 27308b0d-cbfc-4bc6-9061-d771ceac95fd
 source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 12%
+source-wordcount: '258'
+ht-degree: 13%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 12%
 
 A **[!UICONTROL Recurring delivery]** 利用活动，可配置特定于营销活动的投放模板发生次数。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#recurring-delivery-video)
+![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#recurring-delivery-video)
 
 此活动只能从 **[!UICONTROL Targeting and workflows]** 在营销活动中找到的选项卡。
 

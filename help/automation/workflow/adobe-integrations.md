@@ -7,7 +7,7 @@ topic-tags: technical-workflows
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '109'
-ht-degree: 16%
+ht-degree: 8%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 16%
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">从 Adobe Experience Cloud 导入受众</span> <br /> </td> 
+   <td> <span class="uicontrol">从Adobe Experience Cloud导入受众</span> <br /> </td> 
    <td> <span class="uicontrol">importSharedAudience</span> <br /> </td> 
    <td> 利用此工作流，可将不同Adobe Experience Cloud解决方案的受众/区段导入Adobe Campaign。<br /> </td> 
   </tr> 

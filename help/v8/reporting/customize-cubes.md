@@ -8,7 +8,7 @@ level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
-source-wordcount: '1431'
+source-wordcount: '1438'
 ht-degree: 2%
 
 ---
@@ -146,7 +146,7 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
 测量类型定义于 **[!UICONTROL Measures]** 立方的选项卡。 您可以计算总和、平均值、偏差等。
 
-您可以根据需要创建任意数量的测量：然后选择要显示在表格中或隐藏的测量。 如需详细信息，请参阅[此部分](#displaying-measures)。
+您可以根据需要创建任意数量的测量：然后选择要显示在表格中或隐藏的测量。 如需详细信息，请参阅[此小节](#displaying-measures)。
 
 要定义新度量，请应用以下步骤：
 
@@ -156,7 +156,7 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
 1. 如有必要，根据运算符选择操作涉及的表达式。
 
-   此 **[!UICONTROL Advanced selection]** 按钮允许您创建复杂的计算公式。 如需详细信息，请参阅[此部分](../../automation/workflow/query.md)。
+   此 **[!UICONTROL Advanced selection]** 按钮允许您创建复杂的计算公式。 如需详细信息，请参阅[此小节](../../automation/workflow/query.md)。
 
 1. 此 **[!UICONTROL Filter the measure data...]** 链接允许您限制计算字段，并仅将其应用于数据库中的特定数据。
 

@@ -7,7 +7,7 @@ role: User
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '92'
-ht-degree: 8%
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 8%
    <td> <strong>说明</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>刷新以查看可投放性</strong><br /> </td> 
+   <td> <strong>刷新可投放性</strong><br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
    <td>  一旦 <strong>可投放性监控（电子邮件可投放性）</strong> 安装包，此工作流每夜运行以定期更新规则列表，并允许主动管理平台可交付性。<br /> </td> 
   </tr> 

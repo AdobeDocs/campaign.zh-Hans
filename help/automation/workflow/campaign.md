@@ -8,7 +8,7 @@ topic-tags: technical-workflows
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '155'
-ht-degree: 15%
+ht-degree: 3%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 15%
    <td> 此工作流可启动订单行上的库存计算，并管理警告警报阈值。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">营销活动中的投放作业</span> <br /> </td> 
+   <td> <span class="uicontrol">营销活动中有关投放的作业</span> <br /> </td> 
    <td> <span class="uicontrol">deliveryMgt</span> <br /> </td> 
    <td> 此工作流会触发批准的投放，并开始后处理外部投放的服务提供程序。 它还会发送批准通知和提醒。<br /> </td> 
   </tr> 
@@ -49,7 +49,7 @@ ht-degree: 15%
    <td> 此工作流用于管理营销活动（启动项定位、文件提取等）的作业。 它还创建与循环和定期活动相关的工作流。<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">服务提供商的作业</span> <br /> </td> 
+   <td> <span class="uicontrol">服务提供商上的作业</span> <br /> </td> 
    <td> <span class="uicontrol">supplierMgt</span> <br /> </td> 
    <td> 在投放获得批准后，此工作流将开始处理提供程序（通过电子邮件发送到路由器并进行后处理）。 <br /> </td> 
   </tr> 

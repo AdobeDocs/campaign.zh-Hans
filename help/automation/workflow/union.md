@@ -7,7 +7,7 @@ exl-id: 4109e198-bf9d-4dd2-92a1-16bbadbe30e8
 source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ A **[!UICONTROL Union]** 将多个集客活动的结果分组到一个目标中�
    通过输入最大收件人数量并选择其群体优先的查询来指定此最终数量。
 
 1. 批准 **[!UICONTROL Union]** 活动，然后配置 [列表更新](list-update.md) 活动。
-1. 启动工作流. 将显示结果数量，并创建或更新在列表更新活动中定义的列表。 此列表包含两个查询的收件人集，或者，如果适用，包含上一步中定义的编号。
+1. 启动工作流。 将显示结果数量，并创建或更新在列表更新活动中定义的列表。 此列表包含两个查询的收件人集，或者，如果适用，包含上一步中定义的编号。
 
    ![](assets/union_example.png)
 

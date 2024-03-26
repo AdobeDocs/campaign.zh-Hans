@@ -8,7 +8,7 @@ exl-id: 9ed73e65-3626-46c6-bfeb-a9fe9c2d7f72
 source-git-commit: 143e90ef63fac4058008bc6864daf950c11ab2d1
 workflow-type: tm+mt
 source-wordcount: '191'
-ht-degree: 43%
+ht-degree: 36%
 
 ---
 
@@ -28,7 +28,8 @@ Adobe Campaign 提供了用于进行活动编排的简单易用的单个界面�
 <table>
 <tr style="border: 0;">
   <td valign="top">
-    <div><img src="assets/do-not-localize/workflow.jpeg"><b>工作流</b>
+    <div><img src="assets/do-not-localize/workflow.jpeg">
+    <b>工作流</b>
     </div>
     <br>
     <div>
@@ -46,7 +47,7 @@ Adobe Campaign 提供了用于进行活动编排的简单易用的单个界面�
   </td>
   <td valign="top">
     <div><img src="assets/do-not-localize/campaign.jpeg">
-    <b>营销活动编排</b>
+    <b>活动编排</b>
     </div>
     <br>
     <div>

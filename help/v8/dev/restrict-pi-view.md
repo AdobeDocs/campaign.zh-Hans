@@ -18,7 +18,7 @@ ht-degree: 2%
 
 如果您希望营销用户能够访问数据记录，但不希望他们查看收件人的个人信息(PI)（如名字、姓氏或电子邮件地址），请应用以下准则来保护隐私，并防止常规营销活动操作人员滥用数据。
 
-## 实施 {#implementation}
+## 实现 {#implementation}
 
 架构中添加了可应用于任何元素或属性的特定属性，它补充了现有属性 **[!UICONTROL visibleIf]**. 此属性为： **[!UICONTROL accessibleIf]**. 当包含与当前用户上下文相关的XTK表达式时，它可以利用 **[!UICONTROL HasNamedRight]** 或 **[!UICONTROL $(login)]**&#x200B;例如，
 
@@ -53,7 +53,7 @@ ht-degree: 2%
 * 当将目标群体存储在组（列表）中时，所存储的字段的特征与数据源相同。
 * 默认情况下，JS代码无法访问数据。
 
-## 推荐 {#recommendations}
+## 推荐做法 {#recommendations}
 
 在每次投放中，电子邮件地址都会复制到 **[!UICONTROL broadLog]** 和 **[!UICONTROL forecastLog]** 表：因此，这些字段也需要受保护。
 

@@ -8,7 +8,7 @@ exl-id: b860c843-155e-4abb-bdd6-b68dc7eaa0ee
 source-git-commit: a779f243b0ba13dc3fcb7839377ca8766e5f7841
 workflow-type: tm+mt
 source-wordcount: '1474'
-ht-degree: 56%
+ht-degree: 57%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 56%
 
 此页面列出了随附的新功能、改进和修复 **2023 Campaign v8版本**.
 
-## 8.5.2版 {#release-8-5-2}
+## 版本 8.5.2 {#release-8-5-2}
 
 _2023年8月2日_
 
 修复了升级到8.5.1时可能发生的安全问题。 (NEO-64767)
 
-## 8.5.1版 {#release-8-5}
+## 版本 8.5.1 {#release-8-5}
 
 _2023年6月30日_
 

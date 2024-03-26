@@ -8,7 +8,7 @@ exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
 source-git-commit: 10b1113a20c11e0b97804f597cb0a48568fcae3d
 workflow-type: tm+mt
 source-wordcount: '937'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
@@ -119,11 +119,11 @@ Adobe Campaign允许您定义和管理分配给各种操作员的权限。
 
 ## 使用Web浏览器访问Campaign {#connect-web-ac}
 
-### Web用户界面 {#connect-web-ui}
+### Web 用户界面 {#connect-web-ui}
 
 从Campaign v8.6版本开始，您可以访问新的 **Campaign Web用户界面**，可通过中心的Adobe Experience Cloud环境使用。 Experience Cloud 是 Adobe 的数字营销应用程序、产品和服务的集成系列。通过其直观界面，您可以快速访问云应用程序、产品功能和服务。
 
-了解如何连接到Adobe Experience Cloud并访问Adobe Campaign Web界面 [本页内容](campaign-ui.md#ac-web-ui).
+[在此页面中](campaign-ui.md#ac-web-ui)了解如何连接到 Adobe Experience Cloud 并访问 Adobe Campaign Web 界面。
 
 在中了解详情 [Adobe Campaign Web用户界面文档](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home){target="_blank"}.
 

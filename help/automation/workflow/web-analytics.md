@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: 网络分析
+title: Web 分析
 description: 了解关于网站分析包的更多信息
 feature: Workflows, Analytics Integration
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '172'
-ht-degree: 13%
+ht-degree: 3%
 
 ---
 
 
-# 网络分析{#web-analytics}
+# Web 分析{#web-analytics}
 
 
 
@@ -35,12 +35,12 @@ ht-degree: 13%
    <td> 此工作流对再营销活动后完成购买的网站访客编制索引。 通过此工作流恢复的数据可在 <span class="uicontrol">再营销效率报表</span> （请参阅此）。 <br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">事件清除</span><br /> </td> 
+   <td> <span class="uicontrol">事件清除</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsPurgeWebEvents</span> <br /> </td> 
    <td> 利用此工作流，可根据中配置的时段，从数据库字段删除每个事件 <span class="uicontrol">生命周期</span> 字段。 <br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">恢复 Web 事件</span> <br /> </td> 
+   <td> <span class="uicontrol">Web事件的恢复</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsGetWebEvents</span> <br /> </td> 
    <td> 每小时，此工作流会下载给定网站上的Internet用户行为区段，将它们放入Adobe Campaign数据库并启动再营销工作流。 <br /> </td> 
   </tr> 

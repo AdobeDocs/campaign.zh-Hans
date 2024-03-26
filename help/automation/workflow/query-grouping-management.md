@@ -7,8 +7,8 @@ role: User, Data Engineer
 exl-id: 6fc4ef67-5d75-4c8c-8bcc-41e3ed155ca2
 source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 4%
+source-wordcount: '246'
+ht-degree: 3%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 4%
 
    ![](assets/query_editor_nveau_70.png)
 
-1. 在 **[!UICONTROL Data filtering]** 中，选择 **[!UICONTROL Filtering conditions]**。转到 **[!UICONTROL Target elements]** 窗口，然后单击 **[!UICONTROL Next]**.
+1. 在 **[!UICONTROL Data filtering]**，选择 **[!UICONTROL Filtering conditions]**. 转到 **[!UICONTROL Target elements]** 窗口，然后单击 **[!UICONTROL Next]**.
 1. 在 **[!UICONTROL Data grouping]** 窗口中，选择 **[!UICONTROL Email domain]** 通过单击 **[!UICONTROL Add]**.
 
    此数据分组窗口仅在 **[!UICONTROL Handle groupings (GROUP BY + HAVING]**)框已被选中。

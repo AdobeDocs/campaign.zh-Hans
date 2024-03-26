@@ -7,7 +7,7 @@ level: Intermediate
 exl-id: 2f679d1c-4eb6-4b3c-bdc5-02d3dea6b7d3
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 这两种方法都包含 **`<urn:sessiontoken>`** 用于登录到事务性消息传递模块的元素。 我们建议使用通过受信任的IP地址进行标识的方法。 要检索会话令牌，请执行登录SOAP调用，然后执行get令牌和注销。 对多个RT调用使用相同的令牌。 此部分中包含的示例正在使用会话令牌方法，建议使用此方法。
 
-如果您使用的是负载平衡服务器，则可以使用用户/密码身份验证（在RT消息的级别）。 示例:
+如果您使用的是负载平衡服务器，则可以使用用户/密码身份验证（在RT消息的级别）。 例如：
 
 ```
 <PushEvent xmlns="urn:nms:rtEvent">

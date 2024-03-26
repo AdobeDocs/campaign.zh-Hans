@@ -8,7 +8,7 @@ exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
 source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1327'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -26,7 +26,7 @@ Campaign编排组件位于 **[!UICONTROL Campaigns]** 选项卡：您可以在�
 
 ### 创建计划和项目层次结构 {#create-plan-and-program}
 
-每个活动都属于属于属于一个计划的项目。 所有计划、项目和营销策划都可通过 **[!UICONTROL Campaign calendar]** 中的菜单 **营销活动** 选项卡。
+每个营销活动都属于一个项目，而项目又属于一个计划。所有计划、项目和营销策划都可通过 **[!UICONTROL Campaign calendar]** 中的菜单 **营销活动** 选项卡。
 
 在开始构建活动和投放之前，请为营销计划和项目配置文件夹层次结构。
 

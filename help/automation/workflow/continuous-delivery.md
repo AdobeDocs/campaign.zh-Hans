@@ -7,7 +7,7 @@ role: User
 exl-id: e3ad6d92-8d53-4098-90fd-cfed29f2e56e
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '358'
 ht-degree: 9%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 9%
 
 A **连续投放** type操作允许您将新收件人添加到现有投放。 此投放类型使您每次都无需创建新投放：此模式通常更有效，尤其是对于在需要时发送的小流量警报或通知。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#continuous-delivery-video)
+![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#continuous-delivery-video)
 
 在投放模板级别，您可以指定脚本以计算关联投放的标签（和活动文件夹）。 如果脚本计算的投放尚不存在，则会动态创建。
 

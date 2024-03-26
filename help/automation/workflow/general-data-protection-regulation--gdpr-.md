@@ -6,13 +6,13 @@ role: User
 feature: Workflows, Privacy
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 21%
+source-wordcount: '104'
+ht-degree: 2%
 
 ---
 
 
-# 隐私数据保护规定{#general-data-protection-regulation-gdpr}
+# 隐私数据保护条例{#general-data-protection-regulation-gdpr}
 
 
 下面详细介绍的工作流将随 **隐私数据保护条例** 默认模块。 有关此模块的更多信息，请参阅此 [文章](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html).

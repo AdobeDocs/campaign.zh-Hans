@@ -8,7 +8,7 @@ exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 5%
 
    ![](assets/campaign-template-create-wf.png)
 
-1. 单击&#x200B;**保存**。您的模板现在已准备好用于创建新营销活动。
+1. 单击 **保存**. 您的模板现在已准备好用于创建新营销活动。
 
 利用活动模板的各种选项卡和子选项卡，可访问其设置，如中所述 [常规配置](#general-configuration).
 
@@ -152,7 +152,7 @@ ht-degree: 5%
 
   您可以选择是否通过 **[!UICONTROL Approvals]** 模板高级设置部分的选项卡。
 
-* **非劳动成本和目标**
+* **费用和目标**
 
   选择此模块时， **[!UICONTROL Budget]** 选项卡会添加到基于此模板的模板和营销活动的详细信息，以便可以选择关联的预算。
 

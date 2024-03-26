@@ -8,7 +8,7 @@ exl-id: fedcffcd-cf9b-4c3d-bd25-cb87dda30192
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '249'
-ht-degree: 4%
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 4%
 
 在以下示例中，了解如何创建工作流来向推送通知订阅者发送电子邮件或短信，然后在一周后发送推送通知。 操作步骤：
 
-1. 创建营销策划.
+1. 创建营销策划。
 1. 在 **[!UICONTROL Targeting and workflows]** 选项卡，添加 **[!UICONTROL Query]** 活动。
 1. 配置查询：选择订阅了推送通知的收件人作为目标维度。
 

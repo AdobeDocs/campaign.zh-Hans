@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: 互动
-description: 互动
+title: 交互
+description: 交互
 feature: Workflows, Interaction
 role: User, Admin
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 5%
+source-wordcount: '131'
+ht-degree: 3%
 
 ---
 
 
-# 互动{#interaction}
+# 交互{#interaction}
 
 下面详细介绍的工作流将随 **优惠引擎（交互）** 默认情况下为加载项。
 

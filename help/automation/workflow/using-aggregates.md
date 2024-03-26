@@ -6,8 +6,8 @@ feature: Workflows
 exl-id: 7522f449-341e-4aef-8c1e-c49e13809c08
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 2%
+source-wordcount: '615'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 2%
 
    ![](assets/datamanagement_usecase_2.png)
 
-1. 单击 **[!UICONTROL Edit additional data]**，然后单击 **[!UICONTROL Advanced parameters...]**。勾选 **[!UICONTROL Disable automatic adding of the primary keys of the targeting dimension]** 选项。
+1. 单击 **[!UICONTROL Edit additional data]** 则 **[!UICONTROL Advanced parameters...]**. 勾选 **[!UICONTROL Disable automatic adding of the primary keys of the targeting dimension]** 选项。
 
    此选项确保不会显示所有收件人，并且不会保留明确添加的数据。 在这种情况下，该日期是指上次创建收件人的日期。
 
@@ -72,7 +72,7 @@ ht-degree: 2%
 
    因此，用于标准的表达式为：
 
-   * **[!UICONTROL Expression]**: `toDate([target/@created])`.
+   * **[!UICONTROL Expression]**： `toDate([target/@created])`.
    * **[!UICONTROL Value]**： `toDate([datemax/expr####])`，其中expr####与聚合函数查询中指定的聚合相关。
 
    ![](assets/datamanagement_usecase_4.png)

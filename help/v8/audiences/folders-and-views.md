@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: 762dcacc-4aeb-4990-af01-7f793bd69170
 source-git-commit: 515520bb5b7131fc2ed2d1b2a843373f01af306a
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '674'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ Campaign文件夹是资源管理器树中的节点。 它们根据其类型，�
 
 1. 创建 **[!UICONTROL Deliveries]** 文件夹并将其命名为 **美国投放**.
 1. 右键单击此文件夹并选择 **[!UICONTROL Properties...]**.
-1. 在 **[!UICONTROL Restriction]** 选项卡中，选择 **[!UICONTROL This folder is a view]**。随后将显示数据库中的所有投放。
+1. 在 **[!UICONTROL Restriction]** 选项卡，选择 **[!UICONTROL This folder is a view]**. 随后将显示数据库中的所有投放。
 
    ![](assets/this-folder-is-a-view.png)
 

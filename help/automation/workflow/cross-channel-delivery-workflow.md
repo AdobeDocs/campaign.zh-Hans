@@ -7,8 +7,8 @@ role: User
 exl-id: fb498233-4df8-4c9e-a082-3e657c6756c9
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 4%
+source-wordcount: '592'
+ht-degree: 3%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 4%
 
 要定义目标，请创建查询以标识收件人。
 
-1. 创建营销策划. 请参阅[此页面](../campaigns/marketing-campaign-create.md)以了解详情。
+1. 创建营销策划。 请参阅[此页面](../campaigns/marketing-campaign-create.md)以了解详情。
 1. 在 **[!UICONTROL Targeting and workflows]** 选项卡，添加 **查询** 活动添加到工作流。 有关使用此活动的更多信息，请参阅 [本节](query.md).
 1. 定义将接收投放的收件人。 例如，选择“Gold”成员作为目标维。
 1. 将筛选条件添加到查询。 在此示例中，选择具有电子邮件地址和手机号码的收件人。
@@ -45,7 +45,7 @@ ht-degree: 4%
 
 ## 第2步：创建包含选件的电子邮件 {#step-2--create-an-email-including-an-offer}
 
-1. 创建电子邮件投放.
+1. 创建电子邮件投放。
 1. 设计消息并在内容中插入包含选件的链接。
 
    ![](assets/wkf_cross-channel_1.png)

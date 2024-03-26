@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: 8bcaf367-5b1f-4d31-80c9-c77df43c6ed1
 source-git-commit: d4e28ddf6081881f02042416aa8214761ea42be9
 workflow-type: tm+mt
-source-wordcount: '1345'
-ht-degree: 13%
+source-wordcount: '1353'
+ht-degree: 11%
 
 ---
 
@@ -77,7 +77,7 @@ Adobe 建议为工作流赋予正确的名称和标签，这样工作流没有�
 ### 第一个和最后一个活动 {#first-and-last-activities}
 
 * 始终使用开始工作流 **[!UICONTROL Start]** 活动或 **[!UICONTROL Scheduler]** 活动。 在相关时，您还可以使用 **[!UICONTROL External signal]** 活动。
-* 在构建工作流时，只能使用一个 **[!UICONTROL Scheduler]** 每个分支的活动。 如果工作流的同一分支具有多个调度程序（相互链接），则要执行的任务数量将呈指数级增长，这将使数据库严重过载。此规则还适用于具有的所有活动 **[!UICONTROL Scheduling & History]** 选项卡。 详细了解 [正在计划](scheduler.md).
+* 在构建工作流时，只能使用一个 **[!UICONTROL Scheduler]** 每个分支的活动。 如果工作流的同一分支具有多个调度程序（相互链接），则要执行的任务数量将呈指数级增长，这将使数据库严重过载。 此规则还适用于具有的所有活动 **[!UICONTROL Scheduling & History]** 选项卡。 详细了解 [正在计划](scheduler.md).
 
   ![](assets/wf-scheduler.png)
 

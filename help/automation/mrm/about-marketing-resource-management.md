@@ -8,7 +8,7 @@ exl-id: 6fa4f4e3-c5a5-4d7f-8e71-826dee4e926a
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '365'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -58,6 +58,6 @@ Adobe Campaign操作员可以通过完整的验证流程和适当的跟踪工具
 
 * **预算管理**. [了解详情](controlling-costs.md)
 
-* **任务管理**. [了解详情](creating-and-managing-tasks.md)
+* **任务管理**。[了解详情](creating-and-managing-tasks.md)
 
 * **资源管理**. [了解详情](managing-marketing-resources.md)

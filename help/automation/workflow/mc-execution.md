@@ -7,7 +7,7 @@ role: User
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
 source-wordcount: '203'
-ht-degree: 11%
+ht-degree: 2%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 11%
     </ul> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">正在处理批次事件</span> <br /> </td> 
+   <td> <span class="uicontrol">处理批处理事件</span> <br /> </td> 
    <td> <span class="uicontrol">batchEventsProcessing</span> <br /> </td> 
    <td> 利用此工作流，可在将批量事件与消息模板关联之前将其放入队列中。 <br /> </td> 
   </tr> 

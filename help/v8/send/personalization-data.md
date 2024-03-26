@@ -8,7 +8,7 @@ exl-id: 711256e2-ab77-404a-b052-6793a85da193
 source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
 workflow-type: tm+mt
 source-wordcount: '625'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 2%
 
 要使用此选项，请执行以下步骤：
 
-1. 创建营销策划.
+1. 创建营销策划。
 1. 在 **[!UICONTROL Targeting and workflows]** 选项卡，添加 **查询** 活动添加到工作流。
 1. 添加 **[!UICONTROL Email delivery]** 活动以打开工作流。
 1. 转到 **[!UICONTROL Analysis]** 选项卡 **[!UICONTROL Delivery properties]** 并选择 **[!UICONTROL Prepare the personalization data with a workflow]** 选项。
@@ -70,4 +70,4 @@ ht-degree: 2%
 
 在工作流上下文中创建投放时，您可以使用临时工作流表中的数据。 存储在工作流临时工作表中的数据可用于个性化任务。 数据可用于个性化字段。
 
-此数据分组在 **[!UICONTROL Target extension]** 菜单。 如需详细信息，请参阅[此部分](../../automation/workflow/use-workflow-data.md#target-data)。
+此数据分组在 **[!UICONTROL Target extension]** 菜单。 有关详细信息，请参见  [本节](../../automation/workflow/use-workflow-data.md#target-data).

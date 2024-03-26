@@ -1,14 +1,14 @@
 ---
-title: Campaign API 快速入门
-description: Campaign API 快速入门
+title: Campaign API入门
+description: Campaign API入门
 feature: API
 role: Developer
 level: Intermediate, Experienced
 exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 8%
+source-wordcount: '263'
+ht-degree: 9%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 8%
 
 >[!CAUTION]
 >
->* 从Campaign v8.5.1开始，更改了Campaign v8的身份验证过程。 技术操作员必须使用AdobeIdentity Management System (IMS)连接到Campaign。 了解如何在中迁移现有技术帐户 [此技术说明](../../technotes/upgrades/ims-migration.md).
+>* 从Campaign v8.5.1开始，更改了Campaign v8的身份验证过程。 技术操作员必须使用AdobeIdentity Management System (IMS)连接到Campaign。 请阅读[此技术说明](../../technotes/upgrades/ims-migration.md)，了解如何迁移现有技术帐户。
 >
 >* [!DNL Adobe Campaign] v8对API层的吞吐量(TPS)进行了限制。 超出此限制会导致标准HTTP错误(429)。 作为托管Cloud Service用户，您可以联系Adobe以调整每个API的限制。
 > 

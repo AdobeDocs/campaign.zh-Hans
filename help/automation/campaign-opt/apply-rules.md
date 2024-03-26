@@ -6,8 +6,8 @@ feature: Typology Rules
 exl-id: 4ec3bbe1-fc4c-4b1e-989c-f4dcf8ee8d5e
 source-git-commit: a8568e0c1e9af11b533b7d435691dc12cc0a2485
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 9%
+source-wordcount: '955'
+ht-degree: 8%
 
 ---
 
@@ -81,10 +81,10 @@ ht-degree: 9%
    * 筛选用户定义的规则。
    * 地址或标识符上的重复数据删除规则（如有必要，应用）。
 
-1. 压力规则.
+1. 压力规则。
 1. 容量规则。
 1. 控制规则（如果在定向结束时应用）。
-1. 控制规则（如果在开始个性化时应用）。如果用户规则（过滤/压力/电容）已过期且需要重新计算，则在此步骤中应用这些规则。
+1. 控制规则（如果在开始个性化时应用）。 如果用户规则（过滤/压力/电容）已过期且需要重新计算，则在此步骤中应用这些规则。
 1. 控制规则（如果在个性化结束时应用）。
 
 >[!NOTE]

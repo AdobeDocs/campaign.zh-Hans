@@ -7,7 +7,7 @@ role: Developer
 exl-id: 14160de5-23d2-4f53-84c6-0f9e3b1dcf21
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1247'
 ht-degree: 2%
 
 ---
@@ -100,7 +100,7 @@ logInfo("Start date: " + task.creationDate)
 
 1. 添加并配置JavaScript代码活动以定义实例变量。
 
-   例如：`instance.vars.segmentpercent = 10;`
+   例如： `instance.vars.segmentpercent = 10;`
 
    ![](assets/js_ex1.png)
 
@@ -126,7 +126,7 @@ logInfo("Start date: " + task.creationDate)
 
    ![](assets/js_ex4.png)
 
-**示例 2**
+**示例2**
 
 1. 采用上例中的工作流，并替换 **JavaScript代码** 活动：
 

@@ -7,7 +7,7 @@ exl-id: 6e899937-5ca0-4ca5-bb14-f914e41559ab
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
 source-wordcount: '172'
-ht-degree: 56%
+ht-degree: 55%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 56%
 * [跨渠道投放工作流](cross-channel-delivery-workflow.md)
 * [具有自定义日期字段的电子邮件扩充](email-enrichment-with-custom-date-fields.md)
 
-## 监测 {#monitoring}
+## 监控 {#monitoring}
 
 <img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
 
@@ -47,7 +47,7 @@ ht-degree: 56%
 * [使用重复数据删除活动的合并功能](deduplication-merge.md)
 * [设置循环导入工作流](recurring-import-workflow.md)
 
-## 设定目标 {#designing-queries}
+## 定位 {#designing-queries}
 
 <img src="assets/do-not-localize/icon_filter.svg" width="60px">
 

@@ -51,7 +51,7 @@ ht-degree: 5%
 您可以选择在特定计算机上强制执行工作流或工作流活动。 要实现此目的，必须在工作流或相关活动的级别定义一个或多个属性。
 
 
-## 最大值. 执行期 {#max--execution-period}
+## 最大 执行期 {#max--execution-period}
 
 利用此字段，可设置任务耗时过长的警告。 它不会影响工作流操作。 如果任务未在 **[!UICONTROL Max. execution period]** 结束， **[!UICONTROL Instance monitoring]** 页面将显示此工作流的警告。 可通过以下方式访问此页面： **[!UICONTROL Monitoring]** 选项卡中显示的内容。
 

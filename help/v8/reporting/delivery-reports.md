@@ -6,7 +6,7 @@ exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
 source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
 workflow-type: tm+mt
 source-wordcount: '1021'
-ht-degree: 9%
+ht-degree: 12%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 9%
 **[!UICONTROL 1. Delivery statistics]**
 
 * **[!UICONTROL Messages to deliver]** ：投放分析后要投放的消息总数。
-* **[!UICONTROL Success]** : 成功处理的消息数.
+* **[!UICONTROL Success]** ：成功处理的消息数。
 
 **[!UICONTROL 2. Reception statistics]**
 
@@ -168,9 +168,9 @@ This chart shows the breakdown of cumulated clicks per day.
 本节包括以下指标：
 
 * **[!UICONTROL Messages to be delivered]** ：投放分析后要投放的消息总数。
-* **[!UICONTROL Success]** ：成功处理的消息数。 关联速率是指与要投放的消息数量之比。
-* **[!UICONTROL Errors]** ：投放和自动回弹处理期间累计的错误总数。 关联速率是指与要投放的消息数量之比。
-* **[!UICONTROL New quarantines]** ：投放失败（用户未知，域无效）后隔离的地址数。 关联速率是指与要投放的消息数量之比。
+* **[!UICONTROL Success]** ：成功处理的消息数。 关联比率是与要投放的消息数量的比率。
+* **[!UICONTROL Errors]** ：投放和自动回弹处理期间累计的错误总数。 关联比率是与要投放的消息数量的比率。
+* **[!UICONTROL New quarantines]** ：投放失败（用户未知，域无效）后隔离的地址数。 关联比率是与要投放的消息数量的比率。
 
 ## 热门点击 {#hot-clicks}
 

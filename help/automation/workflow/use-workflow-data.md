@@ -5,7 +5,7 @@ feature: Workflows, Data Management
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
 source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '702'
 ht-degree: 8%
 
 ---
@@ -38,13 +38,13 @@ ht-degree: 8%
 
   ![](assets/wf-right-click-schema.png)
 
-  如需详细信息，请参阅[此部分](monitor-workflow-execution.md#worktables-and-workflow-schema)。
+  如需详细信息，请参阅[此小节](monitor-workflow-execution.md#worktables-and-workflow-schema)。
 
 * **[!UICONTROL Analyze target...]**
 
   通过此菜单，您可以访问描述性分析向导，该向导允许您生成有关过渡数据的统计和报告。
 
-  有关详细信息，请参见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html){target="_blank"}.
+  有关详细信息，请参见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=zh-Hans){target="_blank"}.
 
 在执行工作流时清除目标数据。 只能访问最后一个工作表。 您可以配置工作流，使所有工作表保持可访问状态：选中 **[!UICONTROL Keep the result of interim populations between two executions]** 选项。
 

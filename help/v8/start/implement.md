@@ -58,7 +58,7 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
 了解如何在中将用户添加到Adobe Campaign [本节](../start/gs-permissions.md).
 
-### 安装Campaign客户端控制台{#implementation-install-console}
+### 安装 Campaign 客户端控制台{#implementation-install-console}
 
 应用程序的主要用户界面是一个富客户端，换句话说，是一个仅用标准互联网协议（SOAP、HTTP 等）与 Adobe Campaign 应用程序服务器通信的本机应用程序 (Windows)。Adobe Campaign客户端控制台具有出色的用户友好性，可帮助提升工作效率，使用的带宽非常少（通过使用本地缓存），并且易于部署。 此 Console 可以从互联网浏览器部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成 HTTP(S) 流量。
 

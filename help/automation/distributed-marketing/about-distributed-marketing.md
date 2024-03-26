@@ -7,14 +7,14 @@ role: User
 exl-id: c9f5b277-3ad8-4316-94b9-789d37813b8b
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '1134'
-ht-degree: 2%
+source-wordcount: '1135'
+ht-degree: 1%
 
 ---
 
 # 分布式营销入门{#about-distributed-marketing}
 
-Adobe Campaign提供 **分布式营销** 中央单位（总部、营销部等）开展合作活动的申请 实施协作营销活动。此合作基于共享工作区，称为 **[!UICONTROL list of campaign packages]**，向本地实体提供集中创建的活动模板和实例。
+Adobe Campaign提供 **分布式营销** 中央单位（总部、营销部等）开展合作活动的申请 和地方实体（销售点、区域机构等）之间实施协作营销活动。此合作基于共享工作区，称为 **[!UICONTROL list of campaign packages]**，向本地实体提供集中创建的活动模板和实例。
 
 中央实体提供本地实体可以使用的营销策划。 营销活动由表示本地或协作营销活动的包实现。 要使用营销活动，必须由本地实体对其进行订购，并且订单必须获得批准。
 
@@ -49,7 +49,7 @@ Adobe Campaign提供 **分布式营销** 中央单位（总部、营销部等）
 
   营销活动包列表包含对本地实体可用的营销活动。
 
-* **营销活动包**
+* **Campaign包**
 
   由中央实体创建的模板（或营销活动实例），可供一组本地实体使用。
 
@@ -118,7 +118,7 @@ Adobe Campaign提供 **分布式营销** 中央单位（总部、营销部等）
 >
 >审批流程将呈列在 [审批流程](creating-a-local-campaign.md#approval-process) 部分。
 
-## 实施 {#implementation}
+## 实现 {#implementation}
 
 分布式营销活动由中央实体创建和发布。 如果需要，它们可以由本地和中央实体使用。
 

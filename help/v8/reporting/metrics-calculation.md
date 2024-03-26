@@ -6,8 +6,8 @@ role: Data Engineer
 exl-id: ad8e9f9c-df24-4a11-b8df-4b31dd54911f
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '2978'
-ht-degree: 9%
+source-wordcount: '3048'
+ht-degree: 3%
 
 ---
 
@@ -39,14 +39,14 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td> 交易<br /> </td> 
-   <td> @交易<br /> </td> 
+   <td> @transactions<br /> </td> 
    <td> URL类型等于“Transaction”的所有@totalClicks的总和。<br /> </td> 
    <td> sum(Iif([url/@type]=5， @totalClicks， 0))<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-此报表基于 **[!UICONTROL Consolidated tracking]** 表(nms：trackingStats)。 显示报表时，出于性能原因，使用此汇总表代替 **[!UICONTROL Recipient tracking logs]** 表(nms：trackingLogRcp)，并且不会实时计算它。 该表在检索跟踪日志几分钟后生成。如果指标是最新的，则结果将与以下各项指标相同： **跟踪指标** 报告。 @totalclicks指示器表示5分钟内的点击总数。
+此报表基于 **[!UICONTROL Consolidated tracking]** 表(nms：trackingStats)。 显示报表时，出于性能原因，使用此汇总表代替 **[!UICONTROL Recipient tracking logs]** 表(nms：trackingLogRcp)，并且不会实时计算它。 该表将在检索跟踪日志后几分钟生成。 如果指标是最新的，则结果将与以下各项指标相同： **跟踪指标** 报告。 @totalclicks指示器表示5分钟内的点击总数。
 
 ## 无法投放项和退回 {#non-deliverables-and-bounces-1}
 
@@ -83,7 +83,7 @@ ht-degree: 9%
    <td> Count(@status=2和msg/@failureReason=3)<br /> </td> 
   </tr> 
   <tr> 
-   <td> 已拒绝<br /> </td> 
+   <td> 被拒绝<br /> </td> 
    <td> @refused<br /> </td> 
    <td> 状态等于“失败”且原因等于“已拒绝”的所有邮件计数。 <br /> </td> 
    <td> Count(@status=2和msg/@failureReason=20)<br /> </td> 
@@ -95,8 +95,8 @@ ht-degree: 9%
    <td> Count(@status=2和msg/@failureReason=2)<br /> </td> 
   </tr> 
   <tr> 
-   <td> 帐户被禁用<br /> </td> 
-   <td> @已禁用<br /> </td> 
+   <td> 帐户已禁用<br /> </td> 
+   <td> @disabled<br /> </td> 
    <td> 状态等于“失败”且原因等于“帐户已禁用”的所有邮件的计数。<br /> </td> 
    <td> Count(@status=2和msg/@failureReason=4)<br /> </td> 
   </tr> 
@@ -107,8 +107,8 @@ ht-degree: 9%
    <td> Count(@status=2和msg/@failureReason=5)<br /> </td> 
   </tr> 
   <tr> 
-   <td> 错误数<br /> </td> 
-   <td> @值<br /> </td> 
+   <td> 错误<br /> </td> 
+   <td> @value<br /> </td> 
    <td> 此类错误的失败消息数。<br /> </td> 
    <td> Count(@status=2且msg/@failureReason="错误类型的值")<br /> </td> 
   </tr> 
@@ -182,7 +182,7 @@ ht-degree: 9%
  <tbody> 
   <tr> 
    <td> 使用率<br /> </td> 
-   <td> @访客<br /> </td> 
+   <td> @visitors<br /> </td> 
    <td> 每日使用此浏览器的访客数与当天访问次数最多的访客数的百分比。<br /> </td> 
    <td> 百分比(sum(@visitors)，max(@visitorsOfTheDay))<br /> </td> 
   </tr> 
@@ -218,7 +218,7 @@ ht-degree: 9%
   <tr> 
    <td> 要投放的消息数<br /> </td> 
    <td> @totalTarget<br /> </td> 
-   <td> 投放分析期间处理的消息的总数。<br /> </td> 
+   <td> 投放分析期间处理的消息总数。<br /> </td> 
    <td> sum([属性/@totalTarget])<br /> </td> 
   </tr> 
   <tr> 
@@ -229,18 +229,18 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td> 电子邮件<br /> </td> 
-   <td> @电子邮件<br /> </td> 
+   <td> @email<br /> </td> 
    <td> URL类别等于“email”的所有@totalClicks的总和。<br /> </td> 
    <td> Sum(iIf([url/@category]='email'，@totalClicks，0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Facebook<br /> </td> 
+   <td> facebook<br /> </td> 
    <td> @facebook<br /> </td> 
    <td> URL类别等于“facebook”的所有@totalClicks的总和。<br /> </td> 
    <td> Sum(iIf([url/@category]='facebook'，@totalClicks，0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Twitter<br /> </td> 
+   <td> twitter<br /> </td> 
    <td> @twitter<br /> </td> 
    <td> URL类别等于“twitter”的所有@totalClicks的总和。<br /> </td> 
    <td> Sum(iIf([url/@category]='twitter'，@totalClicks，0))<br /> </td> 
@@ -424,7 +424,7 @@ ht-degree: 9%
  <tbody> 
   <tr> 
    <td> 使用率<br /> </td> 
-   <td> @访客<br /> </td> 
+   <td> @visitors<br /> </td> 
    <td> 此操作系统上每天的访客数与访问次数最多的当天测量的访客数的百分比。<br /> </td> 
    <td> percent(@visitors)， max(@visitorsOfTheDay)<br /> </td> 
   </tr> 
@@ -470,7 +470,7 @@ ht-degree: 9%
    <td> sum(Iif(@action = 1和@date &gt; addDays(getDate()， (-1))， 1， 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 退订次数<br /> </td> 
+   <td> 取消订阅<br /> </td> 
    <td> @_unsubscription<br /> </td> 
    <td> 前一天取消订阅的次数（操作= 0）。<br /> </td> 
    <td> sum(Iif(@action = 0和@date &gt; addDays(getDate()， (-1))， 1， 0))<br /> </td> 
@@ -505,7 +505,7 @@ ht-degree: 9%
  </thead> 
  <tbody> 
   <tr> 
-   <td> 要发送的消息<br /> </td> 
+   <td> 要投放的消息<br /> </td> 
    <td> @toDeliver<br /> </td> 
    <td> 目标分析后的broadLog数量的计数。<br /> </td> 
    <td> sum([属性/@toDeliver])<br /> </td> 
@@ -644,18 +644,18 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td> 电子邮件<br /> </td> 
-   <td> @电子邮件<br /> </td> 
+   <td> @email<br /> </td> 
    <td> URL类别等于“email”的所有@totalClicks的总和。<br /> </td> 
    <td> Sum(iIf([url/@category]='email'，@totalClicks，0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Facebook<br /> </td> 
+   <td> facebook<br /> </td> 
    <td> @facebook<br /> </td> 
    <td> URL类别等于“facebook”的所有@totalClicks的总和。<br /> </td> 
    <td> Sum(iIf([url/@category]='facebook'，@totalClicks，0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Twitter<br /> </td> 
+   <td> twitter<br /> </td> 
    <td> @twitter<br /> </td> 
    <td> URL类别等于“twitter”的所有@totalClicks的总和。<br /> </td> 
    <td> Sum(iIf([url/@category]='twitter'，@totalClicks，0))<br /> </td> 
@@ -702,13 +702,13 @@ ht-degree: 9%
  </thead> 
  <tbody> 
   <tr> 
-   <td> 反应度<br /> </td> 
+   <td> 反应性<br /> </td> 
    <td> @reactivity<br /> </td> 
    <td> 与至少打开一次投放的目标收件人的估计数量相比，已点击至少一次投放的目标收件人的数量。<br /> </td> 
    <td> percent([指示器/@recipientClick]， [指示器/@estimatedRecipientOpen])<br /> </td> 
   </tr> 
   <tr> 
-   <td> 不同的点击次数<br /> </td> 
+   <td> 不同点击次数<br /> </td> 
    <td> @distinctClicks<br /> </td> 
    <td> 与成功投放的消息数相比，已至少单击一次投放的不同用户数的比率。<br /> </td> 
    <td> percent([指示器/@personClick]， [指示器/@success])<br /> </td> 
@@ -726,7 +726,7 @@ ht-degree: 9%
    <td> count(Iif([@url-id] ！= 1， @totalClicks， 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> 点击次数 (%)<br /> </td> 
+   <td> 点击次数(%)<br /> </td> 
    <td> -<br /> </td> 
    <td> 点击数相对于累计点击总数的百分比。<br /> </td> 
    <td> percent(@_click， @_total)<br /> </td> 
@@ -761,7 +761,7 @@ ht-degree: 9%
    <td> sum([属性/@reject])<br /> </td> 
   </tr> 
   <tr> 
-   <td> 要发送的消息<br /> </td> 
+   <td> 要投放的消息<br /> </td> 
    <td> @toDeliver<br /> </td> 
    <td> 投放分析后要投放的消息总数。<br /> </td> 
    <td> sum([属性/@toDeliver])<br /> </td> 
@@ -773,7 +773,7 @@ ht-degree: 9%
    <td> sum([indicators/@success])<br /> </td> 
   </tr> 
   <tr> 
-   <td> 错误数<br /> </td> 
+   <td> 错误<br /> </td> 
    <td> @error<br /> </td> 
    <td> 投放和自动退回处理期间累计的错误总数。<br /> </td> 
    <td> sum([indicators/@error])<br /> </td> 
@@ -809,7 +809,7 @@ ht-degree: 9%
  <tbody> 
   <tr> 
    <td> 交易<br /> </td> 
-   <td> @交易<br /> </td> 
+   <td> @transactions<br /> </td> 
    <td> URL类型等于“Transaction”的所有@totalClicks的总和。<br /> </td> 
    <td> sum(Iif([url/@type] = 5， @totalClicks， 0))<br /> </td> 
   </tr> 
@@ -855,13 +855,13 @@ ht-degree: 9%
    <td> 指示器/@success<br /> </td> 
   </tr> 
   <tr> 
-   <td> 硬退回次数<br /> </td> 
+   <td> 硬退回<br /> </td> 
    <td> @hardBounce<br /> </td> 
    <td> 状态等于“失败”且原因等于“用户未知”的消息总数。<br /> </td> 
    <td> @unknownUser<br /> </td> 
   </tr> 
   <tr> 
-   <td> 软退回次数<br /> </td> 
+   <td> 软退回<br /> </td> 
    <td> @softBounce<br /> </td> 
    <td> 状态等于“失败”且原因等于“无法联系”、“收件箱已满”、“无效域”、“帐户已禁用”、“未连接”或“已拒绝”的所有邮件总数<br /> </td> 
    <td> @unreachable + @mailBoxFull + @invalidDomain + @disabled + @notConnected + @refused<br /> </td> 
@@ -879,7 +879,7 @@ ht-degree: 9%
    <td> Countdistinct(Iif([url/@type]=1， @source-id， 0)) <br /> </td> 
   </tr> 
   <tr> 
-   <td> 退订次数<br /> </td> 
+   <td> 取消订阅<br /> </td> 
    <td> @optOut<br /> </td> 
    <td> URL类别等于“选择退出”的@ids总数。<br /> </td> 
    <td> count(Iif([url/@type]=3， @id， 0))<br /> </td> 

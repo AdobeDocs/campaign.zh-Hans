@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '994'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -34,9 +34,9 @@ Adobe Campaign v8 在基础架构、安全性、可投放性和监测方面有�
 
 在 Adobe　Campaign 中，收件人是发送投放内容（电子邮件、短信等）所定位的默认用户档案。凭借数据库中存储的收件人数据，您可以过滤将接收任何给定投放的目标并在投放内容中添加个性化数据。数据库中还有其他类型的用户档案。这些用户档案是针对不同用途而设计的。例如，种子用户档案用于在将投放内容发送给最终目标前测试该投放内容。
 
-用户档案管理基础知识在中进行了说明 [本节](audiences.md).
+[本部分](audiences.md)详细介绍了用户档案管理的基础知识。
 
-了解如何在中向Campaign添加用户档案 [本节](import.md).
+要了解如何向 Campaign 添加用户档案，请参阅[此部分](import.md)。
 
 ## 目标市场细分 {#targeted-segmentation}
 
@@ -44,13 +44,13 @@ Adobe Campaign 具有功能强大且易于使用的市场细分和定位功能�
 
 高级数据管理功能可进一步扩展数据处理能力。通过包含未在数据集市中建模的数据，该功能可简化并优化定位流程。
 
-在中了解有关分段和受众创建的更多信息 [本节](audiences.md).
+要了解关于分段和受众创建的更多信息，请参阅[此部分](audiences.md)。
 
 ## 跨渠道营销活动编排 {#cross-channel-campaign-orchestration}
 
 您可以利用 Adobe Campaign 在多个渠道上设计和编排有针对性的个性化活动：电子邮件、直邮、SMS、推送通知等。通过单个界面为您提供计划、编排、配置、个性化、自动化、执行和衡量所有活动和通信所需的全部功能。
 
-了解如何在中设计、计划和执行活动 [本节](campaigns.md).
+要了解如何设计、计划和执行活动，请参阅[此部分](campaigns.md)。
 
 ## 工作流 {#wf-gsv8}
 
@@ -65,7 +65,7 @@ Adobe Campaign 提供了一个全面的图形环境，允许您设计包括分�
 * 将数据导入 Campaign 数据库。
 * 数据库清理、恢复跟踪信息等技术流程。
 
-了解如何在中设计和执行工作流 [本节](../config/workflows.md).
+要了解如何设计和执行工作流，请参阅[此部分](../config/workflows.md)。
 
 ## 报告和分析 {#analysis-and-reporting}
 
@@ -76,19 +76,19 @@ Adobe Campaign 可逐步丰富客户数据和用户档案，从而让您监测�
 营销活动报告功能有助于创建动态报告。您可以使用拖放变量来自定义报告并分析营销活动是否成功。根据查询和计算的复杂性，可以将数据聚合到列表视图中，或以便于生成营销分析报告的格式进行访问。
 
 
-在中了解有关报告和跟踪功能的更多信息 [本节](../reporting/gs-reporting.md).
+要了解有关报告和跟踪功能的更多信息，请参阅[此部分](../reporting/gs-reporting.md)。
 
 ## Adobe Experience Cloud 集成 {#adobe-experience-cloud-integrations}
 
 您可以将 Adobe Campaign 的投放功能以及高级营销活动管理功能与帮助您个性化用户体验的解决方案（例如 Adobe Experience Manager、Adobe Analytics、Adobe Target 或 Adobe Experience Cloud 触发程序）结合起来。
 
-了解如何在中与Adobe服务和解决方案集成 [本节](../connect/integration.md).
+要了解如何与 Adobe 服务和解决方案进行集成，请参阅[此部分](../connect/integration.md)。
 
 ## 关于 Campaign 功能的更多信息 {#core-capabilities-and-add-ons}
 
 根据您的需求和架构，Adobe Campaign 提供了一系列功能，帮助您实施和优化各种对话式营销功能。其中有些是核心功能，有些功能取决于软件包的安装和您的配置。此处提供了详细的产品说明：[Adobe Campaign v8 产品说明](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)。
 
-已经熟悉Campaign Classic了吗？ 在[此页面](v7-to-v8.md)中了解 Campaign Classic 和 Campaign v8 之间的主要差异。
+已经熟悉了 Campaign Classic？在[此页面](v7-to-v8.md)中了解 Campaign Classic 和 Campaign v8 之间的主要差异。
 
 **另请参阅**
 

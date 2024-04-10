@@ -5,10 +5,10 @@ feature: Audiences
 role: User
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 99cb937a475997aae714a67b1f9f91c6bae932f4
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 15%
+source-wordcount: '521'
+ht-degree: 17%
 
 ---
 
@@ -41,15 +41,20 @@ ht-degree: 15%
 
 ## 使用中的用户档案 {#active-profiles}
 
-活动用户档案是客户在过去12个月内尝试通过任何渠道与之通信的用户档案。 许可证量度基于活动用户档案。 了解详情，请参阅 [Adobe Campaign产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+
+活动用户档案是客户在过去12个月内尝试通过任何渠道与之通信的用户档案。
+
+根据您的合同，您的每个 Campaign 实例都会配置特定数量的活动用户档案，并对这些活动用户档案进行计数以计费。请参阅您的最新合同，了解已购买的活动用户档案的数量。 了解详情，请参阅 [Adobe Campaign产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 您可以直接从Campaign控制面板监控实例上的活动用户档案数。 有关详细信息，请参见 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
 
->[!CAUTION]
->
->* 被多次投放定向的用户档案只会被计数一次。
->
->* 在X(Twitter)的社交营销上下文中定位的用户档案不会计为活动用户档案。
+
+以下护栏和限制适用：
+
+* 被多次投放定向的用户档案只会被计数一次。
+* 在X(Twitter)的社交营销上下文中定位的用户档案不会计为活动用户档案。
+* 计数基于收件人主键。 因此，如果某个用户档案存在于两个不同的收件人表中，则它可能会被计算为活动用户档案两次。
+
 
 ## 隐私和同意{#privacy-and-consent}
 

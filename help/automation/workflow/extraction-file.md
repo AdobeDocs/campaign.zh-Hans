@@ -5,9 +5,9 @@ description: 了解有关数据提取（文件）工作流活动的更多信息
 feature: Workflows, Data Management Activity
 role: User
 exl-id: 8510e879-2862-491f-bc52-ca8f56105932
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 014743172e09d46cb83b2fe2befaa8f3c54669b1
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '312'
 ht-degree: 1%
 
 ---
@@ -46,8 +46,6 @@ ht-degree: 1%
    ![](assets/s_advuser_extract_file_agregate_values.png)
 
 您可以定义在数据提取期间执行的后处理，从而允许您压缩或加密文件。 要实现此目的，必须将所需的命令添加到 **[!UICONTROL Script]** 选项卡中。
-
-有关更多信息，请参阅此章节： [压缩或加密文件](use-workflow-data.md#zipping-or-encrypting-a-file).
 
 ![](assets/postprocessing_dataextraction.png)
 

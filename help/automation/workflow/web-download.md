@@ -4,9 +4,9 @@ title: Web 下载
 description: 了解有关Web下载工作流活动的更多信息
 feature: Workflows
 exl-id: 73bacf61-ac03-4a5c-b03b-6dfbe3fb9538
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 76a5737e2326e9691113957d1c7bf390ea969695
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '483'
 ht-degree: 2%
 
 ---
@@ -58,6 +58,10 @@ ht-degree: 2%
 1. **高级参数**
 
    此 **[!UICONTROL Advanced parameters...]** 链接允许您指定下面显示的其他选项：
+
+   * **[!UICONTROL Follow redirections]**：通过文件重定向，您可以使用覆盖将数据输入或输出定向到其他类型的设备。
+   * **[!UICONTROL Add the HTTP headers to the file]**：在某些情况下，您可能希望向文件添加其他HTTP标头。 大多数情况下，这些标头将用于提供其他信息以进行故障排除，目的是 [跨源资源共享(CORS)](https://developer.mozilla.org/docs/Web/HTTP/CORS)，或设置特定的缓存指令。
+   * **[!UICONTROL Ignore the HTTP return code]**：HTTP返回代码（也称为HTTP状态代码）表示HTTP请求的结果。
 
    ![](assets/download_web_edit_advanced.png)
 

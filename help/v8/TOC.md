@@ -5,10 +5,10 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: 782362d6d742a3121d3b87b26c2f1481731ff694
-workflow-type: ht
-source-wordcount: '594'
-ht-degree: 100%
+source-git-commit: 19593cd689609515264aa2995e33e53f3bc95c95
+workflow-type: tm+mt
+source-wordcount: '596'
+ht-degree: 99%
 
 ---
 
@@ -100,6 +100,7 @@ ht-degree: 100%
 + 隐私和安全管理 {#privacy}
    + [管理隐私请求](start/privacy.md)
    + [安全准则](config/security.md)
+   + [增强的安全性](config/enhanced-security.md)
 + 决策管理 {#offers}
    + [实时互动入门](interaction/interaction.md)
    + [环境和架构](interaction/interaction-architecture.md)

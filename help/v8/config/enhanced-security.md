@@ -6,55 +6,59 @@ role: Developer
 level: Experienced
 hide: true
 hidefromtoc: true
-source-git-commit: cec935c2c73e3df4d2e03d54305004df9bd2655e
+exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
+source-git-commit: f9b064dffa0f8792e8653760cb2ac44cfdf43848
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '696'
 ht-degree: 1%
 
 ---
-
 
 # 增强的安全加载项 {#enhanced-security}
 
 要使网络连接更安全，并为您的资源提供更好的安全性， [!DNL Adobe Campaign] 提供新的 **增强的安全性** 加载项。
 
-此加载项当前包含两个生态系统功能：
+此附加组件包括两个生态系统功能：
 
 * [安全CMK集成](#secure-cmk-integration)
 
 * [安全VPN隧道](#secure-vpn-tunneling)
 
+这些功能详见下文。
+
 ## 安全CMK集成 {#secure-cmk-integration}
 
-**安全的客户管理密钥(CMK)集成** 允许您通过AWS帐户使用自己的密钥加密实例和数据<!--instead of Adobe-owned keys-->. 通过让您负责生成和管理加密密钥，此容量使您能够更好地控制密钥，包括撤销密钥。
+此 **安全的客户管理密钥(CMK)集成** 允许您通过Amazon Web Services (AWS)帐户使用自己的密钥加密实例和数据。
+
+客户管理的密钥是您在您的AWS帐户中创建、拥有和管理的Key Management Service (KMS)密钥。 您可以完全控制这些KMS密钥，并使用它们来加密和解密数据。 通过让您负责生成和管理加密密钥，此容量使您能够更好地控制密钥，包括撤销密钥。
 
 >[!CAUTION]
 >
 >如果您撤销了密钥，则必须了解将会产生的影响。 [了解详情](#cmk-callouts)
 
-要启用此功能，请执行以下步骤：
+要启用CMK与Campaign的集成，请执行以下步骤：
 
-1. 确保您拥有 [AWS](https://aws.amazon.com/){target="_blank"} 帐户。
+1. 连接到您的 [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"} 帐户。
 
-1. 使用AWS密钥管理服务(KMS)生成具有自动轮换的密钥。 [了解如何](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}
+1. 使用AWS密钥管理服务(KMS)生成具有自动轮换的密钥。 [了解如何](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}.
 
-1. 通过Adobe您的AWS帐户来应用提供给您的策略，以便授予对资源的访问权限。 [了解详情](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"} <!--link TBC-->
+1. 通过Adobe您的AWS帐户来应用提供给您的策略，以便授予对资源的访问权限。 [了解详情](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"}. <!--link TBC-->
 
-1. 与共享您的Amazon资源名称（键ARN） [!DNL Adobe Campaign]. 为此，请联系您的Adobe代表。 <!--or Adobe transition manager?-->
+1. 共享您的 [Amazon资源名称（键ARN）](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"} 替换为 [!DNL Adobe Campaign]. 为此，请联系您的Adobe代表。 <!--or Adobe transition manager?-->
 
-1. 创建并测试Amazon EventBridge规则，以启用按Adobe监视密钥&#x200B;。 [了解详情](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}
+1. 创建并测试Amazon EventBridge规则，以启用按Adobe监视密钥&#x200B;。 [了解详情](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}。
 
 ## 安全VPN隧道 {#secure-vpn-tunneling}
 
-**安全虚拟专用网络(VPN)隧道** 是一个点对点VPN，通过专用网络，为传输中的数据提供从您的设施到 [!DNL Adobe Campaign] 实例。
+此 **安全虚拟专用网络(VPN)隧道** 是一个点对点VPN，通过专用网络，为传输中的数据提供从您的设施到 [!DNL Adobe Campaign] 实例。
 
 <!--As it connects two networks together, it is a site-to-site VPN.-->
 
-为确保高可用性(HA)，它使用两个隧道来避免在一个隧道上发生问题时中断
+为确保高可用性(HA)，它使用两个通道来避免在一个通道上发生问题时造成任何中断。
 
 支持以下三个用例：
 
-* FDA over VPN<!--to access your on-premise database from the Campaign instance over VPN-->
+* 通过VPN的联合数据访问(FDA)<!--to access your on-premise database from the Campaign instance over VPN-->
 
 * 从胖客户机通过VPN登录实例
 
@@ -68,7 +72,7 @@ ht-degree: 1%
 
 * 根据Adobe端VPN配置设置您的端VPN。
 
-* 让两条隧道都保持畅通，为高可用性服务。
+* 保持两个通道处于正常运行状态，以实现高可用性。
 
 * 监视侧隧道。
 

@@ -5,9 +5,9 @@ description: 监测工作流执行
 feature: Workflows
 role: Admin
 exl-id: bc13d706-7888-42eb-9116-5538e68cd515
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: a78019d11a0a2acbd8c0d9ba7c2082c09f90356c
 workflow-type: tm+mt
-source-wordcount: '1929'
+source-wordcount: '1926'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 中还提供了有关如何创建工作流以允许您监视一组“已暂停”、“已停止”或“出现错误”的工作流的状态的用例 [本节](workflow-supervision.md#supervising-workflows).
 
-此外，实例的管理员可以使用 **审核记录** 要检查活动和上次对工作流进行的修改，请检查工作流的状态。 在中了解有关审核记录的详细信息  [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/audit-trail.html#accessing-audit-trail){target="_blank"}.
+此外，实例的管理员可以使用 **审核记录** 要检查活动和上次对工作流进行的修改，请检查工作流的状态。 要了解有关审核记录的详细信息，请参阅此 [页面](../../v8/reporting/audit-trail.md){target="_blank"}.
 
 ## 显示进度 {#displaying-progress}
 

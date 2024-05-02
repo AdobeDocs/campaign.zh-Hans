@@ -5,9 +5,9 @@ feature: Monitoring
 role: User
 level: Beginner, Intermediate
 exl-id: f3de901f-519f-42ae-846c-f20c7cb560df
-source-git-commit: 65f4da979f0c5884797af0c3a835d948672b4a7c
+source-git-commit: a78019d11a0a2acbd8c0d9ba7c2082c09f90356c
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '677'
 ht-degree: 19%
 
 ---
@@ -131,4 +131,4 @@ Adobe Campaign提供了一组功能来监控您的流程和环境。
 
 使用审核记录自助服务界面可监控在实例中所做的更改。 审核记录可实时捕获在Adobe Campaign实例中发生的操作和事件的全面列表。 您可以访问数据的历史记录，以帮助回答以下问题：您的工作流发生了什么情况、上次更新这些工作流的人员或者您的用户在实例中做了什么。
 
-在中了解有关审核记录的详细信息  [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/audit-trail.html#accessing-audit-trail){target="_blank"}
+要了解有关审核记录的详细信息，请参阅此 [页面](../reporting/audit-trail.md){target="_blank"}

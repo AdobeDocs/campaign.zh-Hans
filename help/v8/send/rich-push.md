@@ -5,17 +5,19 @@ description: 了解如何使用Adobe Campaign Web设计Android富推送通知投
 feature: Push
 role: User
 level: Beginner
-hide: true
-hidefromtoc: true
 exl-id: 42e3623b-b401-4fcc-80a7-ea38347fddc6
-source-git-commit: 5f1ffd5d59791a0e6ff8a67feb08c8eed128cc1e
+source-git-commit: 94dba45c59c699680675bdcd2b73da386d727435
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1135'
 ht-degree: 5%
 
 ---
 
-# 设计Android富推送投放 {#rich-push}
+# 设计 Android 富推送投放 {#rich-push}
+
+>[!AVAILABILITY]
+>
+>此功能位于 **有限可用性** （洛杉矶）。
 
 使用Firebase Cloud Messaging，您可以选择两种类型的消息：
 

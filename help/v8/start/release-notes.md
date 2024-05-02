@@ -5,9 +5,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 520a7798cd1969e7c29519cbc918b66a44ff2a71
+source-git-commit: c4a289e713d01297a7d38158b3cd4450ceef5276
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '907'
 ht-degree: 51%
 
 ---
@@ -46,7 +46,7 @@ _2024年5月2日_
 
 ### 兼容性更新 {#comp-8-7-1}
 
-数据库现在支持作为具有Adobe Campaign联合数据访问(FDA)的外部数据库。 [在此页面中](../connect/fda.md)了解有关 FDA 的详细信息。
+数据库现在支持作为具有Adobe Campaign联合数据访问(FDA)的外部数据库。 请参阅[此页面](compatibility-matrix.md#FederatedDataAccessFDA)以了解详情。
 
 ### 一般改进 {#improvements-8-7-1}
 

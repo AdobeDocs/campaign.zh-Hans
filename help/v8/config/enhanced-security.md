@@ -1,5 +1,5 @@
 ---
-title: 增强的安全加载项
+title: Campaign增强的安全加载项
 description: Campaign增强安全性加载项入门
 feature: Configuration
 role: Developer
@@ -7,26 +7,35 @@ level: Experienced
 hide: true
 hidefromtoc: true
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: f9b064dffa0f8792e8653760cb2ac44cfdf43848
+source-git-commit: 042a1cc96b819a1a77442e274defbadeb393eafc
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 1%
+source-wordcount: '745'
+ht-degree: 3%
 
 ---
 
-# 增强的安全加载项 {#enhanced-security}
+
+# Campaign增强安全性加载项 {#enhanced-security}
 
 要使网络连接更安全，并为您的资源提供更好的安全性， [!DNL Adobe Campaign] 提供新的 **增强的安全性** 加载项。
 
 此附加组件包括两个生态系统功能：
 
-* [安全CMK集成](#secure-cmk-integration)
+* [安全的客户管理密钥(CMK)集成](#secure-cmk-integration)
 
-* [安全VPN隧道](#secure-vpn-tunneling)
+* [安全虚拟专用网络(VPN)隧道](#secure-vpn-tunneling)
 
 这些功能详见下文。
 
-## 安全CMK集成 {#secure-cmk-integration}
+本页列出了与增强安全功能相关的一些护栏和限制。 此外，您必须确保所有安全CMK集成/安全VPN隧道用例都正常工作。
+
+实施这些功能后，Adobe将监控：
+
+* 您的实例可用性，如果密钥不可用，则继续发送警报。
+
+* VPN通道，并在出现任何问题时继续发出警报。
+
+## 安全可靠的客户管理密钥集成 {#secure-cmk-integration}
 
 此 **安全的客户管理密钥(CMK)集成** 允许您通过Amazon Web Services (AWS)帐户使用自己的密钥加密实例和数据。
 
@@ -48,7 +57,30 @@ ht-degree: 1%
 
 1. 创建并测试Amazon EventBridge规则，以启用按Adobe监视密钥&#x200B;。 [了解详情](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}。
 
-## 安全VPN隧道 {#secure-vpn-tunneling}
+
+### 护栏和限制 {#cmk-callouts}
+
+以下护栏和限制适用于与Adobe Campaign v8的CMK集成：
+
+* Adobe不提供 [Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"} 帐户。 您必须拥有自己的AWS帐户并进行设置，以生成您的密钥并将其与Adobe共享。
+
+* 仅 [AWS密钥管理服务](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} 支持(KMS)键。 不能使用KMS之外的客户生成的键&#x200B;。
+
+* 首次设置期间预计会出现停机时间。&#x200B;AEM停机时间持续时间取决于数据库的大小。
+
+* 作为客户，您拥有和维护密钥。 如果密钥发生任何更改，您必须联系Adobe。&#x200B;
+
+* 您可以使用以下工具审核您的密钥 [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html){target="_blank"} 如有需要，可将其撤销&#x200B;。
+
+* 如果您撤消、禁用或删除密钥，则在还原相应的操作之前，将无法访问已加密的资源和实例。
+
+  >[!CAUTION]
+  >
+  >如果禁用了密钥并且没有在7天内还原此操作，则只能从备份中恢复数据库。
+  >
+  >如果您删除了密钥并且没有在30天内还原此操作，则您的所有数据将被永久删除并将丢失&#x200B;。
+
+## 安全的虚拟专用网络隧道 {#secure-vpn-tunneling}
 
 此 **安全虚拟专用网络(VPN)隧道** 是一个点对点VPN，通过专用网络，为传输中的数据提供从您的设施到 [!DNL Adobe Campaign] 实例。
 
@@ -80,53 +112,20 @@ ht-degree: 1%
 
 * 在终端设置连接失败时的重试机制。
 
-## 护栏 {#callouts}
 
-下面列出了与增强安全功能相关的一些护栏和限制。
+### 护栏和限制 {#vpn-callouts}
 
-* 确保您的所有Secure CMK集成/Secure VPN隧道用例都正常工作。
-
-<!--* Adobe shall reach out to you or your technical team if any issue is found on your side.
-
-* Currently, when using Enhanced security features, any communication with Adobe must be performed manually via email.-->
-
-* Adobe将监控：
-
-   * 您的实例可用性，如果密钥不可用，则继续发送警报。
-
-   * VPN通道，并在出现任何问题时继续发出警报。
-
-### 安全CMK集成护栏 {#cmk-callouts}
-
-* Adobe不提供AWS帐户。 您必须拥有自己的AWS帐户并进行设置，以生成您的密钥并将其与Adobe共享。
-
-* 仅 [AWS密钥管理服务](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} 支持(KMS)键。 不能使用KMS之外的客户生成的键&#x200B;。
-
-* 首次设置将涉及一些停机时间。&#x200B;AEM停机时间将取决于数据库的大小。
-
-* 在您拥有和维护密钥时，如果密钥发生任何更改，您必须联系Adobe。&#x200B;
-
-* 您可以使用以下工具审核您的密钥 [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html){target="_blank"} 如有需要，可将其撤销&#x200B;。
-
-* 如果您撤消、禁用或删除密钥，则在还原相应的操作之前，将无法访问已加密的资源和实例。
-
-  >[!CAUTION]
-  >
-  >如果禁用了密钥并且没有在7天内还原此操作，则只能从备份中恢复数据库。
-  >
-  >如果您删除了密钥并且没有在30天内还原此操作，则您的所有数据将被永久删除并将丢失&#x200B;。
-
-### 安全VPN隧道护栏 {#vpn-callouts}
+以下护栏和限制适用于与Adobe Campaign v8的VPN隧道集成：
 
 * 目前，仅支持内部部署数据库，例如<!--Richa to check the list with PM-->：
 
    * MySQL
-   * netezza 
-   * oracle 
-   * SAP HANA 
-   * SQL Server 
-   * Sybase 
-   * teradata 
+   * Netezza
+   * Oracle
+   * SAP HANA
+   * SQL Server
+   * Sybase
+   * Teradata
    * Hadoop（通过 HiveSQL）
 
 * 仅支持与AWS兼容的VPN设备。 上提供了兼容设备的列表 [此页面](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html#example-configuration-files){target="_blank"}<!--check which list should be communicated-->.

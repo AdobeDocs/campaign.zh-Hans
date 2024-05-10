@@ -8,7 +8,7 @@ breadcrumb-title: Campaign v8 文档
 source-git-commit: 5312045424d74f8aa1eb44b2f40347553d471a12
 workflow-type: tm+mt
 source-wordcount: '600'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -121,7 +121,7 @@ ht-degree: 98%
    + [用例](interaction/interaction-use-cases.md)
 + 报告和分析 {#analytics}
    + [跟踪和监测](start/tracking.md)
-   + [审核跟踪](reporting/audit-trail.md)
+   + [审核记录](reporting/audit-trail.md)
    + 使用报告{#reports}
       + [报告入门](reporting/gs-reporting.md)
       + 创建多维数据集{#cubes}

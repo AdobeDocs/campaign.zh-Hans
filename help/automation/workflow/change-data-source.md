@@ -4,9 +4,9 @@ description: 了解有关更改数据源活动的更多信息
 feature: Workflows, Data Management, Federated Data Access
 role: User
 exl-id: ca7eca9d-9112-4ea1-9a0c-a24cf6a978e6
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 5af8753e9412c239ba40997abc5f8e61f405e999
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '279'
 ht-degree: 2%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 2%
 使用 **[!UICONTROL Change Data Source]** 活动，以便为使用其他数据源 **[!UICONTROL Working table]**.
 
 请注意，在使用时 **[!UICONTROL Change Data Source]** 活动，您需要切换回云数据库以继续执行工作流。
+
+>[!IMPORTANT]
+>
+>请注意 **[!UICONTROL Change Dimension]** 和 **[!UICONTROL Change Data source]** 活动不应添加在一行中。 如果需要连续使用这两个活动，请确保包含 **[!UICONTROOL 扩充]** 活动。 这可以确保正确执行并防止潜在的冲突或错误。
 
 要使用 **[!UICONTROL Change Data Source]** 活动，您必须：
 

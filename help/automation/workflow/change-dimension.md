@@ -5,9 +5,9 @@ description: 了解如何使用更改维度活动
 feature: Workflows, Targeting Activity
 role: User
 exl-id: 71f36413-377a-4be6-921c-9e794fe882fd
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 5af8753e9412c239ba40997abc5f8e61f405e999
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '414'
 ht-degree: 1%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 1%
 使用 **[!UICONTROL Change dimension]** 活动，用于在构建受众时更改定向维度。 此活动根据数据模板和输入维度移动轴。 例如，从“合同”维度切换到“客户”维度。
 
 您还可以使用此活动定义新目标的附加列，并定义重复数据删除标准。
+
+>[!IMPORTANT]
+>
+>请注意 **[!UICONTROL Change Dimension]** 和 **[!UICONTROL Change Data source]** 活动不应添加在一行中。 如果需要连续使用这两个活动，请确保包含 **[!UICONTROOL 扩充]** 活动。 这可以确保正确执行并防止潜在的冲突或错误。
 
 配置 **[!UICONTROL Change dimension]** 活动，请应用以下步骤：
 

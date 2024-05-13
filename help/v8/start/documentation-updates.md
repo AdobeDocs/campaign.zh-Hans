@@ -6,10 +6,10 @@ role: User
 level: Beginner
 hidefromtoc: true
 exl-id: 3c1cae6e-0a75-4f18-b1ee-2d5fa23b4251
-source-git-commit: 0f5efba364ef924447324bdd806e15e6db8d799d
+source-git-commit: 5af8753e9412c239ba40997abc5f8e61f405e999
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 34%
+source-wordcount: '152'
+ht-degree: 26%
 
 ---
 
@@ -17,13 +17,15 @@ ht-degree: 34%
 
 本页列出了中的所有最新更新 [!DNL Campaign] v8 （控制台）文档。
 
+## 2024 年 5 月 {#may-2024}
+
+已添加注释以指定 **[!UICONTROL Change Dimension]** 和 **[!UICONTROL Change Data source]** 活动不应添加一行，而需要具有 **[!UICONTROOL 扩充]** 活动。 有关更多信息，请参阅 [更改维度](../../automation/workflow/change-dimension.md) 和 [更改数据源](../../automation/workflow/change-data-source.md) 部分。
+
 ## 2024年2月 {#feb-2024}
 
 * 随附的所有新增功能、更改和改进 [!DNL Campaign] 文档中详细介绍了v8.6版本。 [了解更多信息](release-notes.md)
 * 现在，在专用页面中详细介绍了Campaign v8版本管理和升级机制。 [了解更多信息](upgrades.md)
 * 添加了有关Adobe Campaign + Adobe Workfront集成的页面。 [了解更多信息](../connect/ac-workfront.md)
-
-
 
 ## 2024 年 1 月 {#jan-2024}
 

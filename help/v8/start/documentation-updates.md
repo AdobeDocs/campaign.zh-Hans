@@ -6,10 +6,10 @@ role: User
 level: Beginner
 hidefromtoc: true
 exl-id: 3c1cae6e-0a75-4f18-b1ee-2d5fa23b4251
-source-git-commit: 5af8753e9412c239ba40997abc5f8e61f405e999
+source-git-commit: 91d19874dfb313a1a470ac4f39cf5af7ca7dfa19
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 26%
+source-wordcount: '151'
+ht-degree: 27%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 26%
 
 ## 2024 年 5 月 {#may-2024}
 
-已添加注释以指定 **[!UICONTROL Change Dimension]** 和 **[!UICONTROL Change Data source]** 活动不应添加一行，而需要具有 **[!UICONTROOL 扩充]** 活动。 有关更多信息，请参阅 [更改维度](../../automation/workflow/change-dimension.md) 和 [更改数据源](../../automation/workflow/change-data-source.md) 部分。
+已添加注释以指定 **[!UICONTROL Change Dimension]** 和 **[!UICONTROL Change Data source]** 活动不应添加一行，而需要具有 **[!UICONTROL Enrichement]** 活动。 有关更多信息，请参阅 [更改维度](../../automation/workflow/change-dimension.md) 和 [更改数据源](../../automation/workflow/change-data-source.md) 部分。
 
 ## 2024年2月 {#feb-2024}
 

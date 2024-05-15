@@ -8,7 +8,7 @@ exl-id: a228c0dc-80f5-4c51-b73b-ced0aa27a65a
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '81'
-ht-degree: 24%
+ht-degree: 38%
 
 ---
 
@@ -18,4 +18,4 @@ ht-degree: 24%
 
 ![](assets/web-form-page.png)
 
-了解如何在中创建Web窗体 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=zh-Hans){target="_blank"}.
+要了解如何创建 Web 窗体，请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=zh-Hans){target="_blank"}。

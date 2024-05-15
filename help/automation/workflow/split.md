@@ -217,14 +217,14 @@ A **Split**-type活动允许您将目标拆分为多个子集。 使用所有接
 ## 输入参数 {#input-parameters}
 
 * 表名
-* 架构
+* 模式
 
 每个入站事件必须指定由这些参数定义的目标。
 
 ## 输出参数 {#output-parameters}
 
 * 表名
-* 架构
+* 模式
 * recCount
 
 这组三个值可标识排除项导致的目标。 **[!UICONTROL tableName]** 是记录目标标识符的表的名称， **[!UICONTROL schema]** 是群体的模式（通常为nms：recipient）和 **[!UICONTROL recCount]** 是表中的元素数。

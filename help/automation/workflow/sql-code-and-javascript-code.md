@@ -9,7 +9,7 @@ exl-id: 8c385847-a320-4cd9-9048-2bf9daf2ee07
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
 source-wordcount: '270'
-ht-degree: 10%
+ht-degree: 13%
 
 ---
 
@@ -40,7 +40,7 @@ An **[!UICONTROL SQL code]** 活动执行SQL脚本。 脚本是JST模板。
 
 ### 执行延迟 {#exec-delay}
 
-从20.2版本开始，向添加了执行延迟 **[!UICONTROL JavaScript code]** 和 **[!UICONTROL Advanced JavaScript code]** 活动。 默认情况下，执行阶段不能超过1小时。 在此延迟后，进程将中止，并显示一条错误消息，活动执行将失败。
+从20.2版本开始，向添加了执行延迟 **[!UICONTROL JavaScript code]** 和 **[!UICONTROL Advanced JavaScript code]** 活动。 默认情况下，执行阶段不能超过 1 小时。在此延迟后，进程将中止，并显示一条错误消息，活动执行将失败。
 
 您可以在 **[!UICONTROL Stop execution after]** 在这些活动中可用的字段。
 

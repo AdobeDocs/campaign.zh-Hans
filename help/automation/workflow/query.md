@@ -8,7 +8,7 @@ exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
 source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
 workflow-type: tm+mt
 source-wordcount: '1553'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -151,7 +151,7 @@ ht-degree: 0%
 ## 输出参数 {#output-parameters}
 
 * 表名
-* 架构
+* 模式
 * recCount
 
 这组三个值标识查询所定向的群体。 **[!UICONTROL tableName]** 是记录目标标识符的表的名称， **[!UICONTROL schema]** 是群体的模式（通常为nms：recipient）和 **[!UICONTROL recCount]** 是表中的元素数。

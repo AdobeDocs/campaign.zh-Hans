@@ -162,14 +162,14 @@ ht-degree: 9%
 ## 输入参数 {#input-parameters}
 
 * 表名
-* 架构
+* 模式
 
 每个入站事件必须指定由这些参数定义的目标。
 
 ## 输出参数 {#output-parameters}
 
 * 表名
-* 架构
+* 模式
 * recCount
 
 这组三个值可标识重复数据删除产生的目标。 **[!UICONTROL tableName]** 是保存目标标识符的表的名称， **[!UICONTROL schema]** 是群体的模式（通常为nms：recipient）和 **[!UICONTROL recCount]** 是表中的元素数。

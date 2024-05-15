@@ -8,37 +8,37 @@ exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: b4f54deaf35c852012a88d1445268bce9be4e8c1
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
 # 最新版本{#latest-release}
 
-Adobe Campaign 会定期更新。这种定期更新旨在让您掌握最新、最充分的信息，保持环境的安全，并改进您对我们产品的体验。Adobe强烈建议所有客户升级到最新版本。
+Adobe Campaign 会定期更新。这种定期更新旨在让您掌握最新、最充分的信息，保持环境的安全，并改进您对我们产品的体验。Adobe 强烈建议所有客户升级到最新版本。
 
-作为托管云服务用户，您的实例会由 Adobe 通过每个新版本升级。Adobe 将与您联系并升级您的环境。Campaign 客户端控制台&#x200B;**必须升级到与 Campaign 服务器相同的版本**。通过此页面了解如何升级您的客户端控制台 [页面](../start/connect.md#upgrade-ac-console).
+作为托管云服务用户，您的实例会由 Adobe 通过每个新版本升级。Adobe 将与您联系并升级您的环境。Campaign 客户端控制台&#x200B;**必须升级到与 Campaign 服务器相同的版本**。在此[页面](../start/connect.md#upgrade-ac-console)中了解如何升级客户端控制台。
 
-此外，作为客户，请确保您使用的是 [兼容性矩阵](compatibility-matrix.md).
+此外，作为客户，请确保使用的是[兼容性矩阵](compatibility-matrix.md)中列出的最新受支持的系统版本。
 
 ## 版本 8.7.1 {#release-8-7-1}
 
-_2024年5月2日_
+_2024 年 5 月 2 日_
 
 >[!AVAILABILITY]
 >
->此版本位于 **有限可用性** （洛杉矶）。 仅限于迁移的客户 **从Adobe Campaign Standard到Adobe Campaign v8**&#x200B;和无法部署在任何其他环境中。
+>此版本为&#x200B;**有限发布版** (LA)。仅供&#x200B;**从 Adobe Campaign Standard 迁移到 Adobe Campaign v8** 的客户使用，并且不能部署在任何其他环境上。
 >
->作为过渡到Campaign v8的Campaign Standard用户，请参阅 [Campaign Standard过渡到Campaign v8](https://experienceleague.adobe.com/en/docs/campaign-web/v8/release-notes/acs-migration) 和 [面向Campaign Standard用户的功能](https://experienceleague.adobe.com/docs/experience-cloud/campaign/campaign-standard-migration-home.html).
+>作为过渡到 Campaign v8 的 Campaign Standard 用户，请参阅 [Campaign Standard 过渡到 Campaign v8](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/release-notes/acs-migration) 和[面向 Campaign Standard 用户的功能](https://experienceleague.adobe.com/docs/experience-cloud/campaign/campaign-standard-migration-home.html?lang=zh-Hans)。
 
 ### 新增功能 {#new-8-7-1}
 
-* **富推送通知模板**  — 您现在可以通过Android发送富推送通知。 富推送通知是移动通知的一种增强形式，它通过合并多媒体元素（如图像、交互式按钮或其他富媒体内容）而超出简单的文本消息。 [了解更多信息](../send/rich-push.md)
+* **富媒体推送通知模板** - 您现在可以通过 Android 发送富媒体推送通知。富媒体推送通知是移动通知的一种增强形式，它超越了简单的文本消息，融合了图像、交互式按钮或其他富媒体内容等多媒体元素。[了解更多信息](../send/rich-push.md)
 
-* **品牌化**  — 作为Campaign Standard迁移的用户，您的技术管理员现在可以定义一个或多个品牌，以集中处理影响品牌识别的参数。 其中包括品牌徽标、登陆页面访问 URL 的域名或消息跟踪设置。您可以创建这些品牌并将它们链接到消息或登陆页面。 此配置在模板中进行管理。 [了解更多信息](https://experienceleague.adobe.com/docs/experience-cloud/campaign/branding/branding-gs.html)
+* **品牌化** - 作为 Campaign Standard 迁移用户，您的技术管理员现在可以定义一个或多个品牌，以集中处理影响品牌标识的参数。其中包括品牌徽标、登陆页面访问 URL 的域名或消息跟踪设置。您可以创建这些品牌并将它们链接到消息或登陆页面。此配置在模板中进行管理。[了解更多信息](https://experienceleague.adobe.com/docs/experience-cloud/campaign/branding/branding-gs.html?lang=zh-Hans)
 
-* **Rest API**  — 作为Campaign Standard迁移用户，您可以使用Rest API为Adobe Campaign创建集成，并通过将Adobe Campaign与您使用的技术面板连接来构建您自己的生态系统。 [了解更多信息](https://experienceleague.adobe.com/docs/experience-cloud/campaign/apis/get-started-apis.html)
+* **Rest API** - 作为 Campaign Standard 迁移用户，您可以使用 Rest API 为 Adobe Campaign 创建集成，并通过将 Adobe Campaign 与所使用的技术面板连接来构建自己的生态系统。[了解更多信息](https://experienceleague.adobe.com/docs/experience-cloud/campaign/apis/get-started-apis.html?lang=zh-Hans)
 
-* **动态报告**  — 作为Campaign Standard迁移的用户，您可以访问动态报表，其中提供完全可自定义的实时报表以衡量营销活动的影响。 它增加了对用户档案数据的访问权限，从而除了功能电子邮件促销活动数据（如打开数和点击数）之外，还可按用户档案维度（如性别、城市和年龄）进行人口统计分析。 [了解更多信息](https://experienceleague.adobe.com/docs/experience-cloud/campaign/reporting/get-started-reporting.html)
+* **动态报告** - 作为 Campaign Standard 迁移用户，您可以访问动态报告，该功能提供完全可自定义的实时报告来衡量营销活动的影响。它增加了对用户档案数据的访问，除打开数和点击数等功能性电子邮件营销活动数据外，还支持按用户档案维度（如性别、城市和年龄）进行人口统计分析。[了解更多信息](https://experienceleague.adobe.com/docs/experience-cloud/campaign/reporting/get-started-reporting.html?lang=zh-Hans)
 
 <!--
 * **New Enhanced security add-on**: To make your network connection more secure and provide improved security for your resources, Adobe Campaign offers a new Enhanced security add-on, which includes two features: Secure CMK integration and Secure VPN tunneling.
@@ -46,17 +46,18 @@ _2024年5月2日_
 
 ### 兼容性更新 {#comp-8-7-1}
 
-数据库现在支持作为具有Adobe Campaign联合数据访问(FDA)的外部数据库。 请参阅[此页面](compatibility-matrix.md#FederatedDataAccessFDA)以了解详情。
+现在支持将 Databricks 用作 Adobe Campaign 联合数据访问 (FDA) 的外部数据库。请参阅[此页面](compatibility-matrix.md#FederatedDataAccessFDA)以了解详情。
 
 ### 一般改进 {#improvements-8-7-1}
 
-* 多个架构已从32位更改为64位。 这仅适用于从Campaign Standard迁移的客户。 [阅读更多](https://experienceleague.adobe.com/docs/experience-cloud/campaign/technotes/64-bit-tables.html)。
+* 多个架构已从 32 位更改为 64 位。这仅适用于从 Campaign Standard 迁移的客户。[了解更多信息](https://experienceleague.adobe.com/docs/experience-cloud/campaign/technotes/64-bit-tables.html?lang=zh-Hans)。
 
-* 在Campaign表中，通过新标记可处理对lastModified、createdBy-id和createdBy-id属性的修改。 当标记打开时，用户提供给这些属性的值将被忽略。 仅使用来自用户上下文的服务器时间和ID。 当标记关闭时，将使用这些属性的用户提供的值。 ignoreTimestampsID标志位于serverConf.xml中的“共享”节点下。
+* 在 Campaign 表中新增了一个标记，可用于处理对 lastModified、created 和 createdBy-id 属性的修改。打开该标记时，将忽略用户为这些属性提供的值。仅使用来自用户上下文的服务器时间和 ID。关闭该标记时，将使用用户为这些属性提供的值。ignoreTimestampsID 标记位于 serverConf.xml 中的“shared”节点下。
 
 ### 修复 {#fixes-8-7-1}
 
-本发行版中修复了以下问题：NEO-72648、NEO-71534、NEO-71473、NEO-70263、NEO-70195、NEO-69651、NEO-68704、NEO-68192、NEO-67814、NEO-67702、NEO-67620、NEO-66022、NEO-65774、NEO-65633、NEO-64199、NEO-63706、NEO-63705、NEO-63287、NEO-63197、NEO-62575， NEO-60250 60192 58596 58314 58004 40054
+此版本修复了以下问题：
+NEO-72648、NEO-71534、NEO-71473、NEO-70263、NEO-70195、NEO-69651、NEO-68704、NEO-68192、NEO-67814、NEO-67702、NEO-67620、NEO-66022、NEO-65774、NEO-65633、NEO-64199、NEO-63706、NEO-63705、NEO-63287、NEO-63197、NEO-62575、NEO-60250、NEO-60192、NEO-58596、NEO-58314、NEO-58004、NEO-40054
 
 ## 版本 8.6.2 {#release-8-6-2}
 

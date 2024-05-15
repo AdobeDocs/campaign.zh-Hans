@@ -7,7 +7,7 @@ exl-id: 919630ed-b39f-40e5-b893-f3a203713b15
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '401'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -66,6 +66,6 @@ A **订阅服务**-type活动允许您为过渡中指定的群体创建或删除
 ## 输入参数 {#input-parameters}
 
 * 表名
-* 架构
+* 模式
 
 每个入站事件必须指定由这些参数定义的目标。

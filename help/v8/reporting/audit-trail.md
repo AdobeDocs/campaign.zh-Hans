@@ -1,16 +1,17 @@
 ---
 product: campaign
-title: 审核跟踪
+title: 审核记录
 description: 了解如何使用Campaign审核记录监控实例
 feature: Audit Trail, Monitoring, Workflows
-source-git-commit: bb74393f0b24fa5b9781eee15c4527daba527192
+exl-id: 6a937575-42d4-4dc5-8168-43c25bb2cde6
+source-git-commit: b4b361a4aabd1b33554166c2638989b99a02baec
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 2%
 
 ---
 
-# 审核跟踪{#audit-trail}
+# 审核记录{#audit-trail}
 
 此 **[!UICONTROL Audit trail]** Adobe Campaign中的功能提供了对实例中重要实体所做的所有修改的粒度记录，通常是对实例的顺利操作产生重大影响的修改。 作为实时日志，它可以捕获操作和事件发生的详细列表。
 

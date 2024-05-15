@@ -139,7 +139,7 @@ A **投放**-type活动允许您创建投放操作。 它可以使用输入元�
 
 * deliveryId
 * 表名
-* 架构
+* 模式
 
 每个入站事件必须指定由这些参数定义的目标。
 
@@ -158,7 +158,7 @@ A **投放**-type活动允许您创建投放操作。 它可以使用输入元�
 ## 输出参数 {#output-parameters}
 
 * 表名
-* 架构
+* 模式
 * recCount
 
 这组三个值标识从投放产生的目标。 **[!UICONTROL tableName]** 是存储目标标识符的表的名称， **[!UICONTROL schema]** 是群体的模式（通常为nms：recipient）和 **[!UICONTROL recCount]** 是表中的元素数。

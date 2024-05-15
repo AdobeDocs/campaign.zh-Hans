@@ -7,7 +7,7 @@ exl-id: 63b214c7-bbbf-448b-b3af-b3b7a7a5b65c
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
 source-wordcount: '844'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -80,7 +80,7 @@ An **更新数据**-type活动对数据库中的字段执行批量更新。
 
 **[!UICONTROL Generate an outbound transition for the rejects]**
 
-创建一个叫客过渡，其中包含更新后未正确处理的记录（例如，如果存在重复项）。 更新通常标记定向工作流的结尾，因此默认情况下不激活选项。
+创建一个叫客过渡，其中包含更新后未正确处理的记录（例如，如果存在重复项）。 更新通常标志着定位工作流的结束，因此默认情况下不会激活该选项。
 
 ## 更新和合并收藏集 {#updating-and-merging-collections}
 
@@ -121,6 +121,6 @@ An **更新数据**-type活动对数据库中的字段执行批量更新。
 ## 输入参数 {#input-parameters}
 
 * 表名
-* 架构
+* 模式
 
 每个入站事件必须指定由这些参数定义的目标。

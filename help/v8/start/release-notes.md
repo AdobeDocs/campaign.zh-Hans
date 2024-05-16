@@ -5,10 +5,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 166fe487aa169f47f9da86c2990acb1f6dff430e
+source-git-commit: 1f113f63089395269c494a9328d633684977912a
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 97%
+source-wordcount: '898'
+ht-degree: 90%
 
 ---
 
@@ -52,7 +52,7 @@ _2024 年 5 月 2 日_
 
 * 多个架构已从 32 位更改为 64 位。这仅适用于从 Campaign Standard 迁移的客户。[了解更多信息](https://experienceleague.adobe.com/docs/experience-cloud/campaign/technotes/64-bit-tables.html?lang=zh-Hans)。
 
-* 在 Campaign 表中新增了一个标记，可用于处理对 lastModified、created 和 createdBy-id 属性的修改。打开该标记时，将忽略用户为这些属性提供的值。仅使用来自用户上下文的服务器时间和 ID。关闭该标记时，将使用用户为这些属性提供的值。ignoreTimestampsID 标记位于 serverConf.xml 中的“shared”节点下。
+* 在Campaign表中，现在默认按服务器日期和时间填充以下属性： lastModified、created、createdBy-id。 将忽略用户在API调用中提供的值。 可在Campaign服务器配置文件中更改此配置。 作为托管Cloud Service客户，您必须联系Adobe以更改此默认配置。
 
 ### 修复 {#fixes-8-7-1}
 

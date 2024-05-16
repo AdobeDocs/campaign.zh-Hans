@@ -5,10 +5,10 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: 7ea0224f3483221596b9277133516e4624afdabf
+source-git-commit: 5ad40a349df472ace07f124776517c41f4bddc5e
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 99%
+source-wordcount: '612'
+ht-degree: 97%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 99%
    + [探索用户界面](start/campaign-ui.md)
    + [连接到 Campaign](start/connect.md)
    + [组件和流程](start/ac-components.md)
-   + [从 Classic v7 到 v8](start/v7-to-v8.md)
+   + [从Campaign Classicv7到v8](start/v7-to-v8.md)
    + [从 Campaign Standard 到 v8](start/acs-to-v8.md)
    + [常见问题解答](start/campaign-faq.md)
 + Campaign 管理 {#campaigns}
@@ -201,5 +201,7 @@ ht-degree: 99%
       + [更新数据库](dev/update-database-structure.md)
       + [输入表单](dev/forms.md)
    + [Campaign API](dev/api.md)
-+ [Campaign 控制面板 >](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)
-+ [Campaign 自动化指南 >](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=zh-Hans)
++ [Campaign 控制面板 >](https://experienceleague.adobe.com/en/docs/control-panel/using/control-panel-home)
++ [Campaign 自动化指南 >](https://experienceleague.adobe.com/en/docs/campaign/automation/home)
++ [Campaign Web用户界面文档>](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/campaign-web-home)
+

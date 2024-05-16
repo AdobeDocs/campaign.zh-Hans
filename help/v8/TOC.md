@@ -5,9 +5,9 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: 5312045424d74f8aa1eb44b2f40347553d471a12
+source-git-commit: 7ea0224f3483221596b9277133516e4624afdabf
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '605'
 ht-degree: 99%
 
 ---
@@ -35,6 +35,7 @@ ht-degree: 99%
    + [连接到 Campaign](start/connect.md)
    + [组件和流程](start/ac-components.md)
    + [从 Classic v7 到 v8](start/v7-to-v8.md)
+   + [从 Campaign Standard 到 v8](start/acs-to-v8.md)
    + [常见问题解答](start/campaign-faq.md)
 + Campaign 管理 {#campaigns}
    + [活动入门](start/campaigns.md)

@@ -7,9 +7,9 @@ level: Experienced
 hide: true
 hidefromtoc: true
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: 042a1cc96b819a1a77442e274defbadeb393eafc
+source-git-commit: 166fe487aa169f47f9da86c2990acb1f6dff430e
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '743'
 ht-degree: 3%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 3%
 
 ## 安全可靠的客户管理密钥集成 {#secure-cmk-integration}
 
-此 **安全的客户管理密钥(CMK)集成** 允许您通过Amazon Web Services (AWS)帐户使用自己的密钥加密实例和数据。
+此 **安全的客户管理密钥(CMK)集成** 允许您通过Amazon Web Services (AWS)帐户使用自己的密钥加密静态数据。
 
 客户管理的密钥是您在您的AWS帐户中创建、拥有和管理的Key Management Service (KMS)密钥。 您可以完全控制这些KMS密钥，并使用它们来加密和解密数据。 通过让您负责生成和管理加密密钥，此容量使您能够更好地控制密钥，包括撤销密钥。
 

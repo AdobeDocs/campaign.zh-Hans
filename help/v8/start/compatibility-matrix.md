@@ -5,10 +5,10 @@ feature: Release Notes
 role: Admin
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: 1857f0f40d554abededfaa0c1e3dec4b57ca23b7
+source-git-commit: 55c16fe19125ea54035a8f97928484c7baea161b
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 100%
+source-wordcount: '429'
+ht-degree: 95%
 
 ---
 
@@ -57,6 +57,10 @@ ht-degree: 100%
 * **[!DNL Google Big Query]**
 * **[!DNL Snowflake]**
 * **[!DNL Vertica]**
+
+
+>[!AVAILABILITY]
+>此外，使用 [增强的安全附加功能](../config/enhanced-security.md)，您可以通过安全VPN隧道访问内部部署数据库。 [了解详情](../config/enhanced-security.md#vpn-callouts)
 
 ## 移动 SDK {#MobileSDK}
 

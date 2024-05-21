@@ -4,12 +4,10 @@ description: Campaign增强安全性加载项入门
 feature: Configuration
 role: Developer
 level: Experienced
-hide: true
-hidefromtoc: true
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: 166fe487aa169f47f9da86c2990acb1f6dff430e
+source-git-commit: 55c16fe19125ea54035a8f97928484c7baea161b
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '753'
 ht-degree: 3%
 
 ---
@@ -90,7 +88,7 @@ ht-degree: 3%
 
 支持以下三个用例：
 
-* 通过VPN的联合数据访问(FDA)<!--to access your on-premise database from the Campaign instance over VPN-->
+* 通过VPN的联合数据访问(FDA)，用于通过VPN从Campaign实例访问内部部署数据库
 
 * 从胖客户机通过VPN登录实例
 
@@ -117,7 +115,7 @@ ht-degree: 3%
 
 以下护栏和限制适用于与Adobe Campaign v8的VPN隧道集成：
 
-* 目前，仅支持内部部署数据库，例如<!--Richa to check the list with PM-->：
+* 仅支持内部部署数据库，例如<!--Richa to check the list with PM-->：
 
    * MySQL
    * Netezza

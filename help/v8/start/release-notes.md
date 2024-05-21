@@ -5,9 +5,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: b364b557bdf060e022196786a970517056eb2bf7
+source-git-commit: 247d687597c6784aec49b70f9e68f50e49d169dd
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '868'
 ht-degree: 93%
 
 ---
@@ -52,7 +52,7 @@ _2024 年 5 月 2 日_
 
 * 多个架构已从 32 位更改为 64 位。这仅适用于从 Campaign Standard 迁移的客户。[了解更多](https://experienceleague.adobe.com/docs/experience-cloud/campaign/technotes/64-bit-tables.html?lang=zh-Hans){target="_blank"}
 
-* 在Campaign表中，现在默认按服务器日期和时间填充以下属性： lastModified、created、createdBy-id。 将忽略用户在API调用中提供的值。 <!--This configuration can be changed in the Campaign server configuration file. As a Managed Cloud Services customer, you must reach out to Adobe to change this default configuration.-->
+* 在Campaign表中，现在默认按服务器日期和时间填充以下属性： `lastModified` 和 `created`. 将忽略用户在API调用中提供的值。 <!--This configuration can be changed in the Campaign server configuration file. As a Managed Cloud Services customer, you must reach out to Adobe to change this default configuration.-->
 
 ### 修复 {#fixes-8-7-1}
 

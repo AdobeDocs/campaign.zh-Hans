@@ -5,10 +5,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 247d687597c6784aec49b70f9e68f50e49d169dd
+source-git-commit: b280be52621890c9bd840182d3ad0389912568d4
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 93%
+source-wordcount: '1035'
+ht-degree: 78%
 
 ---
 
@@ -40,19 +40,23 @@ _2024 年 5 月 2 日_
 
 * **动态报告** - 作为 Campaign Standard 迁移用户，您可以访问动态报告，该功能提供完全可自定义的实时报告来衡量营销活动的影响。它增加了对用户档案数据的访问，除打开数和点击数等功能性电子邮件营销活动数据外，还支持按用户档案维度（如性别、城市和年龄）进行人口统计分析。[了解更多](https://experienceleague.adobe.com/docs/experience-cloud/campaign/reporting/get-started-reporting.html?lang=zh-Hans){target="_blank"}
 
-<!--
-* **New Enhanced security add-on**: To make your network connection more secure and provide improved security for your resources, Adobe Campaign offers a new Enhanced security add-on, which includes two features: Secure CMK integration and Secure VPN tunneling.
--->
+* **新的增强安全性加载项**：为了使网络连接更安全并为资源提供更好的安全性，Adobe Campaign提供了新的增强安全性附加功能，其中包括两项功能：安全CMK集成和安全VPN隧道。 [了解更多信息](../config/enhanced-security.md)
+
 
 ### 兼容性更新 {#comp-8-7-1}
 
-现在支持将 Databricks 用作 Adobe Campaign 联合数据访问 (FDA) 的外部数据库。请参阅[此页面](compatibility-matrix.md#FederatedDataAccessFDA)以了解详情。
+* 现在支持将 Databricks 用作 Adobe Campaign 联合数据访问 (FDA) 的外部数据库。请参阅[此页面](compatibility-matrix.md#FederatedDataAccessFDA)以了解详情。
+
+* 从此版本开始，随着Adobe弃用服务帐户(JWT)凭据，Campaign与Adobe解决方案和应用程序的出站集成现在依赖于OAuth服务器到服务器凭据。 Adobe将为出站集成执行JWT到OAuth的迁移，例如Campaign-Analytics集成或Experience Cloud Triggers集成。
+
+  如果您已实施与Campaign的入站集成，则必须迁移技术帐户，如中所述 [本文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"}. 现有服务帐户(JWT)凭据将继续工作，直到 **2025年1月27日**. 此外，开发人员控制台将继续支持创建新的服务帐户(JWT)凭据，直到 **2024年6月3日**. 在此日期之后，无法创建新的服务帐户(JWT)凭据或将其添加到项目中。
+
 
 ### 一般改进 {#improvements-8-7-1}
 
 * 多个架构已从 32 位更改为 64 位。这仅适用于从 Campaign Standard 迁移的客户。[了解更多](https://experienceleague.adobe.com/docs/experience-cloud/campaign/technotes/64-bit-tables.html?lang=zh-Hans){target="_blank"}
 
-* 在Campaign表中，现在默认按服务器日期和时间填充以下属性： `lastModified` 和 `created`. 将忽略用户在API调用中提供的值。 <!--This configuration can be changed in the Campaign server configuration file. As a Managed Cloud Services customer, you must reach out to Adobe to change this default configuration.-->
+* 在Campaign表中，现在默认按服务器日期和时间填充以下属性： `lastModified` 和 `created`. 此 `createdBy-id` 默认情况下，属性值现在使用当前登录ID填充。 将忽略用户在API调用中提供的值。 <!--This configuration can be changed in the Campaign server configuration file. As a Managed Cloud Services customer, you must reach out to Adobe to change this default configuration.-->
 
 ### 修复 {#fixes-8-7-1}
 

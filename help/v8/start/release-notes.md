@@ -8,7 +8,7 @@ exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: b280be52621890c9bd840182d3ad0389912568d4
 workflow-type: tm+mt
 source-wordcount: '1035'
-ht-degree: 78%
+ht-degree: 84%
 
 ---
 
@@ -28,17 +28,17 @@ _2024 年 5 月 2 日_
 >
 >此版本为&#x200B;**有限发布版** (LA)。仅供&#x200B;**从 Adobe Campaign Standard 迁移到 Adobe Campaign v8** 的客户使用，并且不能部署在任何其他环境上。
 >
->作为正在过渡到Campaign v8的Campaign Standard用户，请在中了解有关此过渡的更多信息 [Campaign v8 Web用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/release-notes/acs-migration){target="_blank"}.
+>作为正在过渡到 Campaign v8 的 Campaign Standard 用户，请在 [Campaign v8 Web 用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/release-notes/acs-migration){target="_blank"}中了解有关此过渡的更多信息。
 
 ### 新增功能 {#new-8-7-1}
 
 * **富媒体推送通知模板** - 您现在可以通过 Android 发送富媒体推送通知。富媒体推送通知是移动通知的一种增强形式，它超越了简单的文本消息，融合了图像、交互式按钮或其他富媒体内容等多媒体元素。[了解更多信息](../send/rich-push.md)。
 
-* **品牌化** - 作为 Campaign Standard 迁移用户，您的技术管理员现在可以定义一个或多个品牌，以集中处理影响品牌标识的参数。其中包括品牌徽标、登陆页面访问 URL 的域名或消息跟踪设置。您可以创建这些品牌并将它们链接到消息或登陆页面。此配置在模板中进行管理。[了解更多](https://experienceleague.adobe.com/docs/experience-cloud/campaign/branding/branding-gs.html?lang=zh-Hans){target="_blank"}
+* **品牌化** - 作为 Campaign Standard 迁移用户，您的技术管理员现在可以定义一个或多个品牌，以集中处理影响品牌标识的参数。其中包括品牌徽标、登陆页面访问 URL 的域名或消息跟踪设置。您可以创建这些品牌并将它们链接到消息或登陆页面。此配置在模板中进行管理。[了解更多信息](https://experienceleague.adobe.com/docs/experience-cloud/campaign/branding/branding-gs.html?lang=zh-Hans){target="_blank"}
 
-* **Rest API** - 作为 Campaign Standard 迁移用户，您可以使用 Rest API 为 Adobe Campaign 创建集成，并通过将 Adobe Campaign 与所使用的技术面板连接来构建自己的生态系统。[了解更多](https://experienceleague.adobe.com/docs/experience-cloud/campaign/apis/get-started-apis.html?lang=zh-Hans){target="_blank"}
+* **Rest API** - 作为 Campaign Standard 迁移用户，您可以使用 Rest API 为 Adobe Campaign 创建集成，并通过将 Adobe Campaign 与所使用的技术面板连接来构建自己的生态系统。[了解更多信息](https://experienceleague.adobe.com/docs/experience-cloud/campaign/apis/get-started-apis.html?lang=zh-Hans){target="_blank"}
 
-* **动态报告** - 作为 Campaign Standard 迁移用户，您可以访问动态报告，该功能提供完全可自定义的实时报告来衡量营销活动的影响。它增加了对用户档案数据的访问，除打开数和点击数等功能性电子邮件营销活动数据外，还支持按用户档案维度（如性别、城市和年龄）进行人口统计分析。[了解更多](https://experienceleague.adobe.com/docs/experience-cloud/campaign/reporting/get-started-reporting.html?lang=zh-Hans){target="_blank"}
+* **动态报告** - 作为 Campaign Standard 迁移用户，您可以访问动态报告，该功能提供完全可自定义的实时报告来衡量营销活动的影响。它增加了对用户档案数据的访问，除打开数和点击数等功能性电子邮件营销活动数据外，还支持按用户档案维度（如性别、城市和年龄）进行人口统计分析。[了解更多信息](https://experienceleague.adobe.com/docs/experience-cloud/campaign/reporting/get-started-reporting.html?lang=zh-Hans){target="_blank"}
 
 * **新的增强安全性加载项**：为了使网络连接更安全并为资源提供更好的安全性，Adobe Campaign提供了新的增强安全性附加功能，其中包括两项功能：安全CMK集成和安全VPN隧道。 [了解更多信息](../config/enhanced-security.md)
 
@@ -54,9 +54,9 @@ _2024 年 5 月 2 日_
 
 ### 一般改进 {#improvements-8-7-1}
 
-* 多个架构已从 32 位更改为 64 位。这仅适用于从 Campaign Standard 迁移的客户。[了解更多](https://experienceleague.adobe.com/docs/experience-cloud/campaign/technotes/64-bit-tables.html?lang=zh-Hans){target="_blank"}
+* 多个架构已从 32 位更改为 64 位。这仅适用于从 Campaign Standard 迁移的客户。[了解更多信息](https://experienceleague.adobe.com/docs/experience-cloud/campaign/technotes/64-bit-tables.html?lang=zh-Hans){target="_blank"}
 
-* 在Campaign表中，现在默认按服务器日期和时间填充以下属性： `lastModified` 和 `created`. 此 `createdBy-id` 默认情况下，属性值现在使用当前登录ID填充。 将忽略用户在API调用中提供的值。 <!--This configuration can be changed in the Campaign server configuration file. As a Managed Cloud Services customer, you must reach out to Adobe to change this default configuration.-->
+* 在 Campaign 表中，现在默认按服务器日期和时间填充以下属性：`lastModified` 和 `created`。此 `createdBy-id` 默认情况下，属性值现在使用当前登录ID填充。 将忽略用户在 API 调用中提供的值。<!--This configuration can be changed in the Campaign server configuration file. As a Managed Cloud Services customer, you must reach out to Adobe to change this default configuration.-->
 
 ### 修复 {#fixes-8-7-1}
 

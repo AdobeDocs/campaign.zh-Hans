@@ -5,9 +5,9 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 52863e9cb3b9ccf03c8e2b838827af862b30e3b9
+source-git-commit: 070aa96187c5654e40665cb5b23329d3f7d508d6
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '1193'
 ht-degree: 8%
 
 ---
@@ -48,6 +48,8 @@ ht-degree: 8%
 
 要平衡负荷，您可以将投放分为多个批。 配置批次数量及其相对于整个投放的比例。
 
+### 启用批次 {#enable-waves}
+
 要定义波段，请执行以下步骤：
 
 1. 打开投放属性并浏览到 **[!UICONTROL Delivery]** 选项卡。
@@ -55,26 +57,27 @@ ht-degree: 8%
 
    ![](assets/delivery-define-waves.png)
 
+### 配置批次 {#config-waves}
 
-1. 配置批次，如下所述。
+>[!NOTE]
+>
+>您只能定义两个连续波形之间的大小和延迟。 无法配置每个波次的收件人选择标准。
 
-   >[!NOTE]
-   >
-   >您只能定义两个连续波形之间的大小和延迟。 无法配置每个波次的收件人选择标准。
+您可以定义每个批次的大小，或将其添加到日历中。
 
-您可以定义：
+* **定义每个波次的大小**. 例如，如果您输入 **[!UICONTROL 30%]** 在相应的字段中，每个波次将代表投放中所包含报文的30%，但最后一条代表10%的报文。
 
-    * **每个波段的大小**。 例如，如果输入**[!UICONTROL 30%]**在相应字段中，每个波次将代表投放中所包含报文的30%，但最后一条代表10%的报文。
-    
-    在**中[!UICONTROL Period]**字段，指定两个连续批次开始之间的延迟。 例如，如果输入**[!UICONTROL 2d]**时，第一波立即开始，第二波在两天内开始，第三波在四天内开始，以此类推。
-    
-    ！[](assets/delivery-waves-size.png)
-    
-    * **发送每个波次的日历**。  例如，第一波表示投放中包含的消息总数的25%，将立即开始。 接下来的两个批次将完成投放，并设置为以六小时间隔开始。
-    
-    在**中[!UICONTROL Start]**列中，指定两个连续批次开始之间的延迟。 在**中[!UICONTROL Size]**列中，输入固定数字或百分比。
-    
-    ！[](assets/delivery-waves-calendar.png)
+  在 **[!UICONTROL Period]** 字段，指定两个连续批次开始之间的延迟。 例如，如果您输入 **[!UICONTROL 2d]**，第一波立即开始，第二波在两天内开始，第三波在四天内开始，以此类推。
+
+  ![](assets/delivery-waves-size.png)
+
+* **定义发送每个波次的日历**.  例如，第一波表示投放中包含的消息总数的25%，将立即开始。 接下来的两个批次将完成投放，并设置为以六小时间隔开始。
+
+  在 **[!UICONTROL Start]** 列，指定两个连续批次开始之间的延迟。 在 **[!UICONTROL Size]** 列中，输入固定数字或百分比。
+
+  ![](assets/delivery-waves-calendar.png)
+
+### 波动计划检查 {#check-waves}
 
 特定的分类规则， **[!UICONTROL Wave scheduling check]**，确保最后一个波次的计划时间早于投放有效期限。 营销活动类型及其规则，配置于 **[!UICONTROL Typology]** 的选项卡中显示 [本节](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->.
 
@@ -84,9 +87,14 @@ ht-degree: 8%
 >
 >在配置最后批次时，还必须为重试设置足够的时间。 了解有关重试的详细信息 [本节](delivery-failures.md#retries).
 
+### 监测批次 {#monitor-waves}
+
 要监控您的发送，请浏览到投放日志。 请参阅 [此页面](send.md)
 
 您可以看到已在已处理批次中发送的投放(**[!UICONTROL Sent]** 状态)和要在剩余批次中发送的投放(**[!UICONTROL Pending]** 状态)。
+
+
+### 批次样本 {#samples-waves}
 
 以下两个示例是使用多个批次的最常见用例。
 

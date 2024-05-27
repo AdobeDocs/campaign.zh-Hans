@@ -5,14 +5,16 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
+source-git-commit: 52863e9cb3b9ccf03c8e2b838827af862b30e3b9
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 9%
+source-wordcount: '1178'
+ht-degree: 8%
 
 ---
 
 # 配置和发送投放 {#configure-delivery}
+
+访问投放参数以配置更多设置并定义消息发送方式。 您可以定义投放 [优先级](#delivery-priority)，设置 [批次](#sending-using-multiple-waves)，并测试您的投放发送。 完成此配置后，您可以按照中的说明确认发送 [本节](#confirm-delivery). 然后，将立即发送消息或根据投放发送消息 [计划](#schedule-delivery-sending).
 
 ## 设置其他参数 {#delivery-additional-parameters}
 
@@ -20,25 +22,27 @@ ht-degree: 9%
 
 ![](assets/delivery-properties-delivery.png)
 
-* **[!UICONTROL Delivery priority]**：使用此选项可通过从设置投放的优先级来更改其发送顺序 **[!UICONTROL Very low]** 到 **[!UICONTROL Very high]** (默认值为 **[!UICONTROL Normal]**)。
+### 投放优先级 {#delivery-priority}
 
-* **[!UICONTROL Message batch quantity]**：使用此选项可定义在同一个XML投放包中分组的消息数。 如果参数设置为0，则消息将自动分组。 程序包大小由计算定义 `<delivery size>/1024`，则每个包最少8条消息，最多256条消息。
+使用 **[!UICONTROL Delivery priority]** 选项可通过以下方式设置投放的优先级，以更改投放的发送顺序： **[!UICONTROL Very low]** 到 **[!UICONTROL Very high]** (默认值为 **[!UICONTROL Normal]**)。
 
-  >[!IMPORTANT]
-  >
-  >通过复制现有投放创建投放时，此参数会重置。
+### 批次数量
 
-* **[!UICONTROL Send using multiple waves]**：使用此选项可分批发送消息，而不是一次发送给整个受众。 [了解详情](#sending-using-multiple-waves)。
+使用  **[!UICONTROL Message batch quantity]** 用于定义在同一个XML投放包中分组的消息数的选项。 如果参数设置为0，则消息将自动分组。 程序包大小由计算定义 `<delivery size>/1024`，则每个包最少8条消息，最多256条消息。
 
-* **[!UICONTROL Test SMTP delivery]**：使用此选项测试通过SMTP进行的发送。 处理投放直至连接到 SMTP 服务器，但不发送：对于投放的每个收件人，Campaign 连接到 SMTP 提供商服务器，执行 SMTP RCPT TO 命令，并在执行 SMTP DATA 命令之前关闭连接。
+>[!IMPORTANT]
+>
+>通过复制现有投放创建投放时，此参数会重置。
 
-  >[!NOTE]
-  >
-  >* 不得在中间源中设置此选项。
-  >
-  >* 在中了解有关SMTP服务器配置的更多信息 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html#smtp-relay){target="_blank"}.
+### 测试投放发送
 
-* **[!UICONTROL Email BCC]**：使用此选项可以通过密件抄送在外部系统上存储电子邮件，只需将密件抄送电子邮件地址添加到消息目标即可。 [了解详情](email-parameters.md)。
+使用  **[!UICONTROL Test SMTP delivery]** 用于测试通过SMTP发送的选项。 处理投放直至连接到 SMTP 服务器，但不发送：对于投放的每个收件人，Campaign 连接到 SMTP 提供商服务器，执行 SMTP RCPT TO 命令，并在执行 SMTP DATA 命令之前关闭连接。
+
+>[!NOTE]
+>
+>* 不得在中间源中设置此选项。
+>
+>* 在中了解有关SMTP服务器配置的更多信息 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html#smtp-relay){target="_blank"}.
 
 ## 使用多批次发送 {#sending-using-multiple-waves}
 

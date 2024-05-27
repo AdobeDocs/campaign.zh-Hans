@@ -5,9 +5,9 @@ description: 供应商、库存和预算
 feature: Budget Management, Campaigns
 role: User
 exl-id: 1d4a98e6-af11-4645-864e-29aa5766d9d8
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1830'
 ht-degree: 1%
 
 ---
@@ -24,9 +24,9 @@ Adobe Campaign允许您定义将参与在营销活动中执行的作业的服务
 
 在投放期间执行的作业由服务提供商执行，特别是对于直邮和移动渠道。 例如，这些服务提供商可以参与打印或分发消息。 这些作业涉及特定于每个服务提供商的配置和成本。 服务提供商的配置涉及四个阶段：
 
-1. 在Adobe Campaign中创建服务提供商。 [了解详情](#add-a-service-provider)
+1. 在Adobe Campaign中创建服务提供商。 [了解更多信息](#add-a-service-provider)
 
-1. 定义关联服务模板的成本类别和结构。 [了解详情](#define-cost-categories)
+1. 定义关联服务模板的成本类别和结构。 [了解更多信息](#define-cost-categories)
 
 1. 进程的配置。 [了解详情](#configure-processes-associated-with-a-service)。
 
@@ -148,7 +148,7 @@ Adobe Campaign允许您定义将参与在营销活动中执行的作业的服务
 
   ![](assets/supplier-mail-delivery-select.png)
 
-* 对于通过移动渠道或电话投放，将应用相同的选择模式。
+* 对于移动渠道上的投放，将应用相同的选择模式。
 * 对于电子邮件投放，服务将从 **[!UICONTROL Advanced]** 选项卡，如以下示例所示：
 
   ![](assets/supplier-email-delivery-select.png)

@@ -5,14 +5,16 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: fb0b7dbeae1d083935da91bbe50a711ce5f47b7e
+source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1319'
 ht-degree: 29%
 
 ---
 
-# 消息入门{#gs-ac-audiences}
+# 消息入门 {#gs-ac-audiences}
+
+## 投放渠道 {#gs-ac-channels}
 
 借助 Adobe Campaign，您可以发送跨渠道活动内容，包括电子邮件、短信、推送通知和直邮，并使用各种专门的报告衡量其有效性。这些消息通过投放设计和发送，并且可以针对每个收件人进行个性化。
 
@@ -35,7 +37,7 @@ Adobe Campaign v8 附带以下投放渠道：
   >
   >可用渠道的数量取决于您的合同。 请核实您的许可协议。
 
-## 选择您的渠道{#gs-channel}
+## 选择您的渠道 {#gs-channel}
 
 ### 电子邮件渠道 {#gs-channel-email}
 

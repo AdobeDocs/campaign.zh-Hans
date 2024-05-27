@@ -5,9 +5,9 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 3e95a56825a143a4457ab7ee242208d7daaeb414
+source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1160'
 ht-degree: 9%
 
 ---
@@ -44,42 +44,45 @@ ht-degree: 9%
 
 要平衡负荷，您可以将投放分为多个批。 配置批次数量及其相对于整个投放的比例。
 
->[!NOTE]
->
->您只能定义两个连续波形之间的大小和延迟。 无法配置每个波次的收件人选择标准。
+要定义波段，请执行以下步骤：
 
-1. 打开投放属性窗口，然后单击 **[!UICONTROL Delivery]** 选项卡。
-1. 选择 **[!UICONTROL Send using multiple waves]** 选项，然后单击 **[!UICONTROL Define waves...]** 链接。
+1. 打开投放属性并浏览到 **[!UICONTROL Delivery]** 选项卡。
+1. 启用 **[!UICONTROL Send using multiple waves]** 选项，然后单击 **[!UICONTROL Define waves...]** 链接。
 
    ![](assets/delivery-define-waves.png)
 
-1. 要配置批次，您可以：
 
-   * 定义每个波次的大小。 例如，如果您输入 **[!UICONTROL 30%]** 在相应的字段中，每个波次将代表投放中所包含报文的30%，但最后一条代表10%的报文。
+1. 配置批次，如下所述。
 
-     在 **[!UICONTROL Period]** 字段，指定两个连续批次开始之间的延迟。 例如，如果您输入 **[!UICONTROL 2d]**，第一波立即开始，第二波在两天内开始，第三波在四天内开始，以此类推。
-
-     ![](assets/delivery-waves-size.png)
-
-   * 定义发送每个波次的日历。
-
-     在 **[!UICONTROL Start]** 列，指定两个连续批次开始之间的延迟。 在 **[!UICONTROL Size]** 列中，输入固定数字或百分比。
-
-     在下面的示例中，第一波表示投放中包含的消息总数的25%，将立即启动。 接下来的两个批次将完成投放，并设置为以六小时间隔开始。
-
-     ![](assets/delivery-waves-calendar.png)
-
-   特定的分类规则， **[!UICONTROL Wave scheduling check]**，确保最后一个波次的计划时间早于投放有效期限。 营销活动类型及其规则，配置于 **[!UICONTROL Typology]** 的选项卡中显示 [本节](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->.
-
-   >[!IMPORTANT]
+   >[!NOTE]
    >
-   >确保最后批次不超过投放截止日期，投放截止日期在中定义 **[!UICONTROL Validity]** 选项卡。 否则，某些消息可能不会发送。
-   >
-   >在配置最后批次时，还必须留出足够的时间进行重试。 <!--See [this section]().-->
+   >您只能定义两个连续波形之间的大小和延迟。 无法配置每个波次的收件人选择标准。
 
-1. 要监控您的发送，请转到投放日志。 请参阅[此页](send.md)<!--ref TBC-->。
+您可以定义：
 
-   您可以看到已在已处理批次中发送的投放(**[!UICONTROL Sent]** 状态)和要在剩余批次中发送的投放(**[!UICONTROL Pending]** 状态)。
+    * **每个波段的大小**。 例如，如果输入**[!UICONTROL 30%]**在相应字段中，每个波次将代表投放中所包含报文的30%，但最后一条代表10%的报文。
+    
+    在**中[!UICONTROL Period]**字段，指定两个连续批次开始之间的延迟。 例如，如果输入**[!UICONTROL 2d]**时，第一波立即开始，第二波在两天内开始，第三波在四天内开始，以此类推。
+    
+    ！[](assets/delivery-waves-size.png)
+    
+    * **发送每个波次的日历**。  例如，第一波表示投放中包含的消息总数的25%，将立即开始。 接下来的两个批次将完成投放，并设置为以六小时间隔开始。
+    
+    在**中[!UICONTROL Start]**列中，指定两个连续批次开始之间的延迟。 在**中[!UICONTROL Size]**列中，输入固定数字或百分比。
+    
+    ！[](assets/delivery-waves-calendar.png)
+
+特定的分类规则， **[!UICONTROL Wave scheduling check]**，确保最后一个波次的计划时间早于投放有效期限。 营销活动类型及其规则，配置于 **[!UICONTROL Typology]** 的选项卡中显示 [本节](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->.
+
+>[!IMPORTANT]
+>
+>确保最后批次不超过投放截止日期，投放截止日期在中定义 **[!UICONTROL Validity]** 选项卡。 否则，某些消息可能不会发送。 在中了解有关投放有效期的更多信息 [本节](delivery-failures.md#valid-period).
+>
+>在配置最后批次时，还必须为重试设置足够的时间。 了解有关重试的详细信息 [本节](delivery-failures.md#retries).
+
+要监控您的发送，请浏览到投放日志。 请参阅 [此页面](send.md)
+
+您可以看到已在已处理批次中发送的投放(**[!UICONTROL Sent]** 状态)和要在剩余批次中发送的投放(**[!UICONTROL Pending]** 状态)。
 
 以下两个示例是使用多个批次的最常见用例。
 
@@ -93,11 +96,11 @@ ht-degree: 9%
 
   ![](assets/delivery-waves-ex-ramp-up.png)
 
-* **涉及呼叫中心的营销活动**
+* **具有呼叫中心的营销活动**
 
-  在管理电话忠诚度促销活动时，贵组织处理致电订阅者的能力有限。
+  通过电话管理忠诚度促销活动时，贵组织处理致电订阅者的能力有限。
 
-  使用批次，您可以将每天的消息数量限制为20，这是呼叫中心的每日处理能力。
+  使用批次，您可以将消息数量限制为每天20条，例如，考虑呼叫中心的每日处理能力。
 
   要执行此操作，请选择 **[!UICONTROL Schedule multiple waves of the same size]** 选项。 输入 **[!UICONTROL 20]** 因为波浪的大小和 **[!UICONTROL 1d]** 在 **[!UICONTROL Period]** 字段。
 
@@ -112,7 +115,7 @@ ht-degree: 9%
 1. 单击 **[!UICONTROL Send]**&#x200B;中，选择所需的操作。
 
    * 要立即发送投放，请选择 [**尽快投放**].
-   * 要安排在以后的日期发送，请选择 **[!UICONTROL Postpone the delivery]**. [了解详情](#schedule-delivery-sending)
+   * 要安排在以后的日期发送，请选择 **[!UICONTROL Postpone the delivery]**. [了解更多信息](#schedule-delivery-sending)
 
 1. 单击 **[!UICONTROL Analyze]**。有关更多信息，请参阅[此小节](delivery-analysis.md)。
 

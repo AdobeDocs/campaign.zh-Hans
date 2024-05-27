@@ -5,7 +5,7 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: d6160d927601f66f450553a6dd6f91d74b0b1104
+source-git-commit: fb0b7dbeae1d083935da91bbe50a711ce5f47b7e
 workflow-type: tm+mt
 source-wordcount: '1317'
 ht-degree: 29%
@@ -114,7 +114,7 @@ A **连续投放** 在工作流上下文中可用。 它可让您向现有投放
 
 例如，如果您每月运行一次此类活动，那么一年后您将只运行一次投放（前提是您未对投放进行任何更改）。
 
-连续投放是通过在工作流中创建的 [连续投放活动](../../automation/workflow/contin).
+连续投放是通过在工作流中创建的 [连续投放活动](../../automation/workflow/continuous-delivery.md).
 
 
 ## 选择发送消息的方式{#gs-send-msg}

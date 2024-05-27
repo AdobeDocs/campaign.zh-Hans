@@ -5,7 +5,7 @@ description: 了解有关投放类型工作流活动的更多信息
 feature: Workflows, Channels Activity
 role: User
 exl-id: 58574983-86c7-46f5-b41b-bae90171048d
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: d6160d927601f66f450553a6dd6f91d74b0b1104
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 1%
@@ -13,8 +13,6 @@ ht-degree: 1%
 ---
 
 # 投放{#delivery}
-
-
 
 A **投放**-type活动允许您创建投放操作。 它可以使用输入元素来构建。
 

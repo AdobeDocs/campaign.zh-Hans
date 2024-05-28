@@ -5,10 +5,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 306d827883a0c3a15fd52b8c9fb566d028f22360
+source-git-commit: 607ef2ab8f1f1c7400451019e188c70f8c7d6091
 workflow-type: tm+mt
-source-wordcount: '1183'
-ht-degree: 73%
+source-wordcount: '1178'
+ht-degree: 74%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Campaign 会定期更新。这种定期更新旨在让您掌握最新、�
 
 _2024年5月28日_
 
-### 从服务帐户(JWT)凭据迁移到OAuth服务器到服务器凭据  {#change-8-5-3}
+### 迁移到OAuth服务器到服务器凭据 {#change-8-5-3}
 
 * 从此版本开始，随着Adobe弃用服务帐户(JWT)凭据，Campaign与Adobe解决方案和应用程序的出站集成现在依赖于OAuth服务器到服务器凭据。 Adobe将为出站集成执行JWT到OAuth的迁移，例如Campaign-Analytics集成或Experience Cloud Triggers集成。
 

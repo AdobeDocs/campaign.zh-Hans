@@ -5,10 +5,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 607ef2ab8f1f1c7400451019e188c70f8c7d6091
+source-git-commit: 8621ad138d90fed92788d1b9753adeb2fe772a71
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 74%
+source-wordcount: '1097'
+ht-degree: 79%
 
 ---
 
@@ -26,10 +26,7 @@ _2024年5月28日_
 
 ### 迁移到OAuth服务器到服务器凭据 {#change-8-5-3}
 
-* 从此版本开始，随着Adobe弃用服务帐户(JWT)凭据，Campaign与Adobe解决方案和应用程序的出站集成现在依赖于OAuth服务器到服务器凭据。 Adobe将为出站集成执行JWT到OAuth的迁移，例如Campaign-Analytics集成或Experience Cloud Triggers集成。
-
-  如果您已实施与Campaign的入站集成，则必须迁移技术帐户，如中所述 [本文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"}. 现有服务帐户(JWT)凭据将继续工作，直到 **2025年1月27日**. 此外，开发人员控制台将继续支持创建新的服务帐户(JWT)凭据，直到 **2024年6月3日**. 在此日期之后，无法创建新的服务帐户(JWT)凭据或将其添加到项目中。
-
+从此版本开始，随着Adobe弃用服务帐户(JWT)凭据，Campaign与Adobe解决方案和应用程序的出站集成现在依赖于OAuth服务器到服务器凭据。 [了解详情](#change-8-7-1)
 
 ### 修复 {#fixes-8-5-3}
 
@@ -62,9 +59,11 @@ _2024 年 5 月 2 日_
 
 * 现在支持将 Databricks 用作 Adobe Campaign 联合数据访问 (FDA) 的外部数据库。请参阅[此页面](compatibility-matrix.md#FederatedDataAccessFDA)以了解详情。
 
-* 从此版本开始，随着Adobe弃用服务帐户(JWT)凭据，Campaign与Adobe解决方案和应用程序的出站集成现在依赖于OAuth服务器到服务器凭据。 Adobe将为出站集成执行JWT到OAuth的迁移，例如Campaign-Analytics集成或Experience Cloud Triggers集成。
+### 迁移到OAuth服务器到服务器凭据 {#change-8-7-1}
 
-  如果您已实施与Campaign的入站集成，则必须迁移技术帐户，如中所述 [本文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"}. 现有服务帐户(JWT)凭据将继续工作，直到 **2025年1月27日**. 此外，开发人员控制台将继续支持创建新的服务帐户(JWT)凭据，直到 **2024年6月3日**. 在此日期之后，无法创建新的服务帐户(JWT)凭据或将其添加到项目中。
+从此版本开始，随着Adobe弃用服务帐户(JWT)凭据，Campaign与Adobe解决方案和应用程序的出站集成现在依赖于OAuth服务器到服务器凭据。 Adobe将为出站集成执行JWT到OAuth的迁移，例如Campaign-Analytics集成或Experience Cloud Triggers集成。
+
+如果您已实施与Campaign的入站集成，则必须迁移技术帐户，如中所述 [本文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"}. 现有服务帐户(JWT)凭据将继续工作，直到 **2025年1月27日**. 此外，开发人员控制台将继续支持创建新的服务帐户(JWT)凭据，直到 **2024年6月3日**. 在此日期之后，无法创建新的服务帐户(JWT)凭据或将其添加到项目中。
 
 
 ### 一般改进 {#improvements-8-7-1}

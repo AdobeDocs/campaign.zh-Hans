@@ -2,10 +2,8 @@
 title: Campaign v8 2022 发行说明
 description: 2022 Campaign v8 版本的功能和改进列表
 feature: Release Notes
-role: User
-level: Beginner
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
-source-git-commit: 43994eb29af2b85272de0ce4dc34cc66aba2e04a
+source-git-commit: 4fecae16b2db0f174de6d77acf5b846906073aeb
 workflow-type: tm+mt
 source-wordcount: '1919'
 ht-degree: 92%

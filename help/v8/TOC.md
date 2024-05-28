@@ -5,9 +5,9 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: 338432b41276317f1f07a92f0106e20177b5becd
+source-git-commit: 41ba91fca46747760fc42ea6cd78600abbd74c02
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '613'
 ht-degree: 99%
 
 ---
@@ -201,6 +201,7 @@ ht-degree: 99%
       + [使用自定义收件人表格](dev/custom-recipient.md)
       + [更新数据库](dev/update-database-structure.md)
       + [输入表单](dev/forms.md)
+   + [使用数据包](dev/packages.md)
    + [Campaign API](dev/api.md)
 + [Campaign 控制面板 >](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/control-panel-home)
 + [Campaign 自动化指南 >](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/home)

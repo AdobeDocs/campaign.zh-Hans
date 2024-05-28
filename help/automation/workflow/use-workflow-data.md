@@ -3,9 +3,9 @@ title: 使用工作流数据
 description: 了解如何使用工作流数据
 feature: Workflows, Data Management
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
-source-git-commit: 34af97ae01f7dba418fd0a8c950fc549dfbbd98b
+source-git-commit: 41ba91fca46747760fc42ea6cd78600abbd74c02
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '705'
 ht-degree: 8%
 
 ---
@@ -42,9 +42,9 @@ ht-degree: 8%
 
 * **[!UICONTROL Analyze target...]**
 
-  通过此菜单，您可以访问描述性分析向导，该向导允许您生成有关过渡数据的统计和报告。
+  使用此菜单可访问描述性分析向导，该向导允许您生成有关过渡数据的统计和报告。
 
-  有关详细信息，请参见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=zh-Hans){target="_blank"}.
+  了解如何在中使用描述性分析向导 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=zh-Hans){target="_blank"}.
 
 在执行工作流时清除目标数据。 只能访问最后一个工作表。 您可以配置工作流，使所有工作表保持可访问状态：选中 **[!UICONTROL Keep the result of interim populations between two executions]** 选项。
 

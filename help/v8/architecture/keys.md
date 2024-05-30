@@ -5,7 +5,7 @@ feature: Configuration, FFDA
 role: Developer
 level: Intermediate
 exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 202a0553f0c736086eca993b9647737732f57d07
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 3%
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # 密钥管理和唯一性 {#key-management}
 
-在上下文中 [企业(FFDA)部署](enterprise-deployment.md)，主键是通用唯一标识符(UUID)，它是一个字符串。 要创建此UUID，架构的主元素必须包含 **autouid** 和 **autopk** 属性设置为 **true**.
+在上下文中 [企业(FFDA)部署](enterprise-deployment.md)，主键是一个通用唯一标识符(UUID)，它是一个字符串。 要创建此UUID，架构的主元素必须包含 **autouid** 和 **autopk** 属性设置为 **true**.
 
 Adobe Campaign v8用途 [!DNL Snowflake] 作为核心数据库。 的分布式架构 [!DNL Snowflake] 数据库不提供机制来确保表中密钥的唯一性：最终用户负责Adobe Campaign数据库中的密钥一致性。
 

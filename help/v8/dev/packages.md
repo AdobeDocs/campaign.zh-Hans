@@ -4,7 +4,7 @@ description: 使用数据包
 feature: Data Management, Package Export/Import
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 933c266febdc293dccdf9b7383d94d7a5dce22bc
+source-git-commit: 202a0553f0c736086eca993b9647737732f57d07
 workflow-type: tm+mt
 source-wordcount: '1941'
 ht-degree: 0%
@@ -93,7 +93,7 @@ XML文档必须以 `<package>` 元素。 任何 `<entities>` 随后出现的元�
    >
    >如果导出 **[!UICONTROL Offer category]**， **[!UICONTROL Offer environment]**， **[!UICONTROL Program]** 或 **[!UICONTROL Plan]** 键入文件夹，永远不要选择 **xtk：folder** 因为您可能会丢失一些数据。 选择与文件夹对应的实体： **nms：offerCategory** 对于优惠类别， **nms：offerEnv** 对于选件环境， **nms：program** 适用于计划，以及 **nms：plan** 了解计划。
 
-   依赖关系机制控制实体导出顺序。 有关详细信息，请参见 [管理依赖关系](#managing-dependencies).
+   依赖关系机制控制实体导出顺序。 有关详细信息，请参见 [管理依赖关系](#manage-dependencies).
 
 1. 单击 **[!UICONTROL Next]** 并根据要提取的文档类型定义过滤器查询。 必须为数据提取配置筛选子句。
 

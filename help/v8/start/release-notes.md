@@ -3,10 +3,10 @@ title: Campaign v8 发行说明
 description: 最新 Campaign v8 版本
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 338432b41276317f1f07a92f0106e20177b5becd
-workflow-type: ht
-source-wordcount: '783'
-ht-degree: 100%
+source-git-commit: e119c415ce363a635f9f0318e3fd70f90f4bde06
+workflow-type: tm+mt
+source-wordcount: '801'
+ht-degree: 97%
 
 ---
 
@@ -32,6 +32,14 @@ _2024 年 5 月 28 日_
 
 NEO-70263、NEO-64984、NEO-63657、NEO-63387、NEO-62964、NEO-62750、NEO-62686、NEO-59544、NEO-52542
 
+
+## 5月更新 {#may-updates}
+
+以下更改已在5月发布，现在可供Campaign v8用户使用：
+
+* **新的增强安全性加载项**：为了使网络连接更安全并为资源提供更好的安全性，Adobe Campaign 提供了新的增强安全性加载项，其中包括两项功能：安全 CMK 集成和安全 VPN 隧道。[了解更多信息](../config/enhanced-security.md)
+
+
 ## 版本 8.7.1 {#release-8-7-1}
 
 _2024 年 5 月 2 日_
@@ -52,7 +60,7 @@ _2024 年 5 月 2 日_
 
 * **动态报告** - 作为 Campaign Standard 迁移用户，您可以访问动态报告，该功能提供完全可自定义的实时报告来衡量营销活动的影响。它增加了对用户档案数据的访问，除打开数和点击数等功能性电子邮件营销活动数据外，还支持按用户档案维度（如性别、城市和年龄）进行人口统计分析。[了解更多信息](https://experienceleague.adobe.com/docs/experience-cloud/campaign/reporting/get-started-reporting.html?lang=zh-Hans){target="_blank"}
 
-* **新的增强安全性加载项**：为了使网络连接更安全并为资源提供更好的安全性，Adobe Campaign 提供了新的增强安全性加载项，其中包括两项功能：安全 CMK 集成和安全 VPN 隧道。[了解更多信息](../config/enhanced-security.md)
+
 
 
 ### 兼容性更新 {#comp-8-7-1}

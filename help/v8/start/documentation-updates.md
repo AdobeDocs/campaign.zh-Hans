@@ -6,10 +6,10 @@ role: User
 level: Beginner
 hidefromtoc: true
 exl-id: 3c1cae6e-0a75-4f18-b1ee-2d5fa23b4251
-source-git-commit: 5f62addc95197ce5f4f80c026cc51ac14e61ff58
+source-git-commit: ab6c16af7652f2e8dbfa5c899c2152cefb7fc7c6
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 24%
+source-wordcount: '198'
+ht-degree: 23%
 
 ---
 
@@ -17,6 +17,9 @@ ht-degree: 24%
 
 本页列出了中的所有最新更新 [!DNL Campaign] v8 （控制台）文档。
 
+## 2024 年 6 月 {#june-2024}
+
+已添加注释，以指定在重新启动工作流时如何清除实例变量。 [了解更多信息](../../automation/workflow/start-a-workflow.md)
 
 ## 2024 年 5 月 {#may-2024}
 

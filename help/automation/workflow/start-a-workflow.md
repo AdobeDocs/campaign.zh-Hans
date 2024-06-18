@@ -6,9 +6,9 @@ feature: Workflows
 level: Beginner
 role: User, Admin
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: ab6c16af7652f2e8dbfa5c899c2152cefb7fc7c6
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,16 @@ ht-degree: 0%
 * **[!UICONTROL Restart]**
 
   此操作将停止，然后重新启动工作流。 在大多数情况下，它可以更快地重新启动。 当停止需要一定时间时，自动重新启动也很有用：这是因为在工作流停止时，“Stop”命令不可用。
+
+  请注意 **重新启动** 操作不会清除与之比较的工作流实例变量 **执行**， **停止**、和 **开始** 操作（实例变量在启动操作时清除）。 重新启动工作流时，实例变量仍可用于保留值。 要清除它们，您可以：
+   * 执行 **停止** 和 **开始** 操作。
+   * 在工作流执行结束时，添加以下javascript代码：
+
+     ```
+     var wkf = xtk.workflow.load(instance.id)
+     wkf.variables='<variables/>'
+     wkf.save()
+     ```
 
 * **[!UICONTROL Purge history]**
 

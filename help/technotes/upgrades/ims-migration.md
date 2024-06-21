@@ -4,16 +4,16 @@ description: 了解如何将Campaign技术操作员迁移到Adobe Developer控�
 feature: Technote
 role: Admin
 exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
-source-git-commit: 5d3dd679eb7a756200d604601c20c3fed5770fc2
+source-git-commit: 07c2a7460c407a0afb536d8b64f4105d8bc547f4
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1547'
 ht-degree: 0%
 
 ---
 
 # 将Campaign技术操作员迁移到Adobe Developer控制台 {#migrate-tech-users-to-ims}
 
-从Campaign v8.5开始，作为加强安全和身份验证流程工作的一部分，对Campaign v8的身份验证流程正在进行改进。 技术操作员现在可以使用 [AdobeIdentity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"} to connect to Campaign. Learn more about the new server to server authentication process in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
+从Campaign v8.5开始，作为加强安全和身份验证流程工作的一部分，对Campaign v8的身份验证流程正在进行改进。 技术操作员现在可以使用 [AdobeIdentity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"} 以连接到Campaign。 了解中关于新服务器到服务器身份验证过程的更多信息 [Adobe Developer控制台文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}.
 
 技术操作员是为API集成明确创建的Campaign用户配置文件。 本文详细介绍了通过Adobe Developer控制台将技术操作员迁移到技术帐户所需的步骤。
 
@@ -151,9 +151,13 @@ You can now add your Campaign product profile to the project, as detailed below:
 
 以下是示例SOAP调用，其中显示第三方系统的迁移前调用和迁移后调用。
 
+在使用AdobeIdentity Management System (IMS)身份验证时，要生成WSDL文件，您应添加 `Authorization: Bearer <IMS_Technical_Token_Token>` 在postman调用中：
+
+```
+curl --location --request POST 'https://<instance_url>/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent' \--header 'Authorization: Bearer <Technical account access token>'
+```
+
 完成并验证迁移过程后，Soap调用将更新如下：
-
-
 
 * 迁移前：不支持技术帐户访问令牌。
 
@@ -201,8 +205,6 @@ You can now add your Campaign product profile to the project, as detailed below:
   </soapenv:Body>
   </soapenv:Envelope>
   ```
-
-
 
 ### 步骤9 — （可选）在Campaign客户端控制台中更新技术帐户操作员 {#ims-migration-step-9}
 

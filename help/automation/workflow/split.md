@@ -4,9 +4,9 @@ title: 拆分
 description: 了解有关拆分工作流活动的更多信息
 feature: Workflows, Targeting Activity
 exl-id: bf4935dd-87dc-4c5c-becf-8c4df61805fd
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+source-git-commit: a5d44321c3d68b9370cfb6e9b1df62435de0dbda
 workflow-type: tm+mt
-source-wordcount: '1807'
+source-wordcount: '1832'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,13 @@ A **Split**-type活动允许您将目标拆分为多个子集。 使用所有接
 
 此活动不会触发集客群体的联合。 如果多个过渡登陆一个拆分活动，我们建议插入 **[!UICONTROL Union]** 前面的活动。
 
-有关正在使用的拆分活动的示例，请参阅 [本节](targeting-workflows.md#create-subsets-using-the-split-activity).
+>[!NOTE]
+>
+>不能对具有不同源的表执行拆分操作。 为此，您需要添加 **扩充** 之前的活动 **Split** 活动。
 
-有关说明如何使用拆分活动通过过滤条件将目标分段为不同群体的示例，请参见 [本节](cross-channel-delivery-workflow.md).
-
-有关如何在拆分活动中使用实例变量的示例，请参见 [本节](javascript-scripts-and-templates.md).
+* 有关正在使用的拆分活动的示例，请参阅 [本节](targeting-workflows.md#create-subsets-using-the-split-activity).
+* 有关说明如何使用拆分活动通过过滤条件将目标分段为不同群体的示例，请参见 [本节](cross-channel-delivery-workflow.md).
+* 有关如何在拆分活动中使用实例变量的示例，请参见 [本节](javascript-scripts-and-templates.md).
 
 要配置此活动，请在 **[!UICONTROL Subsets]** 选项卡，然后在中选择目标维度 **[!UICONTROL General]** 选项卡。
 

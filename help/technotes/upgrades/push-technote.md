@@ -8,10 +8,10 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="也适用于Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="适用于Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: a280e560a6e84f5afa214daaded9ac5331018d7c
+source-git-commit: 24d9adddbc983a600f99dab8bab1235585b48ceb
 workflow-type: tm+mt
 source-wordcount: '1357'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 您可以使用Campaign在iOS和Android设备上发送推送通知。 为此，Campaign依赖于移动应用程序订阅服务。
 
-2024年发布了Android Firebase Cloud Messaging (FCM)服务的一些重要更改，这些更改可能会影响Adobe Campaign实施。 您可能需要更新Android推送消息的订阅服务配置才能支持此更改。
+Android Firebase Cloud Messaging (FCM)服务的一些重要更改将于2024年发布，可能会影响您的Adobe Campaign实施。 您可能需要更新Android推送消息的订阅服务配置才能支持此更改。
 
 此外，Adobe强烈建议迁移到基于令牌的连接而不是APN的基于证书的连接，这种连接更加安全和可扩展。
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ### 更改了哪些内容？ {#fcm-changes}
 
-作为Google持续努力改进其服务的一部分，旧版FCM API将在以下日期停用 **2024年6月20日**. 在中了解有关Firebase云消息HTTP协议的更多信息 [Google Firebase文档](https://firebase.google.com/docs/cloud-messaging/http-server-ref){target="_blank"}.
+作为Google持续努力改进其服务的一部分，旧版FCM API将在以下日期停用 **2024年7月22日**. 在中了解有关Firebase云消息HTTP协议的更多信息 [Google Firebase文档](https://firebase.google.com/docs/cloud-messaging/migrate-v1){target="_blank"}.
 
 Adobe Campaign Classic v7和Adobe Campaign v8已支持用于发送推送通知消息的最新API。 但是，某些旧实施仍依赖旧版API。 必须更新这些实施。
 
@@ -42,7 +42,7 @@ Adobe Campaign Classic v7和Adobe Campaign v8已支持用于发送推送通知�
 
 * 如果您的任何活动推送通知服务使用 **HTTP（旧版）** API，您的设置将直接受到此更改的影响。 您必须查看当前配置并迁移到如下所述的新API。
 
-* 如果您的设置仅使用 **HTTP v1** API用于Android推送通知，则您已符合要求，无需执行进一步操作。
+* 如果您的设置仅使用 **HTTP v1** API来接收Android推送通知，则表明您已符合相关规定，无需执行进一步操作。
 
 ### 如何更新？ {#fcm-transition-procedure}
 
@@ -87,11 +87,11 @@ Adobe Campaign Classic v7和Adobe Campaign v8已支持用于发送推送通知�
 
 >[!NOTE]
 >
->一旦在所有服务器中应用了这些更改，则交付到Android设备的所有新推送通知都将使用HTTP v1 API。 正在重试、进行中和正在使用的现有推送投放仍使用HTTP（旧版）API。
+>所有这些更改应用于您的所有服务器后，交付给Android设备的所有新推送通知都将使用HTTP v1 API。 正在重试、进行中和正在使用的现有推送投放仍使用HTTP（旧版）API。
 
 ### 这对我的Android应用程序有何影响？ {#fcm-apps}
 
-无需对Android移动应用程序的代码进行特定更改，通知行为不应发生变化。
+无需对Android Mobile应用程序的代码进行特定更改，通知行为不应发生变化。
 
 但是，使用HTTP v1，您可以通过以下方式进一步个性化推送通知 **[!UICONTROL HTTPV1 additional options]**.
 

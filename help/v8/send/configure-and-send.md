@@ -5,7 +5,7 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 070aa96187c5654e40665cb5b23329d3f7d508d6
+source-git-commit: 2e9c9f8e677233b2906f6ebb8f42dd86afe4e111
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 8%
@@ -26,7 +26,7 @@ ht-degree: 8%
 
 使用 **[!UICONTROL Delivery priority]** 选项可通过以下方式设置投放的优先级，以更改投放的发送顺序： **[!UICONTROL Very low]** 到 **[!UICONTROL Very high]** (默认值为 **[!UICONTROL Normal]**)。
 
-### 批次数量
+### 批次数量 {#delivery-batch-quantity}
 
 使用  **[!UICONTROL Message batch quantity]** 用于定义在同一个XML投放包中分组的消息数的选项。 如果参数设置为0，则消息将自动分组。 程序包大小由计算定义 `<delivery size>/1024`，则每个包最少8条消息，最多256条消息。
 
@@ -127,7 +127,7 @@ ht-degree: 8%
 1. 单击 **[!UICONTROL Send]**&#x200B;中，选择所需的操作。
 
    * 要立即发送投放，请选择 [**尽快投放**].
-   * 要安排在以后的日期发送，请选择 **[!UICONTROL Postpone the delivery]**. [了解更多信息](#schedule-delivery-sending)
+   * 要安排在以后的日期发送，请选择 **[!UICONTROL Postpone the delivery]**. [了解详情](#schedule-delivery-sending)
 
 1. 单击 **[!UICONTROL Analyze]**。有关更多信息，请参阅[此小节](delivery-analysis.md)。
 

@@ -8,7 +8,7 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="也适用于Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="适用于Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: 9eb8521a1cc264d4d0137c68654ca45ccade81bd
+source-git-commit: 2e9c9f8e677233b2906f6ebb8f42dd86afe4e111
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 1%
@@ -84,7 +84,7 @@ Adobe Campaign Classic v7和Adobe Campaign v8已支持用于发送推送通知�
    | 数据消息 | N/A | validate_only |
    | 通知消息 | title，标题，正文， android_channel_id，图标，声音，标记，颜色， click_action，图像，滚动条，粘性，可见性， notification_priority，通知优先级， notification_count <br> | validate_only |
 
-1. 过渡HTTP v1完成后，您必须更新 **投放模板** 以增加Android推送消息数量。 为此，请浏览到Android投放模板的属性，然后在 **投放** 选项卡，设置 **消息批次数量** 到 **256**. 将此更改应用于用于Android投放的所有Android投放模板，以及所有现有的Android投放。
+1. 过渡HTTP v1完成后，您必须更新 **投放模板** 以增加Android推送消息数量。 为此，请浏览到Android投放模板的属性，然后在 **投放** 选项卡，设置 [消息批次数量](../../v8/send/configure-and-send.md#delivery-batch-quantity) 到 **256**. 将此更改应用于用于Android投放的所有Android投放模板，以及所有现有的Android投放。
 
 
 >[!NOTE]

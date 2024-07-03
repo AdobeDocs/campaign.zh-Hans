@@ -8,10 +8,10 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="也适用于Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="适用于Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: 24d9adddbc983a600f99dab8bab1235585b48ceb
+source-git-commit: 9eb8521a1cc264d4d0137c68654ca45ccade81bd
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 2%
+source-wordcount: '1422'
+ht-degree: 1%
 
 ---
 
@@ -77,12 +77,14 @@ Adobe Campaign Classic v7和Adobe Campaign v8已支持用于发送推送通知�
 1. 作为一个选项，您可以使用一些来扩充推送消息内容 **[!UICONTROL Application variables]** 如果需要。 这些都是完全可自定义的，并且是发送到移动设备的消息有效负载的一部分。
 1. 单击 **[!UICONTROL Finish]**，然后单击 **[!UICONTROL Save]**。
 
-以下是FCM有效负荷名称，用于进一步个性化您的推送通知。 这些选项是详细的 [此处](#fcm-apps).
+   以下是FCM有效负荷名称，用于进一步个性化您的推送通知。 这些选项是详细的 [此处](#fcm-apps).
 
-| 消息类型 | 可配置消息元素（FCM有效负荷名称） | 可配置选项（FCM有效负荷名称） |
-|:-:|:-:|:-:|
-| 数据消息 | N/A | validate_only |
-| 通知消息 | title，标题，正文， android_channel_id，图标，声音，标记，颜色， click_action，图像，滚动条，粘性，可见性， notification_priority，通知优先级， notification_count <br> | validate_only |
+   | 消息类型 | 可配置消息元素（FCM有效负荷名称） | 可配置选项（FCM有效负荷名称） |
+   |:-:|:-:|:-:|
+   | 数据消息 | N/A | validate_only |
+   | 通知消息 | title，标题，正文， android_channel_id，图标，声音，标记，颜色， click_action，图像，滚动条，粘性，可见性， notification_priority，通知优先级， notification_count <br> | validate_only |
+
+1. 过渡HTTP v1完成后，您必须更新 **投放模板** 以增加Android推送消息数量。 为此，请浏览到Android投放模板的属性，然后在 **投放** 选项卡，设置 **消息批次数量** 到 **256**. 将此更改应用于用于Android投放的所有Android投放模板，以及所有现有的Android投放。
 
 
 >[!NOTE]
@@ -107,7 +109,6 @@ Adobe Campaign Classic v7和Adobe Campaign v8已支持用于发送推送通知�
 * 设置 **[!UICONTROL Visibility]** 您向公共、私人或机密发送的通知的级别。
 
 欲知详情，请参阅 **[!UICONTROL HTTP v1 additional options]** 以及如何填写这些字段，请参阅 [FCM文档](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
-
 
 
 

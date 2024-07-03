@@ -5,10 +5,10 @@ feature: Push
 role: User
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: 6d54f072ad0e67b435cd6e03433fa9ddd0794dea
+source-git-commit: 48aba38f3dc8bb322e6d0b38c1b743e980671cd7
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 10%
+source-wordcount: '968'
+ht-degree: 6%
 
 ---
 
@@ -16,24 +16,28 @@ ht-degree: 10%
 
 移动应用程序投放可让您向iOS和Android设备发送通知。
 
-在开始使用Adobe Campaign发送推送通知之前，您需要确保移动应用程序和Adobe Experience Platform中的标记已具有配置和集成。 [了解有关推送配置的更多信息。](push-settings.md)
+在开始使用Adobe Campaign发送推送通知之前，您需要确保移动应用程序和Adobe Experience Platform中的标记已具有配置和集成。 [了解有关推送配置的更多信息。](push-settings.md).
 
 >[!CAUTION]
 >
->Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 年发布，并将影响您的 Adobe Campaign 实施。您可能需要更新 Android 推送消息的订阅服务配置，才能支持此更改。您已经可以检查并执行操作。 [了解详情](../../technotes/upgrades/push-technote.md)。
+>Android Firebase Cloud Messaging (FCM)服务的一些重要更改将于2024年发布，可能会影响您的Adobe Campaign实施。 您可能需要更新 Android 推送消息的订阅服务配置，才能支持此更改。您已经可以检查并执行操作。 [了解详情](../../technotes/upgrades/push-technote.md)。
 
 
-## 创建您的第一个推送通知{#push-create}
+## 创建您的第一个推送通知 {#push-create}
 
-此部分详细介绍特定于iOS和Android通知投放的元素。
+此部分详细介绍特定于iOS和Android通知交付的元素。
 
 >[!IMPORTANT]
 >
 >在上下文中 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，移动注册现在为 **异步**. [了解详情](../architecture/staging.md)
 
+
 要创建新投放，请浏览至 **[!UICONTROL Campaigns]** 选项卡，单击 **[!UICONTROL Deliveries]** 然后单击 **[!UICONTROL Create]** 按钮来指定现有投放列表的上方。
 
 ![](assets/delivery_step_1.png)
+
+
+默认情况下，Adobe Campaign附带两个投放模板：一个用于iOS，一个用于Android。 您可以复制它们以定义您自己的设置。 基于这些模板配置推送投放的步骤详述如下。
 
 >[!BEGINTABS]
 
@@ -133,6 +137,11 @@ ht-degree: 10%
 
    ![](assets/push-template-android.png)
 
+   >[!NOTE]
+   > 
+   >使用最新的FCM API (HTTP v1)时，您必须更新 **投放模板** 以增加Android推送消息数量。 为此，请浏览到Android投放模板的属性，然后在 **投放** 选项卡，设置 [消息批次数量](../../v8/send/configure-and-send.md#delivery-batch-quantity) 到 **256**. 将此更改应用于您的Android投放使用的所有投放模板，以及您所有现有的Android投放。
+
+
 1. 要定义通知的目标，请单击 **[!UICONTROL To]** 链接，然后单击 **[!UICONTROL Add]**.
 
    ![](assets/push-android-select-target.png)
@@ -155,7 +164,8 @@ ht-degree: 10%
 
 >[!ENDTABS]
 
-## 测试、发送和监控推送通知
+
+## 测试、发送和监控推送通知 {#push-test}
 
 要发送验证并发送最终投放，请按照与其他投放相同的流程操作。
 

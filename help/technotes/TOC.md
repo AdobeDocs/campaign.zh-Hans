@@ -5,10 +5,10 @@ type: Event
 title: Adobe Campaign技术说明
 description: Campaign技术说明
 breadcrumb-title: Campaign技术说明
-source-git-commit: 50dcdf1f6bcc8c8a195a0bf0a37af254f33b80d5
+source-git-commit: 29665df166a12a4928c6e356e1ff1a3bb47e30e5
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 30%
+source-wordcount: '64'
+ht-degree: 25%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 30%
 
 + [Campaign技术说明](technotes-home.md)
 + 升级{#tn-new}
+   + [推送通知渠道更改](upgrades/push-technote.md)
    + [将用户迁移到 IMS](upgrades/migrate-users-to-ims.md)
    + [将技术操作员迁移到 Developer Console](upgrades/ims-migration.md)
    + [将技术操作员迁移到Developer Console](upgrades/ims-migration-old.md)
@@ -26,5 +27,4 @@ ht-degree: 30%
    + [Internet 浏览器](upgrades/browsers.md)
    + [2023 年系统升级](upgrades/tech-stack-upgrade.md)
    + [客户端控制台32位弃用](upgrades/console.md)
-   + [推送通知渠道更改](upgrades/push-technote.md)
-+ [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)
++ [&lt;返回Campaign v8文档](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)

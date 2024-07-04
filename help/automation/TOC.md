@@ -2,9 +2,9 @@
 audience: user
 user-guide-title: Campaign自动化指南
 user-guide-description: Campaign自动化指南
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: c5e804db7deaa6b9511858d088eb6da5d16e8abf
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '444'
 ht-degree: 81%
 
 ---
@@ -72,7 +72,7 @@ ht-degree: 81%
       + 操作活动 {#action-activities}
          + [操作活动列表](workflow/action-activities.md)
          + [内容管理](workflow/content-management.md)
-         + [连续投放](workflow/continuous-delivery.md)
+         + [持续投放](workflow/continuous-delivery.md)
          + [跨渠道投放](workflow/cross-channel-deliveries.md)
          + [数据提取（文件）](workflow/extraction-file.md)
          + [数据加载（文件）](workflow/data-loading-file.md)
@@ -82,7 +82,7 @@ ht-degree: 81%
          + [本地审批](workflow/local-approval.md)
          + [加载 (SOAP)](workflow/loading-soap.md)
          + [Nlserver 模块](workflow/nlserver-module.md)
-         + [循环投放](workflow/recurring-delivery.md)
+         + [定期投放](workflow/recurring-delivery.md)
          + [SQL 代码和 JavaScript 代码](workflow/sql-code-and-javascript-code.md)
          + [SQL 数据管理](workflow/sql-data-management.md)
          + [更新聚合](workflow/update-aggregate.md)
@@ -165,4 +165,4 @@ ht-degree: 81%
    + [访问活动](distributed-marketing/accessing-campaigns.md)
    + [跟踪活动](distributed-marketing/tracking-a-campaign.md)
    + [用例](distributed-marketing/examples.md)
-+ [Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=zh-Hans)
++ [&lt;返回Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/campaign-home)

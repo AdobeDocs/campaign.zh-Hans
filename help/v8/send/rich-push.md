@@ -6,9 +6,9 @@ feature: Push
 role: User
 level: Beginner
 exl-id: 42e3623b-b401-4fcc-80a7-ea38347fddc6
-source-git-commit: 94dba45c59c699680675bdcd2b73da386d727435
+source-git-commit: 5236cc94e78db11b8975ad84c49594b282fdecf3
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1157'
 ht-degree: 5%
 
 ---
@@ -21,11 +21,15 @@ ht-degree: 5%
 
 使用Firebase Cloud Messaging，您可以选择两种类型的消息：
 
-* 此 **[!UICONTROL Data message]** 由客户端应用程序处理。 这些消息直接发送到移动设备应用程序，后者在设备上生成并显示Android通知。 数据消息仅包含您的自定义应用程序变量。
+* 此 **[!UICONTROL Data message]** 由客户端应用程序处理。 这些消息将直接发送到移动设备应用程序，后者在设备上生成并显示Android通知。 数据消息仅包含您的自定义应用程序变量。
 
 * 此 **[!UICONTROL Notification message]**，由FCM SDK自动处理。 FCM会代表客户端应用程序在用户设备上自动显示消息。 通知消息包含预定义的一组参数和选项，但仍可以使用自定义应用程序变量进一步个性化。
 
 ## 定义通知的内容 {#push-message}
+
+>[!IMPORTANT]
+>
+>在设计富推送通知之前，您首先需要配置连接器。 请参阅 [此页面](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android) 以了解详细过程。
 
 创建推送投放后，即可定义其内容。 提供了三个模板：
 

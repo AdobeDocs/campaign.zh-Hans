@@ -7,51 +7,61 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 09b8ced170ff28b24713722e0a82852038053201
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 68%
+source-wordcount: '372'
+ht-degree: 57%
 
 ---
 
 # 早期发行说明 {#e-new-release}
 
-此页面介绍了下一个 Campaign v8 版本中包含的改进和修复。在发行之日前，此内容可能会有所变动，恕不另行通知。[此页面](../start/release-notes.md)中提供了正式的发行说明。
+此页面介绍了下一个 Campaign v8 版本中包含的改进和修复。**以下早期发行说明在发行可用日期之前如有更改，恕不另行通知**。链接、屏幕和更新的文档会于发布日期在[发行说明](release-notes.md)中发布。
 
-## 版本 8.6.1 {#release-8-6-1}
+## 版本 8.7.2 {#release-8-7-2}
 
-_2024 年 2 月 14 日_
-
-
-### 新增功能 {#new-8-6-1}
-
-* 从此版本开始，您可以访问新的 **Campaign Web 用户界面**，该界面可通过中央 Adobe Experience Cloud 环境使用。Experience Cloud 是 Adobe 的数字营销应用程序、产品和服务的集成系列。通过其直观的界面，您可以快速访问云应用程序、产品功能和服务。[在此页面中](campaign-ui.md#ac-web-ui)了解如何连接到 Adobe Experience Cloud 并访问 Adobe Campaign Web 界面。
-
-* 客户端控制台的32位版本现已弃用。 从8.6开始，客户端控制台将仅以64位提供。 客户端控制台可无缝升级到64位版本。 有关如何升级操作系统的详细信息，请参阅此 [技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/console.html?lang=zh-Hans){target="_blank"}.
+_2024年7月30日_
 
 
-### 一般改进 {#improvements-8-6-1}
+>[!AVAILABILITY]
+>
+>此版本为&#x200B;**有限发布版** (LA)。仅供&#x200B;**从 Adobe Campaign Standard 迁移到 Adobe Campaign v8** 的客户使用，并且不能部署在任何其他环境上。
+>
+>作为正在过渡到 Campaign v8 的 Campaign Standard 用户，请在 [Campaign v8 Web 用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/release-notes/acs-migration){target="_blank"}中了解有关此过渡的更多信息。
 
-* Campaign v8.6 提高了&#x200B;**电子邮件投放跟踪指标的吞吐量**。通过我们优化的流程，可以减少跟踪收录和计算时间，并且可以更快地检查投放关键指标。
+### 新增功能 {#new-8-7-2}
 
-* 您现在可以将Campaign v8实例连接到Azure synapse外部数据库。 此连接通过新的外部帐户管理。
+* **新SMS发送连接器** - SMS发送连接器已进行现代化和改进，可启用收发器模式SMPP连接、启用永久性SMPP连接，并确保与从Adobe Campaign Standard过渡的环境之间有更好的兼容性。 新的短信外部帐户现在可用于所有新的短信实施。 现有实施仍受支持，但建议迁移到此新的现代化扩展连接器。
 
-* Adobe Campaign v8现在集成了 **Adobe Experience Manager as a Cloud Service**，创作功能通过Adobe Campaign Web用户界面专门提供。
+* **富推送通知(GA)** — 您现在可以发送富推送通知。 富媒体推送通知是移动通知的一种增强形式，它超越了简单的文本消息，融合了图像、交互式按钮或其他富媒体内容等多媒体元素。在此版本中，现在为您的iOS和Android应用程序提供了一组富推送通知模板。 [了解更多信息](../send/rich-push.md)。
 
-* 您现在可以使用 **Adobe Experience Manager Assets library** 与您的Experience Cloud资源放在一起，即使 **与Adobe Experience Cloud集成** 软件包安装在您的Adobe Campaign实例上。
+* **品牌策略** — 品牌策略选项现在可用于所有渠道，包括短信和直邮。 [了解更多信息](https://experienceleague.adobe.com/docs/experience-cloud/campaign/branding/branding-gs.html?lang=zh-Hans){target="_blank"}
 
-* 不能再从客户端控制台创建运算符。 现在，您需要使用Admin Console。 [了解详情](../start/gs-permissions.md)。
+<!--
+### Fixes {#fixes-8-7-2}
 
-* 已更新多个第三方工具以优化安全性。
+The following issues are fixed in this release:
 
-### 可投放性更新 {#deliverability-8-6-1}
+NEO-76592, NEO-75400, NEO-77406, NEO-77674, NEO-77899, NEO-73989, NEO-76064, NEO-76039, NEO-76040, NEO-76845, NEO-76664, NEO-76682, NEO-76663, NEO-73602, NEO-72915, NEO-78134, NEO-77000, NEO-77002, NEO-76955, NEO-76864, NEO-76926, NEO-76495, NEO-77168, NEO-41058, NEO-75581, NEO-74647, NEO-74585, NEO-74586, NEO-74831, NEO-77319, NEO-78607.-->
 
-* 到 2024 年 2 月，任何通过 Google 或 Yahoo! 发送超过 5000 封电子邮件的公司将必须开始使用身份验证技术，即“基于域的邮件身份验证、报告和符合性”(DMARC)。确保为您在 Adobe Campaign 中使用的所有子域设置 DMARC 记录。[了解详情](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=zh-Hans){target="_blank"}
+## 版本 8.6.3 {#release-8-6-3}
 
-* 自 2024 年 6 月 1 日起，Google 和 Yahoo! 将要求发件人使用一键式 List-Unsubscribe 功能。Adobe Campaign 现在支持此选项。[了解详情](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=zh-Hans#one-click-list-unsubscribe){target="_blank"}
+_2024年7月30日_
 
 
-### 修复 {#fixes-8-6-1}
+### 新增功能 {#new-8-6-3}
 
-此版本修复了以下问题：
-NEO-67892、NEO-67235、NEO-66797、NEO-66462、NEO-65091、NEO-65036、NEO-64984、NEO-64680、NEO-63973、NEO-63879、NEO-63815、NEO-63657、NEO-63539、NEO-63387、NEO-63294、NEO-63174、NEO-62964、NEO-62750、NEO-62686、NEO-62455、NEO-62406、NEO-61580、NEO-61199、NEO-60786、NEO-59544、NEO-59198、NEO-59059、NEO-58637、NEO-55197、NEO-52542、NEO-50488、NEO-47789
+* **富推送通知** — 您现在可以发送富推送通知。 富媒体推送通知是移动通知的一种增强形式，它超越了简单的文本消息，融合了图像、交互式按钮或其他富媒体内容等多媒体元素。在此版本中，现在为您的iOS和Android应用程序提供了一组富推送通知模板。 [了解更多信息](../send/rich-push.md)。
+
+* 从此版本开始，随着 Adobe 弃用服务帐户 (JWT) 凭据，Campaign 与 Adobe 解决方案和应用程序的出站集成现在依赖于 OAuth 服务器到服务器凭据。[了解详情](release-notes.md#change-8-7-1)
+
+
+### 一般改进 {#improvements-8-6-3}
+
+* 为了提高应用程序之间所有通信的安全性，现在外部API调用支持mTLS。
+
+<!--
+### Fixes {#fixes-8-7-2}
+
+The following issues are fixed in this release:
+-->

@@ -16,7 +16,7 @@ ht-degree: 4%
 
 通过Campaign Classic v7文档中提供的以下分步使用案例来利用Campaign交互功能：
 
-[创建和应用演示规则](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/presentation-rules.html){target="_blank"}
+[创建并应用演示规则](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/presentation-rules.html){target="_blank"}
 
 [发送电子邮件选件投放](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html){target="_blank"}
 

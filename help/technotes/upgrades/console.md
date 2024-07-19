@@ -56,7 +56,7 @@ ht-degree: 1%
 
 +++如何从Windows（32位）升级到Windows（64位）操作系统？
 
-确保计算机处理器支持安装64位操作系统。 从32位版本升级到64位版本的Windows要求您重新格式化硬盘，安装64位版本的Windows，然后重新安装设备上的其他所有设备。 有关更多信息，请参阅 [32位和64位Windows：常见问题解答](https://support.microsoft.com/en-us/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d){target="_blank"}.
+确保计算机处理器支持安装64位操作系统。 从32位版本升级到64位版本的Windows要求您重新格式化硬盘，安装64位版本的Windows，然后重新安装设备上的其他所有设备。 有关详细信息，请参阅[32位和64位Windows：常见问题解答](https://support.microsoft.com/en-us/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d){target="_blank"}。
 
 +++
 

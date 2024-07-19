@@ -20,11 +20,11 @@ ht-degree: 21%
 
 根据您的权限、实施以及设计工作流的上下文，可用活动可能会有所不同。
 
-例如，在营销活动中创建的工作流具有 **投放** 选项卡，包含所有渠道。 此选项卡在中不可用 [技术工作流](technical-workflows.md).
+例如，在营销活动中创建的工作流具有包含所有渠道的特定&#x200B;**投放**&#x200B;选项卡。 此选项卡在[技术工作流](technical-workflows.md)中不可用。
 
 ![](assets/campaign-wf-activities.png)
 
-技术工作流具有特定的 **活动** 选项卡中不可用 [活动工作流](campaign-workflows.md).
+技术工作流具有特定的&#x200B;**事件**&#x200B;选项卡，该选项卡在[营销活动工作流](campaign-workflows.md)中不可用。
 
 ![](assets/tech-wf-activities.png)
 

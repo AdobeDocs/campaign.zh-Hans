@@ -21,8 +21,8 @@ ht-degree: 33%
 
 * 类型
 * 发件人和回复地址
-* 基本 [个性化块](../send/personalization-blocks.md)
-* 链接到 [镜像页面](../send/mirror-page.md) 和退订链接
+* 基本[个性化块](../send/personalization-blocks.md)
+* 指向[镜像页面](../send/mirror-page.md)的链接和退订链接
 * 内容、公司徽标或签名
 * 其他投放属性，例如资源有效性、重试参数或隔离设置。
 
@@ -41,9 +41,9 @@ Campaign为每个渠道提供了一组内置模板：电子邮件、推送、短
 
 要复制投放模板，请执行以下步骤：
 
-1. 浏览至 **[!UICONTROL Resources > Templates > Delivery templates]** 在Adobe Campaign explorer中。
+1. 浏览Adobe Campaign资源管理器中的&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**。
 1. 选择内置投放模板。 内置模板在列表中加粗。
-1. 右键单击并选择 **[!UICONTROL Duplicate]**.
+1. 右键单击并选择&#x200B;**[!UICONTROL Duplicate]**。
 
    ![](assets/duplicate-built-in-template.png)
 
@@ -61,13 +61,13 @@ Campaign为每个渠道提供了一组内置模板：电子邮件、推送、短
 
 要将投放转换为模板，请执行以下步骤：
 
-1. 从投放列表中选择投放，可通过访问 **[!UICONTROL Campaign management]** Campaign资源管理器的节点。
+1. 从可通过Campaign资源管理器的&#x200B;**[!UICONTROL Campaign management]**&#x200B;节点访问的投放列表中选择投放。
 
-1. 右键单击并选择 **[!UICONTROL Actions > Save as template...]**.
+1. 右键单击并选择&#x200B;**[!UICONTROL Actions > Save as template...]**。
 
    ![](assets/save-as-template.png)
 
-1. 编辑投放属性并选择必须保存新模板的文件夹(在 **[!UICONTROL Folder]** 字段)，以及必须创建基于此模板创建的投放的文件夹(在 **[!UICONTROL Execution folder]** 字段)。
+1. 编辑投放属性并选择必须保存新模板的文件夹（在&#x200B;**[!UICONTROL Folder]**&#x200B;字段中）以及必须基于此模板创建投放的文件夹（在&#x200B;**[!UICONTROL Execution folder]**&#x200B;字段中）。
 
    ![](assets/template-select-folders.png)
 
@@ -79,16 +79,16 @@ Campaign为每个渠道提供了一组内置模板：电子邮件、推送、短
 
 要从头开始配置投放模板，请执行以下步骤：
 
-1. 浏览至 **资源** 文件夹，然后选择 **模板** 则 **投放模板**.
-1. 单击 **新建** ，以创建新投放模板。
-1. 设置 **标签** 和 **内部名称** 文件夹的。
+1. 浏览到Campaign资源管理器中的&#x200B;**资源**&#x200B;文件夹，然后选择&#x200B;**模板**&#x200B;和&#x200B;**投放模板**。
+1. 单击工具栏中的&#x200B;**新建**&#x200B;以创建新的投放模板。
+1. 设置文件夹的&#x200B;**标签**&#x200B;和&#x200B;**内部名称**。
 1. 保存并重新打开模板。
-1. 从 **属性** 按钮，调整设置。
-1. 在 **常规** 选项卡，确认或更改在 **执行文件夹**， **文件夹**、和 **路由** 下拉菜单。
-1. 完成 **电子邮件参数** 类别中包含您的电子邮件主题和目标群体。
-1. 添加您的 **HTML内容** 要个性化您的模板，您可以显示 [镜像页面链接](../send/mirror-page.md) 和退订链接。
-1. 选择 **预览** 选项卡。 在 **测试个性化** 下拉菜单，选择 **收件人** 以预览模板作为所选用户档案。
-1. 单击 **保存**. 您的模板现已准备就绪，可用于投放。
+1. 从&#x200B;**属性**&#x200B;按钮，调整设置。
+1. 在&#x200B;**常规**&#x200B;选项卡中，确认或更改在&#x200B;**执行文件夹**、**文件夹**&#x200B;和&#x200B;**路由**&#x200B;下拉菜单中选定的位置。
+1. 使用您的电子邮件主题和目标群体完成&#x200B;**电子邮件参数**&#x200B;类别。
+1. 添加您的&#x200B;**HTML内容**&#x200B;以个性化您的模板，您可以显示[镜像页面链接](../send/mirror-page.md)和退订链接。
+1. 选择&#x200B;**预览**&#x200B;选项卡。 在&#x200B;**测试个性化**&#x200B;下拉菜单中，选择&#x200B;**收件人**&#x200B;以预览您的模板作为所选配置文件。
+1. 单击&#x200B;**保存**。 您的模板现已准备就绪，可用于投放。
 
 
 ## 使用模板{#use-a-delivery-template}
@@ -99,13 +99,13 @@ Campaign为每个渠道提供了一组内置模板：电子邮件、推送、短
 
 ![](assets/select-the-new-template.png)
 
-如果看不到模板，请单击 **[!UICONTROL Select link]** 字段右侧的文件夹，以浏览Campaign文件夹。
+如果看不到模板，请单击字段右侧的&#x200B;**[!UICONTROL Select link]**&#x200B;文件夹以浏览Campaign文件夹。
 
 ![](assets/browse-templates.png)
 
-从中选择所需的目录 **[!UICONTROL Folder]** 字段，或单击 **[!UICONTROL Display sub-levels]** 图标，显示当前目录子树中目录的内容。
+从&#x200B;**[!UICONTROL Folder]**&#x200B;字段中选择所需的目录，或单击&#x200B;**[!UICONTROL Display sub-levels]**&#x200B;图标以显示当前目录子树中目录的内容。
 
-选择要使用的投放模板，然后单击 **[!UICONTROL Ok]**.
+选择要使用的投放模板，然后单击&#x200B;**[!UICONTROL Ok]**。
 
 ### 执行模板 {#execute-a-template}
 
@@ -113,11 +113,11 @@ Campaign为每个渠道提供了一组内置模板：电子邮件、推送、短
 
 要执行此操作，请选择要执行的模板并右键单击。 选择 **[!UICONTROL Actions>Execute the delivery template...]**。
 
-您还可以使用 **[!UICONTROL File>Actions>Execute the delivery template...]**.
+您也可以使用&#x200B;**[!UICONTROL File>Actions>Execute the delivery template...]**。
 
 ![](assets/execute-delivery-template.png)
 
-输入投放参数并单击 **[!UICONTROL Send]**.
+输入投放参数并单击&#x200B;**[!UICONTROL Send]**。
 
 此操作在与模板关联的文件夹中生成投放。 此投放的名称是从中创建该投放的投放模板的名称。
 
@@ -142,4 +142,4 @@ Campaign为每个渠道提供了一组内置模板：电子邮件、推送、短
 
 >[!VIDEO](https://video.tv.adobe.com/v/338965?quality=12)
 
-提供了其他Campaign操作方法视频 [此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}.
+[此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}提供了其他Campaign操作方法视频。

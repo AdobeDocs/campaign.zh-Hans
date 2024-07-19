@@ -54,15 +54,15 @@ _2022 年 9 月 30 日_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>此 <a href="../send/twitter.md">X社交渠道</a> 现已可在Campaign v8中使用。 您可以：</p>
+<td> <p><a href="../send/twitter.md">X社交渠道</a>现在可在Campaign v8中使用。 您可以：</p>
 <ul> 
 <li><p>在X(以前称为Twitter)上发送消息：通过Adobe Campaign，可直接将消息发送到您的X帐户。 您还可以向所有关注者发送私信。
 </p></li>
 <li><p>收集新联系人：Adobe Campaign 可自动收集用户档案数据，您可借此来开展定位营销活动，并实施跨渠道的营销策略。
 </p></li>
 </ul>
-<p>了解如何在中连接Campaign和X <a href="../connect/ac-tw.md">详细文档</a>.</p>
-<p>了解如何在中使用Campaign创建帖子并发送私信 <a href="../connect/ac-tw.md">此页面</a>.</p>
+<p>在<a href="../connect/ac-tw.md">详细文档</a>中了解如何关联Campaign和X。</p>
+<p>在<a href="../connect/ac-tw.md">此页面</a>中了解如何使用Campaign创建帖子并发送私信。</p>
 </td> 
 </tr> 
 </tbody> 

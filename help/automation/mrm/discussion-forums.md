@@ -20,22 +20,22 @@ Adobe Campaign操作员可以使用论坛来共享信息。 以下元素每个�
 
 ## 访问论坛 {#accessing-a-forum}
 
-要访问论坛，请浏览到功能板并单击 **[!UICONTROL Forum]** 右上角的链接。
+要访问论坛，请浏览到仪表板并单击右上角的&#x200B;**[!UICONTROL Forum]**&#x200B;链接。
 
 ![](assets/mrm-forum-icon.png)
 
 消息及其响应按从最新到最旧的顺序显示。
 
-要启动新线程，请单击 **[!UICONTROL Add a discussion]** 按钮进行标记。 此 **[!UICONTROL Discussion forum]** 框（见下文）。
+要启动新线程，请单击右上角的&#x200B;**[!UICONTROL Add a discussion]**&#x200B;按钮。 出现&#x200B;**[!UICONTROL Discussion forum]**&#x200B;框（见下文）。
 
 ![](assets/mrm-forum-new-thread.png)
 
 
-在 **[!UICONTROL Message]** 字段和讨论标题 **[!UICONTROL Subject]** 字段。
+在&#x200B;**[!UICONTROL Message]**&#x200B;字段中输入您的文本，在&#x200B;**[!UICONTROL Subject]**&#x200B;字段中输入讨论标题。
 
 默认情况下，已在此论坛中发布消息的操作员会收到通知。 您可以另选一个要通知的运算符。 要通知多个操作员，请选择一组操作员。
 
-您可以使用以下方法向邮件添加附件  **[!UICONTROL Browse...]** 按钮。 附件也将包含在通知电子邮件中。 附件只能单独发送：要发送多个文件，您需要将它们压缩为.zip文件。
+您可以使用&#x200B;**[!UICONTROL Browse...]**&#x200B;按钮向邮件添加附件。 附件也将包含在通知电子邮件中。 附件只能单独发送：要发送多个文件，您需要将它们压缩为.zip文件。
 
 >[!CAUTION]
 >
@@ -47,7 +47,7 @@ Adobe Campaign操作员可以使用论坛来共享信息。 以下元素每个�
 
 要访问操作员的论坛，您可以：
 
-* 浏览至 **[!UICONTROL Administration > Access management > Operators]** 文件夹，选择运算符以打开其功能板，然后单击 **[!UICONTROL Forum]** 右上角的链接。
+* 浏览至Campaign资源管理器的&#x200B;**[!UICONTROL Administration > Access management > Operators]**&#x200B;文件夹，选择运算符以打开其仪表板，然后单击右上角的&#x200B;**[!UICONTROL Forum]**&#x200B;链接。
 * 在Adobe Campaign UI中查找操作员的姓名（通过操作员在论坛中发布的消息、分配给他们的任务），然后单击该消息以访问操作员仪表板。
 
 ## 订阅论坛 {#subscribing-to-a-forum}
@@ -56,13 +56,13 @@ Adobe Campaign操作员可以使用论坛来共享信息。 以下元素每个�
 
 要回复消息，请单击电子邮件正文，然后登录到Adobe Campaign Web界面。
 
-* 要订阅论坛，请单击 **[!UICONTROL Follow discussions]** 按钮进行标记。
+* 要订阅论坛，请单击消息列表上方右上角的&#x200B;**[!UICONTROL Follow discussions]**&#x200B;按钮。
 
   部分变为蓝色，并显示您订阅了论坛。
 
-* 要取消订阅论坛，请单击 **[!UICONTROL Unsubscribe]** 按钮。
+* 要取消订阅论坛，请单击&#x200B;**[!UICONTROL Unsubscribe]**&#x200B;按钮。
 
-* 您的个人信息板列出了您订阅的论坛。 单击 **[!UICONTROL Subscription to discussion forums]** 链接以显示列表，然后单击感兴趣的项目以访问其论坛。
+* 您的个人信息板列出了您订阅的论坛。 单击&#x200B;**[!UICONTROL Subscription to discussion forums]**&#x200B;链接以显示列表，然后单击您感兴趣的项目以访问其论坛。
 
   ![](assets/forum-subscribed.png)
 
@@ -72,10 +72,10 @@ Adobe Campaign操作员可以使用论坛来共享信息。 以下元素每个�
 如果订阅论坛的操作员未按预期收到通知：
 
 * 检查操作员的配置文件中是否输入了电子邮件地址。
-* 浏览至 **[!UICONTROL Administration > Production > Technical workflows > Campaign processes]** Campaign资源管理器的文件夹并检查 **[!UICONTROL Jobs in discussion forums]** 启动工作流时没有出现错误。
+* 浏览到Campaign资源管理器的&#x200B;**[!UICONTROL Administration > Production > Technical workflows > Campaign processes]**&#x200B;文件夹，并检查是否启动了&#x200B;**[!UICONTROL Jobs in discussion forums]**&#x200B;工作流且没有错误。
 * 检查投放日志：
 
-   * 在Adobe Campaign主页上，浏览 **[!UICONTROL Campaigns > Navigation > Deliveries]**，然后打开 **[!UICONTROL Discussion forum notification]** 投放。
-   * 在Campaign资源管理器中，浏览至 **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**，然后单击 **[!UICONTROL Discussion forum notifications]**.
+   * 在Adobe Campaign主页上，浏览到&#x200B;**[!UICONTROL Campaigns > Navigation > Deliveries]**，然后打开&#x200B;**[!UICONTROL Discussion forum notification]**&#x200B;投放。
+   * 在Campaign资源管理器中，浏览到&#x200B;**[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**，然后单击&#x200B;**[!UICONTROL Discussion forum notifications]**。
 
-  在 **[!UICONTROL Discussion forum notifications]** 框中，投放日志位于 **[!UICONTROL Edit > Delivery]** 选项卡。 您还可以查看 **[!UICONTROL Tracking > Log]** 和 **[!UICONTROL Exclusion causes]** 选项卡。
+  在&#x200B;**[!UICONTROL Discussion forum notifications]**&#x200B;框中，在&#x200B;**[!UICONTROL Edit > Delivery]**&#x200B;选项卡中找到投放日志。 您还可以查看&#x200B;**[!UICONTROL Tracking > Log]**&#x200B;和&#x200B;**[!UICONTROL Exclusion causes]**&#x200B;选项卡。

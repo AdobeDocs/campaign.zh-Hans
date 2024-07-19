@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # 在Campaign和您的CRM之间同步数据 {#data-synchronization}
 
-Adobe Campaign与您的CRM之间的数据同步由管理 **CRM连接器** 工作流活动。
+Adobe Campaign与CRM之间的数据同步由&#x200B;**CRM Connector**&#x200B;工作流活动管理。
 
 例如，要将Microsoft Dynamics数据导入Adobe Campaign，请创建以下类型的工作流：
 
@@ -22,16 +22,16 @@ Adobe Campaign与您的CRM之间的数据同步由管理 **CRM连接器** 工作
 
 此工作流通过Microsoft Dynamics导入联系人，将其与现有Adobe Campaign数据同步，删除重复联系人，并更新Adobe Campaign数据库。
 
-此 **[!UICONTROL CRM Connector]** 需要配置活动才能同步数据。
+需要配置&#x200B;**[!UICONTROL CRM Connector]**&#x200B;活动以同步数据。
 
 ![](assets/crm-connector-ms-dyn.png)
 
 通过此活动，您可以：
 
-* 从CRM导入 —  [了解详情](#importing-from-the-crm)
+* 从CRM导入 — [了解详情](#importing-from-the-crm)
 * 导出到CRM - [了解详情](#exporting-to-the-crm)
-* 导入CRM中删除的对象 —  [了解详情](#importing-objects-deleted-in-the-crm)
-* 删除CRM中的对象 —  [了解详情](#deleting-objects-in-the-crm)
+* 导入CRM中删除的对象 — [了解更多](#importing-objects-deleted-in-the-crm)
+* 删除CRM中的对象 — [了解更多](#deleting-objects-in-the-crm)
 
 ![](assets/crm-remote-op.png)
 
@@ -47,13 +47,13 @@ Adobe Campaign与您的CRM之间的数据同步由管理 **CRM连接器** 工作
 
 ![](assets/crm-wf-import.png)
 
-1. 选择 **[!UICONTROL Import from the CRM]** 操作。
-1. 在 **[!UICONTROL Remote object]** 下拉列表，选择要导入的对象。 此对象与连接器配置期间在Adobe Campaign中创建的表之一匹配。
-1. 在 **[!UICONTROL Remote fields]** 部分，输入要导入的字段。
+1. 选择&#x200B;**[!UICONTROL Import from the CRM]**&#x200B;操作。
+1. 在&#x200B;**[!UICONTROL Remote object]**&#x200B;下拉列表中，选择要导入的对象。 此对象与连接器配置期间在Adobe Campaign中创建的表之一匹配。
+1. 在&#x200B;**[!UICONTROL Remote fields]**&#x200B;部分中，输入要导入的字段。
 
-   要添加字段，请单击 **[!UICONTROL Add]** 按钮，然后单击 **[!UICONTROL Edit expression]** 图标。
+   要添加字段，请单击工具栏中的&#x200B;**[!UICONTROL Add]**&#x200B;按钮，然后单击&#x200B;**[!UICONTROL Edit expression]**&#x200B;图标。
 
-   如有必要，请使用 **[!UICONTROL Conversion]** 列。 中详细介绍了可能的转换类型 [本节](#data-format).
+   如有必要，请使用&#x200B;**[!UICONTROL Conversion]**&#x200B;列的下拉列表更改数据格式。 在[此部分](#data-format)中详细介绍了可能的转换类型。
 
    >[!CAUTION]
    >
@@ -61,7 +61,7 @@ Adobe Campaign与您的CRM之间的数据同步由管理 **CRM连接器** 工作
    >
    >对于增量数据导入，CRM端的上次修改日期也是强制性的。
 
-1. 您可以根据需要筛选要导入的数据。 要执行此操作，请单击 **[!UICONTROL Edit the filter...]** 链接。
+1. 您可以根据需要筛选要导入的数据。 为此，请单击&#x200B;**[!UICONTROL Edit the filter...]**&#x200B;链接。
 
    在以下示例中，Adobe Campaign将仅导入自2021年11月1日以来记录了一些活动的联系人。
 
@@ -69,25 +69,25 @@ Adobe Campaign与您的CRM之间的数据同步由管理 **CRM连接器** 工作
 
    >[!CAUTION]
    >
-   >与数据过滤模式相关的限制详见 [本节](#filtering-data).
+   >[此部分](#filtering-data)中详细介绍了与数据过滤模式相关的限制。
 
-1. 选择 **[!UICONTROL Use automatic index...]** 选项，用于根据日期和上次修改情况自动管理CRM和Adobe Campaign之间的增量对象同步。
+1. 选择&#x200B;**[!UICONTROL Use automatic index...]**&#x200B;选项以根据日期及其上次修改自动管理CRM和Adobe Campaign之间的增量对象同步。
 
    如需详细信息，请参阅[此小节](#variable-management)。
 
 ### 管理变量 {#variable-management}
 
-激活 **[!UICONTROL Automatic index]** 选项，用于仅收集自上次导入以来修改的对象。
+激活&#x200B;**[!UICONTROL Automatic index]**&#x200B;选项以仅收集自上次导入以来修改的对象。
 
 ![](assets/use-auto-index.png)
 
-缺省情况下，上次同步的日期存储在配置窗口中指定的选项中： **LASTIMPORT_&lt;%=instance.internalName%>_&lt;%=activityName%>**.
+上次同步的日期存储在配置窗口中指定的选项中，默认情况下为： **LASTIMPORT_&lt;%=instance.internalName%>_&lt;%=activityName%>**。
 
 >[!NOTE]
 >
->此注释仅适用于通用部件 **[!UICONTROL CRM Connector]** 活动。 对于其他CRM活动，该流程是自动的。
+>此注释仅适用于通用&#x200B;**[!UICONTROL CRM Connector]**&#x200B;活动。 对于其他CRM活动，该流程是自动的。
 >
->此选项必须手动创建并填充到 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**. 它必须是文本选项，其值需要匹配以下格式： **`yyyy/MM/dd hh:mm:ss`**.
+>必须在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**&#x200B;下手动创建并填充此选项。 它必须是文本选项，其值需要匹配以下格式： **`yyyy/MM/dd hh:mm:ss`**。
 > 
 >您需要手动更新此选项以进行任何进一步的导入。
 
@@ -95,18 +95,18 @@ Adobe Campaign与您的CRM之间的数据同步由管理 **CRM连接器** 工作
 
 默认情况下，使用以下字段（按指定顺序）：
 
-* 对于Microsoft Dynamics： **修改**，
-* 对于Salesforce.com ： **LastModifiedDate**， **SystemModstamp**.
+* 对于Microsoft Dynamics： **modifiedon**，
+* 对于Salesforce.com： **LastModifiedDate**，**SystemModstamp**。
 
-激活 **[!UICONTROL Automatic index]** 选项生成三个变量，这些变量可通过在同步工作流中使用 **[!UICONTROL JavaScript code]** 键入activity。 这些活动包括：
+激活&#x200B;**[!UICONTROL Automatic index]**&#x200B;选项会生成三个变量，它们可以通过&#x200B;**[!UICONTROL JavaScript code]**&#x200B;类型活动在同步工作流中使用。 这些活动包括：
 
 * **vars.crmOptionName**：包含上次导入日期的选项的名称。
-* **vars.crmStartImport**：上次数据导入的开始日期（包括）。
+* **vars.crmStartImport**：上次数据导入的开始日期（包含）。
 * **vars.crmEndDate**：上次数据导入的结束日期（已排除）。
 
   >[!NOTE]
   >
-  >这些日期按以下格式显示： **`yyyy/MM/dd hh:mm:ss`**.
+  >这些日期以下列格式显示： **`yyyy/MM/dd hh:mm:ss`**。
 
 ### 筛选数据 {#filtering-data}
 
@@ -123,7 +123,7 @@ Adobe Campaign与您的CRM之间的数据同步由管理 **CRM连接器** 工作
 
 在Microsoft Dynamics和Salesforce.com中，您可以按升序或降序对要导入的远程字段进行排序。
 
-要执行此操作，请单击 **[!UICONTROL Order by]** 链接并将列添加到列表中。
+为此，请单击&#x200B;**[!UICONTROL Order by]**&#x200B;链接并将列添加到列表中。
 
 列表中的列顺序是排序顺序：
 
@@ -133,7 +133,7 @@ Adobe Campaign与您的CRM之间的数据同步由管理 **CRM连接器** 工作
 
 您可以使用工作流中预先计算的群体，而不是导入CRM中包含（并可能经过筛选）的元素。
 
-要执行此操作，请选择 **[!UICONTROL Use the population calculated upstream]** 选项并指定包含远程标识符的字段。
+为此，请选择&#x200B;**[!UICONTROL Use the population calculated upstream]**&#x200B;选项并指定包含远程标识符的字段。
 
 然后，选择要导入的集客群体的字段，如下所示：
 
@@ -147,26 +147,26 @@ Adobe Campaign与您的CRM之间的数据同步由管理 **CRM连接器** 工作
 
 ![](assets/crm-export-diagram.png)
 
-1. 选择 **[!UICONTROL Export to CRM]** 操作。
-1. 转到 **[!UICONTROL Remote object]** 下拉列表并选择要导出的对象。 此对象与连接器配置期间在Adobe Campaign中创建的表之一匹配。
+1. 选择&#x200B;**[!UICONTROL Export to CRM]**&#x200B;操作。
+1. 转到&#x200B;**[!UICONTROL Remote object]**&#x200B;下拉列表并选择要导出的对象。 此对象与连接器配置期间在Adobe Campaign中创建的表之一匹配。
 
    >[!CAUTION]
    >
-   >的导出函数 **[!UICONTROL CRM Connector]** 活动可以在您的CRM上插入或更新字段。 要在CRM中启用字段更新，请指定远程表的主键。 如果缺少键，将插入数据，而不是更新数据。
+   >**[!UICONTROL CRM Connector]**&#x200B;活动的导出函数可以在您的CRM上插入或更新字段。 要在CRM中启用字段更新，请指定远程表的主键。 如果缺少键，将插入数据，而不是更新数据。
 
-1. 如果您需要执行更快的导出，请查看  **[!UICONTROL Export in Batches]** 选项。
+1. 如果您需要执行更快的导出，请选中&#x200B;**[!UICONTROL Export in Batches]**&#x200B;选项。
 
    ![](assets/crm-export-batch.png)
 
-1. 在 **[!UICONTROL Mapping]** 部分，单击 **[!UICONTROL New]** 以指定要导出的字段及其在CRM中的映射。
+1. 在&#x200B;**[!UICONTROL Mapping]**&#x200B;部分中，单击&#x200B;**[!UICONTROL New]**&#x200B;以指定要导出的字段及其在CRM中的映射。
 
-   要添加字段，请单击 **[!UICONTROL Add]** 按钮，然后单击 **[!UICONTROL Edit expression]** 图标。
+   要添加字段，请单击工具栏中的&#x200B;**[!UICONTROL Add]**&#x200B;按钮，然后单击&#x200B;**[!UICONTROL Edit expression]**&#x200B;图标。
 
    >[!NOTE]
    >
    >如果没有为字段定义匹配项，则无法更新值：这些值将直接插入您的CRM。
 
-   如有必要，请使用 **[!UICONTROL Conversion]** 列。 中详细介绍了可能的转换类型 [本节](#data-format).
+   如有必要，请使用&#x200B;**[!UICONTROL Conversion]**&#x200B;列的下拉列表更改数据格式。 在[此部分](#data-format)中详细介绍了可能的转换类型。
 
    >[!NOTE]
    >
@@ -182,17 +182,17 @@ Adobe Campaign与您的CRM之间的数据同步由管理 **CRM连接器** 工作
 
 ![](assets/crm-task-import.png)
 
-此 **[!UICONTROL Default]** 模式应用自动数据转换，在大多数情况下，转换等同于数据的复制/粘贴。 但是，会应用时区管理。
+**[!UICONTROL Default]**&#x200B;模式应用自动数据转换，在大多数情况下相当于数据的复制/粘贴。 但是，会应用时区管理。
 
 其他可能的转换包括：
 
 * **[!UICONTROL Date only]**：删除日期+时间类型字段。
 * **[!UICONTROL Without time offset]**：取消在默认模式下应用的时区管理。
-* **[!UICONTROL Copy/Paste]**：使用原始数据，例如字符串（无转化）。
+* **[!UICONTROL Copy/Paste]**：使用原始数据，如字符串（无转换）。
 
 ### 错误处理 {#error-processing}
 
-在数据导入或导出的框架中，您可以将特定进程应用于错误和拒绝。 要执行此操作，请选择 **[!UICONTROL Keep the rejections in a file]** 和 **[!UICONTROL Process errors]** 中的选项 **[!UICONTROL Behavior]** 选项卡。
+在数据导入或导出的框架中，您可以将特定进程应用于错误和拒绝。 为此，请在&#x200B;**[!UICONTROL Behavior]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Keep the rejections in a file]**&#x200B;和&#x200B;**[!UICONTROL Process errors]**&#x200B;选项。
 
 ![](assets/crm-export-options.png)
 
@@ -200,17 +200,17 @@ Adobe Campaign与您的CRM之间的数据同步由管理 **CRM连接器** 工作
 
 ![](assets/crm-export-transitions.png)
 
-然后插入相关活动以处理数据。 例如，添加 **等待** 活动和计划错误重试。
+然后插入相关活动以处理数据。 例如，添加&#x200B;**等待**&#x200B;活动并安排错误重试。
 
-此 **[!UICONTROL Reject]** 利用输出过渡，可访问包含与错误消息和代码相关的特定列的输出架构。 对于Salesforce.com ，此列为 **errorSymbol** （错误符号，不同于错误代码）， **错误消息** （错误上下文的描述）。
+通过&#x200B;**[!UICONTROL Reject]**&#x200B;输出转换，可访问包含与错误消息和代码相关的特定列的输出架构。 对于Salesforce.com，此列为&#x200B;**errorSymbol** （错误符号，不同于错误代码）、**errorMessage** （错误上下文的说明）。
 
 ## 导入CRM中删除的对象 {#importing-objects-deleted-in-the-crm}
 
 您可以将CRM中删除的对象导入Adobe Campaign。
 
-1. 选择 **[!UICONTROL Import objects deleted in the CRM]** 操作。
-1. 转到 **[!UICONTROL Remote object]** 下拉列表并选择进程涉及的对象。 此对象与连接器配置期间在Adobe Campaign中创建的表之一匹配。
-1. 指定要在中考虑的删除时段 **[!UICONTROL Start date]** 和 **[!UICONTROL End date]** 字段（包含日期）。
+1. 选择&#x200B;**[!UICONTROL Import objects deleted in the CRM]**&#x200B;操作。
+1. 转到&#x200B;**[!UICONTROL Remote object]**&#x200B;下拉列表并选择进程涉及的对象。 此对象与连接器配置期间在Adobe Campaign中创建的表之一匹配。
+1. 指定要在&#x200B;**[!UICONTROL Start date]**&#x200B;和&#x200B;**[!UICONTROL End date]**&#x200B;字段中考虑的删除时段（包含日期）。
 
    >[!CAUTION]
    >
@@ -220,4 +220,4 @@ Adobe Campaign与您的CRM之间的数据同步由管理 **CRM连接器** 工作
 
 要删除CRM上的对象，请指定要删除的远程元素的主键。
 
-此 **[!UICONTROL Behavior]** 选项卡允许您启用拒绝处理。 此选项为生成第二个输出转换 **[!UICONTROL CRM connector]** 活动。 有关详细信息，请参见 [处理时出错](#error-processing).
+**[!UICONTROL Behavior]**&#x200B;选项卡允许您启用拒绝处理。 此选项为&#x200B;**[!UICONTROL CRM connector]**&#x200B;活动生成第二个输出转换。 有关详情，请参阅[处理](#error-processing)时出错。

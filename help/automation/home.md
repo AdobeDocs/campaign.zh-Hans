@@ -47,7 +47,7 @@ Adobe Campaign 提供了用于进行活动编排的简单易用的单个界面�
   </td>
   <td valign="top">
     <div><img src="assets/do-not-localize/campaign.jpeg">
-    <b>活动编排</b>
+    <b>营销活动编排</b>
     </div>
     <br>
     <div>
@@ -73,7 +73,7 @@ Adobe Campaign 提供了用于进行活动编排的简单易用的单个界面�
     </div>
     <br>
     <div>
-    <a href="campaign-opt/campaign-typologies.md">活动优化</a>
+    <a href="campaign-opt/campaign-typologies.md">营销活动优化</a>
     </div>
     <br>
     <div>

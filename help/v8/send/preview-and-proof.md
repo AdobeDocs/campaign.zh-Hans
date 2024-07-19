@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # 预览和测试电子邮件 {#preview-test}
 
-定义消息内容后，您可以使用测试用户档案对其进行预览和测试。 如果您已插入 [个性化内容](personalize.md)，则可以使用测试用户档案数据检查此内容在消息中的显示方式。 此外，要检测消息内容或个性化设置中可能出现的错误，请向测试用户档案发送校样。 每次进行更改时都应发送校样，以验证最新内容。
+定义消息内容后，您可以使用测试用户档案对其进行预览和测试。 如果插入[个性化内容](personalize.md)，则可以使用测试用户档案数据检查此内容在消息中的显示方式。 此外，要检测消息内容或个性化设置中可能出现的错误，请向测试用户档案发送校样。 每次进行更改时都应发送校样，以验证最新内容。
 
 ## 内容预览{#preview-content}
 
@@ -22,8 +22,8 @@ ht-degree: 3%
 
 要预览消息内容，请执行以下步骤：
 
-1. 浏览至 **预览** 的选项卡。
-1. 单击 **[!UICONTROL Test personalization]** 按钮以选择用于填充个性化数据的用户档案。 您可以在数据库中选择特定收件人、种子地址或从目标群体中选择用户档案（如果已定义）。 您还可以检查内容而不进行个性化。
+1. 浏览到投放的&#x200B;**预览**&#x200B;选项卡。
+1. 单击&#x200B;**[!UICONTROL Test personalization]**&#x200B;按钮以选择用于填充个性化数据的配置文件。 您可以在数据库中选择特定收件人、种子地址或从目标群体中选择用户档案（如果已定义）。 您还可以检查内容而不进行个性化。
 
    ![](assets/test-personalization.png)
 
@@ -41,46 +41,46 @@ ht-degree: 3%
 
 ### 校对收件人 {#proofs-recipients}
 
-验证目标可以在投放模板中定义，或特定于投放。 在这两种情况下，都从 **[!UICONTROL To]** 链接，然后选择 **[!UICONTROL Target of the proofs]** 选项卡。
+验证目标可以在投放模板中定义，或特定于投放。 在这两种情况下，都从&#x200B;**[!UICONTROL To]**&#x200B;链接浏览到目标定义屏幕，并选择&#x200B;**[!UICONTROL Target of the proofs]**&#x200B;选项卡。
 
 ![](assets/target-of-proofs.png)
 
-验证目标的类型可从以下内容中选择： **[!UICONTROL Targeting mode]** 下拉列表。
+从&#x200B;**[!UICONTROL Targeting mode]**&#x200B;下拉列表中选择了校对目标的类型。
 
-* 使用 **[!UICONTROL Definition of a specific proof target]** 用于选择数据库中的收件人作为验证目标的选项。
-* 使用 **[!UICONTROL Substitution of the address]** 选项，用于输入电子邮件地址并使用目标收件人数据验证内容。 可以手动输入替代地址，也可以从下拉列表中选择替代地址。 关联的枚举是替换地址(rcpAddress)。
-默认情况下，替换是随机执行的，但您可以从主目标中通过  **[!UICONTROL Detail]** 图标。
+* 使用&#x200B;**[!UICONTROL Definition of a specific proof target]**&#x200B;选项选择数据库中的收件人作为验证目标。
+* 使用&#x200B;**[!UICONTROL Substitution of the address]**选项输入电子邮件地址并使用目标收件人数据验证内容。 可以手动输入替代地址，也可以从下拉列表中选择替代地址。 关联的枚举是替换地址(rcpAddress)。
+默认情况下，会随机执行替换，但您可以通过**[!UICONTROL Detail]**&#x200B;图标从主目标中选择特定收件人。
 
   ![](assets/target-of-proofs-substitution-details.png){width="800" align="left"}
 
-  选择 **[!UICONTROL Select a profile (must be included in the target)]** 选项并选择收件人。
+  选择&#x200B;**[!UICONTROL Select a profile (must be included in the target)]**&#x200B;选项并选择收件人。
 
   ![](assets/target-of-proofs-substitution.png){width="800" align="left"}
 
 
-* 使用 **[!UICONTROL Seed addresses]**  使用种子地址作为验证目标的选项。 这些地址可以从文件导入或手动输入。
+* 使用&#x200B;**[!UICONTROL Seed addresses]**&#x200B;选项将种子地址用作验证目标。 这些地址可以从文件导入或手动输入。
 
   >[!NOTE]
   >
   >种子地址不属于默认收件人表(nms：recipient)，而是在单独的表中创建的。 如果使用新数据扩展收件人表，则还必须使用相同数据扩展种子地址表。
 
-  要了解有关种子地址的更多信息，请参阅 [本节](../audiences/test-profiles.md).
+  在[本节](../audiences/test-profiles.md)中了解有关种子地址的更多信息。
 
-* 使用 **[!UICONTROL Specific target and Seed addresses]** 用于组合种子地址和特定电子邮件地址的选项。 随后，将在两个单独的子选项卡中定义相关配置。
+* 使用&#x200B;**[!UICONTROL Specific target and Seed addresses]**&#x200B;选项将种子地址和特定的电子邮件地址组合在一起。 随后，将在两个单独的子选项卡中定义相关配置。
 
 ### 发送验证{#proofs-send}
 
 要发送消息校样，请执行以下步骤：
 
-1. 在消息定义屏幕中，单击 **[!UICONTROL Send a proof]** 按钮。
-1. 从 **[!UICONTROL Send a proof]** 窗口，检查校样收件人。
-1. 单击 **[!UICONTROL Analyze]** 以开始准备验证消息。
+1. 在消息定义屏幕中，单击&#x200B;**[!UICONTROL Send a proof]**&#x200B;按钮。
+1. 从&#x200B;**[!UICONTROL Send a proof]**&#x200B;窗口中，检查校样收件人。
+1. 单击&#x200B;**[!UICONTROL Analyze]**&#x200B;开始准备校对邮件。
 
    ![](assets/send-proof-analyze.png){width="800" align="left"}
 
-1. 投放准备完成后，请使用 **[!UICONTROL Confirm delivery]** 以开始发送校样消息。
+1. 投放准备完成后，使用&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;开始发送校样消息。
 
-浏览至 **[!UICONTROL Audit]** 投放的选项卡，用于检查证明副本的投放。
+浏览到投放的&#x200B;**[!UICONTROL Audit]**&#x200B;选项卡以检查证明副本的投放。
 
 建议在每次修改消息内容后发送校样。
 
@@ -90,13 +90,13 @@ ht-degree: 3%
 
 ### 校对属性{#proofs-properties}
 
-校对属性设置于 **[!UICONTROL Advanced]** “投放属性”窗口的选项卡。 浏览至 **[!UICONTROL Proof properties...]** 用于定义参数和校样标签的链接。 您可以选择保留：
+验证属性在投放属性窗口的&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中设置。 浏览到&#x200B;**[!UICONTROL Proof properties...]**&#x200B;链接以定义参数和校样的标签。 您可以选择保留：
 
 * 验证中的地址重复
 * 证明中的列入阻止列表地址
 * 验证中的隔离地址
 
-默认情况下，验证消息由 `Proof #N` 在主题中提及，其中 `N` 是证明号码。 此数字随每个证明投放分析递增。 您可以更改 `proof` 前缀。
+默认情况下，验证邮件由主题中的`Proof #N`提及来标识，其中`N`是验证号。 此数字随每个证明投放分析递增。 您可以根据需要更改`proof`前缀。
 
 ![](assets/proof-parameters.png){width="800" align="left"}
 

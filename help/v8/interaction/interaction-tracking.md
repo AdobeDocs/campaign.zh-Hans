@@ -16,27 +16,27 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->这些功能仅在网上可见，并且仅对 **投放经理**.
+>这些功能仅在线上可见，并且仅对&#x200B;**投放经理**&#x200B;可见。
 
 ## 优惠建议历史{#offer-proposition-history}
 
 提出优惠建议后，即可查看演示文稿历史记录。
 
-* 在选件级别，在 **[!UICONTROL Edit]** 选项卡，单击 **[!UICONTROL Propositions]**.
+* 在选件级别的&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Propositions]**。
 
   ![](assets/offer_followup_006.png)
 
-* 在收件人的配置文件中，单击 **[!UICONTROL Propositions]** 选项卡。
+* 在收件人的配置文件中，单击&#x200B;**[!UICONTROL Propositions]**&#x200B;选项卡。
 
   ![](assets/offer_followup_002.png)
 
-* 在选件空间级别，单击 **[!UICONTROL Propositions]** 选项卡。
+* 在选件空间级别，单击&#x200B;**[!UICONTROL Propositions]**&#x200B;选项卡。
 
   ![](assets/offer_space_prop_001_b.png)
 
 ## 优惠分析报告{#offer-analysis-report}
 
-此 **[!UICONTROL Offer analysis]** 报告提供已接受或已拒绝建议数量的概览。
+**[!UICONTROL Offer analysis]**&#x200B;报告提供了已接受或已拒绝建议数量的概览。
 
 统计信息基于三个标准排序：
 
@@ -52,4 +52,4 @@ ht-degree: 4%
 
   ![](assets/offer_report_perdeliveries.png)
 
-可基于报表上半部分提供的各种标准筛选数据。 选择所需的标准后，单击 **[!UICONTROL Refresh]** 链接，以将它们应用于报表。
+可基于报表上半部分提供的各种标准筛选数据。 选择所需的标准后，单击&#x200B;**[!UICONTROL Refresh]**&#x200B;链接以将其应用于报表。

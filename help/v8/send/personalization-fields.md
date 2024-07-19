@@ -22,9 +22,9 @@ ht-degree: 4%
 
 ## 语法
 
-个性化标记始终使用以下语法： `<%=table.field%>`.
+个性化标记始终使用以下语法： `<%=table.field%>`。
 
-例如，要插入存储在收件人表中的收件人名称，个性化字段使用 `<%= recipient.lastName %>` 语法。
+例如，要插入存储在收件人表中的收件人名称，个性化字段使用`<%= recipient.lastName %>`语法。
 
 >[!CAUTION]
 >
@@ -38,9 +38,9 @@ ht-degree: 4%
 
 个性化字段已插入，可由Adobe Campaign解释：在消息准备期间，字段将被替换为给定收件人的值。
 
-![电子邮件中的个性化字段](assets/perso-fields-in-msg.png)
+电子邮件中的![个性化字段](assets/perso-fields-in-msg.png)
 
-然后，可以在中测试此替换方案 **[!UICONTROL Preview]** 选项卡。
+然后，可以在&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡中测试此替换。
 
 <!--Learn more about message preview in [this page]().-->
 
@@ -49,14 +49,14 @@ ht-degree: 4%
 在下面的用例中，了解如何使用收件人数据个性化电子邮件主题和正文：
 
 1. 创建新投放或打开现有的电子邮件投放。
-1. 浏览至 **[!UICONTROL Subject]** 用于编辑消息主题的链接。
-1. 输入&quot; **特别优惠** ”并使用工具栏中的按钮插入个性化字段。 选择 **[!UICONTROL Recipients>Title]**。
+1. 浏览到&#x200B;**[!UICONTROL Subject]**&#x200B;链接以编辑邮件的主题。
+1. 输入“**的**&#x200B;特殊优惠”并使用工具栏中的按钮插入个性化字段。 选择 **[!UICONTROL Recipients>Title]**。
 1. 重复操作以插入收件人的名称。 在所有个性化字段之间插入空格。
-1. 单击 **[!UICONTROL OK]** 进行验证。
+1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;进行验证。
 1. 在消息正文中插入个性化设置。 要执行此操作，请单击消息内容，然后单击字段插入按钮。
 1. 选择 **[!UICONTROL Recipient>Other...]**。
-1. 选择要显示信息的字段，然后单击 **[!UICONTROL OK]**.
-1. 单击 **[!UICONTROL Preview]** 选项卡以查看个性化结果。 您必须选择一个收件人以显示该收件人的消息。
+1. 选择要显示信息的字段，然后单击&#x200B;**[!UICONTROL OK]**。
+1. 单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡以查看个性化结果。 您必须选择一个收件人以显示该收件人的消息。
 
 
 

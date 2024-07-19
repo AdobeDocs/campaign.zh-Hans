@@ -33,12 +33,12 @@ ht-degree: 0%
 
 文档可以在营销活动级别（上下文文档）或项目群级别（常规文档）关联。
 
-对于营销策划， **[!UICONTROL Documents]** 选项卡包含：
+对于营销活动，**[!UICONTROL Documents]**&#x200B;选项卡包含：
 
 * 内容所需的所有文档（模板、图像等）的列表 Adobe Campaign操作员通过适当权限可本地下载的广告文件、
 * 包含路由器信息的文档（如果有）。
 
-这些文档通过以下方式链接到项目或营销策划 **[!UICONTROL Edit > Documents]** 选项卡。
+这些文档通过&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;选项卡链接到项目或营销策划。
 
 ![](assets/op_add_document.png)
 
@@ -46,11 +46,11 @@ ht-degree: 0%
 
 ![](assets/add_a_document_in_op.png)
 
-单击 **[!UICONTROL Detail...]** 图标以查看文件内容和添加信息：
+单击&#x200B;**[!UICONTROL Detail...]**&#x200B;图标可查看文件内容并添加信息：
 
 ![](assets/add_document_details.png)
 
-在功能板中，与活动关联的文档将分组到 **[!UICONTROL Document(s)]** 部分，如以下示例所示：
+在仪表板中，与营销活动关联的文档分组到&#x200B;**[!UICONTROL Document(s)]**&#x200B;部分，如以下示例所示：
 
 ![](assets/edit_documents.png)
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 投放概要是结构化的元素集（文档、商店、促销优惠券等） 由公司创建，并用于特定营销活动。 它在直邮投放的上下文中使用。
 
-这些元素在投放概要中进行分组，每个投放概要都将与一个投放关联；将在发送到的提取文件中引用该投放概要。 **服务提供商** 以附加到投放。 例如，您可以创建一个投放概要，其中引用单位及其使用的营销小册子。
+这些元素在投放概要中进行分组，每个投放概要都将与投放关联；在发送到&#x200B;**服务提供商**&#x200B;的提取文件中将引用这些元素，以便将其附加到投放。 例如，您可以创建一个投放概要，其中引用单位及其使用的营销小册子。
 
 对于营销活动，利用投放概要，可根据特定条件构建要与投放关联的外部元素：相关单位、授予的促销优惠、本地活动邀请等。
 
@@ -70,30 +70,30 @@ ht-degree: 0%
 
 ### 创建投放概要 {#create-an-outline}
 
-要创建投放概要，请单击 **[!UICONTROL Delivery outlines]** 中的子选项卡 **[!UICONTROL Edit > Documents]** 相关营销活动的选项卡。
+要创建投放概要，请单击相关营销活动&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;子选项卡。
 
 ![](assets/add-a-delivery-outline.png)
 
 
 >[!NOTE]
 >
->如果您看不到此选项卡，则此功能不适用于此营销活动，或者在您的实例中未启用直邮投放。 请参阅 [活动模板配置](marketing-campaign-templates.md#campaign-templates) 或您的许可协议。
+>如果您看不到此选项卡，则此功能不适用于此营销活动，或者在您的实例中未启用直邮投放。 请参阅[营销活动模板配置](marketing-campaign-templates.md#campaign-templates)或您的许可协议。
 
-接下来，单击 **[!UICONTROL Add a delivery outline]** 并为营销活动创建大纲的层次结构：
+接下来，单击&#x200B;**[!UICONTROL Add a delivery outline]**&#x200B;并为该营销活动创建大纲的层次结构：
 
-1. 右键单击树的根并选择 **[!UICONTROL New > Delivery outlines]**.
-1. 右键单击刚刚创建的大纲，然后选择 **[!UICONTROL New > Item]** 或 **[!UICONTROL New > Personalization fields]**.
+1. 右键单击树的根并选择&#x200B;**[!UICONTROL New > Delivery outlines]**。
+1. 右键单击刚刚创建的大纲，然后选择&#x200B;**[!UICONTROL New > Item]**&#x200B;或&#x200B;**[!UICONTROL New > Personalization fields]**。
 
 ![](assets/del-outline-add-new-item.png)
 
 大纲可以包含项目、个性化字段和选件：
 
 * 项目可以是物理文档，例如，此处引用和描述的文档，将附加到投放。
-* 通过个性化字段，您可以创建与投放而不是收件人相关的个性化元素。 因此，可以创建值以用于特定目标的投放（欢迎优惠、折扣等） 它们在Adobe Campaign中创建，并通过导入大纲 **[!UICONTROL Import personalization fields...]** 链接。
+* 通过个性化字段，您可以创建与投放而不是收件人相关的个性化元素。 因此，可以创建值以用于特定目标的投放（欢迎优惠、折扣等） 它们在Adobe Campaign中创建，并通过&#x200B;**[!UICONTROL Import personalization fields...]**&#x200B;链接导入大纲。
 
   ![](assets/del-outline-perso-field.png)
 
-  也可以通过单击 **[!UICONTROL Add]** 图标（位于列表区域的右侧）。
+  也可以通过单击列表区域右侧的&#x200B;**[!UICONTROL Add]**&#x200B;图标，直接在大纲中创建它们。
 
   ![](assets/add-del-outline-button.png)
 
@@ -108,7 +108,7 @@ ht-degree: 0%
 
 ![](assets/delivery-outline-selected.png)
 
-此 **[!UICONTROL Summary]** 投放的选项卡还会显示以下信息：
+投放的&#x200B;**[!UICONTROL Summary]**&#x200B;选项卡也显示以下信息：
 
 ![](assets/delivery-outline-in-dashboard.png)
 
@@ -120,4 +120,4 @@ ht-degree: 0%
 
 ![](assets/campaign-export-template.png)
 
-导出模型必须与为相关投放选择的服务提供商关联。 请参阅 [本节](providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+导出模型必须与为相关投放选择的服务提供商关联。 请参阅[此部分](providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures)。

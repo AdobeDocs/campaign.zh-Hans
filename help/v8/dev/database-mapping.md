@@ -37,7 +37,7 @@ ht-degree: 1%
 
 ## 说明 {#description}
 
-架构的根元素不再是 **`<srcschema>`**，但 **`<schema>`**.
+架构的根元素不再是&#x200B;**`<srcschema>`**，而是&#x200B;**`<schema>`**。
 
 这会将我们带到另一种类型的文档，它自动从源架构生成，简称为架构。 Adobe Campaign应用程序将使用此架构。
 
@@ -47,7 +47,7 @@ SQL命名规则如下：
 
 * 表：架构命名空间和名称的连接
 
-  在本例中，表的名称是通过以下位置的架构主元素输入的： **sqltable** 属性：
+  在我们的示例中，表的名称是通过&#x200B;**sqltable**&#x200B;属性中架构的主元素输入的：
 
   ```sql
   <element name="recipient" sqltable="CusRecipient">
@@ -55,7 +55,7 @@ SQL命名规则如下：
 
 * 字段：前面有根据类型定义的前缀的元素名称（例如，“i”表示整数，“d”表示双精度，“s”表示字符串，“ts”表示日期等）
 
-  字段名称是通过 **sqlname** 每种类型属性 **`<attribute>`** 和 **`<element>`**：
+  字段名称通过每个键入的&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;的&#x200B;**sqlname**&#x200B;属性输入：
 
   ```sql
   <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
@@ -82,9 +82,9 @@ SQL字段约束如下：
 
 ## XML字段 {#xml-fields}
 
-默认情况下，任何键入的 **`<attribute>`** 和 **`<element>`** 元素映射到数据架构表的SQL字段。 但是，您可以用XML而不是SQL引用此字段，这意味着数据存储在包含所有XML字段值的表的备注字段(“mData”)中。 这些数据的存储是一个观察模式结构的XML文档。
+默认情况下，任何类型的&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;元素均映射到数据架构表的SQL字段。 但是，您可以用XML而不是SQL引用此字段，这意味着数据存储在包含所有XML字段值的表的备注字段(“mData”)中。 这些数据的存储是一个观察模式结构的XML文档。
 
-要在XML中填充字段，您必须添加 **xml** 对于相关元素，属性值为“true”。
+要在XML中填充字段，您必须将值为“true”的&#x200B;**xml**&#x200B;特性添加到相关元素。
 
 **示例**
 

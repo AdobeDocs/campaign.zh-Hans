@@ -99,7 +99,7 @@ ht-degree: 99%
    + [管理订阅](start/subscriptions.md)
 + 内容管理 {#content}
    + [设计 Web 应用程序和表单](dev/webapps.md)
-+ 自动化和工作流 {#automation}
++ 自动化和工作流{#automation}
    + [Campaign 自动化指南 >](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/home)
 + 隐私和安全管理 {#privacy}
    + [管理隐私请求](start/privacy.md)

@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # 交互模块高级设置
 
-Campaign交互模块配置已保留给专家用户。 有关高级设置的详情，请参阅 **Campaign Classicv7文档**：
+Campaign交互模块配置已保留给专家用户。 有关高级设置的详情，请参阅&#x200B;**Campaign Classicv7文档**：
 
-了解如何在优惠中使用其他上下文数据 [本页内容](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/additional-data.html){target="_blank"}.
+在此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/additional-data.html){target="_blank"}中了解如何在选件[中使用其他上下文数据。
 
-了解如何丰富优惠的资格标准 [本页内容](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target="_blank"}.
+在此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target="_blank"}中了解如何扩充优惠[的资格标准。
 
-了解创建测试环境的步骤  [本页内容](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/creating-a-test-environment.html){target="_blank"}.
+在此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/creating-a-test-environment.html){target="_blank"}中了解创建测试环境[的步骤。
 
-了解如何使用挂接来修改优惠引擎的标准行为 [本页内容](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/hooks.html){target="_blank"}.
+在此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/hooks.html){target="_blank"}中了解如何使用挂接来修改优惠引擎[的标准行为。
 

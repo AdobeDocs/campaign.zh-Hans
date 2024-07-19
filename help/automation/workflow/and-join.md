@@ -24,7 +24,7 @@ ht-degree: 14%
 
 >[!NOTE]
 >
->请注意，使用不同定向维度配置的集客过渡不能使用 **[!UICONTROL AND-join]** 活动。
+>请注意，使用不同定向维度配置的集客过渡不能使用&#x200B;**[!UICONTROL AND-join]**&#x200B;活动连接在一起。
 
 活动的叫客已发送群体是通过在活动的集客过渡中选择主集来确定的。
 
@@ -32,4 +32,4 @@ ht-degree: 14%
 
 >[!CAUTION]
 >
->在 **AND — 连接** 类型活动时，将合并事件变量，但是如果同一变量定义了两次，则会发生冲突，并且值保持不变。 如需详细信息，请参阅[此小节](javascript-scripts-and-templates.md#event-variables)。
+>对于&#x200B;**AND-join**&#x200B;类型的活动，将合并事件变量，但是如果同一变量定义了两次，则会发生冲突，且值仍未确定。 如需详细信息，请参阅[此小节](javascript-scripts-and-templates.md#event-variables)。

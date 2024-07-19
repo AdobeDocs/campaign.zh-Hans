@@ -13,46 +13,46 @@ ht-degree: 2%
 
 # 更改数据源 {#change-data-source}
 
-使用 **[!UICONTROL Change data source]** 活动以更改的数据源 [工作流工作表](use-workflow-data.md#workflow-temporary-work-table). 此活动为跨不同数据源(如联合数据访问(FDA)、Campaign云数据库(FFDA)和Campaign本地数据库)管理数据提供了更大的灵活性。
+使用&#x200B;**[!UICONTROL Change data source]**&#x200B;活动更改[工作流工作表](use-workflow-data.md#workflow-temporary-work-table)的数据源。 此活动为跨不同数据源(如联合数据访问(FDA)、Campaign云数据库(FFDA)和Campaign本地数据库)管理数据提供了更大的灵活性。
 
-工作流 **[!UICONTROL Working table]** 用于处理与工作流活动共享数据。
+工作流&#x200B;**[!UICONTROL Working table]**&#x200B;用于处理与工作流活动共享数据。
 
-默认情况下， **[!UICONTROL Working table]** 是在与需要查询的数据源相同的数据库中创建的。
-例如，当查询 **[!UICONTROL Recipients]** 表，存储在云数据库中，工作流将创建 **[!UICONTROL Working table]** 在同一云数据库中。
+默认情况下，**[!UICONTROL Working table]**是在与需要查询的数据源相同的数据库中创建的。
+例如，在查询存储在云数据库上的**[!UICONTROL Recipients]**&#x200B;表时，工作流会在同一云数据库上创建&#x200B;**[!UICONTROL Working table]**。
 
-使用 **[!UICONTROL Change Data Source]** 活动，以便为使用其他数据源 **[!UICONTROL Working table]**.
+使用&#x200B;**[!UICONTROL Change Data Source]**&#x200B;活动为您的&#x200B;**[!UICONTROL Working table]**&#x200B;使用其他数据源。
 
-请注意，在使用时 **[!UICONTROL Change Data Source]** 活动，您需要切换回云数据库以继续执行工作流。
+请注意，在使用&#x200B;**[!UICONTROL Change Data Source]**&#x200B;活动时，您需要切换回云数据库以继续执行工作流。
 
 >[!IMPORTANT]
 >
->请注意 **[!UICONTROL Change Dimension]** 和 **[!UICONTROL Change Data source]** 活动不应添加在一行中。 如果需要连续使用这两个活动，请确保包含 **[!UICONTROL Enrichement]** 活动。 这可以确保正确执行并防止潜在的冲突或错误。
+>请注意，不应将&#x200B;**[!UICONTROL Change Dimension]**&#x200B;和&#x200B;**[!UICONTROL Change Data source]**&#x200B;活动添加到一行中。 如果需要连续使用这两个活动，请确保在它们之间包含&#x200B;**[!UICONTROL Enrichement]**&#x200B;活动。 这可以确保正确执行并防止潜在的冲突或错误。
 
-要使用 **[!UICONTROL Change Data Source]** 活动，您必须：
+要使用&#x200B;**[!UICONTROL Change Data Source]**&#x200B;活动，您必须：
 
 1. 创建工作流。
 
-1. 使用查询目标收件人 **[!UICONTROL Query]** 活动。
+1. 使用&#x200B;**[!UICONTROL Query]**&#x200B;活动查询目标收件人。
 
-   欲知关于 **[!UICONTROL Query]** 活动，请参阅此 [页面](query.md#create-a-query).
+   有关&#x200B;**[!UICONTROL Query]**&#x200B;活动的详细信息，请参阅此[页面](query.md#create-a-query)。
 
-1. 添加 **[!UICONTROL Change data source]** 活动。
+1. 添加&#x200B;**[!UICONTROL Change data source]**&#x200B;活动。
 
    ![](assets/change-data-source.png)
 
-1. 编辑您的 **[!UICONTROL Change data source]** 要选择的活动 **[!UICONTROL Default data source]**.
+1. 编辑您的&#x200B;**[!UICONTROL Change data source]**&#x200B;活动以选择&#x200B;**[!UICONTROL Default data source]**。
 
    随后，包含查询结果的工作表将移至默认的Campaign本地数据库。
 
    ![](assets/change-data-source_2.png)
 
-1. 添加 **[!UICONTROL JavaScript code]** 对工作表执行单一操作的活动。
+1. 添加&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动以对工作表执行单一操作。
 
-   欲知关于 **[!UICONTROL JavaScript code]** 活动，请参阅 [此页面](sql-code-and-javascript-code.md#javascript-code).
+   有关&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动的详细信息，请参阅[此页面](sql-code-and-javascript-code.md#javascript-code)。
 
-1. 添加其他 **[!UICONTROL Change data source]** 活动以切换回云数据库。
+1. 添加另一个&#x200B;**[!UICONTROL Change data source]**&#x200B;活动以切换回云数据库。
 
-1. 编辑此活动并选择 **[!UICONTROL Active FDA external account]**，以及相应的 **[!UICONTROL External database]** 外部帐户。
+1. 编辑此活动并选择&#x200B;**[!UICONTROL Active FDA external account]**&#x200B;以及相应的&#x200B;**[!UICONTROL External database]**&#x200B;外部帐户。
 
    ![](assets/change-data-source_3.png)
 

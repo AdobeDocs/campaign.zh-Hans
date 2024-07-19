@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Campaign API暂存机制
 
-在上下文中 [企业(FFDA)部署](enterprise-deployment.md)，不建议在性能（延迟和并发）方面引发单一调用。 批处理操作始终是首选操作。 为了提高性能，引入API将被重定向到本地数据库。
+在[企业(FFDA)部署](enterprise-deployment.md)的上下文中，不建议在性能（延迟和并发）方面引发单一调用。 批处理操作始终是首选操作。 为了提高性能，引入API将被重定向到本地数据库。
 
 默认情况下，某些内置架构启用了Campaign暂存功能。 我们也可以在任何自定义架构上启用它。 暂存机制简介：
 
@@ -28,7 +28,7 @@ Campaign Classicv7 API仍然可用，但无法从这种新的暂存机制受益�
 
 >[!CAUTION]
 >
->* 借助此新机制，现在可以针对渠道选择、订阅、取消订阅或移动注册执行数据同步 **异步**.
+>* 通过此新机制，渠道选择退出、订阅、取消订阅或移动注册的数据同步现在为&#x200B;**异步**。
 >
 >* 暂存仅适用于存储在云数据库中的架构。 请勿在复制的架构上启用暂存。 请勿在本地架构上启用暂存。 不要在暂存方案上启用暂存
 >
@@ -52,11 +52,11 @@ Campaign Classicv7 API仍然可用，但无法从这种新的暂存机制受益�
    </srcSchema>
    ```
 
-   在中了解有关自定义架构创建的更多信息 [此页面](../dev/create-schema.md).
+   在[此页面](../dev/create-schema.md)中了解有关自定义架构创建的更多信息。
 
 1. 保存并更新数据库结构。  [了解详情](../dev/update-database-structure.md)
 
-1. 在模式定义中启用暂存机制，方法是添加 **autoStg=&quot;true&quot;** 参数。
+1. 通过添加&#x200B;**autoStg=&quot;true&quot;**&#x200B;参数，在架构定义中启用暂存机制。
 
    ```
    <srcSchema _cs="Sample Table (dem)" "YYYY-DD-MM"

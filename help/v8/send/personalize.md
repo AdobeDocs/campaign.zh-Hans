@@ -16,10 +16,10 @@ ht-degree: 48%
 
 为了充分利用每一个营销活动，Adobe Campaign为您提供了一种方法，可向您提供与客户级别相关的自定义内容。 根据用户档案数据，利用个性化功能为不同的组和个人创建自定义体验：利用您拥有的关于每个特定收件人的数据和信息，您可以根据他们来调整消息。 这可以是他们的名字、兴趣、居住地、购买的内容等等。
 
-Adobe Campaign简化了个性化：您可以使用单个页面显示为每个收件人自定义的不同类型的内容 [消息模板](create-templates.md). 在事务型消息（如购买确认或购物车放弃电子邮件）中，将每个人的产品列表信息包含在单个电子邮件模板中。
+Adobe Campaign简化了个性化：您可以使用单个[消息模板](create-templates.md)显示为每个收件人自定义的不同类型的内容。 在事务型消息（如购买确认或购物车放弃电子邮件）中，将每个人的产品列表信息包含在单个电子邮件模板中。
 
 
-## 个性化策略 {#personalization-strategy}
+## Personalization策略 {#personalization-strategy}
 
 使用 Campaign 创建动态内容并发送个性化消息。可以结合个性化功能来改进您的消息并创建自定义用户体验。
 
@@ -47,11 +47,11 @@ Adobe Campaign简化了个性化：您可以使用单个页面显示为每个收
 
 ## 护栏和建议{#perso-guardrails}
 
-### 个性化超时{#perso-timeout}
+### Personalization超时{#perso-timeout}
 
 要改进投放保护，您可以为个性化阶段设置超时期限。
 
-在 **[!UICONTROL Delivery]** 选项卡 **[!UICONTROL Delivery properties]**，为选择最大值（以秒为单位） **[!UICONTROL Maximum personalization run time]** 选项。
+在&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡中，为&#x200B;**[!UICONTROL Maximum personalization run time]**&#x200B;选项选择最大值（以秒为单位）。
 
 在预览或发送期间，如果个性化阶段超过您在此字段中设置的最大时间，则流程将中止，并出现错误消息，投放将失败。
 
@@ -62,7 +62,7 @@ Adobe Campaign简化了个性化：您可以使用单个页面显示为每个收
 
 ### 内部变量{#internal-variables}
 
-以下变量是用于个性化的内部变量，不得修改： **投放**， **message**， **数据源**， **targetdata**， **提供程序**， **优惠券**， **优惠券值**， **建议**.
+以下变量是可用于个性化但不得修改的内部变量：**投放**、**消息**、**数据源**、**targetData**、**提供程序**、**优惠券**、**优惠券值**、**建议**。
 
 
 ## 教程视频 {#personalization-video}

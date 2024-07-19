@@ -18,11 +18,11 @@ ht-degree: 19%
 
 营销活动跟踪功能可跟踪发送的消息，并帮助您分析收件人的行为：打开、点击链接、订阅/退订等。 您可以访问专用日志、报告和量度，查询数据库以查看收集的数据等等。
 
-有关详细信息，请参见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html#tracking-tab){target="_blank"}.
+有关详细信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html#tracking-tab){target="_blank"}。
 
 投放仪表板是在发送消息期间用于监测投放和潜在问题的关键工具。
 
-有关详细信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#sending-messages){target="_blank"}.
+有关详细信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/delivery-dashboard.html#sending-messages){target="_blank"}。
 
 下面列出了Campaign中可用的关键跟踪功能。
 
@@ -51,7 +51,7 @@ ht-degree: 19%
 
 **跟踪日志**
 
-此 **跟踪** 发送投放并激活跟踪后，技术工作流会检索跟踪数据。 此数据可在投放的“跟踪”选项卡中找到。
+发送投放并激活跟踪后，**跟踪**&#x200B;技术工作流会检索跟踪数据。 此数据可在投放的“跟踪”选项卡中找到。
 
 [请参阅 Campaign Classic v7 文档以了解详情](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/accessing-the-tracking-logs.html#sending-messages){target="_blank"}
 
@@ -119,16 +119,16 @@ Adobe Campaign提供了一组功能来监控您的流程和环境。
 
 在发送后监控投放是确保营销活动有效并接触到客户的重要步骤。
 
-详细了解发送投放后可以监控的信息，并了解如何在中管理投放失败和隔离 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=zh-Hans#sending-messages){target="_blank"}
+请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=zh-Hans#sending-messages){target="_blank"}以了解有关发送投放后可以监视的信息、如何管理投放失败和隔离的详细信息
 
 ### 监测工作流
 
-了解如何在中监测工作流执行 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html)
+了解如何在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html)中监视工作流执行
 
 ### 监控实例
 
-有关实例监控准则，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/introduction/monitoring-guidelines.html#monitoring-campaign-classic){target="_blank"}
+[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/introduction/monitoring-guidelines.html#monitoring-campaign-classic){target="_blank"}中提供了实例监视准则
 
 使用审核记录自助服务界面可监控在实例中所做的更改。 审核记录可实时捕获在Adobe Campaign实例中发生的操作和事件的全面列表。 您可以访问数据的历史记录，以帮助回答以下问题：您的工作流发生了什么情况、上次更新这些工作流的人员或者您的用户在实例中做了什么。
 
-要了解有关审核记录的详细信息，请参阅此 [页面](../reporting/audit-trail.md){target="_blank"}
+在此[页](../reporting/audit-trail.md){target="_blank"}中了解有关审核追踪的详细信息

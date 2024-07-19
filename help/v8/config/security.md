@@ -23,7 +23,7 @@ ht-degree: 1%
 隐私配置和强化是安全优化的关键元素。 以下是有关隐私的一些可遵循的最佳实践：
 
 * 使用HTTPS而不是HTTPProtect您的客户个人信息(PI)
-* 使用 [PI视图限制](../dev/restrict-pi-view.md) 保护隐私并防止数据被滥用
+* 使用[PI视图限制](../dev/restrict-pi-view.md)保护隐私并防止数据被滥用
 * 确保加密密码受到限制
 * Protect可能包含个人信息的页面，如镜像页面、Web应用程序等。
 
@@ -40,24 +40,24 @@ ht-degree: 1%
 * 创建足够的安全组
 * 检查每个操作员是否具有适当的访问权限
 
-要了解有关权限的更多信息，请参阅 [本节](../start/gs-permissions.md)
+在[本节](../start/gs-permissions.md)中了解有关权限的详细信息
 
 ## 编码准则
 
 在Adobe Campaign（工作流、Javascript、JSSP等）中进行开发时，请始终遵循以下准则：
 
-* **脚本**：尝试避免SQL语句，使用参数化函数而不是字符串连接，通过添加要用于允许列表的SQL函数来避免SQL注入。
+* **脚本编写**：尝试避免SQL语句，使用参数化函数而不是字符串连接，通过添加要用于允许列表的SQL函数来避免SQL注入。
 
-* **保护数据模型**：使用已命名权限限制操作员操作，添加系统过滤器(sysFilter)
+* **保护数据模型**：使用已命名权限限制操作员操作，添加系统筛选器(sysFilter)
 
-* **在Web应用程序中添加captcha**：在您的公共登陆页面和订阅页面中添加资本编码。
+* **在Web应用程序中添加验证码**：在您的公共登陆页面和订阅页面中添加验证码。
 
-了解详情，请参阅 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}.
+请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}以了解详情。
 
 
 ## 个性化
 
-向内容添加个性化链接时，请始终避免在URL的主机名部分进行任何个性化设置，以避免潜在的安全缺口。 绝不应该在所有URL属性中使用以下示例&lt;`a href="">` 或 `<img src="">`：
+向内容添加个性化链接时，请始终避免在URL的主机名部分进行任何个性化设置，以避免潜在的安全缺口。 绝不应该在所有URL属性&lt;`a href="">`或`<img src="">`中使用以下示例：
 
 * `<%= url >`
 * `https://<%= url >`
@@ -71,15 +71,15 @@ ht-degree: 1%
 
 此限制允许您删除密码字段，但允许所有用户从界面访问外部帐户。 请参阅[此页面](../dev/restrict-pi-view.md)以了解详情。
 
-1. 进入 **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**.
+1. 前往&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**。
 
-1. 新建 **[!UICONTROL Extension of a schema]**.
+1. 创建新&#x200B;**[!UICONTROL Extension of a schema]**。
 
-1. 选择 **[!UICONTROL External Account]** (extAccount)。
+1. 选择&#x200B;**[!UICONTROL External Account]** (extAccount)。
 
 1. 在最后一个屏幕中，可以编辑新的srcSchema以限制对所有密码字段的访问：
 
-   您可以替换主元素(`<element name="extAccount" ... >`)，按照：
+   您可以通过以下方式替换主元素(`<element name="extAccount" ... >`)：
 
    ```
    <element name="extAccount">
@@ -125,7 +125,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >您可以替换 `$(loginId) = 0 or $(login) = 'admin'` 按 `hasNamedRight('admin')` 让所有拥有管理员权限的用户都能看到这些密码。
+   >您可以将`$(loginId) = 0 or $(login) = 'admin'`替换为`hasNamedRight('admin')`，以使所有具有管理员权限的用户都能看到这些密码。
 
 
 ## 访问管理
@@ -135,16 +135,16 @@ ht-degree: 1%
 * 创建足够的安全组
 * 检查每个操作员是否具有适当的访问权限
 
-要了解有关权限的更多信息，请参阅 [在此部分中](../start/gs-permissions.md).
+在本节](../start/gs-permissions.md)中了解有关[中权限的更多信息。
 
 ## 编码准则
 
 在Adobe Campaign（工作流、Javascript、JSSP等）中进行开发时，请始终遵循以下准则：
 
-* **脚本**：尝试避免SQL语句，使用参数化函数而不是字符串连接，通过添加要用于允许列表的SQL函数来避免SQL注入。
+* **脚本编写**：尝试避免SQL语句，使用参数化函数而不是字符串连接，通过添加要用于允许列表的SQL函数来避免SQL注入。
 
-* **保护数据模型**：使用已命名权限限制操作员操作，添加系统过滤器(sysFilter)
+* **保护数据模型**：使用已命名权限限制操作员操作，添加系统筛选器(sysFilter)
 
-* **在Web应用程序中添加captcha**：在您的公共登陆页面和订阅页面中添加资本编码。
+* **在Web应用程序中添加验证码**：在您的公共登陆页面和订阅页面中添加验证码。
 
-了解详情，请参阅 [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}.
+请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}以了解详情。

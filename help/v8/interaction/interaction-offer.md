@@ -16,19 +16,19 @@ ht-degree: 3%
 
 要创建选件，请执行以下步骤：
 
-1. 浏览至 **[!UICONTROL Campaigns]** 选项卡，然后单击 **[!UICONTROL Offers]** 链接。
+1. 浏览到&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡并单击&#x200B;**[!UICONTROL Offers]**&#x200B;链接。
 
 1. 单击 **[!UICONTROL Create]** 按钮。
 
 1. 更改标签并选择选件应属于的类别。
 
-1. 单击 **[!UICONTROL Save]** 以创建选件。
+1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建选件。
 
    该选件可在平台中使用，并且可以配置其内容。
 
 ## 资格设置
 
-您现在可以使用 **[!UICONTROL Eligibility]** 选项卡定义：
+您现在可以使用&#x200B;**[!UICONTROL Eligibility]**&#x200B;选项卡定义：
 
 * 优惠的资格期限。 [了解详情](#eligibility-period)
 * 优惠目标群体上的过滤器。 [了解详情](#filters-on-the-target)
@@ -36,7 +36,7 @@ ht-degree: 3%
 
 ### 优惠资格期{#eligibility-period}
 
-在 **[!UICONTROL Eligibility]** 选项卡中，定义优惠的资格期限。 使用下拉列表选择日历中的开始日期和结束日期。
+在优惠的&#x200B;**[!UICONTROL Eligibility]**&#x200B;选项卡中，定义优惠的资格期限。 使用下拉列表选择日历中的开始日期和结束日期。
 
 ![](assets/offer_eligibility_create_002.png)
 
@@ -44,9 +44,9 @@ ht-degree: 3%
 
 ### 在目标上添加过滤器 {#filters-on-the-target}
 
-在 **[!UICONTROL Eligibility]** 选项卡中，将过滤器应用于选件目标。
+在优惠的&#x200B;**[!UICONTROL Eligibility]**&#x200B;选项卡中，将过滤器应用于优惠目标。
 
-要执行此操作，请单击 **[!UICONTROL Edit query]** 链接并选择要应用的过滤器。
+为此，请单击&#x200B;**[!UICONTROL Edit query]**&#x200B;链接，然后选择要应用的筛选器。
 
 ![](assets/offer_eligibility_create_003.png)
 
@@ -68,7 +68,7 @@ ht-degree: 3%
 
 要在选件中创建权重，请应用以下步骤：
 
-1. 在 **[!UICONTROL Eligibility]** 选项卡中，单击 **[!UICONTROL Add]**.
+1. 在选件的&#x200B;**[!UICONTROL Eligibility]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Add]**。
 
    ![](assets/offer_weight_create_001.png)
 
@@ -92,7 +92,7 @@ ht-degree: 3%
 
    ![](assets/offer_weight_create_004.png)
 
-1. 单击 **[!UICONTROL OK]** 以减轻重量。
+1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以保存权重。
 
    ![](assets/offer_weight_create_005.png)
 
@@ -104,22 +104,22 @@ ht-degree: 3%
 
 配置完成后，资格规则的摘要将显示在优惠仪表板上。
 
-要查看它，请单击 **[!UICONTROL Schedule and eligibility rules]** 链接。
+要查看它，请单击&#x200B;**[!UICONTROL Schedule and eligibility rules]**&#x200B;链接。
 
 ![](assets/offer_eligibility_create_005.png)
 
 ## 创建选件内容 {#creating-the-offer-content}
 
-使用 **[!UICONTROL Content]** 选项卡以定义选件内容。
+使用&#x200B;**[!UICONTROL Content]**&#x200B;选项卡定义选件内容。
 
 ![](assets/offer_content_create_001.png)
 
 1. 定义选件内容的各种参数。
 
-   * **[!UICONTROL Title]** ：指定要显示在选件中的标题。 警告：这不是指优惠的标签，该标签在 **[!UICONTROL General]** 选项卡。
+   * **[!UICONTROL Title]** ：指定您希望显示在选件中的标题。 警告：这不是指在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中定义的选件标签。
    * **[!UICONTROL Destination URL]** ：指定选件的URL。 必须以“http://”或“https://”开头。
    * **[!UICONTROL Image URL]** ：指定选件图像的URL或访问路径。
-   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** ：在所需的选项卡中输入选件正文。 要生成跟踪，请 **[!UICONTROL HTML content]** HTML必须由可以包含在 `<div>` 键入元素。 例如，的结果 `<table>` HTML页面中的元素如下所示：
+   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** ：在所需的选项卡中输入选件正文。 要生成跟踪，**[!UICONTROL HTML content]**&#x200B;必须由可以包含在`<div>`类型元素中的HTML元素组成。 例如，HTML页面中`<table>`元素的结果将如下所示：
 
    ```
       <div> 
@@ -136,11 +136,11 @@ ht-degree: 3%
       </div>
    ```
 
-   了解如何在中定义接受URL [本节](interaction-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted).
+   在[本节](interaction-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted)中了解如何定义接受URL。
 
    ![](assets/offer_content_create_002.png)
 
-   要查找在优惠空间配置期间定义的必填字段，请单击 **[!UICONTROL Content definitions]** 用于显示列表的链接。 [了解详情](interaction-offer-spaces.md)
+   要查找在优惠空间配置期间定义的必填字段，请单击&#x200B;**[!UICONTROL Content definitions]**&#x200B;链接以显示列表。 [了解详情](interaction-offer-spaces.md)
 
    ![](assets/offer_content_create_003.png)
 
@@ -152,7 +152,7 @@ ht-degree: 3%
 
 操作步骤：
 
-1. 单击 **[!UICONTROL Preview]** 选项卡。
+1. 单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡。
 
    ![](assets/offer_preview_create_001.png)
 
@@ -180,20 +180,20 @@ Creating hypotheses is detailed in [this page](../../campaign/using/about-respon
 
 ## 批准和激活优惠{#approve-offers}
 
-您现在可以批准并激活选件，使其在以下位置提供： **实时** 环境。
+您现在可以批准并激活选件以使其在&#x200B;**实时**&#x200B;环境中可用。
 
-有关详细信息，请参见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html#approving-offer-content){target="_blank"}.
+有关详细信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html#approving-offer-content){target="_blank"}。
 
 ## 管理优惠演示{#offer-presentation}
 
-通过Campaign，您可以使用展示规则控制优惠建议的流程。 这些特定于Campaign交互的规则包括 **类型规则**. 它们允许您根据已对收件人作出的建议历史记录排除优惠。 它们会在环境中引用。
+通过Campaign，您可以使用展示规则控制优惠建议的流程。 这些特定于营销活动交互的规则是&#x200B;**类型规则**。 它们允许您根据已对收件人作出的建议历史记录排除优惠。 它们会在环境中引用。
 
-有关详细信息，请参见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html#managing-offers){target="_blank"}.
+有关详细信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html#managing-offers){target="_blank"}。
 
 ## 优惠模拟
 
-此 **模拟** 利用模块，可在将建议发送给收件人之前，测试属于某个类别或环境的选件分布。
+使用&#x200B;**Simulation**&#x200B;模块，您可以在向收件人发送建议之前测试属于某个类别或某个环境的选件分布。
 
 模拟会考虑先前应用于优惠的上下文和资格规则及其呈现规则。 这样，您就可以测试和优化各种版本的优惠建议，而无需实际使用优惠或过度/缺征询目标，因为模拟对目标收件人没有影响。
 
-有关优惠模拟的详细信息，请参阅 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html){target="_blank"}.
+有关选件模拟的详细信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html){target="_blank"}。

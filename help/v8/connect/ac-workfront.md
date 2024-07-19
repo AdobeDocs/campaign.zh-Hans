@@ -19,4 +19,4 @@ ht-degree: 0%
 Adobe Workfront文档中详细描述了配置此集成的步骤。
 
 
-[Adobe Workfront中的Adobe Campaign模块](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/adobe-campaign-classic-connector.html){target="_blank"}.
+Adobe Workfront中的[Adobe Campaign模块](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/adobe-campaign-classic-connector.html){target="_blank"}。

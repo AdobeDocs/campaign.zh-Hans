@@ -16,19 +16,19 @@ ht-degree: 67%
 
 您可以配置Adobe Analytics以集成Campaign和Analytics。
 
-此集成允许Adobe Campaign和Adobe Analytics通过 **网站分析连接器** 加载项。 此集成将Adobe Campaign投放的电子邮件营销活动的指标和属性发送到Adobe Analytics。
+此集成允许Adobe Campaign和Adobe Analytics通过&#x200B;**Web Analytics连接器**&#x200B;加载项进行交互。 此集成将Adobe Campaign投放的电子邮件营销活动的指标和属性发送到Adobe Analytics。
 
 >[!NOTE]
 >
->作为托管Cloud Service用户， [联系人Adobe](../start/campaign-faq.md#support) 将Campaign与Adobe Experience Cloud服务和解决方案配合使用。 必须通过专用软件包在您的环境中安装Web Analytics连接器加载项。
+>作为托管Cloud Service用户，[联系Adobe](../start/campaign-faq.md#support)以将Campaign与Adobe Experience Cloud服务和解决方案连接。 必须通过专用软件包在您的环境中安装Web Analytics连接器加载项。
 
 使用 Adobe Analytics Connector，Adobe Campaign 可以对互联网受众进行评测（网站分析）。利用Web分析工具，Adobe Campaign可将指标和营销活动属性转发到Analytics。
 
 每个工具的操作周边如下所示：
 
-* **Adobe Analytics** 标记通过Adobe Campaign启动的电子邮件营销活动
+* **Adobe Analytics**&#x200B;标记通过Adobe Campaign启动的电子邮件营销活动
 
-* **Adobe Campaign** 将指标和营销活动属性发送到连接器，连接器将它们转发到网站分析工具
+* **Adobe Campaign**&#x200B;将指标和营销活动属性发送到连接器，连接器再将它们转发到网站分析工具
 
 
 >[!CAUTION]
@@ -43,7 +43,7 @@ ht-degree: 67%
 
 ## 创建Analytics报表包 {#report-suite-analytics}
 
-要创建您的 **[!UICONTROL Report suite]** 在 [!DNL Adobe Analytics]，请按照以下步骤操作：
+要在[!DNL Adobe Analytics]中创建您的&#x200B;**[!UICONTROL Report suite]**，请执行以下步骤：
 
 1. 在 [!DNL Adobe Analytics] 中，选择 **[!UICONTROL Admin tab]**，然后单击 **[!UICONTROL All admin]**。
 
@@ -55,7 +55,7 @@ ht-degree: 67%
 
 1. 在 **[!UICONTROL Report suite manager]** 页面中，依次单击 **[!UICONTROL Create new]** 和 **[!UICONTROL Report suite]**。
 
-   有关详细过程，请参阅 **[!UICONTROL Report suite]** 创建，请参阅 [Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html#prerequisites){target="_blank"}.
+   有关创建&#x200B;**[!UICONTROL Report suite]**&#x200B;的详细过程，请参阅[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html#prerequisites){target="_blank"}。
 
    ![](assets/analytics_connnector_3.png)
 
@@ -85,7 +85,7 @@ ht-degree: 67%
 
 1. 单击 **[!UICONTROL Add new]** 以创建评测电子邮件营销活动影响所需的标识符，即内部营销活动名称 (cid) 和 iNmsBroadlog (bid) 表 ID。
 
-   了解如何编辑 **[!UICONTROL Conversion variables]**，请参阅此 [Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html#admin-tools){target="_blank"}.
+   要了解如何编辑&#x200B;**[!UICONTROL Conversion variables]**，请参阅此[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html#admin-tools){target="_blank"}。
 
    ![](assets/analytics_connnector_6.png)
 
@@ -108,13 +108,13 @@ ht-degree: 67%
    * **[!UICONTROL Unique Opens]**
    * **[!UICONTROL Unsubscribed]**
 
-   了解如何配置 **[!UICONTROL Success events]**，请参阅此 [Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html#admin-tools)
+   要了解如何配置&#x200B;**[!UICONTROL Success events]**，请参阅此[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html#admin-tools)
 
    ![](assets/analytics_connnector_8.png)
 
 1. 完成后单击 **[!UICONTROL Save]**。
 
-配置报表包后，您需要配置 **[!UICONTROL External accounts]** 在Adobe Campaign中。
+配置报表包后，您需要在Adobe Campaign中配置&#x200B;**[!UICONTROL External accounts]**。
 
 ## 配置Campaign外部帐户 {#external-account-ac}
 
@@ -122,9 +122,9 @@ ht-degree: 67%
 
 请注意，如果在配置外部帐户时，您的 **[!UICONTROL Report suite]**、**[!UICONTROL Conversion variables]** 或 **[!UICONTROL Success events]** 不可见，这意味着您在与用户关联的 **[!UICONTROL Product profile]** 中缺少对此新创建组件的权限。
 
-有关详情，请参阅 [Adobe Analytics的产品配置文件](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html#product-profile-admins){target="_blank"} 页面。
+有关此内容的更多信息，请参阅[Adobe Analytics的产品配置文件](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html#product-profile-admins){target="_blank"}页面。
 
-1. 浏览至 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External accounts]** Adobe Campaign资源管理器树的文件夹，然后单击 **[!UICONTROL New]**.
+1. 浏览到Adobe Campaign资源管理器树的&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External accounts]**&#x200B;文件夹，然后单击&#x200B;**[!UICONTROL New]**。
 
    ![](assets/analytics_connnector_9.png)
 
@@ -182,7 +182,7 @@ ht-degree: 67%
 
 1. **[!UICONTROL Advanced]** 选项卡可让您配置或修改更多技术设置。
 
-   * **[!UICONTROL Lifespan]**：可让您指定延迟（以天为单位），在此之后技术工作流会在Adobe Campaign中恢复Web事件。 默认值：180 天。
+   * **[!UICONTROL Lifespan]**：允许您指定延迟（以天为单位），在此之后，技术工作流会在Adobe Campaign中恢复Web事件。 默认值：180 天。
    * **[!UICONTROL Persistence]**：可让您指定将所有网站事件（例如购买）归因到再营销活动的时段，默认值：7 天。
 
 >[!NOTE]
@@ -193,11 +193,11 @@ ht-degree: 67%
 
 Adobe Campaign和Adobe Analytics之间的数据交换由作为后台任务运行的技术工作流处理。
 
-此工作流可从Campaign Explorer树的 **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** > **[!UICONTROL Web analytics process]** 文件夹。
+此工作流可在Campaign Explorer树的&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** > **[!UICONTROL Web analytics process]**&#x200B;文件夹下使用。
 
 ![](assets/webanalytics_workflows.png)
 
-此 **[!UICONTROL Sending of indicators and campaign attributes]** 工作流可让您使用Adobe Analytics Connector通过Adobe Campaign将电子邮件营销活动指标发送到Adobe Experience Cloud。 此工作流在每天凌晨 4 点触发，可能需要 24 小时才能将数据发送到 Analytics。
+**[!UICONTROL Sending of indicators and campaign attributes]**&#x200B;工作流允许您使用Adobe Analytics Connector通过Adobe Campaign将电子邮件营销活动指标发送到Adobe Experience Cloud。 此工作流在每天凌晨 4 点触发，可能需要 24 小时才能将数据发送到 Analytics。
 
 请注意，切勿重新启动此工作流，否则它将重新发送所有先前数据，可能会影响 Analytics 结果的准确性。
 
@@ -238,7 +238,7 @@ Adobe Campaign和Adobe Analytics之间的数据交换由作为后台任务运行
    ![](assets/webanalytics_delivery_properties_003.png)
 
 1. 打开投放属性。
-1. 转到 **[!UICONTROL Web Analytics]** 选项卡，然后选择之前创建的外部帐户。请参阅 [在Adobe Campaign中配置外部帐户](#external-account-ac).
+1. 转到 **[!UICONTROL Web Analytics]** 选项卡，然后选择之前创建的外部帐户。请参阅[在Adobe Campaign中配置外部帐户](#external-account-ac)。
 
    ![](assets/webanalytics_delivery_properties_002.png)
 
@@ -258,7 +258,7 @@ Adobe Campaign 提供个性化投放模板，您可以使用这些模板或建�
 1. 根据您的需求对模板进行个性化并保存。
 1. 创建新营销活动，并从下拉列表中选择 **[!UICONTROL Re-marketing campaign]** 模板。
 1. 单击 **[!UICONTROL Configure...]** 链接以指定链接到该营销活动的区段和投放模板。
-1. 选择分析e[外部帐户](#external-account-ac)，以及相关的区段。
+1. 选择Analytics外部帐户](#external-account-ac)和相关区段。[
 1. 选择要用于此再营销活动的投放模板，然后单击 **[!UICONTROL Finish]** 以关闭窗口。
 1. 单击 **[!UICONTROL OK]** 以关闭营销活动窗口。
 

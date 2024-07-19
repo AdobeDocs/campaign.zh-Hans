@@ -27,25 +27,26 @@ Campaign文件夹是资源管理器树中的节点。 它们根据其类型，�
 
 ## 使用文件夹时的最佳实践{#best-practices-folders}
 
-* **使用内置文件夹** 使参与项目的每个人都能更轻松地使用、维护应用程序和排除其故障。 避免为收件人、列表、投放等创建自定义文件夹结构，但使用标准文件夹，例如 **管理**， **配置文件和目标**， **营销活动管理**.
+* **使用内置文件夹**，使参与项目的每个人更轻松地使用、维护和排除应用程序故障。 避免为收件人、列表、投放等创建自定义文件夹结构，而使用标准文件夹，如&#x200B;**管理**、**配置文件和目标**、**营销活动管理**。
 
-* **创建子文件夹**，例如，将技术工作流保存在内置文件夹下： **[!UICONTROL Administration > Production > Technical Workflows]**，并根据工作流类型创建子文件夹。
+* **创建子文件夹**，例如，将您的技术工作流保存在内置文件夹&#x200B;**[!UICONTROL Administration > Production > Technical Workflows]**&#x200B;下，并根据工作流类型创建子文件夹。
 
-* **定义并应用命名约定**&#x200B;例如，您可以按字母顺序命名工作流，以便工作流按执行顺序排序，例如：
+* **定义并应用命名约定**，例如，您可以按字母顺序命名工作流，以便工作流按执行顺序排序，例如：
 
-  A1 — 导入收件人，从10:00开始；A2 — 导入票证，从11:00开始。
+  A1 — 导入收件人，从10:00开始；
+A2 — 导入票证，11:00开始。
 
 ## 创建文件夹{#create-a-folder}
 
 要创建文件夹，请右键单击现有文件夹并使用上下文菜单。
 
-要创建与所选文件夹相同的文件夹类型，请选择上下文菜单中的第一个选项。 例如，从“收件人”文件夹中，选择 **[!UICONTROL Create a new 'Recipients' folder]**.
+要创建与所选文件夹相同的文件夹类型，请选择上下文菜单中的第一个选项。 例如，从“收件人”文件夹中，选择&#x200B;**[!UICONTROL Create a new 'Recipients' folder]**。
 
 ![](assets/create-recipient-folder.png)
 
 您可以根据需要拖放新文件夹以整理Campaign资源管理器树。
 
-要创建其他类型的文件夹，请右键单击现有文件夹，然后选择 **[!UICONTROL Add new folder]**. 您可以根据要存储的数据创建所有类型的文件夹。
+要创建其他类型的文件夹，请右键单击现有文件夹并选择&#x200B;**[!UICONTROL Add new folder]**。 您可以根据要存储的数据创建所有类型的文件夹。
 
 ![](assets/add-new-folder.png)
 
@@ -67,9 +68,9 @@ Campaign文件夹是资源管理器树中的节点。 它们根据其类型，�
 
 在下面的示例中，我们将创建一个新文件夹，以根据其内部名称仅显示美国投放。
 
-1. 创建 **[!UICONTROL Deliveries]** 文件夹并将其命名为 **美国投放**.
-1. 右键单击此文件夹并选择 **[!UICONTROL Properties...]**.
-1. 在 **[!UICONTROL Restriction]** 选项卡，选择 **[!UICONTROL This folder is a view]**. 随后将显示数据库中的所有投放。
+1. 创建一个&#x200B;**[!UICONTROL Deliveries]**&#x200B;文件夹，并将其命名为&#x200B;**美国投放**。
+1. 右键单击此文件夹并选择&#x200B;**[!UICONTROL Properties...]**。
+1. 在&#x200B;**[!UICONTROL Restriction]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL This folder is a view]**。 随后将显示数据库中的所有投放。
 
    ![](assets/this-folder-is-a-view.png)
 
@@ -79,20 +80,20 @@ Campaign文件夹是资源管理器树中的节点。 它们根据其类型，�
 
    >[!NOTE]
    >
-   >了解如何在中设计查询 [此页面](create-filters.md#advanced-filters)
+   >在[此页面](create-filters.md#advanced-filters)中了解如何设计查询
 
 
 >[!CAUTION]
 >
->管理时 [事务性消息传递](../send/transactional.md) 事件， **[!UICONTROL Real time events]** 或 **[!UICONTROL Batch events]** 不能将文件夹设置为执行实例上的视图，因为这可能会导致权限问题。
+>管理[事务性消息传递](../send/transactional.md)事件时，**[!UICONTROL Real time events]**&#x200B;或&#x200B;**[!UICONTROL Batch events]**&#x200B;文件夹不能设置为执行实例上的视图，因为这可能导致权限问题。
 
 ## 组织您的文件夹{#organize-your-folders}
 
 默认情况下，新文件夹将添加到层次结构的顶部。
 
-浏览 **子文件夹** 文件夹属性的选项卡，用于组织其子文件夹。
+浏览文件夹属性的&#x200B;**子文件夹**&#x200B;选项卡以组织其子文件夹。
 
-您可以使用右侧的箭头移动文件夹或选择 **[!UICONTROL Sort the sub-folders in alphabetical order]** 选项以自动对它们进行排序。
+您可以使用右侧的箭头移动文件夹，或选择&#x200B;**[!UICONTROL Sort the sub-folders in alphabetical order]**&#x200B;选项以自动对它们进行排序。
 
 ![](assets/sort-folders.png)
 
@@ -108,4 +109,4 @@ Campaign文件夹是资源管理器树中的节点。 它们根据其类型，�
 
 ## 限制对文件夹的访问{#restrict-access-to-a-folder}
 
-使用文件夹的权限可组织和控制对Campaign数据的访问。 了解有关文件夹权限的详细信息 [本节](../start/folder-permissions.md).
+使用文件夹的权限可组织和控制对Campaign数据的访问。 在[本节](../start/folder-permissions.md)中了解有关文件夹权限的详细信息。

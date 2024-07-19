@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 与Adobe Experience Platform共享和同步受众 {#gs-ac-aep}
 
-Adobe Campaign托管Cloud Service目标和源连接器允许Adobe Campaign与Adobe Experience Platform之间的无缝集成。 通过此集成，您可以：
+Adobe Campaign托管Cloud Service目标和Source连接器允许Adobe Campaign与Adobe Experience Platform之间的无缝集成。 通过此集成，您可以：
 
 * 将Adobe Experience Platform受众发送到Adobe Campaign，并将投放和跟踪日志发回到Adobe Experience Platform中以进行分析，
 * 将Adobe Experience Platform配置文件属性引入Adobe Campaign并实施同步流程，以便定期更新这些属性。
@@ -23,10 +23,10 @@ Adobe Campaign托管Cloud Service目标和源连接器允许Adobe Campaign与Ado
 
 将Adobe Experience Platform受众发送到Adobe Campaign并发送回投放和跟踪日志的主要步骤如下：
 
-* 使用Adobe Campaign Managed Cloud Services **目标连接** 要将Experience Platform区段发送到Adobe Campaign，请执行以下操作：
+* 使用Adobe Campaign Managed Cloud Services **目标连接**&#x200B;将Experience Platform区段发送到Adobe Campaign：
 
-   1. 访问Adobe Experience Platform目标目录并新建 **[!UICONTROL Adobe Campaign Managed Cloud Services]** 连接。
-   1. 提供要使用的Campaign实例的详细信息，然后选择 **[!UICONTROL Audience sync]** 作为同步类型。
+   1. 访问Adobe Experience Platform目标目录并创建新的&#x200B;**[!UICONTROL Adobe Campaign Managed Cloud Services]**&#x200B;连接。
+   1. 提供要使用的Campaign实例的详细信息，并选择&#x200B;**[!UICONTROL Audience sync]**&#x200B;作为同步类型。
 
       ![](assets/aep-audience-sync.png){width="800" align="center"}
 
@@ -36,11 +36,11 @@ Adobe Campaign托管Cloud Service目标和源连接器允许Adobe Campaign与Ado
 
       ![](assets/aep-destination.png){width="800" align="center"}
 
-  有关如何配置目标的详细信息，请参阅 [Adobe Campaign Managed Cloud Services连接文档](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}
+  有关如何配置目标的详细信息，请参阅[Adobe Campaign Managed Cloud Services连接文档](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}
 
-* 使用Adobe Campaign Managed Cloud Services **源连接** 要将Adobe Campaign投放和跟踪日志发送到Adobe Experience Platform，请执行以下操作：
+* 使用Adobe Campaign Managed Cloud Services **Source连接**&#x200B;将Adobe Campaign投放和跟踪日志发送到Adobe Experience Platform：
 
-  为此，请配置新的Adobe Campaign Managed Cloud Services **源连接** 将Campaign事件摄取到AdobeExperience Platform。 提供要使用的Campaign实例和架构的详细信息，选择应在其中摄取数据的数据集，然后配置要检索的字段。 [了解如何创建Adobe Campaign Managed Cloud Services源连接](https://www.adobe.com/go/sources-campaign-ui-en)
+  为此，请配置新的Adobe Campaign Managed Cloud Services **Source连接**&#x200B;以将Campaign事件摄取到AdobeExperience Platform。 提供要使用的Campaign实例和架构的详细信息，选择应在其中摄取数据的数据集，然后配置要检索的字段。 [了解如何创建Adobe Campaign Managed Cloud Services源连接](https://www.adobe.com/go/sources-campaign-ui-en)
 
   ![](assets/aep-logs.png){width="800" align="center"}
 
@@ -56,8 +56,8 @@ Adobe Campaign托管Cloud Service目标和源连接器允许Adobe Campaign与Ado
 
 将Adobe Experience Platform配置文件属性与Adobe Campaign同步的主要步骤如下：
 
-1. 访问Adobe Experience Platform目标目录并新建 **[!UICONTROL Adobe Campaign Managed Cloud Services]** 连接。
-1. 提供要使用的Campaign实例的详细信息，然后选择 **[!UICONTROL Profile sync (Update only)]** 作为同步类型。
+1. 访问Adobe Experience Platform目标目录并创建新的&#x200B;**[!UICONTROL Adobe Campaign Managed Cloud Services]**&#x200B;连接。
+1. 提供要使用的Campaign实例的详细信息，并选择&#x200B;**[!UICONTROL Profile sync (Update only)]**&#x200B;作为同步类型。
 
    ![](assets/aep-profile-sync.png){width="800" align="center"}
 
@@ -65,4 +65,4 @@ Adobe Campaign托管Cloud Service目标和源连接器允许Adobe Campaign与Ado
 1. 配置要更新到Adobe Campaign中的配置文件属性。
 1. 配置流后，选定的配置文件属性将与Adobe Campaign同步，并针对目标中配置的区段定向的所有配置文件进行更新。
 
-有关如何配置目标的详细信息，请参阅 [Adobe Campaign Managed Cloud Services连接文档](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}
+有关如何配置目标的详细信息，请参阅[Adobe Campaign Managed Cloud Services连接文档](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}

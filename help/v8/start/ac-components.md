@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Adobe Campaign是一款跨渠道营销解决方案，可自动执行电子邮件、移动设备、社交和离线营销活动。 Adobe Campaign提供了一个访问您的客户数据和配置文件的中心位置。 使用Adobe Campaign为客户编排一致的体验，跨渠道设计、执行和个性化您的营销，同时改进每个设备和接触点上的客户体验。 借助Adobe Campaign，您可以通过拖放式可视化工作流界面管理多个数据源、定义受众区段，以及规划和执行多步骤、跨渠道营销活动。
 
-在中了解关于Campaign关键功能的更多信息 [此页面](../start/get-started.md).
+在[此页面](../start/get-started.md)中了解有关Campaign密钥功能的更多信息。
 
 ## Campaign组件 {#ac-components}
 
@@ -38,7 +38,7 @@ Campaign逻辑应用层可以方便地进行配置，以满足复杂的业务需
 
 ## Campaign托管的Cloud Service{#ac-managed-services}
 
-Adobe Campaign v8是as a Managed Service部署的：Adobe Campaign的所有组件（包括用户界面、执行管理引擎和Campaign数据库）均完全由Adobe托管，包括电子邮件执行、镜像页面、跟踪服务器和面向外部的Web组件（例如取消订阅页面/首选项中心和登陆页面）。
+as a Managed Service部署Adobe Campaign v8：Adobe Campaign的所有组件（包括用户界面、执行管理引擎和Campaign数据库）均完全由Adobe托管，包括电子邮件执行、镜像页面、跟踪服务器和面向外部的Web组件（例如取消订阅页面/首选项中心和登陆页面）。
 
 ## 营销活动流程
 
@@ -54,4 +54,4 @@ Campaign客户端控制台通过HTTP使用SOAP XML连接到Web服务器。 Web�
 
 用户使用HTTP连接到Campaign应用程序服务器。 所有数据和信息都在Campaign数据库中进行管理。 如果Campaign开发人员执行任何配置更改，则会将其捕获到数据库中。 如果营销人员创建新营销活动，则与此新营销活动相关的所有信息和数据也将在数据库中管理。 营销人员执行营销活动时，会通过SMTP服务器将电子邮件投放从Campaign服务器发送到用户档案。 当用户档案与电子邮件投放交互时（如打开电子邮件），跟踪数据会发送回跟踪服务器。
 
-[了解关于Campaign流程的更多信息](../architecture/general-architecture.md#dev-env).
+[了解有关营销活动进程的更多信息](../architecture/general-architecture.md#dev-env)。

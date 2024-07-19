@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # SQL 数据管理{#sql-data-management}
 
-此 **SQL数据管理** 通过活动，您可以编写自己的SQL脚本来创建和填充工作表。
+**SQL数据管理**&#x200B;活动允许您编写自己的SQL脚本来创建和填充工作表。
 
 ## 先决条件 {#prerequisites}
 
@@ -27,8 +27,8 @@ ht-degree: 3%
 
 ## 配置SQL数据管理活动 {#configuring-the-sql-data-management-activity}
 
-1. 指定活动 **[!UICONTROL Label]**.
-1. 选择 **[!UICONTROL External account]** ，然后选择 **[!UICONTROL Outbound schema]** 链接到此外部帐户。
+1. 指定活动&#x200B;**[!UICONTROL Label]**。
+1. 选择要使用的&#x200B;**[!UICONTROL External account]**，然后选择链接到此外部帐户的&#x200B;**[!UICONTROL Outbound schema]**。
 
    >[!CAUTION]
    >
@@ -40,7 +40,7 @@ ht-degree: 3%
    >
    >SQL脚本编写者负责确保SQL脚本正常工作及其引用（字段名称等） 符合出站模式。
 
-   如果要加载现有SQL代码，请选择 **[!UICONTROL The SQL script is contained in an entity stored in the database]** 选项。 SQL脚本必须创建并存储在 **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]** 菜单。
+   如果要加载现有SQL代码，请选择&#x200B;**[!UICONTROL The SQL script is contained in an entity stored in the database]**&#x200B;选项。 必须在&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]**&#x200B;菜单中创建和存储SQL脚本。
 
    否则，请在专用区域中键入或复制粘贴您的SQL脚本。
 
@@ -49,14 +49,14 @@ ht-degree: 3%
    利用活动，可在脚本中使用以下变量：
 
    * **activity.tableName**：出站工作表的SQL名称。
-   * **task.incomingTransitionByName(&#39;name&#39;)。tableName**：要使用的传入过渡所承载的工作表的SQL名称（过渡由其名称标识）。
+   * **task.incomingTransitionByName(&#39;name&#39;)。tableName**：传入过渡所承载要使用的工作表的SQL名称（过渡由其名称标识）。
 
      >[!NOTE]
      >
-     >(&#39;name&#39;)值对应于 **[!UICONTROL Name]** 字段。
+     >(“name”)值对应于过渡属性中的&#x200B;**[!UICONTROL Name]**&#x200B;字段。
 
-1. 如果SQL脚本已包含用于创建出站工作表的命令，请取消选择 **[!UICONTROL Automatically create work table]** 选项。 否则，工作流执行后将自动创建工作表。
-1. 单击 **[!UICONTROL Ok]** 以确认活动配置。
+1. 如果SQL脚本已包含用于创建出站工作表的命令，请取消选择&#x200B;**[!UICONTROL Automatically create work table]**&#x200B;选项。 否则，工作流执行后将自动创建工作表。
+1. 单击&#x200B;**[!UICONTROL Ok]**&#x200B;以确认活动配置。
 
 现已配置该活动。工作流中可以随时执行该操作。
 

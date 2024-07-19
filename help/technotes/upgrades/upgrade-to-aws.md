@@ -25,9 +25,9 @@ ht-degree: 1%
 
 ## 何时进行此升级？{#aws-timeline}
 
-开发和暂存环境升级开始于 **2023年10**.
+开发和暂存环境升级于&#x200B;**2023年10月**&#x200B;开始。
 
-生产环境升级开始于 **2024年1月**.
+生产环境升级于&#x200B;**2024年1月**&#x200B;开始。
 
 ## 期待完成的任务{#impact}
 
@@ -37,11 +37,11 @@ ht-degree: 1%
 
 ## 常见问题解答 {#aws-faq}
 
-* **是否必须升级？**
+* **此升级是否为强制性的？**
 
   是的。 作为Campaign客户，您的电子邮件发送功能要求使用电子邮件发送基础架构。
 
-* **此升级针对哪些客户？**
+* **此升级的目标客户是哪些客户？**
 
   上面引用的所有Campaign客户都将升级其环境。
 
@@ -55,11 +55,11 @@ ht-degree: 1%
 
 * **客户需要什么测试？**
 
-  我们预计客户不会针对此升级事件进行任何测试。 如果发现任何问题，请联系 [Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+  我们预计客户不会针对此升级事件进行任何测试。 如果发现任何问题，请联系[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}。
 
 
-* **我是否可以请求更改计划安全升级插槽的日期/时间？**
+* **我可以请求更改计划的安全升级槽的日期/时间吗？**
 
   没有。我们无法容纳对现有计划请求的任何修改，因为这样可能会中断为其他客户分配的升级事件。
 
-对于任何其他问题，您可以联系 [Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+如有任何其他问题，您可以联系[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}。

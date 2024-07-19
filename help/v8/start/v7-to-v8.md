@@ -27,7 +27,7 @@ ht-degree: 76%
 
 Adobe Campaign v8 是以&#x200B;**托管云服务**&#x200B;的形式提供。
 
-Adobe Campaign Managed Cloud Services 提供了可用于进行跨渠道客户体验设计的云服务平台，并为可视化的活动编排、实时互动管理和跨渠道执行提供了环境。要了解有关Campaign托管Cloud Service的更多信息，请参阅 [产品描述页面](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+Adobe Campaign Managed Cloud Services 提供了可用于进行跨渠道客户体验设计的云服务平台，并为可视化的活动编排、实时互动管理和跨渠道执行提供了环境。在[产品描述页面](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}中了解有关Campaign托管Cloud Service的更多信息。
 
 这一新产品将同类最佳服务与主动监督和及时发送警报的功能融合在一起，将重心放在三个方面：
 
@@ -42,31 +42,31 @@ Adobe Campaign Managed Cloud Services 提供了可用于进行跨渠道客户体
 
 ## 混合架构 {#hybrid-archi}
 
-Campaign v8依赖于 **混合架构**. 请注意，如果从Campaign Classicv7进行过渡，所有投放都将通过中间源服务器。
+Campaign v8依赖于&#x200B;**混合架构**。 请注意，如果从Campaign Classicv7进行过渡，所有投放都将通过中间源服务器。
 
 因此：
 
-* 内部路由为 **不可能** Campaign v8中，并且已相应地禁用外部帐户，
+* 内部路由在Campaign v8中是&#x200B;**不可能**，并且已相应地禁用外部帐户，
 * 投放状态不会立即更新 — 在营销实例上运行一个技术流程，用于及时更新投放状态。
 
 
-了解有关在从v7过渡时发送事务性消息校样的更多信息 [此页面](../send/transactional-template.md#transition-from-v7).
+在[此页面](../send/transactional-template.md#transition-from-v7)上了解有关从v7过渡时发送事务性消息校样的更多信息。
 
 
 ## [!DNL Campaign] 和 [!DNL Snowflake] {#ac-gs-snowflake}
 
-在 [企业(FFDA)部署](../architecture/enterprise-deployment.md)， [!DNL Adobe Campaign] v8可与两个数据库配合使用：本地 [!DNL Campaign] 数据库用于用户界面实时消息传递和统一查询，并通过API进行编写，以及建立一个云 [!DNL Snowflake] 数据库，用于活动执行、批量查询和工作流执行。
+在其[企业(FFDA)部署](../architecture/enterprise-deployment.md)中，[!DNL Adobe Campaign] v8可与两个数据库配合使用：用于用户界面实时消息传递和统一查询、通过API写入的本地[!DNL Campaign]数据库，以及用于活动执行、批量查询和工作流执行的云[!DNL Snowflake]数据库。
 
 Campaign v8 企业版引入了&#x200B;**完全联合数据访问** (FFDA) 概念：所有数据现在都位于云数据库上的远程位置。凭借这种新架构，Campaign v8 企业版 (FFDA) 部署简化了数据管理：云数据库上不需要索引。您只需创建表格、复制数据即可开始。云数据库技术无需特定的维护来保证性能级别。
 
-了解有关 [!DNL Campaign] 中的v8架构 [此页面](../architecture/architecture.md).
+在[此页面](../architecture/architecture.md)中了解有关[!DNL Campaign] v8架构的更多信息。
 
 
 ## 使用 Adobe ID 连接到 Campaign{#adobe-id}
 
 Campaign 用户仅可通过其 Adobe ID 进行连接。可使用同一个 Adobe ID 来管理与单个帐户关联的所有 Adobe 计划和产品，适合所有 Adobe Experience Cloud 解决方案。
 
-了解如何连接到 [!DNL Campaign] 在 [此页面](connect.md).
+了解如何在[此页面](connect.md)中连接到[!DNL Campaign]。
 
 ## 使用多维数据集分析数据{#adobe-reporting}
 

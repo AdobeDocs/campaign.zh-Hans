@@ -17,24 +17,24 @@ ht-degree: 12%
 
 ## 默认单位 {#default-units}
 
-在Adobe Campaign中，对于表示持续时间（例如资源的有效期、任务的审批截止日期等）的字段，值可以表示如下 **件数**：
+在Adobe Campaign中，对于表示持续时间（例如资源的有效期、任务的审批截止日期等）的字段，值可以按以下&#x200B;**单位**&#x200B;表示：
 
-* **[!UICONTROL s]** 表示秒
-* **[!UICONTROL mn]** 表示分钟
-* **[!UICONTROL h]** 表示小时
-* **[!UICONTROL d]** 表示天
+* **[!UICONTROL s]**&#x200B;表示秒
+* **[!UICONTROL mn]**&#x200B;表示分钟
+* **[!UICONTROL h]**&#x200B;表示小时
+* **[!UICONTROL d]**&#x200B;天
 
 ## 自定义Campaign资源管理器{#customize-explorer}
 
 您可以将文件夹添加到Campaign Explorer、创建视图和分配权限。
 
-了解如何在中管理文件夹和视图 [此页面](../audiences/folders-and-views.md)
+在[此页面](../audiences/folders-and-views.md)中了解如何管理文件夹和视图
 
 ## 管理和自定义列表{#customize-lists}
 
 在Campaign客户端控制台中，数据显示在列表中。 您可以根据自己的需求调整这些列表。 例如，您可以添加列、过滤数据、计算记录、保存和共享设置。
 
-此外，您还可以创建和保存过滤器。  了解有关中过滤器的更多信息 [此页面](../audiences/create-filters.md).
+此外，您还可以创建和保存过滤器。  在[此页面](../audiences/create-filters.md)中了解有关筛选器的更多信息。
 
 ### 记录数 {#number-of-records}
 
@@ -44,11 +44,11 @@ ht-degree: 12%
 
 ![显示列表中的记录总数](assets/number-of-records.png)
 
-如果出现问号而不是右侧的数字，例如 `240/?`，单击计数器以启动计算。
+如果出现问号而不是右侧的数字（如`240/?`），请单击计数器以启动计算。
 
-要加载和显示其他记录，请单击 **[!UICONTROL Continue loading]**. 默认情况下，将加载200条记录。 要更改要加载的默认记录数，请使用 **[!UICONTROL Configure list]** 图标（位于列表的右下角）。 在列表配置窗口中，单击 **[!UICONTROL Advanced parameters]** （左下方）并更改要检索的行数。
+要加载和显示其他记录，请单击&#x200B;**[!UICONTROL Continue loading]**。 默认情况下，将加载200条记录。 要更改默认加载的记录数，请使用列表右下角的&#x200B;**[!UICONTROL Configure list]**&#x200B;图标。 在列表配置窗口中，单击&#x200B;**[!UICONTROL Advanced parameters]** （左下方）并更改要检索的行数。
 
-要加载所有记录，请右键单击列表并选择 **[!UICONTROL Load all]**.
+要加载所有记录，请右键单击列表并选择&#x200B;**[!UICONTROL Load all]**。
 
 >[!CAUTION]
 >
@@ -59,7 +59,7 @@ ht-degree: 12%
 
 对于每个列表，内置列配置可适于显示更多信息或隐藏未使用的列。
 
-当数据在记录的详细信息中可见时，右键单击该字段并选择 **[!UICONTROL Add in the list]**.
+当数据在记录的详细信息中可见时，右键单击该字段并选择&#x200B;**[!UICONTROL Add in the list]**。
 
 ![在列表中添加字段](assets/add-in-the-list.png)
 
@@ -69,26 +69,26 @@ ht-degree: 12%
 
 您还可以使用列表配置屏幕添加和删除列：
 
-1. 在记录列表中，单击 **[!UICONTROL Configure list]** 图标。
-1. 双击要添加到 **[!UICONTROL Available fields]** 列表：它们将添加到 **[!UICONTROL Output columns]** 列表。
+1. 从记录列表中，单击右下角的&#x200B;**[!UICONTROL Configure list]**&#x200B;图标。
+1. 双击要添加到&#x200B;**[!UICONTROL Available fields]**&#x200B;列表中的字段：它们已添加到&#x200B;**[!UICONTROL Output columns]**&#x200B;列表。
 
-   ![列表配置屏幕](assets/list-config-screen.png)
+   ![列出配置屏幕](assets/list-config-screen.png)
 
 
    >[!NOTE]
    >
-   >默认情况下，不显示高级字段。 要显示它们，请单击 **显示高级字段** 图标（在可用字段列表的右下方）。
+   >默认情况下，不显示高级字段。 要显示它们，请单击可用字段列表右下角的&#x200B;**显示高级字段**&#x200B;图标。
    >
    >通过具体图标标识各字段：SQL 字段、链接的表、已计算字段等。针对选中的每个字段，在可用字段的列表下会显示其说明。
    >
 
-1. 使用向上/向下箭头修改 **显示顺序**.
+1. 使用上/下箭头修改&#x200B;**显示顺序**。
 
-1. 单击 **[!UICONTROL OK]** 以确认配置并显示结果。
+1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以确认配置并显示结果。
 
-如果需要移除列，请选择该列并单击 **垃圾桶** 图标。
+如果需要删除列，请选择该列并单击&#x200B;**垃圾桶**&#x200B;图标。
 
-您可以使用 **[!UICONTROL Distribution of values]** 图标以查看当前文件夹中所选字段值的重新分区。
+您可以使用&#x200B;**[!UICONTROL Distribution of values]**&#x200B;图标查看当前文件夹中选定字段值的重新分区。
 
 ![](assets/value-distribution.png)
 
@@ -99,8 +99,8 @@ ht-degree: 12%
 
 要创建列，请执行以下步骤：
 
-1. 在记录列表中，单击 **[!UICONTROL Configure list]** 图标。
-1. 单击 **[!UICONTROL Add]** 图标，以在列表中显示新字段。
+1. 从记录列表中，单击右下角的&#x200B;**[!UICONTROL Configure list]**&#x200B;图标。
+1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;图标以在列表中显示新字段。
 1. 配置要添加到列中的字段。
 
 
@@ -111,7 +111,7 @@ ht-degree: 12%
 * 所选文件夹中包含的所有记录（默认）
 * 选定文件夹及其子文件夹中包含的所有记录
 
-要从一种显示模式切换到另一种显示模式，请单击 **[!UICONTROL Display sub-levels]** （在Campaign工具栏中）。
+要从一种显示模式切换到另一种显示模式，请单击“促销活动”工具栏中的&#x200B;**[!UICONTROL Display sub-levels]**。
 
 ### 保存列表配置 {#saving-a-list-configuration}
 
@@ -125,14 +125,14 @@ ht-degree: 12%
 
 1. 在资源管理器中，右键单击包含所显示数据的文件夹。
 1. 选择 **[!UICONTROL Properties]**。
-1. 单击 **[!UICONTROL Advanced settings]** 然后在 **[!UICONTROL Configuration]** 字段。
-1. 单击 **[!UICONTROL OK]** 然后单击 **[!UICONTROL Save]**.
+1. 单击&#x200B;**[!UICONTROL Advanced settings]**，然后在&#x200B;**[!UICONTROL Configuration]**&#x200B;字段中指定名称。
+1. 单击&#x200B;**[!UICONTROL OK]**，然后单击&#x200B;**[!UICONTROL Save]**。
 
-然后，您可以将此配置应用于相同类型的任何其他文件夹。 了解有关文件夹的详细信息 [此页面](../audiences/folders-and-views.md).
+然后，您可以将此配置应用于相同类型的任何其他文件夹。 在[此页面](../audiences/folders-and-views.md)中了解有关文件夹的更多信息。
 
 ### 导出列表 {#exporting-a-list}
 
-要从列表中导出数据，必须使用导出向导。 要访问它，请从列表中选择要导出的元素，右键单击并选择 **[!UICONTROL Export...]**.
+要从列表中导出数据，必须使用导出向导。 要访问它，请从列表中选择要导出的元素，右键单击并选择&#x200B;**[!UICONTROL Export...]**。
 
 <!--The use of the import and export functions is explained in [Generic imports and exports](../../platform/using/about-generic-imports-exports.md).-->
 
@@ -148,14 +148,14 @@ ht-degree: 12%
 
 您还可以配置排序或组合排序标准。 为此请执行以下操作步骤：
 
-1. **[!UICONTROL Configure list]** 列表右下方。
-1. 在列表配置窗口中，单击 **[!UICONTROL Sorting]** 选项卡。
+1. 列表右侧的下方&#x200B;**[!UICONTROL Configure list]**。
+1. 在列表配置窗口中，单击&#x200B;**[!UICONTROL Sorting]**&#x200B;选项卡。
 1. 选择要排序的字段以及排序方向（升序或降序）。
 1. 排序优先级由排序列的顺序定义。 要改变优先级，可使用适当的图标改变各列的顺序。
 
    排序优先级不会影响列表中各类的显示情况。
 
-1. 单击 **[!UICONTROL Ok]** 以确认此配置并在列表中显示结果。
+1. 单击&#x200B;**[!UICONTROL Ok]**&#x200B;以确认此配置并在列表中显示结果。
 
 
 
@@ -166,70 +166,70 @@ ht-degree: 12%
 
 值列表将显示为一个下拉列表，您可以从中选择要在字段中输入的值。 下拉列表还支持预测输入：输入第一个字母，应用程序填充其余字母。
 
-此类字段的值已定义，对这些字段的整体管理（添加/删除值）是通过 **[!UICONTROL Administration > Platform > Enumerations]** 树节点。
+此类字段的值已定义，通过树的&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;节点对这些字段执行整体管理（添加/删除值）。
 
 ![访问枚举](assets/enumerations-menu.png)
 
 ### 枚举类型 {#types-of-enum}
 
-枚举存储在中 **[!UICONTROL Administration > Platform > Enumerations]** 浏览器的文件夹。
+枚举存储在资源管理器的&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;文件夹中。
 
 它们可以是：开放、系统、表情符号或闭合。
 
-* An **打开** 枚举允许用户直接基于此枚举在字段中添加新值。
-* A **已关闭** 枚举有一个固定的值列表，只能从 **[!UICONTROL Administration > Platform > Enumerations]** 浏览器的文件夹。
-* An **表情符号** 枚举用于更新表情符号列表。 了解详情
-* A **系统** 枚举与系统字段相关联，并带有内部名称。
+* **Open**&#x200B;枚举允许用户直接基于此枚举在字段中添加新值。
+* **Closed**&#x200B;枚举具有只能从资源管理器的&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;文件夹中修改的固定值列表。
+* **表情符号**&#x200B;枚举用于更新表情符号列表。 了解详情
+* **系统**&#x200B;枚举与系统字段相关联，并带有内部名称。
 
-对象 **打开** 和 **已关闭** 枚举，提供了以下特定选项：
+对于&#x200B;**Open**&#x200B;和&#x200B;**Closed**&#x200B;枚举，可以使用特定选项：
 
-* **简单枚举** 是缺省标准类型。
-* **别名清理** 枚举用于协调存储在数据库中的枚举值。 [了解详情](#alias-cleansing)
-* **为量化保留** 是一个用于将多维数据集值链接到该枚举的选项。 [了解详情](../reporting/gs-cubes.md)
+* **简单枚举**&#x200B;是默认的标准类型。
+* **别名清理**&#x200B;枚举用于协调存储在数据库中的枚举值。 [了解详情](#alias-cleansing)
+* **保留用于量化**&#x200B;是一个选项，它允许您将Cube值链接到此枚举。 [了解详情](../reporting/gs-cubes.md)
 
 
 ### 别名清理 {#alias-cleansing}
 
-在枚举字段中，您可以选择值，或输入在下拉列表中不可用的自定义值。 可以将自定义值作为新值添加到现有枚举值中 — 在本例中，是 **[!UICONTROL Open]** 必须选中选项。 可以使用别名清理功能清理这些自定义值。 例如，如果用户输入 `Adob` 而不是 `Adobe`，别名清理过程可以自动地用正确的术语替换它。
+在枚举字段中，您可以选择值，或输入在下拉列表中不可用的自定义值。 可以将自定义值作为新值添加到现有枚举值中 — 在这种情况下，必须选择&#x200B;**[!UICONTROL Open]**&#x200B;选项。 可以使用别名清理功能清理这些自定义值。 例如，如果用户输入`Adob`而不是`Adobe`，则别名清理过程可以自动用正确的术语替换它。
 
 >[!CAUTION]
 >
 >数据清理是影响数据库中数据的关键过程。 Adobe Campaign会执行批量数据更新，这可能会导致某些值被删除。 因此，此操作是为专家用户保留的。
 
-启用 **[!UICONTROL Alias cleansing]** 用于为枚举使用数据清理功能的选项。 选择此选项时， **[!UICONTROL Alias]** 选项卡显示在窗口的底部。
+启用&#x200B;**[!UICONTROL Alias cleansing]**&#x200B;选项以使用枚举的数据清理功能。 选择此选项时，**[!UICONTROL Alias]**&#x200B;选项卡将显示在窗口的底部。
 
-当用户输入的值不存在于Alias清理枚举中时，该值将添加到 **值** 列表。 您可以 [从这些值创建别名](#convert-to-alias)，或 [从头开始创建新别名](#create-alias).
+当用户输入的值在Alias清理枚举中不存在时，该值会被添加到&#x200B;**值**&#x200B;列表中。 您可以[根据这些值](#convert-to-alias)创建别名，或[从头开始创建新别名](#create-alias)。
 
 #### 创建别名{#create-alias}
 
 要创建别名，请执行以下步骤：
 
-1. 单击 **[!UICONTROL Add]** 的按钮 **[!UICONTROL Alias]** 选项卡。
+1. 单击&#x200B;**[!UICONTROL Alias]**&#x200B;选项卡的&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
 1. 输入要转换的别名，然后在下拉列表中选择要应用的值。
 
    ![创建新别名](assets/new-alias.png)
 
-1. 单击 **[!UICONTROL Ok]** 并确认。
+1. 单击&#x200B;**[!UICONTROL Ok]**&#x200B;并确认。
 
-1. 保存您的更改。值的替换由以下步骤执行 **别名清理** 工作流每天晚上执行。 请参阅 [运行数据清理](#running-data-cleansing).
+1. 保存您的更改。值替换由&#x200B;**别名清理**&#x200B;工作流执行，该工作流每晚执行。 请参阅[运行数据清理](#running-data-cleansing)。
 
-对于基于此枚举的所有字段，当用户输入值时 **Adobe** 在“company”字段(在Adobe Campaign客户端控制台的Web窗体中)中，该值将自动被替换 **Adobe**.
+对于基于此枚举的所有字段，当用户在“company”字段(在Adobe Campaign客户端控制台的Web窗体中)中输入值&#x200B;**Adobe**&#x200B;时，该值将自动被值&#x200B;**Adobe**&#x200B;替换。
 
 #### 将错误值转换为别名{#convert-to-alias}
 
 您还可以将现有枚举值转换为别名。 要执行此操作，请执行以下操作：
 
-1. 在枚举的值列表中，右键单击并浏览 **[!UICONTROL Actions... > Convert values into aliases...]**.
+1. 在枚举的值列表中，右键单击并浏览到&#x200B;**[!UICONTROL Actions... > Convert values into aliases...]**。
 
    ![将值转换为别名](assets/convert-into-aliases.png)
 
-1. 选择要转换为别名的值，然后单击 **[!UICONTROL Next]**.
-1. 单击 **[!UICONTROL Start]** 运行转换。
+1. 选择要以别名转换的值，然后单击&#x200B;**[!UICONTROL Next]**。
+1. 单击&#x200B;**[!UICONTROL Start]**&#x200B;运行转换。
 
-   执行完成后，别名将添加到列表中，位于 **别名** 选项卡。 您可以关联正确的值以替换错误的条目。 要执行此操作，请执行以下操作：
+   执行完成后，别名将添加到&#x200B;**别名**&#x200B;选项卡的列表中。 您可以关联正确的值以替换错误的条目。 要执行此操作，请执行以下操作：
 
 1. 选择要清除的值。
-1. 单击 **详细信息……** 按钮。
+1. 单击&#x200B;**详细信息……**&#x200B;按钮。
 1. 在下拉列表中选择新值。
 
    ![创建新别名](assets/define-new-alias.png)
@@ -237,35 +237,35 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->您可以在以下位置跟踪别名的发生次数： **[!UICONTROL Hits]** 中的列 **[!UICONTROL Alias]** 子选项卡。 它可以显示输入此值的次数。  [了解详情](#calculate-entry-occurrences)。
+>您可以在&#x200B;**[!UICONTROL Alias]**&#x200B;子选项卡的&#x200B;**[!UICONTROL Hits]**&#x200B;列中跟踪别名的发生次数。 它可以显示输入此值的次数。  [了解详情](#calculate-entry-occurrences)。
 
 #### 运行数据清理 {#running-data-cleansing}
 
-数据清理是由 **[!UICONTROL Alias cleansing]** 技术工作流。 默认情况下，此工作流每日执行。
+数据清理由&#x200B;**[!UICONTROL Alias cleansing]**&#x200B;技术工作流执行。 默认情况下，此工作流每日执行。
 
-清理也可以通过以下方式触发 **[!UICONTROL Cleanse values...]** 链接。
+清理也可以通过&#x200B;**[!UICONTROL Cleanse values...]**&#x200B;链接触发。
 
-此 **[!UICONTROL Advanced parameters...]** 通过链接，您可以设置从收集值开始考虑的日期。
+通过&#x200B;**[!UICONTROL Advanced parameters...]**&#x200B;链接，可设置考虑收集值的开始日期。
 
-单击 **[!UICONTROL Start]** 按钮以运行数据清理。
+单击&#x200B;**[!UICONTROL Start]**&#x200B;按钮以运行数据清理。
 
 ##### 监测发生次数 {#calculate-entry-occurrences}
 
-此 **[!UICONTROL Alias]** 枚举的子选项卡可以显示输入的所有值中某个别名的出现次数。 此信息为估计值，将显示在 **[!UICONTROL Hits]** 列。
+枚举的&#x200B;**[!UICONTROL Alias]**&#x200B;子选项卡可以显示输入的所有值中别名的发生次数。 此信息是估计值，将显示在&#x200B;**[!UICONTROL Hits]**&#x200B;列中。
 
 >[!CAUTION]
 >
 >计算别名条目发生次数可能需要较长时间。
 >
 
-您可以通过手动运行点击计算 **[!UICONTROL Cleanse values...]** 链接。 要执行此操作，请单击 **[!UICONTROL Advanced parameters...]** 链接并选择选项。
+您可以通过&#x200B;**[!UICONTROL Cleanse values...]**&#x200B;链接手动运行点击计算。 为此，请单击&#x200B;**[!UICONTROL Advanced parameters...]**&#x200B;链接并选择选项。
 
-* **[!UICONTROL Update the number of alias hits]**：利用此选项可根据输入的日期更新已计算的点击量。
-* **[!UICONTROL Recalculate the number of alias hits from the start]**：用于在整个Adobe Campaign平台上运行计算。
+* **[!UICONTROL Update the number of alias hits]**：允许您更新基于输入日期已计算的点击。
+* **[!UICONTROL Recalculate the number of alias hits from the start]**：允许您在整个Adobe Campaign平台上运行计算。
 
 您还可以创建一个专用工作流，以便计算在给定时间段自动运行，例如每周运行一次。
 
-为此，请创建 **[!UICONTROL Alias cleansing]** 工作流，更改调度程序，并在 **[!UICONTROL Enumeration value cleansing]** 活动：
+为此，请创建&#x200B;**[!UICONTROL Alias cleansing]**&#x200B;工作流的副本，更改调度程序并在&#x200B;**[!UICONTROL Enumeration value cleansing]**&#x200B;活动中使用以下设置：
 
-* **-updateHits** 要更新别名点击数，
-* **-updateHits：full** 以重新计算所有别名点击。
+* **-updateHits**&#x200B;以更新别名点击数，
+* **-updateHits：full**&#x200B;以重新计算所有别名点击。

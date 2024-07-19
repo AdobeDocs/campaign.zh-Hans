@@ -27,7 +27,7 @@ ht-degree: 10%
 
 1. **创建投放**
 
-   要创建新投放，请浏览至 **营销活动** 选项卡，单击 **投放** 然后单击 **创建** 按钮来指定现有投放列表的上方。
+   要创建新投放，请浏览到&#x200B;**营销活动**&#x200B;选项卡，单击&#x200B;**投放**，然后单击现有投放列表上方的&#x200B;**创建**&#x200B;按钮。
 
    ![](assets/delivery_step_1.png)
 
@@ -39,7 +39,7 @@ ht-degree: 10%
 
 1. **导入您的内容**
 
-   单击 **来源** 按Tab键以粘贴HTML内容。
+   单击&#x200B;**Source**&#x200B;选项卡以粘贴您的HTML内容。
 
    ![](assets/paste-content.png)
 
@@ -51,7 +51,7 @@ ht-degree: 10%
 
    * 添加收件人的名字和姓氏
 
-     要在消息内容中插入目标用户档案的名字和姓氏，请将光标置于要插入它们的位置，单击工具栏中的最后一个图标，然后单击 **[!UICONTROL Include]** 并选择 **[!UICONTROL Greetings]**.
+     要在消息内容中插入目标用户档案的名字和姓氏，请将光标置于要插入它们的位置，单击工具栏中的最后一个图标，然后单击&#x200B;**[!UICONTROL Include]**&#x200B;并选择&#x200B;**[!UICONTROL Greetings]**。
 
      ![](assets/include-greetings.png)
 
@@ -59,31 +59,31 @@ ht-degree: 10%
 
      ![](assets/perso-check.png)
 
-     在中了解有关个性化选项的更多信息 [本节](personalize.md).
+     在[本节](personalize.md)中了解有关个性化选项的更多信息。
 
    * 插入跟踪链接
 
-     要通过图像或文本将投放收件人转至外部地址，请选择该地址并单击 **[!UICONTROL Add a link]** 图标。
+     要通过图像或文本将投放收件人转至外部地址，请选择该地址并单击工具栏中的&#x200B;**[!UICONTROL Add a link]**&#x200B;图标。
 
-     在中输入链接的URL **URL** 字段使用以下格式 **https://www.myURL.com**，然后确认。
+     使用以下格式&#x200B;**https://www.myURL.com**&#x200B;在&#x200B;**URL**&#x200B;字段中输入链接的URL，然后确认。
 
      ![](assets/add-a-link.png)
 
    * 添加镜像页面
 
-     要允许收件人在Web浏览器中查看投放内容，请添加指向的链接 [镜像页面](mirror-page.md) 您消息的。
+     若要允许收件人在Web浏览器中查看投放内容，请添加指向邮件的[镜像页面](mirror-page.md)的链接。
 
-     将光标放在要插入此链接的位置，单击工具栏中的最后一个图标，然后单击 **[!UICONTROL Include]** 并选择 **[!UICONTROL link to mirror page]**.
+     将光标放在要插入此链接的位置，单击工具栏中的最后一个图标，然后单击&#x200B;**[!UICONTROL Include]**&#x200B;并选择&#x200B;**[!UICONTROL link to mirror page]**。
 
-     在中了解有关管理镜像页面的更多信息 [本节](mirror-page.md#link-to-mirror-page).
+     在[本节](mirror-page.md#link-to-mirror-page)中了解有关管理镜像页面的更多信息。
 
 1. 您可以为电子邮件定义其他参数，如将邮件副本发送到BBC地址、更改邮件格式、设置特定编码等。 可在[此部分](email-parameters.md)中了解详情。
 
-1. 内容准备就绪后，单击 **保存**：它现在将显示在您的投放列表中，位于 **[!UICONTROL Campaigns > Deliveries]** 选项卡。
+1. 内容准备就绪后，单击&#x200B;**保存**：该内容现在将显示在&#x200B;**[!UICONTROL Campaigns > Deliveries]**&#x200B;选项卡的投放列表中。
 
 您的第一个电子邮件投放已准备就绪。 您现在需要定义受众、验证投放并发送它。
 
-请参阅此以了解如何导入电子邮件内容 [用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}.
+在此[用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}中了解如何导入电子邮件内容。
 
 请在以下部分中了解详情：
 
@@ -95,7 +95,7 @@ ht-degree: 10%
 
 ## 测试和验证电子邮件
 
-Campaign提供了多种方法，可在将电子邮件发送给受众之前测试和验证电子邮件。 了解如何在中预览和测试您的电子邮件内容 [本节](../send/preview-and-proof.md).
+Campaign提供了多种方法，可在将电子邮件发送给受众之前测试和验证电子邮件。 在[本节](../send/preview-and-proof.md)中了解如何预览和测试您的电子邮件内容。
 
 您可以：
 

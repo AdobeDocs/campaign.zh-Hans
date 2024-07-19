@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 更新数据库结构 {#updating-the-database-structure}
 
-要应用对架构所做的修改，请启动数据库更新向导。 此助理可通过以下方式访问： **[!UICONTROL Tools > Advanced > Update database structure]**. 它检查数据库的物理结构是否与其逻辑描述匹配，并执行SQL更新脚本。
+要应用对架构所做的修改，请启动数据库更新向导。 可以通过&#x200B;**[!UICONTROL Tools > Advanced > Update database structure]**&#x200B;访问此助手。 它检查数据库的物理结构是否与其逻辑描述匹配，并执行SQL更新脚本。
 
 ![](assets/schema_update.png)
 

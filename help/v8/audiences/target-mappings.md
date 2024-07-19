@@ -14,9 +14,9 @@ ht-degree: 5%
 
 # 使用目标映射{#gs-target-mappings}
 
-默认情况下，电子邮件和短信投放模板将定位到 **[!UICONTROL Recipients]**. 因此，其目标映射使用 **nms：recipient** 表格。
+默认情况下，电子邮件和短信投放模板以&#x200B;**[!UICONTROL Recipients]**&#x200B;为目标。 因此，它们的目标映射使用&#x200B;**nms：recipient**&#x200B;表的字段。
 
-对于推送通知，默认目标映射为 **订阅者应用程序(nms：appSubscriptionRcp)**，链接到收件人表。
+对于推送通知，默认目标映射为链接到收件人表的&#x200B;**订阅者应用程序(nms：appSubscriptionRcp)**。
 
 您可以为投放使用其他目标映射，或创建新的目标映射。
 
@@ -24,7 +24,7 @@ ht-degree: 5%
 
 Adobe Campaign附带以下内置目标映射：
 
-| 名称 | 使用至 | 架构 |
+| 名称 | 使用至 | 模式 |
 |---|---|---|
 | 收件人 | 投放到收件人（内置收件人表） | nms：recipient |
 | 访客 | 向通过反向链接（病毒式营销）收集用户档案的访客投放，例如。 | mns：visitor |
@@ -42,11 +42,11 @@ Adobe Campaign附带以下内置目标映射：
 * 您使用自定义收件人表，
 * 您可以配置一个过滤维度，它与“目标映射”屏幕上的内置定向维度不同。
 
-在中了解有关自定义收件人表的更多信息 [此页面](../dev/custom-recipient.md).
+在[此页面](../dev/custom-recipient.md)中了解有关自定义收件人表的更多信息。
 
 Adobe Campaign目标映射创建向导可帮助您创建使用自定义目标映射所需的所有架构。
 
-1. 浏览至 **[!UICONTROL Administration]** `>` **[!UICONTROL Campaign Management]** `>` **[!UICONTROL Target mappings]** 来自Adobe Campaign explorer。
+1. 从Adobe Campaign资源管理器浏览到&#x200B;**[!UICONTROL Administration]** `>` **[!UICONTROL Campaign Management]** `>` **[!UICONTROL Target mappings]**。
 
 1. 创建新的目标映射，并选择自定义架构作为定向维度。
 
@@ -61,12 +61,12 @@ Adobe Campaign目标映射创建向导可帮助您创建使用自定义目标映
 
    ![](assets/wf_new_mapping_define_names.png)
 
-   您可以选择是否存储排除项(**excludelog**)，消息为(**broadlog**)，或者在单独的表中。
+   您可以选择是存储排除项(**excludelog**)、包含消息(**broadlog**)还是存储在单独的表中。
 
-   您还可以选择是否管理此投放映射的跟踪(**trackinglog**)。
+   您还可以选择是否管理此投放映射(**trackinglog**)的跟踪。
 
 1. 然后，选择要考虑的扩展。 扩展类型取决于您的Campaign设置和加载项。
 
    ![](assets/wf_new_mapping_define_extensions.png)
 
-   单击 **[!UICONTROL Save]** 按钮以启动投放映射创建：根据所选参数自动创建所有链接表。
+   单击&#x200B;**[!UICONTROL Save]**&#x200B;按钮以启动投放映射创建：根据所选参数自动创建所有链接表。

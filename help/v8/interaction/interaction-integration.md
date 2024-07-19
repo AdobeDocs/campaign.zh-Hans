@@ -22,7 +22,7 @@ ht-degree: 0%
 <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=" type="text/javascript"></script>
 ```
 
-“**环境**”参数接收专用于匿名交互的实时环境的内部名称。
+“**env**”参数接收专用于匿名交互的实时环境的内部名称。
 
 要呈现选件，我们需要在Adobe Campaign中创建环境和选件空间，然后配置“HTML”页面。
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 1. 创建链接到匿名环境的优惠空间。
 1. 创建优惠及其链接到优惠空间的表示形式。
 
-**步骤2：更新HTML页面的内容**
+**步骤2：更新HTML页的内容**
 
 HTML页面必须包含一个元素，该元素具有@id属性，并具有已创建选件空间的内部名称（“i_internal名称空间”）的值。 选件将由Interaction插入此元素中。
 
@@ -56,13 +56,13 @@ HTML页面必须包含一个元素，该元素具有@id属性，并具有已创�
 
 >[!CAUTION]
 >
->此 `<script>` 标记不能为自结束。
+>`<script>`标记不能是自关闭的。
 
 此静态调用将自动生成一个动态调用，其中包含选件引擎所需的所有参数。
 
 通过此行为，您可以在同一页面上使用多个选件空间，以便通过调用选件引擎来管理。
 
-**第3步：在“HTML”页中显示结果**
+**步骤3：在HTML页中显示结果**
 
 选件引擎会将选件呈现的内容返回到“HTML”页面：
 
@@ -90,7 +90,7 @@ HTML页面必须包含一个元素，该元素具有@id属性，并具有已创�
 
 ### 提供已识别的优惠 {#presenting-an-identified-offer}
 
-要向已识别的联系人提供选件，其流程与详细流程类似 [在此部分中](#presenting-an-anonymous-offer).
+若要向已识别的联系人提供选件，该过程类似于此部分](#presenting-an-anonymous-offer)中详细描述的[过程。
 
 在网页的内容中，您需要添加以下脚本，以在调用优惠引擎期间识别联系人：
 
@@ -100,7 +100,7 @@ HTML页面必须包含一个元素，该元素具有@id属性，并具有已创�
 </script>
 ```
 
-1. 转到网页将调用的选件空间，然后单击 **[!UICONTROL Advanced parameters]** 和添加一个或多个标识键。
+1. 转到网页将调用的优惠空间，单击&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;并添加一个或多个标识键。
 
    ![](assets/interaction_htmlmode_001.png)
 
@@ -120,9 +120,9 @@ HTML页面必须包含一个元素，该元素具有@id属性，并具有已创�
 
 要自动生成HTML选件表示，可以使用渲染功能。
 
-1. 转到选件空间，然后单击 **[!UICONTROL Edit functions]** 链接。
+1. 转到优惠空间，然后单击&#x200B;**[!UICONTROL Edit functions]**&#x200B;链接。
 1. 选择 **[!UICONTROL Overload the HTML rendering function]**。
-1. 转到 **[!UICONTROL HTML rendering]** 制表符，并将与为选件内容定义的字段匹配的变量插入选件空间。
+1. 转到&#x200B;**[!UICONTROL HTML rendering]**&#x200B;选项卡，并在选件空间中插入与为选件内容定义的字段匹配的变量。
 
    ![](assets/interaction_htmlmode_002.png)
 
@@ -132,7 +132,7 @@ HTML页面必须包含一个元素，该元素具有@id属性，并具有已创�
 
 ### 提供优惠 {#presenting-an-offer}
 
-营销活动 **互动** 通过模块，您可以将XML节点返回到调用HTML引擎的选件页面。 该XML节点可以通过客户端开发的函数进行处理。
+促销活动&#x200B;**交互**&#x200B;模块允许您将XML节点返回到调用优惠引擎的HTML页面。 该XML节点可以通过客户端开发的函数进行处理。
 
 对优惠引擎的调用如下所示：
 
@@ -140,13 +140,13 @@ HTML页面必须包含一个元素，该元素具有@id属性，并具有已创�
 <script type="text/javascript" id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=&cb="></script>
 ```
 
-* “**环境**”参数接收实时环境的内部名称。
+* “**env**”参数接收实时环境的内部名称。
 
-* “**cb**”参数接收将读取包含（回调）建议的引擎返回的XML节点的函数的名称。 此参数是可选的。
+* “**cb**”参数接收函数的名称，该函数将读取包含（回调）建议的引擎返回的XML节点。 此参数是可选的。
 
-* “**t**”参数仅接收已标识交互的目标的值。 此参数也可以通过 **interactiontarget** 变量。 此参数是可选的。
+* “**t**”参数仅接收已标识交互的目标值。 此参数还可以通过&#x200B;**interactionTarget**&#x200B;变量进行传递。 此参数是可选的。
 
-* “**c**“ ”参数接收类别的内部名称列表。 此参数是可选的。
+* “**c**”参数接收类别的内部名称列表。 此参数是可选的。
 
 * “**th**”参数接收主题列表。 此参数是可选的。
 
@@ -165,17 +165,17 @@ HTML页面必须包含一个元素，该元素具有@id属性，并具有已创�
 
 以下用例详细介绍了要在Adobe Campaign中执行的配置以启用XML模式，然后在“HTML”页面中显示调用引擎的结果。
 
-1. **创建环境和选件空间**
+1. **创建环境和优惠空间**
 
-   有关创建环境的更多信息，请参阅 [此页面](interaction-env.md).
+   有关创建环境的详细信息，请参阅[此页面](interaction-env.md)。
 
-   有关创建选件空间的更多信息，请参阅 [此页面](interaction-offer-spaces.md).
+   有关创建优惠空间的详细信息，请参阅[此页面](interaction-offer-spaces.md)。
 
 1. **扩展优惠架构以添加新字段**
 
    此架构将定义以下字段：标题编号2和价格。
 
-   示例中的架构名称为 **cus：offer**
+   示例中架构的名称为&#x200B;**cus：offer**
 
    ```
    <srcSchema _cs="Marketing offers (cus)" created="2013-01-18 17:14:20.762Z" createdBy-id="0"
@@ -210,7 +210,7 @@ HTML页面必须包含一个元素，该元素具有@id属性，并具有已创�
 
 1. **扩展优惠公式以编辑新字段并修改现有字段**
 
-   编辑 **选件(nsm)** 输入表单。
+   编辑&#x200B;**选件(nsm)**&#x200B;输入表单。
 
    在“视图”部分中，插入两个包含以下内容的新字段：
 
@@ -243,27 +243,27 @@ HTML页面必须包含一个元素，该元素具有@id属性，并具有已创�
 
    >[!CAUTION]
    >
-   >( `<input>`)表单必须指向所创建架构中定义的CDATA类型元素。
+   >(`<input>`)表单的字段必须指向所创建架构中定义的CDATA类型元素。
 
    优惠呈现形式中的呈现如下所示：
 
    ![](assets/interaction_xmlmode_form.png)
 
-   此 **[!UICONTROL Title 2]** 和 **[!UICONTROL Price]** 已添加字段，并且 **[!UICONTROL Destination URL]** 字段不再显示。
+   已添加&#x200B;**[!UICONTROL Title 2]**&#x200B;和&#x200B;**[!UICONTROL Price]**&#x200B;字段，并且不再显示&#x200B;**[!UICONTROL Destination URL]**&#x200B;字段。
 
 1. **创建优惠**
 
-   有关创建选件的更多信息，请参阅 [此页面](interaction-offer.md).
+   有关创建选件的详细信息，请参阅[此页面](interaction-offer.md)。
 
    在以下用例中，输入选件如下：
 
    ![](assets/interaction_xmlmode_offer.png)
 
-1. **批准优惠**
+1. **批准选件**
 
    批准优惠或由其他人批准优惠，然后在最后一步创建的优惠空间上激活它，以便它在链接的实时环境中可用。
 
-1. **“HTML”页面上的引擎调用和结果**
+1. HTML页面上的&#x200B;**引擎调用和结果**
 
    对“HTML”页面中选件引擎的调用如下所示：
 
@@ -271,9 +271,9 @@ HTML页面必须包含一个元素，该元素具有@id属性，并具有已创�
    <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=OE7&cb=alert" type="text/javascript">
    ```
 
-   “”的值&#x200B;**环境**“ parameter是实时环境的内部名称。
+   “**env**”参数的值是实时环境的内部名称。
 
-   “”的值&#x200B;**cb**“ parameter是函数的名称，该函数需要解释引擎返回的XML节点。 在我们的示例中，调用的函数会打开一个模式窗口(alert()函数)。
+   “**cb**”参数的值是需要解释引擎返回的XML节点的函数的名称。 在我们的示例中，调用的函数会打开一个模式窗口(alert()函数)。
 
    选件引擎返回的XML节点如下所示：
 
@@ -297,9 +297,9 @@ HTML页面必须包含一个元素，该元素具有@id属性，并具有已创�
 
 可以使用XML渲染函数来创建优惠演示。 此函数将修改在调用优惠引擎期间返回到HTML页的XML节点。
 
-1. 转到选件空间，然后单击 **[!UICONTROL Edit functions]** 链接。
+1. 转到优惠空间，然后单击&#x200B;**[!UICONTROL Edit functions]**&#x200B;链接。
 1. 选择 **[!UICONTROL Overload the XML rendering function]**。
-1. 转到 **[!UICONTROL XML rendering]** 制表符并插入所需的函数。
+1. 转到&#x200B;**[!UICONTROL XML rendering]**&#x200B;选项卡并插入所需的函数。
 
    该函数可以如下所示：
 
@@ -318,33 +318,33 @@ HTML页面必须包含一个元素，该元素具有@id属性，并具有已创�
 
 ### 优惠建议 {#offer-proposition}
 
-对于通过SOAP提供的优惠建议，请添加 **nms：proposition#Propose** 命令后跟以下参数：
+对于通过SOAP的优惠建议，请添加&#x200B;**nms：proposition#Propose**&#x200B;命令，后跟以下参数：
 
-* **targetId**：收件人的主键（可以是复合键）。
-* **maxCount**：指定联系人的优惠建议数量。
-* **上下文**：用于在空间架构中添加上下文信息。 如果使用的架构为 **nms：interaction**， **`<empty>`** 应该添加的。
+* **targetId**：收件人的主键（可以是组合键）。
+* **maxCount**：指定联系人的优惠建议数。
+* **上下文**：允许您在空间架构中添加上下文信息。 如果使用的架构是&#x200B;**nms：interaction**，则应添加&#x200B;**`<empty>`**。
 * **类别**：指定选件必须属于的类别。
 * **主题**：指定选件必须属于的主题。
-* **uuid**：Adobe Campaign永久cookie的值(“uuid230”)。
-* **nli**：Adobe Campaign会话Cookie的值(“nlid”)。
+* **uuid**： Adobe Campaign永久cookie的值(“uuid230”)。
+* **nli**： Adobe Campaign会话Cookie的值(“nlid”)。
 * **noProp**：使用“true”值停用建议插入。
 
 >[!NOTE]
 >
->此 **targetId** 和 **maxCount** 必须设置。 其他则是可选的。
+>**targetId**&#x200B;和&#x200B;**maxCount**&#x200B;设置是强制性的。 其他则是可选的。
 
-作为对该查询的响应，SOAP服务将返回以下参数：
+为响应查询，SOAP服务将返回以下参数：
 
 * **interactionId**：交互的ID。
 * **建议**： XML元素，包含建议列表，每个建议都有自己的ID和HTML表示形式。
 
 ### 优惠更新 {#offer-update}
 
-添加 **nms：interaction#UpdateStatus** 命令前往URL，然后是以下参数：
+将&#x200B;**nms：interaction#UpdateStatus**&#x200B;命令添加到URL，后跟以下参数：
 
-* **建议**：字符串，它包含在优惠建议期间作为输出提供的建议ID。 请参阅 [优惠建议](#offer-proposition).
-* **状态**：字符串类型，它指定选件的新状态。 可能的值列在 **propositionStatus** 枚举，在 **nms：common** 架构。 例如，出厂预装的数字3对应于 **已接受** 状态。
-* **上下文**：XML元素，用于在空间架构中添加上下文信息。 如果使用的架构为 **nms：interaction**， **`<empty>`** 应该添加的。
+* **建议**：字符串，它包含在优惠建议期间作为输出提供的建议ID。 请参阅[优惠建议](#offer-proposition)。
+* **状态**：字符串类型，它指定选件的新状态。 可能的值列在&#x200B;**nms：common**&#x200B;架构的&#x200B;**propositionStatus**&#x200B;枚举中。 例如，数字3是现成的，对应于&#x200B;**已接受**&#x200B;状态。
+* **上下文**： XML元素，允许您在空间架构中添加上下文信息。 如果使用的架构是&#x200B;**nms：interaction**，则应添加&#x200B;**`<empty>`**。
 
 ### 使用SOAP调用的示例 {#example-using-a-soap-call}
 

@@ -33,7 +33,7 @@ Adobe Campaign 生成的镜像页面包含所有个性化数据。
 ![](assets/mirror-page-insert.png){width="800" align="left"}
 
 
-有关插入个性化内容块的更多信息，请参阅 [个性化块](personalization-blocks.md).
+有关插入个性化内容块的更多信息，请参阅[个性化块](personalization-blocks.md)。
 
 ## 管理镜像页面的生成 {#mirror-page-generation}
 
@@ -41,16 +41,16 @@ Adobe Campaign 生成的镜像页面包含所有个性化数据。
 
 您可以控制电子邮件镜像页面的生成方式。投放属性中提供了选项。要访问这些选项，请执行以下操作：
 
-1. 浏览至 **[!UICONTROL Validity]** 电子邮件属性的选项卡。
-1. 在 **镜像页面管理** 部分，检查 **[!UICONTROL Mode]** 下拉列表。
+1. 浏览到电子邮件属性的&#x200B;**[!UICONTROL Validity]**&#x200B;选项卡。
+1. 在&#x200B;**镜像页面管理**&#x200B;部分中，检查&#x200B;**[!UICONTROL Mode]**&#x200B;下拉列表。
 
 ![](assets/mirror-page-generation.png){width="800" align="left"}
 
 除默认模式外，还提供以下选项：
 
-* **[!UICONTROL Force the generation of the mirror page]**：使用此模式可生成镜像页面，即使投放中未插入指向镜像页面的链接也是如此。
-* **[!UICONTROL Do not generate the mirror page]**：使用此模式可避免生成镜像页面，即使投放中存在链接也是如此。
-* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**：当电子邮件内容中不存在镜像页面链接时，使用此选项可在投放日志窗口中启用对镜像页面内容的访问，如下所述。
+* **[!UICONTROL Force the generation of the mirror page]**：使用此模式生成镜像页面，即使投放中未插入指向镜像页面的链接。
+* **[!UICONTROL Do not generate the mirror page]**：使用此模式可避免生成镜像页面，即使链接存在于投放中也是如此。
+* **[!UICONTROL Generates a mirror page accessible using only the message identifier]**：当电子邮件内容中不存在镜像页面链接时，请使用此选项在投放日志窗口中启用对镜像页面内容的访问，如下所述。
 
 ## 检查收件人的镜像页面 {#mirror-page-access}
 
@@ -58,9 +58,9 @@ Adobe Campaign 生成的镜像页面包含所有个性化数据。
 
 要访问此镜像页面，请执行以下操作：
 
-1. 发送投放后，打开它并浏览到其 **[!UICONTROL Delivery]** 选项卡。
+1. 发送投放后，打开它并浏览到其&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡。
 
-1. 选择一个收件人，然后单击 **[!UICONTROL Display the mirror page for this message...]** 链接。
+1. 选择一个收件人，然后单击&#x200B;**[!UICONTROL Display the mirror page for this message...]**&#x200B;链接。
 
    ![](assets/mirror-page-display.png){width="800" align="left"}
 

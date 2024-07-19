@@ -25,15 +25,15 @@ ht-degree: 1%
 
 ### 第1步 — 基于多维数据集创建报告 {#step-1---create-a-report-based-on-a-cube}
 
-一旦 [多维数据集已配置](cube-indicators.md)，可用作创建新报告的模板。
+配置[多维数据集后](cube-indicators.md)，可将其用作创建新报告的模板。
 
 要基于现有多维数据集创建报告，请执行以下步骤：
 
-1. 单击 **[!UICONTROL Create]** 的按钮 **[!UICONTROL Reports]** 选项卡并选择您刚刚创建的多维数据集。
+1. 单击&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡的&#x200B;**[!UICONTROL Create]**&#x200B;按钮，然后选择刚刚创建的多维数据集。
 
    ![](assets/new-report-based-on-cube.png)
 
-1. 单击 **[!UICONTROL Create]** 按钮确认：这会将您转到报告配置和查看页面。
+1. 单击&#x200B;**[!UICONTROL Create]**&#x200B;按钮确认：这会将您转到报告配置和查看页面。
 
    默认情况下，前两个可用尺寸以行和列提供，但表中不显示任何值。 要生成表，请单击主图标：
 
@@ -49,7 +49,7 @@ ht-degree: 1%
 
 默认显示显示多维数据集的前两个维（在本例中是年龄和城市）。
 
-此 **[!UICONTROL Add]** 每个轴上的按钮允许您添加维度。
+每个轴上的&#x200B;**[!UICONTROL Add]**&#x200B;按钮允许您添加维度。
 
 ![](assets/cube-switch.png)
 
@@ -63,7 +63,7 @@ ht-degree: 1%
 
    这些参数取决于所选维的数据类型。
 
-   例如，对于日期，可以使用多个级别。 有关详细信息，请参见 [显示度量](customize-cubes.md#display-measures).
+   例如，对于日期，可以使用多个级别。 有关详细信息，请参阅[显示度量](customize-cubes.md#display-measures)。
 
    在这种情况下，可以使用以下选项：
 
@@ -77,9 +77,9 @@ ht-degree: 1%
    * 按升序(a-z， 0-9)或降序(z-a， 9-0)显示值。
    * 更改加载时要显示的列数（默认情况下： 200）。
 
-1. 单击 **[!UICONTROL Ok]** 确认：将维添加到现有维。
+1. 单击&#x200B;**[!UICONTROL Ok]**&#x200B;确认：该维度已添加到现有维度。
 
-   表格上方的黄色横幅显示您已进行更改：单击 **[!UICONTROL Save]** 按钮以保存它们。
+   表上方的黄色横幅显示您已进行更改：单击&#x200B;**[!UICONTROL Save]**&#x200B;按钮进行保存。
 
    ![](assets/cube-in-report.png)
 
@@ -93,7 +93,7 @@ ht-degree: 1%
 
    ![](assets/cube-measure-button.png)
 
-1. 使用 **[!UICONTROL Use a measure]** 按钮，选择现有度量之一。
+1. 使用&#x200B;**[!UICONTROL Use a measure]**&#x200B;按钮，选择现有度量之一。
 
    ![](assets/cube-add-measure.png)
 
@@ -101,13 +101,13 @@ ht-degree: 1%
 
    ![](assets/cube-measure-options.png)
 
-   您还可以通过以下方式配置整体测量 **[!UICONTROL Edit the configuration of the pivot table]** 图标。
+   通过标题中的&#x200B;**[!UICONTROL Edit the configuration of the pivot table]**&#x200B;图标，还可以使用整体度量值配置。
 
    ![](assets/cube-pivot-table-config.png)
 
    然后，您可以选择是否显示度量标签。 [了解详情](customize-cubes.md#configure-the-display)。
 
-1. 您可以基于现有度量构建新度量。 为此，请单击 **[!UICONTROL Create a measure]** 并进行配置。
+1. 您可以基于现有度量构建新度量。 为此，请单击&#x200B;**[!UICONTROL Create a measure]**&#x200B;并进行配置。
 
    ![](assets/cube-create-new-measure.png)
 
@@ -125,9 +125,9 @@ ht-degree: 1%
 
    ![](assets/cube-display-new-measure.png)
 
-   创建测量后，可以对其进行编辑并更改其配置。 要执行此操作，请单击 **[!UICONTROL Measures]** 按钮，然后浏览到要编辑的度量的选项卡。
+   创建测量后，可以对其进行编辑并更改其配置。 为此，请单击&#x200B;**[!UICONTROL Measures]**&#x200B;按钮，然后浏览到要编辑的度量的选项卡。
 
-   然后单击 **[!UICONTROL Edit the dynamic measure]** 以访问设置菜单。
+   然后单击&#x200B;**[!UICONTROL Edit the dynamic measure]**&#x200B;以访问设置菜单。
 
 ## 构建目标群体 {#build-a-target-population}
 
@@ -135,23 +135,23 @@ ht-degree: 1%
 
 要将群体分组到列表中，请执行以下步骤：
 
-1. 单击包含要收集的群体的单元格以将其选定，然后单击 **[!UICONTROL Add to cart]** 图标。
+1. 单击包含要收集的群体的单元格以选择它们，然后单击&#x200B;**[!UICONTROL Add to cart]**&#x200B;图标。
 
    ![](assets/cube-add-to-cart.png)
 
    为此，可根据需要多次收集各种用户档案
 
-1. 单击 **[!UICONTROL Show cart]** 按钮以在运行导出之前查看其内容。
+1. 单击&#x200B;**[!UICONTROL Show cart]**&#x200B;按钮以查看其内容，然后再运行导出。
 
    ![](assets/cube-show-cart.png)
 
-1. 使用 **[!UICONTROL Export]** 按钮将购物车中的项目分组到列表中。
+1. 使用&#x200B;**[!UICONTROL Export]**&#x200B;按钮将购物车中的项目分组到列表中。
 
    输入列表名称并选择要执行的导出类型。
 
    ![](assets/cube-export-report.png)
 
-   单击 **[!UICONTROL Start]** 以运行导出。
+   单击&#x200B;**[!UICONTROL Start]**&#x200B;以运行导出。
 
 1. 导出完成后，将显示一条消息，确认其执行和已处理的记录数。
 
@@ -159,7 +159,7 @@ ht-degree: 1%
 
    您可以保存购物车的内容或将其清空。
 
-   新列表可通过 **[!UICONTROL Profiles and targets]** 选项卡。
+   新列表可通过&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;选项卡使用。
 
    ![](assets/cube-list-available.png)
 
@@ -171,8 +171,8 @@ ht-degree: 1%
 
    ![](assets/cube-insert-in-report.png)
 
-1. 在 **[!UICONTROL Data]** 选项卡中，选择一个立方以处理它包含的维并显示计算的度量。
+1. 在该页的&#x200B;**[!UICONTROL Data]**&#x200B;选项卡中，选择一个多维数据集以处理它包含的维并显示计算的度量。
 
    ![](assets/cube-selected-in-report.png)
 
-   这样，您就可以构建要显示的报表。 有关详细信息，请参见 [第2步 — 选择行和列](#step-2---select-lines-and-columns).
+   这样，您就可以构建要显示的报表。 有关详细信息，请参阅[第2步 — 选择行和列](#step-2---select-lines-and-columns)。

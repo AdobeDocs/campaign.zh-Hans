@@ -18,14 +18,14 @@ ht-degree: 2%
 
 交互操作有两种类型的选件环境：
 
-* **[!UICONTROL Design]** 优惠环境，其中包含正在编辑且可以更改的优惠。 这些选件尚未经过批准周期，不会发送给联系人。
-* **[!UICONTROL Live]** 优惠环境，其中包含向联系人展示的已批准优惠。 此环境中的选件处于只读状态。
+* **[!UICONTROL Design]**&#x200B;选件环境，其中包含正在编辑且可更改的选件。 这些选件尚未经过批准周期，不会发送给联系人。
+* **[!UICONTROL Live]**&#x200B;优惠环境包含向联系人呈现的已批准优惠。 此环境中的选件处于只读状态。
 
 ![](assets/offer_environments_overview_001.png)
 
-每个 **[!UICONTROL Design]** 环境已链接到 **[!UICONTROL Live]** 环境。 选件完成后，其内容和资格规则需要经过批准周期。 完成此周期后，相关选件将自动部署到 **[!UICONTROL Live]** 环境。 从现在开始，它将可供交付。
+每个&#x200B;**[!UICONTROL Design]**&#x200B;环境都链接到&#x200B;**[!UICONTROL Live]**&#x200B;环境。 选件完成后，其内容和资格规则需要经过批准周期。 此周期完成后，相关选件将自动部署到&#x200B;**[!UICONTROL Live]**&#x200B;环境。 从现在开始，它将可供交付。
 
-默认情况下，Campaign提供 **[!UICONTROL Design]** 环境和 **[!UICONTROL Live]** 链接到它的环境。 这两个环境都已预配置为定位 [内置收件人表](../dev/datamodel.md#ootb-profiles).
+默认情况下，Campaign附带一个&#x200B;**[!UICONTROL Design]**&#x200B;环境和与其关联的&#x200B;**[!UICONTROL Live]**&#x200B;环境。 两个环境都已预配置为以[内置的收件人表](../dev/datamodel.md#ootb-profiles)为目标。
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 ![](assets/offer_environments_overview_002.png)
 
-投放经理只能查看 **[!UICONTROL Live]** 环境和利用优惠进行交付。 优惠经理可以查看和使用 **[!UICONTROL Design]** 环境，并查看 **[!UICONTROL Live]** 环境。 [了解详情](interaction-operators.md)
+投放经理只能查看&#x200B;**[!UICONTROL Live]**&#x200B;环境并利用选件进行投放。 优惠经理可以查看和使用&#x200B;**[!UICONTROL Design]**&#x200B;环境，还可以查看&#x200B;**[!UICONTROL Live]**&#x200B;环境。 [了解详情](interaction-operators.md)
 
 ## 为匿名交互创建环境{#create-an-offer-environment}
 
@@ -41,11 +41,11 @@ ht-degree: 2%
 
 按照下面的步骤进行操作：
 
-1. 浏览至 **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**，右键单击要使用的目标映射，然后选择 **[!UICONTROL Actions]** > **[!UICONTROL Modify the options of the targeting dimension]**.
+1. 浏览到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**，右键单击要使用的目标映射并选择&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Modify the options of the targeting dimension]**。
 
    ![](assets/offer_env_anonymous_001.png)
 
-1. 单击 **[!UICONTROL Next]**，选择 **[!UICONTROL Generate a storage schema for propositions]** 选项并单击 **[!UICONTROL Save]**.
+1. 单击&#x200B;**[!UICONTROL Next]**，选择&#x200B;**[!UICONTROL Generate a storage schema for propositions]**&#x200B;选项，然后单击&#x200B;**[!UICONTROL Save]**。
 
    ![](assets/offer_env_anonymous_002.png)
 
@@ -53,16 +53,16 @@ ht-degree: 2%
    >
    >如果选项已选中，请取消选中该选项，然后重新选中。
 
-1. Adobe Campaign创建两个环境 —  **[!UICONTROL Design]** 和 **[!UICONTROL Live]**  — 包含之前启用的目标映射中的定位信息。 环境已预先配置了定位信息。
+1. Adobe Campaign使用之前启用的目标映射中的定位信息创建两个环境 — **[!UICONTROL Design]**&#x200B;和&#x200B;**[!UICONTROL Live]**。 环境已预先配置了定位信息。
 
-如果您已激活 **[!UICONTROL Visitor]** 映射， **[!UICONTROL Environment dedicated to incoming anonymous interactions]** 框会在环境的 **[!UICONTROL General]** 选项卡。
+如果已激活&#x200B;**[!UICONTROL Visitor]**&#x200B;映射，则会在环境的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中自动选中&#x200B;**[!UICONTROL Environment dedicated to incoming anonymous interactions]**&#x200B;框。
 
 此选项允许您激活特定于匿名交互的功能，尤其是在配置环境优惠空间时。 您还可以配置相应的选项，以便从“已识别”环境切换到“匿名”环境。
 
-例如，您可以将收件人环境选件空间（已识别的联系人）链接到与访客环境（未识别的联系人）匹配的选件空间。 这样，根据此联系人是否识别，将向联系人提供不同的选件。 有关详细信息，请参见 [创建优惠空间](interaction-offer-spaces.md).
+例如，您可以将收件人环境选件空间（已识别的联系人）链接到与访客环境（未识别的联系人）匹配的选件空间。 这样，根据此联系人是否识别，将向联系人提供不同的选件。 有关详细信息，请参阅[创建优惠空间](interaction-offer-spaces.md)。
 
 ![](assets/offer_env_anonymous_003.png)
 
 >[!NOTE]
 >
->有关入站渠道匿名交互的详细信息，请参阅 [匿名互动](anonymous-interactions.md).
+>有关入站渠道上的匿名交互的详细信息，请参阅[匿名交互](anonymous-interactions.md)。

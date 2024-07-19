@@ -14,7 +14,7 @@ ht-degree: 57%
 
 # 2023版发行说明 {#2023-rn}
 
-此页面列出了随附的新功能、改进和修复 **2023 Campaign v8版本**.
+此页面列出了&#x200B;**2023 Campaign v8版本**&#x200B;中的新功能、改进和修复。
 
 
 ## 版本 8.5.2 {#release-8-5-2}
@@ -28,7 +28,7 @@ _2023年8月2日_
 _2023年6月30日_
 
 
-**增强的推送通知服务**
+**增强推送通知服务**
 
 Campaign v8.5.1引入了我们最新的推送通知服务，该服务由基于现代尖端技术构建的强大框架提供支持。 此服务旨在解锁更高级别的可扩展性，确保您的通知能够以无缝效率接触到更多受众。 通过我们增强的基础架构和优化的流程，您可以期待更高的扩展性和可靠性，使您能够以前所未有的方式吸引移动应用程序用户并与之建立联系。 此功能仅适用于选定的客户组（限量发布）。
 
@@ -45,12 +45,12 @@ Campaign v8.5.1引入了我们最新的推送通知服务，该服务由基于�
 <p><strong>移动渠道吞吐量增加</strong></p>
 <p>与以前的版本(v8.4)相比，新引入的推送通知服务显示推送Android和推送iOS的吞吐量有了显着改进。 最新版本(v8.5)中的升级服务将会显着提升用户性能。 </p>
 <ul>
-<li>推送通知(Android)：最多 <strong>5倍</strong> 更快 </li>
-<li>推送通知(iOS)：最多 <strong>2.2倍</strong> 更快</li>
+<li>推送通知(Android)：速度最多可加快<strong>5x</strong> </li>
+<li>推送通知(iOS)：速度加快<strong>2.2x</strong></li>
 </ul>
 <p>通过一系列优化，短信吞吐量得到了大幅提升，从而显着提高了短信通信的速度和效率。 这些升级已导致吞吐量从以前的版本(v8.4)增加到最新的版本(v8.5)，包括发送和反馈更新。 用户现在可以体验此增强型短信服务的好处。</p>
 <ul>
-<li>SMS吞吐量：最高 <strong>5倍</strong> 更快</li>
+<li>SMS吞吐量：速度提高<strong>5x</strong></li>
 </ul>
 <p><em>Adobe测试小组已在实验室条件下测量了这些最大吞吐量性能。</em></p>
 </div>
@@ -59,7 +59,7 @@ Campaign v8.5.1引入了我们最新的推送通知服务，该服务由基于�
 </tr></table>
 
 
-**一般改进**
+**常规改进**
 
 * 您现在可以利用Adobe Experience Platform目标连接在Adobe Experience Platform和Campaign v8数据库之间同步配置文件属性，例如选择退出数据。
 * 已跨所有渠道优化投放准备。
@@ -74,7 +74,7 @@ Campaign v8.5.1引入了我们最新的推送通知服务，该服务由基于�
 **兼容性更新**
 
 * 客户端控制台的32位版本现已弃用。 从8.6开始，客户端控制台将仅以64位提供。 客户端控制台可无缝升级到64位版本。 有关如何升级操作系统的详细信息，请参阅此[技术说明](../../technotes/upgrades/console.md)。
-* 您现在可以将Campaign v8实例连接到Azure synapse外部数据库。 此连接通过新的外部帐户进行管理。 了解详情，请参阅 [Campaign兼容性矩阵](../start/compatibility-matrix.md#federated-data-access-fdafederateddataaccessfda).
+* 您现在可以将Campaign v8实例连接到Azure synapse外部数据库。 此连接通过新的外部帐户进行管理。 在[Campaign兼容性矩阵](../start/compatibility-matrix.md#federated-data-access-fdafederateddataaccessfda)中了解详情。
 
 
 **修复**

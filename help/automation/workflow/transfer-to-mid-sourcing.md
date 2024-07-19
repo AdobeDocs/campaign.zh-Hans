@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 传输到中间源{#transfer-to-mid-sourcing}
 
-下面详细介绍的工作流将随 **传输到中间源** 默认模块。
+默认情况下，下面详述的工作流随&#x200B;**传输到中间源**&#x200B;模块一起安装。
 
 <table> 
  <tbody> 
@@ -30,7 +30,7 @@ ht-degree: 2%
   <tr> 
    <td> <span class="uicontrol">中间源（投放日志）</span> <br /> </td> 
    <td> <span class="uicontrol">defaultMidSourcingLog</span> <br /> </td> 
-   <td> 此工作流在中间源服务器上收集投放日志。 默认情况下，每小时触发一次。<br /> </td> 
+   <td> 此工作流在中间源服务器上收集投放日志。 默认情况下每小时触发一次。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

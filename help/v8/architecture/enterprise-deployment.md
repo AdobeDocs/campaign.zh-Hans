@@ -14,7 +14,7 @@ ht-degree: 50%
 
 # [!DNL Campaign] FFDA部署 {#gs-ac-ffda}
 
-利用 [[!DNL Snowflake]](https://www.snowflake.com/){target="_blank"}Adobe Campaign企业完全联合访问(FFDA)部署是一项云数据库技术，它大幅提升了其规模和速度，能够管理更多的客户档案，并且可实现更高的投放率和每小时事务处理量。
+通过利用[[!DNL Snowflake]](https://www.snowflake.com/){target="_blank"}（云数据库技术），Adobe Campaign企业完全联合访问(FFDA)部署大幅提升了其规模和速度，能够管理更多的客户档案，并且可实现更高的投放率和每小时事务处理量。
 
 ## 好处 {#ffda-benefits}
 
@@ -37,9 +37,9 @@ Campaign v8企业版(FFDA)在流程的任何步骤（从定位到最终报告）
 
 ## Campaign Enterprise (FFDA)架构{#ffda-archi}
 
-在 [企业(FFDA)部署](../architecture/enterprise-deployment.md)， [!DNL Adobe Campaign] v8可与两个数据库配合使用：本地 [!DNL Campaign] 数据库用于用户界面实时消息传递和统一查询，并通过API进行编写，以及使用Cloud [!DNL Snowflake] 数据库，用于活动执行、批量查询和工作流执行。
+在[企业(FFDA)部署](../architecture/enterprise-deployment.md)中，[!DNL Adobe Campaign] v8可与两个数据库配合使用：用于用户界面实时消息传递和统一查询、通过API写入的本地[!DNL Campaign]数据库，以及用于活动执行、批量查询和工作流执行的云[!DNL Snowflake]数据库。
 
-Campaign v8企业版引入了以下概念 **完全联合数据访问** (FFDA)：所有数据现在都位于云数据库上的远程位置。
+Campaign v8企业版引入了&#x200B;**完全联合数据访问** (FFDA)的概念：所有数据现在都位于云数据库上的远程位置。
 
 特定 API 可用于管理本地数据库和云数据库之间的数据。在[本页面](new-apis.md)中了解这些新 API 的工作方式以及如何使用它们。
 
@@ -50,7 +50,7 @@ Campaign v8企业版引入了以下概念 **完全联合数据访问** (FFDA)：
 * 实例上已禁用执行和退回管理模块。
 * 应用程序配置为在使用SOAP调用（通过HTTP或HTTPS）驱动的远程“中源”服务器上执行消息。
 
-此 [!DNL Snowflake] 营销端的数据库用于：
+营销端的[!DNL Snowflake]数据库用于：
 
 * 存储所有客户数据：用户档案、自定义数据，如交易、产品、位置等。
 * 存储Campaign生成或收集的所有事件和行为数据，如投放日志、跟踪日志、推送注册等。
@@ -63,7 +63,7 @@ Campaign v8企业版引入了以下概念 **完全联合数据访问** (FFDA)：
 
 * 执行特定工作负载，例如低流量API。
 * 存储所有Campaign数据，包括投放和活动设置、工作流和服务定义。
-* 存储所有内置参考表（明细列表、国家/地区等） 复制到的 [!DNL Snowflake].
+* 存储所有内置参考表（明细列表、国家/地区等） 已复制到[!DNL Snowflake]。
 
   但是，您不能：
    * 为客户数据创建自定义项，例如，不要在PostgreSQL中创建家庭表，而要在Snowflake中创建家庭表
@@ -82,13 +82,13 @@ Campaign v8企业版引入了以下概念 **完全联合数据访问** (FFDA)：
 
 ### [!DNL Campaign] API暂存机制{#staging-api}
 
-替换为 [!DNL Campaign] 云数据库，由于性能（延迟和并发），不建议使用Blast统一调用。 始终首选批处理操作。 为了保证API的最佳性能，Campaign会继续在本地数据库级别处理API调用。
+对于[!DNL Campaign]云数据库，由于性能（延迟和并发），不建议使用Blast单一调用。 始终首选批处理操作。 为了保证API的最佳性能，Campaign会继续在本地数据库级别处理API调用。
 
 [本页中详细介绍了API暂存机制](staging.md)
 
 ### 新 API{#new-apis}
 
-新API可用于管理以下对象之间的数据同步： [!DNL Campaign] 本地数据库和云数据库。 还引入了一种新的机制，用于在本地数据库级别处理API调用，以避免延迟并提高整体性能。
+新API可用于管理[!DNL Campaign]本地数据库与云数据库之间的数据同步。 还引入了一种新的机制，用于在本地数据库级别处理API调用，以避免延迟并提高整体性能。
 
 [有关新API的详情，请参阅此页面](new-apis.md)
 
@@ -107,7 +107,7 @@ Campaign v8企业版引入了以下概念 **完全联合数据访问** (FFDA)：
 
 ### ID 管理{#id-mgt-ffda}
 
-Campaign v8对象现在使用 **通用唯一ID (UUID)**，允许使用无限的唯一值来标识数据。
+Campaign v8对象现在使用&#x200B;**通用唯一标识符(UUID)**，允许使用无限的唯一值来标识数据。
 
 请注意，此 ID 是基于字符串的，而不是按顺序的。主密钥不是 Campaign v8 中的数字值，您需要在模式中使用 **autouuid** 和 **autopk** 属性。
 

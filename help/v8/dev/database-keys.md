@@ -26,7 +26,7 @@ ht-degree: 1%
 </key>
 ```
 
-当键是架构中第一个要填充的键时，或者如果键包含 `internal` 属性设置为“true”。
+如果某个键是架构中第一个要填充的键，或者包含设置为“true”的`internal`属性，则该键被称为“主键”。
 
 键可以引用表中的一个或多个字段。
 
@@ -108,7 +108,7 @@ ht-degree: 1%
 
 ## 主键 — 标识符{#primary-key}
 
-在上下文中 [企业(FFDA)部署](../architecture/enterprise-deployment.md)，Adobe Campaign表的主键是 **通用唯一ID (UUID)** 由数据库引擎自动生成。 键值在整个数据库中是唯一的。 密钥的内容在插入记录时自动生成。
+在[Enterprise (FFDA)部署](../architecture/enterprise-deployment.md)的上下文中，Adobe Campaign表的主键是由数据库引擎自动生成的&#x200B;**通用唯一标识符(UUID)**。 键值在整个数据库中是唯一的。 密钥的内容在插入记录时自动生成。
 
 **示例**
 

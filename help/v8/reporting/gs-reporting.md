@@ -32,24 +32,24 @@ Adobe Campaign提供本页中列出的一组报表工具。
 
   Adobe Campaign附带有关投放、营销策划、平台活动、可选功能等的报告。 这些报告可通过它们相关的各种功能获取。 它们可以根据您的特定需求进行调整。
 
-  使用 **报表** 选项卡以访问这些报表。
+  使用&#x200B;**报告**&#x200B;选项卡访问这些报告。
 
   ![](assets/built-in-reports.png)
 
   如需详细信息，请参阅[此小节](built-in-reports.md)。
 
-* **描述性分析**
+* **描述性数据分析**
 
   Adobe Campaign提供了一个可视化工具，用于生成有关数据库中数据的统计信息。 您可以使用专用助手创建描述性分析报告，并根据需要调整其内容和布局。
 
-  使用 **[!UICONTROL Tools > Descriptive analysis...]** 菜单以创建新报告。
+  使用&#x200B;**[!UICONTROL Tools > Descriptive analysis...]**&#x200B;菜单创建新报告。
 
   ![](assets/desc-analysis-report.png)
 
-  有关营销活动描述性分析报表的信息，请参见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=zh-Hans){target="_blank"}.
+  促销活动描述性分析报表存在于[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=zh-Hans){target="_blank"}中。
 
-* **自定义报表**
+* **自定义报告**
 
   使用Adobe Campaign创建有关数据库中数据的报表。 创建这些组件后，可在相应的上下文中访问它们。
 
-  有关创建报告的详细步骤，请参见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target="_blank"}. 高级用户可自行创建个性化报表。
+  [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target="_blank"}中详细介绍了创建报告的步骤。 高级用户可自行创建个性化报表。

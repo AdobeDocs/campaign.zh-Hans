@@ -30,9 +30,9 @@ ht-degree: 0%
 
 ## 何时进行此迁移？{#aws-timeline}
 
-开发和暂存环境迁移将在以下位置进行： **2023年10**.
+开发和暂存环境迁移将于&#x200B;**2023年10月**&#x200B;进行。
 
-生产环境迁移计划在中开始 **2024年1月**. 随着日期的临近，将提供更多详细信息。
+生产环境迁移计划于&#x200B;**2024年1月**&#x200B;开始。 随着日期的临近，将提供更多详细信息。
 
 作为Campaign客户，您将在安排迁移批次时收到其他通知。 对于暂存环境，通知将在迁移前至少7天发送，对于生产环境，通知将在迁移前至少30天发送。
 
@@ -51,9 +51,9 @@ ht-degree: 0%
 
   Adobe计划停用旧式数据中心，在该数据中心运行的Adobe Campaign实例必须转移到新的参考数据中心Amazon Web Services (AWS)。
 
-  Managed Services云Adobe托管在Amazon Web Services (AWS)上，它是一个现代化、安全和优化的环境。 [了解有关Amazon Web Services的更多信息](https://aws.amazon.com/application-hosting/benefits/){target="_blank"}.
+  Managed Services云Adobe托管在Amazon Web Services (AWS)上，它是一个现代化、安全和优化的环境。 [进一步了解Amazon Web Services](https://aws.amazon.com/application-hosting/benefits/){target="_blank"}。
 
-* **此迁移面向哪些客户？**
+* **此迁移的目标客户是哪些客户？**
 
   所有Campaign v8客户和Campaign Classicv7混合、托管和Campaign Managed Services都将迁移其环境。 Campaign Standard客户也受到影响。
 
@@ -67,11 +67,11 @@ ht-degree: 0%
 
 * **客户需要运行哪些验证？**
 
-  此迁移不需要任何特定测试。 如果发现任何问题，请联系 [Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+  此迁移不需要任何特定测试。 如果发现任何问题，请联系[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}。
 
 
-* **我是否可以请求更改计划安全升级插槽的日期/时间？**
+* **我可以请求更改计划的安全升级槽的日期/时间吗？**
 
   由于这是强制性迁移，因此我们无法适应对现有计划的修改。
 
-对于任何其他问题，您可以联系 [Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}.
+如有任何其他问题，您可以联系[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}。

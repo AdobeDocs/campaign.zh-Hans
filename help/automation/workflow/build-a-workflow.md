@@ -18,19 +18,19 @@ ht-degree: 1%
 
 工作流创建流程取决于工作流的类型。 您可以：
 
-* 创建 [定位工作流](#targeting-workflows) 从 **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]** 浏览器节点或从 **[!UICONTROL Profiles and Targets]** 选项卡，通过 **[!UICONTROL Targeting workflows]** 子选项卡。
+* 从资源管理器的&#x200B;**[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**&#x200B;节点或从主页的&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;选项卡通过&#x200B;**[!UICONTROL Targeting workflows]**&#x200B;子选项卡创建[定位工作流](#targeting-workflows)。
 
   ![](assets/create-targeting-wf.png)
 
-* 创建 [活动工作流](#campaign-workflows) 从 **[!UICONTROL Targeting and workflows]** 营销活动选项卡
+* 从营销活动的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡创建[营销活动工作流](#campaign-workflows)
 
-* 创建 [技术工作流](#technical-workflows) 从 **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** Explorer节点。 最佳实践是创建特定工作流文件夹以保存您的技术工作流。
+* 从资源管理器的&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**&#x200B;节点创建[技术工作流](#technical-workflows)。 最佳实践是创建特定工作流文件夹以保存您的技术工作流。
 
-单击 **[!UICONTROL New]** 按钮时，单击此按钮可访问工作流列表。
+单击位于工作流列表上方的&#x200B;**[!UICONTROL New]**&#x200B;按钮。
 
 ![](assets/create_a_wf_icon.png)
 
-输入标签并单击 **[!UICONTROL Save]**.
+输入标签并单击&#x200B;**[!UICONTROL Save]**。
 
 ## 添加和链接活动 {#add-and-link-activities}
 
@@ -44,20 +44,20 @@ ht-degree: 1%
 
 在面板的不同选项卡中，活动按类别分组。 可用选项卡和活动会因工作流类型（技术、定位或活动工作流）而异。
 
-* 第一个选项卡包含定位和数据操作活动。 有关这些活动的详情，请参见 [定位活动](targeting-activities.md).
-* 第二个选项卡包含计划活动，主要用于协调其他活动。 有关这些活动的详情，请参见 [流量控制活动](flow-control-activities.md).
-* 第三个选项卡包含可在工作流中使用的工具和操作。 有关这些活动的详情，请参见 [操作活动](action-activities.md).
-* 第四个选项卡包含依赖于给定事件的活动，如接收电子邮件或文件到达服务器。 有关这些活动的详情，请参见 [事件活动](event-activities.md).
+* 第一个选项卡包含定位和数据操作活动。 [定位活动](targeting-activities.md)中详细介绍了这些活动。
+* 第二个选项卡包含计划活动，主要用于协调其他活动。 在[流控制活动](flow-control-activities.md)中详细介绍了这些活动。
+* 第三个选项卡包含可在工作流中使用的工具和操作。 [操作活动](action-activities.md)中详细介绍了这些活动。
+* 第四个选项卡包含依赖于给定事件的活动，如接收电子邮件或文件到达服务器。 [事件活动](event-activities.md)中详细介绍了这些活动。
 
 创建图
 
 1. 通过在面板中选择某个活动并使用拖放操作将其移至图表中来添加该活动。
 
-   添加 **开始** 活动，然后是 **投放** 活动图。
+   在关系图上添加&#x200B;**开始**&#x200B;活动，然后添加&#x200B;**投放**&#x200B;活动。
 
    ![](assets/new-workflow-3.png)
 
-1. 通过拖动 **开始** 活动过渡并将其放置到 **投放** 活动。
+1. 通过将&#x200B;**开始**&#x200B;活动过渡拖放到&#x200B;**投放**&#x200B;活动上，将两个活动链接在一起。
 
    ![](assets/new-workflow-4.png)
 
@@ -69,7 +69,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->您可以在同一工作流中复制并粘贴活动。 但是，我们不建议跨不同的工作流复制并粘贴活动。 某些附加到活动（如投放和计划程序）的设置可能会导致执行目标工作流时出现冲突和错误。 为此，我们建议您  **复制** 工作流。 有关更多信息，请参阅 [复制工作流](#duplicate-workflows).
+>您可以在同一工作流中复制并粘贴活动。 但是，我们不建议跨不同的工作流复制并粘贴活动。 某些附加到活动（如投放和计划程序）的设置可能会导致执行目标工作流时出现冲突和错误。 为此，我们建议您&#x200B;**复制**&#x200B;工作流。 有关详细信息，请参阅[重复的工作流](#duplicate-workflows)。
 
 您可以使用以下元素更改图表的显示和布局：
 
@@ -90,23 +90,23 @@ ht-degree: 1%
 
 * **对象对齐方式**
 
-  要对齐图标，请选择图标并单击 **[!UICONTROL Align vertically]** 或 **[!UICONTROL Align horizontally]** 图标。
+  要对齐图标，请选择图标并单击&#x200B;**[!UICONTROL Align vertically]**&#x200B;或&#x200B;**[!UICONTROL Align horizontally]**&#x200B;图标。
 
-  使用 **CTRL** 键可选择多个分散的活动，或取消选择一个或多个活动。 单击图表背景取消选择所有内容。
+  使用&#x200B;**CTRL**&#x200B;键选择多个分散的活动，或取消选择一个或多个活动。 单击图表背景取消选择所有内容。
 
 * **映像管理**
 
-  您可以自定义图表的背景图像以及与各种活动相关的图像。 请参阅 [更改活动图像](change-activity-images.md).
+  您可以自定义图表的背景图像以及与各种活动相关的图像。 请参阅[更改活动图像](change-activity-images.md)。
 
 ## 配置活动 {#configure-activities}
 
-双击某个活动以进行配置，或右键单击并选择 **[!UICONTROL Open...]**.
+双击活动以进行配置，或右键单击并选择&#x200B;**[!UICONTROL Open...]**。
 
 >[!NOTE]
 >
->中详细介绍了活动工作流活动 [本节](activities.md).
+>[此部分](activities.md)中详细介绍了活动工作流活动。
 
-第一个选项卡包含基本配置。 此 **[!UICONTROL Advanced]** 选项卡包含其他参数，专门用于定义遇到错误时的行为、指定活动的执行持续时间以及输入初始化脚本。
+第一个选项卡包含基本配置。 **[!UICONTROL Advanced]**&#x200B;选项卡包含其他参数，这些参数特别用于定义遇到错误时的行为、指定活动的执行持续时间以及输入初始化脚本。
 
 为了更好地了解活动并改善工作流的易读性，您可以在活动中输入备注。
 
@@ -123,7 +123,7 @@ ht-degree: 1%
 
 您可以基于现有模板创建新工作流模板，或直接将工作流更改为模板。
 
-工作流模板存储在中 **[!UICONTROL Resources > Templates > Workflow templates]** Explorer节点。
+工作流模板存储在资源管理器的&#x200B;**[!UICONTROL Resources > Templates > Workflow templates]**&#x200B;节点中。
 
 除了常规工作流属性之外，模板属性还允许您为基于此模板创建的工作流指定执行文件。
 
@@ -136,7 +136,7 @@ ht-degree: 1%
 Adobe建议复制工作流而不是执行活动的复制/粘贴。 复制活动时，将保留其所有设置。 对于渠道活动，与活动关联的投放对象也会被复制，这可能会导致严重问题。
 
 1. 右键单击工作流。
-1. 单击 **复制**.
+1. 单击&#x200B;**复制**。
 
    ![](assets/duplicate-workflows.png)
 

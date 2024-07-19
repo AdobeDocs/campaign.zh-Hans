@@ -16,25 +16,25 @@ ht-degree: 2%
 
 ## 跟踪活动 {#tracking-a-campaign}
 
-对于每个营销活动， **[!UICONTROL Tracking]** 选项卡允许您查看所有作业及其状态。
+对于每个营销活动，**[!UICONTROL Tracking]**&#x200B;选项卡允许您查看所有作业及其状态。
 
 可通过此子选项卡访问以下信息：
 
-* 此 **[!UICONTROL Audit]** 子选项卡显示活动日志。 它包含在Campaign上执行的作业：工作流创建或启动、批准、提取、库存管理等。
+* **[!UICONTROL Audit]**&#x200B;子选项卡显示活动日志。 它包含在Campaign上执行的作业：工作流创建或启动、批准、提取、库存管理等。
 
   ![](assets/campaign-audit-tab.png)
 
-* 此 **[!UICONTROL Deliveries]** 子选项卡包含营销活动的所有投放。 可以从此视图中编辑它们。 要执行此操作，请选择投放并单击 **[!UICONTROL Detail]** 图标。
+* **[!UICONTROL Deliveries]**&#x200B;子选项卡包含营销活动的所有投放。 可以从此视图中编辑它们。 为此，请选择投放并单击&#x200B;**[!UICONTROL Detail]**&#x200B;图标。
 
   ![](assets/campaign-delivery-tab.png)
 
-* 此 **[!UICONTROL Approvals]** 子选项卡包含营销活动的所有批准流程。 您可以检查详细信息和注释
+* **[!UICONTROL Approvals]**&#x200B;子选项卡包含营销活动的所有批准流程。 您可以检查详细信息和注释
 
-* 为生成服务提供商消息而创建的工作流显示在 **[!UICONTROL Jobs on service providers]** 子选项卡。 单击 **[!UICONTROL Detail]** 图标，以显示选定的工作流。
+* 为生成服务提供商的消息而创建的工作流显示在&#x200B;**[!UICONTROL Jobs on service providers]**&#x200B;子选项卡中。 单击&#x200B;**[!UICONTROL Detail]**&#x200B;图标以显示选定的工作流。
 
 ## 跟踪投放 {#delivery-tracking}
 
-投放列表可通过 **[!UICONTROL Deliveries]** Campaign节点的链接。
+可通过营销活动节点的&#x200B;**[!UICONTROL Deliveries]**&#x200B;链接访问投放列表。
 
 ![](assets/filter-deliveries-from-homepage.png)
 
@@ -50,6 +50,6 @@ ht-degree: 2%
 
 ## 跟踪执行 {#execution-tracking}
 
-您可以通过单击 **[!UICONTROL Deliveries]**，可通过Adobe Campaign主页访问它。
+您可以通过单击&#x200B;**[!UICONTROL Deliveries]**&#x200B;来检查投放的状态，通过Adobe Campaign主页可访问该设置。
 
-有关在营销活动中执行的流程的详细信息，请参见 **[!UICONTROL Edit > Audit]** 的选项卡。 您可以在营销活动中查看投放列表。 [了解详情](#tracking-a-campaign)。
+有关在营销活动中执行的流程的详细信息，会收集在该营销活动的&#x200B;**[!UICONTROL Edit > Audit]**&#x200B;选项卡中。 您可以在营销活动中查看投放列表。 [了解详情](#tracking-a-campaign)。

@@ -14,7 +14,7 @@ ht-degree: 8%
 
 # 与 Adobe Experience Cloud 解决方案集成{#integrations-with-adobe-experience-cloud-solutions}
 
-下面详细介绍的工作流将随 **与Adobe Experience Cloud集成** 默认模块。 有关此模块的更多信息，请参阅 [此页面](../../v8/connect/integration.md).
+默认情况下，下面详细介绍的工作流将与Adobe Experience Cloud **模块的**&#x200B;集成一起安装。 有关此模块的详细信息，请参阅[此页面](../../v8/connect/integration.md)。
 
 <table> 
  <tbody> 
@@ -26,7 +26,7 @@ ht-degree: 8%
   <tr> 
    <td> <span class="uicontrol">从Adobe Experience Cloud导入受众</span> <br /> </td> 
    <td> <span class="uicontrol">importSharedAudience</span> <br /> </td> 
-   <td> 利用此工作流，可将不同Adobe Experience Cloud解决方案的受众/区段导入Adobe Campaign。<br /> </td> 
+   <td> 此工作流允许您将受众/区段从不同的Adobe Experience Cloud解决方案导入到Adobe Campaign中。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">将受众导出到Adobe Experience Cloud</span> <br /> </td> 

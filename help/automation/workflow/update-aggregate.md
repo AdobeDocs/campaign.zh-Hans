@@ -15,13 +15,13 @@ ht-degree: 3%
 
 # 更新聚合{#update-aggregate}
 
-中定义的聚合 [多维数据集](../../v8/reporting/gs-cubes.md) 出于报告目的，可更新特定活动。 A **[!UICONTROL Workflow]** 选项卡在配置聚合时使用。
+可以使用特定活动更新[多维数据集](../../v8/reporting/gs-cubes.md)中为报告目的定义的聚合。 配置聚合时&#x200B;**[!UICONTROL Workflow]**&#x200B;选项卡可用。
 
-要了解有关多维数据集和聚合的更多信息，请参阅 [本节](../../v8/reporting/customize-cubes.md#calculate-and-use-aggregates).
+在[本节](../../v8/reporting/customize-cubes.md#calculate-and-use-aggregates)中了解有关多维数据集和聚合的详细信息。
 
-要更新聚合，请编辑 **[!UICONTROL Update aggregate]** 活动并选择要更新的多维数据集和聚合。
+要更新聚合，请编辑&#x200B;**[!UICONTROL Update aggregate]**&#x200B;活动并选择要更新的多维数据集和聚合。
 
-您可以配置 **完全更新** 或 **部分更新**.
+您可以配置&#x200B;**完整更新**&#x200B;或&#x200B;**部分更新**。
 
 ![](assets/update-aggregate-details.png)
 
@@ -29,4 +29,4 @@ ht-degree: 3%
 
 ![](assets/update-aggregate-partial.png)
 
-好的做法是添加 **[!UICONTROL Scheduler]** 活动以设置计算更新频率。
+好的做法是添加&#x200B;**[!UICONTROL Scheduler]**&#x200B;活动以设置计算更新的频率。

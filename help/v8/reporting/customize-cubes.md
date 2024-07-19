@@ -21,9 +21,9 @@ ht-degree: 2%
 
 总体而言，提供了三种类型的量化：
 
-1. 使用手动定义的值范围。 例如，年龄、平均购物车、打开的投放数量等)。 有关详细信息，请参见 [定义每个量化](#defining-each-bin).
-1. 根据枚举的值，动态地：仅显示枚举中包含的值，所有其他值都将分组到“其他”中。 有关详细信息，请参见 [动态管理回收站](#dynamically-managing-bins).
-1. 使用值范围，将所有其他字段组合在一起。 例如，18至25岁、26至59岁和其他人。 有关详细信息，请参见 [创建值范围](#creating-value-ranges).
+1. 使用手动定义的值范围。 例如，年龄、平均购物车、打开的投放数量等)。 有关详细信息，请参阅[定义每个bin](#defining-each-bin)。
+1. 根据枚举的值，动态地：仅显示枚举中包含的值，所有其他值都将分组到“其他”中。 有关详细信息，请参阅[动态管理回收站](#dynamically-managing-bins)。
+1. 使用值范围，将所有其他字段组合在一起。 例如，18至25岁、26至59岁和其他人。 有关详细信息，请参阅[创建值范围](#creating-value-ranges)。
 
 要启用量化，请在创建尺寸时选中相应的复选框。
 
@@ -35,11 +35,11 @@ Adobe Campaign还提供了自动绑定的助手：可以将值划分为N组，�
 
 ### 定义每个量化 {#define-each-bin}
 
-要单独创建每个bin，请选择 **[!UICONTROL Define each bin]** 选项并使用表创建各种量化。
+要单独创建每个bin，请选择&#x200B;**[!UICONTROL Define each bin]**&#x200B;选项，然后使用该表创建各个bin。
 
 ![](assets/cube-binning.png)
 
-单击 **[!UICONTROL Add]** 按钮，用于创建新量化，并列出将分组到量化。
+单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以创建新量化，并列出将分组到量化量化指标中的值。
 
 ![](assets/cube-add-new-bin.png)
 
@@ -47,7 +47,7 @@ Adobe Campaign还提供了自动绑定的助手：可以将值划分为N组，�
 
 ![](assets/cube-add-new-bin-2.png)
 
-可以使用SQL掩码将多个值组合到一个过滤器中。 为此，请选中 **[!UICONTROL Yes]** 在 **[!UICONTROL Use an SQL mask]** 列并输入要应用的SQL过滤器 **[!UICONTROL Value or expression]** 列。
+可以使用SQL掩码将多个值组合到一个过滤器中。 为此，请检查&#x200B;**[!UICONTROL Use an SQL mask]**&#x200B;列中的&#x200B;**[!UICONTROL Yes]**&#x200B;并输入要应用于&#x200B;**[!UICONTROL Value or expression]**&#x200B;列的SQL筛选器。
 
 <!--In the example below, all email domains that start with **yahoo** (yahoo.fr, yahoo.com, yahoo.be, etc.), or with **ymail** (ymail.com, ymail.eu, etc.) will be grouped under the label **YAHOO!**, as well as addresses with the **rocketmail.com** domain.-->
 
@@ -58,25 +58,25 @@ Adobe Campaign还提供了自动绑定的助手：可以将值划分为N组，�
 要创建此类值量化，请应用以下步骤：
 
 1. 创建新维度并启用量化。
-1. 选择 **[!UICONTROL Dynamically link the values to an enumeration]** 选项并选择匹配的明细列表。
+1. 选择&#x200B;**[!UICONTROL Dynamically link the values to an enumeration]**&#x200B;选项并选择匹配的枚举。
 
    ![](assets/cube-link-to-enum.png)
 
    每当更新枚举值时，将自动调整匹配的量化。
 
-了解有关枚举的更多信息，请参阅 [此页面](../../v8/config/ui-settings.md#enumerations).
+在[此页面](../../v8/config/ui-settings.md#enumerations)中了解有关枚举的更多信息。
 
 ### 创建值范围 {#create-value-ranges}
 
 您可以根据所需的间隔将值分组到多个范围中。
 
-要手动定义范围，请单击 **[!UICONTROL Add]** 按钮并选择 **[!UICONTROL Define a range]** ：
+要手动定义范围，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并选择&#x200B;**[!UICONTROL Define a range]** ：
 
-然后指定下限和上限，并单击 **[!UICONTROL Ok]** 以确认。
+然后指定下限和上限，并单击&#x200B;**[!UICONTROL Ok]**&#x200B;进行确认。
 
 ### 自动生成二进制文件 {#generate-bins-automatically}
 
-也可以自动生成二进制文件。 要执行此操作，请单击 **[!UICONTROL Generate bins...]** 链接。
+也可以自动生成二进制文件。 为此，请单击&#x200B;**[!UICONTROL Generate bins...]**&#x200B;链接。
 
 您可以：
 
@@ -102,19 +102,19 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
 ![](assets/nmx_enum_domain.png)
 
-要使用此枚举创建报表，请使用以下方式创建多维数据集 **[!UICONTROL Email domain]** 维度。 选择 **[!UICONTROL Enable binning]** option then **[!UICONTROL Dynamically link the values to an enumeration]**. 然后选择 **域** 如上所示的明细列表。 所有未指定别名的值都将重新分组到 **其他** 标签。
+若要使用此枚举创建报告，请使用&#x200B;**[!UICONTROL Email domain]**&#x200B;维度创建多维数据集。 选择&#x200B;**[!UICONTROL Enable binning]**&#x200B;选项，然后选择&#x200B;**[!UICONTROL Dynamically link the values to an enumeration]**。 然后选择如上所示的&#x200B;**域**&#x200B;枚举。 所有没有指定别名的值都将重新分组到&#x200B;**其他**&#x200B;标签下。
 
 接下来，基于此多维数据集创建一个报告以显示值。
 
-您只需修改枚举即可更新相关报告。 例如，创建 **Adobe** 值并添加 **adobe.com** 别名，报表将自动更新为枚举级别的Adobe值。
+您只需修改枚举即可更新相关报告。 例如，创建&#x200B;**Adobe**&#x200B;值并添加&#x200B;**adobe.com**&#x200B;别名，报表将自动更新为枚举级别的Adobe值。
 
 ![](assets/nmx_add_alias.png)
 
-此 **[!UICONTROL Domains]** 枚举用于生成显示域列表的内置报告。 要调整这些报表的内容，可以编辑此列表。
+**[!UICONTROL Domains]**&#x200B;枚举用于生成显示域列表的内置报告。 要调整这些报表的内容，可以编辑此列表。
 
 您可以创建为量化保留的其他枚举，并在其他多维数据集中使用它们：所有别名值将在第一个枚举选项卡中指定的二进制文件中重新分组。
 
-了解有关枚举的更多信息，请参阅 [此页面](../../v8/config/ui-settings.md#enumerations).
+在[此页面](../../v8/config/ui-settings.md#enumerations)中了解有关枚举的更多信息。
 
 ## 多维数据集中的聚合 {#calculate-and-use-aggregates}
 
@@ -132,37 +132,37 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
 要创建新的聚合，请应用以下步骤：
 
-1. 单击 **[!UICONTROL Aggregates]** 选项卡，然后单击 **[!UICONTROL Add]** 按钮。
+1. 单击多维数据集的&#x200B;**[!UICONTROL Aggregates]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
 1. 输入聚合的标签，然后添加要计算的维度。
 1. 选择维和级别。 对每个维度和每个级别重复此过程。
-1. 单击 **[!UICONTROL Workflow]** 选项卡，创建聚合工作流。
+1. 单击&#x200B;**[!UICONTROL Workflow]**&#x200B;选项卡以创建聚合工作流。
 
-   * 此 **[!UICONTROL Scheduler]** 利用活动，可定义计算更新的频率。 有关调度程序的详细信息，请参见 [本节](../../automation/workflow/scheduler.md).
-   * 此 **[!UICONTROL Aggregate update]** 通过活动，您可以选择要应用的更新模式：完整或部分。
+   * **[!UICONTROL Scheduler]**&#x200B;活动允许您定义计算更新的频率。 计划程序在[此部分](../../automation/workflow/scheduler.md)中有详细说明。
+   * **[!UICONTROL Aggregate update]**&#x200B;活动允许您选择要应用的更新模式：全部或部分。
 
      默认情况下，在每次计算期间都会执行完全更新。 要启用部分更新，请选择相关选项并定义更新条件。
 
 ## 定义测量 {#define-measures}
 
-测量类型定义于 **[!UICONTROL Measures]** 立方的选项卡。 您可以计算总和、平均值、偏差等。
+度量类型在多维数据集的&#x200B;**[!UICONTROL Measures]**&#x200B;选项卡中定义。 您可以计算总和、平均值、偏差等。
 
 您可以根据需要创建任意数量的测量：然后选择要显示在表格中或隐藏的测量。 如需详细信息，请参阅[此小节](#displaying-measures)。
 
 要定义新度量，请应用以下步骤：
 
-1. 单击 **[!UICONTROL Add]** 按钮，并选择要计算的度量类型和公式。
+1. 单击度量列表上方的&#x200B;**[!UICONTROL Add]**&#x200B;按钮，然后选择要计算的度量类型和公式。
 
    ![](assets/cube-create-a-measure.png)
 
 1. 如有必要，根据运算符选择操作涉及的表达式。
 
-   此 **[!UICONTROL Advanced selection]** 按钮允许您创建复杂的计算公式。 如需详细信息，请参阅[此小节](../../automation/workflow/query.md)。
+   **[!UICONTROL Advanced selection]**&#x200B;按钮允许您创建复杂的计算公式。 如需详细信息，请参阅[此小节](../../automation/workflow/query.md)。
 
-1. 此 **[!UICONTROL Filter the measure data...]** 链接允许您限制计算字段，并仅将其应用于数据库中的特定数据。
+1. **[!UICONTROL Filter the measure data...]**&#x200B;链接允许您限制计算字段，并仅将其应用于数据库中的特定数据。
 
    ![](assets/cube-create-measure-2.png)
 
-1. 输入度量的标签并添加说明，然后单击 **[!UICONTROL Finish]** 创建它。
+1. 输入度量的标签并添加说明，然后单击&#x200B;**[!UICONTROL Finish]**&#x200B;以创建该标签。
 
 ## 自定义度量 {#display-measures}
 
@@ -174,7 +174,7 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
 ### 显示序列  {#display-sequence}
 
-在立方中计算的度量是通过 **[!UICONTROL Measures]** 按钮。
+多维数据集中计算的度量是通过&#x200B;**[!UICONTROL Measures]**&#x200B;按钮配置的。
 
 移动线条以更改显示顺序。 在以下示例中，将法语数据移动到列表底部：这意味着它将显示在最后一列。
 
@@ -184,7 +184,7 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
 可以针对每个测量或整体单独执行测量、线和列的配置。 通过特定图标可访问显示模式选择窗口。
 
-* 单击 **[!UICONTROL Edit the configuration of the pivot table]** 图标以访问配置窗口。
+* 单击&#x200B;**[!UICONTROL Edit the configuration of the pivot table]**&#x200B;图标以访问配置窗口。
 
   您可以选择是否显示度量的标签以及配置其布局（行或列）。
 
@@ -204,11 +204,11 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
 配置报告后，您可以保存报告并与其他操作员共享。
 
-要执行此操作，请单击 **[!UICONTROL Show the report properties]** 图标并启用 **[!UICONTROL Share this report]** 选项。
+为此，请单击&#x200B;**[!UICONTROL Show the report properties]**&#x200B;图标并启用&#x200B;**[!UICONTROL Share this report]**&#x200B;选项。
 
 ![](assets/cube_share_option.png)
 
-指定报告所属的类别及其相关性。 <!--For more on this, refer in [this page](../../reporting/using/configuring-access-to-the-report.md#report-display-context) to the **Display sequence** and **Defining the filtering options** sections.-->
+指定报告所属的类别及其相关性。<!--For more on this, refer in [this page](../../reporting/using/configuring-access-to-the-report.md#report-display-context) to the **Display sequence** and **Defining the filtering options** sections.-->
 
 要确认这些更改，您需要保存报告。
 
@@ -218,7 +218,7 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
 操作步骤：
 
-1. 单击 **[!UICONTROL Add a filter]** 图标。
+1. 单击&#x200B;**[!UICONTROL Add a filter]**&#x200B;图标。
 
    ![](assets/cube_add_filter.png)
 
@@ -238,7 +238,7 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
 每次修改过滤器（添加、删除、更改）时，必须重新计算报表。
 
-也可以根据选定的内容创建过滤器。 要执行此操作，请选择源单元格、行和列，然后单击 **[!UICONTROL Add a filter]** 图标。
+也可以根据选定的内容创建过滤器。 为此，请选择源单元格、行和列，然后单击&#x200B;**[!UICONTROL Add a filter]**&#x200B;图标。
 
 要选择行、列或单元格，请左键单击它。 要取消选择，请再次单击。
 

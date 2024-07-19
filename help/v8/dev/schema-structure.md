@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # 模式结构{#schema-structure}
 
-的基本结构 `<srcschema>` 如下所示：
+`<srcschema>`的基本结构如下所示：
 
 ```
 <srcSchema>
@@ -54,7 +54,7 @@ ht-degree: 1%
 </srcSchema>
 ```
 
-数据架构的XML文档必须包含 **`<srcschema>`** 具有的根元素 **name** 和 **命名空间** 属性，用于填充架构名称及其命名空间。
+数据架构的XML文档必须包含具有&#x200B;**名称**&#x200B;和&#x200B;**命名空间**&#x200B;属性的&#x200B;**`<srcschema>`**&#x200B;根元素，才能填充架构名称及其命名空间。
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -95,7 +95,7 @@ ht-degree: 1%
 <element name="recipient">
 ```
 
-元素 **`<attribute>`** 和 **`<element>`** 在主元素之后定义数据项在XML结构的位置和名称。
+主元素后面的元素&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;允许您定义XML结构中数据项的位置和名称。
 
 在我们的示例模式中，这些规则包括：
 
@@ -110,42 +110,42 @@ ht-degree: 1%
 
 必须遵循以下规则：
 
-* 每个 **`<element>`** 和 **`<attribute>`** 必须通过名称进行标识 **name** 属性。
+* 每个&#x200B;**`<element>`**&#x200B;和&#x200B;**`<attribute>`**&#x200B;必须通过&#x200B;**name**&#x200B;属性用名称标识。
 
   >[!CAUTION]
   >
   >元素的名称应简洁，最好是英文，并且仅包括符合XML命名规则的授权字符。
 
-* 仅 **`<element>`** 元素可以包含 **`<attribute>`** 元素和 **`<element>`** XML结构中的元素。
-* An **`<attribute>`** 元素在 **`<element>`**.
-* 使用 **`<elements>`** 在多行数据字符串中，建议使用。
+* 只有&#x200B;**`<element>`**&#x200B;个元素可以在XML结构中包含&#x200B;**`<attribute>`**&#x200B;个元素和&#x200B;**`<element>`**&#x200B;个元素。
+* **`<attribute>`**&#x200B;元素在&#x200B;**`<element>`**&#x200B;中必须具有唯一的名称。
+* 建议在多行数据字符串中使用&#x200B;**`<elements>`**。
 
 ## 数据类型 {#data-types}
 
-数据类型是通过 **type** 中的属性 **`<attribute>`** 和 **`<element>`** 元素。
+数据类型是通过&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;元素中的&#x200B;**type**&#x200B;属性输入的。
 
-详细列表请参见 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic){target="_blank"}.
+[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic){target="_blank"}中提供了详细列表。
 
-如果未填充此属性， **字符串** 是默认数据类型，除非元素包含子元素。 如果是，则它仅用于按层级结构元素(**`<location>`** 元素)。
+如果未填充此属性，则&#x200B;**string**&#x200B;是默认的数据类型，除非该元素包含子元素。 如果是，则仅将其用于分层构造元素（示例中为&#x200B;**`<location>`**&#x200B;个元素）。
 
 架构支持以下数据类型：
 
 * **字符串**：字符串。 示例：名字、城镇等。
 
-  大小可以通过以下方式指定 **长度** 属性（可选，默认值为“255”）。
+  可以通过&#x200B;**length**&#x200B;属性指定大小（可选，默认值“255”）。
 
-* **布尔型**：布尔字段。 可能值的示例：true/false、0/1、yes/no等。
-* **字节**， **短**， **长**：整数（1字节、2字节、4字节）。 示例：年龄、帐号、点数等。
-* **多次**：双精度浮点数。 示例：价格、费率等。
-* **日期**， **日期时间**：日期和日期+时间。 示例：出生日期、购买日期等。
-* **datetimenotz**：日期+时间不含时区数据。
+* **布尔值**：布尔字段。 可能值的示例：true/false、0/1、yes/no等。
+* **字节**，**短**，**长**：整数（1字节、2字节、4字节）。 示例：年龄、帐号、点数等。
+* **double**：双精度浮点数。 示例：价格、费率等。
+* **日期**，**日期时间**：日期和日期+时间。 示例：出生日期、购买日期等。
+* **datetimenotz**：没有时区数据的日期+时间。
 * **时间跨度**：持续时间。 例如：资历。
-* **备忘**：长文本字段（多行）。 示例：描述、评论等。
+* **备注**：长文本字段（多行）。 示例：描述、评论等。
 * **uuid**：“uniqueidentifier”字段
 
   >[!NOTE]
   >
-  >包含 **uuid** 字段，则必须添加“newuuid()”函数，并使用其默认值完成该函数。
+  >要包含&#x200B;**uuid**&#x200B;字段，必须添加并完成“newuuid()”函数，使其具有默认值。
 
 以下是输入的类型的模式示例：
 
@@ -164,11 +164,11 @@ ht-degree: 1%
 
 ## 属性 {#properties}
 
-此 **`<elements>`** 和 **`<attributes>`** 可以使用各种属性扩充数据模式的元素。 您可以填充标签以描述当前元素。
+可以使用各种属性扩充数据架构的&#x200B;**`<elements>`**&#x200B;和&#x200B;**`<attributes>`**&#x200B;元素。 您可以填充标签以描述当前元素。
 
 ### 标签和描述 {#labels-and-descriptions}
 
-* 此 **标签** 属性允许您输入简要说明。
+* **标签**&#x200B;属性允许您输入简短描述。
 
   >[!NOTE]
   >
@@ -184,7 +184,7 @@ ht-degree: 1%
 
   ![](assets/schema_label.png)
 
-* 此 **desc** 属性允许您输入详细说明。
+* **desc**&#x200B;属性允许您输入较长的描述。
 
   可从Adobe Campaign客户端控制台主窗口状态栏中的输入表单看到描述。
 
@@ -200,7 +200,7 @@ ht-degree: 1%
 
 ### 默认值 {#default-values}
 
-此 **默认** 属性允许您定义在创建内容时返回默认值的表达式。
+**default**&#x200B;属性允许您定义在创建内容时返回默认值的表达式。
 
 该值必须是符合XPath语言的表达式。 如需详细信息，请参阅[此小节](#reference-with-xpath)。
 
@@ -209,23 +209,23 @@ ht-degree: 1%
 * 当前日期： **default=&quot;GetDate()&quot;**
 * 计数器： **default=&quot;&#39;FRM&#39;+CounterValue(&#39;myCounter&#39;)&quot;**
 
-  在此示例中，默认值是使用字符串连接并调用 **计数器值** 函数中带有免费计数器名称。 每次插入时，返回的数字将递增1。
+  在此示例中，默认值是使用字符串的串连来构造的，并使用免费计数器名称调用&#x200B;**CounterValue**&#x200B;函数。 每次插入时，返回的数字将递增1。
 
   >[!NOTE]
   >
-  >在Adobe Campaign客户端控制台中， **[!UICONTROL Administration>Counters]** 节点用于管理计数器。
+  >在Adobe Campaign客户端控制台中，**[!UICONTROL Administration>Counters]**&#x200B;节点用于管理计数器。
 
-要将默认值链接到字段，您可以使用 `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
+要将默认值链接到字段，您可以使用`<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
-`<default>` ：用于在创建实体时使用默认值预填字段。 该值将不会是默认的SQL值。
+`<default>` ：允许您在创建实体时使用默认值预填充字段。 该值将不会是默认的SQL值。
 
-`<sqldefault>` ：用于在创建字段时添加值。 此值显示为SQL结果。 在架构更新期间，此值仅影响新记录。
+`<sqldefault>` ：允许您在创建字段时添加值。 此值显示为SQL结果。 在架构更新期间，此值仅影响新记录。
 
 ### 明细列表 {#enumerations}
 
 #### 自由枚举 {#free-enumeration}
 
-此 **userEnum** 属性允许您定义一个自由枚举来记忆和显示通过此字段输入的值。 语法如下：
+**userEnum**&#x200B;属性允许您定义一个免费枚举以记忆和显示通过此字段输入的值。 语法如下：
 
 **userEnum=&quot;枚举的名称&quot;**
 
@@ -237,13 +237,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->在Adobe Campaign客户端控制台中， **[!UICONTROL Administration > Enumerations]** 节点用于管理枚举。
+>在Adobe Campaign客户端控制台中，**[!UICONTROL Administration > Enumerations]**&#x200B;节点用于管理枚举。
 
 #### 设置明细列表 {#set-enumeration}
 
-此 **枚举** 属性允许您定义事先知道可能值的列表时使用的固定枚举。
+**枚举**&#x200B;属性允许您定义预先知道可能值的列表时使用的固定枚举。
 
-此 **枚举** attribute是指在架构中填充的主元素以外的枚举类的定义。
+**enum**&#x200B;属性引用了在主元素之外的架构中填充的枚举类的定义。
 
 枚举允许用户从下拉列表中选择一个值，而不是在常规输入字段中输入值：
 
@@ -259,27 +259,27 @@ ht-degree: 1%
 </enumeration>
 ```
 
-枚举在主元素之外通过 **`<enumeration>`** 元素。
+枚举通过&#x200B;**`<enumeration>`**&#x200B;元素在主元素之外声明。
 
 枚举属性如下：
 
-* **基类型**：与值关联的数据类型，
-* **标签**：枚举的描述，
+* **baseType**：与值关联的数据类型，
+* **标签**：枚举的说明，
 * **name**：枚举的名称，
-* **默认**：枚举的默认值。
+* **默认值**：枚举的默认值。
 
-枚举值在 **`<value>`** 元素具有以下属性：
+枚举值在&#x200B;**`<value>`**&#x200B;元素中具有以下属性：
 
 * **name**：内部存储的值的名称，
 * **标签**：通过图形界面显示的标签。
 
 #### dbenum枚举 {#dbenum-enumeration}
 
-* 此 **德伯南** 属性允许您定义其属性与 **枚举** 属性。
+* **dbenum**&#x200B;属性允许您定义其属性与&#x200B;**enum**&#x200B;属性的属性相似的枚举。
 
-  但是， **name** attribute不会将值存储在内部，而是会存储一个代码，通过该代码可以扩展相关的表，而无需修改其模式。
+  但是，**name**&#x200B;属性不会在内部存储该值，它存储了一个代码，该代码允许您在不修改相关表架构的情况下扩展这些表。
 
-  值是通过 **[!UICONTROL Administration>Enumerations]** 节点。
+  值是通过&#x200B;**[!UICONTROL Administration>Enumerations]**&#x200B;节点定义的。
 
   例如，此枚举用于指定营销活动的性质。
 
@@ -312,9 +312,9 @@ ht-degree: 1%
 
 集合是具有相同名称和相同层次级别的元素的列表。
 
-此 **未绑定** 值为“true”的属性允许您填充收集要素。
+值为“true”的&#x200B;**unbound**&#x200B;属性允许您填充集合元素。
 
-**示例**：的定义 **`<group>`** 架构中的收藏集元素。
+**示例**：架构中&#x200B;**`<group>`**&#x200B;集合元素的定义。
 
 ```
 <element name="group" unbound="true" label="List of groups">
@@ -340,23 +340,23 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 **示例**：
 
 * **@email**：选择电子邮件，
-* **location/@city**：选择“城市”属性位于 **`<location>`** 元素
+* **location/@city**：选择&#x200B;**`<location>`**&#x200B;元素下的“city”属性
 * **../@email**：从当前元素的父元素中选择电子邮件地址
-* **组`[1]/@label`**：选择第一个标签的子项属性 **`<group>`** 收集要素
-* **组`[@label='test1']`**：选择作为子项的“标签”属性 **`<group>`** 元素并包含“test1”值
+* **组`[1]/@label`**：选择作为第一个&#x200B;**`<group>`**&#x200B;集合元素的子项的“label”属性
+* **组`[@label='test1']`**：选择作为&#x200B;**`<group>`**&#x200B;元素的子项且包含值“test1”的“label”属性
 
 >[!NOTE]
 >
 >当路径穿过子元素时，会添加附加约束。 在这种情况下，必须在括号之间放置以下表达式：
 >
->* **location/@city** 无效；请使用 **`[location/@city]`**
->* **`[@email]`** 和 **@email** 是等效的
+>* **位置/@city**&#x200B;无效；请使用&#x200B;**`[location/@city]`**
+>* **`[@email]`**&#x200B;和&#x200B;**@email**&#x200B;是等效的
 >
 
 也可以定义复杂的表达式，例如以下算术运算：
 
-* **@gender+1**：将1添加到的内容 **性别** 属性，
-* **@email + &#39;(&#39;+@created+&#39;)&#39;**：通过用圆括号之间添加到创建日期的电子邮件地址值来构造字符串（对于字符串类型，请将常量放在引号中）。
+* **@gender+1**：将1添加到&#x200B;**性别**&#x200B;属性的内容中，
+* **@email + &#39;(&#39;+@created+&#39;)&#39;**：构造字符串的方法是采用添加到创建日期的电子邮件地址的值在括号之间（对于字符串类型，将常量放在引号中）。
 
 在表达式中添加了高级函数，以丰富此语言的潜力。
 
@@ -367,14 +367,14 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 **示例**：
 
 * **GetDate()**：返回当前日期
-* **年(@created)**：返回“已创建”属性中包含的日期的年份。
+* **Year(@created)**：返回“已创建”属性中包含的日期的年份。
 * **GetEmailDomain(@email)**：返回电子邮件地址的域。
 
 ## 通过计算字符串构建字符串 {#building-a-string-via-the-compute-string}
 
-A **计算字符串** 是一个XPath表达式，用于构造一个字符串，该字符串表示与架构关联的表中的记录。 **计算字符串** 主要用于图形界面显示选定记录的标签。
+**计算字符串**&#x200B;是用于构造表示与架构关联的表中记录的字符串的XPath表达式。 **计算字符串**&#x200B;主要用于图形界面中显示选定记录的标签。
 
-此 **计算字符串** 是通过 **`<compute-string>`** 数据架构的主元素下的元素。 An **表达式** 属性包含用于计算显示的XPath表达式。
+**计算字符串**&#x200B;通过数据架构主元素下的&#x200B;**`<compute-string>`**&#x200B;元素定义。 **expr**&#x200B;属性包含用于计算显示的XPath表达式。
 
 **示例**：收件人表的计算字符串。
 
@@ -387,7 +387,7 @@ A **计算字符串** 是一个XPath表达式，用于构造一个字符串，�
 </srcSchema>
 ```
 
-收件人计算字符串的结果： **Doe John (john.doe@aol.com)**
+收件人的计算字符串的结果： **Doe John (john.doe@aol.com)**
 
 >[!NOTE]
 >

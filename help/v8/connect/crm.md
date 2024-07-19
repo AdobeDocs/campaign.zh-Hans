@@ -29,11 +29,11 @@ Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台�
 
 >[!NOTE]
 >
->Adobe Campaign中可通过以下方式使用此功能： **CRM连接器** 专用包。
+>此功能通过&#x200B;**CRM连接器**&#x200B;专用包在Adobe Campaign中可用。
 
 ## 兼容系统 {#compatible-crm-systems-and-limitations}
 
-有关支持的CRM和版本的详情，请参阅Campaign [兼容性矩阵](../start/compatibility-matrix.md).
+Campaign [兼容性矩阵](../start/compatibility-matrix.md)中详细介绍了支持的CRM和版本。
 
 >[!CAUTION]
 >
@@ -41,8 +41,8 @@ Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台�
 
 ## 实施步骤 {#crm-implementation-steps}
 
-了解在中连接Campaign和Microsoft Dynamics的分步过程 [此页面](ac-ms-dyn.md).
+在[此页面](ac-ms-dyn.md)中了解连接Campaign和Microsoft Dynamics的分步过程。
 
-在中了解连接Campaign和Salesforce.com的分步过程 [此页面](ac-sfdc.md).
+在[此页面](ac-sfdc.md)中了解连接Campaign和Salesforce.com的分步过程。
 
 Adobe Campaign和CRM之间的数据同步通过专用工作流活动执行。 构建您的工作流以自动执行Campaign与CRM之间的同步。 您可以创建一个工作流，以通过Microsoft Dynamics导入联系人，将其与现有Adobe Campaign数据同步，删除重复的联系人，然后更新Adobe Campaign数据库。 请参阅[此页面](crm-data-sync.md)以了解详情。

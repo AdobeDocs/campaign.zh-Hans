@@ -16,7 +16,7 @@ ht-degree: 3%
 
 
 
-下面详细介绍的工作流随 **收件箱呈现(IR)** 默认模块。
+默认情况下，下面详细介绍的工作流随&#x200B;**收件箱呈现(IR)**&#x200B;模块一起安装。
 
 <table> 
  <tbody> 
@@ -27,8 +27,8 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> <strong>更新收件箱渲染的种子网络</strong><br /> </td> 
-   <td> <span class="uicontrol">updateRenderingSeed</span> <br /> </td> 
-   <td> 此工作流会更新用于收件箱渲染的电子邮件地址，并且仅在打开HTTPS端口用于 <strong>deliverability.neolane.net</strong>.<br /> </td> 
+   <td> <span class="uicontrol">updateRenderingSeeds</span> <br /> </td> 
+   <td> 此工作流会更新用于收件箱渲染的电子邮件地址，并且仅在<strong>deliverability.neolane.net</strong>.<br />的HTTPS端口打开时有效 </td> 
   </tr> 
  </tbody> 
 </table>

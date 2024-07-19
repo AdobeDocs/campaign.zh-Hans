@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 96%
+source-wordcount: '942'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe 为数据控制者提供相应的工具，用于创建和处理与 Campaig
 
 要在 Campaign 中管理隐私请求，必须先[定义命名空间](#namespaces)。然后，才能创建和管理隐私请求。要执行隐私请求，请使用 **Adobe Privacy Service** 集成。从 Privacy Service 推送到所有 Adobe Experience Cloud 解决方案的隐私请求由 Campaign 通过专门工作流自动处理。[了解详情](#create-privacy-request)
 
-了解 **访问权** 和 **被遗忘权** （删除请求） [Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=zh-Hans#right-access-forgotten){target="_blank"}.
+请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=zh-Hans#right-access-forgotten){target="_blank"}以了解有关&#x200B;**访问权**&#x200B;和&#x200B;**被遗忘权**（删除请求）的信息。
 
 <!--
 >[!NOTE]
@@ -109,7 +109,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 >[!CAUTION]
 >
->要使用自定义命名空间类型提交请求，请利用 [JSON 方法](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=zh-Hans#json){target="_blank"} and add the namespaceId to the request, or use the [API call](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/privacy-jobs.html?lang=zh-Hans#access-delete){target="_blank"}提出请求。
+>若要使用自定义命名空间类型提交请求，请利用[JSON方法](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=zh-Hans#json){target="_blank"}并将命名空间ID添加到请求中，或使用[API调用](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/privacy-jobs.html?lang=zh-Hans#access-delete){target="_blank"}发出请求。
 >
 >仅使用[隐私用户界面](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html?lang=zh-Hans#request-builder){target="_blank"}来提交使用标准命名空间类型的请求。
 

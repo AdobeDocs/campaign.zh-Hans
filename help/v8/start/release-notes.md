@@ -3,7 +3,7 @@ title: Campaign v8 发行说明
 description: 最新 Campaign v8 版本
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 09b8ced170ff28b24713722e0a82852038053201
+source-git-commit: 65efda7469c5ad35e8d03703951c3d1480b015f4
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 89%
@@ -60,9 +60,6 @@ _2024 年 5 月 2 日_
 
 * **动态报告** - 作为 Campaign Standard 迁移用户，您可以访问动态报告，该功能提供完全可自定义的实时报告来衡量营销活动的影响。它增加了对用户档案数据的访问，除打开数和点击数等功能性电子邮件营销活动数据外，还支持按用户档案维度（如性别、城市和年龄）进行人口统计分析。[了解更多信息](https://experienceleague.adobe.com/docs/experience-cloud/campaign/reporting/get-started-reporting.html?lang=zh-Hans){target="_blank"}
 
-
-
-
 ### 兼容性更新 {#comp-8-7-1}
 
 * 现在支持将 Databricks 用作 Adobe Campaign 联合数据访问 (FDA) 的外部数据库。请参阅[此页面](compatibility-matrix.md#FederatedDataAccessFDA)以了解详情。
@@ -73,7 +70,6 @@ _2024 年 5 月 2 日_
 
 如果您已实施与 Campaign 的入站集成，则必须迁移技术帐户，详情请参阅[本文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"}。现有服务帐户(JWT)凭据将继续工作，直到&#x200B;**2025年1月27日**。
 
-
 ### 一般改进 {#improvements-8-7-1}
 
 * 多个架构已从 32 位更改为 64 位。这仅适用于从 Campaign Standard 迁移的客户。[了解更多信息](https://experienceleague.adobe.com/docs/experience-cloud/campaign/technotes/64-bit-tables.html?lang=zh-Hans){target="_blank"}
@@ -81,7 +77,6 @@ _2024 年 5 月 2 日_
 * 在 Campaign 表中，现在默认按服务器日期和时间填充以下属性：`lastModified` 和 `created`。默认情况下，`createdBy-id` 属性值现在使用当前登录 ID 填充。 将忽略用户在 API 调用中提供的值。<!--This configuration can be changed in the Campaign server configuration file. As a Managed Cloud Services customer, you must reach out to Adobe to change this default configuration.-->
 
 * 为了提高应用程序之间所有通信的安全性，现在外部API调用支持mTLS。
-
 
 ### 修复 {#fixes-8-7-1}
 

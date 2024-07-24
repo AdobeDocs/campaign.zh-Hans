@@ -4,9 +4,9 @@ description: 最新 Campaign v8 版本
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: 65efda7469c5ad35e8d03703951c3d1480b015f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '781'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ _2024 年 5 月 2 日_
 
 从此版本开始，随着 Adobe 弃用服务帐户 (JWT) 凭据，Campaign 与 Adobe 解决方案和应用程序的出站集成现在依赖于 OAuth 服务器到服务器凭据。出站集成时，Adobe 将从 JWT 迁移到 OAuth，例如 Campaign-Analytics 集成或 Experience Cloud Triggers 集成。
 
-如果您已实施与 Campaign 的入站集成，则必须迁移技术帐户，详情请参阅[本文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"}。现有服务帐户(JWT)凭据将继续工作，直到&#x200B;**2025年1月27日**。
+如果您已实施与 Campaign 的入站集成，则必须迁移技术帐户，详情请参阅[本文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"}。**2025 年 1 月 27 日**&#x200B;前，现有服务帐户 (JWT) 凭据仍将有效。
 
 ### 一般改进 {#improvements-8-7-1}
 
@@ -76,10 +76,10 @@ _2024 年 5 月 2 日_
 
 * 在 Campaign 表中，现在默认按服务器日期和时间填充以下属性：`lastModified` 和 `created`。默认情况下，`createdBy-id` 属性值现在使用当前登录 ID 填充。 将忽略用户在 API 调用中提供的值。<!--This configuration can be changed in the Campaign server configuration file. As a Managed Cloud Services customer, you must reach out to Adobe to change this default configuration.-->
 
-* 为了提高应用程序之间所有通信的安全性，现在外部API调用支持mTLS。
+* 为提高应用程序之间所有通信的安全性，现在外部 API 调用支持 mTLS。
 
 ### 修复 {#fixes-8-7-1}
 
 此版本中修复了以下问题：
 
-NEO-72648、NEO-71534、NEO-71473、NEO-70263、NEO-70195、NEO-69651、NEO-68704、NEO-68192、NEO-67814、NEO-67702、NEO-67620、NEO-66022、NEO-65774、NEO-65633、NEO-64199、NEO-63706、NEO-63705、NEO-63287、NEO-63197、NEO-62575、NEO-60250、NEO-60192 58596 58314 58004 40054
+NEO-72648、NEO-71534、NEO-71473、NEO-70263、NEO-70195、NEO-69651、NEO-68704、NEO-68192、NEO-67814、NEO-67702、NEO-67620、NEO-66022、NEO-65774、NEO-65633、NEO-64199、NEO-63706、NEO-63705、NEO-63287、NEO-63197、NEO-62575、NEO-60250、NEO-60192、NEO-58596、NEO-58314、NEO-58004、NEO-40054

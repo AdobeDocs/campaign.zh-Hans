@@ -6,9 +6,9 @@ title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
 source-git-commit: 50dcdf1f6bcc8c8a195a0bf0a37af254f33b80d5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '615'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -205,6 +205,6 @@ ht-degree: 99%
       + [输入表单](dev/forms.md)
    + [使用数据包](dev/packages.md)
    + [Campaign API](dev/api.md)
-+ [Campaign技术说明>](https://experienceleague.adobe.com/en/docs/campaign/technotes-ac/technotes-home)
++ [营销活动技术说明 >](https://experienceleague.adobe.com/zh-hans/docs/campaign/technotes-ac/technotes-home)
 + [Campaign Web 用户界面文档 >](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/campaign-web-home)
 

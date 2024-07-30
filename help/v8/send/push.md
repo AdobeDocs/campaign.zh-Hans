@@ -5,7 +5,7 @@ feature: Push
 role: User
 level: Beginner
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: 48aba38f3dc8bb322e6d0b38c1b743e980671cd7
+source-git-commit: 0b4fc6da8761d2efe57d8eb0ff87cd11d0e2d250
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 6%
@@ -21,7 +21,6 @@ ht-degree: 6%
 >[!CAUTION]
 >
 >Android Firebase Cloud Messaging (FCM)服务的一些重要更改将于2024年发布，可能会影响您的Adobe Campaign实施。 您可能需要更新 Android 推送消息的订阅服务配置，才能支持此更改。您已经可以检查并执行操作。 [了解详情](../../technotes/upgrades/push-technote.md)。
-
 
 ## 创建您的第一个推送通知 {#push-create}
 

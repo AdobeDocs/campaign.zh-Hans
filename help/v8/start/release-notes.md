@@ -3,7 +3,7 @@ title: Campaign v8 发行说明
 description: 最新 Campaign v8 版本
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 0b4fc6da8761d2efe57d8eb0ff87cd11d0e2d250
+source-git-commit: 0c13ee22a7d40aaa9a8c27d3450ec3275a02748f
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 93%
@@ -17,7 +17,6 @@ Adobe Campaign 会定期更新。这种定期更新旨在让您掌握最新、�
 作为托管云服务用户，您的实例会由 Adobe 通过每个新版本升级。Adobe 将与您联系并升级您的环境。Campaign 客户端控制台&#x200B;**必须升级到与 Campaign 服务器相同的版本**。要了解如何升级客户端控制台，请参阅[此页面](../start/connect.md#upgrade-ac-console)。
 
 此外，作为客户，请确保使用的是[兼容性矩阵](compatibility-matrix.md)中列出的最新受支持的系统版本。
-
 
 
 ## 版本 8.6.3 {#release-8-6-3}

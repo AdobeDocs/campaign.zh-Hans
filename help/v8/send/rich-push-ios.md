@@ -5,7 +5,7 @@ description: 了解如何使用Adobe Campaign Web设计iOS富推送通知投放
 feature: Push
 role: User
 level: Beginner
-source-git-commit: 0b4fc6da8761d2efe57d8eb0ff87cd11d0e2d250
+source-git-commit: 0c13ee22a7d40aaa9a8c27d3450ec3275a02748f
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 4%
@@ -187,4 +187,3 @@ ht-degree: 4%
 | **[!UICONTROL Click action]** | 设置与用户单击您的通知关联的操作。 |
 | **[!UICONTROL Interruption level]** | <ul><li>活动：默认设置为，系统立即显示通知，在屏幕上亮起，并可播放声音。 通知不会突破焦点模式。</li><li>被动：系统将通知添加到通知列表，而不打开屏幕或播放声音。 通知不会突破焦点模式。</li><li> 时效性：系统立即显示通知，在屏幕上亮起，可以播放声音并突破焦点模式。 此级别不需要Apple的特殊权限。</li><li>严重：系统立即显示通知，在屏幕上亮起，并绕过静音开关或聚焦模式。 请注意，此级别需要Apple的特殊权限。</li></ul> |
 | **[!UICONTROL Relevance score]** | 将相关性得分从0设置为100。 系统使用此选项对通知摘要中的通知进行排序。 |
-

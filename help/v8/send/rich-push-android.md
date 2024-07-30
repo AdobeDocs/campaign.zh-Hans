@@ -6,7 +6,7 @@ feature: Push
 role: User
 level: Beginner
 exl-id: 42e3623b-b401-4fcc-80a7-ea38347fddc6
-source-git-commit: 0c13ee22a7d40aaa9a8c27d3450ec3275a02748f
+source-git-commit: 4e52e596d4eb2a8e1a1799fcd7104dcd894b6c2d
 workflow-type: tm+mt
 source-wordcount: '1989'
 ht-degree: 3%
@@ -358,4 +358,3 @@ ht-degree: 3%
 | **[!UICONTROL Notification Count]** | 设置直接在应用程序图标上显示的新未读信息数。 这样用户即可迅速了解待处理通知的数量。 |
 | **[!UICONTROL Visibility]** | 设置通知的可见性级别，可以是公共、私有或机密。 可见性级别确定通知内容在锁屏界面和其他敏感区域上显示的程度。 有关详细信息，请参阅[FCM文档](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility)。 |
 | **[!UICONTROL Application variables]** | 允许您定义通知行为。 可完全自定义这些变量，并将其纳入发送到移动设备的消息负载。 |
-

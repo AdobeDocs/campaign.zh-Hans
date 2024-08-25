@@ -35,7 +35,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
-### 退回邮件 {#bounce-mails-external-account}
+### 退回电子邮件 {#bounce-mails-external-account}
 
 >[!NOTE]
 >

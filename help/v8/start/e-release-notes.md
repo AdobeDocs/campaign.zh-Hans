@@ -10,7 +10,7 @@ exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
 source-git-commit: 0b4fc6da8761d2efe57d8eb0ff87cd11d0e2d250
 workflow-type: tm+mt
 source-wordcount: '200'
-ht-degree: 74%
+ht-degree: 90%
 
 ---
 
@@ -48,11 +48,11 @@ NEO-76592, NEO-75400, NEO-77406, NEO-77674, NEO-77899, NEO-73989, NEO-76064, NEO
 
 ## 版本 8.6.3 {#release-8-6-3}
 
-_2024年7月30日_
+_2024 年 7 月 30 日_
 
 ### 新增功能 {#new-8-6-3}
 
-* **富推送通知** — 您现在可以发送富推送通知。 富媒体推送通知是移动通知的一种增强形式，它超越了简单的文本消息，融合了图像、交互式按钮或其他富媒体内容等多媒体元素。在此版本中，现在为您的iOS和Android应用程序提供了一组富推送通知模板。 [了解更多信息](../send/rich-push-android.md)。
+* **富媒体推送通知** - 您现在可以发送富媒体推送通知。富媒体推送通知是移动通知的一种增强形式，它超越了简单的文本消息，融合了图像、交互式按钮或其他富媒体内容等多媒体元素。在此版本中，您可以为 iOS 和 Android 应用程序提供一组富媒体推送通知模板。[了解更多信息](../send/rich-push-android.md)。
 
 * 从此版本开始，随着 Adobe 弃用服务帐户 (JWT) 凭据，Campaign 与 Adobe 解决方案和应用程序的出站集成现在依赖于 OAuth 服务器到服务器凭据。[了解详情](release-notes.md#change-8-7-1)
 

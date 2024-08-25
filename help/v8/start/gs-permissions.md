@@ -8,7 +8,7 @@ exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
 source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
 workflow-type: tm+mt
 source-wordcount: '515'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Campaign允许您定义和管理分配给用户的权限。 这些权限�
 
 * 访问特定功能
 * 访问特定数据
-* 访问某些操作（创建、修改、删除）
+* Access 对某些操作（创建、修改、删除）
 
 这些权限是通过组合操作员组权限、命名权限和文件夹权限来定义的。
 

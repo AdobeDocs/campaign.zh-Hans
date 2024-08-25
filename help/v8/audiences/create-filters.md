@@ -232,7 +232,7 @@ Adobe Campaign中提供了以下类型的过滤器：
 
    ![](assets/filter-on-age.png)
 
-## 高级过滤器{#advanced-filters}
+## 高级筛选{#advanced-filters}
 
 在&#x200B;**高级筛选器**&#x200B;中组合复杂条件。 使用这些筛选器创建复杂查询或数据查询组合。 这些过滤器可以保存并与其他Campaign用户共享。
 

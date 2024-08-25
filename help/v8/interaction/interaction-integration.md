@@ -316,7 +316,7 @@ HTML页面必须包含一个元素，该元素具有@id属性，并具有已创�
 
 为选件管理提供的SOAP Web服务与Adobe Campaign中通常使用的服务不同。 您可以通过上一节所述的交互URL访问选件，并让您提供或更新给定联系人的选件。
 
-### 优惠建议 {#offer-proposition}
+### 产品建议提议 {#offer-proposition}
 
 对于通过SOAP的优惠建议，请添加&#x200B;**nms：proposition#Propose**&#x200B;命令，后跟以下参数：
 

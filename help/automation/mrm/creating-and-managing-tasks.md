@@ -5,7 +5,7 @@ description: 创建和管理任务
 feature: Campaigns, Resource Management
 role: User
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '3758'
 ht-degree: 0%
@@ -374,10 +374,10 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 在创建期间，必须在任务中输入以下元素：
 
-* **[!UICONTROL Assigned to]** ：操作员或将接收电子邮件的操作员组。 如果在发送电子邮件后重新分配任务，则不会将电子邮件发送给新操作员（为了做到这一点，您需要重新初始化任务并更改其开始日期）。
+* **[!UICONTROL Assigned to]**：将接收电子邮件的操作员或操作员组。 如果在发送电子邮件后重新分配任务，则不会将电子邮件发送给新操作员（为了做到这一点，您需要重新初始化任务并更改其开始日期）。
 * **任务开始日期**：发送通知电子邮件的日期。 此日期必须在将来记录任务时发生。
 * **任务结束日期**：任务状态更改为&#x200B;**[!UICONTROL Finished]**&#x200B;的日期。 默认情况下，结束日期与开始日期相同。 但是，通过为任务分配持续时间，可以表示操作员必须在计划中执行操作的时间量（如有必要）。
-* **[!UICONTROL Description]** ：此处输入的文本将显示在通知电子邮件的正文中。
+* **[!UICONTROL Description]**：此处输入的文本将显示在通知电子邮件的正文中。
 
   ![](assets/mrm_task_notif_dashboard_msg.png)
 

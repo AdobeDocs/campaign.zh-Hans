@@ -4,7 +4,7 @@ description: 了解如何访问和使用全局报告
 feature: Reporting, Monitoring
 role: User, Data Engineer
 exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1750'
 ht-degree: 6%
@@ -25,19 +25,19 @@ ht-degree: 6%
 >
 >此部分仅显示链接到投放的报告。
 
-* **[!UICONTROL Delivery throughput]** ：请参阅[投放吞吐量](#delivery-throughput)。
-* **[!UICONTROL Browsers]** ：请参阅[浏览器](#browsers)。
-* **[!UICONTROL Sharing to social networks]** ：请参阅[共享到社交网络](#sharing-to-social-networks)。
-* **[!UICONTROL Statistics on sharing activities]** ：请参阅[共享活动的统计信息](#statistics-on-sharing-activities)。
-* **[!UICONTROL Operating systems]** ：请参阅[操作系统](#operating-systems)。
-* **[!UICONTROL URLs and click streams]** ：请参阅[URL并单击流](delivery-reports.md#urls-and-click-streams)。
-* **[!UICONTROL Tracking indicators]** ：请参阅[跟踪指标](delivery-reports.md#tracking-indicators)。
-* **[!UICONTROL Non-deliverables and bounces]** ：请参阅[无法投放项和退回](#non-deliverables-and-bounces)。
-* **[!UICONTROL User activities]** ：请参阅[用户活动](#user-activities)。
-* **[!UICONTROL Subscription tracking]** ：请参阅[订阅跟踪](#subscription-tracking)。
-* **[!UICONTROL Delivery summary]** ：请参阅[投放摘要](delivery-reports.md#delivery-summary)。
-* **[!UICONTROL Delivery statistics]** ：请参阅[投放统计信息](#delivery-statistics)。
-* **[!UICONTROL Breakdown of opens]** ：请参阅[打开的细分](#breakdown-of-opens)。
+* **[!UICONTROL Delivery throughput]**：请参阅[投放吞吐量](#delivery-throughput)。
+* **[!UICONTROL Browsers]**：请参阅[浏览器](#browsers)。
+* **[!UICONTROL Sharing to social networks]**：请参阅[共享到社交网络](#sharing-to-social-networks)。
+* **[!UICONTROL Statistics on sharing activities]**：请参阅[共享活动的统计信息](#statistics-on-sharing-activities)。
+* **[!UICONTROL Operating systems]**：请参阅[操作系统](#operating-systems)。
+* **[!UICONTROL URLs and click streams]**：引用[URL并单击“流”](delivery-reports.md#urls-and-click-streams)。
+* **[!UICONTROL Tracking indicators]**：请参阅[跟踪指示器](delivery-reports.md#tracking-indicators)。
+* **[!UICONTROL Non-deliverables and bounces]**：请参阅[无法投放项和退回](#non-deliverables-and-bounces)。
+* **[!UICONTROL User activities]**：请参阅[用户活动](#user-activities)。
+* **[!UICONTROL Subscription tracking]**：请参阅[订阅跟踪](#subscription-tracking)。
+* **[!UICONTROL Delivery summary]**：请参阅[投放摘要](delivery-reports.md#delivery-summary)。
+* **[!UICONTROL Delivery statistics]**：请参阅[投放统计信息](#delivery-statistics)。
+* **[!UICONTROL Breakdown of opens]**：请参阅[打开的细分](#breakdown-of-opens)。
 
 ## 投放吞吐量 {#delivery-throughput}
 
@@ -60,10 +60,10 @@ ht-degree: 6%
 
 可以使用以下选项：
 
-* **[!UICONTROL Opens]** ：打开的邮件总数。 不考虑文本格式的电子邮件。 [了解详情](metrics-calculation.md#tracking-opens-)。
-* **[!UICONTROL Clicks]** ：投放中链接的点击总数。 对退订链接和镜像页面的点击次数不包含在内。
+* **[!UICONTROL Opens]**：打开的邮件总数。 不考虑文本格式的电子邮件。 [了解详情](metrics-calculation.md#tracking-opens-)。
+* **[!UICONTROL Clicks]**：投放中链接的点击总数。 对退订链接和镜像页面的点击次数不包含在内。
 <!--
-* **[!UICONTROL Transactions]** : Total number of transactions after a message is received. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
+* **[!UICONTROL Transactions]**: Total number of transactions after a message is received. In order for a transaction to be taken into account, a transaction type webtracking tag must be inserted into the matching web page. Webtracking configuration is presented in [this section](../../configuration/using/about-web-tracking.md).
 -->
 
 ## 无法投放项和退回 {#non-deliverables-and-bounces}
@@ -88,13 +88,13 @@ ht-degree: 6%
 
 使用以下指示器：
 
-* **[!UICONTROL User unknown]** ：投放期间生成的错误类型，指示电子邮件地址无效。
-* **[!UICONTROL Invalid domain]** ：发送投放时生成的错误类型，指示电子邮件地址的域错误或不存在。
-* **[!UICONTROL Inbox full]** ：在尝试传递五次后生成的错误类型，以指示收件人的收件箱包含太多邮件。
-* **[!UICONTROL Account disabled]** ：发送投放时生成的错误类型，指示地址不再存在。
-* **[!UICONTROL Rejected]** ：当地址被IAP（Internet访问提供商）拒绝时生成的错误类型，例如在应用安全规则（反垃圾邮件软件）之后。
-* **[!UICONTROL Unreachable]** ：消息分发字符串中发生的错误类型：SMTP中继上的事件、域名暂时不可访问等
-* **[!UICONTROL Not connected]** ：错误类型表示收件人的手机在发送时关闭或与网络断开连接。
+* **[!UICONTROL User unknown]**：在投放期间生成的错误类型指示电子邮件地址无效。
+* **[!UICONTROL Invalid domain]**：发送投放时生成的错误类型，指示电子邮件地址的域错误或不存在。
+* **[!UICONTROL Inbox full]**：在尝试五次传递后生成的错误类型，以指示收件人的收件箱包含太多邮件。
+* **[!UICONTROL Account disabled]**：发送投放时生成的错误类型，指示地址不再存在。
+* **[!UICONTROL Rejected]**：当地址被IAP （Internet访问提供程序）拒绝时生成的错误类型，例如，在应用安全规则（反垃圾邮件软件）之后。
+* **[!UICONTROL Unreachable]**：邮件分发字符串中发生的错误类型：SMTP中继上的事件、域名暂时不可访问等
+* **[!UICONTROL Not connected]**：错误类型表示收件人的手机在发送时关闭或与网络断开连接。
 
   >[!NOTE]
   >
@@ -136,9 +136,9 @@ ht-degree: 6%
 
 使用以下指示器：
 
-* **[!UICONTROL Visitors]** ：目标（每个Internet浏览器）并已至少单击一次投放的收件人总数。
-* **[!UICONTROL Pages viewed]** ：针对所有投放，在一个投放（每个Internet浏览器）中对链接的点击总数。
-* **[!UICONTROL Usage rate]** ：此比率表示访客（每个互联网浏览器）相对于访客总数的细分情况。
+* **[!UICONTROL Visitors]**：目标（每个Internet浏览器）并已至少单击一次投放的收件人总数。
+* **[!UICONTROL Pages viewed]**：针对所有投放，在一个投放（每个Internet浏览器）中对链接的点击总数。
+* **[!UICONTROL Usage rate]**：此比率表示访客（每个互联网浏览器）相对于访客总数的细分情况。
 
 每个浏览器的&#x200B;**统计信息**
 
@@ -154,8 +154,8 @@ ht-degree: 6%
 
 值表使用以下指标：
 
-* **[!UICONTROL Global rate]** ：此比率表示每个版本的访客与访客总数（在所有浏览器上）的比较结果。
-* **[!UICONTROL Relative rate]** ：此比率表示每个版本的访客与（此浏览器上的）访客总数的细分情况。
+* **[!UICONTROL Global rate]**：此比率表示每个版本的访客与访客总数（在所有浏览器上）的比较结果。
+* **[!UICONTROL Relative rate]**：此比率表示每个版本的访客数与（此浏览器上的）访客总数的比率。
 
 
 <!--
@@ -171,8 +171,8 @@ This report shows the breakdown of shared and opened messages per social network
 
 In the email delivery statistics, two values are displayed:
 
-* **[!UICONTROL Number of messages to be delivered]** : Total number of messages processed during delivery analysis.
-* **[!UICONTROL Number of successful deliveries]** : Number of messages processed successfully.
+* **[!UICONTROL Number of messages to be delivered]**: Total number of messages processed during delivery analysis.
+* **[!UICONTROL Number of successful deliveries]**: Number of messages processed successfully.
 
 **[!UICONTROL Sharing activities and mail open statistics]**
 
@@ -180,15 +180,15 @@ The central table shows the statistics on email shares and opens.
 
 In the **[!UICONTROL Shares]** column, we have the following indicators:
 
-* **[!UICONTROL No. of sharing activities]** : Total number of messages shared on each social network. This value equals the total number of clicks on the icon of the matching **[!UICONTROL Links for sharing to social networks]** personalization block.
-* **[!UICONTROL Breakdown]** : This rate represents the breakdown of shares per social network, in relation to the total number of shares.
-* **[!UICONTROL Sharing rate]** : This rate represents the breakdown of shares per social network, in relation to the number of messages to be delivered.
+* **[!UICONTROL No. of sharing activities]**: Total number of messages shared on each social network. This value equals the total number of clicks on the icon of the matching **[!UICONTROL Links for sharing to social networks]** personalization block.
+* **[!UICONTROL Breakdown]**: This rate represents the breakdown of shares per social network, in relation to the total number of shares.
+* **[!UICONTROL Sharing rate]**: This rate represents the breakdown of shares per social network, in relation to the number of messages to be delivered.
 
 In the **[!UICONTROL Opens]** column, we have the following indicators:
 
-* **[!UICONTROL No. of opens]** : Total number of messages opened by people whom the message was forwarded to (via the **[!UICONTROL Links for sharing to social networks]** personalization block). This value equals the number of times the mirror page was displayed. Opens by delivery recipients are not taken into account.
-* **[!UICONTROL Breakdown]** : This rate represents the breakdown of opens per social network, in relation to the total number of opens.
-* **[!UICONTROL Rate of opens]** : This rate represents the breakdown of opens per social network, in relation to the total number of shares.
+* **[!UICONTROL No. of opens]**: Total number of messages opened by people whom the message was forwarded to (via the **[!UICONTROL Links for sharing to social networks]** personalization block). This value equals the number of times the mirror page was displayed. Opens by delivery recipients are not taken into account.
+* **[!UICONTROL Breakdown]**: This rate represents the breakdown of opens per social network, in relation to the total number of opens.
+* **[!UICONTROL Rate of opens]**: This rate represents the breakdown of opens per social network, in relation to the total number of shares.
 
 **[!UICONTROL Breakdown of sharing activities and opens]**
 
@@ -205,9 +205,9 @@ Statistics are presented in the form of a table of values and a chart.
 
 The following indicators are used:
 
-* **[!UICONTROL New contacts]** : Number of new subscriptions following the reception of a message shared via email. This value matches the number of people who received a message shared via email, clicked the **[!UICONTROL Subscription link]** and filled in the subscription form. 
-* **[!UICONTROL Opens]** : Total number of messages opened by people whom the message was transferred to (via the **[!UICONTROL Link for sharing to social networks]** personalization block). This value equals the number of times the mirror page was displayed. Opens by delivery recipients are not taken into account.
-* **[!UICONTROL Sharing activities]** : Total number of messages shared via social networks. This value matches the total number of clicks on the icon of the **[!UICONTROL Links for sharing to social networks]** personalization block.
+* **[!UICONTROL New contacts]**: Number of new subscriptions following the reception of a message shared via email. This value matches the number of people who received a message shared via email, clicked the **[!UICONTROL Subscription link]** and filled in the subscription form. 
+* **[!UICONTROL Opens]**: Total number of messages opened by people whom the message was transferred to (via the **[!UICONTROL Link for sharing to social networks]** personalization block). This value equals the number of times the mirror page was displayed. Opens by delivery recipients are not taken into account.
+* **[!UICONTROL Sharing activities]**: Total number of messages shared via social networks. This value matches the total number of clicks on the icon of the **[!UICONTROL Links for sharing to social networks]** personalization block.
 -->
 
 ## 操作系统 {#operating-systems}
@@ -226,9 +226,9 @@ The following indicators are used:
 
 使用以下指示器：
 
-* **[!UICONTROL Visitors]** ：至少单击一次投放的目标收件人（每个操作系统）每日平均总数。
-* **[!UICONTROL Pages viewed]** ：所有投放的投放链接每日平均点击总数（每个操作系统）。
-* **[!UICONTROL Rate of use]** ：此比率表示访客（每个操作系统）相对于访客总数的细分情况。
+* **[!UICONTROL Visitors]**：至少点击一次投放的目标收件人（每个操作系统）每日平均总数。
+* **[!UICONTROL Pages viewed]**：所有投放的投放链接（每个操作系统）每日平均点击总数。
+* **[!UICONTROL Rate of use]**：此比率表示访客（每个操作系统）相对于访客总数的细分情况。
 
 **每个操作系统的统计信息**
 
@@ -244,8 +244,8 @@ The following indicators are used:
 
 值表使用以下指标：
 
-* **[!UICONTROL Global rate]** ：此比率表示访客（每个版本）相对于整个操作系统的访客总数的细分情况。
-* **[!UICONTROL Relative rate]** ：此比率表示相对于此操作系统的访客总数，访客（每个版本）的划分情况。
+* **[!UICONTROL Global rate]**：此比率表示访客（每个版本）相对于整个操作系统的访客总数的细分情况。
+* **[!UICONTROL Relative rate]**：此比率表示相对于此操作系统的访客总数，访客（每个版本）的划分情况。
 
 ## 订阅跟踪 {#subscription-tracking}
 
@@ -263,11 +263,11 @@ The following indicators are used:
 
 值表使用以下指标：
 
-* **[!UICONTROL Subscribers]** ：相关期间的订阅者总数。
-* **[!UICONTROL Subscriptions]** ：相关期间的订阅数。
-* **[!UICONTROL Unsubscriptions]** ：相关期间的取消订阅数。
-* **[!UICONTROL Evolution]** ：取消订阅数减去订阅数。 根据订阅者总数计算比率。
-* **[!UICONTROL Loyalty]** ：相关期间的订阅者忠诚度比率。
+* **[!UICONTROL Subscribers]**：相关期间的订阅者总数。
+* **[!UICONTROL Subscriptions]**：相关期间的订阅数。
+* **[!UICONTROL Unsubscriptions]**：相关期间的取消订阅数。
+* **[!UICONTROL Evolution]**：取消订阅数减去订阅数。 根据订阅者总数计算比率。
+* **[!UICONTROL Loyalty]**：相关期间订阅者的忠诚度比率。
 
 **[!UICONTROL Subscription evolution curves]**
 
@@ -281,18 +281,18 @@ The following indicators are used:
 
 使用以下指示器：
 
-* **[!UICONTROL Emails processed]** ：投放服务器处理的邮件总数。
-* **[!UICONTROL Delivered]** ：成功处理的邮件数与已处理的邮件总数之间的百分比。
-* **[!UICONTROL Hard bounces]** ：“硬”退回次数占已处理消息总数的百分比。
-* **[!UICONTROL Soft bounces]** ：退回次数占已处理邮件总数的百分比。
+* **[!UICONTROL Emails processed]**：传递伺服器处理的邮件总数。
+* **[!UICONTROL Delivered]**：成功处理的邮件数与已处理的邮件总数之间的百分比。
+* **[!UICONTROL Hard bounces]**：“硬”退回次数占已处理邮件总数的百分比。
+* **[!UICONTROL Soft bounces]**：“软”退回次数占已处理邮件总数的百分比。
 
   >[!NOTE]
   >
   >有关硬退回和软退回的详细信息，请参阅[此页面](../send/quarantines.md)。
 
-* **[!UICONTROL Opens]** ：与成功处理的邮件数相比，至少打开过一次邮件的目标收件人数的百分比。
-* **[!UICONTROL Clicks]** ：与成功处理的消息数相比，至少点击一次投放的用户数的百分比。
-* **[!UICONTROL Unsubscription]** ：与成功处理的邮件数相比，取消订阅链接的点击数百分比。
+* **[!UICONTROL Opens]**：与成功处理的邮件数相比，至少打开过一次邮件的目标收件人数的百分比。
+* **[!UICONTROL Clicks]**：与成功处理的邮件数相比，至少点击过一次投放的用户数的百分比。
+* **[!UICONTROL Unsubscription]**：与成功处理的邮件数相比，取消订阅链接的点击数百分比。
 
 ## 打开的细分 {#breakdown-of-opens}
 

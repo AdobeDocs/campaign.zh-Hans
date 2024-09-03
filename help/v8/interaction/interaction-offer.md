@@ -5,7 +5,7 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: 4dc2008d-681c-4a79-8fc8-c270c9224ab9
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 3%
@@ -116,10 +116,10 @@ ht-degree: 3%
 
 1. 定义选件内容的各种参数。
 
-   * **[!UICONTROL Title]** ：指定您希望显示在选件中的标题。 警告：这不是指在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中定义的选件标签。
-   * **[!UICONTROL Destination URL]** ：指定选件的URL。 必须以“http://”或“https://”开头。
-   * **[!UICONTROL Image URL]** ：指定选件图像的URL或访问路径。
-   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** ：在所需的选项卡中输入选件正文。 要生成跟踪，**[!UICONTROL HTML content]**&#x200B;必须由可以包含在`<div>`类型元素中的HTML元素组成。 例如，HTML页面中`<table>`元素的结果将如下所示：
+   * **[!UICONTROL Title]**：指定您希望显示在选件中的标题。 警告：这不是指在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中定义的选件标签。
+   * **[!UICONTROL Destination URL]**：指定选件的URL。 必须以“http://”或“https://”开头。
+   * **[!UICONTROL Image URL]**：指定选件图像的URL或访问路径。
+   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]**：在所需的选项卡中输入选件正文。 要生成跟踪，**[!UICONTROL HTML content]**&#x200B;必须由可以包含在`<div>`类型元素中的HTML元素组成。 例如，HTML页面中`<table>`元素的结果将如下所示：
 
    ```
       <div> 

@@ -4,7 +4,7 @@ title: 活动模拟入门
 description: 了解如何配置活动模拟
 feature: Campaigns
 exl-id: 2b2b668f-87d9-4265-adbc-9098b85c5aab
-source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 1%
@@ -153,9 +153,9 @@ Descriptive analysis is detailed in [this section](../../reporting/using/about-a
 
 默认情况下，会提供以下报表：
 
-* **[!UICONTROL Detail of simulation exclusions]** ：此报表为所有相关的投放提供了一个详细的排除原因图表。
-* **[!UICONTROL Simulation summary]** ：此报表显示从各种投放的模拟中排除的群体。
-* **[!UICONTROL Summary of exclusions linked to the simulation]** ：此报表显示由模拟导致的排除图表、应用的分类规则以及显示每个规则的排除率的图表。
+* **[!UICONTROL Detail of simulation exclusions]**：此报表为所有相关的投放提供了一个详细的排除原因图表。
+* **[!UICONTROL Simulation summary]**：此报表显示从各种投放的模拟中排除的群体。
+* **[!UICONTROL Summary of exclusions linked to the simulation]**：此报表显示由模拟导致的排除图表、应用的分类规则以及显示每个规则的排除率的图表。
 
 <!--
 >[!NOTE]

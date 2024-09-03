@@ -5,7 +5,7 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 1526048d-9f02-4853-948f-8fb618670dbd
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 5%
@@ -74,9 +74,9 @@ ht-degree: 5%
 
 通过此选项卡可访问以下选项：
 
-* **[!UICONTROL Label and code of the delivery]** ：此部分中的选项用于在投放分析阶段计算这些字段的值。 **[!UICONTROL Compute the execution folder during the delivery analysis]**&#x200B;字段计算分析阶段将包含此投放操作的文件夹的名称。
+* **[!UICONTROL Label and code of the delivery]**：此部分中的选项用于在投放分析阶段计算这些字段的值。 **[!UICONTROL Compute the execution folder during the delivery analysis]**&#x200B;字段计算分析阶段将包含此投放操作的文件夹的名称。
 
-* **[!UICONTROL Approval mode]** ：利用此字段可定义分析完成后手动或自动投放。
+* **[!UICONTROL Approval mode]**：利用此字段可定义分析完成后手动或自动投放。
 
   如果在分析期间生成警告（例如，如果投放主题中强调某些字符等），则可以配置投放以定义是否应仍执行此投放。 默认情况下，用户必须在分析阶段结束时确认消息的发送：这是&#x200B;**手动**&#x200B;验证。
 
@@ -88,6 +88,6 @@ ht-degree: 5%
    * **[!UICONTROL Semi-automatic]**：如果分析阶段未生成警告消息，则自动开始发送。
    * **[!UICONTROL Automatic]**：在分析阶段结束时自动开始发送，与其结果无关。
 
-* **[!UICONTROL Start job in a detached process]** ：利用此选项可在单独的进程中启动投放分析。 默认情况下，分析函数使用Adobe Campaign应用程序服务器进程(web nlserver)。 通过选择此选项，可以确保即使在应用程序服务器出现故障时也能完成分析。
-* **[!UICONTROL Log SQL queries generated during the analysis in the journal]** ：此选项在分析阶段将SQL查询日志添加到投放日志。
-* **[!UICONTROL Ignore personalization scripts during sending]** ：利用此选项可绕过对HTML内容中JavaScript指令的解释。 它们将按原样显示在交付的内容中。 这些指令随`<%=`标记引入。
+* **[!UICONTROL Start job in a detached process]**：利用此选项，可在单独的进程中启动投放分析。 默认情况下，分析函数使用Adobe Campaign应用程序服务器进程(web nlserver)。 通过选择此选项，可以确保即使在应用程序服务器出现故障时也能完成分析。
+* **[!UICONTROL Log SQL queries generated during the analysis in the journal]**：此选项在分析阶段将SQL查询日志添加到投放日志。
+* **[!UICONTROL Ignore personalization scripts during sending]**：此选项允许您绕过对HTML内容中找到JavaScript指令的解释。 它们将按原样显示在交付的内容中。 这些指令随`<%=`标记引入。

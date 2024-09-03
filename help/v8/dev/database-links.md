@@ -5,7 +5,7 @@ feature: Data Model, Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: f7047c6e-f045-4534-b117-311dd90dd92b
-source-git-commit: 0f5efba364ef924447324bdd806e15e6db8d799d
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 0%
@@ -26,14 +26,14 @@ ht-degree: 0%
 
 对于与Campaign表/数据库的连接关系：
 
-* ![](assets/do-not-localize/join_with_campaign11.png) ：基数1-1。 例如，在收件人和当前订单之间。 收件人一次只能与当前订单表的一个实例相关。
-* ![](assets/do-not-localize/externaljoin11.png) ：基数1-1，外部联接。 例如，在收件人与其国家/地区之间。 收件人只能与表国家/地区的一个匹配项相关。 将不会保存国家表的内容。
-* ![](assets/do-not-localize/join_with_campaign1n.png) ：基数1-N。例如，在收件人和订阅表之间。 收件人可能与订阅表中的多次发生次数相关。
+* ![](assets/do-not-localize/join_with_campaign11.png)：基数1-1。 例如，在收件人和当前订单之间。 收件人一次只能与当前订单表的一个实例相关。
+* ![](assets/do-not-localize/externaljoin11.png)：基数1-1，外部联接。 例如，在收件人与其国家/地区之间。 收件人只能与表国家/地区的一个匹配项相关。 将不会保存国家表的内容。
+* ![](assets/do-not-localize/join_with_campaign1n.png)：基数1-N。例如，在收件人和订阅表之间。 收件人可能与订阅表中的多次发生次数相关。
 
 对于使用联合数据库访问(FDA)的联接关系：
 
-* ![](assets/do-not-localize/join_fda_11.png) ：基数1-1
-* ![](assets/do-not-localize/join_fda_1m.png) ：基数1-N
+* ![](assets/do-not-localize/join_fda_11.png)：基数1-1
+* ![](assets/do-not-localize/join_fda_1m.png)：基数1-N
 
 有关FDA表的详细信息，请参阅[访问外部数据库](../connect/fda.md)。
 

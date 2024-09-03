@@ -5,7 +5,7 @@ description: 了解如何控制成本
 feature: Campaigns, Resource Management
 role: User
 exl-id: 51f3add9-a083-4db1-84a6-3aaaeec0465c
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '2428'
 ht-degree: 1%
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 1. 定义成本计算方法：为服务提供商定义成本结构。 [了解详情](../campaigns/providers-stocks-and-budgets.md)。
 
-1. 定义营销活动成本（投放/任务） ：投放和任务产生的成本为营销活动模板单独或全局输入。 [了解详情](../campaigns/marketing-campaign-deliveries.md#compute-costs-and-stocks)。
+1. 定义活动成本（投放/任务）：投放和任务产生的成本为活动模板单独或全局输入。 [了解详情](../campaigns/marketing-campaign-deliveries.md#compute-costs-and-stocks)。
 
 1. 合并：根据任务、投放和营销活动的进度状态，计算成本并将其传递到相应的预算。 当营销活动创建足够高级时，营销活动预算的进度状态可以更改为&#x200B;**[!UICONTROL Specified]**。 然后，将自动输入项目的计算成本以及营销策划上计算的成本。 [了解详情](#cost-commitment--calculation-and-charging)。
 

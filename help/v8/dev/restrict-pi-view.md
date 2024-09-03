@@ -5,7 +5,7 @@ feature: PI, Privacy, Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: 1b833745-71d7-430d-ac7d-c830c78ea232
-source-git-commit: b6f7b8a6652034145602d9949fa196eae929fb95
+source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 1%
@@ -39,8 +39,8 @@ ht-degree: 1%
 
 主要属性包括：
 
-* **[!UICONTROL visibleIf]** ：隐藏元数据中的字段，因此无法在架构视图、列选择或表达式生成器中访问它们。 但这不会隐藏任何数据，如果手动在表达式中输入字段名称，则会显示值。
-* **[!UICONTROL accessibleIf]** ：隐藏生成的查询中的数据（用空值替换）。 如果visibleIf为空，则它将获得与&#x200B;**[!UICONTROL accessibleIf]**&#x200B;相同的表达式。
+* **[!UICONTROL visibleIf]**：从元数据中隐藏字段，因此在架构视图、列选择或表达式生成器中无法访问这些字段。 但这不会隐藏任何数据，如果手动在表达式中输入字段名称，则会显示值。
+* **[!UICONTROL accessibleIf]**：隐藏结果查询中的数据（用空值替换）。 如果visibleIf为空，则它将获得与&#x200B;**[!UICONTROL accessibleIf]**&#x200B;相同的表达式。
 
 以下是在Campaign中使用此属性的后果：
 

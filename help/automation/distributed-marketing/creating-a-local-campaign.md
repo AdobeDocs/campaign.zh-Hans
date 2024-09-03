@@ -5,7 +5,7 @@ description: 创建本地活动
 feature: Distributed Marketing
 role: User
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1553'
 ht-degree: 1%
@@ -58,11 +58,11 @@ ht-degree: 1%
 
 有四种类型的接口可用：
 
-* **[!UICONTROL By brief]** ：本地实体必须提供描述，以便描述营销活动配置。 订单获得批准后，中央实体会配置并执行整个营销活动。
+* **[!UICONTROL By brief]**：本地实体必须提供描述，以便描述营销活动配置。 订单获得批准后，中央实体会配置并执行整个营销活动。
 
   ![](assets/mkt_distr_6.png)
 
-* **[!UICONTROL By form]** ：本地实体有权访问Web窗体，本地实体可以在其中使用个性化字段编辑内容、目标、其最大大小以及创建和提取日期，具体取决于使用的模板。 本地实体可以评估目标并预览此Web窗体中的内容。
+* **[!UICONTROL By form]**：本地实体有权访问Web窗体，本地实体可以在其中使用个性化字段编辑内容、目标、最大大小以及创建和提取日期，具体取决于使用的模板。 本地实体可以评估目标并预览此Web窗体中的内容。
 
   ![](assets/mkt_distr_8.png)
 
@@ -74,8 +74,8 @@ ht-degree: 1%
 
   ![](assets/mkt_distr_7.png)
 
-* **[!UICONTROL By external form]** ：本地实体有权访问其外网(非Adobe Campaign)中的营销活动参数。 这些参数与&#x200B;**本地营销活动（按表单）**&#x200B;的参数相同。
-* **[!UICONTROL Pre-set]** ：本地实体使用默认表单订购营销活动，而不进行本地化。
+* **[!UICONTROL By external form]**：本地实体有权访问其外网(非Adobe Campaign)中的营销活动参数。 这些参数与&#x200B;**本地营销活动（按表单）**&#x200B;的参数相同。
+* **[!UICONTROL Pre-set]**：本地实体订购使用默认表单的营销活动，而不进行本地化。
 
   ![](assets/mkt_distr_5.png)
 

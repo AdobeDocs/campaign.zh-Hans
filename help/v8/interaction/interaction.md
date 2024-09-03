@@ -5,7 +5,7 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: 4da3e69a-6230-4c94-a6f1-4e8c01e854ba
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 1%
@@ -118,8 +118,8 @@ Campaign附带&#x200B;**交互**&#x200B;模块，您可以在交互期间通过�
 * **套利**：选择要在环境中显示的优惠（符合条件的优惠）。 套利原则根据类别、优惠和上下文优惠中定义的条件按优先级对优惠进行排名。
 * **联系人**：来自入站交互的联系人。 在引擎调用处理期间，联系人与定位维度相关联。 有两种类型的联系人：
 
-   * **[!UICONTROL Identified contact]** ：已在渠道中自愿识别的联系人。 在叫客交互中，会自动识别联系人。
-   * **[!UICONTROL Anonymous contact]** ：未通过渠道自愿订阅，但可通过Cookie隐式识别的联系人。 此术语仅用于传入交互。
+   * **[!UICONTROL Identified contact]**：已在渠道中自愿识别的联系人。 在叫客交互中，会自动识别联系人。
+   * **[!UICONTROL Anonymous contact]**：未通过渠道自愿订阅，但可通过Cookie隐式识别的联系人。 此术语仅用于传入交互。
 
      >[!NOTE]
      >
@@ -131,9 +131,9 @@ Campaign附带&#x200B;**交互**&#x200B;模块，您可以在交互期间通过�
 * **单一模式**：一次处理单个联系人。 此模式通常适用于入站交互和事务性消息。
 * **识别模式**：引用联系人的状态：
 
-   * **[!UICONTROL explicit]** ：联系人通过登录渠道界面来识别。
-   * **[!UICONTROL implicit]** ：联系人由Cookie标识（永久或会话）。 它可以作为匿名联系人或识别联系人处理。
-   * **[!UICONTROL anonymous]** ：无法识别联系人。
+   * **[!UICONTROL explicit]**：联系人通过登录渠道界面来标识。
+   * **[!UICONTROL implicit]**：联系人由Cookie标识（永久或会话）。 它可以作为匿名联系人或识别联系人处理。
+   * **[!UICONTROL anonymous]**：无法识别联系人。
 
 * **合格优惠**：优惠符合上游定义的可一致提供给目标的约束。
 * **演示规则**：优惠环境中引用的类型规则，该规则允许您通过考虑建议历史记录排除某些优惠。

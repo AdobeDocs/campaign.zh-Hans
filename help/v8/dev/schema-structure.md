@@ -5,7 +5,7 @@ feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1394'
 ht-degree: 1%
@@ -217,9 +217,9 @@ ht-degree: 1%
 
 要将默认值链接到字段，您可以使用`<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
-`<default>` ：允许您在创建实体时使用默认值预填充字段。 该值将不会是默认的SQL值。
+`<default>`：允许您在创建实体时使用默认值预填充字段。 该值将不会是默认的SQL值。
 
-`<sqldefault>` ：允许您在创建字段时添加值。 此值显示为SQL结果。 在架构更新期间，此值仅影响新记录。
+`<sqldefault>`：允许您在创建字段时添加值。 此值显示为SQL结果。 在架构更新期间，此值仅影响新记录。
 
 ### 明细列表 {#enumerations}
 

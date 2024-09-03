@@ -5,7 +5,7 @@ description: 使用Workflow HeatMap监控工作流
 feature: Workflows, Heatmap
 role: Admin
 exl-id: aeb35076-2f0d-456d-8562-be69e7e902eb
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 3%
@@ -71,8 +71,8 @@ Workflow HeatMap提供了并发工作流数的快速概览，从而使Adobe Camp
 
 1. 您也可以在&#x200B;**[!UICONTROL Workflow type]**&#x200B;上筛选：
 
-   * **[!UICONTROL Technical]** ：仅显示[内置的技术工作流](technical-workflows.md)和[数据管理工作流](targeting-workflows.md#data-management)。
-   * **[!UICONTROL Marketing]** ：仅显示链接到营销活动（称为[营销活动工作流](campaign-workflows.md)）的工作流。
+   * **[!UICONTROL Technical]**：只显示[内置的技术工作流](technical-workflows.md)和[数据管理工作流](targeting-workflows.md#data-management)。
+   * **[!UICONTROL Marketing]**：仅显示链接到营销活动（称为[营销活动工作流](campaign-workflows.md)）的工作流。
 
 1. 要按名称搜索特定工作流，您还可以使用&#x200B;**[!UICONTROL Workflow name filter]**&#x200B;字段。
 

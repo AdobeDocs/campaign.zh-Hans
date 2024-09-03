@@ -5,7 +5,7 @@ description: 了解如何创建协作活动
 feature: Distributed Marketing
 role: User
 exl-id: edf887fb-c391-405c-b3cf-dc34aed69c53
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 4%
@@ -76,9 +76,9 @@ ht-degree: 4%
 
 活动工作流必须集成&#x200B;**本地审批**&#x200B;类型活动。 活动参数如下：
 
-* **[!UICONTROL Action to perform]** ：目标审批通知。
-* **[!UICONTROL Distribution context]** ：显式。
-* **[!UICONTROL Data distribution]** ：本地实体分发。
+* **[!UICONTROL Action to perform]**：目标审批通知。
+* **[!UICONTROL Distribution context]**：显式。
+* **[!UICONTROL Data distribution]**：本地实体分发。
 
 必须创建&#x200B;**本地实体分发**&#x200B;类型数据分发。 使用数据分发模板，您可以限制分组值列表中的记录数。 在&#x200B;**[!UICONTROL Resources > Campaign management > Data distribution]**&#x200B;中，单击&#x200B;**[!UICONTROL New]**&#x200B;图标以创建新的&#x200B;**[!UICONTROL Data distribution]**。 有关数据分发的更多信息，
 

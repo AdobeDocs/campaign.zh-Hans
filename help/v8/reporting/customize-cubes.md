@@ -6,7 +6,7 @@ feature: Reporting
 role: Data Engineer
 level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
-source-git-commit: 1c879c7803c346d4b602089a22c2639eb83e82be
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1438'
 ht-degree: 2%
@@ -70,7 +70,7 @@ Adobe Campaign还提供了自动绑定的助手：可以将值划分为N组，�
 
 您可以根据所需的间隔将值分组到多个范围中。
 
-要手动定义范围，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并选择&#x200B;**[!UICONTROL Define a range]** ：
+要手动定义范围，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并选择&#x200B;**[!UICONTROL Define a range]**：
 
 然后指定下限和上限，并单击&#x200B;**[!UICONTROL Ok]**&#x200B;进行确认。
 

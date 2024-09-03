@@ -5,7 +5,7 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 3%
@@ -59,12 +59,12 @@ ht-degree: 3%
 
 ### 优惠引擎的参数 {#parameters-for-calling-offer-engine}
 
-* **[!UICONTROL Space]** ：必须选择优惠环境的空间才能激活优惠引擎。
-* **[!UICONTROL Category]** ：用于对优惠进行排序的特定文件夹。 如果未指定类别，则除非选择了主题，否则选件引擎将会考虑环境中包含的所有选件。
-* **[!UICONTROL Themes]** ：在类别中上游定义的关键字。 这些功能用作过滤器，允许您通过在一组类别中选择选件来优化要呈现的选件数量。
-* **[!UICONTROL Number of propositions]** ：引擎返回的可插入到投放主体的选件数。 如果未将选件插入到消息中，则仍会生成选件，但不会显示选件。
-* **[!UICONTROL Exclude non-eligible recipients]** ：通过此选项，您可以激活或取消激活对没有足够的合格优惠的收件人的排除。 合格建议的数目可能低于请求的建议数目。 如果选中此框，则将从投放中排除没有足够建议的收件人。 如果不选择此选项，则不会排除这些收件人，但他们不会具有所请求的建议数量。
-* **[!UICONTROL Do not display anything if no offer is selected]** ：利用此选项可选择在某个建议不存在时如何处理消息。 选中此框后，将不显示缺少的建议的表示形式，并且此建议的消息中不会出现任何内容。 如果未选中该框，则在发送期间将取消邮件本身，收件人将不再收到任何邮件。
+* **[!UICONTROL Space]**：必须选择优惠环境的空间才能激活优惠引擎。
+* **[!UICONTROL Category]**：用于对优惠进行排序的特定文件夹。 如果未指定类别，则除非选择了主题，否则选件引擎将会考虑环境中包含的所有选件。
+* **[!UICONTROL Themes]**：在类别中上游定义的关键字。 这些功能用作过滤器，允许您通过在一组类别中选择选件来优化要呈现的选件数量。
+* **[!UICONTROL Number of propositions]**：引擎返回的可插入到投放主体的选件数。 如果未将选件插入到消息中，则仍会生成选件，但不会显示选件。
+* **[!UICONTROL Exclude non-eligible recipients]**：通过此选项，您可以激活或取消激活对没有足够的合格优惠的收件人的排除。 合格建议的数目可能低于请求的建议数目。 如果选中此框，则将从投放中排除没有足够建议的收件人。 如果不选择此选项，则不会排除这些收件人，但他们不会具有所请求的建议数量。
+* **[!UICONTROL Do not display anything if no offer is selected]**：通过此选项，可选择在某个建议不存在时如何处理消息。 选中此框后，将不显示缺少的建议的表示形式，并且此建议的消息中不会出现任何内容。 如果未选中该框，则在发送期间将取消邮件本身，收件人将不再收到任何邮件。
 
 ## 在工作流中发送优惠{#offer-via-wf}
 
@@ -100,11 +100,11 @@ ht-degree: 3%
 1. 指定要添加的建议标识符和标签。
 1. 指定选件选择。 对此有两种可能的选项：
 
-   * **[!UICONTROL Search for the best offer in a category]** ：选中此选项并指定优惠引擎调用参数（优惠空间、类别或主题、联系日期、要保留的优惠数量）。 引擎将根据这些参数自动计算要添加的选件。 我们建议填写&#x200B;**[!UICONTROL Category]**&#x200B;或&#x200B;**[!UICONTROL Theme]**&#x200B;字段，而不是同时填写两者。
+   * **[!UICONTROL Search for the best offer in a category]**：选中此选项并指定优惠引擎调用参数（优惠空间、类别或主题、联系日期、要保留的优惠数量）。 引擎将根据这些参数自动计算要添加的选件。 我们建议填写&#x200B;**[!UICONTROL Category]**&#x200B;或&#x200B;**[!UICONTROL Theme]**&#x200B;字段，而不是同时填写两者。
 
      ![](assets/int_enrichment_offer3.png)
 
-   * **[!UICONTROL A pre-defined offer]** ：选中此选项并指定优惠空间、特定优惠和联系日期，以直接配置要添加的优惠，而无需调用优惠引擎。
+   * **[!UICONTROL A pre-defined offer]**：选中此选项并指定优惠空间、特定优惠和联系日期，以直接配置要添加的优惠，而无需调用优惠引擎。
 
      ![](assets/int_enrichment_offer4.png)
 

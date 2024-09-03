@@ -5,10 +5,10 @@ feature: Privacy
 role: Admin
 level: Beginner
 exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '942'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -101,7 +101,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 此外，一个作业可以在多个实例上运行。因此，将为一个作业创建多个文件。例如，如果某个请求具有两个命名空间，并且在三个实例上运行，则总共发送六个文件。每个命名空间和实例一个文件。
 
-文件名的模式为：`<InstanceName>-<NamespaceId>-<ReconciliationKey>.xml`
+文件名的模式为： `<InstanceName>-<NamespaceId>-<ReconciliationKey>.xml`
 
 * **InstanceName**：Campaign 实例名称
 * **NamespaceId**：已使用的命名空间的身份服务命名空间 ID

@@ -5,10 +5,10 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: 0b4fc6da8761d2efe57d8eb0ff87cd11d0e2d250
+source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 100%
+source-wordcount: '675'
+ht-degree: 93%
 
 ---
 
@@ -49,7 +49,23 @@ ht-degree: 100%
       + [添加密送地址](send/email-bcc.md)
       + [定义其他电子邮件参数](send/email-parameters.md)
       + [发送和监测电子邮件](send/send.md)
-   + [短信](send/sms.md)
+   + 短信 {#sms}
+      + [短信入门](send/sms/sms.md)
+      + 配置短信渠道{#config-sms}
+         + [SMPP外部帐户设置](send/sms/smpp-external-account.md)
+         + [短信渠道特征](send/sms/sms-channel.md)
+         + [验证SMPP连接](send/sms/smpp-connection.md)
+         + [独立实例](send/sms/sms-standalone-instance.md)
+         + [中间源基础结构](send/sms/sms-mid-sourcing.md)
+         + [SMPP连接器说明](send/sms/smpp-connector-delivery.md)
+      + 创建短信{#create-sms}
+         + [短信投放设置](send/sms/sms-delivery-settings.md)
+         + [定义内容](send/sms/sms-content.md)
+         + [选择受众](send/sms/sms-audience.md)
+      + 验证并发送短信{#validate-sms}
+         + [发送短信验证](send/sms/sms-proofs.md)
+         + [发送给受众](send/sms/sms-send.md)
+      + [监控和跟踪短信](send/sms/sms-monitor.md)
    + 推送通知 {#push}
       + [创建和发送推送通知](send/push.md)
       + 富媒体推送{#rich-push}
@@ -67,10 +83,10 @@ ht-degree: 100%
       + [使用个性化块](send/personalization-blocks.md)
       + [创建条件](send/conditions.md)
    + 验证和发送投放{#validate}
-   + [预览和验证](send/preview-and-proof.md)
-   + [投放分析](send/delivery-analysis.md)
-   + [配置和发送投放](send/configure-and-send.md)
-   + [发送时间优化](send/predictive.md)
+      + [预览和验证](send/preview-and-proof.md)
+      + [投放分析](send/delivery-analysis.md)
+      + [配置和发送投放](send/configure-and-send.md)
+      + [发送时间优化](send/predictive.md)
    + 失败、退回和隔离{#failures}
       + [隔离](send/quarantines.md)
       + [投放失败](send/delivery-failures.md)

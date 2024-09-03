@@ -5,7 +5,7 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
+source-git-commit: c508c80bea39e4fc32786d92d06651a1f91ca697
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 100%
@@ -55,7 +55,7 @@ Adobe Campaign v8 附带以下投放渠道：
 
 ### 移动渠道 {#gs-channel-sms}
 
-Adobe Campaign 允许您向移动设备投放[短信](../send/sms.md)和 [LINE](../send/line.md) 消息。
+Adobe Campaign 允许您向移动设备投放[短信](../send/sms/sms.md)和 [LINE](../send/line.md) 消息。
 
 对于短信消息，您可以仅以文本格式创建、修改和个性化消息。您还可以在发送短信消息之前进行预览。
 

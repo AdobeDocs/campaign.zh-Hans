@@ -4,10 +4,11 @@ description: 了解如何设置短信投放的内容
 feature: SMS
 role: User
 level: Beginner, Intermediate
-source-git-commit: 36bb1e2c9e2391065360c3cd2ad97612373ec0c2
+badge: label="有限发布版" type="Informative"
+source-git-commit: a184a29301f2bd739bc3fd1373fc8cfad58f0393
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 0%
+source-wordcount: '236'
+ht-degree: 1%
 
 ---
 

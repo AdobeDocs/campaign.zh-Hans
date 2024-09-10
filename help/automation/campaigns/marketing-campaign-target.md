@@ -5,9 +5,9 @@ description: 了解如何定义营销活动的受众
 feature: Campaigns, Audiences
 role: User
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: d292c20e520b2466f782ccf86eb9d61e01915563
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1470'
 ht-degree: 1%
 
 ---
@@ -165,6 +165,10 @@ To build the delivery target, you can define filtering criteria for the recipien
   您可以通过单击&#x200B;**[!UICONTROL Actions]**&#x200B;图标并选择&#x200B;**[!UICONTROL Unconditional]**&#x200B;停止来无条件停止工作流。 此操作终止您的营销活动工作流。
 
   ![](assets/stop_unconditional.png)
+
+  >[!CAUTION]
+  >
+  >仅限管理员用户无条件停止。
 
 ## 添加对照组 {#add-a-control-group}
 

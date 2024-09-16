@@ -4,9 +4,9 @@ description: 最新 Campaign v8 版本
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: 07e0bfdade0356eedb24641259aa754fdb1c6155
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '532'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Campaign 会定期更新。这种定期更新旨在让您掌握最新、�
 
 ## 版本 8.7.2 {#release-8-7-2}
 
-_2024年9月3日_
+_2024 年 9 月 3 日_
 
 >[!AVAILABILITY]
 >
@@ -31,11 +31,11 @@ _2024年9月3日_
 
 ### 新增功能 {#new-8-7-2}
 
-* **新SMS发送连接器** - SMS发送连接器已进行现代化和改进，可启用收发器模式SMPP连接、启用永久性SMPP连接，并确保与从Adobe Campaign Standard过渡的环境之间有更好的兼容性。 新的短信外部帐户现在可用于所有新的短信实施。 现有实施仍受支持，但建议迁移到此新的现代化扩展连接器。 [了解更多信息](../send/sms/sms.md)。
+* **新短信发送连接器** - 短信发送连接器经过现代化改造和改进，可启用收发器模式 SMPP 连接、启用持久 SMPP 连接，并确保从 Adobe Campaign Standard 过渡的环境具有更好的兼容性。新的短信外部帐户现在可用于所有新的短信实施。现有实施仍受支持，但建议迁移到此新的现代化扩展连接器。[了解更多信息](../send/sms/sms.md)。
 
-* **富推送通知(GA)** — 您现在可以发送富推送通知。 富媒体推送通知是移动通知的一种增强形式，它超越了简单的文本消息，融合了图像、交互式按钮或其他富媒体内容等多媒体元素。在此版本中，您可以为 iOS 和 Android 应用程序提供一组富媒体推送通知模板。[了解更多信息](../send/rich-push-android.md)。
+* **富媒体推送通知 (GA)** - 您现在可以发送富媒体推送通知。富媒体推送通知是移动通知的一种增强形式，它超越了简单的文本消息，融合了图像、交互式按钮或其他富媒体内容等多媒体元素。在此版本中，您可以为 iOS 和 Android 应用程序提供一组富媒体推送通知模板。[了解更多信息](../send/rich-push-android.md)。
 
-* **品牌策略** — 品牌策略选项现在可用于所有渠道，包括短信和直邮。 [了解更多信息](https://experienceleague.adobe.com/docs/experience-cloud/campaign/branding/branding-gs.html?lang=zh-hans){target="_blank"}
+* **品牌化** - 品牌化选项现在可用于所有渠道，包括短信和直邮。[了解更多信息](https://experienceleague.adobe.com/docs/experience-cloud/campaign/branding/branding-gs.html?lang=zh-hans){target="_blank"}
 
 
 ### 修复 {#fixes-8-7-2}

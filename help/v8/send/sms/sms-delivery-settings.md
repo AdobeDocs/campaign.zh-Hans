@@ -5,13 +5,13 @@ feature: SMS
 role: User
 level: Beginner, Intermediate
 badge: label="有限发布版" type="Informative"
-source-git-commit: a184a29301f2bd739bc3fd1373fc8cfad58f0393
+exl-id: c4d500ef-2339-491f-9ae2-9bfaf72088a9
+source-git-commit: 8dffc24ff859ded70ea9c5b9ede39512c1543e74
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # 短信投放设置 {#sms-settings}
 
@@ -55,12 +55,12 @@ ht-degree: 0%
 
 * **[!UICONTROL Transmission mode]**
 
-此字段指示您要传输的SMS类型：普通消息或闪存消息，存储在移动设备或SIM卡上。 此设置在SUBMIT_SM PDU的dest_addr_subunit可选字段中传输。
+  此字段指示您要传输的SMS类型：普通消息或闪存消息，存储在移动设备或SIM卡上。 此设置在SUBMIT_SM PDU的dest_addr_subunit可选字段中传输。
 
-* **Flash**&#x200B;将该值设置为1。 它会发送一条在手机上弹出且未存储在内存中的闪存消息。
-* **Normal**&#x200B;将该值设置为0。 它会发送一条正常消息。
-* **Save on mobile**&#x200B;将该值设置为2。 它告知手机将短信存储在内存中。
-* **保存在终端**&#x200B;上将值设置为3。 它告知手机将短信存储在SIM卡中。
+   * **Flash**&#x200B;将该值设置为1。 它会发送一条在手机上弹出且未存储在内存中的闪存消息。
+   * **Normal**&#x200B;将该值设置为0。 它会发送一条正常消息。
+   * **Save on mobile**&#x200B;将该值设置为2。 它告知手机将短信存储在内存中。
+   * **保存在终端**&#x200B;上将值设置为3。 它告知手机将短信存储在SIM卡中。
 
 * **[!UICONTROL Priority, Communication type]**
 
@@ -103,7 +103,7 @@ ht-degree: 0%
 
 1. 例如，从“投放仪表板”或在&#x200B;**[!UICONTROL Explorer]**&#x200B;中的“投放”文件夹中创建新投放。  默认情况下，它将被标记为“电子邮件投放”。
 
-1. 选择您为短信发送创建的投放模板。 [在此了解详情](sms-mid-sourcing.md#sms-delivery-template)。
+1. 选择您为短信发送创建的投放模板。 [在此处了解详情](sms-mid-sourcing.md#sms-delivery-template)。
 
    ![](assets/sms_create.png){zoomable="yes"}
 

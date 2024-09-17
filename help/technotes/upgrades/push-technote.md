@@ -8,9 +8,9 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="也适用于Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="适用于Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: dffe082d5e31eda4ecfba369b92d8a2d441fca04
+source-git-commit: e7f0f20deb930be2a3b2f798f70d17644c646fb6
 workflow-type: tm+mt
-source-wordcount: '1630'
+source-wordcount: '1633'
 ht-degree: 1%
 
 ---
@@ -91,7 +91,7 @@ Adobe Campaign Classic v7和Adobe Campaign v8已支持用于发送推送通知�
 >
 >一旦将这些更改应用于您的所有服务器，所有向Android设备投放&#x200B;**新**&#x200B;推送通知都将使用HTTP v1 API。 正在重试、进行中和正在使用的现有推送投放仍使用HTTP（旧版）API。 请在以下部分了解如何更新它们。
 
-### 更新现有模板 {#fcm-transition-update}
+#### 更新现有模板 {#fcm-transition-update}
 
 过渡HTTP v1完成后，您必须为Android推送通知更新&#x200B;**投放模板**&#x200B;以增加批处理消息数量。 为此，请浏览到Android投放模板的属性，然后在&#x200B;**投放**&#x200B;选项卡中，将[消息批次数量](../../v8/send/configure-and-send.md#delivery-batch-quantity)设置为&#x200B;**256**。 将此更改应用于您的Android投放使用的所有投放模板，以及您所有现有的Android投放。
 
@@ -99,16 +99,16 @@ Adobe Campaign Classic v7和Adobe Campaign v8已支持用于发送推送通知�
 
 * 作为托管Cloud Service或托管客户，请联系Adobe以更新现有Android交付模板。
 
-* 对于内部部署环境，请下载并运行`fcm-httpv1-migration.js`脚本，如下所述。
+* 对于内部部署环境，请下载`fcm-httpv1-migration.js`脚本并运行它，如下所述。
 
-  下载[fcm-httpv1-migration.js](assets/do-not-localize/fcm-httpv1-migration.js)
+  下载[fcm-httpv1-migration.zip](assets/do-not-localize/fcm-httpv1-migration.zip)
 
   >[!CAUTION]
   >
   >脚本必须在营销、中间源和实时环境中执行。
 
 
-  +++更新现有投放和模板的步骤
+  +++更新现有投放和模板的步骤（仅限内部部署）
 
   要修补在升级到支持HTTP v1的版本之前创建的所有投放和投放模板，请执行以下步骤：
 

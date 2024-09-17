@@ -8,7 +8,7 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="也适用于Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="适用于Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: e7f0f20deb930be2a3b2f798f70d17644c646fb6
+source-git-commit: a6a1af4e0255a2fec359c415cbbf45da2e4baf67
 workflow-type: tm+mt
 source-wordcount: '1633'
 ht-degree: 1%
@@ -101,7 +101,7 @@ Adobe Campaign Classic v7和Adobe Campaign v8已支持用于发送推送通知�
 
 * 对于内部部署环境，请下载`fcm-httpv1-migration.js`脚本并运行它，如下所述。
 
-  下载[fcm-httpv1-migration.zip](assets/do-not-localize/fcm-httpv1-migration.zip)
+  下载[fcm-httpv1-migration.zip](assets/do-not-localize/fcm-httpv1-migration-js.zip)
 
   >[!CAUTION]
   >

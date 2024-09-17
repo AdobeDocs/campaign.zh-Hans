@@ -8,9 +8,9 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="也适用于Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="适用于Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: 4ef40ff971519c064b980df8235188c717855f27
+source-git-commit: dffe082d5e31eda4ecfba369b92d8a2d441fca04
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: '1630'
 ht-degree: 1%
 
 ---
@@ -56,6 +56,8 @@ Adobe Campaign Classic v7和Adobe Campaign v8已支持用于发送推送通知�
 
 * 作为Campaign Classic v7内部部署用户，您必须同时升级营销和实时执行服务器。 不影响中间源服务器。
 
+* 作为Campaign Classicv7内部部署或混合用户，检查您的Android路由外部帐户是否配置了`androidPushConnectorV2.js`。 [了解详情](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android)
+
 #### 过渡过程 {#fcm-transition-steps}
 
 要将环境移动到HTTP v1，请执行以下步骤：
@@ -84,12 +86,73 @@ Adobe Campaign Classic v7和Adobe Campaign v8已支持用于发送推送通知�
    | 数据消息 | N/A | validate_only |
    | 通知消息 | title，正文， android_channel_id，图标，声音，标记，颜色，点击操作，图像，滚动条，粘性，可见性，通知优先级，通知计数<br> | validate_only |
 
-1. 过渡HTTP v1完成后，您必须为Android推送通知更新&#x200B;**投放模板**&#x200B;以增加批处理消息数量。 为此，请浏览到Android投放模板的属性，然后在&#x200B;**投放**&#x200B;选项卡中，将[消息批次数量](../../v8/send/configure-and-send.md#delivery-batch-quantity)设置为&#x200B;**256**。 将此更改应用于您的Android投放使用的所有投放模板，以及您所有现有的Android投放。
-
 
 >[!NOTE]
 >
->所有这些更改应用于您的所有服务器后，交付给Android设备的所有新推送通知都将使用HTTP v1 API。 正在重试、进行中和正在使用的现有推送投放仍使用HTTP（旧版）API。
+>一旦将这些更改应用于您的所有服务器，所有向Android设备投放&#x200B;**新**&#x200B;推送通知都将使用HTTP v1 API。 正在重试、进行中和正在使用的现有推送投放仍使用HTTP（旧版）API。 请在以下部分了解如何更新它们。
+
+### 更新现有模板 {#fcm-transition-update}
+
+过渡HTTP v1完成后，您必须为Android推送通知更新&#x200B;**投放模板**&#x200B;以增加批处理消息数量。 为此，请浏览到Android投放模板的属性，然后在&#x200B;**投放**&#x200B;选项卡中，将[消息批次数量](../../v8/send/configure-and-send.md#delivery-batch-quantity)设置为&#x200B;**256**。 将此更改应用于您的Android投放使用的所有投放模板，以及您所有现有的Android投放。
+
+您还可以更新在升级到支持HTTP v1的版本之前创建的现有投放和投放模板。 要执行此操作，请执行以下操作：
+
+* 作为托管Cloud Service或托管客户，请联系Adobe以更新现有Android交付模板。
+
+* 对于内部部署环境，请下载并运行`fcm-httpv1-migration.js`脚本，如下所述。
+
+  下载[fcm-httpv1-migration.js](assets/do-not-localize/fcm-httpv1-migration.js)
+
+  >[!CAUTION]
+  >
+  >脚本必须在营销、中间源和实时环境中执行。
+
+
+  +++更新现有投放和模板的步骤
+
+  要修补在升级到支持HTTP v1的版本之前创建的所有投放和投放模板，请执行以下步骤：
+
+   1. 将现有的投放和投放模板导出到一个程序包中，以便在修补期间发生意外问题时能够恢复它们。
+   1. 在Posgresql中运行以下命令：
+
+      ```sql
+      pg_dump -Fp -f /sftp/<db_name>-nmsdelivery-before_rd_script.sql -t nmsdelivery -d <db_name>
+      ```
+
+   1. 默认情况下，脚本处于`dryrun`模式，您可以在该模式下启动脚本以检查是否需要修补某些投放。
+
+      命令
+
+      ```sql
+      nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js 
+      ```
+
+      输出
+
+      ```sql
+      ...
+      HH:MM:SS >   Processing delivery (id:123456,  label:'Deliver on Android - New', name:'DM1234')
+      HH:MM:SS >   Dry run: Would update androidCheckParams for delivery (id:123456,  label:'Deliver on Android - New', name:'DM1234')
+      HH:MM:SS >   Processing delivery (id:567890,  label:'Deliver on Android - New', name:'DM5678')
+      HH:MM:SS >   Dry run: Would update androidCheckParams for delivery (id:567890,  label:'Deliver on Android - New', name:'DM5678')
+      ...
+      HH:MM:SS >   Summary (XYZ processed deliverie(s) or delivery template(s)):
+      HH:MM:SS >>  - X had not patchable androidCheckParams formula!
+      HH:MM:SS >   - Y had androidCheckParams formula patched.
+      HH:MM:SS >   - Z ignored as alreading having androidCheckParams formula patched.
+      ```
+
+      >[!NOTE]
+      >
+      >需要手动更新`not patchable`投放。 可以在日志中找到他们的ID。
+
+   1. 在执行模式下通过以下方式运行脚本以更新投放：
+
+      ```sql
+      nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js -arg:run
+      ```
+
++++
 
 ### 这对我的Android应用程序有何影响？ {#fcm-apps}
 

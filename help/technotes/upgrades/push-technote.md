@@ -8,9 +8,9 @@ level: Experienced
 badge-v7: label="v7" type="Informative" tooltip="也适用于Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="适用于Campaign v8"
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
-source-git-commit: a6a1af4e0255a2fec359c415cbbf45da2e4baf67
+source-git-commit: aba0048e5aff1caa2067eb61d26548b08a3deb36
 workflow-type: tm+mt
-source-wordcount: '1633'
+source-wordcount: '1664'
 ht-degree: 1%
 
 ---
@@ -48,15 +48,19 @@ Adobe Campaign Classic v7和Adobe Campaign v8已支持用于发送推送通知�
 
 #### 先决条件 {#fcm-transition-prerequisites}
 
-* 对于Campaign Classicv7,20.3.1版本中添加了对HTTP v1的支持。 如果您的环境运行在旧版本上，则迁移到HTTP v1的先决条件是将环境升级到[最新的Campaign Classic内部版本](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}。 对于Campaign v8，所有版本都支持HTTP v1，无需升级。
-
 * 需要Android Firebase Admin SDK服务的帐户JSON文件才能将移动应用程序移动到HTTP v1。 请参阅[Google Firebase文档](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}以了解如何获取此文件。
 
-* 对于混合、托管和Managed Services部署，除了下面的过渡过程之外，请联系Adobe以更新实时(RT)执行服务器。 不影响中间源服务器。
+* 对于Campaign Classicv7,20.3.1版本中添加了对HTTP v1的支持。 如果您的环境运行在旧版本上，则迁移到HTTP v1的先决条件是将环境升级到[最新的Campaign Classic内部版本](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}。 对于Campaign v8，所有版本都支持HTTP v1，无需升级。
 
-* 作为Campaign Classic v7内部部署用户，您必须同时升级营销和实时执行服务器。 不影响中间源服务器。
+* 作为Campaign Classic v7内部部署用户，您必须同时升级营销和实时执行服务器。
 
-* 作为Campaign Classicv7内部部署或混合用户，检查您的Android路由外部帐户是否配置了`androidPushConnectorV2.js`。 [了解详情](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android)
+* 对于混合、托管和托管Cloud Service部署，除了下面的过渡过程之外，请联系Adobe以更新实时(RT)执行服务器。
+
+* 关于Android路由外部帐户：
+
+   * 作为Campaign Classicv7内部部署或混合用户，检查您的Android路由外部帐户是否配置了`androidPushConnectorV2.js`。 请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}以了解详情。
+
+   * 对于混合、托管和托管Cloud Service部署，还必须与Adobe客户关怀团队联系，以验证是否在Android路由中间源服务器的外部帐户中选择了`androidPushConnectorV2.js (nms)`连接器。
 
 #### 过渡过程 {#fcm-transition-steps}
 
@@ -105,7 +109,7 @@ Adobe Campaign Classic v7和Adobe Campaign v8已支持用于发送推送通知�
 
   >[!CAUTION]
   >
-  >脚本必须在营销、中间源和实时环境中执行。
+  >必须在营销实例上执行脚本。
 
 
   +++更新现有投放和模板的步骤（仅限内部部署）

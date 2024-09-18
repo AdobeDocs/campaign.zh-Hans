@@ -5,9 +5,9 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
+source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '677'
 ht-degree: 93%
 
 ---
@@ -207,7 +207,7 @@ ht-degree: 93%
       + [将 Campaign SDK 与您的应用程序集成 - 已弃用页面](config/push-config.md)
       + [外部帐户](config/external-accounts.md)
 + 开发人员资源 {#developer}
-   + [Campaign 数据模型](dev/datamodel.md)
+   + [Campaign数据模型](dev/datamodel.md)
    + 模式和表单{#shemas-forms}
       + [使用模式](dev/schemas.md)
       + [创建模式](dev/create-schema.md)

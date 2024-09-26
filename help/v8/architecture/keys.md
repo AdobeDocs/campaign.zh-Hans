@@ -5,9 +5,9 @@ feature: Configuration, FFDA
 role: Developer
 level: Intermediate
 exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
-source-git-commit: 202a0553f0c736086eca993b9647737732f57d07
+source-git-commit: 9d500f185a9e706b6558135978c4f8c79d92d0d4
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '572'
 ht-degree: 3%
 
 ---
@@ -55,7 +55,7 @@ Unicity Service附带专用的&#x200B;**[!UICONTROL Unicity alerting]**&#x200B;�
 ![](assets/wf-alert-activity.png)
 
 
-## 附加护栏{#duplicates-guardrails}
+## 附加护栏 {#duplicates-guardrails}
 
 Campaign提供了一组新护栏，以防止在[!DNL Snowflake]数据库中插入重复的键。
 
@@ -63,19 +63,19 @@ Campaign提供了一组新护栏，以防止在[!DNL Snowflake]数据库中插�
 >
 >从Campaign v8.3开始提供这些护栏。要检查您的版本，请参阅[此部分](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
-### 投放准备{#remove-duplicates-delivery-preparation}
+### 投放准备 {#remove-duplicates-delivery-preparation}
 
 在投放准备期间，Adobe Campaign会自动从受众中删除任何重复的UUID。 此机制可防止在准备投放时出现任何错误。 作为最终用户，您可以在投放日志中检查此信息：由于密钥重复，可以从主目标中排除某些收件人。 在这种情况下，将显示以下警告： `Exclusion of duplicates (based on the primary key or targeted records)`。
 
 ![](assets/exclusion-duplicates-log.png)
 
-### 更新工作流中的数据{#duplicates-update-data}
+### 更新工作流中的数据 {#duplicates-update-data}
 
 在[Enterprise (FFDA)部署](enterprise-deployment.md)的上下文中，不能选择内部密钥(UUID)作为字段来更新工作流中的数据。
 
 ![](assets/update-data-no-internal-key.png)
 
-### 查询包含重复项的架构{#query-with-duplicates}
+### 查询包含重复项的架构 {#query-with-duplicates}
 
 当工作流开始在架构上运行查询时，Adobe Campaign会检查[审核唯一性表](#unicity-wf)中是否报告了任何重复记录。 如果是这样，工作流会记录一条警告，因为对重复数据的后续操作可能会影响工作流结果。
 
@@ -86,3 +86,8 @@ Campaign提供了一组新护栏，以防止在[!DNL Snowflake]数据库中插�
 * 查询
 * 增量查询
 * 读取列表
+
+
+>[!NOTE]
+>
+>如果您要从其他Campaign版本进行过渡，则必须删除重复项、排除故障和清理数据，以避免影响您的过渡。

@@ -5,16 +5,16 @@ feature: Configuration, API, FFDA
 role: Developer
 level: Intermediate
 exl-id: 96693af9-50db-4298-ae02-c238d35e52b4
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 9d500f185a9e706b6558135978c4f8c79d92d0d4
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '322'
 ht-degree: 2%
 
 ---
 
 # Campaign API暂存机制
 
-在[企业(FFDA)部署](enterprise-deployment.md)的上下文中，不建议在性能（延迟和并发）方面引发单一调用。 批处理操作始终是首选操作。 为了提高性能，引入API将被重定向到本地数据库。
+在[企业(FFDA)部署](enterprise-deployment.md)的上下文中，不建议在性能（延迟和并发）方面引发单一调用。 除非您发送的数据量极低，否则必须使用批处理操作&#x200B;****。 为了提高性能，引入API将被重定向到本地数据库。
 
 默认情况下，某些内置架构启用了Campaign暂存功能。 我们也可以在任何自定义架构上启用它。 暂存机制简介：
 

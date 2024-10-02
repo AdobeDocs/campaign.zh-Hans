@@ -3,7 +3,7 @@ title: 创建定位工作流
 description: 了解如何在工作流中创建目标受众
 feature: Query Editor, Data Management
 exl-id: 27be9d5a-168c-470e-a480-f3c71858fc75
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 122d78e310e66d5f354ffbc86c27a2fbff007447
 workflow-type: tm+mt
 source-wordcount: '2252'
 ht-degree: 6%
@@ -106,7 +106,7 @@ ht-degree: 6%
 
 ![](assets/use-common-add-data-only.png)
 
-### 使用附加数据进行协调 {#reconciliation-with-additional-data}
+### 与其他数据协调 {#reconciliation-with-additional-data}
 
 在数据协调阶段(**[!UICONTROL Union]**、**[!UICONTROL Intersection]**&#x200B;等 活动)，您可以从其他列中选择用于数据协调的列。 要实现此目的，请在所选列上配置协调并指定主集。 然后，选择窗口下方的列中的列，如以下示例所示：
 

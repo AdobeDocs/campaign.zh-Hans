@@ -5,7 +5,7 @@ feature: Analytics Integration, Reporting
 role: Admin, User
 level: Beginner
 exl-id: 11370fb6-e192-4626-944e-b80a7496e50d
-source-git-commit: adfde71faebf3cec7e7b730c9753e6765aeadab0
+source-git-commit: 9ce5acd97e077105316c81029e3ccbc6fa4389dc
 workflow-type: tm+mt
 source-wordcount: '1308'
 ht-degree: 67%
@@ -108,7 +108,7 @@ ht-degree: 67%
    * **[!UICONTROL Unique Opens]**
    * **[!UICONTROL Unsubscribed]**
 
-   要了解如何配置&#x200B;**[!UICONTROL Success events]**，请参阅此[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html#admin-tools)
+   要了解如何配置&#x200B;**[!UICONTROL Success events]**，请参阅此[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event.html)
 
    ![](assets/analytics_connnector_8.png)
 

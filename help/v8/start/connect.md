@@ -5,9 +5,9 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 10b1113a20c11e0b97804f597cb0a48568fcae3d
+source-git-commit: 9ce5acd97e077105316c81029e3ccbc6fa4389dc
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '936'
 ht-degree: 15%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 15%
 
 1. 通过URL指定与Adobe Campaign应用程序服务器的连接。 使用计算机的DNS或别名或IP地址。
 
-   例如，您可以使用[`https://<machine>.<domain>.com`](https://myserver.adobe.com)类型URL。
+   例如，您可以使用`https://<machine>.<domain>.com`类型URL。
 
 1. 选中选项&#x200B;**[!UICONTROL Connect with an Adobe ID]**。
 

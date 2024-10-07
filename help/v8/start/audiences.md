@@ -5,9 +5,9 @@ feature: Audiences
 role: User
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: 99cb937a475997aae714a67b1f9f91c6bae932f4
+source-git-commit: 9ce5acd97e077105316c81029e3ccbc6fa4389dc
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '520'
 ht-degree: 17%
 
 ---
@@ -64,7 +64,7 @@ Adobe Campaign是一款用于收集和处理大量数据（包括个人信息和
 
 **相关主题**
 
-* [设计和执行特定于营销活动的工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/campaign-workflows.html){target="_blank"}
+* [设计和执行特定于营销活动的工作流](../../automation/workflow/campaign-workflows.md){target="_blank"}
 
 * [了解如何选择营销活动的受众](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans){target="_blank"}
 

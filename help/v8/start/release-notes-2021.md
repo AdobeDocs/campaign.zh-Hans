@@ -5,10 +5,10 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 5ac6bda9-86c8-4200-b285-6fee2a29039d
-source-git-commit: 4fecae16b2db0f174de6d77acf5b846906073aeb
+source-git-commit: 9ce5acd97e077105316c81029e3ccbc6fa4389dc
 workflow-type: tm+mt
 source-wordcount: '1581'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -121,7 +121,8 @@ _2021 年 9 月 7 日_
 
 **其他变更**
 
-* 之前已弃用的 Microsoft CRM 连接器（Office 365 和内部部署）已从界面中移除。[阅读更多](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-connectors/crm-ms-dynamics.html?lang=zh-Hans#configure-acc-for-microsoft)
+* 之前已弃用的 Microsoft CRM 连接器（Office 365 和内部部署）已从界面中移除。[阅读更多](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-ms-dynamics.html#configure-acc-for-microsoft)
+
 * 迁移到 Tomcat 8 后，更新了 IIS 设置脚本以修复 IIS 集成问题。(NEO-31019)
 * 添加了护栏，以仅允许[计费技术工作流](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/monitoring-processes.html?lang=zh-Hans#billing-report)在营销实例上运行。
 * 在工作流过渡的 **View population** 窗口的“data”和“schema”选项卡中，数据源标识已得到改进。

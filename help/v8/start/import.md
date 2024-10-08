@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '214'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Campaign 可帮助您将联系人添加到云数据库。您可以加载文件�
 
 [受众](audiences.md)入门
 
-了解Campaign [数据模型](../dev/datamodel.md)
+了解营销活动[数据模型](../dev/datamodel.md)
 
 ## 在工作流中导入用户档案
 

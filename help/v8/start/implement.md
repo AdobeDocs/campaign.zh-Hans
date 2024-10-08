@@ -6,9 +6,9 @@ role: User
 level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1148'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -100,7 +100,7 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
    Adobe Campaign 提供了预定义的数据模型。为了实施和自定义环境，您需要熟悉 Adobe Campaign 数据模型的内置表格以及它们彼此的关系。
 
-   [了解有关Campaign数据模型的更多信息](../dev/datamodel.md)。
+   [详细了解 Campaign 数据模型](../dev/datamodel.md)。
 
 ## 自定义实例{#implementation-custom-your-instance}
 
@@ -110,7 +110,7 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
    Adobe Campaign 提供用来识别数据的常用模式，例如：收件人、投放日志、订阅等。
 
-   请参阅本节以了解有关[Campaign内置数据模型](../dev/datamodel.md)的更多信息。
+   请参阅本部分详细了解[营销活动内置数据模型](../dev/datamodel.md)。
 
    您可以扩展现有模式或从头开始创建新模式。请参阅[此页面](../dev/customize.md)以了解详情。
 

@@ -5,7 +5,7 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: cf292ecd7d30862d7d195536ecc5be709fe037b3
+source-git-commit: 1bf3c4b2d0c8d9b1bdbc82a9047c52c0d80cd997
 workflow-type: tm+mt
 source-wordcount: '1525'
 ht-degree: 4%
@@ -28,7 +28,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->本节中介绍的步骤假定所有目标收件人及其用户档案都存储在数据库中，外部投放除外（请参阅[选择外部收件人](steps-defining-the-target-population.md#selecting-external-recipients)）。
+>本节中介绍的步骤假定所有目标收件人及其用户档案都存储在数据库中，外部投放除外。 请参阅[选择外部收件人](#selecting-external-recipients)。
 
 ## 创建投放 {#create-the-delivery}
 
@@ -40,7 +40,7 @@ ht-degree: 4%
 
    为您安装的每个渠道提供了一个内置模板：直邮、电子邮件、电话、移动渠道(SMS)、X(Twitter)等。 列表中可用的渠道取决于您的许可协议。
 
-   您可以创建新的投放模板，以预配置特定参数以满足您的需求。 有关模板的更多信息，请参阅[此章节](about-templates.md)。
+   您可以创建新的投放模板，以预配置特定参数以满足您的需求。 有关模板的更多信息，请参阅[此章节](../send/create-templates.md)。
 
 1. 在&#x200B;**[!UICONTROL Label]**&#x200B;字段中输入投放名称。
 
@@ -74,7 +74,7 @@ ht-degree: 4%
 
 ### 选择投放的主要收件人 {#select-the-main-target}
 
-在大多数情况下，主目标会从Adobe Campaign数据库（默认模式）中提取。 但是，收件人也可以存储在[外部文件](steps-defining-the-target-population.md#selecting-external-recipients)中。
+在大多数情况下，主目标会从Adobe Campaign数据库（默认模式）中提取。 但是，收件人也可以存储在[外部文件](#selecting-external-recipients)中。
 
 要选择投放的收件人，请执行以下步骤：
 
@@ -157,7 +157,7 @@ ht-degree: 4%
 
 * **[!UICONTROL Exclude duplicate addresses during delivery]**：此选项默认处于活动状态，在传递期间会删除重复的电子邮件地址。 所应用的策略可能会因如何使用Adobe Campaign以及数据库中的数据类型而有所不同。 可以为每个投放模板配置选项的值。
 * 列入阻止列表 **[!UICONTROL Exclude recipients who no longer want to be contacted]** ，即电子邮件地址处于状态（“选择退出”）的收件人。 为了遵守电子营销的职业道德，必须继续选择此选项。
-* **[!UICONTROL Exclude quarantined recipients]**：利用此选项可从目标中排除任何包含已隔离地址的用户档案。 我们强烈建议保持选中此选项。 在[本节](understanding-quarantine-management.md)中了解有关隔离管理的更多信息。
+* **[!UICONTROL Exclude quarantined recipients]**：利用此选项可从目标中排除任何包含已隔离地址的用户档案。 我们强烈建议保持选中此选项。 在[本节](../send/quarantines.md)中了解有关隔离管理的更多信息。
 * **[!UICONTROL Limit delivery]**&#x200B;到给定的消息数。 使用此选项可输入要发送的最大消息数。 如果目标受众超出指示的消息数，则会随机选择消息并将其应用于目标。 若要发送所有邮件，请将此值保留为“0”。
 * **[!UICONTROL Keep duplicate records (same identifier)]**：此选项允许向满足多个定位条件的收件人发送多个投放。
 

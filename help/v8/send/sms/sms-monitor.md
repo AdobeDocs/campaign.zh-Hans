@@ -4,14 +4,13 @@ description: 关于短信投放的监控和跟踪
 feature: SMS
 role: User
 level: Beginner, Intermediate
-badge: label="有限发布版" type="Informative"
-source-git-commit: a184a29301f2bd739bc3fd1373fc8cfad58f0393
+exl-id: 42be45db-3a90-4ad0-896d-f082afff1f8e
+source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
-
 
 # 监控和跟踪短信
 
@@ -52,4 +51,3 @@ ht-degree: 0%
 SMS的失败类型和失败原因与电子邮件相同。
 
 详细了解[投放失败](../delivery-failures.md)，特别是有关[SMS隔离](../delivery-failures.md#sms-quarantines)。
-

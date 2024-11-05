@@ -5,7 +5,7 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
-source-git-commit: 19c42bcd2a96173f3d33e3e259192107b5e64c6c
+source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 定义消息内容后，您可以使用测试用户档案对其进行预览和测试。 如果插入[个性化内容](personalize.md)，则可以使用测试用户档案数据检查此内容在消息中的显示方式。 此外，要检测消息内容或个性化设置中可能出现的错误，请向测试用户档案发送校样。 每次进行更改时都应发送校样，以验证最新内容。
 
-## 内容预览{#preview-content}
+## 内容预览 {#preview-content}
 
 在发送校样之前，最佳做法是在投放窗口的预览部分中检查消息内容。
 
@@ -68,7 +68,7 @@ ht-degree: 3%
 
 * 使用&#x200B;**[!UICONTROL Specific target and Seed addresses]**&#x200B;选项将种子地址和特定的电子邮件地址组合在一起。 随后，将在两个单独的子选项卡中定义相关配置。
 
-### 发送验证{#proofs-send}
+### 发送校样 {#proofs-send}
 
 要发送消息校样，请执行以下步骤：
 
@@ -88,7 +88,7 @@ ht-degree: 3%
 >
 >在发送的验证中，指向镜像页面的链接无效。 它仅在最终邮件中激活。
 
-### 校对属性{#proofs-properties}
+### 校对属性 {#proofs-properties}
 
 验证属性在投放属性窗口的&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中设置。 浏览到&#x200B;**[!UICONTROL Proof properties...]**&#x200B;链接以定义参数和校样的标签。 您可以选择保留：
 
@@ -103,6 +103,6 @@ ht-degree: 3%
 
 ## 操作说明视频 {#video-proof}
 
-了解如何为电子邮件投放发送并确认验证。
+了解如何为电子邮件投放发送并验证校样。
 
 >[!VIDEO](https://video.tv.adobe.com/v/333404)

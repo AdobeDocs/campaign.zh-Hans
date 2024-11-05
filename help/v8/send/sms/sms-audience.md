@@ -4,14 +4,13 @@ description: 了解如何设置短信投放的受众
 feature: SMS
 role: User
 level: Beginner, Intermediate
-badge: label="有限发布版" type="Informative"
-source-git-commit: a184a29301f2bd739bc3fd1373fc8cfad58f0393
+exl-id: e0603a4d-cde1-4199-a164-bf0c992ba937
+source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 2%
+source-wordcount: '457'
+ht-degree: 1%
 
 ---
-
 
 # 选择短信投放的受众 {#sms-audience}
 

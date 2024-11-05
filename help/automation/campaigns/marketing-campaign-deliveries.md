@@ -5,7 +5,7 @@ description: 了解有关营销活动投放的更多信息
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 role: User
 exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 1%
@@ -24,9 +24,9 @@ ht-degree: 1%
 
 * 通过营销活动仪表板中的&#x200B;**[!UICONTROL Add a delivery]**&#x200B;链接。
 
-![](assets/campaign_op_add_delivery.png)
+  ![](assets/campaign_op_add_delivery.png)
 
-保存后，投放即会添加到活动仪表板。
+  保存后，投放即会添加到活动仪表板。
 
 * 通过添加投放，在营销活动工作流的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡中。
 

@@ -5,10 +5,10 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
-workflow-type: ht
-source-wordcount: '677'
-ht-degree: 100%
+source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,8 @@ ht-degree: 100%
    + [活动入门](start/campaigns.md)
    + [营销活动编排 >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans)
 + 发送消息 {#send}
-   + [消息入门](start/create-message.md)
+   + [消息入门](start/gs-message.md)
+   + [创建您的第一个投放](start/create-message.md)
    + 电子邮件 {#emails}
       + [设计和验证电子邮件](send/email.md)
       + [链接到镜像页面](send/mirror-page.md)
@@ -83,7 +84,7 @@ ht-degree: 100%
       + [使用个性化块](send/personalization-blocks.md)
       + [创建条件](send/conditions.md)
    + 验证和发送投放{#validate}
-      + [预览和验证](send/preview-and-proof.md)
+      + [预览和校样](send/preview-and-proof.md)
       + [投放分析](send/delivery-analysis.md)
       + [配置和发送投放](send/configure-and-send.md)
       + [发送时间优化](send/predictive.md)

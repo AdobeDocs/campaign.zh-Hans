@@ -1,177 +1,203 @@
 ---
-title: 开始使用消息
-description: 开始使用消息
+title: 创建您的第一个投放
+description: 创建您的第一个投放
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: c508c80bea39e4fc32786d92d06651a1f91ca697
-workflow-type: ht
-source-wordcount: '1319'
-ht-degree: 100%
+source-git-commit: cf292ecd7d30862d7d195536ecc5be709fe037b3
+workflow-type: tm+mt
+source-wordcount: '1525'
+ht-degree: 4%
 
 ---
 
-# 消息入门 {#gs-ac-audiences}
+# 创建您的第一个投放 {#create-a-msg}
 
-## 投放渠道 {#gs-ac-channels}
+在本页面中，您将了解如何创建一次性投放。 您可以创建其他类型的投放以解决您的用例。 在[此页面](gs-message.md)中进一步了解不同类型的投放以及如何创建它们。
 
-借助 Adobe Campaign，您可以发送跨渠道活动内容，包括电子邮件、短信、推送通知和直邮，并使用各种专门的报告衡量其有效性。这些消息通过投放设计和发送，并且可以针对每个收件人进行个性化。
+创建一次性投放的关键步骤包括：
 
-核心功能包括定位、消息定义和个性化、通信执行和相关的运营报告。主要功能接入点是投放助手。此接入点可导向 Adobe Campaign 涵盖的多种功能。
+1. **创建新投放**。 [了解更多信息](#create-the-delivery)
 
-Adobe Campaign v8 附带以下投放渠道：
+1. **定义投放内容**。 [了解更多信息](#content-of-the-delivery)
 
-* **电子邮件渠道**：电子邮件投放可让您向目标群体发送个性化电子邮件。[了解更多信息](#gs-channel-email)
+1. **选择目标群体**。 [了解更多信息](#target-population)
 
-* **移动渠道**：移动渠道投放可让您向目标群体的移动设备发送个性化消息。[了解更多信息](#gs-channel-sms)
-
-* **移动应用程序渠道**：移动应用程序投放可让您向 iOS 和 Android 设备发送通知。[了解更多信息](#gs-channel-push)
-
-* **直邮渠道**：直邮投放允许您生成包含目标群体数据的提取文件。[了解更多信息](#gs-channel-direct)
-
-
-  有关其他渠道的介绍，请参见[本部分](#other-channels)。
-
-  >[!NOTE]
-  >
-  >可用渠道的数量取决于您的合同。请核实您的许可协议。
-
-## 选择您的渠道 {#gs-channel}
-
-### 电子邮件渠道 {#gs-channel-email}
-
-[电子邮件渠道](../send/direct-mail.md)是 Adobe Campaign 中的核心渠道之一，允许您向特定目标计划和发送个性化电子邮件。
-
-您可以发送不同类型的电子邮件：
-
-* 单次发送电子邮件：可向定义的目标发送一次性电子邮件。它们通常用于推广某些只需准备并发送一次的特定内容（新闻稿、促销电子邮件等）。
-* 定期电子邮件：在营销活动中，定期发送相同的电子邮件，并定期汇总每次发送及其报告。发送同一电子邮件，但通常会发送给符合发送日期条件的不同目标。常见的示例是生日电子邮件。有关详细信息，请参阅[定期投放](../../automation/workflow/recurring-delivery.md)。
-* 事务性电子邮件：根据客户行为触发的单一电子邮件。请参阅[事务性消息](../send/transactional.md)。
-
-要了解投放使用情况和建议，请参阅 Adobe Campaign Classic [投放最佳实践](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/delivery-best-practices.html?lang=zh-Hans#sending-messages){target="_blank"}
-
-有关不同类型投放的详细信息，请参阅[此部分](#types-of-deliveries)。
-
-### 移动渠道 {#gs-channel-sms}
-
-Adobe Campaign 允许您向移动设备投放[短信](../send/sms/sms.md)和 [LINE](../send/line.md) 消息。
-
-对于短信消息，您可以仅以文本格式创建、修改和个性化消息。您还可以在发送短信消息之前进行预览。
-
-对于 LINE 消息，您可以发送文本/图像和链接。
-
-要向手机投放短信和 LINE 消息，您需要：
-
-* 在 **[!UICONTROL Mobile (SMS)]** 渠道或 **[!UICONTROL LINE]** 渠道上配置外部帐户。
-* 正确链接到此外部帐户的短信或 LINE 投放模板。
-
-
-### 推送通知渠道 {#gs-channel-push}
-
-您可以使用 Adobe Campaign 向 iOS 和 Android 移动设备发送特定应用程序的个性化和细分[推送通知](../send/push.md)。完成配置和集成步骤后，即可通过 Adobe Campaign 创建和发送 iOS 和 Android 投放。您还可以设计包含图像或视频的丰富通知并将其发送到 Android 设备。
-
-### 直邮渠道 {#gs-channel-direct}
-
-[直邮](../send/direct-mail.md)是一种离线渠道，允许您创建、个性化和生成外部文件，以便与您的直邮提供商共享。使用此渠道可在客户历程中编排在线和离线渠道。
-
-在准备直邮投放时，Adobe Campaign 会生成一个文件，其中包含了所有定向的用户档案和选定的联系信息（例如邮政地址）。然后，您可以将此文件发送给直邮提供商，由其负责发送纸质信函。
-
-
-### 其他渠道 {#other-channels}
-
-Adobe Campaign 还附带一个电话投放模板，用于创建外部投放。使用此渠道意味着您实施专用方法来处理输出文件。配置步骤与[直邮渠道](../send/direct-mail.md)相同。
+然后，您可以准备、测试、发送和监控消息。
 
 >[!NOTE]
 >
->电话渠道不是内置渠道。实施时需要咨询 Adobe Consulting 或 Adobe 合作伙伴。有关更多信息，请联系您的 Adobe 代表。
+>本节中介绍的步骤假定所有目标收件人及其用户档案都存储在数据库中，外部投放除外（请参阅[选择外部收件人](steps-defining-the-target-population.md#selecting-external-recipients)）。
 
-“其他”类型投放使用特定技术模板，不会执行流程：这使其能够管理在 Adobe Campaign 平台外部执行的营销操作。
+## 创建投放 {#create-the-delivery}
 
-此渠道没有特定的机制。该渠道是一般渠道，与在 Adobe Campaign 中提供的任何其他通信渠道一样，具有自己的外部帐户路由选项、投放模板类型和营销活动工作流活动。 此渠道仅用于描述性目的，例如定义要跟踪在 Adobe Campaign 以外的工具中执行的营销活动的目标投放。
+要创建投放，请执行以下步骤：
 
-## 选择投放类型 {#types-of-deliveries}
+1. 单击投放列表上方的&#x200B;**[!UICONTROL Create]**。 创建新投放时，必须选择投放渠道。 为此，请从&#x200B;**[!UICONTROL Delivery template]**&#x200B;字段的下拉列表中选择相应的投放模板。
 
-Campaign 中有三种类型的投放对象：
+   ![](../send/assets/select-the-new-template.png)
 
-### 单个投放 {#single-delivery}
+   为您安装的每个渠道提供了一个内置模板：直邮、电子邮件、电话、移动渠道(SMS)、X(Twitter)等。 列表中可用的渠道取决于您的许可协议。
 
-**投放**&#x200B;是一个独立投放对象，只执行一次。可以重复再次准备投放，但如果投放处于最终状态（取消、停止、完成），就无法再重复使用。
+   您可以创建新的投放模板，以预配置特定参数以满足您的需求。 有关模板的更多信息，请参阅[此章节](about-templates.md)。
 
-可以从投放列表创建投放，也可以通过[投放](../../automation/workflow/delivery.md)活动在工作流中创建投放。
+1. 在&#x200B;**[!UICONTROL Label]**&#x200B;字段中输入投放名称。
 
-工作流还可根据要使用的渠道类型提供特定的投放活动。有关这些活动的详细信息，请参阅[此部分](../../automation/workflow/cross-channel-deliveries.md)。
+   （可选）您还可以为投放分配投放代码。 投放的名称及其代码在投放列表中可见，但不会向收件人公开。
 
-### 定期投放 {#recurring-delivery}
+1. （可选）在&#x200B;**[!UICONTROL Description]**&#x200B;字段中添加描述。
+1. （可选）在相关字段中选择投放性质。 此信息对于投放跟踪很有用：您可以在投放列表中根据此标准进行筛选，或使用此选择标准构建查询。
+1. 单击&#x200B;**[!UICONTROL Continue]**&#x200B;以确认此信息并显示消息配置窗口。
 
-**定期投放**&#x200B;位于工作流上下文中。它允许您在每次执行活动时创建新投放。这可让您不必为周期性任务创建新投放。例如，如果您每月运行一次此类活动，那么一年后最终将有 12 次投放。
+## 定义投放内容 {#content-of-the-delivery}
 
-定期投放是通过[定期投放活动](../../automation/workflow/recurring-delivery.md)在工作流中创建的。这一部分中介绍了使用此活动的示例：[在目标选择工作流中创建定期投放](../../automation/workflow/send-a-birthday-email.md)。
+投放内容已准备好进行配置。 投放内容定义特定于每个渠道。 有关更多信息，请参阅专述章节：
 
-### 持续投放 {#continuous-delivery}
-
-**持续投放**&#x200B;位于工作流上下文中。它可让您向现有投放添加新收件人，从而避免每次执行活动时都必须创建新投放。
-
-如果投放中的信息发生更改（内容、名称等），则会在投放执行时创建新投放对象。如果未更改任何信息，则将重用同一投放对象，并将投放和跟踪日志添加到同一对象中。
-
-例如，如果您每月运行一次此类活动，那么一年后您将只运行一次投放（如果您未对投放进行任何更改）。
-
-持续投放是通过[持续投放活动](../../automation/workflow/continuous-delivery.md)在工作流中创建的。
+* [定义电子邮件的内容](../send/email.md)
+* [定义短信内容](../send/sms/sms-content.md)
+* [定义直邮内容](../send/direct-mail.md)
+* [定义推送通知内容](../send/push.md)
 
 
-## 选择发送消息的方式{#gs-send-msg}
+## 定义目标受众 {#target-population}
 
-创建消息并对其内容进行设计和测试后，您可以选择发送消息的方式。Campaign 提供了一套功能用于：
+对于每个投放，您可以定义几种类型的目标受众：
 
-* 手动将消息发送到主目标
+* **主要受众**：接收消息的用户档案。 [了解详情](#select-the-main-target)
+* **验证目标**：接收验证邮件的用户档案。 利用校样这种特定的消息，可在将消息发送到主目标之前对消息进行测试。[了解详情](#select-the-proof-target)
 
-  ![](assets/send-email.png)
+此外，在营销活动上下文中，您可以添加：
 
-  在[此部分](../send/send.md)中了解如何发送消息
+* **种子地址**：不在投放目标中但接收投放的收件人。 [了解详情](../audiences/test-profiles.md)
+* **对照组**：未接收投放的群体，用于跟踪行为和营销活动影响。 [了解详情](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group)。
 
-* 发送与[营销活动](campaigns.md)关联的消息
+### 选择投放的主要收件人 {#select-the-main-target}
 
-  ![](assets/deliveries-in-a-campaign.png)
+在大多数情况下，主目标会从Adobe Campaign数据库（默认模式）中提取。 但是，收件人也可以存储在[外部文件](steps-defining-the-target-population.md#selecting-external-recipients)中。
 
-  要了解如何在活动上下文中发送消息，请参阅[此部分](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=zh-Hans){target="_blank"}
+要选择投放的收件人，请执行以下步骤：
 
-* 通过[工作流](../config/workflows.md)发送消息
+1. 在投放编辑器中，选择&#x200B;**[!UICONTROL To]**。
+1. 如果收件人存储在数据库中，请选择第一个选项。
 
-  ![](assets/send-in-a-wf.png)
+   ![](../send/sms/assets/audience_to.png){zoomable="yes"}
 
-  请参阅[此页面](../../automation/workflow/delivery.md)以了解如何自动化电子邮件投放
+1. 在&#x200B;**[!UICONTROL Target mapping]**&#x200B;下拉列表中选择[目标映射](../audiences/target-mappings.md)。
+1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以定义限制筛选器。
 
-* 从事件[触发消息](../send/transactional.md)
+   ![](assets/target-type.png){width="60%" align="left" zoomable="yes"}
 
-  事务性消息（消息中心）是用于管理触发消息的 Campaign 模块。
+   选择筛选器类型并单击&#x200B;**[!UICONTROL Next]**&#x200B;以定义条件。 您可以从&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡中显示筛选的收件人。 根据目标的类型，**[!UICONTROL Refine target]**&#x200B;按钮允许您组合多个定位条件。
 
-  请参阅[本节](../architecture/architecture.md#transac-msg-archi)以了解关于事务性消息功能的更多信息
+   可以使用以下目标类型：
 
-  有关配置和发送事务性消息的步骤详情，请参阅[此页面](../send/transactional.md)
+   * **[!UICONTROL Filtering conditions]**：使用此选项定义查询并显示结果。 在[本节](../../automation/workflow/query.md)中了解如何设计查询。
+   * **[!UICONTROL A list of recipients]**：使用此选项来定位配置文件列表。 在[本节](../audiences/create-audiences.md)中了解更多有关列表的信息。
+   * **[!UICONTROL A recipient]**：使用此选项选择数据库中的特定配置文件。
+   * **[!UICONTROL Recipients included in a folder]**：使用此选项以特定文件夹中包含的所有配置文件为目标。
+   * **[!UICONTROL Recipients of a delivery]**：使用此选项从投放的收件人生成目标。 然后，您必须在列表中选择投放：
 
-* 计划消息发送
+     ![](assets/target-recipient-delivery.png)
 
-  ![](assets/schedule-send.png)
+   * **[!UICONTROL Delivery recipients belonging to a folder]**：使用此选项从特定文件夹中包含的收件人投放生成目标。
 
-  要了解如何计划发送投放，请参阅[此页面](../send/configure-and-send.md)
+     ![](assets/target-delivery-folder.png)
 
-  还可参阅此[用例：了解如何计划和发送生日电子邮件](../../automation/workflow/send-a-birthday-email.md)
+     您可以从下拉列表中选择，以筛选收件人的行为：
+
+     ![](assets/target-filter-behavior.png)
+
+     >[!NOTE]
+     >
+     >**[!UICONTROL Include sub-folders]**&#x200B;选项还允许您定位所选节点下位于树结构中的文件夹中所包含的投放。
+
+   * **[!UICONTROL Subscribers of an information service]** ：通过此选项，可选择新闻稿，收件人必须订阅新闻稿才能成为所创建投放的目标。
+
+     ![](assets/target-service.png)
+
+   * **[!UICONTROL User filters]**：通过此选项可访问预配置的筛选器，以将其用作数据库中用户档案的筛选条件。 预配置的筛选器显示在[此部分](../audiences/create-filters.md#default-filters)中。
+   * 通过&#x200B;**[!UICONTROL Exclude recipients from this segment]**&#x200B;选项，可定向不符合所规定目标条件的收件人。 要使用此选项，请选择相应的框，然后按照之前的定义应用定位以排除生成的配置文件。
+
+1. 在&#x200B;**[!UICONTROL Label]**&#x200B;字段中输入此目标的名称。 默认情况下，标签是第一个定位标准的标签。 在组合筛选条件时，建议使用显式名称。
+1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;以验证定位选项。
+
+   定义的目标标准在主目标配置选项卡的中心部分中进行了摘要。 单击条件可查看其内容（配置和预览）。 要删除某个条件，请单击其标签后面的十字线。
+
+   ![](assets/target-remove-criterion.png)
+
+#### 选择外部收件人 {#selecting-external-recipients}
+
+您可以向未存储在数据库中、但存储在外部文件中的用户档案发送消息。 例如，要将投放发送给从文本文件导入的收件人，请执行以下步骤：
+
+1. 单击&#x200B;**[!UICONTROL To]**&#x200B;链接以选择投放的收件人。
+1. 选择&#x200B;**[!UICONTROL Defined in an external file]**&#x200B;选项。
+1. 选择包含收件人的文件。
+1. 导入收件人时，单击&#x200B;**[!UICONTROL File format definition...]**&#x200B;链接以选择和配置外部文件。
+
+   有关数据导入的详细信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs#step-2---source-file-selection){target="_blank"}。
+
+1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;并将您的投放配置为标准投放。
+
+>[!CAUTION]
+>
+>定义电子邮件投放的邮件内容时，不要包含指向镜像页面的链接：此投放模式无法生成该链接。
+
+#### 定义排除设置 {#define-exclusion-settings}
+
+定义投放目标时，**[!UICONTROL Exclusions]**&#x200B;选项卡用于限制消息数量。 建议使用默认参数，但您可以根据需要调整设置。 但是，这些选项只应由专家用户更改，以避免任何误用和错误。
+
+您可以选择排除已达到一定数量的连续错误或其质量等级低于此窗口中指定的阈值的地址。 您还可以选择是否授权未返回数据的非限定地址。
+
+单击&#x200B;**[!UICONTROL Edit...]**&#x200B;链接以修改默认配置。
+
+![](assets/target-exclusion-settings.png)
+
+可以使用以下选项：
+
+* **[!UICONTROL Exclude duplicate addresses during delivery]**：此选项默认处于活动状态，在传递期间会删除重复的电子邮件地址。 所应用的策略可能会因如何使用Adobe Campaign以及数据库中的数据类型而有所不同。 可以为每个投放模板配置选项的值。
+* 列入阻止列表 **[!UICONTROL Exclude recipients who no longer want to be contacted]** ，即电子邮件地址处于状态（“选择退出”）的收件人。 为了遵守电子营销的职业道德，必须继续选择此选项。
+* **[!UICONTROL Exclude quarantined recipients]**：利用此选项可从目标中排除任何包含已隔离地址的用户档案。 我们强烈建议保持选中此选项。 在[本节](understanding-quarantine-management.md)中了解有关隔离管理的更多信息。
+* **[!UICONTROL Limit delivery]**&#x200B;到给定的消息数。 使用此选项可输入要发送的最大消息数。 如果目标受众超出指示的消息数，则会随机选择消息并将其应用于目标。 若要发送所有邮件，请将此值保留为“0”。
+* **[!UICONTROL Keep duplicate records (same identifier)]**：此选项允许向满足多个定位条件的收件人发送多个投放。
+
+### 选择验证消息的收件人 {#select-the-proof-target}
+
+对于电子邮件投放，您可以发送校样以验证消息内容。 通过发送校样，可检查选择退出链接、镜像页面和任何其他链接、验证消息、验证是否显示图像、检测可能存在的错误等。 您可能还希望检查您的设计和在不同设备上的渲染。
+
+利用校样这种特定的消息，可在将消息发送给主受众之前对消息进行测试。 校样的收件人负责批准消息：呈现、内容、个性化设置、配置。
+
+有关校样收件人和发送的更多信息，请参阅[此章节](../send/preview-and-proof.md#send-proofs)。
+
+![](../send/assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#seeds-and-proofs-video)
 
 
-## 添加个性化内容{#personalization}
+#### 教程视频 {#seeds-and-proofs-video}
 
-由 Adobe Campaign 投放的消息可以通过各种方式实现个性化。[了解关于个性化功能的更多信息](../send/personalize.md)
+在本视频中，您将了解如何向现有电子邮件添加种子和验证，以及如何发送该电子邮件。
 
-您可以：
-
-* 插入动态的个性化字段。[了解详情](../send/personalization-fields.md)
-* 插入预定义的个性化块。[了解详情](../send/personalization-blocks.md)
-* 创建条件性内容。[了解详情](../send/conditions.md)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 
-## 投放和跟踪日志{#gs-tracking-logs}
+[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign Classic操作方法视频。
 
-在发送后监测投放是确保营销活动有效并接触到客户的重要步骤。您可以在发送投放后进行监测，并了解如何管理投放失败和隔离。
+## 准备并验证投放 {#validate-the-delivery}
 
-要了解如何监测投放，请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=zh-Hans#sending-messages){target="_blank"}
+创建和配置投放后，您必须先验证该投放，然后再将其发送到主目标。
 
+操作步骤：
+
+1. **分析投放**：此步骤允许您准备要投放的消息。 [了解详情](../send/delivery-analysis.md)。
+
+1. **发送校样**：此步骤允许您控制内容、URL、个性化等。 [了解详情](../send/preview-and-proof.md)。
+
+>[!IMPORTANT]
+>
+>在对消息内容进行每次修改后，必须执行上述两个步骤。
+
+
+## 配置和发送投放 {#configuring-and-sending-the-delivery}
+
+访问投放参数以配置更多设置并定义消息发送方式。 您可以定义投放优先级、设置发送波次、配置重试设置并测试投放发送。 完成此配置后，您可以确认发送。 然后，将立即发送消息，或根据投放计划发送消息。
+
+在[此页面](../send/configure-and-send.md)中了解如何配置您的投放设置。

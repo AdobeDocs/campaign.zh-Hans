@@ -5,9 +5,9 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: cf292ecd7d30862d7d195536ecc5be709fe037b3
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '522'
 ht-degree: 10%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 10%
 # 设计和发送电子邮件
 
 电子邮件投放可让您向目标群体发送个性化电子邮件。 [了解详情](../send/send.md)
+
+了解在[此页面](../start/create-message.md)中创建和配置投放的关键步骤。
 
 ## 创建您的第一个电子邮件投放
 

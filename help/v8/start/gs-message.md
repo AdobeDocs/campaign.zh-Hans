@@ -4,10 +4,10 @@ description: 开始使用消息
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: 0ff645a87700c038b78fb4cc45062822d6d97148
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 88%
+source-wordcount: '1305'
+ht-degree: 87%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 88%
 
 核心功能包括定向、消息定义和个性化、通信执行和相关的运营报告。
 
-## 创建投放 {#gs-ac-delivery}
+## 用例 {#gs-ac-delivery}
 
 要发送消息，您必须创建投放。 投放创建模式取决于您的用例。
 
@@ -147,7 +147,7 @@ Campaign 中有三种类型的投放对象：
 
 持续投放是通过[持续投放活动](../../automation/workflow/continuous-delivery.md)在工作流中创建的。
 
-## 添加个性化内容{#personalization}
+## 添加个性化内容 {#personalization}
 
 由 Adobe Campaign 投放的消息可以通过各种方式实现个性化。[了解关于个性化功能的更多信息](../send/personalize.md)
 
@@ -158,7 +158,7 @@ Campaign 中有三种类型的投放对象：
 * 创建条件性内容。[了解详情](../send/conditions.md)
 
 
-## 投放和跟踪日志{#gs-tracking-logs}
+## 发送和跟踪 {#gs-tracking-logs}
 
 在发送后监测投放是确保营销活动有效并接触到客户的重要步骤。您可以在发送投放后进行监测，并了解如何管理投放失败和隔离。
 

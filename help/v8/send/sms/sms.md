@@ -5,7 +5,7 @@ feature: SMS
 role: User, Data Engineer
 level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
-source-git-commit: 5b2638927e39b6f839fb3a8639fe106d2c519fbf
+source-git-commit: bb77b915f50b31d8d91e25da6fa86aa15b03bba4
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 17%
@@ -14,13 +14,13 @@ ht-degree: 17%
 
 # 短信入门 {#gs-sms-channel}
 
-Adobe Campaign允许您在手机上发送个性化的[短信](../send/sms/sms.md)。
+Adobe Campaign允许您在手机上发送个性化的短信。
 
 对于短信消息，您可以仅以文本格式创建、修改和个性化消息。您还可以在发送短信消息之前进行预览。
 
 >[!NOTE]
 >
->您还可以使用Adobe Campaign发送[LINE](../send/line.md)消息，其中包含文本和/或图像和链接。
+>您还可以使用Adobe Campaign发送[LINE](../../send/line.md)消息，其中包含文本和/或图像和链接。
 
 要使用Adobe Campaign将短信发送到手机，您需要：
 

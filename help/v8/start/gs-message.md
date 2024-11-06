@@ -4,9 +4,9 @@ description: 开始使用消息
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 0ff645a87700c038b78fb4cc45062822d6d97148
+source-git-commit: a7225fb958ad168d89e09445f4fad27e7b6817aa
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1291'
 ht-degree: 87%
 
 ---
@@ -25,31 +25,21 @@ ht-degree: 87%
 >
 >创建投放时，必须选择模板。 每个渠道都有默认模板可用。 在[此页面](../send/create-templates.md)中了解有关投放模板的更多信息。
 
-### 一次性消息 {#msg-single}
+1. 一次性消息 — 您可以向受众发送一次性消息。 在[本节](create-message.md)中了解如何发送您的第一条消息。
 
-您可以手动将一次性消息发送到主目标。 在[本节](create-message.md)中了解如何发送您的第一条消息
+   ![](assets/send-email.png)
 
-![](assets/send-email.png)
+1. 营销活动中的消息 — 您可以在[营销活动](campaigns.md)的上下文中发送消息、定义审批流程、在合并的仪表板中发送和跟踪消息。 在[本节](../../automation/campaigns/marketing-campaign-deliveries.md)中了解详情。
 
-### 营销活动中的消息 {#msg-campaign}
+   ![](assets/deliveries-in-a-campaign.png)
 
-您可以在[营销活动](campaigns.md)的上下文中发送消息、定义审批流程、在合并的仪表板中发送和跟踪消息。 在[本节](../../automation/campaigns/marketing-campaign-deliveries.md)中了解详情
+1. 工作流中的消息 — 您可以通过[工作流](../config/workflows.md)发送消息并自动投放。 在[此页面](../../automation/workflow/delivery.md)中了解详情。
 
-![](assets/deliveries-in-a-campaign.png)
+   ![](assets/send-in-a-wf.png)
 
-### 工作流中的消息 {#msg-wf}
+1. 触发的消息 — 您可从事件[触发消息](../send/transactional.md)。 事务性消息（消息中心）是用于管理触发消息的Campaign模块。 有关配置和发送事务性消息的步骤详情，请参阅[此页面](../send/transactional.md)
 
-您可以通过[工作流](../config/workflows.md)发送消息并自动投放。 在[此页面](../../automation/workflow/delivery.md)中了解详情
-
-![](assets/send-in-a-wf.png)
-
-### 触发的消息 {#msg-trigger}
-
-您可从事件[触发消息](../send/transactional.md)。 事务性消息（消息中心）是用于管理触发消息的Campaign模块。  请参阅[本节](../architecture/architecture.md#transac-msg-archi)以了解关于事务性消息功能的更多信息
-
-有关配置和发送事务性消息的步骤详情，请参阅[此页面](../send/transactional.md)
-
-## 选择您的渠道 {#gs-channel}
+## 通信渠道 {#gs-channel}
 
 Adobe Campaign v8 附带以下投放渠道：
 
@@ -60,7 +50,6 @@ Adobe Campaign v8 附带以下投放渠道：
 * **移动应用程序渠道**：移动应用程序投放可让您向 iOS 和 Android 设备发送通知。[了解更多信息](#gs-channel-push)
 
 * **直邮渠道**：直邮投放允许您生成包含目标群体数据的提取文件。[了解更多信息](#gs-channel-direct)
-
 
   有关其他渠道的介绍，请参见[本部分](#other-channels)。
 
@@ -119,7 +108,7 @@ Adobe Campaign 还附带一个电话投放模板，用于创建外部投放。�
 
 此渠道没有特定的机制。该渠道是一般渠道，与在 Adobe Campaign 中提供的任何其他通信渠道一样，具有自己的外部帐户路由选项、投放模板类型和营销活动工作流活动。 此渠道仅用于描述性目的，例如定义要跟踪在 Adobe Campaign 以外的工具中执行的营销活动的目标投放。
 
-## 选择投放类型 {#types-of-deliveries}
+## 投放类型 {#types-of-deliveries}
 
 Campaign 中有三种类型的投放对象：
 
@@ -147,7 +136,7 @@ Campaign 中有三种类型的投放对象：
 
 持续投放是通过[持续投放活动](../../automation/workflow/continuous-delivery.md)在工作流中创建的。
 
-## 添加个性化内容 {#personalization}
+## Personalization功能 {#personalization}
 
 由 Adobe Campaign 投放的消息可以通过各种方式实现个性化。[了解关于个性化功能的更多信息](../send/personalize.md)
 
@@ -158,7 +147,7 @@ Campaign 中有三种类型的投放对象：
 * 创建条件性内容。[了解详情](../send/conditions.md)
 
 
-## 发送和跟踪 {#gs-tracking-logs}
+## 跟踪和监控 {#gs-tracking-logs}
 
 在发送后监测投放是确保营销活动有效并接触到客户的重要步骤。您可以在发送投放后进行监测，并了解如何管理投放失败和隔离。
 

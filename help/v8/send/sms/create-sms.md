@@ -4,10 +4,10 @@ description: 了解如何创建短信投放
 feature: SMS
 role: User
 level: Beginner, Intermediate
-source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
+source-git-commit: 0ef082b49261d0d2de5a6891a4a7f0cf5aafa221
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 6%
+source-wordcount: '170'
+ht-degree: 4%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 6%
 
 要创建新的短信投放，请执行以下步骤：
 
-1. 创建新投放并选择为短信发送创建的短信投放模板。 [在此处了解详情](sms-mid-sourcing.md#sms-delivery-template)。
+1. 创建新投放并选择您为短信发送创建的[短信投放模板](sms-mid-sourcing.md#sms-delivery-template)。
 
    ![](assets/sms_create.png){zoomable="yes"}
 
-   在[此页面](../../start/create-message.md)中了解有关投放创建步骤的更多信息。
+   [此页面](../../start/create-message.md)中详细介绍了投放创建步骤。
 
 <!-- * For standalone instance,  [learn more here](sms-standalone-instance.md#sms-delivery-template).
 * For mid-sourcing infrastructure, -->
@@ -31,7 +31,7 @@ ht-degree: 6%
 
 1. 您可以签入&#x200B;**[!UICONTROL Properties]**&#x200B;按钮，确认所有设置都已根据需要完成。 [了解有关短信选项卡的更多信息](sms-delivery-settings.md#sms-tab)
 
-![](assets/sms_settings.png){zoomable="yes"}
+   ![](assets/sms_settings.png){zoomable="yes"}
 
 1. [定义投放的内容](sms-content.md)。
 

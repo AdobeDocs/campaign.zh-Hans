@@ -5,9 +5,9 @@ feature: SMS
 role: User, Data Engineer
 level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
-source-git-commit: c95bdc13237e67b885b6f9aa495a4753ca72a90e
+source-git-commit: 95dca48ae0e2ee82b80464cdf9414538776969ad
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '157'
 ht-degree: 12%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->您还可以使用Adobe Campaign发送[LINE](../../send/line.md)消息，其中包含文本和/或图像和链接。
+>您还可以使用Adobe Campaign将[推送通知](../push.md)和[LINE](../line.md)消息发送到移动设备。
 
 
 <table style="table-layout:fixed"><tr style="border: 0;">

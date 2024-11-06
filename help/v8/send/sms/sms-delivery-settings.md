@@ -6,9 +6,9 @@ role: User
 level: Beginner, Intermediate
 badge: label="有限发布版" type="Informative"
 exl-id: c4d500ef-2339-491f-9ae2-9bfaf72088a9
-source-git-commit: 8dffc24ff859ded70ea9c5b9ede39512c1543e74
+source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '787'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,12 @@ ht-degree: 0%
 
 短信投放所需的技术设置包括：
 
-* 路由：[SMPP外部帐户](smpp-external-account.md#smpp-connection-settings)
-
-* [此 ](#sms-tab)
+* 邮件路由的SMPP外部帐户。 [了解详情](smpp-external-account.md#smpp-connection-settings)
+* 配置短信选项卡。 [了解如何操作](#sms-tab)
 
 您可以在投放模板中设置所有这些设置，以避免为每个短信投放创建进行设置。
 
-## 配置&#x200B;**[!UICONTROL SMS]**&#x200B;选项卡 {#sms-tab}
+## 配置短信选项卡 {#sms-tab}
 
 ![](assets/send_settings.png){zoomable="yes"}
 
@@ -97,25 +96,3 @@ ht-degree: 0%
   >
   >二进制格式始终以big-endian格式编码。
 
-## 创建短信投放 {#sms-delivery}
-
-要创建新的短信投放，请执行以下步骤：
-
-1. 例如，从“投放仪表板”或在&#x200B;**[!UICONTROL Explorer]**&#x200B;中的“投放”文件夹中创建新投放。  默认情况下，它将被标记为“电子邮件投放”。
-
-1. 选择您为短信发送创建的投放模板。 [在此处了解详情](sms-mid-sourcing.md#sms-delivery-template)。
-
-   ![](assets/sms_create.png){zoomable="yes"}
-
-<!-- * For standalone instance,  [learn more here](sms-standalone-instance.md#sms-delivery-template).
-* For mid-sourcing infrastructure, -->
-
-1. 在&#x200B;**[!UICONTROL Label]**&#x200B;字段中重命名您的投放，并根据跟踪需要，在&#x200B;**[!UICONTROL Delivery code]**&#x200B;字段和&#x200B;**[!UICONTROL Nature]**&#x200B;列表中添加信息。 您还可以向投放添加&#x200B;**[!UICONTROL Description]**。
-
-1. 单击&#x200B;**[!UICONTROL Continue]**&#x200B;按钮。 现在，您的投放中提供了模板的所有设置。
-
-1. 您可以签入&#x200B;**[!UICONTROL Properties]**&#x200B;按钮，确认所有设置都已根据需要完成。 [了解有关短信选项卡的更多信息](#sms-tab)
-
-![](assets/sms_settings.png){zoomable="yes"}
-
-您现在可以配置[短信内容](sms-content.md)。

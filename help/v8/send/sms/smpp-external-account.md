@@ -5,7 +5,7 @@ feature: SMS
 role: User
 level: Intermediate
 exl-id: 1f941b35-c7e0-4e8c-b6e5-a1a3e5354483
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
 workflow-type: tm+mt
 source-wordcount: '3650'
 ht-degree: 2%
@@ -16,16 +16,13 @@ ht-degree: 2%
 
 Adobe Campaign使用SMPP协议向服务提供商发送短信。
 
->[!IMPORTANT]
->
->Adobe Campaign支持SMPP协议版本3.4。
-
-
 Adobe Campaign中的SMS连接器提供了许多选项来调整其行为，以便与大多数SMPP提供商兼容，这些SMPP提供商往往与官方规范稍有偏差。
 
 >[!IMPORTANT]
 >
->建立与新提供商的连接可能需要一些技术技能、TCP知识、二进制、十六进制表示和文本编码。 它还需要与提供者积极合作。
+>* Adobe Campaign支持SMPP协议版本3.4。
+>
+>* 建立与新提供商的连接可能需要一些技术技能、TCP知识、二进制、十六进制表示和文本编码。 它还需要与提供者积极合作。
 
 SMS服务提供商端的网络设备通常称为SMSC。
 

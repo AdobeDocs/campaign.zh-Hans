@@ -5,9 +5,9 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '685'
 ht-degree: 99%
 
 ---
@@ -53,6 +53,7 @@ ht-degree: 99%
    + 短信 {#sms}
       + [短信入门](send/sms/sms.md)
       + 配置短信渠道{#config-sms}
+         + [短信投放设置](send/sms/sms-delivery-settings.md)
          + [SMPP 外部帐户设置](send/sms/smpp-external-account.md)
          + [短信渠道特征](send/sms/sms-channel.md)
          + [验证 SMPP 连接](send/sms/smpp-connection.md)
@@ -60,7 +61,7 @@ ht-degree: 99%
          + [中间源基础结构](send/sms/sms-mid-sourcing.md)
          + [SMPP 连接器说明](send/sms/smpp-connector-delivery.md)
       + 创建短信{#create-sms}
-         + [短信投放设置](send/sms/sms-delivery-settings.md)
+         + [创建短信投放](send/sms/create-sms.md)
          + [定义内容](send/sms/sms-content.md)
          + [选择受众](send/sms/sms-audience.md)
       + 验证并发送短信{#validate-sms}

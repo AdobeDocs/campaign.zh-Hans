@@ -5,27 +5,27 @@ feature: SMS
 role: User, Data Engineer
 level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: 5b2638927e39b6f839fb3a8639fe106d2c519fbf
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 4%
+source-wordcount: '248'
+ht-degree: 17%
 
 ---
 
 # 短信入门 {#gs-sms-channel}
 
-使用Adobe Campaign发送个性化的短信消息。
+Adobe Campaign允许您在手机上发送个性化的[短信](../send/sms/sms.md)。
+
+对于短信消息，您可以仅以文本格式创建、修改和个性化消息。您还可以在发送短信消息之前进行预览。
 
 >[!NOTE]
 >
->Adobe Campaign还允许您通过其&#x200B;**Adobe Campaign移动应用程序渠道(NMAC)**&#x200B;选项在手机上提交推送通知。 可在[此部分](../push.md)中了解详情。
+>您还可以使用Adobe Campaign发送[LINE](../send/line.md)消息，其中包含文本和/或图像和链接。
 
-SMS的简单性和易用性使其成为非常宝贵的通信渠道，此外，它还具有数十亿终端的无与伦比的稳定性和兼容性。
+要使用Adobe Campaign将短信发送到手机，您需要：
 
-发送短信主要有2种方式：
-
-* 从手机手动发送。 这是你平常用来与人直接交流的方式。
-* 从Internet发送。 这是Adobe Campaign用于发送消息的方式。 为此，您需要一家短信服务提供商，为从互联网到移动网络架起一座桥梁。
+* 在 **[!UICONTROL Mobile (SMS)]** 渠道或 **[!UICONTROL LINE]** 渠道上配置外部帐户。
+* 正确链接到此外部帐户的短信投放模板。
 
 您可以在此文档中查看配置、发送和监控SMS投放的步骤：
 

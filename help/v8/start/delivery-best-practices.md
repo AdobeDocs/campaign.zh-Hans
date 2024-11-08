@@ -4,7 +4,7 @@ description: 了解使用Adobe Campaign设计和发送投放时的最佳实践
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: b4fad76b43a77909a4ea2c0877527af80027681a
+source-git-commit: 10af828319569ad9aeeecc809bc213f9608791ac
 workflow-type: tm+mt
 source-wordcount: '2869'
 ht-degree: 2%
@@ -151,7 +151,7 @@ var brand = "xxx"
 
 **提示**：由于人为错误始终存在，因此请在每次发送前检查选择退出链接是否正常工作。 例如，在发送校样时，请确保链接有效，表单处于联机状态，并且`No longer contact this recipient `字段已更改为`Yes`。
 
-了解如何在此部分](personalization-blocks.md#personalization-blocks-example)中插入选择退出链接[。
+了解如何在此部分](../send/personalization-blocks.md)中插入选择退出链接[。
 
 ### 电子邮件大小
 
@@ -328,7 +328,7 @@ Learn more [in this section](get-started-a-b-testing.md).-->
 
 #### 使用批次
 
-您可以逐步增加使用批次发送的数量。 这将避免您的邮件被标记为垃圾邮件或您想要限制每天的邮件数。 利用批次，您可以将投放分为多个批次，而不是同时发送大量消息。 在本节](../send/configure-and-send.mdsending-using-multiple-waves)中了解更多[。
+您可以逐步增加使用批次发送的数量。 这将避免您的邮件被标记为垃圾邮件或您想要限制每天的邮件数。 利用批次，您可以将投放分为多个批次，而不是同时发送大量消息。 在本节](../send/configure-and-send.md#sending-using-multiple-waves)中了解更多[。
 
 #### 排定消息优先级
 

@@ -4,7 +4,7 @@ description: 了解使用Adobe Campaign设计和发送投放时的最佳实践
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
+source-git-commit: b4fad76b43a77909a4ea2c0877527af80027681a
 workflow-type: tm+mt
 source-wordcount: '2869'
 ht-degree: 2%
@@ -117,7 +117,7 @@ var brand = "xxx"
 
 您可以在工作流中准备个性化数据，以改进投放准备分析。 如果个性化数据来自通过联合数据访问(FDA)的外部表，则应当特别使用此字段。 该选项在此[部分](../send/personalization-data.md#optimize-personalization)中有说明
 
-### 构建优化内容 {#optimize-content}
+### 构建优化内容 {#build-optimized-content}
 
 在构建电子邮件时，请牢记以下一般最佳实践：
 

@@ -5,10 +5,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: ad96c126836981f861c246eafa2ec7d2c0e179dc
+source-git-commit: 55b752713a29c035680dd39e42422b1743e15269
 workflow-type: tm+mt
-source-wordcount: '1530'
-ht-degree: 4%
+source-wordcount: '1525'
+ht-degree: 3%
 
 ---
 
@@ -176,15 +176,12 @@ ht-degree: 4%
 
 有关校样收件人和发送的更多信息，请参阅[此章节](../send/preview-and-proof.md#send-proofs)。
 
-![](../send/assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#seeds-and-proofs-video)
-
 
 #### 教程视频 {#seeds-and-proofs-video}
 
 在本视频中，您将了解如何向现有电子邮件添加种子和验证，以及如何发送该电子邮件。
 
 >[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
-
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign Classic操作方法视频。
 
@@ -200,7 +197,7 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->在对消息内容进行每次修改后，必须执行上述两个步骤。
+>每次修改消息内容后，必须执行以上&#x200B;**的两个步骤**。
 
 
 ## 配置和发送投放 {#configuring-and-sending-the-delivery}

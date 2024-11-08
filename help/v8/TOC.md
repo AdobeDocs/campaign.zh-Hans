@@ -5,9 +5,9 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
+source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '688'
 ht-degree: 99%
 
 ---
@@ -44,6 +44,7 @@ ht-degree: 99%
 + 发送消息 {#send}
    + [消息入门](start/gs-message.md)
    + [创建您的第一个投放](start/create-message.md)
+   + [投放最佳实践](start/delivery-best-practices.md)
    + 电子邮件 {#emails}
       + [设计和验证电子邮件](send/email.md)
       + [链接到镜像页面](send/mirror-page.md)

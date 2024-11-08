@@ -5,9 +5,9 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 1da45746-4d69-415b-a793-9a08ce80091d
-source-git-commit: 6d54f072ad0e67b435cd6e03433fa9ddd0794dea
+source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '471'
 ht-degree: 48%
 
 ---
@@ -47,13 +47,13 @@ Adobe Campaign简化了个性化：您可以使用单个[消息模板](create-te
 
 ## 护栏和建议{#perso-guardrails}
 
-### Personalization超时{#perso-timeout}
+### Personalization超时 {#perso-timeout}
 
 要改进投放保护，您可以为个性化阶段设置超时期限。
 
 在&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡中，为&#x200B;**[!UICONTROL Maximum personalization run time]**&#x200B;选项选择最大值（以秒为单位）。
 
-在预览或发送期间，如果个性化阶段超过您在此字段中设置的最大时间，则流程将中止，并出现错误消息，投放将失败。
+在预览或发送期间，如果个性化阶段超过了您在此字段中设置的最大时间，则流程会中止，并出现错误消息，投放会失败。
 
 默认值为5秒。
 

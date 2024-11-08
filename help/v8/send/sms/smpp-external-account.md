@@ -5,7 +5,7 @@ feature: SMS
 role: User
 level: Intermediate
 exl-id: 1f941b35-c7e0-4e8c-b6e5-a1a3e5354483
-source-git-commit: 826abd5c5f8b191d34abf724b91c5a82665d00a2
+source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
 workflow-type: tm+mt
 source-wordcount: '3650'
 ht-degree: 2%
@@ -71,7 +71,7 @@ SMS服务提供商端的网络设备通常称为SMSC。
 
 ![](assets/smpp_channel_settings.png){zoomable="yes"}
 
-### 授权字符音译
+### 授权字符音译 {#smpp-transliteration}
 
 音译是查找与缺少的字符等价的字符的过程。 例如，GSM编码中缺少法语“e”（带抑扬符）字符，但它可以替换为“e”，而不会太妨碍可读性。
 

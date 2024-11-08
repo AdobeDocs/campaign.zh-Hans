@@ -5,9 +5,9 @@ feature: Audiences
 role: User
 level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
-source-git-commit: 9ce5acd97e077105316c81029e3ccbc6fa4389dc
+source-git-commit: ad96c126836981f861c246eafa2ec7d2c0e179dc
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '497'
 ht-degree: 17%
 
 ---
@@ -41,7 +41,6 @@ ht-degree: 17%
 
 ## 使用中的用户档案 {#active-profiles}
 
-
 活动用户档案是客户在过去12个月内尝试通过任何渠道与之通信的用户档案。
 
 根据您的合同，您的每个 Campaign 实例都会配置特定数量的活动用户档案，并对这些活动用户档案进行计数以计费。请参阅您的最新合同，了解已购买的活动用户档案的数量。 在[Adobe Campaign产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}中了解详情。
@@ -55,17 +54,9 @@ ht-degree: 17%
 * 在X(Twitter)的社交营销上下文中定位的用户档案不会计为活动用户档案。
 * 计数基于收件人主键。 因此，如果某个用户档案存在于两个不同的收件人表中，则它可能会被计算为活动用户档案两次。
 
-
 ## 隐私和同意{#privacy-and-consent}
 
 Adobe Campaign是一款用于收集和处理大量数据（包括个人信息和敏感数据）的强大工具。 通过 Adobe Campaign，您可以收集数据，包括个人信息和敏感信息。因此，获得并监控收件人的同意至关重要。
 
 请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans){target="_blank"}以了解如何管理隐私和同意。
 
-**相关主题**
-
-* [设计和执行特定于营销活动的工作流](../../automation/workflow/campaign-workflows.md){target="_blank"}
-
-* [了解如何选择营销活动的受众](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans){target="_blank"}
-
-* [开始使用工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target="_blank"}

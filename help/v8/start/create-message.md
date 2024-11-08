@@ -5,9 +5,9 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 1bf3c4b2d0c8d9b1bdbc82a9047c52c0d80cd997
+source-git-commit: ad96c126836981f861c246eafa2ec7d2c0e179dc
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1530'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 4%
 
 1. **选择目标群体**。 [了解更多信息](#target-population)
 
-然后，您可以准备、测试、发送和监控消息。
+然后，您可以使用Adobe Campaign准备、测试、发送和监控消息。
 
 >[!NOTE]
 >
@@ -34,13 +34,14 @@ ht-degree: 4%
 
 要创建投放，请执行以下步骤：
 
-1. 单击投放列表上方的&#x200B;**[!UICONTROL Create]**。 创建新投放时，必须选择投放渠道。 为此，请从&#x200B;**[!UICONTROL Delivery template]**&#x200B;字段的下拉列表中选择相应的投放模板。
+1. 浏览到投放列表并单击&#x200B;**[!UICONTROL Create]**。
+1. 选择投放渠道。 要实现此目的，请从下拉列表中选择相应的投放模板。
 
    ![](../send/assets/select-the-new-template.png)
 
-   为您安装的每个渠道提供了一个内置模板：直邮、电子邮件、电话、移动渠道(SMS)、X(Twitter)等。 列表中可用的渠道取决于您的许可协议。
+   为您安装的每个渠道提供了一个内置模板：电子邮件、电话、移动渠道（推送/短信）、直邮、X(Twitter)等。 列表中可用的渠道取决于您的许可协议。
 
-   您可以创建新的投放模板，以预配置特定参数以满足您的需求。 有关模板的更多信息，请参阅[此章节](../send/create-templates.md)。
+   您可以创建新的投放模板，以预配置特定参数以满足您的需求。  [了解详情](../send/create-templates.md)。
 
 1. 在&#x200B;**[!UICONTROL Label]**&#x200B;字段中输入投放名称。
 
@@ -48,7 +49,7 @@ ht-degree: 4%
 
 1. （可选）在&#x200B;**[!UICONTROL Description]**&#x200B;字段中添加描述。
 1. （可选）在相关字段中选择投放性质。 此信息对于投放跟踪很有用：您可以在投放列表中根据此标准进行筛选，或使用此选择标准构建查询。
-1. 单击&#x200B;**[!UICONTROL Continue]**&#x200B;以确认此信息并显示消息配置窗口。
+1. 单击&#x200B;**[!UICONTROL Continue]**&#x200B;以显示消息内容窗口。
 
 ## 定义投放内容 {#content-of-the-delivery}
 
@@ -126,7 +127,7 @@ ht-degree: 4%
 
    ![](assets/target-remove-criterion.png)
 
-#### 选择外部收件人 {#selecting-external-recipients}
+### 选择外部收件人 {#selecting-external-recipients}
 
 您可以向未存储在数据库中、但存储在外部文件中的用户档案发送消息。 例如，要将投放发送给从文本文件导入的收件人，请执行以下步骤：
 
@@ -141,25 +142,31 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->定义电子邮件投放的邮件内容时，不要包含指向镜像页面的链接：此投放模式无法生成该链接。
+>定义发送给外部收件人的电子邮件投放的内容时，不要包含指向镜像页面的链接：此投放模式无法生成该链接。
 
-#### 定义排除设置 {#define-exclusion-settings}
+### 排除设置 {#define-exclusion-settings}
 
-定义投放目标时，**[!UICONTROL Exclusions]**&#x200B;选项卡用于限制消息数量。 建议使用默认参数，但您可以根据需要调整设置。 但是，这些选项只应由专家用户更改，以避免任何误用和错误。
+定义投放](#target-population)的[受众时，**[!UICONTROL Exclusions]**&#x200B;选项卡用于限制消息数量。 建议使用默认参数，但您可以根据需要调整设置。 但是，这些选项只应由专家用户更改，以避免任何误用和错误。
 
-您可以选择排除已达到一定数量的连续错误或其质量等级低于此窗口中指定的阈值的地址。 您还可以选择是否授权未返回数据的非限定地址。
+>[!CAUTION]
+>
+>作为专家级用户，对于特定用例，您可以更改这些设置，但Adobe建议保留默认配置。
 
-单击&#x200B;**[!UICONTROL Edit...]**&#x200B;链接以修改默认配置。
+您可以排除已达到一定数量的连续错误或其质量等级低于此窗口中指定的阈值的地址。 您还可以选择是否授权未返回数据的非限定地址。
+
+要修改默认配置，请单击&#x200B;**[!UICONTROL Edit...]**&#x200B;链接。
 
 ![](assets/target-exclusion-settings.png)
 
-可以使用以下选项：
++++ 查看可用选项
 
 * **[!UICONTROL Exclude duplicate addresses during delivery]**：此选项默认处于活动状态，在传递期间会删除重复的电子邮件地址。 所应用的策略可能会因如何使用Adobe Campaign以及数据库中的数据类型而有所不同。 可以为每个投放模板配置选项的值。
 * 列入阻止列表 **[!UICONTROL Exclude recipients who no longer want to be contacted]** ，即电子邮件地址处于状态（“选择退出”）的收件人。 为了遵守电子营销的职业道德，必须继续选择此选项。
 * **[!UICONTROL Exclude quarantined recipients]**：利用此选项可从目标中排除任何包含已隔离地址的用户档案。 我们强烈建议保持选中此选项。 在[本节](../send/quarantines.md)中了解有关隔离管理的更多信息。
 * **[!UICONTROL Limit delivery]**&#x200B;到给定的消息数。 使用此选项可输入要发送的最大消息数。 如果目标受众超出指示的消息数，则会随机选择消息并将其应用于目标。 若要发送所有邮件，请将此值保留为“0”。
 * **[!UICONTROL Keep duplicate records (same identifier)]**：此选项允许向满足多个定位条件的收件人发送多个投放。
++++
+
 
 ### 选择验证消息的收件人 {#select-the-proof-target}
 

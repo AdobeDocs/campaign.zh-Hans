@@ -4,9 +4,10 @@ description: 了解使用Adobe Campaign设计和发送投放时的最佳实践
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 10af828319569ad9aeeecc809bc213f9608791ac
+exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
+source-git-commit: 61c86c3c9d6dbbabf2d5174b8b7b1721b38280cb
 workflow-type: tm+mt
-source-wordcount: '2869'
+source-wordcount: '2890'
 ht-degree: 2%
 
 ---
@@ -44,7 +45,7 @@ ht-degree: 2%
 [此部分](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations){target="_blank"}中列出了技术建议。
 
 
-**提示**
++++ **阅读一些最佳实践**
 
 * 如果存在无效地址列表，Adobe建议通过&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**&#x200B;将其导入隔离表。
 
@@ -52,6 +53,9 @@ ht-degree: 2%
 Adobe Campaign会根据返回的错误类型管理错误地址。 [了解有关隔离的更多信息](../send/quarantines.md)
 
 * 如果无效地址的比率过高，某些互联网访问提供商会自动将电子邮件视为垃圾邮件。 因此，隔离可让您避免被这些提供商添加到阻止列表。
+
++++
+
 
 
 ### 双重选择加入机制 {#double-opt-in}
@@ -74,6 +78,8 @@ Adobe Campaign会根据返回的错误类型管理错误地址。 [了解有关�
 * 格式错误的地址可能导致接收服务器拒绝该地址。 您必须确保提供了正确的地址。
 * 地址必须明确识别发件人。 域必须归发件人所有并向其注册。
 * Adobe建议创建对应于为投放和回复指定的地址的电子邮件帐户。 请与您的邮件系统管理员联系。
+
++++ 在Campaign UI中&#x200B;**配置地址**
 
 要在Campaign界面中配置地址，请执行以下步骤：
 
@@ -119,7 +125,9 @@ var brand = "xxx"
 
 ### 构建优化内容 {#build-optimized-content}
 
-在构建电子邮件时，请牢记以下一般最佳实践：
+在构建电子邮件时，请应用电子邮件内容的一般最佳实践。
+
++++ **阅读一些最佳实践**
 
 * 保持设计简单
 
@@ -131,15 +139,24 @@ var brand = "xxx"
 
 * 编码特殊字符
 
++++
+
+
 ### 主题行
 
-处理[主题行](../send/personalization-fields.md#personalization-fields-uc)以提高打开率：
+处理电子邮件[主题行](../send/personalization-fields.md#personalization-fields-uc)以提高打开率。
+
+
++++ **阅读一些最佳实践**
+
 
 * 避免使用过长的主题。 最多使用50个字符
 
 * 避免使用可被视为垃圾邮件的重复单词，如“free”或“offer”
 
 * 避免使用大写字母和特殊字符，如“！”、“£”、“€”、“$”
+
++++
 
 ### 镜像页面
 
@@ -149,15 +166,20 @@ var brand = "xxx"
 
 退订链接是必需的。 它必须可见且有效，并且表单必须有效。 默认情况下，在分析消息时，内置&#x200B;**[!UICONTROL Unsubscription link approval]** [分类规则](../../automation/campaign-opt/control-rules.md)会检查是否包含选择退出链接，如果缺少该链接，则会生成警告。
 
-**提示**：由于人为错误始终存在，因此请在每次发送前检查选择退出链接是否正常工作。 例如，在发送校样时，请确保链接有效，表单处于联机状态，并且`No longer contact this recipient `字段已更改为`Yes`。
-
 了解如何在此部分](../send/personalization-blocks.md)中插入选择退出链接[。
+
++++ **应用此最佳实践**
+
+由于始终可能存在人为错误，因此请在每次发送前检查选择退出链接是否正常工作。 例如，在发送校样时，请确保链接有效，表单处于联机状态，并且`No longer contact this recipient `字段已更改为`Yes`。
+
++++
 
 ### 电子邮件大小
 
 为避免性能或可投放性问题，建议的最大电子邮件大小约为&#x200B;**35KB**。 要检查邮件大小，请浏览&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡并选择测试配置文件。 生成后，消息大小将显示在右上角。
 
-要将电子邮件保持在限制以内，请考虑以下事项：
+
++++ **阅读一些最佳实践**
 
 * 删除多余或未使用的样式
 
@@ -167,19 +189,22 @@ var brand = "xxx"
 
 确保在最终发送之前测试任何更改。
 
++++
+
+
 ### 短信长度
 
 默认情况下，短信的字符数应符合GSM（全球移动通信系统）标准。 使用 GSM 编码的短信消息长度上限为 160 个字符，而对于分段发送的消息，每段短信的长度上限为 153 个字符。
 
 音译指的是，如果GSM标准无法识别某个短信字符，则会用另一个字符替换该字符。 请注意，将个性化字段插入短信消息内容，可能会引入GSM编码无法识别的字符。 您可以通过选中对应&#x200B;**[!UICONTROL External account]**&#x200B;的SMPP渠道设置选项卡中的对应框来授权字符音译。
 
-**提示**
++++ **阅读一些最佳实践**
 
 * 要将短信消息中的所有字符都保持不变，例如不要更改正确名称，请不要启用音译。
 
-* 但是，如果短信消息包含许多GSM标准无法识别的字符，请启用音译以限制发送消息的成本。
+* 但是，如果短信消息包含许多GSM标准无法识别的字符，请启用音译以限制发送消息的成本。 在本节](../send/sms/smpp-external-account.md#smpp-transliteration)中了解更多[。
 
-在本节](../send/sms/smpp-external-account.md#smpp-transliteration)中了解更多[。
++++
 
 ### 避免使用附件
 
@@ -385,8 +410,7 @@ You can:
 
 为了更好地了解收件人的行为，您可以跟踪他们对投放的反应：接收、打开、单击链接、取消订阅等。 在Campaign中，此信息显示在投放所定向收件人的&#x200B;**跟踪**&#x200B;选项卡和投放的“跟踪”选项卡中。
 
-**提示**：默认情况下启用邮件跟踪。 要配置URL，请选择投放助手下方的显示URL选项。 对于消息的每个URL，您可以选择是否激活跟踪。
+默认启用消息跟踪。 要配置URL，请选择投放助手下方的显示URL选项。 对于消息的每个URL，您可以选择是否激活跟踪。
 
 
 [请参阅Campaign Classicv7文档以了解有关跟踪功能的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/how-to-configure-tracked-links.html#sending-messages){target="_blank"}
-

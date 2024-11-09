@@ -5,9 +5,9 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
-source-git-commit: 61c86c3c9d6dbbabf2d5174b8b7b1721b38280cb
+source-git-commit: 58d88498c8472381a43d735b4dfb2a802a293952
 workflow-type: tm+mt
-source-wordcount: '2890'
+source-wordcount: '2934'
 ht-degree: 2%
 
 ---
@@ -66,11 +66,11 @@ Adobe Campaign会根据返回的错误类型管理错误地址。 [了解有关�
 
 通过为最常见的活动类型提供现成的方案，交付模板可以提高效率。 借助模板，营销人员可以在更短的时间内部署具有最小自定义的新营销活动。 [了解有关投放模板的更多信息](../send/create-templates.md)。
 
-### 品牌化
+### 子域和品牌化 {#subdomains-and-branding}
 
 在Adobe Campaign中管理多个品牌时，Adobe建议每个品牌具有一个子域。 例如，银行可以具有与其每个区域机构对应的多个子域。 如果银行拥有bluebank.com域，则其子域可以是@ny.bluebank.com、@ma.bluebank.com、@ca.bluebank.com等。 每个子域拥有一个投放模板，让您能够始终为每个品牌使用正确的预配置参数，从而避免错误并节省您的时间。 在[促销活动控制面板文档](https://experienceleague.adobe.com/en/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}中了解有关子域品牌化的更多信息。
 
-### 配置地址
+### 配置地址 {#configure-addresses}
 
 请确保应用以下准则：
 
@@ -79,7 +79,7 @@ Adobe Campaign会根据返回的错误类型管理错误地址。 [了解有关�
 * 地址必须明确识别发件人。 域必须归发件人所有并向其注册。
 * Adobe建议创建对应于为投放和回复指定的地址的电子邮件帐户。 请与您的邮件系统管理员联系。
 
-+++ 在Campaign UI中&#x200B;**配置地址**
++++ **在Campaign UI中配置地址的步骤**
 
 要在Campaign界面中配置地址，请执行以下步骤：
 
@@ -91,15 +91,15 @@ Adobe Campaign会根据返回的错误类型管理错误地址。 [了解有关�
 
 1. 在&#x200B;**[!UICONTROL Reply address text]**&#x200B;字段中，默认情况下使用发件人的地址进行回复。 但是，Adobe建议使用现有的真实地址，例如您品牌的客户关怀地址。 在这种情况下，如果收件人发送回复，客户关怀团队将能够处理。
 
-### 设置对照组
+### 设置对照组 {#set-up-control-group}
 
 发送投放后，您可以将排除的收件人的行为与接收投放的收件人的行为进行比较。 然后，您可以衡量营销活动的效率。 了解有关控制组的详细信息[本节](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group)。
 
-### 使用类型应用过滤器或控制规则
+### 使用类型应用过滤器或控制规则 {#create-typologies}
 
 分类包含在发送任何消息之前，在分析阶段应用的检查规则。
 
-在模板属性的&#x200B;**[!UICONTROL Typology]**&#x200B;选项卡中，根据需要更改默认分类。
+在模板属性的&#x200B;**[!UICONTROL Typology]**&#x200B;选项卡中，您可以根据需要选择自定义分类。
 
 例如，为了更好地控制出站流量，您可以通过定义每个子域的一个关联并为每个关联创建一个类型来定义可以使用的IP地址。 相关性在实例的配置文件中定义。 联系Adobe Campaign管理员。
 
@@ -111,17 +111,20 @@ Adobe Campaign会根据返回的错误类型管理错误地址。 [了解有关�
 
 要个性化您的消息，您可以使用存储在数据库中的收件人数据，或通过跟踪、登陆页面、订阅等收集的数据。 [本节](../send/personalize.md)中介绍了Personalization的基础知识。
 
-确保消息内容设计正确，以避免出现任何可能与个性化相关的错误。 Adobe Campaign个性化标记始终具有以下形式： `<%=table.field%>`。 在个性化块中错误使用参数可能是个问题。 例如，JavaScript中的变量应按以下方式使用：
++++ **阅读一些最佳实践**
 
-``
-<%
-var brand = "xxx"
-%>
-``
+* 检查您的个性化设置 — 确保您的消息内容经过正确设计，以避免任何可能与个性化相关的错误。 Adobe Campaign个性化标记始终具有以下形式： `<%=table.field%>`。 在个性化块中错误使用参数可能是个问题。 例如，JavaScript中的变量应按以下方式使用：
 
-有关个性化块的更多信息，请参阅[此章节](../send/personalization-blocks.md)。
+  ``
+  <%
+  var brand = "xxx"
+  %>
+  ``
 
-您可以在工作流中准备个性化数据，以改进投放准备分析。 如果个性化数据来自通过联合数据访问(FDA)的外部表，则应当特别使用此字段。 该选项在此[部分](../send/personalization-data.md#optimize-personalization)中有说明
+  有关个性化块的更多信息，请参阅[此章节](../send/personalization-blocks.md)。
+
+* 准备个性化数据 — 您可以在工作流中准备个性化数据，以改进投放准备分析。 如果个性化数据来自通过联合数据访问(FDA)的外部表，则应当特别使用此字段。 该选项在此[部分](../send/personalization-data.md#optimize-personalization)中有说明
++++
 
 ### 构建优化内容 {#build-optimized-content}
 
@@ -142,7 +145,7 @@ var brand = "xxx"
 +++
 
 
-### 主题行
+### 主题行  {#subject-line-check}
 
 处理电子邮件[主题行](../send/personalization-fields.md#personalization-fields-uc)以提高打开率。
 
@@ -154,15 +157,17 @@ var brand = "xxx"
 
 * 避免使用可被视为垃圾邮件的重复单词，如“free”或“offer”
 
-* 避免使用大写字母和特殊字符，如“！”、“£”、“€”、“$”
+* 避免使用大写字母
+
+* 请勿使用“！”、“£”、“€”、“$”等特殊字符
 
 +++
 
-### 镜像页面
+### 镜像页面 {#mirror-page-check}
 
 始终包含镜像页面链接。 首选位置是电子邮件的顶部。 在[此页面](../send/mirror-page.md)中了解有关镜像页面的更多信息
 
-### 退订链接
+### 退订链接 {#unsub-link-check}
 
 退订链接是必需的。 它必须可见且有效，并且表单必须有效。 默认情况下，在分析消息时，内置&#x200B;**[!UICONTROL Unsubscription link approval]** [分类规则](../../automation/campaign-opt/control-rules.md)会检查是否包含选择退出链接，如果缺少该链接，则会生成警告。
 
@@ -174,7 +179,7 @@ var brand = "xxx"
 
 +++
 
-### 电子邮件大小
+### 电子邮件大小 {#email-size-check}
 
 为避免性能或可投放性问题，建议的最大电子邮件大小约为&#x200B;**35KB**。 要检查邮件大小，请浏览&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡并选择测试配置文件。 生成后，消息大小将显示在右上角。
 
@@ -192,17 +197,18 @@ var brand = "xxx"
 +++
 
 
-### 短信长度
+### 短信长度 {#sms-length-check}
 
 默认情况下，短信的字符数应符合GSM（全球移动通信系统）标准。 使用 GSM 编码的短信消息长度上限为 160 个字符，而对于分段发送的消息，每段短信的长度上限为 153 个字符。
 
-音译指的是，如果GSM标准无法识别某个短信字符，则会用另一个字符替换该字符。 请注意，将个性化字段插入短信消息内容，可能会引入GSM编码无法识别的字符。 您可以通过选中对应&#x200B;**[!UICONTROL External account]**&#x200B;的SMPP渠道设置选项卡中的对应框来授权字符音译。
 
 +++ **阅读一些最佳实践**
 
 * 要将短信消息中的所有字符都保持不变，例如不要更改正确名称，请不要启用音译。
 
 * 但是，如果短信消息包含许多GSM标准无法识别的字符，请启用音译以限制发送消息的成本。 在本节](../send/sms/smpp-external-account.md#smpp-transliteration)中了解更多[。
+
+* 您可以应用短信音译，这包括当GSM标准无法识别短信的一个字符时，用另一个字符替换该字符。 请注意，将个性化字段插入短信消息内容，可能会引入GSM编码无法识别的字符。 作为Campaign管理员，您可以通过选中相应&#x200B;**[!UICONTROL External account]**&#x200B;的SMPP渠道设置选项卡中的相应框来启用字符音译。 [了解详情](../send/sms/smpp-external-account.md#smpp-transliteration)
 
 +++
 
@@ -221,26 +227,28 @@ To avoid common formatting errors, check the following elements:
 
 * Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).-->
 
-
 ## 管理图像 {#manage-images}
 
 以下是一些针对电子邮件营销活动优化图像的特定准则。
 
-### 防止图像阻塞
+### 防止图像阻塞 {#image-blocking}
 
-默认情况下，某些电子邮件客户端会阻止图像，而某些用户会更改其设置以阻止图像以供在数据使用时保存。 因此，如果不下载图像，则可能会丢失整个消息。 要避免这种情况：
+默认情况下，某些电子邮件客户端会阻止图像，用户可能会更改其设置以阻止图像以供在数据使用时保存。  因此，如果不下载图像，则整个消息可能会丢失。
 
-* 使您的内容与图像和文本保持平衡。 避免完全基于图像的电子邮件。
++++ 要避免此问题，您可以应用这些最佳实践
+
+* 避免完全基于图像的电子邮件。 使您的内容与图像和文本保持平衡。
 
 * 如果文本必须包含在图像中，请使用替换文本和标题文本以确保消息正确传递。 设置替代/标题文本的样式以改进其外观。
 
 * 避免使用背景图像，因为某些电子邮件客户端不支持这些图像。
++++
 
-### 使图像具有响应性
+### 使图像具有响应性 {#responsive-images}
 
-尝试使图像具有响应性且可调整大小。 请注意，这可能会产生成本影响，因为构建所需的时间较长。
+尝试使图像具有响应性且可调整大小，以使它们在所有上下文和设备中都可见。 请注意，这可能会产生成本影响，因为构建所需的时间较长。
 
-### 使用绝对图像引用
+### 使用绝对图像引用 {#absolute-images}
 
 要从外部访问，必须在外部可访问的服务器上存在电子邮件中使用的图像以及与营销活动关联的公共资源。
 

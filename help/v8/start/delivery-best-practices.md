@@ -1,20 +1,20 @@
 ---
 title: 投放最佳实践
 description: 了解使用Adobe Campaign设计和发送投放时的最佳实践
-feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
+feature: Email, Push, SMS, Direct Mail
 role: User
 level: Beginner
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
-source-git-commit: 58d88498c8472381a43d735b4dfb2a802a293952
+source-git-commit: 768ebf4b350da61f0076eb9e43a16246be3b2628
 workflow-type: tm+mt
-source-wordcount: '2934'
+source-wordcount: '2936'
 ht-degree: 2%
 
 ---
 
 # 投放最佳实践 {#delivery-best-practices}
 
-阅读有关Campaign投放功能的最佳实践。
+阅读以下Campaign投放功能的最佳实践。
 
 ## 优化投放 {#optimize-delivery}
 

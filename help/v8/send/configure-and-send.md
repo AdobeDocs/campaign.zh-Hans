@@ -5,7 +5,7 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
-source-git-commit: 2e9c9f8e677233b2906f6ebb8f42dd86afe4e111
+source-git-commit: 768ebf4b350da61f0076eb9e43a16246be3b2628
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 8%
@@ -83,9 +83,9 @@ ht-degree: 8%
 
 >[!IMPORTANT]
 >
->确保最后一个批次不超过&#x200B;**[!UICONTROL Validity]**&#x200B;选项卡中定义的投放截止日期。 否则，某些消息可能不会发送。 在[本节](delivery-failures.md#valid-period)中了解有关投放有效期的更多信息。
+>* 确保最后一个批次不超过&#x200B;**[!UICONTROL Validity]**&#x200B;选项卡中定义的投放截止日期。 否则，某些消息可能不会发送。 在[本节](delivery-failures.md#valid-period)中了解有关投放有效期的更多信息。
 >
->在配置最后批次时，还必须为重试设置足够的时间。 在[本节](delivery-failures.md#retries)中了解有关重试的详细信息。
+>* 在配置最后批次时，还必须为重试设置足够的时间。 在[本节](delivery-failures.md#retries)中了解有关重试的详细信息。
 
 ### 监测批次 {#monitor-waves}
 

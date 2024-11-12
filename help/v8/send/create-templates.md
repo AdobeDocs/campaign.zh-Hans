@@ -6,20 +6,22 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: acb559c74aea3f59c05792b7596d0f85ff05047c
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 25%
+source-wordcount: '939'
+ht-degree: 19%
 
 ---
 
 # 使用投放模板 {#work-with-delivery-template}
 
-每个投放都是基于模板创建的。 每个渠道都有内置模板可用。 您可以对其进行自定义，以将相同的设置应用于一组投放。
+## 投放模板入门
 
-模板包括：
+每个投放都是基于模板创建的。 模板是一种配置，可重复使用它来推动和标准化您的实施。 您可以使用内置或自定义模板。
 
-* 类型规则
+模板可以包括部分或完整配置设置，例如：
+
+* [类型规则](../../automation/campaign-opt/campaign-typologies.md)
 * 发件人和回复地址
 * 基本[个性化块](../send/personalization-blocks.md)
 * 指向[镜像页面](../send/mirror-page.md)的链接和退订链接
@@ -27,6 +29,17 @@ ht-degree: 25%
 * 其他投放属性，例如资源有效性、重试参数或隔离设置。
 
 ![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#delivery-template-video)
+
+在Adobe Campaign中，您可以使用两种类型的模板：
+
+1. Adobe Campaign **内置**&#x200B;投放模板 — 每个渠道都有内置模板可用。 不得修改或删除它们。 它们包括每个投放渠道的基本配置。 作为管理员，您可以设置默认值，或限制最终用户使用某些功能，例如修改跟踪参数、发件人电子邮件地址等。 内置模板在模板列表中以粗体显示。
+
+1. **自定义**&#x200B;投放模板 — 作为Adobe Campaign管理员，您可以创建新投放模板。 最佳实践是复制和更新内置模板，而不是从头开始创建模板。 例如，您可以配置电子邮件投放模板，当用户从此模板创建投放时，只需要输入文本或HTML内容。 所有其他设置均已定义。
+
+>[!NOTE]
+>
+>可用的模板取决于您的访问权限、实例配置和上下文。 例如，在创建信息服务时，可以链接确认消息的投放模板：然后只能访问其目标映射为订阅映射的模板。 其他模板在此上下文中不可见。 有关详细信息，请参阅[选择目标映射](../audiences/target-mappings.md)和[服务和订阅](../start/subscriptions.md)。
+
 
 ## 创建模板 {#create-a-delivery-template}
 

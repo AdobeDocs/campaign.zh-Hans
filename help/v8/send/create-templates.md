@@ -6,10 +6,10 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: acb559c74aea3f59c05792b7596d0f85ff05047c
+source-git-commit: 5054dd1352972b402d54c1b51cfee1fb41ff4d1c
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 19%
+source-wordcount: '988'
+ht-degree: 18%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 19%
 
 ![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#delivery-template-video)
 
-在Adobe Campaign中，您可以使用两种类型的模板：
+投放模板存储在资源管理器的&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;文件夹中。 在Adobe Campaign中，您可以使用两种类型的模板：
 
 1. Adobe Campaign **内置**&#x200B;投放模板 — 每个渠道都有内置模板可用。 不得修改或删除它们。 它们包括每个投放渠道的基本配置。 作为管理员，您可以设置默认值，或限制最终用户使用某些功能，例如修改跟踪参数、发件人电子邮件地址等。 内置模板在模板列表中以粗体显示。
 
@@ -121,18 +121,19 @@ Campaign为每个渠道提供了一组内置模板：电子邮件、推送、短
 
 ### 执行模板 {#execute-a-template}
 
-您可以直接从模板列表启动模板执行，而无需先创建投放。
+您可以直接从模板列表启动模板执行，而无需先创建投放。 投放模板可以手动执行（如下所述），也可以由事件触发（在设置时间执行，当文件在服务器中可用等），如[此部分](../../automation/workflow/deliveries.md)中所述。
 
-要执行此操作，请选择要执行的模板并右键单击。 选择 **[!UICONTROL Actions>Execute the delivery template...]**。
+要手动执行模板，请执行以下步骤：
 
-您也可以使用&#x200B;**[!UICONTROL File>Actions>Execute the delivery template...]**。
+1. 选择要执行的模板并右键单击。 选择 **[!UICONTROL Actions>Execute the delivery template...]**。
 
-![](assets/execute-delivery-template.png)
+   您也可以使用&#x200B;**[!UICONTROL File>Actions>Execute the delivery template...]**。
 
-输入投放参数并单击&#x200B;**[!UICONTROL Send]**。
+   ![](assets/execute-delivery-template.png)
+
+1. 输入投放参数并单击&#x200B;**[!UICONTROL Send]**。
 
 此操作在与模板关联的文件夹中生成投放。 此投放的名称是从中创建该投放的投放模板的名称。
-
 
 ## 教程视频 {#delivery-template-video}
 

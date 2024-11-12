@@ -5,14 +5,14 @@ feature: Subscriptions
 role: User
 level: Beginner
 exl-id: d5933b12-8664-49b8-953c-ea98eb428cc2
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 08e04f3642320df94d719a415e878e3a26d2e00f
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 6%
 
 ---
 
-# 管理订阅和退订{#optin-optout}
+# 管理订阅和退订 {#optin-optout}
 
 使用Adobe Campaign创建和监控信息服务（如新闻稿），并管理这些服务的订阅/退订。 可以并行定义多种服务，例如：特定产品类别、网站主题或区域的专业通讯、各种类型警报消息的订阅和实时通知。
 

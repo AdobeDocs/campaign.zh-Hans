@@ -6,9 +6,9 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: 12de29e15d660cd5a40cda059fc19e45311fe312
+source-git-commit: 08e04f3642320df94d719a415e878e3a26d2e00f
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '990'
 ht-degree: 18%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 18%
 
 >[!NOTE]
 >
->可用的模板取决于您的访问权限、实例配置和上下文。 例如，在创建信息服务时，可以链接确认消息的投放模板：然后只能访问其目标映射为订阅映射的模板。 其他模板在此上下文中不可见。 有关详细信息，请参阅[选择目标映射](../audiences/target-mappings.md)和[服务和订阅](../start/subscriptions.md)。
+>可用的模板取决于您的访问权限、实例配置和上下文。 例如，在创建信息服务时，可以链接确认消息的投放模板：然后只能访问其目标映射为订阅映射的模板。 其他模板在此上下文中不可见。 有关详细信息，请参阅[使用目标映射](../audiences/target-mappings.md)和[管理订阅和取消订阅](../start/subscriptions.md)。
 
 
 ## 创建模板 {#create-a-delivery-template}

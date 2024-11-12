@@ -5,16 +5,16 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 5b2638927e39b6f839fb3a8639fe106d2c519fbf
+source-git-commit: 578f774152afbd42342da0f161b679ba9dd10c78
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 11%
+source-wordcount: '528'
+ht-degree: 10%
 
 ---
 
 # 设计和发送电子邮件
 
-电子邮件投放可让您向目标群体发送个性化电子邮件。 [了解详情](../send/send.md)
+使用Adobe Campaign创建电子邮件投放，向目标群体发送个性化电子邮件。 [了解详情](../send/send.md)
 
 了解在[此页面](../start/create-message.md)中创建和配置投放的关键步骤。
 
@@ -85,15 +85,16 @@ ht-degree: 11%
 
 您的第一个电子邮件投放已准备就绪。 您现在需要定义受众、验证投放并发送它。
 
-在此[用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}中了解如何导入电子邮件内容。
+在此[用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}中了解如何创建工作流以导入电子邮件内容。
 
-请在以下部分中了解详情：
-
-<!--[Design an email in Campaign]-->
-* [创建和使用电子邮件模板](../send/create-templates.md)
-* [选择电子邮件的受众](../audiences/gs-audiences.md)
-* [验证投放并发送校样](preview-and-proof.md)
-* [配置和发送投放](configure-and-send.md)
+>[!MORELIKETHIS]
+>
+>* [创建投放](../start/create-message.md)
+>* [创建并使用电子邮件模板](create-templates.md)
+>* [选择电子邮件的受众](../audiences/gs-audiences.md)
+>* [验证投放并发送校样](preview-and-proof.md)
+>* [配置并发送投放](configure-and-send.md)
+>* [投放最佳实践](../start/delivery-best-practices.md)
 
 ## 测试和验证电子邮件
 

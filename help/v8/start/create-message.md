@@ -5,16 +5,16 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: 55b752713a29c035680dd39e42422b1743e15269
+source-git-commit: 53fab31c21fdfe2f90c4793ccd025af1d5c0e061
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1523'
 ht-degree: 3%
 
 ---
 
 # 创建您的第一个投放 {#create-a-msg}
 
-在本页面中，您将了解如何创建一次性投放。 您可以创建其他类型的投放以解决您的用例。 在[此页面](gs-message.md)中进一步了解不同类型的投放以及如何创建它们。
+在本页面中，了解如何创建一次性投放。 您可以创建其他类型的投放以构建用例。 在[此页面](gs-message.md)中进一步了解不同类型的投放以及如何创建它们。
 
 创建一次性投放的关键步骤包括：
 

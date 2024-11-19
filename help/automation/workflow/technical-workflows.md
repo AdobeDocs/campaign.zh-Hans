@@ -5,9 +5,9 @@ description: 详细了解Campaign提供的技术工作流
 feature: Workflows
 role: User, Admin
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: d4e28ddf6081881f02042416aa8214761ea42be9
+source-git-commit: 4cb825c1899243e72a66b9dea2e56c45dc466fde
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1799'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,7 @@ Adobe Campaign附带一组内置的技术工作流。 他们管理计划在服�
 | **分布式营销流程** (centralLocalMgt) | 中央/本地营销（分布式营销） | 此工作流开始处理与使用分布式营销模块相关。 它可启动本地营销策划的创建，并管理与订单和营销策划包可用性相关的通知。 |
 | **事件清除** (webAnalyticsPurgeWebEvents) | 网站分析连接器 | 利用此工作流，可根据生命周期字段中配置的时段，从数据库字段删除每个事件。 |
 | **将受众导出到Adobe Experience Cloud** (exportSharedAudience) | 与Adobe Experience Cloud集成 | 此工作流可将受众作为共享受众/区段导出。 这些受众可在您使用的其他Adobe Experience Cloud解决方案中使用。 |
+| **ffdaUnsuscribe** | 默认安装 | 此工作流处理作为退回邮件接收回的取消订阅（通过使用`<mailto>` List-Unsubscribe方法）。 它每天每1小时运行一次，仅在具有企业(FFDA)部署的营销实例上运行。<br/><br/>工作流会检查inMail模块（在NmsBroadLog表的iFlags列中设置标记）标记为取消订阅退回的特定时间范围（上次处理时间和当前时间）中的broadlog，并根据是否设置了broadlog服务来处理取消订阅：<ul><li>列入阻止列表如果serviceId为0（未定义），则将收件人。</li><li>如果serviceId不是0（链接到现有服务），则收件人将取消订阅该服务。</li></ul><br/>注意：此工作流仅处理退订取消订阅；通过选择退出链接和一键式取消订阅（URL方法）完成的取消订阅在此工作流之外单独处理。 |
 | **预测** （预测） | 投放 | 此工作流会分析保存在临时日历中的投放（创建临时日志）。 默认情况下，此工作流于每日凌晨1点触发。 |
 | **完全聚合计算（propositionrcp多维数据集）** (agg_nmspropositionrcp_full) | 优惠引擎（交互） | 此工作流可更新优惠建议多维数据集的完全聚合。 默认情况下，此工作流于每日早上6点触发。 此聚合可捕获以下维度：渠道、投放、营销选件和日期。 然后，使用优惠建议多维数据集根据优惠生成报表。 在[本节](../../v8/reporting/gs-cubes.md)中了解有关多维数据集的更多信息。 |
 | **已转换联系人的标识** (webAnalyticsFindConverted) | 网站分析连接器 | 此工作流对再营销活动后完成购买的网站访客编制索引。 可以在再营销效率报表中访问通过此工作流恢复的数据（请参阅此页面）。 |

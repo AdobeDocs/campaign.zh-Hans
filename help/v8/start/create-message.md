@@ -6,15 +6,15 @@ role: User
 level: Beginner
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: 53fab31c21fdfe2f90c4793ccd025af1d5c0e061
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1523'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # 创建您的第一个投放 {#create-a-msg}
 
-在本页面中，了解如何创建一次性投放。 您可以创建其他类型的投放以构建用例。 要进一步了解不同类型的投放以及如何创建投放，请参阅[此页面](gs-message.md)。
+在本页中，了解如何创建一次性单个投放。您可以创建其他类型的投放以构建自己的用例。要进一步了解不同类型的投放以及如何创建投放，请参阅[此页面](gs-message.md)。
 
 创建一次性投放时的关键步骤包括：
 

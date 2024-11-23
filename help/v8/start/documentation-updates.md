@@ -6,10 +6,10 @@ role: User
 level: Beginner
 hidefromtoc: true
 exl-id: 3c1cae6e-0a75-4f18-b1ee-2d5fa23b4251
-source-git-commit: 4cb825c1899243e72a66b9dea2e56c45dc466fde
+source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '226'
+ht-degree: 30%
 
 ---
 
@@ -19,7 +19,8 @@ ht-degree: 0%
 
 ## 2024 年 11 月 {#october-2024}
 
-**ffdaUnsuscribe**&#x200B;工作流已添加到技术工作流列表中。[了解更多信息](../../automation/workflow/technical-workflows.md)
+* **ffdaUnsuscribe**&#x200B;工作流已添加到技术工作流列表中。 [了解更多信息](../../automation/workflow/technical-workflows.md)
+* 有关Campaign版本和升级的页面已得到改进。 [了解更多信息](upgrades.md)
 
 ## 2024 年 6 月 {#june-2024}
 

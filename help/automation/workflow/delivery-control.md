@@ -5,7 +5,7 @@ description: 了解有关投放控制工作流活动的更多信息
 feature: Workflows
 role: User
 exl-id: 09fe638d-5e1c-49d1-9196-6300c1e56703
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 5%
@@ -13,8 +13,6 @@ ht-degree: 5%
 ---
 
 # 投放控制{#delivery-control}
-
-
 
 **投放控制**&#x200B;类型的操作允许您启动、暂停或停止投放。
 
@@ -38,4 +36,4 @@ ht-degree: 5%
 
 * deliveryId
 
-投放标识符（如果所选操作为&#x200B;**[!UICONTROL Specified in the transition]**）。
+  投放标识符（如果所选操作为&#x200B;**[!UICONTROL Specified in the transition]**）。

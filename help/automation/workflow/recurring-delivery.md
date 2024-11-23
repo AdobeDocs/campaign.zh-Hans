@@ -5,9 +5,9 @@ description: 了解有关定期投放工作流活动的更多信息
 feature: Workflows
 role: User, Data Engineer
 exl-id: 27308b0d-cbfc-4bc6-9061-d771ceac95fd
-source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
+source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '257'
 ht-degree: 13%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 13%
 
 ![循环投放](assets/delivery_recurring.jpg)
 
-如果要停止运行定期投放，则应完全取消活动或停止执行活动的工作流。 从Campaign仪表板停止投放只会停止投放发生：每次执行工作流时，将继续创建定期投放的下一个实例。
+如果要停止运行定期投放，则应完全取消活动或停止执行活动的工作流。 从Campaign仪表板停止投放仅停止投放发生：每次执行工作流时，将继续创建定期投放的下一个实例。
 
 >[!NOTE]
 >

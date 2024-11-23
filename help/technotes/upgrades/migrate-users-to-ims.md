@@ -2,9 +2,9 @@
 title: 将Campaign操作员迁移到AdobeIdentity Management System (IMS)
 description: 了解如何将Campaign操作员迁移到AdobeIdentity Management System (IMS)
 exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
-source-wordcount: '1345'
+source-wordcount: '1343'
 ht-degree: 1%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 1%
 
 ## 更改了哪些内容？{#move-to-ims-changes}
 
-使用Campaign v8时，所有常规用户都应已通过AdobeAdobe Campaign System (IMS)，使用其Adobe ID连接到Identity Management客户端控制台。 但是，对于某些较旧的配置，用户/密码连接仍然可用。 **从Campaign v8.6开始将不再允许这样做。**
+使用Campaign v8时，所有常规用户都应已通过AdobeAdobe Campaign System (IMS)，使用其Adobe ID连接到Identity Management客户端控制台。 但是，对于某些较旧的配置，用户/密码连接仍然可用。 **从Campaign v8.6开始，不再允许这样做。**
 
 此外，作为加强安全和身份验证过程的一部分，Adobe Campaign客户端应用程序现在使用IMS技术帐户令牌直接调用Campaign API。 有关技术操作员的迁移详情，请参阅[此页面](ims-migration.md)中的专篇文章。
 
-此更改从Campaign v8.5.2开始适用，并且从Campaign v8.6开始将为&#x200B;**必需**。
+此更改从Campaign v8.5.2开始适用，并且从Campaign v8.6开始为&#x200B;**必需**。
 
 ## 您是否受影响？{#migrate-ims-impacts}
 

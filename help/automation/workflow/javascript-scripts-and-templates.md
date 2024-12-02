@@ -5,7 +5,7 @@ description: JavaScript 脚本和模板
 feature: Workflows
 role: Developer
 exl-id: 14160de5-23d2-4f53-84c6-0f9e3b1dcf21
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 25663b475514736f64e7216c798536d8c23e0983
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 2%
@@ -160,7 +160,7 @@ logInfo("Start date: " + task.creationDate)
 
 在活动中指定实例变量后，您可以在工作流查询中重复使用它。
 
-因此，若要在筛选器中调用变量&#x200B;**instance.vars.xxx = &quot;yyyy&quot;**，请输入&#x200B;**$(instance/vars/xxx)**。
+因此，若要在筛选器中调用变量&#x200B;**instance.vars.xxx = &quot;yyyy&quot;**，请输入&#x200B;**$(instance/vars/@xxx)**。
 
 例如：
 

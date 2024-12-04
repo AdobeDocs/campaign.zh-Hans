@@ -5,9 +5,9 @@ description: 详细了解Campaign提供的技术工作流
 feature: Workflows
 role: User, Admin
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: e8546d56232c50dbf4aedf054a7d63838e3fd957
+source-git-commit: 0a074b2ef84e89e67363b722372718e4c46d65e5
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1811'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,6 @@ Adobe Campaign附带一组内置的技术工作流。 它们控制计划在服�
 | **分布式营销流程** (centralLocalMgt) | 中央/本地营销（分布式营销） | 此工作流开始处理与使用分布式营销模块相关。 它可启动本地营销策划的创建，并管理与订单和营销策划包可用性相关的通知。 |
 | **事件清除** (webAnalyticsPurgeWebEvents) | 网站分析连接器 | 利用此工作流，可根据生命周期字段中配置的时段，从数据库字段删除每个事件。 |
 | **将受众导出到Adobe Experience Cloud** (exportSharedAudience) | 与Adobe Experience Cloud集成 | 此工作流可将受众作为共享受众/区段导出。 这些受众可在您使用的其他Adobe Experience Cloud解决方案中使用。 |
-| **ffdaUnsuscribe** | 默认安装 | 此工作流处理作为退回邮件接收回的取消订阅（通过使用`<mailto>` List-Unsubscribe方法）。 它每天每1小时运行一次，仅在具有企业(FFDA)部署的营销实例上运行。<br/><br/>工作流会检查inMail模块（在NmsBroadLog表的iFlags列中设置标记）标记为取消订阅退回的特定时间范围（上次处理时间和当前时间）中的broadlog，并根据是否设置了broadlog服务来处理取消订阅：<ul><li>列入阻止列表如果serviceId为0（未定义），则将收件人。</li><li>如果serviceId不是0（链接到现有服务），则收件人将取消订阅该服务。</li></ul><br/>注意：此工作流仅处理退订取消订阅；通过选择退出链接和一键式取消订阅（URL方法）完成的取消订阅在此工作流之外单独处理。 |
 | **预测** （预测） | 默认安装 | 此工作流会分析保存在临时日历中的投放（创建临时日志）。 默认情况下，此工作流于每日凌晨1点触发。 |
 | **完全聚合计算（propositionrcp多维数据集）** (agg_nmspropositionrcp_full) | 优惠引擎（交互） | 此工作流可更新优惠建议多维数据集的完全聚合。 默认情况下，此工作流于每日早上6点触发。 此聚合可捕获以下维度：渠道、投放、营销选件和日期。 然后，使用优惠建议多维数据集根据优惠生成报表。 在[本节](../../v8/reporting/gs-cubes.md)中了解有关多维数据集的更多信息。 |
 | **已转换联系人的标识** (webAnalyticsFindConverted) | 网站分析连接器 | 此工作流对再营销活动后完成购买的网站访客编制索引。 可以在再营销效率报表中访问通过此工作流恢复的数据（请参阅此页面）。 |
@@ -82,3 +81,4 @@ Adobe Campaign附带一组内置的技术工作流。 它们控制计划在服�
 | **跟踪** （跟踪） | 默认安装 | 此工作流执行跟踪信息的恢复和整合。 它还确保重新计算跟踪和投放统计数据，特别是消息中心归档工作流使用的统计数据。 默认情况下，每小时触发一次。 |
 | **更新事件状态** (updateEventsStatus) | 事务性消息执行（消息中心 — 执行） | 利用此工作流，可为事件分配状态。 事件状态如下：<ul><li>挂起：事件在队列中。 尚未为其关联任何消息模板。</li><li>待处理投放：事件处于队列中，已关联消息模板且投放当前正在处理该模板。</li><li>已发送：此状态复制于投放日志。 这意味着投放已发送。</li><li>被投放忽略：此状态复制于投放日志。 这意味着该投放已被忽略。</li><li>投放错误：此状态复制于投放日志。 这意味着投放已失败。</li><li>事件未被覆盖：该事件未能与消息模板相关联。 将不会重新处理该事件。</li></ul> |
 | **可投放性更新** (deliverabilityUpdate) | 默认安装 | 安装可投放性监控（电子邮件可投放性）包后，此工作流将在夜间运行，并管理退回电子邮件鉴别规则以及域和MX的列表。 这要求在平台上打开HTTPS端口。 |
+| **更新取消订阅** (ffdaUnsuscribe) | 默认仅在[Campaign Enterprise (FFDA)部署](../../v8/architecture/enterprise-deployment.md)上安装 | 此工作流处理作为退回邮件接收回的取消订阅（通过使用`<mailto>` List-Unsubscribe方法）。 它每天每1小时运行一次，仅在具有企业(FFDA)部署的营销实例上运行。<br/><br/>工作流会检查inMail模块（在NmsBroadLog表的iFlags列中设置标记）标记为取消订阅退回的特定时间范围（上次处理时间和当前时间）中的broadlog，并根据是否设置了broadlog服务来处理取消订阅：<ul><li>列入阻止列表如果serviceId为0（未定义），则将收件人。</li><li>如果serviceId不是0（链接到现有服务），则收件人将取消订阅该服务。</li></ul><br/>注意：此工作流仅处理退订取消订阅；通过选择退出链接和一键式取消订阅（URL方法）完成的取消订阅在此工作流之外单独处理。 |

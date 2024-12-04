@@ -5,48 +5,41 @@ description: 详细了解Campaign提供的技术工作流
 feature: Workflows
 role: User, Admin
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: 4cb825c1899243e72a66b9dea2e56c45dc466fde
+source-git-commit: 97ab8259c0044b65fec2ad5ddc44d28f0cbf65e5
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1804'
 ht-degree: 0%
 
 ---
 
 # 技术工作流{#about-technical-workflows}
 
-Adobe Campaign附带一组内置的技术工作流。 他们管理计划在服务器上定期执行的操作和作业。 它们允许您对数据库执行维护、转发投放跟踪信息或设置投放的临时流程。 技术工作流是通过&#x200B;**[!UICONTROL Administration > Production > Technical workflows]**&#x200B;节点配置的。
-
-![](assets/navtree.png)
-
-本机模板可用于创建技术工作流。 它们可以根据您的需求进行配置。
-
-**[!UICONTROL Campaign process]**&#x200B;子文件夹集中了在营销活动中执行流程所需的工作流：任务通知、库存管理、成本计算等。
-
-![](assets/campaign-processes-wf.png)
-
-
->[!NOTE]
->
->与每个模块一起安装的技术工作流的列表可在[专用部分](technical-workflows.md)中找到。
-
-您可以在树结构的&#x200B;**[!UICONTROL Administration > Production > Technical workflows]**&#x200B;节点中创建其他技术工作流。 但是，此过程是为专家用户保留的。
-
-提供的活动与定位工作流相同。 [了解详情](targeting-workflows.md)
-
-此部分中详细介绍的工作流与其他Adobe Campaign内置包一起安装。 这些软件包和相关技术工作流取决于您的许可协议。
+Adobe Campaign附带一组内置的技术工作流。 它们控制计划在服务器上定期执行的操作和作业。 技术工作流对您的Campaign数据库执行维护操作，管理投放跟踪数据，并对投放设置临时流程。
 
 默认情况下，技术工作流在以下节点的子文件夹中可用： **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**。
 
-请注意，技术工作流只能由具有管理权限的操作员启动和修改。
+![](assets/navtree.png){width="50%" align="center" zoomable="yes"}
 
 >[!NOTE]
 >
->默认情况下，**[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technical workflows]**&#x200B;节点中提供了与消息中心加载项相关的技术工作流。
+>* [此部分](#list-technical-workflows)中提供了与每个模块一起安装的技术工作流的列表。
+>
+>* 默认情况下，与消息中心加载项相关的技术工作流存储在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technical workflows]**&#x200B;节点中。
 
-在此[专用部分](monitor-technical-workflows.md)中了解如何监测技术工作流。
+**[!UICONTROL Campaign process]**&#x200B;子文件夹集中了在营销活动中执行流程所需的工作流：任务通知、库存管理、成本计算等。
 
+![](assets/campaign-processes-wf.png){width="70%" align="center" zoomable="yes"}
+
+
+## 管理和创建技术工作流 {#manage-tech-workflows}
+
+营销活动技术工作流只能由具有&#x200B;**管理**&#x200B;权限的操作员启动和修改。 在此[专用部分](monitor-technical-workflows.md)中了解如何监测技术工作流。
+
+您可以在树结构的&#x200B;**[!UICONTROL Administration > Production > Technical workflows]**&#x200B;节点中创建自定义技术工作流。 本机模板可用于创建技术工作流。 它们可以根据您的需求进行配置。 但是，此过程是为专家用户保留的。 技术工作流中可用的活动与定位工作流中的活动相同。 [了解详情](targeting-workflows.md)。
 
 ## 技术工作流列表 {#list-technical-workflows}
+
+本页中详细介绍的工作流随Adobe Campaign内置包一起安装。 这些软件包以及相关的技术工作流取决于您的许可协议和加载项。
 
 | 技术工作流 | 包 | 说明 |
 |------|--------|-----------|
@@ -59,12 +52,12 @@ Adobe Campaign附带一组内置的技术工作流。 他们管理计划在服�
 | **数据库清理** （清理） | 默认安装 | 此工作流是数据库维护工作流：它根据统计和进程进行不同的计算，并根据部署助理中定义的配置从数据库中删除过时的数据。 默认情况下，此工作流于每日凌晨4点触发。 |
 | **删除阻止的LINE用户** (deleteBlockedLineUsersV2) | LINE 渠道 | 此工作流可确保在阻止LINE正式帐户180天后，删除LINE V2用户的数据。 |
 | **删除隐私请求数据** (deletePrivacyRequestsData) | 隐私数据保护条例 | 此工作流会删除存储在Adobe Campaign中的收件人数据。 |
-| **传递指示器** (deliveryIndicators) | 中间源平台 | 此工作流可更新投放的投放跟踪指示器。 默认情况下，此工作流每小时触发一次。 |
+| **传递指示器** (deliveryIndicators) | 默认安装 | 此工作流可更新投放的投放跟踪指示器。 默认情况下，此工作流每小时触发一次。 |
 | **分布式营销流程** (centralLocalMgt) | 中央/本地营销（分布式营销） | 此工作流开始处理与使用分布式营销模块相关。 它可启动本地营销策划的创建，并管理与订单和营销策划包可用性相关的通知。 |
 | **事件清除** (webAnalyticsPurgeWebEvents) | 网站分析连接器 | 利用此工作流，可根据生命周期字段中配置的时段，从数据库字段删除每个事件。 |
 | **将受众导出到Adobe Experience Cloud** (exportSharedAudience) | 与Adobe Experience Cloud集成 | 此工作流可将受众作为共享受众/区段导出。 这些受众可在您使用的其他Adobe Experience Cloud解决方案中使用。 |
 | **ffdaUnsuscribe** | 默认安装 | 此工作流处理作为退回邮件接收回的取消订阅（通过使用`<mailto>` List-Unsubscribe方法）。 它每天每1小时运行一次，仅在具有企业(FFDA)部署的营销实例上运行。<br/><br/>工作流会检查inMail模块（在NmsBroadLog表的iFlags列中设置标记）标记为取消订阅退回的特定时间范围（上次处理时间和当前时间）中的broadlog，并根据是否设置了broadlog服务来处理取消订阅：<ul><li>列入阻止列表如果serviceId为0（未定义），则将收件人。</li><li>如果serviceId不是0（链接到现有服务），则收件人将取消订阅该服务。</li></ul><br/>注意：此工作流仅处理退订取消订阅；通过选择退出链接和一键式取消订阅（URL方法）完成的取消订阅在此工作流之外单独处理。 |
-| **预测** （预测） | 投放 | 此工作流会分析保存在临时日历中的投放（创建临时日志）。 默认情况下，此工作流于每日凌晨1点触发。 |
+| **预测** （预测） | 默认安装 | 此工作流会分析保存在临时日历中的投放（创建临时日志）。 默认情况下，此工作流于每日凌晨1点触发。 |
 | **完全聚合计算（propositionrcp多维数据集）** (agg_nmspropositionrcp_full) | 优惠引擎（交互） | 此工作流可更新优惠建议多维数据集的完全聚合。 默认情况下，此工作流于每日早上6点触发。 此聚合可捕获以下维度：渠道、投放、营销选件和日期。 然后，使用优惠建议多维数据集根据优惠生成报表。 在[本节](../../v8/reporting/gs-cubes.md)中了解有关多维数据集的更多信息。 |
 | **已转换联系人的标识** (webAnalyticsFindConverted) | 网站分析连接器 | 此工作流对再营销活动后完成购买的网站访客编制索引。 可以在再营销效率报表中访问通过此工作流恢复的数据（请参阅此页面）。 |
 | **从Adobe Experience Cloud导入受众** (importSharedAudience) | 与Adobe Experience Cloud集成 | 利用此工作流，可将不同Adobe Experience Cloud解决方案的受众/区段导入Adobe Campaign。 |

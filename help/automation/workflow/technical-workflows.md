@@ -5,9 +5,9 @@ description: 详细了解Campaign提供的技术工作流
 feature: Workflows
 role: User, Admin
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: 97ab8259c0044b65fec2ad5ddc44d28f0cbf65e5
+source-git-commit: e8546d56232c50dbf4aedf054a7d63838e3fd957
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1803'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Adobe Campaign附带一组内置的技术工作流。 它们控制计划在服�
 
 默认情况下，技术工作流在以下节点的子文件夹中可用： **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**。
 
-![](assets/navtree.png){width="50%" align="center" zoomable="yes"}
+![](assets/navtree.png){width="50%" align="left" zoomable="yes"}
 
 >[!NOTE]
 >
@@ -28,8 +28,7 @@ Adobe Campaign附带一组内置的技术工作流。 它们控制计划在服�
 
 **[!UICONTROL Campaign process]**&#x200B;子文件夹集中了在营销活动中执行流程所需的工作流：任务通知、库存管理、成本计算等。
 
-![](assets/campaign-processes-wf.png){width="70%" align="center" zoomable="yes"}
-
+![](assets/campaign-processes-wf.png)
 
 ## 管理和创建技术工作流 {#manage-tech-workflows}
 
@@ -37,7 +36,7 @@ Adobe Campaign附带一组内置的技术工作流。 它们控制计划在服�
 
 您可以在树结构的&#x200B;**[!UICONTROL Administration > Production > Technical workflows]**&#x200B;节点中创建自定义技术工作流。 本机模板可用于创建技术工作流。 它们可以根据您的需求进行配置。 但是，此过程是为专家用户保留的。 技术工作流中可用的活动与定位工作流中的活动相同。 [了解详情](targeting-workflows.md)。
 
-## 技术工作流列表 {#list-technical-workflows}
+## 内置技术工作流 {#list-technical-workflows}
 
 本页中详细介绍的工作流随Adobe Campaign内置包一起安装。 这些软件包以及相关的技术工作流取决于您的许可协议和加载项。
 

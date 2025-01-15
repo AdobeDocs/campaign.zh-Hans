@@ -5,9 +5,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 87426a5924e1044faf212631ba868753ae43fad6
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1029'
 ht-degree: 8%
 
 ---
@@ -106,6 +106,10 @@ The web access interface is similar to the console interface. From a browser, yo
 作为Campaign v8客户端控制台用户，从v8.6.1版本开始，您现在可以通过Adobe Experience Cloud中央用户界面访问Web环境。 Experience Cloud 是 Adobe 的数字营销应用程序、产品和服务的集成系列。通过其直观的界面，您可以快速访问云应用程序、产品功能和服务。
 
 ![Adobe Campaign Web用户界面主页](assets/ac-web-home.png)
+
+>[!AVAILABILITY]
+>Campaign Web用户界面仅适用于通过Adobe ID连接到Adobe Campaign的用户。 了解有关[AdobeIdentity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}的更多信息。
+>
 
 在[本文档](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=zh-Hans){target="_blank"}中进一步了解新的Campaign Web用户界面。
 

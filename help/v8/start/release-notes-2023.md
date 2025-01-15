@@ -5,17 +5,25 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b860c843-155e-4abb-bdd6-b68dc7eaa0ee
-source-git-commit: ad198540dc65152680e1d14c45286b94397948fd
+source-git-commit: fe96eb65ac04fc2b89f0dfe1e8ed4286223c3f85
 workflow-type: tm+mt
-source-wordcount: '1474'
-ht-degree: 57%
+source-wordcount: '1496'
+ht-degree: 56%
 
 ---
 
-# 2023版发行说明 {#2023-rn}
+# 2023 年发行说明 {#2023-rn}
 
 此页面列出了&#x200B;**2023 Campaign v8版本**&#x200B;中的新功能、改进和修复。
 
+>[!BEGINSHADEBOX]
+
+在此页中&#x200B;****
+
+* Campaign v8.5 - [版本8.5.1](#release-8-5-1) | [版本8.5.2](#release-8-5-2)
+* Campaign v8.4 - [版本8.4.3](#release-8-4-3) | [版本8.4.4](#release-8-4-4) | [版本8.4.5](#release-8-4-5)
+
+>[!ENDSHADEBOX]
 
 ## 版本 8.5.2 {#release-8-5-2}
 
@@ -139,7 +147,7 @@ _2023 年 1 月 27 日_
 * 改进了 Web 应用程序的安全性，从而防止 DDoS 攻击。(NEO-50757) <!--OKKKK-->
 * 改进了 **[!UICONTROL Consolidated tracking]**(nms:trackingStats) FDA 表中整合跟踪数据的管理，从而避免出现重复。(NEO-46409)
 * 修复了在逻辑运算符条件中使用 `enableIf` 时工作流查询中出现的逻辑运算符问题。以前的逻辑条件被覆盖。(NEO-45815)  <!--OKKKK-->
-* 优化了计费工作流中活动用户档案的生成，从而提高性能。(NEO-47658) <!--OKKKK-->
+* 优化了计费工作流中活动轮廓的生成，从而提高性能。(NEO-47658) <!--OKKKK-->
 * 修复了当映像节点 (img) 包含具有个性化字段的 URL 时，HTML 文件导入的问题。(NEO-48396)
 * 修复了在&#x200B;**拆分**&#x200B;工作流活动中使用排序参数时出现的 Snowflake（所有部署）问题。(NEO-45899) <!--OKKKK-->
 * 修复了对 nmsDeliveryMapping 文件夹具有读取访问权限的用户尝试运行活动或工作流时会导致错误的问题。(NEO-48230)

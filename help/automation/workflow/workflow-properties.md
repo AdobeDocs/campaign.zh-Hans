@@ -4,16 +4,14 @@ title: 工作流属性
 description: 了解关于Campaign工作流属性的更多信息
 feature: Workflows
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 63b7eaba3ea7b580d9b6c3c0e0c015c057539aa8
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 39%
+source-wordcount: '628'
+ht-degree: 34%
 
 ---
 
 # 工作流属性{#workflow-properties}
-
-
 
 ## “执行”选项卡 {#execution-tab}
 
@@ -54,6 +52,16 @@ ht-degree: 39%
 * **[!UICONTROL Execute in the engine]**
 
   此选项只能用于调试，不能用于生产。 启用后，工作流将具有优先级，并且所有其他工作流将停止，直到此工作流完成。
+
+* **[!UICONTROL Enable watchdog supervisor to keep workflow running permanently]**
+
+  此选项强制工作流在错误发生后自动重新启动。 启用后，重新启动将每30秒检查一次工作流的状态，并在需要时重新启动。 要调整30秒间隔，您可以创建`XtkWorkflow_WatchdogTimerTimeout`技术选项并使用整数数据类型指定所需的延迟。
+
+  >[!NOTE]
+  >
+  >此选项针对高级用户，应仅针对&#x200B;**技术工作流**&#x200B;启用。
+  >
+  >默认情况下，`fullFdaMkt`包提供的集中式复制工作流将启用此功能。
 
 ### 错误管理 {#error-management}
 

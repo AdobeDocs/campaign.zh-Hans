@@ -5,7 +5,7 @@ feature: Experience Platform Integration
 role: Data Engineer
 level: Beginner
 exl-id: 565a1c8b-1930-4b43-bc11-ae517df077d6
-source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
+source-git-commit: 02d7909c409bd25cfa3cc7aad189247ce7b5176e
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 1%
@@ -121,7 +121,7 @@ setOption("IMS_CLIENT_API_KEY", cryptString('CLIENT ID'));
 
 现在，Campaign中已配置身份验证选项，您需要创建自定义JavaScript代码，以允许从登陆页面在Campaign和Adobe Experience Platform之间同步数据。
 
-## 在工作流执行时添加选项 {#javacript}
+## 在工作流执行时添加选项 {#javascript}
 
 要允许在登陆页面与Adobe Experience Platform之间同步数据，必须将自定义JavaScript代码添加到Adobe Campaign中。 执行以下步骤：
 

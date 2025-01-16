@@ -5,10 +5,10 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
-workflow-type: ht
-source-wordcount: '688'
-ht-degree: 100%
+source-git-commit: a9f26a033d63ab1dece9ef9780392823ee130047
+workflow-type: tm+mt
+source-wordcount: '691'
+ht-degree: 99%
 
 ---
 
@@ -101,17 +101,17 @@ ht-degree: 100%
          + [收集和处理事件](send/event-processing.md)
          + [了解事件描述](send/event-description.md)
          + [发送和监测消息](send/delivery-execution.md)
-+ 用户档案和受众管理 {#audience}
-   + [用户档案和受众入门](audiences/gs-audiences.md)
++ 轮廓和受众管理 {#audience}
+   + [轮廓和受众入门](audiences/gs-audiences.md)
    + [使用受众](start/audiences.md)
-   + [访问用户档案](audiences/view-profiles.md)
-   + 添加用户档案 {#add-profiles}
-      + [手动创建用户档案](audiences/create-profiles.md)
-      + [从文件导入用户档案](audiences/import-profiles.md)
-      + [使用外部用户档案](audiences/external-profiles.md)
-      + [在 Web 窗体中收集用户档案数据](audiences/collect-profiles.md)
+   + [访问轮廓](audiences/view-profiles.md)
+   + 添加轮廓 {#add-profiles}
+      + [手动创建轮廓](audiences/create-profiles.md)
+      + [从文件导入轮廓](audiences/import-profiles.md)
+      + [使用外部轮廓](audiences/external-profiles.md)
+      + [在 Web 窗体中收集轮廓数据](audiences/collect-profiles.md)
       + [使用目标映射](audiences/target-mappings.md)
-      + [创建测试用户档案](audiences/test-profiles.md)
+      + [创建测试轮廓](audiences/test-profiles.md)
    + 创建受众 {#create-audiences}
       + [创建联系人列表](audiences/create-audiences.md)
       + [创建和管理过滤器](audiences/create-filters.md)
@@ -119,6 +119,7 @@ ht-degree: 100%
    + [最佳实践](audiences/audiences-best-practices.md)
    + [管理订阅](start/subscriptions.md)
 + 内容管理 {#content}
+   + [创建登陆页面](dev/landing-pages.md)
    + [设计 Web 应用程序和表单](dev/webapps.md)
 + 自动化和工作流{#automation}
    + [Campaign 自动化指南 >](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/home)
@@ -167,8 +168,8 @@ ht-degree: 100%
 + 集成 {#connect}
    + [将 Campaign 与其他解决方案配合使用](connect/integration.md)
    + Campaign + Experience 平台{#ac-aep}
-      + [共享和同步受众及用户档案属性](connect/ac-aep.md)
-      + [从 Campaign 登陆页更新 AEP 用户档案](connect/ac-aep-landing-pages.md)
+      + [共享和同步受众及轮廓属性](connect/ac-aep.md)
+      + [从 Campaign 登陆页更新 AEP 轮廓](connect/ac-aep-landing-pages.md)
    + [Campaign + Journey Optimizer](connect/ac-ajo.md)
    + [Campaign + Analytics](connect/ac-aa.md)
    + [Campaign + Experience Manager](connect/ac-aem.md)

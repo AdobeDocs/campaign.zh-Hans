@@ -5,9 +5,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 87426a5924e1044faf212631ba868753ae43fad6
+source-git-commit: a9f26a033d63ab1dece9ef9780392823ee130047
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1055'
 ht-degree: 8%
 
 ---
@@ -25,6 +25,11 @@ ht-degree: 8%
   在[本节](../start/connect.md)中了解如何安装和配置Campaign客户端控制台。
 
 * **Web用户界面** — 作为Campaign v8用户，从v8.6.1版本开始，您现在可以通过Adobe Experience Cloud中央用户界面访问Web环境。 然后，您可以从Web浏览器连接到Adobe Campaign。 通过这个新的界面，您可以创建、管理和执行重要的营销行动。 但是，并非所有Campaign功能都可用。 [了解详情](#ac-web-ui)。
+
+  >[!AVAILABILITY]
+  >
+  >Campaign Web用户界面仅适用于通过Adobe ID连接到Adobe Campaign的用户。 了解有关[AdobeIdentity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}的更多信息。
+  >
 
 * **Web访问** - Adobe Campaign Web访问功能允许您使用HTML用户界面通过Web浏览器访问Campaign功能的子集。 使用此Web界面可访问报告、控制和验证消息、访问监控功能板等。  在本节](../start/connect.md#web-access)中了解有关Campaign Web Access [的更多信息。
 
@@ -108,6 +113,7 @@ The web access interface is similar to the console interface. From a browser, yo
 ![Adobe Campaign Web用户界面主页](assets/ac-web-home.png)
 
 >[!AVAILABILITY]
+>
 >Campaign Web用户界面仅适用于通过Adobe ID连接到Adobe Campaign的用户。 了解有关[AdobeIdentity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}的更多信息。
 >
 

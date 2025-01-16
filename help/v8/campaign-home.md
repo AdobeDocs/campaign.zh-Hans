@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 description: Campaign v8 帮助中心
 title: Adobe Campaign v8 产品文档
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
-workflow-type: ht
-source-wordcount: '342'
-ht-degree: 100%
+source-git-commit: 11614d555aa250adfcabce40dedb455328845eaa
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 98%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 100%
 
 >[!BEGINTABS]
 
->[!TAB Campaign v8.7.2 版本现已上线]
+>[!TAB Campaign v8.6.4版本已上线]
 
-Adobe Campaign 最新版本现已上线。此版本为&#x200B;**有限发布版** (LA)。阅读发行说明以了解更多详细信息。
+Adobe Campaign 最新版本现已上线。阅读发行说明以了解更多详细信息。
 
 [![image](assets/do-not-localize/learn-more-button.svg)](start/release-notes.md)
 
@@ -60,7 +60,7 @@ Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 �
     </div></td>
     <td>
     <a href="audiences/create-profiles.md"><img src="assets/do-not-localize/start-profiles.png"></a>
-    <div><strong>导入用户档案</strong><br/>探索如何在 Adobe Campaign v8 数据库中轻松创建用户档案。手动或通过导入添加用户档案，轻松优化客户数据和自定义营销活动。</div>
+    <div><strong>导入轮廓</strong><br/>探索如何在 Adobe Campaign v8 数据库中轻松创建轮廓。手动或通过导入添加轮廓，轻松优化客户数据和自定义营销活动。</div>
     </td>
   </tr>
   <tr style="border: 0;">
@@ -88,14 +88,14 @@ Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 �
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>发送消息</strong><br/><a href="start/create-message.md">入门</a> - <a href="send/preview-and-proof.md">预览和验证</a> - <a href="send/predictive.md">发送时间优化</a> - <a href="reporting/gs-reporting.md">报告与分析</a>
+      <strong>发送消息</strong><br/><a href="start/create-message.md">入门</a> - <a href="send/preview-and-proof.md">预览和校样</a> - <a href="send/predictive.md">发送时间优化</a> - <a href="reporting/gs-reporting.md">报告与分析</a>
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
       <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
     <br/>
-      <strong>用户档案和受众</strong><br/><a href="audiences/create-profiles.md">添加用户档案</a> - <a href="audiences/create-audiences.md">创建受众</a> - <a href="start/subscriptions.md">管理订阅</a> - <a href="start/privacy.md">隐私</a>
+      <strong>轮廓和受众</strong><br/><a href="audiences/create-profiles.md">添加轮廓</a> - <a href="audiences/create-audiences.md">创建受众</a> - <a href="start/subscriptions.md">管理订阅</a> - <a href="start/privacy.md">隐私</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-configure.svg" width="35px">

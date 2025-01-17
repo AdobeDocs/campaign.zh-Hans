@@ -5,7 +5,7 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 35702b81-1984-4a62-8f00-c2bc32ab2b42
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 1cb92c6075e9478b641b11eae52372a909258cd3
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 1%
@@ -22,6 +22,11 @@ ht-degree: 1%
 ## 关于电子邮件密送 {#gs-bcc}
 
 您可以配置Adobe Campaign以保留从您的平台发送的电子邮件副本。 此选项允许您使用专用的密件抄送（密件抄送）电子邮件地址发送邮件，可以从此处使用外部系统处理和存档邮件。
+
+>[!CAUTION]
+>
+>出于隐私原因，密件抄送电子邮件必须由能够安全存储个人身份信息(PII)的归档系统处理。
+
 Adobe Campaign本身不会管理存档文件。 然后，对应于所发送电子邮件的.eml文件可以传送到远程服务器，如SMTP电子邮件服务器。
 
 存档目标是您选择的密件抄送电子邮件地址，该地址对投放收件人保持不可见。 定义密件抄送电子邮件地址后，必须在[投放模板](create-templates.md)级别启用专用选项。
@@ -29,11 +34,6 @@ Adobe Campaign本身不会管理存档文件。 然后，对应于所发送电�
 >[!NOTE]
 >
 >作为托管Cloud Service用户，[联系Adobe](../start/campaign-faq.md#support){target="_blank"}以传达要用于归档的密件抄送电子邮件地址。
-
->[!CAUTION]
->
->出于隐私原因，密件抄送电子邮件必须由能够安全存储个人身份信息(PII)的归档系统处理。
-
 
 ## 启用电子邮件密送 {#enable-bcc}
 

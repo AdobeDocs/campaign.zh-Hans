@@ -5,9 +5,9 @@ description: 详细了解Campaign提供的技术工作流
 feature: Workflows
 role: User, Admin
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: 0a074b2ef84e89e67363b722372718e4c46d65e5
+source-git-commit: b8f774ce507cff67163064b6bd1341b31512c08f
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '2064'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,7 @@ Adobe Campaign附带一组内置的技术工作流。 它们控制计划在服�
 | **删除阻止的LINE用户** (deleteBlockedLineUsersV2) | LINE 渠道 | 此工作流可确保在阻止LINE正式帐户180天后，删除LINE V2用户的数据。 |
 | **删除隐私请求数据** (deletePrivacyRequestsData) | 隐私数据保护条例 | 此工作流会删除存储在Adobe Campaign中的收件人数据。 |
 | **传递指示器** (deliveryIndicators) | 默认安装 | 此工作流可更新投放的投放跟踪指示器。 默认情况下，此工作流每小时触发一次。 |
+| **立即部署FFDA** (ffdaDeploy) | 默认仅在[Campaign Enterprise (FFDA)部署](../../v8/architecture/enterprise-deployment.md)上安装 | 对云数据库执行立即部署。 [了解有关数据复制的更多信息](../../v8/architecture/replication.md) |
 | **分布式营销流程** (centralLocalMgt) | 中央/本地营销（分布式营销） | 此工作流开始处理与使用分布式营销模块相关。 它可启动本地营销策划的创建，并管理与订单和营销策划包可用性相关的通知。 |
 | **事件清除** (webAnalyticsPurgeWebEvents) | 网站分析连接器 | 利用此工作流，可根据生命周期字段中配置的时段，从数据库字段删除每个事件。 |
 | **将受众导出到Adobe Experience Cloud** (exportSharedAudience) | 与Adobe Experience Cloud集成 | 此工作流可将受众作为共享受众/区段导出。 这些受众可在您使用的其他Adobe Experience Cloud解决方案中使用。 |
@@ -74,6 +75,13 @@ Adobe Campaign附带一组内置的技术工作流。 它们控制计划在服�
 | **正在处理实时事件** (rtEventsProcessing) | 事务性消息执行（消息中心 — 执行） | 通过此工作流，在将实时事件与消息模板关联之前，您可以先将它们放入队列中。 |
 | **建议同步** (propositionSynch) | 使用执行实例控制优惠引擎 | 此工作流在营销实例和用于交互的执行实例之间同步建议。 |
 | **恢复Web事件** (webAnalyticsGetWebEvents) | 网站分析连接器 | 每小时，此工作流会下载给定网站上的Internet用户行为区段，将它们放入Adobe Campaign数据库并启动再营销工作流。 |
+| **立即复制FFDA数据** (ffdaReplicate) | 默认仅在[Campaign Enterprise (FFDA)部署](../../v8/architecture/enterprise-deployment.md)上安装 | 复制给定外部帐户的XS数据。 [了解有关数据复制的更多信息](../../v8/architecture/replication.md) |
+| **复制nmsDelivery队列** (ffdaReplicateQueueDelivery) | 默认仅在[Campaign Enterprise (FFDA)部署](../../v8/architecture/enterprise-deployment.md)上安装 | `nms:delivery`表的队列。 [了解有关数据复制的更多信息](../../v8/architecture/replication.md) |
+| **复制nmsDlvExclusion队列** (ffdaReplicateQueueDlvExclusion) | 默认仅在[Campaign Enterprise (FFDA)部署](../../v8/architecture/enterprise-deployment.md)上安装 | `nms:dlvExclusion`表的队列。 [了解有关数据复制的更多信息](../../v8/architecture/replication.md) |
+| **复制nmsDlvMidRemoteIdRel队列** (ffdaReplicateQueueDlvMidRemoteIdRel) | 默认仅在[Campaign Enterprise (FFDA)部署](../../v8/architecture/enterprise-deployment.md)上安装 | `nms:dlvRemoteIdRel`表的队列。 [了解有关数据复制的更多信息](../../v8/architecture/replication.md) |
+| **复制nmsTrackingUrl队列** (ffdaReplicateQueueTrackingUrl)<br/>**以并行方式复制nmsTrackingUrl队列** (ffdaReplicateQueueTrackingUrl_2) | 默认仅在[Campaign Enterprise (FFDA)部署](../../v8/architecture/enterprise-deployment.md)上安装 | `nms:trackingUrl`表的并发队列，利用两个工作流根据不同的优先级处理请求，从而提高效率。 [了解有关数据复制的更多信息](../../v8/architecture/replication.md) |
+| **复制引用表** (ffdaReplicateReferenceTables) | 默认仅在[Campaign Enterprise (FFDA)部署](../../v8/architecture/enterprise-deployment.md)上安装 | 执行需要存在于Campaign本地数据库(PostgreSQL)和云数据库([!DNL Snowflake])上的内置表的自动复制。 按计划每天每小时执行一次。 如果存在&#x200B;**lastModified**&#x200B;字段，则会增量进行复制，否则将复制整个表。 [了解有关数据复制的更多信息](../../v8/architecture/replication.md) |
+| **复制暂存数据** (ffdaReplicateStagingData) | 默认仅在[Campaign Enterprise (FFDA)部署](../../v8/architecture/enterprise-deployment.md)上安装 | 为单一调用复制暂存数据。 按计划每天每小时执行一次。 [了解有关数据复制的更多信息](../../v8/architecture/replication.md) |
 | **报告聚合** (reportingAggregates) | 投放 | 此工作流可更新报告中使用的聚合。 默认情况下，此工作流于每日凌晨2点触发。 |
 | **发送指标和营销活动属性** (webAnalyticsSendMetrics) | 网站分析连接器 | 此工作流可让您通过Adobe® Analytics连接器，将电子邮件营销活动指标从Adobe Campaign发送到Adobe Experience Cloud套件。 相关指示器如下所示： Sent (iSent)、打开总数(iTotalRecipientOpen)、点击的收件人总数(iTotalRecipientClick)、错误(iError)、选择退出（选择退出）(iOptOut)。 |
 | **Stock：订单和警报** (stockMgt) | 默认安装 | 此工作流可启动订单行上的库存计算，并管理警告警报阈值。 |

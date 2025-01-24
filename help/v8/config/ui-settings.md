@@ -6,7 +6,7 @@ feature: Application Settings
 role: Admin, Developer
 level: Beginner
 exl-id: 9fa6fc42-45be-41db-9b4a-19b3b0c40dcd
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 2f7496a0376776d35cf88b0e81365f6e414655fd
 workflow-type: tm+mt
 source-wordcount: '1848'
 ht-degree: 12%
@@ -30,7 +30,7 @@ ht-degree: 12%
 
 在[此页面](../audiences/folders-and-views.md)中了解如何管理文件夹和视图
 
-## 管理和自定义列表{#customize-lists}
+## 管理和自定义列表 {#customize-lists}
 
 在Campaign客户端控制台中，数据显示在列表中。 您可以根据自己的需求调整这些列表。 例如，您可以添加列、过滤数据、计算记录、保存和共享设置。
 

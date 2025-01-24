@@ -4,16 +4,19 @@ description: 登陆页面入门
 feature: Landing Pages
 role: User, Developer
 level: Beginner
-source-git-commit: 45999f56c2d9e4417c6a54987d8395b69cdd2b2f
+exl-id: ad639a39-f011-4f0f-9db6-d06078f2e7a2
+source-git-commit: 2f7496a0376776d35cf88b0e81365f6e414655fd
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 8%
+source-wordcount: '228'
+ht-degree: 24%
 
 ---
 
 # 创建和管理登陆页面 {#ac-gs-lp}
 
-[Adobe Campaign v8 Web用户界面](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui)为登陆页面提供了重新设计的用户体验。 Campaign允许您创建、设计和共享登陆页面。 通过登陆页面，您可以将用户定向到在线表单，他们可以在其中更新数据、选择加入/退出接收您的通信或订阅特定服务（如新闻稿）。 作为Campaign v8用户，您可以访问此新用户界面以执行任务，并简化您使用Adobe Campaign的体验。 了解有关
+借助登陆页面，可将用户定向到在线表单，用户可从中更新其数据，选择启用/禁用接收通信，或订阅特定服务（如新闻稿）。
+
+要创建登陆页面，请浏览到[Web用户界面](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui)。 Adobe Campaign重新设计了登陆页面的用户体验，仅在Web用户界面中可用。
 
 
 >[!AVAILABILITY]

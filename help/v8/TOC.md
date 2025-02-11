@@ -5,9 +5,9 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: a9f26a033d63ab1dece9ef9780392823ee130047
+source-git-commit: d50c746d11b6f1bb0b5af0d5ddab5660b99dc359
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '692'
 ht-degree: 99%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 99%
    + [版本和升级](start/upgrades.md)
    + [最新版本](start/release-notes.md)
    + 之前版本 {#previous-rn}
+      + [2025](start/release-notes-2025.md)
       + [2024](start/release-notes-2024.md)
       + [2023](start/release-notes-2023.md)
       + [2022](start/release-notes-2022.md)
@@ -135,13 +136,13 @@ ht-degree: 99%
       + [创建运算符](interaction/interaction-operators.md)
       + [创建环境](interaction/interaction-env.md)
       + [创建预定义过滤器](interaction/interaction-predefined-filters.md)
-      + [创建优惠空间](interaction/interaction-offer-spaces.md)
-   + [创建优惠目录](interaction/interaction-offer-catalog.md)
-   + [创建优惠](interaction/interaction-offer.md)
-   + [发送优惠（出站）](interaction/interaction-send-offers.md)
-   + 提供优惠（入站）{#inbound}
+      + [创建产品建议空间](interaction/interaction-offer-spaces.md)
+   + [创建产品建议目录](interaction/interaction-offer-catalog.md)
+   + [创建产品建议](interaction/interaction-offer.md)
+   + [发送产品建议（出站）](interaction/interaction-send-offers.md)
+   + 提供产品建议（入站）{#inbound}
       + [上下文](interaction/interaction-present-offers.md)
-      + [在网页中调用优惠](interaction/interaction-integration.md)
+      + [在网页中调用产品建议](interaction/interaction-integration.md)
       + [管理匿名互动](interaction/anonymous-interactions.md)
    + [报告和历史记录](interaction/interaction-tracking.md)
    + [用例](interaction/interaction-use-cases.md)
@@ -212,12 +213,12 @@ ht-degree: 99%
       + [外部帐户](config/external-accounts.md)
 + 开发人员资源 {#developer}
    + [Campaign 数据模型](dev/datamodel.md)
-   + 模式和表单{#shemas-forms}
-      + [使用模式](dev/schemas.md)
-      + [创建模式](dev/create-schema.md)
-      + [扩展模式](dev/extend-schema.md)
-      + [筛选模式](dev/filter-schema.md)
-      + [模式结构](dev/schema-structure.md)
+   + 架构和表单{#shemas-forms}
+      + [使用架构](dev/schemas.md)
+      + [创建架构](dev/create-schema.md)
+      + [扩展架构](dev/extend-schema.md)
+      + [筛选架构](dev/filter-schema.md)
+      + [架构结构](dev/schema-structure.md)
       + [数据库映射](dev/database-mapping.md)
       + [密钥管理](dev/database-keys.md)
       + [链接管理](dev/database-links.md)

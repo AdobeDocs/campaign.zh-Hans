@@ -2,55 +2,17 @@
 title: Campaign v8（控制台） 2025年发行说明
 description: 2025 Campaign v8 版本的功能和改进列表
 feature: Release Notes
-source-git-commit: c5452082104432af49a93ecaa96865f19ee89ec2
+exl-id: 3f91d83e-594e-49ee-a898-606e3de00bf3
+source-git-commit: 82622a4517356eaba1f7eba23d4b3050d8ca37c9
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 52%
+source-wordcount: '277'
+ht-degree: 90%
 
 ---
 
 # 2025 年发行说明 {#2025-rn}
 
-此页面列出了&#x200B;**2025 Campaign v8版本**&#x200B;中的新功能、改进和修复。
-
->[!BEGINSHADEBOX]
-
-在此页中&#x200B;****
-
-* Campaign v8.6 - [版本8.6.4](#release-8-6-4)
-* Campaign v8.7 - [版本8.7.2](#release-8-7-2)
-
->[!ENDSHADEBOX]
-
-## 版本 8.6.4 {#release-8-6-4}
-
-_2025年1月15日_
-
-### 一般改进 {#improvements-8-6-4}
-
-* 在[Enterprise (FFDA)部署](../../v8/architecture/enterprise-deployment.md)上下文中的投放分析期间，营销活动应用程序稳定性已得到改进。
-* 此版本附带改进和增强的FFDA架构机制，包括密钥管理、暂存和数据复制。
-* 已为[企业(FFDA)部署](../../v8/architecture/enterprise-deployment.md)引入新的技术工作流。 这些工作流通过将并行复制请求集中到相应的表中，来复制投放和相关数据。 这些工作流以`Replicate nms`开头。 [了解更多信息](../architecture/replication.md)
-* 工作流属性中现在有新的&#x200B;**启用监视程序监督器以保持工作流永久运行**&#x200B;选项。 启用此选项后，工作流会在发生错误后自动重新启动。 如果工作流仍然出错，默认情况下，每30秒重新启动一次。 要调整此间隔，您可以创建一个新的`XtkWorkflow_WatchdogTimerTimeout`选项并设置Integer数据类型以指定新延迟。 此选项只应在技术工作流中启用。 [了解更多信息](../../automation/workflow/workflow-properties.md#execution)
-
-### 安全性改进 {#security-8-6-4}
-
-已更新通过&#x200B;**[!UICONTROL Adobe Experience Cloud]**&#x200B;外部帐户与Adobe解决方案和应用程序的连接，以加强安全性。
-
-<!--
-### Connection to Campaign {#ims-8-6-4}
-
-**(Limited availability)** For a restricted list of customers, Campaign v8.6.4 can allow native authentication mode instead of Adobe Identity Management System (IMS). Note that if you are using Campaign native authentication, you cannot access to [Campaign Web User Interface](../start/campaign-ui.md#campaign-web-user-interface).-->
-
-### 兼容性更新 {#comp-8-6-4}
-
-现在支持将 Databricks 用作 Adobe Campaign 联合数据访问 (FDA) 的外部数据库。请参阅[此页面](compatibility-matrix.md#FederatedDataAccessFDA)以了解详情。
-
-### 修复 {#fixes-8-6-4}
-
-此版本中修复了以下问题：
-
-NEO-48232、NEO-67814、NEO-71388、NEO-74855、NEO-75643、NEO-75962、NEO-76132、NEO-76958、NEO-76986、NEO-77162、NEO-77452、NEO-78946、NEO-79373、NEO-80243、NEO-80314、NEO-81127、NEO-81209、NEO-81223、NEO-81287、NEO-81290、NEO-81312、NEO-81512 NEO-81520， NEO-81566， NEO-81704， NEO-81908， NEO-82195， NEO-82591， NEO-82592， NEO-82640， NEO-82665， NEO-82781， NEO-82920， NEO-83081 83096 83137 83143。
+此页面列出了&#x200B;**2025 Campaign v8版本**&#x200B;中的新功能、改进和修复。 [此页面](release-notes.md)中列出了最新版本。
 
 ## 版本 8.7.2 {#release-8-7-2}
 

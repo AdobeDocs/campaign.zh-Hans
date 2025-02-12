@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;popular topics
 description: Campaign v8 帮助中心
 title: Adobe Campaign v8 产品文档
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 11614d555aa250adfcabce40dedb455328845eaa
+source-git-commit: 82622a4517356eaba1f7eba23d4b3050d8ca37c9
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 98%
@@ -22,7 +22,7 @@ ht-degree: 98%
 
 Adobe Campaign 最新版本现已上线。阅读发行说明以了解更多详细信息。
 
-[![image](assets/do-not-localize/learn-more-button.svg)](start/release-notes.md)
+[![image](assets/do-not-localize/learn-more-button.svg)](start/release-notes.md#release-8-6-4)
 
 
 >[!TAB 全新 Campaign Web 用户界面]
@@ -105,7 +105,7 @@ Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 �
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
     <br/>
-      <strong>开发人员资源</strong><br/><a href="dev/datamodel.md">Campaign v8 数据模型</a> - <a href="dev/schemas.md">模式</a> - <a href="dev/api.md">API</a>
+      <strong>开发人员资源</strong><br/><a href="dev/datamodel.md">Campaign v8 数据模型</a> - <a href="dev/schemas.md">架构</a> - <a href="dev/api.md">API</a>
     </td>
   </tr>
 </table>

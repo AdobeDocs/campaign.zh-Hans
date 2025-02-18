@@ -5,16 +5,21 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 578f774152afbd42342da0f161b679ba9dd10c78
+source-git-commit: a76d2c30d3e1c723bcd4881f28980d346aade3dc
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 10%
+source-wordcount: '565'
+ht-degree: 9%
 
 ---
 
 # 设计和发送电子邮件
 
 使用Adobe Campaign创建电子邮件投放，向目标群体发送个性化电子邮件。 [了解详情](../send/send.md)
+
+>[!NOTE]
+>
+>若要创建引人入胜的单独定制电子邮件，请浏览至[Web用户界面](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui)。 Adobe Campaign随附电子邮件Designer，这是一个直观的拖放界面，允许您设计和优化每封电子邮件的所有内容。
+
 
 了解在[此页面](../start/create-message.md)中创建和配置投放的关键步骤。
 

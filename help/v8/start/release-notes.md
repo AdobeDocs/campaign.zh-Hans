@@ -3,10 +3,10 @@ title: Campaign v8 发行说明
 description: 最新 Campaign v8 版本
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: dcc3802a165091597505c4556dd7626d6810266f
+source-git-commit: 15faa6850c035d2d26dd43dc221e0128c33999c2
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 25%
+source-wordcount: '566'
+ht-degree: 21%
 
 ---
 
@@ -69,7 +69,15 @@ _2025年1月15日_
 
 ### 兼容性更新 {#comp-8-6-4}
 
-现在支持将 Databricks 用作 Adobe Campaign 联合数据访问 (FDA) 的外部数据库。请参阅[此页面](compatibility-matrix.md#FederatedDataAccessFDA)以了解详情。
+* 现在支持将 Databricks 用作 Adobe Campaign 联合数据访问 (FDA) 的外部数据库。请参阅[此页面](compatibility-matrix.md#FederatedDataAccessFDA)以了解详情。
+
+* 现已提供新的Amazon Redshift FDA ODBC连接器。 它提供了改进的连接性、更轻松的维护以及增强的兼容性。 此新版本提供了以下改进：
+
+   * 新的连接器基于ODBC接口，该接口与我们最新的FDA连接器一致。 这可确保长期支持。
+   * 它还引入了一种使用s3存储桶的新数据加载机制，显着提高了性能。
+   * 添加了Redshift Spectrum支持。
+
+  仍可使用旧版连接器。 如果您想要试用新版，请联系您的Adobe代表。
 
 ### 修复 {#fixes-8-6-4}
 

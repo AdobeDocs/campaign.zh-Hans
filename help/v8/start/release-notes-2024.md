@@ -3,10 +3,10 @@ title: Campaign v8（控制台） 2024年发行说明
 description: 2024 Campaign v8 版本的功能和改进列表
 feature: Release Notes
 exl-id: 6a0a9486-19a9-4ec3-9030-48dbf419f45f
-source-git-commit: 54cc5686cc5187a1ab0514abcaf9fcd69e7a1ede
+source-git-commit: 041df8d2d6128d72a04008affbc9680ba5b640a1
 workflow-type: tm+mt
-source-wordcount: '1217'
-ht-degree: 88%
+source-wordcount: '1308'
+ht-degree: 81%
 
 ---
 
@@ -48,7 +48,16 @@ _2024 年 5 月 2 日_
 
 ### 兼容性更新 {#comp-8-7-1}
 
-* 现在支持将 Databricks 用作 Adobe Campaign 联合数据访问 (FDA) 的外部数据库。请参阅[此页面](compatibility-matrix.md#FederatedDataAccessFDA)以了解详情。
+添加了以下FDA连接器。 请参阅此[页面](compatibility-matrix.md#FederatedDataAccessFDA)。
+
+* 数据库现在支持作为具有Adobe Campaign联合数据访问(FDA)的外部数据库。
+
+* 现已提供新的Amazon Redshift FDA ODBC连接器。 它提供了改进的连接性、更轻松的维护以及增强的兼容性。 此新版本提供了以下改进：
+
+   * 新的连接器基于ODBC接口，该接口与我们最新的FDA连接器一致。 这可确保长期支持。
+   * 它还引入了一种使用s3存储桶的新数据加载机制，显着提高了性能。
+
+  仍可使用旧版连接器。 如果您想要试用新版，请联系您的Adobe代表。
 
 ### 迁移到 OAuth 服务器到服务器凭据 {#change-8-7-1}
 
@@ -123,7 +132,7 @@ _2024 年 2 月 14 日_
 
   >[!AVAILABILITY]
   >
-  >Campaign Web用户界面仅适用于通过Adobe ID连接到Adobe Campaign的用户。 了解有关[AdobeIdentity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}的更多信息。
+  >Campaign Web用户界面仅适用于通过Adobe ID连接到Adobe Campaign的用户。 了解有关[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}的更多信息。
   >
 
 * Adobe Campaign v8 现已集成 **Adobe Experience Manager as a Cloud Service**，仅通过 Adobe Campaign Web 用户界面提供创作功能。[了解详情](../connect/ac-aem.md)

@@ -5,9 +5,9 @@ feature: Release Notes
 role: Admin
 level: Beginner
 exl-id: 4be3a6dc-0c61-4534-b9dd-6c99c8a037a9
-source-git-commit: ba27d1e56f7354e500e747f01a27412f8d553e2b
+source-git-commit: fb2cf4407750f8cff65ca53f0e87c32e9702de92
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '438'
 ht-degree: 97%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 97%
 
 下面列出了与 Adobe Campaign 联合数据访问 (FDA) 模块兼容的外部数据库。[在此页面中](../connect/fda.md)了解有关 FDA 的详细信息。
 
-* **[!DNL Amazon Redshift]** ODBC连接器，从Campaign v8.6.4开始
+* **[!DNL Amazon Redshift]** ODBC连接器，从Campaign v8.6.4 / v8.7.1开始
 * **[!DNL Amazon Redshift]**&#x200B;旧连接器
 * **[!DNL Azure Synapse]**，从 Campaign v8.5 开始
 * **[!DNL Databricks]**，从Campaign v8.6.4 / v8.7开始

@@ -1,14 +1,14 @@
 ---
 title: 集成AEP SDK和Campaign
-description: 了解如何将Adobe Experience Platform Mobile SDK与您的应用程序集成
+description: 了解如何将Adobe Experience Platform移动SDK与您的应用程序集成
 version: v8
 feature: Push
 role: Admin, Developer
 level: Intermediate
 exl-id: 1a75f411-3f71-4114-b738-277820dc6138
-source-git-commit: 550e3cbd064ae7831855377f1d08d6acecd55c9e
+source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
-source-wordcount: '1680'
+source-wordcount: '1681'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 4%
 1. 在Adobe Experience Platform数据收集中设置[移动标记属性](#launch-property)。
 1. 在此页面](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"}中获取详细的Adobe Experience Platform Mobile SDK [。
 1. （可选）启用日志记录和生命周期量度，如本页](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/){target="_blank"}中的详细[所示。
-1. （可选）将[Adobe Experience Platform保障添加到应用程序](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"}以验证您的实施。 在此页面](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}中了解如何实施Adobe Experience Platform保障扩展[。
+1. （可选）将[Adobe Experience Platform Assurance添加到您的应用程序](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"}以验证您的实施。 在此页面](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}中了解如何实施Adobe Experience Platform Assurance扩展[。
 1. 在Adobe Campaign中配置iOS和Android Mobile Services，如本页[所述。](#push-service)
 1. 在移动资产中安装和配置[Adobe Campaign扩展](#configure-extension)。
 1. 按照[Adobe Experience Platform Mobile SDK文档](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"}中的说明在您的应用程序中设置Adobe Experience Platform Mobile SDK。
@@ -257,7 +257,7 @@ To get the SDKs needed for push notification to work you will need the following
 
    >[!CAUTION]
    >
-   >**[!UICONTROL Test connection]**&#x200B;按钮不检查MID服务器是否有权访问FCM服务器。
+   >**[!UICONTROL Test connection]**&#x200B;按钮不检查中间源(MID)服务器是否有权访问FCM服务器。
 
 1. （可选）如果需要，您可以使用大约&#x200B;**[!UICONTROL Application variables]**&#x200B;扩充推送消息内容。 这些都是完全可自定义的，并且是发送到移动设备的消息有效负载的一部分。
 
@@ -277,7 +277,7 @@ To get the SDKs needed for push notification to work you will need the following
 
 适用于Adobe Experience Platform Mobile SDK的&#x200B;**Adobe Campaign Classic扩展**&#x200B;可为您的移动应用程序提供推送通知，并帮助您收集用户推送令牌和管理与Adobe Experience Platform服务的交互测量。
 
-此扩展同时适用于Campaign Classicv7和Campaign v8，已在您的环境中预安装，必须进行配置。 要为移动标记资产配置扩展，请执行以下步骤：
+此扩展同时适用于Campaign Classic v7和Campaign v8，已在您的环境中预安装，必须进行配置。 要为移动标记资产配置扩展，请执行以下步骤：
 
 1. 打开您之前创建的标记属性。
 1. 从左侧导航中，浏览到&#x200B;**扩展**，然后打开&#x200B;**目录**&#x200B;选项卡。 使用搜索字段查找&#x200B;**Adobe Campaign Classic**&#x200B;扩展。

@@ -5,9 +5,9 @@ feature: Application Settings, External Account
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1049'
 ht-degree: 4%
 
 ---
@@ -26,7 +26,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 >[!CAUTION]
 >
->* 作为托管Cloud Service用户，外部帐户是按Adobe为您的实例配置的，不得修改。
+>* 作为托管Cloud Services用户，外部帐户由Adobe为您的实例配置，不得修改。
 >
 >* 在[企业(FFDA)部署](../architecture/enterprise-deployment.md)的上下文中，特定的&#x200B;**[!UICONTROL Full FDA]** (ffda)外部帐户管理Campaign本地数据库和云数据库([!DNL Snowflake])之间的连接。
 >
@@ -87,6 +87,8 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
 **[!UICONTROL Routing]**&#x200B;外部帐户允许您根据安装的包配置Adobe Campaign中可用的每个渠道。
 
+在[本节](../architecture/architecture.md#split)中了解有关外部帐户管理和投放执行的更多信息。
+
 ### 执行实例 {#execution-instance}
 
 在事务型消息的上下文中，执行实例将链接到控制实例并将它们连接起来。 将事务性消息模板部署到执行实例。 在[此页面](../architecture/architecture.md#transac-msg-archi)中了解有关消息中心架构的更多信息。
@@ -97,11 +99,11 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
   与Adobe Campaign v8兼容的外部数据库在[兼容性矩阵](../start/compatibility-matrix.md)中列出
 
-* **X (以前称为Twitter)** - **Twitter**&#x200B;类型的外部帐户用于将Campaign连接到您的X帐户，以代表您发布消息。 在[本节](../connect/ac-tw.md)中了解有关X集成的更多信息。
+* **X （以前称为Twitter）** - **Twitter**&#x200B;类型的外部帐户用于将Campaign连接到您的X帐户，以代表您发布消息。 在[本节](../connect/ac-tw.md)中了解有关X集成的更多信息。
 
 ## Adobe解决方案集成外部帐户 {#adobe-integration-external-accounts}
 
-* **Adobe Experience Cloud** - **[!UICONTROL Adobe Experience Cloud]**&#x200B;外部帐户用于实施AdobeIdentity Management服务(IMS)以连接到Adobe Campaign。 在[此部分](../start/connect.md#logon-to-ac)中了解有关AdobeIdentity Management服务(IMS)的更多信息。
+* **Adobe Experience Cloud** - **[!UICONTROL Adobe Experience Cloud]**&#x200B;外部帐户用于实施Adobe Identity Management服务(IMS)以连接到Adobe Campaign。 在[此部分](../start/connect.md#logon-to-ac)中了解有关Adobe Identity Management服务(IMS)的更多信息。
 
 * **网站分析** - **[!UICONTROL Web Analytics (Adobe Analytics)]**&#x200B;外部帐户用于配置从Adobe Analytics到Adobe Campaign的数据传输。 在[此页面](../connect/ac-aa.md)中了解有关Adobe Campaign - Adobe Analytics集成的更多信息。
 

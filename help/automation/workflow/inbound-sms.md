@@ -5,10 +5,10 @@ description: 了解有关入站短信工作流活动的更多信息
 feature: Workflows, Channels Activity
 role: User
 exl-id: 2c12c45b-4429-4e60-bc96-ff70a95d4c9e
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 4%
+source-wordcount: '108'
+ht-degree: 6%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 4%
 
 **入站SMS**&#x200B;活动的第一个选项卡允许您输入SMS消息的路由参数，并输入接收每条消息时要执行的脚本。 第二个选项卡用于为活动分配计划，第三个选项卡用于定义活动的到期条件。
 
-1. **[!UICONTROL SMS routing]**：选择要用于短信恢复的外部帐户。 通过树的&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;节点配置外部帐户。
+1. **[!UICONTROL SMS routing]**：选择要用于短信恢复的外部帐户。 通过树的&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;节点配置外部帐户。 [了解详情](../../v8/config/external-accounts.md)
 1. **[!UICONTROL Script]**
 1. **[!UICONTROL Schedule]**
 

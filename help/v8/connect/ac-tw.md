@@ -1,20 +1,20 @@
 ---
-title: 使用Campaign和X(Twitter)
-description: 了解如何将Campaign环境与X(以前称为Twitter)集成
+title: 使用Campaign和X (Twitter)
+description: 了解如何将Campaign环境与X（以前称为Twitter）集成
 role: User, Admin
 feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1066'
 ht-degree: 3%
 
 ---
 
-# 使用Campaign和X(Twitter) {#tw-ac-ovv}
+# 使用Campaign和X (Twitter) {#tw-ac-ovv}
 
-通过&#x200B;**管理社交网络（社交营销）**&#x200B;模块，您可以通过X(以前称为Twitter)与客户交互。 使用此功能可以：
+通过&#x200B;**管理社交网络（社交营销）**&#x200B;模块，您可以通过X（以前称为Twitter）与客户交互。 使用此功能可以：
 
 * 在X上发布消息并发送DM — 使用Adobe Campaign Social Marketing发布消息。您还可以向所有关注者发送私信。
 
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->作为托管Cloud Service用户，[联系Adobe](../start/campaign-faq.md#support)以将Campaign与X连接。必须通过专用包在您的环境中安装&#x200B;**管理社交网络（社交营销）**&#x200B;加载项，并且必须配置Twitter外部帐户。
+>作为托管云服务用户，[联系Adobe](../start/campaign-faq.md#support)以将Campaign与X连接。必须通过专用包在您的环境中安装&#x200B;**管理社交网络（社交营销）**&#x200B;加载项，并且必须配置Twitter外部帐户。
 
 
 要将Adobe Campaign配置为将推文发布到您的X帐户，请为这些帐户委派对Adobe Campaign的写入权限。 为此，您必须：
@@ -56,7 +56,7 @@ Campaign使用1.1版本的X API。 要使用它，您需要通过开发人员门
 
    ![](assets/tw-app-type.png)
 
-1. 返回应用程序仪表板，选择应用程序并浏览到&#x200B;**密钥和令牌**&#x200B;选项卡。 在&#x200B;**访问令牌和密码**&#x200B;下，如果未提及&#x200B;**读取、写入和直接消息**&#x200B;权限，则必须重新生成应用的令牌和密码。 请注意，创建时必须保存所有密钥和令牌。 您需要这些配置文件来配置您的CampaignTwitter服务。
+1. 返回应用程序仪表板，选择应用程序并浏览到&#x200B;**密钥和令牌**&#x200B;选项卡。 在&#x200B;**访问令牌和密码**&#x200B;下，如果未提及&#x200B;**读取、写入和直接消息**&#x200B;权限，则必须重新生成应用的令牌和密码。 请注意，创建时必须保存所有密钥和令牌。 您将需要他们来配置您的Campaign Twitter服务。
 
    ![](assets/tw-permissions-check.png)
 
@@ -68,13 +68,13 @@ Campaign使用1.1版本的X API。 要使用它，您需要通过开发人员门
 
 ## 在Campaign中创建Twitter服务 {#create-tw-service}
 
-要将Campaign实例与X帐户关联，请创建&#x200B;**Twitter**&#x200B;服务并委派对Campaign的写入权限。
+要将Campaign实例与X帐户关联，请创建&#x200B;**Twitter**&#x200B;服务并委派Campaign的写入权限。
 
 >[!CAUTION]
 >
->为每个XTwitter创建一个&#x200B;**帐户**&#x200B;服务。 因此，您必须创建另一个测试服务以向您的[测试帐户](#tw-test-account)发送验证。
+>为每个X帐户创建一个&#x200B;**Twitter**&#x200B;服务。 因此，您必须创建另一个测试服务以向您的[测试帐户](#tw-test-account)发送验证。
 >
->每个&#x200B;**Twitter**&#x200B;服务也必须由MID实例上的Adobe创建。 请联系您的Adobe代表以配置环境。
+>每个&#x200B;**Twitter**&#x200B;服务还必须由Adobe在您的中间源(MID)实例上创建。 请联系您的Adobe代表以配置您的环境。
 >
 
 要输入设置，您必须同时访问Adobe Campaign客户端控制台和X应用程序权限。
@@ -127,7 +127,7 @@ Campaign和X之间的同步通过专门的技术工作流进行管理。 这些�
 
 对于每个关注者，Adobe Campaign都会存储以下信息：
 
-* **[!UICONTROL Origin]**：Twitter
+* **[!UICONTROL Origin]**： Twitter
 * **[!UICONTROL External ID]**：用户标识符
 * **[!UICONTROL Username]**：用户的帐户名
 * **[!UICONTROL Full name]**：用户的名称
@@ -142,7 +142,7 @@ Campaign和X之间的同步通过专门的技术工作流进行管理。 这些�
 
 1. 创建新的X帐户。
 1. 访问帐户&#x200B;**设置**。
-1. 浏览到&#x200B;**隐私和安全**&#x200B;和&#x200B;**受众和标记**，并检查&#x200B;**Protect您的帖子**&#x200B;选项。 您的帖子和其他帐户信息仅对关注您的用户可见。
+1. 浏览到&#x200B;**隐私和安全**&#x200B;和&#x200B;**受众和标记**，并选中&#x200B;**保护您的帖子**&#x200B;选项。 您的帖子和其他帐户信息仅对关注您的用户可见。
 
 ![](assets/do-not-localize/social_tw_test_page.png)
 

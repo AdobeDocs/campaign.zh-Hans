@@ -5,9 +5,9 @@ feature: Architecture, Deployment
 role: Data Engineer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1039'
 ht-degree: 10%
 
 ---
@@ -26,7 +26,7 @@ Campaign可用作单个实例，每个实例代表一个完整的Campaign环境�
 
 您可以将资源包从一个环境导出和导入到另一个环境。
 
-请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target="_blank"}以了解有关包的更多信息
+请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target="_blank"}以了解有关包的更多信息
 
 ## 部署模型 {#ac-deployment}
 
@@ -57,11 +57,11 @@ Campaign v8 企业版引入了&#x200B;**完全联合数据访问** (FFDA) 概念
 
 >[!AVAILABILITY]
 >
->此功能仅适用于具有多个MID实例配置的客户。
+>此功能仅适用于具有多个中间源(MID)实例配置的客户。
 
 根据您的Campaign v8包，为您配置特定数量的中间源实例，负责执行投放。
 
-默认情况下，所有渠道的外部帐户使用&#x200B;**[!UICONTROL Alternate]**&#x200B;路由模式，这意味着以交替方式从每个中间实例一次发送一个投放。
+默认情况下，所有渠道的外部帐户使用&#x200B;**[!UICONTROL Alternate]**&#x200B;路由模式，这意味着以交替方式从每个中间源(MID)实例一次发送一个投放。
 
 为了确保同时在速度和规模方面实现更好的性能，您可以允许将投放自动拆分到中间源实例中，以便更快地投放到收件人。 从营销实例执行投放时，此操作是透明的：发送投放后，所有日志都会合并在一起，然后再发送回营销实例作为单个投放对象。
 
@@ -78,7 +78,7 @@ Campaign v8 企业版引入了&#x200B;**完全联合数据访问** (FFDA) 概念
 >
 >默认情况下，“拆分投放 — 电子邮件”帐户启用拆分路由模式。 对于所有其他渠道外部帐户，请联系您的Adobe过渡经理以启用此选项。
 >
->默认情况下，在多个mid之间拆分投放的阈值为100K。 您可以在&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL Options]**&#x200B;菜单的“NmsDelivery_MultiMidSplitThreshold”选项中更改此值。
+>默认情况下，在多个中间源(MID)实例之间拆分投放的阈值为100,000。 您可以在&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL Options]**&#x200B;菜单的“NmsDelivery_MultiMidSplitThreshold”选项中更改此值。
 
 要将拆分外部帐户作为发送投放的默认帐户，您需要更改投放模板中的路由选择提供程序。 为此，请执行以下步骤：
 
@@ -123,8 +123,8 @@ Campaign v8 企业版引入了&#x200B;**完全联合数据访问** (FFDA) 概念
 为了使用这些功能，Adobe Campaign用户登录到控制实例以创建事务性消息模板，使用种子列表生成消息预览，显示报告和监视执行实例。
 
 * 单个执行实例
-当与托管消息中心执行实例交互时，外部Adobe可以首先检索会话令牌（该令牌默认在24小时内过期），其方法是使用提供的帐户登录和密码对会话登录方法进行API调用。
-然后，利用执行实例响应上述调用提供的sessionToken，外部应用程序可以进行SOAP api调用（rtEvents或batchEvents）以发送通信，而无需在每个SOAP调用中包括帐户登录和密码。
+与Adobe托管的消息中心执行实例交互时，外部系统可以首先检索会话令牌（默认情况下在24小时内过期），方法是使用提供的帐户登录和密码对会话登录方法进行API调用。
+然后，通过执行实例响应上述调用提供的sessionToken，外部应用程序可以进行SOAP api调用（rtEvents或batchEvents）以发送通信，而无需在每个SOAP调用中包括帐户登录和密码。
 
 * 多个执行实例
 在负载均衡器后有多个执行实例的多小区执行体系结构中，外部应用程序调用的登录方法正在通过负载均衡器：因此，无法使用基于令牌的身份验证。 需要基于用户/密码的身份验证。

@@ -5,9 +5,9 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-source-git-commit: 253f3be945cbfa304fa7342c68f0c73b079e2870
+source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
-source-wordcount: '1169'
+source-wordcount: '1170'
 ht-degree: 1%
 
 ---
@@ -82,7 +82,7 @@ ht-degree: 1%
 
 1. 为其分配标签以便稍后轻松选择，然后输入种子地址（电子邮件或移动电话，具体取决于通信渠道）。
 
-1. 输入外部标识符：此可选字段允许您输入业务密钥（唯一ID、名称+电子邮件等） 这是您网站上所有应用程序通用的功能，用于识别您的配置文件。 如果此字段也出现在Adobe Campaign营销数据库中，则之后可以将事件与数据库中的用户档案进行协调。
+1. 输入外部标识符：利用此可选字段，可输入您的网站上所有应用程序通用的业务键（唯一ID、姓名+电子邮件等），用于标识您的配置文件。 如果此字段也出现在Adobe Campaign营销数据库中，则之后可以将事件与数据库中的用户档案进行协调。
 
    ![](assets/messagecenter_create_seed_2.png)
 
@@ -130,7 +130,7 @@ This information enables you to personalize message content using personalizatio
 
    ![](assets/messagecenter_create_seed_7.png)
 
-### 发送验证 {#send-proof}
+### 发送校样 {#send-proof}
 
 您可以通过向之前创建的种子地址发送校样来测试消息投放。
 
@@ -161,7 +161,7 @@ This information enables you to personalize message content using personalizatio
 
 #### 从[!DNL Campaign Classic] v7过渡 {#transition-from-v7}
 
-如果您[正在从Campaign Classicv7](../start/v7-to-v8.md)进行转换，则所有投放都将通过中间源服务器。
+如果您[要从Campaign Classic v7](../start/v7-to-v8.md)进行过渡，则所有投放都将通过中间源(MID)服务器。
 
 但是，在创建事务性消息模板时，成功使用该模板所需的路由是&#x200B;**内部电子邮件投放**。 此路由会阻止您发送校样。
 
@@ -171,7 +171,7 @@ This information enables you to personalize message content using personalizatio
 
 发送校样后，必须先将路由更改回内部电子邮件投放，然后再发布事务型消息模板。
 
-## Publish模板 {#publish-message-template}
+## 发布模板 {#publish-message-template}
 
 创建消息模板<!-- on the control instance-->完成后，您可以发布该模板，从而发送链接到实时事件和批量事件的消息。
 

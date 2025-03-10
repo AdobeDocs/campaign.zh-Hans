@@ -5,7 +5,7 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 19f85d4e19f756d8a45ce5364dd0601373128f50
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 4%
@@ -22,7 +22,7 @@ Adobe Campaign允许您定义和管理分配给用户的权限。 这些权限�
 
 这些权限是通过组合操作员组权限、命名权限和文件夹权限来定义的。
 
-在Adobe Campaign中，用户是&#x200B;**操作员**&#x200B;和&#x200B;**操作员组**&#x200B;代表用户角色。 操作员是具有登录和执行操作权限的Adobe Campaign用户。 将在Admin Console中创建用户。 这些权限适用于用户配置文件或用户组。 您可以授予两种类型的权限：
+在Adobe Campaign中，用户是&#x200B;**操作员**&#x200B;和&#x200B;**操作员组**&#x200B;代表用户角色。 操作员是具有登录和执行操作权限的Adobe Campaign用户。 用户是在Admin Console中创建的。 这些权限适用于用户配置文件或用户组。 您可以授予两种类型的权限：
 
 * 您可以定义赋予权限的运算符组，然后将运算符与一个或多个组关联。 这使您可以重复使用权限并使操作员配置文件更加一致。 它还有助于用户档案的管理和维护。
 * 您可以直接将已命名权限分配给用户，在某些情况下，这会使通过组分配的权限过载。
@@ -42,9 +42,9 @@ Adobe Campaign允许您定义和管理分配给用户的权限。 这些权限�
 
 ## 关于Admin Console{#gs-admin-console}
 
-Adobe Admin Console是一个中央位置，用于管理整个组织的Adobe权限。 它仅可供产品管理员访问。
+Adobe Admin Console是一个中央位置，用于管理整个组织的Adobe授权。 它仅可供产品管理员访问。
 
-使用Admin Console可添加用户、创建和分配产品配置文件（操作员角色组）。
+使用Admin Console添加用户、创建和分配产品配置文件（操作员角色组）。
 
 了解如何在[此页面](manage-permissions.md#add-users)中添加用户。
 
@@ -52,7 +52,7 @@ Adobe Admin Console是一个中央位置，用于管理整个组织的Adobe权�
 
 产品配置文件是可以分配给用户的产品组和服务组。 在Adobe Experience Cloud中，权限基于产品的配置文件，而不是基于用户。 但是，您可以将管理权限委派给特定用户。
 
-在Admin Console中，Campaign的每个Adobe Experience Cloud **产品配置文件**&#x200B;都与Campaign客户端控制台中的&#x200B;**操作员组**&#x200B;关联。
+在Admin Console中，Campaign的每个Adobe Experience Cloud **产品配置文件**&#x200B;都与Campaign客户端控制台中的&#x200B;**操作员组**&#x200B;相关联。
 
 在[此页面](manage-permissions.md#create-a-product-profile)中了解如何创建和分配产品配置文件。
 

@@ -5,7 +5,7 @@ feature: Email
 role: User
 level: Beginner
 exl-id: 35702b81-1984-4a62-8f00-c2bc32ab2b42
-source-git-commit: 1cb92c6075e9478b641b11eae52372a909258cd3
+source-git-commit: 286af4739c33b79c74b3cb7fa90ad167670a4b4c
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Adobe Campaign本身不会管理存档文件。 然后，对应于所发送电�
 
 >[!NOTE]
 >
->作为托管Cloud Service用户，[联系Adobe](../start/campaign-faq.md#support){target="_blank"}以传达要用于归档的密件抄送电子邮件地址。
+>作为托管Cloud Services用户，[联系Adobe](../start/campaign-faq.md#support){target="_blank"}以传达要用于归档的密件抄送电子邮件地址。
 
 ## 启用电子邮件密送 {#enable-bcc}
 
@@ -42,7 +42,7 @@ Adobe Campaign本身不会管理存档文件。 然后，对应于所发送电�
 1. 在Campaign资源管理器中，浏览到投放模板文件夹。 默认情况下，投放模板存储在&#x200B;**[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**&#x200B;文件夹中。
 1. 编辑要通过密送更新的投放模板。
 1. 单击 **[!UICONTROL Properties]** 按钮。
-1. 在&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡中，选中&#x200B;**[!UICONTROL Email BCC]**&#x200B;选项。
+1. 在&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡中，选中&#x200B;**[!UICONTROL Email BCC with enhanced Momentum]**&#x200B;选项。
 
    ![](assets/email-bcc.png)
 

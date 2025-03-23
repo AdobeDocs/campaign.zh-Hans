@@ -1,15 +1,14 @@
 ---
 title: Campaign界面设置
 description: 了解如何自定义Campaign界面设置
-version: v8
 feature: Application Settings
 role: Admin, Developer
 level: Beginner
 exl-id: 9fa6fc42-45be-41db-9b4a-19b3b0c40dcd
-source-git-commit: 2f7496a0376776d35cf88b0e81365f6e414655fd
+source-git-commit: a288845e1f092d293d679fa9aaaf6d609de85230
 workflow-type: tm+mt
 source-wordcount: '1848'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -162,7 +161,7 @@ ht-degree: 12%
 
 ## 使用明细列表 {#enumerations}
 
-枚举（也称为“明细列表”）是系统建议用于填充字段的值列表。 使用枚举来标准化这些字段的值，帮助在查询中输入或使用数据。
+枚举（也称为“明细列表”）是系统建议用于填充字段的值列表。 使用枚举来标准化这些字段的值，有助于数据输入或在查询中使用。
 
 值列表将显示为一个下拉列表，您可以从中选择要在字段中输入的值。 下拉列表还支持预测输入：输入第一个字母，应用程序填充其余字母。
 

@@ -1,14 +1,13 @@
 ---
 title: 将 Campaign SDK 与您的应用程序集成
 description: 了解如何将Campaign Android和iOS SDK与您的应用程序集成
-version: v8
 feature: Push
 role: Admin, Developer
 level: Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: a288845e1f092d293d679fa9aaaf6d609de85230
 workflow-type: tm+mt
 source-wordcount: '1230'
 ht-degree: 1%
@@ -21,7 +20,7 @@ ht-degree: 1%
 
 [兼容性矩阵](../start/compatibility-matrix.md#MobileSDK)中列出了Android和iOS支持的版本，以及Campaign v8的Campaign SDK兼容版本。
 
-作为Campaign管理员，您可以从[Experience Cloud软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)下载Campaign SDK。 有关详细信息，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+作为Campaign管理员，您可以从[Experience Cloud Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)下载Campaign SDK。 有关详细信息，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 
 >[!NOTE]
@@ -31,7 +30,7 @@ ht-degree: 1%
 
 ## 声明集成设置 {#declaring-integration-settings}
 
-要将Campaign SDK集成到移动应用程序，功能管理员必须向开发人员提供以下信息：
+要将Campaign SDK集成到移动应用程序中，功能管理员必须向开发人员提供以下信息：
 
 * **集成键**：用于启用Adobe Campaign平台以识别移动应用程序。
 
@@ -87,7 +86,7 @@ Android SDK是使用JAVA编写的jar库。 它允许Android开发人员与Adobe 
 
 1. **初始化SDK**
 
-   在使用Android SDK之前，您需要对其进行初始化。 SDK初始化可以在活动的`onCreate`函数中完成。
+   在使用Android SDK之前，您需要对其进行初始化。 可以在活动的`onCreate`函数中完成SDK初始化。
 
    ```sql
    /** Called when the activity is first created. */
@@ -499,7 +498,7 @@ Android SDK是使用JAVA编写的jar库。 它允许Android开发人员与Adobe 
    对于通知消息，跟踪接收必须在两个级别进行配置：
 
    * `onMessageReceived` （应用程序不在后台）：已在上一节中完成实施
-   * `onCreate`启动项活动（如果使用`click_action`函数，则为目标活动。） （应用程序不在后台）。
+   * `onCreate`启动项活动（如果使用`click_action`函数，则为目标活动。）（应用程序不在后台）。
 
    它需要在打开/点击跟踪的同时完成。
 
@@ -843,7 +842,7 @@ Android SDK是使用JAVA编写的jar库。 它允许Android开发人员与Adobe 
 
 >[!CAUTION]
 >
->Adobe建议选择短变量名称，因为iOS和Android的通知大小限制为4kB。
+>Adobe建议选择短变量名称，因为对于iOS和Android，通知大小限制为4kB。
 
 ## 通知服务扩展 {#notification-service-extension}
 

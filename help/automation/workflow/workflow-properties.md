@@ -4,10 +4,10 @@ title: 工作流属性
 description: 了解关于Campaign工作流属性的更多信息
 feature: Workflows
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
-source-git-commit: c6b4f4cee6f033218c77a495c39885e231c06126
+source-git-commit: 13723ebda8daf57c6885a05a2d583c0c38c86441
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 34%
+source-wordcount: '640'
+ht-degree: 33%
 
 ---
 
@@ -59,9 +59,11 @@ ht-degree: 34%
 
   >[!NOTE]
   >
-  >此选项针对高级用户，应仅针对&#x200B;**技术工作流**&#x200B;启用。
+  >* 从v8.6.4开始提供此选项。
   >
-  >默认情况下，`fullFdaMkt`包提供的集中式复制工作流将启用此功能。
+  >* 此选项针对高级用户，应仅针对&#x200B;**技术工作流**&#x200B;启用。
+  >
+  >* 默认情况下，[Enterprise (FFDA)部署](enterprise-deployment.md)的集中式复制工作流可用上下文将启用此选项。 [了解详情](../../v8/architecture/replication.md)
 
 ### 错误管理 {#error-management}
 

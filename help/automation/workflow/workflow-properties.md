@@ -4,7 +4,7 @@ title: 工作流属性
 description: 了解关于Campaign工作流属性的更多信息
 feature: Workflows
 exl-id: 7fef434e-f6bd-46a4-9ec2-0182f081c928
-source-git-commit: 63b7eaba3ea7b580d9b6c3c0e0c015c057539aa8
+source-git-commit: c6b4f4cee6f033218c77a495c39885e231c06126
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 34%
@@ -55,7 +55,7 @@ ht-degree: 34%
 
 * **[!UICONTROL Enable watchdog supervisor to keep workflow running permanently]**
 
-  此选项强制工作流在错误发生后自动重新启动。 启用后，重新启动将每30秒检查一次工作流的状态，并在需要时重新启动。 要调整30秒间隔，您可以创建`XtkWorkflow_WatchdogTimerTimeout`技术选项并使用整数数据类型指定所需的延迟。
+  此选项强制工作流在错误发生后自动重新启动。 启用后，重新启动将每30秒检查一次工作流的状态，并在需要时重新启动。 要调整30秒间隔，您可以创建`XtkWorkflow_WatchdogRestartTimerTimeout`技术选项并使用整数数据类型指定所需的延迟。
 
   >[!NOTE]
   >

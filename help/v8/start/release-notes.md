@@ -3,7 +3,7 @@ title: Campaign v8 发行说明
 description: 最新 Campaign v8 版本
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 041df8d2d6128d72a04008affbc9680ba5b640a1
+source-git-commit: c6b4f4cee6f033218c77a495c39885e231c06126
 workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 18%
@@ -56,7 +56,7 @@ _2025年1月15日_
 * 在[Enterprise (FFDA)部署](../../v8/architecture/enterprise-deployment.md)上下文中的投放分析期间，营销活动应用程序稳定性已得到改进。
 * 此版本附带改进和增强的FFDA架构机制，包括密钥管理、暂存和数据复制。
 * 已为[企业(FFDA)部署](../../v8/architecture/enterprise-deployment.md)引入新的技术工作流。 这些工作流通过将并行复制请求集中到相应的表中，来复制投放和相关数据。 这些工作流以`Replicate nms`开头。 [了解更多信息](../architecture/replication.md)
-* 工作流属性中现在有新的&#x200B;**启用监视程序监督器以保持工作流永久运行**&#x200B;选项。 启用此选项后，工作流会在发生错误后自动重新启动。 如果工作流仍然出错，默认情况下，每30秒重新启动一次。 要调整此间隔，您可以创建一个新的`XtkWorkflow_WatchdogTimerTimeout`选项并设置Integer数据类型以指定新延迟。 此选项只应在技术工作流中启用。 [了解更多信息](../../automation/workflow/workflow-properties.md#execution)
+* 工作流属性中现在有新的&#x200B;**启用监视程序监督器以保持工作流永久运行**&#x200B;选项。 启用此选项后，工作流会在发生错误后自动重新启动。 如果工作流仍然出错，默认情况下，每30秒重新启动一次。 要调整此间隔，您可以创建一个新的`XtkWorkflow_WatchdogRestartTimerTimeout`选项并设置Integer数据类型以指定新延迟。 此选项只应在技术工作流中启用。 [了解更多信息](../../automation/workflow/workflow-properties.md#execution)
 
 ### 安全性改进 {#security-8-6-4}
 

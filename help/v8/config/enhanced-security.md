@@ -5,9 +5,9 @@ feature: Configuration
 role: Developer
 level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: c225b3ee5b356d98d6a5e3bb9bd1cb0feae0300a
+source-git-commit: 24b252373923a9724743650b13a69d4f2c8dcd24
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '737'
 ht-degree: 2%
 
 ---
@@ -27,13 +27,13 @@ ht-degree: 2%
 
 本页列出了与增强安全功能相关的一些护栏和限制。 此外，您必须确保所有安全CMK集成/安全VPN隧道用例都正常工作。
 
-实施这些功能后，Adobe将监控：
+在实施这些功能后，Adobe将监控：
 
 * 您的实例可用性，如果密钥不可用，则继续发送警报。
 
 * VPN通道，并在出现任何问题时继续发出警报。
 
-## 安全可靠的客户管理密钥集成 {#secure-cmk-integration}
+## 安全的客户管理密钥集成 {#secure-cmk-integration}
 
 **安全客户管理的密钥(CMK)集成**&#x200B;允许您通过Amazon Web Services (AWS)帐户使用自己的密钥加密静态数据。
 
@@ -49,24 +49,24 @@ ht-degree: 2%
 
 1. 使用AWS密钥管理服务(KMS)生成具有自动轮换的密钥。 [了解如何操作](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}。
 
-1. 通过Adobe您的AWS帐户来应用提供给您的策略，以便授予对资源的访问权限。 [了解详情](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"}。<!--link TBC-->
+1. 将Adobe提供给您的策略应用到您的AWS帐户，以便授予对资源的访问权限。 [了解详情](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"}。<!--link TBC-->
 
 1. 与[!DNL Adobe Campaign]共享您的[Amazon资源名称（键ARN）](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"}。 为此，请联系您的Adobe代表。<!--or Adobe transition manager?-->
 
-1. 创建并测试Amazon EventBridge规则，以启用按Adobe监视密钥&#x200B;。 [了解详情](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}。
+1. 创建和测试Amazon EventBridge规则，以启用Adobe对密钥的监控&#x200B;。 [了解详情](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}。
 
 
 ### 护栏和限制 {#cmk-callouts}
 
 以下护栏和限制适用于与Adobe Campaign v8的CMK集成：
 
-* Adobe未提供[Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"}帐户。 您必须拥有自己的AWS帐户并进行设置，以生成您的密钥并将其与Adobe共享。
+* Adobe不提供[Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"}帐户。 您必须拥有自己的AWS帐户并进行设置，以生成您的密钥并将其与Adobe共享。
 
 * 仅支持[AWS密钥管理服务](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} (KMS)密钥。 不能使用KMS之外的客户生成的键&#x200B;。
 
 * 首次设置期间预计会出现停机时间。&#x200B;AEM停机时间持续时间取决于数据库的大小。
 
-* 作为客户，您拥有和维护密钥。 如果密钥发生任何更改，您必须联系Adobe。&#x200B;
+* 作为客户，您拥有和维护密钥。 如果密钥发生任何更改，您必须联系Adobe&#x200B;。
 
 * 您可以使用[AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html){target="_blank"}审核您的密钥，并在需要时撤消它。&#x200B;
 
@@ -129,4 +129,4 @@ ht-degree: 2%
 >
 >* 不支持到第三方或外部供应商的VPN连接。
 >
->* 不包括由Adobe管理的到私有云数据库的其他VPN。
+>* 不包括由Adobe管理的到专用云数据库的其他VPN。

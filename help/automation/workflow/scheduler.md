@@ -5,10 +5,10 @@ description: 了解有关调度程序工作流活动的更多信息
 feature: Workflows
 role: User
 exl-id: ed70d2d3-251e-4ee8-84d4-73ad03e8dd35
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: ba8cf031db178f6575104858340e16d4e7bd6a31
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 10%
+source-wordcount: '393'
+ht-degree: 8%
 
 ---
 
@@ -22,15 +22,15 @@ ht-degree: 10%
 
 ## 最佳实践 {#best-practices}
 
-* 请勿将工作流计划为每15分钟运行一次以上，因为它可能会影响整体系统性能，并在数据库中创建块。
+**更改计划程序时间后重新启动工作流** — 更改&#x200B;**[!UICONTROL Scheduler]**&#x200B;活动的计划时间时，请务必重新启动工作流。 这可确保在更新的时间执行工作流。 如果不重新启动，工作流将根据旧计划继续执行。
 
-* 在工作流中，每个分支不得使用超过一个&#x200B;**[!UICONTROL Scheduler]**&#x200B;活动。 请参阅[使用活动](workflow-best-practices.md#using-activities)。
+**限制计划程序频率** — 避免计划工作流的运行频率超过每15分钟一次。 频繁地运行这些数据库会降低系统性能，并导致数据库拥塞。
 
-* 使用调度程序活动可能会导致同时运行多个工作流执行。 例如，您可以让调度程序每小时触发一次工作流执行，但有时整个工作流的执行需要超过一小时。
+**每个分支使用一个调度程序** — 工作流的每个分支应仅有一个&#x200B;**[!UICONTROL Scheduler]**&#x200B;活动。 有关在工作流中使用活动的最佳实践的更多信息，请参阅[工作流最佳实践页面](workflow-best-practices.md#using-activities)。
 
-  如果工作流已在运行，则您可能需要跳过执行。 有关如何防止同时执行工作流的详细信息，请参阅[此页面](monitor-workflow-execution.md#preventing-simultaneous-multiple-executions)。
+**阻止工作流并发执行** — 如果工作流是由调度程序触发的，请注意该工作流的多个实例可能同时运行。 例如，如果调度程序每小时触发一次工作流，但工作流执行需要一个小时以上，则您最终可能会遇到重复执行的情况。要避免这种情况，请考虑设置检查以防止多个同时执行。 [了解如何防止同时执行多个工作流](monitor-workflow-execution.md#preventing-simultaneous-multiple-executions)。
 
-* 请注意，如果工作流正在执行长期任务（如导入），或者wfserver模块已停止一段时间，则可以在数小时后激活过渡。 在这种情况下，可能需要将调度程序激活的任务的执行限制到特定时间范围。
+**解决延迟的过渡问题** — 如果工作流正在执行长时间运行的任务（如导入），或者wfserver模块已暂时停止，则计划程序触发的过渡可能会延迟。 要缓解此问题，请限制调度程序的激活时间，以确保任务在定义的时间范围内运行。
 
 ## 配置调度程序活动 {#configuring-scheduler-activity}
 

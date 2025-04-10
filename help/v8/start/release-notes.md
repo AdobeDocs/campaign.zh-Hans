@@ -3,10 +3,10 @@ title: Campaign v8 发行说明
 description: 最新 Campaign v8 版本
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: c6b4f4cee6f033218c77a495c39885e231c06126
+source-git-commit: 49ce7d776eb626d6a927da7630ed7d0e2644fda3
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 18%
+source-wordcount: '737'
+ht-degree: 20%
 
 ---
 
@@ -18,11 +18,33 @@ ht-degree: 18%
 
 在此页中&#x200B;****
 
-* Campaign v8.6 - [版本8.6.4](#release-8-6-4)
-* Campaign v8.7 - [版本8.7.3](#release-8-7-3)
+* [版本 8.7.4](#release-8-7-4)
+* [版本8.7.3](#release-8-7-3)
+* [版本 8.6.4](#release-8-6-4)
 
 >[!ENDSHADEBOX]
 
+## 版本 8.7.4 {#release-8-7-4}
+
+_2025年4月10日_
+
+>[!AVAILABILITY]
+>
+>此版本为&#x200B;**有限发布版** (LA)。仅供&#x200B;**从 Adobe Campaign Standard 迁移到 Adobe Campaign v8** 的客户使用，并且不能部署在任何其他环境上。
+>
+>作为正在过渡到Campaign v8的Campaign Standard用户，请在[Campaign v8 Web用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/acs-migration){target="_blank"}中了解有关此过渡的更多信息。
+
+### 新增功能 {#features-8-7-4}
+
+* **SMS REST API支持** — 事务性消息传递REST API现在可用于SMS渠道。 当有效负载中同时存在电子邮件和手机时，您可以使用“widedChannel”字段指定渠道。 如果未提供，则默认使用电子邮件，除非wisdedChannel明确请求短信。
+
+* **多语言投放** — 从4月版的Campaign Web用户界面开始，您将能够以不同语言发送多个电子邮件投放，并访问相关的动态报告。 此功能仅在4月底在Adobe Campaign Web用户界面中可用，并且需要服务器更新至Campaign v8.7.4。
+
+### 修复 {#fixes-8-7-4}
+
+此版本中修复了以下问题：
+
+NEO-80245， NEO-83559
 
 ## 版本 8.7.3 {#release-8-7-3}
 
@@ -32,7 +54,7 @@ _2025 年 2 月 14 日_
 >
 >此版本为&#x200B;**有限发布版** (LA)。仅供&#x200B;**从 Adobe Campaign Standard 迁移到 Adobe Campaign v8** 的客户使用，并且不能部署在任何其他环境上。
 >
->作为正在过渡到 Campaign v8 的 Campaign Standard 用户，请在 [Campaign v8 Web 用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/acs-migration){target="_blank"}中了解有关此过渡的更多信息。
+>作为正在过渡到Campaign v8的Campaign Standard用户，请在[Campaign v8 Web用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/acs-migration){target="_blank"}中了解有关此过渡的更多信息。
 
 ### 新增功能 {#features-8-7-3}
 
@@ -60,7 +82,7 @@ _2025年1月15日_
 
 ### 安全性改进 {#security-8-6-4}
 
-已更新通过&#x200B;**[!UICONTROL Adobe Experience Cloud]**&#x200B;外部帐户与Adobe解决方案和应用程序的连接，以加强安全性。
+通过 **[!UICONTROL Adobe Experience Cloud]** 外部帐户与 Adobe 解决方案和应用程序的连接已更新，以加强安全性。
 
 <!--
 ### Connection to Campaign {#ims-8-6-4}

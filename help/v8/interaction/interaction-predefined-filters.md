@@ -5,16 +5,21 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: 092262c7-768c-4e86-9b2b-c52516f6a030
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: c748654c76c6b6ce8ad4d4886a1f73004a41e7ac
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 3%
+source-wordcount: '149'
+ht-degree: 7%
 
 ---
 
 # 创建预定义过滤器{#creating-pre-defined-filters}
 
 创建预定义过滤器，定义可在选件创建期间轻松重复使用的目标群体的资格规则。 它们特定于每个环境，并将选件参数考虑在内。
+
+>[!NOTE]
+>
+>Adobe Campaign Web UI为您提供了一个用户友好的界面，可轻松管理和自定义预定义过滤器以满足您的特定需求。 创建一次并保存，以供将来使用。要了解有关Web UI预定义过滤器的更多信息，请参阅[Adobe Campaign Web UI文档](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/predefined-filters){target=_blank}。
+
 
 要创建预定义过滤器，请应用以下流程：
 

@@ -3,10 +3,10 @@ title: Campaign v8（控制台） 2024年发行说明
 description: 2024 Campaign v8 版本的功能和改进列表
 feature: Release Notes
 exl-id: 6a0a9486-19a9-4ec3-9030-48dbf419f45f
-source-git-commit: 041df8d2d6128d72a04008affbc9680ba5b640a1
+source-git-commit: 57b18835b87be2a201ce23f5b6053266d13b9cb8
 workflow-type: tm+mt
 source-wordcount: '1308'
-ht-degree: 81%
+ht-degree: 77%
 
 ---
 
@@ -34,7 +34,7 @@ _2024 年 5 月 2 日_
 >
 >此版本为&#x200B;**有限发布版** (LA)。仅供&#x200B;**从 Adobe Campaign Standard 迁移到 Adobe Campaign v8** 的客户使用，并且不能部署在任何其他环境上。
 >
->作为正在过渡到 Campaign v8 的 Campaign Standard 用户，请在 [Campaign v8 Web 用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/acs-migration){target="_blank"}中了解有关此过渡的更多信息。
+>作为正在过渡到Campaign v8的Campaign Standard用户，请在[Campaign v8 Web用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/acs-migration){target="_blank"}中了解有关此过渡的更多信息。
 
 ### 新增功能 {#new-8-7-1}
 
@@ -63,7 +63,7 @@ _2024 年 5 月 2 日_
 
 从此版本开始，随着 Adobe 弃用服务帐户 (JWT) 凭据，Campaign 与 Adobe 解决方案和应用程序的出站集成现在依赖于 OAuth 服务器到服务器凭据。出站集成时，Adobe 将从 JWT 迁移到 OAuth，例如 Campaign-Analytics 集成或 Experience Cloud Triggers 集成。
 
-如果您已实施与 Campaign 的入站集成，则必须迁移技术帐户，详情请参阅[本文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"}。**2025 年 1 月 27 日**&#x200B;前，现有服务帐户 (JWT) 凭据仍将有效。
+如果您已实施与Campaign的入站集成，则必须迁移技术帐户，如[本文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/){target="_blank"}中所述。 现有服务帐户(JWT)凭据将继续工作，直到&#x200B;**2025年6月30日**。
 
 ### 一般改进 {#improvements-8-7-1}
 

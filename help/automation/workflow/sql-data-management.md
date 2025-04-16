@@ -4,9 +4,9 @@ title: SQL 数据管理
 description: 了解有关SQL数据管理工作流活动的更多信息
 feature: Workflows
 Role: User
-Level: Experienced
+level: Experienced
 exl-id: a1e08d57-0387-4802-b447-f6d9ad87072a
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 64b24d7a72c2cdee841ea301ca46b0204f1fccaa
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 3%
@@ -38,7 +38,7 @@ ht-degree: 3%
 
    >[!CAUTION]
    >
-   >SQL脚本编写者负责确保SQL脚本正常工作及其引用（字段名称等） 符合出站模式。
+   >SQL脚本编写者负责确保SQL脚本正常运行，并且其引用（字段名称等）与出站架构一致。
 
    如果要加载现有SQL代码，请选择&#x200B;**[!UICONTROL The SQL script is contained in an entity stored in the database]**&#x200B;选项。 必须在&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]**&#x200B;菜单中创建和存储SQL脚本。
 

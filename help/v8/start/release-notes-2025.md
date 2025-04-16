@@ -3,16 +3,26 @@ title: Campaign v8（控制台） 2025年发行说明
 description: 2025 Campaign v8 版本的功能和改进列表
 feature: Release Notes
 exl-id: 3f91d83e-594e-49ee-a898-606e3de00bf3
-source-git-commit: ff874a8e06303625b4c96f49fdf4f303b50fb908
+source-git-commit: 66e4b59915eae595b28076622f7bcfb5b5a0ffa4
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 67%
+source-wordcount: '428'
+ht-degree: 65%
 
 ---
 
 # 2025 年发行说明 {#2025-rn}
 
 此页面列出了&#x200B;**2025 Campaign v8版本**&#x200B;中的新功能、改进和修复。 [此页面](release-notes.md)中列出了最新版本。
+
+>[!BEGINSHADEBOX]
+
+在此页中&#x200B;****
+
+* Campaign v8.7 - [Release 8.7.2](#release-8-7-2) | [Release 8.7.3](#release-8-7-3)
+
+
+>[!ENDSHADEBOX]
+
 
 ## 版本 8.7.3 {#release-8-7-3}
 

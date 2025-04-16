@@ -3,9 +3,9 @@ title: Campaign v8 发行说明
 description: 最新 Campaign v8 版本
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: ff874a8e06303625b4c96f49fdf4f303b50fb908
+source-git-commit: 66e4b59915eae595b28076622f7bcfb5b5a0ffa4
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '594'
 ht-degree: 16%
 
 ---
@@ -19,7 +19,6 @@ ht-degree: 16%
 在此页中&#x200B;****
 
 * [版本 8.7.4](#release-8-7-4)
-* [版本8.7.3](#release-8-7-3)
 * [版本 8.6.4](#release-8-6-4)
 
 >[!ENDSHADEBOX]
@@ -32,7 +31,7 @@ _2025年4月10日_
 >
 >此版本为&#x200B;**有限发布版** (LA)。仅供&#x200B;**从 Adobe Campaign Standard 迁移到 Adobe Campaign v8** 的客户使用，并且不能部署在任何其他环境上。
 >
->作为正在过渡到Campaign v8的Campaign Standard用户，请在[Campaign v8 Web用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/acs-migration)中了解有关此过渡的更多信息。
+>作为正在过渡到Campaign v8的Campaign Standard用户，请在[Campaign v8 Web用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/acs-migration){target="_blank"}中了解有关此过渡的更多信息。
 
 ### 新增功能 {#features-8-7-4}
 

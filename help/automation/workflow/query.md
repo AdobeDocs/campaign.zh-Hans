@@ -5,9 +5,9 @@ description: 了解有关查询工作流活动的更多信息
 feature: Workflows, Targeting Activity, Query Editor
 role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 71bad190894243f8c4dd82792dcc379faa947e04
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1607'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,11 @@ ht-degree: 1%
 
 通过查询，您可以根据条件选择目标。 您可以将区段代码关联到查询结果并在其中插入附加数据。
 有关查询示例的详细信息，请参阅此[此部分](querying-recipient-table.md)。
+
+>[!NOTE]
+>
+>Adobe Campaign Web UI具有强大的查询建模器，可简化根据各种条件筛选数据库以选择特定目标的过程，从而让您更轻松地创建和管理查询。 要了解有关Web UI查询建模器的更多信息，请参阅[Adobe Campaign Web UI文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/query-database/query-modeler-overview){target=_blank}。
+
 
 ![](assets/query-activity.png){width="70%" align="center" zoomable="yes"}
 
@@ -151,7 +156,7 @@ ht-degree: 1%
 ## 输出参数 {#output-parameters}
 
 * 表名
-* 模式
+* 架构
 * recCount
 
 这组三个值标识查询所定向的群体。 **[!UICONTROL tableName]**&#x200B;是记录目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms：recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。

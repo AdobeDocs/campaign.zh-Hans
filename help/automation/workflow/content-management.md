@@ -5,9 +5,9 @@ description: 内容管理
 feature: Workflows, Data Management
 role: User
 exl-id: 9b225f78-1959-4e4f-aa4e-ff8a63051154
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 9014c2d235fd3dde4afb961ef970334e4e909778
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '460'
 ht-degree: 2%
 
 ---
@@ -19,6 +19,10 @@ ht-degree: 2%
 >[!CAUTION]
 >
 >内容管理是一个可选的Adobe Campaign模块。 请核实您的许可协议。
+
+>[!NOTE]
+>
+>Adobe Campaign Web用户界面允许您为内容使用内容片段。 借助可在一条或多条消息中引用的可重用组件，营销用户可预建多个自定义内容块，并允许您在改进的设计过程中快速组合消息内容。 要了解有关内容片段的更多信息，请参阅[Adobe Campaign Web UI文档。](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/manage-reusable-content/fragments/fragments){target=_blank}
 
 活动的属性分为三个步骤：
 

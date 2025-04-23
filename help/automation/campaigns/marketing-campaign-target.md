@@ -4,8 +4,9 @@ title: 营销活动目标受众
 description: 了解如何定义营销活动的受众
 feature: Campaigns, Audiences
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
-source-git-commit: d292c20e520b2466f782ccf86eb9d61e01915563
+source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 1%
@@ -101,7 +102,7 @@ To build the delivery target, you can define filtering criteria for the recipien
 
 可以编程该定位以根据计划（调度器）或事件（外部信号、文件导入等）自动执行。
 
-与执行定位工作流相关的操作（启动、停止、暂停等） 是&#x200B;**异步**&#x200B;进程：该命令已保存，一旦服务器可供应用，该命令将立即生效。
+与执行定位工作流相关的操作（启动、停止、暂停等）是&#x200B;**异步**&#x200B;进程：命令已保存，一旦服务器可以应用它就会生效。
 
 利用工具栏图标，可采取有关执行定向工作流的操作。
 
@@ -185,7 +186,7 @@ To build the delivery target, you can define filtering criteria for the recipien
 
    ![](assets/enable-control-group.png)
 
-1. 选择&#x200B;**[!UICONTROL Enable and edit control group configuration]**&#x200B;选项。
+1. 选择 **[!UICONTROL Enable and edit control group configuration]** 选项。
 1. 单击&#x200B;**[!UICONTROL Edit...]**&#x200B;配置控制组。
 
    ![](assets/edit-control-group.png)

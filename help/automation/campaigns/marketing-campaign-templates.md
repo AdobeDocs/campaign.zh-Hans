@@ -4,8 +4,9 @@ title: 营销活动模板
 description: 营销活动模板
 feature: Campaigns, Templates
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 4%
@@ -59,7 +60,7 @@ ht-degree: 4%
 
 ![](assets/campaign-template-select-modules.png)
 
-如果未选择某个功能，则将与进程有关的元素（菜单、图标、选项、选项卡、子选项卡等） 不会显示在模板的界面中或基于此模板的营销活动中。 营销活动详细信息左侧的选项卡，以及可用的选项卡，与模板中选择的功能一致。 例如，**费用和目标**&#x200B;功能未启用，相应的&#x200B;**[!UICONTROL Budget]**&#x200B;选项卡未显示在基于此模板的营销活动中。
+如果未选择任何功能，则与流程相关的元素（菜单、图标、选项、选项卡、子选项卡等）不会出现在模板的界面中或基于此模板的营销策划中。 营销活动详细信息左侧的选项卡，以及可用的选项卡，与模板中选择的功能一致。 例如，**费用和目标**&#x200B;功能未启用，相应的&#x200B;**[!UICONTROL Budget]**&#x200B;选项卡未显示在基于此模板的营销活动中。
 
 此外，配置窗口的快捷方式已添加到营销活动仪表板。 启用某个功能后，可通过直接链接从Campaign仪表板访问该功能。
 

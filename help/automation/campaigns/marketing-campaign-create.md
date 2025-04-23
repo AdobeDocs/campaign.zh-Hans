@@ -4,8 +4,9 @@ title: 创建营销活动
 description: 了解如何创建和执行营销活动
 feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 4%
@@ -32,7 +33,7 @@ ht-degree: 4%
 
 1. 单击主页上的&#x200B;**资源管理器**&#x200B;图标。
 1. 右键单击要在其中创建计划的文件夹。
-1. 选择&#x200B;**添加新文件夹> Campaign Management >计划**。
+1. 选择&#x200B;**添加新文件夹>促销活动管理>计划**。
 
    ![](assets/create-new-plan-folder.png)
 
@@ -187,7 +188,7 @@ ht-degree: 4%
 | 活动、投放、优惠等列表。 | 删除列表项 |
 | 营销活动 | 取消营销活动 |
 | 投放 | 批准投放内容和目标<br/>提交投放内容<br/>确认投放<br/>暂停并停止投放 |
-| Web 应用程序 | 创建Web应用程序<br/>编辑应用程序内容和属性<br/>将应用程序内容另存为模板<br/>Publish应用程序 |
+| Web 应用程序 | 创建Web应用程序<br/>编辑应用程序内容和属性<br/>将应用程序内容另存为模板<br/>发布应用程序 |
 | 优惠 | 批准选件内容和资格<br/>禁用联机选件 |
 | 任务 | 完成任务<br/>取消任务 |
 | 营销资源 | 批准资源<br/>锁定并解锁资源 |

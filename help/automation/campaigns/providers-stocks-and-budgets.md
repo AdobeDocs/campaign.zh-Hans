@@ -4,8 +4,9 @@ title: 供应商、库存和预算
 description: 供应商、库存和预算
 feature: Budget Management, Campaigns
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 1d4a98e6-af11-4645-864e-29aa5766d9d8
-source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
+source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 1%
@@ -138,7 +139,7 @@ Adobe Campaign允许您定义将参与在营销活动中执行的作业的服务
 
 服务提供商与营销活动投放相关联。 在投放模板中会引用这些对象，以便在通过此模板创建的投放中提供其服务。
 
-选择服务后，与投放类型（直邮、电子邮件等）对应的成本类别 将自动在中心表中与已定义的处理选项一起指示。
+选择服务后，与投放类型（直邮、电子邮件等）对应的成本类别以及已定义的处理选项会自动在中心表中指示。
 
 >[!NOTE]
 >

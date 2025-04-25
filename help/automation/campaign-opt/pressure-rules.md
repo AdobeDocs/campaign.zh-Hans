@@ -4,9 +4,9 @@ title: 配置压力规则
 description: 了解如何配置压力规则
 feature: Fatigue Management, Typology Rules
 exl-id: d234db0e-936a-48db-b697-11c6b40bc3ab
-source-git-commit: 5810f9b53bd3ad5383d4b9767bc65a3d595862c7
+source-git-commit: 8272550faefece753636418bcb748b36f989fcb5
 workflow-type: tm+mt
-source-wordcount: '3102'
+source-wordcount: '3126'
 ht-degree: 7%
 
 ---
@@ -36,6 +36,10 @@ ht-degree: 7%
 ## 创建压力规则 {#create-a-pressure-rule}
 
 要使用Adobe Campaign在营销活动之间设置仲裁，首先要创建营销活动类型并定义链接类型规则（**压力**&#x200B;规则）。
+
+>[!NOTE]
+>
+>要正确应用压力规则，规则的定向维度需要与投放映射的定向维度匹配。
 
 要创建和配置 **[!UICONTROL Pressure]** 分类规则，请应用以下步骤：
 

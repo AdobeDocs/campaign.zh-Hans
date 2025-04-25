@@ -5,9 +5,9 @@ description: 了解有关数据加载（文件）工作流活动的更多信息
 feature: Workflows, Data Management Activity
 role: User
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 8272550faefece753636418bcb748b36f989fcb5
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1097'
 ht-degree: 14%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 14%
 
 >[!CAUTION]
 >
->仅支持“平面”结构文件（例如CSV、TXT等）。 不建议使用XML格式。
+>仅支持“平面”结构文件（例如CSV、TXT等）。 不建议使用XML格式。 使用客户端控制台，您可以加载最大大小为150 MB的文件。 在Web用户界面中，加载文件活动的限制为50MB。 [了解详情](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html){target="_blank"}
 
 ![](assets/s_advuser_wf_etl_file.png)
 
@@ -93,7 +93,7 @@ ht-degree: 14%
 
 1. 使用文件收集器，可根据指定的频率恢复存储在目录中的文件。
 
-   **[!UICONTROL Directory]**&#x200B;选项卡包含有关要恢复的文件的信息。 在我们的示例中，将恢复名称中包含“customers”一词且存储在服务器的tmp/Adobe/数据/文件目录中的所有文本格式文件。
+   **[!UICONTROL Directory]**&#x200B;选项卡包含有关要恢复的文件的信息。 在我们的示例中，将恢复名称中包含“customers”一词且存储在服务器的tmp/Adobe/Data/files目录中的所有文本格式文件。
 
    [文件收集器](file-collector.md)部分中详细介绍了使用&#x200B;**[!UICONTROL File collector]**&#x200B;的情况。
 

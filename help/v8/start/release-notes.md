@@ -3,10 +3,10 @@ title: Campaign v8 发行说明
 description: 最新 Campaign v8 版本
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 66e4b59915eae595b28076622f7bcfb5b5a0ffa4
+source-git-commit: 5ece3ca4ebf9f3973d9cbd1a00ea57b29c1f2e93
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 16%
+source-wordcount: '781'
+ht-degree: 32%
 
 ---
 
@@ -18,10 +18,37 @@ ht-degree: 16%
 
 在此页中&#x200B;****
 
+* [版本 8.6.5](#release-8-6-4)
 * [版本 8.7.4](#release-8-7-4)
 * [版本 8.6.4](#release-8-6-4)
 
 >[!ENDSHADEBOX]
+
+## 版本 8.6.5 {#release-8-6-5}
+
+_2025年4月25日_
+
+>[!AVAILABILITY]
+>
+>此版本处于&#x200B;**有限可用性** (LA)。
+
+### 新增功能 {#features-8-6-5}
+
+**新短信发送连接器** - 短信发送连接器经过现代化改造和改进，可启用收发器模式 SMPP 连接、启用持久 SMPP 连接，并确保从 Adobe Campaign Standard 过渡的环境具有更好的兼容性。新的短信外部帐户现在可用于所有新的短信实施。现有实施仍受支持，但建议迁移到此新的现代化扩展连接器。[了解更多信息](../send/sms/sms.md)。
+
+### 一般改进 {#improvements-8-6-5}
+
+* 在企业版(FFDA)部署中，应用程序的全局性能已得到改进，包括投放证明发送和数据库清理。
+
+* 为提高应用程序之间所有通信的安全性，现在外部 API 调用支持 mTLS。
+
+* 邮件传输代理 (MTA) - 修复了孤立 MTA 子项停留在 **[!UICONTROL Start pending]** 状态。
+
+### 修复 {#fixes-8-6-5}
+
+此版本中还修复了以下问题：
+
+NEO-67620、NEO-71534、NEO-80245、NEO-81105、NEO-81758、NEO-81908、NEO-82351、NEO-82742、NEO-83044、NEO-83138、NEO-83350、NEO-83729、NEO-83793、NEO-83809、NEO-84038、NEO-84108、NEO-85269、NEO-86121、NEO-86556、NEO-86739
 
 ## 版本 8.7.4 {#release-8-7-4}
 

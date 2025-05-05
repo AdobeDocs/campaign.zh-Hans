@@ -17,7 +17,7 @@ ht-degree: 81%
 + 使用工作流实现自动化 {#workflows}
    + 工作流入门 {#introduction}
       + [关于工作流](workflow/about-workflows.md)
-      + 工作流{#wf-type}的类型
+      + 工作流的类型{#wf-type}
          + [定位工作流](workflow/targeting-workflows.md)
          + [活动工作流](workflow/campaign-workflows.md)
          + [技术工作流](workflow/technical-workflows.md)

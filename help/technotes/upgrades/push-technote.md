@@ -156,7 +156,7 @@ Adobe Campaign Classic v7和Adobe Campaign v8已支持用于发送推送通知�
       nlserver javascript -instance:<instance_name> -file fcm-httpv1-migration.js -arg:run
       ```
 
-+++
+  +++
 
 ### 这对我的Android应用程序有何影响？ {#fcm-apps}
 

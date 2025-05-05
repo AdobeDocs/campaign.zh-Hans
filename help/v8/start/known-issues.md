@@ -16,7 +16,7 @@ ht-degree: 2%
 
 # 已知问题{#known-issues}
 
-此页面列出了&#x200B;**最新Campaign v8版本**&#x200B;中发现的已知问题。 此外，Campaign v8的限制在此页面](ac-guardrails.md)中列出[。
+此页面列出了&#x200B;**最新Campaign v8版本**&#x200B;中发现的已知问题。 此外，Campaign v8的限制在此页面[&#128279;](ac-guardrails.md)中列出。
 
 
 >[!NOTE]
@@ -86,9 +86,9 @@ Error:
 
 作为Campaign管理员，您可以在[Adobe软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=4){target="_blank"}中下载Campaign v8.3.1客户端控制台。
 
-在此页面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans){target="_blank"}中了解如何访问Adobe软件分发[。
+在此页面[&#128279;](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans){target="_blank"}中了解如何访问Adobe软件分发。
 
-在本页](connect.md)中了解如何升级您的客户端控制台[
+在本页[&#128279;](connect.md)中了解如何升级您的客户端控制台
 
 #### 内部引用{#issue-3-ref}
 

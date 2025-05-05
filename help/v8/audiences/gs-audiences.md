@@ -37,4 +37,4 @@ ht-degree: 20%
 
 <!--You can also select your message audience in an external file: recipients are stored not in the database, but in files. These are known as “external” deliveries. These contacts can be imported or not in Adobe Campaign. [Learn more](external-profiles.md).-->
 
-导入后，您可以创建受众以发送消息。 在本节](create-audiences.md)中了解如何创建受众[。
+导入后，您可以创建受众以发送消息。 在本节[&#128279;](create-audiences.md)中了解如何创建受众。

@@ -262,7 +262,7 @@ Adobe Campaign 提供个性化投放模板，您可以使用这些模板或建�
 1. 根据您的需求对模板进行个性化并保存。
 1. 创建新营销活动，并从下拉列表中选择 **[!UICONTROL Re-marketing campaign]** 模板。
 1. 单击 **[!UICONTROL Configure...]** 链接以指定链接到该营销活动的区段和投放模板。
-1. 选择Analytics外部帐户](#external-account-ac)和相关区段。[
+1. 选择Analytics外部帐户[&#128279;](#external-account-ac)和相关区段。
 1. 选择要用于此再营销活动的投放模板，然后单击 **[!UICONTROL Finish]** 以关闭窗口。
 1. 单击 **[!UICONTROL OK]** 以关闭营销活动窗口。
 

@@ -74,7 +74,7 @@ Adobe Target可以使用以下类型的数据：
 * 通过&#x200B;**[!UICONTROL Landing Page]**，您可以将默认图像重定向到默认登陆页面。 此URL仅在最终电子邮件中显示默认图像时适用。 它是可选的。
 * **[!UICONTROL Additional decision parameters]**&#x200B;定义Adobe Target区段中定义的字段与Adobe Campaign字段之间的映射。 使用的Adobe Campaign字段必须在rawbox中指定。 在我们的示例中，我们添加了“国家/地区”字段。
 
-如果您在Adobe Target的设置中使用企业权限，请在此字段中添加相应的资产。 在[Adobe Target文档](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}中了解有关Target企业权限的更多信息。
+如果您在Adobe Target的设置中使用企业权限，请在此字段中添加相应的资产。 在[Adobe Target文档](https://experienceleague.adobe.com/zh-hans/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}中了解有关Target企业权限的更多信息。
 
 ![](assets/target_13.png)
 
@@ -94,7 +94,7 @@ Adobe Target可以使用以下类型的数据：
 
    ![](assets/target_6.png)
 
-1. 对其余重定向选件执行相同的过程。 有关详细信息，请参阅此[Adobe Target文档](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html#experiences){target="_blank"}。
+1. 对其余重定向选件执行相同的过程。 有关详细信息，请参阅此[Adobe Target文档](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=zh-Hans#experiences){target="_blank"}。
 
 ### 创建受众 {#audiences-target}
 

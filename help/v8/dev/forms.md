@@ -87,7 +87,7 @@ ht-degree: 0%
 
 默认情况下，每个字段显示在一行中，并占用所有可用空间，具体取决于数据类型。
 
-[Campaign Classicv7文档](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html){target="_blank"}中列出了所有表单属性。
+[Campaign Classicv7文档](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html?lang=zh-Hans){target="_blank"}中列出了所有表单属性。
 
 ## 格式化 {#formatting}
 

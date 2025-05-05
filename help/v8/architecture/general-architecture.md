@@ -98,4 +98,4 @@ Adobe Campaign是一个使用不同应用程序的平台，用于创建开放且
 
 总存储容量在主数据库和（可选）Snowflake辅助数据库之间拆分。 存储数据的位置应在实施或升级时确定，具体取决于客户特定的用例。
 
-请参阅[Campaign控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html){target="_blank"}以了解如何监测数据库使用情况。
+请参阅[Campaign控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html?lang=zh-Hans){target="_blank"}以了解如何监测数据库使用情况。

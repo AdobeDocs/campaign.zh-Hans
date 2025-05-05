@@ -36,9 +36,9 @@ _2025 年 2 月 14 日_
 
 ### 新增功能 {#features-8-7-3}
 
-* **事务性消息的动态报告** — 您现在可以在动态报告用户界面中监视事务性消息。 通过这些报表，营销人员能够实时查看事务型消息的所有报表量度和维度，以及通过模板发送的投放的细分。 [了解更多信息](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/reporting/get-started-reporting){target="_blank"}
+* **事务性消息的动态报告** — 您现在可以在动态报告用户界面中监视事务性消息。 通过这些报表，营销人员能够实时查看事务型消息的所有报表量度和维度，以及通过模板发送的投放的细分。 [了解更多信息](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud/campaign/reporting/get-started-reporting){target="_blank"}
 
-* **事务性消息传递REST API** — 现在为电子邮件提供了基于事件的事务性API。 [了解更多信息](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/apis/managing-transactional-messages){target="_blank"}
+* **事务性消息传递REST API** — 现在为电子邮件提供了基于事件的事务性API。 [了解更多信息](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud/campaign/apis/managing-transactional-messages){target="_blank"}
 
 ### 修复 {#fixes-8-7-3}
 

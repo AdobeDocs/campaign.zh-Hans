@@ -20,7 +20,7 @@ ht-degree: 0%
 
 您可以使用Experience Cloud触发器通过管道在Adobe Campaign和Adobe Analytics之间连接数据。 管道从您的网站检索用户的操作或触发器。 放弃购物车就是一个触发器示例。 在Adobe Campaign中处理触发器，以近乎实时地发送电子邮件。
 
-在[此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html){target="_blank"}上了解有关Adobe Campaign和Experience Cloud触发器的更多信息。
+在[此页面](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html?lang=zh-Hans){target="_blank"}上了解有关Adobe Campaign和Experience Cloud触发器的更多信息。
 
-了解如何[创建Experience Cloud触发器](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html){target="_blank"}，识别、定义并监视关键消费者行为。
+了解如何[创建Experience Cloud触发器](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html?lang=zh-Hans){target="_blank"}，识别、定义并监视关键消费者行为。
 

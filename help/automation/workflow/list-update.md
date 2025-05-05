@@ -74,4 +74,4 @@ ht-degree: 1%
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-[此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}提供了其他Campaign操作方法视频。
+[此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=zh-Hans){target="_blank"}提供了其他Campaign操作方法视频。

@@ -90,7 +90,7 @@ ht-degree: 9%
 
 您的第一个电子邮件投放已准备就绪。 您现在需要定义受众、验证投放并发送它。
 
-在此[用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}中了解如何创建工作流以导入电子邮件内容。
+在此[用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=zh-Hans){target="_blank"}中了解如何创建工作流以导入电子邮件内容。
 
 >[!MORELIKETHIS]
 >

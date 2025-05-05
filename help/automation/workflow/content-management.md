@@ -22,7 +22,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe Campaign Web用户界面允许您为内容使用内容片段。 借助可在一条或多条消息中引用的可重用组件，营销用户可预建多个自定义内容块，从而允许您在改进的设计过程中快速组合消息内容。 要了解有关内容片段的更多信息，请参阅[Adobe Campaign Web UI文档。](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/manage-reusable-content/fragments/fragments){target=_blank}
+>Adobe Campaign Web用户界面允许您为内容使用内容片段。 借助可在一条或多条消息中引用的可重用组件，营销用户可预建多个自定义内容块，从而允许您在改进的设计过程中快速组合消息内容。 要了解有关内容片段的更多信息，请参阅[Adobe Campaign Web UI文档。](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/content/manage-reusable-content/fragments/fragments){target=_blank}
 
 活动的属性分为三个步骤：
 

@@ -52,7 +52,7 @@ ht-degree: 1%
 
 * **在Web应用程序中添加验证码**：在您的公共登陆页面和订阅页面中添加验证码。
 
-请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}以了解详情。
+请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=zh-Hans#installing-campaign-classic){target="_blank"}以了解详情。
 
 
 ## 个性化
@@ -147,4 +147,4 @@ ht-degree: 1%
 
 * **在Web应用程序中添加验证码**：在您的公共登陆页面和订阅页面中添加验证码。
 
-请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}以了解详情。
+请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=zh-Hans#installing-campaign-classic){target="_blank"}以了解详情。

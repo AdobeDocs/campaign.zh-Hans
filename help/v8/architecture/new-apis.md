@@ -212,4 +212,4 @@ xtk.session.IngestExt(xmlStagingRecipient);
 
 **相关主题**
 
-* [Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html){target="_blank"}
+* [Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=zh-Hans){target="_blank"}

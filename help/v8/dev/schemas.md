@@ -198,9 +198,9 @@ For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-f
 
 ![](assets/schemaextension_2.png)
 
-[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html#content-model){target="_blank"}的`<attribute>`元素部分中提供了属性的完整列表。 以下是一些更常用的属性： **@advanced**、**@dataPolicy**、**@default**、**@desc**、**@enum**、**@expr**、**@label**、**@length**、**@name**、**@notNull**、**@required**、**@ref**、**@xml**、**@type**。
+[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=zh-Hans#content-model){target="_blank"}的`<attribute>`元素部分中提供了属性的完整列表。 以下是一些更常用的属性： **@advanced**、**@dataPolicy**、**@default**、**@desc**、**@enum**、**@expr**、**@label**、**@length**、**@name**、**@notNull**、**@required**、**@ref**、**@xml**、**@type**。
 
-有关每个属性的详细信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic){target="_blank"}中的属性说明。
+有关每个属性的详细信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=zh-Hans#configuring-campaign-classic){target="_blank"}中的属性说明。
 
 ### 示例 {#examples}
 

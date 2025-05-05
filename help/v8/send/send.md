@@ -32,7 +32,7 @@ ht-degree: 2%
 >投放状态不会实时显示。 在此部分[&#128279;](#email-feedback-service)中了解有关电子邮件反馈服务的更多信息。
 
 
-[请参阅Campaign Classicv7文档以了解有关投放监视的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html){target="_blank"}
+[请参阅Campaign Classicv7文档以了解有关投放监视的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=zh-Hans){target="_blank"}
 
 ## Campaign MTA {#mta}
 
@@ -75,7 +75,7 @@ MTA有自己的MX规则，根据您自己的历史电子邮件信誉以及来自
 
 在Adobe Campaign中，DKIM电子邮件身份验证签名由MTA执行。
 
-在[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication){target="_blank"}中了解有关DKIM的更多信息。
+在[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#authentication){target="_blank"}中了解有关DKIM的更多信息。
 
 ## 电子邮件反馈服务 {#email-feedback-service}
 
@@ -87,7 +87,7 @@ Campaign电子邮件反馈服务(EFS)报告使用Adobe Campaign发送的每个�
 
 从MTA报告硬退回邮件时，其日志状态将从&#x200B;**[!UICONTROL Taken into account by the service provider]**&#x200B;更改为&#x200B;**[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->。
 
-从MTA报告软退回消息时，其日志状态保持不变(**[!UICONTROL Taken into account by the service provider]**)：仅更新[错误原因](delivery-failures.md#delivery-failure-reasons)<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->。 **[!UICONTROL Success]**&#x200B;百分比保持不变。 然后，在投放[有效期](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}内重试软退回邮件：
+从MTA报告软退回消息时，其日志状态保持不变(**[!UICONTROL Taken into account by the service provider]**)：仅更新[错误原因](delivery-failures.md#delivery-failure-reasons)<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->。 **[!UICONTROL Success]**&#x200B;百分比保持不变。 然后，在投放[有效期](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=zh-Hans#defining-validity-period){target="_blank"}内重试软退回邮件：
 
 * 如果在有效期结束前重试成功，则消息状态将更改为&#x200B;**[!UICONTROL Sent]**，并相应地增加&#x200B;**[!UICONTROL Success]**&#x200B;百分比。
 

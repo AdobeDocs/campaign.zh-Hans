@@ -105,4 +105,4 @@ ht-degree: 3%
 
 了解如何为电子邮件投放发送并验证校样。
 
->[!VIDEO](https://video.tv.adobe.com/v/333404)
+>[!VIDEO](https://video.tv.adobe.com/v/3447009?captions=chi_hans)

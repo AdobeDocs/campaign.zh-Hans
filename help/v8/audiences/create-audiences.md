@@ -26,7 +26,7 @@ ht-degree: 13%
 
 观看本视频，了解有关Adobe Campaign中列表管理的更多信息。
 
->[!VIDEO](https://video.tv.adobe.com/v/334909?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3426466?quality=12&captions=chi_hans)
 
 
 ## 创建联系人列表 {#create-a-list-of-contacts}

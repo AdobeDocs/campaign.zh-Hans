@@ -70,4 +70,4 @@ Adobe Campaign简化了个性化：您可以使用单个[消息模板](create-te
 了解不同类型的动态内容，并了解如何创建个性化块和条件语句并将它们应用到投放中。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/335734?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3452878?quality=12&captions=chi_hans)

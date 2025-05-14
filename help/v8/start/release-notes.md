@@ -3,10 +3,10 @@ title: Campaign v8 发行说明
 description: 最新 Campaign v8 版本
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 5ece3ca4ebf9f3973d9cbd1a00ea57b29c1f2e93
+source-git-commit: 6d2425f7e7f35f5461151790fbda2bef2959bff4
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 32%
+ht-degree: 34%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 32%
 
 >[!BEGINSHADEBOX]
 
-在此页中&#x200B;**&#x200B;**
+**在此页上**
 
 * [版本 8.6.5](#release-8-6-4)
 * [版本 8.7.4](#release-8-7-4)
@@ -62,7 +62,7 @@ _2025年4月10日_
 
 ### 新增功能 {#features-8-7-4}
 
-* **SMS REST API支持** — 事务性消息传递REST API现在可用于SMS渠道。 当有效负载中同时存在电子邮件和手机时，您可以使用“widedChannel”字段指定渠道。 如果未提供，则默认使用电子邮件，除非wisdedChannel明确请求短信。
+* **SMS REST API支持** — 事务性消息传递REST API现在可用于SMS渠道。 当负载中同时存在电子邮件和移动电话时，您可以使用“wishedChannel”字段来指定渠道。如果未提供，则默认使用电子邮件，除非wisdedChannel明确请求短信。
 
 * **多语言投放** — 从4月版的Campaign Web用户界面开始，您将能够以不同语言发送多个电子邮件投放，并访问相关的动态报告。 此功能仅在4月底在Adobe Campaign Web用户界面中可用，并且需要服务器更新至Campaign v8.7.4。
 

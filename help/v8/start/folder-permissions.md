@@ -5,9 +5,9 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 5bd8dbba-7a06-4737-bc5a-60354f91c709
-source-git-commit: 0513b9f65e9431f5207b384a0e2d8c5aeb8e209f
+source-git-commit: 4a62c551c43cd5a4866df36cce10e294f35db363
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,12 @@ ht-degree: 0%
 * 要&#x200B;**授权组或操作员**，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并选择组或操作员以分配此文件夹的授权。
 * 要&#x200B;**禁止组或操作员**，请单击&#x200B;**[!UICONTROL Delete]**&#x200B;并选择组或操作员以删除此文件夹的授权。
 * 要&#x200B;**选择分配给某个组或操作员的权限**，请选择该组或操作员，选择要授予的访问权限，然后取消选择其他权限。
+
+>[!NOTE]
+>
+>您应该不能创建至少有一个文件夹没有写入权限的对象。
+>
+>您无需成为管理员即可创建片段，但您必须对至少一个“内容可视化片段”文件夹具有写入权限。 否则，您将无法创建可视化片段。
 
 ## 传播权限 {#propagate-permissions}
 

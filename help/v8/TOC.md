@@ -5,10 +5,10 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: d50c746d11b6f1bb0b5af0d5ddab5660b99dc359
+source-git-commit: 4a62c551c43cd5a4866df36cce10e294f35db363
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 99%
+source-wordcount: '695'
+ht-degree: 89%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 99%
 # Adobe Campaign v8（控制台）文档 {#campaign-v8}
 
 + [Campaign v8 文档](campaign-home.md)
-+ 发行说明{#releases}
++ 发行说明 {#releases}
    + [早期发行说明](start/e-release-notes.md)
    + [版本和升级](start/upgrades.md)
    + [最新版本](start/release-notes.md)
-   + 之前版本 {#previous-rn}
+   + 之前版本  {#previous-rn}
       + [2025](start/release-notes-2025.md)
       + [2024](start/release-notes-2024.md)
       + [2023](start/release-notes-2023.md)
@@ -30,7 +30,7 @@ ht-degree: 99%
    + [已知问题](start/known-issues.md)
    + [兼容性矩阵](start/compatibility-matrix.md)
    + [文档更新](start/documentation-updates.md)
-+ 入门 {#new}
++ 开始使用 {#new}
    + [Adobe Campaign 入门](start/get-started.md)
    + [关键功能](start/whats-new.md)
    + [探索用户界面](start/campaign-ui.md)
@@ -39,11 +39,11 @@ ht-degree: 99%
    + [从 Campaign Classic v7 到 v8](start/v7-to-v8.md)
    + [从 Campaign Standard 到 v8](start/acs-to-v8.md)
    + [常见问题解答](start/campaign-faq.md)
-+ Campaign 管理 {#campaigns}
-   + [活动入门](start/campaigns.md)
++ 营销活动管理 {#campaigns}
+   + [开始使用营销活动](start/campaigns.md)
    + [营销活动编排 >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans)
-+ 发送消息 {#send}
-   + [消息入门](start/gs-message.md)
++ 发送消息{#send}
+   + [开始使用消息功能](start/gs-message.md)
    + [创建您的第一个投放](start/create-message.md)
    + [投放最佳实践](start/delivery-best-practices.md)
    + 电子邮件 {#emails}
@@ -54,7 +54,7 @@ ht-degree: 99%
       + [发送和监测电子邮件](send/send.md)
    + 短信 {#sms}
       + [短信入门](send/sms/sms.md)
-      + 配置短信渠道{#config-sms}
+      + 配置短信渠道 {#config-sms}
          + [短信投放设置](send/sms/sms-delivery-settings.md)
          + [SMPP 外部帐户设置](send/sms/smpp-external-account.md)
          + [短信渠道特征](send/sms/sms-channel.md)
@@ -62,17 +62,17 @@ ht-degree: 99%
          + [单独实例](send/sms/sms-standalone-instance.md)
          + [中间源基础结构](send/sms/sms-mid-sourcing.md)
          + [SMPP 连接器说明](send/sms/smpp-connector-delivery.md)
-      + 创建短信{#create-sms}
+      + 创建短信  {#create-sms}
          + [创建短信投放](send/sms/create-sms.md)
          + [定义内容](send/sms/sms-content.md)
          + [选择受众](send/sms/sms-audience.md)
-      + 验证并发送短信{#validate-sms}
+      + 验证和发送短信 {#validate-sms}
          + [发送短信校样](send/sms/sms-proofs.md)
          + [发送给受众](send/sms/sms-send.md)
       + [监测和跟踪短信](send/sms/sms-monitor.md)
    + 推送通知 {#push}
       + [创建和发送推送通知](send/push.md)
-      + 富媒体推送{#rich-push}
+      + 丰富的推送  {#rich-push}
          + [设计 Android 富推送投放](send/rich-push-android.md)
          + [设计 iOS 富媒体推送投放](send/rich-push-ios.md)
       + [配置推送通知渠道](send/push-settings.md)
@@ -80,13 +80,14 @@ ht-degree: 99%
    + [LINE 消息](send/line.md)
    + [直邮](send/direct-mail.md)
    + [X (Twitter)](send/twitter.md)
-   + 个性化内容{#personalize}
+   + [自定义外部渠道](send/custom-channel.md)
+   + 个性化内容 {#personalize}
       + [个性化入门](send/personalize.md)
       + [个性化数据](send/personalization-data.md)
       + [添加个性化字段](send/personalization-fields.md)
       + [使用个性化块](send/personalization-blocks.md)
       + [创建条件](send/conditions.md)
-   + 验证和发送投放{#validate}
+   + 验证并发送投放 {#validate}
       + [预览和校样](send/preview-and-proof.md)
       + [投放分析](send/delivery-analysis.md)
       + [配置和发送投放](send/configure-and-send.md)
@@ -95,14 +96,14 @@ ht-degree: 99%
       + [隔离](send/quarantines.md)
       + [投放失败](send/delivery-failures.md)
    + [使用投放模板](send/create-templates.md)
-   + 事务性消息{#real-time}
+   + 事务性消息 {#real-time}
       + [事务性消息入门](send/transactional.md)
       + [创建和发布模板](send/transactional-template.md)
-      + 事件管理{#event}
+      + 事件管理 {#event}
          + [收集和处理事件](send/event-processing.md)
          + [了解事件描述](send/event-description.md)
          + [发送和监测消息](send/delivery-execution.md)
-+ 轮廓和受众管理 {#audience}
++ 用户档案和受众管理 {#audience}
    + [轮廓和受众入门](audiences/gs-audiences.md)
    + [使用受众](start/audiences.md)
    + [访问轮廓](audiences/view-profiles.md)
@@ -122,7 +123,7 @@ ht-degree: 99%
 + 内容管理 {#content}
    + [创建登陆页面](dev/landing-pages.md)
    + [设计 Web 应用程序和表单](dev/webapps.md)
-+ 自动化和工作流{#automation}
++ 自动化和工作流 {#automation}
    + [Campaign 自动化指南 >](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/home)
 + 隐私和安全管理 {#privacy}
    + [管理隐私请求](start/privacy.md)
@@ -140,7 +141,7 @@ ht-degree: 99%
    + [创建产品建议目录](interaction/interaction-offer-catalog.md)
    + [创建产品建议](interaction/interaction-offer.md)
    + [发送产品建议（出站）](interaction/interaction-send-offers.md)
-   + 提供产品建议（入站）{#inbound}
+   + 提供优惠（入站）{#inbound}
       + [上下文](interaction/interaction-present-offers.md)
       + [在网页中调用产品建议](interaction/interaction-integration.md)
       + [管理匿名互动](interaction/anonymous-interactions.md)
@@ -150,7 +151,7 @@ ht-degree: 99%
    + [跟踪和监测](start/tracking.md)
    + [审核记录](reporting/audit-trail.md)
    + 使用报告{#reports}
-      + [报告入门](reporting/gs-reporting.md)
+      + [使用入门](reporting/gs-reporting.md)
       + 创建多维数据集{#cubes}
          + [多维数据集入门](reporting/gs-cubes.md)
          + [创建多维数据集](reporting/cube-indicators.md)
@@ -168,7 +169,7 @@ ht-degree: 99%
    + [工作流文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)
 + 集成 {#connect}
    + [将 Campaign 与其他解决方案配合使用](connect/integration.md)
-   + Campaign + Experience 平台{#ac-aep}
+   + Campaign + Experience Platform {#ac-aep}
       + [共享和同步受众及轮廓属性](connect/ac-aep.md)
       + [从 Campaign 登陆页更新 AEP 轮廓](connect/ac-aep-landing-pages.md)
    + [Campaign + Journey Optimizer](connect/ac-ajo.md)
@@ -179,7 +180,7 @@ ht-degree: 99%
    + [Campaign + Workfront](connect/ac-workfront.md)
    + [Campaign + X (Twitter)](connect/ac-tw.md)
    + [Campaign + 外部数据库](connect/fda.md)
-   + Campaign + 您的 CRM{#ac-crm}
+   + Campaign + 您的 CRM {#ac-crm}
       + [CRM 连接器入门](connect/crm.md)
       + [使用 Campaign 和 SFDC](connect/ac-sfdc.md)
       + [使用 Campaign 和 Microsoft Dynamics](connect/ac-ms-dyn.md)
@@ -191,21 +192,21 @@ ht-degree: 99%
       + [添加文件夹权限](start/folder-permissions.md)
    + [控制面板](config/self-service.md)
 + 架构和配置 {#config}
-   + Campaign v8 架构{#architecture}
+   + Campaign v8架构 {#architecture}
       + [全局原则](architecture/general-architecture.md)
       + [架构模型](architecture/architecture.md)
       + [Campaign FDA 部署](architecture/fda-deployment.md)
-      + 企业 (FFDA) 部署{#ffda}
+      + 企业(FFDA)部署 {#ffda}
          + [什么是 Campaign FFDA？](architecture/enterprise-deployment.md)
          + [密钥管理和唯一性](architecture/keys.md)
          + [新 API](architecture/new-apis.md)
          + [API 暂存机制](architecture/staging.md)
          + [复制机制](architecture/replication.md)
-   + 实施 {#implement}
+   + 实现 {#implement}
       + [实施步骤](start/implement.md)
       + [自定义实例](dev/customize.md)
       + [数据模型最佳实践](dev/datamodel-best-practices.md)
-   + 设置和配置{#configuration}
+   + 设置和配置 {#configuration}
       + [用户界面设置](config/ui-settings.md)
       + [管理文件夹和视图](audiences/folders-and-views.md)
       + [事务性消息设置](config/transactional-msg-settings.md)
@@ -213,7 +214,7 @@ ht-degree: 99%
       + [外部帐户](config/external-accounts.md)
 + 开发人员资源 {#developer}
    + [Campaign 数据模型](dev/datamodel.md)
-   + 架构和表单{#shemas-forms}
+   + 架构和表单 {#shemas-forms}
       + [使用架构](dev/schemas.md)
       + [创建架构](dev/create-schema.md)
       + [扩展架构](dev/extend-schema.md)

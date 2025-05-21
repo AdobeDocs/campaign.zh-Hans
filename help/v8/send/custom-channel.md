@@ -17,7 +17,7 @@ Adobe Campaign允许您创建与第三方集成的自定义外部渠道。 然�
 
 投放创建和发送可在客户端控制台和Web UI中执行。 但是，自定义外部渠道仅在客户端控制台中执行。
 
-要了解如何基于自定义外部渠道创建和发送投放，请参阅此[页面](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html)。
+要了解如何基于自定义外部渠道创建和发送投放，请参阅此[页面](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html?lang=zh-Hans)。
 
 以下是在客户端控制台中创建新的外部自定义渠道的步骤：
 

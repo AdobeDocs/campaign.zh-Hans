@@ -5,9 +5,9 @@ description: 创建和管理任务
 feature: Campaigns, Resource Management
 role: User
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
 workflow-type: tm+mt
-source-wordcount: '3758'
+source-wordcount: '3757'
 ht-degree: 0%
 
 ---
@@ -467,7 +467,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 1. 完成分配给他们的部分后，参与者可以通过以下任一方式批准任务：
 
    * 通过通知电子邮件。
-   * 通过客户端控制台或Web访问，在任务仪表板中。
+   * 通过Client Console或Web界面，在任务仪表板中。
 
      ![](assets/s_ncs_user_task_start_rea.png)
 
@@ -491,7 +491,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 1. 任务状态更改为&#x200B;**[!UICONTROL To approve]**，并向审阅人发送通知。
 
-   他们通过通知电子邮件、客户端控制台或Web浏览器批准任务。
+   他们通过通知电子邮件、客户端控制台或Web界面批准任务。
 
    他们可以通过营销活动仪表板执行操作：
 

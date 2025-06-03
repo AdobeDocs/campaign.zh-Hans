@@ -5,7 +5,7 @@ role: User, Admin
 feature: Social Marketing
 level: Beginner, Intermediate
 exl-id: 5523217a-b95f-4639-b941-52eb7d5a0203
-source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
+source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
 workflow-type: tm+mt
 source-wordcount: '1066'
 ht-degree: 3%
@@ -38,7 +38,7 @@ ht-degree: 3%
 
 若要开始使用此集成，您必须注册[X开发人员帐户](https://developer.twitter.com){target="_blank"}。
 
-Campaign使用1.1版本的X API。 要使用它，您需要通过开发人员门户申请提升的访问权限。 在此页面[&#128279;](https://developer.twitter.com/en/portal/products/elevated){target="_blank"}中了解有关X提升的访问权限的更多信息。
+Campaign使用1.1版本的X API。 要使用它，您需要通过开发人员门户申请提升的访问权限。 在此页面](https://developer.twitter.com/en/portal/products/elevated){target="_blank"}中了解有关X提升的访问权限[的更多信息。
 
 ## 在X上创建应用程序 {#create-an-app-on-twitter}
 
@@ -106,7 +106,7 @@ Campaign使用1.1版本的X API。 要使用它，您需要通过开发人员门
 要检查您的设置，您可以：
 
 * 编辑您刚刚创建的&#x200B;**Twitter**&#x200B;服务。
-* 浏览&#x200B;**[!UICONTROL Twitter page]**&#x200B;选项卡：应显示您的Twitter帐户。
+* 浏览&#x200B;**[!UICONTROL Twitter page]**选项卡：应显示您的Twitter帐户。
   ![](assets/tw-page.png)
 
 ## 同步您的X帐户 {#synchro-tw-accounts}

@@ -5,9 +5,9 @@ description: 创建本地活动
 feature: Distributed Marketing
 role: User
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1556'
 ht-degree: 1%
 
 ---
@@ -46,17 +46,17 @@ ht-degree: 1%
 
 ![](assets/mkt_distr_4.png)
 
-### 接口类型 {#web-interface}
+### Web 界面 {#web-interface}
 
-在&#x200B;**分布式营销**&#x200B;选项卡中，您可以选择接口类型并指定本地实体下订单时要输入的默认值和参数。
+在&#x200B;**分布式营销**&#x200B;选项卡中，您可以选择Web界面的类型，并指定本地实体下达订单时要输入的默认值和参数。
 
-该界面对应于本地实体在订购营销活动时要填充的表单。
+Web界面对应于本地实体在订购营销活动时要填充的表单。
 
-选择要应用于从模板创建的营销活动的界面类型：
+选择要应用于从模板创建的营销活动的Web界面类型：
 
 ![](assets/mkt_distr_1.png)
 
-有四种类型的接口可用：
+有四种类型的Web界面可用：
 
 * **[!UICONTROL By brief]**：本地实体必须提供描述，以便描述营销活动配置。 订单获得批准后，中央实体会配置并执行整个营销活动。
 
@@ -107,7 +107,7 @@ ht-degree: 1%
 
 ### 文档 {#documents}
 
-您可以允许本地实体运算符链接文档（文本文件、电子表格、图像、营销活动描述等） 到本地营销活动。 **[!UICONTROL Advanced parameters for campaign entry...]**&#x200B;链接允许您限制文档数量。 要实现此目的，只需在&#x200B;**[!UICONTROL Number of documents]**&#x200B;字段中输入允许的最大数量即可。
+在创建订单时，您可以允许本地实体操作员将文档（文本文件、电子表格、图像、促销活动描述等）链接到本地促销活动。 **[!UICONTROL Advanced parameters for campaign entry...]**&#x200B;链接允许您限制文档数量。 要实现此目的，只需在&#x200B;**[!UICONTROL Number of documents]**&#x200B;字段中输入允许的最大数量即可。
 
 ![](assets/s_advuser_mkg_dist_local_docs.png)
 
@@ -298,7 +298,7 @@ ht-degree: 1%
 
 #### 通过客户端控制台批准 {#approving-via-the-adobe-campaign-console}
 
-订单也可以通过客户控制台在促销活动订单概述中审批。 要批准订单，请选择该订单并单击&#x200B;**[!UICONTROL Approve the order]**。
+也可以通过客户控制台在促销活动订单概述中批准该订单。 要批准订单，请选择该订单并单击&#x200B;**[!UICONTROL Approve the order]**。
 
 ![](assets/mkg_dist_local_order_valid.png)
 
@@ -322,7 +322,7 @@ ht-degree: 1%
 
 如果复查人拒绝订单，则系统会自动将相关通知发送给相关的本地实体：显示拒绝审批的操作员输入的备注。
 
-信息显示在活动包列表页面或活动订单页面上。 如果他们有权访问Adobe Campaign客户端控制台，则会将此拒绝通知本地实体。
+信息显示在活动包列表页面或活动订单页面上。 如果他们有权访问Adobe Campaign Client Console，则会将此拒绝通知本地实体。
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 

@@ -5,7 +5,7 @@ feature: Web Forms, Landing Pages
 role: Developer
 level: Beginner, Intermediate
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
 workflow-type: tm+mt
 source-wordcount: '2551'
 ht-degree: 0%
@@ -87,11 +87,11 @@ ht-degree: 0%
 
 默认情况下，每个字段显示在一行中，并占用所有可用空间，具体取决于数据类型。
 
-[Campaign Classicv7文档](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html?lang=zh-Hans){target="_blank"}中列出了所有表单属性。
+[Campaign Classic v7文档](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html){target="_blank"}中列出了所有表单属性。
 
 ## 格式化 {#formatting}
 
-控件的布局类似于HTML表中使用的布局，可以将控件划分为若干列、交错元素或指定可用空间的占用。 但是，请记住，格式设置仅允许您按比例划分区域；您不能为对象指定固定维度。
+控件的布局类似于HTML表中使用的布局，可以将控件划分为多个列、交错元素或指定可用空间的占用。 但是，请记住，格式设置仅允许您按比例划分区域；您不能为对象指定固定维度。
 
 要以两列显示上述示例的控件，请执行以下操作：
 
@@ -638,7 +638,7 @@ ht-degree: 0%
 
 ### SOAP方法 {#soap-methods}
 
-SOAP方法执行可以从页面末尾填充的&#x200B;**`<leave>`**&#x200B;标记中启动。
+可以从页面末尾填充的&#x200B;**`<leave>`**&#x200B;标记启动SOAP方法执行。
 
 **`<soapcall>`**&#x200B;标记包含对方法的调用，并具有以下输入参数：
 

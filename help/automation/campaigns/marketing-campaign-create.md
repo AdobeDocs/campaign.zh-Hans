@@ -6,9 +6,9 @@ feature: Campaigns, Cross Channel Orchestration, Programs
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
-source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
+source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1298'
 ht-degree: 4%
 
 ---
@@ -159,14 +159,9 @@ ht-degree: 4%
 当您通过项目群的&#x200B;**[!UICONTROL Schedule]**&#x200B;选项卡创建营销策划时，该营销策划会自动链接到相关项目。 在这种情况下，**[!UICONTROL Program]**&#x200B;字段是隐藏的。
 
 
-## 使用Web浏览器访问Campaign {#use-the-web-interface}
+## 使用Web界面 {#use-the-web-interface-}
 
-
->[!AVAILABILITY]
->
->从Campaign v8.6开始，Campaign在Web用户界面中提供。 通过此新界面可以执行大多数营销操作。 [了解详情](../../v8/start/campaign-ui.md#discover-the-user-interface)。
-
-您可以通过互联网浏览器访问某些Adobe Campaign客户端控制台屏幕，以查看所有营销活动和投放以及数据库中用户档案的报告和信息。 不能通过此Web访问创建组件，但根据访问权限的不同，您可以查看和/或处理数据库中的数据。 通常，您可以批准活动内容和定位、重新启动或停止投放等。
+您可以通过Internet浏览器访问Adobe Campaign客户端控制台屏幕，以查看所有营销活动和投放以及数据库中用户档案的报告和信息。 此访问不会启用记录创建。 根据操作员的权限，您可以查看和/或处理数据库中的数据。 例如，您可以批准活动内容和定位、重新启动或停止投放等。
 
 1. 照常通过https://`<your instance>:<port>/view/home`登录。
 1. 使用菜单访问概述。
@@ -189,7 +184,7 @@ ht-degree: 4%
 | 营销活动 | 取消营销活动 |
 | 投放 | 批准投放内容和目标<br/>提交投放内容<br/>确认投放<br/>暂停并停止投放 |
 | Web 应用程序 | 创建Web应用程序<br/>编辑应用程序内容和属性<br/>将应用程序内容另存为模板<br/>发布应用程序 |
-| 优惠 | 批准选件内容和资格<br/>禁用联机选件 |
+| 产品建议 | 批准选件内容和资格<br/>禁用联机选件 |
 | 任务 | 完成任务<br/>取消任务 |
 | 营销资源 | 批准资源<br/>锁定并解锁资源 |
 | 营销活动包 | 提交程序包以供审批<br/>批准或拒绝程序包<br/>取消程序包 |
@@ -213,4 +208,4 @@ ht-degree: 4%
 
 本视频说明如何创建营销计划、项目和营销活动。
 
->[!VIDEO](https://video.tv.adobe.com/v/3426482?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/333810?quality=12)

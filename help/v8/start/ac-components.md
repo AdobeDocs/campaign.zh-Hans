@@ -5,9 +5,9 @@ feature: Overview, Architecture, Configuration
 role: User
 level: Beginner
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: 6926d84576df1810b511ef1a9976593cb99585bb
+source-git-commit: e4f6c70ecdcf7414b5f49a43933cfd1c967a0905
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,21 @@ Adobe Campaign组件和全局架构如下所述。
 
 ![](assets/do-not-localize//ac-components.png)
 
+### 表示层{#presentation-layer}
 
+您可以通过富客户端、瘦客户端或API集成访问Adobe Campaign。
+
+* 富客户端
+
+  Campaign富客户端是一种本机应用程序，它通过标准互联网协议(如SOAP和HTTP)与Adobe Campaign应用程序服务器进行通信。 [了解有关Campaign客户端控制台的更多信息](../start/connect.md)。
+
+* 瘦客户端
+
+  通过Adobe Campaign Web访问功能，您可以使用HTML用户界面通过Web浏览器访问Campaign功能的子集。 使用此Web界面可访问报告、控制和验证消息、访问监控功能板等。  [了解有关Campaign Web Access的更多信息](../start/connect.md)。
+
+* 具有API的外部应用程序
+
+  在某些情况下，可以使用通过SOAP协议公开的Web服务API从外部应用程序调用系统。 [了解有关Campaign API的更多信息](../dev/api.md)。
 
 ### 持久层{#persistance-layer}
 
@@ -36,9 +50,9 @@ Campaign数据库用作持久层，并包含Adobe Campaign管理的几乎所有�
 
 Campaign逻辑应用层可以方便地进行配置，以满足复杂的业务需求。 您可以将Campaign用作单个平台，其中具有不同的应用程序，这些应用程序会合并以创建开放且可伸缩的架构。 每个Campaign实例都是应用层中的流程集合，其中一些是共享的，另一些是专用的。
 
-## Campaign托管的Cloud Service{#ac-managed-services}
+## Campaign托管式云服务{#ac-managed-services}
 
-as a Managed Service部署Adobe Campaign v8：Adobe Campaign的所有组件（包括用户界面、执行管理引擎和Campaign数据库）均完全由Adobe托管，包括电子邮件执行、镜像页面、跟踪服务器和面向外部的Web组件（例如取消订阅页面/首选项中心和登陆页面）。
+Adobe Campaign v8部署于as a Managed Service：Adobe Campaign的所有组件（包括用户界面、执行管理引擎和Campaign数据库）均完全由Adobe托管，包括电子邮件执行、镜像页面、跟踪服务器和面向外部的Web组件（例如取消订阅页面/首选项中心和登陆页面）。
 
 ## 营销活动流程
 

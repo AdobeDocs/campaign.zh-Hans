@@ -3,7 +3,7 @@ title: Campaign v8 2022 发行说明
 description: 2022 Campaign v8 版本的功能和改进列表
 feature: Release Notes
 exl-id: 76473fa5-48ba-42cf-8664-0dd197833a86
-source-git-commit: fe96eb65ac04fc2b89f0dfe1e8ed4286223c3f85
+source-git-commit: b3ca222fb28c1a5d35190e41cfbbe463c5d1bcad
 workflow-type: tm+mt
 source-wordcount: '1943'
 ht-degree: 89%
@@ -16,7 +16,7 @@ ht-degree: 89%
 
 >[!BEGINSHADEBOX]
 
-在此页中&#x200B;**&#x200B;**
+在此页中&#x200B;****
 
 * Campaign v8.4 - [版本8.4.1](#release-8-4-1) | [版本8.4.2](#release-8-4-2)
 * Campaign v8.3 - [版本8.3.8](#release-8-3-8) | [版本8.3.9](#release-8-3-9)
@@ -61,14 +61,14 @@ _2022 年 9 月 30 日_
 <table> 
 <thead>
 <tr> 
-<th> <strong>X (以前称为Twitter)渠道可用性</strong><br /> </th> 
+<th> <strong>X （以前称为Twitter）渠道可用性</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
 <td> <p><a href="../send/twitter.md">X社交渠道</a>现在可在Campaign v8中使用。 您可以：</p>
 <ul> 
-<li><p>在X(以前称为Twitter)上发送消息：通过Adobe Campaign，可直接将消息发送到您的X帐户。 您还可以向所有关注者发送私信。
+<li><p>在X（以前称为Twitter）上发送消息：通过Adobe Campaign，可直接将消息发送到您的X帐户。 您还可以向所有关注者发送私信。
 </p></li>
 <li><p>收集新联系人：Adobe Campaign 可自动收集轮廓数据，您可借此来开展定位营销活动，并实施跨渠道的营销策略。
 </p></li>
@@ -94,7 +94,7 @@ _2022 年 9 月 30 日_
 
 **改进**
 
-* 在 Microsoft Internet Explorer 11 的生命周期终止后，控制台中的 HTML 渲染引擎现在使用的是 **Microsoft Edge Chromium**。此外，任何客户端控制台现在均需安装 **Microsoft Edge WebView 2** 运行时。
+* 在 Microsoft Internet Explorer 11 的生命周期终止后，控制台中的 HTML 渲染引擎现在使用的是 **Microsoft Edge Chromium**。此外，任何客户端控制台现在都需要安装&#x200B;**Microsoft Edge WebView 2**&#x200B;运行时。
 * 工作流的高可用性使工作流的执行得到改善，此提升可使您同时跨不同容器运行工作流，以防止工作流服务丢失，并避免发生与之相关的执行错误。**注意**：此新功能仅以“有限可用”的状态向特定客户群体发布。
 * 现在可针对给定的隐私命名空间批量执行隐私请求。这项改进使 GDPR/隐私删除请求的执行时间有所增加。
 
@@ -119,26 +119,26 @@ _2022 年 9 月 30 日_
 * 修复了尝试在任何消息中心存档事件中预览投放时显示错误的问题。(NEO-43620)
 * 修复了使用 Campaign **查询**&#x200B;活动和&#x200B;**更改数据源**&#x200B;活动将数据注入 Snowflake 云数据库时的问题：当数据中存在反斜线字符时，该流程会失败。源字符串未转义，并且数据在 Snowflake 中未得到正确处理。(NEO-45549)
 * 修复了在使用&#x200B;**查询**&#x200B;活动和筛选表格时出现的问题。当列名称包含“更新”一词时，出现标识符无效的编译错误，并显示以下消息：“行数已更新”。 (NEO-46485)
-* 现在，**数据库清理**&#x200B;技术工作流还可处理自定义暂存模式。(NEO-48974)
+* 现在，**数据库清理**&#x200B;技术工作流还可处理自定义暂存架构。(NEO-48974)
 * 修复了在排除已列入阻止列表的收件人步骤期间，当定位大量收件人时，可能会减慢投放分析速度的问题。(NEO-48019)
 * 改进了在 SOAP 调用期间处理无效 XML 字符串时的稳定性。(NEO-48027)
 * 修复了在投放使用日历和拆分模式时导致创建不必要的 DeliveryParts 的问题。(NEO-48634)
 * 修复了使用基于日历的批次时的性能问题。(NEO-48451)
-* 修复了在自定义模式上创建新目标映射后，可能导致投放列表屏幕中出现错误消息的问题。(NEO-49237)
+* 修复了在自定义架构上创建新目标映射后，可能导致投放列表屏幕中出现错误消息的问题。(NEO-49237)
 * 修复了在暂存工作流出错且保留期完全过期时，可能导致数据丢失的问题。(NEO-48975)
 
 ## 8.3.9 版 {#release-8-3-9}
 
 >[!CAUTION]
 >
-> 必须升级客户端控制台。 在此[页面](../start/connect.md#download-ac-console)中了解如何升级客户端控制台。
+> 必须升级客户端控制台。在[此页面](../start/connect.md#download-ac-console)中了解如何升级您的客户端控制台。
 
 _2022 年 10 月 7 日_
 
 **修复**
 
 * 修复了当 FeatureFlag_GZIP_Compression 选项启用时，MID 实例上的投放日志状态更新受到影响的问题。(NEO-49183)
-* 现在，**数据库清理**&#x200B;技术工作流还可处理自定义暂存模式。(NEO-48974)
+* 现在，**数据库清理**&#x200B;技术工作流还可处理自定义暂存架构。(NEO-48974)
 * 修复了即使联系日期已到，仍可能导致投放停留在&#x200B;**待处理**&#x200B;状态的问题。(NEO-48079、NEO-48251)
 * 改进了在 SOAP 调用期间处理无效 XML 字符串时的稳定性。(NEO-48027)
 * 修复了在排除已列入阻止列表的收件人步骤期间，当定位大量收件人时，可能会减慢投放分析速度的问题。(NEO-48019)
@@ -148,7 +148,7 @@ _2022 年 10 月 7 日_
 * 修复了工作流中存在的问题，此问题可能导致在使用&#x200B;**数据加载（文件）**&#x200B;活动时，文件无法在服务器上完成更新。该流程的进度停留在 100%，但无法结束。(NEO-47269)
 * 修复了在投放使用日历和拆分模式时导致创建不必要的 DeliveryParts 的问题。(NEO-48634)
 * 修复了使用基于日历的批次时的性能问题。(NEO-48451)
-* 修复了在自定义模式上创建新目标映射后，可能导致投放列表屏幕中出现错误消息的问题。(NEO-49237)
+* 修复了在自定义架构上创建新目标映射后，可能导致投放列表屏幕中出现错误消息的问题。(NEO-49237)
 * 修复了在 MTA 进程中投放达到具体某个大小时可能会发生的问题。(NEO-46097)
 * 修复了跟踪日志无法返回与收件人浏览器相关的数据的问题。 (NEO-46612)
 * 修复了在日语环境中升级后出现的问题。(NEO-46640)
@@ -202,7 +202,7 @@ _2022 年 5 月 18 日_
 <tbody>
 <tr>
 <td>
-<p>通过 Campaign 的响应管理功能，您可以衡量营销活动的成功性和投资回报率，还可以衡量所有渠道中（电子邮件、移动设备、直邮等）的优惠建议。</p>
+<p>通过 Campaign 的响应管理功能，您可以衡量营销活动的成功性和投资回报率，还可以衡量所有渠道中（电子邮件、移动设备、直邮等）的产品建议提议。</p>
 <p>有关更多信息，请参阅<a href="../start/campaigns.md#response-manager-add-on">详细文档</a>。</p>
 </td>
 </tr>
@@ -235,7 +235,7 @@ _2022 年 5 月 18 日_
 
 * Campaign 现在支持适用于 POP3 的 Microsoft Exchange Online OAuth 2.0 身份验证。[了解更多信息](../config/external-accounts.md#bounce-mails-external-account)
 * 已对 Microsoft Dynamics Connector Web API 应用了以下重要修复。
-* 添加了新的运算符和组模式写入 (operatorWrite) 命名权限，以允许用户插入、更新和删除运算符 (xtk:operator) 和运算符组 (xtk:group) 模式。
+* 添加了新的运算符和组架构写入 (operatorWrite) 命名权限，以允许用户插入、更新和删除运算符 (xtk:operator) 和运算符组 (xtk:group) 架构。
   <!--* You can now enable the Email BCC (blind carbon copy) capability to store emails sent by Campaign at the delivery level, through the dedicated option in the delivery properties. [Read more](../config/email-settings.md#email-bcc)-->
   <!--* To ensure better performances, a new "Split" option is now activated by default in the Routing external account. This option allows messages to be automatically split across your mid-sourcing instances in order to be delivered faster to the recipients.-->
 * 现在，可以在单个中间源上配置多个 LINE 活动帐户。
@@ -246,7 +246,7 @@ _2022 年 5 月 18 日_
 
 * 修复了在同一循环投放中使用种子和对照组时发生的问题。(NEO-41197)
 * 修复了 FFDA 上的一个问题。当个性化块包含以下字符之一时，该问题会导致在执行发送进程（最多 256 个）期间属于同一个 deliveryPart 的对所有收件人的电子邮件发送被阻止：`' & < > "`。个性化块现在支持这些字符（例如：firstname=&quot;Brian O&#39;Neil&quot;）。(NEO-43184)
-* 修复了在将自定义模式用作目标映射时可能导致跟踪工作流失败的问题。现在，在通过目标映射向导生成 broadLog 模式时，我们会确保指向自定义定位模式的外部链接类型正确无误。(NEO-43506)
+* 修复了在将自定义架构用作目标映射时可能导致跟踪工作流失败的问题。现在，在通过目标映射向导生成 broadLog 架构时，我们会确保指向自定义定位架构的外部链接类型正确无误。(NEO-43506)
 * 修复了可能导致非英语语言的 FFDA 部署工作流失败的问题。(NEO-44561)
 
 ## 8.2.10 版 {#release-8-2-10}

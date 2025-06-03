@@ -1,20 +1,22 @@
 ---
-title: 使用客户端控制台连接到Campaign
-description: 了解如何在您的计算机上安装 Campaign 客户端控制台以及如何连接到 Adobe Campaign
+title: 连接到Campaign v8
+description: 了解如何连接到 Adobe Campaign v8 并在您的计算机上安装控制台以便于访问。
 feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: a9f26a033d63ab1dece9ef9780392823ee130047
+source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 15%
+source-wordcount: '1006'
+ht-degree: 13%
 
 ---
 
-# 使用客户端控制台连接到Campaign{#gs-ac-connect}
+# 连接到Adobe Campaign v8{#gs-ac-connect}
 
-要使用客户端控制台连接到Campaign，您必须先安装和配置它。
+要开始使用Campaign，您必须安装和配置客户端控制台。
+
+Client Console是一个本机应用程序，它通过标准Internet协议(如Adobe Campaign和HTTP)与SOAP应用程序服务器进行通信。 Campaign客户端控制台集中了所有功能和设置，并且由于依赖本地缓存，因此需要的带宽最少。 Campaign客户端控制台专为轻松部署而设计，可从互联网浏览器部署并自动更新，无需任何特定的网络配置，因为它只生成HTTP(S)流量。
 
 在开始之前，您需要：
 
@@ -23,37 +25,31 @@ ht-degree: 15%
 * 创建您的Adobe ID，或从您的公司获取您的用户凭据
 * 在系统上安装Microsoft Edge Webview2运行时。 [了解详情](#webview)
 
-
->[!NOTE]
->
->您还可以使用Web浏览器连接到Campaign Web用户界面。 在[本文档](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=zh-Hans){target="_blank"}中进一步了解新的Campaign Web用户界面。
-
-
 ## 安装客户端控制台{#download-ac-console}
 
 ### Microsoft Edge Webview2运行时 {#webview}
 
-从Campaign Classic8.4内部版本开始，任何客户端控制台均需安装Microsoft Edge Webview 2运行时。
+从Campaign Classic 8.4内部版本开始，任何客户端控制台都需要安装Microsoft Edge Webview 2运行时。
 
-默认情况下，Web View作为Windows 11操作系统的一部分安装。 如果您的系统中不存在该软件，Campaign客户端控制台安装程序将提示您从[Microsoft开发人员网站](http://www.adobe.com/go/acc-ms-webview2-runtime-download_cn){target="_blank"}下载它。 请注意，下载链接在Internet Explorer 11浏览器上不起作用，因为Microsoft已弃用其支持。 确保使用其他浏览器来访问该链接。
+默认情况下，Web View作为Windows 11操作系统的一部分安装。 如果您的系统中不存在该软件包，Campaign Client Console安装程序将提示您从[Microsoft开发人员网站](http://www.adobe.com/go/acc-ms-webview2-runtime-download_cn){target="_blank"}下载它。 请注意，下载链接在Internet Explorer 11浏览器上不起作用，因为Microsoft已弃用其支持。 确保使用其他浏览器来访问该链接。
 
 ### 下载控制台{#install-ac-console}
 
 首次使用Campaign时，您需要下载并安装客户端控制台。
 
-有两个选项可用于下载客户端控制台：
+有两个选项可用于下载Client Console：
 
-1. 作为Campaign管理员，连接到Adobe[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html){target="_blank"}。
+1. 作为Campaign管理员，连接到Adobe [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html){target="_blank"}。
 
 1. 作为最终用户，您的Campaign管理员会为您部署客户端控制台，并通过专用URL提供该控制台。
 
-下载客户端控制台安装程序后，将其安装到本地计算机上。
+下载Client Console安装程序后，将其安装到本地计算机上。
 
 请注意，安装客户端控制台语言后，您无法对其进行更改。
 
 ## 创建连接{#create-your-connection}
 
-安装客户端控制台后，请按照以下步骤创建与应用程序服务器的连接：
+安装Client Console后，请按照以下步骤创建与应用程序服务器的连接：
 
 1. 启动Console并浏览右角的链接以访问连接配置屏幕。
 
@@ -75,7 +71,7 @@ ht-degree: 15%
 
 ## 登录到Adobe Campaign {#logon-to-ac}
 
-Campaign用户通过AdobeAdobe Campaign System (IMS)，使用其Adobe ID连接到Identity Management控制台。 他们可以在所有Adobe解决方案中使用相同的ID。 将Adobe Campaign与其他解决方案一起使用时，将会保存连接。 在[此页面](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}中了解有关Adobe IMS的更多信息。
+Campaign用户使用其Adobe ID，通过Adobe Identity Management System (IMS)连接到Adobe Campaign控制台。 他们可以在所有Adobe解决方案中使用相同的ID。 将Adobe Campaign与其他解决方案一起使用时，将会保存连接。 在[此页面](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}中了解有关Adobe IMS的更多信息。
 
 要登录到实例，请执行以下步骤：
 
@@ -99,7 +95,7 @@ Campaign用户通过AdobeAdobe Campaign System (IMS)，使用其Adobe ID连接�
 
 当您的系统升级到较新版本时，您必须将客户端控制台更新到该版本。 这是最佳实践，对于某些版本，此升级是强制性的。 在这种情况下，它在[发行说明](release-notes.md)中提及。
 
-作为托管Cloud Service用户，Adobe将为您部署客户端控制台。 当您连接到已升级的环境时，系统会提示您在一个弹出窗口中下载最新的客户端控制台版本。 您必须接受此升级，并根据请求更新客户端控制台。
+作为托管云服务用户，Adobe会为您部署客户端控制台。 当您连接到已升级的环境时，系统会提示您在一个弹出窗口中下载最新的Client Console版本。 您必须接受此升级，并根据请求更新客户端控制台。
 
 >[!CAUTION]
 >
@@ -125,16 +121,16 @@ Adobe Campaign允许您定义和管理分配给各种操作员的权限。
 
 >[!AVAILABILITY]
 >
->Campaign Web用户界面仅适用于通过Adobe ID连接到Adobe Campaign的用户。 了解有关[AdobeIdentity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}的更多信息。
+>Campaign Web用户界面仅适用于通过Adobe ID连接到Adobe Campaign的用户。 了解有关[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}的更多信息。
 >
 
 [在此页面中](campaign-ui.md#ac-web-ui)了解如何连接到 Adobe Experience Cloud 并访问 Adobe Campaign Web 界面。
 
-请参阅 [Adobe Campaign Web 用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/campaign-web-home){target="_blank"}以了解详情。
+请参阅[Adobe Campaign Web用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/campaign-web-home){target="_blank"}以了解详情。
 
 ### Web 访问 {#web-access}
 
-可以通过Web浏览器使用HTML用户界面访问应用程序的某些部分：报告、投放批准、实例监控等。
+可以使用HTML用户界面通过Web浏览器访问应用程序的某些部分：报告、投放批准、实例监控等。
 
 Web 访问提供了与控制台类似的界面，但是功能有所减少。
 

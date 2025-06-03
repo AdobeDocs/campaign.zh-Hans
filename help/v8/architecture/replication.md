@@ -7,7 +7,7 @@ level: Intermediate
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
 source-git-commit: b8f774ce507cff67163064b6bd1341b31512c08f
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '797'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 云数据库([!DNL Snowflake])已针对处理大型数据批次（如更新100万个地址）进行了优化。 同时，Campaign本地数据库(PostgreSQL)更适合于单个或小容量操作，例如更新单个种子地址。 同步在后台自动且透明地进行，确保Campaign本地数据库(PostgreSQL)中的数据实时在云数据库([!DNL Snowflake])中重复，从而使两个数据库保持同步。 数据同步涉及架构和表以及数据。
 
-➡️[了解数据复制在视频中的工作方式](#video)
+➡️ [了解数据复制在视频中的工作方式](#video)
 
 ## 复制模式 {#modes}
 
@@ -42,7 +42,7 @@ ht-degree: 2%
 
 Campaign v8依靠特定的技术工作流来管理计划的数据复制。 这些技术工作流可从Campaign Explorer的&#x200B;**[!UICONTROL Administration > Production > Technical workflows > Full FFDA Replication]**&#x200B;节点中获取。 **不能修改它们。**
 
-技术工作流在服务器上定期执行进程或作业。 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=zh-Hans){target="_blank"}中详细列出了技术工作流的完整列表。
+技术工作流在服务器上定期执行进程或作业。 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}中详细列出了技术工作流的完整列表。
 
 确保数据复制的技术工作流程如下所示：
 
@@ -87,7 +87,7 @@ Campaign v8依靠特定的技术工作流来管理计划的数据复制。 这�
 
 API允许将自定义数据和开箱即用数据从Campaign本地数据库(PostgreSQL)复制到云数据库([!DNL Snowflake])。 这些API允许您绕过预定义的工作流，并根据特定要求（如复制自定义表）自定义复制。
 
-例如：
+示例：
 
 ```
 var dataSource = "nms:extAccount:ffda";
@@ -115,6 +115,6 @@ var xml = xtk.builder.CopyXxlData(
 
 此视频介绍Adobe Campaign v8使用哪些数据库、为何复制数据、正在复制哪些数据以及复制过程的工作方式等关键概念。
 
->[!VIDEO](https://video.tv.adobe.com/v/3416863?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
 
-[此处](https://experienceleague.adobe.com/zh-hans/docs/campaign-learn/tutorials/overview)提供了其他Campaign v8客户端控制台教程。
+[此处](https://experienceleague.adobe.com/en/docs/campaign-learn/tutorials/overview)提供了其他Campaign v8客户端控制台教程。

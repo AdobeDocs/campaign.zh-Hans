@@ -5,7 +5,7 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
 workflow-type: tm+mt
 source-wordcount: '1618'
 ht-degree: 1%
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 1. 单击&#x200B;**保存**。 用户即被添加，并显示在“用户”列表中。 如果您为用户分配管理员角色或产品配置文件，用户将收到电子邮件通知。 用户必须单击该链接才能完成其个人资料。
 
-在[此页面](https://helpx.adobe.com/ie/enterprise/using/manage-users-individually.html){target="_blank"}中了解有关在Admin Console中创建用户的详细信息。
+在[此页面](https://helpx.adobe.com/ie/enterprise/using/manage-users-individually.html){target="_blank"}中了解有关在Admin Console中创建用户的更多信息。
 
 当新用户[使用其Adobe ID登录Campaign](connect.md)时，他们将被添加到客户端控制台的Campaign操作员列表中。 Campaign运算符存储在Campaign资源管理器的&#x200B;**[!UICONTROL Administration > Access management > Operators]**&#x200B;文件夹中。
 
@@ -43,7 +43,7 @@ ht-degree: 1%
 
 使用产品配置文件授予用户使用产品中所含功能的权限。
 
-* 您可以为Admin Console上的每个产品创建一个或多个产品配置文件。
+* 对于Admin Console上的每个产品，您可以创建一个或多个产品配置文件。
 * 在每个产品配置文件中，您都会分配用户和用户组（在您的组织中）。
 * 当用户使用产品配置文件中指定的凭据登录时，将授予他们访问产品配置文件所基于的产品的应用程序和服务的权限。
 
@@ -53,7 +53,7 @@ ht-degree: 1%
 
 campaign - `<your instance>` — 操作员组的内部名称
 
-例如，对于“test”Admin Console中的&#x200B;**Delivery operator**&#x200B;组，实例中的产品配置文件是：
+例如，对于“test”实例中的&#x200B;**Delivery operator**&#x200B;组，Admin Console中的产品配置文件是：
 
 campaign — 测试 — 交付
 
@@ -61,7 +61,7 @@ campaign — 测试 — 交付
 
 ### 创建产品配置文件{#create-product-profile}
 
-要向Adobe添加新产品配置文件，您必须首先在Campaign客户端控制台中创建它，然后将其添加到Admin Console中。
+要向Adobe添加新产品配置文件，您必须首先在Campaign客户端控制台中创建它，然后将其添加到Admin Console。
 
 例如，要创建“审阅者”产品配置文件，请执行以下步骤。
 
@@ -115,7 +115,7 @@ Adobe Campaign附带在Adobe启用您的环境时定义的内置&#x200B;**产品
 
 1. **[!UICONTROL Campaign managers]** （操作）
 
-   此组中的操作员可以管理营销活动：通过此组，您可以访问链接到营销活动的对象（计划、项目、工作流、预算等） 在&#x200B;**[!UICONTROL Campaign]**&#x200B;的框架内(可选Adobe Campaign模块)。
+   此组中的操作员可以管理营销活动：通过此组，您可以访问&#x200B;**[!UICONTROL Campaign]**(可选Adobe Campaign模块)框架内链接到营销活动的对象（计划、项目、工作流、预算等）。
 
    此组包含以下已命名权限：
 
@@ -173,7 +173,7 @@ Adobe Campaign附带在Adobe启用您的环境时定义的内置&#x200B;**产品
 
 ## 使用用户组{#user-groups}
 
-您可以使用Admin Console创建用户组并向其分配用户。
+您可以使用Admin Console创建用户组并将用户分配给这些用户组。
 
 用户组是必须获得一组共享权限的不同用户的集合。 在[本节](https://helpx.adobe.com/ie/enterprise/using/user-groups.html){target="_blank"}中了解如何创建用户组。
 
@@ -186,7 +186,7 @@ Adobe Campaign提供了一组已命名权限，允许您定义分配给用户和
 已命名权限将权限授予：
 
 * 执行操作
-例如，为具有&#x200B;**准备投放**&#x200B;命名权限的&#x200B;**投放操作员**&#x200B;组的成员激活投放编辑器中的&#x200B;**分析**&#x200B;按钮
+例如，为具有**准备投放**&#x200B;命名权限的&#x200B;**投放操作员**&#x200B;组的成员激活投放编辑器中的&#x200B;**分析**&#x200B;按钮
 
 * 对文件夹的访问权限
 操作员组成员资格可以通过更改文件夹的安全性设置来授予或限制对文件夹的访问权限。 [了解详情](folder-permissions.md#restrict-access-to-a-folder)。

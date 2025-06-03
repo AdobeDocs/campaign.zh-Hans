@@ -2,7 +2,7 @@
 title: Campaign电子邮件发送基础架构升级
 description: Campaign电子邮件发送基础架构升级
 exl-id: f01e38ad-490e-4389-af5e-87beef533eb0
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 1%
@@ -55,11 +55,11 @@ ht-degree: 1%
 
 * **客户需要什么测试？**
 
-  我们预计客户不会针对此升级事件进行任何测试。 如果发现任何问题，请联系[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support){target="_blank"}。
+  我们预计客户不会针对此升级事件进行任何测试。 如果发现任何问题，请联系[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}。
 
 
 * **我可以请求更改计划的安全升级槽的日期/时间吗？**
 
   没有。我们无法容纳对现有计划请求的任何修改，因为这样可能会中断为其他客户分配的升级事件。
 
-如有任何其他问题，您可以联系[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support){target="_blank"}。
+如有任何其他问题，您可以联系[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}。

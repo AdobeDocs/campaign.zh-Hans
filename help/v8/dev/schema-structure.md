@@ -5,14 +5,14 @@ feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
 workflow-type: tm+mt
 source-wordcount: '1394'
 ht-degree: 1%
 
 ---
 
-# 模式结构{#schema-structure}
+# 架构结构{#schema-structure}
 
 `<srcschema>`的基本结构如下所示：
 
@@ -124,7 +124,7 @@ ht-degree: 1%
 
 数据类型是通过&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;元素中的&#x200B;**type**&#x200B;属性输入的。
 
-[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=zh-Hans#configuring-campaign-classic){target="_blank"}中提供了详细列表。
+[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic){target="_blank"}中提供了详细列表。
 
 如果未填充此属性，则&#x200B;**string**&#x200B;是默认的数据类型，除非该元素包含子元素。 如果是，则仅将其用于分层构造元素（示例中为&#x200B;**`<location>`**&#x200B;个元素）。
 
@@ -180,7 +180,7 @@ ht-degree: 1%
   <attribute name="email" type="string" length="80" label="Email"/>
   ```
 
-  从Adobe Campaign客户端控制台输入表单中可以看到标签：
+  可从Adobe Campaign客户端控制台输入表单中看到标签：
 
   ![](assets/schema_label.png)
 
@@ -237,7 +237,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->在Adobe Campaign客户端控制台中，**[!UICONTROL Administration > Enumerations]**&#x200B;节点用于管理枚举。
+>在Adobe Campaign Client Console中，**[!UICONTROL Administration > Enumerations]**&#x200B;节点用于管理枚举。
 
 #### 设置明细列表 {#set-enumeration}
 
@@ -360,7 +360,7 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 
 在表达式中添加了高级函数，以丰富此语言的潜力。
 
-您可以通过Adobe Campaign客户端控制台中的任意表达式编辑器访问可用函数的列表：
+您可以在Adobe Campaign客户端控制台中通过任何表达式编辑器访问可用函数的列表：
 
 ![](assets/schema_function.png)
 

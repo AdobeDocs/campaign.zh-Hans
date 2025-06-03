@@ -5,7 +5,7 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
-source-git-commit: 19f85d4e19f756d8a45ce5364dd0601373128f50
+source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 4%
@@ -29,7 +29,7 @@ Adobe Campaign允许您定义和管理分配给用户的权限。 这些权限�
 
 ## 授予权限的关键步骤{#key-steps-permissions}
 
-作为产品管理员，您可以向组织的用户授予权限。 权限是通过Adobe Admin Console和Campaign客户端控制台授予的。 用户使用其Adobe ID登录到Adobe Campaign。 在[此页面](connect.md)中了解如何连接到Adobe Campaign。
+作为产品管理员，您可以向组织的用户授予权限。 权限是通过Adobe Admin Console和Campaign Client Console授予的。 用户使用其Adobe ID登录到Adobe Campaign。 在[此页面](connect.md)中了解如何连接到Adobe Campaign。
 
 关键步骤包括：
 
@@ -52,7 +52,7 @@ Adobe Admin Console是一个中央位置，用于管理整个组织的Adobe授�
 
 产品配置文件是可以分配给用户的产品组和服务组。 在Adobe Experience Cloud中，权限基于产品的配置文件，而不是基于用户。 但是，您可以将管理权限委派给特定用户。
 
-在Admin Console中，Campaign的每个Adobe Experience Cloud **产品配置文件**&#x200B;都与Campaign客户端控制台中的&#x200B;**操作员组**&#x200B;相关联。
+在Admin Console中，Campaign的每个Adobe Experience Cloud **产品配置文件**&#x200B;都与Campaign客户端控制台中的&#x200B;**操作员组**&#x200B;关联。
 
 在[此页面](manage-permissions.md#create-a-product-profile)中了解如何创建和分配产品配置文件。
 

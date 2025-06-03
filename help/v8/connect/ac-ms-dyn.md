@@ -5,7 +5,7 @@ feature: Microsoft CRM Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 2%
@@ -22,7 +22,7 @@ ht-degree: 2%
 >
 >Campaign [兼容性矩阵](../start/compatibility-matrix.md)中详细介绍了支持的Microsoft Dynamics版本。
 
-按照以下步骤配置专用外部帐户，以将Microsoft Dynamics 365数据导入和导出到Adobe Campaign。
+请按照以下步骤配置专用外部帐户，以将Microsoft Dynamics 365数据导入和导出到Adobe Campaign。
 
 对于每个系统，这些步骤需要由管理员执行。
 
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 ## 配置 Microsoft Dynamics 365 {#config-crm-microsoft}
 
-若要通过&#x200B;**Web API**&#x200B;连接Microsoft Dynamics 365以与Adobe Campaign配合使用，请使用&#x200B;**全局管理员**&#x200B;凭据登录到[Microsoft Azure Directory](https://portal.azure.com)，然后执行以下步骤：
+若要通过&#x200B;**Web API**&#x200B;连接Microsoft Dynamics 365以与Adobe Campaign配合使用，请使用&#x200B;**全局管理员**&#x200B;凭据登录到[Microsoft Azure目录](https://portal.azure.com)，然后执行以下步骤：
 
 1. 获取Dynamics 365应用程序（客户端）ID。 [了解详情](#get-client-id-microsoft)
 1. 生成Microsoft Dynamics证书密钥标识符和密钥ID。 [了解详情](#config-certificate-key-id)
@@ -136,7 +136,7 @@ ht-degree: 2%
 
 ### 创建连接{#new-ms-dyn-external-account}
 
-首先，必须创建Microsoft Dynamics 365外部帐户。
+首先，您必须创建Microsoft Dynamics 365外部帐户。
 
 1. 浏览Campaign资源管理器的&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;节点并创建外部帐户。
 1. 在&#x200B;**类型**&#x200B;部分中选择&#x200B;**[!UICONTROL Microsoft Dynamics CRM]**&#x200B;外部帐户。
@@ -185,7 +185,7 @@ ht-degree: 2%
 
 1. 从&#x200B;**[!UICONTROL Synchronizing enumerations...]**&#x200B;链接打开助手。
 1. 选择与Dynamics 365枚举匹配的Adobe Campaign枚举。
-您可以将Adobe Campaign枚举的所有值替换为CRM的值：要实现此目的，请在&#x200B;**[!UICONTROL Replace]**&#x200B;列中选择&#x200B;**[!UICONTROL Yes]**。
+您可以将Adobe Campaign枚举的所有值替换为CRM的值：要实现此目的，请在**[!UICONTROL Replace]**&#x200B;列中选择&#x200B;**[!UICONTROL Yes]**。
 1. 单击&#x200B;**[!UICONTROL Next]**，然后单击&#x200B;**[!UICONTROL Start]**&#x200B;以开始导入枚举。
 1. 浏览&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;节点以检查导入的值。
 
@@ -193,7 +193,7 @@ Adobe Campaign和Microsoft Dynamics 365现已连接。 您可以设置两个系�
 
 要在Adobe Campaign数据和Microsoft CRM之间同步数据，请创建工作流并使用&#x200B;**[!UICONTROL CRM connector]**&#x200B;活动。
 
-在此页面[&#128279;](crm-data-sync.md)中了解有关数据同步的更多信息。
+在此页面](crm-data-sync.md)中了解有关数据同步[的更多信息。
 
 ### 支持的字段数据类型 {#ms-dyn-supported-types}
 

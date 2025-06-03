@@ -7,7 +7,7 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 89a4ab6c-de8e-4408-97d2-8b8e574227f9
-source-git-commit: 09db0cc1a14bffefe8d1b8d0d5a06d5b6517a5bb
+source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 # 已知问题{#known-issues}
 
-此页面列出了&#x200B;**最新Campaign v8版本**&#x200B;中发现的已知问题。 此外，Campaign v8的限制在此页面[&#128279;](ac-guardrails.md)中列出。
+此页面列出了&#x200B;**最新Campaign v8版本**&#x200B;中发现的已知问题。 此外，Campaign v8的限制在此页面](ac-guardrails.md)中列出[。
 
 
 >[!NOTE]
@@ -29,7 +29,7 @@ ht-degree: 2%
 
 #### 说明{#issue-2-desc}
 
-当使用Campaign **查询**&#x200B;和&#x200B;**更改数据Source**&#x200B;活动将数据注入Snowflake云数据库时，如果数据中存在反斜线字符，该过程将失败。 源字符串未转义，并且数据在Snowflake时无法正确处理。
+当使用Campaign **查询**&#x200B;和&#x200B;**更改数据Source**&#x200B;活动将数据注入Snowflake云数据库时，如果数据中存在反斜线字符，该过程将失败。 源字符串未转义，并且数据在Snowflake中未得到正确处理。
 
 仅当反斜杠字符位于字符串的结尾时，才会发生此问题，例如： `Barker\`。
 
@@ -39,7 +39,7 @@ ht-degree: 2%
 1. 连接到客户端控制台并创建工作流。
 1. 添加&#x200B;**查询**&#x200B;活动并进行配置。
 1. 选择具有上述特征的数据。
-1. 添加&#x200B;**更改数据Source**&#x200B;活动，并将其配置为选择Snowflake云数据库。
+1. 添加&#x200B;**更改数据Source**&#x200B;活动并将其配置为选择Snowflake云数据库。
 1. 运行工作流并检查工作流日志以查看错误。
 
 
@@ -58,7 +58,7 @@ Error:
 
 #### 内部引用{#issue-2-ref}
 
-引用：NEO-45549
+参考：NEO-45549
 
 
 ### 数据加载（文件）活动无法在服务器上上传文件 {#issue-3}
@@ -84,13 +84,13 @@ Error:
 
 解决方法是使用旧版的客户端控制台。 然后，您便能够将文件上传到服务器上。
 
-作为Campaign管理员，您可以在[Adobe软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=4){target="_blank"}中下载Campaign v8.3.1客户端控制台。
+作为Campaign管理员，您可以在[Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=4){target="_blank"}中下载Campaign v8.3.1客户端控制台。
 
-在此页面[&#128279;](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans){target="_blank"}中了解如何访问Adobe软件分发。
+在此页面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans){target="_blank"}中了解如何访问Adobe Software Distribution [。
 
-在本页[&#128279;](connect.md)中了解如何升级您的客户端控制台
+在本页](connect.md)中了解如何升级您的客户端控制台[
 
 #### 内部引用{#issue-3-ref}
 
-引用：NEO-47269
+参考：NEO-47269
 

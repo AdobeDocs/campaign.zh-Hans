@@ -284,7 +284,7 @@ Privacy configuration and hardening is a key element of security optimization. H
 * 创建足够的安全组
 * 检查每个操作员是否具有适当的访问权限
 
-在本节](../start/gs-permissions.md)中了解有关[中权限的更多信息。
+在本节[&#128279;](../start/gs-permissions.md)中了解有关中权限的更多信息。
 
 ## 编码准则
 

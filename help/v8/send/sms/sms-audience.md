@@ -4,11 +4,12 @@ description: 了解如何设置短信投放的受众
 feature: SMS
 role: User
 level: Beginner, Intermediate
+version: Campaign v8, Campaign Classic v7
 exl-id: e0603a4d-cde1-4199-a164-bf0c992ba937
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 1%
+ht-degree: 7%
 
 ---
 
@@ -32,7 +33,7 @@ ht-degree: 1%
 
    可以使用其他目标映射，其中一些映射可能与您的特定配置相关。 有关目标映射的详细信息，请参阅[使用目标映射](../../audiences/target-mappings.md)。
 
-1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以定义限制筛选器。
+1. 单击 **[!UICONTROL Add]** 按钮以定义限制筛选条件。
 
    然后，您可以选择要应用的筛选类型：
 
@@ -51,7 +52,7 @@ ht-degree: 1%
    * **[!UICONTROL Subscribers of an information service]**：通过此选项，可选择新闻稿，收件人必须订阅新闻稿才能成为所创建投放的目标。
    * **[!UICONTROL User filters]**：允许您使用预定义过滤器。
 
-   利用选项&#x200B;**[!UICONTROL Exclude recipients from this segment]**，可定向不符合所定义的目标条件的收件人。 要使用此选项，请选择相应的框，然后按照之前的定义应用定位以排除生成的配置文件。
+   利用选项&#x200B;**[!UICONTROL Exclude recipients from this segment]**，可定向不符合所定义的目标条件的收件人。 要使用此选项，请选择相应的框，然后按照之前所述应用目标选择，以排除生成的用户档案。
 
 1. 在标签字段中输入受众的名称，然后单击&#x200B;**[!UICONTROL Finish]**&#x200B;按钮以验证受众。
 

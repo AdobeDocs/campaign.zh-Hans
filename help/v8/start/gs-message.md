@@ -4,10 +4,12 @@ description: 开始使用消息
 feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
-source-git-commit: 5b2638927e39b6f839fb3a8639fe106d2c519fbf
+version: Campaign v8, Campaign Classic v7
+exl-id: a523e76d-776c-47d3-9c15-34241cee1092
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '1002'
-ht-degree: 74%
+ht-degree: 73%
 
 ---
 
@@ -51,7 +53,7 @@ Adobe Campaign v8附带如下交付渠道。 环境中可用的渠道取决于�
 
 * **直邮渠道**： [直邮](../send/direct-mail.md)是一个脱机渠道，允许您创建、个性化和生成外部文件以与直邮提供商共享。 使用此渠道可在客户历程中编排在线和离线渠道。
 
-  在准备直邮投放时，Adobe Campaign 会生成一个文件，其中包含了所有定向的用户档案和选定的联系信息（例如邮政地址）。然后，您可以将此文件发送给直邮提供商，由其负责发送纸质信函。
+  在准备直邮投放时，Adobe Campaign 会生成一个文件，其中包含了所有定向的轮廓和选定的联系信息（例如邮政地址）。然后，您可以将此文件发送给直邮提供商，由其负责发送纸质信函。
 
 
 * **其他渠道**： Adobe Campaign还随附用于创建外部投放的电话投放模板。 使用此渠道意味着您实施专用方法来处理输出文件。配置步骤与[直邮渠道](../send/direct-mail.md)相同。
@@ -107,5 +109,4 @@ Campaign 中有三种类型的投放对象：
 
 在发送后监测投放是确保营销活动有效并接触到客户的重要步骤。您可以在发送投放后进行监测，并了解如何管理投放失败和隔离。
 
-要了解如何监测投放，请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=zh-Hans#sending-messages){target="_blank"}
-
+请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=zh-Hans#sending-messages){target="_blank"}以了解如何监测投放

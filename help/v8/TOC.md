@@ -5,9 +5,9 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: 4a62c551c43cd5a4866df36cce10e294f35db363
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '712'
 ht-degree: 89%
 
 ---
@@ -48,10 +48,14 @@ ht-degree: 89%
    + [投放最佳实践](start/delivery-best-practices.md)
    + 电子邮件 {#emails}
       + [设计和验证电子邮件](send/email.md)
+      + [定义电子邮件的内容](send/defining-the-email-content.md)
+      + [定义交互式内容](send/defining-interactive-content.md)
       + [链接到镜像页面](send/mirror-page.md)
       + [添加密送地址](send/email-bcc.md)
       + [定义其他电子邮件参数](send/email-parameters.md)
       + [发送和监测电子邮件](send/send.md)
+      + [在日本手机上发送电子邮件](send/sending-emails-on-japanese-mobiles.md)
+      + [将文件附加到电子邮件](send/attaching-files.md)
    + 短信 {#sms}
       + [短信入门](send/sms/sms.md)
       + 配置短信渠道 {#config-sms}

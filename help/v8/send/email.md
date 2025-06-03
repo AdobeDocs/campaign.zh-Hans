@@ -4,8 +4,9 @@ description: 在 Adobe Campaign 中开始使用电子邮件。将个性化的电
 feature: Email
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
-source-git-commit: 693b9d9d50d5e60061bd952090380382ebaf8df8
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 9%
@@ -90,7 +91,7 @@ ht-degree: 9%
 
 您的第一个电子邮件投放已准备就绪。 您现在需要定义受众、验证投放并发送它。
 
-在此[用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=zh-Hans){target="_blank"}中了解如何创建工作流以导入电子邮件内容。
+在此[用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}中了解如何创建工作流以导入电子邮件内容。
 
 >[!MORELIKETHIS]
 >

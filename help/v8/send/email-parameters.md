@@ -4,8 +4,9 @@ description: 了解Adobe Campaign中特定于电子邮件投放的选项和设�
 feature: Email
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: ad75f01e-2c6c-4607-b15a-8870d399002a
-source-git-commit: 87c971ac6cf4abb6b04d52ce60ac2036055e1e02
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 10%
@@ -42,7 +43,7 @@ ht-degree: 10%
 
 * **[!UICONTROL Send all messages in text format]**
 
-  消息以文本格式发送。 不会发送HTML格式，但仅当收件人单击消息时，才会将其用于镜像页面。
+  消息以文本格式发送。 HTML格式不会发送，但仅当收件人单击消息时，才会用于镜像页面。
 
 <!--
 >[!NOTE]

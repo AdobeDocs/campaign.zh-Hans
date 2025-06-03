@@ -4,15 +4,16 @@ description: 了解如何定义和个性化短信投放内容
 feature: SMS
 role: User
 level: Beginner, Intermediate
+version: Campaign v8, Campaign Classic v7
 exl-id: 71d9376c-86e8-41ec-92dc-863455d40c7a
-source-git-commit: 0ef082b49261d0d2de5a6891a4a7f0cf5aafa221
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# 定义短信内容 {#sms-content}
+# 定义短信的内容 {#sms-content}
 
 配置短信投放的内容：
 

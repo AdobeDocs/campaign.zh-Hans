@@ -4,13 +4,14 @@ description: 了解如何创建短信投放
 feature: SMS
 role: User
 level: Beginner, Intermediate
-source-git-commit: 0ef082b49261d0d2de5a6891a4a7f0cf5aafa221
+version: Campaign v8, Campaign Classic v7
+exl-id: 3b15eb3e-8625-4049-bf0d-327407ae5ea6
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 4%
 
 ---
-
 
 # 创建您的第一个短信投放 {#sms-delivery}
 
@@ -50,5 +51,3 @@ ht-degree: 4%
 ## 监测和跟踪短信 {#sms-monitor}
 
 发送后，[了解如何监视和跟踪你的短信](sms-monitor.md)。
-
-

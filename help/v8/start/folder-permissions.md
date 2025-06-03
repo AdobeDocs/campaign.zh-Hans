@@ -5,10 +5,11 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 5bd8dbba-7a06-4737-bc5a-60354f91c709
-source-git-commit: 4a62c551c43cd5a4866df36cce10e294f35db363
+version: Campaign v8, Campaign Classic v7
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '310'
-ht-degree: 0%
+ht-degree: 18%
 
 ---
 
@@ -33,9 +34,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您应该不能创建至少有一个文件夹没有写入权限的对象。
+>如果您对某个对象没有至少一个文件夹的写入权限，就无法创建该对象。
 >
->您无需成为管理员即可创建片段，但您必须对至少一个“内容可视化片段”文件夹具有写入权限。 否则，您将无法创建可视化片段。
+>您不需要成为管理员即可创建片段，但您必须对至少一个“内容可视片段”文件夹拥有写入权限。否则，您将无法创建可视片段。
 
 ## 传播权限 {#propagate-permissions}
 

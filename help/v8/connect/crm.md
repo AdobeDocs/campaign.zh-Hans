@@ -5,7 +5,8 @@ feature: Salesforce Integration, Microsoft CRM Integration
 role: Admin, User
 level: Beginner
 exl-id: c2d34ee9-4427-48e7-a8cf-0ae02a801d50
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+version: Campaign v8, Campaign Classic v7
+source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 20%
@@ -20,7 +21,7 @@ Adobe Campaign 提供各种 CRM 连接器，可将您的 Adobe Campaign 平台�
 
 主要优势包括：
 
-* 销售和营销之间消息传送的一致性：Adobe Campaign与您的CRM集成，让这两个系统都能访问客户洞察和电子邮件营销历史记录，从而允许发送给客户的所有消息都共享同一条一致的消息传送。
+* 销售与营销之间消息传送的一致性：Adobe Campaign与您的CRM集成，让两个系统均可访问客户insight和电子邮件营销历史记录，从而允许发送给客户的所有消息都共享同一条一致的消息传送。
 
 * 所有潜在客户和客户数据的整体视图：通过将Adobe Campaign与您的CRM集成，可以从CRM系统中共享和访问每个联系人的电子邮件营销历史记录。
 

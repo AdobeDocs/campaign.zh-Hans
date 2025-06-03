@@ -66,7 +66,7 @@ ht-degree: 3%
 
 1. 从&#x200B;**[!UICONTROL Synchronizing enumerations...]**&#x200B;链接打开助手。
 1. 选择与Adobe Campaign枚举匹配的Salesforce枚举。
-您可以将Adobe Campaign枚举的所有值替换为CRM的值：要实现此目的，请在**[!UICONTROL Replace]**&#x200B;列中选择&#x200B;**[!UICONTROL Yes]**。
+您可以将Adobe Campaign枚举的所有值替换为CRM的值：要实现此目的，请在&#x200B;**[!UICONTROL Replace]**&#x200B;列中选择&#x200B;**[!UICONTROL Yes]**。
 
    ![](assets/sfdc-enum.png)
 
@@ -78,4 +78,4 @@ Adobe Campaign和Salesforce.com现已连接。 您可以设置两个系统之间
 
 要在Adobe Campaign数据和SFDC之间同步数据，请创建工作流并使用&#x200B;**[!UICONTROL CRM connector]**&#x200B;活动。
 
-在此页面](crm-data-sync.md)中了解有关数据同步[的更多信息。
+在此页面[&#128279;](crm-data-sync.md)中了解有关数据同步的更多信息。

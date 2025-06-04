@@ -18,8 +18,8 @@ ht-degree: 2%
 
 工作流&#x200B;**[!UICONTROL Working table]**&#x200B;用于处理与工作流活动共享数据。
 
-默认情况下，**[!UICONTROL Working table]**是在与需要查询的数据源相同的数据库中创建的。
-例如，在查询存储在云数据库上的**[!UICONTROL Recipients]**&#x200B;表时，工作流会在同一云数据库上创建&#x200B;**[!UICONTROL Working table]**。
+默认情况下，**[!UICONTROL Working table]**&#x200B;是在与需要查询的数据源相同的数据库中创建的。
+例如，在查询存储在云数据库上的&#x200B;**[!UICONTROL Recipients]**&#x200B;表时，工作流会在同一云数据库上创建&#x200B;**[!UICONTROL Working table]**。
 
 使用&#x200B;**[!UICONTROL Change Data Source]**&#x200B;活动为您的&#x200B;**[!UICONTROL Working table]**&#x200B;使用其他数据源。
 

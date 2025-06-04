@@ -4,8 +4,9 @@ title: 监测技术工作流
 description: 监测技术工作流
 feature: Workflows
 role: Admin
+version: Campaign v8, Campaign Classic v7
 exl-id: 8524d916-8af7-4641-b047-9c348f1017fd
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 5%
@@ -42,7 +43,7 @@ ht-degree: 5%
 
 对于&#x200B;**[!UICONTROL Tracking workflow ('tracking')]**：
 
-检查跟踪工作流是否按计划运行（默认情况下每小时运行一次），以及日记帐是否未高亮显示重复错误。 有关更多信息，请参阅此[&#128279;](delivery.md)章节。
+检查跟踪工作流是否按计划运行（默认情况下每小时运行一次），以及日记帐是否未高亮显示重复错误。 有关更多信息，请参阅此](delivery.md)章节[。
 
 对于&#x200B;**[!UICONTROL Deliverability update ('deliverabilityUpdate')]**：
 

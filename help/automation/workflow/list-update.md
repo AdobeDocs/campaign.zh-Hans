@@ -4,8 +4,9 @@ title: 列表更新
 description: 列表更新
 feature: Workflows, Targeting Activity
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: abb7f777-0b4a-4bf2-bcb6-32264f340a58
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 1%
@@ -60,7 +61,7 @@ ht-degree: 1%
 ## 输入参数 {#input-parameters}
 
 * 表名
-* 模式
+* 架构
 
 标识要保存在组中的群体。
 
@@ -72,6 +73,6 @@ ht-degree: 1%
 
 本视频说明如何从资源管理器创建收件人列表。
 
->[!VIDEO](https://video.tv.adobe.com/v/27505?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-[此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=zh-Hans){target="_blank"}提供了其他Campaign操作方法视频。
+[此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}提供了其他Campaign操作方法视频。

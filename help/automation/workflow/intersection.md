@@ -4,8 +4,9 @@ title: 交集
 description: 交集
 feature: Workflows, Targeting Activity
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 12777107-5ccc-4f19-9dcd-8f6cade3ee98
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 5%
@@ -24,7 +25,7 @@ ht-degree: 5%
 
 有关配置和使用交叉点活动的详细信息，请参阅[提取联合数据（交叉点）](targeting-workflows.md#extracting-joint-data--intersection-)。
 
-如果要处理剩余群体，请选中&#x200B;**[!UICONTROL Generate complement]**&#x200B;选项。 补充将包含所有集客活动减去交集的结果的并集。然后，将向活动添加其他叫客过渡，如下所示：
+如果要处理剩余群体，请选中&#x200B;**[!UICONTROL Generate complement]**&#x200B;选项。 补集将包含所有集客活动减去交集的结果的并集。然后，将向活动添加其他叫客过渡，如下所示：
 
 ![](assets/s_user_segmentation_inter_compl.png)
 
@@ -49,14 +50,14 @@ ht-degree: 5%
 ## 输入参数 {#input-parameters}
 
 * 表名
-* 模式
+* 架构
 
 每个入站事件必须指定由这些参数定义的目标。
 
 ## 输出参数 {#output-parameters}
 
 * 表名
-* 模式
+* 架构
 * recCount
 
 这组三个值标识从交叉点生成的目标。 **[!UICONTROL tableName]**&#x200B;是记录目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为&#x200B;**[!UICONTROL nms:recipient]**），**[!UICONTROL recCount]**&#x200B;是表中的元素数。

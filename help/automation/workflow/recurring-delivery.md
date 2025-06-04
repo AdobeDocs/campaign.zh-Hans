@@ -4,8 +4,9 @@ title: 定期投放
 description: 了解有关定期投放工作流活动的更多信息
 feature: Workflows
 role: User, Data Engineer
+version: Campaign v8, Campaign Classic v7
 exl-id: 27308b0d-cbfc-4bc6-9061-d771ceac95fd
-source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 13%
@@ -52,6 +53,6 @@ ht-degree: 13%
 
 此视频介绍如何配置循环投放和调度程序活动。
 
->[!VIDEO](https://video.tv.adobe.com/v/27510?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
-[此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=zh-Hans){target="_blank"}提供了其他Campaign操作方法视频。
+[此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}提供了其他Campaign操作方法视频。

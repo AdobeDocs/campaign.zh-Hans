@@ -4,8 +4,9 @@ title: 扩充
 description: 了解有关扩充工作流活动的更多信息
 feature: Workflows, Enrichment Activity, Targeting Activity
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 23bfabac-62cc-4f86-a739-a34a0e183c31
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 1%
@@ -41,7 +42,7 @@ ht-degree: 1%
 
 * **[!UICONTROL Define a collection]**：用于定义表之间具有1-N基数的链接。
 * **[!UICONTROL Define a link whose target is still available]**：用于定义表之间具有1-1基数的链接。 连接条件必须由目标表中的单个记录定义。
-* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**：用于定义表之间具有0-1基数的链接。 连接条件必须由0或1（最大值）定义 记录。
+* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**：用于定义表之间具有0-1基数的链接。 连接条件必须由目标表中的0或1（最大）记录定义。
 
   此选项在&#x200B;**[!UICONTROL Simple Join]**&#x200B;选项卡中配置，可以通过&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动的&#x200B;**[!UICONTROL Edit additional data]**&#x200B;链接访问。
 

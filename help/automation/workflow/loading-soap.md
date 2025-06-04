@@ -4,8 +4,9 @@ title: 加载 (SOAP)
 description: 加载 (SOAP)
 feature: Workflows
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 21c42a36-9a50-49b8-8a07-b041ba8b2026
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 4%
@@ -18,7 +19,7 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->仅当您安装了&#x200B;**FDA（联合数据访问）**&#x200B;模块时，**加载(SOAP)**&#x200B;活动才可用。 请核实您的许可协议。
+>仅当您安装了&#x200B;**FDA（联合数据访问）**&#x200B;模块时，**正在加载(SOAP)**&#x200B;活动才可用。 请核实您的许可协议。
 
 如果无法在外部数据库中直接通过FDA收集数据，则除了&#x200B;**数据加载(RDBMS)**&#x200B;活动之外，还会使用&#x200B;**加载(SOAP)**&#x200B;活动。
 
@@ -42,7 +43,7 @@ ht-degree: 4%
 
    如果要更新示例，请选择&#x200B;**[!UICONTROL Re-analyze the example]**。
 
-1. 您可以使用行号作为标识符和/或指定SOAP调用返回多个元素。
+1. 您可以将行号用作标识符和/或指定SOAP调用返回多个元素。
 1. 根据功能输入以下选项卡脚本：
 
    * **[!UICONTROL Initialization]**：建立SOAP连接。

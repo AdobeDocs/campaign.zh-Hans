@@ -5,8 +5,9 @@ description: 了解如何启动工作流和发现工作流操作工具栏和右�
 feature: Workflows
 level: Beginner
 role: User, Admin
+version: Campaign v8, Campaign Classic v7
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
-source-git-commit: d292c20e520b2466f782ccf86eb9d61e01915563
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '1136'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 工作流始终以手动方式启动。 但是，在启动时，它会根据通过调度程序（请参阅[调度程序](scheduler.md)）或活动计划指定的信息来保持非活动状态。
 
-与定向工作流执行（启动、停止、暂停等）相关的操作 是&#x200B;**异步**&#x200B;进程：已记录此顺序，一旦服务器可以应用此顺序，此顺序将立即生效。
+与定向工作流执行（启动、停止、暂停等）相关的操作是&#x200B;**异步**&#x200B;进程：顺序已记录，一旦服务器可供应用时，顺序将生效。
 
 利用工具栏，您可以启动和跟踪工作流的执行情况。
 
@@ -79,7 +80,7 @@ ht-degree: 0%
 
 * **[!UICONTROL Start in simulation mode]**
 
-  使用此选项，您可以在模拟模式下而不是实际模式下启动工作流。 这意味着在启用此模式时，将只执行不影响数据库或文件系统的活动（例如&#x200B;**[!UICONTROL Query]**、**[!UICONTROL Union]**、**[!UICONTROL Intersection]**&#x200B;等）。 有影响的活动（例如&#x200B;**[!UICONTROL Export]**、**[!UICONTROL Import]**&#x200B;等） 以及执行它们之后的那些操作（在同一分支中）不会被执行。
+  使用此选项，您可以在模拟模式下而不是实际模式下启动工作流。 这意味着在启用此模式时，将只执行不影响数据库或文件系统的活动（例如&#x200B;**[!UICONTROL Query]**、**[!UICONTROL Union]**、**[!UICONTROL Intersection]**&#x200B;等）。 不执行具有影响的活动（例如&#x200B;**[!UICONTROL Export]**、**[!UICONTROL Import]**&#x200B;等）及其后的活动（在同一分支中）。
 
 * **[!UICONTROL Execute pending tasks now]**
 

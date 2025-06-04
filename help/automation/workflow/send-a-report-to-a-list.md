@@ -3,8 +3,9 @@ product: campaign
 title: 向列表发送报告
 description: 了解如何使用工作流将报告发送到列表
 feature: Workflows
+version: Campaign v8, Campaign Classic v7
 exl-id: 5bc576d0-cab7-4d26-a3a5-91982a00e356
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 3%
@@ -21,7 +22,7 @@ ht-degree: 3%
 
 * 为此报告创建收件人列表。 [了解详情](#step-1--create-the-recipient-list)。
 * 创建一个投放模板，每次执行工作流时都会创建一个新投放。 [了解详情](#step-2--create-the-delivery-template)。
-* 创建一个工作流，以生成PDF格式的报告，并将其发送到收件人列表。 [了解详情](#step-3--create-the-workflow))。
+* 创建一个工作流，以生成PDF格式的报告并将其发送到收件人列表。 [了解详情](#step-3--create-the-workflow))。
 
 ## 步骤1：创建收件人列表 {#step-1--create-the-recipient-list}
 
@@ -78,7 +79,7 @@ ht-degree: 3%
 它使用三个活动：
 
 * 每月执行一次工作流的&#x200B;**[!UICONTROL Scheduler]**&#x200B;活动，
-* 生成PDF格式报告的&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动，
+* 以PDF格式生成报告的&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动，
 * 引用之前创建的投放模板的&#x200B;**[!UICONTROL Delivery]**&#x200B;活动。
 
 要构建此工作流，请执行以下步骤：
@@ -121,7 +122,7 @@ ht-degree: 3%
      >
      >文件必须保存在服务器上。 您必须为已计算的附件输入与编辑窗口的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中相同的路径和名称，如详细的[此处](#step-2--create-the-delivery-template)所示。
 
-   * **var exportFormat**：输入文件的导出格式(PDF)。
+   * **var exportFormat**：输入文件的导出格式(“PDF”)。
    * **var _ctx**（上下文）：在这种情况下，我们在其全局上下文中使用&#x200B;**[!UICONTROL Tracking indicators]**&#x200B;报告。
 
 1. 通过使用以下选项添加&#x200B;**[!UICONTROL Delivery]**&#x200B;活动来完成：

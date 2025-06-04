@@ -1,18 +1,19 @@
 ---
 product: campaign
-title: 单元格优惠
-description: 单元格优惠
+title: 单元格产品建议
+description: 单元格产品建议
 feature: Workflows, Targeting Activity, Interaction
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: e2216dfd-1ef8-4747-b716-576fd6498fa6
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 7%
 
 ---
 
-# 单元格优惠{#offers-by-cell}
+# 单元格产品建议{#offers-by-cell}
 
 
 

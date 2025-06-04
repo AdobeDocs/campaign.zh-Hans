@@ -2,8 +2,9 @@
 title: 使用工作流数据
 description: 了解如何使用工作流数据
 feature: Workflows, Data Management
+version: Campaign v8, Campaign Classic v7
 exl-id: 5014c2ed-2a74-4122-b7b9-d3703db7ab12
-source-git-commit: 41ba91fca46747760fc42ea6cd78600abbd74c02
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 8%
@@ -44,7 +45,7 @@ ht-degree: 8%
 
   使用此菜单可访问描述性分析向导，该向导允许您生成有关过渡数据的统计和报告。
 
-  在[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=zh-Hans){target="_blank"}中了解如何使用描述性分析向导。
+  请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=zh-Hans){target="_blank"}以了解如何使用描述性分析向导。
 
 在执行工作流时清除目标数据。 只能访问最后一个工作表。 您可以配置工作流以使所有工作表保持可访问状态：选中工作流属性中的&#x200B;**[!UICONTROL Keep the result of interim populations between two executions]**&#x200B;选项。
 
@@ -118,7 +119,7 @@ ht-degree: 8%
 
 ## 更新数据库 {#update-the-database}
 
-所有收集的数据都可用于更新数据库或在投放中使用。 例如，您可以丰富消息内容个性化可能性（包括消息中的合同数、指定去年的平均购物车数量等） 或详细群体定位（向合同共同所有者发送消息，定向1,000个在线服务最佳订阅者等）。 此数据还可以在列表中导出或存档。
+所有收集的数据都可用于更新数据库或在投放中使用。 例如，您可以丰富消息内容个性化的可能性（包括消息中的合同数量，指定去年的平均购物车数等）或详细信息群体定位（向合同共同所有者发送消息，以在线服务的1,000个最佳订阅者为目标等）。 此数据还可以在列表中导出或存档。
 
 ### 更新列表  {#list-updates}
 

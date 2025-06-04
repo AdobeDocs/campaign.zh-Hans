@@ -4,8 +4,9 @@ title: 访问外部数据库（联合数据访问）
 description: 访问外部数据库（联合数据访问）
 feature: Workflows, Data Management, Federated Data Access
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: ddafca28-1db4-42f2-9bfb-73da1240235c
-source-git-commit: c3f4ad0b56dd45d19eebaa4d2f06551c8fecac1d
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 38%
@@ -23,4 +24,4 @@ Adobe Campaign 提供了联合数据访问 (FDA) 选项，以处理存储在一�
 * 扩充
 * 正在加载数据
 
-FDA选项的使用取决于您的Adobe Campaign许可证。 有关配置此选项以及使用该选项时相关的最佳实践和限制的详情，请参阅此部分[&#128279;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=zh-Hans){target="_blank"}。
+FDA选项的使用取决于您的Adobe Campaign许可证。 有关配置此选项以及使用该选项时相关的最佳实践和限制的详情，请参阅本节[](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=zh-Hans){target="_blank"}。

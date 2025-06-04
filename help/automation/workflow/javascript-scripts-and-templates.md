@@ -4,8 +4,9 @@ title: JavaScript 脚本和模板
 description: JavaScript 脚本和模板
 feature: Workflows
 role: Developer
+version: Campaign v8, Campaign Classic v7
 exl-id: 14160de5-23d2-4f53-84c6-0f9e3b1dcf21
-source-git-commit: 25663b475514736f64e7216c798536d8c23e0983
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 2%
@@ -16,7 +17,7 @@ ht-degree: 2%
 
 
 
-通过脚本，可以计算值、在进程中不同任务之间交换数据，以及使用SOAP调用执行特定操作。
+通过脚本，可以计算值、在流程中的不同任务之间交换数据，以及使用SOAP调用执行特定操作。
 
 脚本在工作流图中无处不在：
 

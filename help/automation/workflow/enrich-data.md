@@ -4,8 +4,9 @@ title: 丰富数据
 description: 了解有关扩充工作流活动的更多信息
 feature: Workflows, Enrichment Activity
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 3b3fa15f-b16e-42c8-a2e6-03350aee1903
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '749'
 ht-degree: 0%

@@ -3,9 +3,10 @@ product: campaign
 title: 关于工作流
 description: 利用工作流实现流程自动化、管理数据和受众、发送消息等。
 feature: Workflows
+version: Campaign v8, Campaign Classic v7
 role: User
 exl-id: 297aa4e3-b672-46b5-9016-5accee8568b8
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 44%
@@ -20,7 +21,7 @@ Adobe Campaign 包含一个工作流模块，允许您在应用程序服务器�
 
 例如，您可以使用某个工作流从服务器下载文件、解压缩，然后将其中包含的记录导入 Adobe Campaign 数据库。
 
-此外，一个工作流也可能涉及到要通知一个或多个操作员，或者是可以作出决策和批准流程的相关人员。这样就可以创建一次投放行动，将内容相关任务指派给一位或多位操作员，指定目标并在开始投放前获得批准。
+此外，一个工作流也可能涉及到要通知一个或多个操作员，或者是可以作出决策和批准流程的相关人员。这样就可以创建一次投放行动，将内容相关任务指派给一位或多位操作员，指定目标并在开始投放前审批校样。
 
 工作流在营销活动管理流程的不同上下文和阶段中出现。
 

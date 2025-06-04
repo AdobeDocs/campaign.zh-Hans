@@ -5,8 +5,9 @@ description: 了解有关SQL和JavaScript代码工作流活动的更多信息
 feature: Workflows
 Role: User
 level: Experienced
+version: Campaign v8, Campaign Classic v7
 exl-id: 8c385847-a320-4cd9-9048-2bf9daf2ee07
-source-git-commit: 64b24d7a72c2cdee841ea301ca46b0204f1fccaa
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 13%

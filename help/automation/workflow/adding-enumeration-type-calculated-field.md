@@ -4,8 +4,9 @@ title: 添加明细列表类型计算字段
 description: 了解如何添加明细列表类型计算字段
 feature: Workflows, Data Management
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 4fe2ae81-faa6-4777-a332-70c451bca75b
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 1%
@@ -79,6 +80,6 @@ ht-degree: 1%
 
    ![](assets/query_editor_nveau_79.png)
 
-   再举一个例子，说明没有输入枚举值“2”。 选择&#x200B;**[!UICONTROL Generate an error and reject the line]**&#x200B;函数：所有性别“2”收件人将在行中引发异常和其他信息（名字和姓氏等） 将不会导出。 数据预览窗口的&#x200B;**[!UICONTROL Logs generated during export]**&#x200B;字段中将显示错误日志。 此日志指示未输入枚举值“2”。
+   再举一个例子，说明没有输入枚举值“2”。 选择&#x200B;**[!UICONTROL Generate an error and reject the line]**&#x200B;函数：所有性别“2”收件人将引发异常，行中的其他信息（名字和姓氏等）不会导出。 数据预览窗口的&#x200B;**[!UICONTROL Logs generated during export]**&#x200B;字段中将显示错误日志。 此日志指示未输入枚举值“2”。
 
    ![](assets/query_editor_nveau_80.png)

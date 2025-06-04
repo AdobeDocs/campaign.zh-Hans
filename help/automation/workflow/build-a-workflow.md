@@ -4,8 +4,9 @@ title: 构建工作流
 description: 了解如何构建工作流
 feature: Workflows
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: a6003fdb-1035-4b80-8831-73f30a0b4fb2
-source-git-commit: 166fe487aa169f47f9da86c2990acb1f6dff430e
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 1%
@@ -133,7 +134,7 @@ ht-degree: 1%
 
 您可以复制不同类型的工作流。 复制后，对工作流的修改不会转移到工作流的副本中。
 
-Adobe建议复制工作流而不是执行活动的复制/粘贴。 复制活动时，将保留其所有设置。 对于渠道活动，与活动关联的投放对象也会被复制，这可能会导致严重问题。
+Adobe建议复制工作流，而不是执行活动的复制/粘贴。 复制活动时，将保留其所有设置。 对于渠道活动，与活动关联的投放对象也会被复制，这可能会导致严重问题。
 
 1. 右键单击工作流。
 1. 单击&#x200B;**复制**。

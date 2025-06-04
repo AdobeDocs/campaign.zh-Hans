@@ -4,8 +4,9 @@ title: 定义审批
 description: 通过批准，操作员能够做出管理工作流的决策或确认工作流的继续执行
 feature: Approvals
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 8ac159c1-fd2e-4fb9-8275-18154f6f210c
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 3%

@@ -4,8 +4,9 @@ title: 技术工作流
 description: 详细了解Campaign提供的技术工作流
 feature: Workflows
 role: User, Admin
+version: Campaign v8, Campaign Classic v7
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: b8f774ce507cff67163064b6bd1341b31512c08f
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '2064'
 ht-degree: 0%
@@ -83,7 +84,7 @@ Adobe Campaign附带一组内置的技术工作流。 它们控制计划在服�
 | **复制引用表** (ffdaReplicateReferenceTables) | 默认仅在[Campaign Enterprise (FFDA)部署](../../v8/architecture/enterprise-deployment.md)上安装 | 执行需要存在于Campaign本地数据库(PostgreSQL)和云数据库([!DNL Snowflake])上的内置表的自动复制。 按计划每天每小时执行一次。 如果存在&#x200B;**lastModified**&#x200B;字段，则会增量进行复制，否则将复制整个表。 [了解有关数据复制的更多信息](../../v8/architecture/replication.md) |
 | **复制暂存数据** (ffdaReplicateStagingData) | 默认仅在[Campaign Enterprise (FFDA)部署](../../v8/architecture/enterprise-deployment.md)上安装 | 为单一调用复制暂存数据。 按计划每天每小时执行一次。 [了解有关数据复制的更多信息](../../v8/architecture/replication.md) |
 | **报告聚合** (reportingAggregates) | 投放 | 此工作流可更新报告中使用的聚合。 默认情况下，此工作流于每日凌晨2点触发。 |
-| **发送指标和营销活动属性** (webAnalyticsSendMetrics) | 网站分析连接器 | 此工作流可让您通过Adobe® Analytics连接器，将电子邮件营销活动指标从Adobe Campaign发送到Adobe Experience Cloud套件。 相关指示器如下所示： Sent (iSent)、打开总数(iTotalRecipientOpen)、点击的收件人总数(iTotalRecipientClick)、错误(iError)、选择退出（选择退出）(iOptOut)。 |
+| **发送指标和营销活动属性** (webAnalyticsSendMetrics) | 网站分析连接器 | 此工作流可让您通过Adobe® Analytics连接器，将电子邮件营销活动指标从Adobe Campaign发送到Adobe Experience Cloud Suite。 相关指示器如下所示： Sent (iSent)、打开总数(iTotalRecipientOpen)、点击的收件人总数(iTotalRecipientClick)、错误(iError)、选择退出（选择退出）(iOptOut)。 |
 | **Stock：订单和警报** (stockMgt) | 默认安装 | 此工作流可启动订单行上的库存计算，并管理警告警报阈值。 |
 | **从Adobe Experience Platform Data Collection** (syncWithLaunch)同步移动应用 | 默认安装，从v8.5开始 | 此工作流会自动将移动资产从数据收集同步到Adobe Campaign。 |
 | **跟踪** （跟踪） | 默认安装 | 此工作流执行跟踪信息的恢复和整合。 它还确保重新计算跟踪和投放统计数据，特别是消息中心归档工作流使用的统计数据。 默认情况下，每小时触发一次。 |

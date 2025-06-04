@@ -4,8 +4,9 @@ title: 投放
 description: 了解有关投放类型工作流活动的更多信息
 feature: Workflows, Channels Activity
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 58574983-86c7-46f5-b41b-bae90171048d
-source-git-commit: d6160d927601f66f450553a6dd6f91d74b0b1104
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 1%
@@ -137,7 +138,7 @@ ht-degree: 1%
 
 * deliveryId
 * 表名
-* 模式
+* 架构
 
 每个入站事件必须指定由这些参数定义的目标。
 
@@ -156,7 +157,7 @@ ht-degree: 1%
 ## 输出参数 {#output-parameters}
 
 * 表名
-* 模式
+* 架构
 * recCount
 
 这组三个值标识从投放产生的目标。 **[!UICONTROL tableName]**&#x200B;是存储目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms：recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。

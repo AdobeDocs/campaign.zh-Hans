@@ -4,8 +4,9 @@ title: 重复数据删除
 description: 了解有关重复数据删除工作流活动的更多信息
 feature: Workflows, Targeting Activity
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: f79a979d-bd1d-4a86-8844-563886692941
-source-git-commit: 7f6c394f56d517c0a675e0fd2341bb6ef98044f0
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '1115'
 ht-degree: 9%
@@ -162,14 +163,14 @@ ht-degree: 9%
 ## 输入参数 {#input-parameters}
 
 * 表名
-* 模式
+* 架构
 
 每个入站事件必须指定由这些参数定义的目标。
 
 ## 输出参数 {#output-parameters}
 
 * 表名
-* 模式
+* 架构
 * recCount
 
 这组三个值可标识重复数据删除产生的目标。 **[!UICONTROL tableName]**&#x200B;是保存目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms：recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。

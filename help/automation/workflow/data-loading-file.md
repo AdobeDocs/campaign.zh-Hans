@@ -4,8 +4,9 @@ title: 数据加载（文件）
 description: 了解有关数据加载（文件）工作流活动的更多信息
 feature: Workflows, Data Management Activity
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
-source-git-commit: 8272550faefece753636418bcb748b36f989fcb5
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '1097'
 ht-degree: 14%
@@ -26,7 +27,7 @@ ht-degree: 14%
 
 >[!CAUTION]
 >
->仅支持“平面”结构文件（例如CSV、TXT等）。 不建议使用XML格式。 使用客户端控制台，您可以加载最大大小为150 MB的文件。 在Web用户界面中，加载文件活动的限制为50MB。 [了解详情](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html?lang=zh-Hans){target="_blank"}
+>仅支持“平面”结构文件（例如CSV、TXT等）。 不建议使用XML格式。 使用客户端控制台，您可以加载最大大小为150 MB的文件。 在Web用户界面中，加载文件活动的限制为50MB。 [了解详情](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html){target="_blank"}
 
 ![](assets/s_advuser_wf_etl_file.png)
 

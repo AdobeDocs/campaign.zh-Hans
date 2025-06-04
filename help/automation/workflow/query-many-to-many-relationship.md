@@ -4,8 +4,9 @@ title: 使用多对多关系进行查询
 description: 了解如何使用多对多关系执行查询
 feature: Query Editor
 role: User, Data Engineer
+version: Campaign v8, Campaign Classic v7
 exl-id: c320054d-7f67-4b12-aaa7-785945bf0c18
-source-git-commit: 28742db06b9ca78a4e952fcb0e066aa5ec344416
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 1%

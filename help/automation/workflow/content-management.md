@@ -4,8 +4,9 @@ title: 内容管理
 description: 内容管理
 feature: Workflows, Data Management
 role: User
+version: Campaign v8, Campaign Classic v7
 exl-id: 9b225f78-1959-4e4f-aa4e-ff8a63051154
-source-git-commit: c73f9f3dc7958152c284dbaf06210d09115e5df8
+source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 2%
@@ -22,7 +23,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe Campaign Web用户界面允许您为内容使用内容片段。 借助可在一条或多条消息中引用的可重用组件，营销用户可预建多个自定义内容块，从而允许您在改进的设计过程中快速组合消息内容。 要了解有关内容片段的更多信息，请参阅[Adobe Campaign Web UI文档。](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/content/manage-reusable-content/fragments/fragments){target=_blank}
+>Adobe Campaign Web用户界面允许您为内容使用内容片段。 借助可在一条或多条消息中引用的可重用组件，营销用户可预建多个自定义内容块，从而允许您在改进的设计过程中快速组合消息内容。 要了解有关内容片段的更多信息，请参阅[Adobe Campaign Web UI文档。](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/manage-reusable-content/fragments/fragments){target=_blank}
 
 活动的属性分为三个步骤：
 

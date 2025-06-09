@@ -46,10 +46,10 @@ ht-degree: 1%
 有关与Mobile Services相关的私钥和证书的轮换，请参阅以下链接。
 
 * 对于Android，请参阅[此文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android){target="_blank"}。
-浏览至**创建Android移动应用程序>配置API版本**&#x200B;部分。
+浏览至&#x200B;**创建Android移动应用程序>配置API版本**&#x200B;部分。
 
 * 对于iOS，请参阅[此文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application){target="_blank"}。
-浏览到**创建iOS移动应用程序 — >身份验证模式**&#x200B;部分。
+浏览到&#x200B;**创建iOS移动应用程序 — >身份验证模式**&#x200B;部分。
 
 ## GPG 密钥 {#ac-gpg-credentials}
 

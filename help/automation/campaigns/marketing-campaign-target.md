@@ -17,7 +17,7 @@ ht-degree: 1%
 
 在营销活动中，您可以为每个投放定义：
 
-* 目标受众。 您可以向收件人](#send-to-a-group)的[列表发送消息，或在工作流](#build-the-main-target-in-a-workflow)中构建[受众
+* 目标受众。 您可以向收件人[&#128279;](#send-to-a-group)的[列表发送消息，或在工作流](#build-the-main-target-in-a-workflow)中构建受众
 * 对照组。 您可以[添加控制组](#add-a-control-group)来监视邮件传递后的收件人行为
 * 种子地址 — 在[本节](../../v8/audiences/test-profiles.md)中了解详情。—>
 

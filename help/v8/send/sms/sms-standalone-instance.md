@@ -45,7 +45,7 @@ ht-degree: 0%
 
    ![](assets/sms_extaccount_new.png){zoomable="yes"}
 
-1. 在&#x200B;**[!UICONTROL Mobile]**&#x200B;选项卡中，将&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;保留在&#x200B;**[!UICONTROL Connector]**下拉列表中。
+1. 在&#x200B;**[!UICONTROL Mobile]**&#x200B;选项卡中，将&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;保留在&#x200B;**[!UICONTROL Connector]**&#x200B;下拉列表中。
 默认情况下，**[!UICONTROL Send messages through a dedicated process]**&#x200B;框处于选中状态。
 
    ![](assets/sms_extaccount_connector.png){zoomable="yes"}

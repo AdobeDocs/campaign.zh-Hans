@@ -846,7 +846,7 @@ Android SDK是使用JAVA编写的jar库。 它允许Android开发人员与Adobe 
 
 ## 通知服务扩展 {#notification-service-extension}
 
-用于iOS的&#x200B;****
+用于iOS的&#x200B;**&#x200B;**
 
 介质必须在通知服务扩展级别下载。
 
@@ -880,7 +880,7 @@ Android SDK是使用JAVA编写的jar库。 它允许Android开发人员与Adobe 
 
 ## 通知内容扩展 {#notification-content-extension}
 
-用于iOS的&#x200B;****
+用于iOS的&#x200B;**&#x200B;**
 
 在此级别，您需要：
 

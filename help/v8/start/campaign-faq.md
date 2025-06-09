@@ -48,7 +48,7 @@ ht-degree: 95%
 
    请参阅本指南以了解[可投放性最佳实践](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans){target="_blank"}
 
-   请参阅本指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=zh-Hans){target="_blank"}以了解如何在Campaign [中实施可投放性
+   请参阅本指南[&#128279;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=zh-Hans){target="_blank"}以了解如何在Campaign 中实施可投放性
 
 1. **如何确认我的投放已成功发送，并且未出现错误？**
 

@@ -90,7 +90,7 @@ HTML页面必须包含一个元素，该元素的@id属性具有已创建选件�
 
 ### 提供已识别的优惠 {#presenting-an-identified-offer}
 
-若要向已识别的联系人提供选件，该过程类似于此部分](#presenting-an-anonymous-offer)中详细描述的[过程。
+若要向已识别的联系人提供选件，该过程类似于此部分[&#128279;](#presenting-an-anonymous-offer)中详细描述的过程。
 
 在网页的内容中，您需要添加以下脚本，以在调用优惠引擎期间识别联系人：
 

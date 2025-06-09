@@ -52,4 +52,4 @@ Adobe Campaign提供本页中列出的一组报表工具。
 
   使用Adobe Campaign创建有关数据库中数据的报表。 创建这些组件后，可在相应的上下文中访问它们。
 
-  有关创建报告的步骤详情，请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target="_blank"}。 高级用户可自行创建个性化报表。
+  有关创建报告的步骤详情，请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=zh-Hans){target="_blank"}。 高级用户可自行创建个性化报表。

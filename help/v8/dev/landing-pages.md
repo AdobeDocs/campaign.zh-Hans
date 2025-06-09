@@ -34,34 +34,34 @@ ht-degree: 7%
 * 向收件人提供取消订阅以停止接收通信的功能。
 
 
-在[Campaign Web用户界面文档](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}中了解有关登陆页面的更多信息。
+在[Campaign Web用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}中了解有关登陆页面的更多信息。
 
 您还可以浏览以下部分：
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
-<a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/create-lp">
+<a href="https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/landing-pages/create-lp">
 <img alt="潜在客户" src="assets/do-not-localize/lp-subscription.jpeg">
 </a>
-<div><a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/create-lp"><strong>创建登陆页面</strong>
+<div><a href="https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/landing-pages/create-lp"><strong>创建登陆页面</strong>
 </div>
 <p>
 </td>
 <td>
-<a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/lp-content">
+<a href="https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/landing-pages/lp-content">
 <img alt="验证" src="assets/do-not-localize//lp-design.jpg">
 </a>
 <div>
-<a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/lp-content"><strong>设计登陆页面</strong></a>
+<a href="https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/landing-pages/lp-content"><strong>设计登陆页面</strong></a>
 </div>
 <p>
 </td>
 <td>
-<a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/lp-templates">
+<a href="https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/landing-pages/lp-templates">
 <img alt="验证" src="assets/do-not-localize/lp-reporting.jpg">
 </a>
 <div>
-<a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/lp-templates"><strong>使用登陆页面模板</strong></a>
+<a href="https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/landing-pages/lp-templates"><strong>使用登陆页面模板</strong></a>
 </div>
 <p>
 </td>

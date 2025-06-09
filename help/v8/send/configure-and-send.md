@@ -42,7 +42,7 @@ ht-degree: 10%
 >
 >* 不得在中间源中设置此选项。
 >
->* 请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html#smtp-relay){target="_blank"}以了解有关SMTP服务器配置的更多信息。
+>* 请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html?lang=zh-Hans#smtp-relay){target="_blank"}以了解有关SMTP服务器配置的更多信息。
 
 ## 使用多批次发送 {#sending-using-multiple-waves}
 

@@ -32,7 +32,7 @@ ht-degree: 3%
 
 * 工作流执行：监测工作流对于避免平台性能问题至关重要。 遵循本文档[&#128279;](../../automation/workflow/workflow-best-practices.md#execution-and-performance)中列出的准则。
 
-* 使用[性能监控](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/about-performance-monitoring){target="_blank"}功能连接到[Campaign控制面板功能](https://experienceleague.adobe.com/en/docs/control-panel/using/discover-control-panel/key-features){target="_blank"}以监控您的平台。
+* 使用[性能监控](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/performance-monitoring/about-performance-monitoring){target="_blank"}功能连接到[Campaign控制面板功能](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/discover-control-panel/key-features){target="_blank"}以监控您的平台。
 
 #### 隔离管理 {#quarantine-management}
 
@@ -41,9 +41,9 @@ ht-degree: 3%
 开始在新平台上发送电子邮件时，您可以使用不完全限定的地址列表。 如果发送到无效地址或honeypot地址（邮箱仅用于欺骗垃圾邮件发送者），这将开始降低平台的声誉。 良好的隔离管理流程有助于：保持地址质量、避免Internet访问提供商的阻止列表并减少错误率、加快交付速度和吞吐量。
 
 
-在[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform){target="_blank"}中了解如何启动新平台。
+在[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/zh-hans/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform){target="_blank"}中了解如何启动新平台。
 
-[此部分](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations){target="_blank"}中列出了技术建议。
+[此部分](https://experienceleague.adobe.com/zh-hans/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations){target="_blank"}中列出了技术建议。
 
 
 +++ **阅读一些最佳实践**
@@ -69,7 +69,7 @@ Adobe Campaign会根据返回的错误类型管理错误地址。 [了解有关�
 
 ### 子域和品牌化 {#subdomains-and-branding}
 
-在Adobe Campaign中管理多个品牌时，Adobe建议为每个品牌拥有一个子域。 例如，银行可以具有与其每个区域机构对应的多个子域。 如果银行拥有bluebank.com域，则其子域可以是@ny.bluebank.com、@ma.bluebank.com、@ca.bluebank.com等。 每个子域拥有一个投放模板，让您能够始终为每个品牌使用正确的预配置参数，从而避免错误并节省您的时间。 在[促销活动控制面板文档](https://experienceleague.adobe.com/en/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}中了解有关子域品牌的更多信息。
+在Adobe Campaign中管理多个品牌时，Adobe建议为每个品牌拥有一个子域。 例如，银行可以具有与其每个区域机构对应的多个子域。 如果银行拥有bluebank.com域，则其子域可以是@ny.bluebank.com、@ma.bluebank.com、@ca.bluebank.com等。 每个子域拥有一个投放模板，让您能够始终为每个品牌使用正确的预配置参数，从而避免错误并节省您的时间。 在[促销活动控制面板文档](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}中了解有关子域品牌的更多信息。
 
 ### 配置地址 {#configure-addresses}
 
@@ -226,7 +226,7 @@ To avoid common formatting errors, check the following elements:
 
 * Usage of **authorized characters** in emails: the list of valid characters for email addresses is defined in the "XtkEmail_Characters" option. Learn how to access Campaign options [in this section](../../installation/using/configuring-campaign-options.md). To correctly handle special characters, Adobe Campaign needs to be installed in Unicode. 
 
-* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).-->
+* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#authentication).-->
 
 ## 管理图像 {#manage-images}
 
@@ -412,7 +412,7 @@ You can:
 
 在Campaign投放仪表板中，您可以检查已处理的消息和投放审核日志。 您还可以控制投放日志中消息的状态。
 
-[请参阅Campaign Classic v7文档以了解有关投放监视的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html){target="_blank"}
+[请参阅Campaign Classic v7文档以了解有关投放监视的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=zh-Hans){target="_blank"}
 
 
 ## 跟踪行为 {#track-behaviour}

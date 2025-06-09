@@ -24,5 +24,5 @@ ht-degree: 7%
 
 * 请参阅[本文档](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=zh-Hans){target="_blank"}以了解有关新的Campaign Web用户界面的更多信息。
 
-* Campaign Standard功能已添加到Campaign v8，以方便您的过渡。 这些功能仅限从Campaign Standard过渡的客户使用，具体说明请参阅[本文档](https://experienceleague.adobe.com/en/docs/experience-cloud/campaign/campaign-standard-migration-home){target="_blank"}。
+* Campaign Standard功能已添加到Campaign v8，以方便您的过渡。 这些功能仅限从Campaign Standard过渡的客户使用，具体说明请参阅[本文档](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud/campaign/campaign-standard-migration-home){target="_blank"}。
 

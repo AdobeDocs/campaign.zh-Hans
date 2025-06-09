@@ -45,19 +45,19 @@ ht-degree: 1%
 
 有关与Mobile Services相关的私钥和证书的轮换，请参阅以下链接。
 
-* 对于Android，请参阅[此文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android){target="_blank"}。
+* 对于Android，请参阅[此文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android){target="_blank"}。
 浏览至&#x200B;**创建Android移动应用程序>配置API版本**&#x200B;部分。
 
-* 对于iOS，请参阅[此文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application){target="_blank"}。
+* 对于iOS，请参阅[此文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application){target="_blank"}。
 浏览到&#x200B;**创建iOS移动应用程序 — >身份验证模式**&#x200B;部分。
 
 ## GPG 密钥 {#ac-gpg-credentials}
 
 对于GPG密钥的旋转，需要执行以下步骤：
 
-1. 使用现有密钥解密现有数据。 [了解详情](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/gpg-keys-management#decrypting-data){target="_blank"}。
+1. 使用现有密钥解密现有数据。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/gpg-keys-management#decrypting-data){target="_blank"}。
 
-1. 创建新的GPG密钥对。 在[本文档](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/gpg-keys-management#decrypting-data){target="_blank"}中了解有关GPG密钥管理的更多信息。
+1. 创建新的GPG密钥对。 在[本文档](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/gpg-keys-management#decrypting-data){target="_blank"}中了解有关GPG密钥管理的更多信息。
 
 1. 将所有工作流中的现有GPG密钥使用情况替换为新创建的密钥。
 

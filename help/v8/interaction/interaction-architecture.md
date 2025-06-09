@@ -84,7 +84,7 @@ Adobe Campaign交互模块提出了两种类型的交互：
 
 >[!NOTE]
 >
->在安装包时，**nms：proposition**&#x200B;表的&#x200B;**long**&#x200B;类型字段（如建议ID）将变为&#x200B;**int64**&#x200B;类型字段。 [Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}中详细介绍了此类数据。
+>在安装包时，**nms：proposition**&#x200B;表的&#x200B;**long**&#x200B;类型字段（如建议ID）将变为&#x200B;**int64**&#x200B;类型字段。 [Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html?lang=zh-Hans#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}中详细介绍了此类数据。
 
 在每个实例上配置数据保留持续时间（通过部署向导中的&#x200B;**[!UICONTROL Data purge]**&#x200B;窗口）。 在执行实例上，此期间必须对应于要计算的分类规则（滑动期间）和资格规则所需的历史深度。
 

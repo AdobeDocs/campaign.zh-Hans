@@ -103,7 +103,7 @@ ht-degree: 13%
 
    ![](assets/targeting-wf-age-filter.png)
 
-   在[本节](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}中了解如何在工作流中创建查询。
+   在[本节](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"}中了解如何在工作流中创建查询。
 
 1. 为此查询添加标签并保存更改。
 1. 添加&#x200B;**[!UICONTROL List update]**&#x200B;活动并进行编辑。
@@ -124,7 +124,7 @@ ht-degree: 13%
 
    ![](assets/access-new-list.png)
 
-   您可以通过向工作流添加调度程序使此工作流重复出现。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}。
+   您可以通过向工作流添加调度程序使此工作流重复出现。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=zh-Hans){target="_blank"}。
 
 ## 从列表中删除配置文件 {#remove-a-profile-from-a-list}
 

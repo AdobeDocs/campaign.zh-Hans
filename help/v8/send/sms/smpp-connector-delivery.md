@@ -19,7 +19,7 @@ ht-degree: 5%
 >
 >这适用于Adobe Campaign v8.7.2及更高版本。
 >
->有关旧版本，请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}。
+>有关旧版本，请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}。
 
 ## SMS连接器数据流 {#sms-data-flow}
 

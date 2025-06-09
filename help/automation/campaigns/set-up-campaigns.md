@@ -59,4 +59,4 @@ Adobe Campaign允许您定义、优化、执行和分析通信和营销活动。
 
 此视频介绍营销活动的主要概念。
 
->[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/326575?quality=12&captions=chi_hans)

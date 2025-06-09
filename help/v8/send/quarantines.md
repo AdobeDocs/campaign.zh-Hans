@@ -32,7 +32,7 @@ Adobe Campaign可管理在线渠道（电子邮件、短信、推送通知）的
 
 ## 为何要向隔离区发送电子邮件、电话或设备 {#quarantine-reason}
 
-Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在错误消息鉴别期间分配。 在此页面[&#128279;](delivery-failures.md)上了解有关投放失败管理的更多信息。
+Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在错误消息鉴别期间分配。 在此页面](delivery-failures.md)上了解有关投放失败管理[的更多信息。
 
 可以捕获两种类型或错误：
 
@@ -42,7 +42,7 @@ Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在�
 在隔离地址列表中，**[!UICONTROL Error reason]**&#x200B;字段指示将选定地址置于隔离状态的原因。 [了解详情](#identifying-quarantined-addresses-for-the-entire-platform)。
 
 
-如果用户将电子邮件标记为垃圾邮件，则该邮件会自动重定向到由Adobe管理的技术邮箱。 随后，该用户的电子邮件地址会自动添加到隔离，并附加 **[!UICONTROL Denylisted]** 状态。此状态仅适用于地址，用户档案不在阻止列表上，因此用户可继续接收短信和推送通知。 在[投放最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#feedback-loops){target="_blank"}中了解有关反馈循环的更多信息。
+如果用户将电子邮件标记为垃圾邮件，则该邮件会自动重定向到由Adobe管理的技术邮箱。 随后，该用户的电子邮件地址会自动添加到隔离，并附加 **[!UICONTROL Denylisted]** 状态。此状态仅适用于地址，用户档案不在阻止列表上，因此用户可继续接收短信和推送通知。 在[投放最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops){target="_blank"}中了解有关反馈循环的更多信息。
 
 >[!NOTE]
 >
@@ -73,11 +73,11 @@ Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在�
 >
 >第1年年末： (1&#42;0.33)/(1+0.5)=22%。
 >
->第2年年末：((1.22&#42;0.33)+0.33)/(1.5+0.75)=32.5%。
+第2年年末：((1.22&#42;0.33)+0.33)/(1.5+0.75)=32.5%。
 
 此外，可从主页的&#x200B;**报告**&#x200B;部分找到的&#x200B;**[!UICONTROL Non-deliverables and bounces]**&#x200B;内置报告显示有关隔离地址、遇到的错误类型以及按域划分的失败的信息。 您可以过滤特定投放的数据，或根据需要自定义此报表。
 
-在[可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=zh-Hans){target="_blank"}中了解有关退回地址的更多信息。
+在[可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html){target="_blank"}中了解有关退回地址的更多信息。
 
 ### 隔离的电子邮件地址 {#quarantined-recipient}
 
@@ -104,7 +104,7 @@ Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在�
 
 >[!CAUTION]
 >
->永远不会移除地址处于&#x200B;**[!UICONTROL Quarantine]**&#x200B;或&#x200B;**[!UICONTROL Denylisted]**&#x200B;状态的收件人，即使他们收到电子邮件也是如此。
+永远不会移除地址处于&#x200B;**[!UICONTROL Quarantine]**&#x200B;或&#x200B;**[!UICONTROL Denylisted]**&#x200B;状态的收件人，即使他们收到电子邮件也是如此。
 
 您也可以从隔离列表中手动删除地址。 要从隔离中删除地址，您可以：
 

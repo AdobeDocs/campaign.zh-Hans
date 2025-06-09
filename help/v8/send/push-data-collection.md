@@ -19,7 +19,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 >[!AVAILABILITY]
 >
-> 从Campaign v8.5开始，新客户可专门访问此功能，并会逐步向一组选定的客户推出。 如果您的环境是在2023年6月之前配置的，则此页面不适用于您，您必须遵循此页面[&#128279;](push-settings.md)中详述的步骤。
+> 从Campaign v8.5开始，新客户可专门访问此功能，并会逐步向一组选定的客户推出。 如果您的环境是在2023年6月之前配置的，则此页面不适用于您，您必须遵循此页面](push-settings.md)中详述的步骤[。
 
 在此更新的实施中，要在Adobe Campaign中发送推送通知，请执行以下步骤：
 
@@ -29,9 +29,9 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 1. [在Adobe Experience Platform数据收集中创建并配置移动资产](#create-mobile-property)
 
-1. [添加AdobeAdobe Experience Platform保证扩展](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}（推荐）
+1. [添加Adobe Adobe Experience Platform Assurance扩展](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}（推荐）
 
-1. [将Campaign Classic添加到移动应用程序](#campaign-mobile-ap)
+1. [将Campaign Classic添加到您的移动应用程序](#campaign-mobile-ap)
 
 1. [为iOS和Android创建投放](##push-create)
 
@@ -55,7 +55,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 1. 从&#x200B;**[!UICONTROL Mobile Application Configuration]**&#x200B;中，选择操作系统：
 
-   * 用于iOS的&#x200B;**&#x200B;**
+   * 用于iOS的&#x200B;****
 
      ![](assets/push-config-2.png)
 
@@ -75,7 +75,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
       1. 提供&#x200B;**团队ID**。 这是可在&#x200B;**成员资格**&#x200B;选项卡下找到的字符串值。
 
-   * 用于Android的&#x200B;**&#x200B;**
+   * 用于Android的&#x200B;****
 
      ![](assets/push-config-3.png)
 
@@ -244,11 +244,11 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 您的移动资产现在将自动与&#x200B;**[!UICONTROL Adobe Experience Platform Data Collection]**&#x200B;技术工作流同步。 [了解详情](../../automation/workflow/technical-workflows.md#list-technical-workflows)
 
-## 将Campaign Classic添加到移动应用程序 {#campaign-mobile-app}
+## 将Campaign Classic添加到您的移动应用程序 {#campaign-mobile-app}
 
 Adobe Experience Platform Mobile SDK 有助于在移动设备应用程序中支持 Adobe 的 Experience Cloud 解决方案和服务。 SDK配置通过数据收集UI进行管理，以实现灵活配置和基于规则的可扩展集成。
 
-[在Adobe Developer文档中了解详情](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#add-campaign-classic-to-your-app){target="_blank"}。
+[请参阅Adobe Developer文档以了解详情](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#add-campaign-classic-to-your-app){target="_blank"}。
 
 ## 创建推送通知{#push-create}
 

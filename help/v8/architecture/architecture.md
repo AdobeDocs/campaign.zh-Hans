@@ -26,7 +26,7 @@ Campaign可用作单个实例，每个实例代表一个完整的Campaign环境�
 
 您可以将资源包从一个环境导出和导入到另一个环境。
 
-请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=zh-Hans){target="_blank"}以了解有关包的更多信息
+请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target="_blank"}以了解有关包的更多信息
 
 ## 部署模型 {#ac-deployment}
 

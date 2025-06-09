@@ -46,10 +46,10 @@ Adobe Campaign提供本页中列出的一组报表工具。
 
   ![](assets/desc-analysis-report.png)
 
-  促销活动描述性分析报表存在于[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=zh-Hans){target="_blank"}中。
+  [Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=zh-Hans){target="_blank"}中提供了Campaign描述性分析报告。
 
 * **自定义报告**
 
   使用Adobe Campaign创建有关数据库中数据的报表。 创建这些组件后，可在相应的上下文中访问它们。
 
-  [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=zh-Hans){target="_blank"}中详细介绍了创建报告的步骤。 高级用户可自行创建个性化报表。
+  有关创建报告的步骤详情，请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target="_blank"}。 高级用户可自行创建个性化报表。

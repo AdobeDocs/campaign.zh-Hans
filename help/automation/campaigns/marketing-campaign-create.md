@@ -208,4 +208,4 @@ ht-degree: 4%
 
 本视频说明如何创建营销计划、项目和营销活动。
 
->[!VIDEO](https://video.tv.adobe.com/v/3426482?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/333810?quality=12)

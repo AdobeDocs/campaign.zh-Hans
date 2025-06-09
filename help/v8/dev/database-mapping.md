@@ -100,6 +100,6 @@ SQL字段约束如下：
   <element name="description" xml="true" type="html" label="Description"/>
   ```
 
-  通过“html”类型，您可以将HTML内容存储在CDATA标记中，并在Adobe Campaign客户端界面中显示特殊的HTML编辑检查。
+  “html”类型允许您将HTML内容存储在CDATA标记中，并在HTML客户端界面中显示特殊的Adobe Campaign编辑检查。
 
 通过使用XML字段，您无需修改数据库的物理结构即可添加字段。 另一个优点是，您使用的资源较少（分配给SQL字段的大小、每个表的字段数限制等）。

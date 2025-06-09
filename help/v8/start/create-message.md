@@ -182,7 +182,7 @@ ht-degree: 98%
 
 在本视频中，您将了解如何向现有电子邮件添加种子和校样，以及如何进行发送。
 
->[!VIDEO](https://video.tv.adobe.com/v/3447009?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。
 

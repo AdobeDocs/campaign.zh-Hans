@@ -15,7 +15,7 @@ ht-degree: 1%
 
 使用过滤规则，根据查询中定义的条件选择要排除的消息。 这些规则链接到定向维度。
 
-筛选规则可以链接到其他类型的规则（控制、压力等） 分类中进行分类，或分组到专用的&#x200B;**筛选**&#x200B;分类中。 [了解详情](#create-and-use-a-filtering-typology)。
+筛选规则可以链接到类型中的其他类型的规则（控制、压力等），或分组到专用的&#x200B;**筛选**&#x200B;类型中。 [了解详情](#create-and-use-a-filtering-typology)。
 
 ## 创建筛选规则 {#create-a-filtering-rule}
 

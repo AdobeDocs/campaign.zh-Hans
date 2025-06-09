@@ -94,7 +94,7 @@ ht-degree: 0%
 
 1. 创建&#x200B;**[!UICONTROL Data distribution]**&#x200B;活动。
 1. 创建协作活动。
-1. Publish营销活动。
+1. 发布营销活动。
 
 ### 本地实体侧 {#local-entity-side}
 
@@ -155,7 +155,7 @@ ht-degree: 0%
 
 1. 保存您的记录。
 
-#### Publish营销活动 {#publishing-the-campaign}
+#### 发布营销活动 {#publishing-the-campaign}
 
 您现在可以从&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡添加&#x200B;**营销活动包**。
 

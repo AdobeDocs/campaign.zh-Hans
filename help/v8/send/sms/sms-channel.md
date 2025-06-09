@@ -5,13 +5,13 @@ feature: SMS
 role: User
 level: Intermediate
 badge: label="有限发布版" type="Informative"
-source-git-commit: 36bb1e2c9e2391065360c3cd2ad97612373ec0c2
+exl-id: abab6f15-43ea-42fc-817b-8dbd88df82f7
+source-git-commit: 30babc4bec802f61d3bd28a7ebcf0c15e22b2284
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 1%
 
 ---
-
 
 # 短信渠道特征 {#sms-channel}
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 >
 >本文档适用于Adobe Campaign v8.7.2及更高版本。
 >
->对于旧版本，请阅读[Campaign Classicv7文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-protocol)。
+>对于旧版本，请阅读[Campaign Classic v7文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-protocol)。
 
 
 ## 短信类型 {#sms-types}

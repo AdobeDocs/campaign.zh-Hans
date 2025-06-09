@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Campaign API暂存机制
 
-在[企业(FFDA)部署](enterprise-deployment.md)的上下文中，不建议在性能（延迟和并发）方面引发单一调用。 除非您发送的数据量极低，否则必须使用批处理操作&#x200B;**&#x200B;**。 为了提高性能，引入API将被重定向到本地数据库。
+在[企业(FFDA)部署](enterprise-deployment.md)的上下文中，不建议在性能（延迟和并发）方面引发单一调用。 除非您发送的数据量极低，否则必须使用批处理操作&#x200B;****。 为了提高性能，引入API将被重定向到本地数据库。
 
 默认情况下，某些内置架构启用了Campaign暂存功能。 我们也可以在任何自定义架构上启用它。 暂存机制简介：
 
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 默认情况下，某些内置模式处于暂存状态，如nmsSubscriptionRcp、nmsAppSubscriptionRcp、nmsRecipient。
 
-Campaign Classicv7 API仍然可用，但无法从这种新的暂存机制受益： API调用直接流向云数据库。 Adobe建议尽可能使用新的暂存机制，以减少Campaign Cloud数据库的总体压力和延迟。
+Campaign Classic v7 API仍然可用，但无法从这种新的暂存机制中获益： API调用直接流向云数据库。 Adobe建议尽可能使用新的暂存机制，以减少Campaign Cloud数据库的总体压力和延迟。
 
 >[!CAUTION]
 >

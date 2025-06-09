@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >本文档适用于Adobe Campaign v8.7.2及更高版本。
 >
->对于旧版本，请阅读[Campaign Classicv7文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up)。
+>对于旧版本，请阅读[Campaign Classic v7文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up)。
 
 短信投放所需的技术设置包括：
 

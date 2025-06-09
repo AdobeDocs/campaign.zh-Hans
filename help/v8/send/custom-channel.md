@@ -3,13 +3,13 @@ title: 自定义外部渠道入门
 description: 了解如何使用Adobe Campaign Web创建和发送自定义外部渠道投放
 role: User
 level: Beginner, Intermediate
-source-git-commit: 4ba419c52d6804e4f25f88990c226081ef0a06e6
+exl-id: d2d92de6-3974-41c5-a0fd-09bbf6cf0020
+source-git-commit: f94074d954137c4db39b2ef9f85141b79fe3356b
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 0%
 
 ---
-
 
 # 自定义外部渠道入门 {#gs-custom-channel}
 
@@ -17,7 +17,7 @@ Adobe Campaign允许您创建与第三方集成的自定义外部渠道。 然�
 
 投放创建和发送可在客户端控制台和Web UI中执行。 但是，自定义外部渠道仅在客户端控制台中执行。
 
-要了解如何基于自定义外部渠道创建和发送投放，请参阅此[页面](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html?lang=zh-Hans)。
+要了解如何基于自定义外部渠道创建和发送投放，请参阅此[页面](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html)。
 
 以下是在客户端控制台中创建新的外部自定义渠道的步骤：
 
@@ -69,5 +69,3 @@ Adobe Campaign允许您创建与第三方集成的自定义外部渠道。 然�
    ![](assets/cus-template.png){zoomable="yes"}
 
 新渠道现已可用。 您可以基于此渠道创建和执行投放。
-
-

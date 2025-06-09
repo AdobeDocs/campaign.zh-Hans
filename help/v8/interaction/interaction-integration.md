@@ -24,7 +24,7 @@ ht-degree: 0%
 
 “**env**”参数接收专用于匿名交互的实时环境的内部名称。
 
-要呈现选件，我们需要在Adobe Campaign中创建环境和选件空间，然后配置“HTML”页面。
+要呈现选件，我们需要在Adobe Campaign中创建环境和选件空间，然后配置HTML页面。
 
 以下用例详细说明了通过JavaScript集成选件的可能选项。
 
@@ -38,9 +38,9 @@ ht-degree: 0%
 1. 创建链接到匿名环境的优惠空间。
 1. 创建优惠及其链接到优惠空间的表示形式。
 
-**步骤2：更新HTML页的内容**
+**步骤2：更新HTML页面的内容**
 
-HTML页面必须包含一个元素，该元素具有@id属性，并具有已创建选件空间的内部名称（“i_internal名称空间”）的值。 选件将由Interaction插入此元素中。
+HTML页面必须包含一个元素，该元素的@id属性具有已创建选件空间的内部名称（“i_internal命名空间”）的值。 选件将由Interaction插入此元素中。
 
 在我们的示例中，@id属性接收“i_SPC12”值，其中“SPC12”是之前创建的选件空间的内部名称：
 
@@ -62,9 +62,9 @@ HTML页面必须包含一个元素，该元素具有@id属性，并具有已创�
 
 通过此行为，您可以在同一页面上使用多个选件空间，以便通过调用选件引擎来管理。
 
-**步骤3：在HTML页中显示结果**
+**步骤3：在HTML页面中显示结果**
 
-选件引擎会将选件呈现的内容返回到“HTML”页面：
+优惠呈现的内容由优惠引擎返回到HTML页面：
 
 ```
 <div id="banner_header">
@@ -90,7 +90,7 @@ HTML页面必须包含一个元素，该元素具有@id属性，并具有已创�
 
 ### 提供已识别的优惠 {#presenting-an-identified-offer}
 
-若要向已识别的联系人提供选件，该过程类似于此部分[&#128279;](#presenting-an-anonymous-offer)中详细描述的过程。
+若要向已识别的联系人提供选件，该过程类似于此部分](#presenting-an-anonymous-offer)中详细描述的[过程。
 
 在网页的内容中，您需要添加以下脚本，以在调用优惠引擎期间识别联系人：
 
@@ -118,7 +118,7 @@ HTML页面必须包含一个元素，该元素具有@id属性，并具有已创�
 
 ### 使用HTML渲染函数 {#using-an-html-rendering-function}
 
-要自动生成HTML选件表示，可以使用渲染功能。
+要自动生成HTML选件呈现，您可以使用渲染函数。
 
 1. 转到优惠空间，然后单击&#x200B;**[!UICONTROL Edit functions]**&#x200B;链接。
 1. 选择 **[!UICONTROL Overload the HTML rendering function]**。
@@ -163,7 +163,7 @@ HTML页面必须包含一个元素，该元素具有@id属性，并具有已创�
 </propositions>
 ```
 
-以下用例详细介绍了要在Adobe Campaign中执行的配置以启用XML模式，然后在“HTML”页面中显示调用引擎的结果。
+以下用例详细介绍了要在Adobe Campaign中执行的配置以启用XML模式，然后在HTML页面中显示调用引擎的结果。
 
 1. **创建环境和优惠空间**
 
@@ -251,7 +251,7 @@ HTML页面必须包含一个元素，该元素具有@id属性，并具有已创�
 
    已添加&#x200B;**[!UICONTROL Title 2]**&#x200B;和&#x200B;**[!UICONTROL Price]**&#x200B;字段，并且不再显示&#x200B;**[!UICONTROL Destination URL]**&#x200B;字段。
 
-1. **创建优惠**
+1. **创建产品建议**
 
    有关创建选件的详细信息，请参阅[此页面](interaction-offer.md)。
 
@@ -265,7 +265,7 @@ HTML页面必须包含一个元素，该元素具有@id属性，并具有已创�
 
 1. HTML页面上的&#x200B;**引擎调用和结果**
 
-   对“HTML”页面中选件引擎的调用如下所示：
+   对HTML页面中选件引擎的调用如下所示：
 
    ```
    <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=OE7&cb=alert" type="text/javascript">
@@ -295,7 +295,7 @@ HTML页面必须包含一个元素，该元素具有@id属性，并具有已创�
 
 ### 使用渲染函数 {#using-a-rendering-function-}
 
-可以使用XML渲染函数来创建优惠演示。 此函数将修改在调用优惠引擎期间返回到HTML页的XML节点。
+可以使用XML渲染函数来创建优惠演示。 此函数将修改在调用优惠引擎期间返回到HTML页面的XML节点。
 
 1. 转到优惠空间，然后单击&#x200B;**[!UICONTROL Edit functions]**&#x200B;链接。
 1. 选择 **[!UICONTROL Overload the XML rendering function]**。

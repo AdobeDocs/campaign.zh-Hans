@@ -8,7 +8,7 @@ exl-id: 1f941b35-c7e0-4e8c-b6e5-a1a3e5354483
 source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
 workflow-type: tm+mt
 source-wordcount: '3650'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -50,7 +50,7 @@ SMS服务提供商端的网络设备通常称为SMSC。
 
 在&#x200B;**收发器模式**&#x200B;中，这是连接总数。
 
-在&#x200B;**发射器+接收器模式**&#x200B;中，这将定义发射器+接收器对（一对=一个发射器+一个接收器）的数量。
+在&#x200B;**发射器+接收器模式**中，这将定义发射器+接收器对（一对=一个发射器+一个接收器）的数量。
 无法改变发送器和接收器之间的平衡。
 
 * **通过专用进程发送消息**：
@@ -67,7 +67,7 @@ SMS服务提供商端的网络设备通常称为SMSC。
 * **在日志文件中启用详细的SMPP跟踪**
 启用后，会将额外的日志输出到日志文件。 这对于故障排除非常有用，但如果不需要故障排除，则应在高吞吐量实例上保持禁用状态。
 
-## SMPP渠道设置 {#smpp-channel-settings}
+## SMPP 渠道设置 {#smpp-channel-settings}
 
 ![](assets/smpp_channel_settings.png){zoomable="yes"}
 
@@ -81,7 +81,7 @@ SMS服务提供商端的网络设备通常称为SMSC。
 
 请参阅[定义编码设置的特定映射](#mapping-encodings)，以获取编码过程的更一般说明。
 
-### 来源编号
+### 源编号
 
 定义消息的默认源地址。 此设置仅适用于投放中源编号留空的情况。 默认情况下，不会传递源编号字段，因此提供商会将其替换为短代码。
 
@@ -172,7 +172,7 @@ inquire_link是一种特殊类型的PDU，发送的目的是保持连接处于�
 
 如果无法以GSM对消息进行编码，则将以UCS-2对消息进行编码，并将data_coding设置为8。
 
-## SMSC特性 {#smsc-specificities}
+## SMSC 特性 {#smsc-specificities}
 
 ![](assets/smsc_specificities.png){zoomable="yes"}
 

@@ -8,7 +8,7 @@ exl-id: 5256fc15-1878-4064-9c75-7876a3826b83
 source-git-commit: 4c787abbf9b13c08263e602930bc532d73e08a5a
 workflow-type: tm+mt
 source-wordcount: '379'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 5%
 
 Adobe Campaign附带以下内置目标映射：
 
-| 名称 | 使用至 | 模式 |
+| 名称 | 使用至 | 架构 |
 |---|---|---|
 | 收件人 | 投放到收件人（内置收件人表） | nms：recipient |
 | 访客 | 向通过反向链接（病毒式营销）收集用户档案的访客投放，例如。 | mns：visitor |
@@ -32,10 +32,10 @@ Adobe Campaign附带以下内置目标映射：
 | 访客订阅 | 向订阅了信息服务的访客投放 | nms：visitorSub |
 | 运算符 | 交付给Adobe Campaign操作员 | nms：operator |
 | 外部文件 | 通过包含投放所需所有信息的文件投放 | 无链接架构，未输入目标 |
-| 订阅者申请 | 投放到订阅了应用程序的收件人 | nms：appSubscriptionRcp |
+| 订阅者应用程序 | 投放到订阅了应用程序的收件人 | nms：appSubscriptionRcp |
 
 
-## 创建目标映射 {#new-mapping}
+## 创建一个目标映射 {#new-mapping}
 
 您还可以创建目标映射。 例如，在下列情况下，您可能需要添加自定义目标映射：
 

@@ -5,13 +5,13 @@ feature: SMS
 role: User
 level: Beginner, Intermediate
 badge: label="有限发布版" type="Informative"
-source-git-commit: 36bb1e2c9e2391065360c3cd2ad97612373ec0c2
+exl-id: b5eb9eaa-0ca8-478c-9ed5-e5006e9b5609
+source-git-commit: 30babc4bec802f61d3bd28a7ebcf0c15e22b2284
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 1%
 
 ---
-
 
 # 中间源基础设施中的SMS {#sms-mid}
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 >
 >本文档适用于Adobe Campaign v8.7.2及更高版本。
 >
->对于旧版本，请阅读[Campaign Classicv7文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up)。
+>对于旧版本，请阅读[Campaign Classic v7文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up)。
 
 使用中间源基础设施发送SMS投放需要：
 
@@ -43,8 +43,8 @@ ht-degree: 1%
 
    ![](assets/smsoperator_mid.png){zoomable="yes"}
 
-1. 在&#x200B;**[!UICONTROL Groups and named rights]**&#x200B;部分中，单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
-在打开的新窗口中，从&#x200B;**[!UICONTROL Folder]**&#x200B;列表中选择&#x200B;**[!UICONTROL Named rights]**，然后在右侧列表中选择&#x200B;**[!UICONTROL ADMINISTRATION]**。
+1. 在&#x200B;**[!UICONTROL Groups and named rights]**&#x200B;部分中，单击&#x200B;**[!UICONTROL Add]**按钮。
+在打开的新窗口中，从**[!UICONTROL Folder]**&#x200B;列表中选择&#x200B;**[!UICONTROL Named rights]**，然后在右侧列表中选择&#x200B;**[!UICONTROL ADMINISTRATION]**。
 
 1. 单击&#x200B;**[!UICONTROL Ok]**&#x200B;按钮。
 

@@ -12,7 +12,7 @@ ht-degree: 2%
 
 ---
 
-# 筛选模式{#filter-schemas}
+# 筛选架构{#filter-schemas}
 
 ## 系统筛选器 {#system-filters}
 
@@ -60,7 +60,7 @@ ht-degree: 2%
 >
 >如果未指定筛选器，则所有操作员都将具有架构的读写权限。
 
-## Protect内置架构
+## 保护内置架构
 
 默认情况下，只有具有ADMINISTRATION权限的操作员才可以通过WRITE权限访问内置架构：
 

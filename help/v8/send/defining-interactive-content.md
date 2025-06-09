@@ -5,7 +5,8 @@ description: 了解如何在Adobe Campaign中使用AMP定义交互式和动态�
 feature: Email Design
 role: User
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+exl-id: 2a8b900b-ce0a-41b1-b4e4-b024ca93052e
+source-git-commit: 3d562aab2f19b84aad8b484768bf19648145feb3
 workflow-type: tm+mt
 source-wordcount: '1356'
 ht-degree: 3%
@@ -133,7 +134,7 @@ AMP for Email与现有电子邮件兼容。 除了HTML和/或纯文本之外，�
 * AMP MIME部分必须包含[有效的AMP文档](https://amp.dev/documentation/guides-and-tutorials/learn/validation-workflow/validate_emails/?format=email)。
 * AMP MIME部分必须小于100KB。
 
-您还可以查阅Gmail[&#128279;](https://developers.google.com/gmail/ampemail/tips)文档的提示和已知限制。
+您还可以查阅Gmail](https://developers.google.com/gmail/ampemail/tips)文档的[提示和已知限制。
 
 ## 定位AMP电子邮件 {#targeting-amp-email}
 
@@ -141,7 +142,7 @@ AMP for Email与现有电子邮件兼容。 除了HTML和/或纯文本之外，�
 
 1. Adobe Campaign允许您测试向经适当配置的选定电子邮件地址投放AMP支持的动态电子邮件，以验证其内容和行为。 请参阅[测试选定地址的AMP电子邮件投放](#testing-amp-delivery-for-selected-addresses)。
 
-1. 列入允许列表测试后，您可以通过向相关电子邮件提供商注册以将您的发件人域添加到，将投放或促销活动作为AMP for Email计划的一部分发送。 请参阅向电子邮件提供商[&#128279;](#delivering-amp-emails-by-registering)注册以传递AMP电子邮件。
+1. 列入允许列表测试后，您可以通过向相关电子邮件提供商注册以将您的发件人域添加到，将投放或促销活动作为AMP for Email计划的一部分发送。 请参阅向电子邮件提供商](#delivering-amp-emails-by-registering)注册以传递AMP电子邮件[。
 
 ### 测试选定地址的AMP电子邮件投放 {#testing-amp-delivery-for-selected-addresses}
 
@@ -197,4 +198,4 @@ AMP for Email与现有电子邮件兼容。 除了HTML和/或纯文本之外，�
 
 以下视频介绍如何在 Adobe Campaign 中激活 AMP 并展示其用法。
 
->[!VIDEO](https://video.tv.adobe.com/v/33566?quality=12&learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)

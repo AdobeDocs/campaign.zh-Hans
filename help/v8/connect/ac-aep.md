@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 与Adobe Experience Platform共享和同步受众 {#gs-ac-aep}
 
-Adobe Campaign托管Cloud Service目标和Source连接器允许Adobe Campaign与Adobe Experience Platform之间的无缝集成。 通过此集成，您可以：
+Adobe Campaign Managed Cloud Service目标和Source连接器允许Adobe Campaign与Adobe Experience Platform之间的无缝集成。 通过此集成，您可以：
 
 * 将Adobe Experience Platform受众发送到Adobe Campaign，并将投放和跟踪日志发回到Adobe Experience Platform中以进行分析，
 * 将Adobe Experience Platform配置文件属性引入Adobe Campaign并实施同步流程，以便定期更新这些属性。
@@ -40,7 +40,7 @@ Adobe Campaign托管Cloud Service目标和Source连接器允许Adobe Campaign与
 
 * 使用Adobe Campaign Managed Cloud Services **Source连接**&#x200B;将Adobe Campaign投放和跟踪日志发送到Adobe Experience Platform：
 
-  为此，请配置新的Adobe Campaign Managed Cloud Services **Source连接**&#x200B;以将Campaign事件摄取到AdobeExperience Platform。 提供要使用的Campaign实例和架构的详细信息，选择应在其中摄取数据的数据集，然后配置要检索的字段。 [了解如何创建Adobe Campaign Managed Cloud Services源连接](https://www.adobe.com/go/sources-campaign-ui-en)
+  为此，请配置新的Adobe Campaign Managed Cloud Services **Source连接**&#x200B;以将Campaign事件摄取到Adobe Experience Platform。 提供要使用的Campaign实例和架构的详细信息，选择应在其中摄取数据的数据集，然后配置要检索的字段。 [了解如何创建Adobe Campaign Managed Cloud Services源连接](https://www.adobe.com/go/sources-campaign-ui-en)
 
   ![](assets/aep-logs.png){width="800" align="center"}
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 将Campaign技术操作员迁移到Adobe Developer Console {#migrate-tech-users-to-ims}
 
-从Campaign v8.5开始，作为加强安全和身份验证流程工作的一部分，对Campaign v8的身份验证流程正在进行改进。 技术操作员现在可以使用[AdobeIdentity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}连接到Campaign。 在[Adobe Developer Console文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}中了解有关新服务器到服务器身份验证过程的更多信息。
+从Campaign v8.5开始，作为加强安全和身份验证流程工作的一部分，对Campaign v8的身份验证流程正在进行改进。 技术操作员现在可以使用[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}连接到Campaign。 在[Adobe Developer Console文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}中了解有关新服务器到服务器身份验证过程的更多信息。
 
 技术操作员是为API集成明确创建的Campaign用户配置文件。 本文详细介绍了通过Adobe Developer控制台将技术操作员迁移到技术帐户所需的步骤。
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 `campaign - <your campaign instance> - messagecenter`
 
-如果您已使用基于IMS的身份验证来使用户访问Campaign，则Admin Console中应已存在API调用所需的产品配置文件。 如果您在Campaign中使用自定义运算符组来调用营销实例的API，则必须在Admin Console中创建该产品配置文件。
+如果您已使用基于IMS的身份验证来使用户访问Campaign，则Admin Console中应已存在API调用所需的产品配置文件。 如果您在Campaign中使用自定义运算符组来对营销实例进行API调用，则必须在Admin Console中创建该产品配置文件。
 
 对于其他情况，您必须联系Adobe过渡经理，以便Adobe技术团队能够将您现有的操作员组和已命名权限迁移到Admin Console中的产品配置文件。
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 集成是作为Adobe Developer Console中&#x200B;**项目**&#x200B;的一部分创建的。 请参阅[Adobe Developer Console文档](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"}以了解有关项目的更多信息。
 
-您可以使用之前创建的任何项目，也可以创建新项目。 [Adobe Developer Console文档](https://developer.adobe.com/developer-console/docs/guides/getting-started/){target="_blank"}中详细介绍了创建项目的步骤。 您可以找到以下关键步骤
+您可以使用之前创建的任何项目，也可以创建新项目。 有关创建项目的详细步骤，请参阅[Adobe Developer Console文档](https://developer.adobe.com/developer-console/docs/guides/getting-started/){target="_blank"}。 您可以找到以下关键步骤
 
 <!--
 For this migration, you must add below APIs in your project: **I/O Management API** and **Adobe Campaign**.
@@ -74,7 +74,7 @@ For this migration, you must add below APIs in your project: **I/O Management AP
 
 要将API添加到项目中，请执行以下步骤：
 
-1. 单击&#x200B;**添加API**&#x200B;以选择要添加到项目中的API。
+1. 单击&#x200B;**添加API**以选择要添加到项目中的API。
    ![](assets/do-not-localize/ims-updates-01.png)
 1. 通过勾选Adobe Campaign卡片右上角的框，选择并将Adobe Campaign API添加到您的项目中，在将鼠标悬停在该卡片上时会显示该框
    ![](assets/do-not-localize/ims-updates-02.png)
@@ -95,7 +95,7 @@ When the API has been successfully connected, you can access the newly generated
 
 如先决条件部分中所述，您必须分配项目使用的相应产品配置文件。 在此步骤中，您必须选择要由正在创建的技术帐户使用的产品配置文件。
 
-如果此技术帐户用于对Message Center实例进行API调用，请确保选择以`messagecenter`结尾的Adobe创建产品配置文件。
+如果此技术帐户用于向消息中心实例进行API调用，请确保选择以`messagecenter`结尾的Adobe创建产品配置文件。
 
 对于营销实例的API调用，请选择与实例和操作员组对应的产品配置文件。
 
@@ -149,9 +149,9 @@ You can now add your Campaign product profile to the project, as detailed below:
 
 有关API集成步骤的更多详细信息，包括用于顺利集成的示例代码，请参阅[Adobe Developer Console身份验证文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}。
 
-以下是示例SOAP调用，其中显示第三方系统的迁移前调用和迁移后调用。
+以下是示例SOAP调用，其中显示了第三方系统的迁移之前和迁移之后。
 
-使用AdobeIdentity Management System (IMS)身份验证时，要生成WSDL文件，您应在postman调用中添加`Authorization: Bearer <IMS_Technical_Token_Token>`：
+使用Adobe Identity Management System (IMS)身份验证时，要生成WSDL文件，您应在postman调用中添加`Authorization: Bearer <IMS_Technical_Token_Token>`：
 
 ```
 curl --location --request POST 'https://<instance_url>/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent' \--header 'Authorization: Bearer <Technical account access token>'
@@ -208,9 +208,9 @@ curl --location --request POST 'https://<instance_url>/nl/jsp/schemawsdl.jsp?sch
 
 ### 步骤9 — （可选）在Campaign客户端控制台中更新技术帐户操作员 {#ims-migration-step-9}
 
-此步骤是可选的，并且仅在营销实例中可用，不能在任何消息中心实例中使用。 如果已经为技术操作员定义了特定文件夹权限或已命名权限，但未通过分配的操作员组。 现在，您需要更新Admin Console中新创建的技术帐户用户，以授予所需的文件夹权限或命名权限。
+此步骤是可选的，并且仅在营销实例中可用，不能在任何消息中心实例中使用。 如果已经为技术操作员定义了特定文件夹权限或已命名权限，但未通过分配的操作员组。 现在，您需要在Admin Console中更新新创建的技术帐户用户，以授予所需的文件夹权限或命名权限。
 
-请注意，在对Campaign实例至少进行API调用后（IMS届时将在Campaign中创建用户），技术帐户用户才会存在于Adobe Campaign中。 如果您在Campaign中找不到技术用户，请确保能够成功发送API调用，如步骤7[&#128279;](#ims-migration-step-7)中所述。
+请注意，在对Campaign实例至少进行API调用后（IMS届时将在Campaign中创建用户），技术帐户用户才会存在于Adobe Campaign中。 如果您在Campaign中找不到技术用户，请确保能够成功发送API调用，如步骤7](#ims-migration-step-7)中所述[。
 
 1. 要应用新的技术帐户用户所需的更改，请按照电子邮件地址在Campaign客户端控制台中找到它们。 此电子邮件地址是在上述项目创建和身份验证步骤中创建的。
 
@@ -218,7 +218,7 @@ curl --location --request POST 'https://<instance_url>/nl/jsp/schemawsdl.jsp?sch
 
    ![](assets/do-not-localize/ims-updates-07.png)
 
-   在“凭据”屏幕中，向下滚动以找到&#x200B;**技术帐户电子邮件**，然后单击&#x200B;**复制**&#x200B;按钮。
+   在“凭据”屏幕中，向下滚动以找到**技术帐户电子邮件**，然后单击&#x200B;**复制**&#x200B;按钮。
 
    ![](assets/do-not-localize/ims-updates-08.png)
 

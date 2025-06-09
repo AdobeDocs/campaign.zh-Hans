@@ -18,7 +18,7 @@ ht-degree: 56%
 
 >[!BEGINSHADEBOX]
 
-在此页中&#x200B;**&#x200B;**
+在此页中&#x200B;****
 
 * Campaign v8.5 - [版本8.5.1](#release-8-5-1) | [版本8.5.2](#release-8-5-2)
 * Campaign v8.4 - [版本8.4.3](#release-8-4-3) | [版本8.4.4](#release-8-4-4) | [版本8.4.5](#release-8-4-5)
@@ -60,7 +60,7 @@ Campaign v8.5.1引入了我们最新的推送通知服务，该服务由基于�
 <ul>
 <li>SMS吞吐量：速度提高<strong>5x</strong></li>
 </ul>
-<p><em>Adobe测试小组已在实验室条件下测量了这些最大吞吐量性能。</em></p>
+<p><em>Adobe测试团队已在实验室条件下测量了这些最大吞吐量性能。</em></p>
 </div>
 <p></p>
 </td>
@@ -75,14 +75,14 @@ Campaign v8.5.1引入了我们最新的推送通知服务，该服务由基于�
 
 **安全性增强**
 
-* 使用Campaign v8.5.1时，对Campaign v8的身份验证过程已得到改进并得到了保护。 技术操作员现在必须使用AdobeIdentity Management System (IMS)连接到Campaign。 请阅读[此技术说明](../../technotes/upgrades/ims-migration.md)，了解如何迁移现有技术帐户。
-* 从即将推出的v8.6开始，您将不再允许从Campaign客户端控制台创建运算符。 如果您使用login/password本机身份验证，则必须将操作员迁移到AdobeIdentity Management System (IMS)。 请阅读[此技术说明](../../technotes/upgrades/migrate-users-to-ims.md)，了解如何迁移操作员。
+* 使用Campaign v8.5.1时，对Campaign v8的身份验证过程已得到改进并得到了保护。 技术操作员现在必须使用Adobe Identity Management System (IMS)连接到Campaign。 请阅读[此技术说明](../../technotes/upgrades/ims-migration.md)，了解如何迁移现有技术帐户。
+* 从即将推出的v8.6开始，您将不再允许从Campaign客户端控制台创建运算符。 如果您使用的是登录/密码本机身份验证，则必须将操作员迁移到Adobe Identity Management System (IMS)。 请阅读[此技术说明](../../technotes/upgrades/migrate-users-to-ims.md)，了解如何迁移操作员。
 * 已更新多个第三方工具以优化安全性。
 
 **兼容性更新**
 
 * 客户端控制台的32位版本现已弃用。 从8.6开始，客户端控制台将仅以64位提供。 客户端控制台可无缝升级到64位版本。 有关如何升级操作系统的详细信息，请参阅此[技术说明](../../technotes/upgrades/console.md)。
-* 您现在可以将Campaign v8实例连接到Azure synapse外部数据库。 此连接通过新的外部帐户进行管理。 在[Campaign兼容性矩阵](../start/compatibility-matrix.md#federated-data-access-fdafederateddataaccessfda)中了解详情。
+* 您现在可以将Campaign v8实例连接到Azure Synapse外部数据库。 此连接通过新的外部帐户进行管理。 在[Campaign兼容性矩阵](../start/compatibility-matrix.md#federated-data-access-fdafederateddataaccessfda)中了解详情。
 
 
 **修复**
@@ -140,9 +140,9 @@ _2023 年 1 月 27 日_
 
 * 修复了营销服务器与中间源服务器之间的传递指示器同步问题。 (NEO-50724) <!--OKKKK-->
 * 修复了导出工作流时可能导致错误的问题。(NEO-50555) <!--OKKKK-->
-* 修复了扩展之前已扩展的模式时出现的问题。(NEO-49118) <!--OKKKK-->
+* 修复了扩展之前已扩展的架构时出现的问题。(NEO-49118) <!--OKKKK-->
 * 修复了在链接定义中使用具有相同标识符的两个扩充活动时出现的问题。(NEO-48851)
-* 修复了两个投放准备失败的问题。如果处理的潜在优惠数量过多，投放准备可能会失败。将图像 URL 定义为要在文本格式投放中跟踪的 URL 时出现另一个问题。(NEO-48807) <!--OKKKK-->
+* 修复了两个投放准备失败的问题。如果处理的潜在产品建议数量过多，投放准备可能会失败。将图像 URL 定义为要在文本格式投放中跟踪的 URL 时出现另一个问题。(NEO-48807) <!--OKKKK-->
 * 修复了可能导致工作流失败的问题，即工作流会覆盖针对非 FFDA 帐户在外部帐户中定义的仓库名称。(NEO-43209) <!--OKKKK-->
 * 改进了 Web 应用程序的安全性，从而防止 DDoS 攻击。(NEO-50757) <!--OKKKK-->
 * 改进了 **[!UICONTROL Consolidated tracking]**(nms:trackingStats) FDA 表中整合跟踪数据的管理，从而避免出现重复。(NEO-46409)
@@ -159,5 +159,5 @@ _2023 年 1 月 27 日_
 * 对 log4j 库的其余引用已从 Windows 上的 Campaign 安装中移除。(NEO-44851)
 * 修复了在&#x200B;**查询**&#x200B;工作流活动的附加数据中添加&#x200B;**已打开的收件人** (estimatedRecipientOpen) 指标时，可能会导致错误的问题。(NEO-46665)
 * 改进了包含多个投放的工作流中的跟踪 URL 管理，从而提高性能。(NEO-50894) <!--OKKKK-->
-* 修复了可能导致使用 Xtkfolder 的模式复制失败的问题。(NEO-46787) <!--OKKKK-->
+* 修复了可能导致使用 Xtkfolder 的架构复制失败的问题。(NEO-46787) <!--OKKKK-->
 * 修复了可能导致在 NmsSubscription 表中删除“lastModified”自定义列的问题。(NEO-48402)

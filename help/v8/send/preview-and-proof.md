@@ -8,7 +8,7 @@ exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
 source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
 workflow-type: tm+mt
 source-wordcount: '703'
-ht-degree: 3%
+ht-degree: 16%
 
 ---
 
@@ -35,9 +35,9 @@ ht-degree: 3%
 
 ## 发送校样 {#send-proofs}
 
-对于电子邮件投放，您可以发送校样以验证消息内容。 通过发送校样，可检查选择退出链接、镜像页面和任何其他链接、验证消息、验证是否显示图像、检测可能存在的错误等。 您可能还希望检查您的设计和在不同设备上的渲染。
+对于电子邮件投放，您可以发送校样以验证消息内容。通过发送校样，可检查选择退出链接、镜像页面和任何其他链接、验证消息、验证是否显示图像、检测可能存在的错误等。您可能还希望检查设计和在不同设备上的呈现效果。
 
-利用校样这种特定的消息，可在将消息发送给主受众之前对消息进行测试。 校样的收件人负责批准消息：呈现、内容、个性化设置、配置。
+利用校样这种特定的消息，可在将消息发送给主要受众之前对消息进行测试。校样的收件人负责审阅消息：呈现效果、内容、个性化设置和配置。
 
 ### 校对收件人 {#proofs-recipients}
 
@@ -48,8 +48,8 @@ ht-degree: 3%
 从&#x200B;**[!UICONTROL Targeting mode]**&#x200B;下拉列表中选择了校对目标的类型。
 
 * 使用&#x200B;**[!UICONTROL Definition of a specific proof target]**&#x200B;选项选择数据库中的收件人作为验证目标。
-* 使用&#x200B;**[!UICONTROL Substitution of the address]**&#x200B;选项输入电子邮件地址并使用目标收件人数据验证内容。 可以手动输入替代地址，也可以从下拉列表中选择替代地址。 关联的枚举是替换地址(rcpAddress)。
-默认情况下，会随机执行替换，但您可以通过&#x200B;**[!UICONTROL Detail]**&#x200B;图标从主目标中选择特定收件人。
+* 使用&#x200B;**[!UICONTROL Substitution of the address]**选项输入电子邮件地址并使用目标收件人数据验证内容。 可以手动输入替代地址，也可以从下拉列表中选择替代地址。 关联的枚举是替换地址(rcpAddress)。
+默认情况下，会随机执行替换，但您可以通过**[!UICONTROL Detail]**&#x200B;图标从主目标中选择特定收件人。
 
   ![](assets/target-of-proofs-substitution-details.png){width="800" align="left"}
 
@@ -105,4 +105,4 @@ ht-degree: 3%
 
 了解如何为电子邮件投放发送并验证校样。
 
->[!VIDEO](https://video.tv.adobe.com/v/3447009?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/333404)

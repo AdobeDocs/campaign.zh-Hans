@@ -61,9 +61,9 @@ ht-degree: 0%
 
 ![](assets/Interaction-best-practices-offer-space-selected.png)
 
-如果您在投放中选择的选件空间未设置HTML渲染功能，则您将不会在投放菜单中看到该选件，并且将无法选择它。 这与&#x200B;**扩充**&#x200B;活动中选择的优惠空间无关。
+如果您在投放中选择的优惠空间未设置HTML渲染功能，则您将不会在投放菜单中看到该空间，并且将无法选择它。 这与&#x200B;**扩充**&#x200B;活动中选择的优惠空间无关。
 
-在下面的示例中，HTML渲染函数在下拉列表中可用，因为投放中选择的选件空间具有渲染函数：
+在下面的示例中，HTML呈现函数在下拉列表中可用，因为投放中选择的选件空间具有呈现函数：
 
 ![](assets/Interaction-best-practices-HTML-rendering.png)
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 当您选择建议时，**[!UICONTROL view]**&#x200B;属性的值如下：
 * &quot;rendering/html&quot;： html rendering. 它使用HTML渲染函数。
-* &quot;offer/view/html&quot;： html内容。 它不使用HTML渲染函数。 它仅包括HTML字段。
+* &quot;offer/view/html&quot;： html内容。 它不使用HTML渲染函数。 它仅包含HTML字段。
 
 当您在单个电子邮件投放中包含多个选件空间时，如果其中某些选件具有渲染功能，而另一些选件没有该功能，则必须记住哪些选件使用了哪些选件空间，以及哪些选件空间具有渲染功能。
 

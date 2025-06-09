@@ -5,13 +5,13 @@ feature: SMS
 role: User
 level: Beginner, Intermediate
 badge: label="有限发布版" type="Informative"
-source-git-commit: 36bb1e2c9e2391065360c3cd2ad97612373ec0c2
+exl-id: 704e151a-b863-46d0-b8a1-fca86abd88b9
+source-git-commit: 30babc4bec802f61d3bd28a7ebcf0c15e22b2284
 workflow-type: tm+mt
 source-wordcount: '1326'
 ht-degree: 5%
 
 ---
-
 
 # SMPP连接器描述 {#smpp-connector-desc}
 
@@ -19,7 +19,7 @@ ht-degree: 5%
 >
 >这适用于Adobe Campaign v8.7.2及更高版本。
 >
->有关旧版本，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}。
+>有关旧版本，请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}。
 
 ## SMS连接器数据流 {#sms-data-flow}
 
@@ -123,7 +123,7 @@ SMS流程托管2个重要组件：SMPP连接器本身，它处理与SMPP提供�
 | profDeliveryStat | 记录有关SMS进程内部的各种汇总统计信息 | 真 | false：可能会使吞吐量稍有增加。 气馁。 | true：低详细程度日志 | 真 |
 | profLogPerMessage | 记录每个消息的每个处理步骤 | 假 | false：减少日志详细程度。 | true：详细程度日志非常高。 **仅在绝对必要时使用**。 对性能有巨大影响。 **收集到足够的数据后，请立即禁用此设置**。 | 真 |
 | providerIdScanPeriod | 扫描要协调的新提供程序ID之间的时段（以秒为单位） | 10 | 1：低延迟 | 60：更大的批次，以获得更高的吞吐量 | 1：低延迟有助于调试消息处理。 |
-| providerIdThreads | 提供程序 ID 协调的会话数。每个实例 1 个会话就足够了。设置为 0 可在此容器上禁用。 | 1 | 0：在此容器上禁用 | 1 | 1 |
+| providerIdThreads | 提供程序 ID 协调的线程数。每个实例 1 个线程就足够了。设置为 0 可在此容器上禁用。 | 1 | 0：在此容器上禁用 | 1 | 1 |
 | sendingThreads | 发送线程数 | 1 | 1：单线程 | CPU数。 线程过多通常会降低性能。 | 1：单线程生成更干净的日志。 |
 | updatethreads | 用于更新数据库的线程数 | 1 | 1：单线程 | CPU数。 每个线程创建自己的数据库连接。 | 1：单线程生成更干净的日志。 |
 | verifymode | 模拟发送消息。 消息实际上不会发送。 对调试很有用 | 假 | 假 | 真 | false：正常运行系统。 true：仅测试数据库访问和消息准备。 |

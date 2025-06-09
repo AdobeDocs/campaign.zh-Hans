@@ -27,7 +27,7 @@ ht-degree: 76%
 
 Adobe Campaign v8 是以&#x200B;**托管云服务**&#x200B;的形式提供。
 
-Adobe Campaign Managed Cloud Services 提供了可用于进行跨渠道客户体验设计的云服务平台，并为可视化的活动编排、实时互动管理和跨渠道执行提供了环境。在[产品描述页面](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}中了解有关Campaign托管Cloud Service的更多信息。
+Adobe Campaign Managed Cloud Services 提供了可用于进行跨渠道客户体验设计的云服务平台，并为可视化的活动编排、实时互动管理和跨渠道执行提供了环境。在[产品描述页面](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}中了解有关Campaign Managed Cloud Services的更多信息。
 
 这一新产品将同类最佳服务与主动监督和及时发送警报的功能融合在一起，将重心放在三个方面：
 
@@ -42,7 +42,7 @@ Adobe Campaign Managed Cloud Services 提供了可用于进行跨渠道客户体
 
 ## 混合架构 {#hybrid-archi}
 
-Campaign v8依赖于&#x200B;**混合架构**。 请注意，如果从Campaign Classicv7进行过渡，所有投放都将通过中间源服务器。
+Campaign v8依赖于&#x200B;**混合架构**。 请注意，如果从Campaign Classic v7进行过渡，所有投放都将通过中间源服务器。
 
 因此：
 
@@ -79,7 +79,7 @@ Campaign 用户仅可通过其 Adobe ID 进行连接。可使用同一个 Adobe 
 请注意，某些功能在 Campaign 的[企业 (FFDA) 部署](../architecture/enterprise-deployment.md)的环境下不可用，例如：
 
 * 营销资源管理
-* 优惠券
+* 产品建议券
 * Web 跟踪
 * 调查
 

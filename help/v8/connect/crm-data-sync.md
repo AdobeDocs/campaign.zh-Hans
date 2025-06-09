@@ -20,7 +20,7 @@ Adobe Campaign与CRM之间的数据同步由&#x200B;**CRM Connector**&#x200B;工
 
 ![](assets/ms-dyn-wf.png)
 
-此工作流通过Microsoft Dynamics导入联系人，将其与现有Adobe Campaign数据同步，删除重复联系人，并更新Adobe Campaign数据库。
+此工作流通过Microsoft Dynamics导入联系人，将其与现有Adobe Campaign数据同步，删除重复的联系人，并更新Adobe Campaign数据库。
 
 需要配置&#x200B;**[!UICONTROL CRM Connector]**&#x200B;活动以同步数据。
 
@@ -119,7 +119,7 @@ Adobe Campaign与CRM之间的数据同步由&#x200B;**CRM Connector**&#x200B;工
 * 不支持联接比较。
 * 左侧列中的表达式必须为字段。 它不能是多个表达式、数字等的组合。
 
-### 排序方式 {#order-by}
+### 排序依据 {#order-by}
 
 在Microsoft Dynamics和Salesforce.com中，您可以按升序或降序对要导入的远程字段进行排序。
 

@@ -23,7 +23,7 @@ ht-degree: 0%
 
 此更改会影响：
 
-* Campaign Classicv7托管客户和混合客户
+* Campaign Classic v7托管客户和混合客户
 * Campaign Managed Services客户
 * 所有Campaign v8客户
 * Campaign Standard客户
@@ -49,13 +49,13 @@ ht-degree: 0%
 
 * **为什么这是强制升级？**
 
-  Adobe计划停用旧式数据中心，在该数据中心运行的Adobe Campaign实例必须转移到新的参考数据中心Amazon Web Services (AWS)。
+  Adobe计划停用旧式数据中心，因此必须在其中运行的Adobe Campaign实例必须转移到新的参考数据中心Amazon Web Services (AWS)。
 
-  Managed Services云Adobe托管在Amazon Web Services (AWS)上，它是一个现代化、安全和优化的环境。 [进一步了解Amazon Web Services](https://aws.amazon.com/application-hosting/benefits/){target="_blank"}。
+  Adobe Managed Services云托管在Amazon Web Services (AWS)上，它是一个现代化、安全和优化的环境。 [进一步了解Amazon Web Services](https://aws.amazon.com/application-hosting/benefits/){target="_blank"}。
 
 * **此迁移的目标客户是哪些客户？**
 
-  所有Campaign v8客户和Campaign Classicv7混合、托管和Campaign Managed Services都将迁移其环境。 Campaign Standard客户也受到影响。
+  所有Campaign v8客户和Campaign Classic v7混合、托管和Campaign Managed Services都将迁移其环境。 Campaign Standard客户也受到影响。
 
 * **预计停机时间是多少？**
 
@@ -67,11 +67,11 @@ ht-degree: 0%
 
 * **客户需要运行哪些验证？**
 
-  此迁移不需要任何特定测试。 如果发现任何问题，请联系[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support){target="_blank"}。
+  此迁移不需要任何特定测试。 如果发现任何问题，请联系[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}。
 
 
 * **我可以请求更改计划的安全升级槽的日期/时间吗？**
 
   由于这是强制性迁移，因此我们无法适应对现有计划的修改。
 
-如有任何其他问题，您可以联系[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support){target="_blank"}。
+如有任何其他问题，您可以联系[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}。

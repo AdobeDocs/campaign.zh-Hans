@@ -21,11 +21,11 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->作为托管Cloud Service用户，[联系Adobe](../start/campaign-faq.md#support)以在您的环境中安装和配置Campaign事务性消息传递。
+>作为托管云服务用户，[联系Adobe](../start/campaign-faq.md#support)以在您的环境中安装和配置Campaign事务性消息传递。
 
 ## 定义权限 {#mc-permissions}
 
-要为托管在Adobe云上的消息中心执行实例创建新用户，请联系您的Adobe过渡经理。 消息中心用户是特定的操作员，需要专用权限才能访问“实时事件”(nmsRtEvent)文件夹。
+要为托管在Adobe Cloud上的消息中心执行实例创建新用户，请联系您的Adobe过渡经理。 消息中心用户是特定的操作员，需要专用权限才能访问“实时事件”(nmsRtEvent)文件夹。
 
 ## 架构扩展  {#mc-schema-ext}
 

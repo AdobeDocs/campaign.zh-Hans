@@ -234,13 +234,13 @@ ht-degree: 3%
    <td> Sum(iIf([url/@category]='email'，@totalClicks，0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> facebook<br /> </td> 
+   <td> Facebook<br /> </td> 
    <td> @facebook<br /> </td> 
    <td> URL类别等于“facebook”的所有@totalClicks的总和。<br /> </td> 
    <td> Sum(iIf([url/@category]='facebook'，@totalClicks，0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> twitter<br /> </td> 
+   <td> Twitter<br /> </td> 
    <td> @twitter<br /> </td> 
    <td> URL类别等于“twitter”的所有@totalClicks的总和。<br /> </td> 
    <td> Sum(iIf([url/@category]='twitter'，@totalClicks，0))<br /> </td> 
@@ -367,7 +367,7 @@ ht-degree: 3%
   <tr> 
    <td> 共享<br /> </td> 
    <td> @shared<br /> </td> 
-   <td> 包含在“email”、“facebook”、“twitter”、“delicious”、“digg”、“google”、“linkedin”中的URL类别数<br />所有URL类别等于“email”、“facebook”、“twitter”、“delicious”、“digg”、“google”或“linkedin”的@totalClicks数。<br /> </td> 
+   <td> 包含在“email”、“facebook”、“twitter”、“delicious”、“digg”、“google”、“linkedin”中的URL类别的@totalClicks数<br />，其URL类别等于“email”、“facebook”、“twitter”、“delicious”、“digg”、“google”或“linkedin”。<br /> </td> 
    <td> count (Iif([url/@category] IN (email' ， 'facebook' ， 'twitter' ， 'delicious' ， 'digg' ， 'google' ， 'linkedin')， @totalClicks， 0))<br /> </td> 
   </tr> 
  </tbody> 
@@ -649,13 +649,13 @@ ht-degree: 3%
    <td> Sum(iIf([url/@category]='email'，@totalClicks，0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> facebook<br /> </td> 
+   <td> Facebook<br /> </td> 
    <td> @facebook<br /> </td> 
    <td> URL类别等于“facebook”的所有@totalClicks的总和。<br /> </td> 
    <td> Sum(iIf([url/@category]='facebook'，@totalClicks，0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> twitter<br /> </td> 
+   <td> Twitter<br /> </td> 
    <td> @twitter<br /> </td> 
    <td> URL类别等于“twitter”的所有@totalClicks的总和。<br /> </td> 
    <td> Sum(iIf([url/@category]='twitter'，@totalClicks，0))<br /> </td> 

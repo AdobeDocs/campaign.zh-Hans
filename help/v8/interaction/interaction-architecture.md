@@ -22,7 +22,7 @@ ht-degree: 0%
 
   类别也可以在在线环境中手动发布。
 
-  此部分[&#128279;](interaction-offer.md#approve-offers)中详细介绍了批准优惠的过程。
+  此部分](interaction-offer.md#approve-offers)中详细介绍了[批准优惠的过程。
 
 * 一个&#x200B;**实时**&#x200B;环境，其中设计环境中的已批准选件以及在设计环境中配置的各种选件空间、过滤器、类别和规则都可以找到。 在调用优惠引擎期间，引擎将始终使用实时环境中的优惠。
 
@@ -78,13 +78,13 @@ Adobe Campaign交互模块提出了两种类型的交互：
 
 ### 包配置 {#packages-configuration}
 
-直接链接到&#x200B;**交互**&#x200B;的任何架构扩展（优惠、建议、收件人等） 必须在执行实例上部署。
+必须在执行实例上部署直接链接到&#x200B;**交互**&#x200B;的任何架构扩展（选件、建议、收件人等）。
 
 **交互**&#x200B;程序包已安装在所有实例（控制和执行）上。 提供了两个其他包：一个包用于控制实例，另一个用于每个执行实例。
 
 >[!NOTE]
 >
->在安装包时，**nms：proposition**&#x200B;表的&#x200B;**long**&#x200B;类型字段（如建议ID）将变为&#x200B;**int64**&#x200B;类型字段。 [Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html?lang=zh-Hans#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}中详细介绍了此类型的数据。
+>在安装包时，**nms：proposition**&#x200B;表的&#x200B;**long**&#x200B;类型字段（如建议ID）将变为&#x200B;**int64**&#x200B;类型字段。 [Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}中详细介绍了此类数据。
 
 在每个实例上配置数据保留持续时间（通过部署向导中的&#x200B;**[!UICONTROL Data purge]**&#x200B;窗口）。 在执行实例上，此期间必须对应于要计算的分类规则（滑动期间）和资格规则所需的历史深度。
 

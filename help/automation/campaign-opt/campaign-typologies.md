@@ -79,11 +79,11 @@ Campaign Optimization加载项提供另外两种类型的&#x200B;**类型规则*
 
 此视频介绍如何在Adobe Campaign中利用类型规则实施疲劳管理。
 
->[!VIDEO](https://video.tv.adobe.com/v/3448341?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/333787?quality=12)
 
 ### 使用预定义过滤器设置疲劳管理
 
-疲劳管理控制消息传送的频度和数量，以避免过度招徕收件人。如果您的活动实例中没有活动优化模块，则可以配置一个预定义过滤器，以收到的消息数过滤目标群体
+疲劳管理控制消息传送的频率和数量，以避免过度招徕收件人。如果您的活动实例中没有活动优化模块，则可以配置一个预定义过滤器，以收到的消息数过滤目标群体
 此视频介绍如何使用过滤器在Adobe Campaign中实施疲劳管理。
 
->[!VIDEO](https://video.tv.adobe.com/v/3444610?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/333778?quality=12)

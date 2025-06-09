@@ -5,13 +5,13 @@ feature: SMS
 role: User
 level: Intermediate
 badge: label="有限发布版" type="Informative"
-source-git-commit: dde669980493b996c80baacc8726db87353585ad
+exl-id: eda6934a-e48a-4932-8c88-588f661005d6
+source-git-commit: 30babc4bec802f61d3bd28a7ebcf0c15e22b2284
 workflow-type: tm+mt
 source-wordcount: '4439'
 ht-degree: 0%
 
 ---
-
 
 # 验证SMPP连接 {#validate-smpp-connection}
 
@@ -179,7 +179,7 @@ SMS连接器涉及3个实体：SMPP提供商、Adobe和您。
 
 如果提供程序支持同一登录/密码组合使用多个短代码，则必须询问他们将短代码放在BIND PDU中的什么位置。 请注意，此信息必须放在BIND PDU中，而不是SUBMIT_SM中，因为BIND PDU是唯一允许正确路由MO的位置。
 
-请参阅上面各种PDU [&#128279;](#pdu)部分中的信息，了解BIND PDU中哪些字段可用，通常您会将短代码放在&#x200B;*address_range*&#x200B;中，但这需要提供者的特殊支持。 联系他们，了解他们希望如何独立路由多个短代码。
+请参阅上面各种PDU ](#pdu)部分中的[信息，了解BIND PDU中哪些字段可用，通常您会将短代码放在&#x200B;*address_range*&#x200B;中，但这需要提供者的特殊支持。 联系他们，了解他们希望如何独立路由多个短代码。
 
 Adobe Campaign支持在同一外部帐户上处理多个短代码，因此通常只需一个帐户处理所有流量即可正常使用。
 

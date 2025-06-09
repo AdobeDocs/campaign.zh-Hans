@@ -71,7 +71,7 @@ ht-degree: 17%
    * 选择&#x200B;**投放**&#x200B;内容类型。
    * 启用&#x200B;**[!UICONTROL Visible in the customization menus]**&#x200B;选项，以便通过个性化字段插入图标访问此块。
    * 如有必要，请启用&#x200B;**[!UICONTROL The content of the personalization block depends upon the format]**&#x200B;选项，为HTML和文本电子邮件定义两个不同的块。
-   * 输入内容(在HTML、文本、JavaScript等) 个性化块的，然后单击&#x200B;**[!UICONTROL Save]**。
+   * 输入个性化块的内容(在HTML、文本、JavaScript等)并单击&#x200B;**[!UICONTROL Save]**。
 
 保存后，投放编辑器中即可使用新的个性化块。
 
@@ -79,4 +79,4 @@ ht-degree: 17%
 
 请在以下视频中了解如何创建动态内容块以及如何使用动态内容块将电子邮件投放内容个性化。
 
->[!VIDEO](https://video.tv.adobe.com/v/3449016?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)

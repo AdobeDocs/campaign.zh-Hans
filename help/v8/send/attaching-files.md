@@ -5,7 +5,8 @@ description: 附加文件
 feature: Email
 role: User
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+exl-id: 27d13642-2971-466b-818d-39328c198b14
+source-git-commit: 3d562aab2f19b84aad8b484768bf19648145feb3
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 2%
@@ -20,7 +21,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->为了避免出现性能问题，建议每封电子邮件不要包含多个附件。 可以从Campaign选项列表中配置建议的阈值。 请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=zh-Hans#delivery)。
+>为了避免出现性能问题，建议每封电子邮件不要包含多个附件。 可以从Campaign选项列表中配置建议的阈值。 请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery)。
 
 可能存在两种情况：
 
@@ -37,7 +38,7 @@ ht-degree: 2%
 
 Adobe还建议限制附加文件的大小和数量。 默认情况下，您只能将一个文件作为附件添加到电子邮件中。 可通过`NmsDelivery_MaxRecommendedAttachments`选项配置此阈值。
 
-在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=zh-Hans#delivery)的Campaign选项列表中了解详情。
+在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery)的Campaign选项列表中了解详情。
 
 ## 附加本地文件 {#attaching-a-local-file}
 

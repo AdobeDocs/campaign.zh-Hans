@@ -8,13 +8,13 @@ exl-id: 50c254ba-cc33-49b2-b7d5-12aa69883c07
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
 source-wordcount: '250'
-ht-degree: 84%
+ht-degree: 77%
 
 ---
 
 # 产品护栏{#guardrails}
 
-[Adobe Campaign Managed Cloud Services 产品描述页面](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}列出了授权、产品限制和性能护栏。
+[Adobe Campaign Managed Cloud Services产品说明页面](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}列出了授权、产品限制和性能护栏。
 
 下文中介绍了使用 [!DNL Adobe Campaign] 时的额外护栏和限制。
 

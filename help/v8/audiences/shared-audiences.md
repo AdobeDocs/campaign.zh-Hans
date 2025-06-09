@@ -34,7 +34,7 @@ ht-degree: 73%
   >
   > “声明的 ID”数据源还可以与 People 核心服务集成一起使用。
   >
-  >如果您使用People核心服务集成，并想要添加Audience Manager集成，则需要Adobe Audience Manager顾问的帮助，以避免在Adobe Audience Manager上下文中转换为使用此声明的ID数据源时收集的所有ID同步丢失。
+  >如果您使用People核心服务集成，并且想要添加Audience Manager集成，则需要Adobe Audience Manager顾问的帮助，以避免在Adobe Audience Manager上下文中转换为使用此声明的ID数据源时收集的所有ID同步丢失。
 
 请参阅：
 

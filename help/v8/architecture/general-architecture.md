@@ -48,7 +48,7 @@ Adobe Campaign是一个使用不同应用程序的平台，用于创建开放且
 
 主要流程为：
 
-* **应用程序服务器** (nlserver web) — 此进程通过Web服务API (SOAP / HTTP + XML)公开所有Adobe Campaign功能。 此外，它可以动态生成用于基于HTML的访问（报表、Web窗体等）的网页。 为实现此目的，此过程包括一个Apache Tomcat JSP服务器。 这是Console连接的进程。
+* **应用程序服务器** (nlserver web) — 此进程通过Web服务API (SOAP / HTTP + XML)公开所有Adobe Campaign功能。 此外，它可以动态生成用于基于HTML的访问的网页（报表、Web窗体等）。 为实现此目的，此过程包括一个Apache Tomcat JSP服务器。 这是Console连接的进程。
 
 * **工作流引擎** (nlserver wfserver) — 此进程执行应用程序中定义的工作流进程。 它还处理定期执行的技术工作流，包括：
 
@@ -60,11 +60,11 @@ Adobe Campaign是一个使用不同应用程序的平台，用于创建开放且
 
 * **重定向服务器** (nlserver webmdl) — 对于电子邮件，Adobe Campaign会自动处理打开和点击跟踪（还可能在网站级别进行事务跟踪）。 要实现此目的，将重写电子邮件中纳入的URL，以便指向此模块，该模块会注册Internet用户的传递，然后再将用户重定向到所需的URL。
 
-  为了保证最高可用性，此过程完全独立于数据库：其他服务器进程仅使用SOAP调用(HTTP、HTTP(S)和XML)与其通信。 从技术上讲，此功能是在HTTP服务器的扩展模块（IIS中的ISAPI扩展或DSO Apache模块等）中实现的 和仅在Windows中可用。
+  为了保证最高可用性，此过程完全独立于数据库：其他服务器进程仅使用SOAP调用(HTTP、HTTP(S)和XML)与其通信。 从技术上讲，此功能是在HTTP服务器的扩展模块（IIS中的ISAPI扩展或DSO Apache模块等）中实现的，并且仅在Windows中可用。
 
 其他更技术性的流程也可使用：
 
-* **管理退回电子邮件** (nlserver inMail) — 此进程允许您从配置为接收退回邮件的邮箱自动提取电子邮件，这些邮件在投放失败时返回。 然后，这些邮件将进行基于规则的处理，以确定未投放的原因（未知收件人、超出配额等） 和更新数据库中的投放状态。 所有这些操作都是完全自动且已预配置的。
+* **管理退回电子邮件** (nlserver inMail) — 此进程允许您从配置为接收退回邮件的邮箱自动提取电子邮件，这些邮件在投放失败时返回。 然后，这些消息将进行基于规则的处理，以确定未投放的原因（未知收件人、超出配额等）并更新数据库中的投放状态。 所有这些操作都是完全自动且已预配置的。
 
 * **SMS投放状态** (nlserver sms) — 此进程轮询SMS路由器以收集进度状态并更新数据库。
 
@@ -81,7 +81,7 @@ Adobe Campaign是一个使用不同应用程序的平台，用于创建开放且
 
 ## 数据库容器 {#db-containers}
 
-在其[企业(FFDA)部署](enterprise-deployment.md)中，Adobe Campaign Cloud数据库依赖于[!DNL Snowflake]，其中包含功能数据（用户档案、订阅、内容等）、技术数据（投放作业和日志、跟踪日志等） 和解决方案的工作数据（购买、商机），以及所有Adobe Campaign组件与数据库通信以执行其特定任务。
+在其[企业(FFDA)部署](enterprise-deployment.md)中，Adobe Campaign Cloud数据库依赖于[!DNL Snowflake]，其中包含解决方案的功能数据（用户档案、订阅、内容等）、技术数据（投放作业和日志、跟踪日志等）和工作数据（购买、商机），并且所有Adobe Campaign组件都与数据库通信以执行其特定任务。
 
 您可以使用预定义的数据库和架构部署Adobe Campaign，如果需要，可以扩展此预定义的环境。 Adobe Campaign通过SQL调用访问数据集市中的所有数据。 Adobe Campaign还提供了提取转换和加载(ETL)工具的完整补充，用于执行数据导入和导出到系统中的数据。
 
@@ -90,7 +90,7 @@ Adobe Campaign是一个使用不同应用程序的平台，用于创建开放且
 
 >[!CAUTION]
 >
->通过使用 **Campaign 托管云服务**，您的环境和初始配置已由 Adobe 根据您的许可协议条款进行了设置。您不可修改已安装的内置软件包、内置模式或报告。
+>通过使用 **Campaign 托管云服务**，您的环境和初始配置已由 Adobe 根据您的许可协议条款进行了设置。您不可修改已安装的内置软件包、内置架构或报告。
 >
 >如果您需要使用 Campaign 加载项或尚未为您配置的特定功能，那么您必须联系 **Adobe 客户关怀**&#x200B;团队。
 
@@ -98,4 +98,4 @@ Adobe Campaign是一个使用不同应用程序的平台，用于创建开放且
 
 总存储容量在主数据库和（可选）Snowflake辅助数据库之间拆分。 存储数据的位置应在实施或升级时确定，具体取决于客户特定的用例。
 
-请参阅[Campaign控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html?lang=zh-Hans){target="_blank"}以了解如何监测数据库使用情况。
+请参阅[Campaign控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html){target="_blank"}以了解如何监测数据库使用情况。

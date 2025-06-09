@@ -28,7 +28,7 @@ Android Firebase Cloud Messaging (FCM)服务的一些重要更改将于2024年�
 
 >[!TAB Identity Management System (IMS)]
 
-从Campaign v8.6开始，改进了Campaign v8的身份验证过程。 所有操作员将仅使用AdobeIdentity Management System (IMS)连接到Campaign
+从Campaign v8.6开始，改进了Campaign v8的身份验证过程。 所有操作员将仅使用Adobe Identity Management System (IMS)连接到Campaign
 
 [![图像](../v8/assets/do-not-localize/learn-more-button.svg)](upgrades/migrate-users-to-ims.md)
 
@@ -51,14 +51,14 @@ Android Firebase Cloud Messaging (FCM)服务的一些重要更改将于2024年�
     <td>
       <img src="../v8/assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>发送消息</strong><br/><a href="../v8/start/create-message.md">入门</a> - <a href="../v8/send/preview-and-proof.md">预览和验证</a> - <a href="../v8/send/predictive.md">发送时间优化</a> - <a href="../v8/reporting/gs-reporting.md">报告与分析</a>
+      <strong>发送消息</strong><br/><a href="../v8/start/create-message.md">入门</a> - <a href="../v8/send/preview-and-proof.md">预览和校样</a> - <a href="../v8/send/predictive.md">发送时间优化</a> - <a href="../v8/reporting/gs-reporting.md">报告与分析</a>
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
       <img src="../v8/assets/do-not-localize/icon_profile-audience.svg" width="35px">
     <br/>
-      <strong>用户档案和受众</strong><br/><a href="../v8/audiences/create-profiles.md">添加用户档案</a> - <a href="../v8/audiences/create-audiences.md">创建受众</a> - <a href="../v8/start/subscriptions.md">管理订阅</a> - <a href="../v8/start/privacy.md">隐私</a>
+      <strong>轮廓和受众</strong><br/><a href="../v8/audiences/create-profiles.md">添加轮廓</a> - <a href="../v8/audiences/create-audiences.md">创建受众</a> - <a href="../v8/start/subscriptions.md">管理订阅</a> - <a href="../v8/start/privacy.md">隐私</a>
     </td>
     <td>
       <img src="../v8/assets/do-not-localize/icon-configure.svg" width="35px">
@@ -68,12 +68,12 @@ Android Firebase Cloud Messaging (FCM)服务的一些重要更改将于2024年�
     <td>
       <img src="../v8/assets/do-not-localize/icon-dev.svg" width="35px">
     <br/>
-      <strong>开发人员资源</strong><br/><a href="../v8/dev/datamodel.md">Campaign v8 数据模型</a> - <a href="../v8/dev/schemas.md">模式</a> - <a href="../v8/dev/api.md">API</a>
+      <strong>开发人员资源</strong><br/><a href="../v8/dev/datamodel.md">Campaign v8 数据模型</a> - <a href="../v8/dev/schemas.md">架构</a> - <a href="../v8/dev/api.md">API</a>
     </td>
   </tr>
 </table>
 
 ## 其他资源
 
-[Adobe Campaign v8产品说明](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Adobe Campaign Web用户界面文档](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=zh-Hans){target="_blank"} - [Tutorials](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=zh-Hans){target="_blank"} - [[!DNL Adobe Campaign] 自动化指南](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=zh-Hans){target="_blank"} - [Campaign v8控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans){target="_blank"}
+[Adobe Campaign v8产品说明](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Adobe Campaign Web用户界面文档](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=zh-Hans){target="_blank"} - [教程](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=zh-Hans){target="_blank"} - [[!DNL Adobe Campaign] 自动化指南](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=zh-Hans){target="_blank"} - [Campaign v8控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans){target="_blank"}
 

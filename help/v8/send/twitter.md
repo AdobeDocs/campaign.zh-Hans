@@ -1,20 +1,20 @@
 ---
-title: 使用Adobe Campaign在X(Twitter)上发布消息
-description: 了解如何使用Adobe Campaign社交营销模块在X(以前称为Twitter)上发布消息并向关注者发送直邮
+title: 使用Adobe Campaign在X (Twitter)上发布消息
+description: 了解如何使用Adobe Campaign社交营销模块在X（以前称为Twitter）上发布消息并向关注者发送直邮
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
 source-git-commit: f463c5747b844544ba561a63e4cb0359c0c258c8
 workflow-type: tm+mt
 source-wordcount: '785'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
 
-# 使用Adobe Campaign在X(Twitter)上发布消息 {#post-tw-messages}
+# 使用Adobe Campaign在X (Twitter)上发布消息 {#post-tw-messages}
 
-Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X(以前称为Twitter)与客户和潜在客户进行交互。
+Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X（以前称为Twitter）与客户和潜在客户进行交互。
 
 配置集成后，您可以：
 
@@ -80,7 +80,7 @@ Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X(�
    1. 单击&#x200B;**[!UICONTROL Test personalization]**&#x200B;下拉菜单并选择&#x200B;**[!UICONTROL Service]**。
    1. 在&#x200B;**[!UICONTROL Folder]**&#x200B;字段中，选择包含您的X帐户的服务文件夹。
 
-1. 发送验证
+1. 发送校样
 
    在发布推文之前，请确保通过发送出版物的证明来验证推文：然后，您可以在专用X测试页面上获得出版物的精确呈现版本。
 
@@ -136,7 +136,7 @@ Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X(�
    1. 单击&#x200B;**[!UICONTROL Test personalization]**&#x200B;下拉菜单并选择&#x200B;**[!UICONTROL Visitor Subscription]**。
    1. 选择要用于测试预览的X帐户。
 
-1. 发送验证
+1. 发送校样
 
    在发送邮件之前，请确保通过[向测试帐户发送校样来验证邮件](../send/preview-and-proof.md)：然后，你可以在私有X帐户上获得邮件的精确呈现并检查内容和个性化。
 
@@ -149,7 +149,7 @@ Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X(�
 
 >[!CAUTION]
 >
->您每天发送的私信不能超过250条。 要避免超过此阈值，您可以分批次发送。 有关详细信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=zh-Hans#sending-using-multiple-waves){target="_blank"}。
+>您每天发送的私信不能超过250条。 要避免超过此阈值，您可以分批次发送。 有关更多信息，请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#sending-using-multiple-waves){target="_blank"}。
 
 
 ## 访问跟踪数据 {#tw-tracking}
@@ -158,5 +158,5 @@ Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X(�
 
 可在投放报告以及投放和服务的&#x200B;**[!UICONTROL Edit > Tracking]**&#x200B;选项卡中查看跟踪数据。
 
-跟踪配置与电子邮件投放相同。 请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=zh-Hans){target="_blank"}以了解详情。
+跟踪配置与电子邮件投放相同。 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=zh-Hans){target="_blank"}以了解详情。
 

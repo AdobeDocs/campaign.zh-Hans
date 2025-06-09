@@ -16,9 +16,9 @@ ht-degree: 17%
 
 用户档案是存储在Campaign数据库中的联系人。
 
-在Adobe Campaign中，**收件人**&#x200B;是发送投放内容（电子邮件、短信等）所定位的默认用户档案。 通过存储在数据库中的收件人数据，您可以筛选将接收任何给定投放的目标，并在投放内容中添加个性化数据。 数据库中还有其他类型的用户档案。这些用户档案是针对不同用途而设计的。例如，种子用户档案用于在将投放内容发送给最终目标前测试该投放内容。
+在Adobe Campaign中，**收件人**&#x200B;是发送投放内容（电子邮件、短信等）所定位的默认用户档案。 通过存储在数据库中的收件人数据，您可以筛选将接收任何给定投放的目标，并在投放内容中添加个性化数据。 数据库中还有其他类型的轮廓。这些用户档案是针对不同用途而设计的。例如，种子轮廓用于在将投放内容发送给最终目标前测试该投放内容。
 
-在本节[&#128279;](../audiences/gs-audiences.md)中了解如何导入、更新和管理用户档案和受众。
+在本节](../audiences/gs-audiences.md)中了解如何导入、更新和管理用户档案和受众[。
 
 ## 创建列表{#create-lists}
 
@@ -39,19 +39,19 @@ ht-degree: 17%
 在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans){target="_blank"}中了解如何在营销活动工作流中构建受众。
 
 
-## 使用中的用户档案 {#active-profiles}
+## 使用中的轮廓 {#active-profiles}
 
 活动用户档案是客户在过去12个月内尝试通过任何渠道与之通信的用户档案。
 
-根据您的合同，您的每个 Campaign 实例都会配置特定数量的活动用户档案，并对这些活动用户档案进行计数以计费。请参阅您的最新合同，了解已购买的活动用户档案的数量。 在[Adobe Campaign产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}中了解详情。
+根据您的合同，您的每个 Campaign 实例都会配置特定数量的活动轮廓，并对这些活动轮廓进行计数以计费。请参阅您的最新合同，了解已购买的活动用户档案的数量。 在[Adobe Campaign产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}中了解详情。
 
-您可以直接从Campaign控制面板监控实例上的活动用户档案数。 有关详细信息，请参阅[控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=zh-Hans){target="_blank"}。
+您可以直接从Campaign控制面板监控实例上的活动用户档案数。 有关详细信息，请参阅[控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}。
 
 
 以下护栏和限制适用：
 
 * 被多次投放定向的用户档案只会被计数一次。
-* 在X(Twitter)的社交营销上下文中定位的用户档案不会计为活动用户档案。
+* 在X (Twitter)上的社交营销上下文中定位的用户档案不会计为活动用户档案。
 * 计数基于收件人主键。 因此，如果某个用户档案存在于两个不同的收件人表中，则它可能会被计算为活动用户档案两次。
 
 ## 隐私和同意{#privacy-and-consent}

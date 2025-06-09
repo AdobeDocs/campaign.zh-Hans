@@ -37,7 +37,7 @@ Adobe Campaign简化了个性化：您可以使用单个[消息模板](create-te
 
 * 创建&#x200B;**条件内容**
 
-  例如，配置条件内容以根据收件人的配置文件添加动态个性化内容。满足特定条件时可插入文本块和/或图像。[了解详情](conditions.md)。
+  例如，配置条件内容以根据收件人的轮廓添加动态个性化内容。满足特定条件时可插入文本块和/或图像。[了解详情](conditions.md)。
 
 <!--* Add **personalized offers**
     
@@ -70,4 +70,4 @@ Adobe Campaign简化了个性化：您可以使用单个[消息模板](create-te
 了解不同类型的动态内容，并了解如何创建个性化块和条件语句并将它们应用到投放中。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3452878?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/335734?quality=12)

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 验证短信后，您现在可以将其发送给受众。
 
-1. 单击&#x200B;**[!UICONTROL Send]**&#x200B;按钮。
+1. 单击&#x200B;**[!UICONTROL Send]**按钮。
 在打开的窗口中，选择适合您的正确操作。
 
    在以下示例中，我们选择&#x200B;**[!UICONTROL Deliver it as soon as possible]**，将显示&#x200B;**[!UICONTROL Analyze]**&#x200B;按钮。 我们单击该&#x200B;**[!UICONTROL Analyze]**&#x200B;按钮。

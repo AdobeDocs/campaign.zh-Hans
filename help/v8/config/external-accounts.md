@@ -8,7 +8,7 @@ exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
 source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
 workflow-type: tm+mt
 source-wordcount: '1049'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -44,7 +44,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
 **退回邮件**&#x200B;外部帐户指定要用于连接到电子邮件服务的外部POP3帐户。 所有配置为POP3访问的服务器都可以接收回邮。
 
-在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=zh-Hans){target="_blank"}中了解有关入站电子邮件的更多信息。
+在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}中了解有关入站电子邮件的更多信息。
 
 ![](assets/bounce_external_1.png)
 
@@ -68,7 +68,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
 >[!CAUTION]
 >
->在使用Microsoft OAuth 2.0配置POP3外部帐户之前，您首先需要在Azure门户中注册应用程序。 有关详细信息，请参阅此[页面](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}。
+>在使用Microsoft OAuth 2.0配置POP3外部帐户之前，您首先需要在Azure门户中注册应用程序。 有关详细信息，请参见此 [ 页面](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}。
 >
 
 要使用Microsoft OAuth 2.0配置POP3外部连接，请选中&#x200B;**[!UICONTROL Microsoft OAuth 2.0]**&#x200B;选项并填写以下字段：
@@ -118,7 +118,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
 ## 传输数据外部帐户 {#transfer-data-external-accounts}
 
-这些外部帐户可用于通过&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动将数据导入或导出到Adobe Campaign。 在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=zh-Hans){target="_blank"}中了解有关工作流中&#x200B;**文件传输**&#x200B;的更多信息。
+这些外部帐户可用于通过&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动将数据导入或导出到Adobe Campaign。 在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}中了解有关工作流中&#x200B;**文件传输**&#x200B;的更多信息。
 
 * **FTP和SFTP** - **FTP**&#x200B;外部帐户允许您配置和测试对Adobe Campaign外部服务器的访问。 要与外部系统（如用于文件传输的SFTP或FTP服务器898）建立连接，您可以创建自己的外部帐户。
 
@@ -126,7 +126,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
   >[!NOTE]
   >
-  >从版本8.5开始，您现在可以在配置SFTP外部帐户时使用私钥安全进行身份验证。 [了解有关密钥管理的更多信息](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html?lang=zh-Hans){target="_blank"}。
+  >从版本8.5开始，您现在可以在配置SFTP外部帐户时使用私钥安全进行身份验证。 [了解有关密钥管理的更多信息](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html){target="_blank"}。
 
 * **Amazon Simple Storage Service (S3)** - **AWS S3**&#x200B;连接器可用于通过&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动将数据导入或导出到Adobe Campaign。 在设置此新外部帐户时，您需要提供以下详细信息：
 
@@ -134,7 +134,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
    * **[!UICONTROL AWS access key ID]**：请参阅[AWS文档](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}以了解如何查找您的Amazon访问密钥ID。
 
-   * **[!UICONTROL Secret access key to AWS]**：请参阅[AWS文档](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/){target="_blank"}以了解如何查找您的Amazon访问密钥。
+   * **[!UICONTROL Secret access key to AWS]**：请参阅[Amazon文档](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/){target="_blank"}以了解如何查找您的AWS访问密钥。
 
    * **[!UICONTROL AWS Region]**：在[AWS文档](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/){target="_blank"}中了解有关Amazon地区的更多信息。
 

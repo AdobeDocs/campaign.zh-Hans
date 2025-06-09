@@ -6,9 +6,9 @@ role: User
 level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
 source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1148'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 100%
 在本节中，您将学习如何根据公司的要求调整 Adobe Campaign。请遵循以下准则来安排和组织实施。
 
 1. **定义设置**：授予访问权限、共享客户端控制台、配置渠道（电子邮件、推送、短信）。[了解详情](#implementation-ac-settings)
-1. **准备环境**：导入用户档案、创建受众、设计工作流和活动模板、创建类型规则。[了解详情](#implementation-prepare-your-env)
-1. **自定义实例**：创建新数据字段，添加表格/模式。[了解详情](#implementation-custom-your-instance)
+1. **准备环境**：导入轮廓、创建受众、设计工作流和活动模板、创建类型规则。[了解详情](#implementation-prepare-your-env)
+1. **自定义实例**：创建新数据字段，添加表格/架构。[了解详情](#implementation-custom-your-instance)
 1. **自动化您的流程**：配置 Adobe Campaign 自动化功能。[了解详情](#implementation-automation)
 1. **扩展部署**：连接到 Adobe 解决方案、其他产品和系统 - 连接器、多解决方案设置。[了解详情](#implementation-extend)
 
 >[!CAUTION]
 >
->通过使用 **Campaign Managed Cloud Services**，您的环境和初始配置会由 Adobe 根据您的许可协议条款进行设置。您不可修改已安装的内置软件包、内置模式或报告。
+>通过使用 **Campaign Managed Cloud Services**，您的环境和初始配置会由 Adobe 根据您的许可协议条款进行设置。您不可修改已安装的内置软件包、内置架构或报告。
 >
 >如果您需要使用 Campaign 加载项或尚未为您配置的特定功能，则需联系 **Adobe 过渡经理**。
 
@@ -42,7 +42,7 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
 * **用户同意和数据保留**：您必须获得用户同意、设置双重选择加入订阅机制、改善选择退出功能并配置数据保留。
 
-  请参阅 [Campaign Classic v7 隐私文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans#consent){target="_blank"}以了解详情
+  请参阅[Campaign Classic v7隐私文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans#consent){target="_blank"}以了解详情
 
 * **隐私和数据保护法规**：请参阅[此部分](privacy.md)，了解有关隐私要求的信息以及这些法规对贵组织和 Adobe Campaign 有何影响。
 
@@ -68,11 +68,11 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
 在开始发送消息和创建营销活动之前，您需要：
 
-1. **导入用户档案和创建受众**
+1. **导入轮廓和创建受众**
 
-   Campaign 可帮助您将联系人添加到云数据库。您可以加载文件、计划和自动更新多个联系人，在网站上收集数据，或直接在收件人表格中输入用户档案信息。
+   Campaign 可帮助您将联系人添加到云数据库。您可以加载文件、计划和自动更新多个联系人，在网站上收集数据，或直接在收件人表格中输入轮廓信息。
 
-   [了解如何导入用户档案](import.md)。
+   [了解如何导入轮廓](import.md)。
 
    受众将分组到列表中，并可通过工作流创建。然后可以在跨渠道投放中对其进行定位。
 
@@ -83,18 +83,18 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
    活动、投放、任务或工作流都以存储着关键设置和功能的模板为基础。我们为每个组件提供了一个内置模板，但尚未为它们定义具体配置。您需要配置和调整模板以满足您的需求，并向最终用户提供这些模板。
 
 
-   要了解如何使用活动模板，请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html?lang=zh-Hans){target="_blank"}。
+   请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-templates.html?lang=zh-Hans){target="_blank"}以了解如何使用营销活动模板。
 
-   要了解如何配置工作流模板，请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target="_blank"}。
+   了解如何在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target="_blank"}中配置工作流模板。
 
-   要了解有关电子邮件模板的更多信息，请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=zh-Hans){target="_blank"}。
+   请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=zh-Hans){target="_blank"}以了解有关电子邮件模板的更多信息。
 
 
 1. **配置类型规则**
 
    利用 Campaign 类型规则来筛选、控制和监测投放发送。例如，疲劳规则可控制消息传递的频率和数量，以避免对收件人过度宣传。实施后，类型规则就会在投放中引用。
 
-   要了解有关分类和疲劳管理的更多信息，请参阅[此部分](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=zh-Hans){target="_blank"}。
+   请参阅[此部分](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=zh-Hans){target="_blank"}以了解有关分类和疲劳管理的更多信息。
 
 1. **熟悉 Campaign 内置数据模型**
 
@@ -106,13 +106,13 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
 您可以自定义许多不同的 Campaign 区域和功能。我们的大多数客户都会自定义三项内容：
 
-1. **表格和模式**
+1. **表格和架构**
 
-   Adobe Campaign 提供用来识别数据的常用模式，例如：收件人、投放日志、订阅等。
+   Adobe Campaign 提供用来识别数据的常用架构，例如：收件人、投放日志、订阅等。
 
    请参阅本部分详细了解[营销活动内置数据模型](../dev/datamodel.md)。
 
-   您可以扩展现有模式或从头开始创建新模式。请参阅[此页面](../dev/customize.md)以了解详情。
+   您可以扩展现有架构或从头开始创建新架构。请参阅[此页面](../dev/customize.md)以了解详情。
 
 1. **仪表板和列表**
 

@@ -14,12 +14,12 @@ ht-degree: 4%
 
 # 用例
 
-通过Campaign Classic v7文档中提供的以下分步使用案例来利用Campaign交互功能：
+通过Campaign Classic v7文档中提供的这些分步使用案例，利用Campaign的交互功能：
 
-[创建并应用演示规则](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/presentation-rules.html?lang=zh-Hans){target="_blank"}
+[创建并应用演示规则](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/presentation-rules.html){target="_blank"}
 
-[发送电子邮件选件投放](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html?lang=zh-Hans){target="_blank"}
+[发送电子邮件选件投放](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html){target="_blank"}
 
-[向匿名访客提供优惠](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html?lang=zh-Hans){target="_blank"}
+[向匿名访客提供优惠](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html){target="_blank"}
 
-[执行优惠模拟](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html?lang=zh-Hans){target="_blank"}
+[执行优惠模拟](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/case-study/offers-on-an-outbound-channel.html){target="_blank"}

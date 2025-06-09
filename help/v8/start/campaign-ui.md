@@ -28,17 +28,17 @@ ht-degree: 8%
 
   >[!AVAILABILITY]
   >
-  >Campaign Web用户界面仅适用于通过Adobe ID连接到Adobe Campaign的用户。 了解有关[AdobeIdentity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}的更多信息。
+  >Campaign Web用户界面仅适用于通过Adobe ID连接到Adobe Campaign的用户。 了解有关[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}的更多信息。
   >
 
-* **Web访问** - Adobe Campaign Web访问功能允许您使用HTML用户界面通过Web浏览器访问Campaign功能的子集。 使用此Web界面可访问报告、控制和验证消息、访问监控功能板等。  在本节[&#128279;](../start/connect.md#web-access)中了解有关Campaign Web Access 的更多信息。
+* **Web访问** - Adobe Campaign Web访问功能允许您使用HTML用户界面通过Web浏览器访问Campaign功能的子集。 使用此Web界面可访问报告、控制和验证消息、访问监控功能板等。  在本节](../start/connect.md#web-access)中了解有关Campaign Web Access [的更多信息。
 
-* **API** — 为了解决更多用例，可以使用通过SOAP协议公开的Web服务API从外部应用程序调用系统。 在此页面[&#128279;](../dev/api.md)中了解有关Campaign API 的更多信息。
+* **API** — 为了解决更多用例，可以使用通过SOAP协议公开的Web服务API从外部应用程序调用系统。 在此页面](../dev/api.md)中了解有关Campaign API [的更多信息。
 
 
 ## 使用客户端控制台 {#ui-access}
 
-Campaign客户端控制台是一个本机应用程序，它通过标准Internet协议(如SOAP和HTTP)与Adobe Campaign应用程序服务器进行通信。 Campaign客户端控制台集中了所有功能和设置，并且由于依赖本地缓存，因此需要的带宽最少。 Campaign客户端控制台专为轻松部署而设计，可从互联网浏览器部署并自动更新，无需任何特定的网络配置，因为它只生成HTTP(S)流量。  [了解有关Campaign客户端控制台的更多信息](../start/connect.md)。 您可以从客户端控制台主页的专用卡切换到Campaign Web用户界面。
+Campaign客户端控制台是一个本机应用程序，它通过标准互联网协议(如SOAP和HTTP)与Adobe Campaign应用程序服务器进行通信。 Campaign客户端控制台集中了所有功能和设置，并且由于依赖本地缓存，因此需要的带宽最少。 Campaign客户端控制台专为轻松部署而设计，可从互联网浏览器部署并自动更新，无需任何特定的网络配置，因为它只生成HTTP(S)流量。  [了解有关Campaign客户端控制台的更多信息](../start/connect.md)。 您可以从客户端控制台主页的专用卡切换到Campaign Web用户界面。
 
 ![](assets/web-ui.png)
 
@@ -114,12 +114,12 @@ The web access interface is similar to the console interface. From a browser, yo
 
 >[!AVAILABILITY]
 >
->Campaign Web用户界面仅适用于通过Adobe ID连接到Adobe Campaign的用户。 了解有关[AdobeIdentity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}的更多信息。
+>Campaign Web用户界面仅适用于通过Adobe ID连接到Adobe Campaign的用户。 了解有关[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}的更多信息。
 >
 
-在[本文档](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=zh-Hans){target="_blank"}中进一步了解新的Campaign Web用户界面。 您还可以访问Campaign Web用户界面文档中的[常见问题解答页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/faq){target="_blank"}。
+在[本文档](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=zh-Hans){target="_blank"}中进一步了解新的Campaign Web用户界面。 您还可以访问Campaign Web用户界面文档中的[常见问题解答页面](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/faq){target="_blank"}。
 
-其他高级功能、配置和设置仅在客户端控制台中可用。 在Campaign Web用户界面文档[&#128279;](https://experienceleague.adobe.com/docs/campaign-web/v8/start/capability-matrix.html?lang=zh-Hans){target="_blank"}中了解有关两种用户界面中可用功能的更多信息。
+其他高级功能、配置和设置仅在客户端控制台中可用。 在Campaign Web用户界面文档](https://experienceleague.adobe.com/docs/campaign-web/v8/start/capability-matrix.html?lang=zh-Hans){target="_blank"}中了解有关两种用户界面[中可用功能的更多信息。
 
 
 ## 支持的语言 {#languages}
@@ -139,7 +139,7 @@ The web access interface is similar to the console interface. From a browser, yo
   >
   >语言在安装过程中选择，此后无法更改。
 
-* 有关Campaign Web用户界面支持的语言，[请参阅此页面](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=zh-Hans#language-pref){target="_blank"}。
+* 有关Campaign Web用户界面支持的语言，[请参阅此页面](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html#language-pref){target="_blank"}。
 
 
 语言会影响日期和时间格式。

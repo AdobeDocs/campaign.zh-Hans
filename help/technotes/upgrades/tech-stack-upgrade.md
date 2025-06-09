@@ -16,9 +16,9 @@ ht-degree: 9%
 
 Campaign基础架构依赖于第三方系统，这些系统必须定期使用最新版本和修复进行更新。 必须执行这些更新，以确保服务的连续性，并确保Campaign环境免受安全风险的影响。 此外，需要升级Campaign，以确保与第三方系统更改兼容。
 
-作为&#x200B;**托管Cloud Service客户**，Adobe会在需要这些升级时通知您。 需要根据建议升级您的环境以确保法规遵从性。
+作为&#x200B;**托管云服务客户**，Adobe会在需要升级时通知您。 需要根据建议升级您的环境以确保法规遵从性。
 
-出于安全原因，Adobe必须[安装最新的Campaign内部版本](#ac-upgrade)，然后升级[操作系统](#os-upgrade)和/或[关系数据库管理系统(RDBMS)](#pg-upgrade)。
+出于安全原因，Adobe必须[安装最新的Campaign内部版本](#ac-upgrade)，然后升级您的[操作系统](#os-upgrade)和/或[关系数据库管理系统(RDBMS)](#pg-upgrade)。
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Campaign基础架构依赖于第三方系统，这些系统必须定期使用最
 
 **如何更新？**
 
-作为托管Cloud Service客户，Adobe将与您联系并升级您的Campaign版本。
+作为托管云服务客户，Adobe将与您联系并升级您的Campaign版本。
 
 ## 操作系统升级 {#os-upgrade}
 
@@ -43,7 +43,7 @@ Campaign基础架构依赖于第三方系统，这些系统必须定期使用最
 
 **如何更新？**
 
-作为托管Cloud Service客户，Adobe将与您联系并升级您的环境。
+作为托管云服务客户，Adobe将与您联系并升级您的环境。
 
 ## 数据库系统升级 {#pg-upgrade}
 
@@ -53,4 +53,4 @@ Campaign基础架构依赖于第三方系统，这些系统必须定期使用最
 
 **如何更新？**
 
-作为托管Cloud Service客户，Adobe将与您联系，并将您的数据库系统从PostgreSQL 11升级到PostgreSQL 14。
+作为托管云服务客户，Adobe将与您联系，并将您的数据库系统从PostgreSQL 11升级到PostgreSQL 14。

@@ -18,7 +18,7 @@ ht-degree: 4%
 >
 >这些功能仅在线上可见，并且仅对&#x200B;**投放经理**&#x200B;可见。
 
-## 优惠建议历史{#offer-proposition-history}
+## 产品建议提议历史{#offer-proposition-history}
 
 提出优惠建议后，即可查看演示文稿历史记录。
 
@@ -34,7 +34,7 @@ ht-degree: 4%
 
   ![](assets/offer_space_prop_001_b.png)
 
-## 优惠分析报告{#offer-analysis-report}
+## 产品建议分析报告{#offer-analysis-report}
 
 **[!UICONTROL Offer analysis]**&#x200B;报告提供了已接受或已拒绝建议数量的概览。
 

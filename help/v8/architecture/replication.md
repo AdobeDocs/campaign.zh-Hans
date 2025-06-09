@@ -42,7 +42,7 @@ ht-degree: 2%
 
 Campaign v8依靠特定的技术工作流来管理计划的数据复制。 这些技术工作流可从Campaign Explorer的&#x200B;**[!UICONTROL Administration > Production > Technical workflows > Full FFDA Replication]**&#x200B;节点中获取。 **不能修改它们。**
 
-技术工作流在服务器上定期执行进程或作业。 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=zh-Hans){target="_blank"}中详细列出了技术工作流的完整列表。
+技术工作流在服务器上定期执行进程或作业。 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}中详细列出了技术工作流的完整列表。
 
 确保数据复制的技术工作流程如下所示：
 
@@ -115,6 +115,6 @@ var xml = xtk.builder.CopyXxlData(
 
 此视频介绍Adobe Campaign v8使用哪些数据库、为何复制数据、正在复制哪些数据以及复制过程的工作方式等关键概念。
 
->[!VIDEO](https://video.tv.adobe.com/v/3416863?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
 
-[此处](https://experienceleague.adobe.com/zh-hans/docs/campaign-learn/tutorials/overview)提供了其他Campaign v8客户端控制台教程。
+[此处](https://experienceleague.adobe.com/en/docs/campaign-learn/tutorials/overview)提供了其他Campaign v8客户端控制台教程。

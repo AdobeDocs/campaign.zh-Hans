@@ -12,7 +12,7 @@ ht-degree: 3%
 
 ---
 
-# 手动创建用户档案{#create-profiles-manual}
+# 手动创建轮廓{#create-profiles-manual}
 
 要填充Campaign数据库，您可以[导入用户档案](import-profiles.md)或手动添加用户档案，如下所述。
 

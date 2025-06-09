@@ -6,7 +6,7 @@ feature: Overview
 source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
 workflow-type: tm+mt
 source-wordcount: '444'
-ht-degree: 81%
+ht-degree: 78%
 
 ---
 
@@ -17,22 +17,22 @@ ht-degree: 81%
 + 使用工作流实现自动化 {#workflows}
    + 工作流入门 {#introduction}
       + [关于工作流](workflow/about-workflows.md)
-      + 工作流的类型{#wf-type}
+      + 工作流类型 {#wf-type}
          + [定位工作流](workflow/targeting-workflows.md)
          + [活动工作流](workflow/campaign-workflows.md)
          + [技术工作流](workflow/technical-workflows.md)
       + [构建工作流](workflow/build-a-workflow.md)
       + [最佳实践](workflow/workflow-best-practices.md)
       + [使用工作流数据](workflow/use-workflow-data.md)
-   + 执行工作流{#executing-a-workflow}
+   + 执行工作流 {#executing-a-workflow}
       + [开始工作流](workflow/start-a-workflow.md)
       + [工作流生命周期](workflow/workflow-life-cycle.md)
       + [设置审批](workflow/define-approvals.md)
-   + 监测工作流{#monitoring-workflows}
+   + 监测工作流 {#monitoring-workflows}
       + [监测工作流执行](workflow/monitor-workflow-execution.md)
       + [监测技术工作流](workflow/monitor-technical-workflows.md)
       + [工作流热图](workflow/heatmap.md)
-   + 工作流活动{#wf-activities}
+   + 工作流活动 {#wf-activities}
       + [活动入门](workflow/activities.md)
       + 定位活动 {#targeting-activities}
          + [定位活动列表](workflow/targeting-activities.md)
@@ -48,8 +48,8 @@ ht-degree: 81%
          + [增量查询](workflow/incremental-query.md)
          + [交集](workflow/intersection.md)
          + [列表更新](workflow/list-update.md)
-         + [单元格优惠](workflow/offers-by-cell.md)
-         + [优惠引擎](workflow/offer-engine.md)
+         + [单元格产品建议](workflow/offers-by-cell.md)
+         + [产品建议引擎](workflow/offer-engine.md)
          + [查询](workflow/query.md)
          + [读取列表](workflow/read-list.md)
          + [拆分](workflow/split.md)
@@ -102,7 +102,7 @@ ht-degree: 81%
          + [加载投放内容](workflow/load-delivery-content.md)
          + [跨渠道投放工作流](workflow/cross-channel-delivery-workflow.md)
          + [具有自定义日期字段的电子邮件扩充](workflow/email-enrichment-with-custom-date-fields.md)
-      + 监测 {#monitoring}
+      + 监控 {#monitoring}
          + [向列表发送报告](workflow/send-a-report-to-a-list.md)
          + [监督工作流](workflow/workflow-supervision.md)
          + [向操作员发送个性化提醒](workflow/send-alerts-to-operators.md)
@@ -115,7 +115,7 @@ ht-degree: 81%
          + [设置循环导入工作流](workflow/recurring-import-workflow.md)
       + 设计查询 {#designing-queries}
          + [使用增量查询每季度更新列表](workflow/quarterly-list-update.md)
-      + 查询和筛选{#designing-queries}
+      + 查询和筛选 {#designing-queries}
          + [查询收件人表](workflow/querying-recipient-table.md)
          + [查询投放信息](workflow/query-delivery-info.md)
          + [计算聚合](workflow/compute-aggregates.md)
@@ -124,7 +124,7 @@ ht-degree: 81%
          + [添加明细列表类型计算字段](workflow/adding-enumeration-type-calculated-field.md)
          + [创建筛选](workflow/create-a-filter.md)
          + [筛选重复的收件人](workflow/filter-duplicated-recipients.md)
-   + 高级设置{#advanced-management}
+   + 高级设置 {#advanced-management}
       + [工作流属性](workflow/workflow-properties.md)
       + [高级参数](workflow/advanced-parameters.md)
       + [JavaScript 脚本和模板](workflow/javascript-scripts-and-templates.md)
@@ -133,7 +133,7 @@ ht-degree: 81%
       + [管理权限](workflow/managing-rights.md)
       + [更改活动图像](workflow/change-activity-images.md)
       + [管理时区](workflow/managing-time-zones.md)
-+ 营销活动编排 {#campaign-orchestration}
++ 活动编排 {#campaign-orchestration}
    + [营销活动入门](campaigns/set-up-campaigns.md)
    + [创建项目和活动](campaigns/marketing-campaign-create.md)
    + [创建和配置模板](campaigns/marketing-campaign-templates.md)
@@ -144,7 +144,7 @@ ht-degree: 81%
    + [循环和定期活动](campaigns/recurring-periodic-campaigns.md)
    + [监测活动](campaigns/marketing-campaign-monitoring.md)
    + [供应商、库存和预算](campaigns/providers-stocks-and-budgets.md)
-+ 营销活动优化（加载项）{#campaign-optimization}
++ 活动优化（插件）{#campaign-optimization}
    + [营销活动类型入门](campaign-opt/campaign-typologies.md)
    + [筛选规则](campaign-opt/filtering-rules.md)
    + [控制规则](campaign-opt/control-rules.md)
@@ -158,7 +158,7 @@ ht-degree: 81%
    + [控制成本](mrm/controlling-costs.md)
    + [管理营销资源](mrm/managing-marketing-resources.md)
    + [论坛](mrm/discussion-forums.md)
-+ 分布式营销（附加组件） {#distributed-marketing}
++ 分布式营销（附加） {#distributed-marketing}
    + [分布式营销入门](distributed-marketing/about-distributed-marketing.md)
    + [创建本地活动](distributed-marketing/creating-a-local-campaign.md)
    + [创建协作活动](distributed-marketing/creating-a-collaborative-campaign.md)

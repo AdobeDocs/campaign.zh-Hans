@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->作为托管Cloud Service用户，[联系Adobe](../start/campaign-faq.md#support){target="_blank"}以在您的环境中配置Campaign事务性消息传递。
+>作为托管云服务用户，[联系Adobe](../start/campaign-faq.md#support){target="_blank"}以在您的环境中配置Campaign事务性消息传递。
 
 事务型消息用于发送：
 
@@ -43,7 +43,7 @@ Adobe Campaign允许您向将产品添加到购物车的客户发送通知电子
 1. [创建事件类型](#create-event-types)。
 1. [创建并设计消息模板](transactional-template.md#create-message-template)。 在此步骤中，必须将事件链接到消息。
 1. [测试邮件](transactional-template.md#test-message-template)。
-1. [Publish消息模板](transactional-template.md#publish-message-template)。
+1. [发布消息模板](transactional-template.md#publish-message-template)。
 
 设计和发布事务性消息模板后，如果触发了相应的事件，则会通过PushEvent和PushEvents [SOAP方法](../send/event-description.md)将相关数据发送到Campaign，并将投放发送到目标收件人。
 

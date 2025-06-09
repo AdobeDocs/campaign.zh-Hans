@@ -8,11 +8,11 @@ exl-id: 4dc2008d-681c-4a79-8fc8-c270c9224ab9
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
-# 创建优惠
+# 创建产品建议
 
 要创建选件，请执行以下步骤：
 
@@ -178,17 +178,17 @@ Creating hypotheses is detailed in [this page](../../campaign/using/about-respon
 
 -->
 
-## 批准和激活优惠{#approve-offers}
+## 批准和激活产品建议{#approve-offers}
 
 您现在可以批准并激活选件以使其在&#x200B;**实时**&#x200B;环境中可用。
 
-有关详细信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=zh-Hans#approving-offer-content){target="_blank"}。
+有关更多信息，请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html#approving-offer-content){target="_blank"}。
 
-## 管理优惠演示{#offer-presentation}
+## 管理产品建议演示{#offer-presentation}
 
 通过Campaign，您可以使用展示规则控制优惠建议的流程。 这些特定于营销活动交互的规则是&#x200B;**类型规则**。 它们允许您根据已对收件人作出的建议历史记录排除优惠。 它们会在环境中引用。
 
-有关详细信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html?lang=zh-Hans#managing-offers){target="_blank"}。
+有关更多信息，请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/managing-offer-presentation.html#managing-offers){target="_blank"}。
 
 ## 优惠模拟
 
@@ -196,4 +196,4 @@ Creating hypotheses is detailed in [this page](../../campaign/using/about-respon
 
 模拟会考虑先前应用于优惠的上下文和资格规则及其呈现规则。 这样，您就可以测试和优化各种版本的优惠建议，而无需实际使用优惠或过度/缺征询目标，因为模拟对目标收件人没有影响。
 
-有关选件模拟的详细信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html?lang=zh-Hans){target="_blank"}。
+有关选件模拟的详细信息，请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/simulating-offers/about-offers-simulation.html){target="_blank"}。

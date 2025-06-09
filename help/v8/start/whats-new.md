@@ -8,7 +8,7 @@ exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
 source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
 workflow-type: tm+mt
 source-wordcount: '1028'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -42,7 +42,7 @@ Adobe Campaign 提供了用于进行活动编排的简单易用的单个界面�
 
 全面了解客户的情况，以便快速创建企业级的个性化营销活动。
 
-Adobe Campaign 可帮助您根据在所有渠道中收集的数据构建客户档案。使用此用户档案，您可以跨渠道编排营销活动。通过连接所有营销渠道，您可以根据客户的具体需求对其所经过的不同历程进行自定义。
+Adobe Campaign 可帮助您根据在所有渠道中收集的数据构建客户轮廓。使用此轮廓，您可以跨渠道编排营销活动。通过连接所有营销渠道，您可以根据客户的具体需求对其所经过的不同历程进行自定义。
 
 [了解有关客户数据管理的更多信息](audiences.md)
 
@@ -50,14 +50,14 @@ Adobe Campaign 可帮助您根据在所有渠道中收集的数据构建客户�
 
 Adobe Campaign v8 为营销人员提供了同类最佳的功能，可用于跨渠道规划、启动和衡量营销活动。
 
-丰富多样的功能中包含集成式用户档案，可提供有关客户的单一视图。用于大规模构建营销活动受众的数据管理和分段功能。跨渠道工作流管理功能，用于实现多渠道和多波次营销活动的自动化。集成电子邮件，减少对成本高昂的 ESP 的依赖。用于了解客户行为和营销活动效果的报告和分析功能。
+丰富多样的功能中包含集成式轮廓，可提供有关客户的单一视图。用于大规模构建营销活动受众的数据管理和分段功能。跨渠道工作流管理功能，用于实现多渠道和多波次营销活动的自动化。集成电子邮件，减少对成本高昂的 ESP 的依赖。用于了解客户行为和营销活动效果的报告和分析功能。
 
 [了解关于营销活动管理的更多信息](campaigns.md)
 
 
 ### 连接至 Adobe Experience Platform {#connection-to-aep}
 
-Adobe Campaign v8 支持 Real-Time CDP 和 Adobe Experience Platform 的 Data Connectors，因此组织可以利用实时一致的客户档案。
+Adobe Campaign v8 支持 Real-Time CDP 和 Adobe Experience Platform 的 Data Connectors，因此组织可以利用实时一致的客户轮廓。
 
 此外，Adobe Campaign v8 与 Journey Orchestration 功能原生集成，因此营销人员可以在 Adobe Campaign 中重复使用相同的模板和投放功能，以便与客户实时互动。这些投资将可以优化 Adobe Campaign 客户体验并解锁新的用例，如向活动添加个性化实时客户旅程的能力。
 
@@ -72,7 +72,7 @@ Adobe Campaign v8 是一款托管式云服务，提供主动监督、及时发�
 
 托管服务方法使营销人员能够利用云基础架构的运营规模和经济性，而无需由内部 IT 资源提供大量支持。Adobe Consulting 和实施团队会与您一起评估营销计划、现有实践、数据要求和消息传送量，然后向您推荐最合适的服务、支持和可投放性包。然后，Adobe Campaign Managed Cloud Services 团队可以监测和报告营销活动效果、品牌声誉、客户体验指标等。
 
-[!BADGE PDF]{type=Informative}[阅读本白皮书](assets/do-not-localize/IDC-Report-BusinessValueOfAdobeCampaign.pdf){target="_blank"}以进一步了解 Adobe Campaign Managed Cloud Services 的业务价值。
+[!BADGE PDF]{type=Informative} [阅读此白皮书](assets/do-not-localize/IDC-Report-BusinessValueOfAdobeCampaign.pdf){target="_blank"}以了解有关Adobe Campaign Managed Cloud Services业务价值的更多信息。
 
 请注意，新的云架构使 Campaign 能够简化流程、降低成本、管理风险并提高数据安全性。您的 Campaign v8 环境附带为您预配置的专用虚拟私有云 (VPC)。
 
@@ -105,6 +105,6 @@ Adobe Campaign 现在可以利用云规模数据库技术显著提升其规模�
 
 ![](assets/subdomain1.png)
 
-[了解有关 Campaign 控制面板的更多信息](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans){target="_blank"}
+[了解有关促销活动控制面板的更多信息](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans){target="_blank"}
 
 

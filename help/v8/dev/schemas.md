@@ -1,6 +1,6 @@
 ---
 title: 使用Campaign模式
-description: 模式入门
+description: 架构入门
 feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
@@ -12,7 +12,7 @@ ht-degree: 5%
 
 ---
 
-# 使用模式{#gs-ac-schemas}
+# 使用架构{#gs-ac-schemas}
 
 应用中所承载数据的物理和逻辑结构以 XML 格式进行描述。它遵循Adobe Campaign特有的语法，称为&#x200B;**架构**。
 
@@ -115,7 +115,7 @@ Adobe Campaign使用数据架构来：
 
 枚举先于架构的主元素之前定义。 它们允许您在列表中显示值，以限制用户对给定字段的选择。
 
-例如：
+示例：
 
 ```
 <enumeration basetype="byte" name="exTransactionTypeEnum" default="store">
@@ -176,7 +176,7 @@ For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-f
 
 也可使用&#x200B;**internal**&#x200B;属性定义主键。
 
-例如：
+示例：
 
 ```
 <key name="householdId" internal="true">
@@ -198,9 +198,9 @@ For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-f
 
 ![](assets/schemaextension_2.png)
 
-[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=zh-Hans#content-model){target="_blank"}的`<attribute>`元素部分中提供了属性的完整列表。 以下是一些更常用的属性： **@advanced**、**@dataPolicy**、**@default**、**@desc**、**@enum**、**@expr**、**@label**、**@length**、**@name**、**@notNull**、**@required**、**@ref**、**@xml**、**@type**。
+[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html#content-model){target="_blank"}的`<attribute>`元素部分中提供了属性的完整列表。 以下是一些更常用的属性： **@advanced**、**@dataPolicy**、**@default**、**@desc**、**@enum**、**@expr**、**@label**、**@length**、**@name**、**@notNull**、**@required**、**@ref**、**@xml**、**@type**。
 
-有关每个属性的详细信息，请参阅[Campaign Classicv7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=zh-Hans#configuring-campaign-classic){target="_blank"}中的属性说明。
+有关每个属性的更多信息，请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic){target="_blank"}中的属性说明。
 
 ### 示例 {#examples}
 

@@ -6,9 +6,9 @@ role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
 source-git-commit: a9f26a033d63ab1dece9ef9780392823ee130047
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '706'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 95%
 
    [在此页面中](campaign-ui.md#ac-web-ui)了解如何连接到 Adobe Experience Cloud 并访问 Adobe Campaign Web 界面。
 
-   请参阅[Adobe Campaign Web用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/campaign-web-home){target="_blank"}以了解详情。
+   请参阅 [Adobe Campaign Web 用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/campaign-web-home){target="_blank"}以了解详情。
 
 1. **Campaign v8 是否可以安装在内部部署或混合环境中？**
 
@@ -46,9 +46,9 @@ ht-degree: 95%
 
    电子邮件可投放性是每个发件人的营销计划取得成功的重要因素，其特点是不断变化的标准和规则。想要在这个数字化的世界中取得成果，就必须定期调整电子邮件策略，并考虑关键可投放性趋势，以便最好地吸引受众。
 
-   请参阅本指南以了解[可投放性最佳实践](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans){target="_blank"}
+   要了解[可投放性最佳做法](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans){target="_blank"}，请参阅本指南
 
-   请参阅本指南[&#128279;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=zh-Hans){target="_blank"}以了解如何在Campaign 中实施可投放性
+   要了解如何在 Campaign 中实施可投放性，请参阅[本指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=zh-Hans){target="_blank"}
 
 1. **如何确认我的投放已成功发送，并且未出现错误？**
 
@@ -84,7 +84,7 @@ ht-degree: 95%
 
    可以从 Adobe 下载中心获取安装程序和客户端控制台。
 
-   作为管理员用户，请访问 Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html){target="_blank"}，下载 Adobe Campaign。
+   作为管理员用户，请访问 Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/zh-hans/campaign.html){target="_blank"}，下载 Adobe Campaign。
 
    [在此页面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans){target="_blank"}中了解关于分发中心的更多信息。
 

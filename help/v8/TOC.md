@@ -6,9 +6,9 @@ title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '712'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 89%
    + [早期发行说明](start/e-release-notes.md)
    + [版本和升级](start/upgrades.md)
    + [最新版本](start/release-notes.md)
-   + 之前版本  {#previous-rn}
+   + 之前版本 {#previous-rn}
       + [2025](start/release-notes-2025.md)
       + [2024](start/release-notes-2024.md)
       + [2023](start/release-notes-2023.md)
@@ -30,7 +30,7 @@ ht-degree: 89%
    + [已知问题](start/known-issues.md)
    + [兼容性矩阵](start/compatibility-matrix.md)
    + [文档更新](start/documentation-updates.md)
-+ 开始使用 {#new}
++ 快速入门 {#new}
    + [Adobe Campaign 入门](start/get-started.md)
    + [关键功能](start/whats-new.md)
    + [探索用户界面](start/campaign-ui.md)
@@ -40,10 +40,10 @@ ht-degree: 89%
    + [从 Campaign Standard 到 v8](start/acs-to-v8.md)
    + [常见问题解答](start/campaign-faq.md)
 + 营销活动管理 {#campaigns}
-   + [开始使用营销活动](start/campaigns.md)
+   + [营销活动快速入门](start/campaigns.md)
    + [营销活动编排 >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans)
 + 发送消息{#send}
-   + [开始使用消息功能](start/gs-message.md)
+   + [消息功能快速入门](start/gs-message.md)
    + [创建您的第一个投放](start/create-message.md)
    + [投放最佳实践](start/delivery-best-practices.md)
    + 电子邮件 {#emails}
@@ -54,7 +54,7 @@ ht-degree: 89%
       + [添加密送地址](send/email-bcc.md)
       + [定义其他电子邮件参数](send/email-parameters.md)
       + [发送和监测电子邮件](send/send.md)
-      + [在日本手机上发送电子邮件](send/sending-emails-on-japanese-mobiles.md)
+      + [使用日本手机发送电子邮件](send/sending-emails-on-japanese-mobiles.md)
       + [将文件附加到电子邮件](send/attaching-files.md)
    + 短信 {#sms}
       + [短信入门](send/sms/sms.md)
@@ -70,7 +70,7 @@ ht-degree: 89%
          + [创建短信投放](send/sms/create-sms.md)
          + [定义内容](send/sms/sms-content.md)
          + [选择受众](send/sms/sms-audience.md)
-      + 验证和发送短信 {#validate-sms}
+      + 验证并发送短信 {#validate-sms}
          + [发送短信校样](send/sms/sms-proofs.md)
          + [发送给受众](send/sms/sms-send.md)
       + [监测和跟踪短信](send/sms/sms-monitor.md)
@@ -91,7 +91,7 @@ ht-degree: 89%
       + [添加个性化字段](send/personalization-fields.md)
       + [使用个性化块](send/personalization-blocks.md)
       + [创建条件](send/conditions.md)
-   + 验证并发送投放 {#validate}
+   + 验证和发送投放 {#validate}
       + [预览和校样](send/preview-and-proof.md)
       + [投放分析](send/delivery-analysis.md)
       + [配置和发送投放](send/configure-and-send.md)
@@ -107,7 +107,7 @@ ht-degree: 89%
          + [收集和处理事件](send/event-processing.md)
          + [了解事件描述](send/event-description.md)
          + [发送和监测消息](send/delivery-execution.md)
-+ 用户档案和受众管理 {#audience}
++ 轮廓和受众管理 {#audience}
    + [轮廓和受众入门](audiences/gs-audiences.md)
    + [使用受众](start/audiences.md)
    + [访问轮廓](audiences/view-profiles.md)
@@ -145,7 +145,7 @@ ht-degree: 89%
    + [创建产品建议目录](interaction/interaction-offer-catalog.md)
    + [创建产品建议](interaction/interaction-offer.md)
    + [发送产品建议（出站）](interaction/interaction-send-offers.md)
-   + 提供优惠（入站）{#inbound}
+   + 提供产品建议（入站）{#inbound}
       + [上下文](interaction/interaction-present-offers.md)
       + [在网页中调用产品建议](interaction/interaction-integration.md)
       + [管理匿名互动](interaction/anonymous-interactions.md)
@@ -155,7 +155,7 @@ ht-degree: 89%
    + [跟踪和监测](start/tracking.md)
    + [审核记录](reporting/audit-trail.md)
    + 使用报告{#reports}
-      + [使用入门](reporting/gs-reporting.md)
+      + [报告快速入门](reporting/gs-reporting.md)
       + 创建多维数据集{#cubes}
          + [多维数据集入门](reporting/gs-cubes.md)
          + [创建多维数据集](reporting/cube-indicators.md)
@@ -196,17 +196,17 @@ ht-degree: 89%
       + [添加文件夹权限](start/folder-permissions.md)
    + [控制面板](config/self-service.md)
 + 架构和配置 {#config}
-   + Campaign v8架构 {#architecture}
+   + Campaign v8 架构 {#architecture}
       + [全局原则](architecture/general-architecture.md)
       + [架构模型](architecture/architecture.md)
       + [Campaign FDA 部署](architecture/fda-deployment.md)
-      + 企业(FFDA)部署 {#ffda}
+      + 企业 (FFDA) 部署 {#ffda}
          + [什么是 Campaign FFDA？](architecture/enterprise-deployment.md)
          + [密钥管理和唯一性](architecture/keys.md)
          + [新 API](architecture/new-apis.md)
          + [API 暂存机制](architecture/staging.md)
          + [复制机制](architecture/replication.md)
-   + 实现 {#implement}
+   + 实施 {#implement}
       + [实施步骤](start/implement.md)
       + [自定义实例](dev/customize.md)
       + [数据模型最佳实践](dev/datamodel-best-practices.md)

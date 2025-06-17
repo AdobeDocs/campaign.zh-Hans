@@ -7,9 +7,9 @@ level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1523'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 98%
 * [定义电子邮件的内容](../send/email.md)
 * [定义短信的内容](../send/sms/sms-content.md)
 * [定义直邮的内容](../send/direct-mail.md)
-* [定义推送通知内容](../send/push.md)
+* [定义推送通知的内容](../send/push.md)
 
 
 ## 定义目标受众 {#target-population}
@@ -137,7 +137,7 @@ ht-degree: 98%
 1. 选择包含收件人的文件。
 1. 导入收件人时，单击 **[!UICONTROL File format definition...]** 链接以选择和配置外部文件。
 
-   有关数据导入的更多信息，请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs#step-2---source-file-selection){target="_blank"}。
+   有关数据导入的更多信息，请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-import-jobs#step-2---source-file-selection){target="_blank"}。
 
 1. 单击 **[!UICONTROL Finish]** 并将您的投放配置为标准投放。
 
@@ -182,7 +182,7 @@ ht-degree: 98%
 
 在本视频中，您将了解如何向现有电子邮件添加种子和校样，以及如何进行发送。
 
->[!VIDEO](https://video.tv.adobe.com/v/3447009?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。
 

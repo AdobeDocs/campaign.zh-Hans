@@ -5,9 +5,9 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
-source-wordcount: '712'
+source-git-commit: b4947c8c20e123877e24f57d5ad7a15aa3f304a2
+workflow-type: tm+mt
+source-wordcount: '725'
 ht-degree: 100%
 
 ---
@@ -45,6 +45,7 @@ ht-degree: 100%
 + 发送消息{#send}
    + [消息功能快速入门](start/gs-message.md)
    + [创建您的第一个投放](start/create-message.md)
+   + [使用投放模板](send/create-templates.md)
    + [投放最佳实践](start/delivery-best-practices.md)
    + 电子邮件 {#emails}
       + [设计和验证电子邮件](send/email.md)
@@ -99,7 +100,12 @@ ht-degree: 100%
    + 失败、退回和隔离{#failures}
       + [隔离](send/quarantines.md)
       + [投放失败](send/delivery-failures.md)
-   + [使用投放模板](send/create-templates.md)
+   + 可投放性管理 {#deliverability-management}
+      + [什么是可投放性](send/about-deliverability.md)
+      + [控制消息内容](send/control-message-content.md)
+      + [监测可投放性](send/monitoring-deliverability.md)
+      + [收件箱呈现](send/inbox-rendering.md)
+      + [SpamAssassin](send/spamassassin.md)
    + 事务性消息 {#real-time}
       + [事务性消息入门](send/transactional.md)
       + [创建和发布模板](send/transactional-template.md)

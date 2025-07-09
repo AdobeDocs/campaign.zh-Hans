@@ -5,10 +5,10 @@ feature: Configuration
 role: Developer
 level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: 24b252373923a9724743650b13a69d4f2c8dcd24
+source-git-commit: 3f36d7c425dd5a9a13e1de7a77371b29a462dbea
 workflow-type: tm+mt
-source-wordcount: '737'
-ht-degree: 2%
+source-wordcount: '727'
+ht-degree: 3%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 2%
 
 1. 将Adobe提供给您的策略应用到您的AWS帐户，以便授予对资源的访问权限。 [了解详情](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"}。<!--link TBC-->
 
-1. 与[!DNL Adobe Campaign]共享您的[Amazon资源名称（键ARN）](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"}。 为此，请联系您的Adobe代表。<!--or Adobe transition manager?-->
+1. 与[共享您的](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"}Amazon资源名称（键ARN）[!DNL Adobe Campaign]。 为此，请联系您的Adobe代表。<!--or Adobe transition manager?-->
 
 1. 创建和测试Amazon EventBridge规则，以启用Adobe对密钥的监控&#x200B;。 [了解详情](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}。
 
@@ -96,7 +96,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->仅支持本地数据库和与AWS兼容的VPN设备。 [了解详情](#vpn-databases)
+>支持内部部署和云数据库。 [了解详情](#vpn-databases)
 
 要确保正确使用此功能，请遵循以下准则：
 
@@ -122,8 +122,9 @@ ht-degree: 2%
 * Sybase
 * Teradata
 * Hadoop（通过 HiveSQL）
+* PostgreSQL
 
-仅支持与AWS兼容的VPN设备。 [此页面](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html#example-configuration-files){target="_blank"}上提供了兼容设备的列表。
+支持云数据库。 请参阅[兼容性矩阵](../start/compatibility-matrix.md#FederatedDataAccessFDA)。
 
 >[!NOTE]
 >

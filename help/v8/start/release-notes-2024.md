@@ -1,30 +1,55 @@
 ---
-title: Campaign v8（控制台） 2024年发行说明
-description: 2024 Campaign v8 版本的功能和改进列表
+title: Campaign v8（控制台）2024 发行说明
+description: 2024 Campaign v8版本的功能和改进列表
 feature: Release Notes
 exl-id: 6a0a9486-19a9-4ec3-9030-48dbf419f45f
-source-git-commit: 57b18835b87be2a201ce23f5b6053266d13b9cb8
+source-git-commit: b52308bcbe68a7c382918fe28f8166e3bfcb6cde
 workflow-type: tm+mt
-source-wordcount: '1308'
-ht-degree: 77%
+source-wordcount: '1568'
+ht-degree: 90%
 
 ---
 
 # 2024 年发行说明 {#2024-rn}
 
-此页面列出了&#x200B;**2024 Campaign v8版本**&#x200B;中的新功能、改进和修复。
+此页面列出了 **2024 Campaign v8 版本**&#x200B;中的新增功能、改进和修复。有关最新版本，请参阅[此页面](release-notes.md)。
+
+对于任何新实施或升级到现有环境，请安装[最新版本](release-notes.md)。
+
 
 >[!BEGINSHADEBOX]
 
-在此页中&#x200B;**&#x200B;**
+**本页面内容**
 
-* Campaign v8.7 - [版本8.7.1](#release-8-7-1)
+* Campaign v8.7 - [版本 8.7.1](#release-8-7-1) | [版本 8.7.2](#release-8-7-2)
 * Campaign v8.6 - [版本8.6.1](#release-8-6-1) | [版本8.6.2](#release-8-6-2) | [版本8.6.3](#release-8-6-3)
 * Campaign v8.5 - [版本8.5.3](#release-8-5-3)
 
 >[!ENDSHADEBOX]
 
+## 版本 8.7.2 {#release-8-7-2}
 
+_2024 年 9 月 3 日_
+
+>[!AVAILABILITY]
+>
+>此版本为&#x200B;**有限发布版** (LA)。仅供&#x200B;**从 Adobe Campaign Standard 迁移到 Adobe Campaign v8** 的客户使用，并且不能部署在任何其他环境上。
+>
+>作为正在过渡到 Campaign v8 的 Campaign Standard 用户，请在 [Campaign v8 Web 用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/acs-migration){target="_blank"}中了解有关此过渡的更多信息。
+
+### 新增功能 {#new-8-7-2}
+
+* **新短信发送连接器** - 短信发送连接器经过现代化改造和改进，可启用收发器模式 SMPP 连接、启用持久 SMPP 连接，并确保从 Adobe Campaign Standard 过渡的环境具有更好的兼容性。新的短信外部帐户现在可用于所有新的短信实施。现有实施仍受支持，但建议迁移到此新的现代化扩展连接器。[了解更多信息](../send/sms/sms.md)。
+
+* **富媒体推送通知 (GA)** - 您现在可以发送富媒体推送通知。富媒体推送通知是移动通知的一种增强形式，它超越了简单的文本消息，融合了图像、交互式按钮或其他富媒体内容等多媒体元素。在此版本中，您可以为 iOS 和 Android 应用程序提供一组富媒体推送通知模板。[了解更多信息](../send/rich-push-android.md)。
+
+* **品牌化** - 品牌化选项现在可用于所有渠道，包括短信和直邮。[了解更多信息](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"}
+
+### 修复 {#fixes-8-7-2}
+
+此版本中修复了以下问题：
+
+NEO-48232、NEO-56832、NEO-72504、NEO-74855、NEO-75898、NEO-76097、NEO-76958、NEO-77014、NEO-77795、NEO-78843、NEO-79328。
 
 ## 版本 8.7.1 {#release-8-7-1}
 
@@ -34,30 +59,30 @@ _2024 年 5 月 2 日_
 >
 >此版本为&#x200B;**有限发布版** (LA)。仅供&#x200B;**从 Adobe Campaign Standard 迁移到 Adobe Campaign v8** 的客户使用，并且不能部署在任何其他环境上。
 >
->作为正在过渡到Campaign v8的Campaign Standard用户，请在[Campaign v8 Web用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/acs-migration){target="_blank"}中了解有关此过渡的更多信息。
+>作为正在过渡到 Campaign v8 的 Campaign Standard 用户，请在 [Campaign v8 Web 用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/acs-migration){target="_blank"}中了解有关此过渡的更多信息。
 
 ### 新增功能 {#new-8-7-1}
 
 * **富媒体推送通知模板** - 您现在可以通过 Android 发送富媒体推送通知。富媒体推送通知是移动通知的一种增强形式，它超越了简单的文本消息，融合了图像、交互式按钮或其他富媒体内容等多媒体元素。[了解更多信息](../send/rich-push-ios.md)。
 
-* **品牌化** - 作为 Campaign Standard 迁移用户，您的技术管理员现在可以定义一个或多个品牌，以集中处理影响品牌标识的参数。其中包括品牌徽标、登陆页面访问 URL 的域名或消息跟踪设置。您可以创建这些品牌并将它们链接到消息或登陆页面。此配置在模板中进行管理。[了解更多信息](https://experienceleague.adobe.com/docs/experience-cloud/campaign/branding/branding-gs.html?lang=zh-hans){target="_blank"}
+* **品牌化** - 作为 Campaign Standard 迁移用户，您的技术管理员现在可以定义一个或多个品牌，以集中处理影响品牌标识的参数。其中包括品牌徽标、登陆页面访问 URL 的域名或消息跟踪设置。您可以创建这些品牌并将它们链接到消息或登陆页面。此配置在模板中进行管理。[了解更多信息](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"}
 
-* **Rest API** - 作为 Campaign Standard 迁移用户，您可以使用 Rest API 为 Adobe Campaign 创建集成，并通过将 Adobe Campaign 与所使用的技术面板连接来构建自己的生态系统。[了解更多信息](https://experienceleague.adobe.com/docs/experience-cloud/campaign/apis/get-started-apis.html?lang=zh-hans){target="_blank"}
+* **Rest API** - 作为 Campaign Standard 迁移用户，您可以使用 Rest API 为 Adobe Campaign 创建集成，并通过将 Adobe Campaign 与所使用的技术面板连接来构建自己的生态系统。[了解更多信息](../dev/api/get-started-apis.md)
 
-* **动态报告** - 作为 Campaign Standard 迁移用户，您可以访问动态报告，该功能提供完全可自定义的实时报告来衡量营销活动的影响。它增加了对轮廓数据的访问，除打开数和点击数等功能性电子邮件营销活动数据外，还支持按轮廓维度（如性别、城市和年龄）进行人口统计分析。[了解更多信息](https://experienceleague.adobe.com/docs/experience-cloud/campaign/reporting/get-started-reporting.html?lang=zh-hans){target="_blank"}
+* **动态报告** - 作为 Campaign Standard 迁移用户，您可以访问动态报告，该功能提供完全可自定义的实时报告来衡量营销活动的影响。它增加了对轮廓数据的访问，除打开数和点击数等功能性电子邮件营销活动数据外，还支持按轮廓维度（如性别、城市和年龄）进行人口统计分析。[了解更多信息](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html){target="_blank"}
 
 ### 兼容性更新 {#comp-8-7-1}
 
-添加了以下FDA连接器。 请参阅此[页面](compatibility-matrix.md#FederatedDataAccessFDA)。
+添加了以下 FDA 连接器。请参见[此页面](compatibility-matrix.md#FederatedDataAccessFDA)。
 
-* 数据库现在支持作为具有Adobe Campaign联合数据访问(FDA)的外部数据库。
+* 现在支持将 Databricks 用作 Adobe Campaign 联合数据访问 (FDA) 的外部数据库。
 
-* 现已提供新的Amazon Redshift FDA ODBC连接器。 它提供了改进的连接性、更轻松的维护以及增强的兼容性。 此新版本提供了以下改进：
+* 现已提供新的 Amazon Redshift FDA ODBC 连接器。它提供了改进的连接性、更轻松的维护以及增强的兼容性。此新版本提供了以下改进：
 
-   * 新的连接器基于ODBC接口，该接口与我们最新的FDA连接器一致。 这可确保长期支持。
-   * 它还引入了一种使用s3存储桶的新数据加载机制，显着提高了性能。
+   * 新的连接器基于 ODBC 接口，该接口兼容我们最新的 FDA 连接器。这可确保实现长期支持。
+   * 它还引入了一种使用 s3 存储桶的新数据加载机制，显著提高了性能。
 
-  仍可使用旧版连接器。 如果您想要试用新版，请联系您的Adobe代表。
+  仍可使用旧版连接器。如果您想要试用新版，请联系您的 Adobe 代表。
 
 ### 迁移到 OAuth 服务器到服务器凭据 {#change-8-7-1}
 
@@ -132,7 +157,7 @@ _2024 年 2 月 14 日_
 
   >[!AVAILABILITY]
   >
-  >Campaign Web用户界面仅适用于通过Adobe ID连接到Adobe Campaign的用户。 了解有关[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}的更多信息。
+  >Campaign Web 用户界面仅供通过 Adobe ID 连接到 Adobe Campaign 的用户使用。了解有关 [Adobe 身份管理系统 (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"} 的更多信息。
   >
 
 * Adobe Campaign v8 现已集成 **Adobe Experience Manager as a Cloud Service**，仅通过 Adobe Campaign Web 用户界面提供创作功能。[了解详情](../connect/ac-aem.md)
@@ -148,7 +173,7 @@ _2024 年 2 月 14 日_
 
 * 到 2024 年 2 月，任何通过 Google 或 Yahoo! 发送超过 5000 封电子邮件的公司将必须开始使用身份验证技术，即“基于域的邮件身份验证、报告和符合性”(DMARC)。确保为您在 Adobe Campaign 中使用的所有子域设置 DMARC 记录。[了解详情](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=zh-Hans){target="_blank"}
 
-* 自 2024 年 6 月 1 日起，Google 和 Yahoo! 将要求发件人使用一键式 List-Unsubscribe 功能。Adobe Campaign 现在支持此选项。[了解详情](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=zh-Hans#list-unsubscribe){target="_blank"}
+* 自 2024 年 6 月 1 日起，Google 和 Yahoo! 将要求发件人使用一键式 List-Unsubscribe 功能。Adobe Campaign 现在支持此选项。[了解详情](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}
 
 
 ### 修复 {#fixes-8-6-1}

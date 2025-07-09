@@ -5,10 +5,10 @@ type: Event
 title: Adobe Campaign技术说明
 description: Campaign技术说明
 breadcrumb-title: Campaign技术说明
-source-git-commit: 0fa6767f042eb595b1697d086e5c5cd5fc42625e
+source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 26%
+source-wordcount: '71'
+ht-degree: 25%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 26%
 
 + [Campaign技术说明](technotes-home.md)
 + 升级次数{#tn-new}
+   + [SMS连接器迁移](upgrades/sms-migration.md)
    + [推送通知渠道更改](upgrades/push-technote.md)
    + [将用户迁移到 IMS](upgrades/migrate-users-to-ims.md)
    + [将技术操作员迁移到 Developer Console](upgrades/ims-migration.md)

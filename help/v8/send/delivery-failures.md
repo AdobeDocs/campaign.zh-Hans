@@ -5,7 +5,7 @@ feature: Profiles, Monitoring
 role: User
 level: Beginner, Intermediate
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: 338013ac999ae0fedac132adf730c6f9477d73ca
 workflow-type: tm+mt
 source-wordcount: '2976'
 ht-degree: 5%
@@ -40,7 +40,7 @@ ht-degree: 5%
 
 **Ignored**&#x200B;错误类型已知为临时错误，如“不在办公室”，或技术错误，例如，如果发件人类型为“邮递员”。
 
-反馈循环的运行方式与退回电子邮件类似：当用户将电子邮件标记为垃圾邮件时，您可以在Adobe Campaign中配置电子邮件规则以阻止向该用户的所有投放。 即使这些用户没有单击退订链接，也会对其地址进行列入阻止列表。 地址已添加到(**NmsAddress**)隔离表，但未添加到(**NmsRecipient**)状态为&#x200B;**[!UICONTROL Denylisted]**&#x200B;的收件人表。 在[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#feedback-loops){target="_blank"}中了解有关反馈循环机制的更多信息。
+反馈循环的运行方式与退回电子邮件类似：当用户将电子邮件标记为垃圾邮件时，您可以在Adobe Campaign中配置电子邮件规则以阻止向该用户的所有投放。 即使这些用户没有单击退订链接，也会对其地址进行列入阻止列表。 地址已添加到(**NmsAddress**)隔离表，但未添加到(**NmsRecipient**)状态为&#x200B;**[!UICONTROL Denylisted]**&#x200B;的收件人表。 在[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops){target="_blank"}中了解有关反馈循环机制的更多信息。
 
 ## 同步和异步错误 {#synchronous-and-asynchronous-errors}
 
@@ -66,7 +66,7 @@ ht-degree: 5%
 
 * **同步错误**： MTA确定退件类型和鉴别，并将该信息发回至Campaign。 **[!UICONTROL Delivery log qualification]**&#x200B;表中的退回限定不用于&#x200B;**同步**&#x200B;投放失败错误消息。
 
-* **异步错误**： Campaign用于限定异步投放失败的规则列在&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]**&#x200B;节点中。 异步退回由inMail进程通过&#x200B;**[!UICONTROL Inbound email]**&#x200B;规则进行鉴别。 有关详细信息，请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=zh-Hans#bounce-mail-qualification){target="_blank"}。
+* **异步错误**： Campaign用于限定异步投放失败的规则列在&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]**&#x200B;节点中。 异步退回由inMail进程通过&#x200B;**[!UICONTROL Inbound email]**&#x200B;规则进行鉴别。 有关详细信息，请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target="_blank"}。
 
 <!--NO LONGER WITH MOMENTUM - The message returned by the remote server on the first occurrence of this error type is displayed in the **[!UICONTROL First text]** column of the **[!UICONTROL Audit]** tab.
 
@@ -111,7 +111,7 @@ Campaign投放中的有效期设置限制为&#x200B;**3.5天或更短**。 对�
 
 消息在MTA队列中停留3.5天且投放失败后，该消息将超时，其状态将在投放日志中从&#x200B;**[!UICONTROL Sent]**&#x200B;更新为&#x200B;**[!UICONTROL Failed]**。
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=zh-Hans#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
 
 
 ## 电子邮件错误类型 {#email-error-types}
@@ -238,7 +238,7 @@ Campaign投放中的有效期设置限制为&#x200B;**3.5天或更短**。 对�
    <td> 不可到达 </td> 
    <td> 软/硬 </td> 
    <td> 3 </td> 
-   <td> 消息投放链中发生错误。 可能是SMTP中继上的事件、暂时无法访问的域等。 根据错误，将再次尝试该地址，直到错误计数达到5，否则将直接将其发送到隔离区。<br /> </td> 
+   <td> 消息投放链中发生错误。 可能是SMTP中继上的事件、暂时无法访问的域等。 根据错误，将再次尝试该地址，直到错误计数达到5，否则将直接将该地址添加到隔离。<br /> </td> 
   </tr> 
   <tr> 
    <td> 用户未知 </td> 
@@ -636,7 +636,7 @@ Android V2隔离机制使用与Android V1相同的过程，该过程同样适用
  </tbody> 
 </table>
 
-扩展通用SMPP连接器的&#x200B;**&#x200B;**
+扩展通用SMPP连接器的&#x200B;****
 
 使用SMPP协议发送短信消息时，错误管理的处理方式不同。
 
@@ -663,8 +663,8 @@ SR Generic DELIVRD 000|#MESSAGE#
 
 * 错误消息的第三部分(**DELIVRD**)对应于使用SMS外部帐户中定义的状态提取正则表达式从SR检索到的状态代码。
 
-  此正则表达式在外部帐户的&#x200B;**[!UICONTROL SMSC specificities]**&#x200B;选项卡中指定。
-默认情况下，正则表达式提取&#x200B;**SMPP 3.4规范**&#x200B;的&#x200B;**附录B**&#x200B;部分定义的&#x200B;**stat：**&#x200B;字段。
+  此正则表达式在外部帐户的&#x200B;**[!UICONTROL SMSC specificities]**选项卡中指定。
+默认情况下，正则表达式提取**SMPP 3.4规范**&#x200B;的&#x200B;**附录B**&#x200B;部分定义的&#x200B;**stat：**&#x200B;字段。
 
 * 错误消息的第四部分(**000**)对应于使用SMS外部帐户中定义的错误代码提取正则表达式从SR提取的错误代码。
 
@@ -672,6 +672,6 @@ SR Generic DELIVRD 000|#MESSAGE#
 
   默认情况下，正则表达式提取&#x200B;**SMPP 3.4规范**&#x200B;的&#x200B;**附录B**&#x200B;部分定义的&#x200B;**err：**&#x200B;字段。
 
-* 管道符号(|)之后的所有内容仅显示在&#x200B;**[!UICONTROL Delivery log qualification]**&#x200B;表的&#x200B;**[!UICONTROL First text]**&#x200B;列中。 在消息规范化后，此内容始终被&#x200B;**#MESSAGE#**&#x200B;替换。 此过程避免因类似错误而出现多个条目，与电子邮件的情况相同。
+* 管道符号(|)之后的所有内容仅显示在&#x200B;**[!UICONTROL First text]**&#x200B;表的&#x200B;**[!UICONTROL Delivery log qualification]**&#x200B;列中。 在消息规范化后，此内容始终被&#x200B;**#MESSAGE#**&#x200B;替换。 此过程避免因类似错误而出现多个条目，与电子邮件的情况相同。
 
 扩展通用SMPP连接器应用启发式来查找合理的默认值：如果状态以&#x200B;**DELIV**&#x200B;开头，则被视为成功，因为它与大多数提供商使用的通用状态&#x200B;**DELIVRD**&#x200B;或&#x200B;**DELIVERED**&#x200B;匹配。 任何其他状态都会导致硬故障。

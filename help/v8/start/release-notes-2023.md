@@ -1,24 +1,27 @@
 ---
-title: Campaign v8（控制台） 2023年发行说明
-description: 2023 Campaign v8 版本的功能和改进列表
+title: Campaign v8（控制台）2023 发行说明
+description: 2023 Campaign v8版本的功能和改进列表
 feature: Release Notes
 role: User
 level: Beginner
 exl-id: b860c843-155e-4abb-bdd6-b68dc7eaa0ee
-source-git-commit: fe96eb65ac04fc2b89f0dfe1e8ed4286223c3f85
+source-git-commit: b52308bcbe68a7c382918fe28f8166e3bfcb6cde
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1518'
 ht-degree: 56%
 
 ---
 
 # 2023 年发行说明 {#2023-rn}
 
-此页面列出了&#x200B;**2023 Campaign v8版本**&#x200B;中的新功能、改进和修复。
+此页面列出了 **2023 Campaign v8 版本**&#x200B;中的新增功能、改进和修复。有关最新版本，请参阅[此页面](release-notes.md)。
+
+对于任何新实施或升级到现有环境，请安装[最新版本](release-notes.md)。
+
 
 >[!BEGINSHADEBOX]
 
-在此页中&#x200B;**&#x200B;**
+**本页面内容**
 
 * Campaign v8.5 - [版本8.5.1](#release-8-5-1) | [版本8.5.2](#release-8-5-2)
 * Campaign v8.4 - [版本8.4.3](#release-8-4-3) | [版本8.4.4](#release-8-4-4) | [版本8.4.5](#release-8-4-5)

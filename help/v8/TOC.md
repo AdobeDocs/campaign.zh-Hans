@@ -5,10 +5,10 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: b4947c8c20e123877e24f57d5ad7a15aa3f304a2
+source-git-commit: 338013ac999ae0fedac132adf730c6f9477d73ca
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 100%
+source-wordcount: '790'
+ht-degree: 97%
 
 ---
 
@@ -97,7 +97,7 @@ ht-degree: 100%
       + [投放分析](send/delivery-analysis.md)
       + [配置和发送投放](send/configure-and-send.md)
       + [发送时间优化](send/predictive.md)
-   + 失败、退回和隔离{#failures}
+   + 失败、退回和隔离 {#failures}
       + [隔离](send/quarantines.md)
       + [投放失败](send/delivery-failures.md)
    + 可投放性管理 {#deliverability-management}
@@ -239,6 +239,32 @@ ht-degree: 100%
       + [输入表单](dev/forms.md)
    + [使用数据包](dev/packages.md)
    + [Campaign API](dev/api.md)
+   + REST API {#apis}
+      + [开始使用REST API](dev/api/get-started-apis.md)
+      + [建议和限制](dev/api/limitations.md)
+      + [为何使用REST API](dev/api/why-using-campaign-standard-apis.md)
+      + [设置 API 访问](dev/api/setting-up-api-access.md)
+      + 全局概念 {#global-concepts}
+         + [必读](dev/api/must-read.md)
+         + [端点](dev/api/endpoints.md)
+         + [元数据机制](dev/api/metadata-mechanism.md)
+         + [动词](dev/api/verbs.md)
+         + [其他操作](dev/api/sorting.md)
+         + [自定义资源](dev/api/custom-resources.md)
+      + [与自定义资源交互](dev/api/interacting-with-custom-resources.md)
+      + 管理用户档案 {#managing-profiles}
+         + [检索轮廓](dev/api/retrieving-profiles.md)
+         + [更新轮廓](dev/api/updating-profiles.md)
+         + [创建轮廓](dev/api/creating-profiles-api.md)
+      + 管理服务和订阅 {#managing-services-and-subscriptiopns}
+         + [创建服务](dev/api/creating-a-service.md)
+         + [检索订阅](dev/api/retrieving-subscriptions.md)
+         + [执行订阅](dev/api/perform-subscriptions.md)
+         + [删除订阅](dev/api/deleting-subscriptions.md)
+      + [管理事务型消息](dev/api/managing-transactional-messages.md)
+      + 管理工作流 {#managing-workflows}
+         + [控制工作流](dev/api/controlling-a-workflow.md)
+         + [触发信号活动](dev/api/triggering-a-signal-activity.md)
 + [营销活动技术说明 >](https://experienceleague.adobe.com/zh-hans/docs/campaign/technotes-ac/technotes-home)
 + [Campaign Web 用户界面文档 >](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/campaign-web-home)
 

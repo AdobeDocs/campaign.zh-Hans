@@ -18,7 +18,7 @@ Adobe Campaign提供本页中列出的一组报表工具。
 
 * **动态报告**
 
-  动态报告与Campaign Web UI配合使用，提供完全可自定义的实时报告来衡量营销活动的影响。 它增加了对轮廓数据的访问，除打开数和点击数等功能性电子邮件营销活动数据外，还支持按轮廓维度（如性别、城市和年龄）进行人口统计分析。请参阅[Web UI v7文档](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html){target="_blank"}。
+  动态报告与Campaign Web UI配合使用，提供完全可自定义的实时报告来衡量营销活动的影响。 它增加了对轮廓数据的访问，除打开数和点击数等功能性电子邮件营销活动数据外，还支持按轮廓维度（如性别、城市和年龄）进行人口统计分析。请参阅[Web UI v7文档](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=zh-Hans){target="_blank"}。
 
 * **多维数据集**
 

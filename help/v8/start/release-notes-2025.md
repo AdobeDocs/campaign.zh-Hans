@@ -88,7 +88,7 @@ _2025 年 2 月 14 日_
 
 ### 新增功能 {#features-8-7-3}
 
-* **事务性消息的动态报告** - 您现在可以在动态报告用户界面中监控事务性消息。通过这些报告，营销人员能够实时查看事务性消息的所有报告量度和维度，并实时分析通过模板发送的投放。[了解更多信息](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html){target="_blank"}
+* **事务性消息的动态报告** - 您现在可以在动态报告用户界面中监控事务性消息。通过这些报告，营销人员能够实时查看事务性消息的所有报告量度和维度，并实时分析通过模板发送的投放。[了解更多信息](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=zh-Hans){target="_blank"}
 
 * **事务性消息传递 REST API** - 现在可以对电子邮件使用基于事件的事务性 API。[了解更多信息](../dev/api/get-started-apis.md)
 

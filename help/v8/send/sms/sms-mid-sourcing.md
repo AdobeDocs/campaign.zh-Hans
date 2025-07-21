@@ -5,20 +5,20 @@ feature: SMS
 role: User
 level: Beginner, Intermediate
 exl-id: b5eb9eaa-0ca8-478c-9ed5-e5006e9b5609
-source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
+source-git-commit: ea51863bdbc22489af35b2b3c81259b327380be4
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '612'
 ht-degree: 1%
 
 ---
 
 # 中间源基础设施中的SMS {#sms-mid}
 
->[!IMPORTANT]
+>[!AVAILABILITY]
 >
->本文档适用于Adobe Campaign v8.7.2及更高版本。 要从旧版短信连接器切换到新版短信连接器，请参阅此[技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}
+>此功能适用于所有Campaign FDA环境。 **不**&#x200B;可用于Campaign FFDA部署。 本文档适用于Adobe Campaign v8.7.2及更高版本。 要从旧版短信连接器切换到新版短信连接器，请参阅此[技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}
 >
->对于旧版本，请阅读[Campaign Classic v7文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}。
+>对于旧版本，请阅读[Campaign Classic v7文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}。
 
 使用中间源基础设施发送SMS投放需要：
 
@@ -42,8 +42,8 @@ ht-degree: 1%
 
    ![](assets/smsoperator_mid.png){zoomable="yes"}
 
-1. 在&#x200B;**[!UICONTROL Groups and named rights]**&#x200B;部分中，单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
-在打开的新窗口中，从&#x200B;**[!UICONTROL Named rights]**&#x200B;列表中选择&#x200B;**[!UICONTROL Folder]**，然后在右侧列表中选择&#x200B;**[!UICONTROL ADMINISTRATION]**。
+1. 在&#x200B;**[!UICONTROL Groups and named rights]**&#x200B;部分中，单击&#x200B;**[!UICONTROL Add]**按钮。
+在打开的新窗口中，从**[!UICONTROL Named rights]**&#x200B;列表中选择&#x200B;**[!UICONTROL Folder]**，然后在右侧列表中选择&#x200B;**[!UICONTROL ADMINISTRATION]**。
 
 1. 单击&#x200B;**[!UICONTROL Ok]**&#x200B;按钮。
 

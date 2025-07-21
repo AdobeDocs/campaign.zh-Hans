@@ -7,18 +7,22 @@ topic-tags: campaign-standard-apis
 role: Data Engineer
 level: Experienced
 exl-id: c6968252-a012-4029-bbb8-66f4f693e99b
-source-git-commit: 83524feeb6a5de32a1b32c8d66f97a32d270f62d
+source-git-commit: ea51863bdbc22489af35b2b3c81259b327380be4
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 53%
+source-wordcount: '238'
+ht-degree: 47%
 
 ---
 
 # Campaign REST API入门 {#get-started-apis}
 
+>[!AVAILABILITY]
+>
+>此功能仅在所有Campaign FDA环境中按需提供。 **不**&#x200B;可用于Campaign FFDA部署。 要获取访问权限，请联系您的Adobe代表。
+
 >[!CAUTION]
 >
->在执行 API 调用之前，请检查与您的许可协议对应的比例限制。有关详细信息，请参见[此页面](https://helpx.adobe.com/cn/legal/product-descriptions/campaign-standard.html#ITInfrastructureResourcesbyActiveProfilesTiers)。
+>在执行 API 调用之前，请检查与您的许可协议对应的比例限制。有关详细信息，请参见[此页面](https://helpx.adobe.com/legal/product-descriptions/campaign-standard.html#ITInfrastructureResourcesbyActiveProfilesTiers)。
 
 Campaign REST API旨在通过将Adobe Campaign与您使用的技术面板连接，让您&#x200B;**为Adobe Campaign创建集成**，并&#x200B;**构建您自己的生态系统**。
 

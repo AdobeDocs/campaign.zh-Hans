@@ -5,20 +5,20 @@ feature: SMS
 role: User
 level: Beginner, Intermediate
 exl-id: 704e151a-b863-46d0-b8a1-fca86abd88b9
-source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
+source-git-commit: ea51863bdbc22489af35b2b3c81259b327380be4
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1342'
 ht-degree: 5%
 
 ---
 
 # SMPP连接器描述 {#smpp-connector-desc}
 
->[!IMPORTANT]
+>[!AVAILABILITY]
 >
->本文档适用于Adobe Campaign v8.7.2及更高版本。 要从旧版短信连接器切换到新版短信连接器，请参阅此[技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}。
+>此功能适用于所有Campaign FDA环境。 **不**&#x200B;可用于Campaign FFDA部署。 本文档适用于Adobe Campaign v8.7.2及更高版本。 要从旧版短信连接器切换到新版短信连接器，请参阅此[技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}
 >
->对于旧版本，请阅读[Campaign Classic v7文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}。
+>对于旧版本，请阅读[Campaign Classic v7文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}。
 
 ## SMS连接器数据流 {#sms-data-flow}
 
@@ -32,13 +32,13 @@ SMS流程托管2个重要组件：SMPP连接器本身，它处理与SMPP提供�
 
 ### SMPP帐户的数据流 {#sms-data-flow-smpp-accounts}
 
-短信进程会轮询nms：extAccount并在其SMPP连接器中生成新连接，从而传递每个帐户的设置。 可以在&#x200B;*configRefreshMillis*&#x200B;设置的serverConf中调整轮询频率。
+SMS进程轮询nms:extAccount并在其SMPP连接器中派生新连接，传递每个帐户的设置。 可以在&#x200B;*configRefreshMillis*&#x200B;设置的serverConf中调整轮询频率。
 
 对于每个活动的SMPP帐户， SMPP连接器会尝试始终保持连接活动。 如果连接丢失，它将重新连接。
 
 ### 发送消息时的数据流 {#sms-data-flow-sending-msg}
 
-* 短信进程通过扫描nms：delivery选择活动投放。 投放在以下情况下处于活动状态：
+* SMS进程通过扫描nms:delivery来选择活动投放。 投放在以下情况下处于活动状态：
    * 其状态表示消息可以发送
    * 其有效期未届满
    * 它实际上是投放（例如，它不是模板，不会删除）
@@ -47,30 +47,30 @@ SMS流程托管2个重要组件：SMPP连接器本身，它处理与SMPP提供�
 * 短信流程使用投放部分的个性化数据扩展模板。
 * smpp连接器会生成与内容和其他设置匹配的MT (SUBMIT_SM PDU)。
 * SMPP连接器通过发射器（或收发器）连接发送MT。
-* 提供商返回此MT的ID。 它会被插入到nms：providerMsgId中。
+* 提供商返回此MT的ID。 它插入到nms:providerMsgId中。
 * 短信流程会将广泛日志更新为已发送状态。
-* 在出现最终错误的情况下，短信流程会相应地更新广义日志，并且可能会在nms：broadLogMsg中创建一种新型错误。
+* 在最终错误的情况下，短信进程将相应地更新广义日志，并且可能会在nms:broadLogMsg中造成新类型的错误。
 
 ### 接收SR时的数据流 {#sms-data-flow-sr}
 
 * SMPP连接器接收并解码SR (DELIVER_SM PDU)。 它使用外部帐户中定义的正则表达式来获取消息ID和状态。
-* 消息ID和状态已插入nms：providerMsgStatus
+* 已将消息ID和状态插入nms:providerMsgStatus
 * 插入后，SMPP连接器会回复一个DELIVER_SM_RESP PDU。
 * 如果在此过程中出现错误，SMPP连接器会发送一个否定的DELIVER_SM_RESP PDU并记录一条消息。
 
 ### 接收MO时的数据流 {#sms-data-flow-mo}
 
 * SMPP连接器接收并解码MO (DELIVER_SM PDU)。
-* 将从消息中提取关键字。 如果它与任何声明的关键字匹配，则执行相应的操作。 它可以写入nms：address以更新隔离。
+* 将从消息中提取关键字。 如果它与任何声明的关键字匹配，则执行相应的操作。 它可能会写入nms:address以更新隔离。
 * 如果声明了自定义TLV，则会根据其各自的设置对它们进行解码。
-* 完全解码和处理的MO将插入nms：inSms表中。
+* 已完全解码和已处理的MO已插入到nms:inSms表中。
 * SMPP连接器使用DELIVER_SM_RESP PDU进行回复。 如果检测到任何错误，则会向提供程序返回错误代码。
 
 ### 协调MT和SR时的数据流 {#sms-reconciling-mt-sr}
 
-* SR协调组件定期读取nms：providerMsgId和nms：providerMsgStatus。 来自两个表的数据被连接。
-* 对于两个表中都有条目的所有消息，将更新匹配的nms：broadLog条目。
-* 如果检测到新类型的错误，则可以在进程中更新nms：broadLogMsg表，或者更新未手动限定的错误的计数器。
+* SR协调组件定期读取nms:providerMsgId和nms:providerMsgStatus。 来自两个表的数据被连接。
+* 对于两个表中都有条目的所有消息，将更新匹配的nms:broadLog条目。
+* 如果检测到新类型的错误，则可以在进程中更新nms:broadLogMsg表，或者更新未手动限定的错误的计数器。
 
 ## 匹配MT、SR和broadlog条目 {#sms-matching-entries}
 
@@ -84,18 +84,18 @@ SMS流程托管2个重要组件：SMPP连接器本身，它处理与SMPP提供�
 * SMPP连接器将其格式化为SUBMIT_SM MT PDU。
 * MT将发送到SMPP提供商。
 * 提供程序使用SUBMIT_SM_RESP进行回复。 SUBMIT_SM和SUBMIT_SM_RESP按其序列号。
-* SUBMIT_SM_RESP提供来自提供程序的ID。 此id与广义日志id一起插入nms：providerMsgId表中。
+* SUBMIT_SM_RESP提供来自提供程序的ID。 此ID与广义日志ID一起插入到nms:providerMsgId表中。
 
 **阶段2**
 
 * 提供程序发送DELIVER_SM SR PDU。
 * 将解析SR以提取提供程序ID、状态和错误代码。 此步骤使用提取正则表达式。
-* 提供程序ID及其相应状态将插入nms：providerMsgStatus。
+* 提供程序ID及其相应状态已插入nms:providerMsgStatus。
 * 将所有数据安全地插入数据库后，SMPP连接器会使用DELIVER_SM_RESP进行回复。 DELIVER_SM和DELIVER_SM_RESP通过它们的序列号匹配。
 
 **阶段3**
 
-* SMS进程的SR协调组件会定期扫描nms：providerMsgId和nms：providerMsgStatus表。
+* SMS进程的SR协调组件定期扫描nms:providerMsgId和nms:providerMsgStatus表。
 * 如果任意行在两个表中具有匹配的提供程序ID，则这2个条目将连接在一起。 这允许将广泛日志ID（存储在providerMsgId中）与状态（存储在providerMsgStatus中）匹配
 * 广泛日志将更新为相应的状态。
 

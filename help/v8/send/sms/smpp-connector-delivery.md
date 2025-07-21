@@ -18,7 +18,7 @@ ht-degree: 5%
 >
 >此功能适用于所有Campaign FDA环境。 **不**&#x200B;可用于Campaign FFDA部署。 本文档适用于Adobe Campaign v8.7.2及更高版本。 要从旧版短信连接器切换到新版短信连接器，请参阅此[技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}
 >
->对于旧版本，请阅读[Campaign Classic v7文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}。
+>对于旧版本，请阅读[Campaign Classic v7文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}。
 
 ## SMS连接器数据流 {#sms-data-flow}
 

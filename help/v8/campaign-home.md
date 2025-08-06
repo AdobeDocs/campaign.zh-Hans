@@ -1,12 +1,12 @@
 ---
 keywords: Campaign Classic;home;popular topics
-description: Campaign v8 帮助中心
-title: Adobe Campaign v8 产品文档
+description: 在Adobe Campaign v8帮助中心查找帮助。 了解Campaign v8的新增功能、改进和修复。
+title: Adobe Campaign v8产品文档
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: e921339532697109758f7ca9f3a136cef58e48ab
+source-git-commit: dc8aef5fe542db06368a2cc0c832b4d43b069fc7
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 98%
+source-wordcount: '350'
+ht-degree: 91%
 
 ---
 

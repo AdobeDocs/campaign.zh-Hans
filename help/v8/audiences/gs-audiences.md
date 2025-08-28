@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: 43483085-8aa6-47e6-89e7-9211e37beaa4
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: b24e05f152bc299ea7953856bfa71950b5cc9837
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 20%
@@ -16,8 +16,6 @@ ht-degree: 20%
 # 轮廓和受众入门{#gs-profiles-and-audiences}
 
 用户档案是存储在Campaign数据库中的联系人，例如客户、服务的订阅者或潜在客户。 有许多可能的机制可获取轮廓并创建此数据库：通过 Web 窗体在线收集、手动或自动导入文本文件、复制公司数据库或其他信息系统的内容。借助Adobe Campaign，您可以将营销历史、购买信息、偏好、CRM数据和任何相关的PI数据整合到一个整合视图中，以便进行分析并采取行动。 用户档案包含定向、鉴别和跟踪个人所需的所有信息。
-
-
 
 配置文件是&#x200B;**nmsRecipient**&#x200B;表或外部表中的记录，用于存储所有配置文件属性，例如名字、姓氏、电子邮件地址、Cookie ID、客户ID、移动标识符或与特定渠道相关的其他信息。 链接到收件人表的其他表包含与用户档案相关的数据，例如投放日志表，其中包含发送给收件人的所有投放的记录。 在[本节](../dev/datamodel.md#ootb-profiles)中了解有关内置用户档案和收件人表的更多信息。
 
@@ -38,4 +36,4 @@ ht-degree: 20%
 
 <!--You can also select your message audience in an external file: recipients are stored not in the database, but in files. These are known as "external" deliveries. These contacts can be imported or not in Adobe Campaign. [Learn more](external-profiles.md).-->
 
-导入后，您可以创建受众以发送消息。 在本节[&#128279;](create-audiences.md)中了解如何创建受众。
+导入后，您可以创建受众以发送消息。 在本节[中了解如何创建受众](create-audiences.md)。

@@ -5,10 +5,10 @@ type: Event
 title: Adobe Campaign技术说明
 description: Campaign技术说明
 breadcrumb-title: Campaign技术说明
-source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
+source-git-commit: d80d81bf8c25c467c909c9ccac7c31e6963409f0
 workflow-type: tm+mt
-source-wordcount: '71'
-ht-degree: 25%
+source-wordcount: '73'
+ht-degree: 24%
 
 ---
 
@@ -30,4 +30,5 @@ ht-degree: 25%
    + [客户端控制台32位弃用](upgrades/console.md)
    + 安全性 {#security}
       + [客户凭据轮换](security/credential-rotation-guide.md)
+      + [非对称加密](security/asymetric-encryption.md)
 + [&lt;返回Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/campaign-home)

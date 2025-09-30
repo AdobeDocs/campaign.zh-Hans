@@ -24,7 +24,7 @@ Campaign REST API旨在通过将Adobe Campaign与您使用的技术面板连接�
 >
 >* 此功能仅在所有[Campaign FDA环境](../../architecture/fda-deployment.md)的需要时可用。 **不**&#x200B;可用于[企业(FFDA)部署](../../architecture/enterprise-deployment.md)。 要获取访问权限，请联系您的Adobe代表。
 >
->* 在执行 API 调用之前，请检查与您的许可协议对应的比例限制。有关详细信息，请参阅[Campaign产品描述页面](https://helpx.adobe.com/legal/product-descriptions/campaign-standard.html#ITInfrastructureResourcesbyActiveProfilesTiers){target="_blank"}。
+>* 在执行 API 调用之前，请检查与您的许可协议对应的比例限制。有关详细信息，请参阅[Campaign产品描述页面](https://helpx.adobe.com/cn/legal/product-descriptions/campaign-standard.html#ITInfrastructureResourcesbyActiveProfilesTiers){target="_blank"}。
 
 
 通过Adobe Campaign REST API，您可以访问以下功能：

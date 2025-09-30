@@ -26,8 +26,8 @@ ht-degree: 14%
 
 您可以使用JavaScript API在Campaign云数据库中写入或读取数据库：
 
-* 特定于业务的API，允许您对每个对象执行操作：投放、工作流、订阅等。 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html){target="_blank"}以了解详情。
-* 用于查询数据模型数据的通用数据访问API。 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html){target="_blank"}以了解详情。
+* 特定于业务的API，允许您对每个对象执行操作：投放、工作流、订阅等。 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html?lang=zh-Hans){target="_blank"}以了解详情。
+* 用于查询数据模型数据的通用数据访问API。 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/data-oriented-apis.html?lang=zh-Hans){target="_blank"}以了解详情。
 
 请注意，在其[企业(FFDA)部署](../architecture/enterprise-deployment.md)中，Campaign可与两个数据库配合使用：用于用户界面实时消息传递和统一查询、通过API写入的本地数据库，以及用于活动执行、报告、数据摄取、批量查询和工作流执行的云数据库。
 

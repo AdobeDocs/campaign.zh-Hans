@@ -7,16 +7,14 @@ topic-tags: campaign-standard-apis
 role: Data Engineer
 level: Experienced
 exl-id: c6968252-a012-4029-bbb8-66f4f693e99b
-source-git-commit: 1d9d4111cde1e230220a04c8fd10a126116339ad
+source-git-commit: 115b7b6824f3736e03f9fb87898f1264f9bab636
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 43%
+source-wordcount: '231'
+ht-degree: 40%
 
 ---
 
 # Campaign REST API入门 {#get-started-apis}
-
-
 
 Campaign REST API旨在通过将Adobe Campaign与您使用的技术面板连接，让您&#x200B;**为Adobe Campaign创建集成**，并&#x200B;**构建您自己的生态系统**。
 
@@ -24,7 +22,7 @@ Campaign REST API旨在通过将Adobe Campaign与您使用的技术面板连接�
 >
 >* 此功能仅在所有[Campaign FDA环境](../../architecture/fda-deployment.md)的需要时可用。 **不**&#x200B;可用于[企业(FFDA)部署](../../architecture/enterprise-deployment.md)。 要获取访问权限，请联系您的Adobe代表。
 >
->* 在执行 API 调用之前，请检查与您的许可协议对应的比例限制。有关详细信息，请参阅[Campaign产品描述页面](https://helpx.adobe.com/cn/legal/product-descriptions/campaign-standard.html#ITInfrastructureResourcesbyActiveProfilesTiers){target="_blank"}。
+>* 在执行 API 调用之前，请检查与您的许可协议对应的比例限制。有关详细信息，请参阅[Adobe Campaign v8产品说明](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}。
 
 
 通过Adobe Campaign REST API，您可以访问以下功能：
@@ -44,4 +42,3 @@ Campaign REST API旨在通过将Adobe Campaign与您使用的技术面板连接�
 
 本文档中对所有端点进行了详尽的描述，其中包含您应当了解的关于操作API、完整API引用、代码示例和快速入门指南的一般概念。 所有示例都适用于 Postman，但可随意使用您最喜爱的 REST 客户端。
 
-如果有任何内容缺失或错误，请咨询[社区](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-standard/ct-p/adobe-campaign-standard-community){target="_blank"}。

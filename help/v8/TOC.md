@@ -5,9 +5,9 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: 338013ac999ae0fedac132adf730c6f9477d73ca
+source-git-commit: 428de72e0459b95a6db0b06ec8541d0475b72fdd
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '793'
 ht-degree: 97%
 
 ---
@@ -215,6 +215,7 @@ ht-degree: 97%
    + 实施 {#implement}
       + [实施步骤](start/implement.md)
       + [自定义实例](dev/customize.md)
+      + [使用明细列表](dev/enumerations.md)
       + [数据模型最佳实践](dev/datamodel-best-practices.md)
    + 设置和配置 {#configuration}
       + [用户界面设置](config/ui-settings.md)

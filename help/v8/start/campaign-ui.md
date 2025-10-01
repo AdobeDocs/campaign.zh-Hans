@@ -4,11 +4,12 @@ description: 了解如何浏览和使用 Campaign 用户界面
 feature: Overview
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 9d5a2ca1e9858a727377b8afa6bdd7e3761c1b56
-workflow-type: ht
-source-wordcount: '1072'
-ht-degree: 100%
+source-git-commit: 428de72e0459b95a6db0b06ec8541d0475b72fdd
+workflow-type: tm+mt
+source-wordcount: '1235'
+ht-degree: 70%
 
 ---
 
@@ -16,47 +17,60 @@ ht-degree: 100%
 
 您可以通过客户端控制台或 Web 用户界面访问 Adobe Campaign。您还可以使用 API 在 Campaign 平台中管理数据和执行任务。
 
->[!CAUTION]
->
->本文档重点介绍 Campaign 客户端控制台用法。如果您使用的是 Campaign Web 用户界面，请参阅[本文档](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=zh-Hans){target="_blank"}。
-
 * **客户端控制台** - Campaign 客户端控制台是一个原生应用程序，它通过标准 Internet 协议（如 SOAP 和 HTTP）与 Adobe Campaign 应用程序服务器进行通信。Campaign 客户端控制台集中了所有功能和设置，并且由于依赖本地缓存，需要的带宽很少。Campaign 客户端控制台旨在实现轻松部署，可以从 Internet 浏览器部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成 HTTP(S) 流量。[了解详情](#ui-access)
 
   在[此部分](../start/connect.md)中了解如何安装和配置 Campaign 客户端控制台。
-
-* **Web 用户界面** - 作为 Campaign v8 用户，从 v8.6.1 版本开始，您现在可以通过中央 Adobe Experience Cloud 用户界面访问 Web 环境。然后，您可以从 Web 浏览器连接到 Adobe Campaign。通过这个新的界面，您可以创建、管理和执行重要的营销操作。但是，并非所有 Campaign 功能都可用。[了解详情](#ac-web-ui)。
-
-  >[!AVAILABILITY]
-  >
-  >Campaign Web 用户界面仅供通过 Adobe ID 连接到 Adobe Campaign 的用户使用。了解有关 [Adobe 身份管理系统 (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"} 的更多信息。
-  >
 
 * **Web 访问** - 通过 Adobe Campaign Web 访问功能，您可以通过 Web 浏览器在 HTML 用户界面下使用部分 Campaign 功能。使用此 Web 界面可访问报告、控制和验证消息、访问监控仪表板等。[在此部分中](../start/connect.md#web-access)了解有关 Campaign Web 访问权限的详细信息。
 
 * **API** - 为处理更多用例，可以使用通过 SOAP 协议公开的 Web 服务 API 从外部应用程序调用该系统。[在此页面中](../dev/api.md)了解有关 Campaign API 的详细信息。
 
+* **Web 用户界面** - 作为 Campaign v8 用户，从 v8.6.1 版本开始，您现在可以通过中央 Adobe Experience Cloud 用户界面访问 Web 环境。然后，您可以从 Web 浏览器连接到 Adobe Campaign。通过这个新的界面，您可以创建、管理和执行重要的营销操作。但是，并非所有 Campaign 功能都可用。[了解详情](#ac-web-ui)。
+
+  >[!AVAILABILITY]
+  >
+  >Campaign Web用户界面仅适用于通过Adobe ID连接到Campaign的Campaign v8用户。 了解有关 [Adobe 身份管理系统 (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"} 的更多信息。
+  >
+
+>[!CAUTION]
+>
+>本文档重点介绍 Campaign 客户端控制台用法。作为Campaign v8用户，如果您使用的是Campaign Web用户界面，请参阅[本文档](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=zh-Hans){target="_blank"}。
 
 ## 使用客户端控制台 {#ui-access}
 
-Campaign 客户端控制台是一个原生应用程序，它通过标准 Internet 协议（如 SOAP 和 HTTP）与 Adobe Campaign 应用程序服务器进行通信。Campaign 客户端控制台集中了所有功能和设置，并且由于依赖本地缓存，需要的带宽很少。Campaign 客户端控制台旨在实现轻松部署，可以从 Internet 浏览器部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成 HTTP(S) 流量。[了解关于 Campaign 客户端控制台的更多信息](../start/connect.md)。您可以从客户端控制台主页的专用卡片切换到 Campaign Web 用户界面。
+Campaign 客户端控制台是一个原生应用程序，它通过标准 Internet 协议（如 SOAP 和 HTTP）与 Adobe Campaign 应用程序服务器进行通信。Campaign 客户端控制台集中了所有功能和设置，并且由于依赖本地缓存，需要的带宽很少。Campaign 客户端控制台旨在实现轻松部署，可以从 Internet 浏览器部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成 HTTP(S) 流量。[了解关于 Campaign 客户端控制台的更多信息](../start/connect.md)。
 
-![](assets/web-ui.png)
 
+
+>[!BEGINTABS]
+
+>[!TAB Campaign v8]
+
+连接到Campaign后，即可访问Adobe Campaign主页。 在Campaign v8中，使用中心卡浏览新的Campaign Web用户界面和Campaign控制面板。
+
+![Campaign v8客户端控制台主页](assets/web-ui.png)
 
 >[!NOTE]
 >
->如果未显示新的访问卡，请确保 Adobe Experience Cloud 外部帐户中的以下字段未留空：**服务器**、**租户**、**回调服务器**&#x200B;和&#x200B;**关联标记**。
+>如果未显示Web用户界面卡，请确保您的A[Adobe Experience Cloud外部帐户](../config/external-accounts.md)中的以下字段不留空： **服务器**、**租户**、**回拨服务器**&#x200B;和&#x200B;**关联标记**。
+
+您还可以从主页访问[促销活动控制面板](../config/self-service.md)。
+
+>[!TAB Campaign Classic v7]
+
+连接到Campaign后，即可访问Adobe Campaign主页，其中提供了用于访问各项功能、文档、技术支持网站和Campaign社区的链接和快捷方式。
+
+![Campaign Classic v7客户端控制台主页](assets/v7_user_interface_home.png)
+
+
+>[!ENDTABS]
 
 
 您还可以使用 Web 浏览器访问 Campaign。在这种情况下，仅可使用部分 Campaign 功能。[了解详情](#web-browser)
 
 ### 浏览界面 {#ui-browse}
 
-连接到 Campaign 客户端控制台后，即可访问主页。浏览链接以访问功能。界面中可用的功能集取决于您的选项和权限。
-
-在主页的中央部分，可以使用链接访问 Campaign 帮助材料、社区及支持网站。使用中央的卡片浏览新的 Campaign Web 用户界面和 Campaign 控制面板。
-
-浏览上方的选项卡，以访问 Campaign 关键功能：
+连接到Campaign客户端控制台后，浏览上方部分中的选项卡以访问Campaign关键功能：
 
 ![](assets/overview-home.png)
 
@@ -108,13 +122,13 @@ The web access interface is similar to the console interface. From a browser, yo
 
 ## Campaign Web 用户界面 {#ac-web-ui}
 
-作为 Campaign v8 客户端控制台用户，从 v8.6.1 版本开始，您现在可以通过 Adobe Experience Cloud 中央用户界面访问 Web 环境。Experience Cloud 是 Adobe 的数字营销应用程序、产品和服务的集成系列。通过其直观的界面，您可以快速访问云应用程序、产品功能和服务。
+从v8.6.1版本开始，Campaign v8用户可以通过Adobe Experience Cloud中央用户界面访问Web环境。 Experience Cloud 是 Adobe 的数字营销应用程序、产品和服务的集成系列。通过其直观的界面，您可以快速访问云应用程序、产品功能和服务。
 
 ![Adobe Campaign Web 用户界面主页](assets/ac-web-home.png)
 
 >[!AVAILABILITY]
 >
->Campaign Web 用户界面仅供通过 Adobe ID 连接到 Adobe Campaign 的用户使用。了解有关 [Adobe 身份管理系统 (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"} 的更多信息。
+>Campaign Web用户界面仅适用于通过Adobe ID连接到Campaign的Campaign v8用户。 了解有关 [Adobe 身份管理系统 (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"} 的更多信息。
 >
 
 在[此文档](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=zh-Hans){target="_blank"}中详细了解新的 Campaign Web 用户界面。您还可以在 Campaign Web 用户界面文档中访问[常见问题解答页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/faq){target="_blank"}。
@@ -126,7 +140,7 @@ The web access interface is similar to the console interface. From a browser, yo
 
 支持的语言取决于用户界面。
 
-* 对于 Campaign v8 客户端控制台界面，支持的语言包括：
+* 对于Campaign客户端控制台界面，支持的语言包括：
 
    * 英语（英国）
    * 英语（美国）
@@ -137,10 +151,11 @@ The web access interface is similar to the console interface. From a browser, yo
 
   >[!CAUTION]
   >
-  >语言在安装过程中选择，此后无法更改。
+  >在安装过程中选择语言，此后不能更改&#x200B;****。
 
 * 有关 Campaign Web 用户界面支持的语言，[请参阅此页面](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=zh-Hans#language-pref){target="_blank"}。
 
+## 格式
 
 语言会影响日期和时间的格式。
 
@@ -162,13 +177,37 @@ The web access interface is similar to the console interface. From a browser, yo
   </tr> 
   <tr> 
    <td> 短日期<br /> </td> 
-   <td> <p>%2M/%2D/%4Y</p><p><strong>示例：09/25/2018</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y</p><p><strong>示例：25/09/2018</strong></p> </td> 
+   <td> <p>%2M/%2D/%4Y</p><p><strong>例如：2025年9月25日</strong></p> </td> 
+   <td> <p>%2D/%2M/%4Y</p><p><strong>例如：2025年9月25日</strong></p> </td> 
   </tr> 
   <tr> 
    <td> 带时间的短日期<br /> </td> 
-   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>例如：09/25/2018 10:47:25 PM</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>例如：25/09/2018 22:47:25</strong></p> </td> 
+   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>例如：2025年9月25日10:47:25下午</strong></p> </td> 
+   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>例如：2025年9月25日22:47:25</strong></p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+
+
+## 默认单位 {#default-units}
+
+在表示一段时间的字段中（例如，某次投放的资源的有效期、已批准的任务期限等），可采用以下&#x200B;**单位**&#x200B;表示该值：
+
+* **[!UICONTROL s]**&#x200B;表示秒，
+* **[!UICONTROL mn]**&#x200B;分钟，
+* **[!UICONTROL h]**&#x200B;表示小时，
+* **[!UICONTROL d]**&#x200B;天。
+
+
+## 明细列表 {#enumeration}
+
+通过使用下拉列表的输入字段，您可以输入枚举值，该值可以存储，然后作为下拉列表中的选项进行建议。
+
+例如，在收件人用户档案的&#x200B;**[!UICONTROL City]**&#x200B;选项卡的&#x200B;**[!UICONTROL General]**&#x200B;字段中，您可以输入London。 当您按Enter键确认此值时，会出现一条消息，询问您是否要为与该字段关联的枚举保存此值。  如果您单击&#x200B;**[!UICONTROL Yes]**，此值将在相关字段的下拉菜单中可用。
+
+枚举（也称为“明细列表”）由管理员通过&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;部分管理。
+
+了解如何[使用枚举](../dev/enumerations.md)
+
+了解有关架构中[枚举的更多信息](../dev/schema-structure.md#enumerations)

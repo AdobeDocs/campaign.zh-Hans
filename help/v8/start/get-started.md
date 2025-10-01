@@ -6,10 +6,10 @@ role: User
 level: Beginner
 exl-id: 04b12907-3cb1-40f1-90b8-1524d84edf2d
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
-source-wordcount: '994'
-ht-degree: 100%
+source-git-commit: 428de72e0459b95a6db0b06ec8541d0475b72fdd
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 96%
 
 ---
 
@@ -28,6 +28,13 @@ Adobe Campaign v8 在基础架构、安全性、可投放性和监测方面有�
 * **自动**&#x200B;投放有意义、及时的消息和产品建议
 
 ![](assets/do-not-localize/ac-capabilities.png)
+
+
+>[!AVAILABILITY]
+>
+>除非在页面中提及，否则Adobe Campaign （控制台）文档适用于Campaign Classic v7和Campaign v8。
+>
+>请注意，文档中的某些引用可能仍引用以前的品牌，但仍适用于当前产品。
 
 ## Integrated Customer Profile {#integrated-customer-profile}
 

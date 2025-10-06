@@ -5,9 +5,9 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: 428de72e0459b95a6db0b06ec8541d0475b72fdd
+source-git-commit: ed390d5ddd817791dc4f5c2c1c621b594170a836
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '787'
 ht-degree: 97%
 
 ---
@@ -201,25 +201,25 @@ ht-degree: 97%
       + [管理用户权限](start/manage-permissions.md)
       + [添加文件夹权限](start/folder-permissions.md)
    + [控制面板](config/self-service.md)
-+ 架构和配置 {#config}
-   + Campaign v8 架构 {#architecture}
-      + [全局原则](architecture/general-architecture.md)
-      + [架构模型](architecture/architecture.md)
-      + [Campaign FDA 部署](architecture/fda-deployment.md)
-      + 企业 (FFDA) 部署 {#ffda}
-         + [什么是 Campaign FFDA？](architecture/enterprise-deployment.md)
-         + [密钥管理和唯一性](architecture/keys.md)
-         + [新 API](architecture/new-apis.md)
-         + [API 暂存机制](architecture/staging.md)
-         + [复制机制](architecture/replication.md)
++ 架构 {#architecture}
+   + [全局原则](architecture/general-architecture.md)
+   + [架构模型](architecture/architecture.md)
+   + [Campaign FDA 部署](architecture/fda-deployment.md)
+   + 企业 (FFDA) 部署 {#ffda}
+      + [什么是 Campaign FFDA？](architecture/enterprise-deployment.md)
+      + [密钥管理和唯一性](architecture/keys.md)
+      + [新 API](architecture/new-apis.md)
+      + [API 暂存机制](architecture/staging.md)
+      + [复制机制](architecture/replication.md)
++ 配置 {#config}
    + 实施 {#implement}
       + [实施步骤](start/implement.md)
       + [自定义实例](dev/customize.md)
-      + [使用明细列表](dev/enumerations.md)
       + [数据模型最佳实践](dev/datamodel-best-practices.md)
-   + 设置和配置 {#configuration}
+   + 设置 {#settings}
       + [用户界面设置](config/ui-settings.md)
       + [管理文件夹和视图](audiences/folders-and-views.md)
+      + [使用明细列表](dev/enumerations.md)
       + [事务性消息设置](config/transactional-msg-settings.md)
       + [将 Campaign SDK 与您的应用程序集成 - 已弃用页面](config/push-config.md)
       + [外部帐户](config/external-accounts.md)

@@ -27,7 +27,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Adobe Campaign Web User界面提供了重新设计的工作流画布，允许创建更加动态和个性化的客户历程。 要了解有关Web UI工作流的详细信息，请参阅[Adobe Campaign Web UI文档](https://experienceleague.adobe.com/en/docs/campaign-web/v8/wf/gs-workflows){target=_blank}。
+>Adobe Campaign Web User界面提供了重新设计的工作流画布，允许创建更加动态和个性化的客户历程。 要了解有关Web UI工作流的详细信息，请参阅[Adobe Campaign Web UI文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/wf/gs-workflows){target=_blank}。
 
 
 ## 设计和使用工作流 {#gs-ac-wf}
@@ -38,11 +38,11 @@ ht-degree: 4%
 
 * [工作流入门](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target="_blank"}
 
-* [工作流最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
+* [工作流最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hans){target="_blank"}
 
-* [内置技术工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}
+* [内置技术工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=zh-Hans){target="_blank"}
 
-* [监视工作流执行](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
+* [监视工作流执行](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hans){target="_blank"}
 
 * [在营销活动工作流中构建受众](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans){target="_blank"}
 
@@ -52,10 +52,10 @@ ht-degree: 4%
 
 工作流活动按类别分组。 提供了四个活动类别：
 
-* [定位活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities.html){target="_blank"}：查询、读取列表、扩充、合并等
-* [流控制活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/flow-control-activities.html){target="_blank"}：调度程序、分支、警报、外部信号等
-* [操作活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html){target="_blank"}：跨渠道投放、Javascript代码、CRM活动、更新聚合等
-* [事件活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/event-activities.html){target="_blank"}：文件传输、Web下载等
+* [定位活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities.html?lang=zh-Hans){target="_blank"}：查询、读取列表、扩充、合并等
+* [流控制活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/flow-control-activities.html?lang=zh-Hans){target="_blank"}：调度程序、分支、警报、外部信号等
+* [操作活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html?lang=zh-Hans){target="_blank"}：跨渠道投放、Javascript代码、CRM活动、更新聚合等
+* [事件活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/event-activities.html?lang=zh-Hans){target="_blank"}：文件传输、Web下载等
 
 <!--
 ### Change data source activity {#change-data-source-activity}
@@ -76,7 +76,7 @@ To use the **[!UICONTROL Change Data Source]** activity:
 
 1. Query your targeted recipients with a **[!UICONTROL Query]** activity. 
 
-    For more information on the **[!UICONTROL Query]** activity, refer to [this page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}.
+    For more information on the **[!UICONTROL Query]** activity, refer to [this page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"}.
 
 1. From the **[!UICONTROL Targeting]** tab, add a **[!UICONTROL Change data source]** activity and double-click it to select **[!UICONTROL Default data source]**.
     
@@ -84,7 +84,7 @@ To use the **[!UICONTROL Change Data Source]** activity:
 
 1. From the **[!UICONTROL Actions]** tab, drag and drop a **[!UICONTROL JavaScript code]** activity to perform unitary operations on the working table.
 
-    For more information on the **[!UICONTROL JavaScript code]** activity, refer to [this page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code.html){target="_blank"}.
+    For more information on the **[!UICONTROL JavaScript code]** activity, refer to [this page](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code.html?lang=zh-Hans){target="_blank"}.
 
 1. Add another **[!UICONTROL Change data source]** activity to switch back to the Cloud database. 
     
@@ -97,7 +97,7 @@ To use the **[!UICONTROL Change Data Source]** activity:
 
 创建工作流后，您可以使用&#x200B;**[!UICONTROL Properties]**&#x200B;按钮访问其他选项以进行进一步配置。
 
-在&#x200B;**此页面**&#x200B;中了解有关[工作流属性](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/workflow-properties.html){target="_blank"}的更多信息。
+在&#x200B;**此页面**&#x200B;中了解有关[工作流属性](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/workflow-properties.html?lang=zh-Hans){target="_blank"}的更多信息。
 
 从工作流&#x200B;**[!UICONTROL Execution]**&#x200B;的&#x200B;**[!UICONTROL Properties]**&#x200B;选项卡中，您可以选择将工作流链接到不同的仓库并优化工作负载管理。 有关&#x200B;**仓库**&#x200B;的详细信息，请参阅[Snowflake文档](https://docs.snowflake.com/en/user-guide/warehouses-overview.html){target="_blank"}。
 

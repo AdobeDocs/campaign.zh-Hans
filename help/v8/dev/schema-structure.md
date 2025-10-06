@@ -5,7 +5,7 @@ feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 9c4a9e71-3fc8-4b4e-8782-0742bbeaf426
-source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
+source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
 workflow-type: tm+mt
 source-wordcount: '1417'
 ht-degree: 1%
@@ -124,7 +124,7 @@ ht-degree: 1%
 
 数据类型是通过&#x200B;**和**&#x200B;元素中的&#x200B;**`<attribute>`** type **`<element>`**&#x200B;属性输入的。
 
-[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=zh-Hans#configuring-campaign-classic){target="_blank"}中提供了详细列表。
+[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic){target="_blank"}中提供了详细列表。
 
 如果未填充此属性，则&#x200B;**string**&#x200B;是默认的数据类型，除非该元素包含子元素。 如果是，则仅将其用于分层构造元素（示例中为&#x200B;**`<location>`**&#x200B;个元素）。
 
@@ -223,7 +223,7 @@ ht-degree: 1%
 
 ### 明细列表 {#enumerations}
 
-使用可用、固定或基于数据库的[枚举](../dev/enumerations.md)控制字段值。 它们提供了下拉列表，以便于输入、提供一致的数据和灵活的架构设计。
+使用可用、固定或基于数据库的[枚举](../config/enumerations.md)控制字段值。 它们提供了下拉列表，以便于输入、提供一致的数据和灵活的架构设计。
 
 #### 自由枚举 {#free-enumeration}
 

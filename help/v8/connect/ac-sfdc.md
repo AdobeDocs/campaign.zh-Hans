@@ -5,7 +5,7 @@ feature: Salesforce Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 1e20f3b9-d1fc-411c-810b-6271360286f9
-source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
+source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 3%
@@ -66,7 +66,7 @@ ht-degree: 3%
 
 1. 从&#x200B;**[!UICONTROL Synchronizing enumerations...]**&#x200B;链接打开助手。
 1. 选择与Adobe Campaign枚举匹配的Salesforce枚举。
-您可以将Adobe Campaign枚举的所有值替换为CRM的值：要实现此目的，请在&#x200B;**[!UICONTROL Yes]**&#x200B;列中选择&#x200B;**[!UICONTROL Replace]**。
+您可以将Adobe Campaign枚举的所有值替换为CRM的值：要实现此目的，请在**[!UICONTROL Yes]**&#x200B;列中选择&#x200B;**[!UICONTROL Replace]**。
 
    ![](assets/sfdc-enum.png)
 
@@ -80,4 +80,4 @@ Adobe Campaign和Salesforce.com现已连接。 您可以设置两个系统之间
 
 在此页面[中了解有关数据同步](crm-data-sync.md)的更多信息。
 
-在此页面[中了解有关Campaign &#x200B;](../dev/enumerations.md)中枚举管理的更多信息。
+在此页面[中了解有关Campaign ](../config/enumerations.md)中枚举管理的更多信息。

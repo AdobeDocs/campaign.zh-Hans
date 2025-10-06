@@ -6,7 +6,7 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
+source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
 workflow-type: tm+mt
 source-wordcount: '1121'
 ht-degree: 74%
@@ -151,7 +151,7 @@ The web access interface is similar to the console interface. From a browser, yo
 
   >[!CAUTION]
   >
-  >在安装过程中选择语言，此后不能更改&#x200B;**&#x200B;**。
+  >在安装过程中选择语言，此后不能更改&#x200B;****。
 
 * 有关 Campaign Web 用户界面支持的语言，[请参阅此页面](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=zh-Hans#language-pref){target="_blank"}。
 
@@ -191,5 +191,5 @@ The web access interface is similar to the console interface. From a browser, yo
 
 ## 其他资源
 
-* **[使用枚举](../dev/enumerations.md)** — 使用预定义的下拉列表标准化字段值，以便更快、更一致地输入数据。
+* **[使用枚举](../config/enumerations.md)** — 使用预定义的下拉列表标准化字段值，以便更快、更一致地输入数据。
 * **[架构中的枚举](../dev/schema-structure.md#enumerations)** — 作为Campaign开发人员，请在架构中使用免费、固定或基于数据库的枚举来控制字段值。

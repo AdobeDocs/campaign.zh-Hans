@@ -5,7 +5,7 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: ed390d5ddd817791dc4f5c2c1c621b594170a836
+source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
 workflow-type: tm+mt
 source-wordcount: '787'
 ht-degree: 97%
@@ -219,7 +219,7 @@ ht-degree: 97%
    + 设置 {#settings}
       + [用户界面设置](config/ui-settings.md)
       + [管理文件夹和视图](audiences/folders-and-views.md)
-      + [使用明细列表](dev/enumerations.md)
+      + [使用明细列表](config/enumerations.md)
       + [事务性消息设置](config/transactional-msg-settings.md)
       + [将 Campaign SDK 与您的应用程序集成 - 已弃用页面](config/push-config.md)
       + [外部帐户](config/external-accounts.md)

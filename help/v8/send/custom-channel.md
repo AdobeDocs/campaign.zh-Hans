@@ -4,7 +4,7 @@ description: 了解如何使用Adobe Campaign Web创建和发送自定义渠道�
 role: User
 level: Beginner, Intermediate
 exl-id: d2d92de6-3974-41c5-a0fd-09bbf6cf0020
-source-git-commit: e2c7529fb7dc033f35f9c0d2e73273d7f20bac64
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 1%
@@ -17,7 +17,7 @@ Adobe Campaign允许您创建与第三方集成的自定义外部或API渠道。
 
 投放创建和发送可在客户端控制台和Web UI中执行。 但是，自定义通道配置只能在客户端控制台中执行。
 
-要了解如何基于自定义渠道创建和发送投放，请参阅此[页面](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html?lang=zh-Hans){target="_blank"}。
+要了解如何基于自定义渠道创建和发送投放，请参阅此[页面](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/gs-custom-channel.html){target="_blank"}。
 
 以下是在客户端控制台中配置新自定义渠道的步骤。 这些步骤对于自定义外部和API渠道是通用的：
 
@@ -33,7 +33,7 @@ Adobe Campaign允许您创建与第三方集成的自定义外部或API渠道。
 
 1. 在Campaign Explorer中，选择&#x200B;**管理** > **配置** > **数据架构**。
 
-1. 创建架构扩展以使用新渠道扩展messageType枚举。
+1. 创建架构扩展以使用新渠道扩展&#x200B;**messageType** [枚举](../config/enumerations.md)。
 
    例如：
 
@@ -90,7 +90,7 @@ Adobe Campaign允许您创建与第三方集成的自定义外部或API渠道。
 
    ![](assets/cus-schema2.png){zoomable="yes"}
 
-1. 选择与您的渠道对应的选项卡，并定义字段在投放内容屏幕中的显示方式。 有关屏幕编辑的详细信息，请参阅此[页面](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html?lang=zh-Hans#fields){target="_blank"}。
+1. 选择与您的渠道对应的选项卡，并定义字段在投放内容屏幕中的显示方式。 有关屏幕编辑的详细信息，请参阅此[页面](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html#fields){target="_blank"}。
 
    ![](assets/cus-schema3.png){zoomable="yes"}
 

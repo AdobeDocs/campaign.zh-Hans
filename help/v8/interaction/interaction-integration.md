@@ -5,9 +5,9 @@ description: 了解如何在网页中添加优惠
 feature: Interaction, Offers
 role: User, Admin
 exl-id: 1eb0775a-5da9-4a27-aa7b-339372748f9c
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1454'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ HTML页面必须包含一个元素，该元素的@id属性具有已创建选件�
 
 ### 提供已识别的优惠 {#presenting-an-identified-offer}
 
-若要向已识别的联系人提供选件，该过程类似于此部分[&#128279;](#presenting-an-anonymous-offer)中详细描述的过程。
+若要向已识别的联系人提供选件，该过程类似于此部分[中详细描述的](#presenting-an-anonymous-offer)过程。
 
 在网页的内容中，您需要添加以下脚本，以在调用优惠引擎期间识别联系人：
 
@@ -175,7 +175,7 @@ HTML页面必须包含一个元素，该元素的@id属性具有已创建选件�
 
    此架构将定义以下字段：标题编号2和价格。
 
-   示例中架构的名称为&#x200B;**cus：offer**
+   示例中架构的名称为&#x200B;**cus:offer**
 
    ```
    <srcSchema _cs="Marketing offers (cus)" created="2013-01-18 17:14:20.762Z" createdBy-id="0"
@@ -318,11 +318,11 @@ HTML页面必须包含一个元素，该元素的@id属性具有已创建选件�
 
 ### 产品建议提议 {#offer-proposition}
 
-对于通过SOAP的优惠建议，请添加&#x200B;**nms：proposition#Propose**&#x200B;命令，后跟以下参数：
+对于通过SOAP的优惠建议，请添加&#x200B;**nms:proposition#Propose**&#x200B;命令，后跟以下参数：
 
 * **targetId**：收件人的主键（可以是组合键）。
 * **maxCount**：指定联系人的优惠建议数。
-* **上下文**：允许您在空间架构中添加上下文信息。 如果使用的架构是&#x200B;**nms：interaction**，则应添加&#x200B;**`<empty>`**。
+* **上下文**：允许您在空间架构中添加上下文信息。 如果使用的架构是&#x200B;**nms:interaction**，则应添加&#x200B;**`<empty>`**。
 * **类别**：指定选件必须属于的类别。
 * **主题**：指定选件必须属于的主题。
 * **uuid**： Adobe Campaign永久cookie的值(“uuid230”)。
@@ -340,11 +340,11 @@ HTML页面必须包含一个元素，该元素的@id属性具有已创建选件�
 
 ### 优惠更新 {#offer-update}
 
-将&#x200B;**nms：interaction#UpdateStatus**&#x200B;命令添加到URL，后跟以下参数：
+将&#x200B;**nms:interaction#UpdateStatus**&#x200B;命令添加到URL，后跟以下参数：
 
 * **建议**：字符串，它包含在优惠建议期间作为输出提供的建议ID。 请参阅[优惠建议](#offer-proposition)。
-* **状态**：字符串类型，它指定选件的新状态。 可能的值列在&#x200B;**nms：common**&#x200B;架构的&#x200B;**propositionStatus**&#x200B;枚举中。 例如，数字3是现成的，对应于&#x200B;**已接受**&#x200B;状态。
-* **上下文**： XML元素，允许您在空间架构中添加上下文信息。 如果使用的架构是&#x200B;**nms：interaction**，则应添加&#x200B;**`<empty>`**。
+* **状态**：字符串类型，它指定选件的新状态。 可能的值列在&#x200B;**nms**&#x200B;架构的[propositionStatus](../config/enumerations.md) **枚举:common**&#x200B;中。 例如，数字3是现成的，对应于&#x200B;**已接受**&#x200B;状态。
+* **上下文**： XML元素，允许您在空间架构中添加上下文信息。 如果使用的架构是&#x200B;**nms:interaction**，则应添加&#x200B;**`<empty>`**。
 
 ### 使用SOAP调用的示例 {#example-using-a-soap-call}
 

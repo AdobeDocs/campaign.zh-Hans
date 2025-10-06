@@ -5,9 +5,9 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 06fdb279-3776-433f-8d27-33d016473dee
-source-git-commit: 253f3be945cbfa304fa7342c68f0c73b079e2870
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
@@ -73,6 +73,6 @@ Adobe Campaign允许您向将产品添加到购物车的客户发送通知电子
 
 >[!NOTE]
 >
->在[此页面](../../v8/config/ui-settings.md#enumerations)中了解有关枚举的更多信息。
+>了解有关[枚举](../config/enumerations.md)的详细信息。
 
 在下一步中，了解如何[创建和发布事务性消息传递模板](transactional-template.md)。

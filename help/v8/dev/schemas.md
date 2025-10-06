@@ -5,9 +5,9 @@ feature: Schema Extension, Configuration, Data Model
 role: Developer
 level: Intermediate, Experienced
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '1250'
+source-wordcount: '1248'
 ht-degree: 5%
 
 ---
@@ -94,11 +94,11 @@ Adobe Campaign使用数据架构来：
 * **temp**：保留给临时架构
 * **crm**：保留给CRM连接器集成
 
-架构的标识键是使用命名空间和用冒号分隔的名称构建的字符串；例如： **nms：recipient**。
+架构的标识键是使用命名空间和用冒号分隔的名称构建的字符串；例如： **nms:recipient**。
 
 ## 创建或扩展Campaign模式 {#create-or-extend-schemas}
 
-要将字段或其他元素添加到Campaign中的某个核心数据架构，例如收件人表(nms：recipient)，您必须扩展该架构。
+要将字段或其他元素添加到Campaign中的某个核心数据架构(如收件人表(nms:recipient)，您必须扩展该架构。
 
 有关详细信息，请参阅[扩展架构](extend-schema.md)。
 
@@ -117,7 +117,7 @@ Adobe Campaign使用数据架构来：
 
 示例：
 
-```
+```xml
 <enumeration basetype="byte" name="exTransactionTypeEnum" default="store">
 <value label="Website" name="web" value="0"/>
 <value label="Call Center" name="phone" value="1"/>
@@ -127,7 +127,7 @@ Adobe Campaign使用数据架构来：
 
 在定义字段时，您可以使用此枚举，如下所示：
 
-```
+```xml
 <attribute desc="Type of Transaction" label="Transaction Type" name="transactionType" 
 type="string" enum="exTransactionTypeEnum"/>
 ```
@@ -178,7 +178,7 @@ For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-f
 
 示例：
 
-```
+```xml
 <key name="householdId" internal="true">
   <keyfield xpath="@householdId"/>
 </key>
@@ -198,33 +198,33 @@ For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-f
 
 ![](assets/schemaextension_2.png)
 
-[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=zh-Hans#content-model){target="_blank"}的`<attribute>`元素部分中提供了属性的完整列表。 以下是一些更常用的属性： **@advanced**、**@dataPolicy**、**@default**、**@desc**、**@enum**、**@expr**、**@label**、**@length**、**@name**、**@notNull**、**@required**、**@ref**、**@xml**、**@type**。
+`<attribute>`Campaign Classic v7文档[的](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html#content-model){target="_blank"}元素部分中提供了属性的完整列表。 以下是一些更常用的属性： **@advanced**、**@dataPolicy**、**@default**、**@desc**、**@enum**、**@expr**、**@label**、**@length**、**@name**、**@notNull**、**@required**、**@ref**、**@xml**、**@type**。
 
-有关每个属性的更多信息，请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=zh-Hans#configuring-campaign-classic){target="_blank"}中的属性说明。
+有关每个属性的更多信息，请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic){target="_blank"}中的属性说明。
 
 ### 示例 {#examples}
 
 定义默认值的示例：
 
-```
+```xml
 <attribute name="transactionDate" label="Transaction Date" type="datetime" default="GetDate()"/>
 ```
 
 将公共属性用作标记为必填字段的模板的示例：
 
-```
+```xml
 <attribute name="mobile" label="Mobile" template="nms:common:phone" required="true" />
 ```
 
 使用&#x200B;**@advanced**&#x200B;属性隐藏的计算字段示例：
 
-```
+```xml
 <attribute name="domain" label="Email domain" desc="Domain of recipient email address" expr="GetEmailDomain([@email])" advanced="true" />
 ```
 
 XML字段的示例也存储在SQL字段中，该字段具有&#x200B;**@dataPolicy**&#x200B;属性。
 
-```
+```xml
 <attribute name="secondaryEmail" label="Secondary email address" length="100" xml="true" sql="true" dataPolicy="email" />
 ```
 
@@ -246,19 +246,19 @@ XML字段的示例也存储在SQL字段中，该字段具有&#x200B;**@dataPolic
 
 收件人表（现成模式）和自定义事务表之间的1-N链接示例：
 
-```
+```xml
 <element label="Recipient" name="lnkRecipient" revLink="lnkTransactions" target="nms:recipient" type="link"/>
 ```
 
 自定义模式“Car”（位于“cus”命名空间中）和收件人表之间的1-1链接示例：
 
-```
+```xml
 <element label="Car" name="lnkCar" revCardinality="single" revLink="recipient" target="cus:car" type="link"/>
 ```
 
 收件人表和地址表之间的外部联接示例，该表基于电子邮件地址而不是主键：
 
-```
+```xml
 <element name="emailInfo" label="Email Info" revLink="recipient" target="nms:address" type="link" externalJoin="true">
   <join xpath-dst="@address" xpath-src="@email"/>
 </element>
@@ -272,7 +272,7 @@ XML字段的示例也存储在SQL字段中，该字段具有&#x200B;**@dataPolic
 
 使用下面的示例包含与创建日期、创建数据的用户、日期和表格中所有数据的上次修改的作者相关的字段：
 
-```
+```xml
 <element aggregate="xtk:common:auditTrail" name="auditTrail"/>
 ```
 

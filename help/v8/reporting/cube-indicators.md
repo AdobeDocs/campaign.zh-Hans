@@ -5,7 +5,7 @@ feature: Reporting
 role: Data Engineer
 level: Beginner
 exl-id: 03a6816b-e51a-4eaf-ab76-02d24f97ba46
-source-git-commit: 77ec01aaba1e50676bed57f503a9e4e8bb1fe54c
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 3%
@@ -93,7 +93,7 @@ ht-degree: 3%
 
 为此，请选中&#x200B;**[!UICONTROL Enable binning]**&#x200B;选项。 [了解详情](customize-cubes.md#data-binning)。
 
-1. 添加&#x200B;**日期**&#x200B;类型维度。 在这里，我们要显示收件人用户档案创建日期。 为此，请单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择收件人表中的&#x200B;**[!UICONTROL Creation date]**&#x200B;字段。
+1. 添加&#x200B;**日期**&#x200B;类型维度。 在这里，我们要显示收件人用户档案创建日期。 为此，请单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择收件人表中的&#x200B;**[!UICONTROL Creation date]**字段。
 您可以自定义日期显示模式。 要执行此操作，请选择要使用的层次和要生成的级别：
 
 ![](assets/cube-date-dimension.png)
@@ -102,7 +102,7 @@ ht-degree: 3%
 
 1. 创建另一个维度以分析相对于收件人城市的数据。 为此，请添加新维度，然后在收件人架构的&#x200B;**[!UICONTROL Location]**&#x200B;节点中选择城市。
 
-您可以启用量化以使信息读取更轻松并将值链接到明细列表。
+您可以启用量化以使信息读取更容易，并将值链接到[枚举](../config/enumerations.md)。
 
 从下拉列表中选择明细列表。 请注意，此枚举必须定义为&#x200B;**[!UICONTROL Reserved for binning]**。
 

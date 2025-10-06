@@ -6,7 +6,7 @@ feature: Campaigns, Templates
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
-source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 4%
@@ -133,7 +133,7 @@ ht-degree: 4%
 
 * **投放概要**
 
-  选择此模块后，将在&#x200B;**[!UICONTROL Documents]**&#x200B;选项卡中添加一个&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;子选项卡，以定义营销活动的投放大纲。 在[本节](marketing-campaign-assets.md#delivery-outlines)中了解有关投放概要的更多信息。
+  选择此模块后，将在&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;选项卡中添加一个&#x200B;**[!UICONTROL Documents]**&#x200B;子选项卡，以定义营销活动的投放大纲。 在[本节](marketing-campaign-assets.md#delivery-outlines)中了解有关投放概要的更多信息。
 
   ![](assets/template-activate-4.png)
 
@@ -169,8 +169,7 @@ ht-degree: 4%
 * 输入模板的&#x200B;**标签**：标签是必需的，并且是基于此模板的所有营销活动的默认标签。
 * 从下拉列表中选择营销活动&#x200B;**性质**。 此列表中的可用值是保存在&#x200B;**[!UICONTROL natureOp]**&#x200B;枚举中的值。
 
-在[此页面](../../v8/config/ui-settings.md#enumerations)中了解如何访问和配置枚举。
-
+  在[此页面](../../v8/config/enumerations.md)中了解如何访问和配置枚举。
 
 * 选择&#x200B;**类型的营销活动**：唯一、定期或定期。 默认情况下，营销活动模板适用于独特营销活动。 [此部分](recurring-periodic-campaigns.md)中详细介绍了循环和定期营销活动。
 * 指定营销活动的持续时间，即营销活动将发生的天数。 基于此模板创建营销活动时，将自动填充营销活动开始和结束日期。

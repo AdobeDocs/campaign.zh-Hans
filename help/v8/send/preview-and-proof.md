@@ -5,9 +5,9 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 5b9fa90c-c23e-47a7-b2ca-de75da4da2ab
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '702'
 ht-degree: 16%
 
 ---
@@ -48,8 +48,9 @@ ht-degree: 16%
 从&#x200B;**[!UICONTROL Targeting mode]**&#x200B;下拉列表中选择了校对目标的类型。
 
 * 使用&#x200B;**[!UICONTROL Definition of a specific proof target]**&#x200B;选项选择数据库中的收件人作为验证目标。
-* 使用&#x200B;**[!UICONTROL Substitution of the address]**&#x200B;选项输入电子邮件地址并使用目标收件人数据验证内容。 可以手动输入替代地址，也可以从下拉列表中选择替代地址。 关联的枚举是替换地址(rcpAddress)。
-默认情况下，会随机执行替换，但您可以通过&#x200B;**[!UICONTROL Detail]**&#x200B;图标从主目标中选择特定收件人。
+* 使用&#x200B;**[!UICONTROL Substitution of the address]**&#x200B;选项输入电子邮件地址并使用目标收件人数据验证内容。 可以手动输入替代地址，也可以从下拉列表中选择替代地址。 关联的[枚举](../config/enumerations.md)是&#x200B;**替代地址(rcpAddress)**。
+
+  默认情况下，会随机执行替换，但您可以通过&#x200B;**[!UICONTROL Detail]**&#x200B;图标从主目标中选择特定收件人。
 
   ![](assets/target-of-proofs-substitution-details.png){width="800" align="left"}
 
@@ -62,7 +63,7 @@ ht-degree: 16%
 
   >[!NOTE]
   >
-  >种子地址不属于默认收件人表(nms：recipient)，而是在单独的表中创建的。 如果使用新数据扩展收件人表，则还必须使用相同数据扩展种子地址表。
+  >种子地址不属于默认收件人表(nms:recipient)，它们是在单独的表中创建的。 如果使用新数据扩展收件人表，则还必须使用相同数据扩展种子地址表。
 
   在[本节](../audiences/test-profiles.md)中了解有关种子地址的更多信息。
 
@@ -105,4 +106,4 @@ ht-degree: 16%
 
 了解如何为电子邮件投放发送并验证校样。
 
->[!VIDEO](https://video.tv.adobe.com/v/3447009?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/333404)

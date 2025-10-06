@@ -6,7 +6,7 @@ feature: Workflows
 role: User, Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: 2693856c-80b2-4e35-be8e-2a9760f8311f
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
 source-wordcount: '2064'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Adobe Campaign附带一组内置的技术工作流。 它们控制计划在服�
 
 | 技术工作流 | 包 | 说明 |
 |------|--------|-----------|
-| **别名清理** (aliasCleansing) | 默认安装 | 此工作流可标准化枚举值。 默认情况下，此工作流于每日凌晨3点触发。 |
+| **别名清理** (aliasCleansing) | 默认安装 | 此工作流标准化[枚举](../../v8/config/enumerations.md#alias-cleansing)值。 默认情况下，此工作流于每日凌晨3点触发。 |
 | **帐单** （帐单） | 默认安装 | 此工作流会通过电子邮件将系统活动报告发送给“billing”操作员。 它在每月25日在营销实例上触发。 |
 | **营销活动作业** (operationMgt) | 默认安装 | 此工作流用于管理营销活动（启动项定位、文件提取等）的作业。 它还创建与循环和定期活动相关的工作流。 |
 | **为HeatMap服务** (collectDataHeatMapService)收集数据 | 默认安装 | 此工作流可检索HeatMap服务所需的数据。 |

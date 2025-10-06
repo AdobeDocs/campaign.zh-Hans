@@ -6,10 +6,10 @@ role: User
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '4024'
-ht-degree: 36%
+source-wordcount: '4027'
+ht-degree: 35%
 
 ---
 
@@ -70,7 +70,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 1. 在&#x200B;**[!UICONTROL Label]**&#x200B;字段中输入此导入的名称。 您可以添加描述。
 1. 在相应的字段中选择导入类型。 有两种可能的导入类型：**[!UICONTROL Simple import]**&#x200B;用于仅导入一个文件，而&#x200B;**[!UICONTROL Multiple import]**&#x200B;用于在单次执行中导入多个文件。
 
-   对于多次导入，从导入助理第一个屏幕中的&#x200B;**[!UICONTROL Import type]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Multiple import]**。
+   对于多次导入，从导入助理第一个屏幕中的&#x200B;**[!UICONTROL Multiple import]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Import type]**。
 
    ![](assets/s_ncs_user_import_wizard01_2.png)
 
@@ -104,7 +104,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
    * **[!UICONTROL Do not update enumerations]**
 
-     选择此选项可避免扩大数据库中的枚举值清单。
+     选择此选项可避免扩充数据库中的枚举值列表。 了解有关[枚举](../config/enumerations.md)的详细信息。
 
 * **[!UICONTROL Variables]**&#x200B;选项卡
 
@@ -300,13 +300,13 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 >[!NOTE]
 >
->在仅导入收件人时以及使用预设的 Adobe Campaign 收件人表 (**nms:recipient**) 时，将出现此步骤。
+>当仅导入收件人并使用默认的Adobe Campaign收件人表(**nms:recipient**)时，将显示此步骤。
 
 * 单击&#x200B;**[!UICONTROL Edit]**&#x200B;链接以选择要与收件人关联或订阅的文件夹、列表或服务。
 
    1. 导入到文件夹中
 
-      **[!UICONTROL Import into a folder]**&#x200B;部分的&#x200B;**[!UICONTROL Edit...]**&#x200B;链接允许您选择或创建收件人将导入到的文件夹。 默认情况下，如果未定义分区，则会将数据导入到操作员的预设文件夹中。
+      **[!UICONTROL Edit...]**&#x200B;部分的&#x200B;**[!UICONTROL Import into a folder]**&#x200B;链接允许您选择或创建收件人将导入到的文件夹。 默认情况下，如果未定义分区，则会将数据导入到操作员的预设文件夹中。
 
       >[!NOTE]
       >
@@ -326,7 +326,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
    1. 与清单相关联
 
-      **[!UICONTROL Add recipients to a list]**&#x200B;部分中的&#x200B;**[!UICONTROL Edit...]**&#x200B;链接允许您选择或创建收件人将导入到的列表。
+      **[!UICONTROL Edit...]**&#x200B;部分中的&#x200B;**[!UICONTROL Add recipients to a list]**&#x200B;链接允许您选择或创建收件人将导入到的列表。
 
       ![](assets/s_ncs_user_import_wizard05_5.png)
 
@@ -338,7 +338,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
    1. 订阅服务
 
-      若要为所有导入的收件人订阅信息服务，请单击&#x200B;**[!UICONTROL Subscribe recipients to a service]**&#x200B;部分的&#x200B;**[!UICONTROL Edit...]**&#x200B;链接，以选择或创建收件人将订阅的信息服务。 您可以选择&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;选项：此消息的内容在与订阅服务关联的投放模板中定义。
+      若要为所有导入的收件人订阅信息服务，请单击&#x200B;**[!UICONTROL Edit...]**&#x200B;部分的&#x200B;**[!UICONTROL Subscribe recipients to a service]**&#x200B;链接，以选择或创建收件人将订阅的信息服务。 您可以选择&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;选项：此消息的内容在与订阅服务关联的投放模板中定义。
 
       ![](assets/s_ncs_user_import_wizard05_7.png)
 
@@ -413,7 +413,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 * 对于&#x200B;**[!UICONTROL Text]**&#x200B;格式，选择分隔符以分隔列（制表符、逗号、分号或自定义）和字符串（单引号、双引号或无）。
 * 对于&#x200B;**[!UICONTROL text]**&#x200B;和&#x200B;**[!UICONTROL CSV]**，您可以选择选项&#x200B;**[!UICONTROL Use first lines as column titles]**。
 * 指示日期格式和数字格式。 为此，请单击相关字段的&#x200B;**[!UICONTROL Edit]**&#x200B;按钮并使用编辑器。
-* 对于包含枚举值的字段，可以选择&#x200B;**[!UICONTROL Export labels instead of internal values of enumerations]**。 例如，标题可以以&#x200B;**1=Mr格式存储。**，**2=小姐**，**3=太太。**。 如果选择此选项，将导出 **Mr.**&#x200B;**、Miss** 和 **Mrs.**。
+* 对于包含枚举值的字段，可以选择&#x200B;**[!UICONTROL Export labels instead of internal values of enumerations]**。 例如，标题可以以&#x200B;**1=Mr格式存储。**，**2=小姐**，**3=太太。**。 如果选择此选项，将导出 **Mr.****、Miss** 和 **Mrs.**。
 
 #### 第 4 步 - 数据选择 {#step-4---data-selection}
 

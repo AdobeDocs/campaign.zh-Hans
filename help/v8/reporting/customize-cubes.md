@@ -6,7 +6,7 @@ feature: Reporting
 role: Data Engineer
 level: Beginner
 exl-id: 300aedd0-6b5d-4264-bd63-e26a41ab64db
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
 source-wordcount: '1438'
 ht-degree: 2%
@@ -22,14 +22,14 @@ ht-degree: 2%
 总体而言，提供了三种类型的量化：
 
 1. 使用手动定义的值范围。 例如，年龄、平均购物车、打开的投放数量等)。 有关详细信息，请参阅[定义每个bin](#defining-each-bin)。
-1. 根据枚举的值，动态地：仅显示枚举中包含的值，所有其他值都将分组到“其他”中。 有关详细信息，请参阅[动态管理回收站](#dynamically-managing-bins)。
+1. 根据[枚举](../config/enumerations.md)的值，动态显示：仅显示枚举中包含的值，所有其他值都将分组到“其他”中。 有关详细信息，请参阅[动态管理回收站](#dynamically-managing-bins)。
 1. 使用值范围，将所有其他字段组合在一起。 例如，18至25岁、26至59岁和其他人。 有关详细信息，请参阅[创建值范围](#creating-value-ranges)。
 
 要启用量化，请在创建尺寸时选中相应的复选框。
 
 ![](assets/cube-class.png)
 
-您可以手动创建二进制文件或者将其链接到现有枚举。
+您可以手动创建二进制文件或者将其链接到现有的[枚举](../config/enumerations.md)。
 
 Adobe Campaign还提供了自动绑定的助手：可以将值划分为N组，或根据数据库中最常见的值分组。
 
@@ -47,7 +47,7 @@ Adobe Campaign还提供了自动绑定的助手：可以将值划分为N组，�
 
 ![](assets/cube-add-new-bin-2.png)
 
-可以使用SQL掩码将多个值组合到一个过滤器中。 为此，请检查&#x200B;**[!UICONTROL Use an SQL mask]**&#x200B;列中的&#x200B;**[!UICONTROL Yes]**&#x200B;并输入要应用于&#x200B;**[!UICONTROL Value or expression]**&#x200B;列的SQL筛选器。
+可以使用SQL掩码将多个值组合到一个过滤器中。 为此，请检查&#x200B;**[!UICONTROL Yes]**&#x200B;列中的&#x200B;**[!UICONTROL Use an SQL mask]**&#x200B;并输入要应用于&#x200B;**[!UICONTROL Value or expression]**&#x200B;列的SQL筛选器。
 
 <!--In the example below, all email domains that start with **yahoo** (yahoo.fr, yahoo.com, yahoo.be, etc.), or with **ymail** (ymail.com, ymail.eu, etc.) will be grouped under the label **YAHOO!**, as well as addresses with the **rocketmail.com** domain.-->
 
@@ -64,7 +64,7 @@ Adobe Campaign还提供了自动绑定的助手：可以将值划分为N组，�
 
    每当更新枚举值时，将自动调整匹配的量化。
 
-在[此页面](../../v8/config/ui-settings.md#enumerations)中了解有关枚举的更多信息。
+   在[此页面](../config/enumerations.md)中了解有关枚举的更多信息。
 
 ### 创建值范围 {#create-value-ranges}
 

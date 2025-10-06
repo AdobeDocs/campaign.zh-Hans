@@ -3,7 +3,7 @@ title: Adobe Campaign内置投放报告
 description: Adobe Campaign内置投放报告
 feature: Reporting
 exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 12%
@@ -83,7 +83,7 @@ ht-degree: 12%
 >
 >此报告中显示的域名在多维数据集级别使用的明细列表中定义。 要更改、添加或删除默认域，请编辑&#x200B;**[!UICONTROL Domains]**&#x200B;明细列表并修改值和别名。 **[!UICONTROL Others]**&#x200B;类别包括不属于明细列表任何值的域名。
 >
->在[此页面](../config/ui-settings.md)中了解如何访问和配置枚举。
+>在[此页面](../config/enumerations.md)中了解如何访问和配置枚举。
 
 
 **[!UICONTROL 4. Generated click streams]**

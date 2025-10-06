@@ -5,7 +5,7 @@ feature: Schema Extension, Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: 796af848-b537-4b8d-a601-fe0628a1fc83
-source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
+source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 2%
@@ -67,7 +67,7 @@ ht-degree: 2%
 
    作为最佳实践，可通过添加`dataSource="nms:extAccount:ffda"`属性在云数据库中创建表。 默认情况下，创建新表时会添加此属性。
 
-   ```
+   ```xml
    <srcSchema created="YYYY-MM-DD HH:MM:SS.TZ" desc="Active contracts" img="crm:crm/mscrm/mscrm_account_16x16.png"
            label="Contracts" labelSingular="Contract" lastModified="YYYY-MM-DD HH:MM:SS.TZ"
            mappingType="sql" name="Contracts" namespace="cus" xtkschema="xtk:srcSchema">
@@ -87,7 +87,7 @@ ht-degree: 2%
 
    添加合同枚举的类型。
 
-   ```
+   ```xml
    <srcSchema created="AA-MM-DD HH:MM:SS.TZ" desc="Active contracts" img="crm:crm/mscrm/mscrm_account_16x16.png" label="Contracts" labelSingular="Contract" AA-MM-DD HH:MM:SS.TZ"mappingType="sql" name="Contracts" namespace="cus" xtkschema="xtk:srcSchema">
       <enumeration basetype="byte" name="typeContract">
          <value label="Home" name="home" value="0"/>

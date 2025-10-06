@@ -5,9 +5,9 @@ feature: Configuration, Application Settings
 role: Developer
 version: Campaign v8, Campaign Classic v7
 level: Intermediate, Experienced
-source-git-commit: 2898fe400e9bf53fc2fe8fde26ccc61ec43bc69e
+source-git-commit: a1f479538a2d93a2ec13e35cb6813e09c8c4a5f8
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '797'
 ht-degree: 1%
 
 ---
@@ -16,19 +16,19 @@ ht-degree: 1%
 
 枚举（也称为明细列表）是预定义的值列表，可用于填写某些字段。 枚举有助于标准化字段值，使数据输入更加一致并简化查询。
 
-如果可用，这些值将显示在下拉列表中。 您可以直接选择一个值或开始键入 — 预测输入会建议匹配值并自动完成它们。
+定义后，值将显示在下拉列表中。 可以直接选择值，也可以使用预测输入输入输入值，这将会建议并完成匹配条目。 某些字段包括预定义枚举，如果需要，可以创建其他枚举。
 
 ![](assets/enum_values.png)
 
-某些控制台字段配置了枚举。 如果枚举是&#x200B;**open**，则还可以直接在字段中添加新值。
-
-![访问枚举](../config/assets/enumerations-menu.png)
 
 ## 枚举类型 {#types-of-enum}
 
 枚举存储在资源管理器的&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;文件夹中。
 
-它们可以是：开放、系统、表情符号或闭合。
+![访问枚举](../config/assets/enumerations-menu.png)
+
+
+枚举可以是： **Open**、**System**、**表情符号**&#x200B;或&#x200B;**Closed**。
 
 * **Open**&#x200B;枚举允许用户直接基于此枚举在字段中添加新值。
 * **Closed**&#x200B;枚举具有只能从资源管理器的&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;文件夹中修改的固定值列表。
@@ -44,11 +44,12 @@ ht-degree: 1%
 
 ## 别名清理 {#alias-cleansing}
 
-在枚举字段中，您可以选择值，或输入在下拉列表中不可用的自定义值。 可以将自定义值作为新值添加到现有枚举值中 — 在这种情况下，必须选择&#x200B;**[!UICONTROL Open]**&#x200B;选项。 可以使用别名清理功能清理这些自定义值。 例如，如果用户输入`Adob`而不是`Adobe`，则别名清理过程可以自动用正确的术语替换它。
+在枚举字段中，可以从下拉列表中选择一个值，如果列表中没有值，也可以手动输入。 启用&#x200B;**[!UICONTROL Open]**&#x200B;选项后，可以将自定义值添加到枚举中。 这些值以后可以通过别名清理进行标准化，这将自动将变体替换为正确的术语（例如，将`Adob`转换为`Adobe`）。
+
 
 >[!CAUTION]
 >
->数据清理是影响数据库中数据的关键过程。 Adobe Campaign会执行批量数据更新，这可能会导致某些值被删除。 因此，此操作是为专家用户保留的。
+>数据清理是一项影响数据库值的关键操作。 Adobe Campaign执行批量数据更新，这可能会导致删除某些值。 此操作仅适用于专家用户。
 
 启用&#x200B;**[!UICONTROL Alias cleansing]**&#x200B;选项以使用枚举的数据清理功能。 选择此选项时，**[!UICONTROL Alias]**&#x200B;选项卡将显示在窗口的底部。
 

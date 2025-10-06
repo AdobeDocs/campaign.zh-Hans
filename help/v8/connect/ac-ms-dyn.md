@@ -185,7 +185,7 @@ ht-degree: 3%
 
 1. 从&#x200B;**[!UICONTROL Synchronizing enumerations...]**&#x200B;链接打开助手。
 1. 选择与Dynamics 365枚举匹配的Adobe Campaign枚举。
-您可以将Adobe Campaign枚举的所有值替换为CRM的值：要实现此目的，请在**[!UICONTROL Yes]**&#x200B;列中选择&#x200B;**[!UICONTROL Replace]**。
+您可以将Adobe Campaign枚举的所有值替换为CRM的值：要实现此目的，请在&#x200B;**[!UICONTROL Yes]**&#x200B;列中选择&#x200B;**[!UICONTROL Replace]**。
 1. 单击&#x200B;**[!UICONTROL Next]**，然后单击&#x200B;**[!UICONTROL Start]**&#x200B;以开始导入枚举。
 1. 浏览&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;节点以检查导入的值。
 
@@ -195,7 +195,7 @@ Adobe Campaign和Microsoft Dynamics 365现已连接。 您可以设置两个系�
 
 在此页面[中了解有关数据同步](crm-data-sync.md)的更多信息。
 
-在此页面[中了解有关Campaign ](../config/enumerations.md)中枚举管理的更多信息。
+在此页面[中了解有关Campaign &#x200B;](../config/enumerations.md)中枚举管理的更多信息。
 
 ### 支持的字段数据类型 {#ms-dyn-supported-types}
 

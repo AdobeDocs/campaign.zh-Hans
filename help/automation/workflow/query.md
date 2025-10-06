@@ -6,9 +6,9 @@ feature: Workflows, Targeting Activity, Query Editor
 role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1603'
 ht-degree: 1%
 
 ---
@@ -20,16 +20,13 @@ ht-degree: 1%
 ## 创建查询 {#creating-a-query}
 
 通过查询，您可以根据条件选择目标。 您可以将区段代码关联到查询结果并在其中插入附加数据。
-有关查询示例的详细信息，请参阅此[此部分](querying-recipient-table.md)。
-
->[!NOTE]
->
->Adobe Campaign Web UI具有强大的查询建模器，可简化根据各种条件筛选数据库以选择特定目标的过程，从而让您更轻松地创建和管理查询。 要了解有关Web UI查询建模器的更多信息，请参阅[Adobe Campaign Web UI文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/query-database/query-modeler-overview){target=_blank}。
-
+在[本节](querying-recipient-table.md)中了解如何通过用例构建查询。 另请参阅有关[查询编辑器](../../v8/start/query-editor.md)的部分。
 
 ![](assets/query-activity.png){width="70%" align="center" zoomable="yes"}
 
-有关使用和管理附加数据的详细信息，请参阅[添加数据](#adding-data)。
+>[!NOTE]
+>
+>Adobe Campaign Web用户界面提供了一个功能强大的查询建模器，可简化根据各种条件筛选数据库以选择特定目标的过程，从而使您能够更轻松地创建和管理查询。 要了解有关Web UI查询建模器的更多信息，请参阅[Adobe Campaign Web UI文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/query-database/query-modeler-overview){target=_blank}。
 
 **[!UICONTROL Edit query...]**&#x200B;链接允许您按以下方式定义群体的定位类型、限制和选择标准：
 
@@ -103,7 +100,7 @@ ht-degree: 1%
 
 1. 如有必要，请在&#x200B;**[!UICONTROL Data collected]**&#x200B;字段中选择一个值，以指定要保留的集合的元素数。 默认情况下，将恢复集合中的所有行，然后根据在以下步骤中指定的条件进行筛选。
 
-   * 如果集合的单个元素与此集合的过滤条件一致，请在&#x200B;**[!UICONTROL Data collected]**&#x200B;字段中选择&#x200B;**[!UICONTROL Single row]**。
+   * 如果集合的单个元素与此集合的过滤条件一致，请在&#x200B;**[!UICONTROL Single row]**&#x200B;字段中选择&#x200B;**[!UICONTROL Data collected]**。
 
      >[!IMPORTANT]
      >
@@ -160,7 +157,7 @@ ht-degree: 1%
 * 架构
 * recCount
 
-这组三个值标识查询所定向的群体。 **[!UICONTROL tableName]**&#x200B;是记录目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms：recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。
+这组三个值标识查询所定向的群体。 **[!UICONTROL tableName]**&#x200B;是记录目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms:recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。
 
 此值是工作表的模式。 此参数对于具有&#x200B;**[!UICONTROL tableName]**&#x200B;和&#x200B;**[!UICONTROL schema]**&#x200B;的所有过渡都有效。
 

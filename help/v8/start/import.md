@@ -6,35 +6,22 @@ role: User
 level: Beginner
 exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 version: Campaign v8, Campaign Classic v7
-source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
-source-wordcount: '4027'
-ht-degree: 35%
+source-wordcount: '3832'
+ht-degree: 34%
 
 ---
 
 # 将数据导入 Campaign {#ootb-profiles}
 
-Campaign 可帮助您将联系人添加到云数据库。您可以加载文件、计划和自动更新多个联系人，在网站上收集数据，或直接在收件人表格中输入轮廓信息。
-
-[受众](audiences.md)入门
-
-了解营销活动[数据模型](../dev/datamodel.md)
-
-## 在工作流中导入轮廓
+Campaign可帮助您将联系人添加到数据库。 您可以加载文件、计划和自动更新多个联系人，在网站上收集数据，或直接在收件人表格中输入轮廓信息。
 
 轮廓导入在专用模板中进行配置，通过&#x200B;**导入**&#x200B;活动工作流执行。它们可以根据计划自动重复，例如用于在多个信息系统之间自动交换数据。在[此部分](../../automation/workflow/recurring-import-workflow.md)中了解更多信息。
 
 ![](assets/import-wf.png)
 
-
-## 运行统一导入
-
-创建并执行通用数据导入任务，以便在云数据库中加载联系人。
-
-![](assets/new-import.png)
-
-### 导入数据
+## 运行导入
 
 Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多个文件导入数据库。 这些文件与表（主表或链接的表）相关联，并且源文件的每个字段与数据库的字段相关联。
 
@@ -42,19 +29,18 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 >
 >您可以使用&#x200B;**[!UICONTROL Import a list]**&#x200B;函数导入数据，而无需将其与数据库数据进行映射。 然后，可以通过&#x200B;**[!UICONTROL Read list]**&#x200B;对象在工作流中专门使用该数据。 有关详细信息，请参见[此页面](../../automation/workflow/read-list.md)。
 
+
+## 使用导入助手
+
 导入助手允许您配置导入、定义其选项（如数据转换）并启动执行。 它是一系列屏幕，其内容取决于导入类型（简单或多个）和操作员权限。
 
 创建新导入作业后，将显示导入助手。
 
->[!NOTE]
->
->如果使用 IIS Web 服务器，则可能需要通过配置授权上传大文件 (> 28 MB)。
-
-#### 源文件 {#source-file}
+![](assets/new-import.png)
 
 在源文件中，每行都与记录一致。 记录中的数据由分隔符（空格、制表符、字符等）分隔。 这意味着以列的形式检索数据，并且每列与数据库的字段相关联。
 
-## 第1步 — 选择导入模板 {#step-1---choosing-the-import-template}
+### 第1步 — 选择导入模板 {#step-1---choosing-the-import-template}
 
 启动导入助理时，必须首先选择模板。 例如，要配置导入收到简报的收件人，请按照以下步骤操作：
 
@@ -84,37 +70,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
    >
    >Multiple import 应仅用于满足特定需求，不是建议的选项。
 
-### 高级参数 {#advanced-parameters}
-
-**[!UICONTROL Advanced parameters]**&#x200B;链接允许您访问以下选项：
-
-* **[!UICONTROL General]**&#x200B;选项卡
-
-   * **[!UICONTROL Stop execution if there are too many rejects]**
-
-     默认情况下，该选项处于选中状态。 如果要继续执行导入，而不考虑拒绝的次数，则可以取消选择它。 默认情况下，如果拒绝前 100 行，则停止执行。
-
-   * **[!UICONTROL Trace mode]**
-
-     选择此选项可追踪每行的导入执行情况。
-
-   * **[!UICONTROL Start the job in a detached process]**
-
-     默认情况下，该选项处于选中状态。 它允许您分离导入的执行，使其不会影响数据库中正在进行的其他作业。
-
-   * **[!UICONTROL Do not update enumerations]**
-
-     选择此选项可避免扩充数据库中的枚举值列表。 了解有关[枚举](../config/enumerations.md)的详细信息。
-
-* **[!UICONTROL Variables]**&#x200B;选项卡
-
-  您可以定义与作业关联的变量，该变量可在查询编辑器和计算字段中访问。 要创建变量，请单击&#x200B;**[!UICONTROL Add]**&#x200B;并使用变量编辑器。
-
-  >[!IMPORTANT]
-  >
-  >**[!UICONTROL Variables]**&#x200B;选项卡仅供工作流类型编程使用，且仅应由专家用户配置。
-
-## 第 2 步 - 源文件选择 {#step-2---source-file-selection}
+#### 第 2 步 - 源文件选择 {#step-2---source-file-selection}
 
 源文件可以是文本格式（txt、csv、tab、固定列）或 xml。
 
@@ -146,7 +102,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 单击&#x200B;**[!UICONTROL OK]**&#x200B;保存格式，然后单击&#x200B;**[!UICONTROL Next]**&#x200B;显示下一步。
 
-## 第 3 步 - 字段映射 {#step-3---field-mapping}
+### 第 3 步 - 字段映射 {#step-3---field-mapping}
 
 然后，您必须选择目标模式并将每列的数据映射到数据库中的字段。
 
@@ -173,7 +129,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 * 您可以使用位于中央表格右侧的相应图标来添加计算字段。 计算字段允许您执行复杂的转换、添加虚拟列或合并多个列的数据。 有关各种可能性的详细信息，请参见以下部分。
 
-### 计算字段 {#calculated-fields}
+#### 计算字段 {#calculated-fields}
 
 计算字段是添加到源文件的新列，并从其他列计算。 然后，计算字段可以与Adobe Campaign数据库的字段关联。 但是，在计算字段中无法进行对帐操作。
 
@@ -190,7 +146,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
   ![](assets/s_ncs_user_import_wizard03_4.png)
 
-#### 第 4 步 – 调解 {#step-4---reconciliation}
+### 第 4 步 – 调解 {#step-4---reconciliation}
 
 通过import assistant的协调步骤，可定义文件数据与数据库中现有数据的协调模式，并设置文件数据与数据库数据之间的优先级规则。 配置窗口如下所示：
 
@@ -292,7 +248,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 ![](assets/s_ncs_user_import_errors_export.png)
 
-#### 第 5 步 - 导入收件人时的附加步骤 {#step-5---additional-step-when-importing-recipients}
+### 第 5 步 - 导入收件人时的附加步骤 {#step-5---additional-step-when-importing-recipients}
 
 在import assistant的下一个步骤中，您可以选择或创建数据将导入到的文件夹，自动将导入的收件人映射到（新的或现有的）列表，并将收件人订阅服务。
 
@@ -348,7 +304,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 单击&#x200B;**[!UICONTROL Next]**&#x200B;以验证此步骤并显示以下步骤。
 
-## 步骤6 — 启动导入 {#step-6---launching-the-import}
+### 步骤6 — 启动导入 {#step-6---launching-the-import}
 
 利用该助理的最后一步可以启动数据导入。 为此，请单击&#x200B;**[!UICONTROL Start]**&#x200B;按钮。
 
@@ -356,7 +312,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 然后，您可以监视导入作业的执行（请参阅[监视工作流执行](../../automation/workflow/monitor-workflow-execution.md)）。
 
-### 导出数据
+## 导出数据
 
 导出作业允许您访问数据库并从数据库中提取数据：联系人、客户端、列表、区段等。
 
@@ -366,7 +322,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 创建新导出作业后，将显示导出助手。
 
-#### 第1步 — 选择导出模板 {#step-1---choosing-the-export-template}
+### 第1步 — 选择导出模板 {#step-1---choosing-the-export-template}
 
 启动导出助理时，必须首先选择模板。 例如，要配置最近注册的收件人的导出，请按照以下步骤操作：
 
@@ -382,7 +338,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 1. 在&#x200B;**[!UICONTROL Label]**&#x200B;字段中输入导出名称。 您可以添加描述。
 1. 选择导出类型。 有两种可能的导出类型：**[!UICONTROL Simple export]**&#x200B;用于仅导出一个文件，而&#x200B;**[!UICONTROL Multiple export]**&#x200B;用于从一种或多种类型的源文档在单次执行中导出多个文件。
 
-## 第 2 步 - 要导出的文件类型 {#step-2---type-of-file-to-export}
+### 第 2 步 - 要导出的文件类型 {#step-2---type-of-file-to-export}
 
 选择要导出的文档类型，即要导出的数据模式。
 
@@ -413,9 +369,9 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 * 对于&#x200B;**[!UICONTROL Text]**&#x200B;格式，选择分隔符以分隔列（制表符、逗号、分号或自定义）和字符串（单引号、双引号或无）。
 * 对于&#x200B;**[!UICONTROL text]**&#x200B;和&#x200B;**[!UICONTROL CSV]**，您可以选择选项&#x200B;**[!UICONTROL Use first lines as column titles]**。
 * 指示日期格式和数字格式。 为此，请单击相关字段的&#x200B;**[!UICONTROL Edit]**&#x200B;按钮并使用编辑器。
-* 对于包含枚举值的字段，可以选择&#x200B;**[!UICONTROL Export labels instead of internal values of enumerations]**。 例如，标题可以以&#x200B;**1=Mr格式存储。**，**2=小姐**，**3=太太。**。 如果选择此选项，将导出 **Mr.**&#x200B;**、Miss** 和 **Mrs.**。
+* 对于包含枚举值的字段，可以选择&#x200B;**[!UICONTROL Export labels instead of internal values of enumerations]**。 例如，标题可以以&#x200B;**1=Mr格式存储。**，**2=小姐**，**3=太太。**。 如果选择此选项，将导出 **Mr.****、Miss** 和 **Mrs.**。
 
-#### 第 4 步 - 数据选择 {#step-4---data-selection}
+### 第 4 步 - 数据选择 {#step-4---data-selection}
 
 选择要导出的字段。 操作步骤：
 
@@ -426,19 +382,19 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以调用函数。
 
-#### 步骤5 — 对列排序 {#step-5---sorting-columns}
+### 步骤5 — 对列排序 {#step-5---sorting-columns}
 
 选择列的排序顺序。
 
 ![](assets/s_ncs_user_export_wizard05.png)
 
-#### 第 6 步 - 筛选条件 {#step-6---filter-conditions-}
+### 第 6 步 - 筛选条件 {#step-6---filter-conditions-}
 
 可添加筛选条件以避免导出所有数据。 此筛选的配置与投放助手中的收件人定位相同。
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 
-#### 第 7 步 – 设定数据格式 {#step-7---data-formatting}
+### 第 7 步 – 设定数据格式 {#step-7---data-formatting}
 
 您可以修改输出文件的字段顺序和标签，并将转换应用于源数据。
 
@@ -458,7 +414,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 ![](assets/s_ncs_user_export_wizard06_c.png)
 
-#### 第 8 步 - 数据预览 {#step-8---data-preview}
+### 第 8 步 - 数据预览 {#step-8---data-preview}
 
 单击&#x200B;**[!UICONTROL Start the preview of the data]**&#x200B;预览导出结果。 默认情况下，会显示前200行。 要更改此值，请单击&#x200B;**[!UICONTROL Lines to display]**&#x200B;字段右侧的箭头。
 
@@ -466,7 +422,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 单击助理器底部的选项卡，从列结果预览切换到XML结果。 您还可以查看生成的 SQL 查询。
 
-#### 步骤9 — 启动导出 {#step-9---launching-the-export}
+### 步骤9 — 启动导出 {#step-9---launching-the-export}
 
 单击&#x200B;**[!UICONTROL Start]**&#x200B;启动数据导出。
 
@@ -488,3 +444,4 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 * [创建受众](audiences.md)
 * [消除重复轮廓](../../automation/workflow/deduplication-merge.md)
 * [丰富轮廓数据](../../automation/workflow/enrich-data.md)
+* 了解营销活动[数据模型](../dev/datamodel.md)

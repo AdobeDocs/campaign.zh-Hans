@@ -6,8 +6,8 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
-workflow-type: ht
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 100%
 
@@ -94,7 +94,7 @@ ht-degree: 100%
 
    可使用以下目标类型：
 
-   * **[!UICONTROL Filtering conditions]**：使用此选项定义查询并显示结果。要了解如何设计查询，请参阅[此部分](../../automation/workflow/query.md)。
+   * **[!UICONTROL Filtering conditions]**：使用此选项定义查询并显示结果。要了解如何设计查询，请参阅[此部分](../start/query-editor.md)。
    * **[!UICONTROL A list of recipients]**：使用此选项来选择目标用户档案列表。要进一步了解列表，请参阅[此部分](../audiences/create-audiences.md)。
    * **[!UICONTROL A recipient]**：使用此选项以选择数据库中的特定用户档案。
    * **[!UICONTROL Recipients included in a folder]**：使用此选项以将特定文件夹中包含的所有用户档案选择为目标。
@@ -182,7 +182,7 @@ ht-degree: 100%
 
 在本视频中，您将了解如何向现有电子邮件添加种子和校样，以及如何进行发送。
 
->[!VIDEO](https://video.tv.adobe.com/v/3447009?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。
 

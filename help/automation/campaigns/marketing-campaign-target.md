@@ -6,7 +6,7 @@ feature: Campaigns, Audiences
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
-source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
+source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 在营销活动中，您可以为每个投放定义：
 
-* 目标受众。 您可以向收件人[&#128279;](#send-to-a-group)的[列表发送消息，或在工作流](#build-the-main-target-in-a-workflow)中构建受众
+* 目标受众。 您可以向收件人[的](#send-to-a-group)列表发送消息，或在工作流[中构建](#build-the-main-target-in-a-workflow)受众
 * 对照组。 您可以[添加控制组](#add-a-control-group)来监视邮件传递后的收件人行为
 * 种子地址 — 在[本节](../../v8/audiences/test-profiles.md)中了解详情。—>
 
@@ -222,7 +222,7 @@ To build the delivery target, you can define filtering criteria for the recipien
 
 >[!NOTE]
 >
->Adobe Campaign查询编辑器出现在[此部分](../workflow/query.md)中。
+>Adobe Campaign查询编辑器出现在[此部分](../../v8/start/query-editor.md)中。
 
 ### 从主目标中提取控制组 {#extract-the-control-group-from-the-main-target}
 
@@ -248,4 +248,4 @@ To build the delivery target, you can define filtering criteria for the recipien
 
 >[!VIDEO](https://video.tv.adobe.com/v/335606?quality=12)
 
-[此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=zh-Hans){target="_blank"}提供了其他Campaign操作方法视频。
+[此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}提供了其他Campaign操作方法视频。

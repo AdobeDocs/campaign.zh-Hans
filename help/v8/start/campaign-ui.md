@@ -6,10 +6,10 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: 428de72e0459b95a6db0b06ec8541d0475b72fdd
+source-git-commit: fbde111671fb972f6c96ba45eba4c8a88dbcac64
 workflow-type: tm+mt
-source-wordcount: '1235'
-ht-degree: 70%
+source-wordcount: '1121'
+ht-degree: 74%
 
 ---
 
@@ -151,7 +151,7 @@ The web access interface is similar to the console interface. From a browser, yo
 
   >[!CAUTION]
   >
-  >在安装过程中选择语言，此后不能更改&#x200B;**&#x200B;**。
+  >在安装过程中选择语言，此后不能更改&#x200B;****。
 
 * 有关 Campaign Web 用户界面支持的语言，[请参阅此页面](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=zh-Hans#language-pref){target="_blank"}。
 
@@ -189,25 +189,7 @@ The web access interface is similar to the console interface. From a browser, yo
 </table>
 
 
+## 其他资源
 
-## 默认单位 {#default-units}
-
-在表示一段时间的字段中（例如，某次投放的资源的有效期、已批准的任务期限等），可采用以下&#x200B;**单位**&#x200B;表示该值：
-
-* **[!UICONTROL s]**&#x200B;表示秒，
-* **[!UICONTROL mn]**&#x200B;分钟，
-* **[!UICONTROL h]**&#x200B;表示小时，
-* **[!UICONTROL d]**&#x200B;天。
-
-
-## 明细列表 {#enumeration}
-
-通过使用下拉列表的输入字段，您可以输入枚举值，该值可以存储，然后作为下拉列表中的选项进行建议。
-
-例如，在收件人用户档案的&#x200B;**[!UICONTROL City]**&#x200B;选项卡的&#x200B;**[!UICONTROL General]**&#x200B;字段中，您可以输入London。 当您按Enter键确认此值时，会出现一条消息，询问您是否要为与该字段关联的枚举保存此值。  如果您单击&#x200B;**[!UICONTROL Yes]**，此值将在相关字段的下拉菜单中可用。
-
-枚举（也称为“明细列表”）由管理员通过&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;部分管理。
-
-了解如何[使用枚举](../dev/enumerations.md)
-
-了解有关架构中[枚举的更多信息](../dev/schema-structure.md#enumerations)
+* **[使用枚举](../dev/enumerations.md)** — 使用预定义的下拉列表标准化字段值，以便更快、更一致地输入数据。
+* **[架构中的枚举](../dev/schema-structure.md#enumerations)** — 作为Campaign开发人员，请在架构中使用免费、固定或基于数据库的枚举来控制字段值。

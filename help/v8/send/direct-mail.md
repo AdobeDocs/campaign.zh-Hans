@@ -71,11 +71,11 @@ ht-degree: 5%
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
-您可以在提取文件中插入个性化URL。 有关详细信息，请参阅Adobe Campaign Classic [文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/publishing-a-web-form.html){target="_blank"}。
+您可以在提取文件中插入个性化URL。 有关详细信息，请参阅Adobe Campaign Classic [文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/publishing-a-web-form.html?lang=zh-Hans){target="_blank"}。
 
 >[!NOTE]
 >
->此助理包括导出助理的详细步骤Adobe Campaign Classic [文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html){target="_blank"}。
+>此助理包括导出助理的详细步骤Adobe Campaign Classic [文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html?lang=zh-Hans){target="_blank"}。
 
 ## 验证投放{#validating}
 

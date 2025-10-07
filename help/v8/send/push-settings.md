@@ -27,7 +27,7 @@ ht-degree: 4%
 
 1. 检查[先决条件](#before-starting)。
 1. 在Adobe Experience Platform数据收集中设置[移动标记属性](#launch-property)。
-1. 在此页面[中获取详细的Adobe Experience Platform Mobile SDK ](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"}。
+1. 在此页面[中获取详细的Adobe Experience Platform Mobile SDK &#x200B;](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"}。
 1. （可选）启用日志记录和生命周期量度，如本页[中的详细](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/){target="_blank"}所示。
 1. （可选）将[Adobe Experience Platform Assurance添加到您的应用程序](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"}以验证您的实施。 在此页面[中了解如何实施Adobe Experience Platform Assurance扩展](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}。
 1. 在Adobe Campaign中配置iOS和Android Mobile Services，如本页[所述。](#push-service)

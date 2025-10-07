@@ -5,8 +5,9 @@ description: 了解如何使用Adobe Campaign Web设计iOS富推送通知投放
 feature: Push
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 75a57ddb-558e-4dd2-a684-e63e51545554
-source-git-commit: fef2c829da637b43067147b51aff7030d25c9744
+source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 5%
@@ -17,7 +18,7 @@ ht-degree: 5%
 
 >[!IMPORTANT]
 >
->在设计富推送通知之前，您首先需要配置V2连接器。 有关详细过程，请参阅[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application)。
+>在设计富推送通知之前，您首先需要配置V2连接器。 有关详细过程，请参阅[此页面](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application)。
 
 ## 定义iOS通知的内容 {#push-message}
 
@@ -45,7 +46,7 @@ ht-degree: 5%
 
    此字段允许您定义iOS通知有效负载的&#x200B;**title**&#x200B;参数的值。
 
-1. 或者，添加与iOS通知有效负载的&#x200B;**subtitle**&#x200B;参数相对应的&#x200B;**[!UICONTROL Subtitle]**。
+1. 或者，添加与iOS通知有效负载的&#x200B;**[!UICONTROL Subtitle]** subtitle **参数相对应的**。
 
 1. 在向导的&#x200B;**[!UICONTROL Message content]**&#x200B;部分中输入消息的内容。
 
@@ -73,11 +74,11 @@ ht-degree: 5%
 
 1. 若要撰写邮件，请在&#x200B;**[!UICONTROL Title]**、**[!UICONTROL Expanded message]**、**[!UICONTROL Message]**&#x200B;和&#x200B;**[!UICONTROL Expanded message]**&#x200B;字段中输入您的文本。
 
-   展开通知时，显示&#x200B;**[!UICONTROL Expanded message]**&#x200B;时，**[!UICONTROL Message]**&#x200B;文本将显示在折叠视图中。
+   展开通知时，显示&#x200B;**[!UICONTROL Message]**&#x200B;时，**[!UICONTROL Expanded message]**&#x200B;文本将显示在折叠视图中。
 
    ![](assets/rich_push_ios_basic_2.png)
 
-1. 或者，添加与iOS通知有效负载的&#x200B;**subtitle**&#x200B;参数相对应的&#x200B;**[!UICONTROL Subtitle]**。
+1. 或者，添加与iOS通知有效负载的&#x200B;**[!UICONTROL Subtitle]** subtitle **参数相对应的**。
 
 1. 导航到&#x200B;**[!UICONTROL Sound and Badge]**&#x200B;选项卡以自定义其他设置，如通知的声音和徽章选项。 [了解详情](#sound-badge)
 
@@ -138,11 +139,11 @@ ht-degree: 5%
 
 1. 若要撰写邮件，请在&#x200B;**[!UICONTROL Title]**、**[!UICONTROL Expanded title]**、**[!UICONTROL Message]**&#x200B;和&#x200B;**[!UICONTROL Expanded message]**&#x200B;字段中输入您的文本。
 
-   展开通知时，显示&#x200B;**[!UICONTROL Expanded message]**&#x200B;时，**[!UICONTROL Message]**&#x200B;文本将显示在折叠视图中。
+   展开通知时，显示&#x200B;**[!UICONTROL Message]**&#x200B;时，**[!UICONTROL Expanded message]**&#x200B;文本将显示在折叠视图中。
 
    ![](assets/rich_push_ios_timer_2.png)
 
-1. 或者，添加与iOS通知有效负载的&#x200B;**subtitle**&#x200B;参数相对应的&#x200B;**[!UICONTROL Subtitle]**。
+1. 或者，添加与iOS通知有效负载的&#x200B;**[!UICONTROL Subtitle]** subtitle **参数相对应的**。
 
 1. 导航到&#x200B;**[!UICONTROL Sound and Badge]**&#x200B;选项卡以自定义其他设置，如通知的声音和徽章选项。 [了解详情](#sound-badge)
 

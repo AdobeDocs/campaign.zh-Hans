@@ -5,7 +5,7 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 96%
@@ -82,7 +82,7 @@ ht-degree: 96%
          + [设计 iOS 富媒体推送投放](send/rich-push-ios.md)
       + [配置推送通知渠道](send/push-settings.md)
       + [使用数据收集配置推送通知](send/push-data-collection.md)
-   + [LINE 消息](send/line.md)
+   + [LINE 消息](send/line/line.md)
    + [直邮](send/direct-mail.md)
    + [X (Twitter)](send/twitter.md)
    + [自定义外部渠道](send/custom-channel.md)

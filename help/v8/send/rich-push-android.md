@@ -5,8 +5,9 @@ description: 了解如何使用Adobe Campaign Web设计富推送通知投放
 feature: Push
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 42e3623b-b401-4fcc-80a7-ea38347fddc6
-source-git-commit: 4e52e596d4eb2a8e1a1799fcd7104dcd894b6c2d
+source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
 workflow-type: tm+mt
 source-wordcount: '1989'
 ht-degree: 3%
@@ -17,7 +18,7 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->在设计富推送通知之前，您首先需要配置V2连接器。 有关详细过程，请参阅[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android)。
+>在设计富推送通知之前，您首先需要配置V2连接器。 有关详细过程，请参阅[此页面](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android)。
 
 使用Firebase Cloud Messaging，您可以选择两种类型的消息：
 
@@ -79,7 +80,7 @@ ht-degree: 3%
 
 1. 若要撰写邮件，请在&#x200B;**[!UICONTROL Title]**、**[!UICONTROL Message]**&#x200B;和&#x200B;**[!UICONTROL Expanded message]**&#x200B;字段中输入您的文本。
 
-   展开通知时，显示&#x200B;**[!UICONTROL Expanded message]**&#x200B;时，**[!UICONTROL Message]**&#x200B;文本将显示在折叠视图中。
+   展开通知时，显示&#x200B;**[!UICONTROL Message]**&#x200B;时，**[!UICONTROL Expanded message]**&#x200B;文本将显示在折叠视图中。
 
    ![](assets/rich_push_basic_2.png)
 
@@ -124,7 +125,7 @@ ht-degree: 3%
 
 1. 若要撰写邮件，请在&#x200B;**[!UICONTROL Title]**、**[!UICONTROL Message]**&#x200B;和&#x200B;**[!UICONTROL Expanded message]**&#x200B;字段中输入您的文本。
 
-   展开通知时，显示&#x200B;**[!UICONTROL Expanded message]**&#x200B;时，**[!UICONTROL Message]**&#x200B;文本将显示在折叠视图中。
+   展开通知时，显示&#x200B;**[!UICONTROL Message]**&#x200B;时，**[!UICONTROL Expanded message]**&#x200B;文本将显示在折叠视图中。
 
    ![](assets/rich_push_carousel_1.png)
 
@@ -183,7 +184,7 @@ ht-degree: 3%
 
 1. 若要撰写邮件，请在&#x200B;**[!UICONTROL Title]**、**[!UICONTROL Message]**&#x200B;和&#x200B;**[!UICONTROL Expanded message]**&#x200B;字段中输入您的文本。
 
-   展开通知时，显示&#x200B;**[!UICONTROL Expanded message]**&#x200B;时，**[!UICONTROL Message]**&#x200B;文本将显示在折叠视图中。
+   展开通知时，显示&#x200B;**[!UICONTROL Message]**&#x200B;时，**[!UICONTROL Expanded message]**&#x200B;文本将显示在折叠视图中。
 
    ![](assets/rich_push_input_2.png)
 
@@ -212,7 +213,7 @@ ht-degree: 3%
 
 1. 若要撰写邮件，请在&#x200B;**[!UICONTROL Title]**、**[!UICONTROL Message]**&#x200B;和&#x200B;**[!UICONTROL Expanded message]**&#x200B;字段中输入您的文本。
 
-   展开通知时，显示&#x200B;**[!UICONTROL Expanded message]**&#x200B;时，**[!UICONTROL Message]**&#x200B;文本将显示在折叠视图中。
+   展开通知时，显示&#x200B;**[!UICONTROL Message]**&#x200B;时，**[!UICONTROL Expanded message]**&#x200B;文本将显示在折叠视图中。
 
    ![](assets/rich_push_catalog_2.png)
 
@@ -252,7 +253,7 @@ ht-degree: 3%
 
 1. 若要撰写邮件，请在&#x200B;**[!UICONTROL Title]**、**[!UICONTROL Message]**&#x200B;和&#x200B;**[!UICONTROL Expanded message]**&#x200B;字段中输入您的文本。
 
-   展开通知时，显示&#x200B;**[!UICONTROL Expanded message]**&#x200B;时，**[!UICONTROL Message]**&#x200B;文本将显示在折叠视图中。
+   展开通知时，显示&#x200B;**[!UICONTROL Message]**&#x200B;时，**[!UICONTROL Expanded message]**&#x200B;文本将显示在折叠视图中。
 
    ![](assets/rich_push_rating_2.png)
 
@@ -290,7 +291,7 @@ ht-degree: 3%
 
 1. 若要撰写邮件，请在&#x200B;**[!UICONTROL Title]**、**[!UICONTROL Message]**&#x200B;和&#x200B;**[!UICONTROL Expanded message]**&#x200B;字段中输入您的文本。
 
-   展开通知时，显示&#x200B;**[!UICONTROL Expanded message]**&#x200B;时，**[!UICONTROL Message]**&#x200B;文本将显示在折叠视图中。
+   展开通知时，显示&#x200B;**[!UICONTROL Message]**&#x200B;时，**[!UICONTROL Expanded message]**&#x200B;文本将显示在折叠视图中。
 
    ![](assets/rich_push_timer_2.png)
 
@@ -316,7 +317,7 @@ ht-degree: 3%
 
 1. 若要撰写邮件，请在&#x200B;**[!UICONTROL Title]**、**[!UICONTROL Message]**&#x200B;和&#x200B;**[!UICONTROL Expanded message]**&#x200B;字段中输入您的文本。
 
-   展开通知时，显示&#x200B;**[!UICONTROL Expanded message]**&#x200B;时，**[!UICONTROL Message]**&#x200B;文本将显示在折叠视图中。
+   展开通知时，显示&#x200B;**[!UICONTROL Message]**&#x200B;时，**[!UICONTROL Expanded message]**&#x200B;文本将显示在折叠视图中。
 
    ![](assets/rich_push_zero_2.png)
 

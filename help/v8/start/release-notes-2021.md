@@ -5,10 +5,10 @@ feature: Release Notes
 hide: true
 hidefromtoc: true
 exl-id: 5ac6bda9-86c8-4200-b285-6fee2a29039d
-source-git-commit: e4f6c70ecdcf7414b5f49a43933cfd1c967a0905
+source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
 workflow-type: tm+mt
-source-wordcount: '1581'
-ht-degree: 98%
+source-wordcount: '1577'
+ht-degree: 97%
 
 ---
 
@@ -121,12 +121,12 @@ _2021 年 9 月 7 日_
 
 **其他变更**
 
-* 之前已弃用的 Microsoft CRM 连接器（Office 365 和内部部署）已从界面中移除。[阅读更多](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-ms-dynamics.html?lang=zh-Hans#configure-acc-for-microsoft)
+* 之前已弃用的 Microsoft CRM 连接器（Office 365 和内部部署）已从界面中移除。[阅读更多](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-ms-dynamics.html#configure-acc-for-microsoft)
 
 * 迁移到 Tomcat 8 后，更新了 IIS 设置脚本以修复 IIS 集成问题。(NEO-31019)
 * 添加了护栏，以仅允许[计费技术工作流](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/monitoring-processes.html?lang=zh-Hans#billing-report)在营销实例上运行。
 * 在工作流过渡的 **View population** 窗口的“data”和“schema”选项卡中，数据源标识已得到改进。
-* 以下架构中添加了缺少的数据库索引以防止出现数据库更新问题：xtk:rights、nms:dlvExclusion、nms:seedMember、nms:trackingUrl
+* 已将缺少的数据库索引添加到以下架构中，以防止出现数据库更新问题：xtk:rights、nms:dlvExclusion、nms:seedMember、nms:trackingUrl
 
 **修补程序**
 
@@ -176,7 +176,7 @@ _2021 年 7 月 23 日_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p><a href="../send/line.md">LINE 渠道</a>现在可在 Campaign v8 中使用，包括与<a href="../send/transactional.md">事务性消息传递</a>模块结合使用时的以下增强功能：
+<td> <p><a href="../send/line/line.md">LINE 渠道</a>现在可在 Campaign v8 中使用，包括与<a href="../send/transactional.md">事务性消息传递</a>模块结合使用时的以下增强功能：
 <ul> 
 <li><p>修复了可能导致无法在 LINE 投放中定位访客的问题。 
 </p></li>

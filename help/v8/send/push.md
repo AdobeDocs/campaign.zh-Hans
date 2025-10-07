@@ -4,8 +4,9 @@ description: Campaign中的推送通知入门
 feature: Push
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: f04c6e0c-f2b9-496a-9697-04ef4c3411ee
-source-git-commit: 0b4fc6da8761d2efe57d8eb0ff87cd11d0e2d250
+source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 6%
@@ -56,7 +57,7 @@ ht-degree: 6%
 
    ![](assets/push_ios_3.png)
 
-1. 选择介于&#x200B;**[!UICONTROL General notification (Alert, Sound, Badge)]**&#x200B;或&#x200B;**[!UICONTROL Silent notification]**&#x200B;之间的&#x200B;**[!UICONTROL Notification type]**。
+1. 选择介于&#x200B;**[!UICONTROL Notification type]**&#x200B;或&#x200B;**[!UICONTROL General notification (Alert, Sound, Badge)]**&#x200B;之间的&#x200B;**[!UICONTROL Silent notification]**。
 
    ![](assets/push_ios_4.png)
 
@@ -68,7 +69,7 @@ ht-degree: 6%
 
    此字段允许您定义iOS通知有效负载的&#x200B;**title**&#x200B;参数的值。
 
-1. 您可以添加iOS通知有效负载的&#x200B;**subtitle**&#x200B;参数的&#x200B;**[!UICONTROL Subtitle]**&#x200B;值。
+1. 您可以添加iOS通知有效负载的&#x200B;**[!UICONTROL Subtitle]** subtitle **参数的**&#x200B;值。
 
 1. 在向导的&#x200B;**[!UICONTROL Message content]**&#x200B;部分中输入消息的内容。
 

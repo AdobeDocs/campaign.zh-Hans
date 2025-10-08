@@ -5,7 +5,7 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-source-git-commit: 8272550faefece753636418bcb748b36f989fcb5
+source-git-commit: a05b1d7d9b35f8d9189046fd4288d0b80f30967a
 workflow-type: tm+mt
 source-wordcount: '1177'
 ht-degree: 1%
@@ -86,7 +86,7 @@ ht-degree: 1%
 
    ![](assets/messagecenter_create_seed_2.png)
 
-1. 插入测试数据。 [请参阅Campaign Classic v7文档以了解有关个性化数据的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-data.html){target="_blank"}
+1. 插入测试数据。 [请参阅Campaign Classic v7文档以了解有关个性化数据的更多信息](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
 
    ![](assets/messagecenter_create_custo_3.png)
 

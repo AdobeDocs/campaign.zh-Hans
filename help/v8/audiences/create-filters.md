@@ -6,22 +6,22 @@ role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: 24a5c4f1d73ea08e40d271db483da33bf5615fb2
 workflow-type: tm+mt
-source-wordcount: '1607'
-ht-degree: 1%
+source-wordcount: '1882'
+ht-degree: 0%
 
 ---
 
-# 创建和管理过滤器{#create-filters}
+# 使用过滤器{#create-filters}
 
-数据过滤是选择数据集的较小部分（仅限符合特定标准的记录），并将此子集用于特定操作（更新、受众创建）或分析的过程。
+数据过滤是将数据集缩小到仅符合特定条件的那些记录的过程。 然后，可将此子集用于目标操作（如更新或受众创建）或分析。
 
-从&#x200B;**[!UICONTROL Explorer]**&#x200B;浏览Campaign时，数据会显示在列表中。 您可以使用现有的内置过滤器来访问此数据的特定子集：例如隔离的地址、未定位的收件人、特定年龄范围或创建日期。
+浏览Campaign时，数据会显示在列表中。 您可以应用内置筛选器以快速访问定义的子集，如隔离的地址、未定向的收件人或特定年龄范围或创建日期内的记录。
 
-您也可以创建自己的过滤器，保存它们以供将来使用或与其他Campaign用户共享。
+此外，您还可以创建自定义过滤器，保存它们以供将来使用，并与其他Campaign用户共享它们。
 
-筛选器配置允许您从列表&#x200B;**[!UICONTROL dynamically]**&#x200B;中选择数据：修改数据时，将更新过滤的数据。
+**动态应用筛选器**：每当数据更改时，都会自动更新筛选的结果。
 
 >[!NOTE]
 >
@@ -29,7 +29,62 @@ ht-degree: 1%
 
 Adobe Campaign中提供了以下类型的过滤器：
 
+* [预定义过滤器](#predefined-filters)
+* [快速过滤器](#quick-filters)
+* [高级自定义过滤器](#advanced-filters)
+
 ## 预定义过滤器{#predefined-filters}
+
+### 功能板中的预定义过滤器
+
+默认情况下，Adobe Campaign会显示操作员有权读取的所有数据库记录。 您可以使用浏览器窗口上半部分中的可用选项筛选此数据。
+
+![](assets/filter_web_zone.png)
+
+有多种方法可以过滤要显示的数据。 如有必要，这些组件可以一起使用。 浏览以下选项卡以了解有关筛选选项的更多信息。
+
+
+>[!BEGINTABS]
+
+>[!TAB 按文件夹筛选]
+
+要根据数据的文件夹筛选数据，请单击&#x200B;**[!UICONTROL Folder]**&#x200B;图标，然后选择包含要显示的数据的文件夹。
+
+![](assets/filter_web_select_folder.png)
+
+仅显示文件夹中的配置文件：
+
+![](assets/filter_web_folder_display.png)
+
+使用文件夹选择字段右侧的十字可返回到默认显示模式。
+
+>[!TAB 按状态筛选]
+
+根据显示的信息类型，您可以按状态或按状态应用过滤器。
+
+例如，对于投放，您可以选择仅显示已完成的投放，如下所示：
+
+![](assets/filter_delivery.png)
+
+>[!TAB 排序依据]
+
+您可以通过“per folder”筛选字段右侧的下拉列表选择页面上提供的数据的排序顺序。 此字段的内容取决于页面上的数据类型。
+
+例如，您可以按优先级、创建日期或字母顺序对任务进行排序。
+
+![](assets/order_data_sample.png)
+
+>[!TAB 快速搜索]
+
+使用搜索字段快速访问要查找的项目：输入要显示的项目的标签或内部名称中包含的字符，然后确认对页面上的数据应用自动过滤器。
+
+![](assets/filter_search.png)
+
+要再次显示所有项目，请单击十字以删除搜索字段的内容。
+
+>[!ENDTABS]
+
+### 资源管理器中的预定义过滤器
 
 每个列表上方的&#x200B;**筛选器**&#x200B;按钮提供了预定义筛选器。
 
@@ -52,7 +107,7 @@ Adobe Campaign中提供了以下类型的过滤器：
 ![](assets/built-in-filter-preview.png)
 
 
-+++  内置预定义过滤器
++++  用于用户档案的内置预定义过滤器
 
 <table> 
  <tbody> 
@@ -161,7 +216,7 @@ Adobe Campaign中提供了以下类型的过滤器：
 
 +++
 
-### 默认筛选器{#default-filters}
+#### 默认筛选器{#default-filters}
 
 每个列表上方的字段允许您对此列表使用&#x200B;**预定义的默认筛选器**。 对于收件人列表，您可以默认根据姓名和电子邮件地址进行筛选。
 
@@ -185,13 +240,13 @@ Adobe Campaign中提供了以下类型的过滤器：
 
 1. 为当前默认预定义过滤器取消选中相同选项。
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以应用筛选器。
-1. 浏览到“收件人”文件夹，然后单击当前筛选器右侧的&#x200B;**[!UICONTROL Remove this filter]**&#x200B;图标：新的默认筛选器可用。
+1. 浏览到“收件人”文件夹，然后单击当前筛选器右侧的&#x200B;**[!UICONTROL Remove this filter]**图标：新的默认筛选器可用。
    ![](assets/updated-default-filter.png)
 
 
 ## 快速过滤器{#quick-filters}
 
-使用并组合&#x200B;**快速筛选器**&#x200B;以定义特定字段的筛选器。
+您可以设置和组合&#x200B;**快速筛选器**，以针对特定字段构建自定义筛选器。
 
 添加后，快速过滤器字段会逐个显示在数据列表上方。 它们可以相互独立地删除。
 
@@ -216,7 +271,7 @@ Adobe Campaign中提供了以下类型的过滤器：
    ![](assets/add-filter-above-the-list.png)
 
 
-如果您需要对表单中不可用的字段进行筛选，请在列中筛选，然后对该列进行筛选。 要执行此操作，
+如果您需要过滤的字段在表单中不可用，但在列中，并且过滤该列。 要执行此操作，
 
 1. 单击&#x200B;**[!UICONTROL Configure list]**&#x200B;图标。
 
@@ -236,7 +291,7 @@ Adobe Campaign中提供了以下类型的过滤器：
 
 ## 高级筛选条件{#advanced-filters}
 
-在&#x200B;**高级筛选器**&#x200B;中组合复杂条件。 使用这些筛选器创建复杂查询或数据查询组合。 这些过滤器可以保存并与其他Campaign用户共享。
+在自定义&#x200B;**高级筛选器**&#x200B;中组合复杂条件。 使用这些筛选器创建复杂查询或数据查询组合。 这些过滤器可以保存并与其他Campaign用户共享。
 
 ### 创建高级过滤器{#create-adv-filters}
 
@@ -329,9 +384,9 @@ Adobe Campaign中提供了以下类型的过滤器：
 
 了解如何在这些端到端示例中构建高级查询：
 
-* 在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"}中了解如何定位简单的收件人属性。
-* 在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=zh-Hans){target="_blank"}中了解如何筛选过去7天内未联系的收件人。
-* 了解如何在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=zh-Hans){target="_blank"}中按Active帐户筛选操作员列表。
+* 在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}中了解如何定位简单的收件人属性。
+* 在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html){target="_blank"}中了解如何筛选过去7天内未联系的收件人。
+* 了解如何在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}中按Active帐户筛选操作员列表。
 * 在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=zh-Hans){target="_blank"}中了解如何构建生日电子邮件受众。
 
 
@@ -355,5 +410,3 @@ Adobe Campaign中提供了以下类型的过滤器：
    * 您可以将SQL表与过滤器关联，使其对共享该表的所有编辑器通用。
    * 要防止任何用户覆盖该筛选器，请选择&#x200B;**[!UICONTROL Do not restrict the filter]**&#x200B;选项。 例如，此选项对投放向导中可用的“投放的收件人”和“属于文件夹的投放的收件人”过滤器有效。 这些过滤器不能过载。
 
-
-### 运算符

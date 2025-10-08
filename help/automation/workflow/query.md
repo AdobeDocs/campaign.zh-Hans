@@ -6,7 +6,7 @@ feature: Workflows, Targeting Activity, Query Editor
 role: User, Data Engineer
 exl-id: 717e4f7c-3a8e-4930-9a06-b7412d6e1675
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 95c944963feee746a2bb83a85f075134c91059d1
+source-git-commit: 2d13ba585b55f0e149d1bca53240b05fe5a8a9eb
 workflow-type: tm+mt
 source-wordcount: '1603'
 ht-degree: 1%
@@ -52,7 +52,7 @@ ht-degree: 1%
 
    您还可以通过选中相应的框来添加数据分组条件。 要实现此目的，筛选维度必须与查询的定向维度不同。 有关分组的详细信息，请参阅此[部分](query-grouping-management.md)。
 
-   您也可以使用表达式生成器并将其与逻辑选项AND、OR和EXCEPT组合来添加更多标准。
+   您还可以使用[表达式生成器](../../v8/start/filter-conditions.md#using-and--or--except)并将它与逻辑选项AND、OR和EXCEPT组合来添加更多标准。
 
    如果您希望稍后重复使用过滤器，请保存该过滤器。
 

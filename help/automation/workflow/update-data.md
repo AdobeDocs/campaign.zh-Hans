@@ -5,7 +5,7 @@ description: 了解有关更新数据工作流活动的更多信息
 feature: Workflows, Targeting Activity, Data Management
 version: Campaign v8, Campaign Classic v7
 exl-id: 63b214c7-bbbf-448b-b3af-b3b7a7a5b65c
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: 2d13ba585b55f0e149d1bca53240b05fe5a8a9eb
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 4%
@@ -101,7 +101,7 @@ ht-degree: 4%
 
 1. 选择要移动到主记录的收藏集和要更新的字段。
 
-   输入在标识一个或多个辅助记录后应用于这些记录的规则。 为此，您可以使用表达式生成器。 例如，通过指定该值是必须保留的所有不同记录中最近更新的值。
+   输入在标识一个或多个辅助记录后应用于这些记录的规则。 为此，您可以使用[表达式生成器](../../v8/start/filter-conditions.md#list-of-functions)。 例如，通过指定该值是必须保留的所有不同记录中最近更新的值。
 
    然后，输入规则要考虑的条件。
 

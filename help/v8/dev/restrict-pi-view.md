@@ -5,10 +5,10 @@ feature: PI, Privacy, Configuration
 role: Developer
 level: Intermediate, Experienced
 exl-id: 1b833745-71d7-430d-ac7d-c830c78ea232
-source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
+source-git-commit: 2d13ba585b55f0e149d1bca53240b05fe5a8a9eb
 workflow-type: tm+mt
 source-wordcount: '434'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 如果您希望营销用户能够访问数据记录，但不希望他们查看收件人的个人信息(PI)（如名字、姓氏或电子邮件地址），请应用以下准则来保护隐私，并防止常规营销活动操作人员滥用数据。
 
-## 实现 {#implementation}
+## 实施 {#implementation}
 
 架构中添加了可以应用于任何元素或属性的特定属性，它补充了现有属性&#x200B;**[!UICONTROL visibleIf]**。 此属性是： **[!UICONTROL accessibleIf]**。 当包含与当前用户上下文相关的XTK表达式时，它可以利用&#x200B;**[!UICONTROL HasNamedRight]**&#x200B;或&#x200B;**[!UICONTROL $(login)]**，例如。
 
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 主要属性包括：
 
-* **[!UICONTROL visibleIf]**：从元数据中隐藏字段，因此在架构视图、列选择或表达式生成器中无法访问这些字段。 但这不会隐藏任何数据，如果手动在表达式中输入字段名称，则会显示值。
+* **[!UICONTROL visibleIf]**：隐藏元数据中的字段，因此无法访问架构视图、列选择或[表达式生成器](../../v8/start/filter-conditions.md#list-of-functions)中的字段。 但这不会隐藏任何数据，如果手动在表达式中输入字段名称，则会显示值。
 * **[!UICONTROL accessibleIf]**：隐藏结果查询中的数据（用空值替换）。 如果visibleIf为空，则它将获得与&#x200B;**[!UICONTROL accessibleIf]**&#x200B;相同的表达式。
 
 以下是在Campaign中使用此属性的后果：

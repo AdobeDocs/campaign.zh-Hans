@@ -48,7 +48,7 @@ Adobe Campaign Classic v7和Adobe Campaign v8已支持用于发送推送通知�
 
 * 需要Android Firebase Admin SDK服务的帐户JSON文件才能将移动应用程序移动到HTTP v1。 请参阅[Google Firebase文档](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}以了解如何获取此文件。
 
-* 对于Campaign Classic v7,20.3.1版本中添加了对HTTP v1的支持。 如果您的环境运行在旧版本上，则迁移到HTTP v1的先决条件是将环境升级到[最新的Campaign Classic内部版本](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}。 对于Campaign v8，所有版本都支持HTTP v1，无需升级。
+* 对于Campaign Classic v7,20.3.1版本中添加了对HTTP v1的支持。 如果您的环境运行在旧版本上，则迁移到HTTP v1的先决条件是将环境升级到[最新的Campaign Classic内部版本](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=zh-Hans){target="_blank"}。 对于Campaign v8，所有版本都支持HTTP v1，无需升级。
 
 * 作为Campaign Classic v7内部部署用户，您必须升级营销和实时执行服务器。
 
@@ -56,7 +56,7 @@ Adobe Campaign Classic v7和Adobe Campaign v8已支持用于发送推送通知�
 
 * 关于Android路由外部帐户：
 
-   * 作为Campaign Classic v7内部部署或混合用户，检查您的Android路由外部帐户是否配置了`androidPushConnectorV2.js`。 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}以了解详情。
+   * 作为Campaign Classic v7内部部署或混合用户，检查您的Android路由外部帐户是否配置了`androidPushConnectorV2.js`。 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android){target="_blank"}以了解详情。
 
    * 对于混合、托管和托管云服务部署，还必须与Adobe客户关怀团队连接，以验证是否在Android路由中间源服务器的外部帐户中选择了`androidPushConnectorV2.js (nms)`连接器。
 
@@ -210,7 +210,7 @@ Adobe Campaign Classic v7和Adobe Campaign v8支持基于令牌和基于证书�
 
 #### 先决条件 {#ios-transition-prerequisites}
 
-* 对于Campaign Classic v7，已在20.2版本中添加了对&#x200B;**基于令牌的身份验证**&#x200B;模式的支持。 如果您的环境运行在旧版本上，则此更改的先决条件是将您的环境升级到[最新的Campaign Classic内部版本](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html){target="_blank"}。 对于Campaign v8，所有版本都支持&#x200B;**基于令牌的身份验证**&#x200B;模式，无需升级。
+* 对于Campaign Classic v7，已在20.2版本中添加了对&#x200B;**基于令牌的身份验证**&#x200B;模式的支持。 如果您的环境运行在旧版本上，则此更改的先决条件是将您的环境升级到[最新的Campaign Classic内部版本](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/latest-release.html?lang=zh-Hans){target="_blank"}。 对于Campaign v8，所有版本都支持&#x200B;**基于令牌的身份验证**&#x200B;模式，无需升级。
 
 * 您需要APN身份验证令牌签名密钥来生成您的服务器使用的令牌。 您从Apple开发人员帐户请求此密钥，如[Apple开发人员文档](https://developer.apple.com/documentation/usernotifications/establishing-a-token-based-connection-to-apns){target="_blank"}中所述。
 

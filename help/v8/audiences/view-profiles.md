@@ -6,14 +6,14 @@ role: User
 level: Beginner
 exl-id: 03f7a736-e0b9-4216-9550-507f10e6fcf6
 version: Campaign v8, Campaign Classic v7
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: ec1b41ccf532b044e75c69e795eabfb19a523ec2
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 4%
 
 ---
 
-# 查看现有配置文件{#view-profiles}
+# 查看现有配置文件 {#view-profiles}
 
 浏览到&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;以访问存储在Adobe Campaign数据库中的收件人。
 
@@ -28,10 +28,10 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->内置收件人屏幕是通过XML架构及其相关表单定义的。 XML架构存储在Adobe Campaign资源管理器树的&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;节点中。 只有专家用户才能改变这些模式。
+>内置的收件人屏幕是通过XML架构及其相关表单定义的。 XML架构存储在Adobe Campaign资源管理器树的&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;节点中。 只有专家用户才能改变这些模式。
 >
 
-## 编辑轮廓{#edit-a-profiles}
+## 编辑轮廓 {#edit-a-profiles}
 
 选择配置文件以在新选项卡中显示详细信息。
 
@@ -73,11 +73,11 @@ ht-degree: 4%
 
   ![](assets/subscription-tab.png)
 
-  在本节[&#128279;](../start/subscriptions.md)中了解有关订阅的更多信息。
+  在本节[中了解有关订阅](../start/subscriptions.md)的更多信息。
 
 * 针对所选用户档案的所有投放日志，**投放**。 使用此选项卡可访问联系人的营销历史记录：通过所有渠道针对用户档案的所有投放操作的标签、日期和状态。
 
 
 * **跟踪**，针对选定配置文件的所有跟踪日志。 此信息用于跟踪投放后的用户档案行为。 此选项卡显示投放中跟踪的所有URL的累积总数。 该列表是可配置的，通常包含：点击的URL、点击的日期和时间，以及包含该URL的文档
 
-  在本节[&#128279;](../start/tracking.md)中了解有关跟踪的更多信息。
+  在本节[中了解有关跟踪](../start/tracking.md)的更多信息。

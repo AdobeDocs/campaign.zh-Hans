@@ -5,10 +5,10 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: 449f24cb23afa2d6bd7d6f2ad7ff3ba65e0a1d5d
+source-git-commit: f308f34afc16426d81d31eeaca5f14b10ac49c32
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 96%
+source-wordcount: '796'
+ht-degree: 95%
 
 ---
 
@@ -117,6 +117,7 @@ ht-degree: 96%
    + [轮廓和受众入门](audiences/gs-audiences.md)
    + [使用受众](start/audiences.md)
    + [访问轮廓](audiences/view-profiles.md)
+   + [使用过滤器](audiences/create-filters.md)
    + 添加轮廓 {#add-profiles}
       + [手动创建轮廓](audiences/create-profiles.md)
       + [从文件导入轮廓](audiences/import-profiles.md)
@@ -126,7 +127,6 @@ ht-degree: 96%
       + [创建测试轮廓](audiences/test-profiles.md)
    + 创建受众 {#create-audiences}
       + [创建联系人列表](audiences/create-audiences.md)
-      + [创建和管理过滤器](audiences/create-filters.md)
       + [与 Adobe 解决方案共享受众](start/shared-audiences.md)
    + [最佳实践](audiences/audiences-best-practices.md)
    + [管理订阅](start/subscriptions.md)

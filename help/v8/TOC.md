@@ -5,9 +5,9 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
+source-git-commit: 449f24cb23afa2d6bd7d6f2ad7ff3ba65e0a1d5d
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '797'
 ht-degree: 96%
 
 ---
@@ -175,11 +175,12 @@ ht-degree: 96%
          + [内置量度计算](reporting/metrics-calculation.md)
       + [自定义报告](reporting/custom-reports.md)
 + 数据管理 {#data}
-   + [工作流文档>](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)
-   + [导入数据](start/import.md)
-   + 创建查询 {#query}
-      + [设计查询](start/query-editor.md)
+   + 查询数据库  {#query}
+      + [使用查询编辑器](start/query-editor.md)
+      + [设计查询](start/design-queries.md)
       + [定义过滤器条件](start/filter-conditions.md)
+   + [导入数据](start/import.md)
+   + [工作流文档>](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)
 + 集成 {#connect}
    + [将 Campaign 与其他解决方案配合使用](connect/integration.md)
    + Campaign + Experience Platform {#ac-aep}

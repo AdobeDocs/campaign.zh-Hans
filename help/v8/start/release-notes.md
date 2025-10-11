@@ -28,8 +28,8 @@ _2025年10月9日_
 
 此版本还随附了一组可在Campaign Web用户界面中使用的功能：
 
-* [事务性消息中的用户档案扩充](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
-* [事务性消息传递、推送通知和短信的多语言功能](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
+* [事务性消息中的用户档案扩充](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=zh-Hans){target="_blank"}
+* [事务性消息传递、推送通知和短信的多语言功能](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=zh-Hans){target="_blank"}
 
 请参阅Campaign Web UI [发行说明](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=zh-hans){target="_blank"}
 

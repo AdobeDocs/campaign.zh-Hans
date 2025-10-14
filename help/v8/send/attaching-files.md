@@ -30,7 +30,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->此类配置通常在投放模板中执行。 有关详细信息，请参见此 [ 页面](../send/create-templates.md)。
+>此类配置通常在投放模板中执行。 有关详细信息，请参见此 [&#x200B; 页面](../send/create-templates.md)。
 
 ## 护栏 {#attachments-guardrails}
 

@@ -68,7 +68,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
 >[!CAUTION]
 >
->在使用Microsoft OAuth 2.0配置POP3外部帐户之前，您首先需要在Azure门户中注册应用程序。 有关详细信息，请参见此 [ 页面](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}。
+>在使用Microsoft OAuth 2.0配置POP3外部帐户之前，您首先需要在Azure门户中注册应用程序。 有关详细信息，请参见此 [&#x200B; 页面](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}。
 >
 
 要使用Microsoft OAuth 2.0配置POP3外部连接，请选中&#x200B;**[!UICONTROL Microsoft OAuth 2.0]**&#x200B;选项并填写以下字段：

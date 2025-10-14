@@ -6,7 +6,7 @@ feature: Email, Deliverability
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
-source-git-commit: 11c8c4c51c7901ba0d119323c564a64b940428b7
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 1%
@@ -35,7 +35,8 @@ SpamAssassin利用多种垃圾邮件检测技术，包括：
 
 创建电子邮件投放并定义其内容后，请按照以下步骤评估风险。
 
-有关创建和设计投放的更多信息，请参阅[此章节](defining-the-email-content.md)。
+有关创建和设计投放的更多信息，请参阅此[页面](defining-the-email-content.md)。
+
 
 1. 转到&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡。
 1. 选择一个收件人以预览您的投放。

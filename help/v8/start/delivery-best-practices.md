@@ -6,9 +6,9 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '2936'
+source-wordcount: '2925'
 ht-degree: 3%
 
 ---
@@ -30,9 +30,9 @@ ht-degree: 3%
 * 服务器负载：当营销服务器同时处理多个不同的任务时，可能会降低性能。 营销服务器需要协调所有投放的所有传入和传出数据，以确保数据正确且及时。
 要避免这种情况，请与团队的其他成员协调投放计划，以确保最佳性能。
 
-* 工作流执行：监测工作流对于避免平台性能问题至关重要。 遵循本文档[&#128279;](../../automation/workflow/workflow-best-practices.md#execution-and-performance)中列出的准则。
+* 工作流执行：监测工作流对于避免平台性能问题至关重要。 遵循本文档[中列出的准则](../../automation/workflow/workflow-best-practices.md#execution-and-performance)。
 
-* 使用[性能监控](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/performance-monitoring/about-performance-monitoring){target="_blank"}功能连接到[Campaign控制面板功能](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/discover-control-panel/key-features){target="_blank"}以监控您的平台。
+* 使用[性能监控](https://experienceleague.adobe.com/en/docs/control-panel/using/discover-control-panel/key-features){target="_blank"}功能连接到[Campaign控制面板功能](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/about-performance-monitoring){target="_blank"}以监控您的平台。
 
 #### 隔离管理 {#quarantine-management}
 
@@ -41,9 +41,9 @@ ht-degree: 3%
 开始在新平台上发送电子邮件时，您可以使用不完全限定的地址列表。 如果发送到无效地址或honeypot地址（邮箱仅用于欺骗垃圾邮件发送者），这将开始降低平台的声誉。 良好的隔离管理流程有助于：保持地址质量、避免Internet访问提供商的阻止列表并减少错误率、加快交付速度和吞吐量。
 
 
-在[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/zh-hans/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform){target="_blank"}中了解如何启动新平台。
+在[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform){target="_blank"}中了解如何启动新平台。
 
-[此部分](https://experienceleague.adobe.com/zh-hans/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations){target="_blank"}中列出了技术建议。
+[此部分](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations){target="_blank"}中列出了技术建议。
 
 
 +++ **阅读一些最佳实践**
@@ -69,7 +69,7 @@ Adobe Campaign会根据返回的错误类型管理错误地址。 [了解有关�
 
 ### 子域和品牌化 {#subdomains-and-branding}
 
-在Adobe Campaign中管理多个品牌时，Adobe建议为每个品牌拥有一个子域。 例如，银行可以具有与其每个区域机构对应的多个子域。 如果银行拥有bluebank.com域，则其子域可以是@ny.bluebank.com、@ma.bluebank.com、@ca.bluebank.com等。 每个子域拥有一个投放模板，让您能够始终为每个品牌使用正确的预配置参数，从而避免错误并节省您的时间。 在[促销活动控制面板文档](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}中了解有关子域品牌的更多信息。
+在Adobe Campaign中管理多个品牌时，Adobe建议为每个品牌拥有一个子域。 例如，银行可以具有与其每个区域机构对应的多个子域。 如果银行拥有bluebank.com域，则其子域可以是@ny.bluebank.com、@ma.bluebank.com、@ca.bluebank.com等。 每个子域拥有一个投放模板，让您能够始终为每个品牌使用正确的预配置参数，从而避免错误并节省您的时间。 在[促销活动控制面板文档](https://experienceleague.adobe.com/en/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}中了解有关子域品牌的更多信息。
 
 ### 配置地址 {#configure-addresses}
 
@@ -116,11 +116,11 @@ Adobe Campaign会根据返回的错误类型管理错误地址。 [了解有关�
 
 * 检查您的个性化设置 — 确保您的消息内容经过正确设计，以避免任何可能与个性化相关的错误。 Adobe Campaign个性化标记始终具有以下形式： `<%=table.field%>`。 在个性化块中错误使用参数可能是个问题。 例如，JavaScript中的变量应按以下方式使用：
 
-  &grave;&grave;
+  ``
   <%
   var brand = "xxx"
   %>
-  &grave;&grave;
+  ``
 
   有关个性化块的更多信息，请参阅[此章节](../send/personalization-blocks.md)。
 
@@ -172,7 +172,7 @@ Adobe Campaign会根据返回的错误类型管理错误地址。 [了解有关�
 
 退订链接是必需的。 它必须可见且有效，并且表单必须有效。 默认情况下，在分析消息时，内置&#x200B;**[!UICONTROL Unsubscription link approval]** [分类规则](../../automation/campaign-opt/control-rules.md)会检查是否包含选择退出链接，如果缺少该链接，则会生成警告。
 
-了解如何在此部分[&#128279;](../send/personalization-blocks.md)中插入选择退出链接。
+了解如何在此部分[中插入选择退出链接](../send/personalization-blocks.md)。
 
 +++ **应用此最佳实践**
 
@@ -207,7 +207,7 @@ Adobe Campaign会根据返回的错误类型管理错误地址。 [了解有关�
 
 * 要将短信消息中的所有字符都保持不变，例如不要更改正确名称，请不要启用音译。
 
-* 但是，如果短信消息包含许多GSM标准无法识别的字符，请启用音译以限制发送消息的成本。 在本节[&#128279;](../send/sms/smpp-external-account.md#smpp-transliteration)中了解更多。
+* 但是，如果短信消息包含许多GSM标准无法识别的字符，请启用音译以限制发送消息的成本。 在本节[中了解更多](../send/sms/smpp-external-account.md#smpp-transliteration)。
 
 * 您可以应用短信音译，这包括当GSM标准无法识别短信的一个字符时，用另一个字符替换该字符。 请注意，将个性化字段插入短信消息内容，可能会引入GSM编码无法识别的字符。 作为Campaign管理员，您可以通过选中相应&#x200B;**[!UICONTROL External account]**&#x200B;的SMPP渠道设置选项卡中的相应框来启用字符音译。 [了解详情](../send/sms/smpp-external-account.md#smpp-transliteration)
 
@@ -226,7 +226,7 @@ To avoid common formatting errors, check the following elements:
 
 * Usage of **authorized characters** in emails: the list of valid characters for email addresses is defined in the "XtkEmail_Characters" option. Learn how to access Campaign options [in this section](../../installation/using/configuring-campaign-options.md). To correctly handle special characters, Adobe Campaign needs to be installed in Unicode. 
 
-* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#authentication).-->
+* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).-->
 
 ## 管理图像 {#manage-images}
 
@@ -282,11 +282,11 @@ Adobe建议预览您的消息以检查其个性化设置以及收件人如何看
 
 在Campaign中，默认情况下，投放模板以&#x200B;**收件人**&#x200B;为目标。 Adobe Campaign为您的投放提供了其他目标映射，您可以根据需要更改这些映射。 例如，您可以向通过社交网络收集用户档案的访客或订阅了信息服务的访客投放。
 
-此部分[&#128279;](../audiences/target-mappings.md)中提供了这些映射。
+此部分[中提供了这些映射](../audiences/target-mappings.md)。
 
 ### 外部收件人 {#external-recipients}
 
-您可以向存储在外部文件中而不是数据库中保存的收件人投放。 在本节[&#128279;](create-message.md#select-external-recipients-selecting-external-recipients)中了解更多。
+您可以向存储在外部文件中而不是数据库中保存的收件人投放。 在本节[中了解更多](create-message.md#select-external-recipients-selecting-external-recipients)。
 
 <!--
 ### Send to your subscribers {#send-to-subscribers}
@@ -297,7 +297,7 @@ To send messages to the subscribers of a newsletter, you can directly target the
 
 要测试您的投放，请在发送到主目标之前使用验证。
 
-确保选择适当的校样收件人，因为他们验证消息的表单和内容。 在此部分[&#128279;](create-message.md#select-the-recipients-of-proof-messages-select-the-proof-target)中介绍了定义校样收件人的步骤。
+确保选择适当的校样收件人，因为他们验证消息的表单和内容。 在此部分[中介绍了定义校样收件人的步骤](create-message.md#select-the-recipients-of-proof-messages-select-the-proof-target)。
 
 
 ### 删除重复地址 {#deduplicate-addresses}
@@ -320,7 +320,7 @@ To send messages to the subscribers of a newsletter, you can directly target the
 
 消息准备就绪后，请确保其内容在所有设备上均正确显示，并且不包含任何错误，例如错误的个性化或断开的链接。 在发送消息之前，还要确保参数和配置与投放一致。
 
-本节[&#128279;](../send/preview-and-proof.md)中介绍了验证投放的步骤。
+本节[中介绍了验证投放的步骤](../send/preview-and-proof.md)。
 
 <!--
 ### Inbox rendering {#inbox-and-email-rendering}
@@ -358,11 +358,11 @@ Learn more [in this section](get-started-a-b-testing.md).-->
 
 #### 进行验证过程
 
-您可以定义涉及Adobe Campaign操作员和组的完整验证流程，以验证目标和消息内容。 这将确保全面监测和控制营销活动的各个流程：定位、内容、预算、提取和发送证明。 根据用户的权限，用户将收到通知、接收校样并能够验证或拒绝消息。 在本节[&#128279;](../../automation/campaigns/marketing-campaign-approval.md)中了解更多。
+您可以定义涉及Adobe Campaign操作员和组的完整验证流程，以验证目标和消息内容。 这将确保全面监测和控制营销活动的各个流程：定位、内容、预算、提取和发送证明。 根据用户的权限，用户将收到通知、接收校样并能够验证或拒绝消息。 在本节[中了解更多](../../automation/campaigns/marketing-campaign-approval.md)。
 
 #### 使用批次
 
-您可以逐步增加使用批次发送的数量。 这将避免您的邮件被标记为垃圾邮件或您想要限制每天的邮件数。 利用批次，您可以将投放分为多个批次，而不是同时发送大量消息。 在本节[&#128279;](../send/configure-and-send.md#sending-using-multiple-waves)中了解更多。
+您可以逐步增加使用批次发送的数量。 这将避免您的邮件被标记为垃圾邮件或您想要限制每天的邮件数。 利用批次，您可以将投放分为多个批次，而不是同时发送大量消息。 在本节[中了解更多](../send/configure-and-send.md#sending-using-multiple-waves)。
 
 #### 排定消息优先级
 
@@ -399,7 +399,7 @@ You can:
 
 #### 使用分类
 
-您可以使用分类规则根据特定条件排除部分目标。 这可确保在遵守公司通信政策的同时，发送最符合客户需求及期望的邮件。 例如，您可以筛选新闻稿目标中的未成年收件人。 在此示例[&#128279;](../../automation/campaign-opt/filtering-rules.md)中了解更多。
+您可以使用分类规则根据特定条件排除部分目标。 这可确保在遵守公司通信政策的同时，发送最符合客户需求及期望的邮件。 例如，您可以筛选新闻稿目标中的未成年收件人。 在此示例[中了解更多](../../automation/campaign-opt/filtering-rules.md)。
 
 
 ## 跟踪和监视 {#track-and-monitor}
@@ -411,9 +411,6 @@ You can:
 要控制活动，您必须确保消息确实已发送给收件人。
 
 在Campaign投放仪表板中，您可以检查已处理的消息和投放审核日志。 您还可以控制投放日志中消息的状态。
-
-[请参阅Campaign Classic v7文档以了解有关投放监视的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=zh-Hans){target="_blank"}
-
 
 ## 跟踪行为 {#track-behaviour}
 

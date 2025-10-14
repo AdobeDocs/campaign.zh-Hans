@@ -6,7 +6,7 @@ feature: Inbox Rendering, Monitoring, Email Rendering
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 11c8c4c51c7901ba0d119323c564a64b940428b7
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 8%
@@ -62,7 +62,8 @@ Litmus是一款功能丰富的电子邮件验证和预览应用程序。 它允�
 
 创建电子邮件投放并定义其内容及定向群体后，请执行以下步骤。
 
-有关创建、设计和定位投放的更多信息，请参阅[此章节](defining-the-email-content.md)。
+有关创建、设计和定位投放的更多信息，请参阅此[页面](defining-the-email-content.md)。
+
 
 1. 在投放的顶部栏上，单击&#x200B;**[!UICONTROL Inbox rendering]**&#x200B;按钮。
 

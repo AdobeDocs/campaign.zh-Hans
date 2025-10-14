@@ -6,9 +6,9 @@ role: Data Engineer
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '797'
 ht-degree: 2%
 
 ---
@@ -30,10 +30,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->投放状态不会实时显示。 在此部分[&#128279;](#email-feedback-service)中了解有关电子邮件反馈服务的更多信息。
-
-
-[请参阅Campaign Classic v7文档以了解有关投放监视的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/delivery-bestpractices/track-and-monitor.html?lang=zh-Hans){target="_blank"}
+>投放状态不会实时显示。 在此部分[中了解有关电子邮件反馈服务](#email-feedback-service)的更多信息。
 
 ## Campaign MTA {#mta}
 
@@ -76,7 +73,7 @@ Domain Keys Identified Mail (DKIM)是一种用于检测伪造发件人地址（�
 
 在Adobe Campaign中，DKIM电子邮件身份验证签名由MTA执行。
 
-在[DKIM可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#authentication){target="_blank"}中了解有关Adobe的更多信息。
+在[DKIM可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication){target="_blank"}中了解有关Adobe的更多信息。
 
 ## 电子邮件反馈服务 {#email-feedback-service}
 
@@ -88,7 +85,7 @@ Campaign电子邮件反馈服务(EFS)报告使用Adobe Campaign发送的每个�
 
 从MTA报告硬退回邮件时，其日志状态将从&#x200B;**[!UICONTROL Taken into account by the service provider]**&#x200B;更改为&#x200B;**[!UICONTROL Failed]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->。
 
-从MTA报告软退回消息时，其日志状态保持不变(**[!UICONTROL Taken into account by the service provider]**)：仅更新[错误原因](delivery-failures.md#delivery-failure-reasons)<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->。 **[!UICONTROL Success]**&#x200B;百分比保持不变。 然后，在投放[有效期](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=zh-Hans#defining-validity-period){target="_blank"}内重试软退回邮件：
+从MTA报告软退回消息时，其日志状态保持不变(**[!UICONTROL Taken into account by the service provider]**)：仅更新[错误原因](delivery-failures.md#delivery-failure-reasons)<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->。 **[!UICONTROL Success]**&#x200B;百分比保持不变。 然后，在投放[有效期](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/communication-channels){target="_blank"}内重试软退回邮件：
 
 * 如果在有效期结束前重试成功，则消息状态将更改为&#x200B;**[!UICONTROL Sent]**，并相应地增加&#x200B;**[!UICONTROL Success]**&#x200B;百分比。
 

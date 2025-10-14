@@ -6,9 +6,9 @@ feature: Deliverability
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 11c8c4c51c7901ba0d119323c564a64b940428b7
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '742'
 ht-degree: 5%
 
 ---
@@ -25,11 +25,11 @@ ht-degree: 5%
 * [退订链接](#opt-out)和登陆页面：退订链接是必需的。 它必须可见且有效，并且表单必须有效。
 * 预览：使用Adobe Campaign提供的工具检查和优化电子邮件的内容（[收件箱呈现](#message-responsiveness)，[SpamAssassin](#spamassassin)）。
 
-有关在设计内容时优化可投放性的其他提示，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html?lang=zh-Hans){target="_blank"}。
+有关在设计内容时优化可投放性的其他提示，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html){target="_blank"}。
 
 >[!NOTE]
 >
->有关编辑电子邮件内容的详细信息，请参阅[定义电子邮件内容](defining-the-email-content.md)。
+>有关编辑电子邮件内容的更多信息，请参阅此[页面](defining-the-email-content.md)。
 
 ## 发件人地址 {#sender-address}
 
@@ -37,7 +37,7 @@ ht-degree: 5%
 
 您必须确保在实例级别（菜单&#x200B;**[!UICONTROL Tools > Advanced > deployment wizard...]**）或最常用的情况下提供了正确的地址。
 
-有关定义发件人地址的更多信息，请参阅[此页面](defining-the-email-content.md#sender)。
+有关定义发件人地址的详细信息，请参阅此[页](defining-the-email-content.md#sender)。
 
 ## 个性化 {#personalization}
 

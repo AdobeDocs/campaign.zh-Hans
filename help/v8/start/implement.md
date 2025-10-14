@@ -5,9 +5,9 @@ feature: Overview
 role: User
 level: Intermediate
 exl-id: 09562b6c-3d3d-4808-a70b-202172867f46
-source-git-commit: be085eaf7e1e7ded5986fdb6100045daba4d88fe
+source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1145'
 ht-degree: 97%
 
 ---
@@ -87,7 +87,7 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
    了解如何在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target="_blank"}中配置工作流模板。
 
-   请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/using-delivery-templates/about-templates.html?lang=zh-Hans){target="_blank"}以了解有关电子邮件模板的更多信息。
+   在此[页面](../send/create-templates.md)中了解有关电子邮件模板的更多信息。
 
 
 1. **配置类型规则**

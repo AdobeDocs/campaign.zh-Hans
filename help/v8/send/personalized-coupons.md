@@ -5,10 +5,9 @@ description: 了解如何创建和插入个性化优惠券
 feature: Personalization
 role: User
 version: Campaign v8, Campaign Classic v7
-exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+source-git-commit: 33462c1e2af34000131ce81e23ac2360c2cc5a3a
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '888'
 ht-degree: 1%
 
 ---
@@ -23,7 +22,7 @@ ht-degree: 1%
 
 优惠券管理依赖于必须安装的包。 要确认您拥有优惠券管理，请选中&#x200B;**[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
 
-优惠券数据可以使用CSV和XML格式导入和导出。 [了解详情](../../platform/using/get-started-data-import-export.md)。
+优惠券数据可以使用CSV和XML格式导入和导出。 [了解详情](../start/import.md)。
 
 ## 创建优惠券 {#creating-a-coupon}
 
@@ -58,7 +57,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >可以批量导入单个优惠券。 有关导入和导出的详细信息，请参阅[此部分](../../platform/using/get-started-data-import-export.md)。
+   >可以批量导入单个优惠券。 有关导入和导出的详细信息，请参阅[此部分](../start/import.md)。
 
 ### 配置单个优惠券 {#configuring-individual-coupons}
 
@@ -75,8 +74,7 @@ ht-degree: 1%
 
 ## 在电子邮件投放中插入优惠券 {#inserting-a-coupon-into-an-email-delivery}
 
-在下面的示例中，从主页创建投放。 有关如何创建投放的详细说明，请参阅[此章节](about-email-channel.md)。 您还可以在工作流中为投放添加优惠券。
-
+在下面的示例中，从主页创建投放。 有关如何创建投放的详细说明，请参阅[此章节](email.md)
 1. 转到&#x200B;**[!UICONTROL Campaigns]**&#x200B;并选择&#x200B;**[!UICONTROL Deliveries]**。
 1. 单击 **[!UICONTROL Create]**。
 
@@ -150,9 +148,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->默认情况下，优惠券管理模块使用&#x200B;**nms:recipient**&#x200B;表。 [了解详情](../../configuration/using/about-data-model.md#default-recipient-table)。
+>默认情况下，优惠券管理模块使用&#x200B;**nms:recipient**&#x200B;表。 [了解详情](../dev/datamodel.md#ootb-profiles)。
 >
->在此页面[中了解如何使用自定义收件人表](../../configuration/using/about-custom-recipient-table.md)。
+>在此页面[中了解如何使用自定义收件人表](../dev/custom-recipient.md)。
 
 ## 管理优惠券不足 {#managing-insufficient-coupons}
 

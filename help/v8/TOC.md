@@ -5,9 +5,9 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: f308f34afc16426d81d31eeaca5f14b10ac49c32
+source-git-commit: 0e2e96a37165b82829df7421760de761a2c2b1a5
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '806'
 ht-degree: 95%
 
 ---
@@ -92,6 +92,9 @@ ht-degree: 95%
       + [添加个性化字段](send/personalization-fields.md)
       + [使用个性化块](send/personalization-blocks.md)
       + [创建条件](send/conditions.md)
+      + [个性化产品建议券](send/personalized-coupons.md)
+      + [生成个性化 PDF 文档](send/generating-personalized-pdf-documents.md)
+      + [自定义表情符号列表](send/customizing-emoticon-list.md)
    + 验证和发送投放 {#validate}
       + [预览和校样](send/preview-and-proof.md)
       + [投放分析](send/delivery-analysis.md)

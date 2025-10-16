@@ -65,4 +65,4 @@ ht-degree: 4%
 
 请在以下视频中了解如何将个性化字段添加到主题行以及电子邮件投放的内容。
 
->[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/27467?captions=chi_hans&quality=12)

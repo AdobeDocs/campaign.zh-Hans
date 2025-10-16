@@ -4,8 +4,9 @@ description: 了解如何在消息内容中使用内置个性化块
 feature: Personalization
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 214ad693-d456-47ec-a9c8-199ba23c3d9c
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 17%
@@ -79,4 +80,4 @@ ht-degree: 17%
 
 请在以下视频中了解如何创建动态内容块以及如何使用动态内容块将电子邮件投放内容个性化。
 
->[!VIDEO](https://video.tv.adobe.com/v/3449016?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)

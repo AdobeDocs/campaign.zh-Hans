@@ -4,8 +4,9 @@ description: 了解如何个性化消息内容
 feature: Personalization
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 1da45746-4d69-415b-a793-9a08ce80091d
-source-git-commit: 3ac2976839f084761ba56647b282062d8d457ff2
+source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 48%
@@ -51,7 +52,7 @@ Adobe Campaign简化了个性化：您可以使用单个[消息模板](create-te
 
 要改进投放保护，您可以为个性化阶段设置超时期限。
 
-在&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡中，为&#x200B;**[!UICONTROL Maximum personalization run time]**&#x200B;选项选择最大值（以秒为单位）。
+在&#x200B;**[!UICONTROL Delivery]**&#x200B;的&#x200B;**[!UICONTROL Delivery properties]**&#x200B;选项卡中，为&#x200B;**[!UICONTROL Maximum personalization run time]**&#x200B;选项选择最大值（以秒为单位）。
 
 在预览或发送期间，如果个性化阶段超过了您在此字段中设置的最大时间，则流程会中止，并出现错误消息，投放会失败。
 
@@ -70,4 +71,4 @@ Adobe Campaign简化了个性化：您可以使用单个[消息模板](create-te
 了解不同类型的动态内容，并了解如何创建个性化块和条件语句并将它们应用到投放中。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3452878?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/335734?quality=12)

@@ -4,8 +4,9 @@ description: 了解哪些源可用于个性化
 feature: Personalization
 role: User
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 711256e2-ab77-404a-b052-6793a85da193
-source-git-commit: c248dd899ea704e43873652545c6b945c2915b57
+source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -46,7 +47,7 @@ Personalization数据可从各种类型的源中检索：Campaign数据库数据
 
 ### 优化个性化 {#optimize-personalization}
 
-您可以使用投放属性的&#x200B;**[!UICONTROL Analysis]**&#x200B;选项卡中提供的专用选项&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;来优化个性化。
+您可以使用投放属性的&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;选项卡中提供的专用选项&#x200B;**[!UICONTROL Analysis]**&#x200B;来优化个性化。
 
 在投放分析期间，此选项会自动创建和执行工作流，该工作流会将链接到目标的所有数据（包括来自FDA中链接的表的数据）存储在临时表中。
 
@@ -57,7 +58,7 @@ Personalization数据可从各种类型的源中检索：Campaign数据库数据
 1. 创建营销策划。
 1. 在营销活动的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡中，将&#x200B;**查询**&#x200B;活动添加到您的工作流。
 1. 将&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动添加到工作流并打开它。
-1. 转到&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL Analysis]**&#x200B;选项卡并选择&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;选项。
+1. 转到&#x200B;**[!UICONTROL Analysis]**&#x200B;的&#x200B;**[!UICONTROL Delivery properties]**&#x200B;选项卡并选择&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;选项。
 1. 配置投放并启动工作流以启动分析。
 
 分析完成后，个性化数据会通过分析期间动态创建的临时技术工作流存储在临时表中。

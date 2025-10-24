@@ -5,10 +5,10 @@ feature: Workflows, Data Management, Federated Data Access
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: ca7eca9d-9112-4ea1-9a0c-a24cf6a978e6
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: 26829656f8e06434ca3207c0c7b62ba907765972
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 2%
+source-wordcount: '304'
+ht-degree: 1%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 2%
 
 工作流&#x200B;**[!UICONTROL Working table]**&#x200B;用于处理与工作流活动共享数据。
 
-默认情况下，**[!UICONTROL Working table]**&#x200B;是在与需要查询的数据源相同的数据库中创建的。
-例如，在查询存储在云数据库上的&#x200B;**[!UICONTROL Recipients]**&#x200B;表时，工作流会在同一云数据库上创建&#x200B;**[!UICONTROL Working table]**。
+默认情况下，**[!UICONTROL Working table]**是在与需要查询的数据源相同的数据库中创建的。
+例如，在查询存储在云数据库上的**[!UICONTROL Recipients]**&#x200B;表时，工作流会在同一云数据库上创建&#x200B;**[!UICONTROL Working table]**。
 
 使用&#x200B;**[!UICONTROL Change Data Source]**&#x200B;活动为您的&#x200B;**[!UICONTROL Working table]**&#x200B;使用其他数据源。
 
@@ -28,6 +28,10 @@ ht-degree: 2%
 >[!IMPORTANT]
 >
 >请注意，不应将&#x200B;**[!UICONTROL Change Dimension]**&#x200B;和&#x200B;**[!UICONTROL Change Data source]**&#x200B;活动添加到一行中。 如果需要连续使用这两个活动，请确保在它们之间包含&#x200B;**[!UICONTROL Enrichement]**&#x200B;活动。 这可以确保正确执行并防止潜在的冲突或错误。
+
+>[!NOTE]
+>
+>**更改数据Source**&#x200B;活动每次执行最多可处理100万个记录。 如果您需要提高此限制，请联系您的Adobe代表。
 
 要使用&#x200B;**[!UICONTROL Change Data Source]**&#x200B;活动，您必须：
 

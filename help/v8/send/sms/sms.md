@@ -5,10 +5,10 @@ feature: SMS
 role: User, Data Engineer
 level: Beginner
 exl-id: e2e2922a-2058-4588-b1b5-6997f29ee663
-source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
+source-git-commit: 784c74aaff23dbf1f35c6e8153f90610048e1c07
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 12%
+source-wordcount: '185'
+ht-degree: 10%
 
 ---
 
@@ -27,7 +27,8 @@ ht-degree: 12%
 >[!NOTE]
 >
 >您还可以使用Adobe Campaign将[推送通知](../push.md)和[LINE](../line/line.md)消息发送到移动设备。
-
+>
+> 对于使用旧版短信连接器的客户，现有实施仍受支持。 但是，我们建议迁移到新连接器。 如果要过渡，请联系Adobe 。
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>

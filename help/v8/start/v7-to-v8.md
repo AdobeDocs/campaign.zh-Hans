@@ -59,14 +59,14 @@ Campaign v8依赖于&#x200B;**混合架构**。 请注意，如果从Campaign Cl
 
 Campaign v8 企业版引入了&#x200B;**完全联合数据访问** (FFDA) 概念：所有数据现在都位于云数据库上的远程位置。凭借这种新架构，Campaign v8 企业版 (FFDA) 部署简化了数据管理：云数据库上不需要索引。您只需创建表格、复制数据即可开始。云数据库技术无需特定的维护来保证性能级别。
 
-在[此页面](../architecture/architecture.md)中了解有关[!DNL Campaign] v8架构的更多信息。
+在[!DNL Campaign]此页面[中了解有关](../architecture/architecture.md) v8架构的更多信息。
 
 
 ## 使用 Adobe ID 连接到 Campaign{#adobe-id}
 
 Campaign 用户仅可通过其 Adobe ID 进行连接。可使用同一个 Adobe ID 来管理与单个帐户关联的所有 Adobe 计划和产品，适合所有 Adobe Experience Cloud 解决方案。
 
-了解如何在[此页面](connect.md)中连接到[!DNL Campaign]。
+了解如何在[!DNL Campaign]此页面[中连接到](connect.md)。
 
 ## 使用多维数据集分析数据{#adobe-reporting}
 

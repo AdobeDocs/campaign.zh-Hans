@@ -6,10 +6,10 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: ad75f01e-2c6c-4607-b15a-8870d399002a
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: 6b70ad987b828dc1c17bc4f0683046be4eff0408
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 10%
+source-wordcount: '862'
+ht-degree: 8%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 10%
 
 例如，您希望发送包含日语字符的电子邮件。 为确保向日本的收件人正确显示所有字符，您可能需要使用支持日语字符的编码而不是标准UTF-8。
 
-为此，请选择&#x200B;**[!UICONTROL Character encoding]**&#x200B;部分中的&#x200B;**[!UICONTROL Force the encoding used for messages]**&#x200B;选项，然后从显示的下拉列表中选择编码。
+为此，请选择&#x200B;**[!UICONTROL Force the encoding used for messages]**&#x200B;部分中的&#x200B;**[!UICONTROL Character encoding]**&#x200B;选项，然后从显示的下拉列表中选择编码。
 
 ![](assets/email-smtp-encoding.png)
 
@@ -76,11 +76,55 @@ ht-degree: 10%
 
 有关退回邮件管理的详细信息，请参阅[此部分](delivery-failures.md#bounce-mail-management)。
 
+## 启用一键式列表取消订阅 {#one-click-list-unsubscribe}
+
+一键式列表取消订阅URL是显示在电子邮件发件人信息旁边的链接或按钮，收件人只需单击一下即可立即选择退出您的邮件列表。<!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}-->
+
+它在ISP的电子邮件界面中显示为&#x200B;**取消订阅**&#x200B;链接。 例如：
+
+![](assets/email-list-unsubscribe-example.png)
+
+必须添加名为List-Unsubscribe的SMTP标头，以确保实现最佳可投放性管理，并可用作“报告为垃圾邮件”图标的替代图标。 事实上，使用此功能可降低投诉率，并有助于保护您的声誉。
+
+>[!IMPORTANT]
+>
+>要在电子邮件标头中显示一键式取消订阅URL，收件人的电子邮件客户端必须支持此功能。
+
+要启用此功能，请在投放属性的&#x200B;**[!UICONTROL Addition of One-click List-Unsubscription Header]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL SMTP]**&#x200B;选项。
+
+>[!NOTE]
+>
+>默认启用此选项。
+
+![](assets/email-smtp-list-unsubscribe.png)
+
+<!--
+>[!WARNING]
+>
+>If you uncheck this option in the delivery template, it will still be enabled by default in the deliveries created from this template. You need to enable the option again at the delivery level.-->
+
+根据电子邮件客户端及其用于执行选择退出的方法，单击电子邮件标头中的&#x200B;**取消订阅**&#x200B;链接可能会产生以下影响：
+
+* 如果电子邮件客户端使用&#x200B;**One-Click** List-Unsubscribe方法，收件人将直接选择退出。
+
+  >[!NOTE]
+  >
+  >主要ISP，例如Google和Yahoo！ 要求发件人遵守&#x200B;**一键式列表取消订阅**。
+
+* 如果电子邮件客户端不支持一键式列表取消订阅，则仍可使用&#x200B;**&quot;mailto&quot;** List-Unsubscribe方法，该方法会向电子邮件标头中指定的取消订阅地址发送预填充的电子邮件。
+
+  您可以在标头中显式设置地址，也可以使用动态地址（例如，使用&lt;%=errorAddress%>或选项“NmsEmail_DefaultErrorAddr”，该选项可通过部署向导进行设置）。
+
+>[!NOTE]
+>
+>您还可以手动设置[One-Click List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"}和[&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"}方法。 Experience Cloud [可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}中介绍了详细步骤。
+
+
 ## 添加SMTP标头 {#adding-smtp-headers}
 
 可以将SMTP标头添加到投放。 为此，请使用投放中&#x200B;**[!UICONTROL SMTP]**&#x200B;选项卡的相关部分。
 
-在此窗口中输入的脚本必须引用以下形式每行一个标头： **name：value**。
+在此窗口中输入的脚本必须引用以下形式每行一个标头： **name:value**。
 
 如有必要，将自动对值进行编码。
 

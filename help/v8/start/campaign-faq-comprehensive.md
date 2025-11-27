@@ -484,7 +484,7 @@ Campaign v8是Adobe Campaign的完全再造，专为现代云原生架构而设�
 * **减少IT开销** — 消除基础架构管理和升级计划
 * **高级功能** - AI助手、富推送、增强型短信、Adobe Experience Platform集成
 
-对于Campaign Standard用户：****
+对于Campaign Standard用户：**&#x200B;**
 
 Campaign Standard用户现在有资格过渡到Campaign v8托管云服务。 主要优势包括：
 
@@ -537,7 +537,7 @@ Campaign v8在保持核心Campaign功能的同时，实现了重大改进：
 * [从 Campaign Classic v7 到 v8](v7-to-v8.md)
 * [v7到v8详细指南](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/v7-to-v8){target="_blank"}
 
-对于Campaign Standard用户：****
+对于Campaign Standard用户：**&#x200B;**
 
 * [Campaign Standard过渡到v8](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/acs-migration){target="_blank"}
 * [Campaign v8采用指南](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/acs-to-ac/home){target="_blank"}

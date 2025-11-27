@@ -5,9 +5,9 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: 0e2e96a37165b82829df7421760de761a2c2b1a5
+source-git-commit: 0830dea0e04a67c2d0b4102e41c0e57d8c98302a
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '811'
 ht-degree: 95%
 
 ---
@@ -38,6 +38,7 @@ ht-degree: 95%
    + [组件和流程](start/ac-components.md)
    + [从 Campaign Classic v7 到 v8](start/v7-to-v8.md)
    + [从 Campaign Standard 到 v8](start/acs-to-v8.md)
+   + [常见问题解答](start/campaign-faq-comprehensive.md)
    + [常见问题解答](start/campaign-faq.md)
 + 营销活动管理 {#campaigns}
    + [营销活动快速入门](start/campaigns.md)
@@ -232,7 +233,7 @@ ht-degree: 95%
       + [外部帐户](config/external-accounts.md)
 + 开发人员资源 {#developer}
    + [Campaign 数据模型](dev/datamodel.md)
-   + 架构和表单 {#shemas-forms}
+   + 架构和表单 {#schemas-forms}
       + [使用架构](dev/schemas.md)
       + [创建架构](dev/create-schema.md)
       + [扩展架构](dev/extend-schema.md)
@@ -264,7 +265,7 @@ ht-degree: 95%
          + [检索轮廓](dev/api/retrieving-profiles.md)
          + [更新轮廓](dev/api/updating-profiles.md)
          + [创建轮廓](dev/api/creating-profiles-api.md)
-      + 管理服务和订阅 {#managing-services-and-subscriptiopns}
+      + 管理服务和订阅 {#managing-services-and-subscriptions}
          + [创建服务](dev/api/creating-a-service.md)
          + [检索订阅](dev/api/retrieving-subscriptions.md)
          + [执行订阅](dev/api/perform-subscriptions.md)

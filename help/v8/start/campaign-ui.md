@@ -6,10 +6,10 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
-source-git-commit: f308f34afc16426d81d31eeaca5f14b10ac49c32
+source-git-commit: df8ab43d9c7aee96c23240cd6c2775311da1abf2
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 74%
+source-wordcount: '1178'
+ht-degree: 68%
 
 ---
 
@@ -82,19 +82,17 @@ Campaign 客户端控制台是一个原生应用程序，它通过标准 Interne
 
 例如，在浏览到 **[!UICONTROL Profiles and targets]** 选项卡时，您可以访问收件人列表、订阅服务、现有的目标选择工作流以及创建所有这些组件的快捷方式。
 
-![](assets/overview-list.png)
+![Campaign控制台用户界面，显示如何从“配置文件和目标”选项卡访问列表](assets/overview-list.png)
 
 在屏幕中选择某个元素时，该元素将加载到新选项卡中，以便您轻松浏览内容。
 
-![](assets/new-tab.png)
+![Campaign控制台用户界面，显示如何编辑新选项卡中的列表](assets/new-tab.png)
 
 ### 创建元素 {#create-an-element}
 
 使用屏幕左侧 **[!UICONTROL Create]** 部分中的快捷方式添加新元素。您也可以使用列表上方的 **[!UICONTROL Create]** 按钮向当前列表中添加新元素。
 
-例如，在投放页面上，使用 **[!UICONTROL Create]** 按钮创建新的投放。
-
-![](assets/new-recipient.png)
+![Campaign控制台用户界面，显示如何从“用户档案和目标屏幕”创建收件人](assets/new-recipient.png)
 
 <!--
 ## Use a web browser {#web-browser}
@@ -109,7 +107,7 @@ The web access interface is similar to the console interface. From a browser, yo
 
 浏览 Campaign 资源管理器以访问所有 Adobe Campaign 功能和设置。
 
-![](assets/explorer.png)
+![Campaign控制台用户界面显示Explorer，重点显示“营销活动”菜单](assets/explorer.png)
 
 在此工作区中您可以访问资源管理器树，以浏览所有功能和选项。
 
@@ -151,9 +149,9 @@ The web access interface is similar to the console interface. From a browser, yo
 
   >[!CAUTION]
   >
-  >在安装过程中选择语言，此后不能更改&#x200B;**&#x200B;**。
+  >在安装过程中选择语言，此后不能更改&#x200B;****。
 
-* 有关 Campaign Web 用户界面支持的语言，[请参阅此页面](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=zh-Hans#language-pref){target="_blank"}。
+* 有关Campaign Web用户界面支持的语言，[请参阅Campaign Web用户界面文档](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=zh-Hans#language-pref){target="_blank"}。
 
 ## 格式
 

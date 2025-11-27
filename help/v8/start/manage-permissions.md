@@ -4,8 +4,9 @@ description: 了解如何向Campaign v8用户授予权限
 feature: Permissions
 role: User, Admin
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 90154f84-b6a7-407c-93b7-9731dc94d9de
-source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
+source-git-commit: df8ab43d9c7aee96c23240cd6c2775311da1abf2
 workflow-type: tm+mt
 source-wordcount: '1618'
 ht-degree: 1%
@@ -186,7 +187,7 @@ Adobe Campaign提供了一组已命名权限，允许您定义分配给用户和
 已命名权限将权限授予：
 
 * 执行操作
-例如，为具有&#x200B;**准备投放**&#x200B;命名权限的&#x200B;**投放操作员**&#x200B;组的成员激活投放编辑器中的&#x200B;**分析**&#x200B;按钮
+例如，为具有**准备投放**&#x200B;命名权限的&#x200B;**投放操作员**&#x200B;组的成员激活投放编辑器中的&#x200B;**分析**&#x200B;按钮
 
 * 对文件夹的访问权限
 操作员组成员资格可以通过更改文件夹的安全性设置来授予或限制对文件夹的访问权限。 [了解详情](folder-permissions.md#restrict-access-to-a-folder)。

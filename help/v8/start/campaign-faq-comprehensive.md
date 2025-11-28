@@ -469,7 +469,7 @@ Campaign v8是Adobe Campaign的完全再造，专为现代云原生架构而设�
 * **减少IT开销** — 消除基础架构管理和升级计划
 * **高级功能** - AI助手、富推送、增强型短信、Adobe Experience Platform集成
 
-对于Campaign Standard用户：****
+对于Campaign Standard用户：**&#x200B;**
 
 Campaign Standard用户现在有资格过渡到Campaign v8托管云服务。 主要优势包括：
 
@@ -1896,7 +1896,7 @@ Campaign v8提供了全面的API文档，其中涵盖了SOAP API（适用于客�
 * 构建自定义监控和警报解决方案
 * 为Campaign数据和操作创建外部界面
 
-**访问：**[Campaign v8 API文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans){target="_blank"}
+**访问：**&#x200B;[Campaign v8 API文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans){target="_blank"}
 
 +++
 
@@ -1954,7 +1954,7 @@ Campaign API允许您以编程方式控制和监视工作流的执行，从而�
 * **首先备份** — 始终在结构更改之前备份数据库
 * **开发中的测试** — 在生产之前验证开发环境中的架构更改
 * **停机时间计划** — 大型结构更改可能需要短暂的维护时段
-* 托管云服务的&#x200B;**** — 与Adobe支持部门协调重大更改
+* 托管云服务的&#x200B;**&#x200B;** — 与Adobe支持部门协调重大更改
 * **可逆性** — 某些更改（如删除字段）可能会导致数据丢失
 
 **最佳实践：**&#x200B;使用架构版本控制和更改跟踪。 记录所有自定义架构修改，以进行维护和疑难解答。

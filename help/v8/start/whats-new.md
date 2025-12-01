@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7771a02c-ebd4-48b6-b25e-6b6e420ad493
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 4b67d5f5427b1be8217f141a97c4de413f5e1f2e
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 97%
+source-wordcount: '1447'
+ht-degree: 69%
 
 ---
 
@@ -21,6 +21,22 @@ Adobe Campaign v8 在基础架构、安全性、可投放性和监测方面有�
 ![](assets/home-page.png)
 
 ## 关键功能{#key-capabilities}
+
+### Campaign Web 用户界面{#new-web-ui}
+
+Adobe Campaign v8与传统客户端控制台一起提供了&#x200B;**新的Web用户界面**。 这个现代、直观的界面专为需要加快营销活动创建和改进辅助功能的营销人员而设计。
+
+**主要优点：**
+
+* **现代设计** — 可从任何浏览器访问的简洁响应式界面
+* **简化的工作流** — 简化的营销活动创建和管理
+* **拖放功能** — 没有技术知识的可视化内容设计
+* **更快上线** — 新用户的最低学习曲线
+* **统一体验** — 与Campaign Standard共享相似之处以便于过渡
+
+从Campaign v8.6开始，可通过Adobe Experience Cloud使用Campaign Web UI，从而无缝访问所有Adobe解决方案。
+
+[了解有关Campaign Web用户界面的详细信息](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/campaign-web-home){target="_blank"}
 
 ### 中央工作流管理{#central-wf-mgt}
 
@@ -92,6 +108,63 @@ Adobe Campaign 现在可以利用云规模数据库技术显著提升其规模�
 
 [了解关于企业 (FFDA) 部署的更多信息](../architecture/enterprise-deployment.md)
 
+### 大规模性能 {#performance-metrics}
+
+Campaign v8企业版为大量营销操作提供卓越的性能：
+
+* **批次处理** — 对于大规模营销活动执行，每小时最多&#x200B;**200万项操作**
+* **事务性消息传递** - **每小时100万条消息**&#x200B;用于实时通信
+* **快速构建受众** — 在几分钟内查询和划分数百万个配置文件，而不是几小时
+* **云数据库** - Snowflake技术可在活动高峰期消除系统过载
+
+此性能使组织能够在企业规模上执行复杂的多接触式营销活动，而不会影响速度或可靠性。
+
+### 新增功能和增强功能 {#new-features}
+
+Campaign v8引入了强大的新功能和增强功能：
+
+**AI 助手**
+
+利用创作AI加快内容创建：
+
+* 自动生成电子邮件、短信和推送通知内容
+* 根据您的品牌语调和指导方针调整消息传送
+* 品牌一致性评分以确保一致性
+* 缩短内容创建时间，同时保持质量
+
+**富推送通知**
+
+通过以下方式创造引人入胜的移动体验：
+
+* 推送通知中的图像、视频和轮播
+* 交互式按钮和计时器
+* iOS和Android的增强型自定义
+* 通过可视化storytelling提高参与度
+
+**已升级的SMS基础结构(v2.0)**
+
+* 增强的可靠性和投放率
+* 与SMPP连接器更好的兼容性
+* 改进了大流量短信活动的吞吐量
+* 高级投放监控和报告
+
+**增强的集成**
+
+* **Adobe Experience Manager as a Cloud Service** — 无缝的内容管理和资源集成
+* **REST API** — 现代API架构更便于集成和开发
+* **动态报告** — 适用于Campaign Standard用户并过渡到v8的高级分析功能
+
+### 自动升级和维护 {#automatic-upgrades}
+
+Campaign v8托管云服务消除了手动升级的负担：
+
+* **持续传递模型** — 自动升级到最新稳定版本
+* **零停机时间** — 执行升级时对操作的影响最小
+* **立即访问** — 发布新功能和安全修补程序后立即获取它们
+* **减轻IT负担** - Adobe管理所有基础架构维护和更新
+* **协调计划** - Adobe将与您一起计划升级时间
+
+此方法可确保您的Campaign实例始终安全、优化并配备最新功能，而无需使用内部IT资源进行升级规划和执行。
 
 ## 自助式管理界面{#self-service-admin}
 

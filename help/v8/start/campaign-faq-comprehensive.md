@@ -93,15 +93,15 @@ ht-degree: 9%
 
 是的。 Campaign提供了多种用于监视工作流执行的工具：
 
-* **[工作流仪表板](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution){target="_blank"}** — 查看每个工作流活动的实时状态、进度和错误
-* **[工作流日志](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution#displaying-logs){target="_blank"}** — 访问详细的执行日志以解决问题
-* **[热图](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/heatmap){target="_blank"}** — 可视化工作流活动并识别性能瓶颈
+* **[工作流仪表板](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution){target="_blank"}** — 查看每个工作流活动的实时状态、进度和错误
+* **[工作流日志](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution#displaying-logs){target="_blank"}** — 访问详细的执行日志以解决问题
+* **[热图](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/monitoring-workflows/heatmap){target="_blank"}** — 可视化工作流活动并识别性能瓶颈
 * **[审核跟踪](../reporting/audit-trail.md)** — 跟踪对工作流所做的所有修改
-* **[警报](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/use-cases/monitoring/send-alerts-to-operators){target="_blank"}** — 为工作流失败或延迟设置通知
+* **[警报](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/use-cases/monitoring/send-alerts-to-operators){target="_blank"}** — 为工作流失败或延迟设置通知
 
 要监视工作流，请打开该工作流并单击&#x200B;**日志**&#x200B;选项卡。 失败的活动会以红色突出显示，您可以通过单击这些活动来查看错误详细信息。
 
-了解有关[监视工作流执行](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution){target="_blank"}和[工作流最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}的更多信息。
+了解有关[监视工作流执行](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution){target="_blank"}和[工作流最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hans){target="_blank"}的更多信息。
 
 +++
 
@@ -358,7 +358,7 @@ Adobe Campaign 包括在不同的应用程序服务器模块之间编排所有�
 
 **相关主题：**
 
-[工作流入门](../config/workflows.md) | [构建您的第一个工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target="_blank"} | [工作流使用案例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"} | [监视工作流执行](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
+[工作流入门](../config/workflows.md) | [构建您的第一个工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target="_blank"} | [工作流使用案例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"} | [监视工作流执行](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hans){target="_blank"}
 
 +++
 
@@ -471,7 +471,7 @@ Campaign v8提供两种用于创建电子邮件的界面：
 
 [请参阅Campaign v8文档以了解详情](../dev/landing-pages.md)。
 
-您还可以使用Campaign Web用户界面创建和发布登陆页面 — [了解更多](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}。
+您还可以使用Campaign Web用户界面创建和发布登陆页面 — [了解更多](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}。
 
 +++
 
@@ -499,7 +499,7 @@ Campaign v8提供两种用于创建电子邮件的界面：
 
 **相关主题：**
 
-[了解有关Web应用程序和表单的更多信息](../dev/webapps.md) | [Campaign Web UI登陆页面](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
+[了解有关Web应用程序和表单的更多信息](../dev/webapps.md) | [Campaign Web UI登陆页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
 
 +++
 
@@ -541,7 +541,7 @@ Campaign v8基于现代云原生架构而构建，具有显着改进：
 
 **相关主题：**
 
-[Campaign v8关键功能](whats-new.md) | [Campaign v8架构](../architecture/architecture.md) | [功能矩阵](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"} | [护栏和限制](ac-guardrails.md)
+[Campaign v8关键功能](whats-new.md) | [Campaign v8架构](../architecture/architecture.md) | [功能矩阵](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/capability-matrix){target="_blank"} | [护栏和限制](ac-guardrails.md)
 
 +++
 
@@ -590,7 +590,7 @@ Campaign v8在保持核心Campaign功能的同时，实现了重大改进：
 
 * Adobe提供迁移支持、指导和工具
 * v8仅限于Managed Cloud Service（无内部部署或混合部署）
-* 某些技术实施可能不同 — 请查看[功能矩阵](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
+* 某些技术实施可能不同 — 请查看[功能矩阵](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/capability-matrix){target="_blank"}
 * 数据迁移和测试需要规划和资源
 * **对于Campaign Standard用户** — 过渡旨在保持平稳，工作流中断最小
 
@@ -607,9 +607,9 @@ Campaign v8在保持核心Campaign功能的同时，实现了重大改进：
 
 **对于Campaign Classic v7用户：** [从Campaign Classic v7到v8](v7-to-v8.md) | [v7到v8详细指南](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/v7-to-v8){target="_blank"}
 
-**对于Campaign Standard用户：** [Campaign Standard过渡到v8](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/acs-migration){target="_blank"} | [Campaign v8采用指南](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/acs-to-ac/home){target="_blank"} | [从Campaign Standard到v8概述](https://experienceleague.adobe.com/en/docs/campaign-web/acs-to-ac/overview){target="_blank"} | [营销人员快速入门](https://experienceleague.adobe.com/en/docs/campaign-web/acs-to-ac/marketers){target="_blank"} | [管理员/开发人员快速入门](https://experienceleague.adobe.com/en/docs/campaign-web/acs-to-ac/admin-developers){target="_blank"}
+**对于Campaign Standard用户：** [Campaign Standard过渡到v8](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/acs-migration){target="_blank"} | [Campaign v8采用指南](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/acs-to-ac/home){target="_blank"} | [从Campaign Standard到v8概述](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/acs-to-ac/overview){target="_blank"} | [营销人员快速入门](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/acs-to-ac/marketers){target="_blank"} | [管理员/开发人员快速入门](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/acs-to-ac/admin-developers){target="_blank"}
 
-**常规资源：** [Campaign v8功能矩阵](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"} | [兼容性矩阵](compatibility-matrix.md)
+**常规资源：** [Campaign v8功能矩阵](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/capability-matrix){target="_blank"} | [兼容性矩阵](compatibility-matrix.md)
 
 +++
 
@@ -687,7 +687,7 @@ Campaign Web UI中已更新以下术语（客户端控制台使用传统术语�
 
 **相关主题：**
 
-[功能矩阵](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/capability-matrix){target="_blank"} | [兼容性矩阵](compatibility-matrix.md) | [护栏和限制](ac-guardrails.md) | [v7到v8过渡指南](v7-to-v8.md)
+[功能矩阵](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/capability-matrix){target="_blank"} | [兼容性矩阵](compatibility-matrix.md) | [护栏和限制](ac-guardrails.md) | [v7到v8过渡指南](v7-to-v8.md)
 
 [Campaign Standard到v8的过渡](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/acs-migration){target="_blank"}
 
@@ -716,7 +716,7 @@ Campaign提供了多种导入方法：使用导入向导导入简单的文件；
 
 **相关主题：**
 
-[导入数据指南](../start/import.md) | [循环导入工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/recurring-import-workflow.html){target="_blank"} | [数据加载活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}
+[导入数据指南](../start/import.md) | [循环导入工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/recurring-import-workflow.html?lang=zh-Hans){target="_blank"} | [数据加载活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=zh-Hans){target="_blank"}
 
 +++
 
@@ -724,7 +724,7 @@ Campaign提供了多种导入方法：使用导入向导导入简单的文件；
 
 Campaign提供了多种定位方法：使用可视条件构建查询、定位现有列表或区段、从外部文件(CSV、TXT)导入收件人或应用预定义过滤器。 您可以将标准与AND/OR逻辑相结合，排除特定群体，使用控制组，以及拆分以进行A/B测试。 始终在发送前预览目标群体大小。
 
-[定义营销活动目标](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans){target="_blank"} | [查询活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"} | [创建受众](../audiences/create-audiences.md)
+[定义营销活动目标](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans){target="_blank"} | [查询活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"} | [创建受众](../audiences/create-audiences.md)
 
 +++
 
@@ -744,7 +744,7 @@ Campaign提供了多种定位方法：使用可视条件构建查询、定位现
 
 **相关主题：**
 
-[创建受众](../audiences/create-audiences.md) | [列出更新活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/list-update.html){target="_blank"}
+[创建受众](../audiences/create-audiences.md) | [列出更新活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/list-update.html?lang=zh-Hans){target="_blank"}
 
 +++
 
@@ -754,7 +754,7 @@ Campaign提供了多种定位方法：使用可视条件构建查询、定位现
 
 **提示：**&#x200B;发送前始终删除重复项，以确保每个人只收到一次您的消息。
 
-了解有关[重复数据删除活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}的更多信息
+了解有关[重复数据删除活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=zh-Hans){target="_blank"}的更多信息
 
 +++
 
@@ -770,7 +770,7 @@ Campaign跟踪订阅/退订历史记录，并自动管理选择加入/选择退�
 
 **相关主题：**
 
-[管理订阅](../start/subscriptions.md) | [查询活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}
+[管理订阅](../start/subscriptions.md) | [查询活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"}
 
 +++
 
@@ -778,7 +778,7 @@ Campaign跟踪订阅/退订历史记录，并自动管理选择加入/选择退�
 
 在工作流中使用&#x200B;**[!UICONTROL Exclusion]**&#x200B;活动从目标中删除不需要的用户档案。 将其放在定向活动之后，并定义要排除的群体。
 
-了解有关[排除活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/exclusion.html){target="_blank"}的更多信息
+了解有关[排除活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/exclusion.html?lang=zh-Hans){target="_blank"}的更多信息
 
 +++
 
@@ -861,7 +861,7 @@ Campaign提供个性化功能，根据收件人数据、行为和偏好创建相
 
 客户端控制台还支持使用条件内容和工作流的多语言内容，但需要更多手动配置。
 
-[多语言投放(Web UI)](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/multilingual){target="_blank"} | [条件内容（客户端控制台）](../send/conditions.md)
+[多语言投放(Web UI)](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/msg/multilingual){target="_blank"} | [条件内容（客户端控制台）](../send/conditions.md)
 
 +++
 
@@ -887,7 +887,7 @@ Campaign提供个性化功能，根据收件人数据、行为和偏好创建相
 
 **注意：** AI助手仅在Campaign Web UI中可用，当前仅支持英语。 用户需要适当的权限，并且必须同意用户协议。
 
-[AI助手概述](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/generative-gs){target="_blank"} | [AI助手用例](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/generative-uc){target="_blank"} | [品牌一致性](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/ai-assistant/ai-assistant/brands-score){target="_blank"}
+[AI助手概述](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/content/ai-assistant/generative-gs){target="_blank"} | [AI助手用例](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/content/ai-assistant/generative-uc){target="_blank"} | [品牌一致性](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/content/ai-assistant/ai-assistant/brands-score){target="_blank"}
 
 +++
 
@@ -926,7 +926,7 @@ Campaign生成显示警告和错误的日志。 错误会阻止投放，必须�
 
 在&#x200B;**[!UICONTROL Resources > Campaign management > Seed addresses]**&#x200B;中管理种子地址。 保持较小的列表以避免影响投放量度。
 
-[种子地址指南](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/delivery-control.html){target="_blank"}
+[种子地址指南](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/delivery-control.html?lang=zh-Hans){target="_blank"}
 
 +++
 
@@ -1144,7 +1144,7 @@ Campaign跟踪每个地址的投放错误。 当某个地址达到配置的错�
 
 **相关主题：**
 
-[生成工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target="_blank"} | [工作流活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/about-activities.html){target="_blank"} | [工作流最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"} | [工作流使用案例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"}
+[生成工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target="_blank"} | [工作流活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/about-activities.html){target="_blank"} | [工作流最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hans){target="_blank"} | [工作流使用案例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"}
 
 +++
 
@@ -1172,7 +1172,7 @@ Campaign跟踪每个地址的投放错误。 当某个地址达到配置的错�
 
 **相关主题：**
 
-[导入最佳实践](../start/import.md) | [数据加载活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"} | [循环导入工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/recurring-import-workflow.html){target="_blank"}
+[导入最佳实践](../start/import.md) | [数据加载活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=zh-Hans){target="_blank"} | [循环导入工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/recurring-import-workflow.html?lang=zh-Hans){target="_blank"}
 
 +++
 
@@ -1215,7 +1215,7 @@ Campaign跟踪每个地址的投放错误。 当某个地址达到配置的错�
 
 **相关主题：**
 
-[工作流用例库](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"} | [生成工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target="_blank"} | [工作流最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"} | [定位工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html){target="_blank"} | [数据管理工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/about-data-management.html){target="_blank"}
+[工作流用例库](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/about-workflow-use-cases.html){target="_blank"} | [生成工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target="_blank"} | [工作流最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hans){target="_blank"} | [定位工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=zh-Hans){target="_blank"} | [数据管理工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/about-data-management.html){target="_blank"}
 
 +++
 
@@ -1242,7 +1242,7 @@ Campaign跟踪每个地址的投放错误。 当某个地址达到配置的错�
 
 **相关主题：**
 
-[更新数据活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"} | [数据管理活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/about-action-activities.html){target="_blank"}
+[更新数据活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=zh-Hans){target="_blank"} | [数据管理活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/about-action-activities.html){target="_blank"}
 
 +++
 
@@ -1271,7 +1271,7 @@ Campaign的数据管理活动可在工作流中执行复杂的数据操作，以
 
 **相关主题：**
 
-[数据管理活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/about-targeting-activities.html){target="_blank"} | [定位工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html){target="_blank"} | [扩充活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}
+[数据管理活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/about-targeting-activities.html){target="_blank"} | [定位工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=zh-Hans){target="_blank"} | [扩充活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=zh-Hans){target="_blank"}
 
 +++
 
@@ -1298,7 +1298,7 @@ Campaign的数据管理活动可在工作流中执行复杂的数据操作，以
 
 **相关主题：**
 
-[Personalization指南](../send/personalize.md) | [工作流使用案例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=zh-Hans){target="_blank"} | [扩充活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}
+[Personalization指南](../send/personalize.md) | [工作流使用案例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=zh-Hans){target="_blank"} | [扩充活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=zh-Hans){target="_blank"}
 
 +++
 
@@ -1325,7 +1325,7 @@ Campaign的数据管理活动可在工作流中执行复杂的数据操作，以
 
 **相关主题：**
 
-[拆分活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"} | [A/B测试指南](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/a-b-testing.html){target="_blank"}
+[拆分活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=zh-Hans){target="_blank"} | [A/B测试指南](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/a-b-testing.html){target="_blank"}
 
 +++
 
@@ -1355,7 +1355,7 @@ Campaign的数据管理活动可在工作流中执行复杂的数据操作，以
 
 **相关主题：**
 
-[导入数据指南](../start/import.md) | [数据加载活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"} | [更新数据活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"}
+[导入数据指南](../start/import.md) | [数据加载活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=zh-Hans){target="_blank"} | [更新数据活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=zh-Hans){target="_blank"}
 
 +++
 
@@ -1381,7 +1381,7 @@ Campaign的数据管理活动可在工作流中执行复杂的数据操作，以
 
 **相关主题：**
 
-[查询活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"} | [使用聚合](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html){target="_blank"} | [欢迎计划](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=zh-Hans){target="_blank"}
+[查询活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"} | [使用聚合](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/data-management/using-aggregates.html?lang=zh-Hans){target="_blank"} | [欢迎计划](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=zh-Hans){target="_blank"}
 
 +++
 
@@ -1413,7 +1413,7 @@ Campaign的数据管理活动可在工作流中执行复杂的数据操作，以
 
 **相关主题：**
 
-[定位活动引用](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities.html){target="_blank"} | [流量控制活动引用](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/flow-control-activities.html){target="_blank"} | [操作活动引用](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html){target="_blank"} | [事件活动引用](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/event-activities.html){target="_blank"}
+[定位活动引用](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities.html?lang=zh-Hans){target="_blank"} | [流量控制活动引用](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/flow-control-activities.html?lang=zh-Hans){target="_blank"} | [操作活动引用](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html?lang=zh-Hans){target="_blank"} | [事件活动引用](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/event-activities.html?lang=zh-Hans){target="_blank"}
 
 +++
 
@@ -1458,7 +1458,7 @@ Campaign的数据管理活动可在工作流中执行复杂的数据操作，以
 
 **相关主题：**
 
-[工作流最佳实践指南](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"} | [生成工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target="_blank"} | [监视工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
+[工作流最佳实践指南](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hans){target="_blank"} | [生成工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target="_blank"} | [监视工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hans){target="_blank"}
 
 +++
 
@@ -1486,7 +1486,7 @@ Campaign的数据管理活动可在工作流中执行复杂的数据操作，以
 
 **相关主题：**
 
-[在Campaign Web UI中更改语言](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/connect-to-campaign#language-pref){target="_blank"} | [开始使用Campaign客户端控制台](connect.md)
+[在Campaign Web UI中更改语言](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/connect-to-campaign#language-pref){target="_blank"} | [开始使用Campaign客户端控制台](connect.md)
 
 +++
 
@@ -1512,7 +1512,7 @@ Campaign控制面板是一个基于Web的管理界面，通过跨Campaign实例�
 
 **其他资源：**
 
-[控制面板文档](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/control-panel-home){target="_blank"} | [控制面板教程视频](https://experienceleague.adobe.com/en/docs/control-panel-learn/tutorials/control-panel-overview){target="_blank"}
+[控制面板文档](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/control-panel-home){target="_blank"} | [控制面板教程视频](https://experienceleague.adobe.com/zh-hans/docs/control-panel-learn/tutorials/control-panel-overview){target="_blank"}
 
 +++
 
@@ -1619,7 +1619,7 @@ Campaign v8支持到主要企业数据库系统的联合数据访问(FDA)连接�
 
 **相关主题：**
 
-[CRM连接器配置](../connect/crm.md) | [工作流CRM活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector.html){target="_blank"}
+[CRM连接器配置](../connect/crm.md) | [工作流CRM活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector.html?lang=zh-Hans){target="_blank"}
 
 +++
 
@@ -1802,7 +1802,7 @@ Campaign提供两种创建高级自定义报表的方法：客户端控制台中
 
 **相关主题：**
 
-[调查入门](https://experienceleague.adobe.com/en/docs/campaign-classic/using/online-surveys/about-surveys){target="_blank"} | [调查报告](https://experienceleague.adobe.com/en/docs/campaign-classic/using/online-surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"}
+[调查入门](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/online-surveys/about-surveys){target="_blank"} | [调查报告](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/online-surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"}
 
 +++
 
@@ -1996,7 +1996,7 @@ Campaign的查询编辑器是一款功能强大的可视化工具，可在不了
 
 **相关主题：**
 
-[查询编辑器](../start/query-editor.md) | [工作流中的查询活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}
+[查询编辑器](../start/query-editor.md) | [工作流中的查询活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"}
 
 +++
 
@@ -2247,13 +2247,13 @@ Campaign的审核记录会记录删除事件和新用户档案的创建，以展
 
 * **[Adobe Campaign社区](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}** — 提问、共享解决方案并与Campaign社区建立联系
 * **[Experience League论坛](https://experienceleaguecommunities.adobe.com/){target="_blank"}** — 浏览所有Adobe产品的讨论
-* **[Campaign社区办公时间](https://experienceleague.adobe.com/){target="_blank"}** — 与Adobe专家一起参加实时会议
+* **[Campaign社区办公时间](https://experienceleague.adobe.com/zh-hans){target="_blank"}** — 与Adobe专家一起参加实时会议
 
 ### 文档与学习
 
 访问全面的指南、教程和培训材料。
 
-* **[Campaign教程](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html){target="_blank"}** — 逐步视频指南和实践教程
+* **[Campaign教程](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=zh-Hans){target="_blank"}** — 逐步视频指南和实践教程
 * **[新增功能](whats-new.md)** — 最新特性和功能
 * **[发行说明](release-notes.md)** — 当前和以前的发行信息
 * **[版本和升级](upgrades.md)** — 了解Campaign的版本、升级以及如何检查您的版本
@@ -2279,10 +2279,10 @@ Campaign的审核记录会记录删除事件和新用户档案的创建，以展
 
 通过官方的Adobe培训和认证计划提升您的技能。
 
-* **[Experience League帮助](https://experienceleague.adobe.com/en/browse/campaign/campaign-v8){target="_blank"}** - Campaign v8的帮助资源（Web UI和CLient控制台）
+* **[Experience League帮助](https://experienceleague.adobe.com/zh-hans/browse/campaign/campaign-v8){target="_blank"}** - Campaign v8的帮助资源（Web UI和CLient控制台）
 * **[Adobe数字学习服务](https://learning.adobe.com/){target="_blank"}** — 官方讲师指导课程和自学课程
-* **[Adobe Campaign认证](https://experienceleague.adobe.com/docs/certification/program/overview.html){target="_blank"}** — 通过专业认证验证您的专业知识
-* **[Experience League学习路径](https://experienceleague.adobe.com/?lang=en#dashboard/learning){target="_blank"}** — 引导式学习历程
+* **[Adobe Campaign认证](https://experienceleague.adobe.com/docs/certification/program/overview.html?lang=zh-Hans){target="_blank"}** — 通过专业认证验证您的专业知识
+* **[Experience League学习路径](https://experienceleague.adobe.com/zh-hans?lang=en#dashboard/learning){target="_blank"}** — 引导式学习历程
 
 ### 其他有用资源
 

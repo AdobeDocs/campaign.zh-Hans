@@ -87,7 +87,7 @@ recipient.save();
 * `getIfExists` — 检索单个记录，如果未找到，则返回null
 * `count` — 计数符合条件的记录
 
-请参阅[Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html){target="_blank"}以了解有关queryDef方法的更多信息。
+请参阅[Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html?lang=zh-Hans){target="_blank"}以了解有关queryDef方法的更多信息。
 
 ## 使用JSON进行查询 {#query-json}
 
@@ -211,7 +211,7 @@ for each(var delivery in deliveries.delivery) {
 >
 >`lineCount`参数限制结果的数量。 如果没有它，默认限制为10,000条记录。
 
-了解有关[ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html){target="_blank"}的详细信息。
+了解有关[ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=zh-Hans){target="_blank"}的详细信息。
 
 ## 查询工作流过渡数据 {#workflow-transition-data}
 
@@ -256,7 +256,7 @@ for each(var record in records.getElements()) {
 
 >[!CAUTION]
 >
->始终使用参数化的查询，字符串为`$(sz)`，整数为`$(l)`，以防止SQL注入漏洞。 请参阅[Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/f-sqlExec.html){target="_blank"}以了解详情。
+>始终使用参数化的查询，字符串为`$(sz)`，整数为`$(l)`，以防止SQL注入漏洞。 请参阅[Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/f-sqlExec.html?lang=zh-Hans){target="_blank"}以了解详情。
 
 ## 对记录计数 {#count-records}
 
@@ -435,7 +435,7 @@ logInfo("Generated SQL: " + sql);
 // Output: "SELECT iRecipientId, sEmail FROM NmsRecipient WHERE sEmail IS NOT NULL"
 ```
 
-了解有关[BuildQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQuery.html){target="_blank"}的详细信息。
+了解有关[BuildQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQuery.html?lang=zh-Hans){target="_blank"}的详细信息。
 
 ### BuildQueryEx — 获取带有格式字符串的SQL {#build-query-ex}
 
@@ -460,7 +460,7 @@ logInfo("Format: " + format);
 var results = sqlSelect(format, sql);
 ```
 
-了解有关[BuildQueryEx](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQueryEx.html){target="_blank"}的详细信息。
+了解有关[BuildQueryEx](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-BuildQueryEx.html?lang=zh-Hans){target="_blank"}的详细信息。
 
 ### SelectAll — 添加要选择的所有字段 {#select-all}
 
@@ -483,7 +483,7 @@ var result = query.ExecuteQuery();
 // Result contains all recipient fields
 ```
 
-了解有关[全选](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-SelectAll.html){target="_blank"}的详细信息。
+了解有关[全选](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-SelectAll.html?lang=zh-Hans){target="_blank"}的详细信息。
 
 ### 更新 — 成批更新记录 {#mass-update}
 
@@ -513,7 +513,7 @@ logInfo("Mass update completed");
 >
 >成批更新会影响与where子句匹配的所有记录。 始终首先使用select查询测试您的where条件，以验证哪些记录将受到影响。
 
-了解有关[更新](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-Update.html){target="_blank"}的详细信息。
+了解有关[更新](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-Update.html?lang=zh-Hans){target="_blank"}的详细信息。
 
 ### GetInstanceFromModel — 查询模板实例 {#get-instance-from-model}
 
@@ -536,7 +536,7 @@ var query = NLWS.xtkQueryDef.create(
 var instance = query.GetInstanceFromModel("nms:delivery");
 ```
 
-了解有关[GetInstanceFromModel](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-GetInstanceFromModel.html){target="_blank"}的详细信息。
+了解有关[GetInstanceFromModel](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-GetInstanceFromModel.html?lang=zh-Hans){target="_blank"}的详细信息。
 
 ## 批处理操作 {#batch-operations}
 
@@ -772,8 +772,8 @@ if (count > 0 && count < 10000) {
 ## 相关主题 {#related-topics}
 
 * [Campaign API入门](api.md)
-* [queryDef API引用](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html){target="_blank"}
-* [Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html){target="_blank"}
+* [queryDef API引用](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html?lang=zh-Hans){target="_blank"}
+* [Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=zh-Hans){target="_blank"}
 * [数据模型](datamodel.md)
 * [使用架构](schemas.md)
 * [使用查询编辑器](../start/query-editor.md)

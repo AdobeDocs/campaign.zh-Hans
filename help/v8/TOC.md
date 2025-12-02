@@ -5,9 +5,9 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: 16c9cc60041f41702b4983383954033b06ba1d99
+source-git-commit: d886072b3a21d5e5b70662c67919223cf9a1b68e
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '815'
 ht-degree: 90%
 
 ---
@@ -121,7 +121,7 @@ ht-degree: 90%
          + [收集和处理事件](send/event-processing.md)
          + [了解事件描述](send/event-description.md)
          + [发送和监测消息](send/delivery-execution.md)
-+ 配置文件和受众 {#audience}
++ 轮廓和受众 {#audience}
    + [轮廓和受众入门](audiences/gs-audiences.md)
    + [使用受众](start/audiences.md)
    + [访问轮廓](audiences/view-profiles.md)
@@ -138,7 +138,7 @@ ht-degree: 90%
       + [与 Adobe 解决方案共享受众](start/shared-audiences.md)
    + [最佳实践](audiences/audiences-best-practices.md)
    + [管理订阅](start/subscriptions.md)
-+ 登陆页面和Web内容 {#content}
++ 登陆页面和Forms {#content}
    + [创建登陆页面](dev/landing-pages.md)
    + [设计 Web 应用程序和表单](dev/webapps.md)
 + 工作流 {#workflows}

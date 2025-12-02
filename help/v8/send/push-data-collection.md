@@ -6,9 +6,9 @@ role: Data Engineer
 level: Intermediate
 badge: label="有限发布版" type="Informative"
 exl-id: 0f22b17c-ed01-4add-8300-8689b8a9f963
-source-git-commit: 1fb93efac4fee4965213f8b42f518f2c10638e20
+source-git-commit: 11a9f17bc5c1ec8388de294395a6d7b7a5e8a7e6
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1353'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 >[!AVAILABILITY]
 >
-> 从Campaign v8.5开始，新客户可专门访问此功能，并会逐步向一组选定的客户推出。 如果您的环境是在2023年6月之前配置的，则此页面不适用于您，您必须遵循此页面[&#128279;](push-settings.md)中详述的步骤。
+> 从Campaign v8.5开始，新客户可专门访问此功能，并会逐步向一组选定的客户推出。 如果您的环境是在2023年6月之前配置的，则此页面不适用于您，您必须遵循此页面[中详述的步骤](push-settings.md)。
 
 在此更新的实施中，要在Adobe Campaign中发送推送通知，请执行以下步骤：
 
@@ -55,37 +55,43 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 1. 从&#x200B;**[!UICONTROL Mobile Application Configuration]**&#x200B;中，选择操作系统：
 
-   * 用于iOS的&#x200B;**&#x200B;**
+>[!BEGINTABS]
 
-     ![](assets/push-config-2.png)
+>[!TAB iOS]
 
-      1. 在&#x200B;**[!UICONTROL App ID (iOS Bundle ID)]**&#x200B;字段中输入移动应用&#x200B;**捆绑包ID**。
+![](assets/push-config-2.png)
 
-         在Apple开发人员帐户的&#x200B;**XCode**&#x200B;中的主目标的&#x200B;**常规**&#x200B;选项卡中可以找到应用程序捆绑包ID。
+1. 在&#x200B;**字段中输入移动应用**&#x200B;捆绑包ID **[!UICONTROL App ID (iOS Bundle ID)]**。
 
-      1. 打开&#x200B;**[!UICONTROL Push Credentials]**&#x200B;以添加凭据。
+   在Apple开发人员帐户的&#x200B;**XCode**&#x200B;中的主目标的&#x200B;**常规**&#x200B;选项卡中可以找到应用程序捆绑包ID。
 
-      1. 拖放您的.p8 Apple推送通知身份验证密钥文件。
+1. 打开&#x200B;**[!UICONTROL Push Credentials]**&#x200B;以添加凭据。
 
-         此密钥可从您的Apple开发人员帐户的&#x200B;**证书**、**标识符**&#x200B;和&#x200B;**配置文件**&#x200B;页面获取。
+1. 拖放您的.p8 Apple推送通知身份验证密钥文件。
 
-      1. 提供&#x200B;**密钥ID**。 这是在创建p8身份验证密钥期间分配的10字符串。
+   此密钥可从您的Apple开发人员帐户的&#x200B;**证书**、**标识符**&#x200B;和&#x200B;**配置文件**&#x200B;页面获取。
 
-         可在Apple开发人员帐户的&#x200B;**证书**、**标识符**&#x200B;和&#x200B;**配置文件**&#x200B;页中的&#x200B;**密钥**&#x200B;选项卡下找到它。
+1. 提供&#x200B;**密钥ID**。 这是在创建p8身份验证密钥期间分配的10字符串。
 
-      1. 提供&#x200B;**团队ID**。 这是可在&#x200B;**成员资格**&#x200B;选项卡下找到的字符串值。
-
-   * 用于Android的&#x200B;**&#x200B;**
-
-     ![](assets/push-config-3.png)
-
-      1. 提供&#x200B;**[!UICONTROL App ID (Android package name)]**。 通常，包名称是`build.gradle`文件中的应用程序ID。
-
-      1. 切换&#x200B;**[!UICONTROL Push Credentials]**&#x200B;以添加凭据。
-
-      1. 拖放FCM推送凭据。 有关如何获取推送凭据的详细信息，请参阅[Google文档](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}。
+       可在Apple开发人员帐户的**Certificates**、**Identifiers**和**Profiles**页面的**Keys**选项卡下找到它。
+   
+1. 提供&#x200B;**团队ID**。 这是可在&#x200B;**成员资格**&#x200B;选项卡下找到的字符串值。
 
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建您的应用程序配置。
+
+>[!TAB Android]
+
+![](assets/push-config-3.png)
+
+1. 提供&#x200B;**[!UICONTROL App ID (Android package name)]**。 通常，包名称是`build.gradle`文件中的应用程序ID。
+
+1. 切换&#x200B;**[!UICONTROL Push Credentials]**&#x200B;以添加凭据。
+
+1. 拖放FCM推送凭据。 有关如何获取推送凭据的详细信息，请参阅[Google文档](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}。
+
+1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建您的应用程序配置。
+
+>[!ENDTABS]
 
 ## 在Adobe Campaign中配置应用程序设置{#push-config-campaign}
 
@@ -135,7 +141,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
    ![](assets/push-config-8.png)
 
-1. 浏览到&#x200B;**[!UICONTROL Subscription parameters]**&#x200B;选项卡以定义扩展为&#x200B;**[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**&#x200B;架构的映射。
+1. 浏览到&#x200B;**[!UICONTROL Subscription parameters]**&#x200B;选项卡以定义扩展名为&#x200B;**[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**&#x200B;架构的映射。
 
 1. 浏览到&#x200B;**[!UICONTROL Sounds]**&#x200B;选项卡以定义要播放的声音。 单击&#x200B;**[!UICONTROL Add]**&#x200B;并填写&#x200B;**[!UICONTROL Internal name]**&#x200B;字段，该字段必须包含嵌入在应用程序中的文件的名称或系统声音的名称。
 
@@ -192,7 +198,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 1. （可选）如果需要，您可以使用大约&#x200B;**[!UICONTROL Application variables]**&#x200B;扩充推送消息内容。 这些都是完全可自定义的，并且是发送到移动设备的消息有效负载的一部分。
 
-1. 浏览到&#x200B;**[!UICONTROL Subscription parameters]**&#x200B;选项卡以定义扩展为&#x200B;**[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**&#x200B;架构的映射。
+1. 浏览到&#x200B;**[!UICONTROL Subscription parameters]**&#x200B;选项卡以定义扩展名为&#x200B;**[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**&#x200B;架构的映射。
 
 1. 单击 **[!UICONTROL Finish]**，然后单击 **[!UICONTROL Save]**。
 
@@ -233,8 +239,8 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 1. 填写实例详细信息：
 
-   * 在Campaign的&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Deployment wizard]**&#x200B;菜单中可以找到&#x200B;**[!UICONTROL Registration endpoint]**&#x200B;或&#x200B;**[!UICONTROL Tracking endpoint]**&#x200B;个URL。
-   * 在[此部分](#create-app)中配置的移动应用中，可以找到&#x200B;**[!UICONTROL Integration keys]**。
+   * 在Campaign的&#x200B;**[!UICONTROL Registration endpoint]** > **[!UICONTROL Tracking endpoint]** > **[!UICONTROL Tools]**&#x200B;菜单中可以找到&#x200B;**[!UICONTROL Advanced]**&#x200B;或&#x200B;**[!UICONTROL Deployment wizard]**&#x200B;个URL。
+   * 在&#x200B;**[!UICONTROL Integration keys]**&#x200B;此部分[中配置的移动应用中，可以找到](#create-app)。
 
    ![](assets/push-config-17.png)
 

@@ -5,10 +5,10 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: 26fededf0ee83299477e45e891df30a46c6d40fe
+source-git-commit: 48c6dfc89fec6ad8cff7d17c1892f7c15b497f99
 workflow-type: tm+mt
-source-wordcount: '816'
-ht-degree: 95%
+source-wordcount: '823'
+ht-degree: 90%
 
 ---
 
@@ -40,10 +40,15 @@ ht-degree: 95%
    + [从 Campaign Standard 到 v8](start/acs-to-v8.md)
    + [常见问题解答](start/campaign-faq-comprehensive.md)
    + [常见问题解答](start/campaign-faq.md)
++ 管理和权限 {#permissions}
+   + [权限入门](start/gs-permissions.md)
+   + [管理用户权限](start/manage-permissions.md)
+   + [添加文件夹权限](start/folder-permissions.md)
+   + [控制面板](config/self-service.md)
 + 营销活动管理 {#campaigns}
    + [营销活动快速入门](start/campaigns.md)
-   + [营销活动编排 >](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans)
-+ 发送消息{#send}
+   + [营销活动编排文档>](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans)
++ 发送消息 {#send}
    + [消息功能快速入门](start/gs-message.md)
    + [创建您的第一个投放](start/create-message.md)
    + [使用投放模板](send/create-templates.md)
@@ -60,22 +65,20 @@ ht-degree: 95%
       + [将文件附加到电子邮件](send/attaching-files.md)
    + 短信 {#sms}
       + [短信入门](send/sms/sms.md)
+      + [短信渠道特征](send/sms/sms-channel.md)
+      + [创建短信投放](send/sms/create-sms.md)
+      + [定义内容](send/sms/sms-content.md)
+      + [选择受众](send/sms/sms-audience.md)
+      + [发送短信验证](send/sms/sms-proofs.md)
+      + [发送给受众](send/sms/sms-send.md)
+      + [监测和跟踪短信](send/sms/sms-monitor.md)
       + 配置短信渠道 {#config-sms}
          + [短信投放设置](send/sms/sms-delivery-settings.md)
          + [SMPP 外部帐户设置](send/sms/smpp-external-account.md)
-         + [短信渠道特征](send/sms/sms-channel.md)
          + [验证 SMPP 连接](send/sms/smpp-connection.md)
          + [单独实例](send/sms/sms-standalone-instance.md)
          + [中间源基础结构](send/sms/sms-mid-sourcing.md)
-         + [SMPP 连接器说明](send/sms/smpp-connector-delivery.md)
-      + 创建短信  {#create-sms}
-         + [创建短信投放](send/sms/create-sms.md)
-         + [定义内容](send/sms/sms-content.md)
-         + [选择受众](send/sms/sms-audience.md)
-      + 验证并发送短信 {#validate-sms}
-         + [发送短信校样](send/sms/sms-proofs.md)
-         + [发送给受众](send/sms/sms-send.md)
-      + [监测和跟踪短信](send/sms/sms-monitor.md)
+         + [SMPP连接器描述](send/sms/smpp-connector-delivery.md)
    + 推送通知 {#push}
       + [创建和发送推送通知](send/push.md)
       + 丰富的推送  {#rich-push}
@@ -83,10 +86,11 @@ ht-degree: 95%
          + [设计 iOS 富媒体推送投放](send/rich-push-ios.md)
       + [配置推送通知渠道](send/push-settings.md)
       + [使用数据收集配置推送通知](send/push-data-collection.md)
-   + [LINE 消息](send/line/line.md)
-   + [直邮](send/direct-mail.md)
-   + [X (Twitter)](send/twitter.md)
-   + [自定义外部渠道](send/custom-channel.md)
+   + 其他渠道 {#other-channels}
+      + [LINE 消息](send/line/line.md)
+      + [直邮](send/direct-mail.md)
+      + [X (Twitter)](send/twitter.md)
+      + [自定义外部渠道](send/custom-channel.md)
    + 个性化内容 {#personalize}
       + [个性化入门](send/personalize.md)
       + [个性化数据](send/personalization-data.md)
@@ -134,21 +138,21 @@ ht-degree: 95%
       + [与 Adobe 解决方案共享受众](start/shared-audiences.md)
    + [最佳实践](audiences/audiences-best-practices.md)
    + [管理订阅](start/subscriptions.md)
-+ 内容管理 {#content}
++ 登陆页面和Web内容 {#content}
    + [创建登陆页面](dev/landing-pages.md)
    + [设计 Web 应用程序和表单](dev/webapps.md)
 + 工作流 {#workflows}
    + [工作流入门](config/workflows.md)
-   + [工作流文档>](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)
+   + [完成工作流文档>](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)
 + 隐私和安全管理 {#privacy}
    + [管理隐私请求](start/privacy.md)
    + [安全准则](config/security.md)
    + [增强的安全附加功能](config/enhanced-security.md)
-+ 决策管理 {#offers}
++ 选件管理和交互 {#offers}
    + [实时互动入门](interaction/interaction.md)
    + [环境和架构](interaction/interaction-architecture.md)
    + [最佳实践](interaction/interaction-best-practices.md)
-   + 定义设置{#interaction-settings}
+   + 配置设置 {#interaction-settings}
       + [创建运算符](interaction/interaction-operators.md)
       + [创建环境](interaction/interaction-env.md)
       + [创建预定义过滤器](interaction/interaction-predefined-filters.md)
@@ -183,6 +187,7 @@ ht-degree: 95%
       + [使用查询编辑器](start/query-editor.md)
       + [设计查询](start/design-queries.md)
       + [定义过滤器条件](start/filter-conditions.md)
+      + [使用受众筛选器](audiences/create-filters.md)
    + [导入数据](start/import.md)
    + [工作流文档>](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)
 + 集成 {#connect}
@@ -203,12 +208,6 @@ ht-degree: 95%
       + [使用 Campaign 和 SFDC](connect/ac-sfdc.md)
       + [使用 Campaign 和 Microsoft Dynamics](connect/ac-ms-dyn.md)
       + [同步数据](connect/crm-data-sync.md)
-+ 管理 {#admin}
-   + 用户和权限 {#permissions}
-      + [权限入门](start/gs-permissions.md)
-      + [管理用户权限](start/manage-permissions.md)
-      + [添加文件夹权限](start/folder-permissions.md)
-   + [控制面板](config/self-service.md)
 + 架构 {#architecture}
    + [全局原则](architecture/general-architecture.md)
    + [架构模型](architecture/architecture.md)
@@ -252,10 +251,10 @@ ht-degree: 95%
    + REST API {#apis}
       + [开始使用REST API](dev/api/get-started-apis.md)
       + [建议和限制](dev/api/limitations.md)
-      + [为何使用REST API](dev/api/why-using-campaign-standard-apis.md)
+      + [何时使用REST API](dev/api/why-using-campaign-standard-apis.md)
       + [设置 API 访问](dev/api/setting-up-api-access.md)
       + 全局概念 {#global-concepts}
-         + [必读](dev/api/must-read.md)
+         + [基本概念](dev/api/must-read.md)
          + [端点](dev/api/endpoints.md)
          + [元数据机制](dev/api/metadata-mechanism.md)
          + [动词](dev/api/verbs.md)
@@ -275,6 +274,7 @@ ht-degree: 95%
       + 管理工作流 {#managing-workflows}
          + [控制工作流](dev/api/controlling-a-workflow.md)
          + [触发信号活动](dev/api/triggering-a-signal-activity.md)
-+ [营销活动技术说明 >](https://experienceleague.adobe.com/zh-hans/docs/campaign/technotes-ac/technotes-home)
-+ [Campaign Web 用户界面文档 >](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/campaign-web-home)
++ 其他资源 {#resources}
+   + [Campaign技术说明>](https://experienceleague.adobe.com/zh-hans/docs/campaign/technotes-ac/technotes-home)
+   + [Campaign Web用户界面文档>](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/campaign-web-home)
 

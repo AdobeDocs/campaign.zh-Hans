@@ -5,9 +5,9 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: 48c6dfc89fec6ad8cff7d17c1892f7c15b497f99
+source-git-commit: 16c9cc60041f41702b4983383954033b06ba1d99
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '816'
 ht-degree: 90%
 
 ---
@@ -121,7 +121,7 @@ ht-degree: 90%
          + [收集和处理事件](send/event-processing.md)
          + [了解事件描述](send/event-description.md)
          + [发送和监测消息](send/delivery-execution.md)
-+ 轮廓和受众管理 {#audience}
++ 配置文件和受众 {#audience}
    + [轮廓和受众入门](audiences/gs-audiences.md)
    + [使用受众](start/audiences.md)
    + [访问轮廓](audiences/view-profiles.md)
@@ -143,12 +143,12 @@ ht-degree: 90%
    + [设计 Web 应用程序和表单](dev/webapps.md)
 + 工作流 {#workflows}
    + [工作流入门](config/workflows.md)
-   + [完成工作流文档>](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)
-+ 隐私和安全管理 {#privacy}
+   + [工作流文档>](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)
++ 隐私和安全性 {#privacy}
    + [管理隐私请求](start/privacy.md)
    + [安全准则](config/security.md)
    + [增强的安全附加功能](config/enhanced-security.md)
-+ 选件管理和交互 {#offers}
++ 选件管理 — 互动 {#offers}
    + [实时互动入门](interaction/interaction.md)
    + [环境和架构](interaction/interaction-architecture.md)
    + [最佳实践](interaction/interaction-best-practices.md)
@@ -187,7 +187,6 @@ ht-degree: 90%
       + [使用查询编辑器](start/query-editor.md)
       + [设计查询](start/design-queries.md)
       + [定义过滤器条件](start/filter-conditions.md)
-      + [使用受众筛选器](audiences/create-filters.md)
    + [导入数据](start/import.md)
    + [工作流文档>](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)
 + 集成 {#connect}

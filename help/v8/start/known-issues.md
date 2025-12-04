@@ -86,7 +86,7 @@ Error:
 
 作为Campaign管理员，您可以在[Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=4){target="_blank"}中下载Campaign v8.3.1客户端控制台。
 
-在此页面[中了解如何访问Adobe Software Distribution ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans){target="_blank"}。
+在此页面[中了解如何访问Adobe Software Distribution &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans){target="_blank"}。
 
 在本页[中了解如何升级您的客户端控制台](connect.md)
 

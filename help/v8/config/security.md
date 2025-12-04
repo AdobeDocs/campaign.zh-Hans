@@ -101,8 +101,8 @@ Adobe Campaign 是 Adobe Experience Cloud 解决方案的一部分。Campaign �
 
 通过 Adobe Campaign，您可以收集数据，包括个人信息和敏感信息。因此，获得并监控收件人的同意至关重要。
 
-* 始终让收件人同意接收通信。为此，请尽快保持遵守选择退出请求并通过双重选择加入流程来验证同意。有关此内容的更多信息，请参阅[使用双重选择加入创建订阅表单](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/use-cases-web-forms){target=_blank}。
-* 请勿导入欺诈性列表，并使用种子地址确认您的客户端文件未被用于欺诈用途。有关此内容的更多信息，请参阅[关于种子地址](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses){target=_blank}。
+* 始终让收件人同意接收通信。为此，请尽快保持遵守选择退出请求并通过双重选择加入流程来验证同意。有关此内容的更多信息，请参阅[使用双重选择加入创建订阅表单](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/designing-content/web-forms/use-cases-web-forms){target=_blank}。
+* 请勿导入欺诈性列表，并使用种子地址确认您的客户端文件未被用于欺诈用途。有关此内容的更多信息，请参阅[关于种子地址](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses){target=_blank}。
 * 通过同意和权限管理，您可以跟踪收件人的偏好，以及管理组织内谁可以访问哪些数据。有关更多信息，请参阅[此章节](#consent)。
 * 促进和管理收件人的隐私请求。有关更多信息，请参阅[此章节](#privacy-requests)。
 
@@ -123,7 +123,7 @@ Adobe Campaign 最初提供对隐私至关重要的重要功能：
 
 * **同意管理**：通过订阅管理流程，您可以管理收件人的偏好并跟踪哪些收件人已选择加入哪种类型的订阅。有关此内容的更多信息，请参阅[关于订阅](../../automation/workflow/subscription-services.md)。
 * **数据保留**：所有内置标准日志表都具有预设的保留期，通常将其数据存储限制为 6 个月或更短时间。可以使用工作流设置其他保留期。有关此内容更多信息，请联系 Adobe 顾问或技术管理员。
-* **权限管理**：Adobe Campaign 使您能够通过不同的预建或自定义角色来管理分配给各种 Campaign 操作员的权限。这允许您管理公司内可以访问、修改或导出不同类型数据的人员。有关此内容的更多信息，请参阅[关于访问管理](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management){target=_blank}。
+* **权限管理**：Adobe Campaign 使您能够通过不同的预建或自定义角色来管理分配给各种 Campaign 操作员的权限。这允许您管理公司内可以访问、修改或导出不同类型数据的人员。有关此内容的更多信息，请参阅[关于访问管理](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/installing-campaign-classic/security-privacy/access-management){target=_blank}。
 
 ### 隐私请求 {#privacy-requests}
 
@@ -146,7 +146,7 @@ Adobe Campaign 提供其他功能来促使您作为数据控制者为特定隐�
 * **会话** Cookie：**nlid** Cookie 包含发送到联系人的电子邮件的标识符 (**broadlogId**)，以及消息模板的标识符 (**deliveryId**)。联系人单击由 Adobe Campaign 发送的电子邮件中包含的 URL 后即可添加标识符，让您能够跟踪他们在网络上的行为。关闭浏览器时，将自动擦除会话 Cookie。联系人可以将浏览器配置为拒绝 Cookie。
 
 * 两种&#x200B;**永久** Cookie：
-   * **UUID**（通用唯一标识符）Cookie 在 Adobe Experience Cloud 解决方案之间共享。它仅会被设置一次并直到生成新值时才从客户端浏览器中消失。通过使用这种 Cookie，您可以识别访问网站时与 Experience Cloud 解决方案发生交互的用户。它可以通过登陆页（将未知客户活动关联到收件人）或投放进行存放。这种 Cookie 的说明可在[此页面](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html#ec-cookies)中找到。
+   * **UUID**（通用唯一标识符）Cookie 在 Adobe Experience Cloud 解决方案之间共享。它仅会被设置一次并直到生成新值时才从客户端浏览器中消失。通过使用这种 Cookie，您可以识别访问网站时与 Experience Cloud 解决方案发生交互的用户。它可以通过登陆页（将未知客户活动关联到收件人）或投放进行存放。这种 Cookie 的说明可在[此页面](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=zh-Hans#ec-cookies)中找到。
    * **nllastdelid** Cookie（在 Campaign Classic 20.3 中引入）是永久 Cookie，包含用户在其中单击了链接的上一次投放的 **deliveryId**。当缺失会话 Cookie 时，会使用此 Cookie 来标识将使用的跟踪表。
 
 《通用数据保护条例》(GDPR) 等法规规定，公司在安装任何 Cookie 之前必须获得网站用户的同意。
@@ -198,7 +198,7 @@ Privacy configuration and hardening is a key element of security optimization. H
 
 * **在Web应用程序中添加验证码**：在您的公共登陆页面和订阅页面中添加验证码。
 
-请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}以了解详情。
+请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=zh-Hans#installing-campaign-classic){target="_blank"}以了解详情。
 
 
 ## 个性化
@@ -293,4 +293,4 @@ Privacy configuration and hardening is a key element of security optimization. H
 
 * **在Web应用程序中添加验证码**：在您的公共登陆页面和订阅页面中添加验证码。
 
-请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html#installing-campaign-classic){target="_blank"}以了解详情。
+请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/scripting-coding-guidelines.html?lang=zh-Hans#installing-campaign-classic){target="_blank"}以了解详情。

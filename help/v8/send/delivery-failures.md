@@ -41,7 +41,7 @@ ht-degree: 5%
 
 **Ignored**&#x200B;错误类型已知为临时错误，如“不在办公室”，或技术错误，例如，如果发件人类型为“邮递员”。
 
-反馈循环的运行方式与退回电子邮件类似：当用户将电子邮件标记为垃圾邮件时，您可以在Adobe Campaign中配置电子邮件规则以阻止向该用户的所有投放。 即使这些用户没有单击退订链接，也会对其地址进行列入阻止列表。 地址已添加到(**NmsAddress**)隔离表，但未添加到(**NmsRecipient**)状态为&#x200B;**[!UICONTROL Denylisted]**&#x200B;的收件人表。 在[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#feedback-loops){target="_blank"}中了解有关反馈循环机制的更多信息。
+反馈循环的运行方式与退回电子邮件类似：当用户将电子邮件标记为垃圾邮件时，您可以在Adobe Campaign中配置电子邮件规则以阻止向该用户的所有投放。 即使这些用户没有单击退订链接，也会对其地址进行列入阻止列表。 地址已添加到(**NmsAddress**)隔离表，但未添加到(**NmsRecipient**)状态为&#x200B;**[!UICONTROL Denylisted]**&#x200B;的收件人表。 在[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops){target="_blank"}中了解有关反馈循环机制的更多信息。
 
 ## 同步和异步错误 {#synchronous-and-asynchronous-errors}
 
@@ -112,7 +112,7 @@ Campaign投放中的有效期设置限制为&#x200B;**3.5天或更短**。 对�
 
 消息在MTA队列中停留3.5天且投放失败后，该消息将超时，其状态将在投放日志中从&#x200B;**[!UICONTROL Sent]**&#x200B;更新为&#x200B;**[!UICONTROL Failed]**。
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=zh-Hans#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
 
 
 ## 电子邮件错误类型 {#email-error-types}
@@ -651,7 +651,7 @@ Android V2隔离机制使用与Android V1相同的过程，该过程同样适用
 
 +++
 
-扩展通用SMPP连接器的&#x200B;**&#x200B;**
+扩展通用SMPP连接器的&#x200B;****
 
 使用SMPP协议发送短信消息时，错误管理的处理方式不同。
 
@@ -678,8 +678,8 @@ SR Generic DELIVRD 000|#MESSAGE#
 
 * 错误消息的第三部分(**DELIVRD**)对应于使用SMS外部帐户中定义的状态提取正则表达式从SR检索到的状态代码。
 
-  此正则表达式在外部帐户的&#x200B;**[!UICONTROL SMSC specificities]**&#x200B;选项卡中指定。
-默认情况下，正则表达式提取&#x200B;**SMPP 3.4规范**&#x200B;的&#x200B;**附录B**&#x200B;部分定义的&#x200B;**stat：**&#x200B;字段。
+  此正则表达式在外部帐户的&#x200B;**[!UICONTROL SMSC specificities]**选项卡中指定。
+默认情况下，正则表达式提取**SMPP 3.4规范**&#x200B;的&#x200B;**附录B**&#x200B;部分定义的&#x200B;**stat：**&#x200B;字段。
 
 * 错误消息的第四部分(**000**)对应于使用SMS外部帐户中定义的错误代码提取正则表达式从SR提取的错误代码。
 
@@ -723,7 +723,7 @@ DLV-XXXX The count of message prepared (123) is greater than the number of messa
 
 **原因**：电子邮件中有一个个性化字段或块，该字段或块对收件人具有多个值。 正在使用个性化块，并且正在为特定收件人获取多个记录。
 
-**解决方案**：检查使用的个性化数据，然后检查目标，查找具有多个条目的收件人的任意这些字段。 您还可以在投放活动之前的定位工作流中使用&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动，以确保一次只有一个个性化字段。 有关重复数据删除的详细信息，请参阅[工作流文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=zh-Hans){target="_blank"}。
+**解决方案**：检查使用的个性化数据，然后检查目标，查找具有多个条目的收件人的任意这些字段。 您还可以在投放活动之前的定位工作流中使用&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动，以确保一次只有一个个性化字段。 有关重复数据删除的详细信息，请参阅[工作流文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}。
 
 ### 自动回复处理 {#auto-reply-handling}
 

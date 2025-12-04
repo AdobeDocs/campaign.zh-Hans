@@ -73,7 +73,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 1. 提供&#x200B;**密钥ID**。 这是在创建p8身份验证密钥期间分配的10字符串。
 
-       可在Apple开发人员帐户的&#x200B;**Certificates**、**Identifiers**&#x200B;和**Profiles**&#x200B;页面的&#x200B;**Keys**&#x200B;选项卡下找到它。
+       可在Apple开发人员帐户的**Certificates**、**Identifiers**和**Profiles**页面的**Keys**选项卡下找到它。
    
 1. 提供&#x200B;**团队ID**。 这是可在&#x200B;**成员资格**&#x200B;选项卡下找到的字符串值。
 

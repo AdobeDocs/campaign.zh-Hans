@@ -20,7 +20,7 @@ Adobe Campaign Standard API访问可通过以下步骤进行设置。 [Adobe Dev
 
 >[!IMPORTANT]
 >
->要在[Adobe Developer](https://developer.adobe.com/)中管理证书，请确保您对该组织具有&#x200B;**系统管理员**&#x200B;权限，或者在Admin Console中具有[开发人员帐户](https://helpx.adobe.com/cn/enterprise/using/manage-developers.html)。
+>要在[Adobe Developer](https://developer.adobe.com/)中管理证书，请确保您对该组织具有&#x200B;**系统管理员**&#x200B;权限，或者在Admin Console中具有[开发人员帐户](https://helpx.adobe.com/enterprise/using/manage-developers.html)。
 
 1. **检查您是否拥有数字证书**，或者在必要时创建一个数字证书。 以下步骤需要随证书一起提供的公钥和私钥。
 1. **在** Adobe Developer[中创建与Adobe Campaign服务](https://developer.adobe.com/)的新集成并进行配置。 随后将生成您的凭据（API密钥、客户端密钥……）。

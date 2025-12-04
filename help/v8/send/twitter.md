@@ -149,7 +149,7 @@ Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X（
 
 >[!CAUTION]
 >
->您每天发送的私信不能超过250条。 要避免超过此阈值，您可以分批次发送。 有关更多信息，请参阅此[&#128279;](configure-and-send.md#sending-using-multiple-waves)章节。
+>您每天发送的私信不能超过250条。 要避免超过此阈值，您可以分批次发送。 有关更多信息，请参阅此](configure-and-send.md#sending-using-multiple-waves)章节[。
 
 
 ## 访问跟踪数据 {#tw-tracking}

@@ -128,11 +128,11 @@ Adobe Campaign会根据返回的错误类型管理错误地址。 [了解有关�
 
 * 检查您的个性化设置 — 确保您的消息内容经过正确设计，以避免任何可能与个性化相关的错误。 Adobe Campaign个性化标记始终具有以下形式： `<%=table.field%>`。 在个性化块中错误使用参数可能是个问题。 例如，JavaScript中的变量应按以下方式使用：
 
-  ``
+  &grave;&grave;
   <%
   var brand = "xxx"
   %>
-  ``
+  &grave;&grave;
 
   有关个性化块的更多信息，请参阅[此章节](../send/personalization-blocks.md)。
 

@@ -133,7 +133,7 @@ ht-degree: 3%
 
 * 如果投放计数器与您的投放不匹配，请尝试重新计算指示器，方法是在Adobe Campaign资源管理器中右键单击相关投放，然后选择&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**&#x200B;以重新同步。 有关跟踪指示器的详细信息，请参阅此[部分](../reporting/delivery-reports.md#tracking-indicators)。
 
-您还可以通过投放仪表板使用不同的报告跟踪您的投放。 有关更多信息，请参阅此](../reporting/delivery-reports.md)章节[。
+您还可以通过投放仪表板使用不同的报告跟踪您的投放。 有关更多信息，请参阅此[&#128279;](../reporting/delivery-reports.md)章节。
 
 >[!NOTE]
 >

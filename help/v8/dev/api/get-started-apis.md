@@ -1,13 +1,13 @@
 ---
 title: Campaign REST API入门
-description: 通过将 Campaign 与一组技术建立联系，创建集成并生成您自己的生态系统。
+description: 通过将 Campaign 与一组技术建立联系，创建集成并构建您自己的生态系统。
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: c6968252-a012-4029-bbb8-66f4f693e99b
-source-git-commit: 115b7b6824f3736e03f9fb87898f1264f9bab636
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 40%

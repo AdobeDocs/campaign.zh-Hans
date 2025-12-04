@@ -3,12 +3,12 @@ product: campaign
 title: 查询收件人表
 description: 了解如何查询收件人表
 feature: Query Editor
-role: User, Data Engineer
+role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 7f859ce9-7ab8-46e1-8bd6-43aaffe30da2
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '390'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 * 我们应该选择哪个表？
 
-  收件人表(nms：recipient)
+  收件人表(nms:recipient)
 
 * 要选为输出列的字段
 
@@ -37,7 +37,7 @@ ht-degree: 3%
 
 要创建此示例，请应用以下步骤：
 
-1. 单击&#x200B;**[!UICONTROL Tools > Generic query editor...]**&#x200B;并选择&#x200B;**收件人** (**nms：recipient**)表。 然后单击 **[!UICONTROL Next]**。
+1. 单击&#x200B;**[!UICONTROL Tools > Generic query editor...]**&#x200B;并选择&#x200B;**收件人** (**nms:recipient**)表。 然后单击 **[!UICONTROL Next]**。
 1. 选择： **[!UICONTROL Last name]**、**[!UICONTROL First name]**、**[!UICONTROL Email]**、**[!UICONTROL City]**&#x200B;和&#x200B;**[!UICONTROL Account number]**。 这些字段已添加到&#x200B;**[!UICONTROL Output columns]**。 然后单击 **[!UICONTROL Next]**。
 
    ![](assets/query_editor_03.png)
@@ -49,7 +49,7 @@ ht-degree: 3%
 1. 在&#x200B;**[!UICONTROL Data filtering]**&#x200B;窗口中，优化您的搜索：选择&#x200B;**[!UICONTROL Filtering conditions]**&#x200B;并单击&#x200B;**[!UICONTROL Next]**。
 1. **[!UICONTROL Target element]**&#x200B;窗口允许您输入筛选器设置。
 
-   定义以下筛选条件：电子邮件域等于“orange.co.uk”的收件人。 为此，请在&#x200B;**[!UICONTROL Expression]**&#x200B;列中选择&#x200B;**电子邮件域(@email)**，在&#x200B;**[!UICONTROL Operator]**&#x200B;列中选择&#x200B;**等于**，并在&#x200B;**[!UICONTROL Value]**&#x200B;列中输入“orange.co.uk”。
+   定义以下筛选条件：电子邮件域等于“orange.co.uk”的收件人。 为此，请在&#x200B;**列中选择**&#x200B;电子邮件域(@email)**[!UICONTROL Expression]**，在&#x200B;**列中选择**&#x200B;等于&#x200B;**[!UICONTROL Operator]**，并在&#x200B;**[!UICONTROL Value]**&#x200B;列中输入“orange.co.uk”。
 
    ![](assets/query_editor_05.png)
 
@@ -63,7 +63,7 @@ ht-degree: 3%
 
 1. 现在，我们将更改查询以查找不住在伦敦的联系人。
 
-   选择&#x200B;**[!UICONTROL Expression]**&#x200B;列中的&#x200B;**[!UICONTROL City (location/@city)]**，选择&#x200B;**[!UICONTROL different from]**&#x200B;作为运算符，并在&#x200B;**[!UICONTROL Value]**&#x200B;列中输入&#x200B;**[!UICONTROL London]**。
+   选择&#x200B;**[!UICONTROL City (location/@city)]**&#x200B;列中的&#x200B;**[!UICONTROL Expression]**，选择&#x200B;**[!UICONTROL different from]**&#x200B;作为运算符，并在&#x200B;**[!UICONTROL London]**&#x200B;列中输入&#x200B;**[!UICONTROL Value]**。
 
    ![](assets/query_editor_08.png)
 

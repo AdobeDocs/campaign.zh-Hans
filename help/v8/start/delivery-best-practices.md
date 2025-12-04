@@ -6,9 +6,9 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: cb6094eb-0010-4c62-9589-3b52fd60c2c2
-source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+source-git-commit: 096c453f727b461a7b09a47282e186e91ffc847e
 workflow-type: tm+mt
-source-wordcount: '2925'
+source-wordcount: '3068'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 3%
 
 * 工作流执行：监测工作流对于避免平台性能问题至关重要。 遵循本文档[中列出的准则](../../automation/workflow/workflow-best-practices.md#execution-and-performance)。
 
-* 使用[性能监控](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/discover-control-panel/key-features){target="_blank"}功能连接到[Campaign控制面板功能](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/performance-monitoring/about-performance-monitoring){target="_blank"}以监控您的平台。
+* 使用[性能监控](https://experienceleague.adobe.com/en/docs/control-panel/using/discover-control-panel/key-features){target="_blank"}功能连接到[Campaign控制面板功能](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/about-performance-monitoring){target="_blank"}以监控您的平台。
 
 #### 隔离管理 {#quarantine-management}
 
@@ -41,9 +41,9 @@ ht-degree: 3%
 开始在新平台上发送电子邮件时，您可以使用不完全限定的地址列表。 如果发送到无效地址或honeypot地址（邮箱仅用于欺骗垃圾邮件发送者），这将开始降低平台的声誉。 良好的隔离管理流程有助于：保持地址质量、避免Internet访问提供商的阻止列表并减少错误率、加快交付速度和吞吐量。
 
 
-在[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/zh-hans/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform){target="_blank"}中了解如何启动新平台。
+在[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform){target="_blank"}中了解如何启动新平台。
 
-[此部分](https://experienceleague.adobe.com/zh-hans/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations){target="_blank"}中列出了技术建议。
+[此部分](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations){target="_blank"}中列出了技术建议。
 
 
 +++ **阅读一些最佳实践**
@@ -57,7 +57,19 @@ Adobe Campaign会根据返回的错误类型管理错误地址。 [了解有关�
 
 +++
 
+### 交付和维护 {#delivery-maintenance}
 
+定期维护投放对于获得最佳平台性能至关重要。
+
++++ **阅读一些最佳实践**
+
+* **删除失败和不需要的投放**：不要将投放保留在实例上的失败状态，因为这会维护临时表并影响性能。 定期删除不再需要用于释放系统资源的投放。
+
+* **清理不活动的收件人**：应从数据库中删除过去12个月内不活动的收件人以保持地址质量。 ISP会在一段时间不活动后停用地址，并向发件人发送退回消息，以告知他们此新状态。 定期清理列表可提高可投放性并降低成本。
+
+* **明智地安排大型投放**：不要一起安排大型投放。 与团队的其他成员协调投放计划，以将负载均匀分布到系统上。 如果同时发送多个大型投放，这可能会影响整体平台性能。
+
++++
 
 ### 双重选择加入机制 {#double-opt-in}
 
@@ -69,7 +81,7 @@ Adobe Campaign会根据返回的错误类型管理错误地址。 [了解有关�
 
 ### 子域和品牌化 {#subdomains-and-branding}
 
-在Adobe Campaign中管理多个品牌时，Adobe建议为每个品牌拥有一个子域。 例如，银行可以具有与其每个区域机构对应的多个子域。 如果银行拥有bluebank.com域，则其子域可以是@ny.bluebank.com、@ma.bluebank.com、@ca.bluebank.com等。 每个子域拥有一个投放模板，让您能够始终为每个品牌使用正确的预配置参数，从而避免错误并节省您的时间。 在[促销活动控制面板文档](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}中了解有关子域品牌的更多信息。
+在Adobe Campaign中管理多个品牌时，Adobe建议为每个品牌拥有一个子域。 例如，银行可以具有与其每个区域机构对应的多个子域。 如果银行拥有bluebank.com域，则其子域可以是@ny.bluebank.com、@ma.bluebank.com、@ca.bluebank.com等。 每个子域拥有一个投放模板，让您能够始终为每个品牌使用正确的预配置参数，从而避免错误并节省您的时间。 在[促销活动控制面板文档](https://experienceleague.adobe.com/en/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}中了解有关子域品牌的更多信息。
 
 ### 配置地址 {#configure-addresses}
 
@@ -116,11 +128,11 @@ Adobe Campaign会根据返回的错误类型管理错误地址。 [了解有关�
 
 * 检查您的个性化设置 — 确保您的消息内容经过正确设计，以避免任何可能与个性化相关的错误。 Adobe Campaign个性化标记始终具有以下形式： `<%=table.field%>`。 在个性化块中错误使用参数可能是个问题。 例如，JavaScript中的变量应按以下方式使用：
 
-  &grave;&grave;
+  ``
   <%
   var brand = "xxx"
   %>
-  &grave;&grave;
+  ``
 
   有关个性化块的更多信息，请参阅[此章节](../send/personalization-blocks.md)。
 
@@ -226,7 +238,7 @@ To avoid common formatting errors, check the following elements:
 
 * Usage of **authorized characters** in emails: the list of valid characters for email addresses is defined in the "XtkEmail_Characters" option. Learn how to access Campaign options [in this section](../../installation/using/configuring-campaign-options.md). To correctly handle special characters, Adobe Campaign needs to be installed in Unicode. 
 
-* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#authentication).-->
+* Configuration of **Email Authentication**: make sure that the email headers contain the DKIM signature. DKIM (Domain Keys Identified Mail) authentication allows the receiving email server to verify that a message was indeed sent by the person or entity it claims it was sent by, and whether the message content was altered in between the time it was originally sent (and DKIM "signed") and the time it was received. This standard typically uses the domain in the From or Sender header. For more on this, refer to the [Adobe Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).-->
 
 ## 管理图像 {#manage-images}
 
@@ -234,7 +246,7 @@ To avoid common formatting errors, check the following elements:
 
 ### 防止图像阻塞 {#image-blocking}
 
-默认情况下，某些电子邮件客户端会阻止图像，用户可能会更改其设置以阻止图像以供在数据使用时保存。  因此，如果不下载图像，则整个消息可能会丢失。
+默认情况下，某些电子邮件客户端会阻止图像，用户可能会更改其设置以阻止图像以供在数据使用时保存。  因此，如果不下载图像，则可能会丢失整个消息。
 
 +++ 要避免此问题，您可以应用这些最佳实践
 
@@ -419,4 +431,4 @@ You can:
 默认启用消息跟踪。 要配置URL，请选择投放助手下方的显示URL选项。 对于消息的每个URL，您可以选择是否激活跟踪。
 
 
-[请参阅Campaign Classic v7文档以了解有关跟踪功能的更多信息](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/how-to-configure-tracked-links.html#sending-messages){target="_blank"}
+[了解有关跟踪功能的更多信息](../send/tracking.md)

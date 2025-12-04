@@ -4,13 +4,13 @@ description: 迁移到Campaign v8 REST API时的建议和限制。
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-role: Data Engineer
+role: Developer
 level: Experienced
 mini-toc-levels: 1
 exl-id: 45acebb1-9325-4e26-8fe9-cc73f745d801
-source-git-commit: 4ed5799c77c647c9f1aeabba7645fbb475d03c09
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '1046'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ ht-degree: 1%
 
 ## 使用链接的资源发布
 
-使用以下请求正文格式时，“vehicleOwner”表示指向“nms：recipient”的链接：
+使用以下请求正文格式时，“vehicleOwner”表示指向“nms:recipient”的链接：
 
 ```
 {
@@ -107,11 +107,11 @@ ht-degree: 1%
 
 | 方案 | Campaign Standard | Campaign v8 |
 |  ---  |  ---  |  ---  |
-| 在请求正文中使用无效的PKey | 500 — “O5iRp40EGA”属性未知(请参阅“Profiles (nms：recipient)”架构的定义)。 XTK-170036无法解析表达式“@id = @O5iRp40EGA”。 | 404 — 无法解密PKey。 (PKey=@jksad) |
-| 在URI中使用无效的PKey | 500 — “O5iRp40EGA”属性未知(请参阅“Profiles (nms：recipient)”架构的定义)。 XTK-170036无法解析表达式“@id = @O5iRp40EGA”。 | 404 — 无法解密PKey。 (PKey=@jksad)不支持的端点。 (endpoint=rest/profileAndServices/profile/@jksad) |
+| 在请求正文中使用无效的PKey | 500 — “O5iRp40EGA”属性未知(请参阅“配置文件(nms:recipient)”架构的定义)。 XTK-170036无法解析表达式“@id = @O5iRp40EGA”。 | 404 — 无法解密PKey。 (PKey=@jksad) |
+| 在URI中使用无效的PKey | 500 — “O5iRp40EGA”属性未知(请参阅“配置文件(nms:recipient)”架构的定义)。 XTK-170036无法解析表达式“@id = @O5iRp40EGA”。 | 404 — 无法解密PKey。 (PKey=@jksad)不支持的端点。 (endpoint=rest/profileAndServices/profile/@jksad) |
 | 在URI和请求正文中使用两个不同的原始Pkey | 500 - RST-360011发生错误 — 请联系您的管理员。 RST-360012对资源“服务”的操作不一致 — 无法将键“SVC3”更新为“SVC4”。 | 500 — 发生错误 — 请联系您的管理员。 |
 | 在URI中使用PKey，并在请求正文中使用其他原始PKey | 500 — 具有相同键“SVC4”的“服务”已存在。 PGS-220000 PostgreSQL错误：错误：重复的键值将违反唯一约束“nmsservice_name”。详细信息：键(sname)=(SVC4)已存在。 | 500 — 发生错误 — 请联系您的管理员。 |
-| 在URI中使用不存在的原始ID | 404 - RST-360011发生错误 — 请联系您的管理员。 无法从键“adobe_nl：0”（模式为“service”且名称为“adobe_nl”的文档）找到路径为“Service”的文档 | 404 — 无法从键“adobe_nl”（模式为“service”且名称为“adobe_nl”的文档）找到路径为“Service”的文档 |
+| 在URI中使用不存在的原始ID | 404 - RST-360011发生错误 — 请联系您的管理员。 无法从键“adobe_nl:0”（架构为“service”且名称为“adobe_nl”的文档）找到路径为“Service”的文档 | 404 — 无法从键“adobe_nl”（模式为“service”且名称为“adobe_nl”的文档）找到路径为“Service”的文档 |
 | 在请求正文中使用不存在的原始ID | 404 - RST-360011发生错误 — 请联系您的管理员。 无法从键“adobe_nl”中找到路径为“Service”的文档（架构为“service”且名称为“adobe_nl”的文档） | 404 — 无法从键“adobe_nl”（模式为“service”且名称为“adobe_nl”的文档）找到路径为“Service”的文档 |
 | - | 500 - RST-360011发生错误 — 请联系您的管理员。 | 500 — 发生错误 — 请联系您的管理员。 |
 | 插入具有无效性别（或任何）枚举值的配置文件/服务 | 500 - RST-360011发生错误 — 请联系您的管理员。 值“invalid”对于“@gender”字段的“nms:recipient:gender”枚举无效 | 500 — 发生错误 — 请联系您的管理员。 |

@@ -2,13 +2,14 @@
 title: Campaign中的隔离管理
 description: 了解Adobe Campaign中的隔离管理
 feature: Profiles, Monitoring
-role: User, Data Engineer
+role: User, Developer
 level: Beginner
+version: Campaign v8, Campaign Classic v7
 exl-id: 220b7a88-bd42-494b-b55b-b827b4971c9e
-source-git-commit: cb4cbc9ba14e953d2b3109e87eece4f310bfe838
+source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 4%
+source-wordcount: '1317'
+ht-degree: 5%
 
 ---
 
@@ -32,7 +33,7 @@ Adobe Campaign可管理在线渠道（电子邮件、短信、推送通知）的
 
 >[!NOTE]
 >
->通过[&quot;mailto&quot; List-Unsubscribe方法](https://experienceleague.adobe.com/zh-hans/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"}取消订阅的收件人不会被添加到隔离。 列入阻止列表它们或者从与投放关联的[服务](../start/subscriptions.md)取消订阅，或者发送到（在配置文件的&#x200B;**[!UICONTROL No longer contact]**&#x200B;部分中可见）（如果未为投放定义服务）。
+>通过[&quot;mailto&quot; List-Unsubscribe方法](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"}取消订阅的收件人不会被添加到隔离。 列入阻止列表它们或者从与投放关联的[服务](../start/subscriptions.md)取消订阅，或者发送到（在配置文件的&#x200B;**[!UICONTROL No longer contact]**&#x200B;部分中可见）（如果未为投放定义服务）。
 
 <!--For the mobile app channel, device tokens are quarantined.-->
 
@@ -45,14 +46,20 @@ Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在�
 * **硬错误**：将立即将电子邮件地址、电话号码或设备添加到隔离。
 * **软错误**：软错误会增加错误计数，并可能隔离电子邮件、电话号码或设备令牌。 Campaign执行[重试](delivery-failures.md#retries)：当错误计数器达到限制阈值时，将隔离地址、电话号码或设备令牌。 [了解详情](delivery-failures.md#retries)。
 
-在隔离地址列表中，**[!UICONTROL Error reason]**&#x200B;字段指示将选定地址置于隔离状态的原因。 [了解详情](#identifying-quarantined-addresses-for-the-entire-platform)。
+在隔离地址列表中，**[!UICONTROL Error reason]**&#x200B;字段指示将选定地址置于隔离状态的原因。 [了解详情](#non-deliverable-bounces)。
 
 
-如果用户将电子邮件标记为垃圾邮件，则该邮件会自动重定向到由Adobe管理的技术邮箱。 随后，该用户的电子邮件地址会自动添加到隔离，并附加 **[!UICONTROL Denylisted]** 状态。此状态仅适用于地址，用户档案不在阻止列表上，因此用户可继续接收短信和推送通知。 在[投放最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#feedback-loops){target="_blank"}中了解有关反馈循环的更多信息。
+如果用户将电子邮件标记为垃圾邮件，则该邮件会自动重定向到由Adobe管理的技术邮箱。 随后，该用户的电子邮件地址会自动添加到隔离，并附加 **[!UICONTROL Denylisted]** 状态。此状态仅适用于地址，用户档案不在阻止列表上，因此用户可继续接收短信和推送通知。 在[投放最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops){target="_blank"}中了解有关反馈循环的更多信息。
 
 >[!NOTE]
 >
 >Adobe Campaign 中的隔离会区分大小写字母。请确保以小写方式导入电子邮件地址，这样以后就不会重新定向这些地址。
+
+## 软错误管理 {#soft-error-management}
+
+与硬错误相反，软错误不会立即将地址添加到隔离，而是会增加错误计数。 当错误计数器达到限制阈值时，将隔离该地址。 在[了解投放失败](delivery-failures.md)中了解有关重试和错误类型的更多信息。
+
+如果最后一次重大错误发生在10天之前，则重新初始化错误计数器。 然后，地址状态更改为&#x200B;**[!UICONTROL Valid]**，并将由&#x200B;**[!UICONTROL Database cleanup]**&#x200B;工作流从隔离列表中删除该地址。 [了解有关技术工作流的详细信息](../config/workflows.md#technical-workflows)。
 
 ## 访问隔离的地址 {#access-quarantined-addresses}
 
@@ -66,6 +73,8 @@ Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在�
 
 * 投放分析期间被隔离的地址数，
 * 投放操作后放置到隔离区的地址数。
+
+在[此章节](../reporting/gs-reporting.md)中详细了解投放报告。
 
 ### 无法投放地址和退回地址{#non-deliverable-bounces}
 
@@ -81,9 +90,9 @@ Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在�
 >
 >第2年年末：((1.22&#42;0.33)+0.33)/(1.5+0.75)=32.5%。
 
-此外，可从主页的&#x200B;**[!UICONTROL Non-deliverables and bounces]**&#x200B;报告&#x200B;**部分找到的**&#x200B;内置报告显示有关隔离地址、遇到的错误类型以及按域划分的失败的信息。 您可以过滤特定投放的数据，或根据需要自定义此报表。
+此外，此主页的&#x200B;**[!UICONTROL Non-deliverables and bounces]**&#x200B;报告&#x200B;**部分提供的**&#x200B;内置报告显示有关隔离地址、遇到的错误类型以及按域划分的失败的信息。 您可以过滤特定投放的数据，或根据需要自定义此报表。
 
-在[可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=zh-Hans){target="_blank"}中了解有关退回地址的更多信息。
+在[可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html){target="_blank"}中了解有关退回地址的更多信息。
 
 ### 隔离的电子邮件地址 {#quarantined-recipient}
 
@@ -98,7 +107,9 @@ Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在�
 
 ## 删除隔离的地址 {#remove-a-quarantined-address}
 
-符合特定条件的地址会由&#x200B;**数据库清理**&#x200B;内置工作流自动从隔离列表中删除。
+### 自动更新 {#unquarantine-auto}
+
+符合特定条件的地址会由&#x200B;**[!UICONTROL Database cleanup]**&#x200B;内置工作流自动从隔离列表中删除。
 
 在以下情况下，地址会自动从隔离列表中删除：
 
@@ -112,22 +123,30 @@ Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在�
 >
 >永远不会移除地址处于&#x200B;**[!UICONTROL Quarantine]**&#x200B;或&#x200B;**[!UICONTROL Denylisted]**&#x200B;状态的收件人，即使他们收到电子邮件也是如此。
 
-您也可以从隔离列表中手动删除地址。 要从隔离中删除地址，您可以：
+### 手动更新 {#unquarantine-manual}
 
-* 从&#x200B;**[!UICONTROL Valid]**&#x200B;节点将其状态更改为&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**。
+您也可以从隔离列表中手动删除地址。 若要手动从隔离中删除地址，可以将其状态从&#x200B;**[!UICONTROL Valid]**&#x200B;节点更改为&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**。
 
-  ![](assets/tech-quarantine-status.png)
+![](assets/tech-quarantine-status.png)
 
-您可能需要对隔离列表执行批量更新，例如，在ISP中断的情况下，电子邮件被错误地标记为退回，因为它们无法成功传递给收件人。
+### 批量更新 {#unquarantine-bulk}
 
-要执行此操作，请创建一个工作流并在您的隔离表上添加查询，以筛选掉所有受影响的收件人，以便将这些收件人从隔离列表中删除，并将其包含在将来的Campaign电子邮件投放中。
+在特定情况下，您可能需要对隔离列表执行批量更新，例如ISP发生中断，在该中断期间，由于无法将电子邮件成功传递给收件人，因此将电子邮件错误地标记为退回。
 
-以下是此查询的建议准则：
+要执行批量更新，请执行以下操作：
 
-* **错误文本（隔离文本）**&#x200B;包含“Momen_Code10_InvalidRecipient”
-* **电子邮件域(@domain)**&#x200B;等于domain1.com或&#x200B;**电子邮件域(@domain)**&#x200B;等于domain2.com或&#x200B;**电子邮件域(@domain)**&#x200B;等于domain3.com
-* **更新状态(@lastModified)**&#x200B;在`MM/DD/YYYY HH:MM:SS AM`或之后
-* **在**&#x200B;或之前更新状态(@lastModified)`MM/DD/YYYY HH:MM:SS PM`
+1. 创建工作流并在隔离表(**[!UICONTROL nms:address]**)中添加查询以筛选受影响的收件人
+2. 使用查询条件来确定应取消隔离的地址，例如：
+   * **电子邮件域(@domain)**&#x200B;等于受影响的ISP域
+   * 在中断时间范围内&#x200B;**更新状态(@lastModified)**
+   * **状态(@status)**&#x200B;等于隔离状态
+3. 添加&#x200B;**[!UICONTROL Update data]**&#x200B;活动以将地址状态设置为&#x200B;**[!UICONTROL Valid]**
 
-获得受影响的收件人列表后，添加&#x200B;**[!UICONTROL Update data]**&#x200B;活动以将其状态设置为&#x200B;**[!UICONTROL Valid]**，以便&#x200B;**[!UICONTROL Database cleanup]**&#x200B;工作流将其从隔离列表中删除。 也可以直接从隔离表中删除它们。
+然后，**[!UICONTROL Database cleanup]**&#x200B;工作流会自动将这些地址从隔离列表中移除，并可将其包含在将来的投放中。
+
+## 相关主题
+
+* [了解投放失败](delivery-failures.md) — 了解不同类型的投放失败以及Campaign如何处理退回
+* [监视投放](delivery-dashboard.md) — 访问投放日志并监视投放性能
+* [投放最佳实践](../start/delivery-best-practices.md) — 保持良好投放能力和避免隔离的最佳实践
 

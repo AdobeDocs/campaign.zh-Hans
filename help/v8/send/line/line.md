@@ -2,11 +2,11 @@
 title: 使用Adobe Campaign发送直接LINE消息
 description: LINE消息传递入门
 feature: Line App
-role: Data Engineer
+role: Developer
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 4de3b2c2-7eb7-4fd9-9350-64a6e9e2b7f8
-source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 4%
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 LINE 是一款免费即时消息、语音和视频通话应用程序，可在所有移动设备和 PC 上使用。您可以使用Adobe Campaign发送LINE消息。
 
-[!DNL LINE]还可以与事务性消息模块结合使用，以在消费者移动设备上安装的[!DNL LINE]应用程序上发送实时消息。 有关详细信息，请参阅Campaign Classic v7文档中的此[页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line)。
+[!DNL LINE]还可以与事务性消息模块结合使用，以在消费者移动设备上安装的[!DNL LINE]应用程序上发送实时消息。 有关详细信息，请参阅Campaign Classic v7文档中的此[页面](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line)。
 
 ![](assets/line_message.png)
 

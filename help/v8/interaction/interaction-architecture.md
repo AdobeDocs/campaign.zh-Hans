@@ -2,12 +2,12 @@
 title: 了解Campaign交互架构
 description: Campaign交互架构基础
 feature: Interaction, Offers
-role: Data Engineer
+role: Developer
 level: Beginner
 exl-id: 7a710960-7e41-4462-bd5e-18e874aa46f8
-source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
   类别也可以在在线环境中手动发布。
 
-  此部分[&#128279;](interaction-offer.md#approve-offers)中详细介绍了批准优惠的过程。
+  此部分[中详细介绍了](interaction-offer.md#approve-offers)批准优惠的过程。
 
 * 一个&#x200B;**实时**&#x200B;环境，其中设计环境中的已批准选件以及在设计环境中配置的各种选件空间、过滤器、类别和规则都可以找到。 在调用优惠引擎期间，引擎将始终使用实时环境中的优惠。
 
@@ -84,7 +84,7 @@ Adobe Campaign交互模块提出了两种类型的交互：
 
 >[!NOTE]
 >
->在安装包时，**nms：proposition**&#x200B;表的&#x200B;**long**&#x200B;类型字段（如建议ID）将变为&#x200B;**int64**&#x200B;类型字段。 [Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html?lang=zh-Hans#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}中详细介绍了此类数据。
+>在安装包时，**nms**&#x200B;表的&#x200B;**long:proposition**&#x200B;类型字段（如建议ID）将变为&#x200B;**int64**&#x200B;类型字段。 [Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}中详细介绍了此类数据。
 
 在每个实例上配置数据保留持续时间（通过部署向导中的&#x200B;**[!UICONTROL Data purge]**&#x200B;窗口）。 在执行实例上，此期间必须对应于要计算的分类规则（滑动期间）和资格规则所需的历史深度。
 

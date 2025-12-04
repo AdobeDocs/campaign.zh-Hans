@@ -3,10 +3,10 @@ audience: user
 user-guide-title: Campaign自动化指南
 user-guide-description: Campaign自动化指南
 feature: Overview
-source-git-commit: 8ff207246bea1f476b37b1d4f2c79498362e7481
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '444'
-ht-degree: 78%
+ht-degree: 81%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 78%
 
 + [Campaign自动化指南](home.md)
 + 使用工作流实现自动化 {#workflows}
-   + 工作流入门 {#introduction}
+   + 工作流快速入门 {#introduction}
       + [关于工作流](workflow/about-workflows.md)
       + 工作流类型 {#wf-type}
          + [定位工作流](workflow/targeting-workflows.md)
@@ -34,7 +34,7 @@ ht-degree: 78%
       + [工作流热图](workflow/heatmap.md)
    + 工作流活动 {#wf-activities}
       + [活动入门](workflow/activities.md)
-      + 定位活动 {#targeting-activities}
+      + 目标选择活动 {#targeting-activities}
          + [定位活动列表](workflow/targeting-activities.md)
          + [单元格](workflow/cells.md)
          + [更改数据源](workflow/change-data-source.md)
@@ -133,7 +133,7 @@ ht-degree: 78%
       + [管理权限](workflow/managing-rights.md)
       + [更改活动图像](workflow/change-activity-images.md)
       + [管理时区](workflow/managing-time-zones.md)
-+ 活动编排 {#campaign-orchestration}
++ 营销活动编排 {#campaign-orchestration}
    + [营销活动入门](campaigns/set-up-campaigns.md)
    + [创建项目和活动](campaigns/marketing-campaign-create.md)
    + [创建和配置模板](campaigns/marketing-campaign-templates.md)

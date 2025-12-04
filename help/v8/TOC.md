@@ -5,10 +5,10 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: d886072b3a21d5e5b70662c67919223cf9a1b68e
+source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
 workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 90%
+source-wordcount: '841'
+ht-degree: 88%
 
 ---
 
@@ -105,9 +105,11 @@ ht-degree: 90%
       + [投放分析](send/delivery-analysis.md)
       + [配置和发送投放](send/configure-and-send.md)
       + [发送时间优化](send/predictive.md)
-   + 失败、退回和隔离 {#failures}
-      + [隔离](send/quarantines.md)
+   + 监测投放 {#monitor}
+      + [在Campaign UI中监控投放](send/delivery-dashboard.md)
+      + [投放状态](send/delivery-statuses.md)
       + [投放失败](send/delivery-failures.md)
+      + [隔离](send/quarantines.md)
    + 可投放性管理 {#deliverability-management}
       + [什么是可投放性](send/about-deliverability.md)
       + [控制消息内容](send/control-message-content.md)
@@ -166,8 +168,15 @@ ht-degree: 90%
       + [管理匿名互动](interaction/anonymous-interactions.md)
    + [报告和历史记录](interaction/interaction-tracking.md)
    + [用例](interaction/interaction-use-cases.md)
-+ 报告和分析 {#analytics}
-   + [跟踪和监测](start/tracking.md)
++ 跟踪和分析 {#analytics}
+   + 消息跟踪 {#tracking}
+      + [跟踪入门](send/tracking.md)
+      + [配置跟踪的链接](send/tracked-links.md)
+      + [配置 URL 跟踪选项](send/url-tracking.md)
+      + [跟踪个性化链接](send/personalized-links.md)
+      + [测试跟踪](send/testing-tracking.md)
+      + [访问跟踪日志](send/tracking-logs.md)
+   + [Campaign监控概述](start/monitor.md)
    + [审核记录](reporting/audit-trail.md)
    + 使用报告{#reports}
       + [报告快速入门](reporting/gs-reporting.md)

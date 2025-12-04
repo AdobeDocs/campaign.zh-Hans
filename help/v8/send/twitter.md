@@ -4,10 +4,10 @@ description: 了解如何使用Adobe Campaign社交营销模块在X（以前称�
 role: User
 level: Beginner, Intermediate
 exl-id: 0783e289-ae8e-4bb7-80f1-f90937a528c1
-source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 4%
+source-wordcount: '778'
+ht-degree: 3%
 
 ---
 
@@ -149,7 +149,7 @@ Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X（
 
 >[!CAUTION]
 >
->您每天发送的私信不能超过250条。 要避免超过此阈值，您可以分批次发送。 有关更多信息，请参阅此[&#128279;](configure-and-send.md#sending-using-multiple-waves)章节。
+>您每天发送的私信不能超过250条。 要避免超过此阈值，您可以分批次发送。 有关更多信息，请参阅此](configure-and-send.md#sending-using-multiple-waves)章节[。
 
 
 ## 访问跟踪数据 {#tw-tracking}
@@ -158,5 +158,5 @@ Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X（
 
 可在投放报告以及投放和服务的&#x200B;**[!UICONTROL Edit > Tracking]**&#x200B;选项卡中查看跟踪数据。
 
-跟踪配置与电子邮件投放相同。 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=zh-Hans){target="_blank"}以了解详情。
+跟踪配置与电子邮件投放相同。 了解有关[跟踪](tracking.md)的更多信息。
 

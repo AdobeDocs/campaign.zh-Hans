@@ -2,11 +2,11 @@
 title: 内置报告量度计算
 description: 内置报告量度计算
 feature: Reporting
-role: Data Engineer
+role: Developer
 exl-id: ad8e9f9c-df24-4a11-b8df-4b31dd54911f
-source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '3048'
+source-wordcount: '3025'
 ht-degree: 3%
 
 ---
@@ -46,13 +46,13 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-此报表基于&#x200B;**[!UICONTROL Consolidated tracking]**&#x200B;表(nms：trackingStats)。 在显示报表时，出于性能原因，使用此聚合表代替&#x200B;**[!UICONTROL Recipient tracking logs]**&#x200B;表(nms：trackingLogRcp)，并且不会实时计算它。 该表将在检索跟踪日志后几分钟生成。 如果指标是最新的，则结果将与&#x200B;**跟踪指标**&#x200B;报告的指标相同。 @totalclicks指示器表示5分钟内的点击总数。
+此报表基于&#x200B;**[!UICONTROL Consolidated tracking]**&#x200B;表(nms:trackingStats)。 在显示报表时，出于性能原因，使用此聚合表代替&#x200B;**[!UICONTROL Recipient tracking logs]**&#x200B;表(nms:trackingLogRcp)，并且不会实时计算它。 该表将在检索跟踪日志后几分钟生成。 如果指标是最新的，则结果将与&#x200B;**跟踪指标**&#x200B;报告的指标相同。 @totalclicks指示器表示5分钟内的点击总数。
 
 ## 无法投放项和退回 {#non-deliverables-and-bounces-1}
 
 **按错误类型划分**
 
-此报表基于&#x200B;**[!UICONTROL Delivery and tracking statistics]**&#x200B;表(nms：deliveryLogStats)。
+此报表基于&#x200B;**[!UICONTROL Delivery and tracking statistics]**&#x200B;表(nms:deliveryLogStats)。
 
 <table> 
  <thead> 
@@ -133,7 +133,7 @@ ht-degree: 3%
 
 ## 浏览器 {#browsers-1}
 
-此报表基于&#x200B;**[!UICONTROL Internet Browser Statistics]**&#x200B;表(nms：userAgentsStats)。
+此报表基于&#x200B;**[!UICONTROL Internet Browser Statistics]**&#x200B;表(nms:userAgentsStats)。
 
 **全局统计信息**
 
@@ -203,7 +203,7 @@ ht-degree: 3%
 
 ## 分享到社交网络 {#sharing-to-social-networks-1}
 
-此报表基于&#x200B;**[!UICONTROL Delivery]** (nms：delivery)、**[!UICONTROL Consolidated tracking]** (nms：trackingStats)和&#x200B;**[!UICONTROL Web tracking]** (nms：webTrackingLog)表。
+此报表基于&#x200B;**[!UICONTROL Delivery]** (nms:delivery)、**[!UICONTROL Consolidated tracking]** (nms:trackingStats)和&#x200B;**[!UICONTROL Web tracking]** (nms:webTrackingLog)表。
 
 <table> 
  <thead> 
@@ -340,7 +340,7 @@ ht-degree: 3%
 
 ## 共享活动统计信息 {#statistics-on-sharing-activities-1}
 
-此报表基于&#x200B;**[!UICONTROL Delivery]** (nms：delivery)、**[!UICONTROL Consolidated tracking]** (nms：trackingStats)和&#x200B;**[!UICONTROL Web tracking]** (nms：webTrackingLog)表。
+此报表基于&#x200B;**[!UICONTROL Delivery]** (nms:delivery)、**[!UICONTROL Consolidated tracking]** (nms:trackingStats)和&#x200B;**[!UICONTROL Web tracking]** (nms:webTrackingLog)表。
 
 <table> 
  <thead> 
@@ -375,7 +375,7 @@ ht-degree: 3%
 
 ## 操作系统 {#operating-systems-1}
 
-此报表基于&#x200B;**[!UICONTROL Internet Browser Statistics]**&#x200B;表(nms：userAgentsStats)。
+此报表基于&#x200B;**[!UICONTROL Internet Browser Statistics]**&#x200B;表(nms:userAgentsStats)。
 
 **全局统计信息**
 
@@ -445,7 +445,7 @@ ht-degree: 3%
 
 ## 订阅跟踪 {#subscription-tracking-1}
 
-此报表基于&#x200B;**[!UICONTROL Services]**&#x200B;表(nms：service)。
+此报表基于&#x200B;**[!UICONTROL Services]**&#x200B;表(nms:service)。
 
 <table> 
  <thead> 
@@ -492,7 +492,7 @@ ht-degree: 3%
 
 ## 跟踪指标 {#tracking-indicators-1}
 
-此报表基于&#x200B;**[!UICONTROL Delivery and tracking statistics]** (nms：deliveryLogStats)和&#x200B;**[!UICONTROL Consolidated tracking]** (nms：trackingStats)表。
+此报表基于&#x200B;**[!UICONTROL Delivery and tracking statistics]** (nms:deliveryLogStats)和&#x200B;**[!UICONTROL Consolidated tracking]** (nms:trackingStats)表。
 
 <table> 
  <thead> 
@@ -689,7 +689,7 @@ ht-degree: 3%
 
 ## URL 和点击流 {#urls-and-click-streams-1}
 
-此报表基于&#x200B;**[!UICONTROL Delivery]**&#x200B;表(nms：delivery)。
+此报表基于&#x200B;**[!UICONTROL Delivery]**&#x200B;表(nms:delivery)。
 
 <table> 
  <thead> 
@@ -736,7 +736,7 @@ ht-degree: 3%
 
 ## 投放摘要 {#delivery-summary-1}
 
-此报表基于&#x200B;**[!UICONTROL Delivery]**&#x200B;表(nms：delivery)。
+此报表基于&#x200B;**[!UICONTROL Delivery]**&#x200B;表(nms:delivery)。
 
 <table> 
  <thead> 
@@ -789,13 +789,13 @@ ht-degree: 3%
 
 ## 热门点击 {#hot-clicks-1}
 
-此报表基于Delivery(nms：delivery)和&#x200B;**[!UICONTROL Consolidated tracking]** (nms：trackingStats)表。
+此报表基于投放(nms:delivery)和&#x200B;**[!UICONTROL Consolidated tracking]** (nms:trackingStats)表。
 
 此报告显示邮件内容（HTML 和/或文本）以及每个链接的点击百分比。个性化块退订链接和镜像页面链接在总累计点击量中会被考虑在内，但不会显示在报表中。
 
 ## 跟踪统计数据 {#tracking-statistics-1}
 
-此报表基于&#x200B;**[!UICONTROL Delivery]**&#x200B;表(nms：delivery)。
+此报表基于&#x200B;**[!UICONTROL Delivery]**&#x200B;表(nms:delivery)。
 
 <table> 
  <thead> 
@@ -830,7 +830,7 @@ ht-degree: 3%
 
 ## 投放统计信息 {#delivery-statistics-1}
 
-此报表基于&#x200B;**[!UICONTROL Delivery and tracking statistics]**&#x200B;表(nms：deliveryLogStats)。
+此报表基于&#x200B;**[!UICONTROL Delivery and tracking statistics]**&#x200B;表(nms:deliveryLogStats)。
 
 <table> 
  <thead> 
@@ -889,7 +889,7 @@ ht-degree: 3%
 
 ## 打开的细分 {#breakdown-of-opens-1}
 
-此报表基于&#x200B;**投放** (nms：delivery)和&#x200B;**跟踪日志** (nms：trackingLogRcp)表。
+此报表基于&#x200B;**投放** (nms:delivery)和&#x200B;**跟踪日志** (nms:trackingLogRcp)表。
 
 <table> 
  <thead> 
@@ -912,7 +912,7 @@ ht-degree: 3%
 
 ## 其他指标 {#other-indicators}
 
-通过&#x200B;**投放(nms：delivery) > Indicators**&#x200B;节点访问的&#x200B;**已发送**&#x200B;指示器(@sent)对应于发送到服务提供商的SMS总数。 此指示器仅用于SMS投放，不得用于其他类型的投放(不要与&#x200B;**@success**&#x200B;和&#x200B;**@processed**&#x200B;指示器混淆)。
+通过&#x200B;**投放(nms**) > Indicators **节点访问的:delivery已发送**&#x200B;指示器(@sent)对应于发送到服务提供商的SMS总数。 此指示器仅用于SMS投放，不得用于其他类型的投放(不要与&#x200B;**@success**&#x200B;和&#x200B;**@processed**&#x200B;指示器混淆)。
 
 ## 指示器同步 {#indicator-synchronization}
 

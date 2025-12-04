@@ -6,9 +6,9 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: a523e76d-776c-47d3-9c15-34241cee1092
-source-git-commit: 110a2cac920ca3087f6fcb3cab8474729f6075be
+source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '998'
 ht-degree: 73%
 
 ---
@@ -109,4 +109,4 @@ Campaign 中有三种类型的投放对象：
 
 在发送后监测投放是确保营销活动有效并接触到客户的重要步骤。您可以在发送投放后进行监测，并了解如何管理投放失败和隔离。
 
-请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=zh-Hans#sending-messages){target="_blank"}以了解如何监测投放
+了解如何[跟踪和监视您的投放](../send/tracking.md)

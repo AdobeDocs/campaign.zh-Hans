@@ -4,10 +4,10 @@ description: 了解有关如何使用API创建用户档案的更多信息。
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 69e8d034-6bdd-4b82-bcd7-1ef4be0a59b3
-source-git-commit: 4ed5799c77c647c9f1aeabba7645fbb475d03c09
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >如果要将<b>orgUnit</b>关联到已创建的配置文件，则需要使用此字段扩展配置文件资源，并且在发布扩展后，对<b>ProfileAndServicesExt</b>端点执行POST请求。
 >
->有关用户档案资源扩展的更多信息，请参阅<a href="https://helpx.adobe.com/cn/campaign/standard/administration/using/organizational-units.html#partitioning-profiles">Campaign文档</a>。
+>有关用户档案资源扩展的更多信息，请参阅<a href="https://helpx.adobe.com/campaign/standard/administration/using/organizational-units.html#partitioning-profiles">Campaign文档</a>。
 
 <br/>
 

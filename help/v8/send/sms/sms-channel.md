@@ -5,7 +5,7 @@ feature: SMS
 role: User
 level: Intermediate
 exl-id: abab6f15-43ea-42fc-817b-8dbd88df82f7
-source-git-commit: 5c5d19c9b9b413bb630a4e5738c6697d2341665a
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 >
 >此功能适用于所有Campaign FDA环境。 **不**&#x200B;可用于Campaign FFDA部署。 本文档适用于Adobe Campaign v8.7.2及更高版本。 要从旧版短信连接器切换到新版短信连接器，请参阅此[技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}
 >
->对于旧版本，请阅读[Campaign Classic v7文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}。
+>对于旧版本，请阅读[Campaign Classic v7文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}。
 
 ## 短信类型 {#sms-types}
 
@@ -70,7 +70,7 @@ SMS消息使用特殊的7位编码，通常称为GSM7编码。  维基百科有[
 消息的大小上限取决于其编码。 下表总结了所有相关信息：
 
 | 编码 | 常用数据编码 | 消息大小（字符） | 多部分短信的部分大小 | 可用字符 |
-|:-:|:-:|:-:|:-:|:-:|  
+|:-:|:-:|:-:|:-:|:-:|
 | GSM7 | 0 | 160 | 152 | GSM7基本字符集+扩展（扩展字符占2个字符） |
 | Latin-1 | 3 | 140 | 134 | ISO-8859-1 |
 | UCS-2 UTF-16 | 8 | 70 | 67 | Unicode（因手机而异） |

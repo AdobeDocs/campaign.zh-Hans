@@ -2,12 +2,12 @@
 title: Campaign v8已知问题
 description: 最新Campaign版本中的已知问题
 feature: Overview
-role: Data Engineer
+role: Developer
 level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 89a4ab6c-de8e-4408-97d2-8b8e574227f9
-source-git-commit: 41e39e046ec77de8b5e657ba76645898ff1cd2d7
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 # 已知问题{#known-issues}
 
-此页面列出了&#x200B;**最新Campaign v8版本**&#x200B;中发现的已知问题。 此外，Campaign v8的限制在此页面[&#128279;](ac-guardrails.md)中列出。
+此页面列出了&#x200B;**最新Campaign v8版本**&#x200B;中发现的已知问题。 此外，Campaign v8的限制在此页面[中列出](ac-guardrails.md)。
 
 
 >[!NOTE]
@@ -86,9 +86,9 @@ Error:
 
 作为Campaign管理员，您可以在[Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=4){target="_blank"}中下载Campaign v8.3.1客户端控制台。
 
-在此页面[&#128279;](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans){target="_blank"}中了解如何访问Adobe Software Distribution 。
+在此页面[中了解如何访问Adobe Software Distribution ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans){target="_blank"}。
 
-在本页[&#128279;](connect.md)中了解如何升级您的客户端控制台
+在本页[中了解如何升级您的客户端控制台](connect.md)
 
 #### 内部引用{#issue-3-ref}
 

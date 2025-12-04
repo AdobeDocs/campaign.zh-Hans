@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: 03f7a736-e0b9-4216-9550-507f10e6fcf6
 version: Campaign v8, Campaign Classic v7
-source-git-commit: ec1b41ccf532b044e75c69e795eabfb19a523ec2
+source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 4%
@@ -80,4 +80,4 @@ ht-degree: 4%
 
 * **跟踪**，针对选定配置文件的所有跟踪日志。 此信息用于跟踪投放后的用户档案行为。 此选项卡显示投放中跟踪的所有URL的累积总数。 该列表是可配置的，通常包含：点击的URL、点击的日期和时间，以及包含该URL的文档
 
-  在本节[中了解有关跟踪](../start/tracking.md)的更多信息。
+  在本节[中了解有关跟踪](../send/tracking.md)的更多信息。

@@ -2,10 +2,10 @@
 title: 从Adobe Campaign登陆页面更新Adobe Experience Platform配置文件
 description: 了解如何同步Adobe Campaign登陆页面和Adobe Experience Platform配置文件属性
 feature: Experience Platform Integration
-role: Data Engineer
+role: Developer
 level: Beginner
 exl-id: 565a1c8b-1930-4b43-bc11-ae517df077d6
-source-git-commit: 02d7909c409bd25cfa3cc7aad189247ce7b5176e
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 1%
@@ -56,7 +56,7 @@ Adobe Cloud Platform API使用OAuth 2.0协议进行身份验证和授权。 要�
 
    ![](assets/ac-lp-source.png){width="70%"}
 
-1. 根据需要配置连接。 有关如何配置HTTP API连接的详细信息，请参阅[Adobe Experience Platform源文档](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=zh-Hans){target="_blank"}。
+1. 根据需要配置连接。 有关如何配置HTTP API连接的详细信息，请参阅[Adobe Experience Platform源文档](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html){target="_blank"}。
 
    在&#x200B;**[!UICONTROL Authentication]**&#x200B;步骤中，打开&#x200B;**[!UICONTROL Enable authentication]**&#x200B;选项，以使用通过OAuth集成预生成的访问令牌进行身份验证。
 
@@ -98,7 +98,7 @@ Adobe Cloud Platform API使用OAuth 2.0协议进行身份验证和授权。 要�
 
 >[!TAB 使用JavaScript代码活动添加选项]
 
-要在执行登陆页面工作流时自动配置这些选项，请使用以下代码将&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动添加到您的工作流。 [了解如何配置JavaScript代码活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-JavaScript-code.html?lang=zh-Hans#JavaScript-code){target="_blank"}。
+要在执行登陆页面工作流时自动配置这些选项，请使用以下代码将&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动添加到您的工作流。 [了解如何配置JavaScript代码活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-JavaScript-code.html#JavaScript-code){target="_blank"}。
 
 在执行工作流时，系统会自动在Campaign控制台中使用提供的值创建选项。
 
@@ -134,7 +134,7 @@ setOption("IMS_CLIENT_API_KEY", cryptString('CLIENT ID'));
 
    ![](assets/ac-lp-script.png){width="70%"}
 
-+++  脚本1 — 从Experience Platform加载配置文件属性
+   +++  脚本1 — 从Experience Platform加载配置文件属性
 
    此代码在加载登陆页面之前检查配置文件是否存在于Adobe Experience Platform中。 它会检索用户档案属性，并将其显示在登陆页面的相应字段中。
 
@@ -155,9 +155,9 @@ setOption("IMS_CLIENT_API_KEY", cryptString('CLIENT ID'));
    }
    ```
 
-+++
+   +++
 
-+++ 脚本2 — 更新Experience Platform配置文件属性
+   +++ 脚本2 — 更新Experience Platform配置文件属性
 
    此代码会使用登陆页面中提交的值更新Adobe Experience Platform中的配置文件属性。
 
@@ -203,7 +203,7 @@ setOption("IMS_CLIENT_API_KEY", cryptString('CLIENT ID'));
    }
    ```
 
-+++
+   +++
 
 现在，已在Adobe Campaign中创建自定义JavaScript代码，您可以配置包含登陆页面的工作流，以使用这些JavaScript代码进行数据同步。
 
@@ -213,7 +213,7 @@ setOption("IMS_CLIENT_API_KEY", cryptString('CLIENT ID'));
 
 * 要在加载登陆页面之前从Experience Platform加载数据，请在登陆页面活动之前添加&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动，并复制粘贴脚本1。
 
-+++ 脚本1 — 从Experience Platform加载配置文件属性
+  +++ 脚本1 — 从Experience Platform加载配置文件属性
 
   ```javascript
   // Script code to read profile from AEP.
@@ -249,11 +249,11 @@ setOption("IMS_CLIENT_API_KEY", cryptString('CLIENT ID'));
   }
   ```
 
-+++
+  +++
 
 * 要使用在登陆页中提交的数据更新Experience Platform配置文件属性，请在登陆页活动后添加&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动，并复制粘贴脚本2。
 
-+++ 脚本2 — 更新Experience Platform配置文件属性
+  +++ 脚本2 — 更新Experience Platform配置文件属性
 
   ```javascript
   // Script code to update profile in AEP and ACC.
@@ -323,7 +323,7 @@ setOption("IMS_CLIENT_API_KEY", cryptString('CLIENT ID'));
   }
   ```
 
-+++
+  +++
 
 >[!CAUTION]
 >
@@ -344,5 +344,5 @@ setOption("IMS_CLIENT_API_KEY", cryptString('CLIENT ID'));
 ### 更多信息
 
 * [配置JavaScript代码活动](../../automation/workflow/sql-code-and-javascript-code.md#javascript-code)
-* [创建登陆页面](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html?lang=zh-Hans){target="_blank"}
+* [创建登陆页面](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html){target="_blank"}
 * [管理订阅和退订](../start/subscriptions.md)

@@ -3,10 +3,10 @@ title: Adobe Campaign内置投放报告
 description: Adobe Campaign内置投放报告
 feature: Reporting
 exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
-source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
+source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 12%
+source-wordcount: '1019'
+ht-degree: 10%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 12%
 
 ## 跟踪指标 {#tracking-indicators}
 
-此报表将用于在接收投放时跟踪收件人行为的关键指标组合在一起。 它提供了对投放和接收统计数据、打开率和点进率、生成的点击流、Web 跟踪以及与社交网络共享的活动的访问权限。
+此报表将用于在接收投放时跟踪收件人行为的关键指标组合在一起。 它提供投放和接收统计信息、打开率和点进率、生成的点击流，以及分享活动到社交网络。
 
 >[!NOTE]
 >

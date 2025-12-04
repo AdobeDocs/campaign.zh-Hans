@@ -2,13 +2,13 @@
 title: 发送和监控电子邮件
 description: 了解使用Adobe Campaign发送电子邮件的范围和特性
 feature: Email
-role: Data Engineer
+role: Developer
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
-source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+source-git-commit: c7f139dd7f139ba421eb034f4d8911671b3b3332
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '802'
 ht-degree: 2%
 
 ---
@@ -27,6 +27,8 @@ ht-degree: 2%
 发送后，在&#x200B;**投放仪表板**&#x200B;中检查您的投放状态，并访问投放日志和报告以确认消息已正确发送。
 
 在投放仪表板中，您可以检查已处理的消息和投放审核日志。 您还可以控制投放日志中消息的状态。
+
+了解有关[投放状态](delivery-statuses.md)的更多信息。
 
 >[!NOTE]
 >
@@ -73,7 +75,7 @@ Domain Keys Identified Mail (DKIM)是一种用于检测伪造发件人地址（�
 
 在Adobe Campaign中，DKIM电子邮件身份验证签名由MTA执行。
 
-在[DKIM可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#authentication){target="_blank"}中了解有关Adobe的更多信息。
+在[DKIM可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication){target="_blank"}中了解有关Adobe的更多信息。
 
 ## 电子邮件反馈服务 {#email-feedback-service}
 

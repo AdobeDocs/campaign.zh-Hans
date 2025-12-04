@@ -4,10 +4,10 @@ description: 了解有关API端点的更多信息。
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 9f6d3da6-374d-47f5-bc8f-b31b19cbb5ca
-source-git-commit: 4ed5799c77c647c9f1aeabba7645fbb475d03c09
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 9%
@@ -25,8 +25,8 @@ Adobe Campaign REST API的可用端点：
 
 默认情况下，**profileAndServices**&#x200B;和&#x200B;**profileAndServicesExt** API可用的主要资源包括：
 
-* **/配置文件**：与Campaign数据库中的配置文件进行交互。 若要向服务添加配置文件，请使用&#x200B;**/服务**&#x200B;终结点。 有关Campaign中用户档案的详细信息，请参阅[Campaign文档](https://helpx.adobe.com/cn/campaign/standard/audiences/using/about-profiles.html)。
-* **/服务**：管理订阅服务。 有关Campaign中服务的详细信息，请参阅[Campaign文档](https://helpx.adobe.com/cn/campaign/standard/audiences/using/creating-a-service.html)。
+* **/配置文件**：与Campaign数据库中的配置文件进行交互。 若要向服务添加配置文件，请使用&#x200B;**/服务**&#x200B;终结点。 有关Campaign中用户档案的详细信息，请参阅[Campaign文档](https://helpx.adobe.com/campaign/standard/audiences/using/about-profiles.html)。
+* **/服务**：管理订阅服务。 有关Campaign中服务的详细信息，请参阅[Campaign文档](https://helpx.adobe.com/campaign/standard/audiences/using/creating-a-service.html)。
 
 >[!NOTE]
 >

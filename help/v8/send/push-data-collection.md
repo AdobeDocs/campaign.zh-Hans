@@ -2,11 +2,11 @@
 title: 使用Adobe Campaign发送推送通知
 description: Campaign中的推送通知入门
 feature: Push
-role: Data Engineer
+role: Developer
 level: Intermediate
 badge: label="有限发布版" type="Informative"
 exl-id: 0f22b17c-ed01-4add-8300-8689b8a9f963
-source-git-commit: 11a9f17bc5c1ec8388de294395a6d7b7a5e8a7e6
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 2%
@@ -73,7 +73,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 1. 提供&#x200B;**密钥ID**。 这是在创建p8身份验证密钥期间分配的10字符串。
 
-       可在Apple开发人员帐户的&#x200B;**Certificates**、**Identifiers**&#x200B;和**Profiles**&#x200B;页面的&#x200B;**Keys**&#x200B;选项卡下找到它。
+       可在Apple开发人员帐户的**Certificates**、**Identifiers**和**Profiles**页面的**Keys**选项卡下找到它。
    
 1. 提供&#x200B;**团队ID**。 这是可在&#x200B;**成员资格**&#x200B;选项卡下找到的字符串值。
 

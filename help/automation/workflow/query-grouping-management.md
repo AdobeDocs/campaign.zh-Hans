@@ -3,12 +3,12 @@ product: campaign
 title: 使用分组管理进行查询
 description: 了解如何使用分组管理执行查询
 feature: Query Editor
-role: User, Data Engineer
+role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 6fc4ef67-5d75-4c8c-8bcc-41e3ed155ca2
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '244'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 * 需要选择哪个表？
 
-  收件人表(nms：recipient)
+  收件人表(nms:recipient)
 
 * 要在输出列中选择的字段？
 
@@ -33,7 +33,7 @@ ht-degree: 3%
 
 要创建此示例，请应用以下步骤：
 
-1. 打开&#x200B;**[!UICONTROL Generic query editor]**&#x200B;并选择收件人表(**nms：recipient**)。
+1. 打开&#x200B;**[!UICONTROL Generic query editor]**&#x200B;并选择收件人表(**nms:recipient**)。
 
    ![](assets/query_editor_02.png)
 
@@ -43,12 +43,12 @@ ht-degree: 3%
 
    ![](assets/query_editor_nveau_29.png)
 
-1. 在&#x200B;**[!UICONTROL Sorting]**&#x200B;窗口中，按降序对电子邮件域进行排序。 为此，请检查&#x200B;**[!UICONTROL Descending sort]**&#x200B;列中的&#x200B;**[!UICONTROL Yes]**。 单击 **[!UICONTROL Next]**。
+1. 在&#x200B;**[!UICONTROL Sorting]**&#x200B;窗口中，按降序对电子邮件域进行排序。 为此，请检查&#x200B;**[!UICONTROL Yes]**&#x200B;列中的&#x200B;**[!UICONTROL Descending sort]**。 单击 **[!UICONTROL Next]**。
 
    ![](assets/query_editor_nveau_70.png)
 
 1. 在&#x200B;**[!UICONTROL Data filtering]**&#x200B;中，选择&#x200B;**[!UICONTROL Filtering conditions]**。 转到&#x200B;**[!UICONTROL Target elements]**&#x200B;窗口并单击&#x200B;**[!UICONTROL Next]**。
-1. 在&#x200B;**[!UICONTROL Data grouping]**&#x200B;窗口中，单击&#x200B;**[!UICONTROL Add]**&#x200B;以选择&#x200B;**[!UICONTROL Email domain]**。
+1. 在&#x200B;**[!UICONTROL Data grouping]**&#x200B;窗口中，单击&#x200B;**[!UICONTROL Email domain]**&#x200B;以选择&#x200B;**[!UICONTROL Add]**。
 
    此数据分组窗口仅在选中&#x200B;**[!UICONTROL Handle groupings (GROUP BY + HAVING]**)框时显示。
 

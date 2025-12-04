@@ -4,10 +4,10 @@ description: 了解有关如何执行其他操作的更多信息
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 7db25b8d-a6f1-4151-bf37-c47e9991ae48
-source-git-commit: 4ed5799c77c647c9f1aeabba7645fbb475d03c09
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 1%
@@ -262,8 +262,8 @@ ht-degree: 1%
 
 有关更多信息，请参阅Campaign Standard文档：
 
-* [正在配置筛选器定义](https://helpx.adobe.com/cn/campaign/standard/developing/using/configuring-filter-definition.html)。
-* [用例：使用复合标识键](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/adding-or-extending-a-resource/uc-calling-resource-id-key.html?lang=zh-Hans)调用资源。
+* [正在配置筛选器定义](https://helpx.adobe.com/campaign/standard/developing/using/configuring-filter-definition.html)。
+* [用例：使用复合标识键](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/adding-or-extending-a-resource/uc-calling-resource-id-key.html)调用资源。
 
 <br/>
 

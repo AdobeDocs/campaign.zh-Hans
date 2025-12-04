@@ -4,10 +4,11 @@ description: 了解使用Adobe Campaign发送消息时可能发生的失败
 feature: Profiles, Monitoring
 role: User
 level: Beginner, Intermediate
+version: Campaign v8, Campaign Classic v7
 exl-id: 9c83ebeb-e923-4d09-9d95-0e86e0b80dcc
-source-git-commit: 338013ac999ae0fedac132adf730c6f9477d73ca
+source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
 workflow-type: tm+mt
-source-wordcount: '2976'
+source-wordcount: '3422'
 ht-degree: 5%
 
 ---
@@ -40,7 +41,7 @@ ht-degree: 5%
 
 **Ignored**&#x200B;错误类型已知为临时错误，如“不在办公室”，或技术错误，例如，如果发件人类型为“邮递员”。
 
-反馈循环的运行方式与退回电子邮件类似：当用户将电子邮件标记为垃圾邮件时，您可以在Adobe Campaign中配置电子邮件规则以阻止向该用户的所有投放。 即使这些用户没有单击退订链接，也会对其地址进行列入阻止列表。 地址已添加到(**NmsAddress**)隔离表，但未添加到(**NmsRecipient**)状态为&#x200B;**[!UICONTROL Denylisted]**&#x200B;的收件人表。 在[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#feedback-loops){target="_blank"}中了解有关反馈循环机制的更多信息。
+反馈循环的运行方式与退回电子邮件类似：当用户将电子邮件标记为垃圾邮件时，您可以在Adobe Campaign中配置电子邮件规则以阻止向该用户的所有投放。 即使这些用户没有单击退订链接，也会对其地址进行列入阻止列表。 地址已添加到(**NmsAddress**)隔离表，但未添加到(**NmsRecipient**)状态为&#x200B;**[!UICONTROL Denylisted]**&#x200B;的收件人表。 在[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops){target="_blank"}中了解有关反馈循环机制的更多信息。
 
 ## 同步和异步错误 {#synchronous-and-asynchronous-errors}
 
@@ -48,7 +49,7 @@ ht-degree: 5%
 
 这些类型的错误可按如下方式管理：
 
-* **同步错误**：由Adobe Campaign投放服务器联系的远程服务器立即返回错误消息。 不允许将投放发送到用户档案的服务器。 邮件传输代理(MTA)可确定退回类型并限定错误，然后将该信息发送回Campaign，以确定是否应隔离相关电子邮件地址。 请参阅[退回邮件鉴定](#bounce-mail-qualification)。
+* **同步错误**：由Adobe Campaign投放服务器联系的远程服务器立即返回错误消息。 不允许将投放发送到用户档案的服务器。 邮件传输代理(MTA)可确定退回类型并限定错误，然后将该信息发送回Campaign，以确定是否应隔离相关电子邮件地址。 请参阅[退回电子邮件鉴定](#bounce-mail-qualification)。
 
 * **异步错误**：接收服务器稍后会重新发送退回邮件或SR。 此错误使用与该错误相关的标签进行限定。 最晚的异步错误，可能发生在发送投放的一周之后。
 
@@ -66,7 +67,7 @@ ht-degree: 5%
 
 * **同步错误**： MTA确定退件类型和鉴别，并将该信息发回至Campaign。 **[!UICONTROL Delivery log qualification]**&#x200B;表中的退回限定不用于&#x200B;**同步**&#x200B;投放失败错误消息。
 
-* **异步错误**： Campaign用于限定异步投放失败的规则列在&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]**&#x200B;节点中。 异步退回由inMail进程通过&#x200B;**[!UICONTROL Inbound email]**&#x200B;规则进行鉴别。 有关详细信息，请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html?lang=zh-Hans#bounce-mail-qualification){target="_blank"}。
+* **异步错误**： Campaign用于限定异步投放失败的规则列在&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]**&#x200B;节点中。 异步退回由inMail进程通过&#x200B;**[!UICONTROL Inbound email]**&#x200B;规则进行鉴别。 有关详细信息，请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/understanding-delivery-failures.html#bounce-mail-qualification){target="_blank"}。
 
 <!--NO LONGER WITH MOMENTUM - The message returned by the remote server on the first occurrence of this error type is displayed in the **[!UICONTROL First text]** column of the **[!UICONTROL Audit]** tab.
 
@@ -111,12 +112,14 @@ Campaign投放中的有效期设置限制为&#x200B;**3.5天或更短**。 对�
 
 消息在MTA队列中停留3.5天且投放失败后，该消息将超时，其状态将在投放日志中从&#x200B;**[!UICONTROL Sent]**&#x200B;更新为&#x200B;**[!UICONTROL Failed]**。
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=zh-Hans#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
 
 
 ## 电子邮件错误类型 {#email-error-types}
 
 对于电子邮件渠道，下面列出了投放失败的可能原因。
+
++++ 单击以查看电子邮件错误类型的完整列表
 
 <table> 
  <tbody> 
@@ -249,7 +252,7 @@ Campaign投放中的有效期设置限制为&#x200B;**3.5天或更短**。 对�
  </tbody> 
 </table>
 
-
++++
 
 ## 推送通知错误类型 {#push-error-types}
 
@@ -260,6 +263,8 @@ Campaign投放中的有效期设置限制为&#x200B;**3.5天或更短**。 对�
 HTTP/V2协议允许直接反馈每个推送投放的状态。 如果使用HTTP/V2协议连接器，**[!UICONTROL mobileAppOptOutMgt]**&#x200B;工作流将不再调用反馈服务。 卸载或重新安装移动应用程序时，令牌被视为已注销。
 
 同时，如果APN为消息返回“未注册”状态，则目标令牌将立即被隔离。
+
++++ 单击以查看iOS隔离方案
 
 <table> 
  <tbody> 
@@ -346,6 +351,8 @@ HTTP/V2协议允许直接反馈每个推送投放的状态。 如果使用HTTP/V
  </tbody> 
 </table>
 
++++
+
 ### Android隔离 {#android-quarantine}
 
 用于Android V1 **的**
@@ -373,6 +380,8 @@ HTTP/V2协议允许直接反馈每个推送投放的状态。 如果使用HTTP/V
 用于Android V2 **的**
 
 Android V2隔离机制使用与Android V1相同的过程，该过程同样适用于订阅和排除项更新。 有关详细信息，请参阅[Android V1](#android-quarantine)部分。
+
++++ 单击以查看Android V2隔离方案
 
 <table> 
  <tbody> 
@@ -579,6 +588,8 @@ Android V2隔离机制使用与Android V1相同的过程，该过程同样适用
  </tbody> 
 </table>
 
++++
+
 ## 短信隔离 {#sms-quarantines}
 
 **对于标准连接器**
@@ -588,6 +599,8 @@ Android V2隔离机制使用与Android V1相同的过程，该过程同样适用
 >[!NOTE]
 >
 >**[!UICONTROL Delivery log qualification]**&#x200B;表不适用于&#x200B;**扩展通用SMPP**&#x200B;连接器。
+
++++ 单击以查看标准连接器的短信错误类型
 
 <table> 
  <tbody> 
@@ -636,7 +649,9 @@ Android V2隔离机制使用与Android V1相同的过程，该过程同样适用
  </tbody> 
 </table>
 
-扩展通用SMPP连接器的&#x200B;**&#x200B;**
++++
+
+扩展通用SMPP连接器的&#x200B;****
 
 使用SMPP协议发送短信消息时，错误管理的处理方式不同。
 
@@ -663,8 +678,8 @@ SR Generic DELIVRD 000|#MESSAGE#
 
 * 错误消息的第三部分(**DELIVRD**)对应于使用SMS外部帐户中定义的状态提取正则表达式从SR检索到的状态代码。
 
-  此正则表达式在外部帐户的&#x200B;**[!UICONTROL SMSC specificities]**&#x200B;选项卡中指定。
-默认情况下，正则表达式提取&#x200B;**SMPP 3.4规范**&#x200B;的&#x200B;**附录B**&#x200B;部分定义的&#x200B;**stat：**&#x200B;字段。
+  此正则表达式在外部帐户的&#x200B;**[!UICONTROL SMSC specificities]**选项卡中指定。
+默认情况下，正则表达式提取**SMPP 3.4规范**&#x200B;的&#x200B;**附录B**&#x200B;部分定义的&#x200B;**stat：**&#x200B;字段。
 
 * 错误消息的第四部分(**000**)对应于使用SMS外部帐户中定义的错误代码提取正则表达式从SR提取的错误代码。
 
@@ -675,3 +690,61 @@ SR Generic DELIVRD 000|#MESSAGE#
 * 管道符号(|)之后的所有内容仅显示在&#x200B;**[!UICONTROL First text]**&#x200B;表的&#x200B;**[!UICONTROL Delivery log qualification]**&#x200B;列中。 在消息规范化后，此内容始终被&#x200B;**#MESSAGE#**&#x200B;替换。 此过程避免因类似错误而出现多个条目，与电子邮件的情况相同。
 
 扩展通用SMPP连接器应用启发式来查找合理的默认值：如果状态以&#x200B;**DELIV**&#x200B;开头，则被视为成功，因为它与大多数提供商使用的通用状态&#x200B;**DELIVRD**&#x200B;或&#x200B;**DELIVERED**&#x200B;匹配。 任何其他状态都会导致硬故障。
+
+## 投放失败疑难解答 {#troubleshooting}
+
+本节提供有关诊断和解决常见投放失败问题的指导。
+
+### 失败状态并出现个性化错误 {#personalization-errors}
+
+如果电子邮件投放的状态为&#x200B;**[!UICONTROL Failed]**，则它可以链接到个性化块的问题。 当架构与投放映射不匹配时，投放中的个性化块可能会生成错误。
+
+投放日志是了解投放失败原因的关键。 以下是您可能会遇到的常见错误：
+
+收件人消息失败，并出现“无法访问”错误，指出：
+
+```
+Error while compiling script 'content htmlContent' line X: `[table]` is not defined. JavaScript: error while evaluating script 'content htmlContent
+```
+
+**原因**： HTML中的个性化设置正尝试调用尚未在上游定位或投放的目标映射中定义或映射的表或字段。
+
+**解决方案**：检查工作流和投放内容，明确确定哪些个性化设置试图调用相关表。 然后，在HTML中删除对此表的调用或修复到投放的映射。
+
+在[本节](personalize.md)中了解有关个性化的更多信息。
+
+### 多个个性化值错误 {#multiple-values-error}
+
+投放失败时，投放日志中可能会显示以下错误：
+
+```
+DLV-XXXX The count of message prepared (123) is greater than the number of messages to send (111). Please contact support.
+```
+
+**原因**：电子邮件中有一个个性化字段或块，该字段或块对收件人具有多个值。 正在使用个性化块，并且正在为特定收件人获取多个记录。
+
+**解决方案**：检查使用的个性化数据，然后检查目标，查找具有多个条目的收件人的任意这些字段。 您还可以在投放活动之前的定位工作流中使用&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动，以确保一次只有一个个性化字段。 有关重复数据删除的详细信息，请参阅[工作流文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}。
+
+### 自动回复处理 {#auto-reply-handling}
+
+某些投放可能会失败，并出现“Unreachable”（无法访问）错误，并指出：
+
+```
+Inbound email bounce (rule 'Auto_replies' has matched this bounce).
+```
+
+**解释**：这意味着投放成功，但Adobe Campaign收到了来自收件人的与“Auto_replies”入站电子邮件规则匹配的自动回复（例如“不在办公室”回复）。
+
+Adobe Campaign会忽略自动回复电子邮件，并且不会将收件人的地址添加到隔离。 这是预期行为，并不表示投放失败。
+
+## 相关主题
+
+[传递状态](delivery-statuses.md)说明传递在其生命周期内可以具有的不同状态。
+
+[在Campaign UI中监视投放](delivery-dashboard.md)提供了有关使用投放仪表板跟踪投放性能和诊断问题的指导。
+
+[隔离管理](quarantines.md)说明Campaign如何管理隔离地址以保护您的发送信誉。
+
+[监视您的可投放性](monitoring-deliverability.md)为保持良好的可投放性和发件人信誉提供指导。
+
+[投放最佳实践](../start/delivery-best-practices.md)涵盖了在Campaign中创建和发送投放的最佳实践。

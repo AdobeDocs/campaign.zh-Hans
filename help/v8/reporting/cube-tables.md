@@ -3,10 +3,10 @@ product: campaign
 title: 使用多维数据集创建数据报告
 description: 了解如何使用多维数据集创建报告
 feature: Reporting
-role: User, Data Engineer
+role: User, Developer
 level: Beginner
 exl-id: 7dbc66ab-a468-40ff-9db2-b33e4fd27754
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 1%
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 要基于现有多维数据集创建报告，请执行以下步骤：
 
-1. 单击&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡的&#x200B;**[!UICONTROL Create]**&#x200B;按钮，然后选择刚刚创建的多维数据集。
+1. 单击&#x200B;**[!UICONTROL Create]**&#x200B;选项卡的&#x200B;**[!UICONTROL Reports]**&#x200B;按钮，然后选择刚刚创建的多维数据集。
 
    ![](assets/new-report-based-on-cube.png)
 

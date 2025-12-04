@@ -2,10 +2,10 @@
 title: Campaign架构入门
 description: 了解有关环境和部署的基础知识，包括如何报告 Campaign 环境。
 feature: Architecture, Deployment
-role: Data Engineer
+role: Developer
 level: Beginner
 exl-id: 562b24c3-6bea-447f-b74c-187ab77ae78f
-source-git-commit: 42241364c1a23ae75d8f0aaf18a2cb1c04ce5b0c
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 10%
@@ -26,7 +26,7 @@ Campaign可用作单个实例，每个实例代表一个完整的Campaign环境�
 
 您可以将资源包从一个环境导出和导入到另一个环境。
 
-请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=zh-Hans){target="_blank"}以了解有关包的更多信息
+请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target="_blank"}以了解有关包的更多信息
 
 ## 部署模型 {#ac-deployment}
 

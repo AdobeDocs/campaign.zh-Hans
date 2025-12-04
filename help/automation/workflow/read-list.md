@@ -3,10 +3,10 @@ product: campaign
 title: 读取列表
 description: 了解有关读取列表工作流活动的更多信息
 feature: Workflows, Targeting Activity
-role: User, Data Engineer
+role: User, Developer
 version: Campaign v8, Campaign Classic v7
 exl-id: 91c87f8f-bdd2-4ca1-94c2-ec9e7affc1a0
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 1. 在&#x200B;**[!UICONTROL Exclusion set]**&#x200B;字段中，选择&#x200B;**[!UICONTROL Read list]**&#x200B;活动：将从主集中排除此活动中的数据。
 
-   在本例中，我们在连接上有一个排除项：列表中包含的数据将通过包含电子邮件地址的字段与主集的数据进行协调。 要配置加入，请在&#x200B;**[!UICONTROL Change dimension]**&#x200B;字段中选择&#x200B;**[!UICONTROL Joins]**。
+   在本例中，我们在连接上有一个排除项：列表中包含的数据将通过包含电子邮件地址的字段与主集的数据进行协调。 要配置加入，请在&#x200B;**[!UICONTROL Joins]**&#x200B;字段中选择&#x200B;**[!UICONTROL Change dimension]**。
 
    ![](assets/s_advuser_list_read_sample_4.png)
 

@@ -5,10 +5,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
-source-git-commit: a9f26a033d63ab1dece9ef9780392823ee130047
-workflow-type: ht
-source-wordcount: '706'
-ht-degree: 100%
+source-git-commit: 3453820bb0eca7847ec55d7e6ea15766a57ab94e
+workflow-type: tm+mt
+source-wordcount: '704'
+ht-degree: 96%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 100%
 
    Adobe Campaign 提供了一组仪表板和工具来监测电子邮件投放。
 
-   [阅读 Campaign Classic v7 文档以了解](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-delivery-monitoring.html?lang=zh-Hans){target="_blank"}如何确认邮件已发送、监测执行情况并在发生错误时采取行动。
+   了解如何[跟踪和监视消息](../send/tracking.md)以确保发送消息、监视执行情况并在发生错误时采取行动。
 
 1. **我是否能监测工作流的执行情况？**
 

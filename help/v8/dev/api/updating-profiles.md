@@ -1,10 +1,10 @@
 ---
 title: 更新轮廓
 description: 了解有关如何使用API更新用户档案的更多信息
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: fa3796ee-a00c-4d70-bf3d-e8d2099f1116
-source-git-commit: 4ed5799c77c647c9f1aeabba7645fbb475d03c09
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 2%

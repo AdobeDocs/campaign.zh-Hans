@@ -2,10 +2,10 @@
 title: Adobe Campaign报告工具快速入门
 description: 衡量活动成功并分析用户行为
 feature: Reporting
-role: Data Engineer
+role: Developer
 level: Beginner
 exl-id: f931fc0d-12c1-4bff-a4f2-153e8d91c339
-source-git-commit: 3ca0b96c9235008148067dc9a309f420bd9a92f8
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 12%
@@ -18,7 +18,7 @@ Adobe Campaign提供本页中列出的一组报表工具。
 
 * **动态报告**
 
-  动态报告与Campaign Web UI配合使用，提供完全可自定义的实时报告来衡量营销活动的影响。 它增加了对轮廓数据的访问，除打开数和点击数等功能性电子邮件营销活动数据外，还支持按轮廓维度（如性别、城市和年龄）进行人口统计分析。请参阅[Web UI v7文档](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=zh-Hans){target="_blank"}。
+  动态报告与Campaign Web UI配合使用，提供完全可自定义的实时报告来衡量营销活动的影响。 它增加了对轮廓数据的访问，除打开数和点击数等功能性电子邮件营销活动数据外，还支持按轮廓维度（如性别、城市和年龄）进行人口统计分析。请参阅[Web UI v7文档](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html){target="_blank"}。
 
 * **多维数据集**
 
@@ -56,4 +56,4 @@ Adobe Campaign提供本页中列出的一组报表工具。
 
   使用Adobe Campaign创建有关数据库中数据的报表。 创建这些组件后，可在相应的上下文中访问它们。
 
-  有关创建报告的步骤详情，请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=zh-Hans){target="_blank"}。 高级用户可自行创建个性化报表。
+  有关创建报告的步骤详情，请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target="_blank"}。 高级用户可自行创建个性化报表。

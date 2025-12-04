@@ -4,10 +4,10 @@ description: 了解有关使用API进行自定义资源管理的更多信息/
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-role: Data Engineer
+role: Developer
 level: Experienced
 exl-id: 19bfeecb-da60-479c-a929-0cfb72ef59e3
-source-git-commit: 4ed5799c77c647c9f1aeabba7645fbb475d03c09
+source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 0%

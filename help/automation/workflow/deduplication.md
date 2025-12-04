@@ -6,9 +6,9 @@ feature: Workflows, Targeting Activity
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: f79a979d-bd1d-4a86-8844-563886692941
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: f616f92e31abd51e3544f848ce272e80389aef73
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1114'
 ht-degree: 9%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 9%
 **[!UICONTROL Deduplication]**&#x200B;活动用于从数据集中删除重复行。 例如，下面的记录可能被视为重复，因为它们具有相同的电子邮件地址和相同的手机和/或家庭电话。
 
 | 上次修改日期 | 名字 | 姓氏 | 电子邮件 | 手机 | 电话 |
------|------------|-----------|-------|--------------|------
+|-----|------------|-----------|-------|--------------|------|
 | 02/03/2020 | 鲍勃 | 提斯纳 | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
 | 05/19/2020 | 罗伯特 | 提斯纳 | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 | 07/22/2020 | 鲍比 | 提斯纳 | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
@@ -30,7 +30,7 @@ ht-degree: 9%
 **[!UICONTROL Deduplication]**&#x200B;活动能够在识别重复项后保留整行作为唯一记录。 例如，在上述用例中，如果活动配置为仅保留具有最旧&#x200B;**[!UICONTROL Date]**&#x200B;的记录，则结果将为：
 
 | 日期 | 名字 | 姓氏 | 电子邮件 | 手机 | 电话 |
------|----------|------------|-------|--------------|------
+|-----|----------|------------|-------|--------------|------|
 | 02/03/2020 | 鲍勃 | 提斯纳 | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
 
 所选主记录将结转数据，而不会将字段数据与重复行中的其他相关数据合并。
@@ -38,7 +38,7 @@ ht-degree: 9%
 补充：
 
 | 日期 | 名字 | 姓氏 | 电子邮件 | 手机 | 电话 |
------|------------|-----------|-------|--------------|------
+|-----|------------|-----------|-------|--------------|------|
 | 05/19/2020 | 罗伯特 | 提斯纳 | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 | 07/22/2020 | 鲍比 | 提斯纳 | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 
@@ -96,7 +96,7 @@ ht-degree: 9%
 
    >[!NOTE]
    >
-   >通过&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;链接访问的&#x200B;**[!UICONTROL Merge]**&#x200B;功能允许您配置一组规则，以便将字段或字段组合并到单个结果数据记录中。 有关详细信息，请参阅[将字段合并到单个记录中](#merging-fields-into-single-record)。
+   >通过&#x200B;**[!UICONTROL Merge]**&#x200B;链接访问的&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;功能允许您配置一组规则，以便将字段或字段组合并到单个结果数据记录中。 有关详细信息，请参阅[将字段合并到单个记录中](#merging-fields-into-single-record)。
 
 1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;以批准选定的重复数据删除方法。
 
@@ -173,6 +173,6 @@ ht-degree: 9%
 * 架构
 * recCount
 
-这组三个值可标识重复数据删除产生的目标。 **[!UICONTROL tableName]**&#x200B;是保存目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms：recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。
+这组三个值可标识重复数据删除产生的目标。 **[!UICONTROL tableName]**&#x200B;是保存目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms:recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。
 
 与补充关联的转换具有相同的参数。

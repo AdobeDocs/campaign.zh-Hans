@@ -5,9 +5,9 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
+source-git-commit: 050612f6d7ab20aed5880454eec9cfc6e5fc18c2
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '837'
 ht-degree: 88%
 
 ---
@@ -38,8 +38,8 @@ ht-degree: 88%
    + [组件和流程](start/ac-components.md)
    + [从 Campaign Classic v7 到 v8](start/v7-to-v8.md)
    + [从 Campaign Standard 到 v8](start/acs-to-v8.md)
-   + [常见问题解答](start/campaign-faq-comprehensive.md)
-   + [常见问题解答](start/campaign-faq.md)
+   + [常见问题](start/campaign-faq-comprehensive.md)
+   + [常见问题](start/campaign-faq.md)
 + 管理和权限 {#permissions}
    + [权限入门](start/gs-permissions.md)
    + [管理用户权限](start/manage-permissions.md)
@@ -131,7 +131,6 @@ ht-degree: 88%
    + 添加轮廓 {#add-profiles}
       + [手动创建轮廓](audiences/create-profiles.md)
       + [从文件导入轮廓](audiences/import-profiles.md)
-      + [使用外部轮廓](audiences/external-profiles.md)
       + [在 Web 窗体中收集轮廓数据](audiences/collect-profiles.md)
       + [使用目标映射](audiences/target-mappings.md)
       + [创建测试轮廓](audiences/test-profiles.md)

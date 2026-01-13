@@ -5,10 +5,10 @@ feature: Control Panel, Monitoring
 role: Admin
 level: Beginner
 exl-id: b8aa89ac-19f4-4df3-9f36-860aca61bea3
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: ec506653830f4d02d0875a4f26ff4ee76f880272
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 95%
+source-wordcount: '372'
+ht-degree: 76%
 
 ---
 
@@ -28,7 +28,15 @@ Campaign 控制面板允许管理每个实例的设置并跟踪使用情况，�
 
 ## 如何访问控制面板？ {#ac-control-panel-access}
 
-可直接从 Adobe Experience Cloud 访问控制面板。仅管理员用户可以访问。[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=zh-Hans){target="_blank"}以了解更多信息。
+可直接从 Adobe Experience Cloud 访问控制面板。仅管理员用户可以访问。
+
+>[!IMPORTANT]
+>
+>默认情况下，属于“管理员”产品配置文件的管理员用户可以访问控制面板。 根据您的组织配置，产品配置文件的命名可以有所不同（“管理员”、“管理员”、“审批管理员”等）。 **任何名称中包含“admin”一词的产品配置文件都将自动授予对控制面板的访问权限。**
+>
+>请仔细审查您的产品配置文件命名，确保只有授权用户才有控制面板访问权限。
+
+[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=zh-Hans){target="_blank"}以了解更多信息。
 
 ## 控制面板常见问题解答 {#ac-control-faq}
 

@@ -2,9 +2,9 @@
 title: 将Campaign操作员迁移到Adobe Identity Management System (IMS)
 description: 了解如何将Campaign操作员迁移到Adobe Identity Management System (IMS)
 exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
-source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
+source-git-commit: ec506653830f4d02d0875a4f26ff4ee76f880272
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1433'
 ht-degree: 1%
 
 ---
@@ -31,6 +31,14 @@ ht-degree: 1%
 
 迁移到[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}是确保环境安全和标准化的安全要求，因为大多数其他Adobe Experience Cloud解决方案和应用程序已在IMS上。
 
+>[!IMPORTANT]
+>
+>**控制面板访问影响**
+>
+>将用户迁移到IMS后，请注意，Adobe Admin Console中名称包含“管理员”一词的任何产品配置文件（如“管理员”、“管理员”、“管理员”、“审批管理员”等）都会自动授予对Campaign控制面板的访问权限。 控制面板是一种自助服务工具，允许对Campaign实例进行重大更改。
+>
+>请仔细查看您的产品配置文件命名约定，确保只有授权用户才能访问控制面板。 在[控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}中了解有关管理控制面板权限的详细信息。
+
 ## 如何迁移？{#ims-migration-procedure}
 
 ### 先决条件{#ims-migration-prerequisites}
@@ -51,7 +59,7 @@ ht-degree: 1%
 
 完成此迁移后，请向您的Adobe过渡管理器确认：Adobe随后会将迁移标记为完成，并阻止创建新的本机用户和本机用户登录。 然后，您的环境将得到保护和标准化。
 
-## 常见问题解答 {#ims-migration-faq}
+## 常见问题 {#ims-migration-faq}
 
 ### 我何时可以开始迁移？ {#ims-migration-start}
 
@@ -95,9 +103,9 @@ ht-degree: 1%
 
 1. 创建工作流以在CSV文件中提取所有使用本机身份验证模式连接到Campaign的操作员。 使用&#x200B;**查询**&#x200B;活动和&#x200B;**数据提取（文件）**&#x200B;活动创建CSV文件。 对于每个运算符，可以根据其配置文件数据导出以下列：`Name, Label`。
 
-   在[此页面](../../automation/workflow/query.md)中了解有关&#x200B;**查询**&#x200B;活动的更多信息
+   在&#x200B;**此页面**&#x200B;中了解有关[查询](../../automation/workflow/query.md)活动的更多信息
 
-   在[此页面](../../automation/workflow/extraction-file.md)中了解有关&#x200B;**数据提取（文件）**&#x200B;活动的更多信息
+   在&#x200B;**此页面**&#x200B;中了解有关[数据提取（文件）](../../automation/workflow/extraction-file.md)活动的更多信息
 
 1. 使用包含操作员电子邮件的新列更新CSV文件。
 
@@ -109,13 +117,13 @@ ht-degree: 1%
 
    ![](assets/data-loading-activity.png){width="70%"}
 
-   在[此页面](../../automation/workflow/data-loading-file.md)中了解有关&#x200B;**数据加载（文件）**&#x200B;活动的更多信息
+   在&#x200B;**此页面**&#x200B;中了解有关[数据加载（文件）](../../automation/workflow/data-loading-file.md)活动的更多信息
 
 1. 编辑&#x200B;**更新数据**&#x200B;活动并根据以下示例定义设置。 请注意，**更新的维度**&#x200B;已更改为`Operators (xtk)`。
 
    ![](assets/update-data-activity.png){width="70%"}
 
-   在[此页面](../../automation/workflow/update-data.md)中了解有关&#x200B;**更新数据**&#x200B;活动的更多信息
+   在&#x200B;**此页面**&#x200B;中了解有关[更新数据](../../automation/workflow/update-data.md)活动的更多信息
 
 1. 运行工作流并检查结果。 电子邮件地址已添加到操作员的配置文件。
 

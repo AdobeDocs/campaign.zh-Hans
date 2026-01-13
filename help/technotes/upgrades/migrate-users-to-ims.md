@@ -37,7 +37,7 @@ ht-degree: 1%
 >
 >将用户迁移到IMS后，请注意，Adobe Admin Console中名称包含“管理员”一词的任何产品配置文件（如“管理员”、“管理员”、“管理员”、“审批管理员”等）都会自动授予对Campaign控制面板的访问权限。 控制面板是一种自助服务工具，允许对Campaign实例进行重大更改。
 >
->请仔细查看您的产品配置文件命名约定，确保只有授权用户才能访问控制面板。 在[控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}中了解有关管理控制面板权限的详细信息。
+>请仔细查看您的产品配置文件命名约定，确保只有授权用户才能访问控制面板。 在[控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans){target="_blank"}中了解有关管理控制面板权限的详细信息。
 
 ## 如何迁移？{#ims-migration-procedure}
 

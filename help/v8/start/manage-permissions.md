@@ -107,7 +107,7 @@ Adobe Campaign附带在Adobe启用您的环境时定义的内置&#x200B;**产品
 
    >[!IMPORTANT]
    >
-   >**[!UICONTROL Administrator]**&#x200B;角色授予对Campaign控制面板的访问权限。 Adobe Admin Console中的任何产品配置文件在其名称中包含“管理员”一词（如“管理员”、“管理员”、“管理员”、“审批管理员”等），均将授予对控制面板的访问权限。 了解有关[管理控制面板访问权限](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}的更多信息。
+   >**[!UICONTROL Administrator]**&#x200B;角色授予对Campaign控制面板的访问权限。 Adobe Admin Console中的任何产品配置文件在其名称中包含“管理员”一词（如“管理员”、“管理员”、“管理员”、“审批管理员”等），均将授予对控制面板的访问权限。 了解有关[管理控制面板访问权限](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans){target="_blank"}的更多信息。
 
 1. **[!UICONTROL Delivery operators]** （投放）
 

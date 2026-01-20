@@ -50,7 +50,7 @@ ht-degree: 0%
 
 **上下文：**&#x200B;客户驱动(H&amp;M)，ACS到ACC奇偶校验要求
 
-**引用：** [ACS文档](https://experienceleague.adobe.com/en/docs/campaign-standard/using/testing-and-sending/scheduling-messages/computing-the-sending-date)
+**引用：** [ACS文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-standard/using/testing-and-sending/scheduling-messages/computing-the-sending-date)
 
 &#x200B;---
 
@@ -134,7 +134,7 @@ Web Analytics集成允许连接到Web Analytics平台，以便跟踪和报告营
 
 **上下文：** Microsoft要求，工作已转移到喜曼舒的团队
 
-**引用：** [ACS文档](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-experience-manager/creating-multilingual-email-aem.html)
+**引用：** [ACS文档](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-experience-manager/creating-multilingual-email-aem.html?lang=zh-Hans)
 
 &#x200B;---
 
@@ -201,7 +201,7 @@ OOTB文件上传功能，用于通过CSV导入创建多语言推送通知投放�
 
 **上下文：**&#x200B;客户驱动(H&amp;M)，ACS到ACC奇偶校验，对于迁移至关重要
 
-**引用：** [ACS文档](https://experienceleague.adobe.com/en/docs/campaign-standard/using/communication-channels/push-notifications/generating-csv-multilingual-push)
+**引用：** [ACS文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-standard/using/communication-channels/push-notifications/generating-csv-multilingual-push)
 
 &#x200B;---
 
@@ -278,7 +278,7 @@ OOTB文件上传功能，用于通过CSV导入创建多语言推送通知投放�
 
 **上下文：**&#x200B;客户驱动(Pierre Fabre)，Microsoft要求，开发完成和正在测试
 
-**引用：** [经典文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval)，[Figma模拟](https://www.figma.com/design/r2vpqXoVyI3aucKgkt8TLN/Approvals)
+**引用：** [经典文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/orchestrating-campaigns/orchestrate-campaigns/marketing-campaign-approval)，[Figma模拟](https://www.figma.com/design/r2vpqXoVyI3aucKgkt8TLN/Approvals)
 
 &#x200B;---
 

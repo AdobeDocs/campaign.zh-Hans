@@ -92,7 +92,7 @@ ht-degree: 96%
 
 1. **我可以与 Campaign 专家联系吗？**
 
-   加入 Campaign 社区：在现有问题中搜索答案或询问专家。[加入对话](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
+   加入 Campaign 社区：在现有问题中搜索答案或询问专家。[加入对话](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=zh-Hans){target="_blank"}
 
 
 1. **如何记录问题？**

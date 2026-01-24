@@ -21,7 +21,7 @@ ht-degree: 11%
 **需要版本帮助？**&#x200B;检查[升级](#upgrades)以了解版本信息和升级过程。\
 **从v7或Standard迁移？**&#x200B;请参阅[Campaign v8与先前版本](#v7-differences)的差异和过渡指南。\
 **需要技术帮助？**&#x200B;检查[开发人员](#developers)和[促销活动设置](#settings)。\
-**找不到您的答案？**&#x200B;访问我们的[社区论坛](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}或[联系支持人员](#get-help)。
+**找不到您的答案？**&#x200B;访问我们的[社区论坛](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=zh-Hans){target="_blank"}或[联系支持人员](#get-help)。
 
 **提示：**&#x200B;使用Ctrl+F(在Mac上按Cmd+F)搜索此页面上的特定关键字。 单击任意问题以展开答案。
 
@@ -161,7 +161,7 @@ Campaign提供了多种定位方法以便为消息选择正确的受众：
 
 需要具有正确权限的个人帐户。 如果您无法登录，请通过Experience League请求访问权限。 [了解详情](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
 
-或者，加入[Campaign社区](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}以搜索答案或咨询专家。
+或者，加入[Campaign社区](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=zh-Hans){target="_blank"}以搜索答案或咨询专家。
 
 +++
 
@@ -248,7 +248,7 @@ Adobe Campaign 会定期更新。每年都会发布包含新功能、改进和�
 * **Adobe代表** — 在新版本可用时直接联系您
 * **发行说明** - [Campaign发行说明](release-notes.md)中记录的所有版本和更改
 * **Adobe优先产品更新** - [订阅](https://www.adobe.com/cn/subscription/priority-product-update.html){target="_blank"}电子邮件通知
-* **Campaign社区** — 加入[讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}了解早期更新
+* **Campaign社区** — 加入[讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=zh-Hans){target="_blank"}了解早期更新
 
 作为托管Cloud Services用户，Adobe可处理升级并协调与您之间的计时。
 
@@ -384,7 +384,7 @@ Campaign v8是Adobe的平台，非常适合需要大量促销活动（每小时2
 
 **快速入门：**&#x200B;请联系您的Adobe代表以评估您的环境，并使用Adobe Professional Services制定详细的迁移计划。
 
-了解有关[迁移到Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"}的更多信息，包括挑战、最佳实践和详细的迁移路线图。
+了解有关[迁移到Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605?profile.language=zh-Hans){target="_blank"}的更多信息，包括挑战、最佳实践和详细的迁移路线图。
 
 +++
 
@@ -1755,8 +1755,8 @@ Campaign的审核记录会记录删除事件和新用户档案的创建，以展
 
 与其他Campaign用户和Adobe专家联系，分享知识并获得答案。
 
-* **[Adobe Campaign社区](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}** — 提问、共享解决方案并与Campaign社区建立联系
-* **[Experience League论坛](https://experienceleaguecommunities.adobe.com/){target="_blank"}** — 浏览所有Adobe产品的讨论
+* **[Adobe Campaign社区](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=zh-Hans){target="_blank"}** — 提问、共享解决方案并与Campaign社区建立联系
+* **[Experience League论坛](https://experienceleaguecommunities.adobe.com/?profile.language=zh-Hans){target="_blank"}** — 浏览所有Adobe产品的讨论
 * **[Campaign社区办公时间](https://experienceleague.adobe.com/zh-hans){target="_blank"}** — 与Adobe专家一起参加实时会议
 
 ### 文档与学习

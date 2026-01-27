@@ -5,9 +5,9 @@ feature: Transactional Messaging
 role: User
 level: Intermediate
 exl-id: 2f679d1c-4eb6-4b3c-bdc5-02d3dea6b7d3
-source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
+source-git-commit: 6693bb8a62c0d126b871dc24a75b76de71b86f8d
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 此部分详细介绍与事务性消息模块架构关联的SOAP方法。
 
-两个&#x200B;**PushEvent**&#x200B;或&#x200B;**PushEvents** SOAP方法链接到两个&#x200B;**nms：rtEvent**&#x200B;和&#x200B;**nms：BatchEvent**&#x200B;数据架构。 它是确定事件是“批处理”还是“实时”类型的信息系统。
+两个&#x200B;**PushEvent**&#x200B;或&#x200B;**PushEvents** SOAP方法链接到两个&#x200B;**nms:rtEvent**&#x200B;和&#x200B;**nms:BatchEvent**&#x200B;数据架构。 它是确定事件是“批处理”还是“实时”类型的信息系统。
 
 * **PushEvent**&#x200B;允许您在消息中插入单个事件，
 * **PushEvents**&#x200B;允许您在消息中插入一系列事件。
@@ -100,13 +100,13 @@ ht-degree: 0%
 </urn:PushEvents>
 ```
 
-**`<rtevent>`**&#x200B;和&#x200B;**`<batchevent>`**&#x200B;元素具有一组属性以及一个用于集成消息数据的强制性子元素： **`<ctx>`**。
+**`<rtevent>`**&#x200B;和&#x200B;**`<batchEvent>`**&#x200B;元素具有一组属性以及一个用于集成消息数据的强制性子元素： **`<ctx>`**。
 
 >[!NOTE]
 >
->通过&#x200B;**`<batchevent>`**&#x200B;元素，可将事件添加到“批处理”队列。 **`<rtevent>`**&#x200B;将该事件添加到“实时”队列。
+>通过&#x200B;**`<batchEvent>`**&#x200B;元素，可将事件添加到“批处理”队列。 **`<rtevent>`**&#x200B;将该事件添加到“实时”队列。
 
-**`<rtevent>`**&#x200B;和&#x200B;**`<batchevent>`**&#x200B;元素的必需属性为@type和@email。 @type的值必须与配置执行实例时定义的明细列表值相同。 此值允许您定义在投放期间链接到事件内容的模板。
+**`<rtevent>`**&#x200B;和&#x200B;**`<batchEvent>`**&#x200B;元素的必需属性为@type和@email。 @type的值必须与配置执行实例时定义的明细列表值相同。 此值允许您定义在投放期间链接到事件内容的模板。
 
 `<rtevent> configuration example:`
 
@@ -122,7 +122,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**nms：rtEvent**&#x200B;和&#x200B;**nms：BatchEvent**&#x200B;数据架构的描述中提供了所有授权属性及其值的详细说明。
+>**nms:rtEvent**&#x200B;和&#x200B;**nms:BatchEvent**&#x200B;数据架构的描述中提供了所有授权属性及其值的详细说明。
 
 **`<ctx>`**&#x200B;元素包含消息数据。 其XML内容是开放的，这意味着可以根据要交付的内容对其进行配置。
 

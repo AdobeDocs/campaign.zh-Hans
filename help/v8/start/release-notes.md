@@ -3,10 +3,10 @@ title: Campaign v8 发行说明
 description: 最新 Campaign v8 版本
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: d31368428fc7d5b982bb5fc67d0369bb17ea0b2c
+source-git-commit: e5e08dcd1813c8eba608ba3a7b659dcd6d98d985
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 23%
+source-wordcount: '688'
+ht-degree: 22%
 
 ---
 
@@ -14,45 +14,72 @@ ht-degree: 23%
 
 此页面列出了 Campaign v8（控制台）**最新版本**&#x200B;中的新增功能、改进和修复。要详细了解 Campaign 版本和升级，请参阅[此页面](upgrades.md)。其他版本列于本文档的先前版本部分。
 
-## 版本 8.8.2 {#release-8-8-2}
+## 版本 8.9.1 {#release-8-9-1}
 
-_2025年10月9日_
+_2026 年 1 月 27 日_
 
->[!AVAILABILITY]
+>[!CAUTION]
 >
->此版本为&#x200B;**限量发布版** (LA)。
+> 必须升级客户端控制台。在[此页面](../start/connect.md#upgrade-ac-console)中了解如何升级您的客户端控制台。
 
-### 新增功能 {#features-8-8-2}
+### 新增功能 {#new-8-9-1}
 
-**新SMS发送连接器**&#x200B;现在可用于[Campaign FFDA部署](../architecture/enterprise-deployment.md)。 请参阅[详细文档](../send/sms/sms.md)。
+**新SMS发送连接器**&#x200B;现在可供所有客户使用(GA)。 请参阅[详细文档](../send/sms/sms.md)。
 
-此版本还随附了一组可在Campaign Web用户界面中使用的功能：
+此版本附带了一组可在Campaign Web用户界面中使用的功能：
 
-* [事务性消息中的用户档案扩充](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=zh-Hans){target="_blank"}
-* [事务性消息传递、推送通知和短信的多语言功能](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=zh-Hans){target="_blank"}
+* 多语言交付功能(GA)
+* 事务性消息中的用户档案扩充(GA)
+* Adobe Experience Manager实时和语言副本
+* 内容实验 — A/B测试
+* 连续投放活动
 
 请参阅Campaign Web UI [发行说明](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=zh-hans){target="_blank"}
 
-### 修复 {#fixes-8-8-2}
+### 安全性改进 {#security-8-9-1}
 
-<!--
-* Fixed an issue which prevented dynamic reporting from being available for transactional messages.
--->
-* 修复了可能导致数据库清理工作流失败的问题。 (NEO-87949)
-* 修复了分布式营销中存在的一个问题，即协作营销活动投放的跟踪数据未记录。 (NEO-86836)
-<!--
-* Issue SMS2.0 with FFDA Continuous Deliveries (NEO-88785)
--->
-* 修复了可能导致片段中的个性化无法正常运行的问题。 (NEO-88161)
-* 修复了在迁移到新的Redshift ODBC连接器后，可能导致拆分工作流活动失败并出现SQL错误的问题。 (NEO-87466)
-* 修复了可能导致工作流中排除计数不准确的问题。 (NEO-89207)
-* 修复了可能导致推送通知的点击指示器不准确的问题。 (NEO-89503)
-* 修复了短信投放日志更新不正确的问题，从而导致Adobe Campaign中无法准确报告状态。 (NEO-88479)
-* 修复了投放内容中法语引号被错误地转换为英语引号的问题。 (NEO-89631)
-* 修复了实时服务器为无效的IMS令牌返回错误响应代码的问题。 (NEO-87428)
-* 修复了电子邮件和短信的投放统计信息未完全重新计算，从而导致成功指标不准确的问题。 (NEO-88106)
-* 修复了新的SMS发送连接器问题，该问题导致投放日志错误地为一小部分消息分配投放状态。 (NEO-89581)
-* 修复了新的SMS发送连接器的问题，该问题导致成功量度投放在营销和中间服务器上未正确更新。 (NEO-89850)
-* 修复了实时实例和营销实例之间的同步问题，该问题导致跟踪日志丢失和报告不正确。 (NEO-90247)
-* 修复了在自定义架构中选择两个连续1-N链接中的字段时可能导致错误的工作流扩充问题。 (NEO-87682)
+* Snowflake外部帐户现在支持OAuth2身份验证，为联合数据访问连接提供现代且安全的身份验证方法。 (NEO-87013)
+* 通过限制对授权目录的操作、防止未经授权的访问和潜在的远程代码执行，修复了工作流文件访问漏洞。 (NEO-88460)
+* 向工作流JavaScript代码活动添加了FTP URL列入允许列表控制，将出站FTP连接限制为仅访问授权的地址。 (NEO-89083)
 
+### 其他变更 {#changes-8-9-1}
+
+* 通过在高内存条件下实施自动工作流节流，以及针对非关键进程的智能工作流重新启动功能和内存护栏，改进了容器内存管理。 (NEO-89041)
+* 在Campaign工作流中添加了对非对称加密和解密功能的支持。 (NEO-80257)
+* 增强了FFDA部署中大型数据上传的复制代理性能和内存恢复能力。 (NEO-88430)
+
+
+### 修复 {#fixes-8-9-1}
+
+* 修复了按某些列分组时，动态报告显示不正确计数的问题。 (NEO-86898)
+* 解决了动态报表与实际促销活动数据之间的数据差异问题。 (NEO-88068)
+* 修复了PostgreSQL“char”字段类型导致查询意外结果的连接问题。 (NEO-87769)
+* 更正了JavaScript logInfo命令未正确处理某些参数的问题。 (NEO-88263)
+* 解决了消息中心实时事件处理中的同步挂起问题。 (NEO-88330)
+* 修复了可视编辑器自动重新格式化HTML内容，从而导致布局更改的问题。 (NEO-88409)
+* 修复了重复数据删除活动无法正确处理临时架构的问题。 (NEO-88577)
+* 修复了在发送校样时阻止生成种子地址的问题。 (NEO-88720)
+* 通过优化分区列处理，改进了PostgreSQL查询性能。 (NEO-88771)
+* 解决了文件传输活动无法正确处理行连续字符的问题。 (NEO-88812)
+* 增强了PostgreSQL查询优化，可在大型数据集中提高性能。 (NEO-88885)
+* 修复了阻止打开混合营销活动的“权限被拒绝”错误。 (NEO-88955)
+* 扩展了对条形码功能的支持，可处理较长的文本字符串。 (NEO-88958)
+* 更正了在将验证与定期投放结合使用时发生的活动日志错误。 (NEO-88976)
+* 修复了在某些情况下影响电子邮件发送操作的问题。 (NEO-89019)
+* 解决了工作流启动模式意外地从立即更改为正常的问题。 (NEO-89025)
+* 修复了在特定条件下运行更新数据活动时发生的错误。 (NEO-89031)
+* 更正了更新数据活动丢失自定义架构元数据的问题。 (NEO-89056)
+* 修复了投放准备期间发生的验证错误。 (NEO-89063)
+* 解决了查询包含1-1链接关系上的过滤器时的无效SQL生成问题。 (NEO-89065)
+* 修复了增量查询活动未遵循配置的大小限制的问题。 (NEO-89066)
+* 改进了FFDA部署中用于大规模操作的工作流性能。 (NEO-89098)
+* 增强了工作流进程的内存管理和稳定性。 (NEO-89105)
+* 为Web窗体启用了严格的列验证，以防止数据不一致。 (NEO-89111)
+* 解决了导致处理延迟的消息中心同步问题。 (NEO-89138)
+* 修复了“刷新可投放性”工作流中阻止正确执行的错误。 (NEO-89160)
+* 更正了在工作流中执行JavaScript代码活动时发生的错误。 (NEO-89169)
+* 已删除硬编码的Snowflake仓库配置，以允许进行适当的外部帐户设置。 (NEO-89201)
+* 修复了在工作流文件传输操作期间发生的403禁止错误。 (NEO-89226)
+* 优化了FFDA部署中收件人表的慢查询。 (NEO-89268)
+* 修复了增量查询活动忽略已配置计划的问题。 (NEO-89317)
+* 解决了在混合环境中打开营销活动时的访问错误。 (NEO-89320)

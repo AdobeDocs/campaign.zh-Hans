@@ -126,7 +126,7 @@ Web - * **Captcha in landing pages** - You can now add captcha to protect your l
 ACC * Rich Push Notification templates - You can now send rich push notifications via Android. Rich push notification is an enhanced form of mobile notification that goes beyond simple text messages by incorporating multimedia elements such as images, interactive buttons, or other rich media content. Read more.
 -->
 
-以前以Limited Availability发布，现在以下功能可按需使用&#x200B;****：
+以前以Limited Availability发布，现在以下功能可按需使用&#x200B;**&#x200B;**：
 
 <!--
 * **Dynamic Reporting** - You can now access Dynamic Reporting which provides fully customizable and real-time reports to measure the impact of your marketing activities. It adds access to profile data, enabling demographic analysis by profile dimensions such as gender, city and age in addition to functional email campaign data like opens and clicks. Dynamic reporting is also available for multilingual email deliveries and transactional messages. [Read more](https://experienceleague.adobe.com/docs/experience-cloud/campaign/reporting/get-started-reporting.html){target="_blank"}

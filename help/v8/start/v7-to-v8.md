@@ -5,7 +5,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 00ba1c43-9558-4adb-83a1-6597c2bbca62
-source-git-commit: 061197048885a30249bd18af7f8b24cb71def742
+source-git-commit: 334b327c7798c78fcfa90e90afe04896959037eb
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 76%
@@ -55,11 +55,11 @@ Campaign v8依赖于&#x200B;**混合架构**。 请注意，如果从Campaign Cl
 
 ## [!DNL Campaign] 和 [!DNL Snowflake] {#ac-gs-snowflake}
 
-在其[企业(FFDA)部署](../architecture/enterprise-deployment.md)中，[!DNL Adobe Campaign] v8可与两个数据库配合使用：用于用户界面实时消息传递和统一查询、通过API写入的本地[!DNL Campaign]数据库，以及用于活动执行、批量查询和工作流执行的云[!DNL Snowflake]数据库。
+在其[企业(FFDA)部署](../../v8/architecture/enterprise-deployment.md)中，[!DNL Adobe Campaign] v8可与两个数据库配合使用：用于用户界面实时消息传递和统一查询、通过API写入的本地[!DNL Campaign]数据库，以及用于活动执行、批量查询和工作流执行的云[!DNL Snowflake]数据库。
 
 Campaign v8 企业版引入了&#x200B;**完全联合数据访问** (FFDA) 概念：所有数据现在都位于云数据库上的远程位置。凭借这种新架构，Campaign v8 企业版 (FFDA) 部署简化了数据管理：云数据库上不需要索引。您只需创建表格、复制数据即可开始。云数据库技术无需特定的维护来保证性能级别。
 
-在[!DNL Campaign]此页面[中了解有关](../architecture/architecture.md) v8架构的更多信息。
+在[!DNL Campaign]此页面[中了解有关](../../v8/architecture/architecture.md) v8架构的更多信息。
 
 
 ## 使用 Adobe ID 连接到 Campaign{#adobe-id}
@@ -76,7 +76,7 @@ Campaign 用户仅可通过其 Adobe ID 进行连接。可使用同一个 Adobe 
 
 ## 不可用功能{#gs-unavailable-features}
 
-请注意，某些功能在 Campaign 的[企业 (FFDA) 部署](../architecture/enterprise-deployment.md)的环境下不可用，例如：
+请注意，某些功能在 Campaign 的[企业 (FFDA) 部署](../../v8/architecture/enterprise-deployment.md)的环境下不可用，例如：
 
 * 营销资源管理
 * 产品建议券

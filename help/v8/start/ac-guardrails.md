@@ -5,7 +5,7 @@ feature: Configuration
 role: User
 level: Beginner
 exl-id: 50c254ba-cc33-49b2-b7d5-12aa69883c07
-source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
+source-git-commit: 631c4986d24daeff870412566318adb170ce040f
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 77%
@@ -22,7 +22,7 @@ ht-degree: 77%
 
 * Adobe Campaign v8 不适用于内部部署/混合部署 - 仅作为一项 Adobe 托管云服务发布
 * 现有客户无法自动迁移到 Adobe Campaign v8
-* 采用[企业版 (FFDA) 部署](../architecture/enterprise-deployment.md)时，不提供双向数据复制：仅能从 Campaign 本地数据库复制到云数据库
+* 采用[企业版 (FFDA) 部署](../../v8/architecture/enterprise-deployment.md)时，不提供双向数据复制：仅能从 Campaign 本地数据库复制到云数据库
 * [此部分](v7-to-v8.md#gs-unavailable-features)列出的功能在当前 Campaign v8 内部版本中不可用
 * 用户界面中仍显示某些不可用或已删除的功能
 * 采用[企业版 (FFDA) 部署](../architecture/enterprise-deployment.md)时，订阅（选择启用）和退订（选择禁用）机制以及移动设备注册是异步流程。请求是每小时通过特定的技术工作流处理的。[了解详情](../architecture/replication.md#tech-wf)

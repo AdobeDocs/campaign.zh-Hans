@@ -3,10 +3,10 @@ title: Campaign v8 发行说明
 description: 最新 Campaign v8 版本
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: 981fa2029528cac5806da7c39aec3a2e6de0bf56
+source-git-commit: 4fe8b8eaf88f763e796dbe06ef3c1477de12bad6
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 21%
+source-wordcount: '921'
+ht-degree: 18%
 
 ---
 
@@ -28,12 +28,12 @@ _2026 年 1 月 27 日_
 
 此版本附带了一组可在Campaign Web用户界面中使用的功能：
 
-* [多语言传递功能(GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=zh-Hans){target="_blank"}
-* [事务性消息中的用户档案扩充(GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=zh-Hans){target="_blank"}
-* [Adobe Experience Manager实时副本和语言副本](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=zh-Hans){target="_blank"}
-* [内容实验 — A/B测试](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html?lang=zh-Hans){target="_blank"}
-* [持续传递活动](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html?lang=zh-Hans){target="_blank"}
-* [营销活动审批管理](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html?lang=zh-Hans){target="_blank"}
+* [多语言传递功能(GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
+* [事务性消息中的用户档案扩充(GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
+* [Adobe Experience Manager实时副本和语言副本](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html){target="_blank"}
+* [内容实验 — A/B测试](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html){target="_blank"}
+* [持续传递活动](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
+* [营销活动审批管理](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
 
 请参阅Campaign Web UI [发行说明](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=zh-hans){target="_blank"}
 
@@ -52,36 +52,43 @@ _2026 年 1 月 27 日_
 
 ### 修复 {#fixes-8-9-1}
 
-* 修复了按某些列分组时，动态报告显示不正确计数的问题。 (NEO-86898)
-* 解决了动态报表与实际促销活动数据之间的数据差异问题。 (NEO-88068)
-* 修复了PostgreSQL“char”字段类型导致查询意外结果的连接问题。 (NEO-87769)
-* 更正了JavaScript logInfo命令未正确处理某些参数的问题。 (NEO-88263)
-* 解决了消息中心实时事件处理中的同步挂起问题。 (NEO-88330)
-* 修复了可视编辑器自动重新格式化HTML内容，从而导致布局更改的问题。 (NEO-88409)
-* 修复了重复数据删除活动无法正确处理临时架构的问题。 (NEO-88577)
-* 修复了在发送校样时阻止生成种子地址的问题。 (NEO-88720)
-* 通过优化分区列处理，改进了PostgreSQL查询性能。 (NEO-88771)
-* 解决了文件传输活动无法正确处理行连续字符的问题。 (NEO-88812)
-* 增强了PostgreSQL查询优化，可在大型数据集中提高性能。 (NEO-88885)
-* 修复了阻止打开混合营销活动的“权限被拒绝”错误。 (NEO-88955)
-* 扩展了对条形码功能的支持，可处理较长的文本字符串。 (NEO-88958)
-* 更正了在将验证与定期投放结合使用时发生的活动日志错误。 (NEO-88976)
-* 修复了在某些情况下影响电子邮件发送操作的问题。 (NEO-89019)
-* 解决了工作流启动模式意外地从立即更改为正常的问题。 (NEO-89025)
-* 修复了在特定条件下运行更新数据活动时发生的错误。 (NEO-89031)
-* 更正了更新数据活动丢失自定义架构元数据的问题。 (NEO-89056)
-* 修复了投放准备期间发生的验证错误。 (NEO-89063)
-* 解决了查询包含1-1链接关系上的过滤器时的无效SQL生成问题。 (NEO-89065)
-* 修复了增量查询活动未遵循配置的大小限制的问题。 (NEO-89066)
-* 改进了FFDA部署中用于大规模操作的工作流性能。 (NEO-89098)
-* 增强了工作流进程的内存管理和稳定性。 (NEO-89105)
-* 为Web窗体启用了严格的列验证，以防止数据不一致。 (NEO-89111)
-* 解决了导致处理延迟的消息中心同步问题。 (NEO-89138)
-* 修复了“刷新可投放性”工作流中阻止正确执行的错误。 (NEO-89160)
-* 更正了在工作流中执行JavaScript代码活动时发生的错误。 (NEO-89169)
-* 已删除硬编码的Snowflake仓库配置，以允许进行适当的外部帐户设置。 (NEO-89201)
-* 修复了在工作流文件传输操作期间发生的403禁止错误。 (NEO-89226)
-* 优化了FFDA部署中收件人表的慢查询。 (NEO-89268)
-* 修复了增量查询活动忽略已配置计划的问题。 (NEO-89317)
-* 解决了在混合环境中打开营销活动时的访问错误。 (NEO-89320)
+* 修复了在sysFilter更改后无法更新数据库结构的问题。 (NEO-93306)
+* 解决了迁移后动态报表数据缺失的问题。 (NEO-92962)
+* 修复了投放状态未正确更新的问题。 (NEO-92908)
+* 添加了有关Databricks FDA使用目录限制的解决方法。 (NEO-92900)
+* 修复了可视编辑器在Outlook Windows桌面中破坏HTML布局的问题。 (NEO-92611)
+* 解决了升级后在中间实例上复制投放主键的严重数据完整性问题。 (NEO-92424)
+* 修复了在投放的“跟踪和图像”对话框中无法禁用链接的问题。 (NEO-92381)
+* 更正了nms.subscription.RecipientSubscribe()函数不适用于批量订阅的问题。 (NEO-92308)
+* 解决了升级后由于缺少投放部分而导致投放失败的问题。 (NEO-92278)
+* 修复了跟踪工作流中的问题。 (NEO-92239)
+* 解决了使用工作流创建列表后，列表XML中缺少临时枚举引用的问题。 (NEO-91158)
+* 修复了RT发布/取消发布对话框未关闭并冻结的问题。 (NEO-91038)
+* 解决了处于“服务提供商已考虑”状态的收件人未达到Momentum的问题。 (NEO-90927)
+* 修复了v8中缺少选择退出链接的（取消）订阅源的问题。 (NEO-90714)
+* 更正了添加优惠券失败投放准备的问题。 (NEO-90547)
+* 修复了“Audit”（审核）选项卡中未准确显示“Insert Reject Count”（插入拒绝计数）的问题。 (NEO-90318)
+* 解决了可能导致应用程序拒绝服务的安全问题。 (NEO-89984)
+* 修复了下载的热点击报表的PDF损坏的问题。 (NEO-89954)
+* 解决了升级后发生的SSL错误，该错误会导致读取错误时出现意外EOF。 (NEO-89108)
+* 修复了升级后数据架构中无法查询数据的问题。 (NEO-88663)
+* 更正了在PostgreSQL 15中连接“char”字段时发生的错误。 (NEO-88028)
+* 修复了在保存或复制模板时投放模板变量的顺序发生更改的问题。 (NEO-87845)
+* 解决了创建新的数据库架构导致Web界面崩溃的问题。 (NEO-87816)
+* 修复了重复数据删除活动的补充集段代码无法正常工作的问题。 (NEO-87711)
+* 解决了没有X11依赖关系的安装包请求。 (NEO-87471)
+* 修复了无法在动态报告中使用区段代码的问题。 (NEO-87276)
+* 解决了工作流在更新数据活动中卡住的问题。 (NEO-87252)
+* 修复了BigQuery使用错误时区的问题。 (NEO-86622)
+* 更正了在评估脚本“mcSynch_mcExec1/jsReplicateUrl”时发生的JavaScript错误。 (NEO-86553)
+* 解决了由于标识符计算方法而在eventHisto表中显示重复事件的问题。 (NEO-86544)
+* 修复了复制时未为iOS推送显示高级选项卡的问题。 (NEO-86231)
+* 解决了复制引用表工作流在复制nms:delivery架构时失败的问题。 (NEO-85884)
+* 修复了在发送投放时，错误日志中显示与MXIP地址对应的Null域错误的问题。 (NEO-85238)
+* 添加了在对选项进行任何更改后刷新技术投放模板的方法。 (NEO-84149)
+* 修复了现成计费工作流中的错误。 (NEO-83624)
+* 解决了仅根据目标记录的主键排除重复项的问题。 (NEO-82910)
 * 修复了Campaign Web UI报表中的差异，在这些报表中，跟踪统计信息显示的值与控制台的值不同。 现在，“跟踪指示器”、“发送摘要”和“URL点击流”报表在两个界面上显示一致的量度。 (NEO-82339)
+* 更正了即使不应在更新数据活动中更新记录，上次修改日期也更改的问题。 (NEO-82002)
+* 修复了在列表中添加新属性导致工作流读取列表失败的问题。 (NEO-80258)
+* 解决了跟踪指标报表中的异常问题。 (NEO-79466)

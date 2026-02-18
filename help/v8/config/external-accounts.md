@@ -5,9 +5,9 @@ feature: Application Settings, External Account
 role: Admin
 level: Beginner, Intermediate, Experienced
 exl-id: 9634b576-2854-4ea9-ba0d-8efaab2c4aee
-source-git-commit: a0aadd7e991dcceb5646f0afbc9cb1534e459e2c
+source-git-commit: 776a0e5eead9161b7e2c9d7746c72cba42ea42cb
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1280'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
 **退回邮件**&#x200B;外部帐户指定要用于连接到电子邮件服务的外部POP3帐户。 所有配置为POP3访问的服务器都可以接收回邮。
 
-在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=zh-Hans){target="_blank"}中了解有关入站电子邮件的更多信息。
+在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}中了解有关入站电子邮件的更多信息。
 
 ![](assets/bounce_external_1.png)
 
@@ -66,7 +66,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
 >[!CAUTION]
 >
->在使用Microsoft OAuth 2.0配置POP3外部帐户之前，您首先需要在Azure门户中注册应用程序。 有关详细信息，请参见此 [&#x200B; 页面](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}。
+>在使用Microsoft OAuth 2.0配置POP3外部帐户之前，您首先需要在Azure门户中注册应用程序。 有关详细信息，请参见此 [ 页面](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}。
 >
 
 要使用Microsoft OAuth 2.0配置POP3外部连接，请选中&#x200B;**[!UICONTROL Microsoft OAuth 2.0]**&#x200B;选项并填写以下字段：
@@ -101,7 +101,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 >
 >与Adobe Campaign v8兼容的外部数据库列在[兼容性矩阵](../start/compatibility-matrix.md)中。 FDA连接使用ODBC驱动程序；使用Adobe Campaign Managed Cloud Services时，ODBC驱动程序和外部帐户配置由Adobe设置。
 
-外部帐户配置设置取决于数据库引擎。 使用Adobe Campaign Managed Cloud Services时，外部帐户配置由Adobe执行。 有关此配置的更多信息，请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}。
+外部帐户配置设置取决于数据库引擎。 使用Adobe Campaign Managed Cloud Services时，外部帐户配置由Adobe执行。 有关此配置的更多信息，请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}。
 
 #### 数据库外部帐户 {#databricks-external-accounts}
 
@@ -113,7 +113,7 @@ Databricks FDA连接使用Databricks ODBC驱动程序。 从Campaign v8.9.1开�
 
 1. Databricks Workspace管理员启用Databricks Workspace上的服务主体并生成凭据。 要授权使用OAuth访问您的Azure数据库资源，请创建一个OAuth密钥（用于生成用于身份验证的OAuth访问令牌）。
 2. 在Adobe Campaign中，创建或编辑Databriks外部帐户，然后打开&#x200B;**OAuth**&#x200B;选项卡。
-3. 将凭据粘贴到Databriks外部帐户的OAuth选项卡的&#x200B;**Secret**&#x200B;字段中。
+3. 将凭据粘贴到Databriks外部帐户的OAuth选项卡的字段中。
 4. 使用&#x200B;**[!UICONTROL Test the connection]**&#x200B;验证配置。
 
 ### X（以前称为Twitter） {#twitter-external-account}
@@ -137,7 +137,7 @@ Databricks FDA连接使用Databricks ODBC驱动程序。 从Campaign v8.9.1开�
 
 ## 传输数据外部帐户 {#transfer-data-external-accounts}
 
-这些外部帐户可用于通过&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动将数据导入或导出到Adobe Campaign。 在&#x200B;**此页面**&#x200B;中了解有关工作流中[文件传输](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=zh-Hans){target="_blank"}的更多信息。
+这些外部帐户可用于通过&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动将数据导入或导出到Adobe Campaign。 在&#x200B;**此页面**&#x200B;中了解有关工作流中[文件传输](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}的更多信息。
 
 * **FTP和SFTP** - **FTP**&#x200B;外部帐户允许您配置和测试对Adobe Campaign外部服务器的访问。 要与外部系统（如用于文件传输的SFTP或FTP服务器）建立连接，您可以创建自己的外部帐户。
 
@@ -145,7 +145,7 @@ Databricks FDA连接使用Databricks ODBC驱动程序。 从Campaign v8.9.1开�
 
   >[!NOTE]
   >
-  >从版本8.5开始，您现在可以在配置SFTP外部帐户时使用私钥安全进行身份验证。 [了解有关密钥管理的更多信息](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html?lang=zh-Hans){target="_blank"}。
+  >从版本8.5开始，您现在可以在配置SFTP外部帐户时使用私钥安全进行身份验证。 [了解有关密钥管理的更多信息](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html){target="_blank"}。
 
 * **Amazon Simple Storage Service (S3)** - **AWS S3**&#x200B;连接器可用于通过&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动将数据导入或导出到Adobe Campaign。 在设置此新外部帐户时，您需要提供以下详细信息：
 

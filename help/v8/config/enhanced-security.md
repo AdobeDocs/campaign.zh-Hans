@@ -1,19 +1,21 @@
 ---
 title: Campaign增强的安全加载项
-description: Campaign增强安全性加载项入门
+description: Campaign增强型安全加载项的安全配置指南
 feature: Configuration
 role: Developer
 level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
-source-git-commit: 3f36d7c425dd5a9a13e1de7a77371b29a462dbea
+source-git-commit: 925f8152d28f60f876c5ef4420064fa0d71cdb9d
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 3%
+source-wordcount: '743'
+ht-degree: 2%
 
 ---
 
 
 # Campaign增强安全性加载项 {#enhanced-security}
+
+此页面是Adobe为Campaign v8公开提供的[推荐的安全配置指南](security.md#public-guidance)的一部分。
 
 为了使网络连接更加安全并为您的资源提供更好的安全性，[!DNL Adobe Campaign]提供了新的&#x200B;**增强安全性**&#x200B;加载项。
 

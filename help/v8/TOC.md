@@ -5,10 +5,10 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: 050612f6d7ab20aed5880454eec9cfc6e5fc18c2
+source-git-commit: 4626d93dea22e0ee458babfd53758c8c63a98ad4
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 88%
+source-wordcount: '840'
+ht-degree: 87%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 88%
    + [已知问题](start/known-issues.md)
    + [兼容性矩阵](start/compatibility-matrix.md)
    + [文档更新](start/documentation-updates.md)
+   + [每月更新报告](../../monthly-updates-report.md)
 + 快速入门 {#new}
    + [Adobe Campaign 入门](start/get-started.md)
    + [关键功能](start/whats-new.md)
@@ -38,18 +39,18 @@ ht-degree: 88%
    + [组件和流程](start/ac-components.md)
    + [从 Campaign Classic v7 到 v8](start/v7-to-v8.md)
    + [从 Campaign Standard 到 v8](start/acs-to-v8.md)
-   + [常见问题](start/campaign-faq-comprehensive.md)
-   + [常见问题](start/campaign-faq.md)
+   + [常见问题解答](start/campaign-faq-comprehensive.md)
+   + [常见问题解答](start/campaign-faq.md)
 + 管理和权限 {#permissions}
    + [权限入门](start/gs-permissions.md)
    + [管理用户权限](start/manage-permissions.md)
    + [添加文件夹权限](start/folder-permissions.md)
    + [控制面板](config/self-service.md)
 + 营销活动管理 {#campaigns}
-   + [营销活动快速入门](start/campaigns.md)
+   + [开始使用营销活动](start/campaigns.md)
    + [营销活动编排文档>](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans)
 + 发送消息 {#send}
-   + [消息功能快速入门](start/gs-message.md)
+   + [开始使用消息功能](start/gs-message.md)
    + [创建您的第一个投放](start/create-message.md)
    + [使用投放模板](send/create-templates.md)
    + [投放最佳实践](start/delivery-best-practices.md)
@@ -178,7 +179,7 @@ ht-degree: 88%
    + [Campaign监控概述](start/monitor.md)
    + [审核记录](reporting/audit-trail.md)
    + 使用报告{#reports}
-      + [报告快速入门](reporting/gs-reporting.md)
+      + [使用入门](reporting/gs-reporting.md)
       + 创建多维数据集{#cubes}
          + [多维数据集入门](reporting/gs-cubes.md)
          + [创建多维数据集](reporting/cube-indicators.md)

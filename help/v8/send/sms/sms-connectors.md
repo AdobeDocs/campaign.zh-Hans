@@ -24,7 +24,7 @@ Adobe Campaign支持使用两个SMS连接器向客户发送SMS消息：
 
 要了解如何从v2连接器受益，请参阅[激活](#activation)部分。
 
-有关旧版SMS连接器配置和用法的详细信息，请参阅[Campaign Classic文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}。
+有关旧版SMS连接器配置和用法的详细信息，请参阅[Campaign Classic文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}。
 
 ## SMS连接器v2 {#sms-connector-v2}
 

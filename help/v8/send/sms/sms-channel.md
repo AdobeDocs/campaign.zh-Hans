@@ -5,20 +5,14 @@ feature: SMS
 role: User
 level: Intermediate
 exl-id: abab6f15-43ea-42fc-817b-8dbd88df82f7
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1343'
 ht-degree: 1%
 
 ---
 
 # 短信渠道特征 {#sms-channel}
-
->[!AVAILABILITY]
->
->此功能适用于所有Campaign FDA环境。 **不**&#x200B;可用于Campaign FFDA部署。 本文档适用于Adobe Campaign v8.7.2及更高版本。 要从旧版短信连接器切换到新版短信连接器，请参阅此[技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/sms-migration){target="_blank"}
->
->对于旧版本，请阅读[Campaign Classic v7文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up){target="_blank"}。
 
 ## 短信类型 {#sms-types}
 

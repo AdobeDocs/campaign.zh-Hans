@@ -3,7 +3,7 @@ keywords: Campaign Classic;home;popular topics
 description: 在Adobe Campaign v8帮助中心查找帮助。 了解Campaign v8的新增功能、改进和修复。
 title: Adobe Campaign v8产品文档
 exl-id: 6010b0f7-baf0-43ba-af9a-b8864f3897ea,9ff16fb1-d3d3-44fe-9016-15abffdbc74e
-source-git-commit: 784c74aaff23dbf1f35c6e8153f90610048e1c07
+source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 90%
@@ -18,7 +18,7 @@ ht-degree: 90%
 
 >[!BEGINTABS]
 
->[!TAB Campaign v8.8版本已上线]
+>[!TAB Campaign v8.9版本已上线]
 
 Adobe Campaign 最新版本现已上线。阅读发行说明以了解更多详细信息。
 

@@ -3,9 +3,9 @@ title: Campaign v8 发行说明
 description: 最新 Campaign v8 版本
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: d18c876de44b367c79abb04a65fce0698ff6ff78
+source-git-commit: 3ce922319646fae03ad7f6757ffdd94804120144
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '1076'
 ht-degree: 18%
 
 ---
@@ -13,6 +13,24 @@ ht-degree: 18%
 # 最新版本 {#latest-release}
 
 此页面列出了 Campaign v8（控制台）**最新版本**&#x200B;中的新增功能、改进和修复。要详细了解 Campaign 版本和升级，请参阅[此页面](upgrades.md)。其他版本列于本文档的先前版本部分。
+
+## 版本 8.9.2 {#release-8-9-2}
+
+_2026年3月9日_
+
+>[!CAUTION]
+>
+> 必须升级客户端控制台。在[此页面](../start/connect.md#upgrade-ac-console)中了解如何升级您的客户端控制台。
+
+### 安全性改进 {#security-8-9-2}
+
+* 为了保持最佳的安全性、稳定性和合规性，所有实例都已升级到Debian 13和PostgreSQL 17。
+
+### 修复 {#fixes-8-9-2}
+
+* 修复了由于数据类型转换问题而导致事务性事件中的事件日期设置不正确，从而导致动态报告中的日期不正确的问题。 (NEO-93923)
+* 修复了标题和正文字段为空时，Android和iOS静默推送通知在投放准备期间失败的问题。 (NEO-93739)
+* 修复了由于协调密钥不正确而导致无法为Android应用程序注册令牌捕获语言字段的问题。 (NEO-93100)
 
 ## 版本 8.9.1 {#release-8-9-1}
 
@@ -28,12 +46,12 @@ _2026 年 1 月 27 日_
 
 此版本附带了一组可在Campaign Web用户界面中使用的功能：
 
-* [多语言传递功能(GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=zh-Hans){target="_blank"}
-* [事务性消息中的用户档案扩充(GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=zh-Hans){target="_blank"}
-* [Adobe Experience Manager实时副本和语言副本](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=zh-Hans){target="_blank"}
-* [内容实验 — A/B测试](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html?lang=zh-Hans){target="_blank"}
-* [持续传递活动](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html?lang=zh-Hans){target="_blank"}
-* [营销活动审批管理](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html?lang=zh-Hans){target="_blank"}
+* [多语言传递功能(GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
+* [事务性消息中的用户档案扩充(GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
+* [Adobe Experience Manager实时副本和语言副本](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html){target="_blank"}
+* [内容实验 — A/B测试](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html){target="_blank"}
+* [持续传递活动](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
+* [营销活动审批管理](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
 
 请参阅Campaign Web UI [发行说明](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=zh-hans){target="_blank"}
 

@@ -1837,7 +1837,7 @@ Campaign的审核记录会记录删除事件和新用户档案的创建，以展
 * **[Adobe Admin Console](https://adminconsole.adobe.com/){target="_blank"}** — 记录支持案例并管理用户
 * **[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}** — 联系支持团队
 * **[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans){target="_blank"}** — 管理您的Campaign实例设置
-* **[系统状态](https://status.adobe.com/){target="_blank"}** — 检查Adobe服务状态
+* **[系统状态](https://status.adobe.com/zh-cn/){target="_blank"}** — 检查Adobe服务状态
 
 ### 培训和认证
 

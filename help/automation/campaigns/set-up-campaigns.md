@@ -61,4 +61,4 @@ In addition, the **Marketing Resource Management (MRM)** module lets you control
 
 此视频介绍营销活动的主要概念。
 
->[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/326575?captions=chi_hans&quality=12)

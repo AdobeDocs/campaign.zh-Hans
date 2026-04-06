@@ -6,10 +6,10 @@ role: User
 level: Beginner, Intermediate
 version: Campaign v8, Campaign Classic v7
 exl-id: 3b15eb3e-8625-4049-bf0d-327407ae5ea6
-source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
@@ -23,8 +23,10 @@ ht-degree: 4%
 
    [此页面](../../start/create-message.md)中详细介绍了投放创建步骤。
 
-<!-- * For standalone instance,  [learn more here](sms-standalone-instance.md#sms-delivery-template).
-* For mid-sourcing infrastructure, -->
+<!--
+ * For standalone instance,  [learn more here](sms-standalone-instance.md#sms-delivery-template).
+* For mid-sourcing infrastructure,
+-->
 
 1. 在&#x200B;**[!UICONTROL Label]**&#x200B;字段中重命名您的投放，并根据跟踪需要，在&#x200B;**[!UICONTROL Delivery code]**&#x200B;字段和&#x200B;**[!UICONTROL Nature]**&#x200B;列表中添加信息。 您还可以向投放添加&#x200B;**[!UICONTROL Description]**。
 
@@ -40,7 +42,7 @@ ht-degree: 4%
 
 定义受众的步骤详见[此页面](../../audiences/create-audiences.md)。
 
-## 验证和发送短信 {#sms-validate}
+## 验证并发送短信 {#sms-validate}
 
 创建投放后，您可以：
 

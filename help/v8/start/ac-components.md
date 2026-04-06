@@ -5,8 +5,8 @@ feature: Overview, Architecture, Configuration
 role: User
 level: Beginner
 exl-id: 7db32bd8-a088-405f-9633-2968c28b13b0
-source-git-commit: e4f6c70ecdcf7414b5f49a43933cfd1c967a0905
-workflow-type: ht
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
+workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 100%
 
@@ -62,9 +62,11 @@ Campaign Web 服务器控制对 Campaign Web 流程的访问。Javascript 是用
 
 Campaign 客户端控制台通过 HTTP 使用 SOAP XML 连接到 Web 服务器。Web 服务器提供安全层，使用 Javascript 将请求传递到应用层，Campaign 内部流程使用 SQL 访问数据库。
 
-<!--The overall communication between Campaign processes are described in the following standalone deployment diagram: all Campaign components are installed in the same machine.
+<!--
+The overall communication between Campaign processes are described in the following standalone deployment diagram: all Campaign components are installed in the same machine.
 
-![](assets/do-not-localize//ac-standalone.png) -->
+![](assets/do-not-localize//ac-standalone.png)
+-->
 
 用户使用 HTTP 连接到 Campaign 应用程序服务器。所有数据和信息都在 Campaign 数据库中进行管理。如果 Campaign 开发人员执行任何配置更改，则会将其更新到数据库中。如果营销人员创建新营销活动，则与此新营销活动相关的所有信息和数据也将在数据库中管理。营销人员执行营销活动时，会通过 SMTP 服务器将电子邮件投放从 Campaign 服务器发送到用户档案。当用户档案与电子邮件投放交互时（如打开电子邮件），跟踪数据会发送回跟踪服务器。
 

@@ -5,7 +5,7 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 084607f6-47d8-40c0-89ba-bfbb88fc2e53
-source-git-commit: c044b391c900e8ff82147f2682e2e4f91845780c
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 2%
@@ -37,13 +37,14 @@ ht-degree: 2%
 >投放每周根据最新的事件更新而不是根据事件创建日期来累计事件。 因此，在从控制实例提取事务性消息投放日志时，与每个投放日志ID关联的投放ID可能会随着日志的更新（例如，当收到事件的入站退回时）而随着时间的推移而改变。
 
 <!--
-To monitor the activity and running of the execution instance(s), see [Transactional messaging reports](transactional-messaging-reports.md).-->
+To monitor the activity and running of the execution instance(s), see [Transactional messaging reports](transactional-messaging-reports.md).
+-->
 
 ## 报告{#reporting-transactional-msg}
 
 Adobe Campaign提供了多个报表，可让您控制活动并顺利运行执行实例。
 
-可以从&#x200B;**控件实例**&#x200B;的&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡访问这些消息中心报告。
+可以从&#x200B;**[!UICONTROL Reports]**&#x200B;控件实例&#x200B;**的**&#x200B;选项卡访问这些消息中心报告。
 
 ![](assets/mc-reports.png)
 

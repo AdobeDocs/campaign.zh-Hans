@@ -6,7 +6,7 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 1da45746-4d69-415b-a793-9a08ce80091d
-source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
+source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 48%
@@ -40,8 +40,9 @@ Adobe Campaign简化了个性化：您可以使用单个[消息模板](create-te
 
   例如，配置条件内容以根据收件人的轮廓添加动态个性化内容。满足特定条件时可插入文本块和/或图像。[了解详情](conditions.md)。
 
-<!--* Add **personalized offers**
-    
+<!--
+* Add **personalized offers**
+
     Insert personalized offers in your message content, depending on the recipient location, the current weather, or the last purchase order.
 -->
 
@@ -71,4 +72,4 @@ Adobe Campaign简化了个性化：您可以使用单个[消息模板](create-te
 了解不同类型的动态内容，并了解如何创建个性化块和条件语句并将它们应用到投放中。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3452878?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/335734?quality=12)

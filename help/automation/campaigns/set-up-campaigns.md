@@ -33,7 +33,7 @@ In addition, the **Marketing Resource Management (MRM)** module lets you control
 
 下面列出了在Adobe Campaign中创建和执行营销活动的关键步骤：
 
-1. **设置计划和项目**计划，设置逻辑以编排活动
+1. **设置计划和项目**&#x200B;计划，设置逻辑以编排活动
 项目是为期间定义的一组营销活动。 每个项目都包含链接到日历的营销活动，日历提供了概览。 营销计划可包含多个项目。 它定义一段时间的战略目标，包括分配的预算、可衡量的目标和相关文档。 在本节[中了解如何创建计划和计划](marketing-campaign-create.md#create-plan-and-program)。
 
 1. **创建您的第一个营销活动**

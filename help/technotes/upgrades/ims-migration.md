@@ -75,7 +75,7 @@ For this migration, you must add below APIs in your project: **I/O Management AP
 
 要将API添加到项目中，请执行以下步骤：
 
-1. 单击&#x200B;**添加API**以选择要添加到项目中的API。
+1. 单击&#x200B;**添加API**&#x200B;以选择要添加到项目中的API。
    ![](assets/do-not-localize/ims-updates-01.png)
 1. 通过勾选Adobe Campaign卡片右上角的框，选择并将Adobe Campaign API添加到您的项目中，在将鼠标悬停在该卡片上时会显示该框
    ![](assets/do-not-localize/ims-updates-02.png)
@@ -221,7 +221,7 @@ curl --location --request POST 'https://<instance_url>/nl/jsp/schemawsdl.jsp?sch
 
    ![](assets/do-not-localize/ims-updates-07.png)
 
-   在“凭据”屏幕中，向下滚动以找到**技术帐户电子邮件**，然后单击&#x200B;**复制**&#x200B;按钮。
+   在“凭据”屏幕中，向下滚动以找到&#x200B;**技术帐户电子邮件**，然后单击&#x200B;**复制**&#x200B;按钮。
 
    ![](assets/do-not-localize/ims-updates-08.png)
 

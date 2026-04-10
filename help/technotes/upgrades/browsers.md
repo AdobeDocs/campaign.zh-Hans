@@ -3,9 +3,8 @@ product: campaign
 title: Chrome Firefox和Edge浏览器中的Campaign Web组件和版本100
 description: Chrome、Firefox和Edge浏览器中的Campaign Web组件和版本100
 hide: true
-hidefromtoc: true
 exl-id: 912ad71e-2b23-4b16-b5f9-47d547fc83d5
-source-git-commit: 8f58db2b00f2fc98afd737f20411f829dd24c78a
+source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 0%
@@ -78,7 +77,7 @@ Adobe建议您测试Campaign Web应用程序（包括Web窗体及调查），以
 
 ### 使用Microsoft Edge 100进行测试{#test-ms-edge-100}
 
-从v97开始，站点所有者可以通过在`edge://flags`中启用试验标志`#force-major-version-to-100`来模拟此版本。
+从v97开始，站点所有者可以通过在`#force-major-version-to-100`中启用试验标志`edge://flags`来模拟此版本。
 
 1. 打开Microsoft Edge，在地址栏中输入`edge://flags`，然后按Enter键。
 1. 搜索`force-major-version-to-100`字段，并将其启用，如下所示。

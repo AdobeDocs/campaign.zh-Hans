@@ -3,9 +3,8 @@ product: campaign
 title: 技术说明 — 凭据轮换指南
 description: Adobe Campaign技术说明 — 凭据轮换指南
 hide: true
-hidefromtoc: true
 exl-id: 0848ee2d-3506-4167-9aea-a1589aa82805
-source-git-commit: 14e49a0b4de1b82239113bd670213449f464c27f
+source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 1%

@@ -5,9 +5,8 @@ feature: Push
 role: Admin, Developer
 level: Intermediate
 hide: true
-hidefromtoc: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: a288845e1f092d293d679fa9aaaf6d609de85230
+source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
 workflow-type: tm+mt
 source-wordcount: '1230'
 ht-degree: 1%
@@ -20,7 +19,7 @@ ht-degree: 1%
 
 [兼容性矩阵](../start/compatibility-matrix.md#MobileSDK)中列出了Android和iOS支持的版本，以及Campaign v8的Campaign SDK兼容版本。
 
-作为Campaign管理员，您可以从[Experience Cloud Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)下载Campaign SDK。 有关详细信息，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+作为Campaign管理员，您可以从[Experience Cloud Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/zh-hans/campaign.html)下载Campaign SDK。 有关详细信息，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 
 >[!NOTE]
@@ -111,7 +110,7 @@ Android SDK是使用JAVA编写的jar库。 它允许Android开发人员与Adobe 
 
    注册功能使您能够：
 
-   * 将通知ID或推送ID(iOS的deviceToken和Android的注册ID)发送到Adobe Campaign。
+   * 将通知ID或推送ID（iOS的deviceToken和Android的注册ID）发送到Adobe Campaign。
    * 恢复协调密钥或userKey（例如，电子邮件或帐号）
 
    您必须在应用程序初始化或用户操作时，将设备注册到Adobe Campaign。 可以使用`registerDevice`方法轻松完成此操作。
@@ -186,7 +185,7 @@ Android SDK是使用JAVA编写的jar库。 它允许Android开发人员与Adobe 
 
 1. **当用户的移动设备令牌更改时通知Campaign**
 
-   我们建议您在调用`onTokenRefresh`函数时使用`registerDevice`函数来通知Adobe Campaign用户的移动设备令牌发生了更改。
+   我们建议您在调用`registerDevice`函数时使用`onTokenRefresh`函数来通知Adobe Campaign用户的移动设备令牌发生了更改。
 
    例如：
 
@@ -225,7 +224,7 @@ Android SDK是使用JAVA编写的jar库。 它允许Android开发人员与Adobe 
 
 1. **配置Firebase消息服务**
 
-   扩展`onMessageReceived`回调中的`FirebaseMessagingService`以接收消息。 我们建议您在调用`onMessageReceived`回调时调用`notifyReceive`函数以启用对移动设备上通知接收的跟踪。 在Adobe Campaign中，此名称为&#x200B;**print**&#x200B;通知：在请求OS显示通知之前，应调用此函数。
+   扩展`FirebaseMessagingService`回调中的`onMessageReceived`以接收消息。 我们建议您在调用`notifyReceive`回调时调用`onMessageReceived`函数以启用对移动设备上通知接收的跟踪。 在Adobe Campaign中，此名称为&#x200B;**print**&#x200B;通知：在请求OS显示通知之前，应调用此函数。
 
    YourApplicationMessagingService.java
 
@@ -563,7 +562,7 @@ Android SDK是使用JAVA编写的jar库。 它允许Android开发人员与Adobe 
 
    注册功能使您能够：
 
-   * 将通知ID或推送ID(iOS的deviceToken和Android的注册ID)发送到Adobe Campaign。
+   * 将通知ID或推送ID（iOS的deviceToken和Android的注册ID）发送到Adobe Campaign。
    * 恢复协调密钥或userKey（例如，电子邮件或帐号）
 
 

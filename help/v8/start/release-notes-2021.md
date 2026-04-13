@@ -4,7 +4,7 @@ description: 2021 Campaign v8 版本的功能和改进列表
 feature: Release Notes
 hide: true
 exl-id: 5ac6bda9-86c8-4200-b285-6fee2a29039d
-source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
+source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
 workflow-type: tm+mt
 source-wordcount: '1577'
 ht-degree: 97%
@@ -120,7 +120,7 @@ _2021 年 9 月 7 日_
 
 **其他变更**
 
-* 之前已弃用的 Microsoft CRM 连接器（Office 365 和内部部署）已从界面中移除。[阅读更多](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-ms-dynamics.html?lang=zh-Hans#configure-acc-for-microsoft)
+* 之前已弃用的 Microsoft CRM 连接器（Office 365 和内部部署）已从界面中移除。[阅读更多](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/connectors/crm-ms-dynamics.html#configure-acc-for-microsoft)
 
 * 迁移到 Tomcat 8 后，更新了 IIS 设置脚本以修复 IIS 集成问题。(NEO-31019)
 * 添加了护栏，以仅允许[计费技术工作流](https://experienceleague.adobe.com/docs/campaign-classic/using/monitoring-campaign-classic/production-procedures/monitoring-processes.html?lang=zh-Hans#billing-report)在营销实例上运行。

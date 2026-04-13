@@ -6,7 +6,7 @@ role: Admin, Developer
 level: Intermediate
 hide: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
-source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
+source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
 workflow-type: tm+mt
 source-wordcount: '1230'
 ht-degree: 1%
@@ -845,7 +845,7 @@ Android SDK是使用JAVA编写的jar库。 它允许Android开发人员与Adobe 
 
 ## 通知服务扩展 {#notification-service-extension}
 
-用于iOS的&#x200B;**&#x200B;**
+用于iOS的&#x200B;****
 
 介质必须在通知服务扩展级别下载。
 
@@ -879,7 +879,7 @@ Android SDK是使用JAVA编写的jar库。 它允许Android开发人员与Adobe 
 
 ## 通知内容扩展 {#notification-content-extension}
 
-用于iOS的&#x200B;**&#x200B;**
+用于iOS的&#x200B;****
 
 在此级别，您需要：
 

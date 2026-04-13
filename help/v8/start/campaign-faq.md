@@ -6,7 +6,7 @@ role: User
 level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
 hide: true
-source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
+source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 96%
@@ -91,7 +91,7 @@ ht-degree: 96%
 
 1. **我可以与 Campaign 专家联系吗？**
 
-   加入 Campaign 社区：在现有问题中搜索答案或询问专家。[加入对话](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=zh-Hans){target="_blank"}
+   加入 Campaign 社区：在现有问题中搜索答案或询问专家。[加入对话](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
 
 
 1. **如何记录问题？**

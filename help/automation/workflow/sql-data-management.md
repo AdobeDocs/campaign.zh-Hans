@@ -7,9 +7,9 @@ Role: User
 level: Experienced
 version: Campaign v8, Campaign Classic v7
 exl-id: a1e08d57-0387-4802-b447-f6d9ad87072a
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+source-git-commit: c9098683077d4a01e269801b4434fcf5eb1f90a4
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '418'
 ht-degree: 3%
 
 ---
@@ -25,6 +25,16 @@ ht-degree: 3%
 * 该活动仅适用于远程数据源。
 * 出站模式必须存在于数据库中并链接到FDA数据库。
 
+## 重要说明 {#important-notes}
+
+从8.9.1开始，**[!UICONTROL SQL code]**&#x200B;和&#x200B;**[!UICONTROL SQL Data Management]**&#x200B;工作流活动已得到改进，以更好地保护PostgreSQL数据库，并在从Campaign执行自定义SQL时保持工作流平稳运行。
+
+如果出现错误，可以使用两种解决方案：
+
+* 解决方案1 — `XtkSecurity_FeatureFlag_SqlSensitive`
+* 解决方案2 — `XtkSecurity_SqlSensitive_Methods`
+
+有关更多详细信息和最佳实践，请参阅[SQL代码](sql-code-and-javascript-code.md#important-notes)。
 
 ## 配置SQL数据管理活动 {#configuring-the-sql-data-management-activity}
 

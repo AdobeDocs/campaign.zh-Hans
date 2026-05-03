@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
 source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 1%
+source-wordcount: '264'
+ht-degree: 3%
 
 ---
 
@@ -38,7 +38,7 @@ SpamAssassin利用多种垃圾邮件检测技术，包括：
 有关创建和设计投放的更多信息，请参阅此[页面](defining-the-email-content.md)。
 
 
-1. 转到&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡。
+1. 转到 **[!UICONTROL Preview]** 选项卡。
 1. 选择一个收件人以预览您的投放。
 
    ![](assets/s_tn_del_preview_spamassassin_recipient.png)

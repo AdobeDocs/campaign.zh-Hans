@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 90dd2dad-1380-490e-b958-4a28a7d930ed
 source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1288'
 ht-degree: 4%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 营销活动编排组件位于&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡中：您可以在此处查看营销项目和营销活动及其相关元素的概述。
 
-营销方案由营销活动组成，营销活动由投放、资源等组成。 所有与投放、预算、审阅者和链接文档相关的信息均分组到营销活动中。
+营销方案由营销活动组成，营销活动由投放、资源等组成。所有与投放、预算、审阅者和链接文档相关的信息均分组到营销活动中。
 
 ![](assets/campaigns-create-from-home.png)
 
@@ -27,7 +27,7 @@ ht-degree: 4%
 
 ### 创建计划和项目层次结构 {#create-plan-and-program}
 
-每个营销活动都属于一个项目，而项目又属于一个计划。所有计划、项目和营销活动都可以通过&#x200B;**营销活动**&#x200B;选项卡中的&#x200B;**[!UICONTROL Campaign calendar]**&#x200B;菜单使用。
+每个营销活动都属于一个项目，而项目又属于一个计划。 所有计划、项目和营销活动都可以通过&#x200B;**营销活动**&#x200B;选项卡中的&#x200B;**[!UICONTROL Campaign calendar]**&#x200B;菜单使用。
 
 在开始构建活动和投放之前，请为营销计划和项目配置文件夹层次结构。
 
@@ -103,8 +103,8 @@ ht-degree: 4%
 对于每个活动，都提供以下功能：
 
 * 参考文档和资源：您可以将文档与营销活动关联（简介、报告、图像等）。 支持所有文档格式。 [了解详情](marketing-campaign-deliveries.md#manage-associated-documents)。
-* 定义成本：对于每个市场活动，Adobe Campaign允许您定义成本录入和成本计算结构，在创建市场营销活动时使用这些结构。 例如：印刷费用、使用外部代理、房间租赁等。 [了解详情](providers-stocks-and-budgets.md#defining-cost-categories)。
-* 定义目标：您可以定义促销活动的可量化目标，例如订户数、业务量等。 此信息稍后将在营销活动报表中使用。
+* 定义成本：对于每个市场活动，Adobe Campaign允许您定义成本录入和成本计算结构，在创建市场营销活动时使用这些结构。 例如：打印成本、使用外部代理、房间租赁等。[了解详情](providers-stocks-and-budgets.md#defining-cost-categories)。
+* 定义目标：您可以定义促销活动的可量化目标，例如订户数、业务量等。此信息稍后将在营销活动报表中使用。
 * 管理种子地址和对照组。 [了解详情](marketing-campaign-deliveries.md#defining-a-control-group)。
 * 管理审批：您可以选择要批准的处理，并根据需要选择审核操作员或操作员组。 [了解详情](marketing-campaign-approval.md#checking-and-approving-deliveries)。
 
@@ -116,7 +116,7 @@ ht-degree: 4%
 
 对于每个活动，任务、资源和投放都集中在仪表板中。 利用此界面，您可以管理和编排营销操作。
 
-借助Adobe Campaign，您可以设置协作流程，以创建和审批营销活动的各个步骤：审批预算、目标、内容等。 此编排在[此部分](marketing-campaign-approval.md)中有详细说明。
+借助Adobe Campaign，您可以设置协作流程，以创建和审批营销活动的各个步骤：审批预算、目标、内容等。此编排在[此部分](marketing-campaign-approval.md)中有详细说明。
 
 ![](assets/campaigns-dashboard-approval-tab.png)
 
@@ -208,4 +208,4 @@ ht-degree: 4%
 
 本视频说明如何创建营销计划、项目和营销活动。
 
->[!VIDEO](https://video.tv.adobe.com/v/3426482?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/333810?quality=12)

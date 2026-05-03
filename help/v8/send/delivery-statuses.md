@@ -5,10 +5,11 @@ feature: Monitoring, Deliverability
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
+exl-id: 90f2b7b2-db9e-42aa-aef2-e90aee5d208e
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 3%
+source-wordcount: '557'
+ht-degree: 5%
 
 ---
 
@@ -62,7 +63,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> 服务提供商<br />已考虑 </td> 
-   <td> 对于SMS投放，SMS服务提供商会收到投放。<br />对于电子邮件投放，消息已成功从Campaign中继到MTA（邮件传输代理）。</td> 
+   <td> 对于SMS投放，SMS服务提供商已收到投放。<br /> 对于电子邮件投放，消息已成功从Campaign中继到MTA（邮件传输代理）。</td> 
   </tr> 
   <tr> 
    <td> 已在移动设备<br />上收到 </td> 
@@ -70,7 +71,7 @@ ht-degree: 3%
   </tr>
   <tr> 
    <td> 已发送给服务提供商<br /> </td> 
-   <td> 传递已发送到SMS服务提供程序，但尚未收到。<br />
+   <td> 投放已发送到SMS服务提供商，但尚未收到。<br />
    </td> 
   </tr> 
   <tr> 
@@ -94,7 +95,7 @@ ht-degree: 3%
 
   在&#x200B;**[!UICONTROL NmsOperation_LimitConcurrency]**&#x200B;选项中定义了同时营销活动的限制。 默认值为 10。
 
-  作为托管Cloud Services用户，您可以根据需要使用Adobe调整此限制。 请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=zh-Hans){target="_blank"}以了解有关选项的更多信息。
+  作为托管Cloud Services用户，您可以根据需要使用Adobe调整此限制。 请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html){target="_blank"}以了解有关选项的更多信息。
 
 * **资源可用性问题**
 
@@ -109,4 +110,3 @@ ht-degree: 3%
 * [发送和监控电子邮件](send.md#email-monitoring)
 * [了解投放失败](delivery-failures.md)
 * [监控Campaign环境](../start/monitor.md#monitor-deliveries)
-

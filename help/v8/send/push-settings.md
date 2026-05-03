@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 1a75f411-3f71-4114-b738-277820dc6138
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1829'
 ht-degree: 5%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 年发布，并将影响您的 Adobe Campaign 实施。您可能需要更新 Android 推送消息的订阅服务配置，才能支持此更改。您已经可以检查并执行操作。
+>Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 年发布，并将影响您的 Adobe Campaign 实施。 您可能需要更新 Android 推送消息的订阅服务配置，才能支持此更改。 您已经可以检查并执行操作。
 
 在开始使用Adobe Campaign发送推送通知之前，您需要确保移动应用程序和Adobe Experience Platform中的标记已具有配置和集成。 Adobe Experience Platform Mobile SDK通过与Android和iOS兼容的SDK，为您的移动设备提供客户端集成API。
 
@@ -27,9 +27,9 @@ ht-degree: 5%
 
 1. 检查[先决条件](#before-starting)。
 1. 在Adobe Experience Platform数据收集中设置[移动标记属性](#launch-property)。
-1. 在此页面[中获取详细的Adobe Experience Platform Mobile SDK &#x200B;](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"}。
-1. （可选）启用日志记录和生命周期量度，如本页[中的详细](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/){target="_blank"}所示。
-1. （可选）将[Adobe Experience Platform Assurance添加到您的应用程序](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"}以验证您的实施。 在此页面[中了解如何实施Adobe Experience Platform Assurance扩展](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}。
+1. 在此页面](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"}中获取详细的Adobe Experience Platform Mobile SDK [。
+1. （可选）启用日志记录和生命周期量度，如本页](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/){target="_blank"}中的详细[所示。
+1. （可选）将[Adobe Experience Platform Assurance添加到您的应用程序](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"}以验证您的实施。 在此页面](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}中了解如何实施Adobe Experience Platform Assurance扩展[。
 1. 在Adobe Campaign中配置iOS和Android Mobile Services，如本页[所述。](#push-service)
 1. 在移动资产中安装和配置[Adobe Campaign扩展](#configure-extension)。
 1. 请按照[Adobe Experience Platform Mobile SDK文档](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"}中的说明，在您的应用程序中设置Adobe Experience Platform Mobile SDK。
@@ -38,7 +38,7 @@ ht-degree: 5%
 
 ### 设置权限 {#setup-permissions}
 
-在创建移动应用程序之前，您首先需要确保拥有或分配适用于Adobe Experience Platform中的标记的正确用户权限。 Adobe Experience Platform中标记的用户权限通过Adobe Admin Console分配给用户。 请参阅[标记文档](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=zh-Hans){target="_blank"}以了解详情。
+在创建移动应用程序之前，您首先需要确保拥有或分配适用于Adobe Experience Platform中的标记的正确用户权限。 Adobe Experience Platform中标记的用户权限通过Adobe Admin Console分配给用户。 请参阅[标记文档](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html){target="_blank"}以了解详情。
 
 >[!CAUTION]
 >
@@ -48,9 +48,9 @@ ht-degree: 5%
 
 1. 访问&#x200B;**[!DNL Admin Console]**。
 1. 从&#x200B;**[!UICONTROL Products]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL Adobe Experience Platform Data Collection]**&#x200B;卡片。
-1. 选择现有&#x200B;**[!UICONTROL Product Profile]**&#x200B;或使用&#x200B;**[!UICONTROL New profile]**&#x200B;按钮创建新按钮。 在&#x200B;**[!UICONTROL New profile]** Admin Console文档[中了解如何创建新的](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html?lang=zh-Hans#ui){target="_blank"}。
+1. 选择现有&#x200B;**[!UICONTROL Product Profile]**&#x200B;或使用&#x200B;**[!UICONTROL New profile]**&#x200B;按钮创建新按钮。 在[Admin Console文档](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html#ui){target="_blank"}中了解如何创建新的&#x200B;**[!UICONTROL New profile]**。
 1. 在 **[!UICONTROL Permissions]** 选项卡中，选择 **[!UICONTROL Property Rights]**。
-1. 单击 **[!UICONTROL Add all]**。这会将以下权限添加到您的产品配置文件：
+1. 单击 **[!UICONTROL Add all]**。 这会将以下权限添加到您的产品配置文件：
    * **[!UICONTROL Approve]**
    * **[!UICONTROL Develop]**
    * **[!UICONTROL Edit Property]**
@@ -80,7 +80,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   >如果以前未在Admin Console中创建过该用户，请参阅[添加用户文档](https://helpx.adobe.com/cn/enterprise/using/manage-users-individually.html#add-users){target="_blank"}。
+   >如果以前未在Admin Console中创建过该用户，请参阅[添加用户文档](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#add-users){target="_blank"}。
 
 ### 配置您的应用程序 {#configure-app}
 
@@ -142,7 +142,7 @@ To get the SDKs needed for push notification to work you will need the following
 * **[!UICONTROL Adobe Experience Platform Assurance]**, optional but recommended to debug the mobile implementation.
 -->
 
-在[!DNL Adobe Experience Platform Data Collection]Adobe Experience Platform文档[中了解有关](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=zh-Hans){target="_blank"}标记的更多信息。
+在[Adobe Experience Platform文档](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html){target="_blank"}中了解有关[!DNL Adobe Experience Platform Data Collection]标记的更多信息。
 
 创建后，打开新的标记属性并创建库。 操作步骤：
 
@@ -209,7 +209,7 @@ To get the SDKs needed for push notification to work you will need the following
 
 1. 从&#x200B;**[!UICONTROL Application icon]**&#x200B;字段中选择图标以个性化服务中的移动应用程序。
 
-1. 选择 **[!UICONTROL Authentication mode]**。提供了两种模式：
+1. 选择 **[!UICONTROL Authentication mode]**。 提供了两种模式：
 
    * （推荐） **[!UICONTROL Token-based authentication]**：填写APNs连接设置&#x200B;**[!UICONTROL Key Id]**、**[!UICONTROL Team Id]**&#x200B;和&#x200B;**[!UICONTROL Bundle Id]**，然后单击&#x200B;**[!UICONTROL Enter the private key...]**&#x200B;选择您的p8证书。 有关&#x200B;**[!UICONTROL Token-based authentication]**&#x200B;的详细信息，请参阅[Apple文档](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}。
 
@@ -245,7 +245,7 @@ To get the SDKs needed for push notification to work you will need the following
    >
 
 1. 从&#x200B;**[!UICONTROL Application icon]**&#x200B;字段中选择图标以个性化服务中的移动应用程序。
-1. 在&#x200B;**下拉列表中选择** HTTP v1 **[!UICONTROL API version]**。
+1. 在&#x200B;**[!UICONTROL API version]**&#x200B;下拉列表中选择&#x200B;**HTTP v1**。
 1. 单击&#x200B;**[!UICONTROL Load project json file to extract project details...]**&#x200B;链接以加载您的JSON密钥文件。 有关如何提取JSON文件的更多信息，请参阅[Google Firebase文档](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}。
 
    您还可以手动输入以下详细信息：
@@ -261,7 +261,7 @@ To get the SDKs needed for push notification to work you will need the following
 
 1. （可选）如果需要，您可以使用大约&#x200B;**[!UICONTROL Application variables]**&#x200B;扩充推送消息内容。 这些都是完全可自定义的，并且是发送到移动设备的消息有效负载的一部分。
 
-1. 单击&#x200B;**[!UICONTROL Finish]**，然后单击&#x200B;**[!UICONTROL Save]**。 您的Android应用程序现在已准备好在Campaign中使用。
+1. 单击 **[!UICONTROL Finish]**，然后单击 **[!UICONTROL Save]**。 您的Android应用程序现在已准备好在Campaign中使用。
 
 以下是FCM有效负荷名称，用于进一步个性化您的推送通知：
 

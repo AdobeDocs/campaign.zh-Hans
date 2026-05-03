@@ -7,7 +7,7 @@ level: Intermediate, Experienced
 exl-id: f7047c6e-f045-4534-b117-311dd90dd92b
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 ## 示例：反向链接 {#example-1}
 
-在以下示例中，我们声明与“cus：company”架构表有关的1-N关系：
+在以下示例中，我们声明与“cus:company”架构表有关的1-N关系：
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -112,7 +112,7 @@ ht-degree: 0%
 
 外键会自动添加到与目标表中的关联字段使用相同特征的元素中，并遵循以下命名约定：目标架构名称后跟关联字段名称（在本例中为“company-id”）。
 
-目标(“cus：company”)的扩展架构：
+目标(&quot;cus:company&quot;)的扩展架构：
 
 ```sql
 <schema mappingType="sql" name="company" namespace="cus" xtkschema="xtk:schema">  
@@ -133,17 +133,17 @@ ht-degree: 0%
 </schema>
 ```
 
-添加了指向“cus：recipient”表的反向链接，以及以下参数：
+添加了指向“cus:recipient”表的反向链接，该链接具有以下参数：
 
 * **name**：从源架构的名称自动推断（可在源架构的链接定义中使用“revLink”属性强制推断）
 * **revLink**：反向链接的名称
-* **target**：链接架构的键（“cus：recipient”架构）
+* **target**：链接架构的键（“cus:recipient”架构）
 * **未绑定**：链接被声明为1-N基数的集合元素（默认情况下）
 * **完整性**：默认情况下为“定义”（可在源架构上的链接定义中使用“revIntegrity”属性强制执行）。
 
 ## 示例：简单链接 {#example-2}
 
-在此示例中，我们声明指向“nms：address”模式表的链接。 连接是外部连接，使用收件人的电子邮件地址和链接表的“@address”字段(“nms：address”)显式填充。
+在此示例中，我们声明指向“nms:address”架构表的链接。 连接是外部连接，使用收件人的电子邮件地址和链接表(“nms:address”)的“@address”字段显式填充。
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -158,7 +158,7 @@ ht-degree: 0%
 
 ## 示例：唯一基数 {#example-3}
 
-在本例中，我们创建了一个与“cus：extension”模式表的1-1关系：
+在此示例中，我们创建与“cus:extension”架构表的1-1关系：
 
 ```sql
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
@@ -166,7 +166,7 @@ ht-degree: 0%
 
 ## 示例：指向文件夹的链接 {#example-4}
 
-在此示例中，我们声明指向文件夹（“xtk：folder”架构）的链接：
+在此示例中，我们声明指向文件夹（“xtk:folder”架构）的链接：
 
 ```sql
 <element default="DefaultFolder('nmsFolder')" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="own" revLabel="Recipients" target="xtk:folder" type="link"/>
@@ -176,7 +176,7 @@ ht-degree: 0%
 
 ## 示例：在链接上创建键 {#example-5}
 
-在此示例中，我们在包含&#x200B;**xlink**&#x200B;属性的链接（“company”到“cus：company”架构）上创建一个键，并在(“email”)表中创建一个字段：
+在此示例中，我们在包含&#x200B;**xlink**&#x200B;属性的链接（“company”到“cus:company”架构）上创建了一个键，并创建了(“email”)表的字段：
 
 ```sql
 <srcSchema name="recipient" namespace="cus">

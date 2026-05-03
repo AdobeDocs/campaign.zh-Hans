@@ -8,7 +8,7 @@ level: Beginner
 exl-id: 7dbc66ab-a468-40ff-9db2-b33e4fd27754
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '953'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 要基于现有多维数据集创建报告，请执行以下步骤：
 
-1. 单击&#x200B;**[!UICONTROL Create]**&#x200B;选项卡的&#x200B;**[!UICONTROL Reports]**&#x200B;按钮，然后选择刚刚创建的多维数据集。
+1. 单击&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡的&#x200B;**[!UICONTROL Create]**&#x200B;按钮，然后选择刚刚创建的多维数据集。
 
    ![](assets/new-report-based-on-cube.png)
 
@@ -39,7 +39,7 @@ ht-degree: 1%
 
    ![](assets/cube-report-config.png)
 
-1. 可以切换尺寸的轴、删除它们、添加新测量等。 要实现此目的，请使用相应的图标。
+1. 可以切换尺寸的轴、删除它们、添加新测量等。要实现此目的，请使用相应的图标。
 
    ![](assets/cube-switch-axis.png)
 

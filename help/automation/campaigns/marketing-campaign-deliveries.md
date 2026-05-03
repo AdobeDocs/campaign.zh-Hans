@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 1d9638cb-0fc9-4d04-a9c5-bcab8f4ebe95
 source-git-commit: a5f7cf6e21b263f8a7fb4fa19a88bebb78390c3d
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '706'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 1%
 
   启动工作流后，投放即会添加到活动仪表板。
 
-在此页面[&#128279;](marketing-campaign-approval.md)中了解如何设置和执行投放审批流程。
+在此页面](marketing-campaign-approval.md)中了解如何设置和执行投放审批流程[。
 
 ## 开始投放 {#start-a-delivery}
 
@@ -113,4 +113,4 @@ ht-degree: 1%
 
   >[!NOTE]
   >
-  >在本节[&#128279;](providers-stocks-and-budgets.md)中了解有关预算的更多信息。
+  >在本节](providers-stocks-and-budgets.md)中了解有关预算[的更多信息。

@@ -6,7 +6,7 @@ feature: Typology Rules
 exl-id: 17507cdf-211f-4fa2-abb9-33d4f6dc47bb
 source-git-commit: 1fb93efac4fee4965213f8b42f518f2c10638e20
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '522'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 使用过滤规则，根据查询中定义的条件选择要排除的消息。 这些规则链接到定向维度。
 
-筛选规则可以链接到类型中的其他类型的规则（控制、压力等），或分组到专用的&#x200B;**筛选**&#x200B;类型中。 [了解详情](#create-and-use-a-filtering-typology)。
+筛选规则可以链接到其他类型的规则（控制、压力等） 分类中进行分类，或分组到专用的&#x200B;**筛选**&#x200B;分类中。 [了解详情](#create-and-use-a-filtering-typology)。
 
 ## 创建筛选规则 {#create-a-filtering-rule}
 
@@ -28,7 +28,7 @@ ht-degree: 1%
 
    ![](assets/campaign_opt_create_filter_01.png)
 
-1. 从&#x200B;**筛选器**&#x200B;选项卡将默认定向维度更改为&#x200B;**订阅** (**nms：subscription**)。
+1. 从&#x200B;**筛选器**&#x200B;选项卡将默认定向维度更改为&#x200B;**订阅** (**nms:subscription**)。
 
    ![](assets/campaign_opt_create_filter_02.png)
 
@@ -91,7 +91,7 @@ ht-degree: 1%
 
 默认情况下，有两个筛选规则可用： **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** )和&#x200B;**[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** )。 在电子邮件分析期间，这些规则将收件人电子邮件地址与包含在可投放性实例中管理的加密全局禁止列表中的禁止地址或域名进行比较。 如果存在匹配项，则不会将该消息发送给该收件人。
 
-列入阻止列表这是为了避免由于恶意活动（特别是使用Spamtrap）而添加到。 列入阻止列表例如，如果使用Spamtrap通过某个Web窗体进行订阅，则会自动向该Spamtrap发送确认电子邮件，这会导致您的地址自动添加到中。
+这是为了避免由于恶意活动（特别是使用Spamtrap）而添加到。 例如，如果使用Spamtrap通过某个Web窗体进行订阅，则会自动向该Spamtrap发送确认电子邮件，这会导致您的地址自动添加到中。
 
 >[!NOTE]
 >

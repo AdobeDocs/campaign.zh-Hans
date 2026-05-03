@@ -7,14 +7,14 @@ level: Beginner
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
 source-git-commit: 5b23be4cb8f0896d2482e525e416713b1a6c4514
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '571'
 ht-degree: 6%
 
 ---
 
 # 配置跟踪的链接 {#how-to-configure-tracked-links}
 
-对于每次投放，您可以跟踪邮件是否收到，以及邮件内容中插入的链接是否被点击。这样即可在目标投放行动实施后，跟踪收件人的行为。
+对于每次投放，您可以跟踪邮件是否收到，以及邮件内容中插入的链接是否被点击。 这样即可在目标投放行动实施后，跟踪收件人的行为。
 
 >[!NOTE]
 >

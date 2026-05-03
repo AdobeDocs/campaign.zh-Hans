@@ -7,7 +7,7 @@ role: User
 exl-id: 9904c1c6-c233-4aa2-a237-338ebde15661
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '417'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## 筛选包 {#filter-packages}
 
-在&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡中，您可以显示重组所有现有分布式营销活动的&#x200B;**[!UICONTROL Campaign packages]**&#x200B;列表。 您可以筛选此列表，使其仅显示已发布、延迟、未决批准等的营销活动。 为此，请单击此视图上部的链接，或使用&#x200B;**[!UICONTROL Filter list]**&#x200B;链接并选择要显示的促销活动包状态。
+在&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡中，您可以显示重组所有现有分布式营销活动的&#x200B;**[!UICONTROL Campaign packages]**&#x200B;列表。 您可以筛选此列表，使其仅显示已发布、延迟、未决批准等的营销活动。为此，请单击此视图上部的链接，或使用&#x200B;**[!UICONTROL Filter list]**&#x200B;链接并选择要显示的促销活动包状态。
 
 ![](assets/mkg_dist_catalog_filter.png)
 

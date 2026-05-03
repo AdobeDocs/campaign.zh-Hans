@@ -7,7 +7,7 @@ role: Admin, User
 exl-id: 6fa4f4e3-c5a5-4d7f-8e71-826dee4e926a
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '369'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 **营销资源管理(MRM)**&#x200B;模块允许您在协作模式下控制营销操作，方法是提供所涉及的任务、预算和营销资源的完整管理和实时跟踪。
 
-Adobe Campaign操作员可以通过完整的验证流程和适当的跟踪工具（报告、跟踪批准、通知、论坛等）协调其行动并批准其所有阶段的进度。 在事件或错误或延迟以及验证周期的每个新阶段，都会向他们发出警报。
+Adobe Campaign操作员可以通过完整的验证流程和适当的跟踪工具（报告、跟踪批准、通知、论坛等）协调其行动并批准其所有阶段的进度。在事件或错误或延迟以及验证周期的每个新阶段，都会向他们发出警报。
 
 因此，在营销计划的方案和子方案的范围内，可以创建任务并将其分配给有关操作员，然后在其所有阶段对其进行管理。
 
@@ -40,7 +40,7 @@ Adobe Campaign操作员可以通过完整的验证流程和适当的跟踪工具
 
 * **营销资源**
 
-  通过Adobe Campaign，您可以跟踪协作营销项目（如通信媒体、行动计划、新闻稿等）的进度。 可以从资源仪表板跟踪这些营销资源的创建和审批周期，直到这些资源发布为止。
+  通过Adobe Campaign，您可以跟踪协作营销项目（如通信媒体、行动计划、新闻稿等）的进度。可以从资源仪表板跟踪这些营销资源的创建和审批周期，直到这些资源发布为止。
 
   有关详细信息，请参阅[管理营销资源](managing-marketing-resources.md)。
 
@@ -58,6 +58,6 @@ Adobe Campaign操作员可以通过完整的验证流程和适当的跟踪工具
 
 * **预算管理**。 [了解详情](controlling-costs.md)
 
-* **任务管理**。[了解详情](creating-and-managing-tasks.md)
+* **任务管理**。 [了解详情](creating-and-managing-tasks.md)
 
 * **资源管理**。 [了解详情](managing-marketing-resources.md)

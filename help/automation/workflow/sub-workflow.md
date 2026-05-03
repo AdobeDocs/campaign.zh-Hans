@@ -7,7 +7,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: c530fb4e-d21e-4059-88e1-77a8d33a7832
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '436'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 1%
    ![](assets/subworkflow_selection.png)
 
 1. 您还可以添加配置脚本以更改引用的工作流。
-1. 单击 **[!UICONTROL Ok]**。它会从所选工作流中自动创建标签为&#x200B;**[!UICONTROL Jump (start point)]**&#x200B;活动的叫客过渡。
+1. 单击 **[!UICONTROL Ok]**。 它会从所选工作流中自动创建标签为&#x200B;**[!UICONTROL Jump (start point)]**&#x200B;活动的叫客过渡。
 
    ![](assets/subworkflow_outbound.png)
 
@@ -73,6 +73,6 @@ ht-degree: 1%
 * 架构
 * recCount
 
-这组三个值标识查询所定向的群体。 **[!UICONTROL tableName]**&#x200B;是记录目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms：recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。
+这组三个值标识查询所定向的群体。 **[!UICONTROL tableName]**&#x200B;是记录目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms:recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。
 
 * targetSchema：此值是工作表的架构。 此参数对于具有&#x200B;**[!UICONTROL tableName]**&#x200B;和&#x200B;**[!UICONTROL schema]**&#x200B;的所有过渡都有效。

@@ -4,10 +4,11 @@ description: 了解如何监测投放、工作流和您的活动实例
 feature: Monitoring
 role: User
 level: Beginner
-source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
+exl-id: 2ad585f2-19bc-4391-8a19-9e892dbe01a3
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 2%
+source-wordcount: '1141'
+ht-degree: 4%
 
 ---
 
@@ -51,7 +52,7 @@ Adobe Campaign提供了一整套功能来监控您的流程、交付和环境，
 
 **监视以下工作流元素：**
 
-**工作流执行状态** — 跟踪工作流是正在运行、已暂停、失败还是已完成。 [了解有关工作流执行的更多信息](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hans){target="_blank"}
+**工作流执行状态** — 跟踪工作流是正在运行、已暂停、失败还是已完成。 [了解有关工作流执行的更多信息](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
 
 **活动执行日志** — 访问每个工作流活动的详细日志，以解决问题并优化性能。
 
@@ -82,17 +83,17 @@ Adobe Campaign提供了一整套功能来监控您的流程、交付和环境，
 
 Campaign v8提供了多种监视功能来跟踪实例性能并确保实现最佳操作：
 
-**数据库监视** — 通过控制面板监视数据库的使用情况和容量，以确保最佳性能和存储管理。 [了解有关数据库监视的详细信息](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring.html?lang=zh-Hans){target="_blank"}
+**数据库监视** — 通过控制面板监视数据库的使用情况和容量，以确保最佳性能和存储管理。 [了解有关数据库监视的详细信息](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring.html){target="_blank"}
 
-**活动配置文件监控** — 根据您的合同限制跟踪活动配置文件使用情况，以保持合规性并优化资源分配。 [了解有关活动用户档案的详细信息](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=zh-Hans){target="_blank"}
+**活动配置文件监控** — 根据您的合同限制跟踪活动配置文件使用情况，以保持合规性并优化资源分配。 [了解有关活动用户档案的详细信息](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}
 
 **工作流监视** — 监视工作流执行状态以识别长时间运行的工作流，并确保所有技术工作流都正常运行。 [了解有关技术工作流的详细信息](#technical-workflows)
 
-**投放吞吐量和延迟** — 通过控制面板跟踪交易通信的投放吞吐量（每小时发送的消息）和延迟。 [了解有关吞吐量监视的详细信息](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/throughputs-latencies.html?lang=zh-Hans){target="_blank"}
+**投放吞吐量和延迟** — 通过控制面板跟踪交易通信的投放吞吐量（每小时发送的消息）和延迟。 [了解有关吞吐量监视的详细信息](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/throughputs-latencies.html){target="_blank"}
 
 >[!NOTE]
 >
->对于Campaign v8托管云服务，服务器基础架构(CPU、内存、磁盘)由Adobe进行监视和管理。
+>对于Campaign v8托管云服务，服务器基础架构（CPU、内存、磁盘）由Adobe进行监视和管理。
 
 ### 技术工作流 {#technical-workflows}
 
@@ -113,7 +114,7 @@ Campaign v8提供了多种监视功能来跟踪实例性能并确保实现最佳
 | **可投放性更新** | 更新可投放性规则和垃圾邮件过滤模式 |
 | **数据库清理** | 清除旧的投放和跟踪日志 |
 
-了解有关[技术工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=zh-Hans){target="_blank"}的详细信息
+了解有关[技术工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}的详细信息
 
 ### Campaign 控制面板 {#control-panel}
 
@@ -171,4 +172,3 @@ Adobe Campaign提供了一组全面的报告来分析您的交付性能：
 * [隔离管理](../send/quarantines.md)
 * [配置和发送投放](../send/configure-and-send.md)
 * [报告快速入门](../reporting/gs-reporting.md)
-

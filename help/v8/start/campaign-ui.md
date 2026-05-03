@@ -8,24 +8,24 @@ version: Campaign v8, Campaign Classic v7
 exl-id: a7846b95-7570-4dce-b3f4-d3cc23eefcac
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 68%
+source-wordcount: '1234'
+ht-degree: 69%
 
 ---
 
 # 探索用户界面 {#ui-client-console}
 
-您可以通过客户端控制台或 Web 用户界面访问 Adobe Campaign。您还可以使用 API 在 Campaign 平台中管理数据和执行任务。
+您可以通过客户端控制台或 Web 用户界面访问 Adobe Campaign。 您还可以使用 API 在 Campaign 平台中管理数据和执行任务。
 
-* **客户端控制台** - Campaign 客户端控制台是一个原生应用程序，它通过标准 Internet 协议（如 SOAP 和 HTTP）与 Adobe Campaign 应用程序服务器进行通信。Campaign 客户端控制台集中了所有功能和设置，并且由于依赖本地缓存，需要的带宽很少。Campaign 客户端控制台旨在实现轻松部署，可以从 Internet 浏览器部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成 HTTP(S) 流量。[了解详情](#ui-access)
+* **客户端控制台** - Campaign 客户端控制台是一个原生应用程序，它通过标准 Internet 协议（如 SOAP 和 HTTP）与 Adobe Campaign 应用程序服务器进行通信。 Campaign 客户端控制台集中了所有功能和设置，并且由于依赖本地缓存，需要的带宽很少。 Campaign 客户端控制台旨在实现轻松部署，可以从 Internet 浏览器部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成 HTTP(S) 流量。 [了解详情](#ui-access)
 
   在[此部分](../start/connect.md)中了解如何安装和配置 Campaign 客户端控制台。
 
-* **Web 访问** - 通过 Adobe Campaign Web 访问功能，您可以通过 Web 浏览器在 HTML 用户界面下使用部分 Campaign 功能。使用此 Web 界面可访问报告、控制和验证消息、访问监控仪表板等。[在此部分中](../start/connect.md#web-access)了解有关 Campaign Web 访问权限的详细信息。
+* **Web 访问** - 通过 Adobe Campaign Web 访问功能，您可以通过 Web 浏览器在 HTML 用户界面下使用部分 Campaign 功能。 使用此 Web 界面可访问报告、控制和验证消息、访问监控仪表板等。  [在此部分中](../start/connect.md#web-access)了解有关 Campaign Web 访问权限的详细信息。
 
-* **API** - 为处理更多用例，可以使用通过 SOAP 协议公开的 Web 服务 API 从外部应用程序调用该系统。[在此页面中](../dev/api.md)了解有关 Campaign API 的详细信息。
+* **API** - 为处理更多用例，可以使用通过 SOAP 协议公开的 Web 服务 API 从外部应用程序调用该系统。 [在此页面中](../dev/api.md)了解有关 Campaign API 的详细信息。
 
-* **Web 用户界面** - 作为 Campaign v8 用户，从 v8.6.1 版本开始，您现在可以通过中央 Adobe Experience Cloud 用户界面访问 Web 环境。然后，您可以从 Web 浏览器连接到 Adobe Campaign。通过这个新的界面，您可以创建、管理和执行重要的营销操作。但是，并非所有 Campaign 功能都可用。[了解详情](#ac-web-ui)。
+* **Web 用户界面** - 作为 Campaign v8 用户，从 v8.6.1 版本开始，您现在可以通过中央 Adobe Experience Cloud 用户界面访问 Web 环境。 然后，您可以从 Web 浏览器连接到 Adobe Campaign。 通过这个新的界面，您可以创建、管理和执行重要的营销操作。 但是，并非所有 Campaign 功能都可用。 [了解详情](#ac-web-ui)。
 
   >[!AVAILABILITY]
   >
@@ -34,11 +34,11 @@ ht-degree: 68%
 
 >[!CAUTION]
 >
->本文档重点介绍 Campaign 客户端控制台用法。作为Campaign v8用户，如果您使用的是Campaign Web用户界面，请参阅[本文档](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=zh-Hans){target="_blank"}。
+>本文档重点介绍 Campaign 客户端控制台用法。 作为Campaign v8用户，如果您使用的是Campaign Web用户界面，请参阅[本文档](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=zh-Hans){target="_blank"}。
 
 ## 使用客户端控制台 {#ui-access}
 
-Campaign 客户端控制台是一个原生应用程序，它通过标准 Internet 协议（如 SOAP 和 HTTP）与 Adobe Campaign 应用程序服务器进行通信。Campaign 客户端控制台集中了所有功能和设置，并且由于依赖本地缓存，需要的带宽很少。Campaign 客户端控制台旨在实现轻松部署，可以从 Internet 浏览器部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成 HTTP(S) 流量。[了解关于 Campaign 客户端控制台的更多信息](../start/connect.md)。
+Campaign 客户端控制台是一个原生应用程序，它通过标准 Internet 协议（如 SOAP 和 HTTP）与 Adobe Campaign 应用程序服务器进行通信。 Campaign 客户端控制台集中了所有功能和设置，并且由于依赖本地缓存，需要的带宽很少。 Campaign 客户端控制台旨在实现轻松部署，可以从 Internet 浏览器部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成 HTTP(S) 流量。  [了解关于 Campaign 客户端控制台的更多信息](../start/connect.md)。
 
 
 
@@ -66,7 +66,7 @@ Campaign 客户端控制台是一个原生应用程序，它通过标准 Interne
 >[!ENDTABS]
 
 
-您还可以使用 Web 浏览器访问 Campaign。在这种情况下，仅可使用部分 Campaign 功能。[了解详情](#web-browser)
+您还可以使用 Web 浏览器访问 Campaign。 在这种情况下，仅可使用部分 Campaign 功能。 [了解详情](#web-browser)
 
 ### 浏览界面 {#ui-browse}
 
@@ -78,7 +78,7 @@ Campaign 客户端控制台是一个原生应用程序，它通过标准 Interne
 >
 >您可以访问的核心功能列表取决于您的权限和实现方式。
 
-对于每个功能，您都可以在 **[!UICONTROL Browsing]** 部分中访问关键功能集。通过 **[!UICONTROL More]** 链接，可访问所有其他组件。
+对于每个功能，您都可以在 **[!UICONTROL Browsing]** 部分中访问关键功能集。 通过 **[!UICONTROL More]** 链接，可访问所有其他组件。
 
 例如，在浏览到 **[!UICONTROL Profiles and targets]** 选项卡时，您可以访问收件人列表、订阅服务、现有的目标选择工作流以及创建所有这些组件的快捷方式。
 
@@ -90,7 +90,7 @@ Campaign 客户端控制台是一个原生应用程序，它通过标准 Interne
 
 ### 创建元素 {#create-an-element}
 
-使用屏幕左侧 **[!UICONTROL Create]** 部分中的快捷方式添加新元素。您也可以使用列表上方的 **[!UICONTROL Create]** 按钮向当前列表中添加新元素。
+使用屏幕左侧 **[!UICONTROL Create]** 部分中的快捷方式添加新元素。 您也可以使用列表上方的 **[!UICONTROL Create]** 按钮向当前列表中添加新元素。
 
 ![Campaign控制台用户界面，显示如何从“用户档案和目标屏幕”创建收件人](assets/new-recipient.png)
 
@@ -112,16 +112,16 @@ The web access interface is similar to the console interface. From a browser, yo
 
 在此工作区中您可以访问资源管理器树，以浏览所有功能和选项。
 
-* 左侧部分显示 Campaign 资源管理器树，您可以根据权限浏览实例的所有组件和设置。您可以添加和自定义文件夹，详见[此页面](../audiences/folders-and-views.md)。
+* 左侧部分显示 Campaign 资源管理器树，您可以根据权限浏览实例的所有组件和设置。 您可以添加和自定义文件夹，详见[此页面](../audiences/folders-and-views.md)。
 
-* 上部显示当前文件夹中的记录列表。这些列表是完全可自定义的。[了解详情](../config/ui-settings.md)
+* 上部显示当前文件夹中的记录列表。 这些列表是完全可自定义的。 [了解详情](../config/ui-settings.md)
 
 * 下部显示所选记录的详细信息。
 
 
 ## Campaign Web 用户界面 {#ac-web-ui}
 
-从v8.6.1版本开始，Campaign v8用户可以通过Adobe Experience Cloud中央用户界面访问Web环境。 Experience Cloud 是 Adobe 的数字营销应用程序、产品和服务的集成系列。通过其直观的界面，您可以快速访问云应用程序、产品功能和服务。
+从v8.6.1版本开始，Campaign v8用户可以通过Adobe Experience Cloud中央用户界面访问Web环境。 Experience Cloud 是 Adobe 的数字营销应用程序、产品和服务的集成系列。 通过其直观的界面，您可以快速访问云应用程序、产品功能和服务。
 
 ![Adobe Campaign Web 用户界面主页](assets/ac-web-home.png)
 
@@ -130,9 +130,9 @@ The web access interface is similar to the console interface. From a browser, yo
 >Campaign Web用户界面仅适用于通过Adobe ID连接到Campaign的Campaign v8用户。 了解有关 [Adobe 身份管理系统 (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"} 的更多信息。
 >
 
-在[此文档](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=zh-Hans){target="_blank"}中详细了解新的 Campaign Web 用户界面。您还可以在 Campaign Web 用户界面文档中访问[常见问题解答页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/faq){target="_blank"}。
+在[此文档](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=zh-Hans){target="_blank"}中详细了解新的 Campaign Web 用户界面。 您还可以在 Campaign Web 用户界面文档中访问[常见问题解答页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/faq){target="_blank"}。
 
-其他高级功能、配置和设置仅在客户端控制台中可用。要了解有关两种用户界面中的可用功能的更多信息，请访问 [Campaign Web 用户界面文档](https://experienceleague.adobe.com/docs/campaign-web/v8/start/capability-matrix.html?lang=zh-Hans){target="_blank"}。
+其他高级功能、配置和设置仅在客户端控制台中可用。 要了解有关两种用户界面中的可用功能的更多信息，请访问 [Campaign Web 用户界面文档](https://experienceleague.adobe.com/docs/campaign-web/v8/start/capability-matrix.html?lang=zh-Hans){target="_blank"}。
 
 
 ## 支持的语言 {#languages}
@@ -150,7 +150,7 @@ The web access interface is similar to the console interface. From a browser, yo
 
   >[!CAUTION]
   >
-  >在安装过程中选择语言，此后不能更改&#x200B;**&#x200B;**。
+  >在安装过程中选择语言，此后不能更改&#x200B;****。
 
 * 有关Campaign Web用户界面支持的语言，[请参阅Campaign Web用户界面文档](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=zh-Hans#language-pref){target="_blank"}。
 

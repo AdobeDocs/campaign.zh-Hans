@@ -8,7 +8,7 @@ exl-id: bf1ae889-9c07-4acf-8fd0-55b57151bc47
 version: Campaign v8, Campaign Classic v7
 source-git-commit: a2efad26232cd380eea850a589b22b23928253e8
 workflow-type: tm+mt
-source-wordcount: '1941'
+source-wordcount: '1944'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 ## 数据结构 {#data-structure}
 
-数据包的描述是符合&#x200B;**xrk：navtree**&#x200B;数据架构语法的结构化XML文档，如以下示例所示：
+数据包的描述是符合&#x200B;**xrk:navtree**&#x200B;数据架构语法的结构化XML文档，如以下示例所示：
 
 ```xml
 <package>
@@ -93,7 +93,7 @@ XML文档必须以`<package>`元素开始和结束。 后续的任何`<entities>
 
    >[!CAUTION]
    >
-   >如果导出&#x200B;**[!UICONTROL Offer category]**、**[!UICONTROL Offer environment]**、**[!UICONTROL Program]**&#x200B;或&#x200B;**[!UICONTROL Plan]**&#x200B;类型文件夹，请勿选择&#x200B;**xtk：folder**，因为可能会丢失一些数据。 为优惠类别选择与文件夹对应的实体： **nms：offerCategory**，为优惠环境选择与&#x200B;**nms：offerEnv**，为项目选择与&#x200B;**nms：program**&#x200B;对应的实体，为计划选择与&#x200B;**nms：plan**&#x200B;对应的实体。
+   >如果导出&#x200B;**[!UICONTROL Offer category]**、**[!UICONTROL Offer environment]**、**[!UICONTROL Program]**&#x200B;或&#x200B;**[!UICONTROL Plan]**&#x200B;类型文件夹，请勿选择&#x200B;**xtk:folder**，因为可能会丢失一些数据。 选择与文件夹对应的实体：选件类别为&#x200B;**nms:offerCategory**，选件环境为&#x200B;**nms:offerEnv**，程序为&#x200B;**nms:program**，计划为&#x200B;**nms:plan**。
 
    依赖关系机制控制实体导出顺序。 有关详细信息，请参阅[管理依赖项](#manage-dependencies)。
 

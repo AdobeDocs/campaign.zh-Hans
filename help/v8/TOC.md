@@ -7,8 +7,8 @@ description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
 source-git-commit: e3a234c7a29795c2a09fba9063ce17f0a573ab46
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 84%
+source-wordcount: '893'
+ht-degree: 85%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 84%
    + [控制面板](config/self-service.md)
 + 营销活动管理 {#campaigns}
    + [开始使用营销活动](start/campaigns.md)
-   + [营销活动编排文档>](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans)
+   + [Campaign Orchestration文档>](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans)
 + 发送消息 {#send}
    + [开始使用消息功能](start/gs-message.md)
    + [创建您的第一个投放](start/create-message.md)
@@ -83,7 +83,7 @@ ht-degree: 84%
          + [SMPP连接器描述](send/sms/smpp-connector-delivery.md)
    + 推送通知 {#push}
       + [创建和发送推送通知](send/push.md)
-      + 丰富的推送  {#rich-push}
+      + 丰富的推送 {#rich-push}
          + [设计 Android 富推送投放](send/rich-push-android.md)
          + [设计 iOS 富媒体推送投放](send/rich-push-ios.md)
       + [配置推送通知渠道](send/push-settings.md)
@@ -193,7 +193,7 @@ ht-degree: 84%
          + [内置量度计算](reporting/metrics-calculation.md)
       + [自定义报告](reporting/custom-reports.md)
 + 数据管理 {#data}
-   + 查询数据库  {#query}
+   + 查询数据库 {#query}
       + [使用查询编辑器](start/query-editor.md)
       + [设计查询](start/design-queries.md)
       + [定义过滤器条件](start/filter-conditions.md)

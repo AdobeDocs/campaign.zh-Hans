@@ -7,7 +7,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 73bacf61-ac03-4a5c-b03b-6dfbe3fb9538
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '491'
 ht-degree: 2%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 2%
 
    可以使用以下选项：
 
-   * **[!UICONTROL Use a default storage directory]**：始终在处理之前移动文件。 如果选中此选项，则文件将移至默认存储目录(Adobe Campaign安装文件夹的&#x200B;**vars**&#x200B;目录)中。 要指定存储目录，请取消选中该框并在&#x200B;**[!UICONTROL Storage directory]**&#x200B;字段中输入其路径
+   * **[!UICONTROL Use a default storage directory]**：始终在处理之前移动文件。 如果选中此选项，则文件将移至默认存储目录（Adobe Campaign安装文件夹的&#x200B;**vars**&#x200B;目录）中。 要指定存储目录，请取消选中该框并在&#x200B;**[!UICONTROL Storage directory]**&#x200B;字段中输入其路径
    * **[!UICONTROL Number of files]**：输入存储目录中要保留的最大文件数。
    * **[!UICONTROL Maximum size (in Mb)]**：输入存储目录的最大容量（以MB为单位）。
 

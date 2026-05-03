@@ -19,7 +19,7 @@ ht-degree: 0%
 
 * 需要选择哪个表？
 
-  收件人表(**nms：recipient**)
+  收件人表(**nms:recipient**)
 
 * 应在输出列中选择哪些字段？
 

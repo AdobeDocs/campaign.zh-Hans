@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 52d8e2a5-9fdf-498a-bdbd-13a9935a94d6
 source-git-commit: 202a0553f0c736086eca993b9647737732f57d07
 workflow-type: tm+mt
-source-wordcount: '95'
+source-wordcount: '129'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Adobe Campaign与Adobe Journey Optimizer之间的集成允许您在Adobe Journey
 ![](assets/ajo-integration.png)
 
 
-[在此端到端示例中发现此集成](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/orchestrate-journeys/journey-use-cases/business-use-cases/ajo-ac){target="_blank"}。
+[在此端到端示例中发现此集成](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/journey-use-cases/business-use-cases/ajo-ac){target="_blank"}。
 
 
-[请参阅Journey Optimizer文档以了解详情](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-v7-v8){target="_blank"}。
+[请参阅Journey Optimizer文档以了解详情](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-v7-v8){target="_blank"}。

@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 214ad693-d456-47ec-a9c8-199ba23c3d9c
 source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '559'
 ht-degree: 17%
 
 ---
@@ -47,11 +47,11 @@ ht-degree: 17%
 * **[!UICONTROL Mirror page URL]**：插入镜像页面URL，使投放设计器能够检查链接。
 * **[!UICONTROL Offer acceptance URL in unitary mode]**：插入一个URL，以便能够将选件设置为&#x200B;**[!UICONTROL Accepted]**。 （如果启用了交互模块，则此块可用）
 * **[!UICONTROL Registration confirmation]**：插入链接以确认订阅。
-* **[!UICONTROL Registration link]**：插入订阅链接。 在实例设置中定义此链接。默认内容为：“单击此处以注册”。
+* **[!UICONTROL Registration link]**：插入订阅链接。 在实例设置中定义此链接。 默认内容为：“单击此处以注册”。
 * **[!UICONTROL Registration link (with referrer)]**：插入订阅链接，以便识别访客和投放。 在实例设置中定义此链接。
 * **[!UICONTROL Registration page URL]**：插入订阅URL
 * **[!UICONTROL Style of content emails]**&#x200B;和&#x200B;**[!UICONTROL Notification style]**：生成使用预定义的HTML样式设置电子邮件格式的代码。
-* 列入阻止列表 **[!UICONTROL Unsubscription link]**：插入链接以取消订阅所有投放（订阅）。 默认关联内容为：“您之所以收到这封邮件，是因为您一直与&#x200B;***您的组织名称***&#x200B;或关联公司有联系。要不再接收来自&#x200B;***您的组织名称***&#x200B;的邮件，请单击此处。”
+* **[!UICONTROL Unsubscription link]**：插入链接以取消订阅所有投放（订阅）。 默认关联内容为：“您之所以收到这封邮件，是因为您一直与&#x200B;***您的组织名称***&#x200B;或关联公司有联系。 要不再接收来自&#x200B;***您的组织名称***&#x200B;的邮件，请单击此处。”
 
 ## 创建自定义个性化块 {#create-custom-personalization-blocks}
 
@@ -72,7 +72,7 @@ ht-degree: 17%
    * 选择&#x200B;**投放**&#x200B;内容类型。
    * 启用&#x200B;**[!UICONTROL Visible in the customization menus]**&#x200B;选项，以便通过个性化字段插入图标访问此块。
    * 如有必要，请启用&#x200B;**[!UICONTROL The content of the personalization block depends upon the format]**&#x200B;选项，为HTML和文本电子邮件定义两个不同的块。
-   * 输入个性化块的内容(在HTML、文本、JavaScript等)并单击&#x200B;**[!UICONTROL Save]**。
+   * 输入内容（在HTML、文本、JavaScript等） 个性化块的，然后单击&#x200B;**[!UICONTROL Save]**。
 
 保存后，投放编辑器中即可使用新的个性化块。
 
@@ -80,4 +80,4 @@ ht-degree: 17%
 
 请在以下视频中了解如何创建动态内容块以及如何使用动态内容块将电子邮件投放内容个性化。
 
->[!VIDEO](https://video.tv.adobe.com/v/3449016?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)

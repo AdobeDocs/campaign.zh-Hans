@@ -5,22 +5,22 @@ feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 source-git-commit: c9098683077d4a01e269801b4434fcf5eb1f90a4
 workflow-type: tm+mt
-source-wordcount: '1149'
-ht-degree: 18%
+source-wordcount: '1214'
+ht-degree: 8%
 
 ---
 
 # 最新版本 {#latest-release}
 
-此页面列出了 Campaign v8（控制台）**最新版本**&#x200B;中的新增功能、改进和修复。要详细了解 Campaign 版本和升级，请参阅[此页面](upgrades.md)。其他版本列于本文档的先前版本部分。
+此页面列出了 Campaign v8（控制台）**最新版本**&#x200B;中的新增功能、改进和修复。 要详细了解 Campaign 版本和升级，请参阅[此页面](upgrades.md)。 其他版本列于本文档的先前版本部分。
 
-## 版本 8.9.2 {#release-8-9-2}
+## 8.9.2版 {#release-8-9-2}
 
 _2026年3月11日_
 
 >[!CAUTION]
 >
-> 必须升级客户端控制台。在[此页面](../start/connect.md#upgrade-ac-console)中了解如何升级您的客户端控制台。
+> 必须升级客户端控制台。 在[此页面](../start/connect.md#upgrade-ac-console)中了解如何升级您的客户端控制台。
 
 ### 安全性改进 {#security-8-9-2}
 
@@ -34,13 +34,13 @@ _2026年3月11日_
 * 修复了在使用压力规则应用自定义分类规则时投放准备失败的问题。 (NEO-94457)
 * 修复了客户端控制台可能遇到HTTP请求处理失败的问题。 (NEO-94071)
 
-## 版本 8.9.1 {#release-8-9-1}
+## 8.9.1版 {#release-8-9-1}
 
-_2026 年 1 月 27 日_
+_2026年1月27日_
 
 >[!CAUTION]
 >
-> 必须升级客户端控制台。在[此页面](../start/connect.md#upgrade-ac-console)中了解如何升级您的客户端控制台。
+> 必须升级客户端控制台。 在[此页面](../start/connect.md#upgrade-ac-console)中了解如何升级您的客户端控制台。
 
 ### 新增功能 {#new-8-9-1}
 
@@ -48,19 +48,19 @@ _2026 年 1 月 27 日_
 
 此版本附带了一组可在Campaign Web用户界面中使用的功能：
 
-* [多语言传递功能(GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=zh-Hans){target="_blank"}
-* [事务性消息中的用户档案扩充(GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=zh-Hans){target="_blank"}
-* [Adobe Experience Manager实时副本和语言副本](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=zh-Hans){target="_blank"}
-* [内容实验 — A/B测试](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html?lang=zh-Hans){target="_blank"}
-* [持续传递活动](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html?lang=zh-Hans){target="_blank"}
-* [营销活动审批管理](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html?lang=zh-Hans){target="_blank"}
+* [多语言交付功能(GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
+* [事务性消息中的用户档案扩充(GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
+* [Adobe Experience Manager实时副本和语言副本](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html){target="_blank"}
+* [内容实验 — A/B测试](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html){target="_blank"}
+* [持续传递活动](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
+* [营销活动审批管理](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
 
 请参阅Campaign Web UI [发行说明](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=zh-hans){target="_blank"}
 
 ### 安全性改进 {#security-8-9-1}
 
-* Snowflake外部帐户现在支持OAuth2身份验证，为联合数据访问连接提供现代且安全的身份验证方法。 (NEO-87013) [阅读更多](../config/external-accounts.md#snowflake-external-accounts)
-* Databricks外部帐户现在支持通过服务主体（非交互式客户端凭据流）进行OAuth2身份验证，为联合数据访问连接提供安全的身份验证方法。 交互式OAuth2身份验证将在未来版本中提供。 (NEO-87422) [阅读更多](../config/external-accounts.md#databricks-external-accounts)
+* Snowflake外部帐户现在支持OAuth2身份验证，为联合数据访问连接提供现代且安全的身份验证方法。 (NEO-87013) [了解更多](../config/external-accounts.md#snowflake-external-accounts)
+* Databricks外部帐户现在支持通过服务主体（非交互式客户端凭据流）进行OAuth2身份验证，为联合数据访问连接提供安全的身份验证方法。 交互式OAuth2身份验证将在未来版本中提供。 (NEO-87422) [了解更多](../config/external-accounts.md#databricks-external-accounts)
 * 通过限制对授权目录的操作、防止未经授权的访问和潜在的远程代码执行，修复了工作流文件访问漏洞。 (NEO-88460)
 * 向工作流JavaScript代码活动添加了FTP URL列入允许列表控制，将出站FTP连接限制为仅访问授权的地址。 (NEO-89083)
 

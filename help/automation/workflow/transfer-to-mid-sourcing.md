@@ -5,8 +5,8 @@ description: 了解有关传输到中间源工作流的更多信息
 feature: Workflows
 source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 2%
+source-wordcount: '103'
+ht-degree: 1%
 
 ---
 

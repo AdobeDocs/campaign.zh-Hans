@@ -7,8 +7,8 @@ level: Beginner
 exl-id: b63e6905-3bd4-4de4-9e7e-7638e5fc1192
 source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
 workflow-type: tm+mt
-source-wordcount: '1108'
-ht-degree: 1%
+source-wordcount: '1112'
+ht-degree: 3%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 1%
 
 ![](assets/reporting-on-delivery.png)
 
-对于列表、服务、选件等，此原则相同。 如下所示：
+列表、服务、选件等的原理相同，如下所示：
 
 ![](assets/reporting-on-offer.png)
 
@@ -158,7 +158,7 @@ ht-degree: 1%
 
 ## 营销活动报表 {#reports-on-campaigns}
 
-营销活动报表涉及&#x200B;**nms：operation**&#x200B;表中的数据。
+营销活动报表与&#x200B;**nms:operation**&#x200B;表中的数据有关。
 
 <table> 
  <tbody> 
@@ -215,7 +215,7 @@ ht-degree: 1%
 
 ## 服务报表 {#reports-on-services}
 
-服务报表涉及&#x200B;**nms：service**&#x200B;表中的数据。
+服务报表涉及&#x200B;**nms:service**&#x200B;表中的数据。
 
 <table> 
  <tbody> 
@@ -302,7 +302,7 @@ ht-degree: 1%
 
 ## 模拟报表 {#reports-on-simulations}
 
-模拟报告涉及&#x200B;**nms：simulation**&#x200B;表中的数据。
+模拟报表涉及&#x200B;**nms:simulation**&#x200B;表中的数据。
 
 <table> 
  <tbody> 
@@ -335,7 +335,7 @@ ht-degree: 1%
 
 ## Web应用程序报表 {#reports-on-web-applications}
 
-有关Web应用程序的报表涉及&#x200B;**nms：WebApp**&#x200B;表中的数据。
+有关Web应用程序的报告涉及&#x200B;**nms:WebApp**&#x200B;表中的数据。
 
 <table> 
  <tbody> 

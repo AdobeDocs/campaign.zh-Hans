@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
 source-git-commit: 3dd4f6041ef193a0d7ea74a0b2c06183861c2797
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 3%
+source-wordcount: '576'
+ht-degree: 6%
 
 ---
 
@@ -91,7 +91,7 @@ Campaign [控制面板](https://experienceleague.adobe.com/docs/control-panel/us
 
 ### 投放日志分析
 
-列入阻止列表请仔细查阅[投放日志](delivery-dashboard.md#delivery-logs-and-history)以详细检查突出显示的错误类型（、DNS问题、反垃圾邮件规则等）。
+请仔细查阅[投放日志](delivery-dashboard.md#delivery-logs-and-history)以详细检查突出显示的错误类型（、DNS问题、反垃圾邮件规则等）。
 
 ## 相关主题
 

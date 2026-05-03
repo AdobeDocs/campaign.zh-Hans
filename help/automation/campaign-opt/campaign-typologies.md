@@ -6,14 +6,14 @@ feature: Typology Rules
 exl-id: 7832ffe1-eb65-4b37-9fc5-1374516755d9
 source-git-commit: 50688c051b9d8de2b642384963ac1c685c0c33ee
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '482'
 ht-degree: 19%
 
 ---
 
 # 营销活动类型入门{#about-campaign-typologies}
 
-**营销活动优化**&#x200B;是Adobe Campaign模块，允许您控制、筛选和监视投放的发送。 为了避免活动之间发生冲突，Adobe Campaign 可以应用特定的限制规则来测试各种活动组合。这可确保所发送的邮件符合客户的需求与期望以及公司的通信政策。
+**营销活动优化**&#x200B;是Adobe Campaign模块，允许您控制、筛选和监视投放的发送。 为了避免活动之间发生冲突，Adobe Campaign 可以应用特定的限制规则来测试各种活动组合。 这可确保所发送的邮件符合客户的需求与期望以及公司的通信政策。
 
 ![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#typologies-video)
 
@@ -79,11 +79,11 @@ Campaign Optimization加载项提供另外两种类型的&#x200B;**类型规则*
 
 此视频介绍如何在Adobe Campaign中利用类型规则实施疲劳管理。
 
->[!VIDEO](https://video.tv.adobe.com/v/3448341?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/333787?quality=12)
 
 ### 使用预定义过滤器设置疲劳管理
 
-疲劳管理控制消息传送的频率和数量，以避免过度招徕收件人。如果您的活动实例中没有活动优化模块，则可以配置一个预定义过滤器，以收到的消息数过滤目标群体
+疲劳管理控制消息传送的频率和数量，以避免过度招徕收件人。 如果您的活动实例中没有活动优化模块，则可以配置一个预定义过滤器，以收到的消息数过滤目标群体
 此视频介绍如何使用过滤器在Adobe Campaign中实施疲劳管理。
 
->[!VIDEO](https://video.tv.adobe.com/v/3444610?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/333778?quality=12)

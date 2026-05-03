@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 70a63632-f66d-40f2-806d-bde89303936a
 source-git-commit: 26829656f8e06434ca3207c0c7b62ba907765972
 workflow-type: tm+mt
-source-wordcount: '1484'
+source-wordcount: '1504'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 在营销活动中，您可以为每个投放定义：
 
-* 目标受众。 您可以向收件人[的](#send-to-a-group)列表发送消息，或在工作流[中构建](#build-the-main-target-in-a-workflow)受众
+* 目标受众。 您可以向收件人](#send-to-a-group)的[列表发送消息，或在工作流](#build-the-main-target-in-a-workflow)中构建[受众
 * 对照组。 您可以[添加控制组](#add-a-control-group)来监视邮件传递后的收件人行为
 * 种子地址 — 在[本节](../../v8/audiences/test-profiles.md)中了解详情。
 
@@ -102,7 +102,7 @@ To build the delivery target, you can define filtering criteria for the recipien
 
 可以编程该定位以根据计划（调度器）或事件（外部信号、文件导入等）自动执行。
 
-与执行定位工作流相关的操作（启动、停止、暂停等）是&#x200B;**异步**&#x200B;进程：命令已保存，一旦服务器可以应用它就会生效。
+与执行定位工作流相关的操作（启动、停止、暂停等） 是&#x200B;**异步**&#x200B;进程：该命令已保存，一旦服务器可供应用，该命令将立即生效。
 
 利用工具栏图标，可采取有关执行定向工作流的操作。
 
@@ -252,4 +252,4 @@ To build the delivery target, you can define filtering criteria for the recipien
 
 >[!VIDEO](https://video.tv.adobe.com/v/335606?quality=12)
 
-[此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=zh-Hans){target="_blank"}提供了其他Campaign操作方法视频。
+[此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}提供了其他Campaign操作方法视频。

@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 16ad36b7-c13e-4b77-86ca-41c9ef174172
 source-git-commit: edbe7ab49a628436dfb4d27ae17122917d7371e9
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '627'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_user_email_del_tracking_param.png)
 
-[了解有关URL跟踪选项的更多信息](url-tracking.md)
+   [了解有关URL跟踪选项的更多信息](url-tracking.md)
 
 1. 将投放发送给测试收件人。 [了解如何发送投放](configure-and-send.md)
 
@@ -72,14 +72,14 @@ ht-degree: 1%
 1. 转到用于测试的收件人的用户档案页面。 [了解查看用户档案](../audiences/view-profiles.md)
    * 默认情况下，收件人的配置文件页面位于&#x200B;**[!UICONTROL Profiles and Targets > Recipients]**&#x200B;文件夹中。
 
-1. 选择 **[!UICONTROL Tracking]** 选项卡。[了解有关跟踪日志的详细信息](tracking-logs.md)
+1. 选择 **[!UICONTROL Tracking]** 选项卡。 [了解有关跟踪日志的详细信息](tracking-logs.md)
 
    ![](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
 
 1. 验证跟踪记录是否与以下内容一起显示：
-   * **[!UICONTROL Mirror Page]**&#x200B;列中的&#x200B;**[!UICONTROL Type]**&#x200B;值
-   * 电子邮件打开次数的&#x200B;**[!UICONTROL Open]**&#x200B;列中的&#x200B;**[!UICONTROL Type]**&#x200B;值
-   * **[!UICONTROL Email click]**&#x200B;列中的&#x200B;**[!UICONTROL Type]**&#x200B;值表示链接点击次数
+   * **[!UICONTROL Type]**&#x200B;列中的&#x200B;**[!UICONTROL Mirror Page]**&#x200B;值
+   * 电子邮件打开次数的&#x200B;**[!UICONTROL Type]**&#x200B;列中的&#x200B;**[!UICONTROL Open]**&#x200B;值
+   * **[!UICONTROL Type]**&#x200B;列中的&#x200B;**[!UICONTROL Email click]**&#x200B;值表示链接点击次数
 
 ## 跟踪测试疑难解答 {#troubleshooting-tracking-test}
 

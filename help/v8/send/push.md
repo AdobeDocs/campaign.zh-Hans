@@ -21,7 +21,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->Android Firebase Cloud Messaging (FCM)服务的一些重要更改将于2024年发布，可能会影响您的Adobe Campaign实施。 您可能需要更新 Android 推送消息的订阅服务配置，才能支持此更改。您已经可以检查并执行操作。
+>Android Firebase Cloud Messaging (FCM)服务的一些重要更改将于2024年发布，可能会影响您的Adobe Campaign实施。 您可能需要更新 Android 推送消息的订阅服务配置，才能支持此更改。 您已经可以检查并执行操作。
 
 ## 创建您的第一个推送通知 {#push-create}
 
@@ -57,19 +57,19 @@ ht-degree: 7%
 
    ![](assets/push_ios_3.png)
 
-1. 选择介于&#x200B;**[!UICONTROL Notification type]**&#x200B;或&#x200B;**[!UICONTROL General notification (Alert, Sound, Badge)]**&#x200B;之间的&#x200B;**[!UICONTROL Silent notification]**。
+1. 选择介于&#x200B;**[!UICONTROL General notification (Alert, Sound, Badge)]**&#x200B;或&#x200B;**[!UICONTROL Silent notification]**&#x200B;之间的&#x200B;**[!UICONTROL Notification type]**。
 
    ![](assets/push_ios_4.png)
 
    >[!NOTE]
    >
-   >**静默推送**&#x200B;模式允许将“静默”通知发送到移动应用程序。 其中并不通知用户已送达通知。而是直接将通知传送到应用程序。
+   >**静默推送**&#x200B;模式允许将“静默”通知发送到移动应用程序。 其中并不通知用户已送达通知。 而是直接将通知传送到应用程序。
 
 1. 在&#x200B;**[!UICONTROL Title]**&#x200B;字段中，输入要显示在通知中心可用通知列表中的标题标签。
 
    此字段允许您定义iOS通知有效负载的&#x200B;**title**&#x200B;参数的值。
 
-1. 您可以添加iOS通知有效负载的&#x200B;**[!UICONTROL Subtitle]** subtitle **参数的**&#x200B;值。
+1. 您可以添加iOS通知有效负载的&#x200B;**subtitle**&#x200B;参数的&#x200B;**[!UICONTROL Subtitle]**&#x200B;值。
 
 1. 在向导的&#x200B;**[!UICONTROL Message content]**&#x200B;部分中输入消息的内容。
 
@@ -110,7 +110,7 @@ ht-degree: 7%
 
    * **[!UICONTROL Launch image]**：要显示的启动图像文件的名称。 如果用户选择启动您的应用程序，则会显示选定的图像而不是应用程序的启动屏幕。
 
-   * **[!UICONTROL Interruption level]**：
+   * **[!UICONTROL Interruption level]**:
 
       * **[!UICONTROL Active]**：默认设置，系统立即显示通知，在屏幕上亮起，可以播放声音。 通知不会突破焦点模式。
 

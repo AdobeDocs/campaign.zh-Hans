@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 27308b0d-cbfc-4bc6-9061-d771ceac95fd
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 13%
+source-wordcount: '271'
+ht-degree: 12%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 13%
 
 ## 如何设置循环投放
 
-每次执行&#x200B;**循环投放**&#x200B;时，都会创建一个新的投放实例。 例如，如果工作流计划每周运行一次，那么一年后将产生 52 次投放。这也意味着广义日志和跟踪日志将按每个投放实例进行分隔。
+每次执行&#x200B;**循环投放**&#x200B;时，都会创建一个新的投放实例。 例如，如果工作流计划每周运行一次，那么一年后将产生 52 次投放。 这也意味着广义日志和跟踪日志将按每个投放实例进行分隔。
 
 ![循环投放](assets/delivery_recurring.jpg)
 
@@ -53,6 +53,6 @@ ht-degree: 13%
 
 此视频介绍如何配置循环投放和调度程序活动。
 
->[!VIDEO](https://video.tv.adobe.com/v/27510?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
-[此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=zh-Hans){target="_blank"}提供了其他Campaign操作方法视频。
+[此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}提供了其他Campaign操作方法视频。

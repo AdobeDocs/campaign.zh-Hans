@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1200'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 1%
 
    ![](assets/messagecenter_create_custo_1.png)
 
-1. 使用以下语法填写标记： **element name**。@**属性名称**，如下所示。
+1. 使用以下语法填写标记： **element name**.@**attribute name**，如下所示。
 
    ![](assets/messagecenter_create_custo_2.png)
 
@@ -82,11 +82,11 @@ ht-degree: 1%
 
 1. 为其分配标签以便稍后轻松选择，然后输入种子地址（电子邮件或移动电话，具体取决于通信渠道）。
 
-1. 输入外部标识符：利用此可选字段，可输入您的网站上所有应用程序通用的业务键（唯一ID、姓名+电子邮件等），用于标识您的配置文件。 如果此字段也出现在Adobe Campaign营销数据库中，则之后可以将事件与数据库中的用户档案进行协调。
+1. 输入外部标识符：此可选字段允许您输入业务密钥（唯一ID、名称+电子邮件等） 这是您网站上所有应用程序通用的功能，用于识别您的配置文件。 如果此字段也出现在Adobe Campaign营销数据库中，则之后可以将事件与数据库中的用户档案进行协调。
 
    ![](assets/messagecenter_create_seed_2.png)
 
-1. 插入测试数据。 [请参阅Campaign Classic v7文档以了解有关个性化数据的更多信息](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
+1. 插入测试数据。 [请参阅Campaign Classic v7文档以了解有关个性化数据的更多信息](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
 
    ![](assets/messagecenter_create_custo_3.png)
 

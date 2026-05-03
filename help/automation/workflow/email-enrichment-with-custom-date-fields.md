@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 2bb3443c-37d8-4d49-9be1-81217f56823c
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '540'
 ht-degree: 3%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 3%
 
    ![](assets/uc_enrichment_4.png)
 
-1. 单击 **[!UICONTROL Finish]**。然后，在&#x200B;**[!UICONTROL Split]**&#x200B;活动的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Results]**&#x200B;类别中的&#x200B;**[!UICONTROL Generate complement]**。
+1. 单击 **[!UICONTROL Finish]**。 然后，在&#x200B;**[!UICONTROL Split]**&#x200B;活动的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Results]**&#x200B;类别中的&#x200B;**[!UICONTROL Generate complement]**。
 
    利用&#x200B;**[!UICONTROL Complement]**&#x200B;结果，您可以添加投放活动或更新列表。 此处，我们刚刚添加了一个&#x200B;**[!UICONTROL End]**&#x200B;活动。
 
@@ -82,7 +82,7 @@ ht-degree: 3%
 
    ![](assets/uc_enrichment_12.png)
 
-1. 单击 **[!UICONTROL Ok]**。您的扩充现已准备就绪。
+1. 单击 **[!UICONTROL Ok]**。 您的扩充现已准备就绪。
 
 在您的&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动后，您可以添加投放。 在本例中，我们添加了电子邮件投放，以向收件人发送包含有效日期的特殊优惠，供本月庆祝其生日的客户使用。
 
@@ -109,7 +109,7 @@ ht-degree: 3%
            formatDate(targetData.alias of your expression,"%2D.%2M")  %>
    ```
 
-1. 单击 ![](assets/uc_enrichment_16.png)。选择&#x200B;**[!UICONTROL Target extension]**，然后选择之前通过&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动创建的自定义有效日期，以将扩展添加到formatDate表达式中。
+1. 单击 ![](assets/uc_enrichment_16.png)。 选择&#x200B;**[!UICONTROL Target extension]**，然后选择之前通过&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动创建的自定义有效日期，以将扩展添加到formatDate表达式中。
 
    ![](assets/uc_enrichment_19.png)
 

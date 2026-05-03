@@ -7,16 +7,16 @@ level: Beginner, Intermediate
 exl-id: 5256fc15-1878-4064-9c75-7876a3826b83
 source-git-commit: 4c787abbf9b13c08263e602930bc532d73e08a5a
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '376'
 ht-degree: 6%
 
 ---
 
 # 使用目标映射{#gs-target-mappings}
 
-默认情况下，电子邮件和短信投放模板以&#x200B;**[!UICONTROL Recipients]**&#x200B;为目标。 因此，它们的目标映射使用&#x200B;**nms：recipient**&#x200B;表的字段。
+默认情况下，电子邮件和短信投放模板以&#x200B;**[!UICONTROL Recipients]**&#x200B;为目标。 因此，它们的目标映射使用&#x200B;**nms:recipient**&#x200B;表的字段。
 
-对于推送通知，默认目标映射为链接到收件人表的&#x200B;**订阅者应用程序(nms：appSubscriptionRcp)**。
+对于推送通知，默认目标映射为链接到收件人表的&#x200B;**订阅者应用程序(nms:appSubscriptionRcp)**。
 
 您可以为投放使用其他目标映射，或创建新的目标映射。
 
@@ -26,13 +26,13 @@ Adobe Campaign附带以下内置目标映射：
 
 | 名称 | 使用至 | 架构 |
 |---|---|---|
-| 收件人 | 投放到收件人（内置收件人表） | nms：recipient |
-| 访客 | 向通过反向链接（病毒式营销）收集用户档案的访客投放，例如。 | mns：visitor |
-| 订阅 | 发送给订阅了新闻稿等信息服务的收件人 | nms：subscription |
-| 访客订阅 | 向订阅了信息服务的访客投放 | nms：visitorSub |
-| 运算符 | 交付给Adobe Campaign操作员 | nms：operator |
+| 收件人 | 投放到收件人（内置收件人表） | nms:recipient |
+| 访客 | 向通过反向链接（病毒式营销）收集用户档案的访客投放，例如。 | mns:visitor |
+| 订阅 | 发送给订阅了新闻稿等信息服务的收件人 | nms:subscription |
+| 访客订阅 | 向订阅了信息服务的访客投放 | nms:visitorSub |
+| 运算符 | 交付给Adobe Campaign操作员 | nms:operator |
 | 外部文件 | 通过包含投放所需所有信息的文件投放 | 无链接架构，未输入目标 |
-| 订阅者应用程序 | 投放到订阅了应用程序的收件人 | nms：appSubscriptionRcp |
+| 订阅者应用程序 | 投放到订阅了应用程序的收件人 | nms:appSubscriptionRcp |
 
 
 ## 创建一个目标映射 {#new-mapping}

@@ -6,7 +6,7 @@ feature: Typology Rules
 exl-id: 79e442ea-f856-41bf-b065-25cb2ad2c65b
 source-git-commit: 190707b8b1ea5f90dc6385c13832fbb01378ca1d
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '360'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 * **[!UICONTROL Validity period check]** （电子邮件）：检查投放的有效期是否足以发送所有邮件。
 * **[!UICONTROL Proof size check]** （所有渠道）：如果验证目标群体超过100个收件人，则生成错误消息。
 * **[!UICONTROL Wave scheduling check]** （电子邮件）：如果投放被细分为多个阶段，则检查是否计划在有效期结束前开始最后一波投放。
-* **[!UICONTROL Unsubscription link approval]** （电子邮件）：检查每个内容(HTML和文本)中是否存在至少一个退订（选择退出）URL。
+* **[!UICONTROL Unsubscription link approval]** （电子邮件）：检查每个内容（HTML和文本）中是否存在至少一个退订（选择退出）URL。
 
 ## 创建控制规则 {#create-a-control-rule}
 

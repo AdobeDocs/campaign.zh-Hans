@@ -7,7 +7,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: c3a80871-e045-454c-b1ca-8f484d2e14e1
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '814'
 ht-degree: 2%
 
 ---
@@ -192,6 +192,6 @@ vars.currentIsALeapYear == 0 && vars.firstOfMarch == 1
 >
 >对于要执行的工作流，必须启动与Campaign包相关的技术工作流。 有关详细信息，请参阅[技术工作流列表](technical-workflows.md)部分。
 >
->如果为营销活动启用了批准步骤，则仅在确认了这些步骤后才会发送投放。 有关详细信息，请参见   部分。
+>如果为营销活动启用了批准步骤，则仅在确认了这些步骤后才会发送投放。 有关更多信息，请参阅一节。
 
 ![](assets/birthday-workflow_usecase_1.png)

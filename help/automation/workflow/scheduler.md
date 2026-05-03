@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: ed70d2d3-251e-4ee8-84d4-73ad03e8dd35
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '396'
 ht-degree: 8%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 **计划程序**&#x200B;是一个永久性任务，它会在计划指定的时间激活其转换。
 
-**[!UICONTROL Scheduler]** 活动应视为排程开始的时间。图表中的活动定向规则与 **[!UICONTROL Start]** 活动相同。此活动不得包含集客过渡。
+**[!UICONTROL Scheduler]** 活动应视为排程开始的时间。 图表中的活动定向规则与 **[!UICONTROL Start]** 活动相同。 此活动不得包含集客过渡。
 
 ## 最佳实践 {#best-practices}
 
@@ -29,7 +29,7 @@ ht-degree: 8%
 
 **每个分支使用一个调度程序** — 工作流的每个分支应仅有一个&#x200B;**[!UICONTROL Scheduler]**&#x200B;活动。 有关在工作流中使用活动的最佳实践的更多信息，请参阅[工作流最佳实践页面](workflow-best-practices.md#using-activities)。
 
-**阻止工作流并发执行** — 如果工作流是由调度程序触发的，请注意该工作流的多个实例可能同时运行。 例如，如果调度程序每小时触发一次工作流，但工作流执行需要一个小时以上，则您最终可能会遇到重复执行的情况。要避免这种情况，请考虑设置检查以防止多个同时执行。 [了解如何防止同时执行多个工作流](monitor-workflow-execution.md#preventing-simultaneous-multiple-executions)。
+**阻止工作流并发执行** — 如果工作流是由调度程序触发的，请注意该工作流的多个实例可能同时运行。 例如，如果调度程序每小时触发一次工作流，但工作流执行需要一个多小时，则您最终可能会遇到重复执行的情况。要避免这种情况，请考虑设置检查以防止多个同时执行。 [了解如何防止同时执行多个工作流](monitor-workflow-execution.md#preventing-simultaneous-multiple-executions)。
 
 **解决延迟的过渡问题** — 如果工作流正在执行长时间运行的任务（如导入），或者wfserver模块已暂时停止，则计划程序触发的过渡可能会延迟。 要缓解此问题，请限制调度程序的激活时间，以确保任务在定义的时间范围内运行。
 

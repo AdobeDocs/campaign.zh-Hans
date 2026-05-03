@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 1bd8d3e7-aaa9-4e00-96bb-0d30614ab380
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '998'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 4%
 >
 >单击主页上的&#x200B;**[!UICONTROL Explorer]**&#x200B;图标时，将显示树。
 
-提供了内置模板以用于创建尚未定义特定配置的活动。您可以创建和配置活动模板，然后从这些模板创建活动。
+提供了内置模板以用于创建尚未定义特定配置的活动。 您可以创建和配置活动模板，然后从这些模板创建活动。
 
 ## 创建活动模板 {#create-a-campaign-template}
 
@@ -60,7 +60,7 @@ ht-degree: 4%
 
 ![](assets/campaign-template-select-modules.png)
 
-如果未选择任何功能，则与流程相关的元素（菜单、图标、选项、选项卡、子选项卡等）不会出现在模板的界面中或基于此模板的营销策划中。 营销活动详细信息左侧的选项卡，以及可用的选项卡，与模板中选择的功能一致。 例如，**费用和目标**&#x200B;功能未启用，相应的&#x200B;**[!UICONTROL Budget]**&#x200B;选项卡未显示在基于此模板的营销活动中。
+如果未选择某个功能，则将与进程有关的元素（菜单、图标、选项、选项卡、子选项卡等） 不会显示在模板的界面中或基于此模板的营销活动中。 营销活动详细信息左侧的选项卡，以及可用的选项卡，与模板中选择的功能一致。 例如，**费用和目标**&#x200B;功能未启用，相应的&#x200B;**[!UICONTROL Budget]**&#x200B;选项卡未显示在基于此模板的营销活动中。
 
 此外，配置窗口的快捷方式已添加到营销活动仪表板。 启用某个功能后，可通过直接链接从Campaign仪表板访问该功能。
 
@@ -133,13 +133,13 @@ ht-degree: 4%
 
 * **投放概要**
 
-  选择此模块后，将在&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;选项卡中添加一个&#x200B;**[!UICONTROL Documents]**&#x200B;子选项卡，以定义营销活动的投放大纲。 在[本节](marketing-campaign-assets.md#delivery-outlines)中了解有关投放概要的更多信息。
+  选择此模块后，将在&#x200B;**[!UICONTROL Documents]**&#x200B;选项卡中添加一个&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;子选项卡，以定义营销活动的投放大纲。 在[本节](marketing-campaign-assets.md#delivery-outlines)中了解有关投放概要的更多信息。
 
   ![](assets/template-activate-4.png)
 
 * **定位和工作流**
 
-  选择&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;模块后，将添加一个选项卡，允许您基于此模板为营销活动创建一个或多个工作流。 还可以基于此模板为每个营销活动单独配置工作流。请参阅[本节](marketing-campaign-deliveries.md#build-the-main-target-in-a-workflow)以了解有关营销活动工作流的详细信息。
+  选择&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;模块后，将添加一个选项卡，允许您基于此模板为营销活动创建一个或多个工作流。 还可以根据此模板为每个营销活动单独配置工作流。在[本节](marketing-campaign-deliveries.md#build-the-main-target-in-a-workflow)中了解有关营销活动工作流的更多信息。
 
   ![](assets/template-activate-5.png)
 

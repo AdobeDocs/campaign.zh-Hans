@@ -135,4 +135,4 @@ To use the **[!UICONTROL Change Data Source]** activity:
 
 ## 工作流端到端用例{#end-to-end-uc}
 
-在本节](../../automation/workflow/workflow-use-cases.md)中了解利用活动工作流功能[的用例。
+在本节[&#128279;](../../automation/workflow/workflow-use-cases.md)中了解利用活动工作流功能的用例。

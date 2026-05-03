@@ -34,4 +34,4 @@ ht-degree: 20%
 
 ![](assets/create-profile.png)
 
-导入后，您可以创建受众以发送消息。 在本节](create-audiences.md)中了解如何创建受众[。
+导入后，您可以创建受众以发送消息。 在本节[&#128279;](create-audiences.md)中了解如何创建受众。

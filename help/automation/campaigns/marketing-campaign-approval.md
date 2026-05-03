@@ -284,7 +284,7 @@ ht-degree: 1%
 
 在创建定位工作流时，如果批准是自动的（默认模式），Adobe Campaign会显示批准链接，或者在需要批准时立即发送通知。
 
-要选择审批模式（手动或自动），请单击营销活动或营销活动模板的&#x200B;**[!UICONTROL Edit > Properties]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Advanced campaign parameters...]**，最后点击&#x200B;**[!UICONTROL Approvals]**选项卡。
+要选择审批模式（手动或自动），请单击营销活动或营销活动模板的&#x200B;**[!UICONTROL Edit > Properties]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Advanced campaign parameters...]**，最后点击&#x200B;**[!UICONTROL Approvals]**&#x200B;选项卡。
 票面值
 ![](assets/approval-mode.png)
 

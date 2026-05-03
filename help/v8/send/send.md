@@ -32,7 +32,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->投放状态不会实时显示。 在此部分](#email-feedback-service)中了解有关电子邮件反馈服务[的更多信息。
+>投放状态不会实时显示。 在此部分[&#128279;](#email-feedback-service)中了解有关电子邮件反馈服务的更多信息。
 
 ## Campaign MTA {#mta}
 

@@ -28,10 +28,10 @@ ht-degree: 0%
 要为定期活动创建模板，请执行以下步骤：
 
 1. 打开Campaign资源管理器并浏览到&#x200B;**[!UICONTROL Resources > Templates > Campaign templates]**。
-1. 复制内置&#x200B;**[!UICONTROL Recurring campaign]**模板。
+1. 复制内置&#x200B;**[!UICONTROL Recurring campaign]**&#x200B;模板。
    ![](assets/recurring-campaign-duplicate.png)
 1. 输入模板名称和营销活动的持续时间。
-1. 对于此类型的营销活动，添加了&#x200B;**[!UICONTROL Schedule]**选项卡以创建模板执行计划。 使用此选项卡可根据此模板定义营销活动的执行日期。
+1. 对于此类型的营销活动，添加了&#x200B;**[!UICONTROL Schedule]**&#x200B;选项卡以创建模板执行计划。 使用此选项卡可根据此模板定义营销活动的执行日期。
    ![](assets/recurring-campaign-schedule.png)
 
    执行计划的配置模式与工作流的&#x200B;**[!UICONTROL Scheduler]**&#x200B;对象一致。 [了解详情](../workflow/scheduler.md)。

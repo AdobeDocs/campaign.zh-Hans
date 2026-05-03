@@ -39,7 +39,7 @@ Adobe Campaign可管理在线渠道（电子邮件、短信、推送通知）的
 
 ## 为何要向隔离区发送电子邮件、电话或设备 {#quarantine-reason}
 
-Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在错误消息鉴别期间分配。 在此页面](delivery-failures.md)上了解有关投放失败管理[的更多信息。
+Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在错误消息鉴别期间分配。 在此页面[&#128279;](delivery-failures.md)上了解有关投放失败管理的更多信息。
 
 可以捕获两种类型或错误：
 

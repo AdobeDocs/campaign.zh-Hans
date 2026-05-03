@@ -151,7 +151,7 @@ ht-degree: 1%
 >
 >默认情况下，优惠券管理模块使用&#x200B;**nms:recipient**&#x200B;表。 [了解详情](../dev/datamodel.md#ootb-profiles)。
 >
->在此页面](../dev/custom-recipient.md)中了解如何使用自定义收件人表[。
+>在此页面[&#128279;](../dev/custom-recipient.md)中了解如何使用自定义收件人表。
 
 ## 管理优惠券不足 {#managing-insufficient-coupons}
 

@@ -78,7 +78,7 @@ ht-degree: 3%
 
 选择&#x200B;**[!UICONTROL Filtering conditions]**&#x200B;后，**[!UICONTROL Target elements]**&#x200B;部分打开。 在这里，您可以定义用于筛选要收集的数据的规则。
 
-* 要创建新过滤器，请选择构建条件所需的字段、运算符和值。 您还可以合并多个条件，如本页](filter-conditions.md)上的[所述。
+* 要创建新过滤器，请选择构建条件所需的字段、运算符和值。 您还可以合并多个条件，如本页[&#128279;](filter-conditions.md)上的所述。
 
 * 要重用现有的筛选器，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮，选择&#x200B;**[!UICONTROL Predefined filter]**&#x200B;并选择所需的筛选器。
 

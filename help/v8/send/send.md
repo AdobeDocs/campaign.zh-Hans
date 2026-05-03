@@ -75,7 +75,7 @@ Domain Keys Identified Mail (DKIM)是一种用于检测伪造发件人地址（�
 
 在Adobe Campaign中，DKIM电子邮件身份验证签名由MTA执行。
 
-在[DKIM可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication){target="_blank"}中了解有关Adobe的更多信息。
+在[DKIM可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#authentication){target="_blank"}中了解有关Adobe的更多信息。
 
 ## 电子邮件反馈服务 {#email-feedback-service}
 

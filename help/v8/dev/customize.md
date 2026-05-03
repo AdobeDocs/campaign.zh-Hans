@@ -34,7 +34,7 @@ Adobe Campaign利用数据架构来：
 
 * 通过接口，使用&#x200B;**新字段**&#x200B;助手
 
-  请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html#configuring-campaign-classic){target="_blank"}以了解如何在Campaign中快速添加新字段
+  请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=zh-Hans#configuring-campaign-classic){target="_blank"}以了解如何在Campaign中快速添加新字段
 
 * 通过扩展模式，以编程方式实现。 在[本节](../dev/extend-schema.md)中了解如何扩展现有架构。
 
@@ -44,9 +44,9 @@ Adobe Campaign利用数据架构来：
 
 **相关主题**
 
-[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#configuring-campaign-classic){target="_blank"}中的架构版本示例
+[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=zh-Hans#configuring-campaign-classic){target="_blank"}中的架构版本示例
 
-用例：将字段链接到[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#uc-link){target="_blank"}中的现有引用表
+用例：将字段链接到[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=zh-Hans#uc-link){target="_blank"}中的现有引用表
 
 
 ## 修改输入表单
@@ -61,7 +61,7 @@ Adobe Campaign界面使用许多Web应用程序来访问、管理收件人、投
 
 内置Web应用程序存储在资源管理器的&#x200B;**管理>配置> Web应用程序**&#x200B;文件夹中。
 
-请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html#creating-a-single-page-web-application){target="_blank"}以了解如何在Campaign中创建概述页面
+请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/use-cases--creating-overviews.html?lang=zh-Hans#creating-a-single-page-web-application){target="_blank"}以了解如何在Campaign中创建概述页面
 
 
 ## 自定义列表和创建过滤器 {#gs-lists-and-filters}

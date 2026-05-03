@@ -43,7 +43,7 @@ Adobe Campaign中的&#x200B;**[!UICONTROL Audit trail]**&#x200B;功能提供了�
 
 * **选项审核记录**&#x200B;允许您检查活动和对选项所做的最后修改。
 
-  有关选项的更多信息，请参阅此[页面](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options)。
+  有关选项的更多信息，请参阅此[页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options)。
 
 * **投放审核跟踪**&#x200B;允许您检查投放的活动和上次所做的修改。
 

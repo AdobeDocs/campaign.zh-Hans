@@ -156,4 +156,4 @@ HTML渲染通过渲染函数创建。 渲染函数中定义的字段序列必须
 
 当上下文限制为空格时，预览可以忽略上下文。 扩展交互架构以使用入站渠道添加空间中引用的字段时，会出现这种情况。
 
-有关详细信息，请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html){target="_blank"}中的此示例。
+有关详细信息，请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/advanced-parameters/extension-example.html?lang=zh-Hans){target="_blank"}中的此示例。

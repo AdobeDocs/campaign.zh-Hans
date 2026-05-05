@@ -5,10 +5,10 @@ feature: Client Console
 role: User
 level: Beginner
 exl-id: 176cc4f0-8827-4127-9f03-7d75ac8cf917
-source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
+source-git-commit: 5319391ca0f76292e57fafae540b7edb7925892b
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 100%
+source-wordcount: '1111'
+ht-degree: 94%
 
 ---
 
@@ -90,6 +90,19 @@ Campaign 用户使用其 Adobe ID，通过 Adobe 身份管理系统 (IMS) 连接
 >[!NOTE]
 >
 >由于 Microsoft Edge Webview2 不保存代理凭据，因此在首次连接时，控制台可能会要求您进行两次身份验证。
+
+## Adobe ID登录问题疑难解答 {#troubleshoot-ims-login}
+
+如果您在使用Adobe ID登录到&#x200B;**[!UICONTROL Client Console]**&#x200B;时遇到问题，请尝试清除本地WebView2缓存。 在大多数情况下，这可以解决问题。 按照下面的步骤进行操作：
+
+1. 关闭&#x200B;**[!UICONTROL Client Console]**&#x200B;并停止任何正在运行的`nlclient`进程。
+
+1. 从以下位置删除所有`webview2`和`webview2Cache`文件夹。
+
+   * `C:\ProgramData\Neolane\NL_5\nlclient\`
+   * `C:\Users\<username>\AppData\Roaming\Neolane\NL_5\nlclient\`
+
+1. 重新启动&#x200B;**[!UICONTROL Client Console]**&#x200B;并使用您的Adobe ID登录。 下次启动时将自动重新创建缓存文件夹。
 
 ## 升级客户端控制台{#upgrade-ac-console}
 

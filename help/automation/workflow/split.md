@@ -7,8 +7,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: bf4935dd-87dc-4c5c-becf-8c4df61805fd
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '1832'
-ht-degree: 3%
+source-wordcount: '1835'
+ht-degree: 4%
 
 ---
 
@@ -208,14 +208,14 @@ ht-degree: 3%
 
 要使此选项正常工作，集客数据必须具有主键。
 
-例如，如果通过&#x200B;**[!UICONTROL Data loading (RDBMS)]**&#x200B;活动直接从外部数据库(如Netezza，它不支持索引的概念)读取数据，则&#x200B;**[!UICONTROL Split]**&#x200B;活动生成的补码将不正确。
+例如，如果通过&#x200B;**[!UICONTROL Data loading (RDBMS)]**&#x200B;活动直接从外部数据库（如Netezza，它不支持索引的概念）读取数据，则&#x200B;**[!UICONTROL Split]**&#x200B;活动生成的补码将不正确。
 
 为避免这种情况，您可以将&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动拖放到&#x200B;**[!UICONTROL Split]**&#x200B;活动之前。 在&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动中，检查&#x200B;**[!UICONTROL Keep all additional data from the main set]**&#x200B;并在附加数据中指定要用于配置&#x200B;**[!UICONTROL Split]**&#x200B;活动的筛选器的列。 来自&#x200B;**[!UICONTROL Split]**&#x200B;活动的集客过渡的数据随后将本地存储在Adobe Campaign服务器上的临时表中，并且可正确生成补码。
 
 通过&#x200B;**[!UICONTROL Enable overlapping of output populations]**&#x200B;选项，可管理属于多个子集的群体：
 
-* 当未选中该框时，拆分活动将确保收件人不会出现在多个输出转换中，即使它满足多个子集的标准。它们将位于第一个选项卡的目标中，并带有匹配条件。
-* 选中此框后，如果收件人符合筛选条件，则可以在多个子集中找到他们。Adobe Campaign 建议使用专属标准。
+* 当未选中该框时，拆分活动将确保收件人不会出现在多个输出转换中，即使它满足多个子集的标准。 它们将位于符合条件的第一个选项卡的目标中。
+* 选中此框后，如果收件人符合筛选条件，则可以在多个子集中找到他们。 Adobe Campaign 建议使用专属标准。
 
 ## 输入参数 {#input-parameters}
 
@@ -230,6 +230,6 @@ ht-degree: 3%
 * 架构
 * recCount
 
-这组三个值可标识排除项导致的目标。 **[!UICONTROL tableName]**&#x200B;是记录目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms：recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。
+这组三个值可标识排除项导致的目标。 **[!UICONTROL tableName]**&#x200B;是记录目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms:recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。
 
 与补充关联的转换具有相同的参数。

@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 58574983-86c7-46f5-b41b-bae90171048d
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '921'
 ht-degree: 1%
 
 ---
@@ -160,7 +160,7 @@ ht-degree: 1%
 * 架构
 * recCount
 
-这组三个值标识从投放产生的目标。 **[!UICONTROL tableName]**&#x200B;是存储目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms：recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。
+这组三个值标识从投放产生的目标。 **[!UICONTROL tableName]**&#x200B;是存储目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms:recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。
 
 与补充关联的转换具有相同的参数。
 

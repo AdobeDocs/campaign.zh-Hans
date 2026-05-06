@@ -6,7 +6,7 @@ feature: Campaigns
 exl-id: 2b2b668f-87d9-4265-adbc-9098b85c5aab
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1226'
 ht-degree: 1%
 
 ---
@@ -93,7 +93,7 @@ ht-degree: 1%
 
 * 根据所选的优先级级别，**[!UICONTROL Schedule execution for down-time]**&#x200B;选项将模拟启动延迟到不太繁忙的时间段。 模拟需要使用大量数据库资源，因此，例如非紧急模拟应安排在夜间运行。
 * **[!UICONTROL Priority]**&#x200B;是应用于模拟以延迟其触发的级别。
-* **[!UICONTROL Save SQL queries in the log]**。 SQL日志允许您诊断模拟是否以错误结束。 它们还可以帮助您了解为什么模拟速度太慢。 在&#x200B;**[!UICONTROL Audit]**&#x200B;选项卡的&#x200B;**[!UICONTROL SQL logs]**&#x200B;子选项卡中进行模拟后，将显示这些消息。
+* **[!UICONTROL Save SQL queries in the log]**. SQL日志允许您诊断模拟是否以错误结束。 它们还可以帮助您了解为什么模拟速度太慢。 在&#x200B;**[!UICONTROL Audit]**&#x200B;选项卡的&#x200B;**[!UICONTROL SQL logs]**&#x200B;子选项卡中进行模拟后，将显示这些消息。
 
 ## 执行模拟 {#execute-a-simulation}
 

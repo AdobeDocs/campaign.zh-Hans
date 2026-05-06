@@ -7,7 +7,7 @@ role: User
 exl-id: 51f3add9-a083-4db1-84a6-3aaaeec0465c
 source-git-commit: 69ff08567f3a0ab827a118a089495fc75bb550c5
 workflow-type: tm+mt
-source-wordcount: '2428'
+source-wordcount: '2429'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 1%
 1. 单击&#x200B;**[!UICONTROL New]**&#x200B;图标，命名并保存预算。
 1. 输入初始金额：在相关字段中指明分配金额。 其它金额会自动输入。 [了解详情](#calculating-amounts)。
 1. 通过输入起始日期和终止日期来定义有效期。 此信息仅供参考。
-1. 创建费用类别，将营销活动、任务等的成本分配到此预算。 可以链接。 [了解详情](#expense-categories)。
+1. 创建费用类别，将营销活动、任务等分配给此预算的成本链接到这些费用类别。 [了解详情](#expense-categories)。
 
 ![](assets/s_ncs_user_budget_create_and_save.png)
 
@@ -166,7 +166,7 @@ ht-degree: 1%
 
 1. 计算成本
 
-   计算成本取决于相关元素（活动、投放、任务等）及其状态（正在编辑、进行中、已完成）。 在任何情况下，如果指定了实际成本，则计算成本将使用此金额。
+   计算出的成本取决于相关的元素（活动、投放、任务等） 及其状态（正在编辑、正在进行、已完成）。 在任何情况下，如果指定了实际成本，则计算成本将使用此金额。
 
    如果未提供实际成本，则应用以下规则：
 

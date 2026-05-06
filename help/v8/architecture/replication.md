@@ -7,7 +7,7 @@ level: Intermediate
 exl-id: 7b145193-d4ae-47d0-b694-398c1e35eee4
 source-git-commit: b8f774ce507cff67163064b6bd1341b31512c08f
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '831'
 ht-degree: 2%
 
 ---
@@ -115,6 +115,6 @@ var xml = xtk.builder.CopyXxlData(
 
 此视频介绍Adobe Campaign v8使用哪些数据库、为何复制数据、正在复制哪些数据以及复制过程的工作方式等关键概念。
 
->[!VIDEO](https://video.tv.adobe.com/v/3416863?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3416863?captions=chi_hans&quality=12)
 
 [此处](https://experienceleague.adobe.com/zh-hans/docs/campaign-learn/tutorials/overview)提供了其他Campaign v8客户端控制台教程。

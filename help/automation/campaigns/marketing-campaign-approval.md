@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 03be5058-436e-4de9-99a7-91d799aa17f6
 source-git-commit: 24ecf598d3d01f7fb59c70e1c8c81e9c086e653e
 workflow-type: tm+mt
-source-wordcount: '2279'
+source-wordcount: '2287'
 ht-degree: 1%
 
 ---
@@ -195,7 +195,7 @@ ht-degree: 1%
 
 #### 外部内容审批 {#external-content-approval}
 
-利用此选项，可定义负责审批投放呈现的外部操作员，如品牌通信一致性、费率等。 在审批设置窗口中选择&#x200B;**[!UICONTROL External content approval]**&#x200B;选项后，在内容审批和将通知交付给活动负责人之间会添加多个审批步骤：
+利用此选项，可定义负责审批投放呈现的外部操作员，如品牌通信一致性、费率等。在审批设置窗口中选择&#x200B;**[!UICONTROL External content approval]**&#x200B;选项后，在内容审批和将通知交付给活动负责人之间会添加多个审批步骤：
 
 1. 外部内容经理会收到通知电子邮件，告知他们内容已获批准并请求外部批准。
 1. 通知电子邮件包含指向已发送校样的链接（允许您查看投放渲染），以及一个用于批准或拒绝投放内容的按钮。

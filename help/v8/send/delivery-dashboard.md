@@ -5,9 +5,10 @@ feature: Monitoring
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
+exl-id: 254765d3-f664-4200-9a70-f8876f2b2933
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1157'
 ht-degree: 3%
 
 ---
@@ -62,7 +63,7 @@ ht-degree: 3%
 
 ## 投放报告 {#delivery-reports}
 
-可从&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡访问的&#x200B;**[!UICONTROL Summary]**&#x200B;链接允许您查看与投放操作相关的一组报告：常规投放报告、详细报告、投放报告、失败消息的分发、打开率、点击数和交易数等。
+可从&#x200B;**[!UICONTROL Summary]**&#x200B;选项卡访问的&#x200B;**[!UICONTROL Reports]**&#x200B;链接允许您查看与投放操作相关的一组报告：常规投放报告、详细报告、投放报告、失败消息的分发、打开率、点击数和交易数等。
 
 可以根据您的要求配置此选项卡的内容。 有关投放报告的详细信息，请参阅[此章节](../reporting/delivery-reports.md)。
 
@@ -164,4 +165,3 @@ ht-degree: 3%
 >[!NOTE]
 >
 >作为Campaign v8托管云服务用户，服务器基础架构监控由Adobe管理。 如果您在投放发送时遇到永久性性能问题，请联系Adobe客户关怀团队，并提供您的投放日志。
-

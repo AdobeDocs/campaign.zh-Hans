@@ -9,7 +9,7 @@ level: Experienced
 exl-id: 00d39438-a232-49f1-ae5e-1e98c73397e3
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '744'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 >[!AVAILABILITY]
 >
->目前，使用REST API的事务型消息传递可用于电子邮件和短信渠道。 它仅适用于事务事件(扩充数据仅通过有效负荷可用，与Adobe Campaign V8的操作方式类似)。
+>目前，使用REST API的事务型消息传递可用于电子邮件和短信渠道。 它仅适用于事务事件（扩充数据仅通过有效负荷可用，与Adobe Campaign V8的操作方式类似）。
 
 创建并发布事务型事件后，您需要将此事件的触发集成到网站中。
 

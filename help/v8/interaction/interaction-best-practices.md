@@ -7,7 +7,7 @@ role: User, Admin
 exl-id: 28f3a5bc-67f5-413e-b2ba-35c341f9ec5f
 source-git-commit: 1a0b473b005449be7c846225e75a227f6d877c88
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1173'
 ht-degree: 0%
 
 ---
@@ -111,9 +111,9 @@ ht-degree: 0%
 
 ![](assets/Interaction-best-practices-manual-offer-combined.png)
 
-### 扩展nms：offer模式 {#extending-nms-offer-schema}
+### 扩展nms:offer架构 {#extending-nms-offer-schema}
 
-扩展nms：offer模式时，请确保遵循已设置的现成结构：
+扩展nms:offer架构时，请确保遵循已设置的现成结构：
 * 为`<element name="view">`下的内容存储定义任何新字段。
 * 每个新字段需要定义两次。 一次作为常规XML字段，一次作为CDATA XML字段，并在名称后附加“_jst”。 例如：
 

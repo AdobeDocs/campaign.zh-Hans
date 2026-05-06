@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: 62908bba-9cfa-42b6-b463-b601496d535b
 source-git-commit: 4f9183c7f1d12feb255a0050da423647f0fce85e
 workflow-type: tm+mt
-source-wordcount: '2551'
+source-wordcount: '2571'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 利用输入表单，您可以从Adobe Campaign客户端控制台编辑与数据架构关联的实例。 该表单由其名称和命名空间进行标识。
 
-表单的标识键是由命名空间和名称组成的字符串，名称之间用冒号分隔，例如：“cus：contact”。
+表单的标识键是由命名空间和名称组成的字符串，以冒号分隔，例如：“cus:contact”。
 
 ## 编辑输入表单
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ## 窗体结构
 
-表单的描述是遵循表单架构&#x200B;**xtk：form**&#x200B;语法的结构化XML文档。
+表单的描述是遵循表单架构&#x200B;**xtk:form**&#x200B;语法的结构化XML文档。
 
 输入表单的XML文档必须包含具有&#x200B;**名称**&#x200B;和&#x200B;**命名空间**&#x200B;属性的`<form>`根元素，才能填充表单名称和命名空间。
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 </form>
 ```
 
-默认情况下，表单与具有相同名称和命名空间的数据架构关联。 要将表单与不同的名称关联，请将`<form>`元素的&#x200B;**entity-schema**&#x200B;属性设置为架构键的名称。 为了说明输入表单的结构，让我们使用“cus：recipient”示例模式描述一个接口：
+默认情况下，表单与具有相同名称和命名空间的数据架构关联。 要将表单与不同的名称关联，请将`<form>`元素的&#x200B;**entity-schema**&#x200B;属性设置为架构键的名称。 为了说明输入表单的结构，让我们使用“cus:recipient”示例架构描述一个接口：
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -229,7 +229,7 @@ ht-degree: 0%
 
 主容器由&#x200B;**type=&quot;iconbox&quot;**&#x200B;属性定义。 在子容器中声明与图标关联的页面。 图标的标签由&#x200B;**标签**&#x200B;属性填充。
 
-页面的图标是从`img="<image>"`属性中填充的，其中`<image>`是与由名称和命名空间组成的键对应的图像名称（例如“xtk：properties.png”）。
+页面的图标是从`img="<image>"`属性中填充的，其中`<image>`是与由名称和命名空间组成的键对应的图像名称（例如，“xtk:properties.png”）。
 
 **[!UICONTROL Administration > Configuration > Images]**&#x200B;节点中的图像可用。
 
@@ -253,7 +253,7 @@ ht-degree: 0%
 条件语法的示例：
 
 * **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;**：测试字符串类型数据的等同性。 比较值必须用引号括起来。
-* **visibleIf=&quot;@gender >= 1和@gender！= 2&quot;**：数值的条件。
+* **visibleIf=&quot;@gender >= 1和@gender != 2&quot;**：数值的条件。
 * **visibleIf=&quot;@boolean1=true或@boolean2=false&quot;**：对布尔字段进行测试。
 
 ### 条件显示(enabledGroup) {#enabling-container}
@@ -293,7 +293,7 @@ ht-degree: 0%
 
 **[!UICONTROL Modify the link]** （文件夹）图标将启动一个选择表单，其中包含目标元素列表和筛选区域。
 
-**[!UICONTROL Edit link]** （放大镜）图标可启动链接元素的编辑表单。 默认情况下，使用的形式是在目标架构的键上推导的。 **表单**&#x200B;属性允许您强制使用编辑表单的名称（例如“cus：company2”）。
+**[!UICONTROL Edit link]** （放大镜）图标可启动链接元素的编辑表单。 默认情况下，使用的形式是在目标架构的键上推导的。 **表单**&#x200B;属性允许您强制使用编辑表单的名称（例如“cus:company2”）。
 
 您可以通过从输入表单中的链接定义添加&#x200B;**`<sysfilter>`**&#x200B;元素来限制目标元素的选择：
 
@@ -392,7 +392,7 @@ ht-degree: 0%
 </srcSchema>
 ```
 
-例如，我们先从“cus：recipient”模式的输入表单开始。 该列表必须显示与服务订阅的关联，并且必须允许您通过选择现有服务来添加订阅。
+例如，我们从“cus:recipient”架构的输入表单开始。 该列表必须显示与服务订阅的关联，并且必须允许您通过选择现有服务来添加订阅。
 
 ![](assets/do-not-localize/form_exemple12.png)
 
@@ -589,7 +589,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->`<enter>`和`<leave>`   标记可用于页面（“notebook”和“iconbox”类型）的`<container>`个。
+>`<enter>`和`<leave>`标记可用于页面（“notebook”和“iconbox”类型）的`<container>`上。
 
 ### 表达式语言 {#expression-language-}
 

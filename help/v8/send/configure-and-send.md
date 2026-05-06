@@ -7,14 +7,14 @@ level: Beginner
 exl-id: 36033255-1e75-41c1-9816-126777f7330a
 source-git-commit: e0dbeb7402a46f76a26c28dd226bc069d52f2609
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 10%
+source-wordcount: '1209'
+ht-degree: 9%
 
 ---
 
 # 配置和发送投放 {#configure-delivery}
 
-访问投放参数以配置更多设置并定义消息发送方式。您可以定义投放[优先级](#delivery-priority)，设置[波次](#sending-using-multiple-waves)，并测试投放发送。 完成此配置后，您可以按照[此部分](#confirm-delivery)中的说明确认发送。 然后立即发送消息，或根据投放[计划](#schedule-delivery-sending)发送消息。
+访问投放参数以配置更多设置并定义消息发送方式。 您可以定义投放[优先级](#delivery-priority)，设置[波次](#sending-using-multiple-waves)，并测试投放发送。 完成此配置后，您可以按照[此部分](#confirm-delivery)中的说明确认发送。 然后立即发送消息，或根据投放[计划](#schedule-delivery-sending)发送消息。
 
 ## 设置其他参数 {#delivery-additional-parameters}
 
@@ -129,7 +129,7 @@ ht-degree: 10%
    * 要立即发送投放，请选择&#x200B;**[!UICONTROL Deliver as soon as possible]**。
    * 要安排在以后的日期发送，请选择&#x200B;**[!UICONTROL Postpone the delivery]**。 [了解详情](#schedule-delivery-sending)
 
-1. 单击 **[!UICONTROL Analyze]**。有关更多信息，请参阅[此小节](delivery-analysis.md)。
+1. 单击 **[!UICONTROL Analyze]**。 有关更多信息，请参阅[此小节](delivery-analysis.md)。
 
    ![](assets/delivery-send-analyze.png)
 

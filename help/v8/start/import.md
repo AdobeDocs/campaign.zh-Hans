@@ -8,7 +8,7 @@ exl-id: b0f8c057-dd4e-4284-b5a4-157986a1d95a
 version: Campaign v8, Campaign Classic v7
 source-git-commit: adea4eb54f3d519802119646bc501aae2ef5f831
 workflow-type: tm+mt
-source-wordcount: '3845'
+source-wordcount: '3864'
 ht-degree: 34%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 34%
 
 Campaign可帮助您将联系人添加到数据库。 您可以加载文件、计划和自动更新多个联系人，在网站上收集数据，或直接在收件人表格中输入轮廓信息。
 
-轮廓导入在专用模板中进行配置，通过&#x200B;**导入**&#x200B;活动工作流执行。它们可以根据计划自动重复，例如用于在多个信息系统之间自动交换数据。在[此部分](../../automation/workflow/recurring-import-workflow.md)中了解更多信息。
+轮廓导入在专用模板中进行配置，通过&#x200B;**导入**&#x200B;活动工作流执行。 它们可以根据计划自动重复，例如用于在多个信息系统之间自动交换数据。 可在[此部分](../../automation/workflow/recurring-import-workflow.md)中了解详情。
 
 ![](assets/import-wf.png)
 
@@ -56,7 +56,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 1. 在&#x200B;**[!UICONTROL Label]**&#x200B;字段中输入此导入的名称。 您可以添加描述。
 1. 在相应的字段中选择导入类型。 有两种可能的导入类型：**[!UICONTROL Simple import]**&#x200B;用于仅导入一个文件，而&#x200B;**[!UICONTROL Multiple import]**&#x200B;用于在单次执行中导入多个文件。
 
-   对于多次导入，从导入助理第一个屏幕中的&#x200B;**[!UICONTROL Multiple import]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Import type]**。
+   对于多次导入，从导入助理第一个屏幕中的&#x200B;**[!UICONTROL Import type]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Multiple import]**。
 
    ![](assets/s_ncs_user_import_wizard01_2.png)
 
@@ -108,7 +108,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 ![](assets/s_ncs_user_import_wizard03_1.png)
 
-* **[!UICONTROL Destination schema]**&#x200B;字段允许您选择将在其中导入数据的架构。 此信息是必填的。 单击&#x200B;**[!UICONTROL Select link]**&#x200B;图标以选择现有架构之一。 单击&#x200B;**[!UICONTROL Edit link]**&#x200B;以显示选定表的内容。
+* **[!UICONTROL Destination schema]**&#x200B;字段允许您选择将在其中导入数据的架构。 此信息是强制性的。 单击&#x200B;**[!UICONTROL Select link]**&#x200B;图标以选择现有架构之一。 单击&#x200B;**[!UICONTROL Edit link]**&#x200B;以显示选定表的内容。
 * 中央表显示源文件中定义的所有字段。 选择要导入的字段，以将目标文件与其关联。 可以手动或自动映射这些字段。
 
   要手动映射字段，请单击复选框以选择源字段，然后单击第二列以激活与所选字段对应的单元格。 接下来，单击&#x200B;**[!UICONTROL Edit expression]**&#x200B;图标以显示当前表的所有字段。 选择目标字段并单击&#x200B;**[!UICONTROL OK]**&#x200B;以验证映射。
@@ -262,7 +262,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
    1. 导入到文件夹中
 
-      **[!UICONTROL Edit...]**&#x200B;部分的&#x200B;**[!UICONTROL Import into a folder]**&#x200B;链接允许您选择或创建收件人将导入到的文件夹。 默认情况下，如果未定义分区，则会将数据导入到操作员的预设文件夹中。
+      **[!UICONTROL Import into a folder]**&#x200B;部分的&#x200B;**[!UICONTROL Edit...]**&#x200B;链接允许您选择或创建收件人将导入到的文件夹。 默认情况下，如果未定义分区，则会将数据导入到操作员的预设文件夹中。
 
       >[!NOTE]
       >
@@ -282,7 +282,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
    1. 与清单相关联
 
-      **[!UICONTROL Edit...]**&#x200B;部分中的&#x200B;**[!UICONTROL Add recipients to a list]**&#x200B;链接允许您选择或创建收件人将导入到的列表。
+      **[!UICONTROL Add recipients to a list]**&#x200B;部分中的&#x200B;**[!UICONTROL Edit...]**&#x200B;链接允许您选择或创建收件人将导入到的列表。
 
       ![](assets/s_ncs_user_import_wizard05_5.png)
 
@@ -294,7 +294,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
    1. 订阅服务
 
-      若要为所有导入的收件人订阅信息服务，请单击&#x200B;**[!UICONTROL Edit...]**&#x200B;部分的&#x200B;**[!UICONTROL Subscribe recipients to a service]**&#x200B;链接，以选择或创建收件人将订阅的信息服务。 您可以选择&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;选项：此消息的内容在与订阅服务关联的投放模板中定义。
+      若要为所有导入的收件人订阅信息服务，请单击&#x200B;**[!UICONTROL Subscribe recipients to a service]**&#x200B;部分的&#x200B;**[!UICONTROL Edit...]**&#x200B;链接，以选择或创建收件人将订阅的信息服务。 您可以选择&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;选项：此消息的内容在与订阅服务关联的投放模板中定义。
 
       ![](assets/s_ncs_user_import_wizard05_7.png)
 
@@ -316,7 +316,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 导出作业允许您访问数据库并从数据库中提取数据：联系人、客户端、列表、区段等。
 
-例如，在电子表格中使用促销活动跟踪数据（跟踪历史记录等）会很有用。 输出数据可以是 txt、CSV、TAB 或 XML 格式。
+例如，使用营销活动跟踪数据（跟踪历史记录等）会很有用 在电子表格中。 输出数据可以是 txt、CSV、TAB 或 XML 格式。
 
 导出助手允许您配置导出、定义其选项并启动执行。 它是一系列屏幕，其内容取决于导出类型（简单或多个）和操作员的权限。
 
@@ -369,7 +369,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 * 对于&#x200B;**[!UICONTROL Text]**&#x200B;格式，选择分隔符以分隔列（制表符、逗号、分号或自定义）和字符串（单引号、双引号或无）。
 * 对于&#x200B;**[!UICONTROL text]**&#x200B;和&#x200B;**[!UICONTROL CSV]**，您可以选择选项&#x200B;**[!UICONTROL Use first lines as column titles]**。
 * 指示日期格式和数字格式。 为此，请单击相关字段的&#x200B;**[!UICONTROL Edit]**&#x200B;按钮并使用编辑器。
-* 对于包含枚举值的字段，可以选择&#x200B;**[!UICONTROL Export labels instead of internal values of enumerations]**。 例如，标题可以以&#x200B;**1=Mr格式存储。**，**2=小姐**，**3=太太。**。 如果选择此选项，将导出 **Mr.**&#x200B;**、Miss** 和 **Mrs.**。
+* 对于包含枚举值的字段，可以选择&#x200B;**[!UICONTROL Export labels instead of internal values of enumerations]**。 例如，标题可以用&#x200B;**1=Mr.**，**2=Miss**，**3=Mrs.**&#x200B;的形式存储。如果选择此选项，将导出&#x200B;**先生**、**小姐**&#x200B;和&#x200B;**太太**。
 
 ### 第 4 步 - 数据选择 {#step-4---data-selection}
 
@@ -437,7 +437,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 ## 通过 Web 应用程序收集轮廓
 
-使用 Campaign 创建 Web 窗体，轻松高效地收集和管理轮廓信息。您可以将这些表单共享到您的网站中，这样您的联系人就可以轻松地提供其信息。他们的信息会被发送到 Campaign，用来创建他们的轮廓或更新其信息（如果数据库中已存在这些信息）。
+使用 Campaign 创建 Web 窗体，轻松高效地收集和管理轮廓信息。 您可以将这些表单共享到您的网站中，这样您的联系人就可以轻松地提供其信息。 他们的信息会被发送到 Campaign，用来创建他们的轮廓或更新其信息（如果数据库中已存在这些信息）。
 
 ![](assets/web-form-page.png)
 

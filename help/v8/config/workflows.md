@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 0be1c5f5-f07d-46dc-bebc-5eb50f466547
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 4%
+source-wordcount: '643'
+ht-degree: 8%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 4%
 
 * [内置技术工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=zh-Hans){target="_blank"}
 
-* [监视工作流执行](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hans){target="_blank"}
+* [监测工作流执行](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hans){target="_blank"}
 
 * [在营销活动工作流中构建受众](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans){target="_blank"}
 
@@ -97,9 +97,9 @@ To use the **[!UICONTROL Change Data Source]** activity:
 
 创建工作流后，您可以使用&#x200B;**[!UICONTROL Properties]**&#x200B;按钮访问其他选项以进行进一步配置。
 
-在&#x200B;**此页面**&#x200B;中了解有关[工作流属性](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/workflow-properties.html?lang=zh-Hans){target="_blank"}的更多信息。
+在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/workflow-properties.html?lang=zh-Hans){target="_blank"}中了解有关&#x200B;**工作流属性**&#x200B;的更多信息。
 
-从工作流&#x200B;**[!UICONTROL Execution]**&#x200B;的&#x200B;**[!UICONTROL Properties]**&#x200B;选项卡中，您可以选择将工作流链接到不同的仓库并优化工作负载管理。 有关&#x200B;**仓库**&#x200B;的详细信息，请参阅[Snowflake文档](https://docs.snowflake.com/en/user-guide/warehouses-overview.html){target="_blank"}。
+从工作流&#x200B;**[!UICONTROL Properties]**&#x200B;的&#x200B;**[!UICONTROL Execution]**&#x200B;选项卡中，您可以选择将工作流链接到不同的仓库并优化工作负载管理。 有关&#x200B;**仓库**&#x200B;的详细信息，请参阅[Snowflake文档](https://docs.snowflake.com/en/user-guide/warehouses-overview.html){target="_blank"}。
 
 ![](assets/warehouse.png)
 
@@ -135,4 +135,4 @@ To use the **[!UICONTROL Change Data Source]** activity:
 
 ## 工作流端到端用例{#end-to-end-uc}
 
-在本节[中了解利用活动工作流功能](../../automation/workflow/workflow-use-cases.md)的用例。
+在本节[&#128279;](../../automation/workflow/workflow-use-cases.md)中了解利用活动工作流功能的用例。

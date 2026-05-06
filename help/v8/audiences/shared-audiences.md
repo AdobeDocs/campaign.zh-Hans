@@ -7,8 +7,8 @@ level: Beginner
 hide: true
 source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 73%
+source-wordcount: '260'
+ht-degree: 75%
 
 ---
 
@@ -22,12 +22,12 @@ ht-degree: 73%
 
 * 从不同的 Adobe Experience Cloud 解决方案导入共享受众/区段到 Adobe Campaign 中。 可通过 Adobe Campaign 中的列表导入受众。
 
-* 以 Adobe Experience Cloud 共享受众的形式导出列表。您可在所用的不同 Adobe Experience Cloud 解决方案中使用这些受众。在工作流中完成定位后，可使用专门的 **[!UICONTROL Update shared audience]** 活动导出受众。
+* 以 Adobe Experience Cloud 共享受众的形式导出列表。 您可在所用的不同 Adobe Experience Cloud 解决方案中使用这些受众。 在工作流中完成定位后，可使用专门的 **[!UICONTROL Update shared audience]** 活动导出受众。
 
 此集成支持两种类型的 Adobe Experience Cloud ID：
 
 * **访客 ID**：此标识符可使 Adobe Experience Cloud 访客与 Adobe Campaign 收件人相协调。
-* **声明的 ID**：此标识符可使所有类型的数据与 Adobe Campaign 数据库中的元素相协调。它是 Adobe Campaign 中的预定义合并关键项。
+* **声明的 ID**：此标识符可使所有类型的数据与 Adobe Campaign 数据库中的元素相协调。 它是 Adobe Campaign 中的预定义合并关键项。
 
   >[!NOTE]
   >

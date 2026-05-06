@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: ad75f01e-2c6c-4607-b15a-8870d399002a
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 8%
+source-wordcount: '940'
+ht-degree: 9%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 8%
 
 * **[!UICONTROL Use recipient preferences]** （默认模式）
 
-  根据收件人用户档案中存储的数据(默认存储在&#x200B;**[!UICONTROL email format]**&#x200B;字段(@emailFormat)中)定义消息格式。 如果收件人希望以特定格式接收消息，则会将该格式用于发送的邮件。如果未填写该字段，则会发送multipart-alternative消息（请参阅下文）。
+  根据收件人用户档案中存储的数据(默认存储在&#x200B;**[!UICONTROL email format]**&#x200B;字段(@emailFormat)中)定义消息格式。 如果收件人希望以特定格式接收消息，则会将该格式用于发送的邮件。 如果未填写该字段，则会发送multipart-alternative消息（请参阅下文）。
 
 * **[!UICONTROL Let recipient mail client choose the most appropriate format]**
 
@@ -59,7 +59,7 @@ ht-degree: 8%
 
 例如，您希望发送包含日语字符的电子邮件。 为确保向日本的收件人正确显示所有字符，您可能需要使用支持日语字符的编码而不是标准UTF-8。
 
-为此，请选择&#x200B;**[!UICONTROL Force the encoding used for messages]**&#x200B;部分中的&#x200B;**[!UICONTROL Character encoding]**&#x200B;选项，然后从显示的下拉列表中选择编码。
+为此，请选择&#x200B;**[!UICONTROL Character encoding]**&#x200B;部分中的&#x200B;**[!UICONTROL Force the encoding used for messages]**&#x200B;选项，然后从显示的下拉列表中选择编码。
 
 ![](assets/email-smtp-encoding.png)
 
@@ -91,7 +91,7 @@ ht-degree: 8%
 >
 >要在电子邮件标头中显示一键式取消订阅URL，收件人的电子邮件客户端必须支持此功能。
 
-要启用此功能，请在投放属性的&#x200B;**[!UICONTROL Addition of One-click List-Unsubscription Header]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL SMTP]**&#x200B;选项。
+要启用此功能，请在投放属性的&#x200B;**[!UICONTROL SMTP]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Addition of One-click List-Unsubscription Header]**&#x200B;选项。
 
 >[!NOTE]
 >
@@ -132,7 +132,7 @@ ht-degree: 8%
 
 >[!IMPORTANT]
 >
->高级用户可随时添加脚本以插入其他SMTP标头。
+>高级用户可随时添加脚本以插入其他 SMTP 标头。
 >
 >此脚本的语法必须符合此内容类型的要求：没有未使用的空格，没有空行等。
 
@@ -141,6 +141,6 @@ ht-degree: 8%
 
 ## 生成镜像页面 {#generating-mirror-page}
 
-镜像页面是可通过 Web 浏览器在线访问的 HTML 页面。其内容与电子邮件的内容相同。如果收件人尝试在收件箱中查看电子邮件时遇到渲染问题或图像损坏，此功能会很有用。
+镜像页面是可通过 Web 浏览器在线访问的 HTML 页面。 其内容与电子邮件的内容相同。 如果收件人尝试在收件箱中查看电子邮件时遇到渲染问题或图像损坏，此功能会很有用。
 
 在[本节](mirror-page.md)中了解如何插入指向镜像页面的链接

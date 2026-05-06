@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 1da45746-4d69-415b-a793-9a08ce80091d
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '474'
 ht-degree: 48%
 
 ---
@@ -22,23 +22,23 @@ Adobe Campaign简化了个性化：您可以使用单个[消息模板](create-te
 
 ## Personalization策略 {#personalization-strategy}
 
-使用 Campaign 创建动态内容并发送个性化消息。可以结合个性化功能来改进您的消息并创建自定义用户体验。
+使用 Campaign 创建动态内容并发送个性化消息。 可以结合个性化功能来改进您的消息并创建自定义用户体验。
 
 可以通过以下方式个性化邮件内容：
 
 * 插入动态&#x200B;**个性化字段**
 
-  个性化字段用于邮件的第一级个性化。您可以从个性化编辑器中选择数据库中可用的任何字段。对于投放，您可以选择与收件人、邮件或投放相关的任何字段。可将这些个性化属性插入邮件的主题行或正文中。[了解详情](personalization-fields.md)。
+  个性化字段用于邮件的第一级个性化。 您可以从个性化编辑器中选择数据库中可用的任何字段。 对于投放，您可以选择与收件人、邮件或投放相关的任何字段。 可将这些个性化属性插入邮件的主题行或正文中。 [了解详情](personalization-fields.md)。
 
   以下语法可在您的内容中插入收件人的城市：&lt;%= recipient.location.city %>。
 
 * 插入预定义的&#x200B;**内容块**
 
-  Campaign 附带了一组个性化块，其中包含可插入投放中的特定渲染。例如，您可以添加徽标、问候邮件或指向邮件的镜像页面的链接。可以从个性化编辑器的专用条目中获得内容块。[了解详情](personalization-blocks.md)。
+  Campaign 附带了一组个性化块，其中包含可插入投放中的特定渲染。 例如，您可以添加徽标、问候邮件或指向邮件的镜像页面的链接。 可以从个性化编辑器的专用条目中获得内容块。 [了解详情](personalization-blocks.md)。
 
 * 创建&#x200B;**条件内容**
 
-  例如，配置条件内容以根据收件人的轮廓添加动态个性化内容。满足特定条件时可插入文本块和/或图像。[了解详情](conditions.md)。
+  例如，配置条件内容以根据收件人的轮廓添加动态个性化内容。 满足特定条件时可插入文本块和/或图像。 [了解详情](conditions.md)。
 
 <!--
 * Add **personalized offers**
@@ -53,7 +53,7 @@ Adobe Campaign简化了个性化：您可以使用单个[消息模板](create-te
 
 要改进投放保护，您可以为个性化阶段设置超时期限。
 
-在&#x200B;**[!UICONTROL Delivery]**&#x200B;的&#x200B;**[!UICONTROL Delivery properties]**&#x200B;选项卡中，为&#x200B;**[!UICONTROL Maximum personalization run time]**&#x200B;选项选择最大值（以秒为单位）。
+在&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡中，为&#x200B;**[!UICONTROL Maximum personalization run time]**&#x200B;选项选择最大值（以秒为单位）。
 
 在预览或发送期间，如果个性化阶段超过了您在此字段中设置的最大时间，则流程会中止，并出现错误消息，投放会失败。
 

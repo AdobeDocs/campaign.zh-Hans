@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 911096e2-0307-46a8-873c-ee2248b8e3e8
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '387'
 ht-degree: 2%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 2%
 
    * **[!UICONTROL Edit query]**&#x200B;以将筛选器应用到优惠目标。
 
-   * 资格规则概述。要查看这些规则，请单击&#x200B;**[!UICONTROL Schedule and eligibility rules of the offer]**&#x200B;链接。
+   * 资格规则概述。要查看其内容，请单击&#x200B;**[!UICONTROL Schedule and eligibility rules of the offer]**&#x200B;链接。
 
 ## 添加后备类别
 

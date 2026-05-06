@@ -7,7 +7,7 @@ level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
 source-git-commit: 925f8152d28f60f876c5ef4420064fa0d71cdb9d
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '801'
 ht-degree: 2%
 
 ---
@@ -53,9 +53,9 @@ ht-degree: 2%
 
 1. 将Adobe提供给您的策略应用到您的AWS帐户，以便授予对资源的访问权限。 [了解详情](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"}。<!--link TBC-->
 
-1. 与[共享您的](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"}Amazon资源名称（键ARN）[!DNL Adobe Campaign]。 为此，请联系您的Adobe代表。<!--or Adobe transition manager?-->
+1. 与[!DNL Adobe Campaign]共享您的[Amazon资源名称（键ARN）](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html){target="_blank"}。 为此，请联系您的Adobe代表。<!--or Adobe transition manager?-->
 
-1. 创建和测试Amazon EventBridge规则，以启用Adobe对密钥的监控&#x200B;。 [了解详情](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}。
+1. 创建并测试Amazon EventBridge规则，以启用Adobe对密钥的监控。&#x200B;[了解详情](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html){target="_blank"}。
 
 
 ### 护栏和限制 {#cmk-callouts}
@@ -66,9 +66,9 @@ ht-degree: 2%
 
 * 仅支持[AWS密钥管理服务](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} (KMS)密钥。 不能使用KMS之外的客户生成的键&#x200B;。
 
-* 首次设置期间预计会出现停机时间。&#x200B;AEM停机时间持续时间取决于数据库的大小。
+* 首次设置期间预计会出现停机时间。 停&#x200B;机时间持续时间取决于数据库的大小。
 
-* 作为客户，您拥有和维护密钥。 如果密钥发生任何更改，您必须联系Adobe&#x200B;。
+* 作为客户，您拥有和维护密钥。 如果密钥发生任何更改，您必须联系&#x200B;。
 
 * 您可以使用[AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html){target="_blank"}审核您的密钥，并在需要时撤消它。&#x200B;
 

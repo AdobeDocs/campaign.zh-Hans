@@ -7,7 +7,7 @@ role: User
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
 source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
 workflow-type: tm+mt
-source-wordcount: '3757'
+source-wordcount: '3764'
 ht-degree: 0%
 
 ---
@@ -411,7 +411,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 ![](assets/s_ncs_user_task_dependencies_from_board.png)
 
-对于分组任务，Adobe Campaign会自动将父任务的结束日期作为开始日期分配给子任务。 例如，如果&#x200B;**创建邀请**&#x200B;任务于10月15日下午3:30结束，则&#x200B;**发送邀请电子邮件**&#x200B;子任务将于10月15日下午3:30开始。
+对于分组任务，Adobe Campaign会自动将父任务的结束日期作为开始日期分配给子任务。 例如，如果&#x200B;**创建邀请**&#x200B;任务于10月15日3:30PM结束，则&#x200B;**发送邀请电子邮件**&#x200B;子任务将于10月15日3:30PM开始。
 
 此外，如果延迟父任务的结束，其某些子任务可能会受到影响：这些是状态为&#x200B;**[!UICONTROL Scheduled]**&#x200B;且开始日期早于父任务的新结束日期的子任务。 任务的持续时间保持不变。 如果子任务的开始日期晚于父任务的新结束日期，则子任务不会受到影响。
 

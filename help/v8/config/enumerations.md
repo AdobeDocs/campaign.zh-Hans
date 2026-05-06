@@ -5,9 +5,10 @@ feature: Configuration, Application Settings
 role: Developer
 version: Campaign v8, Campaign Classic v7
 level: Intermediate, Experienced
-source-git-commit: a1f479538a2d93a2ec13e35cb6813e09c8c4a5f8
+exl-id: 799978e7-025d-4ab0-b198-0e568e4f8ea9
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '804'
 ht-degree: 1%
 
 ---
@@ -59,16 +60,16 @@ ht-degree: 1%
 
 要创建别名，请执行以下步骤：
 
-1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;选项卡的&#x200B;**[!UICONTROL Alias]**&#x200B;按钮。
+1. 单击&#x200B;**[!UICONTROL Alias]**&#x200B;选项卡的&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
 1. 输入要转换的别名，然后在下拉列表中选择要应用的值。
 
    ![创建新别名](assets/new-alias.png)
 
 1. 单击&#x200B;**[!UICONTROL Ok]**&#x200B;并确认。
 
-1. 保存您的更改。值替换由&#x200B;**别名清理**&#x200B;工作流执行，该工作流每晚执行。 请参阅[运行数据清理](#running-data-cleansing)。
+1. 保存您的更改。 值替换由&#x200B;**别名清理**&#x200B;工作流执行，该工作流每晚执行。 请参阅[运行数据清理](#running-data-cleansing)。
 
-对于基于此枚举的所有字段，当用户在“公司”字段(在Adobe Campaign客户端控制台的Web窗体中)中输入值&#x200B;**Adobe**&#x200B;时，该值将自动被值&#x200B;**Adobe**&#x200B;替换。
+对于基于此枚举的所有字段，当用户在“公司”字段（在Adobe Campaign客户端控制台的Web窗体中）中输入值&#x200B;**Adobe**&#x200B;时，该值将自动被值&#x200B;**Adobe**&#x200B;替换。
 
 ### 将错误值转换为别名{#convert-to-alias}
 
@@ -92,7 +93,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->您可以在&#x200B;**[!UICONTROL Hits]**&#x200B;子选项卡的&#x200B;**[!UICONTROL Alias]**&#x200B;列中跟踪别名的发生次数。 它可以显示输入此值的次数。  [了解详情](#calculate-entry-occurrences)。
+>您可以在&#x200B;**[!UICONTROL Alias]**&#x200B;子选项卡的&#x200B;**[!UICONTROL Hits]**&#x200B;列中跟踪别名的发生次数。 它可以显示输入此值的次数。  [了解详情](#calculate-entry-occurrences)。
 
 ### 运行数据清理 {#running-data-cleansing}
 

@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
 source-git-commit: c7f139dd7f139ba421eb034f4d8911671b3b3332
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '838'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->投放状态不会实时显示。 在此部分[中了解有关电子邮件反馈服务](#email-feedback-service)的更多信息。
+>投放状态不会实时显示。 在此部分[&#128279;](#email-feedback-service)中了解有关电子邮件反馈服务的更多信息。
 
 ## Campaign MTA {#mta}
 

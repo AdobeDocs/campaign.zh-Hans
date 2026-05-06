@@ -5,10 +5,11 @@ description: 了解在使用Adobe Campaign时如何自定义表情符号列表
 feature: Email, Push
 role: User, Developer
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+exl-id: 8a714eef-ea72-48f3-86d9-5a98b8ddcc6f
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 2%
+source-wordcount: '463'
+ht-degree: 1%
 
 ---
 
@@ -66,6 +67,6 @@ ht-degree: 2%
 
    ![](assets/emoticon_4.png)
 
-1. 如果&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;弹出窗口中显示以下表情符号，则表示未正确配置这些表情符号。 检查&#x200B;**[!UICONTROL U+]**&#x200B;中您的&#x200B;**[!UICONTROL Display order]**&#x200B;代码或&#x200B;**[!UICONTROL Emoticon list]**&#x200B;是否正确。
+1. 如果&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;弹出窗口中显示以下表情符号，则表示未正确配置这些表情符号。 检查&#x200B;**[!UICONTROL Emoticon list]**&#x200B;中您的&#x200B;**[!UICONTROL U+]**&#x200B;代码或&#x200B;**[!UICONTROL Display order]**&#x200B;是否正确。
 
    ![](assets/emoticon_6.png)

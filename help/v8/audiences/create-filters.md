@@ -8,8 +8,8 @@ exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 version: Campaign v8, Campaign Classic v7
 source-git-commit: ec1b41ccf532b044e75c69e795eabfb19a523ec2
 workflow-type: tm+mt
-source-wordcount: '1883'
-ht-degree: 0%
+source-wordcount: '1943'
+ht-degree: 1%
 
 ---
 
@@ -144,7 +144,7 @@ Adobe Campaign中提供了以下类型的过滤器：
    <td> 选择在过去Y个月内至少点击过投放X次的收件人。<br /> </td> 
   </tr> 
   <tr> 
- <td> 列入阻止列表电子邮件地址<br /> </td> 
+ <td> 电子邮件地址<br /> </td> 
     <td> 选择电子邮件地址位于阻止列表上的收件人。<br/> </td>
   </tr> 
   <tr> 
@@ -303,7 +303,7 @@ Adobe Campaign中提供了以下类型的过滤器：
 
 定义筛选条件。 在下面的示例中，您将筛选其帐号不以NL开头的收件人以及居住在巴黎或洛杉矶的收件人。
 
-1. 单击&#x200B;**[!UICONTROL Edit expression]**&#x200B;列的&#x200B;**[!UICONTROL Expression]**&#x200B;图标。
+1. 单击&#x200B;**[!UICONTROL Expression]**&#x200B;列的&#x200B;**[!UICONTROL Edit expression]**&#x200B;图标。
 
    ![](assets/edit-exp.png)
 

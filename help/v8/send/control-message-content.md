@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
 source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '769'
 ht-degree: 5%
 
 ---
@@ -51,19 +51,19 @@ ht-degree: 5%
 
 在每次发送之前，必须检查选择退出链接是否正常工作。 例如，在发送校样时，请确保链接有效，表单处于联机状态，并且验证此操作会将&#x200B;**[!UICONTROL No longer contact this recipient]**&#x200B;字段的值更改为&#x200B;**[!UICONTROL Yes]**。 您应该系统地进行此检查，因为输入链接或更改表单时始终可能存在人为错误。
 
-了解如何在此部分[中插入选择退出链接](personalization-blocks.md#ootb-personalization-blocks)。
+了解如何在此部分[&#128279;](personalization-blocks.md#ootb-personalization-blocks)中插入选择退出链接。
 
 如果在开始投放后检测到有关退订的问题，则仍然可以为单击选择退出链接的收件人手动执行退订（例如使用批量更新功能），即使他们无法确认自己的选择。
 
 通常，不要试图通过要求希望选择退出的收件人（例如，填写其电子邮件地址或姓名等字段）来妨碍他们。 表单应只有一个验证按钮，并且只应对加密的标识符执行协调。
 
-请求额外确认不可靠：用户可能有两个电子邮件地址被重定向到同一个框(例如：firstname.lastname@club.com和firstname.lastname@internet-club.com)。 如果收件人只能记住第一个地址，并希望通过发送给另一个地址的邮件取消订阅，则表单将拒绝此操作，因为加密标识符和输入的电子邮件地址不匹配。
+请求额外确认不可靠：用户可能有两个电子邮件地址被重定向到同一个框（例如：firstname.lastname@club.com和firstname.lastname@internet-club.com）。 如果收件人只能记住第一个地址，并希望通过发送给另一个地址的邮件取消订阅，则表单将拒绝此操作，因为加密标识符和输入的电子邮件地址不匹配。
 
 ## 收件箱呈现 {#message-responsiveness}
 
 在发送消息之前，您可以通过检查消息在不同设备上的外观来测试消息的响应能力。 这是为了确保以最佳方式在各种Web客户端、Web邮件和设备上显示该内容。
 
-为了实现此功能，Adobe Campaign 会捕捉渲染状态并提供在专用报告中。这样，您就可以预览不同消息接收环境下所收到之消息的显示情况。
+为了实现此功能，Adobe Campaign 会捕捉渲染状态并提供在专用报告中。 这样，您就可以预览不同消息接收环境下所收到之消息的显示情况。
 
 有关此内容的详细信息，请参阅[收件箱呈现](inbox-rendering.md)。
 

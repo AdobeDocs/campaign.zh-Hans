@@ -7,7 +7,7 @@ level: Intermediate
 exl-id: abab6f15-43ea-42fc-817b-8dbd88df82f7
 source-git-commit: e349e9f236c3eeb28ffe96bcc5ec72ab64c4c127
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1353'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ SMS消息使用特殊的7位编码，通常称为GSM7编码。  维基百科有[
 如果出现编码问题，请检查以下重要事项：
 * 首先，确保您知道哪些字符属于哪种编码。 GSM7由于其部分支持变音符号（重音符号）而臭名昭著。 尤其是在法语中，é和è是GSM7的一部分，但ê、â或ï不是。 西班牙语也是如此。
 * 带有cedilla (c)的C在GSM7字母表中仅以大写形式出现，但有些手机以小写或“智能”大小写呈现：一般建议是完全避免这种情况并移除cedilla（法语仍然可读）或切换到UCS-2。
-* **请勿在短信中使用ASCII！**，除非SMPP提供商明确要求：此编码会浪费空间，因为它有8位字符且覆盖范围比GSM7少。 CDMA网络（用于北美）可能需要此编码。
+* **请勿在短信中使用ASCII！** 除非SMPP提供商明确要求：这种编码会浪费空间，因为它有8位字符且覆盖范围比GSM7小。 CDMA网络（用于北美）可能需要此编码。
 * 并非始终支持Latin-1。 在尝试使用Latin-1之前，请检查与您的SMPP提供商的兼容性。
 * Adobe Campaign连接器不支持国家语言转换表。 必须改用UCS-2或其他data_coding。
 * UCS-2和UTF-16经常被手机混合使用。 对于发送表情符号和其他UCS-2中不存在的少见字符的人来说，这是一个问题。

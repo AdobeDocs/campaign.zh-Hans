@@ -8,8 +8,8 @@ exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
 version: Campaign v8, Campaign Classic v7
 source-git-commit: b24e05f152bc299ea7953856bfa71950b5cc9837
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 11%
+source-wordcount: '533'
+ht-degree: 18%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 11%
 
 用户档案表示存储在Adobe Campaign数据库中的联系人。 默认情况下，**个收件人**&#x200B;是发送电子邮件、短信或直邮等投放时使用的主要用户档案。 存储在数据库中的收件人数据允许您定义和筛选目标受众，并个性化投放内容。 除了收件人之外，还有其他用于特定目的的配置文件类型。 例如，种子用户档案允许您在将投放发送给实际受众之前对其进行测试。
 
-在本节[中了解如何导入、更新和管理用户档案和受众](../audiences/gs-audiences.md)。
+在本节[&#128279;](../audiences/gs-audiences.md)中了解如何导入、更新和管理用户档案和受众。
 
 ## 创建列表{#create-lists}
 
@@ -43,7 +43,7 @@ ht-degree: 11%
 
 活动用户档案是客户在过去12个月内尝试通过任何渠道与之通信的用户档案。
 
-根据您的合同，您的每个 Campaign 实例都会配置特定数量的活动轮廓，并对这些活动轮廓进行计数以计费。请参阅您的最新合同，了解已购买的活动用户档案的数量。 在[Adobe Campaign产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}中了解详情。
+根据您的合同，您的每个 Campaign 实例都会配置特定数量的活动轮廓，并对这些活动轮廓进行计数以计费。 请参阅您的最新合同，了解已购买的活动轮廓数量。 在[Adobe Campaign产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}中了解详情。
 
 您可以直接从Campaign控制面板监控实例上的活动用户档案数。 有关详细信息，请参阅[控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=zh-Hans){target="_blank"}。
 
@@ -56,7 +56,7 @@ ht-degree: 11%
 
 ## 隐私和同意{#privacy-and-consent}
 
-Adobe Campaign是一款用于收集和处理大量数据（包括个人信息和敏感数据）的强大工具。 通过 Adobe Campaign，您可以收集数据，包括个人信息和敏感信息。因此，获得并监控收件人的同意至关重要。
+Adobe Campaign是一款用于收集和处理大量数据（包括个人信息和敏感数据）的强大工具。 通过 Adobe Campaign，您可以收集数据，包括个人信息和敏感信息。 因此，获得并监控收件人的同意至关重要。
 
 请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans){target="_blank"}以了解如何管理隐私和同意。
 

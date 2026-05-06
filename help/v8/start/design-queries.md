@@ -5,9 +5,10 @@ feature: Query Editor, Data Management
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: edd495a377559007dad7158c9ab4a4917d89ae73
+exl-id: d34b6073-a7e7-443a-a6d8-e74ef10a67e8
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '872'
 ht-degree: 3%
 
 ---
@@ -48,7 +49,7 @@ ht-degree: 3%
 
 ![](assets/query_editor_nveau_97.png)
 
-您可以对输出列中显示的数据进行分组。 为此，请在&#x200B;**[!UICONTROL Yes]**&#x200B;窗口的&#x200B;**[!UICONTROL Group]**&#x200B;列中选择&#x200B;**[!UICONTROL Data to extract]**。 然后，将根据所选的分组轴聚合结果。 有关使用分组的查询示例，请参阅[此部分](../../automation/workflow/query-delivery-info.md)。
+您可以对输出列中显示的数据进行分组。 为此，请在&#x200B;**[!UICONTROL Data to extract]**&#x200B;窗口的&#x200B;**[!UICONTROL Group]**&#x200B;列中选择&#x200B;**[!UICONTROL Yes]**。 然后，将根据所选的分组轴聚合结果。 有关使用分组的查询示例，请参阅[此部分](../../automation/workflow/query-delivery-info.md)。
 
 ![](assets/query_editor_nveau_56.png)
 
@@ -77,7 +78,7 @@ ht-degree: 3%
 
 选择&#x200B;**[!UICONTROL Filtering conditions]**&#x200B;后，**[!UICONTROL Target elements]**&#x200B;部分打开。 在这里，您可以定义用于筛选要收集的数据的规则。
 
-* 要创建新过滤器，请选择构建条件所需的字段、运算符和值。 您还可以合并多个条件，如本页[上的](filter-conditions.md)所述。
+* 要创建新过滤器，请选择构建条件所需的字段、运算符和值。 您还可以合并多个条件，如本页[&#128279;](filter-conditions.md)上的所述。
 
 * 要重用现有的筛选器，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮，选择&#x200B;**[!UICONTROL Predefined filter]**&#x200B;并选择所需的筛选器。
 
@@ -121,7 +122,7 @@ ht-degree: 3%
 
 * **[!UICONTROL Switch to lower case]**，
 * **[!UICONTROL Switch to upper case]**，
-* **[!UICONTROL First letter in upper case]**。
+* **[!UICONTROL First letter in upper case]**.
 
 ![](assets/query_editor_nveau_42.png)
 

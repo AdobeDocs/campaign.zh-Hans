@@ -8,36 +8,36 @@ exl-id: 0f81d318-dbfd-45c8-b391-b1d14d23e9c8
 version: Campaign v8, Campaign Classic v7
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 82%
+source-wordcount: '1093'
+ht-degree: 83%
 
 ---
 
 # 在 Campaign 中管理隐私请求 {#privacy}
 
-根据您的业务性质及运营所在的司法管辖区，您的数据运营可能会受到隐私法规的约束。这些法规通常赋予您的客户请求访问您从他们那里收集的数据的权利，并且这些客户有权请求删除所存储的数据。在整个文档中，这些客户对其个人数据的请求称为“隐私请求”。
+根据您的业务性质及运营所在的司法管辖区，您的数据运营可能会受到隐私法规的约束。 这些法规通常赋予您的客户请求访问您从他们那里收集的数据的权利，并且这些客户有权请求删除所存储的数据。 在整个文档中，这些客户对其个人数据的请求称为“隐私请求”。
 
-Adobe 为数据控制者提供相应的工具，用于创建和处理与 Campaign 中的存储数据有关的隐私请求。但是，作为数据控制者，您有责任确认发出请求的数据主体的身份，并确认返回给请求者的数据与数据主体相关。请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans#personal-data){target="_blank"}以了解有关个人数据以及管理数据的不同实体的更多信息。
+Adobe 为数据控制者提供相应的工具，用于创建和处理与 Campaign 中的存储数据有关的隐私请求。 但是，作为数据控制者，您有责任确认发出请求的数据主体的身份，并确认返回给请求者的数据与数据主体相关。 请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans#personal-data){target="_blank"}以了解有关个人数据以及管理数据的不同实体的更多信息。
 
 
-要在 Campaign 中管理隐私请求，必须先[定义命名空间](#namespaces)。然后，才能创建和管理隐私请求。要执行隐私请求，请使用 **Adobe Privacy Service** 集成。从 Privacy Service 推送到所有 Adobe Experience Cloud 解决方案的隐私请求由 Campaign 通过专门工作流自动处理。[了解详情](#create-privacy-request)
+要在 Campaign 中管理隐私请求，必须先[定义命名空间](#namespaces)。 然后，才能创建和管理隐私请求。 要执行隐私请求，请使用 **Adobe Privacy Service** 集成。 从 Privacy Service 推送到所有 Adobe Experience Cloud 解决方案的隐私请求由 Campaign 通过专门工作流自动处理。 [了解详情](#create-privacy-request)
 
-请参阅&#x200B;**Adobe Campaign Classic v7文档**&#x200B;以了解有关&#x200B;**访问权**&#x200B;和[被遗忘权](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=zh-Hans#right-access-forgotten){target="_blank"}（删除请求）的信息。
+请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=zh-Hans#right-access-forgotten){target="_blank"}以了解有关&#x200B;**访问权**&#x200B;和&#x200B;**被遗忘权**（删除请求）的信息。
 
 
 >[!NOTE]
 >
->从 Campaign v8.3 开始提供此功能。要检查您的版本，请参阅[此部分](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>从Campaign v8.3开始提供此功能。 要检查您的版本，请参阅[此部分](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
 ## 定义命名空间 {#namespaces}
 
-在创建隐私请求之前，必须&#x200B;**定义要使用的命名空间**。命名空间是用于识别数据库中的数据主体的键。
+在创建隐私请求之前，必须&#x200B;**定义要使用的命名空间**。 命名空间是用于识别数据库中的数据主体的键。
 
 >[!NOTE]
 >
 >在[Adobe Experience Platform文档](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=zh-Hans){target="_blank"}中了解有关身份命名空间的更多信息。
 
-当前，Adobe Campaign 不支持从 Experience Platform Identity Namespace Service 导入命名空间。因此，在 Identity Namespace Service 上创建命名空间后，必须在 Adobe Campaign 界面中手动创建相应的命名空间。为此，请执行以下步骤。
+当前，Adobe Campaign 不支持从 Experience Platform Identity Namespace Service 导入命名空间。 因此，在 Identity Namespace Service 上创建命名空间后，必须在 Adobe Campaign 界面中手动创建相应的命名空间。 为此，请执行以下步骤。
 
 <!--
 v7?
@@ -91,17 +91,17 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 1. 保存您的更改。
 
-现在，您可以根据新命名空间创建隐私请求。如果使用多个命名空间，请为同一个合并值的每个命名空间创建一个隐私请求。
+现在，您可以根据新命名空间创建隐私请求。 如果使用多个命名空间，请为同一个合并值的每个命名空间创建一个隐私请求。
 
 ## 创建隐私请求 {#create-privacy-request}
 
-借助 **[!DNL Adobe Experience Platform Privacy Service]** 集成，您可以通过单个 JSON API 调用在多解决方案上下文中自动处理隐私请求。Adobe Campaign 会自动通过专用工作流处理从 Privacy Service 推送的请求。
+借助 **[!DNL Adobe Experience Platform Privacy Service]** 集成，您可以通过单个 JSON API 调用在多解决方案上下文中自动处理隐私请求。 Adobe Campaign 会自动通过专用工作流处理从 Privacy Service 推送的请求。
 
 请参阅 [Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans){target="_blank"} 文档，以了解如何从隐私核心服务创建隐私请求。
 
 每个 **[!DNL Privacy Service]** 任务根据使用的命名空间数在 Adobe Campaign 中拆分为多个隐私请求，一个请求对应一个命名空间。
 
-此外，一个作业可以在多个实例上运行。因此，将为一个作业创建多个文件。例如，如果某个请求具有两个命名空间，并且在三个实例上运行，则总共发送六个文件。每个命名空间和实例一个文件。
+此外，一个作业可以在多个实例上运行。 因此，将为一个作业创建多个文件。 例如，如果某个请求具有两个命名空间，并且在三个实例上运行，则总共发送六个文件。 每个命名空间和实例一个文件。
 
 文件名的模式为： `<InstanceName>-<NamespaceId>-<ReconciliationKey>.xml`
 
@@ -132,7 +132,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 * 订阅 (subscription)
 * 收件人产品建议提议 (propositionRcp)
 
-如果您创建的自定义表单具有指向收件人表（自有类型）的链接，则也会考虑这些资源。例如，如果您具有链接到收件人表的事务表和链接到该事务表的事务详细信息表，则这两个表都将被考虑在内。
+如果您创建的自定义表单具有指向收件人表（自有类型）的链接，则也会考虑这些资源。 例如，如果您具有链接到收件人表的事务表和链接到该事务表的事务详细信息表，则这两个表都将被考虑在内。
 <!--
 >[!CAUTION]
 >
@@ -151,7 +151,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 * **[!UICONTROL Delete pending]**：工作流已识别要删除的所有收件人数据。
 * **[!UICONTROL Delete in progress]**：工作流正在处理删除。
 * **[!UICONTROL Complete]**：请求的处理已完成，并且没有错误。
-* **[!UICONTROL Error]**：工作流遇到错误。原因显示在 **[!UICONTROL Request status]** 列的隐私请求列表中。例如，**[!UICONTROL Error data not found]** 表示在数据库中找不到与数据主体的 **[!UICONTROL Reconciliation value]** 匹配的收件人数据。
+* **[!UICONTROL Error]**：工作流遇到错误。 原因显示在 **[!UICONTROL Request status]** 列的隐私请求列表中。 例如，**[!UICONTROL Error data not found]** 表示在数据库中找不到与数据主体的 **[!UICONTROL Reconciliation value]** 匹配的收件人数据。
 
 **Campaign Classic v7 文档中的相关主题：**
 

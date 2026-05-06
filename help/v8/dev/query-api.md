@@ -8,7 +8,7 @@ hide: true
 exl-id: c2862f94-7d15-4a49-a74e-df90d0ea7bc9
 source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1421'
 ht-degree: 1%
 
 ---
@@ -757,7 +757,7 @@ for each(var record in xml.collection) {
 * **对大型数据集使用工作流** - QueryDef不是针对大容量数据处理而设计的。 对于包含超过1,000条记录的数据集，请使用可高效处理数百万行的工作流。 请参阅[Campaign SDK文档](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}以了解详情
 * **使用参数化查询** — 始终将绑定参数(`$(sz)`， `$(l)`)与`sqlExec`一起使用，以防止SQL注入
 * **设置显式限制** — 使用`lineCount`控制结果大小。 Campaign的默认限制因上下文而异（200-10,000条记录）
-* **将orderBy与分页一起使用** — 在使用`orderBy`和`startLine`时始终包含`lineCount`子句，以确保分页一致
+* **将orderBy与分页一起使用** — 在使用`startLine`和`lineCount`时始终包含`orderBy`子句，以确保分页一致
 * **使用getIfExists** — 在记录可能不存在时使用`operation: "getIfExists"`以避免出现异常
 * **对枚举使用分析** — 添加`analyze: true`以选择节点以获取用户友好的枚举名称和标签
 * **优化查询** — 添加适当的`where`条件以限制结果集
@@ -900,7 +900,7 @@ if (count > 0 && count < 10000) {
 
 * [Campaign API入门](api.md)
 * [Campaign JavaScript SDK — 查询API](https://opensource.adobe.com/acc-js-sdk/xtkQueryDef.html){target="_blank"}
-* [queryDef API引用](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html?lang=zh-Hans){target="_blank"}
+* [queryDef API参考](https://experienceleague.adobe.com/developer/campaign-api/api/s-xtk-queryDef.html?lang=zh-Hans){target="_blank"}
 * [Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=zh-Hans){target="_blank"}
 * [使用架构](schemas.md)
 * [使用查询编辑器](../start/query-editor.md)

@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: c3e107b5-6d2e-408f-9c7d-a81a4756b4ef
 source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
 workflow-type: tm+mt
-source-wordcount: '1954'
+source-wordcount: '2028'
 ht-degree: 1%
 
 ---
@@ -179,7 +179,7 @@ HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以
 1. 单击工具栏中的&#x200B;**[!UICONTROL Tracking & Images]**&#x200B;图标。
    ![](assets/s_ncs_user_email_del_img_param.png)
 
-1. 在&#x200B;**[!UICONTROL Upload images]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Images]**。
+1. 在&#x200B;**[!UICONTROL Images]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Upload images]**。
 1. 然后，您可以选择是否希望在电子邮件中包含图像。
    ![](assets/s_ncs_user_email_del_img_upload.png)
 

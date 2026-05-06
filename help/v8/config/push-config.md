@@ -8,8 +8,8 @@ hide: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
 source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
 workflow-type: tm+mt
-source-wordcount: '1230'
-ht-degree: 1%
+source-wordcount: '1271'
+ht-degree: 2%
 
 ---
 
@@ -185,7 +185,7 @@ Android SDK是使用JAVA编写的jar库。 它允许Android开发人员与Adobe 
 
 1. **当用户的移动设备令牌更改时通知Campaign**
 
-   我们建议您在调用`registerDevice`函数时使用`onTokenRefresh`函数来通知Adobe Campaign用户的移动设备令牌发生了更改。
+   我们建议您在调用`onTokenRefresh`函数时使用`registerDevice`函数来通知Adobe Campaign用户的移动设备令牌发生了更改。
 
    例如：
 
@@ -224,7 +224,7 @@ Android SDK是使用JAVA编写的jar库。 它允许Android开发人员与Adobe 
 
 1. **配置Firebase消息服务**
 
-   扩展`FirebaseMessagingService`回调中的`onMessageReceived`以接收消息。 我们建议您在调用`notifyReceive`回调时调用`onMessageReceived`函数以启用对移动设备上通知接收的跟踪。 在Adobe Campaign中，此名称为&#x200B;**print**&#x200B;通知：在请求OS显示通知之前，应调用此函数。
+   扩展`onMessageReceived`回调中的`FirebaseMessagingService`以接收消息。 我们建议您在调用`onMessageReceived`回调时调用`notifyReceive`函数以启用对移动设备上通知接收的跟踪。 在Adobe Campaign中，此名称为&#x200B;**print**&#x200B;通知：在请求OS显示通知之前，应调用此函数。
 
    YourApplicationMessagingService.java
 
@@ -497,7 +497,7 @@ Android SDK是使用JAVA编写的jar库。 它允许Android开发人员与Adobe 
    对于通知消息，跟踪接收必须在两个级别进行配置：
 
    * `onMessageReceived` （应用程序不在后台）：已在上一节中完成实施
-   * `onCreate`启动项活动（如果使用`click_action`函数，则为目标活动。）（应用程序不在后台）。
+   * `onCreate`启动项活动（如果使用`click_action`函数，则为目标活动。） （应用程序不在后台）。
 
    它需要在打开/点击跟踪的同时完成。
 

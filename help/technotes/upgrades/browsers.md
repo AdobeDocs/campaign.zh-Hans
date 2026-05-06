@@ -6,7 +6,7 @@ hide: true
 exl-id: 912ad71e-2b23-4b16-b5f9-47d547fc83d5
 source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '653'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Adobe建议您测试Campaign Web应用程序（包括Web窗体及调查），以
 
 ### 使用Microsoft Edge 100进行测试{#test-ms-edge-100}
 
-从v97开始，站点所有者可以通过在`#force-major-version-to-100`中启用试验标志`edge://flags`来模拟此版本。
+从v97开始，站点所有者可以通过在`edge://flags`中启用试验标志`#force-major-version-to-100`来模拟此版本。
 
 1. 打开Microsoft Edge，在地址栏中输入`edge://flags`，然后按Enter键。
 1. 搜索`force-major-version-to-100`字段，并将其启用，如下所示。

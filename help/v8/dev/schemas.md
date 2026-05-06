@@ -7,14 +7,14 @@ level: Intermediate, Experienced
 exl-id: 87af72fe-6c84-4d9a-afed-015900890cce
 source-git-commit: f75b95faa570d7c3f59fd8fb15692d3c3cbe0d36
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1295'
 ht-degree: 5%
 
 ---
 
 # 使用架构{#gs-ac-schemas}
 
-应用中所承载数据的物理和逻辑结构以 XML 格式进行描述。它遵循Adobe Campaign特有的语法，称为&#x200B;**架构**。
+应用中所承载数据的物理和逻辑结构以 XML 格式进行描述。 它遵循Adobe Campaign特有的语法，称为&#x200B;**架构**。
 
 架构是与数据库表关联的XML文档。 它定义数据结构并描述表的SQL定义：
 
@@ -198,7 +198,7 @@ For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-f
 
 ![](assets/schemaextension_2.png)
 
-`<attribute>`Campaign Classic v7文档[的](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=zh-Hans#content-model){target="_blank"}元素部分中提供了属性的完整列表。 以下是一些更常用的属性： **@advanced**、**@dataPolicy**、**@default**、**@desc**、**@enum**、**@expr**、**@label**、**@length**、**@name**、**@notNull**、**@required**、**@ref**、**@xml**、**@type**。
+[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=zh-Hans#content-model){target="_blank"}的`<attribute>`元素部分中提供了属性的完整列表。 以下是一些更常用的属性： **@advanced**、**@dataPolicy**、**@default**、**@desc**、**@enum**、**@expr**、**@label**、**@length**、**@name**、**@notNull**、**@required**、**@ref**、**@xml**、**@type**。
 
 有关每个属性的更多信息，请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=zh-Hans#configuring-campaign-classic){target="_blank"}中的属性说明。
 

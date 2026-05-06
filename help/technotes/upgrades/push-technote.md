@@ -9,8 +9,8 @@ hide: true
 exl-id: 45ac6f8f-eb2a-4599-a930-1c1fcaa3095b
 source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 2%
+source-wordcount: '1776'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 您可以使用Campaign在iOS和Android设备上发送推送通知。 为此，Campaign依赖于移动应用程序订阅服务。
 
-Android Firebase Cloud Messaging (FCM)服务的一些重要更改将于2024年发布，可能会影响您的Adobe Campaign实施。 您可能需要更新Android推送消息的订阅服务配置才能支持此更改。
+Android Firebase Cloud Messaging (FCM)服务的一些重要更改将于2024年发布，可能会影响您的Adobe Campaign实施。 您可能需要更新 Android 推送消息的订阅服务配置，才能支持此更改。
 
 此外，Adobe强烈建议迁移到基于令牌的APN连接，而不是迁移到基于证书的连接，后者更安全、更可扩展。
 

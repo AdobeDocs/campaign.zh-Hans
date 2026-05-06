@@ -7,8 +7,8 @@ level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '1241'
-ht-degree: 3%
+source-wordcount: '1276'
+ht-degree: 2%
 
 ---
 
@@ -120,7 +120,7 @@ ht-degree: 3%
 
 为此请执行以下操作步骤：
 
-1. 在活动的&#x200B;**[!UICONTROL Add data]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Enrichment]**。
+1. 在活动的&#x200B;**[!UICONTROL Enrichment]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Add data]**。
 1. 在选择要添加的数据类型的窗口中，选择&#x200B;**[!UICONTROL A link]**。
 1. 选择要建立的链接类型及其目标。 在本例中，目标是选件架构。
 

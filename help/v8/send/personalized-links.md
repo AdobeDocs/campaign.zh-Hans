@@ -7,7 +7,7 @@ level: Beginner
 exl-id: d0e00b40-e7dd-4484-b37c-fd3f3ac70fda
 source-git-commit: 6e465ec24f72d0b30c4fc287da5d4c4bcaeda05b
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '642'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 电子邮件内容中包含个性化的链接需要跟踪特定语法。
 
-在电子邮件内容(HTML或文本)中使用JavaScript允许您生成动态内容并将其发送给收件人，但存在两个限制：
+在电子邮件内容（HTML或文本）中使用JavaScript允许您生成动态内容并将其发送给收件人，但存在两个限制：
 
 * 脚本无法直接访问数据库（SQL函数和API函数不可用），
 * Adobe Campaign必须能够检测URL，以便可以跟踪链接。
@@ -31,7 +31,7 @@ ht-degree: 2%
 <%@ value object="myObject" xpath="@myField" %>
 ```
 
-此指令从`myField`对象中检索`myObject`字段的值。
+此指令从`myObject`对象中检索`myField`字段的值。
 
 ## URL检测 {#url-detection}
 

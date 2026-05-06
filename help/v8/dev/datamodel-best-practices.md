@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '2740'
-ht-degree: 4%
+source-wordcount: '2777'
+ht-degree: 5%
 
 ---
 
@@ -89,7 +89,7 @@ Adobe Campaign资源具有三个标识符，可以添加额外的标识符。
 | 标识符 | 说明 | 最佳实践 |
 |--- |--- |--- |
 | Id | <ul><li>ID是Adobe Campaign表的物理主键。 对于内置表，它是一个通用唯一标识符(UUID)</li><li>此标识符必须是唯一的。 </li><li>UUID可以在架构定义中可见。</li></ul> | <ul><li>不应在工作流或包定义中将自动生成的标识符用作引用。</li><li>表中的ID是UUID，不应更改此类型。</li></ul> |
-| 名称（或内部名称） | <ul><li>此信息是表中记录的唯一标识符。 此值可手动更新，通常使用生成的名称。</li><li>当此标识符部署在Adobe Campaign的其他实例中时，会保留其值，并且它不应为空。</li></ul> | <ul><li>如果打算将对象从一个环境部署到另一个环境，请重命名Adobe Campaign生成的记录名称。</li><li>当对象具有命名空间属性（例如&#x200B;*架构*）时，此公用命名空间将在创建的所有自定义对象中使用。 不应使用某些保留的命名空间： *nms*、*xtk*&#x200B;等。  请注意，某些命名空间仅是内部命名空间。 [了解详情](schemas.md#reserved-namespaces)。</li><li>当对象没有任何命名空间（例如&#x200B;*工作流*&#x200B;或&#x200B;*投放*）时，此命名空间概念将被添加为内部名称对象的前缀： *namespaceMyObjectName*。</li><li>请勿使用空格“ ”、半列“：”或连字符“ — ”等特殊字符。 所有这些字符都将替换为下划线“_”（允许的字符）。 例如，“abc-def”和“abc：def”将存储为“abc_def”并相互覆盖。</li></ul> |
+| 名称（或内部名称） | <ul><li>此信息是表中记录的唯一标识符。 此值可手动更新，通常使用生成的名称。</li><li>当此标识符部署在Adobe Campaign的其他实例中时，会保留其值，并且它不应为空。</li></ul> | <ul><li>如果打算将对象从一个环境部署到另一个环境，请重命名Adobe Campaign生成的记录名称。</li><li>当对象具有命名空间属性（例如&#x200B;*架构*）时，此公用命名空间将在创建的所有自定义对象中使用。 不应使用某些保留的命名空间： *nms*、*xtk*&#x200B;等。  请注意，某些命名空间仅是内部命名空间。 [了解详情](schemas.md#reserved-namespaces)。</li><li>当对象没有任何命名空间（例如&#x200B;*工作流*&#x200B;或&#x200B;*投放*）时，此命名空间概念将被添加为内部名称对象的前缀： *namespaceMyObjectName*。</li><li>请勿使用空格“ ”、半列“：”或连字符“ — ”等特殊字符。 所有这些字符都将替换为下划线“_”（允许的字符）。 例如，“abc-def”和“abc:def”将存储为“abc_def”并相互覆盖。</li></ul> |
 | 标签 | <ul><li>标签是Adobe Campaign中对象或记录的业务标识符。</li><li>此对象允许使用空格和特殊字符。</li><li>它不能保证记录的唯一性。</li></ul> | <ul><li>建议确定对象标签的结构。</li><li>这是用于为Adobe Campaign用户标识记录或对象的最用户友好的解决方案。</li></ul> |
 
 在[Enterprise (FFDA)部署](../architecture/enterprise-deployment.md)的上下文中，Adobe Campaign主键是为所有内置表自动生成的UUID。 UUID也可用于自定义表。 [了解详情](../architecture/keys.md)
@@ -151,7 +151,7 @@ Adobe Campaign既不是Data Warehouse也不是报表工具。 因此，要确保
 
 关于保留时间，Campaign 中的内置日志表具有预设的保留期，通常将其数据存储限制为 6 个月或更短时间。
 
-以下是内置表的默认保留时间值。请注意，保留时间配置由 Adobe 技术管理员在实施期间设置，每项实施的值可能因客户要求而异。
+以下是内置表的默认保留时间值。 请注意，保留时间配置由 Adobe 技术管理员在实施期间设置，每项实施的值可能因客户要求而异。
 
 * **整合跟踪**：1 年
 * **投放日志**：6 个月
@@ -163,7 +163,7 @@ Adobe Campaign既不是Data Warehouse也不是报表工具。 因此，要确保
 * **事件**：1 个月
 * **事件处理统计信息**：1 年
 * **存档事件**：1 年
-* **已忽略的渠道事件**：1 个月
+* **已忽略的管道事件**：1 个月
 
 >[!CAUTION]
 >

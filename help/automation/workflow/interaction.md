@@ -7,7 +7,7 @@ role: User, Admin
 version: Campaign v8, Campaign Classic v7
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '132'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 3%
   <tr> 
    <td> <span class="uicontrol">完全聚合计算（propositionrcp多维数据集）</span> <br /> </td> 
    <td> <span class="uicontrol">agg_nmspropositionrcp_full</span> <br /> </td> 
-   <td> 此工作流更新<strong>优惠建议</strong>多维数据集的<strong>完整</strong>聚合。 默认情况下，此工作流于每日早上6点触发。 此聚合可捕获以下维度：渠道、投放、营销选件和日期。<br /> <strong>优惠建议</strong>多维数据集随后用于根据优惠生成报告。<br /> </td> 
+   <td> 此工作流更新<strong>优惠建议</strong>多维数据集的<strong>完整</strong>聚合。 默认情况下，此工作流于每日早上6点触发。 此聚合捕获以下维度：渠道、投放、营销选件和日期。<br /> 然后使用<strong>优惠建议</strong>多维数据集根据优惠生成报告。<br /> </td> 
   </tr> 
    <tr> 
    <td> <span class="uicontrol">MessageCenter完全聚合计算</span> <br /> </td> 

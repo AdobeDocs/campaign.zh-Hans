@@ -63,8 +63,8 @@ ht-degree: 0%
 
 1. 在&#x200B;**[!UICONTROL Exclusion set]**&#x200B;字段中，选择&#x200B;**[!UICONTROL Read list]**&#x200B;活动：将从主集中排除此活动中的数据。
 
-   在本例中，我们在连接上有一个排除项：列表中包含的数据将通过包含电子邮件地址的字段与主集的数据进行协调。 要配置加入，请在&#x200B;**[!UICONTROL Joins]**&#x200B;字段中选择&#x200B;**[!UICONTROL Change dimension]**。
+   在本例中，我们在连接上有一个排除项：列表中包含的数据将通过包含电子邮件地址的字段与主集的数据进行协调。 要配置加入，请在&#x200B;**[!UICONTROL Change dimension]**&#x200B;字段中选择&#x200B;**[!UICONTROL Joins]**。
 
    ![](assets/s_advuser_list_read_sample_4.png)
 
-1. 然后，选择与两组中的电子邮件地址对应的字段(Source和目标)。 随后将链接各列，并从目标中排除其电子邮件地址位于导入地址列表中的收件人。
+1. 然后，选择与两组中的电子邮件地址对应的字段（Source和目标）。 随后将链接各列，并从目标中排除其电子邮件地址位于导入地址列表中的收件人。

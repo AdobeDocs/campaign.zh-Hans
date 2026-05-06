@@ -6,8 +6,8 @@ role: User, Developer
 exl-id: 6e3409d8-86bd-44ba-a40d-10287f53a960
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '1750'
-ht-degree: 7%
+source-wordcount: '1783'
+ht-degree: 8%
 
 ---
 
@@ -41,17 +41,17 @@ ht-degree: 7%
 
 ## 投放吞吐量 {#delivery-throughput}
 
-此报表包含有关给定时段内整个平台的投放吞吐量的信息。 用于衡量邮件传送速度的标准是每小时发送的邮件数和邮件大小（以位/秒为单位）。在下面的示例中，第一个图表用蓝色显示成功投放，用橙色显示错误投放的数量。
+此报表包含有关给定时段内整个平台的投放吞吐量的信息。 用于衡量邮件传送速度的标准是每小时发送的邮件数和邮件大小（以位/秒为单位）。 在下面的示例中，第一个图表用蓝色显示成功投放，用橙色显示错误投放的数量。
 
 ![](assets/report-toolbar.png)
 
-您可以通过更改时间刻度来配置显示的值： 1小时视图、3小时视图、24小时视图等。 单击&#x200B;**[!UICONTROL Refresh]**&#x200B;确认您的选择。
+您可以通过更改时间刻度来配置显示的值： 1小时视图、3小时视图、24小时视图等。单击&#x200B;**[!UICONTROL Refresh]**&#x200B;确认您的选择。
 
 >[!NOTE]
 >
 >您还可以使用[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=zh-Hans){target="_blank"}监控每小时发送的投放数量。
 >
->所有管理员用户都可访问控制面板。[此页面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel){target="_blank"}详细介绍了授予用户管理员访问权限的步骤。
+>所有管理员用户都可访问控制面板。 [此页面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel){target="_blank"}详细介绍了授予用户管理员访问权限的步骤。
 >
 
 ## 用户活动 {#user-activities}
@@ -118,7 +118,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->此报告中显示的域名在多维数据集级别定义。 要更改这些值，请编辑&#x200B;**[!UICONTROL Delivery logs (broadlogrcp)]**&#x200B;多维数据集。 有关详细信息，请参阅[此部分](gs-cubes.md)。 **[!UICONTROL Others]**&#x200B;类别包括不属于特定类的域名。
+>此报告中显示的域名在多维数据集级别定义。 要更改这些值，请编辑&#x200B;**[!UICONTROL Delivery logs (broadlogrcp)]**&#x200B;多维数据集。 如需详细信息，请参阅[此小节](gs-cubes.md)。 **[!UICONTROL Others]**&#x200B;类别包括不属于特定类的域名。
 
 ## 浏览器 {#browsers}
 
@@ -296,7 +296,7 @@ The following indicators are used:
 
 ## 打开的细分 {#breakdown-of-opens}
 
-此报表显示相关期间按操作系统、设备和浏览器划分的打开次数。 为每个类别使用了两个图表。第一个图表显示有关计算机和移动设备上的打开的统计数据。第二个图表显示仅与移动设备上的打开有关的统计数据。
+此报表显示相关期间按操作系统、设备和浏览器划分的打开次数。 为每个类别使用了两个图表。 第一个图表显示有关计算机和移动设备上的打开的统计数据。 第二个图表显示仅与移动设备上的打开有关的统计数据。
 
 打开数对应于打开的邮件总数。 文本格式的电子邮件不计算在内。 有关跟踪打开的详细信息，请参阅[此部分](metrics-calculation.md#tracking-opens-)。
 

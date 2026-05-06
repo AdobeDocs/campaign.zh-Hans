@@ -5,13 +5,13 @@ feature: Query Editor
 role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
-source-git-commit: 3a521f7006ca833af96f1ef5d5b369c2c0568635
+exl-id: 18e49a15-dbb5-42d6-9379-367e769f319a
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '3323'
+source-wordcount: '3344'
 ht-degree: 34%
 
 ---
-
 
 # 定义过滤器条件{#filter-conditions}
 
@@ -86,7 +86,7 @@ ht-degree: 34%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">相似</span> <br /> </td> 
-   <td> <span class="uicontrol">相似</span>与<span class="uicontrol">包含</span>运算符非常相似。它允许您在值中插入<span class="uicontrol">%</span>通配符。<br /> </td> 
+   <td> <span class="uicontrol">相似</span>与<span class="uicontrol">包含</span>运算符非常相似。 它允许您在值中插入<span class="uicontrol">%</span>通配符。<br /> </td> 
    <td> <strong>姓氏(@lastName)，如“Jon%s”</strong>。 在本例中，如果操作员忘记了'n'和's'之间的缺少字母，则使用通配符作为“绝招”来查找名称“Jones”。<br /> </td> 
   </tr> 
   <tr> 
@@ -111,7 +111,7 @@ ht-degree: 34%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">未包含在</span> <br />中 </td> 
-   <td> 工作方式与<span class="uicontrol">运算符中的</span>Include类似。 在此，我们要根据输入的值排除收件人。<br /> </td> 
+   <td> 工作方式与</span>运算符中的<span class="uicontrol">Include类似。 在此，我们要根据输入的值排除收件人。<br /> </td> 
    <td> <strong>出生日期(@birthDate)不包含在'12/10/1979,12/10/1984'</strong>中。 与上一个示例不同，不会返回这些日期内出生的收件人。<br /> </td> 
   </tr> 
  </tbody> 
@@ -313,7 +313,7 @@ ht-degree: 34%
 
 应用以下步骤：
 
-1. 在&#x200B;**[!UICONTROL Add]**&#x200B;窗口中单击&#x200B;**[!UICONTROL Data to extract]**。 在&#x200B;**[!UICONTROL Formula type]**&#x200B;窗口中，选择公式类型以输入表达式。
+1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;窗口中单击&#x200B;**[!UICONTROL Add]**。 在&#x200B;**[!UICONTROL Formula type]**&#x200B;窗口中，选择公式类型以输入表达式。
 
    有多种类型的公式可用： **[!UICONTROL Field only]**、**[!UICONTROL Aggregate]**、**[!UICONTROL Expression]**。
 
@@ -330,13 +330,13 @@ ht-degree: 34%
 ![](assets/query_editor_nveau_05.png)
 
 1. **[!UICONTROL Field only]**&#x200B;允许您返回&#x200B;**[!UICONTROL Field to select]**&#x200B;窗口。
-1. **[!UICONTROL Aggregate (Process on an aggregate function)]**。 以下是聚合使用的一些示例：
+1. **[!UICONTROL Aggregate (Process on an aggregate function)]**. 以下是聚合使用的一些示例：
 
    * **[!UICONTROL Count]**&#x200B;允许您运行主键计数。
    * **[!UICONTROL Sum]**&#x200B;允许您合计客户在一年以上的所有购买次数。
    * **[!UICONTROL Maximum value]**&#x200B;允许您查找购买最多“n”个产品的客户。
    * **[!UICONTROL Minimum value]**&#x200B;允许您对客户进行排序，并查找最近订阅了优惠的用户。
-   * **[!UICONTROL Average]**。 此函数允许您计算收件人的平均年龄。
+   * **[!UICONTROL Average]**. 此函数允许您计算收件人的平均年龄。
 
      **[!UICONTROL Distinct]**&#x200B;框允许您恢复列的唯一值和非零值。 例如，您可以恢复所有收件人的跟踪日志，这些跟踪日志将更改为值1，因为它们都涉及同一收件人。
 

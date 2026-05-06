@@ -7,7 +7,7 @@ level: Intermediate
 exl-id: c1deb0a1-aeba-4813-b674-a6a164b98b02
 source-git-commit: f577ee6d303bab9bb07350b60cf0fa6fc9d3a163
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '681'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 1%
 1. [事件传输到消息模板](#routing-towards-a-template)
 1. 使用个性化数据扩充事件
 1. [投放执行](delivery-execution.md)
-1. [回收链接投放失败的事件](#event-recycling)(通过Adobe Campaign工作流)
+1. [回收链接投放失败的事件](#event-recycling)（通过Adobe Campaign工作流）
 
 完成所有步骤后，每个目标收件人都会收到个性化消息。
 
@@ -87,7 +87,7 @@ ht-degree: 1%
 该事件已处理，并且已链接投放模板。 电子邮件正在等待投放，并且已应用经典投放流程。 有关详细信息，您可以打开投放。
 * **已发送**，**已忽略**&#x200B;和&#x200B;**传递错误**
 这些投放状态可通过&#x200B;**updateEventsStatus**&#x200B;工作流恢复。 有关详细信息，您可以打开相关的投放。
-* **事件未涵盖**
+* 未涵盖&#x200B;**事件**
 事务性消息传递路由阶段失败。 例如，Adobe Campaign未找到用作事件模板的电子邮件。
 * **事件已过期**
 已达到最大发送尝试次数。 该事件被视为null。

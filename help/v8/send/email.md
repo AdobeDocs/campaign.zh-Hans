@@ -1,6 +1,6 @@
 ---
 title: 使用Adobe Campaign发送电子邮件
-description: 在 Adobe Campaign 中开始使用电子邮件。将个性化的电子邮件发给目标人群。
+description: 在 Adobe Campaign 中开始使用电子邮件。 将个性化的电子邮件发给目标人群。
 feature: Email
 role: User
 level: Beginner
@@ -8,8 +8,8 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 97dcd0e0-db5b-45a4-96af-817e49f6cb64
 source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 9%
+source-wordcount: '588'
+ht-degree: 8%
 
 ---
 
@@ -85,7 +85,7 @@ ht-degree: 9%
 
      在[本节](mirror-page.md#link-to-mirror-page)中了解有关管理镜像页面的更多信息。
 
-1. 您可以为电子邮件定义其他参数，如将邮件副本发送到BBC地址、更改邮件格式、设置特定编码等。 可在[此部分](email-parameters.md)中了解详情。
+1. 您可以为电子邮件定义其他参数，如将邮件副本发送到BBC地址、更改邮件格式、设置特定编码等。在[本节](email-parameters.md)中了解详情。
 
 1. 内容准备就绪后，单击&#x200B;**保存**：该内容现在将显示在&#x200B;**[!UICONTROL Campaigns > Deliveries]**&#x200B;选项卡的投放列表中。
 

@@ -7,7 +7,7 @@ level: Intermediate
 exl-id: ef06cb6b-1b25-4dbe-8fd0-f880ec9d645b
 source-git-commit: 9d500f185a9e706b6558135978c4f8c79d92d0d4
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '576'
 ht-degree: 3%
 
 ---
@@ -61,7 +61,7 @@ Campaign提供了一组新护栏，以防止在[!DNL Snowflake]数据库中插�
 
 >[!NOTE]
 >
->从Campaign v8.3开始提供这些护栏。要检查您的版本，请参阅[此部分](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>从Campaign v8.3开始提供这些护栏。 要检查您的版本，请参阅[此部分](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
 
 ### 投放准备 {#remove-duplicates-delivery-preparation}
 

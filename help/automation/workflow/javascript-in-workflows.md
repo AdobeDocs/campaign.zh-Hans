@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 3412e3de-1c88-496e-8fda-ca9fc9b18e69
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1812'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 3%
 以下示例说明如何在工作流中使用JavaScript代码：
 
 * [写入数据库](#write-example)
-* [查询数据库 &#x200B;](#read-example)
+* [查询数据库](#read-example)
 * [使用静态SOAP方法触发工作流](#trigger-example)
 * [使用非静态SOAP方法与数据库交互](#interact-example)
 
@@ -52,7 +52,7 @@ ht-degree: 3%
    1. 在`xtk:session`架构中调用`Write`方法。
 
       >[!IMPORTANT]
-      > 如果您使用Adobe Campaign v8，我们建议您在Snowflake表中对`Write`方法的&#x200B;**摄取**&#x200B;和&#x200B;**数据更新/删除** API使用暂存机制。 [了解更多信息](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=zh-Hans){target="_blank"}。
+      > 如果您使用Adobe Campaign v8，我们建议您在Snowflake表中对`Write`方法的&#x200B;**摄取**&#x200B;和&#x200B;**数据更新/删除** API使用暂存机制。 [了解更多信息](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}。
 
    1. 将XML代码作为写入请求的参数传递。
 
@@ -562,7 +562,7 @@ for each (var w in res.recipient)
 * `delete`操作
 
 >[!IMPORTANT]
-> 如果您使用Adobe Campaign v8，我们建议您在Snowflake表中对`Write`方法的&#x200B;**摄取**&#x200B;和&#x200B;**数据更新/删除** API使用暂存机制。 [了解更多信息](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=zh-Hans){target="_blank"}。
+> 如果您使用Adobe Campaign v8，我们建议您在Snowflake表中对`Write`方法的&#x200B;**摄取**&#x200B;和&#x200B;**数据更新/删除** API使用暂存机制。 [了解更多信息](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}。
 
 #### 示例1：插入或更新记录
 
@@ -615,8 +615,8 @@ xtk.session.Write(
 * [SOAP调用示例](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=zh-Hans){target="_blank"}
 * 方法：
    * [创建](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=zh-Hans){target="_blank"}
-   * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=zh-Hans){target="_blank"}
-   * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=zh-Hans){target="_blank"}
-   * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=zh-Hans){target="_blank"}
+   * [删除收藏集](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=zh-Hans){target="_blank"}
+   * [执行查询](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=zh-Hans){target="_blank"}
+   * [Postevent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=zh-Hans){target="_blank"}
    * [写入](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=zh-Hans){target="_blank"}
 * [logInfo函数](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=zh-Hans){target="_blank"}

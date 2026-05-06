@@ -7,7 +7,7 @@ level: Beginner
 exl-id: 878b5963-100c-4dd7-97a0-c59a62c493b1
 source-git-commit: e4f6c70ecdcf7414b5f49a43933cfd1c967a0905
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '982'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ## 什么是种子地址？ {#gs-seeds}
 
-测试轮廓被创建为种子地址。它们用于定位不符合所规定目标标准的收件人。 种子地址允许您通过在发送投放之前发送校样来预览和测试个性化和渲染。
+测试轮廓被创建为种子地址。 它们用于定位不符合所规定目标标准的收件人。 种子地址允许您通过在发送投放之前发送校样来预览和测试个性化和渲染。
 
 种子地址具有以下优点：
 
@@ -43,7 +43,7 @@ ht-degree: 2%
 要创建种子地址，请执行以下步骤：
 
 1. 单击种子地址列表上方的&#x200B;**[!UICONTROL New]**&#x200B;按钮。
-1. 在&#x200B;**[!UICONTROL Recipient]**&#x200B;选项卡的匹配字段中输入链接到地址的数据。 可用字段对应于投放收件人（nms：recipient表）用户档案中的标准字段：姓名、名字和电子邮件等。
+1. 在&#x200B;**[!UICONTROL Recipient]**&#x200B;选项卡的匹配字段中输入链接到地址的数据。 可用字段对应于投放收件人（nms:recipient表）的用户档案中的标准字段：姓名、名字和电子邮件等。
 
    >[!NOTE]
    >

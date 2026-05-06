@@ -7,7 +7,7 @@ role: User
 exl-id: 7825426b-c9e4-49e9-840c-dc6d6d836fbe
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1297'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 创建本地活动（按表单） {#creating-a-local-campaign--by-form-}
 
-**By表单**&#x200B;类型Web界面涉及使用&#x200B;**Web应用程序**。 根据配置，此Web应用程序可以包含任何类型的已定义个性化元素。 例如，您可以建议用于评估目标、预算、内容等的链接。 通过专用API。
+**By表单**&#x200B;类型Web界面涉及使用&#x200B;**Web应用程序**。 根据配置，此Web应用程序可以包含任何类型的已定义个性化元素。 例如，您可以通过专用API建议用于评估目标、预算、内容等的链接。
 
 >[!NOTE]
 >

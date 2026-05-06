@@ -7,7 +7,7 @@ level: Intermediate, Experienced
 exl-id: e8ad021c-ce2e-4a74-b9bf-a989d8879fd1
 source-git-commit: 2ce1ef1e935080a66452c31442f745891b9ab9b3
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '401'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 2%
 
 * 限制读取和写入权限：
 
-  此处，该过滤器用于禁止所有操作员在架构上同时具有“读取”和“写入”权限。 仅限由表达式“$(loginId)”表示的&#x200B;**internal**&#x200B;帐户！=0”，具有这些权限。
+  此处，该过滤器用于禁止所有操作员在架构上同时具有“读取”和“写入”权限。 只有由表达式“$(loginId)&lbrace;0”表示的&#x200B;**internal&lbrace;1!=帐户具有这些权限。**
 
   ```
   <sysFilter name="readAccess"> 
@@ -64,40 +64,40 @@ ht-degree: 2%
 
 默认情况下，只有具有ADMINISTRATION权限的操作员才可以通过WRITE权限访问内置架构：
 
-* ncm：publishing
-* nl：monitoring
-* nms：calendar
-* xtk：builder
-* xtk：连接
-* xtk：dbInit
-* xtk：entityBackupNew
-* xtk：entityBackupOriginal
-* xtk：entityOriginal
-* xtk：form
-* xtk：funcList
-* xtk：fusion
-* xtk：image
-* xtk：javascript
-* xtk：jssp
-* xtk：jst
-* xtk：navtree
-* xtk：operatorGroup
-* xtk：package
-* xtk：queryDef
-* xtk：resourceMenu
-* xtk：rights
-* xtk：schema
-* xtk：scriptContext
-* xtk：specFile
-* xtk：sql
-* xtk：sqlSchema
-* xtk：srcSchema
-* xtk：字符串
-* xtk：xslt
+* ncm:publishing
+* nl:monitoring
+* nms:calendar
+* xtk:builder
+* xtk:connections
+* xtk:dbInit
+* xtk:entityBackupNew
+* xtk:entityBackupOriginal
+* xtk:entityOriginal
+* xtk:form
+* xtk:funcList
+* xtk:fusion
+* xtk:image
+* xtk:javascript
+* xtk:jssp
+* xtk:jst
+* xtk:navtree
+* xtk:operatorGroup
+* xtk:package
+* xtk:queryDef
+* xtk:resourceMenu
+* xtk:rights
+* xtk:schema
+* xtk:scriptContext
+* xtk:specFile
+* xtk:sql
+* xtk:sqlSchema
+* xtk:srcSchema
+* xtk:strings
+* xtk:xslt
 
 >[!CAUTION]
 >
->**xtk：sessionInfo**&#x200B;架构的读取和写入权限只能由Adobe Campaign实例的内部帐户访问。
+>**xtk:sessionInfo**&#x200B;架构的读取和写入权限只能由Adobe Campaign实例的内部帐户访问。
 
 ## 修改内置模式的系统筛选器
 

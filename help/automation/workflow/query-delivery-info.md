@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: d11a1992-c07b-4133-8f0a-65f1b7552a99
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1260'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ ht-degree: 1%
 
    * 在特定投放的给定时间段内恢复跟踪日志。 需要三个过滤条件：两个日期条件，用于将搜索时段设置在当前日期之前的2周和当前日期之前的1天之间；另一个条件，用于将搜索限制到特定投放。
 
-     在&#x200B;**[!UICONTROL Target element]**&#x200B;窗口中，配置将考虑跟踪日志的开始日期。 单击 **[!UICONTROL Add]**。将显示条件行。 通过单击&#x200B;**[!UICONTROL Edit expression]**&#x200B;函数编辑&#x200B;**[!UICONTROL Expression]**&#x200B;列。 在&#x200B;**[!UICONTROL Field to select]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Date (@logDate)]**。
+     在&#x200B;**[!UICONTROL Target element]**&#x200B;窗口中，配置将考虑跟踪日志的开始日期。 单击 **[!UICONTROL Add]**。 将显示条件行。 通过单击&#x200B;**[!UICONTROL Edit expression]**&#x200B;函数编辑&#x200B;**[!UICONTROL Expression]**&#x200B;列。 在&#x200B;**[!UICONTROL Field to select]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Date (@logDate)]**。
 
      ![](assets/query_editor_nveau_23.png)
 
@@ -204,7 +204,7 @@ ht-degree: 1%
    ![](assets/query_editor_ex_04.png)
 
 1. 在&#x200B;**[!UICONTROL Subsets]**&#x200B;选项卡中，定义第一个拆分分支。 例如，输入此分支的&#x200B;**Clicked**&#x200B;标签。
-1. 选择&#x200B;**[!UICONTROL Add a filtering condition on the incoming population]**&#x200B;选项。 单击 **[!UICONTROL Edit]**。
+1. 选择 **[!UICONTROL Add a filtering condition on the incoming population]** 选项。 单击 **[!UICONTROL Edit]**。
 1. 在&#x200B;**[!UICONTROL Targeting and filtering dimension]**&#x200B;窗口中，双击&#x200B;**[!UICONTROL Recipients of a delivery]**&#x200B;筛选器。
 
    ![](assets/query_editor_ex_05.png)
@@ -222,7 +222,7 @@ ht-degree: 1%
    ![](assets/query_editor_ex_06.png)
 
 1. 将显示另一个子选项卡。 将其命名为“**未单击**”。
-1. 单击 **[!UICONTROL Add a filtering condition for the incoming population]**。然后单击 **[!UICONTROL Edit...]**。
+1. 单击 **[!UICONTROL Add a filtering condition for the incoming population]**。 然后单击 **[!UICONTROL Edit...]**。
 
    ![](assets/query_editor_ex_07.png)
 

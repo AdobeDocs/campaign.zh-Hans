@@ -9,7 +9,7 @@ exl-id: 12777107-5ccc-4f19-9dcd-8f6cade3ee98
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
 source-wordcount: '400'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 5%
 
 **交叉点**&#x200B;类型的活动从接收目标的交叉点创建目标。
 
-利用交集，可仅提取所有集客活动结果共有的群体。 创建目标时收到所有结果：因此，必须先完成所有先前的活动，然后才能执行交集。 要配置此活动，需要输入其标签以及有关结果的选项。
+交集允许您仅提取所有入站活动结果共有的群体。 创建目标时收到所有结果：因此，必须先完成所有先前的活动，然后才能执行交集。 要配置此活动，需要输入其标签以及有关结果的选项。
 
 ![](assets/s_user_segmentation_inter.png)
 
 有关配置和使用交叉点活动的详细信息，请参阅[提取联合数据（交叉点）](targeting-workflows.md#extracting-joint-data--intersection-)。
 
-如果要处理剩余群体，请选中&#x200B;**[!UICONTROL Generate complement]**&#x200B;选项。 补集将包含所有集客活动减去交集的结果的并集。然后，将向活动添加其他叫客过渡，如下所示：
+如果要处理剩余群体，请选中&#x200B;**[!UICONTROL Generate complement]**&#x200B;选项。 补集将包含所有集客活动减去交集的结果的并集。 然后，将向活动添加其他叫客过渡，如下所示：
 
 ![](assets/s_user_segmentation_inter_compl.png)
 

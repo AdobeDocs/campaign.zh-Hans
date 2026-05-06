@@ -7,7 +7,7 @@ role: User
 exl-id: b46530b5-cb81-40d7-b596-c7685359782a
 source-git-commit: d80a39d7f0df939d0e9e3f782d5d9aef3d459a32
 workflow-type: tm+mt
-source-wordcount: '1556'
+source-wordcount: '1557'
 ht-degree: 1%
 
 ---
@@ -74,7 +74,7 @@ Web界面对应于本地实体在订购营销活动时要填充的表单。
 
   ![](assets/mkt_distr_7.png)
 
-* **[!UICONTROL By external form]**：本地实体有权访问其外网(非Adobe Campaign)中的营销活动参数。 这些参数与&#x200B;**本地营销活动（按表单）**&#x200B;的参数相同。
+* **[!UICONTROL By external form]**：本地实体有权访问其外网（非Adobe Campaign）中的营销活动参数。 这些参数与&#x200B;**本地营销活动（按表单）**&#x200B;的参数相同。
 * **[!UICONTROL Pre-set]**：本地实体订购使用默认表单的营销活动，而不进行本地化。
 
   ![](assets/mkt_distr_5.png)
@@ -107,7 +107,7 @@ Web界面对应于本地实体在订购营销活动时要填充的表单。
 
 ### 文档 {#documents}
 
-在创建订单时，您可以允许本地实体操作员将文档（文本文件、电子表格、图像、促销活动描述等）链接到本地促销活动。 **[!UICONTROL Advanced parameters for campaign entry...]**&#x200B;链接允许您限制文档数量。 要实现此目的，只需在&#x200B;**[!UICONTROL Number of documents]**&#x200B;字段中输入允许的最大数量即可。
+您可以允许本地实体运算符链接文档（文本文件、电子表格、图像、营销活动描述等） 到本地营销活动。 **[!UICONTROL Advanced parameters for campaign entry...]**&#x200B;链接允许您限制文档数量。 要实现此目的，只需在&#x200B;**[!UICONTROL Number of documents]**&#x200B;字段中输入允许的最大数量即可。
 
 ![](assets/s_advuser_mkg_dist_local_docs.png)
 

@@ -6,7 +6,7 @@ role: Developer
 exl-id: ad8e9f9c-df24-4a11-b8df-4b31dd54911f
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '3025'
+source-wordcount: '3090'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-此报表基于&#x200B;**[!UICONTROL Consolidated tracking]**&#x200B;表(nms:trackingStats)。 在显示报表时，出于性能原因，使用此聚合表代替&#x200B;**[!UICONTROL Recipient tracking logs]**&#x200B;表(nms:trackingLogRcp)，并且不会实时计算它。 该表将在检索跟踪日志后几分钟生成。 如果指标是最新的，则结果将与&#x200B;**跟踪指标**&#x200B;报告的指标相同。 @totalclicks指示器表示5分钟内的点击总数。
+此报表基于&#x200B;**[!UICONTROL Consolidated tracking]**&#x200B;表(nms:trackingStats)。 在显示报表时，出于性能原因，使用此聚合表代替&#x200B;**[!UICONTROL Recipient tracking logs]**&#x200B;表(nms:trackingLogRcp)，并且不会实时计算它。 该表在检索跟踪日志几分钟后生成。 如果指标是最新的，则结果将与&#x200B;**跟踪指标**&#x200B;报告的指标相同。 @totalclicks指示器表示5分钟内的点击总数。
 
 ## 无法投放项和退回 {#non-deliverables-and-bounces-1}
 
@@ -74,43 +74,43 @@ ht-degree: 3%
    <td> 用户未知<br /> </td> 
    <td> @unknownUser<br /> </td> 
    <td> 状态等于“失败”且原因等于“用户未知”的所有消息计数。<br /> </td> 
-   <td> Count(@status=2和msg/@failureReason=1)<br /> </td> 
+   <td> Count（@status=2和msg/@failureReason=1）<br /> </td> 
   </tr> 
   <tr> 
    <td> 无法访问<br /> </td> 
    <td> @unreachable<br /> </td> 
    <td> 状态等于“失败”且原因等于“不可访问”的所有消息计数。<br /> </td> 
-   <td> Count(@status=2和msg/@failureReason=3)<br /> </td> 
+   <td> Count（@status=2和msg/@failureReason=3）<br /> </td> 
   </tr> 
   <tr> 
    <td> 已拒绝<br /> </td> 
    <td> @refused<br /> </td> 
    <td> 状态等于“失败”且原因等于“已拒绝”的所有邮件计数。<br /> </td> 
-   <td> Count(@status=2和msg/@failureReason=20)<br /> </td> 
+   <td> Count（@status=2和msg/@failureReason=20）<br /> </td> 
   </tr> 
   <tr> 
    <td> 域<br />无效 </td> 
    <td> @invalidDomain<br /> </td> 
    <td> 状态等于“失败”且原因等于“无效域”的所有消息计数。<br /> </td> 
-   <td> Count(@status=2和msg/@failureReason=2)<br /> </td> 
+   <td> Count（@status=2和msg/@failureReason=2）<br /> </td> 
   </tr> 
   <tr> 
    <td> 帐户已禁用<br /> </td> 
    <td> @disabled<br /> </td> 
    <td> 状态等于“失败”且原因等于“帐户已禁用”的所有邮件的计数。<br /> </td> 
-   <td> Count(@status=2和msg/@failureReason=4)<br /> </td> 
+   <td> Count（@status=2和msg/@failureReason=4）<br /> </td> 
   </tr> 
   <tr> 
    <td> 收件箱已满<br /> </td> 
    <td> @mailBoxFull<br /> </td> 
    <td> 状态等于“失败”且原因等于“收件箱已满”的所有邮件计数。<br /> </td> 
-   <td> Count(@status=2和msg/@failureReason=5)<br /> </td> 
+   <td> Count（@status=2和msg/@failureReason=5）<br /> </td> 
   </tr> 
   <tr> 
    <td> 错误<br /> </td> 
    <td> @value<br /> </td> 
    <td> 此错误类型的失败消息数。<br /> </td> 
-   <td> Count(@status=2且msg/@failureReason="错误类型的值")<br /> </td> 
+   <td> Count（@status=2且msg/@failureReason="错误类型的值"）<br /> </td> 
   </tr> 
   <tr> 
    <td> 贡献<br /> </td> 
@@ -129,7 +129,7 @@ ht-degree: 3%
 
 **按域划分**
 
-报告的第二部分详细列出了按Internet域而非错误类型划分的失败消息。 在此例中，链接到&#x200B;**Error**&#x200B;指示器(@value)的公式为：Count(@status=2和@domain=&quot;Value of the domain name&quot;)，即此域的所有状态为失败的消息计数。
+报告的第二部分详细列出了按Internet域而非错误类型划分的失败消息。 在此例中，链接到&#x200B;**Error**&#x200B;指示器(@value)的公式为：Count（@status=2和@domain=&quot;Value of the domain name&quot;），即此域的所有状态为失败的消息计数。
 
 ## 浏览器 {#browsers-1}
 
@@ -288,7 +288,7 @@ ht-degree: 3%
    <td> 共享数量<br /> </td> 
    <td> @forward<br /> </td> 
    <td> 在此社交网络上共享的邮件总数。<br /> </td> 
-   <td> Sum(iIf([url/@category]="社交网络类型的值"，@totalClicks，0))<br /> </td> 
+   <td> Sum(iIf（[url/@category]="社交网络类型的值"，@totalClicks，0）)<br /> </td> 
   </tr> 
   <tr> 
    <td> 划分<br /> </td> 
@@ -356,7 +356,7 @@ ht-degree: 3%
    <td> 新联系人<br /> </td> 
    <td> @newContacts<br /> </td> 
    <td> 链接到收件人的访客计数。<br /> </td> 
-   <td> 公式： count(@id)<br />筛选器： @recipient-id！= 0<br /> </td> 
+   <td> 公式： count(@id)<br />筛选器： @recipient-id != 0<br /> </td> 
   </tr> 
   <tr> 
    <td> 打开<br /> </td> 
@@ -556,7 +556,7 @@ ht-degree: 3%
    <td> 投诉<br /> </td> 
    <td> @complaints<br /> </td> 
    <td> 状态等于“失败”且原因等于“阻止列表时的地址”的邮件数。<br /> </td> 
-   <td> Count(@status=2和msg/@failureReason=8)<br /> </td> 
+   <td> Count（@status=2和msg/@failureReason=8）<br /> </td> 
   </tr> 
   <tr> 
    <td> 打开<br /> </td> 
@@ -604,7 +604,7 @@ ht-degree: 3%
    <td> 已访问页面<br /> </td> 
    <td> @totalWebPage<br /> </td> 
    <td> URL类型等于“Web”或“Transaction”的所有@ids的计数。<br /> </td> 
-   <td> count(Iif([url/@type]=4或[url/@type]=5， @id， 0))<br /> </td> 
+   <td> count(Iif（[url/@type]=4或[url/@type]=5， @id， 0）)<br /> </td> 
   </tr> 
   <tr> 
    <td> 事务<br /> </td> 
@@ -723,7 +723,7 @@ ht-degree: 3%
    <td> 点击次数<br /> </td> 
    <td> @_click<br /> </td> 
    <td> URL主键不同于1<br />的所有@totalClicks的计数 </td> 
-   <td> count(Iif([@url-id] ！= 1， @totalClicks， 0))<br /> </td> 
+   <td> count(Iif([@url-id] != 1， @totalClicks， 0))<br /> </td> 
   </tr> 
   <tr> 
    <td> 点击次数(%)<br /> </td> 
@@ -791,7 +791,7 @@ ht-degree: 3%
 
 此报表基于投放(nms:delivery)和&#x200B;**[!UICONTROL Consolidated tracking]** (nms:trackingStats)表。
 
-此报告显示邮件内容（HTML 和/或文本）以及每个链接的点击百分比。个性化块退订链接和镜像页面链接在总累计点击量中会被考虑在内，但不会显示在报表中。
+此报告显示邮件内容（HTML 和/或文本）以及每个链接的点击百分比。 个性化块退订链接和镜像页面链接在总累计点击量中会被考虑在内，但不会显示在报表中。
 
 ## 跟踪统计数据 {#tracking-statistics-1}
 
@@ -912,7 +912,7 @@ ht-degree: 3%
 
 ## 其他指标 {#other-indicators}
 
-通过&#x200B;**投放(nms**) > Indicators **节点访问的:delivery已发送**&#x200B;指示器(@sent)对应于发送到服务提供商的SMS总数。 此指示器仅用于SMS投放，不得用于其他类型的投放(不要与&#x200B;**@success**&#x200B;和&#x200B;**@processed**&#x200B;指示器混淆)。
+通过&#x200B;**投放(nms:delivery) > Indicators**&#x200B;节点访问的&#x200B;**已发送**&#x200B;指示器(@sent)对应于发送到服务提供商的SMS总数。 此指示器仅用于SMS投放，不得用于其他类型的投放（不要与&#x200B;**@success**&#x200B;和&#x200B;**@processed**&#x200B;指示器混淆）。
 
 ## 指示器同步 {#indicator-synchronization}
 
@@ -920,7 +920,7 @@ ht-degree: 3%
 
 ## 跟踪打开次数 {#tracking-opens-}
 
-为了让Adobe Campaign检测邮件打开，收件人必须下载电子邮件中的图像。 HTML 和多部分/替代电子邮件包含 0 像素图像，可让您检测已打开的消息。由于采用文本格式的消息不包含任何图像，因此，无法检测它们是否已打开。由于与图像显示相关的误差范围，基于消息打开次数计算的值始终是估计值。
+为了让Adobe Campaign检测邮件打开，收件人必须下载电子邮件中的图像。 HTML 和多部分/替代电子邮件包含 0 像素图像，可让您检测已打开的消息。 由于采用文本格式的消息不包含任何图像，因此，无法检测它们是否已打开。 由于与图像显示相关的误差范围，基于消息打开次数计算的值始终是估计值。
 
 ## 目标人员/收件人 {#targeted-persons---recipients}
 
@@ -930,4 +930,4 @@ ht-degree: 3%
 
 人数，包括定向收件人以及电子邮件转发给的所有人员。 每次打开或单击新浏览器（消息尚未在其中打开）时，都会将另一个人添加到统计数据中。
 
-例如，如果您在工作时收到一封电子邮件(由Adobe Campaign发送)，并且打开或单击该电子邮件，则您将被计为定向收件人（即，recipient=1， person=1）。 如果您将此电子邮件转发给两位好友，则定向收件人数量将仍等于1，而人员数量将等于3。 值3与新浏览器中的每次打开/单击一致。
+例如，如果您在工作时收到一封电子邮件（由Adobe Campaign发送），并且打开或单击该电子邮件，则您将被计为定向收件人（即，recipient=1， person=1）。 如果您将此电子邮件转发给两位好友，则定向收件人数量将仍等于1，而人员数量将等于3。 值3与新浏览器中的每次打开/单击一致。

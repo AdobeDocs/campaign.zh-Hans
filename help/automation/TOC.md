@@ -5,8 +5,8 @@ user-guide-description: Campaign自动化指南
 feature: Overview
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 81%
+source-wordcount: '462'
+ht-degree: 82%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 81%
 
 + [Campaign自动化指南](home.md)
 + 使用工作流实现自动化 {#workflows}
-   + 工作流快速入门 {#introduction}
+   + 工作流入门 {#introduction}
       + [关于工作流](workflow/about-workflows.md)
       + 工作流类型 {#wf-type}
          + [定位工作流](workflow/targeting-workflows.md)

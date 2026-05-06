@@ -8,14 +8,14 @@ version: Campaign v8, Campaign Classic v7
 exl-id: 4de3b2c2-7eb7-4fd9-9350-64a6e9e2b7f8
 source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1196'
 ht-degree: 4%
 
 ---
 
 # 创建LINE投放
 
-LINE 是一款免费即时消息、语音和视频通话应用程序，可在所有移动设备和 PC 上使用。您可以使用Adobe Campaign发送LINE消息。
+LINE 是一款免费即时消息、语音和视频通话应用程序，可在所有移动设备和 PC 上使用。 您可以使用Adobe Campaign发送LINE消息。
 
 [!DNL LINE]还可以与事务性消息模块结合使用，以在消费者移动设备上安装的[!DNL LINE]应用程序上发送实时消息。 有关详细信息，请参阅Campaign Classic v7文档中的此[页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line)。
 
@@ -48,7 +48,7 @@ LINE 是一款免费即时消息、语音和视频通话应用程序，可在所
 
 1. 将&#x200B;**[!UICONTROL Label]**&#x200B;和&#x200B;**[!UICONTROL Internal name]**&#x200B;添加到新服务。
 
-1. 从&#x200B;**[!UICONTROL LINE]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Type]**。
+1. 从&#x200B;**[!UICONTROL Type]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL LINE]**。
 
    ![](assets/line_service_2.png)
 
@@ -70,9 +70,9 @@ LINE 是一款免费即时消息、语音和视频通话应用程序，可在所
 
    ![](assets/line_config_2.png)
 
-   * **[!UICONTROL Channel Alias]**：通过您在[!DNL LINE] > **[!UICONTROL Channels]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Technical configuration]**&#x200B;帐户提供。
-   * **[!UICONTROL Channel ID]**：通过您在[!DNL LINE] > **[!UICONTROL Channels]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Basic Information panel]**&#x200B;帐户提供。
-   * **[!UICONTROL Channel secret key]**：通过您在[!DNL LINE] > **[!UICONTROL Channels]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Basic Information panel]**&#x200B;帐户提供。
+   * **[!UICONTROL Channel Alias]**：通过您在&#x200B;**[!UICONTROL Channels]** > **[!UICONTROL Technical configuration]**&#x200B;选项卡中的[!DNL LINE]帐户提供。
+   * **[!UICONTROL Channel ID]**：通过您在&#x200B;**[!UICONTROL Channels]** > **[!UICONTROL Basic Information panel]**&#x200B;选项卡中的[!DNL LINE]帐户提供。
+   * **[!UICONTROL Channel secret key]**：通过您在&#x200B;**[!UICONTROL Channels]** > **[!UICONTROL Basic Information panel]**&#x200B;选项卡中的[!DNL LINE]帐户提供。
    * **[!UICONTROL Access token]**：通过开发人员门户中的[!DNL LINE]帐户或通过单击&#x200B;**[!UICONTROL Get access token]**&#x200B;按钮提供。
    * **[!UICONTROL Access token expiration date]**：允许您指定Access令牌的过期日期。
    * **[!UICONTROL LINE subscription service]**：允许您指定用户将订阅的服务。
@@ -115,7 +115,7 @@ LINE 是一款免费即时消息、语音和视频通话应用程序，可在所
 
 1. 选择是要直接定位[!DNL LINE]订阅者，还是要根据用户的[!DNL LINE]订阅定位用户，然后单击&#x200B;**[!UICONTROL Next]**。 在此示例中，我们选择了&#x200B;**[!UICONTROL By LINE V2 subscription]**。
 
-1. 在&#x200B;**[!UICONTROL Line-V2]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Folder]**，然后选择[!DNL LINE]服务。 单击&#x200B;**[!UICONTROL Finish]**，然后单击&#x200B;**[!UICONTROL Ok]**&#x200B;以开始个性化您的投放。
+1. 在&#x200B;**[!UICONTROL Folder]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Line-V2]**，然后选择[!DNL LINE]服务。 单击&#x200B;**[!UICONTROL Finish]**，然后单击&#x200B;**[!UICONTROL Ok]**&#x200B;以开始个性化您的投放。
 
    ![](assets/line_message_10.png)
 
@@ -177,11 +177,11 @@ LINE 是一款免费即时消息、语音和视频通话应用程序，可在所
 
   可根据屏幕大小定义图像：
 
-   * 1040像素
-   * 700像素
-   * 460像素
-   * 300像素
-   * 240像素
+   * 1040px
+   * 700px
+   * 460px
+   * 300px
+   * 240px
 
   >[!CAUTION]
   >
@@ -209,7 +209,7 @@ LINE 是一款免费即时消息、语音和视频通话应用程序，可在所
 
 ## 访问报告 {#accessing-reports}
 
-发送投放后，您可以从[!DNL LINE]通过菜单&#x200B;**[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]**&#x200B;查看&#x200B;**[!UICONTROL Explorer]**&#x200B;报告。
+发送投放后，您可以从&#x200B;**[!UICONTROL Explorer]**&#x200B;通过菜单&#x200B;**[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]**&#x200B;查看[!DNL LINE]报告。
 
 >[!NOTE]
 >
@@ -217,7 +217,7 @@ LINE 是一款免费即时消息、语音和视频通话应用程序，可在所
 
 ![](assets/line_reports_01.png)
 
-对于[!DNL LINE]服务报告，请从&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;选项卡访问菜单&#x200B;**[!UICONTROL Services and Subscriptions]** > **[!UICONTROL LINE-V2]** > **[!UICONTROL Explorer]**。 然后单击&#x200B;**[!UICONTROL Reports]**&#x200B;服务中的[!DNL LINE]图标。
+对于[!DNL LINE]服务报告，请从&#x200B;**[!UICONTROL Explorer]**&#x200B;选项卡访问菜单&#x200B;**[!UICONTROL Profiles and Targets]** > **[!UICONTROL Services and Subscriptions]** > **[!UICONTROL LINE-V2]**。 然后单击[!DNL LINE]服务中的&#x200B;**[!UICONTROL Reports]**&#x200B;图标。
 
 ![](assets/line_reports.png)
 
@@ -225,7 +225,7 @@ LINE 是一款免费即时消息、语音和视频通话应用程序，可在所
 
 在本例中，我们将创建和配置一条文本消息以及包含将根据收件人进行个性化的数据的图像。
 
-1. 通过单击[!DNL LINE]选项卡中的&#x200B;**[!UICONTROL Create]**&#x200B;按钮创建您的&#x200B;**[!UICONTROL Campaign]**&#x200B;投放。
+1. 通过单击&#x200B;**[!UICONTROL Campaign]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Create]**&#x200B;按钮创建您的[!DNL LINE]投放。
 
    ![](assets/line_usecase.png)
 
@@ -249,7 +249,7 @@ LINE 是一款免费即时消息、语音和视频通话应用程序，可在所
 
    ![](assets/line_usecase_05.png)
 
-1. 按照相同的过程添加图像，在&#x200B;**[!UICONTROL Image and links]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Message type]**。
+1. 按照相同的过程添加图像，在&#x200B;**[!UICONTROL Message type]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Image and links]**。
 
    添加您的&#x200B;**[!UICONTROL Image URL]**。
 

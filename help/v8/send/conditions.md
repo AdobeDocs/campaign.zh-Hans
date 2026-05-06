@@ -14,7 +14,7 @@ ht-degree: 10%
 
 # 创建条件内容{#conditional-content}
 
-通过配置条件内容字段，您可以创建高级个性化。满足特定条件时可替换完整的文本块和/或图像。
+通过配置条件内容字段，您可以创建高级个性化。 满足特定条件时可替换完整的文本块和/或图像。
 
 
 ## 在电子邮件中使用条件 {#conditions-in-an-email}
@@ -86,4 +86,4 @@ ht-degree: 10%
 
 了解如何在多语言新闻稿的示例中向投放添加条件内容。
 
->[!VIDEO](https://video.tv.adobe.com/v/3446721?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3446721?captions=chi_hans&quality=12)

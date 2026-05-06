@@ -7,8 +7,8 @@ level: Experienced
 exl-id: ae1ef010-24d5-4be4-a30c-899e2b0040a4
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 79%
+source-wordcount: '151'
+ht-degree: 47%
 
 ---
 
@@ -43,34 +43,34 @@ Starting Campaign v8.6, the authentication process to Campaign v8 is being impro
     <td>
       <img src="../v8/assets/do-not-localize/icon-start.svg" width="35px">
     <br/>
-      <strong>入门</strong><br/><a href="../v8/start/campaign-ui.md">用户界面</a> - <a href="../v8/start/ac-components.md">组件和流程</a> - <a href="../v8/start/v7-to-v8.md">从 Classic v7 到 v8</a> - <a href="../v8/start/campaign-faq.md">常见问题</a>
+      <strong>开始</strong><br/><a href="../v8/start/campaign-ui.md">用户界面</a> - <a href="../v8/start/ac-components.md">组件和进程</a> - <a href="../v8/start/v7-to-v8.md">从经典v7到v8</a> - <a href="../v8/start/campaign-faq.md">常见问题解答</a>
     </td>
     <td>
       <img src="../v8/assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>客户体验</strong><br/><a href="../automation/workflow/about-workflows.md" target="_blank">使用工作流实现自动化</a> - <a href="../automation/campaigns/set-up-campaigns.md" target="_blank">活动编排</a> - <a href="../v8/interaction/interaction.md">决策管理</a> - <a href="../v8/send/personalize.md">个性化</a>
+      <strong>客户体验</strong><br/><a href="../automation/workflow/about-workflows.md" target="_blank">工作流自动化</a> - <a href="../automation/campaigns/set-up-campaigns.md" target="_blank">营销活动编排</a> - <a href="../v8/interaction/interaction.md">决策管理</a> - <a href="../v8/send/personalize.md">Personalization</a>
     </td>
     <td>
       <img src="../v8/assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>发送消息</strong><br/><a href="../v8/start/create-message.md">入门</a> - <a href="../v8/send/preview-and-proof.md">预览和校样</a> - <a href="../v8/send/predictive.md">发送时间优化</a> - <a href="../v8/reporting/gs-reporting.md">报告与分析</a>
+      <strong>发送邮件</strong><br/><a href="../v8/start/create-message.md">开始使用</a> - <a href="../v8/send/preview-and-proof.md">预览和验证</a> - <a href="../v8/send/predictive.md">发送时间优化</a> - <a href="../v8/reporting/gs-reporting.md">Reporting &amp; Analytics</a>
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
       <img src="../v8/assets/do-not-localize/icon_profile-audience.svg" width="35px">
     <br/>
-      <strong>轮廓和受众</strong><br/><a href="../v8/audiences/create-profiles.md">添加轮廓</a> - <a href="../v8/audiences/create-audiences.md">创建受众</a> - <a href="../v8/start/subscriptions.md">管理订阅</a> - <a href="../v8/start/privacy.md">隐私</a>
+      <strong>个人资料和受众</strong><br/><a href="../v8/audiences/create-profiles.md">添加个人资料</a> - <a href="../v8/audiences/create-audiences.md">创建受众</a> - <a href="../v8/start/subscriptions.md">管理订阅</a> - <a href="../v8/start/privacy.md">隐私</a>
     </td>
     <td>
       <img src="../v8/assets/do-not-localize/icon-configure.svg" width="35px">
     <br/>
-      <strong>架构与配置</strong><br/><a href="../v8/architecture/architecture.md">架构</a> - <a href="../v8/start/implement.md">Campaign v8 实施</a> - <a href="../v8/connect/integration.md">与其他解决方案连接</a> - <a href="../v8/start/gs-permissions.md">用户和权限</a>
+      <strong>架构和配置</strong><br/><a href="../v8/architecture/architecture.md">架构</a> - <a href="../v8/start/implement.md">Campaign v8实施</a> - <a href="../v8/connect/integration.md">与其他解决方案连接</a> - <a href="../v8/start/gs-permissions.md">用户和权限</a>
     </td>
     <td>
       <img src="../v8/assets/do-not-localize/icon-dev.svg" width="35px">
     <br/>
-      <strong>开发人员资源</strong><br/><a href="../v8/dev/datamodel.md">Campaign v8 数据模型</a> - <a href="../v8/dev/schemas.md">架构</a> - <a href="../v8/dev/api.md">API</a>
+      <strong>开发人员资源</strong><br/><a href="../v8/dev/datamodel.md">Campaign v8数据模型</a> - <a href="../v8/dev/schemas.md">架构</a> - <a href="../v8/dev/api.md">API</a>
     </td>
   </tr>
 </table>

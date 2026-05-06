@@ -8,7 +8,7 @@ version: Campaign v8, Campaign Classic v7
 exl-id: e3ad6d92-8d53-4098-90fd-cfed29f2e56e
 source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '370'
 ht-degree: 10%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 10%
 * 架构
 * recCount
 
-这组三个值标识动态投放产生的目标。 **[!UICONTROL tableName]**&#x200B;是存储目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms：recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。
+这组三个值标识动态投放产生的目标。 **[!UICONTROL tableName]**&#x200B;是存储目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms:recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。
 
 与补充关联的转换具有相同的参数。
 
@@ -64,6 +64,6 @@ ht-degree: 10%
 
 本视频演示了如何使用增量查询配置连续投放。
 
->[!VIDEO](https://video.tv.adobe.com/v/27515?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/27515?captions=chi_hans&quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=zh-Hans){target="_blank"}提供了其他Campaign操作方法视频。

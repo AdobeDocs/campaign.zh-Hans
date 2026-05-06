@@ -4,10 +4,11 @@ description: 了解如何监测投放、工作流和您的活动实例
 feature: Monitoring
 role: User
 level: Beginner
-source-git-commit: c4d3a5d3cf89f2d342c661e54b5192d84ceb3a75
+exl-id: 2ad585f2-19bc-4391-8a19-9e892dbe01a3
+source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 2%
+source-wordcount: '1141'
+ht-degree: 4%
 
 ---
 
@@ -92,7 +93,7 @@ Campaign v8提供了多种监视功能来跟踪实例性能并确保实现最佳
 
 >[!NOTE]
 >
->对于Campaign v8托管云服务，服务器基础架构(CPU、内存、磁盘)由Adobe进行监视和管理。
+>对于Campaign v8托管云服务，服务器基础架构（CPU、内存、磁盘）由Adobe进行监视和管理。
 
 ### 技术工作流 {#technical-workflows}
 
@@ -171,4 +172,3 @@ Adobe Campaign提供了一组全面的报告来分析您的交付性能：
 * [隔离管理](../send/quarantines.md)
 * [配置和发送投放](../send/configure-and-send.md)
 * [报告快速入门](../reporting/gs-reporting.md)
-

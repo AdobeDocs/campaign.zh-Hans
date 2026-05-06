@@ -5,7 +5,7 @@ feature: Reporting
 exl-id: e9031d65-6e0e-49da-9990-7687d2a77591
 source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1028'
 ht-degree: 10%
 
 ---
@@ -174,7 +174,7 @@ This chart shows the breakdown of cumulated clicks per day.
 
 ## 热门点击 {#hot-clicks}
 
-此报告显示邮件内容（HTML 和/或文本）以及每个链接的点击百分比。个性化块退订链接、镜像页面链接和产品建议链接将计入总累计点击次数，但不会显示在报告中。
+此报告显示邮件内容（HTML 和/或文本）以及每个链接的点击百分比。 个性化块退订链接、镜像页面链接和产品建议链接将计入总累计点击次数，但不会显示在报告中。
 
 >[!NOTE]
 >
@@ -185,7 +185,7 @@ This chart shows the breakdown of cumulated clicks per day.
 
 此报表提供有关打开、点击和交易的统计数据。
 
-通过它，您可以跟踪投放的营销影响。 您可以通过更改时间刻度（1小时、3小时或24小时视图等）来配置值的显示方式。 单击&#x200B;**[!UICONTROL Refresh]**&#x200B;确认您的选择。
+通过它，您可以跟踪投放的营销影响。 您可以通过更改时间刻度（1小时、3小时或24小时视图等）来配置值的显示方式。 单击 **[!UICONTROL Refresh]** 以确认您的选择。
 
 此报告提供了一个值表和一个排列图，其中显示投放达到最大效率所需的时间。 使用以下指示器：
 

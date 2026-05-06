@@ -7,8 +7,8 @@ level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
 source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 12%
+source-wordcount: '461'
+ht-degree: 11%
 
 ---
 
@@ -26,7 +26,7 @@ Campaign v8可与以下Adobe解决方案配合使用。 浏览链接以了解有
 
 * Adobe Analytics。[了解详情](../connect/ac-aa.md)
 * Adobe Experience Cloud triggers. [了解详情](../connect/ac-triggers.md)
-* Adobe Experience Manager。[了解详情](../connect/ac-aem.md)
+* Adobe Experience Manager。 [了解详情](../connect/ac-aem.md)
 * Adobe Experience Platform。 [了解详情](../connect/ac-aep.md)
 * Adobe Journey Optimizer。 [了解详情](../connect/ac-ajo.md)
 * Adobe Target。 [了解详情](../connect/ac-at.md)

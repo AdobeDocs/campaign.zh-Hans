@@ -5,9 +5,9 @@ feature: SMS
 role: User
 level: Intermediate
 exl-id: 1f941b35-c7e0-4e8c-b6e5-a1a3e5354483
-source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
+source-git-commit: fc0a610a2215db3bfc15c5df3a1a7d1d30783545
 workflow-type: tm+mt
-source-wordcount: '3682'
+source-wordcount: '3659'
 ht-degree: 3%
 
 ---
@@ -280,13 +280,13 @@ SMPP协议规范未严格强制实施SR格式。 它只是规范附录B中描述
 
 例如，您可能希望在received_message_id字段中捕获ID。 为此，请启用此复选框，并将以下文本添加到状态：
 
-0x001E:05e3299e-8d37-49d0-97c6-8e4fe60c7739
+`0x001E:05e3299e-8d37-49d0-97c6-8e4fe60c7739`
 
 在本例中，0x001E是可选字段的标记，UUID是字段的值。
 
 为了捕获此值，您现在可以在SR字段中ID的提取正则表达式中设置以下正则表达式：
 
-\b0x001E:([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})\b
+`\b0x001E:([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})\b`
 
 >[!IMPORTANT]
 >

@@ -3,10 +3,10 @@ title: Campaign v8 发行说明
 description: 最新 Campaign v8 版本
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-source-git-commit: c9098683077d4a01e269801b4434fcf5eb1f90a4
+source-git-commit: 4a3e6cf15b1877e6eb4e13fdee056356eab267c5
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 8%
+source-wordcount: '1747'
+ht-degree: 6%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 8%
 
 ## 8.9.2版 {#release-8-9-2}
 
-_2026年3月11日_
-
 >[!CAUTION]
 >
 > 必须升级客户端控制台。 在[此页面](../start/connect.md#upgrade-ac-console)中了解如何升级您的客户端控制台。
+
+_2026年5月3日_
 
 ### 安全性改进 {#security-8-9-2}
 
@@ -28,15 +28,72 @@ _2026年3月11日_
 
 ### 修复 {#fixes-8-9-2}
 
+>[!NOTE]
+>
+> 下面列出的修复程序已在后续的8.9.2内部版本中逐步推出。 导航到&#x200B;**[!UICONTROL Help > About...]** [菜单](upgrades.md#version)以检查您是否拥有最新的8.9.2 (11d1c68)内部版本。 有关更多信息，请与Adobe代表联系。
+
 * 修复了由于数据类型转换问题而导致事务性事件中的事件日期设置不正确，从而导致动态报告中的日期不正确的问题。 (NEO-93923)
 * 修复了标题和正文字段为空时，Android和iOS静默推送通知在投放准备期间失败的问题。 (NEO-93739)
 * 修复了由于协调密钥不正确而导致无法为Android应用程序注册令牌捕获语言字段的问题。 (NEO-93100)
 * 修复了在使用压力规则应用自定义分类规则时投放准备失败的问题。 (NEO-94457)
 * 修复了客户端控制台可能遇到HTTP请求处理失败的问题。 (NEO-94071)
 
+<!-- BUILD 8.9.2.9829.9669833 -->
+
+* 默认情况下，现在禁用FDA监控，以防止连接日志插入错误。 (NEO-94841)
+* 修复了用于优惠兑换的交互SOAP调用可能失败，并出现命名空间解析错误的问题。 (NEO-94787)
+<!-- infra * Fixed an issue where Snowflake connections using private key authentication could fail on ARM64 architectures. (NEO-94350) -->
+* 修复了长度为1的字符串字段可能导致PostgreSQL 17上的工作流临时表出现SQL错误的问题。 (NEO-94487)
+<!-- linked to previous build * Fixed an issue where the server could fail to restart after a Debian 13 build upgrade due to a missing dependency. (NEO-94598) -->
+
+<!-- BUILD 8.9.2.9829.c90aa36 -->
+
+* 修复了客户端控制台和Web UI中的&#x200B;**显示镜像页面**&#x200B;选项可能返回“错误镜像页面”错误的问题。 (NEO-93303)
+
+<!-- BUILD 8.9.2.9830.4a6f868 -->
+
+* 修复了在FFDA部署中安装多变量包后，现成&#x200B;**跟踪**&#x200B;技术工作流可能失败的问题。 (NEO-94972)
+* 修复了投放准备在投放模板使用引用当前投放的权重公式时无法向目标添加任何收件人的问题。 (NEO-94892)
+<!-- hotfix -->
+* 修复了在升级后，使用两个连续1-N链接中的连接进行工作流增强可能会失败并出现SQL错误的问题。 (NEO-94893)
+
+<!-- BUILD 8.9.2.9831.f53d3d2 -->
+
+* 修复了电子邮件管道中可能导致随时间推移过度内存消耗的问题。 (NEO-95088)
+* 修复了在使用种子或验证地址时，冲突的电子邮件类型规则可能错误地从投放目标中排除非重复收件人的问题。 (NEO-95026)
+* 修复了在升级后，现成的&#x200B;**优惠通知**&#x200B;技术工作流可能失败的问题。 (NEO-95064)
+* 多变量包安装过程已得到改进，以防止在版本升级期间跟踪工作流失败。 (NEO-95018)
+
+<!-- BUILD 8.9.2.9831.11d1c68 -->
+
+* 修复了可能导致服务器反复崩溃并导致实例中断的问题。 (NEO-95304)
+* 修复了跟踪和镜像页面链接可能无法加载投放的问题。 (NEO-95239)
+* 修复了在登录到受IMS单点登录保护的Campaign Web应用程序时可能导致重定向循环的问题。 (NEO-95188)
+* 修复了在保存投放后，投放提取文件中缺少投放创建日期的问题。 (NEO-95010)
+* 修复了批量生成的子工作流可能停留在&#x200B;**正在编辑**&#x200B;状态，从而减少事务性工作流容量的问题。 (NEO-95131)
+* 修复了&#x200B;**读取列表**&#x200B;活动可能会使用工作流生成的列表结构覆盖预定义列表模板，从而导致下游工作流失败的问题。 (NEO-95103)
+* 修复了推送通知反馈处理可能会导致服务器在处理大量投放时崩溃的问题。 (NEO-95150)
+* 修复了在架构资源管理器中打开`xtk:workflow`架构上的&#x200B;**Data**&#x200B;选项卡可能会触发错误消息的问题。 (NEO-94923)
+<!-- hotfixes -->
+* 修复了&#x200B;**扩充**&#x200B;活动无法再从上游&#x200B;**子工作流**&#x200B;活动中检索输出属性，从而导致工作流失败的问题。 (NEO-95151)
+* 修复了跟踪数据摄取问题，该问题可能会阻止投放状态更新并阻止下游消息处理。 (NEO-94666)
+* 修复了与优惠建议相关的某些客户端控制台操作可能触发对Snowflake数据库的长时间运行查询，从而导致锁定和速度缓慢的问题。 (NEO-92936)
+* 修复了无法在Snowflake外部帐户上配置用于存储加密密钥的自定义选项的问题。 (NEO-93302)
+
+<!-- 
+Internal/non-customer-facing:
+* Internal test automation task added to cover NEO-94893. (NEO-94990) — autotest only
+Customer-specific hotfixes:
+* Fixed an issue affecting WhatsApp delivery preparation. (NEO-92480) — HeroMotoCorp only
+* Added a feature-flagged optimization to use dynamic shared memory in Customer Targeting Audience (CTA) processing. (NEO-93542) — DerTour only
+* Fixed an issue where the delivery alerting workflow could fire incorrect "long start pending" notifications even when deliveries were sent within the configured threshold. (NEO-93434) — non-ZDT hotfix, NORC only
+* Added a new parameter in the mobile SDK to allow identification of the source instance for push notifications. (NEO-94650) — ICICI only
+* Fixed an issue with the custom send time feature on the Web UI where deliveries waited until the contact date and time to execute instead of executing at the equivalent local time per recipient timezone, breaking parity with Campaign Standard behavior. (NEO-94762) — H&M only (in progress at time of writing)
+-->
+
 ## 8.9.1版 {#release-8-9-1}
 
-_2026年1月27日_
+_2026 年 1 月 27 日_
 
 >[!CAUTION]
 >
@@ -48,7 +105,7 @@ _2026年1月27日_
 
 此版本附带了一组可在Campaign Web用户界面中使用的功能：
 
-* [多语言交付功能(GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=zh-Hans){target="_blank"}
+* [多语言投放功能（GA）](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=zh-Hans){target="_blank"}
 * [事务性消息中的用户档案扩充(GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=zh-Hans){target="_blank"}
 * [Adobe Experience Manager实时副本和语言副本](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=zh-Hans){target="_blank"}
 * [内容实验 — A/B测试](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html?lang=zh-Hans){target="_blank"}

@@ -8,10 +8,14 @@ role: Developer
 level: Experienced
 exl-id: 58ec0999-b28a-4198-8d57-729b074c6a6d
 TQID: https://experienceleague.adobe.com/yi2PDkImYnF-UqGqklMAlvGAIHl9GE47VsCEGj6--yU
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: b12f6872-9271-4369-85e5-86969a0b99a2
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 228
@@ -36,7 +40,7 @@ ht-degree: 1%
    * &quot;resType&quot;：这是技术类型。
 
      如果“type”以值“link”或“collection”结束，则resTarget值是链接所定向资源的名称。
-如果“type”以“enumeration”值完成，则会添加“values”字段，并在**values**&#x200B;节点中详细说明每个枚举值。
+如果“type”以“enumeration”值完成，则会添加“values”字段，并在&#x200B;**values**&#x200B;节点中详细说明每个枚举值。
 
 * **筛选器**&#x200B;节点返回用于检索关联筛选器的URL。 有关筛选器的详细信息，请参阅[此部分](sorting.md#filtering)部分。
 

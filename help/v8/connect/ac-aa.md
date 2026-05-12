@@ -98,7 +98,7 @@ ht-degree: 63%
 
 1. 单击 **[!UICONTROL Add new]** 以创建评测电子邮件营销活动影响所需的标识符，即内部营销活动名称 (cid) 和 iNmsBroadlog (bid) 表 ID。
 
-   要了解如何编辑&#x200B;**[!UICONTROL Conversion variables]**，请参阅此[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html#admin-tools){target="_blank"}。
+   要了解如何编辑&#x200B;**[!UICONTROL Conversion variables]**，请参阅此[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html?lang=zh-Hans#admin-tools){target="_blank"}。
 
    ![](assets/analytics_connnector_6.png)
 
@@ -121,7 +121,7 @@ ht-degree: 63%
    * **[!UICONTROL Unique Opens]**
    * **[!UICONTROL Unsubscribed]**
 
-   要了解如何配置&#x200B;**[!UICONTROL Success events]**，请参阅此[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event.html)
+   要了解如何配置&#x200B;**[!UICONTROL Success events]**，请参阅此[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event.html?lang=zh-Hans)
 
    ![](assets/analytics_connnector_8.png)
 
@@ -135,7 +135,7 @@ ht-degree: 63%
 
 请注意，如果在配置外部帐户时，您的 **[!UICONTROL Report suite]**、**[!UICONTROL Conversion variables]** 或 **[!UICONTROL Success events]** 不可见，这意味着您在与用户关联的 **[!UICONTROL Product profile]** 中缺少对此新创建组件的权限。
 
-有关此内容的更多信息，请参阅 [Adobe Analytics 的产品配置文件](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html#product-profile-admins){target="_blank"}页面。
+有关此内容的更多信息，请参阅 [Adobe Analytics 的产品配置文件](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=zh-Hans#product-profile-admins){target="_blank"}页面。
 
 1. 浏览到Adobe Campaign资源管理器树的&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External accounts]**&#x200B;文件夹，然后单击&#x200B;**[!UICONTROL New]**。
 
@@ -159,7 +159,7 @@ ht-degree: 63%
 
    >[!NOTE]
    >
-   >Campaign ID和Broadload ID字段是通过JavaScript在登陆页面上或通过处理规则收集的。 [了解有关处理规则的更多信息](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
+   >Campaign ID和Broadload ID字段是通过JavaScript在登陆页面上或通过处理规则收集的。 [了解有关处理规则的更多信息](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
 
    ![](assets/analytics_connnector_11.png)
 

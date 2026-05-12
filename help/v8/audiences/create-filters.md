@@ -6,9 +6,15 @@ role: User
 level: Beginner
 exl-id: 873578f6-6af9-4d0c-8df3-cce320fc6a4e
 version: Campaign v8, Campaign Classic v7
-source-git-commit: ec1b41ccf532b044e75c69e795eabfb19a523ec2
+TQID: https://experienceleague.adobe.com/ZhEye69T-u--8tgV8ONBX9nRkdJFUSvx8RIKqq0bFsI
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '1943'
+source-wordcount: 1943
 ht-degree: 1%
 
 ---
@@ -240,7 +246,7 @@ Adobe Campaign中提供了以下类型的过滤器：
 
 1. 为当前默认预定义过滤器取消选中相同选项。
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以应用筛选器。
-1. 浏览到“收件人”文件夹，然后单击当前筛选器右侧的&#x200B;**[!UICONTROL Remove this filter]**&#x200B;图标：新的默认筛选器可用。
+1. 浏览到“收件人”文件夹，然后单击当前筛选器右侧的&#x200B;**[!UICONTROL Remove this filter]**图标：新的默认筛选器可用。
    ![](assets/updated-default-filter.png)
 
 
@@ -384,9 +390,9 @@ Adobe Campaign中提供了以下类型的过滤器：
 
 了解如何在这些端到端示例中构建高级查询：
 
-* 在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"}中了解如何定位简单的收件人属性。
-* 在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=zh-Hans){target="_blank"}中了解如何筛选过去7天内未联系的收件人。
-* 了解如何在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=zh-Hans){target="_blank"}中按Active帐户筛选操作员列表。
+* 在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}中了解如何定位简单的收件人属性。
+* 在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html){target="_blank"}中了解如何筛选过去7天内未联系的收件人。
+* 了解如何在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}中按Active帐户筛选操作员列表。
 * 在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=zh-Hans){target="_blank"}中了解如何构建生日电子邮件受众。
 
 

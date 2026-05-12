@@ -6,9 +6,14 @@ feature: Email, Push, SMS, Direct Mail, Cross Channel Orchestration
 role: User
 level: Beginner
 exl-id: 3a4de36e-ba24-49ec-8113-f32f12c8ecdd
-source-git-commit: 08e04f3642320df94d719a415e878e3a26d2e00f
+TQID: https://experienceleague.adobe.com/bgnDExQAdWAsulXRjLGA46VthqPYWfNZRJ66C4ppF9M
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: 1033
 ht-degree: 18%
 
 ---
@@ -121,7 +126,7 @@ Campaign为每个渠道提供了一组内置模板：电子邮件、推送、短
 
 ### 执行模板 {#execute-a-template}
 
-您可以直接从模板列表启动模板执行，而无需先创建投放。 投放模板可以手动执行（如下所述），也可以由事件触发（在设置时间执行，当文件在服务器中可用等），如[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/action-activities/delivery)中所述。
+您可以直接从模板列表启动模板执行，而无需先创建投放。 投放模板可以手动执行（如下所述），也可以由事件触发（在设置时间执行，当文件在服务器中可用等），如[此部分](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/delivery)中所述。
 
 要手动执行模板，请执行以下步骤：
 
@@ -141,18 +146,18 @@ Campaign为每个渠道提供了一组内置模板：电子邮件、推送、短
 
 以下视频演示了如何为临时投放配置模板。
 
->[!VIDEO](https://video.tv.adobe.com/v/3409243?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/342082?quality=12)
 
 ### 如何设置投放模板属性
 
 以下视频介绍了如何设置投放模板属性，并详细说明每个属性。
 
->[!VIDEO](https://video.tv.adobe.com/v/3443411?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/338969?quality=12)
 
 ### 如何部署临时投放模板
 
 此视频介绍了如何部署临时电子邮件投放模板，并说明了电子邮件投放与投放工作流之间的区别。
 
->[!VIDEO](https://video.tv.adobe.com/v/3444967?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/338965?quality=12)
 
-[此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=zh-Hans){target="_blank"}提供了其他Campaign操作方法视频。
+[此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}提供了其他Campaign操作方法视频。

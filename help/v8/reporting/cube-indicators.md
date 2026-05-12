@@ -5,9 +5,16 @@ feature: Reporting
 role: Developer
 level: Beginner
 exl-id: 03a6816b-e51a-4eaf-ab76-02d24f97ba46
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+TQID: https://experienceleague.adobe.com/XLxFJOA5J9hP-CxI3JmYBHyvCBZyerwJYBrX1IkvrMY
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2: id: e3988c18-3cfa-4f16-b812-ac2d2b1056fa
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: 756
 ht-degree: 3%
 
 ---
@@ -93,7 +100,7 @@ ht-degree: 3%
 
 为此，请选中&#x200B;**[!UICONTROL Enable binning]**&#x200B;选项。 [了解详情](customize-cubes.md#data-binning)。
 
-1. 添加&#x200B;**日期**&#x200B;类型维度。 在这里，我们要显示收件人用户档案创建日期。 为此，请单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择收件人表中的&#x200B;**[!UICONTROL Creation date]**&#x200B;字段。
+1. 添加&#x200B;**日期**&#x200B;类型维度。 在这里，我们要显示收件人用户档案创建日期。 为此，请单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择收件人表中的&#x200B;**[!UICONTROL Creation date]**字段。
 您可以自定义日期显示模式。 要执行此操作，请选择要使用的层次和要生成的级别：
 
 ![](assets/cube-date-dimension.png)

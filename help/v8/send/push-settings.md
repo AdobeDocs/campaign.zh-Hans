@@ -6,9 +6,15 @@ role: Admin, Developer
 level: Intermediate
 version: Campaign v8, Campaign Classic v7
 exl-id: 1a75f411-3f71-4114-b738-277820dc6138
-source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
+TQID: https://experienceleague.adobe.com/haoxtaIu58t0Ko15csnTpoUi49JWsQaIKPAtWTNiRx8
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2id: d5ef99fa-df0c-4153-bf94-105ad0724167
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: 1829
 ht-degree: 5%
 
 ---
@@ -27,9 +33,9 @@ ht-degree: 5%
 
 1. 检查[先决条件](#before-starting)。
 1. 在Adobe Experience Platform数据收集中设置[移动标记属性](#launch-property)。
-1. 在此页面[&#128279;](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"}中获取详细的Adobe Experience Platform Mobile SDK 。
-1. （可选）启用日志记录和生命周期量度，如本页[&#128279;](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/){target="_blank"}中的详细所示。
-1. （可选）将[Adobe Experience Platform Assurance添加到您的应用程序](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"}以验证您的实施。 在此页面[&#128279;](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}中了解如何实施Adobe Experience Platform Assurance扩展。
+1. 在此页面](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/){target="_blank"}中获取详细的Adobe Experience Platform Mobile SDK [。
+1. （可选）启用日志记录和生命周期量度，如本页](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/){target="_blank"}中的详细[所示。
+1. （可选）将[Adobe Experience Platform Assurance添加到您的应用程序](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"}以验证您的实施。 在此页面](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}中了解如何实施Adobe Experience Platform Assurance扩展[。
 1. 在Adobe Campaign中配置iOS和Android Mobile Services，如本页[所述。](#push-service)
 1. 在移动资产中安装和配置[Adobe Campaign扩展](#configure-extension)。
 1. 请按照[Adobe Experience Platform Mobile SDK文档](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"}中的说明，在您的应用程序中设置Adobe Experience Platform Mobile SDK。
@@ -38,7 +44,7 @@ ht-degree: 5%
 
 ### 设置权限 {#setup-permissions}
 
-在创建移动应用程序之前，您首先需要确保拥有或分配适用于Adobe Experience Platform中的标记的正确用户权限。 Adobe Experience Platform中标记的用户权限通过Adobe Admin Console分配给用户。 请参阅[标记文档](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=zh-Hans){target="_blank"}以了解详情。
+在创建移动应用程序之前，您首先需要确保拥有或分配适用于Adobe Experience Platform中的标记的正确用户权限。 Adobe Experience Platform中标记的用户权限通过Adobe Admin Console分配给用户。 请参阅[标记文档](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html){target="_blank"}以了解详情。
 
 >[!CAUTION]
 >
@@ -48,7 +54,7 @@ ht-degree: 5%
 
 1. 访问&#x200B;**[!DNL Admin Console]**。
 1. 从&#x200B;**[!UICONTROL Products]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL Adobe Experience Platform Data Collection]**&#x200B;卡片。
-1. 选择现有&#x200B;**[!UICONTROL Product Profile]**&#x200B;或使用&#x200B;**[!UICONTROL New profile]**&#x200B;按钮创建新按钮。 在[Admin Console文档](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html?lang=zh-Hans#ui){target="_blank"}中了解如何创建新的&#x200B;**[!UICONTROL New profile]**。
+1. 选择现有&#x200B;**[!UICONTROL Product Profile]**&#x200B;或使用&#x200B;**[!UICONTROL New profile]**&#x200B;按钮创建新按钮。 在[Admin Console文档](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html#ui){target="_blank"}中了解如何创建新的&#x200B;**[!UICONTROL New profile]**。
 1. 在 **[!UICONTROL Permissions]** 选项卡中，选择 **[!UICONTROL Property Rights]**。
 1. 单击 **[!UICONTROL Add all]**。 这会将以下权限添加到您的产品配置文件：
    * **[!UICONTROL Approve]**
@@ -80,7 +86,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   >如果以前未在Admin Console中创建过该用户，请参阅[添加用户文档](https://helpx.adobe.com/cn/enterprise/using/manage-users-individually.html#add-users){target="_blank"}。
+   >如果以前未在Admin Console中创建过该用户，请参阅[添加用户文档](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#add-users){target="_blank"}。
 
 ### 配置您的应用程序 {#configure-app}
 
@@ -142,7 +148,7 @@ To get the SDKs needed for push notification to work you will need the following
 * **[!UICONTROL Adobe Experience Platform Assurance]**, optional but recommended to debug the mobile implementation.
 -->
 
-在[Adobe Experience Platform文档](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=zh-Hans){target="_blank"}中了解有关[!DNL Adobe Experience Platform Data Collection]标记的更多信息。
+在[Adobe Experience Platform文档](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html){target="_blank"}中了解有关[!DNL Adobe Experience Platform Data Collection]标记的更多信息。
 
 创建后，打开新的标记属性并创建库。 操作步骤：
 

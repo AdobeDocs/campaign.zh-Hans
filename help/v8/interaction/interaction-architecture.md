@@ -5,9 +5,14 @@ feature: Interaction, Offers
 role: Developer
 level: Beginner
 exl-id: 7a710960-7e41-4462-bd5e-18e874aa46f8
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+TQID: https://experienceleague.adobe.com/KikEyxXS3iB2EJUMm7D4XOxXRzflBGVlewWTvuu5LzA
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: 1326
 ht-degree: 0%
 
 ---
@@ -22,7 +27,7 @@ ht-degree: 0%
 
   类别也可以在在线环境中手动发布。
 
-  此部分[&#128279;](interaction-offer.md#approve-offers)中详细介绍了批准优惠的过程。
+  此部分](interaction-offer.md#approve-offers)中详细介绍了[批准优惠的过程。
 
 * 一个&#x200B;**实时**&#x200B;环境，其中设计环境中的已批准选件以及在设计环境中配置的各种选件空间、过滤器、类别和规则都可以找到。 在调用优惠引擎期间，引擎将始终使用实时环境中的优惠。
 
@@ -84,7 +89,7 @@ Adobe Campaign交互模块提出了两种类型的交互：
 
 >[!NOTE]
 >
->在安装包时，**nms:proposition**&#x200B;表的&#x200B;**long**&#x200B;类型字段（如建议ID）将变为&#x200B;**int64**&#x200B;类型字段。 [Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html?lang=zh-Hans#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}中详细介绍了此类数据。
+>在安装包时，**nms:proposition**&#x200B;表的&#x200B;**long**&#x200B;类型字段（如建议ID）将变为&#x200B;**int64**&#x200B;类型字段。 [Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}中详细介绍了此类数据。
 
 在每个实例上配置数据保留持续时间（通过部署向导中的&#x200B;**[!UICONTROL Data purge]**&#x200B;窗口）。 在执行实例上，此期间必须对应于要计算的分类规则（滑动期间）和资格规则所需的历史深度。
 

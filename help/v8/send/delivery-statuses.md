@@ -6,9 +6,16 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 90f2b7b2-db9e-42aa-aef2-e90aee5d208e
-source-git-commit: 0868fa6522f622e9fa18d4acc3606f690550e5b6
+TQID: https://experienceleague.adobe.com/raVVeGP6V9mukXOtwg84UsZWpPpQsP3v9jpluSpQ6ZY
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2: id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: 557
 ht-degree: 5%
 
 ---
@@ -95,7 +102,7 @@ ht-degree: 5%
 
   在&#x200B;**[!UICONTROL NmsOperation_LimitConcurrency]**&#x200B;选项中定义了同时营销活动的限制。 默认值为 10。
 
-  作为托管Cloud Services用户，您可以根据需要使用Adobe调整此限制。 请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=zh-Hans){target="_blank"}以了解有关选项的更多信息。
+  作为托管Cloud Services用户，您可以根据需要使用Adobe调整此限制。 请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html){target="_blank"}以了解有关选项的更多信息。
 
 * **资源可用性问题**
 

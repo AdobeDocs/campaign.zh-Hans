@@ -6,17 +6,22 @@ feature: Workflows, Data Management
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 794de398-f35d-4c2b-af29-d6fd38eb9394
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+TQID: https://experienceleague.adobe.com/VeDBB3FCIUIkD-IEdPlUtjhX9CKFiQptIH-eys-iG2o
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: 562
 ht-degree: 1%
 
 ---
 
 # 文件传输{#file-transfer}
 
-**文件传输**&#x200B;活动允许您接收或发送文件、测试文件是否存在或列出服务器上的文件。 使用的协议为Azure Blob Storage、Amazon Simple Storage Service (S3)、FTP或SFTP。
-通过S3、Azure Blob Storage或SFTP连接，您还可以将区段数据导入Adobe实时客户数据平台的Adobe Campaign。 有关详细信息，请参阅此[文档](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=zh-Hans){target="_blank"}。
+**文件传输**活动允许您接收或发送文件、测试文件是否存在或列出服务器上的文件。 使用的协议为Azure Blob Storage、Amazon Simple Storage Service (S3)、FTP或SFTP。
+通过S3、Azure Blob Storage或SFTP连接，您还可以将区段数据导入Adobe实时客户数据平台的Adobe Campaign。 有关详细信息，请参阅此[文档](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html){target="_blank"}。
 
 ## 属性 {#properties}
 

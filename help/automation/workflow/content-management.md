@@ -6,9 +6,13 @@ feature: Workflows, Data Management
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 9b225f78-1959-4e4f-aa4e-ff8a63051154
-source-git-commit: 4cbccf1ad02af9133d51933e3e0d010b5c8c43bd
+TQID: https://experienceleague.adobe.com/7owt-TM494cZq-Knz55qMpCAAtGhlpaKOlf2iXXeqo4
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: 472
 ht-degree: 2%
 
 ---
@@ -23,7 +27,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe Campaign Web用户界面允许您为内容使用内容片段。 借助可在一条或多条消息中引用的可重用组件，营销用户可预建多个自定义内容块，从而允许您在改进的设计过程中快速组合消息内容。 要了解有关内容片段的更多信息，请参阅[Adobe Campaign Web UI文档。](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/content/manage-reusable-content/fragments/fragments){target=_blank}
+>Adobe Campaign Web用户界面允许您为内容使用内容片段。 借助可在一条或多条消息中引用的可重用组件，营销用户可预建多个自定义内容块，从而允许您在改进的设计过程中快速组合消息内容。 要了解有关内容片段的更多信息，请参阅[Adobe Campaign Web UI文档。](https://experienceleague.adobe.com/en/docs/campaign-web/v8/content/manage-reusable-content/fragments/fragments){target=_blank}
 
 活动的属性分为三个步骤：
 

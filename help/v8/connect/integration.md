@@ -5,9 +5,14 @@ feature: Overview
 role: Admin, User
 level: Beginner
 exl-id: d1d57aa8-b811-470f-a8a6-18da3a700f1a
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+TQID: https://experienceleague.adobe.com/vCnJYU3rJvZ5d5waVuycpPnBD-1dBJs25RLQjdZbBZU
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: 461
 ht-degree: 11%
 
 ---
@@ -34,9 +39,9 @@ Campaign v8可与以下Adobe解决方案配合使用。 浏览链接以了解有
 
 您还可以将Experience Cloud解决方案中的&#x200B;**受众**&#x200B;和&#x200B;**资产**&#x200B;与资产共享和受众共享功能相结合。
 
-请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=zh-Hans#integrating-with-adobe-experience-cloud){target="_blank"}以了解有关Campaign与Experience Cloud解决方案之间的&#x200B;**受众共享**&#x200B;的更多信息。
+请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud){target="_blank"}以了解有关Campaign与Experience Cloud解决方案之间的&#x200B;**受众共享**&#x200B;的更多信息。
 
-请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=zh-Hans#integrating-with-adobe-experience-cloud){target="_blank"}以了解有关Campaign与Experience Cloud解决方案之间的&#x200B;**资源共享**&#x200B;的更多信息。
+请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud){target="_blank"}以了解有关Campaign与Experience Cloud解决方案之间的&#x200B;**资源共享**&#x200B;的更多信息。
 
 >[!NOTE]
 >

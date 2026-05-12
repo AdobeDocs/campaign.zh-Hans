@@ -5,9 +5,14 @@ feature: SMS
 role: User
 level: Intermediate
 exl-id: eda6934a-e48a-4932-8c88-588f661005d6
-source-git-commit: 6f29a7f157c167cae6d304f5d972e2e958a56ec8
+TQID: https://experienceleague.adobe.com/dPwmuLj6Qd9b5x0EcBLidSnxjEfsjT8-kAo3Y-gRih4
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '4458'
+source-wordcount: 4458
 ht-degree: 0%
 
 ---
@@ -178,7 +183,7 @@ SMS连接器涉及3个实体：SMPP提供商、Adobe和您。
 
 如果提供程序支持同一登录/密码组合使用多个短代码，则必须询问他们将短代码放在BIND PDU中的什么位置。 请注意，此信息必须放在BIND PDU中，而不是SUBMIT_SM中，因为BIND PDU是唯一允许正确路由MO的位置。
 
-请参阅上面各种PDU [&#128279;](#pdu)部分中的信息，了解BIND PDU中哪些字段可用，通常您会将短代码放在&#x200B;*address_range*&#x200B;中，但这需要提供者的特殊支持。 联系他们，了解他们希望如何独立路由多个短代码。
+请参阅上面各种PDU ](#pdu)部分中的[信息，了解BIND PDU中哪些字段可用，通常您会将短代码放在&#x200B;*address_range*&#x200B;中，但这需要提供者的特殊支持。 联系他们，了解他们希望如何独立路由多个短代码。
 
 Adobe Campaign支持在同一外部帐户上处理多个短代码，因此通常只需一个帐户处理所有流量即可正常使用。
 

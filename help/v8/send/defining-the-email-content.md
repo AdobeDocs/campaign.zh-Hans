@@ -6,9 +6,14 @@ feature: Email Design
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: c3e107b5-6d2e-408f-9c7d-a81a4756b4ef
-source-git-commit: 25ee55d5327e0ba7f2192f7b462853269c8cbf46
+TQID: https://experienceleague.adobe.com/9TXL-RQE41IZCKWoh7jvGNLfBonStPosLB7qkIHZdKo
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '2028'
+source-wordcount: 2028
 ht-degree: 1%
 
 ---
@@ -68,7 +73,7 @@ ht-degree: 1%
 
 * 要导入HTML内容，请使用&#x200B;**[!UICONTROL Open]**&#x200B;按钮。 您还可以将源代码直接粘贴到&#x200B;**[!UICONTROL Source]**&#x200B;子选项卡中。
 
-  如果您使用数字内容编辑器(DCE)，请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/use-case-creating-an-email-delivery.html?lang=zh-Hans#step-3---selecting-a-content)。
+  如果您使用数字内容编辑器(DCE)，请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/use-case-creating-an-email-delivery.html#step-3---selecting-a-content)。
 
   >[!IMPORTANT]
   >
@@ -151,7 +156,7 @@ HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以
 
 为避免性能问题，电子邮件中包含的图像不能超过100 KB。 默认设置的此限制可以从`NmsDelivery_MaxDownloadedImageSize`选项更改。 但是，Adobe强烈建议避免在电子邮件投放中使用大型图像。
 
-在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=zh-Hans#delivery)中了解有关Campaign选项列表的更多信息。
+在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery)中了解有关Campaign选项列表的更多信息。
 
 ### 图像类型 {#img-types}
 
@@ -162,7 +167,7 @@ HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以
 
   可通过Adobe Campaign层次结构的&#x200B;**[!UICONTROL Resources > Online]**&#x200B;节点访问公共资源。 它们分组在库中，可以包含在电子邮件中，但也可以用于营销活动或任务，或者用于内容管理。
 
-* 与Adobe Experience Cloud共享的资源。 请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=zh-Hans)。
+* 与Adobe Experience Cloud共享的资源。 请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html)。
 
 ### 插入和管理图像 {#manage-images}
 
@@ -176,7 +181,7 @@ HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以
 
 要通过投放助手管理图像，请执行以下操作：
 
-1. 单击工具栏中的&#x200B;**[!UICONTROL Tracking & Images]**&#x200B;图标。
+1. 单击工具栏中的&#x200B;**[!UICONTROL Tracking & Images]**图标。
    ![](assets/s_ncs_user_email_del_img_param.png)
 
 1. 在&#x200B;**[!UICONTROL Images]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Upload images]**。

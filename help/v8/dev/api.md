@@ -5,9 +5,16 @@ feature: API
 role: Developer
 level: Intermediate, Experienced
 exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
-source-git-commit: 75e0069ccd4e23dbf64b9052fd81817e438b333e
+TQID: https://experienceleague.adobe.com/pC27h6Z-J345l4XjFEOgwVTHtQSSRxJmtnWQ973SiPk
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2
+subfeature_v2: id: bf97c196-a4d1-4fa3-a151-e68a114c8ac0
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: 320
 ht-degree: 10%
 
 ---
@@ -23,9 +30,9 @@ ht-degree: 10%
 >
 >根据您的部署模型，您还可以将REST API与Campaign v8结合使用。 [了解详情](../dev/api/get-started-apis.md)。
 
-您可以使用[Campaign JavaScript API](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=zh-Hans){target="_blank"}在Campaign云数据库中写入或从数据库中读取：
+您可以使用[Campaign JavaScript API](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html){target="_blank"}在Campaign云数据库中写入或从数据库中读取：
 
-* 特定于业务的API，允许您对每个对象执行操作：投放、工作流、订阅等。 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html?lang=zh-Hans){target="_blank"}以了解详情。
+* 特定于业务的API，允许您对每个对象执行操作：投放、工作流、订阅等。 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html){target="_blank"}以了解详情。
 * 使用`queryDef`和`NLWS`对象查询数据模型数据的通用数据访问API。 在[使用queryDef](query-api.md)查询数据库中了解更多信息。
 
 请注意，在其[企业(FFDA)部署](../architecture/enterprise-deployment.md)中，Campaign可与两个数据库配合使用：用于用户界面实时消息传递和统一查询、通过API写入的本地数据库，以及用于活动执行、报告、数据摄取、批量查询和工作流执行的云数据库。
@@ -55,4 +62,4 @@ ht-degree: 10%
 
 <!-- * [Query the database with queryDef](query-api.md)-->
 * [数据模型最佳实践](datamodel-best-practices.md)
-* [Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=zh-Hans){target="_blank"}
+* [Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html){target="_blank"}

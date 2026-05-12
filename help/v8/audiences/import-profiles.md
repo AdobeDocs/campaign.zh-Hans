@@ -5,9 +5,16 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: b6a5083f-2b5a-4f5b-ad30-d91363752896
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+TQID: https://experienceleague.adobe.com/qoVtBCkTTk2DKaR605exVaJvjQ7kjKRoRg-9fJqdoo4
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a658c786-869b-4194-a780-2594d663adda
+subfeature_v2: id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: 287
 ht-degree: 21%
 
 ---
@@ -22,13 +29,13 @@ ht-degree: 21%
 
 ### 使用列表中的数据：读取列表 {#data-from-read-list}
 
-在文件中准备和构建数据，以使用工作流导入数据。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=zh-Hans){target="_blank"}。
+在文件中准备和构建数据，以使用工作流导入数据。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"}。
 
 ### 从文件加载数据 {#data-from-a-file}
 
-可在工作流中处理的数据可从结构化文件中提取，以便将其导入Adobe Campaign。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading--file-.html?lang=zh-Hans){target="_blank"}。
+可在工作流中处理的数据可从结构化文件中提取，以便将其导入Adobe Campaign。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading--file-.html){target="_blank"}。
 
-收集数据后，您可以在工作流中使用该数据，例如，扩充投放或更新数据库。 如需详细信息，请参阅[此小节](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=zh-Hans){target="_blank"}。
+收集数据后，您可以在工作流中使用该数据，例如，扩充投放或更新数据库。 如需详细信息，请参阅[此小节](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html){target="_blank"}。
 
 ## 一次性导入{#import-jobs}
 

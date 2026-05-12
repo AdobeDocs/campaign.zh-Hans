@@ -5,9 +5,13 @@ feature: Audiences, Profiles
 role: User
 level: Beginner
 exl-id: 6fbe5616-7b8b-4504-988b-2bbbfd062548
-source-git-commit: 70af3bceee67082d6a1bb098e60fd2899dc74600
+TQID: https://experienceleague.adobe.com/FOcEqR6kXaTUyLHSjaxXk2AhErFunD7JNokBzNiOJVY
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: 796
 ht-degree: 13%
 
 ---
@@ -26,7 +30,7 @@ ht-degree: 13%
 
 观看本视频，了解有关Adobe Campaign中列表管理的更多信息。
 
->[!VIDEO](https://video.tv.adobe.com/v/3426466?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/334909?quality=12)
 
 
 ## 创建联系人列表 {#create-a-list-of-contacts}
@@ -103,7 +107,7 @@ ht-degree: 13%
 
    ![](assets/targeting-wf-age-filter.png)
 
-   在[本节](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"}中了解如何在工作流中创建查询。
+   在[本节](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}中了解如何在工作流中创建查询。
 
 1. 为此查询添加标签并保存更改。
 1. 添加&#x200B;**[!UICONTROL List update]**&#x200B;活动并进行编辑。
@@ -124,7 +128,7 @@ ht-degree: 13%
 
    ![](assets/access-new-list.png)
 
-   您可以通过向工作流添加调度程序使此工作流重复出现。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=zh-Hans){target="_blank"}。
+   您可以通过向工作流添加调度程序使此工作流重复出现。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}。
 
 ## 从列表中删除配置文件 {#remove-a-profile-from-a-list}
 

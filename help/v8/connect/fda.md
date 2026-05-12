@@ -5,9 +5,14 @@ feature: Federated Data Access
 role: Admin
 level: Beginner
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-source-git-commit: 631c4986d24daeff870412566318adb170ce040f
+TQID: https://experienceleague.adobe.com/lM7a0NhOPSZsHW4X60S3-TTlnnuTMb1Ip30uRpBctEQ
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: 734
 ht-degree: 1%
 
 ---
@@ -20,7 +25,7 @@ ht-degree: 1%
 >
 >* [兼容性矩阵](../start/compatibility-matrix.md)中列出了用于联合数据访问的兼容数据库。
 >
->* 在[企业(FFDA)部署](../../v8/architecture/enterprise-deployment.md)的上下文中，可以使用特定的外部帐户来管理Campaign本地数据库和Snowflake云数据库之间的通信。 此外部帐户由Adobe为您设置，不得修改&#x200B;**&#x200B;**。
+>* 在[企业(FFDA)部署](../../v8/architecture/enterprise-deployment.md)的上下文中，可以使用特定的外部帐户来管理Campaign本地数据库和Snowflake云数据库之间的通信。 此外部帐户由Adobe为您设置，不得修改&#x200B;****。
 >
 >* 作为托管云服务用户，[联系Adobe](../start/campaign-faq.md#support)以将外部数据库与Campaign连接。
 

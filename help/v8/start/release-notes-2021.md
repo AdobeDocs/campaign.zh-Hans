@@ -4,10 +4,22 @@ description: 2021 Campaign v8 版本的功能和改进列表
 feature: Release Notes
 hide: true
 exl-id: 5ac6bda9-86c8-4200-b285-6fee2a29039d
-source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
+TQID: https://experienceleague.adobe.com/o497R5a6OnWWHLy-QJUic5Mps5OlRGrW7JvQCQJKhC0
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2:
+  - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: '1644'
-ht-degree: 93%
+source-wordcount: 1644
+ht-degree: 97%
 
 ---
 
@@ -98,7 +110,7 @@ _2021 年 10 月 28 日_
 * 修复了可能导致营销实例上的计费工作流崩溃的问题。
 * 修复了可能导致 FFDA Snowflake 现成表格中出现重复键值的问题。 (NEO-38583)
 * 修复了在连续编辑两个重复数据删除活动时可能导致工作流临时架构丢失的问题。 (NEO-34063)
-* 修复了在尝试提取时间组件时，运行Amazon Redshift HoursDiff和MinutesDiff函数时返回错误结果的问题。(NEO-31673)
+* 修复了在尝试提取时间组件时，运行 Amazon Redshift HoursDiff 和 MinutesDiff 函数时返回错误结果的问题。(NEO-31673)
 * 修复了由于代理配置问题而导致用户可能无法登录到控制台的问题。 (NEO-38388)
 * 修复了导致&#x200B;**清除文件夹**&#x200B;功能无法正常运行的问题。 (NEO-37459)
 * 修复了可能导致您无法预览附加到工作流的移动投放的问题。
@@ -116,7 +128,7 @@ _2021 年 9 月 7 日_
 
 * Flash 生命周期结束后，已从所有相关的 Campaign 功能和组件中删除，并替换为 HTML5。 已删除&#x200B;**量规**&#x200B;类型的图表。 (NEO-30330) [阅读更多](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/creating-a-chart.html?lang=zh-Hans)
 * 在Windows上安装客户端控制台时，安装程序现在会检查是否存在父注册表节点，如果缺少该节点，则会创建一个。 这可防止在启动控制台时出现潜在问题。 (NEO-34854)
-* 跟踪签名功能已得到改进，以防止与第三方工具（电子邮件客户端、Internet浏览器等）访问方式相关的错误 处理特殊字符。 URL 参数现已经过编码。
+* 已对跟踪签名功能进行改进，以防止出现与第三方工具（电子邮件客户端、Internet 浏览器等） 处理特殊字符的方式相关的错误。 URL 参数现已经过编码。
 
 **其他变更**
 

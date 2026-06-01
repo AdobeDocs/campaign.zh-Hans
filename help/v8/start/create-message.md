@@ -7,15 +7,11 @@ level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 6cf8a929-637e-4e51-9160-5980ca727efb
 TQID: https://experienceleague.adobe.com/CSbxLgXnmrLFiEVEHHNM4rYDBn870UTuhcr1w6FOuRQ
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
 workflow-type: tm+mt
 source-wordcount: 1565
 ht-degree: 93%
@@ -97,7 +93,7 @@ ht-degree: 93%
 1. 在 **[!UICONTROL Target mapping]** 下拉列表中选择 [目标映射](../audiences/target-mappings.md)。
 1. 单击 **[!UICONTROL Add]** 按钮以定义限制筛选条件。
 
-   ![](assets/target-type.png){width="60%" align="left" zoomable="yes"}
+   ![](assets/target-type.png){width="60%" zoomable="yes"}
 
    选择筛选类型并单击 **[!UICONTROL Next]** 以定义条件。 您可以从 **[!UICONTROL Preview]** 选项卡中查看筛选的收件人。 根据目标的类型，通过 **[!UICONTROL Refine target]** 按钮可以组合多个目标选择条件。
 
@@ -191,7 +187,7 @@ ht-degree: 93%
 
 在本视频中，您将了解如何向现有电子邮件添加种子和校样，以及如何进行发送。
 
->[!VIDEO](https://video.tv.adobe.com/v/3447009?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。
 

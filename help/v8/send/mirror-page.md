@@ -7,17 +7,11 @@ level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 7bf3937c-484d-4404-8a9b-de7a10f5455a
 TQID: https://experienceleague.adobe.com/IhK-z4Uj1G3O90YyCAlqdy39qACE6jcMvpjv875OhLc
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: cc72dcf1-72e1-48cc-b434-e7c27d62d67cid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
 workflow-type: tm+mt
 source-wordcount: 435
 ht-degree: 56%
@@ -34,7 +28,7 @@ ht-degree: 56%
 
 Adobe Campaign 生成的镜像页面包含所有个性化数据。
 
-![镜像链接示例](assets/mirror-page-link.png){width="600" align="left"}
+![镜像链接示例](assets/mirror-page-link.png){width="600"}
 
 ## 添加指向镜像页面的链接 {#link-to-mirror-page}
 
@@ -42,7 +36,7 @@ Adobe Campaign 生成的镜像页面包含所有个性化数据。
 
 在 Adobe Campaign 中，您可以使用专用&#x200B;**个性化块**&#x200B;在电子邮件内容中插入指向镜像页面的链接。 内置的&#x200B;**指向镜像页面的链接**&#x200B;个性化块会在电子邮件内容中插入以下代码：`<%@ include view='MirrorPage' %>`。
 
-![](assets/mirror-page-insert.png){width="800" align="left"}
+![](assets/mirror-page-insert.png){width="800"}
 
 
 有关插入个性化内容块的更多信息，请参阅[个性化块](personalization-blocks.md)。
@@ -56,7 +50,7 @@ Adobe Campaign 生成的镜像页面包含所有个性化数据。
 1. 浏览到电子邮件属性的&#x200B;**[!UICONTROL Validity]**&#x200B;选项卡。
 1. 在&#x200B;**镜像页面管理**&#x200B;部分中，检查&#x200B;**[!UICONTROL Mode]**&#x200B;下拉列表。
 
-![](assets/mirror-page-generation.png){width="800" align="left"}
+![](assets/mirror-page-generation.png){width="800"}
 
 除默认模式外，还提供以下选项：
 
@@ -74,6 +68,6 @@ Adobe Campaign 生成的镜像页面包含所有个性化数据。
 
 1. 选择一个收件人，然后单击&#x200B;**[!UICONTROL Display the mirror page for this message...]**&#x200B;链接。
 
-   ![](assets/mirror-page-display.png){width="800" align="left"}
+   ![](assets/mirror-page-display.png){width="800"}
 
    镜像页面显示在专用屏幕中，其中包含选定收件人的个性化数据。

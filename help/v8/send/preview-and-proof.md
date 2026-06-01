@@ -14,7 +14,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
 workflow-type: tm+mt
 source-wordcount: 707
 ht-degree: 10%
@@ -61,11 +61,11 @@ ht-degree: 10%
 
   默认情况下，会随机执行替换，但您可以通过&#x200B;**[!UICONTROL Detail]**&#x200B;图标从主目标中选择特定收件人。
 
-  ![](assets/target-of-proofs-substitution-details.png){width="800" align="left"}
+  ![](assets/target-of-proofs-substitution-details.png){width="800"}
 
   选择&#x200B;**[!UICONTROL Select a profile (must be included in the target)]**&#x200B;选项并选择收件人。
 
-  ![](assets/target-of-proofs-substitution.png){width="800" align="left"}
+  ![](assets/target-of-proofs-substitution.png){width="800"}
 
 
 * 使用&#x200B;**[!UICONTROL Seed addresses]**&#x200B;选项将种子地址用作验证目标。 这些地址可以从文件导入或手动输入。
@@ -86,7 +86,7 @@ ht-degree: 10%
 1. 从&#x200B;**[!UICONTROL Send a proof]**&#x200B;窗口中，检查校样收件人。
 1. 单击&#x200B;**[!UICONTROL Analyze]**&#x200B;开始准备校对邮件。
 
-   ![](assets/send-proof-analyze.png){width="800" align="left"}
+   ![](assets/send-proof-analyze.png){width="800"}
 
 1. 投放准备完成后，使用&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;开始发送校样消息。
 
@@ -108,7 +108,7 @@ ht-degree: 10%
 
 默认情况下，验证邮件由主题中的`Proof #N`提及来标识，其中`N`是验证号。 此数字随每个证明投放分析递增。 您可以根据需要更改`proof`前缀。
 
-![](assets/proof-parameters.png){width="800" align="left"}
+![](assets/proof-parameters.png){width="800"}
 
 
 ## 操作说明视频 {#video-proof}

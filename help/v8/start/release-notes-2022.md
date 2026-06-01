@@ -12,9 +12,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 531670de4c2f740e4f0a4b96049b23eb8000e40d
 workflow-type: tm+mt
-source-wordcount: 1946
+source-wordcount: 1936
 ht-degree: 88%
 
 ---
@@ -77,7 +77,7 @@ _2022 年 9 月 30 日_
 <tr> 
 <td> <p><a href="../send/twitter.md">X社交渠道</a>现在可在Campaign v8中使用。 您可以：</p>
 <ul> 
-<li><p>在X（以前称为Twitter）上发送消息：通过Adobe Campaign，可直接将消息发送到您的X帐户。 您还可以向所有关注者发送私信。
+<li><p>在X（以前称为Twitter）上发送消息：通过Adobe Campaign，可直接将消息发送到您的X帐户。您还可以向所有关注者发送私信。
 </p></li>
 <li><p>收集新联系人：Adobe Campaign 可自动收集轮廓数据，您可借此来开展定位营销活动，并实施跨渠道的营销策略。
 </p></li>
@@ -96,7 +96,9 @@ _2022 年 9 月 30 日_
 * 此更改仅适用于“获取 URL”。 包括“发布 URL”在内的其他类型操作不会受到影响。
 * 如您使用的是自定义代码，则不会再从“获取 URL”安全令牌参数中检索安全令牌。 您必须使用以下 JSSP 代码生成新的安全令牌：
 
-  ```getNewSecurityToken(jsspContext.getSessionToken(), jsspContext.getSecurityToken(), true);```
+  ```
+  getNewSecurityToken(jsspContext.getSessionToken(), jsspContext.getSecurityToken(), true);
+  ```
 
   您还可以使用“登录 API”来获取安全令牌。
 * 会话令牌管理没有变化。

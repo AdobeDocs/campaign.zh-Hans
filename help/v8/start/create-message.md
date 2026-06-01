@@ -15,7 +15,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
 workflow-type: tm+mt
 source-wordcount: 1565
 ht-degree: 93%
@@ -97,7 +97,7 @@ ht-degree: 93%
 1. 在 **[!UICONTROL Target mapping]** 下拉列表中选择 [目标映射](../audiences/target-mappings.md)。
 1. 单击 **[!UICONTROL Add]** 按钮以定义限制筛选条件。
 
-   ![](assets/target-type.png){width="60%" align="left" zoomable="yes"}
+   ![](assets/target-type.png){width="60%" zoomable="yes"}
 
    选择筛选类型并单击 **[!UICONTROL Next]** 以定义条件。 您可以从 **[!UICONTROL Preview]** 选项卡中查看筛选的收件人。 根据目标的类型，通过 **[!UICONTROL Refine target]** 按钮可以组合多个目标选择条件。
 

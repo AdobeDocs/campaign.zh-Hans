@@ -16,10 +16,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: b285c321f3b905150b31621941ea99608d627739
 workflow-type: tm+mt
-source-wordcount: 1644
-ht-degree: 97%
+source-wordcount: 1617
+ht-degree: 96%
 
 ---
 
@@ -70,7 +70,7 @@ _2021 年 10 月 28 日_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Unicity Service 是新的 Cloud Database Manager 组件。 它可帮助用户维护和监测 Cloud Database 表内唯一键值约束的完整性。 这样，您就可以降低插入重复键值的风险。
+<td> <p>Unicity Service是新的Cloud Database Manager组件。它有助于用户维护和监视云数据库表中唯一键值约束的完整性。这样可以降低插入重复键的风险。
 <p>由于 Cloud Database 不强制执行唯一性约束，因此 Unicity Service 在应用程序级别引入了<b>一套新护栏</b>，以减少使用 Adobe Campaign 管理数据时插入重复项的风险。</p> 
 <p>Unicity Service 会启动一个名为 <b>ffdaUnicity</b> 的内置工作流程，以监测唯一性约束并在检测到重复项时发出警报。</p>
 <p>有关更多信息，请参阅<a href="../architecture/keys.md">详细文档</a>。</p>
@@ -207,3 +207,4 @@ _2021 年 7 月 23 日_
 * 修复了&#x200B;**重复数据删除**&#x200B;工作流活动中可能导致重复计数不准确的问题。
 * 修复了在使用具有“ID 不为空”筛选条件的工作流查询时，可能会导致在过渡群体中显示空项目的问题。
 * 修复了导致无法在新目标映射中创建更多字段的问题。
+

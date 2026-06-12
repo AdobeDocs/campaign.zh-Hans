@@ -15,7 +15,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: b285c321f3b905150b31621941ea99608d627739
 workflow-type: tm+mt
 source-wordcount: 306
 ht-degree: 93%
@@ -33,7 +33,7 @@ _2024 年 9 月 3 日_
 
 >[!AVAILABILITY]
 >
->此版本为&#x200B;**限量发布版** (LA)。 仅供&#x200B;**从 Adobe Campaign Standard 迁移到 Adobe Campaign v8** 的客户使用，并且不能部署在任何其他环境上。
+>此版本为&#x200B;**有限发布版** (LA)。 仅供&#x200B;**从 Adobe Campaign Standard 迁移到 Adobe Campaign v8** 的客户使用，并且不能部署在任何其他环境上。
 >
 >作为正在过渡到 Campaign v8 的 Campaign Standard 用户，请在 [Campaign v8 Web 用户界面文档](https://experienceleague.adobe.com/docs/campaign-web/v8/start/acs-migration.html?lang=zh-Hans){target="_blank"}中了解有关此过渡的更多信息。
 
@@ -51,3 +51,4 @@ _2024 年 9 月 3 日_
 此版本中修复了以下问题：
 
 NEO-48232、NEO-56832、NEO-72504、NEO-74855、NEO-75898、NEO-76097、NEO-76958、NEO-77014、NEO-77795、NEO-78843、NEO-79328。
+

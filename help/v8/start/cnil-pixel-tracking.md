@@ -5,8 +5,7 @@ feature: Overview
 role: User
 level: Beginner
 hide: true
-hidefromtoc: true
-source-git-commit: 38fc9f2dd42176a9281e9a9e478f22a674271128
+source-git-commit: 5c27d45ebac8ad300d35ef0ff858fbdaef6ec9fb
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 1%
@@ -51,9 +50,9 @@ Adobe电子邮件营销执行应用程序（包括Adobe Journey Optimizer、Jour
 
 | 产品 | 文档参考 |
 |---|---|
-| Campaign v8 | [邮件跟踪](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"} |
-| Campaign Classic | [开始使用邮件跟踪](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-message-tracking){target="_blank"} |
-| Campaign Standard | [配置电子邮件渠道](https://experienceleague.adobe.com/zh-hans/docs/campaign-standard/using/administrating/configuring-channels/configuring-email-channel){target="_blank"} |
-| Journey Optimizer | [邮件跟踪文档](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/channels/email/design-email/add-content/message-tracking){target="_blank"} |
-| Marketo Engage | [禁用电子邮件链接的跟踪](https://experienceleague.adobe.com/zh-hans/docs/marketo/using/product-docs/email-marketing/general/functions-in-the-editor/disable-tracking-for-an-email-link){target="_blank"} |
-| Journey Optimizer B2B | [电子邮件设置文档](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer-b2b/user/journey-content/email-channel/add-email){target="_blank"} |
+| Campaign v8 | [邮件跟踪](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"} |
+| Campaign Classic | [开始使用邮件跟踪](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/monitoring-deliveries/about-message-tracking){target="_blank"} |
+| Campaign Standard | [配置电子邮件渠道](https://experienceleague.adobe.com/en/docs/campaign-standard/using/administrating/configuring-channels/configuring-email-channel){target="_blank"} |
+| Journey Optimizer | [邮件跟踪文档](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/design-email/add-content/message-tracking){target="_blank"} |
+| Marketo Engage | [禁用电子邮件链接的跟踪](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/email-marketing/general/functions-in-the-editor/disable-tracking-for-an-email-link){target="_blank"} |
+| Journey Optimizer B2B | [电子邮件设置文档](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/journey-content/email-channel/add-email){target="_blank"} |

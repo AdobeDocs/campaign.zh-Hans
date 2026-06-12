@@ -7,15 +7,11 @@ level: Beginner
 hide: true
 exl-id: a45f7b22-44c7-4dad-af0a-ae8f683ae3d9
 TQID: https://experienceleague.adobe.com/vxR3VYl7aRItdg0KDZNPPIK4LVFPHPmLNaW-BaE4Yko
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: b285c321f3b905150b31621941ea99608d627739
 workflow-type: tm+mt
 source-wordcount: 306
 ht-degree: 93%
@@ -33,9 +29,9 @@ _2024 年 9 月 3 日_
 
 >[!AVAILABILITY]
 >
->此版本为&#x200B;**限量发布版** (LA)。 仅供&#x200B;**从 Adobe Campaign Standard 迁移到 Adobe Campaign v8** 的客户使用，并且不能部署在任何其他环境上。
+>此版本为&#x200B;**有限发布版** (LA)。 仅供&#x200B;**从 Adobe Campaign Standard 迁移到 Adobe Campaign v8** 的客户使用，并且不能部署在任何其他环境上。
 >
->作为正在过渡到 Campaign v8 的 Campaign Standard 用户，请在 [Campaign v8 Web 用户界面文档](https://experienceleague.adobe.com/docs/campaign-web/v8/start/acs-migration.html?lang=zh-Hans){target="_blank"}中了解有关此过渡的更多信息。
+>作为正在过渡到 Campaign v8 的 Campaign Standard 用户，请在 [Campaign v8 Web 用户界面文档](https://experienceleague.adobe.com/docs/campaign-web/v8/start/acs-migration.html){target="_blank"}中了解有关此过渡的更多信息。
 
 ### 新增功能 {#new-8-7-2}
 
@@ -43,7 +39,7 @@ _2024 年 9 月 3 日_
 
 * **富媒体推送通知 (GA)** - 您现在可以发送富媒体推送通知。 富媒体推送通知是移动通知的一种增强形式，它超越了简单的文本消息，融合了图像、交互式按钮或其他富媒体内容等多媒体元素。 在此版本中，您可以为 iOS 和 Android 应用程序提供一组富媒体推送通知模板。 [了解更多信息](../send/rich-push-android.md)。
 
-* **品牌化** - 品牌化选项现在可用于所有渠道，包括短信和直邮。 [了解更多信息](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=zh-Hans){target="_blank"}
+* **品牌化** - 品牌化选项现在可用于所有渠道，包括短信和直邮。 [了解更多信息](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"}
 
 
 ### 修复 {#fixes-8-7-2}
@@ -51,3 +47,4 @@ _2024 年 9 月 3 日_
 此版本中修复了以下问题：
 
 NEO-48232、NEO-56832、NEO-72504、NEO-74855、NEO-75898、NEO-76097、NEO-76958、NEO-77014、NEO-77795、NEO-78843、NEO-79328。
+

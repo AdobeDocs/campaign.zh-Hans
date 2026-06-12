@@ -7,18 +7,11 @@ level: Intermediate
 hide: true
 exl-id: 31c13d7e-55d1-4fbb-82e0-5779a17d65ac
 TQID: https://experienceleague.adobe.com/P8-MVht-FT2EuZMz6C4YpLuzu3797L-f63XO--Ai7B4
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: b285c321f3b905150b31621941ea99608d627739
 workflow-type: tm+mt
 source-wordcount: 1271
 ht-degree: 2%
@@ -31,7 +24,7 @@ ht-degree: 2%
 
 [兼容性矩阵](../start/compatibility-matrix.md#MobileSDK)中列出了Android和iOS支持的版本，以及Campaign v8的Campaign SDK兼容版本。
 
-作为Campaign管理员，您可以从[Experience Cloud Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/zh-hans/campaign.html)下载Campaign SDK。 有关详细信息，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+作为Campaign管理员，您可以从[Experience Cloud软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)下载Campaign SDK。 有关详细信息，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 
 
 >[!NOTE]
@@ -857,7 +850,7 @@ Android SDK是使用JAVA编写的jar库。 它允许Android开发人员与Adobe 
 
 ## 通知服务扩展 {#notification-service-extension}
 
-用于iOS的&#x200B;**&#x200B;**
+用于iOS的&#x200B;****
 
 介质必须在通知服务扩展级别下载。
 
@@ -891,7 +884,7 @@ Android SDK是使用JAVA编写的jar库。 它允许Android开发人员与Adobe 
 
 ## 通知内容扩展 {#notification-content-extension}
 
-用于iOS的&#x200B;**&#x200B;**
+用于iOS的&#x200B;****
 
 在此级别，您需要：
 
@@ -940,3 +933,4 @@ Android SDK是使用JAVA编写的jar库。 它允许Android开发人员与Adobe 
   }
   @end
   ```
+

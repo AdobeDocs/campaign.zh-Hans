@@ -7,13 +7,10 @@ level: Beginner
 exl-id: 027f5478-d86b-42be-b63d-ec8f5e1dd83d
 hide: true
 TQID: https://experienceleague.adobe.com/Cpc-97Lab93SQhsFloibdhpvCDFockj6afFSZUTgKoM
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: b285c321f3b905150b31621941ea99608d627739
 workflow-type: tm+mt
 source-wordcount: 785
 ht-degree: 96%
@@ -98,7 +95,7 @@ ht-degree: 96%
 
 1. **我可以与 Campaign 专家联系吗？**
 
-   加入 Campaign 社区：在现有问题中搜索答案或询问专家。 [加入对话](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=zh-Hans){target="_blank"}
+   加入 Campaign 社区：在现有问题中搜索答案或询问专家。 [加入对话](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
 
 
 1. **如何记录问题？**
@@ -108,3 +105,4 @@ ht-degree: 96%
    如需在新系统中登记问题或开始聊天会话，请连接到 [Adobe Admin Console](https://adminConsole.adobe.com/overview){target="_blank"}。
 
    此系统要求每个用户都有个人帐户，并具有正确的权限。 如果您发现无法使用 Adobe ID 登录，请通过 Experience League 提出访问请求，客户关怀团队将尽快为您进行设置。 [了解详情](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
+

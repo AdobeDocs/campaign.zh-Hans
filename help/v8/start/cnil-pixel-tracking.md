@@ -5,12 +5,13 @@ feature: Overview
 role: User
 level: Beginner
 hide: true
-source-git-commit: b285c321f3b905150b31621941ea99608d627739
+source-git-commit: 94d9f6725b0bfb458707c9900f5b6cb553d72daf
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 1%
 
 ---
+
 
 # 了解CNIL关于电子邮件跟踪像素的更新指南
 
@@ -39,11 +40,16 @@ Adobe电子邮件营销执行应用程序（包括Adobe Journey Optimizer、Jour
 在配置架构以满足CNIL指导时，客户可以使用Adobe Campaign的本机跟踪、架构和个性化机制来处理某些元素：
 
 * **投放的分类。** 使用`emailType`属性（身份验证、仅可投放性、事务性、营销、公共服务、B2B潜在客户）扩展`nms:delivery`。 分类可驱动哪些像素未经同意是允许的。
+
 * **同意捕获。** 使用带有措辞版本、时间戳、捕获源和过期的专用同意结构扩展`nms:recipient`。 扩展注册表单和首选项中心，以独立于电子邮件选择加入收集像素同意。
+
 * **像素发射。** 为每个像素定义一个`NmsTracking_OpenFormula`目的（身份验证、可投放性、性能、分析、欺诈检测）。 投放类型规则根据emailType和收件人的单用途同意来选择要发送的公式。 个性化块会封装逻辑，以便该逻辑不存在于个人创意中。
+
 * **退出。** 向每个电子邮件页脚添加一个&#x200B;**管理跟踪器首选项**&#x200B;链接，该链接不同于取消订阅链接。 该链接指向通过`idTracking`验证的`nms:webApp`登陆页面；收件人只需点击一下即可撤回同意，而无需重新输入其电子邮件地址。 添加到标准&#x200B;**跟踪**&#x200B;工作流的筛选器步骤可防止在退出后利用先前投放的电子邮件的重新打开。
+
 * **同意证明。** 捕获仅附加日志（例如`pix:consentLog`扩展命名空间）中的每个同意事件，并单独存储措辞版本以便在措辞更改后可检索。 通过Adobe Campaign资源管理器显示日志，并作为定期导出。
 * **重新请求管理。** `lastPixelRefusalDate`字段和筛选类型规则可防止在拒绝后至少六个月重新进行请求。 定期工作流程有助于管理同意过期。
+
 * **报告。** 现有的Adobe Campaign报表将继续针对新字段（urlCategory、emailType、同意标志）运行，而不会更改代码。
 
 有关Adobe电子邮件营销执行应用程序中电子邮件跟踪的更多信息，请参阅此文档：
@@ -56,4 +62,5 @@ Adobe电子邮件营销执行应用程序（包括Adobe Journey Optimizer、Jour
 | Journey Optimizer | [邮件跟踪文档](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/channels/email/design-email/add-content/message-tracking){target="_blank"} |
 | Marketo Engage | [禁用电子邮件链接的跟踪](https://experienceleague.adobe.com/zh-hans/docs/marketo/using/product-docs/email-marketing/general/functions-in-the-editor/disable-tracking-for-an-email-link){target="_blank"} |
 | Journey Optimizer B2B | [电子邮件设置文档](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer-b2b/user/journey-content/email-channel/add-email){target="_blank"} |
+
 

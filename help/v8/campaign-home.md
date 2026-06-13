@@ -15,10 +15,10 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 94d9f6725b0bfb458707c9900f5b6cb553d72daf
 workflow-type: tm+mt
-source-wordcount: 331
-ht-degree: 74%
+source-wordcount: 281
+ht-degree: 80%
 
 ---
 
@@ -90,39 +90,39 @@ Some important changes to the Android Firebase Cloud Messaging (FCM) service wil
     <td>
       <img src="assets/do-not-localize/icon-start.svg" width="35px">
     <br/>
-      <strong>开始</strong><br/><a href="start/campaign-ui.md">用户界面</a> - <a href="start/ac-components.md">组件和进程</a> - <a href="start/v7-to-v8.md">从经典v7到v8</a> - <a href="start/campaign-faq.md">常见问题解答</a>
+      <strong>入门</strong><br/><a href="start/campaign-ui.md">用户界面</a> - <a href="start/ac-components.md">组件和流程</a> - <a href="start/v7-to-v8.md">从 Classic v7 到 v8</a> - <a href="start/campaign-faq.md">常见问题</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>客户体验</strong><br/><a href="../automation/workflow/about-workflows.md" target="_blank">工作流自动化</a> - <a href="../automation/campaigns/set-up-campaigns.md" target="_blank">营销活动编排</a> - <a href="interaction/interaction.md">决策管理</a> - <a href="send/personalize.md">Personalization</a>
+      <strong>客户体验</strong><br/><a href="../automation/workflow/about-workflows.md" target="_blank">使用工作流实现自动化</a> - <a href="../automation/campaigns/set-up-campaigns.md" target="_blank">活动编排</a> - <a href="interaction/interaction.md">决策管理</a> - <a href="send/personalize.md">个性化</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>发送邮件</strong><br/><a href="start/create-message.md">开始使用</a> - <a href="send/preview-and-proof.md">预览和验证</a> - <a href="send/predictive.md">发送时间优化</a> - <a href="reporting/gs-reporting.md">Reporting &amp; Analytics</a>
+      <strong>发送消息</strong><br/><a href="start/create-message.md">入门</a> - <a href="send/preview-and-proof.md">预览和校样</a> - <a href="send/predictive.md">发送时间优化</a> - <a href="reporting/gs-reporting.md">报告与分析</a>
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
       <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
     <br/>
-      <strong>个人资料和受众</strong><br/><a href="audiences/create-profiles.md">添加个人资料</a> - <a href="audiences/create-audiences.md">创建受众</a> - <a href="start/subscriptions.md">管理订阅</a> - <a href="start/privacy.md">隐私</a>
+      <strong>轮廓和受众</strong><br/><a href="audiences/create-profiles.md">添加轮廓</a> - <a href="audiences/create-audiences.md">创建受众</a> - <a href="start/subscriptions.md">管理订阅</a> - <a href="start/privacy.md">隐私</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-configure.svg" width="35px">
     <br/>
-      <strong>架构和配置</strong><br/><a href="architecture/architecture.md">架构</a> - <a href="start/implement.md">Campaign v8实施</a> - <a href="connect/integration.md">与其他解决方案连接</a> - <a href="start/gs-permissions.md">用户和权限</a>
+      <strong>架构与配置</strong><br/><a href="architecture/architecture.md">架构</a> - <a href="start/implement.md">Campaign v8 实施</a> - <a href="connect/integration.md">与其他解决方案连接</a> - <a href="start/gs-permissions.md">用户和权限</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
     <br/>
-      <strong>开发人员资源</strong><br/><a href="dev/datamodel.md">Campaign v8数据模型</a> - <a href="dev/schemas.md">架构</a> - <a href="dev/api.md">API</a>
+      <strong>开发人员资源</strong><br/><a href="dev/datamodel.md">Campaign v8 数据模型</a> - <a href="dev/schemas.md">架构</a> - <a href="dev/api.md">API</a>
     </td>
   </tr>
 </table>
 
 ## 其他资源
 
-[Adobe Campaign v8 产品说明](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Adobe Campaign Web 用户界面文档](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=zh-Hans){target="_blank"} - [教程](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=zh-Hans){target="_blank"} - [[!DNL Adobe Campaign] 自动化指南](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=zh-Hans){target="_blank"} - [Campaign v8 的控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans){target="_blank"}
+[Adobe Campaign v8产品说明](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Adobe Campaign Web用户界面文档](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html?lang=zh-Hans){target="_blank"} - [教程](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/overview.html?lang=zh-Hans){target="_blank"} - [[!DNL Adobe Campaign] 自动化指南](https://experienceleague.adobe.com/docs/campaign/automation/home.html?lang=zh-Hans){target="_blank"} - [Campaign v8控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans){target="_blank"} - [电子邮件跟踪像素和CNIL指南](../v8/start/cnil-pixel-tracking.md)
 

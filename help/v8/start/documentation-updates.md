@@ -12,16 +12,20 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: b285c321f3b905150b31621941ea99608d627739
+source-git-commit: fc92f46a1df96412cc86b9a8c0946132f79a2da8
 workflow-type: tm+mt
-source-wordcount: 275
-ht-degree: 100%
+source-wordcount: 295
+ht-degree: 93%
 
 ---
 
 # 文档更新 {#latest-updates}
 
 此页面列出了 [!DNL Campaign] v8（控制台）文档中的所有最新更新。
+
+## 2026年6月 {#june-2026}
+
+添加了有关CNIL指南的页面，介绍电子邮件跟踪像素和相关的Adobe Campaign功能。 [了解更多信息](cnil-pixel-tracking.md)
 
 ## 2025 年 4 月 {#april-2025}
 

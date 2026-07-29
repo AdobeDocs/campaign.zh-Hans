@@ -7,12 +7,19 @@ level: Beginner
 exl-id: 07baa759-fb0b-4eba-bf8b-ec6cf21df7f8
 version: Campaign v8, Campaign Classic v7
 TQID: https://experienceleague.adobe.com/7yA7UY-YeKjSgy6jUpDWdHpCHRuT-FFi4xTfhj3awu8
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: afa4204e-6d08-4e29-bc35-26aafb656d48
-subfeature_v2: id: d6330382-c886-4f7a-a4f7-74e3f36c0d9cid: f529d0bd-1401-4c88-9833-43228cc1d40f
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+subfeature_v2:
+  - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+  - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 533
@@ -24,7 +31,7 @@ ht-degree: 18%
 
 用户档案表示存储在Adobe Campaign数据库中的联系人。 默认情况下，**个收件人**&#x200B;是发送电子邮件、短信或直邮等投放时使用的主要用户档案。 存储在数据库中的收件人数据允许您定义和筛选目标受众，并个性化投放内容。 除了收件人之外，还有其他用于特定目的的配置文件类型。 例如，种子用户档案允许您在将投放发送给实际受众之前对其进行测试。
 
-在本节](../audiences/gs-audiences.md)中了解如何导入、更新和管理用户档案和受众[。
+在本节[&#128279;](../audiences/gs-audiences.md)中了解如何导入、更新和管理用户档案和受众。
 
 ## 创建列表{#create-lists}
 

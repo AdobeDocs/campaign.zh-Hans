@@ -7,9 +7,12 @@ role: Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: 8524d916-8af7-4641-b047-9c348f1017fd
 TQID: https://experienceleague.adobe.com/xGSqzmm1kxKvSViuqdN0a-AwIuDxnNjWBHwH1bwAXtU
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 472
@@ -47,7 +50,7 @@ ht-degree: 5%
 
 对于&#x200B;**[!UICONTROL Tracking workflow ('tracking')]**：
 
-检查跟踪工作流是否按计划运行（默认情况下每小时运行一次），以及日记帐是否未高亮显示重复错误。 有关更多信息，请参阅此](delivery.md)章节[。
+检查跟踪工作流是否按计划运行（默认情况下每小时运行一次），以及日记帐是否未高亮显示重复错误。 有关更多信息，请参阅此[&#128279;](delivery.md)章节。
 
 对于&#x200B;**[!UICONTROL Deliverability update ('deliverabilityUpdate')]**：
 
@@ -56,7 +59,7 @@ ht-degree: 5%
 
 对于&#x200B;**[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**：
 
-1. 查看&#x200B;**[!UICONTROL Campaign process]**&#x200B;文件夹下的所有工作流。 有关详细信息，请参见此 [ 页面](technical-workflows.md)。
+1. 查看&#x200B;**[!UICONTROL Campaign process]**&#x200B;文件夹下的所有工作流。 有关详细信息，请参见此 [&#x200B; 页面](technical-workflows.md)。
 1. 检查工作流是否按计划运行，以及日记帐是否未突出显示重复出现的错误。
 
 ## 工作流监督 {#workflow-supervision}

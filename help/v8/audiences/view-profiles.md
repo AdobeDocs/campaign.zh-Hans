@@ -7,11 +7,16 @@ level: Beginner
 exl-id: 03f7a736-e0b9-4216-9550-507f10e6fcf6
 version: Campaign v8, Campaign Classic v7
 TQID: https://experienceleague.adobe.com/KjbdtHFlh5F0wXN2jV9C-sEOY2qry0KuRHhWe9MT9Yk
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 455
@@ -79,11 +84,11 @@ ht-degree: 6%
 
   ![](assets/subscription-tab.png)
 
-  在本节](../start/subscriptions.md)中了解有关订阅[的更多信息。
+  在本节[&#128279;](../start/subscriptions.md)中了解有关订阅的更多信息。
 
 * 针对所选用户档案的所有投放日志，**投放**。 使用此选项卡可访问联系人的营销历史记录：通过所有渠道针对用户档案的所有投放操作的标签、日期和状态。
 
 
 * **跟踪**，针对选定配置文件的所有跟踪日志。 此信息用于跟踪投放后的用户档案行为。 此选项卡显示投放中跟踪的所有URL的累积总数。 该列表是可配置的，通常包含：点击的URL、点击的日期和时间，以及包含该URL的文档
 
-  在本节](../send/tracking.md)中了解有关跟踪[的更多信息。
+  在本节[&#128279;](../send/tracking.md)中了解有关跟踪的更多信息。

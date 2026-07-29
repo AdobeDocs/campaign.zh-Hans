@@ -6,9 +6,13 @@ role: User, Admin
 level: Beginner
 exl-id: c116d86a-d3e2-47e3-a641-e2d7c8cc575c
 TQID: https://experienceleague.adobe.com/TKvl7xT7fg-r5vU8jW8sg0L-Xy-mC-JEvC2WeM4hmz4
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 848
@@ -125,7 +129,7 @@ HTML渲染通过渲染函数创建。 渲染函数中定义的字段序列必须
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
 ```
 
-例如，与&#x200B;**Neobank400045}网站上显示的**&#x200B;家庭保险&#x200B;**优惠匹配的建议（标识符****）包含以下URL：**
+例如，与&#x200B;**Neobank400045&rbrace;网站上显示的**&#x200B;家庭保险&#x200B;**优惠匹配的建议（标识符**&#x200B;**）包含以下URL：**
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<40004>&st=<3>&r=<"http://www.neobank.com/insurance/subscribe.html">

@@ -6,10 +6,14 @@ role: User
 level: Intermediate
 exl-id: c1deb0a1-aeba-4813-b674-a6a164b98b02
 TQID: https://experienceleague.adobe.com/Vg4aM-iHsB0c8MagdCuYkyseUBaN-T252-Lk9P5klB8
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 681
@@ -91,7 +95,7 @@ ht-degree: 1%
 * **待处理投放**
 该事件已处理，并且已链接投放模板。 电子邮件正在等待投放，并且已应用经典投放流程。 有关详细信息，您可以打开投放。
 * **已发送**，**已忽略**&#x200B;和&#x200B;**传递错误**
-这些投放状态可通过**updateEventsStatus**&#x200B;工作流恢复。 有关详细信息，您可以打开相关的投放。
+这些投放状态可通过&#x200B;**updateEventsStatus**&#x200B;工作流恢复。 有关详细信息，您可以打开相关的投放。
 * 未涵盖&#x200B;**事件**
 事务性消息传递路由阶段失败。 例如，Adobe Campaign未找到用作事件模板的电子邮件。
 * **事件已过期**

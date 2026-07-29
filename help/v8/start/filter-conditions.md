@@ -7,12 +7,9 @@ level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 18e49a15-dbb5-42d6-9379-367e769f319a
 TQID: https://experienceleague.adobe.com/MvYtphJPgDXOp9-CR3rhTYNazED3seRZxt89W29PJlI
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 3344
@@ -301,10 +298,10 @@ ht-degree: 34%
 
   **[!UICONTROL Enumerations]**&#x200B;类型计算字段可以包括4个条件：
 
-   * **[!UICONTROL Keep the source value]**&#x200B;将源值还原到目标而不更改它。
-   * **[!UICONTROL Use the following value]**&#x200B;允许您为未定义的源值输入默认目标值。
-   * **[!UICONTROL Generate a warning and continue]**&#x200B;警告用户无法更改源值。
-   * **[!UICONTROL Generate an error and reject the line]**&#x200B;阻止计算和导入该行。
+  * **[!UICONTROL Keep the source value]**&#x200B;将源值还原到目标而不更改它。
+  * **[!UICONTROL Use the following value]**&#x200B;允许您为未定义的源值输入默认目标值。
+  * **[!UICONTROL Generate a warning and continue]**&#x200B;警告用户无法更改源值。
+  * **[!UICONTROL Generate an error and reject the line]**&#x200B;阻止计算和导入该行。
 
 单击&#x200B;**[!UICONTROL Detail of calculated field]**&#x200B;可查看插入字段的详细信息。
 

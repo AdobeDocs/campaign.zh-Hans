@@ -6,15 +6,10 @@ role: User
 level: Beginner
 exl-id: 1526048d-9f02-4853-948f-8fb618670dbd
 TQID: https://experienceleague.adobe.com/A1EyDmVc2Y7okJFeFT7lsckZm8-IFDD-XFIqpb-Q7v8
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
 workflow-type: tm+mt
 source-wordcount: 693
@@ -94,9 +89,9 @@ ht-degree: 5%
 
   可以使用以下审批模式：
 
-   * **[!UICONTROL Manual]**：在分析阶段结束时，用户必须确认投放才能开始发送。 为此，请单击&#x200B;**[!UICONTROL Start]**&#x200B;按钮以启动投放。
-   * **[!UICONTROL Semi-automatic]**：如果分析阶段未生成警告消息，则自动开始发送。
-   * **[!UICONTROL Automatic]**：在分析阶段结束时自动开始发送，与其结果无关。
+  * **[!UICONTROL Manual]**：在分析阶段结束时，用户必须确认投放才能开始发送。 为此，请单击&#x200B;**[!UICONTROL Start]**&#x200B;按钮以启动投放。
+  * **[!UICONTROL Semi-automatic]**：如果分析阶段未生成警告消息，则自动开始发送。
+  * **[!UICONTROL Automatic]**：在分析阶段结束时自动开始发送，与其结果无关。
 
 * **[!UICONTROL Start job in a detached process]**：利用此选项，可在单独的进程中启动投放分析。 默认情况下，分析函数使用Adobe Campaign应用程序服务器进程(web nlserver)。 通过选择此选项，可以确保即使在应用程序服务器出现故障时也能完成分析。
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]**：此选项在分析阶段将SQL查询日志添加到投放日志。

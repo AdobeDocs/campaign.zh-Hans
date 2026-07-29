@@ -6,12 +6,9 @@ role: Developer
 level: Beginner
 exl-id: 21cf5611-ccaa-4e83-8891-a1a2353515aa
 TQID: https://experienceleague.adobe.com/sQgS-ig3-OfCLseGyqsbismNI-qqy1E2io6P17HZsUU
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 567
@@ -32,16 +29,16 @@ Adobe Campaign Managed Cloud Service目标和Source连接器允许Adobe Campaign
 
 * 使用Adobe Campaign Managed Cloud Services **目标连接**&#x200B;将Experience Platform区段发送到Adobe Campaign：
 
-   1. 访问Adobe Experience Platform目标目录并创建新的&#x200B;**[!UICONTROL Adobe Campaign Managed Cloud Services]**&#x200B;连接。
-   1. 提供要使用的Campaign实例的详细信息，并选择&#x200B;**[!UICONTROL Audience sync]**&#x200B;作为同步类型。
+  1. 访问Adobe Experience Platform目标目录并创建新的&#x200B;**[!UICONTROL Adobe Campaign Managed Cloud Services]**&#x200B;连接。
+  1. 提供要使用的Campaign实例的详细信息，并选择&#x200B;**[!UICONTROL Audience sync]**&#x200B;作为同步类型。
 
-      ![](assets/aep-audience-sync.png){width="800" align="center"}
+     ![](assets/aep-audience-sync.png){width="800" align="center"}
 
-   1. 选择要发送到Adobe Campaign的区段。
-   1. 在受众中配置要导出的属性。
-   1. 配置流后，即可将所选受众激活到Adobe Campaign中。
+  1. 选择要发送到Adobe Campaign的区段。
+  1. 在受众中配置要导出的属性。
+  1. 配置流后，即可将所选受众激活到Adobe Campaign中。
 
-      ![](assets/aep-destination.png){width="800" align="center"}
+     ![](assets/aep-destination.png){width="800" align="center"}
 
   有关如何配置目标的详细信息，请参阅[Adobe Campaign Managed Cloud Services连接文档](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}
 

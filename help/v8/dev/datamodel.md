@@ -6,20 +6,12 @@ role: Developer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
 TQID: https://experienceleague.adobe.com/pUzg-KbbYOXppAjG0nQe9T16Co61ipNXywTjNaV76bU
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-subfeature_v2:
-  - id: b5852c32-876b-41ae-92a7-9f588865ae52
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2: id: b5852c32-876b-41ae-92a7-9f588865ae52
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 737
@@ -39,9 +31,9 @@ Adobe Campaign数据模型的基本结构可描述如下：
 
 * **日志表**：这些表存储与活动执行相关的所有日志。
 
-   * 投放日志是跨所有渠道发送给收件人或设备的所有消息。 主投放日志表(**NmsBroadLogRcp**)包含所有收件人的投放日志。
-   * **nmsBroadlog**&#x200B;表是系统中最大的表。 它为每条发送的消息存储一条记录，这些记录会被插入、更新以跟踪投放状态，并在历史记录被清除时删除。
-   * 主跟踪日志表(**NmsTrackingLogRcp**)存储所有收件人的跟踪日志。 跟踪日志是指收件人的反应，例如电子邮件打开次数和点击次数。 每个反应对应于一个跟踪日志。
+  * 投放日志是跨所有渠道发送给收件人或设备的所有消息。 主投放日志表(**NmsBroadLogRcp**)包含所有收件人的投放日志。
+  * **nmsBroadlog**&#x200B;表是系统中最大的表。 它为每条发送的消息存储一条记录，这些记录会被插入、更新以跟踪投放状态，并在历史记录被清除时删除。
+  * 主跟踪日志表(**NmsTrackingLogRcp**)存储所有收件人的跟踪日志。 跟踪日志是指收件人的反应，例如电子邮件打开次数和点击次数。 每个反应对应于一个跟踪日志。
 
   投放日志和跟踪日志会在特定时段后删除，该特定时段在Adobe Campaign中指定并可进行修改。 因此，强烈建议定期导出日志。
 
@@ -75,7 +67,7 @@ Adobe Campaign中的内置收件人表(nmsrecipient)为构建数据模型提供�
 
 在[本节](extend-schema.md)中了解如何扩展现有架构。
 
-在[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=zh-Hans#extending-a-table){target="_blank"}中发现内置收件人表扩展的示例
+在[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#extending-a-table){target="_blank"}中发现内置收件人表扩展的示例
 
 您还可以使用其他收件人表以更好地满足您的业务或功能要求。 此方法具有限制，在[此部分](custom-recipient.md)中有说明。
 

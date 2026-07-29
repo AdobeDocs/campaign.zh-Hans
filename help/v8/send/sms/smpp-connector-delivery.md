@@ -6,15 +6,10 @@ role: User
 level: Beginner, Intermediate
 exl-id: 704e151a-b863-46d0-b8a1-fca86abd88b9
 TQID: https://experienceleague.adobe.com/5LR9seZA5eFVn-ZKkO27EtqCZu6-9tKL2eyxZtwNHiU
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 1291
@@ -43,10 +38,10 @@ SMS进程轮询nms:extAccount并在其SMPP连接器中派生新连接，传递�
 ### 发送消息时的数据流 {#sms-data-flow-sending-msg}
 
 * SMS进程通过扫描nms:delivery来选择活动投放。 投放在以下情况下处于活动状态：
-   * 其状态表示消息可以发送
-   * 其有效期未届满
-   * 它实际上是投放（例如，它不是模板，不会删除）
-   * SMPP连接器可以为链接到投放的外部帐户打开至少一个连接
+  * 其状态表示消息可以发送
+  * 其有效期未届满
+  * 它实际上是投放（例如，它不是模板，不会删除）
+  * SMPP连接器可以为链接到投放的外部帐户打开至少一个连接
 * 对于每个投放，短信流程都会加载投放部分。 如果投放部分已部分发送，则短信流程会通过检查广泛日志来检查已发送哪些消息。
 * 短信流程使用投放部分的个性化数据扩展模板。
 * smpp连接器会生成与内容和其他设置匹配的MT (SUBMIT_SM PDU)。

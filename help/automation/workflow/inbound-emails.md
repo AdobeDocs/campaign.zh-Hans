@@ -7,10 +7,8 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 6cc2c415-1886-4f31-8020-dbaf97a3cc43
 TQID: https://experienceleague.adobe.com/5Kmhzi-ZkvEhkzJr6LGk-wPo8EPWsbUOjHwPymcNGtA
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 342
@@ -38,21 +36,21 @@ ht-degree: 1%
 
      ![](assets/email_rec_edit_1b.png)
 
-      * **[!UICONTROL POP3 server]**
+     * **[!UICONTROL POP3 server]**
 
-        pop3服务器的名称。
+       pop3服务器的名称。
 
-      * **[!UICONTROL POP3 account]**
+     * **[!UICONTROL POP3 account]**
 
-        用户的名称。
+       用户的名称。
 
-      * **[!UICONTROL Password]**
+     * **[!UICONTROL Password]**
 
-        用户帐户密码。
+       用户帐户密码。
 
-      * **[!UICONTROL Port]**
+     * **[!UICONTROL Port]**
 
-        POP3连接端口号。 默认端口为110。
+       POP3连接端口号。 默认端口为110。
 
    * **[!UICONTROL Stop as soon as email is processed]**
 

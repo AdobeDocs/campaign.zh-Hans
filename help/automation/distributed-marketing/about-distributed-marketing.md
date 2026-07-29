@@ -6,19 +6,11 @@ feature: Distributed Marketing
 role: User
 exl-id: c9f5b277-3ad8-4316-94b9-789d37813b8b
 TQID: https://experienceleague.adobe.com/Xic-o4WB0jDoHpUAdN2U9Uunuf8rAcQ7rrcpXIFLqSI
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-subfeature_v2:
-  - id: efa38731-2723-4334-8d8b-a778af834835
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2: id: efa38731-2723-4334-8d8b-a778af834835
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 1135
@@ -44,10 +36,10 @@ Adobe Campaign提供了一个&#x200B;**分布式营销**&#x200B;应用程序，�
 
   分布式营销模块允许中央实体：
 
-   * 为本地实体设置营销活动包，
-   * 提高本地实体在客户/潜在客户通信、定位、内容等选择方面的自主程度。
-   * 管理和控制成本，
-   * 处理机构网络。
+  * 为本地实体设置营销活动包，
+  * 提高本地实体在客户/潜在客户通信、定位、内容等选择方面的自主程度。
+  * 管理和控制成本，
+  * 处理机构网络。
 
 * **本地实体**
 
@@ -79,10 +71,10 @@ Adobe Campaign提供了一个&#x200B;**分布式营销**&#x200B;应用程序，�
 
   协作营销活动是一个营销活动，其&#x200B;**执行计划由中央实体定义**，本地实体可以使用该中央实体。 每个本地实体的内容保持不变，但成本是分担的。 要参加该活动，本地实体需订阅协作活动。
 
-   * **[!UICONTROL Collaborative campaign (by form)]**：建议用于涉及最多300个本地实体的营销活动。 本地实体可以在Web表单中输入用于定位和内容个性化的预定义参数。 表单可以是Adobe Campaign表单或外部表单（外联网客户端）。 功能管理员可以根据集成商定义的表单模板定义和配置表单。 要订购营销活动，本地实体只需要具有Web访问权限。
-   * **[!UICONTROL Collaborative campaign (by campaign)]**：建议用于针对数十个本地实体的营销活动。 此类营销活动会为每个本地实体创建子营销活动。 中央实体批准&#x200B;**[!UICONTROL collaborative campaign (by campaign)]**&#x200B;后，该营销活动即可用于本地实体，该实体可以对其进行修改。 执行会在父营销活动和子营销活动之间自动同步。 本地实体必须有权访问实例，才能订购活动并参与活动。
-   * **[!UICONTROL Collaborative campaign (by target approval)]**：建议用于针对数千个本地实体的营销活动。 本地实体接收由中央实体预定义的联系人列表。 本地实体通过Web表单根据促销活动内容决定是否保留某些联系人。 从选定联系人的列表中推导出本地实体。 要参与该活动，本地实体只需要拥有Web访问权限。
-   * **[!UICONTROL Collaborative campaign (simple)]**：此模式确保与以前版本的特定执行进程兼容。
+  * **[!UICONTROL Collaborative campaign (by form)]**：建议用于涉及最多300个本地实体的营销活动。 本地实体可以在Web表单中输入用于定位和内容个性化的预定义参数。 表单可以是Adobe Campaign表单或外部表单（外联网客户端）。 功能管理员可以根据集成商定义的表单模板定义和配置表单。 要订购营销活动，本地实体只需要具有Web访问权限。
+  * **[!UICONTROL Collaborative campaign (by campaign)]**：建议用于针对数十个本地实体的营销活动。 此类营销活动会为每个本地实体创建子营销活动。 中央实体批准&#x200B;**[!UICONTROL collaborative campaign (by campaign)]**&#x200B;后，该营销活动即可用于本地实体，该实体可以对其进行修改。 执行会在父营销活动和子营销活动之间自动同步。 本地实体必须有权访问实例，才能订购活动并参与活动。
+  * **[!UICONTROL Collaborative campaign (by target approval)]**：建议用于针对数千个本地实体的营销活动。 本地实体接收由中央实体预定义的联系人列表。 本地实体通过Web表单根据促销活动内容决定是否保留某些联系人。 从选定联系人的列表中推导出本地实体。 要参与该活动，本地实体只需要拥有Web访问权限。
+  * **[!UICONTROL Collaborative campaign (simple)]**：此模式确保与以前版本的特定执行进程兼容。
 
   请参阅[创建协作营销活动](creating-a-collaborative-campaign.md)。
 

@@ -5,8 +5,8 @@ exl-id: 63008b58-4384-4d2b-864a-57f11d701c01
 hide: true
 source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 0%
+source-wordcount: '896'
+ht-degree: 1%
 
 ---
 
@@ -76,7 +76,7 @@ Campaign常规用户已使用Adobe ID通过Adobe Identity Management System (IMS
 
 仅当已为此操作员（而不是通过操作员的组）定义了特定文件夹权限或命名权限时，才需要执行此步骤。
 
-现在，您需要在Adobe Campaign客户端控制台中更新新创建的技术运算符。 您必须将现有的技术操作员文件夹权限应用到新的技术操作员。
+现在，您需要在Adobe Campaign客户端控制台中更新新创建的技术运算符。您必须将现有的技术操作员文件夹权限应用到新的技术操作员。
 要更新此运算符，请执行以下步骤：
 
 1. 从Campaign Client Console资源管理器中，浏览到&#x200B;**管理>访问管理>运算符**。

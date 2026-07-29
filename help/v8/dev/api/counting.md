@@ -22,7 +22,7 @@ Adobe Campaign REST API可以计算请求中的记录数。 为此，请使用&#
 
 ***示例请求***
 
-要计数其&#x200B;**messageType**&#x200B;值等于“sms”的所有服务，请使用&#x200B;**byChannel**&#x200B;筛选器执行GET请求。
+要计算其值为&#x200B;**messageType**&#x200B;且等于“sms”的所有服务，请使用&#x200B;**byChannel**&#x200B;筛选器执行GET请求。
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel?channel=sms \

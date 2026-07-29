@@ -6,18 +6,11 @@ role: User
 level: Beginner
 exl-id: 2ad585f2-19bc-4391-8a19-9e892dbe01a3
 TQID: https://experienceleague.adobe.com/PjU1EFX5x4iB3yRsShGBWoR0k1D2-EI90-ss0FTcexE
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 6cf587ecc9cc1e4cf9b3de0d2067e0c4562afe01
 workflow-type: tm+mt
 source-wordcount: 2206
@@ -49,13 +42,13 @@ Adobe Campaign提供了各个级别的可见性 — 从单个消息是否已投�
 >
 >**新加入促销活动？** 投放仪表板是您的主要日常屏幕。 打开任何已发送的投放，单击&#x200B;**日志**&#x200B;选项卡，您将看到哪些收件人已收到邮件、哪些收件人已被排除以及为什么收到邮件，以及哪些人点击或打开了邮件。
 
-**电子邮件投放** — 监视电子邮件投放状态、跟踪关键量度并访问详细日志。 了解有关[在Campaign UI中监视投放](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard)、[投放状态](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-statuses)和[电子邮件投放监视](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/emails/send#email-monitoring)的详细信息。
+**电子邮件投放** — 监视电子邮件投放状态、跟踪关键量度并访问详细日志。 了解有关[在Campaign UI中监视投放](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard)、[投放状态](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses)和[电子邮件投放监视](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/send#email-monitoring)的详细信息。
 
-**短信投放** — 跟踪SMS投放状态并在SMS投放仪表板中监视关键量度。 了解有关[SMS监控](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/sms/sms-monitor)的更多信息。
+**短信投放** — 跟踪SMS投放状态并在SMS投放仪表板中监视关键量度。 了解有关[SMS监控](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/sms-monitor)的更多信息。
 
-**推送通知** — 监视推送通知投放，以确保它们能够有效地到达您的移动应用程序用户。 了解有关[推送通知监视](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/push/push#push-test)的更多信息。
+**推送通知** — 监视推送通知投放，以确保它们能够有效地到达您的移动应用程序用户。 了解有关[推送通知监视](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push#push-test)的更多信息。
 
-**事务性消息** — 对于由事件触发的消息，监视事件处理状态、消息执行和投放状态。 了解有关[事务性消息监视](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/event/delivery-execution#monitor-messages)的详细信息。
+**事务性消息** — 对于由事件触发的消息，监视事件处理状态、消息执行和投放状态。 了解有关[事务性消息监视](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/delivery-execution#monitor-messages)的详细信息。
 
 **投放失败** — 了解投放失败的原因对于维护干净的数据库并确保良好的投放率至关重要。 投放失败分为三种类型 — 了解这些差异有助于您决定要采取的操作：
 
@@ -65,7 +58,7 @@ Adobe Campaign提供了各个级别的可见性 — 从单个消息是否已投�
 | **软退回** | 临时问题（邮箱已满，服务器暂时不可用） | Campaign会在配置的时间段内自动重试 |
 | **已忽略** | 地址在发送前已被隔离或阻止列表 | 未尝试；与退回次数分开计数 |
 
-了解有关[投放失败和隔离](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-failures)的更多信息。
+了解有关[投放失败和隔离](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures)的更多信息。
 
 ## 监测投放能力 {#monitor-deliverability}
 
@@ -75,7 +68,7 @@ Adobe Campaign提供了各个级别的可见性 — 从单个消息是否已投�
 
 可投放性监测帮助您确保邮件到达收件人的收件箱并避免垃圾邮件过滤器。 Adobe Campaign提供了多种内置工具来监控和改进可投放性，包括投放报告、收件箱呈现、SpamAssassin测试和广播统计数据。 遵循可投放性最佳实践（如维护干净的电子邮件列表、监控发件人信誉和验证发送域）对于保持良好的可投放性比率至关重要。
 
-了解有关[可投放性监视工具](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/deliverability-management/monitoring-deliverability)和[可投放性最佳实践](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/deliverability-management/about-deliverability)的更多信息。
+了解有关[可投放性监视工具](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/deliverability-management/monitoring-deliverability)和[可投放性最佳实践](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/deliverability-management/about-deliverability)的更多信息。
 
 ## 监测工作流 {#monitor-workflows}
 
@@ -93,11 +86,11 @@ Adobe Campaign提供了各个级别的可见性 — 从单个消息是否已投�
 
 **监视以下工作流元素：**
 
-**工作流执行状态** — 跟踪工作流是正在运行、已暂停、失败还是已完成。 [了解有关工作流执行的更多信息](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution#_blank)
+**工作流执行状态** — 跟踪工作流是正在运行、已暂停、失败还是已完成。 [了解有关工作流执行的更多信息](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution#_blank)
 
 **活动执行日志** — 访问每个工作流活动的详细日志，以解决问题并优化性能。
 
-**工作流热图** — 在实例中同时运行的所有工作流的视觉概览。 使用它可以确定峰值负载期间，发现占用过多资源的工作流，并规划计划以避免执行冲突。 仅适用于Campaign管理员。 [了解有关工作流热图的更多信息](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/monitoring-workflows/heatmap#_blank)
+**工作流热图** — 在实例中同时运行的所有工作流的视觉概览。 使用它可以确定峰值负载期间，发现占用过多资源的工作流，并规划计划以避免执行冲突。 仅适用于Campaign管理员。 [了解有关工作流热图的更多信息](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/monitoring-workflows/heatmap#_blank)
 
 **工作流历史记录** — 跟踪一段时间内的所有工作流执行和修改，以了解工作流行为和性能。
 
@@ -118,19 +111,19 @@ Adobe Campaign提供了各个级别的可见性 — 从单个消息是否已投�
 
 审核记录可通过Campaign客户端控制台访问，并提供有关用户所执行操作的详细信息。
 
-了解有关[审核记录](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/audit-trail)的详细信息
+了解有关[审核记录](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail)的详细信息
 
 ### 性能监控 {#performance-monitoring}
 
 Campaign v8提供了多种监视功能来跟踪实例性能并确保实现最佳操作：
 
-**数据库监视** — 通过控制面板监视数据库的使用情况和容量，以确保最佳性能和存储管理。 [了解有关数据库监视的详细信息](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring#_blank)
+**数据库监视** — 通过控制面板监视数据库的使用情况和容量，以确保最佳性能和存储管理。 [了解有关数据库监视的详细信息](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring#_blank)
 
-**活动配置文件监控** — 根据您的合同限制跟踪活动配置文件使用情况，以保持合规性并优化资源分配。 [了解有关活动用户档案的详细信息](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/performance-monitoring/active-profiles-monitoring#_blank)
+**活动配置文件监控** — 根据您的合同限制跟踪活动配置文件使用情况，以保持合规性并优化资源分配。 [了解有关活动用户档案的详细信息](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/active-profiles-monitoring#_blank)
 
 **工作流监视** — 监视工作流执行状态以识别长时间运行的工作流，并确保所有技术工作流都正常运行。 [了解有关技术工作流的详细信息](#technical-workflows)
 
-**投放吞吐量和延迟** — 通过控制面板跟踪交易通信的投放吞吐量（每小时发送的消息）和延迟。 [了解有关吞吐量监视的详细信息](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/performance-monitoring/throughputs-latencies#_blank)
+**投放吞吐量和延迟** — 通过控制面板跟踪交易通信的投放吞吐量（每小时发送的消息）和延迟。 [了解有关吞吐量监视的详细信息](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/throughputs-latencies#_blank)
 
 >[!NOTE]
 >
@@ -150,7 +143,7 @@ Adobe全天候监控Campaign网络上的所有关键网络设备，并在需要�
 >
 >Adobe执行的某些监视操作显示在&#x200B;**campaign-loginmonitor**&#x200B;用户下的Campaign日志中。
 
-除了Adobe的内部监控之外，您还可以直接通过Campaign客户端控制台或[Campaign控制面板](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/permissions/self-service)访问监控功能。 通过控制面板，您可以订阅有关实例的实时警报，并针对已识别的事件（例如，临近过期的SSL证书）接收建议的修正步骤。
+除了Adobe的内部监控之外，您还可以直接通过Campaign客户端控制台或[Campaign控制面板](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/self-service)访问监控功能。 通过控制面板，您可以订阅有关实例的实时警报，并针对已识别的事件（例如，临近过期的SSL证书）接收建议的修正步骤。
 
 **正在监视分类**
 
@@ -198,7 +191,7 @@ Adobe跨三个层监控您的环境：
 | **可投放性更新** | 更新可投放性规则和垃圾邮件过滤模式 | 规则过时；筛选准确性可能会降低 |
 | **数据库清理** | 清除旧的投放和跟踪日志 | 日志累积会随时间减慢查询和报告的速度 |
 
-了解有关[技术工作流](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows#_blank)的详细信息
+了解有关[技术工作流](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows#_blank)的详细信息
 
 ### Campaign 控制面板 {#control-panel}
 
@@ -210,7 +203,7 @@ Campaign控制面板为管理员提供自助服务功能，以监控和管理Cam
 | **基础架构** | 监测SFTP存储容量，跟踪子域配置，监测SSL证书过期，管理IP允许列表 |
 | **实例** | 查看内部版本和已安装的包，监视系统配置，管理授权的外部域 |
 
-了解有关[控制面板](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/permissions/self-service)和[控制面板性能监视](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/performance-monitoring/about-performance-monitoring#_blank)的更多信息
+了解有关[控制面板](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/self-service)和[控制面板性能监视](https://experienceleague.adobe.com/en/docs/control-panel/using/performance-monitoring/about-performance-monitoring#_blank)的更多信息
 
 >[!NOTE]
 >
@@ -238,7 +231,7 @@ Adobe Campaign提供了一组全面的报告来分析您的交付性能：
 - **个URL和点击流**：您的投放中最受欢迎的链接
 - **热门点击**：收件人点击电子邮件位置的可视化表示
 
-了解有关[传递报告](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports)的更多信息
+了解有关[传递报告](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports)的更多信息
 
 ### 全局报告 {#global-reports}
 
@@ -248,11 +241,11 @@ Adobe Campaign提供了一组全面的报告来分析您的交付性能：
 - **无法投放项和退回**：失败投放的分析
 - **用户活动**：打开、点击和取消订阅所有营销活动
 
-了解有关[全局报告](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports)的详细信息
+了解有关[全局报告](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports)的详细信息
 
 ## 相关主题 {#related-topics}
 
-- [投放最佳实践](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/delivery-best-practices)
-- [隔离管理](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/quarantines)
-- [配置和发送投放](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/validate/configure-and-send)
-- [报告快速入门](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/gs-reporting)
+- [投放最佳实践](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/delivery-best-practices)
+- [隔离管理](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines)
+- [配置和发送投放](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/validate/configure-and-send)
+- [报告快速入门](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/gs-reporting)

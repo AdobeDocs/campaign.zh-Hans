@@ -6,28 +6,12 @@ role: Admin, Developer
 level: Beginner
 exl-id: 1d9ff6c5-974d-4a8a-a0d7-641685bbe26e
 TQID: https://experienceleague.adobe.com/j8EwT2TAYvpavC-CrlayZpNsgBhMc-bUrr1OR1s5bzw
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: a4671286-a59f-47e3-b97b-90627a1977d5
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
-subfeature_v2:
-  - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
-  - id: d7be2b01-dc9c-40f7-aace-a151707504ed
-  - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
-  - id: ede6e1ec-9279-415e-b828-a09735018d48
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: a4671286-a59f-47e3-b97b-90627a1977d5id: b12f6872-9271-4369-85e5-86969a0b99a2id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2: id: cfc95e9b-b035-4403-a6a9-b27a8a053a37id: d7be2b01-dc9c-40f7-aace-a151707504edid: ed29abcd-b6a8-4d4b-ab8b-b7e746973281id: ede6e1ec-9279-415e-b828-a09735018d48
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e0eb8757-182f-49f3-94a4-1587d16f5094id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 1163
@@ -75,9 +59,9 @@ Adobe Campaign是一个使用不同应用程序的平台，用于创建开放且
 
 * **工作流引擎** (nlserver wfserver) — 此进程执行应用程序中定义的工作流进程。 它还处理定期执行的技术工作流，包括：
 
-   * **跟踪**：恢复并合并跟踪日志，以便您可以从重定向服务器检索日志，并创建报告模块使用的聚合指示器。
-   * **清理**：清理数据库，清除旧记录，避免数据库呈指数增长。
-   * **计费**：发送平台的活动报告（数据库大小、营销操作数等）。
+  * **跟踪**：恢复并合并跟踪日志，以便您可以从重定向服务器检索日志，并创建报告模块使用的聚合指示器。
+  * **清理**：清理数据库，清除旧记录，避免数据库呈指数增长。
+  * **计费**：发送平台的活动报告（数据库大小、营销操作数等）。
 
 * **投放服务器** (nlserver mta) - Adobe Campaign具有本机电子邮件广播功能。 此过程可充当SMTP邮件传输代理(MTA)。 它执行消息的“一对一”个性化并处理消息的物理投放。 它使用投放作业运行，并处理自动重试。 此外，启用跟踪后，会自动替换URL，以便它们指向重定向服务器。 此过程可处理自定义以及向第三方路由器自动发送短信、传真和直邮的功能。
 
@@ -121,4 +105,4 @@ Adobe Campaign是一个使用不同应用程序的平台，用于创建开放且
 
 总存储容量在主数据库和（可选）Snowflake辅助数据库之间拆分。 存储数据的位置应在实施或升级时确定，具体取决于客户特定的用例。
 
-请参阅[Campaign控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html?lang=zh-Hans){target="_blank"}以了解如何监测数据库使用情况。
+请参阅[Campaign控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/database-monitoring/database-monitoring.html){target="_blank"}以了解如何监测数据库使用情况。

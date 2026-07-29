@@ -6,13 +6,9 @@ role: Developer
 level: Experienced
 exl-id: 7c586836-82e1-45fb-9c28-18361572e1fa
 TQID: https://experienceleague.adobe.com/33R4OS8KQrMdktwwbwMUHJe5YG9gZbasiDwrcADS4f4
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 801
@@ -56,7 +52,7 @@ ht-degree: 3%
 
 1. 连接到您的[Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"}帐户。
 
-1. 使用AWS密钥管理服务(KMS)生成具有自动轮换的密钥。 [了解如何操作](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}。
+1. 使用AWS Key Management Service (KMS)在上生成具有自动轮换的键。 [了解如何操作](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}。
 
 1. 将Adobe提供给您的策略应用到您的AWS帐户，以便授予对资源的访问权限。 [了解详情](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"}。<!--link TBC-->
 
@@ -71,7 +67,7 @@ ht-degree: 3%
 
 * Adobe不提供[Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"}帐户。 您必须拥有自己的AWS帐户并进行设置，以生成您的密钥并将其与Adobe共享。
 
-* 仅支持[AWS密钥管理服务](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} (KMS)密钥。 不能使用KMS之外的客户生成的键&#x200B;。
+* 仅支持[AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} (KMS)密钥。 不能使用KMS之外的客户生成的键&#x200B;。
 
 * 首次设置期间预计会出现停机时间。 停&#x200B;机时间持续时间取决于数据库的大小。
 

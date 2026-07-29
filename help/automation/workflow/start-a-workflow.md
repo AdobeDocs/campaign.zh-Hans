@@ -8,13 +8,9 @@ role: User, Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
 TQID: https://experienceleague.adobe.com/VHBQEKUthZcW2WrbNjmlIC7FzJFDqX0PykJg95sM-WI
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 1143
@@ -73,14 +69,14 @@ ht-degree: 0%
   此操作将停止，然后重新启动工作流。 在大多数情况下，它可以更快地重新启动。 当停止需要一定时间时，自动重新启动也很有用：这是因为在工作流停止时，“Stop”命令不可用。
 
   请注意，**重新启动**&#x200B;操作不会清除与&#x200B;**执行**、**停止**&#x200B;和&#x200B;**启动**&#x200B;操作（实例变量在启动操作时正在清除）相比较的工作流实例变量。 重新启动工作流时，实例变量仍可用于保留值。 要清除它们，您可以：
-   * 执行&#x200B;**停止**&#x200B;和&#x200B;**启动**&#x200B;操作。
-   * 在工作流执行结束时，添加以下javascript代码：
+  * 执行&#x200B;**停止**&#x200B;和&#x200B;**启动**&#x200B;操作。
+  * 在工作流执行结束时，添加以下javascript代码：
 
-     ```
-     var wkf = xtk.workflow.load(instance.id)
-     wkf.variables='<variables/>'
-     wkf.save()
-     ```
+    ```
+    var wkf = xtk.workflow.load(instance.id)
+    wkf.variables='<variables/>'
+    wkf.save()
+    ```
 
 * **[!UICONTROL Purge history]**
 
@@ -110,9 +106,9 @@ ht-degree: 0%
 
   要避免工作流处于暂停状态，请执行以下操作：
 
-   * 请定期检查您的工作流，以确保没有意外错误。
-   * 使您的工作流尽可能简单，例如，通过将大型工作流拆分到多个不同的工作流中。 您可以使用&#x200B;**[!UICONTROL External signal]**&#x200B;活动根据其他工作流的执行触发其执行。
-   * 避免在工作流中禁用流导致线程处于打开状态的活动，这样会导致出现许多临时表，占用大量空间。 不要将活动保留在您的工作流中的&#x200B;**[!UICONTROL Do not enable]**&#x200B;或&#x200B;**[!UICONTROL Enable but do not execute]**&#x200B;状态。
+  * 请定期检查您的工作流，以确保没有意外错误。
+  * 使您的工作流尽可能简单，例如，通过将大型工作流拆分到多个不同的工作流中。 您可以使用&#x200B;**[!UICONTROL External signal]**&#x200B;活动根据其他工作流的执行触发其执行。
+  * 避免在工作流中禁用流导致线程处于打开状态的活动，这样会导致出现许多临时表，占用大量空间。 不要将活动保留在您的工作流中的&#x200B;**[!UICONTROL Do not enable]**&#x200B;或&#x200B;**[!UICONTROL Enable but do not execute]**&#x200B;状态。
 
 * **停止未使用的工作流**。 保持运行的工作流保持与数据库的连接。
 

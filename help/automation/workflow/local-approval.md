@@ -7,14 +7,10 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 172b6827-ddfc-4c6e-87c9-eb49e73ab3ab
 TQID: https://experienceleague.adobe.com/wVcQzhDcvinh3rooWklkMsf-KQvWepqYcgcgrHlbdXg
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 648
@@ -60,14 +56,14 @@ ht-degree: 3%
 
 * **[!UICONTROL Approval management]**
 
-   * 选择投放模板和将用于电子邮件通知的主题。 默认模板可用： **[!UICONTROL Local approval notification]**。 您还可以添加描述，该描述将显示在审批和反馈通知的收件人列表上方。
-   * 指定与审批截止日期（自审批开始起的日期或截止日期）对应的&#x200B;**[!UICONTROL Approval type]**。 在此日期，工作流将再次启动，并且未在定向中考虑未批准的收件人。 发送通知后，活动将排入队列，以便本地主管批准其联系人。
+  * 选择投放模板和将用于电子邮件通知的主题。 默认模板可用： **[!UICONTROL Local approval notification]**。 您还可以添加描述，该描述将显示在审批和反馈通知的收件人列表上方。
+  * 指定与审批截止日期（自审批开始起的日期或截止日期）对应的&#x200B;**[!UICONTROL Approval type]**。 在此日期，工作流将再次启动，并且未在定向中考虑未批准的收件人。 发送通知后，活动将排入队列，以便本地主管批准其联系人。
 
-     >[!NOTE]
-     >
-     >默认情况下，审批流程开始后，活动将暂停三天。
+    >[!NOTE]
+    >
+    >默认情况下，审批流程开始后，活动将暂停三天。
 
-     您还可以添加一个或多个提醒，以通知本地主管截止日期即将到来。 为此，请单击&#x200B;**[!UICONTROL Add a reminder]**&#x200B;链接。
+    您还可以添加一个或多个提醒，以通知本地主管截止日期即将到来。 为此，请单击&#x200B;**[!UICONTROL Add a reminder]**&#x200B;链接。
 
 * **[!UICONTROL Complementary set]**： **[!UICONTROL Generate complement]**&#x200B;选项允许您生成包含所有未批准目标的第二个集合。
 

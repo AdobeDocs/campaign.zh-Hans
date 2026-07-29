@@ -8,14 +8,10 @@ role: Developer
 level: Experienced
 exl-id: 00d39438-a232-49f1-ae5e-1e98c73397e3
 TQID: https://experienceleague.adobe.com/0JDPFM3PDI61vx3CPPveqw5Cta5AujFIngrbbD6V-tY
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-subfeature_v2:
-  - id: bf97c196-a4d1-4fa3-a151-e68a114c8ac0
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2
+subfeature_v2: id: bf97c196-a4d1-4fa3-a151-e68a114c8ac0
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 744
@@ -34,7 +30,7 @@ ht-degree: 1%
 例如，您希望每当客户在购物车中购买产品之前离开您的网站时，都会触发“购物车放弃”事件。 要执行此操作，作为Web开发人员，您必须使用REST事务型消息API。
 
 1. 根据POST方法发送请求，这会触发事务性事件的[发送](#sending-a-transactional-event)。
-1. 对POST请求的响应包含一个主键，用于通过GET请求发送一个或多个请求。 然后，即可获取[事件状态](#transactional-event-status)。
+1. 对POST请求的响应包含主键，该主键允许您通过GET请求发送一个或多个请求。 然后，即可获取[事件状态](#transactional-event-status)。
 
 ## 发送事务性事件 {#sending-a-transactional-event}
 

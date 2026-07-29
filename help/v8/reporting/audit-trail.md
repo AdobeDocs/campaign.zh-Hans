@@ -5,14 +5,9 @@ description: 了解如何使用Campaign审核记录监控实例
 feature: Audit Trail, Monitoring, Workflows
 exl-id: 6a937575-42d4-4dc5-8168-43c25bb2cde6
 TQID: https://experienceleague.adobe.com/0a5LrtW8EomSlw-mLwLTplBpEPovWLC-sXFdoSQYhV0
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 626
@@ -37,14 +32,14 @@ Adobe Campaign中的&#x200B;**[!UICONTROL Audit trail]**&#x200B;功能提供了�
 
 * **工作流审核跟踪**&#x200B;跟踪与您的工作流相关的所有操作，包括：
 
-   * 开始
-   * 暂停
-   * 停止
-   * 重新启动
-   * 清除等于操作清除历史记录
-   * 模拟在模拟模式下等于操作“开始”的项
-   * 唤醒等于操作立即执行待处理任务
-   * 无条件停止
+  * 开始
+  * 暂停
+  * 停止
+  * 重新启动
+  * 清除等于操作清除历史记录
+  * 模拟在模拟模式下等于操作“开始”的项
+  * 唤醒等于操作立即执行待处理任务
+  * 无条件停止
 
   有关工作流的详细信息，请参阅此[页面](../../automation/workflow/about-workflows.md)。
 
@@ -52,7 +47,7 @@ Adobe Campaign中的&#x200B;**[!UICONTROL Audit trail]**&#x200B;功能提供了�
 
 * **选项审核记录**&#x200B;允许您检查活动和对选项所做的最后修改。
 
-  有关选项的更多信息，请参阅此[页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options)。
+  有关选项的更多信息，请参阅此[页面](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options)。
 
 * **投放审核跟踪**&#x200B;允许您检查投放的活动和上次所做的修改。
 

@@ -6,14 +6,10 @@ role: Admin
 level: Beginner
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
 TQID: https://experienceleague.adobe.com/lM7a0NhOPSZsHW4X60S3-TTlnnuTMb1Ip30uRpBctEQ
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 734
@@ -29,7 +25,7 @@ ht-degree: 1%
 >
 >* [兼容性矩阵](../start/compatibility-matrix.md)中列出了用于联合数据访问的兼容数据库。
 >
->* 在[企业(FFDA)部署](../../v8/architecture/enterprise-deployment.md)的上下文中，可以使用特定的外部帐户来管理Campaign本地数据库和Snowflake云数据库之间的通信。 此外部帐户由Adobe为您设置，不得修改&#x200B;**&#x200B;**。
+>* 在[企业(FFDA)部署](../../v8/architecture/enterprise-deployment.md)的上下文中，可以使用特定的外部帐户来管理Campaign本地数据库和Snowflake云数据库之间的通信。 此外部帐户由Adobe为您设置，不得修改&#x200B;****。
 >
 >* 作为托管云服务用户，[联系Adobe](../start/campaign-faq.md#support)以将外部数据库与Campaign连接。
 
@@ -44,9 +40,9 @@ FDA选项受您使用的第三方数据库系统的限制的约束。
 
 * 尽可能避免需要同时使用Adobe Campaign和外部数据库的操作。 为此，您可以：
 
-   * 将Adobe Campaign数据库导出到外部数据库，并仅在将结果重新导入Adobe Campaign之前从外部数据库执行操作。
+  * 将Adobe Campaign数据库导出到外部数据库，并仅在将结果重新导入Adobe Campaign之前从外部数据库执行操作。
 
-   * 从外部Adobe Campaign数据库中收集数据，并在本地执行操作。
+  * 从外部Adobe Campaign数据库中收集数据，并在本地执行操作。
 
   如果要使用外部数据库中的数据在投放中进行个性化，请收集要在工作流中使用的数据，以使其在临时表中可用。 然后，使用临时表中的数据将投放个性化。 为此，请使用投放属性的&#x200B;**[!UICONTROL Analysis]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;选项，在专用工作流中预处理消息个性化。 在投放分析期间，此选项会自动创建并执行一个工作流，该工作流会将链接到目标的所有数据（包括链接至外部数据库的表中的数据）存储在临时表中。
 

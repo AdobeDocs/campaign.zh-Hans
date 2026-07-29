@@ -7,20 +7,11 @@ role: Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: bc13d706-7888-42eb-9116-5538e68cd515
 TQID: https://experienceleague.adobe.com/Rk6eyM-0GkwgC4yiewGSiB-6zr3x1ySJI6S72KzHNb0
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: a658c786-869b-4194-a780-2594d663adda
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-subfeature_v2:
-  - id: cebd7cfa-b9fa-4d9f-a2ab-fce31f32c4a3
-  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: a658c786-869b-4194-a780-2594d663addaid: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2: id: cebd7cfa-b9fa-4d9f-a2ab-fce31f32c4a3id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 1937
@@ -88,21 +79,21 @@ ht-degree: 2%
 
   您还可以查看每个活动的执行日志和详细信息。 可通过两种方式来做到这一点：
 
-   1. 选择目标活动并单击&#x200B;**[!UICONTROL Display the tasks and the log]**&#x200B;图标。
+  1. 选择目标活动并单击&#x200B;**[!UICONTROL Display the tasks and the log]**&#x200B;图标。
 
-      ![](assets/s_user_segmentation_show_logs.png)
+     ![](assets/s_user_segmentation_show_logs.png)
 
-      图表的下部分显示两个选项卡：“日志”和“任务”。
+     图表的下部分显示两个选项卡：“日志”和“任务”。
 
-      在图表中选定的活动在日志和任务列表中充当筛选器。
+     在图表中选定的活动在日志和任务列表中充当筛选器。
 
-      ![](assets/s_user_segmentation_logs.png)
+     ![](assets/s_user_segmentation_logs.png)
 
-   1. 右键单击目标活动并选择&#x200B;**[!UICONTROL Display logs]**。
+  1. 右键单击目标活动并选择&#x200B;**[!UICONTROL Display logs]**。
 
-      ![](assets/s_user_segmentation_logs_menu.png)
+     ![](assets/s_user_segmentation_logs_menu.png)
 
-      日志会显示在单独的窗口中。
+     日志会显示在单独的窗口中。
 
 ## 清除日志 {#purging-the-logs}
 

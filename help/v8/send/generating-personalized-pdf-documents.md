@@ -7,13 +7,9 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: f4a329e3-70d2-43cd-a04a-0bbd5e3ca390
 TQID: https://experienceleague.adobe.com/qfSKBHeQUkAYJb-PSeTxYMxGp-WicmITitT9qh8tHBs
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 430
@@ -68,8 +64,8 @@ Adobe Campaign允许您从LibreOffice或Microsoft Word文档为电子邮件附�
 
   您需要区分个性化块中的两种类型的声明：
 
-   * 个性化字段的Adobe Campaign代码，其“打开”和“关闭”V形必须替换为转义字符（分别为`&lt;`和`&gt;`）。
-   * 整个OpenOffice XML代码将被复制到OpenOffice文档中。
+  * 个性化字段的Adobe Campaign代码，其“打开”和“关闭”V形必须替换为转义字符（分别为`&lt;`和`&gt;`）。
+  * 整个OpenOffice XML代码将被复制到OpenOffice文档中。
 
 在示例中，个性化块如下所示：
 

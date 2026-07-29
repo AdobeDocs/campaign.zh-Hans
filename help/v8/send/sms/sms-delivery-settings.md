@@ -6,19 +6,13 @@ role: User
 level: Beginner, Intermediate
 exl-id: c4d500ef-2339-491f-9ae2-9bfaf72088a9
 TQID: https://experienceleague.adobe.com/SUOihPjlej-JYbpNBWLCIhWhM2NrUpz0pMuO3NAaCWM
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: 768
+source-wordcount: 734
 ht-degree: 1%
 
 ---
@@ -60,10 +54,10 @@ ht-degree: 1%
 
   此字段指示您要传输的SMS类型：普通消息或闪存消息，存储在移动设备或SIM卡上。 此设置在SUBMIT_SM PDU的dest_addr_subunit可选字段中传输。
 
-   * **Flash**&#x200B;将该值设置为1。 它会发送一条在手机上弹出且未存储在内存中的闪存消息。
-   * **Normal**&#x200B;将该值设置为0。 它会发送一条正常消息。
-   * **Save on mobile**&#x200B;将该值设置为2。 它告知手机将短信存储在内存中。
-   * **保存在终端**&#x200B;上将值设置为3。 它告知手机将短信存储在SIM卡中。
+  * **Flash**&#x200B;将该值设置为1。 它会发送一条在手机上弹出且未存储在内存中的闪存消息。
+  * **Normal**&#x200B;将该值设置为0。 它会发送一条正常消息。
+  * **Save on mobile**&#x200B;将该值设置为2。 它告知手机将短信存储在内存中。
+  * **保存在终端**&#x200B;上将值设置为3。 它告知手机将短信存储在SIM卡中。
 
 * **[!UICONTROL Priority, Communication type]**
 
@@ -80,13 +74,13 @@ ht-degree: 1%
   指定0将禁用限制。
 
 * **[!UICONTROL Optional SMPP parameters (TLV)]**
-您可以指定要作为可选SMPP参数(TLV)发送的额外字段。 这些额外的字段与每个MT一起发送，而个性化的字段允许每个MT具有不同的值。
-该表列出了随每条消息一起发送的可选参数。 列包含以下信息：
-   * **标签**：这是可选的自由格式标签。 不会发送给提供商。 您可以提供参数的文本描述。
-   * **标记**：标记值，以十进制格式（如12345）或带0x前缀的十六进制（如0x12ab）表示。 标记可以介于0和65535之间。 向SMPP服务提供商询问他们支持的标记。
-   * **值**：要在可选参数中发送的值。 这是一个个性化字段。
-   * **格式**：用于参数的编码。 您可以选择任何受支持的文本编码或最常见的二进制格式。 询问SMPP服务提供商所需的格式。
-   * **最大长度**：此参数的最大字节数。 对于二进制字段，这将被忽略，因为二进制字段的大小是固定的。
+您可以指定要作为可选SMPP参数(TLV)发送的额外字段。这些额外的字段与每个MT一起发送，而个性化的字段允许每个MT具有不同的值。
+该表列出了随每条消息一起发送的可选参数。列包含以下信息：
+  * **标签**：这是可选的自由格式标签。 不会发送给提供商。 您可以提供参数的文本描述。
+  * **标记**：标记值，以十进制格式（如12345）或带0x前缀的十六进制（如0x12ab）表示。 标记可以介于0和65535之间。 向SMPP服务提供商询问他们支持的标记。
+  * **值**：要在可选参数中发送的值。 这是一个个性化字段。
+  * **格式**：用于参数的编码。 您可以选择任何受支持的文本编码或最常见的二进制格式。 询问SMPP服务提供商所需的格式。
+  * **最大长度**：此参数的最大字节数。 对于二进制字段，这将被忽略，因为二进制字段的大小是固定的。
 
 * **[!UICONTROL Using binary formats for TLV]**
 

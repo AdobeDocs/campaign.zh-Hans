@@ -104,9 +104,9 @@ ht-degree: 4%
 
   可能的事件状态为：
 
-   * **[!UICONTROL Pending]**：事件在队列中。 尚未为其分配消息模板。
-   * **[!UICONTROL Pending delivery]**：事件在队列中，已为其分配消息模板且投放正在处理该模板。
-   * **[!UICONTROL Sent]**：此状态复制于投放日志。 这意味着投放已发送。
-   * **[!UICONTROL Ignored by the delivery]**：此状态复制于投放日志。 这意味着该投放被忽略。
-   * **[!UICONTROL Delivery failed]**：此状态复制于投放日志。 这意味着投放失败了。
-   * **[!UICONTROL Event not taken into account]**：无法将事件链接到消息模板。 将不会处理该事件。
+  * **[!UICONTROL Pending]**：事件在队列中。 尚未为其分配消息模板。
+  * **[!UICONTROL Pending delivery]**：事件在队列中，已为其分配消息模板且投放正在处理该模板。
+  * **[!UICONTROL Sent]**：此状态复制于投放日志。 这意味着投放已发送。
+  * **[!UICONTROL Ignored by the delivery]**：此状态复制于投放日志。 这意味着该投放被忽略。
+  * **[!UICONTROL Delivery failed]**：此状态复制于投放日志。 这意味着投放失败了。
+  * **[!UICONTROL Event not taken into account]**：无法将事件链接到消息模板。 将不会处理该事件。

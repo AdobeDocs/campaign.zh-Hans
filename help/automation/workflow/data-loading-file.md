@@ -7,14 +7,10 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 10351620-115c-4bd8-b216-e5ad6f205ef3
 TQID: https://experienceleague.adobe.com/XM-wH6gqH3EvqBp0qMShsy76VheGg1w6kul8Ui4f-pc
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a658c786-869b-4194-a780-2594d663adda
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a658c786-869b-4194-a780-2594d663adda
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 1110
@@ -36,7 +32,7 @@ ht-degree: 14%
 
 >[!CAUTION]
 >
->仅支持“平面”结构文件（例如CSV、TXT等）。 不建议使用XML格式。 使用客户端控制台，您可以加载最大大小为150 MB的文件。 在Web用户界面中，加载文件活动的限制为50MB。 [了解详情](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html?lang=zh-Hans){target="_blank"}
+>仅支持“平面”结构文件（例如CSV、TXT等）。 不建议使用XML格式。 使用客户端控制台，您可以加载最大大小为150 MB的文件。 在Web用户界面中，加载文件活动的限制为50MB。 [了解详情](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html){target="_blank"}
 
 ![](assets/s_advuser_wf_etl_file.png)
 
@@ -70,27 +66,27 @@ ht-degree: 14%
 * **[!UICONTROL Data type]**：指定每个列所需的数据类型。
 * **[!UICONTROL Allow NULLs]**：指定如何管理空值。
 
-   * **[!UICONTROL Adobe Campaign default]**：仅为数字字段生成错误，否则插入 NULL 值。
-   * **[!UICONTROL Empty value allowed]**：授权空值。 因此，会插入 NULL 值。
-   * **[!UICONTROL Always populated]**：如果值为空，则生成错误。
+  * **[!UICONTROL Adobe Campaign default]**：仅为数字字段生成错误，否则插入 NULL 值。
+  * **[!UICONTROL Empty value allowed]**：授权空值。 因此，会插入 NULL 值。
+  * **[!UICONTROL Always populated]**：如果值为空，则生成错误。
 
 * **[!UICONTROL Length]**：指定&#x200B;**字符串**&#x200B;数据类型的最大字符数。
 * **[!UICONTROL Format]**：定义时间和日期格式。
 * **[!UICONTROL Data transformation]**：定义是否需要对&#x200B;**字符串**&#x200B;应用字符大小写处理。
 
-   * **[!UICONTROL None]**：未修改导入的字符串。
-   * **[!UICONTROL First letter in upper case]**：字符串中每个单词的第一个字母以大写开头。
-   * **[!UICONTROL Upper case]**：字符串中的所有字符都使用大写。
-   * **[!UICONTROL Lower case]**：字符串中的所有字符都使用小写。
+  * **[!UICONTROL None]**：未修改导入的字符串。
+  * **[!UICONTROL First letter in upper case]**：字符串中每个单词的第一个字母以大写开头。
+  * **[!UICONTROL Upper case]**：字符串中的所有字符都使用大写。
+  * **[!UICONTROL Lower case]**：字符串中的所有字符都使用小写。
 
 * **[!UICONTROL White space management]**：指定字符串中是否需要忽略某些空格。 **[!UICONTROL Ignore spaces]**&#x200B;值只允许忽略字符串开头和结尾的空格。
 * **[!UICONTROL Error processings]**：定义遇到错误时的行为。
 
-   * **[!UICONTROL Ignore the value]**：忽略值。 工作流执行日志中会生成警告。
-   * **[!UICONTROL Reject line]**：不处理整个行。
-   * **[!UICONTROL Use a default value in case of error]**：将导致错误的值替换为在 **[!UICONTROL Default value]** 字段中定义的默认值。
-   * **[!UICONTROL Reject the line when there is no remapping value]**：除非为错误值定义了映射，否则不会处理整行（请参阅下面的&#x200B;**[!UICONTROL Mapping]**&#x200B;选项）。
-   * **[!UICONTROL Use a default value in case the value is not remapped]**：将在&#x200B;**[!UICONTROL Default value]**&#x200B;字段中定义的默认值替换导致错误的值，除非已为该错误值定义了映射（请参阅下面的&#x200B;**[!UICONTROL Mapping]**&#x200B;选项）。
+  * **[!UICONTROL Ignore the value]**：忽略值。 工作流执行日志中会生成警告。
+  * **[!UICONTROL Reject line]**：不处理整个行。
+  * **[!UICONTROL Use a default value in case of error]**：将导致错误的值替换为在 **[!UICONTROL Default value]** 字段中定义的默认值。
+  * **[!UICONTROL Reject the line when there is no remapping value]**：除非为错误值定义了映射，否则不会处理整行（请参阅下面的&#x200B;**[!UICONTROL Mapping]**&#x200B;选项）。
+  * **[!UICONTROL Use a default value in case the value is not remapped]**：将在&#x200B;**[!UICONTROL Default value]**&#x200B;字段中定义的默认值替换导致错误的值，除非已为该错误值定义了映射（请参阅下面的&#x200B;**[!UICONTROL Mapping]**&#x200B;选项）。
 
 * **[!UICONTROL Default value]**：根据所选的错误处理指定默认值。
 * **[!UICONTROL Mapping]**：此字段仅在列详细信息配置（通过双击或通过列列表右侧的选项访问）中可用。 这会在导入特定值时对其进行转换。 例如，您可以将“three”转换为“3”。

@@ -7,15 +7,12 @@ role: User, Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: 8bcaf367-5b1f-4d31-80c9-c77df43c6ed1
 TQID: https://experienceleague.adobe.com/g1krDpf-lH0uNr8ZHxGh1Uemvl0Lxd-ygskdkTaUj24
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: 1356
-ht-degree: 13%
+source-wordcount: 1310
+ht-degree: 14%
 
 ---
 
@@ -131,7 +128,7 @@ JavaScript方法&#x200B;**[!UICONTROL logInfo()]**&#x200B;是用于调试工作�
 
 工作流属性的&#x200B;**[!UICONTROL Execution]**&#x200B;选项卡中提供了&#x200B;**日志**&#x200B;中的Log SQL查询选项。 此选项记录来自不同活动的所有SQL查询，并提供查看平台实际执行内容的方法。 但是，此选项只应在开发期间&#x200B;**临时**&#x200B;使用，并且&#x200B;**不在生产环境中激活**。
 
-最佳做法是在不再需要日志时清除日志。 系统不会自动清除工作流历史记录：默认情况下会保留所有消息。 可通过&#x200B;**[!UICONTROL File > Actions]**&#x200B;菜单或单击位于列表上方工具栏中的“操作”按钮清除历史记录。 选择清除历史记录。
+最佳做法是在不再需要日志时清除日志。系统不会自动清除工作流历史记录：默认情况下会保留所有消息。可通过&#x200B;**[!UICONTROL File > Actions]**菜单或单击位于列表上方工具栏中的“操作”按钮清除历史记录。选择清除历史记录。
 要了解如何清除日志，请参阅此[文档](start-a-workflow.md)。
 
 ### 工作流规划 {#workflow-planning}

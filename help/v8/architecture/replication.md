@@ -131,6 +131,6 @@ var xml = xtk.builder.CopyXxlData(
 
 此视频介绍Adobe Campaign v8使用哪些数据库、为何复制数据、正在复制哪些数据以及复制过程的工作方式等关键概念。
 
->[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3416863?captions=chi_hans&quality=12)
 
 [此处](https://experienceleague.adobe.com/zh-hans/docs/campaign-learn/tutorials/overview)提供了其他Campaign v8客户端控制台教程。

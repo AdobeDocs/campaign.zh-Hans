@@ -56,7 +56,7 @@ ht-degree: 3%
 
 1. 连接到您的[Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"}帐户。
 
-1. 使用AWS密钥管理服务(KMS)生成具有自动轮换的密钥。 [了解如何操作](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}。
+1. 使用AWS Key Management Service (KMS)在上生成具有自动轮换的键。 [了解如何操作](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html){target="_blank"}。
 
 1. 将Adobe提供给您的策略应用到您的AWS帐户，以便授予对资源的访问权限。 [了解详情](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html){target="_blank"}。<!--link TBC-->
 
@@ -71,7 +71,7 @@ ht-degree: 3%
 
 * Adobe不提供[Amazon Web Services (AWS)](https://aws.amazon.com/){target="_blank"}帐户。 您必须拥有自己的AWS帐户并进行设置，以生成您的密钥并将其与Adobe共享。
 
-* 仅支持[AWS密钥管理服务](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} (KMS)密钥。 不能使用KMS之外的客户生成的键&#x200B;。
+* 仅支持[AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html){target="_blank"} (KMS)密钥。 不能使用KMS之外的客户生成的键&#x200B;。
 
 * 首次设置期间预计会出现停机时间。 停&#x200B;机时间持续时间取决于数据库的大小。
 

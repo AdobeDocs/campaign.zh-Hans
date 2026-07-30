@@ -1,5 +1,5 @@
 ---
-title: 自定义渠道入门
+title: 开始使用自定义渠道
 description: 了解如何使用Adobe Campaign Web创建和发送自定义渠道投放
 role: User
 level: Beginner, Intermediate
@@ -19,11 +19,11 @@ topic_v2:
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
 source-wordcount: 560
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 自定义渠道入门 {#gs-custom-channel}
+# 开始使用自定义渠道 {#gs-custom-channel}
 
 Adobe Campaign允许您创建与第三方集成的自定义外部或API渠道。 然后，您可以根据这些渠道编排和执行投放。
 

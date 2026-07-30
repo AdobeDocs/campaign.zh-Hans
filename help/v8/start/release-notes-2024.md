@@ -51,7 +51,7 @@ _2024 年 9 月 3 日_
 
 >[!AVAILABILITY]
 >
->此版本为&#x200B;**限量发布版** (LA)。 仅供&#x200B;**从 Adobe Campaign Standard 迁移到 Adobe Campaign v8** 的客户使用，并且不能部署在任何其他环境上。
+>此版本为&#x200B;**有限发布版** (LA)。 仅供&#x200B;**从 Adobe Campaign Standard 迁移到 Adobe Campaign v8** 的客户使用，并且不能部署在任何其他环境上。
 >
 >作为正在过渡到 Campaign v8 的 Campaign Standard 用户，请在 [Campaign v8 Web 用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/acs-migration){target="_blank"}中了解有关此过渡的更多信息。
 
@@ -75,7 +75,7 @@ _2024 年 5 月 2 日_
 
 >[!AVAILABILITY]
 >
->此版本为&#x200B;**限量发布版** (LA)。 仅供&#x200B;**从 Adobe Campaign Standard 迁移到 Adobe Campaign v8** 的客户使用，并且不能部署在任何其他环境上。
+>此版本为&#x200B;**有限发布版** (LA)。 仅供&#x200B;**从 Adobe Campaign Standard 迁移到 Adobe Campaign v8** 的客户使用，并且不能部署在任何其他环境上。
 >
 >作为正在过渡到 Campaign v8 的 Campaign Standard 用户，请在 [Campaign v8 Web 用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/acs-migration){target="_blank"}中了解有关此过渡的更多信息。
 
@@ -97,8 +97,8 @@ _2024 年 5 月 2 日_
 
 * 现已提供新的 Amazon Redshift FDA ODBC 连接器。 它提供了改进的连接性、更轻松的维护以及增强的兼容性。 此新版本提供了以下改进：
 
-   * 新的连接器基于 ODBC 接口，该接口兼容我们最新的 FDA 连接器。 这可确保实现长期支持。
-   * 它还引入了一种使用 s3 存储桶的新数据加载机制，显著提高了性能。
+  * 新的连接器基于 ODBC 接口，该接口兼容我们最新的 FDA 连接器。 这可确保实现长期支持。
+  * 它还引入了一种使用 s3 存储桶的新数据加载机制，显著提高了性能。
 
   仍可使用旧版连接器。 如果您想要试用新版，请联系您的 Adobe 代表。
 

@@ -93,8 +93,8 @@ ht-degree: 4%
 
   以下各节详细介绍了与进度和日志显示相关的图标：
 
-   * [显示进度](monitor-workflow-execution.md#displaying-progress)
-   * [显示日志](monitor-workflow-execution.md#displaying-logs)
+  * [显示进度](monitor-workflow-execution.md#displaying-progress)
+  * [显示日志](monitor-workflow-execution.md#displaying-logs)
 
 * **对象对齐方式**
 

@@ -15,7 +15,7 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: 449
+source-wordcount: 418
 ht-degree: 14%
 
 ---
@@ -56,10 +56,10 @@ In addition, the **Marketing Resource Management (MRM)** module lets you control
 定义审阅人并配置审批流程以监控活动流程：定位、内容、预算、提取和验证发送。 在此部分[&#128279;](marketing-campaign-approval.md)中了解如何设置审批。
 
 1. **监视投放**。
-从功能板跟踪您的营销活动，从Campaign UI检查投放状态和执行。 [了解详情](marketing-campaign-monitoring.md)。
+从仪表板跟踪您的营销活动，从Campaign UI检查投放状态和执行。[了解详情](marketing-campaign-monitoring.md)。
 
 1. **跟踪预算、库存和相关成本**。
-使用Adobe Campaign控制预算分配，管理供应商、库存和成本。 [了解详情](providers-stocks-and-budgets.md#create-service-providers-and-their-cost-structures)。
+使用Adobe Campaign控制预算分配，管理供应商、库存和成本。[了解详情](providers-stocks-and-budgets.md#create-service-providers-and-their-cost-structures)。
 
 完成这些步骤后，您可以[启动投放](marketing-campaign-deliveries.md#start-a-delivery)，检查与投放相关的数据、流程和信息，并在必要时[管理相关文档](marketing-campaign-deliveries.md#manage-associated-documents)。 您还可以[跟踪和监视营销活动和投放的执行](marketing-campaign-monitoring.md)。
 

@@ -86,8 +86,8 @@ Adobe Campaign附带预定义的数据模型，其中包含在Cloud数据库中�
 * **收件人表** (`nmsRecipient`) — 存储营销用户档案的主表
 * **投放表** (`nmsDelivery`) — 存储投放操作和模板，其中包含用于执行投放的参数
 * **日志表** — 存储执行日志：
-   * `nmsBroadLogRcp` — 发送给收件人的所有邮件的投放日志
-   * `nmsTrackingLogRcp` — 跟踪收件人反应（打开、点击）的日志
+  * `nmsBroadLogRcp` — 发送给收件人的所有邮件的投放日志
+  * `nmsTrackingLogRcp` — 跟踪收件人反应（打开、点击）的日志
 * **技术表** — 存储系统数据，如运算符(`xtkGroup`)、会话(`xtkSessionInfo`)、工作流(`xtkWorkflow`)
 
 要在Campaign界面中访问架构描述，请浏览到&#x200B;**管理>配置>数据架构**，选择一个资源，然后单击&#x200B;**文档**&#x200B;选项卡。

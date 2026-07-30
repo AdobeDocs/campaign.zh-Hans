@@ -94,9 +94,9 @@ ht-degree: 5%
 
   可以使用以下审批模式：
 
-   * **[!UICONTROL Manual]**：在分析阶段结束时，用户必须确认投放才能开始发送。 为此，请单击&#x200B;**[!UICONTROL Start]**&#x200B;按钮以启动投放。
-   * **[!UICONTROL Semi-automatic]**：如果分析阶段未生成警告消息，则自动开始发送。
-   * **[!UICONTROL Automatic]**：在分析阶段结束时自动开始发送，与其结果无关。
+  * **[!UICONTROL Manual]**：在分析阶段结束时，用户必须确认投放才能开始发送。 为此，请单击&#x200B;**[!UICONTROL Start]**&#x200B;按钮以启动投放。
+  * **[!UICONTROL Semi-automatic]**：如果分析阶段未生成警告消息，则自动开始发送。
+  * **[!UICONTROL Automatic]**：在分析阶段结束时自动开始发送，与其结果无关。
 
 * **[!UICONTROL Start job in a detached process]**：利用此选项，可在单独的进程中启动投放分析。 默认情况下，分析函数使用Adobe Campaign应用程序服务器进程(web nlserver)。 通过选择此选项，可以确保即使在应用程序服务器出现故障时也能完成分析。
 * **[!UICONTROL Log SQL queries generated during the analysis in the journal]**：此选项在分析阶段将SQL查询日志添加到投放日志。

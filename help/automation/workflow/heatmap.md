@@ -19,7 +19,7 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: 1111
+source-wordcount: 1112
 ht-degree: 3%
 
 ---
@@ -105,7 +105,7 @@ Campaign Workflow HeatMap是从左上到右下自然可读的网格，允许查�
 
 该网格显示在这些5分钟时段中的每一个时段内同时运行的所有工作流。
 
-在下面的示例中，在上午8点到8:05am之间，有三个工作流正在运行（无论其各自的持续时间如何）：
+在下面的示例中，在早上8点到早上8:05点之间，有三个工作流正在运行（无论其各自的持续时间如何）：
 
 ![](assets/wkf_monitoring_ex_8am.png)
 

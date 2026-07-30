@@ -68,8 +68,8 @@ Adobe Campaign允许您从LibreOffice或Microsoft Word文档为电子邮件附�
 
   您需要区分个性化块中的两种类型的声明：
 
-   * 个性化字段的Adobe Campaign代码，其“打开”和“关闭”V形必须替换为转义字符（分别为`&lt;`和`&gt;`）。
-   * 整个OpenOffice XML代码将被复制到OpenOffice文档中。
+  * 个性化字段的Adobe Campaign代码，其“打开”和“关闭”V形必须替换为转义字符（分别为`&lt;`和`&gt;`）。
+  * 整个OpenOffice XML代码将被复制到OpenOffice文档中。
 
 在示例中，个性化块如下所示：
 

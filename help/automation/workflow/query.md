@@ -14,7 +14,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: 1621
+source-wordcount: 1586
 ht-degree: 1%
 
 ---
@@ -25,8 +25,8 @@ ht-degree: 1%
 
 ## 创建查询 {#creating-a-query}
 
-通过查询，您可以根据条件选择目标。 您可以将区段代码关联到查询结果并在其中插入附加数据。
-在[本节](querying-recipient-table.md)中了解如何通过用例构建查询。 另请参阅有关[查询编辑器](../../v8/start/query-editor.md)的部分。
+通过查询，您可以根据条件选择目标。您可以将区段代码关联到查询结果并在其中插入附加数据。
+在[本节](querying-recipient-table.md)中了解如何通过用例构建查询。另请参阅有关[查询编辑器](../../v8/start/query-editor.md)的部分。
 
 ![](assets/query-activity.png){width="70%" align="center" zoomable="yes"}
 
@@ -216,11 +216,11 @@ SQL中过滤维度的等效项是内部联接：
 * 构建开发平台，其卷、参数和架构与生产平台相似。
 * 对开发和生产环境使用相同的值。 请尽量使用相同的方式：
 
-   * 操作系统，
-   * 版本，
-   * 数据，
-   * 应用程序，
-   * 卷。
+  * 操作系统，
+  * 版本，
+  * 数据，
+  * 应用程序，
+  * 卷。
 
   >[!NOTE]
   >

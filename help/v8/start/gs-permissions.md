@@ -16,8 +16,8 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: 517
-ht-degree: 5%
+source-wordcount: 477
+ht-degree: 4%
 
 ---
 
@@ -42,10 +42,10 @@ Adobe Campaign允许您定义和管理分配给用户的权限。 这些权限�
 
 关键步骤包括：
 
-* **步骤1**：在Campaign客户端控制台中定义操作员组并为其分配权限。 [了解详情](manage-permissions.md#create-product-profile)。
-请注意，您还可以使用内置运算符组作为开头。 这些默认组及其权限在[此部分](manage-permissions.md#ootb-productprofiles)中列出。
-* **步骤2**：在Adobe Admin Console中创建与这些组匹配的产品配置文件。 [了解详情](manage-permissions.md#create-product-profile)。
-您可以首先使用内置的产品配置文件。 [了解详情](manage-permissions.md#ootb-productprofiles)。
+* **步骤1**：在Campaign客户端控制台中定义操作员组并为其分配权限。[了解详情](manage-permissions.md#create-product-profile)。
+请注意，您还可以使用内置运算符组作为开头。这些默认组及其权限列在[此部分](manage-permissions.md#ootb-productprofiles)中。
+* **步骤2**：在Adobe Admin Console中创建与这些组匹配的产品配置文件。[了解详情](manage-permissions.md#create-product-profile)。
+您可以首先使用内置的产品配置文件。[了解详情](manage-permissions.md#ootb-productprofiles)。
 * **步骤3**：在Adobe Admin Console中创建用户，并将其分配给产品配置文件。 [了解详情](manage-permissions.md#add-users)。
 * **步骤4**（可选）：分配文件夹权限。 [了解详情](manage-permissions.md#ootb-productprofiles)。
 

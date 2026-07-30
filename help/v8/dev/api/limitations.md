@@ -24,7 +24,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: 1052
+source-wordcount: 1053
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 通过迁移，可将两个产品配置文件添加到您现有或预先创建的技术帐户：管理员和消息中心（用于访问事务型API）。 如果您不希望将管理员产品配置文件映射到您的技术帐户，请查看产品配置文件映射，并分配所需的产品配置文件。
 
-### 租户ID
+### 租户 ID
 
 迁移后，对于任何未来的集成，建议在REST URL中使用您的&#x200B;**Campaign v8租户ID**，替换您之前的Campaign Standard租户ID。
 
@@ -125,7 +125,7 @@ ht-degree: 1%
 | 在URI中使用无效的PKey | 500 — “O5iRp40EGA”属性未知(请参阅“配置文件(nms:recipient)”架构的定义)。 XTK-170036无法解析表达式“@id = @O5iRp40EGA”。 | 404 — 无法解密PKey。 (PKey=@jksad)不支持的端点。 (endpoint=rest/profileAndServices/profile/@jksad) |
 | 在URI和请求正文中使用两个不同的原始Pkey | 500 - RST-360011发生错误 — 请联系您的管理员。 RST-360012对资源“服务”的操作不一致 — 无法将键“SVC3”更新为“SVC4”。 | 500 — 发生错误 — 请联系您的管理员。 |
 | 在URI中使用PKey，并在请求正文中使用其他原始PKey | 500 — 具有相同键“SVC4”的“服务”已存在。 PGS-220000 PostgreSQL错误：错误：重复的键值将违反唯一约束“nmsservice_name”。详细信息：键(sname)=(SVC4)已存在。 | 500 — 发生错误 — 请联系您的管理员。 |
-| 在URI中使用不存在的原始ID | 404 - RST-360011发生错误 — 请联系您的管理员。 无法从键“adobe_nl:0”（架构为“service”且名称为“adobe_nl”的文档）找到路径为“Service”的文档 | 404 — 无法从键“adobe_nl”（模式为“service”且名称为“adobe_nl”的文档）找到路径为“Service”的文档 |
+| 在URI中使用不存在的原始ID | 404 - RST-360011发生错误 — 请联系您的管理员。 无法从键“adobe_nl：0”（模式为“service”且名称为“adobe_nl”的文档）找到路径为“Service”的文档 | 404 — 无法从键“adobe_nl”（模式为“service”且名称为“adobe_nl”的文档）找到路径为“Service”的文档 |
 | 在请求正文中使用不存在的原始ID | 404 - RST-360011发生错误 — 请联系您的管理员。 无法从键“adobe_nl”中找到路径为“Service”的文档（架构为“service”且名称为“adobe_nl”的文档） | 404 — 无法从键“adobe_nl”（模式为“service”且名称为“adobe_nl”的文档）找到路径为“Service”的文档 |
 | - | 500 - RST-360011发生错误 — 请联系您的管理员。 | 500 — 发生错误 — 请联系您的管理员。 |
 | 插入具有无效性别（或任何）枚举值的配置文件/服务 | 500 - RST-360011发生错误 — 请联系您的管理员。 值“invalid”对于“@gender”字段的“nms:recipient:gender”枚举无效 | 500 — 发生错误 — 请联系您的管理员。 |
@@ -140,7 +140,7 @@ ht-degree: 1%
 
 Campaign Standard Workflow GET API返回参数名称，例如工作流实例变量及其数据类型（布尔值、字符串等）。 当通过POST API调用触发信号时，可用于创建格式适当的JSON请求正文。
 
-Campaign v8不支持广告工作流实例变量，但希望开发人员了解这些变量。 因此，在迁移后，需要构建POST请求正文中的参数信息，而没有GET API响应中的参数信息。
+Campaign v8不支持广告工作流实例变量，但希望开发人员了解这些变量。 因此，在迁移后，需要构造POST请求正文中的参数信息，而没有GET API响应中的参数信息。
 
 <!--
 ## Transactional messages

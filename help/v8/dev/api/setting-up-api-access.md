@@ -57,8 +57,8 @@ Adobe Campaign Standard API访问可通过以下步骤进行设置。 [Adobe Dev
 
 * **&lt;组织>**：这是您的个人组织ID，Adobe会为您每个实例提供一个组织ID：
 
-   * &lt;ORGANIZATION> ：您的生产实例，
-   * &lt;ORGANIZATION-mkt-stage>：您的阶段实例。
+  * &lt;ORGANIZATION> ：您的生产实例，
+  * &lt;ORGANIZATION-mkt-stage>：您的阶段实例。
 
   要获取您的组织ID值，请联系管理员或Adobe技术联系人。 您还可以在创建新集成时，在许可证列表中将其检索到Adobe I/O（请参阅<a href="https://developer.adobe.com/developer-console/docs/guides/authentication/">Adobe Developer文档</a>）。
 

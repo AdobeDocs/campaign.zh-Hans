@@ -219,28 +219,28 @@ Snowflake FDA连接使用Snowflake ODBC驱动程序。 从Campaign v8.9.1开始�
 
 * **Amazon Simple Storage Service (S3)** - **AWS S3**&#x200B;连接器可用于通过&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动将数据导入或导出到Adobe Campaign。 在设置此外部帐户时，您需要提供以下详细信息：
 
-   * **[!UICONTROL AWS S3 Account Server]**：服务器的URL，格式为`<S3bucket name>.s3.amazonaws.com/<s3object path>`。
+  * **[!UICONTROL AWS S3 Account Server]**：服务器的URL，格式为`<S3bucket name>.s3.amazonaws.com/<s3object path>`。
 
-   * **[!UICONTROL AWS access key ID]**：请参阅[AWS文档](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}以了解如何查找您的Amazon访问密钥ID。
+  * **[!UICONTROL AWS access key ID]**：请参阅[AWS文档](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}以了解如何查找您的Amazon访问密钥ID。
 
-   * **[!UICONTROL Secret access key to AWS]**：请参阅[Amazon文档](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/){target="_blank"}以了解如何查找您的AWS访问密钥。
+  * **[!UICONTROL Secret access key to AWS]**：请参阅[Amazon文档](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/){target="_blank"}以了解如何查找您的AWS访问密钥。
 
-   * **[!UICONTROL AWS Region]**：在[AWS文档](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/){target="_blank"}中了解有关Amazon地区的更多信息。
+  * **[!UICONTROL AWS Region]**：在[AWS文档](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/){target="_blank"}中了解有关Amazon地区的更多信息。
 
-   * **[!UICONTROL Use server-side encryption]**&#x200B;复选框允许您以S3加密模式存储文件。 请参阅[Amazon文档](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}以了解如何查找访问密钥ID和访问密钥。
+  * **[!UICONTROL Use server-side encryption]**&#x200B;复选框允许您以S3加密模式存储文件。 请参阅[Amazon文档](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys){target="_blank"}以了解如何查找访问密钥ID和访问密钥。
 
 * **Azure Blob存储** - **Azure**&#x200B;外部帐户可用于通过&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动将数据导入或导出到Adobe Campaign。 要将&#x200B;**Azure**&#x200B;外部帐户配置为与Adobe Campaign配合使用，您需要提供以下详细信息：
 
-   * **[!UICONTROL Server]**： Azure Blob Storage Server的URL。
+  * **[!UICONTROL Server]**： Azure Blob Storage Server的URL。
 
-   * **[!UICONTROL Encryption]**：加密类型： **[!UICONTROL None]**&#x200B;或&#x200B;**[!UICONTROL SSL]**。
+  * **[!UICONTROL Encryption]**：加密类型： **[!UICONTROL None]**&#x200B;或&#x200B;**[!UICONTROL SSL]**。
 
-   * **[!UICONTROL Access key]**：请参阅[Microsoft文档](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal){target="_blank"}以了解如何查找您的&#x200B;**[!UICONTROL Access key]**。
+  * **[!UICONTROL Access key]**：请参阅[Microsoft文档](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal){target="_blank"}以了解如何查找您的&#x200B;**[!UICONTROL Access key]**。
 
 * **Microsoft Fabric** - **Microsoft Fabric**&#x200B;外部帐户允许您使用&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动在Microsoft Fabric和Adobe Campaign之间导入和导出数据。 要配置此集成，请提供以下详细信息：
 
-   * **[!UICONTROL Server]**： Microsoft Fabric Storage Server的URL。
+  * **[!UICONTROL Server]**： Microsoft Fabric Storage Server的URL。
 
-   * **[!UICONTROL Application ID]**：用于验证和访问Microsoft结构资源的应用程序的唯一标识符。
+  * **[!UICONTROL Application ID]**：用于验证和访问Microsoft结构资源的应用程序的唯一标识符。
 
-   * **[!UICONTROL Client secret]**：与应用程序关联的身份验证密钥或密码，需要安全连接到Microsoft Fabric。
+  * **[!UICONTROL Client secret]**：与应用程序关联的身份验证密钥或密码，需要安全连接到Microsoft Fabric。

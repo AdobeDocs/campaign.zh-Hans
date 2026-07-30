@@ -23,7 +23,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: 3154
+source-wordcount: 3055
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 2%
 
 * [个性化](../send/personalize.md)元素的数量和类型：电子邮件中的个性化会从数据库中提取每个收件人的数据。 对于许多个性化元素，准备投放所需的数据量会更高。 这会降低平台的运行速度。 在[本节](../send/personalize.md#perso-guardrails)中了解有关个性化护栏的更多信息。
 
-* 服务器负载：当营销服务器同时处理多个不同的任务时，可能会降低性能。 营销服务器需要协调所有投放的所有传入和传出数据，以确保数据正确且及时。
+* 服务器负载：当营销服务器同时处理多个不同的任务时，可能会降低性能。营销服务器需要协调所有投放的所有传入和传出数据，以确保数据正确且及时。
 要避免这种情况，请与团队的其他成员协调投放计划，以确保最佳性能。
 
 * 工作流执行：监测工作流对于避免平台性能问题至关重要。 遵循本文档[&#128279;](../../automation/workflow/workflow-best-practices.md#execution-and-performance)中列出的准则。
@@ -65,8 +65,8 @@ ht-degree: 2%
 
 * 如果存在无效地址列表，Adobe建议通过&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**，将其导入隔离表。
 
-* 在投放分析过程中，默认情况下会排除其地址被隔离的收件人：这些收件人未定位。 这会加快投放速度，因为错误率对投放速度有显着的影响。 例如，当收件箱已满或地址不存在时，可以隔离电子邮件地址。
-Adobe Campaign会根据返回的错误类型管理错误地址。 [了解有关隔离的更多信息](../send/quarantines.md)
+* 在投放分析过程中，默认情况下会排除其地址被隔离的收件人：这些收件人未定位。这会加快投放速度，因为错误率对投放速度有显着的影响。例如，当收件箱已满或地址不存在时，可以隔离电子邮件地址。
+Adobe Campaign会根据返回的错误类型管理错误地址。[了解有关隔离的更多信息](../send/quarantines.md)
 
 * 如果无效地址的比率过高，某些互联网访问提供商会自动将电子邮件视为垃圾邮件。 因此，隔离可让您避免被这些提供商添加到阻止列表。
 

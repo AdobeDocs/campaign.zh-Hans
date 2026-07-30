@@ -301,10 +301,10 @@ ht-degree: 34%
 
   **[!UICONTROL Enumerations]**&#x200B;类型计算字段可以包括4个条件：
 
-   * **[!UICONTROL Keep the source value]**&#x200B;将源值还原到目标而不更改它。
-   * **[!UICONTROL Use the following value]**&#x200B;允许您为未定义的源值输入默认目标值。
-   * **[!UICONTROL Generate a warning and continue]**&#x200B;警告用户无法更改源值。
-   * **[!UICONTROL Generate an error and reject the line]**&#x200B;阻止计算和导入该行。
+  * **[!UICONTROL Keep the source value]**&#x200B;将源值还原到目标而不更改它。
+  * **[!UICONTROL Use the following value]**&#x200B;允许您为未定义的源值输入默认目标值。
+  * **[!UICONTROL Generate a warning and continue]**&#x200B;警告用户无法更改源值。
+  * **[!UICONTROL Generate an error and reject the line]**&#x200B;阻止计算和导入该行。
 
 单击&#x200B;**[!UICONTROL Detail of calculated field]**&#x200B;可查看插入字段的详细信息。
 

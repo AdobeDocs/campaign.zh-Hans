@@ -22,7 +22,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: 2287
+source-wordcount: 2231
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 操作员可以通过多种方式批准：
 
-* 来自通知消息。 电子邮件中的链接可让操作员通过Web浏览器访问Campaign。 连接后，查看者可以选择是否批准内容。
+* 来自通知消息。电子邮件中的链接可让操作员通过Web浏览器访问Campaign。连接后，查看者可以选择是否批准内容。
   ![](assets/approval-content-email.png)
 
 * 从营销活动仪表板。
@@ -204,8 +204,8 @@ ht-degree: 1%
 
    * Adobe Campaign客户端控制台中的&#x200B;**[!UICONTROL Available content]**&#x200B;链接。
    * 通知消息中的链接。
-操作员可在将内容提交到活动负责人之前添加评论。
-通知消息允许审阅人批准或拒绝内容。
+     操作员可在将内容提交到活动负责人之前添加评论。
+     通知消息允许审阅人批准或拒绝内容。
 
 #### 外部内容审批 {#external-content-approval}
 

@@ -23,7 +23,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: 695
+source-wordcount: 697
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Campaign文件夹是资源管理器树中的节点。 它们根据其类型，�
 * **定义并应用命名约定**，例如，您可以按字母顺序命名工作流，以便工作流按执行顺序排序，例如：
 
   A1 — 导入收件人，从10:00开始；
-A2 — 导入票证，从11:00开始
+  A2 — 导入票证，11:00开始。
 
 ## 创建文件夹{#create-a-folder}
 

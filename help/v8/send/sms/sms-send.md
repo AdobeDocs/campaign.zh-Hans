@@ -16,8 +16,8 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: 111
-ht-degree: 3%
+source-wordcount: 99
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 验证短信后，您现在可以将其发送给受众。
 
-1. 单击 **[!UICONTROL Send]** 按钮。
+1. 单击&#x200B;**[!UICONTROL Send]**&#x200B;按钮。
 在打开的窗口中，选择适合您的正确操作。
 
    在以下示例中，我们选择&#x200B;**[!UICONTROL Deliver it as soon as possible]**，将显示&#x200B;**[!UICONTROL Analyze]**&#x200B;按钮。 我们单击该&#x200B;**[!UICONTROL Analyze]**&#x200B;按钮。

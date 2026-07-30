@@ -172,7 +172,7 @@ HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以
 
   可通过Adobe Campaign层次结构的&#x200B;**[!UICONTROL Resources > Online]**&#x200B;节点访问公共资源。 它们分组在库中，可以包含在电子邮件中，但也可以用于营销活动或任务，或者用于内容管理。
 
-* 与Adobe Experience Cloud共享的资源。 请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=zh-Hans)。
+* 与Adobe Experience Cloud共享的资产。 请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=zh-Hans)。
 
 ### 插入和管理图像 {#manage-images}
 

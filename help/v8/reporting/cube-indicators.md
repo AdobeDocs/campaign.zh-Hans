@@ -21,7 +21,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: 715
 ht-degree: 3%
 
 ---
@@ -107,8 +107,8 @@ ht-degree: 3%
 
 为此，请选中&#x200B;**[!UICONTROL Enable binning]**&#x200B;选项。 [了解详情](customize-cubes.md#data-binning)。
 
-1. 添加&#x200B;**日期**&#x200B;类型维度。 在这里，我们要显示收件人用户档案创建日期。 为此，请单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择收件人表中的&#x200B;**[!UICONTROL Creation date]**&#x200B;字段。
-您可以自定义日期显示模式。 要执行此操作，请选择要使用的层次和要生成的级别：
+1. 添加&#x200B;**日期**&#x200B;类型维度。在这里，我们要显示收件人用户档案创建日期。为此，请单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择收件人表中的&#x200B;**[!UICONTROL Creation date]**&#x200B;字段。
+您可以自定义日期显示模式。要执行此操作，请选择要使用的层次和要生成的级别：
 
 ![](assets/cube-date-dimension.png)
 

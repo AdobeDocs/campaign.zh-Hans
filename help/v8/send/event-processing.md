@@ -89,8 +89,8 @@ ht-degree: 1%
 
 * **挂起**
 
-   * 待处理事件可以是刚刚收集且尚未处理的事件。 **[!UICONTROL Number of errors]**&#x200B;列显示值0。 尚未链接电子邮件模板。
-   * 待处理事件也可以是已处理但确认有误的事件。 **[!UICONTROL Number of errors]**&#x200B;列显示的值不是0。 要了解何时再次处理此事件，请参阅&#x200B;**[!UICONTROL Process requested on]**&#x200B;列。
+  * 待处理事件可以是刚刚收集且尚未处理的事件。 **[!UICONTROL Number of errors]**&#x200B;列显示值0。 尚未链接电子邮件模板。
+  * 待处理事件也可以是已处理但确认有误的事件。 **[!UICONTROL Number of errors]**&#x200B;列显示的值不是0。 要了解何时再次处理此事件，请参阅&#x200B;**[!UICONTROL Process requested on]**&#x200B;列。
 
 * **待处理投放**
 该事件已处理，并且已链接投放模板。 电子邮件正在等待投放，并且已应用经典投放流程。 有关详细信息，您可以打开投放。

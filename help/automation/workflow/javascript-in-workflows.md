@@ -377,14 +377,14 @@ for each (var rcp in res.recipient)
 
 * 您可以内联触发工作流，即从&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动的主脚本中触发。
 * 另一个工作流完成后，您可以触发该工作流：
-   * 向初始工作流的&#x200B;**[!UICONTROL End]**&#x200B;活动添加初始化脚本。
-   * 在目标工作流的开头添加&#x200B;**[!UICONTROL External signal]**&#x200B;活动。
+  * 向初始工作流的&#x200B;**[!UICONTROL End]**&#x200B;活动添加初始化脚本。
+  * 在目标工作流的开头添加&#x200B;**[!UICONTROL External signal]**&#x200B;活动。
 
-     完成初始工作流后，将发布事件。 将激活传出过渡并填充事件变量。 然后，目标工作流接收该事件。
+    完成初始工作流后，将发布事件。 将激活传出过渡并填充事件变量。 然后，目标工作流接收该事件。
 
-     >[!TIP]
-     >
-     >作为最佳实践，在向活动添加脚本时，请用双连字符将活动名称括起来，例如`-- end --`。 [了解更多](workflow-best-practices.md)工作流最佳实践。
+    >[!TIP]
+    >
+    >作为最佳实践，在向活动添加脚本时，请用双连字符将活动名称括起来，例如`-- end --`。 [了解更多](workflow-best-practices.md)工作流最佳实践。
 
 `PostEvent`方法的语法：
 
@@ -624,9 +624,9 @@ xtk.session.Write(
 
 * [SOAP调用示例](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=zh-Hans){target="_blank"}
 * 方法：
-   * [创建](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=zh-Hans){target="_blank"}
-   * [删除收藏集](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=zh-Hans){target="_blank"}
-   * [执行查询](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=zh-Hans){target="_blank"}
-   * [Postevent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=zh-Hans){target="_blank"}
-   * [写入](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=zh-Hans){target="_blank"}
+  * [创建](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=zh-Hans){target="_blank"}
+  * [删除收藏集](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=zh-Hans){target="_blank"}
+  * [执行查询](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=zh-Hans){target="_blank"}
+  * [Postevent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=zh-Hans){target="_blank"}
+  * [写入](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=zh-Hans){target="_blank"}
 * [logInfo函数](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=zh-Hans){target="_blank"}

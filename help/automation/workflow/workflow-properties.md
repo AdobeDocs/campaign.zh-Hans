@@ -80,8 +80,8 @@ ht-degree: 33%
 
   此字段可让您定义在工作流任务出错时要执行的操作。 提供了两个可能的选项：
 
-   * **[!UICONTROL Stop the process]**：工作流已自动暂停。 工作流状态更改为&#x200B;**[!UICONTROL Failed]**。 问题解决后，使用&#x200B;**[!UICONTROL Start]**&#x200B;或&#x200B;**[!UICONTROL Restart]**&#x200B;按钮重新启动工作流。
-   * **[!UICONTROL Ignore]**：触发错误的任务状态更改为&#x200B;**[!UICONTROL Failed]**，但工作流保留&#x200B;**[!UICONTROL Started]**&#x200B;状态。 此配置与定期任务相关：如果分支包含调度程序，它将在下次执行工作流时正常启动。
+  * **[!UICONTROL Stop the process]**：工作流已自动暂停。 工作流状态更改为&#x200B;**[!UICONTROL Failed]**。 问题解决后，使用&#x200B;**[!UICONTROL Start]**&#x200B;或&#x200B;**[!UICONTROL Restart]**&#x200B;按钮重新启动工作流。
+  * **[!UICONTROL Ignore]**：触发错误的任务状态更改为&#x200B;**[!UICONTROL Failed]**，但工作流保留&#x200B;**[!UICONTROL Started]**&#x200B;状态。 此配置与定期任务相关：如果分支包含调度程序，它将在下次执行工作流时正常启动。
 
 * **[!UICONTROL Consecutive errors]**
 

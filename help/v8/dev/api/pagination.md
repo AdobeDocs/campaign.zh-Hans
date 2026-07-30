@@ -30,7 +30,7 @@ ht-degree: 1%
 
 ***示例请求***
 
-用于显示配置文件资源1条记录的示例GET请求。
+显示配置文件资源1条记录的示例GET请求。
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile?_lineCount=1 \

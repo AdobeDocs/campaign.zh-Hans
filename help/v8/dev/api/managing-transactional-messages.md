@@ -34,7 +34,7 @@ ht-degree: 1%
 例如，您希望每当客户在购物车中购买产品之前离开您的网站时，都会触发“购物车放弃”事件。 要执行此操作，作为Web开发人员，您必须使用REST事务型消息API。
 
 1. 根据POST方法发送请求，这会触发事务性事件的[发送](#sending-a-transactional-event)。
-1. 对POST请求的响应包含一个主键，用于通过GET请求发送一个或多个请求。 然后，即可获取[事件状态](#transactional-event-status)。
+1. 对POST请求的响应包含主键，该主键允许您通过GET请求发送一个或多个请求。 然后，即可获取[事件状态](#transactional-event-status)。
 
 ## 发送事务性事件 {#sending-a-transactional-event}
 

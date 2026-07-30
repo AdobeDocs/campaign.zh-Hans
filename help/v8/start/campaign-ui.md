@@ -133,7 +133,7 @@ The web access interface is similar to the console interface. From a browser, yo
 
 ## Campaign Web 用户界面 {#ac-web-ui}
 
-从v8.6.1版本开始，Campaign v8用户可以通过Adobe Experience Cloud中央用户界面访问Web环境。 Experience Cloud 是 Adobe 的数字营销应用程序、产品和服务的集成系列。 通过其直观的界面，您可以快速访问云应用程序、产品功能和服务。
+从v8.6.1版本开始，Campaign v8用户有权访问Web环境，该环境可通过集中Adobe Experience Cloud用户界面访问。 Experience Cloud 是 Adobe 的数字营销应用程序、产品和服务的集成系列。 通过其直观的界面，您可以快速访问云应用程序、产品功能和服务。
 
 ![Adobe Campaign Web 用户界面主页](assets/ac-web-home.png)
 
@@ -153,11 +153,11 @@ The web access interface is similar to the console interface. From a browser, yo
 
 * 对于Campaign客户端控制台界面，支持的语言包括：
 
-   * 英语（英国）
-   * 英语（美国）
-   * 法语
-   * 德语
-   * 日语
+  * 英语（英国）
+  * 英语（美国）
+  * 法语
+  * 德语
+  * 日语
 
 
   >[!CAUTION]

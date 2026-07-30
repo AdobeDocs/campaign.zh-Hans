@@ -91,9 +91,9 @@ ht-degree: 2%
 
 ### 检索过滤器元数据
 
-每个资源都可以使用过滤器。 要确定与资源关联的过滤器，您需要对资源元数据执行GET请求。 此请求会返回URL，其中为给定资源定义了所有过滤器。 有关元数据的详细信息，请参阅[此章节](metadata-mechanism.md)。
+每个资源都可以使用过滤器。 要标识与资源关联的过滤器，您需要对资源元数据执行GET请求。 此请求会返回URL，其中为给定资源定义了所有过滤器。 有关元数据的详细信息，请参阅[此章节](metadata-mechanism.md)。
 
-要识别过滤器的元数据并确定其使用方式，您必须对之前返回的URL执行GET请求。
+要识别过滤器的元数据并确定其使用方式，必须对之前返回的URL执行GET请求。
 
 <br/>
 
@@ -345,7 +345,7 @@ Adobe Campaign REST API可以计算请求中的记录数。 为此，请使用&#
 
 ***示例请求***
 
-要计数其&#x200B;**messageType**&#x200B;值等于“sms”的所有服务，请使用&#x200B;**byChannel**&#x200B;筛选器执行GET请求。
+要计算其值为&#x200B;**messageType**&#x200B;且等于“sms”的所有服务，请使用&#x200B;**byChannel**&#x200B;筛选器执行GET请求。
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel?channel=sms \
@@ -410,7 +410,7 @@ Adobe Campaign REST API可以计算请求中的记录数。 为此，请使用&#
 
 ***示例请求***
 
-用于显示配置文件资源1条记录的示例GET请求。
+显示配置文件资源1条记录的示例GET请求。
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile?_lineCount=1 \

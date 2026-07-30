@@ -24,7 +24,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: 1077
+source-wordcount: 1078
 ht-degree: 3%
 
 ---
@@ -134,7 +134,7 @@ Campaign和X之间的同步通过专门的技术工作流进行管理。 这些�
 
 **[!UICONTROL Synchronization of Twitter accounts]**&#x200B;技术工作流在Adobe Campaign中同步X帐户。 此工作流可恢复X关注者的列表，以便您可以向他们发送私信。 [了解详情](../send/twitter.md#direct-tw-messages)
 
-默认情况下，此工作流在每周四7:30AM触发。 在实施此集成时，您可以随时使用&#x200B;**[!UICONTROL Execute pending task(s) now]**&#x200B;选项启动工作流。  您还可以编辑调度程序以更改工作流触发频率。 请参阅[此页面](../../automation/workflow/scheduler.md)以了解详情。
+默认情况下，此工作流于每星期四早上7:30触发。 在实施此集成时，您可以随时使用&#x200B;**[!UICONTROL Execute pending task(s) now]**&#x200B;选项启动工作流。  您还可以编辑调度程序以更改工作流触发频率。 请参阅[此页面](../../automation/workflow/scheduler.md)以了解详情。
 
 >[!CAUTION]
 >

@@ -6,8 +6,8 @@ feature: Workflows
 role: User
 source-git-commit: 567c2e84433caab708ddb9026dda6f9cb717d032
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 2%
+source-wordcount: '200'
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 2%
   <tr> 
    <td> <span class="uicontrol">更新事件状态</span> <br /> </td> 
    <td> <span class="uicontrol">updateEventsStatus</span> <br /> </td> 
-   <td> 利用此工作流，可为事件分配状态。 事件状态如下： <br /> 
+   <td> 利用此工作流，可为事件分配状态。事件状态如下： <br /> 
     <ul> 
      <li> <p><strong>挂起</strong>：事件在队列中。 尚未为其关联任何消息模板。</p> </li> 
      <li> <p><strong>待处理投放</strong>：事件在队列中，已为其关联消息模板，该投放当前正在处理该消息模板。</p> </li> 

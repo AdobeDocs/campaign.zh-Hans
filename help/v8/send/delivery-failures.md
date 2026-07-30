@@ -29,7 +29,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: 3442
+source-wordcount: 3422
 ht-degree: 6%
 
 ---
@@ -704,7 +704,7 @@ SR Generic DELIVRD 000|#MESSAGE#
 * 错误消息的第三部分(**DELIVRD**)对应于使用SMS外部帐户中定义的状态提取正则表达式从SR检索到的状态代码。
 
   此正则表达式在外部帐户的&#x200B;**[!UICONTROL SMSC specificities]**&#x200B;选项卡中指定。
-默认情况下，正则表达式提取&#x200B;**SMPP 3.4规范**&#x200B;的&#x200B;**附录B**&#x200B;部分定义的&#x200B;**stat：**&#x200B;字段。
+  默认情况下，正则表达式提取&#x200B;**SMPP 3.4规范**&#x200B;的&#x200B;**附录B**&#x200B;部分定义的&#x200B;**stat：**&#x200B;字段。
 
 * 错误消息的第四部分(**000**)对应于使用SMS外部帐户中定义的错误代码提取正则表达式从SR提取的错误代码。
 

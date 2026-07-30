@@ -33,7 +33,7 @@ ht-degree: 0%
 >[!NOTE]
 >* 该集成仅支持静态图像。 其他类型的内容无法个性化。
 >
->* 作为托管Cloud Services用户，[联系Adobe](../start/campaign-faq.md#support)以使用Campaign实施Experience Cloud触发器。
+>* 作为托管Cloud Services用户，[联系Adobe](../start/campaign-faq.md#support)以通过Campaign实施Experience Cloud触发器。
 
 Adobe Target可以使用以下类型的数据：
 

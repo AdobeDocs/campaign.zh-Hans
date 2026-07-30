@@ -88,21 +88,21 @@ ht-degree: 2%
 
   您还可以查看每个活动的执行日志和详细信息。 可通过两种方式来做到这一点：
 
-   1. 选择目标活动并单击&#x200B;**[!UICONTROL Display the tasks and the log]**&#x200B;图标。
+  1. 选择目标活动并单击&#x200B;**[!UICONTROL Display the tasks and the log]**&#x200B;图标。
 
-      ![](assets/s_user_segmentation_show_logs.png)
+     ![](assets/s_user_segmentation_show_logs.png)
 
-      图表的下部分显示两个选项卡：“日志”和“任务”。
+     图表的下部分显示两个选项卡：“日志”和“任务”。
 
-      在图表中选定的活动在日志和任务列表中充当筛选器。
+     在图表中选定的活动在日志和任务列表中充当筛选器。
 
-      ![](assets/s_user_segmentation_logs.png)
+     ![](assets/s_user_segmentation_logs.png)
 
-   1. 右键单击目标活动并选择&#x200B;**[!UICONTROL Display logs]**。
+  1. 右键单击目标活动并选择&#x200B;**[!UICONTROL Display logs]**。
 
-      ![](assets/s_user_segmentation_logs_menu.png)
+     ![](assets/s_user_segmentation_logs_menu.png)
 
-      日志会显示在单独的窗口中。
+     日志会显示在单独的窗口中。
 
 ## 清除日志 {#purging-the-logs}
 

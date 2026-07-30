@@ -87,7 +87,7 @@ Adobe Campaign操作员可以使用论坛来共享信息。 以下元素每个�
 * 浏览到Campaign资源管理器的&#x200B;**[!UICONTROL Administration > Production > Technical workflows > Campaign processes]**&#x200B;文件夹，并检查是否启动了&#x200B;**[!UICONTROL Jobs in discussion forums]**&#x200B;工作流且没有错误。
 * 检查投放日志：
 
-   * 在Adobe Campaign主页上，浏览到&#x200B;**[!UICONTROL Campaigns > Navigation > Deliveries]**，然后打开&#x200B;**[!UICONTROL Discussion forum notification]**&#x200B;投放。
-   * 在Campaign资源管理器中，浏览到&#x200B;**[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**，然后单击&#x200B;**[!UICONTROL Discussion forum notifications]**。
+  * 在Adobe Campaign主页上，浏览到&#x200B;**[!UICONTROL Campaigns > Navigation > Deliveries]**，然后打开&#x200B;**[!UICONTROL Discussion forum notification]**&#x200B;投放。
+  * 在Campaign资源管理器中，浏览到&#x200B;**[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]**，然后单击&#x200B;**[!UICONTROL Discussion forum notifications]**。
 
   在&#x200B;**[!UICONTROL Discussion forum notifications]**&#x200B;框中，在&#x200B;**[!UICONTROL Edit > Delivery]**&#x200B;选项卡中找到投放日志。 您还可以查看&#x200B;**[!UICONTROL Tracking > Log]**&#x200B;和&#x200B;**[!UICONTROL Exclusion causes]**&#x200B;选项卡。

@@ -79,15 +79,15 @@ Adobe Campaign 是 Adobe Experience Cloud 解决方案的一部分。 Campaign �
 
 * **如何使用 Adobe Experience Cloud 收集信息**
 
-   * Adobe Experience Cloud 解决方案使用 cookie 及网络信标（也称为标记或像素）之类的类似技术使您能够收集信息。 有关 Adobe Campaign 的 cookie 和跟踪功能的更多信息，请参阅[此部分](#tracking-capabilities)。
-   * 您还可以在移动应用程序中使用 Adobe Experience Cloud 技术。 有关使用Campaign发送移动投放的详细信息，请参阅[短信渠道](../send/sms/sms-channel.md)和移动应用渠道。
+  * Adobe Experience Cloud 解决方案使用 cookie 及网络信标（也称为标记或像素）之类的类似技术使您能够收集信息。 有关 Adobe Campaign 的 cookie 和跟踪功能的更多信息，请参阅[此部分](#tracking-capabilities)。
+  * 您还可以在移动应用程序中使用 Adobe Experience Cloud 技术。 有关使用Campaign发送移动投放的详细信息，请参阅[短信渠道](../send/sms/sms-channel.md)和移动应用渠道。
 
 * **用户对您使用 Adobe Experience Cloud 的隐私选择**
 
   Adobe 要求您提供客户隐私政策，其中描述：
 
-   * 关于 Adobe Experience Cloud 的隐私条例
-   * 用户如何可为收集或使用与 Adobe Experience Cloud 有关的信息设置首选项
+  * 关于 Adobe Experience Cloud 的隐私条例
+  * 用户如何可为收集或使用与 Adobe Experience Cloud 有关的信息设置首选项
 
 有关A dobe Experience Cloud 隐私的更多详细信息，请参阅[此页面](https://www.adobe.com/cn/privacy/marketing-cloud.html)。
 
@@ -97,7 +97,7 @@ Adobe Campaign 是 Adobe Experience Cloud 解决方案的一部分。 Campaign �
 * **个人数据**&#x200B;是指可以直接或间接识别生命个体的信息。
 * **敏感个人数据**&#x200B;是与个人的种族、政治观点、宗教信仰、犯罪背景、遗传信息、健康数据、性取向、生物识别信息以及贸易联盟会员资格相关的信息。
 
-将Campaign与其他Experience Cloud解决方案集成时，如果受众可以从一个系统传输到另一个系统，例如[Adobe Analytics](../connect/ac-aa.md)、[Experience Cloud Audiences](../start/shared-audiences.md)、Campaign Standard或通过[CRM Connector](../../automation/workflow/crm-connector.md)与其他解决方案集成，则需要格外注意个人数据保护。
+将Campaign与其他Experience Cloud解决方案集成时，如果受众可以从一个系统传输到另一个系统，例如[Adobe Analytics](../connect/ac-aa.md)、[Experience Cloud Audiences](../start/shared-audiences.md)、Campaign Standard，或者与其他解决方案集成，例如[CRM Connector](../../automation/workflow/crm-connector.md)，则需要格外注意个人数据保护。
 
 [主要法规](#privacy-regulations)是指管理数据的不同实体，如下所示：
 
@@ -184,8 +184,8 @@ Adobe Campaign 提供其他功能来促使您作为数据控制者为特定隐�
 * **会话** Cookie：**nlid** Cookie 包含发送到联系人的电子邮件的标识符 (**broadlogId**)，以及消息模板的标识符 (**deliveryId**)。 联系人单击由 Adobe Campaign 发送的电子邮件中包含的 URL 后即可添加标识符，让您能够跟踪他们在网络上的行为。 关闭浏览器时，将自动擦除会话 Cookie。 联系人可以将浏览器配置为拒绝 Cookie。
 
 * 两种&#x200B;**永久** Cookie：
-   * **UUID**（通用唯一标识符）Cookie 在 Adobe Experience Cloud 解决方案之间共享。 它仅会被设置一次并直到生成新值时才从客户端浏览器中消失。 通过使用这种 Cookie，您可以识别访问网站时与 Experience Cloud 解决方案发生交互的用户。 它可以通过登陆页（将未知客户活动关联到收件人）或投放进行存放。 这种 Cookie 的说明可在[此页面](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=zh-Hans#ec-cookies)中找到。
-   * **nllastdelid** Cookie（在 Campaign Classic 20.3 中引入）是永久 Cookie，包含用户在其中单击了链接的上一次投放的 **deliveryId**。 当缺失会话 Cookie 时，会使用此 Cookie 来标识将使用的跟踪表。
+  * **UUID**（通用唯一标识符）Cookie 在 Adobe Experience Cloud 解决方案之间共享。 它仅会被设置一次并直到生成新值时才从客户端浏览器中消失。 通过使用这种 Cookie，您可以识别访问网站时与 Experience Cloud 解决方案发生交互的用户。 它可以通过登陆页（将未知客户活动关联到收件人）或投放进行存放。 这种 Cookie 的说明可在[此页面](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=zh-Hans#ec-cookies)中找到。
+  * **nllastdelid** Cookie（在 Campaign Classic 20.3 中引入）是永久 Cookie，包含用户在其中单击了链接的上一次投放的 **deliveryId**。 当缺失会话 Cookie 时，会使用此 Cookie 来标识将使用的跟踪表。
 
 《通用数据保护条例》(GDPR) 等法规规定，公司在安装任何 Cookie 之前必须获得网站用户的同意。
 

@@ -18,8 +18,8 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
 workflow-type: tm+mt
-source-wordcount: 461
-ht-degree: 11%
+source-wordcount: 417
+ht-degree: 8%
 
 ---
 
@@ -31,12 +31,12 @@ Adobe Campaign附带几个连接器，允许您与外部应用程序通信、连
 
 ## 合并您的Adobe解决方案 {#gs-ac-integration}
 
-结合Adobe Experience Cloud解决方案以使其实施符合现代化要求。
+组合Adobe Experience Cloud解决方案以使其实施符合现代化要求。
 
 Campaign v8可与以下Adobe解决方案配合使用。 浏览链接以了解有关用例、配置和准则的更多信息：
 
 * Adobe Analytics。[了解详情](../connect/ac-aa.md)
-* Adobe Experience Cloud triggers. [了解详情](../connect/ac-triggers.md)
+* Adobe Experience Cloud触发器。 [了解详情](../connect/ac-triggers.md)
 * Adobe Experience Manager。 [了解详情](../connect/ac-aem.md)
 * Adobe Experience Platform。 [了解详情](../connect/ac-aep.md)
 * Adobe Journey Optimizer。 [了解详情](../connect/ac-ajo.md)
@@ -59,7 +59,7 @@ Campaign v8可与以下Adobe解决方案配合使用。 浏览链接以了解有
 您可以将Adobe Campaign平台连接到&#x200B;**CRM第三方系统**&#x200B;并同步数据：联系人、帐户、购买等。
 
 在跨渠道通信上激活您的CRM数据：了解如何将联系人从CRM系统传递到Adobe Campaign，以及如何将营销活动数据从Adobe Campaign共享回CRM系统。
-CRM连接器支持快速轻松地集成数据：Adobe Campaign提供了一个专用助手，用于从CRM中提供的表中收集和选择数据。 并且可确保双向同步处理，让整个系统中的数据随时保持最新。
+CRM连接器支持快速轻松地集成数据：Adobe Campaign提供了一个专用助手，用于从CRM中提供的表中收集和选择数据。这保证了双向同步，确保数据在整个系统中始终保持最新。
 
 在[此页面](crm.md)中了解如何将Campaign与Microsoft Dynamics 365和Salesforce.com集成
 

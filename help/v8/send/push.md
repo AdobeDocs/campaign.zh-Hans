@@ -125,13 +125,13 @@ ht-degree: 7%
 
    * **[!UICONTROL Interruption level]**:
 
-      * **[!UICONTROL Active]**：默认设置，系统立即显示通知，在屏幕上亮起，可以播放声音。 通知不会突破焦点模式。
+     * **[!UICONTROL Active]**：默认设置，系统立即显示通知，在屏幕上亮起，可以播放声音。 通知不会突破焦点模式。
 
-      * **[!UICONTROL Passive]**：系统将通知添加到通知列表，而不打开屏幕或播放声音。 通知不会突破焦点模式。
+     * **[!UICONTROL Passive]**：系统将通知添加到通知列表，而不打开屏幕或播放声音。 通知不会突破焦点模式。
 
-      * **[!UICONTROL Time sensitive]**&#x200B;系统立即显示通知，打开屏幕，可以播放声音并突破焦点模式。 此级别不需要Apple的特殊权限。
+     * **[!UICONTROL Time sensitive]**&#x200B;系统立即显示通知，打开屏幕，可以播放声音并突破焦点模式。 此级别不需要Apple的特殊权限。
 
-      * **[!UICONTROL Critical]**&#x200B;系统立即显示通知，在屏幕上亮起，并绕过静音开关或聚焦模式。 请注意，此级别需要Apple的特殊权限。
+     * **[!UICONTROL Critical]**&#x200B;系统立即显示通知，在屏幕上亮起，并绕过静音开关或聚焦模式。 请注意，此级别需要Apple的特殊权限。
 
    * **[!UICONTROL Relevance score]**：将相关性得分从0设置为100。 系统使用此选项对通知摘要中的通知进行排序。
 

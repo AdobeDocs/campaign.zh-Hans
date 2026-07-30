@@ -32,16 +32,16 @@ Adobe Campaign Managed Cloud Service目标和Source连接器允许Adobe Campaign
 
 * 使用Adobe Campaign Managed Cloud Services **目标连接**&#x200B;将Experience Platform区段发送到Adobe Campaign：
 
-   1. 访问Adobe Experience Platform目标目录并创建新的&#x200B;**[!UICONTROL Adobe Campaign Managed Cloud Services]**&#x200B;连接。
-   1. 提供要使用的Campaign实例的详细信息，并选择&#x200B;**[!UICONTROL Audience sync]**&#x200B;作为同步类型。
+  1. 访问Adobe Experience Platform目标目录并创建新的&#x200B;**[!UICONTROL Adobe Campaign Managed Cloud Services]**&#x200B;连接。
+  1. 提供要使用的Campaign实例的详细信息，并选择&#x200B;**[!UICONTROL Audience sync]**&#x200B;作为同步类型。
 
-      ![](assets/aep-audience-sync.png){width="800" align="center"}
+     ![](assets/aep-audience-sync.png){width="800" align="center"}
 
-   1. 选择要发送到Adobe Campaign的区段。
-   1. 在受众中配置要导出的属性。
-   1. 配置流后，即可将所选受众激活到Adobe Campaign中。
+  1. 选择要发送到Adobe Campaign的区段。
+  1. 在受众中配置要导出的属性。
+  1. 配置流后，即可将所选受众激活到Adobe Campaign中。
 
-      ![](assets/aep-destination.png){width="800" align="center"}
+     ![](assets/aep-destination.png){width="800" align="center"}
 
   有关如何配置目标的详细信息，请参阅[Adobe Campaign Managed Cloud Services连接文档](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}
 

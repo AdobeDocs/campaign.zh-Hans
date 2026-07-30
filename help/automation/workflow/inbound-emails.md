@@ -38,21 +38,21 @@ ht-degree: 1%
 
      ![](assets/email_rec_edit_1b.png)
 
-      * **[!UICONTROL POP3 server]**
+     * **[!UICONTROL POP3 server]**
 
-        pop3服务器的名称。
+       pop3服务器的名称。
 
-      * **[!UICONTROL POP3 account]**
+     * **[!UICONTROL POP3 account]**
 
-        用户的名称。
+       用户的名称。
 
-      * **[!UICONTROL Password]**
+     * **[!UICONTROL Password]**
 
-        用户帐户密码。
+       用户帐户密码。
 
-      * **[!UICONTROL Port]**
+     * **[!UICONTROL Port]**
 
-        POP3连接端口号。 默认端口为110。
+       POP3连接端口号。 默认端口为110。
 
    * **[!UICONTROL Stop as soon as email is processed]**
 

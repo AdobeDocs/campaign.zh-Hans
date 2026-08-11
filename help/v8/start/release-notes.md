@@ -4,25 +4,33 @@ description: 最新 Campaign v8 版本
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
 TQID: https://experienceleague.adobe.com/Zdo52RLQFbxlRNgE54yLDn3yAMmmOqxKyRhnCJa0Xwg
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: ffeb9430b382b598af412555b1b0a6ff42bc68d0
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: d5ef99fa-df0c-4153-bf94-105ad0724167
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 989cd72ab555a1b81042bbc043c246427e22a0d4
 workflow-type: tm+mt
-source-wordcount: 1747
-ht-degree: 6%
+source-wordcount: 1984
+ht-degree: 5%
 
 ---
 
 # 最新版本 {#latest-release}
 
 此页面列出了 Campaign v8（控制台）**最新版本**&#x200B;中的新增功能、改进和修复。 要详细了解 Campaign 版本和升级，请参阅[此页面](upgrades.md)。 其他版本列于本文档的先前版本部分。
+
+## 8.9.3版 {#release-8-9-3}
+
+_2026年8月11日_
+
+此版本包括若干产品改进和安全修复，其中包括将Adobe Analytics连接器升级到Analytics 2.0 API。
+
+>[!NOTE]
+>
+> 导航到&#x200B;**[!UICONTROL Help > About...]** [菜单](upgrades.md#version)以检查您是否拥有内部版本9835或更高版本。
+
+### Adobe Analytics连接器已升级到Analytics 2.0 API {#analytics-2-0-8-9-3}
+
+Adobe Analytics 1.4 API [即将结束生命周期](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol){target="_blank"}，因此，作为此版本的一部分，[Web Analytics连接器](../connect/ac-aa.md)已升级到Analytics 2.0 API。该连接器会将您的营销活动指标和分类数据发送到Adobe Analytics，支持再营销流程，并用于配置新的报表包。 作为托管客户，Adobe会为您处理此迁移 — 您无需进行配置。 升级确实会重新导入为连接器（**[!UICONTROL webAnalyticsSendMetrics]**&#x200B;和&#x200B;**[!UICONTROL webAnalyticsGetWebEvents]**）提供支持的内置技术工作流，并更新内置Analytics JavaScript文件，因此，如果您自定义了这些工作流或内置引用这些文件的自定义工作流，请在升级后重新应用并调整该自定义设置，因为它否则将被覆盖或中断。 作为最佳实践，请避免直接修改内置工作流 — 请改为在单独的自定义工作流中构建您的自定义项，以免将来升级时覆盖它。 升级完成后，验证您依赖的Adobe Analytics用例（量度导出、分类导出和再营销，如果适用），以确认数据按预期持续流动。
 
 ## 8.9.2版 {#release-8-9-2}
 
@@ -115,12 +123,12 @@ _2026 年 1 月 27 日_
 
 此版本附带了一组可在Campaign Web用户界面中使用的功能：
 
-* [多语言投放功能（GA）](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=zh-Hans){target="_blank"}
-* [事务性消息中的用户档案扩充(GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=zh-Hans){target="_blank"}
-* [Adobe Experience Manager实时副本和语言副本](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=zh-Hans){target="_blank"}
-* [内容实验 — A/B测试](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html?lang=zh-Hans){target="_blank"}
-* [持续传递活动](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html?lang=zh-Hans){target="_blank"}
-* [营销活动审批管理](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html?lang=zh-Hans){target="_blank"}
+* [多语言投放功能（GA）](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
+* [事务性消息中的用户档案扩充(GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
+* [Adobe Experience Manager实时副本和语言副本](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html){target="_blank"}
+* [内容实验 — A/B测试](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html){target="_blank"}
+* [持续传递活动](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
+* [营销活动审批管理](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
 
 请参阅Campaign Web UI [发行说明](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=zh-hans){target="_blank"}
 

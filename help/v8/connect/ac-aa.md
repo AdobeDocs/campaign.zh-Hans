@@ -18,10 +18,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 989cd72ab555a1b81042bbc043c246427e22a0d4
 workflow-type: tm+mt
-source-wordcount: 1429
-ht-degree: 63%
+source-wordcount: 1595
+ht-degree: 56%
 
 ---
 
@@ -52,6 +52,7 @@ ht-degree: 63%
 
 1. [在 Adobe Analytics 中创建报表包](#report-suite-analytics)
 1. [配置转化变量和成功事件](#configure-conversion-success)
+1. [创建分类集](#create-classification-set)
 1. [在Adobe Campaign中配置外部帐户](#external-account-ac)
 
 ## 创建Analytics报表包 {#report-suite-analytics}
@@ -127,7 +128,30 @@ ht-degree: 63%
 
 1. 完成后单击 **[!UICONTROL Save]**。
 
-配置报表包后，您需要在Adobe Campaign中配置&#x200B;**[!UICONTROL External accounts]**。
+## 创建分类集 {#create-classification-set}
+
+迁移到Adobe Analytics 2.0 API后，在Campaign中配置外部帐户之前，您还需要在Adobe Analytics中创建&#x200B;**[!UICONTROL Classification set]**。 此分类集将您刚刚创建的转化变量（内部营销活动名称）链接到报表包，以便当您在下一步中配置外部帐户时，Campaign可以自动发现并使用它。
+
+要创建分类集，请执行以下操作：
+
+1. 从[!DNL Adobe Analytics]顶部菜单栏中选择&#x200B;**[!UICONTROL Components]** > **[!UICONTROL Classification sets]**，然后单击&#x200B;**[!UICONTROL New]**。
+
+   ![](assets/analytics_connnector_16.png)
+
+1. 在&#x200B;**[!UICONTROL Add New Classification Set]**&#x200B;对话框中：
+
+   ![](assets/analytics_connnector_17.png)
+
+   * 输入分类集的&#x200B;**[!UICONTROL Name]**。
+   * 将&#x200B;**[!UICONTROL Type]**&#x200B;设置为&#x200B;**[!UICONTROL Primary]**。
+   * 在&#x200B;**[!UICONTROL Job notifications]**&#x200B;中，选择分类集作业成功或失败时应通知的人员，并提供相应的电子邮件地址。
+   * 在&#x200B;**[!UICONTROL Subscriptions]**&#x200B;中，选择您的报表包以及您在上一步中为内部营销活动名称创建的转化变量。
+
+1. 单击 **[!UICONTROL Save]**。
+
+有关分类集的详细信息，请参阅[Adobe Analytics文档](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/classifications/sets/create-set){target="_blank"}。
+
+配置报表包、转化变量、成功事件和分类集后，您需要在Adobe Campaign中配置&#x200B;**[!UICONTROL External accounts]**。
 
 ## 配置Campaign外部帐户 {#external-account-ac}
 

@@ -3,7 +3,7 @@ title: 电子邮件跟踪像素与 CNIL 指南
 description: 了解CNIL关于电子邮件跟踪像素的更新指南，以及可支持合规性工作的Adobe Campaign功能。
 version: Campaign v8, Campaign Classic v7
 hide: true
-source-git-commit: 6466434e6d91445dd12a81effde68d8ab6ba8960
+source-git-commit: 989cd72ab555a1b81042bbc043c246427e22a0d4
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 1%

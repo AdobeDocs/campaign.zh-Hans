@@ -7,9 +7,9 @@ level: Beginner
 keywords: 常见问题解答， Campaign v8，问题，回答，帮助，支持，故障排除
 version: Campaign v8
 exl-id: 8b4f6343-5dc5-4401-ad6f-9c1ddbb23168
-source-git-commit: da2274cfd19bb067fcc1e990360093f161d5638a
+source-git-commit: d25c5a40af9ac0594301f46f09a4cc07a8e1945e
 workflow-type: tm+mt
-source-wordcount: '11573'
+source-wordcount: '11541'
 ht-degree: 12%
 
 ---
@@ -147,12 +147,6 @@ Campaign提供了多种定位方法以便为消息选择正确的受众：
 **相关主题：**
 
 [电子邮件设计和验证](../send/email.md) | [创建第一个投放](create-message.md) | [传递模板](../send/create-templates.md) | [个性化内容](../send/personalize.md)
-
-+++
-
-+++ 如何翻译错误消息？
-
-错误消息是用外文显示的？ [此页面](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=zh-Hans){target="_blank"}中列出了所有错误消息及其译文。
 
 +++
 

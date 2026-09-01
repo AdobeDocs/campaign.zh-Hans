@@ -92,7 +92,7 @@ Adobe Campaign会定期发布产品版本，以提高Campaign基础架构的性�
 
 要获悉新的Experience Cloud解决方案版本及其内容，请订阅[Adobe优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html){target="_blank"}通信。
 
-您还可以访问[Campaign社区](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"}以获悉版本更新。
+您还可以访问[Campaign社区](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?profile.language=zh-Hans&style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"}以获悉版本更新。
 
 ### 为什么我的组织需要升级？ {#upgrades-1}
 

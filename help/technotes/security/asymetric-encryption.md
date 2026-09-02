@@ -4,9 +4,9 @@ title: 技术说明 — Adobe Campaign中的非对称加密和解密
 description: 技术说明 — Adobe Campaign中的非对称加密和解密
 hide: true
 exl-id: 6ee8b05b-2a46-4adf-a036-82fdd4809d0d
-source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
+source-git-commit: 2425b8e500380076d56bccec41ac821f7c867d92
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '155'
 ht-degree: 6%
 
 ---
@@ -53,5 +53,5 @@ var decrypted = rsaPrivateDecrypt(
 
 **其他资源**
 
-* [开始使用 [!DNL Campaign] API](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/api){target="_blank"}
-* [Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=zh-Hans){target="_blank"}
+* [开始使用 [!DNL Campaign] API](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/api){target="_blank"}
+* [Campaign JSAPI文档](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}

@@ -53,7 +53,7 @@ Adobe Campaign v8是一个功能强大的跨渠道营销自动化平台，可帮
 
 作为管理员用户，请访问Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/zh-hans/campaign.html){target="_blank"}下载Adobe Campaign。
 
-在此页面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans){target="_blank"}上了解有关分发中心[的更多信息。
+在此页面[&#128279;](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans){target="_blank"}上了解有关分发中心的更多信息。
 
 +++
 
@@ -318,7 +318,7 @@ Campaign v8基于现代云原生架构而构建，具有显着改进：
 
 **对于Campaign Classic v7用户：**&#x200B;了解[从v7过渡到v8](v7-to-v8.md)，包括架构更改、功能不可用和迁移注意事项。
 
-**对于Campaign Standard用户：**&#x200B;了解到v8](acs-to-v8.md)和[Campaign Standard迁移指南](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/acs-migration){target="_blank"}的[过渡路径。
+**对于Campaign Standard用户：**&#x200B;了解到v8[&#128279;](acs-to-v8.md)和[Campaign Standard迁移指南](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/acs-migration){target="_blank"}的过渡路径。
 
 **相关主题：**
 
@@ -362,7 +362,7 @@ Campaign v8是Adobe的平台，非常适合需要大量促销活动（每小时2
 * 无基础架构管理或IT开销
 * 内置的高可用性和灾难恢复
 
-了解有关[Campaign v8架构](../architecture/architecture.md)以及Campaign v8与Classic v7](../start/v7-to-v8.md)之间[差异的更多信息。
+了解有关[Campaign v8架构](../architecture/architecture.md)以及Campaign v8与Classic v7[&#128279;](../start/v7-to-v8.md)之间差异的更多信息。
 
 +++
 
@@ -1651,7 +1651,7 @@ Campaign v8提供SOAP API（客户端控制台操作）、REST API（现代集�
 
 **常见用途：**&#x200B;与CRM/ERP集成、自动执行营销活动、同步数据、生成监控解决方案、创建外部界面。
 
-**访问：**[Campaign v8 API文档](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}
+**访问：**&#x200B;[Campaign v8 API文档](https://experienceleague.adobe.com/en/tools/campaign-api){target="_blank"}
 
 +++
 

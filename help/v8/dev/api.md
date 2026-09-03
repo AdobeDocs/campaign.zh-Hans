@@ -18,9 +18,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 2425b8e500380076d56bccec41ac821f7c867d92
 workflow-type: tm+mt
-source-wordcount: 320
+source-wordcount: 314
 ht-degree: 10%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 10%
 >
 >根据您的部署模型，您还可以将REST API与Campaign v8结合使用。 [了解详情](../dev/api/get-started-apis.md)。
 
-您可以使用[Campaign JavaScript API](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=zh-Hans){target="_blank"}在Campaign云数据库中写入或从数据库中读取：
+您可以使用[Campaign JavaScript API](https://experienceleague.adobe.com/zh-hans/tools/campaign-api){target="_blank"}在Campaign云数据库中写入或从数据库中读取：
 
 * 特定于业务的API，允许您对每个对象执行操作：投放、工作流、订阅等。 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html?lang=zh-Hans){target="_blank"}以了解详情。
 * 使用`queryDef`和`NLWS`对象查询数据模型数据的通用数据访问API。 在[使用queryDef](query-api.md)查询数据库中了解更多信息。
@@ -68,4 +68,4 @@ ht-degree: 10%
 
 <!-- * [Query the database with queryDef](query-api.md)-->
 * [数据模型最佳实践](datamodel-best-practices.md)
-* [Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=zh-Hans){target="_blank"}
+* [Campaign JSAPI文档](https://experienceleague.adobe.com/zh-hans/tools/campaign-api){target="_blank"}

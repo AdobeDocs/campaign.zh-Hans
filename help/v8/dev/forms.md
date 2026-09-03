@@ -18,9 +18,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 2425b8e500380076d56bccec41ac821f7c867d92
 workflow-type: tm+mt
-source-wordcount: 2571
+source-wordcount: 2569
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ ht-degree: 0%
 
 默认情况下，每个字段显示在一行中，并占用所有可用空间，具体取决于数据类型。
 
-[Campaign Classic v7文档](https://experienceleague.adobe.com/developer/campaign-api/api/control-Button.html?lang=zh-Hans){target="_blank"}中列出了所有表单属性。
+[Campaign Classic v7文档](https://experienceleague.adobe.com/zh-hans/tools/campaign-api){target="_blank"}中列出了所有表单属性。
 
 ## 格式化 {#formatting}
 

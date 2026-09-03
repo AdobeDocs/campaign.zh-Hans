@@ -7,9 +7,9 @@ level: Beginner
 keywords: 常见问题解答， Campaign v8，问题，回答，帮助，支持，故障排除
 version: Campaign v8
 exl-id: 8b4f6343-5dc5-4401-ad6f-9c1ddbb23168
-source-git-commit: d25c5a40af9ac0594301f46f09a4cc07a8e1945e
+source-git-commit: 2425b8e500380076d56bccec41ac821f7c867d92
 workflow-type: tm+mt
-source-wordcount: '11541'
+source-wordcount: '11539'
 ht-degree: 12%
 
 ---
@@ -1651,7 +1651,7 @@ Campaign v8提供SOAP API（客户端控制台操作）、REST API（现代集�
 
 **常见用途：**&#x200B;与CRM/ERP集成、自动执行营销活动、同步数据、生成监控解决方案、创建外部界面。
 
-**访问：**&#x200B;[Campaign v8 API文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans){target="_blank"}
+**访问：**&#x200B;[Campaign v8 API文档](https://experienceleague.adobe.com/zh-hans/tools/campaign-api){target="_blank"}
 
 +++
 
@@ -1820,7 +1820,7 @@ Campaign的审核记录会记录删除事件和新用户档案的创建，以展
 
 查找详细的技术文档和开发人员资源。
 
-* **[Campaign API](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans){target="_blank"}** — 完整API参考文档
+* **[Campaign API](https://experienceleague.adobe.com/zh-hans/tools/campaign-api){target="_blank"}** — 完整API参考文档
 * **[兼容性矩阵](compatibility-matrix.md)** — 支持的系统和版本
 * **[版本和升级常见问题解答](upgrades.md)** — 检查您的版本并了解升级情况
 

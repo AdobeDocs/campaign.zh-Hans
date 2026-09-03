@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
 workflow-type: tm+mt
-source-wordcount: 2028
+source-wordcount: 2096
 ht-degree: 1%
 
 ---
@@ -71,6 +71,10 @@ ht-degree: 1%
 >[!IMPORTANT]
 >
 >出于隐私原因，我们建议对所有外部资源使用HTTPS。
+
+>[!IMPORTANT]
+>
+>8.9.3版包括对外部URL允许列表的更新。 确保在消息内容中使用的域已添加到实例的已批准允许列表，以便资源可以继续加载而不会中断。 作为Campaign管理员，使用控制面板添加和管理允许列表的URL。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
 
 消息的内容在投放配置窗口的下半部分中定义。
 

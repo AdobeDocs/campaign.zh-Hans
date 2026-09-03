@@ -15,10 +15,10 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
 workflow-type: tm+mt
-source-wordcount: 559
-ht-degree: 17%
+source-wordcount: 638
+ht-degree: 15%
 
 ---
 
@@ -63,6 +63,10 @@ ht-degree: 17%
 * **[!UICONTROL Unsubscription link]**：插入链接以取消订阅所有投放（订阅）。 默认关联内容为：“您之所以收到这封邮件，是因为您一直与&#x200B;***您的组织名称***&#x200B;或关联公司有联系。 要不再接收来自&#x200B;***您的组织名称***&#x200B;的邮件，请单击此处。”
 
 ## 创建自定义个性化块 {#create-custom-personalization-blocks}
+
+>[!IMPORTANT]
+>
+>8.9.3版包括对外部URL允许列表的更新。 如果自定义个性化块引用外部URL（例如，外部托管的图像），请确保将域添加到实例的已批准允许列表，以便资源可以持续加载而不会出现中断。 作为Campaign管理员，使用控制面板添加和管理允许列表的URL。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
 
 您可以定义要从个性化图标插入的新个性化内容块。
 

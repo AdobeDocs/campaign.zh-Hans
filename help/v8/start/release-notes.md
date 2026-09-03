@@ -13,9 +13,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 7e14d410aba444e792a24c99a843f122a8fcedc6
+source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
 workflow-type: tm+mt
-source-wordcount: 1998
+source-wordcount: 2098
 ht-degree: 6%
 
 ---
@@ -26,13 +26,19 @@ ht-degree: 6%
 
 ## 8.9.3版 {#release-8-9-3}
 
-_2026年8月11日_
+_2026 年 8 月 11 日_
 
 <!-- CONFIRM: is a client console upgrade required for 8.9.3? If yes, add the >[!CAUTION] notice used in 8.9.2/8.9.1. If no, add an explicit one-line "no console upgrade required for this release" statement so the absence reads as intentional. -->
 
 ### 安全性改进 {#security-8-9-3}
 
 此版本包括安全修复，可加强Campaign环境的整体安全状况。 作为托管客户，这些修复在升级过程中由Adobe应用，无需您执行任何操作。
+
+### 外部URL允许列表更新 {#url-allow-list-update-8-9-3}
+
+此版本包括了对用于投放允许列表和附件的外部URL内容的更新。 确保将您当前引用的所有域添加到实例的已批准允许列表中。
+
+作为Campaign管理员，使用控制面板将当前在投放中使用的外部URL添加到允许列表，并对今后的任何新外部URL遵循相同的过程。 请在2026年9月5日之前完成此活动，以避免对受影响的投放产生影响。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
 
 ### Adobe Analytics连接器已升级到Analytics 2.0 API {#analytics-2-0-8-9-3}
 

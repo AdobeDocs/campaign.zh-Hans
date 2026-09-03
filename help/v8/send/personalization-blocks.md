@@ -7,18 +7,14 @@ level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 214ad693-d456-47ec-a9c8-199ba23c3d9c
 TQID: https://experienceleague.adobe.com/741rGWSBuFksbOfXbuszEXq56DOI-Pfg8tEiHQLhQf8
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
 workflow-type: tm+mt
-source-wordcount: 559
-ht-degree: 17%
+source-wordcount: 638
+ht-degree: 15%
 
 ---
 
@@ -64,6 +60,10 @@ ht-degree: 17%
 
 ## 创建自定义个性化块 {#create-custom-personalization-blocks}
 
+>[!IMPORTANT]
+>
+>8.9.3版包括对外部URL允许列表的更新。 如果自定义个性化块引用外部URL（例如，外部托管的图像），请确保将域添加到实例的已批准允许列表，以便资源可以持续加载而不会出现中断。 作为Campaign管理员，使用控制面板添加和管理允许列表的URL。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
+
 您可以定义要从个性化图标插入的新个性化内容块。
 
 要创建个性化块，请执行以下步骤：
@@ -89,4 +89,4 @@ ht-degree: 17%
 
 请在以下视频中了解如何创建动态内容块以及如何使用动态内容块将电子邮件投放内容个性化。
 
->[!VIDEO](https://video.tv.adobe.com/v/3449016?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)

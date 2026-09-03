@@ -7,16 +7,12 @@ role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: f4a329e3-70d2-43cd-a04a-0bbd5e3ca390
 TQID: https://experienceleague.adobe.com/qfSKBHeQUkAYJb-PSeTxYMxGp-WicmITitT9qh8tHBs
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
 workflow-type: tm+mt
-source-wordcount: 430
+source-wordcount: 500
 ht-degree: 1%
 
 ---
@@ -46,6 +42,10 @@ Adobe Campaign允许您从LibreOffice或Microsoft Word文档为电子邮件附�
 * 关闭表的第三行和最后一行中的循环。
 
 ## 插入外部图像 {#inserting-external-images}
+
+>[!IMPORTANT]
+>
+>8.9.3版包括对外部URL允许列表的更新。 确保在附件中用于外部图像的域已添加到实例的已批准允许列表中，以便资源可以继续加载而不会出现中断。 作为Campaign管理员，使用控制面板添加和管理允许列表的URL。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
 
 例如，如果您希望使用在收件人字段中输入URL的图像对文档进行个性化，则插入外部图像会很有用。
 

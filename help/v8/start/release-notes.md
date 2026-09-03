@@ -38,7 +38,7 @@ _2026 年 8 月 11 日_
 
 此版本包括了对用于投放允许列表和附件的外部URL内容的更新。 确保将您当前引用的所有域添加到实例的已批准允许列表中。
 
-作为Campaign管理员，使用控制面板将当前在投放中使用的外部URL添加到允许列表，并对今后的任何新外部URL遵循相同的过程。 请在2026年9月5日之前完成此活动，以避免对受影响的投放产生影响。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
+作为Campaign管理员，使用控制面板将当前在投放中使用的外部URL添加到允许列表，并对今后的任何新外部URL遵循相同的过程。 请在2026年9月5日之前完成此活动，以避免对受影响的投放产生影响。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
 
 ### Adobe Analytics连接器已升级到Analytics 2.0 API {#analytics-2-0-8-9-3}
 
@@ -119,12 +119,12 @@ _2026 年 1 月 27 日_
 
 此版本附带了一组可在Campaign Web用户界面中使用的功能：
 
-* [多语言投放功能（GA）](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
-* [事务性消息中的用户档案扩充(GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
-* [Adobe Experience Manager实时和语言副本](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html){target="_blank"}
-* [内容试验 - A/B 测试](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html){target="_blank"}
-* [连续投放活动](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
-* [活动审批管理](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
+* [多语言投放功能（GA）](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=zh-Hans){target="_blank"}
+* [事务性消息中的用户档案扩充(GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=zh-Hans){target="_blank"}
+* [Adobe Experience Manager实时和语言副本](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=zh-Hans){target="_blank"}
+* [内容试验 - A/B 测试](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html?lang=zh-Hans){target="_blank"}
+* [连续投放活动](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html?lang=zh-Hans){target="_blank"}
+* [活动审批管理](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html?lang=zh-Hans){target="_blank"}
 
 请参阅Campaign Web UI [发行说明](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=zh-hans){target="_blank"}
 

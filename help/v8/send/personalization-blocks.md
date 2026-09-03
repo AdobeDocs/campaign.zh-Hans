@@ -66,7 +66,7 @@ ht-degree: 15%
 
 >[!IMPORTANT]
 >
->8.9.3版包括对外部URL允许列表的更新。 如果自定义个性化块引用外部URL（例如，外部托管的图像），请确保将域添加到实例的已批准允许列表，以便资源可以持续加载而不会出现中断。 作为Campaign管理员，使用控制面板添加和管理允许列表的URL。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
+>8.9.3版包括对外部URL允许列表的更新。 如果自定义个性化块引用外部URL（例如，外部托管的图像），请确保将域添加到实例的已批准允许列表，以便资源可以持续加载而不会出现中断。 作为Campaign管理员，使用控制面板添加和管理允许列表的URL。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
 
 您可以定义要从个性化图标插入的新个性化内容块。
 

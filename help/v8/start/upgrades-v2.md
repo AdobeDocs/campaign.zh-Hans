@@ -19,7 +19,7 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 829f03234f4899643a7af4c8f21707f4dc7c5389
+source-git-commit: 8e5d8570e198b0e6db350ba82e521bee8a2f6d9e
 workflow-type: tm+mt
 source-wordcount: '1685'
 ht-degree: 7%
@@ -75,7 +75,7 @@ Adobe Campaign会定期发布产品版本，以提高Campaign基础架构的性�
 
 正如我们在[更快地保护客户：Adobe如何响应AI加速的漏洞发现](https://blog.adobe.com/security/protecting-customers-faster-how-adobe-is-responding-to-ai-accelerated-vulnerability-discovery)中分享的那样，Adobe安全团队使用AI辅助工具更快地识别和解决漏洞。 我们在我们的产品（包括Adobe Campaign）中均采用这种方法。
 
-这篇文章介绍我们如何评估和确定安全问题的优先级，我们如何部署修补程序，以及这对您意味着什么。
+本页介绍我们如何评估和优先处理安全问题，我们如何部署修复程序，以及这对您意味着什么。
 
 ### 我们如何评估和确定安全问题的优先级 {#assess-security-issues}
 
@@ -91,8 +91,8 @@ Adobe Campaign会定期发布产品版本，以提高Campaign基础架构的性�
 
 根据更新的范围，我们使用以下两种部署方法之一：
 
-- 安全栈栈维护：不会更改内部版本号或对产品功能进行预期更改的目标更新。 使用标准配置的客户通常不需要采取行动。
-- 安全驱动型内部版本升级：更改您的内部版本号并遵循Adobe的标准通知、发行说明和推出流程的更新。
+* **安全栈栈维护**：目标更新不会更改您的内部版本号或引入对产品功能的预期更改。 使用标准配置的客户通常不需要采取行动。
+* **安全驱动的内部版本升级**：更改您的内部版本号并遵循Adobe的标准通知、发行说明和转出流程的更新。
 
 对于开箱即用的标准配置，您的集成和正在运行的营销活动将保持与之前相同的运行状态。
 
@@ -135,7 +135,7 @@ Adobe致力于帮助保护您的Adobe Campaign环境，并在出现安全问题�
 
 要获悉新的Experience Cloud解决方案版本及其内容，请订阅[Adobe优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html){target="_blank"}通信。
 
-您还可以访问[Campaign社区](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?profile.language=zh-Hans&style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"}以获悉版本更新。
+您还可以访问[Campaign社区](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"}以获悉版本更新。
 
 ### 为什么我的组织需要升级？ {#upgrades-1}
 

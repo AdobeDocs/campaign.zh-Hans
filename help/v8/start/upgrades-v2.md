@@ -19,9 +19,9 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: bd8e8abb2d53dd9b7b3afcc82c283aa25111a0ff
+source-git-commit: 2b29b51ec0ddb0331afe7e8222f1f2a466c71e6c
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1621'
 ht-degree: 7%
 ---
 # 版本、升级和安全性 {#upgrades}
@@ -86,11 +86,11 @@ Adobe Campaign会定期发布产品版本，以提高Campaign基础架构的性�
 >
 >如果为客户端控制台显示的版本与为应用程序服务器显示的版本不匹配，请按照[使客户端控制台保持最新](#ac-upgrades)中的说明升级控制台。
 
-### 随时了解最新版本 {#upgrades-0}
+### 产品发布公告 {#upgrades-0}
 
 新版本及其更改列在[发行说明](release-notes.md)中。
 
-有关产品版本更新，请订阅[Adobe优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html){target="_blank"}或访问[Campaign社区](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?profile.language=zh-Hans&style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"}。
+有关产品版本更新，请订阅[Adobe优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html){target="_blank"}或访问[Campaign社区](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"}。
 
 有关准备组织进行安全更新的安全通知和指导，请参阅[随时了解情况](#security-staying-informed)。
 

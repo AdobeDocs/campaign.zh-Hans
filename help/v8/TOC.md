@@ -5,13 +5,11 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: 94d9f6725b0bfb458707c9900f5b6cb553d72daf
+source-git-commit: 829f03234f4899643a7af4c8f21707f4dc7c5389
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '900'
 ht-degree: 85%
-
 ---
-
 
 # Adobe Campaign v8（控制台）文档 {#campaign-v8}
 
@@ -19,6 +17,7 @@ ht-degree: 85%
 + 发行说明 {#releases}
   + {hide-from-toc}[早期发行说明](start/e-release-notes.md)
   + [版本和升级](start/upgrades.md)
+  + {hide-from-toc}[版本和升级预览](start/upgrades-v2.md)
   + [最新版本](start/release-notes.md)
   + 之前版本 {#previous-rn}
     + [2025](start/release-notes-2025.md)

@@ -42,4 +42,4 @@ Adobe Campaign 提供了联合数据访问 (FDA) 选项，以处理存储在一�
 * 扩充
 * 正在加载数据
 
-FDA选项的使用取决于您的Adobe Campaign许可证。 有关配置此选项以及使用该选项时相关的最佳实践和限制的详情，请参阅本节[](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=zh-Hans){target="_blank"}。
+FDA选项的使用取决于您的Adobe Campaign许可证。 有关配置此选项以及使用该选项时相关的最佳实践和限制的详情，请参阅本节[&#128279;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=zh-Hans){target="_blank"}。

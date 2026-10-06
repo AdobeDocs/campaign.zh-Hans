@@ -5,25 +5,38 @@ feature: SMS
 role: User
 level: Intermediate
 exl-id: 1f941b35-c7e0-4e8c-b6e5-a1a3e5354483
-TQID: https://experienceleague.adobe.com/9iAR7QuskmaBkt8AwYws3nzdL47xCgC9zsIonQBDeIg
+TQID: 'https://experienceleague.adobe.com/9iAR7QuskmaBkt8AwYws3nzdL47xCgC9zsIonQBDeIg'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: b1bd1421-1927-4c59-9bc6-ce292360e43b
+    internal-label: SMS Messaging
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: ffeb9430b382b598af412555b1b0a6ff42bc68d0
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 3545
+source-wordcount: '3638'
 ht-degree: 3%
-
 ---
-
 # SMPP外部帐户设置 {#smpp-external-account}
 
 Adobe Campaign使用SMPP协议向服务提供商发送短信。
@@ -73,7 +86,7 @@ SMS服务提供商端的网络设备通常称为SMSC。
   * 收发器（或TRX）：单个TCP连接用于发送和接收消息。
 * **为接收方使用不同的参数**：
 仅在发射器+接收器模式下可用。
-如果未选中该框，则会对发射器和接收器使用相同的设置。选中该框后，标准设置将仅应用于发射器，而接收器设置将仅应用于接收器。
+如果未选中该框，则会对发射器和接收器使用相同的设置。 选中该框后，标准设置将仅应用于发射器，而接收器设置将仅应用于接收器。
 * **接收服务器、端口、帐户、密码、系统类型**
 这些设置适用于处于发射器+接收器模式的接收器。 它们的工作方式与发射器部分类似，请参阅上面的[更多详细信息](#smpp-connection-settings)。
 * **在日志文件中启用详细的SMPP跟踪**

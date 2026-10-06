@@ -3,23 +3,34 @@ title: Campaign v8 发行说明
 description: 最新 Campaign v8 版本
 feature: Release Notes
 exl-id: 7cf8111d-9f3a-46a4-813a-d4e43a1d1471
-TQID: https://experienceleague.adobe.com/Zdo52RLQFbxlRNgE54yLDn3yAMmmOqxKyRhnCJa0Xwg
+TQID: 'https://experienceleague.adobe.com/Zdo52RLQFbxlRNgE54yLDn3yAMmmOqxKyRhnCJa0Xwg'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
+    internal-label: Release notes
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
+    internal-label: Security
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 2098
-ht-degree: 6%
-
+source-wordcount: '2098'
+ht-degree: 11%
 ---
-
 # 最新版本 {#latest-release}
 
 此页面列出了 Campaign v8（控制台）**最新版本**&#x200B;中的新增功能、改进和修复。 要详细了解 Campaign 版本和升级，请参阅[此页面](upgrades.md)。 其他版本列于本文档的先前版本部分。
@@ -34,11 +45,11 @@ _2026 年 8 月 11 日_
 
 此版本包括安全修复，可加强Campaign环境的整体安全状况。 作为托管客户，这些修复在升级过程中由Adobe应用，无需您执行任何操作。
 
-### 外部URL允许列表更新 {#url-allow-list-update-8-9-3}
+### 外部 URL 允许列表更新 {#url-allow-list-update-8-9-3}
 
-此版本包括了对用于投放允许列表和附件的外部URL内容的更新。 确保将您当前引用的所有域添加到实例的已批准允许列表中。
+此版本包括了对用于投放内容和附件的外部 URL 允许列表的更新。 请确保将您当前引用的所有域添加到实例的已批准允许列表中。
 
-作为Campaign管理员，使用控制面板将当前在投放中使用的外部URL添加到允许列表，并对今后的任何新外部URL遵循相同的过程。 请在2026年9月5日之前完成此活动，以避免对受影响的投放产生影响。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
+作为 Campaign 管理员，使用控制面板将当前在投放中使用的外部 URL 添加到允许列表，并对今后的任何新外部 URL 遵循相同的流程。 请在 2026 年 9 月 5 日之前完成此活动，以避免对相关投放造成影响。 有关步骤，请参阅[添加 URL 权限](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
 
 ### Adobe Analytics连接器已升级到Analytics 2.0 API {#analytics-2-0-8-9-3}
 

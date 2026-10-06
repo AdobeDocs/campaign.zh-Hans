@@ -6,13 +6,24 @@ feature: Email, Deliverability
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
-source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 50d1fd2e-0fc9-5627-bbc9-02dbc9d15e08
+    internal-label: Email
+  - id: 63876777-85c3-57e1-a2da-81f02956c63c
+    internal-label: Deliverability
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 3%
-
 ---
-
 # SpamAssassin{#spamassassin}
 
 可以将Adobe Campaign配置为与用于电子邮件垃圾邮件过滤的第三方服务[SpamAssassin](https://spamassassin.apache.org){target="_blank"}一起使用。 这允许您对电子邮件进行评分，以确定邮件在接收时是否会被反垃圾邮件工具视为垃圾邮件。

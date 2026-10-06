@@ -3,13 +3,16 @@ title: 将技术用户迁移到Adobe Developer控制台
 description: 了解如何将Campaign技术操作员迁移到Adobe Developer控制台上的技术帐户
 exl-id: 63008b58-4384-4d2b-864a-57f11d701c01
 hide: true
-source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 1%
-
+source-wordcount: '917'
+ht-degree: 0%
 ---
-
 # 将Campaign技术操作员迁移到Adobe Developer Console {#migrate-tech-users-to-ims}
 
 从Campaign v8.5开始，改进了Campaign v8的身份验证过程。 技术操作员必须使用[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}连接到Campaign。 技术操作员是为API集成明确创建的Campaign用户配置文件。 本文详细介绍了将技术操作员迁移到Adobe Developer控制台上的技术帐户所需的步骤。
@@ -76,7 +79,7 @@ Campaign常规用户已使用Adobe ID通过Adobe Identity Management System (IMS
 
 仅当已为此操作员（而不是通过操作员的组）定义了特定文件夹权限或命名权限时，才需要执行此步骤。
 
-现在，您需要在Adobe Campaign客户端控制台中更新新创建的技术运算符。您必须将现有的技术操作员文件夹权限应用到新的技术操作员。
+现在，您需要在Adobe Campaign客户端控制台中更新新创建的技术运算符。 您必须将现有的技术操作员文件夹权限应用到新的技术操作员。
 要更新此运算符，请执行以下步骤：
 
 1. 从Campaign Client Console资源管理器中，浏览到&#x200B;**管理>访问管理>运算符**。

@@ -4,13 +4,16 @@ title: 技术说明 — 凭据轮换指南
 description: Adobe Campaign技术说明 — 凭据轮换指南
 hide: true
 exl-id: 0848ee2d-3506-4167-9aea-a1589aa82805
-source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '389'
 ht-degree: 1%
-
 ---
-
 # 技术说明：凭据轮换指南 {#ac-customer-credentials}
 
 作为客户，您有责任定期使用新的凭据集替换您的凭据，以降低受到危害的风险。
@@ -48,7 +51,7 @@ ht-degree: 1%
 浏览至&#x200B;**创建Android移动应用程序>配置API版本**&#x200B;部分。
 
 * 对于iOS，请参阅[此文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application){target="_blank"}。
-浏览至&#x200B;**创建iOS移动应用程序 — >身份验证模式**&#x200B;部分。
+浏览到&#x200B;**创建iOS移动应用程序 — >身份验证模式**&#x200B;部分。
 
 ## GPG 密钥 {#ac-gpg-credentials}
 

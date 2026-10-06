@@ -4,22 +4,27 @@ title: 活动模拟入门
 description: 了解如何配置活动模拟
 feature: Campaigns
 exl-id: 2b2b668f-87d9-4265-adbc-9098b85c5aab
-TQID: https://experienceleague.adobe.com/U78259I0GrAXCvnDrUCP-RyQZ-caoY0fjWndcONm5EQ
+TQID: 'https://experienceleague.adobe.com/U78259I0GrAXCvnDrUCP-RyQZ-caoY0fjWndcONm5EQ'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1226
-ht-degree: 1%
-
+source-wordcount: '1233'
+ht-degree: 2%
 ---
-
 # 活动模拟{#campaign-simulations}
 
 通过活动优化，您可以使用模拟来测试活动计划的效率。 这让您可以衡量营销活动的潜在成功情况：产生的收入、基于应用的分类规则的目标数量等。

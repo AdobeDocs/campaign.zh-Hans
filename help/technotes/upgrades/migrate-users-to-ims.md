@@ -2,13 +2,16 @@
 title: 将Campaign操作员迁移到Adobe Identity Management System (IMS)
 description: 了解如何将Campaign操作员迁移到Adobe Identity Management System (IMS)
 exl-id: 58c130d8-8ba8-42ce-9ab4-a697125d3f85
-source-git-commit: ec506653830f4d02d0875a4f26ff4ee76f880272
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 3%
-
 ---
-
 # 将Campaign操作员迁移到Adobe Identity Management System (IMS) {#migrate-users-to-ims}
 
 从Campaign v8.6开始，改进了Campaign v8的身份验证过程。 所有操作员都将使用[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"} **only**&#x200B;连接到Campaign。 不再允许使用用户/密码（又称本机身份验证）连接。 Adobe建议在Campaign v8.5.2中执行此迁移，以便能够顺利迁移到Campaign v8.6。

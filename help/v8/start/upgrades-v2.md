@@ -98,7 +98,7 @@ Adobe Campaign会定期发布产品版本，以提高Campaign基础架构的性�
 
 新版本及其更改列在[发行说明](release-notes.md)中。
 
-有关产品版本更新，请订阅[Adobe优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html){target="_blank"}或访问[Campaign社区](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"}。
+有关产品版本更新，请订阅[Adobe优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html){target="_blank"}或访问[Campaign社区](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?profile.language=zh-Hans&style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"}。
 
 有关准备组织进行安全更新的安全通知和指导，请参阅[随时了解情况](#security-staying-informed)。
 

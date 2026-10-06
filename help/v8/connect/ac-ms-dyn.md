@@ -5,31 +5,44 @@ feature: Microsoft CRM Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 4f9e8f74-27dc-482c-a83c-25623b53560f
-TQID: https://experienceleague.adobe.com/3v1DvcZNzLHKRFApdOR2yXxh72EUP1mqDkR3-vbYglY
+TQID: 'https://experienceleague.adobe.com/3v1DvcZNzLHKRFApdOR2yXxh72EUP1mqDkR3-vbYglY'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: e3988c18-3cfa-4f16-b812-ac2d2b1056fa
+    internal-label: Permissions
+  - id: dd99420f-367d-4a14-bbc4-5140615992c2
+    internal-label: Microsoft CRM integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1403
+source-wordcount: '1429'
 ht-degree: 2%
-
 ---
-
 # 使用Campaign和Microsoft Dynamics 365{#crm-ms-dynamics}
 
 在跨渠道通信上激活您的CRM数据：了解如何将联系人从&#x200B;**Microsoft Dynamics 365**&#x200B;传递到Adobe Campaign，并将营销活动效果数据（发送、打开、点击和退回）从Adobe Campaign共享回Microsoft Dynamics 365。
@@ -203,7 +216,7 @@ ht-degree: 2%
 
 1. 从&#x200B;**[!UICONTROL Synchronizing enumerations...]**&#x200B;链接打开助手。
 1. 选择与Dynamics 365枚举匹配的Adobe Campaign枚举。
-您可以将Adobe Campaign枚举的所有值替换为CRM的值：要实现此目的，请在&#x200B;**[!UICONTROL Replace]**&#x200B;列中选择&#x200B;**[!UICONTROL Yes]**。
+您可以将Adobe Campaign枚举的所有值替换为CRM的值：要实现此目的，请在**[!UICONTROL Replace]**&#x200B;列中选择&#x200B;**[!UICONTROL Yes]**。
 1. 单击&#x200B;**[!UICONTROL Next]**，然后单击&#x200B;**[!UICONTROL Start]**&#x200B;以开始导入枚举。
 1. 浏览&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;节点以检查导入的值。
 
@@ -211,9 +224,9 @@ Adobe Campaign和Microsoft Dynamics 365现已连接。 您可以设置两个系�
 
 要在Adobe Campaign数据和Microsoft CRM之间同步数据，请创建工作流并使用&#x200B;**[!UICONTROL CRM connector]**&#x200B;活动。
 
-在此页面[&#128279;](crm-data-sync.md)中了解有关数据同步的更多信息。
+在此页面](crm-data-sync.md)中了解有关数据同步[的更多信息。
 
-在此页面[&#128279;](../config/enumerations.md)中了解有关Campaign 中枚举管理的更多信息。
+在此页面](../config/enumerations.md)中了解有关Campaign [中枚举管理的更多信息。
 
 ### 支持的字段数据类型 {#ms-dyn-supported-types}
 

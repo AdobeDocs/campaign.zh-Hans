@@ -4,13 +4,22 @@ description: 了解如何将Campaign技术操作员迁移到Adobe Developer控�
 feature: Technote
 role: Admin
 exl-id: 775c5dbb-ef73-48dd-b163-23cfadc3dab8
-source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: ab81f6c3-9317-564f-af92-6670a8784294
+    internal-label: Technote
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '1598'
 ht-degree: 0%
-
 ---
-
 # 将Campaign技术操作员迁移到Adobe Developer Console {#migrate-tech-users-to-ims}
 
 从Campaign v8.5开始，作为加强安全和身份验证流程工作的一部分，对Campaign v8的身份验证流程正在进行改进。 技术操作员现在可以使用[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}连接到Campaign。 在[Adobe Developer Console文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}中了解有关新服务器到服务器身份验证过程的更多信息。
@@ -75,7 +84,7 @@ For this migration, you must add below APIs in your project: **I/O Management AP
 
 要将API添加到项目中，请执行以下步骤：
 
-1. 单击&#x200B;**添加API**&#x200B;以选择要添加到项目中的API。
+1. 单击&#x200B;**添加API**以选择要添加到项目中的API。
    ![](assets/do-not-localize/ims-updates-01.png)
 1. 通过勾选Adobe Campaign卡片右上角的框，选择并将Adobe Campaign API添加到您的项目中，在将鼠标悬停在该卡片上时会显示该框
    ![](assets/do-not-localize/ims-updates-02.png)
@@ -213,7 +222,7 @@ curl --location --request POST 'https://<instance_url>/nl/jsp/schemawsdl.jsp?sch
 
 此步骤是可选的，并且仅在营销实例中可用，不能在任何消息中心实例中使用。 如果已经为技术操作员定义了特定文件夹权限或已命名权限，但未通过分配的操作员组。 现在，您需要在Admin Console中更新新创建的技术帐户用户，以授予所需的文件夹权限或命名权限。
 
-请注意，在对Campaign实例至少进行API调用后（IMS届时将在Campaign中创建用户），技术帐户用户才会存在于Adobe Campaign中。 如果您在Campaign中找不到技术用户，请确保能够成功发送API调用，如步骤7[&#128279;](#ims-migration-step-7)中所述。
+请注意，在对Campaign实例至少进行API调用后（IMS届时将在Campaign中创建用户），技术帐户用户才会存在于Adobe Campaign中。 如果您在Campaign中找不到技术用户，请确保能够成功发送API调用，如步骤7](#ims-migration-step-7)中所述[。
 
 1. 要应用新的技术帐户用户所需的更改，请按照电子邮件地址在Campaign客户端控制台中找到它们。 此电子邮件地址是在上述项目创建和身份验证步骤中创建的。
 
@@ -221,7 +230,7 @@ curl --location --request POST 'https://<instance_url>/nl/jsp/schemawsdl.jsp?sch
 
    ![](assets/do-not-localize/ims-updates-07.png)
 
-   在“凭据”屏幕中，向下滚动以找到&#x200B;**技术帐户电子邮件**，然后单击&#x200B;**复制**&#x200B;按钮。
+   在“凭据”屏幕中，向下滚动以找到&#x200B;**技术帐户电子邮件**，然后单击**复制**按钮。
 
    ![](assets/do-not-localize/ims-updates-08.png)
 

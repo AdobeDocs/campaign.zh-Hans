@@ -7,23 +7,31 @@ topic-tags: campaign-standard-apis
 role: Developer
 level: Experienced
 exl-id: c6968252-a012-4029-bbb8-66f4f693e99b
-TQID: https://experienceleague.adobe.com/RRDY-7SFGUwxHk34LLhRHaFN-0U4A9NQfNvLPXO8GM8
+TQID: 'https://experienceleague.adobe.com/RRDY-7SFGUwxHk34LLhRHaFN-0U4A9NQfNvLPXO8GM8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: bf97c196-a4d1-4fa3-a151-e68a114c8ac0
+    internal-label: REST API
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 218
-ht-degree: 54%
-
+source-wordcount: '244'
+ht-degree: 59%
 ---
-
 # Campaign REST API入门 {#get-started-apis}
 
 Campaign REST API旨在通过将Adobe Campaign与您使用的技术面板连接，让您&#x200B;**为Adobe Campaign创建集成**，并&#x200B;**构建您自己的生态系统**。
@@ -45,8 +53,8 @@ Campaign REST API旨在通过将Adobe Campaign与您使用的技术面板连接�
 <td valign="top"><a href="managing-transactional-messages.md"><img width="60px" alt="条件" src="assets/icon_transactionalmessage.svg"/></a><p><a href="managing-transactional-messages.md">事务型消息传递</a></p></td>
 </tr></table>
 
-要使用Campaign REST API，您需要Adobe I/O帐户。这是前进和发现API功能的必备第一步。
-有关详细信息，请参阅[此部分](setting-up-api-access.md)。
+要使用Campaign REST API，您需要Adobe I/O帐户。 这是前进和发现 API 功能的必备第一步。
+如需详细信息，请参阅[此小节](setting-up-api-access.md)。
 
 我们提供的 API 使用 REST 接口的&#x200B;**标准概念**&#x200B;以及 JSON 负载。
 

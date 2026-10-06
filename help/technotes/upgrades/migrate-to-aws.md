@@ -3,13 +3,16 @@ title: 将Campaign发送基础设施迁移到Amazon Web Services (AWS)
 description: 将Campaign发送基础设施迁移到Amazon Web Services (AWS)
 hide: true
 exl-id: 50279a2f-0296-43f5-8967-16cc6a0c88f6
-source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
-
 ---
-
 # Campaign将基础设施迁移至Amazon Web Services (AWS) {#migrate-infra-to-aws}
 
 ## 更改了哪些内容？{#aws-changes}
@@ -66,11 +69,11 @@ ht-degree: 0%
 
 * **客户需要运行哪些验证？**
 
-  此迁移不需要任何特定测试。 如果发现任何问题，请联系[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support){target="_blank"}。
+  此迁移不需要任何特定测试。 如果发现任何问题，请联系[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}。
 
 
 * **我可以请求更改计划的安全升级槽的日期/时间吗？**
 
   由于这是强制性迁移，因此我们无法适应对现有计划的修改。
 
-如有任何其他问题，您可以联系[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support){target="_blank"}。
+如有任何其他问题，您可以联系[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support){target="_blank"}。

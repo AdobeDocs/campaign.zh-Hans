@@ -5,22 +5,32 @@ feature: Federated Data Access
 role: Admin
 level: Beginner
 exl-id: 0259b3bd-9dc2-44f9-a426-c4af46b00a4e
-TQID: https://experienceleague.adobe.com/lM7a0NhOPSZsHW4X60S3-TTlnnuTMb1Ip30uRpBctEQ
+TQID: 'https://experienceleague.adobe.com/lM7a0NhOPSZsHW4X60S3-TTlnnuTMb1Ip30uRpBctEQ'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: ee3dfd63-9a21-4961-9f24-ea3385284a21
+    internal-label: Federated Data Access
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 734
+source-wordcount: '734'
 ht-degree: 1%
-
 ---
-
 # 联合数据访问 (FDA){#gs-fda}
 
 使用FDA连接器（联合数据访问）将Campaign连接到一个或多个&#x200B;**外部数据库**，并处理存储在其中的信息而不影响Campaign云数据库数据。 然后，您可以访问外部数据，而无需更改Adobe Campaign数据的结构。
@@ -29,7 +39,7 @@ ht-degree: 1%
 >
 >* [兼容性矩阵](../start/compatibility-matrix.md)中列出了用于联合数据访问的兼容数据库。
 >
->* 在[企业(FFDA)部署](../../v8/architecture/enterprise-deployment.md)的上下文中，可以使用特定的外部帐户来管理Campaign本地数据库和Snowflake云数据库之间的通信。 此外部帐户由Adobe为您设置，不得修改&#x200B;**&#x200B;**。
+>* 在[企业(FFDA)部署](../../v8/architecture/enterprise-deployment.md)的上下文中，可以使用特定的外部帐户来管理Campaign本地数据库和Snowflake云数据库之间的通信。 此外部帐户由Adobe为您设置，不得修改&#x200B;****。
 >
 >* 作为托管云服务用户，[联系Adobe](../start/campaign-faq.md#support)以将外部数据库与Campaign连接。
 

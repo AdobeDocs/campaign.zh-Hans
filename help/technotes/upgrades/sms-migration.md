@@ -4,13 +4,22 @@ description: 了解如何迁移至新的短信连接器v2
 feature: Technote
 role: Admin
 exl-id: 61a5a3e8-59f8-47ea-afc9-66ec243b8265
-source-git-commit: 30ab5a10f17baddfc455dc406a4f31f058ea05ba
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: ab81f6c3-9317-564f-af92-6670a8784294
+    internal-label: Technote
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 0%
-
 ---
-
 # 迁移至新的短信连接器v2
 
 Adobe Campaign v8引入了新的&#x200B;**专用SMS进程连接器** (v2)，与基于MTA的旧版SMS连接器相比，该连接器提供了更好的性能和可靠性。

@@ -5,28 +5,40 @@ feature: Data Model
 role: Developer
 level: Beginner
 exl-id: 200b60f1-04ae-4c3e-892f-3dd2bd22b896
-TQID: https://experienceleague.adobe.com/pUzg-KbbYOXppAjG0nQe9T16Co61ipNXywTjNaV76bU
+TQID: 'https://experienceleague.adobe.com/pUzg-KbbYOXppAjG0nQe9T16Co61ipNXywTjNaV76bU'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
 subfeature_v2:
   - id: b5852c32-876b-41ae-92a7-9f588865ae52
+    internal-label: Best practices
+  - id: a1681cd8-6b2e-4955-9113-33b5f7a22b8c
+    internal-label: Data model architecture
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 737
+source-wordcount: '737'
 ht-degree: 5%
-
 ---
-
 # 开始使用 Campaign 数据模型 {#gs-ac-datamodel}
 
 Adobe Campaign 提供了预定义的数据模型。 本节提供了有关Adobe Campaign数据模型的内置表及其交互的一些详细信息。 Adobe Campaign依赖于包含链接在一起的表的云数据库。
@@ -75,7 +87,7 @@ Adobe Campaign中的内置收件人表(nmsrecipient)为构建数据模型提供�
 
 在[本节](extend-schema.md)中了解如何扩展现有架构。
 
-在[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=zh-Hans#extending-a-table){target="_blank"}中发现内置收件人表扩展的示例
+在[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#extending-a-table){target="_blank"}中发现内置收件人表扩展的示例
 
 您还可以使用其他收件人表以更好地满足您的业务或功能要求。 此方法具有限制，在[此部分](custom-recipient.md)中有说明。
 

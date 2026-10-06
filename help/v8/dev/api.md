@@ -5,26 +5,34 @@ feature: API
 role: Developer
 level: Intermediate, Experienced
 exl-id: 50e21acd-d23d-4fdd-a8aa-23c3f209bda3
-TQID: https://experienceleague.adobe.com/pC27h6Z-J345l4XjFEOgwVTHtQSSRxJmtnWQ973SiPk
+TQID: 'https://experienceleague.adobe.com/pC27h6Z-J345l4XjFEOgwVTHtQSSRxJmtnWQ973SiPk'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
 subfeature_v2:
   - id: bf97c196-a4d1-4fa3-a151-e68a114c8ac0
+    internal-label: REST API
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 2425b8e500380076d56bccec41ac821f7c867d92
+    internal-label: Reporting
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 314
-ht-degree: 10%
-
+source-wordcount: '314'
+ht-degree: 14%
 ---
-
 # 开始使用[!DNL Campaign] API {#gs-ac-api}
 
 [!DNL Adobe Campaign]附带了一组Javascript函数，您可以使用这些函数：
@@ -38,7 +46,7 @@ ht-degree: 10%
 
 您可以使用[Campaign JavaScript API](https://experienceleague.adobe.com/zh-hans/tools/campaign-api){target="_blank"}在Campaign云数据库中写入或从数据库中读取：
 
-* 特定于业务的API，允许您对每个对象执行操作：投放、工作流、订阅等。 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html?lang=zh-Hans){target="_blank"}以了解详情。
+* 特定于业务的API，允许您对每个对象执行操作：投放、工作流、订阅等。 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html){target="_blank"}以了解详情。
 * 使用`queryDef`和`NLWS`对象查询数据模型数据的通用数据访问API。 在[使用queryDef](query-api.md)查询数据库中了解更多信息。
 
 请注意，在其[企业(FFDA)部署](../architecture/enterprise-deployment.md)中，Campaign可与两个数据库配合使用：用于用户界面实时消息传递和统一查询、通过API写入的本地数据库，以及用于活动执行、报告、数据摄取、批量查询和工作流执行的云数据库。

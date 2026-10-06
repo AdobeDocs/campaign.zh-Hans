@@ -5,22 +5,28 @@ description: 创建和管理任务
 feature: Campaigns, Resource Management
 role: User
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
-TQID: https://experienceleague.adobe.com/LggpejZ5h1fYPh3efYx2f7x3DEhqVlvPndjgNkNUUCs
+TQID: 'https://experienceleague.adobe.com/LggpejZ5h1fYPh3efYx2f7x3DEhqVlvPndjgNkNUUCs'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
+  - id: 8d5d4b17-44c6-5e7b-891c-b4277613013d
+    internal-label: Resource Management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Implementation
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 3766
+source-wordcount: '3766'
 ht-degree: 0%
-
 ---
-
 # 创建和管理任务{#creating-and-managing-tasks}
 
 Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的生命周期。 项目和营销策划实施可以划分为分配给Adobe Campaign操作员或外部服务提供商的任务。 这种操作模式允许您创建包括所有项目参与者和外部参与者的开放协作环境。

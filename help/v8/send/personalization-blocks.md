@@ -6,22 +6,29 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 214ad693-d456-47ec-a9c8-199ba23c3d9c
-TQID: https://experienceleague.adobe.com/741rGWSBuFksbOfXbuszEXq56DOI-Pfg8tEiHQLhQf8
+TQID: 'https://experienceleague.adobe.com/741rGWSBuFksbOfXbuszEXq56DOI-Pfg8tEiHQLhQf8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 13af5358-448e-5a4a-850b-0db592bb0f8f
+    internal-label: Personalization
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 87e77fcdb7c97ed903ea37a23fb2670aca904f59
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 638
-ht-degree: 15%
-
+source-wordcount: '638'
+ht-degree: 17%
 ---
-
 # 使用个性化块{#personalization-blocks}
 
 个性化块是动态内容，其中包含您可以插入到投放中的特定渲染。 例如，您可以添加徽标、问候语消息或指向镜像页面的链接。
@@ -66,7 +73,7 @@ ht-degree: 15%
 
 >[!IMPORTANT]
 >
->8.9.3版包括对外部URL允许列表的更新。 如果自定义个性化块引用外部URL（例如，外部托管的图像），请确保将域添加到实例的已批准允许列表，以便资源可以持续加载而不会出现中断。 作为Campaign管理员，使用控制面板添加和管理允许列表的URL。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
+>8.9.3版包括对外部URL允许列表的更新。 如果自定义个性化块引用外部URL（例如，外部托管的图像），请确保将域添加到实例的已批准允许列表，以便资源可以持续加载而不会出现中断。 作为Campaign管理员，使用控制面板添加和管理允许列表的URL。 有关步骤，请参阅[添加 URL 权限](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
 
 您可以定义要从个性化图标插入的新个性化内容块。
 
@@ -93,4 +100,4 @@ ht-degree: 15%
 
 请在以下视频中了解如何创建动态内容块以及如何使用动态内容块将电子邮件投放内容个性化。
 
->[!VIDEO](https://video.tv.adobe.com/v/3449016?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)

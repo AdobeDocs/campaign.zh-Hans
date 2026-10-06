@@ -6,31 +6,43 @@ role: User
 hide: true
 level: Beginner, Intermediate
 exl-id: 7cebcde0-c5a8-4b9b-baba-27a62bebde91
-TQID: https://experienceleague.adobe.com/dCe9loow9GAK5YIKzwwcZVS94JtDiEhg0p5QUCBd-So
+TQID: 'https://experienceleague.adobe.com/dCe9loow9GAK5YIKzwwcZVS94JtDiEhg0p5QUCBd-So'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: b1bd1421-1927-4c59-9bc6-ce292360e43b
+    internal-label: SMS Messaging
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: b285c321f3b905150b31621941ea99608d627739
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 273
+source-wordcount: '286'
 ht-degree: 0%
-
 ---
-
 # 独立实例中的短信 {#sms-standalone}
 
 >[!IMPORTANT]
 >
 >本文档适用于Adobe Campaign v8.7.2及更高版本。
 >
->对于旧版本，请阅读[Campaign Classic v7文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up)。
+>对于旧版本，请阅读[Campaign Classic v7文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-messages-on-mobiles/sms-set-up/sms-set-up)。
 
 在独立实例中，发送短信投放需要：
 
@@ -54,7 +66,7 @@ ht-degree: 0%
 
    ![](assets/sms_extaccount_new.png){zoomable="yes"}
 
-1. 在&#x200B;**[!UICONTROL Mobile]**&#x200B;选项卡中，将&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;保留在&#x200B;**[!UICONTROL Connector]**&#x200B;下拉列表中。
+1. 在&#x200B;**[!UICONTROL Mobile]**&#x200B;选项卡中，将&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;保留在&#x200B;**[!UICONTROL Connector]**下拉列表中。
 默认情况下，**[!UICONTROL Send messages through a dedicated process]**&#x200B;框处于选中状态。
 
    ![](assets/sms_extaccount_connector.png){zoomable="yes"}

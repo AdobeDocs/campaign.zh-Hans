@@ -4,13 +4,16 @@ title: 技术说明 — Adobe Campaign系统升级
 description: Adobe Campaign系统升级
 hide: true
 exl-id: cc64cce1-2473-4136-aadc-8b13e89ef7f9
-source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 11%
-
 ---
-
 # Adobe Campaign 2023环境升级 {#ac-system-upgrade}
 
 Campaign基础架构依赖于第三方系统，这些系统必须定期使用最新版本和修复进行更新。 必须执行这些更新，以确保服务的连续性，并确保Campaign环境免受安全风险的影响。 此外，需要升级Campaign，以确保与第三方系统更改兼容。

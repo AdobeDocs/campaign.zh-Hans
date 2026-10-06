@@ -6,10 +6,18 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: d34b6073-a7e7-443a-a6d8-e74ef10a67e8
-TQID: https://experienceleague.adobe.com/-HhNQgwweCPn3ts3AAm6SjdFTxg-2zexCALMqS1Yjgc
+TQID: 'https://experienceleague.adobe.com/-HhNQgwweCPn3ts3AAm6SjdFTxg-2zexCALMqS1Yjgc'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -19,7 +27,7 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 422d18b36d63bd04922adb3bb4e06a49ed7cdfd7
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 5%
@@ -89,7 +97,7 @@ ht-degree: 5%
 
 选择&#x200B;**[!UICONTROL Filtering conditions]**&#x200B;后，**[!UICONTROL Target elements]**&#x200B;部分打开。 在这里，您可以定义用于筛选要收集的数据的规则。
 
-* 要创建新过滤器，请选择构建条件所需的字段、运算符和值。 您还可以合并多个条件，如本页[&#128279;](filter-conditions.md)上的所述。
+* 要创建新过滤器，请选择构建条件所需的字段、运算符和值。 您还可以合并多个条件，如本页](filter-conditions.md)上的[所述。
 
 * 要重用现有的筛选器，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮，选择&#x200B;**[!UICONTROL Predefined filter]**&#x200B;并选择所需的筛选器。
 

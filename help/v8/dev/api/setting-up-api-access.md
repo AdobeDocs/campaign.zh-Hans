@@ -7,32 +7,41 @@ topic-tags: campaign-standard-apis
 role: Developer
 level: Experienced
 exl-id: efbbd0cd-9c56-4ad0-8bcb-efba4b63c28b
-TQID: https://experienceleague.adobe.com/bplbMEDlQOL-EDthA4nuoWmFF-sB30MWKaG1f8F6P-A
+TQID: 'https://experienceleague.adobe.com/bplbMEDlQOL-EDthA4nuoWmFF-sB30MWKaG1f8F6P-A'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
 subfeature_v2:
   - id: bf97c196-a4d1-4fa3-a151-e68a114c8ac0
+    internal-label: REST API
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Troubleshooting
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 448
+source-wordcount: '448'
 ht-degree: 6%
-
 ---
-
 # 设置 API 访问 {#setting-up-api-access}
 
 Adobe Campaign Standard API访问可通过以下步骤进行设置。 [Adobe Developer文档](https://developer.adobe.com/developer-console/docs/guides/#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)中详细介绍了这些步骤。
 
 >[!IMPORTANT]
 >
->要在[Adobe Developer](https://developer.adobe.com/)中管理证书，请确保您对该组织具有&#x200B;**系统管理员**&#x200B;权限，或者在Admin Console中具有[开发人员帐户](https://helpx.adobe.com/cn/enterprise/using/manage-developers.html)。
+>要在[Adobe Developer](https://developer.adobe.com/)中管理证书，请确保您对该组织具有&#x200B;**系统管理员**&#x200B;权限，或者在Admin Console中具有[开发人员帐户](https://helpx.adobe.com/enterprise/using/manage-developers.html)。
 
 1. **检查您是否拥有数字证书**，或者在必要时创建一个数字证书。 以下步骤需要随证书一起提供的公钥和私钥。
 1. **在[Adobe Developer](https://developer.adobe.com/)中创建与Adobe Campaign服务**&#x200B;的新集成并进行配置。 随后将生成您的凭据（API密钥、客户端密钥……）。

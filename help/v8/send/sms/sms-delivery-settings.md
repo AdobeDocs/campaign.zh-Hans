@@ -5,24 +5,36 @@ feature: SMS
 role: User
 level: Beginner, Intermediate
 exl-id: c4d500ef-2339-491f-9ae2-9bfaf72088a9
-TQID: https://experienceleague.adobe.com/SUOihPjlej-JYbpNBWLCIhWhM2NrUpz0pMuO3NAaCWM
+TQID: 'https://experienceleague.adobe.com/SUOihPjlej-JYbpNBWLCIhWhM2NrUpz0pMuO3NAaCWM'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: b1bd1421-1927-4c59-9bc6-ce292360e43b
+    internal-label: SMS Messaging
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 734
+source-wordcount: '773'
 ht-degree: 1%
-
 ---
-
 # 短信投放设置 {#sms-settings}
 
 短信投放所需的技术设置包括：
@@ -80,8 +92,8 @@ ht-degree: 1%
   指定0将禁用限制。
 
 * **[!UICONTROL Optional SMPP parameters (TLV)]**
-您可以指定要作为可选SMPP参数(TLV)发送的额外字段。这些额外的字段与每个MT一起发送，而个性化的字段允许每个MT具有不同的值。
-该表列出了随每条消息一起发送的可选参数。列包含以下信息：
+您可以指定要作为可选SMPP参数(TLV)发送的额外字段。 这些额外的字段与每个MT一起发送，而个性化的字段允许每个MT具有不同的值。
+该表列出了随每条消息一起发送的可选参数。 列包含以下信息：
   * **标签**：这是可选的自由格式标签。 不会发送给提供商。 您可以提供参数的文本描述。
   * **标记**：标记值，以十进制格式（如12345）或带0x前缀的十六进制（如0x12ab）表示。 标记可以介于0和65535之间。 向SMPP服务提供商询问他们支持的标记。
   * **值**：要在可选参数中发送的值。 这是一个个性化字段。

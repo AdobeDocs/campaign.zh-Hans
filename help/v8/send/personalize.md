@@ -6,22 +6,29 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 1da45746-4d69-415b-a793-9a08ce80091d
-TQID: https://experienceleague.adobe.com/G8-4BinRvCMosfdiTD6FuEztviEDn6ea8hKeQd8QVSA
+TQID: 'https://experienceleague.adobe.com/G8-4BinRvCMosfdiTD6FuEztviEDn6ea8hKeQd8QVSA'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 13af5358-448e-5a4a-850b-0db592bb0f8f
+    internal-label: Personalization
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 474
+source-wordcount: '474'
 ht-degree: 48%
-
 ---
-
 # 个性化入门 {#personalize-content}
 
 为了充分利用每一个营销活动，Adobe Campaign为您提供了一种方法，可向您提供与客户级别相关的自定义内容。 根据用户档案数据，利用个性化功能为不同的组和个人创建自定义体验：利用您拥有的关于每个特定收件人的数据和信息，您可以根据他们来调整消息。 这可以是他们的名字、兴趣、居住地、购买的内容等等。
@@ -81,4 +88,4 @@ Adobe Campaign简化了个性化：您可以使用单个[消息模板](create-te
 了解不同类型的动态内容，并了解如何创建个性化块和条件语句并将它们应用到投放中。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3452878?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/335734?quality=12)

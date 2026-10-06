@@ -6,23 +6,31 @@ role: Developer
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: f2c26351-8ed7-498a-ac83-d4c583fb98f3
-TQID: https://experienceleague.adobe.com/LHKXRb4lBbTL6DVrnsnTIPE-Pj-f5I5qQcG3O57Wz5I
+TQID: 'https://experienceleague.adobe.com/LHKXRb4lBbTL6DVrnsnTIPE-Pj-f5I5qQcG3O57Wz5I'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 50d1fd2e-0fc9-5627-bbc9-02dbc9d15e08
+    internal-label: Email
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 62f279d8b36160ff56f4fdc1f7fba0099bdbc8ad
+    internal-label: Optimization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 832
+source-wordcount: '832'
 ht-degree: 2%
-
 ---
-
 # 发送和监控电子邮件  {#send-and-monitor-emails}
 
 当投放已配置并准备好发送时，请确保已运行投放分析。 [了解详情](delivery-analysis.md)
@@ -41,7 +49,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->投放状态不会实时显示。 在此部分[&#128279;](#email-feedback-service)中了解有关电子邮件反馈服务的更多信息。
+>投放状态不会实时显示。 在此部分](#email-feedback-service)中了解有关电子邮件反馈服务[的更多信息。
 
 ## Campaign MTA {#mta}
 
@@ -84,7 +92,7 @@ Domain Keys Identified Mail (DKIM)是一种用于检测伪造发件人地址（�
 
 在Adobe Campaign中，DKIM电子邮件身份验证签名由MTA执行。
 
-在[DKIM可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#authentication){target="_blank"}中了解有关Adobe的更多信息。
+在[DKIM可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication){target="_blank"}中了解有关Adobe的更多信息。
 
 ## 电子邮件反馈服务 {#email-feedback-service}
 

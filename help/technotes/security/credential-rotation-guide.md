@@ -4,13 +4,16 @@ title: 技术说明 — 凭据轮换指南
 description: Adobe Campaign技术说明 — 凭据轮换指南
 hide: true
 exl-id: 0848ee2d-3506-4167-9aea-a1589aa82805
-source-git-commit: 6728fc8db6a6f8e401b782d6a17f4fa04876daa9
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '389'
 ht-degree: 1%
-
 ---
-
 # 技术说明：凭据轮换指南 {#ac-customer-credentials}
 
 作为客户，您有责任定期使用新的凭据集替换您的凭据，以降低受到危害的风险。
@@ -44,19 +47,19 @@ ht-degree: 1%
 
 有关与Mobile Services相关的私钥和证书的轮换，请参阅以下链接。
 
-* 对于Android，请参阅[此文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android){target="_blank"}。
-浏览至&#x200B;**创建Android移动应用程序>配置API版本**&#x200B;部分。
+* 对于Android，请参阅[此文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android){target="_blank"}。
+浏览至**创建Android移动应用程序>配置API版本**&#x200B;部分。
 
-* 对于iOS，请参阅[此文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application){target="_blank"}。
-浏览至&#x200B;**创建iOS移动应用程序 — >身份验证模式**&#x200B;部分。
+* 对于iOS，请参阅[此文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application){target="_blank"}。
+浏览到**创建iOS移动应用程序 — >身份验证模式**&#x200B;部分。
 
 ## GPG 密钥 {#ac-gpg-credentials}
 
 对于GPG密钥的旋转，需要执行以下步骤：
 
-1. 使用现有密钥解密现有数据。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/gpg-keys-management#decrypting-data){target="_blank"}。
+1. 使用现有密钥解密现有数据。 [了解详情](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/gpg-keys-management#decrypting-data){target="_blank"}。
 
-1. 创建新的GPG密钥对。 在[本文档](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/gpg-keys-management#decrypting-data){target="_blank"}中了解有关GPG密钥管理的更多信息。
+1. 创建新的GPG密钥对。 在[本文档](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/gpg-keys-management#decrypting-data){target="_blank"}中了解有关GPG密钥管理的更多信息。
 
 1. 将所有工作流中的现有GPG密钥使用情况替换为新创建的密钥。
 

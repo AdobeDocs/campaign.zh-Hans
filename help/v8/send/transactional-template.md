@@ -5,27 +5,40 @@ feature: Transactional Messaging
 role: User
 level: Beginner, Intermediate
 exl-id: 858c9216-c5a0-4bf9-b4b0-91e403293f73
-TQID: https://experienceleague.adobe.com/uHf2o7h-iEwuPhNgjT-sAOES0A-uzpye9UGgZkgxdOA
+TQID: 'https://experienceleague.adobe.com/uHf2o7h-iEwuPhNgjT-sAOES0A-uzpye9UGgZkgxdOA'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: d3b34fea-a110-482f-adb2-aae8d686bac8
+    internal-label: Transactional messaging
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1200
+source-wordcount: '1200'
 ht-degree: 1%
-
 ---
-
 # 创建并发布事务性消息传递模板{#template-transactional-messages}
 
 每个事件都可以触发个性化消息。 要做到这一点，您需要创建一个消息模板以匹配每个事件类型。 模板包含个性化事务型消息的必需信息。 您还可以使用模板测试消息预览，并在将消息交付到最终目标之前使用种子地址发送校样。
@@ -100,7 +113,7 @@ ht-degree: 1%
 
    ![](assets/messagecenter_create_seed_2.png)
 
-1. 插入测试数据。 [请参阅Campaign Classic v7文档以了解有关个性化数据的更多信息](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
+1. 插入测试数据。 [请参阅Campaign Classic v7文档以了解有关个性化数据的更多信息](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
 
    ![](assets/messagecenter_create_custo_3.png)
 

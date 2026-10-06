@@ -5,25 +5,38 @@ feature: Target Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 891a9a87-f3a4-405a-87ed-a7703be90a67
-TQID: https://experienceleague.adobe.com/d5k2eJVXkyK0buudvJfqokZ5q9dPJhcDyiNcKImz-KE
+TQID: 'https://experienceleague.adobe.com/d5k2eJVXkyK0buudvJfqokZ5q9dPJhcDyiNcKImz-KE'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
+subfeature_v2:
+  - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Target integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 994
+source-wordcount: '994'
 ht-degree: 0%
-
 ---
-
 # 使用Campaign和Adobe Target
 
 连接Campaign和Target以在Adobe Campaign电子邮件投放中包含来自Adobe Target的选件。
@@ -86,7 +99,7 @@ Adobe Target可以使用以下类型的数据：
 * 通过&#x200B;**[!UICONTROL Landing Page]**，您可以将默认图像重定向到默认登陆页面。 此URL仅在最终电子邮件中显示默认图像时适用。 它是可选的。
 * **[!UICONTROL Additional decision parameters]**&#x200B;定义Adobe Target区段中定义的字段与Adobe Campaign字段之间的映射。 使用的Adobe Campaign字段必须在rawbox中指定。 在我们的示例中，我们添加了“国家/地区”字段。
 
-如果您在Adobe Target的设置中使用企业权限，请在此字段中添加相应的资产。 请参阅[Adobe Target文档](https://experienceleague.adobe.com/zh-hans/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}以了解有关Target企业权限的更多信息。
+如果您在Adobe Target的设置中使用企业权限，请在此字段中添加相应的资产。 请参阅[Adobe Target文档](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}以了解有关Target企业权限的更多信息。
 
 ![](assets/target_13.png)
 
@@ -106,7 +119,7 @@ Adobe Target可以使用以下类型的数据：
 
    ![](assets/target_6.png)
 
-1. 对其余重定向选件执行相同的过程。 有关详细信息，请参阅此[Adobe Target文档](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=zh-Hans#experiences){target="_blank"}。
+1. 对其余重定向选件执行相同的过程。 有关详细信息，请参阅此[Adobe Target文档](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html#experiences){target="_blank"}。
 
 ### 创建受众 {#audiences-target}
 

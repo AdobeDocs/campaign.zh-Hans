@@ -6,20 +6,29 @@ feature: Workflows
 role: Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: 8524d916-8af7-4641-b047-9c348f1017fd
-TQID: https://experienceleague.adobe.com/xGSqzmm1kxKvSViuqdN0a-AwIuDxnNjWBHwH1bwAXtU
+TQID: 'https://experienceleague.adobe.com/xGSqzmm1kxKvSViuqdN0a-AwIuDxnNjWBHwH1bwAXtU'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 472
+source-wordcount: '472'
 ht-degree: 5%
-
 ---
-
 # 监测技术工作流 {#monitoring-technical-workflows}
 
 需要对技术工作流进行监控，并在工作流失败时采取行动。
@@ -50,7 +59,7 @@ ht-degree: 5%
 
 对于&#x200B;**[!UICONTROL Tracking workflow ('tracking')]**：
 
-检查跟踪工作流是否按计划运行（默认情况下每小时运行一次），以及日记帐是否未高亮显示重复错误。 有关更多信息，请参阅此[&#128279;](delivery.md)章节。
+检查跟踪工作流是否按计划运行（默认情况下每小时运行一次），以及日记帐是否未高亮显示重复错误。 有关更多信息，请参阅此](delivery.md)章节[。
 
 对于&#x200B;**[!UICONTROL Deliverability update ('deliverabilityUpdate')]**：
 
@@ -59,7 +68,7 @@ ht-degree: 5%
 
 对于&#x200B;**[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**：
 
-1. 查看&#x200B;**[!UICONTROL Campaign process]**&#x200B;文件夹下的所有工作流。 有关详细信息，请参见此 [&#x200B; 页面](technical-workflows.md)。
+1. 查看&#x200B;**[!UICONTROL Campaign process]**&#x200B;文件夹下的所有工作流。 有关详细信息，请参见此 [ 页面](technical-workflows.md)。
 1. 检查工作流是否按计划运行，以及日记帐是否未突出显示重复出现的错误。
 
 ## 工作流监督 {#workflow-supervision}

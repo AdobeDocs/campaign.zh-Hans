@@ -6,13 +6,20 @@ role: Developer
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: 4de3b2c2-7eb7-4fd9-9350-64a6e9e2b7f8
-TQID: https://experienceleague.adobe.com/urm8-2koO46hRe8XeCDoKYVU-WDqxM7tq0TwqDC8Sc0
+TQID: 'https://experienceleague.adobe.com/urm8-2koO46hRe8XeCDoKYVU-WDqxM7tq0TwqDC8Sc0'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
     internal-label: Campaigns
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
+subfeature_v2:
+  - id: d9d413df-4e9e-4906-bbbc-28c06c2ccf59
+    internal-label: LINE App
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
@@ -26,7 +33,7 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 422d18b36d63bd04922adb3bb4e06a49ed7cdfd7
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '1196'
 ht-degree: 4%
@@ -35,7 +42,7 @@ ht-degree: 4%
 
 LINE 是一款免费即时消息、语音和视频通话应用程序，可在所有移动设备和 PC 上使用。 您可以使用Adobe Campaign发送LINE消息。
 
-[!DNL LINE]还可以与事务性消息模块结合使用，以在消费者移动设备上安装的[!DNL LINE]应用程序上发送实时消息。 有关详细信息，请参阅Campaign Classic v7文档中的此[页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line)。
+[!DNL LINE]还可以与事务性消息模块结合使用，以在消费者移动设备上安装的[!DNL LINE]应用程序上发送实时消息。 有关详细信息，请参阅Campaign Classic v7文档中的此[页面](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line)。
 
 ![](assets/line_message.png)
 

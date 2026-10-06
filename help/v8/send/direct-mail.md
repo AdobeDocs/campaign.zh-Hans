@@ -6,22 +6,32 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: ff2be012-72f3-428d-a973-196fea7ec4ab
-TQID: https://experienceleague.adobe.com/CDfK2RCVNzKde8WiEBdkq8ZB2JlPSjnFmP3cr9Nyox0
+TQID: 'https://experienceleague.adobe.com/CDfK2RCVNzKde8WiEBdkq8ZB2JlPSjnFmP3cr9Nyox0'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: ede6e1ec-9279-415e-b828-a09735018d48
+    internal-label: Direct mail
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 885
+source-wordcount: '885'
 ht-degree: 7%
-
 ---
-
 # 创建直邮投放
 
 直邮投放允许您生成包含目标群体数据的提取文件。 然后，您可以与将向其定向群体投放消息的提供商共享此文件。
@@ -80,11 +90,11 @@ ht-degree: 7%
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
-您可以在提取文件中插入个性化URL。 有关详细信息，请参阅Adobe Campaign Classic [文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/publishing-a-web-form.html?lang=zh-Hans){target="_blank"}。
+您可以在提取文件中插入个性化URL。 有关详细信息，请参阅Adobe Campaign Classic [文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/publishing-a-web-form.html){target="_blank"}。
 
 >[!NOTE]
 >
->此助理包括导出助理的详细步骤Adobe Campaign Classic [文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html?lang=zh-Hans){target="_blank"}。
+>此助理包括导出助理的详细步骤Adobe Campaign Classic [文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html){target="_blank"}。
 
 ## 验证投放{#validating}
 

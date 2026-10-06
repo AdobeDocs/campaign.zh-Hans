@@ -5,21 +5,30 @@ feature: Interaction, Offers
 role: User, Admin
 level: Beginner
 exl-id: d39b1768-4c39-4d64-b9b6-d9c9424a2b0d
-TQID: https://experienceleague.adobe.com/K-eSL7fzZ0mPQgyumhnWSDBPbvkEml80n0aGrJWazd8
+TQID: 'https://experienceleague.adobe.com/K-eSL7fzZ0mPQgyumhnWSDBPbvkEml80n0aGrJWazd8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 65702805-0026-5ca1-843a-144fa79f0883
+    internal-label: Interaction
+  - id: ea08db70-4682-59a2-9408-9aedd9548e07
+    internal-label: Offers
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Beginner
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1276
+source-wordcount: '1276'
 ht-degree: 2%
-
 ---
-
 # 发送产品建议{#send}
 
 为了让优惠引擎选择优惠，该优惠已在&#x200B;**实时**&#x200B;环境中获得批准并可用。 [了解详情](interaction-offer.md#approve-offers)
@@ -84,7 +93,7 @@ ht-degree: 2%
 
 ### 扩充 {#enrichment}
 
-通过&#x200B;**扩充**&#x200B;活动，您可以将优惠或链接添加到投放收件人的优惠中。[了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=zh-Hans){target="_blank"}。
+通过&#x200B;**扩充**&#x200B;活动，您可以将优惠或链接添加到投放收件人的优惠中。[了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}。
 
 例如，您可以在投放之前扩充收件人查询的数据。
 
@@ -171,7 +180,7 @@ ht-degree: 2%
 
 **[!UICONTROL Offer engine]**&#x200B;活动还允许您在投放之前指定对优惠引擎的调用。
 
-有关&#x200B;**优惠引擎**&#x200B;活动的详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html?lang=zh-Hans){target="_blank"}。
+有关&#x200B;**优惠引擎**&#x200B;活动的详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html){target="_blank"}。
 
 此活动与引擎调用中的&#x200B;**扩充**&#x200B;活动的工作原理相同，即在投放前使用引擎计算的优惠扩充集客群体数据。
 
@@ -194,7 +203,7 @@ ht-degree: 2%
 
 利用&#x200B;**[!UICONTROL Offers by cell]**&#x200B;活动，可将集客群体（例如从查询）分发到多个区段中，并指定要为每个区段呈现的选件。
 
-有关&#x200B;**单元格选件**&#x200B;活动的详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html?lang=zh-Hans){target="_blank"}。
+有关&#x200B;**单元格选件**&#x200B;活动的详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html){target="_blank"}。
 
 为此，请使用以下流程：
 

@@ -3,13 +3,22 @@ product: campaign
 title: 任务
 description: 了解有关任务工作流活动的更多信息
 feature: Workflows
-source-git-commit: 6464e1121b907f44db9c0c3add28b54486ecf834
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 2%
-
 ---
-
 # 任务{#task}
 
 在营销活动工作流中，**[!UICONTROL Task]**&#x200B;活动允许您指定两种情况：第一种情况是任务已完成的情况，第二种情况是任务未完成的情况（如果手动标记为未完成或任务过期的情况）。

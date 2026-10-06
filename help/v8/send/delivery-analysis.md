@@ -5,23 +5,31 @@ feature: Personalization
 role: User
 level: Beginner
 exl-id: 1526048d-9f02-4853-948f-8fb618670dbd
-TQID: https://experienceleague.adobe.com/A1EyDmVc2Y7okJFeFT7lsckZm8-IFDD-XFIqpb-Q7v8
+TQID: 'https://experienceleague.adobe.com/A1EyDmVc2Y7okJFeFT7lsckZm8-IFDD-XFIqpb-Q7v8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 13af5358-448e-5a4a-850b-0db592bb0f8f
+    internal-label: Personalization
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 01596f03cb299f30a0a32e7095c62c6ce9c40259
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 693
+source-wordcount: '693'
 ht-degree: 5%
-
 ---
-
 # 投放分析 {#analyze-delivery}
 
 分析是投放准备步骤。 一旦定义了目标受众，并且消息内容已准备就绪并进行了测试，就可以启动定向功能。 在投放分析期间，会计算目标群体并准备投放内容。 完成后，即可发送投放。

@@ -7,21 +7,31 @@ level: Beginner
 role: User, Admin
 version: Campaign v8, Campaign Classic v7
 exl-id: 6d9789e3-d721-4ffd-b3fb-a0c522ab1c0a
-TQID: https://experienceleague.adobe.com/VHBQEKUthZcW2WrbNjmlIC7FzJFDqX0PykJg95sM-WI
+TQID: 'https://experienceleague.adobe.com/VHBQEKUthZcW2WrbNjmlIC7FzJFDqX0PykJg95sM-WI'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Beginner
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 1143
+source-wordcount: '1143'
 ht-degree: 0%
-
 ---
-
 # 启动、暂停、停止工作流 {#starting-a-workflow}
 
 工作流始终以手动方式启动。 但是，在启动时，它会根据通过调度程序（请参阅[调度程序](scheduler.md)）或活动计划指定的信息来保持非活动状态。

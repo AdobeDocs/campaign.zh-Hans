@@ -6,25 +6,35 @@ role: Developer
 level: Beginner
 hide: true
 exl-id: 89a4ab6c-de8e-4408-97d2-8b8e574227f9
-TQID: https://experienceleague.adobe.com/7D4tw7qjozSda6AgqMGhijqZjWpQQWRaoF-P-4bC3ZI
+TQID: 'https://experienceleague.adobe.com/7D4tw7qjozSda6AgqMGhijqZjWpQQWRaoF-P-4bC3ZI'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: e8d937ec-9046-41b5-834b-d22a624e0d37
+    internal-label: Campaign overview
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: b285c321f3b905150b31621941ea99608d627739
+    internal-label: Metadata
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 408
+source-wordcount: '408'
 ht-degree: 4%
-
 ---
-
 # 已知问题{#known-issues}
 
-此页面列出了&#x200B;**最新Campaign v8版本**&#x200B;中发现的已知问题。 此外，Campaign v8的限制在此页面[&#128279;](ac-guardrails.md)中列出。
+此页面列出了&#x200B;**最新Campaign v8版本**&#x200B;中发现的已知问题。 此外，Campaign v8的限制在此页面](ac-guardrails.md)中列出[。
 
 
 >[!NOTE]
@@ -94,9 +104,9 @@ Error:
 
 作为Campaign管理员，您可以在[Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=target-version%3Acampaign%2F8&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=4){target="_blank"}中下载Campaign v8.3.1客户端控制台。
 
-在此页面[&#128279;](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans){target="_blank"}中了解如何访问Adobe Software Distribution 。
+在此页面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans){target="_blank"}中了解如何访问Adobe Software Distribution [。
 
-在本页[&#128279;](connect.md)中了解如何升级您的客户端控制台
+在本页](connect.md)中了解如何升级您的客户端控制台[
 
 #### 内部引用{#issue-3-ref}
 

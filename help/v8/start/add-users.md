@@ -5,13 +5,30 @@ feature: Permissions
 role: User, Admin
 level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
-source-git-commit: 5ab598d904bf900bcb4c01680e1b4730881ff8a5
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: e3988c18-3cfa-4f16-b812-ac2d2b1056fa
+    internal-label: Permissions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 7%
-
 ---
-
 # 权限快速入门
 
 在Adobe Campaign中，用户是&#x200B;**操作员**&#x200B;和&#x200B;**操作员组**&#x200B;代表用户角色。
@@ -25,7 +42,7 @@ Adobe Campaign附带内置操作员组，如活动经理或工作流主管。 �
 已命名权限将权限授予：
 
 * 执行操作
-例如，为具有&#x200B;**准备投放**&#x200B;命名权限的&#x200B;**投放操作员**&#x200B;组的成员激活投放编辑器中的&#x200B;**分析**&#x200B;按钮
+例如，为具有**准备投放**&#x200B;命名权限的&#x200B;**投放操作员**&#x200B;组的成员激活投放编辑器中的&#x200B;**分析**&#x200B;按钮
 
 * 对文件夹的访问权限
 操作员组成员资格可以通过更改文件夹的安全性设置来授予或限制对文件夹的访问权限。 请参阅[此页面](../start/folder-permissions.md)以了解详情。 例如，它可以影响：**写访问权限**&#x200B;以创建新实体（例如投放、配置文件等），**读访问权限**&#x200B;以使用实体，**删除访问权限**&#x200B;以删除实体。

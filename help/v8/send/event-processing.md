@@ -5,22 +5,32 @@ feature: Transactional Messaging
 role: User
 level: Intermediate
 exl-id: c1deb0a1-aeba-4813-b674-a6a164b98b02
-TQID: https://experienceleague.adobe.com/Vg4aM-iHsB0c8MagdCuYkyseUBaN-T252-Lk9P5klB8
+TQID: 'https://experienceleague.adobe.com/Vg4aM-iHsB0c8MagdCuYkyseUBaN-T252-Lk9P5klB8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: d3b34fea-a110-482f-adb2-aae8d686bac8
+    internal-label: Transactional messaging
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Personalization
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 681
+source-wordcount: '681'
 ht-degree: 1%
-
 ---
-
 # 事件处理 {#event-processing}
 
 在事务性消息传递的上下文中，事件由外部信息系统生成，并通过&#x200B;**[!UICONTROL PushEvent]**&#x200B;和&#x200B;**[!UICONTROL PushEvents]**&#x200B;方法发送到Adobe Campaign。 [本节](event-description.md)中介绍了这些方法。
@@ -95,7 +105,7 @@ ht-degree: 1%
 * **待处理投放**
 该事件已处理，并且已链接投放模板。 电子邮件正在等待投放，并且已应用经典投放流程。 有关详细信息，您可以打开投放。
 * **已发送**，**已忽略**&#x200B;和&#x200B;**传递错误**
-这些投放状态可通过&#x200B;**updateEventsStatus**&#x200B;工作流恢复。 有关详细信息，您可以打开相关的投放。
+这些投放状态可通过**updateEventsStatus**&#x200B;工作流恢复。 有关详细信息，您可以打开相关的投放。
 * 未涵盖&#x200B;**事件**
 事务性消息传递路由阶段失败。 例如，Adobe Campaign未找到用作事件模板的电子邮件。
 * **事件已过期**

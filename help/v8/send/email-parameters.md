@@ -6,13 +6,25 @@ role: User
 level: Beginner
 version: Campaign v8, Campaign Classic v7
 exl-id: ad75f01e-2c6c-4607-b15a-8870d399002a
-source-git-commit: a5436f7e1f1e4ad86157dfd8943d51bf852b747c
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 50d1fd2e-0fc9-5627-bbc9-02dbc9d15e08
+    internal-label: Email
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 9%
-
 ---
-
 # 电子邮件参数 {#email-parameters}
 
 此部分介绍投放属性中特定于电子邮件投放的可用选项和参数。
@@ -79,7 +91,7 @@ ht-degree: 9%
 
 ## 启用一键式列表取消订阅 {#one-click-list-unsubscribe}
 
-一键式列表取消订阅URL是显示在电子邮件发件人信息旁边的链接或按钮，收件人只需单击一下即可立即选择退出您的邮件列表。<!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=zh-Hans#list-unsubscribe){target="_blank"}-->
+一键式列表取消订阅URL是显示在电子邮件发件人信息旁边的链接或按钮，收件人只需单击一下即可立即选择退出您的邮件列表。<!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}-->
 
 它在ISP的电子邮件界面中显示为&#x200B;**取消订阅**&#x200B;链接。 例如：
 
@@ -119,7 +131,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->您还可以手动设置[One-Click List-Unsubscribe](https://experienceleague.adobe.com/zh-hans/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"}和[&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/zh-hans/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"}方法。 Experience Cloud [可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=zh-Hans#list-unsubscribe){target="_blank"}中介绍了详细步骤。
+>您还可以手动设置[One-Click List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"}和[&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"}方法。 Experience Cloud [可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}中介绍了详细步骤。
 
 
 ## 添加SMTP标头 {#adding-smtp-headers}

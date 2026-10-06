@@ -6,13 +6,22 @@ feature: Deliverability
 role: User
 version: Campaign v8, Campaign Classic v7
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 96f1518f252be7ffa27ba8157b8a090bf4d4510d
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: 63876777-85c3-57e1-a2da-81f02956c63c
+    internal-label: Deliverability
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 5%
-
 ---
-
 # 控制消息内容{#control-message-content}
 
 为了确保您的电子邮件能够送达收件人并提高电子邮件可投放率，这些收件人必须遵守许多规则。 否则，某些邮件的内容可能会被检测为垃圾邮件。 Adobe Campaign提供了多种工具，用于使您的内容遵守这些规则。
@@ -25,7 +34,7 @@ ht-degree: 5%
 * [退订链接](#opt-out)和登陆页面：退订链接是必需的。 它必须可见且有效，并且表单必须有效。
 * 预览：使用Adobe Campaign提供的工具检查和优化电子邮件的内容（[收件箱呈现](#message-responsiveness)，[SpamAssassin](#spamassassin)）。
 
-有关在设计内容时优化可投放性的其他提示，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html?lang=zh-Hans){target="_blank"}。
+有关在设计内容时优化可投放性的其他提示，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html){target="_blank"}。
 
 >[!NOTE]
 >
@@ -51,7 +60,7 @@ ht-degree: 5%
 
 在每次发送之前，必须检查选择退出链接是否正常工作。 例如，在发送校样时，请确保链接有效，表单处于联机状态，并且验证此操作会将&#x200B;**[!UICONTROL No longer contact this recipient]**&#x200B;字段的值更改为&#x200B;**[!UICONTROL Yes]**。 您应该系统地进行此检查，因为输入链接或更改表单时始终可能存在人为错误。
 
-了解如何在此部分[&#128279;](personalization-blocks.md#ootb-personalization-blocks)中插入选择退出链接。
+了解如何在此部分](personalization-blocks.md#ootb-personalization-blocks)中插入选择退出链接[。
 
 如果在开始投放后检测到有关退订的问题，则仍然可以为单击选择退出链接的收件人手动执行退订（例如使用批量更新功能），即使他们无法确认自己的选择。
 

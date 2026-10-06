@@ -5,27 +5,40 @@ feature: Salesforce Integration
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 1e20f3b9-d1fc-411c-810b-6271360286f9
-TQID: https://experienceleague.adobe.com/N50ecfMFC641fveGfyxx4W9XvZgWPgddrdpj9KrCHBY
+TQID: 'https://experienceleague.adobe.com/N50ecfMFC641fveGfyxx4W9XvZgWPgddrdpj9KrCHBY'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
+subfeature_v2:
+  - id: f09afca2-2160-4624-bedb-639c4f4c236f
+    internal-label: Salesforce integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Administration
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 337
+source-wordcount: '363'
 ht-degree: 3%
-
 ---
-
 # 使用 Campaign 和 SFDC{#crm-sfdc}
 
 了解如何配置Campaign CRM连接器以将Campaign v8连接到&#x200B;**Salesforce.com**。
@@ -80,7 +93,7 @@ ht-degree: 3%
 
 1. 从&#x200B;**[!UICONTROL Synchronizing enumerations...]**&#x200B;链接打开助手。
 1. 选择与Adobe Campaign枚举匹配的Salesforce枚举。
-您可以将Adobe Campaign枚举的所有值替换为CRM的值：要实现此目的，请在&#x200B;**[!UICONTROL Replace]**&#x200B;列中选择&#x200B;**[!UICONTROL Yes]**。
+您可以将Adobe Campaign枚举的所有值替换为CRM的值：要实现此目的，请在**[!UICONTROL Replace]**&#x200B;列中选择&#x200B;**[!UICONTROL Yes]**。
 
    ![](assets/sfdc-enum.png)
 
@@ -92,6 +105,6 @@ Adobe Campaign和Salesforce.com现已连接。 您可以设置两个系统之间
 
 要在Adobe Campaign数据和SFDC之间同步数据，请创建工作流并使用&#x200B;**[!UICONTROL CRM connector]**&#x200B;活动。
 
-在此页面[&#128279;](crm-data-sync.md)中了解有关数据同步的更多信息。
+在此页面](crm-data-sync.md)中了解有关数据同步[的更多信息。
 
-在此页面[&#128279;](../config/enumerations.md)中了解有关Campaign 中枚举管理的更多信息。
+在此页面](../config/enumerations.md)中了解有关Campaign [中枚举管理的更多信息。

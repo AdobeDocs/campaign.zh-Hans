@@ -6,21 +6,31 @@ role: User, Admin
 level: Beginner
 exl-id: 3d61abac-03df-42d3-a950-37e41a5a7756
 version: Campaign v8, Campaign Classic v7
-TQID: https://experienceleague.adobe.com/0rN0mC1re8VV-oUscl9KqgnuEAxQ4wAnV5ubotmyZ3g
+TQID: 'https://experienceleague.adobe.com/0rN0mC1re8VV-oUscl9KqgnuEAxQ4wAnV5ubotmyZ3g'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: e3988c18-3cfa-4f16-b812-ac2d2b1056fa
+    internal-label: Permissions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 15d7b12d07f84356fac7bee2a54a0057c5d00d41
+    internal-label: Beginner
+source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
 workflow-type: tm+mt
-source-wordcount: 477
-ht-degree: 4%
-
+source-wordcount: '519'
+ht-degree: 5%
 ---
-
 # 权限快速入门{#gs-permissions}
 
 Adobe Campaign允许您定义和管理分配给用户的权限。 这些权限是一组授权或拒绝的权限和限制：
@@ -42,10 +52,10 @@ Adobe Campaign允许您定义和管理分配给用户的权限。 这些权限�
 
 关键步骤包括：
 
-* **步骤1**：在Campaign客户端控制台中定义操作员组并为其分配权限。[了解详情](manage-permissions.md#create-product-profile)。
-请注意，您还可以使用内置运算符组作为开头。这些默认组及其权限列在[此部分](manage-permissions.md#ootb-productprofiles)中。
-* **步骤2**：在Adobe Admin Console中创建与这些组匹配的产品配置文件。[了解详情](manage-permissions.md#create-product-profile)。
-您可以首先使用内置的产品配置文件。[了解详情](manage-permissions.md#ootb-productprofiles)。
+* **步骤1**：在Campaign客户端控制台中定义操作员组并为其分配权限。 [了解详情](manage-permissions.md#create-product-profile)。
+请注意，您还可以使用内置运算符组作为开头。 这些默认组及其权限在[此部分](manage-permissions.md#ootb-productprofiles)中列出。
+* **步骤2**：在Adobe Admin Console中创建与这些组匹配的产品配置文件。 [了解详情](manage-permissions.md#create-product-profile)。
+您可以首先使用内置的产品配置文件。 [了解详情](manage-permissions.md#ootb-productprofiles)。
 * **步骤3**：在Adobe Admin Console中创建用户，并将其分配给产品配置文件。 [了解详情](manage-permissions.md#add-users)。
 * **步骤4**（可选）：分配文件夹权限。 [了解详情](manage-permissions.md#ootb-productprofiles)。
 

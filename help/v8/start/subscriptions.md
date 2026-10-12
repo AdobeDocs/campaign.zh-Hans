@@ -25,9 +25,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: f1f84f565326bd683b47e6e498add3100ea81c4c
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '515'
 ht-degree: 10%
 ---
 # 管理订阅和退订 {#optin-optout}
@@ -67,7 +67,7 @@ ht-degree: 10%
 
   ![](assets/web-app.png)
 
-  请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/use-cases--web-forms.html?lang=zh-Hans#create-a-subscription--form-with-double-opt-in){target="_blank"}以了解详情。
+  请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/designing-content/web-forms/use-cases-web-forms#create-a-subscription--form-with-double-opt-in){target="_blank"}以了解详情。
 
 
 * 创建定位工作流并使用&#x200B;**[!UICONTROL Subscription service]**&#x200B;活动。

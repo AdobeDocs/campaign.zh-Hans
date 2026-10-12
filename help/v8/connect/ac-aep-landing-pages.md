@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: f1f84f565326bd683b47e6e498add3100ea81c4c
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1039'
 ht-degree: 1%
 ---
 # 从Adobe Campaign登陆页面更新Adobe Experience Platform配置文件 {#ac-aep-lp}
@@ -123,7 +123,7 @@ Adobe Cloud Platform API使用OAuth 2.0协议进行身份验证和授权。 要�
 
 >[!TAB 使用JavaScript代码活动添加选项]
 
-要在执行登陆页面工作流时自动配置这些选项，请使用以下代码将&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动添加到您的工作流。 [了解如何配置JavaScript代码活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-JavaScript-code.html?lang=zh-Hans#JavaScript-code){target="_blank"}。
+要在执行登陆页面工作流时自动配置这些选项，请使用以下代码将&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动添加到您的工作流。 [了解如何配置JavaScript代码活动](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code#JavaScript-code){target="_blank"}。
 
 在执行工作流时，系统会自动在Campaign控制台中使用提供的值创建选项。
 

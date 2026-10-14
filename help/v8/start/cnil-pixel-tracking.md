@@ -1,6 +1,6 @@
 ---
-title: 电子邮件跟踪像素与 CNIL 指南
-description: 了解CNIL关于电子邮件跟踪像素的更新指南，以及可支持合规性工作的Adobe Campaign功能。
+title: 有关电子邮件跟踪像素的指导
+description: 了解关于电子邮件跟踪像素以及可支持合规性工作的Adobe Campaign功能的法规指南。
 version: Campaign v8, Campaign Classic v7
 hide: true
 product_v2:
@@ -8,27 +8,25 @@ product_v2:
     internal-label: Campaign
   - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
     internal-label: Campaign v8
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 93335b46b1c706a9409f0816b2ced4ebc612d5fe
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 1%
+source-wordcount: '834'
+ht-degree: 0%
 ---
 
-# 了解CNIL关于电子邮件跟踪像素的更新指南
+# 有关电子邮件跟踪像素的指导
 
 此帖子仅供参考。 这不是法律建议，也不保证您遵守适用法律。 下面描述的Adobe Campaign产品功能是构建块，经过适当配置和操作后，可以支持合规的实施。 各客户有责任决定及遵守其于适用法律下之责任。
 
 ## 概述
 
-2026年4月14日，法国数据保护机构，法国国家信息和自由委员会&#x200B;_发布了关于在电子邮件中使用跟踪像素的[建议](https://www.cnil.fr/sites/default/files/2026-04/recommandation-pixels_de_suivi.pdf)。_&#x200B;该指南阐明何时需要获得同意，并强调针对电子邮件像素跟踪的适当同意实践的重要性。 此策略可能会影响向位于法国的订阅者发送电子邮件的任何实体的发送实践。
+2026年4月14日，法国数据保护机构，法国国家信息和自由委员会&#x200B;_发布了关于在电子邮件中使用跟踪像素的[建议](https://www.cnil.fr/sites/default/files/2026-04/recommandation-pixels_de_suivi.pdf)。_&#x200B;不久之后，意大利独立数据保护机构(“Garante”)发布了第 第284条（“Garante条文”）。 虽然这两个指导文件不具法律约束力，但它们都澄清何时需要获得同意，并强调适当的同意惯例对于电子邮件像素跟踪的重要性。 根据适用的欧盟隐私法，此策略可能会影响向订阅者发送电子邮件的任何实体的发送实践。
 
-CNIL提供了自建议之日起三个月的时间，要求公司通知其电子邮件收件人（“用户”）跟踪像素的存在、其目的以及用户选择退出的权利。 在此过渡期间，客户应通知用户像素跟踪信息，并在必要时提供选择退出选项。 预计CNIL将在2026年7月14日之后开始执行活动。
+随着监管机构继续澄清有关跟踪像素和相关问题的指导，Adobe将继续监控变化，并告知客户支持电子邮件营销的Adobe产品（包括Adobe Campaign）的技术功能。 Adobe有关电子邮件跟踪像素的文档反映了当前的法规指南。 Adobe将继续根据需要更新文档，以反映随着监管要求的变化，可能会影响Adobe CXO产品使用的相关更改。 推迟更新材料不代表Adobe失败。
 
-随着CNIL和其他监管机构澄清有关跟踪像素和相关问题的指导，Adobe将继续监控更新，并告知客户支持电子邮件营销的Adobe产品（包括Adobe Campaign）的技术功能。
+Adobe电子邮件营销执行应用程序（包括Adobe Journey Optimizer、Journey Optimizer B2B、Adobe Campaign和Marketo Engage）提供了控件，可帮助客户在投放或电子邮件级别管理打开跟踪。 根据适用的指导和其他法律，客户有责任确定自己的合规义务，但这些功能可能会为客户合规工作提供支持。
 
-Adobe电子邮件营销执行应用程序（包括Adobe Journey Optimizer、Journey Optimizer B2B、Adobe Campaign和Marketo Engage）提供了控件，可帮助客户在投放或电子邮件级别管理打开跟踪。 根据适用的CNIL指导和其他法律，客户有责任确定自己的合规义务，但这些功能可能会为客户合规工作提供支持。
-
-## 什么是电子邮件跟踪像素
+## 什么是电子邮件跟踪像素？
 
 电子邮件跟踪像素是嵌入到电子邮件HTML中的1x1透明图像。 收件人的电子邮件客户端加载该图像时，像素会向服务器发出ping信号，该信号记录时间戳、设备类型、电子邮件客户端等数据，有时还会记录IP地址以大致了解位置。 然后，该日志将绑定到收件人的记录，以允许营销人员查看电子邮件是否已打开。
 
@@ -38,7 +36,7 @@ Adobe电子邮件营销执行应用程序（包括Adobe Journey Optimizer、Jour
 
 ## 与电子邮件跟踪相关的Adobe Campaign功能
 
-在配置架构以满足CNIL指导时，客户可以使用Adobe Campaign的本机跟踪、架构和个性化机制来处理某些元素：
+在配置架构以解决有关电子邮件跟踪像素的指导时，客户可以使用Adobe Campaign的本机跟踪、架构和个性化机制来解决某些元素：
 
 * **投放的分类。** 使用`emailType`属性（身份验证、仅可投放性、事务性、营销、公共服务、B2B潜在客户）扩展`nms:delivery`。 分类可驱动哪些像素未经同意是允许的。
 

@@ -131,27 +131,27 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
 对于Campaign Web用户界面(v8)，请参阅：
 
-* [创建外部帐户](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/create-external-account){target="_blank"}
-* [外部数据库帐户](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database){target="_blank"}
+* [创建外部帐户](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/administration/create-external-account){target="_blank"}
+* [外部数据库帐户](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/administration/external-account-database){target="_blank"}
 
 Campaign Web UI页提供了&#x200B;**外部数据库**&#x200B;提供程序类型的更全面的列表，包括：
 
-* **[Amazon Redshift](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#amazon-redshift){target="_blank"}** / **[Amazon Redshift（旧版）](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#amazon-redshift-legacy){target="_blank"}** — 将Campaign连接到AWS Redshift Cloud Data Warehouse环境。
-* **[Azure Synapse Analytics](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#azure-synapse-analytics){target="_blank"}** — 将Campaign连接到Microsoft Azure Synapse专用SQL池。
-* **[数据库](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#databricks){target="_blank"}** — 将Campaign连接到Databricks SQL和Lakehouse工作负载。
-* **[Google BigQuery](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#google-bigquery){target="_blank"}** — 将Campaign连接到Google Cloud BigQuery分析数据集。
-* **[Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#microsoft-sql-server){target="_blank"}** — 将Campaign连接到内部部署或托管的SQL Server数据库。
-* **[MySQL](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#mysql){target="_blank"}** — 将Campaign连接到MySQL数据库以进行联合查询和工作流。
-* **[Netezza](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#netezza){target="_blank"}** — 将Campaign连接到IBM Netezza/Performance Server系统。
-* **[ODBC (Sybase ASE， Sybase IQ)](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#odbc-sybase-ase-sybase-iq){target="_blank"}** — 通过ODBC将Campaign连接到Sybase数据库引擎。
-* **[HTTP中继到远程数据库](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#http-relay-to-remote-database){target="_blank"}** — 通过HTTP中继端点连接到远程数据库。
-* **[Oracle](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#oracle){target="_blank"}** — 将Campaign连接到Oracle数据库以进行联合访问用例。
-* **[PostgreSQL](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#postgresql){target="_blank"}** — 使用FDA外部帐户将Campaign连接到PostgreSQL数据库。
-* **[SAP HANA](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#sap-hana){target="_blank"}** — 将Campaign连接到SAP HANA内存数据库环境。
-* **[Snowflake](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#snowflake){target="_blank"}** — 将Campaign连接到Snowflake云数据平台环境。
-* **[Teradata](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#teradata){target="_blank"}** — 将Campaign连接到Teradata企业数据仓库系统。
-* **[Vertica Analytics](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#vertica-analytics){target="_blank"}** — 将Campaign连接到OpenText Vertica分析数据库。
-* **[Microsoft Fabric](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/external-account-database#fabric){target="_blank"}** — 将Campaign连接到Microsoft Fabric SQL和存储服务。
+* **[Amazon Redshift](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/administration/external-account-database#amazon-redshift){target="_blank"}** / **[Amazon Redshift（旧版）](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/administration/external-account-database#amazon-redshift-legacy){target="_blank"}** — 将Campaign连接到AWS Redshift Cloud Data Warehouse环境。
+* **[Azure Synapse Analytics](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/administration/external-account-database#azure-synapse-analytics){target="_blank"}** — 将Campaign连接到Microsoft Azure Synapse专用SQL池。
+* **[数据库](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/administration/external-account-database#databricks){target="_blank"}** — 将Campaign连接到Databricks SQL和Lakehouse工作负载。
+* **[Google BigQuery](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/administration/external-account-database#google-bigquery){target="_blank"}** — 将Campaign连接到Google Cloud BigQuery分析数据集。
+* **[Microsoft SQL Server](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/administration/external-account-database#microsoft-sql-server){target="_blank"}** — 将Campaign连接到内部部署或托管的SQL Server数据库。
+* **[MySQL](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/administration/external-account-database#mysql){target="_blank"}** — 将Campaign连接到MySQL数据库以进行联合查询和工作流。
+* **[Netezza](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/administration/external-account-database#netezza){target="_blank"}** — 将Campaign连接到IBM Netezza/Performance Server系统。
+* **[ODBC (Sybase ASE， Sybase IQ)](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/administration/external-account-database#odbc-sybase-ase-sybase-iq){target="_blank"}** — 通过ODBC将Campaign连接到Sybase数据库引擎。
+* **[HTTP中继到远程数据库](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/administration/external-account-database#http-relay-to-remote-database){target="_blank"}** — 通过HTTP中继端点连接到远程数据库。
+* **[Oracle](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/administration/external-account-database#oracle){target="_blank"}** — 将Campaign连接到Oracle数据库以进行联合访问用例。
+* **[PostgreSQL](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/administration/external-account-database#postgresql){target="_blank"}** — 使用FDA外部帐户将Campaign连接到PostgreSQL数据库。
+* **[SAP HANA](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/administration/external-account-database#sap-hana){target="_blank"}** — 将Campaign连接到SAP HANA内存数据库环境。
+* **[Snowflake](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/administration/external-account-database#snowflake){target="_blank"}** — 将Campaign连接到Snowflake云数据平台环境。
+* **[Teradata](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/administration/external-account-database#teradata){target="_blank"}** — 将Campaign连接到Teradata企业数据仓库系统。
+* **[Vertica Analytics](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/administration/external-account-database#vertica-analytics){target="_blank"}** — 将Campaign连接到OpenText Vertica分析数据库。
+* **[Microsoft Fabric](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/administration/external-account-database#fabric){target="_blank"}** — 将Campaign连接到Microsoft Fabric SQL和存储服务。
 
 有关旧版客户端控制台详细信息和其他参考，请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}。
 

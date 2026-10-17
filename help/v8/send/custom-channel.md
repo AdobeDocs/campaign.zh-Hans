@@ -109,7 +109,7 @@ Adobe Campaign允许您创建与第三方集成的自定义外部或API渠道。
 
    ![](assets/cus-schema2.png){zoomable="yes"}
 
-1. 选择与您的渠道对应的选项卡，并定义字段在投放内容屏幕中的显示方式。 有关屏幕编辑的详细信息，请参阅此[页面](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html#fields){target="_blank"}。
+1. 选择与您的渠道对应的选项卡，并定义字段在投放内容屏幕中的显示方式。 有关屏幕编辑的详细信息，请参阅此[页面](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html?lang=zh-Hans#fields){target="_blank"}。
 
    ![](assets/cus-schema3.png){zoomable="yes"}
 

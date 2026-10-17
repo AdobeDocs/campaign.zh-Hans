@@ -78,11 +78,11 @@ ht-degree: 13%
 <p>
 </td>
 <td>
-<a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/lp-templates">
+<a href="https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/landing-pages/lp-templates">
 <img alt="验证" src="assets/do-not-localize/lp-reporting.jpg">
 </a>
 <div>
-<a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/lp-templates"><strong>使用登陆页面模板</strong></a>
+<a href="https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/landing-pages/lp-templates"><strong>使用登陆页面模板</strong></a>
 </div>
 <p>
 </td>

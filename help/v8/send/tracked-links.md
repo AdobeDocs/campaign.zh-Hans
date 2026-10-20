@@ -88,8 +88,8 @@ ht-degree: 6%
 * 括号[ ]
 * 大括号{ }
 
-在此示例中，URL https://www.adobe.com后跟一个分号。 收件人电子邮件客户端可能会将分号解释为URL的一部分。 因此，链接可能会断开。 要避免出现此问题，您可以通过以下方式之一以分隔符括住URL：
+在此示例中，URL https://www.adobe.com/cn后跟一个分号。 收件人电子邮件客户端可能会将分号解释为URL的一部分。 因此，链接可能会断开。 要避免出现此问题，您可以通过以下方式之一以分隔符括住URL：
 
-* (https://www.adobe.com)；
-* [https://www.adobe.com]；
-* {https://www.adobe.com}；
+* (https://www.adobe.com/cn)；
+* [https://www.adobe.com/cn]；
+* {https://www.adobe.com/cn}；

@@ -1819,7 +1819,7 @@ Campaign的审核记录会记录删除事件和新用户档案的创建，以展
 与其他Campaign用户和Adobe专家联系，分享知识并获得答案。
 
 * **[Adobe Campaign社区](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=zh-Hans){target="_blank"}** — 提问、共享解决方案并与Campaign社区建立联系
-* **[Experience League论坛](https://experienceleaguecommunities.adobe.com/?profile.language=zh-Hans){target="_blank"}** — 浏览所有Adobe产品的讨论
+* **[Experience League论坛](https://experienceleaguecommunities.adobe.com/?profile.language=zh-Hans&lang=zh_cn){target="_blank"}** — 浏览所有Adobe产品的讨论
 * **[Campaign社区办公时间](https://experienceleague.adobe.com/zh-hans){target="_blank"}** — 与Adobe专家一起参加实时会议
 
 ### 文档与学习

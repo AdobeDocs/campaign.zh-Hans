@@ -49,9 +49,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: f0e325102f748f6268a21a5397774a08a6994e51
 workflow-type: tm+mt
-source-wordcount: '3442'
+source-wordcount: '3475'
 ht-degree: 6%
 ---
 # 了解投放失败 {#delivery-failures}
@@ -156,6 +156,8 @@ Campaign投放中的有效期设置限制为&#x200B;**3.5天或更短**。 对�
 例如，如果在Campaign中将有效期设置为默认值5天，则软退回消息将进入MTA重试队列，并从该消息达到MTA时起最多重试3.5天。 在这种情况下，将不使用Campaign中设置的值。
 
 消息在MTA队列中停留3.5天且投放失败后，该消息将超时，其状态将在投放日志中从&#x200B;**[!UICONTROL Sent]**&#x200B;更新为&#x200B;**[!UICONTROL Failed]**。
+
+当下一次重试在过期时间后进行时，消息可能会在其有效期结束之前过期。 然后，投放日志显示上次投放尝试的失败。
 
 <!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=zh-Hans#defining-validity-period){target="_blank"}.-->
 

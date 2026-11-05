@@ -27,9 +27,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: cb79282ed9b2b560201a001787c439a5da462ce1
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '921'
 ht-degree: 7%
 ---
 # 创建直邮投放
@@ -138,3 +138,7 @@ ht-degree: 7%
 确认会启动指定文件中的数据提取。
 
 在营销活动上下文中，当所有批准都获得后，将通过一个特殊工作流创建提取文件，在默认配置中，当直邮投放挂起提取时，将自动启动该工作流。 可在[此部分](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=zh-Hans){target="_blank"}中了解详情。
+
+>[!NOTE]
+>
+>在工作流中使用&#x200B;**[!UICONTROL Direct mail]**&#x200B;活动时，其叫客过渡会承载目标群体，而不是生成的提取文件。 若要将文件发送到服务器，请在&#x200B;**[!UICONTROL Direct mail]**&#x200B;活动之后添加&#x200B;**[!UICONTROL Data extraction]**&#x200B;活动，然后添加&#x200B;**[!UICONTROL File transfer]**&#x200B;活动。

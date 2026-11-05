@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 0ad8b1536e0bc065131ea64d6778dc18a0f27f04
 workflow-type: tm+mt
-source-wordcount: '2133'
+source-wordcount: '2184'
 ht-degree: 1%
 ---
 # 配置外部帐户 {#config-external-accounts}
@@ -252,6 +252,10 @@ Snowflake FDA连接使用Snowflake ODBC驱动程序。 从Campaign v8.9.1开始�
   * **[!UICONTROL Encryption]**：加密类型： **[!UICONTROL None]**&#x200B;或&#x200B;**[!UICONTROL SSL]**。
 
   * **[!UICONTROL Access key]**：请参阅[Microsoft文档](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal){target="_blank"}以了解如何查找您的&#x200B;**[!UICONTROL Access key]**。
+
+  >[!NOTE]
+  >
+  >Azure Blob存储按名称前缀（而不是模式）过滤文件。 已删除文件掩码中的尾随星号(`*`)，因此`TEST_EXPORT_AZURE_*`与以`TEST_EXPORT_AZURE_`开头的所有文件匹配。 不支持星号后的字符，如`TEST_EXPORT_AZURE_*.csv`中的字符。 [请参阅Microsoft文档以了解详情](https://learn.microsoft.com/en-us/rest/api/storageservices/list-blobs){target="_blank"}。
 
 * **Microsoft Fabric** - **Microsoft Fabric**&#x200B;外部帐户允许您使用&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动在Microsoft Fabric和Adobe Campaign之间导入和导出数据。 要配置此集成，请提供以下详细信息：
 

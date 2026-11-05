@@ -18,10 +18,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 8a7bf8408d15e0bd9e1c3e72f7846bf9a79c6885
 workflow-type: tm+mt
-source-wordcount: '47'
-ht-degree: 4%
+source-wordcount: '112'
+ht-degree: 1%
 ---
 
 # 中间源平台{#mid-sourcing-platform}
@@ -45,3 +45,6 @@ ht-degree: 4%
  </tbody> 
 </table>
 
+>[!NOTE]
+>
+>中间源服务器上的日志保留期必须长于投放有效期加上&#x200B;**indicatorsDuration**&#x200B;值。 否则，在清除旧日志时，投放指标会减少，并且较低的值会同步到营销实例。 例如，如果有效期为5天，**indicatorsDuration**&#x200B;为30天，则将保留期设置为至少36天。

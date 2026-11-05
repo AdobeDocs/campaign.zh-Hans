@@ -19,9 +19,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 2d8aa27d6565e216cc0842ba22678c884479ff43
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1244'
 ht-degree: 9%
 ---
 # 配置和发送投放 {#configure-delivery}
@@ -54,7 +54,7 @@ ht-degree: 9%
 >
 >* 不得在中间源中设置此选项。
 >
->* 请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html?lang=zh-Hans#smtp-relay){target="_blank"}以了解有关SMTP服务器配置的更多信息。
+>* 请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html#smtp-relay){target="_blank"}以了解有关SMTP服务器配置的更多信息。
 
 ## 使用多批次发送 {#sending-using-multiple-waves}
 
@@ -98,6 +98,8 @@ ht-degree: 9%
 >* 确保最后一个批次不超过&#x200B;**[!UICONTROL Validity]**&#x200B;选项卡中定义的投放截止日期。 否则，某些消息可能不会发送。 在[本节](delivery-failures.md#valid-period)中了解有关投放有效期的更多信息。
 >
 >* 在配置最后批次时，还必须为重试设置足够的时间。 在[本节](delivery-failures.md#retries)中了解有关重试的详细信息。
+>
+>* 从投放联系日期开始安排批次。 如果在一个或多个批次的计划时间之后开始投放，则这些超期的批次将一起发送，而不是隔开。
 
 ### 监测批次 {#monitor-waves}
 

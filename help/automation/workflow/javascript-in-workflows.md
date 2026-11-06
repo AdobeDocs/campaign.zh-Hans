@@ -71,7 +71,7 @@ ht-degree: 7%
    1. 在`xtk:session`架构中调用`Write`方法。
 
       >[!IMPORTANT]
-      > 如果您使用Adobe Campaign v8，我们建议您在Snowflake表中对`Write`方法的&#x200B;**摄取**&#x200B;和&#x200B;**数据更新/删除** API使用暂存机制。 [了解更多信息](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/architecture/ffda/new-apis){target="_blank"}。
+      > 如果您使用Adobe Campaign v8，我们建议您在Snowflake表中对`Write`方法的&#x200B;**摄取**&#x200B;和&#x200B;**数据更新/删除** API使用暂存机制。 [了解更多信息](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/architecture/ffda/new-apis){target="_blank"}。
 
    1. 将XML代码作为写入请求的参数传递。
 
@@ -581,7 +581,7 @@ for each (var w in res.recipient)
 * `delete`操作
 
 >[!IMPORTANT]
-> 如果您使用Adobe Campaign v8，我们建议您在Snowflake表中对`Write`方法的&#x200B;**摄取**&#x200B;和&#x200B;**数据更新/删除** API使用暂存机制。 [了解更多信息](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/architecture/ffda/new-apis){target="_blank"}。
+> 如果您使用Adobe Campaign v8，我们建议您在Snowflake表中对`Write`方法的&#x200B;**摄取**&#x200B;和&#x200B;**数据更新/删除** API使用暂存机制。 [了解更多信息](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/architecture/ffda/new-apis){target="_blank"}。
 
 #### 示例1：插入或更新记录
 

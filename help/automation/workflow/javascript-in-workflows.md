@@ -27,9 +27,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 3ee068c0bb8fd8516218711ed2e0efa1cb12c643
 workflow-type: tm+mt
-source-wordcount: '1777'
+source-wordcount: '1779'
 ht-degree: 7%
 ---
 # 工作流中的 JavaScript 代码示例{#javascript-in-workflows}
@@ -71,7 +71,7 @@ ht-degree: 7%
    1. 在`xtk:session`架构中调用`Write`方法。
 
       >[!IMPORTANT]
-      > 如果您使用Adobe Campaign v8，我们建议您在Snowflake表中对`Write`方法的&#x200B;**摄取**&#x200B;和&#x200B;**数据更新/删除** API使用暂存机制。 [了解更多信息](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}。
+      > 如果您使用Adobe Campaign v8，我们建议您在Snowflake表中对`Write`方法的&#x200B;**摄取**&#x200B;和&#x200B;**数据更新/删除** API使用暂存机制。 [了解更多信息](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/architecture/ffda/new-apis){target="_blank"}。
 
    1. 将XML代码作为写入请求的参数传递。
 
@@ -581,7 +581,7 @@ for each (var w in res.recipient)
 * `delete`操作
 
 >[!IMPORTANT]
-> 如果您使用Adobe Campaign v8，我们建议您在Snowflake表中对`Write`方法的&#x200B;**摄取**&#x200B;和&#x200B;**数据更新/删除** API使用暂存机制。 [了解更多信息](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}。
+> 如果您使用Adobe Campaign v8，我们建议您在Snowflake表中对`Write`方法的&#x200B;**摄取**&#x200B;和&#x200B;**数据更新/删除** API使用暂存机制。 [了解更多信息](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/architecture/ffda/new-apis){target="_blank"}。
 
 #### 示例1：插入或更新记录
 

@@ -3,18 +3,27 @@ audience: user
 user-guide-title: Campaign自动化指南
 user-guide-description: Campaign自动化指南
 feature: Overview
-source-git-commit: 00d9c3229b7bbabfec3b1750ae84978545fdc218
+source-git-commit: 7e18801756113db5273f0108447c20d6b3ef85a3
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 82%
-
+source-wordcount: '459'
+ht-degree: 81%
 ---
-
 
 # Campaign自动化指南 {#automation}
 
 + [Campaign自动化指南](home.md)
-+ 使用工作流实现自动化 {#workflows}
++ 营销活动 {#campaign-orchestration}
+  + [营销活动入门](campaigns/set-up-campaigns.md)
+  + [创建项目和活动](campaigns/marketing-campaign-create.md)
+  + [创建和配置模板](campaigns/marketing-campaign-templates.md)
+  + [添加投放](campaigns/marketing-campaign-deliveries.md)
+  + [选择受众](campaigns/marketing-campaign-target.md)
+  + [管理文档和资产](campaigns/marketing-campaign-assets.md)
+  + [设置和管理审批](campaigns/marketing-campaign-approval.md)
+  + [循环和定期活动](campaigns/recurring-periodic-campaigns.md)
+  + [监测活动](campaigns/marketing-campaign-monitoring.md)
+  + [供应商、库存和预算](campaigns/providers-stocks-and-budgets.md)
++ 工作流 {#workflows}
   + 工作流入门 {#introduction}
     + [关于工作流](workflow/about-workflows.md)
     + 工作流类型 {#wf-type}
@@ -133,18 +142,7 @@ ht-degree: 82%
     + [管理权限](workflow/managing-rights.md)
     + [更改活动图像](workflow/change-activity-images.md)
     + [管理时区](workflow/managing-time-zones.md)
-+ 营销活动编排 {#campaign-orchestration}
-  + [营销活动入门](campaigns/set-up-campaigns.md)
-  + [创建项目和活动](campaigns/marketing-campaign-create.md)
-  + [创建和配置模板](campaigns/marketing-campaign-templates.md)
-  + [添加投放](campaigns/marketing-campaign-deliveries.md)
-  + [选择受众](campaigns/marketing-campaign-target.md)
-  + [管理文档和资产](campaigns/marketing-campaign-assets.md)
-  + [设置和管理审批](campaigns/marketing-campaign-approval.md)
-  + [循环和定期活动](campaigns/recurring-periodic-campaigns.md)
-  + [监测活动](campaigns/marketing-campaign-monitoring.md)
-  + [供应商、库存和预算](campaigns/providers-stocks-and-budgets.md)
-+ 活动优化（插件）{#campaign-optimization}
++ 活动优化（插件） {#campaign-optimization}
   + [营销活动类型入门](campaign-opt/campaign-typologies.md)
   + [筛选规则](campaign-opt/filtering-rules.md)
   + [控制规则](campaign-opt/control-rules.md)
@@ -152,12 +150,6 @@ ht-degree: 82%
   + [一致性规则](campaign-opt/consistency-rules.md)
   + [应用规则](campaign-opt/apply-rules.md)
   + [活动模拟](campaign-opt/campaign-simulations.md)
-+ 营销资源管理（加载项）{#mrm}
-  + [营销资源管理入门](mrm/about-marketing-resource-management.md)
-  + [创建和管理任务](mrm/creating-and-managing-tasks.md)
-  + [控制成本](mrm/controlling-costs.md)
-  + [管理营销资源](mrm/managing-marketing-resources.md)
-  + [论坛](mrm/discussion-forums.md)
 + 分布式营销（附加） {#distributed-marketing}
   + [分布式营销入门](distributed-marketing/about-distributed-marketing.md)
   + [创建本地活动](distributed-marketing/creating-a-local-campaign.md)
@@ -166,4 +158,10 @@ ht-degree: 82%
   + [访问活动](distributed-marketing/accessing-campaigns.md)
   + [跟踪活动](distributed-marketing/tracking-a-campaign.md)
   + [用例](distributed-marketing/examples.md)
++ 营销资源管理（加载项） {#mrm}
+  + [营销资源管理入门](mrm/about-marketing-resource-management.md)
+  + [创建和管理任务](mrm/creating-and-managing-tasks.md)
+  + [控制成本](mrm/controlling-costs.md)
+  + [管理营销资源](mrm/managing-marketing-resources.md)
+  + [论坛](mrm/discussion-forums.md)
 + [&lt;返回Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/campaign-home)

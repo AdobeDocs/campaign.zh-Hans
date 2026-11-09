@@ -5,9 +5,9 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: b5e9265db5409f3f0fada35c43cb08fafa1ec4e0
+source-git-commit: 9b9c573de6120f4b3da0d5eee98192b56b4754df
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '882'
 ht-degree: 85%
 ---
 
@@ -39,15 +39,7 @@ ht-degree: 85%
   + [常见问题解答](start/campaign-faq-comprehensive.md)
   + {hide-from-toc}[常见问题解答](start/campaign-faq.md)
   + {hide-from-toc}[电子邮件跟踪像素和CNIL指南](start/cnil-pixel-tracking.md)
-+ 管理和权限 {#permissions}
-  + [权限入门](start/gs-permissions.md)
-  + [管理用户权限](start/manage-permissions.md)
-  + [添加文件夹权限](start/folder-permissions.md)
-  + [控制面板](config/self-service.md)
-+ 营销活动管理 {#campaigns}
-  + [开始使用营销活动](start/campaigns.md)
-  + [Campaign Orchestration文档>](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans)
-+ 发送消息 {#send}
++ 消息 {#send}
   + [开始使用消息功能](start/gs-message.md)
   + [创建您的第一个投放](start/create-message.md)
   + [使用投放模板](send/create-templates.md)
@@ -123,7 +115,7 @@ ht-degree: 85%
       + [收集和处理事件](send/event-processing.md)
       + [了解事件描述](send/event-description.md)
       + [发送和监测消息](send/delivery-execution.md)
-+ 轮廓和受众 {#audience}
++ 用户档案和受众 {#audience}
   + [轮廓和受众入门](audiences/gs-audiences.md)
   + [使用受众](start/audiences.md)
   + [访问轮廓](audiences/view-profiles.md)
@@ -139,17 +131,16 @@ ht-degree: 85%
     + {hide-from-toc}[与Adobe解决方案共享受众](start/shared-audiences.md)
   + {hide-from-toc}[最佳做法](audiences/audiences-best-practices.md)
   + [管理订阅](start/subscriptions.md)
-+ 登陆页面和Forms {#content}
++ 登陆页面和表单 {#content}
   + [创建登陆页面](dev/landing-pages.md)
   + [设计 Web 应用程序和表单](dev/webapps.md)
++ 营销活动 {#campaigns}
+  + [开始使用营销活动](start/campaigns.md)
+  + [Campaign Orchestration文档>](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans)
 + 工作流 {#workflows}
   + [工作流入门](config/workflows.md)
   + [工作流文档>](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)
-+ 隐私和安全性 {#privacy}
-  + [管理隐私请求](start/privacy.md)
-  + [安全准则](config/security.md)
-  + [增强的安全附加功能](config/enhanced-security.md)
-+ 选件管理 — 互动 {#offers}
++ 优惠和互动 {#offers}
   + [实时互动入门](interaction/interaction.md)
   + [环境和架构](interaction/interaction-architecture.md)
   + [最佳实践](interaction/interaction-best-practices.md)
@@ -167,7 +158,13 @@ ht-degree: 85%
     + [管理匿名互动](interaction/anonymous-interactions.md)
   + [报告和历史记录](interaction/interaction-tracking.md)
   + [用例](interaction/interaction-use-cases.md)
-+ 跟踪和分析 {#analytics}
++ 查询和数据 {#data}
+  + 查询数据库 {#query}
+    + [使用查询编辑器](start/query-editor.md)
+    + [设计查询](start/design-queries.md)
+    + [定义过滤器条件](start/filter-conditions.md)
+  + [导入数据](start/import.md)
++ 报告和跟踪 {#analytics}
   + 消息跟踪 {#tracking}
     + [跟踪入门](send/tracking.md)
     + [配置跟踪的链接](send/tracked-links.md)
@@ -190,13 +187,6 @@ ht-degree: 85%
       + [投放报告](reporting/delivery-reports.md)
       + [内置量度计算](reporting/metrics-calculation.md)
     + [自定义报告](reporting/custom-reports.md)
-+ 数据管理 {#data}
-  + 查询数据库 {#query}
-    + [使用查询编辑器](start/query-editor.md)
-    + [设计查询](start/design-queries.md)
-    + [定义过滤器条件](start/filter-conditions.md)
-  + [导入数据](start/import.md)
-  + [工作流文档>](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)
 + 集成 {#connect}
   + [将 Campaign 与其他解决方案配合使用](connect/integration.md)
   + Campaign + Experience Platform {#ac-aep}
@@ -215,6 +205,15 @@ ht-degree: 85%
     + [使用 Campaign 和 SFDC](connect/ac-sfdc.md)
     + [使用 Campaign 和 Microsoft Dynamics](connect/ac-ms-dyn.md)
     + [同步数据](connect/crm-data-sync.md)
++ 管理和权限 {#permissions}
+  + [权限入门](start/gs-permissions.md)
+  + [管理用户权限](start/manage-permissions.md)
+  + [添加文件夹权限](start/folder-permissions.md)
+  + [控制面板](config/self-service.md)
++ 隐私和安全性 {#privacy}
+  + [管理隐私请求](start/privacy.md)
+  + [安全准则](config/security.md)
+  + [增强的安全附加功能](config/enhanced-security.md)
 + 架构 {#architecture}
   + [全局原则](architecture/general-architecture.md)
   + [架构模型](architecture/architecture.md)

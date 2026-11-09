@@ -39,7 +39,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Adobe Campaign中调查的生命周期及其发布和交付模式与Web窗体中的类似：这些在[此部分](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}中有详细说明。
+>Adobe Campaign中调查的生命周期及其发布和交付模式与Web窗体中的类似：这些在[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}中有详细说明。
 
 ## 调查仪表板 {#survey-dashboard}
 
@@ -69,7 +69,7 @@ ht-degree: 3%
 
 在编辑调查时，其URL包含参数&#x200B;**[!UICONTROL __uuid]**，这表示调查处于测试阶段且尚未联机。 通过此URL访问调查时，创建的记录不会计入跟踪（报表）中。 源被强制设置为值&#x200B;**[!UICONTROL Adobe Campaign]**。
 
-有关URL参数的详细信息，请参阅[此页面](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/defining-web-forms-properties#form-url-parameters){target="_blank"}。
+有关URL参数的详细信息，请参阅[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/designing-content/web-forms/defining-web-forms-properties#form-url-parameters){target="_blank"}。
 
 ### 调查报告 {#reports-on-surveys}
 
@@ -103,7 +103,7 @@ ht-degree: 3%
 
    要导出报表数据，请单击&#x200B;**[!UICONTROL Export]**&#x200B;按钮并选择导出格式。
 
-   有关导出报表数据的更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign){target="_blank"}。
+   有关导出报表数据的更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign){target="_blank"}。
 
 1. 导出答案
 
@@ -181,4 +181,4 @@ ht-degree: 3%
 
 ## 标准化数据 {#standardizing-data}
 
-可以在Adobe Campaign中为使用别名收集的数据设置标准化流程。 这使您能够标准化存储在数据库中的数据：为此，请在包含相关信息的明细列表中定义别名。 在[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中了解如何&#x200B;**使用枚举**。
+可以在Adobe Campaign中为使用别名收集的数据设置标准化流程。 这使您能够标准化存储在数据库中的数据：为此，请在包含相关信息的明细列表中定义别名。 在[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中了解如何&#x200B;**使用枚举**。

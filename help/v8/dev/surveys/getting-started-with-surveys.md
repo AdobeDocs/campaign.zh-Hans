@@ -125,7 +125,7 @@ ht-degree: 1%
 
   >[!NOTE]
   >
-  >对于每个字段或问题，您可以根据&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中的选项调整页面布局以满足您的需求。 调查屏幕的布局在[此部分](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}中有详细说明。
+  >对于每个字段或问题，您可以根据&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中的选项调整页面布局以满足您的需求。 调查屏幕的布局在[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}中有详细说明。
 
   在详细信息屏幕中，单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡以查看刚刚创建的调查结果的呈现。
 

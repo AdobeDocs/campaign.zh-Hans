@@ -53,13 +53,13 @@ Adobe Campaign包括一个用于定义和发布Web应用程序的图形模块。
 
 >[!NOTE]
 >
->* 有关创建标准Web表单的详细步骤，请参阅[本文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}。
+>* 有关创建标准Web表单的详细步骤，请参阅[本文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}。
 >
->* [此文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-applications/about-web-applications){target="_blank"}中详细介绍了Web应用程序管理。 请参阅本章以了解更多信息。
+>* [此文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/designing-content/web-applications/about-web-applications){target="_blank"}中详细介绍了Web应用程序管理。 请参阅本章以了解更多信息。
 
 ## 功能范围 {#campaign-surveys-scope}
 
-在Adobe Campaign中，使用[Web应用程序](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}可以：
+在Adobe Campaign中，使用[Web应用程序](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}可以：
 
 * 创建多页表单，
 * 使用集成的翻译工具管理多语言表单，
@@ -90,7 +90,7 @@ Adobe Campaign包括一个用于定义和发布Web应用程序的图形模块。
 1. 发布，然后将调查提交给收件人（例如，在投放或网站中包含链接）。
 1. 监视响应并查看报告。
 
-有关这些步骤的配置和顺序的更多信息，请参阅[本文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}。 本章只详细介绍了特定于调查的配置。
+有关这些步骤的配置和顺序的更多信息，请参阅[本文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}。 本章只详细介绍了特定于调查的配置。
 
 >[!CAUTION]
 >
@@ -107,4 +107,4 @@ Adobe Campaign包括一个用于定义和发布Web应用程序的图形模块。
 
 >[!NOTE]
 >
->设置详细信息可在[此文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}中找到。
+>设置详细信息可在[此文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}中找到。

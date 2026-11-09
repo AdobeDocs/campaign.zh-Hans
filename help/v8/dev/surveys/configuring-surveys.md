@@ -36,7 +36,7 @@ ht-degree: 0%
 
 在线调查是完全可配置和定制的，可满足您的要求。 必须在属性窗口中输入参数。
 
-可用参数在[此文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/designing-content/web-forms/defining-web-forms-properties){target="_blank"}中有详细说明。
+可用参数在[此文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/designing-content/web-forms/defining-web-forms-properties){target="_blank"}中有详细说明。
 
 ![](assets/s_ncs_admin_survey_properties_general.png)
 

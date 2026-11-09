@@ -19,9 +19,9 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '126'
 ht-degree: 0%
 ---
 # 配置在线调查{#configuring-surveys}
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 在线调查是完全可配置和定制的，可满足您的要求。 必须在属性窗口中输入参数。
 
-可用参数在[此文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/designing-content/web-forms/defining-web-forms-properties){target="_blank"}中有详细说明。
+可用参数在[此文档](../web/defining-web-forms-properties.md)中有详细说明。
 
 ![](assets/s_ncs_admin_survey_properties_general.png)
 

@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: cb79282ed9b2b560201a001787c439a5da462ce1
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 7%
+source-wordcount: '904'
+ht-degree: 8%
 ---
 # 创建直邮投放
 
@@ -90,11 +90,11 @@ ht-degree: 7%
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
-您可以在提取文件中插入个性化URL。 有关详细信息，请参阅Adobe Campaign Classic [文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/publishing-a-web-form.html?lang=zh-Hans){target="_blank"}。
+您可以在提取文件中插入个性化URL。 如需详细信息，请参阅[此小节](../dev/web/publishing-a-web-form.md)。
 
 >[!NOTE]
 >
->此助理包括导出助理的详细步骤Adobe Campaign Classic [文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html?lang=zh-Hans){target="_blank"}。
+>此助理包括导出助理的详细步骤Adobe Campaign Classic [文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html){target="_blank"}。
 
 ## 验证投放{#validating}
 

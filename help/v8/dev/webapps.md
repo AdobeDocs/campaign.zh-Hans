@@ -27,16 +27,22 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6db6c9152f6060b40596bd65a2ce705f916401be
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '227'
 ht-degree: 0%
 ---
 # Web应用程序和Web窗体入门{#gs-ac-web}
 
+>[!NOTE]
+>
+>对于大多数常见用例，请在Campaign Web用户界面中创建登陆页面，您可以在其中轻松设计和发布这些页面。 如本节所述，在客户端控制台中创建的登陆页面提供了更多设置，并涵盖了更高级的用例。
+>
+>[在Campaign Web用户界面中了解有关登陆页面的更多信息](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
+
 Adobe Campaign集成了一个图形模块，用于定义和发布&#x200B;**Web窗体**，以创建包含输入和选择字段的页面，其中可能包含来自数据库的数据。 这样，您就可以设计并发布用户可访问的网页，以便查看或输入信息。
 
-请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=zh-Hans#designing-content){target="_blank"}以了解如何创建和发布Web窗体
+在[本节](web/about-web-forms.md)中了解如何创建和发布Web窗体
 
 ![](assets/sample.png)
 
@@ -44,4 +50,4 @@ Adobe Campaign还允许您创建和发布动态和交互式&#x200B;**Web应用�
 
 您可以创建页面，例如外部网上的编辑表单，或者创建通知表单，其中包含来自具有表、图表、输入表单等数据库的数据。此功能允许您设计和发布网页，用户可以在其中查找或输入信息。
 
-请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-applications/about-web-applications.html?lang=zh-Hans#designing-content){target="_blank"}以了解如何创建和发布Web应用程序
+在[本节](web/about-web-applications.md)中了解如何创建和发布Web应用程序

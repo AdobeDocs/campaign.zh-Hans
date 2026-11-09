@@ -21,9 +21,9 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '944'
 ht-degree: 1%
 ---
 # 创建调查的关键步骤{#getting-started-with-surveys}
@@ -125,7 +125,7 @@ ht-degree: 1%
 
   >[!NOTE]
   >
-  >对于每个字段或问题，您可以根据&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中的选项调整页面布局以满足您的需求。 调查屏幕的布局在[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}中有详细说明。
+  >对于每个字段或问题，您可以根据&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中的选项调整页面布局以满足您的需求。 调查屏幕的布局在[此部分](../web/about-web-forms.md)中有详细说明。
 
   在详细信息屏幕中，单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡以查看刚刚创建的调查结果的呈现。
 

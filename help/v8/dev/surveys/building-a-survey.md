@@ -15,9 +15,9 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '797'
 ht-degree: 2%
 ---
 # 设计调查{#building-a-survey}
@@ -42,7 +42,7 @@ Web窗体通过树的&#x200B;**[!UICONTROL Resources > Online > Web applications
 
 >[!NOTE]
 >
->有关如何为Web窗体定义内容和创建屏幕布局的详细信息，请参阅[本文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}。
+>有关如何为Web窗体定义内容和创建屏幕布局的详细信息，请参阅[本文档](../web/about-web-forms.md)。
 
 ## 添加字段 {#adding-fields}
 
@@ -71,7 +71,7 @@ Web窗体通过树的&#x200B;**[!UICONTROL Resources > Online > Web applications
 
 ![](assets/s_ncs_admin_survey_change_type.png)
 
-[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}中详细介绍了各种类型的可用字段。
+[此部分](../web/about-web-forms.md)中详细介绍了各种类型的可用字段。
 
 ## 特定于调查的元素 {#survey-specific-elements}
 
@@ -106,7 +106,7 @@ Web窗体通过树的&#x200B;**[!UICONTROL Resources > Online > Web applications
 
 ### 添加问题 {#adding-questions}
 
-有两种类型的容器：标准和问题。 标准容器用于配置页面布局和页面中的条件显示。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}。
+有两种类型的容器：标准和问题。 标准容器用于配置页面布局和页面中的条件显示。 [了解详情](../web/about-web-forms.md)。
 
 使用&#x200B;**问题**&#x200B;容器向页面添加问题，并在层次结构中插入下面的可能答案。 用户对此类型容器中的问题的响应可以在报告中分析。
 
@@ -120,7 +120,7 @@ Web窗体通过树的&#x200B;**[!UICONTROL Resources > Online > Web applications
 
 >[!NOTE]
 >
->有关使用HTML编辑器的更多信息，请参阅[本文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/designing-content/web-forms/about-web-forms){target="_blank"}。
+>有关使用HTML编辑器的更多信息，请参阅[本文档](../web/about-web-forms.md)。
 
 例如：
 

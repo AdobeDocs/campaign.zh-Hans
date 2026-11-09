@@ -29,9 +29,9 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '3864'
+source-wordcount: '3849'
 ht-degree: 34%
 ---
 # 将数据导入 Campaign {#ootb-profiles}
@@ -443,7 +443,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 >[!NOTE]
 >
->与中的控制台中所有可用列表一样，默认情况下，**[!UICONTROL Data preview]**&#x200B;窗口中仅显示前200行。 若要更改此设置，请在&#x200B;**[!UICONTROL Lines to display]**&#x200B;框中输入一个数字，然后单击&#x200B;**[!UICONTROL Start the preview of the data]**。 [了解详情](../config/ui-settings.md#manage-and-customize-lists)
+>与中的控制台中所有可用列表一样，默认情况下，**[!UICONTROL Data preview]**&#x200B;窗口中仅显示前200行。 若要更改此设置，请在&#x200B;**[!UICONTROL Lines to display]**&#x200B;框中输入一个数字，然后单击&#x200B;**[!UICONTROL Start the preview of the data]**。 [了解详情](../config/ui-settings.md#customize-lists)
 
 单击助理器底部的选项卡，从列结果预览切换到XML结果。 您还可以查看生成的 SQL 查询。
 
@@ -462,7 +462,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 ![](assets/web-form-page.png)
 
-请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/web-forms/about-web-forms.html?lang=zh-Hans){target="_blank"}以了解如何创建Web窗体。
+在[本节](../dev/web/about-web-forms.md)中了解如何创建Web窗体。
 
 **相关主题**
 

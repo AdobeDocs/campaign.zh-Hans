@@ -28,7 +28,7 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 3%
@@ -67,7 +67,7 @@ ht-degree: 3%
 
 * **[!UICONTROL Distribution context]**：如果您使用&#x200B;**[!UICONTROL Split]**&#x200B;类型活动来限制目标群体，请选择&#x200B;**[!UICONTROL Specified in the transition]**&#x200B;选项。 在这种情况下，在拆分活动中输入分发模板。 如果不限制定向群体，请在此处选择&#x200B;**[!UICONTROL Explicit]**&#x200B;选项，然后在&#x200B;**[!UICONTROL Data distribution]**&#x200B;字段中输入分发模板。
 
-  有关创建数据分发模板的详细信息，请参阅[限制每个数据分发的子集记录数](split.md#limiting-the-number-of-subset-records-per-data-distribution)。
+  有关创建数据分发模板的详细信息，请参阅[限制每个数据分发的子集记录数](split.md#limit-the-number-of-subset-records-per-data-distribution)。
 
 * **[!UICONTROL Approval management]**
 

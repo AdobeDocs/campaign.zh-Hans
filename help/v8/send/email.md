@@ -28,7 +28,7 @@ topic_v2:
     internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 8%
@@ -39,7 +39,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->若要创建引人入胜的单独定制电子邮件，请浏览至[Web用户界面](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui)。 Adobe Campaign附带电子邮件Designer，它是一个直观的拖放界面，允许您设计和优化每封电子邮件的所有内容。
+>若要创建引人入胜的单独定制电子邮件，请浏览至[Web用户界面](../start/campaign-ui.md#ac-web-ui)。 Adobe Campaign附带电子邮件Designer，它是一个直观的拖放界面，允许您设计和优化每封电子邮件的所有内容。
 
 
 了解在[此页面](../start/create-message.md)中创建和配置投放的关键步骤。
@@ -111,7 +111,7 @@ ht-degree: 8%
 
 您的第一个电子邮件投放已准备就绪。 您现在需要定义受众、验证投放并发送它。
 
-在此[用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=zh-Hans){target="_blank"}中了解如何创建工作流以导入电子邮件内容。
+在此[用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}中了解如何创建工作流以导入电子邮件内容。
 
 >[!MORELIKETHIS]
 >
@@ -120,7 +120,7 @@ ht-degree: 8%
 >* [选择电子邮件的受众](../audiences/gs-audiences.md)
 >* [验证投放并发送校样](preview-and-proof.md)
 >* [配置并发送投放](configure-and-send.md)
->* [投放最佳实践](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hans){target="_blank"}
+>* [投放最佳实践](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}
 
 ## 测试和验证电子邮件
 

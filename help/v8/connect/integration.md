@@ -30,7 +30,7 @@ topic_v2:
     internal-label: Implementation
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 12%
@@ -57,13 +57,13 @@ Campaign v8可与以下Adobe解决方案配合使用。 浏览链接以了解有
 
 您还可以将Experience Cloud解决方案中的&#x200B;**受众**&#x200B;和&#x200B;**资产**&#x200B;与资产共享和受众共享功能相结合。
 
-请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=zh-Hans#integrating-with-adobe-experience-cloud){target="_blank"}以了解有关Campaign与Experience Cloud解决方案之间的&#x200B;**受众共享**&#x200B;的更多信息。
+请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud){target="_blank"}以了解有关Campaign与Experience Cloud解决方案之间的&#x200B;**受众共享**&#x200B;的更多信息。
 
-请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=zh-Hans#integrating-with-adobe-experience-cloud){target="_blank"}以了解有关Campaign与Experience Cloud解决方案之间的&#x200B;**资源共享**&#x200B;的更多信息。
+请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud){target="_blank"}以了解有关Campaign与Experience Cloud解决方案之间的&#x200B;**资源共享**&#x200B;的更多信息。
 
 >[!NOTE]
 >
->作为托管Cloud Services用户，[联系Adobe](../start/campaign-faq.md#support)以将Campaign与Adobe Experience Cloud服务和解决方案连接。
+>作为托管Cloud Services用户，[联系Adobe](../start/campaign-faq-comprehensive.md#support)以将Campaign与Adobe Experience Cloud服务和解决方案连接。
 
 
 ## 与您的CRM连接器集成{#gs-crm-connectors}

@@ -3,6 +3,7 @@ product: campaign
 title: 管理营销资源
 description: 了解如何管理营销资源
 feature: Campaigns, Resource Management
+version: Campaign v8, Campaign Classic v7
 role: User
 exl-id: 4d91fb7d-f846-4644-b83d-5a6a988ae297
 TQID: 'https://experienceleague.adobe.com/YowEClSN-SSHkR3yXX57hKjwXY-6JUjakGlccGKS6V8'
@@ -22,7 +23,7 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
 workflow-type: tm+mt
 source-wordcount: '1113'
 ht-degree: 1%
@@ -43,7 +44,7 @@ ht-degree: 1%
 
 1. 单击 **[!UICONTROL Create]** 按钮。
    ![](assets/add-a-mkt-resource.png)
-1. 将该文件拖放到“营销资源”窗口中，以将其上传到Campaign服务器。 您还可以使用&#x200B;**[!UICONTROL Upload file to server...]**&#x200B;链接。
+1. 将该文件拖放到“营销资源”窗口中，以将其上传到Campaign服务器。 您还可以使用&#x200B;**[!UICONTROL Upload file to server...]**链接。
    ![](assets/mkt-resource-creation.png)
 
 上传完成后，资源将添加到可用资源列表中。

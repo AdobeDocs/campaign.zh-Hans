@@ -40,7 +40,7 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 3%
@@ -94,7 +94,7 @@ Campaign提供了一组新护栏，以防止在[!DNL Snowflake]数据库中插�
 
 >[!NOTE]
 >
->从Campaign v8.3开始提供这些护栏。 要检查您的版本，请参阅[此部分](../start/compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>从Campaign v8.3开始提供这些护栏。 要检查您的版本，请参阅[此部分](../start/compatibility-matrix.md)
 
 ### 投放准备 {#remove-duplicates-delivery-preparation}
 

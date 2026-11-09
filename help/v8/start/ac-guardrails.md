@@ -26,7 +26,7 @@ level_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 78%
@@ -44,7 +44,7 @@ ht-degree: 78%
 * 采用[企业版 (FFDA) 部署](../../v8/architecture/enterprise-deployment.md)时，不提供双向数据复制：仅能从 Campaign 本地数据库复制到云数据库
 * [此部分](v7-to-v8.md#gs-unavailable-features)列出的功能在当前 Campaign v8 内部版本中不可用
 * 用户界面中仍显示某些不可用或已删除的功能
-* 采用[企业版 (FFDA) 部署](../architecture/enterprise-deployment.md)时，订阅（选择启用）和退订（选择禁用）机制以及移动设备注册是异步流程。 请求是每小时通过特定的技术工作流处理的。 [了解详情](../architecture/replication.md#tech-wf)
+* 采用[企业版 (FFDA) 部署](../architecture/enterprise-deployment.md)时，订阅（选择启用）和退订（选择禁用）机制以及移动设备注册是异步流程。 请求是每小时通过特定的技术工作流处理的。 [了解详情](../architecture/replication.md#workflows)
 * 在[企业(FFDA)部署](../architecture/enterprise-deployment.md)的上下文中，重复项需要由最终用户手动处理。 [了解详情](../architecture/keys.md)
 * Adobe Campaign v8 不支持 API 和 Web 应用程序的扩展吞吐量 - 如有特定需求，请联系 Adobe 以获取指导
 * 在[企业(FFDA)部署](../architecture/enterprise-deployment.md)的上下文中，Adobe Campaign活动优化模块不考虑压力类型规则中的计划投放。 请参阅[此页面](../../automation/campaign-opt/pressure-rules.md)以了解详情

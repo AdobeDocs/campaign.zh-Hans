@@ -38,7 +38,7 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1295'
 ht-degree: 5%
@@ -221,7 +221,7 @@ For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-f
 >
 >创建新架构或在架构扩展期间，您需要为整个架构保留相同的主键序列值(@pkSequence)。
 
-在[本节](database-mapping.md#management-of-keys)中了解有关密钥的更多信息。
+在[本节](database-mapping.md)中了解有关密钥的更多信息。
 
 ## 属性（字段） {#attributes--fields-}
 
@@ -229,9 +229,9 @@ For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-f
 
 ![](assets/schemaextension_2.png)
 
-[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=zh-Hans#content-model){target="_blank"}的`<attribute>`元素部分中提供了属性的完整列表。 以下是一些更常用的属性： **@advanced**、**@dataPolicy**、**@default**、**@desc**、**@enum**、**@expr**、**@label**、**@length**、**@name**、**@notNull**、**@required**、**@ref**、**@xml**、**@type**。
+[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html#content-model){target="_blank"}的`<attribute>`元素部分中提供了属性的完整列表。 以下是一些更常用的属性： **@advanced**、**@dataPolicy**、**@default**、**@desc**、**@enum**、**@expr**、**@label**、**@length**、**@name**、**@notNull**、**@required**、**@ref**、**@xml**、**@type**。
 
-有关每个属性的更多信息，请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=zh-Hans#configuring-campaign-classic){target="_blank"}中的属性说明。
+有关每个属性的更多信息，请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic){target="_blank"}中的属性说明。
 
 ### 示例 {#examples}
 

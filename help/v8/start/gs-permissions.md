@@ -26,7 +26,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 5%
@@ -73,7 +73,7 @@ Adobe Admin Console是一个中央位置，用于管理整个组织的Adobe授�
 
 在Admin Console中，Campaign的每个Adobe Experience Cloud **产品配置文件**&#x200B;都与Campaign客户端控制台中的&#x200B;**操作员组**&#x200B;关联。
 
-在[此页面](manage-permissions.md#create-a-product-profile)中了解如何创建和分配产品配置文件。
+在[此页面](manage-permissions.md#create-product-profile)中了解如何创建和分配产品配置文件。
 
 ## 营销活动已命名权限{#named-rights}
 

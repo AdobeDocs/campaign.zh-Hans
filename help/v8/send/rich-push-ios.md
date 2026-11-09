@@ -1,6 +1,6 @@
 ---
 audience: end-user
-title: 设计富推送通知投放
+title: 设计 iOS 富媒体推送投放
 description: 了解如何使用Adobe Campaign Web设计iOS富推送通知投放
 feature: Push
 role: User
@@ -25,7 +25,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 5%
@@ -34,7 +34,7 @@ ht-degree: 5%
 
 >[!IMPORTANT]
 >
->在设计富推送通知之前，您首先需要配置V2连接器。 有关详细过程，请参阅[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application)。
+>在设计富推送通知之前，您首先需要配置V2连接器。 有关详细过程，请参阅[此页面](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application)。
 
 ## 定义iOS通知的内容 {#push-message}
 

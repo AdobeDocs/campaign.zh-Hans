@@ -3,6 +3,7 @@ product: campaign
 title: 创建和管理任务
 description: 创建和管理任务
 feature: Campaigns, Resource Management
+version: Campaign v8, Campaign Classic v7
 role: User
 exl-id: 730d1712-53a6-4bf7-9aac-523b06bd0d0a
 TQID: 'https://experienceleague.adobe.com/LggpejZ5h1fYPh3efYx2f7x3DEhqVlvPndjgNkNUUCs'
@@ -22,7 +23,7 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
 workflow-type: tm+mt
 source-wordcount: '3766'
 ht-degree: 0%
@@ -205,7 +206,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 >[!NOTE]
 >
->有关费用和预算的更多信息，请参阅[此部分](../campaigns/providers-stocks-and-budgets.md#cost-commitment--calculation-and-charging)。
+>有关费用和预算的更多信息，请参阅[此部分](../campaigns/providers-stocks-and-budgets.md)。
 
 在此窗口中，您还可以定义要达到的目标。 目标以任务的预测收入表示。
 

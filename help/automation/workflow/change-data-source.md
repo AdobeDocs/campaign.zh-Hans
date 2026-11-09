@@ -25,19 +25,19 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 2%
 ---
 # 更改数据源 {#change-data-source}
 
-使用&#x200B;**[!UICONTROL Change data source]**&#x200B;活动更改[工作流工作表](use-workflow-data.md#workflow-temporary-work-table)的数据源。 此活动为跨不同数据源(如联合数据访问(FDA)、Campaign云数据库(FFDA)和Campaign本地数据库)管理数据提供了更大的灵活性。
+使用&#x200B;**[!UICONTROL Change data source]**&#x200B;活动更改[工作流工作表](use-workflow-data.md#work-table)的数据源。 此活动为跨不同数据源(如联合数据访问(FDA)、Campaign云数据库(FFDA)和Campaign本地数据库)管理数据提供了更大的灵活性。
 
 工作流&#x200B;**[!UICONTROL Working table]**&#x200B;用于处理与工作流活动共享数据。
 
-默认情况下，**[!UICONTROL Working table]**&#x200B;是在与需要查询的数据源相同的数据库中创建的。
-例如，在查询存储在云数据库上的&#x200B;**[!UICONTROL Recipients]**&#x200B;表时，工作流会在同一云数据库上创建&#x200B;**[!UICONTROL Working table]**。
+默认情况下，**[!UICONTROL Working table]**是在与需要查询的数据源相同的数据库中创建的。
+例如，在查询存储在云数据库上的**[!UICONTROL Recipients]**&#x200B;表时，工作流会在同一云数据库上创建&#x200B;**[!UICONTROL Working table]**。
 
 使用&#x200B;**[!UICONTROL Change Data Source]**&#x200B;活动为您的&#x200B;**[!UICONTROL Working table]**&#x200B;使用其他数据源。
 
@@ -57,7 +57,7 @@ ht-degree: 2%
 
 1. 使用&#x200B;**[!UICONTROL Query]**&#x200B;活动查询目标收件人。
 
-   有关&#x200B;**[!UICONTROL Query]**&#x200B;活动的详细信息，请参阅此[页面](query.md#create-a-query)。
+   有关&#x200B;**[!UICONTROL Query]**&#x200B;活动的详细信息，请参阅此[页面](query.md#creating-a-query)。
 
 1. 添加&#x200B;**[!UICONTROL Change data source]**&#x200B;活动。
 

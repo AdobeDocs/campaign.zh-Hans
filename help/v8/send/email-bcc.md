@@ -24,7 +24,7 @@ level_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 1%
@@ -51,7 +51,7 @@ Adobe Campaign本身不会管理存档文件。 然后，对应于所发送电�
 
 >[!NOTE]
 >
->作为托管Cloud Services用户，[联系Adobe](../start/campaign-faq.md#support){target="_blank"}以传达要用于归档的密件抄送电子邮件地址。
+>作为托管Cloud Services用户，[联系Adobe](../start/campaign-faq-comprehensive.md#support){target="_blank"}以传达要用于归档的密件抄送电子邮件地址。
 
 ## 启用电子邮件密送 {#enable-bcc}
 

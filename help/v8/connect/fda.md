@@ -26,7 +26,7 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 1%
@@ -39,9 +39,9 @@ ht-degree: 1%
 >
 >* [兼容性矩阵](../start/compatibility-matrix.md)中列出了用于联合数据访问的兼容数据库。
 >
->* 在[企业(FFDA)部署](../../v8/architecture/enterprise-deployment.md)的上下文中，可以使用特定的外部帐户来管理Campaign本地数据库和Snowflake云数据库之间的通信。 此外部帐户由Adobe为您设置，不得修改&#x200B;**&#x200B;**。
+>* 在[企业(FFDA)部署](../../v8/architecture/enterprise-deployment.md)的上下文中，可以使用特定的外部帐户来管理Campaign本地数据库和Snowflake云数据库之间的通信。 此外部帐户由Adobe为您设置，不得修改&#x200B;****。
 >
->* 作为托管云服务用户，[联系Adobe](../start/campaign-faq.md#support)以将外部数据库与Campaign连接。
+>* 作为托管云服务用户，[联系Adobe](../start/campaign-faq-comprehensive.md#support)以将外部数据库与Campaign连接。
 
 
 ## 最佳实践和限制

@@ -51,7 +51,7 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
 workflow-type: tm+mt
 source-wordcount: '1058'
 ht-degree: 87%
@@ -146,4 +146,4 @@ Adobe Campaign 可逐步丰富客户数据和轮廓，从而让您监测和解�
 * [Campaign 工作区](campaign-ui.md)
 * [Campaign v8 兼容性矩阵](compatibility-matrix.md)
 * [连接到 Campaign](connect.md)
-* [常见问题解答](campaign-faq.md)
+* [常见问题解答](campaign-faq-comprehensive.md)

@@ -33,7 +33,7 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 87%
@@ -52,7 +52,7 @@ Adobe 为数据控制者提供相应的工具，用于创建和处理与 Campaig
 
 >[!NOTE]
 >
->从Campaign v8.3开始提供此功能。 要检查您的版本，请参阅[此部分](compatibility-matrix.md#how-to-check-your-campaign-version-and-buildversion)
+>从Campaign v8.3开始提供此功能。 要检查您的版本，请参阅[此部分](compatibility-matrix.md)
 
 ## 定义命名空间 {#namespaces}
 

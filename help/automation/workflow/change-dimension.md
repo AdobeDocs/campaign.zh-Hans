@@ -23,7 +23,7 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 1%
@@ -70,7 +70,7 @@ ht-degree: 1%
 
      >[!NOTE]
      >
-     >有关创建和管理其他列的信息，请参阅[添加数据](query.md#add-data)。
+     >有关创建和管理其他列的信息，请参阅[添加数据](query.md#adding-data)。
 
    * 选择上一个定向维度（在轴切换之前），并在收件人的&#x200B;**[!UICONTROL Location]**&#x200B;子树中选择&#x200B;**[!UICONTROL Zip Code]**，然后单击&#x200B;**[!UICONTROL Edit expression]**。
 

@@ -33,9 +33,9 @@ topic_v2:
     internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1268'
 ht-degree: 2%
 ---
 # 将 Campaign SDK 与您的应用程序集成 {#integrate-campaign-sdk}
@@ -44,7 +44,7 @@ ht-degree: 2%
 
 [兼容性矩阵](../start/compatibility-matrix.md#MobileSDK)中列出了Android和iOS支持的版本，以及Campaign v8的Campaign SDK兼容版本。
 
-作为Campaign管理员，您可以从[Experience Cloud软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)下载Campaign SDK。 有关详细信息，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
+作为Campaign管理员，您可以从[Experience Cloud软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/zh-hans/campaign.html)下载Campaign SDK。 有关详细信息，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)。
 
 
 >[!NOTE]
@@ -870,7 +870,7 @@ Android SDK是使用JAVA编写的jar库。 它允许Android开发人员与Adobe 
 
 ## 通知服务扩展 {#notification-service-extension}
 
-用于iOS的&#x200B;**&#x200B;**
+用于iOS的&#x200B;****
 
 介质必须在通知服务扩展级别下载。
 
@@ -904,7 +904,7 @@ Android SDK是使用JAVA编写的jar库。 它允许Android开发人员与Adobe 
 
 ## 通知内容扩展 {#notification-content-extension}
 
-用于iOS的&#x200B;**&#x200B;**
+用于iOS的&#x200B;****
 
 在此级别，您需要：
 

@@ -24,7 +24,7 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 4%
@@ -65,7 +65,7 @@ logInfo(strUuid);
 
 执行工作流后，会按预期提供暂存表。
 
-通过SOAP调用&#x200B;**&#x200B;**
+通过SOAP调用&#x200B;****
 
 1. 获取身份验证令牌。
 1. 触发API。 有效负载为：
@@ -125,7 +125,7 @@ logInfo(strUuid);
 ![](assets/with-reconciliation.png)
 
 
-通过SOAP调用&#x200B;**&#x200B;**
+通过SOAP调用&#x200B;****
 
 1. 获取身份验证令牌。
 1. 触发API。 有效负载为：
@@ -185,7 +185,7 @@ xtk.session.IngestExt(xmlStagingRecipient);
 
 ![](assets/updated-data.png)
 
-通过SOAP调用&#x200B;**&#x200B;**
+通过SOAP调用&#x200B;****
 
 1. 获取身份验证令牌。
 1. 触发API。 有效负载为：
@@ -224,7 +224,7 @@ xtk.session.IngestExt(xmlStagingRecipient);
 
 [此页面](../start/subscriptions.md)中介绍了Campaign中的订阅管理。
 
-订阅和退订数据的插入依赖于Campaign本地数据库中的[暂存机制](staging.md)。 订阅服务器信息临时存储在本地数据库的临时表中，同步工作流将此数据从本地数据库发送到云数据库。 因此，订阅和退订进程是&#x200B;**异步**。 选择加入和选择退出请求每小时通过特定的技术工作流处理。 [了解详情](replication.md#tech-wf)
+订阅和退订数据的插入依赖于Campaign本地数据库中的[暂存机制](staging.md)。 订阅服务器信息临时存储在本地数据库的临时表中，同步工作流将此数据从本地数据库发送到云数据库。 因此，订阅和退订进程是&#x200B;**异步**。 选择加入和选择退出请求每小时通过特定的技术工作流处理。 [了解详情](replication.md#workflows)
 
 
 **相关主题**

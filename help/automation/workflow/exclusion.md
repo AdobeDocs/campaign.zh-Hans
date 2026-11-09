@@ -23,7 +23,7 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 1%
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->有关配置和使用排除活动的详细信息，请参阅[排除群体（排除项）](targeting-workflows.md#excluding-a-population--exclusion-)。
+>有关配置和使用排除活动的详细信息，请参阅[排除群体（排除项）](targeting-workflows.md#exclude-a-population--exclusion-)。
 
 如果要利用剩余群体，请选中&#x200B;**[!UICONTROL Generate complement]**&#x200B;选项。 补数将包含主传入群体减去传出群体。 然后，将向该活动添加一个额外的输出转换，如下所示：
 

@@ -34,7 +34,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '2294'
 ht-degree: 1%
@@ -121,7 +121,7 @@ ht-degree: 1%
 
 对于直邮投放，Adobe Campaign操作员可以在提取文件发送到路由器之前查看该文件，如有必要，他们可以更改格式并重新执行提取。 [了解详情](#approve-an-extraction-file)。
 
-完成这些验证阶段后，可以启动投放。 [了解详情](marketing-campaign-deliveries.md#starting-a-delivery)。
+完成这些验证阶段后，可以启动投放。 [了解详情](marketing-campaign-deliveries.md#start-a-delivery)。
 
 >[!NOTE]
 >
@@ -310,7 +310,7 @@ ht-degree: 1%
 
 在创建定位工作流时，如果批准是自动的（默认模式），Adobe Campaign会显示批准链接，或者在需要批准时立即发送通知。
 
-要选择审批模式（手动或自动），请单击营销活动或营销活动模板的&#x200B;**[!UICONTROL Edit > Properties]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Advanced campaign parameters...]**，最后点击&#x200B;**[!UICONTROL Approvals]**&#x200B;选项卡。
+要选择审批模式（手动或自动），请单击营销活动或营销活动模板的&#x200B;**[!UICONTROL Edit > Properties]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Advanced campaign parameters...]**，最后点击&#x200B;**[!UICONTROL Approvals]**选项卡。
 票面值
 ![](assets/approval-mode.png)
 

@@ -1,5 +1,5 @@
 ---
-title: 使用Adobe Campaign发送推送通知
+title: 使用数据收集配置推送通知
 description: Campaign中的推送通知入门
 feature: Push
 role: Developer
@@ -23,7 +23,7 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
 workflow-type: tm+mt
 source-wordcount: '1424'
 ht-degree: 3%
@@ -34,7 +34,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 >[!AVAILABILITY]
 >
-> 从Campaign v8.5开始，新客户可专门访问此功能，并会逐步向一组选定的客户推出。 如果您的环境是在2023年6月之前配置的，则此页面不适用于您，您必须遵循此页面[&#128279;](push-settings.md)中详述的步骤。
+> 从Campaign v8.5开始，新客户可专门访问此功能，并会逐步向一组选定的客户推出。 如果您的环境是在2023年6月之前配置的，则此页面不适用于您，您必须遵循此页面](push-settings.md)中详述的步骤[。
 
 在此更新的实施中，要在Adobe Campaign中发送推送通知，请执行以下步骤：
 

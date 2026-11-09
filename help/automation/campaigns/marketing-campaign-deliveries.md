@@ -27,7 +27,7 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 1%
@@ -54,7 +54,7 @@ ht-degree: 1%
 
   启动工作流后，投放即会添加到活动仪表板。
 
-在此页面[&#128279;](marketing-campaign-approval.md)中了解如何设置和执行投放审批流程。
+在此页面](marketing-campaign-approval.md)中了解如何设置和执行投放审批流程[。
 
 ## 开始投放 {#start-a-delivery}
 
@@ -85,7 +85,7 @@ ht-degree: 1%
 
 获得所有审批后，投放状态将更改为&#x200B;**[!UICONTROL Pending extraction]**。 提取文件是通过专用的[技术工作流](../workflow/technical-workflows.md)创建的，在默认配置中，当直邮投放挂起提取时，将自动启动该工作流。 当流程正在进行时，它将显示在仪表板中，并可通过其链接进行编辑。
 
-成功执行提取工作流后，必须批准提取文件（前提是在投放设置中选择了提取文件批准）。 [了解详情](marketing-campaign-approval.md#approving-an-extraction-file)。
+成功执行提取工作流后，必须批准提取文件（前提是在投放设置中选择了提取文件批准）。 [了解详情](marketing-campaign-approval.md#approve-an-extraction-file)。
 
 请按照以下步骤验证内容并将文件发送给提供商：
 
@@ -132,4 +132,4 @@ ht-degree: 1%
 
   >[!NOTE]
   >
-  >在本节[&#128279;](providers-stocks-and-budgets.md)中了解有关预算的更多信息。
+  >在本节](providers-stocks-and-budgets.md)中了解有关预算[的更多信息。

@@ -20,7 +20,7 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 4%
@@ -126,7 +126,7 @@ ht-degree: 4%
 
 * **对照组**
 
-  选择此模块后，模板的高级设置以及基于此模板的营销活动会添加一个附加选项卡。 可以通过模板定义配置，也可以单独为每个营销活动定义配置。 在[本节](marketing-campaign-deliveries.md#defining-a-control-group)中了解有关控制组的更多信息。
+  选择此模块后，模板的高级设置以及基于此模板的营销活动会添加一个附加选项卡。 可以通过模板定义配置，也可以单独为每个营销活动定义配置。 在[本节](marketing-campaign-deliveries.md)中了解有关控制组的更多信息。
 
   ![](assets/template-activate-1.png)
 
@@ -139,7 +139,7 @@ ht-degree: 4%
 
 * **文档**
 
-  选择此模块后，模板的&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中会添加一个附加选项卡，以及基于此模板的营销活动。 可从模板添加附加文档，或单独为每个营销活动添加附加文档。 在[本节](marketing-campaign-deliveries.md#manage-associated-documents)中了解关于文档的更多信息。
+  选择此模块后，模板的&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中会添加一个附加选项卡，以及基于此模板的营销活动。 可从模板添加附加文档，或单独为每个营销活动添加附加文档。 在[本节](marketing-campaign-deliveries.md)中了解关于文档的更多信息。
 
   ![](assets/template-activate-3.png)
 
@@ -151,7 +151,7 @@ ht-degree: 4%
 
 * **定位和工作流**
 
-  选择&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;模块后，将添加一个选项卡，允许您基于此模板为营销活动创建一个或多个工作流。 还可以根据此模板为每个营销活动单独配置工作流。在[本节](marketing-campaign-deliveries.md#build-the-main-target-in-a-workflow)中了解有关营销活动工作流的更多信息。
+  选择&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;模块后，将添加一个选项卡，允许您基于此模板为营销活动创建一个或多个工作流。 还可以根据此模板为每个营销活动单独配置工作流。在[本节](marketing-campaign-deliveries.md)中了解有关营销活动工作流的更多信息。
 
   ![](assets/template-activate-5.png)
 

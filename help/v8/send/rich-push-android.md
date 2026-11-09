@@ -1,6 +1,6 @@
 ---
 audience: end-user
-title: 设计富推送通知投放
+title: 设计 Android 富推送投放
 description: 了解如何使用Adobe Campaign Web设计富推送通知投放
 feature: Push
 role: User
@@ -30,7 +30,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
 workflow-type: tm+mt
 source-wordcount: '2043'
 ht-degree: 3%
@@ -39,7 +39,7 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->在设计富推送通知之前，您首先需要配置V2连接器。 有关详细过程，请参阅[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android)。
+>在设计富推送通知之前，您首先需要配置V2连接器。 有关详细过程，请参阅[此页面](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application-android#configuring-external-account-android)。
 
 使用Firebase Cloud Messaging，您可以选择两种类型的消息：
 

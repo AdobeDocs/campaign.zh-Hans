@@ -175,7 +175,7 @@ HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以
 
 为避免性能问题，电子邮件中包含的图像不能超过100 KB。 默认设置的此限制可以从`NmsDelivery_MaxDownloadedImageSize`选项更改。 但是，Adobe强烈建议避免在电子邮件投放中使用大型图像。
 
-在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery)中了解有关Campaign选项列表的更多信息。
+在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=zh-Hans#delivery)中了解有关Campaign选项列表的更多信息。
 
 ### 图像类型 {#img-types}
 
@@ -186,7 +186,7 @@ HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以
 
   可通过Adobe Campaign层次结构的&#x200B;**[!UICONTROL Resources > Online]**&#x200B;节点访问公共资源。 它们分组在库中，可以包含在电子邮件中，但也可以用于营销活动或任务，或者用于内容管理。
 
-* 与Adobe Experience Cloud共享的资产。 请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html)。
+* 与Adobe Experience Cloud共享的资产。 请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=zh-Hans)。
 
 ### 插入和管理图像 {#manage-images}
 

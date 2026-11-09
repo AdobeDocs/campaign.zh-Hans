@@ -51,7 +51,7 @@ ht-degree: 12%
 >
 >对于大多数常见用例，请在Campaign Web用户界面中创建登陆页面，您可以在其中轻松设计和发布这些页面。 如本节所述，在客户端控制台中创建的登陆页面提供了更多设置，并涵盖了更高级的用例。
 >
->[在Campaign Web用户界面中了解有关登陆页面的更多信息](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
+>[在Campaign Web用户界面中了解有关登陆页面的更多信息](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
 
 
 

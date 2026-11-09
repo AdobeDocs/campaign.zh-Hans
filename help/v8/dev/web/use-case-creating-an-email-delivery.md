@@ -60,7 +60,7 @@ ht-degree: 1%
 
 ## 步骤1 — 创建投放 {#step-1---creating-a-delivery}
 
-要创建新投放，请将光标置于&#x200B;**促销活动**&#x200B;选项卡中，然后单击&#x200B;**投放**。 接下来，单击现有投放列表上方的&#x200B;**创建**&#x200B;按钮。 有关创建投放的详细信息，请参阅[此页面](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/about-email-channel){target="_blank"}。
+要创建新投放，请将光标置于&#x200B;**促销活动**&#x200B;选项卡中，然后单击&#x200B;**投放**。 接下来，单击现有投放列表上方的&#x200B;**创建**&#x200B;按钮。 有关创建投放的详细信息，请参阅[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/about-email-channel){target="_blank"}。
 
 ![](assets/delivery_step_1.png)
 

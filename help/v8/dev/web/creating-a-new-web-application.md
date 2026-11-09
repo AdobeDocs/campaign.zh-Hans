@@ -47,7 +47,7 @@ ht-degree: 16%
 
 >[!NOTE]
 >
->始终保护可能包含个人信息的页面。 请参阅[安全和隐私检查清单](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy)。
+>始终保护可能包含个人信息的页面。 请参阅[安全和隐私检查清单](https://helpx.adobe.com/cn/campaign/kb/acc-security.html#privacy)。
 
 此模板确定Web应用程序的类型。 您可以创建：
 
@@ -73,7 +73,7 @@ ht-degree: 16%
 
 1. Facebook应用程序
 
-   借助&#x200B;**社交营销**&#x200B;选项，Adobe Campaign允许您在Facebook应用程序中发布个性化内容。 如需详细信息，请参阅[此小节](https://experienceleague.adobe.com/en/docs/campaign-classic/using/integrating-with-social-media/about-social-marketing){target="_blank"}。
+   借助&#x200B;**社交营销**&#x200B;选项，Adobe Campaign允许您在Facebook应用程序中发布个性化内容。 如需详细信息，请参阅[此小节](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/integrating-with-social-media/about-social-marketing){target="_blank"}。
 
    >[!CAUTION]
    >

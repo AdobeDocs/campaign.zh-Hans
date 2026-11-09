@@ -1515,7 +1515,7 @@ Campaign会根据您的需求和技术专业知识提供多种报告选项：内
 
 **相关主题：**
 
-[调查入门](https://experienceleague.adobe.com/en/docs/campaign-classic/using/online-surveys/about-surveys){target="_blank"} | [调查报告](https://experienceleague.adobe.com/en/docs/campaign-classic/using/online-surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"}
+[调查入门](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/online-surveys/about-surveys){target="_blank"} | [调查报告](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/online-surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"}
 
 +++
 

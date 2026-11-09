@@ -65,7 +65,7 @@ ht-degree: 16%
 
 1. 调查
 
-   Adobe Campaign允许您通过&#x200B;**调查管理器**&#x200B;选项设计和管理在线调查并处理其结果：动态字段创建、得分管理、答案导出和专用报告。 有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"}（Campaign v8文档）。
+   Adobe Campaign允许您通过&#x200B;**调查管理器**&#x200B;选项设计和管理在线调查并处理其结果：动态字段创建、得分管理、答案导出和专用报告。 有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"}（Campaign v8文档）。
 
    >[!CAUTION]
    >

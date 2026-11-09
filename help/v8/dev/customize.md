@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f1f84f565326bd683b47e6e498add3100ea81c4c
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '503'
 ht-degree: 1%
 ---
 # 自定义实例 {#gs-ac-custom}
@@ -92,7 +92,7 @@ Adobe Campaign界面使用许多Web应用程序来访问、管理收件人、投
 
 内置Web应用程序存储在资源管理器的&#x200B;**管理>配置> Web应用程序**&#x200B;文件夹中。
 
-请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/designing-content/web-applications/use-cases-creating-overviews#creating-a-single-page-web-application){target="_blank"}以了解如何在Campaign中创建概述页面
+在[本节](web/use-cases-creating-overviews.md#creating-a-single-page-web-application)中了解如何在Campaign中创建概述页面
 
 
 ## 自定义列表和创建过滤器 {#gs-lists-and-filters}

@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '2096'
+source-wordcount: '2072'
 ht-degree: 2%
 ---
 # 定义电子邮件的内容 {#defining-the-email-content}
@@ -92,7 +92,7 @@ ht-degree: 2%
 
 * 要导入HTML内容，请使用&#x200B;**[!UICONTROL Open]**&#x200B;按钮。 您还可以将源代码直接粘贴到&#x200B;**[!UICONTROL Source]**&#x200B;子选项卡中。
 
-  如果您使用数字内容编辑器(DCE)，请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/use-case-creating-an-email-delivery.html?lang=zh-Hans#step-3---selecting-a-content)。
+  如果您使用数字内容编辑器(DCE)，请参阅[此章节](../dev/web/use-case-creating-an-email-delivery.md#step-3---selecting-a-content)。
 
   >[!IMPORTANT]
   >

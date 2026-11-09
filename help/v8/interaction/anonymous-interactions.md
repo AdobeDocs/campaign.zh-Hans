@@ -3,6 +3,7 @@ product: campaign
 title: 向匿名用户档案展示优惠（入站互动）
 description: 了解如何向匿名用户档案展示优惠
 feature: Interaction, Offers
+version: Campaign v8, Campaign Classic v7
 role: User, Admin
 exl-id: b7a04360-f8c6-4c69-9594-2b44d3f819b7
 TQID: 'https://experienceleague.adobe.com/rl7SIcS-OkMmLnxvPiEfjs51xouGSSyLJV4in-vsoCE'
@@ -21,7 +22,7 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%
@@ -48,7 +49,7 @@ ht-degree: 0%
 
 与叫客交互一样，入站交互也会在优惠目录中组织，该优惠目录由类别和优惠组成。
 
-要创建类别和空间，请应用与已识别访客相同的流程。 请参阅[创建优惠类别](interaction-offer-catalog.md#creating-offer-categories)和[创建优惠环境](interaction-env.md#creating-an-offer-environment)。
+要创建类别和空间，请应用与已识别访客相同的流程。 请参阅[创建优惠类别](interaction-offer-catalog.md#creating-offer-categories)和[创建优惠环境](interaction-env.md#create-an-offer-environment)。
 
 ## 匿名访客 {#anonymous-visitors}
 

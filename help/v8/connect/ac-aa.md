@@ -36,9 +36,9 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
-source-wordcount: '1595'
+source-wordcount: '1599'
 ht-degree: 56%
 ---
 # 使用Campaign和Adobe Analytics {#ac-aa}
@@ -49,7 +49,7 @@ ht-degree: 56%
 
 >[!NOTE]
 >
->作为托管Cloud Services用户，[联系Adobe](../start/campaign-faq.md#support)以将Campaign与Adobe Experience Cloud服务和解决方案连接。 必须通过专用软件包在您的环境中安装Web Analytics连接器加载项。
+>作为托管Cloud Services用户，[联系Adobe](../start/campaign-faq-comprehensive.md#support)以将Campaign与Adobe Experience Cloud服务和解决方案连接。 必须通过专用软件包在您的环境中安装Web Analytics连接器加载项。
 
 使用 Adobe Analytics Connector，Adobe Campaign 可以对互联网受众进行评测（网站分析）。 利用Web分析工具，Adobe Campaign可将指标和营销活动属性转发到Analytics。
 
@@ -85,7 +85,7 @@ ht-degree: 56%
 
 1. 在 **[!UICONTROL Report suite manager]** 页面中，依次单击 **[!UICONTROL Create new]** 和 **[!UICONTROL Report suite]**。
 
-   有关创建&#x200B;**[!UICONTROL Report suite]**&#x200B;的详细过程，请参阅[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html#prerequisites){target="_blank"}。
+   有关创建&#x200B;**[!UICONTROL Report suite]**&#x200B;的详细过程，请参阅[Adobe Analytics文档](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite#prerequisites){target="_blank"}。
 
    ![](assets/analytics_connnector_3.png)
 

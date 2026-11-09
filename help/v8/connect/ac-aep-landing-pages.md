@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f1f84f565326bd683b47e6e498add3100ea81c4c
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '1039'
+source-wordcount: '1024'
 ht-degree: 1%
 ---
 # 从Adobe Campaign登陆页面更新Adobe Experience Platform配置文件 {#ac-aep-lp}
@@ -369,5 +369,5 @@ setOption("IMS_CLIENT_API_KEY", cryptString('CLIENT ID'));
 ### 更多信息
 
 * [配置JavaScript代码活动](../../automation/workflow/sql-code-and-javascript-code.md#javascript-code)
-* [创建登陆页面](https://experienceleague.adobe.com/docs/campaign-classic/using/designing-content/editing-html-content/creating-a-landing-page.html?lang=zh-Hans){target="_blank"}
+* [创建登陆页面](../dev/web/creating-a-landing-page.md)
 * [管理订阅和退订](../start/subscriptions.md)

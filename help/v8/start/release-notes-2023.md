@@ -38,7 +38,7 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1518'
 ht-degree: 55%
@@ -116,7 +116,7 @@ Campaign v8.5.1引入了我们最新的推送通知服务，该服务由基于�
 **兼容性更新**
 
 * 客户端控制台的32位版本现已弃用。 从8.6开始，客户端控制台将仅以64位提供。 客户端控制台可无缝升级到64位版本。 有关如何升级操作系统的详细信息，请参阅此[技术说明](../../technotes/upgrades/console.md)。
-* 您现在可以将Campaign v8实例连接到Azure Synapse外部数据库。 此连接通过新的外部帐户管理。 在[Campaign兼容性矩阵](../start/compatibility-matrix.md#federated-data-access-fdafederateddataaccessfda)中了解详情。
+* 您现在可以将Campaign v8实例连接到Azure Synapse外部数据库。 此连接通过新的外部帐户管理。 在[Campaign兼容性矩阵](../start/compatibility-matrix.md#FederatedDataAccessFDA)中了解详情。
 
 
 **修复**

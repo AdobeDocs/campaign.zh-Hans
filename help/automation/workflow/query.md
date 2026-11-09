@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 1%
@@ -105,10 +105,10 @@ ht-degree: 1%
 
    您可以添加：
 
-   * 根据从目标群体或聚合（上个月内的待定购买次数、收据平均金额等）中获得的数据计算的字段。 例如，转到[选择数据](targeting-workflows.md#selecting-data)。
+   * 根据从目标群体或聚合（上个月内的待定购买次数、收据平均金额等）中获得的数据计算的字段。 例如，转到[选择数据](targeting-workflows.md)。
    * 使用输出列列表右侧的&#x200B;**[!UICONTROL Add]**&#x200B;按钮创建的新字段。
 
-     您还可以添加信息集合，例如合同列表、最近5次投放等。收藏集与字段一致，这些字段可以为同一用户档案具有多个值（1-N关系）。 有关详细信息，请参阅[编辑其他数据](targeting-workflows.md#editing-additional-data)。
+     您还可以添加信息集合，例如合同列表、最近5次投放等。收藏集与字段一致，这些字段可以为同一用户档案具有多个值（1-N关系）。 有关详细信息，请参阅[编辑其他数据](targeting-workflows.md#edit-additional-data)。
 
 要添加链接到目标群体的信息集合，请执行以下操作：
 
@@ -222,7 +222,7 @@ SQL中过滤维度的等效项是内部联接：
 
 `select iRecipientId from nmsRecipient INNER JOIN nmsBroadLog ON (...)`
 
-有关筛选维度的详细信息，请参阅[此部分](build-a-workflow.md#targeting-and-filtering-dimensions)。
+有关筛选维度的详细信息，请参阅[此部分](build-a-workflow.md)。
 
 ### 架构 {#architecture}
 

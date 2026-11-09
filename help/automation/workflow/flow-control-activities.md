@@ -21,7 +21,7 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
@@ -42,4 +42,3 @@ ht-degree: 0%
 * **[测试](test.md)**：根据测试结果启用转换。
 * **[时间限制](time-constraint.md)**：允许您暂停任务一段设定的时间。
 * **[等待](wait.md)**：在给定时间限制后启用出站过渡。
-  <!--* **Task**: lets you configure task execution. Refer to the [Task](task.md) section.-->

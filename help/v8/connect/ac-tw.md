@@ -38,7 +38,7 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1078'
 ht-degree: 3%
@@ -54,7 +54,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->作为托管云服务用户，[联系Adobe](../start/campaign-faq.md#support)以将Campaign与X连接。必须通过专用包在您的环境中安装&#x200B;**管理社交网络（社交营销）**&#x200B;加载项，并且必须配置Twitter外部帐户。
+>作为托管云服务用户，[联系Adobe](../start/campaign-faq-comprehensive.md#support)以将Campaign与X连接。必须通过专用包在您的环境中安装&#x200B;**管理社交网络（社交营销）**&#x200B;加载项，并且必须配置Twitter外部帐户。
 
 
 要将Adobe Campaign配置为将推文发布到您的X帐户，请为这些帐户委派对Adobe Campaign的写入权限。 为此，您必须：
@@ -169,7 +169,7 @@ Campaign和X之间的同步通过专门的技术工作流进行管理。 这些�
 
 ## 在X上创建测试帐户 {#tw-test-account}
 
-除X帐户外，请创建一个专用X帐户，该帐户可用于发送[Tweet校样](../send/twitter.md#send-tw-proofs)。 为此请执行以下操作步骤：
+除X帐户外，请创建一个专用X帐户，该帐户可用于发送[Tweet校样](../send/twitter.md)。 为此请执行以下操作步骤：
 
 1. 创建新的X帐户。
 1. 访问帐户&#x200B;**设置**。

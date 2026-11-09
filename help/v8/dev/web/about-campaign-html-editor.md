@@ -1,0 +1,88 @@
+---
+product: campaign
+title: Campaign HTML编辑器入门
+description: Campaign DCE入门
+feature: Web Apps, Web Forms, Landing Pages, Email Design
+version: Campaign v8, Campaign Classic v7
+exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
+TQID: 'https://experienceleague.adobe.com/X-hpH7G2DRGdimNZ-HRbRJpnhmP-QByWSIF5hSUQFG0'
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+feature_v2:
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+  - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
+subfeature_v2:
+  - id: f391046b-0cf3-4e76-bd3b-97fe06654506
+    internal-label: Web Apps
+  - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
+    internal-label: Web Forms
+  - id: d7be2b01-dc9c-40f7-aace-a151707504ed
+    internal-label: Landing pages
+  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+source-git-commit: 6db6c9152f6060b40596bd65a2ce705f916401be
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 2%
+---
+# Campaign HTML编辑器入门{#about-campaign-html-editor}
+
+>[!NOTE]
+>
+>对于大多数常见用例，请在Campaign Web用户界面中创建登陆页面，您可以在其中轻松设计和发布这些页面。 如本节所述，在客户端控制台中创建的登陆页面提供了更多设置，并涵盖了更高级的用例。
+>
+>[在Campaign Web用户界面中了解有关登陆页面的更多信息](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
+
+
+
+**数字内容编辑器(DCE)**&#x200B;是一种HTML内容编辑器，它允许您在Adobe Campaign中轻松创建HTML格式的内容和模板。
+
+使用数字内容编辑器，您可以插入页面元素并设置其格式，并将数据库字段映射为HTML页面的元素。 在为Web应用程序创建页面或基于DCE模板创建投放时，此编辑器可用。
+
+>[!NOTE]
+>
+>如果需要添加服务器端JavaScript代码，请使用个性化块。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hans){target="_blank"}。
+
+>[!CAUTION]
+>
+>需要使用HTTPS URL引用所有外部资源。
+
+## 使用数字内容编辑器的关键步骤 {#content-editor-general-operation}
+
+本节介绍在Web应用程序和投放设计的上下文中编辑和上传使用DCE编辑的内容的关键步骤。
+
+一般操作如下：
+
+![](assets/dce_schema.png)
+
+要创建简单的&#x200B;**Web应用程序**，您需要：
+
+1. 创建Web应用程序 — [了解更多](creating-a-landing-page.md)
+1. 选择现有内容或从标准模板创建内容 — [了解更多](template-management.md)
+1. 编辑和配置内容 — [了解更多](editing-content.md)
+1. 发布Web应用程序 — [了解更多](creating-a-landing-page.md#step-3---publishing-content)
+
+>[!NOTE]
+>
+>在[此部分](creating-a-landing-page.md)中提供了Web应用程序上下文中的完整实现示例。
+
+要创建&#x200B;**电子邮件投放**，您需要：
+
+1. 从DCE模板创建投放 — [了解详情](use-case-creating-an-email-delivery.md)
+1. 选择现有内容或从[标准模板](template-management.md)创建内容
+1. 编辑和配置在线内容
+1. 发送投放 — 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans){target="_blank"}以了解详情
+
+>[!NOTE]
+>
+>在[此用例](use-case-creating-an-email-delivery.md)中提供了电子邮件投放上下文中的完整实施示例。

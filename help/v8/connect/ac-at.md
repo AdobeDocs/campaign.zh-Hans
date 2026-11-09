@@ -32,7 +32,7 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 0%
@@ -46,7 +46,7 @@ ht-degree: 0%
 >[!NOTE]
 >* 该集成仅支持静态图像。 其他类型的内容无法个性化。
 >
->* 作为托管Cloud Services用户，[联系Adobe](../start/campaign-faq.md#support)以通过Campaign实施Experience Cloud触发器。
+>* 作为托管Cloud Services用户，[联系Adobe](../start/campaign-faq-comprehensive.md#support)以通过Campaign实施Experience Cloud触发器。
 
 Adobe Target可以使用以下类型的数据：
 

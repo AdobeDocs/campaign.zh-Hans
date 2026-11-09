@@ -28,7 +28,7 @@ topic_v2:
     internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 8%
@@ -39,7 +39,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->若要创建引人入胜的单独定制电子邮件，请浏览至[Web用户界面](../start/campaign-ui.md#campaign-web-user-interface-ac-web-ui)。 Adobe Campaign附带电子邮件Designer，它是一个直观的拖放界面，允许您设计和优化每封电子邮件的所有内容。
+>若要创建引人入胜的单独定制电子邮件，请浏览至[Web用户界面](../start/campaign-ui.md#ac-web-ui)。 Adobe Campaign附带电子邮件Designer，它是一个直观的拖放界面，允许您设计和优化每封电子邮件的所有内容。
 
 
 了解在[此页面](../start/create-message.md)中创建和配置投放的关键步骤。

@@ -24,9 +24,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
-source-wordcount: '11539'
+source-wordcount: '11533'
 ht-degree: 12%
 ---
 # 常见问题解答 {#faq}
@@ -169,7 +169,7 @@ Campaign提供了多种定位方法以便为消息选择正确的受众：
 
 要联系Adobe客户支持，请连接到[Adobe Admin Console](https://adminconsole.adobe.com/overview){target="_blank"}以创建案例或启动聊天会话。
 
-需要具有正确权限的个人帐户。 如果您无法登录，请通过Experience League请求访问权限。 [了解详情](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
+需要具有正确权限的个人帐户。 如果您无法登录，请通过Experience League请求访问权限。 [了解详情](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html){target="_blank"}
 
 或者，加入[Campaign社区](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=zh-Hans){target="_blank"}以搜索答案或咨询专家。
 
@@ -212,7 +212,7 @@ Campaign v8显着提高了性能，但与Campaign Classic v7存在一些体系�
 
 **相关主题：**
 
-[Campaign v7到v8的迁移](../start/v7-to-v8.md#limitations) | [FFDA架构](../architecture/enterprise-deployment.md)
+[Campaign v7到v8的迁移](../start/v7-to-v8.md) | [FFDA架构](../architecture/enterprise-deployment.md)
 
 +++
 
@@ -820,7 +820,7 @@ Campaign还支持联系日期优化（每个收件人的最佳发送时间）和
 
 在生产发送之前，使用安全文件格式(PDF、JPEG、PNG、DOCX)并使用种子地址进行测试。
 
-请参阅[电子邮件附件指南](../send/email.md#attachments)以了解详情
+请参阅[电子邮件附件指南](../send/email.md)以了解详情
 
 +++
 
@@ -1515,7 +1515,7 @@ Campaign会根据您的需求和技术专业知识提供多种报告选项：内
 
 **相关主题：**
 
-[调查入门](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/online-surveys/about-surveys){target="_blank"} | [调查报告](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/online-surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"}
+[调查入门](https://experienceleague.adobe.com/en/docs/campaign-classic/using/online-surveys/about-surveys){target="_blank"} | [调查报告](https://experienceleague.adobe.com/en/docs/campaign-classic/using/online-surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"}
 
 +++
 
@@ -1754,7 +1754,7 @@ Campaign提供订阅服务、首选项中心、选择退出标记以及用于跟
 
 **相关主题：**
 
-[订阅服务](../start/subscriptions.md) | [隐私和同意](../start/privacy.md#consent-retention-roles) | [隐私管理](../start/privacy.md)
+[订阅服务](../start/subscriptions.md) | [隐私和同意](../start/privacy.md) | [隐私管理](../start/privacy.md)
 
 +++
 
@@ -1819,7 +1819,7 @@ Campaign的审核记录会记录删除事件和新用户档案的创建，以展
 与其他Campaign用户和Adobe专家联系，分享知识并获得答案。
 
 * **[Adobe Campaign社区](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=zh-Hans){target="_blank"}** — 提问、共享解决方案并与Campaign社区建立联系
-* **[Experience League论坛](https://experienceleaguecommunities.adobe.com/?profile.language=zh-Hans&lang=zh_cn){target="_blank"}** — 浏览所有Adobe产品的讨论
+* **[Experience League论坛](https://experienceleaguecommunities.adobe.com/?lang=zh_cn){target="_blank"}** — 浏览所有Adobe产品的讨论
 * **[Campaign社区办公时间](https://experienceleague.adobe.com/zh-hans){target="_blank"}** — 与Adobe专家一起参加实时会议
 
 ### 文档与学习
@@ -1839,12 +1839,12 @@ Campaign的审核记录会记录删除事件和新用户档案的创建，以展
 * **[兼容性矩阵](compatibility-matrix.md)** — 支持的系统和版本
 * **[版本和升级常见问题解答](upgrades.md)** — 检查您的版本并了解升级情况
 
-### 支持和服务
+### 支持和服务 {#support}
 
 从Adobe支持团队获取帮助并管理您的实例。
 
 * **[Adobe Admin Console](https://adminconsole.adobe.com/){target="_blank"}** — 记录支持案例并管理用户
-* **[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}** — 联系支持团队
+* **[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html){target="_blank"}** — 联系支持团队
 * **[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans){target="_blank"}** — 管理您的Campaign实例设置
 * **[系统状态](https://status.adobe.com/zh-cn/){target="_blank"}** — 检查Adobe服务状态
 

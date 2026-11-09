@@ -30,7 +30,7 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Adobe Campaign与Adobe Experience Manager之间的集成允许您直接在Adobe 
 
 >[!NOTE]
 >
->作为托管云服务用户，[联系Adobe](../start/campaign-faq.md#support)以将Adobe Experience Manager与Campaign集成。
+>作为托管云服务用户，[联系Adobe](../start/campaign-faq-comprehensive.md#support)以将Adobe Experience Manager与Campaign集成。
 
 ## 从Adobe Experience Manager导入内容 {#integrating-with-aem}
 

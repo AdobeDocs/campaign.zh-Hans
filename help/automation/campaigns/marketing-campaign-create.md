@@ -25,7 +25,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 4%
@@ -119,11 +119,11 @@ ht-degree: 4%
 
 对于每个活动，都提供以下功能：
 
-* 参考文档和资源：您可以将文档与营销活动关联（简介、报告、图像等）。 支持所有文档格式。 [了解详情](marketing-campaign-deliveries.md#manage-associated-documents)。
-* 定义成本：对于每个市场活动，Adobe Campaign允许您定义成本录入和成本计算结构，在创建市场营销活动时使用这些结构。 例如：打印成本、使用外部代理、房间租赁等。[了解详情](providers-stocks-and-budgets.md#defining-cost-categories)。
+* 参考文档和资源：您可以将文档与营销活动关联（简介、报告、图像等）。 支持所有文档格式。 [了解详情](marketing-campaign-deliveries.md)。
+* 定义成本：对于每个市场活动，Adobe Campaign允许您定义成本录入和成本计算结构，在创建市场营销活动时使用这些结构。 例如：打印成本、使用外部代理、房间租赁等。[了解详情](providers-stocks-and-budgets.md#define-cost-categories)。
 * 定义目标：您可以定义促销活动的可量化目标，例如订户数、业务量等。此信息稍后将在营销活动报表中使用。
-* 管理种子地址和对照组。 [了解详情](marketing-campaign-deliveries.md#defining-a-control-group)。
-* 管理审批：您可以选择要批准的处理，并根据需要选择审核操作员或操作员组。 [了解详情](marketing-campaign-approval.md#checking-and-approving-deliveries)。
+* 管理种子地址和对照组。 [了解详情](marketing-campaign-deliveries.md)。
+* 管理审批：您可以选择要批准的处理，并根据需要选择审核操作员或操作员组。 [了解详情](marketing-campaign-approval.md#review-and-approve-deliveries)。
 
 >[!NOTE]
 >
@@ -218,7 +218,7 @@ ht-degree: 4%
 
 ![](assets/web-access-approval.png)
 
-您还可以使用通知消息中包含的链接。 如需详细信息，请参阅[此小节](marketing-campaign-approval.md#checking-and-approving-deliveries)。
+您还可以使用通知消息中包含的链接。 如需详细信息，请参阅[此小节](marketing-campaign-approval.md#review-and-approve-deliveries)。
 
 
 ## 教程视频 {#video}

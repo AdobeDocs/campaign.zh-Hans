@@ -23,7 +23,7 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1282'
 ht-degree: 2%
@@ -62,7 +62,7 @@ ht-degree: 2%
 
 通过数据分发模板，您可以根据数据分组限制因定向而导致的群体，同时还可以将每个值分配给本地主管。 在此示例中，我们已将&#x200B;**[!UICONTROL Email address domain]**&#x200B;字段定义为分发字段并为每个本地主管分配了一个域
 
-有关创建数据分发模板的详细信息，请参阅[限制每个数据分发的子集记录数](split.md#limiting-the-number-of-subset-records-per-data-distribution)。
+有关创建数据分发模板的详细信息，请参阅[限制每个数据分发的子集记录数](split.md#limit-the-number-of-subset-records-per-data-distribution)。
 
 1. 要创建数据分发模板，请转到&#x200B;**[!UICONTROL Resources > Campaign management > Data distribution]**&#x200B;节点并单击&#x200B;**[!UICONTROL New]**。
 
@@ -117,7 +117,7 @@ ht-degree: 2%
 
 上游定位由两个查询组成，一个交叉点和一个拆分。 可以使用数据分发模板通过&#x200B;**[!UICONTROL Split]**&#x200B;活动限制定位所得的群体。
 
-有关配置拆分活动的详细信息，请参阅[拆分](split.md)。 在[限制每个数据分发的子集记录数](split.md#limiting-the-number-of-subset-records-per-data-distribution)中详细描述了数据分发模板的创建。
+有关配置拆分活动的详细信息，请参阅[拆分](split.md)。 在[限制每个数据分发的子集记录数](split.md#limit-the-number-of-subset-records-per-data-distribution)中详细描述了数据分发模板的创建。
 
 如果不想限制查询中的群体，则不必使用&#x200B;**[!UICONTROL Query]**、**[!UICONTROL Intersection]**&#x200B;和&#x200B;**[!UICONTROL Split]**&#x200B;活动。 在这种情况下，请完成前&#x200B;**[!UICONTROL Local approval]**&#x200B;个活动中的数据分发模板。
 

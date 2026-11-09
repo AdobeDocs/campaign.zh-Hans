@@ -24,7 +24,7 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1946'
 ht-degree: 88%
@@ -193,7 +193,7 @@ _2022 年 5 月 18 日_
 <tbody> 
 <tr> 
 <td> <p>在 iOS 15 中，Apple 新增了“即时通知”的概念，当通知具有时效性并且需要实时联系用户时，该概念让应用程序开发人员可以控制对“专注”模式的绕过。</p>
-<p>有关更多信息，请参阅<a href="../send/push.md#send-notifications-on-ios">详细文档</a>。</p>
+<p>有关更多信息，请参阅<a href="../send/push.md">详细文档</a>。</p>
 </td> 
 </tr> 
 </tbody> 

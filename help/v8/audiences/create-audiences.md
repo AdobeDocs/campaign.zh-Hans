@@ -25,7 +25,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 13%
@@ -36,7 +36,7 @@ ht-degree: 13%
 
 列表是一组静态的联系人，在投放操作中可以定位这些联系人，或在导入或其他工作流操作期间对其进行更新。 例如，通过查询从数据库中提取的群体可以存储为列表。
 
-通过&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Lists]**&#x200B;链接创建和管理列表。 这些列表基于默认的Adobe Campaign配置文件表(nms:recipient)。 [了解详情](../dev/datamodel.md#ootb-profiles.md)
+通过&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Lists]**&#x200B;链接创建和管理列表。 这些列表基于默认的Adobe Campaign配置文件表(nms:recipient)。 [了解详情](../dev/datamodel.md#ootb-profiles)
 
 ![](assets/list-dashboard.png)
 

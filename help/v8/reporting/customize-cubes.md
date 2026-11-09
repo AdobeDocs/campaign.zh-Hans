@@ -27,7 +27,7 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 2%
@@ -133,7 +133,7 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
 您可以创建为量化保留的其他枚举，并在其他多维数据集中使用它们：所有别名值将在第一个枚举选项卡中指定的二进制文件中重新分组。
 
-在[此页面](../../v8/config/ui-settings.md#enumerations)中了解有关枚举的更多信息。
+在[此页面](../../v8/config/ui-settings.md)中了解有关枚举的更多信息。
 
 ## 多维数据集中的聚合 {#calculate-and-use-aggregates}
 

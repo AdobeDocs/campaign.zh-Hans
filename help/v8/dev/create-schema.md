@@ -34,7 +34,7 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 2%
@@ -84,7 +84,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >默认情况下，用户创建的架构存储在“cus”命名空间中。 有关详细信息，请参阅[架构标识](extend-schema.md#identification-of-a-schema)。
+   >默认情况下，用户创建的架构存储在“cus”命名空间中。 有关详细信息，请参阅[架构标识](extend-schema.md)。
 
 1. 创建表的内容。 我们建议使用专用助手以确保不缺少设置。 为此，请单击&#x200B;**[!UICONTROL Insert]**&#x200B;按钮并选择要添加的设置类型。
 

@@ -34,7 +34,7 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 3%
@@ -99,7 +99,7 @@ ht-degree: 3%
 
 1. 单击&#x200B;**[!UICONTROL Next]**，然后单击&#x200B;**[!UICONTROL Start]**&#x200B;以开始导入枚举。
 
-1. 浏览&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;节点以检查导入的值。 在[此页面](../config/ui-settings.md#enumerations)中了解有关枚举的更多信息。
+1. 浏览&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;节点以检查导入的值。 在[此页面](../config/ui-settings.md)中了解有关枚举的更多信息。
 
 Adobe Campaign和Salesforce.com现已连接。 您可以设置两个系统之间的数据同步。
 

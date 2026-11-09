@@ -37,7 +37,7 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 4%
@@ -88,7 +88,7 @@ Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在�
 
 与硬错误相反，软错误不会立即将地址添加到隔离，而是会增加错误计数。 当错误计数器达到限制阈值时，将隔离该地址。 在[了解投放失败](delivery-failures.md)中了解有关重试和错误类型的更多信息。
 
-如果最后一次重大错误发生在10天之前，则重新初始化错误计数器。 然后，地址状态更改为&#x200B;**[!UICONTROL Valid]**，并将由&#x200B;**[!UICONTROL Database cleanup]**&#x200B;工作流从隔离列表中删除该地址。 [了解有关技术工作流的详细信息](../config/workflows.md#technical-workflows)。
+如果最后一次重大错误发生在10天之前，则重新初始化错误计数器。 然后，地址状态更改为&#x200B;**[!UICONTROL Valid]**，并将由&#x200B;**[!UICONTROL Database cleanup]**&#x200B;工作流从隔离列表中删除该地址。 [了解有关技术工作流的详细信息](../config/workflows.md)。
 
 ## 访问隔离的地址 {#access-quarantined-addresses}
 

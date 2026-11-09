@@ -17,9 +17,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '790'
 ht-degree: 8%
 ---
 # 什么是可投放性{#about-deliverability}
@@ -74,7 +74,7 @@ Adobe Campaign提供了多种工具来跟踪和改进平台的可投放性性能
 
 为避免将消息发送到无效地址、限制不当通信并提高发件人信誉，Adobe建议实施双重选择加入机制。 此方法使您能够确保收件人有意订阅。
 
-有关此内容的更多信息，请参阅[使用双重选择加入创建订阅表单](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/designing-content/web-forms/use-cases-web-forms){target=_blank}。
+有关此内容的更多信息，请参阅[使用双重选择加入创建订阅表单](../dev/web/use-cases-web-forms.md)。
 
 有关从客户收集数据时的最佳实践的更多信息，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html?lang=zh-Hans#data-quality-and-hygiene){target="_blank"}。
 

@@ -3,6 +3,7 @@ product: campaign
 title: 营销活动类型入门
 description: 了解如何配置和实施活动类型
 feature: Typology Rules
+version: Campaign v8, Campaign Classic v7
 exl-id: 7832ffe1-eb65-4b37-9fc5-1374516755d9
 TQID: 'https://experienceleague.adobe.com/Pxzz3-z8BorlEgP1gGwLK--l6hEAGZ-DQhGuxsLk6oU'
 product_v2:
@@ -27,7 +28,7 @@ topic_v2:
     internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 19%
@@ -67,7 +68,7 @@ Campaign资源管理器的&#x200B;**[!UICONTROL Administration > Campaign manage
 Campaign Optimization加载项提供另外两种类型的&#x200B;**类型规则**：
 
 * 允许您控制营销疲劳的&#x200B;**压力**&#x200B;规则。 [了解详情](pressure-rules.md)。
-* **容量**&#x200B;规则，允许您限制负载以确保最佳处理条件。 [了解详情](consistency-rules.md#controlling-capacity)。
+* **容量**&#x200B;规则，允许您限制负载以确保最佳处理条件。 [了解详情](consistency-rules.md#control-capacity)。
 
 
 >[!NOTE]

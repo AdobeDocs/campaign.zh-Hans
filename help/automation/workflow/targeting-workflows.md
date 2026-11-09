@@ -29,7 +29,7 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '2258'
 ht-degree: 5%
@@ -86,11 +86,11 @@ ht-degree: 5%
 
 ### 使用其他数据 {#select-data}
 
-**[!UICONTROL Query]**&#x200B;活动允许您选择基本数据来构建目标群体。 如需详细信息，请参阅[此小节](query.md#create-a-query)。
+**[!UICONTROL Query]**&#x200B;活动允许您选择基本数据来构建目标群体。 如需详细信息，请参阅[此小节](query.md#creating-a-query)。
 
 您还可以使用以下活动来查询和优化数据库中的数据： [增量查询](incremental-query.md)，[读取列表](read-list.md)。
 
-可以在工作流的整个生命周期中收集要转发和处理的附加数据。 有关详细信息，请参阅[添加数据](query.md#add-data)和[编辑其他数据](#edit-additional-data)。
+可以在工作流的整个生命周期中收集要转发和处理的附加数据。 有关详细信息，请参阅[添加数据](query.md#adding-data)和[编辑其他数据](#edit-additional-data)。
 
 ### 编辑其他数据 {#edit-additional-data}
 

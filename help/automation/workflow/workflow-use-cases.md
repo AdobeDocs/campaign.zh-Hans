@@ -20,7 +20,7 @@ subfeature_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 55%
@@ -56,7 +56,7 @@ ht-degree: 55%
 * [创建摘要列表](create-a-summary-list.md)
 * [丰富数据](enrich-data.md)
 * [使用聚合](using-aggregates.md)
-* [使用控制面板上安装的密钥加密和导出数据](use-workflow-data.md#use-case-gpg-encrypt)
+* [使用控制面板上安装的密钥加密和导出数据](use-workflow-data.md)
 * [使用增量查询每季度更新列表](quarterly-list-update.md)
 * [使用重复数据删除活动的合并功能](deduplication-merge.md)
 * [设置循环导入工作流](recurring-import-workflow.md)

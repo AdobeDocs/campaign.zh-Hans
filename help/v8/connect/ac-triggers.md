@@ -27,7 +27,7 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 0%
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->作为托管Cloud Services用户，[联系Adobe](../start/campaign-faq.md#support)以通过Campaign实施Experience Cloud触发器。
+>作为托管Cloud Services用户，[联系Adobe](../start/campaign-faq-comprehensive.md#support)以通过Campaign实施Experience Cloud触发器。
 
 您可以使用Experience Cloud Triggers通过管道在Adobe Campaign和Adobe Analytics之间连接数据。 管道从您的网站检索用户的操作或触发器。 放弃购物车就是一个触发器示例。 在Adobe Campaign中处理触发器，以近乎实时地发送电子邮件。
 

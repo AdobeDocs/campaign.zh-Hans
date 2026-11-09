@@ -43,7 +43,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '3162'
 ht-degree: 2%
@@ -336,7 +336,7 @@ Adobe建议预览您的消息以检查其个性化设置以及收件人如何看
 
 ### 外部收件人 {#external-recipients}
 
-您可以向存储在外部文件中而不是数据库中保存的收件人投放。 在本节[&#128279;](create-message.md#select-external-recipients-selecting-external-recipients)中了解更多。
+您可以向存储在外部文件中而不是数据库中保存的收件人投放。 在本节[&#128279;](create-message.md#selecting-external-recipients)中了解更多。
 
 <!--
 ### Send to your subscribers {#send-to-subscribers}
@@ -348,7 +348,7 @@ To send messages to the subscribers of a newsletter, you can directly target the
 
 要测试您的投放，请在发送到主目标之前使用验证。
 
-确保选择适当的校样收件人，因为他们验证消息的表单和内容。 在此部分[&#128279;](create-message.md#select-the-recipients-of-proof-messages-select-the-proof-target)中介绍了定义校样收件人的步骤。
+确保选择适当的校样收件人，因为他们验证消息的表单和内容。 在此部分[&#128279;](create-message.md#select-the-proof-target)中介绍了定义校样收件人的步骤。
 
 
 ### 删除重复地址 {#deduplicate-addresses}

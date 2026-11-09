@@ -5,10 +5,10 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: b5e9265db5409f3f0fada35c43cb08fafa1ec4e0
+source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 85%
+source-wordcount: '1084'
+ht-degree: 88%
 ---
 
 # Adobe Campaign v8（控制台）文档 {#campaign-v8}
@@ -37,17 +37,8 @@ ht-degree: 85%
   + [从 Campaign Classic v7 到 v8](start/v7-to-v8.md)
   + [从 Campaign Standard 到 v8](start/acs-to-v8.md)
   + [常见问题解答](start/campaign-faq-comprehensive.md)
-  + {hide-from-toc}[常见问题解答](start/campaign-faq.md)
   + {hide-from-toc}[电子邮件跟踪像素和CNIL指南](start/cnil-pixel-tracking.md)
-+ 管理和权限 {#permissions}
-  + [权限入门](start/gs-permissions.md)
-  + [管理用户权限](start/manage-permissions.md)
-  + [添加文件夹权限](start/folder-permissions.md)
-  + [控制面板](config/self-service.md)
-+ 营销活动管理 {#campaigns}
-  + [开始使用营销活动](start/campaigns.md)
-  + [Campaign Orchestration文档>](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans)
-+ 发送消息 {#send}
++ 消息 {#send}
   + [开始使用消息功能](start/gs-message.md)
   + [创建您的第一个投放](start/create-message.md)
   + [使用投放模板](send/create-templates.md)
@@ -123,7 +114,7 @@ ht-degree: 85%
       + [收集和处理事件](send/event-processing.md)
       + [了解事件描述](send/event-description.md)
       + [发送和监测消息](send/delivery-execution.md)
-+ 轮廓和受众 {#audience}
++ 用户档案和受众 {#audience}
   + [轮廓和受众入门](audiences/gs-audiences.md)
   + [使用受众](start/audiences.md)
   + [访问轮廓](audiences/view-profiles.md)
@@ -139,17 +130,54 @@ ht-degree: 85%
     + {hide-from-toc}[与Adobe解决方案共享受众](start/shared-audiences.md)
   + {hide-from-toc}[最佳做法](audiences/audiences-best-practices.md)
   + [管理订阅](start/subscriptions.md)
-+ 登陆页面和Forms {#content}
++ 登陆页面和表单 {#content}
   + [创建登陆页面](dev/landing-pages.md)
   + [设计 Web 应用程序和表单](dev/webapps.md)
+  + Web 应用程序 {#web-applications}
+    + [Web 应用程序入门](dev/web/about-web-applications.md)
+    + [创建新 Web 应用程序](dev/web/creating-a-new-web-application.md)
+    + [设计 Web 应用程序](dev/web/designing-a-web-application.md)
+    + [用例：创建概述](dev/web/use-cases-creating-overviews.md)
+    + [解释 Web 应用程序](dev/web/translating-a-web-application.md)
+    + [跟踪 Web 应用程序访问](dev/web/tracking-a-web-application.md)
+    + [选择退出 Web 应用程序跟踪](dev/web/web-application-tracking-opt-out.md)
+  + 编辑 HTML 内容 {#editing-html-content}
+    + [HTML 编辑器入门](dev/web/about-campaign-html-editor.md)
+    + [模板管理](dev/web/template-management.md)
+    + [内容编辑器界面](dev/web/content-editor-interface.md)
+    + [编辑内容](dev/web/editing-content.md)
+    + [内容编辑最佳实践](dev/web/content-editing-best-practices.md)
+    + [创建登陆页面](dev/web/creating-a-landing-page.md)
+    + [用例：创建电子邮件投放](dev/web/use-case-creating-an-email-delivery.md)
+  + Web 窗体 {#web-forms}
+    + [Web 窗体入门](dev/web/about-web-forms.md)
+    + [使用 Web 窗体模板](dev/web/using-a-web-form-template.md)
+    + [向 Web 窗体添加字段](dev/web/adding-fields-to-a-web-form.md)
+    + [Web 窗体中的静态元素](dev/web/static-elements-in-a-web-form.md)
+    + [定义 Web 窗体布局](dev/web/defining-web-forms-layout.md)
+    + [窗体渲染](dev/web/form-rendering.md)
+    + [定义页面排序](dev/web/defining-web-forms-page-sequencing.md)
+    + [保存 Web 窗体答案](dev/web/web-forms-answers.md)
+    + [发布 Web 窗体](dev/web/publishing-a-web-form.md)
+    + [定义 Web 窗体属性](dev/web/defining-web-forms-properties.md)
+    + [解释 Web 窗体](dev/web/translating-a-web-form.md)
+    + [用例：Web 窗体](dev/web/use-cases-web-forms.md)
+  + 调查 {#surveys}
+    + [调查入门](dev/surveys/about-surveys.md)
+    + [创建调查的关键步骤](dev/surveys/getting-started-with-surveys.md)
+    + [设计调查](dev/surveys/building-a-survey.md)
+    + [管理答案](dev/surveys/managing-answers.md)
+    + [发布、跟踪和使用收集的数据](dev/surveys/publish-track-and-use-collected-data.md)
+    + [配置调查](dev/surveys/configuring-surveys.md)
+    + [用例：创建引用窗体](dev/surveys/use-case-creating-a-refer-a-friend-form.md)
+    + [用例：显示在线调查的答案报告](dev/surveys/use-case-displaying-report-on-answers-to-an-online-survey.md)
++ 营销活动 {#campaigns}
+  + [开始使用营销活动](start/campaigns.md)
+  + [Campaign Orchestration文档>](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans)
 + 工作流 {#workflows}
   + [工作流入门](config/workflows.md)
   + [工作流文档>](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)
-+ 隐私和安全性 {#privacy}
-  + [管理隐私请求](start/privacy.md)
-  + [安全准则](config/security.md)
-  + [增强的安全附加功能](config/enhanced-security.md)
-+ 选件管理 — 互动 {#offers}
++ 优惠和互动 {#offers}
   + [实时互动入门](interaction/interaction.md)
   + [环境和架构](interaction/interaction-architecture.md)
   + [最佳实践](interaction/interaction-best-practices.md)
@@ -165,9 +193,31 @@ ht-degree: 85%
     + [上下文](interaction/interaction-present-offers.md)
     + [在网页中调用产品建议](interaction/interaction-integration.md)
     + [管理匿名互动](interaction/anonymous-interactions.md)
+  + 管理产品建议目录 {#managing-an-offer-catalog}
+    + [批准和激活产品建议](interaction/approving-and-activating-an-offer.md)
+    + [管理产品建议模板](interaction/managing-offer-templates.md)
+    + [管理产品建议演示](interaction/managing-offer-presentation.md)
+  + 产品建议模拟 {#simulating-offers}
+    + [关于产品建议模拟](interaction/about-offers-simulation.md)
+    + [执行设置](interaction/execution-settings.md)
+    + [模拟范围](interaction/simulation-scope.md)
+    + [模拟跟踪](interaction/simulation-tracking.md)
   + [报告和历史记录](interaction/interaction-tracking.md)
   + [用例](interaction/interaction-use-cases.md)
-+ 跟踪和分析 {#analytics}
+  + 用例示例 {#case-study}
+    + [呈现规则](interaction/presentation-rules.md)
+    + [入站渠道产品建议](interaction/offers-on-an-inbound-channel.md)
+    + [出站渠道产品建议](interaction/offers-on-an-outbound-channel.md)
+  + [高级设置](interaction/interaction-advanced-settings.md)
+  + 高级参数 {#advanced-parameters}
+    + [扩展示例](interaction/extension-example.md)
++ 查询和数据 {#data}
+  + 查询数据库 {#query}
+    + [使用查询编辑器](start/query-editor.md)
+    + [设计查询](start/design-queries.md)
+    + [定义过滤器条件](start/filter-conditions.md)
+  + [导入数据](start/import.md)
++ 报告和跟踪 {#analytics}
   + 消息跟踪 {#tracking}
     + [跟踪入门](send/tracking.md)
     + [配置跟踪的链接](send/tracked-links.md)
@@ -190,13 +240,6 @@ ht-degree: 85%
       + [投放报告](reporting/delivery-reports.md)
       + [内置量度计算](reporting/metrics-calculation.md)
     + [自定义报告](reporting/custom-reports.md)
-+ 数据管理 {#data}
-  + 查询数据库 {#query}
-    + [使用查询编辑器](start/query-editor.md)
-    + [设计查询](start/design-queries.md)
-    + [定义过滤器条件](start/filter-conditions.md)
-  + [导入数据](start/import.md)
-  + [工作流文档>](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans)
 + 集成 {#connect}
   + [将 Campaign 与其他解决方案配合使用](connect/integration.md)
   + Campaign + Experience Platform {#ac-aep}
@@ -215,6 +258,15 @@ ht-degree: 85%
     + [使用 Campaign 和 SFDC](connect/ac-sfdc.md)
     + [使用 Campaign 和 Microsoft Dynamics](connect/ac-ms-dyn.md)
     + [同步数据](connect/crm-data-sync.md)
++ 管理和权限 {#permissions}
+  + [权限入门](start/gs-permissions.md)
+  + [管理用户权限](start/manage-permissions.md)
+  + [添加文件夹权限](start/folder-permissions.md)
+  + [控制面板](config/self-service.md)
++ 隐私和安全性 {#privacy}
+  + [管理隐私请求](start/privacy.md)
+  + [安全准则](config/security.md)
+  + [增强的安全附加功能](config/enhanced-security.md)
 + 架构 {#architecture}
   + [全局原则](architecture/general-architecture.md)
   + [架构模型](architecture/architecture.md)

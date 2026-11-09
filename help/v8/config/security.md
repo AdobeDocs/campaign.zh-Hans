@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
 workflow-type: tm+mt
-source-wordcount: '2977'
+source-wordcount: '2954'
 ht-degree: 49%
 ---
 # Campaign安全最佳实践 {#ac-security}
@@ -158,7 +158,7 @@ Adobe Campaign 是 Adobe Experience Cloud 解决方案的一部分。 Campaign �
 
 通过 Adobe Campaign，您可以收集数据，包括个人信息和敏感信息。 因此，获得并监控收件人的同意至关重要。
 
-* 始终让收件人同意接收通信。 为此，请尽快保持遵守选择退出请求并通过双重选择加入流程来验证同意。 有关此内容的更多信息，请参阅[使用双重选择加入创建订阅表单](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/designing-content/web-forms/use-cases-web-forms){target=_blank}。
+* 始终让收件人同意接收通信。 为此，请尽快保持遵守选择退出请求并通过双重选择加入流程来验证同意。 有关此内容的更多信息，请参阅[使用双重选择加入创建订阅表单](../dev/web/use-cases-web-forms.md)。
 * 请勿导入欺诈性列表，并使用种子地址确认您的客户端文件未被用于欺诈用途。 有关此内容的更多信息，请参阅[关于种子地址](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses){target=_blank}。
 * 通过同意和权限管理，您可以跟踪收件人的偏好，以及管理组织内谁可以访问哪些数据。 有关更多信息，请参阅[此章节](#consent)。
 * 促进和管理收件人的隐私请求。 有关更多信息，请参阅[此章节](#privacy-requests)。
@@ -172,7 +172,7 @@ Adobe Campaign 为您提供专门用于隐私管理的各种功能集：
 * 隐私请求（访问权和被遗忘权）。 请参阅[此小节](#privacy-requests)。
 * 选择退出个人信息销售（特定于 CCPA）
 
-[此部分](https://helpx.adobe.com/cn/campaign/kb/campaign-privacy-more.html#gdprpersonasandflow)介绍了 Campaign 的主要隐私功能以及所涉及用户画像的示例。
+[此部分](#personal-data)介绍了 Campaign 的主要隐私功能以及所涉及用户画像的示例。
 
 ### 同意、保留和角色 {#consent}
 

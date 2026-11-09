@@ -22,7 +22,7 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 18%
@@ -54,7 +54,7 @@ In addition, the **Marketing Resource Management (MRM)** module lets you control
 营销策划可集中与营销策划相关的所有元素：投放、定位规则、成本、导出文件、相关文档等。每个营销策划都附属于一个项目。 在本节[&#128279;](marketing-campaign-create.md#create-a-campaign)中了解如何创建营销活动。
 
 1. **选择受众**
-可以从列表导入受众，也可以使用查询在营销活动工作流中构建受众。 在本节[&#128279;](marketing-campaign-target.md#select-the-target-population)中了解如何定义营销活动的目标受众。
+可以从列表导入受众，也可以使用查询在营销活动工作流中构建受众。 在本节[&#128279;](marketing-campaign-target.md)中了解如何定义营销活动的目标受众。
 
 1. **创建投放**
 在营销活动中编排跨渠道投放。 通过个性化的电子邮件、短信、推送通知和应用程序内消息，简化您与Adobe Campaign的通信。 您还可以添加直邮投放。 在本节[&#128279;](marketing-campaign-deliveries.md)中了解如何在营销活动中创建、验证和监视投放。
@@ -68,7 +68,7 @@ In addition, the **Marketing Resource Management (MRM)** module lets you control
 1. **跟踪预算、库存和相关成本**。
 使用Adobe Campaign控制预算分配，管理供应商、库存和成本。 [了解详情](providers-stocks-and-budgets.md#create-service-providers-and-their-cost-structures)。
 
-完成这些步骤后，您可以[启动投放](marketing-campaign-deliveries.md#start-a-delivery)，检查与投放相关的数据、流程和信息，并在必要时[管理相关文档](marketing-campaign-deliveries.md#manage-associated-documents)。 您还可以[跟踪和监视营销活动和投放的执行](marketing-campaign-monitoring.md)。
+完成这些步骤后，您可以[启动投放](marketing-campaign-deliveries.md#start-a-delivery)，检查与投放相关的数据、流程和信息，并在必要时[管理相关文档](marketing-campaign-deliveries.md)。 您还可以[跟踪和监视营销活动和投放的执行](marketing-campaign-monitoring.md)。
 
 
 ## 视频中的关键概念 {#key-concepts-video}

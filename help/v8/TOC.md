@@ -5,10 +5,10 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: 9b9c573de6120f4b3da0d5eee98192b56b4754df
+source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 85%
+source-wordcount: '921'
+ht-degree: 86%
 ---
 
 # Adobe Campaign v8（控制台）文档 {#campaign-v8}
@@ -37,7 +37,6 @@ ht-degree: 85%
   + [从 Campaign Classic v7 到 v8](start/v7-to-v8.md)
   + [从 Campaign Standard 到 v8](start/acs-to-v8.md)
   + [常见问题解答](start/campaign-faq-comprehensive.md)
-  + {hide-from-toc}[常见问题解答](start/campaign-faq.md)
   + {hide-from-toc}[电子邮件跟踪像素和CNIL指南](start/cnil-pixel-tracking.md)
 + 消息 {#send}
   + [开始使用消息功能](start/gs-message.md)
@@ -134,6 +133,15 @@ ht-degree: 85%
 + 登陆页面和表单 {#content}
   + [创建登陆页面](dev/landing-pages.md)
   + [设计 Web 应用程序和表单](dev/webapps.md)
+  + 调查 {#surveys}
+    + [调查入门](dev/surveys/about-surveys.md)
+    + [创建调查的关键步骤](dev/surveys/getting-started-with-surveys.md)
+    + [设计调查](dev/surveys/building-a-survey.md)
+    + [管理答案](dev/surveys/managing-answers.md)
+    + [发布、跟踪和使用收集的数据](dev/surveys/publish-track-and-use-collected-data.md)
+    + [配置调查](dev/surveys/configuring-surveys.md)
+    + [用例：创建引用窗体](dev/surveys/use-case-creating-a-refer-a-friend-form.md)
+    + [用例：显示在线调查的答案报告](dev/surveys/use-case-displaying-report-on-answers-to-an-online-survey.md)
 + 营销活动 {#campaigns}
   + [开始使用营销活动](start/campaigns.md)
   + [Campaign Orchestration文档>](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans)
@@ -158,6 +166,7 @@ ht-degree: 85%
     + [管理匿名互动](interaction/anonymous-interactions.md)
   + [报告和历史记录](interaction/interaction-tracking.md)
   + [用例](interaction/interaction-use-cases.md)
+  + [高级设置](interaction/interaction-advanced-settings.md)
 + 查询和数据 {#data}
   + 查询数据库 {#query}
     + [使用查询编辑器](start/query-editor.md)

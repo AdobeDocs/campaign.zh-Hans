@@ -21,9 +21,9 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '187'
 ht-degree: 8%
 ---
 # 提供最佳优惠{#interaction-present-offers}
@@ -34,7 +34,7 @@ ht-degree: 8%
 
 选件引擎要选择选件，该选件必须获得批准并在实时环境中可用。
 
-有关更多信息，请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/managing-offers/managing-an-offer-catalog/approving-and-activating-an-offer.html?lang=zh-Hans#approving-offer-content){target="_blank"}。
+如需详细信息，请参阅[此小节](approving-and-activating-an-offer.md#approving-offer-content)。
 
 在入站联系人的上下文中，网站可以识别正在浏览页面的用户，也可以识别不存在的用户。 优惠引擎为已识别的用户档案和匿名用户档案提供不同的优惠。
 

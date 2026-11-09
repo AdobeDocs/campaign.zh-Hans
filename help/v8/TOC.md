@@ -5,10 +5,10 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 86%
+source-wordcount: '1084'
+ht-degree: 88%
 ---
 
 # Adobe Campaign v8（控制台）文档 {#campaign-v8}
@@ -133,6 +133,35 @@ ht-degree: 86%
 + 登陆页面和表单 {#content}
   + [创建登陆页面](dev/landing-pages.md)
   + [设计 Web 应用程序和表单](dev/webapps.md)
+  + Web 应用程序 {#web-applications}
+    + [Web 应用程序入门](dev/web/about-web-applications.md)
+    + [创建新 Web 应用程序](dev/web/creating-a-new-web-application.md)
+    + [设计 Web 应用程序](dev/web/designing-a-web-application.md)
+    + [用例：创建概述](dev/web/use-cases-creating-overviews.md)
+    + [解释 Web 应用程序](dev/web/translating-a-web-application.md)
+    + [跟踪 Web 应用程序访问](dev/web/tracking-a-web-application.md)
+    + [选择退出 Web 应用程序跟踪](dev/web/web-application-tracking-opt-out.md)
+  + 编辑 HTML 内容 {#editing-html-content}
+    + [HTML 编辑器入门](dev/web/about-campaign-html-editor.md)
+    + [模板管理](dev/web/template-management.md)
+    + [内容编辑器界面](dev/web/content-editor-interface.md)
+    + [编辑内容](dev/web/editing-content.md)
+    + [内容编辑最佳实践](dev/web/content-editing-best-practices.md)
+    + [创建登陆页面](dev/web/creating-a-landing-page.md)
+    + [用例：创建电子邮件投放](dev/web/use-case-creating-an-email-delivery.md)
+  + Web 窗体 {#web-forms}
+    + [Web 窗体入门](dev/web/about-web-forms.md)
+    + [使用 Web 窗体模板](dev/web/using-a-web-form-template.md)
+    + [向 Web 窗体添加字段](dev/web/adding-fields-to-a-web-form.md)
+    + [Web 窗体中的静态元素](dev/web/static-elements-in-a-web-form.md)
+    + [定义 Web 窗体布局](dev/web/defining-web-forms-layout.md)
+    + [窗体渲染](dev/web/form-rendering.md)
+    + [定义页面排序](dev/web/defining-web-forms-page-sequencing.md)
+    + [保存 Web 窗体答案](dev/web/web-forms-answers.md)
+    + [发布 Web 窗体](dev/web/publishing-a-web-form.md)
+    + [定义 Web 窗体属性](dev/web/defining-web-forms-properties.md)
+    + [解释 Web 窗体](dev/web/translating-a-web-form.md)
+    + [用例：Web 窗体](dev/web/use-cases-web-forms.md)
   + 调查 {#surveys}
     + [调查入门](dev/surveys/about-surveys.md)
     + [创建调查的关键步骤](dev/surveys/getting-started-with-surveys.md)
@@ -164,9 +193,24 @@ ht-degree: 86%
     + [上下文](interaction/interaction-present-offers.md)
     + [在网页中调用产品建议](interaction/interaction-integration.md)
     + [管理匿名互动](interaction/anonymous-interactions.md)
+  + 管理产品建议目录 {#managing-an-offer-catalog}
+    + [批准和激活产品建议](interaction/approving-and-activating-an-offer.md)
+    + [管理产品建议模板](interaction/managing-offer-templates.md)
+    + [管理产品建议演示](interaction/managing-offer-presentation.md)
+  + 产品建议模拟 {#simulating-offers}
+    + [关于产品建议模拟](interaction/about-offers-simulation.md)
+    + [执行设置](interaction/execution-settings.md)
+    + [模拟范围](interaction/simulation-scope.md)
+    + [模拟跟踪](interaction/simulation-tracking.md)
   + [报告和历史记录](interaction/interaction-tracking.md)
   + [用例](interaction/interaction-use-cases.md)
+  + 用例示例 {#case-study}
+    + [呈现规则](interaction/presentation-rules.md)
+    + [入站渠道产品建议](interaction/offers-on-an-inbound-channel.md)
+    + [出站渠道产品建议](interaction/offers-on-an-outbound-channel.md)
   + [高级设置](interaction/interaction-advanced-settings.md)
+  + 高级参数 {#advanced-parameters}
+    + [扩展示例](interaction/extension-example.md)
 + 查询和数据 {#data}
   + 查询数据库 {#query}
     + [使用查询编辑器](start/query-editor.md)

@@ -84,7 +84,7 @@ ht-degree: 2%
   >
   >如果模板配置为考虑对照组，但在假设涉及的投放中未定义组，则结果将仅基于目标收件人。
 
-  有关定义和配置控制组的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target=_blank}。
+  有关定义和配置控制组的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans#add-a-control-group){target=_blank}。
 
 * **[!UICONTROL Channel]**：您可以通过选择下拉列表中的&#x200B;**[!UICONTROL All channels]**，选择特定的渠道或使假设验证模板可用于Adobe Campaign控制台中的所有渠道。 如果您为特定渠道配置模板，则可以在创建假设验证时，自动筛选每个渠道的投放。 [了解详情](creating-hypotheses.md)
 
@@ -134,7 +134,7 @@ ht-degree: 2%
 
 ### 交易 {#transactions}
 
-此选项卡包含各种字段和表，可让您保存收件人反应的交易历史记录。 有关专用于响应管理的表的详细信息，请参阅此[部分](https://experienceleague.adobe.com/en/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/about-schema-reference){target="_blank"}。
+此选项卡包含各种字段和表，可让您保存收件人反应的交易历史记录。 有关专用于响应管理的表的详细信息，请参阅此[部分](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/about-schema-reference){target="_blank"}。
 
 * **[!UICONTROL Schema (reaction log storage)]**：选择收件人反应表。 Adobe Campaign中的现成表是&#x200B;**NmsRemaMatchRcp**。
 * **[!UICONTROL Transaction schema]**：选择假设将涉及的表，即交易表或购买表。

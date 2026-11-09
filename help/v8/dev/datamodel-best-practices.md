@@ -2,6 +2,7 @@
 title: 数据模型最佳实践
 description: 了解Campaign数据模型扩展最佳实践
 feature: Data Model
+version: Campaign v8, Campaign Classic v7
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: bdd5e993-0ce9-49a8-a618-ab0ff3796d49
@@ -48,7 +49,7 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
 workflow-type: tm+mt
 source-wordcount: '2777'
 ht-degree: 5%
@@ -256,7 +257,7 @@ Adobe Campaign依赖于第三方数据库引擎。 根据提供商的不同，�
 
 * **小型**&#x200B;表类似于投放表。
 * **中等大小**&#x200B;表与收件人表的大小相同。 每个客户都有一笔记录。
-* **large-size**&#x200B;表类似于Broad日志表。 每个客户都有许多记录。
+* **large-size**表类似于Broad日志表。 每个客户都有许多记录。
 例如，如果数据库包含1000万条收件人，则Broad日志表将包含约1亿到2亿条消息，而Delivery表将包含数千条记录。
 
 行数也会影响性能。 Adobe Campaign数据库的设计宗旨并非存储当前未用于定位或个性化目的的历史数据 — 这是一个操作数据库。

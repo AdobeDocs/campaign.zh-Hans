@@ -61,7 +61,7 @@ ht-degree: 3%
 
 1. 指定模拟范围。
 
-   有关详细信息，请参阅作用域](simulation-scope.md#definition-of-the-scope)的[定义。
+   有关详细信息，请参阅作用域[&#128279;](simulation-scope.md#definition-of-the-scope)的定义。
 
    ![](assets/offer_simulation_004.png)
 

@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 66d00cbaf20d714f56ab02bba593cff4a0d23571
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1071'
 ht-degree: 10%
 ---
 # Campaign架构快速入门{#gs-ac-archi}
@@ -82,7 +82,7 @@ Campaign v8 企业版引入了&#x200B;**完全联合数据访问** (FFDA) 概念
 
 >[!AVAILABILITY]
 >
->此功能仅适用于具有多个中间源(MID)实例配置的客户。
+>此功能位于有限可用性(LA)中，仅适用于具有多个中间源(MID)实例配置的客户。
 
 根据您的Campaign v8包，为您配置特定数量的中间源实例，负责执行投放。
 

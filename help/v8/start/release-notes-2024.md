@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 88%
+source-wordcount: '1661'
+ht-degree: 85%
 ---
 # 2024 年发行说明 {#2024-rn}
 
@@ -188,7 +188,7 @@ _2024 年 2 月 14 日_
 
 ### 新增功能 {#new-8-6-1}
 
-* 从此版本开始，您可以访问新的 **Campaign Web 用户界面**，该界面可通过中央 Adobe Experience Cloud 环境使用。 Experience Cloud 是 Adobe 的数字营销应用程序、产品和服务的集成系列。 通过其直观的界面，您可以快速访问云应用程序、产品功能和服务。 [在此页面中](campaign-ui.md#ac-web-ui)了解如何连接到 Adobe Experience Cloud 并访问 Adobe Campaign Web 界面。
+* 从此版本开始，您可以访问新的&#x200B;**Campaign Web用户界面**，该界面可通过中心[!DNL Adobe CX Enterprise]环境使用。 [!DNL CX Enterprise]是Adobe的集成数字营销应用程序、产品和服务系列。 通过其直观的界面，您可以快速访问云应用程序、产品功能和服务。 在此页面[&#128279;](campaign-ui.md#ac-web-ui)中了解如何连接到[!DNL CX Enterprise]并访问Adobe Campaign Web界面。
 
   >[!AVAILABILITY]
   >

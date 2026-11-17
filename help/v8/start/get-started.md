@@ -51,9 +51,9 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1055'
 ht-degree: 87%
 ---
 # Adobe Campaign 入门{#gs-ac-v8}
@@ -129,7 +129,7 @@ Adobe Campaign 可逐步丰富客户数据和轮廓，从而让您监测和解�
 
 要了解有关报告和跟踪功能的更多信息，请参阅[此部分](../reporting/gs-reporting.md)。
 
-## Adobe Experience Cloud 集成 {#adobe-experience-cloud-integrations}
+## [!DNL Adobe CX Enterprise]集成 {#adobe-experience-cloud-integrations}
 
 您可以将 Adobe Campaign 的投放功能以及高级营销活动管理功能与帮助您个性化用户体验的解决方案（例如 Adobe Experience Manager、Adobe Analytics、Adobe Target 或 Adobe Experience Cloud 触发程序）结合起来。
 

@@ -62,9 +62,9 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
 workflow-type: tm+mt
-source-wordcount: '1504'
+source-wordcount: '1501'
 ht-degree: 70%
 ---
 # Adobe Campaign v8 关键功能 {#ac-gs-what-is-new}
@@ -89,7 +89,7 @@ Adobe Campaign v8与传统客户端控制台一起提供了&#x200B;**新的Web�
 * **更快上线** — 新用户的最低学习曲线
 * **统一体验** — 与Campaign Standard共享相似之处以便于过渡
 
-从Campaign v8.6开始，可通过Adobe Experience Cloud使用Campaign Web UI，从而无缝访问所有Adobe解决方案。
+从Campaign v8.6开始，可通过[!DNL Adobe CX Enterprise]使用Campaign Web UI，从而无缝访问所有Adobe解决方案。
 
 [了解有关Campaign Web用户界面的更多信息](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/campaign-web-home){target="_blank"}
 

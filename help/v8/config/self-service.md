@@ -30,10 +30,10 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 91%
+source-wordcount: '516'
+ht-degree: 90%
 ---
 # Campaign 控制面板 {#ac-control-panel}
 
@@ -51,7 +51,7 @@ Campaign 控制面板允许管理每个实例的设置并跟踪使用情况，�
 
 ## 如何访问控制面板？ {#ac-control-panel-access}
 
-可直接从 Adobe Experience Cloud 访问控制面板。 仅管理员用户可以访问。
+可直接从[!DNL Adobe CX Enterprise]访问该控制面板。 仅管理员用户可以访问。
 
 >[!IMPORTANT]
 >

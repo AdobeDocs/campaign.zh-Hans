@@ -24,12 +24,12 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 76%
+source-wordcount: '255'
+ht-degree: 61%
 ---
-# 使用 Adobe Experience Cloud 解决方案共享受众{#shared-audiences}
+# 与[!DNL Adobe CX Enterprise]解决方案共享受众{#shared-audiences}
 
 
 选项 1：AEP 源和目标
@@ -38,9 +38,9 @@ ht-degree: 76%
 
 您可以将 **Adobe Campaign** 与 **People 核心服务** 或 Adobe Audience Manager 集成。 然后，您将能够：
 
-* 从不同的 Adobe Experience Cloud 解决方案导入共享受众/区段到 Adobe Campaign 中。 可通过 Adobe Campaign 中的列表导入受众。
+* 从其他[!DNL CX Enterprise]解决方案导入共享受众/区段到Adobe Campaign。 可通过 Adobe Campaign 中的列表导入受众。
 
-* 以 Adobe Experience Cloud 共享受众的形式导出列表。 您可在所用的不同 Adobe Experience Cloud 解决方案中使用这些受众。 在工作流中完成定位后，可使用专门的 **[!UICONTROL Update shared audience]** 活动导出受众。
+* 以[!DNL CX Enterprise]共享受众的形式导出列表。 这些受众可在您使用的其他[!DNL CX Enterprise]解决方案中使用。 在工作流中完成定位后，可使用专门的 **[!UICONTROL Update shared audience]** 活动导出受众。
 
 此集成支持两种类型的 Adobe Experience Cloud ID：
 

@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '1599'
-ht-degree: 56%
+source-wordcount: '1590'
+ht-degree: 54%
 ---
 # 使用Campaign和Adobe Analytics {#ac-aa}
 
@@ -49,7 +49,7 @@ ht-degree: 56%
 
 >[!NOTE]
 >
->作为托管Cloud Services用户，[联系Adobe](../start/campaign-faq-comprehensive.md#support)以将Campaign与Adobe Experience Cloud服务和解决方案连接。 必须通过专用软件包在您的环境中安装Web Analytics连接器加载项。
+>作为托管云服务用户，[联系Adobe](../start/campaign-faq-comprehensive.md#support)以将Campaign与[!DNL Adobe CX Enterprise]服务和解决方案连接。 必须通过专用软件包在您的环境中安装Web Analytics连接器加载项。
 
 使用 Adobe Analytics Connector，Adobe Campaign 可以对互联网受众进行评测（网站分析）。 利用Web分析工具，Adobe Campaign可将指标和营销活动属性转发到Analytics。
 
@@ -254,7 +254,7 @@ Adobe Campaign和Adobe Analytics之间的数据交换由作为后台任务运行
 
 ![](assets/webanalytics_workflows.png)
 
-**[!UICONTROL Sending of indicators and campaign attributes]**&#x200B;工作流允许您使用Adobe Analytics Connector通过Adobe Campaign将电子邮件营销活动指标发送到Adobe Experience Cloud。 此工作流在每天凌晨 4 点触发，可能需要 24 小时才能将数据发送到 Analytics。
+**[!UICONTROL Sending of indicators and campaign attributes]**&#x200B;工作流允许您使用Adobe Analytics Connector通过Adobe Campaign将电子邮件营销活动指标发送到[!DNL CX Enterprise]。 此工作流在每天凌晨 4 点触发，可能需要 24 小时才能将数据发送到 Analytics。
 
 请注意，切勿重新启动此工作流，否则它将重新发送所有先前数据，可能会影响 Analytics 结果的准确性。
 
@@ -288,7 +288,7 @@ Adobe Campaign和Adobe Analytics之间的数据交换由作为后台任务运行
 
 ## 跟踪投放 {#tracking-deliveries-in-adobe-campaign}
 
-为了让 Adobe Experience Cloud 能够在 Adobe Campaign 发送投放后跟踪网站上的活动，您需要在投放属性中引用匹配的连接器。 要执行此操作，请应用以下步骤：
+为了让[!DNL CX Enterprise]能够在Adobe Campaign发送投放后跟踪网站上的活动，您需要在投放属性中引用匹配的连接器。 要执行此操作，请应用以下步骤：
 
 1. 打开要跟踪的营销活动的投放。
 

@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 100%
+source-wordcount: '466'
+ht-degree: 96%
 ---
 # Campaign v8 兼容性矩阵 {#compat-matrix}
 
@@ -112,4 +112,4 @@ ht-degree: 100%
 * [安装 Campaign 客户端控制台](connect.md)
 * [控制面板版本](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=zh-Hans){target="_blank"}
 
-要获悉新的 Experience Cloud 解决方案版本，请订阅 [Adobe 优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html){target="_blank"}。
+若要获悉新的[!DNL Adobe CX Enterprise]解决方案版本，请订阅[Adobe优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html){target="_blank"}。

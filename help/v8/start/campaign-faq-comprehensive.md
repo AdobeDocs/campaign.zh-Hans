@@ -24,9 +24,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '11533'
+source-wordcount: '11502'
 ht-degree: 12%
 ---
 # 常见问题解答 {#faq}
@@ -50,7 +50,7 @@ ht-degree: 12%
 
 Adobe Campaign v8是一个功能强大的跨渠道营销自动化平台，可帮助您跨电子邮件、移动设备、社交和线下渠道创建、协调和投放个性化营销活动。 它结合了强大的营销数据库、活动编排引擎和实时互动功能，以便与客户在整个历程中互动。
 
-**关键功能：**&#x200B;多渠道营销活动管理、受众分段和定位、工作流自动化、大规模个性化、实时和批量消息传递、报告和分析、与Adobe Experience Cloud集成。
+**关键功能：**&#x200B;多渠道营销活动管理、受众细分和定位、工作流自动化、大规模个性化、实时和批量消息传递、报告和分析、与[!DNL Adobe CX Enterprise]集成。
 
 **是什么使得v8独一无二：**&#x200B;云原生架构（仅限托管云服务）、由Snowflake数据库提供支持的企业级性能、自动升级、增强的安全性，以及与Adobe Experience Platform的双向集成。
 
@@ -76,9 +76,9 @@ Adobe Campaign v8是一个功能强大的跨渠道营销自动化平台，可帮
 
 您需要下载并安装 Campaign 客户端控制台才能连接到 Adobe Campaign。 [了解详情](connect.md)。
 
-从Campaign v8.6版本开始，您可以访问&#x200B;**Campaign Web用户界面**，该界面可通过集中Adobe Experience Cloud环境使用。 Experience Cloud 是 Adobe 的数字营销应用程序、产品和服务的集成系列。
+从Campaign v8.6版本开始，您可以访问&#x200B;**Campaign Web用户界面**，该界面可通过中心[!DNL CX Enterprise]环境使用。 [!DNL CX Enterprise]是Adobe的集成数字营销应用程序、产品和服务系列。
 
-[在此页面中](campaign-ui.md#ac-web-ui)了解如何连接到 Adobe Experience Cloud 并访问 Adobe Campaign Web 界面。 请参阅 [Adobe Campaign Web 用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/campaign-web-home){target="_blank"}以了解详情。
+在此页面[&#128279;](campaign-ui.md#ac-web-ui)中了解如何连接到[!DNL CX Enterprise]并访问Adobe Campaign Web界面。 请参阅 [Adobe Campaign Web 用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/campaign-web-home){target="_blank"}以了解详情。
 
 
 **相关主题：**
@@ -91,7 +91,7 @@ Adobe Campaign v8是一个功能强大的跨渠道营销自动化平台，可帮
 
 是！ 通过与IMS (Adobe Identity Management System)集成，用户可使用其Adobe ID连接到Adobe Campaign控制台。 该集成具有以下优势︰
 
-* 所有 Experience Cloud 解决方案都可以使用相同的 ID。
+* 同一ID可用于所有[!DNL CX Enterprise]解决方案。
 * 使用具有不同集成的 Adobe Campaign 时，可以记住该连接。
 * 密码管理策略更安全。
 * 使用联合 ID 帐户（外部 ID 提供商）。
@@ -104,7 +104,7 @@ Adobe Campaign v8是一个功能强大的跨渠道营销自动化平台，可帮
 
 请参阅[此部分](campaign-ui.md)，了解有关Adobe Campaign用户界面基础知识的更多信息。
 
-从Campaign v8.6版本开始，您还可以访问新的&#x200B;**Campaign Web用户界面**，该界面可通过中央Adobe Experience Cloud环境使用。
+从Campaign v8.6版本开始，您还可以访问新的&#x200B;**Campaign Web用户界面**，该界面可通过中心[!DNL CX Enterprise]环境使用。
 
 [请参阅Adobe Campaign Web用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/campaign-web-home){target="_blank"}以了解详情。
 
@@ -183,7 +183,7 @@ Campaign提供了多种定位方法以便为消息选择正确的受众：
 
 +++ 我可以将Campaign v8与其他Adobe解决方案结合使用吗？
 
-是的。 Campaign v8与Adobe Experience Cloud解决方案无缝集成，以实现统一的营销生态系统。
+是的。 Campaign v8与统一营销生态系统的[!DNL CX Enterprise]解决方案无缝集成。
 
 **关键集成：** Adobe Experience Platform （统一配置文件、实时数据）、Adobe Analytics （性能衡量）、Adobe Target （个性化）、Adobe Experience Manager （内容管理）、Adobe Audience Manager （受众区段）。
 
@@ -277,7 +277,7 @@ Adobe Campaign 会定期更新。 每年都会发布包含新功能、改进和�
 * **增强的安全性** — 针对漏洞的保护、最新的修补程序、增强的数据保护
 * **更好的支持** — 更快的问题解决，访问错误修复，对最新版本的优先支持
 * **增强的性能** — 优化数据库和工作流、更好的可扩展性、更可靠的操作
-* **新功能** — 最新功能、改进了Adobe Experience Cloud集成、现代UI增强功能
+* **新功能** — 最新功能，改进了[!DNL CX Enterprise]集成，现代UI增强
 
 Adobe强烈建议运行最新版本。 作为托管云服务客户，升级由Adobe以最低的中断执行。
 
@@ -329,7 +329,7 @@ Campaign v8基于现代云原生架构而构建，具有显着改进：
 * **卓越的性能** — 高达2000万次操作/小时，具有完全联合数据访问(FFDA)体系结构
 * **新的Campaign Web UI** — 经典控制台旁提供现代、直观的界面
 * **自动升级** — 始终使用最新版本，无需停机时间
-* **增强功能** - AI助手、富推送通知、升级的短信、已改进与Adobe Experience Cloud的集成
+* **增强功能** - AI助手、富推送通知、升级的短信、已改进与[!DNL CX Enterprise]的集成
 
 **对于Campaign Classic v7用户：**&#x200B;了解[从v7过渡到v8](v7-to-v8.md)，包括架构更改、功能不可用和迁移注意事项。
 
@@ -354,7 +354,7 @@ Campaign v8是Adobe的平台，非常适合需要大量促销活动（每小时2
 
 * 处理大量数据或遇到性能问题
 * 希望减少IT开销和基础架构管理
-* 需要Adobe Experience Cloud/Platform集成
+* 需要[!DNL CX Enterprise]/平台集成
 * 希望采用具有自动更新的未来防护技术
 
 **后续步骤：**&#x200B;请联系您的Adobe代表以评估迁移准备情况并访问迁移工具。
@@ -1198,7 +1198,7 @@ Campaign控制面板是一个基于Web的管理界面，通过跨Campaign实例�
 **访问要求：**
 
 * **仅限管理员用户** -控制面板仅限具有管理员权限的用户
-* **Adobe IMS身份验证** — 通过Adobe Experience Cloud访问您的Adobe ID
+* **Adobe IMS身份验证** — 使用您的Adobe ID通过[!DNL CX Enterprise]访问
 * **Campaign v8托管云服务** — 仅适用于托管实例
 
 **其他资源：**

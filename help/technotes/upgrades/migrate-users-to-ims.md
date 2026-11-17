@@ -7,9 +7,9 @@ product_v2:
     internal-label: Campaign
   - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
     internal-label: Campaign v8
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1466'
 ht-degree: 3%
 ---
 # 将Campaign操作员迁移到Adobe Identity Management System (IMS) {#migrate-users-to-ims}
@@ -32,7 +32,7 @@ ht-degree: 3%
 
 如果贵组织中的操作员正在使用其登录/密码（也称为）连接到Campaign客户端控制台。 受影响，必须将这些运算符迁移到Adobe IMS，如下所述。
 
-迁移到[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}是确保环境安全和标准化的安全要求，因为大多数其他Adobe Experience Cloud解决方案和应用程序已在IMS上。
+迁移到[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}是确保环境安全和标准化的安全要求，因为大多数其他[!DNL Adobe CX Enterprise]解决方案和应用程序已在IMS上。
 
 >[!IMPORTANT]
 >

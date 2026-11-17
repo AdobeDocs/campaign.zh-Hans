@@ -23,10 +23,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 94%
+source-wordcount: '1103'
+ht-degree: 90%
 ---
 # 连接到 Adobe Campaign v8{#gs-ac-connect}
 
@@ -146,14 +146,14 @@ Adobe Campaign 允许您定义和管理分配给各种操作员的权限。
 
 ### Web 用户界面 {#connect-web-ui}
 
-从 Campaign v8.6 版本开始，您可以访问新的 **Campaign Web 用户界面**，该界面可通过中央 Adobe Experience Cloud 环境使用。 Experience Cloud 是 Adobe 的数字营销应用程序、产品和服务的集成系列。 通过其直观的界面，您可以快速访问云应用程序、产品功能和服务。
+从Campaign v8.6版本开始，您可以访问新的&#x200B;**Campaign Web用户界面**，该界面可通过中心[!DNL Adobe CX Enterprise]环境使用。 [!DNL CX Enterprise]是Adobe的集成数字营销应用程序、产品和服务系列。 通过其直观的界面，您可以快速访问云应用程序、产品功能和服务。
 
 >[!AVAILABILITY]
 >
 >Campaign Web 用户界面仅供通过 Adobe ID 连接到 Adobe Campaign 的用户使用。 了解有关 [Adobe 身份管理系统 (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"} 的更多信息。
 >
 
-[在此页面中](campaign-ui.md#ac-web-ui)了解如何连接到 Adobe Experience Cloud 并访问 Adobe Campaign Web 界面。
+在此页面[&#128279;](campaign-ui.md#ac-web-ui)中了解如何连接到[!DNL CX Enterprise]并访问Adobe Campaign Web界面。
 
 请参阅 [Adobe Campaign Web 用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/campaign-web-home){target="_blank"}以了解详情。
 

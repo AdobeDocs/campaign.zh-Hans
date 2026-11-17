@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Security
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 76%
+source-wordcount: '732'
+ht-degree: 73%
 ---
 # 从 [!DNL Campaign Classic] v7 过渡到 [!DNL Campaign] v8{#gs-matrix}
 
@@ -91,7 +91,7 @@ Campaign v8 企业版引入了&#x200B;**完全联合数据访问** (FFDA) 概念
 
 ## 使用 Adobe ID 连接到 Campaign{#adobe-id}
 
-Campaign 用户仅可通过其 Adobe ID 进行连接。 可使用同一个 Adobe ID 来管理与单个帐户关联的所有 Adobe 计划和产品，适合所有 Adobe Experience Cloud 解决方案。
+Campaign 用户仅可通过其 Adobe ID 进行连接。 同一Adobe ID用于保留与单个帐户关联的所有Adobe计划和产品，适用于所有[!DNL Adobe CX Enterprise]解决方案。
 
 了解如何在[此页面](connect.md)中连接到[!DNL Campaign]。
 

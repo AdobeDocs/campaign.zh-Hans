@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '2240'
-ht-degree: 5%
+source-wordcount: '2237'
+ht-degree: 4%
 ---
 # 技术工作流{#about-technical-workflows}
 
@@ -90,11 +90,11 @@ Adobe Campaign附带一组内置的技术工作流。 它们控制计划在服�
 | **讨论论坛进程** (newsgroupMgt) | 营销资源 (MRM) | 此工作流用于管理来自讨论论坛的通知投放。 当收到批准信号时会触发该事件。 |
 | **分布式营销流程** (centralLocalMgt) | 集中式/本地营销（分布式营销） | 此工作流开始处理与使用分布式营销模块相关。 它可启动本地营销策划的创建，并管理与订单和营销策划包可用性相关的通知。 |
 | **事件清除** (webAnalyticsPurgeWebEvents) | 网站分析连接器 | 利用此工作流，可根据生命周期字段中配置的时段，从数据库字段删除每个事件。 |
-| **将受众导出到Adobe Experience Cloud** (exportSharedAudience) | 与Adobe Experience Cloud集成 | 此工作流可将受众作为共享受众/区段导出。 您可在所用的不同 Adobe Experience Cloud 解决方案中使用这些受众。 |
+| **将受众导出到Adobe Experience Cloud** (exportSharedAudience) | 与Adobe Experience Cloud集成 | 此工作流可将受众作为共享受众/区段导出。 这些受众可在您使用的其他Adobe CX Enterprise解决方案中使用。 |
 | **预测** （预测） | 默认安装 | 此工作流会分析保存在临时日历中的投放（创建临时日志）。 默认情况下，此工作流于每日凌晨1点触发。 |
 | **完全聚合计算（propositionrcp多维数据集）** (agg_nmspropositionrcp_full) | 优惠引擎（交互） | 此工作流可更新优惠建议多维数据集的完全聚合。 默认情况下，此工作流于每日早上6点触发。 此聚合可捕获以下维度：渠道、投放、营销选件和日期。 然后，使用优惠建议多维数据集根据优惠生成报表。 在[本节](../../v8/reporting/gs-cubes.md)中了解有关多维数据集的更多信息。 |
 | **已转换联系人的标识** (webAnalyticsFindConverted) | 网站分析连接器 | 此工作流对再营销活动后完成购买的网站访客编制索引。 可以在再营销效率报表中访问通过此工作流恢复的数据（请参阅此页面）。 |
-| **从Adobe Experience Cloud导入受众** (importSharedAudience) | 与Adobe Experience Cloud集成 | 利用此工作流，可将来自不同Adobe Experience Cloud解决方案的受众/区段导入Adobe Campaign。 |
+| **从Adobe Experience Cloud导入受众** (importSharedAudience) | 与Adobe Experience Cloud集成 | 利用此工作流，可将不同CX Enterprise解决方案的受众/区段导入Adobe Campaign。 |
 | 营销活动中的投放&#x200B;**作业** (deliveryMgt) | 默认安装 | 此工作流会触发批准的投放，并开始后处理外部投放的服务提供程序。 它还会发送批准通知和提醒。 |
 | 服务提供者上的&#x200B;**作业** (supplierMgt) | 默认安装 | 在投放获得批准后，此工作流将开始处理提供程序（通过电子邮件发送到路由器并进行后处理）。 |
 | **LINE V2访问令牌更新** (updateLineV2AccessToken) | LINE 渠道 | 此工作流将刷新对LINE V2的访问令牌。 |
@@ -120,7 +120,7 @@ Adobe Campaign附带一组内置的技术工作流。 它们控制计划在服�
 | **复制引用表** (ffdaReplicateReferenceTables) | 默认仅在[Campaign Enterprise (FFDA)部署](../../v8/architecture/enterprise-deployment.md)上安装 | 执行需要存在于Campaign本地数据库(PostgreSQL)和云数据库([!DNL Snowflake])上的内置表的自动复制。 按计划每天每小时执行一次。 如果存在&#x200B;**lastModified**&#x200B;字段，则会增量进行复制，否则将复制整个表。 [了解有关数据复制的更多信息](../../v8/architecture/replication.md) |
 | **复制暂存数据** (ffdaReplicateStagingData) | 默认仅在[Campaign Enterprise (FFDA)部署](../../v8/architecture/enterprise-deployment.md)上安装 | 为单一调用复制暂存数据。 按计划每天每小时执行一次。 [了解有关数据复制的更多信息](../../v8/architecture/replication.md) |
 | **报告聚合** (reportingAggregates) | 投放 | 此工作流可更新报告中使用的聚合。 默认情况下，此工作流于每日凌晨2点触发。 |
-| **发送指标和营销活动属性** (webAnalyticsSendMetrics) | 网站分析连接器 | 此工作流可让您通过® Analytics连接器，将电子邮件营销活动指标从Adobe Campaign发送到Adobe Experience Cloud套件。 相关指示器如下所示： Sent (iSent)、打开总数(iTotalRecipientOpen)、点击的收件人总数(iTotalRecipientClick)、错误(iError)、选择退出（选择退出）(iOptOut)。 |
+| **发送指标和营销活动属性** (webAnalyticsSendMetrics) | 网站分析连接器 | 此工作流可让您通过® Analytics连接器，将电子邮件营销活动指标从Adobe Campaign发送到CX Enterprise。 相关指示器如下所示： Sent (iSent)、打开总数(iTotalRecipientOpen)、点击的收件人总数(iTotalRecipientClick)、错误(iError)、选择退出（选择退出）(iOptOut)。 |
 | **Stock：订单和警报** (stockMgt) | 默认安装 | 此工作流可启动订单行上的库存计算，并管理警告警报阈值。 |
 | **从Adobe Experience Platform Data Collection** (syncWithLaunch)同步移动应用 | 默认安装，从v8.5开始 | 此工作流会自动将移动资产从数据收集同步到Adobe Campaign。 |
 | **同步Twitter页面** (syncTwitter) | 社交媒体营销 | 此工作流每天早上7:00将X关注者导入Adobe Campaign。 |

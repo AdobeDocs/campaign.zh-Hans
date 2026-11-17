@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '1599'
-ht-degree: 56%
+source-wordcount: '1590'
+ht-degree: 54%
 ---
 # 使用Campaign和Adobe Analytics {#ac-aa}
 
@@ -49,7 +49,7 @@ ht-degree: 56%
 
 >[!NOTE]
 >
->作为托管Cloud Services用户，[联系Adobe](../start/campaign-faq-comprehensive.md#support)以将Campaign与Adobe Experience Cloud服务和解决方案连接。 必须通过专用软件包在您的环境中安装Web Analytics连接器加载项。
+>作为托管云服务用户，[联系Adobe](../start/campaign-faq-comprehensive.md#support)以将Campaign与[!DNL Adobe CX Enterprise]服务和解决方案连接。 必须通过专用软件包在您的环境中安装Web Analytics连接器加载项。
 
 使用 Adobe Analytics Connector，Adobe Campaign 可以对互联网受众进行评测（网站分析）。 利用Web分析工具，Adobe Campaign可将指标和营销活动属性转发到Analytics。
 
@@ -85,7 +85,7 @@ ht-degree: 56%
 
 1. 在 **[!UICONTROL Report suite manager]** 页面中，依次单击 **[!UICONTROL Create new]** 和 **[!UICONTROL Report suite]**。
 
-   有关创建&#x200B;**[!UICONTROL Report suite]**&#x200B;的详细过程，请参阅[Adobe Analytics文档](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite#prerequisites){target="_blank"}。
+   有关创建&#x200B;**[!UICONTROL Report suite]**&#x200B;的详细过程，请参阅[Adobe Analytics文档](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite#prerequisites){target="_blank"}。
 
    ![](assets/analytics_connnector_3.png)
 
@@ -115,7 +115,7 @@ ht-degree: 56%
 
 1. 单击 **[!UICONTROL Add new]** 以创建评测电子邮件营销活动影响所需的标识符，即内部营销活动名称 (cid) 和 iNmsBroadlog (bid) 表 ID。
 
-   要了解如何编辑&#x200B;**[!UICONTROL Conversion variables]**，请参阅此[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html?lang=zh-Hans#admin-tools){target="_blank"}。
+   要了解如何编辑&#x200B;**[!UICONTROL Conversion variables]**，请参阅此[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html#admin-tools){target="_blank"}。
 
    ![](assets/analytics_connnector_6.png)
 
@@ -138,7 +138,7 @@ ht-degree: 56%
    * **[!UICONTROL Unique Opens]**
    * **[!UICONTROL Unsubscribed]**
 
-   要了解如何配置&#x200B;**[!UICONTROL Success events]**，请参阅此[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event.html?lang=zh-Hans)
+   要了解如何配置&#x200B;**[!UICONTROL Success events]**，请参阅此[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event.html)
 
    ![](assets/analytics_connnector_8.png)
 
@@ -165,7 +165,7 @@ ht-degree: 56%
 
 1. 单击 **[!UICONTROL Save]**。
 
-有关分类集的详细信息，请参阅[Adobe Analytics文档](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/classifications/sets/create-set){target="_blank"}。
+有关分类集的详细信息，请参阅[Adobe Analytics文档](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/create-set){target="_blank"}。
 
 配置报表包、转化变量、成功事件和分类集后，您需要在Adobe Campaign中配置&#x200B;**[!UICONTROL External accounts]**。
 
@@ -175,7 +175,7 @@ ht-degree: 56%
 
 请注意，如果在配置外部帐户时，您的 **[!UICONTROL Report suite]**、**[!UICONTROL Conversion variables]** 或 **[!UICONTROL Success events]** 不可见，这意味着您在与用户关联的 **[!UICONTROL Product profile]** 中缺少对此新创建组件的权限。
 
-有关此内容的更多信息，请参阅 [Adobe Analytics 的产品配置文件](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=zh-Hans#product-profile-admins){target="_blank"}页面。
+有关此内容的更多信息，请参阅 [Adobe Analytics 的产品配置文件](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html#product-profile-admins){target="_blank"}页面。
 
 1. 浏览到Adobe Campaign资源管理器树的&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External accounts]**&#x200B;文件夹，然后单击&#x200B;**[!UICONTROL New]**。
 
@@ -199,7 +199,7 @@ ht-degree: 56%
 
    >[!NOTE]
    >
-   >Campaign ID和Broadload ID字段是通过JavaScript在登陆页面上或通过处理规则收集的。 [了解有关处理规则的更多信息](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
+   >Campaign ID和Broadload ID字段是通过JavaScript在登陆页面上或通过处理规则收集的。 [了解有关处理规则的更多信息](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
 
    ![](assets/analytics_connnector_11.png)
 
@@ -254,7 +254,7 @@ Adobe Campaign和Adobe Analytics之间的数据交换由作为后台任务运行
 
 ![](assets/webanalytics_workflows.png)
 
-**[!UICONTROL Sending of indicators and campaign attributes]**&#x200B;工作流允许您使用Adobe Analytics Connector通过Adobe Campaign将电子邮件营销活动指标发送到Adobe Experience Cloud。 此工作流在每天凌晨 4 点触发，可能需要 24 小时才能将数据发送到 Analytics。
+**[!UICONTROL Sending of indicators and campaign attributes]**&#x200B;工作流允许您使用Adobe Analytics Connector通过Adobe Campaign将电子邮件营销活动指标发送到[!DNL CX Enterprise]。 此工作流在每天凌晨 4 点触发，可能需要 24 小时才能将数据发送到 Analytics。
 
 请注意，切勿重新启动此工作流，否则它将重新发送所有先前数据，可能会影响 Analytics 结果的准确性。
 
@@ -288,7 +288,7 @@ Adobe Campaign和Adobe Analytics之间的数据交换由作为后台任务运行
 
 ## 跟踪投放 {#tracking-deliveries-in-adobe-campaign}
 
-为了让 Adobe Experience Cloud 能够在 Adobe Campaign 发送投放后跟踪网站上的活动，您需要在投放属性中引用匹配的连接器。 要执行此操作，请应用以下步骤：
+为了让[!DNL CX Enterprise]能够在Adobe Campaign发送投放后跟踪网站上的活动，您需要在投放属性中引用匹配的连接器。 要执行此操作，请应用以下步骤：
 
 1. 打开要跟踪的营销活动的投放。
 
@@ -315,7 +315,7 @@ Adobe Campaign 提供个性化投放模板，您可以使用这些模板或建�
 1. 根据您的需求对模板进行个性化并保存。
 1. 创建新营销活动，并从下拉列表中选择 **[!UICONTROL Re-marketing campaign]** 模板。
 1. 单击 **[!UICONTROL Configure...]** 链接以指定链接到该营销活动的区段和投放模板。
-1. 选择Analytics外部帐户[&#128279;](#external-account-ac)和相关区段。
+1. 选择Analytics外部帐户](#external-account-ac)和相关区段。[
 1. 选择要用于此再营销活动的投放模板，然后单击 **[!UICONTROL Finish]** 以关闭窗口。
 1. 单击 **[!UICONTROL OK]** 以关闭营销活动窗口。
 

@@ -7,9 +7,9 @@ product_v2:
     internal-label: Campaign
   - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
     internal-label: Campaign v8
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1466'
 ht-degree: 3%
 ---
 # 将Campaign操作员迁移到Adobe Identity Management System (IMS) {#migrate-users-to-ims}
@@ -32,7 +32,7 @@ ht-degree: 3%
 
 如果贵组织中的操作员正在使用其登录/密码（也称为）连接到Campaign客户端控制台。 受影响，必须将这些运算符迁移到Adobe IMS，如下所述。
 
-迁移到[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}是确保环境安全和标准化的安全要求，因为大多数其他Adobe Experience Cloud解决方案和应用程序已在IMS上。
+迁移到[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}是确保环境安全和标准化的安全要求，因为大多数其他[!DNL Adobe CX Enterprise]解决方案和应用程序已在IMS上。
 
 >[!IMPORTANT]
 >
@@ -40,7 +40,7 @@ ht-degree: 3%
 >
 >将用户迁移到IMS后，请注意Adobe Admin Console中的任何产品配置文件在其名称中包含“管理员”一词（如“管理员”、“管理员”、“管理员”、“审批管理员”等） 将自动授予对Campaign控制面板的访问权限。 控制面板是一种自助服务工具，允许对Campaign实例进行重大更改。
 >
->请仔细查看您的产品配置文件命名约定，确保只有授权用户才能访问控制面板。 在[控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans){target="_blank"}中了解有关管理控制面板权限的详细信息。
+>请仔细查看您的产品配置文件命名约定，确保只有授权用户才能访问控制面板。 在[控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}中了解有关管理控制面板权限的详细信息。
 
 ## 如何迁移？{#ims-migration-procedure}
 

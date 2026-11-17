@@ -31,10 +31,10 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
 workflow-type: tm+mt
-source-wordcount: '1234'
-ht-degree: 69%
+source-wordcount: '1226'
+ht-degree: 66%
 ---
 # 探索用户界面 {#ui-client-console}
 
@@ -48,7 +48,7 @@ ht-degree: 69%
 
 * **API** - 为处理更多用例，可以使用通过 SOAP 协议公开的 Web 服务 API 从外部应用程序调用该系统。 [在此页面中](../dev/api.md)了解有关 Campaign API 的详细信息。
 
-* **Web 用户界面** - 作为 Campaign v8 用户，从 v8.6.1 版本开始，您现在可以通过中央 Adobe Experience Cloud 用户界面访问 Web 环境。 然后，您可以从 Web 浏览器连接到 Adobe Campaign。 通过这个新的界面，您可以创建、管理和执行重要的营销操作。 但是，并非所有 Campaign 功能都可用。 [了解详情](#ac-web-ui)。
+* **Web用户界面** — 作为Campaign v8用户，从v8.6.1版本开始，您现在可以访问可通过中央[!DNL Adobe CX Enterprise]用户界面访问的Web环境。 然后，您可以从 Web 浏览器连接到 Adobe Campaign。 通过这个新的界面，您可以创建、管理和执行重要的营销操作。 但是，并非所有 Campaign 功能都可用。 [了解详情](#ac-web-ui)。
 
   >[!AVAILABILITY]
   >
@@ -75,7 +75,7 @@ Campaign 客户端控制台是一个原生应用程序，它通过标准 Interne
 
 >[!NOTE]
 >
->如果未显示Web用户界面卡，请确保您的A[Adobe Experience Cloud外部帐户](../config/external-accounts.md)中的以下字段不留空： **服务器**、**租户**、**回拨服务器**&#x200B;和&#x200B;**关联标记**。
+>如果未显示Web用户界面卡，请确保您的[Adobe Experience Cloud外部帐户](../config/external-accounts.md)中的以下字段不留空： **服务器**、**租户**、**回拨服务器**&#x200B;和&#x200B;**关联标记**。
 
 您还可以从主页访问[促销活动控制面板](../config/self-service.md)。
 
@@ -144,7 +144,7 @@ The web access interface is similar to the console interface. From a browser, yo
 
 ## Campaign Web 用户界面 {#ac-web-ui}
 
-从v8.6.1版本开始，Campaign v8用户有权访问Web环境，该环境可通过集中Adobe Experience Cloud用户界面访问。 Experience Cloud 是 Adobe 的数字营销应用程序、产品和服务的集成系列。 通过其直观的界面，您可以快速访问云应用程序、产品功能和服务。
+作为Campaign v8用户，从v8.6.1版本开始，您可以访问通过中心[!DNL CX Enterprise]用户界面提供的Web环境。 [!DNL CX Enterprise]是Adobe的集成数字营销应用程序、产品和服务系列。 通过其直观的界面，您可以快速访问云应用程序、产品功能和服务。
 
 ![Adobe Campaign Web 用户界面主页](assets/ac-web-home.png)
 
@@ -173,7 +173,7 @@ The web access interface is similar to the console interface. From a browser, yo
 
   >[!CAUTION]
   >
-  >在安装过程中选择语言，此后不能更改&#x200B;**&#x200B;**。
+  >在安装过程中选择语言，此后不能更改&#x200B;****。
 
 * 有关Campaign Web用户界面支持的语言，[请参阅Campaign Web用户界面文档](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=zh-Hans#language-pref){target="_blank"}。
 

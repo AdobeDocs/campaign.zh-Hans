@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '2072'
+source-wordcount: '2111'
 ht-degree: 2%
 ---
 # 定义电子邮件的内容 {#defining-the-email-content}
@@ -85,6 +85,10 @@ ht-degree: 2%
 >[!IMPORTANT]
 >
 >8.9.3版包括对外部URL允许列表的更新。 确保在消息内容中使用的域已添加到实例的已批准允许列表，以便资源可以继续加载而不会中断。 作为Campaign管理员，使用控制面板添加和管理允许列表的URL。 有关步骤，请参阅[添加 URL 权限](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
+
+>[!IMPORTANT]
+>
+>请勿在电子邮件内容中使用HTML `<base>`标记。 出于安全原因，此标记不受支持，并且可能会阻止您的内容在内容编辑器中加载。 请改用链接和外部资源的绝对URL。
 
 消息的内容在投放配置窗口的下半部分中定义。
 
@@ -175,7 +179,7 @@ HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以
 
 为避免性能问题，电子邮件中包含的图像不能超过100 KB。 默认设置的此限制可以从`NmsDelivery_MaxDownloadedImageSize`选项更改。 但是，Adobe强烈建议避免在电子邮件投放中使用大型图像。
 
-在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=zh-Hans#delivery)中了解有关Campaign选项列表的更多信息。
+在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery)中了解有关Campaign选项列表的更多信息。
 
 ### 图像类型 {#img-types}
 
@@ -186,7 +190,7 @@ HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以
 
   可通过Adobe Campaign层次结构的&#x200B;**[!UICONTROL Resources > Online]**&#x200B;节点访问公共资源。 它们分组在库中，可以包含在电子邮件中，但也可以用于营销活动或任务，或者用于内容管理。
 
-* 与Adobe Experience Cloud共享的资产。 请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=zh-Hans)。
+* 与Adobe Experience Cloud共享的资产。 请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html)。
 
 ### 插入和管理图像 {#manage-images}
 
@@ -200,7 +204,7 @@ HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以
 
 要通过投放助手管理图像，请执行以下操作：
 
-1. 单击工具栏中的&#x200B;**[!UICONTROL Tracking & Images]**&#x200B;图标。
+1. 单击工具栏中的&#x200B;**[!UICONTROL Tracking & Images]**图标。
    ![](assets/s_ncs_user_email_del_img_param.png)
 
 1. 在&#x200B;**[!UICONTROL Images]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Upload images]**。

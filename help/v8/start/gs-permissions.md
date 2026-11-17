@@ -26,9 +26,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '513'
 ht-degree: 5%
 ---
 # 权限快速入门{#gs-permissions}
@@ -69,9 +69,9 @@ Adobe Admin Console是一个中央位置，用于管理整个组织的Adobe授�
 
 ## 关于产品配置文件{#ootb-product-profiles}
 
-产品配置文件是可以分配给用户的产品组和服务组。 在Adobe Experience Cloud中，权限基于产品的配置文件，而不是基于用户。 但是，您可以将管理权限委派给特定用户。
+产品配置文件是可以分配给用户的产品组和服务组。 在[!DNL Adobe CX Enterprise]中，权限基于产品的配置文件，而不是基于用户。 但是，您可以将管理权限委派给特定用户。
 
-在Admin Console中，Campaign的每个Adobe Experience Cloud **产品配置文件**&#x200B;都与Campaign客户端控制台中的&#x200B;**操作员组**&#x200B;关联。
+在Admin Console中，Campaign的每个[!DNL CX Enterprise] **产品配置文件**&#x200B;都与Campaign客户端控制台中的&#x200B;**操作员组**&#x200B;关联。
 
 在[此页面](manage-permissions.md#create-product-profile)中了解如何创建和分配产品配置文件。
 

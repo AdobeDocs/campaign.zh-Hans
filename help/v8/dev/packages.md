@@ -47,9 +47,9 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 30b0f5eda9c80b72af5c8574e01cec6965b05564
 workflow-type: tm+mt
-source-wordcount: '1944'
+source-wordcount: '1949'
 ht-degree: 1%
 ---
 # 使用数据包{#data-packages}
@@ -59,6 +59,8 @@ ht-degree: 1%
 您可以使用数据包导出和导入平台自定义设置和数据。 包可以包含不同类型的配置和组件，无论是否进行了过滤。
 
 在Campaign数据包中，Adobe Campaign数据库的实体会显示为XML文件。 在包中，每个实体由其所有数据表示。
+
+本页介绍您创建并管理的&#x200B;**自定义**&#x200B;数据包。 提供Campaign功能的包是&#x200B;**内置包**，Adobe将安装并管理这些包。 在[内置包](../architecture/built-in-packages.md)中了解详情。
 
 **数据包**&#x200B;的原理是导出数据配置并将其集成到另一个Adobe Campaign环境中。 在此[部分](#data-package-best-practices)中了解如何维护一致的数据包集。
 
@@ -302,11 +304,9 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 单击&#x200B;**[!UICONTROL Next]**&#x200B;和&#x200B;**[!UICONTROL Start]**&#x200B;启动导入。
 
-### 安装内置软件包 {#install-a-standard-package}
+### 内置软件包 {#install-a-standard-package}
 
-内置软件包(又称 标准包)在配置Adobe Campaign时安装。 根据您的权限、部署模型和产品选项，您可以导入新的标准资源包。
-
-请参阅您的许可协议，查看可以安装的软件包。
+Adobe在Campaign v8中安装和管理内置软件包。 在[内置包](../architecture/built-in-packages.md)中了解详情。
 
 ## 数据包最佳实践 {#data-package-best-practices}
 

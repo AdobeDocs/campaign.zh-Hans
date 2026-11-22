@@ -26,9 +26,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: b37128ff4180befd5655c0c16b9ff0834235a84a
+source-git-commit: 9f70a309a882347a0df658d00c47127f31d28eb9
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '820'
 ht-degree: 15%
 ---
 # 内置软件包 {#built-in-packages}
@@ -65,7 +65,7 @@ Campaign使用两种类型的包。 确保与正确的团队合作。
 | 事务性消息控制和执行（消息中心） | 使用更高的可用性和更好的负载管理来管理从信息系统中的事件生成的触发消息。 [了解详情](../send/transactional.md) |
 | LINE 渠道 | 通过LINE渠道发送投放。 [了解详情](../send/line/line.md) |
 | 直邮渠道 | 通过直邮渠道发送投放。 [了解详情](../send/direct-mail.md) |
-| 移动渠道（短信） | 通过移动渠道(SMS)发送投放。 [了解详情](../send/sms/sms.md) |
+| 移动渠道（短信） | 通过移动渠道(SMS)发送投放，包括SMS连接器v2（自8.9.1起通常可用）。 [了解详情](../send/sms/sms.md) |
 | 移动应用程序渠道 | 通过应用程序向iOS和Android设备发送个性化通知。 [了解详情](../send/push.md) |
 | 内容管理器 | 创建定期新闻稿或网站，然后验证和发布消息。 [了解详情](../../automation/workflow/content-management.md) |
 | 在线调查（调查管理器） | 创建和管理在线表单，以添加或修改用户档案信息、订阅、取消订阅或加入竞争对手。 [了解详情](../dev/surveys/about-surveys.md) |

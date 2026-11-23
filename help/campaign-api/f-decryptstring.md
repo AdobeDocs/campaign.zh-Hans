@@ -8,4 +8,4 @@ ht-degree: 3%
 
 > 警告：
 >
-> 此文档已更新。 有关更多详细信息，请参阅此[页](https://experienceleague.adobe.com/en/docs/campaign-classic/using/technotes/gcm-functions#decryptstring-headding-anchor-decryptstring-javascript)。
+> 此文档已更新。 有关更多详细信息，请参阅此[页](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/technotes/gcm-functions#decryptstring-headding-anchor-decryptstring-javascript)。

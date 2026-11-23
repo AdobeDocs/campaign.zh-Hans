@@ -27,7 +27,7 @@ wait (requests,waitAll)
 函数不适用于查询，但是HttpClientRequest bin的函数。 示例：
 
 ```javascript
-var req = new HttpClientRequest("http://www.adobe.com/")
+var req = new HttpClientRequest("http://www.adobe.com/cn/")
 req.complete = function(req, context, status) { logInfo(status) }
 req.execute(false, true)
 

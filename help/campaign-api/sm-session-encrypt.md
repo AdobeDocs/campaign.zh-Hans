@@ -8,7 +8,7 @@ ht-degree: 26%
 
 > 警告：
 >
-> 此函数已完全弃用。 有关更多详细信息，请参阅此[页](https://experienceleague.adobe.com/en/docs/campaign-classic/using/technotes/gcm-functions#deprecated-functions-headding-anchor-depracated-functions)。
+> 此函数已完全弃用。 有关更多详细信息，请参阅此[页](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/technotes/gcm-functions#deprecated-functions-headding-anchor-depracated-functions)。
 
 使用实例密钥对字符串进行加密。
 

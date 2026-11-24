@@ -55,7 +55,7 @@ ht-degree: 3%
 您可以从JavaScript代码、个性化和查询中读取和写入选项值。
 
 * **JavaScript代码**，如JavaScript代码工作流活动： `getOption('OptionName')`返回选项的值，`setOption('OptionName', value, 'description')`设置它。 例如，`getOption('IMS_ORG_ID')`。 在[getOption](../../campaign-api/f-getoption.md)和[setOption](../../campaign-api/f-setoption.md)中了解详情。
-* **投放个性化**： `<%@ include option='OptionName' %>`插入选项的值。 例如，`<%@ include option='NmsServer_URL' %>`将服务器URL包含在LINE消息中指向Web应用的链接中。 使用Adobe Campaign](../send/line/line.md)在[发送直销邮件中了解更多信息。
+* **投放个性化**： `<%@ include option='OptionName' %>`插入选项的值。 例如，`<%@ include option='NmsServer_URL' %>`将服务器URL包含在LINE消息中指向Web应用的链接中。 使用Adobe Campaign[&#128279;](../send/line/line.md)在发送直销邮件中了解更多信息。
 * **查询编辑器**：在&#x200B;**值**&#x200B;字段中键入`$(options:OPTION_NAME)`以使用选项的值。 在[设计查询](../start/design-queries.md)中了解详情。
 
 ## 可用选项 {#available-options}
@@ -123,7 +123,7 @@ ht-degree: 3%
 
 ### 软错误和隔离 {#error-options}
 
-这些选项定义在软错误（即临时投放失败）后将收件人隔离的时间。 在Campaign](../send/quarantines.md#soft-error-management)的[隔离管理和Campaign](../send/delivery-failures.md#retries)的[投放失败中了解更多信息。
+这些选项定义在软错误（即临时投放失败）后将收件人隔离的时间。 在Campaign[&#128279;](../send/quarantines.md#soft-error-management)的[隔离管理和Campaign](../send/delivery-failures.md#retries)的投放失败中了解更多信息。
 
 | 选项 | 说明 |
 |---|---|

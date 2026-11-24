@@ -33,9 +33,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '971'
 ht-degree: 7%
 ---
 # 创建和发送推送通知{#push-notifications-create}
@@ -131,7 +131,7 @@ ht-degree: 7%
 
 1. 对于时效性通知，可以指定以下选项：
 
-   * **[!UICONTROL Target content ID]**：标识符，用于定位打开通知时要转发的应用程序窗口。
+   * **[!UICONTROL Target content ID]**：标识符，用于在打开通知时定位要转发的应用程序窗口。
 
    * **[!UICONTROL Launch image]**：要显示的启动图像文件的名称。 如果用户选择启动您的应用程序，则会显示选定的图像而不是应用程序的启动屏幕。
 
@@ -158,7 +158,7 @@ ht-degree: 7%
 
 要在Android设备上发送通知，请执行以下步骤：
 
-1. 选择&#x200B;**[!UICONTROL Deliver on Android (android)]**&#x200B;投放模板。
+1. Select **[!UICONTROL Deliver on Android (android)]**&#x200B;投放模板。
 
    ![](assets/push-template-android.png)
 
@@ -171,7 +171,7 @@ ht-degree: 7%
 
    ![](assets/push-android-select-target.png)
 
-1. 选择&#x200B;**[!UICONTROL Subscribers of an Android mobile application]**，选择与您的移动应用程序相关的服务（在本例中为Neotrips），然后选择应用程序的Android版本。
+1. 在Select **[!UICONTROL Subscribers of an Android mobile application]**&#x200B;中，选择与您的移动应用程序相关的服务（在本例中为Neotrips），然后选择应用程序的Android版本。
 
    ![](assets/push-android-subscribers.png)
 

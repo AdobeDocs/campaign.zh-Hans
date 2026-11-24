@@ -20,9 +20,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '429'
 ht-degree: 10%
 ---
 # 创建条件内容{#conditional-content}
@@ -74,18 +74,18 @@ ht-degree: 10%
    <% if (language == "EN" ) { %>
    <DIV id=en-version>Hello <%= recipient.firstName %>,</DIV>
    <DIV>Discover your new offers!</DIV>
-   <DIV><a href="https://www.adobe.com/cn/products/en">www.adobe.com/products/en</A></FONT></DIV><%
+   <DIV><a href="https://www.adobe.com/products/en">www.adobe.com/products/en</A></FONT></DIV><%
     } %>
    <% if (language == "FR" ) { %>
    <DIV id=fr-version>Bonjour <%= recipient.firstName %>,</DIV>
    <DIV>Découvrez nos nouvelles offres !</DIV>
-   <DIV><a href="https://www.adobe.com/cn/products/fr">www.adobe.com/products/fr</A></DIV><%
+   <DIV><a href="https://www.adobe.com/products/fr">www.adobe.com/products/fr</A></DIV><%
     } %>
     <% if (language == "ES" ) { %>
    <DIV id=es-version><FONT face=Arial>
    <DIV>Olà <%= recipient.firstName %>,</DIV>
    <DIV>Descubra nuestros nuevas ofertas !</DIV>
-   <DIV><a href="https://www.adobe.com/cn/products/es">www.adobe.com/products/es</A></DIV>
+   <DIV><a href="https://www.adobe.com/products/es">www.adobe.com/products/es</A></DIV>
    <% } %>
    ```
 
@@ -99,4 +99,4 @@ ht-degree: 10%
 
 了解如何在多语言新闻稿的示例中向投放添加条件内容。
 
->[!VIDEO](https://video.tv.adobe.com/v/3446721?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/335682?quality=12)

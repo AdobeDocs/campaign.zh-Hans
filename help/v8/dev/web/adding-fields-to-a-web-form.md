@@ -26,7 +26,7 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '2404'
 ht-degree: 0%
@@ -233,7 +233,7 @@ ht-degree: 0%
 
 ![](assets/s_ncs_admin_survey_radio_button_sample2.png)
 
-添加任意数量的单选按钮和标签。 此功能的优势在于，您可以从现有字段（如果为分项字段）导入值，并让用户选择一个选项。 但是，按钮的布局不太灵活。
+添加任意数量的单选按钮和标签。 此功能的优点是，您可以从现有字段（在逐项列出字段的情况下）导入值，并使用户能够选择一个选项。 但是，按钮的布局不太灵活。
 
 >[!NOTE]
 >
@@ -332,7 +332,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions){target="_blank"}中详细介绍了信息服务。
+>[此页面](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions){target="_blank"}中详细介绍了信息服务。
 
 用户通过选中相关选项来订阅服务。
 
@@ -350,7 +350,7 @@ ht-degree: 0%
 >
 >如果您的表单包含多个页面，则必须始终将验证码放在最后一页（紧靠存储盒之前），以防止安全措施的任何绕过。
 
-要将验证码插入表单，请单击工具栏上的第一个按钮并选择&#x200B;**[!UICONTROL Advanced controls>Captcha]**。
+要将验证码插入到表单中，请单击工具栏上的第一个按钮，然后选择&#x200B;**[!UICONTROL Advanced controls>Captcha]**。
 
 ![](assets/s_ncs_admin_survey_add_captcha.png)
 

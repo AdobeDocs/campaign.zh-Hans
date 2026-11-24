@@ -26,7 +26,7 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1583'
 ht-degree: 0%
@@ -71,7 +71,7 @@ Adobe Campaign包含用于翻译和管理多语言翻译的工具。 通过此�
 
 首次打开此选项卡时，它将不包含任何数据。 单击&#x200B;**[!UICONTROL Collect the strings to translate]**&#x200B;链接以更新Web应用程序中的字符串。
 
-Adobe Campaign收集在所有静态元素的&#x200B;**[!UICONTROL Texts]**&#x200B;选项卡中定义的字段和字符串的标签：HTML块、Javascript等。静态元素在Web窗体[&#128279;](static-elements-in-a-web-form.md)的静态元素中详细。
+Adobe Campaign收集在所有静态元素的&#x200B;**[!UICONTROL Texts]**&#x200B;选项卡中定义的字段和字符串的标签：HTML块、Javascript等。静态元素在Web窗体](static-elements-in-a-web-form.md)的[静态元素中详细。
 
 ![](assets/s_ncs_admin_survey_trad_tab.png)
 
@@ -85,11 +85,11 @@ Adobe Campaign收集在所有静态元素的&#x200B;**[!UICONTROL Texts]**&#x200
 
 当收集过程检测到已存在翻译时，此翻译将显示在字符串的&#x200B;**[!UICONTROL Text]**&#x200B;列中。 字符串的状态已转换为&#x200B;**[!UICONTROL Translated]**。
 
-对于从未翻译过的字符字符串，**[!UICONTROL Text]**&#x200B;字段为空，状态为&#x200B;**[!UICONTROL To translate]**。
+对于从未翻译过的字符串，**[!UICONTROL Text]**&#x200B;字段为空，状态为&#x200B;**[!UICONTROL To translate]**。
 
 ### 筛选字符串 {#filtering-strings}
 
-默认情况下，将显示Web应用程序的每种翻译语言。 有两种默认筛选器：语言和状态。 单击&#x200B;**[!UICONTROL Filters]**&#x200B;按钮，然后单击&#x200B;**[!UICONTROL By language or status]**&#x200B;以显示匹配的下拉框。 您还可以创建高级过滤器。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+默认情况下，将显示Web应用程序的每种翻译语言。 有两种默认筛选器：语言和状态。 单击&#x200B;**[!UICONTROL Filters]**&#x200B;按钮，然后单击&#x200B;**[!UICONTROL By language or status]**&#x200B;以显示匹配的下拉框。 您还可以创建高级过滤器。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 
@@ -188,7 +188,7 @@ Web窗体以Web应用程序属性的&#x200B;**[!UICONTROL Localization]**&#x200B
 &lang=xx
 ```
 
-如果URL中的语言之前还有其他参数。 例如：**https://myserver/webApp/APP34?status=1&lang=en**
+如果URL中的语言之前还有其他参数。 例如：**https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 下面列出了默认提供的翻译语言和词典。
 
@@ -449,7 +449,7 @@ Web窗体以Web应用程序属性的&#x200B;**[!UICONTROL Localization]**&#x200B
 >[!NOTE]
 >
 >如果此Web应用程序已经使用了其他参数，请添加&#x200B;**&amp;lang=**。\
->例如：**https://myserver/webApp/APP34?status=1&lang=en**
+>例如：**https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 ## 高级翻译配置 {#advanced-translation-configuration}
 

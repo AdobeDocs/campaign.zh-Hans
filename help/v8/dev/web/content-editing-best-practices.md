@@ -28,9 +28,9 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '563'
 ht-degree: 4%
 ---
 # 内容编辑最佳实践{#content-editing-best-practices}
@@ -53,14 +53,14 @@ ht-degree: 4%
 
   ![](assets/dce_sidebar_inputtypechanges.png)
 
-  此网站[&#128279;](https://www.w3schools.com/tags/att_input_type.asp)中的提供了“type”属性的正式列表。
+  此网站](https://www.w3schools.com/tags/att_input_type.asp)中的[提供了“type”属性的正式列表。
 
 * 使用DCE模拟结束页面的步骤：
 
   ![](assets/dce_enchainement.png)
 
 * 确保页面中只有一个`<body> </body>`。
-* 上传CSS或JS文件时，不会上传.zip文件中包含的图像。 因此，不会更新CSS对这些图像的引用。
+* 上传CSS或JS文件时，.zip文件中包含的图像不会上传。 因此，不会更新CSS对这些图像的引用。
 
 ## 内容编辑器支持的格式 {#content-editor-supported-formats}
 

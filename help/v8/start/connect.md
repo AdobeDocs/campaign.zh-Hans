@@ -23,10 +23,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1103'
-ht-degree: 90%
+ht-degree: 82%
 ---
 # 连接到 Adobe Campaign v8{#gs-ac-connect}
 
@@ -39,7 +39,7 @@ ht-degree: 90%
 * 在[兼容性矩阵](compatibility-matrix.md)中检查系统和工具与 Adobe Campaign 的兼容性
 * 获取 Campaign 服务器 URL
 * 创建 Adobe ID，或从您的公司获取用户凭据
-* 在系统上安装 Microsoft Edge Webview2 运行时。 [了解详情](#webview)
+* 在系统上安装Microsoft Edge Webview2运行时。 [了解详情](#webview)
 
 ## 安装客户端控制台{#download-ac-console}
 
@@ -57,7 +57,7 @@ ht-degree: 90%
 
 1. 作为 Campaign 管理员，连接到 Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/zh-hans/campaign.html){target="_blank"}。
 
-1. 作为最终用户，Campaign 管理员会为您部署客户端控制台，并通过专用 URL 提供给您。
+1. 作为最终用户，您的Campaign管理员会为您部署客户端控制台，并通过专用URL提供该控制台。
 
 下载客户端控制台安装程序后，将其安装到本地计算机上。
 
@@ -87,7 +87,7 @@ ht-degree: 90%
 
 ## 登录到 Adobe Campaign {#logon-to-ac}
 
-Campaign 用户使用其 Adobe ID，通过 Adobe 身份管理系统 (IMS) 连接到 Adobe Campaign 控制台。 他们可以在所有 Adobe 解决方案中使用相同的 ID。 将 Adobe Campaign 与其他解决方案配合使用时，可以保存该连接。 要了解有关 Adobe IMS 的更多信息，请参阅[此页面](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}。
+Campaign 用户使用其 Adobe ID，通过 Adobe 身份管理系统 (IMS) 连接到 Adobe Campaign 控制台。 他们可以为所有Adobe解决方案使用相同的ID。 将 Adobe Campaign 与其他解决方案配合使用时，可以保存该连接。 要了解有关 Adobe IMS 的更多信息，请参阅[此页面](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}。
 
 要登录到某个实例，请执行以下步骤：
 
@@ -153,7 +153,7 @@ Adobe Campaign 允许您定义和管理分配给各种操作员的权限。
 >Campaign Web 用户界面仅供通过 Adobe ID 连接到 Adobe Campaign 的用户使用。 了解有关 [Adobe 身份管理系统 (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"} 的更多信息。
 >
 
-在此页面[&#128279;](campaign-ui.md#ac-web-ui)中了解如何连接到[!DNL CX Enterprise]并访问Adobe Campaign Web界面。
+在此页面](campaign-ui.md#ac-web-ui)中了解如何连接到[!DNL CX Enterprise]并访问Adobe Campaign Web界面[。
 
 请参阅 [Adobe Campaign Web 用户界面文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/campaign-web-home){target="_blank"}以了解详情。
 
@@ -171,6 +171,6 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 ![](assets/campaign-from-web.png)
 
-在验证过程中也会使用 Web 访问：操作员可以单击审批请求电子邮件，并通过 Web 浏览器连接到 Campaign，以验证或拒绝投放内容或预算。
+Web访问也用于验证流程：操作员可以单击审批请求电子邮件，并通过其Web浏览器连接到Campaign，以验证或拒绝投放内容或预算。
 
-要从 Web 访问 Campaign 实例，URL 为：`https://<your adobe campaign server>:<port number>/view/home`。
+要从Web访问Campaign实例，URL为： `https://<your adobe campaign server>:<port number>/view/home`。

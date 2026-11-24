@@ -28,9 +28,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '572'
 ht-degree: 6%
 ---
 # 配置跟踪的链接 {#how-to-configure-tracked-links}
@@ -43,7 +43,7 @@ ht-degree: 6%
 
 默认启用消息跟踪。 要个性化URL的跟踪方式，请执行以下步骤：
 
-1. 选择投放助理下部消息内容下的&#x200B;**[!UICONTROL Display URLs]**&#x200B;选项。
+1. 在消息内容下方的投放助理的下部Select **[!UICONTROL Display URLs]**&#x200B;选项。
 
    ![](assets/s_ncs_user_email_del_display_urls.png)
 
@@ -74,9 +74,9 @@ ht-degree: 6%
    * **[!UICONTROL Enabled]**：在此URL上激活跟踪。
    * **[!UICONTROL Not tracked]**：停用此URL上的跟踪。
    * **[!UICONTROL Always enabled]**：始终激活此URL的跟踪。 保存此信息，以便下次如果URL再次出现在将来的消息内容中，则会自动激活其跟踪。
-   * **[!UICONTROL Never tracked]**：从不激活此URL的跟踪。 保存此信息，以便下次如果URL再次出现在将来的消息中，则会自动停用其跟踪。
+   * **[!UICONTROL Never tracked]**：从不激活此URL的跟踪。 保存此信息，以便下次如果URL再次出现在将来的消息中，其跟踪将自动停用。
    * **[!UICONTROL Opt-out]**：将此URL视为选择退出或退订URL。
-   * **[!UICONTROL Mirror page]**：认为此URL是镜像页面URL。
+   * **[!UICONTROL Mirror page]**：将此URL视为镜像页面URL。
 
 1. 此外，您还可以在&#x200B;**[!UICONTROL Category]**&#x200B;列的下拉列表中选择每个跟踪URL的类别。 这些类别可以显示在报表中，例如在&#x200B;**[!UICONTROL URLs and click streams]**&#x200B;报表中（请参阅[此章节](../reporting/delivery-reports.md#urls-and-click-streams)）。 类别在特定枚举中定义： **[!UICONTROL urlCategory]**。 在[本节](../config/enumerations.md)中了解如何使用枚举。
 
@@ -88,8 +88,8 @@ ht-degree: 6%
 * 括号[ ]
 * 大括号{ }
 
-在此示例中，URL https://www.adobe.com/cn后跟一个分号。 收件人电子邮件客户端可能会将分号解释为URL的一部分。 因此，链接可能会断开。 要避免出现此问题，您可以通过以下方式之一以分隔符括住URL：
+在此示例中，URL https://www.adobe.com后跟一个分号。 收件人电子邮件客户端可能会将分号解释为URL的一部分。 因此，链接可能会断开。 要避免出现此问题，您可以通过以下方式之一以分隔符括住URL：
 
-* (https://www.adobe.com/cn)；
-* [https://www.adobe.com/cn]；
-* {https://www.adobe.com/cn}；
+* (https://www.adobe.com)；
+* [https://www.adobe.com]；
+* {https://www.adobe.com}；

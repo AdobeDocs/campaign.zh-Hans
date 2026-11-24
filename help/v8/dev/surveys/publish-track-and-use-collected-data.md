@@ -22,9 +22,9 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '895'
 ht-degree: 3%
 ---
 # 发布、跟踪和使用收集的数据{#publish-track-and-use-collected-data}
@@ -35,7 +35,7 @@ ht-degree: 3%
 
 
 
-创建、配置和发布表单后，您可以与受众共享该链接并跟踪响应。
+创建、配置和发布表单后，即可与受众共享链接并跟踪响应。
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ ht-degree: 3%
 
    要导出报表数据，请单击&#x200B;**[!UICONTROL Export]**&#x200B;按钮并选择导出格式。
 
-   有关导出报表数据的更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign){target="_blank"}。
+   有关导出报表数据的更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign){target="_blank"}。
 
 1. 导出答案
 
@@ -181,4 +181,4 @@ ht-degree: 3%
 
 ## 标准化数据 {#standardizing-data}
 
-可以在Adobe Campaign中为使用别名收集的数据设置标准化流程。 这使您能够标准化存储在数据库中的数据：为此，请在包含相关信息的明细列表中定义别名。 在[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中了解如何&#x200B;**使用枚举**。
+可以在Adobe Campaign中为使用别名收集的数据设置标准化流程。 这使您能够标准化存储在数据库中的数据：为此，请在包含相关信息的明细列表中定义别名。 在[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中了解如何&#x200B;**使用枚举**。

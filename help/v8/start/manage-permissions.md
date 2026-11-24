@@ -47,9 +47,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1733'
 ht-degree: 1%
 ---
 # 管理用户权限{#manage-permissions}
@@ -146,7 +146,7 @@ Adobe Campaign附带在Adobe启用您的环境时定义的内置&#x200B;**产品
 
    >[!IMPORTANT]
    >
-   >**[!UICONTROL Administrator]**&#x200B;角色授予对Campaign控制面板的访问权限。 Adobe Admin Console中的任何产品配置文件，其名称中包含“管理员”一词（如“管理员”、“管理员”、“管理员”、“审批管理员”等） 将授予对控制面板的访问权限。 了解有关[管理控制面板访问权限](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans){target="_blank"}的更多信息。
+   >**[!UICONTROL Administrator]**&#x200B;角色授予对Campaign控制面板的访问权限。 Adobe Admin Console中的任何产品配置文件，其名称中包含“管理员”一词（如“管理员”、“管理员”、“管理员”、“审批管理员”等） 将授予对控制面板的访问权限。 了解有关[管理控制面板访问权限](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}的更多信息。
 
 1. **[!UICONTROL Delivery operators]** （投放）
 
@@ -221,7 +221,7 @@ Adobe Campaign附带在Adobe启用您的环境时定义的内置&#x200B;**产品
 
 用户组是必须获得一组共享权限的不同用户的集合。 在[本节](https://helpx.adobe.com/ie/enterprise/using/user-groups.html){target="_blank"}中了解如何创建用户组。
 
-您可以将产品配置文件分配给用户组。 因此，该组中的所有用户都将获得同一组产品权限。
+您可以将产品配置文件分配给用户组。 因此，该组中的所有用户都会获得相同的产品权限集。
 
 ## 已命名权限{#use-named-rights}
 
@@ -230,7 +230,7 @@ Adobe Campaign提供了一组已命名权限，允许您定义分配给用户和
 已命名权限将权限授予：
 
 * 执行操作
-例如，为具有&#x200B;**准备投放**&#x200B;命名权限的&#x200B;**投放操作员**&#x200B;组的成员激活投放编辑器中的&#x200B;**分析**&#x200B;按钮
+例如，为具有**准备投放**&#x200B;命名权限的&#x200B;**投放操作员**&#x200B;组的成员激活投放编辑器中的&#x200B;**分析**&#x200B;按钮
 
 * 对文件夹的访问权限
 操作员组成员资格可以通过更改文件夹的安全性设置来授予或限制对文件夹的访问权限。 [了解详情](folder-permissions.md#restrict-access-to-a-folder)。

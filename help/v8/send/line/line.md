@@ -33,16 +33,16 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1198'
 ht-degree: 4%
 ---
 # 创建LINE投放
 
 LINE 是一款免费即时消息、语音和视频通话应用程序，可在所有移动设备和 PC 上使用。 您可以使用Adobe Campaign发送LINE消息。
 
-[!DNL LINE]还可以与事务性消息模块结合使用，以在消费者移动设备上安装的[!DNL LINE]应用程序上发送实时消息。 有关详细信息，请参阅Campaign Classic v7文档中的此[页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line)。
+[!DNL LINE]还可以与事务性消息模块结合使用，以在消费者移动设备上安装的[!DNL LINE]应用程序上发送实时消息。 有关详细信息，请参阅Campaign Classic v7文档中的此[页面](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line)。
 
 ![](assets/line_message.png)
 
@@ -140,7 +140,7 @@ LINE 是一款免费即时消息、语音和视频通话应用程序，可在所
 
 1. 选择是要直接定位[!DNL LINE]订阅者，还是要根据用户的[!DNL LINE]订阅定位用户，然后单击&#x200B;**[!UICONTROL Next]**。 在此示例中，我们选择了&#x200B;**[!UICONTROL By LINE V2 subscription]**。
 
-1. 在&#x200B;**[!UICONTROL Folder]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Line-V2]**，然后选择[!DNL LINE]服务。 单击&#x200B;**[!UICONTROL Finish]**，然后单击&#x200B;**[!UICONTROL Ok]**&#x200B;以开始个性化您的投放。
+1. **[!UICONTROL Folder]**&#x200B;下拉列表中的Select **[!UICONTROL Line-V2]**，然后是您的[!DNL LINE]服务。 单击&#x200B;**[!UICONTROL Finish]**，然后单击&#x200B;**[!UICONTROL Ok]**&#x200B;以开始个性化您的投放。
 
    ![](assets/line_message_10.png)
 
@@ -254,7 +254,7 @@ LINE 是一款免费即时消息、语音和视频通话应用程序，可在所
 
    ![](assets/line_usecase.png)
 
-1. 选择&#x200B;**[!UICONTROL LINE V2 delivery]**&#x200B;投放模板并命名您的投放。
+1. Select **[!UICONTROL LINE V2 delivery]**&#x200B;投放模板并命名您的投放。
 
    ![](assets/line_usecase_01.png)
 

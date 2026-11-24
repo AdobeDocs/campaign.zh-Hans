@@ -27,12 +27,12 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 2%
+ht-degree: 3%
 ---
-# 操作员配置文件 {#operator-profiles}
+# 操作员轮廓 {#operator-profiles}
 
 两种类型的操作员可以使用Campaign交互： **优惠经理**&#x200B;和&#x200B;**投放经理**。 每个用户都有特定的权限和限制。 在[此页面](../start/gs-permissions.md)中了解有关Campaign操作员和权限的更多信息。
 

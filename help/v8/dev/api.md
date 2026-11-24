@@ -28,9 +28,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '315'
 ht-degree: 14%
 ---
 # 开始使用[!DNL Campaign] API {#gs-ac-api}
@@ -46,14 +46,14 @@ ht-degree: 14%
 
 您可以使用[Campaign JavaScript API](https://experienceleague.adobe.com/zh-hans/tools/campaign-api){target="_blank"}在Campaign云数据库中写入或从数据库中读取：
 
-* 特定于业务的API，允许您对每个对象执行操作：投放、工作流、订阅等。 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html?lang=zh-Hans){target="_blank"}以了解详情。
+* 特定于业务的API，允许您对每个对象执行操作：投放、工作流、订阅等。 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/api/business-oriented-apis.html){target="_blank"}以了解详情。
 * 使用`queryDef`和`NLWS`对象查询数据模型数据的通用数据访问API。 在[使用queryDef](query-api.md)查询数据库中了解更多信息。
 
 请注意，在其[企业(FFDA)部署](../architecture/enterprise-deployment.md)中，Campaign可与两个数据库配合使用：用于用户界面实时消息传递和统一查询、通过API写入的本地数据库，以及用于活动执行、报告、数据摄取、批量查询和工作流执行的云数据库。
 
 >[!CAUTION]
 >
->* 从Campaign v8.5.1开始，更改了Campaign v8的身份验证过程。 技术操作员必须使用Adobe Identity Management System (IMS)连接到Campaign。 请阅读[此技术说明](../../technotes/upgrades/ims-migration.md)，了解如何迁移现有技术帐户。
+>* 从Campaign v8.5.1开始，更改了Campaign v8的身份验证流程。 技术操作员必须使用Adobe Identity Management System (IMS)连接到Campaign。 请阅读[此技术说明](../../technotes/upgrades/ims-migration.md)，了解如何迁移现有技术帐户。
 >
 >* [!DNL Adobe Campaign] v8对API层的吞吐量(TPS)存在限制。 超出此限制会导致标准HTTP错误(429)。 作为托管云服务用户，您可以联系Adobe以调整每个API的限制。
 > 

@@ -23,10 +23,10 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1028'
-ht-degree: 10%
+ht-degree: 8%
 ---
 # 投放报告 {#delivery-reports}
 
@@ -35,7 +35,7 @@ ht-degree: 10%
 要访问报表，请执行以下步骤：
 
 1. 浏览到&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡并单击&#x200B;**[!UICONTROL Delivery]**&#x200B;链接以显示投放列表。
-1. 单击要访问报告的投放名称。
+1. 单击要访问其报告的投放的名称。
 1. 选择&#x200B;**[!UICONTROL Summary]**&#x200B;选项卡并单击&#x200B;**[!UICONTROL Reports]**&#x200B;链接以访问特定于投放的报告。
 
    ![](assets/detailed-report-2.png)
@@ -95,7 +95,7 @@ ht-degree: 10%
 * **[!UICONTROL Complaints]**：此域被收件人报告为不受欢迎的邮件数。 根据此域上发送的消息总数来计算速率。
 * **[!UICONTROL Opens]**：此域中至少打开过一次邮件的不同目标收件人的数量。 根据此域上发送的消息总数来计算速率。
 * **[!UICONTROL Clicks]**：在同一个投放中至少点击过一次的不同目标收件人的数量。 根据此域上发送的消息总数来计算速率
-* **[!UICONTROL Raw reactivity]**：与至少打开一次投放的收件人人数相比，至少点击一次投放的收件人人数的百分比。
+* **[!UICONTROL Raw reactivity]**：与至少打开一次投放的收件人数量相比，至少点击一次投放的收件人数量的百分比。
 
 >[!NOTE]
 >
@@ -192,7 +192,7 @@ This chart shows the breakdown of cumulated clicks per day.
 
 ## 热门点击 {#hot-clicks}
 
-此报告显示邮件内容（HTML 和/或文本）以及每个链接的点击百分比。 个性化块退订链接、镜像页面链接和产品建议链接将计入总累计点击次数，但不会显示在报告中。
+此报告显示邮件内容（HTML 和/或文本）以及每个链接的点击百分比。 在总累计点击量中，个性化块、退订链接、镜像页面链接和选件链接都将被考虑在内，但不会显示在报表中。
 
 >[!NOTE]
 >

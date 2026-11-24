@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '627'
 ht-degree: 2%
 ---
 # 审核记录{#audit-trail}
@@ -50,7 +50,7 @@ Adobe Campaign中的&#x200B;**[!UICONTROL Audit trail]**&#x200B;功能提供了�
 
 * **架构审核跟踪**：允许您浏览对架构所做的更改，并识别进行这些修改的人员和时间。
 
-  有关架构的详细信息，请参阅[页面](../dev/schemas.md)。
+  有关架构的详细信息，请参阅此[页面](../dev/schemas.md)。
 
 * **工作流审核跟踪**&#x200B;跟踪与您的工作流相关的所有操作，包括：
 
@@ -69,7 +69,7 @@ Adobe Campaign中的&#x200B;**[!UICONTROL Audit trail]**&#x200B;功能提供了�
 
 * **选项审核记录**&#x200B;允许您检查活动和对选项所做的最后修改。
 
-  有关选项的更多信息，请参阅此[页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options)。
+  有关选项的更多信息，请参阅此[页面](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options)。
 
 * **投放审核跟踪**&#x200B;允许您检查投放的活动和上次所做的修改。
 
@@ -77,7 +77,7 @@ Adobe Campaign中的&#x200B;**[!UICONTROL Audit trail]**&#x200B;功能提供了�
 
 * **外部帐户**&#x200B;允许您检查对外部帐户所做的修改，这些修改由技术工作流或活动工作流等技术流程使用。
 
-  有关外部帐户的详细信息，请参阅此[页面](../config/external-accounts.md)。
+  有关外部帐户的更多信息，请参阅此[页面](../config/external-accounts.md)。
 
 * **投放映射**&#x200B;允许您监视活动以及最近对投放映射所做的修改。
 

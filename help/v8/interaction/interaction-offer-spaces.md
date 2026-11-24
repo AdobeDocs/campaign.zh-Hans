@@ -24,7 +24,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 3%
@@ -63,7 +63,7 @@ HTML渲染通过渲染函数创建。 渲染函数中定义的字段序列必须
 
    >[!NOTE]
    >
-   >该选项在预览中使用，如果选件中缺少必填字段之一，则会在发布时使选件空格无效。 但是，如果优惠空间中已存在优惠，则不会考虑这些标准。
+   >此选项在预览中使用，如果选件中缺少其中一个必填字段，则会在发布时使选件空格无效。 但是，如果优惠空间中已存在优惠，则不会考虑这些标准。
 
    ![](assets/offer_space_create_005.png)
 
@@ -138,7 +138,7 @@ HTML渲染通过渲染函数创建。 渲染函数中定义的字段序列必须
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
 ```
 
-例如，与&#x200B;**Neobank400045&rbrace;网站上显示的**&#x200B;家庭保险&#x200B;**优惠匹配的建议（标识符**&#x200B;**）包含以下URL：**
+例如，与&#x200B;**Neobank400045}网站上显示的**&#x200B;家庭保险&#x200B;**优惠匹配的建议（标识符****）包含以下URL：**
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<40004>&st=<3>&r=<"http://www.neobank.com/insurance/subscribe.html">

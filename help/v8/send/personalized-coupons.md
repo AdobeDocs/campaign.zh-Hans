@@ -27,9 +27,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '890'
 ht-degree: 1%
 ---
 # 个性化产品建议券{#personalized-coupons}
@@ -94,7 +94,7 @@ ht-degree: 1%
 
 ## 在电子邮件投放中插入优惠券 {#inserting-a-coupon-into-an-email-delivery}
 
-在下面的示例中，从主页创建投放。 有关如何创建投放的详细说明，请参阅[此章节](email.md)
+在下面的示例中，从主页创建投放。 有关如何创建投放的详细说明，请参阅[此章节](email.md)。
 1. 转到&#x200B;**[!UICONTROL Campaigns]**&#x200B;并选择&#x200B;**[!UICONTROL Deliveries]**。
 1. 单击 **[!UICONTROL Create]**。
 
@@ -170,7 +170,7 @@ ht-degree: 1%
 >
 >默认情况下，优惠券管理模块使用&#x200B;**nms:recipient**&#x200B;表。 [了解详情](../dev/datamodel.md#ootb-profiles)。
 >
->在此页面[&#128279;](../dev/custom-recipient.md)中了解如何使用自定义收件人表。
+>在此页面](../dev/custom-recipient.md)中了解如何使用自定义收件人表[。
 
 ## 管理优惠券不足 {#managing-insufficient-coupons}
 

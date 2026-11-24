@@ -26,7 +26,7 @@ topic_v2:
     internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 2%
@@ -49,7 +49,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->投放状态不会实时显示。 在此部分[&#128279;](#email-feedback-service)中了解有关电子邮件反馈服务的更多信息。
+>投放状态不会实时显示。 在此部分](#email-feedback-service)中了解有关电子邮件反馈服务[的更多信息。
 
 ## Campaign MTA {#mta}
 
@@ -92,11 +92,11 @@ Domain Keys Identified Mail (DKIM)是一种用于检测伪造发件人地址（�
 
 在Adobe Campaign中，DKIM电子邮件身份验证签名由MTA执行。
 
-在[DKIM可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#authentication){target="_blank"}中了解有关Adobe的更多信息。
+在[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication){target="_blank"}中了解有关DKIM的更多信息。
 
 ## 电子邮件反馈服务 {#email-feedback-service}
 
-Campaign电子邮件反馈服务(EFS)报告使用Adobe Campaign发送的每个电子邮件投放的状态。
+Campaign电子邮件反馈服务(EFS)报告与Adobe Campaign一起发送的每个电子邮件投放的状态。
 
 投放开始后，当消息成功从Campaign中继到MTA时，**[!UICONTROL Success]**&#x200B;百分比没有变化。 投放日志显示每个目标地址的&#x200B;**[!UICONTROL Taken into account by the service provider]**&#x200B;状态。
 

@@ -35,7 +35,7 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 3%
@@ -46,4 +46,4 @@ Adobe Campaign附带内置配置文件表： **nmsRecipient**。 此表有许多
 
 内置的表扩展提供了灵活性，但它不允许删除某些未使用的字段或链接。 因此，当数据模型与Campaign内置的收件人表结构存在很大差异，或者您拥有大量用户档案时，使用自定义收件人表可能是一个不错的选择。  但是，此方法在实施时需要遵循一定的预防措施。
 
-请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/use-a-custom-recipient-table/about-custom-recipient-table.html?lang=zh-Hans){target="_blank"}以了解如何配置实例以使用自定义收件人表。
+请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/use-a-custom-recipient-table/about-custom-recipient-table.html){target="_blank"}以了解如何配置实例以使用自定义收件人表。

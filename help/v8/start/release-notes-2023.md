@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1518'
-ht-degree: 55%
+ht-degree: 53%
 ---
 # 2023 年发行说明 {#2023-rn}
 
@@ -195,5 +195,5 @@ _2023 年 1 月 27 日_
 * 对 log4j 库的其余引用已从 Windows 上的 Campaign 安装中移除。 (NEO-44851)
 * 修复了在&#x200B;**查询**&#x200B;工作流活动的附加数据中添加&#x200B;**已打开的收件人** (estimatedRecipientOpen) 指标时，可能会导致错误的问题。 (NEO-46665)
 * 改进了包含多个投放的工作流中的跟踪 URL 管理，从而提高性能。 (NEO-50894) <!--OKKKK-->
-* 修复了可能导致使用 Xtkfolder 的架构复制失败的问题。 (NEO-46787) <!--OKKKK-->
-* 修复了可能导致在 NmsSubscription 表中删除“lastModified”自定义列的问题。 (NEO-48402)
+* 修复了可能导致使用Xtkfolder的架构复制失败的问题。 (NEO-46787) <!--OKKKK-->
+* 修复了可能导致NmsSubscription表中删除“lastModified”自定义列的问题。 (NEO-48402)

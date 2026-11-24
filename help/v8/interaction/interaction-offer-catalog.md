@@ -22,7 +22,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 2%
@@ -37,13 +37,13 @@ ht-degree: 2%
 
 ## 创建产品建议类别{#creating-offer-categories}
 
-选件会按类别/子类别进行整理。 类别是在&#x200B;**[!UICONTROL Design]**&#x200B;环境中创建的，并在其包含的选件获得批准时自动部署在&#x200B;**[!UICONTROL Live]**&#x200B;环境中（即使其可用）。 **[!UICONTROL Design]**&#x200B;环境包含接收所有选件的默认类别。 可以创建子类别以将层次结构添加到目录选件。
+选件会按类别/子类别进行整理。 类别是在&#x200B;**[!UICONTROL Design]**&#x200B;环境中创建的，并在其包含的选件获得批准后自动部署在&#x200B;**[!UICONTROL Live]**&#x200B;环境中（即，使其可用）。 **[!UICONTROL Design]**&#x200B;环境包含接收所有选件的默认类别。 可以创建子类别以将层次结构添加到目录选件。
 
 对于每个类别，您可以定义&#x200B;**资格日期**，该日期是类别中包含的优惠可以展示给其目标的时间段。 您还可以调整类别的权重，以优先考虑优惠演示。
 
 要创建新类别，请执行以下步骤：
 
-1. 浏览器到&#x200B;**[!UICONTROL Offer catalog]**&#x200B;文件夹。
+1. 浏览到&#x200B;**[!UICONTROL Offer catalog]**&#x200B;文件夹。
 
    ![](assets/offer_cat_create_001.png)
 
@@ -67,7 +67,7 @@ ht-degree: 2%
 
    * **[!UICONTROL Edit query]**&#x200B;以将筛选器应用到优惠目标。
 
-   * 资格规则概述。要查看其内容，请单击&#x200B;**[!UICONTROL Schedule and eligibility rules of the offer]**&#x200B;链接。
+   * 资格规则概述。 要查看其内容，请单击&#x200B;**[!UICONTROL Schedule and eligibility rules of the offer]**&#x200B;链接。
 
 ## 添加后备类别
 

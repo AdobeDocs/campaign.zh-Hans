@@ -25,9 +25,9 @@ subfeature_v2:
     internal-label: Landing pages
   - id: e739ee2b-6228-412e-878f-45de0791417d
     internal-label: Use cases
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '988'
 ht-degree: 1%
 ---
 # 用例：Web 窗体{#use-cases-web-forms}
@@ -45,7 +45,7 @@ ht-degree: 1%
 
 ### 第1步 — 创建信息服务 {#step-1---creating-information-services}
 
-1. 创建要提供给收件人的新闻稿订阅服务。 有关如何创建新闻稿的更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}。
+1. 创建要提供给收件人的新闻稿订阅服务。 有关如何创建新闻稿的更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
 
@@ -63,7 +63,7 @@ ht-degree: 1%
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. 由于此投放的收件人尚未确认其审批，因此他们仍在数据库阻止列表中。 若要接收此通信，您需要根据此模板授权投放以在阻止列表时定位收件人。
+1. 由于此投放的收件人尚未确认其审批，因此他们仍在数据库阻止列表中。 要使其接收此通信，您需要根据此模板授权投放，以在阻止列表上定位收件人。
 
    为此，请单击&#x200B;**[!UICONTROL Exclusions]**&#x200B;选项卡。
 
@@ -121,7 +121,7 @@ Web窗体工作流将包含以下活动：
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   第一个&#x200B;**[!UICONTROL Script]**&#x200B;活动将在阻止列表时添加收件人，直到他们确认订阅新闻稿为止。 其内容必须如下：
+   前&#x200B;**[!UICONTROL Script]**&#x200B;个活动将在阻止列表时添加收件人，直到他们确认订阅新闻稿为止。 其内容必须如下：
 
    ```
    ctx.recipient.@blackList=1

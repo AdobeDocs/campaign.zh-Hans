@@ -14,7 +14,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 这意味着您的特定Campaign产品的IMS配置存在问题：IMS团队需要修复该问题。
 
-要获取更多详细信息，您可以使用令牌调用IMS API，以查看您的IMS配置文件是什么样的：您需要一个prodCtx，其中organization_id与您放置在Adobe.io URL中的相同，以便能够路由您的请求。
+要获取更多详细信息，您可以使用令牌调用IMS API，以查看您的IMS配置文件是什么样的：您需要一个prodCtx，其中organization_id与您在URL中放置的organization_id相同，以便能够路由您的请求。
 如果缺少IMS配置，则需要修复。
 
 ```
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 * **向Adobe.io发出请求时，您收到{&quot;code&quot;：500，&quot;message&quot;：&quot;Oops. 出了点问题。 请检查您的URI并重试。&quot;}**
 
-Adobe.io声明您的URI无效：您请求的URI很可能无效。 在Adobe.io上，当您选择Campaign服务时，您会获得一个选取器，其中包含可能的organization_id列表。 您需要检查您选择的就是您放入URL中的服务器。
+Adobe.io声明了无效的URI：您请求的URI很可能无效。 在Adobe.io上，当您选择Campaign服务时，您会获得一个选取器，其中包含可能的organization_id列表。 您需要检查您选择的就是您放入URL中的服务器。
 
 * **向Adobe.io发出请求时，您收到{&quot;error_code&quot;：&quot;401013&quot;，&quot;message&quot;：&quot;Oauth令牌无效&quot;}**
 

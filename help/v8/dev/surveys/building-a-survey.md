@@ -15,10 +15,10 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '797'
-ht-degree: 2%
+ht-degree: 3%
 ---
 # 设计调查{#building-a-survey}
 
@@ -38,7 +38,7 @@ Web窗体通过树的&#x200B;**[!UICONTROL Resources > Online > Web applications
 
 ![](assets/s_ncs_admin_survey_select_template.png)
 
-表单页面是使用特殊编辑器创建的，允许您定义和配置（文本）输入字段、选择字段（列表、复选框等） 和静态元素（图像、HTML内容等）。 它们可以在“容器”中收集，并根据要求进行布局。 [了解详情](#adding-questions))。
+表单页面是使用特殊编辑器创建的，允许您定义和配置（文本）输入字段、选择字段（列表、复选框等） 和静态元素（图像、HTML内容等）。 它们可以在“容器”中收集，并根据要求进行布局。 [了解详情](#adding-questions)。
 
 >[!NOTE]
 >

@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 44%
+source-wordcount: '504'
+ht-degree: 43%
 ---
 # Adobe Campaign v8（控制台）文档 {#campaign-documentation}
 
@@ -40,7 +40,7 @@ ht-degree: 44%
 
 >[!TAB Campaign v8.9版本已上线]
 
-Adobe Campaign 最新版本现已上线。 阅读发行说明以了解更多详细信息。
+Adobe Campaign 最新版本现已上线。 请阅读发行说明，了解更多详细信息。
 
 [![image](assets/do-not-localize/learn-more-button.svg)](start/release-notes.md)
 

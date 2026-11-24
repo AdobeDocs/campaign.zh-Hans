@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '739'
 ht-degree: 5%
 ---
 # 开始使用 Campaign 数据模型 {#gs-ac-datamodel}
@@ -47,7 +47,7 @@ Adobe Campaign数据模型的基本结构可描述如下：
 
 * **收件人表**：数据模型依赖于主表，该主表默认为收件人表(**nmsRecipient**)。 此表存储了所有营销用户档案。 在[本节](#ootb-profiles)中了解有关收件人表的更多信息。
 
-* **投放表**：此表为每个投放操作存储一个记录。 通常为投放表(**NmsDelivery**)。 此表表示投放操作或投放模板。 它包含执行投放所需的所有参数，如目标、内容等。每个记录都更新多次，以反映投放进度
+* **投放表**：此表为每个投放操作存储一个记录。 通常为投放表(**NmsDelivery**)。 此表中的记录表示投放操作或投放模板。 它包含执行投放所需的所有参数，如目标、内容等。每个记录都更新多次，以反映投放进度
 
 * **日志表**：这些表存储与活动执行相关的所有日志。
 
@@ -81,13 +81,13 @@ Adobe Campaign中的内置收件人表(nmsrecipient)为构建数据模型提供�
 * 开箱即用地使用关键功能，如订阅、种子列表等
 * 提供具有以收件人为中心的数据模型的营销数据库
 * 更快的实施
-* 由支持和合作伙伴轻松维护
+* 支持人员和合作伙伴可轻松维护
 
 可以扩展收件人表，但不能减少表中的字段或链接数。
 
 在[本节](extend-schema.md)中了解如何扩展现有架构。
 
-在[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=zh-Hans#extending-a-table){target="_blank"}中发现内置收件人表扩展的示例
+在[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#extending-a-table){target="_blank"}中发现内置收件人表扩展的示例
 
 您还可以使用其他收件人表以更好地满足您的业务或功能要求。 此方法具有限制，在[此部分](custom-recipient.md)中有说明。
 

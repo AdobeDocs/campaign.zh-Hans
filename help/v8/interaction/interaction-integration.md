@@ -24,7 +24,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1458'
 ht-degree: 0%
@@ -107,7 +107,7 @@ HTML页面必须包含一个元素，该元素的@id属性具有已创建选件�
 
 ### 提供已识别的优惠 {#presenting-an-identified-offer}
 
-若要向已识别的联系人提供选件，该过程类似于此部分[&#128279;](#presenting-an-anonymous-offer)中详细描述的过程。
+若要向已识别的联系人提供选件，该过程类似于此部分](#presenting-an-anonymous-offer)中详细的[过程。
 
 在网页的内容中，您需要添加以下脚本，以在调用优惠引擎期间识别联系人：
 
@@ -227,7 +227,7 @@ HTML页面必须包含一个元素，该元素的@id属性具有已创建选件�
 
 1. **扩展优惠公式以编辑新字段并修改现有字段**
 
-   编辑&#x200B;**选件(nsm)**&#x200B;输入表单。
+   编辑&#x200B;**选件(nms)**&#x200B;输入表单。
 
    在“视图”部分中，插入两个包含以下内容的新字段：
 

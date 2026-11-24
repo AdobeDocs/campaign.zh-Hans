@@ -26,9 +26,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '682'
 ht-degree: 1%
 ---
 # 事件处理 {#event-processing}
@@ -105,7 +105,7 @@ ht-degree: 1%
 * **待处理投放**
 该事件已处理，并且已链接投放模板。 电子邮件正在等待投放，并且已应用经典投放流程。 有关详细信息，您可以打开投放。
 * **已发送**，**已忽略**&#x200B;和&#x200B;**传递错误**
-这些投放状态可通过&#x200B;**updateEventsStatus**&#x200B;工作流恢复。 有关详细信息，您可以打开相关的投放。
+这些投放状态可通过**updateEventsStatus**&#x200B;工作流恢复。 有关详细信息，您可以打开相关的投放。
 * 未涵盖&#x200B;**事件**
 事务性消息传递路由阶段失败。 例如，Adobe Campaign未找到用作事件模板的电子邮件。
 * **事件已过期**

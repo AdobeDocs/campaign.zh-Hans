@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 66d00cbaf20d714f56ab02bba593cff4a0d23571
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1073'
 ht-degree: 10%
 ---
 # Campaign架构快速入门{#gs-ac-archi}
@@ -51,7 +51,7 @@ Campaign可用作单个实例，每个实例代表一个完整的Campaign环境�
 
 您可以将资源包从一个环境导出和导入到另一个环境。
 
-请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html?lang=zh-Hans){target="_blank"}以了解有关包的更多信息
+请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/administration-basics/working-with-data-packages.html){target="_blank"}以了解有关包的更多信息
 
 ## 部署模型 {#ac-deployment}
 
@@ -129,9 +129,9 @@ In addition, you can select split external accounts as the default routing provi
 
 在[本节](../send/transactional.md)中了解如何发送事务性消息。
 
-响应客户在网站上的操作，通过REST API发送事件Campaign，使用通过API调用提供的信息或数据填充消息模板，并将事务型消息实时发送给客户。 这些消息可以通过电子邮件、短信或推送通知单独或批量发送。
+响应客户在网站上的操作，通过REST API将事件发送到Campaign，并用通过API调用提供的信息或数据填充消息模板，并将事务型消息实时发送给客户。 这些消息可以通过电子邮件、短信或推送通知单独或批量发送。
 
-在该特定体系结构中，执行单元与控制实例分离，以确保高可用性和负载管理。
+在此特定体系结构中，执行单元与控制实例分离，以确保高可用性和负载管理。
 
 * **控制实例**（或营销实例）由营销人员和IT团队用于创建、配置和发布消息模板。 此实例还集中了事件监控和历史记录。
 

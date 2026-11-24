@@ -31,9 +31,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '803'
 ht-degree: 1%
 ---
 # 使用明细列表 {#enumerations}
@@ -57,7 +57,7 @@ ht-degree: 1%
 * **Open**&#x200B;枚举允许用户直接基于此枚举在字段中添加新值。
 * **Closed**&#x200B;枚举具有只能从资源管理器的&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;文件夹中修改的固定值列表。
 * **表情符号**&#x200B;枚举用于更新表情符号列表。 了解详情
-* **系统**&#x200B;枚举与系统字段相关联，并带有内部名称。
+* **系统**&#x200B;枚举与系统字段关联，并带有内部名称。
 
 对于&#x200B;**Open**&#x200B;和&#x200B;**Closed**&#x200B;枚举，可以使用特定选项：
 
@@ -102,14 +102,14 @@ ht-degree: 1%
 
    ![将值转换为别名](assets/convert-into-aliases.png)
 
-1. 选择要以别名转换的值，然后单击&#x200B;**[!UICONTROL Next]**。
+1. Select要转换为别名的值，然后单击&#x200B;**[!UICONTROL Next]**。
 1. 单击&#x200B;**[!UICONTROL Start]**&#x200B;运行转换。
 
    执行完成后，别名将添加到&#x200B;**别名**&#x200B;选项卡的列表中。 您可以关联正确的值以替换错误的条目。 要执行此操作，请执行以下操作：
 
-1. 选择要清除的值。
+1. Select要清理的值。
 1. 单击&#x200B;**详细信息……**&#x200B;按钮。
-1. 在下拉列表中选择新值。
+1. Select下拉列表中的新值。
 
    ![创建新别名](assets/define-new-alias.png)
 

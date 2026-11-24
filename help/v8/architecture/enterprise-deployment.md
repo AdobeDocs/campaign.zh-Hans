@@ -42,10 +42,10 @@ topic_v2:
     internal-label: Reporting
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 52%
+ht-degree: 44%
 ---
 # [!DNL Campaign] FFDA部署 {#gs-ac-ffda}
 
@@ -59,7 +59,7 @@ Campaign v8企业版(FFDA)在流程的任何步骤（从定位到最终报告）
 * 扩展分段和定位的查询性能，还可扩展数据摄取和输出
 * 将投放准备速度从小时扩展到分钟
 
-这是软件架构的重大变化。 数据现在位于远程位置，Campaign 会联合所有数据（包括轮廓）。 [!DNL Campaign] 流程现在实现了端到端扩展，从定位到消息执行：数据摄取、分段、定位、查询、投放一般只需要几分钟即可运行。 这个新版本解决了扩展的全部难题，同时保持了相同级别的灵活性和可扩展性。 轮廓的数量几乎是无限的，而且可以延长数据保留时间。
+这是软件架构的重大变化。 数据现在位于远程位置，Campaign 会联合所有数据（包括轮廓）。 [!DNL Campaign]进程现在实现了端到端扩展，从定位到消息执行：数据摄取、分段、定位、查询、投放一般只需要几分钟即可运行。 这个新版本解决了扩展的全部难题，同时保持了相同级别的灵活性和可扩展性。 轮廓的数量几乎是无限的，而且可以延长数据保留时间。
 
 云存储在 **[!DNL Snowflake]** 中执行：一种新的内置&#x200B;**外部帐户**&#x200B;可确保与云数据库的连接。 它由 Adobe 配置，不可修改。 [了解详情](../config/external-accounts.md)
 
@@ -67,7 +67,7 @@ Campaign v8企业版(FFDA)在流程的任何步骤（从定位到最终报告）
 
 >[!CAUTION]
 >
-> 客户数据并不存储在本地 [!DNL Campaign] 数据库中。 因此，所有自定义表格都需要在云数据库中创建。
+> 客户数据并不存储在本地 [!DNL Campaign] 数据库中。 因此，需要在云数据库中创建任何自定义表。
 >
 
 ## Campaign Enterprise (FFDA)架构{#ffda-archi}
@@ -144,9 +144,9 @@ Campaign v8对象现在使用&#x200B;**通用唯一标识符(UUID)**，允许使
 
 请注意，此 ID 是基于字符串的，而不是按顺序的。 主密钥不是 Campaign v8 中的数字值，您需要在架构中使用 **autouuid** 和 **autopk** 属性。
 
-在 Campaign Classic v7 及更早的版本中，架构（即表格）中密钥的唯一性在数据库引擎级别进行处理。 一般来说，PostgreSQL、Oracle 或 SQL Server 等 Classic 数据库引擎包含原生机制，以防止通过主密钥和/或唯一索引根据列或一组列插入重复的行。 在数据库级别设置正确的索引和主密钥后，这些版本中不存在重复的 ID。
+在 Campaign Classic v7 及更早的版本中，架构（即表格）中密钥的唯一性在数据库引擎级别进行处理。 一般来说，PostgreSQL、Oracle 或 SQL Server 等 Classic 数据库引擎包含原生机制，以防止通过主密钥和/或唯一索引根据列或一组列插入重复的行。 在数据库级别设置正确的索引和主键后，这些版本中不存在重复的ID。
 
-Adobe Campaign v8 以 Snowflake 为核心数据库。 随着查询规模的显着增长，Snowflake 数据库的分布式架构无法提供这样的机制来管理并对表格中某个密钥强制执行唯一性。 因此，使用 Adobe Campaign v8 时，没有任何内容会阻止在表格中摄取重复的密钥。 现在，最终用户负责确保 Adobe Campaign 数据库中密钥的一致性。 [了解详情](keys.md)
+Adobe Campaign v8 以 Snowflake 为核心数据库。 随着查询规模的显着增长，Snowflake数据库的分布式架构无法提供这样的机制来管理和强制在表中实现密钥的唯一性。 因此，使用 Adobe Campaign v8 时，没有任何内容会阻止在表格中摄取重复的密钥。 现在，最终用户负责确保 Adobe Campaign 数据库中密钥的一致性。 [了解详情](keys.md)
 
 ### 功能可用性 {#feature-availability}
 

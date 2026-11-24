@@ -19,7 +19,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 2d8aa27d6565e216cc0842ba22678c884479ff43
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1244'
 ht-degree: 9%
@@ -54,7 +54,7 @@ ht-degree: 9%
 >
 >* 不得在中间源中设置此选项。
 >
->* 请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html?lang=zh-Hans#smtp-relay){target="_blank"}以了解有关SMTP服务器配置的更多信息。
+>* 请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html#smtp-relay){target="_blank"}以了解有关SMTP服务器配置的更多信息。
 
 ## 使用多批次发送 {#sending-using-multiple-waves}
 
@@ -75,7 +75,7 @@ ht-degree: 9%
 >
 >您只能定义两个连续波形之间的大小和延迟。 无法配置每个波次的收件人选择标准。
 
-您可以定义每个批次的大小，或将其添加到日历中。
+您可以定义每个波次的大小，也可以将其添加到日历中。
 
 * **定义每个批次的大小**。 例如，如果您在相应字段中输入&#x200B;**[!UICONTROL 30%]**，则每个波次将代表投放中包含的30%的消息，但最后一个波次除外，后者将代表10%的消息。
 

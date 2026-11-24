@@ -21,9 +21,9 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '365'
 ht-degree: 5%
 ---
 # 解释 Web 应用程序{#translating-a-web-application}
@@ -55,7 +55,7 @@ ht-degree: 5%
 
    具体有三种情况：
 
-   * 如果所选块包含多个字符串/块，则会将其标记为要翻译的单个字符串。 该字符串随后包含此块中元素的HTML代码。
+   * 如果所选块包含多个字符串/块，则会将其标记为要翻译的单个字符串。 然后，该字符串包含此块中元素的HTML代码。
    * 如果要标记包含多个字符串的块，并且其中至少有一个字符串已标记，则会显示警告。 然后，您可以从隔离字符串中删除标记并添加整个块。
 
      ![](assets/dce_translation_4.png)
@@ -69,7 +69,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   >收集字符串后，如果您在DCE中删除翻译标记，则不会从列表中删除它们。 这样可以将它们保存在翻译记忆库中。
+   >收集字符串后，如果您在DCE中删除翻译标记，则不会从列表中删除它们。 这允许您将其保存在翻译记忆库中。
 
 1. 翻译并批准字符串。
 

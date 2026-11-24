@@ -18,7 +18,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Adobe Campaign REST API可以计算请求中的记录数。 为此，请使用&#
 
 ***示例请求***
 
-要计算其值为&#x200B;**messageType**&#x200B;且等于“sms”的所有服务，请使用&#x200B;**byChannel**&#x200B;筛选器执行GET请求。
+要计算&#x200B;**messageType**&#x200B;值等于“sms”的所有服务，请使用&#x200B;**byChannel**&#x200B;过滤器执行GET请求。
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel?channel=sms \

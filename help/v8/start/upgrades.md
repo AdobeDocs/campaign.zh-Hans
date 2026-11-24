@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7ae0ea8d334af5e3580b594d5ddc8b52b10fa5b6
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1780'
-ht-degree: 6%
+ht-degree: 15%
 ---
 # 版本、升级和安全性 {#upgrades}
 
@@ -65,15 +65,15 @@ Adobe Campaign会定期发布产品版本，以提高Campaign基础架构的性�
 
 为确保配置稳定，Adobe建议您在所有Campaign服务器上安装&#x200B;**完全相同的版本**。 此外，除[发行说明](release-notes.md)中另有提及外，客户端控制台必须使用&#x200B;**与服务器实例完全相同的版本**。 [在此页面](../start/connect.md#upgrade-ac-console)中了解如何升级客户端控制台。
 
-### Hotflix {#hotflixes}
+### 修补程序 {#hotflixes}
 
-在特殊情况下，Adobe可能会提供特定于客户的修补程序，以便在标准版本中提供该修补程序之前解决问题。 修补程序请求会逐个评估，它不属于标准发布周期。
+在特殊情况下，Adobe 可能会提供针对特定客户的热修复，以在标准版本提供修复之前解决问题。 热修复请求会逐案进行评估，且不属于标准发布周期。
 
-应通过Adobe客户关怀部门提出修补程序请求。 如果获得批准，将为受影响的客户和产品构建准备修补程序。 修补程序不是所有客户的通用版本；Adobe在审查后可能会批准与其他受影响的客户共享它。
+应通过 Adobe 客户关怀部门提出热修复请求。 如果获得批准，将为受影响的客户和产品构建准备热修复。 热修复不是面向所有客户的通用版本；Adobe 在审阅后可能会批准与其他受影响的客户共享它。
 
-提供修补程序后，公共发行说明中可能不包含修补程序详细信息。 之后，Adobe可能会在适用版本的标准版本中包含一个修补程序。 纳入和时间并不得到保证。 有关每个标准版本中包含的更改，请参阅发行说明。
+交付热修复时，公开发行说明中可能不包含热修复的详细信息。 Adobe 随后可能会在适用版本的标准版本中包含热修复。 不保证纳入及具体时间。 有关每个标准版本中包含的更改，请参阅发行说明。
 
-此特定于客户的修补程序流程与上面描述的关键安全修补程序策略不同，根据该策略，Adobe可以在不事先通知的情况下将关键安全修补程序应用于托管环境。
+此针对特定客户的热修复流程独立于上文所述的重要安全修补程序策略，根据该策略，Adobe 可以在不事先通知的情况下将重要安全修补程序应用于托管环境。
 
 ### 使您的客户端控制台保持最新 {#ac-upgrades}
 
@@ -97,7 +97,7 @@ Adobe Campaign会定期发布产品版本，以提高Campaign基础架构的性�
 您可以访问以下信息：
 
 * 客户端控制台和应用程序服务器的&#x200B;**版本**&#x200B;编号。 在上面的示例中，客户端控制台和应用程序服务器的版本均为8.1.5。
-* 用圆括号括起的 SHA 编号。
+* 括号之间的SHA编号。
 * 用于联系 Adobe 客户关怀团队的链接。
 * 指向 Adobe 隐私政策、使用条款和 Cookie 政策的链接。
 
@@ -109,7 +109,7 @@ Adobe Campaign会定期发布产品版本，以提高Campaign基础架构的性�
 
 新版本及其更改列在[发行说明](release-notes.md)中。
 
-有关产品版本更新，请订阅[Adobe优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html){target="_blank"}或访问[Campaign社区](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?profile.language=zh-Hans&style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"}。
+有关产品版本更新，请订阅[Adobe优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html){target="_blank"}或访问[Campaign社区](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"}。
 
 有关准备组织进行安全更新的安全通知和指导，请参阅[随时了解情况](#security-staying-informed)。
 

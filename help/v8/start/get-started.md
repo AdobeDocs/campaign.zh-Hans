@@ -51,18 +51,18 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1055'
-ht-degree: 87%
+ht-degree: 81%
 ---
 # Adobe Campaign 入门{#gs-ac-v8}
 
 Adobe Campaign 提供了一个跨渠道客户体验设计平台，以及用于进行可视化活动编排、实时互动管理和跨渠道执行的环境。
 
-Adobe Campaign v8 是新一代营销活动工具，专为各种营销渠道（如电子邮件、推送通知、短信和直邮）构建。 它提供了强大的 ETL 和数据管理功能，以帮助制定和策划完美的营销活动。 它的编排引擎提供丰富的多接触点营销计划，核心重点放在基于批处理驱动的历程。 它还配有一个可扩展的实时消息服务器，使营销团队能够根据任何 IT 系统的总体有效负载发送预定义的消息，如密码重置、订单确认、电子收据等。
+Adobe Campaign v8 是新一代营销活动工具，专为各种营销渠道（如电子邮件、推送通知、短信和直邮）构建。 它提供了强大的 ETL 和数据管理功能，以帮助制定和策划完美的营销活动。 它的编排引擎提供丰富的多接触点营销计划，核心重点放在基于批处理驱动的历程。 它还配有一个可扩展的实时消息服务器，使营销团队能够根据任何IT系统的包含所有内容的有效负载发送预定义的消息，以进行通信，例如密码重置、订单确认、电子收据等。
 
-Adobe Campaign v8 在基础架构、安全性、可投放性和监测方面有着显著改进。 它是一款&#x200B;**托管式云服务**，将各种服务与主动监督和及时发送警报功能相结合。 [在此页面中](whats-new.md#acms-desc)了解有关 Campaign Managed Cloud Services 的详情。
+Adobe Campaign v8 在基础架构、安全性、可投放性和监测方面有着显著改进。 它作为&#x200B;**托管Cloud Service**&#x200B;提供，它将各种服务与主动监督和及时警报相结合。 [在此页面中](whats-new.md#acms-desc)了解有关 Campaign Managed Cloud Services 的详情。
 
 使用 Campaign 可以：
 

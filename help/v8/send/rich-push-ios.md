@@ -25,16 +25,16 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 239f132eab6976d228c6648917c3090f14cf5088
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1119'
 ht-degree: 5%
 ---
 # 设计 iOS 富推送投放 {#rich-push}
 
 >[!IMPORTANT]
 >
->在设计富推送通知之前，您首先需要配置V2连接器。 有关详细过程，请参阅[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application)。
+>在设计富推送通知之前，您首先需要配置V2连接器。 有关详细过程，请参阅[此页面](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application)。
 
 ## 定义iOS通知的内容 {#push-message}
 
@@ -189,7 +189,7 @@ ht-degree: 5%
 |---------|---------|
 | **[!UICONTROL Clean Badge]** | 启用此选项以刷新标记值。 |
 | **[!UICONTROL Value]** | 设置一个数字，该数字将用于直接在应用程序图标上显示新未读信息的数量。 |
-| **[!UICONTROL Critical alert mode]** | 启用此选项后，即使用户的手机设置为焦点模式或iPhone处于静音状态，也可以向通知添加声音。 |
+| **[!UICONTROL Critical alert mode]** | 启用此选项可向您的通知添加声音，即使用户的手机设置为焦点模式或iPhone处于静音状态也是如此。 |
 | **[!UICONTROL Name]** | 当接收到通知时，选择移动终端要播放的声音。 |
 | **[!UICONTROL Volume]** | 将音量从0设置为100。 声音必须包含在应用程序中，并在创建服务时定义。 |
 
@@ -200,7 +200,7 @@ ht-degree: 5%
 | **[!UICONTROL Mutable content]** | 启用此选项可允许移动应用程序下载媒体内容。 |
 | **[!UICONTROL Thread-id]** | 设置用于将相关通知分组在一起的标识符。 |
 | **[!UICONTROL Category]** | 设置将显示操作按钮的类别ID的名称。 这些通知为用户提供了一种更快的方式，无需在应用程序中打开或导航即可响应通知执行不同任务。 |
-| **[!UICONTROL Target content ID]** | 设置标识符，用于在打开通知时定向要前转的应用程序窗口。 |
+| **[!UICONTROL Target content ID]** | 设置标识符，用于在打开通知时定向要转发的应用程序窗口。 |
 | **[!UICONTROL Launch image]** | 设置要显示的启动图像文件的名称。 如果用户选择启动您的应用程序，则会显示选定的图像而不是应用程序的启动屏幕。 |
 | **[!UICONTROL Click action]** | 设置与用户单击您的通知关联的操作。 |
 | **[!UICONTROL Interruption level]** | <ul><li>活动：默认设置为，系统立即显示通知，在屏幕上亮起，并可播放声音。 通知不会突破焦点模式。</li><li>被动：系统将通知添加到通知列表，而不打开屏幕或播放声音。 通知不会突破焦点模式。</li><li> 时效性：系统立即显示通知，在屏幕上亮起，可以播放声音并突破焦点模式。 此级别不需要Apple的特殊权限。</li><li>严重：系统立即显示通知，在屏幕上亮起，并绕过静音开关或聚焦模式。 请注意，此级别需要Apple的特殊权限。</li></ul> |

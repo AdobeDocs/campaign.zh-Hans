@@ -21,7 +21,7 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 2%
@@ -32,7 +32,7 @@ ht-degree: 2%
 
 ## 创建容器 {#creating-containers}
 
-通过容器，您可以组合页面的字段并配置其布局；以组织页面中的元素。
+通过容器，可组合页面的字段并配置其布局和组织页面中的元素。
 
 对于表单的每个页面，均通过工具栏的&#x200B;**[!UICONTROL Containers]**&#x200B;按钮创建容器。
 

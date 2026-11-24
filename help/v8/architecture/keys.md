@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '581'
 ht-degree: 3%
 ---
 # 密钥管理和唯一性 {#key-management}
@@ -56,7 +56,7 @@ Adobe Campaign v8使用[!DNL Snowflake]作为核心数据库。 [!DNL Snowflake]
 
 >[!CAUTION]
 >
->重复的密钥不限于UUID。 在ID中，可能会发生这种情况，包括在自定义表中创建的自定义键。
+>重复的密钥不限制为UUID。 对于ID（包括在自定义表中创建的自定义键），可能会发生这种情况。
 
 
 ## Unicity Service{#unicity-service}
@@ -98,7 +98,7 @@ Campaign提供了一组新护栏，以防止在[!DNL Snowflake]数据库中插�
 
 ### 投放准备 {#remove-duplicates-delivery-preparation}
 
-在投放准备期间，Adobe Campaign会自动从受众中删除任何重复的UUID。 此机制可防止在准备投放时出现任何错误。 作为最终用户，您可以在投放日志中检查此信息：由于密钥重复，可以从主目标中排除某些收件人。 在这种情况下，将显示以下警告： `Exclusion of duplicates (based on the primary key or targeted records)`。
+在投放准备期间，Adobe Campaign会自动从受众中删除任何重复的UUID。 此机制可防止在准备投放时出现任何错误。 作为最终用户，您可以在投放日志中检查此信息：由于存在重复的键，可以从主目标中排除某些收件人。 在这种情况下，将显示以下警告： `Exclusion of duplicates (based on the primary key or targeted records)`。
 
 ![](assets/exclusion-duplicates-log.png)
 

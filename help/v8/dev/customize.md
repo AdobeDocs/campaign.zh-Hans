@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '501'
 ht-degree: 1%
 ---
 # 自定义实例 {#gs-ac-custom}
@@ -65,7 +65,7 @@ Adobe Campaign利用数据架构来：
 
 * 通过接口，使用&#x200B;**新字段**&#x200B;助手
 
-  请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=zh-Hans#configuring-campaign-classic){target="_blank"}以了解如何在Campaign中快速添加新字段
+  请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html#configuring-campaign-classic){target="_blank"}以了解如何在Campaign中快速添加新字段
 
 * 通过扩展模式，以编程方式实现。 在[本节](../dev/extend-schema.md)中了解如何扩展现有架构。
 
@@ -75,9 +75,9 @@ Adobe Campaign利用数据架构来：
 
 **相关主题**
 
-[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=zh-Hans#configuring-campaign-classic){target="_blank"}中的架构版本示例
+[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#configuring-campaign-classic){target="_blank"}中的架构版本示例
 
-用例：将字段链接到[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=zh-Hans#uc-link){target="_blank"}中的现有引用表
+用例：将字段链接到[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#uc-link){target="_blank"}中的现有引用表
 
 
 ## 修改输入表单

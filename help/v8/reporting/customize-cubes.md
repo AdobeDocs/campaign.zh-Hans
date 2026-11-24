@@ -27,9 +27,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1444'
 ht-degree: 2%
 ---
 # 自定义多维数据集{#cube-custom}
@@ -153,7 +153,7 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
 1. 单击多维数据集的&#x200B;**[!UICONTROL Aggregates]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
 1. 输入聚合的标签，然后添加要计算的维度。
-1. 选择维和级别。 对每个维度和每个级别重复此过程。
+1. Select一个维度和一个级别。 对每个维度和每个级别重复此过程。
 1. 单击&#x200B;**[!UICONTROL Workflow]**&#x200B;选项卡以创建聚合工作流。
 
    * **[!UICONTROL Scheduler]**&#x200B;活动允许您定义计算更新的频率。 计划程序在[此部分](../../automation/workflow/scheduler.md)中有详细说明。
@@ -255,7 +255,7 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
    ![](assets/cube_multiple_filters.png)
 
-每次修改过滤器（添加、删除、更改）时，必须重新计算报表。
+每次修改（添加、删除、更改）过滤器时，都必须重新计算报表。
 
 也可以根据选定的内容创建过滤器。 为此，请选择源单元格、行和列，然后单击&#x200B;**[!UICONTROL Add a filter]**&#x200B;图标。
 

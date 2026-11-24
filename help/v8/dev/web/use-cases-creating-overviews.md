@@ -31,7 +31,7 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 0%
@@ -103,7 +103,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >在此阶段，Web应用程序不在其应用程序上下文中，因此无法在文件夹上测试过滤器。
+   >在此阶段，Web应用程序不在其应用程序上下文中；因此，无法在文件夹上测试过滤器。
 
 ## 添加按钮以配置新的Web应用程序 {#adding-a-button-to-configure-a-new-web-application}
 

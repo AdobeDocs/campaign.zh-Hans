@@ -27,7 +27,7 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 7%
@@ -38,7 +38,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->Adobe Campaign Web UI为您提供了一个用户友好的界面，可轻松管理和自定义预定义过滤器以满足您的特定需求。 创建一次并保存，以供将来使用。 要了解有关Web UI预定义过滤器的更多信息，请参阅[Adobe Campaign Web UI文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/predefined-filters){target=_blank}。
+>Adobe Campaign Web UI为您提供了一个用户友好的界面，可轻松管理和自定义预定义过滤器以满足您的特定需求。 创建一次并保存，以供将来使用。 要了解有关Web UI预定义过滤器的更多信息，请参阅[Adobe Campaign Web UI文档](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/predefined-filters){target=_blank}。
 
 
 要创建预定义过滤器，请应用以下流程：

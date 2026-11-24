@@ -35,9 +35,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '558'
 ht-degree: 5%
 ---
 # 投放状态 {#delivery-statuses}
@@ -70,7 +70,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td> 已忽略<br /> </td> 
-   <td> 由于收件人地址错误，该投放未发送给收件人。 该文件被阻止列表、隔离、未提供或重复。<br /> </td> 
+   <td> 由于收件人地址错误，该投放未发送给收件人。 它或者被阻止列表、隔离、未提供或者重复。<br /> </td> 
   </tr> 
   <tr> 
    <td> 失败<br /> </td> 
@@ -122,7 +122,7 @@ ht-degree: 5%
 
   在&#x200B;**[!UICONTROL NmsOperation_LimitConcurrency]**&#x200B;选项中定义了同时营销活动的限制。 默认值为 10。
 
-  作为托管Cloud Services用户，您可以根据需要使用Adobe调整此限制。 请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=zh-Hans){target="_blank"}以了解有关选项的更多信息。
+  作为托管Cloud Services用户，您可以根据需要使用Adobe调整此限制。 请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html){target="_blank"}以了解有关选项的更多信息。
 
 * **资源可用性问题**
 

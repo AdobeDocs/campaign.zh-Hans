@@ -25,9 +25,9 @@ subfeature_v2:
     internal-label: Landing pages
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
     internal-label: Email design
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '537'
 ht-degree: 3%
 ---
 # 内容编辑器界面{#content-editor-interface}
@@ -40,7 +40,7 @@ DCE编辑窗口分为三个不同的部分。 它们允许您查看、修改和�
 
 ![](assets/dce_decoupe_window_nb.png)
 
-1. **top**&#x200B;部分是向用户显示消息的区域。 这些消息指示Web应用程序状态或正在创建的投放的状态，以及与内容相关的警告和错误消息。 有关详细信息，请参阅[HTML内容状态](content-editing-best-practices.md#html-content-statuses)。
+1. **top**&#x200B;部分是向用户显示消息的区域。 这些消息指示Web应用程序的状态或正在创建的投放以及与内容相关的警告和错误消息。 有关详细信息，请参阅[HTML内容状态](content-editing-best-practices.md#html-content-statuses)。
 1. 窗口的&#x200B;**左侧**&#x200B;的部分是编辑内容的区域。 在此区域中，用户可以使用弹出式工具栏直接与内容交互：在图像中插入链接、更改字体、删除字段等。有关详细信息，请参阅[编辑表单](editing-content.md#editing-forms)。
 1. 窗口的&#x200B;**右**&#x200B;部分是控制面板区域。 此区域对编辑器的不同选项进行分组，尤其是与配置块的页面标题和常规选项相关的选项：添加边框、将数据库字段与输入区域链接、访问Web页属性等。有关详细信息，请参阅[全局选项](#global-options)和[编辑内容](editing-content.md)部分。
 

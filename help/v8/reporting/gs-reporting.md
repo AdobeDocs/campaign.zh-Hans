@@ -32,7 +32,7 @@ topic_v2:
     internal-label: Reporting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 13%
@@ -43,13 +43,13 @@ Adobe Campaign提供本页中列出的一组报表工具。
 
 * **动态报告**
 
-  动态报告与Campaign Web UI配合使用，提供完全可自定义的实时报告来衡量营销活动的影响。 它增加了对轮廓数据的访问，除打开数和点击数等功能性电子邮件营销活动数据外，还支持按轮廓维度（如性别、城市和年龄）进行人口统计分析。 请参阅[Web UI v7文档](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=zh-Hans){target="_blank"}。
+  动态报告与Campaign Web UI配合使用，提供完全可自定义的实时报告来衡量营销活动的影响。 它增加了对轮廓数据的访问，除打开数和点击数等功能性电子邮件营销活动数据外，还支持按轮廓维度（如性别、城市和年龄）进行人口统计分析。 请参阅[Web UI v7文档](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html){target="_blank"}。
 
 * **多维数据集**
 
   Adobe Campaign附带直观的数据探索工具，可用于创建动态报表。
 
-  使用Marketing Analytics功能来分析和测量数据、计算统计数据、简化和优化报告创建和计算。 您可以创建报告并构建目标群体，并将这些群体存储到列表中，以便在Adobe Campaign中用于定位或分段任务。
+  使用营销分析功能来分析和测量数据、计算统计数据、简化和优化报告创建和计算。 您可以创建报告并构建目标群体，并将这些群体存储到列表中，以便在Adobe Campaign中用于定位或分段任务。
 
   ![](assets/create-a-report.png)
 
@@ -81,4 +81,4 @@ Adobe Campaign提供本页中列出的一组报表工具。
 
   使用Adobe Campaign创建有关数据库中数据的报表。 创建这些组件后，可在相应的上下文中访问它们。
 
-  有关创建报告的步骤详情，请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html?lang=zh-Hans){target="_blank"}。 高级用户可自行创建个性化报表。
+  有关创建报告的步骤详情，请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign.html){target="_blank"}。 高级用户可自行创建个性化报表。

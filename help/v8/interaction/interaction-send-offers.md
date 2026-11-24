@@ -24,14 +24,14 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1278'
 ht-degree: 2%
 ---
 # 发送产品建议{#send}
 
-为了让优惠引擎选择优惠，该优惠已在&#x200B;**实时**&#x200B;环境中获得批准并可用。 [了解详情](interaction-offer.md#approve-offers)
+选件引擎要选择某个选件，该选件必须获得批准并且可在&#x200B;**实时**&#x200B;环境中使用。 [了解详情](interaction-offer.md#approve-offers)
 
 通过出站通信渠道进行的优惠呈现通过直邮、电子邮件或移动投放进行。 您还可以将统一模式与事务性消息传递（消息中心）结合使用。
 
@@ -93,7 +93,7 @@ ht-degree: 2%
 
 ### 扩充 {#enrichment}
 
-通过&#x200B;**扩充**&#x200B;活动，您可以将优惠或链接添加到投放收件人的优惠中。[了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=zh-Hans){target="_blank"}。
+通过&#x200B;**扩充**&#x200B;活动，您可以将优惠或链接添加到投放收件人的优惠中。[了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}。
 
 例如，您可以在投放之前扩充收件人查询的数据。
 
@@ -180,7 +180,7 @@ ht-degree: 2%
 
 **[!UICONTROL Offer engine]**&#x200B;活动还允许您在投放之前指定对优惠引擎的调用。
 
-有关&#x200B;**优惠引擎**&#x200B;活动的详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html?lang=zh-Hans){target="_blank"}。
+有关&#x200B;**优惠引擎**&#x200B;活动的详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html){target="_blank"}。
 
 此活动与引擎调用中的&#x200B;**扩充**&#x200B;活动的工作原理相同，即在投放前使用引擎计算的优惠扩充集客群体数据。
 
@@ -203,7 +203,7 @@ ht-degree: 2%
 
 利用&#x200B;**[!UICONTROL Offers by cell]**&#x200B;活动，可将集客群体（例如从查询）分发到多个区段中，并指定要为每个区段呈现的选件。
 
-有关&#x200B;**单元格选件**&#x200B;活动的详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html?lang=zh-Hans){target="_blank"}。
+有关&#x200B;**单元格选件**&#x200B;活动的详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html){target="_blank"}。
 
 为此，请使用以下流程：
 

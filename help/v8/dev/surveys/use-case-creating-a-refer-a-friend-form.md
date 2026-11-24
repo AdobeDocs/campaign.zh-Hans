@@ -30,7 +30,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 0%
@@ -109,13 +109,13 @@ ht-degree: 0%
 
    * 此模板包含竞争表格和订阅链接的链接，供被推荐人订阅新闻稿。
 
-     通过个性化块插入订阅链接。 默认情况下，它允许您订阅用户档案到&#x200B;**新闻稿**&#x200B;服务。 可以根据您的需要更改此个性化块，例如，为收件人订阅其他服务。
+     通过个性化块插入订阅链接。 默认情况下，它允许您订阅用户档案到&#x200B;**新闻稿**&#x200B;服务。 可以根据您的需求更改此个性化块，例如，为收件人订阅其他服务。
 
    * 内部名称（此处为“referrer”）将在消息投放脚本中使用，如下所示。
 
    >[!NOTE]
    >
-   >有关投放模板的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hans){target="_blank"}。
+   >有关投放模板的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 
 1. 创建用于投放订阅消息的第二个脚本。
 

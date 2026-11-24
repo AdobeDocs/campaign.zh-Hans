@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Implementation
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '453'
 ht-degree: 13%
 ---
 # 将Campaign与您的解决方案配合使用{#gs-ac-connectors}
@@ -47,7 +47,7 @@ Adobe Campaign附带几个连接器，允许您与外部应用程序通信、连
 
 Campaign v8可与以下Adobe解决方案配合使用。 浏览链接以了解有关用例、配置和准则的更多信息：
 
-* Adobe Analytics。[了解详情](../connect/ac-aa.md)
+* Adobe Analytics。 [了解详情](../connect/ac-aa.md)
 * Adobe Experience Cloud触发器。 [了解详情](../connect/ac-triggers.md)
 * Adobe Experience Manager。 [了解详情](../connect/ac-aem.md)
 * Adobe Experience Platform。 [了解详情](../connect/ac-aep.md)
@@ -57,9 +57,9 @@ Campaign v8可与以下Adobe解决方案配合使用。 浏览链接以了解有
 
 您还可以将[!DNL CX Enterprise]解决方案中的&#x200B;**受众**&#x200B;和&#x200B;**资产**&#x200B;与资产共享和受众共享功能相结合。
 
-在[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=zh-Hans#integrating-with-adobe-experience-cloud){target="_blank"}中了解有关Campaign与[!DNL CX Enterprise]解决方案之间的&#x200B;**受众共享**&#x200B;的更多信息。
+在[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud){target="_blank"}中了解有关Campaign与[!DNL CX Enterprise]解决方案之间的&#x200B;**受众共享**&#x200B;的更多信息。
 
-在[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=zh-Hans#integrating-with-adobe-experience-cloud){target="_blank"}中了解有关Campaign与[!DNL CX Enterprise]解决方案之间的&#x200B;**资源共享**&#x200B;的更多信息。
+在[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud){target="_blank"}中了解有关Campaign与[!DNL CX Enterprise]解决方案之间的&#x200B;**资源共享**&#x200B;的更多信息。
 
 >[!NOTE]
 >

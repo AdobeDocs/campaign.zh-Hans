@@ -28,9 +28,9 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '462'
 ht-degree: 1%
 ---
 # 自定义表情符号列表 {#customize-emoticons}
@@ -62,7 +62,7 @@ ht-degree: 1%
 1. 填写以下字段：
 
    * **[!UICONTROL U+]**：您的新表情符号的代码。 您可以在此[页面](https://unicode.org/emoji/charts/full-emoji-list.html)中找到表情符号代码列表。
-     为避免出现兼容性问题，我们建议您选择在浏览器和每个操作系统上支持的表情符号。
+     为避免出现兼容性问题，我们建议您选择在浏览器和每个操作系统上均受支持的表情符号。
 
    * **[!UICONTROL Label]**：您新表情符号的标签。
 

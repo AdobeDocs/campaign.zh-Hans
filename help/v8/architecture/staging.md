@@ -34,14 +34,14 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '322'
 ht-degree: 2%
 ---
 # Campaign API暂存机制
 
-在[企业(FFDA)部署](enterprise-deployment.md)的上下文中，不建议在性能（延迟和并发）方面引发单一调用。 除非您发送的数据量极低，否则必须使用批处理操作&#x200B;**&#x200B;**。 为了提高性能，引入API将被重定向到本地数据库。
+在[企业(FFDA)部署](enterprise-deployment.md)的上下文中，不建议在性能（延迟和并发）方面引发单一调用。 除非您发送的数据量极低，否则必须使用批处理操作&#x200B;****。 为了提高性能，引入API将被重定向到本地数据库。
 
 默认情况下，某些内置架构启用了Campaign暂存功能。 我们也可以在任何自定义架构上启用它。 暂存机制简介：
 

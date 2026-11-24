@@ -28,7 +28,7 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 2%
@@ -120,7 +120,7 @@ SMS进程轮询nms:extAccount并在其SMPP连接器中派生新连接，传递�
 
 ## serverConf选项 {#sms-serverconf-options}
 
-某些设置可在serverConf.xml中调整。 与此文件中的任何其他设置一样，应在config-instance.xml文件中指定它。 所有设置都位于&lt; mta2 >元素中。
+某些设置可在serverConf.xml中调整。 与此文件中的任何其他设置一样，应在config-instance.xml文件中指定这些设置。 所有设置都位于&lt; mta2 >元素中。
 
 此表汇总了所有设置。 最小/最大合理值大致说明了在大多数情况下应考虑的范围。 调试值是在尝试查找与性能无关的问题时要选择的值。
 

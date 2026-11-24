@@ -31,9 +31,9 @@ topic_v2:
     internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1783'
+source-wordcount: '1782'
 ht-degree: 8%
 ---
 # 全局报告 {#global-reports}
@@ -74,7 +74,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->您还可以使用[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=zh-Hans){target="_blank"}监控每小时发送的投放数量。
+>您还可以使用[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}监控每小时发送的投放数量。
 >
 >所有管理员用户都可访问控制面板。 [此页面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel){target="_blank"}详细介绍了授予用户管理员访问权限的步骤。
 >
@@ -118,7 +118,7 @@ ht-degree: 8%
 * **[!UICONTROL Inbox full]**：在尝试五次传递后生成的错误类型，以指示收件人的收件箱包含太多邮件。
 * **[!UICONTROL Account disabled]**：发送投放时生成的错误类型，指示地址不再存在。
 * **[!UICONTROL Rejected]**：当地址被IAP （Internet访问提供程序）拒绝时生成的错误类型，例如，在应用安全规则（反垃圾邮件软件）之后。
-* **[!UICONTROL Unreachable]**：邮件分发字符串中发生的错误类型：SMTP中继上的事件、域名暂时不可访问等
+* **[!UICONTROL Unreachable]**：邮件分发字符串中发生的错误类型：SMTP中继上的事件、域名暂时不可访问等。
 * **[!UICONTROL Not connected]**：错误类型表示收件人的手机在发送时关闭或与网络断开连接。
 
   >[!NOTE]
@@ -263,7 +263,7 @@ The following indicators are used:
 
 统计以曲线、图表和值表的形式呈现。
 
-**[!UICONTROL History]**&#x200B;曲线表示每天使用此操作系统的速率。 此比率是每日（在此操作系统上）访客数与最高出席人数当日所计量的访客数之比率。
+**[!UICONTROL History]**&#x200B;曲线表示每天使用此操作系统的速率。 此比率是访客每日人数（在此操作系统上）与最高出席人数当日所计量的访客人数之间的比率。
 
 **[!UICONTROL Breakdown by version]**&#x200B;图表表示每个版本的访客相对于此操作系统上的访客总数的细分情况。
 

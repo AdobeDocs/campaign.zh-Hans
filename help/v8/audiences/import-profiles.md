@@ -32,10 +32,10 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: f1f84f565326bd683b47e6e498add3100ea81c4c
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 21%
+ht-degree: 14%
 ---
 # 从文件导入轮廓{#create-profiles}
 
@@ -43,17 +43,17 @@ ht-degree: 21%
 
 ## 用工作流导入轮廓 {#import-profiles-with-a-wf}
 
-工作流可能是自动执行某些导入流程的有用方法。 无论是从本地文件还是从 SFTP 导入数据，都可以使用工作流程来标准化数据管理过程。
+工作流可能是自动执行某些导入流程的有用方法。 无论您是从本地文件还是从SFTP导入数据，都可以使用工作流标准化数据管理过程。
 
 ### 使用列表中的数据：读取列表 {#data-from-read-list}
 
-在文件中准备和构建数据，以使用工作流导入数据。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=zh-Hans){target="_blank"}。
+在文件中准备和构建数据，以使用工作流导入数据。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"}。
 
 ### 从文件加载数据 {#data-from-a-file}
 
-可在工作流中处理的数据可从结构化文件中提取，以便将其导入Adobe Campaign。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file){target="_blank"}。
+可在工作流中处理的数据可从结构化文件中提取，以便将其导入Adobe Campaign。 [了解详情](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file){target="_blank"}。
 
-收集数据后，您可以在工作流中使用该数据，例如，扩充投放或更新数据库。 如需详细信息，请参阅[此小节](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=zh-Hans){target="_blank"}。
+收集数据后，您可以在工作流中使用该数据，例如，扩充投放或更新数据库。 如需详细信息，请参阅[此小节](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html){target="_blank"}。
 
 ## 一次性导入{#import-jobs}
 

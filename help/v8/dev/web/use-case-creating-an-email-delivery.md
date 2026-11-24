@@ -34,9 +34,9 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '757'
 ht-degree: 1%
 ---
 # 用例：创建电子邮件投放{#use-case-creating-an-email-delivery}
@@ -60,13 +60,13 @@ ht-degree: 1%
 
 ## 步骤1 — 创建投放 {#step-1---creating-a-delivery}
 
-要创建新投放，请将光标置于&#x200B;**促销活动**&#x200B;选项卡中，然后单击&#x200B;**投放**。 接下来，单击现有投放列表上方的&#x200B;**创建**&#x200B;按钮。 有关创建投放的详细信息，请参阅[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/about-email-channel){target="_blank"}。
+要创建新投放，请将光标置于&#x200B;**促销活动**&#x200B;选项卡中，然后单击&#x200B;**投放**。 接下来，单击现有投放列表上方的&#x200B;**创建**&#x200B;按钮。 有关创建投放的详细信息，请参阅[此页面](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/about-email-channel){target="_blank"}。
 
 ![](assets/delivery_step_1.png)
 
 ## 第2步 — 选择模板 {#step-2---selecting-a-template}
 
-选择投放模板，然后命名您的投放。 此名称仅对Adobe Campaign控制台的用户可见，收件人不可见，不过此标题将显示在投放列表中。 单击 **[!UICONTROL Continue]**。
+选择投放模板，然后命名您的投放。 此名称仅对Adobe Campaign控制台的用户可见，收件人不可见；但是，此标题将显示在投放列表中。 单击 **[!UICONTROL Continue]**。
 
 ![](assets/dce_delivery_model.png)
 
@@ -78,7 +78,7 @@ ht-degree: 1%
 
 ![](assets/dce_select_model.png)
 
-您还可以通过选择&#x200B;**[!UICONTROL From a file]**，导入在Adobe Campaign之外创建的HTML内容。
+您还可以通过选择&#x200B;**[!UICONTROL From a file]**&#x200B;导入在Adobe Campaign之外创建的HTML内容。
 
 ![](assets/dce_select_from_file_template.png)
 

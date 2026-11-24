@@ -33,7 +33,7 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 3%
@@ -64,7 +64,7 @@ ht-degree: 3%
 
 利用该功能，可检索投放信息并在必要时对其进行编辑。 请注意，一旦发送投放，选项卡内容可能无法再更改。
 
-您可以使用功能板中的几个选项卡监控以下信息：
+以下是您可以使用功能板中提供的多个选项卡监控的信息：
 
 * [投放摘要](#delivery-summary)
 * [投放报告](#delivery-reports)
@@ -159,7 +159,7 @@ ht-degree: 3%
 
 * 如果投放计数器与您的投放不匹配，请尝试重新计算指示器，方法是在Adobe Campaign资源管理器中右键单击相关投放，然后选择&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**&#x200B;以重新同步。 有关跟踪指示器的详细信息，请参阅此[部分](../reporting/delivery-reports.md#tracking-indicators)。
 
-您还可以通过投放仪表板使用不同的报告跟踪您的投放。 有关更多信息，请参阅此[&#128279;](../reporting/delivery-reports.md)章节。
+您还可以通过投放仪表板使用不同的报告跟踪您的投放。 有关更多信息，请参阅此](../reporting/delivery-reports.md)章节[。
 
 >[!NOTE]
 >

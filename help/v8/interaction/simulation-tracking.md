@@ -29,27 +29,27 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '164'
 ht-degree: 8%
 ---
 # 模拟跟踪{#simulation-tracking}
 
 
 
-模拟完成后，您可以通过添加到模拟窗口的&#x200B;**[!UICONTROL Results]**&#x200B;选项卡和&#x200B;**[!UICONTROL Breakdown of offers by rank]**&#x200B;报告（可在模拟仪表板中使用）来分析其结果。
+模拟完成后，您可以通过添加到模拟窗口的&#x200B;**[!UICONTROL Results]**&#x200B;选项卡和通过模拟仪表板提供的&#x200B;**[!UICONTROL Breakdown of offers by rank]**&#x200B;报告来分析其结果。
 
 模拟结果包含每个级别和每个收件人的建议细分。 也会考虑报表轴，并显示在此选项卡中。
 
 您可以保存这些结果，并在必要时通过创建结果的描述性分析导出这些结果。 要执行此操作，请在结果窗口中单击相应的链接。
 
-有关描述性分析助理的详细信息，请参阅[本节](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis){target="_blank"}。
+有关描述性分析助理的详细信息，请参阅[本节](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis){target="_blank"}。
 
 ![](assets/offer_simulation_012.png)
 
 数据透视表可快速查看每个排名的选件细分。 与Adobe Campaign中的所有报告一样，您可以在Web浏览器中导出、打印、存档或显示报告。
 
-如需详细信息，请参阅[此小节](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports){target="_blank"}。
+如需详细信息，请参阅[此小节](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports){target="_blank"}。
 
 ![](assets/offer_simulation_013.png)

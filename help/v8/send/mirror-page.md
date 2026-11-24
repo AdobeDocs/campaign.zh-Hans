@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '436'
 ht-degree: 56%
 ---
 # 链接到镜像页面 {#mirror-page}
@@ -81,7 +81,7 @@ Adobe Campaign 生成的镜像页面包含所有个性化数据。
 
 1. 发送投放后，打开它并浏览到其&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡。
 
-1. 选择一个收件人，然后单击&#x200B;**[!UICONTROL Display the mirror page for this message...]**&#x200B;链接。
+1. Select一个收件人，然后单击&#x200B;**[!UICONTROL Display the mirror page for this message...]**&#x200B;链接。
 
    ![](assets/mirror-page-display.png){width="800"}
 

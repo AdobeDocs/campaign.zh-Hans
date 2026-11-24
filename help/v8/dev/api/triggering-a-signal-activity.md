@@ -22,9 +22,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '322'
 ht-degree: 2%
 ---
 # 触发信号活动 {#triggering-a-signal-activity}
@@ -118,7 +118,7 @@ Campaign Standard API允许您触发&#x200B;**外部信号**&#x200B;活动以调
 -d    "audience":"audience",
 -d    "email":"anna.varney@mail.com",
 -d    "template":"05",
--d    "contentURL":"http://www.adobe.com/cn",
+-d    "contentURL":"http://www.adobe.com",
 -d    "test":"true",
 -d    "segmentCode":"my segment",
 -d    "attribute":"2019-04-03 08:17:19.100Z"}

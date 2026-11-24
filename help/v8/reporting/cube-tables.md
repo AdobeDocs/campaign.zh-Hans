@@ -29,7 +29,7 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 1%
@@ -152,7 +152,7 @@ ht-degree: 1%
 
 ## 构建目标群体 {#build-a-target-population}
 
-通过使用多维数据集构建报表，您可以从表中收集数据并将其保存在列表中。
+使用多维数据集构建的报告允许您从表中收集数据并将其保存在列表中。
 
 要将群体分组到列表中，请执行以下步骤：
 
@@ -160,7 +160,7 @@ ht-degree: 1%
 
    ![](assets/cube-add-to-cart.png)
 
-   为此，可根据需要多次收集各种用户档案
+   根据需要执行此操作多次，以收集各种用户档案。
 
 1. 单击&#x200B;**[!UICONTROL Show cart]**&#x200B;按钮以查看其内容，然后再运行导出。
 

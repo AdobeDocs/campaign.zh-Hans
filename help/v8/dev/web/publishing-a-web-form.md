@@ -26,7 +26,7 @@ topic_v2:
     internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 1%
@@ -119,7 +119,7 @@ ht-degree: 1%
 
    设计阶段完成后，即可交付表单。
 
-   当表单的状态为&#x200B;**[!UICONTROL Being edited]**&#x200B;或&#x200B;**[!UICONTROL Pending publication]**&#x200B;时，它必须是[已发布](#publishing-a-form)才能联机并可通过Web表单URL在浏览器中访问。
+   当表单的状态为&#x200B;**[!UICONTROL Being edited]**&#x200B;或&#x200B;**[!UICONTROL Pending publication]**&#x200B;时，它必须是[已发布](#publishing-a-form)才能联机并通过浏览器中的Web表单URL访问。
 
    发布后，该表单将一直有效，直到其过期。
 
@@ -155,7 +155,7 @@ ht-degree: 1%
 
 * 单击&#x200B;**[!UICONTROL Personalize the message displayed if the form is closed...]**&#x200B;链接以定义当用户尝试在表单无效时访问表单时显示的错误消息。
 
-  查看表单[&#128279;](defining-web-forms-properties.md#accessibility-of-the-form)的辅助功能。
+  查看表单](defining-web-forms-properties.md#accessibility-of-the-form)的[辅助功能。
 
 ### 通过电子邮件投放表单 {#delivering-a-form-via-email}
 
@@ -203,13 +203,13 @@ ht-degree: 1%
 
   * 如果新实例上已存在该Web表单，则该表单会被替换为表单的新版本，并具有&#x200B;**[!UICONTROL Pending publication]**&#x200B;状态，即使表单的旧版本为&#x200B;**[!UICONTROL Online]**&#x200B;也是如此。
 
-  * 无论该表单是否存在都必须为[已发布](#publishing-a-form)，才能在新实例上变为&#x200B;**[!UICONTROL Online]**，并且可通过浏览器中的Web表单URL访问。
+  * 无论表单是否存在都必须将表单发布为[已发布](#publishing-a-form)才能在新实例上变为&#x200B;**[!UICONTROL Online]**，并可通过Web表单URL在浏览器中访问。
 
 * 如果Web窗体在导出时状态为&#x200B;**[!UICONTROL Being edited]**：
 
   * 如果在导入包的实例上新增Web窗体，则Web窗体将获得&#x200B;**[!UICONTROL Being edited]**&#x200B;状态。
 
-  * 如果新实例上已存在该Web表单，则这是对现有表单的修改。 如果表单的旧版本为&#x200B;**[!UICONTROL Online]**，则旧版本将保持联机状态，直到表单的新版本在新实例上再次发布为[&#128279;](#publishing-a-form)。
+  * 如果新实例上已存在该Web表单，则这是对现有表单的修改。 如果表单的旧版本为&#x200B;**[!UICONTROL Online]**，则旧版本将保持联机状态，直到表单的新版本在新实例上再次发布为[](#publishing-a-form)。
 
   >[!NOTE]
   >

@@ -26,9 +26,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: a2ca220e4be9dfb4a90465b69dd08a3552040a07
+source-git-commit: 87e9b7ceb3c082407ac4534e0909c6f7db76e62a
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '811'
 ht-degree: 15%
 ---
 # 内置软件包 {#built-in-packages}
@@ -43,7 +43,6 @@ Campaign使用两种类型的包。 确保与正确的团队合作。
 |---|---|---|
 | 用途 | 提供Campaign功能，例如渠道、集成和加载项。 | 导出并导入您自己的配置和数据，例如从暂存环境导入生产环境。 |
 | 谁管理它们 | Adobe会安装和管理它们。 使用托管云服务，您无法修改已安装的内置软件包。 | 您可以创建、导出和导入它们。 |
-| 在何处了解更多信息 | 此页面。 | [使用数据包](../dev/packages.md) |
 
 ## 检查已安装的包 {#check-installed-packages}
 

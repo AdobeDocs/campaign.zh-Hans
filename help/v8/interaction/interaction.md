@@ -29,7 +29,7 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 709e38026d74ed707d10fc8109356289dc9f4ac9
 workflow-type: tm+mt
 source-wordcount: '1620'
 ht-degree: 1%
@@ -44,7 +44,7 @@ Campaign附带&#x200B;**交互**&#x200B;模块，您可以在交互期间通过�
 
 ![](assets/interaction-cycle.png)
 
-首先，客户与公司之间通过通信渠道进行联系：可以是网站（出站交互）、电子邮件、短信、推送通知（入站交互）。 [了解详情](#interaction-types)
+首先，客户与公司之间通过通信渠道进行联系：可以是网站（入站交互）、电子邮件、短信、推送通知（出站交互）。 [了解详情](#interaction-types)
 
 此联系人会导致调用优惠引擎。 (1)
 

@@ -5,9 +5,9 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: ffa29306eb4402ed20c7d04bdbbaffd4dde5bfe4
+source-git-commit: 2da6239843538ec459e7d3dfe0514a56e4a941be
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1102'
 ht-degree: 86%
 ---
 
@@ -271,6 +271,7 @@ ht-degree: 86%
   + [全局原则](architecture/general-architecture.md)
   + [架构模型](architecture/architecture.md)
   + {hide-from-toc}[内置包](architecture/built-in-packages.md)
+  + {hide-from-toc}[促销活动选项](architecture/campaign-options.md)
   + [Campaign FDA 部署](architecture/fda-deployment.md)
   + 企业 (FFDA) 部署 {#ffda}
     + [什么是 Campaign FFDA？](architecture/enterprise-deployment.md)

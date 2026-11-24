@@ -30,7 +30,7 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '4458'
 ht-degree: 0%
@@ -201,7 +201,7 @@ SMS连接器涉及3个实体：SMPP提供商、Adobe和您。
 
 如果提供程序支持同一登录/密码组合使用多个短代码，则必须询问他们将短代码放在BIND PDU中的什么位置。 请注意，此信息必须放在BIND PDU中，而不是SUBMIT_SM中，因为BIND PDU是唯一允许正确路由MO的位置。
 
-请参阅上面各种PDU [&#128279;](#pdu)部分中的信息，了解BIND PDU中哪些字段可用，通常您会将短代码放在&#x200B;*address_range*&#x200B;中，但这需要提供者的特殊支持。 联系他们，了解他们希望如何独立路由多个短代码。
+请参阅上面各种PDU ](#pdu)部分中的[信息，了解BIND PDU中哪些字段可用，通常您会将短代码放在&#x200B;*address_range*&#x200B;中，但这需要提供者的特殊支持。 联系他们，了解他们希望如何独立路由多个短代码。
 
 Adobe Campaign支持在同一外部帐户上处理多个短代码，因此通常只需一个帐户处理所有流量即可正常使用。
 
@@ -229,7 +229,7 @@ Adobe Campaign支持在同一外部帐户上处理多个短代码，因此通常
 * 检查网络是否已正确配置，以便能够与提供商建立TCP连接。
 * 要求提供商检查他们是否正确允许了Adobe Campaign实例的IP地址（大多数提供商都需要此项）。
 * 检查外部帐户设置。 如果对某些字段的值存在疑问，请咨询提供商。
-* 如果连接成功但不稳定，请检查连接不稳定的[问题](#unstable-connections)。 部分。
+* 如果连接成功但不稳定，请检查下面的[不稳定连接的问题](#unstable-connections)部分。
 * 如果连接问题难以诊断，则网络捕获将为您带来大量信息。 确保网络捕获在问题出现时同时运行，以便能够有效地进行分析。 您还应注意问题出现的确切时间，以便更容易在网络捕获中查找问题。
 
 #### 连接不稳定的问题 {#unstable-connections}

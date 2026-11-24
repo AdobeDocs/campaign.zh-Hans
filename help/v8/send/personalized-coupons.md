@@ -27,7 +27,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 1%
@@ -155,7 +155,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->有关如何管理投放不足的优惠券的说明，请参阅[管理不足的优惠券](#managing-insufficient-coupons)
+>有关如何管理投放不足的优惠券的说明，请参阅[管理不足的优惠券](#managing-insufficient-coupons)。
 
 要确认投放是否成功，请执行以下操作：
 
@@ -170,7 +170,7 @@ ht-degree: 1%
 >
 >默认情况下，优惠券管理模块使用&#x200B;**nms:recipient**&#x200B;表。 [了解详情](../dev/datamodel.md#ootb-profiles)。
 >
->在此页面[&#128279;](../dev/custom-recipient.md)中了解如何使用自定义收件人表。
+>在此页面](../dev/custom-recipient.md)中了解如何使用自定义收件人表[。
 
 ## 管理优惠券不足 {#managing-insufficient-coupons}
 

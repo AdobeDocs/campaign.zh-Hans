@@ -31,9 +31,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '1224'
+source-wordcount: '1223'
 ht-degree: 61%
 ---
 # 探索用户界面 {#ui-client-console}
@@ -173,7 +173,7 @@ The web access interface is similar to the console interface. From a browser, yo
 
   >[!CAUTION]
   >
-  >在安装过程中选择语言，此后不能更改&#x200B;**&#x200B;**。
+  >在安装过程中选择语言，此后不能更改&#x200B;****。
 
 * 有关Campaign Web用户界面支持的语言，[请参阅Campaign Web用户界面文档](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=zh-Hans#language-pref){target="_blank"}。
 

@@ -30,7 +30,7 @@ topic_v2:
     internal-label: Implementation
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 13%
@@ -57,9 +57,9 @@ Campaign v8可与以下Adobe解决方案配合使用。 浏览链接以了解有
 
 您还可以将[!DNL CX Enterprise]解决方案中的&#x200B;**受众**&#x200B;和&#x200B;**资产**&#x200B;与资产共享和受众共享功能相结合。
 
-在[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html?lang=zh-Hans#integrating-with-adobe-experience-cloud){target="_blank"}中了解有关Campaign与[!DNL CX Enterprise]解决方案之间的&#x200B;**受众共享**&#x200B;的更多信息。
+在[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/audience-sharing/sharing-audiences-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud){target="_blank"}中了解有关Campaign与[!DNL CX Enterprise]解决方案之间的&#x200B;**受众共享**&#x200B;的更多信息。
 
-在[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=zh-Hans#integrating-with-adobe-experience-cloud){target="_blank"}中了解有关Campaign与[!DNL CX Enterprise]解决方案之间的&#x200B;**资源共享**&#x200B;的更多信息。
+在[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html#integrating-with-adobe-experience-cloud){target="_blank"}中了解有关Campaign与[!DNL CX Enterprise]解决方案之间的&#x200B;**资源共享**&#x200B;的更多信息。
 
 >[!NOTE]
 >
@@ -73,13 +73,13 @@ Campaign v8可与以下Adobe解决方案配合使用。 浏览链接以了解有
 在跨渠道通信上激活您的CRM数据：了解如何将联系人从CRM系统传递到Adobe Campaign，以及如何将营销活动数据从Adobe Campaign共享回CRM系统。
 CRM连接器支持快速轻松地集成数据：Adobe Campaign提供了一个专用助手，用于从CRM中提供的表中收集和选择数据。 并且可确保双向同步处理，让整个系统中的数据随时保持最新。
 
-在[此页面](crm.md)中了解如何将Campaign与Microsoft Dynamics 365和Salesforce.com集成
+在[此页面](crm.md)中了解如何将Campaign与Microsoft Dynamics 365和Salesforce.com集成。
 
 ## 使用联合数据访问连接第三方{#gs-fda}
 
 使用FDA连接器（联合数据访问）将Campaign连接到一个或多个&#x200B;**外部数据库**，并处理存储在其中的信息而不影响Campaign云数据库数据。
 
-请参阅[此页面](fda.md)以了解详情
+请参阅[此页面](fda.md)以了解详情。
 
 ## 使用社交媒体{#gs-social}
 

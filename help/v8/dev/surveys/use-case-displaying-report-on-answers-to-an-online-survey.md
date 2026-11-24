@@ -30,7 +30,7 @@ topic_v2:
     internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 1%
@@ -45,7 +45,7 @@ ht-degree: 1%
 
 可以使用专门的报告收集和分析Adobe Campaign调查的答案。
 
-在以下示例中，我们希望收集在线调查的回答并将其显示在数据透视表中
+在以下示例中，我们希望收集在线调查的回答并将其显示在数据透视表中。
 
 应用以下步骤：
 
@@ -93,7 +93,7 @@ ht-degree: 1%
 
 ## 步骤2 — 创建多维数据集、其度量及其指示器 {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
-然后，可以创建立方并配置其度量：它们将用于创建将在报告中显示的指示器。 有关创建和配置多维数据集的详细信息，请参阅[关于多维数据集](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/reporting/ac-cubes){target="_blank"}。
+然后，可以创建立方并配置其度量：它们将用于创建将在报告中显示的指示器。 有关创建和配置多维数据集的详细信息，请参阅[关于多维数据集](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/ac-cubes){target="_blank"}。
 
 在本例中，多维数据集基于先前创建的工作流馈送的列表中的数据。
 

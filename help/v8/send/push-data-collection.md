@@ -23,9 +23,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '1422'
+source-wordcount: '1425'
 ht-degree: 2%
 ---
 # 已修订推送通知配置 {#push-notifications-config}
@@ -34,7 +34,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 >[!AVAILABILITY]
 >
-> 从Campaign v8.5开始，新客户可专门访问此功能，并会逐步向一组选定的客户推出。 如果您的环境是在2023年6月之前配置的，则此页面不适用于您，您必须遵循此页面[&#128279;](push-settings.md)中详述的步骤。
+> 从Campaign v8.5开始，新客户可专门访问此功能，并会逐步向一组选定的客户推出。 如果您的环境是在2023年6月之前配置的，则此页面不适用于您，您必须遵循此页面](push-settings.md)中详述的步骤[。
 
 在此更新的实施中，要在Adobe Campaign中发送推送通知，请执行以下步骤：
 
@@ -100,7 +100,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 1. 提供&#x200B;**[!UICONTROL App ID (Android package name)]**。 通常，包名称是`build.gradle`文件中的应用程序ID。
 
-1. 切换&#x200B;**[!UICONTROL Push Credentials]**&#x200B;以添加凭据。
+1. 打开&#x200B;**[!UICONTROL Push Credentials]**&#x200B;以添加凭据。
 
 1. 拖放FCM推送凭据。 有关如何获取推送凭据的详细信息，请参阅[Google文档](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}。
 

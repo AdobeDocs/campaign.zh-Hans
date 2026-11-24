@@ -47,7 +47,7 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1733'
 ht-degree: 1%
@@ -146,7 +146,7 @@ Adobe Campaign附带在Adobe启用您的环境时定义的内置&#x200B;**产品
 
    >[!IMPORTANT]
    >
-   >**[!UICONTROL Administrator]**&#x200B;角色授予对Campaign控制面板的访问权限。 Adobe Admin Console中的任何产品配置文件，其名称中包含“管理员”一词（如“管理员”、“管理员”、“管理员”、“审批管理员”等） 将授予对控制面板的访问权限。 了解有关[管理控制面板访问权限](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans){target="_blank"}的更多信息。
+   >**[!UICONTROL Administrator]**&#x200B;角色授予对Campaign控制面板的访问权限。 Adobe Admin Console中的任何产品配置文件，其名称中包含“管理员”一词（如“管理员”、“管理员”、“管理员”、“审批管理员”等） 将授予对控制面板的访问权限。 了解有关[管理控制面板访问权限](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}的更多信息。
 
 1. **[!UICONTROL Delivery operators]** （投放）
 
@@ -230,7 +230,7 @@ Adobe Campaign提供了一组已命名权限，允许您定义分配给用户和
 已命名权限将权限授予：
 
 * 执行操作
-例如，为具有&#x200B;**准备投放**&#x200B;命名权限的&#x200B;**投放操作员**&#x200B;组的成员激活投放编辑器中的&#x200B;**分析**&#x200B;按钮
+例如，为具有**准备投放**&#x200B;命名权限的&#x200B;**投放操作员**&#x200B;组的成员激活投放编辑器中的&#x200B;**分析**&#x200B;按钮
 
 * 对文件夹的访问权限
 操作员组成员资格可以通过更改文件夹的安全性设置来授予或限制对文件夹的访问权限。 [了解详情](folder-permissions.md#restrict-access-to-a-folder)。
@@ -239,7 +239,7 @@ Adobe Campaign提供了一组已命名权限，允许您定义分配给用户和
 
 Adobe Campaign中的默认命名权限包括：
 
-* **[!UICONTROL ADMINISTRATION]**：具有&#x200B;**[!UICONTROL ADMINISTRATION]**&#x200B;权限的操作员对该实例具有完全访问权限。 管理员用户可以执行/创建/编辑/删除任何对象，如工作流、投放、脚本等。**注意：** Adobe Admin Console中包含“管理员”一词的产品配置文件授予对Campaign控制面板的访问权限。
+* **[!UICONTROL ADMINISTRATION]**：具有&#x200B;**[!UICONTROL ADMINISTRATION]**&#x200B;权限的操作员对实例具有完全访问权限。 管理员用户可以执行/创建/编辑/删除任何对象，如工作流、投放、脚本等。**注意：** Adobe Admin Console中包含“管理员”一词的产品配置文件授予对Campaign控制面板的访问权限。
 
 * **[!UICONTROL APPROVAL ADMINISTRATION]**：您可以在工作流和投放中设置多个批准步骤，以确保当前状态已由分配的操作员或组批准。 具有&#x200B;**[!UICONTROL APPROVAL ADMINISTRATION]**&#x200B;权限的用户可以设置批准步骤，还可以分配应批准这些步骤的操作员或操作员组。 **注意：**&#x200B;包含“管理员”一词的产品配置文件（如“审批管理员”）授予访问Campaign控制面板的权限。
 

@@ -27,7 +27,7 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 8%
@@ -94,7 +94,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->此助理包括导出助理的步骤，详情请参见Adobe Campaign Classic [文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html?lang=zh-Hans){target="_blank"}。
+>此助理包括导出助理的步骤，详情请参见Adobe Campaign Classic [文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html){target="_blank"}。
 
 ## 验证投放{#validating}
 
@@ -133,7 +133,7 @@ ht-degree: 8%
 
 ## 开始投放{#start-delivery}
 
-验证提取文件后，单击&#x200B;**确认投放**&#x200B;确认消息可让您启动投放。
+验证提取文件后，单击&#x200B;**确认投放**。 确认消息允许您启动投放。
 
 确认会启动指定文件中的数据提取。
 

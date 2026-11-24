@@ -47,7 +47,7 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 1%
@@ -263,7 +263,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 1. Select **[!UICONTROL Add to a package definition]**，然后选择要向其中添加实体的包定义。
 
-1. 实体已添加到包定义中，它将随包一起导出（请参阅[此部分](#export-packages-from-a-package-definition)）。
+1. 实体已添加到包定义并将随包一起导出（请参阅[此部分](#export-packages-from-a-package-definition)）。
 
 ### 配置包定义生成 {#configure-package-definitions-generation}
 

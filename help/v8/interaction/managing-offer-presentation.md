@@ -24,7 +24,7 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ## 推荐规则概述 {#presentation-rules-overview}
 
-通过交互，您可以使用表示规则控制优惠建议的流程。 这些特定于交互的规则是类型规则。 它们允许您根据已对收件人作出的建议历史记录排除优惠。 它们将在环境中引用
+通过交互，您可以使用表示规则控制优惠建议的流程。 这些特定于交互的规则是类型规则。 它们允许您根据已对收件人作出的建议历史记录排除优惠。 它们会在环境中引用。
 
 ## 创建和引用优惠呈现规则 {#creating-and-referencing-an-offer-presentation-rule}
 
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您也可以使用非标准表。 如果要使用特定的定向维度，则需要使用目标映射创建表以及专用环境。 有关更多信息，请参阅[创建选件环境](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"}（Campaign v8文档）。
+>您也可以使用非标准表。 如果要使用特定的定向维度，则需要使用目标映射创建表以及专用环境。 有关更多信息，请参阅[创建选件环境](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"}（Campaign v8文档）。
 
 ### 期间 {#period}
 

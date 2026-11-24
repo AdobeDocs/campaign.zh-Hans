@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '764'
 ht-degree: 2%
 ---
 # 其他操作 {#additional-operations}
@@ -283,8 +283,8 @@ ht-degree: 2%
 
 有关更多信息，请参阅Campaign Standard文档：
 
-* [正在配置筛选器定义](https://helpx.adobe.com/cn/campaign/standard/developing/using/configuring-filter-definition.html)。
-* [用例：使用复合标识键](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/adding-or-extending-a-resource/uc-calling-resource-id-key.html?lang=zh-Hans)调用资源。
+* [正在配置筛选器定义](https://helpx.adobe.com/campaign/standard/developing/using/configuring-filter-definition.html)。
+* [用例：使用复合标识键](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/adding-or-extending-a-resource/uc-calling-resource-id-key.html)调用资源。
 
 <br/>
 
@@ -462,4 +462,4 @@ Adobe Campaign REST API可以计算请求中的记录数。 为此，请使用&#
 
 >[!NOTE]
 >
->在Campaign Standard **XtkBigTableThreshold**&#x200B;选项中定义了表大于此值的记录数。 默认值为100,000条记录。
+>在Campaign Standard **XtkBigTableThreshold**&#x200B;选项中定义了表被视为大于此值的记录数。 默认值为100,000条记录。

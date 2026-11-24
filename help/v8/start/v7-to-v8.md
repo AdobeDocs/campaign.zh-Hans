@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Security
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '731'
 ht-degree: 70%
 ---
 # 从 [!DNL Campaign Classic] v7 过渡到 [!DNL Campaign] v8{#gs-matrix}
@@ -86,7 +86,7 @@ Campaign v8依赖于&#x200B;**混合架构**。 请注意，如果从Campaign Cl
 
 Campaign v8 企业版引入了&#x200B;**完全联合数据访问** (FFDA) 概念：所有数据现在都位于云数据库上的远程位置。 凭借这种新架构，Campaign v8 企业版 (FFDA) 部署简化了数据管理：云数据库上不需要索引。 您只需创建表格、复制数据即可开始。 云数据库技术无需特定的维护来保证性能级别。
 
-在[此页面](../../v8/architecture/architecture.md)中了解有关[!DNL Campaign] v8架构的更多信息。 测试
+在[此页面](../../v8/architecture/architecture.md)中了解有关[!DNL Campaign] v8架构的更多信息。
 
 
 ## 使用 Adobe ID 连接到 Campaign{#adobe-id}

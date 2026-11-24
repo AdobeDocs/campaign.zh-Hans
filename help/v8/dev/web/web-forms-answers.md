@@ -21,9 +21,9 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '875'
 ht-degree: 0%
 ---
 # Web窗体答案{#web-forms-answers}
@@ -153,4 +153,4 @@ ht-degree: 0%
 >
 >可能的操作包括： **[!UICONTROL Simple reconciliation]**、**[!UICONTROL Update or insertion]**、**[!UICONTROL Insertion]**、**[!UICONTROL Update]**、**[!UICONTROL Deletion]**。\
 >运算符的默认文件夹是运算符具有写入权限的第一个文件夹。\
->请参阅[此小节](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}。
+>请参阅[此小节](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}。

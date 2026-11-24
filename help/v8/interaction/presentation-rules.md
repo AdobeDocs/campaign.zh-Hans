@@ -24,7 +24,7 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 1%
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 ## 创建推荐规则 {#creating-a-presentation-rule}
 
-在我们的数据库中，有数种针对欧洲、非洲、美国和加拿大的旅行优惠。 我们希望发送赴加拿大旅行的聘用，但如果收件人拒绝此类聘用，我们便不希望再次向其发送
+在我们的数据库中，有数种针对欧洲、非洲、美国和加拿大的旅行优惠。 我们希望发送赴加拿大旅行的聘用，但如果收件人拒绝此类聘用，我们便不希望再次向其发送聘用。
 
 我们将配置规则，以便每个收件人仅提供一次加拿大之行，如果被拒绝，则不再提供加拿大之行。
 
@@ -113,7 +113,7 @@ ht-degree: 1%
 
    ![](assets/offer_typology_example_016.png)
 
-1. 在消息正文中插入优惠并发送投放。 有关更多信息，请参阅[关于出站渠道](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"}（Campaign v8文档）。
+1. 在消息正文中插入优惠并发送投放。 有关更多信息，请参阅[关于出站渠道](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"}（Campaign v8文档）。
 
    收件人已收到他们符合条件的优惠。
 

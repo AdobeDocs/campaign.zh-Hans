@@ -42,7 +42,7 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 2%
@@ -55,7 +55,7 @@ ht-degree: 2%
 
 种子地址具有以下优点：
 
-* 使用收件人用户档案中的数据随机替换字段：例如，您可以在种子地址部分仅输入电子邮件地址，并让Campaign自动填写用户档案的其他字段。 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case-selecting-seed-addresses-on-criteria){target="_blank"}以了解详情。
+* 使用收件人用户档案中的数据随机替换字段：例如，您可以在种子地址部分仅输入电子邮件地址，并让Campaign自动填写用户档案的其他字段。 请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case-selecting-seed-addresses-on-criteria){target="_blank"}以了解详情。
 * 使用具有数据管理功能的工作流时，可在种子地址级别输入投放中已处理的其他数据，以强制使用该值：这可以作为随机值替代的另一做法。
 * 在以下投放统计信息报表中自动排除种子地址： **[!UICONTROL Clicks]**、**[!UICONTROL Opens]**、**[!UICONTROL Unsubscriptions]**。
 
@@ -65,7 +65,7 @@ ht-degree: 2%
 >
 >种子地址不是在收件人表中创建的，而是在单独的表中创建的。 如果使用新数据扩展收件人表，则还必须使用相同数据扩展种子地址表。 否则，将不会考虑种子地址的扩展字段。
 >
->[Campaign Classic v7文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case-selecting-seed-addresses-on-criteria){target="_blank"}中介绍了如何扩展种子地址表的示例。
+>[Campaign Classic v7文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case-selecting-seed-addresses-on-criteria){target="_blank"}中介绍了如何扩展种子地址表的示例。
 
 ## 创建种子地址
 
@@ -120,7 +120,7 @@ ht-degree: 2%
 
 1. 创建一个条件以动态选择要插入的控制地址。 为此，请单击&#x200B;**[!UICONTROL Edit the dynamic condition...]**&#x200B;链接，然后输入种子地址选择参数。 例如，您可以包括特定文件夹中包含的所有种子地址，或属于贵组织特定部门的种子地址。
 
-   [Campaign Classic v7文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case-selecting-seed-addresses-on-criteria){target="_blank"}中介绍了此功能的示例。
+   [Campaign Classic v7文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/using-seed-addresses/use-case-selecting-seed-addresses-on-criteria){target="_blank"}中介绍了此功能的示例。
 
 对于投放，您还可以自定义将地址插入到提取文件中的方式。 默认情况下，会按输出文件的排序顺序插入陷阱，但您可以选择在文件末尾或开头插入陷阱，或者在主目标的收件人中随机插入。
 
@@ -132,7 +132,7 @@ ht-degree: 2%
 
 ## 种子地址和自定义表 {#using-an-external-recipient-table}
 
-如果投放表是外部表，则需要执行其他配置。 必须扩展&#x200B;**[!UICONTROL nms:seedmember]**&#x200B;架构。 向种子地址添加选项卡以定义适当的字段
+如果投放表是外部表，则需要执行其他配置。 必须扩展&#x200B;**[!UICONTROL nms:seedmember]**&#x200B;架构。 向种子地址添加制表符以定义适当的字段。
 
 在这种情况下，要将种子地址添加到投放，请直接在匹配选项卡中输入适当的字段，或导入地址模板。
 

@@ -27,7 +27,7 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1444'
 ht-degree: 2%
@@ -40,7 +40,7 @@ ht-degree: 2%
 
 总体而言，提供了三种类型的量化：
 
-1. 使用手动定义的值范围。 例如，年龄、平均购物车、打开的投放数量等)。 有关详细信息，请参阅[定义每个bin](#defining-each-bin)。
+1. 使用手动定义的值范围。 例如，年龄、平均购物车、打开的投放数量等。有关详细信息，请参阅[定义每个bin](#defining-each-bin)。
 1. 根据[枚举](../config/enumerations.md)的值，动态显示：仅显示枚举中包含的值，所有其他值都将分组到“其他”中。 有关详细信息，请参阅[动态管理回收站](#dynamically-managing-bins)。
 1. 使用值范围，将所有其他字段组合在一起。 例如，18至25岁、26至59岁和其他人。 有关详细信息，请参阅[创建值范围](#creating-value-ranges)。
 
@@ -241,9 +241,9 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
    ![](assets/cube_add_filter.png)
 
-1. 选择过滤器涉及的维度
+1. Select过滤器涉及的维度
 
-1. 选择过滤器的类型及其精度级别。
+1. Select过滤器的类型及其精度级别。
 
    ![](assets/cube_ceate_filter.png)
 

@@ -31,9 +31,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '457'
 ht-degree: 6%
 ---
 # 查看现有配置文件 {#view-profiles}
@@ -56,7 +56,7 @@ ht-degree: 6%
 
 ## 编辑轮廓 {#edit-a-profiles}
 
-选择配置文件以在新选项卡中显示详细信息。
+Select配置文件，以在新选项卡中显示详细信息。
 
 ![](assets/edit-a-profile.png)
 

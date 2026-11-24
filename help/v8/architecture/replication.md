@@ -40,7 +40,7 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 2%
@@ -87,7 +87,7 @@ Campaign v8依靠特定的技术工作流来管理计划的数据复制。 这�
 
 如果需要，您可以手动启动数据同步。 为此，请右键单击&#x200B;**调度程序**&#x200B;活动，然后选择&#x200B;**立即执行待处理任务**。
 
-除了内置&#x200B;**复制引用表**&#x200B;技术工作流之外，您还可以使用以下方法之一在工作流中强制复制数据
+除了内置&#x200B;**复制引用表**&#x200B;技术工作流之外，您还可以使用以下方法之一在工作流中强制复制数据：
 
 +++如何强制数据复制
 

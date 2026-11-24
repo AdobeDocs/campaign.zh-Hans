@@ -26,12 +26,12 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 7%
 ---
-# Select短信投放的受众 {#sms-audience}
+# 选择短信投放的受众 {#sms-audience}
 
 在选择受众之前，[请在此处](../../audiences/gs-audiences.md)了解有关受众的更多信息。
 
@@ -47,7 +47,7 @@ ht-degree: 7%
 
    ![](assets/audience_to.png){zoomable="yes"}
 
-1. 在下拉列表中Select **[!UICONTROL Target mapping]**。 Adobe Campaign默认目标映射为收件人，基于&#x200B;**[!UICONTROL nms:recipient]**&#x200B;架构。
+1. 在下拉列表中选择&#x200B;**[!UICONTROL Target mapping]**。 Adobe Campaign默认目标映射为收件人，基于&#x200B;**[!UICONTROL nms:recipient]**&#x200B;架构。
 
    可以使用其他目标映射，其中一些映射可能与您的特定配置相关。 有关目标映射的详细信息，请参阅[使用目标映射](../../audiences/target-mappings.md)。
 

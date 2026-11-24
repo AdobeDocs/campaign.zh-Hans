@@ -30,7 +30,7 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '4458'
 ht-degree: 0%
@@ -229,7 +229,7 @@ Adobe Campaign支持在同一外部帐户上处理多个短代码，因此通常
 * 检查网络是否已正确配置，以便能够与提供商建立TCP连接。
 * 要求提供商检查他们是否正确允许了Adobe Campaign实例的IP地址（大多数提供商都需要此项）。
 * 检查外部帐户设置。 如果对某些字段的值存在疑问，请咨询提供商。
-* 如果连接成功但不稳定，请检查连接不稳定的[问题](#unstable-connections)。 部分。
+* 如果连接成功但不稳定，请检查下面的[不稳定连接的问题](#unstable-connections)部分。
 * 如果连接问题难以诊断，则网络捕获将为您带来大量信息。 确保网络捕获在问题出现时同时运行，以便能够有效地进行分析。 您还应注意问题出现的确切时间，以便更容易在网络捕获中查找问题。
 
 #### 连接不稳定的问题 {#unstable-connections}

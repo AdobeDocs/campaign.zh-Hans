@@ -28,7 +28,7 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1780'
 ht-degree: 15%
@@ -63,7 +63,7 @@ Adobe Campaign会定期发布产品版本，以提高Campaign基础架构的性�
 
 有关每个新版本的详细信息，请参阅[发行说明](release-notes.md)。 每个发行说明中都介绍了与安全相关的修复。 有关安全通知的详细信息，请参阅[随时了解情况](#security-staying-informed)。
 
-为确保配置稳定，Adobe建议您在所有Campaign服务器上安装&#x200B;**完全相同的版本**。 此外，除[发行说明](release-notes.md)中另有提及外，客户端控制台必须使用&#x200B;**与服务器实例完全相同的版本**。 [在此页面](../start/connect.md#upgrade-ac-console)中了解如何升级客户端控制台。
+为确保配置稳定，Adobe建议您在所有Campaign服务器上安装&#x200B;**完全相同的版本**。 此外，除非[发行说明](release-notes.md)中另有提及，否则客户端控制台必须使用&#x200B;**与服务器实例完全相同的版本**。 [在此页面](../start/connect.md#upgrade-ac-console)中了解如何升级客户端控制台。
 
 ### 修补程序 {#hotflixes}
 

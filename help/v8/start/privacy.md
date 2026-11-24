@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1090'
-ht-degree: 80%
+ht-degree: 78%
 ---
 # 在 Campaign 中管理隐私请求 {#privacy}
 
@@ -144,7 +144,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 执行删除或访问隐私请求时，Adobe Campaign 会根据所有具有指向收件人表（自有类型）链接的表中的 **[!UICONTROL Reconciliation value]** 搜索所有数据主体数据。
 
-执行隐私请求时要考虑的内置表列表包括：
+执行隐私请求时考虑的内置表列表包括：
 
 * 收件人 (recipient)
 * 收件人投放日志 (broadLogRcp)

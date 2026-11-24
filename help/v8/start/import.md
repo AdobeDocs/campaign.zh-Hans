@@ -29,7 +29,7 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '3848'
 ht-degree: 34%
@@ -453,7 +453,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 ![](assets/s_ncs_user_export_wizard08.png)
 
-然后，您可以监视导入作业的执行。
+然后，您可以监视导出作业的执行。
 
 
 ## 通过 Web 应用程序收集轮廓

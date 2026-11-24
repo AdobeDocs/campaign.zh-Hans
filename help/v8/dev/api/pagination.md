@@ -18,9 +18,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '162'
 ht-degree: 1%
 ---
 # 分页
@@ -82,4 +82,4 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->在Campaign Standard **XtkBigTableThreshold**&#x200B;选项中定义了表大于此值的记录数。 默认值为100,000条记录。
+>在Campaign Standard **XtkBigTableThreshold**&#x200B;选项中定义了表被视为大于此值的记录数。 默认值为100,000条记录。

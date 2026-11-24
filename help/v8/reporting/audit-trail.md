@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '624'
 ht-degree: 2%
 ---
 # 审核记录{#audit-trail}
@@ -58,8 +58,8 @@ Adobe Campaign中的&#x200B;**[!UICONTROL Audit trail]**&#x200B;功能提供了�
   * 暂停
   * 停止
   * 重新启动
-  * 清除等于操作清除历史记录
-  * 模拟在模拟模式下等于操作“开始”的项
+  * 清除，等于清除操作历史记录
+  * 模拟哪些项等于在模拟模式下启动操作
   * 唤醒等于操作立即执行待处理任务
   * 无条件停止
 

@@ -19,7 +19,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '1244'
 ht-degree: 9%
@@ -103,7 +103,7 @@ ht-degree: 9%
 
 ### 监测批次 {#monitor-waves}
 
-要监控您的发送，请浏览到投放日志。 查看[此页面](send.md)
+要监控您的发送，请浏览到投放日志。 请参阅[此页](send.md)。
 
 您可以看到已在已处理批次中发送的投放（**[!UICONTROL Sent]**&#x200B;状态）以及将在剩余批次中发送的投放（**[!UICONTROL Pending]**&#x200B;状态）。
 

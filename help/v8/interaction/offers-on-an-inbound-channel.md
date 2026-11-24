@@ -24,7 +24,7 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 709e38026d74ed707d10fc8109356289dc9f4ac9
 workflow-type: tm+mt
 source-wordcount: '2144'
 ht-degree: 1%
@@ -318,7 +318,7 @@ Neobank公司希望为两个不同的目标创建营销选件。 它希望为其
 在此示例中，联系人识别是根据Adobe Campaign数据库中的电子邮件地址进行的。 要将收件人电子邮件添加到空间，请应用以下流程：
 
 1. 在已识别的环境中，转到选件空间文件夹。
-1. Select **最佳选件**&#x200B;选件空间，然后单击&#x200B;**[!UICONTROL Advanced parameters]**。
+1. 选择&#x200B;**最佳选件**&#x200B;选件空间，然后单击&#x200B;**[!UICONTROL Advanced parameters]**。
 
    ![](assets/offer_inbound_fallback_example_044.png)
 
@@ -415,7 +415,7 @@ Neobank公司的网站有三个优惠空间：两个用于&#x200B;**最佳优惠
 
    ![](assets/offer_inbound_fallback_example_049.png)
 
-   URL包含&#x200B;**EnvNeobankRecip**，已识别环境的内部名称。
+   URL包含&#x200B;**EnvNeobankIdnRecip**，已识别环境的内部名称。
 
 打开网页时，脚本允许您调用交互引擎，以在网页的相关空间中显示选件的内容。 在对Adobe Campaign服务器的单个调用中，引擎会确定环境、选件空间和要选择的类别。
 

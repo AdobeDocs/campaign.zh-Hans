@@ -22,7 +22,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 1%
@@ -69,7 +69,7 @@ ht-degree: 1%
 
 * 说明示例的自动主键(PKey)值不适用于其他特定部署。 它们由Adobe Campaign API生成。
 
-* 绝不能将Adobe Campaign生成的自动主键值存储到外部数据库或网站中。 您必须在数据库定义中生成特定的键字段，并在开发过程中使用它。
+* 绝不能将Adobe Campaign生成的自动主键值存储到外部数据库或网站中。 您必须在数据库定义中生成特定的关键字段，并在开发过程中使用它们。
 
 ## 自定义密匙 {#custom-keys}
 

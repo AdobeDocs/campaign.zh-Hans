@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Measurement
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1833'
 ht-degree: 5%
 ---
 # 配置推送通知渠道 {#push-notification-configuration}
@@ -77,7 +77,7 @@ ht-degree: 5%
 
 1. 访问&#x200B;**[!DNL Admin Console]**。
 1. 从&#x200B;**[!UICONTROL Products]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL Adobe Experience Platform Data Collection]**&#x200B;卡片。
-1. 选择现有&#x200B;**[!UICONTROL Product Profile]**&#x200B;或使用&#x200B;**[!UICONTROL New profile]**&#x200B;按钮创建新按钮。 在[Admin Console文档](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html?lang=zh-Hans#ui){target="_blank"}中了解如何创建新的&#x200B;**[!UICONTROL New profile]**。
+1. Select现有&#x200B;**[!UICONTROL Product Profile]**&#x200B;或使用&#x200B;**[!UICONTROL New profile]**&#x200B;按钮创建新一个。 在[Admin Console文档](https://experienceleague.adobe.com/docs/experience-platform/access-control/ui/create-profile.html?lang=zh-Hans#ui){target="_blank"}中了解如何创建新的&#x200B;**[!UICONTROL New profile]**。
 1. 在 **[!UICONTROL Permissions]** 选项卡中，选择 **[!UICONTROL Property Rights]**。
 1. 单击 **[!UICONTROL Add all]**。 这会将以下权限添加到您的产品配置文件：
    * **[!UICONTROL Approve]**
@@ -273,8 +273,8 @@ To get the SDKs needed for push notification to work you will need the following
    > **[!UICONTROL Integration key]**&#x200B;可使用字符串值完全自定义，但需要与SDK中指定的值完全相同。
    >
 
-1. 从&#x200B;**[!UICONTROL Application icon]**&#x200B;字段中选择图标以个性化服务中的移动应用程序。
-1. 在&#x200B;**[!UICONTROL API version]**&#x200B;下拉列表中选择&#x200B;**HTTP v1**。
+1. 使用&#x200B;**[!UICONTROL Application icon]**&#x200B;字段中的Select图标个性化服务中的移动应用程序。
+1. **[!UICONTROL API version]**&#x200B;下拉列表中的Select **HTTP v1**。
 1. 单击&#x200B;**[!UICONTROL Load project json file to extract project details...]**&#x200B;链接以加载您的JSON密钥文件。 有关如何提取JSON文件的更多信息，请参阅[Google Firebase文档](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}。
 
    您还可以手动输入以下详细信息：

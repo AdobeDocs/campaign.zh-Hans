@@ -24,7 +24,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 3%
@@ -49,7 +49,7 @@ HTML渲染通过渲染函数创建。 渲染函数中定义的字段序列必须
 
    ![](assets/offer_space_create_002.png)
 
-1. 选中&#x200B;**[!UICONTROL Enable unitary mode]**&#x200B;选项
+1. 勾选 **[!UICONTROL Enable unitary mode]** 选项。
 
 1. 转到&#x200B;**[!UICONTROL Content field]**&#x200B;窗口并单击&#x200B;**[!UICONTROL Add]**。
 

@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1365'
 ht-degree: 4%
 ---
 # 隔离 {#quarantine-management}
@@ -48,7 +48,7 @@ Adobe Campaign可管理在线渠道（电子邮件、短信、推送通知）的
 
 隔离收件人的地址或电话号码后，在投放分析期间会将收件人从目标中排除：您将无法向这些联系人发送营销消息，包括自动工作流电子邮件。 如果隔离的地址也存在于列表中，则在将其发送到这些列表时将排除这些地址。 例如，当邮箱已满、地址不存在或电子邮件服务器不可用时，可以隔离电子邮件地址。
 
-<!--For more on best practices to secure and optimize your deliveries, refer to [this page](delivery-best-practices.md).-->
+<!--For more on best practices to secure and optimize your deliveries, refer to [this page](../start/delivery-best-practices.md).-->
 
 ## 隔离与阻止列表
 
@@ -58,7 +58,7 @@ Adobe Campaign可管理在线渠道（电子邮件、短信、推送通知）的
 >
 >当收件人将您的邮件报告为垃圾邮件或使用“STOP”等关键字回复短信时，其地址或电话号码将被隔离为&#x200B;**[!UICONTROL Denylisted]**。 其用户档案会相应地更新。
 
-另一方面，对于给定渠道，**用户档案**&#x200B;在退订（选择退出）后可以位于&#x200B;**阻止列表**&#x200B;上：这表示它们不再为任何投放所定向。 因此，如果电子邮件渠道阻止列表上的用户档案有两个电子邮件地址，则这两个地址都将排除在投放之外。 您可以在配置文件的&#x200B;**[!UICONTROL General]**&#x200B;选项卡的&#x200B;**[!UICONTROL No longer contact]**&#x200B;部分中检查配置文件是否正在阻止列表一个或多个渠道。 [了解详情](../audiences/view-profiles.md)
+另一方面，**用户档案**&#x200B;可以位于&#x200B;**订阅**&#x200B;中，例如在取消订阅（选择退出）后，对于给定渠道：这意味着它们不再为任何投放所定向。 因此，如果电子邮件渠道阻止列表上的用户档案有两个电子邮件地址，则这两个地址都将排除在投放之外。 您可以在配置文件的&#x200B;**[!UICONTROL General]**&#x200B;选项卡的&#x200B;**[!UICONTROL No longer contact]**&#x200B;部分中检查配置文件是否正在阻止列表一个或多个渠道。 [了解详情](../audiences/view-profiles.md)
 
 >[!NOTE]
 >

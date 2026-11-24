@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e633414f053265108e33aa63d7b7504d307e05c3
 workflow-type: tm+mt
-source-wordcount: '3106'
+source-wordcount: '3132'
 ht-degree: 4%
 ---
 # 内置报告量度计算 {#metrics-calculation}
@@ -933,6 +933,8 @@ ht-degree: 4%
 通过&#x200B;**投放(nms:delivery) > Indicators**&#x200B;节点访问的&#x200B;**已发送**&#x200B;指示器(@sent)对应于发送到服务提供商的SMS总数。 此指示器仅用于SMS投放，不得用于其他类型的投放（不要与&#x200B;**@success**&#x200B;和&#x200B;**@processed**&#x200B;指示器混淆）。
 
 ## 指示器同步 {#indicator-synchronization}
+
+**Processed**&#x200B;指示器可能会暂时超过更新指示器时要发送的消息数，例如对于重试或链接投放的投放。
 
 如果某些指标出现去同步或不一致情况，请在Adobe Campaign资源管理器中选择相关投放，右键单击并选择&#x200B;**[!UICONTROL Action>Recompute delivery and tracking indicators]**。 单击&#x200B;**[!UICONTROL Next]**，然后单击&#x200B;**[!UICONTROL Finish]**。
 

@@ -23,9 +23,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 36111995a9a550d5089107bbc1f734c204db8aff
+source-git-commit: 92bab89570eca3eb13d6010db0deec74e7860c91
 workflow-type: tm+mt
-source-wordcount: '2828'
+source-wordcount: '2849'
 ht-degree: 3%
 ---
 # Campaign选项 {#campaign-options}
@@ -55,12 +55,12 @@ ht-degree: 3%
 您可以从JavaScript代码、个性化和查询中读取和写入选项值。
 
 * **JavaScript代码**，如JavaScript代码工作流活动： `getOption('OptionName')`返回选项的值，`setOption('OptionName', value, 'description')`设置它。 例如，`getOption('IMS_ORG_ID')`。 在[getOption](../../campaign-api/f-getoption.md)和[setOption](../../campaign-api/f-setoption.md)中了解详情。
-* **投放个性化**： `<%@ include option='OptionName' %>`插入选项的值。 例如，`<%@ include option='NmsServer_URL' %>`将服务器URL包含在LINE消息中指向Web应用的链接中。 使用Adobe Campaign[&#128279;](../send/line/line.md)在发送直销邮件中了解更多信息。
+* **投放个性化**： `<%@ include option='OptionName' %>`插入选项的值。 例如，`<%@ include option='NmsServer_URL' %>`将服务器URL包含在LINE消息中指向Web应用的链接中。 使用Adobe Campaign](../send/line/line.md)在[发送直销邮件中了解更多信息。
 * **查询编辑器**：在&#x200B;**值**&#x200B;字段中键入`$(options:OPTION_NAME)`以使用选项的值。 在[设计查询](../start/design-queries.md)中了解详情。
 
 ## 可用选项 {#available-options}
 
-下表列出了Campaign v8中按区域分组的可用选项。 当文档的其他页面描述某个选项时，表将链接到该选项。
+下表列出了Campaign v8中按区域分组的可用选项。 当文档的其他页面描述某个选项时，表将链接到该选项。 某些条目是信息性或维护选项。 列出选项并不意味着可以安全更改。
 
 ### 投放 {#delivery-options}
 
@@ -83,7 +83,6 @@ ht-degree: 3%
 | NmsMTA_Alert_Delay | 延迟（以分钟为单位），超过该时间后，投放将被视为延迟。 默认值为30分钟。 |
 | NmsServer_MirrorPageUrl | 镜像页面服务器的URL。 路由定义未指定URL时，这是电子邮件投放的默认值。 默认情况下，它与跟踪服务器URL相同。 |
 | XtkBarcode_SpecialChar | 启用或禁用对Code128条形码的特殊字符的支持。 |
-| XtkSecurity_Restrict_EditXML | 将其添加为值0以禁用对投放的XML代码的编辑（编辑XML源或Ctrl+F4）。 |
 | NMS_ActivateOwnerConfirmation | 将其设置为1，以便当指定特定操作员或组开始投放时，负责投放的操作员可以确认发送。 将其设置为0可取消激活：只有指定的操作员或组或管理员才能确认发送。 |
 | NmsDelivery_senderAddressMask | 电子邮件投放的“发件人”字段中允许的发件人地址列表（以逗号分隔）。 当选项具有值时，该字段会成为下拉列表。 该限制是全局性的：适用于每个品牌和投放模板，并且仅支持静态地址。 [了解详情](https://experienceleague.adobe.com/en/docs/campaign-web/v8/administration/options#restrict-sender-address){target="_blank"} |
 
@@ -123,7 +122,7 @@ ht-degree: 3%
 
 ### 软错误和隔离 {#error-options}
 
-这些选项定义在软错误（即临时投放失败）后将收件人隔离的时间。 在Campaign[&#128279;](../send/quarantines.md#soft-error-management)的[隔离管理和Campaign](../send/delivery-failures.md#retries)的投放失败中了解更多信息。
+这些选项定义在软错误（即临时投放失败）后将收件人隔离的时间。 在Campaign](../send/quarantines.md#soft-error-management)的[隔离管理和Campaign](../send/delivery-failures.md#retries)的[投放失败中了解更多信息。
 
 | 选项 | 说明 |
 |---|---|
@@ -164,6 +163,8 @@ ht-degree: 3%
 
 清理工作流会清除旧记录，以防止数据库增长。 这些选项定义Campaign保留每种类型数据的时间。 当您在界面中更改延迟时，会自动创建清除延迟选项。 如果从选项列表中编辑它，则以秒为单位表示该值。 在[一般架构](general-architecture.md)和[安全准则](../config/security.md#consent)中了解详情。
 
+只有管理员可以修改清除延迟选项。 相应的值取决于您的环境，因此请检查实例上的当前值，并且不要假定通用默认值。
+
 | 选项 | 说明 |
 |---|---|
 | NmsCleanup_BroadLogPurgeDelay | 擦除投放日志(broadlog)后的延迟。 |
@@ -178,7 +179,6 @@ ht-degree: 3%
 | NmsCleanup_RejectsPurgeDelay | 延迟时间，超过此时间将擦除拒绝。 |
 | NmsCleanup_VisitorPurgeDelay | 访客被擦除后的延迟。 |
 | NmsCleanup_WorkflowResultPurgeDelay | 延迟时间，超过此时间将擦除工作流结果。 |
-| XtkCleanup_NoStats | 将其设置为1，以便清理工作流不会更新数据库统计信息。 |
 | WdbcKillSessionPolicy | PostgreSQL上无条件停止工作流的行为。 0（默认）：停止工作流进程而不影响数据库。 1：停止进程并取消查询(pg_cancel_backend)。 2：停止进程并终止查询(pg_terminate_backend)。 |
 | XtkSequence_AutoGeneration | 适用于在设置此选项后创建的自定义架构，具有autopk=&quot;true&quot;且没有pkSequence属性：Campaign会自动生成序列。 |
 
@@ -201,8 +201,8 @@ ht-degree: 3%
 | 选项 | 说明 |
 |---|---|
 | NmsInteraction_UseDaemon | 将其设置为1可启用异步写入建议，设置为0可禁用建议。 |
-| NmsInteraction_MapWorkflowId | 所有生成的同步工作流的列表。 控制实例的维护选项。 |
-| NmsExecutionInstanceId | 执行实例的标识符。 在执行实例上可用。 |
+| NmsInteraction_MapWorkflowId | 所有生成的同步工作流的列表。 控制实例的信息性维护选项：请勿修改它。 |
+| NmsExecutionInstanceId | 执行实例的标识符。 执行实例上可用的信息性选项：请勿修改它。 |
 
 以下选项也是控制实例的维护选项：
 

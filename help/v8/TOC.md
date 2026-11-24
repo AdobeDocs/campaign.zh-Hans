@@ -336,7 +336,7 @@ ht-degree: 86%
       + [控制工作流](dev/api/controlling-a-workflow.md)
       + [触发信号活动](dev/api/triggering-a-signal-activity.md)
 + API文档 {#api-documentation}
-  + [Campaign API文档>](https://experienceleague.adobe.com/en/docs/campaign/campaign-api/home)
+  + [Campaign API文档>](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-api/home)
 + 其他资源 {#resources}
   + [Campaign技术说明>](https://experienceleague.adobe.com/zh-hans/docs/campaign/technotes-ac/technotes-home)
   + [Campaign Web用户界面文档>](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/campaign-web-home)

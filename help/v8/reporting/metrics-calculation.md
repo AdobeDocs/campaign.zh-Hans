@@ -24,10 +24,10 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: e633414f053265108e33aa63d7b7504d307e05c3
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '3132'
-ht-degree: 4%
+ht-degree: 3%
 ---
 # 内置报告量度计算 {#metrics-calculation}
 
@@ -416,7 +416,7 @@ ht-degree: 4%
   <tr> 
    <td> 已查看的页面<br /> </td> 
    <td> @totalPages / @days<br /> </td> 
-   <td> 所有投放的每个操作系统上的投放链接每日平均点击总数。<br /> </td> 
+   <td> 针对所有投放的每个操作系统的投放链接每日平均点击总数。<br /> </td> 
    <td> 总@pages<br /> </td> 
   </tr> 
   <tr> 
@@ -809,7 +809,7 @@ ht-degree: 4%
 
 此报表基于投放(nms:delivery)和&#x200B;**[!UICONTROL Consolidated tracking]** (nms:trackingStats)表。
 
-此报告显示邮件内容（HTML 和/或文本）以及每个链接的点击百分比。 个性化块退订链接和镜像页面链接在总累计点击量中会被考虑在内，但不会显示在报表中。
+此报告显示邮件内容（HTML 和/或文本）以及每个链接的点击百分比。 在总累计点击量中，个性化块、退订链接和镜像页面链接都将被考虑在内，但不会显示在报表中。
 
 ## 跟踪统计数据 {#tracking-statistics-1}
 
@@ -940,7 +940,7 @@ ht-degree: 4%
 
 ## 跟踪打开次数 {#tracking-opens-}
 
-为了让Adobe Campaign检测邮件打开，收件人必须下载电子邮件中的图像。 HTML 和多部分/替代电子邮件包含 0 像素图像，可让您检测已打开的消息。 由于采用文本格式的消息不包含任何图像，因此，无法检测它们是否已打开。 由于与图像显示相关的误差范围，基于消息打开次数计算的值始终是估计值。
+为了让Adobe Campaign检测邮件打开，收件人必须下载电子邮件中的图像。 HTML和多部分/替代电子邮件包括0像素图像，这使您能够检测已打开的消息。 由于采用文本格式的消息不包含任何图像，因此，无法检测它们是否已打开。 由于与图像显示相关的误差范围，基于消息打开次数计算的值始终是估计值。
 
 ## 目标人员/收件人 {#targeted-persons---recipients}
 

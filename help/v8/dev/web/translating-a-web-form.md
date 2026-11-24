@@ -26,7 +26,7 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1583'
 ht-degree: 0%
@@ -85,7 +85,7 @@ Adobe Campaign收集在所有静态元素的&#x200B;**[!UICONTROL Texts]**&#x200
 
 当收集过程检测到已存在翻译时，此翻译将显示在字符串的&#x200B;**[!UICONTROL Text]**&#x200B;列中。 字符串的状态已转换为&#x200B;**[!UICONTROL Translated]**。
 
-对于从未翻译过的字符字符串，**[!UICONTROL Text]**&#x200B;字段为空，状态为&#x200B;**[!UICONTROL To translate]**。
+对于从未翻译过的字符串，**[!UICONTROL Text]**&#x200B;字段为空，状态为&#x200B;**[!UICONTROL To translate]**。
 
 ### 筛选字符串 {#filtering-strings}
 

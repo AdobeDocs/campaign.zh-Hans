@@ -41,7 +41,7 @@ topic_v2:
     internal-label: Implementation
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 2%
@@ -50,7 +50,7 @@ ht-degree: 2%
 
 ## 概述 {#overview}
 
-如果您希望营销用户能够访问数据记录，但不希望他们查看收件人的个人信息(PI)（如名字、姓氏或电子邮件地址），请应用以下准则来保护隐私，并防止常规营销活动操作人员滥用数据。
+如果您希望营销用户能够访问数据记录，但不希望他们查看收件人的个人信息(PI)（如名字、姓氏或电子邮件地址），请应用以下准则来保护隐私，并防止数据被常规营销活动运营者滥用。
 
 ## 实施 {#implementation}
 

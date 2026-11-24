@@ -28,7 +28,7 @@ topic_v2:
     internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 8%
@@ -105,7 +105,7 @@ ht-degree: 8%
 
      在[本节](mirror-page.md#link-to-mirror-page)中了解有关管理镜像页面的更多信息。
 
-1. 您可以为电子邮件定义其他参数，如将邮件副本发送到BBC地址、更改邮件格式、设置特定编码等。在[本节](email-parameters.md)中了解详情。
+1. 您可以为电子邮件定义其他参数，如将邮件副本发送到密件抄送地址、更改邮件格式、设置特定编码等。在[本节](email-parameters.md)中了解详情。
 
 1. 内容准备就绪后，单击&#x200B;**保存**：该内容现在将显示在&#x200B;**[!UICONTROL Campaigns > Deliveries]**&#x200B;选项卡的投放列表中。
 

@@ -31,9 +31,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1943'
+source-wordcount: '1944'
 ht-degree: 1%
 ---
 # 使用过滤器{#create-filters}
@@ -256,7 +256,7 @@ Adobe Campaign中提供了以下类型的过滤器：
 
 应用以下步骤：
 
-1. 选择您希望默认使用的筛选器。
+1. Select您希望默认使用的过滤器。
 1. 单击&#x200B;**[!UICONTROL Parameters]**&#x200B;选项卡并选择&#x200B;**[!UICONTROL Default filter for the associated document type]**。
 
    ![](assets/change-default-filter.png)
@@ -287,20 +287,20 @@ Adobe Campaign中提供了以下类型的过滤器：
 
    ![](assets/quick-filter-above-list.png)
 
-1. 选择过滤器选项。
+1. Select过滤器选项。
 1. 如果需要，请使用过滤器右侧的灰色图标将其删除。
 1. 您可以组合过滤器以优化您的过滤器。
 
    ![](assets/add-filter-above-the-list.png)
 
 
-如果您需要过滤的字段在表单中不可用，但在列中，并且过滤该列。 要执行此操作，
+如果您需要过滤的字段在表单中不可用但在列中，则过滤该列。 要执行此操作，
 
 1. 单击&#x200B;**[!UICONTROL Configure list]**&#x200B;图标。
 
    ![](assets/configure-list.png)
 
-1. 选择要显示的列，例如收件人的年龄，然后单击&#x200B;**确定**。
+1. Select要显示的列，例如收件人的年龄，然后单击&#x200B;**确定**。
 
    ![](assets/add-age-column.png)
 
@@ -409,7 +409,7 @@ Adobe Campaign中提供了以下类型的过滤器：
 
 * 在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"}中了解如何定位简单的收件人属性。
 * 在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/query-many-to-many-relationship.html?lang=zh-Hans){target="_blank"}中了解如何筛选过去7天内未联系的收件人。
-* 了解如何在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=zh-Hans){target="_blank"}中按Active帐户筛选操作员列表。
+* 了解如何在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=zh-Hans){target="_blank"}中恢复可按活动帐户筛选的运算符列表。
 * 在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email.html?lang=zh-Hans){target="_blank"}中了解如何构建生日电子邮件受众。
 
 
@@ -419,7 +419,7 @@ Adobe Campaign中提供了以下类型的过滤器：
 
 * 要默认显示基于此文档类型的所有列表的筛选器，请选择&#x200B;**[!UICONTROL Default filter for the associated document type]**&#x200B;选项。
 
-  例如，**[!UICONTROL By name or login]**&#x200B;筛选器应用于运算符此选项处于选中状态，因此筛选器始终显示在所有运算符列表中。
+  例如，**[!UICONTROL By name or login]**&#x200B;筛选器应用于运算符。 选择此选项后，筛选器将始终显示在所有运算符列表中。
 
 * 要使某个过滤器对所有营销活动操作员都可用，请选择&#x200B;**[!UICONTROL Filter shared with other operators]**&#x200B;选项。
 

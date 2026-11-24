@@ -24,7 +24,7 @@ level_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 1%
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 ## 关于电子邮件密送 {#gs-bcc}
 
-您可以配置Adobe Campaign以保留从您的平台发送的电子邮件副本。 此选项允许您使用专用的密件抄送（密件抄送）电子邮件地址发送邮件，可以从此处使用外部系统处理和存档邮件。
+您可以配置Adobe Campaign以保留从您的平台发送的电子邮件副本。 此选项允许您将邮件发送到专用的密件抄送（密件抄送）电子邮件地址，可从此处使用外部系统处理和存档邮件。
 
 >[!CAUTION]
 >
@@ -78,6 +78,6 @@ Adobe Campaign本身不会管理存档文件。 然后，对应于所发送电�
 
 * 电子邮件密件抄送<!--with Enhanced MTA-->在发送给收件人之前会发送给密件抄送电子邮件地址，这可能导致密件抄送邮件被发送，即使原始投放可能已退回。 有关退回的详细信息，请参阅[了解投放失败](delivery-failures.md)。
 
-* 发送到密件抄送地址的电子邮件不应打开和点进，因为发送分析的&#x200B;**[!UICONTROL Total opens]**&#x200B;和&#x200B;**[!UICONTROL Clicks]**&#x200B;中考虑了这些活动，这可能会导致计算错误。
+* 发送到密件抄送地址的电子邮件不应被打开和点进，因为发送分析的&#x200B;**[!UICONTROL Total opens]**&#x200B;和&#x200B;**[!UICONTROL Clicks]**&#x200B;中考虑了这些活动，可能会导致计算错误。
 
 <!--Only successfully sent emails are taken in account, bounces are not.-->

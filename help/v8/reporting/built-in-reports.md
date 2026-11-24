@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
     internal-label: Measurement
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1111'
 ht-degree: 3%
 ---
 # Adobe Campaign内置报告 {#ootb-reports}
@@ -292,7 +292,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> 预算的累积演变(budgetCumulativeEvolution)<br /> </td> 
-   <td> 按承诺<br />分段级别细分的累计预算成本的演变。 </td> 
+   <td> 按承付款额细分的累计预算成本的演变。 </td> 
    <td> nms：budget<br /> </td> 
   </tr> 
   <tr> 

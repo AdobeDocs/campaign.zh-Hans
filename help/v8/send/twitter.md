@@ -24,9 +24,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '784'
 ht-degree: 3%
 ---
 # 使用Adobe Campaign在X (Twitter)上发布消息 {#post-tw-messages}
@@ -81,7 +81,7 @@ Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X（
 
    >[!CAUTION]
    >
-   >在X上发布时，限制适用：
+   >在X上发布时，以下限制适用：
    >
    >* 消息不能超过140个字符。
    >* 不支持HTML格式。
@@ -114,7 +114,7 @@ Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X（
 
 要向关注者发送私信，请执行以下步骤：
 
-1. 根据&#x200B;**[!UICONTROL Tweet (Direct Message)]**&#x200B;内置投放模板创建X投放。
+1. 基于&#x200B;**[!UICONTROL Tweet (Direct Message)]**&#x200B;内置投放模板创建X投放。
 
 1. 选择主目标
 
@@ -160,7 +160,7 @@ Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X（
 1. 发送私信
 
    1. 内容获得批准后，单击&#x200B;**[!UICONTROL Send]**&#x200B;按钮。
-   1. 选择&#x200B;**[!UICONTROL Deliver as soon as possible]**&#x200B;并单击&#x200B;**[!UICONTROL Analyze]**&#x200B;按钮。
+   1. Select **[!UICONTROL Deliver as soon as possible]**&#x200B;并单击&#x200B;**[!UICONTROL Analyze]**&#x200B;按钮。
    1. 分析完成后，检查结果。
    1. 单击&#x200B;**[!UICONTROL Confirm delivery]**，然后单击&#x200B;**[!UICONTROL Yes]**。
 

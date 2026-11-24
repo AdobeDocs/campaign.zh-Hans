@@ -26,7 +26,7 @@ subfeature_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 1%
@@ -85,7 +85,7 @@ Adobe Campaign集成了一个图形模块，用于定义和发布Web窗体，以
 
 ## 关于Web窗体设计 {#about-web-forms-designing}
 
-表单的页面通过特定编辑器创建，该编辑器允许您定义和配置输入区域（文本）、选择字段（列表、复选框等） 和静态元素（图像、HTLM内容等）之间的关联。 可以将它们分组到容器中，并根据您的需要更改其布局（有关更多信息，请参阅[创建容器](defining-web-forms-layout.md#creating-containers)）。
+表单的页面通过特定编辑器创建，该编辑器允许您定义和配置输入区域（文本）、选择字段（列表、复选框等） 和静态元素（图像、HTML内容等）。 可以将它们分组到容器中，并根据您的需要更改其布局（有关更多信息，请参阅[创建容器](defining-web-forms-layout.md#creating-containers)）。
 
 以下部分详细介绍如何定义表单屏幕的内容和布局：
 

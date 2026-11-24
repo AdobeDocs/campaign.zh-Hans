@@ -33,7 +33,7 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 3%
@@ -64,7 +64,7 @@ ht-degree: 3%
 
 利用该功能，可检索投放信息并在必要时对其进行编辑。 请注意，一旦发送投放，选项卡内容可能无法再更改。
 
-您可以使用功能板中的几个选项卡监控以下信息：
+以下是您可以使用功能板中提供的多个选项卡监控的信息：
 
 * [投放摘要](#delivery-summary)
 * [投放报告](#delivery-reports)

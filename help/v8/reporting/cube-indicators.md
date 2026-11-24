@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '749'
 ht-degree: 3%
 ---
 # 创建多维数据集{#create-a-cube}
@@ -77,7 +77,7 @@ ht-degree: 3%
 
 ## 构建多维数据集{#cube-create}
 
-在开始构建多维数据集报表之前，请确定相关的维和度量，并在多维数据集中创建它们。
+在构建多维数据集报表之前，请确定相关的维度和度量，然后在多维数据集中创建它们。
 
 要创建多维数据集，请应用以下步骤：
 
@@ -96,7 +96,7 @@ ht-degree: 3%
 
    ![](assets/create-a-cube.png)
 
-1. 选择包含您要浏览的元素的架构（也称为“事实架构”）。 在此示例中，选择默认的&#x200B;**收件人**&#x200B;表。
+1. Select包含您要浏览的元素的架构（也称为“事实架构”）。 在此示例中，选择默认的&#x200B;**收件人**&#x200B;表。
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建多维数据集：该多维数据集已添加到多维数据集列表。 您现在可以使用选项卡对其进行配置。
 
 1. 单击&#x200B;**[!UICONTROL Filter the source data...]**&#x200B;链接可将此多维数据集的计算应用于数据库中的数据。

@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1203'
 ht-degree: 1%
 ---
 # 创建并发布事务性消息传递模板{#template-transactional-messages}
@@ -214,7 +214,7 @@ Publication lets you automatically create two message templates on the execution
 >无论何时对模板进行更改，请确保再次发布模板，以便这些更改在事务型消息投放期间生效。
 
 1. 转到树的&#x200B;**[!UICONTROL Message Center > Transactional message templates]**&#x200B;文件夹。
-1. 选择要发布的模板<!--on your execution instances-->。
+1. Select要发布的模板<!--on your execution instances-->。
 1. 单击 **[!UICONTROL Publish]**。
 
    ![](assets/messagecenter_publish_template.png)
@@ -246,7 +246,7 @@ Publication lets you automatically create two message templates on the execution
 要取消发布事务型消息模板，请执行以下步骤。
 
 1. 浏览到&#x200B;**[!UICONTROL Message Center > Transactional message templates]**&#x200B;文件夹。
-1. 选择要取消发布的模板。
+1. Select要取消发布的模板。
 1. 单击 **[!UICONTROL Unpublish]**。
 1. 单击 **[!UICONTROL Start]**。
 

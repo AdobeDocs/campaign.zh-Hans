@@ -35,10 +35,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1565'
-ht-degree: 93%
+ht-degree: 90%
 ---
 # 创建您的第一个投放 {#create-a-msg}
 
@@ -129,7 +129,7 @@ ht-degree: 93%
 
      ![](assets/target-recipient-delivery.png)
 
-   * **[!UICONTROL Delivery recipients belonging to a folder]**：使用此选项可从特定文件夹中的收件人投放生成目标。
+   * **[!UICONTROL Delivery recipients belonging to a folder]**：使用此选项从特定文件夹中包含的投放的收件人生成目标。
 
      ![](assets/target-delivery-folder.png)
 
@@ -146,7 +146,7 @@ ht-degree: 93%
      ![](assets/target-service.png)
 
    * **[!UICONTROL User filters]**：通过此选项可访问预配置的筛选条件，以将其用作数据库中筛选用户档案的标准。 要查看预配置的筛选条件，请参阅[此部分](../audiences/create-filters.md#default-filters)。
-   * 通过 **[!UICONTROL Exclude recipients from this segment]** 选项，可将不符合定义目标条件的收件人选择为目标。 要使用此选项，请选择相应的框，然后按照之前所述应用目标选择，以排除生成的用户档案。
+   * **[!UICONTROL Exclude recipients from this segment]**&#x200B;选项允许您定位不符合所定义的目标条件的收件人。 要使用此选项，请选择相应的框，然后按照之前所述应用目标选择，以排除生成的用户档案。
 
 1. 在 **[!UICONTROL Label]** 字段中输入此目标的名称。 默认情况下，标签是第一个目标选择标准的标签。 在组合筛选条件时，建议使用显式名称。
 1. 单击 **[!UICONTROL Finish]** 以验证目标选择选项。

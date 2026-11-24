@@ -24,9 +24,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '441'
 ht-degree: 4%
 ---
 # 特定的FFDA Campaign API{#gs-new-api}
@@ -88,7 +88,7 @@ logInfo(strUuid);
    </soapenv:Envelope>
    ```
 
-1. UUID会发送回SOAP响应：
+1. UUID会在SOAP响应中发送回：
 
    ```
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -164,7 +164,7 @@ logInfo(strUuid);
 
 ## 更新或删除数据{#data-update-api}
 
-已针对数据更新/删除优化&#x200B;**xtk.session.IngestExt** API。 仅用于插入，首选&#x200B;**xtk.session.ingest**。 无论记录键是否不在临时表中，插入都起作用。
+**xtk.session.IngestExt** API已针对数据更新/删除进行了优化。 仅用于插入，首选&#x200B;**xtk.session.ingest**。 当记录键不在临时表中时，插入起作用。
 
 ### 插入/更新
 
@@ -224,7 +224,7 @@ xtk.session.IngestExt(xmlStagingRecipient);
 
 [此页面](../start/subscriptions.md)中介绍了Campaign中的订阅管理。
 
-订阅和退订数据的插入依赖于Campaign本地数据库中的[暂存机制](staging.md)。 订阅服务器信息临时存储在本地数据库的临时表中，同步工作流将此数据从本地数据库发送到云数据库。 因此，订阅和退订进程是&#x200B;**异步**。 选择加入和选择退出请求每小时通过特定的技术工作流处理。 [了解详情](replication.md#workflows)
+订阅和退订数据的插入依赖于Campaign本地数据库中的[暂存机制](staging.md)。 订阅者信息临时存储在本地数据库的临时表中，同步工作流将此数据从本地数据库发送到云数据库。 因此，订阅和退订进程是&#x200B;**异步**。 选择加入和选择退出请求每小时通过特定的技术工作流处理。 [了解详情](replication.md#workflows)
 
 
 **相关主题**

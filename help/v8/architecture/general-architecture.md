@@ -50,9 +50,9 @@ topic_v2:
     internal-label: Personalization
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1165'
 ht-degree: 7%
 ---
 # 一般架构{#general-architecture}
@@ -119,7 +119,7 @@ Adobe Campaign是一个使用不同应用程序的平台，用于创建开放且
 
 * **正在监视模块** (nlserver watchdog) — 此技术进程充当生成其他模块的主进程。 它还监控这些服务器，并在发生事件时自动重新启动它们，从而保持最长的系统正常运行时间。
 
-* **统计服务器** (nlserver stat) — 此进程维护有关连接数、每个邮件服务器发送的邮件数、邮件所发往的邮件数及其限制（最大同时连接数、每小时邮件数/和/或连接数）的统计信息。 它还允许您联合多个实例或计算机（如果它们共享相同的公共IP地址）。
+* **统计服务器** (nlserver stat) — 此进程维护有关连接数、每个邮件服务器发送的邮件数（邮件被发送到这些邮件服务器）及其限制（最大同时连接数、每小时和/或每个连接中的邮件数）的统计信息。 它还允许您联合多个实例或计算机（如果它们共享相同的公共IP地址）。
 
 
 ## 数据库容器 {#db-containers}

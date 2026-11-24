@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1590'
-ht-degree: 54%
+source-wordcount: '1592'
+ht-degree: 50%
 ---
 # 使用Campaign和Adobe Analytics {#ac-aa}
 
@@ -199,7 +199,7 @@ ht-degree: 54%
 
    >[!NOTE]
    >
-   >Campaign ID和Broadload ID字段是通过JavaScript在登陆页面上或通过处理规则收集的。 [了解有关处理规则的更多信息](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
+   >营销活动ID和Broadlog ID字段是通过JavaScript在登陆页面上或通过处理规则收集的。 [了解有关处理规则的更多信息](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
 
    ![](assets/analytics_connnector_11.png)
 
@@ -240,7 +240,7 @@ ht-degree: 54%
 1. **[!UICONTROL Advanced]** 选项卡可让您配置或修改更多技术设置。
 
    * **[!UICONTROL Lifespan]**：允许您指定延迟（以天为单位），在此之后，技术工作流会在Adobe Campaign中恢复Web事件。 默认值：180 天。
-   * **[!UICONTROL Persistence]**：可让您指定将所有网站事件（例如购买）归因到再营销活动的时段，默认值：7 天。
+   * **[!UICONTROL Persistence]**：可让您指定将所有网站事件（例如购买）归因到再营销活动的时段。 默认值：7天。
 
 >[!NOTE]
 >
@@ -273,7 +273,7 @@ Adobe Campaign和Adobe Analytics之间的数据交换由作为后台任务运行
 
 >[!NOTE]
 >
->发送的数据是基于上次快照的 delta 值，可能会导致量度数据中出现负值。
+>发送的数据是基于上次快照的delta，可能会导致量度数据中出现负值。
 
 发送的属性如下所示：
 
@@ -308,7 +308,7 @@ Adobe Campaign和Adobe Analytics之间的数据交换由作为后台任务运行
 
 在 Adobe Campaign 恢复区段，完成对初始营销活动目标人群的行为分析后，将自动启动再营销活动。 对于购物车放弃或查看产品但未购买的情况，会向相关收件人发送投放内容，以便他们的网站浏览完成购买。
 
-Adobe Campaign 提供个性化投放模板，您可以使用这些模板或建立您自己的数据库以准备营销活动。
+Adobe Campaign提供了个性化的投放模板，您可以使用这些模板或基于这些模板来准备营销活动。
 
 1. 在 **[!UICONTROL Explorer]** 中，转到 Adobe Campaign 树的 **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]** 文件夹。
 1. 复制 **[!UICONTROL Email delivery (re-marketing)]** 模板或 Adobe Campaign 提供的再营销模板示例。

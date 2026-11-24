@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1090'
-ht-degree: 85%
+ht-degree: 80%
 ---
 # 在 Campaign 中管理隐私请求 {#privacy}
 
@@ -45,7 +45,7 @@ ht-degree: 85%
 Adobe 为数据控制者提供相应的工具，用于创建和处理与 Campaign 中的存储数据有关的隐私请求。 但是，作为数据控制者，您有责任确认发出请求的数据主体的身份，并确认返回给请求者的数据与数据主体相关。 请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans#personal-data){target="_blank"}以了解有关个人数据以及管理数据的不同实体的更多信息。
 
 
-要在 Campaign 中管理隐私请求，必须先[定义命名空间](#namespaces)。 然后，才能创建和管理隐私请求。 要执行隐私请求，请使用 **Adobe Privacy Service** 集成。 从Privacy Service推送到所有[!DNL Adobe CX Enterprise]解决方案的隐私请求由Campaign通过专用工作流自动处理。 [了解详情](#create-privacy-request)
+要在Campaign中管理隐私请求，您必须先[定义命名空间](#namespaces)。 然后，才能创建和管理隐私请求。 要执行隐私请求，请使用 **Adobe Privacy Service** 集成。 从Privacy Service推送到所有[!DNL Adobe CX Enterprise]解决方案的隐私请求由Campaign通过专用工作流自动处理。 [了解详情](#create-privacy-request)
 
 请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-management.html?lang=zh-Hans#right-access-forgotten){target="_blank"}以了解有关&#x200B;**访问权**&#x200B;和&#x200B;**被遗忘权**（删除请求）的信息。
 
@@ -75,7 +75,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 1. 在[身份命名空间服务](https://developer.adobe.com/experience-platform-apis/references/identity-service/#tag/Identity-Namespace){target="_blank"}上创建命名空间。
 
-1. 当[列出可用于您组织的身份命名空间](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target="_blank"}时，您将获得命名空间的以下详细信息，例如：
+1. 当[列出可用于您组织的身份命名空间](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target="_blank"}时，您将获得以下命名空间详细信息，例如：
 
    ```
    {
@@ -98,7 +98,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 1. 输入 **[!UICONTROL Label]**。
 
-1. 填写新命名空间的详细信息，以匹配您在 Identitiy Namespace Service 上创建的命名空间：
+1. 填写新命名空间的详细信息，以匹配您在Identity Namespace Service上创建的命名空间：
 
    * **[!UICONTROL AEC Namespace ID]** 必须匹配“id”属性
    * **[!UICONTROL Internal name]** 必须匹配“code”属性

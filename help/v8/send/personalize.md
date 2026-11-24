@@ -24,14 +24,14 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 48%
+source-wordcount: '476'
+ht-degree: 37%
 ---
 # 个性化入门 {#personalize-content}
 
-为了充分利用每一个营销活动，Adobe Campaign为您提供了一种方法，可向您提供与客户级别相关的自定义内容。 根据用户档案数据，利用个性化功能为不同的组和个人创建自定义体验：利用您拥有的关于每个特定收件人的数据和信息，您可以根据他们来调整消息。 这可以是他们的名字、兴趣、居住地、购买的内容等等。
+为了充分利用每一个营销活动，Adobe Campaign为您提供了一种方法，可向您提供与客户级别相关的自定义内容。 根据用户档案数据，个性化功能允许您为不同的组和个人创建自定义体验：您可以利用有关每个特定收件人的数据和信息，根据他们来调整消息。 这可以是他们的名字、兴趣、居住地、购买的内容等等。
 
 Adobe Campaign简化了个性化：您可以使用单个[消息模板](create-templates.md)显示为每个收件人自定义的不同类型的内容。 在事务型消息（如购买确认或购物车放弃电子邮件）中，将每个人的产品列表信息包含在单个电子邮件模板中。
 
@@ -50,11 +50,11 @@ Adobe Campaign简化了个性化：您可以使用单个[消息模板](create-te
 
 * 插入预定义的&#x200B;**内容块**
 
-  Campaign 附带了一组个性化块，其中包含可插入投放中的特定渲染。 例如，您可以添加徽标、问候邮件或指向邮件的镜像页面的链接。 可以从个性化编辑器的专用条目中获得内容块。 [了解详情](personalization-blocks.md)。
+  Campaign 附带了一组个性化块，其中包含可插入投放中的特定渲染。 例如，您可以添加徽标、问候邮件或指向邮件的镜像页面的链接。 内容块可通过个性化编辑器中的专用条目使用。 [了解详情](personalization-blocks.md)。
 
-* 创建&#x200B;**条件内容**
+* 正在创建&#x200B;**条件内容**
 
-  例如，配置条件内容以根据收件人的轮廓添加动态个性化内容。 满足特定条件时可插入文本块和/或图像。 [了解详情](conditions.md)。
+  配置条件内容以根据收件人的配置文件添加动态个性化，例如。 满足特定条件时可插入文本块和/或图像。 [了解详情](conditions.md)。
 
 <!--
 * Add **personalized offers**
@@ -85,7 +85,7 @@ Adobe Campaign简化了个性化：您可以使用单个[消息模板](create-te
 
 ## 教程视频 {#personalization-video}
 
-了解不同类型的动态内容，并了解如何创建个性化块和条件语句并将它们应用到投放中。
+了解不同类型的动态内容，并了解如何创建个性化块和条件语句并将它们应用于投放。
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452878?captions=chi_hans&quality=12)

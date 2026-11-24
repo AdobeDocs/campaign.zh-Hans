@@ -32,7 +32,7 @@ topic_v2:
     internal-label: Reporting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 13%
@@ -49,7 +49,7 @@ Adobe Campaign提供本页中列出的一组报表工具。
 
   Adobe Campaign附带直观的数据探索工具，可用于创建动态报表。
 
-  使用Marketing Analytics功能来分析和测量数据、计算统计数据、简化和优化报告创建和计算。 您可以创建报告并构建目标群体，并将这些群体存储到列表中，以便在Adobe Campaign中用于定位或分段任务。
+  使用营销分析功能来分析和测量数据、计算统计数据、简化和优化报告创建和计算。 您可以创建报告并构建目标群体，并将这些群体存储到列表中，以便在Adobe Campaign中用于定位或分段任务。
 
   ![](assets/create-a-report.png)
 

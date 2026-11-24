@@ -32,7 +32,7 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 1%
@@ -55,7 +55,7 @@ Adobe Campaign与Adobe Experience Platform之间的集成允许您在Adobe Campa
 <td><img src="../assets/do-not-localize/icon-workflow.svg" width="60px"><p><a href="#script">配置登陆页面工作流</a></p></td>
 </table>
 
-## 设置Oauth连接 {#oauth}
+## 设置OAuth连接 {#oauth}
 
 Adobe Cloud Platform API使用OAuth 2.0协议进行身份验证和授权。 要使用API调用将Adobe Experience Platform连接到Adobe Campaign，您需要使用在Adobe Developer Console中创建的OAuth集成生成访问令牌。
 
@@ -71,7 +71,7 @@ Adobe Cloud Platform API使用OAuth 2.0协议进行身份验证和授权。 要�
 
    ![](assets/ac-lp-oauth.png){width="70%"}
 
-现在您的Oauth连接已配置，请创建并配置新的&#x200B;**[!UICONTROL HTTP API]** Source连接以将Adobe Campaign与Adobe Experience Platform链接。
+现在您的OAuth连接已配置，请创建并配置新的&#x200B;**[!UICONTROL HTTP API]** Source连接以将Adobe Campaign与Adobe Experience Platform链接。
 
 ## 创建HTTP API Source连接 {#source}
 
@@ -83,7 +83,7 @@ Adobe Cloud Platform API使用OAuth 2.0协议进行身份验证和授权。 要�
 
 1. 根据需要配置连接。 有关如何配置HTTP API连接的详细信息，请参阅[Adobe Experience Platform源文档](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=zh-Hans){target="_blank"}。
 
-   在&#x200B;**[!UICONTROL Authentication]**&#x200B;步骤中，打开&#x200B;**[!UICONTROL Enable authentication]**&#x200B;选项，以使用通过OAuth集成预生成的访问令牌进行身份验证。
+   在&#x200B;**[!UICONTROL Authentication]**&#x200B;步骤中，打开&#x200B;**[!UICONTROL Enable authentication]**&#x200B;选项以使用之前通过OAuth集成生成的访问令牌进行身份验证。
 
    ![](assets/ac-lp-source-authentication.png){width="70%"}
 
@@ -99,7 +99,7 @@ Adobe Cloud Platform API使用OAuth 2.0协议进行身份验证和授权。 要�
 
 ## 在Adobe Campaign中添加身份验证选项 {#xtk}
 
-配置HTTP API Source连接后，您需要在Adobe Campaign中添加特定选项以启用与Adobe Experience Platform的连接。 可以在“Campaign管理”菜单中或在通过添加特定&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动执行登陆页面工作流时执行此操作。
+配置HTTP API Source连接后，您需要在Adobe Campaign中添加特定选项以启用与Adobe Experience Platform的连接。 可在“Campaign管理”菜单中或在通过添加特定&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动执行登陆页面工作流时执行此操作。
 
 浏览下面的选项卡以发现这两种方法：
 

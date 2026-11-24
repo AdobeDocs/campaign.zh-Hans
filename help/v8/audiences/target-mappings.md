@@ -36,7 +36,7 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 6%
@@ -56,7 +56,7 @@ Adobe Campaign附带以下内置目标映射：
 | 名称 | 使用至 | 架构 |
 |---|---|---|
 | 收件人 | 投放到收件人（内置收件人表） | nms:recipient |
-| 访客 | 向通过反向链接（病毒式营销）收集用户档案的访客投放，例如。 | mns:visitor |
+| 访客 | 向通过反向链接（病毒式营销）收集用户档案的访客投放，例如。 | nms:visitor |
 | 订阅 | 发送给订阅了新闻稿等信息服务的收件人 | nms:subscription |
 | 访客订阅 | 向订阅了信息服务的访客投放 | nms:visitorSub |
 | 运算符 | 交付给Adobe Campaign操作员 | nms:operator |

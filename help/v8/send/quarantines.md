@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1363'
+source-wordcount: '1364'
 ht-degree: 4%
 ---
 # 隔离 {#quarantine-management}
@@ -58,7 +58,7 @@ Adobe Campaign可管理在线渠道（电子邮件、短信、推送通知）的
 >
 >当收件人将您的邮件报告为垃圾邮件或使用“STOP”等关键字回复短信时，其地址或电话号码将被隔离为&#x200B;**[!UICONTROL Denylisted]**。 其用户档案会相应地更新。
 
-另一方面，对于给定渠道，**用户档案**&#x200B;在退订（选择退出）后可以位于&#x200B;**阻止列表**&#x200B;上：这表示它们不再被任何投放所定向。 因此，如果电子邮件渠道阻止列表上的用户档案有两个电子邮件地址，则这两个地址都将排除在投放之外。 您可以在配置文件的&#x200B;**[!UICONTROL General]**&#x200B;选项卡的&#x200B;**[!UICONTROL No longer contact]**&#x200B;部分中检查配置文件是否正在阻止列表一个或多个渠道。 [了解详情](../audiences/view-profiles.md)
+另一方面，对于给定渠道，**用户档案**&#x200B;在退订（选择退出）后可以位于&#x200B;**阻止列表**&#x200B;上：这表示它们不再为任何投放所定向。 因此，如果电子邮件渠道阻止列表上的用户档案有两个电子邮件地址，则这两个地址都将排除在投放之外。 您可以在配置文件的&#x200B;**[!UICONTROL General]**&#x200B;选项卡的&#x200B;**[!UICONTROL No longer contact]**&#x200B;部分中检查配置文件是否正在阻止列表一个或多个渠道。 [了解详情](../audiences/view-profiles.md)
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ Adobe Campaign可管理在线渠道（电子邮件、短信、推送通知）的
 
 Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在错误消息鉴别期间分配。 在此页面[&#128279;](delivery-failures.md)上了解有关投放失败管理的更多信息。
 
-可以捕获两种类型或错误：
+可以捕获两种类型的错误：
 
 * **硬错误**：将立即将电子邮件地址、电话号码或设备添加到隔离。
 * **软错误**：软错误会增加错误计数，并可能隔离电子邮件、电话号码或设备令牌。 Campaign执行[重试](delivery-failures.md#retries)：当错误计数器达到限制阈值时，将隔离地址、电话号码或设备令牌。 [了解详情](delivery-failures.md#retries)。
@@ -96,7 +96,7 @@ Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在�
 
 ### 投放隔离{#delivery-quarantines}
 
-在投放准备阶段期间，投放仪表板的投放日志中会列出隔离地址。
+在投放准备阶段期间，投放仪表板的投放日志中会列出隔离的地址。
 
 对于每次投放，您还可以检查&#x200B;**[!UICONTROL Delivery summary]**&#x200B;报告：其中显示投放目标中隔离的地址数并显示：
 
@@ -113,7 +113,7 @@ Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在�
 
 >[!NOTE]
 >
->隔离的数量会随时间而增加。 例如，如果将电子邮件地址的生命周期视为三年，并且收件人表每年增加50%，则隔离的增加可以按如下方式计算：
+>隔离的数量随时间而增加。 例如，如果将电子邮件地址的生命周期视为三年，并且收件人表每年增加50%，则隔离的增加可以按如下方式计算：
 >
 >第1年年末： (1&#42;0.33)/(1+0.5)=22%。
 >

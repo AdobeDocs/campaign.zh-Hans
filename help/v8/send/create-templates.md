@@ -39,7 +39,7 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 18%
@@ -69,7 +69,7 @@ ht-degree: 18%
 
 >[!NOTE]
 >
->可用的模板取决于您的访问权限、实例配置和上下文。 例如，在创建信息服务时，可以链接确认消息的投放模板：然后只能访问其目标映射为订阅映射的模板。 其他模板在此上下文中不可见。 有关详细信息，请参阅[使用目标映射](../audiences/target-mappings.md)和[管理订阅和取消订阅](../start/subscriptions.md)。
+>可用的模板取决于您的访问权限、实例配置和上下文。 例如，在创建信息服务时，可以链接确认消息的投放模板：然后只能访问其目标映射为订阅映射的模板。 其他模板在此上下文中不可见。 有关详情，请参阅[使用目标映射](../audiences/target-mappings.md)和[管理订阅和退订](../start/subscriptions.md)。
 
 
 ## 创建模板 {#create-a-delivery-template}
@@ -85,7 +85,7 @@ Campaign为每个渠道提供了一组内置模板：电子邮件、推送、短
 要复制投放模板，请执行以下步骤：
 
 1. 浏览Adobe Campaign资源管理器中的&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**。
-1. 选择内置投放模板。 内置模板在列表中加粗。
+1. Select是内置的投放模板。 内置模板在列表中加粗。
 1. 右键单击并选择&#x200B;**[!UICONTROL Duplicate]**。
 
    ![](assets/duplicate-built-in-template.png)
@@ -104,7 +104,7 @@ Campaign为每个渠道提供了一组内置模板：电子邮件、推送、短
 
 要将投放转换为模板，请执行以下步骤：
 
-1. 从可通过Campaign资源管理器的&#x200B;**[!UICONTROL Campaign management]**&#x200B;节点访问的投放列表中选择投放。
+1. Select投放列表中的投放，可通过Campaign资源管理器的&#x200B;**[!UICONTROL Campaign management]**&#x200B;节点访问。
 
 1. 右键单击并选择&#x200B;**[!UICONTROL Actions > Save as template...]**。
 
@@ -146,9 +146,9 @@ Campaign为每个渠道提供了一组内置模板：电子邮件、推送、短
 
 ![](assets/browse-templates.png)
 
-从&#x200B;**[!UICONTROL Folder]**&#x200B;字段中选择所需的目录，或单击&#x200B;**[!UICONTROL Display sub-levels]**&#x200B;图标以显示当前目录子树中目录的内容。
+从&#x200B;**[!UICONTROL Folder]**&#x200B;字段中Select所需的目录，或单击&#x200B;**[!UICONTROL Display sub-levels]**&#x200B;图标以显示当前目录子树中目录的内容。
 
-选择要使用的投放模板，然后单击&#x200B;**[!UICONTROL Ok]**。
+Select要使用的投放模板，然后单击&#x200B;**[!UICONTROL Ok]**。
 
 ### 执行模板 {#execute-a-template}
 
@@ -156,7 +156,7 @@ Campaign为每个渠道提供了一组内置模板：电子邮件、推送、短
 
 要手动执行模板，请执行以下步骤：
 
-1. 选择要执行的模板并右键单击。 选择 **[!UICONTROL Actions>Execute the delivery template...]**。
+1. Select要执行的模板并右键单击。 选择 **[!UICONTROL Actions>Execute the delivery template...]**。
 
    您也可以使用&#x200B;**[!UICONTROL File>Actions>Execute the delivery template...]**。
 

@@ -26,7 +26,7 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 1%
@@ -62,7 +62,7 @@ FDA选项受您使用的第三方数据库系统的限制的约束。
 
   >[!CAUTION]
   >
-  >此选项可显着改进执行个性化步骤时的性能。
+  >此选项可显着提升执行个性化步骤时的性能。
 
 
 ## 在工作流中使用外部数据
@@ -81,7 +81,7 @@ Campaign附带几个工作流活动，您可以使用这些活动与外部数据
 
 >[!CAUTION]
 >
->此类型的配置必须仅用于临时收集数据。 外部帐户配置应首选用于任何其他用途。
+>此类配置必须仅临时用于收集数据。 外部帐户配置应首选用于任何其他用途。
 
 例如，在&#x200B;**[!UICONTROL Query]**&#x200B;活动中，您可以定义与外部数据库的临时连接，如下所示：
 

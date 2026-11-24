@@ -29,9 +29,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '890'
 ht-degree: 5%
 ---
 # 创建产品建议
@@ -80,7 +80,7 @@ ht-degree: 5%
 
 要使引擎能够在目标有资格使用的多个优惠之间做出决定，您需要为该优惠分配一个或多个权重。 如有必要，您还可以将过滤器应用于目标，或限制将应用权重的选件空间。 权重较高的选件优先于权重较低的选件。
 
-您可以为同一选件配置多个权重，例如为了区分超周期、特定目标甚至选件空间。
+您可以为同一选件配置多个权重，例如区分子时段、特定目标甚至选件空间。
 
 例如，选件可以具有18至25岁的触点的重量A和高于该范围的触点的重量B。 如果某个选件在整个夏季都符合条件，则它在7月份的权重可以是A，在8月份的权重可以是B。
 
@@ -94,7 +94,7 @@ ht-degree: 5%
 
    ![](assets/offer_weight_create_001.png)
 
-1. 更改标签并分配权重。 默认值为 1。
+1. 更改标签并分配权重。 默认值为1。
 
    ![](assets/offer_weight_create_006.png)
 

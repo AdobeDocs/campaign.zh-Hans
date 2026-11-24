@@ -30,10 +30,10 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 90%
+source-wordcount: '517'
+ht-degree: 83%
 ---
 # Campaign 控制面板 {#ac-control-panel}
 
@@ -45,7 +45,7 @@ Campaign 控制面板允许管理每个实例的设置并跟踪使用情况，�
 * 根据不同的业务需求在不同时间配置设置。
 * 根据需要控制访问设置，从而增强安全性。
 
-您还可以使用 Campaign 控制面板配置实例设置，如 IP 允许列表、URL 权限和检索有关实例的信息。
+您还可以使用Campaign控制面板配置实例设置，如IP允许列表、URL权限，以及检索有关实例的信息。
 
 请参阅[Campaign控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans){target="_blank"}以了解详情。
 
@@ -86,7 +86,7 @@ Campaign 控制面板允许管理每个实例的设置并跟踪使用情况，�
 
 ## 实例设置
 
-了解如何在控制面板中管理 Campaign 实例设置。
+了解如何在控制面板中管理Campaign实例设置。
 * [允许列表上的IP](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hans){target="_blank"}
 * [URL 权限](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=zh-Hans){target="_blank"}
 * [实例详细信息](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=zh-Hans){target="_blank"}

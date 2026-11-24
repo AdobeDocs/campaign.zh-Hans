@@ -29,7 +29,7 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 20%
@@ -44,7 +44,7 @@ ht-degree: 20%
 
 在Adobe Campaign中，**收件人**&#x200B;是发送投放内容（电子邮件、短信等）所定位的默认用户档案。
 
-通过存储在数据库中的收件人数据，您可以筛选将接收任何给定投放的目标，并在投放内容中添加个性化数据。 数据库中还有其他类型的轮廓。 这些用户档案是针对不同用途而设计的。 例如，种子轮廓用于在将投放内容发送给最终目标前测试该投放内容。
+通过数据库中存储的收件人数据，您可以筛选将接收任何给定投放的目标，并在投放内容中添加个性化数据。 数据库中还有其他类型的轮廓。 这些用户档案是针对不同用途而设计的。 例如，种子轮廓用于在将投放内容发送给最终目标前测试该投放内容。
 
 要使用配置文件数据填充Adobe Campaign，您可以：
 

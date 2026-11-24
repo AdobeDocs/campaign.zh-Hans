@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '2569'
+source-wordcount: '2568'
 ht-degree: 0%
 ---
 # 输入表单入门 {#gs-ac-forms}
@@ -186,7 +186,7 @@ ht-degree: 0%
 
 使用&#x200B;**容器**&#x200B;对一组控件进行分组。 它们由&#x200B;**`<container>`**&#x200B;元素表示。 上面使用它们来格式化跨越多个列的控件。
 
-`<container>`上的&#x200B;**xpath**&#x200B;属性允许您简化子控件的引用。 然后，控件的引用相对于父级`<container>`父级。
+`<container>`上的&#x200B;**xpath**&#x200B;属性允许您简化子控件的引用。 然后，控件的引用相对于父`<container>`。
 
 不带“xpath”的容器示例：
 

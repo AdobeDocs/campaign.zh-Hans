@@ -31,20 +31,20 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 66%
+source-wordcount: '1224'
+ht-degree: 61%
 ---
 # 探索用户界面 {#ui-client-console}
 
-您可以通过客户端控制台或 Web 用户界面访问 Adobe Campaign。 您还可以使用 API 在 Campaign 平台中管理数据和执行任务。
+您可以通过客户端控制台或Web用户界面访问Adobe Campaign。 您还可以使用 API 在 Campaign 平台中管理数据和执行任务。
 
 * **客户端控制台** - Campaign 客户端控制台是一个原生应用程序，它通过标准 Internet 协议（如 SOAP 和 HTTP）与 Adobe Campaign 应用程序服务器进行通信。 Campaign 客户端控制台集中了所有功能和设置，并且由于依赖本地缓存，需要的带宽很少。 Campaign 客户端控制台旨在实现轻松部署，可以从 Internet 浏览器部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成 HTTP(S) 流量。 [了解详情](#ui-access)
 
   在[此部分](../start/connect.md)中了解如何安装和配置 Campaign 客户端控制台。
 
-* **Web 访问** - 通过 Adobe Campaign Web 访问功能，您可以通过 Web 浏览器在 HTML 用户界面下使用部分 Campaign 功能。 使用此 Web 界面可访问报告、控制和验证消息、访问监控仪表板等。  [在此部分中](../start/connect.md#web-access)了解有关 Campaign Web 访问权限的详细信息。
+* **Web访问** - Adobe Campaign Web访问功能允许您使用HTML用户界面通过Web浏览器访问Campaign功能的子集。 使用此 Web 界面可访问报告、控制和验证消息、访问监控仪表板等。  [在此部分中](../start/connect.md#web-access)了解有关 Campaign Web 访问权限的详细信息。
 
 * **API** - 为处理更多用例，可以使用通过 SOAP 协议公开的 Web 服务 API 从外部应用程序调用该系统。 [在此页面中](../dev/api.md)了解有关 Campaign API 的详细信息。
 
@@ -103,7 +103,7 @@ Campaign 客户端控制台是一个原生应用程序，它通过标准 Interne
 
 对于每个功能，您都可以在 **[!UICONTROL Browsing]** 部分中访问关键功能集。 通过 **[!UICONTROL More]** 链接，可访问所有其他组件。
 
-例如，在浏览到 **[!UICONTROL Profiles and targets]** 选项卡时，您可以访问收件人列表、订阅服务、现有的目标选择工作流以及创建所有这些组件的快捷方式。
+例如，在浏览到&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;选项卡时，您可以访问收件人列表、订阅服务、现有的定位工作流以及创建所有这些组件的快捷方式。
 
 ![Campaign控制台用户界面，显示如何从“配置文件和目标”选项卡访问列表](assets/overview-list.png)
 
@@ -120,7 +120,7 @@ Campaign 客户端控制台是一个原生应用程序，它通过标准 Interne
 <!--
 ## Use a web browser {#web-browser}
 
-You can also access a subset of Campaign capabilities through the a web browser.
+You can also access a subset of Campaign capabilities through a web browser.
 
 The web access interface is similar to the console interface. From a browser, you can use the same navigation and display features as in the console, but you can perform only a reduced set of actions on campaigns. For example, you can view and cancel campaigns, but you cannot modify campaigns.
 

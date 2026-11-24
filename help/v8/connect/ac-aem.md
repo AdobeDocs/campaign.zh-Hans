@@ -30,7 +30,7 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
@@ -70,7 +70,7 @@ Adobe Campaign与Adobe Experience Manager之间的集成允许您直接在Adobe 
 
    ![](assets/aem_authoring_3.png)
 
-1. 通过添加组件（例如Adobe Campaign中的个性化字段）自定义电子邮件内容。请参阅[Adobe Experience Manager文档](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/aem-adobe-campaign/campaign.html?lang=zh-Hans#editing-email-content){target="_blank"}以了解详情。
+1. 通过添加组件（例如Adobe Campaign中的个性化字段）自定义电子邮件内容。 请参阅[Adobe Experience Manager文档](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/aem-adobe-campaign/campaign.html?lang=zh-Hans#editing-email-content){target="_blank"}以了解详情。
 
 1. 电子邮件准备就绪后，导航到&#x200B;**[!UICONTROL Page information]**&#x200B;菜单，然后单击&#x200B;**[!UICONTROL Start workflow]**。
 

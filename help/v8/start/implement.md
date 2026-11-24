@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1218'
-ht-degree: 97%
+ht-degree: 92%
 ---
 # Campaign 实施准则{#gs-implementation}
 
@@ -57,7 +57,7 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->通过使用 **Campaign Managed Cloud Services**，您的环境和初始配置会由 Adobe 根据您的许可协议条款进行设置。 您不可修改已安装的内置软件包、内置架构或报告。
+>通过使用&#x200B;**Campaign Managed Cloud Services**，您的环境和初始配置将由Adobe根据您的许可协议条款进行设置。 您不可修改已安装的内置软件包、内置架构或报告。
 >
 >如果您需要使用 Campaign 加载项或尚未为您配置的特定功能，则需联系 **Adobe 过渡经理**。
 
@@ -67,7 +67,7 @@ ht-degree: 97%
 
 ### 隐私{#implementation-privacy}
 
-Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守适用的数据隐私法律并适应收件人的偏好。 您可以管理：
+Adobe Campaign提供的流程和设置允许您按照适用的数据隐私法律和收件人的偏好使用Campaign。 您可以管理：
 
 * **数据获取**：通过 Adobe Campaign，您可以收集数据，包括个人信息和敏感信息。 因此，获得并管理收件人的同意至关重要。
 
@@ -195,7 +195,7 @@ Adobe Campaign 提供的流程和设置可帮助您在使用 Campaign 时遵守�
 
 仅可使用单点登录 (SSO) 连接到 Campaign。 请参阅[此页面](connect.md)以了解详情。
 
-有关能够与 Adobe Campaign 集成的 Adobe 解决方案的完整列表，请参阅[此页面](../connect/integration.md)。
+在此页面[&#128279;](../connect/integration.md)中查找可与Adobe 集成的Adobe Campaign解决方案的完整列表。
 
 ### 连接器{#implementation-connectors}
 

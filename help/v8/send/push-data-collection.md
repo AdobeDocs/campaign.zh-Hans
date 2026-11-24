@@ -23,9 +23,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: '1422'
 ht-degree: 2%
 ---
 # 已修订推送通知配置 {#push-notifications-config}
@@ -44,7 +44,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 1. [在Adobe Experience Platform数据收集中创建并配置移动资产](#create-mobile-property)
 
-1. [添加Adobe Adobe Experience Platform Assurance扩展](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}（推荐）
+1. [添加Adobe Experience Platform Assurance扩展](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}（推荐）
 
 1. [将Campaign Classic添加到您的移动应用程序](#campaign-mobile-ap)
 
@@ -88,7 +88,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 1. 提供&#x200B;**密钥ID**。 这是在创建p8身份验证密钥期间分配的10字符串。
 
-   可在Apple开发人员帐户的&#x200B;**证书**、**标识符**&#x200B;和&#x200B;**配置文件**&#x200B;页中的&#x200B;**密钥**&#x200B;选项卡下找到它。
+   可在Apple开发人员帐户的&#x200B;**证书**、**标识符**&#x200B;和&#x200B;**配置文件**&#x200B;页面中的&#x200B;**密钥**&#x200B;选项卡下找到它。
 
 1. 提供&#x200B;**团队ID**。 这是可在&#x200B;**成员资格**&#x200B;选项卡下找到的字符串值。
 
@@ -152,7 +152,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 1. （可选）您可以使用大约&#x200B;**[!UICONTROL Application variables]**&#x200B;扩充推送消息内容。 这些都是完全可自定义的，并且是发送到移动设备的消息有效负载的一部分。
 
-   在以下示例中，添加&#x200B;**mediaURl**&#x200B;和&#x200B;**mediaExt**&#x200B;变量以创建富推送通知，然后为应用程序提供要在通知中显示的图像。
+   在以下示例中，添加了&#x200B;**mediaURl**&#x200B;和&#x200B;**mediaExt**&#x200B;变量以创建富推送通知，然后向应用程序提供要在通知中显示的图像。
 
    ![](assets/push-config-8.png)
 
@@ -177,7 +177,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
    ![](assets/push-config-9.png)
 
-1. 从&#x200B;**[!UICONTROL Application icon]**&#x200B;字段中选择图标以个性化服务中的移动应用程序。
+1. 使用&#x200B;**[!UICONTROL Application icon]**&#x200B;字段中的Select图标对服务中的移动应用程序进行个性化。
 
 1. 单击&#x200B;**[!UICONTROL Next]**&#x200B;开始配置生产应用程序，并遵循上面详述的相同步骤。 请注意，您不能对应用程序的开发版本（沙盒）和生产版本使用相同的&#x200B;**[!UICONTROL Integration key]**。
 
@@ -209,7 +209,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
    ![](assets/push-config-12.png)
 
-1. 从&#x200B;**[!UICONTROL Application icon]**&#x200B;字段中选择图标以个性化服务中的移动应用程序。
+1. 使用&#x200B;**[!UICONTROL Application icon]**&#x200B;字段中的Select图标个性化服务中的移动应用程序。
 
 1. （可选）如果需要，您可以使用大约&#x200B;**[!UICONTROL Application variables]**&#x200B;扩充推送消息内容。 这些都是完全可自定义的，并且是发送到移动设备的消息有效负载的一部分。
 

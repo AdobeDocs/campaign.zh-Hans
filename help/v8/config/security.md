@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '2947'
-ht-degree: 48%
+ht-degree: 47%
 ---
 # Campaign安全最佳实践 {#ac-security}
 
@@ -101,9 +101,9 @@ Adobe Campaign 是 Adobe Experience Cloud 解决方案的一部分。 Campaign �
   * Adobe Experience Cloud 解决方案使用 cookie 及网络信标（也称为标记或像素）之类的类似技术使您能够收集信息。 有关 Adobe Campaign 的 cookie 和跟踪功能的更多信息，请参阅[此部分](#tracking-capabilities)。
   * 您还可以在移动应用程序中使用 Adobe Experience Cloud 技术。 有关使用Campaign发送移动投放的详细信息，请参阅[短信渠道](../send/sms/sms-channel.md)和移动应用渠道。
 
-* **用户对您使用 Adobe Experience Cloud 的隐私选择**
+* **用户对您使用Adobe Experience Cloud的隐私选择**
 
-  Adobe 要求您提供客户隐私政策，其中描述：
+  Adobe要求您提供客户的隐私政策，其中描述：
 
   * 关于 Adobe Experience Cloud 的隐私条例
   * 用户如何可为收集或使用与 Adobe Experience Cloud 有关的信息设置首选项
@@ -165,7 +165,7 @@ Adobe Campaign 是 Adobe Experience Cloud 解决方案的一部分。 Campaign �
 
 ## 隐私管理 {#privacy-management}
 
-隐私管理是指可帮助您遵守隐私法规（GDPR 和 CCPA 等）的所有流程和工具。
+隐私管理是指可帮助您遵守隐私法规（GDPR、CCPA等）的所有流程和工具。
 
 Adobe Campaign 为您提供专门用于隐私管理的各种功能集：
 * 同意管理、数据保留和用户角色。 请参阅[此小节](#consent)。

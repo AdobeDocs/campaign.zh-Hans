@@ -25,16 +25,16 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '145'
 ht-degree: 0%
 ---
 # 与自定义资源交互 {#interacting-with-custom-resources}
 
 **/customResources**&#x200B;端点允许您在REST中公开Campaign自定义资源。 基于此API，可在自定义实体和外部端点之间实现集成。
 
-/customResources端点的行为与/profileAndServices端点完全相同。
+/customResources端点与/profileAndServices端点完全相同。
 
 此API中公开的自定义资源包括：
 

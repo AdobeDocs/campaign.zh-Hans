@@ -26,14 +26,14 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1461'
 ht-degree: 3%
 ---
 # 定义交互式内容{#defining-interactive-content}
 
-Adobe Campaign允许您使用交互式[AMP for Email](https://amp.dev/about/email/)格式，该格式可用于在特定条件下发送动态电子邮件。
+Adobe Campaign允许您使用交互式[AMP for Email](https://amp.dev/about/email/)格式，该格式允许您在特定条件下发送动态电子邮件。
 
 使用AMP for Email，您可以：
 * 测试将AMP电子邮件投放到正确配置的特定地址。
@@ -67,7 +67,7 @@ AMP for Email与现有电子邮件兼容。 除了HTML和/或纯文本之外，�
 
    >[!NOTE]
    >
-   >目前，您只能将AMP电子邮件发送至[特定的电子邮件地址](#testing-amp-delivery-for-selected-addresses)（用于测试目的），或在[注册](#delivering-amp-emails-by-registering)之后，向受支持的电子邮件客户端发送。
+   >目前，您只能将AMP电子邮件投放[特定的电子邮件地址](#testing-amp-delivery-for-selected-addresses)（用于测试目的）或[注册](#delivering-amp-emails-by-registering)之后（向受支持的电子邮件客户端）。
 
 1. 像往常一样发送电子邮件。 请参阅[发送AMP电子邮件](#sending-amp-email)。
 

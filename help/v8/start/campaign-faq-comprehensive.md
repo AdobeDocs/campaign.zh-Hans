@@ -24,7 +24,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '11502'
 ht-degree: 12%
@@ -175,7 +175,7 @@ Campaign提供了多种定位方法以便为消息选择正确的受众：
 
 +++
 
-+++ 哪些系统和组件与 Campaign v8 兼容？
++++ 哪些系统和组件与Campaign v8兼容？
 
 在 [Adobe Campaign 兼容性矩阵](compatibility-matrix.md)中，您可以获得支持 Campaign 最新版本的所有系统和组件的列表。
 
@@ -220,7 +220,7 @@ Campaign v8显着提高了性能，但与Campaign Classic v7存在一些体系�
 
 从现有 Campaign Classic v7 环境进行自动迁移的功能尚不可用。
 
-Campaign v8 **仅**&#x200B;作为托管式云服务提供，不能部署在内部部署或混合环境中。
+Campaign v8仅&#x200B;**可用**&#x200B;作为托管Cloud Service，不能部署在内部部署或混合环境中。
 
 有关迁移流程的更多信息，请联系您的 Adobe 代表。
 
@@ -1852,7 +1852,7 @@ Campaign的审核记录会记录删除事件和新用户档案的创建，以展
 
 通过官方的Adobe培训和认证计划提升您的技能。
 
-* **[Experience League帮助](https://experienceleague.adobe.com/zh-hans/browse/campaign/campaign-v8){target="_blank"}** - Campaign v8的帮助资源（Web UI和CLient控制台）
+* **[Experience League帮助](https://experienceleague.adobe.com/zh-hans/browse/campaign/campaign-v8){target="_blank"}** - Campaign v8的帮助资源（Web UI和客户端控制台）
 * **[Adobe数字学习服务](https://learning.adobe.com/){target="_blank"}** — 官方讲师指导课程和自学课程
 * **[Adobe Campaign认证](https://experienceleague.adobe.com/docs/certification/program/overview.html?lang=zh-Hans){target="_blank"}** — 通过专业认证验证您的专业知识
 * **[Experience League学习路径](https://experienceleague.adobe.com/zh-hans?lang=en#dashboard/learning){target="_blank"}** — 引导式学习历程

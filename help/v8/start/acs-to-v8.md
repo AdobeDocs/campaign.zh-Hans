@@ -25,14 +25,14 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 4cbf1340053ba2003ffade1c6d0c3af20a10717b
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 19%
 ---
 # 从[!DNL Campaign Standard]过渡到[!DNL Campaign] v8 {#acs-to-acv8}
 
-作为过渡到Campaign v8的Campaign Standard用户，您现在可以从新版本的Adobe Campaign Web用户界面和功能强大的v8控制台中受益。 过渡没有任何效果，将允许您使用所有旨在简化个性化跨渠道活动创建的直观功能。 Campaign Web用户界面还通过Adobe Experience Platform提供了连接的画布，以实现统一体验。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/acs-migration){target="_blank"}。
+作为过渡到Campaign v8的Campaign Standard用户，您现在可以从新版本的Adobe Campaign Web用户界面以及功能强大的v8控制台中受益。 此过渡是无缝的，将允许您使用所有旨在简化个性化跨渠道活动创建的直观功能。 Campaign Web用户界面还通过Adobe Experience Platform提供了连接的画布，以实现统一体验。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/start/acs-migration){target="_blank"}。
 
 作为Campaign v8用户，您现在可以访问新的Campaign Web用户界面和v8客户端控制台。 数据和设置将从一个环境同步到另一个环境。 在Campaign Web用户界面中，从Explorer左侧导航栏中可以看到客户端控制台中所有可用的数据和设置。
 

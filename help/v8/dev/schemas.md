@@ -38,10 +38,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1295'
-ht-degree: 5%
+ht-degree: 6%
 ---
 # 使用架构{#gs-ac-schemas}
 
@@ -65,7 +65,7 @@ ht-degree: 5%
 
 Adobe Campaign使用数据架构来：
 
-* 定义应用程序中的数据对象如何与底层数据库表绑定。
+* 定义应用程序内的数据对象如何与底层数据库表的联系起来。
 * 定义 Campaign 应用程序中不同数据对象之间的链接。
 * 定义并描述每个对象中包含的个别字段。
 

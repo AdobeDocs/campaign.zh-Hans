@@ -21,9 +21,9 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '943'
 ht-degree: 1%
 ---
 # 创建调查的关键步骤{#getting-started-with-surveys}
@@ -109,7 +109,7 @@ ht-degree: 1%
 
   ![](assets/s_ncs_admin_survey_add_qu.png)
 
-  输入问题的标签并插入回答字段作为问题的子分支。 要实现此目的，在创建答案字段时必须选择链接到问题的节点。 使用&#x200B;**[!UICONTROL Selection controls]**&#x200B;图标或右键单击添加&#x200B;**[!UICONTROL drop-down listx]**，如下所示：
+  输入问题的标签并插入回答字段作为问题的子分支。 要实现此目的，在创建答案字段时必须选择链接到问题的节点。 使用&#x200B;**[!UICONTROL Selection controls]**&#x200B;图标或右键单击添加&#x200B;**[!UICONTROL drop-down list]**，如下所示：
 
   ![](assets/s_ncs_admin_survey_add_list.png)
 

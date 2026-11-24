@@ -49,9 +49,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f0e325102f748f6268a21a5397774a08a6994e51
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '3475'
+source-wordcount: '3476'
 ht-degree: 6%
 ---
 # 了解投放失败 {#delivery-failures}
@@ -64,7 +64,7 @@ ht-degree: 6%
 
 发送消息后，您可以在投放日志中查看每个用户档案的投放状态以及相关失败的类型和原因。
 
-隔离电子邮件地址后，或用户档案阻止列表时，将在投放准备步骤中排除收件人。 排除的消息将列在投放仪表板中。
+隔离电子邮件地址后，或者如果阻止列表上有用户档案，则会在投放准备步骤中排除该收件人。 排除的消息将列在投放仪表板中。
 
 ## 消息投放为什么失败 {#delivery-failure-reasons}
 
@@ -258,7 +258,7 @@ Campaign投放中的有效期设置限制为&#x200B;**3.5天或更短**。 对�
    <td> 未定义 </td> 
    <td> 未定义 </td> 
    <td> 0 </td> 
-   <td> 地址正在进行鉴别，因为错误尚未递增。 当服务器发送新的错误消息时，会发生此类错误： 这可能是一个孤立的错误，但如果再次发生，则错误计数会增加，从而提醒技术团队。 然后，他们可以通过树结构中的<span class="uicontrol">管理</span> / <span class="uicontrol">促销活动管理</span> / <span class="uicontrol">不可交付结果管理</span>节点执行消息分析并限定此错误。<br /> </td> 
+   <td> 该地址正在进行鉴别，因为错误尚未递增。 当服务器发送新的错误消息时，会发生此类错误： 这可能是一个孤立的错误，但如果再次发生，则错误计数会增加，从而提醒技术团队。 然后，他们可以通过树结构中的<span class="uicontrol">管理</span> / <span class="uicontrol">促销活动管理</span> / <span class="uicontrol">不可交付结果管理</span>节点执行消息分析并限定此错误。<br /> </td> 
   </tr> 
   <tr> 
    <td> 不符合产品建议资格 </td> 

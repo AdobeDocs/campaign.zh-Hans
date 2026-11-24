@@ -47,9 +47,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1733'
 ht-degree: 1%
 ---
 # 管理用户权限{#manage-permissions}
@@ -221,7 +221,7 @@ Adobe Campaign附带在Adobe启用您的环境时定义的内置&#x200B;**产品
 
 用户组是必须获得一组共享权限的不同用户的集合。 在[本节](https://helpx.adobe.com/ie/enterprise/using/user-groups.html){target="_blank"}中了解如何创建用户组。
 
-您可以将产品配置文件分配给用户组。 因此，该组中的所有用户都将获得同一组产品权限。
+您可以将产品配置文件分配给用户组。 因此，该组中的所有用户都会获得相同的产品权限集。
 
 ## 已命名权限{#use-named-rights}
 

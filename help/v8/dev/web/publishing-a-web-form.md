@@ -26,7 +26,7 @@ topic_v2:
     internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 1%
@@ -119,7 +119,7 @@ ht-degree: 1%
 
    设计阶段完成后，即可交付表单。
 
-   当表单的状态为&#x200B;**[!UICONTROL Being edited]**&#x200B;或&#x200B;**[!UICONTROL Pending publication]**&#x200B;时，它必须是[已发布](#publishing-a-form)才能联机并可通过Web表单URL在浏览器中访问。
+   当表单的状态为&#x200B;**[!UICONTROL Being edited]**&#x200B;或&#x200B;**[!UICONTROL Pending publication]**&#x200B;时，它必须是[已发布](#publishing-a-form)才能联机并通过浏览器中的Web表单URL访问。
 
    发布后，该表单将一直有效，直到其过期。
 
@@ -203,7 +203,7 @@ ht-degree: 1%
 
   * 如果新实例上已存在该Web表单，则该表单会被替换为表单的新版本，并具有&#x200B;**[!UICONTROL Pending publication]**&#x200B;状态，即使表单的旧版本为&#x200B;**[!UICONTROL Online]**&#x200B;也是如此。
 
-  * 无论该表单是否存在都必须为[已发布](#publishing-a-form)，才能在新实例上变为&#x200B;**[!UICONTROL Online]**，并且可通过浏览器中的Web表单URL访问。
+  * 无论表单是否存在都必须将表单发布为[已发布](#publishing-a-form)才能在新实例上变为&#x200B;**[!UICONTROL Online]**，并可通过Web表单URL在浏览器中访问。
 
 * 如果Web窗体在导出时状态为&#x200B;**[!UICONTROL Being edited]**：
 

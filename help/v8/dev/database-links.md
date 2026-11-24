@@ -30,7 +30,7 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '921'
 ht-degree: 0%
@@ -45,7 +45,7 @@ ht-degree: 0%
 * 基数1-N：源表格的一个存在可以具有目标表格的多个对应存在，但目标表格的一个存在最多可以具有源表格的一个对应存在。
 * 基数N-N：源表格的一个存在可以具有目标表格的多个对应存在，反之亦然。
 
-在使用界面中，基数使用特定图标表示。
+在用户界面中，基数使用特定图标表示。
 
 对于与Campaign表/数据库的连接关系：
 

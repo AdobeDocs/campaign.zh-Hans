@@ -21,10 +21,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1006'
-ht-degree: 3%
+ht-degree: 4%
 ---
 # 将文件附加到电子邮件{#attaching-files}
 
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->为了避免出现性能问题，建议每封电子邮件不要包含多个附件。 可以从Campaign选项列表中配置建议的阈值。 请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=zh-Hans#delivery)。
+>为了避免出现性能问题，建议每封电子邮件不要附加多个附件。 可以从Campaign选项列表中配置建议的阈值。 请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=zh-Hans#delivery)。
 
 可能存在两种情况：
 

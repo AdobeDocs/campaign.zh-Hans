@@ -62,16 +62,16 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1501'
-ht-degree: 70%
+ht-degree: 63%
 ---
 # Adobe Campaign v8 关键功能 {#ac-gs-what-is-new}
 
-Adobe Campaign v8 专为需要同类最佳云解决方案的跨渠道营销人员而设计，可帮助实现企业规模的跨渠道营销活动管理。 它提供了强大的 ETL 和数据管理功能，以帮助制定和策划完美的营销活动。 它的编排引擎提供丰富的多接触点营销计划，核心重点放在基于批处理驱动的历程。 它还配有一个可扩展的实时消息服务器，使营销团队能够根据任何 IT 系统的总体有效负载发送预定义的消息，如密码重置、订单确认、电子收据等。
+Adobe Campaign v8 专为需要同类最佳云解决方案的跨渠道营销人员而设计，可帮助实现企业规模的跨渠道营销活动管理。 它提供了强大的 ETL 和数据管理功能，以帮助制定和策划完美的营销活动。 它的编排引擎提供丰富的多接触点营销计划，核心重点放在基于批处理驱动的历程。 它还配有一个可扩展的实时消息服务器，使营销团队能够根据任何IT系统的包含所有内容的有效负载发送预定义的消息，如密码重置、订单确认、电子收据等。
 
-Adobe Campaign v8 在基础架构、安全性、可投放性和监测方面有着显著改进。 它是一款&#x200B;**托管式云服务**，将各种服务与主动监督和及时发送警报功能相结合。 了解有关 Campaign Managed Cloud Services 的更多信息，请参阅[此部分](#acms-desc)。
+Adobe Campaign v8 在基础架构、安全性、可投放性和监测方面有着显著改进。 它作为&#x200B;**托管Cloud Service**&#x200B;提供，它将各种服务与主动监督和及时警报相结合。 了解有关 Campaign Managed Cloud Services 的更多信息，请参阅[此部分](#acms-desc)。
 
 ![](assets/home-page.png)
 
@@ -117,7 +117,7 @@ Adobe Campaign 可帮助您根据在所有渠道中收集的数据构建客户�
 
 [了解有关客户数据管理的更多信息](audiences.md)
 
-### 领先的营销活动管理 {#best-in-campaign-mgt}
+### 同类最佳的营销活动管理 {#best-in-campaign-mgt}
 
 Adobe Campaign v8 为营销人员提供了同类最佳的功能，可用于跨渠道规划、启动和衡量营销活动。
 
@@ -150,7 +150,7 @@ Adobe Campaign v8 是一款托管式云服务，提供主动监督、及时发�
 
 >[!AVAILABILITY]
 >
->* Campaign v8 **仅**&#x200B;作为托管式云服务提供，不能部署在内部部署或混合环境中。
+>* Campaign v8仅&#x200B;**可用**&#x200B;作为托管Cloud Service，不能部署在内部部署或混合环境中。
 >
 >* 从现有 Campaign Classic v7 环境进行自动迁移的功能尚不可用。
 
@@ -223,7 +223,7 @@ Campaign v8托管云服务消除了手动升级的负担：
 
 ## 自助式管理界面{#self-service-admin}
 
-作为产品管理员，您可以通过 **Campaign 控制面板**&#x200B;管理每个 Campaign v8 实例的设置和使用情况。
+作为产品管理员，您可以使用&#x200B;**Campaign控制面板**&#x200B;来管理设置并跟踪每个Campaign v8实例的使用情况。
 
 通过直观的用户界面，管理员可以监控关键资产的使用情况、执行高级任务，如将 IP 地址添加到允许列表、SFTP 存储监控、密钥管理等。 此自助式界面为您提供了更高的灵活性，并可帮助您：
 

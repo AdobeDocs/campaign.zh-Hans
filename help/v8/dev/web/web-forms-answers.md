@@ -21,7 +21,7 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 * **[!UICONTROL Edit a recipient]**
 
-  您可以选择数据库的字段：用户的回答将存储在此字段中。 对于每个用户，仅保存最后输入的值：已添加到其配置文件中：请参阅[将数据存储在数据库中](#storing-data-in-the-database)。
+  您可以选择数据库的字段：用户的回答将存储在此字段中。 对于每个用户，仅保存最后输入的值：即将其添加到其配置文件。 请参阅[将数据存储在数据库中](#storing-data-in-the-database)。
 
 * **[!UICONTROL Variable]**
 

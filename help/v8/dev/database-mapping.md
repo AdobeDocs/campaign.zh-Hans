@@ -30,7 +30,7 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 1%
@@ -125,4 +125,4 @@ SQL字段约束如下：
 
   “html”类型允许您将HTML内容存储在CDATA标记中，并在HTML客户端界面中显示特殊的Adobe Campaign编辑检查。
 
-通过使用XML字段，您无需修改数据库的物理结构即可添加字段。 另一个优点是，您使用的资源较少（分配给SQL字段的大小、每个表的字段数限制等）。
+通过使用XML字段，您无需修改数据库的物理结构即可添加字段。 另一个优点是，您使用的资源较少（分配给SQL字段的大小、限制每个表的字段数等）。

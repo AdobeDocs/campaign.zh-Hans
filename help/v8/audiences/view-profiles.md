@@ -31,9 +31,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '456'
 ht-degree: 6%
 ---
 # 查看现有配置文件 {#view-profiles}
@@ -66,7 +66,7 @@ ht-degree: 6%
 
 * **[!UICONTROL General]**，适用于所有常规配置文件数据。 特别是，它包含姓氏、名字、电子邮件地址、电子邮件格式等。
 
-  此选项卡还存储配置文件的&#x200B;**选择退出**&#x200B;标记：选择&#x200B;**[!UICONTROL No longer contact (by any channel)]**&#x200B;选项后，配置文件将处于阻止列表。 例如，如果收件人点击了新闻稿中的退订链接，则此信息会添加到联系人数据中。 任何渠道（电子邮件、直邮等）不再定向此类收件人。 有关详细信息，请参见[此页面](../send/quarantines.md)。
+  此选项卡还存储配置文件的&#x200B;**选择退出**&#x200B;标记：选择&#x200B;**[!UICONTROL No longer contact (by any channel)]**&#x200B;选项后，配置文件将处于状态。 例如，如果收件人点击了新闻稿中的退订链接，则此信息会添加到联系人数据中。 任何渠道（电子邮件、直邮等）不再定向此类收件人。 有关详细信息，请参见[此页面](../send/quarantines.md)。
 
 * **联系信息**，其中包含所选配置文件的直邮地址。
 
@@ -92,7 +92,7 @@ ht-degree: 6%
   >
 
 
-* **订阅**，适用于所有活动的服务订阅。 使用&#x200B;**历史记录**&#x200B;选项卡访问此联系人的订阅和取消订阅的详细信息。
+* **订阅**，适用于所有活动的服务订阅。 使用&#x200B;**历史记录**&#x200B;选项卡访问此联系人的订阅和退订的详细信息。
 
   ![](assets/subscription-tab.png)
 

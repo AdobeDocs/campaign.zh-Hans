@@ -26,12 +26,12 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '460'
 ht-degree: 7%
 ---
-# 选择短信投放的受众 {#sms-audience}
+# Select短信投放的受众 {#sms-audience}
 
 在选择受众之前，[请在此处](../../audiences/gs-audiences.md)了解有关受众的更多信息。
 
@@ -47,7 +47,7 @@ ht-degree: 7%
 
    ![](assets/audience_to.png){zoomable="yes"}
 
-1. 在下拉列表中选择&#x200B;**[!UICONTROL Target mapping]**。 Adobe Campaign默认目标映射为收件人，基于&#x200B;**[!UICONTROL nms:recipient]**&#x200B;架构。
+1. 在下拉列表中Select **[!UICONTROL Target mapping]**。 Adobe Campaign默认目标映射为收件人，基于&#x200B;**[!UICONTROL nms:recipient]**&#x200B;架构。
 
    可以使用其他目标映射，其中一些映射可能与您的特定配置相关。 有关目标映射的详细信息，请参阅[使用目标映射](../../audiences/target-mappings.md)。
 
@@ -76,11 +76,11 @@ ht-degree: 7%
 
    ![](assets/audience_finish.png){zoomable="yes"}
 
-   再次单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮后，您可以根据需要添加任意数量的目标群体。 您也可以通过单击标签后面的十字来删除某些标签。
+   再次单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮可根据需要添加任意数量的目标群体。 您也可以通过单击标签后面的十字来删除某些标签。
 
 ## 外部文件中的受众 {#external-audience}
 
-您可以使用Adobe Campaign对数据库中没有但在外部文件中存在的受众发送投放。
+您可以使用Adobe Campaign对不在受众数据库中、但在外部文件中的受众发送投放。
 
 以下是相应的步骤：
 

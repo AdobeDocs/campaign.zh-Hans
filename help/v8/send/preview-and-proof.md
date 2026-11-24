@@ -23,7 +23,7 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 10%
@@ -47,7 +47,7 @@ ht-degree: 10%
 
    ![](assets/test-personalization-with-a-recipient.png)
 
-1. 选择其他测试用户档案以预览消息的每个变体的电子邮件渲染。
+1. Select其他测试用户档案，用于预览消息的每个变体的电子邮件渲染。
 
 ## 发送校样 {#send-proofs}
 

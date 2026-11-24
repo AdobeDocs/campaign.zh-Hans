@@ -19,9 +19,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '233'
 ht-degree: 4%
 ---
 # 使用API检索用户档案 {#retrieving-profiles}
@@ -101,7 +101,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->搜索区分大小写，并且只对前缀执行。 例如，您将无法使用用户档案的姓氏查找用户档案。
+>搜索区分大小写，并且只对前缀执行。 例如，您将无法使用用户档案的姓氏来查找用户档案。
 
 ***示例请求***
 

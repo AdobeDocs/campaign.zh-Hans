@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1432'
 ht-degree: 2%
 ---
 # 使用Campaign和Microsoft Dynamics 365{#crm-ms-dynamics}
@@ -84,7 +84,7 @@ ht-degree: 2%
 
 ### 生成Microsoft Dynamics证书密钥标识符和密钥ID {#config-certificate-key-id}
 
-要获取&#x200B;**证书密钥标识符(customKeyIdentifier)**&#x200B;和&#x200B;**密钥ID (keyId)**，您必须上载证书。 证书可用作密钥，以便在请求令牌时证明应用程序的身份。 也可以称为公钥。
+要获取&#x200B;**证书密钥标识符(customKeyIdentifier)**&#x200B;和&#x200B;**密钥ID (keyId)**，您必须上载证书。 证书可用作密钥，以便在请求令牌时证明应用程序的身份。 它们也可以称为公钥。
 
 按照下面的步骤进行操作：
 
@@ -145,7 +145,7 @@ ht-degree: 2%
 **步骤1**：在azure active directory上创建非交互式用户
 
 1. 单击&#x200B;**Azure Active Directory >用户**，然后单击&#x200B;**新建用户**。
-1. 提供您想要使用的正确名称，用户名应为电子邮件格式。
+1. 提供您要使用的正确名称，用户名应为电子邮件格式。
 1. 在&#x200B;**目录角色**&#x200B;中选择&#x200B;**Dynamics 365管理员**。
 
 **步骤2**：为创建的用户分配适当的许可证
@@ -171,7 +171,7 @@ ht-degree: 2%
 
 1. 浏览Campaign资源管理器的&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;节点并创建外部帐户。
 1. 在&#x200B;**类型**&#x200B;部分中选择&#x200B;**[!UICONTROL Microsoft Dynamics CRM]**&#x200B;外部帐户。
-1. 在&#x200B;**[!UICONTROL CRM O-Auth type]**&#x200B;下拉列表中选择身份验证方法。
+1. 在&#x200B;**[!UICONTROL CRM O-Auth type]**&#x200B;下拉列表中Select身份验证方法。
 
    ![](assets/ms-dyn-external-account.png)
 

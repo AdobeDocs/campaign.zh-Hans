@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1076'
 ht-degree: 3%
 ---
 # 使用Campaign和X (Twitter) {#tw-ac-ovv}
@@ -61,7 +61,7 @@ ht-degree: 3%
 
 1. 创建X帐户并注册开发人员帐户。 [了解详情](#dev-account)
 1. （可选）创建一个测试X帐户来发送校样。 [了解详情](#tw-test-account)
-1. 创建X应用程序（每个X帐户一个应用程序）。 [了解详情](#create-an-app-on-twitter)
+1. 创建一个X应用程序（每个X帐户一个应用程序）。 [了解详情](#create-an-app-on-twitter)
 1. 为&#x200B;**[!UICONTROL Twitter]**&#x200B;创建新服务（每个X帐户一个服务）。 [了解详情](#create-tw-service)
 1. 将您的X帐户与Campaign同步。 [了解详情](#synchro-tw-accounts)
 
@@ -79,7 +79,7 @@ Campaign使用1.1版本的X API。 要使用它，您需要通过开发人员门
 1. 连接到[X开发人员门户](https://developer.twitter.com/en/apps){target="_blank"}。
 1. 选择&#x200B;**创建应用程序**。
 1. 让X助手引导您完成该过程。
-1. 要允许Adobe Campaign在您的帐户上创建帖子，请从您应用程序的用户身份验证设置部分中编辑到&#x200B;**应用程序权限**。 选择&#x200B;**读取、写入和直接消息**。
+1. 要允许Adobe Campaign在您的帐户上创建帖子，请在应用程序的“用户身份验证设置”部分中编辑&#x200B;**应用程序权限**。 选择&#x200B;**读取、写入和直接消息**。
 
    ![](assets/tw-permissions.png)
 
@@ -169,7 +169,7 @@ Campaign和X之间的同步通过专门的技术工作流进行管理。 这些�
 
 ## 在X上创建测试帐户 {#tw-test-account}
 
-除X帐户外，请创建一个专用X帐户，该帐户可用于发送[Tweet校样](../send/twitter.md)。 为此请执行以下操作步骤：
+除X帐户外，还创建可用于发送[Tweet校样](../send/twitter.md)的私有X帐户。 为此请执行以下操作步骤：
 
 1. 创建新的X帐户。
 1. 访问帐户&#x200B;**设置**。

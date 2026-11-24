@@ -22,9 +22,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '489'
 ht-degree: 1%
 ---
 # 为何使用Campaign Standard API {#why-using-campaign-standard-apis}
@@ -58,7 +58,7 @@ Adobe Campaign Standard提供了API，允许现有系统与Campaign平台集成�
 
 提供了一组请求，以帮助您熟悉Campaign Standard API请求。 此收藏集采用JSON格式，提供了代表常见用例的预设计API请求。
 
-以下步骤描述了分步使用案例，用于在Campaign Standard数据库中导入和使用收藏集创建用户档案。
+以下步骤描述了分步使用案例，介绍如何在Campaign Standard数据库中导入和使用收藏集创建用户档案。
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ Adobe Campaign Standard提供了API，允许现有系统与Campaign平台集成�
 
    ![替换文本](assets/postman_uc2.png)
 
-1. 创建对象后，主键(PKey)将与其关联。 它可以在请求响应中以及其他属性中可见。
+1. 创建对象后，会为其关联一个主键(PKey)。 它可以在请求响应中以及其他属性中可见。
 
    ![替换文本](assets/postman_uc3.png)
 

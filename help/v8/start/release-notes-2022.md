@@ -24,10 +24,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1947'
-ht-degree: 87%
+ht-degree: 84%
 ---
 # 2022 发行说明{#2022-rn}
 
@@ -89,7 +89,7 @@ _2022 年 9 月 30 日_
 <ul> 
 <li><p>在X（以前称为Twitter）上发送消息：通过Adobe Campaign，可直接将消息发送到您的X帐户。 您还可以向所有关注者发送私信。
 </p></li>
-<li><p>收集新联系人：Adobe Campaign 可自动收集轮廓数据，您可借此来开展定位营销活动，并实施跨渠道的营销策略。
+<li><p>收集新联系人：Adobe Campaign可以自动恢复用户档案数据，这使您能够执行定位营销活动并实施跨渠道策略。
 </p></li>
 </ul>
 <p>在<a href="../connect/ac-tw.md">详细文档</a>中了解如何关联Campaign和X。</p>
@@ -266,7 +266,7 @@ _2022 年 5 月 18 日_
 **修复**
 
 * 修复了在同一循环投放中使用种子和对照组时发生的问题。 (NEO-41197)
-* 修复了 FFDA 上的一个问题。当个性化块包含以下字符之一时，该问题会导致在执行发送进程（最多 256 个）期间属于同一个 deliveryPart 的对所有收件人的电子邮件发送被阻止：`' & < > "`。 个性化块现在支持这些字符（例如：firstname=&quot;Brian O&#39;Neil&quot;）。 (NEO-43184)
+* 修复了FFDA上的一个问题。当个性化块包含以下字符之一时，该问题会导致在执行发送进程（最多256个）期间属于同一个deliveryPart的所有收件人的电子邮件发送被阻止：`' & < > "`。 个性化块现在支持这些字符（例如：firstname=&quot;Brian O&#39;Neil&quot;）。 (NEO-43184)
 * 修复了在将自定义架构用作目标映射时可能导致跟踪工作流失败的问题。 现在，在通过目标映射向导生成 broadLog 架构时，我们会确保指向自定义定位架构的外部链接类型正确无误。 (NEO-43506)
 * 修复了可能导致非英语语言的 FFDA 部署工作流失败的问题。 (NEO-44561)
 

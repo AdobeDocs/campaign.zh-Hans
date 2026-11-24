@@ -30,7 +30,7 @@ topic_v2:
     internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 1%
@@ -69,7 +69,7 @@ ht-degree: 1%
 
    ![](assets/reporting_usecase_1_01.png)
 
-1. 选择要提取的列（在本例中：选择：所有已存档字段）。 这些是包含答案的字段。
+1. Select要提取的列（在这种情况下，选择所有已存档字段）。 这些是包含答案的字段。
 
    ![](assets/reporting_usecase_1_02.png)
 

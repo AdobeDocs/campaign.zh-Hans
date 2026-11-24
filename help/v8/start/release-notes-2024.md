@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1661'
-ht-degree: 85%
+source-wordcount: '1662'
+ht-degree: 83%
 ---
 # 2024 年发行说明 {#2024-rn}
 
@@ -206,7 +206,7 @@ _2024 年 2 月 14 日_
 
 ### 可投放性更新 {#deliverability-8-6-1}
 
-* 到 2024 年 2 月，任何通过 Google 或 Yahoo! 发送超过 5000 封电子邮件的公司 将必须开始使用身份验证技术，即“基于域的邮件身份验证、报告和符合性”(DMARC)。 确保为您在 Adobe Campaign 中使用的所有子域设置 DMARC 记录。 [了解详情](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=zh-Hans){target="_blank"}
+* 到 2024 年 2 月，任何通过 Google 或 Yahoo! 发送超过 5000 封电子邮件的公司 将必须开始使用身份验证技术，即“基于域的邮件身份验证、报告和符合性”(DMARC)。 确保为您用于Adobe Campaign的所有子域设置了DMARC记录。 [了解详情](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/implement-dmarc.html?lang=zh-Hans){target="_blank"}
 
 * 自 2024 年 6 月 1 日起，Google 和 Yahoo! 将要求发件人使用一键式 List-Unsubscribe 功能。 Adobe Campaign 现在支持此选项。 [了解详情](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=zh-Hans#list-unsubscribe){target="_blank"}
 

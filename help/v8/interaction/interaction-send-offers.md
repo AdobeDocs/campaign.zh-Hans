@@ -24,14 +24,14 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1278'
 ht-degree: 2%
 ---
 # 发送产品建议{#send}
 
-为了让优惠引擎选择优惠，该优惠已在&#x200B;**实时**&#x200B;环境中获得批准并可用。 [了解详情](interaction-offer.md#approve-offers)
+选件引擎要选择某个选件，该选件必须获得批准并且可在&#x200B;**实时**&#x200B;环境中使用。 [了解详情](interaction-offer.md#approve-offers)
 
 通过出站通信渠道进行的优惠呈现通过直邮、电子邮件或移动投放进行。 您还可以将统一模式与事务性消息传递（消息中心）结合使用。
 

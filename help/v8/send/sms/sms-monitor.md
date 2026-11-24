@@ -28,20 +28,20 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '226'
 ht-degree: 0%
 ---
 # 监控和跟踪短信
 
 务必监测短信投放，以确保营销活动有效。
 
-下面是您必须了解发送投放后发生情况的可能性
+以下是您需要了解发送投放后发生情况的可能性
 
 ## 了解短信投放仪表板
 
-投放仪表板为您提供关于短信的诸多信息。
+投放仪表板为您提供关于短信的很多信息。
 
 要访问仪表板，请在投放列表中双击您的投放。
 

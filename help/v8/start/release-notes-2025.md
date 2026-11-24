@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '3609'
-ht-degree: 33%
+source-wordcount: '3608'
+ht-degree: 31%
 ---
 # 2025 年发行说明 {#2025-rn}
 
@@ -362,7 +362,7 @@ _2025 年 2 月 14 日_
 
 ### 新增功能 {#features-8-7-3}
 
-* **事务性消息的动态报告** - 您现在可以在动态报告用户界面中监控事务性消息。 通过这些报告，营销人员能够实时查看事务性消息的所有报告量度和维度，并实时分析通过模板发送的投放。 [了解更多信息](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=zh-Hans){target="_blank"}
+* **事务性消息的动态报告** - 您现在可以在动态报告用户界面中监控事务性消息。 通过这些报表，营销人员能够实时查看事务型消息的所有报表量度和维度，以及通过模板发送的投放的细分。 [了解更多信息](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=zh-Hans){target="_blank"}
 
 * **事务性消息传递 REST API** - 现在可以对电子邮件使用基于事件的事务性 API。 [了解更多信息](../dev/api/get-started-apis.md)
 
@@ -380,7 +380,7 @@ _2025 年 1 月 15 日_
 
 * 在[企业 (FFDA) 部署](../../v8/architecture/enterprise-deployment.md)环境中的投放分析期间，Campaign 应用程序的稳定性得到了改进。
 * 此版本附带改进和增强的 FFDA 架构机制，包括密钥管理、暂存和数据复制。
-* 已为[企业 (FFDA) 部署](../../v8/architecture/enterprise-deployment.md)引入新的技术工作流。 这些工作流通过将并行复制请求集中到相应的表中，来复制投放和相关数据。 这些工作流以 `Replicate nms` 开头。 [了解更多信息](../architecture/replication.md)
+* 已为[企业 (FFDA) 部署](../../v8/architecture/enterprise-deployment.md)引入新的技术工作流。 这些工作流通过将并行复制请求集中到相应的表中，来复制投放和相关数据。 这些工作流以`Replicate nms`开头。 [了解更多信息](../architecture/replication.md)
 * 工作流属性中现在有新的 **Enable watchdog supervisor to keep workflow running permanently** 选项。 启用此选项后，工作流会在发生错误后自动重新启动。 如果工作流仍然出错，将默认每 30 秒重新启动一次。 要调整此间隔，您可以创建一个新的 `XtkWorkflow_WatchdogRestartTimerTimeout` 选项并设置整数数据类型以指定新延迟。 此选项只应在技术工作流中启用。 [了解更多信息](../../automation/workflow/workflow-properties.md#execution)
 
 ### 安全性改进 {#security-8-6-4}

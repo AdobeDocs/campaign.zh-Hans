@@ -21,9 +21,9 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '185'
 ht-degree: 8%
 ---
 # 提供最佳优惠{#interaction-present-offers}
@@ -36,7 +36,7 @@ ht-degree: 8%
 
 如需详细信息，请参阅[此小节](approving-and-activating-an-offer.md#approving-offer-content)。
 
-在入站联系人的上下文中，网站可以识别正在浏览页面的用户，也可以识别不存在的用户。 优惠引擎为已识别的用户档案和匿名用户档案提供不同的优惠。
+在入站联系人的上下文中，网站是否可以识别正在浏览页面的用户。 优惠引擎为已识别的用户档案和匿名用户档案提供不同的优惠。
 
 在入站渠道中提供优惠之前，必须配置优惠引擎调用，以便能够在其中提供优惠。 在大多数情况下，对于入站交互，这是网页。
 

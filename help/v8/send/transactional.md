@@ -30,9 +30,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '451'
 ht-degree: 0%
 ---
 # 事务性消息传递入门{#send-transactional-messages}
@@ -83,7 +83,7 @@ Adobe Campaign允许您向将产品添加到购物车的客户发送通知电子
 要创建将由Adobe Campaign处理的事件类型，请执行以下步骤：
 
 1. 浏览到Campaign资源管理器的&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;文件夹。
-1. 从列表中选择&#x200B;**[!UICONTROL Event type]**&#x200B;枚举。
+1. 从列表中Select **[!UICONTROL Event type]**&#x200B;枚举。
 1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;创建枚举值。 这可以是订单确认、密码更改、订单交付更改等。
 
    ![](assets/messagecenter_eventtype_enum_001.png)

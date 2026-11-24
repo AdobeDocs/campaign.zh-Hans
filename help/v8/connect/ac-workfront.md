@@ -18,14 +18,14 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 0%
 ---
 # 使用Campaign和Adobe Workfront
 
-将Campaign与Adobe Workfront配对，可加快活动交付速度。 使跨渠道团队更容易接收、协作和执行。 借助Adobe Workfont中的Adobe Campaign模块，您可以根据Adobe Campaign帐户中的事件启动Adobe Workfront Fusion方案，创建、读取或更新记录，使用您设置的标准搜索记录并执行自定义API调用。
+将Campaign与Adobe Workfront配对，可加快活动交付速度。 使跨渠道团队更容易接收、协作和执行。 借助Adobe Workfront中的Adobe Campaign模块，您可以根据Adobe Campaign帐户中的事件启动Adobe Workfront Fusion方案，创建、读取或更新记录，使用您设置的标准搜索记录，并执行自定义API调用。
 
 
 Adobe Workfront文档中详细描述了配置此集成的步骤。

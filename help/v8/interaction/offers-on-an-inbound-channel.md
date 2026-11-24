@@ -24,9 +24,9 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '2144'
 ht-degree: 1%
 ---
 # 入站渠道产品建议{#offers-on-an-inbound-channel}
@@ -318,7 +318,7 @@ Neobank公司希望为两个不同的目标创建营销选件。 它希望为其
 在此示例中，联系人识别是根据Adobe Campaign数据库中的电子邮件地址进行的。 要将收件人电子邮件添加到空间，请应用以下流程：
 
 1. 在已识别的环境中，转到选件空间文件夹。
-1. 选择&#x200B;**最佳选件**&#x200B;选件空间，然后单击&#x200B;**[!UICONTROL Advanced parameters]**。
+1. Select **最佳选件**&#x200B;选件空间，然后单击&#x200B;**[!UICONTROL Advanced parameters]**。
 
    ![](assets/offer_inbound_fallback_example_044.png)
 
@@ -340,7 +340,7 @@ Neobank公司希望为两个不同的目标创建营销选件。 它希望为其
 我们将创建两个单独的类别：**最佳优惠**&#x200B;类别和&#x200B;**合作伙伴**&#x200B;类别，每个类别具有两个个性化优惠。
 
 1. 转到已识别环境中的&#x200B;**[!UICONTROL Offer catalogs]**&#x200B;节点。
-1. 与匿名环境中一样，添加两个包含&#x200B;**最佳选件**&#x200B;和&#x200B;**合作伙伴**&#x200B;的&#x200B;**[!UICONTROL Offer category]**&#x200B;文件夹作为标签。
+1. 与匿名环境中一样，添加两个具有&#x200B;**最佳选件**&#x200B;和&#x200B;**合作伙伴**&#x200B;的&#x200B;**[!UICONTROL Offer category]**&#x200B;文件夹作为标签。
 
    ![](assets/offer_inbound_fallback_example_009.png)
 

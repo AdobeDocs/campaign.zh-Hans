@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '466'
-ht-degree: 96%
+ht-degree: 92%
 ---
 # Campaign v8 兼容性矩阵 {#compat-matrix}
 
@@ -85,7 +85,7 @@ ht-degree: 96%
 
 
 >[!AVAILABILITY]
->此外，借助[增强的安全附加功能](../config/enhanced-security.md#secure-vpn-tunneling)，您可以通过安全 VPN 隧道访问内部部署数据库。 [了解详情](../config/enhanced-security.md)
+>此外，使用[增强型安全加载项](../config/enhanced-security.md#secure-vpn-tunneling)，您可以通过安全VPN隧道访问本地数据库。 [了解详情](../config/enhanced-security.md)
 
 ## 移动 SDK {#MobileSDK}
 

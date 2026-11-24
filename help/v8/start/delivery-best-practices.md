@@ -43,7 +43,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '3162'
 ht-degree: 2%
@@ -116,7 +116,7 @@ Adobe Campaign会根据返回的错误类型管理错误地址。 [了解有关�
 
 ### 子域和品牌化 {#subdomains-and-branding}
 
-在Adobe Campaign中管理多个品牌时，Adobe建议为每个品牌拥有一个子域。 例如，银行可以具有与其每个区域机构对应的多个子域。 如果银行拥有bluebank.com域，则其子域可以是@ny.bluebank.com、@ma.bluebank.com、@ca.bluebank.com等。每个子域拥有一个投放模板，让您能够始终为每个品牌使用正确的预配置参数，从而避免错误并节省您的时间。 在[促销活动控制面板文档](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}中了解有关子域品牌的更多信息。
+在Adobe Campaign中管理多个品牌时，Adobe建议为每个品牌拥有一个子域。 例如，银行可以具有与其每个区域机构对应的多个子域。 如果银行拥有bluebank.com域，则其子域可以是@ny.bluebank.com、@ma.bluebank.com、@ca.bluebank.com等。每个子域拥有一个投放模板，可让您始终为每个品牌使用正确的预配置参数，从而避免错误并节省您的时间。 在[促销活动控制面板文档](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/subdomains-and-certificates/subdomains-branding){target="_blank"}中了解有关子域品牌的更多信息。
 
 ### 配置地址 {#configure-addresses}
 
@@ -143,7 +143,7 @@ Adobe Campaign会根据返回的错误类型管理错误地址。 [了解有关�
 
 ### 设置对照组 {#set-up-control-group}
 
-发送投放后，您可以将排除的收件人的行为与接收投放的收件人的行为进行比较。 然后，您可以衡量营销活动的效率。 了解有关控制组的详细信息[本节](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group)。
+发送投放后，您可以将排除的收件人的行为与接收投放的收件人的行为进行比较。 然后，您可以衡量营销活动的效率。 在[本节](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group)中了解有关控制组的更多信息。
 
 ### 使用类型应用过滤器或控制规则 {#create-typologies}
 
@@ -173,7 +173,7 @@ Adobe Campaign会根据返回的错误类型管理错误地址。 [了解有关�
 
   有关个性化块的更多信息，请参阅[此章节](../send/personalization-blocks.md)。
 
-* 准备个性化数据 — 您可以在工作流中准备个性化数据，以改进投放准备分析。 如果个性化数据来自通过联合数据访问(FDA)的外部表，则应当特别使用此字段。 该选项在此[部分](../send/personalization-data.md#optimize-personalization)中有说明
+* 准备个性化数据 — 您可以在工作流中准备个性化数据，以改进投放准备分析。 如果个性化数据来自通过联合数据访问(FDA)的外部表，则尤其应使用此字段。 [此部分](../send/personalization-data.md#optimize-personalization)中介绍了此选项
 +++
 
 ### 构建优化内容 {#build-optimized-content}
@@ -215,7 +215,7 @@ Adobe Campaign会根据返回的错误类型管理错误地址。 [了解有关�
 
 ### 镜像页面 {#mirror-page-check}
 
-始终包含镜像页面链接。 首选位置是电子邮件的顶部。 在[此页面](../send/mirror-page.md)中了解有关镜像页面的更多信息
+始终包含镜像页面链接。 首选位置位于电子邮件的顶部。 在[此页面](../send/mirror-page.md)中了解有关镜像页面的更多信息
 
 ### 退订链接 {#unsub-link-check}
 

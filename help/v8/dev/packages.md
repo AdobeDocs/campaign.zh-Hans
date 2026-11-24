@@ -47,7 +47,7 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 30b0f5eda9c80b72af5c8574e01cec6965b05564
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 1%
@@ -56,9 +56,9 @@ ht-degree: 1%
 
 ## 包入门 {#gs-data-packages}
 
-您可以使用数据包导出和导入平台自定义设置和数据。 包可以包含不同类型的配置和组件，无论是否进行了过滤。
+您可以使用数据包导出和导入平台自定义设置和数据。 资源包可以包含不同类型的配置和组件，无论是否进行了过滤。
 
-在Campaign数据包中，Adobe Campaign数据库的实体会显示为XML文件。 在包中，每个实体由其所有数据表示。
+在Campaign数据包中，Adobe Campaign数据库的实体以XML文件显示。 在包中，每个实体由其所有数据表示。
 
 本页介绍您创建并管理的&#x200B;**自定义**&#x200B;数据包。 提供Campaign功能的包是&#x200B;**内置包**，Adobe将安装并管理这些包。 在[内置包](../architecture/built-in-packages.md)中了解详情。
 
@@ -261,7 +261,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 1. 右键单击所需的实体，然后选择&#x200B;**[!UICONTROL Actions > Export in a package]**。
 
-1. 选择&#x200B;**[!UICONTROL Add to a package definition]**，然后选择要向其中添加实体的包定义。
+1. Select **[!UICONTROL Add to a package definition]**，然后选择要向其中添加实体的包定义。
 
 1. 实体已添加到包定义中，它将随包一起导出（请参阅[此部分](#export-packages-from-a-package-definition)）。
 
@@ -344,7 +344,7 @@ Adobe在Campaign v8中安装和管理内置软件包。 在[内置包](../archit
 
 **营销活动**
 
-此包不是强制性的。 有时，为所有营销活动创建特定类型会很有用，即使营销活动被视为一项功能也是如此。
+此包不是强制性的。 有时，为所有营销活动创建特定类型会很有用，即使营销活动可被视为一项功能也是如此。
 
 **更新**
 
@@ -369,7 +369,7 @@ Adobe在Campaign v8中安装和管理内置软件包。 在[内置包](../archit
 
 #### 实体包顺序 {#entity-packages-order}
 
-为帮助导入，应按照导入顺序对实体包进行排序。
+为帮助导入，应按导入的方式对实体包进行排序。
 
 例如：
 

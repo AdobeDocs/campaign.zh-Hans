@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Security
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: edaf625cfe93558dcbfa8570646633ab1bbf3adc
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '732'
-ht-degree: 73%
+ht-degree: 70%
 ---
 # 从 [!DNL Campaign Classic] v7 过渡到 [!DNL Campaign] v8{#gs-matrix}
 
@@ -45,7 +45,7 @@ ht-degree: 73%
 
 >[!AVAILABILITY]
 >
->* 目前，Campaign v8 **仅**&#x200B;作为托管云服务提供，不能部署在内部部署或混合环境中。 [了解详情](#cloud-services)
+>* 目前，Campaign v8仅&#x200B;**可用**&#x200B;作为托管Cloud Service，不能部署在内部部署或混合环境中。 [了解详情](#cloud-services)
 >
 >* 从现有 Campaign Classic v7 环境进行自动迁移的功能尚不可用。
 

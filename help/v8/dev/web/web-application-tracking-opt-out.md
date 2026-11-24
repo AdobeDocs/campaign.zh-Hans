@@ -32,7 +32,7 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 2%
@@ -41,7 +41,7 @@ ht-degree: 2%
 
 
 
-Adobe Campaign允许您停止跟踪通过Cookie或Web信标选择退出行为跟踪的最终用户的Web行为。 该功能包括显示横幅以向最终用户展示该选项的功能；您可以将这些横幅添加到Web应用程序或登陆页面中。
+通过Adobe Campaign，对于通过Cookie或Web信标选择退出行为跟踪的最终用户，您可以停止跟踪其Web行为。 该功能包括显示横幅以向最终用户展示该选项的功能；您可以将这些横幅添加到Web应用程序或登陆页面中。
 
 如果最终用户选择通过Cookie或Web信标退出行为跟踪，则该信息将通过JavaScript API传输到Adobe Campaign跟踪服务器。 请注意，某些管辖区可能要求客户在提供选择退出服务之前向最终用户提供选择加入服务（或有其他法律要求），并且客户有责任遵守适用法律。
 
@@ -106,7 +106,7 @@ Cookie名称为&#x200B;**acoptout**。 通用值包括：
 
 * **NL.ClientWebTracking.allow()**：设置选择退出Cookie值以允许Web跟踪。 默认情况下，允许Web跟踪。
 * **NL.ClientWebTracking.forbid()**：设置选择退出Cookie值以禁止Web跟踪。 Web跟踪需要禁止用户输入。
-* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**：在用户单击“接受”或“拒绝”按钮后，关闭选择退出Cookie横幅。 （在单击事件冒泡阶段期间）
+* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**：在用户单击“接受”或“拒绝”按钮后（在单击事件冒泡阶段），关闭选择退出Cookie横幅。
 
   bannerDomElt {DOMElement}需要删除的Cookie横幅的根DOM元素
 

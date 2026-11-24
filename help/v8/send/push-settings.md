@@ -37,14 +37,14 @@ topic_v2:
     internal-label: Measurement
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1830'
 ht-degree: 5%
 ---
 # 配置推送通知渠道 {#push-notification-configuration}
 
-要使用Adobe Campaign发送推送通知，您必须首先配置环境和应用程序，如本页所述。 在Adobe Campaign中，发送推送通知的渠道是移动设备应用程序渠道。
+要使用Adobe Campaign发送推送通知，您必须首先配置环境和应用程序，如本页所述。 在Adobe Campaign中，发送推送通知的渠道是移动应用程序渠道。
 
 >[!CAUTION]
 >
@@ -61,7 +61,7 @@ ht-degree: 5%
 1. （可选）将[Adobe Experience Platform Assurance添加到您的应用程序](https://developer.adobe.com/client-sdks/documentation/getting-started/validate/){target="_blank"}以验证您的实施。 在此页面[&#128279;](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}中了解如何实施Adobe Experience Platform Assurance扩展。
 1. 在Adobe Campaign中配置iOS和Android Mobile Services，如本页[所述。](#push-service)
 1. 在移动资产中安装和配置[Adobe Campaign扩展](#configure-extension)。
-1. 请按照[Adobe Experience Platform Mobile SDK文档](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"}中的说明，在您的应用程序中设置Adobe Experience Platform Mobile SDK。
+1. 按照[Adobe Experience Platform Mobile SDK文档](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"}中的说明在您的应用程序中设置Adobe Experience Platform Mobile SDK。
 
 ## 先决条件 {#before-starting}
 
@@ -177,12 +177,12 @@ To get the SDKs needed for push notification to work you will need the following
 
 1. 在左侧导航中浏览到&#x200B;**发布流**&#x200B;并选择&#x200B;**添加库**。
 1. 输入库名称并选择环境。
-1. 选择&#x200B;**添加所有更改的资源**&#x200B;和&#x200B;**保存并生成到开发**。
-1. 最后，通过&#x200B;**选择工作库**&#x200B;按钮将此库设置为工作库。
+1. Select **添加所有更改的资源**，并&#x200B;**保存并生成到开发**。
+1. 最后，通过&#x200B;**Select工作库**&#x200B;按钮将此库设置为您的工作库。
 
 ## 在Campaign中配置移动服务 {#push-service}
 
-在[!DNL Adobe Experience Platform Data Collection]中设置您的移动应用后，您需要创建两个服务（一个用于iOS设备，一个用于Android设备）才能从&#x200B;**[!DNL Adobe Campaign]**&#x200B;发送推送通知。
+在[!DNL Adobe Experience Platform Data Collection]中设置移动应用后，您需要创建两个服务（一个用于iOS设备，一个用于Android设备）才能从&#x200B;**[!DNL Adobe Campaign]**&#x200B;发送推送通知。
 
 推送通知通过专用服务发送给您的应用程序用户。 用户安装您的应用程序后，会订阅此服务：Adobe Campaign依赖此服务仅定向应用程序的订阅者。 在此服务中，您需要添加要在iOS和Android设备上发送的iOS和Android应用程序。
 
@@ -213,7 +213,7 @@ To get the SDKs needed for push notification to work you will need the following
 1. 在&#x200B;**[!UICONTROL Label]**&#x200B;字段中输入应用程序的名称。
 1. （可选）您可以使用大约&#x200B;**[!UICONTROL Application variables]**&#x200B;扩充推送消息内容。 这些都是完全可自定义的，并且是发送到移动设备的消息有效负载的一部分。
 
-   在以下示例中，添加&#x200B;**mediaURl**&#x200B;和&#x200B;**mediaExt**&#x200B;变量以创建富推送通知，然后为应用程序提供要在通知中显示的图像。
+   在以下示例中，添加了&#x200B;**mediaURl**&#x200B;和&#x200B;**mediaExt**&#x200B;变量以创建富推送通知，然后向应用程序提供要在通知中显示的图像。
 
    ![](assets/ios-app-parameters.png){width="600"}
 
@@ -236,7 +236,7 @@ To get the SDKs needed for push notification to work you will need the following
    >
    > 您不能对应用程序的开发版本（沙盒）和生产版本使用相同的证书。
 
-1. 从&#x200B;**[!UICONTROL Application icon]**&#x200B;字段中选择图标以个性化服务中的移动应用程序。
+1. 使用&#x200B;**[!UICONTROL Application icon]**&#x200B;字段中的Select图标对服务中的移动应用程序进行个性化。
 
 1. 选择 **[!UICONTROL Authentication mode]**。 提供了两种模式：
 

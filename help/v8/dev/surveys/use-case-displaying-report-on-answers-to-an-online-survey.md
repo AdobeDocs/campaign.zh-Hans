@@ -93,7 +93,7 @@ ht-degree: 1%
 
 ## 步骤2 — 创建多维数据集、其度量及其指示器 {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
-然后，可以创建立方并配置其度量：它们将用于创建将在报告中显示的指示器。 有关创建和配置多维数据集的详细信息，请参阅[关于多维数据集](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/ac-cubes){target="_blank"}。
+然后，可以创建立方并配置其度量：它们将用于创建将在报告中显示的指示器。 有关创建和配置多维数据集的详细信息，请参阅[关于多维数据集](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/reporting/ac-cubes){target="_blank"}。
 
 在本例中，多维数据集基于先前创建的工作流馈送的列表中的数据。
 

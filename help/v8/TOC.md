@@ -5,10 +5,10 @@ user-guide-description: Adobe Campaign v8 的产品文档（客户端控制台�
 title: Adobe Campaign v8 文档
 description: Campaign v8 文档
 breadcrumb-title: Campaign v8 文档
-source-git-commit: b37128ff4180befd5655c0c16b9ff0834235a84a
+source-git-commit: ffa29306eb4402ed20c7d04bdbbaffd4dde5bfe4
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 87%
+source-wordcount: '1100'
+ht-degree: 86%
 ---
 
 # Adobe Campaign v8（控制台）文档 {#campaign-v8}
@@ -334,6 +334,8 @@ ht-degree: 87%
     + 管理工作流 {#managing-workflows}
       + [控制工作流](dev/api/controlling-a-workflow.md)
       + [触发信号活动](dev/api/triggering-a-signal-activity.md)
++ API文档 {#api-documentation}
+  + [Campaign API文档>](https://experienceleague.adobe.com/en/docs/campaign/campaign-api/home)
 + 其他资源 {#resources}
   + [Campaign技术说明>](https://experienceleague.adobe.com/zh-hans/docs/campaign/technotes-ac/technotes-home)
   + [Campaign Web用户界面文档>](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/campaign-web-home)

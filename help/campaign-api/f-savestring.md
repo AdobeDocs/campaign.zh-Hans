@@ -1,0 +1,48 @@
+---
+source-git-commit: ffa29306eb4402ed20c7d04bdbbaffd4dde5bfe4
+workflow-type: tm+mt
+source-wordcount: '85'
+ht-degree: 11%
+---
+# savstring
+
+此命令已弃用，请使用[saveFile()](f-savefile.md)。 将字符串保存到文件。
+
+```text
+saveString (text, filename [, codePage ])
+```
+
+## 参数
+
+**text**&#x200B;要保存的文本字符串。
+
+**filename**&#x200B;要保存的文件的全名。
+
+**codePage**&#x200B;此可选参数允许您指定字符编码。 示例：
+
+* iso-8859-1
+* utf-8
+* utf-16
+* us-ascii
+* shift-jis
+* euc-kr
+
+## 返回值
+
+无。
+
+## 备注
+
+如果未指定字符编码，则使用服务器默认值。
+
+## 功能
+
+**可用位置：**
+
+* 内容管理
+* 投放属性
+* 类型规则
+* JSSP
+* SOAP方法
+* WebApp
+* 工作流

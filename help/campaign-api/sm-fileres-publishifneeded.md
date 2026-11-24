@@ -1,0 +1,37 @@
+---
+source-git-commit: ffa29306eb4402ed20c7d04bdbbaffd4dde5bfe4
+workflow-type: tm+mt
+source-wordcount: '26'
+ht-degree: 53%
+---
+# PublishIfNeeded
+
+如有必要，复制媒体服务器上的文件
+
+```text
+fileRes.PublishIfNeeded ()
+```
+
+## 参数
+
+无。
+
+## 返回值
+
+无。
+
+## 功能
+
+**架构：** [xtk:fileRes](s-xtk-fileres.md)
+
+**静态：**
+
+否
+
+**常量：**
+
+否
+
+仅&#x200B;**键：**
+
+否

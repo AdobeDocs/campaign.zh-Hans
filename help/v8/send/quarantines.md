@@ -37,7 +37,7 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d027f76f86f34524ddf5b620de32cdcc98e60d21
 workflow-type: tm+mt
 source-wordcount: '1364'
 ht-degree: 4%
@@ -48,7 +48,7 @@ Adobe Campaign可管理在线渠道（电子邮件、短信、推送通知）的
 
 隔离收件人的地址或电话号码后，在投放分析期间会将收件人从目标中排除：您将无法向这些联系人发送营销消息，包括自动工作流电子邮件。 如果隔离的地址也存在于列表中，则在将其发送到这些列表时将排除这些地址。 例如，当邮箱已满、地址不存在或电子邮件服务器不可用时，可以隔离电子邮件地址。
 
-<!--For more on best practices to secure and optimize your deliveries, refer to [this page](delivery-best-practices.md).-->
+<!--For more on best practices to secure and optimize your deliveries, refer to [this page](../start/delivery-best-practices.md).-->
 
 ## 隔离与阻止列表
 
@@ -62,13 +62,13 @@ Adobe Campaign可管理在线渠道（电子邮件、短信、推送通知）的
 
 >[!NOTE]
 >
->通过[&quot;mailto&quot; List-Unsubscribe方法](https://experienceleague.adobe.com/zh-hans/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"}取消订阅的收件人不会被添加到隔离。 它们或者从与投放关联的[服务](../start/subscriptions.md)取消订阅，或者发送到（在配置文件的&#x200B;**[!UICONTROL No longer contact]**&#x200B;部分中可见）（如果未为投放定义服务）。
+>通过[&quot;mailto&quot; List-Unsubscribe方法](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations#mailto-list-unsubscribe){target="_blank"}取消订阅的收件人不会被添加到隔离。 它们或者从与投放关联的[服务](../start/subscriptions.md)取消订阅，或者发送到（在配置文件的&#x200B;**[!UICONTROL No longer contact]**&#x200B;部分中可见）（如果未为投放定义服务）。
 
 <!--For the mobile app channel, device tokens are quarantined.-->
 
 ## 为何要向隔离区发送电子邮件、电话或设备 {#quarantine-reason}
 
-Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在错误消息鉴别期间分配。 在此页面[&#128279;](delivery-failures.md)上了解有关投放失败管理的更多信息。
+Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在错误消息鉴别期间分配。 在此页面](delivery-failures.md)上了解有关投放失败管理[的更多信息。
 
 可以捕获两种类型的错误：
 
@@ -78,7 +78,7 @@ Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在�
 在隔离地址列表中，**[!UICONTROL Error reason]**&#x200B;字段指示将选定地址置于隔离状态的原因。 [了解详情](#non-deliverable-bounces)。
 
 
-如果用户将电子邮件标记为垃圾邮件，则该邮件会自动重定向到由Adobe管理的技术邮箱。 随后，该用户的电子邮件地址会自动添加到隔离，并附加 **[!UICONTROL Denylisted]** 状态。 此状态仅适用于地址，用户档案不在阻止列表上，因此用户可继续接收短信和推送通知。 在[投放最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#feedback-loops){target="_blank"}中了解有关反馈循环的更多信息。
+如果用户将电子邮件标记为垃圾邮件，则该邮件会自动重定向到由Adobe管理的技术邮箱。 随后，该用户的电子邮件地址会自动添加到隔离，并附加 **[!UICONTROL Denylisted]** 状态。 此状态仅适用于地址，用户档案不在阻止列表上，因此用户可继续接收短信和推送通知。 在[投放最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops){target="_blank"}中了解有关反馈循环的更多信息。
 
 >[!NOTE]
 >
@@ -121,7 +121,7 @@ Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在�
 
 此外，此主页的&#x200B;**报告**&#x200B;部分提供的&#x200B;**[!UICONTROL Non-deliverables and bounces]**&#x200B;内置报告显示有关隔离地址、遇到的错误类型以及按域划分的失败的信息。 您可以过滤特定投放的数据，或根据需要自定义此报表。
 
-在[可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=zh-Hans){target="_blank"}中了解有关退回地址的更多信息。
+在[可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html){target="_blank"}中了解有关退回地址的更多信息。
 
 ### 隔离的电子邮件地址 {#quarantined-recipient}
 

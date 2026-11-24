@@ -26,9 +26,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 9f70a309a882347a0df658d00c47127f31d28eb9
+source-git-commit: a2ca220e4be9dfb4a90465b69dd08a3552040a07
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '821'
 ht-degree: 15%
 ---
 # 内置软件包 {#built-in-packages}
@@ -57,7 +57,7 @@ Campaign使用两种类型的包。 确保与正确的团队合作。
 
 | 包 | 说明 |
 |---|---|
-| 投放 | 监视投放以及在发送消息时遇到的问题。 [了解详情](../start/monitor.md) |
+| 投放 | Adobe Campaign的强制性核心包。 它可让您发送投放。 [了解详情](../start/gs-message.md) |
 | 营销活动（活动） | 定义、优化、执行和分析通信和营销活动。 [了解详情](../start/campaigns.md) |
 | 营销资源 (MRM) | 在协作模式下控制营销活动，同时管理和跟踪任务、预算和营销资源。 [了解详情](../../automation/mrm/about-marketing-resource-management.md) |
 | 优惠引擎（交互） | 在与联系人的交互期间，通过作出一个或多个自适应优惠实时响应。 [了解详情](../interaction/interaction.md) |

@@ -57,7 +57,7 @@ ht-degree: 3%
 
 1. 选择Adobe Campaign界面的&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡。
 
-   ![ Campaign主页中突出显示的“报告”选项卡，显示内置报告的全局报告列表。](assets/reporting-access-from-home.png)
+   ![&#x200B; Campaign主页中突出显示的“报告”选项卡，显示内置报告的全局报告列表。](assets/reporting-access-from-home.png)
 
 1. 使用搜索字段筛选显示的报表。
 

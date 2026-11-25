@@ -313,7 +313,7 @@ The following indicators are used:
 
   >[!NOTE]
   >
-  >有关硬退回和软退回的详细信息，请参阅Campaign](../send/quarantines.md)中的[隔离管理。
+  >有关硬退回和软退回的详细信息，请参阅Campaign[&#128279;](../send/quarantines.md)中的隔离管理。
 
 * **[!UICONTROL Opens]**：与成功处理的邮件数相比，至少打开过一次邮件的目标收件人数的百分比。
 * **[!UICONTROL Clicks]**：与成功处理的邮件数相比，至少点击过一次投放的用户数的百分比。

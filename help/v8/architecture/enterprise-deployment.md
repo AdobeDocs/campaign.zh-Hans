@@ -42,10 +42,10 @@ topic_v2:
     internal-label: Reporting
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 44%
+source-wordcount: '1093'
+ht-degree: 42%
 ---
 # [!DNL Campaign] FFDA部署 {#gs-ac-ffda}
 
@@ -76,11 +76,11 @@ Campaign v8企业版(FFDA)在流程的任何步骤（从定位到最终报告）
 
 Campaign v8 企业版引入了&#x200B;**完全联合数据访问** (FFDA) 概念：所有数据现在都位于云数据库上的远程位置。
 
-特定 API 可用于管理本地数据库和云数据库之间的数据。 在[本页面](new-apis.md)中了解这些新 API 的工作方式以及如何使用它们。
+特定 API 可用于管理本地数据库和云数据库之间的数据。 了解这些新API的工作方式以及如何在[新Campaign v8 API](new-apis.md)中使用它们。
 
 服务器和进程之间的一般通信按照以下模式进行：
 
-![](assets/architecture.png)
+![具有Snowflake和PgSQL的营销实例，消息中心和Mid Sourcing实例，消费者，跟踪，步骤1到4](assets/architecture.png)
 
 * 实例上已禁用执行和退回管理模块。
 * 应用程序配置为在使用SOAP调用（通过HTTP或HTTPS）驱动的远程“中源”服务器上执行消息。

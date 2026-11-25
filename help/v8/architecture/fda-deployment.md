@@ -36,9 +36,9 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '348'
 ht-degree: 0%
 ---
 # [!DNL Campaign] FDA部署{#gs-fda}
@@ -69,6 +69,6 @@ ht-degree: 0%
 
 服务器和进程之间的一般通信按照以下模式进行：
 
-![](assets/fda-architecture.png)
+![FDA数据流： Campaign Marketing Server、Snowflake、PgSQL、Message Center和Mid Sourcing服务器，编号步骤1至5](assets/fda-architecture.png)
 
 PostgreSQL是主数据库，Snowflake可用作辅助数据库。 您可以扩展数据模型并将数据存储在Snowflake上。 随后，您可以对具有出色性能的大型数据集运行ETL、分段和报告。

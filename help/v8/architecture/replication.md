@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '849'
 ht-degree: 2%
 ---
 # 数据复制 {#wf-data-replication}
@@ -74,7 +74,7 @@ ht-degree: 2%
 
 Campaign v8依靠特定的技术工作流来管理计划的数据复制。 这些技术工作流可从Campaign Explorer的&#x200B;**[!UICONTROL Administration > Production > Technical workflows > Full FFDA Replication]**&#x200B;节点中获取。 **不能修改它们。**
 
-技术工作流在服务器上定期执行进程或作业。 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=zh-Hans){target="_blank"}中详细列出了技术工作流的完整列表。
+技术工作流在服务器上定期执行进程或作业。 [此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}中详细列出了技术工作流的完整列表。
 
 确保数据复制的技术工作流程如下所示：
 
@@ -97,7 +97,7 @@ Campaign v8依靠特定的技术工作流来管理计划的数据复制。 这�
   nms.replicationStrategy.StartReplicateStagingData("dem:sampleTable")
   ```
 
-  ![](assets/jscode.png)
+  ![使用脚本nms.replicationStrategy.StartReplicateStagingData for dem:sampleTable](assets/jscode.png)的JavaScript代码活动
 
 * 使用以下命令添加特定&#x200B;**nlmodule**&#x200B;活动：
 
@@ -105,7 +105,7 @@ Campaign v8依靠特定的技术工作流来管理计划的数据复制。 这�
   nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
   ```
 
-  ![](assets/nlmodule.png)
+  带有参数ffdaReplicateStaging -stagingSchema -instance的![nlserver模块活动:acc1](assets/nlmodule.png)
 
 +++
 
@@ -147,6 +147,6 @@ var xml = xtk.builder.CopyXxlData(
 
 此视频介绍Adobe Campaign v8使用哪些数据库、为何复制数据、正在复制哪些数据以及复制过程的工作方式等关键概念。
 
->[!VIDEO](https://video.tv.adobe.com/v/3416863?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/334460?quality=12)
 
-[此处](https://experienceleague.adobe.com/zh-hans/docs/campaign-learn/tutorials/overview)提供了其他Campaign v8客户端控制台教程。
+[此处](https://experienceleague.adobe.com/en/docs/campaign-learn/tutorials/overview)提供了其他Campaign v8客户端控制台教程。

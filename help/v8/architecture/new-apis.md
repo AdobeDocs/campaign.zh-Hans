@@ -24,10 +24,10 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 4%
+source-wordcount: '492'
+ht-degree: 3%
 ---
 # 特定的FFDA Campaign API{#gs-new-api}
 
@@ -53,7 +53,7 @@ ht-degree: 4%
 
 在&#x200B;**Javascript代码**&#x200B;活动中使用以下代码在云数据库中插入数据，而不进行协调：
 
-```
+```javascript
 var xmlStagingSampleTable = <sampleTableStg
                                 testcol1="testValue1"
                                 testcol2="testValue2"
@@ -65,12 +65,12 @@ logInfo(strUuid);
 
 执行工作流后，会按预期提供暂存表。
 
-通过SOAP调用&#x200B;**&#x200B;**
+通过SOAP调用&#x200B;****
 
 1. 获取身份验证令牌。
 1. 触发API。 有效负载为：
 
-   ```
+   ```xml
    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:xtk:session">
    <soapenv:Header/>
    <soapenv:Body>
@@ -90,7 +90,7 @@ logInfo(strUuid);
 
 1. UUID会在SOAP响应中发送回：
 
-   ```
+   ```xml
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Body>
        <IngestResponse SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns="urn:wpp:default">
@@ -102,7 +102,7 @@ logInfo(strUuid);
 
 因此，会按预期提供暂存表。
 
-![](assets/no-reconciliation.png)
+![暂存模式示例表（暂存）内容列出四个记录，测试列1和测试列2值为](assets/no-reconciliation.png)
 
 ### 插入并协调
 
@@ -110,7 +110,7 @@ logInfo(strUuid);
 
 在&#x200B;**Javascript代码**&#x200B;活动中使用以下代码以通过协调将数据插入云数据库：
 
-```
+```javascript
 var xmlStagingSampleTable = <sampleTableStg  _key="@id" id="ABC12345"
                               testcol1="testValue1"
                               testcol2="testValue2"
@@ -122,15 +122,15 @@ logInfo(strUuid);
 
 执行工作流后，会按预期提供暂存表。
 
-![](assets/with-reconciliation.png)
+![暂存模式示例表（暂存）内容现列出六条记录，包括ABC12345和ABDCD321](assets/with-reconciliation.png)
 
 
-通过SOAP调用&#x200B;**&#x200B;**
+通过SOAP调用&#x200B;****
 
 1. 获取身份验证令牌。
 1. 触发API。 有效负载为：
 
-   ```
+   ```xml
    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:xtk:session">
    <soapenv:Header/>
    <soapenv:Body>
@@ -150,7 +150,7 @@ logInfo(strUuid);
 
 1. 在此情况下，不会将UUID提供回响应，因为它已在有效负载中提供。 响应为：
 
-   ```
+   ```xml
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Body>
        <IngestResponse SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns="urn:wpp:default">
@@ -172,7 +172,7 @@ logInfo(strUuid);
 
 在&#x200B;**Javascript代码**&#x200B;活动中使用以下代码来更新云数据库中的数据：
 
-```
+```javascript
 var xmlStagingRecipient = <sampleTableStg  _key="@id" id="ABC12345"
                               testcol1="testValue A (updated)"
                               testcol2="testValue B (updated)"
@@ -183,14 +183,14 @@ xtk.session.IngestExt(xmlStagingRecipient);
 
 执行工作流后，会按预期更新暂存表。
 
-![](assets/updated-data.png)
+![暂存表内容，其中记录ABC12345现在显示testValue A（已更新）和testValue B（已更新）](assets/updated-data.png)
 
-通过SOAP调用&#x200B;**&#x200B;**
+通过SOAP调用&#x200B;****
 
 1. 获取身份验证令牌。
 1. 触发API。 有效负载为：
 
-   ```
+   ```xml
    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:xtk:session">
    <soapenv:Header/>
    <soapenv:Body>
@@ -210,7 +210,7 @@ xtk.session.IngestExt(xmlStagingRecipient);
 
 1. SOAP响应为：
 
-   ```
+   ```xml
    <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="urn:wpp:default" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Body>
        <IngestExtResponse SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns="urn:wpp:default"/>
@@ -222,7 +222,7 @@ xtk.session.IngestExt(xmlStagingRecipient);
 
 ## 订阅管理 {#sub-apis}
 
-[此页面](../start/subscriptions.md)中介绍了Campaign中的订阅管理。
+Campaign中的订阅管理在[管理Campaign中的订阅和退订](../start/subscriptions.md)中进行了说明。
 
 订阅和退订数据的插入依赖于Campaign本地数据库中的[暂存机制](staging.md)。 订阅者信息临时存储在本地数据库的临时表中，同步工作流将此数据从本地数据库发送到云数据库。 因此，订阅和退订进程是&#x200B;**异步**。 选择加入和选择退出请求每小时通过特定的技术工作流处理。 [了解详情](replication.md#workflows)
 

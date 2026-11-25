@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 8%
+source-wordcount: '704'
+ht-degree: 7%
 ---
 # 设计和发送电子邮件
 
@@ -48,7 +48,7 @@ ht-degree: 8%
 
 创建上下文相关的个性化电子邮件，使它们提供的体验与客户的其他体验保持一致。
 
-![](assets/new-email-content.png)
+![电子邮件投放编辑器，其主题、HTML内容以及跟踪的URL列表显示在下方](assets/new-email-content.png)
 
 
 在以下示例中，您将了解在Adobe Campaign中设计电子邮件投放的步骤，其中包含个性化数据、指向外部URL的链接以及指向镜像页面的链接。
@@ -57,19 +57,19 @@ ht-degree: 8%
 
    要创建新投放，请浏览到&#x200B;**营销活动**&#x200B;选项卡，单击&#x200B;**投放**，然后单击现有投放列表上方的&#x200B;**创建**&#x200B;按钮。
 
-   ![](assets/delivery_step_1.png)
+   在“营销活动”选项卡中显示![投放列表，其中“投放”节点和“创建”按钮突出显示](assets/delivery_step_1.png)
 
 1. **选择模板**
 
    选择投放模板，然后命名您的投放。 此名称仅对Adobe Campaign控制台的用户可见，收件人不可见，不过此标题将显示在投放列表中。 单击 **[!UICONTROL Continue]**。
 
-   ![](assets/dce_delivery_model.png)
+   ![选定电子邮件投放模板并输入标签的新投放对话框，然后继续](assets/dce_delivery_model.png)
 
 1. **导入您的内容**
 
    单击&#x200B;**Source**&#x200B;选项卡以粘贴您的HTML内容。
 
-   ![](assets/paste-content.png)
+   ![打开Source选项卡的电子邮件投放编辑器，显示要粘贴的HTML代码](assets/paste-content.png)
 
    >[!NOTE]
    >
@@ -81,11 +81,11 @@ ht-degree: 8%
 
      要在消息内容中插入目标用户档案的名字和姓氏，请将光标置于要插入它们的位置，单击工具栏中的最后一个图标，然后单击&#x200B;**[!UICONTROL Include]**&#x200B;并选择&#x200B;**[!UICONTROL Greetings]**。
 
-     ![](assets/include-greetings.png)
+     ![Personalization菜单，在电子邮件HTML content中选择了“Include then Greetings”](assets/include-greetings.png)
 
      浏览到预览选项卡，通过选择收件人来检查个性化。
 
-     ![](assets/perso-check.png)
+     ![预览选项卡，在电子邮件文本中选择了收件人，并突出显示个性化问候语](assets/perso-check.png)
 
      在[开始使用个性化](personalize.md)中了解有关个性化选项的更多信息。
 
@@ -95,7 +95,7 @@ ht-degree: 8%
 
      使用以下格式&#x200B;**https://www.myURL.com**&#x200B;在&#x200B;**URL**&#x200B;字段中输入链接的URL，然后确认。
 
-     ![](assets/add-a-link.png)
+     ![添加超文本链接对话框，其中已输入URL并在所选文本上添加“添加”按钮](assets/add-a-link.png)
 
    * 添加镜像页面
 
@@ -105,22 +105,22 @@ ht-degree: 8%
 
      在[添加指向镜像页面的链接](mirror-page.md#link-to-mirror-page)中了解有关管理镜像页面的更多信息。
 
-1. 您可以为电子邮件定义其他参数，如将邮件副本发送到密件抄送地址、更改邮件格式、设置特定编码等。在Adobe Campaign[&#128279;](email-parameters.md)的电子邮件参数中了解详情。
+1. 您可以为电子邮件定义其他参数，如将邮件副本发送到密件抄送地址、更改邮件格式、设置特定编码等。在Adobe Campaign](email-parameters.md)的[电子邮件参数中了解详情。
 
 1. 内容准备就绪后，单击&#x200B;**保存**：该内容现在将显示在&#x200B;**[!UICONTROL Campaigns > Deliveries]**&#x200B;选项卡的投放列表中。
 
 您的第一个电子邮件投放已准备就绪。 您现在需要定义受众、验证投放并发送它。
 
-在此[用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=zh-Hans){target="_blank"}中了解如何创建工作流以导入电子邮件内容。
+在此[用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}中了解如何创建工作流以导入电子邮件内容。
 
 >[!MORELIKETHIS]
 >
 >* [创建投放](../start/create-message.md)
 >* [创建并使用电子邮件模板](create-templates.md)
->* [选择电子邮件的受众](../audiences/gs-audiences.md)
+>* [Select您电子邮件的受众](../audiences/gs-audiences.md)
 >* [验证投放并发送校样](preview-and-proof.md)
 >* [配置并发送投放](configure-and-send.md)
->* [投放最佳实践](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hans){target="_blank"}
+>* [投放最佳实践](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}
 
 ## 测试和验证电子邮件
 

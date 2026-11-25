@@ -33,10 +33,10 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 7%
+source-wordcount: '1158'
+ht-degree: 6%
 ---
 # 创建和发送推送通知{#push-notifications-create}
 
@@ -59,7 +59,7 @@ ht-degree: 7%
 
 要创建新投放，请浏览到&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡，单击&#x200B;**[!UICONTROL Deliveries]**，然后单击现有投放列表上方的&#x200B;**[!UICONTROL Create]**&#x200B;按钮。
 
-![](assets/delivery_step_1.png)
+![“营销活动”选项卡中的投放列表，其中突出显示了投放链接，“创建”按钮上有箭头](assets/delivery_step_1.png)
 
 
 默认情况下，Adobe Campaign附带两个投放模板：一个用于iOS，一个用于Android。 您可以复制它们以定义您自己的设置。 基于这些模板配置推送投放的步骤详述如下。
@@ -72,19 +72,19 @@ ht-degree: 7%
 
 1. 选择&#x200B;**[!UICONTROL Deliver on iOS]**&#x200B;投放模板。
 
-   ![](assets/push_ios_1.png)
+   ![传递模板列表，在单击“继续”之前已选择“在iOS上传递(ios)”](assets/push_ios_1.png)
 
 1. 要定义通知的目标，请单击&#x200B;**[!UICONTROL To]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Add]**。
 
-   ![](assets/push_ios_2.png)
+   ![Select目标对话框，其中包含订阅者应用程序映射和投放目标群体中的“添加”按钮](assets/push_ios_2.png)
 
 1. 选择&#x200B;**[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]**，选择与您的移动应用程序相关的服务，然后选择应用程序的iOS版本。
 
-   ![](assets/push_ios_3.png)
+   ![已选择iOS移动应用程序(iPhone、iPad)的订阅者的Target类型步骤](assets/push_ios_3.png)
 
 1. 选择介于&#x200B;**[!UICONTROL General notification (Alert, Sound, Badge)]**&#x200B;或&#x200B;**[!UICONTROL Silent notification]**&#x200B;之间的&#x200B;**[!UICONTROL Notification type]**。
 
-   ![](assets/push_ios_4.png)
+   ![通知类型的“常规”选项卡：“常规通知”（警报、声音、徽章）或“静默通知”](assets/push_ios_4.png)
 
    >[!NOTE]
    >
@@ -115,7 +115,7 @@ ht-degree: 7%
      >声音必须包含在应用程序中，并在创建服务时定义。
      >
 
-   ![](assets/push_ios_5.png)
+   ![带有标记值、清除标记、严重警报模式和声音名称设置的“声音和标记”选项卡](assets/push_ios_5.png)
 
 1. 在&#x200B;**[!UICONTROL Application variables]**&#x200B;选项卡中，您的&#x200B;**[!UICONTROL Application variables]**&#x200B;将自动添加。 它们允许您定义通知行为，例如，您可以配置在用户激活通知时显示的特定应用程序屏幕。
 
@@ -127,7 +127,7 @@ ht-degree: 7%
 
    * **[!UICONTROL Category]**：将显示操作按钮的类别ID的名称。 这些通知为用户提供了一种更快的方式，无需在应用程序中打开或导航即可响应通知执行不同任务。
 
-   ![](assets/push_ios_6.png)
+   ![高级选项卡，其中的“可变内容”、“线程ID”和“类别”字段突出显示](assets/push_ios_6.png)
 
 1. 对于时效性通知，可以指定以下选项：
 
@@ -147,20 +147,20 @@ ht-degree: 7%
 
    * **[!UICONTROL Relevance score]**：将相关性得分从0设置为100。 系统使用此选项对通知摘要中的通知进行排序。
 
-   ![](assets/push_ios_7.png)
+   ![已填写Target内容ID、启动图像、中断级别和相关性分数的“高级”选项卡](assets/push_ios_7.png)
 
 1. 配置通知后，单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡预览通知。
 
-   ![](assets/push-ios-preview.png)
+   ![在电话模型中显示iOS推送通知标题和消息的“预览”选项卡](assets/push-ios-preview.png)
 
 
 >[!TAB Android]
 
 要在Android设备上发送通知，请执行以下步骤：
 
-1. 选择&#x200B;**[!UICONTROL Deliver on Android (android)]**&#x200B;投放模板。
+1. Select **[!UICONTROL Deliver on Android (android)]**&#x200B;投放模板。
 
-   ![](assets/push-template-android.png)
+   ![传递模板列表，在单击“继续”之前已选择Android (android)上的传递](assets/push-template-android.png)
 
    >[!NOTE]
    > 
@@ -169,15 +169,15 @@ ht-degree: 7%
 
 1. 要定义通知的目标，请单击&#x200B;**[!UICONTROL To]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Add]**。
 
-   ![](assets/push-android-select-target.png)
+   ![Select目标对话框，其中包含订阅者应用程序映射和Android投放的“添加”按钮](assets/push-android-select-target.png)
 
-1. 选择&#x200B;**[!UICONTROL Subscribers of an Android mobile application]**，选择与您的移动应用程序相关的服务（在本例中为Neotrips），然后选择应用程序的Android版本。
+1. 在Select **[!UICONTROL Subscribers of an Android mobile application]**&#x200B;中，选择与您的移动应用程序相关的服务（在本例中为Neotrips），然后选择应用程序的Android版本。
 
-   ![](assets/push-android-subscribers.png)
+   ![已选择Android移动应用程序订阅者的目标类型步骤](assets/push-android-subscribers.png)
 
 1. 然后，输入通知的内容。
 
-   ![](assets/push-android-content.png)
+   ![包含“消息类型”选项、消息文本和“应用程序变量”表的“Android投放内容”选项卡](assets/push-android-content.png)
 
 1. 单击&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;图标将表情符号插入到您的推送通知中。
 

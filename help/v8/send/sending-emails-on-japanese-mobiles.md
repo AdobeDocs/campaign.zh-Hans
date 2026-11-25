@@ -23,9 +23,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '849'
 ht-degree: 1%
 ---
 # 使用日本手机发送电子邮件 {#sending-emails-on-japanese-mobiles}
@@ -36,11 +36,11 @@ Adobe Campaign为手机上的电子邮件管理三种特定的日文格式：**�
 
 为了让收件人正确接收这些格式之一的邮件，我们建议在相应的用户档案中选择&#x200B;**[!UICONTROL Deco-mail (DoCoMo)]**、**[!UICONTROL Decore Mail (Softbank)]**&#x200B;或&#x200B;**[!UICONTROL Decoration Mail (KDDI AU)]**：
 
-![](assets/deco-mail_03.png)
+打开电子邮件格式列表的![收件人“常规”选项卡：未知、文本、HTML、装饰邮件、装饰邮件](assets/deco-mail_03.png)
 
 但是，如果您将&#x200B;**[!UICONTROL Email format]**&#x200B;选项保留为&#x200B;**[!UICONTROL Unknown]**、**[!UICONTROL HTML]**&#x200B;或&#x200B;**[!UICONTROL Text]**，Adobe Campaign将自动检测（发送电子邮件时）要使用的日语格式，以便正确显示邮件。
 
-此自动检测系统基于&#x200B;**[!UICONTROL Management of Email Formats]**&#x200B;邮件规则集中定义的预定义域列表。 有关管理电子邮件格式的更多信息，请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html?lang=zh-Hans#managing-email-formats)。
+此自动检测系统基于&#x200B;**[!UICONTROL Management of Email Formats]**&#x200B;邮件规则集中定义的预定义域列表。 有关管理电子邮件格式的更多信息，请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/email-deliverability.html#managing-email-formats)。
 
 ## 限制和建议 {#limitations-and-recommendations}
 
@@ -73,7 +73,7 @@ Adobe Campaign允许您检查消息格式是否适合发送到日本移动设备
 * 检查消息中的图像数量是否未超过格式所施加的限制（20个图像）
 * 检查邮件总大小（小于100kB）
 
-  ![](assets/deco-mail_06.png)
+  ![预览结果窗口，其中的Deco-mail诊断选项卡列出了不支持的标记和100 kB大小限制的警告](assets/deco-mail_06.png)
 
 ### 运行类型规则 {#running-typology-rule}
 
@@ -91,7 +91,7 @@ Adobe Campaign允许您检查消息格式是否适合发送到日本移动设备
 
 例如，如果事先在&#x200B;**[!UICONTROL Decore Mail (Softbank)]**&#x200B;上定义了此配置文件的电子邮件格式，则可以使用test@softbank.ne.jp替换此配置文件的地址。
 
-![](assets/deco-mail_05.png)
+![使用映射到配置文件的softbank.ne.jp测试地址替换地址模式发送验证对话框](assets/deco-mail_05.png)
 
 ## 发送消息 {#sending-messages}
 
@@ -106,9 +106,9 @@ Adobe Campaign允许您检查消息格式是否适合发送到日本移动设备
 
 为此，请在工作流中使用&#x200B;**[!UICONTROL Split]**&#x200B;活动，并将日文电子邮件格式（装饰邮件、装饰邮件和装饰邮件）定义为筛选条件。
 
-![](assets/deco-mail_08.png)
+![筛选对话框，其中包含三个电子邮件格式条件，这些条件组合为Or：装饰邮件、装饰邮件和装饰邮件](assets/deco-mail_08.png)
 
-![](assets/deco-mail_07.png)
+![工作流：查询、重复数据删除，然后按电子邮件格式拆分到日文手机投放和标准投放](assets/deco-mail_07.png)
 
 ### 为所有格式设计投放 {#designing-a-delivery-for-all-formats}
 

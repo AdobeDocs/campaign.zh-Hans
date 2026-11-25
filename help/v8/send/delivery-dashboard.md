@@ -33,9 +33,9 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1279'
 ht-degree: 3%
 ---
 # 在Campaign UI中监控投放 {#delivery-dashboard}
@@ -46,7 +46,7 @@ ht-degree: 3%
 
 您可以通过树的&#x200B;**[!UICONTROL Campaign Management > Deliveries]**&#x200B;节点，从投放列表访问投放。
 
-![](assets/deliveries-list.png)
+![投放列表位于营销活动管理下，具有状态和消息计数，所选投放仪表板位于下](assets/deliveries-list.png)
 
 默认情况下，投放列表包含在所选节点中创建的投放的名称和状态。 它还显示成功发送、处理和发送的消息数。
 
@@ -73,7 +73,7 @@ ht-degree: 3%
 * [投放呈现](#delivery-rendering)
 * [投放审核](#delivery-audit-)
 
-![](assets/s_ncs_user_del_details.png)
+![传递仪表板摘要选项卡，用于发送、处理和成功数据、状态和电子邮件配置](assets/s_ncs_user_del_details.png)
 
 **相关主题：**
 
@@ -92,7 +92,7 @@ ht-degree: 3%
 
 可以根据您的要求配置此选项卡的内容。 有关投放报告的详细信息，请参阅[Adobe Campaign内置投放报告](../reporting/delivery-reports.md)。
 
-![](assets/delivery-report.png)
+![投放摘要选项卡的报告视图，其中列出了可用的投放报告](assets/delivery-report.png)
 
 ## 投放日志、历史记录和排除项 {#delivery-logs-and-history}
 
@@ -104,13 +104,13 @@ ht-degree: 3%
 >
 >显示投放日志的列表可与Campaign中的任何列表一样进行自定义。 例如，您可以添加一列来了解在投放中发送了每封电子邮件的IP地址。 有关配置列表显示的详细信息，请参阅[管理和自定义列表](../config/ui-settings.md#customize-lists)。
 
-![](assets/s_ncs_user_delivery_delivery_tab.png)
+![带有状态筛选器下拉列表的“投放日志”子选项卡，其中列出了投放日志状态](assets/s_ncs_user_delivery_delivery_tab.png)
 
 **[!UICONTROL Display the mirror page for this message...]**&#x200B;链接允许您在新窗口中查看从列表中选择的投放内容的镜像页面。
 
 镜像页面仅适用于已为其定义HTML内容的投放。 有关详细信息，请参阅[指向镜像页面的链接](mirror-page.md)。
 
-![](assets/s_ncs_user_wizard_miror_page_link.png)
+![传递日志列表，其中突出显示此消息链接的镜像页面](assets/s_ncs_user_wizard_miror_page_link.png)
 
 ## 投放跟踪日志和历史记录 {#tracking-logs}
 
@@ -124,7 +124,7 @@ ht-degree: 3%
 
 **[!UICONTROL Tracking]**&#x200B;数据在投放报告中被解释。 查看[Adobe Campaign内置投放报告](../reporting/delivery-reports.md)。
 
-![](assets/s_ncs_user_delivery_tracking_tab.png)
+![跟踪选项卡日志子选项卡列表包含日期、标签、类型和收件人的跟踪打开次数和点击次数](assets/s_ncs_user_delivery_tracking_tab.png)
 
 ## 收件箱呈现 {#delivery-rendering}
 
@@ -132,7 +132,7 @@ ht-degree: 3%
 
 这样，您就可以确保以最佳方式在各种Web客户端、Web邮件和设备上向收件人显示您的消息。
 
-有关收件箱渲染的更多信息，请参阅Campaign[&#128279;](inbox-rendering.md)中的收件箱渲染
+有关收件箱渲染的更多信息，请参阅Campaign](inbox-rendering.md)中的[收件箱渲染
 
 
 ## 投放审核 {#delivery-audit-}
@@ -145,7 +145,7 @@ ht-degree: 3%
 
 **[!UICONTROL Proofs]**&#x200B;子选项卡允许您查看已发送的校样列表。
 
-![](assets/s_ncs_user_delivery_log_tab.png)
+![审核选项卡验证子选项卡列出了为投放发送的验证以及要发送、处理和成功的消息](assets/s_ncs_user_delivery_log_tab.png)
 
 通过选择要显示的列，您可以修改此窗口中显示的信息（以及&#x200B;**[!UICONTROL Delivery]**&#x200B;和&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡的信息）。 为此，请单击位于右下角的&#x200B;**[!UICONTROL Configure list]**&#x200B;图标。 有关配置列表显示的详细信息，请参阅[管理和自定义列表](../config/ui-settings.md#customize-lists)。
 
@@ -159,7 +159,7 @@ ht-degree: 3%
 
 * 如果投放计数器与您的投放不匹配，请尝试重新计算指示器，方法是在Adobe Campaign资源管理器中右键单击相关投放，然后选择&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**&#x200B;以重新同步。 有关跟踪指示器的详细信息，请参阅此[部分](../reporting/delivery-reports.md#tracking-indicators)。
 
-您还可以通过投放仪表板使用不同的报告跟踪您的投放。 有关更多信息，请参阅此[&#128279;](../reporting/delivery-reports.md)章节。
+您还可以通过投放仪表板使用不同的报告跟踪您的投放。 有关更多信息，请参阅此](../reporting/delivery-reports.md)章节[。
 
 >[!NOTE]
 >

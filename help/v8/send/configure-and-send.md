@@ -19,10 +19,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 9%
+source-wordcount: '1440'
+ht-degree: 7%
 ---
 # 配置和发送投放 {#configure-delivery}
 
@@ -32,7 +32,7 @@ ht-degree: 9%
 
 在发送投放之前，您可以通过&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡在投放属性中定义发送参数。
 
-![](assets/delivery-properties-delivery.png)
+![包含优先级、批次、重试、个性化和邮件格式设置的投放属性“投放”选项卡](assets/delivery-properties-delivery.png)
 
 ### 投放优先级 {#delivery-priority}
 
@@ -54,7 +54,7 @@ ht-degree: 9%
 >
 >* 不得在中间源中设置此选项。
 >
->* 请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html?lang=zh-Hans#smtp-relay){target="_blank"}以了解有关SMTP服务器配置的更多信息。
+>* 请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html#smtp-relay){target="_blank"}以了解有关SMTP服务器配置的更多信息。
 
 ## 使用多批次发送 {#sending-using-multiple-waves}
 
@@ -67,7 +67,7 @@ ht-degree: 9%
 1. 打开投放属性并浏览到&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡。
 1. 启用&#x200B;**[!UICONTROL Send using multiple waves]**&#x200B;选项，然后单击&#x200B;**[!UICONTROL Define waves...]**&#x200B;链接。
 
-   ![](assets/delivery-define-waves.png)
+   ![已选择“使用多个批次发送”且“定义批次”链接高亮显示的“投放”选项卡](assets/delivery-define-waves.png)
 
 ### 配置批次 {#config-waves}
 
@@ -81,13 +81,13 @@ ht-degree: 9%
 
   在&#x200B;**[!UICONTROL Period]**&#x200B;字段中，指定两个连续批次开始之间的延迟。 例如，如果输入&#x200B;**[!UICONTROL 2d]**，则第一个波段将立即开始，第二个波段将在两天内开始，第三个波段将在四天内开始，依此类推。
 
-  ![](assets/delivery-waves-size.png)
+  ![波次定义对话框，将大小相等的波次设置为30%，且波次之间有2d周期](assets/delivery-waves-size.png)
 
 * **定义发送每个批次的日历**。  例如，第一波表示投放中包含的消息总数的25%，将立即开始。 接下来的两个批次将完成投放，并设置为以六小时间隔开始。
 
   在&#x200B;**[!UICONTROL Start]**&#x200B;列中，指定两个连续批次开始之间的延迟。 在&#x200B;**[!UICONTROL Size]**&#x200B;列中，输入固定数字或百分比。
 
-  ![](assets/delivery-waves-calendar.png)
+  ![波形定义对话框，包含三个波形的日历：0秒时为25%，6小时时为50%，6小时时为25%](assets/delivery-waves-calendar.png)
 
 ### 波动计划检查 {#check-waves}
 
@@ -120,7 +120,7 @@ ht-degree: 9%
 
   为此，请使用&#x200B;**[!UICONTROL Schedule waves according to a calendar]**&#x200B;选项。 例如，将第一个波次设置为10%，将第二个波次设置为15%，以此类推。
 
-  ![](assets/delivery-waves-ex-ramp-up.png)
+  ![包含五个批次的批次定义日历，从10%增加到30%，间隔12小时](assets/delivery-waves-ex-ramp-up.png)
 
 * **具有呼叫中心的营销活动**
 
@@ -130,7 +130,7 @@ ht-degree: 9%
 
   为此，请选择&#x200B;**[!UICONTROL Schedule multiple waves of the same size]**&#x200B;选项。 输入&#x200B;**[!UICONTROL 20]**&#x200B;作为波次大小，并在&#x200B;**[!UICONTROL Period]**&#x200B;字段中输入&#x200B;**[!UICONTROL 1d]**。
 
-  ![](assets/delivery-waves-ex-call-center.png)
+  ![具有20条消息和1d周期等大小批次的“批次定义”对话框](assets/delivery-waves-ex-call-center.png)
 
 ## 确认投放 {#confirm-delivery}
 
@@ -145,11 +145,11 @@ ht-degree: 9%
 
 1. 单击 **[!UICONTROL Analyze]**。 有关此内容的详细信息，请参阅[投放分析](delivery-analysis.md)。
 
-   ![](assets/delivery-send-analyze.png)
+   ![选择“尽快投放”并突出显示“分析”按钮，以发送到主要投放目标对话框](assets/delivery-send-analyze.png)
 
 1. 完成后，单击&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;以启动邮件的投放。
 
-   ![](assets/delivery-send-confirm.png)
+   ![分析后发送到主投放目标对话框，并突出显示“确认投放”按钮](assets/delivery-send-confirm.png)
 
 1. 您可以关闭投放向导，并从&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡中跟踪投放的执行情况，可通过此投放的详细信息或投放列表访问该选项卡。
 
@@ -168,7 +168,7 @@ ht-degree: 9%
 
 1. 在&#x200B;**[!UICONTROL Contact date]**&#x200B;字段中指定开始日期。
 
-   ![](assets/delivery-send-postpone.png)
+   ![通过延迟选定的投放并输入联系日期发送到主投放目标对话框](assets/delivery-send-postpone.png)
 
 1. 开始投放分析并确认投放发送。 但是，在&#x200B;**[!UICONTROL Contact date]**&#x200B;字段中给定的日期之前，不会开始投放发送。
 
@@ -176,13 +176,13 @@ ht-degree: 9%
    >
    >开始分析后，您定义的联系日期即是固定的。 如果修改此日期，则必须重新启动分析，以便考虑所做的修改。
 
-   ![](assets/delivery-send-scheduled.png)
+   ![传递准备完成消息，其中显示计划于日期的传递和确认传递按钮](assets/delivery-send-scheduled.png)
 
 在投放列表中，投放将以&#x200B;**[!UICONTROL Pending]**&#x200B;状态显示。
 
 也可以通过投放的&#x200B;**[!UICONTROL Scheduling]**&#x200B;按钮在上游配置计划。
 
-![](assets/delivery-scheduling-button.png)
+![从“计划”按钮中打开了“计划”对话框，并选择了计划提交（无自动执行）](assets/delivery-scheduling-button.png)
 
 这样，您可以将投放推迟到以后的日期，或将投放保存在临时日程表中。
 
@@ -198,7 +198,7 @@ ht-degree: 9%
 
 例如，如果您安排在伦敦时间8点自动执行投放，则该时间将自动转换为所选时区：
 
-![](assets/delivery-schedule-time-zone.png)
+![打开时区下拉列表的计划对话框，以将联系日期转换为另一个时区](assets/delivery-schedule-time-zone.png)
 
 <!--
 ## Adjust delivery failure management {#delivery-failure-management}

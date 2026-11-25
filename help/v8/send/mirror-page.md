@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 56%
+source-wordcount: '482'
+ht-degree: 50%
 ---
 # 链接到镜像页面 {#mirror-page}
 
@@ -51,7 +51,7 @@ Adobe Campaign 生成的镜像页面包含所有个性化数据。
 
 在 Adobe Campaign 中，您可以使用专用&#x200B;**个性化块**&#x200B;在电子邮件内容中插入指向镜像页面的链接。 内置的&#x200B;**指向镜像页面的链接**&#x200B;个性化块会在电子邮件内容中插入以下代码：`<%@ include view='MirrorPage' %>`。
 
-![](assets/mirror-page-insert.png){width="800"}
+![电子邮件编辑器个性化菜单，选择“包含”，然后选择“链接到镜像页面”](assets/mirror-page-insert.png){width="800"}
 
 
 有关插入个性化内容块的更多信息，请参阅[个性化块](personalization-blocks.md)。
@@ -65,7 +65,7 @@ Adobe Campaign 生成的镜像页面包含所有个性化数据。
 1. 浏览到电子邮件属性的&#x200B;**[!UICONTROL Validity]**&#x200B;选项卡。
 1. 在&#x200B;**镜像页面管理**&#x200B;部分中，检查&#x200B;**[!UICONTROL Mode]**&#x200B;下拉列表。
 
-![](assets/mirror-page-generation.png){width="800"}
+![有效性选项卡，镜像页面管理模式下拉列表列出了四个生成选项](assets/mirror-page-generation.png){width="800"}
 
 除默认模式外，还提供以下选项：
 
@@ -83,6 +83,6 @@ Adobe Campaign 生成的镜像页面包含所有个性化数据。
 
 1. Select一个收件人，然后单击&#x200B;**[!UICONTROL Display the mirror page for this message...]**&#x200B;链接。
 
-   ![](assets/mirror-page-display.png){width="800"}
+   ![已选定日志的投放日志，并在左下角显示此消息链接的镜像页面](assets/mirror-page-display.png){width="800"}
 
    镜像页面显示在专用屏幕中，其中包含选定收件人的个性化数据。

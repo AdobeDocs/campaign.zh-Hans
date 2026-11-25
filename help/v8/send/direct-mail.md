@@ -27,9 +27,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '985'
 ht-degree: 5%
 ---
 # 创建直邮投放
@@ -57,7 +57,7 @@ ht-degree: 5%
 1. 创建新投放，例如从投放仪表板。
 1. 选择投放模板&#x200B;**通过直邮（纸张）投放**。
 
-   ![](assets/direct_mail.png)
+   ![与列表中选定的“直邮（纸张）投放”模板的“新建投放”对话框](assets/direct_mail.png)
 
 1. 使用标签、代码和描述标识投放。 有关详情，请参阅[创建投放](../start/create-message.md#create-the-delivery)。
 1. 单击&#x200B;**继续**&#x200B;以确认此信息并显示消息配置窗口。
@@ -80,21 +80,21 @@ ht-degree: 5%
 
 默认情况下，将创建提取文件并将其存储在服务器上。 您可以将其保存在计算机上。 为此，请检查&#x200B;**[!UICONTROL Download the generated file after the analysis of the delivery]**。 在这种情况下，您需要指明本地存储目录的访问路径以及文件名。
 
-![](assets/s_ncs_user_mail_delivery_local_file.png)
+![“提取”选项卡，选中“下载生成的文件”选项，并输入本地文件路径](assets/s_ncs_user_mail_delivery_local_file.png)
 
 对于直邮投放，提取的内容在&#x200B;**[!UICONTROL Edit the extraction file format...]**&#x200B;链接中定义。
 
-![](assets/s_ncs_user_mail_delivery_format_link.png)
+![提取选项卡，突出显示了“编辑提取文件格式”链接](assets/s_ncs_user_mail_delivery_format_link.png)
 
 利用此链接，可访问提取助理并定义要导出到输出文件中的信息（列）。
 
-![](assets/s_ncs_user_mail_delivery_format_wz.png)
+![要提取的数据向导，其字段已从可用字段拖入输出列](assets/s_ncs_user_mail_delivery_format_wz.png)
 
 您可以在提取文件中插入个性化URL。 有关详细信息，请参阅[发布Web窗体](../dev/web/publishing-a-web-form.md)。
 
 >[!NOTE]
 >
->此助理包括导出助理的步骤，详情请参见Adobe Campaign Classic [文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html?lang=zh-Hans){target="_blank"}。
+>此助理包括导出助理的步骤，详情请参见Adobe Campaign Classic [文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html){target="_blank"}。
 
 ## 验证投放{#validating}
 
@@ -116,7 +116,7 @@ ht-degree: 5%
 
 发送确认会启动指定文件中的数据提取。
 
-![](assets/s_ncs_user_postal_del_send_confirm_postal.png)
+对于处于待处理状态的直邮投放，![开始传递确认对话框，状态为“确定”和“取消”](assets/s_ncs_user_postal_del_send_confirm_postal.png)
 
 然后，您可以关闭此助手，并通过&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡查看投放日志，可通过投放详细信息访问选项卡。
 

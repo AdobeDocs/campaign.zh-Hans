@@ -39,10 +39,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 18%
+source-wordcount: '1153'
+ht-degree: 16%
 ---
 # 使用投放模板 {#work-with-delivery-template}
 
@@ -59,7 +59,7 @@ ht-degree: 18%
 * 内容、公司徽标或签名
 * 其他投放属性，例如资源有效性、重试参数或隔离设置。
 
-![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#delivery-template-video)
+![视频链接的“播放”图标](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#delivery-template-video)
 
 投放模板存储在资源管理器的&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;文件夹中。 在Adobe Campaign中，您可以使用两种类型的模板：
 
@@ -85,18 +85,18 @@ Campaign为每个渠道提供了一组内置模板：电子邮件、推送、短
 要复制投放模板，请执行以下步骤：
 
 1. 浏览Adobe Campaign资源管理器中的&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**。
-1. Select是内置的投放模板。 内置模板在列表中加粗。
+1. 选择内置投放模板。 内置模板在列表中加粗。
 1. 右键单击并选择&#x200B;**[!UICONTROL Duplicate]**。
 
-   ![](assets/duplicate-built-in-template.png)
+   ![已打开右键单击菜单并在内置模板上选择“复制”的投放模板列表](assets/duplicate-built-in-template.png)
 
 1. 定义模板设置并保存新模板。
 
-   ![](assets/delivery-template-new.png)
+   ![带有标签、发件人地址、主题和HTML内容的重复电子邮件模板的属性](assets/delivery-template-new.png)
 
 该模板已添加到投放模板列表中。 您现在可以在创建新投放时选择它。
 
-![](assets/select-the-new-template.png)
+![投放模板下拉列表，其中列出了内置模板和新的自定义模板公告电子邮件投放](assets/select-the-new-template.png)
 
 ### 将现有投放转换为模板 {#convert-an-existing-delivery}
 
@@ -104,15 +104,15 @@ Campaign为每个渠道提供了一组内置模板：电子邮件、推送、短
 
 要将投放转换为模板，请执行以下步骤：
 
-1. Select投放列表中的投放，可通过Campaign资源管理器的&#x200B;**[!UICONTROL Campaign management]**&#x200B;节点访问。
+1. 从可通过Campaign资源管理器的&#x200B;**[!UICONTROL Campaign management]**&#x200B;节点访问的投放列表中选择投放。
 
 1. 右键单击并选择&#x200B;**[!UICONTROL Actions > Save as template...]**。
 
-   ![](assets/save-as-template.png)
+   ![选择了操作和另存为模板的传递列表右键单击菜单](assets/save-as-template.png)
 
 1. 编辑投放属性并选择必须保存新模板的文件夹（在&#x200B;**[!UICONTROL Folder]**&#x200B;字段中）以及必须基于此模板创建投放的文件夹（在&#x200B;**[!UICONTROL Execution folder]**&#x200B;字段中）。
 
-   ![](assets/template-select-folders.png)
+   ![包含新模板的执行文件夹、文件夹和路由字段的投放属性](assets/template-select-folders.png)
 
 ### 创建新的模板 {#create-a-new-template}
 
@@ -140,11 +140,11 @@ Campaign为每个渠道提供了一组内置模板：电子邮件、推送、短
 
 要基于现有模板创建投放，请从可用投放模板列表中选择模板。
 
-![](assets/select-the-new-template.png)
+![投放模板下拉列表，其中列出了内置模板和新的自定义模板公告电子邮件投放](assets/select-the-new-template.png)
 
 如果看不到模板，请单击字段右侧的&#x200B;**[!UICONTROL Select link]**&#x200B;文件夹以浏览Campaign文件夹。
 
-![](assets/browse-templates.png)
+显示投放模板的![文件夹选择对话框，从投放模板字段](assets/browse-templates.png)中打开
 
 从&#x200B;**[!UICONTROL Folder]**&#x200B;字段中Select所需的目录，或单击&#x200B;**[!UICONTROL Display sub-levels]**&#x200B;图标以显示当前目录子树中目录的内容。
 
@@ -152,7 +152,7 @@ Select要使用的投放模板，然后单击&#x200B;**[!UICONTROL Ok]**。
 
 ### 执行模板 {#execute-a-template}
 
-您可以直接从模板列表启动模板执行，而无需先创建投放。 投放模板可以手动执行（如下所述），也可以由事件触发（在设置时间执行，当文件在服务器中可用等），如[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/action-activities/delivery)中所述。
+您可以直接从模板列表启动模板执行，而无需先创建投放。 投放模板可以手动执行（如下所述），也可以由事件触发（在设置时间执行，当文件在服务器中可用等），如[此部分](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/delivery)中所述。
 
 要手动执行模板，请执行以下步骤：
 
@@ -160,7 +160,7 @@ Select要使用的投放模板，然后单击&#x200B;**[!UICONTROL Ok]**。
 
    您也可以使用&#x200B;**[!UICONTROL File>Actions>Execute the delivery template...]**。
 
-   ![](assets/execute-delivery-template.png)
+   ![已选择“执行投放模板”菜单选项的投放模板列表](assets/execute-delivery-template.png)
 
 1. 输入投放参数并单击&#x200B;**[!UICONTROL Send]**。
 
@@ -172,18 +172,18 @@ Select要使用的投放模板，然后单击&#x200B;**[!UICONTROL Ok]**。
 
 以下视频演示了如何为临时投放配置模板。
 
->[!VIDEO](https://video.tv.adobe.com/v/3409243?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/342082?quality=12)
 
 ### 如何设置投放模板属性
 
 以下视频介绍了如何设置投放模板属性，并详细说明每个属性。
 
->[!VIDEO](https://video.tv.adobe.com/v/3443411?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/338969?quality=12)
 
 ### 如何部署临时投放模板
 
 此视频介绍了如何部署临时电子邮件投放模板，并说明了电子邮件投放与投放工作流之间的区别。
 
->[!VIDEO](https://video.tv.adobe.com/v/3444967?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/338965?quality=12)
 
-[此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html?lang=zh-Hans){target="_blank"}提供了其他Campaign操作方法视频。
+[此处](https://experienceleague.adobe.com/docs/campaign-learn/tutorials/getting-started/introduction-to-adobe-campaign.html){target="_blank"}提供了其他Campaign操作方法视频。

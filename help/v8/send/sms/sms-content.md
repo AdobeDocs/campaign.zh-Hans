@@ -29,9 +29,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '334'
 ht-degree: 1%
 ---
 # 定义短信的内容 {#sms-content}
@@ -40,25 +40,25 @@ ht-degree: 1%
 
 1. 在&#x200B;**[!UICONTROL Text content]**&#x200B;选项卡中输入消息的内容。
 
-   ![](assets/sms_content.png){zoomable="yes"}
+   ![输入了消息文本的短信投放的文本内容选项卡](assets/sms_content.png){zoomable="yes"}
 
 1. 您可以通过插入个性化字段（例如添加名字）或插入预定义的个性化块（例如添加问候语）来对消息进行个性化设置。 单击个性化按钮以添加以下内容：
 
-   ![](assets/sms_perso.png){zoomable="yes"}
+   在短信文本内容中打开![Personalization菜单，收件人子菜单显示名字和其他字段](assets/sms_perso.png){zoomable="yes"}
 
    例如，在单击&#x200B;**[!UICONTROL Recipient]** > **[!UICONTROL First name]**&#x200B;后，短信内容将更新为个性化字段，如下所示：
 
-   ![](assets/sms_perso_recipient.png){zoomable="yes"}
+   ![在消息中插入名字个性化字段的短信文本内容](assets/sms_perso_recipient.png){zoomable="yes"}
 
    在[开始使用个性化](../personalize.md)中了解有关Adobe Campaign中个性化的更多信息。
 
 1. 您可以从&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡预览投放内容。 要检查您的个性化设置，请单击&#x200B;**[!UICONTROL Test personalization]**&#x200B;下拉列表，然后选择收件人。
 
-   ![](assets/sms_preview.png){zoomable="yes"}
+   ![SMS的“预览”选项卡，其中的“测试个性化”下拉菜单打开以选择收件人](assets/sms_preview.png){zoomable="yes"}
 
    您可以通过个性化检查短信预览：
 
-   ![](assets/sms_preview_phone.png){zoomable="yes"}
+   ![SMS预览，名字被收件人值替换，显示为文本并在电话模型上显示](assets/sms_preview_phone.png){zoomable="yes"}
 
 >[!NOTE]
 >

@@ -35,16 +35,16 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '576'
 ht-degree: 4%
 ---
 # 投放状态 {#delivery-statuses}
 
 发送投放后，投放仪表板会显示一个状态，允许您监测发送是否成功。 可能的状态详见下节。
 
-![](assets/delivery-status.png)
+![状态字段突出显示的投放仪表板摘要，显示已完成和完成日期](assets/delivery-status.png)
 
 有关您可以遇到的不同投放失败以及如何解决这些失败的更多详细信息，请参阅[了解投放失败](delivery-failures.md)。
 
@@ -122,7 +122,7 @@ ht-degree: 4%
 
   在&#x200B;**[!UICONTROL NmsOperation_LimitConcurrency]**&#x200B;选项中定义了同时营销活动的限制。 默认值为 10。
 
-  作为托管Cloud Services用户，您可以根据需要使用Adobe调整此限制。 请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=zh-Hans){target="_blank"}以了解有关选项的更多信息。
+  作为托管Cloud Services用户，您可以根据需要使用Adobe调整此限制。 请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html){target="_blank"}以了解有关选项的更多信息。
 
 * **资源可用性问题**
 

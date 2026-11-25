@@ -26,10 +26,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 9%
+source-wordcount: '793'
+ht-degree: 8%
 ---
 # 收件箱呈现{#inbox-rendering}
 
@@ -72,7 +72,7 @@ Litmus是一款功能丰富的电子邮件验证和预览应用程序。 它允�
 
 剩余可用令牌的数量显示在[收件箱呈现报告](#inbox-rendering-report)中。
 
-![](assets/s_tn_inbox_rendering_tokens.png)
+![收件箱呈现结果报告，其中突出显示了每月包中使用的令牌数量](assets/s_tn_inbox_rendering_tokens.png)
 
 通常，收件箱呈现功能用于测试新设计电子邮件的HTML框架。 每次渲染大约需要70个令牌（具体取决于通常测试的环境数量）。 但是，在某些情况下，您可能需要多个收件箱呈现报告才能完全测试您的投放。 因此，可能需要更多令牌才能完成多项检查。
 
@@ -87,17 +87,17 @@ Litmus是一款功能丰富的电子邮件验证和预览应用程序。 它允�
 
 1. 选择&#x200B;**[!UICONTROL Analyze]**&#x200B;以启动捕获进程。
 
-   ![](assets/s_tn_inbox_rendering_button.png)
+   投放工具栏中的![收件箱呈现按钮和收件箱呈现对话框的分析按钮](assets/s_tn_inbox_rendering_button.png)
 
    已发送校样。 发送电子邮件后几分钟内，即可在该验证中访问渲染缩略图。 有关发送校样的更多信息，请参阅[发送校样](preview-and-proof.md#send-proofs)。
 
 1. 发送后，验证会显示在投放列表中。 双击它。
 
-   ![](assets/s_tn_inbox_rendering_delivery_list.png)
+   ![发送后选择的电子邮件投放证明的投放列表](assets/s_tn_inbox_rendering_delivery_list.png)
 
 1. 转到验证的&#x200B;**收件箱渲染**&#x200B;选项卡。
 
-   ![](assets/s_tn_inbox_rendering_tab.png)
+   ![验证的“收件箱呈现”选项卡，突出显示，带有报告摘要和移动部分](assets/s_tn_inbox_rendering_tab.png)
 
    此时将显示收件箱呈现报告。
 
@@ -107,14 +107,14 @@ Litmus是一款功能丰富的电子邮件验证和预览应用程序。 它允�
 
 顶部部分通过图形颜色编码表示表示对接收的消息、不需要的（垃圾邮件）、未接收的消息或待接收的消息的数量进行重新分区。
 
-![](assets/s_tn_inbox_rendering_summary.png){width="40%"}
+![收件箱、垃圾邮件、未收到和等待接收的饼图，其中未收到和等待隐藏](assets/s_tn_inbox_rendering_summary.png){width="40%"}
 
 将鼠标悬停在图表上以显示每种颜色的详细信息。 单击列表上的项目可隐藏或显示图表中的相应类别。
 
 报告正文分为三部分： **[!UICONTROL Mobile]**、**[!UICONTROL Desktop]**&#x200B;和&#x200B;**[!UICONTROL Webmails]**。 向下滚动报告，可显示分组到这三个类别中的所有渲染。
 
-![](assets/s_tn_inbox_rendering_report.png)
+收件箱呈现报告的![网页邮件部分，其中包含每个网页邮件和浏览器组合的卡片](assets/s_tn_inbox_rendering_report.png)
 
 要获取各个报告的详细信息，请单击相应的卡。 将针对所选的接收方式显示对应的渲染。
 
-![](assets/s_tn_inbox_rendering_example.png)
+![在Chrome上的Gmail中电子邮件的详细呈现（从报告中的卡打开）](assets/s_tn_inbox_rendering_example.png)

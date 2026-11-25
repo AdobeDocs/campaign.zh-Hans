@@ -28,9 +28,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1322'
 ht-degree: 2%
 ---
 # SMPP连接器描述 {#smpp-connector-desc}
@@ -41,7 +41,7 @@ ht-degree: 2%
 
 这是一个概要框图，其中汇总了短信流程与其环境的交互方式。
 
-![](assets/smsv2_highlevel.png){zoomable="yes"}
+![短信进程，SMPP连接器和SR协调链接到Campaign数据库和SMPP提供程序](assets/smsv2_highlevel.png){zoomable="yes"}
 
 SMS流程托管2个重要组件：SMPP连接器本身，它处理与SMPP提供商的通信，以及SR协调的后台任务。
 
@@ -91,7 +91,7 @@ SMS进程轮询nms:extAccount并在其SMPP连接器中派生新连接，传递�
 
 下图描述了整个过程：
 
-![](assets/message_processing.png){zoomable="yes"}
+![广泛日志、providerMsgId、providerMsgStatus、SMPP连接器和提供程序之间的三个阶段的序列图](assets/message_processing.png){zoomable="yes"}
 
 **阶段1**
 

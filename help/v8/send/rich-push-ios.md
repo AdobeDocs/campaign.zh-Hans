@@ -25,16 +25,16 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1119'
-ht-degree: 5%
+source-wordcount: '1338'
+ht-degree: 4%
 ---
 # 设计 iOS 富推送投放 {#rich-push}
 
 >[!IMPORTANT]
 >
->在设计富推送通知之前，您首先需要配置V2连接器。 有关详细过程，请参阅[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application)。
+>在设计富推送通知之前，您首先需要配置V2连接器。 有关详细过程，请参阅[此页面](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/sending-push-notifications/configure-the-mobile-app/configuring-the-mobile-application)。
 
 ## 定义iOS通知的内容 {#push-message}
 
@@ -56,7 +56,7 @@ ht-degree: 5%
 
 1. 从&#x200B;**[!UICONTROL Notification Type]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Default]**。
 
-   ![](assets/rich_push_ios_default_1.png)
+   ![“常规”选项卡，“通知类型”下拉列表为“默认”、“基本”、“轮播”和“计时器”](assets/rich_push_ios_default_1.png)
 
 1. 在&#x200B;**[!UICONTROL Title]**&#x200B;字段中，输入要显示在通知中心可用通知列表中的标题标签。
 
@@ -66,17 +66,17 @@ ht-degree: 5%
 
 1. 在向导的&#x200B;**[!UICONTROL Message content]**&#x200B;部分中输入消息的内容。
 
-   ![](assets/rich_push_ios_default_2.png)
+   ![已填写默认通知类型、标题和消息内容的“常规”选项卡](assets/rich_push_ios_default_2.png)
 
 1. 导航到&#x200B;**[!UICONTROL Sound and Badge]**&#x200B;选项卡以自定义其他设置，如通知的声音和徽章选项。 [了解详情](#sound-badge)
 
-   ![](assets/rich_push_ios_default_3.png)
+   ![已选中“清理徽章”、“严重警报模式”和“声音名称”设置的“声音和徽章”选项卡](assets/rich_push_ios_default_3.png)
 
 1. 在&#x200B;**[!UICONTROL Application variables]**&#x200B;选项卡中，您的&#x200B;**[!UICONTROL Application variables]**&#x200B;将自动添加。 它们允许您定义通知行为，例如，您可以配置在用户激活通知时显示的特定应用程序屏幕。
 
 1. 要进一步自定义，请浏览可用于推送通知的&#x200B;**[!UICONTROL Advanced options]**。 [了解详情](#push-advanced)
 
-   ![](assets/rich_push_ios_default_4.png)
+   ![包含“线程ID”、“类别”、“目标内容ID”、“启动图像”和“相关性”分数字段的“高级”选项卡](assets/rich_push_ios_default_4.png)
 
 1. 配置通知后，单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡预览通知。
 
@@ -86,13 +86,13 @@ ht-degree: 5%
 
 1. 从&#x200B;**[!UICONTROL Notification Type]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Basic]**。
 
-   ![](assets/rich_push_ios_basic_1.png)
+   ![已选择“基本”的“通知类型”下拉列表，正在添加扩展的标题和扩展的消息字段](assets/rich_push_ios_basic_1.png)
 
 1. 若要撰写邮件，请在&#x200B;**[!UICONTROL Title]**、**[!UICONTROL Expanded message]**、**[!UICONTROL Message]**&#x200B;和&#x200B;**[!UICONTROL Expanded message]**&#x200B;字段中输入您的文本。
 
    展开通知时，显示&#x200B;**[!UICONTROL Expanded message]**&#x200B;时，**[!UICONTROL Message]**&#x200B;文本将显示在折叠视图中。
 
-   ![](assets/rich_push_ios_basic_2.png)
+   ![填写了标题、扩展标题、消息和扩展消息字段的基本通知](assets/rich_push_ios_basic_2.png)
 
 1. 或者，添加与iOS通知有效负载的&#x200B;**subtitle**&#x200B;参数相对应的&#x200B;**[!UICONTROL Subtitle]**。
 
@@ -102,11 +102,11 @@ ht-degree: 5%
 
 1. 要进一步自定义，请浏览可用于推送通知的&#x200B;**[!UICONTROL Advanced options]**。 [了解详情](#push-advanced)
 
-   ![](assets/rich_push_ios_default_4.png)
+   ![包含“线程ID”、“类别”、“目标内容ID”、“启动图像”和“相关性”分数字段的“高级”选项卡](assets/rich_push_ios_default_4.png)
 
 1. 在&#x200B;**[!UICONTROL Color options]**&#x200B;菜单中，输入&#x200B;**[!UICONTROL Title]**、**[!UICONTROL Message]**&#x200B;和&#x200B;**[!UICONTROL Background]**&#x200B;的十六进制颜色代码。
 
-   ![](assets/rich_push_ios_basic_3.png)
+   ![颜色选项选项卡，带有标题颜色、消息颜色和背景颜色字段](assets/rich_push_ios_basic_3.png)
 
 定义消息内容后，您可以使用测试订阅者来预览和测试消息。
 
@@ -116,17 +116,17 @@ ht-degree: 5%
 
 1. 从&#x200B;**[!UICONTROL Notification Type]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Carousel]**。
 
-   ![](assets/rich_push_ios_carousel_1.png)
+   ![已选择轮播的“通知类型”下拉列表，添加“颜色选项”和“轮播选项”选项卡](assets/rich_push_ios_carousel_1.png)
 
 1. 若要撰写邮件，请在&#x200B;**[!UICONTROL Title]**、**[!UICONTROL Expanded Title]**&#x200B;和&#x200B;**[!UICONTROL Message]**&#x200B;字段中输入您的文本。
 
-   ![](assets/rich_push_ios_carousel_2.png)
+   ![标题、扩展标题和消息字段已填写的轮播通知](assets/rich_push_ios_carousel_2.png)
 
 1. 导航到&#x200B;**[!UICONTROL Sound and Badge]**&#x200B;选项卡以自定义其他设置，如通知的声音和徽章选项。 [了解详情](#sound-badge)
 
 1. 在&#x200B;**[!UICONTROL Application variables]**&#x200B;选项卡中，您的&#x200B;**[!UICONTROL Application variables]**&#x200B;将自动添加。 它们允许您定义通知行为，例如，您可以配置在用户激活通知时显示的特定应用程序屏幕。
 
-   ![](assets/rich_push_ios_carousel_4.png)
+   包含线程ID、目标内容ID和点击操作字段的轮播通知的![高级选项卡](assets/rich_push_ios_carousel_4.png)
 
 1. 要进一步自定义，请浏览可用于推送通知的&#x200B;**[!UICONTROL Advanced options]**。 [了解详情](#push-advanced)
 
@@ -141,7 +141,7 @@ ht-degree: 5%
 
    确保您至少包含三个图像，最多包含五个图像。
 
-   ![](assets/rich_push_ios_carousel_3.png)
+   ![手动操作模式的“轮播选项”选项卡和操作URI的图像列表](assets/rich_push_ios_carousel_3.png)
 
 定义消息内容后，您可以使用测试订阅者来预览和测试消息。
 
@@ -151,13 +151,13 @@ ht-degree: 5%
 
 1. 从&#x200B;**[!UICONTROL Notification Type]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Timer]**。
 
-   ![](assets/rich_push_ios_timer_1.png)
+   ![已选择“计时器”的“通知类型”下拉列表，添加“颜色选项”和“计时器选项”选项卡](assets/rich_push_ios_timer_1.png)
 
 1. 若要撰写邮件，请在&#x200B;**[!UICONTROL Title]**、**[!UICONTROL Expanded title]**、**[!UICONTROL Message]**&#x200B;和&#x200B;**[!UICONTROL Expanded message]**&#x200B;字段中输入您的文本。
 
    展开通知时，显示&#x200B;**[!UICONTROL Expanded message]**&#x200B;时，**[!UICONTROL Message]**&#x200B;文本将显示在折叠视图中。
 
-   ![](assets/rich_push_ios_timer_2.png)
+   ![标题、扩展标题和消息字段已填写的计时器通知](assets/rich_push_ios_timer_2.png)
 
 1. 或者，添加与iOS通知有效负载的&#x200B;**subtitle**&#x200B;参数相对应的&#x200B;**[!UICONTROL Subtitle]**。
 
@@ -169,13 +169,13 @@ ht-degree: 5%
 
 1. 在&#x200B;**[!UICONTROL Color options]**&#x200B;菜单中，输入&#x200B;**[!UICONTROL Title]**、**[!UICONTROL Message]**&#x200B;和&#x200B;**[!UICONTROL Background]**&#x200B;的十六进制颜色代码。
 
-   ![](assets/rich_push_ios_timer_4.png)
+   ![颜色选项选项卡，带有标题颜色、消息颜色、背景颜色和计时器颜色字段](assets/rich_push_ios_timer_4.png)
 
 1. 在&#x200B;**[!UICONTROL Timer]**&#x200B;选项卡中，以秒为单位设置您的&#x200B;**[!UICONTROL Timer duration]**，或将&#x200B;**[!UICONTROL Timer end timestamp]**&#x200B;设置为特定纪元时间戳。
 
 1. 在&#x200B;**[!UICONTROL Alternate title]**、**[!UICONTROL Alternate message]**&#x200B;和&#x200B;**[!UICONTROL Alternate image]**&#x200B;字段中输入计时器过期后显示的文本和图像。
 
-   ![](assets/rich_push_ios_timer_3.png)
+   ![包含替代标题、计时器持续时间、替代图像和替代消息字段的“计时器选项”选项卡](assets/rich_push_ios_timer_3.png)
 
 定义消息内容后，您可以使用测试订阅者来预览和测试消息。
 

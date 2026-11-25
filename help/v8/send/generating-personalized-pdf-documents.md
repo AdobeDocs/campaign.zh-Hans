@@ -23,9 +23,9 @@ topic_v2:
     internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '517'
 ht-degree: 4%
 ---
 # 生成个性化 PDF 文档{#generating-personalized-pdf-documents}
@@ -75,7 +75,7 @@ Adobe Campaign允许您从LibreOffice或Microsoft Word文档为电子邮件附�
 * 创建新的“我的徽标”个性化块，并将“My_Logo”作为内部名称。
 * 单击&#x200B;**[!UICONTROL Advanced parameters...]**&#x200B;链接，然后选中&#x200B;**[!UICONTROL "The content of the block is included in an attachment"]**&#x200B;选项。 这使您可以将个性化块的定义直接复制到OpenOffice文件的内容中。
 
-  ![](assets/s_ncs_pdf_bloc_option.png)
+  ![我的徽标个性化块及其内容类型以及编辑器中的OpenOffice XML定义](assets/s_ncs_pdf_bloc_option.png)
 
   您需要区分个性化块中的两种类型的声明：
 

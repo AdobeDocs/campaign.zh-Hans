@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '372'
 ht-degree: 0%
 ---
 # 访问跟踪日志 {#accessing-the-tracking-logs}
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 此信息显示在投放所定向的收件人用户档案的&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡中，如以下示例所示：
 
-![](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
+![收件人用户档案的“跟踪”选项卡，其中列出了跟踪的点击次数和打开次数，以及日期、标签、类型和投放](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
 
 此选项卡显示收件人跟踪和点击的所有URL，包括：
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 跟踪信息也可通过投放的&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡访问。
 
-![](assets/s_ncs_user_select_tracking_tab_from_del.png)
+投放的![跟踪选项卡，其中列出了日期、标签、类型和收件人的跟踪日志](assets/s_ncs_user_select_tracking_tab_from_del.png)
 
 在此选项卡中，您可以查看：
 

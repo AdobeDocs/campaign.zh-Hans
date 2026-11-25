@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '3642'
+source-wordcount: '3734'
 ht-degree: 3%
 ---
 # SMPP外部帐户设置 {#smpp-external-account}
@@ -53,7 +53,7 @@ SMS服务提供商端的网络设备通常称为SMSC。
 
 ## 连接设置 {#smpp-connection-settings}
 
-![](assets/smpp_connection_settings.png){zoomable="yes"}
+![SMPP外部帐户的连接设置选项卡：服务器、端口、帐户、密码和连接模式](assets/smpp_connection_settings.png){zoomable="yes"}
 
 以下是设置连接所需的参数及其角色：
 
@@ -75,7 +75,7 @@ SMS服务提供商端的网络设备通常称为SMSC。
 
 在&#x200B;**收发器模式**&#x200B;中，这是连接总数。
 
-在&#x200B;**发射器+接收器模式**&#x200B;中，这将定义发射器+接收器对（一对=一个发射器+一个接收器）的数量。
+在&#x200B;**发射器+接收器模式**中，这将定义发射器+接收器对（一对=一个发射器+一个接收器）的数量。
 无法改变发送器和接收器之间的平衡。
 
 * **通过专用进程发送消息**：
@@ -94,7 +94,7 @@ SMS服务提供商端的网络设备通常称为SMSC。
 
 ## SMPP 渠道设置 {#smpp-channel-settings}
 
-![](assets/smpp_channel_settings.png){zoomable="yes"}
+![SMPP通道设置选项卡：音译选项，源编号，源和目标TON/NPI，服务类型](assets/smpp_channel_settings.png){zoomable="yes"}
 
 ### 授权字符音译 {#smpp-transliteration}
 
@@ -124,7 +124,7 @@ TON（编号类型）和NPI（编号计划指示器）（见SMPP 3.4规范的第
 
 ## 吞吐量和延迟 {#smpp-delays}
 
-![](assets/smpp_throughput.png){zoomable="yes"}
+![吞吐量和延迟选项卡：发送窗口、最大MT吞吐量、重新连接、过期、绑定超时、enquire_link](assets/smpp_throughput.png){zoomable="yes"}
 
 这些设置控制SMPP频道的所有计时方面。 某些提供商需要非常精确地控制消息速率、窗口和重试时限，因此这些设置应该设置为与提供商的容量和合同中指示的条件匹配的值。
 
@@ -134,7 +134,7 @@ TON（编号类型）和NPI（编号计划指示器）（见SMPP 3.4规范的第
 
 最大窗口为4的传输示例：
 
-![](assets/sms_sending_window.png){zoomable="yes"}
+Campaign与SMSC之间的![顺序：SUBMIT_SM请求和SUBMIT_SM_RESP回复，窗口为4](assets/sms_sending_window.png){zoomable="yes"}
 
 当网络链路具有高等待时间时，该窗口有助于提高吞吐量。 窗口的值必须至少是SMS/s数乘以链接的延迟（以秒为单位），以便连接器在发送下一个消息之前从不等待SUBMIT_SM_RESP。
 
@@ -199,7 +199,7 @@ inquire_link是一种特殊类型的PDU，发送的目的是保持连接处于�
 
 ## SMSC 特性 {#smsc-specificities}
 
-![](assets/smsc_specificities.png){zoomable="yes"}
+![带有message_payload、绑定TON/NPI、状态正则表达式、ID格式和TLS选项的“SMSC特性”选项卡](assets/smsc_specificities.png){zoomable="yes"}
 
 ### 激活 message_payload
 
@@ -347,7 +347,7 @@ SMPP协议规范未严格强制实施SR格式。 它只是规范附录B中描述
 
 ## 传入流量 {#incoming-traffic}
 
-![](assets/incoming_traffic.png){zoomable="yes"}
+![传入流量选项卡：MO中的可选SMPP参数(TLV)和MO](assets/incoming_traffic.png){zoomable="yes"}的自动回复表
 
 ### MO中的可选SMPP参数(TLV)
 

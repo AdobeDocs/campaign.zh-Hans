@@ -24,9 +24,9 @@ level_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '383'
 ht-degree: 1%
 ---
 # 将邮件副本发送到密件抄送地址 {#bcc}
@@ -62,7 +62,7 @@ Adobe Campaign本身不会管理存档文件。 然后，对应于所发送电�
 1. 单击 **[!UICONTROL Properties]** 按钮。
 1. 在&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡中，选中&#x200B;**[!UICONTROL Email BCC with Enhanced MTA]**&#x200B;选项。
 
-   ![](assets/email-bcc.png)
+   ![电子邮件密件抄送功能增强Momentum选项突出显示的投放属性“投放”选项卡](assets/email-bcc.png)
 
 1. 单击 **[!UICONTROL Ok]** 确认。
 

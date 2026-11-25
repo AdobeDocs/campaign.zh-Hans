@@ -28,9 +28,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '621'
 ht-degree: 6%
 ---
 # 配置跟踪的链接 {#how-to-configure-tracked-links}
@@ -43,13 +43,13 @@ ht-degree: 6%
 
 默认启用消息跟踪。 要个性化URL的跟踪方式，请执行以下步骤：
 
-1. 选择投放助理下部消息内容下的&#x200B;**[!UICONTROL Display URLs]**&#x200B;选项。
+1. 在消息内容下方的投放助理的下部Select **[!UICONTROL Display URLs]**&#x200B;选项。
 
-   ![](assets/s_ncs_user_email_del_display_urls.png)
+   ![尚未选择内容下方具有“显示URL”选项的HTML内容投放](assets/s_ncs_user_email_del_display_urls.png)
 
    从跟踪的URL列表中选择URL时，交付内容中将高亮显示该URL — 镜像页面中的链接和默认提供的退订链接除外。
 
-   ![](assets/s_ncs_user_email_del_show_urls.png)
+   ![跟踪的URL列表，其中具有在投放内容中突出显示的选定URL及其匹配链接](assets/s_ncs_user_email_del_show_urls.png)
 
 1. 对于消息的每个URL，选择是否激活跟踪。
 
@@ -67,7 +67,7 @@ ht-degree: 6%
 
 1. 如果需要，请更改跟踪模式，在&#x200B;**[!UICONTROL Tracking]**&#x200B;列中选择与目标链接匹配的新模式，如下所示：
 
-   ![](assets/s_ncs_user_select_tracking_mode.png)
+   ![跟踪列下拉列表，其中列出了URL从“已启用”页面到“镜像”页面的跟踪模式](assets/s_ncs_user_select_tracking_mode.png)
 
    对于每个单独的URL，您可以将跟踪模式设置为以下值之一：
 
@@ -88,8 +88,8 @@ ht-degree: 6%
 * 括号[ ]
 * 大括号{ }
 
-在此示例中，URL https://www.adobe.com/cn后跟一个分号。 收件人电子邮件客户端可能会将分号解释为URL的一部分。 因此，链接可能会断开。 要避免出现此问题，您可以通过以下方式之一以分隔符括住URL：
+在此示例中，URL https://www.adobe.com后跟一个分号。 收件人电子邮件客户端可能会将分号解释为URL的一部分。 因此，链接可能会断开。 要避免出现此问题，您可以通过以下方式之一以分隔符括住URL：
 
-* (https://www.adobe.com/cn)；
-* [https://www.adobe.com/cn]；
-* {https://www.adobe.com/cn}；
+* (https://www.adobe.com)；
+* [https://www.adobe.com]；
+* {https://www.adobe.com}；

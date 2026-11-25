@@ -23,9 +23,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1651'
 ht-degree: 2%
 ---
 # 已修订推送通知配置 {#push-notifications-config}
@@ -34,7 +34,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 >[!AVAILABILITY]
 >
-> 从Campaign v8.5开始，新客户可专门访问此功能，并会逐步向一组选定的客户推出。 如果您的环境是在2023年6月之前配置的，则此页面不适用于您，您必须遵循此页面[&#128279;](push-settings.md)中详述的步骤。
+> 从Campaign v8.5开始，新客户可专门访问此功能，并会逐步向一组选定的客户推出。 如果您的环境是在2023年6月之前配置的，则此页面不适用于您，您必须遵循此页面](push-settings.md)中详述的步骤[。
 
 在此更新的实施中，要在Adobe Campaign中发送推送通知，请执行以下步骤：
 
@@ -64,7 +64,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 1. 单击&#x200B;**[!UICONTROL Create App Surface]**&#x200B;以创建新配置。
 
-   ![](assets/push-config-1.png)
+   数据收集中的![应用程序表面列表，其中的“创建应用程序表面”按钮突出显示](assets/push-config-1.png)
 
 1. 输入配置的&#x200B;**[!UICONTROL Name]**。
 
@@ -74,7 +74,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 >[!TAB iOS]
 
-![](assets/push-config-2.png)
+![为Apple iOS创建应用程序表面：应用程序ID、推送凭据切换和p8密钥文件放置区域](assets/push-config-2.png)
 
 1. 在&#x200B;**[!UICONTROL App ID (iOS Bundle ID)]**&#x200B;字段中输入移动应用&#x200B;**捆绑包ID**。
 
@@ -96,7 +96,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 >[!TAB Android]
 
-![](assets/push-config-3.png)
+![为Android创建应用程序表面：应用程序ID（Android包名称）、推送凭据开关和JSON密钥放置区域](assets/push-config-3.png)
 
 1. 提供&#x200B;**[!UICONTROL App ID (Android package name)]**。 通常，包名称是`build.gradle`文件中的应用程序ID。
 
@@ -120,7 +120,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 1. 浏览到&#x200B;**[!UICONTROL Profiles and Targets > Services and Subscriptions]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Create]**。
 
-   ![](assets/push-config-4.png){width="800"}
+   ![带有标签、内部名称、移动应用程序类型和订阅者应用程序目标映射的新服务对话框](assets/push-config-4.png){width="800"}
 
 1. 输入&#x200B;**[!UICONTROL Label]**&#x200B;和&#x200B;**[!UICONTROL Internal name]**，然后选择&#x200B;**[!UICONTROL Mobile application]**&#x200B;类型。
 
@@ -130,7 +130,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 1. 然后，使用右侧的&#x200B;**[!UICONTROL Add]**&#x200B;图标定义使用此服务的移动应用程序。
 
-   ![](assets/push-config-5.png)
+   ![带有突出显示“添加”图标的服务对话框，用于定义使用该服务的移动应用程序](assets/push-config-5.png)
 
 ### 创建移动应用程序 {#create-sapp}
 
@@ -144,17 +144,17 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 1. 从您的服务中，单击&#x200B;**[!UICONTROL Add]**，然后选择&#x200B;**[!UICONTROL Create an iOS application]**。 单击 **[!UICONTROL Next]**。
 
-   ![](assets/push-config-6.png)
+   ![移动应用程序创建向导，已选择“创建iOS应用程序”](assets/push-config-6.png)
 
 1. 从&#x200B;**[!UICONTROL Launch app configurations list]**&#x200B;窗口中，选择之前在此部分中创建的应用程序表面。 单击 **[!UICONTROL Next]**。
 
-   ![](assets/push-config-7.png)
+   ![启动应用程序配置列表列出要选择的演示应用程序表面](assets/push-config-7.png)
 
 1. （可选）您可以使用大约&#x200B;**[!UICONTROL Application variables]**&#x200B;扩充推送消息内容。 这些都是完全可自定义的，并且是发送到移动设备的消息有效负载的一部分。
 
    在以下示例中，添加了&#x200B;**mediaURl**&#x200B;和&#x200B;**mediaExt**&#x200B;变量以创建富推送通知，然后向应用程序提供要在通知中显示的图像。
 
-   ![](assets/push-config-8.png)
+   ![添加了mediaURL和mediaExt应用程序变量的常规参数](assets/push-config-8.png)
 
 1. 浏览到&#x200B;**[!UICONTROL Subscription parameters]**&#x200B;选项卡以定义扩展名为&#x200B;**[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**&#x200B;架构的映射。
 
@@ -175,7 +175,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
    >
    > 您不能对应用程序的开发版本（沙盒）和生产版本使用相同的证书。
 
-   ![](assets/push-config-9.png)
+   ![具有iOS的集成键和应用程序图标字段的开发应用程序步骤](assets/push-config-9.png)
 
 1. 使用&#x200B;**[!UICONTROL Application icon]**&#x200B;字段中的Select图标对服务中的移动应用程序进行个性化。
 
@@ -191,11 +191,11 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 1. 从您的服务中，单击&#x200B;**[!UICONTROL Add]**，然后选择&#x200B;**[!UICONTROL Create an Android application]**。 单击 **[!UICONTROL Next]**。
 
-   ![](assets/push-config-10.png)
+   ![移动应用程序创建向导，已选择“创建Android应用程序”](assets/push-config-10.png)
 
 1. 从&#x200B;**[!UICONTROL Launch app configurations list]**&#x200B;窗口中，选择在此部分中创建的应用程序表面，然后单击&#x200B;**[!UICONTROL Next]**。
 
-   ![](assets/push-config-11.png)
+   ![Launch应用程序配置列表列出了Android应用程序的演示应用程序表面](assets/push-config-11.png)
 
 1. 集成键特定于每个应用程序。 它将移动应用程序链接到Adobe Campaign，并将在配置Campaign扩展时使用。
 
@@ -207,7 +207,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
    >
    > **[!UICONTROL Integration key]**&#x200B;可使用字符串值完全自定义，但需要与SDK中指定的值完全相同。
 
-   ![](assets/push-config-12.png)
+   带有集成键、应用程序图标和应用程序变量的![Android的常规参数](assets/push-config-12.png)
 
 1. 使用&#x200B;**[!UICONTROL Application icon]**&#x200B;字段中的Select图标个性化服务中的移动应用程序。
 
@@ -234,11 +234,11 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 1. 单击 **[!UICONTROL New Property]**。
 
-   ![](assets/push-config-13.png)
+   ![数据收集中的“标记属性”列表以“新建属性”按钮突出显示](assets/push-config-13.png)
 
 1. 键入属性的名称并选择&#x200B;**[!UICONTROL Mobile]**&#x200B;作为平台。
 
-   ![](assets/push-config-14.png)
+   ![使用输入的名称并选定Mobile平台创建属性表单](assets/push-config-14.png)
 
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建移动属性。
 
@@ -246,18 +246,18 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 1. 从您的移动属性仪表板中，访问&#x200B;**[!UICONTROL Extensions]**&#x200B;菜单，然后访问&#x200B;**[!UICONTROL Catalog]**&#x200B;选项卡。
 
-   ![](assets/push-config-15.png)
+   ![突出显示“目录”选项卡的移动属性扩展页面](assets/push-config-15.png)
 
 1. 安装&#x200B;**[!DNL Adobe Campaign Classic]**&#x200B;扩展。 [了解有关Campaign扩展的更多信息](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic/#configure-campaign-classic-extension)
 
-   ![](assets/push-config-16.png)
+   在Adobe Campaign Classic扩展上突出显示![带有“安装”按钮的扩展目录](assets/push-config-16.png)
 
 1. 填写实例详细信息：
 
    * 在Campaign的&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Deployment wizard]**&#x200B;菜单中可以找到&#x200B;**[!UICONTROL Registration endpoint]**&#x200B;或&#x200B;**[!UICONTROL Tracking endpoint]**&#x200B;个URL。
    * 在[此部分](#create-app)中配置的移动应用中，可以找到&#x200B;**[!UICONTROL Integration keys]**。
 
-   ![](assets/push-config-17.png)
+   ![安装包含注册和跟踪端点以及iOS和Android集成密钥的扩展页面](assets/push-config-17.png)
 
 1. 单击 **[!UICONTROL Save]**。
 

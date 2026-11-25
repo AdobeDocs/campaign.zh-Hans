@@ -20,9 +20,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '1048'
 ht-degree: 8%
 ---
 # 电子邮件参数 {#email-parameters}
@@ -37,7 +37,7 @@ ht-degree: 8%
 
 您可以更改已发送电子邮件的格式。 为此，请编辑投放属性并单击&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡。
 
-![](assets/email-message-format.png)
+![邮件格式部分突出显示的投放属性的“投放”选项卡和三个格式选项](assets/email-message-format.png)
 
 在窗口的下半部分选择电子邮件的格式：
 
@@ -73,7 +73,7 @@ ht-degree: 8%
 
 为此，请选择&#x200B;**[!UICONTROL Character encoding]**&#x200B;部分中的&#x200B;**[!UICONTROL Force the encoding used for messages]**&#x200B;选项，然后从显示的下拉列表中选择编码。
 
-![](assets/email-smtp-encoding.png)
+![SMTP选项卡，强制为选定的邮件使用编码，且编码下拉列表打开](assets/email-smtp-encoding.png)
 
 ## 管理退回电子邮件 {#managing-bounce-emails}
 
@@ -85,17 +85,17 @@ ht-degree: 8%
 
 其中每个字段都可以使用专用图标进行个性化。 在[添加个性化字段](personalization-fields.md)中了解关于个性化字段的更多信息。
 
-![](assets/email-smtp-bounce.png)
+突出显示“退回邮件”部分的![SMTP选项卡：“地址错误”和“退回地址”字段](assets/email-smtp-bounce.png)
 
 有关退回邮件管理的详细信息，请参阅[退回邮件鉴别](delivery-failures.md#bounce-mail-qualification)。
 
 ## 启用一键式列表取消订阅 {#one-click-list-unsubscribe}
 
-一键式列表取消订阅URL是显示在电子邮件发件人信息旁边的链接或按钮，收件人只需单击一下即可立即选择退出您的邮件列表。<!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=zh-Hans#list-unsubscribe){target="_blank"}-->
+一键式列表取消订阅URL是显示在电子邮件发件人信息旁边的链接或按钮，收件人只需单击一下即可立即选择退出您的邮件列表。<!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}-->
 
 它在ISP的电子邮件界面中显示为&#x200B;**取消订阅**&#x200B;链接。 例如：
 
-![](assets/email-list-unsubscribe-example.png)
+![电子邮件客户端发件人行，在发件人地址旁边显示取消订阅链接](assets/email-list-unsubscribe-example.png)
 
 必须添加名为List-Unsubscribe的SMTP标头，以确保实现最佳可投放性管理，并可用作“报告为垃圾邮件”图标的替代图标。 事实上，使用此功能可降低投诉率，并有助于保护您的声誉。
 
@@ -109,7 +109,7 @@ ht-degree: 8%
 >
 >默认启用此选项。
 
-![](assets/email-smtp-list-unsubscribe.png)
+![SMTP选项卡，带有One-Click List-Unsubscribe部分和默认选择的标头选项](assets/email-smtp-list-unsubscribe.png)
 
 <!--
 >[!WARNING]
@@ -131,7 +131,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->您还可以手动设置[One-Click List-Unsubscribe](https://experienceleague.adobe.com/zh-hans/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"}和[&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/zh-hans/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"}方法。 Experience Cloud [可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=zh-Hans#list-unsubscribe){target="_blank"}中介绍了详细步骤。
+>您还可以手动设置[One-Click List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"}和[&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"}方法。 Experience Cloud [可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}中介绍了详细步骤。
 
 
 ## 添加SMTP标头 {#adding-smtp-headers}
@@ -148,7 +148,7 @@ ht-degree: 8%
 >
 >此脚本的语法必须符合此内容类型的要求：没有未使用的空格，没有空行等。
 
-![](assets/email-smtp-headers.png)
+![SMTP选项卡，突出显示具有其他SMTP标头脚本区域的，使用名称:value格式](assets/email-smtp-headers.png)
 
 
 ## 生成镜像页面 {#generating-mirror-page}

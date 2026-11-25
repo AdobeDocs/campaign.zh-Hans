@@ -26,9 +26,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '744'
 ht-degree: 1%
 ---
 # 事件处理 {#event-processing}
@@ -43,7 +43,7 @@ ht-degree: 1%
 
 事件数据示例：
 
-![](assets/mc-event-request.png)
+![示例事件XML：ctx元素中的事件数据属性（类型、电子邮件、来源）和个性化事件数据](assets/mc-event-request.png)
 
 要处理事务性消息事件，需对执行实例应用以下步骤：
 
@@ -65,7 +65,7 @@ ht-degree: 1%
 
 收集事件后，在等待链接到[消息模板](transactional-template.md)时，将按照执行实例的实时队列和批处理队列之间的技术工作流对事件进行划分。
 
-![](assets/mc-event-queues.png)
+执行实例上的![消息中心文件夹：默认文件夹下的实时事件和批处理事件](assets/mc-event-queues.png)
 
 >[!NOTE]
 >
@@ -79,11 +79,11 @@ ht-degree: 1%
 
 * 在事件本身的属性中指定的事件类型：
 
-  ![](assets/event-type-sample.png)
+  ![事件类型属性设置为purchase_order](assets/event-type-sample.png)的批次事件XML
 
 * 在消息模板属性中指定的事件类型：
 
-  ![](assets/event-type-select.png)
+  ![消息模板向导，其事件类型列表显示purchase和purchase_def](assets/event-type-select.png)
 
 默认情况下，路由依赖以下信息：
 
@@ -105,7 +105,7 @@ ht-degree: 1%
 * **待处理投放**
 该事件已处理，并且已链接投放模板。 电子邮件正在等待投放，并且已应用经典投放流程。 有关详细信息，您可以打开投放。
 * **已发送**，**已忽略**&#x200B;和&#x200B;**传递错误**
-这些投放状态可通过&#x200B;**updateEventsStatus**&#x200B;工作流恢复。 有关详细信息，您可以打开相关的投放。
+这些投放状态可通过**updateEventsStatus**&#x200B;工作流恢复。 有关详细信息，您可以打开相关的投放。
 * 未涵盖&#x200B;**事件**
 事务性消息传递路由阶段失败。 例如，Adobe Campaign未找到用作事件模板的电子邮件。
 * **事件已过期**

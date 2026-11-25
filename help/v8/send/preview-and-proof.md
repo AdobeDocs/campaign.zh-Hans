@@ -23,10 +23,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 10%
+source-wordcount: '829'
+ht-degree: 9%
 ---
 # 预览和测试电子邮件 {#preview-test}
 
@@ -41,13 +41,13 @@ ht-degree: 10%
 1. 浏览到投放的&#x200B;**预览**&#x200B;选项卡。
 1. 单击&#x200B;**[!UICONTROL Test personalization]**&#x200B;按钮以选择用于填充个性化数据的配置文件。 您可以在数据库中选择特定收件人、种子地址或从目标群体中选择用户档案（如果已定义）。 您还可以检查内容而不进行个性化。
 
-   ![](assets/test-personalization.png)
+   ![在“预览”选项卡中测试个性化菜单：收件人、种子地址、投放目标群体、无个性化](assets/test-personalization.png)
 
 1. 将生成预览，以便您检查消息渲染。 在消息预览中，个性化的元素被替换为选定的测试用户档案数据。
 
-   ![](assets/test-personalization-with-a-recipient.png)
+   ![电子邮件预览（主题和标题使用所选测试配置文件名字进行个性化）](assets/test-personalization-with-a-recipient.png)
 
-1. Select其他测试用户档案，用于预览消息的每个变体的电子邮件渲染。
+1. 选择其他测试用户档案以预览消息的每个变体的电子邮件渲染。
 
 ## 发送校样 {#send-proofs}
 
@@ -59,7 +59,7 @@ ht-degree: 10%
 
 验证目标可以在投放模板中定义，或特定于投放。 在这两种情况下，都从&#x200B;**[!UICONTROL To]**&#x200B;链接浏览到目标定义屏幕，并选择&#x200B;**[!UICONTROL Target of the proofs]**&#x200B;选项卡。
 
-![](assets/target-of-proofs.png)
+![Select定位对话框，“验证”选项卡的“定位”，带有“定位模式”下拉列表和“添加”按钮](assets/target-of-proofs.png)
 
 从&#x200B;**[!UICONTROL Targeting mode]**&#x200B;下拉列表中选择了校对目标的类型。
 
@@ -68,11 +68,11 @@ ht-degree: 10%
 
   默认情况下，会随机执行替换，但您可以通过&#x200B;**[!UICONTROL Detail]**&#x200B;图标从主目标中选择特定收件人。
 
-  ![](assets/target-of-proofs-substitution-details.png){width="800"}
+  ![使用用于选择特定配置文件的详细信息图标替换地址模式列出的验证地址](assets/target-of-proofs-substitution-details.png){width="800"}
 
   选择&#x200B;**[!UICONTROL Select a profile (must be included in the target)]**&#x200B;选项并选择收件人。
 
-  ![](assets/target-of-proofs-substitution.png){width="800"}
+  ![与Select的备用验证收件人对话框配置文件选项以及从列表中选择的收件人](assets/target-of-proofs-substitution.png){width="800"}
 
 
 * 使用&#x200B;**[!UICONTROL Seed addresses]**&#x200B;选项将种子地址用作验证目标。 这些地址可以从文件导入或手动输入。
@@ -93,7 +93,7 @@ ht-degree: 10%
 1. 从&#x200B;**[!UICONTROL Send a proof]**&#x200B;窗口中，检查校样收件人。
 1. 单击&#x200B;**[!UICONTROL Analyze]**&#x200B;开始准备校对邮件。
 
-   ![](assets/send-proof-analyze.png){width="800"}
+   ![发送验证窗口，其中包含替代地址以及单击“分析”后正在运行的投放分析日志](assets/send-proof-analyze.png){width="800"}
 
 1. 投放准备完成后，使用&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;开始发送校样消息。
 
@@ -115,11 +115,11 @@ ht-degree: 10%
 
 默认情况下，验证邮件由主题中的`Proof #N`提及来标识，其中`N`是验证号。 此数字随每个证明投放分析递增。 您可以根据需要更改`proof`前缀。
 
-![](assets/proof-parameters.png){width="800"}
+来自“高级”选项卡的![校对属性对话框，具有校对选项且标签前缀字段设置为“校对”](assets/proof-parameters.png){width="800"}
 
 
 ## 操作说明视频 {#video-proof}
 
 了解如何为电子邮件投放发送并验证校样。
 
->[!VIDEO](https://video.tv.adobe.com/v/3447009?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/333404)

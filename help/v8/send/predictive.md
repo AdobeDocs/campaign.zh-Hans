@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 56%
+source-wordcount: '817'
+ht-degree: 54%
 ---
 # 发送时间优化和预测参与度评分{#optimize-message-delivery}
 
@@ -81,7 +81,7 @@ Adobe Campaign提供两种新的机器学习模型：[预测发送时间优化](
 
 预测发送时间优化存储在配置文件级别：
 
-![](assets/sto-schema.png)
+![包含预测发送时间优化字段的收件人架构结构以获得点击和打开的最佳时间](assets/sto-schema.png)
 
 
 >[!NOTE]

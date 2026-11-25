@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '2123'
-ht-degree: 2%
+source-wordcount: '2528'
+ht-degree: 1%
 ---
 # 定义电子邮件的内容 {#defining-the-email-content}
 
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 要定义将出现在已发送邮件标题中的发件人名称和地址，请单击&#x200B;**[!UICONTROL From]**&#x200B;链接。
 
-![](assets/s_ncs_user_wizard_email02.png)
+![从“发件人”链接打开了“电子邮件标头参数”对话框，“发件人”字段具有个性化菜单](assets/s_ncs_user_wizard_email02.png)
 
 在此窗口中，您可以输入创建电子邮件标头所需的所有信息。 此信息可以个性化。 要实现此目的，请使用输入字段右侧的按钮插入个性化字段。
 
@@ -64,7 +64,7 @@ ht-degree: 2%
 >
 >消息主题为必填项。
 
-![](assets/s_ncs_user_wizard_email_object.png)
+![编辑邮件主题对话框，在收件人上打开个性化菜单以插入名字](assets/s_ncs_user_wizard_email_object.png)
 
 发送消息时，字段内容将由收件人用户档案中的值替换。
 
@@ -106,11 +106,11 @@ ht-degree: 2%
 
   通过工具栏按钮可访问HTML页面的标准操作和格式参数。
 
-  ![](assets/s_ncs_user_wizard_email01_138.png)
+  ![HTML内容选项卡，其格式工具栏和“插入超文本链接”按钮突出显示](assets/s_ncs_user_wizard_email01_138.png)
 
   您可以在来自本地文件或Adobe Campaign中图像库的消息中插入图像。 为此，请单击&#x200B;**[!UICONTROL Image]**&#x200B;图标并选择相应的选项。
 
-  ![](assets/s_ncs_user_wizard_email01_18.png)
+  HTML工具栏中的![图像按钮菜单，带有来自本地文件和来自库选项](assets/s_ncs_user_wizard_email01_18.png)
 
   可以通过文件夹树中的&#x200B;**[!UICONTROL Resources>Online>Public resources]**&#x200B;文件夹访问库图像。 另请参阅[添加图像](#adding-images)。
 
@@ -122,19 +122,19 @@ ht-degree: 2%
 
   通过页面底部的选项卡，可显示所创建页面的HTML代码，并查看消息及其个性化内容的呈现。 要启动此显示，请单击&#x200B;**[!UICONTROL Preview]**，然后使用工具栏中的&#x200B;**[!UICONTROL Test personalization]**&#x200B;按钮选择一个收件人。 您可以从定义的目标中选择收件人，也可以选择其他收件人。
 
-  ![](assets/s_ncs_user_wizard_email01_139.png)
+  ![在HTML内容选项卡中预览：个性化菜单以选择收件人、种子地址或目标群体](assets/s_ncs_user_wizard_email01_139.png)
 
   您可以验证HTML消息。 您还可以查看电子邮件标头的内容。
 
-  ![](assets/s_ncs_user_wizard_email01_140.png)
+  ![选定收件人的HTML预览，具有个性化的主题和内容以及“发件人”、“主题”和“大小”标头](assets/s_ncs_user_wizard_email01_140.png)
 
 * 要导入文本内容，请使用&#x200B;**[!UICONTROL Open]**&#x200B;按钮或&#x200B;**[!UICONTROL Text Content]**&#x200B;选项卡，以文本格式显示时输入消息的内容。 使用工具栏按钮访问对内容的操作。 利用最后一个按钮，可插入个性化字段。
 
-  ![](assets/s_ncs_user_wizard_email01_141.png)
+  ![文本内容选项卡，带有纯文本消息源和个性化字段](assets/s_ncs_user_wizard_email01_141.png)
 
   对于HTML格式，单击页面底部的&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡以查看消息的呈现及其个性化设置。
 
-  ![](assets/s_ncs_user_wizard_email01_142.png)
+  ![所选收件人的文本内容预览，包含个性化文本和镜像页面以及取消订阅块](assets/s_ncs_user_wizard_email01_142.png)
 
 
 ## 定义交互式内容 {#amp-for-email-format}
@@ -147,11 +147,11 @@ Adobe Campaign允许您尝试新的交互式[AMP for Email](https://amp.dev/abou
 
 您可以使用内容管理表单，直接在投放助手中定义投放的内容。 为此，必须在投放属性的&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中引用要使用的内容管理的发布模板。
 
-![](assets/s_ncs_content_in_delivery.png)
+![在“模板”字段中选择了发布模板的“传递属性”“高级”选项卡](assets/s_ncs_content_in_delivery.png)
 
 通过附加选项卡，可输入将根据内容管理规则自动集成和设置格式的内容。
 
-![](assets/s_ncs_content_in_delivery_edition_tab.png)
+![带有内容模板的投放，显示“编辑”选项卡，其中含有要填写的内容字段](assets/s_ncs_content_in_delivery_edition_tab.png)
 
 >[!NOTE]
 >
@@ -164,7 +164,7 @@ Adobe Campaign允许您尝试新的交互式[AMP for Email](https://amp.dev/abou
 1. 单击&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;图标。
 1. 从弹出窗口中选择表情符号。
 
-   ![](assets/emoticon_4.png)
+   ![插入表情符号弹出窗口，其中列出了可用的表情符号，并为HTML内容选择了一个表情符号](assets/emoticon_4.png)
 
 1. 完成后单击&#x200B;**[!UICONTROL Close]**&#x200B;按钮。
 
@@ -179,7 +179,7 @@ HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以
 
 为避免性能问题，电子邮件中包含的图像不能超过100 KB。 默认设置的此限制可以从`NmsDelivery_MaxDownloadedImageSize`选项更改。 但是，Adobe强烈建议避免在电子邮件投放中使用大型图像。
 
-在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=zh-Hans#delivery)中了解有关Campaign选项列表的更多信息。
+在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery)中了解有关Campaign选项列表的更多信息。
 
 ### 图像类型 {#img-types}
 
@@ -190,13 +190,13 @@ HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以
 
   可通过Adobe Campaign层次结构的&#x200B;**[!UICONTROL Resources > Online]**&#x200B;节点访问公共资源。 它们分组在库中，可以包含在电子邮件中，但也可以用于营销活动或任务，或者用于内容管理。
 
-* 与Adobe Experience Cloud共享的资产。 请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=zh-Hans)。
+* 与Adobe Experience Cloud共享的资产。 请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html)。
 
 ### 插入和管理图像 {#manage-images}
 
 利用投放助手，可将本地图像或存储在库中的图像添加到消息的内容中。 为此，请单击HTML内容工具栏中的&#x200B;**[!UICONTROL Image]**&#x200B;按钮。
 
-![](assets/s_ncs_user_image_from_library.png)
+已选择“来自库”选项的HTML工具栏中的![图像按钮菜单](assets/s_ncs_user_image_from_library.png)
 
 >[!IMPORTANT]
 >
@@ -204,19 +204,19 @@ HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以
 
 要通过投放助手管理图像，请执行以下操作：
 
-1. 单击工具栏中的&#x200B;**[!UICONTROL Tracking & Images]**&#x200B;图标。
-   ![](assets/s_ncs_user_email_del_img_param.png)
+1. 单击工具栏中的&#x200B;**[!UICONTROL Tracking & Images]**图标。
+   在投放工具栏中突出显示![跟踪和图像按钮](assets/s_ncs_user_email_del_img_param.png)
 
 1. 在&#x200B;**[!UICONTROL Images]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Upload images]**。
 1. 然后，您可以选择是否希望在电子邮件中包含图像。
-   ![](assets/s_ncs_user_email_del_img_upload.png)
+   ![图像选项卡，已选择上载图像，并且检测到的图像列表状态为尚未联机](assets/s_ncs_user_email_del_img_upload.png)
 
 * 您可以手动上传图像，而无需等待投放分析阶段。 为此，请单击&#x200B;**[!UICONTROL Upload the images straightaway...]**&#x200B;链接。
 * 您可以指定其他路径来访问跟踪服务器上的图像。 为此，请在&#x200B;**[!UICONTROL Images URL]**&#x200B;字段中输入它。 此值将覆盖安装助手参数中定义的值。
 
 在投放助手中打开包含图像的HTML内容时，将会显示一条消息，根据投放参数，为您提供立即上传图像的选项。
 
-![](assets/s_ncs_user_email_del_img_local.png)
+![提示是否立即发布已打开HTML文件的相对图像，同时显示“是”和“否”按钮](assets/s_ncs_user_email_del_img_local.png)
 
 >[!IMPORTANT]
 >
@@ -227,11 +227,11 @@ HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以
 
 以下是包含四个图像的投放示例：
 
-![](assets/s_ncs_user_images_in_delivery_wiz_1.png)
+![投放的HTML内容，其箭头指向其四个图像](assets/s_ncs_user_images_in_delivery_wiz_1.png)
 
 这些图像来自本地目录或网站，您可以通过&#x200B;**[!UICONTROL Source]**&#x200B;选项卡进行验证。
 
-![](assets/s_ncs_user_images_in_delivery_wiz_2.png)
+投放的![Source选项卡，显示本地目录或网站中用箭头标记的图像路径](assets/s_ncs_user_images_in_delivery_wiz_2.png)
 
 单击&#x200B;**[!UICONTROL Tracking & Images]**&#x200B;图标，然后单击&#x200B;**[!UICONTROL Images]**&#x200B;选项卡以开始检测消息中的图像。
 
@@ -249,7 +249,7 @@ HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以
 
 您可以继续工作并上传图像，以便其他Adobe Campaign操作员能够查看这些图像。 如果您与他人协作，可能会发现此工具非常有用。 为此，请单击&#x200B;**[!UICONTROL Upload the images straightaway...]**&#x200B;将图像上传到服务器。
 
-![](assets/s_ncs_user_images_in_delivery_wiz_3.png)
+![图像选项卡列出了本地图像路径以及立即上传图像链接，该路径具有尚未联机状态](assets/s_ncs_user_images_in_delivery_wiz_3.png)
 
 >[!NOTE]
 >
@@ -257,11 +257,11 @@ HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以
 
 图像联机后，您可以从消息的&#x200B;**[!UICONTROL Source]**&#x200B;选项卡查看对其名称和路径的更改。
 
-![](assets/s_ncs_user_images_in_delivery_wiz_4.png)
+上载后![Source选项卡，图像URL被用箭头标记的新路径替换](assets/s_ncs_user_images_in_delivery_wiz_4.png)
 
 如果选择&#x200B;**[!UICONTROL Include the images in the email]**，则可以选择要包含在相应列中的图像。
 
-![](assets/s_ncs_user_images_in_delivery_wiz_5.png)
+![图像选项卡，其中在所选电子邮件中包含图像，并在图像的电子邮件中嵌入选项](assets/s_ncs_user_images_in_delivery_wiz_5.png)
 
 >[!NOTE]
 >
@@ -275,7 +275,7 @@ HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以
 
 要在电子邮件中插入条形码，请将光标置于要显示条码的内容中，然后单击个性化按钮。 选择 **[!UICONTROL Include > Barcode...]**。
 
-![](assets/barcode_insert_14.png)
+HTML编辑器中的![Personalization菜单，其中包含，并选择了条形码选项](assets/barcode_insert_14.png)
 
 然后，根据您的需求配置以下元素：
 
@@ -285,28 +285,28 @@ HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以
 
      1D条形码示例：
 
-     ![](assets/barcode_insert_08.png)
+     ![编号低于](assets/barcode_insert_08.png)的1D条形码示例
 
    * DataMatrix和PDF417类型涉及2D格式。
 
      2D条形码示例：
 
-     ![](assets/barcode_insert_09.png)
+     ![2D DataMatrix条形码示例](assets/barcode_insert_09.png)
 
    * 要插入QR码，请选择此类型并输入要应用的纠错率。 此比率定义重复的信息量以及对恶化的容差。
 
-     ![](assets/barcode_insert_06.png)
+     ![具有二维码类型的条形码设置、具有个性化字段的值以及30%的错误更正](assets/barcode_insert_06.png)
 
      QR代码示例：
 
-     ![](assets/barcode_insert_12.png)
+     ![QR代码示例](assets/barcode_insert_12.png)
 
 1. 输入要插入到电子邮件中的条形码大小：通过配置小数位数，可以将条形码的大小从x1增大到x10。
 1. **[!UICONTROL Value]**&#x200B;字段允许您定义条形码的值。 值可以匹配特殊选件，可以是条件的函数，也可以是链接到客户的数据库字段的值。
 
    此示例显示了一个EAN-8类型的条形码，其中添加了收件人的帐号。 若要添加此帐号，请单击&#x200B;**[!UICONTROL Value]**&#x200B;字段右侧的个性化按钮，然后选择&#x200B;**[!UICONTROL Recipient > Account number]**。
 
-   ![](assets/barcode_insert_15.png)
+   ![已选择收件人和帐号的“条形码值”字段个性化菜单](assets/barcode_insert_15.png)
 
 1. **[!UICONTROL Height]**&#x200B;字段允许您通过更改条形码之间的间距来配置条形码的高度，而不更改条形码的宽度。
 
@@ -322,10 +322,10 @@ HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以
 
 配置这些元素后，即可最终确定电子邮件并将其发送。 为避免出现错误，请始终确保内容显示正确，然后再通过单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡执行投放。
 
-![](assets/barcode_insert_10.png)
+![个性化消息内容末尾插入二维码的投放预览](assets/barcode_insert_10.png)
 
 >[!NOTE]
 >
 >如果条形码的值不正确，其位图将以红色划掉。
 
-![](assets/barcode_insert_11.png)
+![电子邮件预览，其中无效的条形码值显示以红色划出的条形码](assets/barcode_insert_11.png)

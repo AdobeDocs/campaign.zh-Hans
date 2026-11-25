@@ -21,10 +21,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 4%
+source-wordcount: '1290'
+ht-degree: 3%
 ---
 # 将文件附加到电子邮件{#attaching-files}
 
@@ -34,7 +34,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->为了避免出现性能问题，建议每封电子邮件不要附加多个附件。 可以从Campaign选项列表中配置建议的阈值。 请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=zh-Hans#delivery)。
+>为了避免出现性能问题，建议每封电子邮件不要附加多个附件。 可以从Campaign选项列表中配置建议的阈值。 请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery)。
 
 可能存在两种情况：
 
@@ -43,7 +43,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->此类配置通常在投放模板中执行。 有关详细信息，请参见此 [&#x200B; 页面](../send/create-templates.md)。
+>此类配置通常在投放模板中执行。 有关详细信息，请参见此 [ 页面](../send/create-templates.md)。
 
 ## 护栏 {#attachments-guardrails}
 
@@ -51,7 +51,7 @@ ht-degree: 4%
 
 Adobe还建议限制附加文件的大小和数量。 默认情况下，您只能将一个文件作为附件添加到电子邮件中。 可通过`NmsDelivery_MaxRecommendedAttachments`选项配置此阈值。
 
-在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=zh-Hans#delivery)的Campaign选项列表中了解详情。
+在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery)的Campaign选项列表中了解详情。
 
 ## 附加本地文件 {#attaching-a-local-file}
 
@@ -65,29 +65,29 @@ Adobe还建议限制附加文件的大小和数量。 默认情况下，您只�
 1. 单击 **[!UICONTROL Add]** 按钮。
 1. 单击&#x200B;**[!UICONTROL File...]**&#x200B;以选择要附加到投放的文件。
 
-   ![](assets/s_ncs_user_wizard_email_attachement.png)
+   ![打开“添加”菜单并选择“文件……”，通过“编辑附加文件”对话框将文件附加到电子邮件投放](assets/s_ncs_user_wizard_email_attachement.png)
 
 您还可以直接将文件拖放到投放&#x200B;**[!UICONTROL Attachments]**&#x200B;字段中，或使用投放助理工具栏中的&#x200B;**[!UICONTROL Attach]**&#x200B;图标，
 
-![](assets/s_ncs_user_wizard_add_file_ico.png)
+在投放助理工具栏中，电子邮件参数部分](assets/s_ncs_user_wizard_add_file_ico.png)旁边的![附加图标
 
 选择文件后，会立即将其上传到服务器，以便在交付时可用。 它列在&#x200B;**[!UICONTROL Attachments]**&#x200B;字段中。
 
-![](assets/s_ncs_user_wizard_email_attachement_e.png)
+![附件字段中列出了上载文件的电子邮件参数](assets/s_ncs_user_wizard_email_attachement_e.png)
 
 ## 创建计算附件 {#creating-a-calculated-attachment}
 
 创建计算附件时，可以在分析或投放每封邮件期间计算附件的名称，并可依赖收件人。 您还可以对其进行个性化并转换为PDF。
 
-![](assets/s_ncs_user_wizard_attachment.png)
+![编辑附加文件对话框，打开“添加”菜单并选定“计算的附件”……](assets/s_ncs_user_wizard_attachment.png)
 
 要创建个性化附件，请执行以下步骤：
 
 1. 单击 **[!UICONTROL Attachments]** 链接。
 1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮，然后选择&#x200B;**[!UICONTROL Calculated attachment]**。
-1. 从&#x200B;**[!UICONTROL Type]**&#x200B;下拉列表中选择计算类型：
+1. 从&#x200B;**[!UICONTROL Type]**&#x200B;下拉列表中Select计算类型：
 
-![](assets/s_ncs_user_wizard_email01_136.png)
+![带有“类型”下拉列表的“附件定义”对话框，其中显示四个已计算的附件选项](assets/s_ncs_user_wizard_email01_136.png)
 
 可以使用以下选项：
 
@@ -100,14 +100,14 @@ Adobe还建议限制附加文件的大小和数量。 默认情况下，您只�
 
 如果附件是本地文件，请选择选项： **[!UICONTROL File name is specified when creating the delivery template]**。 在本地选择文件并将其上载到服务器上。 按照下面的步骤进行操作：
 
-1. 在&#x200B;**[!UICONTROL Local file]**&#x200B;字段中选择要上传的文件。
+1. 在&#x200B;**[!UICONTROL Local file]**&#x200B;字段中Select要上传的文件。
 1. 根据需要指定标签。 在消息传送系统中查看时，标签会替换文件名。 如果未指定任何内容，则默认使用文件名。
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_02.png)
+   ![包含“类型”、“标签”和“本地文件”字段的“附件定义”“常规”选项卡，以及“上载文件”选项](assets/s_ncs_user_wizard_email_calc_attachement_02.png)
 
 1. 如有必要，请选择&#x200B;**[!UICONTROL Upload file on the server]**，然后单击&#x200B;**[!UICONTROL Update on server]**&#x200B;开始传输。
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_01.png)
+   ![上载进度窗口，其中列出了日志消息并显示文件传输到100%](assets/s_ncs_user_wizard_email_calc_attachement_01.png)的服务器
 
 然后，文件即可在服务器上使用，以附加到从此模板创建的不同投放中。
 
@@ -115,7 +115,7 @@ Adobe还建议限制附加文件的大小和数量。 默认情况下，您只�
 
 选项&#x200B;**[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]**&#x200B;允许您选择具有个性化字段的文件，如预期收件人的姓氏和名字。
 
-![](assets/s_ncs_user_wizard_email_calc_attachement_06.png)
+![包含PDF附件的收件人名字和姓氏个性化字段的Word处理器文档](assets/s_ncs_user_wizard_email_calc_attachement_06.png)
 
 对于此类附件，请应用以下配置步骤：
 
@@ -124,13 +124,13 @@ Adobe还建议限制附加文件的大小和数量。 默认情况下，您只�
 1. 选择&#x200B;**[!UICONTROL Upload file on the server]**，然后单击&#x200B;**[!UICONTROL Update on server]**&#x200B;开始传输。
 1. 您可以显示预览。 要实现此目的，请选择收件人。
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_07.png)
+   ![附件定义对话框，用于预览从预览列表选择的收件人的个性化PDF](assets/s_ncs_user_wizard_email_calc_attachement_07.png)
 
 1. 分析您的投放，然后启动它。
 
    每个收件人都会收到一个附加到投放的个性化PDF。
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
+   ![已收到包含个性化PDF附件的电子邮件，已打开以在问候语中显示收件人姓名](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
 
 
 
@@ -149,13 +149,13 @@ Adobe还建议限制附加文件的大小和数量。 默认情况下，您只�
    >
    >文件必须存在于服务器上。
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_04.png)
+   ![在投放分析期间使用脚本计算文件路径和名称（包括日期）的附件定义](assets/s_ncs_user_wizard_email_calc_attachement_04.png)
 
 1. 分析，然后开始投放。
 
    可以在分析日志中看到文件名计算。
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_05.png)
+   ![传递分析日志，其行显示高亮显示的计算附件文件名结果](assets/s_ncs_user_wizard_email_calc_attachement_05.png)
 
 ### 附加个性化文件 {#attach-a-personalized-file}
 
@@ -168,7 +168,7 @@ Adobe还建议限制附加文件的大小和数量。 默认情况下，您只�
 1. 指定要应用于附件的标签。
 1. 在定义窗口中指定文件的访问路径及其确切名称。 如果文件名是个性化的，则可以为相关值使用个性化字段。
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_010.png)
+   ![使用文件路径中的收件人姓氏定义附件，为每个收件人选择不同的文件](assets/s_ncs_user_wizard_email_calc_attachement_010.png)
 
    >[!IMPORTANT]
    >
@@ -178,21 +178,21 @@ Adobe还建议限制附加文件的大小和数量。 默认情况下，您只�
 
    在以下示例中，根据使用合并字段定义的名称选择附加文件。
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_011.png)
+   ![已收到一封电子邮件，其中有一个附加文件的名称是从收件人的姓氏生成的](assets/s_ncs_user_wizard_email_calc_attachement_011.png)
 
 ### 附件设置 {#attachment-settings}
 
 对于前两个选项，您可以通过选择相应的选项来选择&#x200B;**[!UICONTROL Upload file on the server]**。 **[!UICONTROL Update the file on the server]**&#x200B;链接允许您开始上传。
 
-![](assets/s_ncs_user_wizard_email01_137.png)
+![附件定义“常规”选项卡，其中上载文件位于选定的服务器上，更新位于服务器链接](assets/s_ncs_user_wizard_email01_137.png)
 
 将显示一条消息，告知您文件已上传到服务器：
 
-![](assets/s_ncs_user_wizard_email01_1371.png)
+![服务器消息中已存在显示该文件的附件定义](assets/s_ncs_user_wizard_email01_1371.png)
 
 对于文件更改，将显示警告消息：
 
-![](assets/s_ncs_user_wizard_email01_1372.png)
+![附件定义显示本地文件不等于服务器上的文件警告](assets/s_ncs_user_wizard_email01_1372.png)
 
 **[!UICONTROL Advanced]**&#x200B;选项卡允许您定义附加文件的高级选项：
 
@@ -201,4 +201,4 @@ Adobe还建议限制附加文件的大小和数量。 默认情况下，您只�
 
   在窗口中输入文本，并使用下拉列表中提供的个性化字段。 在以下示例中，文件名进行了个性化设置，包含今天的日期和收件人名称。
 
-  ![](assets/s_ncs_user_wizard_email_calc_attachement_09.png)
+  ![高级选项卡，其脚本可将附件文件名个性化，电子邮件显示结果名称](assets/s_ncs_user_wizard_email_calc_attachement_09.png)

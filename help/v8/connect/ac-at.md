@@ -163,7 +163,7 @@ Adobe Target可以使用以下类型的数据：
 
 1. 选择在Adobe Campaign中插入动态选件时选择的位置名称。
 
-   在Select位置列表](assets/target_15.png)中选择了v_rawbox位置的![体验定位活动
+   在Select位置列表![&#128279;](assets/target_15.png)中选择了v_rawbox位置的体验定位活动
 
 1. 单击下拉按钮并选择&#x200B;**[!UICONTROL Change Redirect Offer]**。
 

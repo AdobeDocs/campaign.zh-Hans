@@ -159,7 +159,7 @@ XML文档必须以`<package>`元素开始和结束。 后续的任何`<entities>
 
 >[!NOTE]
 >
->在Campaign架构](database-links.md)的[链接管理中定义了链接到架构元素的完整性类型。
+>在Campaign架构[&#128279;](database-links.md)的链接管理中定义了链接到架构元素的完整性类型。
 
 #### 导出营销活动 {#export-a-campaign}
 

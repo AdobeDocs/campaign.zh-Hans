@@ -53,7 +53,7 @@ ht-degree: 3%
 
   ![带有表单数据部分、字段选择器和强制是或否切换的输入区域（电子邮件）侧边栏面板](assets/dce_sidebar_inputtypechanges.png)
 
-  此网站](https://www.w3schools.com/tags/att_input_type.asp)中的[提供了“type”属性的正式列表。
+  此网站[&#128279;](https://www.w3schools.com/tags/att_input_type.asp)中的提供了“type”属性的正式列表。
 
 * 使用DCE模拟结束页面的步骤：
 

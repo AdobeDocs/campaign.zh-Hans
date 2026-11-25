@@ -84,7 +84,7 @@ Web窗体的布局在每个容器中逐页定义，并且可以根据需要过�
 
 标题和列表分别占据一个单元格（因此是容器的整行），复选框会扩展到两个单元格上。 根据字段类型，归属于输入字段的单元格数定义在&#x200B;**[!UICONTROL General]**&#x200B;选项卡或&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中：
 
-在“显示”设置](assets/s_ncs_admin_survey_container_ex2.png)下将单元格数设置为2的复选框元素的![高级选项卡
+在“显示”设置![&#128279;](assets/s_ncs_admin_survey_container_ex2.png)下将单元格数设置为2的复选框元素的高级选项卡
 
 ## 定义标签位置 {#defining-the-position-of-labels}
 

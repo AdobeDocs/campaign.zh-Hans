@@ -44,12 +44,12 @@ ht-degree: 7%
 
 您可以保存这些结果，并在必要时通过创建结果的描述性分析导出这些结果。 要执行此操作，请在结果窗口中单击相应的链接。
 
-有关描述性分析助理的详细信息，请参阅[本节](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis){target="_blank"}。
+有关描述性分析助理的详细信息，请参阅[本节](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis){target="_blank"}。
 
 ![“模拟结果”选项卡，包含按优惠划分的建议以及结果描述性分析链接](assets/offer_simulation_012.png)
 
 数据透视表可快速查看每个排名的选件细分。 与Adobe Campaign中的所有报告一样，您可以在Web浏览器中导出、打印、存档或显示报告。
 
-如需详细信息，请参阅[此小节](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports){target="_blank"}。
+如需详细信息，请参阅[此小节](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/reporting/creating-new-reports/actions-on-reports){target="_blank"}。
 
 ![模拟仪表板，按等级划分优惠报告，带有优惠等级表、饼图和导出工具栏](assets/offer_simulation_013.png)

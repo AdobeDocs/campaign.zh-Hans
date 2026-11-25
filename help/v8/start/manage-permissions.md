@@ -47,9 +47,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1733'
+source-wordcount: '1816'
 ht-degree: 1%
 ---
 # 管理用户权限{#manage-permissions}
@@ -62,16 +62,16 @@ ht-degree: 1%
 
 1. 在[Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"}主页中，选择&#x200B;**添加用户**。
 
-   ![](assets/add-a-user.png)
+   ![Admin Console主页中突出显示“添加用户”快速链接](assets/add-a-user.png)
 
 1. 输入用户的电子邮件地址。
 1. 使用“+”符号选择要分配给用户的产品配置文件或用户组。
 
-   ![](assets/add-a-product-profile.png)
+   ![添加包含Adobe Campaign产品配置文件列表的用户表单以供用户选择](assets/add-a-product-profile.png)
 
-   [此部分](#ootb-productprofiles)中列出了Campaign内置产品配置文件。
+   Campaign内置产品配置文件列在[默认产品配置文件和操作员组](#ootb-productprofiles)中。
 
-   在[本节](#user-groups)中了解如何创建用户组
+   了解如何在[使用用户组](#user-groups)中创建用户组
 
 1. 单击&#x200B;**保存**。 用户即被添加，并显示在“用户”列表中。 如果您为用户分配管理员角色或产品配置文件，用户将收到电子邮件通知。 用户必须单击该链接才能完成其个人资料。
 
@@ -109,21 +109,21 @@ campaign — 测试 — 交付
 
 1. 连接到Campaign，打开资源管理器，然后浏览到&#x200B;**[!UICONTROL Administration > Access management > Operator groups]**。
 1. 单击&#x200B;**[!UICONTROL New]**，定义操作员组的名称并设置其内部名称（“审阅者”）。
-   ![](assets/new-op-group.png)
-1. 通过选择已命名权限来定义关联的权限。 [此部分](#use-named-rights)中详细介绍了已命名权限
+   ![资源管理器中的操作员组列表，正在创建新的审阅人操作员组](assets/new-op-group.png)
+1. 通过选择已命名权限来定义关联的权限。 [已命名权限](#use-named-rights)中详细介绍了已命名权限
 1. 保存新的操作员组。
 
 #### 在Admin Console中创建产品配置文件{#create-profile-in-admin-console}
 
 1. 连接到[Admin Console](https://adminconsole.adobe.com/enterprise){target="_blank"}。
 1. 从主页的&#x200B;**产品和服务**&#x200B;部分，打开Campaign产品。
-1. 单击&#x200B;**新建配置文件**，然后输入要创建的产品配置文件的名称，其语法完全正确，如[此处](#product-profiles)所述。 例如，我们输入：营销活动 — `<your-instance-name>` — 审阅者
+1. 单击&#x200B;**新建配置文件**，然后输入要创建的产品配置文件的名称，该名称具有完全正确的语法，如[使用产品配置文件](#product-profiles)中所述。 例如，我们输入：营销活动 — `<your-instance-name>` — 审阅者
 
-   ![](assets/new-product-profile-ui.png)
+   ![创建新的产品配置文件页面，产品配置文件名称字段已填写](assets/new-product-profile-ui.png)
 
 1. 保存您的更改。
 
-您现在可以将用户添加到此新产品配置文件，如[此部分](#add-users)中所述。
+您现在可以将用户添加到此新产品配置文件，如[添加用户](#add-users)中所述。
 
 最佳实践为将产品配置文件分配给用户组。 按用户管理权限不是一种可持续的模式。
 
@@ -132,7 +132,7 @@ campaign — 测试 — 交付
 
 Adobe Campaign附带在Adobe启用您的环境时定义的内置&#x200B;**产品配置文件**。
 
-![](assets/ootb-product-profiles.png)
+![Admin Console产品配置文件选项卡，其中列出了内置的Campaign产品配置文件，例如管理员和操作](assets/ootb-product-profiles.png)
 
 这些产品配置文件与Campaign **操作员组**&#x200B;匹配。 默认操作员组及其[已命名权限](#use-named-rights)如下所列：
 
@@ -146,7 +146,7 @@ Adobe Campaign附带在Adobe启用您的环境时定义的内置&#x200B;**产品
 
    >[!IMPORTANT]
    >
-   >**[!UICONTROL Administrator]**&#x200B;角色授予对Campaign控制面板的访问权限。 Adobe Admin Console中的任何产品配置文件，其名称中包含“管理员”一词（如“管理员”、“管理员”、“管理员”、“审批管理员”等） 将授予对控制面板的访问权限。 了解有关[管理控制面板访问权限](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans){target="_blank"}的更多信息。
+   >**[!UICONTROL Administrator]**&#x200B;角色授予对Campaign控制面板的访问权限。 Adobe Admin Console中的任何产品配置文件，其名称中包含“管理员”一词（如“管理员”、“管理员”、“管理员”、“审批管理员”等） 将授予对控制面板的访问权限。 了解有关[管理控制面板访问权限](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}的更多信息。
 
 1. **[!UICONTROL Delivery operators]** （投放）
 
@@ -213,7 +213,7 @@ Adobe Campaign附带在Adobe启用您的环境时定义的内置&#x200B;**产品
    >
    >**如果未指定审阅者，或者在优惠模板中已将优惠经理设置为审阅者，则**&#x200B;只能批准优惠。
 
-   [此页面](../interaction/interaction-operators.md#recap-of-rights-according-to-operator)中提供了每个环境的选件管理器权限矩阵。
+   每个环境的选件管理器权限矩阵在[每个交互操作员的权限矩阵](../interaction/interaction-operators.md#recap-of-rights-according-to-operator)中可用。
 
 ## 使用用户组{#user-groups}
 
@@ -230,7 +230,7 @@ Adobe Campaign提供了一组已命名权限，允许您定义分配给用户和
 已命名权限将权限授予：
 
 * 执行操作
-例如，为具有&#x200B;**准备投放**&#x200B;命名权限的&#x200B;**投放操作员**&#x200B;组的成员激活投放编辑器中的&#x200B;**分析**&#x200B;按钮
+例如，为具有**准备投放**&#x200B;命名权限的&#x200B;**投放操作员**&#x200B;组的成员激活投放编辑器中的&#x200B;**分析**&#x200B;按钮
 
 * 对文件夹的访问权限
 操作员组成员资格可以通过更改文件夹的安全性设置来授予或限制对文件夹的访问权限。 [了解详情](folder-permissions.md#restrict-access-to-a-folder)。

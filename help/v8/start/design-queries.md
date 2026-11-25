@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 5%
+source-wordcount: '1109'
+ht-degree: 3%
 ---
 # 查询营销活动数据库
 
@@ -52,7 +52,7 @@ ht-degree: 5%
 
 要查询Campaign数据库，请打开&#x200B;**[通用查询编辑器](query-editor.md)**，然后在&#x200B;**[!UICONTROL Document type]**&#x200B;窗口中选择包含要查询的数据的表。
 
-![](assets/query_editor_nveau_21.png)
+![带有通用查询编辑器的“工具”菜单打开“文档类型”窗口，列表中包含“收件人”架构。](assets/query_editor_nveau_21.png)
 
 如果需要，请使用筛选器字段或&#x200B;**[!UICONTROL Filters]**&#x200B;按钮筛选数据。
 
@@ -62,19 +62,19 @@ ht-degree: 5%
 
 例如，您可以选择&#x200B;**[!UICONTROL Age]**、**[!UICONTROL Primary key]**、**[!UICONTROL Email domain]**&#x200B;和&#x200B;**[!UICONTROL City]**。 将根据此选择构建输出。 要调整列的顺序，请使用窗口右侧的蓝色箭头。
 
-![](assets/query_editor_nveau_01.png)
+![要提取步骤的数据，其中年龄、主键、电子邮件域和城市已添加到输出列列表。](assets/query_editor_nveau_01.png)
 
 您可以通过添加公式或向聚合函数应用进程来修改表达式。 要编辑表达式，请单击&#x200B;**[!UICONTROL Expression]**&#x200B;列字段，然后选择&#x200B;**[!UICONTROL Edit expression]**。
 
-![](assets/query_editor_nveau_97.png)
+![输出列中的Expression列字段，其中的Edit expression按钮突出显示。](assets/query_editor_nveau_97.png)
 
-您可以对输出列中显示的数据进行分组。 为此，请在&#x200B;**[!UICONTROL Data to extract]**&#x200B;窗口的&#x200B;**[!UICONTROL Group]**&#x200B;列中选择&#x200B;**[!UICONTROL Yes]**。 然后，将根据所选的分组轴聚合结果。 有关使用分组的查询示例，请参阅[此部分](../../automation/workflow/query-delivery-info.md)。
+您可以对输出列中显示的数据进行分组。 为此，请在&#x200B;**[!UICONTROL Data to extract]**&#x200B;窗口的&#x200B;**[!UICONTROL Group]**&#x200B;列中选择&#x200B;**[!UICONTROL Yes]**。 然后，将根据所选的分组轴聚合结果。 有关使用分组的查询示例，请参阅[查询投放信息](../../automation/workflow/query-delivery-info.md)。
 
-![](assets/query_editor_nveau_56.png)
+![在组列高亮显示的情况下要提取步骤的数据，每个输出列均设置为“否”。](assets/query_editor_nveau_56.png)
 
 * **[!UICONTROL Handle groupings (GROUP BY + HAVING)]**&#x200B;选项允许您对结果分组，并将条件应用于这些组。 它适用于输出列中的所有字段。 例如，您可以使用它对输出列中的值进行分组，然后筛选结果以仅检索特定信息，例如年龄在35到50岁之间的收件人。
 
-  如需详细信息，请参阅[此小节](../../automation/workflow/query-grouping-management.md)。
+  有关详细信息，请参考[使用分组管理的查询](../../automation/workflow/query-grouping-management.md)。
 
 **[!UICONTROL Remove duplicate rows (DISTINCT)]**&#x200B;选项从输出中消除相同的行（删除重复项）。 例如，如果您选择&#x200B;**姓氏**、**名字**&#x200B;和&#x200B;**电子邮件**&#x200B;作为输出列，则所有三个字段中具有相同值的任何记录都将被视为重复项。 结果中将只保留一个实例，确保每个联系人仅出现一次。
 
@@ -87,21 +87,21 @@ ht-degree: 5%
 
 在此示例中，数据根据收件人年龄按升序排序。
 
-![](assets/query_editor_nveau_57.png)
+![对列出年龄、主键、电子邮件域和城市的步骤进行排序，并将排序和降序排序列设置为](assets/query_editor_nveau_57.png)
 
 ## 第4步 — 筛选数据 {#step-4---filter-data}
 
 利用查询编辑器，可筛选数据以缩小结果范围。 可用的过滤器取决于您要查询的表。
 
-![](assets/query_editor_nveau_09.png)
+![具有在下面的限制筛选器和用户筛选器的列表中选择的筛选条件的数据筛选步骤。](assets/query_editor_nveau_09.png)
 
 选择&#x200B;**[!UICONTROL Filtering conditions]**&#x200B;后，**[!UICONTROL Target elements]**&#x200B;部分打开。 在这里，您可以定义用于筛选要收集的数据的规则。
 
-* 要创建新过滤器，请选择构建条件所需的字段、运算符和值。 您还可以合并多个条件，如本页[&#128279;](filter-conditions.md)上的所述。
+* 要创建新过滤器，请选择构建条件所需的字段、运算符和值。 您还可以合并多个条件，如本页](filter-conditions.md)上的[所述。
 
 * 要重用现有的筛选器，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮，选择&#x200B;**[!UICONTROL Predefined filter]**&#x200B;并选择所需的筛选器。
 
-  ![](assets/query_editor_15.png)
+  ![在Target元素步骤中添加菜单，并打开预定义过滤器，列出已列入阻止名单的电子邮件地址和其他过滤器。](assets/query_editor_15.png)
 
 在&#x200B;**[!UICONTROL Generic query editor]**&#x200B;中创建的筛选器可以在其他查询应用程序中重用，反之亦然。 要保存过滤器以供将来使用，请单击&#x200B;**[!UICONTROL Save]**&#x200B;图标。
 
@@ -111,7 +111,7 @@ ht-degree: 5%
 
 如以下示例所示，要恢复所有说英语的收件人，请选择“收件人语言&#x200B;**等于** EN”。
 
-![](assets/query_editor_nveau_89.png)
+![筛选条件已选定，然后是Language等于EN的Target元素。](assets/query_editor_nveau_89.png)
 
 >[!NOTE]
 >
@@ -119,11 +119,11 @@ ht-degree: 5%
 
 单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡以查看筛选条件的结果。 在这种情况下，所有说英语的收件人都会显示其姓名、名字和电子邮件地址。
 
-![](assets/query_editor_nveau_98.png)
+![ Target元素步骤的“预览”选项卡，其中列出了与筛选器匹配的收件人。](assets/query_editor_nveau_98.png)
 
 熟悉SQL语言的用户可以单击&#x200B;**[!UICONTROL Generate SQL query]**&#x200B;查看SQL中的查询。
 
-![](assets/query_editor_nveau_99.png)
+![生成的SQL查询链接打开从语言等于EN的筛选器生成的Native SQL查询。](assets/query_editor_nveau_99.png)
 
 ## 步骤5 — 设置数据格式 {#step-5---format-data}
 
@@ -135,7 +135,7 @@ ht-degree: 5%
 
 未选中的列在数据预览窗口中隐藏。
 
-![](assets/query_editor_nveau_10.png)
+![数据格式步骤列出年龄、主键、电子邮件域和城市，电子邮件域列未选中。](assets/query_editor_nveau_10.png)
 
 通过&#x200B;**[!UICONTROL Transformation]**&#x200B;列，可将列标签更改为大写或小写。 选择该列并单击&#x200B;**[!UICONTROL Transformation]**&#x200B;列中的。 您可以选择：
 
@@ -143,7 +143,7 @@ ht-degree: 5%
 * **[!UICONTROL Switch to upper case]**，
 * **[!UICONTROL First letter in upper case]**.
 
-![](assets/query_editor_nveau_42.png)
+![Transformation下拉列表为None、Switch to lower case、Switch to upper case和First letter in upper case。](assets/query_editor_nveau_42.png)
 
 ## 步骤6 — 预览数据 {#step-6---preview-data}
 
@@ -151,7 +151,7 @@ ht-degree: 5%
 
 在此示例中，数据根据收件人年龄按升序排序。
 
-![](assets/query_editor_nveau_11.png)
+![数据预览步骤：开始数据预览填充了年龄、主键和城市值的表。](assets/query_editor_nveau_11.png)
 
 >[!NOTE]
 >

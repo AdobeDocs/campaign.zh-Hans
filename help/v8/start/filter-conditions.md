@@ -24,10 +24,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '3350'
-ht-degree: 34%
+source-wordcount: '3713'
+ht-degree: 30%
 ---
 # 定义过滤器条件{#filter-conditions}
 
@@ -37,7 +37,7 @@ ht-degree: 34%
 
 在筛选条件中，您需要使用运算符将两个值链接在一起。
 
-![](assets/query_editor_nveau_96.png)
+![打开“运算符”下拉列表的目标元素步骤，列出等于、大于、小于和其它运算符。](assets/query_editor_nveau_96.png)
 
 以下是可用的运算符列表：
 
@@ -143,24 +143,24 @@ ht-degree: 34%
 
 单击&#x200B;**[!UICONTROL And]**（默认提供）并从下拉列表中选择。
 
-![](assets/query_condition_modif_01.png)
+![And、Or和Except链接选项位于条件电子邮件域等于orange.co.uk下面的下拉列表中。](assets/query_condition_modif_01.png)
 
 * **[!UICONTROL And]**：添加条件并启用过度筛选。
 * **[!UICONTROL Or]**：添加条件并启用过度筛选。
 
   以下示例允许您查找其电子邮件域包含“orange.co.uk”或其邮政编码以“NW”开头的收件人。
 
-  ![](assets/query_condition_modif_02.png)
+  ![由Or链接的两个条件：电子邮件域等于orange.co.uk或Zip/Postcode以NW开头。](assets/query_condition_modif_02.png)
 
 * **[!UICONTROL Except]**：如果您有两个过滤器，但第一个过滤器未返回值，则此类型的链接会创建异常。
 
   在以下示例中，我们希望返回其电子邮件域包含“orange.co.uk”的收件人，除非收件人的姓氏为“Smith”。
 
-  ![](assets/query_condition_modif_03.png)
+  ![由Except链接的两个条件：电子邮件域等于orange.co.uk，除了姓氏等于Smith。](assets/query_condition_modif_03.png)
 
 此示例显示了一个用于显示的过滤器：说西班牙语的收件人、使用手机号码的女性收件人、没有帐号且公司名称以字母“N”开头的收件人。
 
-![](assets/query_editor_nveau_31.png)
+![筛选组合了西班牙语、女性与手机号码，没有帐号与以N.](assets/query_editor_nveau_31.png)开头的公司之间的组合
 
 ## 区分条件的优先级 {#prioritizing-conditions}
 
@@ -169,7 +169,7 @@ ht-degree: 34%
 * 通过指向右侧的箭头，可以向过滤器添加一定级别的圆括号。
 * 通过指向左侧的箭头，可从筛选器中删除选定的括号级别。
 
-  ![](assets/query_condition_modif_04.png)
+  ![查询编辑器工具栏中左括号箭头和右括号箭头以及上箭头和下箭头突出显示。](assets/query_condition_modif_04.png)
 
 * 垂直箭头允许您移动条件，从而更改其执行顺序。
 
@@ -177,7 +177,7 @@ ht-degree: 34%
 
 将光标置于&#x200B;**[!UICONTROL Gender (@gender) equal to Male]**&#x200B;过滤条件上并单击&#x200B;**[!UICONTROL Remove a parenthesis level]**&#x200B;箭头。
 
-![](assets/query_editor_nveau_32.png)
+![删除括号级别之前和之后：性别等于男性移动到与城市等于伦敦相同的级别。](assets/query_editor_nveau_32.png)
 
 **[!UICONTROL Gender (@gender) equal to Male]**&#x200B;条件已移出其圆括号。 它已经达到与“伦敦与金融城相等”的水平。 这些条件链接在一起(**[!UICONTROL And]**)。
 
@@ -187,7 +187,7 @@ ht-degree: 34%
 
 所选字段的详细信息将显示在窗口底部。 例如，**[!UICONTROL Email domain]**&#x200B;字段是&#x200B;**[!UICONTROL Calculated SQL field]**，其扩展名为&#x200B;**[!UICONTROL (@domain)]**。
 
-![](assets/query_editor_nveau_59.png)
+![在选择了电子邮件域的情况下要提取步骤的数据；下面的详细信息读取了SQL计算字段(@domain)。](assets/query_editor_nveau_59.png)
 
 >[!NOTE]
 >
@@ -195,7 +195,7 @@ ht-degree: 34%
 
 双击可用字段以将其添加到输出列。 在查询结束时，每个选定的字段都会在&#x200B;**[!UICONTROL Data preview]**&#x200B;窗口中创建一个列。
 
-![](assets/query_editor_nveau_01.png)
+![要提取步骤的数据，其中年龄、主键、电子邮件域和城市已添加到输出列列表。](assets/query_editor_nveau_01.png)
 
 默认情况下，不显示高级字段。 单击可用字段右下角的&#x200B;**[!UICONTROL Display advanced fields]**&#x200B;以显示所有内容。 再次单击可返回到前视图。
 
@@ -203,7 +203,7 @@ ht-degree: 34%
 
 以下示例显示了收件人表的高级字段。
 
-![](assets/query_editor_nveau_53.png)
+![高亮显示高级字段的可用字段列表以及右下角的“显示高级字段”按钮。](assets/query_editor_nveau_53.png)
 
 各种类别的字段：
 
@@ -275,7 +275,7 @@ ht-degree: 34%
 
 >[!NOTE]
 >
->* 使用&#x200B;**[!UICONTROL Add]**&#x200B;按钮（侧图标栏上方）添加要编辑表达式的输出列。 有关编辑表达式的详细信息，请参阅[本节](#building-expressions)。
+>* 使用&#x200B;**[!UICONTROL Add]**&#x200B;按钮（侧图标栏上方）添加要编辑表达式的输出列。 有关编辑表达式的详细信息，请参阅[生成表达式](#building-expressions)。
 >* 通过单击红色的“x”（**删除**）删除输出列。
 >* 使用箭头更改输出列的顺序。
 >* **[!UICONTROL Distribution of values]**&#x200B;用于查看所选字段值的分布情况（例如，链接到收件人城镇、收件人语言等的分布情况）。
@@ -284,29 +284,29 @@ ht-degree: 34%
 
 如有必要，请在设置数据格式期间添加列。 计算字段将列添加到数据预览部分。 单击 **[!UICONTROL Add a calculated field]**。
 
-![](assets/query_editor_nveau_43.png)
+![使用“添加计算字段”按钮的数据格式化步骤，并在“类型”上打开“计算字段定义”对话框。](assets/query_editor_nveau_43.png)
 
 有四种类型的计算字段：
 
 * **[!UICONTROL Fixed string]**：用于添加字符串。
 
-  ![](assets/query_editor_nveau_60.png)
+  ![导出计算字段定义对话框，其中包含固定字符串类型和输入的文本“我的字符串”。](assets/query_editor_nveau_60.png)
 
 * **[!UICONTROL String with JavaScript tags]**：计算字段的值将字符串和JavaScript指令组合在一起。
 
-  ![](assets/query_editor_nveau_61.png)
+  ![导出计算字段定义对话框，该对话框的类型为String，在编辑器中带有JavaScript标记和脚本标记。](assets/query_editor_nveau_61.png)
 
 * **[!UICONTROL JavaScript expression]**：计算字段的值是JavaScript函数评估的结果。 可以键入返回的值（数字、日期等）。
 
-  ![](assets/query_editor_nveau_62.png)
+  ![导出计算字段定义对话框，该对话框具有类型JavaScript表达式和返回A或B的if-else脚本。](assets/query_editor_nveau_62.png)
 
 * **[!UICONTROL Enumerations]**：此类型的字段允许您使用/修改新列中某个输出列的内容。
 
   可以使用列的源值并为它指定目标值。 此目标值将显示在新输出列中。
 
-  添加计算字段类型&#x200B;**[!UICONTROL Enumerations]**&#x200B;的示例可用，请参阅[此部分](../../automation/workflow/adding-enumeration-type-calculated-field.md)。
+  添加计算字段类型&#x200B;**[!UICONTROL Enumerations]**&#x200B;的示例可用，请参阅[添加枚举类型计算字段](../../automation/workflow/adding-enumeration-type-calculated-field.md)。
 
-  ![](assets/query_editor_nveau_63.png)
+  ![包含Source列列表和其他情况的四个选项的枚举计算字段对话框。](assets/query_editor_nveau_63.png)
 
   **[!UICONTROL Enumerations]**&#x200B;类型计算字段可以包括4个条件：
 
@@ -319,7 +319,7 @@ ht-degree: 34%
 
 要删除此计算字段，请单击&#x200B;**[!UICONTROL Remove the calculated field]**&#x200B;十字。
 
-![](assets/query_editor_nveau_58.png)
+![选定计算字段新建并突出显示计算字段详细信息按钮的数据格式化步骤。](assets/query_editor_nveau_58.png)
 
 ## 构建表达式 {#building-expressions}
 
@@ -335,15 +335,15 @@ ht-degree: 34%
 
    选择&#x200B;**[!UICONTROL Process on an aggregate function]**&#x200B;和&#x200B;**[!UICONTROL Count]**。 单击 **[!UICONTROL Next]**。
 
-   ![](assets/query_editor_nveau_54.png)
+   ![要提取的数据步骤：添加将打开一个表达式字段，其中突出显示“编辑表达式”按钮。](assets/query_editor_nveau_54.png)
 
 1. 计算主键。
 
-   ![](assets/query_editor_nveau_88.png)
+   ![已添加并突出显示count（主键）表达式的输出列列表。](assets/query_editor_nveau_88.png)
 
 以下是&#x200B;**[!UICONTROL Formula types]**&#x200B;窗口中可用选项的详细视图：
 
-![](assets/query_editor_nveau_05.png)
+![公式类型窗口，其中Process位于选定的聚合函数上，Count选项已选定。](assets/query_editor_nveau_05.png)
 
 1. **[!UICONTROL Field only]**&#x200B;允许您返回&#x200B;**[!UICONTROL Field to select]**&#x200B;窗口。
 1. **[!UICONTROL Aggregate (Process on an aggregate function)]**. 以下是聚合使用的一些示例：
@@ -358,7 +358,7 @@ ht-degree: 34%
 
 1. **[!UICONTROL Expression]**&#x200B;打开&#x200B;**[!UICONTROL Edit the expression]**&#x200B;窗口。 这样，您就可以检测包含太多数字（可能是输入错误）的电话号码。
 
-   ![](assets/query_editor_nveau_71.png)
+   ![使用电话长度表达式编辑表达式窗口，结果筛选电话大于10。](assets/query_editor_nveau_71.png)
 
    有关所有可用函数的列表，请参阅[函数列表](#list-of-functions)。
 
@@ -368,7 +368,7 @@ ht-degree: 34%
 
 表达式编辑器如下所示：
 
-![](assets/filter-define-expression.png)
+![编辑包含可用字段的表达式窗口，以及包含集合和字符串等类别的函数列表。](assets/filter-define-expression.png)
 
 它允许您选择数据库表中的字段并向它们添加高级函数。 可以使用以下函数：
 

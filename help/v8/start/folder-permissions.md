@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 18%
+source-wordcount: '333'
+ht-degree: 17%
 ---
 # 管理文件夹权限{#manage-folder-permissions}
 
@@ -40,14 +40,14 @@ ht-degree: 18%
 
 使用文件夹的权限可组织和控制对Campaign数据的访问。
 
-[此页面](../audiences/folders-and-views.md)中详细介绍了文件夹管理。
+[文件夹和视图](../audiences/folders-and-views.md)中详细介绍了文件夹管理。
 
 要编辑特定Campaign文件夹的权限，请执行以下步骤：
 
 1. 右键单击该文件夹并选择&#x200B;**[!UICONTROL Properties...]**。
 1. 浏览到&#x200B;**[!UICONTROL Security]**&#x200B;选项卡以查看此文件夹的授权。
 
-   ![](assets/folder-permissions.png)
+   ![文件夹属性“安全”选项卡，具有操作员或组的授权以及读取、写入和删除数据权限](assets/folder-permissions.png)
 
 * 要&#x200B;**授权组或操作员**，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并选择组或操作员以分配此文件夹的授权。
 * 要&#x200B;**禁止组或操作员**，请单击&#x200B;**[!UICONTROL Delete]**&#x200B;并选择组或操作员以删除此文件夹的授权。

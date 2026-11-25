@@ -51,10 +51,10 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 81%
+source-wordcount: '1099'
+ht-degree: 71%
 ---
 # Adobe Campaign 入门{#gs-ac-v8}
 
@@ -70,7 +70,7 @@ Adobe Campaign v8 在基础架构、安全性、可投放性和监测方面有�
 * 将电子邮件、移动设备、线上和线下渠道&#x200B;**整合**&#x200B;到客户历程中
 * **自动**&#x200B;投放有意义、及时的消息和产品建议
 
-![](assets/do-not-localize/ac-capabilities.png)
+![从客户个人资料和分段到编排、电子邮件和移动以及报告的Campaign功能](assets/do-not-localize/ac-capabilities.png)
 
 
 >[!AVAILABILITY]
@@ -85,9 +85,9 @@ Adobe Campaign v8 在基础架构、安全性、可投放性和监测方面有�
 
 在 Adobe　Campaign 中，收件人是发送投放内容（电子邮件、短信等）所定位的默认轮廓。 凭借数据库中存储的收件人数据，您可以过滤将接收任何给定投放的目标并在投放内容中添加个性化数据。 数据库中还有其他类型的轮廓。 这些用户档案是针对不同用途而设计的。 例如，种子轮廓用于在将投放内容发送给最终目标前测试该投放内容。
 
-[本部分](audiences.md)详细介绍了轮廓管理的基础知识。
+在[与Campaign](audiences.md)中的受众合作中说明了配置文件管理的基本知识。
 
-要了解如何向 Campaign 添加轮廓，请参阅[此部分](import.md)。
+了解如何在[开始使用用户档案](import.md)中将用户档案添加到Campaign。
 
 ## 目标市场细分 {#targeted-segmentation}
 
@@ -95,13 +95,13 @@ Adobe Campaign 具有功能强大且易于使用的市场细分和定位功能�
 
 高级数据管理功能可进一步扩展数据处理能力。 通过包含未在数据集市中建模的数据，该功能可简化并优化定位流程。
 
-要了解关于分段和受众创建的更多信息，请参阅[此部分](audiences.md)。
+在[中与Campaign](audiences.md)中的受众合作，了解有关分段和受众创建的更多信息。
 
 ## 跨渠道营销活动编排 {#cross-channel-campaign-orchestration}
 
 您可以利用 Adobe Campaign 在多个渠道上设计和编排有针对性的个性化活动：电子邮件、直邮、SMS、推送通知等。 通过单个界面为您提供计划、编排、配置、个性化、自动化、执行和衡量所有活动和通信所需的全部功能。
 
-要了解如何设计、计划和执行活动，请参阅[此部分](campaigns.md)。
+在[营销活动入门](campaigns.md)中了解如何设计、计划和执行营销活动。
 
 ## 工作流 {#wf-gsv8}
 
@@ -116,7 +116,7 @@ Adobe Campaign提供了一个全面的图形环境，允许您设计包括分段
 * 将数据导入 Campaign 数据库。
 * 数据库清理、恢复跟踪信息等技术流程。
 
-要了解如何设计和执行工作流，请参阅[此部分](../config/workflows.md)。
+了解如何在[使用Adobe Campaign工作流管理和自动化流程](../config/workflows.md)中设计和执行工作流。
 
 ## 报告和分析 {#analysis-and-reporting}
 
@@ -127,19 +127,19 @@ Adobe Campaign 可逐步丰富客户数据和轮廓，从而让您监测和解�
 营销活动报告功能有助于创建动态报告。 您可以使用拖放变量来自定义报告并分析营销活动是否成功。 根据查询和计算的复杂性，可以将数据聚合到列表视图中，或以便于生成营销分析报告的格式进行访问。
 
 
-要了解有关报告和跟踪功能的更多信息，请参阅[此部分](../reporting/gs-reporting.md)。
+在[Adobe Campaign报告工具入门](../reporting/gs-reporting.md)中了解有关报告和跟踪功能的更多信息。
 
 ## [!DNL Adobe CX Enterprise]集成 {#adobe-experience-cloud-integrations}
 
 您可以将 Adobe Campaign 的投放功能以及高级营销活动管理功能与帮助您个性化用户体验的解决方案（例如 Adobe Experience Manager、Adobe Analytics、Adobe Target 或 Adobe Experience Cloud 触发程序）结合起来。
 
-要了解如何与 Adobe 服务和解决方案进行集成，请参阅[此部分](../connect/integration.md)。
+了解如何在[Connect Campaign中将您的解决方案与Adobe服务和解决方案集成](../connect/integration.md)。
 
 ## 关于 Campaign 功能的更多信息 {#core-capabilities-and-add-ons}
 
 根据您的需求和架构，Adobe Campaign 提供了一系列功能，帮助您实施和优化各种对话式营销功能。 其中有些是核心功能，有些功能取决于软件包的安装和您的配置。 此处提供了详细的产品说明：[Adobe Campaign v8 产品说明](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)。
 
-已经熟悉了 Campaign Classic？ 在[此页面](v7-to-v8.md)中了解 Campaign Classic 和 Campaign v8 之间的主要差异。
+已经熟悉了 Campaign Classic？ 在[从Campaign Classic v7过渡到Campaign v8](v7-to-v8.md)中了解Campaign Classic和Campaign v8之间的主要差异。
 
 **另请参阅**
 

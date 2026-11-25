@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 71%
+source-wordcount: '1057'
+ht-degree: 66%
 ---
 # 消息入门 {#gs-ac-msg}
 
@@ -60,21 +60,21 @@ ht-degree: 71%
 
 >[!NOTE]
 >
->创建投放时，必须选择模板。 每个渠道都有默认模板可用。 在[此页面](../send/create-templates.md)中了解有关投放模板的更多信息。
+>创建投放时，必须选择模板。 每个渠道都有默认模板可用。 在[使用投放模板](../send/create-templates.md)中了解有关投放模板的更多信息。
 
-1. **一次性消息** — 您可以向受众发送一次性消息。 在[本节](create-message.md)中了解如何发送您的第一条消息。
+1. **一次性消息** — 您可以向受众发送一次性消息。 了解如何在[创建您的第一个投放](create-message.md)中发送您的第一条消息。
 
-   ![](assets/send-email.png)
+   ![包含“发件人”、“收件人”和“主题”字段、“HTML内容”字段以及“发送”按钮的电子邮件投放编辑器](assets/send-email.png)
 
-1. **营销活动中的消息** — 您可以在[营销活动](campaigns.md)的上下文中发送消息、定义审批流程、在合并的仪表板中发送和跟踪消息。 在[本节](../../automation/campaigns/marketing-campaign-deliveries.md)中了解详情。
+1. **营销活动中的消息** — 您可以在[营销活动](campaigns.md)的上下文中发送消息、定义审批流程、在合并的仪表板中发送和跟踪消息。 了解如何在[营销活动投放](../../automation/campaigns/marketing-campaign-deliveries.md)中进行。
 
-   ![](assets/deliveries-in-a-campaign.png)
+   ![营销活动信息板列出了具有批准状态的投放，如要批准和要提交的投放](assets/deliveries-in-a-campaign.png)
 
-1. 工作流中的&#x200B;**消息** — 您可以通过[工作流](../config/workflows.md)发送消息，并自动完成投放。 在[此页面](../../automation/workflow/delivery.md)中了解详情。
+1. 工作流中的&#x200B;**消息** — 您可以通过[工作流](../config/workflows.md)发送消息，并自动完成投放。 了解[投放](../../automation/workflow/delivery.md)中的操作方法。
 
-   ![](assets/send-in-a-wf.png)
+   ![包含查询和读取列表的营销活动工作流，用于馈送Summer优惠投放、等待和移动投放](assets/send-in-a-wf.png)
 
-1. **触发的消息** — 您可从事件[触发消息](../send/transactional.md)。 事务性消息（消息中心）是用于管理触发消息的 Campaign 模块。 有关配置和发送事务性消息的步骤详情，请参阅[此页面](../send/transactional.md)
+1. **触发的消息** — 您可从事件[触发消息](../send/transactional.md)。 事务性消息（消息中心）是用于管理触发消息的 Campaign 模块。 有关配置和发送事务性消息的步骤详情，请参阅[Campaign事务性消息](../send/transactional.md)
 
 ## 通信渠道 {#gs-channel}
 
@@ -111,7 +111,7 @@ Campaign 中有三种类型的投放对象：
 
 可以从投放列表创建投放，也可以通过[投放](../../automation/workflow/delivery.md)活动在工作流中创建投放。
 
-工作流还可根据要使用的渠道类型提供特定的投放活动。 有关这些活动的详细信息，请参阅[此部分](../../automation/workflow/cross-channel-deliveries.md)。
+工作流还可根据要使用的渠道类型提供特定的投放活动。 有关这些活动的详细信息，请参阅[跨渠道投放](../../automation/workflow/cross-channel-deliveries.md)。
 
 ### 定期投放 {#recurring-delivery}
 

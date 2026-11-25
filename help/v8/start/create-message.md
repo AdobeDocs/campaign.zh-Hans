@@ -35,22 +35,22 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1565'
-ht-degree: 90%
+source-wordcount: '1710'
+ht-degree: 78%
 ---
 # 创建您的第一个投放 {#create-a-msg}
 
-在本页中，了解如何创建一次性单个投放。 您可以创建其他类型的投放以构建自己的用例。 要进一步了解不同类型的投放以及如何创建投放，请参阅[此页面](gs-message.md)。
+在本页中，了解如何创建一次性单个投放。 您可以创建其他类型的投放以构建自己的用例。 在[开始使用消息](gs-message.md)中了解有关不同类型投放以及如何创建它们的更多信息。
 
 创建一次性投放时的关键步骤包括：
 
-1. **创建新投放**。 [了解更多信息](#create-the-delivery)
+1. **创建新投放**。 [创建投放](#create-the-delivery)
 
-1. **定义投放内容**。 [了解更多信息](#content-of-the-delivery)
+1. **定义投放内容**。 [定义投放内容](#content-of-the-delivery)
 
-1. **选择目标群体**。 [了解更多信息](#target-population)
+1. **选择目标群体**。 [定义目标受众](#target-population)
 
 然后，您可以使用 Adobe Campaign 准备、测试、发送和监控消息。
 
@@ -65,7 +65,7 @@ ht-degree: 90%
 1. 导航到投放列表并单击 **[!UICONTROL Create]**。
 1. 选择投放渠道。 要实现此操作，请从下拉列表中选择相应的投放模板。
 
-   ![](../send/assets/select-the-new-template.png)
+   ![传递模板下拉列表列出了电子邮件、短信、推文和其他传递模板，可从](../send/assets/select-the-new-template.png)中进行选择
 
    为您安装的每个渠道提供了一个内置模板：电子邮件、电话、移动渠道（推送/短信）、直邮、X (Twitter)等。列表中可用的渠道取决于您的许可协议。
 
@@ -110,32 +110,32 @@ ht-degree: 90%
 1. 在投放编辑器中，选择 **[!UICONTROL To]**。
 1. 如果收件人存储在数据库中，请选择第一个选项。
 
-   ![](../send/sms/assets/audience_to.png){zoomable="yes"}
+   ![Select target对话框，其中的“收件人”链接和“在数据库中定义”选项已选中](../send/sms/assets/audience_to.png){zoomable="yes"}
 
 1. 在 **[!UICONTROL Target mapping]** 下拉列表中选择 [目标映射](../audiences/target-mappings.md)。
 1. 单击 **[!UICONTROL Add]** 按钮以定义限制筛选条件。
 
-   ![](assets/target-type.png){width="60%" zoomable="yes"}
+   ![目标类型对话框列出了限制筛选器，例如文件夹中包含的收件人](assets/target-type.png){width="60%" zoomable="yes"}
 
    选择筛选类型并单击 **[!UICONTROL Next]** 以定义条件。 您可以从 **[!UICONTROL Preview]** 选项卡中查看筛选的收件人。 根据目标的类型，通过 **[!UICONTROL Refine target]** 按钮可以组合多个目标选择条件。
 
    可使用以下目标类型：
 
-   * **[!UICONTROL Filtering conditions]**：使用此选项定义自定义查询以检索收件人。 要了解如何设计查询，请参阅[此部分](../start/query-editor.md)。
-   * **[!UICONTROL A list of recipients]**：使用此选项来选择目标用户档案列表。 要进一步了解列表，请参阅[此部分](../audiences/create-audiences.md)。
+   * **[!UICONTROL Filtering conditions]**：使用此选项定义自定义查询以检索收件人。 了解如何在[中使用查询编辑器](../start/query-editor.md)设计查询。
+   * **[!UICONTROL A list of recipients]**：使用此选项来选择目标用户档案列表。 了解有关[在Campaign](../audiences/create-audiences.md)中创建配置文件受众中的列表的详细信息。
    * **[!UICONTROL A recipient]**：使用此选项以选择数据库中的特定用户档案。
    * **[!UICONTROL Recipients included in a folder]**：使用此选项以将特定文件夹中包含的所有用户档案选择为目标。
    * **[!UICONTROL Recipients of a delivery]**：使用此选项以从投放的收件人中生成目标。 然后，您必须在列表中选择投放：
 
-     ![](assets/target-recipient-delivery.png)
+     ![目标元素对话框，用于选择其收件人作为目标的投放，并带有行为过滤器](assets/target-recipient-delivery.png)
 
    * **[!UICONTROL Delivery recipients belonging to a folder]**：使用此选项从特定文件夹中包含的投放的收件人生成目标。
 
-     ![](assets/target-delivery-folder.png)
+     用于选择投放文件夹的![目标元素对话框，其中具有“行为”和“包括子文件夹”选项](assets/target-delivery-folder.png)
 
      您可以从下拉列表中进行选择，以筛选收件人的行为：
 
-     ![](assets/target-filter-behavior.png)
+     ![行为下拉列表列出了收件人过滤器，例如已打开或已点击、未打开和失败的消息](assets/target-filter-behavior.png)
 
      >[!NOTE]
      >
@@ -143,9 +143,9 @@ ht-degree: 90%
 
    * **[!UICONTROL Subscribers of an information service]**：通过此选项，可选择新闻稿，收件人必须订阅新闻稿才能成为所创建投放的目标。
 
-     ![](assets/target-service.png)
+     ![目标元素对话框，其中列出了用于定向订阅者的信息服务，例如新闻稿](assets/target-service.png)
 
-   * **[!UICONTROL User filters]**：通过此选项可访问预配置的筛选条件，以将其用作数据库中筛选用户档案的标准。 要查看预配置的筛选条件，请参阅[此部分](../audiences/create-filters.md#default-filters)。
+   * **[!UICONTROL User filters]**：通过此选项可访问预配置的筛选条件，以将其用作数据库中筛选用户档案的标准。 预配置的筛选器显示在[默认筛选器](../audiences/create-filters.md#default-filters)中。
    * **[!UICONTROL Exclude recipients from this segment]**&#x200B;选项允许您定位不符合所定义的目标条件的收件人。 要使用此选项，请选择相应的框，然后按照之前所述应用目标选择，以排除生成的用户档案。
 
 1. 在 **[!UICONTROL Label]** 字段中输入此目标的名称。 默认情况下，标签是第一个目标选择标准的标签。 在组合筛选条件时，建议使用显式名称。
@@ -153,7 +153,7 @@ ht-degree: 90%
 
    在“主要目标配置”选项卡的中心部分中概述了定义的目标选择标准。 单击标准可查看其内容（配置和预览）。 要删除某个标准，请单击其标签后面的十字线。
 
-   ![](assets/target-remove-criterion.png)
+   ![目标群体中某个定位条件后带有删除交叉点的主目标选项卡](assets/target-remove-criterion.png)
 
 ### 选择外部收件人 {#selecting-external-recipients}
 
@@ -184,13 +184,13 @@ ht-degree: 90%
 
 要修改默认配置，请单击 **[!UICONTROL Edit...]** 链接。
 
-![](assets/target-exclusion-settings.png)
+![排除设置选项，包括排除和隔离的收件人并保留重复项](assets/target-exclusion-settings.png)
 
 +++ 查看可用选项
 
 * **[!UICONTROL Exclude duplicate addresses during delivery]**：此选项默认处于启用状态，在投放期间会移除重复的电子邮件地址。 所应用的策略可能会因使用 Adobe Campaign 的方式以及数据库中的数据类型而有所不同。 可以为每个投放模板配置选项的值。
 * **[!UICONTROL Exclude recipients who no longer want to be contacted]**，即电子邮件地址处于拒绝列表状态（选择退出）的收件人。 为遵守电子营销的职业道德，必须保留选择此选项。
-* **[!UICONTROL Exclude quarantined recipients]**：通过此选项可从目标中排除隔离地址的用户档案。 我们强烈建议保持选中此选项。 要进一步了解隔离管理，请参阅[此部分](../send/quarantines.md)。
+* **[!UICONTROL Exclude quarantined recipients]**：通过此选项可从目标中排除隔离地址的用户档案。 我们强烈建议保持选中此选项。 在Campaign](../send/quarantines.md)的[隔离管理中了解有关隔离管理的更多信息。
 * 给定消息数的 **[!UICONTROL Limit delivery]**。 使用此选项可输入要发送的最大消息数。 如果目标受众超出指定的消息数，则会对目标进行随机选择。 要发送所有消息，请将此值保留为“0”。
 * **[!UICONTROL Keep duplicate records (same identifier)]**：通过此选项可向满足多个目标选择条件的收件人发送多个投放。
 +++
@@ -202,14 +202,14 @@ ht-degree: 90%
 
 利用校样这种特定的消息，可在将消息发送给主要受众之前对消息进行测试。 校样的收件人负责审阅消息：呈现效果、内容、个性化设置和配置。
 
-有关校样收件人和发送校样的更多信息，请参阅[此部分](../send/preview-and-proof.md#send-proofs)。
+有关验证收件人和发送的更多信息，请参阅[发送验证](../send/preview-and-proof.md#send-proofs)。
 
 
 #### 教程视频 {#seeds-and-proofs-video}
 
 在本视频中，您将了解如何向现有电子邮件添加种子和校样，以及如何进行发送。
 
->[!VIDEO](https://video.tv.adobe.com/v/3447009?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333404?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。
 
@@ -232,4 +232,4 @@ ht-degree: 90%
 
 访问投放参数以配置更多设置并定义消息发送方式。 您可以定义投放优先级、设置发送波次、配置重试设置并测试投放发送。 完成此配置后，您可以确认发送。 然后，消息将即时发送，或根据投放计划进行发送。
 
-要了解如何配置投放设置，请参阅[此页面](../send/configure-and-send.md)。
+了解如何在[使用Adobe Campaign配置电子邮件](../send/configure-and-send.md)中配置您的投放设置。

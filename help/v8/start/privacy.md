@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1090'
-ht-degree: 78%
+source-wordcount: '1116'
+ht-degree: 77%
 ---
 # 在 Campaign 中管理隐私请求 {#privacy}
 
@@ -52,7 +52,7 @@ Adobe 为数据控制者提供相应的工具，用于创建和处理与 Campaig
 
 >[!NOTE]
 >
->从Campaign v8.3开始提供此功能。 要检查您的版本，请参阅[此部分](compatibility-matrix.md)
+>从Campaign v8.3开始提供此功能。 要检查您的版本，请参阅[Campaign v8兼容性矩阵](compatibility-matrix.md)
 
 ## 定义命名空间 {#namespaces}
 
@@ -77,7 +77,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 1. 当[列出可用于您组织的身份命名空间](https://developer.adobe.com/experience-platform-apis/references/identity-service/#operation/getIdNamespaces){target="_blank"}时，您将获得以下命名空间详细信息，例如：
 
-   ```
+   ```json
    {
            "updateTime": 1632903236731,
            "code": "lumanamespace",
@@ -94,7 +94,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
 
 1. 在 Adobe Campaign 中，转到 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]** 并选择 **[!UICONTROL New]**。
 
-   ![](assets/privacy-namespaces-new.png)
+   ![资源管理器路径管理>平台>命名空间，突出显示了“新建”按钮](assets/privacy-namespaces-new.png)
 
 1. 输入 **[!UICONTROL Label]**。
 
@@ -104,7 +104,7 @@ Three namespaces are available out-of-the-box: email, phone and mobile phone. If
    * **[!UICONTROL Internal name]** 必须匹配“code”属性
    * **[!UICONTROL Reconciliation key]** 必须匹配“idType”属性
 
-   ![](assets/privacy-namespaces-details.png)
+   ![新命名空间表单，其中突出显示AEC命名空间ID、内部名称和对帐密钥字段](assets/privacy-namespaces-details.png)
 
    **[!UICONTROL Reconciliation key]** 字段是将用于识别 Adobe Campaign 数据库中的“数据主体”的字段。
 

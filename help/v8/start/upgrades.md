@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1780'
-ht-degree: 15%
+source-wordcount: '1796'
+ht-degree: 14%
 ---
 # 版本、升级和安全性 {#upgrades}
 
@@ -43,7 +43,7 @@ Adobe Campaign 会定期更新。 这种定期更新旨在让您掌握最新、�
 
 * 您的Campaign服务器实例会由Adobe通过每个新版本自动升级，无需您执行任何操作。
 * 在会对您的环境造成影响的升级之前，您的Adobe代表会联系您。
-* **您的客户端控制台是您负责保持最新状态的组件。** 必须将其升级到与Campaign服务器相同的版本。 要了解如何升级客户端控制台，请参阅[此页面](../start/connect.md#upgrade-ac-console)。
+* **您的客户端控制台是您负责保持最新状态的组件。** 必须将其升级到与Campaign服务器相同的版本。 了解如何在[升级您的客户端控制台](../start/connect.md#upgrade-ac-console)中升级您的客户端控制台。
 
 此外，作为客户，请确保使用的是[兼容性矩阵](compatibility-matrix.md)中列出的最新受支持的系统版本。
 
@@ -92,7 +92,7 @@ Adobe Campaign会定期发布产品版本，以提高Campaign基础架构的性�
 
 要检查您的Campaign版本，请从客户端控制台访问&#x200B;**帮助>关于……**&#x200B;菜单。
 
-![](assets/ac-version.png)
+![客户端控制台的“关于”对话框显示客户端控制台和应用程序服务器版本](assets/ac-version.png)
 
 您可以访问以下信息：
 
@@ -109,7 +109,7 @@ Adobe Campaign会定期发布产品版本，以提高Campaign基础架构的性�
 
 新版本及其更改列在[发行说明](release-notes.md)中。
 
-有关产品版本更新，请订阅[Adobe优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html){target="_blank"}或访问[Campaign社区](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?profile.language=zh-Hans&style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"}。
+有关产品版本更新，请订阅[Adobe优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html){target="_blank"}或访问[Campaign社区](https://experienceleaguecommunities.adobe.com/t5/custom/page/page-id/Community-TopicsPage?style=all&sort=date&order=desc&filters=adobe-campaign-classic-community&topic=Campaign+v8){target="_blank"}。
 
 有关准备组织进行安全更新的安全通知和指导，请参阅[随时了解情况](#security-staying-informed)。
 

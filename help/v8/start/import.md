@@ -29,18 +29,18 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '3848'
-ht-degree: 34%
+source-wordcount: '4502'
+ht-degree: 28%
 ---
 # 将数据导入 Campaign {#ootb-profiles}
 
 Campaign可帮助您将联系人添加到数据库。 您可以加载文件、计划和自动更新多个联系人，在网站上收集数据，或直接在收件人表格中输入轮廓信息。
 
-轮廓导入在专用模板中进行配置，通过&#x200B;**导入**&#x200B;活动工作流执行。 它们可以根据计划自动重复，例如用于在多个信息系统之间自动交换数据。 在[此部分](../../automation/workflow/recurring-import-workflow.md)中了解更多信息。
+轮廓导入在专用模板中进行配置，通过&#x200B;**导入**&#x200B;活动工作流执行。 它们可以根据计划自动重复，例如用于在多个信息系统之间自动交换数据。 在[设置循环导入](../../automation/workflow/recurring-import-workflow.md)中了解详情。
 
-![](assets/import-wf.png)
+![更新用户档案工作流：更新了联系人和读取列表信息源排除，然后删除重复项，更新数据。](assets/import-wf.png)
 
 ## 运行导入
 
@@ -48,7 +48,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 >[!NOTE]
 >
->您可以使用&#x200B;**[!UICONTROL Import a list]**&#x200B;函数导入数据，而无需将其与数据库数据进行映射。 然后，可以通过&#x200B;**[!UICONTROL Read list]**&#x200B;对象在工作流中专门使用该数据。 有关详细信息，请参见[此页面](../../automation/workflow/read-list.md)。
+>您可以使用&#x200B;**[!UICONTROL Import a list]**&#x200B;函数导入数据，而无需将其与数据库数据进行映射。 然后，可以通过&#x200B;**[!UICONTROL Read list]**&#x200B;对象在工作流中专门使用该数据。 有关详细信息，请参阅[读取列表](../../automation/workflow/read-list.md)。
 
 
 ## 使用导入助手
@@ -57,7 +57,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 创建新导入作业后，将显示导入助手。
 
-![](assets/new-import.png)
+![作业列表，其中的“创建”菜单显示“新导入”和“新导出”，以及导入助理的“要导入的文件”对话框。](assets/new-import.png)
 
 在源文件中，每行都与记录一致。 记录中的数据由分隔符（空格、制表符、字符等）分隔。 这意味着以列的形式检索数据，并且每列与数据库的字段相关联。
 
@@ -68,7 +68,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 1. 选择&#x200B;**[!UICONTROL Profiles and Targets > Job > Generic imports and exports]**&#x200B;文件夹。
 1. 点击 **New**，然后点击 **Import** 以创建导入模板。
 
-   ![](assets/s_ncs_user_import_wizard01_1.png)
+   ![模板选择屏幕：新文本导入模板、标签、说明、简单导入类型和目标文件夹。](assets/s_ncs_user_import_wizard01_1.png)
 
 1. 单击&#x200B;**[!UICONTROL Import template]**&#x200B;字段右侧的箭头以选择您的模板，或单击&#x200B;**[!UICONTROL Select link]**&#x200B;以浏览树。
 
@@ -79,11 +79,11 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
    对于多次导入，从导入助理第一个屏幕中的&#x200B;**[!UICONTROL Import type]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Multiple import]**。
 
-   ![](assets/s_ncs_user_import_wizard01_2.png)
+   ![模板选择屏幕，其中的“导入类型”下拉列表列出了“简单导入”和“多次导入”。](assets/s_ncs_user_import_wizard01_2.png)
 
 1. 通过单击&#x200B;**[!UICONTROL Add]**&#x200B;指定要导入的字段。
 
-   ![](assets/s_ncs_user_import_wizard01_3.png)
+   ![使用两个源文件导入多个导入的步骤列表，并使用“添加”按钮添加其他文件。](assets/s_ncs_user_import_wizard01_3.png)
 
    每次添加文件时，都会显示&#x200B;**[!UICONTROL File to import]**&#x200B;助理的屏幕。 请参阅第[步 — 选择Source文件](#step-2---source-file-selection)部分，并按照助手中的步骤将导入选项定义为简单导入。
 
@@ -97,11 +97,11 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 默认情况下，已选择&#x200B;**[!UICONTROL Upload file on the server]**。 单击&#x200B;**[!UICONTROL Local file]**&#x200B;字段右侧的文件夹以浏览本地磁盘并选择要导入的文件。 您可以取消选择此选项以输入访问路径以及要在服务器上导入的文件名。
 
-![](assets/s_ncs_user_import_wizard02_1.png)
+![用于导入屏幕的文件具有空的“本地文件”字段，并且选择了服务器上的上载文件选项。](assets/s_ncs_user_import_wizard02_1.png)
 
 指定文件后，您可以通过单击&#x200B;**[!UICONTROL Auto-detect format]**&#x200B;在窗口的下半部分查看其数据。 此预览显示源文件的前 200 行。
 
-![](assets/s_ncs_user_import_wizard02_2.png)
+![在选择了源文件且单击“自动检测”格式后预览了第一行文件的情况下，导入屏幕的文件。](assets/s_ncs_user_import_wizard02_2.png)
 
 使用此视图上方提供的选项配置导入。 通过这些选项定义的参数将被传输到预览中。 可以使用以下选项：
 
@@ -115,7 +115,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 **[!UICONTROL Click here to change the file format...]**&#x200B;选项允许您设置源文件数据的格式，特别是指定列分隔符和每个字段的数据类型。 此配置通过以下窗口执行：
 
-![](assets/s_ncs_user_import_wizard02_3.png)
+![文件格式对话框：文件类型、编码、列分隔符、每列标签和数据类型，以及预览。](assets/s_ncs_user_import_wizard02_3.png)
 
 此步骤允许您描述应如何读取文件字段的值。 例如，在日期的情况下，日期或日期+时间数据可以与格式（dd/mm/yyyy、mm/dd/yy等）关联。 如果输入数据与预期格式不匹配，则在导入期间将发生拒绝。
 
@@ -127,7 +127,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 然后，您必须选择目标模式并将每列的数据映射到数据库中的字段。
 
-![](assets/s_ncs_user_import_wizard03_1.png)
+![字段映射屏幕，收件人目标架构和源列映射到目标字段。](assets/s_ncs_user_import_wizard03_1.png)
 
 * **[!UICONTROL Destination schema]**&#x200B;字段允许您选择将在其中导入数据的架构。 此信息是强制性的。 单击&#x200B;**[!UICONTROL Select link]**&#x200B;图标以选择现有架构之一。 单击&#x200B;**[!UICONTROL Edit link]**&#x200B;以显示选定表的内容。
 * 中央表显示源文件中定义的所有字段。 选择要导入的字段，以将目标文件与其关联。 可以手动或自动映射这些字段。
@@ -142,7 +142,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 * 您可以对导入的字段应用转换。 为此，请单击&#x200B;**[!UICONTROL Transformation]**&#x200B;列中与该字段相关的单元格，然后选择要应用的转换。
 
-  ![](assets/s_ncs_user_import_wizard03_2.png)
+  ![字段映射屏幕带有“转换”下拉列表：“无”、“小写”、“大写”、“大写中的第一个字母”。](assets/s_ncs_user_import_wizard03_2.png)
 
   >[!IMPORTANT]
   >
@@ -161,23 +161,23 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 * **[!UICONTROL JavaScript expression]**：计算字段的值是JavaScript函数求值的结果。 返回的值可以是数字、日期等。
 * **[!UICONTROL Enumeration]**：字段的值是根据源文件中包含的某个值而归因的。 编辑器允许您指定源列并输入枚举值清单，如以下示例所示：
 
-  ![](assets/s_ncs_user_import_wizard03_3.png)
+  ![导入将源值0和1映射到未注册和注册的枚举类型的计算字段定义。](assets/s_ncs_user_import_wizard03_3.png)
 
   **[!UICONTROL Preview]**&#x200B;选项卡允许您查看定义的配置的结果。 此处添加了&#x200B;**[!UICONTROL Subscription]**&#x200B;列。 该值通过 **Status** 字段计算。
 
-  ![](assets/s_ncs_user_import_wizard03_4.png)
+  ![计算字段定义的“预览”选项卡，显示从源数据计算的新服务列。](assets/s_ncs_user_import_wizard03_4.png)
 
 ### 第 4 步 – 调解 {#step-4---reconciliation}
 
 通过import assistant的协调步骤，可定义文件数据与数据库中现有数据的协调模式，并设置文件数据与数据库数据之间的优先级规则。 配置窗口如下所示：
 
-![](assets/s_ncs_user_import_wizard04_1.png)
+![带有字段树的协调屏幕，其中名字被设置为协调键1.](assets/s_ncs_user_import_wizard04_1.png)的一部分
 
 屏幕的中央部分包含一个树状结构，其中包含要导入数据的 Adobe Campaign 数据库的字段和表。
 
 每个节点（表或字段）都有特殊选项可用。 当您单击列表中相关的节点时，其参数和简要说明将显示如下。 为每个元素定义的行为将显示在相应的&#x200B;**[!UICONTROL Behavior]**&#x200B;列中。
 
-![](assets/s_ncs_user_import_wizard04_2.png)
+![具有“操作”设置和“双倍管理”下拉列表的“协调”屏幕：“更新”、“拒绝”实体、“忽略”。](assets/s_ncs_user_import_wizard04_2.png)
 
 #### 操作类型 {#types-of-operation}
 
@@ -209,7 +209,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 避免选择在导入期间可能被修改的字段；如果发生这种情况，引擎可能会创建额外的记录。
 
-![](assets/s_ncs_user_import_wizard04_3.png)
+![已选择电子邮件字段并将其设置为协调密钥2的一部分的协调屏幕。](assets/s_ncs_user_import_wizard04_3.png)
 
 >[!NOTE]
 >
@@ -244,11 +244,11 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 大多数数据传输操作会产生各种类型的错误（行格式不一致、电子邮件地址无效等）。 导入引擎生成的所有错误和所有警告都将存储并链接到导入实例。
 
-![](assets/s_ncs_user_import_general_tab.png)
+![导入“作业常规”选项卡，其中突出显示了错误、警告、拒绝、重复项和重复项的计数器。](assets/s_ncs_user_import_general_tab.png)
 
 可以通过&#x200B;**[!UICONTROL Rejects]**&#x200B;选项卡查看这些拒绝的详细信息。
 
-![](assets/s_ncs_user_import_rejets_tab.png)
+![导入作业的“拒绝”选项卡，其中列出了连接器拒绝的记录以及选定记录的拒绝消息。](assets/s_ncs_user_import_rejets_tab.png)
 
 有两种类型的拒绝（该类型显示在&#x200B;**[!UICONTROL Connector]**&#x200B;列中）：
 
@@ -261,19 +261,19 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 * **[!UICONTROL Reject parent element]**：记录的整行都遭到拒绝，不仅是因为导致错误的字段。
 * **[!UICONTROL Reject all elements]**：导入停止，记录的所有元素都被拒绝。
 
-  ![](assets/s_ncs_user_import_wizard04_4.png)
+  ![发生错误时进行协调：忽略并记录警告，拒绝父元素，拒绝所有元素。](assets/s_ncs_user_import_wizard04_4.png)
 
 导入实例的拒绝屏幕中的树状结构指示哪些字段被拒绝以及错误发生的位置。
 
 您可以通过&#x200B;**[!UICONTROL Export rejects]**&#x200B;图标生成包含这些记录的文件：
 
-![](assets/s_ncs_user_import_errors_export.png)
+![通用导入和导出列表，其导入完成并选择了错误，导出拒绝图标。](assets/s_ncs_user_import_errors_export.png)
 
 ### 第 5 步 - 导入收件人时的附加步骤 {#step-5---additional-step-when-importing-recipients}
 
 在import assistant的下一个步骤中，您可以选择或创建数据将导入到的文件夹，自动将导入的收件人映射到（新的或现有的）列表，并将收件人订阅服务。
 
-![](assets/s_ncs_user_import_wizard05_1.png)
+![导入收件人屏幕，其中包含文件夹、列表和服务的“编辑”链接，以及“来源”字段。](assets/s_ncs_user_import_wizard05_1.png)
 
 >[!NOTE]
 >
@@ -291,25 +291,25 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
      要选择导入文件夹，请单击&#x200B;**[!UICONTROL Folder]**&#x200B;字段右侧的箭头，然后选择相关的文件夹。 您还可以使用&#x200B;**[!UICONTROL Select link]**&#x200B;图标在新窗口中显示树或创建新文件夹。
 
-     ![](assets/s_ncs_user_import_wizard05_2.png)
+     ![使用“添加到现有文件夹”选项和“文件夹”字段导入到文件夹对话框。](assets/s_ncs_user_import_wizard05_2.png)
 
      要创建新文件夹，请选择要从中添加文件夹的节点，然后右键单击。 选择 **[!UICONTROL Create a new 'Recipients' folder]**。
 
-     ![](assets/s_ncs_user_import_wizard05_3.png)
+     ![文件夹树，右键单击菜单显示“新建收件人”文件夹。](assets/s_ncs_user_import_wizard05_3.png)
 
      该文件夹将添加到当前节点的下方。 输入新文件夹的名称，按Enter进行确认，然后单击&#x200B;**[!UICONTROL OK]**。
 
-     ![](assets/s_ncs_user_import_wizard05_4.png)
+     ![文件夹树，在所选节点下添加了新的新闻稿文件夹，可以使用“确定”进行确认。](assets/s_ncs_user_import_wizard05_4.png)
 
   1. 与清单相关联
 
      **[!UICONTROL Add recipients to a list]**&#x200B;部分中的&#x200B;**[!UICONTROL Edit...]**&#x200B;链接允许您选择或创建收件人将导入到的列表。
 
-     ![](assets/s_ncs_user_import_wizard05_5.png)
+     ![使用“添加到现有列表”选项和列表下拉列表将收件人添加到列表对话框。](assets/s_ncs_user_import_wizard05_5.png)
 
      您可以单击&#x200B;**[!UICONTROL Select link]**，然后单击&#x200B;**[!UICONTROL Create]**&#x200B;为这些收件人创建新列表。
 
-     ![](assets/s_ncs_user_import_wizard05_6.png)
+     ![带有“创建”图标的列表选择对话框，用于添加新收件人列表。](assets/s_ncs_user_import_wizard05_6.png)
 
      您可以决定将收件人添加到列表中已存在的收件人，或者使用新收件人重新创建列表。 在这种情况下，如果清单已包含收件人，则它们将被删除并被导入的收件人替换。
 
@@ -317,9 +317,9 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
      若要为所有导入的收件人订阅信息服务，请单击&#x200B;**[!UICONTROL Subscribe recipients to a service]**&#x200B;部分的&#x200B;**[!UICONTROL Edit...]**&#x200B;链接，以选择或创建收件人将订阅的信息服务。 您可以选择&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;选项：此消息的内容在与订阅服务关联的投放模板中定义。
 
-     ![](assets/s_ncs_user_import_wizard05_7.png)
+     ![使用选定的现有服务为收件人订阅服务对话框，并选中发送确认消息。](assets/s_ncs_user_import_wizard05_7.png)
 
-     您可以通过单击&#x200B;**[!UICONTROL Select link]**，然后单击&#x200B;**[!UICONTROL Create]**&#x200B;图标为这些收件人创建新服务。 [这部分](../start/subscriptions.md)介绍了信息服务的管理。
+     您可以通过单击&#x200B;**[!UICONTROL Select link]**，然后单击&#x200B;**[!UICONTROL Create]**&#x200B;图标为这些收件人创建新服务。 信息服务管理在[管理Campaign中的订阅和退订](../start/subscriptions.md)中提供。
 
 * 使用&#x200B;**[!UICONTROL Origin]**&#x200B;字段将有关收件人来源的信息添加到其用户档案。 此信息在多次导入的框架内特别有用。
 
@@ -329,7 +329,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 利用该助理的最后一步可以启动数据导入。 为此，请单击&#x200B;**[!UICONTROL Start]**&#x200B;按钮。
 
-![](assets/s_ncs_user_import_wizard06_1.png)
+![包含“开始”按钮、执行日志、已处理计数和100%进度条的数据导入执行屏幕。](assets/s_ncs_user_import_wizard06_1.png)
 
 然后，您可以监视导入作业的执行（请参阅[监视工作流执行](../../automation/workflow/monitor-workflow-execution.md)）。
 
@@ -350,7 +350,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 1. 选择&#x200B;**[!UICONTROL Profiles and Targets > Job > Generic imports and exports]**&#x200B;文件夹。
 1. 点击 **New**，然后点击 **Export** 以创建导出模板。
 
-   ![](assets/s_ncs_user_export_wizard01.png)
+   ![导出模板选择屏幕，显示新建文本导出模板、标签、说明、简单导出类型和文件夹。](assets/s_ncs_user_export_wizard01.png)
 
 1. 单击&#x200B;**[!UICONTROL Export template]**&#x200B;字段右侧的箭头以选择您的模板，或单击&#x200B;**[!UICONTROL Select link]**&#x200B;以浏览树。
 
@@ -365,7 +365,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 默认情况下，从&#x200B;**[!UICONTROL Jobs]**&#x200B;节点启动导出时，数据来自收件人表。 从数据列表（从&#x200B;**[!UICONTROL right click > Export]**&#x200B;菜单）启动导出时，数据所属的表会自动填充到&#x200B;**[!UICONTROL Document type]**&#x200B;字段中。
 
-![](assets/s_ncs_user_export_wizard02.png)
+![要导出的文件具有收件人文档类型、下载选项、本地文件路径和名称。](assets/s_ncs_user_export_wizard02.png)
 
 * 默认情况下，**[!UICONTROL Download the file generated on the server after the export]**&#x200B;选项处于选中状态。 在&#x200B;**[!UICONTROL Local file]**&#x200B;字段中，填写要创建的文件的名称和路径，或单击字段右侧的文件夹浏览本地磁盘。 您可以取消选择此选项以输入服务器输出文件的访问路径和名称。
 
@@ -377,7 +377,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 * 您可以创建差异导出，以仅导出自上次执行以来修改的记录。 为此，请单击&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;链接，单击&#x200B;**[!UICONTROL Differential export]**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL Activate differential export]**。
 
-  ![](assets/s_ncs_user_export_wizard02_b.png)
+  ![高级参数，“差异导出”选项卡：已选中“激活差异导出”和“修改日期”字段。](assets/s_ncs_user_export_wizard02_b.png)
 
   必须输入上次修改的日期。 它可以从字段中检索或计算。
 
@@ -385,7 +385,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 选择导出文件的输出格式。 可以使用以下格式：文本、固定列文本、CSV 和 XML。
 
-![](assets/s_ncs_user_export_wizard03.png)
+![带有文本输出格式、列分隔符、字符串分隔符、编码和格式的目标格式屏幕。](assets/s_ncs_user_export_wizard03.png)
 
 * 对于&#x200B;**[!UICONTROL Text]**&#x200B;格式，选择分隔符以分隔列（制表符、逗号、分号或自定义）和字符串（单引号、双引号或无）。
 * 对于&#x200B;**[!UICONTROL text]**&#x200B;和&#x200B;**[!UICONTROL CSV]**，您可以选择选项&#x200B;**[!UICONTROL Use first lines as column titles]**。
@@ -399,7 +399,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 1. 双击&#x200B;**[!UICONTROL Available fields]**&#x200B;列表中的所需字段以将其添加到&#x200B;**[!UICONTROL Output columns]**&#x200B;部分。
 1. 使用清单右侧的箭头定义输出文件中字段的顺序。
 
-   ![](assets/s_ncs_user_export_wizard04.png)
+   ![要使用可用字段列表和所选输出列提取屏幕的数据。](assets/s_ncs_user_export_wizard04.png)
 
 1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以调用函数。
 
@@ -407,13 +407,13 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 选择列的排序顺序。
 
-![](assets/s_ncs_user_export_wizard05.png)
+![排序屏幕列出具有“排序”和“降序”排序选项的输出列。](assets/s_ncs_user_export_wizard05.png)
 
 ### 第 6 步 - 筛选条件 {#step-6---filter-conditions-}
 
 可添加筛选条件以避免导出所有数据。 此筛选的配置与投放助手中的收件人定位相同。
 
-![](assets/s_ncs_user_export_wizard05_b.png)
+![限制过滤器的数据过滤列表，信息服务目标元素对话框的订阅者处于打开状态。](assets/s_ncs_user_export_wizard05_b.png)
 
 ### 第 7 步 – 设定数据格式 {#step-7---data-formatting}
 
@@ -427,19 +427,19 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
   * 切换到大写
   * 首字母大写
 
-  ![](assets/s_ncs_user_export_wizard06.png)
+  ![带有Company列的“转换”下拉菜单的数据格式屏幕：“无”、“下限”、“上限”、“首字母”。](assets/s_ncs_user_export_wizard06.png)
 
 * 如果要创建新的计算字段（例如，包含姓氏+名字的列），请单击&#x200B;**[!UICONTROL Add a calculated field]**。 有关更多信息，请参阅导入数据一节。
 
 如果要导出元素集合（例如，收件人的订阅，它们所属的清单等），则必须指定要导出的集合中的元素数量。
 
-![](assets/s_ncs_user_export_wizard06_c.png)
+![集合个性化对话框，用于限制用于检索和筛选订阅集合元素的行。](assets/s_ncs_user_export_wizard06_c.png)
 
 ### 第 8 步 - 数据预览 {#step-8---data-preview}
 
 单击&#x200B;**[!UICONTROL Start the preview of the data]**&#x200B;预览导出结果。
 
-![](assets/s_ncs_user_export_wizard07.png)
+![数据预览屏幕，开始数据预览，行显示字段和预览结果列。](assets/s_ncs_user_export_wizard07.png)
 
 >[!NOTE]
 >
@@ -451,7 +451,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 单击&#x200B;**[!UICONTROL Start]**&#x200B;启动数据导出。
 
-![](assets/s_ncs_user_export_wizard08.png)
+![带有“开始”按钮的数据导出执行屏幕、执行日志和100%进度条。](assets/s_ncs_user_export_wizard08.png)
 
 然后，您可以监视导出作业的执行。
 
@@ -460,9 +460,9 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 使用 Campaign 创建 Web 窗体，轻松高效地收集和管理轮廓信息。 您可以将这些表单共享到您的网站中，这样您的联系人就可以轻松地提供其信息。 他们的信息会被发送到 Campaign，用来创建他们的轮廓或更新其信息（如果数据库中已存在这些信息）。
 
-![](assets/web-form-page.png)
+![包含“开始”、“预加载”、“页面”、“存储”和“结束”的Web应用程序工作流，以及包含电子邮件注册表单的页面编辑器。](assets/web-form-page.png)
 
-在[本节](../dev/web/about-web-forms.md)中了解如何创建Web窗体。
+了解如何在[中创建Web窗体](../dev/web/about-web-forms.md)入门。
 
 **相关主题**
 

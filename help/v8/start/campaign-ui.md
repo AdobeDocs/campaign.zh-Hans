@@ -31,10 +31,10 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1223'
-ht-degree: 61%
+source-wordcount: '1240'
+ht-degree: 58%
 ---
 # 探索用户界面 {#ui-client-console}
 
@@ -42,7 +42,7 @@ ht-degree: 61%
 
 * **客户端控制台** - Campaign 客户端控制台是一个原生应用程序，它通过标准 Internet 协议（如 SOAP 和 HTTP）与 Adobe Campaign 应用程序服务器进行通信。 Campaign 客户端控制台集中了所有功能和设置，并且由于依赖本地缓存，需要的带宽很少。 Campaign 客户端控制台旨在实现轻松部署，可以从 Internet 浏览器部署，可以自动更新，并且不需要任何特定的网络配置，因为它只生成 HTTP(S) 流量。 [了解详情](#ui-access)
 
-  在[此部分](../start/connect.md)中了解如何安装和配置 Campaign 客户端控制台。
+  了解如何在[连接到Campaign v8](../start/connect.md)中安装和配置Campaign客户端控制台。
 
 * **Web访问** - Adobe Campaign Web访问功能允许您使用HTML用户界面通过Web浏览器访问Campaign功能的子集。 使用此 Web 界面可访问报告、控制和验证消息、访问监控仪表板等。  [在此部分中](../start/connect.md#web-access)了解有关 Campaign Web 访问权限的详细信息。
 
@@ -95,7 +95,7 @@ Campaign 客户端控制台是一个原生应用程序，它通过标准 Interne
 
 连接到Campaign客户端控制台后，浏览上方部分中的选项卡以访问Campaign关键功能：
 
-![](assets/overview-home.png)
+![Campaign主页，突出显示了Campaigns、Profiles和Targets、Monitoring和Reports选项卡](assets/overview-home.png)
 
 >[!NOTE]
 >
@@ -135,7 +135,7 @@ The web access interface is similar to the console interface. From a browser, yo
 
 在此工作区中您可以访问资源管理器树，以浏览所有功能和选项。
 
-* 左侧部分显示 Campaign 资源管理器树，您可以根据权限浏览实例的所有组件和设置。 您可以添加和自定义文件夹，详见[此页面](../audiences/folders-and-views.md)。
+* 左侧部分显示 Campaign 资源管理器树，您可以根据权限浏览实例的所有组件和设置。 您可以按照[文件夹和视图](../audiences/folders-and-views.md)中的说明添加和自定义文件夹。
 
 * 上部显示当前文件夹中的记录列表。 这些列表是完全可自定义的。 [了解详情](../config/ui-settings.md)
 
@@ -173,7 +173,7 @@ The web access interface is similar to the console interface. From a browser, yo
 
   >[!CAUTION]
   >
-  >在安装过程中选择语言，此后不能更改&#x200B;**&#x200B;**。
+  >在安装过程中选择语言，此后不能更改&#x200B;****。
 
 * 有关Campaign Web用户界面支持的语言，[请参阅Campaign Web用户界面文档](https://experienceleague.adobe.com/docs/campaign-web/v8/start/connect-to-campaign.html?lang=zh-Hans#language-pref){target="_blank"}。
 

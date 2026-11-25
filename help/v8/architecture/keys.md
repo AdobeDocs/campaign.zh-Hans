@@ -85,7 +85,7 @@ Unicity Service附带专用的&#x200B;**[!UICONTROL Unicity alerting]**&#x200B;�
 
 检测到重复的键时，会向&#x200B;**[!UICONTROL Workflow Supervisors]**&#x200B;操作员组发送特定通知。 可以在&#x200B;**[!UICONTROL Unicity alerting]**&#x200B;工作流的&#x200B;**警报**&#x200B;活动中更改此警报的内容和受众。
 
-![ Unicity警报中的警报活动，已使用重复的密钥消息分配给工作流主管组](assets/wf-alert-activity.png)
+![&#x200B; Unicity警报中的警报活动，已使用重复的密钥消息分配给工作流主管组](assets/wf-alert-activity.png)
 
 
 ## 附加护栏 {#duplicates-guardrails}

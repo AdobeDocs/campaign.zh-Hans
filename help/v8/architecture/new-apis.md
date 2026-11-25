@@ -65,7 +65,7 @@ logInfo(strUuid);
 
 执行工作流后，会按预期提供暂存表。
 
-通过SOAP调用&#x200B;****
+通过SOAP调用&#x200B;**&#x200B;**
 
 1. 获取身份验证令牌。
 1. 触发API。 有效负载为：
@@ -125,7 +125,7 @@ logInfo(strUuid);
 ![暂存模式示例表（暂存）内容现列出六条记录，包括ABC12345和ABDCD321](assets/with-reconciliation.png)
 
 
-通过SOAP调用&#x200B;****
+通过SOAP调用&#x200B;**&#x200B;**
 
 1. 获取身份验证令牌。
 1. 触发API。 有效负载为：
@@ -185,7 +185,7 @@ xtk.session.IngestExt(xmlStagingRecipient);
 
 ![暂存表内容，其中记录ABC12345现在显示testValue A（已更新）和testValue B（已更新）](assets/updated-data.png)
 
-通过SOAP调用&#x200B;****
+通过SOAP调用&#x200B;**&#x200B;**
 
 1. 获取身份验证令牌。
 1. 触发API。 有效负载为：

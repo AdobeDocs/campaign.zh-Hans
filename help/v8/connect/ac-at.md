@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: df8d8e17c486122e23a6db0e44263f9f9632a204
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1244'
 ht-degree: 0%
 ---
 # 使用Campaign和Adobe Target
@@ -66,7 +66,7 @@ Adobe Target可以使用以下类型的数据：
 * 此电子邮件在美国开立。
 * 如果这些条件都不适用，则会显示默认图像。
 
-![](assets/target_4.png)
+![按受众列出的电子邮件变体：默认显示一架飞机，法国埃菲尔铁塔，美国自由女神像](assets/target_4.png)
 
 需要在Adobe Campaign和Adobe Target中实现以下步骤：
 
@@ -86,11 +86,11 @@ Adobe Target可以使用以下类型的数据：
 
 * 如果您使用的是数字内容编辑器，请选择现有图像，然后从工具栏中选择&#x200B;**[!UICONTROL Insert]** > **[!UICONTROL Dynamic image served by Adobe Target]**。
 
-  ![](assets/target_5.png)
+  ![在“图像”工具栏菜单中选择了Adobe Target提供的动态图像的数字内容编辑器](assets/target_5.png)
 
 * 如果您使用的是标准编辑器，请将光标放在要插入图像的位置，然后从个性化下拉菜单中选择&#x200B;**[!UICONTROL Include]** > **[!UICONTROL Dynamic image served by Adobe Target...]**。
 
-  ![](assets/target_12.png)
+  ![在个性化菜单中选择包含Adobe Target提供的动态图像的标准编辑器](assets/target_12.png)
 
 然后，您可以定义图像参数：
 
@@ -99,9 +99,9 @@ Adobe Target可以使用以下类型的数据：
 * 通过&#x200B;**[!UICONTROL Landing Page]**，您可以将默认图像重定向到默认登陆页面。 此URL仅在最终电子邮件中显示默认图像时适用。 它是可选的。
 * **[!UICONTROL Additional decision parameters]**&#x200B;定义Adobe Target区段中定义的字段与Adobe Campaign字段之间的映射。 使用的Adobe Campaign字段必须在rawbox中指定。 在我们的示例中，我们添加了“国家/地区”字段。
 
-如果您在Adobe Target的设置中使用企业权限，请在此字段中添加相应的资产。 请参阅[Adobe Target文档](https://experienceleague.adobe.com/zh-hans/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}以了解有关Target企业权限的更多信息。
+如果您在Adobe Target的设置中使用企业权限，请在此字段中添加相应的资产。 请参阅[Adobe Target文档](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#administer){target="_blank"}以了解有关Target企业权限的更多信息。
 
-![](assets/target_13.png)
+![插入由Adobe Target对话框提供的包含默认图像、目标位置、登录页和决策参数的图像](assets/target_13.png)
 
 ### 创建重定向选件 {#create-redirect-offers}
 
@@ -113,13 +113,13 @@ Adobe Target可以使用以下类型的数据：
 
 1. 单击 **[!UICONTROL Create]**，然后单击 **[!UICONTROL Redirect Offer]**。
 
-   ![](assets/target_9.png)
+   ![Adobe Target的“选件”选项卡，代码选件，打开“创建”菜单并突出显示“重定向选件”](assets/target_9.png)
 
 1. 输入选件的名称和图像的URL。
 
-   ![](assets/target_6.png)
+   ![Adobe Target创建重定向选件表单，其中“名称”字段设置为“法语”受众，重定向URL字段设置为](assets/target_6.png)
 
-1. 对其余重定向选件执行相同的过程。 有关详细信息，请参阅此[Adobe Target文档](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=zh-Hans#experiences){target="_blank"}。
+1. 对其余重定向选件执行相同的过程。 有关详细信息，请参阅此[Adobe Target文档](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html#experiences){target="_blank"}。
 
 ### 创建受众 {#audiences-target}
 
@@ -127,11 +127,11 @@ Adobe Target可以使用以下类型的数据：
 
 1. 要在Target中创建新受众，请在&#x200B;**[!UICONTROL Audiences]**&#x200B;选项卡中单击&#x200B;**[!UICONTROL Create Audience]**。
 
-   ![](assets/audiences_1.png)
+   突出显示“创建受众”按钮的![Adobe Target“受众”选项卡](assets/audiences_1.png)
 
 1. 向受众添加名称。
 
-   ![](assets/audiences_2.png)
+   ![使用“受众名称”字段和“添加规则”按钮的“Adobe Target新建受众”对话框](assets/audiences_2.png)
 
 1. 单击&#x200B;**[!UICONTROL Add a rule]**&#x200B;并选择类别。 规则使用特定标准来定位访客。 您可以通过添加条件或其他类别中创建新规则来优化规则。
 
@@ -145,17 +145,17 @@ Adobe Target可以使用以下类型的数据：
 
 1. 要创建体验定位活动，请从&#x200B;**[!UICONTROL Activities]**&#x200B;选项卡中单击&#x200B;**[!UICONTROL Create Activity]**，然后单击&#x200B;**[!UICONTROL Experience Targeting]**。
 
-   ![](assets/target_10.png)
+   打开“创建活动”菜单并突出显示“体验定位”时，![Adobe Target“活动”选项卡](assets/target_10.png)
 
 1. 选择&#x200B;**[!UICONTROL Form]**&#x200B;作为&#x200B;**[!UICONTROL Experience Composer]**。
 
 1. 通过单击&#x200B;**[!UICONTROL Change audience]**&#x200B;按钮选择受众。
 
-   ![](assets/target_10_2.png)
+   ![在“所有访客”受众菜单中选择了“更改受众”的新活动体验步骤](assets/target_10_2.png)
 
 1. 选择在上一步中创建的受众。
 
-   ![](assets/target_10_3.png)
+   ![“选择受众”对话框列出包含所有访客和其他受众的受众库](assets/target_10_3.png)
 
 1. 通过单击&#x200B;**[!UICONTROL Add Experience Targeting]**&#x200B;创建其他体验。
 
@@ -163,27 +163,27 @@ Adobe Target可以使用以下类型的数据：
 
 1. 选择在Adobe Campaign中插入动态选件时选择的位置名称。
 
-   ![](assets/target_15.png)
+   在Select位置列表](assets/target_15.png)中选择了v_rawbox位置的![体验定位活动
 
 1. 单击下拉按钮并选择&#x200B;**[!UICONTROL Change Redirect Offer]**。
 
-   ![](assets/target_content.png)
+   突出显示更改重定向选件的活动的![内容菜单](assets/target_content.png)
 
-1. Select您之前创建的重定向选件。
+1. 选择您之前创建的重定向选件。
 
-   ![](assets/target_content_2.png)
+   ![Select重定向选件对话框，其中包含选定的法国受众选件和“保存”按钮](assets/target_content_2.png)
 
 1. 对第二个体验执行相同的步骤。
 
 **[!UICONTROL Target]**&#x200B;窗口汇总了您的活动。 如有必要，您可以添加其他体验。
 
-![](assets/target_experience.png)
+![Target步骤通过添加体验将法国受众列为体验A，将美国受众列为体验B](assets/target_experience.png)
 
 **[!UICONTROL Goal & Settings]**&#x200B;窗口允许您通过设置优先级、目标或持续时间来个性化活动。
 
 **[!UICONTROL Reporting Settings]**&#x200B;部分允许您选择操作并编辑将决定何时实现目标的参数。
 
-![](assets/target_experience_2.png)
+![目标量度设置为“转化”的目标和设置步骤，并已查看v6_rawbox的mbox](assets/target_experience_2.png)
 
 ## 预览和发送消息 {#preview-send-email}
 
@@ -193,4 +193,4 @@ Adobe Target可以使用以下类型的数据：
 
 您现在可以发送包含Target动态选件的电子邮件。
 
-![](assets/target_20.png)
+![Marie Dupont的电子邮件预览，显示Adobe Target为法国受众提供的埃菲尔铁塔图像](assets/target_20.png)

@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: df8d8e17c486122e23a6db0e44263f9f9632a204
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1161'
 ht-degree: 1%
 ---
 # 从Adobe Campaign登陆页面更新Adobe Experience Platform配置文件 {#ac-aep-lp}
@@ -69,7 +69,7 @@ Adobe Cloud Platform API使用OAuth 2.0协议进行身份验证和授权。 要�
    * `CLIENT SECRET`
    * `ORGANIZATION ID`
 
-   ![](assets/ac-lp-oauth.png){width="70%"}
+   具有Experience Platform API和OAuth服务器到服务器凭据的![Adobe Developer Console项目](assets/ac-lp-oauth.png){width="70%"}
 
 现在您的OAuth连接已配置，请创建并配置新的&#x200B;**[!UICONTROL HTTP API]** Source连接以将Adobe Campaign与Adobe Experience Platform链接。
 
@@ -79,21 +79,21 @@ Adobe Cloud Platform API使用OAuth 2.0协议进行身份验证和授权。 要�
 
 1. 导航到Adobe Experience Platform **[!UICONTROL Sources]**，搜索&#x200B;**[!UICONTROL HTTP API]**&#x200B;源，然后单击&#x200B;**[!UICONTROL Add data]**。
 
-   ![](assets/ac-lp-source.png){width="70%"}
+   ![使用HTTP API源“添加数据”按钮搜索http的Experience Platform源目录](assets/ac-lp-source.png){width="70%"}
 
-1. 根据需要配置连接。 有关如何配置HTTP API连接的详细信息，请参阅[Adobe Experience Platform源文档](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=zh-Hans){target="_blank"}。
+1. 根据需要配置连接。 有关如何配置HTTP API连接的详细信息，请参阅[Adobe Experience Platform源文档](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html){target="_blank"}。
 
    在&#x200B;**[!UICONTROL Authentication]**&#x200B;步骤中，打开&#x200B;**[!UICONTROL Enable authentication]**&#x200B;选项以使用之前通过OAuth集成生成的访问令牌进行身份验证。
 
-   ![](assets/ac-lp-source-authentication.png){width="70%"}
+   ![启用“启用身份验证”切换开关后连接HTTP API帐户步骤](assets/ac-lp-source-authentication.png){width="70%"}
 
 1. 配置源连接后，将显示流端点。 需要此端点才能将数据摄取到Adobe Experience Platform。
 
-   ![](assets/ac-lp-endpoint.png){width="70%"}
+   带有突出显示的流终结点字段的![HTTP API源详细信息页面](assets/ac-lp-endpoint.png){width="70%"}
 
    您还可以通过从&#x200B;**[!UICONTROL Dataflows]**&#x200B;选项卡中打开新创建的数据流来访问摄取到Adobe Experience Platform中的数据格式示例。
 
-   ![](assets/ac-lp-schema.png){width="70%"}
+   高亮显示复制架构有效负载选项的![HTTP API数据流页面](assets/ac-lp-schema.png){width="70%"}
 
 现在已设置HTTP API Source连接，您需要在Adobe Campaign中添加特定选项以启用与Adobe Experience Platform的连接。
 
@@ -115,7 +115,7 @@ Adobe Cloud Platform API使用OAuth 2.0协议进行身份验证和授权。 要�
    * IMS_ORG_ID =组织ID
    * IMS_CLIENT_API_KEY = cryptString（客户端ID）
 
-   ![](assets/ac-lp-xtk.png){width="70%"}
+   ![已选择IMS_CLIENT_API_KEY、IMS_CLIENT_ID、IMS_CLIENT_SECRET和IMS_ORG_ID的Campaign选项列表](assets/ac-lp-xtk.png){width="70%"}
 
    >[!NOTE]
    >
@@ -123,7 +123,7 @@ Adobe Cloud Platform API使用OAuth 2.0协议进行身份验证和授权。 要�
 
 >[!TAB 使用JavaScript代码活动添加选项]
 
-要在执行登陆页面工作流时自动配置这些选项，请使用以下代码将&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动添加到您的工作流。 [了解如何配置JavaScript代码活动](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code#JavaScript-code){target="_blank"}。
+要在执行登陆页面工作流时自动配置这些选项，请使用以下代码将&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动添加到您的工作流。 [了解如何配置JavaScript代码活动](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/sql-code-and-javascript-code#JavaScript-code){target="_blank"}。
 
 在执行工作流时，系统会自动在Campaign控制台中使用提供的值创建选项。
 
@@ -157,7 +157,7 @@ setOption("IMS_CLIENT_API_KEY", cryptString('CLIENT ID'));
    >
    >访问令牌和身份验证数据会从之前设置的选项中自动检索。
 
-   ![](assets/ac-lp-script.png){width="70%"}
+   ![带有自定义aepAPI代码的Campaign JavaScript代码列表，用于更新AEP中的配置文件](assets/ac-lp-script.png){width="70%"}
 
    +++  脚本1 — 从Experience Platform加载配置文件属性
 
@@ -358,13 +358,13 @@ setOption("IMS_CLIENT_API_KEY", cryptString('CLIENT ID'));
 
 以下是登陆页面前后使用JavaScript代码活动的示例工作流：
 
-![](assets/ac-lp-wkf.png){width="70%"}
+![登陆页面工作流：预加载，从AEP加载配置文件详细信息，选择退出/加入网页，更新配置文件，结束](assets/ac-lp-wkf.png){width="70%"}
 
 以下是配置为更新Adobe Experience Platform中的配置文件属性的登陆页面和JavaScript代码活动的示例：
 
-![](assets/ac-lp-example.png){width="70%"}
+![包含选择退出电子邮件、短信和推送复选框以及提交按钮的登陆页面预览](assets/ac-lp-example.png){width="70%"}
 
-![](assets/ac-lp-code.png){width="70%" zoomable="yes"}
+![使用将配置文件选择退出值发送到Experience Platform的代码更新配置文件脚本活动](assets/ac-lp-code.png){width="70%" zoomable="yes"}
 
 ### 更多信息
 

@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: df8d8e17c486122e23a6db0e44263f9f9632a204
 workflow-type: tm+mt
-source-wordcount: '1076'
-ht-degree: 3%
+source-wordcount: '1168'
+ht-degree: 2%
 ---
 # 使用Campaign和X (Twitter) {#tw-ac-ovv}
 
@@ -69,7 +69,7 @@ ht-degree: 3%
 
 若要开始使用此集成，您必须注册[X开发人员帐户](https://developer.twitter.com){target="_blank"}。
 
-Campaign使用1.1版本的X API。 要使用它，您需要通过开发人员门户申请提升的访问权限。 在此页面[&#128279;](https://developer.twitter.com/en/portal/products/elevated){target="_blank"}中了解有关X提升的访问权限的更多信息。
+Campaign使用1.1版本的X API。 要使用它，您需要通过开发人员门户申请提升的访问权限。 在此页面](https://developer.twitter.com/en/portal/products/elevated){target="_blank"}中了解有关X提升的访问权限[的更多信息。
 
 ## 在X上创建应用程序 {#create-an-app-on-twitter}
 
@@ -81,15 +81,15 @@ Campaign使用1.1版本的X API。 要使用它，您需要通过开发人员门
 1. 让X助手引导您完成该过程。
 1. 要允许Adobe Campaign在您的帐户上创建帖子，请在应用程序的“用户身份验证设置”部分中编辑&#x200B;**应用程序权限**。 选择&#x200B;**读取、写入和直接消息**。
 
-   ![](assets/tw-permissions.png)
+   ![已选择“读/写”和“直接”消息的应用权限](assets/tw-permissions.png)
 
 1. 在&#x200B;**应用程序类型**&#x200B;部分中，选择&#x200B;**Web应用程序、自动应用程序或机器人**。 您可以将&#x200B;**回调URL**&#x200B;字段留空，并保存您的配置。
 
-   ![](assets/tw-app-type.png)
+   ![选择作为机密客户端的Web应用、自动应用或机器人的应用类型](assets/tw-app-type.png)
 
 1. 返回应用程序仪表板，选择应用程序并浏览到&#x200B;**密钥和令牌**&#x200B;选项卡。 在&#x200B;**访问令牌和密码**&#x200B;下，如果未提及&#x200B;**读取、写入和直接消息**&#x200B;权限，则必须重新生成应用的令牌和密码。 请注意，创建时必须保存所有密钥和令牌。 您将需要他们来配置您的Campaign Twitter服务。
 
-   ![](assets/tw-permissions-check.png)
+   ![身份验证令牌显示使用读取、写入和直接消息权限创建的访问令牌和密码](assets/tw-permissions-check.png)
 
 
 >[!NOTE]
@@ -122,7 +122,7 @@ Campaign使用1.1版本的X API。 要使用它，您需要通过开发人员门
 
 1. 默认情况下，关注者保存在&#x200B;**[!UICONTROL Visitors]**&#x200B;文件夹中。 您可以从&#x200B;**[!UICONTROL Visitor folder]**&#x200B;字段中选择其他位置。 [了解详情](../send/twitter.md#direct-tw-messages)
 
-   ![](assets/tw-service-in-ac.png)
+   ![服务新优惠可用表单，带有标签、类型电子邮件、访客文件夹和OAuth使用者及访问令牌字段](assets/tw-service-in-ac.png)
 
    >[!NOTE]
    >
@@ -137,8 +137,8 @@ Campaign使用1.1版本的X API。 要使用它，您需要通过开发人员门
 要检查您的设置，您可以：
 
 * 编辑您刚刚创建的&#x200B;**Twitter**&#x200B;服务。
-* 浏览&#x200B;**[!UICONTROL Twitter page]**&#x200B;选项卡：应显示您的Twitter帐户。
-  ![](assets/tw-page.png)
+* 浏览&#x200B;**[!UICONTROL Twitter page]**选项卡：应显示您的Twitter帐户。
+  在Adobe Campaign控制台中，此服务的![Twitter页面选项卡显示链接的Jane Marge帐户](assets/tw-page.png)
 
 ## 同步您的X帐户 {#synchro-tw-accounts}
 
@@ -148,7 +148,7 @@ Campaign和X之间的同步通过专门的技术工作流进行管理。 这些�
 
 **[!UICONTROL Synchronization of Twitter accounts]**&#x200B;技术工作流在Adobe Campaign中同步X帐户。 此工作流可恢复X关注者的列表，以便您可以向他们发送私信。 [了解详情](../send/twitter.md#direct-tw-messages)
 
-默认情况下，此工作流于每星期四早上7:30触发。 在实施此集成时，您可以随时使用&#x200B;**[!UICONTROL Execute pending task(s) now]**&#x200B;选项启动工作流。  您还可以编辑调度程序以更改工作流触发频率。 请参阅[此页面](../../automation/workflow/scheduler.md)以了解详情。
+默认情况下，此工作流于每星期四早上7:30触发。 在实施此集成时，您可以随时使用&#x200B;**[!UICONTROL Execute pending task(s) now]**&#x200B;选项启动工作流。  您还可以编辑调度程序以更改工作流触发频率。 请参阅[配置调度程序活动](../../automation/workflow/scheduler.md#configuring-scheduler-activity)以了解详情。
 
 >[!CAUTION]
 >
@@ -175,6 +175,6 @@ Campaign和X之间的同步通过专门的技术工作流进行管理。 这些�
 1. 访问帐户&#x200B;**设置**。
 1. 浏览到&#x200B;**隐私和安全**&#x200B;和&#x200B;**受众和标记**，并选中&#x200B;**保护您的帖子**&#x200B;选项。 您的帖子和其他帐户信息仅对关注您的用户可见。
 
-![](assets/do-not-localize/social_tw_test_page.png)
+![X设置受众、媒体和标记页面，已选中“保护您的帖子”选项](assets/do-not-localize/social_tw_test_page.png)
 
 如上所述，配置您的X应用程序和Campaign服务以使其与此测试帐户配合使用。

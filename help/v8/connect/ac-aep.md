@@ -23,9 +23,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: df8d8e17c486122e23a6db0e44263f9f9632a204
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '627'
 ht-degree: 0%
 ---
 # 与Adobe Experience Platform共享和同步受众 {#gs-ac-aep}
@@ -44,13 +44,13 @@ Adobe Campaign Managed Cloud Service目标和Source连接器允许Adobe Campaign
   1. 访问Adobe Experience Platform目标目录并创建新的&#x200B;**[!UICONTROL Adobe Campaign Managed Cloud Services]**&#x200B;连接。
   1. 提供要使用的Campaign实例的详细信息，并选择&#x200B;**[!UICONTROL Audience sync]**&#x200B;作为同步类型。
 
-     ![](assets/aep-audience-sync.png){width="800" align="center"}
+     ![在Experience Platform中配置新的目标页面，并将Select同步类型设置为“受众”同步](assets/aep-audience-sync.png){width="800" align="center"}
 
   1. 选择要发送到Adobe Campaign的区段。
   1. 在受众中配置要导出的属性。
   1. 配置流后，即可将所选受众激活到Adobe Campaign中。
 
-     ![](assets/aep-destination.png){width="800" align="center"}
+     ![Adobe Campaign Audiences文件夹的AEP控制台列表，显示同步的区段和受众详细信息](assets/aep-destination.png){width="800" align="center"}
 
   有关如何配置目标的详细信息，请参阅[Adobe Campaign Managed Cloud Services连接文档](https://www.adobe.com/go/destinations-adobe-campaign-managed-cloud-services-en){target="_blank"}
 
@@ -58,7 +58,7 @@ Adobe Campaign Managed Cloud Service目标和Source连接器允许Adobe Campaign
 
   为此，请配置新的Adobe Campaign Managed Cloud Services **Source连接**&#x200B;以将Campaign事件摄取到Adobe Experience Platform。 提供要使用的Campaign实例和架构的详细信息，选择应在其中摄取数据的数据集，然后配置要检索的字段。 [了解如何创建Adobe Campaign Managed Cloud Services源连接](https://www.adobe.com/go/sources-campaign-ui-en)
 
-  ![](assets/aep-logs.png){width="800" align="center"}
+  ![包含已摄取的记录、批次和成功状态的Adobe Campaign跟踪日志数据集活动页面](assets/aep-logs.png){width="800" align="center"}
 
 ## 在Adobe Experience Platform和Adobe Campaign之间同步配置文件属性 {#profile}
 
@@ -75,7 +75,7 @@ Adobe Campaign Managed Cloud Service目标和Source连接器允许Adobe Campaign
 1. 访问Adobe Experience Platform目标目录并创建新的&#x200B;**[!UICONTROL Adobe Campaign Managed Cloud Services]**&#x200B;连接。
 1. 提供要使用的Campaign实例的详细信息，并选择&#x200B;**[!UICONTROL Profile sync (Update only)]**&#x200B;作为同步类型。
 
-   ![](assets/aep-profile-sync.png){width="800" align="center"}
+   ![在Experience Platform中配置新的目标页面，并将Select同步类型设置为配置文件同步（仅更新）](assets/aep-profile-sync.png){width="800" align="center"}
 
 1. 选择定向要更新到Adobe Campaign数据库中的用户档案的区段。
 1. 配置要更新到Adobe Campaign中的配置文件属性。

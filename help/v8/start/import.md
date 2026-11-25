@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
+source-git-commit: 9548dde346f10c57350f21e5946690f2f988b939
 workflow-type: tm+mt
-source-wordcount: '4502'
-ht-degree: 28%
+source-wordcount: '4507'
+ht-degree: 27%
 ---
 # 将数据导入 Campaign {#ootb-profiles}
 
@@ -169,7 +169,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 ### 第 4 步 – 调解 {#step-4---reconciliation}
 
-通过import assistant的协调步骤，可定义文件数据与数据库中现有数据的协调模式，并设置文件数据与数据库数据之间的优先级规则。 配置窗口如下所示：
+通过import assistant的协调步骤，可定义如何协调来自文件的数据与数据库中的现有数据。 它还允许您设置文件数据和数据库数据之间的优先级规则。 配置窗口如下所示：
 
 ![带有字段树的协调屏幕，其中名字被设置为协调键1.](assets/s_ncs_user_import_wizard04_1.png)的一部分
 
@@ -205,7 +205,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 协调键值是用于标识记录的一组字段。 例如，要导入收件人，协调键值可以是帐号、“电子邮件”字段或“姓氏、名字、公司”字段等。
 
-在这种情况下，为了确定文件行是否与数据库中的现有收件人匹配，导入引擎会将文件的值与数据库中键的所有字段的值进行比较。 当字段特定于记录时，可以执行源数据和目标数据之间的精细比较，以确保导入后数据的完整性。 可以为同一个表填写第二个合并关键项；它用于第一个关键项为空的行。
+在这种情况下，导入引擎会将键的所有字段的文件值与数据库的值进行比较。 这就是它确定一行文件是否与数据库中的现有收件人匹配的方法。 当字段特定于记录时，可以执行源数据和目标数据之间的精细比较，以确保导入后数据的完整性。 可以为同一个表填写第二个合并关键项；它用于第一个关键项为空的行。
 
 避免选择在导入期间可能被修改的字段；如果发生这种情况，引擎可能会创建额外的记录。
 
@@ -253,7 +253,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 有两种类型的拒绝（该类型显示在&#x200B;**[!UICONTROL Connector]**&#x200B;列中）：
 
 * 文本连接器的拒绝涉及在处理文件行（计算字段、数据分析等）时发生的错误。 在这种情况下，如果发生错误，则始终拒绝整行。
-* 数据库连接器拒绝涉及数据协调或写入数据库期间发生的错误。 在导入到多个表的情况下，拒绝只涉及记录的一部分（例如，对于收件人和相关事件的导入，错误可以阻止更新事件而不拒绝收件人）。
+* 数据库连接器拒绝涉及数据协调或写入数据库期间发生的错误。 在导入多个表的情况下，拒绝仅涉及记录的一部分。 例如，对于导入收件人和相关事件，如果出现错误，可能会阻止更新事件而不拒绝收件人。
 
 在数据调解页面中，您可以按字段和逐个表定义所需的错误管理类型字段。
 
@@ -271,7 +271,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 ### 第 5 步 - 导入收件人时的附加步骤 {#step-5---additional-step-when-importing-recipients}
 
-在import assistant的下一个步骤中，您可以选择或创建数据将导入到的文件夹，自动将导入的收件人映射到（新的或现有的）列表，并将收件人订阅服务。
+导入助理的下一步允许您选择或创建数据将导入到的文件夹。 您还可以自动将导入的收件人映射到（新的或现有的）列表，并将收件人订阅服务。
 
 ![导入收件人屏幕，其中包含文件夹、列表和服务的“编辑”链接，以及“来源”字段。](assets/s_ncs_user_import_wizard05_1.png)
 
@@ -315,7 +315,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
   1. 订阅服务
 
-     若要为所有导入的收件人订阅信息服务，请单击&#x200B;**[!UICONTROL Subscribe recipients to a service]**&#x200B;部分的&#x200B;**[!UICONTROL Edit...]**&#x200B;链接，以选择或创建收件人将订阅的信息服务。 您可以选择&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;选项：此消息的内容在与订阅服务关联的投放模板中定义。
+     若要为所有导入的收件人订阅信息服务，请单击&#x200B;**[!UICONTROL Subscribe recipients to a service]**&#x200B;部分的&#x200B;**[!UICONTROL Edit...]**&#x200B;链接。 然后选择或创建收件人将订阅的信息服务。 您可以选择&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;选项：此消息的内容在与订阅服务关联的投放模板中定义。
 
      ![使用选定的现有服务为收件人订阅服务对话框，并选中发送确认消息。](assets/s_ncs_user_import_wizard05_7.png)
 
@@ -357,7 +357,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
    本机模板为&#x200B;**[!UICONTROL New text export]**。 不得修改此模板，但您可以复制它以配置新模板。 默认情况下，导出模板保存在&#x200B;**[!UICONTROL Resources > Templates > Job templates]**&#x200B;节点中。
 
 1. 在&#x200B;**[!UICONTROL Label]**&#x200B;字段中输入导出名称。 您可以添加描述。
-1. 选择导出类型。 有两种可能的导出类型：**[!UICONTROL Simple export]**&#x200B;用于仅导出一个文件，而&#x200B;**[!UICONTROL Multiple export]**&#x200B;用于从一种或多种类型的源文档在单次执行中导出多个文件。
+1. Select导出类型。 有两种可能的导出类型：**[!UICONTROL Simple export]**&#x200B;用于仅导出一个文件，而&#x200B;**[!UICONTROL Multiple export]**&#x200B;用于从一种或多种类型的源文档在单次执行中导出多个文件。
 
 ### 第 2 步 - 要导出的文件类型 {#step-2---type-of-file-to-export}
 

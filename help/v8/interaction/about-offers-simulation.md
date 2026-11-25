@@ -61,7 +61,7 @@ ht-degree: 2%
 
 1. 指定模拟范围。
 
-   有关详细信息，请参阅作用域](simulation-scope.md#definition-of-the-scope)的[定义。
+   有关详细信息，请参阅作用域[&#128279;](simulation-scope.md#definition-of-the-scope)的定义。
 
    ![包含环境、优惠空间、联系日期、建议和“文件夹最佳旅行者”目标的“模拟范围”选项卡](assets/offer_simulation_004.png)
 

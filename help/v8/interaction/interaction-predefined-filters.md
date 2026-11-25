@@ -65,4 +65,4 @@ ht-degree: 4%
 
 1. 单击&#x200B;**[!UICONTROL Preview]**&#x200B;查看筛选结果。
 
-   电子邮件渠道筛选器的“预览”选项卡，其中列出了与筛选器匹配的收件人](assets/offer_filter_create_006.png)![
+   电子邮件渠道筛选器的“预览”选项卡，其中列出了与筛选器匹配的收件人![&#128279;](assets/offer_filter_create_006.png)

@@ -34,7 +34,7 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 2%
@@ -61,7 +61,7 @@ ht-degree: 2%
 
   此处，过滤器用于禁止没有“管理”权限的操作员在架构上具有“写入”权限。 这意味着只有管理员对此架构描述的实体具有写入权限。
 
-  ```
+  ```xml
   <sysFilter name="writeAccess">      
    <condition enabledIf="hasNamedRight('admin')=false" expr="FALSE"/>    
   </sysFilter>
@@ -69,9 +69,9 @@ ht-degree: 2%
 
 * 限制读取和写入权限：
 
-  此处，该过滤器用于禁止所有操作员在架构上同时具有“读取”和“写入”权限。 只有由表达式“$(loginId)&lbrace;0”表示的&#x200B;**internal&lbrace;1!=帐户具有这些权限。**
+  此处，该过滤器用于禁止所有操作员在架构上同时具有“读取”和“写入”权限。 只有由表达式“$(loginId){0”表示的&#x200B;**internal{1!=帐户具有这些权限。**
 
-  ```
+  ```xml
   <sysFilter name="readAccess"> 
    <condition enabledIf="$(loginId)!=0" expr="FALSE"/>
   </sysFilter>

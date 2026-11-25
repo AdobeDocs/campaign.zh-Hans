@@ -22,7 +22,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 2%
@@ -47,7 +47,7 @@ Campaign Standard API允许您触发&#x200B;**外部信号**&#x200B;活动以调
 
 如果要使用参数调用工作流，请将其添加到具有&#x200B;**&quot;parameters&quot;**&#x200B;属性的有效负载中。 语法由参数名称及其值组成（支持以下类型：**字符串**、**数字**、**布尔值**&#x200B;和&#x200B;**日期/时间**）。
 
-```
+```bash
   -X POST <TRIGGER_URL>
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
   -H 'Cache-Control: no-cache' \
@@ -76,7 +76,7 @@ Campaign Standard API允许您触发&#x200B;**外部信号**&#x200B;活动以调
 
 对工作流执行GET请求。
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/workflow/execution/<workflowID> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -86,7 +86,7 @@ Campaign Standard API允许您触发&#x200B;**外部信号**&#x200B;活动以调
 
 它会返回工作流信号活动和关联的触发器URL。
 
-```
+```json
 {
 "PKey": "<PKEY>",
 "activities": {
@@ -105,7 +105,7 @@ Campaign Standard API允许您触发&#x200B;**外部信号**&#x200B;活动以调
 
 要触发信号活动，请使用“source”对触发器URL执行POST请求。 如果要使用参数调用工作流，请添加“参数”属性。
 
-```
+```bash
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/workflow/execution/<PKEY>/activities/activity/<PKEY>/trigger \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -118,7 +118,7 @@ Campaign Standard API允许您触发&#x200B;**外部信号**&#x200B;活动以调
 -d    "audience":"audience",
 -d    "email":"anna.varney@mail.com",
 -d    "template":"05",
--d    "contentURL":"http://www.adobe.com/cn",
+-d    "contentURL":"http://www.adobe.com",
 -d    "test":"true",
 -d    "segmentCode":"my segment",
 -d    "attribute":"2019-04-03 08:17:19.100Z"}
@@ -129,7 +129,7 @@ Campaign Standard API允许您触发&#x200B;**外部信号**&#x200B;活动以调
 
 如果未在外部信号活动中声明其中一个参数，则POST请求会返回以下错误，指示缺少哪个参数。
 
-```
+```text
 RST-360011 An error has occurred - please contact your administrator.
 'contentURL' parameter isn't defined in signal activity.
 XTK-170006 Unable to parse expression 'HandleTrigger(@name, $(source), $({parameters}))'.

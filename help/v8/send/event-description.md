@@ -24,7 +24,7 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 04759fefdf28498191634f2f1b3e1a236b7e458f
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 0%
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 如果您使用的是负载平衡服务器，则可以使用用户/密码身份验证（在RT消息的级别）。 示例：
 
-```
+```xml
 <PushEvent xmlns="urn:nms:rtEvent">
 <sessiontoken>mc/PASSWORD</sessiontoken>
 <domEvent>
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 使用PushEvent的示例：
 
-```
+```xml
 <urn:PushEvent>
 
  <sessiontoken>___921f9b38-72ac-49ad-b481-ab32973efc50</sessiontoken>
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 使用PushEvents的示例：
 
-```
+```xml
 <urn:PushEvents>
 
  <sessiontoken>___921f9b38-72ac-49ad-b481-ab32973efc50</sessiontoken>
@@ -127,7 +127,7 @@ ht-degree: 0%
 
 `<rtevent> configuration example:`
 
-```
+```xml
 <rtEvent type="order_confirmation" email="john.doe@domain.com" origin="eCommerce" wishedChannel="0" externalId="1242" mobilePhone="+33620202020"> 
 ```
 
@@ -149,7 +149,7 @@ ht-degree: 0%
 
 数据示例：
 
-```
+```xml
    <ctx>
                <client>
                         <firstname>John</firstname>
@@ -178,7 +178,7 @@ Adobe Campaign在收到事件时生成一个唯一的返回ID。 这是事件的
 
 * 事件处理成功时方法返回的标识符示例：
 
-  ```
+  ```xml
   <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="http://xml.apache.org/xml-soap" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
      <SOAP-ENV:Body>
         <urn:PushEventResponse SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:urn="urn:nms:rtEvent">
@@ -194,7 +194,7 @@ Adobe Campaign在收到事件时生成一个唯一的返回ID。 这是事件的
 
 * 查询不包含登录名或指定的运算符没有所需权限时失败的事件处理示例：
 
-  ```
+  ```xml
   <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
      <SOAP-ENV:Body>
         <SOAP-ENV:Fault>
@@ -208,7 +208,7 @@ Adobe Campaign在收到事件时生成一个唯一的返回ID。 这是事件的
 
 * 由于查询中的错误而失败的事件示例（不遵循XML分类）：
 
-  ```
+  ```xml
   <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
      <SOAP-ENV:Body>
         <SOAP-ENV:Fault>
@@ -233,7 +233,7 @@ Adobe Campaign在收到事件时生成一个唯一的返回ID。 这是事件的
 
 * 失败并返回零标识符（错误的方法名称）的事件示例：
 
-  ```
+  ```xml
   <SOAP-ENV:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns="http://xml.apache.org/xml-soap" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
      <SOAP-ENV:Body>
         <urn:PushEventResponse SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:urn="urn:nms:rtEvent">

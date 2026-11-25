@@ -25,7 +25,7 @@ level_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 709e38026d74ed707d10fc8109356289dc9f4ac9
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 0%
@@ -40,7 +40,7 @@ ht-degree: 0%
 
   类别也可以在在线环境中手动发布。
 
-  此部分[&#128279;](interaction-offer.md#approve-offers)中详细介绍了批准优惠的过程。
+  此部分](interaction-offer.md#approve-offers)中详细介绍了[批准优惠的过程。
 
 * 一个&#x200B;**实时**&#x200B;环境，其中设计环境中的已批准选件以及在设计环境中配置的各种选件空间、过滤器、类别和规则都可以找到。 在调用优惠引擎期间，引擎将始终使用实时环境中的优惠。
 
@@ -102,7 +102,7 @@ Adobe Campaign交互模块提出了两种类型的交互：
 
 >[!NOTE]
 >
->在安装包时，**nms:proposition**&#x200B;表的&#x200B;**long**&#x200B;类型字段（如建议ID）将变为&#x200B;**int64**&#x200B;类型字段。 [Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html?lang=zh-Hans#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}中详细介绍了此类数据。
+>在安装包时，**nms:proposition**&#x200B;表的&#x200B;**long**&#x200B;类型字段（如建议ID）将变为&#x200B;**int64**&#x200B;类型字段。 [Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/schema-structure.html#mapping-the-types-of-adobe-campaign-dbms-data){target="_blank"}中详细介绍了此类数据。
 
 在每个实例上配置数据保留持续时间（通过部署向导中的&#x200B;**[!UICONTROL Data purge]**&#x200B;窗口）。 在执行实例上，此期间必须对应于要计算的分类规则（滑动期间）和资格规则所需的历史深度。
 
@@ -120,7 +120,7 @@ Adobe Campaign交互模块提出了两种类型的交互：
    * 检查使用的应用程序类型： **[!UICONTROL Message Center]**、**[!UICONTROL Interaction]**&#x200B;或两者。
    * 输入使用的FDA帐户。 必须在执行实例上创建运算符，并且必须对相关实例的数据库具有以下读写权限：
 
-     ```
+     ```sql
      grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
      grant DELETE, INSERT, UPDATE ON nmspropositionrcp TO user;
      ```
@@ -180,7 +180,7 @@ Adobe Campaign交互模块提出了两种类型的交互：
 
 **工作表**（推荐）
 
-```
+```sql
 CREATE TABLE NmsPropositionRcp_tmp AS SELECT * FROM nmspropositionrcp WHERE 0=1;
 ALTER TABLE nmspropositionrcp_tmp
   ALTER COLUMN ipropositionid TYPE bigint,
@@ -198,7 +198,7 @@ ALTER TABLE nmspropositionrcp_tmp RENAME TO nmspropositionrcp;
 
 **更改表**
 
-```
+```sql
 ALTER TABLE nmspropositionrcp
   ALTER COLUMN ipropositionid TYPE bigint,
   ALTER COLUMN iinteractionid TYPE bigint;

@@ -19,7 +19,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 执行GET请求以检索配置文件。
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 它会返回用户档案的订阅URL。
 
-```
+```json
   {
     ...
     "postalAddress":...,
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 对订阅URL执行POST请求，并在有效负载内使用所需的服务主键。
 
-```
+```bash
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY>/subscriptions \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 它会返回更新后的配置文件，并且服务节点已完成。
 
-```
+```json
 {
   ...
   "service": {
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 执行GET请求以检索服务。
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -93,7 +93,7 @@ ht-degree: 0%
 
 它会返回服务的订阅URL。
 
-```
+```json
   {
     ...
     "messageType": "email",
@@ -107,7 +107,7 @@ ht-degree: 0%
 
 在有效负荷内使用所需的配置文件主键对订阅URL发出POST请求。
 
-```
+```bash
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign//profileAndServices/service/<PKEY>/subscriptions/ \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -119,7 +119,7 @@ ht-degree: 0%
 
 它返回更新后的服务，订阅者节点已完成。
 
-```
+```json
 {
   ...
   "service": ...,

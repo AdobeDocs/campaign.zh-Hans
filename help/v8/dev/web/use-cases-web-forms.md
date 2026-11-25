@@ -25,7 +25,7 @@ subfeature_v2:
     internal-label: Landing pages
   - id: e739ee2b-6228-412e-878f-45de0791417d
     internal-label: Use cases
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 1%
@@ -45,7 +45,7 @@ ht-degree: 1%
 
 ### 第1步 — 创建信息服务 {#step-1---creating-information-services}
 
-1. 创建要提供给收件人的新闻稿订阅服务。 有关如何创建新闻稿的更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}。
+1. 创建要提供给收件人的新闻稿订阅服务。 有关如何创建新闻稿的更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
 
@@ -123,7 +123,7 @@ Web窗体工作流将包含以下活动：
 
    前&#x200B;**[!UICONTROL Script]**&#x200B;个活动将在阻止列表时添加收件人，直到他们确认订阅新闻稿为止。 其内容必须如下：
 
-   ```
+   ```javascript
    ctx.recipient.@blackList=1
    ```
 
@@ -131,7 +131,7 @@ Web窗体工作流将包含以下活动：
 
    第二个&#x200B;**[!UICONTROL Script]**&#x200B;活动授权要发送给用户的投放，并订阅新闻稿。 最后两行脚本将允许您将收件人从temp文件夹转移到另一个文件夹，并在他们确认订阅后立即与现有配置文件进行协调。
 
-   ```
+   ```javascript
    ctx.recipient.@blackList=0
    nms.subscription.Subscribe("INTERNAL_NAME_OF_THE_NEWSLETTER", ctx.recipient, false)
    ctx.recipient.folder = <folder name="nmsRootRecipient"/>

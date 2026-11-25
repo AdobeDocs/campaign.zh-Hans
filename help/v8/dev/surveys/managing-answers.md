@@ -19,7 +19,7 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: aa436bfd174075f7ed3e144ea0b16832b6b811ff
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 1%
@@ -106,13 +106,13 @@ ht-degree: 1%
 
 对于每个表单，都可以在字段或标签中使用提供的答案。 对存储在已存档字段中的内容使用以下语法：
 
-```
+```html
 <%= ctx.webAppLogRcpData.name of the archived field %
 ```
 
 >[!NOTE]
 >
->对于其他类型的字段，语法在[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"}中有详细说明（Campaign v8文档）。
+>对于其他类型的字段，语法在[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"}中有详细说明（Campaign v8文档）。
 
 ### 存储设置 {#storage-settings}
 

@@ -34,7 +34,7 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '2568'
 ht-degree: 0%
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 输入表单的XML文档必须包含具有&#x200B;**名称**&#x200B;和&#x200B;**命名空间**&#x200B;属性的`<form>`根元素，才能填充表单名称和命名空间。
 
-```
+```xml
 <form name="form_name" namespace="name_space">
 ...
 </form>
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 默认情况下，表单与具有相同名称和命名空间的数据架构关联。 要将表单与不同的名称关联，请将`<form>`元素的&#x200B;**entity-schema**&#x200B;属性设置为架构键的名称。 为了说明输入表单的结构，让我们使用“cus:recipient”示例架构描述一个接口：
 
-```
+```xml
 <srcSchema name="recipient" namespace="cus">
   <enumeration name="gender" basetype="byte">    
     <value name="unknown" label="Not specified" value="0"/>    
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 ![](assets/do-not-localize/form_exemple1.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <input xpath="@gender"/>
   <input xpath="@birthDate"/>
@@ -124,7 +124,7 @@ ht-degree: 0%
 
 ![](assets/do-not-localize/form_exemple2.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <container colcount="2">
     <input xpath="@gender"/>
@@ -140,7 +140,7 @@ ht-degree: 0%
 
 ![](assets/do-not-localize/form_exemple3.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <container colcount="2">
     <input xpath="@gender"/>
@@ -154,7 +154,7 @@ ht-degree: 0%
 
 ![](assets/do-not-localize/form_exemple4.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <container colcount="2" type="frame" label="General">
     <input xpath="@gender"/>
@@ -168,7 +168,7 @@ ht-degree: 0%
 
 ![](assets/do-not-localize/form_exemple5.png)
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <static type="separator" colspan="2" label="General"/>
   <input xpath="@gender"/>
@@ -190,7 +190,7 @@ ht-degree: 0%
 
 不带“xpath”的容器示例：
 
-```
+```xml
 <container colcount="2">
   <input xpath="location/@zipCode"/>
   <input xpath="location/@city"/>
@@ -199,7 +199,7 @@ ht-degree: 0%
 
 将“xpath”添加到名为“location”的元素中的示例：
 
-```
+```xml
 <container colcount="2" xpath="location">
   <input xpath="@zipCode"/>
   <input xpath="@city"/>
@@ -214,7 +214,7 @@ ht-degree: 0%
 
 ![](assets/do-not-localize/form_exemple6.png)
 
-```
+```xml
 <container type="notebook">
   <container colcount="2" label="General">
     <input xpath="@gender"/>
@@ -241,7 +241,7 @@ ht-degree: 0%
 
 ![](assets/do-not-localize/form_exemple8.png)
 
-```
+```xml
 <container type="iconbox">
   <container colcount="2" label="General" img="xtk:properties.png">
     <input xpath="@gender"/>
@@ -266,7 +266,7 @@ ht-degree: 0%
 
 此示例说明了“性别”字段值上的控件可见性：
 
-```
+```xml
 <container type="visibleGroup" visibleIf="@gender=1">
   ...
 </container>
@@ -287,7 +287,7 @@ ht-degree: 0%
 
 通过此容器，您可以启用或禁用动态条件中的一组数据。 禁用控件会阻止对其进行编辑。 以下示例说明了如何从“性别”字段的值启用控件：
 
-```
+```xml
 <container type="enabledGroup" enabledIf="@gender=1">
   ...
 </container>
@@ -302,7 +302,7 @@ ht-degree: 0%
 
 请记住，在数据模式中声明了链接，如下所示：
 
-```
+```xml
 <element label="Company" name="company" target="cus:company" type="link"/>
 ```
 
@@ -310,7 +310,7 @@ ht-degree: 0%
 
 ![](assets/do-not-localize/form_exemple9.png)
 
-```
+```xml
 <input xpath="company"/>
 ```
 
@@ -324,7 +324,7 @@ ht-degree: 0%
 
 您可以通过从输入表单中的链接定义添加&#x200B;**`<sysfilter>`**&#x200B;元素来限制目标元素的选择：
 
-```
+```xml
 <input xpath="company">
   <sysFilter>
     <condition expr="[location/@city] =  'Newton"/>
@@ -334,7 +334,7 @@ ht-degree: 0%
 
 您还可以使用&#x200B;**`<orderby>`**&#x200B;元素对列表进行排序：
 
-```
+```xml
 <input xpath="company">
   <orderBy>
     <node expr="[location/@zipCode]"/>
@@ -362,7 +362,7 @@ ht-degree: 0%
 
 模式中的收藏集链接示例：
 
-```
+```xml
 <element label="Events" name="rcpEvent" target="cus:event" type="link" unbound="true">
 ...
 </element>
@@ -370,7 +370,7 @@ ht-degree: 0%
 
 其输入形式中的列表：
 
-```
+```xml
  <input xpath="rcpEvent" type="linklist">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -391,7 +391,7 @@ ht-degree: 0%
 
 在加载列表时可以应用筛选和排序：
 
-```
+```xml
  <input xpath="rcpEvent" type="linklist">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -412,7 +412,7 @@ ht-degree: 0%
 
 架构中关系表的示例：
 
-```
+```xml
 <srcSchema name="subscription" namespace="cus">
   <element name="recipient" type="link" target="cus:recipient" label="Recipient"/>
   <element name="service" type="link" target="cus:service" label="Subscription service"/>
@@ -423,7 +423,7 @@ ht-degree: 0%
 
 ![](assets/do-not-localize/form_exemple12.png)
 
-```
+```xml
 <input type="linklist" xpath="subscription" xpathChoiceTarget="service" xpathEditTarget="service" zoom="true">
   <input xpath="recipient"/>
   <input xpath="service"/>
@@ -457,7 +457,7 @@ ht-degree: 0%
 
 此控件显示可编辑的列列表，工具栏包含添加和删除按钮。
 
-```
+```xml
 <input xpath="rcpEvent" type="list">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -474,7 +474,7 @@ ht-degree: 0%
 
 工具栏按钮可以水平对齐：
 
-```
+```xml
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -487,7 +487,7 @@ ht-degree: 0%
 
 在列表中插入和编辑数据可在单独的编辑表单中输入。
 
-```
+```xml
 <input nolabel="true" toolbarCaption="List of events" type="list" xpath="rcpEvent" zoom="true" zoomOnAdd="true">
   <input xpath="@label"/>
   <input xpath="@date"/>
@@ -524,7 +524,7 @@ ht-degree: 0%
 
 ![](assets/do-not-localize/form_exemple16.png)
 
-```
+```xml
 <value value="@gender"/>
 <input xpath="@gender" readOnly="true"/>
 ```
@@ -535,7 +535,7 @@ ht-degree: 0%
 
 “性别”字段示例：
 
-```
+```xml
 <input type="RadioButton" xpath="@gender" checkedValue="0" label="Choice 1"/>
 <input type="RadioButton" xpath="@gender" checkedValue="1" label="Choice 2"/>
 <input type="RadioButton" xpath="@gender" checkedValue="2" label="Choice 3"/>
@@ -547,7 +547,7 @@ ht-degree: 0%
 
 复选框反映布尔状态（选中或未选中）。 默认情况下，此控件由“Boolean”(true/false)字段使用。 接受默认值0或1的变量可以与此按钮关联。 此值可通过&#x200B;**checkValue**&#x200B;属性过载。
 
-```
+```xml
 <input xpath="@boolean1"/>
 <input xpath="@field1" type="checkbox" checkedValue="Y"/>
 ```
@@ -560,7 +560,7 @@ ht-degree: 0%
 
 要编辑的控件将分组到在树控件的&#x200B;**`<input>`**&#x200B;标记下输入的&#x200B;**`<container>`**&#x200B;中：
 
-```
+```xml
 <input nolabel="true" type="treeEdit">
   <container label="Text fields">
     <input xpath="@text1"/>
@@ -579,7 +579,7 @@ ht-degree: 0%
 
 表达式字段通过表达式动态更新字段；**`<input>`**&#x200B;标记与&#x200B;**xpath**&#x200B;属性一起使用，以输入要更新的字段的路径以及包含更新表达式的&#x200B;**expr**&#x200B;属性。
 
-```
+```xml
 <!-- Example: updating the boolean1 field from the value contained in the field with path /tmp/@flag -->
 <input expr="Iif([/tmp/@flag]=='On', true, false)" type="expr" xpath="@boolean1"/>
 <input expr="[/ignored/@action] == 'FCP'" type="expr" xpath="@launchFCP"/>
@@ -602,7 +602,7 @@ ht-degree: 0%
 
 通过&#x200B;**`<enter>`**&#x200B;和&#x200B;**`<leave>`**&#x200B;标记初始化和关闭表单时，可以更新表单的上下文。
 
-```
+```xml
 <form name="recipient" namespace="cus">
   <enter>
     <set...
@@ -624,7 +624,7 @@ ht-degree: 0%
 
 如果表达式已验证，**`<if expr="<expression>" />`**&#x200B;标记将执行在标记下指定的指令：
 
-```
+```xml
 <if expr="([/tmp/@test] == 'Test' or @lastName != 'Doe') and @boolean2 == true">
   <set xpath="@boolean1" expr="true"/>
 </if>
@@ -632,7 +632,7 @@ ht-degree: 0%
 
 与&#x200B;**`<error>`**&#x200B;标记结合使用的&#x200B;**`<check expr="<condition>" />`**&#x200B;标记阻止表单验证，如果不满足条件，则显示错误消息：
 
-```
+```xml
 <leave>
   <check expr="/tmp/@test != ''">
     <error>You must populate the 'Test' field!</error> 
@@ -646,7 +646,7 @@ ht-degree: 0%
 
 要添加助手，请使用以下类型的结构：
 
-```
+```xml
 <form type="wizard" name="example" namespace="cus" img="nms:rcpgroup32.png" label="Wizard example" entity-schema="nms:recipient">
   <container title="Title of page 1" desc="Long description of page 1">
     <input xpath="@lastName"/>
@@ -669,7 +669,7 @@ ht-degree: 0%
 
 **`<soapcall>`**&#x200B;标记包含对方法的调用，并具有以下输入参数：
 
-```
+```xml
 <soapCall name="<name>" service="<schema>">
   <param type="<type>" exprIn="<xpath>"/>  
   ...
@@ -695,7 +695,7 @@ ht-degree: 0%
 
 **示例**：
 
-```
+```xml
 <leave>
   <soapCall name="RegisterGroup" service="nms:recipient">         
     <param type="DOMElement" exprIn="/tmp/entityList"/>         

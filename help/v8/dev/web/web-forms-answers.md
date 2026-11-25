@@ -21,7 +21,7 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 0%
@@ -101,19 +101,19 @@ ht-degree: 0%
 
 * 对于存储在数据库字段中的内容：
 
-  ```
+  ```html
   <%=ctx.recipient.@field name%
   ```
 
 * 对于存储在局部变量中的内容：
 
-  ```
+  ```html
   <%= ctx.vars.variable name %
   ```
 
 * 对于存储在HTML文本字段中的内容：
 
-  ```
+  ```html
   <%== HTML field name %
   ```
 
@@ -153,4 +153,4 @@ ht-degree: 0%
 >
 >可能的操作包括： **[!UICONTROL Simple reconciliation]**、**[!UICONTROL Update or insertion]**、**[!UICONTROL Insertion]**、**[!UICONTROL Update]**、**[!UICONTROL Deletion]**。\
 >运算符的默认文件夹是运算符具有写入权限的第一个文件夹。\
->请参阅[此小节](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}。
+>请参阅[此小节](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}。

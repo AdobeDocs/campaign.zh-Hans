@@ -26,7 +26,7 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 3%
@@ -77,7 +77,7 @@ ht-degree: 3%
 ![](assets/s_ncs_admin_survey_add_link.png)
 
 * **[!UICONTROL Label]**&#x200B;是超文本链接的内容，因为它将显示在表单页面上。
-* **[!UICONTROL URL]**&#x200B;是所需的地址，例如： [https://www.adobe.com/cn](https://www.adobe.com/cn)网站，或[info@adobe.com](mailto:info@adobe.com)发送消息。
+* **[!UICONTROL URL]**&#x200B;是所需的地址，例如： [https://www.adobe.com](https://www.adobe.com)网站，或[info@adobe.com](mailto:info@adobe.com)发送消息。
 * **[!UICONTROL Window]**&#x200B;字段允许您在站点中选择链接的显示模式。 您可以决定在新窗口、当前窗口或其他窗口中打开链接。
 * 您可以添加工具提示，如下所示：
 
@@ -145,7 +145,7 @@ ht-degree: 3%
 
 ![](assets/webapp_perso_vars_include.png)
 
-```
+```xml
 <P>Welcome <%= ctx.recipient.@firstName %> <%= ctx.recipient.@lastName %>,</P>
 <P>To start your customized study, please select your car <%=ctx.vars.marque%> and its year of purchase.</P>
 ```

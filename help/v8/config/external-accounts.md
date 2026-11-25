@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: f22ef7562e86372db4c5c05c04acd986d1c557fb
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2303'
 ht-degree: 1%
 ---
 # 配置外部帐户 {#config-external-accounts}
@@ -47,7 +47,7 @@ Adobe Campaign提供了一组预定义的外部帐户。 要设置与外部系�
 
 您可以从Adobe Campaign **[!UICONTROL Explorer]**&#x200B;访问外部帐户：浏览到&#x200B;**[!UICONTROL Administration]** `>` **[!UICONTROL Platform]** `>` **[!UICONTROL External accounts]**。
 
-![](assets/external-accounts.png)
+![外部帐户列在“管理”>“平台”下，在“常规”选项卡上打开Android路由帐户](assets/external-accounts.png)
 
 
 >[!CAUTION]
@@ -65,14 +65,14 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
 >[!NOTE]
 >
->从Campaign v8.3开始，提供了适用于POP3功能的Microsoft Exchange Online OAuth 2.0身份验证。 要检查您的版本，请参阅[此部分](../start/compatibility-matrix.md)。
+>从Campaign v8.3开始，提供了适用于POP3功能的Microsoft Exchange Online OAuth 2.0身份验证。 要检查您的版本，请参阅[Campaign v8兼容性矩阵](../start/compatibility-matrix.md)。
 >
 
 **退回邮件**&#x200B;外部帐户指定要用于连接到电子邮件服务的外部POP3帐户。 所有配置为POP3访问的服务器都可以接收回邮。
 
-在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=zh-Hans){target="_blank"}中了解有关入站电子邮件的更多信息。
+在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}中了解有关入站电子邮件的更多信息。
 
-![](assets/bounce_external_1.png)
+![包含服务器、端口、帐户、密码、加密和函数字段的退回邮件(POP3)外部帐户](assets/bounce_external_1.png)
 
 要配置&#x200B;**[!UICONTROL Bounce mails (defaultPopAccount)]**&#x200B;外部帐户：
 
@@ -88,11 +88,11 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
 * **[!UICONTROL Function]** — 入站电子邮件或SOAP路由器。
 
-![](assets/bounce_external_2.png)
+![已选中Microsoft OAuth 2.0并退回邮件外部帐户，其中显示了Azure租户、客户端ID、密码和URL字段](assets/bounce_external_2.png)
 
 >[!CAUTION]
 >
->在使用Microsoft OAuth 2.0配置POP3外部帐户之前，您首先需要在Azure门户中注册应用程序。 有关详细信息，请参见此 [&#x200B; 页面](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}。
+>在使用Microsoft OAuth 2.0配置POP3外部帐户之前，您首先需要在Azure门户中注册应用程序。 有关详细信息，请参见此 [ 页面](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app){target="_blank"}。
 >
 
 要使用Microsoft OAuth 2.0配置POP3外部帐户，请选中&#x200B;**[!UICONTROL Microsoft OAuth 2.0]**&#x200B;选项并填写以下字段：
@@ -111,17 +111,17 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
 **[!UICONTROL Routing]**&#x200B;外部帐户允许您根据安装的包配置Adobe Campaign中可用的每个渠道。
 
-在[本节](../architecture/architecture.md#split)中了解有关外部帐户管理和投放执行的更多信息。
+了解有关[拆分投放执行](../architecture/architecture.md#split)中的外部帐户管理和投放执行的更多信息。
 
 ### 执行实例 {#execution-instance}
 
-在事务型消息传递的上下文中，执行实例与控制实例链接并连接它们。 将事务性消息模板部署到执行实例。 在[此页面](../architecture/architecture.md#transac-msg-archi)中了解有关消息中心架构的更多信息。
+在事务型消息传递的上下文中，执行实例与控制实例链接并连接它们。 将事务性消息模板部署到执行实例。 在[消息中心架构](../architecture/architecture.md#transac-msg-archi)中了解有关消息中心架构的更多信息。
 
 ## 访问外部系统外部帐户 {#external-syst-external-accounts}
 
 ### 联合数据访问 (FDA) {#fda-external-accounts}
 
-**外部数据库**&#x200B;类型的外部帐户用于通过联合数据访问(FDA)连接到外部数据库。 在[本节](../connect/fda.md)中了解联合数据访问(FDA)选项的更多信息。
+**外部数据库**&#x200B;类型的外部帐户用于通过联合数据访问(FDA)连接到外部数据库。 了解有关[使用Campaign和外部数据库(FDA)](../connect/fda.md)中的联合数据访问(FDA)选项的更多信息。
 
 >[!NOTE]
 >
@@ -131,29 +131,29 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
 对于Campaign Web用户界面(v8)，请参阅：
 
-* [创建外部帐户](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/conf/external-accounts/create-external-account){target="_blank"}
-* [外部数据库帐户](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/conf/external-accounts/external-account-database){target="_blank"}
+* [创建外部帐户](https://experienceleague.adobe.com/en/docs/campaign-web/v8/conf/external-accounts/create-external-account){target="_blank"}
+* [外部数据库帐户](https://experienceleague.adobe.com/en/docs/campaign-web/v8/conf/external-accounts/external-account-database){target="_blank"}
 
 Campaign Web UI页提供了&#x200B;**外部数据库**&#x200B;提供程序类型的更全面的列表，包括：
 
-* **[Amazon Redshift](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/conf/external-accounts/external-account-database#amazon-redshift){target="_blank"}** / **[Amazon Redshift（旧版）](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/conf/external-accounts/external-account-database#amazon-redshift-legacy){target="_blank"}** — 将Campaign连接到AWS Redshift Cloud Data Warehouse环境。
-* **[Azure Synapse Analytics](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/conf/external-accounts/external-account-database#azure-synapse-analytics){target="_blank"}** — 将Campaign连接到Microsoft Azure Synapse专用SQL池。
-* **[数据库](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/conf/external-accounts/external-account-database#databricks){target="_blank"}** — 将Campaign连接到Databricks SQL和Lakehouse工作负载。
-* **[Google BigQuery](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/conf/external-accounts/external-account-database#google-bigquery){target="_blank"}** — 将Campaign连接到Google Cloud BigQuery分析数据集。
-* **[Microsoft SQL Server](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/conf/external-accounts/external-account-database#microsoft-sql-server){target="_blank"}** — 将Campaign连接到内部部署或托管的SQL Server数据库。
-* **[MySQL](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/conf/external-accounts/external-account-database#mysql){target="_blank"}** — 将Campaign连接到MySQL数据库以进行联合查询和工作流。
-* **[Netezza](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/conf/external-accounts/external-account-database#netezza){target="_blank"}** — 将Campaign连接到IBM Netezza/Performance Server系统。
-* **[ODBC (Sybase ASE， Sybase IQ)](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/conf/external-accounts/external-account-database#odbc-sybase-ase-sybase-iq){target="_blank"}** — 通过ODBC将Campaign连接到Sybase数据库引擎。
-* **[HTTP中继到远程数据库](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/conf/external-accounts/external-account-database#http-relay-to-remote-database){target="_blank"}** — 通过HTTP中继端点连接到远程数据库。
-* **[Oracle](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/conf/external-accounts/external-account-database#oracle){target="_blank"}** — 将Campaign连接到Oracle数据库以进行联合访问用例。
-* **[PostgreSQL](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/conf/external-accounts/external-account-database#postgresql){target="_blank"}** — 使用FDA外部帐户将Campaign连接到PostgreSQL数据库。
-* **[SAP HANA](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/conf/external-accounts/external-account-database#sap-hana){target="_blank"}** — 将Campaign连接到SAP HANA内存数据库环境。
-* **[Snowflake](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/conf/external-accounts/external-account-database#snowflake){target="_blank"}** — 将Campaign连接到Snowflake云数据平台环境。
-* **[Teradata](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/conf/external-accounts/external-account-database#teradata){target="_blank"}** — 将Campaign连接到Teradata企业数据仓库系统。
-* **[Vertica Analytics](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/conf/external-accounts/external-account-database#vertica-analytics){target="_blank"}** — 将Campaign连接到OpenText Vertica分析数据库。
-* **[Microsoft Fabric](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/conf/external-accounts/external-account-database#fabric){target="_blank"}** — 将Campaign连接到Microsoft Fabric SQL和存储服务。
+* **[Amazon Redshift](https://experienceleague.adobe.com/en/docs/campaign-web/v8/conf/external-accounts/external-account-database#amazon-redshift){target="_blank"}** / **[Amazon Redshift（旧版）](https://experienceleague.adobe.com/en/docs/campaign-web/v8/conf/external-accounts/external-account-database#amazon-redshift-legacy){target="_blank"}** — 将Campaign连接到AWS Redshift Cloud Data Warehouse环境。
+* **[Azure Synapse Analytics](https://experienceleague.adobe.com/en/docs/campaign-web/v8/conf/external-accounts/external-account-database#azure-synapse-analytics){target="_blank"}** — 将Campaign连接到Microsoft Azure Synapse专用SQL池。
+* **[数据库](https://experienceleague.adobe.com/en/docs/campaign-web/v8/conf/external-accounts/external-account-database#databricks){target="_blank"}** — 将Campaign连接到Databricks SQL和Lakehouse工作负载。
+* **[Google BigQuery](https://experienceleague.adobe.com/en/docs/campaign-web/v8/conf/external-accounts/external-account-database#google-bigquery){target="_blank"}** — 将Campaign连接到Google Cloud BigQuery分析数据集。
+* **[Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/campaign-web/v8/conf/external-accounts/external-account-database#microsoft-sql-server){target="_blank"}** — 将Campaign连接到内部部署或托管的SQL Server数据库。
+* **[MySQL](https://experienceleague.adobe.com/en/docs/campaign-web/v8/conf/external-accounts/external-account-database#mysql){target="_blank"}** — 将Campaign连接到MySQL数据库以进行联合查询和工作流。
+* **[Netezza](https://experienceleague.adobe.com/en/docs/campaign-web/v8/conf/external-accounts/external-account-database#netezza){target="_blank"}** — 将Campaign连接到IBM Netezza/Performance Server系统。
+* **[ODBC (Sybase ASE， Sybase IQ)](https://experienceleague.adobe.com/en/docs/campaign-web/v8/conf/external-accounts/external-account-database#odbc-sybase-ase-sybase-iq){target="_blank"}** — 通过ODBC将Campaign连接到Sybase数据库引擎。
+* **[HTTP中继到远程数据库](https://experienceleague.adobe.com/en/docs/campaign-web/v8/conf/external-accounts/external-account-database#http-relay-to-remote-database){target="_blank"}** — 通过HTTP中继端点连接到远程数据库。
+* **[Oracle](https://experienceleague.adobe.com/en/docs/campaign-web/v8/conf/external-accounts/external-account-database#oracle){target="_blank"}** — 将Campaign连接到Oracle数据库以进行联合访问用例。
+* **[PostgreSQL](https://experienceleague.adobe.com/en/docs/campaign-web/v8/conf/external-accounts/external-account-database#postgresql){target="_blank"}** — 使用FDA外部帐户将Campaign连接到PostgreSQL数据库。
+* **[SAP HANA](https://experienceleague.adobe.com/en/docs/campaign-web/v8/conf/external-accounts/external-account-database#sap-hana){target="_blank"}** — 将Campaign连接到SAP HANA内存数据库环境。
+* **[Snowflake](https://experienceleague.adobe.com/en/docs/campaign-web/v8/conf/external-accounts/external-account-database#snowflake){target="_blank"}** — 将Campaign连接到Snowflake云数据平台环境。
+* **[Teradata](https://experienceleague.adobe.com/en/docs/campaign-web/v8/conf/external-accounts/external-account-database#teradata){target="_blank"}** — 将Campaign连接到Teradata企业数据仓库系统。
+* **[Vertica Analytics](https://experienceleague.adobe.com/en/docs/campaign-web/v8/conf/external-accounts/external-account-database#vertica-analytics){target="_blank"}** — 将Campaign连接到OpenText Vertica分析数据库。
+* **[Microsoft Fabric](https://experienceleague.adobe.com/en/docs/campaign-web/v8/conf/external-accounts/external-account-database#fabric){target="_blank"}** — 将Campaign连接到Microsoft Fabric SQL和存储服务。
 
-有关旧版客户端控制台详细信息和其他参考，请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}。
+有关旧版客户端控制台详细信息和其他参考，请参阅[Adobe Campaign Classic v7文档](https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/accessing-external-database/external-accounts){target="_blank"}。
 
 #### 数据库外部帐户 {#databricks-external-accounts}
 
@@ -182,7 +182,7 @@ Snowflake FDA连接使用Snowflake ODBC驱动程序。 从Campaign v8.9.1开始�
 
 1. 然后，您可以使用以下代码查询客户端ID和客户端密钥：
 
-   ```
+   ```sql
    select system$show_oauth_client_secrets('OAUTH_INTEGRATION_ABC'); // use uppercase letters
    ```
 
@@ -204,26 +204,26 @@ Snowflake FDA连接使用Snowflake ODBC驱动程序。 从Campaign v8.9.1开始�
 
 ### X（以前称为Twitter） {#twitter-external-account}
 
-**Twitter**&#x200B;类型外部帐户用于将Campaign连接到您的X帐户，以代表您发布消息。 在[本节](../connect/ac-tw.md)中了解有关X集成的更多信息。
+**Twitter**&#x200B;类型外部帐户用于将Campaign连接到您的X帐户，以代表您发布消息。 了解有关[使用Campaign和X (Twitter)](../connect/ac-tw.md)中的X集成的更多信息。
 
 ## Adobe解决方案集成外部帐户 {#adobe-integration-external-accounts}
 
-* **Adobe Experience Cloud** - **[!UICONTROL Adobe Experience Cloud]**&#x200B;外部帐户用于实施Adobe Identity Management服务(IMS)以连接到Adobe Campaign。 在[此部分](../start/connect.md#logon-to-ac)中了解有关Adobe Identity Management服务(IMS)的更多信息。
+* **Adobe Experience Cloud** - **[!UICONTROL Adobe Experience Cloud]**&#x200B;外部帐户用于实施Adobe Identity Management服务(IMS)以连接到Adobe Campaign。 在[登录Adobe Identity Management](../start/connect.md#logon-to-ac)中了解有关Adobe Campaign服务(IMS)的更多信息。
 
-* **网站分析** - **[!UICONTROL Web Analytics (Adobe Analytics)]**&#x200B;外部帐户用于配置从Adobe Analytics到Adobe Campaign的数据传输。 在[此页面](../connect/ac-aa.md)中了解有关Adobe Campaign - Adobe Analytics集成的更多信息。
+* **网站分析** - **[!UICONTROL Web Analytics (Adobe Analytics)]**&#x200B;外部帐户用于配置从Adobe Analytics到Adobe Campaign的数据传输。 详细了解[使用Campaign和Adobe Analytics](../connect/ac-aa.md)中的Adobe Campaign - Adobe Analytics集成。
 
-* **Adobe Experience Manager** - **[!UICONTROL AEM]**&#x200B;外部帐户允许您直接在Adobe Experience Manager中管理电子邮件投放的内容以及表单。 在[此页面](../connect/ac-aem.md)中了解有关Adobe Campaign - Adobe Experience Manager集成的更多信息。
+* **Adobe Experience Manager** - **[!UICONTROL AEM]**&#x200B;外部帐户允许您直接在Adobe Experience Manager中管理电子邮件投放的内容以及表单。 详细了解[使用Campaign和Adobe Experience Manager](../connect/ac-aem.md)中的Adobe Campaign - Adobe Experience Manager集成。
 
 
 ## CRM连接器外部帐户 {#crm-external-accounts}
 
-* **Microsoft Dynamics CRM** - **[!UICONTROL Microsoft Dynamics CRM]**&#x200B;外部帐户允许您将Microsoft Dynamics数据导入和导出到Adobe Campaign。 在[本页](../connect/ac-ms-dyn.md)中了解有关Adobe Campaign - Microsoft Dynamics CRM集成的更多信息。
+* **Microsoft Dynamics CRM** - **[!UICONTROL Microsoft Dynamics CRM]**&#x200B;外部帐户允许您将Microsoft Dynamics数据导入和导出到Adobe Campaign。 详细了解[使用Campaign和Microsoft Dynamics](../connect/ac-ms-dyn.md)中的Microsoft Dynamics - Adobe Campaign CRM集成。
 
-* **Salesforce.com** - **[!UICONTROL Salesforce CRM]**&#x200B;外部帐户允许您将Salesforce数据导入和导出到Adobe Campaign。 在[此页面](../connect/ac-sfdc.md)中了解有关Adobe Campaign - Salesforce.com CRM集成的更多信息。
+* **Salesforce.com** - **[!UICONTROL Salesforce CRM]**&#x200B;外部帐户允许您将Salesforce数据导入和导出到Adobe Campaign。 详细了解Adobe Campaign - Salesforce.com [使用Campaign和SFDC](../connect/ac-sfdc.md)中的CRM集成。
 
 ## 传输数据外部帐户 {#transfer-data-external-accounts}
 
-这些外部帐户可用于通过&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动将数据导入或导出到Adobe Campaign。 在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=zh-Hans){target="_blank"}中了解有关工作流中&#x200B;**文件传输**&#x200B;的更多信息。
+这些外部帐户可用于通过&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动将数据导入或导出到Adobe Campaign。 在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}中了解有关工作流中&#x200B;**文件传输**&#x200B;的更多信息。
 
 * **FTP和SFTP** - **FTP**&#x200B;外部帐户允许您配置和测试对Adobe Campaign外部服务器的访问。 要与外部系统（如用于文件传输的SFTP或FTP服务器）建立连接，您可以创建自己的外部帐户。
 
@@ -231,7 +231,7 @@ Snowflake FDA连接使用Snowflake ODBC驱动程序。 从Campaign v8.9.1开始�
 
   >[!NOTE]
   >
-  >从版本8.5开始，您现在可以在配置SFTP外部帐户时使用私钥安全进行身份验证。 [了解有关密钥管理的更多信息](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html?lang=zh-Hans){target="_blank"}。
+  >从版本8.5开始，您现在可以在配置SFTP外部帐户时使用私钥安全进行身份验证。 [了解有关密钥管理的更多信息](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/key-management.html){target="_blank"}。
 
 * **Amazon Simple Storage Service (S3)** - **AWS S3**&#x200B;连接器可用于通过&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动将数据导入或导出到Adobe Campaign。 在设置此外部帐户时，您需要提供以下详细信息：
 

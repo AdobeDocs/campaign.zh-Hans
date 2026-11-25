@@ -31,9 +31,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: f22ef7562e86372db4c5c05c04acd986d1c557fb
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '822'
 ht-degree: 1%
 ---
 # 使用明细列表 {#enumerations}
@@ -42,7 +42,7 @@ ht-degree: 1%
 
 定义后，值将显示在下拉列表中。 可以直接选择值，也可以使用预测输入输入输入值，这将会建议并完成匹配条目。 某些字段包括预定义枚举，如果需要，可以创建其他枚举。
 
-![](assets/enum_values.png)
+![打开了“语言”下拉列表的收件人表单，列出了英语、法语、意大利语、俄语和西班牙语的枚举值](assets/enum_values.png)
 
 
 ## 枚举类型 {#types-of-enum}
@@ -109,7 +109,7 @@ ht-degree: 1%
 
 1. 选择要清除的值。
 1. 单击&#x200B;**详细信息……**&#x200B;按钮。
-1. Select下拉列表中的新值。
+1. 在下拉列表中选择新值。
 
    ![创建新别名](assets/define-new-alias.png)
 

@@ -195,7 +195,7 @@ Adobe Campaign提供的流程和设置允许您按照适用的数据隐私法律
 
 仅可使用单点登录 (SSO) 连接到 Campaign。 请参阅[连接到Campaign v8](connect.md)以了解详情。
 
-在此页面](../connect/integration.md)中查找可与Adobe [集成的Adobe Campaign解决方案的完整列表。
+在此页面[&#128279;](../connect/integration.md)中查找可与Adobe 集成的Adobe Campaign解决方案的完整列表。
 
 ### 连接器{#implementation-connectors}
 

@@ -49,7 +49,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->投放状态不会实时显示。 在此部分](#email-feedback-service)中了解有关电子邮件反馈服务[的更多信息。
+>投放状态不会实时显示。 在此部分[&#128279;](#email-feedback-service)中了解有关电子邮件反馈服务的更多信息。
 
 ## Campaign MTA {#mta}
 
@@ -77,7 +77,7 @@ MTA鉴定SMTP退回资格，并以映射到Campaign退回原因和资格的退�
 >
 >当前&#x200B;**异步**&#x200B;退回由inMail进程通过&#x200B;**[!UICONTROL Inbound email]**&#x200B;规则进行鉴别。
 
-了解有关Campaign](delivery-failures.md)中[投放失败的详细信息。
+了解有关Campaign[&#128279;](delivery-failures.md)中投放失败的详细信息。
 
 
 ### 特定的MX规则

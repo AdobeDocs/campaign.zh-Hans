@@ -77,7 +77,7 @@ Campaign v8依赖于&#x200B;**混合架构**。 请注意，如果从Campaign Cl
 * 投放状态不会立即更新 — 在营销实例上运行一个技术流程，用于及时更新投放状态。
 
 
-了解有关在从Campaign Classic v7](../send/transactional-template.md#transition-from-v7)过渡的[上从v7过渡时发送事务性消息校样的更多信息。
+了解有关在从Campaign Classic v7[&#128279;](../send/transactional-template.md#transition-from-v7)过渡的上从v7过渡时发送事务性消息校样的更多信息。
 
 
 ## [!DNL Campaign] 和 [!DNL Snowflake] {#ac-gs-snowflake}

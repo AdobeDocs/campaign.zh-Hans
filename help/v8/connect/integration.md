@@ -93,4 +93,4 @@ CRM连接器支持快速轻松地集成数据：Adobe Campaign提供了一个专
 
 了解如何在[使用Campaign和X (Twitter)](../connect/ac-tw.md)中设置并使用X集成。
 
-了解如何使用Adobe Campaign](../send/twitter.md)在X (Twitter)上的[帖子中创建X帖子并向您的关注者发送私信。
+了解如何使用Adobe Campaign[&#128279;](../send/twitter.md)在X (Twitter)上的帖子中创建X帖子并向您的关注者发送私信。

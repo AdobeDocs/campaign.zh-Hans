@@ -87,7 +87,7 @@ Adobe Campaign中的内置收件人表(nmsrecipient)为构建数据模型提供�
 
 了解如何在[扩展Campaign架构](extend-schema.md)中扩展现有架构。
 
-在[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#extending-a-table){target="_blank"}中发现内置收件人表扩展的示例
+在[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=zh-Hans#extending-a-table){target="_blank"}中发现内置收件人表扩展的示例
 
 您还可以使用其他收件人表以更好地满足您的业务或功能要求。 此方法具有限制，在[更改您的默认收件人表](custom-recipient.md)中进行了说明。
 

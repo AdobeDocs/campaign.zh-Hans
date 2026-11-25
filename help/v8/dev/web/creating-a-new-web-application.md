@@ -47,7 +47,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->始终保护可能包含个人信息的页面。 请参阅[安全和隐私检查清单](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy)。
+>始终保护可能包含个人信息的页面。 请参阅[安全和隐私检查清单](https://helpx.adobe.com/cn/campaign/kb/acc-security.html#privacy)。
 
 此模板确定Web应用程序的类型。 您可以创建：
 
@@ -65,7 +65,7 @@ ht-degree: 10%
 
 1. 调查
 
-   Adobe Campaign允许您通过&#x200B;**调查管理器**&#x200B;选项设计和管理在线调查并处理其结果：动态字段创建、得分管理、答案导出和专用报告。 有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"}（Campaign v8文档）。
+   Adobe Campaign允许您通过&#x200B;**调查管理器**&#x200B;选项设计和管理在线调查并处理其结果：动态字段创建、得分管理、答案导出和专用报告。 有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"}（Campaign v8文档）。
 
    >[!CAUTION]
    >
@@ -73,7 +73,7 @@ ht-degree: 10%
 
 1. Facebook应用程序
 
-   借助&#x200B;**社交营销**&#x200B;选项，Adobe Campaign允许您在Facebook应用程序中发布个性化内容。 如需详细信息，请参阅[此小节](https://experienceleague.adobe.com/en/docs/campaign-classic/using/integrating-with-social-media/about-social-marketing){target="_blank"}。
+   借助&#x200B;**社交营销**&#x200B;选项，Adobe Campaign允许您在Facebook应用程序中发布个性化内容。 如需详细信息，请参阅[此小节](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/integrating-with-social-media/about-social-marketing){target="_blank"}。
 
    >[!CAUTION]
    >

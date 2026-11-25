@@ -40,7 +40,7 @@ ht-degree: 1%
 
 它们还必须映射到与它们会影响的工作流执行的操作（收件人导入、文件访问、融合、SQL脚本执行等）一致的已命名权限。
 
-有关管理操作员和权限的详细信息，请参阅Campaign v8](../../v8/start/gs-permissions.md)中的[权限入门。
+有关管理操作员和权限的详细信息，请参阅Campaign v8[&#128279;](../../v8/start/gs-permissions.md)中的权限入门。
 
 ## 操作员组 {#operator-groups-wf}
 

@@ -42,6 +42,6 @@ ht-degree: 2%
 
 您还可以通过&#x200B;**[!UICONTROL Links]**&#x200B;选项卡创建与其他工作表的联接。
 
-使用“链接定义”对话框编辑架构的“链接”选项卡，显示目标架构和连接条件](assets/wf_manipulation_box_link_tab.png)![
+使用“链接定义”对话框编辑架构的“链接”选项卡，显示目标架构和连接条件![&#128279;](assets/wf_manipulation_box_link_tab.png)
 
 下面的部分允许您配置连接条件的列表，即用于协调来自两个表的数据的标准。

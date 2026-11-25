@@ -81,7 +81,7 @@ ht-degree: 1%
 
 1. 添加&#x200B;**[!UICONTROL Wait]**&#x200B;活动，让收件人有几天时间打开电子邮件。
 
-   持续时间字段设置为3d](assets/wkf_cross-channel_4.png)的![等待活动
+   持续时间字段设置为3d![&#128279;](assets/wkf_cross-channel_4.png)的等待活动
 
 ## 步骤3：对生成的受众进行分段 {#step-3--segment-the-resulting-audience}
 

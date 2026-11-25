@@ -44,7 +44,7 @@ ht-degree: 1%
 
 1. 单击 **[!UICONTROL Create]** 按钮。
    ![营销活动选项卡中的营销资源列表，其中突出显示“创建”按钮。](assets/add-a-mkt-resource.png)
-1. 将该文件拖放到“营销资源”窗口中，以将其上传到Campaign服务器。 您还可以使用&#x200B;**[!UICONTROL Upload file to server...]**链接。
+1. 将该文件拖放到“营销资源”窗口中，以将其上传到Campaign服务器。 您还可以使用&#x200B;**[!UICONTROL Upload file to server...]**&#x200B;链接。
    ![具有上载文件到服务器链接的市场营销资源创建窗口以添加文件。](assets/mkt-resource-creation.png)
 
 上传完成后，资源将添加到可用资源列表中。

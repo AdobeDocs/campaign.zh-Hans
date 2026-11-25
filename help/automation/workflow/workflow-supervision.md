@@ -141,7 +141,7 @@ vars.strWorkflowStop = strStop;
 
 可以将“等待”活动配置为定期重新启动监视工作流。 对于此用例，**等待时间设置为1小时**。
 
-持续时间字段设置为1h](assets/uc_monitoring_workflow_attente.png)的![等待活动
+持续时间字段设置为1h![&#128279;](assets/uc_monitoring_workflow_attente.png)的等待活动
 
 ## 步骤4：准备投放 {#step-4--preparing-the-delivery}
 

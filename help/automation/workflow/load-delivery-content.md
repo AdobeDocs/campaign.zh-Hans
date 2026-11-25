@@ -64,7 +64,7 @@ ht-degree: 2%
    delivery.content.html.source=loadFile(vars.filename)
    ```
 
-   使用命令delivery.content.html.source=loadFile(vars.filename)](assets/delivery_loadcontent_script.png)的投放活动的![脚本选项卡
+   使用命令delivery.content.html.source=loadFile(vars.filename)![&#128279;](assets/delivery_loadcontent_script.png)的投放活动的脚本选项卡
 
 1. 保存并执行工作流。 在&#x200B;**[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**&#x200B;下创建了包含已加载内容的新投放。
 

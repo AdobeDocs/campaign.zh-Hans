@@ -88,7 +88,7 @@ ht-degree: 0%
 1. 假设验证计算完成后，转到Adobe Campaign树的&#x200B;**[!UICONTROL Campaign management > Measurement hypotheses]**&#x200B;节点。
 1. Select所需的假设验证，然后单击&#x200B;**[!UICONTROL Reactions]**&#x200B;选项卡以查看营销活动后可能购买产品的收件人列表。
 
-   假设验证的回应选项卡，其中列出了回应者以及每个回应是否属于控制组。](assets/response_hypothesis_reactions_001.png)![
+   假设验证的回应选项卡，其中列出了回应者以及每个回应是否属于控制组。![&#128279;](assets/response_hypothesis_reactions_001.png)
 
 ## 报告 {#reports}
 

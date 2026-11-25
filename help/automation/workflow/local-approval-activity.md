@@ -165,7 +165,7 @@ ht-degree: 1%
 
 利用等待活动，可延迟启动将发送投放反馈通知的第二个本地审批活动。 在&#x200B;**[!UICONTROL Duration]**&#x200B;字段中，我们输入了&#x200B;**[!UICONTROL 5d]**&#x200B;值（5天）。 发送投放后5天内收件人执行的操作将包含在反馈通知中。
 
-持续时间字段设置为5d](assets/local_validation_workflow_3.png)的![等待活动
+持续时间字段设置为5d![&#128279;](assets/local_validation_workflow_3.png)的等待活动
 
 ### 反馈通知 {#feedback-notification}
 

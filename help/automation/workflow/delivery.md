@@ -121,7 +121,7 @@ ht-degree: 1%
 
    **脚本**&#x200B;选项卡允许您修改投放参数。
 
-   使用投放对象修改脚本设置投放标签](assets/edit_diffusion_fil_script.png)的投放活动的![脚本选项卡
+   使用投放对象修改脚本设置投放标签![&#128279;](assets/edit_diffusion_fil_script.png)的投放活动的脚本选项卡
 
 ## 示例：投放工作流 {#example--delivery-workflow}
 

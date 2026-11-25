@@ -31,9 +31,9 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '953'
 ht-degree: 0%
 ---
 # 用例：创建概述页面{#use-cases-creating-overviews}
@@ -93,7 +93,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_configuration_webapp_variable_xml.png)
 
-1. 选择&#x200B;**[!UICONTROL Refresh page]**&#x200B;交互。
+1. Select **[!UICONTROL Refresh page]**&#x200B;交互。
 
    ![](assets/s_ncs_configuration_webapp_variable.png)
 
@@ -148,7 +148,7 @@ ht-degree: 0%
 
 1. 在&#x200B;**[!UICONTROL Additional detail]**&#x200B;选项卡中，添加以下代码：
 
-   ```
+   ```html
    <div class="detailBox">
      <div class="actionBox">
        <span class="action"><img src="/xtk/img/fileEdit.png"/><a title="Open" class="linkAction" href="xtk://open/?schema=nms:webApp&form=nms:webApp&pk=
@@ -194,7 +194,7 @@ ht-degree: 0%
 
    ![](assets/s_ncs_configuration_webapp_container.png)
 
-   有关元素布局的信息，请参阅[此部分](about-web-forms.md)。
+   有关元素布局的信息，请参阅[Web窗体入门](about-web-forms.md)。
 
 1. 应用&#x200B;**dottedFilter**。
 

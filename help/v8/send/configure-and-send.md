@@ -19,14 +19,14 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1250'
 ht-degree: 9%
 ---
 # 配置和发送投放 {#configure-delivery}
 
-访问投放参数以配置更多设置并定义消息发送方式。 您可以定义投放[优先级](#delivery-priority)，设置[波次](#sending-using-multiple-waves)，并测试投放发送。 完成此配置后，您可以按照[此部分](#confirm-delivery)中的说明确认发送。 然后立即发送消息，或根据投放[计划](#schedule-delivery-sending)发送消息。
+访问投放参数以配置更多设置并定义消息发送方式。 您可以定义投放[优先级](#delivery-priority)，设置[波次](#sending-using-multiple-waves)，并测试投放发送。 完成此配置后，您可以按照[确认投放](#confirm-delivery)中所述确认发送。 然后立即发送消息，或根据投放[计划](#schedule-delivery-sending)发送消息。
 
 ## 设置其他参数 {#delivery-additional-parameters}
 
@@ -54,7 +54,7 @@ ht-degree: 9%
 >
 >* 不得在中间源中设置此选项。
 >
->* 请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html?lang=zh-Hans#smtp-relay){target="_blank"}以了解有关SMTP服务器配置的更多信息。
+>* 请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configure-delivery-settings.html#smtp-relay){target="_blank"}以了解有关SMTP服务器配置的更多信息。
 
 ## 使用多批次发送 {#sending-using-multiple-waves}
 
@@ -91,19 +91,19 @@ ht-degree: 9%
 
 ### 波动计划检查 {#check-waves}
 
-特定分类规则&#x200B;**[!UICONTROL Wave scheduling check]**&#x200B;可确保在上一波次的计划早于投放有效期。 在投放属性的&#x200B;**[!UICONTROL Typology]**&#x200B;选项卡中配置的营销活动类型及其规则显示在[此部分](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->中。
+特定分类规则&#x200B;**[!UICONTROL Wave scheduling check]**&#x200B;可确保在上一波次的计划早于投放有效期。 在投放属性的&#x200B;**[!UICONTROL Typology]**&#x200B;选项卡中配置的营销活动类型及其规则显示在[类型规则和类型](../../automation/campaign-opt/campaign-typologies.md#typology-rules)<!--ref TBC-->中。
 
 >[!IMPORTANT]
 >
->* 确保最后一个批次不超过&#x200B;**[!UICONTROL Validity]**&#x200B;选项卡中定义的投放截止日期。 否则，某些消息可能不会发送。 在[本节](delivery-failures.md#valid-period)中了解有关投放有效期的更多信息。
+>* 确保最后一个批次不超过&#x200B;**[!UICONTROL Validity]**&#x200B;选项卡中定义的投放截止日期。 否则，某些消息可能不会发送。 在[有效期](delivery-failures.md#valid-period)内了解有关投放有效期的更多信息。
 >
->* 在配置最后批次时，还必须为重试设置足够的时间。 在[本节](delivery-failures.md#retries)中了解有关重试的详细信息。
+>* 在配置最后批次时，还必须为重试设置足够的时间。 了解有关[重试管理](delivery-failures.md#retries)中重试的详细信息。
 >
 >* 从投放联系日期开始安排批次。 如果在一个或多个批次的计划时间之后开始投放，则这些超期的批次将一起发送，而不是隔开。
 
 ### 监测批次 {#monitor-waves}
 
-要监控您的发送，请浏览到投放日志。 请参阅[此页](send.md)。
+要监控您的发送，请浏览到投放日志。 查看[发送并监视电子邮件](send.md)。
 
 您可以看到已在已处理批次中发送的投放（**[!UICONTROL Sent]**&#x200B;状态）以及将在剩余批次中发送的投放（**[!UICONTROL Pending]**&#x200B;状态）。
 
@@ -143,7 +143,7 @@ ht-degree: 9%
    * 要立即发送投放，请选择&#x200B;**[!UICONTROL Deliver as soon as possible]**。
    * 要安排在以后的日期发送，请选择&#x200B;**[!UICONTROL Postpone the delivery]**。 [了解详情](#schedule-delivery-sending)
 
-1. 单击 **[!UICONTROL Analyze]**。 有关更多信息，请参阅[此小节](delivery-analysis.md)。
+1. 单击 **[!UICONTROL Analyze]**。 有关此内容的详细信息，请参阅[投放分析](delivery-analysis.md)。
 
    ![](assets/delivery-send-analyze.png)
 

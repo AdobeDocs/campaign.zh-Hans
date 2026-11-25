@@ -24,10 +24,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 3%
+source-wordcount: '790'
+ht-degree: 2%
 ---
 # 使用Adobe Campaign在X (Twitter)上发布消息 {#post-tw-messages}
 
@@ -40,7 +40,7 @@ Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X（
 * 通过恢复用户档案数据来收集新联系人，这使您能够执行定向活动，并在可能的情况下实施跨渠道策略。 此操作需要用户同意。
 
 
-[本页](../connect/ac-tw.md)介绍了将X帐户与Adobe Campaign集成的配置步骤。
+[使用Campaign和X (Twitter)](../connect/ac-tw.md)中介绍了将X帐户与Adobe Campaign集成的配置步骤。
 
 ## 创建和发布X帖子 {#publish-on-tw}
 
@@ -52,9 +52,9 @@ Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X（
 
    ![](assets/tw-new-delivery.png)
 
-1. 选择主目标
+1. Select作为主要目标
 
-   选择要向其发送帖子的帐户。
+   Select要将帖子发送到的帐户。
 
    ![](assets/tw-define-target.png)
 
@@ -63,7 +63,7 @@ Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X（
    1. 选择 **[!UICONTROL A Twitter account]**。
    1. 在&#x200B;**[!UICONTROL Folder]**&#x200B;字段中，选择包含X帐户的服务文件夹。 然后，选择要将您的推文发送到的X帐户。
 
-1. 选择验证目标
+1. Select作为验证目标
 
    **[!UICONTROL Target of the proofs]**&#x200B;选项卡允许您定义在最终投放之前用于测试投放的X帐户。
 
@@ -126,7 +126,7 @@ Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X（
 
       * 选择&#x200B;**[!UICONTROL Twitter subscribers]**&#x200B;向所有关注者发送私信。
 
-      * 选择&#x200B;**[!UICONTROL Filter conditions]**&#x200B;以定义查询并查看其结果。 在[本节](../audiences/create-filters.md#advanced-filters)中了解如何创建筛选器。
+      * 选择&#x200B;**[!UICONTROL Filter conditions]**&#x200B;以定义查询并查看其结果。 了解如何在[高级筛选器](../audiences/create-filters.md#advanced-filters)中创建筛选器。
 
 1. 从&#x200B;**[!UICONTROL Target of the proofs]**&#x200B;选项卡中选择验证目标：此帐户将收到您的私信的验证。
 
@@ -141,7 +141,7 @@ Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X（
 
    ![](assets/tw-dm-content.png)
 
-   个性化字段的用法可与电子邮件投放相同，例如，在消息正文中添加关注者的姓名。 可在[此部分](../send/personalize.md)中了解详情。
+   个性化字段的用法可与电子邮件投放相同，例如，在消息正文中添加关注者的姓名。 在[个性化入门](../send/personalize.md)中了解详情。
 
 1. 预览消息
 
@@ -160,13 +160,13 @@ Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X（
 1. 发送私信
 
    1. 内容获得批准后，单击&#x200B;**[!UICONTROL Send]**&#x200B;按钮。
-   1. Select **[!UICONTROL Deliver as soon as possible]**&#x200B;并单击&#x200B;**[!UICONTROL Analyze]**&#x200B;按钮。
+   1. 选择&#x200B;**[!UICONTROL Deliver as soon as possible]**&#x200B;并单击&#x200B;**[!UICONTROL Analyze]**&#x200B;按钮。
    1. 分析完成后，检查结果。
    1. 单击&#x200B;**[!UICONTROL Confirm delivery]**，然后单击&#x200B;**[!UICONTROL Yes]**。
 
 >[!CAUTION]
 >
->您每天发送的私信不能超过250条。 要避免超过此阈值，您可以分批次发送。 有关更多信息，请参阅此[&#128279;](configure-and-send.md#sending-using-multiple-waves)章节。
+>您每天发送的私信不能超过250条。 要避免超过此阈值，您可以分批次发送。 有关更多信息，请参阅此](configure-and-send.md#sending-using-multiple-waves)章节[。
 
 
 ## 访问跟踪数据 {#tw-tracking}

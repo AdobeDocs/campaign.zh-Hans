@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '710'
 ht-degree: 10%
 ---
 # 预览和测试电子邮件 {#preview-test}
@@ -81,7 +81,7 @@ ht-degree: 10%
   >
   >种子地址不属于默认收件人表(nms:recipient)，它们是在单独的表中创建的。 如果使用新数据扩展收件人表，则还必须使用相同数据扩展种子地址表。
 
-  在[本节](../audiences/test-profiles.md)中了解有关种子地址的更多信息。
+  在[在Campaign](../audiences/test-profiles.md)中创建测试用户档案中了解有关种子地址的更多信息。
 
 * 使用&#x200B;**[!UICONTROL Specific target and Seed addresses]**&#x200B;选项将种子地址和特定的电子邮件地址组合在一起。 随后，将在两个单独的子选项卡中定义相关配置。
 
@@ -122,4 +122,4 @@ ht-degree: 10%
 
 了解如何为电子邮件投放发送并验证校样。
 
->[!VIDEO](https://video.tv.adobe.com/v/3447009?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/333404)

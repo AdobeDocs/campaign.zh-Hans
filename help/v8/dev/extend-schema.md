@@ -36,9 +36,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '268'
 ht-degree: 2%
 ---
 # 扩展模式{#extend-schemas}
@@ -54,7 +54,7 @@ ht-degree: 2%
 >[!CAUTION]
 >不得直接修改内置架构。 如果您需要调整内置模式，则必须对其进行扩展。
 
-要更好地了解Campaign内置表及其交互，请参阅[此页面](datamodel.md)。 在[此页面](create-schema.md)中创建新架构时，另请参阅建议。
+要更好地了解Campaign内置表及其交互，请参阅[开始使用Campaign数据模型](datamodel.md)。 在[在Campaign](create-schema.md)中创建新架构时，另请参阅建议。
 
 要扩展架构，请执行以下步骤：
 
@@ -79,7 +79,7 @@ ht-degree: 2%
 
    ![](assets/extend-schema-sample.png)
 
-   ```
+   ```xml
    <srcSchema created="YYYY-MM-DD" desc="Recipient table" extendedSchema="nms:recipient"
            img="nms:recipient.png" label="Recipients" labelSingular="Recipient" lastModified="YYYY-MM-DD"
            mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:srcSchema">

@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '838'
 ht-degree: 2%
 ---
 # 发送和监控电子邮件  {#send-and-monitor-emails}
@@ -49,7 +49,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->投放状态不会实时显示。 在此部分[&#128279;](#email-feedback-service)中了解有关电子邮件反馈服务的更多信息。
+>投放状态不会实时显示。 在此部分](#email-feedback-service)中了解有关电子邮件反馈服务[的更多信息。
 
 ## Campaign MTA {#mta}
 
@@ -77,7 +77,7 @@ MTA鉴定SMTP退回资格，并以映射到Campaign退回原因和资格的退�
 >
 >当前&#x200B;**异步**&#x200B;退回由inMail进程通过&#x200B;**[!UICONTROL Inbound email]**&#x200B;规则进行鉴别。
 
-在[本节](delivery-failures.md)中了解有关投放失败的更多信息。
+了解有关Campaign](delivery-failures.md)中[投放失败的详细信息。
 
 
 ### 特定的MX规则
@@ -92,7 +92,7 @@ Domain Keys Identified Mail (DKIM)是一种用于检测伪造发件人地址（�
 
 在Adobe Campaign中，DKIM电子邮件身份验证签名由MTA执行。
 
-在[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#authentication){target="_blank"}中了解有关DKIM的更多信息。
+在[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication){target="_blank"}中了解有关DKIM的更多信息。
 
 ## 电子邮件反馈服务 {#email-feedback-service}
 
@@ -112,9 +112,9 @@ Campaign电子邮件反馈服务(EFS)报告与Adobe Campaign一起发送的每�
 
 >[!NOTE]
 >
->有关硬退信和软退信的详细信息，请参阅[此部分](delivery-failures.md#delivery-failure-reasons)。
+>有关硬退信和软退信的详细信息，请参阅[为什么邮件传递失败](delivery-failures.md#delivery-failure-reasons)。
 >
->有关投放临时失败后重试的详细信息，请参阅[此部分](delivery-failures.md#retries)。
+>有关投放临时失败后重试的详细信息，请参阅[重试管理](delivery-failures.md#retries)。
 
 下表显示在发送过程的每个步骤如何更新KPI和发送日志状态。
 

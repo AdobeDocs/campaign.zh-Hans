@@ -47,9 +47,9 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: f89b58e9c7a87b6526dbbf491db67109418f2006
 workflow-type: tm+mt
-source-wordcount: '1949'
+source-wordcount: '1963'
 ht-degree: 1%
 ---
 # 使用数据包{#data-packages}
@@ -142,7 +142,7 @@ XML文档必须以`<package>`元素开始和结束。 后续的任何`<entities>
 
    >[!NOTE]
    >
-   >查询编辑器出现在[此部分](../../automation/workflow/query.md)中。
+   >查询编辑器出现在[创建查询](../../automation/workflow/query.md#creating-a-query)中。
 
 1. 单击&#x200B;**[!UICONTROL Next]**&#x200B;并选择导出数据的排序顺序。
 
@@ -159,7 +159,7 @@ XML文档必须以`<package>`元素开始和结束。 后续的任何`<entities>
 
 >[!NOTE]
 >
->在[此页面](database-links.md)中定义了链接到架构元素的完整性类型。
+>在Campaign架构](database-links.md)的[链接管理中定义了链接到架构元素的完整性类型。
 
 #### 导出营销活动 {#export-a-campaign}
 
@@ -253,7 +253,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 ### 将实体添加到包定义 {#add-entities-to-a-package-definition}
 
-在&#x200B;**[!UICONTROL Content]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以选择要与包一起导出的实体。 [此部分](#export-a-set-of-objects-in-a-package)中介绍了选择实体时的最佳实践。
+在&#x200B;**[!UICONTROL Content]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以选择要与包一起导出的实体。 [导出包中的一组对象](#export-a-set-of-objects-in-a-package)中介绍了选择实体时的最佳实践。
 
 ![](assets/packagedefinition_addentities.png)
 
@@ -261,9 +261,9 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 1. 右键单击所需的实体，然后选择&#x200B;**[!UICONTROL Actions > Export in a package]**。
 
-1. Select **[!UICONTROL Add to a package definition]**，然后选择要向其中添加实体的包定义。
+1. 选择&#x200B;**[!UICONTROL Add to a package definition]**，然后选择要向其中添加实体的包定义。
 
-1. 实体已添加到包定义并将随包一起导出（请参阅[此部分](#export-packages-from-a-package-definition)）。
+1. 实体已添加到包定义并将随包一起导出（请参阅[从包定义导出包](#export-packages-from-a-package-definition)）。
 
 ### 配置包定义生成 {#configure-package-definitions-generation}
 

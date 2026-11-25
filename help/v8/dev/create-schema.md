@@ -34,10 +34,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 2%
+source-wordcount: '412'
+ht-degree: 0%
 ---
 # 创建新架构 {#create-new-schema}
 
@@ -140,4 +140,4 @@ ht-degree: 2%
 
    ![](assets/configuration_structure.png)
 
-1. 更新数据库结构以创建将链接架构的表。 如需详细信息，请参阅[此小节](update-database-structure.md)。
+1. 更新数据库结构以创建将链接架构的表。 有关详细信息，请参阅[更新数据库结构](update-database-structure.md)。

@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '603'
 ht-degree: 8%
 ---
 # 设计和发送电子邮件
@@ -42,7 +42,7 @@ ht-degree: 8%
 >若要创建引人入胜的单独定制电子邮件，请浏览至[Web用户界面](../start/campaign-ui.md#ac-web-ui)。 Adobe Campaign附带电子邮件Designer，它是一个直观的拖放界面，允许您设计和优化每封电子邮件的所有内容。
 
 
-了解在[此页面](../start/create-message.md)中创建和配置投放的关键步骤。
+了解在[创建您的第一个投放](../start/create-message.md)中创建和配置投放的关键步骤。
 
 ## 创建电子邮件投放
 
@@ -87,7 +87,7 @@ ht-degree: 8%
 
      ![](assets/perso-check.png)
 
-     在[本节](personalize.md)中了解有关个性化选项的更多信息。
+     在[开始使用个性化](personalize.md)中了解有关个性化选项的更多信息。
 
    * 插入跟踪链接
 
@@ -103,15 +103,15 @@ ht-degree: 8%
 
      将光标放在要插入此链接的位置，单击工具栏中的最后一个图标，然后单击&#x200B;**[!UICONTROL Include]**&#x200B;并选择&#x200B;**[!UICONTROL link to mirror page]**。
 
-     在[本节](mirror-page.md#link-to-mirror-page)中了解有关管理镜像页面的更多信息。
+     在[添加指向镜像页面的链接](mirror-page.md#link-to-mirror-page)中了解有关管理镜像页面的更多信息。
 
-1. 您可以为电子邮件定义其他参数，如将邮件副本发送到密件抄送地址、更改邮件格式、设置特定编码等。在[本节](email-parameters.md)中了解详情。
+1. 您可以为电子邮件定义其他参数，如将邮件副本发送到密件抄送地址、更改邮件格式、设置特定编码等。在Adobe Campaign](email-parameters.md)的[电子邮件参数中了解详情。
 
 1. 内容准备就绪后，单击&#x200B;**保存**：该内容现在将显示在&#x200B;**[!UICONTROL Campaigns > Deliveries]**&#x200B;选项卡的投放列表中。
 
 您的第一个电子邮件投放已准备就绪。 您现在需要定义受众、验证投放并发送它。
 
-在此[用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=zh-Hans){target="_blank"}中了解如何创建工作流以导入电子邮件内容。
+在此[用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}中了解如何创建工作流以导入电子邮件内容。
 
 >[!MORELIKETHIS]
 >
@@ -120,11 +120,11 @@ ht-degree: 8%
 >* [选择电子邮件的受众](../audiences/gs-audiences.md)
 >* [验证投放并发送校样](preview-and-proof.md)
 >* [配置并发送投放](configure-and-send.md)
->* [投放最佳实践](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hans){target="_blank"}
+>* [投放最佳实践](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}
 
 ## 测试和验证电子邮件
 
-Campaign提供了多种方法，可在将电子邮件发送给受众之前测试和验证电子邮件。 在[本节](../send/preview-and-proof.md)中了解如何预览和测试您的电子邮件内容。
+Campaign提供了多种方法，可在将电子邮件发送给受众之前测试和验证电子邮件。 了解如何在[预览和测试电子邮件](../send/preview-and-proof.md)中预览和测试电子邮件内容。
 
 您可以：
 

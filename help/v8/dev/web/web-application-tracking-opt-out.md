@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '711'
 ht-degree: 2%
 ---
 # 选择退出 Web 应用程序跟踪{#web-application-tracking-opt-out}
@@ -47,13 +47,13 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->当脚本编写始终遵循[安全和隐私核对清单](https://helpx.adobe.com/cn/campaign/kb/acc-security.html#dev)中所述的准则时。
+>当脚本编写始终遵循[安全和隐私核对清单](https://helpx.adobe.com/campaign/kb/acc-security.html#dev)中所述的准则时。
 
 ## 配置横幅 {#configuring-the-banner-}
 
 要在Web应用程序或登陆页面中显示，需要配置横幅。
 
-Adobe Campaign附带一个横幅示例，您必须根据自己的需求进行调整。 此横幅版本在内容模型文件夹中显示为个性化块。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hans){target="_blank"}。
+Adobe Campaign附带一个横幅示例，您必须根据自己的需求进行调整。 此横幅版本在内容模型文件夹中显示为个性化块。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
 
 >[!IMPORTANT]
 >
@@ -78,7 +78,7 @@ Adobe Campaign附带一个横幅示例，您必须根据自己的需求进行调
 
 默认横幅具有以下结构：
 
-```
+```xml
 <div onClick="NL.ClientWebTracking.closeOptOutBanner(this);" id="defaultOptOutBanner">
   <p>Please insert your message here
    <a onClick="NL.ClientWebTracking.allow();" class="optout-accept">Accept</a>
@@ -90,7 +90,7 @@ Adobe Campaign附带一个横幅示例，您必须根据自己的需求进行调
 
 必须将&#x200B;**请在此插入消息**&#x200B;替换为包含跟踪信息的块。 此替换应在与选择退出横幅相关的新个性化块中执行。
 
-横幅使用特定的CSS交付。 但是，您可以在创建和配置网页时覆盖样式。 请参见[此页面](content-editor-interface.md)。
+横幅使用特定的CSS交付。 但是，您可以在创建和配置网页时覆盖样式。 请参阅[内容编辑器界面](content-editor-interface.md)。
 
 ## 使用API设置选择退出Cookie {#setting-the-opt-out-cookie-using-api}
 
@@ -137,7 +137,7 @@ Cookie名称为&#x200B;**acoptout**。 通用值包括：
 
 JSSP示例：
 
-```
+```html
 <%@ page import="/nl/core/shared/nl.js" %>
 <!doctype html>
 <%

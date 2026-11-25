@@ -24,16 +24,16 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '639'
 ht-degree: 17%
 ---
 # 使用个性化块{#personalization-blocks}
 
 个性化块是动态内容，其中包含您可以插入到投放中的特定渲染。 例如，您可以添加徽标、问候语消息或指向镜像页面的链接。
 
-要访问个性化的内容块，请浏览到资源管理器的&#x200B;**[!UICONTROL Resources > Campaign Management > Personalization blocks]**&#x200B;节点。 [此部分](#ootb-personalization-blocks)中列出了内置个性化块。
+要访问个性化的内容块，请浏览到资源管理器的&#x200B;**[!UICONTROL Resources > Campaign Management > Personalization blocks]**&#x200B;节点。 内置个性化块在[内置个性化块](#ootb-personalization-blocks)中列出。
 
 您还可以定义新块以优化投放个性化。 [了解详情](#create-custom-personalization-blocks)。
 
@@ -89,7 +89,7 @@ ht-degree: 17%
    ![](assets/perso-custom-block.png)
 
    * 输入块的标签。 此标签显示在个性化字段插入窗口中。
-   * 选择&#x200B;**投放**&#x200B;内容类型。
+   * Select a **投放**&#x200B;内容类型。
    * 启用&#x200B;**[!UICONTROL Visible in the customization menus]**&#x200B;选项，以便通过个性化字段插入图标访问此块。
    * 如有必要，请启用&#x200B;**[!UICONTROL The content of the personalization block depends upon the format]**&#x200B;选项，为HTML和文本电子邮件定义两个不同的块。
    * 输入内容（在HTML、文本、JavaScript等） 个性化块的，然后单击&#x200B;**[!UICONTROL Save]**。
@@ -100,4 +100,4 @@ ht-degree: 17%
 
 请在以下视频中了解如何创建动态内容块以及如何使用动态内容块将电子邮件投放内容个性化。
 
->[!VIDEO](https://video.tv.adobe.com/v/3449016?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/342088?quality=12)

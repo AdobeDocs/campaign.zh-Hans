@@ -35,10 +35,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 5%
+source-wordcount: '562'
+ht-degree: 4%
 ---
 # 投放状态 {#delivery-statuses}
 
@@ -108,7 +108,7 @@ ht-degree: 5%
  </tbody> 
 </table>
 
-要了解如何优化Adobe Campaign电子邮件的可投放性，请参阅[此部分](about-deliverability.md)。 有关投放能力的更深入探讨，请参阅[Adobe投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)。
+要了解如何优化Adobe Campaign电子邮件的可投放性，请参阅[Campaign中的可投放性入门](about-deliverability.md)。 有关投放能力的更深入探讨，请参阅[Adobe投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)。
 
 ## 待处理状态 {#pending-status}
 
@@ -122,7 +122,7 @@ ht-degree: 5%
 
   在&#x200B;**[!UICONTROL NmsOperation_LimitConcurrency]**&#x200B;选项中定义了同时营销活动的限制。 默认值为 10。
 
-  作为托管Cloud Services用户，您可以根据需要使用Adobe调整此限制。 请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=zh-Hans){target="_blank"}以了解有关选项的更多信息。
+  作为托管Cloud Services用户，您可以根据需要使用Adobe调整此限制。 请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html){target="_blank"}以了解有关选项的更多信息。
 
 * **资源可用性问题**
 

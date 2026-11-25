@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1283'
 ht-degree: 1%
 ---
 # 发布 Web 窗体{#publishing-a-web-form}
@@ -155,13 +155,13 @@ ht-degree: 1%
 
 * 单击&#x200B;**[!UICONTROL Personalize the message displayed if the form is closed...]**&#x200B;链接以定义当用户尝试在表单无效时访问表单时显示的错误消息。
 
-  查看表单[&#128279;](defining-web-forms-properties.md#accessibility-of-the-form)的辅助功能。
+  查看表单](defining-web-forms-properties.md#accessibility-of-the-form)的[辅助功能。
 
 ### 通过电子邮件投放表单 {#delivering-a-form-via-email}
 
 当您通过电子邮件发送邀请时，可以使用&#x200B;**[!UICONTROL Adobe Campaign Encryption]**&#x200B;选项进行数据协调。 为此，请转到投放助手，并通过添加以下参数将链接调整为表单：
 
-```
+```xml
 <a href="https://server/webApp/APP264?&id=<%=escapeUrl(recipient.cryptedId) %>">
 ```
 
@@ -191,7 +191,7 @@ ht-degree: 1%
 
 将包含Web表单的包从实例导出和导入另一个实例（例如，从暂存到生产）时，新实例上的Web表单状态可能会因几种情况而异。 下面列出了不同的情况。
 
-在[本节](#life-cycle-of-a-form)中了解有关Web窗体不同状态的更多信息。
+了解关于表单[生命周期](#life-cycle-of-a-form)中Web表单的不同状态的更多信息。
 
 >[!NOTE]
 >
@@ -209,7 +209,7 @@ ht-degree: 1%
 
   * 如果在导入包的实例上新增Web窗体，则Web窗体将获得&#x200B;**[!UICONTROL Being edited]**&#x200B;状态。
 
-  * 如果新实例上已存在该Web表单，则这是对现有表单的修改。 如果表单的旧版本为&#x200B;**[!UICONTROL Online]**，则旧版本将保持联机状态，直到表单的新版本在新实例上再次发布为[&#128279;](#publishing-a-form)。
+  * 如果新实例上已存在该Web表单，则这是对现有表单的修改。 如果表单的旧版本为&#x200B;**[!UICONTROL Online]**，则旧版本将保持联机状态，直到表单的新版本在新实例上再次发布为[](#publishing-a-form)。
 
   >[!NOTE]
   >

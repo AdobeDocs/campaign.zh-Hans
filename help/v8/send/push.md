@@ -33,9 +33,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '979'
 ht-degree: 7%
 ---
 # 创建和发送推送通知{#push-notifications-create}
@@ -158,7 +158,7 @@ ht-degree: 7%
 
 要在Android设备上发送通知，请执行以下步骤：
 
-1. Select **[!UICONTROL Deliver on Android (android)]**&#x200B;投放模板。
+1. 选择&#x200B;**[!UICONTROL Deliver on Android (android)]**&#x200B;投放模板。
 
    ![](assets/push-template-android.png)
 
@@ -171,7 +171,7 @@ ht-degree: 7%
 
    ![](assets/push-android-select-target.png)
 
-1. 在Select **[!UICONTROL Subscribers of an Android mobile application]**&#x200B;中，选择与您的移动应用程序相关的服务（在本例中为Neotrips），然后选择应用程序的Android版本。
+1. 选择&#x200B;**[!UICONTROL Subscribers of an Android mobile application]**，选择与您的移动应用程序相关的服务（在本例中为Neotrips），然后选择应用程序的Android版本。
 
    ![](assets/push-android-subscribers.png)
 
@@ -194,9 +194,9 @@ ht-degree: 7%
 
 要发送验证并发送最终投放，请按照与其他投放相同的流程操作。
 
-了解如何在[此页面](preview-and-proof.md)中验证投放。
+了解如何在[预览和测试电子邮件](preview-and-proof.md)中验证投放。
 
-了解如何在[此页面](send.md)中确认并发送投放
+了解如何在[发送和监视您的电子邮件](send.md)中确认和发送投放
 
-发送消息后，您可以监控和跟踪投放。 在[此页面](delivery-failures.md#push-error-types)中了解有关推送通知投放失败原因的更多信息。
+发送消息后，您可以监控和跟踪投放。 在[推送通知错误类型](delivery-failures.md#push-error-types)中了解有关推送通知投放失败原因的更多信息。
 

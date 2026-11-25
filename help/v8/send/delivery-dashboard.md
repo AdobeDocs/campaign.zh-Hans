@@ -33,9 +33,9 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1171'
 ht-degree: 3%
 ---
 # 在Campaign UI中监控投放 {#delivery-dashboard}
@@ -90,7 +90,7 @@ ht-degree: 3%
 
 可从&#x200B;**[!UICONTROL Summary]**&#x200B;选项卡访问的&#x200B;**[!UICONTROL Reports]**&#x200B;链接允许您查看与投放操作相关的一组报告：常规投放报告、详细报告、投放报告、失败消息的分发、打开率、点击数和交易数等。
 
-可以根据您的要求配置此选项卡的内容。 有关投放报告的详细信息，请参阅[此章节](../reporting/delivery-reports.md)。
+可以根据您的要求配置此选项卡的内容。 有关投放报告的详细信息，请参阅[Adobe Campaign内置投放报告](../reporting/delivery-reports.md)。
 
 ![](assets/delivery-report.png)
 
@@ -102,7 +102,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->显示投放日志的列表可与Campaign中的任何列表一样进行自定义。 例如，您可以添加一列来了解在投放中发送了每封电子邮件的IP地址。 有关配置列表显示的详细信息，请参阅[此章节](../config/ui-settings.md#customize-lists)。
+>显示投放日志的列表可与Campaign中的任何列表一样进行自定义。 例如，您可以添加一列来了解在投放中发送了每封电子邮件的IP地址。 有关配置列表显示的详细信息，请参阅[管理和自定义列表](../config/ui-settings.md#customize-lists)。
 
 ![](assets/s_ncs_user_delivery_delivery_tab.png)
 
@@ -122,7 +122,7 @@ ht-degree: 3%
 
 跟踪配置在投放助理的相应阶段执行。 请参阅[如何配置跟踪的链接](tracking.md)。
 
-**[!UICONTROL Tracking]**&#x200B;数据在投放报告中被解释。 请参阅[此小节](../reporting/delivery-reports.md)。
+**[!UICONTROL Tracking]**&#x200B;数据在投放报告中被解释。 查看[Adobe Campaign内置投放报告](../reporting/delivery-reports.md)。
 
 ![](assets/s_ncs_user_delivery_tracking_tab.png)
 
@@ -132,7 +132,7 @@ ht-degree: 3%
 
 这样，您就可以确保以最佳方式在各种Web客户端、Web邮件和设备上向收件人显示您的消息。
 
-有关收件箱渲染的详细信息，请参阅[此页面](inbox-rendering.md)
+有关收件箱渲染的更多信息，请参阅Campaign](inbox-rendering.md)中的[收件箱渲染
 
 
 ## 投放审核 {#delivery-audit-}
@@ -147,7 +147,7 @@ ht-degree: 3%
 
 ![](assets/s_ncs_user_delivery_log_tab.png)
 
-通过选择要显示的列，您可以修改此窗口中显示的信息（以及&#x200B;**[!UICONTROL Delivery]**&#x200B;和&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡的信息）。 为此，请单击位于右下角的&#x200B;**[!UICONTROL Configure list]**&#x200B;图标。 有关配置列表显示的详细信息，请参阅[此章节](../config/ui-settings.md#customize-lists)。
+通过选择要显示的列，您可以修改此窗口中显示的信息（以及&#x200B;**[!UICONTROL Delivery]**&#x200B;和&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡的信息）。 为此，请单击位于右下角的&#x200B;**[!UICONTROL Configure list]**&#x200B;图标。 有关配置列表显示的详细信息，请参阅[管理和自定义列表](../config/ui-settings.md#customize-lists)。
 
 ## 投放仪表板同步 {#delivery-dashboard-synchronization}
 
@@ -159,7 +159,7 @@ ht-degree: 3%
 
 * 如果投放计数器与您的投放不匹配，请尝试重新计算指示器，方法是在Adobe Campaign资源管理器中右键单击相关投放，然后选择&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**&#x200B;以重新同步。 有关跟踪指示器的详细信息，请参阅此[部分](../reporting/delivery-reports.md#tracking-indicators)。
 
-您还可以通过投放仪表板使用不同的报告跟踪您的投放。 有关更多信息，请参阅此[&#128279;](../reporting/delivery-reports.md)章节。
+您还可以通过投放仪表板使用不同的报告跟踪您的投放。 有关更多信息，请参阅此](../reporting/delivery-reports.md)章节[。
 
 >[!NOTE]
 >

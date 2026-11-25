@@ -35,10 +35,10 @@ topic_v2:
     internal-label: Email marketing
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 20%
+source-wordcount: '350'
+ht-degree: 18%
 ---
 # 将您的CRM连接到Campaign {#gs-crm}
 
@@ -69,8 +69,8 @@ Campaign [兼容性矩阵](../start/compatibility-matrix.md)中详细介绍了�
 
 ## 实施步骤 {#crm-implementation-steps}
 
-在[此页面](ac-ms-dyn.md)中了解连接Campaign和Microsoft Dynamics的分步过程。
+了解在[使用Campaign和Microsoft Dynamics](ac-ms-dyn.md)中连接Campaign和Microsoft Dynamics的分步过程。
 
-在[此页面](ac-sfdc.md)中了解连接Campaign和Salesforce.com的分步过程。
+了解在[使用Campaign和SFDC](ac-sfdc.md)中连接Campaign和Salesforce.com的分步过程。
 
-Adobe Campaign和CRM之间的数据同步通过专用工作流活动执行。 构建您的工作流以自动执行Campaign与CRM之间的同步。 您可以创建一个工作流，以通过Microsoft Dynamics导入联系人，将其与现有Adobe Campaign数据同步，删除重复的联系人，然后更新Adobe Campaign数据库。 请参阅[此页面](crm-data-sync.md)以了解详情。
+Adobe Campaign和CRM之间的数据同步通过专用工作流活动执行。 构建您的工作流以自动执行Campaign与CRM之间的同步。 您可以创建一个工作流，以通过Microsoft Dynamics导入联系人，将其与现有Adobe Campaign数据同步，删除重复的联系人，然后更新Adobe Campaign数据库。 在[CRM Connectors数据同步](crm-data-sync.md)中了解详情。

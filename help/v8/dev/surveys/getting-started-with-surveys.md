@@ -21,9 +21,9 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '946'
 ht-degree: 1%
 ---
 # 创建调查的关键步骤{#getting-started-with-surveys}
@@ -125,7 +125,7 @@ ht-degree: 1%
 
   >[!NOTE]
   >
-  >对于每个字段或问题，您可以根据&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中的选项调整页面布局以满足您的需求。 调查屏幕的布局在[此部分](../web/about-web-forms.md)中有详细说明。
+  >对于每个字段或问题，您可以根据&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中的选项调整页面布局以满足您的需求。 [Web窗体入门](../web/about-web-forms.md)中详细介绍了调查屏幕的布局。
 
   在详细信息屏幕中，单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡以查看刚刚创建的调查结果的呈现。
 

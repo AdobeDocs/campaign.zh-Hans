@@ -26,9 +26,9 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6db6c9152f6060b40596bd65a2ce705f916401be
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '800'
 ht-degree: 2%
 ---
 # 创建登陆页面{#creating-a-landing-page}
@@ -37,7 +37,7 @@ ht-degree: 2%
 >
 >对于大多数常见用例，请在Campaign Web用户界面中创建登陆页面，您可以在其中轻松设计和发布这些页面。 如本节所述，在客户端控制台中创建的登陆页面提供了更多设置，并涵盖了更高级的用例。
 >
->[在Campaign Web用户界面中了解有关登陆页面的更多信息](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
+>[在Campaign Web用户界面中了解有关登陆页面的更多信息](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
 
 
 
@@ -54,7 +54,7 @@ ht-degree: 2%
 要创建新的登陆页类型Web应用程序，请执行以下步骤：
 
 1. 转到&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡并单击&#x200B;**[!UICONTROL Web application]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Create]**&#x200B;按钮。
-1. 选择&#x200B;**[!UICONTROL New landing page]**&#x200B;模板并输入标签，然后单击&#x200B;**[!UICONTROL Save]**。
+1. Select **[!UICONTROL New landing page]**&#x200B;模板并输入标签，然后单击&#x200B;**[!UICONTROL Save]**。
 
    ![](assets/dce_uc1_newlandingpage.png)
 
@@ -73,7 +73,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->有关创建Web应用程序的详细信息，请参阅[此部分](creating-a-new-web-application.md)。
+>有关创建Web应用程序的详细信息，请参阅[创建新的Web应用程序](creating-a-new-web-application.md)。
 
 ## 第1步 — 选择和加载模板 {#step-1---selecting-and-loading-templates}
 

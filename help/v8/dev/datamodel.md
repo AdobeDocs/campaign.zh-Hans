@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '754'
 ht-degree: 5%
 ---
 # 开始使用 Campaign 数据模型 {#gs-ac-datamodel}
@@ -45,7 +45,7 @@ Adobe Campaign 提供了预定义的数据模型。 本节提供了有关Adobe C
 
 Adobe Campaign数据模型的基本结构可描述如下：
 
-* **收件人表**：数据模型依赖于主表，该主表默认为收件人表(**nmsRecipient**)。 此表存储了所有营销用户档案。 在[本节](#ootb-profiles)中了解有关收件人表的更多信息。
+* **收件人表**：数据模型依赖于主表，该主表默认为收件人表(**nmsRecipient**)。 此表存储了所有营销用户档案。 在[内置配置文件表](#ootb-profiles)中了解有关收件人表的详细信息。
 
 * **投放表**：此表为每个投放操作存储一个记录。 通常为投放表(**NmsDelivery**)。 此表中的记录表示投放操作或投放模板。 它包含执行投放所需的所有参数，如目标、内容等。每个记录都会更新多次，以反映投放进度。
 
@@ -65,12 +65,12 @@ Adobe Campaign数据模型的基本结构可描述如下：
 
 开始使用Adobe Campaign时，您需要评估默认数据模型，以检查哪个表最适合存储营销数据。
 
-您可以将默认收件人表与现成字段一起使用，如[此部分](#ootb-profiles)中所述。 如果需要，您可以使用两种机制来扩展它：
+您可以将默认收件人表与现成字段一起使用，如[内置配置文件表](#ootb-profiles)中所述。 如果需要，您可以使用两种机制来扩展它：
 
 * [使用新字段扩展现有表](extend-schema.md)。 例如，您可以向收件人表添加新的“忠诚度”字段。
 * [创建一个新表](create-schema.md)，例如“Purchase”表，该表列出数据库的每个用户档案进行的所有购买，并将其链接到收件人表。
 
-在[此部分](datamodel-best-practices.md)中探索使用Campaign数据模型的最佳实践。
+在[数据模型最佳实践](datamodel-best-practices.md)中探索使用Campaign数据模型的最佳实践。
 
 ## 内置配置文件表 {#ootb-profiles}
 
@@ -85,19 +85,19 @@ Adobe Campaign中的内置收件人表(nmsrecipient)为构建数据模型提供�
 
 可以扩展收件人表，但不能减少表中的字段或链接数。
 
-在[本节](extend-schema.md)中了解如何扩展现有架构。
+了解如何在[扩展Campaign架构](extend-schema.md)中扩展现有架构。
 
-在[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html?lang=zh-Hans#extending-a-table){target="_blank"}中发现内置收件人表扩展的示例
+在[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/examples-of-schemas-edition.html#extending-a-table){target="_blank"}中发现内置收件人表扩展的示例
 
-您还可以使用其他收件人表以更好地满足您的业务或功能要求。 此方法具有限制，在[此部分](custom-recipient.md)中有说明。
+您还可以使用其他收件人表以更好地满足您的业务或功能要求。 此方法具有限制，在[更改您的默认收件人表](custom-recipient.md)中进行了说明。
 
 ## Campaign表和云数据库
 
 为了更好地了解Campaign v8中的表管理，请注意，在[企业(FFDA)部署](../architecture/enterprise-deployment.md)的上下文中，表在Campaign和其Snowflake云数据库之间复制。
 
-在[本节](../architecture/replication.md)中了解有关复制策略和机制的更多信息。
+了解有关[数据复制](../architecture/replication.md)中的复制策略和机制的更多信息。
 
 **相关主题**
 
-了解如何在[中导入用户档案](../start/import.md)
-在[本节](../start/audiences.md)中了解有关Campaign受众的更多信息
+了解如何在[中导入用户档案开始使用用户档案](../start/import.md)
+在[中了解有关Campaign受众的更多信息](../start/audiences.md)在Campaign中处理受众

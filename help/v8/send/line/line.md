@@ -33,16 +33,16 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1198'
-ht-degree: 4%
+source-wordcount: '1201'
+ht-degree: 3%
 ---
 # 创建LINE投放
 
 LINE 是一款免费即时消息、语音和视频通话应用程序，可在所有移动设备和 PC 上使用。 您可以使用Adobe Campaign发送LINE消息。
 
-[!DNL LINE]还可以与事务性消息模块结合使用，以在消费者移动设备上安装的[!DNL LINE]应用程序上发送实时消息。 有关详细信息，请参阅Campaign Classic v7文档中的此[页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line)。
+[!DNL LINE]还可以与事务性消息模块结合使用，以在消费者移动设备上安装的[!DNL LINE]应用程序上发送实时消息。 有关详细信息，请参阅Campaign Classic v7文档中的此[页面](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/configure-transactional-messaging/transactional-messaging-architecture#transactional-messaging-and-line)。
 
 ![](assets/line_message.png)
 
@@ -73,7 +73,7 @@ LINE 是一款免费即时消息、语音和视频通话应用程序，可在所
 
 1. 将&#x200B;**[!UICONTROL Label]**&#x200B;和&#x200B;**[!UICONTROL Internal name]**&#x200B;添加到新服务。
 
-1. 从&#x200B;**[!UICONTROL Type]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL LINE]**。
+1. 从&#x200B;**[!UICONTROL Type]**&#x200B;下拉菜单中选取Select **[!UICONTROL LINE]**。
 
    ![](assets/line_service_2.png)
 
@@ -87,7 +87,7 @@ LINE 是一款免费即时消息、语音和视频通话应用程序，可在所
 
 1. 在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]**&#x200B;树结构中，单击&#x200B;**[!UICONTROL External Accounts]**&#x200B;选项卡。
 
-1. 选择内置&#x200B;**[!UICONTROL LINE V2 routing]**&#x200B;外部帐户。
+1. Select内置&#x200B;**[!UICONTROL LINE V2 routing]**&#x200B;外部帐户。
 
    ![](assets/line_config.png)
 
@@ -120,17 +120,17 @@ LINE 是一款免费即时消息、语音和视频通话应用程序，可在所
 
    ![](assets/line_message_07.png)
 
-1. 选择&#x200B;**[!UICONTROL LINE V2 delivery]**&#x200B;投放模板。
+1. Select **[!UICONTROL LINE V2 delivery]**&#x200B;投放模板。
 
    ![](assets/line_message_01.png)
 
-1. 使用&#x200B;**[!UICONTROL Label]**、**[!UICONTROL Delivery code]**&#x200B;和&#x200B;**[!UICONTROL Description]**&#x200B;标识您的投放。 如需详细信息，请参阅[此小节](../../start/create-message.md#create-the-delivery)。
+1. 使用&#x200B;**[!UICONTROL Label]**、**[!UICONTROL Delivery code]**&#x200B;和&#x200B;**[!UICONTROL Description]**&#x200B;标识您的投放。 有关详情，请参阅[创建投放](../../start/create-message.md#create-the-delivery)。
 
 1. 单击&#x200B;**[!UICONTROL Continue]**&#x200B;以创建您的投放。
 
 1. 在投放编辑器中，选择&#x200B;**[!UICONTROL To]**&#x200B;以定位[!DNL LINE]投放的收件人。 在&#x200B;**[!UICONTROL Visitor subscriptions (nms:visitorSub)]**&#x200B;上执行定位。
 
-   有关详细信息，请参见[此页面](../../audiences/target-mappings.md)。
+   有关详细信息，请参阅[使用目标映射](../../audiences/target-mappings.md)。
 
    ![](assets/line_message_08.png)
 
@@ -140,7 +140,7 @@ LINE 是一款免费即时消息、语音和视频通话应用程序，可在所
 
 1. 选择是要直接定位[!DNL LINE]订阅者，还是要根据用户的[!DNL LINE]订阅定位用户，然后单击&#x200B;**[!UICONTROL Next]**。 在此示例中，我们选择了&#x200B;**[!UICONTROL By LINE V2 subscription]**。
 
-1. **[!UICONTROL Folder]**&#x200B;下拉列表中的Select **[!UICONTROL Line-V2]**，然后是您的[!DNL LINE]服务。 单击&#x200B;**[!UICONTROL Finish]**，然后单击&#x200B;**[!UICONTROL Ok]**&#x200B;以开始个性化您的投放。
+1. 在&#x200B;**[!UICONTROL Folder]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Line-V2]**，然后选择[!DNL LINE]服务。 单击&#x200B;**[!UICONTROL Finish]**，然后单击&#x200B;**[!UICONTROL Ok]**&#x200B;以开始个性化您的投放。
 
    ![](assets/line_message_10.png)
 

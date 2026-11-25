@@ -32,10 +32,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 9%
+source-wordcount: '170'
+ht-degree: 4%
 ---
 # 配置 URL 跟踪选项 {#personalizing-url-tracking}
 
@@ -61,7 +61,7 @@ ht-degree: 9%
 
 跟踪的URL以树形式列在中心窗口中。
 
-您可以为消息的每个URL单独激活或取消激活跟踪。 如需详细信息，请参阅[此小节](tracked-links.md)。
+您可以为消息的每个URL单独激活或取消激活跟踪。 有关详细信息，请参阅[配置跟踪的链接](tracked-links.md)。
 
 通过&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡，可将跟踪URL和开始URL的计算公式个性化。
 

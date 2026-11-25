@@ -23,9 +23,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1430'
 ht-degree: 2%
 ---
 # 已修订推送通知配置 {#push-notifications-config}
@@ -34,7 +34,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
 >[!AVAILABILITY]
 >
-> 从Campaign v8.5开始，新客户可专门访问此功能，并会逐步向一组选定的客户推出。 如果您的环境是在2023年6月之前配置的，则此页面不适用于您，您必须遵循此页面[&#128279;](push-settings.md)中详述的步骤。
+> 从Campaign v8.5开始，新客户可专门访问此功能，并会逐步向一组选定的客户推出。 如果您的环境是在2023年6月之前配置的，则此页面不适用于您，您必须遵循此页面](push-settings.md)中详述的步骤[。
 
 在此更新的实施中，要在Adobe Campaign中发送推送通知，请执行以下步骤：
 
@@ -126,7 +126,7 @@ Campaign v8.5引入了我们最新的推送通知服务，该服务由基于现�
 
    >[!NOTE]
    >
-   >默认&#x200B;**[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]**&#x200B;目标映射已链接到收件人表。 如果要使用其他目标映射，则需要创建一个新的目标映射，并在服务的&#x200B;**[!UICONTROL Target mapping]**&#x200B;字段中输入该映射。 在[此页面](../audiences/target-mappings.md)中了解有关目标映射的详细信息。
+   >默认&#x200B;**[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]**&#x200B;目标映射已链接到收件人表。 如果要使用其他目标映射，则需要创建一个新的目标映射，并在服务的&#x200B;**[!UICONTROL Target mapping]**&#x200B;字段中输入该映射。 了解有关[中目标映射的详细信息](../audiences/target-mappings.md)使用目标映射。
 
 1. 然后，使用右侧的&#x200B;**[!UICONTROL Add]**&#x200B;图标定义使用此服务的移动应用程序。
 
@@ -275,4 +275,4 @@ Adobe Experience Platform Mobile SDK有助于为您的移动应用程序中的[!
 
 在数据收集中成功配置移动应用程序后，您现在可以在Adobe Campaign中创建并发送推送通知。
 
-有关特定于iOS和Android通知交付的详细元素，请参阅[此页面](push.md#push-create)。
+有关特定于iOS和Android通知交付的详细元素，请参阅[创建您的第一个推送通知](push.md#push-create)。

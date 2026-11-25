@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 12%
+source-wordcount: '859'
+ht-degree: 11%
 ---
 # Web 应用程序入门{#about-web-applications}
 
@@ -51,7 +51,7 @@ ht-degree: 12%
 >
 >对于大多数常见用例，请在Campaign Web用户界面中创建登陆页面，您可以在其中轻松设计和发布这些页面。 如本节所述，在客户端控制台中创建的登陆页面提供了更多设置，并涵盖了更高级的用例。
 >
->[在Campaign Web用户界面中了解有关登陆页面的更多信息](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
+>[在Campaign Web用户界面中了解有关登陆页面的更多信息](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
 
 
 
@@ -77,31 +77,31 @@ Adobe Campaign允许您创建和发布动态的交互式Web应用程序，其中
 
 Adobe Campaign中的Web应用程序提供对以下功能的访问：
 
-* 创建多页表单。 有关详细信息，请参见此 [&#x200B; 页面](about-web-forms.md)。
-* 使用集成翻译工具进行多语言调查管理。 有关详细信息，请参见此 [&#x200B; 页面](translating-a-web-application.md)。
-* 图形化页面管理界面，多列页面布局。 有关详细信息，请参见此 [&#x200B; 页面](designing-a-web-application.md)。
-* 呈现个性化和字段位置。 有关详细信息，请参见此 [&#x200B; 页面](editing-content.md#adding-personalization-content)。
-* 根据答案有条件地显示调查字段。 有关详细信息，请参见此 [&#x200B; 页面](form-rendering.md#defining-fields-conditional-display)。
-* 随机显示问题。 有关更多信息，请参阅此[页面](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/content/surveys/building-a-survey#adding-questions){target="_blank"}（Campaign v8文档）。
-* 条件性页面显示。 有关详细信息，请参见此 [&#x200B; 页面](defining-web-forms-page-sequencing.md#conditional-page-display)。
-* 根据预期的数据类型（编号、电子邮件地址、日期等），在验证之前检查信息 和必填字段。 有关详细信息，请参见此 [&#x200B; 页面](form-rendering.md#defining-control-settings)。
-* 电子邮件邀请或通知。 有关详细信息，请参见此 [&#x200B; 页面](publishing-a-web-form.md#delivering-a-form-via-email)。
-* 包含错误和结束消息的Personalization。 有关详细信息，请参见此 [&#x200B; 页面](defining-web-forms-properties.md#setting-up-an-error-page)。
+* 创建多页表单。 有关详细信息，请参见此 [ 页面](about-web-forms.md)。
+* 使用集成翻译工具进行多语言调查管理。 有关详细信息，请参见此 [ 页面](translating-a-web-application.md)。
+* 图形化页面管理界面，多列页面布局。 有关详细信息，请参见此 [ 页面](designing-a-web-application.md)。
+* 呈现个性化和字段位置。 有关详细信息，请参见此 [ 页面](editing-content.md#adding-personalization-content)。
+* 根据答案有条件地显示调查字段。 有关详细信息，请参见此 [ 页面](form-rendering.md#defining-fields-conditional-display)。
+* 随机显示问题。 有关更多信息，请参阅此[页面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/building-a-survey#adding-questions){target="_blank"}（Campaign v8文档）。
+* 条件性页面显示。 有关详细信息，请参见此 [ 页面](defining-web-forms-page-sequencing.md#conditional-page-display)。
+* 根据预期的数据类型（编号、电子邮件地址、日期等），在验证之前检查信息 和必填字段。 有关详细信息，请参见此 [ 页面](form-rendering.md#defining-control-settings)。
+* 电子邮件邀请或通知。 有关详细信息，请参见此 [ 页面](publishing-a-web-form.md#delivering-a-form-via-email)。
+* 包含错误和结束消息的Personalization。 有关详细信息，请参见此 [ 页面](defining-web-forms-properties.md#setting-up-an-error-page)。
 * 使用图像、视频、超文本链接、验证码等。有关详细信息，请参阅此[页面](editing-content.md)。
-* 实时监控响应。 有关更多信息，请参阅此[页面](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/content/surveys/publish-track-and-use-collected-data#response-tracking){target="_blank"}（Campaign v8文档）。
+* 实时监控响应。 有关更多信息，请参阅此[页面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/publish-track-and-use-collected-data#response-tracking){target="_blank"}（Campaign v8文档）。
 
 可选的&#x200B;**调查**&#x200B;创建模块提供了以下附加功能：
 
-* 数据库的动态扩展：创建未包含在初始数据模板中的响应。 有关更多信息，请参阅此[页面](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/content/surveys/managing-answers#storing-collected-answers){target="_blank"}（Campaign v8文档）。
-* 生成专用报告。 有关更多信息，请参阅此[页面](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/content/surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"}（Campaign v8文档）。
+* 数据库的动态扩展：创建未包含在初始数据模板中的响应。 有关更多信息，请参阅此[页面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/managing-answers#storing-collected-answers){target="_blank"}（Campaign v8文档）。
+* 生成专用报告。 有关更多信息，请参阅此[页面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/publish-track-and-use-collected-data#reports-on-surveys){target="_blank"}（Campaign v8文档）。
 
 与Web应用程序相比，调查具有简化的图形界面，而且编辑控制数量减少。
 
 >[!NOTE]
 >
->[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"}中详细介绍了调查（Campaign v8文档）。
+>[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"}中详细介绍了调查（Campaign v8文档）。
 >
->在[此部分](about-web-forms.md)中详细介绍了Adobe Campaign中Web窗体的总体功能。
+>在[Web窗体入门](about-web-forms.md)中详细介绍了Adobe Campaign中Web窗体的总体功能。
 
 ## Web应用程序实施 {#web-application-implementation}
 
@@ -109,7 +109,7 @@ Adobe Campaign中的Web应用程序提供对以下功能的访问：
 
 1. 创建内容（字段、列表、表格、图形等）。
 
-   您还可以查看详细说明表单可用字段的部分：所有这些字段也可用于Web应用程序。 此信息在[此页面](adding-fields-to-a-web-form.md)中可用。
+   您还可以查看详细说明表单可用字段的部分：所有这些字段也可用于Web应用程序。 此信息在[向Web窗体添加字段](adding-fields-to-a-web-form.md)中可用。
 
 1. 根据需要，您可以添加预加载、测试和保存步骤，并配置访问控制系统（主要在外联网发布的框架内）。
 1. 发布Web应用程序以使其在外联网或Adobe Campaign中可用。
@@ -120,7 +120,7 @@ Web应用程序是通过&#x200B;**[!UICONTROL Campaigns]**&#x200B;和&#x200B;**[
 
 Web应用程序存储在Adobe Campaign树的&#x200B;**[!UICONTROL Resources > Online > Web Applications]**&#x200B;节点中。 配置在以下文件夹中细分：
 
-* **[!UICONTROL Administration > Configuration > Form renderings]**：包含Web窗体演示的渲染模板（应用程序和调查）。 使用该模板可以生成表单。 它还使用CSS样式表。 可在模板级别重载此样式表。 有关详细信息，请参见[此页面](form-rendering.md#selecting-the-form-rendering-template)。
+* **[!UICONTROL Administration > Configuration > Form renderings]**：包含Web窗体演示的渲染模板（应用程序和调查）。 使用该模板可以生成表单。 它还使用CSS样式表。 可在模板级别重载此样式表。 有关详细信息，请参阅[选择表单渲染模板](form-rendering.md#selecting-the-form-rendering-template)。
 * **[!UICONTROL Resources > Templates > Web application templates]**：包含表单模板。 要创建表单或Web应用程序，必须从模板开始。
 
 ## Web 应用程序模板 {#web-application-templates}

@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '341'
 ht-degree: 0%
 ---
 # 访问跟踪日志 {#accessing-the-tracking-logs}
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您看不到投放的&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡，则意味着尚未激活跟踪。 请参阅[此部分](tracked-links.md)以了解如何配置跟踪。
+>如果您看不到投放的&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡，则意味着尚未激活跟踪。 请参阅[配置跟踪的链接](tracked-links.md)，了解如何配置跟踪。
 
 ### 检查跟踪技术工作流 {#check-tracking-workflow}
 

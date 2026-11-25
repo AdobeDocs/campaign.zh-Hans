@@ -30,9 +30,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '454'
 ht-degree: 0%
 ---
 # 事务性消息传递入门{#send-transactional-messages}
@@ -49,9 +49,9 @@ ht-degree: 0%
 * 对客户操作的单个实时响应
 * 非促销内容
 
-[此部分](../config/transactional-msg-settings.md)中详细介绍了事务性消息设置。
+[Campaign事务性消息设置](../config/transactional-msg-settings.md)中详细介绍了事务性消息设置。
 
-了解[此页面](../architecture/architecture.md#transac-msg-archi)上的事务性消息传递架构。
+了解[消息中心架构](../architecture/architecture.md#transac-msg-archi)上的事务性消息架构。
 
 ## 事务型消息传递工作原理 {#transactional-messaging-operating-principle}
 

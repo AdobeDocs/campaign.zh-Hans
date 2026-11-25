@@ -15,9 +15,9 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '801'
 ht-degree: 3%
 ---
 # 设计调查{#building-a-survey}
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 Web窗体通过树的&#x200B;**[!UICONTROL Resources > Online > Web applications]**&#x200B;节点访问。 要创建调查，请单击应用程序列表上方的&#x200B;**[!UICONTROL New]**&#x200B;按钮，或者右键单击列表并选择&#x200B;**[!UICONTROL New]**。
 
-选择调查模板（默认为&#x200B;**[!UICONTROL newSurvey]**）。
+Select调查模板（默认为&#x200B;**[!UICONTROL newSurvey]**）。
 
 ![](assets/s_ncs_admin_survey_select_template.png)
 
@@ -65,13 +65,13 @@ Web窗体通过树的&#x200B;**[!UICONTROL Resources > Online > Web applications
 
    >[!NOTE]
    >
-   >[此部分](managing-answers.md#storing-collected-answers)中详细介绍了存储模式和字段导入。
+   >存储模式和字段导入在[存储收集的答案](managing-answers.md#storing-collected-answers)中有详细说明。
 
 要添加的字段的性质（下拉列表、文本字段、复选框等） 将适应选定的存储模式。 您可以使用&#x200B;**[!UICONTROL General]**&#x200B;选项卡的&#x200B;**[!UICONTROL Type]**&#x200B;字段更改它，但请确保保持与数据类型一致。
 
 ![](assets/s_ncs_admin_survey_change_type.png)
 
-[此部分](../web/about-web-forms.md)中详细介绍了各种类型的可用字段。
+[Web窗体入门](../web/about-web-forms.md)中详细介绍了各种类型的可用字段。
 
 ## 特定于调查的元素 {#survey-specific-elements}
 

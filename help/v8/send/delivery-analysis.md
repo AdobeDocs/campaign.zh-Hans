@@ -25,9 +25,9 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '696'
 ht-degree: 5%
 ---
 # 投放分析 {#analyze-delivery}
@@ -45,7 +45,7 @@ ht-degree: 5%
 
 1. 单击&#x200B;**[!UICONTROL Analyze]**&#x200B;以手动启动分析。 进度条显示分析的进度。
 
-   在投放分析期间应用一组检查规则。 这些规则是在投放属性的&#x200B;**[!UICONTROL Typology]**&#x200B;选项卡中选择的&#x200B;**类型**&#x200B;中定义的。 在[本节](../../automation/campaign-opt/campaign-typologies.md)中了解有关类型的更多信息。
+   在投放分析期间应用一组检查规则。 这些规则是在投放属性的&#x200B;**[!UICONTROL Typology]**&#x200B;选项卡中选择的&#x200B;**类型**&#x200B;中定义的。 在[中了解有关类型的更多信息开始使用营销活动类型](../../automation/campaign-opt/campaign-typologies.md)。
 
    默认情况下，对于电子邮件，分析涵盖以下几点：
 

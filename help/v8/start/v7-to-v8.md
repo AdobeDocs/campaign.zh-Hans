@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Security
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 70%
+source-wordcount: '744'
+ht-degree: 65%
 ---
 # 从 [!DNL Campaign Classic] v7 过渡到 [!DNL Campaign] v8{#gs-matrix}
 
@@ -62,7 +62,7 @@ Adobe Campaign Managed Cloud Services 提供了可用于进行跨渠道客户体
 * **服务体验** — 主动监测可用性、容量和性能及响应，从而防止出现中断、更快地解决事件，并定期审查服务以持续改进。
 * **深入的 Campaign 专业知识** — 客户工程专家团队提供十分亲切的服务，可满足功能、技术或可投放性需求，降低部署风险，并改进变更管理。
 
-作为之前的 [!DNL Campaign Classic] 用户，请注意，v7 的大多数功能[!DNL Campaign Classic]都可以在 [!DNL Campaign] v8 中使用，但[本节](#gs-removed)中所列的一小部分功能除外。
+作为前[!DNL Campaign Classic]用户，请注意，[!DNL Campaign Classic] v7的大多数功能都可以在[!DNL Campaign] v8中使用，但[不支持的功能](#gs-removed)中列出的一小部分功能除外。
 
 >新的云架构使Campaign能够简化流程、降低成本、管理风险并提高数据安全性。 您的 Campaign v8 环境附带为您预配置的专用虚拟私有云 (VPC)。
 
@@ -77,7 +77,7 @@ Campaign v8依赖于&#x200B;**混合架构**。 请注意，如果从Campaign Cl
 * 投放状态不会立即更新 — 在营销实例上运行一个技术流程，用于及时更新投放状态。
 
 
-在[此页面](../send/transactional-template.md#transition-from-v7)上了解有关从v7过渡时发送事务性消息校样的更多信息。
+了解有关在从Campaign Classic v7](../send/transactional-template.md#transition-from-v7)过渡的[上从v7过渡时发送事务性消息校样的更多信息。
 
 
 ## [!DNL Campaign] 和 [!DNL Snowflake] {#ac-gs-snowflake}
@@ -86,20 +86,20 @@ Campaign v8依赖于&#x200B;**混合架构**。 请注意，如果从Campaign Cl
 
 Campaign v8 企业版引入了&#x200B;**完全联合数据访问** (FFDA) 概念：所有数据现在都位于云数据库上的远程位置。 凭借这种新架构，Campaign v8 企业版 (FFDA) 部署简化了数据管理：云数据库上不需要索引。 您只需创建表格、复制数据即可开始。 云数据库技术无需特定的维护来保证性能级别。
 
-在[此页面](../../v8/architecture/architecture.md)中了解有关[!DNL Campaign] v8架构的更多信息。
+在[中了解有关[!DNL Campaign] v8架构的更多信息Campaign架构入门](../../v8/architecture/architecture.md)。
 
 
 ## 使用 Adobe ID 连接到 Campaign{#adobe-id}
 
 Campaign 用户仅可通过其 Adobe ID 进行连接。 同一Adobe ID用于保留与单个帐户关联的所有Adobe计划和产品，适用于所有[!DNL Adobe CX Enterprise]解决方案。
 
-了解如何在[此页面](connect.md)中连接到[!DNL Campaign]。
+了解如何在[连接到Campaign v8](connect.md)中连接到[!DNL Campaign]。
 
 ## 使用多维数据集分析数据{#adobe-reporting}
 
 使用 Marketing Analytics 模块来分析和测量数据，计算统计数据，简化和优化报告创建与计算。 此外，创建报告并构建目标群体：确定群体后，会将它们存储于可在 Adobe Campaign 中（定位、分段等）使用的列表中。
 
-与 Campaign Classic v7 相比，Adobe Campaign v8 的多维数据集报告已得到优化，并提供了更好的扩展功能。 在该特定部署模型中，以前对多维数据集的限制在 Campaign v8 中不适用。 请在[此部分](../../v8/reporting/gs-cubes.md)中了解有关多维数据集的更多信息。
+与 Campaign Classic v7 相比，Adobe Campaign v8 的多维数据集报告已得到优化，并提供了更好的扩展功能。 在该特定部署模型中，以前对多维数据集的限制在 Campaign v8 中不适用。 在[Adobe Campaign Analytics报告入门](../../v8/reporting/gs-cubes.md)中了解有关多维数据集的更多信息。
 
 ## 不可用功能{#gs-unavailable-features}
 

@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 5%
+source-wordcount: '367'
+ht-degree: 3%
 ---
 # 解释 Web 应用程序{#translating-a-web-application}
 
@@ -36,7 +36,7 @@ ht-degree: 5%
 
 利用此选项，可指示是否必须翻译块内容。
 
-要翻译的字符串的收集方式与Web应用程序的其他字符串相同，方法是通过应用程序的&#x200B;**[!UICONTROL Translations]**&#x200B;选项卡。 有关详细信息，请参见[此页面](translating-a-web-form.md)。
+要翻译的字符串的收集方式与Web应用程序的其他字符串相同，方法是通过应用程序的&#x200B;**[!UICONTROL Translations]**&#x200B;选项卡。 有关详细信息，请参阅[翻译Web窗体](translating-a-web-form.md)。
 
 标记要翻译的字符串：
 

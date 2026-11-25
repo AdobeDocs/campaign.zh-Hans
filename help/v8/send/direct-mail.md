@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 8%
+source-wordcount: '915'
+ht-degree: 5%
 ---
 # 创建直邮投放
 
@@ -52,14 +52,14 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->有关投放创建的全局概念在[此部分](../start/create-message.md)中介绍。
+>在[创建您的第一个投放](../start/create-message.md)中介绍了有关投放创建的全局概念。
 
 1. 创建新投放，例如从投放仪表板。
 1. 选择投放模板&#x200B;**通过直邮（纸张）投放**。
 
    ![](assets/direct_mail.png)
 
-1. 使用标签、代码和描述标识投放。 如需详细信息，请参阅[此小节](../start/create-message.md#create-the-delivery)。
+1. 使用标签、代码和描述标识投放。 有关详情，请参阅[创建投放](../start/create-message.md#create-the-delivery)。
 1. 单击&#x200B;**继续**&#x200B;以确认此信息并显示消息配置窗口。
 
 ## 定义受众{#defining-the-direct-mail-audience}
@@ -70,7 +70,7 @@ ht-degree: 8%
 
 如果名称、邮政编码字段和城镇/城市字段不为空，则认为地址完整。 将从直邮投放中排除任何地址不完整的收件人。
 
-可在[此部分](../start/create-message.md#target-population)中了解详情。
+请参阅[定义目标受众](../start/create-message.md#target-population)以了解详情。
 
 ## 定义文件的内容{#defining-the-direct-mail-content}
 
@@ -90,11 +90,11 @@ ht-degree: 8%
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
-您可以在提取文件中插入个性化URL。 如需详细信息，请参阅[此小节](../dev/web/publishing-a-web-form.md)。
+您可以在提取文件中插入个性化URL。 有关详细信息，请参阅[发布Web窗体](../dev/web/publishing-a-web-form.md)。
 
 >[!NOTE]
 >
->此助理包括导出助理的步骤，详情请参见Adobe Campaign Classic [文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html?lang=zh-Hans){target="_blank"}。
+>此助理包括导出助理的步骤，详情请参见Adobe Campaign Classic [文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/executing-export-jobs.html){target="_blank"}。
 
 ## 验证投放{#validating}
 
@@ -102,7 +102,7 @@ ht-degree: 8%
 
 在营销活动上下文中，在提取日期创建提取文件。 您可以查看提取文件的内容、批准该文件或更改格式并根据需要重新启动提取。 文件获得批准后，即可向路由器发送通知电子邮件。 请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=zh-Hans){target="_blank"}以了解详情。
 
-[本节](../start/create-message.md#validate-the-delivery)介绍了验证投放时的全局概念。
+在[准备并验证您的投放](../start/create-message.md#validate-the-delivery)中介绍了验证投放时的全局概念。
 
 直邮投放的输出文件在投放分析期间生成。 文件的内容取决于所选的输出列（请参阅此[节文件](#defining-the-direct-mail-content)）。
 

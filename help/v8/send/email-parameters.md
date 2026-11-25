@@ -20,10 +20,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 9%
+source-wordcount: '956'
+ht-degree: 8%
 ---
 # 电子邮件参数 {#email-parameters}
 
@@ -31,7 +31,7 @@ ht-degree: 9%
 
 ## 使用电子邮件密送 {#email-bcc}
 
-您可以配置Adobe Campaign以保留从您的平台发送的电子邮件副本。 [此页面](email-bcc.md)中详细介绍了此选项。
+您可以配置Adobe Campaign以保留从您的平台发送的电子邮件副本。 [将邮件副本发送到密件抄送地址](email-bcc.md)中详细介绍了此选项。
 
 ## 选择消息格式 {#selecting-message-formats}
 
@@ -83,15 +83,15 @@ ht-degree: 9%
 
 * **[!UICONTROL Bounce address]**：您还可以定义将未处理的退回电子邮件转发到的其他地址。 利用此地址，可调查应用程序无法自动限定电子邮件时退回的原因。
 
-其中每个字段都可以使用专用图标进行个性化。 在[本节](personalization-fields.md)中了解个性化字段的更多信息。
+其中每个字段都可以使用专用图标进行个性化。 在[添加个性化字段](personalization-fields.md)中了解关于个性化字段的更多信息。
 
 ![](assets/email-smtp-bounce.png)
 
-有关退回邮件管理的详细信息，请参阅[此部分](delivery-failures.md#bounce-mail-qualification)。
+有关退回邮件管理的详细信息，请参阅[退回邮件鉴别](delivery-failures.md#bounce-mail-qualification)。
 
 ## 启用一键式列表取消订阅 {#one-click-list-unsubscribe}
 
-一键式列表取消订阅URL是显示在电子邮件发件人信息旁边的链接或按钮，收件人只需单击一下即可立即选择退出您的邮件列表。<!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=zh-Hans#list-unsubscribe){target="_blank"}-->
+一键式列表取消订阅URL是显示在电子邮件发件人信息旁边的链接或按钮，收件人只需单击一下即可立即选择退出您的邮件列表。<!--[Learn more](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}-->
 
 它在ISP的电子邮件界面中显示为&#x200B;**取消订阅**&#x200B;链接。 例如：
 
@@ -131,7 +131,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->您还可以手动设置[One-Click List-Unsubscribe](https://experienceleague.adobe.com/zh-hans/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"}和[&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/zh-hans/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"}方法。 Experience Cloud [可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=zh-Hans#list-unsubscribe){target="_blank"}中介绍了详细步骤。
+>您还可以手动设置[One-Click List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#one-click-list-unsubscribe){target="_blank"}和[&quot;mailto&quot; List-Unsubscribe](https://experienceleague.adobe.com/en/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations?lang=en#mailto-list-unsubscribe){target="_blank"}方法。 Experience Cloud [可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html#list-unsubscribe){target="_blank"}中介绍了详细步骤。
 
 
 ## 添加SMTP标头 {#adding-smtp-headers}
@@ -155,4 +155,4 @@ ht-degree: 9%
 
 镜像页面是可通过 Web 浏览器在线访问的 HTML 页面。 其内容与电子邮件的内容相同。 如果收件人尝试在收件箱中查看电子邮件时遇到渲染问题或图像损坏，此功能会很有用。
 
-在[本节](mirror-page.md)中了解如何插入指向镜像页面的链接
+了解如何在[添加指向镜像页面的链接](mirror-page.md)中插入指向镜像页面的链接

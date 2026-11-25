@@ -32,9 +32,9 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '406'
 ht-degree: 4%
 ---
 # 跟踪 Web 应用程序访问{#tracking-a-web-application}
@@ -85,7 +85,7 @@ Adobe Campaign允许您通过插入跟踪标记来跟踪和测量Web应用程序
 
 ## 使用数字内容编辑器(DCE)设计的Web应用程序 {#web-applications-designed-with-digital-content-editor--dce-}
 
-使用HTML内容编辑器 — **数字内容编辑器(DCE)**&#x200B;创建Web应用程序时 — 将从编辑器的&#x200B;**[!UICONTROL Properties]**&#x200B;选项卡插入跟踪标记。 有关数字内容编辑器(DCE)的详细信息，请参阅[此部分](about-campaign-html-editor.md)。
+使用HTML内容编辑器 — **数字内容编辑器(DCE)**&#x200B;创建Web应用程序时 — 将从编辑器的&#x200B;**[!UICONTROL Properties]**&#x200B;选项卡插入跟踪标记。 有关数字内容编辑器(DCE)的更多信息，请参阅[Campaign HTML编辑器入门](about-campaign-html-editor.md)。
 
 ![](assets/trackers_2.png)
 

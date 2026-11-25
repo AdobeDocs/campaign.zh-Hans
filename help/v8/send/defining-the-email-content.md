@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '2111'
+source-wordcount: '2123'
 ht-degree: 2%
 ---
 # 定义电子邮件的内容 {#defining-the-email-content}
@@ -43,7 +43,7 @@ ht-degree: 2%
 
 在此窗口中，您可以输入创建电子邮件标头所需的所有信息。 此信息可以个性化。 要实现此目的，请使用输入字段右侧的按钮插入个性化字段。
 
-要了解如何插入和使用个性化字段，请参阅[此章节](personalize.md)。
+要了解如何插入和使用个性化字段，请参阅[个性化入门](personalize.md)。
 
 >[!NOTE]
 >
@@ -72,7 +72,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->[此部分](personalize.md)中介绍了个性化字段的使用。
+>个性化字段的使用显示在[个性化入门](personalize.md)中。
 
 您还可以使用&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;弹出窗口将表情符号插入主题行。
 
@@ -96,7 +96,7 @@ ht-degree: 2%
 
 * 要导入HTML内容，请使用&#x200B;**[!UICONTROL Open]**&#x200B;按钮。 您还可以将源代码直接粘贴到&#x200B;**[!UICONTROL Source]**&#x200B;子选项卡中。
 
-  如果您使用数字内容编辑器(DCE)，请参阅[此章节](../dev/web/use-case-creating-an-email-delivery.md#step-3---selecting-a-content)。
+  如果您使用数字内容编辑器(DCE)，请参阅[步骤3 — 选择内容](../dev/web/use-case-creating-an-email-delivery.md#step-3---selecting-a-content)。
 
   >[!IMPORTANT]
   >
@@ -118,7 +118,7 @@ ht-degree: 2%
 
   >[!NOTE]
   >
-  >[此部分](personalize.md)中介绍了个性化字段的使用。
+  >个性化字段的使用显示在[个性化入门](personalize.md)中。
 
   通过页面底部的选项卡，可显示所创建页面的HTML代码，并查看消息及其个性化内容的呈现。 要启动此显示，请单击&#x200B;**[!UICONTROL Preview]**，然后使用工具栏中的&#x200B;**[!UICONTROL Test personalization]**&#x200B;按钮选择一个收件人。 您可以从定义的目标中选择收件人，也可以选择其他收件人。
 
@@ -141,7 +141,7 @@ ht-degree: 2%
 
 Adobe Campaign允许您尝试新的交互式[AMP for Email](https://amp.dev/about/email/)格式，该格式允许您在特定条件下发送动态电子邮件。
 
-有关更多信息，请参阅[此小节](defining-interactive-content.md)。
+有关详细信息，请参阅[在Adobe Campaign中定义交互式内容](defining-interactive-content.md)。
 
 ## 使用内容管理 {#using-content-management}
 
@@ -179,7 +179,7 @@ HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以
 
 为避免性能问题，电子邮件中包含的图像不能超过100 KB。 默认设置的此限制可以从`NmsDelivery_MaxDownloadedImageSize`选项更改。 但是，Adobe强烈建议避免在电子邮件投放中使用大型图像。
 
-在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html?lang=zh-Hans#delivery)中了解有关Campaign选项列表的更多信息。
+在[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#delivery)中了解有关Campaign选项列表的更多信息。
 
 ### 图像类型 {#img-types}
 
@@ -190,7 +190,7 @@ HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以
 
   可通过Adobe Campaign层次结构的&#x200B;**[!UICONTROL Resources > Online]**&#x200B;节点访问公共资源。 它们分组在库中，可以包含在电子邮件中，但也可以用于营销活动或任务，或者用于内容管理。
 
-* 与Adobe Experience Cloud共享的资产。 请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html?lang=zh-Hans)。
+* 与Adobe Experience Cloud共享的资产。 请参阅[Campaign Classic文档](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/asset-sharing/sharing-assets-with-adobe-experience-cloud.html)。
 
 ### 插入和管理图像 {#manage-images}
 
@@ -204,7 +204,7 @@ HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以
 
 要通过投放助手管理图像，请执行以下操作：
 
-1. 单击工具栏中的&#x200B;**[!UICONTROL Tracking & Images]**&#x200B;图标。
+1. 单击工具栏中的&#x200B;**[!UICONTROL Tracking & Images]**图标。
    ![](assets/s_ncs_user_email_del_img_param.png)
 
 1. 在&#x200B;**[!UICONTROL Images]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Upload images]**。

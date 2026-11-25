@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 16%
+source-wordcount: '399'
+ht-degree: 10%
 ---
 # 创建新 Web 应用程序{#creating-a-new-web-application}
 
@@ -47,7 +47,7 @@ ht-degree: 16%
 
 >[!NOTE]
 >
->始终保护可能包含个人信息的页面。 请参阅[安全和隐私检查清单](https://helpx.adobe.com/cn/campaign/kb/acc-security.html#privacy)。
+>始终保护可能包含个人信息的页面。 请参阅[安全和隐私检查清单](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy)。
 
 此模板确定Web应用程序的类型。 您可以创建：
 
@@ -57,15 +57,15 @@ ht-degree: 16%
 
 1. Web 应用程序
 
-   通过Adobe Campaign，您可以创建在Web平台或外部网中公开的Web应用程序。 这使您可以在Adobe Campaign中编辑数据和记录信息。 在这种情况下，您可以限制用户访问经过身份验证的用户（通过访问控制），并根据各种条件设置数据预加载。 如需详细信息，请参阅[此小节](about-web-applications.md)。
+   通过Adobe Campaign，您可以创建在Web平台或外部网中公开的Web应用程序。 这使您可以在Adobe Campaign中编辑数据和记录信息。 在这种情况下，您可以限制用户访问经过身份验证的用户（通过访问控制），并根据各种条件设置数据预加载。 有关详细信息，请参阅[Web应用程序入门](about-web-applications.md)。
 
 1. 登陆页面
 
-   登陆页面是一个HTML页面，其内容可在网站上找到，允许用户输入存储在Adobe Campaign数据库配置文件中的信息。 此类页面的内容通常由专门的Web机构创建，然后导入Adobe Campaign以供发布、管理和跟进。 有关详细信息，请参见[此页面](creating-a-landing-page.md)。
+   登陆页面是一个HTML页面，其内容可在网站上找到，允许用户输入存储在Adobe Campaign数据库配置文件中的信息。 此类页面的内容通常由专门的Web机构创建，然后导入Adobe Campaign以供发布、管理和跟进。 有关详细信息，请参阅[创建登陆页面](creating-a-landing-page.md)。
 
 1. 调查
 
-   Adobe Campaign允许您通过&#x200B;**调查管理器**&#x200B;选项设计和管理在线调查并处理其结果：动态字段创建、得分管理、答案导出和专用报告。 有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"}（Campaign v8文档）。
+   Adobe Campaign允许您通过&#x200B;**调查管理器**&#x200B;选项设计和管理在线调查并处理其结果：动态字段创建、得分管理、答案导出和专用报告。 有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"}（Campaign v8文档）。
 
    >[!CAUTION]
    >
@@ -73,10 +73,10 @@ ht-degree: 16%
 
 1. Facebook应用程序
 
-   借助&#x200B;**社交营销**&#x200B;选项，Adobe Campaign允许您在Facebook应用程序中发布个性化内容。 如需详细信息，请参阅[此小节](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/integrating-with-social-media/about-social-marketing){target="_blank"}。
+   借助&#x200B;**社交营销**&#x200B;选项，Adobe Campaign允许您在Facebook应用程序中发布个性化内容。 如需详细信息，请参阅[此小节](https://experienceleague.adobe.com/en/docs/campaign-classic/using/integrating-with-social-media/about-social-marketing){target="_blank"}。
 
    >[!CAUTION]
    >
    >**社交营销**&#x200B;是一个可选的Adobe Campaign模块。 请核实您的许可协议。
 
-对于多种Web应用程序类型，页面配置模式以及可用配置可以相同。 如需详细信息，请参阅[此小节](about-web-forms.md)。
+对于多种Web应用程序类型，页面配置模式以及可用配置可以相同。 有关详细信息，请参阅[Web窗体入门](about-web-forms.md)。

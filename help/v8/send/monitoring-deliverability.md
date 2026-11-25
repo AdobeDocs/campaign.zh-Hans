@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Data quality
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
 source-wordcount: '576'
-ht-degree: 6%
+ht-degree: 5%
 ---
 # 监控您的可投放性{#monitoring-deliverability}
 
@@ -44,7 +44,7 @@ ht-degree: 6%
 
 ### 投放吞吐量 {#throughput-reports}
 
-**[!UICONTROL Delivery throughput]**&#x200B;报告提供给定时段内整个平台的吞吐量概览。 有关更多信息，请参阅[此小节](../reporting/global-reports.md#delivery-throughput)。
+**[!UICONTROL Delivery throughput]**&#x200B;报告提供给定时段内整个平台的吞吐量概览。 有关此内容的详细信息，请参阅[投放吞吐量](../reporting/global-reports.md#delivery-throughput)。
 
 ### 广播统计信息 {#broadcast-statistics}
 

@@ -28,9 +28,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '575'
 ht-degree: 6%
 ---
 # 配置跟踪的链接 {#how-to-configure-tracked-links}
@@ -39,11 +39,11 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->电子邮件内容中包含个性化的链接需要跟踪特定语法。 在[本节](personalized-links.md)中了解如何在电子邮件中添加可个性化并支持跟踪的链接的详细信息。
+>电子邮件内容中包含个性化的链接需要跟踪特定语法。 了解如何在电子邮件中添加可个性化并支持在[跟踪个性化链接](personalized-links.md)中跟踪的链接。
 
 默认启用消息跟踪。 要个性化URL的跟踪方式，请执行以下步骤：
 
-1. 在消息内容下方的投放助理的下部Select **[!UICONTROL Display URLs]**&#x200B;选项。
+1. 选择投放助理下部消息内容下的&#x200B;**[!UICONTROL Display URLs]**&#x200B;选项。
 
    ![](assets/s_ncs_user_email_del_display_urls.png)
 
@@ -78,7 +78,7 @@ ht-degree: 6%
    * **[!UICONTROL Opt-out]**：将此URL视为选择退出或退订URL。
    * **[!UICONTROL Mirror page]**：将此URL视为镜像页面URL。
 
-1. 此外，您还可以在&#x200B;**[!UICONTROL Category]**&#x200B;列的下拉列表中选择每个跟踪URL的类别。 这些类别可以显示在报表中，例如在&#x200B;**[!UICONTROL URLs and click streams]**&#x200B;报表中（请参阅[此章节](../reporting/delivery-reports.md#urls-and-click-streams)）。 类别在特定枚举中定义： **[!UICONTROL urlCategory]**。 在[本节](../config/enumerations.md)中了解如何使用枚举。
+1. 此外，您还可以在&#x200B;**[!UICONTROL Category]**&#x200B;列的下拉列表中选择每个跟踪URL的类别。 这些类别可以显示在报表中，例如在&#x200B;**[!UICONTROL URLs and click streams]**&#x200B;报表中（请参阅[URL和点击流](../reporting/delivery-reports.md#urls-and-click-streams)）。 类别在特定枚举中定义： **[!UICONTROL urlCategory]**。 了解有关如何使用[管理枚举](../config/enumerations.md)中的枚举的详细信息。
 
 ## URL分隔符的最佳实践 {#url-delimiters}
 
@@ -88,8 +88,8 @@ ht-degree: 6%
 * 括号[ ]
 * 大括号{ }
 
-在此示例中，URL https://www.adobe.com/cn后跟一个分号。 收件人电子邮件客户端可能会将分号解释为URL的一部分。 因此，链接可能会断开。 要避免出现此问题，您可以通过以下方式之一以分隔符括住URL：
+在此示例中，URL https://www.adobe.com后跟一个分号。 收件人电子邮件客户端可能会将分号解释为URL的一部分。 因此，链接可能会断开。 要避免出现此问题，您可以通过以下方式之一以分隔符括住URL：
 
-* (https://www.adobe.com/cn)；
-* [https://www.adobe.com/cn]；
-* {https://www.adobe.com/cn}；
+* (https://www.adobe.com)；
+* [https://www.adobe.com]；
+* {https://www.adobe.com}；

@@ -26,9 +26,9 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '176'
 ht-degree: 8%
 ---
 # 创建您的第一个短信投放 {#sms-delivery}
@@ -39,7 +39,7 @@ ht-degree: 8%
 
    ![](assets/sms_create.png){zoomable="yes"}
 
-   [此页面](../../start/create-message.md)中详细介绍了投放创建步骤。
+   [创建您的第一个投放](../../start/create-message.md)中详细介绍了投放创建步骤。
 
 <!--
  * For standalone instance,  [learn more here](sms-standalone-instance.md#sms-delivery-template).
@@ -58,7 +58,7 @@ ht-degree: 8%
 
 1. [选择受众](sms-audience.md)。
 
-定义受众的步骤详见[此页面](../../audiences/create-audiences.md)。
+有关定义受众的步骤详情，请参阅[在Campaign](../../audiences/create-audiences.md)中创建配置文件受众。
 
 ## 验证并发送短信 {#sms-validate}
 

@@ -26,18 +26,18 @@ topic_v2:
     internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 7ae0ea8d334af5e3580b594d5ddc8b52b10fa5b6
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '2446'
-ht-degree: 9%
+source-wordcount: '2451'
+ht-degree: 11%
 ---
 # 最新版本 {#latest-release}
 
-此页面列出了 Campaign v8（控制台）**最新版本**&#x200B;中的新增功能、改进和修复。 要详细了解 Campaign 版本和升级，请参阅[此页面](upgrades.md)。 其他版本列于本文档的先前版本部分。
+此页面列出了 Campaign v8（控制台）**最新版本**&#x200B;中的新增功能、改进和修复。 了解有关[Campaign版本、升级和安全性](upgrades.md)中的Campaign版本、版本和升级的详细信息。 其他版本列于本文档的先前版本部分。
 
 ## 8.9.4版 {#release-8-9-4}
 
-_2026年10月15日_
+_2026 年 10 月 15 日_
 
 ### 改进 {#improvements-8-9-4}
 
@@ -55,11 +55,11 @@ _2026年10月15日_
 * 修复了针对不使用用户档案映射的Snowflake或FFDA外部文件目标的投放准备可能失败的问题。 (NEO-96507)
 * 修复了包含链接到不同FDA源的多个查询的工作流可能会失败的问题。 (NEO-97249)
 * 修复了当处理在时间上紧密触发的事件时，近乎实时扩充工作流可能会间歇性地失败并出现SQL错误的问题。 (NEO-97557)
-* 修复了内部锁定机制可能进入重试循环并导致服务器上高CPU使用率的问题。 (NEO-94845)
+* 修复了内部锁定机制可能进入重试循环并导致服务器 CPU 占用过高的问题。 (NEO-94845)
 * 修复了在将种子地址与自定义目标映射一起使用时，投放准备可能会失败并出现SQL错误的问题。 (NEO-94966)
 * 修复了将数据加载到Redshift时，FDA工作流可能失败，并出现列溢出错误的问题。 (NEO-96125)
-* 修复了Analytics外部帐户可能失败并出现“Gone”(410)错误的问题。 (NEO-99019)
-* 修复了即使成功发送了相应的消息，某些投放仍可能卡在个性化待处理状态的问题。 (NEO-94471)
+* 修复了 Analytics 外部帐户可能失败并出现“Gone”(410) 错误的问题。 (NEO-99019)
+* 修复了部分投放即使对应消息已成功发送，仍可能卡在“个性化待处理”状态的问题。 (NEO-94471)
 
 ## 8.9.3版 {#release-8-9-3}
 
@@ -142,8 +142,8 @@ _2026 年 1 月 27 日_
 
 ### 安全性改进 {#security-8-9-1}
 
-* Snowflake外部帐户现在支持OAuth2身份验证，为联合数据访问连接提供现代且安全的身份验证方法。 (NEO-87013) [了解更多](../config/external-accounts.md#snowflake-external-accounts)
-* Databricks外部帐户现在支持通过服务主体（非交互式客户端凭据流）进行OAuth2身份验证，为联合数据访问连接提供安全的身份验证方法。 交互式OAuth2身份验证将在未来版本中提供。 (NEO-87422) [了解更多](../config/external-accounts.md#databricks-external-accounts)
+* Snowflake外部帐户现在支持OAuth2身份验证，为联合数据访问连接提供现代且安全的身份验证方法。 (NEO-87013) [Snowflake外部帐户](../config/external-accounts.md#snowflake-external-accounts)
+* Databricks外部帐户现在支持通过服务主体（非交互式客户端凭据流）进行OAuth2身份验证，为联合数据访问连接提供安全的身份验证方法。 交互式OAuth2身份验证将在未来版本中提供。 (NEO-87422) [数据库外部帐户](../config/external-accounts.md#databricks-external-accounts)
 * 通过限制对授权目录的操作、防止未经授权的访问和潜在的远程代码执行，修复了工作流文件访问漏洞。 (NEO-88460)
 * 向工作流JavaScript代码活动添加了FTP URL列入允许列表控制，将出站FTP连接限制为仅访问授权的地址。 (NEO-89083)
 * 修复了可能导致应用程序拒绝服务的安全问题。 (NEO-89984)
@@ -154,12 +154,12 @@ _2026 年 1 月 27 日_
 
 此版本附带了一组可在Campaign Web用户界面中使用的功能：
 
-* [多语言投放功能（GA）](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html?lang=zh-Hans){target="_blank"}
-* [事务性消息中的用户档案扩充(GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html?lang=zh-Hans){target="_blank"}
-* [Adobe Experience Manager实时和语言副本](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html?lang=zh-Hans){target="_blank"}
-* [内容试验 - A/B 测试](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html?lang=zh-Hans){target="_blank"}
-* [连续投放活动](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html?lang=zh-Hans){target="_blank"}
-* [活动审批管理](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html?lang=zh-Hans){target="_blank"}
+* [多语言投放功能（GA）](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/multilingual.html){target="_blank"}
+* [事务性消息中的用户档案扩充(GA)](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/transactional-messages/profile-enrichment.html){target="_blank"}
+* [Adobe Experience Manager实时和语言副本](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-multilingual.html){target="_blank"}
+* [内容试验 - A/B 测试](https://experienceleague.adobe.com/docs/campaign-web/v8/msg/email/ab-testing.html){target="_blank"}
+* [连续投放活动](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/continuous-delivery.html){target="_blank"}
+* [活动审批管理](https://experienceleague.adobe.com/docs/campaign-web/v8/campaigns/campaign-approvals.html){target="_blank"}
 
 请参阅Campaign Web UI [发行说明](https://experienceleague.adobe.com/docs/campaign-web/v8/release-notes/release-notes.html?lang=zh-hans){target="_blank"}
 

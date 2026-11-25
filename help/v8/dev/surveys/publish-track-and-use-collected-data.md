@@ -22,9 +22,9 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '899'
 ht-degree: 3%
 ---
 # 发布、跟踪和使用收集的数据{#publish-track-and-use-collected-data}
@@ -39,7 +39,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Adobe Campaign中调查的生命周期及其发布和交付模式与Web窗体中的类似：这些在[此部分](../web/about-web-forms.md)中有详细说明。
+>Adobe Campaign中调查的生命周期及其发布和交付模式与Web窗体的生命周期相似：这些在[Web窗体入门](../web/about-web-forms.md)中详述。
 
 ## 调查仪表板 {#survey-dashboard}
 
@@ -63,13 +63,13 @@ ht-degree: 3%
 
 调查URL中添加以下字符来指示来源：
 
-```
+```text
 ?origin=xxx
 ```
 
 在编辑调查时，其URL包含参数&#x200B;**[!UICONTROL __uuid]**，这表示调查处于测试阶段且尚未联机。 通过此URL访问调查时，创建的记录不会计入跟踪（报表）中。 源被强制设置为值&#x200B;**[!UICONTROL Adobe Campaign]**。
 
-有关URL参数的详细信息，请参阅[此页面](../web/defining-web-forms-properties.md#form-url-parameters)。
+有关URL参数的详细信息，请参阅[表单URL参数](../web/defining-web-forms-properties.md#form-url-parameters)。
 
 ### 调查报告 {#reports-on-surveys}
 
@@ -103,7 +103,7 @@ ht-degree: 3%
 
    要导出报表数据，请单击&#x200B;**[!UICONTROL Export]**&#x200B;按钮并选择导出格式。
 
-   有关导出报表数据的更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign){target="_blank"}。
+   有关导出报表数据的更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign){target="_blank"}。
 
 1. 导出答案
 
@@ -169,7 +169,7 @@ ht-degree: 3%
 
   ![](assets/s_ncs_admin_survey_responses_wf_box_7.png)
 
-* 选择&#x200B;**[!UICONTROL Keep only the first records after sorting]**&#x200B;选项并选择排序列。 勾选 **[!UICONTROL Descending sort]** 选项。
+* Select **[!UICONTROL Keep only the first records after sorting]**&#x200B;选项并选择排序列。 勾选 **[!UICONTROL Descending sort]** 选项。
 
   ![](assets/s_ncs_admin_survey_responses_wf_box_8.png)
 
@@ -181,4 +181,4 @@ ht-degree: 3%
 
 ## 标准化数据 {#standardizing-data}
 
-可以在Adobe Campaign中为使用别名收集的数据设置标准化流程。 这使您能够标准化存储在数据库中的数据：为此，请在包含相关信息的明细列表中定义别名。 在[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中了解如何&#x200B;**使用枚举**。
+可以在Adobe Campaign中为使用别名收集的数据设置标准化流程。 这使您能够标准化存储在数据库中的数据：为此，请在包含相关信息的明细列表中定义别名。 在[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中了解如何&#x200B;**使用枚举**。

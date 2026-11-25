@@ -49,9 +49,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '3476'
+source-wordcount: '3478'
 ht-degree: 6%
 ---
 # 了解投放失败 {#delivery-failures}
@@ -82,7 +82,7 @@ ht-degree: 6%
 
 **Ignored**&#x200B;错误类型已知为临时错误，如“不在办公室”，或技术错误，例如，如果发件人类型为“邮递员”。
 
-反馈循环的运行方式与退回电子邮件类似：当用户将电子邮件标记为垃圾邮件时，您可以在Adobe Campaign中配置电子邮件规则以阻止向该用户的所有投放。 即使这些用户没有单击退订链接，也会对其地址进行列入阻止列表。 地址已添加到(**NmsAddress**)隔离表，但未添加到(**NmsRecipient**)状态为&#x200B;**[!UICONTROL Denylisted]**&#x200B;的收件人表。 在[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#feedback-loops){target="_blank"}中了解有关反馈循环机制的更多信息。
+反馈循环的运行方式与退回电子邮件类似：当用户将电子邮件标记为垃圾邮件时，您可以在Adobe Campaign中配置电子邮件规则以阻止向该用户的所有投放。 即使这些用户没有单击退订链接，也会对其地址进行列入阻止列表。 地址已添加到(**NmsAddress**)隔离表，但未添加到(**NmsRecipient**)状态为&#x200B;**[!UICONTROL Denylisted]**&#x200B;的收件人表。 在[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops){target="_blank"}中了解有关反馈循环机制的更多信息。
 
 ## 同步和异步错误 {#synchronous-and-asynchronous-errors}
 
@@ -159,7 +159,7 @@ Campaign投放中的有效期设置限制为&#x200B;**3.5天或更短**。 对�
 
 当下一次重试在过期时间后进行时，消息可能会在其有效期结束之前过期。 然后，投放日志显示上次投放尝试的失败。
 
-<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html?lang=zh-Hans#defining-validity-period){target="_blank"}.-->
+<!--For more on the validity period, see the [Adobe Campaign Classic v7 documentation](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/key-steps-when-creating-a-delivery/steps-sending-the-delivery.html#defining-validity-period){target="_blank"}.-->
 
 
 ## 电子邮件错误类型 {#email-error-types}
@@ -698,7 +698,7 @@ Android V2隔离机制使用与Android V1相同的过程，该过程同样适用
 
 +++
 
-扩展通用SMPP连接器的&#x200B;**&#x200B;**
+扩展通用SMPP连接器的&#x200B;****
 
 使用SMPP协议发送短信消息时，错误管理的处理方式不同。
 
@@ -714,7 +714,7 @@ SMPP连接器从使用正则表达式（正则表达式）返回的SR（状态�
 
 生成的消息示例：
 
-```
+```text
 SR Generic DELIVRD 000|#MESSAGE#
 ```
 
@@ -725,8 +725,8 @@ SR Generic DELIVRD 000|#MESSAGE#
 
 * 错误消息的第三部分(**DELIVRD**)对应于使用SMS外部帐户中定义的状态提取正则表达式从SR检索到的状态代码。
 
-  此正则表达式在外部帐户的&#x200B;**[!UICONTROL SMSC specificities]**&#x200B;选项卡中指定。
-  默认情况下，正则表达式提取&#x200B;**SMPP 3.4规范**&#x200B;的&#x200B;**附录B**&#x200B;部分定义的&#x200B;**stat：**&#x200B;字段。
+  此正则表达式在外部帐户的&#x200B;**[!UICONTROL SMSC specificities]**选项卡中指定。
+  默认情况下，正则表达式提取**SMPP 3.4规范**&#x200B;的&#x200B;**附录B**&#x200B;部分定义的&#x200B;**stat：**&#x200B;字段。
 
 * 错误消息的第四部分(**000**)对应于使用SMS外部帐户中定义的错误代码提取正则表达式从SR提取的错误代码。
 
@@ -750,7 +750,7 @@ SR Generic DELIVRD 000|#MESSAGE#
 
 收件人消息失败，并出现“无法访问”错误，指出：
 
-```
+```text
 Error while compiling script 'content htmlContent' line X: `[table]` is not defined. JavaScript: error while evaluating script 'content htmlContent
 ```
 
@@ -758,25 +758,25 @@ Error while compiling script 'content htmlContent' line X: `[table]` is not defi
 
 **解决方案**：检查工作流和投放内容，明确确定哪些个性化设置试图调用相关表。 然后，在HTML中删除对此表的调用或修复到投放的映射。
 
-在[本节](personalize.md)中了解有关个性化的更多信息。
+在[开始使用个性化](personalize.md)中了解有关个性化的更多信息。
 
 ### 多个个性化值错误 {#multiple-values-error}
 
 投放失败时，投放日志中可能会显示以下错误：
 
-```
+```text
 DLV-XXXX The count of message prepared (123) is greater than the number of messages to send (111). Please contact support.
 ```
 
 **原因**：电子邮件中有一个个性化字段或块，该字段或块对收件人具有多个值。 正在使用个性化块，并且正在为特定收件人获取多个记录。
 
-**解决方案**：检查使用的个性化数据，然后检查目标，查找具有多个条目的收件人的任意这些字段。 您还可以在投放活动之前的定位工作流中使用&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动，以确保一次只有一个个性化字段。 有关重复数据删除的详细信息，请参阅[工作流文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=zh-Hans){target="_blank"}。
+**解决方案**：检查使用的个性化数据，然后检查目标，查找具有多个条目的收件人的任意这些字段。 您还可以在投放活动之前的定位工作流中使用&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动，以确保一次只有一个个性化字段。 有关重复数据删除的详细信息，请参阅[工作流文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}。
 
 ### 自动回复处理 {#auto-reply-handling}
 
 某些投放可能会失败，并出现“Unreachable”（无法访问）错误，并指出：
 
-```
+```text
 Inbound email bounce (rule 'Auto_replies' has matched this bounce).
 ```
 

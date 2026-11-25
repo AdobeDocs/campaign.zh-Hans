@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1204'
 ht-degree: 1%
 ---
 # 创建并发布事务性消息传递模板{#template-transactional-messages}
@@ -113,7 +113,7 @@ ht-degree: 1%
 
    ![](assets/messagecenter_create_seed_2.png)
 
-1. 插入测试数据。 [请参阅Campaign Classic v7文档以了解有关个性化数据的更多信息](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
+1. 插入测试数据。 [请参阅Campaign Classic v7文档以了解有关个性化数据的更多信息](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
 
    ![](assets/messagecenter_create_custo_3.png)
 
@@ -162,7 +162,7 @@ This information enables you to personalize message content using personalizatio
 
 发送验证的过程与发送任何投放的过程相同。
 
-在[本节](../send/preview-and-proof.md#proofs-send)中了解有关校样的更多信息。
+在[发送校样](../send/preview-and-proof.md#proofs-send)中了解有关校样的更多信息。
 
 但是，要发送事务型消息的验证，您需要执行以下操作：
 
@@ -214,7 +214,7 @@ Publication lets you automatically create two message templates on the execution
 >无论何时对模板进行更改，请确保再次发布模板，以便这些更改在事务型消息投放期间生效。
 
 1. 转到树的&#x200B;**[!UICONTROL Message Center > Transactional message templates]**&#x200B;文件夹。
-1. Select要发布的模板<!--on your execution instances-->。
+1. 选择要发布的模板<!--on your execution instances-->。
 1. 单击 **[!UICONTROL Publish]**。
 
    ![](assets/messagecenter_publish_template.png)
@@ -246,7 +246,7 @@ Publication lets you automatically create two message templates on the execution
 要取消发布事务型消息模板，请执行以下步骤。
 
 1. 浏览到&#x200B;**[!UICONTROL Message Center > Transactional message templates]**&#x200B;文件夹。
-1. Select要取消发布的模板。
+1. 选择要取消发布的模板。
 1. 单击 **[!UICONTROL Unpublish]**。
 1. 单击 **[!UICONTROL Start]**。
 

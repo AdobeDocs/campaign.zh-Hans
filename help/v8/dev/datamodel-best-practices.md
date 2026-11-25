@@ -49,10 +49,10 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '2776'
-ht-degree: 5%
+source-wordcount: '2783'
+ht-degree: 4%
 ---
 # 数据模型最佳实践 {#data-model-best-practices}
 
@@ -60,11 +60,11 @@ ht-degree: 5%
 
 Adobe Campaign系统非常灵活，可以在初始实施之后扩展。 但是，尽管可能性是无限的，但做出明智决策并奠定坚实的基础来开始设计数据模型至关重要。
 
-要更好地了解Campaign内置表以及它们之间的关系，请参阅[此部分](datamodel.md)。
+要更好地了解Campaign内置表以及它们之间的关系，请参阅[开始使用Campaign数据模型](datamodel.md)。
 
-阅读[此部分](schemas.md)以开始使用Campaign架构。
+阅读[使用Campaign架构](schemas.md)以开始使用Campaign架构。
 
-在[本页](extend-schema.md)中了解如何配置扩展架构以扩展Adobe Campaign数据库的概念数据模型。
+了解如何在[扩展Campaign架构](extend-schema.md)中配置扩展架构以扩展Adobe Campaign数据库的概念数据模型。
 
 ## 数据模型架构 {#data-model-architecture}
 
@@ -136,7 +136,7 @@ Adobe Campaign资源具有三个标识符，可以添加额外的标识符。
 
 在[Enterprise (FFDA)部署](../architecture/enterprise-deployment.md)的上下文中，Adobe Campaign主键是为所有内置表自动生成的UUID。 UUID也可用于自定义表。 [了解详情](../architecture/keys.md)
 
-即使ID的数量是无限的，您也应该注意数据库的大小以确保最佳性能。 要防止出现任何问题，请确保调整实例清除设置。 有关更多信息，请参阅[此小节](#data-retention)。
+即使ID的数量是无限的，您也应该注意数据库的大小以确保最佳性能。 要防止出现任何问题，请确保调整实例清除设置。 有关此内容的详细信息，请参阅[数据保留](#data-retention)。
 
 
 ## 自定义内部键 {#custom-internal-keys}
@@ -257,7 +257,7 @@ Adobe Campaign依赖于第三方数据库引擎。 根据提供商的不同，�
 
 * **小型**&#x200B;表类似于投放表。
 * **中等大小**&#x200B;表与收件人表的大小相同。 每个客户都有一笔记录。
-* **large-size**&#x200B;表类似于Broad日志表。 每个客户都有许多记录。
+* **large-size**表类似于Broad日志表。 每个客户都有许多记录。
 例如，如果数据库包含1000万条收件人，则Broad日志表将包含约1亿到2亿条消息，而Delivery表将包含数千条记录。
 
 行数也会影响性能。 Adobe Campaign数据库的设计宗旨并非存储当前未用于定位或个性化目的的历史数据 — 这是一个操作数据库。

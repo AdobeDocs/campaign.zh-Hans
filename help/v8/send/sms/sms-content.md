@@ -29,9 +29,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '256'
 ht-degree: 1%
 ---
 # 定义短信的内容 {#sms-content}
@@ -50,7 +50,7 @@ ht-degree: 1%
 
    ![](assets/sms_perso_recipient.png){zoomable="yes"}
 
-   在[本节](../personalize.md)中了解有关Adobe Campaign中个性化的更多信息。
+   在[开始使用个性化](../personalize.md)中了解有关Adobe Campaign中个性化的更多信息。
 
 1. 您可以从&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡预览投放内容。 要检查您的个性化设置，请单击&#x200B;**[!UICONTROL Test personalization]**&#x200B;下拉列表，然后选择收件人。
 

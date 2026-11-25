@@ -27,9 +27,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '895'
 ht-degree: 1%
 ---
 # 个性化产品建议券{#personalized-coupons}
@@ -77,7 +77,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >可以批量导入单个优惠券。 有关导入和导出的详细信息，请参阅[此部分](../start/import.md)。
+   >可以批量导入单个优惠券。 有关导入和导出的详细信息，请参阅[用户档案入门](../start/import.md)。
 
 ### 配置单个优惠券 {#configuring-individual-coupons}
 
@@ -94,7 +94,7 @@ ht-degree: 1%
 
 ## 在电子邮件投放中插入优惠券 {#inserting-a-coupon-into-an-email-delivery}
 
-在下面的示例中，从主页创建投放。 有关如何创建投放的详细说明，请参阅[此章节](email.md)。
+在下面的示例中，从主页创建投放。 有关如何创建投放的详细说明，请参阅[使用Adobe Campaign发送电子邮件](email.md)。
 1. 转到&#x200B;**[!UICONTROL Campaigns]**&#x200B;并选择&#x200B;**[!UICONTROL Deliveries]**。
 1. 单击 **[!UICONTROL Create]**。
 
@@ -170,7 +170,7 @@ ht-degree: 1%
 >
 >默认情况下，优惠券管理模块使用&#x200B;**nms:recipient**&#x200B;表。 [了解详情](../dev/datamodel.md#ootb-profiles)。
 >
->在此页面[&#128279;](../dev/custom-recipient.md)中了解如何使用自定义收件人表。
+>在此页面](../dev/custom-recipient.md)中了解如何使用自定义收件人表[。
 
 ## 管理优惠券不足 {#managing-insufficient-coupons}
 

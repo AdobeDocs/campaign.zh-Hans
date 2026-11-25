@@ -19,10 +19,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 4%
+source-wordcount: '238'
+ht-degree: 0%
 ---
 # 使用API检索用户档案 {#retrieving-profiles}
 
@@ -30,7 +30,7 @@ ht-degree: 4%
 
 然后，您可以使用过滤器、排序和分页来优化搜索。 有关详细信息，请参阅[其他操作](sorting.md)部分。
 
-此外，Campaign Standard API允许您根据以下字段之一搜索用户档案：电子邮件、名字、姓氏或任何自定义字段。 如需详细信息，请参阅[此小节](#searching-field)。
+此外，Campaign Standard API允许您根据以下字段之一搜索用户档案：电子邮件、名字、姓氏或任何自定义字段。 有关详细信息，请参阅[根据字段](#searching-field)搜索用户档案。
 
 <br/>
 
@@ -38,7 +38,7 @@ ht-degree: 4%
 
 * 用于检索所有配置文件的示例GET请求。
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -48,7 +48,7 @@ ht-degree: 4%
 
   对请求的响应。
 
-  ```
+  ```json
   {
       "content": [
           {
@@ -64,7 +64,7 @@ ht-degree: 4%
 
 * 用于检索前10个电子邮件值的示例GET请求。
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/email?_lineCount=10 \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -74,7 +74,7 @@ ht-degree: 4%
 
   对请求的响应。 “next”节点会返回用于访问10个下一个电子邮件值的URL。
 
-  ```
+  ```json
   {
   "content": [
       "amy.dakota@mail.com",
@@ -107,7 +107,7 @@ ht-degree: 4%
 
 * 根据名字筛选用户档案的示例请求。
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/byText?text=John&filterType=firstName \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -117,7 +117,7 @@ ht-degree: 4%
 
 * 根据姓氏筛选用户档案的示例请求。
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/byText?text=Miller&filterType=lastName \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -127,7 +127,7 @@ ht-degree: 4%
 
 * 根据电子邮件筛选用户档案的示例请求。
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/byText?text=John%40gmail.com&filterType=email \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -137,7 +137,7 @@ ht-degree: 4%
 
 * 根据“爱好”自定义字段筛选用户档案的示例请求。
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/byText?cusHobby=Dancing&filterType=Hobby \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \

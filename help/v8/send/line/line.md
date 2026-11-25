@@ -75,7 +75,7 @@ LINE 是一款免费即时消息、语音和视频通话应用程序，可在所
 
 1. 从&#x200B;**[!UICONTROL Type]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL LINE]**。
 
-   在“类型”下拉列表](assets/line_service_2.png)中选择LINE的![服务创建对话框
+   在“类型”下拉列表![&#128279;](assets/line_service_2.png)中选择LINE的服务创建对话框
 
 1. 单击 **[!UICONTROL Save]**。
 
@@ -244,7 +244,7 @@ LINE 是一款免费即时消息、语音和视频通话应用程序，可在所
 
 对于[!DNL LINE]服务报告，请从&#x200B;**[!UICONTROL Explorer]**&#x200B;选项卡访问菜单&#x200B;**[!UICONTROL Profiles and Targets]** > **[!UICONTROL Services and Subscriptions]** > **[!UICONTROL LINE-V2]**。 然后单击[!DNL LINE]服务中的&#x200B;**[!UICONTROL Reports]**&#x200B;图标。
 
-在“常规”](assets/line_reports.png)旁边突出显示“报告”选项卡的![LINESVC服务仪表板
+在“常规”![&#128279;](assets/line_reports.png)旁边突出显示“报告”选项卡的LINESVC服务仪表板
 
 ## 示例：创建和发送个性化LINE消息 {#example--create-and-send-a-personalized-line-message}
 

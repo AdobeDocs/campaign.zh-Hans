@@ -105,7 +105,7 @@ ht-degree: 7%
 
      在[添加指向镜像页面的链接](mirror-page.md#link-to-mirror-page)中了解有关管理镜像页面的更多信息。
 
-1. 您可以为电子邮件定义其他参数，如将邮件副本发送到密件抄送地址、更改邮件格式、设置特定编码等。在Adobe Campaign](email-parameters.md)的[电子邮件参数中了解详情。
+1. 您可以为电子邮件定义其他参数，如将邮件副本发送到密件抄送地址、更改邮件格式、设置特定编码等。在Adobe Campaign[&#128279;](email-parameters.md)的电子邮件参数中了解详情。
 
 1. 内容准备就绪后，单击&#x200B;**保存**：该内容现在将显示在&#x200B;**[!UICONTROL Campaigns > Deliveries]**&#x200B;选项卡的投放列表中。
 

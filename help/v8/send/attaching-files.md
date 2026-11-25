@@ -43,7 +43,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->此类配置通常在投放模板中执行。 有关详细信息，请参见此 [ 页面](../send/create-templates.md)。
+>此类配置通常在投放模板中执行。 有关详细信息，请参见此 [&#x200B; 页面](../send/create-templates.md)。
 
 ## 护栏 {#attachments-guardrails}
 
@@ -69,7 +69,7 @@ Adobe还建议限制附加文件的大小和数量。 默认情况下，您只�
 
 您还可以直接将文件拖放到投放&#x200B;**[!UICONTROL Attachments]**&#x200B;字段中，或使用投放助理工具栏中的&#x200B;**[!UICONTROL Attach]**&#x200B;图标，
 
-在投放助理工具栏中，电子邮件参数部分](assets/s_ncs_user_wizard_add_file_ico.png)旁边的![附加图标
+在投放助理工具栏中，电子邮件参数部分![&#128279;](assets/s_ncs_user_wizard_add_file_ico.png)旁边的附加图标
 
 选择文件后，会立即将其上传到服务器，以便在交付时可用。 它列在&#x200B;**[!UICONTROL Attachments]**&#x200B;字段中。
 

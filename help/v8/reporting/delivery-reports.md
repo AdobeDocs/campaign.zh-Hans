@@ -23,10 +23,10 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: d027f76f86f34524ddf5b620de32cdcc98e60d21
+source-git-commit: 63e73a31c5c46cb7544917557c3a0670d7ac91c9
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 8%
+source-wordcount: '1071'
+ht-degree: 7%
 ---
 # 投放报告 {#delivery-reports}
 
@@ -38,7 +38,7 @@ ht-degree: 8%
 1. 单击要访问其报告的投放的名称。
 1. 选择&#x200B;**[!UICONTROL Summary]**&#x200B;选项卡并单击&#x200B;**[!UICONTROL Reports]**&#x200B;链接以访问特定于投放的报告。
 
-   ![](assets/detailed-report-2.png)
+   ![突出显示“报告”链接的“传递摘要”选项卡，列出可用的传递报告。](assets/detailed-report-2.png)
 
    默认情况下，可以使用以下报表：
 
@@ -64,7 +64,7 @@ ht-degree: 8%
 >
 >根据消息打开次数计算的值始终为估计值，这是因为文本格式中链接至电子邮件的错误边距。 **[!UICONTROL Distinct opens/Sum of opens for the population reached]**&#x200B;指标考虑此错误边距。 [了解详情](metrics-calculation.md#tracking-opens-)。
 
-![](assets/tracking-report-synthesis.png)
+![包含四个编号部分（从“投放统计信息”到“生成的点击流”）的跟踪指标报告。](assets/tracking-report-synthesis.png)
 
 **[!UICONTROL 1. Delivery statistics]**
 
@@ -101,7 +101,7 @@ ht-degree: 8%
 >
 >此报告中显示的域名在多维数据集级别使用的明细列表中定义。 要更改、添加或删除默认域，请编辑&#x200B;**[!UICONTROL Domains]**&#x200B;明细列表并修改值和别名。 **[!UICONTROL Others]**&#x200B;类别包括不属于明细列表任何值的域名。
 >
->在[此页面](../config/enumerations.md)中了解如何访问和配置枚举。
+>了解如何在[管理枚举](../config/enumerations.md)中访问和配置您的枚举。
 
 
 **[!UICONTROL 4. Generated click streams]**
@@ -168,7 +168,7 @@ This chart shows the breakdown of cumulated clicks per day.
 
 此报表提供有关投放的所有主要信息。
 
-![](assets/user-report-summary.png)
+![包含初始目标群体、排除原因和投放统计信息部分的投放报告摘要。](assets/user-report-summary.png)
 
 **[!UICONTROL Target population]**
 

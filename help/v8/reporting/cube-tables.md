@@ -29,9 +29,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 82ae202007873dab2324bfa4b13a6014efd19887
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '1279'
 ht-degree: 1%
 ---
 # 使用多维数据集浏览数据{#use-cubes-to-create-reports}
@@ -52,17 +52,17 @@ ht-degree: 1%
 
 1. 单击&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡的&#x200B;**[!UICONTROL Create]**&#x200B;按钮，然后选择刚刚创建的多维数据集。
 
-   ![](assets/new-report-based-on-cube.png)
+   ![使用“新建客户端配置文件”多维数据集模板和“创建”按钮创建新报告页面](assets/new-report-based-on-cube.png)
 
 1. 单击&#x200B;**[!UICONTROL Create]**&#x200B;按钮确认：这会将您转到报告配置和查看页面。
 
    默认情况下，前两个可用尺寸以行和列提供，但表中不显示任何值。 要生成表，请单击主图标：
 
-   ![](assets/cube-report-config.png)
+   ![具有年龄和创建日期轴以及显示数据透视表的图标的新客户端配置文件报表](assets/cube-report-config.png)
 
 1. 可以切换尺寸的轴、删除它们、添加新测量等。要实现此目的，请使用相应的图标。
 
-   ![](assets/cube-switch-axis.png)
+   ![在新建客户端配置文件报表中，创建日期维度从左轴拖动到年龄旁边的上轴](assets/cube-switch-axis.png)
 
    这些操作详见下文。
 
@@ -72,15 +72,15 @@ ht-degree: 1%
 
 每个轴上的&#x200B;**[!UICONTROL Add]**&#x200B;按钮允许您添加维度。
 
-![](assets/cube-switch.png)
+![添加用于添加维度的新客户端配置文件报表的行轴上的添加按钮](assets/cube-switch.png)
 
 1. 选择要显示在表的行和列中的尺寸。 为此，请拖放可用的维度。
 1. 从列表中选择要添加到表中的维：
-   ![](assets/cube-select-dimension.png)
+   ![将维度添加到列有城市、国家/地区、上次购买日期和购买金额的列对话框中](assets/cube-select-dimension.png)
 
 1. 然后选择此尺寸的参数。
 
-   ![](assets/cube-dimension-param.png)
+   ![城市的Dimension设置：标签、加载时展开、数据排序、显示行的顺序和行数](assets/cube-dimension-param.png)
 
    这些参数取决于所选维的数据类型。
 
@@ -88,7 +88,7 @@ ht-degree: 1%
 
    在这种情况下，可以使用以下选项：
 
-   ![](assets/cube-config.png)
+   ![每个级别、年份和月份的日期维度设置，包括长格式或短格式](assets/cube-config.png)
 
    您可以：
 
@@ -102,7 +102,7 @@ ht-degree: 1%
 
    表上方的黄色横幅显示您已进行更改：单击&#x200B;**[!UICONTROL Save]**&#x200B;按钮进行保存。
 
-   ![](assets/cube-in-report.png)
+   ![城市已添加到折线轴，黄色横幅提示您保存报告更改](assets/cube-in-report.png)
 
 ### 步骤3 — 配置要显示的度量 {#step-3---configure-the-measures-to-display}
 
@@ -112,25 +112,25 @@ ht-degree: 1%
 
 1. 单击 **[!UICONTROL Measures]** 按钮。
 
-   ![](assets/cube-measure-button.png)
+   ![使用“标签”、“格式”和“单位”选项打开“配置度量”对话框的“度量”按钮](assets/cube-measure-button.png)
 
 1. 使用&#x200B;**[!UICONTROL Use a measure]**&#x200B;按钮，选择现有度量之一。
 
-   ![](assets/cube-add-measure.png)
+   ![将现有度量值添加到列有法语、德语、男性和女性的透视表对话框中](assets/cube-add-measure.png)
 
    选择要显示的信息和格式选项。 选项列表取决于测量类型。
 
-   ![](assets/cube-measure-options.png)
+   ![使用“格式选项”“数字”和“百分比”配置“度量”对话框并编辑“动态度量”按钮](assets/cube-measure-options.png)
 
    通过标题中的&#x200B;**[!UICONTROL Edit the configuration of the pivot table]**&#x200B;图标，还可以使用整体度量值配置。
 
-   ![](assets/cube-pivot-table-config.png)
+   ![在报表工具栏中编辑数据透视表配置图标](assets/cube-pivot-table-config.png)
 
    然后，您可以选择是否显示度量标签。 [了解详情](customize-cubes.md#configuring-the-display)。
 
 1. 您可以基于现有度量构建新度量。 为此，请单击&#x200B;**[!UICONTROL Create a measure]**&#x200B;并进行配置。
 
-   ![](assets/cube-create-new-measure.png)
+   ![使用度量类型、运算符和两个度量的组合创建动态度量对话框](assets/cube-create-new-measure.png)
 
    可用的测量类型如下：
 
@@ -144,7 +144,7 @@ ht-degree: 1%
 
    创建之后，度量会添加到报表中。
 
-   ![](assets/cube-display-new-measure.png)
+   ![数据透视表按公司在“男女”旁显示新的德语和英语度量值](assets/cube-display-new-measure.png)
 
    创建测量后，可以对其进行编辑并更改其配置。 为此，请单击&#x200B;**[!UICONTROL Measures]**&#x200B;按钮，然后浏览到要编辑的度量的选项卡。
 
@@ -158,31 +158,31 @@ ht-degree: 1%
 
 1. 单击包含要收集的群体的单元格以选择它们，然后单击&#x200B;**[!UICONTROL Add to cart]**&#x200B;图标。
 
-   ![](assets/cube-add-to-cart.png)
+   ![在包含选定单元格的CLIENTS数据透视表的工具栏中，添加到购物车图标](assets/cube-add-to-cart.png)
 
    根据需要执行此操作多次，以收集各种用户档案。
 
 1. 单击&#x200B;**[!UICONTROL Show cart]**&#x200B;按钮以查看其内容，然后再运行导出。
 
-   ![](assets/cube-show-cart.png)
+   ![显示购物车按钮打开包含购物车项目的购物车详细信息对话框和导出按钮](assets/cube-show-cart.png)
 
 1. 使用&#x200B;**[!UICONTROL Export]**&#x200B;按钮将购物车中的项目分组到列表中。
 
    输入列表名称并选择要执行的导出类型。
 
-   ![](assets/cube-export-report.png)
+   ![导出到新列表、标签、文件夹和导出类型以及“开始”按钮的导出购物车1/2对话框](assets/cube-export-report.png)
 
    单击&#x200B;**[!UICONTROL Start]**&#x200B;以运行导出。
 
 1. 导出完成后，将显示一条消息，确认其执行和已处理的记录数。
 
-   ![](assets/cube-export-confirm.png)
+   ![导出购物车2/2对话框确认导出已完成，记录数已达，并关闭按钮](assets/cube-export-confirm.png)
 
    您可以保存购物车的内容或将其清空。
 
    新列表可通过&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;选项卡使用。
 
-   ![](assets/cube-list-available.png)
+   ![在“配置文件和目标”下列出页面，显示新的金牌收件人列表](assets/cube-list-available.png)
 
 ## 在报表中插入数据透视表 {#insert-a-pivot-table-into-a-report}
 
@@ -190,10 +190,10 @@ ht-degree: 1%
 
 1. 创建一个具有单个页面的新报表，并在其中插入数据透视表。
 
-   ![](assets/cube-insert-in-report.png)
+   ![具有页面活动和工具栏菜单中的透视表选项的报表编辑器](assets/cube-insert-in-report.png)
 
 1. 在该页的&#x200B;**[!UICONTROL Data]**&#x200B;选项卡中，选择一个多维数据集以处理它包含的维并显示计算的度量。
 
-   ![](assets/cube-selected-in-report.png)
+   在Cube字段中选择了New Client Profile多维数据集的透视表的![数据选项卡](assets/cube-selected-in-report.png)
 
    这样，您就可以构建要显示的报表。 有关详细信息，请参阅[第2步 — 选择行和列](#step-2---select-lines-and-columns)。

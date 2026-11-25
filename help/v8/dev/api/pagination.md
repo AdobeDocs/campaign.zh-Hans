@@ -18,7 +18,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 1%
@@ -41,7 +41,7 @@ ht-degree: 1%
 
 显示配置文件资源1条记录的示例GET请求。
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile?_lineCount=1 \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 响应请求，使用&#x200B;**next**&#x200B;节点执行分页。
 
-```
+```json
 {
     "content": [
         {
@@ -72,7 +72,7 @@ ht-degree: 1%
 
 默认情况下，在与具有大量数据的表交互时，**next**&#x200B;节点不可用。 若要执行分页，必须将&#x200B;**_forcePagination=true**&#x200B;参数添加到调用URL中。
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile?_forcePagination=true \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \

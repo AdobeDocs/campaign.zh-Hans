@@ -36,10 +36,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 6%
+source-wordcount: '449'
+ht-degree: 5%
 ---
 # 使用目标映射{#gs-target-mappings}
 
@@ -71,7 +71,7 @@ Adobe Campaign附带以下内置目标映射：
 * 您使用自定义收件人表，
 * 您可以配置一个过滤维度，它与“目标映射”屏幕上的内置定向维度不同。
 
-在[此页面](../dev/custom-recipient.md)中了解有关自定义收件人表的更多信息。
+在[更改您的默认收件人表](../dev/custom-recipient.md)中了解有关自定义收件人表的详细信息。
 
 Adobe Campaign目标映射创建向导可帮助您创建使用自定义目标映射所需的所有架构。
 
@@ -79,16 +79,16 @@ Adobe Campaign目标映射创建向导可帮助您创建使用自定义目标映
 
 1. 创建新的目标映射，并选择自定义架构作为定向维度。
 
-   ![](assets/new-target-mapping.png)
+   ![Select的“新建目标映射”向导的定位维度步骤，其中包含“标签客户端”和“定位维度合同”。](assets/new-target-mapping.png)
 
 
 1. 指示存储用户档案信息的字段：姓氏、名字、电子邮件、地址等。
 
-   ![](assets/wf_new_mapping_define_join.png)
+   ![编辑地址表单步骤，其中每个投放地址字段（如电子邮件）都链接到新维度的字段。](assets/wf_new_mapping_define_join.png)
 
 1. 指定用于信息存储的参数，包括扩展架构的后缀，以便轻松识别它们。
 
-   ![](assets/wf_new_mapping_define_names.png)
+   ![存储步骤，包含用于存储排除项和消息的命名空间、扩展架构的后缀和排除项选项。](assets/wf_new_mapping_define_names.png)
 
    您可以选择是存储排除项(**excludelog**)、包含消息(**broadlog**)还是存储在单独的表中。
 
@@ -96,6 +96,6 @@ Adobe Campaign目标映射创建向导可帮助您创建使用自定义目标映
 
 1. 然后，选择要考虑的扩展。 扩展类型取决于您的Campaign设置和加载项。
 
-   ![](assets/wf_new_mapping_define_extensions.png)
+   在优惠引擎下选择了“为建议生成存储架构”选项的![扩展步骤。](assets/wf_new_mapping_define_extensions.png)
 
    单击&#x200B;**[!UICONTROL Save]**&#x200B;按钮以启动投放映射创建：根据所选参数自动创建所有链接表。

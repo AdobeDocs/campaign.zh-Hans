@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
     internal-label: Measurement
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 63e73a31c5c46cb7544917557c3a0670d7ac91c9
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1189'
 ht-degree: 3%
 ---
 # Adobe Campaign内置报告 {#ootb-reports}
@@ -57,32 +57,32 @@ ht-degree: 3%
 
 1. 选择Adobe Campaign界面的&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡。
 
-   ![](assets/reporting-access-from-home.png)
+   ![&#x200B; Campaign主页中突出显示的“报告”选项卡，显示内置报告的全局报告列表。](assets/reporting-access-from-home.png)
 
 1. 使用搜索字段筛选显示的报表。
 
 1. 然后，单击要显示的报表。
 
-   ![](assets/edit-a-report.png)
+   ![使用预算搜索字段筛选的全局报告列表，显示要打开的匹配报告。](assets/edit-a-report.png)
 
 1. 单击屏幕顶部的&#x200B;**[!UICONTROL Back]**&#x200B;链接以返回报告列表。
 
-   ![](assets/back-button.png)
+   ![成本分析报告，在右上角突出显示“返回”按钮以返回报告列表。](assets/back-button.png)
 
 特定于活动或投放的报告可通过其各自的仪表板访问。
 
-![](assets/reporting-on-delivery.png)
+![已突出显示“报表”链接的投放仪表板，其中列出了投放报表。](assets/reporting-on-delivery.png)
 
 列表、服务、选件等的原理相同，如下所示：
 
-![](assets/reporting-on-offer.png)
+![突出显示报告链接的列表仪表板以访问列表报告。](assets/reporting-on-offer.png)
 
 
 ## 投放报告 {#reports-on-deliveries}
 
 下表显示了Adobe Campaign提供的内置报告。
 
-有关这些报告内容的详细信息，请参阅[此部分](delivery-reports.md)。
+有关这些报告内容的更多信息，请参阅[Adobe Campaign内置投放报告](delivery-reports.md)。
 
 <table> 
  <tbody> 

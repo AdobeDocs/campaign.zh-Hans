@@ -25,10 +25,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 13%
+source-wordcount: '987'
+ht-degree: 10%
 ---
 # 在列表中创建受众 {#create-segments}
 
@@ -38,7 +38,7 @@ ht-degree: 13%
 
 通过&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Lists]**&#x200B;链接创建和管理列表。 这些列表基于默认的Adobe Campaign配置文件表(nms:recipient)。 [了解详情](../dev/datamodel.md#ootb-profiles)
 
-![](assets/list-dashboard.png)
+![在“配置文件和目标”下显示现有列表和“创建”按钮的列表页面](assets/list-dashboard.png)
 
 您可以使用工作流中的&#x200B;**更新列表**&#x200B;活动创建列表。 此活动会将生成的群体存储到列表中。 使用它创建新列表或更新现有列表。 要创建包含内置用户档案表以外的其他类型数据的列表，必须运行工作流。 例如，通过在访客表上使用查询，然后更新列表，您可以创建访客列表。 [了解详情](#create-a-list-wf)。
 
@@ -53,11 +53,11 @@ ht-degree: 13%
 
 1. 单击&#x200B;**[!UICONTROL Create]**&#x200B;按钮并选择&#x200B;**[!UICONTROL New list]**。
 
-   ![](assets/new-list.png)
+   ![使用“新建列表”选项在“列表”页面上创建菜单](assets/new-list.png)
 
 1. 在列表创建窗口的&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中输入信息。
 
-   ![](assets/list-details.png)
+   ![列表创建窗口的编辑选项卡，包含标签、内部名称、列表类型、架构和文件夹字段](assets/list-details.png)
 
    * 在&#x200B;**[!UICONTROL Label]**&#x200B;字段中输入列表名称，并根据需要更改内部名称。
    * 添加此列表的描述。
@@ -66,7 +66,7 @@ ht-degree: 13%
 
 1. 在&#x200B;**[!UICONTROL Content]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Add]**&#x200B;以选择属于该列表的用户档案。
 
-   ![](assets/add-profiles-to-a-list.png)
+   ![使用从数据集文件夹中选择的多个收件人将收件人添加到列表对话框](assets/add-profiles-to-a-list.png)
 
    您可以使用&#x200B;**[!UICONTROL Create]**&#x200B;图标创建新配置文件并将其直接从此窗口添加到列表中。 该用户档案也会被添加到数据库中。
 
@@ -83,15 +83,15 @@ ht-degree: 13%
 
 1. 选择 **[!UICONTROL Actions > Associate selection with a list...]**。
 
-   ![](assets/add-selection-to-a-list.png)
+   ![具有“将选定内容与列表关联”选项的“操作”菜单（针对选定的收件人）](assets/add-selection-to-a-list.png)
 
 1. 选择现有列表或创建新列表，然后单击&#x200B;**[!UICONTROL Next]**。
 
-   ![](assets/select-the-list.png)
+   ![已选定列表且“下一步”按钮为“收件人和列表向导”的“Select”列表步骤](assets/select-the-list.png)
 
 1. 单击 **[!UICONTROL Start]** 按钮。
 
-   ![](assets/record-a-list.png)
+   ![使用“重新创建列表”选项和“开始”按钮在向导的列表步骤中记录](assets/record-a-list.png)
 
 选择&#x200B;**[!UICONTROL Recreate the list]**&#x200B;选项可从列表中删除现有内容并优化列表的创建（无需查询即可验证用户档案是否已链接到列表）。
 
@@ -111,22 +111,22 @@ ht-degree: 13%
 1. 选择&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;和&#x200B;**[!UICONTROL Targeting workflows]**，然后从&#x200B;**[!UICONTROL Create]**&#x200B;按钮创建新工作流。
 1. 输入此工作流的标签，例如“25-40位联系人”，添加说明，然后单击&#x200B;**[!UICONTROL Next]**。
 
-   ![](assets/targeting-wf-sample.png)
+   ![定位工作流中新增了为25-40个联系人填写了标签和说明的工作流对话框](assets/targeting-wf-sample.png)
 
 1. 插入&#x200B;**[!UICONTROL Query]**&#x200B;活动以定义目标群体，并编辑查询。
 
-   ![](assets/targeting-wf-edit-query.png)
+   ![具有编辑查询链接的查询活动以及具有过滤条件的定位和过滤维度步骤](assets/targeting-wf-edit-query.png)
 
 1. 定义筛选条件，如下所示：
 
-   ![](assets/targeting-wf-age-filter.png)
+   年龄大于或等于25岁且小于或等于40岁的查询的![筛选步骤](assets/targeting-wf-age-filter.png)
 
    在[本节](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"}中了解如何在工作流中创建查询。
 
 1. 为此查询添加标签并保存更改。
 1. 添加&#x200B;**[!UICONTROL List update]**&#x200B;活动并进行编辑。
 
-   ![](assets/list-update-activity.png)
+   ![使用列表创建和文件夹选项以及“确定”按钮，列出工作流中的更新活动设置](assets/list-update-activity.png)
 
 1. 输入活动的标签。
 1. 选择&#x200B;**[!UICONTROL Create the list if necessary (Computed name)]**&#x200B;选项可显示将在执行第一个工作流后创建列表，然后使用以下执行进行更新。
@@ -140,7 +140,7 @@ ht-degree: 13%
 
    随后将创建匹配的收件人列表。 您可以从主页的&#x200B;**[!UICONTROL Lists]**&#x200B;条目访问此列表。
 
-   ![](assets/access-new-list.png)
+   ![列表页面，在顶部显示从“列表”条目访问的新25-40位联系人列表](assets/access-new-list.png)
 
    您可以通过向工作流添加调度程序使此工作流重复出现。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=zh-Hans){target="_blank"}。
 

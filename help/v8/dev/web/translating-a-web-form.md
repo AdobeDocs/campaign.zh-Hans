@@ -26,7 +26,7 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '1583'
 ht-degree: 0%
@@ -178,13 +178,13 @@ Adobe Campaign收集在所有静态元素的&#x200B;**[!UICONTROL Texts]**&#x200
 
 Web窗体以Web应用程序属性的&#x200B;**[!UICONTROL Localization]**&#x200B;选项卡中指定的默认语言显示。 要更改语言，您必须将以下字符添加到URL的末尾（其中&#x200B;**xx**&#x200B;是该语言的符号）：
 
-```
+```text
 ?lang=xx
 ```
 
 语言是URL的第一个参数或唯一参数。 例如：**https://myserver/webApp/APP34**
 
-```
+```text
 &lang=xx
 ```
 

@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 63e73a31c5c46cb7544917557c3a0670d7ac91c9
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '678'
 ht-degree: 2%
 ---
 # 审核记录{#audit-trail}
@@ -105,7 +105,7 @@ Adobe Campaign中的&#x200B;**[!UICONTROL Audit trail]**&#x200B;功能提供了�
 
 1. 在&#x200B;**[!UICONTROL Administration]**&#x200B;菜单下，选择&#x200B;**[!UICONTROL Audit]**，然后选择&#x200B;**[!UICONTROL Audit Trail]**。
 
-   ![](assets/audit-trail-1.png)
+   已选择“管理”、“审核”、“审核记录”和审核实体列表的![资源管理器树](assets/audit-trail-1.png)
 
 1. 此时将打开&#x200B;**[!UICONTROL Audit trail]**&#x200B;窗口，其中包含您的实体列表。 Adobe Campaign将审核其他实体的创建、编辑和删除操作。
 
@@ -119,7 +119,7 @@ Adobe Campaign中的&#x200B;**[!UICONTROL Audit trail]**&#x200B;功能提供了�
    * **[!UICONTROL Action]**：对此实体执行的最后一个操作，已创建、已修改或已删除。
    * **[!UICONTROL Modification date]**：对此实体执行的上次操作的日期。
 
-   ![](assets/audit-trail-2.png)
+   ![显示类型、实体、修改者、操作和修改日期的审核实体详细信息](assets/audit-trail-2.png)
 
 >[!NOTE]
 >
@@ -148,10 +148,10 @@ Adobe Campaign中的&#x200B;**[!UICONTROL Audit trail]**&#x200B;功能提供了�
    * 对于运算符： **[!UICONTROL XtkAudit_Operator]**
    * 对于每个实体： **[!UICONTROL XtkAudit_Enable_All]**
 
-   ![](assets/audit-trail-3.png)
+   在“管理”下的![选项列表，Platform在XtkAudit_上进行了筛选，并且选择了XtkAudit_Delivery选项](assets/audit-trail-3.png)
 
 1. 如果要启用该实体，请将&#x200B;**[!UICONTROL Value]**&#x200B;更改为1；如果要禁用该实体，请将其更改为0。
 
-   ![](assets/audit-trail-4.png)
+   值为（整数）字段设置为1的![XtkAudit_Delivery选项启用审核跟踪](assets/audit-trail-4.png)
 
 1. 单击 **[!UICONTROL Save]**。

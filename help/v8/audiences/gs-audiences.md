@@ -29,18 +29,18 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 20%
+source-wordcount: '383'
+ht-degree: 18%
 ---
 # 轮廓和受众入门{#gs-profiles-and-audiences}
 
 用户档案是存储在Campaign数据库中的联系人，例如客户、服务的订阅者或潜在客户。 有许多可能的机制可获取轮廓并创建此数据库：通过 Web 窗体在线收集、手动或自动导入文本文件、复制公司数据库或其他信息系统的内容。 借助Adobe Campaign，您可以将营销历史、购买信息、偏好、CRM数据和任何相关的PI数据整合到一个整合视图中，以便进行分析并采取行动。 用户档案包含定向、鉴别和跟踪个人所需的所有信息。
 
-配置文件是&#x200B;**nmsRecipient**&#x200B;表或外部表中的记录，用于存储所有配置文件属性，例如名字、姓氏、电子邮件地址、Cookie ID、客户ID、移动标识符或与特定渠道相关的其他信息。 链接到收件人表的其他表包含与用户档案相关的数据，例如投放日志表，其中包含发送给收件人的所有投放的记录。 在[本节](../dev/datamodel.md#ootb-profiles)中了解有关内置用户档案和收件人表的更多信息。
+配置文件是&#x200B;**nmsRecipient**&#x200B;表或外部表中的记录，用于存储所有配置文件属性，例如名字、姓氏、电子邮件地址、Cookie ID、客户ID、移动标识符或与特定渠道相关的其他信息。 链接到收件人表的其他表包含与用户档案相关的数据，例如投放日志表，其中包含发送给收件人的所有投放的记录。 在[内置配置文件表](../dev/datamodel.md#ootb-profiles)中了解有关内置配置文件和收件人表的详细信息。
 
-![](assets/recipients-in-explorer.png)
+![资源管理器树，其中选定了“收件人”节点，列出选定收件人的配置文件和详细信息。](assets/recipients-in-explorer.png)
 
 在Adobe Campaign中，**收件人**&#x200B;是发送投放内容（电子邮件、短信等）所定位的默认用户档案。
 
@@ -53,6 +53,6 @@ ht-degree: 20%
 * [映射到存储配置文件的外部数据库](../connect/fda.md)
 * 在客户端控制台中手动输入配置文件，如下所示：
 
-![](assets/create-profile.png)
+![从“收件人”页面的“创建”中打开了“新收件人”对话框，其中具有“名字”和“电子邮件”等“常规”字段。](assets/create-profile.png)
 
 导入后，您可以创建受众以发送消息。 在本节[&#128279;](create-audiences.md)中了解如何创建受众。

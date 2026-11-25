@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Reporting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 63e73a31c5c46cb7544917557c3a0670d7ac91c9
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 13%
+source-wordcount: '460'
+ht-degree: 8%
 ---
 # 报告入门{#gs-ac-reports}
 
@@ -51,11 +51,11 @@ Adobe Campaign提供本页中列出的一组报表工具。
 
   使用营销分析功能来分析和测量数据、计算统计数据、简化和优化报告创建和计算。 您可以创建报告并构建目标群体，并将这些群体存储到列表中，以便在Adobe Campaign中用于定位或分段任务。
 
-  ![](assets/create-a-report.png)
+  ![使用可用的多维数据集模板和选定的收件人模板创建新报告页面](assets/create-a-report.png)
 
   根据查询、计算和卷的复杂性，这些报告中分析的数据可以通过查询收集，并预聚合到列表（数据管理类型工作流）或多维数据集（使用Marketing Analytics）中。 它将以透视表或组列表的形式显示。
 
-  如需详细信息，请参阅[此小节](gs-cubes.md)。
+  有关详细信息，请参阅[Adobe Campaign Analytics报告入门](gs-cubes.md)。
 
 * **内置报告**
 
@@ -63,9 +63,9 @@ Adobe Campaign提供本页中列出的一组报表工具。
 
   使用&#x200B;**报告**&#x200B;选项卡访问这些报告。
 
-  ![](assets/built-in-reports.png)
+  ![显示内置报告的“全局报告”列表的“报告”选项卡，例如“广播统计信息”和“浏览器”](assets/built-in-reports.png)
 
-  如需详细信息，请参阅[此小节](built-in-reports.md)。
+  有关详细信息，请参阅[Adobe Campaign内置报告](built-in-reports.md)。
 
 * **描述性数据分析**
 
@@ -73,7 +73,7 @@ Adobe Campaign提供本页中列出的一组报表工具。
 
   使用&#x200B;**[!UICONTROL Tools > Descriptive analysis...]**&#x200B;菜单创建新报告。
 
-  ![](assets/desc-analysis-report.png)
+  ![描述性分析向导表配置，其中变量定义对话框从“添加”打开](assets/desc-analysis-report.png)
 
   [Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/reporting/analyzing-populations/about-descriptive-analysis.html?lang=zh-Hans){target="_blank"}中提供了Campaign描述性分析报告。
 

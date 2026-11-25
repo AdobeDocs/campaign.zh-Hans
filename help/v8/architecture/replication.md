@@ -40,7 +40,7 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 2%
@@ -93,7 +93,7 @@ Campaign v8依靠特定的技术工作流来管理计划的数据复制。 这�
 
 * 使用以下代码添加特定&#x200B;**Javascript代码**&#x200B;活动：
 
-  ```
+  ```javascript
   nms.replicationStrategy.StartReplicateStagingData("dem:sampleTable")
   ```
 
@@ -101,7 +101,7 @@ Campaign v8依靠特定的技术工作流来管理计划的数据复制。 这�
 
 * 使用以下命令添加特定&#x200B;**nlmodule**&#x200B;活动：
 
-  ```
+  ```bash
   nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
   ```
 
@@ -121,7 +121,7 @@ API允许将自定义数据和开箱即用数据从Campaign本地数据库(Postg
 
 示例：
 
-```
+```javascript
 var dataSource = "nms:extAccount:ffda";
 var xml = xtk.builder.CopyXxlData(
     <params dataSource={dataSource} policy="xs">

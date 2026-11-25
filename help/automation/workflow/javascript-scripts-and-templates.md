@@ -21,9 +21,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1377'
 ht-degree: 2%
 ---
 # JavaScript 脚本和模板{#javascript-scripts-and-templates}
@@ -39,7 +39,7 @@ ht-degree: 2%
 * “测试”活动评估JavaScript表达式以激活相应的过渡。
 * 大多数文本字段都是JavaScript模板：JavaScript表达式可以包含在&lt;%=和%>之间。 这些字段提供了一个按钮，用于打开下拉列表以帮助您输入表达式。
 
-  ![](assets/script-button.png)
+  ![文本字段右侧带有下拉箭头的按钮，该字段列出了可用于表达式的属性。](assets/script-button.png)
 
 ## 对象已公开 {#objects-exposed}
 
@@ -63,7 +63,7 @@ ht-degree: 2%
 
 在此示例中，以及在以下示例中，创建包含&#x200B;**JavaScript代码**&#x200B;活动和&#x200B;**End**&#x200B;活动的工作流，如下图所示。
 
-![](assets/script-1.png)
+![包含JavaScript代码活动的工作流，通过“确定”过渡连接到“结束”活动。](assets/script-1.png)
 
 双击&#x200B;**JavaScript code**&#x200B;活动并插入以下脚本：
 
@@ -104,7 +104,7 @@ logInfo("Start date: " + task.creationDate)
 
 >[!NOTE]
 >
->[此部分](workflow-use-cases.md)中提供了其他工作流用例。
+>[工作流使用案例](workflow-use-cases.md)中提供了其他工作流使用案例。
 
 **示例1**
 
@@ -116,7 +116,7 @@ logInfo("Start date: " + task.creationDate)
 
    例如： `instance.vars.segmentpercent = 10;`
 
-   ![](assets/js_ex1.png)
+   ![脚本为instance.vars.segmentpercent = 10的JavaScript代码活动；已在“脚本”字段中输入。](assets/js_ex1.png)
 
 1. 添加查询活动，并根据需要定位收件人。
 
@@ -124,7 +124,7 @@ logInfo("Start date: " + task.creationDate)
 
    正是这个百分比会根据之前定义的实例变量动态更新。
 
-   ![](assets/js_ex2.png)
+   ![拆分活动子集选项卡，启用限制所选记录，随机取样限制为50 %。](assets/js_ex2.png)
 
 1. 在拆分活动的高级选项卡的初始化脚本部分中，定义JS条件。 JS条件选择拆分活动中第一个过渡的随机取样百分比，并将其更新为由之前创建的实例变量设置的值。
 
@@ -132,13 +132,13 @@ logInfo("Start date: " + task.creationDate)
    activity.transitions.extractOutput[0].limiter.percent = instance.vars.segmentpercent;
    ```
 
-   ![](assets/js_ex3.png)
+   ![使用初始化脚本设置限制符。%将活动“高级”选项卡拆分到instance.vars.segmentpercent.](assets/js_ex3.png)
 
 1. 确保在拆分活动的单独过渡中生成补码，并在每个叫客过渡之后添加结束活动。
 
 1. 保存并执行工作流。 根据实例变量应用动态取样。
 
-   ![](assets/js_ex4.png)
+   ![包含JavaScript代码、查询和拆分的工作流，具有到两个结束活动的第一个集和补充过渡。](assets/js_ex4.png)
 
 **示例2**
 
@@ -180,7 +180,7 @@ logInfo("Start date: " + task.creationDate)
 
 1. 创建通过&#x200B;**[!UICONTROL JavaScript code]**&#x200B;定义投放内部名称的实例变量： **instance.vars.deliveryIN = &quot;DM42&quot;**。
 
-   ![](assets/wkf_js_activity_1.png)
+   在“脚本”字段中使用script instance.vars.deliveryIN = &#39;DM42&#39;的![JavaScript代码活动。](assets/wkf_js_activity_1.png)
 
 1. 创建定向和筛选维度为收件人的查询。 在条件中，指定您希望查找通过变量指定的投放发送的所有收件人。
 
@@ -190,7 +190,7 @@ logInfo("Start date: " + task.creationDate)
 
    该工作流将返回DM42投放的收件人。
 
-   ![](assets/wkf_var_in_query.png)
+   ![在投放内部名称等于instance/vars/deliveryIN值的收件人投放日志中查询筛选器。](assets/wkf_var_in_query.png)
 
 ## 高级功能 {#advanced-functions}
 

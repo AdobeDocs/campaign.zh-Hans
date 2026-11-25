@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 3%
+source-wordcount: '797'
+ht-degree: 1%
 ---
 # 跨渠道投放工作流{#cross-channel-delivery-workflow}
 
@@ -47,18 +47,18 @@ ht-degree: 3%
    * 向打开了电子邮件但未单击选件链接的收件人发送短信。
    * 将打开了电子邮件并单击了链接的收件人添加到数据库。
 
-![](assets/wkf_cross-channel_7.png)
+![通过“等待”和“拆分”从Gold成员查询和电子邮件到提醒电子邮件、短信和列表更新的工作流](assets/wkf_cross-channel_7.png)
 
 ## 步骤1：构建受众 {#step-1--build-the-audience}
 
 要定义目标，请创建查询以标识收件人。
 
-1. 创建营销策划。 请参阅[此页面](../campaigns/marketing-campaign-create.md)以了解详情。
+1. 创建营销策划。 请参阅[创建营销活动](../campaigns/marketing-campaign-create.md)以了解详情。
 1. 在营销活动的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡中，将&#x200B;**查询**&#x200B;活动添加到您的工作流。 有关使用此活动的详细信息，请参阅[此部分](query.md)。
 1. 定义将接收投放的收件人。 例如，选择“Gold”成员作为目标维。
 1. 将筛选条件添加到查询。 在此示例中，选择具有电子邮件地址和手机号码的收件人。
 
-   ![](assets/wkf_cross-channel_3.png)
+   ![条件电子邮件不为空且移动设备不为空的List Gold成员筛选窗口](assets/wkf_cross-channel_3.png)
 
 1. 保存您的更改。
 
@@ -67,21 +67,21 @@ ht-degree: 3%
 1. 创建电子邮件投放。
 1. 设计消息并在内容中插入包含选件的链接。
 
-   ![](assets/wkf_cross-channel_1.png)
+   ![包含优惠选择选项、优惠空间字段和排除不符合条件的收件人的优惠管理窗口](assets/wkf_cross-channel_1.png)
 
-   有关将选件集成到消息正文中的详细信息，请参阅[此页面](../../v8/send/email.md)。
+   有关将优惠集成到消息正文中的详细信息，请参阅[使用Adobe Campaign发送电子邮件](../../v8/send/email.md)。
 
 1. 保存您的更改。
 1. 右键单击&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动以将其打开。
-1. 选择&#x200B;**[!UICONTROL Generate an outbound transition]**&#x200B;选项以恢复群体和跟踪日志。
+1. Select **[!UICONTROL Generate an outbound transition]**&#x200B;选项以恢复群体和跟踪日志。
 
-   ![](assets/wkf_cross-channel_2.png)
+   ![已选择生成叫客过渡的电子邮件投放活动](assets/wkf_cross-channel_2.png)
 
    这样，您就可以使用此信息根据收件人接收第一封电子邮件时的行为发送另一个投放。
 
 1. 添加&#x200B;**[!UICONTROL Wait]**&#x200B;活动，让收件人有几天时间打开电子邮件。
 
-   ![](assets/wkf_cross-channel_4.png)
+   持续时间字段设置为3d![&#128279;](assets/wkf_cross-channel_4.png)的等待活动
 
 ## 步骤3：对生成的受众进行分段 {#step-3--segment-the-resulting-audience}
 
@@ -90,32 +90,32 @@ ht-degree: 3%
 1. 将&#x200B;**拆分**&#x200B;活动添加到工作流中并打开它。 有关使用此活动的详细信息，请参阅[此部分](split.md)。
 1. 从查询上游计算的群体创建三个区段。
 
-   ![](assets/wkf_cross-channel_6.png)
+   ![拆分具有三个子集的“活动子集”选项卡：未打开电子邮件，已打开但未单击链接，已单击](assets/wkf_cross-channel_6.png)
 
 1. 对于第一个子集，选择&#x200B;**[!UICONTROL Add a filtering condition on the inbound population]**&#x200B;选项并单击&#x200B;**[!UICONTROL Edit]**。
 
-   ![](assets/wkf_cross-channel_8.png)
+   ![拆分子集未在集客群体和编辑链接中添加筛选条件时打开电子邮件](assets/wkf_cross-channel_8.png)
 
-1. 选择&#x200B;**[!UICONTROL Recipients of a delivery]**&#x200B;作为限制筛选器，然后单击&#x200B;**[!UICONTROL Next]**。
+1. 将Select **[!UICONTROL Recipients of a delivery]**&#x200B;作为限制筛选器，然后单击&#x200B;**[!UICONTROL Next]**。
 
-   ![](assets/wkf_cross-channel_9.png)
+   ![定位和筛选维度窗口，其中在限制筛选器列表中选择投放的收件人](assets/wkf_cross-channel_9.png)
 
 1. 在筛选器设置中，从&#x200B;**[!UICONTROL Behavior]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Recipients who have not opened or clicked (email)]**，然后从投放列表中选择包含要发送的优惠的电子邮件。 单击 **[!UICONTROL Finish]**。
 
-   ![](assets/wkf_cross-channel_10.png)
+   ![目标元素窗口，其行为设置为尚未打开或单击的收件人（电子邮件）和选定的投放](assets/wkf_cross-channel_10.png)
 
 1. 对第二个子集进行类似操作，并从&#x200B;**[!UICONTROL Behavior]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Recipients who have not clicked (email)]**。
 
-   ![](assets/wkf_cross-channel_11.png)
+   ![行为列表打开，收件人尚未点击（电子邮件）选定项](assets/wkf_cross-channel_11.png)
 
 1. 对于第三个子集，选择&#x200B;**[!UICONTROL Add a filtering condition on the inbound population]**&#x200B;并单击&#x200B;**[!UICONTROL Edit]**&#x200B;后，选择&#x200B;**[!UICONTROL Use a specific filtering dimension]**&#x200B;选项。
-1. 从&#x200B;**[!UICONTROL Filtering dimension]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Recipient tracking log]**，从&#x200B;**[!UICONTROL List of restriction filters]**&#x200B;中突出显示&#x200B;**[!UICONTROL Filtering conditions]**&#x200B;并单击&#x200B;**[!UICONTROL Next]**。
+1. 从&#x200B;**[!UICONTROL Filtering dimension]**&#x200B;下拉列表中选择Select **[!UICONTROL Recipient tracking log]**，从&#x200B;**[!UICONTROL List of restriction filters]**&#x200B;突出显示&#x200B;**[!UICONTROL Filtering conditions]**&#x200B;并单击&#x200B;**[!UICONTROL Next]**。
 
-   ![](assets/wkf_cross-channel_12.png)
+   ![使用将筛选维度设置为收件人跟踪日志的特定筛选维度](assets/wkf_cross-channel_12.png)
 
-1. 按如下方式选择筛选条件：
+1. Select过滤条件，如下所示：
 
-   ![](assets/wkf_cross-channel_13.png)
+   ![筛选条件：类型等于电子邮件点击，投放标签等于电子邮件并包含冬季优惠，并提供冬季优惠](assets/wkf_cross-channel_13.png)
 
 1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;保存更改。
 

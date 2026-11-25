@@ -20,9 +20,9 @@ subfeature_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '457'
 ht-degree: 1%
 ---
 # 控制规则{#control-rules}
@@ -50,13 +50,13 @@ ht-degree: 1%
 
 应用以下步骤：
 
-1. 创建&#x200B;**[!UICONTROL Control]**&#x200B;分类规则。 选择&#x200B;**[!UICONTROL Warning]**&#x200B;警报级别。
+1. 创建&#x200B;**[!UICONTROL Control]**&#x200B;分类规则。 Select **[!UICONTROL Warning]**&#x200B;警报级别。
 
-   ![](assets/campaign_opt_create_control_01.png)
+   ![类型规则创建对话框，“常规”选项卡：控制规则类型，短信渠道，突出显示警告的级别下拉列表。](assets/campaign_opt_create_control_01.png)
 
 1. 在&#x200B;**[!UICONTROL Code]**&#x200B;选项卡中，输入脚本以应用所需的阈值，如下所示：
 
-   ![](assets/campaign_opt_create_control_02.png)
+   ![类型规则“代码”选项卡，该选项卡带有在投放目标超过100个联系人时记录警告的脚本。](assets/campaign_opt_create_control_02.png)
 
    如果投放目标超过100个联系人，此脚本将触发警告：
 
@@ -66,18 +66,18 @@ ht-degree: 1%
 
 1. 将此规则链接到活动分类，并在相关短信投放中引用该分类。
 
-   ![](assets/campaign_opt_create_control_03.png)
+   ![投放属性，“类型”选项卡：“类型”下拉列表列出了可用类型中的移动设备（最多100个）。](assets/campaign_opt_create_control_03.png)
 
 1. 在投放分析期间，会应用规则并创建警告（如果适用）。
 
-   ![](assets/campaign_opt_create_control_04.png)
+   ![投放分析日志显示规则+100条消息检测到问题的警告；确认投放可用。](assets/campaign_opt_create_control_04.png)
 
    但是，投放仍然可以发送。
 
    如果提高警报级别，则会阻止开始投放。
 
-   ![](assets/campaign_opt_create_control_05.png)
+   ![类型规则“常规”选项卡，“级别”下拉菜单处于打开状态，且选择了“错误”而不是“警告”。](assets/campaign_opt_create_control_05.png)
 
    分析结束时，**[!UICONTROL Confirm delivery]**&#x200B;按钮将不可用。
 
-   ![](assets/campaign_opt_create_control_06.png)
+   ![投放分析日志因错误而结束，并且禁用了“确认投放”按钮。](assets/campaign_opt_create_control_06.png)

@@ -24,10 +24,10 @@ topic_v2:
     internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 1%
+source-wordcount: '659'
+ht-degree: 0%
 ---
 # 筛选规则{#filtering-rules}
 
@@ -44,27 +44,27 @@ ht-degree: 1%
 1. 浏览到Campaign导出器的&#x200B;**[!UICONTROL Administration > Campaign management > Typology management > Typology rules]**&#x200B;文件夹，然后单击&#x200B;**新建**&#x200B;图标以创建分类规则。
 1. 创建适用于所有渠道的&#x200B;**[!UICONTROL Filtering]**&#x200B;分类规则。
 
-   ![](assets/campaign_opt_create_filter_01.png)
+   ![新的分类规则，规则类型为筛选，在渠道列表中选择了“所有渠道”选项。](assets/campaign_opt_create_filter_01.png)
 
 1. 从&#x200B;**筛选器**&#x200B;选项卡将默认定向维度更改为&#x200B;**订阅** (**nms:subscription**)。
 
-   ![](assets/campaign_opt_create_filter_02.png)
+   ![选择订阅(nms)架构作为定向维度的“筛选”选项卡。](assets/campaign_opt_create_filter_02.png)
 
 1. 使用&#x200B;**[!UICONTROL Edit the query from the targeting dimension...]**&#x200B;链接创建筛选器。
 
-   ![](assets/campaign_opt_create_filter_03.png)
+   ![编辑筛选查询对话框，目标类型步骤，已选择筛选条件。](assets/campaign_opt_create_filter_03.png)
 
 1. 筛选收件人年龄并保存筛选条件。
 
-   ![](assets/campaign_opt_create_filter_03b.png)
+   ![条件年龄（收件人/@age）大于18的编辑筛选查询对话框。](assets/campaign_opt_create_filter_03b.png)
 
 1. 从&#x200B;**分类**&#x200B;选项卡，将此规则链接到营销活动分类并保存。
 
-   ![](assets/campaign_opt_create_filter_04.png)
+   ![筛选规则的“类型”选项卡，其中已选择“添加类型”对话框和“新闻稿”类型。](assets/campaign_opt_create_filter_04.png)
 
 在投放中使用此规则时，将自动排除未成年订阅者。 一条特定消息指示何时应用规则：
 
-![](assets/campaign_opt_create_filter_05.png)
+![应用“排除地址”和“排除域”规则的行上具有箭头的投放分析日志。](assets/campaign_opt_create_filter_05.png)
 
 ## 为筛选规则设置条件 {#condition-a-filtering-rule}
 
@@ -86,17 +86,17 @@ ht-degree: 1%
 
 您可以创建&#x200B;**[!UICONTROL Filtering]**&#x200B;分类：它们仅包含筛选规则。
 
-![](assets/campaign_opt_create_typo_filtering.png)
+![类型列表设置为“正在筛选”的类型，其“规则”选项卡列出了要应用的筛选规则。](assets/campaign_opt_create_typo_filtering.png)
 
 选择目标后，这些特定分类可以链接到投放：在投放向导中，单击&#x200B;**[!UICONTROL To]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Exclusions]**&#x200B;选项卡。
 
-![](assets/campaign_opt_apply_typo_filtering.png)
+![Select target对话框的“排除项”选项卡，在“筛选规则”下具有“添加筛选规则”链接。](assets/campaign_opt_apply_typo_filtering.png)
 
 然后，选择要应用于投放的筛选类型。 为此，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并选择要应用的分类。
 
 您还可以通过此选项卡直接链接筛选规则，而无需将它们分组到分类中。 要实现此目的，请使用窗口的下半部分。
 
-![](assets/campaign_opt_select_typo_filtering.png)
+![排除项选项卡，其中包含通过两个“添加”按钮添加的筛选类型和筛选规则。](assets/campaign_opt_select_typo_filtering.png)
 
 >[!NOTE]
 >

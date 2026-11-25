@@ -20,9 +20,9 @@ subfeature_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '1036'
 ht-degree: 2%
 ---
 # 发送生日电子邮件{#sending-a-birthday-email}
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 为了设置此用例，我们创建了以下定位工作流：
 
-![](assets/birthday-workflow_usecase_1.png)
+![生日工作流：调度程序，查询，3月1日测试，具有闰年查询的分支，并集，然后传递。](assets/birthday-workflow_usecase_1.png)
 
 此（每日运行）工作流会选择其生日为当前日期的所有收件人。
 
@@ -48,20 +48,20 @@ ht-degree: 2%
 1. 将&#x200B;**[!UICONTROL Query]**&#x200B;活动拖放到工作流中并双击该活动。
 1. 单击&#x200B;**编辑查询**&#x200B;链接并选择&#x200B;**[!UICONTROL Filtering conditions]**。
 
-   ![](assets/s_ncs_user_create_exp_exple00.png)
+   ![选定了收件人并突出显示筛选条件的“定位和筛选”维度窗口。](assets/s_ncs_user_create_exp_exple00.png)
 
 1. 单击&#x200B;**[!UICONTROL Expression]**&#x200B;列的第一个单元格并单击&#x200B;**[!UICONTROL Edit expression]**&#x200B;打开表达式编辑器。
 
-   ![](assets/s_ncs_user_create_exp_exple.png)
+   ![筛选条件编辑器，其表达式单元格为空，并显示“编辑表达式”按钮。](assets/s_ncs_user_create_exp_exple.png)
 
 1. 单击&#x200B;**[!UICONTROL Advanced selection]**&#x200B;以选择筛选模式。
 
-   ![](assets/s_ncs_user_create_exp_exple_a.png)
+   ![用于选择窗口列出收件人字段的字段，高级选择按钮突出显示。](assets/s_ncs_user_create_exp_exple_a.png)
 
-1. 选择&#x200B;**[!UICONTROL Edit the formula using an expression]**&#x200B;并单击&#x200B;**[!UICONTROL Next]**&#x200B;以显示表达式编辑器。
+1. Select **[!UICONTROL Edit the formula using an expression]**&#x200B;并单击&#x200B;**[!UICONTROL Next]**&#x200B;以显示表达式编辑器。
 1. 在函数列表中，双击&#x200B;**[!UICONTROL Day]**，可通过&#x200B;**[!UICONTROL Date]**&#x200B;节点访问它。 此函数返回数字，该数字表示与作为参数传递的日期对应的日期。
 
-   ![](assets/s_ncs_user_create_exp_exple01.png)
+   ![编辑表达式窗口，在编辑区域中选择Day()，在函数列表中选择Day函数。](assets/s_ncs_user_create_exp_exple01.png)
 
 1. 在可用字段列表中，双击&#x200B;**[!UICONTROL Birth date]**。 然后，该编辑器的上半部分会显示以下公式：
 
@@ -73,13 +73,13 @@ ht-degree: 2%
 
 1. 在查询编辑器中，在&#x200B;**[!UICONTROL Operator]**&#x200B;列的第一个单元格中选择&#x200B;**[!UICONTROL equal to]**。
 
-   ![](assets/s_ncs_user_create_exp_exple02.png)
+   ![筛选以出生日期为表达式的条件，并且“运算符”下拉列表打开时等于选定值。](assets/s_ncs_user_create_exp_exple02.png)
 
 1. 接下来，单击第二列(**[!UICONTROL Value]**)的第一个单元格，然后单击&#x200B;**[!UICONTROL Edit expression]**&#x200B;以打开表达式编辑器。
 1. 在函数列表中，双击&#x200B;**[!UICONTROL Day]**，可通过&#x200B;**[!UICONTROL Date]**&#x200B;节点访问它。
 1. 双击&#x200B;**[!UICONTROL GetDate]**&#x200B;函数以检索当前日期。
 
-   ![](assets/s_ncs_user_create_exp_exple04.png)
+   ![编辑表达式窗口，其中显示Day(GetDate())，并在函数列表中突出显示Day和GetDate函数。](assets/s_ncs_user_create_exp_exple04.png)
 
    该编辑器的上半部分显示以下公式：
 
@@ -93,7 +93,7 @@ ht-degree: 2%
 
    完整的查询如下所示：
 
-   ![](assets/s_ncs_user_create_exp_exple03.png)
+   ![完成查询：出生日期等于当前日期的日期，出生日期等于当前日期的月份。](assets/s_ncs_user_create_exp_exple03.png)
 
 将&#x200B;**[!UICONTROL Query]**&#x200B;活动的结果链接到&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动，以向生日当天您的所有收件人的列表发送电子邮件。
 
@@ -113,7 +113,7 @@ ht-degree: 2%
 
 如果当前年份&#x200B;**不是闰年**，并且工作流在3月1日运行，我们需要选择昨天（2月29日）生日的所有收件人，并将他们添加到收件人列表中。 在任何其他情况下，均无需执行其他操作。
 
-### 步骤1：选择收件人 {#step-1--selecting-the-recipients}
+### 步骤1：Select收件人 {#step-1--selecting-the-recipients}
 
 在配置&#x200B;**[!UICONTROL Scheduler]**&#x200B;活动以便工作流每天启动后，识别其周年是当天的所有收件人。
 
@@ -121,11 +121,11 @@ ht-degree: 2%
 >
 >如果当前年份是闰年，则所有在2月29日出生的收件人都会自动包含在内。
 
-![](assets/birthday-workflow_usecase_2.png)
+![查询名为“月+日”的活动筛选器等于当前日期，将月和日出生日期与今天匹配。](assets/birthday-workflow_usecase_2.png)
 
 选择其生日对应于当前日期的收件人将显示在[确定其生日是](#identifying-recipients-whose-birthday-it-is)部分的收件人中。
 
-### 步骤2：选择是否为闰年 {#step-2--select-whether-or-not-it-is-a-leap-year}
+### 步骤2：Select是否为闰年 {#step-2--select-whether-or-not-it-is-a-leap-year}
 
 **[!UICONTROL Test]**&#x200B;活动允许您检查是否为闰年，以及当前日期是否为3月1日。
 
@@ -175,7 +175,7 @@ vars.firstOfMarch = 1;
 }
 ```
 
-![](assets/birthday-workflow_usecase_3.png)
+![使用定义isLeapYear函数的初始化脚本的测试活动的“高级”选项卡。](assets/birthday-workflow_usecase_3.png)
 
 在&#x200B;**[!UICONTROL Conditional forks]**&#x200B;部分中添加以下条件：
 
@@ -183,15 +183,15 @@ vars.firstOfMarch = 1;
 vars.currentIsALeapYear == 0 && vars.firstOfMarch == 1
 ```
 
-![](assets/birthday-workflow_usecase_4.png)
+![测试选项卡3月1日而不是闰年，条件为True vars.currentIsALeapYear == 0 &amp;&amp; vars.firstOfMarch == 1.](assets/birthday-workflow_usecase_4.png)
 
-### 步骤3：选择2月29日出生的任何收件人 {#step-3--select-any-recipients-born-on-february-29th}
+### 步骤3：Select任何在2月29日出生的收件人 {#step-3--select-any-recipients-born-on-february-29th}
 
 创建&#x200B;**[!UICONTROL Fork]**&#x200B;活动并将其中一个叫客过渡链接到&#x200B;**[!UICONTROL Query]**&#x200B;活动。
 
 在此查询中，选择出生日期为2月29日的所有收件人。
 
-![](assets/birthday-workflow_usecase_5.png)
+![查询选择2月29日出生的收件人：出生日期等于2的月份和出生日期等于29的日期。](assets/birthday-workflow_usecase_5.png)
 
 将结果与&#x200B;**[!UICONTROL Union]**&#x200B;活动合并。
 
@@ -207,4 +207,4 @@ vars.currentIsALeapYear == 0 && vars.firstOfMarch == 1
 >
 >如果为营销活动启用了批准步骤，则仅在确认了这些步骤后才会发送投放。 有关更多信息，请参阅一节。
 
-![](assets/birthday-workflow_usecase_1.png)
+![生日工作流：调度程序，查询，3月1日测试，具有闰年查询的分支，并集，然后传递。](assets/birthday-workflow_usecase_1.png)

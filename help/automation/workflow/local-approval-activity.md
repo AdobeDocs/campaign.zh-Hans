@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 2%
+source-wordcount: '1640'
+ht-degree: 1%
 ---
 # 使用本地审批活动{#using-the-local-approval-activity}
 
@@ -38,13 +38,13 @@ ht-degree: 2%
 
 为了设置此用例，我们创建了以下定位工作流：
 
-![](assets/local_validation_workflow.png)
+![定位工作流：两个查询，交集，拆分，审批通知，投放，等待，反馈通知，结束](assets/local_validation_workflow.png)
 
 本地审批流程的主要步骤包括：
 
 1. 由于使用数据分发模型的&#x200B;**[!UICONTROL Split]**&#x200B;类型活动，因此定位所得的群体可能会受到限制。
 
-   ![](assets/local_validation_intro_1.png)
+   ![每个域的数据分发列表为10%，将工作流程中的拆分输出限制为3,332到333个收件人](assets/local_validation_intro_1.png)
 
 1. 然后，**[!UICONTROL Local approval]**&#x200B;活动接管并向每个本地主管发送通知电子邮件。 该活动将挂起，直到每个本地主管批准分配给他们的收件人。
 
@@ -54,7 +54,7 @@ ht-degree: 2%
    >
    >一旦达到截止日期，未获批准的收件人将被排除在定位之外。
 
-   ![](assets/local_validation_intro_6.png)
+   ![在验证通知之后、等待活动之前突出显示投放活动的工作流](assets/local_validation_intro_6.png)
 
 1. 几天后，第二个&#x200B;**[!UICONTROL Local approval]**&#x200B;类型活动会向每个本地主管发送一封通知电子邮件，其中包含其联系人执行的操作（单击、打开等）的摘要。
 
@@ -66,18 +66,18 @@ ht-degree: 2%
 
 1. 要创建数据分发模板，请转到&#x200B;**[!UICONTROL Resources > Campaign management > Data distribution]**&#x200B;节点并单击&#x200B;**[!UICONTROL New]**。
 
-   ![](assets/local_validation_data_distribution_1.png)
+   位于“资源”>“Campaign管理”>“数据分发”中的![资源管理器树，突出显示“新建”按钮](assets/local_validation_data_distribution_1.png)
 
 1. 选择 **[!UICONTROL General]** 选项卡。
 
-   ![](assets/local_validation_data_distribution_2.png)
+   ![数据分发常规选项卡，带有标签、定向维度、分发字段和类型以及审批存储](assets/local_validation_data_distribution_2.png)
 
 1. 输入&#x200B;**[!UICONTROL Label]**&#x200B;和&#x200B;**[!UICONTROL Distribution context]**。 在此示例中，我们已选择&#x200B;**[!UICONTROL Recipient]**&#x200B;定向架构和&#x200B;**[!UICONTROL Email domain]**&#x200B;字段作为分发字段。 收件人列表将按域细分。
 1. 在&#x200B;**[!UICONTROL Distribution type]**&#x200B;字段中，选择目标限制值在&#x200B;**[!UICONTROL Distribution]**&#x200B;选项卡中的表示方式。 在此，我们已选择&#x200B;**[!UICONTROL Percentage]**。
 1. 在&#x200B;**[!UICONTROL Approval storage]**&#x200B;字段中，输入与正在使用的目标架构匹配的审批的存储架构。 在这里，我们将使用默认存储架构： **[!UICONTROL Local approval of recipients]**。
 1. 然后单击&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;链接。
 
-   ![](assets/local_validation_data_distribution_3.png)
+   ![高级参数：批准目标消息、投放标签、分组字段和编辑目标消息](assets/local_validation_data_distribution_3.png)
 
 1. 保持选中&#x200B;**[!UICONTROL Approve the targeted messages]**&#x200B;选项，以便从要批准的收件人列表中预先选择所有收件人。
 1. 在&#x200B;**[!UICONTROL Delivery label]**&#x200B;字段中，我们保留了默认表达式（投放的计算字符串）。 反馈通知中将使用投放的标准标签。
@@ -85,7 +85,7 @@ ht-degree: 2%
 1. 在&#x200B;**[!UICONTROL Edit targeted messages]**&#x200B;部分中，我们已选择&#x200B;**[!UICONTROL Edit recipients]** Web应用程序和&#x200B;**[!UICONTROL recipientId]**&#x200B;参数。 在审批和反馈通知中，收件人将可点击，并将指向Web应用程序的URL。 其他URL参数将为&#x200B;**[!UICONTROL recipientId]**。
 1. 然后单击&#x200B;**[!UICONTROL Distribution]**&#x200B;选项卡。 对于每个域，输入以下字段：
 
-   ![](assets/local_validation_data_distribution_4.png)
+   ![划分选项卡，其中列出了每个域及其百分比、标签和分配给它的组或操作员](assets/local_validation_data_distribution_4.png)
 
    * **[!UICONTROL Value]**：输入域名的值。
    * **[!UICONTROL Percentage / Fixed]**：为每个域输入最大值。 要向其发送投放的收件人数量。 在本例中，我们希望将每个域的投放限制为10%。
@@ -100,7 +100,7 @@ ht-degree: 2%
 
 为了设置此用例，我们创建了以下定位工作流：
 
-![](assets/local_validation_workflow.png)
+![定位工作流：两个查询，交集，拆分，审批通知，投放，等待，反馈通知，结束](assets/local_validation_workflow.png)
 
 添加了以下活动：
 
@@ -123,23 +123,23 @@ ht-degree: 2%
 
 1. 在&#x200B;**[!UICONTROL Record count limitation]**&#x200B;部分中，选择&#x200B;**[!UICONTROL Limit the selected records]**&#x200B;选项并单击&#x200B;**[!UICONTROL Edit]**&#x200B;链接。
 
-   ![](assets/local_validation_split_1.png)
+   ![拆分子集选项卡，其中选择了“限制所选记录”选项和“编辑记录中的链接”计数限制](assets/local_validation_split_1.png)
 
-1. 选择&#x200B;**[!UICONTROL Keep only the first records after sorting]**&#x200B;选项并单击&#x200B;**[!UICONTROL Next]**。
+1. Select **[!UICONTROL Keep only the first records after sorting]**&#x200B;选项并单击&#x200B;**[!UICONTROL Next]**。
 
-   ![](assets/local_validation_split_1bis.png)
+   ![限制步骤的类型为仅保留选定排序后的第一条记录](assets/local_validation_split_1bis.png)
 
 1. 在&#x200B;**[!UICONTROL Sort columns]**&#x200B;部分中，添加应用排序的字段。 在此，我们已选择&#x200B;**[!UICONTROL Email]**&#x200B;字段。 单击 **[!UICONTROL Next]**。
 
-   ![](assets/local_validation_split_2.png)
+   ![在“排序”列和“下一步”按钮中添加了“电子邮件”列的排序步骤](assets/local_validation_split_2.png)
 
-1. 选择&#x200B;**[!UICONTROL By data distribution]**&#x200B;选项，选择之前创建的分发模板（请参阅[步骤1：创建数据分发模板](#step-1--creating-the-data-distribution-template-)），然后单击&#x200B;**[!UICONTROL Finish]**。
+1. 在&#x200B;**[!UICONTROL By data distribution]**&#x200B;选项Select，选择之前创建的分发模板（请参阅[步骤1：创建数据分发模板](#step-1--creating-the-data-distribution-template-)），然后单击&#x200B;**[!UICONTROL Finish]**。
 
-   ![](assets/local_validation_split_3.png)
+   ![选择按数据分发并将分发应用于所选收件人模板的限制步骤](assets/local_validation_split_3.png)
 
 在分布模板中，我们选择将群体限制为每个分组值10%，这与工作流中显示的值（340作为输入，34作为输出）一致。
 
-![](assets/local_validation_intro_1.png)
+![每个域的数据分发列表为10%，将工作流程中的拆分输出限制为3,332到333个收件人](assets/local_validation_intro_1.png)
 
 ### 审批通知 {#approval-notification}
 
@@ -147,7 +147,7 @@ ht-degree: 2%
 
 有关配置&#x200B;**[!UICONTROL Local approval]**&#x200B;活动的详细信息，请参阅[本地审批](local-approval.md)。
 
-![](assets/local_validation_workflow_2.png)
+![本地审批活动设置为Target审批通知，在过渡中指定，具有3d延迟和提醒](assets/local_validation_workflow_2.png)
 
 需要输入以下字段：
 
@@ -165,13 +165,13 @@ ht-degree: 2%
 
 利用等待活动，可延迟启动将发送投放反馈通知的第二个本地审批活动。 在&#x200B;**[!UICONTROL Duration]**&#x200B;字段中，我们输入了&#x200B;**[!UICONTROL 5d]**&#x200B;值（5天）。 发送投放后5天内收件人执行的操作将包含在反馈通知中。
 
-![](assets/local_validation_workflow_3.png)
+持续时间字段设置为5d![&#128279;](assets/local_validation_workflow_3.png)的等待活动
 
 ### 反馈通知 {#feedback-notification}
 
 第二个&#x200B;**[!UICONTROL Local approval]**&#x200B;活动允许您向每个本地主管发送投放反馈通知。
 
-![](assets/local_validation_workflow_4.png)
+![本地审批活动设置为传递反馈报告，其中传递在过渡中指定](assets/local_validation_workflow_4.png)
 
 需要输入以下字段。
 
@@ -181,7 +181,7 @@ ht-degree: 2%
 
 一旦到达等待活动中配置的截止日期，第二个&#x200B;**[!UICONTROL Local approval]**&#x200B;类型活动会向每个本地主管发送以下通知电子邮件：
 
-![](assets/local_validation_intro_3.png)
+![本地验证网页，其中包含按性别和状态分类的收件人投放反馈列表：“已发送”、“已打开”、“已单击”](assets/local_validation_intro_3.png)
 
 ### 管理员的审批跟踪 {#approval-tracking-by-the-administrator}
 
@@ -189,15 +189,15 @@ ht-degree: 2%
 
 转到营销活动的定位工作流，然后单击&#x200B;**[!UICONTROL Local approval tasks]**&#x200B;选项卡。
 
-![](assets/local_validation_admin_1.png)
+![活动工作流的“本地审批任务”选项卡列出了任务、审批截止日期、工作流和活动](assets/local_validation_admin_1.png)
 
 也可以通过数据分发模板的&#x200B;**[!UICONTROL Approval tasks]**&#x200B;选项卡访问本地审批任务列表。
 
-![](assets/local_validation_admin_2.png)
+![数据分发模板的审批任务选项卡，其中列出了本地审批任务及其定向消息](assets/local_validation_admin_2.png)
 
-选择要监视的任务，然后单击&#x200B;**[!UICONTROL Detail]**&#x200B;按钮。 本地审批任务的&#x200B;**[!UICONTROL General]**&#x200B;选项卡允许您查看有关该任务的信息。 如有必要，您可以更改批准和提醒日期。
+Select要监视的任务，然后单击&#x200B;**[!UICONTROL Detail]**&#x200B;按钮。 本地审批任务的&#x200B;**[!UICONTROL General]**&#x200B;选项卡允许您查看有关该任务的信息。 如有必要，您可以更改批准和提醒日期。
 
-![](assets/local_validation_admin_3.png)
+![本地审批任务“常规”选项卡，带有标签、标识符、分发、工作流、营销活动、审批和提醒日期](assets/local_validation_admin_3.png)
 
 此选项卡显示以下信息：
 
@@ -209,11 +209,11 @@ ht-degree: 2%
 
 任务的&#x200B;**[!UICONTROL Distribution]**&#x200B;选项卡允许您查看审批日志、状态、定向的消息数、审批日期以及审批投放的操作员。
 
-![](assets/local_validation_admin_4.png)
+![任务划分选项卡列出了本地审批日志，其中包含状态、定向的消息、验证日期和审批者](assets/local_validation_admin_4.png)
 
-选择审批日志，然后单击&#x200B;**[!UICONTROL Detail]**&#x200B;按钮以显示更多信息。 本地审批日志的&#x200B;**[!UICONTROL General]**&#x200B;选项卡允许您查看常规日志信息。 您还可以更改审批状态。
+Select审批日志，然后单击“**[!UICONTROL Detail]**”按钮以显示更多信息。 本地审批日志的&#x200B;**[!UICONTROL General]**&#x200B;选项卡允许您查看常规日志信息。 您还可以更改审批状态。
 
-![](assets/local_validation_admin_5.png)
+![审批日志“常规”选项卡，带有审批任务、状态、审批者、审批日期以及定向和批准的消息](assets/local_validation_admin_5.png)
 
 此选项卡显示以下信息：
 
@@ -225,4 +225,4 @@ ht-degree: 2%
 
 审批日志的&#x200B;**[!UICONTROL Targeted]**&#x200B;选项卡显示定向收件人列表及其审批状态。 您可以根据需要更改此状态。
 
-![](assets/local_validation_admin_6.png)
+![审批日志“目标”选项卡列出了具有可编辑审批的“是”或“否”复选框的目标收件人](assets/local_validation_admin_6.png)

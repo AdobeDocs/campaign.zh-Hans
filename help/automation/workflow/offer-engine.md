@@ -25,10 +25,10 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 4%
+source-wordcount: '170'
+ht-degree: 3%
 ---
 # 产品建议引擎{#offer-engine}
 
@@ -36,7 +36,7 @@ ht-degree: 4%
 
 此活动的原理与通过引擎调用的扩充活动相同，即在投放前使用引擎计算的优惠扩充集客群体数据。
 
-![](assets/int_offerengine_activity2.png)
+![包含优惠引擎活动的工作流图表置于查询和直邮投放之间。](assets/int_offerengine_activity2.png)
 
 配置查询后（请参阅此[部分](query.md)）：
 
@@ -47,6 +47,6 @@ ht-degree: 4%
    >
    >如果您使用此活动，则只会存储投放中使用的优惠建议。
 
-   ![](assets/int_offerengine_activity1.png)
+   ![包含优惠空间、优惠类别、主题、要计算的建议数和联系日期的优惠引擎活动。](assets/int_offerengine_activity1.png)
 
 1. 然后，配置与您选择的渠道对应的投放活动。 请参阅[跨渠道投放](cross-channel-deliveries.md)。

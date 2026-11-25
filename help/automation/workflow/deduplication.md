@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1134'
-ht-degree: 14%
+source-wordcount: '1332'
+ht-degree: 11%
 ---
 # 重复数据删除{#deduplication}
 
@@ -66,7 +66,7 @@ ht-degree: 14%
 * 创建一个&#x200B;**Union**&#x200B;活动以统一每个入站流。
 * 在&#x200B;**合并**&#x200B;活动之后创建&#x200B;**重复数据删除**&#x200B;活动。
 
-![](assets/dedup-best-practice.png)
+![两个查询由合并连接，后跟重复数据删除活动和列表更新](assets/dedup-best-practice.png)
 
 ## 配置 {#configuration}
 
@@ -74,9 +74,9 @@ ht-degree: 14%
 
 1. 单击&#x200B;**[!UICONTROL Edit configuration...]**&#x200B;链接以定义重复数据删除模式。
 
-   ![](assets/s_user_segmentation_dedup_param.png)
+   在重复数据删除参数中使用“编辑配置”链接的![重复数据删除活动窗口](assets/s_user_segmentation_dedup_param.png)
 
-1. 选择此活动的目标类型（默认情况下，重复数据删除会链接到收件人）以及要使用的条件，即允许您识别重复项的相同值的字段。
+1. Select此活动的目标类型（默认情况下，重复数据删除会链接到收件人）以及要使用的条件，即允许您识别重复项的相同值的字段。
 
    >[!NOTE]
    >
@@ -84,30 +84,30 @@ ht-degree: 14%
    >
    >在下一步中，**[!UICONTROL Other]**&#x200B;选项允许您选择要使用的条件或条件：
 
-   ![](assets/s_user_segmentation_dedup_param2.png)
+   ![使用电子邮件、短信、电话、传真、邮政地址和其他选项定位维度步骤](assets/s_user_segmentation_dedup_param2.png)
 
 1. 在下一步中，**[!UICONTROL Other]**&#x200B;选项允许您选择在值相同的情况下使用的标准或条件。
 
-   ![](assets/s_user_segmentation_dedup_param3.png)
+   ![使用Select的重复步骤的标识，表达式窗口和出生日期字段已选定](assets/s_user_segmentation_dedup_param3.png)
 
 1. 从下拉列表中选择要使用的重复数据删除方法，然后输入要保留的重复项数。
 
-   ![](assets/s_user_segmentation_dedup_param4.png)
+   ![要保留双倍数的重复数据删除方法步骤，且方法列表显示四个方法](assets/s_user_segmentation_dedup_param4.png)
 
    可以使用以下方法：
 
    * **[!UICONTROL Choose for me]**：随机选择要保留的重复项记录。
    * **[!UICONTROL Following a list of values]**：用于为一个或多个字段定义值优先级。 要定义该值，请选择一个字段或创建表达式，然后将值添加到相应的表格中。 要定义新字段，请单击位于值列表上方的 **[!UICONTROL Add]** 按钮。
 
-     ![](assets/s_user_segmentation_dedup_param5.png)
+     ![在优先级列表和“其他值”选项中使用英文和法文跟踪值列表方法](assets/s_user_segmentation_dedup_param5.png)
 
    * **[!UICONTROL Non-empty value]**：利用此选项可优先保留选定表达式的值不为空的记录。
 
-     ![](assets/s_user_segmentation_dedup_param6.png)
+     ![选择表达式字段和帐号字段的非空值方法](assets/s_user_segmentation_dedup_param6.png)
 
    * **[!UICONTROL Using an expression]**：允许您保留具有给定表达式的最低（或最高）值的记录。
 
-     ![](assets/s_user_segmentation_dedup_param7.png)
+     ![使用Status作为表达式和Keep the records with the maximum value selected](assets/s_user_segmentation_dedup_param7.png)
 
    >[!NOTE]
    >
@@ -119,11 +119,11 @@ ht-degree: 14%
 
    在活动编辑器窗口的下部，您可以修改图形对象叫客过渡的标签，并输入与活动结果关联的段代码。 此代码以后可用作定位条件。
 
-   ![](assets/s_user_segmentation_dedup_param8.png)
+   ![已选中带有结果标签Target、段代码PRO和生成补码的重复数据删除活动](assets/s_user_segmentation_dedup_param8.png)
 
 1. 如果要利用剩余群体，请选中&#x200B;**[!UICONTROL Generate complement]**&#x200B;选项。 补充包含所有重复项。 随后将向活动添加其他过渡，如下所示：
 
-   ![](assets/s_user_segmentation_dedup_param9.png)
+   ![三个配置文件查询正在馈送重复数据删除，重复和目标输出已发送到两个列表更新活动](assets/s_user_segmentation_dedup_param9.png)
 
 ## 示例：在投放之前标识重复项 {#example--identify-the-duplicates-before-a-delivery}
 
@@ -133,7 +133,7 @@ ht-degree: 14%
 
 已识别的重复项还将集成到专用的重复项列表中，如有必要，可以重复使用。
 
-![](assets/deduplication_example.png)
+![包含三个配置文件查询、重复数据删除、投放和补充过渡中的列表更新的并集](assets/deduplication_example.png)
 
 1. 添加并链接工作流运行所需的各种活动，如上所示。
 
@@ -141,13 +141,13 @@ ht-degree: 14%
 
 1. 打开重复数据删除活动，然后单击&#x200B;**[!UICONTROL Edit configuration...]**&#x200B;链接以定义重复数据删除模式。
 1. 在新窗口中，选择&#x200B;**[!UICONTROL Database schema]**。
-1. 选择&#x200B;**收件人**&#x200B;作为定位和筛选维度。
-1. 选择&#x200B;**[!UICONTROL Email]**&#x200B;重复项的ID字段，以仅向每个电子邮件地址发送一次投放，然后单击&#x200B;**[!UICONTROL Next]**。
+1. Select **收件人**&#x200B;作为定位和筛选维度。
+1. Select **[!UICONTROL Email]**&#x200B;重复项的ID字段，以便仅向每个电子邮件地址发送一次投放，然后单击&#x200B;**[!UICONTROL Next]**。
 
    如果您希望复制ID基于特定字段，请选择&#x200B;**[!UICONTROL Other]**&#x200B;以访问可用字段列表。
 
 1. 选择此项以在为多个收件人标识了同一电子邮件地址时仅保留一个条目。
-1. 选择&#x200B;**[!UICONTROL Choose for me]**&#x200B;重复数据删除模式，以便随机选择在已识别重复项时保存的记录，然后单击&#x200B;**[!UICONTROL Finish]**。
+1. Select **[!UICONTROL Choose for me]**&#x200B;重复数据删除模式，以便随机选择在已识别重复项时保存的记录，然后单击&#x200B;**[!UICONTROL Finish]**。
 
 运行工作流时，将从结果（以及投放）中排除所有标识为重复项的收件人，并将其添加到重复项列表中。 此列表可再次使用，而不必重新识别重复项。
 
@@ -157,23 +157,23 @@ ht-degree: 14%
 
 例如，如果有一组重复记录，则可以选择保留最早的电话号码或最近的名称。
 
-[此部分](deduplication-merge.md)中提供了利用此功能的用例。
+在[使用重复数据删除活动的合并功能](deduplication-merge.md)中提供了利用此功能的用例。
 
 为此，请执行以下步骤：
 
 1. 在&#x200B;**[!UICONTROL Deduplication method]**&#x200B;选择步骤中，单击&#x200B;**[!UICONTROL Advanced Parameters]**&#x200B;链接。
 
-   ![](assets/dedup1.png)
+   ![用高级参数链接突出显示的重复数据删除方法步骤](assets/dedup1.png)
 
-1. 选择&#x200B;**[!UICONTROL Merge records]**&#x200B;选项以激活该功能。
+1. 使用Select **[!UICONTROL Merge records]**&#x200B;选项激活该功能。
 
    如果要对每个合并条件中的多个数据字段进行分组，请激活&#x200B;**[!UICONTROL Use several record merging criteria]**&#x200B;选项。
 
-   ![](assets/dedup2.png)
+   ![已选中带有合并记录和使用多个记录合并条件选项的高级参数](assets/dedup2.png)
 
 1. 激活功能后，**[!UICONTROL Merge]**&#x200B;选项卡将添加到&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动中。 它允许您定义要合并的字段组及其关联的规则。
 
-   有关详细信息，请参阅[此部分](deduplication-merge.md)中提供的专用用例。
+   有关详细信息，请参阅[使用重复数据删除活动的合并功能](deduplication-merge.md)中提供的专用用例。
 
 ## 输入参数 {#input-parameters}
 

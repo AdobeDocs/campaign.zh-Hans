@@ -25,9 +25,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '329'
 ht-degree: 1%
 ---
 # 管理工作流权限{#managing-rights}
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 它们还必须映射到与它们会影响的工作流执行的操作（收件人导入、文件访问、融合、SQL脚本执行等）一致的已命名权限。
 
-有关管理操作员和权限的详细信息，请参阅[此部分](../../v8/start/gs-permissions.md)。
+有关管理操作员和权限的详细信息，请参阅Campaign v8[&#128279;](../../v8/start/gs-permissions.md)中的权限入门。
 
 ## 操作员组 {#operator-groups-wf}
 

@@ -23,16 +23,16 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 10%
+source-wordcount: '898'
+ht-degree: 7%
 ---
 # 使用工作流数据{#how-to-use-workflow-data}
 
 您可以使用工作流活动执行多个任务。 查找以下使用示例，这些示例用于通过创建列表来更新数据库、管理订阅、通过工作流发送消息，或丰富您的投放及其受众。
 
-[此部分](workflow-use-cases.md)中提供了一组工作流用例。
+[工作流用例](workflow-use-cases.md)中提供一组工作流用例。
 
 ## 数据生命周期 {#data-life-cycle}
 
@@ -42,7 +42,7 @@ ht-degree: 10%
 
 通过右键单击相应的过渡，可以显示和分析此数据。
 
-![](assets/wf-right-click-analyze.png)
+![在过渡上带有右键单击菜单的工作流，其中显示显示显示目标和分析目标选项。](assets/wf-right-click-analyze.png)
 
 要实现此目的，请选择相关菜单：
 
@@ -50,13 +50,13 @@ ht-degree: 10%
 
   此菜单显示目标群体的可用数据。
 
-  ![](assets/wf-right-click-display.png)
+  ![查看填充窗口，数据选项卡，列出目标记录及其字段。](assets/wf-right-click-display.png)
 
   您可以在&#x200B;**[!UICONTROL Schema]**&#x200B;选项卡中访问工作表的结构。
 
-  ![](assets/wf-right-click-schema.png)
+  ![查看填充窗口，架构选项卡，显示temp:enrich工作表的结构及其字段。](assets/wf-right-click-schema.png)
 
-  如需详细信息，请参阅[此小节](monitor-workflow-execution.md#worktables-and-workflow-schema)。
+  有关详细信息，请参阅[工作表和工作流架构](monitor-workflow-execution.md#worktables-and-workflow-schema)。
 
 * **[!UICONTROL Analyze target...]**
 
@@ -66,7 +66,7 @@ ht-degree: 10%
 
 在执行工作流时清除目标数据。 只能访问最后一个工作表。 您可以配置工作流以使所有工作表保持可访问状态：选中工作流属性中的&#x200B;**[!UICONTROL Keep the result of interim populations between two executions]**&#x200B;选项。
 
-![](assets/wf-purge-data-option.png)
+![选中了“保留两次执行之间的临时群体的结果”选项的工作流属性。](assets/wf-purge-data-option.png)
 
 >[!CAUTION]
 >
@@ -89,7 +89,7 @@ ht-degree: 10%
 
 1. 创建工作流以收集信息，将其与数据库中已有的数据相协调，然后开始投放。
 
-   ![](assets/wf-targetdata-sample-1.png)
+   ![数据加载（文件）、扩充和投放活动顺序连接的工作流。](assets/wf-targetdata-sample-1.png)
 
 1. 在我们的示例中，文件内容如下所示：
 
@@ -105,15 +105,15 @@ ht-degree: 10%
 
    要加载文件，请如下所示配置&#x200B;**[!UICONTROL Data loading (file)]**&#x200B;活动：
 
-   ![](assets/wf-targetdata-sample-2.png)
+   ![使用示例CSV文件加载（文件）数据活动，预览其列并从本地计算机上传文件。](assets/wf-targetdata-sample-2.png)
 
 1. 配置&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动以将收集的数据与Adobe Campaign数据库中已有的数据相协调。 在此，对帐密钥是帐号：
 
-   ![](assets/wf-targetdata-sample-3.png)
+   ![扩充活动，“协调”选项卡，源表达式“帐户”与目标@account匹配。](assets/wf-targetdata-sample-3.png)
 
 1. 然后配置&#x200B;**[!UICONTROL Delivery]**：它是基于模板创建的，收件人由集客过渡指定。
 
-   ![](assets/wf-targetdata-sample-4.png)
+   ![从模板创建的投放活动，其收件人由入站事件和准备操作指定。](assets/wf-targetdata-sample-4.png)
 
    >[!CAUTION]
    >
@@ -123,13 +123,13 @@ ht-degree: 10%
 
    为此，请插入&#x200B;**[!UICONTROL Target extension]**&#x200B;类型个性化字段。
 
-   ![](assets/wf-targetdata-sample-5.png)
+   ![打开了Target扩展的投放编辑器个性化菜单，其中列出了“音乐”、“帐户”和“卡片”等字段。](assets/wf-targetdata-sample-5.png)
 
    在此，我们要插入客户最喜爱的音乐流派和媒体类型（CD或DVD），如工作流收集的文件中所述。
 
    此外，我们将为会员卡持有者（即“卡”值等于1的收件人）添加优惠券。
 
-   ![](assets/wf-targetdata-sample-6.png)
+   ![使用脚本交付内容，该脚本在targetData.Card等于1时为10%，并且使用targetData.Music个性化设置。](assets/wf-targetdata-sample-6.png)
 
    **[!UICONTROL Target extension]** (targetData)类型数据使用与所有个性化字段相同的特性插入投放。 它们还可以在主题、链接标签或链接本身中使用。
 
@@ -146,7 +146,7 @@ Adobe Campaign数据库和现有列表的数据可以使用两个专用活动进
 
   您可以选择现有列表或创建现有列表。 在这种情况下，将计算名称，并可能计算记录文件夹。
 
-  ![](assets/s_user_create_list.png)
+  ![使用显式指定的列表列出更新活动，并将其保存在目标维度数据库中，该数据库具有自己的表。](assets/s_user_create_list.png)
 
   请参阅[列表更新](list-update.md)。
 

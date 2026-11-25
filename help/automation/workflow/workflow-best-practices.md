@@ -23,9 +23,9 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1391'
 ht-degree: 13%
 ---
 # 工作流最佳实践{#workflow-best-practices}
@@ -95,7 +95,7 @@ Adobe 建议为工作流赋予正确的名称和标签，这样工作流没有�
 * 始终使用&#x200B;**[!UICONTROL Start]**&#x200B;活动或&#x200B;**[!UICONTROL Scheduler]**&#x200B;活动启动工作流。 在相关时，您还可以使用&#x200B;**[!UICONTROL External signal]**&#x200B;活动。
 * 在构建工作流时，每个分支仅使用一个&#x200B;**[!UICONTROL Scheduler]**&#x200B;活动。 如果工作流的同一分支具有多个调度程序（相互链接），则要执行的任务数量将呈指数级增长，这将使数据库严重过载。 此规则还适用于具有&#x200B;**[!UICONTROL Scheduling & History]**&#x200B;选项卡的所有活动。 了解有关[计划](scheduler.md)的更多信息。
 
-  ![](assets/wf-scheduler.png)
+  ![正确的布局，每个分支有一个调度程序，而不是一个分支中有两个调度程序标记为不允许。](assets/wf-scheduler.png)
 
 * 每个工作流使用&#x200B;**[!UICONTROL End]**&#x200B;活动。 这允许Adobe Campaign释放用于工作流中计算的临时空间。 有关详情，请参阅： [开始和结束](start-and-end.md)。
 
@@ -140,7 +140,7 @@ JavaScript方法&#x200B;**[!UICONTROL logInfo()]**&#x200B;是用于调试工作�
 
 工作流属性的&#x200B;**[!UICONTROL Execution]**&#x200B;选项卡中提供了&#x200B;**日志**&#x200B;中的Log SQL查询选项。 此选项记录来自不同活动的所有SQL查询，并提供查看平台实际执行内容的方法。 但是，此选项只应在开发期间&#x200B;**临时**&#x200B;使用，并且&#x200B;**不在生产环境中激活**。
 
-最佳做法是在不再需要日志时清除日志。 系统不会自动清除工作流历史记录：默认情况下会保留所有消息。 可通过&#x200B;**[!UICONTROL File > Actions]**&#x200B;菜单或单击位于列表上方工具栏中的“操作”按钮清除历史记录。 选择清除历史记录。
+最佳做法是在不再需要日志时清除日志。 系统不会自动清除工作流历史记录：默认情况下会保留所有消息。 可通过&#x200B;**[!UICONTROL File > Actions]**&#x200B;菜单或单击位于列表上方工具栏中的“操作”按钮清除历史记录。 Select清除历史记录。
 要了解如何清除日志，请参阅此[文档](start-a-workflow.md)。
 
 ### 工作流规划 {#workflow-planning}
@@ -158,4 +158,4 @@ JavaScript方法&#x200B;**[!UICONTROL logInfo()]**&#x200B;是用于调试工作�
 
 在生产环境中，请避免在引擎中执行工作流。 在&#x200B;**[!UICONTROL Workflow properties]**&#x200B;中选中&#x200B;**[!UICONTROL Execute in the engine]**&#x200B;选项后，工作流具有优先级，并且所有其他工作流都由工作流引擎停止，直到此工作流完成。
 
-![](assets/wf-execute-in-engine.png)
+![已选中“工作流属性执行”选项卡，“在引擎中执行（不在生产中使用）”选项卡。](assets/wf-execute-in-engine.png)

@@ -17,10 +17,10 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 4%
+source-wordcount: '117'
+ht-degree: 3%
 ---
 # 时间约束{#time-constraint}
 
@@ -30,4 +30,4 @@ ht-degree: 4%
 
 选择&#x200B;**[!UICONTROL Try again later if outside of execution period]**&#x200B;选项后，您可以在执行时间范围之外重新启动任务。 如果希望工作流操作在暂停后永久放弃，请取消选择此选项。
 
-![](assets/s_user_scheduled_wait.png)
+![时间约束活动具有开始和结束时间，如果检查执行期间之外，则稍后重试。](assets/s_user_scheduled_wait.png)

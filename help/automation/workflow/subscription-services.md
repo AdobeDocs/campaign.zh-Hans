@@ -21,9 +21,9 @@ subfeature_v2:
     internal-label: Targeting Activity
   - id: 2454f09c-f028-5647-8fef-1e986ec2d4e5
     internal-label: Subscription Services Activity
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '430'
 ht-degree: 1%
 ---
 # 订阅服务{#subscription-services}
@@ -34,15 +34,15 @@ ht-degree: 1%
 
 要对其进行配置，请编辑活动并输入其标签，然后选择要执行的操作（订阅或退订）以及相关的服务，如以下示例所示：
 
-![](assets/edit_service_inscription.png)
+![包含注册或退订的订阅服务活动，确认消息选项和服务列表](assets/edit_service_inscription.png)
 
 1. 输入活动的标签。
-1. 如果希望在执行结束时创建过渡，请选择&#x200B;**[!UICONTROL Generate an outbound transition]**。
+1. 如果您希望在执行结束时创建过渡，请使用Select **[!UICONTROL Generate an outbound transition]**。
 
    通常，目标对信息服务的订阅会标记定位工作流的结尾，这也是默认情况下不激活该选项的原因。
 
 1. 如果要订阅或取消订阅选定信息服务的指定群体，请单击&#x200B;**[!UICONTROL Subscription]**&#x200B;或&#x200B;**[!UICONTROL Unsubscription]**。
-1. 选择&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;以通知收件人已订阅或取消订阅服务。
+1. Select **[!UICONTROL Send a confirmation message]**，通知收件人已订阅或取消订阅服务。
 
    在与信息服务相关的投放模板中指定此消息的内容。
 
@@ -56,7 +56,7 @@ ht-degree: 1%
 >
 >在手动为收件人订阅服务之前，请验证这些收件人是否接受来自您的通信。
 
-![](assets/subscription_services_example.png)
+![三个查询馈送交集，然后馈送列表更新和订阅服务活动](assets/subscription_services_example.png)
 
 1. 添加以下三个查询：
 
@@ -71,7 +71,7 @@ ht-degree: 1%
 
    如果您愿意，可以通过选中&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;框将订阅的新闻稿通知收件人。
 
-1. 选择新闻稿所在的文件夹，然后从显示的列表中选择新闻稿。
+1. 在Select新闻稿所在的文件夹中，然后从显示的列表中选择新闻稿。
 1. 取消选中&#x200B;**[!UICONTROL Generate outbound transition]**，以便此活动将标记工作流结尾，然后单击&#x200B;**[!UICONTROL Ok]**。
 
 在执行工作流期间，与所有三个查询相对应的收件人将添加到列表并订阅新闻稿。

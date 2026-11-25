@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 4%
+source-wordcount: '281'
+ht-degree: 3%
 ---
 # 加载 (SOAP){#loading-soap}
 
@@ -38,21 +38,21 @@ ht-degree: 4%
 
 操作如下：
 
-1. 选择使用XML示例或WSDL。
+1. 使用XML示例或WSDL之间的Select。
 
    以下示例来自消息中心模块的技术工作流。
 
-   ![](assets/load_soap_002.png)
+   ![使用选定的示例XML、结果示例和初始化脚本加载(SOAP)活动。](assets/load_soap_002.png)
 
 1. 对于XML示例，请选择一个示例文件。 对文件进行分析，建立结果实例。
 
    对于WSDL，输入匹配的访问URL，然后生成骨架代码。 所选服务和呼叫将自动更新并显示。
 
-   ![](assets/soap_load_003.png)
+   ![使用选定的WSDL、访问URL字段和生成骨架代码链接的结果格式。](assets/soap_load_003.png)
 
-1. 选择&#x200B;**[!UICONTROL Click here to view and edit analysis results]**&#x200B;以指定每个已识别的列。
+1. Select **[!UICONTROL Click here to view and edit analysis results]**&#x200B;以指定每个已识别的列。
 
-   ![](assets/soap_load_001.png)
+   ![文件格式窗口，其中列出了已识别的列，具有所选列的标签、数据类型和内部名称。](assets/soap_load_001.png)
 
    如果要更新示例，请选择&#x200B;**[!UICONTROL Re-analyze the example]**。
 

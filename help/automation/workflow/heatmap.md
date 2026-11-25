@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1112'
-ht-degree: 3%
+source-wordcount: '1305'
+ht-degree: 2%
 ---
 # 工作流热图 {#workflow-heatmap}
 
@@ -64,7 +64,7 @@ Workflow HeatMap提供了并发工作流数的快速概览，从而使Adobe Camp
 
 1. 转到&#x200B;**[!UICONTROL Monitoring]**&#x200B;并单击&#x200B;**[!UICONTROL Workflow HeatMap]**&#x200B;链接以显示&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;页面。
 
-   ![](assets/wkf_monitoring_path.png)
+   ![选定了Workflow HeatMap链接的“监控”选项卡，打开Campaign Workflow HeatMap网格。](assets/wkf_monitoring_path.png)
 
 1. 单击日历以选择日期。
 
@@ -76,15 +76,15 @@ Workflow HeatMap提供了并发工作流数的快速概览，从而使Adobe Camp
 
 1. 单击 **[!UICONTROL Filters]** 按钮。
 
-   ![](assets/wkf_monitoring_filters.png)
+   ![带有“帮助和加载数据”旁边高亮显示的过滤器按钮的营销活动工作流热图页面。](assets/wkf_monitoring_filters.png)
 
 1. 使用滑块设置从0秒到1小时的最短持续时间。 这使您能够仅搜索运行时间超过特定秒数或分钟数的工作流。
 
-   ![](assets/wkf_monitoring_filters_duration.png)
+   ![HeatMap过滤器面板的最小持续时间滑块设置为30分钟，位于“工作流”和“工作流类型”字段上方。](assets/wkf_monitoring_filters_duration.png)
 
 1. 您还可以从&#x200B;**[!UICONTROL Workflows]**&#x200B;下拉列表中选择特定的工作流。
 
-   ![](assets/wkf_monitoring_filters_workflows.png)
+   ![HeatMap筛选器中的“工作流”下拉列表显示了所有、数据库清理、预测和其他工作流。](assets/wkf_monitoring_filters_workflows.png)
 
    >[!NOTE]
    >
@@ -108,7 +108,7 @@ Campaign Workflow HeatMap是从左上到右下自然可读的网格，允许查�
 
 要了解如何应用颜色代码以及如何在HeatMap中导航，请单击&#x200B;**[!UICONTROL Help]**&#x200B;按钮。
 
-![](assets/wkf_monitoring_legend.png)
+![HeatMap帮助面板列出了键盘控件和颜色图例，从1工作流绿色到50工作流红色。](assets/wkf_monitoring_legend.png)
 
 每一行表示一天中的一小时，每个单元格表示该小时中的5分钟。
 
@@ -116,11 +116,11 @@ Campaign Workflow HeatMap是从左上到右下自然可读的网格，允许查�
 
 在下面的示例中，在早上8点到早上8:05点之间，有三个工作流正在运行（无论其各自的持续时间如何）：
 
-![](assets/wkf_monitoring_ex_8am.png)
+![突出显示了08h行、00m列单元格的HeatMap网格，显示凌晨8点到上午8:05之间运行的三个工作流。](assets/wkf_monitoring_ex_8am.png)
 
 1. 单击彩色单元格以显示此期间运行的所有并发工作流的详细信息。
 
-   ![](assets/wkf_monitoring_details.png)
+   ![选择了08h单元格的热图，并且有一个表列出了具有活动和持续时间的三个并发工作流。](assets/wkf_monitoring_details.png)
 
    对于每个工作流，将列出它包含的所有活动及其持续时间。
 
@@ -139,7 +139,7 @@ Campaign Workflow HeatMap是从左上到右下自然可读的网格，允许查�
 1. 将持续时间设置为几秒或几分钟。
 1. 通过增加持续时间过滤器，排除无关紧要的最短工作流。
 
-   ![](assets/wkf_monitoring_short_duration.png)
+   ![持续时间滑块最小设置为3分钟（189秒）的HeatMap过滤器，以排除最短的工作流。](assets/wkf_monitoring_short_duration.png)
 
 1. 浏览结果以了解实例上的负载并采取适当的操作：
 
@@ -153,7 +153,7 @@ Campaign Workflow HeatMap是从左上到右下自然可读的网格，允许查�
 1. 从&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;视图中，单击&#x200B;**[!UICONTROL Filters]**&#x200B;按钮。
 1. 将持续时间设置为1小时。
 
-   ![](assets/wkf_monitoring_long_duration.png)
+   ![持续时间最小滑块设置为最大1小时（3600秒）的HeatMap过滤器。](assets/wkf_monitoring_long_duration.png)
 
 1. 通过减少&#x200B;**[!UICONTROL Min duration]**&#x200B;筛选器包含更多结果。
 1. 浏览结果以找出最长的工作流，这些工作流可能会对服务器和数据库资源（CPU、RAM、网络、IOPS等）产生更大的影响。
@@ -173,7 +173,7 @@ Campaign Workflow HeatMap是从左上到右下自然可读的网格，允许查�
 1. 将&#x200B;**[!UICONTROL Workflow type]**&#x200B;筛选器设置为&#x200B;**[!UICONTROL Marketing]**。
 1. 在HeatMap网格中，观察以下内容：
 
-   ![](assets/wkf_monitoring_without.png)
+   ![HeatMap网格，无持续时间过滤器，10小时行中峰值为50个工作流，14小时后有几个单元格。](assets/wkf_monitoring_without.png)
 
    * 上午10点，50个持久的（超过5分钟）营销活动工作流正在运行。
    * 其中大多数具有挂起状态（默认情况下，并发限制设置为20）。
@@ -184,7 +184,7 @@ Campaign Workflow HeatMap是从左上到右下自然可读的网格，允许查�
 1. 返回&#x200B;**[!UICONTROL Campaign Workflow HeatMap]**&#x200B;页面并单击&#x200B;**[!UICONTROL Reload data]**&#x200B;按钮。
 1. 现在，请注意以下事项：
 
-   ![](assets/wkf_monitoring_with.png)
+   ![应用了持续时间过滤器的热图网格，显示不同的分布，峰值减少到18个工作流。](assets/wkf_monitoring_with.png)
 
    * 上午10点，只有18个持久的活动工作流仍在运行。
    * 没有更多工作流处于待处理状态（并发限制仍设置为20）。

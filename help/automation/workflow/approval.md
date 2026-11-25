@@ -28,9 +28,9 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '609'
 ht-degree: 0%
 ---
 # 审批{#approval}
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 * 要选择单个运算符，请在&#x200B;**[!UICONTROL Assignment type]**&#x200B;字段中选择&#x200B;**[!UICONTROL Operator]**&#x200B;值，然后在&#x200B;**[!UICONTROL Assignee]**&#x200B;字段的下拉列表中选择相关运算符。
 
-  ![](assets/s_advuser_validation_box_assign.png)
+  ![分配类型列表已打开且运算符突出显示的审批活动](assets/s_advuser_validation_box_assign.png)
 
   >[!CAUTION]
   >
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 * 您可以定义用于筛选批准操作员的查询。 为此，请在&#x200B;**[!UICONTROL Assignment type]**&#x200B;字段中选择&#x200B;**[!UICONTROL Filter]**&#x200B;值，然后单击&#x200B;**[!UICONTROL Advanced parameters...]**&#x200B;链接以定义筛选条件，如以下示例所示：
 
-  ![](assets/s_advuser_validation_box_filter.png)
+  ![审批活动设置为“筛选”，且在“部门”等于值的高级参数筛选条件下](assets/s_advuser_validation_box_filter.png)
 
 在单个批准的情况下，对应于操作员选择的过渡被激活并且任务已完成：其他操作员无法回复。
 
@@ -69,13 +69,13 @@ ht-degree: 0%
 
 可从&#x200B;**[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]**&#x200B;节点访问&#x200B;**审批**&#x200B;类型任务：操作员可以直接通过此视图访问审批表单。
 
-![](assets/s_advuser_validation_from_console.png)
+![待审批列表，带有任务审批窗口，显示消息，选择“是”或“否”和“审批”按钮](assets/s_advuser_validation_from_console.png)
 
 ## 属性 {#properties}
 
 可在发送给审阅人的消息中使用自定义变量。 它们可以插入到消息标题或正文中。
 
-![](assets/edit_validation.png)
+![具有个性化菜单的审批活动，用于将活动和事件变量插入标题字段](assets/edit_validation.png)
 
 此&#x200B;**[!UICONTROL Title]**&#x200B;字段包含邮件的标题：这是已发送电子邮件的主题。 标题和消息正文都是JavaScript模板，因此可以包含根据工作流上下文计算的值。
 

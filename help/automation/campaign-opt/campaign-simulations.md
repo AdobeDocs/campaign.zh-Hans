@@ -21,10 +21,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '1233'
-ht-degree: 2%
+source-wordcount: '1511'
+ht-degree: 1%
 ---
 # 活动模拟{#campaign-simulations}
 
@@ -43,7 +43,7 @@ ht-degree: 2%
 
 在投放属性的&#x200B;**[!UICONTROL Typology]**&#x200B;子选项卡中选择投放模式。
 
-![](assets/simu_campaign_select_delivery_mode.png)
+![包含投放模式下拉列表的投放属性“类型”选项卡，其中列出了三种模式。](assets/simu_campaign_select_delivery_mode.png)
 
 
 ### 创建模拟 {#create-a-simulation}
@@ -52,19 +52,19 @@ ht-degree: 2%
 
 1. 打开&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡，单击&#x200B;**[!UICONTROL Create]**&#x200B;部分中的&#x200B;**[!UICONTROL More]**&#x200B;链接并选择&#x200B;**[!UICONTROL Simulation]**&#x200B;选项。
 
-   ![](assets/simu_campaign_opti_01.png)
+   ![Campaign日历主页，其中“创建打开”和“模拟”下的“更多”菜单突出显示。](assets/simu_campaign_opti_01.png)
 
 1. 输入模板和模拟的名称。 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建模拟。
 
-   ![](assets/simu_campaign_opti_02.png)
+   ![模拟创建对话框，其中突出显示了“模拟”模板和“标签”字段以及“保存”按钮。](assets/simu_campaign_opti_02.png)
 
 1. 单击&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡进行配置。
 
-   ![](assets/simu_campaign_opti_edit.png)
+   ![包含“常规”、“范围”、“计算”和“审计”部分以及执行设置的模拟的“编辑”选项卡。](assets/simu_campaign_opti_edit.png)
 
 1. 在&#x200B;**[!UICONTROL Scope]**&#x200B;选项卡中，指定要为此模拟考虑的投放。 为此，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并指定要考虑的投放选择模式。
 
-   ![](assets/simu_campaign_opti_edit_scope.png)
+   ![带有添加按钮的范围部分以及用于选择投放选择方式的模拟项对话框。](assets/simu_campaign_opti_edit_scope.png)
 
    您可以逐个选择每个投放，也可以按活动、项目或计划对投放进行排序。
 
@@ -74,17 +74,17 @@ ht-degree: 2%
    >  
    >如果不这样做，则在创建模拟时计划、项目或营销策划中不可用的任何投放都不会被考虑：稍后添加的投放将被忽略。
 
-   ![](assets/simu_campaign_opti_edit_scope_update.png)
+   ![包含一个或多个程序的所有投放的模拟项对话框，并且已选中“刷新选择”选项。](assets/simu_campaign_opti_edit_scope_update.png)
 
-1. 选择要包含在模拟范围内的元素。 如有必要，请使用SHIFT和CTRL键选取多个元素。
+1. Select要包含在模拟范围内的元素。 如有必要，请使用SHIFT和CTRL键选取多个元素。
 
-   ![](assets/simu_campaign_opti_edit_scope_select.png)
+   ![包含多个突出显示的投放和“完成”按钮的“投放选择”对话框。](assets/simu_campaign_opti_edit_scope_select.png)
 
    单击&#x200B;**[!UICONTROL Finish]**&#x200B;批准选择。
 
    您可以手动合并选定投放和属于计划、项目或营销策划的投放。
 
-   ![](assets/simu_campaign_opti_edit_scope_save.png)
+   ![使用“保存”按钮和“编辑动态条件”链接，范围列表将项目、营销活动和计划混合在一起。](assets/simu_campaign_opti_edit_scope_save.png)
 
    如有必要，您可以通过&#x200B;**[!UICONTROL Edit the dynamic condition...]**&#x200B;链接使用动态条件。
 
@@ -96,11 +96,11 @@ ht-degree: 2%
 
 1. 在&#x200B;**[!UICONTROL Calculations]**&#x200B;选项卡中，选择一个分析维度，例如收件人架构。
 
-   ![](assets/simu_campaign_opti_dimension.png)
+   ![架构选择对话框处于打开状态且收件人(nms)被选为分析维度的“计算”部分。](assets/simu_campaign_opti_dimension.png)
 
 1. 然后，您可以添加表达式。
 
-   ![](assets/simu_campaign_opti_dimension_02.png)
+   ![计算节，其中将收件人(nms)作为分析维度，并列出帐户和状态报告轴。](assets/simu_campaign_opti_dimension_02.png)
 
 ### 执行设置 {#execution-settings}
 
@@ -118,11 +118,11 @@ ht-degree: 2%
 
 为此，请打开模拟仪表板并单击&#x200B;**[!UICONTROL Start simulation]**。
 
-![](assets/simu_campaign_opti_start.png)
+![模拟仪表板，带有“开始模拟”按钮。](assets/simu_campaign_opti_start.png)
 
 执行完成后，打开模拟并单击&#x200B;**[!UICONTROL Results]**&#x200B;选项卡以查看为每个投放计算的目标。
 
-![](assets/simu_campaign_opti_results.png)
+![结果选项卡，“投放”子选项卡列出了每个投放及其初始计数和最终计数。](assets/simu_campaign_opti_results.png)
 
 1. **[!UICONTROL Deliveries]**&#x200B;子选项卡列出了模拟所考虑的所有投放。 它显示两个计数：
 
@@ -135,12 +135,12 @@ ht-degree: 2%
 
 1. **[!UICONTROL Exclusions]**&#x200B;子选项卡允许您查看排除项细分信息。
 
-   ![](assets/simu_campaign_opti_14.png)
+   ![结果选项卡，排除项子选项卡，显示每个投放和规则的排除计数。](assets/simu_campaign_opti_14.png)
 
 1. **[!UICONTROL Alerts]**&#x200B;子选项卡对模拟期间生成的所有警报消息进行分组。 在容量过载时（例如，如果定向的收件人数量超过设置的容量），可以发送警报消息。
 1. **[!UICONTROL Exploration of the exclusions]**&#x200B;子选项卡允许您创建结果分析表。 用户需要在横坐标/纵坐标轴中指示变量。
 
-   有关创建分析表的示例，请参阅[本节](#explore-results)的结尾。
+   有关创建分析表的示例，请参阅[浏览结果](#explore-results)的结尾。
 
 ### 查看结果 {#view-results}
 
@@ -148,7 +148,7 @@ ht-degree: 2%
 
 **[!UICONTROL Audit]**&#x200B;选项卡允许您监视模拟执行。 **[!UICONTROL SQL Logs]**&#x200B;子选项卡对专家用户很有用。 它以SQL格式列出执行日志。 仅当在模拟执行之前在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中选择了&#x200B;**[!UICONTROL Save SQL queries in the log]**&#x200B;选项时，才会显示这些日志。
 
-![](assets/simu_campaign_opti_11.png)
+![包含“日志”和“SQL日志”子选项卡的“审核”节，SQL日志显示执行查询。](assets/simu_campaign_opti_11.png)
 
 #### 浏览结果 {#explore-results}
 
@@ -180,7 +180,7 @@ Descriptive analysis is detailed in [this section](../../reporting/using/about-a
 
 要访问报表，请通过其仪表板单击目标模拟的&#x200B;**[!UICONTROL Reports]**&#x200B;链接。
 
-![](assets/campaign_opt_reporting_edit_from_board.png)
+![模拟仪表板报告视图列出报告图块，如模拟排除的详细信息。](assets/campaign_opt_reporting_edit_from_board.png)
 
 您还可以使用可从模拟仪表板访问的&#x200B;**[!UICONTROL Reports]**&#x200B;链接编辑报告。
 
@@ -196,12 +196,12 @@ Descriptive analysis is detailed in [this section](../../reporting/using/about-a
 1. 在&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡中，编辑其中一个可用的报告，例如&#x200B;**[!UICONTROL Detail of simulation exclusions]**。
 1. 在报告的右上角部分，单击图标以创建新历史记录。
 
-   ![](assets/campaign_opt_reporting_create_hist.png)
+   ![在工具栏中突出显示“新建历史记录”图标的模拟排除项报告的详细信息。](assets/campaign_opt_reporting_create_hist.png)
 
 1. 关闭模拟并更改分类&#x200B;**A**&#x200B;的配置。
 1. 再次执行模拟，并将结果与创建历史记录的报告中所显示的结果进行比较。
 
-   ![](assets/campaign_opt_reporting_edit_hist.png)
+   ![模拟排除项报告的详细信息与从“可用历史记录”图标中打开的已保存历史记录进行比较。](assets/campaign_opt_reporting_edit_hist.png)
 
    您可以根据需要保存任意数量的报告历史记录。
 
@@ -221,7 +221,7 @@ Descriptive analysis is detailed in [this section](../../reporting/using/about-a
 1. 要定义报表轴，请选择包含要在&#x200B;**[!UICONTROL Analysis dimension]**&#x200B;字段中处理的信息的表。 此信息是强制性的。
 1. 在此，我们要选择收件人表的区段字段。
 
-   ![](assets/simu_campaign_opti_09.png)
+   ![计算节，将收件人(nms)作为分析维度，并基于@status.](assets/simu_campaign_opti_09.png)建立状态报告轴
 
 1. 可以使用以下选项：
 
@@ -241,7 +241,7 @@ Descriptive analysis is detailed in [this section](../../reporting/using/about-a
 
 投放目标重叠指示模拟的至少两个投放中的目标收件人。
 
-![](assets/simu_campaign_opti_13.png)
+![结果选项卡，重叠子选项卡，列出每个投放、其并发投放和重叠计数。](assets/simu_campaign_opti_13.png)
 
 >[!NOTE]
 >

@@ -25,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 7%
+source-wordcount: '173'
+ht-degree: 6%
 ---
 # 单元格产品建议{#offers-by-cell}
 
@@ -36,7 +36,7 @@ ht-degree: 7%
 
 利用&#x200B;**[!UICONTROL Offers by cell]**&#x200B;活动，可将集客群体（例如从查询）分发到多个区段中，并指定要为每个区段呈现的选件。
 
-此活动只能与&#x200B;**交互**&#x200B;一起使用。 在[本节](../../v8/interaction/interaction.md)中了解有关选件管理的更多信息。
+此活动只能与&#x200B;**交互**&#x200B;一起使用。 在[Campaign互动 — 选件管理](../../v8/interaction/interaction.md)中了解有关选件管理的更多信息。
 
 操作步骤：
 
@@ -47,6 +47,6 @@ ht-degree: 7%
    * 使用可用的筛选和限制规则指定子集群体。
    * 接下来，选择要向子集呈现的选件。 可用优惠是在上一步骤中选择的优惠空间上符合条件的优惠。
 
-     ![](assets/int_offer_per_cell1.png)
+     ![按单元格显示优惠的子集窗口：筛选和记录限制选项、优惠空间和优惠列表。](assets/int_offer_per_cell1.png)
 
 1. 然后，配置与您选择的渠道对应的投放活动。 请参阅[跨渠道投放](cross-channel-deliveries.md)。

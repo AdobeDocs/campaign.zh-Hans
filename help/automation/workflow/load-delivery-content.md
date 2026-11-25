@@ -24,9 +24,9 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '373'
 ht-degree: 2%
 ---
 # 加载投放内容{#loading-delivery-content}
@@ -39,7 +39,7 @@ ht-degree: 2%
 
    以下是S3外部帐户的示例：
 
-   ![](assets/delivery_loadcontent_filetransfertexamples3.png)
+   ![已填写类型为AWS S3、服务器、AWS访问密钥ID和秘密访问密钥字段的外部帐户创建表单](assets/delivery_loadcontent_filetransfertexamples3.png)
 
 1. 创建新工作流，例如从&#x200B;**[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**。
 1. 将&#x200B;**[!UICONTROL File transfer]**&#x200B;活动添加到您的工作流中，并通过指定进行配置
@@ -47,16 +47,16 @@ ht-degree: 2%
    * 用于连接到S3或(S) FTP服务器的外部帐户。
    * S3或(S) FTP服务器上的文件路径。
 
-   ![](assets/delivery_loadcontent_filetransfertexample.png)
+   ![使用外部帐户和指向HTML文件的服务器文件夹路径，将文件传输活动设置为文件下载](assets/delivery_loadcontent_filetransfertexample.png)
 
 1. 添加&#x200B;**[!UICONTROL Delivery]**&#x200B;活动并将其连接到&#x200B;**[!UICONTROL File transfer]**&#x200B;活动的叫客过渡。 按如下方式配置：
 
    * 投放：根据您的需求，可以是系统中已创建的特定投放，也可以是基于现有模板的新投放。
    * 收件人：在此示例中，将视为在投放本身中指定了目标。
    * 内容：即使在上一个活动中导入了内容，请选择&#x200B;**[!UICONTROL Specified in the delivery]**。 由于内容是从位于远程服务器上的文件直接导入的，因此工作流处理内容时没有标识符，并且无法将其识别为来自入站事件。
-   * 要执行的操作：选择&#x200B;**[!UICONTROL Save]**&#x200B;以保存投放，并在执行工作流后能够从&#x200B;**[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**&#x200B;访问它。
+   * 要执行的操作： Select **[!UICONTROL Save]**&#x200B;用于保存投放，并在执行工作流后能够从&#x200B;**[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**&#x200B;访问它。
 
-   ![](assets/delivery_loadcontent_activityexample.png)
+   ![具有来自模板的新投放的投放活动，内容在投放和操作“保存”中指定](assets/delivery_loadcontent_activityexample.png)
 
 1. 在&#x200B;**[!UICONTROL Delivery]**&#x200B;活动的&#x200B;**[!UICONTROL Script]**&#x200B;选项卡中，添加以下命令以加载投放中导入文件的内容：
 
@@ -64,7 +64,7 @@ ht-degree: 2%
    delivery.content.html.source=loadFile(vars.filename)
    ```
 
-   ![](assets/delivery_loadcontent_script.png)
+   使用命令delivery.content.html.source=loadFile(vars.filename)![&#128279;](assets/delivery_loadcontent_script.png)的投放活动的脚本选项卡
 
 1. 保存并执行工作流。 在&#x200B;**[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**&#x200B;下创建了包含已加载内容的新投放。
 

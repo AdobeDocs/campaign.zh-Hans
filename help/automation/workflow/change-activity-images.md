@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 3%
+source-wordcount: '213'
+ht-degree: 2%
 ---
 # 更改活动图像{#change-activity-images}
 
@@ -41,7 +41,7 @@ ht-degree: 3%
 
 * 要更改背景图像，请选择所需的定位工作流，然后单击&#x200B;**[!UICONTROL Properties]**&#x200B;选项卡。
 
-  ![](assets/s_user_segmentation_properties_tab.png)
+  ![工作流属性，“高级”选项卡：突出显示Select链接图标的背景图像字段。](assets/s_user_segmentation_properties_tab.png)
 
   要选择要使用的图像，请单击&#x200B;**[!UICONTROL Background image]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Select link]**&#x200B;图标。
 
@@ -49,7 +49,7 @@ ht-degree: 3%
   >
   >背景图像的宽度（以像素为单位）必须为4的倍数。
 
-  ![](assets/s_user_segmentation_background_select.png)
+  ![图像选择窗口列出了背景图像，如backgrounds/grid.png，确认时单击“确定”。](assets/s_user_segmentation_background_select.png)
 
   **[!UICONTROL Edit link]**&#x200B;图标允许您查看选定的图像。
 
@@ -57,11 +57,11 @@ ht-degree: 3%
 
   要选择要使用的图像，请单击&#x200B;**[!UICONTROL Image]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Select link]**&#x200B;图标。
 
-  ![](assets/s_user_segmentation_activity_image.png)
+  ![突出显示图像字段的活动的“高级”选项卡，设置为activities/dedup.png。](assets/s_user_segmentation_activity_image.png)
 
   **[!UICONTROL Edit link]**&#x200B;图标允许您查看选定的图像。
 
-  ![](assets/s_user_segmentation_activity_image_select.png)
+  ![所选图像nms的预览:activities/dedup.png，显示有“编辑”链接图标。](assets/s_user_segmentation_activity_image_select.png)
 
 >[!NOTE]
 >

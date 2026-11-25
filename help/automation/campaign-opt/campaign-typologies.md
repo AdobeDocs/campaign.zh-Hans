@@ -28,16 +28,16 @@ topic_v2:
     internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 19%
+source-wordcount: '508'
+ht-degree: 17%
 ---
 # 营销活动类型入门{#about-campaign-typologies}
 
 **营销活动优化**&#x200B;是Adobe Campaign模块，允许您控制、筛选和监视投放的发送。 为了避免活动之间发生冲突，Adobe Campaign 可以应用特定的限制规则来测试各种活动组合。 这可确保所发送的邮件符合客户的需求与期望以及公司的通信政策。
 
-![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#typologies-video)
+![播放类型视频的按钮图标](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#typologies-video)
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Campaign资源管理器的&#x200B;**[!UICONTROL Administration > Campaign manage
 
 对于每个分类，**[!UICONTROL Rules]**&#x200B;选项卡允许您添加、删除或查看要应用的分类规则。
 
-![](assets/campaign_opt_rules_tab.png)
+![已选择一个分类的“分类”列表，其“规则”选项卡列出了要应用的分类规则](assets/campaign_opt_rules_tab.png)
 
 创建后，类型规则将分组到在投放中引用的营销活动&#x200B;**类型**&#x200B;中。 [了解详情](#apply-typologies)。
 
@@ -93,7 +93,7 @@ Campaign Optimization加载项提供另外两种类型的&#x200B;**类型规则*
 
 在投放准备期间，当满足条件时，将排除收件人。 您可以检查日志以监视排除情况。
 
-[此页面](pressure-rules.md#use-cases-on-pressure-rules)中提供了有关压力类型规则的示例用例。
+压力类型规则的示例用例在[压力规则的用例](pressure-rules.md#use-cases-on-pressure-rules)中提供。
 
 ## 教程视频 {#typologies-video}
 

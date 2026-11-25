@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '2258'
-ht-degree: 5%
+source-wordcount: '2646'
+ht-degree: 3%
 ---
 # 创建定位工作流{#target-data}
 
@@ -46,11 +46,11 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->[此部分](activities.md)中详细介绍了定位活动。
+>[关于工作流活动](activities.md)中详细介绍了定位活动。
 
 可以通过Adobe Campaign树的&#x200B;**[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]**&#x200B;节点或主页的&#x200B;**[!UICONTROL Profiles and Targets > Targeting workflows]**&#x200B;菜单创建和编辑定位工作流。
 
-![](assets/target_wf.png)
+![客户端控制台中的“配置文件和目标”下的“定位工作流”列表，具有现有工作流和“创建”按钮。](assets/target_wf.png)
 
 营销活动框架中的定位工作流存储在所有营销活动工作流中。
 
@@ -76,17 +76,17 @@ ht-degree: 5%
 
 例如，对于收件人（**收件人**），可以使用以下筛选维度：
 
-![](assets/query-filter-dimensions.png)
+![与定向维度收件人进行查询的对话框，筛选维度列表已打开，显示收件人投放日志。](assets/query-filter-dimensions.png)
 
 对于&#x200B;**访客**，列表将包含以下筛选维度：
 
-![](assets/query-filter-dimension-2.png)
+![与定位维度访客的查询对话框，筛选维度列表已打开，显示访客订阅。](assets/query-filter-dimension-2.png)
 
 ## 创建查询 {#create-queries}
 
 ### 使用其他数据 {#select-data}
 
-**[!UICONTROL Query]**&#x200B;活动允许您选择基本数据来构建目标群体。 如需详细信息，请参阅[此小节](query.md#creating-a-query)。
+**[!UICONTROL Query]**&#x200B;活动允许您选择基本数据来构建目标群体。 有关详细信息，请参阅[创建查询](query.md#creating-a-query)。
 
 您还可以使用以下活动来查询和优化数据库中的数据： [增量查询](incremental-query.md)，[读取列表](read-list.md)。
 
@@ -98,19 +98,19 @@ ht-degree: 5%
 
 **[!UICONTROL Edit additional data...]**&#x200B;链接允许您查看添加的数据，并对其进行修改或添加。
 
-![](assets/edit-additional-data.png)
+![使用“补充信息”下突出显示的编辑其他数据链接查询活动。](assets/edit-additional-data.png)
 
 要将数据添加到以前定义的输出列，请在可用字段列表中选择该数据。 要创建新的输出列，请单击&#x200B;**[!UICONTROL Add]**&#x200B;图标，然后选择该字段并单击&#x200B;**[!UICONTROL Edit expression]**。
 
-![](assets/query_add_an_output_column.png)
+![包含可用字段、输出列和突出显示“添加”图标的其他列窗口，用于创建输出列。](assets/query_add_an_output_column.png)
 
 单击&#x200B;**高级选择**&#x200B;按钮。
 
-![](assets/query_add_an_output_column_formula.png)
+![Select一个列出收件人字段的表达式窗口，其底部有“高级选择”按钮。](assets/query_add_an_output_column_formula.png)
 
 为要添加的字段定义计算模式，例如聚合。
 
-![](assets/query_add_aggregate.png)
+![对聚合函数选择了Process且选择了Sum选项的公式类型步骤。](assets/query_add_aggregate.png)
 
 **[!UICONTROL Add a sub-item]**&#x200B;选项允许您将计算数据附加到集合。 这样，您就可以从集合中选择附加数据或定义集合要素的汇总计算。
 
@@ -122,23 +122,23 @@ ht-degree: 5%
 
 利用收集的其他数据，可优化数据库中的数据筛选。 为此，请单击&#x200B;**[!UICONTROL Refine the target using additional data...]**&#x200B;链接：这将允许您对添加的数据进行过度筛选。
 
-![](assets/wf_add_data_use_additional_data.png)
+![使用高亮显示的其他数据链接查询包含优化目标的活动。](assets/wf_add_data_use_additional_data.png)
 
 ### 均匀化数据 {#homogenize-data}
 
 在&#x200B;**[!UICONTROL Union]**&#x200B;或&#x200B;**[!UICONTROL Intersection]**&#x200B;类型活动中，您可以选择仅保留共享的附加数据，以保持数据一致。 在这种情况下，此活动的临时输出工作表将仅包含在所有集客集中找到的附加数据。
 
-![](assets/use-common-add-data-only.png)
+![与“仅使用公共附加数据”选项高亮显示并选定的交集活动。](assets/use-common-add-data-only.png)
 
 ### 与其他数据协调 {#reconciliation-with-additional-data}
 
 在数据协调阶段（**[!UICONTROL Union]**、**[!UICONTROL Intersection]**&#x200B;等活动）中，您可以从其他列中选择用于数据协调的列。 要实现此目的，请在所选列上配置协调并指定主集。 然后，选择窗口下方的列中的列，如以下示例所示：
 
-![](assets/select-column-and-join.png)
+![交叉点活动，其中包含所选列、主集和用于联接列表的列。](assets/select-column-and-join.png)
 
-选择表达式并确认。
+Select表达式并确认。
 
-![](assets/select-column-and-join-2.png)
+![为交叉点Select表达式窗口，列出选定了帐户#的“定向”维度下的字段。](assets/select-column-and-join-2.png)
 
 
 ### 创建子集 {#create-subsets}
@@ -147,7 +147,7 @@ ht-degree: 5%
 
 除了目标数据之外，您还可以仅使用附加数据作为筛选条件将目标分割成多个子集。 如果您已购买&#x200B;**联合数据访问**&#x200B;选项，则还可以使用外部数据。
 
-如需详细信息，请参阅[此小节](#create-subsets-using-the-split-activity)。
+有关详细信息，请参阅[使用拆分活动创建子集](#create-subsets-using-the-split-activity)。
 
 ## 区段数据 {#segment-data}
 
@@ -155,7 +155,7 @@ ht-degree: 5%
 
 利用并集活动，可将多个活动的结果合并到一个过渡中。 集不必具有同样的性质。
 
-![](assets/union-keys-only.png)
+![仅具有协调选项键、所有共享列和一系列列的联合活动。](assets/union-keys-only.png)
 
 以下数据协调选项可用：
 
@@ -171,11 +171,11 @@ ht-degree: 5%
 
 * **[!UICONTROL A selection of columns]**
 
-  选择此选项可定义要应用数据协调之列的列表。
+  Select此选项用于定义要应用数据协调之列的列表。
 
   首先，选择主集（包含源数据的集），然后选择要用于连接的列。
 
-  ![](assets/join-reconciliation-options.png)
+  ![联合活动，具有选定的列、主集和联接列帐户及来源。](assets/join-reconciliation-options.png)
 
   >[!CAUTION]
   >
@@ -187,11 +187,11 @@ ht-degree: 5%
 
   首先，从列表中第一个集客过渡的群体中获取记录，然后，如果尚未达到最大值，则从第二个集客过渡的群体中获取记录，依此类推。
 
-  ![](assets/join_limit_nb_priority.png)
+  ![将活动与限制生成的群体大小及集客群体的优先级合并。](assets/join_limit_nb_priority.png)
 
 ### 提取连接数据（交集） {#extract-joint-data--intersection-}
 
-![](assets/traitements.png)
+![带有轮廓的群体A、B和C，用于标记并集、交集和排除所涵盖的区域。](assets/traitements.png)
 
 利用交集，可仅恢复由集客过渡群体共享的行。 此活动必须像并集活动一样进行配置。
 
@@ -207,7 +207,7 @@ ht-degree: 5%
 
 数据协调是通过标识符、更改轴或连接执行的。
 
-![](assets/exclusion-add-rule.png)
+![排除活动，例外定义对话框打开，排除集和更改维度选项可用。](assets/exclusion-add-rule.png)
 
 ### 使用拆分活动创建子集 {#create-subsets-using-the-split-activity}
 
@@ -221,15 +221,15 @@ ht-degree: 5%
 1. 在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，选择所需的选项： **[!UICONTROL Use data from the target and additional data]**、**[!UICONTROL Use the additional data only]**&#x200B;或&#x200B;**[!UICONTROL Use external data]**。
 1. 如果选择了&#x200B;**[!UICONTROL Use data from the target and additional data]**&#x200B;选项，则定向维度允许您使用集客过渡传送的所有数据。
 
-   ![](assets/split-general-tab-options.png)
+   ![使用“使用目标中的数据和附加数据”选项和筛选维度列表来拆分活动“常规”选项卡。](assets/split-general-tab-options.png)
 
    创建子集时，会使用上述过滤参数。
 
    要定义筛选条件，请选择&#x200B;**[!UICONTROL Add a filtering condition on the inbound population]**&#x200B;选项并单击&#x200B;**[!UICONTROL Edit...]**&#x200B;链接。 然后，指定用于创建此子集的过滤条件。
 
-   ![](assets/split-subset-config-all-data.png)
+   ![拆分活动子集选项卡，其中对选定的集客群体添加筛选条件并添加“编辑”链接。](assets/split-subset-config-all-data.png)
 
-   [本节](cross-channel-delivery-workflow.md)介绍了如何在&#x200B;**[!UICONTROL Split]**&#x200B;活动中使用筛选条件将目标分段为不同群体的示例。
+   [跨渠道投放工作流](cross-channel-delivery-workflow.md)中介绍了如何在&#x200B;**[!UICONTROL Split]**&#x200B;活动中使用筛选条件将目标分段为不同群体的示例。
 
    **[!UICONTROL Label]**&#x200B;字段允许您为新创建的子集提供一个名称，该名称将匹配叫客过渡。
 
@@ -237,7 +237,7 @@ ht-degree: 5%
 
    如有必要，您可以为要创建的每个子集分别更改定位和过滤维度。 为此，请编辑子集的过滤条件并选中&#x200B;**[!UICONTROL Use a specific filtering dimension]**&#x200B;选项。
 
-   ![](assets/split-subset-config-specific-filtering.png)
+   ![选中了使用特定筛选维度选项的查询对话框，位于定位和筛选维度上方。](assets/split-subset-config-specific-filtering.png)
 
 1. 如果选择&#x200B;**[!UICONTROL Use the additional data only]**&#x200B;选项，则仅提供附加数据用于子集过滤。
 
@@ -247,21 +247,21 @@ ht-degree: 5%
 
 1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并定义筛选条件。
 
-   ![](assets/wf_split_add_a_tab.png)
+   ![使用“添加”按钮突出显示的“拆分活动子集”选项卡，以在“子集”旁边创建新的子集选项卡。](assets/wf_split_add_a_tab.png)
 
 1. 在活动的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中定义筛选维度（请参阅上文）。默认情况下，它适用于所有子集。
 
-   ![](assets/wf_split_edit_filtering.png)
+   ![拆分活动子集选项卡显示子集A、B和C选项卡以及子集B的过滤条件选项。](assets/wf_split_edit_filtering.png)
 
 1. 如有必要，可以单独更改每个子集的过滤维度。 通过此功能，您可以为所有金卡持有者构建一个组合，一个组合适合所有点击了最新新闻通讯的收件人，第三个组合适合过去30天内进行店内购买的18至25岁人士，所有这些组合均使用相同的拆分活动。 为此，请选择&#x200B;**[!UICONTROL Use a specific filtering dimension]**&#x200B;选项并选择数据筛选上下文。
 
 创建子集后，默认情况下，拆分活动显示的输出过渡与子集一样多：
 
-![](assets/wf_split_multi_outputs.png)
+![分割活动具有三个叫客过渡（子集1、子集2和子集3）的工作流，用于分隔活动。](assets/wf_split_multi_outputs.png)
 
 可以将所有这些子集组合为一个输出过渡。 在这种情况下，指向相应子集的链接将在段代码中可见，例如。 为此，请选择&#x200B;**[!UICONTROL Generate all subsets in the same table]**&#x200B;选项。
 
-![](assets/wf_split_single_output.png)
+![选中并突出显示了“在同一表中生成所有子集”选项的“拆分活动常规”选项卡。](assets/wf_split_single_output.png)
 
 例如，您可以放置单个投放活动，并根据每个收件人集的段代码将投放内容个性化。
 
@@ -306,7 +306,7 @@ ht-degree: 5%
 
 ### 丰富和修改数据 {#enrich-and-modify-data}
 
-除了定向维度之外，过滤维度还允许您指定收集数据的性质。 请参阅[此小节](targeting-workflows.md#targeting-and-filtering-dimensions)。
+除了定向维度之外，过滤维度还允许您指定收集数据的性质。 请参阅[定位和筛选维度](targeting-workflows.md#targeting-and-filtering-dimensions)。
 
 识别出的和收集的数据可以被扩充、聚合和操作以优化目标构建。 为此，除了[此部分](#segmen-data)中详述的数据操作活动外，还应使用下列内容：
 

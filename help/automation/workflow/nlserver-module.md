@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '22'
-ht-degree: 27%
+source-wordcount: '38'
+ht-degree: 15%
 ---
 # Nlserver 模块{#nlserver-module}
 
@@ -32,4 +32,4 @@ ht-degree: 27%
 
 **nlserver模块**&#x200B;活动使用中央窗口中指定的参数启动一个nlserver模块。
 
-![](assets/nlserver_module_edit.png)
+![nlserver模块活动具有空的“参数”区域，且个性化菜单在“活动”选项中打开。](assets/nlserver_module_edit.png)

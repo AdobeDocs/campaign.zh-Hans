@@ -23,10 +23,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 1%
+source-wordcount: '541'
+ht-degree: 0%
 ---
 # 使用多对多关系进行查询 {#querying-using-a-many-to-many-relationship}
 
@@ -53,36 +53,36 @@ ht-degree: 1%
 1. 打开通用查询编辑器并选择收件人表&#x200B;**[!UICONTROL (nms:recipient)]**。
 1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Primary key]**、**[!UICONTROL First name]**、**[!UICONTROL Last name]**&#x200B;和&#x200B;**[!UICONTROL Email]**。
 
-   ![](assets/query_editor_nveau_33.png)
+   ![要提取窗口的数据，其中主键、名字、姓氏和电子邮件列为输出列](assets/query_editor_nveau_33.png)
 
 1. 在排序窗口中，按字母顺序对名称排序。
 
-   ![](assets/query_editor_nveau_34.png)
+   ![对“姓氏”列的“排序”选项设置为“是”的窗口进行排序](assets/query_editor_nveau_34.png)
 
 1. 在&#x200B;**[!UICONTROL Data filtering]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Filtering conditions]**。
 1. 在&#x200B;**[!UICONTROL Target element]**&#x200B;窗口中，用于提取过去7天没有跟踪日志的用户档案的过滤条件包括两个步骤。 您需要选择的元素是多对多链接。
 
    * 首先，为前&#x200B;**[!UICONTROL Value]**&#x200B;列选择&#x200B;**[!UICONTROL Recipient delivery logs (broadlog)]**&#x200B;收藏集元素（橙色节点）。
 
-     ![](assets/query_editor_nveau_67.png)
+     ![用于选择窗口且已选择收件人投放日志(broadLog)集合元素的字段](assets/query_editor_nveau_67.png)
 
      选择&#x200B;**[!UICONTROL do not exist as]**&#x200B;运算符。 无需在此行中选择第二个值。
 
    * 第二过滤条件的内容取决于第一过滤条件。 此处，**[!UICONTROL Event date]**&#x200B;字段直接在&#x200B;**[!UICONTROL Recipient delivery logs]**&#x200B;表中提供，因为存在指向此表的链接。
 
-     ![](assets/query_editor_nveau_36.png)
+     ![用于选择列出收件人投放日志字段的窗口的字段，其中事件日期(@eventDate)突出显示](assets/query_editor_nveau_36.png)
 
-     选择包含&#x200B;**[!UICONTROL greater than or equal to]**&#x200B;运算符的&#x200B;**[!UICONTROL Event date]**。 选择&#x200B;**[!UICONTROL DaysAgo (7)]**&#x200B;值。 为此，请单击&#x200B;**[!UICONTROL Value]**&#x200B;字段中的&#x200B;**[!UICONTROL Edit expression]**。 在&#x200B;**[!UICONTROL Formula type]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Process on dates]**&#x200B;和&#x200B;**[!UICONTROL Current date minus n days]**，并提供“7”作为值。
+     Select **[!UICONTROL Event date]**&#x200B;带&#x200B;**[!UICONTROL greater than or equal to]**&#x200B;运算符。 Select **[!UICONTROL DaysAgo (7)]**&#x200B;值。 为此，请单击&#x200B;**[!UICONTROL Value]**&#x200B;字段中的&#x200B;**[!UICONTROL Edit expression]**。 在&#x200B;**[!UICONTROL Formula type]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Process on dates]**&#x200B;和&#x200B;**[!UICONTROL Current date minus n days]**，并提供“7”作为值。
 
-     ![](assets/query_editor_nveau_37.png)
+     ![公式类型窗口，其处理日期为当前日期减去n天设置为7](assets/query_editor_nveau_37.png)
 
      筛选器条件已配置。
 
-     ![](assets/query_editor_nveau_38.png)
+     带有过滤器的![目标元素窗口：不存在投放日志，例如事件日期在](assets/query_editor_nveau_38.png)之前7天或之后
 
 1. 在&#x200B;**[!UICONTROL Data formatting]**&#x200B;窗口中，将姓氏切换为大写。 单击&#x200B;**[!UICONTROL Transformation]**&#x200B;列中的&#x200B;**[!UICONTROL Last name]**&#x200B;行，然后在下拉菜单中选择&#x200B;**[!UICONTROL Switch to upper case]**。
 
-   ![](assets/query_editor_nveau_39.png)
+   ![带有“姓氏的转换”列表的数据格式窗口，“切换到大写”选项突出显示](assets/query_editor_nveau_39.png)
 
 1. 使用&#x200B;**[!UICONTROL Add a calculated field]**&#x200B;函数在数据预览窗口中插入列。
 
@@ -93,7 +93,7 @@ ht-degree: 1%
    return rep
    ```
 
-   ![](assets/query_editor_nveau_40.png)
+   带有连接两个字段的脚本的“名字 — 姓氏”列的![JavaScript表达式编辑器](assets/query_editor_nveau_40.png)
 
    单击 **[!UICONTROL OK]**。 已配置&#x200B;**[!UICONTROL Data formatting]**&#x200B;窗口。
 
@@ -101,4 +101,4 @@ ht-degree: 1%
 
 1. 结果显示在&#x200B;**[!UICONTROL Data preview]**&#x200B;窗口中。 过去7天内未联系的收件人按字母顺序显示。 名称以大写显示，并且已创建具有名字和姓氏的列。
 
-   ![](assets/query_editor_nveau_41.png)
+   ![数据预览窗口列出了已添加“名字 — 姓氏”列的收件人](assets/query_editor_nveau_41.png)

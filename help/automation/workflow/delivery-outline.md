@@ -23,9 +23,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '260'
 ht-degree: 1%
 ---
 # 投放概要{#delivery-outline}
@@ -55,4 +55,4 @@ ht-degree: 1%
 
    预览会考虑投放中指定的优惠数量。 执行工作流时，将考虑投放大纲中指定的数字。
 
-   ![](assets/int_compo_offre_wf1.png)
+   ![选定了选件、多个建议、选件空间和筛选规则表的投放概要活动。](assets/int_compo_offre_wf1.png)

@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 10%
+source-wordcount: '388'
+ht-degree: 8%
 ---
 # 持续投放{#continuous-delivery}
 
@@ -34,11 +34,11 @@ ht-degree: 10%
 
 **连续投放**&#x200B;类型操作允许您向现有投放添加新收件人。 此投放类型使您每次都无需创建新投放：此模式通常更有效，尤其是对于在需要时发送的小流量警报或通知。
 
-![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#continuous-delivery-video)
+![视频播放图标](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#continuous-delivery-video)
 
 在投放模板级别，您可以指定脚本以计算关联投放的标签（和活动文件夹）。 如果脚本计算的投放尚不存在，则会动态创建。
 
-![](assets/edit_diffusion_fil.png)
+![包含“模板”字段和“收件人”选项以及“流程错误”复选框的连续投放活动](assets/edit_diffusion_fil.png)
 
 **[!UICONTROL Process errors]**&#x200B;选项显示特定过渡，如果生成错误，将激活该过渡。 在这种情况下，工作流不会进入错误模式并继续执行。
 

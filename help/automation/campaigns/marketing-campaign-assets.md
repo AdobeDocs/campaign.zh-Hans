@@ -21,9 +21,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '881'
 ht-degree: 0%
 ---
 # 管理资源和文档 {#manage-assets-documents}
@@ -54,19 +54,19 @@ ht-degree: 0%
 
 这些文档通过&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;选项卡链接到项目或营销策划。
 
-![](assets/op_add_document.png)
+![促销活动编辑选项卡，文档子选项卡：附加文档列表包含添加、删除和详细信息按钮。](assets/op_add_document.png)
 
 您还可以通过功能板中的专用链接将文档添加到营销活动。
 
-![](assets/add_a_document_in_op.png)
+![包含“添加文档”链接和“营销文档”对话框的营销活动信息板，用于上传文件。](assets/add_a_document_in_op.png)
 
 单击&#x200B;**[!UICONTROL Detail...]**&#x200B;图标可查看文件内容并添加信息：
 
-![](assets/add_document_details.png)
+![文档对话框从详细信息中打开：标签、版本、性质、上传的文件链接和描述。](assets/add_document_details.png)
 
 在仪表板中，与营销活动关联的文档分组到&#x200B;**[!UICONTROL Document(s)]**&#x200B;部分，如以下示例所示：
 
-![](assets/edit_documents.png)
+![Campaign信息板，其文档部分突出显示附加到营销活动的文档。](assets/edit_documents.png)
 
 也可以从此视图编辑和修改它们。
 
@@ -86,7 +86,7 @@ ht-degree: 0%
 
 要创建投放概要，请单击相关营销活动&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;子选项卡。
 
-![](assets/add-a-delivery-outline.png)
+![包含“添加投放概要”链接的“营销活动编辑”选项卡，“文档”，“投放概要”子选项卡。](assets/add-a-delivery-outline.png)
 
 
 >[!NOTE]
@@ -98,33 +98,33 @@ ht-degree: 0%
 1. 右键单击树的根并选择&#x200B;**[!UICONTROL New > Delivery outlines]**。
 1. 右键单击刚刚创建的大纲，然后选择&#x200B;**[!UICONTROL New > Item]**&#x200B;或&#x200B;**[!UICONTROL New > Personalization fields]**。
 
-![](assets/del-outline-add-new-item.png)
+![使用右键单击菜单的投放概要树：“新建”>“项目”、“个性化字段”或“选件”。](assets/del-outline-add-new-item.png)
 
 大纲可以包含项目、个性化字段和选件：
 
 * 项目可以是物理文档，例如，此处引用和描述的文档，将附加到投放。
 * 通过个性化字段，您可以创建与投放而不是收件人相关的个性化元素。 因此，可以创建值以用于特定目标的投放（欢迎优惠、折扣等） 它们在Adobe Campaign中创建，并通过&#x200B;**[!UICONTROL Import personalization fields...]**&#x200B;链接导入大纲。
 
-  ![](assets/del-outline-perso-field.png)
+  ![Select从“导入个性化字段”中打开的个性化字段对话框列表包（Gold和Premium）。](assets/del-outline-perso-field.png)
 
   也可以通过单击列表区域右侧的&#x200B;**[!UICONTROL Add]**&#x200B;图标，直接在大纲中创建它们。
 
-  ![](assets/add-del-outline-button.png)
+  ![投放大纲中的个性化字段列表，已输入值，列表右侧显示添加图标。](assets/add-del-outline-button.png)
 
 
-### 选择大纲 {#select-an-outline}
+### Select大纲 {#select-an-outline}
 
 对于每次投放，您可以从为提取大纲保留的节中选择要关联的大纲，如以下示例所示：
 
-![](assets/select-delivery-outline.png)
+使用Select进行投放的![直邮选项卡a投放概要对话框，其中列出单元B、单元C和单元A。](assets/select-delivery-outline.png)
 
 然后，所选轮廓将显示在窗口的下部。 可使用字段右侧的图标编辑或使用下拉列表更改它：
 
-![](assets/delivery-outline-selected.png)
+投放的![直邮选项卡，其投放概要字段高亮显示单元C。](assets/delivery-outline-selected.png)
 
 投放的&#x200B;**[!UICONTROL Summary]**&#x200B;选项卡也显示以下信息：
 
-![](assets/delivery-outline-in-dashboard.png)
+![带有指向投放概要值（单位C.](assets/delivery-outline-in-dashboard.png)）的箭头的投放摘要选项卡
 
 ### 提取结果 {#extraction-result}
 
@@ -132,6 +132,6 @@ ht-degree: 0%
 
 在以下示例中，与投放关联的大纲的标签、预计成本和描述将添加到提取文件中。
 
-![](assets/campaign-export-template.png)
+![要提取导出模板中标签（投放/投放大纲）输出列突出显示的步骤的数据。](assets/campaign-export-template.png)
 
 导出模型必须与为相关投放选择的服务提供商关联。 请参阅[此部分](providers-stocks-and-budgets.md#create-service-providers-and-their-cost-structures)。

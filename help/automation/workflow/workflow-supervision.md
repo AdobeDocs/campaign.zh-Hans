@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '772'
 ht-degree: 0%
 ---
 # 用例：监督工作流{#supervising-workflows}
@@ -49,7 +49,7 @@ ht-degree: 0%
 >
 >除了工作流之外，营销活动&#x200B;**工作流热图**&#x200B;还允许您详细分析当前运行的工作流。 有关详细信息，请参阅[专用部分](heatmap.md)。
 >
->有关如何&#x200B;**监视工作流的执行**&#x200B;的详细信息，请参阅[此部分](monitor-workflow-execution.md)。
+>有关如何&#x200B;**监视工作流执行**&#x200B;的详细信息，请参阅[监视工作流执行](monitor-workflow-execution.md)。
 
 ## 步骤1：创建监控工作流 {#step-1--creating-the-monitoring-workflow}
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 以下架构显示了活动的顺序：
 
-![](assets/uc_monitoring_workflow_overview.png)
+![监督工作流，其中包含由过渡链接的“开始”、“JavaScript代码”、“测试”、“交付”和“等待”活动](assets/uc_monitoring_workflow_overview.png)
 
 此工作流由以下部分组成：
 
@@ -137,11 +137,11 @@ vars.strWorkflowStop = strStop;
 
 如果三个事件变量“vars.strWorkflowError”、“vars.strWorkflowPaused”或“vars.strWorkflowStop”中至少有一个是非void，则会向主管&#x200B;**发送投放。**
 
-![](assets/uc_monitoring_workflow_test.png)
+![测试具有True条件的活动，检查三个工作流变量长度是否为0，默认长度为False](assets/uc_monitoring_workflow_test.png)
 
 可以将“等待”活动配置为定期重新启动监视工作流。 对于此用例，**等待时间设置为1小时**。
 
-![](assets/uc_monitoring_workflow_attente.png)
+持续时间字段设置为1h![&#128279;](assets/uc_monitoring_workflow_attente.png)的等待活动
 
 ## 步骤4：准备投放 {#step-4--preparing-the-delivery}
 
@@ -152,7 +152,7 @@ vars.strWorkflowStop = strStop;
 * **主管的电子邮件地址**。
 * 用于插入个性化文本的&#x200B;**HTML内容**。
 
-  ![](assets/uc_monitoring_workflow_variables_diffusion.png)
+  投放模板的![变量选项卡，其中列出了WF_Stop、WF_Error和WF_Paused作为文本变量](assets/uc_monitoring_workflow_variables_diffusion.png)
 
   声明的三个变量(WF_Stop、WF_Paused、WF_Error)与三个工作流事件变量匹配。
 
@@ -162,7 +162,7 @@ vars.strWorkflowStop = strStop;
 
   投放模板包含以下内容：
 
-  ![](assets/uc_monitoring_workflow_model_diffusion.png)
+  ![投放模板的HTML内容，其中包含错误、暂停和停止的工作流标题和变量。WF_ tags](assets/uc_monitoring_workflow_model_diffusion.png)
 
 创建并批准模板后，您需要将&#x200B;**投放**&#x200B;活动配置为：
 
@@ -176,13 +176,13 @@ vars.strWorkflowStop = strStop;
 * 要执行的操作：选择&#x200B;**准备并启动**。
 * 取消选中&#x200B;**进程错误**&#x200B;选项。
 
-  ![](assets/uc_monitoring_workflow_optionmodel.png)
+  ![新建的投放活动，从模板创建，在投放中指定，并准备和启动选定项](assets/uc_monitoring_workflow_optionmodel.png)
 
 * 转到&#x200B;**投放**&#x200B;活动的&#x200B;**脚本**&#x200B;选项卡，通过个性化字段菜单添加三个&#x200B;**字符串**&#x200B;类型变量。
 
-  ![](assets/uc_monitoring_workflow_selectlinkvariables.png)
+  在“投放”和“其他”选项上打开个性化菜单的投放活动的![脚本选项卡](assets/uc_monitoring_workflow_selectlinkvariables.png)
 
-  ![](assets/uc_monitoring_workflow_linkvariables.png)
+  ![已选择变量且值（文本）字段突出显示的可用字段窗口](assets/uc_monitoring_workflow_linkvariables.png)
 
   声明的三个变量为：
 

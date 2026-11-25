@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 4%
+source-wordcount: '956'
+ht-degree: 2%
 ---
 # 一致性规则{#consistency-rules}
 
@@ -48,24 +48,24 @@ Adobe Campaign通过营销活动类型中包含的一组规则，确保通信的
 要设计新容量规则，请执行以下步骤：
 
 1. 在&#x200B;**[!UICONTROL Administration > Campaign management > Typology management > Typology rules]**&#x200B;文件夹下，单击&#x200B;**[!UICONTROL New]**。
-1. 选择&#x200B;**[!UICONTROL Capacity]**&#x200B;规则类型。
+1. Select **[!UICONTROL Capacity]**&#x200B;规则类型。
 
-   ![](assets/campaign_opt_create_capacity_01.png)
+   ![类型规则创建屏幕，在“规则类型”下拉列表中选择“容量”选项。](assets/campaign_opt_create_capacity_01.png)
 
-1. 在&#x200B;**[!UICONTROL Capacity]**&#x200B;选项卡中，创建可用性行：在我们的示例中，这些是可进行调用的时间段。 选择24小时期间并在初始数量中输入150，这意味着呼叫中心每天可以处理150次呼叫。
+1. 在&#x200B;**[!UICONTROL Capacity]**&#x200B;选项卡中，创建可用性行：在我们的示例中，这些是可进行调用的时间段。 Select提供24小时的期限，并在初始数量中输入150，这意味着呼叫中心每天可以处理150次呼叫。
 
-   ![](assets/campaign_opt_create_capacity_02.png)
+   ![带有“编辑可用性行”对话框的“容量”选项卡，用于输入开始、结束和初始数量。](assets/campaign_opt_create_capacity_02.png)
 
    >[!NOTE]
    >
-   >可用性行仅供参考。 如果达到容量限制时需要排除邮件，请参阅[此部分](#exclude-messages-when-capacity-limit-reached)。
+   >可用性行仅供参考。 如果达到容量限制时需要排除邮件，请参阅[达到容量限制时排除邮件](#exclude-messages-when-capacity-limit-reached)。
 
-1. 将此规则与分类关联，然后将该分类引用到您的投放以应用此容量规则。 如需详细信息，请参阅[此小节](apply-rules.md#apply-a-typology-to-a-delivery)。
+1. 将此规则与分类关联，然后将该分类引用到您的投放以应用此容量规则。 有关详细信息，请参阅[将分类应用于投放](apply-rules.md#apply-a-typology-to-a-delivery)。
 1. 您可以从规则&#x200B;**[!UICONTROL Consumptions]**&#x200B;和&#x200B;**[!UICONTROL Capacity]**&#x200B;选项卡中监视消耗。
 
    在投放中使用规则时，**[!UICONTROL Consumed]**&#x200B;和&#x200B;**[!UICONTROL Remaining]**&#x200B;列提供有关加载的信息，如下所示：
 
-   ![](assets/campaign_opt_create_capacity_03.png)
+   ![容量选项卡，显示具有150个初始数量、200个已冲减量和–50个剩余量的可用性行。](assets/campaign_opt_create_capacity_03.png)
 
    如需详细信息，请参阅[此小节](#monitor-consumption)。
 
@@ -77,7 +77,7 @@ Adobe Campaign通过营销活动类型中包含的一组规则，确保通信的
 
 要创建可用性行，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并选择&#x200B;**[!UICONTROL Add an availability line]**。 输入可用性期间和可用负荷。
 
-![](assets/campaign_opt_create_capacity_02.png)
+![从“添加”按钮打开了“编辑可用性行”对话框，其中包含“开始”、“结束”和“初始数量”字段。](assets/campaign_opt_create_capacity_02.png)
 
 根据需要添加任意数量的行以适合您的处理能力。
 
@@ -87,25 +87,25 @@ Adobe Campaign通过营销活动类型中包含的一组规则，确保通信的
 
 要自动设置页面创建频率，请单击&#x200B;**[!UICONTROL Change]**&#x200B;按钮并定义时间段计划。
 
-![](assets/campaign_opt_create_capacity_07.png)
+![使用“添加一组选定的可用性行”和“更改计划”按钮编辑可用性行对话框。](assets/campaign_opt_create_capacity_07.png)
 
 例如，我们定义一个时间表，为所有工作日创建可用性时段，在上午9点到下午5点之间，每小时接听10次呼叫。 要执行此操作，请应用以下步骤：
 
-1. 选择周期类型以及有效期间的天数和小时：
+1. Select的周期类型以及有效日期和时间：
 
-   ![](assets/campaign_opt_create_capacity_08.png)
+   ![计划编辑向导“有效期”页，其中包含从日历中选择的有效开始日期和有效结束日期。](assets/campaign_opt_create_capacity_08.png)
 
 1. 指示有效日期：
 
-   ![](assets/campaign_opt_create_capacity_09.png)
+   ![计划编辑向导“有效期”页，其中从日历中挑选了结束有效日期。](assets/campaign_opt_create_capacity_09.png)
 
 1. 在批准计划之前检查计划：
 
-   ![](assets/campaign_opt_create_capacity_10.png)
+   ![计划编辑向导“摘要”页面，其中包含计划说明和完成前的启动时间列表。](assets/campaign_opt_create_capacity_10.png)
 
 **[!UICONTROL Forecasting]**&#x200B;工作流会自动创建所有匹配的行。
 
-![](assets/campaign_opt_create_capacity_12.png)
+呼叫中心规则的![容量选项卡，其中列出了计划自动创建的可用性行。](assets/campaign_opt_create_capacity_12.png)
 
 >[!NOTE]
 >
@@ -115,24 +115,24 @@ Adobe Campaign通过营销活动类型中包含的一组规则，确保通信的
 
 可用性行仅供参考。 要排除超出的消息，请选中&#x200B;**[!UICONTROL Exclude from the target messages in excess of capacity]**&#x200B;选项。 这样可防止超出容量。 对于与上例相同的人口，冲减和剩余能力不能超过初始数量：
 
-![](assets/campaign_opt_create_capacity_04.png)
+![容量选项卡，从超过所选容量的目标邮件中排除：已使用100，剩余50。](assets/campaign_opt_create_capacity_04.png)
 
 可处理的最大消息数在定义的可用性范围内平均细分。 这尤其与呼叫中心相关，因为它们每天的最大呼叫数是有限的。 对于电子邮件投放，**[!UICONTROL Do not limit instantaneous delivery capacity]**&#x200B;选项允许您忽略此可用性范围，同时发送电子邮件。
 
-![](assets/campaign_opt_create_capacity_05.png)
+![已选择“不限制即时投放容量”的“容量”选项卡，显示150个已用容量和0个剩余容量。](assets/campaign_opt_create_capacity_05.png)
 
 >[!NOTE]
 >
 >在过载的情况下，将根据投放属性中定义的公式选择已保存的消息。
 
-![](assets/campaign_opt_create_capacity_06.png)
+![具有容量设置的“传递属性”的“类型”选项卡：呼叫中心渠道容量和重要性公式。](assets/campaign_opt_create_capacity_06.png)
 
 ## 监测消耗 {#monitoring-consumption}
 
-默认情况下，容量规则仅用于指示用途。 选择&#x200B;**[!UICONTROL Exclude messages in excess of capacity from the target]**&#x200B;选项可防止超出定义的负载。 在这种情况下，使用此分类规则将自动从投放中排除多余的消息。
+默认情况下，容量规则仅用于指示用途。 Select的&#x200B;**[!UICONTROL Exclude messages in excess of capacity from the target]**&#x200B;选项可防止超出定义的负载。 在这种情况下，使用此分类规则将自动从投放中排除多余的消息。
 
 要监视使用，请查看类型规则中&#x200B;**[!UICONTROL Capacity]**&#x200B;选项卡的&#x200B;**[!UICONTROL Consumed]**&#x200B;列中显示的值。
 
-![](assets/campaign_opt_create_capacity_04.png)
+![已选择排除选项的“容量”选项卡，显示150个初始数量中的100个已用和50个剩余数量。](assets/campaign_opt_create_capacity_04.png)
 
 要查看消耗行，请单击规则中的&#x200B;**[!UICONTROL Consumptions]**&#x200B;选项卡。

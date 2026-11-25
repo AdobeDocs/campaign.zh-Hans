@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 8%
+source-wordcount: '473'
+ht-degree: 7%
 ---
 # 调度程序 {#scheduler}
 
@@ -50,22 +50,22 @@ ht-degree: 8%
 
 调度程序定义转换的激活调度。 要配置它，请双击图形对象，然后单击&#x200B;**[!UICONTROL Change...]**
 
-![](assets/s_user_segmentation_scheduler.png)
+带有用于定义执行频率的更改按钮的![调度程序活动对话框](assets/s_user_segmentation_scheduler.png)
 
 通过向导，可定义活动的频率和有效期。 配置步骤如下：
 
-1. 选择激活频率，然后单击&#x200B;**[!UICONTROL Next]**。
+1. Select激活频率，然后单击&#x200B;**[!UICONTROL Next]**。
 
-   ![](assets/s_user_segmentation_scheduler2.png)
+   ![计划编辑向导，Select频率类型：一天几次、每天、每周、每月、一次](assets/s_user_segmentation_scheduler2.png)
 
 1. 给出激活时间和日期。 此步骤的参数取决于上一步骤中选择的频率。 如果选择每天启动活动多次，则配置选项将如下所示：
 
-   ![](assets/s_user_segmentation_scheduler3.png)
+   ![计划编辑向导，一天多次：所选小时上的小时选择和工作日的日期选择](assets/s_user_segmentation_scheduler3.png)
 
 1. 定义计划的有效期，或指定执行计划的次数。
 
-   ![](assets/s_user_segmentation_scheduler4.png)
+   ![计划编辑向导，有效期：永久有效期、有效起始日期和终止日期或最大迭代次数](assets/s_user_segmentation_scheduler4.png)
 
 1. 检查配置并单击&#x200B;**[!UICONTROL Finish]**&#x200B;进行保存。
 
-   ![](assets/s_user_segmentation_scheduler5.png)
+   ![计划编辑向导，摘要：计划说明和下次启动时间的列表，按“完成”按钮](assets/s_user_segmentation_scheduler5.png)

@@ -23,10 +23,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 12%
+source-wordcount: '292'
+ht-degree: 10%
 ---
 # 定期投放{#recurring-delivery}
 
@@ -34,15 +34,15 @@ ht-degree: 12%
 
 **[!UICONTROL Recurring delivery]**&#x200B;活动允许您配置特定于营销活动的投放模板发生次数。
 
-![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#recurring-delivery-video)
+视频链接的![播放按钮图标。](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#recurring-delivery-video)
 
 此活动只能通过营销策划中的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡进行。
 
 操作步骤：
 
-1. 选择活动将基于的投放模板。
+1. Select活动将基于的投放模板。
 
-   ![](assets/recurring_delivery_001.png)
+   ![传递窗口，其传递模板下拉列表已打开，且已选择电子邮件传递（邮件）。](assets/recurring_delivery_001.png)
 
 1. 配置投放模板。
 

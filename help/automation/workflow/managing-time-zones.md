@@ -29,9 +29,9 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '285'
 ht-degree: 4%
 ---
 # 管理时区{#managing-time-zones}
@@ -46,7 +46,7 @@ Adobe Campaign允许您管理同一实例所涉及的不同国家/地区之间�
 
 对于所有计划任务（即具有计划选项的所有活动），您可以选择要应用的时区。 通过相关活动的&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡选择时区：
 
-![](assets/wf-timezone-in-a-box.png)
+![计划程序高级选项卡，打开时区下拉列表，列出默认、服务器、操作员和数据库时区。](assets/wf-timezone-in-a-box.png)
 
 可能的值包括：
 

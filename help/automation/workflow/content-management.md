@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 2%
+source-wordcount: '566'
+ht-degree: 1%
 ---
 # 内容管理{#content-management}
 
@@ -47,7 +47,7 @@ ht-degree: 2%
 * **内容更新**：任务可以修改内容的主题或导入所有XML内容。
 * **操作**：生成的内容可以保存或生成。
 
-  ![](assets/content_mgmt_edit.png)
+  ![内容管理活动，包含内容、更新内容和操作以执行节和出站过渡](assets/content_mgmt_edit.png)
 
 1. **内容**
 
@@ -59,19 +59,19 @@ ht-degree: 2%
 
      此选项允许您通过&#x200B;**[!UICONTROL Content]**&#x200B;字段选择已创建的内容。 仅当选择了&#x200B;**[!UICONTROL Explicit]**&#x200B;选项时，此字段才可见。
 
-     ![](assets/content_mgmt_explicit.png)
+     ![选定了“显式”选项且内容字段设置为现有内容的“内容”部分](assets/content_mgmt_explicit.png)
 
    * **[!UICONTROL Calculated by a script]**
 
      内容标识符由脚本计算。 **[!UICONTROL Script]**&#x200B;字段允许您定义评估内容标识符（主键）的JavaScript模板。 仅当选择了&#x200B;**[!UICONTROL Calculated by a script]**&#x200B;选项时，此字段才可见。
 
-     ![](assets/content_mgmt_script.png)
+     ![选定脚本计算且显示脚本字段的内容节](assets/content_mgmt_script.png)
 
    * **[!UICONTROL New, created from a publication template]**
 
      从发布模板创建新内容。 此新内容将保存在&#x200B;**[!UICONTROL String]**&#x200B;字段中指定的文件中。 **[!UICONTROL Template]**&#x200B;字段指定要用于创建内容的发布模板。
 
-     ![](assets/content_mgmt_new.png)
+     ![新建的内容节，创建自选定的发布模板以及模板和渠道字段](assets/content_mgmt_new.png)
 
 1. **更新内容**
 
@@ -83,7 +83,7 @@ ht-degree: 2%
 
      此选项允许您从通过XSL样式表下载的XML文档构造内容。 选择此选项时，**[!UICONTROL URL]**&#x200B;字段指定XML内容下载URL。 **[!UICONTROL XSL stylesheet]**&#x200B;允许您指定用于转换下载的XML文档的样式表。 此属性是可选的。
 
-     ![](assets/content_mgmt_xmlcontent.png)
+     ![更新内容部分，检查是否访问来自XML馈送的数据，显示URL和XSL样式表字段](assets/content_mgmt_xmlcontent.png)
 
 1. **要执行的操作**
 
@@ -97,7 +97,7 @@ ht-degree: 2%
 
      此选项保存内容，然后为具有“文件”类型发布的每个转换模板生成输出文件。
 
-     ![](assets/content_mgmt_generate.png)
+     ![在选择“生成”并显示“发布”文件夹字段的情况下执行节的操作](assets/content_mgmt_generate.png)
 
      对于每个使用在&#x200B;**[!UICONTROL contentId]**&#x200B;变量中保存的内容标识符作为其参数以及在&#x200B;**[!UICONTROL filename]**&#x200B;变量中的文件名生成的文件，将激活出站过渡。
 

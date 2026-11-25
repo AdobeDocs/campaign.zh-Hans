@@ -28,9 +28,9 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '568'
 ht-degree: 0%
 ---
 # 论坛{#discussion-forums}
@@ -43,13 +43,13 @@ Adobe Campaign操作员可以使用论坛来共享信息。 以下元素每个�
 
 要访问论坛，请浏览到仪表板并单击右上角的&#x200B;**[!UICONTROL Forum]**&#x200B;链接。
 
-![](assets/mrm-forum-icon.png)
+![带有指向论坛链接和讨论列表的箭头的营销活动仪表板。](assets/mrm-forum-icon.png)
 
 消息及其响应按从最新到最旧的顺序显示。
 
 要启动新线程，请单击右上角的&#x200B;**[!UICONTROL Add a discussion]**&#x200B;按钮。 出现&#x200B;**[!UICONTROL Discussion forum]**&#x200B;框（见下文）。
 
-![](assets/mrm-forum-new-thread.png)
+![包含主题、邮件、要通知的操作员、附加文档以及创建邮件的讨论论坛对话框。](assets/mrm-forum-new-thread.png)
 
 
 在&#x200B;**[!UICONTROL Message]**&#x200B;字段中输入您的文本，在&#x200B;**[!UICONTROL Subject]**&#x200B;字段中输入讨论标题。
@@ -85,7 +85,7 @@ Adobe Campaign操作员可以使用论坛来共享信息。 以下元素每个�
 
 * 您的个人信息板列出了您订阅的论坛。 单击&#x200B;**[!UICONTROL Subscription to discussion forums]**&#x200B;链接以显示列表，然后单击您感兴趣的项目以访问其论坛。
 
-  ![](assets/forum-subscribed.png)
+  ![操作员仪表板，其中突出显示了论坛订阅列表。](assets/forum-subscribed.png)
 
 
 ## 通知投放疑难解答 {#checking-notification-delivery}

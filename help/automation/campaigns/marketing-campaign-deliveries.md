@@ -27,10 +27,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 1%
+source-wordcount: '861'
+ht-degree: 0%
 ---
 # 营销活动投放 {#marketing-campaign-deliveries}
 
@@ -44,13 +44,13 @@ ht-degree: 1%
 
 * 通过营销活动仪表板中的&#x200B;**[!UICONTROL Add a delivery]**&#x200B;链接。
 
-  ![](assets/campaign_op_add_delivery.png)
+  ![包含“添加投放”链接和用于选择模板和标签的新投放窗口的Campaign仪表板。](assets/campaign_op_add_delivery.png)
 
   保存后，投放即会添加到活动仪表板。
 
 * 通过添加投放，在营销活动工作流的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡中。
 
-  ![](assets/campaign-wf-delivery.png)
+  ![使用“投放”面板和以投放活动结尾的工作流的“定位和工作流”选项卡。](assets/campaign-wf-delivery.png)
 
   启动工作流后，投放即会添加到活动仪表板。
 
@@ -60,23 +60,23 @@ ht-degree: 1%
 
 获得所有批准后，可以发送投放。 投放执行过程取决于渠道。
 
-* 对于电子邮件或移动渠道投放，请参阅[此章节](#start-an-online-delivery)
+* 有关电子邮件或移动渠道投放，请参阅[开始电子邮件或移动投放](#start-an-online-delivery)
 
-* 对于直邮投放，请参阅[此章节](#start-an-offline-delivery)
+* 对于直邮投放，请参阅[开始直邮投放](#start-an-offline-delivery)
 
 ### 开始电子邮件或移动投放 {#start-an-online-delivery}
 
 在批准所有审批请求后，投放状态将更改为&#x200B;**[!UICONTROL Pending confirmation]**&#x200B;并可以启动。 可以开始投放的审阅人会收到投放已准备就绪可供开始的通知。
 
-![](assets/confirm-delivery.png)
+![带有“确认投放”按钮的投放摘要，当所有审批都获得批准且状态为“待处理”时显示。](assets/confirm-delivery.png)
 
 该信息也会显示在促销活动信息板上。 **[!UICONTROL Confirm delivery]**&#x200B;链接允许您开始投放。
 
-![](assets/confirm-delivery-from-dashboard.png)
+![在等待确认的投放上具有确认投放链接的Campaign仪表板。](assets/confirm-delivery-from-dashboard.png)
 
 确认投放仅限于管理员，以及投放或营销活动属性中明确提及的操作员或操作员组。 如果未设计运算符，则管理员和活动所有者可以批准。
 
-![](assets/select-delivery-reviewers.png)
+![投放属性“审批”选项卡显示每次审批和投放开始的审阅者。](assets/select-delivery-reviewers.png)
 
 但是，您还可以允许活动所有者确认发送，即使已在投放或活动属性中定义特定审阅人也是如此。 为此，请以管理员身份创建&#x200B;**NmsCampaign_Activate_OwnerConfirmation**&#x200B;选项并将其设置为&#x200B;**1**。 这些选项是从Campaign资源管理器的&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]**&#x200B;文件夹中进行管理的。
 
@@ -93,7 +93,7 @@ ht-degree: 1%
 
    仅当在高级促销活动参数的&#x200B;**[!UICONTROL Approvals]**&#x200B;选项卡中启用了&#x200B;**[!UICONTROL Enable the sending and validation of proofs (Direct mail)]**&#x200B;选项时，此步骤才可用。
 
-   ![](assets/enable-proof-validation.png)
+   ![验证窗口，带有启用发送和验证所选校样（直邮）和校样组。](assets/enable-proof-validation.png)
 
 1. 单击&#x200B;**[!UICONTROL Send a proof]**&#x200B;按钮以创建校样。
 
@@ -115,17 +115,17 @@ ht-degree: 1%
 
 * 通过&#x200B;**[!UICONTROL Budget]**&#x200B;选项卡，您可以管理营销活动的预算。 成本条目的总数显示在营销活动主选项卡及其所属项目的&#x200B;**[!UICONTROL Calculated cost]**&#x200B;字段中。 这些金额还反映在营销活动预算中。
 
-  ![](assets/campaign-budget-tab.png)
+  ![显示相关预算、计算成本和每次投放的成本行列表的“营销活动预算”选项卡。](assets/campaign-budget-tab.png)
 
   最终将根据路由器提供的信息计算实际成本。 只有实际发送的消息才会被计费。
 
 * 库存在树的&#x200B;**[!UICONTROL Administration > Campaign management > Stocks]**&#x200B;节点中定义。
 
-  ![](assets/campaign-stocks.png)
+  Campaign浏览器中的![库存节点，带有销售传单库存仪表板及其库存行。](assets/campaign-stocks.png)
 
   **[!UICONTROL Administration > Campaign management > Service providers]**&#x200B;节点中的成本结构。
 
-  ![](assets/campaign-service-providers.png)
+  Campaign资源管理器中的![服务提供程序节点，带有Blue Print提供程序及其服务列表。](assets/campaign-service-providers.png)
 
   库存行在库存区中可见。 要定义初始坯件，请打开坯件线。 每次进行交货时，库存都会减少。 您可以定义警报级别和通知。
 

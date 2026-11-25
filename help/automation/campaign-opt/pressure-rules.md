@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '3145'
-ht-degree: 7%
+source-wordcount: '3612'
+ht-degree: 6%
 ---
 # 压力规则{#pressure-rules}
 
@@ -67,17 +67,17 @@ ht-degree: 7%
 
 1. 在营销活动类型规则列表中，选择列表上方的&#x200B;**[!UICONTROL New]**&#x200B;图标。
 
-   ![](assets/campaign_opt_create_a_rule_01.png)
+   ![Administration文件夹中的类型规则列表，该列表上方突出显示“新建”图标。](assets/campaign_opt_create_a_rule_01.png)
 
 1. 在新规则的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，选择&#x200B;**压力**&#x200B;类型规则并为其输入名称和描述。
 
-   ![](assets/campaign_opt_create_a_rule_02.png)
+   ![新的分类规则，“常规”选项卡，在“规则类型”列表中选择了“压力”。](assets/campaign_opt_create_a_rule_02.png)
 
 1. 根据需要更改执行顺序。 将多个分类规则应用为&#x200B;**[!UICONTROL Typology]**&#x200B;集时，首先应用排序较低的规则。 [了解详情](apply-rules.md#execution-order)。
 1. 在&#x200B;**[!UICONTROL Calculation parameters]**&#x200B;部分中，定义频率（如果要在下次每日重新仲裁执行之后保存定位）。 [了解详情](apply-rules.md#adjust-calculation-frequency)。
 1. 单击&#x200B;**[!UICONTROL Pressure]**&#x200B;选项卡，然后选择应用分类规则的日历期间。
 
-   ![](assets/campaign_opt_create_a_rule_03.png)
+   ![带有Sliding period节和Period类型列表的Pressure选项卡，其中显示了分组选项。](assets/campaign_opt_create_a_rule_03.png)
 
    该规则将应用于联系日期包含在相关时间段的投放。
 
@@ -91,11 +91,11 @@ ht-degree: 7%
 
    默认情况下，阈值为常量，您需要指定规则授权的消息数量上限。
 
-   ![](assets/campaign_opt_create_a_rule_03b.png)
+   ![阈值类型设置为“常量”且数量为4的压力标签。](assets/campaign_opt_create_a_rule_03b.png)
 
    要定义变量阈值，请在&#x200B;**[!UICONTROL Type of threshold]**&#x200B;字段中选择&#x200B;**[!UICONTROL Depends on the recipient]**&#x200B;值，然后使用右侧的图标打开表达式编辑器。
 
-   ![](assets/campaign_opt_create_a_rule_04.png)
+   ![阈值类型列表显示“常量”并取决于收件人。](assets/campaign_opt_create_a_rule_04.png)
 
    有关详细信息，请参阅[最大消息数](#maximum-number-of-messages)。
 
@@ -110,7 +110,7 @@ ht-degree: 7%
 
      在下面的示例中，只考虑保存在&#x200B;**NewContacts**&#x200B;文件夹中的收件人，并关注以&#x200B;**新闻稿**&#x200B;开头的投放。
 
-   ![](assets/campaign_opt_create_a_rule_05.png)
+   ![要计数节的邮件，该节包含有关NewRecipients的文件夹查询以及以Newsletter开头的关于标签的传递查询。](assets/campaign_opt_create_a_rule_05.png)
 
 1. **[!UICONTROL Typologies]**&#x200B;选项卡允许您查看应用此规则的促销活动分类，或将规则链接到一个或多个现有分类。 [了解详情](campaign-typologies.md#apply-typologies)。
 
@@ -122,7 +122,7 @@ ht-degree: 7%
 
 阈值可以是常量，也可以通过带有变量的公式来计算。 这意味着在给定的时间段内，阈值可能因收件人而异，甚至对于同一收件人也可能有所不同。
 
-![](assets/campaign_opt_create_a_rule_threshold.png)
+![高亮显示的“压力”选项卡的“最大消息数”部分，常量阈值为1。](assets/campaign_opt_create_a_rule_threshold.png)
 
 >[!CAUTION]
 >
@@ -132,7 +132,7 @@ ht-degree: 7%
 
 您可以根据收件人所属的区段索引授权消息的数量。 这意味着属于Web区段的收件人可能会收到比其他收件人更多的消息。 **[!UICONTROL Iif (@origin='Web', 5, 3)]**&#x200B;类型公式授权向收件人投放5封邮件，为其他区段投放3封邮件。 配置将如下所示：
 
-![](assets/campaign_opt_pressure_sample.png)
+![阈值类型取决于公式为Iif（原始等于&#39;Web&#39;， 5， 3）的收件人。](assets/campaign_opt_pressure_sample.png)
 
 要定义阈值，您可以使用链接到定向维度的维度：例如，包括传递到[访客表](../../v8/audiences/target-mappings.md)中存储的收件人用户档案的消息，或避免每周向同一家庭发送超过一封消息（可能指多个电子邮件地址），这些消息在与收件人关联的维度中标识。
 
@@ -156,7 +156,7 @@ ht-degree: 7%
 1. 创建新字段以存储收件人倾向分数。 在此例中，字段&#x200B;**@Music**&#x200B;将包含调查和在线投票、收集的跟踪数据等的答案。
 1. 创建分类规则以根据此字段计算消息权重。
 
-   ![](assets/campaign_opt_pressure_weight_sample.png)
+   ![Select从权重公式中打开的表达式对话框，在可用字段中选择了“音乐”字段。](assets/campaign_opt_pressure_weight_sample.png)
 
 1. 将此规则应用于包含以下主题的消息：新闻稿、特殊优惠等。这些投放的权重，因此其优先级将取决于每个收件人的倾向分数。
 
@@ -191,19 +191,19 @@ ht-degree: 7%
 
 我们希望创建一个压力规则，将每两周的请求限制为3条消息，并将分组限制在日历月份。
 
-![](assets/campaign_opt_pressure_period_sample_1a.png)
+![周期为15d、按日历月分组且常量阈值为3条消息的压力选项卡。](assets/campaign_opt_pressure_period_sample_1a.png)
 
 我们来看看预定在05/30、06/3、06/8、06/12、06/22和06/30出版的6份相同重量的通讯。
 
-![](assets/campaign_opt_pressure_period_sample_0.png)
+![2016年11月两个日历；第二个日历突出显示第3、8、12、22和30个交付日期。](assets/campaign_opt_pressure_period_sample_0.png)
 
 预定在6月12日和30日进行的投放将不会发送：06/12投放将超过每两周发送3条消息的阈值，第30次投放将超过每个日历月授权通信的阈值。
 
-![](assets/campaign_opt_pressure_period_sample_1.png)
+![状态为“待定”、“失败”和“正在编辑”的投放列表，以及定向计数和“待发送”计数。](assets/campaign_opt_pressure_period_sample_1.png)
 
 在分析阶段，仲裁会排除这些投放的所有收件人：
 
-![](assets/campaign_opt_pressure_period_sample_2.png)
+![投放的排除日志，其中列出了原因为“仲裁后排除”的收件人。](assets/campaign_opt_pressure_period_sample_2.png)
 
 对于同一规则，如果您按季度对投放进行分组，则还将排除&#x200B;**新闻稿5**&#x200B;的收件人，并且不会发送该新闻稿。
 
@@ -223,7 +223,7 @@ ht-degree: 7%
 
 如果此数字超过阈值，则会应用营销活动类型中定义的仲裁规则，并从权重较低的营销活动中排除收件人。
 
-![](assets/campaign_opt_pressure_exclusion.png)
+![目标为12且要发送9个的投放摘要，以及仲裁后显示排除的排除日志。](assets/campaign_opt_pressure_exclusion.png)
 
 >[!NOTE]
 >
@@ -240,25 +240,25 @@ ht-degree: 7%
 要创建规则，请应用以下步骤：
 
 1. 创建新的&#x200B;**Pressure**&#x200B;类型分类规则。
-1. 编辑&#x200B;**[!UICONTROL Pressure]**&#x200B;选项卡：在&#x200B;**[!UICONTROL Maximum number of messages]**&#x200B;部分中，我们要创建一个公式以根据每个收件人计算阈值。 在&#x200B;**[!UICONTROL Threshold type]**&#x200B;字段中选择&#x200B;**[!UICONTROL Depends on the recipient]**&#x200B;值，然后单击&#x200B;**[!UICONTROL Formula]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Edit expression]**。
+1. 编辑&#x200B;**[!UICONTROL Pressure]**&#x200B;选项卡：在&#x200B;**[!UICONTROL Maximum number of messages]**&#x200B;部分中，我们要创建一个公式以根据每个收件人计算阈值。 Select **[!UICONTROL Threshold type]**&#x200B;字段中的&#x200B;**[!UICONTROL Depends on the recipient]**&#x200B;值，然后单击&#x200B;**[!UICONTROL Formula]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Edit expression]**。
 
    单击&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;按钮以定义计算公式。
 
-   ![](assets/campaign_opt_pressure_sample_1_1.png)
+   ![Select从“公式”字段打开的表达式对话框，已选择“状态”字段。](assets/campaign_opt_pressure_sample_1_1.png)
 
-1. 选择&#x200B;**[!UICONTROL Edit the formula using an expression]**&#x200B;选项并单击&#x200B;**[!UICONTROL Next]**。
+1. Select **[!UICONTROL Edit the formula using an expression]**&#x200B;选项并单击&#x200B;**[!UICONTROL Next]**。
 
-   ![](assets/campaign_opt_pressure_sample_1_2.png)
+   ![公式类型步骤，其中的“使用表达式编辑公式”选项已选中。](assets/campaign_opt_pressure_sample_1_2.png)
 
 1. 在函数列表中，双击&#x200B;**[!UICONTROL Others]**&#x200B;节点中的&#x200B;**Iif**&#x200B;函数。
 
    然后在&#x200B;**[!UICONTROL Available fields]**&#x200B;部分中选择收件人的&#x200B;**状态**。
 
-   ![](assets/campaign_opt_pressure_sample_1_3.png)
+   ![使用Others的Iif函数以及公式中的Status字段编辑表达式对话框。](assets/campaign_opt_pressure_sample_1_3.png)
 
    输入以下公式： **Iif(@status=0,2，4)**
 
-   ![](assets/campaign_opt_pressure_sample_1_4.png)
+   ![使用已完成的公式Iif(@status=0,2，4)编辑表达式对话框。](assets/campaign_opt_pressure_sample_1_4.png)
 
    使用此公式后，如果 Status 等于 0，则分配值“2”；对于所有其他 Status，则分配值“4”。
 
@@ -266,7 +266,7 @@ ht-degree: 7%
 
 1. 指示应用规则的时段：在本例中为7天，用于计算每周的消息数量。
 
-   ![](assets/campaign_opt_pressure_sample_1_5.png)
+   ![压力选项卡，带有周期类型列表和依赖收件人状态的公式。](assets/campaign_opt_pressure_sample_1_5.png)
 
 1. 保存规则以批准创建。
 
@@ -275,13 +275,13 @@ ht-degree: 7%
 1. 创建活动类型。
 1. 转到&#x200B;**[!UICONTROL Rules]**&#x200B;选项卡，单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并选择您刚刚创建的规则。
 
-   ![](assets/campaign_opt_pressure_sample_1_6.png)
+   使用“添加规则”对话框的新分类的![规则选项卡，其中列出了要选择的分类规则。](assets/campaign_opt_pressure_sample_1_6.png)
 
 1. 保存分类：是否将其添加到现有分类的列表。
 
 要在投放中使用此分类，请在&#x200B;**[!UICONTROL Typology]**&#x200B;选项卡的投放属性中选择它，如下所示：
 
-![](assets/campaign_opt_pressure_sample_1_7.png)
+![投放属性，“类型”选项卡，在“类型”列表中选择了客户端/潜在客户压力类型。](assets/campaign_opt_pressure_sample_1_7.png)
 
 >[!NOTE]
 >
@@ -291,15 +291,15 @@ ht-degree: 7%
 
 * 查看分析结果：
 
-  ![](assets/campaign_opt_pressure_sample_1_8.png)
+  ![已完成的准备日志和排除地址规则突出显示的投放分析窗口。](assets/campaign_opt_pressure_sample_1_8.png)
 
 * 编辑投放并单击&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡和&#x200B;**[!UICONTROL Exclusions]**&#x200B;子选项卡：
 
-  ![](assets/campaign_opt_pressure_sample_1_9.png)
+  ![传递选项卡，排除子选项卡，排除日志显示“仲裁后排除”。](assets/campaign_opt_pressure_sample_1_9.png)
 
 * 单击&#x200B;**[!UICONTROL Audit]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Causes of exclusions]**&#x200B;子选项卡以显示排除项数和应用的分类规则：
 
-  ![](assets/campaign_opt_pressure_sample_1_10.png)
+  ![审核选项卡，排除的原因子选项卡，每个分类规则的排除数量。](assets/campaign_opt_pressure_sample_1_10.png)
 
 ### 根据行为计算投放权重 {#calculate-the-delivery-weight-based-on-behavior}
 
@@ -314,15 +314,15 @@ ht-degree: 7%
 1. 创建新的&#x200B;**Pressure**&#x200B;类型分类规则。
 1. 编辑&#x200B;**[!UICONTROL Pressure]**&#x200B;选项卡。 我们要创建一个阈值公式，该公式将基于每个单独的收件人：单击&#x200B;**[!UICONTROL Weight formula]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Edit expression]**&#x200B;图标。
 
-   ![](assets/campaign_opt_pressure_sample_2_1.png)
+   ![在“权重”公式字段旁边突出显示“编辑表达式”图标的压力选项卡。](assets/campaign_opt_pressure_sample_2_1.png)
 
 1. 默认情况下，表达式编辑器的上半部分将显示值&#x200B;**5**。 我们希望将每个收件人的倾向得分添加到此权重：将光标置于5的右侧，输入&#x200B;**+**&#x200B;字符并选择&#x200B;**倾向**&#x200B;字段。
 
-   ![](assets/campaign_opt_pressure_sample_2_2.png)
+   ![使用权重公式5+@Affinity和选定的关联字段编辑表达式对话框。](assets/campaign_opt_pressure_sample_2_2.png)
 
 1. 然后，为已购买的收件人添加更高的值。 对于他们，投放的重量必须增加5，而对于其他人，仅增加4。
 
-   ![](assets/campaign_opt_pressure_sample_2_3.png)
+   ![使用权重公式编辑表达式对话框，该公式在Interest上添加字段和Iif条件。](assets/campaign_opt_pressure_sample_2_3.png)
 
 1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;保存此规则。
 1. 将规则链接到活动分类，并在投放中引用此分类以进行批准。
@@ -338,7 +338,7 @@ ht-degree: 7%
 1. 创建压力规则。 [了解详情](#create-a-pressure-rule)。
 1. 在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Re-apply the rule at the start of personalization]**&#x200B;选项。
 
-   ![](assets/campaign_opt_pressure_example_5.png)
+   ![已选择“在个性化开始时重新应用规则”选项的压力规则的“常规”选项卡。](assets/campaign_opt_pressure_example_5.png)
 
    此选项会覆盖&#x200B;**[!UICONTROL Frequency]**&#x200B;字段中定义的值，并在个性化阶段自动应用该规则。 [了解详情](apply-rules.md#adjust-calculation-frequency)。
 
@@ -353,17 +353,17 @@ ht-degree: 7%
 1. 将&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动添加到工作流并打开它。 有关使用此活动的详细信息，请参阅[此部分](../workflow/delivery.md)。
 1. 转到&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL Approvals]**&#x200B;选项卡并禁用所有审批。
 
-   ![](assets/campaign_opt_pressure_example_2.png)
+   ![传递属性，审批选项卡，所有审批选项和传递确认都已清除。](assets/campaign_opt_pressure_example_2.png)
 
 1. 在&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL Typology]**&#x200B;选项卡中，引用要应用规则的营销活动类型。 定义投放的权重。
 
-   ![](assets/campaign_opt_pressure_example_3.png)
+   ![投放属性，“类型”选项卡，“类型”字段和投放权重为10的高亮显示。](assets/campaign_opt_pressure_example_3.png)
 
 1. 在投放中，单击&#x200B;**[!UICONTROL Scheduling]**&#x200B;并选择&#x200B;**[!UICONTROL Schedule delivery (automatic execution when the scheduled date is reached)]**。 在此示例中，选择&#x200B;**[!UICONTROL Use a calculation formula]**&#x200B;选项。
 1. 将提取日期设置为10分钟（当前日期+ 10分钟）。
 1. 将联系日期设置为第二天（当前日期+ 1天）。
 
-   ![](assets/campaign_opt_pressure_example_4.png)
+   ![计划提取设置为当前日期+ 10分钟且联系日期设置为当前日期+ 1天的对话。](assets/campaign_opt_pressure_example_4.png)
 
    为了成功实施压力规则排除，请确保在联系日期和时间之前以及重新应用夜间仲裁之前设置提取日期和时间。 [了解详情](#exclusion-after-arbitration)。
 

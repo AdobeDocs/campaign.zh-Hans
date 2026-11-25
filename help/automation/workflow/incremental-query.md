@@ -23,9 +23,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '409'
 ht-degree: 3%
 ---
 # 增量查询{#incremental-query}
@@ -54,15 +54,15 @@ ht-degree: 3%
 
    在&#x200B;**[!UICONTROL Schedule editing wizard]**&#x200B;窗口中，可以配置频率类型、事件重复周期和事件有效期。
 
-   ![](assets/s_user_segmentation_wizard_11.png)
+   ![计划编辑向导：每周频率、已选择星期四，以及有效开始日期和结束日期的有效期。](assets/s_user_segmentation_wizard_11.png)
 
 1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;保存计划。
 
-   ![](assets/s_user_segmentation_wizard_valid.png)
+   ![计划编辑向导“摘要”页面，其中包含计划说明、启动时间列表和“完成”按钮。](assets/s_user_segmentation_wizard_valid.png)
 
 1. **[!UICONTROL Scheduling & History]**&#x200B;选项卡的下部允许您选择要在历史记录中考虑的天数。
 
-   ![](assets/edit_request_inc.png)
+   ![选择“计划执行”且“历史记录（天数）”字段设置为10的“增量查询计划和历史记录”选项卡。](assets/edit_request_inc.png)
 
    * **[!UICONTROL History in days]**
 

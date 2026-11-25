@@ -28,9 +28,9 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '296'
 ht-degree: 2%
 ---
 # 创建筛选 {#creating-a-filter}
@@ -41,19 +41,19 @@ Adobe Campaign中可用的筛选器是通过筛选条件定义的，这些筛选
 
 例如，运算符列表可按&#x200B;**[!UICONTROL Active accounts]**&#x200B;筛选：
 
-![](assets/query_editor_filter_sample_1.png)
+![打开“筛选器”菜单并选定“活动帐户”筛选器的“运算符”列表](assets/query_editor_filter_sample_1.png)
 
 匹配筛选器包含对&#x200B;**[!UICONTROL Operators]**&#x200B;架构的&#x200B;**[!UICONTROL Account disabled]**&#x200B;值的查询：
 
-![](assets/query_editor_filter_sample_2.png)
+![已选择按登录或标签过滤器的预定义过滤器列表，显示标签、内部名称和文档类型](assets/query_editor_filter_sample_2.png)
 
 对于同一列表，**[!UICONTROL By login or label]**&#x200B;筛选器允许您根据在筛选器字段中输入的值筛选列表上的数据：
 
-![](assets/query_editor_filter_sample_3.png)
+![在“登录名”或“标签包含”字段中键入代理进行筛选的操作员列表，返回一个操作员](assets/query_editor_filter_sample_3.png)
 
 其构建方式如下：
 
-![](assets/query_editor_filter_sample_4.png)
+![通过登录或标签筛选器定义，在标签、名称和描述上带有三个筛选器条件](assets/query_editor_filter_sample_4.png)
 
 要匹配筛选条件，操作员帐户必须检查以下条件之一：
 
@@ -67,7 +67,7 @@ Adobe Campaign中可用的筛选器是通过筛选条件定义的，这些筛选
 
 **[!UICONTROL Taken into account if]**&#x200B;列允许您为这些筛选条件定义应用条件。 此处，**$(/tmp/@text)**&#x200B;字符表示链接到筛选器的输入字段的内容：
 
-![](assets/query_editor_filter_sample_5.png)
+![在“登录名”或“标签包含”字段中输入了代理商的运营商列表，返回伦敦代理商](assets/query_editor_filter_sample_5.png)
 
 此处，**$(/tmp/@text)=&#39;代理&#39;**
 

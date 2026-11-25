@@ -25,9 +25,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1729'
 ht-degree: 1%
 ---
 # 扩充{#enrichment}
@@ -36,24 +36,24 @@ ht-degree: 1%
 
 **[!UICONTROL Enrichment]**&#x200B;活动允许您向配置文件列表添加信息并链接到现有表（创建新联接）。 还可以定义与数据库中的用户档案的协调条件。
 
-![](assets/enrichment_design.png)
+![包含扩充活动的工作流图，如3份新闻稿和标签服务，用于馈送Top 1000活动。](assets/enrichment_design.png)
 
 ## 定义 {#definitions}
 
 要使用扩充活动，您需要熟悉添加数据时可用的各种选项。
 
-![](assets/enrichment_edit.png)
+![扩充活动添加数据链接打开附加数据向导，其中包含要添加的五种类型数据。](assets/enrichment_edit.png)
 
 通过&#x200B;**[!UICONTROL Data linked to the filtering dimension]**&#x200B;选项，您可以访问：
 
 * 筛选维度的数据：访问工作表数据
 * 链接到筛选维度的数据：访问链接到工作表的数据
 
-![](assets/wf_enrich_linkoptions.png)
+![Select字段，用于添加包含筛选维度数据和链接到筛选维度选项的数据的页面。](assets/wf_enrich_linkoptions.png)
 
 **[!UICONTROL A link]**&#x200B;选项允许您在数据库的任何表上创建联接。
 
-![](assets/wf_enrich_linkstype.png)
+![链接定义页面列出了四种链接类型，并选中了“定义集合”和“链接目标”部分。](assets/wf_enrich_linkstype.png)
 
 有四种类型的链接：
 
@@ -83,27 +83,27 @@ ht-degree: 1%
 
 单击&#x200B;**[!UICONTROL Add data]**&#x200B;链接并选择要添加的数据类型。 提供的数据类型列表取决于平台上安装的模块和选项。 在最小配置中，您始终可以添加链接到筛选维度和链接的数据。
 
-![](assets/enrichment_edit.png)
+![扩充活动添加数据链接打开附加数据向导，其中包含要添加的五种类型数据。](assets/enrichment_edit.png)
 
 在以下示例中，叫客过渡将包含有关定向用户档案年龄的信息。
 
-![](assets/enrichment_add_data.png)
+![要添加的、具有“定向”维度下选定的“年龄”字段并在“输出”列中列出的页面的数据。](assets/enrichment_add_data.png)
 
 右键单击扩充活动的集客过渡，以在扩充阶段之前查看数据。
 
-![](assets/enrichment_content_before.png)
+![合并2之后的过渡上的上下文菜单，其中显示高亮显示的目标选项。](assets/enrichment_content_before.png)
 
 该工作表包含以下数据和关联的架构：
 
-![](assets/enrichment_content_before_a.png)
+![使用扩充之前的工作表数据查看群体，并使用主键和定向维度查看其架构。](assets/enrichment_content_before_a.png)
 
 在扩充阶段输出中重复此操作。
 
-![](assets/enrichment_content_after.png)
+扩充3活动后过渡的![上下文菜单，突出显示显示目标选项。](assets/enrichment_content_after.png)
 
 您可以看到已添加与用户档案年龄相关的数据：
 
-![](assets/enrichment_content_after_a.png)
+![查看添加了“年龄”列的群体，以及包含“年龄”、“主键”和“定位”维度的扩充架构。](assets/enrichment_content_after_a.png)
 
 匹配模式也已扩充。
 
@@ -111,11 +111,11 @@ ht-degree: 1%
 
 如果您不想保留以前定义的附加数据，请取消选择&#x200B;**[!UICONTROL Keep all additional data from the main set]**&#x200B;选项。 在这种情况下，只有扩充活动中选择的附加列才会添加到传出工作表。 将不会保存添加到上游活动的其他信息。
 
-![](assets/enrichment_edit_without_additional.png)
+![扩充选项卡，其中清除主集中的所有附加数据，仅列出年龄（定向维度）。](assets/enrichment_edit_without_additional.png)
 
 扩充阶段输出的数据和架构如下：
 
-![](assets/enrichment_content_after_without_additional.png)
+![在没有主集附加数据的扩充后查看具有Age列的填充窗口及其架构。](assets/enrichment_content_after_without_additional.png)
 
 ## 创建链接 {#creating-a-link}
 
@@ -140,29 +140,29 @@ ht-degree: 1%
 
 1. 编辑扩充活动并单击&#x200B;**添加数据……**&#x200B;链接以创建与国家/地区表的联接。
 
-   ![](assets/enrichment_edit_after_file_box.png)
+   ![具有文件收集器、数据加载（文件）和扩充的工作流，具有扩充活动的添加数据链接。](assets/enrichment_edit_after_file_box.png)
 
-1. 选择&#x200B;**[!UICONTROL Link definition]**&#x200B;选项并单击&#x200B;**[!UICONTROL Next]**&#x200B;按钮。 指定要创建的链接类型。 在本例中，我们希望将文件收件人的国家/地区与数据库专用表中可用国家/地区列表中的国家/地区进行协调。 选择 **[!UICONTROL Define a link by searching for a reference among several options]** 选项。 在&#x200B;**[!UICONTROL Target schema]**&#x200B;字段中选择国家/地区表。
+1. Select **[!UICONTROL Link definition]**&#x200B;选项并单击&#x200B;**[!UICONTROL Next]**&#x200B;按钮。 指定要创建的链接类型。 在本例中，我们希望将文件收件人的国家/地区与数据库专用表中可用国家/地区列表中的国家/地区进行协调。 选择 **[!UICONTROL Define a link by searching for a reference among several options]** 选项。 在&#x200B;**[!UICONTROL Target schema]**&#x200B;字段中Select国家/地区表。
 
-   ![](assets/enrichment_add_a_link_select_option4.png)
+   ![链接定义与“通过搜索多个选项和国家/地区(nms)目标之间的引用来定义链接”。](assets/enrichment_add_a_link_select_option4.png)
 
 1. 最后，选择字段，您将通过该字段将源文件值链接到数据库中的值。
 
-   ![](assets/enrichment_add_a_link_select_join.png)
+   ![将源国家/地区映射到国家/地区架构的英语标签字段的链接定义连接条件。](assets/enrichment_add_a_link_select_join.png)
 
 在此扩充活动的输出中，临时架构将包含指向国家/地区表的链接：
 
-![](assets/enrichment_external_link_schema.png)
+![结果窗口架构选项卡，显示具有外键和国家/地区链接及其字段的生成结构。](assets/enrichment_external_link_schema.png)
 
 ## 数据协调 {#data-reconciliation}
 
 扩充活动可用于配置数据协调，包括在将数据加载到数据库后。 在这种情况下，**[!UICONTROL Reconciliation]**&#x200B;选项卡允许您定义Adobe Campaign数据库中的数据与工作表中的数据之间的链接。
 
-选择&#x200B;**[!UICONTROL Identify the targeting document based on work data]**&#x200B;选项，指定要创建链接的架构并定义加入条件：为此，请在工作数据(**[!UICONTROL Source expression]**)和目标维度(**[!UICONTROL Destination expression]**)中选择要协调的字段。
+在&#x200B;**[!UICONTROL Identify the targeting document based on work data]**&#x200B;选项Select，指定要创建链接的架构并定义加入条件：为此，请在工作数据(**[!UICONTROL Source expression]**)和目标维度(**[!UICONTROL Destination expression]**)中选择要协调的字段。
 
 您可以使用一个或多个协调标准。
 
-![](assets/enrichment_reconciliations_tab_01.png)
+![带有的“协调”选项卡从工作数据以及源表达式和目标表达式中识别文档。](assets/enrichment_reconciliations_tab_01.png)
 
 如果指定了多个连接条件，则必须对所有连接条件进行验证，以便将数据链接在一起。
 
@@ -174,26 +174,26 @@ ht-degree: 1%
 
 例如，您可以在投放之前扩充收件人查询的数据。
 
-![](assets/int_enrichment_offer1.png)
+![具有依次连接的查询活动、扩充活动和直邮投放活动的工作流。](assets/int_enrichment_offer1.png)
 
 配置查询后（请参阅此[部分](query.md)）：
 
 1. 添加并打开扩充活动。
 1. 在&#x200B;**[!UICONTROL Enrichment]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL Add data]**。
-1. 在要添加的数据类型中选择&#x200B;**[!UICONTROL An offer proposition]**。
+1. 要添加的数据类型中的Select **[!UICONTROL An offer proposition]**。
 
-   ![](assets/int_enrichment_offer2.png)
+   ![Select要添加的数据类型，其中已选择优惠建议。](assets/int_enrichment_offer2.png)
 
 1. 指定要添加的建议标识符和标签。
 1. 指定选件选择。 对此有两种可能的选项：
 
    * **[!UICONTROL Search for the best offer in a category]**：选中此选项并指定优惠引擎调用参数（优惠空间、类别或主题、联系日期、要保留的优惠数量）。 引擎将根据这些参数自动计算要添加的选件。 我们建议填写&#x200B;**[!UICONTROL Category]**&#x200B;或&#x200B;**[!UICONTROL Theme]**&#x200B;字段，而不是同时填写两者。
 
-     ![](assets/int_enrichment_offer3.png)
+     ![优惠建议页面，其中包含标识符、标签、空间、优惠类别和联系日期字段用于最佳优惠搜索。](assets/int_enrichment_offer3.png)
 
    * **[!UICONTROL A predefined offer]**：选中此选项并指定优惠空间、特定优惠和联系日期，以直接配置要添加的优惠，而无需调用优惠引擎。
 
-     ![](assets/int_enrichment_offer4.png)
+     ![预定义优惠的标识符、标签、空间、特定优惠和联系日期的优惠建议页面。](assets/int_enrichment_offer4.png)
 
 1. 然后，配置与您选择的渠道对应的投放活动。 请参阅[跨渠道投放](cross-channel-deliveries.md)。
 
@@ -207,15 +207,15 @@ ht-degree: 1%
 
 操作步骤：
 
-1. 在活动的&#x200B;**[!UICONTROL Enrichment]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Add data]**。
+1. 在活动的&#x200B;**[!UICONTROL Enrichment]**&#x200B;选项卡中Select **[!UICONTROL Add data]**。
 1. 在选择要添加的数据类型的窗口中，选择&#x200B;**[!UICONTROL A link]**。
-1. 选择要建立的链接类型及其目标。 在本例中，目标是选件架构。
+1. Select要建立的链接类型及其目标。 在本例中，目标是选件架构。
 
-   ![](assets/int_enrichment_link1.png)
+   ![链接定义页面，该页面具有目标始终可用的链接和作为目标架构的营销优惠(nms)。](assets/int_enrichment_link1.png)
 
 1. 指定扩充活动（此处为收件人表）中的集客表数据与选件表之间的联接。 例如，您可以将优惠代码链接到收件人。
 
-   ![](assets/int_enrichment_link2.png)
+   ![链接定义连接条件将源cryptedId链接到选件代码，带有标识符选件。](assets/int_enrichment_link2.png)
 
 1. 然后，配置与您选择的渠道对应的投放活动。 请参阅[跨渠道投放](cross-channel-deliveries.md)。
 
@@ -234,11 +234,11 @@ ht-degree: 1%
 1. 在置于查询之后和投放活动之前的扩充活动中创建对优惠引擎的调用。
 1. 在活动的主窗口中，选择&#x200B;**[!UICONTROL Edit additional data...]**。
 
-   ![](assets/ita_enrichment_rankweight_1.png)
+   ![扩充选项卡列出了优惠建议列，并突出显示编辑其他数据链接。](assets/ita_enrichment_rankweight_1.png)
 
 1. 为排名添加&#x200B;**[!UICONTROL @rank]**&#x200B;列，为优惠权重添加&#x200B;**[!UICONTROL @weight]**&#x200B;列。
 
-   ![](assets/ita_enrichment_rankweight_2.png)
+   ![Select附加列窗口，其中的“权重”和“排名”列是使用添加子项添加到建议的。](assets/ita_enrichment_rankweight_2.png)
 
 1. 确认添加并保存工作流。
 

@@ -27,10 +27,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '2429'
-ht-degree: 1%
+source-wordcount: '3051'
+ht-degree: 0%
 ---
 # 控制成本{#controlling-costs}
 
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 预算的管理和跟踪集中存储在Adobe Campaign树的专用节点中。 通过此视图，您可以监控从同一视图为所有预算分配、保留、承诺和支出的金额。
 
-![](assets/s_ncs_user_budget_node_02.png)
+Campaign Management树的![预算节点，其中eMarketing预算显示金额和费用类别。](assets/s_ncs_user_budget_node_02.png)
 
 必须应用以下步骤才能使用MRM实施预算管理：
 
@@ -62,11 +62,11 @@ ht-degree: 1%
 1. 通过输入起始日期和终止日期来定义有效期。 此信息仅供参考。
 1. 创建费用类别，将营销活动、任务等分配给此预算的成本链接到这些费用类别。 [了解详情](#expense-categories)。
 
-![](assets/s_ncs_user_budget_create_and_save.png)
+![具有标签、计划、分配金额和设计、资源和数据支出类别的新预算表单。](assets/s_ncs_user_budget_create_and_save.png)
 
 >[!NOTE]
 >
->您可以选择相关预算。 如需详细信息，请参阅[此小节](#linking-a-budget-to-another)。
+>您可以选择相关预算。 有关详细信息，请参阅[将预算链接到另一个](#linking-a-budget-to-another)。
 >
 
 ### 计算金额 {#calculating-amounts}
@@ -79,7 +79,7 @@ ht-degree: 1%
 
 对于营销活动，可以根据承诺级别，计划、承诺或预留成本供未来操作使用。
 
-![](assets/s_user_cost_op_engaged.png)
+![承诺级别列表打开的“促销活动预算”部分，显示“已计划”、“已保留”和“已提交”。](assets/s_user_cost_op_engaged.png)
 
 >[!CAUTION]
 >
@@ -89,11 +89,11 @@ ht-degree: 1%
 
 例如，一个Web营销活动的预计计划成本为45,000欧元。
 
-![](assets/s_user_edit_budget_node_impact_0.png)
+![预计临时成本为45,000的Campaign Budget部分，在计划级别计入Web预算。](assets/s_user_edit_budget_node_impact_0.png)
 
 对于营销活动，当预算创建状态设置为&#x200B;**[!UICONTROL Defined]**&#x200B;时，营销活动的实际成本（或者，如果没有，则计算成本）将转入预算总数中。
 
-![](assets/s_user_budget_in_op_a.png)
+![流程状态字段设置为“已定义”的“促销活动预算”部分，以便在执行时合并成本。](assets/s_user_budget_in_op_a.png)
 
 根据营销活动预算的承诺级别，将在&#x200B;**[!UICONTROL Planned]**、**[!UICONTROL Reserved]**&#x200B;或&#x200B;**[!UICONTROL Committed]**&#x200B;字段中输入金额。
 
@@ -102,15 +102,15 @@ ht-degree: 1%
 * 在&#x200B;**营销活动**&#x200B;级别的&#x200B;**[!UICONTROL Budget]**&#x200B;窗口中，在&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中找到。 这是配置预算、成本和支出的位置。
 * 在&#x200B;**任务**&#x200B;级别的&#x200B;**[!UICONTROL Expenses and revenues]**&#x200B;窗口中。
 
-![](assets/s_user_op_engagement_level_costs.png)
+![承诺级别列表打开的“促销活动预算”节，在“费用”选项卡的上方列出费用行。](assets/s_user_op_engagement_level_costs.png)
 
 当预算为&#x200B;**[!UICONTROL Reserved]**&#x200B;时，将自动为计费预算执行更新。
 
-![](assets/s_user_edit_budget_node_impact_2.png)
+![预算表单，其中预留金额在促销活动承诺级别设置为“预留”后显示45,000。](assets/s_user_edit_budget_node_impact_2.png)
 
 在任务层上的过程是相同的。
 
-![](assets/s_user_edit_budget_node_impact_task.png)
+![承诺级别列表打开的“任务费用和收入”窗口，其中显示“已计划”、“已保留”和“已提交”。](assets/s_user_edit_budget_node_impact_task.png)
 
 当支出产生发票且发票已付时，其金额随后输入到&#x200B;**[!UICONTROL Invoiced]**&#x200B;字段中。
 
@@ -120,7 +120,7 @@ ht-degree: 1%
 
 要添加类别，请单击窗口下半部分的&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
 
-![](assets/s_user_budget_category.png)
+![带有设计、打印和Web类别费用类别列表的“添加”按钮的预算表单。](assets/s_user_budget_category.png)
 
 您可以从现有类别中选择类别，或通过在字段中直接输入它来定义新类别。 当您确认输入时，可通过确认消息将此类别添加到现有类别列表，并在必要时将其与自然关联。 此信息将用于预算报告。
 
@@ -128,11 +128,11 @@ ht-degree: 1%
 
 您可以将预算链接到主预算。 为此，请在辅助预算的&#x200B;**[!UICONTROL related budget]**&#x200B;字段中选择主预算。
 
-![](assets/budget_link.png)
+![相关预算字段设置为主电子营销预算的](assets/budget_link.png)辅助预算表单
 
 将向主预算添加一个附加选项卡，以显示相关预算的列表。
 
-![](assets/budget_link_new_tab.png)
+![主预算，已添加“预算”选项卡，列出其链接的预算。](assets/budget_link_new_tab.png)
 
 此信息会转移到预算报表中。
 
@@ -140,7 +140,7 @@ ht-degree: 1%
 
 费用行会自动添加到预算中。 它们是在投放分析期间以及任务完成时创建的。
 
-![](assets/s_ncs_user_budget_line_edit.png)
+![使用“详细信息”按钮的“预算支出”选项卡，通过拆分其活动、投放和成本类别来打开支出行。](assets/s_ncs_user_budget_line_edit.png)
 
 对于每个活动、投放或任务，生成的成本将分组到计入预算的支出行中。 这些费用行根据相关服务提供商的成本行创建，并通过关联的成本结构计算。
 
@@ -156,15 +156,15 @@ ht-degree: 1%
 
 此投放的成本计算基于为相关服务提供商选择的成本类别：
 
-![](assets/s_user_edit_del_supplier_costs.png)
+![链接到“直邮”选项卡列出服务提供商成本类别的投放的费用行。](assets/s_user_edit_del_supplier_costs.png)
 
 根据所选成本类别，应用相应的成本结构以计算成本行。 在本例中，对于相关的服务提供商，成本结构如下：
 
-![](assets/s_user_edit_node_supplier_costs.png)
+![服务成本结构选项卡，带有图形 — 01成本结构详细信息：直邮渠道，每封邮件，线性。](assets/s_user_edit_node_supplier_costs.png)
 
 >[!NOTE]
 >
->成本类别和结构显示在[此页](../campaigns/providers-stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories)中
+>在[创建服务提供商及其成本类别](../campaigns/providers-stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories)中显示了成本类别和结构
 
 ## 成本承诺、计算及计费 {#cost-commitment--calculation-and-charging}
 
@@ -180,7 +180,7 @@ ht-degree: 1%
 
    此金额是手动输入的，可划分为多个费用类别。 若要计算成本，请单击&#x200B;**[!UICONTROL Breakdown...]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以定义新金额。
 
-   ![](assets/s_user_edit_budget_tab_ventil.png)
+   ![从估计临时成本细分链接编辑成本细分窗口，按类别拆分成本。](assets/s_user_edit_budget_tab_ventil.png)
 
    您可以将每个成本与类别关联，以便以后可以在相关预算和预算报表中查看按费用类别列出的成本细分。
 
@@ -223,29 +223,29 @@ ht-degree: 1%
 
 1. 在&#x200B;**[!UICONTROL Amounts]**&#x200B;部分的&#x200B;**[!UICONTROL Allocated]**&#x200B;字段中定义10,000欧元的预算。 在窗口的下半部分添加两个费用类别：
 
-![](assets/s_user_cost_mgmt_sample_1.png)
+![分配了10,000个预算表单和两个费用类别（第一个类别和第二个类别）。](assets/s_user_cost_mgmt_sample_1.png)
 
 #### 第2步 — 配置服务提供商并定义成本结构 {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-1. 从&#x200B;**[!UICONTROL Administration > Campaigns]**&#x200B;节点创建具有成本结构的服务提供程序和服务模板。 如需详细信息，请参阅[此小节](../campaigns/providers-stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories)。
+1. 从&#x200B;**[!UICONTROL Administration > Campaigns]**&#x200B;节点创建具有成本结构的服务提供程序和服务模板。 有关详情，请参阅[创建服务提供商及其成本类别](../campaigns/providers-stocks-and-budgets.md#create-a-service-provider-and-its-cost-categories)。
 
    对于直邮投放，创建成本类别&#x200B;**[!UICONTROL Envelopes]** （类型114x229和162x229）、**[!UICONTROL Postage]**&#x200B;和&#x200B;**[!UICONTROL Print]** （类型A3和A4）。 然后，创建以下成本结构：
 
-   ![](assets/s_user_cost_mgmt_sample_2.png)
+   ![成本结构信封 — 114x229，邮费 — Standard和打印 — A4：直邮，每封邮件，线性金额。](assets/s_user_cost_mgmt_sample_2.png)
 
 1. 添加固定成本（在成本类别中），其计算是固定的，且金额为空（在相应的成本结构中），并且将为每次投放单独指定。
 
-   ![](assets/s_user_cost_mgmt_sample_5.png)
+   ![成本结构固定成本 — 使用直邮渠道进行设计，固定计算且金额为空。](assets/s_user_cost_mgmt_sample_5.png)
 
    对于任务，创建以下两个成本类别：
 
    * **[!UICONTROL Room reservation]** （小房间和大房间），具有&#x200B;**固定**&#x200B;成本结构，金额分别为300欧元和500欧元：
 
-   ![](assets/s_user_cost_mgmt_sample_6.png)
+   ![成本结构房间预订 — 对于固定计算且金额为500的任务渠道而言较大。](assets/s_user_cost_mgmt_sample_6.png)
 
    * **[!UICONTROL Creation]** （**内容模板**&#x200B;类型），**每日**&#x200B;成本结构为300欧元：
 
-   ![](assets/s_user_cost_mgmt_sample_7.png)
+   ![成本结构设计 — 每日计算量为300的任务渠道的内容模板。](assets/s_user_cost_mgmt_sample_7.png)
 
 #### 步骤3 — 计入营销活动中的预算 {#step-3---charging-the-budget-in-the-campaign}
 
@@ -255,11 +255,11 @@ ht-degree: 1%
    >
    >默认情况下，为项目群选择的预算将应用于项目群中的所有营销策划。
 
-   ![](assets/s_user_cost_mgmt_sample_4.png)
+   ![费用列表打开的“促销活动预算”部分，显示特殊操作、电子营销和培养计划。](assets/s_user_cost_mgmt_sample_4.png)
 
 1. 指定预计临时成本，并细分：
 
-   ![](assets/s_user_cost_mgmt_sample_9.png)
+   ![在“编辑成本”窗口中按第一类别和第二类别细分的估计临时成本3,000。](assets/s_user_cost_mgmt_sample_9.png)
 
 1. 单击&#x200B;**[!UICONTROL Ok]**，然后单击&#x200B;**[!UICONTROL Save]**&#x200B;以确认此信息。 然后，使用估计的临时成本更新活动的计算成本。
 
@@ -271,7 +271,7 @@ ht-degree: 1%
 
 1. 覆盖信封的成本并添加固定成本。 同时选择与这些成本相关的类别。
 
-   ![](assets/s_user_cost_mgmt_sample_3.png)
+   ![工作流中具有服务提供商成本类别的目录投放，包括560的固定成本。](assets/s_user_cost_mgmt_sample_3.png)
 
    >[!NOTE]
    >
@@ -279,19 +279,19 @@ ht-degree: 1%
 
 1. 启动您刚刚创建的工作流，以启动分析并计算成本。
 
-   ![](assets/s_user_cost_mgmt_sample_10.png)
+   ![选定了“开始”按钮的定位工作流工具栏，用于运行分析和计算成本。](assets/s_user_cost_mgmt_sample_10.png)
 
 1. 如果已为此活动启用预算审批，则从仪表板审批预算。 您可以检查成本类别的审批。
 
-   ![](assets/s_user_cost_mgmt_sample_10b.png)
+   ![包含批准预算的传递审批菜单打开包含成本分摊和预算批准的传递操作对话框。](assets/s_user_cost_mgmt_sample_10b.png)
 
 有关投放的费用行已添加到营销活动的&#x200B;**[!UICONTROL Edit > Budget]**&#x200B;选项卡中。 编辑它以查看计算的详细信息。
 
-![](assets/s_user_cost_mgmt_sample_11.png)
+![使用“详细信息”按钮打开投放费用行及其成本拆分的“营销活动预算费用”选项卡。](assets/s_user_cost_mgmt_sample_11.png)
 
 为投放计算的成本将更新为以下信息：
 
-![](assets/s_user_cost_mgmt_sample_12.png)
+![成本结构计算成本为22,844的交货费用和收入窗口。](assets/s_user_cost_mgmt_sample_12.png)
 
 在编辑已计算的成本时，您可以检查成本细分以及成本计算的状态和日期。
 
@@ -305,11 +305,11 @@ ht-degree: 1%
 
 1. 在&#x200B;**[!UICONTROL Properties]**&#x200B;选项卡中，选择服务和相应的成本类别：
 
-   ![](assets/s_user_cost_mgmt_sample_14.png)
+   ![打开了“房间预订成本”类别类型列表的“任务属性”窗口，其中显示了“大”、“Medium”和“小”。](assets/s_user_cost_mgmt_sample_14.png)
 
 1. 接下来，单击任务的&#x200B;**[!UICONTROL Expenses and revenue]**&#x200B;图标并指定预计临时成本。
 
-   ![](assets/s_user_cost_mgmt_sample_15.png)
+   ![任务费用和收入窗口，估计临时费用为5,500，已计入特别操作。](assets/s_user_cost_mgmt_sample_15.png)
 
    当保存任务后，计算成本将随为估计临时成本输入的值一起指定。
 
@@ -317,23 +317,23 @@ ht-degree: 1%
 
 1. 接下来，根据相同的过程创建第二个任务；计划时间超过五天，并与之前创建的成本结构相关。
 
-   ![](assets/s_user_cost_mgmt_sample_16.png)
+   ![第二个任务内容创建，其“任务属性”窗口显示成本类别类型列表已打开。](assets/s_user_cost_mgmt_sample_16.png)
 
    当任务完成后，计算成本将使用相关成本结构的值指定，即在本例中为1500欧元（5天x 300欧元）：
 
-   ![](assets/s_user_cost_mgmt_sample_17.png)
+   ![在“费用和收入”窗口中完成了计算成本为1,500的内容创建任务。](assets/s_user_cost_mgmt_sample_17.png)
 
 #### 步骤6 — 更新营销活动预算状态 {#step-6---update-the-campaign-budget-status}
 
 配置营销活动后，可以通过将其设置为&#x200B;**[!UICONTROL Specified]**&#x200B;来更新其状态。 然后，活动的计算成本将指示投放的计算成本与活动的任务的总和：
 
-![](assets/s_user_cost_mgmt_sample_18.png)
+![流程状态列表打开的“促销活动预算”部分：“正在编辑”、“已定义和已执行”，位于成本行上方。](assets/s_user_cost_mgmt_sample_18.png)
 
 #### 预算审批 {#budget-approval}
 
 激活审批后，可通过特殊链接从营销活动仪表板审批预算。 在启动定向工作流且需要批准直邮投放时，会显示此链接。
 
-![](assets/s_user_cost_mgmt_sample_19.png)
+![提交审批菜单中的审批预算选项，在提交时打开操作，并带有接受、拒绝和预算审批。](assets/s_user_cost_mgmt_sample_19.png)
 
 然后，您可以单击链接以授予或拒绝审批，或者如果已经为此营销活动激活了通知，则使用通知电子邮件中的链接。
 
@@ -349,7 +349,7 @@ ht-degree: 1%
 
 指定订单编号、相关的服务提供商以及订单的总金额。
 
-![](assets/s_user_cost_create_order.png)
+MRM下的![订单节点，其中包含订单列表以及显示编号、服务提供商和金额的订单表单。](assets/s_user_cost_create_order.png)
 
 ### 发放和跟踪发票 {#issuing-and-tracking-invoices}
 
@@ -357,15 +357,15 @@ ht-degree: 1%
 
 在Adobe Campaign树的&#x200B;**[!UICONTROL MRM > Invoices]**&#x200B;节点中创建并存储发票。
 
-![](assets/s_user_cost_create_invoice.png)
+MRM下的![发票节点，其发票表单显示编号、服务提供商、预算、金额和状态。](assets/s_user_cost_create_invoice.png)
 
 发票由发票行组成，发票行的合计允许自动计算金额。 这些行是从&#x200B;**[!UICONTROL Invoice lines]**&#x200B;选项卡手动创建的。 它们可以与订单相关联，以将信息上传到订单。
 
-![](assets/s_user_cost_invoice_add_line.png)
+![使用“添加”按钮的“发票行”选项卡，打开带有订单、金额和已结算选项的发票行表单。](assets/s_user_cost_invoice_add_line.png)
 
 每个服务提供商的发票都显示在配置文件的&#x200B;**[!UICONTROL Invoices]**&#x200B;选项卡中：
 
-![](assets/s_ncs_user_invoice_from_supplier.png)
+![具有“发票”选项卡的服务提供商节点，其中列出了所选服务提供商的发票。](assets/s_ncs_user_invoice_from_supplier.png)
 
 **[!UICONTROL Details]**&#x200B;选项卡允许您显示发票的内容。
 

@@ -24,9 +24,9 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '566'
 ht-degree: 1%
 ---
 # 添加明细列表类型计算字段 {#adding-an-enumeration-type-calculated-field}
@@ -50,23 +50,23 @@ ht-degree: 1%
 1. 打开[通用查询编辑器](../../v8/start/query-editor.md)并选择收件人表(**[!UICONTROL nms:recipient]**)。
 1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Last name]**、**[!UICONTROL First name]**&#x200B;和&#x200B;**[!UICONTROL Gender]**。
 
-   ![](assets/query_editor_nveau_73.png)
+   ![要提取的数据，其在“输出列”列表中具有“姓氏”、“名字”和“性别”。](assets/query_editor_nveau_73.png)
 
 1. 在&#x200B;**[!UICONTROL Sorting]**&#x200B;窗口中，单击&#x200B;**[!UICONTROL Next]**：此示例不需要排序。
 1. 在 **[!UICONTROL Data filtering]** 中，选择 **[!UICONTROL Filtering conditions]**。
 1. 在&#x200B;**[!UICONTROL Target element]**&#x200B;窗口中，设置筛选条件以收集讲英语的收件人。
 
-   ![](assets/query_editor_nveau_74.png)
+   ![筛选条件语言(@language)等于EN的目标元素窗口。](assets/query_editor_nveau_74.png)
 
 1. 在&#x200B;**[!UICONTROL Data formatting]**&#x200B;窗口中，单击&#x200B;**[!UICONTROL Add a calculated field]**。
 
-   ![](assets/query_editor_nveau_75.png)
+   ![突出显示添加计算字段按钮的数据格式窗口。](assets/query_editor_nveau_75.png)
 
 1. 转到&#x200B;**[!UICONTROL Export calculated field definition]**&#x200B;窗口的&#x200B;**[!UICONTROL Type]**&#x200B;窗口并选择&#x200B;**[!UICONTROL Enumerations]**。
 
    定义新计算字段必须引用的列。 为此，请在&#x200B;**[!UICONTROL Source column]**&#x200B;字段的下拉菜单中选择&#x200B;**[!UICONTROL Gender]**&#x200B;列：目标值将与&#x200B;**[!UICONTROL Gender]**&#x200B;列一致。
 
-   ![](assets/query_editor_nveau_76.png)
+   ![计算字段定义，其中Type设置为Enumerations，Source列设置为Gender。](assets/query_editor_nveau_76.png)
 
    定义&#x200B;**Source**&#x200B;和&#x200B;**目标**&#x200B;值：目标值使查询结果更易于读取。 此查询应返回收件人性别，结果将为0、1或2。
 
@@ -75,11 +75,11 @@ ht-degree: 1%
    * 在&#x200B;**[!UICONTROL Source]**&#x200B;列中，在新行中输入每个性别的源值(0,1，2)。
    * 在&#x200B;**[!UICONTROL Destination]**&#x200B;列中，输入以下值：行“0”为“未指示”，行“1”为“男性”，行“2”为“女性”。
 
-   选择&#x200B;**[!UICONTROL Keep the source value]**&#x200B;函数。
+   Select **[!UICONTROL Keep the source value]**&#x200B;函数。
 
    单击&#x200B;**[!UICONTROL OK]**&#x200B;以批准计算字段。
 
-   ![](assets/query_editor_nveau_77.png)
+   ![将源0、1和2映射到Not indicated， Male and Female的枚举值；保持选择源值。](assets/query_editor_nveau_77.png)
 
 1. 在&#x200B;**[!UICONTROL Data formatting]**&#x200B;窗口中，单击&#x200B;**[!UICONTROL Next]**。
 1. 在预览窗口中，**[!UICONTROL start the preview of the data]**。
@@ -90,12 +90,12 @@ ht-degree: 1%
    * 1表示“男性”
    * 2表示“女”
 
-   ![](assets/query_editor_nveau_78.png)
+   ![包含性别和性别规范列的数据预览，例如1包含男性，0包含未指明的。](assets/query_editor_nveau_78.png)
 
    例如，如果您未在&#x200B;**[!UICONTROL List of enumeration values]**&#x200B;中输入性别“2”，并且选择了&#x200B;**[!UICONTROL In other cases]**&#x200B;字段的&#x200B;**[!UICONTROL Generate a warning and continue]**&#x200B;函数，您将获得一个警告日志。 此日志指示尚未输入性别“2”（女性）。 它显示在数据预览窗口的&#x200B;**[!UICONTROL Logs generated during export]**&#x200B;字段中。
 
-   ![](assets/query_editor_nveau_79.png)
+   ![列@gender.](assets/query_editor_nveau_79.png)不存在带有标志性性别2行且日志枚举值2的数据预览
 
-   再举一个例子，说明没有输入枚举值“2”。 选择&#x200B;**[!UICONTROL Generate an error and reject the line]**&#x200B;函数：所有性别“2”收件人将在行中引发异常和其他信息（名字和姓氏等） 将不会导出。 数据预览窗口的&#x200B;**[!UICONTROL Logs generated during export]**&#x200B;字段中将显示错误日志。 此日志指示未输入枚举值“2”。
+   再举一个例子，说明没有输入枚举值“2”。 Select **[!UICONTROL Generate an error and reject the line]**&#x200B;功能：所有性别“2”收件人将在行中引发异常和其他信息（名字和姓氏等） 将不会导出。 数据预览窗口的&#x200B;**[!UICONTROL Logs generated during export]**&#x200B;字段中将显示错误日志。 此日志指示未输入枚举值“2”。
 
-   ![](assets/query_editor_nveau_80.png)
+   ![拒绝的性别2行上带有错误图标的数据预览，并且日志枚举值2不存在。](assets/query_editor_nveau_80.png)

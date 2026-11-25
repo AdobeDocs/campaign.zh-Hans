@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1202'
 ht-degree: 0%
 ---
 # 分布式营销入门{#about-distributed-marketing}
@@ -103,7 +103,7 @@ Adobe Campaign提供了一个&#x200B;**分布式营销**&#x200B;应用程序，�
 
 可从&#x200B;**营销活动**&#x200B;选项卡访问营销活动包列表：单击&#x200B;**[!UICONTROL Campaign packages]**&#x200B;链接。
 
-![](assets/mkg_dist_home_local_op.png)
+![促销活动选项卡：单击“浏览”菜单中的“促销活动包”可打开促销活动包列表。](assets/mkg_dist_home_local_op.png)
 
 此窗口允许所有本地运营商查看其本地代理可用的营销活动。
 
@@ -113,7 +113,7 @@ Adobe Campaign提供了一个&#x200B;**分布式营销**&#x200B;应用程序，�
 
 首先通过&#x200B;**[!UICONTROL Access management]**&#x200B;文件夹指定中央和本地实体运算符。
 
-![](assets/s_advuser_mkg_dist_tree.png)
+![扩展了“管理”>“访问管理”的资源管理器树，显示操作员和组织实体。](assets/s_advuser_mkg_dist_tree.png)
 
 ### 运算符 {#operators}
 
@@ -123,18 +123,18 @@ Adobe Campaign提供了一个&#x200B;**分布式营销**&#x200B;应用程序，�
 
 本地操作员必须属于&#x200B;**[!UICONTROL Local management]**&#x200B;操作员组或具有&#x200B;**[!UICONTROL LOCAL]**&#x200B;命名权限。 它们还必须链接到其本地实体。
 
-![](assets/s_advuser_mkg_dist_local_create.png)
+![操作员访问权限选项卡列出本地管理和中央管理安全组。](assets/s_advuser_mkg_dist_local_create.png)
 
 ### 组织实体 {#organizational-entities}
 
 要创建组织实体，请单击&#x200B;**[!UICONTROL Administration > Access management > Organizational entities]**&#x200B;文件夹，然后单击实体列表上方的&#x200B;**[!UICONTROL New]**&#x200B;图标。
 
-![](assets/s_advuser_mkg_dist_local_list.png)
+![实体列表上方突出显示“新建”图标的组织实体文件夹。](assets/s_advuser_mkg_dist_local_list.png)
 
 每个组织实体都包含标识信息（标签、内部名称、联系信息等） 和订单审批流程中涉及的组。 这些在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Notifications and approvals]**&#x200B;部分中定义。
 
 * 定义包通知组：每当将新包添加到营销活动包列表以及营销活动变得可用时，此组中的操作员都会收到通知。
-* 选择负责批准订单的审阅人组，即负责批准由本地实体订购的营销活动的审阅人。
+* Select负责批准订单的审阅人组，即负责批准由本地实体订购的营销活动的审阅人。
 * 最后，选择负责批准本地营销活动（目标、内容、预算等）的审阅人组。 在订购营销活动时，此组可能会被添加到，具体取决于模板。
 
 >[!NOTE]
@@ -152,7 +152,7 @@ Adobe Campaign提供了一个&#x200B;**分布式营销**&#x200B;应用程序，�
 1. 创建本地实体。
 1. 将收件人与管理本地实体的操作员关联起来。
 
-   ![](assets/mkg_dist_local_entity_association.png)
+   ![突出显示原始字段的收件人表单，将收件人链接到本地实体。](assets/mkg_dist_local_entity_association.png)
 
 1. 指定本地实体的权限和浏览规则
 1. 指定营销活动本地化所需的字段集：

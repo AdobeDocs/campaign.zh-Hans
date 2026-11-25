@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 9%
+source-wordcount: '1058'
+ht-degree: 8%
 ---
 # 应用分类规则{#applying-rules}
 
@@ -45,14 +45,14 @@ ht-degree: 9%
 
 1. 转到&#x200B;**[!UICONTROL Rules]**&#x200B;选项卡，单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并选择要应用于此类型的规则。
 
-   ![](assets/campaign_opt_pressure_sample_1_6.png)
+   ![带有“添加”按钮的“类型规则”选项卡，以及“添加规则”对话框，其中列出了要选择的类型规则](assets/campaign_opt_pressure_sample_1_6.png)
 
 1. 保存分类：是否将其添加到现有分类的列表。
 1. 打开要应用规则的投放。
 1. 浏览到投放属性并打开&#x200B;**[!UICONTROL Typology]**&#x200B;选项卡。
-1. 在下拉列表中选择分类。
+1. Select下拉列表中的分类。
 
-   ![](assets/campaign_opt_pressure_sample_1_7.png)
+   ![投放属性，“类型”选项卡，具有“类型”下拉列表，列出客户/潜在客户压力](assets/campaign_opt_pressure_sample_1_7.png)
 
    >[!NOTE]
    >
@@ -68,7 +68,7 @@ ht-degree: 9%
 
 然后使用[查询编辑器](../../v8/start/query-editor.md)定义筛选条件。 在以下示例中，容量规则仅涉及标签中带有“offer”一词的投放或在2013年4月1日之前创建的投放。
 
-![](assets/campaign_opt_create_capacity_criterion.png)
+![产能规则“常规”选项卡，其标签上的申请条件查询包含优惠和创建日期](assets/campaign_opt_create_capacity_criterion.png)
 
 >[!NOTE]
 >
@@ -117,9 +117,9 @@ ht-degree: 9%
 
 ### 控制规则 {#control-rules}
 
-对于&#x200B;**[!UICONTROL Control]**&#x200B;规则，您可以决定应用该规则的投放生命周期的哪个时间点：定位之前或之后、个性化开始时、分析结束时。 在分类规则的&#x200B;**[!UICONTROL General]**&#x200B;选项卡的&#x200B;**[!UICONTROL Phase]**&#x200B;字段的下拉列表中选择要应用的值。
+对于&#x200B;**[!UICONTROL Control]**&#x200B;规则，您可以决定应用该规则的投放生命周期的哪个时间点：定位之前或之后、个性化开始时、分析结束时。 在分类规则的&#x200B;**[!UICONTROL General]**&#x200B;选项卡的&#x200B;**[!UICONTROL Phase]**&#x200B;字段的下拉列表中，Select要应用的值。
 
-![](assets/campaign_opt_define_control_phase.png)
+![控制类型规则“常规”选项卡，其中的“阶段”下拉列表列出了四个应用程序阶段](assets/campaign_opt_define_control_phase.png)
 
 可能的值包括：
 
@@ -147,7 +147,7 @@ ht-degree: 9%
 
 作为一个选项，您可以使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;字段将投放链接到此关联性的投放服务器(MTA)。 这样，您就可以限制向计算机或输出地址投放特定内容的电子邮件数量。
 
-![](assets/campaign_opt_select_ip_affinity.png)
+![分类常规选项卡，其关联字段位于与IP地址关联的管理下](assets/campaign_opt_select_ip_affinity.png)
 
 >[!NOTE]
 >
@@ -161,9 +161,9 @@ ht-degree: 9%
 
 **[!UICONTROL Distributed Marketing]**&#x200B;选项卡允许您定义在订购和/或保留共享营销活动时应用的类型和/或规则的重新映射。 为本地实体定义的类型/规则（链接到为中央实体定义的类型/规则）替换链接到中央实体的规则/类型。 通过重新映射，可将中央实体规则调整为适合订购营销活动的本地实体。
 
-![](assets/simu_campaign_opti_distrib_mkg.png)
+![具有组织实体和相关中心类型字段的类型“分布式营销”选项卡](assets/simu_campaign_opti_distrib_mkg.png)
 
 >[!NOTE]
 >
 >在分类和分类规则中，如果您的许可证包括此选项，则会添加&#x200B;**[!UICONTROL Distributed Marketing]**&#x200B;选项卡：请检查您的许可协议。\
->有关分布式营销的详细信息，请参阅[此章节](../distributed-marketing/about-distributed-marketing.md)。
+>有关分布式营销的详细信息，请参阅[分布式营销入门](../distributed-marketing/about-distributed-marketing.md)。

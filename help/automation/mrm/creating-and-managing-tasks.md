@@ -23,9 +23,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '3766'
+source-wordcount: '4562'
 ht-degree: 0%
 ---
 # 创建和管理任务{#creating-and-managing-tasks}
@@ -40,7 +40,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 它们可以显示在它们所属的项目计划中。
 
-![](assets/campaign-calendar.png)
+![显示冬季营销活动和营销活动以及任务1、任务2和任务3的营销活动日历时间轴。](assets/campaign-calendar.png)
 
 ## 访问任务 {#accessing-tasks}
 
@@ -48,7 +48,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 任务显示在可通过&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡访问的任务列表中。
 
-![](assets/campaign-task-dashboard.png)
+![任务列表位于带有“创建”按钮的营销活动下，筛选器以及显示状态和进度的三个任务。](assets/campaign-task-dashboard.png)
 
 您可以查看当前操作员的所有任务。
 
@@ -62,7 +62,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 单击任务以进行编辑。
 
-![](assets/edit-a-task.png)
+![任务3的“任务摘要”窗口，显示状态、优先级、计划、被分派人和促销活动，带有“取消”按钮。](assets/edit-a-task.png)
 
 ## 创建新任务 {#creating-a-new-task}
 
@@ -70,17 +70,17 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 1. 浏览到&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Tasks]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Create]**。
 
-   ![](assets/create-a-task-from-dashboard.png)
+   ![任务列表，带有指向“创建”按钮的箭头，用于添加新任务。](assets/create-a-task-from-dashboard.png)
 
 1. 输入任务的名称并选择它链接到的营销策划。
 1. 设置开始日期和结束日期。
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建任务。
 
-   ![](assets/new-task-edit.png)
+   ![包含模板、标签、被分派人、营销活动、开始和结束日期、工作负载和描述以及保存的新任务表单。](assets/new-task-edit.png)
 
 您也可以通过营销策划的仪表板创建任务：在这种情况下，任务会自动链接到从中创建它的营销策划。
 
-![](assets/add-a-task-in-a-campaign.png)
+![营销活动仪表板，其箭头指向营销活动任务列表上方的“添加任务”链接。](assets/add-a-task-in-a-campaign.png)
 
 创建任务后，该任务会添加到营销活动计划、营销活动功能板和任务列表。 要编辑任务，请在任务列表中单击其名称，或从计划或营销活动功能板中选择它，然后单击&#x200B;**[!UICONTROL Open]**。
 
@@ -92,7 +92,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 您还可以添加[审阅者](#reviewers)和[参考文档](#documents-referenced)。
 
-任务生命周期显示在[此部分](#life-cycle)中。
+任务生命周期显示在[生命周期](#life-cycle)中。
 
 ### 经理和参与者 {#manager-and-participants}
 
@@ -100,11 +100,11 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 您可以从&#x200B;**[!UICONTROL Assigned to]**&#x200B;下拉列表中选择其他运算符。
 
-![](assets/task-assigned-to.png)
+![打开了“任务常规”选项卡，“分派至”下拉列表以选择其他运算符。](assets/task-assigned-to.png)
 
 >[!NOTE]
 >
->操作员管理在[此部分](../../v8/start/gs-permissions.md)中有详细说明。
+>操作员管理在[开始使用Campaign v8](../../v8/start/gs-permissions.md)中的权限中详情。
 >
 >仅允许负责任务的操作员关闭任务。
 
@@ -114,12 +114,12 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 1. 单击任务工具栏中的&#x200B;**[!UICONTROL Resources]**&#x200B;图标。
 
-   ![](assets/add-task-resources.png)
+   ![任务常规选项卡，带有指向工具栏中“资源”图标的箭头。](assets/add-task-resources.png)
 
 1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择相关的运算符。
 1. 输入使用率：表示任务执行期间分配给操作员的工作量。 此比率仅用于指示，并以百分比表示。
 
-   ![](assets/define-operator-task-workload.png)
+   ![资源窗口列出了操作员的使用率、计划的工作量以及执行的工作量。](assets/define-operator-task-workload.png)
 
    例如，对于执行计划设置为10天的任务，使用率为50%的操作员将在此任务上调动10天一半的工作时间。
 
@@ -127,7 +127,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 1. 您可以通过&#x200B;**[!UICONTROL Add a reminder...]**&#x200B;链接配置提醒。 在任务结束日期之前，将向任务涉及的所有操作员发送电子邮件通知。
 
-   ![](assets/task-op-add-a-reminder.png)
+   ![带有提醒列表和下拉产品/服务的资源窗口，从审批截止日期或给定日期延迟。](assets/task-op-add-a-reminder.png)
 
 1. 您还可以在任务开始之前发送通知。 要设置此项，请在&#x200B;**[!UICONTROL Initial notification]**&#x200B;字段中选择日期。
 1. 当到达结束日期且任务未关闭时，可以向在&#x200B;**[!UICONTROL Assignee]**&#x200B;下拉列表中选择的被分派人或被分派人组发送通知。
@@ -135,7 +135,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 操作员仪表板允许您检查其工作量（其他正在进行的任务）。
 
-![](assets/operator-dashboard.png)
+![操作员仪表板，其任务分配给操作员列表，显示每个任务及其状态。](assets/operator-dashboard.png)
 
 ### 任务审批 {#reviewers}
 
@@ -145,7 +145,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 要指定运算符列表，请单击第一个审阅人右侧的&#x200B;**[!UICONTROL Edit...]**&#x200B;链接，然后根据需要添加所需数量的运算符，如下所示：
 
-![](assets/enable-task-approval.png)
+![选择了“启用任务审批”的“资源”窗口，且“编辑审阅人”对话框列出了其他审阅人。](assets/enable-task-approval.png)
 
 您可以在配置窗口的下半部分定义任务的审批计划。 默认情况下，审阅人自提交日期起有三天时间批准任务。 您还可以添加提醒，提醒将在审批截止日期前自动发送给相关操作员。
 
@@ -159,14 +159,14 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 1. 打开任务，然后单击任务工具栏中的&#x200B;**[!UICONTROL Documents]**&#x200B;图标。
 
-   ![](assets/add-documents-to-a-task.png)
+   ![任务常规选项卡，带有指向工具栏中“文档”图标的箭头。](assets/add-documents-to-a-task.png)
 
 1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择要添加到任务的文档。 对营销资源应用相同的流程。
 
 
 引用的文档会添加到发送给任务中涉及的操作员的通知中。 它们也会添加到任务仪表板上。
 
-![](assets/s_ncs_user_task_notification_documents.png)
+![在“文档”行中突出显示了引用文档Brief.pdf和Central Agency.pdf的任务仪表板。](assets/s_ncs_user_task_notification_documents.png)
 
 ### 执行计划 {#execution-schedule}
 
@@ -178,17 +178,17 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 **[!UICONTROL Workload performed]**&#x200B;字段也以天和小时表示，可让您手动更新与计划工作负载相关的任务进度。
 
-![](assets/s_ncs_user_task_percentage_done_enter.png)
+![任务常规选项卡，带有指向“进度”（以%表示）字段设置为35的箭头。](assets/s_ncs_user_task_percentage_done_enter.png)
 
 任务的&#x200B;**[!UICONTROL Progress status]**（以百分比表示）会根据相关操作员执行的任务自动更新。 它可以手动输入。
 
 可在任务仪表板中查看此信息。
 
-![](assets/s_ncs_user_task_percentage_done_from_dashboard.png)
+![带有指向进度值35%的箭头的任务仪表板。](assets/s_ncs_user_task_percentage_done_from_dashboard.png)
 
 它也会显示在营销策划选项卡中。
 
-![](assets/s_ncs_user_task_percentage_done_from_op.png)
+![营销活动任务列表，其箭头指向任务的35%进度条。](assets/s_ncs_user_task_percentage_done_from_op.png)
 
 如果已达到任务执行计划结束日期，但任务未完成，则任务将为&#x200B;**[!UICONTROL Late]**。 还会显示警告消息以提醒操作员。
 
@@ -200,13 +200,13 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 要指定此信息，请单击任务工具栏中的&#x200B;**[!UICONTROL Expenses and revenue]**&#x200B;图标。
 
-![](assets/s_ncs_user_task_edit_costs.png)
+![已从工具栏中打开费用和收入窗口，显示费用、承诺水平、成本和添加目标。](assets/s_ncs_user_task_edit_costs.png)
 
 默认情况下，计入的预算是附加任务的营销活动的预算。 它显示在任务详细信息中。
 
 >[!NOTE]
 >
->有关费用和预算的更多信息，请参阅[此部分](../campaigns/providers-stocks-and-budgets.md)。
+>有关费用和预算的更多信息，请参阅[供应商、库存和预算](../campaigns/providers-stocks-and-budgets.md)。
 
 在此窗口中，您还可以定义要达到的目标。 目标以任务的预测收入表示。
 
@@ -216,9 +216,9 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 为此，请编辑任务属性并选择相关的服务提供商。 与服务提供商关联的成本类别会自动列在窗口的中央部分。
 
-选择与任务执行相关的成本类别。 要执行此操作，请选择成本类型，并在必要时添加附加费金额。
+Select与任务执行相关的成本类别。 要执行此操作，请选择成本类型，并在必要时添加附加费金额。
 
-![](assets/s_ncs_user_task_edit_simple_costs_tab.png)
+![任务属性窗口，其中列出了服务提供商字段和成本类别，金额为附加费。](assets/s_ncs_user_task_edit_simple_costs_tab.png)
 
 >[!NOTE]
 >
@@ -226,7 +226,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 选择某个服务提供程序后，该服务提供程序将显示在任务仪表板中：
 
-![](assets/s_ncs_user_task_supplier_view.png)
+![任务仪表板，其箭头指向显示所选服务的服务提供程序行。](assets/s_ncs_user_task_supplier_view.png)
 
 ### 延迟任务 {#late-tasks}
 
@@ -234,19 +234,19 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 转到&#x200B;**[!UICONTROL Resources]**&#x200B;框并将运算符添加到&#x200B;**[!UICONTROL Assignation]**&#x200B;字段。 要通知多个人，请选择一组操作员。
 
-![](assets/mrm_task_alert_if_late.png)
+如果超过任务结束日期，则在“通知”下显示![资源窗口，其中的“被分派人”字段高亮显示。](assets/mrm_task_alert_if_late.png)
 
 ### 初始通知 {#initial-notifications}
 
 当您创建或修改具有未来开始日期的任务时，Adobe Campaign会向负责该任务的人发送电子邮件，让他们知道任务何时开始。
 
-![](assets/mrm_task_first_notif.png)
+![提示是否发送计划任务的初始通知，按“是”和“否”按钮。](assets/mrm_task_first_notif.png)
 
 但是，如果您正在创建的任务还有很长的路要走，则最好在任务开始之前安排发送通知。 例如，如果任务在一个月后开始，您可以提前一周通知负责该任务的负责人。
 
 要计划通知，请转到&#x200B;**[!UICONTROL Resources]**&#x200B;框并使用&#x200B;**[!UICONTROL Initial notification]**&#x200B;字段。
 
-![](assets/mrm_task_alert_before.png)
+![在任务开始日期部分下突出显示初始通知字段的资源窗口。](assets/mrm_task_alert_before.png)
 
 * 对于营销活动中的任务，请选择特定的日期和时间。
 * 对于营销活动模板内的任务，通知时间表示为任务开始前的剩余时间（例如，如果您在&#x200B;**[!UICONTROL Initial notification]**&#x200B;字段中输入2d，则电子邮件将在任务开始日期前2天发送）。
@@ -264,19 +264,19 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 1. 在此窗口中，单击&#x200B;**[!UICONTROL Open]**。 将打开项目计划。
 1. 单击右侧计划上方的&#x200B;**[!UICONTROL Add]**&#x200B;按钮，然后单击&#x200B;**[!UICONTROL Add a task]**。
 
-![](assets/mrm_task_create_from_prg.png)
+![打开“添加”菜单并选择“添加任务”选项的程序计划。](assets/mrm_task_create_from_prg.png)
 
 ### 操作员可用性 {#operator-availability}
 
 在任务仪表板中，操作员姓名旁边的图标表示操作员在任务所涵盖的期间已在处理另一个任务或事件。 操作员负责或参与的任务显示在&#x200B;**[!UICONTROL Assigned to]**&#x200B;字段或任务&#x200B;**[!UICONTROL Resources]**&#x200B;框中。
 
-![](assets/mrm_task_alert_operator_busy.png)
+![任务仪表板，其箭头指向“分配给”行中的运算符。](assets/mrm_task_alert_operator_busy.png)
 
 ### 工作流中的任务 {#task-in-a-workflow}
 
 在营销活动工作流中使用&#x200B;**[!UICONTROL Task]**&#x200B;元素允许您定义两种方案，具体取决于任务是否获得批准。
 
-![](assets/mrm_task_in_workflow.png)
+![如果任务活动完成，则将其导向直邮投放，如果未完成，则导向等待并返回。](assets/mrm_task_in_workflow.png)
 
 在营销活动工作流中，可在&#x200B;**[!UICONTROL Flow control]**&#x200B;选项卡中找到&#x200B;**[!UICONTROL Task]**&#x200B;活动。
 
@@ -284,7 +284,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 通过营销策划创建任务时，您可以创建特定任务。 任务的类型在所选模板中定义。
 
-![](assets/s_ncs_user_task_select_template.png)
+![包含控制、分组、营销资源创建、通知和标准任务模板的任务模板列表。](assets/s_ncs_user_task_select_template.png)
 
 可以计划以下任务：
 
@@ -302,11 +302,11 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 **[!UICONTROL Control task]**&#x200B;链接到投放审批：目标、内容、提取文件、预算或验证的审批。
 
-![](assets/s_ncs_user_task_new_control.png)
+![带有审批类型列表的控制任务表单，其中显示目标、内容、预算、提取文件和验证审批。](assets/s_ncs_user_task_new_control.png)
 
 创建任务后，该任务即会添加到营销活动仪表板。
 
-![](assets/s_ncs_user_task_edit_from_board.png)
+![Campaign仪表板，带指向任务列表中新控制任务的箭头，状态为“打开”、“批准”和“拒绝”。](assets/s_ncs_user_task_edit_from_board.png)
 
 然后，您可以对其进行编辑并指定其参数。
 
@@ -337,18 +337,18 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 审阅任务的人员不必是审阅资源中定义内容的同一人员。 但是，如果选中&#x200B;**[!UICONTROL Publish the marketing resource]**&#x200B;选项（见下文），则任务审阅人有权批准资源内容，因为完成任务将自动批准资源（如果未定义审阅人，则为任务管理员）。
 
-![](assets/mrm_task_asset_creation.png)
+![营销资源字段为的营销资源创建任务并发布选定的营销资源。](assets/mrm_task_asset_creation.png)
 
 在&#x200B;**[!UICONTROL Marketing resource]**&#x200B;字段中，定义要通过此任务管理的资源。 您可以：
 
-* 选择现有资源：下拉列表会提供状态为&#x200B;**[!UICONTROL Being edited]**&#x200B;的所有资源。
+* Select现有资源：下拉列表会提供状态为&#x200B;**[!UICONTROL Being edited]**&#x200B;的所有资源。
 * 创建资源：单击&#x200B;**[!UICONTROL Select the link]**&#x200B;图标，然后单击&#x200B;**[!UICONTROL Create]**&#x200B;图标。
 
 使用&#x200B;**[!UICONTROL Publish the marketing resource]**&#x200B;选项可自动发布资源：一旦任务为&#x200B;**[!UICONTROL Finished]**，资源的状态将自动切换到&#x200B;**[!UICONTROL Published]**，即使该资源既未提交审批也未获得批准，包括完成任务的审阅人不是资源中定义的内容审阅人时。
 
 **[!UICONTROL Publish the resource]**&#x200B;按钮已可用，资源发布审核者将收到通知电子邮件，通知他们该按钮已准备好发布。 在&#x200B;**[!UICONTROL Edit > Tracking]**&#x200B;选项卡中，任务审阅者的审阅和发布将变得可见。 如果已定义资源后处理工作流，则会立即执行该工作流。
 
-![](assets/mrm_resource_audit_tab.png)
+![显示具有审批和发布条目的审批和发布日志的“营销资源审核”选项卡。](assets/mrm_resource_audit_tab.png)
 
 ### 组任务 {#grouping-task}
 
@@ -362,11 +362,11 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 要基于分组任务创建分组任务，请转到活动仪表板并单击分组任务的名称以显示其描述，然后单击&#x200B;**[!UICONTROL Add a task]**。
 
-![](assets/mrm_task_grouped_create.png)
+![分组任务已展开且箭头指向“添加任务”链接的Campaign仪表板。](assets/mrm_task_grouped_create.png)
 
 但是，如果您已创建要链接到分组任务的任务，则可以通过&#x200B;**[!UICONTROL Properties]**&#x200B;框的&#x200B;**[!UICONTROL Linked to]**&#x200B;字段执行此操作。
 
-![](assets/s_ncs_user_task_group_with.png)
+![任务属性窗口，其“链接到”字段设置为“定义任务之间的链接”下的另一个任务。](assets/s_ncs_user_task_group_with.png)
 
 ### 通知任务 {#notification-task}
 
@@ -376,7 +376,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 通知任务不需要审批。 这意味着，它们的生命周期比标准任务的生命周期更简单：
 
-![](assets/mrm_task_notif_lifecycle.png)
+![通知任务生命周期：已计划至发送电子邮件的开始日期、进行中，然后在结束日期完成。](assets/mrm_task_notif_lifecycle.png)
 
 通知任务可以具有以下状态：
 
@@ -386,7 +386,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 #### 配置 {#configuration}
 
-![](assets/mrm_task_notif_dashboard.png)
+![通知任务表单，带有模板、标签、分派至、开始和结束日期以及任务说明。](assets/mrm_task_notif_dashboard.png)
 
 在创建期间，必须在任务中输入以下元素：
 
@@ -395,7 +395,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 * **任务结束日期**：任务状态更改为&#x200B;**[!UICONTROL Finished]**&#x200B;的日期。 默认情况下，结束日期与开始日期相同。 但是，通过为任务分配持续时间，可以表示操作员必须在计划中执行操作的时间量（如有必要）。
 * **[!UICONTROL Description]**：此处输入的文本将显示在通知电子邮件的正文中。
 
-  ![](assets/mrm_task_notif_dashboard_msg.png)
+  ![显示计划状态、通知类型、被分派人、营销活动和描述文本的通知](assets/mrm_task_notif_dashboard_msg.png)任务摘要
 
 您可以将附件添加到任务和通知电子邮件中。 为此，请单击右上角工具栏中的&#x200B;**[!UICONTROL Documents]**&#x200B;图标。
 
@@ -411,21 +411,21 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 在下例中，定位的批准分为四个子任务。
 
-![](assets/s_ncs_user_task_linked_tasks.png)
+![包含“更新样式”任务、“目标验证”任务和四个链接子任务的“促销活动任务”列表。](assets/s_ncs_user_task_linked_tasks.png)
 
 每个子任务都是链接到主任务的标准任务。
 
-![](assets/s_ncs_user_task_depends_on.png)
+![任务表单，带有指向“依赖项”字段的箭头，该字段设置为“目标验证”父任务。](assets/s_ncs_user_task_depends_on.png)
 
 #### 组任务 {#grouping-tasks}
 
 使用&#x200B;**[!UICONTROL Grouped to]**&#x200B;字段使任务的执行取决于另一个任务的执行。
 
-![](assets/s_ncs_user_task_group_with.png)
+![任务属性窗口，其“链接到”字段设置为“定义任务之间的链接”下的另一个任务。](assets/s_ncs_user_task_group_with.png)
 
 任务之间的依赖关系由营销活动仪表板中的箭头表示。
 
-![](assets/s_ncs_user_task_dependencies_from_board.png)
+![带有箭头的营销活动任务列表显示两个依赖于Target验证任务的子任务。](assets/s_ncs_user_task_dependencies_from_board.png)
 
 对于分组任务，Adobe Campaign会自动将父任务的结束日期作为开始日期分配给子任务。 例如，如果&#x200B;**创建邀请**&#x200B;任务于10月15日下午3:30结束，则&#x200B;**发送邀请电子邮件**&#x200B;子任务将于10月15日下午3:30开始。
 
@@ -437,7 +437,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 让我们推迟父级任务：该任务现在于10月11日下午1点结束。 只有任务A被推迟，将于10月11日下午1点开始。
 
-![](assets/mrm_task_parent_postpones_child.png)
+![父任务的查看前后延迟，这会移动子任务A而不是子任务B的开头。](assets/mrm_task_parent_postpones_child.png)
 
 ### 任务的执行状态 {#execution-status-of-a-task}
 
@@ -473,7 +473,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
    在创建和编辑计划于未来&#x200B;**的任务**&#x200B;时（只要未到达任务开始日期），可以向参与者和经理发送通知，让他们知道已计划了新任务。
 
-   ![](assets/s_ncs_user_task_planed_send_message.png)
+   ![提示是否发送计划任务的初始通知，箭头指向](assets/s_ncs_user_task_planed_send_message.png)
 
    若要发送第一个通知，请单击&#x200B;**[!UICONTROL Yes]**。 此通知会告知他们下一个任务的情况，并包含有关内容的详细信息以及到截止日期前的剩余天数。
 
@@ -485,21 +485,21 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
    * 通过通知电子邮件。
    * 通过Client Console或Web界面，在任务仪表板中。
 
-     ![](assets/s_ncs_user_task_start_rea.png)
+     ![包含“执行任务”和“拒绝”按钮的任务摘要，供参与者批准任务。](assets/s_ncs_user_task_start_rea.png)
 
 1. 每次参与者批准作业时，任务的进度状态都会更新。
 
-   ![](assets/s_ncs_user_task_percentage_done_op.png)
+   ![在任务对话框上执行带有注释的操作，并执行任务按钮，随后进度更新为34%。](assets/s_ncs_user_task_percentage_done_op.png)
 
 1. 查看者会收到一封通知电子邮件，告知他们操作员已完成分配给他们的部分。
 
    他们可以关注任务仪表板上的进度。
 
-   ![](assets/s_ncs_user_task_follow_from_dashboard.png)
+   ![显示34%进度的任务仪表板，以及一个指向参与者已提供的审批的箭头。](assets/s_ncs_user_task_follow_from_dashboard.png)
 
 1. 一旦任务负责人确定任务已完成，他们可以使用任务启动时发送的通知电子邮件中的链接、客户端控制台或界面将其关闭。
 
-   ![](assets/s_ncs_user_task_console_ressource_validation.png)
+   ![任务摘要“完成”按钮，该按钮指向带有注释的“任务操作”对话框和“完成任务”按钮。](assets/s_ncs_user_task_console_ressource_validation.png)
 
    >[!NOTE]
    >
@@ -511,11 +511,11 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
    他们可以通过营销活动仪表板执行操作：
 
-   ![](assets/s_ncs_user_task_console_validation.png)
+   ![已选择任务未决批准和一个指向“批准”按钮的箭头的Campaign仪表板。](assets/s_ncs_user_task_console_validation.png)
 
    他们还可以使用任务审批按钮：
 
-   ![](assets/s_ncs_user_task__validation.png)
+   ![状态为“待处理”、进度为100%的任务摘要以及“批准任务”按钮。](assets/s_ncs_user_task__validation.png)
 
    >[!NOTE]
    >

@@ -17,10 +17,10 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 4%
+source-wordcount: '175'
+ht-degree: 3%
 ---
 # 开始和结束{#start-and-end}
 
@@ -32,14 +32,14 @@ ht-degree: 4%
 
   执行工作流时，会从没有集客过渡的活动和开始类型活动开始。
 
-  ![](assets/s_user_segmentation_start_stop.png)
+  ![具有开始活动、投放、审批、投放控制和两个结束活动的工作流，每个审批结果一个。](assets/s_user_segmentation_start_stop.png)
 
 * **[!UICONTROL End]**
 
   您可以配置&#x200B;**[!UICONTROL End]**&#x200B;活动以中断所有正在进行的任务。 要实现此目的，请双击活动以显示其属性，然后选中相应的选项。
 
-  ![](assets/s_user_segmentation_end.png)
+  ![选择了“停止所有正在进行的任务”选项以结束活动属性。](assets/s_user_segmentation_end.png)
 
   启用结束活动后，将自动删除工作表中的数据。 如果不需要此操作，并且为了避免不必要的加载，您可以选择在最后一个活动输出中禁用过渡。 例如，在投放输出中，如果未计划任何流程，则取消选中相关选项，如下所示：
 
-  ![](assets/s_advuser_delivery_option_no_output.png)
+  ![已清除“生成叫客过渡”选项的投放活动属性。](assets/s_advuser_delivery_option_no_output.png)

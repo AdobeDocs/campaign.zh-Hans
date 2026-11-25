@@ -18,9 +18,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '187'
 ht-degree: 1%
 ---
 # 访问活动{#accessing-campaigns}
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 该订单会被添加到匹配订单的详细信息中，并且可进行编辑。 完整的仪表板允许您在本地级别管理它。
 
-![](assets/mkg_dist_local_op_edit_new_op1.png)
+![营销活动包列表，其信息板上打开了本地营销活动，显示投放并添加投放链接](assets/mkg_dist_local_op_edit_new_op1.png)
 
 通过主页上的&#x200B;**[!UICONTROL Campaigns]**&#x200B;链接，仍可在Campaign概述中访问该营销活动。
 

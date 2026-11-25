@@ -18,9 +18,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '563'
 ht-degree: 2%
 ---
 # 发布活动包{#publishing-the-campaign-package}
@@ -33,15 +33,15 @@ ht-degree: 2%
 
 要选择审阅人，请单击营销活动包中的&#x200B;**[!UICONTROL Approval parameters]**&#x200B;链接，然后从下拉列表中选择相关的审阅人。
 
-![](assets/s_advuser_mkg_dist_define_valid.png)
+![将“审阅者”字段设置为中央管理组的营销活动包的“审批参数”对话框。](assets/s_advuser_mkg_dist_define_valid.png)
 
 然后，您可以通过单击&#x200B;**[!UICONTROL Submit for approval]**&#x200B;开始批准流程。
 
-![](assets/s_advuser_mkg_dist_valid_process.png)
+![Campaign程序包仪表板，显示已提交供审批的消息和批准程序包按钮。](assets/s_advuser_mkg_dist_valid_process.png)
 
 然后，将向查看者发送通知消息，以确认此Campaign包的可用性。 该消息包含通过Web访问接受或拒绝批准的链接。
 
-![](assets/s_advuser_mkg_dist_valid_process1.png)
+![带有接受或拒绝链接的审批电子邮件，在包页面上打开带有接受和拒绝选项的操作。](assets/s_advuser_mkg_dist_valid_process1.png)
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ ht-degree: 2%
 
 您可以通过&#x200B;**[!UICONTROL Edit...]**&#x200B;链接添加其他审阅人，该链接可在营销活动包的&#x200B;**[!UICONTROL Approval parameters...]**&#x200B;选项卡中找到。
 
-![](assets/s_advuser_mkg_dist_select_op_valid.png)
+![审批参数中的“编辑”链接打开“编辑审阅人”窗口，其中包含其他审阅人和审批计划。](assets/s_advuser_mkg_dist_select_op_valid.png)
 
 ## 审批时间线 {#approval-periods}
 
@@ -61,7 +61,7 @@ ht-degree: 2%
 
 可以在给定日期和/或在提交日期后&#x200B;**x**&#x200B;天发送提醒。 可以在提醒表的第一列中配置提醒类型。 在以下示例中，审阅人将在2023年1月11日（即&#x200B;**[!UICONTROL Date]**&#x200B;列中选择的日期前两天）收到提醒消息，并在审批期结束前一天（即，提交审批日期后两天）收到第二封提醒消息。
 
-![](assets/s_advuser_mkg_dist_reminder_planning.png)
+![编辑具有3d审批延迟和两个提醒的审阅人窗口：从审批截止日期到给定日期的延迟。](assets/s_advuser_mkg_dist_reminder_planning.png)
 
 定义包并将其提交审批后，执行计划将显示在&#x200B;**[!UICONTROL Audit]**&#x200B;选项卡中。 它显示根据以前的配置计算出的处理截止日期，以及所有已配置提醒的日期。
 
@@ -69,6 +69,6 @@ ht-degree: 2%
 
 如果未指定审核者或通知的操作员均未批准程序包，则可以使用&#x200B;**[!UICONTROL Approve the package]**&#x200B;按钮直接从营销活动程序包&#x200B;**[!UICONTROL Dashboard]**&#x200B;或程序包概述进行批准。
 
-![](assets/s_advuser_mkg_dist_valid_button.png)
+![批准包按钮使用“接受”或“拒绝”选项和“注释”字段打开包的“操作”对话框。](assets/s_advuser_mkg_dist_valid_button.png)
 
 批准后，该营销活动会发布并添加到列表，一旦达到其可用日期，本地实体即可使用它。 如果在创建营销策划时指定了本地实体，则会向通知组中的操作员发送消息，告知他们营销策划可用。 如果未预先指定实体，则默认情况下所有本地实体都可以使用营销活动。 有关详细信息，请参阅[组织实体](about-distributed-marketing.md#organizational-entities)。

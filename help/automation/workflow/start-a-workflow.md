@@ -27,9 +27,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1180'
 ht-degree: 0%
 ---
 # 启动、暂停、停止工作流 {#starting-a-workflow}
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 通过工具栏的&#x200B;**[!UICONTROL Actions]**&#x200B;按钮，您可以访问所选工作流上的其他执行选项。 您还可以使用&#x200B;**[!UICONTROL File > Actions]**&#x200B;菜单，或右键单击工作流并选择&#x200B;**[!UICONTROL Actions]**。
 
-![](assets/purge_historique.png)
+![打开“操作”菜单的工作流列表，并在“开始”、“暂停”、“停止”和“重新启动”选项中突出显示“清除”历史记录。](assets/purge_historique.png)
 
 * **[!UICONTROL Start]**
 
@@ -134,7 +134,7 @@ ht-degree: 0%
 
 选择一个或多个工作流活动后，您可以右键单击以根据您的选择执行操作。
 
-![](assets/contextual_menu.png)
+![突出显示显示日志的工作流活动上的右键单击菜单，以及“打开”、“剪切”、“复制”、“删除”和“保存”选项。](assets/contextual_menu.png)
 
 右键单击菜单中提供了以下选项：
 

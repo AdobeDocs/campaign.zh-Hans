@@ -24,9 +24,9 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '513'
 ht-degree: 5%
 ---
 # 监测技术工作流 {#monitoring-technical-workflows}
@@ -37,7 +37,7 @@ ht-degree: 5%
 
 可通过&#x200B;**[!UICONTROL Monitoring]**&#x200B;选项卡访问实例监视仪表板。
 
-![](assets/monitoring_technical_workflows1.png)
+![包含进程列表、失败的工作流和投放以及系统指示器链接的实例监视仪表板](assets/monitoring_technical_workflows1.png)
 
 在“System Indicators（系统指示器）”和“core files（核心文件）”下，检查指示器是否以红色突出显示。 如果情况确实如此，并且有些确实如此，则您应：
 
@@ -75,7 +75,7 @@ ht-degree: 5%
 
 **[!UICONTROL Workflow supervisors]**&#x200B;组应包含需要随时通知失败情况的操作员以及可以及时采取操作的操作员。
 
-![](assets/monitoring_technical_workflows3.png)
+![工作流属性“常规”选项卡，在“主管”字段中选择了工作流主管](assets/monitoring_technical_workflows3.png)
 
 如果出现问题，应生成警报并将其发送到正确的组。
 
@@ -93,7 +93,7 @@ ht-degree: 5%
 * 操作员负责监控。
 * 有关出错时执行的操作说明。
 
-![](assets/monitoring_technical_workflows4.png)
+![维护工作表列出了每个工作流的频率、开始、持续时间、文件夹、名称、严重性和依赖关系](assets/monitoring_technical_workflows4.png)
 
 ## 监控的规划和自动化 {#planning-and-automation-of-monitoring}
 

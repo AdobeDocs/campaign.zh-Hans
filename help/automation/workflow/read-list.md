@@ -25,9 +25,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '621'
 ht-degree: 0%
 ---
 # 读取列表{#read-list}
@@ -38,15 +38,15 @@ ht-degree: 0%
 
 要处理的列表可以根据&#x200B;**[!UICONTROL Read list]**&#x200B;活动中选定的选项和定义的参数，通过脚本显式指定、计算或动态本地化。
 
-![](assets/list_edit_select_option_01.png)
+![在Source筛选下，读取明确选定了“指定”的列表活动、选定的列表以及“编辑查询”链接](assets/list_edit_select_option_01.png)
 
 如果未显式指定该列表，则必须提供一个列表以用作模板来查找其结构。
 
-![](assets/s_advuser_list_template_select.png)
+![读取名称由选定脚本计算且列表下拉列表打开的](assets/s_advuser_list_template_select.png)列表活动
 
 配置列表选择后，您可以使用&#x200B;**[!UICONTROL Edit query]**&#x200B;选项添加过滤器，以便为下一个工作流保留群体的一部分。
 
-![](assets/wf_readlist_1.png)
+![对所选列表应用了价格编辑查询筛选器的读取列表活动不为空](assets/wf_readlist_1.png)
 
 >[!CAUTION]
 >
@@ -58,21 +58,21 @@ ht-degree: 0%
 
 以下示例允许您使用要从电子邮件投放目标中排除的电子邮件地址列表。
 
-![](assets/s_advuser_list_read_sample_1.png)
+![包含读取列表和新的联系人文件查询的工作流已加入排除项，然后是投放和等待3天](assets/s_advuser_list_read_sample_1.png)
 
 **新联系人**&#x200B;文件夹中包含的用户档案必须由投放操作定向。 要从目标中排除的电子邮件地址存储在外部列表中。 在我们的示例中，只有电子邮件地址上的信息才需要被排除。
 
 1. **新联系人**&#x200B;文件夹选择查询必须允许您加载所选用户档案的电子邮件地址，以便与列表中的信息保持一致。
 
-   ![](assets/s_advuser_list_read_sample_0.png)
+   ![在“补充信息”下添加了“电子邮件”字段的新联系人查询活动](assets/s_advuser_list_read_sample_0.png)
 
 1. 此处，该列表存储在&#x200B;**列表**&#x200B;文件夹中，并计算其标签。
 
-   ![](assets/s_advuser_list_read_sample_2.png)
+   ![使用List文件夹和黑名单文件的计算标签读取列表活动](assets/s_advuser_list_read_sample_2.png)
 
 1. 要从主目标中排除外部列表的电子邮件地址，必须配置排除活动并指定&#x200B;**新联系人**&#x200B;文件夹包含要保留的数据。 将从目标中删除此集与排除活动中任何其他集客集的联合数据。
 
-   ![](assets/s_advuser_list_read_sample_3.png)
+   ![新联系人文件设置为主集且排除规则表为“排除”的活动](assets/s_advuser_list_read_sample_3.png)
 
    排除规则在编辑工具的中心部分中配置。 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以定义要应用的排除类型。
 
@@ -82,6 +82,6 @@ ht-degree: 0%
 
    在本例中，我们在连接上有一个排除项：列表中包含的数据将通过包含电子邮件地址的字段与主集的数据进行协调。 要配置加入，请在&#x200B;**[!UICONTROL Change dimension]**&#x200B;字段中选择&#x200B;**[!UICONTROL Joins]**。
 
-   ![](assets/s_advuser_list_read_sample_4.png)
+   ![异常定义，将“读取”列表作为排除集，并将“连接”选项作为更改维度](assets/s_advuser_list_read_sample_4.png)
 
 1. 然后，选择与两组中的电子邮件地址对应的字段（Source和目标）。 随后将链接各列，并从目标中排除其电子邮件地址位于导入地址列表中的收件人。

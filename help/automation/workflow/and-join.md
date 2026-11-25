@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 22%
+source-wordcount: '212'
+ht-degree: 16%
 ---
 # AND-连接{#and-join}
 
@@ -34,7 +34,7 @@ ht-degree: 22%
 
 例如，您可以在内容创建和投放发送自动化的上下文中使用AND-join活动，以确保仅在完成目标查询和内容更新步骤后开始投放。 中提供了专用用例
 
-![](assets/and-join-usage.png)
+![在交付之前，分支将查询和内容管理并行运行到AND连接中的工作流。](assets/and-join-usage.png)
 
 >[!NOTE]
 >
@@ -46,4 +46,4 @@ ht-degree: 22%
 
 >[!CAUTION]
 >
->对于&#x200B;**AND-join**&#x200B;类型的活动，将合并事件变量，但是如果同一变量定义了两次，则会发生冲突，且值仍未确定。 如需详细信息，请参阅[此小节](javascript-scripts-and-templates.md#event-variables)。
+>对于&#x200B;**AND-join**&#x200B;类型的活动，将合并事件变量，但是如果同一变量定义了两次，则会发生冲突，且值仍未确定。 有关详细信息，请参阅[事件变量](javascript-scripts-and-templates.md#event-variables)。

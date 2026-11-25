@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 44%
+source-wordcount: '666'
+ht-degree: 42%
 ---
 # 工作流入门{#gs-workflows}
 
@@ -50,7 +50,7 @@ Adobe Campaign使用工作流执行以下操作：
 
 工作流模板描述了要执行的各种任务及其关联方式。 任务模板称作活动并由图标表示。 它们通过过渡关联起来。
 
-![](assets/example1.png)
+通过合并、扩充、交付和批准两个文件夹查询的![工作流程图以更新数据或结束](assets/example1.png)
 
 ## 关键原则
 
@@ -62,7 +62,7 @@ Adobe Campaign使用工作流执行以下操作：
 
   在工作流图中，给定活动可以生成多个任务，尤其是当存在循环或循环（定期）操作时。
 
-  [此部分](activities.md)列出了所有工作流活动，包括用例和示例。
+  [关于工作流活动](activities.md)中列出了所有工作流活动，包括用例和示例。
 
 * **[!UICONTROL Transitions]**
 
@@ -74,22 +74,22 @@ Adobe Campaign使用工作流执行以下操作：
   >
   >包含未终止过渡的工作流仍可以执行：将生成警告消息，工作流在到达过渡后将暂停，但不会生成错误。 因此，可以在不完成工作流的情况下启动该工作流，并在工作流中添加工作流。
 
-  有关如何构建工作流的详细信息，请参阅[此部分](build-a-workflow.md)。
+  有关如何构建工作流的详细信息，请参阅[构建工作流](build-a-workflow.md)。
 
 * **[!UICONTROL Worktables]**
 
   工作台包含由过渡承载的所有信息。 每个工作流均使用多个工作表。 只要不清除这些表中的数据，就可以在整个工作流的生命周期中加速和使用这些数据。 实际上，每次工作流被钝化时以及可能在执行最大工作流期间，都会清除不需要的表，以避免服务器过载。
 
-  在[本节](use-workflow-data.md)中了解关于工作流数据和表的更多信息。
+  在[使用工作流数据](use-workflow-data.md)中了解关于工作流数据和表的更多信息。
 
 ## 相关章节
 
 请参阅以下部分，查找使用工作流自动化流程的指导和最佳实践：
 
-* 在[此页面](use-workflow-data.md)中了解有关工作流活动的更多信息。
-* 在[本节](build-a-workflow.md)中了解如何构建工作流。
-* 在[此部分](campaign-workflows.md)中了解如何使用工作流导入Campaign中的数据。
-* [此页面](workflow-best-practices.md)中详细介绍了工作流最佳实践。
-* 在[此部分](start-a-workflow.md)中查找有关工作流执行的指导。
-* 了解如何在[此页面](monitor-workflow-execution.md)中监视工作流。
-* 在[此页面](managing-rights.md)中了解如何向用户授予使用工作流的访问权限。
+* 在[使用工作流数据](use-workflow-data.md)中了解有关工作流活动的更多信息。
+* 了解如何在[构建工作流](build-a-workflow.md)中构建工作流。
+* 了解如何使用工作流在[工作流类型](campaign-workflows.md)的Campaign中导入数据。
+* [工作流最佳实践](workflow-best-practices.md)中详细介绍了工作流最佳实践。
+* 在[启动工作流](start-a-workflow.md)中查找有关工作流执行的指导。
+* 了解如何在[监视工作流执行](monitor-workflow-execution.md)中监视工作流。
+* 了解如何在[管理工作流权限](managing-rights.md)中授予用户使用工作流的访问权限。

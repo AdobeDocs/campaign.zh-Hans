@@ -27,10 +27,10 @@ topic_v2:
     internal-label: Measurement
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: c8cb0f8a3f752a46fae533c8fd0608aa4545d37c
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 3%
+source-wordcount: '1375'
+ht-degree: 2%
 ---
 # 创建假设验证{#creating-hypotheses}
 
@@ -55,11 +55,11 @@ ht-degree: 3%
 1. 在Adobe Campaign树中，转到&#x200B;**[!UICONTROL Campaign management > Measurement hypotheses]**。
 1. 单击&#x200B;**[!UICONTROL New]**&#x200B;按钮或右键单击假设列表，然后在下拉列表中选择&#x200B;**[!UICONTROL New]**。
 
-   ![](assets/response_hypothesis_instance_creation_002.png)
+   ![使用“新建”按钮和“新建假设验证”对话框选择模板的测量假设验证列表](assets/response_hypothesis_instance_creation_002.png)
 
 1. 在假设验证窗口中，选择之前创建的模板。 [了解详情](hypothesis-templates.md)
 
-   ![](assets/response_hypothesis_instance_creation_003.png)
+   ![带有假设验证模板下拉列表的新假设验证对话框，其中列出了可用的模板](assets/response_hypothesis_instance_creation_003.png)
 
    在所选模型中定义的假设验证上下文将显示在窗口中。
 
@@ -67,11 +67,11 @@ ht-degree: 3%
    >
    >在模板中定义但在此步骤中不可见的设置也会保留在内存中，并重新分配给正在进行的假设验证。
 
-   ![](assets/response_hypothesis_instance_creation_004.png)
+   ![新假设验证对话框，显示从所选模板和投放字段继承的查询](assets/response_hypothesis_instance_creation_004.png)
 
-1. 选择要为其创建假设验证的投放。
+1. Select要为其创建假设验证的投放。
 
-   ![](assets/response_hypothesis_instance_creation_005.png)
+   ![带有投放下拉列表的新假设验证对话框可选择](assets/response_hypothesis_instance_creation_005.png)
 
 1. 您可以通过编辑&#x200B;**[!UICONTROL General]**、**[!UICONTROL Transactions]**&#x200B;和&#x200B;**[!UICONTROL Scope]**&#x200B;选项卡来个性化您的假设验证。 [了解详情](hypothesis-templates.md#creating-a-hypothesis-model)
 1. 通过单击&#x200B;**[!UICONTROL Start]**&#x200B;开始假设验证。
@@ -87,11 +87,11 @@ ht-degree: 3%
    >
    >如果选中了此选项，则在执行工作流后将其删除。
 
-   ![](assets/response_hypothesis_instance_creation_006.png)
+   ![测量假设列表的开始按钮和开始假设的确认提示](assets/response_hypothesis_instance_creation_006.png)
 
    计算完成后，测量指标将自动更新。
 
-   ![](assets/response_hypothesis_instance_creation_007.png)
+   ![假设验证常规选项卡，其中包含由假设验证计算的指标，如响应率和反应](assets/response_hypothesis_instance_creation_007.png)
 
 1. 如有必要，请更改设置并重新启动假设验证。
 
@@ -99,14 +99,14 @@ ht-degree: 3%
 
 您可以在营销活动开始之前引用假设验证。 在这种情况下，一旦发送投放，就会根据假设验证模板中定义的执行设置，自动启动假设验证。 要在投放中创建假设验证，请应用以下流程：
 
-1. 根据您的需要，您可以创建一个或多个&#x200B;**[!UICONTROL Delivery]**&#x200B;类型模板，如[此部分](hypothesis-templates.md#creating-a-hypothesis-model)中所述
+1. 根据您的需要，您可以创建一个或多个&#x200B;**[!UICONTROL Delivery]**&#x200B;类型模板，如[创建假设验证模型](hypothesis-templates.md#creating-a-hypothesis-model)中所述
 1. 创建营销活动和定位工作流。
 1. 在投放窗口中，单击&#x200B;**[!UICONTROL Delivery measurement]**&#x200B;图标。
-1. 选择假设验证模板（模型中配置的查询将显示在假设验证窗口中）。
+1. Select假设验证模板（在模型中配置的查询显示在假设验证窗口中）。
 
    一旦营销活动完成，系统会根据模型中配置的日期，自动计算假设验证。 [了解详情](hypothesis-templates.md#hypothesis-template-execution-settings)
 
-   ![](assets/response_hypothesis_instance_creation_008.png)
+   ![包含“添加”按钮的投放测量窗口，用于引用投放中的假设验证模板](assets/response_hypothesis_instance_creation_008.png)
 
 ## 向营销活动的投放添加默认假设验证 {#adding-a-default-hypothesis-to-deliveries-for-a-campaign}
 
@@ -115,15 +115,15 @@ ht-degree: 3%
 1. 转到营销活动的&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡。
 1. 在测量部分中，单击&#x200B;**[!UICONTROL Default hypotheses]**&#x200B;选项卡。
 
-   ![](assets/response_hypothesis_instance_creation_010.png)
+   ![Campaign的“编辑”选项卡，“测量”部分，高亮显示“默认假设验证”选项卡](assets/response_hypothesis_instance_creation_010.png)
 
 1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择假设验证模板。
 
-   ![](assets/response_hypothesis_instance_creation_011.png)
+   ![使用营销活动“默认假设验证”选项卡上的模板下拉菜单添加假设验证对话框](assets/response_hypothesis_instance_creation_011.png)
 
    默认情况下，营销活动的每个新投放都将引用基于此模板的假设。
 
-   ![](assets/response_hypothesis_instance_creation_012.png)
+   ![定向工作流中的投放测量窗口，其中列出了购买假设验证](assets/response_hypothesis_instance_creation_012.png)
 
 可以在假设验证的&#x200B;**[!UICONTROL General]**&#x200B;和&#x200B;**[!UICONTROL Reactions]**&#x200B;选项卡中查看假设验证结果。 [了解详情](hypothesis-tracking.md)
 
@@ -133,19 +133,19 @@ ht-degree: 3%
 
 创建关于优惠建议的假设与创建即时投放假设类似。 只要选件处于活动状态，就可以执行假设验证。 计算期间基于优惠建议日期。 当假设验证允许您将收件人链接到购买时，可能会被接受的优惠建议状态可以自动更改。 [了解详情](hypothesis-templates.md#transactions)
 
-1. 按照[此部分](hypothesis-templates.md#creating-a-hypothesis-model)中的说明创建一个或多个&#x200B;**[!UICONTROL Offer]**&#x200B;类型模型。
+1. 按照[创建假设验证模型](hypothesis-templates.md#creating-a-hypothesis-model)中的说明创建一个或多个&#x200B;**[!UICONTROL Offer]**&#x200B;类型模型。
 1. 转到&#x200B;**[!UICONTROL Campaign management > Measurement hypotheses]**&#x200B;节点。
 1. 通过选择之前创建的模型来创建&#x200B;**[!UICONTROL Offers]**&#x200B;类型假设验证。
 
-   ![](assets/response_hypothesis_instance_offer_001.png)
+   ![带有模板下拉列表优惠模板（如新优惠假设验证）的新假设验证对话框](assets/response_hypothesis_instance_offer_001.png)
 
    在模型中创建的查询将出现在窗口中。
 
-   ![](assets/response_hypothesis_instance_offer_003.png)
+   ![带有优惠假设验证模板的新假设验证对话框，查询类型等于项目](assets/response_hypothesis_instance_offer_003.png)
 
 1. 选择要为其创建假设验证的选件。
 
-   ![](assets/response_hypothesis_instance_offer_004.png)
+   ![包含优惠下拉列表优惠的新假设验证对话框，例如巴黎之旅](assets/response_hypothesis_instance_offer_004.png)
 
 1. 根据需要优化查询。
 1. 单击&#x200B;**[!UICONTROL Start]**&#x200B;运行假设验证。
@@ -153,7 +153,7 @@ ht-degree: 3%
 
    对选件所做的假设已在&#x200B;**[!UICONTROL Measurement]**&#x200B;选项卡中引用。
 
-   ![](assets/response_hypothesis_instance_offer_007.png)
+   ![“优惠度量”选项卡，其中包含在“计算有效ROI”下链接到优惠的假设列表](assets/response_hypothesis_instance_offer_007.png)
 
    如果在假设验证模板中启用了&#x200B;**[!UICONTROL Update offer proposition status]**&#x200B;选项，则优惠建议的状态会自动更改，从而提供有关促销活动影响的反馈（有关更多信息，请参阅[交易](hypothesis-templates.md#transactions)）。
 
@@ -169,7 +169,7 @@ ht-degree: 3%
 
 1. 配置种子地址：之前创建的假设验证模板配置为在反应结果中考虑控制组。
 
-   ![](assets/response_hypothesis_delivery_example_007.png)
+   ![Campaign高级设置，控制填充选项卡，并启用控制组配置](assets/response_hypothesis_delivery_example_007.png)
 
    >[!NOTE]
    >
@@ -177,28 +177,28 @@ ht-degree: 3%
 
 1. 打开&#x200B;**[!UICONTROL Direct mail delivery]**&#x200B;并单击&#x200B;**[!UICONTROL Delivery measurement]**&#x200B;图标，然后单击&#x200B;**[!UICONTROL Add]**。
 
-   ![](assets/response_hypothesis_delivery_example_002.png)
+   ![直邮投放的投放测量窗口，带有假设的“添加”按钮](assets/response_hypothesis_delivery_example_002.png)
 
 1. 从下拉列表中选择之前创建的假设验证模板。
 
-   ![](assets/response_hypothesis_delivery_example_004.png)
+   ![使用模板下拉列表添加假设验证对话框，其中列出了购买假设验证(HYP4)](assets/response_hypothesis_delivery_example_004.png)
 
    将显示在模型中创建的查询。
 
-   ![](assets/response_hypothesis_delivery_example_005.png)
+   ![带有按票证行假设验证模板及其按产品筛选查询的新假设验证对话框](assets/response_hypothesis_delivery_example_005.png)
 
 1. 单击&#x200B;**[!UICONTROL Edit query...]**&#x200B;并通过输入假设验证将涉及的产品来优化查询。
 
-   ![](assets/response_hypothesis_delivery_example_006.png)
+   ![编辑查询窗口筛选产品名称等于Clothing的假设验证](assets/response_hypothesis_delivery_example_006.png)
 
    您可以在营销活动的&#x200B;**[!UICONTROL Edit]** > **[!UICONTROL Measurement]**&#x200B;选项卡中检查假设验证是否与投放相关联。
 
-   ![](assets/response_hypothesis_delivery_example_008.png)
+   ![Campaign Measurement部分的“测量假设验证”选项卡，列出针对投放购买的假设验证](assets/response_hypothesis_delivery_example_008.png)
 
 1. 启动定位工作流并运行必要的检查，直到营销活动完成。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=zh-Hans#start-a-delivery){target=_blank}。
 
-   ![](assets/response_hypothesis_delivery_example_009.png)
+   ![正在发送直邮的营销活动信息板及其状态、目标群体和验证](assets/response_hypothesis_delivery_example_009.png)
 
 1. 在Adobe Campaign树中，转到&#x200B;**[!UICONTROL Campaign management > Measurement hypotheses]**&#x200B;节点以检查由假设验证计算的指标。
 
-   ![](assets/response_hypothesis_delivery_example_010.png)
+   ![测量假设列表和“常规”选项卡，其中包含已计算的指标，例如联系响应率](assets/response_hypothesis_delivery_example_010.png)

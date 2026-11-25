@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '2237'
+source-wordcount: '2271'
 ht-degree: 4%
 ---
 # 技术工作流{#about-technical-workflows}
@@ -51,17 +51,17 @@ Adobe Campaign附带一组内置的技术工作流。 它们控制计划在服�
 
 默认情况下，技术工作流在以下节点的子文件夹中可用： **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**。
 
-![](assets/navtree.png){width="50%" zoomable="yes"}
+![资源管理器树，其中已展开“管理”>“生产”，并且已选择“技术工作流”文件夹。](assets/navtree.png){width="50%" zoomable="yes"}
 
 >[!NOTE]
 >
->* [此部分](#list-technical-workflows)中提供了与每个模块一起安装的技术工作流的列表。
+>* [内置技术工作流](#list-technical-workflows)中提供了与每个模块一起安装的技术工作流列表。
 >
 >* 默认情况下，与消息中心加载项相关的技术工作流存储在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technical workflows]**&#x200B;节点中。
 
 **[!UICONTROL Campaign process]**&#x200B;子文件夹集中了在营销活动中执行流程所需的工作流：任务通知、库存管理、成本计算等。
 
-![](assets/campaign-processes-wf.png)
+![在技术工作流树中选择了Campaign进程文件夹，及其工作流列表和图表。](assets/campaign-processes-wf.png)
 
 ## 管理和创建技术工作流 {#manage-tech-workflows}
 
@@ -92,7 +92,7 @@ Adobe Campaign附带一组内置的技术工作流。 它们控制计划在服�
 | **事件清除** (webAnalyticsPurgeWebEvents) | 网站分析连接器 | 利用此工作流，可根据生命周期字段中配置的时段，从数据库字段删除每个事件。 |
 | **将受众导出到Adobe Experience Cloud** (exportSharedAudience) | 与Adobe Experience Cloud集成 | 此工作流可将受众作为共享受众/区段导出。 这些受众可在您使用的其他Adobe CX Enterprise解决方案中使用。 |
 | **预测** （预测） | 默认安装 | 此工作流会分析保存在临时日历中的投放（创建临时日志）。 默认情况下，此工作流于每日凌晨1点触发。 |
-| **完全聚合计算（propositionrcp多维数据集）** (agg_nmspropositionrcp_full) | 优惠引擎（交互） | 此工作流可更新优惠建议多维数据集的完全聚合。 默认情况下，此工作流于每日早上6点触发。 此聚合可捕获以下维度：渠道、投放、营销选件和日期。 然后，使用优惠建议多维数据集根据优惠生成报表。 在[本节](../../v8/reporting/gs-cubes.md)中了解有关多维数据集的更多信息。 |
+| **完全聚合计算（propositionrcp多维数据集）** (agg_nmspropositionrcp_full) | 优惠引擎（交互） | 此工作流可更新优惠建议多维数据集的完全聚合。 默认情况下，此工作流于每日早上6点触发。 此聚合可捕获以下维度：渠道、投放、营销选件和日期。 然后，使用优惠建议多维数据集根据优惠生成报表。 在[Adobe Campaign Analytics报告入门](../../v8/reporting/gs-cubes.md)中了解有关多维数据集的更多信息。 |
 | **已转换联系人的标识** (webAnalyticsFindConverted) | 网站分析连接器 | 此工作流对再营销活动后完成购买的网站访客编制索引。 可以在再营销效率报表中访问通过此工作流恢复的数据（请参阅此页面）。 |
 | **从Adobe Experience Cloud导入受众** (importSharedAudience) | 与Adobe Experience Cloud集成 | 利用此工作流，可将不同CX Enterprise解决方案的受众/区段导入Adobe Campaign。 |
 | 营销活动中的投放&#x200B;**作业** (deliveryMgt) | 默认安装 | 此工作流会触发批准的投放，并开始后处理外部投放的服务提供程序。 它还会发送批准通知和提醒。 |

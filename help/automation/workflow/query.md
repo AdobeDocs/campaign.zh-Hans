@@ -27,9 +27,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1627'
+source-wordcount: '1915'
 ht-degree: 1%
 ---
 # 查询{#query}
@@ -39,9 +39,9 @@ ht-degree: 1%
 ## 创建查询 {#creating-a-query}
 
 通过查询，您可以根据条件选择目标。 您可以将区段代码关联到查询结果并在其中插入附加数据。
-在[本节](querying-recipient-table.md)中了解如何通过用例构建查询。 另请参阅有关[查询编辑器](../../v8/start/query-editor.md)的部分。
+了解如何通过[查询收件人表](querying-recipient-table.md)中的用例构建查询。 另请参阅有关[查询编辑器](../../v8/start/query-editor.md)的部分。
 
-![](assets/query-activity.png){width="70%" align="center" zoomable="yes"}
+![包含“编辑查询”、“添加数据”、“编辑其他数据和结果标签”和“段代码”字段的“查询活动”对话框。](assets/query-activity.png){width="70%" align="center" zoomable="yes"}
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ ht-degree: 1%
 
 **[!UICONTROL Edit query...]**&#x200B;链接允许您按以下方式定义群体的定位类型、限制和选择标准：
 
-1. 选择定位和筛选维度。 默认情况下，目标是从收件人中选择的。 限制过滤器的列表与用于投放定位的筛选器相同。
+1. Select定位和过滤维度。 默认情况下，目标是从收件人中选择的。 限制过滤器的列表与用于投放定位的筛选器相同。
 
    定向维度与我们将处理的元素类型（例如，操作定向的群体）一致。
 
@@ -57,15 +57,15 @@ ht-degree: 1%
 
    有关详细信息，请参阅[定位和筛选维度](targeting-workflows.md#targeting-and-filtering-dimensions)。
 
-   ![](assets/targeting-filtering-dimensions.png){width="70%" align="center" zoomable="yes"}
+   ![定位和筛选维度步骤，将收件人作为定位维度，将收件人作为筛选维度。](assets/targeting-filtering-dimensions.png){width="70%" align="center" zoomable="yes"}
 
    查询可以基于来自集客过渡的数据，如有必要，可在选择定位和筛选维度时选择&#x200B;**[!UICONTROL Temporary schema]**。
 
-   ![](assets/query_temporary_table.png){width="70%" align="center" zoomable="yes"}
+   ![选定了“临时架构”选项且已选定架构查询A的定位和筛选维度步骤。](assets/query_temporary_table.png){width="70%" align="center" zoomable="yes"}
 
 1. 使用向导定义群体。 要输入的字段可以因目标类型而异。 您可以使用&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡预览符合当前条件的目标群体。
 
-   ![](assets/query-sample.png){width="70%" align="center" zoomable="yes"}
+   ![查询筛选器步骤，其中包含已选为标准的文件夹、投放和信息服务，以及“预览”选项卡。](assets/query-sample.png){width="70%" align="center" zoomable="yes"}
 
 1. 如果您已在步骤1中选择&#x200B;**[!UICONTROL Filtering conditions]**&#x200B;或使用&#x200B;**[!UICONTROL Filters]** > **[!UICONTROL Advanced filter...]**&#x200B;选项，则以后必须手动添加筛选条件。
 
@@ -81,31 +81,31 @@ ht-degree: 1%
 
 **[!UICONTROL Add data...]**&#x200B;链接允许您选择要收集的附加数据。
 
-![](assets/wf_add_data_link.png){width="70%" align="center" zoomable="yes"}
+![查询活动对话框，突出显示了“补充信息”部分中的“添加数据”链接。](assets/wf_add_data_link.png){width="70%" align="center" zoomable="yes"}
 
 首先，选择要添加的数据类型：
 
-![](assets/wf_add_data_1st_option.png){width="70%" align="center" zoomable="yes"}
+![附加数据向导，其选项数据链接到筛选维度、外部数据和优惠建议。](assets/wf_add_data_1st_option.png){width="70%" align="center" zoomable="yes"}
 
-* 选择&#x200B;**[!UICONTROL Data linked to the filtering dimension]**&#x200B;以选择Adobe Campaign数据库中的数据。
-* 选择&#x200B;**[!UICONTROL External data]**&#x200B;以从外部数据库添加数据。 仅当您购买了&#x200B;**联合数据访问**&#x200B;选项时，此选项才可用。 有关详细信息，请参阅[访问外部数据库(FDA)](accessing-an-external-database-fda.md)。
-* 选择&#x200B;**[!UICONTROL An offer proposition]**&#x200B;选项可添加一组列，用于存储优惠引擎生成的最佳建议。 此选项仅在您已购买&#x200B;**交互**&#x200B;模块时才可用。
+* Select **[!UICONTROL Data linked to the filtering dimension]**&#x200B;以选择Adobe Campaign数据库中的数据。
+* Select **[!UICONTROL External data]**&#x200B;以从外部数据库添加数据。 仅当您购买了&#x200B;**联合数据访问**&#x200B;选项时，此选项才可用。 有关详细信息，请参阅[访问外部数据库(FDA)](accessing-an-external-database-fda.md)。
+* Select **[!UICONTROL An offer proposition]**&#x200B;选项以添加一组列，用于存储优惠引擎生成的最佳建议。 此选项仅在您已购买&#x200B;**交互**&#x200B;模块时才可用。
 
 如果平台上未安装可选模块，则不会显示此阶段。 你将被直接带往下一个阶段。
 
 要从Adobe Campaign数据库添加数据，请执行以下操作：
 
-1. 选择要添加的数据类型。 这可以是属于筛选维度的数据或存储在链接表中的数据。
+1. Select您要添加的数据类型。 这可以是属于筛选维度的数据或存储在链接表中的数据。
 
-   ![](assets/query_add_columns.png){width="70%" align="center" zoomable="yes"}
+   ![Select字段，用于添加包含所选筛选维度的数据和链接到筛选维度的数据的步骤。](assets/query_add_columns.png){width="70%" align="center" zoomable="yes"}
 
 1. 如果数据属于查询的过滤维度，则只需在可用字段列表中选择该数据，即可在输出列中显示该数据。
 
-   ![](assets/wf_add_data_field_selection.png){width="70%" align="center" zoomable="yes"}
+   ![要添加步骤的数据，将收件人字段列为可用字段和所选的输出列，包括公司。](assets/wf_add_data_field_selection.png){width="70%" align="center" zoomable="yes"}
 
    您可以添加：
 
-   * 根据从目标群体或聚合（上个月内的待定购买次数、收据平均金额等）中获得的数据计算的字段。 例如，转到[选择数据](targeting-workflows.md)。
+   * 根据从目标群体或聚合（上个月内的待定购买次数、收据平均金额等）中获得的数据计算的字段。 例如，转到[Select数据](targeting-workflows.md)。
    * 使用输出列列表右侧的&#x200B;**[!UICONTROL Add]**&#x200B;按钮创建的新字段。
 
      您还可以添加信息集合，例如合同列表、最近5次投放等。收藏集与字段一致，这些字段可以为同一用户档案具有多个值（1-N关系）。 有关详细信息，请参阅[编辑其他数据](targeting-workflows.md#edit-additional-data)。
@@ -113,9 +113,9 @@ ht-degree: 1%
 要添加链接到目标群体的信息集合，请执行以下操作：
 
 1. 在向导的第一步，选择&#x200B;**[!UICONTROL Data linked to the filtering dimension]**&#x200B;选项：
-1. 选择包含要收集信息的表，然后单击&#x200B;**[!UICONTROL Next]**。
+1. Select包含要收集信息的表，然后单击&#x200B;**[!UICONTROL Next]**。
 
-   ![](assets/wf_add_data_linked_table.png){width="70%" align="center" zoomable="yes"}
+   ![要添加步骤的Select字段，其中数据链接到选定的筛选维度以及链接表的树。](assets/wf_add_data_linked_table.png){width="70%" align="center" zoomable="yes"}
 
 1. 如有必要，请在&#x200B;**[!UICONTROL Data collected]**&#x200B;字段中选择一个值，以指定要保留的集合的元素数。 默认情况下，将恢复集合中的所有行，然后根据在以下步骤中指定的条件进行筛选。
 
@@ -130,11 +130,11 @@ ht-degree: 1%
    * 如果选择恢复多行(**[!UICONTROL Limit the line count]**)，则可以指定要收集的行数。
    * 如果收集的列包含聚合，例如声明的失败次数、网站上的平均支出等等，则可以使用&#x200B;**[!UICONTROL Aggregates]**&#x200B;值。
 
-   ![](assets/query_add_collection_param.png){width="70%" align="center" zoomable="yes"}
+   打开数据收集列表的![常规参数步骤：所有行，限制行数，聚合，合并。](assets/query_add_collection_param.png){width="70%" align="center" zoomable="yes"}
 
 1. 指定集合的子选择。
 
-   ![](assets/query_add_columns_collection_filter.png){width="70%" align="center" zoomable="yes"}
+   ![条件标签的集合的筛选步骤包含给定日期之后的优惠和创建日期。](assets/query_add_columns_collection_filter.png){width="70%" align="center" zoomable="yes"}
 
 1. 如果已选择&#x200B;**[!UICONTROL Limit the line count]**&#x200B;选项，请定义所收集数据的过滤顺序。 一旦收集的行数超过您指定的要保留的行数，则筛选顺序允许您指定要保留的行。
 
@@ -144,10 +144,10 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->[此部分](querying-recipient-table.md)中提供了其他查询示例。
+>在[查询收件人表](querying-recipient-table.md)中提供了其他查询示例。
 
 1. 命名您的查询，然后选择&#x200B;**[!UICONTROL Edit query...]**&#x200B;链接。
-1. 在可用筛选器类型列表中选择&#x200B;**[!UICONTROL Filtering conditions]**。
+1. 可用筛选器类型列表中的Select **[!UICONTROL Filtering conditions]**。
 1. 为建议的目标输入不同的标准。 此处使用AND选项组合标准。 要包含在选择中，收件人必须满足以下四个条件：
 
    * 标题为“先生”的收件人（也可以使用&#x200B;**性别**&#x200B;字段并选择&#x200B;**男性**&#x200B;作为值找到）。
@@ -155,20 +155,20 @@ ht-degree: 1%
    * 18岁以上的收件人。
    * 居住在法国的收件人。
 
-   ![](assets/query_example.png){width="70%" align="center" zoomable="yes"}
+   ![性别等于男性、年龄从18岁到30岁、美国地区等于西部的查询筛选器。](assets/query_example.png){width="70%" align="center" zoomable="yes"}
 
    您可以查看与您的条件组合匹配的SQL：
 
-   ![](assets/query_example_sql.png){width="70%" align="center" zoomable="yes"}
+   ![根据有关性别、年龄和地区的筛选条件生成的本机SQL查询。](assets/query_example_sql.png){width="70%" align="center" zoomable="yes"}
 
 1. 您可以通过预览在相关选项卡中与您的查询匹配的收件人，来检查您的标准是否正确：
 
-   ![](assets/query_example_preview.png){width="70%" align="center" zoomable="yes"}
+   ![查询的“预览”选项卡，其中列出三个匹配的收件人，计数为3。](assets/query_example_preview.png){width="70%" align="center" zoomable="yes"}
 
 1. 保存您的筛选器，以便日后通过单击&#x200B;**[!UICONTROL Finish]** > **[!UICONTROL OK]**&#x200B;再次使用这些筛选器。
 1. 通过向工作流中添加其他活动来继续编辑工作流。 启动查询并完成上一个查询步骤后，将显示找到的收件人数量。 您可以使用鼠标弹出菜单显示更多详细信息（右键单击过渡> **[!UICONTROL Display the target...]**）。
 
-   ![](assets/query_example_result.png){width="70%" align="center" zoomable="yes"}
+   ![带有标记为3的叫客过渡的工作流查询活动 — 显示找到的收件人数量的结果。](assets/query_example_result.png){width="70%" align="center" zoomable="yes"}
 
 ## 输出参数 {#output-parameters}
 
@@ -208,7 +208,7 @@ ht-degree: 1%
 
 使用查询的筛选维度，而不是使用“存在方式”运算符。
 
-![](assets/optimize-queries-filtering.png){width="70%" align="center" zoomable="yes"}
+![存在使用收件人投放日志(broadLog)的筛选条件，例如，内部名称等于投放。](assets/optimize-queries-filtering.png){width="70%" align="center" zoomable="yes"}
 
 在查询中，过滤器中的“存在”条件无效。 它们等同于SQL中的子查询：
 
@@ -216,13 +216,13 @@ ht-degree: 1%
 
 最佳实践是改用查询的筛选维度：
 
-![](assets/optimize-queries-filtering2.png){width="70%" align="center" zoomable="yes"}
+![将筛选维度设置为收件人投放日志的维度收件人作为目标。](assets/optimize-queries-filtering2.png){width="70%" align="center" zoomable="yes"}
 
 SQL中过滤维度的等效项是内部联接：
 
 `select iRecipientId from nmsRecipient INNER JOIN nmsBroadLog ON (...)`
 
-有关筛选维度的详细信息，请参阅[此部分](build-a-workflow.md)。
+有关筛选维度的详细信息，请参阅[构建工作流](build-a-workflow.md)。
 
 ### 架构 {#architecture}
 

@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '407'
 ht-degree: 1%
 ---
 # 数据提取（文件）{#extraction-file}
@@ -46,29 +46,29 @@ ht-degree: 1%
 1. 指定输出文件的名称：此名称可以包含变量，这些变量通过字段右侧的个性化按钮插入。
 1. 单击&#x200B;**[!UICONTROL Edit the file format...]**&#x200B;以选择要提取的数据。
 
-   ![](assets/s_advuser_extract_file_param.png)
+   ![从“编辑文件格式”链接打开了“提取文件格式”窗口的数据提取（文件）活动。](assets/s_advuser_extract_file_param.png)
 
    **[!UICONTROL Handle groupings (GROUP BY + HAVING)]**&#x200B;选项添加了一个额外的步骤来筛选聚合的最终结果，例如对给定采购订单类型、已订购超过10次的客户等。
 
 1. 如有必要，可以向输出文件添加新列，例如计算或处理结果。 为此，请单击&#x200B;**[!UICONTROL Add]**&#x200B;图标。
 
-   ![](assets/s_advuser_extract_file_add_col.png)
+   ![提取文件格式窗口，“输出”列列表右侧突出显示“添加”图标。](assets/s_advuser_extract_file_add_col.png)
 
    在其他行中，单击&#x200B;**[!UICONTROL Edit expression]**&#x200B;图标以定义新列的内容。
 
-   ![](assets/s_advuser_extract_file_add_exp.png)
+   ![在“创建日期”列上显示“编辑表达式”图标的输出列列表。](assets/s_advuser_extract_file_add_exp.png)
 
    然后，您将访问选择窗口。 单击&#x200B;**[!UICONTROL Advanced selection]**&#x200B;选择要应用于数据的进程。
 
-   ![](assets/s_advuser_extract_file_advanced_selection.png)
+   ![用于选择窗口列表收件人字段的字段，其中高级选择按钮突出显示。](assets/s_advuser_extract_file_advanced_selection.png)
 
    从列表中选择所需的公式。
 
-   ![](assets/s_advuser_extract_file_agregate_values.png)
+   ![公式类型窗口，其中对聚合函数选择了Process，并选择了Maximum value选项。](assets/s_advuser_extract_file_agregate_values.png)
 
 您可以定义在数据提取期间执行的后处理，从而允许您压缩或加密文件。 为此，必须在活动的&#x200B;**[!UICONTROL Script]**&#x200B;选项卡中添加所需的命令。
 
-![](assets/postprocessing_dataextraction.png)
+![用于添加后处理命令的数据提取（文件）活动，该活动高亮显示了“脚本”选项卡。](assets/postprocessing_dataextraction.png)
 
 ## 集合函数列表 {#list-of-aggregate-functions}
 

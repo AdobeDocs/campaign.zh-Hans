@@ -23,10 +23,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 4%
+source-wordcount: '329'
+ht-degree: 3%
 ---
 # 使用分组管理进行查询 {#querying-using-grouping-management}
 
@@ -50,32 +50,32 @@ ht-degree: 4%
 
 1. 打开&#x200B;**[!UICONTROL Generic query editor]**&#x200B;并选择收件人表(**nms:recipient**)。
 
-   ![](assets/query_editor_02.png)
+   ![选择了收件人(nms)的通用查询编辑器的文档类型屏幕。](assets/query_editor_02.png)
 
 1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Email domain]**&#x200B;和&#x200B;**[!UICONTROL Primary key]**&#x200B;字段。 对&#x200B;**[!UICONTROL Primary key]**&#x200B;字段运行计数。
 
 1. 选中&#x200B;**[!UICONTROL Handle groupings (GROUP BY + HAVING)]**&#x200B;框。
 
-   ![](assets/query_editor_nveau_29.png)
+   ![要使用电子邮件域和计数（主键）列提取屏幕的数据，已选中处理分组（分组依据+HAVING）。](assets/query_editor_nveau_29.png)
 
 1. 在&#x200B;**[!UICONTROL Sorting]**&#x200B;窗口中，按降序对电子邮件域进行排序。 为此，请检查&#x200B;**[!UICONTROL Descending sort]**&#x200B;列中的&#x200B;**[!UICONTROL Yes]**。 单击 **[!UICONTROL Next]**。
 
-   ![](assets/query_editor_nveau_70.png)
+   ![按电子邮件域排序的屏幕排序，显示排序和降序排序列。](assets/query_editor_nveau_70.png)
 
 1. 在 **[!UICONTROL Data filtering]** 中，选择 **[!UICONTROL Filtering conditions]**。 转到&#x200B;**[!UICONTROL Target elements]**&#x200B;窗口并单击&#x200B;**[!UICONTROL Next]**。
 1. 在&#x200B;**[!UICONTROL Data grouping]**&#x200B;窗口中，单击&#x200B;**[!UICONTROL Add]**&#x200B;以选择&#x200B;**[!UICONTROL Email domain]**。
 
    此数据分组窗口仅在选中&#x200B;**[!UICONTROL Handle groupings (GROUP BY + HAVING]**)框时显示。
 
-   ![](assets/query_editor_blocklist_04.png)
+   ![数据分组屏幕将电子邮件域(@domain)列为GROUP BY子句的组列。](assets/query_editor_blocklist_04.png)
 
 1. 在&#x200B;**[!UICONTROL Grouping condition]**&#x200B;窗口中，指示大于30的主键计数，因为我们希望目标值超过30次的电子邮件域仅作为结果返回。
 
    勾选&#x200B;**[!UICONTROL Manage groupings (GROUP BY + HAVING)]**&#x200B;框后将显示此窗口：这是筛选分组结果(HAVING)的地方。
 
-   ![](assets/query_editor_blocklist_05.png)
+   ![HAVING子句的count（主键）大于30的分组条件屏幕。](assets/query_editor_blocklist_05.png)
 
 1. 在&#x200B;**[!UICONTROL Data formatting]**&#x200B;窗口中，单击&#x200B;**[!UICONTROL Next]**：此处不需要格式化。
 1. 在数据预览窗口中，单击&#x200B;**[!UICONTROL Launch data preview]**：在此处，将返回三个目标发送次数超过30次的不同电子邮件域。
 
-   ![](assets/query_editor_blocklist_06.png)
+   ![数据预览屏幕在预览启动后返回两个电子邮件域。](assets/query_editor_blocklist_06.png)

@@ -28,9 +28,9 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '1504'
+source-wordcount: '1850'
 ht-degree: 1%
 ---
 # 选择营销活动受众 {#marketing-campaign-deliveries}
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 * 目标受众。 您可以向收件人[&#128279;](#send-to-a-group)的[列表发送消息，或在工作流](#build-the-main-target-in-a-workflow)中构建受众
 * 对照组。 您可以[添加控制组](#add-a-control-group)来监视邮件传递后的收件人行为
-* 种子地址 — 在[本节](../../v8/audiences/test-profiles.md)中了解详情。
+* 种子地址 — 在[在Campaign](../../v8/audiences/test-profiles.md)中创建测试用户档案中了解更多信息。
 
 某些信息可以从[营销活动模板](marketing-campaign-templates.md#campaign-templates)继承。
 
@@ -54,16 +54,16 @@ To build the delivery target, you can define filtering criteria for the recipien
 1. 编辑投放并单击&#x200B;**[!UICONTROL To]**&#x200B;链接以更改目标群体。
 1. 在&#x200B;**[!UICONTROL Main target]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL Defined via the database]**&#x200B;选项，然后单击&#x200B;**[!UICONTROL Add]**&#x200B;以选择收件人。
 
-   ![](assets/select-main-target.png)
+   ![Select目标对话框，主目标选项卡，已选中在数据库中定义的，并为目标群体添加链接](assets/select-main-target.png)
 
 1. 选择&#x200B;**[!UICONTROL A list of recipients]**。
 
-   ![](assets/target-a-list.png)
+   ![Select目标元素对话框，目标类型步骤，在限制筛选器列表中选择收件人列表](assets/target-a-list.png)
 
 
 1. 单击&#x200B;**[!UICONTROL Next]**&#x200B;以选择列表。
 
-   ![](assets/select-the-list.png)
+   ![Select目标元素对话框，目标元素步骤，在“列表”文件夹中选择了列表](assets/select-the-list.png)
 
    您可以通过添加新的筛选条件来优化目标。
 
@@ -81,15 +81,15 @@ To build the delivery target, you can define filtering criteria for the recipien
 
 定位可以通过工作流中以图形顺序显示的筛选条件组合来创建。 可创建根据自身要求定向的群体和子群体。 要显示工作流编辑器，请单击营销活动仪表板中的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡。
 
-![](assets/targeting-and-wf-tab.png)
+![在“仪表板”和“编辑”选项卡旁边突出显示“定位和工作流”选项卡的“营销活动”仪表板](assets/targeting-and-wf-tab.png)
 
 通过放置在工作流中的一个或多个查询，从Adobe Campaign数据库中提取目标群体。 了解如何在[本节](../workflow/query.md)中生成查询。
 
 您可以通过并集、交集、共享、排除等框启动查询并共享群体。
 
-从工作区左侧的列表中选择对象并将其链接以构建目标。
+Select工作区左侧的列表中的对象，并将其链接以构建目标。
 
-![](assets/campaign-wf.png)
+![带有图表的定位和工作流选项卡：查询A和B、合并、重复数据删除、扩充、拆分、投放](assets/campaign-wf.png)
 
 在图中，链接图表中目标构建所需的定位和计划查询。 您可以在构建过程中执行定位，以检查从数据库提取的群体。
 
@@ -101,7 +101,7 @@ To build the delivery target, you can define filtering criteria for the recipien
 
 可通过图编辑器工具栏访问定向工作流执行和格式功能。
 
-![](assets/wf-diagram.png)
+![指向定向图上方水平对齐按钮的箭头的工作流图工具栏](assets/wf-diagram.png)
 
 >[!NOTE]
 >
@@ -111,9 +111,9 @@ To build the delivery target, you can define filtering criteria for the recipien
 
 1. 转到工作流创建区域的左上角部分，右键单击并选择&#x200B;**[!UICONTROL Add]**。 您还可以使用位于该区域上方的&#x200B;**[!UICONTROL New]**&#x200B;按钮。
 
-   ![](assets/add-a-wf.png)
+   ![右键单击“定位和工作流”选项卡中默认工作流的菜单，并突出显示“添加”选项](assets/add-a-wf.png)
 
-1. 选择&#x200B;**[!UICONTROL New workflow]**&#x200B;模板并命名此工作流。
+1. Select **[!UICONTROL New workflow]**&#x200B;模板并命名此工作流。
 1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以确认创建工作流，然后为此工作流创建图。
 
 ### 执行工作流 {#execute-a-workflow}
@@ -130,7 +130,7 @@ To build the delivery target, you can define filtering criteria for the recipien
 
   * 通过&#x200B;**[!UICONTROL Start]**&#x200B;图标，可启动定位工作流。 单击此图标时，将激活所有没有输入过渡的活动（端点跳转除外）。
 
-    ![](assets/start.png)
+    ![突出显示“开始”图标的工作流工具栏，并显示其“开始”工具提示](assets/start.png)
 
     服务器考虑该请求，如其状态所示： **[!UICONTROL Start as soon as possible]**。
 
@@ -142,17 +142,17 @@ To build the delivery target, you can define filtering criteria for the recipien
 
     单击&#x200B;**[!UICONTROL Pause]**&#x200B;后，进行中的操作&#x200B;**[!UICONTROL are not]**&#x200B;已暂停，但在下次重新启动之前不会启动其他活动。
 
-    ![](assets/pause.png)
+    ![突出显示“暂停”图标的工作流工具栏，并显示其“暂停”工具提示](assets/pause.png)
 
     服务器考虑该命令，因为其状态显示为： **[!UICONTROL Pause requested]**。
 
     当定向工作流执行到特定活动时，您也可以自动暂停定向工作流。 为此，请右键单击要暂停定位工作流的活动，然后选择&#x200B;**[!UICONTROL Enable but do not execute]**。
 
-    ![](assets/donotexecute.png)
+    ![突出显示了“启用但不执行”选项的活动上下文菜单](assets/donotexecute.png)
 
     此配置由一个特殊图标显示。
 
-    ![](assets/pause_activity.png)
+    ![工作流程图，其中重复数据删除活动在启用后显示暂停图标，但未执行](assets/pause_activity.png)
 
     >[!NOTE]
     >
@@ -162,17 +162,17 @@ To build the delivery target, you can define filtering criteria for the recipien
 
   * 单击&#x200B;**[!UICONTROL Stop]**&#x200B;图标可停止正在进行的执行。
 
-    ![](assets/stop.png)
+    ![突出显示“停止”图标的工作流工具栏，并显示其“停止”工具提示](assets/stop.png)
 
     服务器考虑该命令，因为其状态显示为： **[!UICONTROL Stop requested]**。
 
   您还可以在执行到达活动时自动停止定向工作流。 为此，请右键单击将停止定位工作流的活动，然后选择&#x200B;**[!UICONTROL Do not activate]**。
 
-  ![](assets/donotactivate.png)
+  ![突出显示了“不启用”选项的活动上下文菜单](assets/donotactivate.png)
 
   此配置由一个特殊图标显示。
 
-  ![](assets/unactivation.png)
+  ![工作流程图，其中重复数据删除活动在“不启用”后显示红色禁止图标](assets/unactivation.png)
 
 
   >[!NOTE]
@@ -185,7 +185,7 @@ To build the delivery target, you can define filtering criteria for the recipien
 
   您可以通过单击&#x200B;**[!UICONTROL Actions]**&#x200B;图标并选择&#x200B;**[!UICONTROL Unconditional]**&#x200B;停止来无条件停止工作流。 此操作终止您的营销活动工作流。
 
-  ![](assets/stop_unconditional.png)
+  ![突出显示无条件停止选项的工作流操作菜单](assets/stop_unconditional.png)
 
   >[!CAUTION]
   >
@@ -208,14 +208,14 @@ To build the delivery target, you can define filtering criteria for the recipien
 1. 编辑相关的营销活动，然后单击&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡。
 1. 单击 **[!UICONTROL Advanced campaign parameters...]**。
 
-   ![](assets/enable-control-group.png)
+   ![高级设置，“控制群”选项卡，已选中“启用和编辑控制组配置”和“编辑”链接](assets/enable-control-group.png)
 
 1. 选择 **[!UICONTROL Enable and edit control group configuration]** 选项。
 1. 单击&#x200B;**[!UICONTROL Edit...]**&#x200B;配置控制组。
 
-   ![](assets/edit-control-group.png)
+   ![控制填充对话框，限制步骤的类型，随机抽样和额外填充控制组列表](assets/edit-control-group.png)
 
-[此部分](#extract-the-control-group-from-the-main-target)中详细描述了整个过程。 在[本节](#add-a-population)中了解有关控制组的更多信息。
+[从主目标提取控制组](#extract-the-control-group-from-the-main-target)中详细介绍了完整的过程。 了解有关[中控制组的详细信息。使用新群体作为控制组](#add-a-population)。
 
 ### 为投放激活对照组 {#activate-the-control-group-for-a-delivery}
 
@@ -230,11 +230,11 @@ To build the delivery target, you can define filtering criteria for the recipien
 1. 编辑相关的投放，然后单击&#x200B;**[!UICONTROL To]**&#x200B;链接。
 1. 单击&#x200B;**[!UICONTROL Control group]**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL Enable and edit control group configuration]**。
 
-   ![](assets/enable-control-group-for-a-delivery.png)
+   ![Select target对话框，“控制组”选项卡，已选中“启用和编辑控制组配置”和“编辑”链接](assets/enable-control-group-for-a-delivery.png)
 
 1. 单击&#x200B;**[!UICONTROL Edit...]**&#x200B;配置控制组。
 
-[此部分](#extract-the-control-group-from-the-main-target)中详细描述了整个过程。
+[从主目标提取控制组](#extract-the-control-group-from-the-main-target)中详细介绍了完整的过程。
 
 ### 使用新群体作为对照组 {#add-a-population}
 
@@ -242,17 +242,17 @@ To build the delivery target, you can define filtering criteria for the recipien
 
 此群体可以来自收件人列表，也可以通过特定查询对其进行定义。
 
-![](assets/new-population-as-control-group.png)
+![突出显示了“额外填充”部分的控制填充对话框：控制组列表和动态条件](assets/new-population-as-control-group.png)
 
 >[!NOTE]
 >
->Adobe Campaign查询编辑器出现在[此部分](../../v8/start/query-editor.md)中。
+>Adobe Campaign查询编辑器出现在[使用查询编辑器](../../v8/start/query-editor.md)中。
 
 ### 从主目标中提取控制组 {#extract-the-control-group-from-the-main-target}
 
 您还可以从投放的主目标中提取收件人。 在这种情况下，收件人将从受此配置影响的投放操作目标中获取。 此提取可能是随机的，也可能是对收件人排序的结果。
 
-![](assets/extract-control-group-from-target.png)
+![控制填充对话框，其中仅在目标提取部分中选择排序后保留第一笔记录](assets/extract-control-group-from-target.png)
 
 要提取控制组，请为活动或投放启用控制组，然后选择以下选项之一： **[!UICONTROL Activate random sampling]**&#x200B;或&#x200B;**[!UICONTROL Keep only the first records after sorting]**。
 
@@ -261,7 +261,7 @@ To build the delivery target, you can define filtering criteria for the recipien
 
 单击&#x200B;**[!UICONTROL Next]**&#x200B;以定义排序顺序（如有必要）并选择收件人限制模式。
 
-![](assets/limit-control-group.png)
+![控制填充限制步骤，其中百分比形式的大小设置为5.00，并且使用固定大小和按数据分组选项](assets/limit-control-group.png)
 
 此配置相当于工作流中的&#x200B;**[!UICONTROL Split]**&#x200B;活动，可让您将目标划分为子集。 控制组是上述子组之一。
 

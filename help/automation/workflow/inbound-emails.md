@@ -23,9 +23,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '382'
 ht-degree: 1%
 ---
 # 入站电子邮件{#inbound-emails}
@@ -34,7 +34,7 @@ ht-degree: 1%
 
 通过&#x200B;**入站电子邮件**&#x200B;活动，可从POP3邮件服务器下载和处理电子邮件。
 
-![](assets/email_rec_edit_1.png)
+![包含POP3服务器、外部帐户和脚本字段的入站电子邮件活动对话框](assets/email_rec_edit_1.png)
 
 **入站电子邮件**&#x200B;活动的第一个选项卡允许您输入POP3服务器的参数，并输入在收到每封邮件时要执行的脚本。 第二个选项卡用于为活动分配计划，第三个选项卡用于定义活动到期条件。
 
@@ -46,7 +46,7 @@ ht-degree: 1%
 
      如果未选择此选项，则必须指定以下参数：
 
-     ![](assets/email_rec_edit_1b.png)
+     包含POP3服务器、POP3帐户、密码和端口字段的![POP3服务器部分](assets/email_rec_edit_1b.png)
 
      * **[!UICONTROL POP3 server]**
 
@@ -91,6 +91,6 @@ ht-degree: 1%
 
    您可以通过&#x200B;**[!UICONTROL Expiration]**&#x200B;选项卡定义到期延迟。
 
-   ![](assets/email_rec_edit_3.png)
+   ![入站电子邮件过期选项卡，过期类型列表显示延迟和过期选项](assets/email_rec_edit_3.png)
 
    配置与计划活动相同。 请参阅[过期时间](define-approvals.md)。

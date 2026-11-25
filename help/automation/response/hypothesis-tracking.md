@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
     internal-label: Measurement
-source-git-commit: c8cb0f8a3f752a46fae533c8fd0608aa4545d37c
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 1%
+source-wordcount: '534'
+ht-degree: 0%
 ---
 # 假设验证跟踪{#hypothesis-tracking}
 
@@ -50,7 +50,7 @@ ht-degree: 1%
 
 计算假设验证后，会自动更新多个衡量指标。 这些在假设验证的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中可用。
 
-![](assets/response_hypothesis_delivery_example_010.png)
+已完成的假设验证的![常规选项卡，其中由假设验证计算的指标突出显示。](assets/response_hypothesis_delivery_example_010.png)
 
 这些指标包括：
 
@@ -62,7 +62,7 @@ ht-degree: 1%
 
 有关指示器的完整列表，请单击&#x200B;**[!UICONTROL Display the list]**&#x200B;链接：
 
-![](assets/response_hypothesis_indicators_002.png)
+![从显示列表中打开的指示器只读窗口，显示指示器及其值的完整列表。](assets/response_hypothesis_indicators_002.png)
 
 指标提供以下信息：
 
@@ -86,9 +86,9 @@ ht-degree: 1%
 您可以通过&#x200B;**[!UICONTROL Reactions]**&#x200B;选项卡查看收件人对假设的反应。
 
 1. 假设验证计算完成后，转到Adobe Campaign树的&#x200B;**[!UICONTROL Campaign management > Measurement hypotheses]**&#x200B;节点。
-1. 选择所需的假设验证，然后单击&#x200B;**[!UICONTROL Reactions]**&#x200B;选项卡以查看营销活动后可能购买产品的收件人列表。
+1. Select所需的假设验证，然后单击&#x200B;**[!UICONTROL Reactions]**&#x200B;选项卡以查看营销活动后可能购买产品的收件人列表。
 
-   ![](assets/response_hypothesis_reactions_001.png)
+   假设验证的回应选项卡，其中列出了回应者以及每个回应是否属于控制组。![&#128279;](assets/response_hypothesis_reactions_001.png)
 
 ## 报告 {#reports}
 
@@ -96,8 +96,8 @@ ht-degree: 1%
 
 * **在营销活动级别**：单击相关营销活动的&#x200B;**[!UICONTROL Reports]**&#x200B;链接并选择&#x200B;**[!UICONTROL Hypothesis report]**。 此报表包含活动投放的列表以及为每个投放计算的假设。
 
-  ![](assets/response_hypothesis_campaign_report_001.png)
+  ![营销活动级别的假设分析报告列出了为每个投放计算的假设及其指标。](assets/response_hypothesis_campaign_report_001.png)
 
 * **在投放级别**：要访问报告，请打开相关的投放，单击&#x200B;**[!UICONTROL Summary]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Reports]**&#x200B;并选择&#x200B;**[!UICONTROL Hypothesis report]**。 如果为同一投放计算了多个假设，则报表将包含所有假设。
 
-  ![](assets/response_hypothesis_delivery_report_001.png)
+  ![投放级别的假设验证报告，显示假设验证详细信息、状态和计算指标。](assets/response_hypothesis_delivery_report_001.png)

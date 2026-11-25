@@ -25,10 +25,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 3%
+source-wordcount: '149'
+ht-degree: 2%
 ---
 # 编辑架构{#edit-schema}
 
@@ -38,10 +38,10 @@ ht-degree: 3%
 
 此活动不更改工作表中的数据，只更改其架构，即数据的逻辑视图。
 
-![](assets/wf_manipulation_box.png)
+![使用输出列和表达式编辑架构活动，包括使用Avg](assets/wf_manipulation_box.png)计算的订单平均列
 
 您还可以通过&#x200B;**[!UICONTROL Links]**&#x200B;选项卡创建与其他工作表的联接。
 
-![](assets/wf_manipulation_box_link_tab.png)
+使用“链接定义”对话框编辑架构的“链接”选项卡，显示目标架构和连接条件](assets/wf_manipulation_box_link_tab.png)![
 
 下面的部分允许您配置连接条件的列表，即用于协调来自两个表的数据的标准。

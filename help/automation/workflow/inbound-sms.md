@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 6%
+source-wordcount: '146'
+ht-degree: 4%
 ---
 # 入站短信{#inbound-sms}
 
@@ -41,15 +41,15 @@ ht-degree: 6%
 
 ## 属性 {#properties}
 
-![](assets/sms_rec_edit.png)
+![包含外部帐户字段、要处理链接的筛选消息和脚本区域的入站SMS活动。](assets/sms_rec_edit.png)
 
 **入站SMS**&#x200B;活动的第一个选项卡允许您输入SMS消息的路由参数，并输入接收每条消息时要执行的脚本。 第二个选项卡用于为活动分配计划，第三个选项卡用于定义活动的到期条件。
 
-1. **[!UICONTROL SMS routing]**：选择要用于短信恢复的外部帐户。 通过树的&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;节点配置外部帐户。 [了解详情](../../v8/config/external-accounts.md)
+1. **[!UICONTROL SMS routing]**： Select用于短信恢复的外部帐户。 通过树的&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;节点配置外部帐户。 [了解详情](../../v8/config/external-accounts.md)
 1. **[!UICONTROL Script]**
 1. **[!UICONTROL Schedule]**
 
-   ![](assets/sms_rec_edit_2.png)
+   ![入站SMS计划选项卡，计划执行已选中，一旦收到SMS则停止计划。](assets/sms_rec_edit_2.png)
 
 1. **[!UICONTROL Expiration]**
 

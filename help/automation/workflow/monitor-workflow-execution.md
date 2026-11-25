@@ -32,16 +32,16 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '2288'
 ht-degree: 2%
 ---
 # 监测工作流执行 {#monitoring-workflow-execution}
 
 本节介绍如何监测工作流的执行情况。
 
-[本节](workflow-supervision.md#supervising-workflows)中还提供了有关如何创建工作流以允许您监视一组“已暂停”、“已停止”或“出现错误”的工作流状态的用例。
+[中还提供了有关如何创建工作流的用例，该工作流允许您监视一组“已暂停”、“已停止”或“出现错误”的工作流的状态：用例：监督您的工作流](workflow-supervision.md#supervising-workflows)。
 
 此外，实例的管理员可以使用&#x200B;**审核跟踪**&#x200B;来检查活动和上次对工作流所做的修改，以及工作流的状态。 在此[页面](../../v8/reporting/audit-trail.md){target="_blank"}中了解有关审核追踪的详细信息。
 
@@ -51,23 +51,23 @@ ht-degree: 2%
 
 通过&#x200B;**[!UICONTROL Display progress information]**&#x200B;图标，可在执行屏幕中显示状态和活动结果。
 
-![](assets/s_user_segmentation_toolbar_progr.png)
+![在工作流工具栏中显示晋升信息图标](assets/s_user_segmentation_toolbar_progr.png)
 
 选择此选项时，已执行的活动以蓝色显示，待处理活动闪烁，警告以橙色显示，错误以红色显示。 此选项还显示叫客过渡中的活动结果，其后显示活动属性中定义的结果标签，如果超过一秒，则显示作业的持续时间
 
-![](assets/s_user_segmentation_results.png)
+![在活动的叫客过渡上显示结果计数和标签的工作流图表](assets/s_user_segmentation_results.png)
 
 ## 显示日志 {#displaying-logs}
 
 日志包含工作流的历史记录或审核跟踪。 它注册所有用户操作、执行的所有操作以及遇到的错误。 您可以：
 
-* 在详细信息中选择&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡。 此列表包含所有工作流消息。
+* 在&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡中Select详细信息。 此列表包含所有工作流消息。
 
-  ![](assets/new-workflow-display-log-tab.png)
+  ![工作流列表，带有所选工作流的“审核”选项卡，显示日志中的消息](assets/new-workflow-display-log-tab.png)
 
-* 按活动筛选日志消息。 为此，请单击图上方工具栏上的&#x200B;**[!UICONTROL Display the tasks and the log]**&#x200B;以显示图下方的&#x200B;**[!UICONTROL Log]**&#x200B;和&#x200B;**[!UICONTROL Tasks]**&#x200B;选项卡。 选择活动以查看所有相关消息。 此列表包含未选择活动时的所有消息。
+* 按活动筛选日志消息。 为此，请单击图上方工具栏上的&#x200B;**[!UICONTROL Display the tasks and the log]**&#x200B;以显示图下方的&#x200B;**[!UICONTROL Log]**&#x200B;和&#x200B;**[!UICONTROL Tasks]**&#x200B;选项卡。 Select是一种查看所有相关消息的活动。 此列表包含未选择活动时的所有消息。
 
-  ![](assets/new-workflow-display-log-activity.png)
+  ![已选择审批活动且针对该活动筛选了“日志”选项卡的工作流图表](assets/new-workflow-display-log-activity.png)
 
   >[!NOTE]
   >
@@ -75,7 +75,7 @@ ht-degree: 2%
 
 * 仅查看那些链接到给定任务的消息。 为此，请选择&#x200B;**[!UICONTROL Tasks]**&#x200B;选项卡，然后在图中选择活动以限制列表。 双击任务以显示信息；窗口中的最后一个选项卡包含日志。
 
-  ![](assets/new-workflow-display-tasks-activity.png)
+  ![工作流图，其中选定了“审批”活动且“任务”选项卡列出了其任务](assets/new-workflow-display-tasks-activity.png)
 
   通过&#x200B;**[!UICONTROL Details...]**&#x200B;按钮，可显示有关活动执行的所有其他信息。 例如，您可以查看验证运算符以及批准期间输入的注释（如果适用）。
 
@@ -89,7 +89,7 @@ ht-degree: 2%
 
   执行定向营销活动后，单击&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡以查看执行跟踪。
 
-  ![](assets/s_user_segmentation_journal.png)
+  ![日志中列出消息的工作流审核视图，其中包含日期、活动名称和消息](assets/s_user_segmentation_journal.png)
 
   将显示所有营销活动消息：执行的营销活动以及警告或错误。
 
@@ -97,19 +97,19 @@ ht-degree: 2%
 
   您还可以查看每个活动的执行日志和详细信息。 可通过两种方式来做到这一点：
 
-  1. 选择目标活动并单击&#x200B;**[!UICONTROL Display the tasks and the log]**&#x200B;图标。
+  1. Select目标活动，然后单击&#x200B;**[!UICONTROL Display the tasks and the log]**&#x200B;图标。
 
-     ![](assets/s_user_segmentation_show_logs.png)
+     ![在工作流工具栏中显示任务和日志图标](assets/s_user_segmentation_show_logs.png)
 
      图表的下部分显示两个选项卡：“日志”和“任务”。
 
      在图表中选定的活动在日志和任务列表中充当筛选器。
 
-     ![](assets/s_user_segmentation_logs.png)
+     ![工作流图，其下方有“日志”和“任务”选项卡，已针对所选活动进行筛选](assets/s_user_segmentation_logs.png)
 
   1. 右键单击目标活动并选择&#x200B;**[!UICONTROL Display logs]**。
 
-     ![](assets/s_user_segmentation_logs_menu.png)
+     ![突出显示显示日志选项的活动右键单击菜单](assets/s_user_segmentation_logs_menu.png)
 
      日志会显示在单独的窗口中。
 
@@ -117,7 +117,7 @@ ht-degree: 2%
 
 系统不会自动清除工作流历史记录：默认情况下会保留所有消息。 可通过&#x200B;**[!UICONTROL File > Actions]**&#x200B;菜单或单击列表上方工具栏中的&#x200B;**[!UICONTROL Actions]**&#x200B;按钮清除历史记录。 选择 **[!UICONTROL Purge history]**。 有关&#x200B;**[!UICONTROL Actions]**&#x200B;菜单中可用选项的详情，请参见[操作工具栏](start-a-workflow.md)部分。
 
-![](assets/purge_historique.png)
+![工作流列表的“操作”菜单，其中“清除历史记录”选项突出显示](assets/purge_historique.png)
 
 ## 工作表和工作流模式 {#worktables-and-workflow-schema}
 
@@ -131,31 +131,31 @@ ht-degree: 2%
 
 发生错误时，工作流将暂停，并且发生错误时执行的活动会以红色闪烁。 在工作流概述的&#x200B;**[!UICONTROL Monitoring]**&#x200B;选项卡 — **[!UICONTROL Workflows]**&#x200B;链接下，您可以仅显示有错误的工作流，如下所示。
 
-![](assets/wf-global-view_filter_only_errors.png)
+![监视选项卡，工作流页面具有已选择的状态下拉列表和失败选项](assets/wf-global-view_filter_only_errors.png)
 
 在Adobe Campaign Explorer中，工作流列表默认显示&#x200B;**[!UICONTROL Failed]**&#x200B;列。
 
-![](assets/wf-explorer_errors_col.png)
+浏览器中的![工作流列表，其中突出显示了失败列](assets/wf-explorer_errors_col.png)
 
 当工作流出错时，只要用户档案中列出了属于工作流监督组的操作员的电子邮件地址，该操作员就会收到电子邮件通知。 在工作流属性的&#x200B;**[!UICONTROL Supervisor(s)]**&#x200B;字段中选择此组。
 
-![](assets/wf-properties_select-supervisors.png)
+![工作流属性，“常规”选项卡，已选择“主管”字段列表和“工作流主管”](assets/wf-properties_select-supervisors.png)
 
 通知内容在&#x200B;**[!UICONTROL Workflow manager notification]**&#x200B;默认模板中配置：在工作流属性的&#x200B;**[!UICONTROL Execution]**&#x200B;选项卡中选择此模板。 通知显示错误工作流的名称和相关任务。
 
 通知示例：
 
-![](assets/wf-notification_error-msg.png)
+![指示工作流已停止的错误通知电子邮件，带有“单击此处”指向工作流详细信息的链接](assets/wf-notification_error-msg.png)
 
 利用链接，可在Web模式下访问Adobe Campaign客户端控制台，并在登录后处理错误工作流。
 
-![](assets/wf-notification_error-console.png)
+显示“工作流已失败”的![Web控制台页面，显示“启动工作流”和“停止”按钮](assets/wf-notification_error-console.png)
 
 可以配置工作流，使其在发生错误时不暂停并继续执行。 为此，请编辑工作流&#x200B;**[!UICONTROL Properties]**，然后在&#x200B;**[!UICONTROL Error management]**&#x200B;部分的&#x200B;**[!UICONTROL In case of error]**&#x200B;字段中选择&#x200B;**[!UICONTROL Ignore]**&#x200B;选项。 随后，您可以指定在流程暂停前可忽略的连续错误的数量。
 
 在这种情况下，错误任务将中止。 此模式特别适合用于稍后重新尝试营销活动（定期操作）的工作流。
 
-![](assets/wf_edit_properties_for_error_mgt.png)
+![工作流属性，“执行”选项卡，“错误管理”部分，如果错误设置为“忽略”](assets/wf_edit_properties_for_error_mgt.png)
 
 >[!NOTE]
 >
@@ -187,15 +187,15 @@ ht-degree: 2%
 
 要访问此页面，请转到&#x200B;**[!UICONTROL Monitoring]**&#x200B;选项卡并单击&#x200B;**[!UICONTROL General view]**&#x200B;链接。
 
-![](assets/wf-monitoring_from-homepage.png)
+![监控实例页面，其中包含进程列表以及工作流和投放面板](assets/wf-monitoring_from-homepage.png)
 
 要显示所有工作流，请单击&#x200B;**[!UICONTROL Workflows]**&#x200B;链接。 使用下拉列表根据工作流在平台中的状态显示工作流。
 
-![](assets/wf-monitoring_edit-wf.png)
+![监视选项卡的工作流页面，带有状态下拉列表且已选择失败](assets/wf-monitoring_edit-wf.png)
 
 单击发生错误的工作流上的链接，以打开工作流并查看其日志。
 
-![](assets/wf-monitoring_edit-task-wf.png)
+![从列表中打开了失败的工作流，显示了其与失败活动的关系图及其日志消息](assets/wf-monitoring_edit-task-wf.png)
 
 ## 防止同时执行多个操作 {#preventing-simultaneous-multiple-executions}
 
@@ -207,17 +207,17 @@ ht-degree: 2%
 
 一般原则是：
 
-![](assets/workflow-reentrancy-protection-principle.png)
+![锁定原则：如果已设置锁定，则跳过；如果未设置，则放置锁定，运行受保护的步骤，然后释放锁定](assets/workflow-reentrancy-protection-principle.png)
 
 解决方案是使用实例变量。 实例变量由工作流的所有并行执行共享。
 
 下面是一个简单的测试工作流程：
 
-![](assets/wkf_simultaneous_execution1.png)
+![具有调度程序的工作流、名为continue的测试活动、等待活动和两个结束活动](assets/wkf_simultaneous_execution1.png)
 
 **[!UICONTROL Scheduler]**&#x200B;每分钟触发一次事件。 以下&#x200B;**[!UICONTROL Test]**&#x200B;活动将测试&#x200B;**isRunning**&#x200B;实例变量以确定是否继续执行操作：
 
-![](assets/wkf_simultaneous_execution2.png)
+![测试状态为yes condition ！instance.vars.isRunning且默认分支标记为no](assets/wkf_simultaneous_execution2.png)的活动
 
 >[!NOTE]
 >
@@ -279,7 +279,7 @@ Campaign Classic界面允许您使用预定义的&#x200B;**视图**&#x200B;监�
 * **[!UICONTROL Failed]**：列出所有失败的工作流。
 * ** ).
 
-![](assets/workflow-monitoring-views.png)
+![资源管理器树，“管理”>“审核”>“工作流状态”节点，其视图为“正在运行”、“开始挂起”、“已暂停”和“失败”](assets/workflow-monitoring-views.png)
 
 默认情况下，这些视图可在&#x200B;**[!UICONTROL Audit]**&#x200B;文件夹中访问。 但是，您可以在文件夹树中选择的位置重新创建它们。 这样，它们就可供没有管理权限的标准用户使用。
 
@@ -287,7 +287,7 @@ Campaign Classic界面允许您使用预定义的&#x200B;**视图**&#x200B;监�
 
 1. 右键单击要添加视图的文件夹。
 1. 在&#x200B;**[!UICONTROL Add new folder]** / **[!UICONTROL Administration]**&#x200B;中，选择要添加的视图。
-1. 将文件夹添加到树后，请确保将其配置为视图，以便显示所有工作流，无论其原始文件夹是什么。 有关如何配置视图的详细信息，请参阅[此页面](../../v8/audiences/folders-and-views.md#turn-a-folder-to-a-view)。
+1. 将文件夹添加到树后，请确保将其配置为视图，以便显示所有工作流，无论其原始文件夹是什么。 有关如何配置视图的详细信息，请参阅[将文件夹转换为视图](../../v8/audiences/folders-and-views.md#turn-a-folder-to-a-view)。
 
 除了这些视图，您还可以设置过滤器文件夹，以允许您根据工作流的执行状态筛选工作流列表。 操作步骤：
 
@@ -295,6 +295,6 @@ Campaign Classic界面允许您使用预定义的&#x200B;**视图**&#x200B;监�
 1. 配置过滤器，使工作流的&#x200B;**[!UICONTROL @status]**&#x200B;字段等于您选择的状态。
 1. 保存并命名过滤器。 然后，即可直接从过滤器列表中访问它。
 
-![](assets/workflow-monitoring-filter.png)
+![条件实际状态(@status)等于“已暂停”且保存图标突出显示的高级过滤器对话框](assets/workflow-monitoring-filter.png)
 
 有关更多信息，请参阅以下章节：

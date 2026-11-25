@@ -22,10 +22,10 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1835'
-ht-degree: 4%
+source-wordcount: '2149'
+ht-degree: 3%
 ---
 # 拆分{#split}
 
@@ -37,9 +37,9 @@ ht-degree: 4%
 >
 >不能对具有不同源的表执行拆分操作。 为此，您需要在&#x200B;**拆分**&#x200B;活动之前添加&#x200B;**扩充**&#x200B;活动。
 
-* 有关正在使用的拆分活动的示例，请参阅[此部分](targeting-workflows.md#create-subsets-using-the-split-activity)。
-* [此部分](cross-channel-delivery-workflow.md)中介绍了如何使用拆分活动通过筛选条件将目标分段为不同群体的示例。
-* [此部分](javascript-scripts-and-templates.md)中提供了如何在拆分活动中使用实例变量的示例。
+* 有关正在使用的拆分活动的示例，请参阅[使用拆分活动创建子集](targeting-workflows.md#create-subsets-using-the-split-activity)。
+* [跨渠道投放工作流](cross-channel-delivery-workflow.md)中介绍了如何使用拆分活动通过筛选条件将目标分段为不同群体的示例。
+* [JavaScript脚本和模板](javascript-scripts-and-templates.md)中提供了说明如何在拆分活动中使用实例变量的示例。
 
 要配置此活动，请在&#x200B;**[!UICONTROL Subsets]**&#x200B;选项卡中定义子集内容和标签，然后在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中选择目标维度。
 
@@ -50,7 +50,7 @@ ht-degree: 4%
 1. 单击匹配字段中的标签，然后选择要应用的过滤器。
 1. 要筛选入站群体，请选择&#x200B;**[!UICONTROL Add a filtering condition]**&#x200B;选项并单击&#x200B;**[!UICONTROL Edit...]**&#x200B;链接。
 
-   选择要应用于要包含在此集中的数据的过滤器类型。
+   Select要应用于数据以包含在此集中的过滤器的类型。
 
    该进程与&#x200B;**查询**&#x200B;类型的活动相同。
 
@@ -62,11 +62,11 @@ ht-degree: 4%
 
    向导允许您为此子集的记录选择模式。 [了解详情](#limit-the-number-of-subset-records)。
 
-   ![](assets/s_user_segmentation_partage4.png)
+   ![带有子集1的子集选项卡，限制所选记录以及打开限制向导的编辑链接](assets/s_user_segmentation_partage4.png)
 
 1. 如果您愿意，可以使用&#x200B;**[!UICONTROL Add]**&#x200B;按钮&#x200B;**添加其他子集**。
 
-   ![](assets/s_user_segmentation_partage_add.png)
+   ![带有“添加”按钮的“子集”选项卡，以及位于底部的“子集1”、“子集2”和“子集3”选项卡](assets/s_user_segmentation_partage_add.png)
 
    >[!NOTE]
    >
@@ -74,7 +74,7 @@ ht-degree: 4%
 
    对于创建的每个子集，将向拆分活动添加叫客过渡。
 
-   ![](assets/s_user_segmentation_partage_add2.png)
+   ![拆分活动，每个子集具有一个叫客过渡：子集1、子集2和子集3](assets/s_user_segmentation_partage_add2.png)
 
    您可以选择生成单个叫客过渡（例如使用段代码标识集）：为此，请在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Generate subsets in the same table]**&#x200B;选项。
 
@@ -85,7 +85,7 @@ ht-degree: 4%
 如果不希望使用子集中包含的整个群体，则可以限制它包含的记录数。
 
 1. 在子集编辑窗口中，选中&#x200B;**[!UICONTROL Limit the selected records]**&#x200B;选项并单击&#x200B;**[!UICONTROL Edit...]**&#x200B;链接。
-1. 为您的选择选择限制类型：
+1. Select您选择的限制类型：
 
    * **[!UICONTROL Activate random sampling]**：此选项接受记录的随机样本。 应用的随机取样类型取决于数据库引擎。
    * **[!UICONTROL Keep only the first records after sorting]**：此选项允许您根据一个或多个排序顺序定义限制。 如果您选择&#x200B;**[!UICONTROL Age]**&#x200B;字段作为排序条件，选择100作为限制，则仅保留100个最年轻的收件人。
@@ -93,15 +93,15 @@ ht-degree: 4%
 
      例如，如果选择&#x200B;**[!UICONTROL Age]**&#x200B;字段作为排序条件，然后定义限制100，但数据库中2000个最年轻的收件人全部为18个，则会从这2000个收件人中随机选择100个收件人。
 
-   ![](assets/s_user_segmentation_partage_wz1.png)
+   ![限制向导步骤的类型：随机抽样、排序后的第一个记录或排序后的第一个记录（标准，随机）](assets/s_user_segmentation_partage_wz1.png)
 
 1. 如果要定义排序标准，还可以通过附加步骤定义列和排序顺序。
 
-   ![](assets/s_user_segmentation_partage_wz1.1.png)
+   ![使用定位和筛选维度对向导步骤进行排序，并对列进行排序。创建日期和公司，降序](assets/s_user_segmentation_partage_wz1.1.png)
 
 1. 然后选择数据限制方法。
 
-   ![](assets/s_user_segmentation_partage_wz2.png)
+   ![已选择大小（以%为单位）并将其设置为10.00的限制向导步骤，以及其他数据限制选项](assets/s_user_segmentation_partage_wz2.png)
 
    可通过多种方法做到这一点：
 
@@ -125,15 +125,15 @@ ht-degree: 4%
 
 1. 选择数据限制值后，选择&#x200B;**[!UICONTROL By data grouping]**&#x200B;或&#x200B;**[!UICONTROL By data grouping (as a %)]**&#x200B;并单击&#x200B;**[!UICONTROL Next]**。
 
-   ![](assets/s_user_segmentation_partage_wz3.png)
+   ![选择按数据分组并提示单击“下一步”以输入其他信息的限制向导步骤](assets/s_user_segmentation_partage_wz3.png)
 
 1. 然后选择分组字段（实例的&#x200B;**[!UICONTROL Language]**&#x200B;字段）并单击&#x200B;**[!UICONTROL Next]**。
 
-   ![](assets/s_user_segmentation_partage_wz4.png)
+   ![数据分组向导步骤，将“语言”字段列为分组表达式](assets/s_user_segmentation_partage_wz4.png)
 
 1. 最后，指定数据分组阈值（使用固定值或百分比，具体取决于之前选择的分组方法）。 要为每个值设置相同的阈值，例如，如果您希望将每种语言的记录数设置为10，请选择&#x200B;**[!UICONTROL All data groupings are the same size]**&#x200B;选项。 要为每个值设置不同的限制，请选择&#x200B;**[!UICONTROL Limitations by grouping value]**&#x200B;选项。 这将允许您为英语、法语等语言选择不同的限制。
 
-   ![](assets/s_user_segmentation_partage_wz5.png)
+   ![具有所有数据分组的数据分组步骤为选定相同大小且值为8](assets/s_user_segmentation_partage_wz5.png)
 
 1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;以批准该限制并返回编辑拆分活动。
 
@@ -141,9 +141,9 @@ ht-degree: 4%
 
 如果分组字段包含的值过多，或者希望避免为每个新的拆分活动重置值，则可以使用Adobe Campaign根据数据分布创建限制。 在选择[数据限制值](#create-subsets)部分)时，请选择&#x200B;**[!UICONTROL By data distribution]**&#x200B;选项，然后从下拉菜单中选择模板。 下面演示了如何创建数据分发模板。
 
-有关带有分发模板的&#x200B;**[!UICONTROL Local approval]**&#x200B;活动的示例，请参阅[此页面](local-approval-activity.md)。
+有关具有分发模板的&#x200B;**[!UICONTROL Local approval]**&#x200B;活动的示例，请参阅[使用本地审批活动](local-approval-activity.md)。
 
-![](assets/s_user_segmentation_partage_wz6.png)
+![选择按数据分发并将模板分发应用于收件人的限制向导步骤](assets/s_user_segmentation_partage_wz6.png)
 
 >[!CAUTION]
 >
@@ -153,11 +153,11 @@ ht-degree: 4%
 
 1. 要创建数据分发模板，请转到&#x200B;**[!UICONTROL Resources > Campaign management > Data distribution]**&#x200B;节点并单击&#x200B;**[!UICONTROL New]**。
 
-   ![](assets/local_validation_data_distribution_1.png)
+   ![资源管理器，在“资源和营销活动管理”下具有“数据”分发节点，并具有“新建”按钮](assets/local_validation_data_distribution_1.png)
 
 1. **[!UICONTROL General]**&#x200B;选项卡允许您输入分发的标签和执行上下文（定向维度、分发字段）。
 
-   ![](assets/local_validation_data_distribution_2.png)
+   ![具有定向维度、分发字段、分发类型和审批存储的“数据分发常规”选项卡](assets/local_validation_data_distribution_2.png)
 
    需要输入以下字段：
 
@@ -171,7 +171,7 @@ ht-degree: 4%
 
 1. 如果您使用[本地审批](local-approval.md)活动，请输入分发模板的&#x200B;**[!UICONTROL Advanced settings]**：
 
-   ![](assets/local_validation_data_distribution_3.png)
+   ![高级参数，带有批准目标消息、投放标签、分组字段和Web界面设置](assets/local_validation_data_distribution_3.png)
 
    需要输入以下字段：
 
@@ -181,21 +181,21 @@ ht-degree: 4%
      >
      >此选项默认处于选中状态。
 
-     ![](assets/local_validation_notification.png)
+     ![要审批的收件人的审批通知列表，每个列表都有一个以红色突出显示的复选框](assets/local_validation_notification.png)
 
    * **[!UICONTROL Delivery label]**：允许您定义一个表达式，以在退货通知中显示交货标签。 默认表达式提供有关投放标准标签（计算字符串）的信息。 您可以修改此表达式。
 
-     ![](assets/local_validation_notification_3.png)
+     ![带有显示投放标签的投放行的投放反馈通知，以红色突出显示](assets/local_validation_notification_3.png)
 
    * **[!UICONTROL Grouping field]**：此字段允许您定义用于在审批和返回通知中显示收件人的分组。
 
-     ![](assets/local_validation_notification_4.png)
+     ![收件人分组在红色高亮显示的男性标题和女性标题下的审批列表](assets/local_validation_notification_4.png)
 
    * **[!UICONTROL Web Interface]**：允许您将Web应用程序链接到收件人列表。 在批准和返回通知中，每个收件人都将可点击，并将链接到选定的Web应用程序。 **[!UICONTROL Parameters]**&#x200B;字段（例如&#x200B;**[!UICONTROL recipientId]**）允许您配置要在URL和Web应用程序中使用的其他参数。
 
 1. **[!UICONTROL Breakdown]**&#x200B;选项卡允许您定义分发值列表。
 
-   ![](assets/local_validation_data_distribution_4.png)
+   ![划分选项卡列出分发字段值及其百分比、标签和组或运算符](assets/local_validation_data_distribution_4.png)
 
    * **[!UICONTROL Value]**：输入分布值。
    * **[!UICONTROL Percentage / Set]**：输入链接到每个值的记录限制（固定或百分比）。
@@ -213,13 +213,13 @@ ht-degree: 4%
 
 ## 过滤参数 {#filtering-parameters}
 
-单击&#x200B;**[!UICONTROL General]**&#x200B;选项卡以输入活动标签。 为此拆分选择目标和筛选维度。 如有必要，可以更改给定子集的这些维度。
+单击&#x200B;**[!UICONTROL General]**&#x200B;选项卡以输入活动标签。 为此拆分Select目标和筛选器维度。 如有必要，可以更改给定子集的这些维度。
 
-![](assets/s_user_segmentation_partage_general.png)
+![带有定位和筛选维度的拆分活动的“常规”选项卡，以及已选中“生成补码”选项](assets/s_user_segmentation_partage_general.png)
 
 如果要利用剩余群体，请选中&#x200B;**[!UICONTROL Generate complement]**&#x200B;选项。 补充是集客目标减去子集的并集。 然后，将向活动添加其他叫客过渡，如下所示：
 
-![](assets/s_user_segmentation_partage_compl.png)
+![具有叫客过渡的分割活动子集1、子集2、子集3和一个附加补码过渡](assets/s_user_segmentation_partage_compl.png)
 
 要使此选项正常工作，集客数据必须具有主键。
 

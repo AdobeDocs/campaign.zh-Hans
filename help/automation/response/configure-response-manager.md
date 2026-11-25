@@ -33,9 +33,9 @@ topic_v2:
     internal-label: Measurement
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: c8cb0f8a3f752a46fae533c8fd0608aa4545d37c
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '820'
 ht-degree: 0%
 ---
 # 配置Campaign响应管理器{#configuration}
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 完成配置后，以下架构显示不同表之间的联接：
 
-![](assets/response_data_model.png)
+![响应表的数据模型：投放、投放日志、测量假设和链接到反应的收件人](assets/response_data_model.png)
 
 ### 响应管理和收件人 {#response-management-with-adobe-campaign-recipients}
 
@@ -89,17 +89,17 @@ ht-degree: 0%
 1. 通过Adobe Campaign资源管理器，选择&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**。
 1. 右键单击&#x200B;**收件人**，然后选择&#x200B;**[!UICONTROL Actions]**&#x200B;和&#x200B;**[!UICONTROL Modify the options of the targeting dimensions]**。
 
-   ![](assets/delivery_mapping1.png)
+   ![打开“操作”菜单并修改所选定向维度的选项的目标映射列表](assets/delivery_mapping1.png)
 
 1. 您可以在下一个窗口中个性化&#x200B;**[!UICONTROL Extension namespace]**，然后单击&#x200B;**[!UICONTROL Next]**。
 
-   ![](assets/delivery_mapping2.png)
+   具有扩展命名空间和扩展架构字段后缀的定位维度选项的![存储步骤](assets/delivery_mapping2.png)
 
 1. 在&#x200B;**[!UICONTROL Response management]**&#x200B;类别中，确保选中&#x200B;**[!UICONTROL Generate a storage schema for reactions]**&#x200B;框。
 
    然后单击&#x200B;**[!UICONTROL Define additional fields...]**&#x200B;选择相关的事务表并将所需字段添加到nms:remaMatchRcp架构的扩展中。
 
-   ![](assets/delivery_mapping3.png)
+   ![扩展步骤，带有为检查的反应生成存储架构和反应架构的扩展对话框](assets/delivery_mapping3.png)
 
 创建的架构如下所示：
 

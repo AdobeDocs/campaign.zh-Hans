@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 15%
+source-wordcount: '153'
+ht-degree: 11%
 ---
 # 跳转（开始点和结束点）{#jump-start-point-and-end-point}
 
@@ -36,12 +36,12 @@ ht-degree: 15%
 
 它们从一个活动转到另一个活动，如以下示例所示：
 
-![](assets/s_user_segmentation_jump_sample.png)
+![开始点跳转的工作流将较长的过渡替换为两个结束点跳转，从而提供合并和重复数据删除。](assets/s_user_segmentation_jump_sample.png)
 
 对于每个“起点”类型的过渡，必须定位“终点”类型的过渡。
 
 可在同一工作流中插入多个起点和终点跳转。 它们由必须在参数中输入的数字标识：
 
-![](assets/s_user_segmentation_jump_in.png)
+![跳转（起点）活动，标签字段和跳转编号字段设置为1。](assets/s_user_segmentation_jump_in.png)
 
 为了提高图的可读性，您可以更改与跳转关联的图像以显示相关编号。 查看[更改活动图像](change-activity-images.md)。

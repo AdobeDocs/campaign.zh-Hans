@@ -17,9 +17,9 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '279'
 ht-degree: 2%
 ---
 # 工作流生命周期 {#workflow-life-cycle}
@@ -42,7 +42,7 @@ ht-degree: 2%
 
 例如，在下面的工作流中闪烁&#x200B;**批准**&#x200B;活动时，列出了&#x200B;**开始**&#x200B;和&#x200B;**投放**&#x200B;活动。
 
-![](assets/new-workflow-6.png)
+![工作流中概述了“开始”和“交付”活动并运行了“审批”活动，然后是“交付控制”和“结束”](assets/new-workflow-6.png)
 
 这意味着前两个活动已成功执行，并且正在审批，即已创建但尚未完成。
 
@@ -50,4 +50,4 @@ ht-degree: 2%
 
 工作流已启动，正在等待属于&#x200B;**审批**&#x200B;活动中指定的组的操作员做出决定。 将通知属于该组且拥有电子邮件地址或手机号码的操作员。
 
-有关如何监视工作流的详细信息，请参阅[此部分](monitor-workflow-execution.md)。
+有关如何监视工作流的详细信息，请参阅[监视工作流执行](monitor-workflow-execution.md)。

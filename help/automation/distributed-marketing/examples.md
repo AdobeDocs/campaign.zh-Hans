@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1626'
 ht-degree: 0%
 ---
 # 分布式营销示例{#distributed-marketing-samples}
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 创建营销活动模板时，请单击&#x200B;**[!UICONTROL Advanced campaign parameters...]**&#x200B;链接的&#x200B;**[!UICONTROL Web interface]**&#x200B;选项中的&#x200B;**[!UICONTROL Zoom]**&#x200B;图标以访问Web应用程序的详细信息。
 
-![](assets/mkg_dist_local_op_form1.png)
+![高级设置，分布式营销选项卡：突出显示“编辑”链接图标的Web界面字段。](assets/mkg_dist_local_op_form1.png)
 
 >[!NOTE]
 >
@@ -46,21 +46,21 @@ ht-degree: 0%
 
 在&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中，选择&#x200B;**促销活动订单**&#x200B;活动并将其打开以访问其内容。
 
-![](assets/mkg_dist_web_app1.png)
+![打开了促销活动订单页面活动的Web应用程序工作流，以显示其内容。](assets/mkg_dist_web_app1.png)
 
 在此示例中，**促销活动订单**&#x200B;活动包括：
 
 * 由本地实体在订单期间输入的字段，
 
-  ![](assets/mkg_dist_web_app2.png)
+  ![促销活动订单页字段（联系日期、首选渠道、年龄段、图像、消息）及其Web窗体。](assets/mkg_dist_web_app2.png)
 
 * 允许本地实体评估营销活动（如目标、预算、内容等）的链接，
 
-  ![](assets/mkg_dist_web_app3.png)
+  ![评估页面和Web窗体中的目标定位、预算评估和内容链接评估。](assets/mkg_dist_web_app3.png)
 
 * 用于计算和显示这些评估结果的脚本。
 
-  ![](assets/mkg_dist_web_app4.png)
+  ![页面树，其定位结果、预算结果和内容结果项突出显示。](assets/mkg_dist_web_app4.png)
 
 在此示例中，使用以下API：
 
@@ -101,7 +101,7 @@ ht-degree: 0%
 本地实体&#x200B;**的**
 
 1. 使用营销活动创建通知来访问中央实体选择的联系人列表。
-1. 选择联系人并批准参与率。
+1. Select联系人和批准参与率。
 
 中央实体的&#x200B;**：**
 
@@ -113,15 +113,15 @@ ht-degree: 0%
 
 1. 已选择参与活动的本地实体将收到电子邮件通知。
 
-   ![](assets/mkg_dist_use_case_target_valid8.png)
+   ![包含“访问您的联系人列表并批准定位”链接的目标审批电子邮件。](assets/mkg_dist_use_case_target_valid8.png)
 
 1. 通过单击&#x200B;**[!UICONTROL Access your contact list and approve targeting]**&#x200B;链接，授予本地实体访问为营销活动选择的客户端列表的权限（通过Web浏览器）。
 
-   ![](assets/mkg_dist_use_case_target_valid9.png)
+   ![目标审批网页列出了目标联系人，带有复选框和审批定位按钮。](assets/mkg_dist_use_case_target_valid9.png)
 
 1. 本地实体将从列表中取消选中某些联系人，因为自年初以来，已就类似的选件与他们进行了联系。
 
-   ![](assets/mkg_dist_use_case_target_valid10.png)
+   ![目标审批页面，取消选中三个联系人和说明删除的注释。](assets/mkg_dist_use_case_target_valid10.png)
 
 一旦检查获得批准，营销活动即可自动启动。
 
@@ -131,15 +131,15 @@ ht-degree: 0%
 
 1. 要设置协作营销活动（通过目标审批），您必须首先创建&#x200B;**[!UICONTROL Data distribution activity]**。 单击Campaign资源管理器&#x200B;**[!UICONTROL Resources > Campaign management > Data distribution]**&#x200B;文件夹中的&#x200B;**[!UICONTROL New]**&#x200B;图标。
 
-   ![](assets/mkg_dist_use_case_target_valid3.png)
+   ![数据分发常规选项卡：定向维度、分发字段来源、分配类型本地实体。](assets/mkg_dist_use_case_target_valid3.png)
 
 1. 在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，必须指定：
 
    * **[!UICONTROL Targeting dimension]**。 此处对&#x200B;**收件人**&#x200B;执行&#x200B;**数据分发**。
    * **[!UICONTROL Distribution type]**。 您可以选择&#x200B;**固定大小**&#x200B;或&#x200B;**大小（百分比**）。
-   * **[!UICONTROL Assignment type]**。 选择&#x200B;**本地实体**&#x200B;选项。
+   * **[!UICONTROL Assignment type]**。 Select **本地实体**&#x200B;选项。
    * **[!UICONTROL Distribution type]**。 在此，收件人表中存在&#x200B;**[!UICONTROL Origin (@origin)]**&#x200B;字段，用于识别联系人和本地实体之间的关系。
-   * **[!UICONTROL Approval storage]**&#x200B;字段。 选择&#x200B;**本地审批收件人**&#x200B;选项。
+   * **[!UICONTROL Approval storage]**&#x200B;字段。 Select **本地审批收件人**&#x200B;选项。
 
 1. 在&#x200B;**[!UICONTROL Breakdown]**&#x200B;选项卡中，指定：
 
@@ -147,7 +147,7 @@ ht-degree: 0%
    * 本地实体&#x200B;**[!UICONTROL label]**。
    * **[!UICONTROL Size]**（固定或百分比）。 **0默认值**&#x200B;涉及选择链接到本地实体的所有收件人。
 
-   ![](assets/mkg_dist_use_case_target_valid4.png)
+   ![数据分发划分选项卡列出了东、北、南、西分发值和本地实体。](assets/mkg_dist_use_case_target_valid4.png)
 
 1. 保存您的新数据分发。
 
@@ -156,7 +156,7 @@ ht-degree: 0%
 1. 从Campaign资源管理器的&#x200B;**[!UICONTROL Campaign management > Campaign]**&#x200B;文件夹中，创建一个新的&#x200B;**[!UICONTROL collaborative campaign (by target approval)]**。
 1. 在&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡中，为您的营销活动创建工作流。 该活动必须包含&#x200B;**Split**&#x200B;活动，其中&#x200B;**[!UICONTROL Record count limitation]**&#x200B;由&#x200B;**[!UICONTROL Data distribution]**&#x200B;活动定义。
 
-   ![](assets/mkg_dist_use_case_target_valid5.png)
+   ![使用本地实体分发将拆分活动记录计数限制设置为“按数据分发”。](assets/mkg_dist_use_case_target_valid5.png)
 
 1. 添加一个&#x200B;**[!UICONTROL Local approval]**&#x200B;操作，您可以在其中指定：
 
@@ -164,7 +164,7 @@ ht-degree: 0%
    * 审批提醒，
    * 营销活动的预期处理。
 
-   ![](assets/mkg_dist_use_case_target_valid7.png)
+   ![本地审批活动：本地实体的目标审批通知、审批类型、模板和描述。](assets/mkg_dist_use_case_target_valid7.png)
 
 1. 保存您的记录。
 
@@ -177,15 +177,15 @@ ht-degree: 0%
    * 在&#x200B;**手动**&#x200B;模式下，如果本地实体接受来自中央实体的邀请，则它们将参与营销活动。 如果他们想要并且需要经理的批准以确认其参与活动，则可以删除预选联系人。
    * 在&#x200B;**自动**&#x200B;模式下，本地实体必须参与该营销活动，除非它们从该营销活动中注销自身。 无需批准，他们即可删除联系人。
 
-   ![](assets/mkg_dist_use_case_target_valid.png)
+   ![活动包创建对话框，引用活动且“审批模式”字段设置为“手动”。](assets/mkg_dist_use_case_target_valid.png)
 
 1. 在&#x200B;**[!UICONTROL Description]**&#x200B;选项卡中，您可以添加营销活动的描述以及要发送到本地实体的任何文档。
 
-   ![](assets/mkg_dist_use_case_target_valid1.png)
+   ![带有包描述和附加文档列表的Campaign包描述选项卡。](assets/mkg_dist_use_case_target_valid1.png)
 
 1. 批准活动包，然后启动工作流以发布该包，并使其对包列表中的所有本地实体可用。
 
-   ![](assets/mkg_dist_use_case_target_valid2.png)
+   ![带有“批准包”按钮的包仪表板，显示正在编辑状态。](assets/mkg_dist_use_case_target_valid2.png)
 
 ## 创建协作活动（按表单） {#creating-a-collaborative-campaign--by-form-}
 
@@ -221,7 +221,7 @@ ht-degree: 0%
 
 1. 被选定参加营销活动的本地实体收到电子邮件通知，告知其参加营销活动。
 
-   ![](assets/mkg_dist_use_case_form_7.png)
+   ![使用注册本地实体的促销活动链接注册促销活动电子邮件。](assets/mkg_dist_use_case_form_7.png)
 
 1. 本地实体完成个性化表单，然后他们：
 
@@ -229,35 +229,35 @@ ht-degree: 0%
    * 预览投放内容，
    * 批准他们的参与。
 
-     ![](assets/mkg_dist_use_case_form_8.png)
+     ![带有评估链接、图像预览和“验证”按钮的Campaign订单Web表单。](assets/mkg_dist_use_case_form_8.png)
 
 1. 负责验证订单的操作员批准其参与。
 
-   ![](assets/mkg_dist_use_case_form_9.png)
+   ![包含订单详细信息、订单注释和“验证”按钮的Campaign订单审批页面。](assets/mkg_dist_use_case_form_9.png)
 
 ### 中央实体侧 {#central-entity-side-1}
 
 1. 要实施协作活动（按表单），您必须使用&#x200B;**协作活动（按表单）**&#x200B;模板创建活动。
 
-   ![](assets/mkg_dist_use_case_form_1.png)
+   ![使用协作营销活动（按表单）模板新建营销活动对话框。](assets/mkg_dist_use_case_form_1.png)
 
 1. 在营销活动的&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Advanced campaign parameters...]**&#x200B;链接以将其配置为本地营销活动。 请参阅[创建本地营销活动（按表单）](#creating-a-local-campaign--by-form-)。
 
-   ![](assets/mkg_dist_use_case_form_2.png)
+   ![高级设置，分布式营销选项卡：协作级别，可按表单配置，默认值。](assets/mkg_dist_use_case_form_2.png)
 
 1. 配置活动工作流和Web窗体。 请参阅[创建本地营销活动（按表单）](#creating-a-local-campaign--by-form-)。
 1. 通过指定执行计划和所涉及的本地实体来创建活动包。
 
-   ![](assets/mkg_dist_use_case_form_3.png)
+   ![包含引用营销活动、执行计划、截止日期和本地实体列表的Campaign包对话框。](assets/mkg_dist_use_case_form_3.png)
 
 1. 通过在&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中选择审批模式完成包配置。
 
-   ![](assets/mkg_dist_use_case_form_4.png)
+   ![审批模式下拉菜单提供手动和自动。](assets/mkg_dist_use_case_form_4.png)
 
 1. 在&#x200B;**[!UICONTROL Description]**&#x200B;选项卡中，您可以输入营销活动包说明、发布包时要发送到本地实体的通知消息，并将任何信息性文档附加到营销活动包。
 
-   ![](assets/mkg_dist_use_case_form_5.png)
+   ![带有通知电子邮件选项的“包描述”选项卡，包含本地实体和附加文档的消息。](assets/mkg_dist_use_case_form_5.png)
 
 1. 批准包以发布它。
 
-   ![](assets/mkg_dist_use_case_form_6.png)
+   ![Approve the package按钮使用Accept和Reject选项打开Action on package对话框。](assets/mkg_dist_use_case_form_6.png)

@@ -25,10 +25,10 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 9%
+source-wordcount: '436'
+ht-degree: 8%
 ---
 # SQL 代码和 JavaScript 代码{#sql-code-and-javascript-code}
 
@@ -36,7 +36,7 @@ ht-degree: 9%
 
 **[!UICONTROL SQL code]**&#x200B;活动执行SQL脚本。 脚本是JST模板。
 
-![](assets/sql_code.png)
+![SQL代码活动对话框，带有标签字段、SQL脚本编辑器和进程错误选项](assets/sql_code.png)
 
 * **[!UICONTROL Script]**
 
@@ -79,7 +79,7 @@ ht-degree: 9%
 
 ### JavaScript 代码 {#js-code-desc}
 
-![](assets/javascript_code.png)
+![JavaScript代码活动对话框，带有标签、停止执行后和脚本字段，以及进程错误选项](assets/javascript_code.png)
 
 * **[!UICONTROL Script]**：编辑器的中心区域包含要执行的脚本。
 
@@ -87,7 +87,7 @@ ht-degree: 9%
 
 ### 高级 JavaScript 代码 {#adv-js-code-desc}
 
-![](assets/advanced_javascript_code.png)
+![包含“首次调用”和“下次调用”脚本编辑器以及“确定”过渡的高级JavaScript代码活动](assets/advanced_javascript_code.png)
 
 * **[!UICONTROL First call]**：编辑器的第一个区域包含要在第一次调用期间执行的脚本。
 * **[!UICONTROL Next calls]**：编辑器的第二个区域包含要在下次调用期间执行的脚本。

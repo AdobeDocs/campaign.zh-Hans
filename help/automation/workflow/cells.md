@@ -30,24 +30,24 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 2%
+source-wordcount: '166'
+ht-degree: 1%
 ---
 # 单元格{#cells}
 
 **[!UICONTROL Cells]**&#x200B;活动将各种子集的视图作为数据列提供。 它有助于子集操作，并且还旨在利用个性化功能。
 
-![](assets/wf_split_cells.png)
+![单元格活动的“单元格”选项卡，列出子集1至3，具有筛选器、限制、排除和段代码列。](assets/wf_split_cells.png)
 
 此活动可配置为根据用户需求输入特定参数。 默认情况下，每个子集的详细信息通过&#x200B;**[!UICONTROL Cells]**&#x200B;和&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡在专用窗口中进行详细介绍。
 
-![](assets/wf_split_cells_with_customization.png)
+![突出显示了“详细信息”按钮的“单元格”选项卡，以打开所选子集的详细信息。](assets/wf_split_cells_with_customization.png)
 
 在下面的示例中，修改了输入表单：添加了&#x200B;**[!UICONTROL Data]**&#x200B;选项卡以启用每个子集的选件和优先级之间的关联。
 
-![](assets/cells-activity-sample.png)
+![包含自定义数据选项卡的子集详细信息，该选项卡包含段代码、优先级、单元格标识符和选件字段。](assets/cells-activity-sample.png)
 
 对于此配置，已将以下信息添加到Adobe Campaign资源管理器的&#x200B;**[!UICONTROL Administration > Configurations > Input forms]**&#x200B;节点的工作流表单中：
 

@@ -24,9 +24,9 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '559'
 ht-degree: 0%
 ---
 # 文件收集器{#file-collector}
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 **[!UICONTROL File collector]**&#x200B;活动的第一个选项卡允许您选择源目录，并在必要时筛选收集的文件。 其他选项卡在[入站电子邮件](inbound-emails.md)中详细介绍（**[!UICONTROL Schedule]**&#x200B;和&#x200B;**[!UICONTROL Expiry]**&#x200B;选项卡）。
 
-![](assets/file_collect_edit.png)
+![文件收集器的“目录”选项卡，其中的“目录”、“筛选条件”和“处理完文件后立即停止”选项](assets/file_collect_edit.png)
 
 1. **正在下载文件**
 
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 无法确定文件处理顺序。 要按顺序处理一组文件，请使用&#x200B;**[!UICONTROL Stop as soon as a file has been processed]**&#x200B;选项并创建一个循环。 在这种情况下，将按字母顺序处理文件。 **[!UICONTROL Process file nonexistence]**&#x200B;选项允许您完成迭代。
 
-![](assets/file_collect_loop.png)
+![工作流从“导入”循环回“文件”收集器，且警报活动处于“无文件”转换状态](assets/file_collect_loop.png)
 
 ## 输出参数 {#output-parameters}
 

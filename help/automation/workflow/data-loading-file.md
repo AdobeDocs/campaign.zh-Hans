@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '1110'
-ht-degree: 14%
+source-wordcount: '1287'
+ht-degree: 12%
 ---
 # 数据加载（文件）{#data-loading-file}
 
@@ -45,13 +45,13 @@ ht-degree: 14%
 
 >[!CAUTION]
 >
->仅支持“平面”结构文件（例如CSV、TXT等）。 不建议使用XML格式。 使用客户端控制台，您可以加载最大大小为150 MB的文件。 在Web用户界面中，加载文件活动的限制为50MB。 [了解详情](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html?lang=zh-Hans){target="_blank"}
+>仅支持“平面”结构文件（例如CSV、TXT等）。 不建议使用XML格式。 使用客户端控制台，您可以加载最大大小为150 MB的文件。 在Web用户界面中，加载文件活动的限制为50MB。 [了解详情](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html){target="_blank"}
 
-![](assets/s_advuser_wf_etl_file.png)
+![使用示例文件加载（文件）数据活动、列预览、文件名选项和拒绝管理。](assets/s_advuser_wf_etl_file.png)
 
-您可以定义在文件导入期间要执行的预处理过程，例如，不必在服务器上解压缩文件（从而节省解压缩文件的空间），而要在文件处理中包括解压缩。 选择&#x200B;**[!UICONTROL Pre-process the file]**&#x200B;选项并从3个选项中选择一个：**[!UICONTROL None]**、**[!UICONTROL Decompression]** (zcat)或&#x200B;**[!UICONTROL Decrypt]** (gpg)。
+您可以定义在文件导入期间要执行的预处理过程，例如，不必在服务器上解压缩文件（从而节省解压缩文件的空间），而要在文件处理中包括解压缩。 Select **[!UICONTROL Pre-process the file]**&#x200B;选项并从3个选项中选择一个：**[!UICONTROL None]**、**[!UICONTROL Decompression]** (zcat)或&#x200B;**[!UICONTROL Decrypt]** (gpg)。
 
-![](assets/preprocessing-dataloading.png)
+![数据加载（文件），对选定的文件进行预处理，命令列表： None、Decompression、Decrypt。](assets/preprocessing-dataloading.png)
 
 >[!IMPORTANT]
 >
@@ -63,7 +63,7 @@ ht-degree: 14%
 
 为此，请在&#x200B;**[!UICONTROL Data loading (file)]**&#x200B;活动的主窗口中选择&#x200B;**[!UICONTROL Click here to change the file format...]**。 随后将打开格式详细信息窗口。
 
-![](assets/file_loading_columns_format.png)
+![具有常规文件设置的文件格式窗口以及具有数据类型、允许NULL和长度的列表。](assets/file_loading_columns_format.png)
 
 然后，您可以修改文件的常规格式以及每列的格式。
 
@@ -108,7 +108,7 @@ ht-degree: 14%
 
 以下示例允许您每天在服务器上收集文件、加载其内容并根据其中包含的信息更新数据库中的数据。 要收集的文件包含客户的信息，这些客户可能购买了（3,000欧元或以下），要求购买退款，或没有购买任何东西就参观了商店。 根据此信息，各种进程将应用于数据库中其用户档案。
 
-![](assets/s_advuser_load_file_sample_0.png)
+![具有文件收集器、数据加载（文件）和拆分的工作流，导致四个按购买类型更新的数据活动。](assets/s_advuser_load_file_sample_0.png)
 
 1. 使用文件收集器，可根据指定的频率恢复存储在目录中的文件。
 
@@ -116,13 +116,13 @@ ht-degree: 14%
 
    [文件收集器](file-collector.md)部分中详细介绍了使用&#x200B;**[!UICONTROL File collector]**&#x200B;的情况。
 
-   ![](assets/s_advuser_load_file_sample_1.png)
+   ![文件收集器“目录”选项卡，带有服务器目录和客户文本文件的筛选器。](assets/s_advuser_load_file_sample_1.png)
 
    **[!UICONTROL Schedule]**&#x200B;选项卡允许您安排收集器的执行，即指定检查这些文件存在的频率。
 
    在这里，我们希望在每个工作日的晚上9点触发收集器。
 
-   ![](assets/s_advuser_load_file_sample_2.png)
+   ![文件收集器“计划”选项卡，已检查计划执行，每天9:00 PM触发程序，还有“更改”按钮。](assets/s_advuser_load_file_sample_2.png)
 
    为此，请单击编辑工具右下角的&#x200B;**[!UICONTROL Change...]**&#x200B;按钮并配置计划。
 
@@ -130,7 +130,7 @@ ht-degree: 14%
 
 1. 然后，配置数据加载（文件）活动以指示应如何读取收集的文件。 为此，请选择与要加载的文件具有相同结构的样例文件。
 
-   ![](assets/s_advuser_load_file_sample_3.png)
+   ![数据加载（文件）活动，其中包含示例文件以及事件、lastname、firstname和其他列的预览。](assets/s_advuser_load_file_sample_3.png)
 
    在此，文件包含五列：
 
@@ -143,15 +143,15 @@ ht-degree: 14%
 
    有关拆分活动的详情，请参阅一节。
 
-   ![](assets/s_advuser_load_file_sample_4.png)
+   ![拆分为无购买的子集，使用“编辑”链接打开一个查询，其中事件字段被选为表达式。](assets/s_advuser_load_file_sample_4.png)
 
    对于每个子集，在&#x200B;**Event**&#x200B;列中指定其中一个值。
 
-   ![](assets/s_advuser_load_file_sample_5.png)
+   ![子集的表达式事件(Event)等于0的查询筛选条件。](assets/s_advuser_load_file_sample_5.png)
 
    因此，**[!UICONTROL Split]**&#x200B;活动将包含以下信息：
 
-   ![](assets/s_advuser_load_file_sample_6.png)
+   ![拆分包含子集选项卡的活动，用于少于3000次的购买、无购买、返回和超过3000次的购买；未显示购买。](assets/s_advuser_load_file_sample_6.png)
 
 1. 然后，指定针对每种类型的群体执行的流程。 在本例中，我们将转到数据库中的&#x200B;**[!UICONTROL Update the data]**。 为此，请在拆分活动的每个叫客过渡的末尾放置一个&#x200B;**[!UICONTROL Update data]**&#x200B;活动。
 

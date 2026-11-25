@@ -23,10 +23,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 12%
+source-wordcount: '745'
+ht-degree: 10%
 ---
 # 使用外部重复数据删除活动的合并功能 {#deduplication-merge}
 
@@ -36,7 +36,7 @@ ht-degree: 12%
 
 此用例描述了如何在&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动中使用&#x200B;**[!UICONTROL Merge]**&#x200B;功能。
 
-有关此功能的详细信息，请参阅[此部分](deduplication.md#merging-fields-into-single-record)。
+有关此功能的详细信息，请参阅[将字段合并为单个数据记录](deduplication.md#merging-fields-into-single-record)。
 
 **[!UICONTROL Deduplication]**&#x200B;活动用于从数据集中删除重复行。 在此使用案例中，根据Email字段重复了以下显示的数据。
 
@@ -55,13 +55,13 @@ ht-degree: 12%
 
 1. 打开活动，然后单击&#x200B;**[编辑配置]**&#x200B;链接。
 
-1. 选择要用于重复数据删除的协调字段，然后单击&#x200B;**[!UICONTROL Next]**。 在本例中，我们要根据电子邮件字段删除重复项。
+1. Select要用于重复数据删除的协调字段，然后单击&#x200B;**[!UICONTROL Next]**。 在本例中，我们要根据电子邮件字段删除重复项。
 
-   ![](assets/uc_merge_edit.png)
+   ![已选择收件人且已选择电子邮件协调字段的重复数据删除目标维度窗口。](assets/uc_merge_edit.png)
 
 1. 单击&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;链接，然后激活&#x200B;**[!UICONTROL Merge records]**&#x200B;和&#x200B;**[!UICONTROL Use several record merging criteria]**&#x200B;选项。
 
-   ![](assets/uc_merge_advanced_parameters.png)
+   ![带有合并记录和使用多个记录合并条件选项的“重复数据删除参数”对话框已选中。](assets/uc_merge_advanced_parameters.png)
 
 1. **[!UICONTROL Merge]**&#x200B;选项卡已添加到&#x200B;**[!UICONTROL Deduplication]**&#x200B;配置屏幕中。 我们将使用此选项卡指定在执行重复数据删除时要合并的数据。
 
@@ -78,31 +78,31 @@ ht-degree: 12%
 
 1. 打开&#x200B;**[!UICONTROL Merge]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
 
-   ![](assets/uc_merge_add.png)
+   ![重复数据删除活动的“合并”选项卡，在合并数据的空列表上方使用“添加”按钮。](assets/uc_merge_add.png)
 
 1. 指定要合并的字段组的标识符和标签。
 
-   ![](assets/uc_merge_identifier.png)
+   ![要合并的Select数据的标识符和标签步骤，其中输入了标识符名称和标签名称。](assets/uc_merge_identifier.png)
 
 1. 指明选择要考虑的记录的条件。
 
-   ![](assets/uc_merge_filter.png)
+   ![用于选择要合并的记录的筛选步骤（条件为“名字”不为空和“姓氏”不为空）。](assets/uc_merge_filter.png)
 
 1. 对上次修改日期进行排序，以便选择最近名称。
 
-   ![](assets/uc_merge_sort.png)
+   ![按降序排序修改日期的步骤以选择最近的记录。](assets/uc_merge_sort.png)
 
-1. 选择要合并的字段。 在本例中，我们希望保留名字和姓氏字段。
+1. Select要合并的字段。 在本例中，我们希望保留名字和姓氏字段。
 
-   ![](assets/uc_merge_keep.png)
+   ![选择名字和姓氏作为输出列的要保留的字段。](assets/uc_merge_keep.png)
 
 1. 这些字段将添加到要合并的数据集，并且新元素将添加到工作流架构。
 
    重复这些步骤以配置手机和电话字段。
 
-   ![](assets/dedup8.png)
+   ![合并选项卡列出了合并的组名称、手机和电话及其别名和启用条件。](assets/dedup8.png)
 
-   ![](assets/dedup9.png)
+   ![架构选项卡，其中显示了通过移动节点、名称节点和电话节点生成的重复数据删除数据结构。](assets/dedup9.png)
 
 ## 结果 {#results}
 

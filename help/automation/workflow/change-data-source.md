@@ -25,9 +25,9 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '355'
 ht-degree: 2%
 ---
 # 更改数据源 {#change-data-source}
@@ -36,8 +36,8 @@ ht-degree: 2%
 
 工作流&#x200B;**[!UICONTROL Working table]**&#x200B;用于处理与工作流活动共享数据。
 
-默认情况下，**[!UICONTROL Working table]**&#x200B;是在与需要查询的数据源相同的数据库中创建的。
-例如，在查询存储在云数据库上的&#x200B;**[!UICONTROL Recipients]**&#x200B;表时，工作流会在同一云数据库上创建&#x200B;**[!UICONTROL Working table]**。
+默认情况下，**[!UICONTROL Working table]**是在与需要查询的数据源相同的数据库中创建的。
+例如，在查询存储在云数据库上的**[!UICONTROL Recipients]**&#x200B;表时，工作流会在同一云数据库上创建&#x200B;**[!UICONTROL Working table]**。
 
 使用&#x200B;**[!UICONTROL Change Data Source]**&#x200B;活动为您的&#x200B;**[!UICONTROL Working table]**&#x200B;使用其他数据源。
 
@@ -61,22 +61,22 @@ ht-degree: 2%
 
 1. 添加&#x200B;**[!UICONTROL Change data source]**&#x200B;活动。
 
-   ![](assets/change-data-source.png)
+   ![包含启动和查询的工作流，以及调色板中高亮显示的更改数据Source活动](assets/change-data-source.png)
 
 1. 编辑您的&#x200B;**[!UICONTROL Change data source]**&#x200B;活动以选择&#x200B;**[!UICONTROL Default data source]**。
 
    随后，包含查询结果的工作表将移至默认的Campaign本地数据库。
 
-   ![](assets/change-data-source_2.png)
+   ![选择“默认数据源”选项更改数据Source活动](assets/change-data-source_2.png)
 
 1. 添加&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动以对工作表执行单一操作。
 
-   有关&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动的详细信息，请参阅[此页面](sql-code-and-javascript-code.md#javascript-code)。
+   有关&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动的详细信息，请参阅[JavaScript代码和高级JavaScript代码](sql-code-and-javascript-code.md#javascript-code)。
 
 1. 添加另一个&#x200B;**[!UICONTROL Change data source]**&#x200B;活动以切换回云数据库。
 
 1. 编辑此活动并选择&#x200B;**[!UICONTROL Active FDA external account]**&#x200B;以及相应的&#x200B;**[!UICONTROL External database]**&#x200B;外部帐户。
 
-   ![](assets/change-data-source_3.png)
+   ![在列表中选择了Active FDA外部帐户并在列表中突出显示Snowflake的情况下更改数据Source活动](assets/change-data-source_3.png)
 
 1. 您现在可以启动工作流。

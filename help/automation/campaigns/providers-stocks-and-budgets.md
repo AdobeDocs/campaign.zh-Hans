@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '2173'
 ht-degree: 1%
 ---
 # 供应商、库存和预算{#providers-stocks-and-budgets}
@@ -66,7 +66,7 @@ Adobe Campaign允许您定义将参与在营销活动中执行的作业的服务
 1. 单击服务提供商列表上方的&#x200B;**[!UICONTROL New]**&#x200B;按钮。
 1. 在窗口的下半部分，指定服务提供商的名称和联系详细信息。
 
-   ![](assets/add-a-supplier.png)
+   ![Explorer中的服务提供程序列表以及带有标签、内部名称和注释字段的新服务提供程序表单](assets/add-a-supplier.png)
 
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;按钮以将服务提供商添加到列表。
 
@@ -80,11 +80,11 @@ Adobe Campaign允许您定义将参与在营销活动中执行的作业的服务
 
 1. 在服务提供程序的&#x200B;**[!UICONTROL Services]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并输入服务模板的名称。
 
-   ![](assets/supplier-new-template.png)
+   新服务模板的![服务对话框，常规选项卡，带有标签、内部名称和评论字段](assets/supplier-new-template.png)
 
 1. 为每种流程类型（通过直邮/电子邮件/等或任务投放）创建成本类别。 为此，请单击&#x200B;**[!UICONTROL Cost categories]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮，然后输入每个成本类别的参数。
 
-   ![](assets/add-cost-categories.png)
+   带有“添加”按钮的![成本类别选项卡，以及直邮类别及其成本类型的“成本类别”对话框](assets/add-cost-categories.png)
 
    * 输入此成本类别的标签并选择相关的进程类型： **[!UICONTROL Direct mail]**、**[!UICONTROL Email]**、**[!UICONTROL Mobile]**&#x200B;等。
    * 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以定义与此类别关联的成本类型。
@@ -96,7 +96,7 @@ Adobe Campaign允许您定义将参与在营销活动中执行的作业的服务
 
 1. 您可以为此成本类别预先选择一个值，这是服务提供商成本类别中的默认值（而不是空值）。 为此，请在相关类别的&#x200B;**[!UICONTROL Selected]**&#x200B;列中启用&#x200B;**是**&#x200B;选项：
 
-   ![](assets/default-cost-type.png)
+   ![成本类别对话框，在信件成本类型的“已选定”列中启用了“是”选项](assets/default-cost-type.png)
 
    在投放级别，该值默认处于选中状态。
 
@@ -106,7 +106,7 @@ Adobe Campaign允许您定义将参与在营销活动中执行的作业的服务
 
 单击&#x200B;**[!UICONTROL Cost structure]**&#x200B;选项卡为每个成本类别和类型配置成本计算。 单击&#x200B;**[!UICONTROL Add]**&#x200B;并输入成本结构。
 
-![](assets/add-cost-structure.png)
+![包含“添加”按钮的成本结构选项卡和成本结构定义对话框：渠道、成本类别、计算](assets/add-cost-structure.png)
 
 * 要创建成本结构，请从下拉列表中选择消息类型和相关的成本类别，以及计算规则将应用的成本类型。 这些下拉列表的内容来自通过&#x200B;**[!UICONTROL Cost categories]**&#x200B;选项卡输入的信息。
 
@@ -126,7 +126,7 @@ Adobe Campaign允许您定义将参与在营销活动中执行的作业的服务
 
 如果此金额适用于一批邮件，请在&#x200B;**[!UICONTROL for]**&#x200B;字段中指定相关邮件数。
 
-![](assets/supplier_cost_structure_calc.png)
+![成本结构对话框，已选择“每封邮件”和“线性”，5个单位的金额为4.00](assets/supplier_cost_structure_calc.png)
 
 
 #### 阈值线性结构 {#linear-structure-by-threshold}
@@ -135,7 +135,7 @@ Adobe Campaign允许您定义将参与在营销活动中执行的作业的服务
 
 配置如下：
 
-![](assets/supplier-cost-structure-linear.png)
+![成本结构对话框，其中按阈值类型显示线性阈值、包含金额的阈值列表和超出值](assets/supplier-cost-structure-linear.png)
 
 要添加阈值，请单击列表右侧的&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
 
@@ -143,17 +143,17 @@ Adobe Campaign允许您定义将参与在营销活动中执行的作业的服务
 
 最后，您可以根据报文总数配置成本计算。 为此，请选择&#x200B;**[!UICONTROL Constant by threshold]**&#x200B;计算结构。 例如，对于1到100条报文，成本将设置为12.00的固定金额；对于101到1000条报文的投放，成本将设置为100.00；对于超过1000条报文的任何投放，成本都将设置为500.00，无论总数如何。
 
-![](assets/supplier-cost-structure-constant.png)
+![成本结构对话框，其中包含按阈值类型划分的常量、具有固定金额的阈值列表和超出值](assets/supplier-cost-structure-constant.png)
 
 ### 配置与服务关联的作业 {#configure-processes-associated-with-a-service}
 
 您可以通过&#x200B;**[!UICONTROL Jobs]**&#x200B;选项卡关联与服务提供商关联的进程的信息。 通过此部分，您可以配置向路由器发送信息。
 
-![](assets/cost-supplier-jobs.png)
+![服务的“作业”选项卡，其中显示文件提取、通知电子邮件和后期处理工作流模板设置](assets/cost-supplier-jobs.png)
 
 * **[!UICONTROL File extraction]**&#x200B;部分指示选择此服务时用于投放的导出模板。 您可以在&#x200B;**[!UICONTROL Extraction file]**&#x200B;字段中指明输出文件的名称。 利用字段右侧的按钮，可插入变量。
 
-* **[!UICONTROL Notification email]**&#x200B;部分允许您指定发送文件后通知服务提供商的模板。 选择用于创建警报消息和收件人组的模板。
+* **[!UICONTROL Notification email]**&#x200B;部分允许您指定发送文件后通知服务提供商的模板。 Select用于创建警报消息和收件人组的模板。
 
   默认情况下，通知消息的投放模板保存在&#x200B;**[!UICONTROL Administration > Campaign management > Technical delivery templates]**&#x200B;文件夹中，该文件夹可从常规视图访问。
 
@@ -171,18 +171,18 @@ Adobe Campaign允许您定义将参与在营销活动中执行的作业的服务
 
 * 对于直邮投放，您可以从配置窗口中选择服务。
 
-  ![](assets/supplier-mail-delivery-select.png)
+  ![突出显示了“服务提供商”部分的直邮投放：“服务”字段和“成本”类别列表](assets/supplier-mail-delivery-select.png)
 
 * 对于移动渠道上的投放，将应用相同的选择模式。
 * 对于电子邮件投放，从投放属性的&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中选择服务，如以下示例所示：
 
-  ![](assets/supplier-email-delivery-select.png)
+  ![传递属性，“高级”选项卡，“服务提供商”部分显示“服务”字段和“成本”类别列表](assets/supplier-email-delivery-select.png)
 
 **[!UICONTROL Amount to surcharge]**&#x200B;列允许您在相关投放或任务的上下文中为此类别添加成本。
 
 在定义交货的成本类别时，您可以定义成本类型的必备选择。 为此，请选择&#x200B;**[!UICONTROL A cost type must be selected]**。
 
-![](assets/cost-type-must-be-selected.png)
+![已选中成本类型列表上方的“必须选择A成本类型”选项的成本类别对话框](assets/cost-type-must-be-selected.png)
 
 ## 库存和订单管理 {#stock-and-order-management}
 
@@ -202,7 +202,7 @@ Adobe Campaign允许您定义将参与在营销活动中执行的作业的服务
 
 如果库存耗尽或达到最小阈值，Adobe Campaign可以提醒一组操作员。 库存水平可通过导航区域的&#x200B;**[!UICONTROL Other choices]**&#x200B;链接通过&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡的&#x200B;**[!UICONTROL Stocks]**&#x200B;链接访问。
 
-![](assets/stock-dashboard.png)
+![Adobe Campaign主页，“促销活动”选项卡，股票列表显示可用股票](assets/stock-dashboard.png)
 
 #### 创建库存 {#creating-a-stock}
 
@@ -217,17 +217,17 @@ Adobe Campaign允许您定义将参与在营销活动中执行的作业的服务
 
 创建图库时，单击&#x200B;**[!UICONTROL Stock lines]**&#x200B;选项卡以添加新行。
 
-![](assets/stock-new-lines.png)
+![Stock编辑屏幕，“库存行”选项卡，列出具有“初始库存”、“已冲销”、“库存”和“警报”级别列的库存行](assets/stock-new-lines.png)
 
 创建毛坯后，可使用其操控板创建和监控毛坯线。
 
 单击&#x200B;**[!UICONTROL Create]**&#x200B;按钮以添加新的库存行。
 
-![](assets/add-stock-lines.png)
+![在库存行列表上方使用“创建”按钮的Stock仪表板，其中显示初始、已消耗和库存数量](assets/add-stock-lines.png)
 
 * 在&#x200B;**[!UICONTROL Initial stock]**&#x200B;字段中指示初始库存数量。 **[!UICONTROL Consumed]**&#x200B;和&#x200B;**[!UICONTROL In stock]**&#x200B;字段会自动计算并随营销活动进度更新。
 
-  ![](assets/create-new-stock-line.png)
+  ![库存行对话框，“常规”选项卡，包含初始库存、已消耗和库存数量，以及警报级别字段](assets/create-new-stock-line.png)
 
 * 在&#x200B;**[!UICONTROL Alert level]**&#x200B;字段中指明应向操作员发出订购库存警报的阈值。 达到警报级别后，使用此库存的交货的审批窗口中将显示警告消息。
 
@@ -235,7 +235,7 @@ Adobe Campaign允许您定义将参与在营销活动中执行的作业的服务
 
 对于给定的服务提供商，在服务中，库存行可以由成本类别之一引用，如下所示：
 
-![](assets/select-stock-line-supplier.png)
+![成本类别对话框，其中包含从成本类型的库存行下拉列表中选定的库存行](assets/select-stock-line-supplier.png)
 
 ### 库存跟踪 {#stock-tracking}
 
@@ -243,7 +243,7 @@ Adobe Campaign允许您定义将参与在营销活动中执行的作业的服务
 
 当投放中引用的库存不足时，会显示警报。 例如，在批准提取文件时，将显示以下警报：
 
-![](assets/stock-alert.png)
+![传递时的操作，在文件批准前显示带有“接受”和“拒绝”选项的库存警报不足](assets/stock-alert.png)
 
 #### 顺序 {#orders}
 
@@ -251,7 +251,7 @@ Adobe Campaign允许您定义将参与在营销活动中执行的作业的服务
 
 要保存订单，请编辑目标库存行，单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并指定交货日期和订购数量。
 
-![](assets/order-stocks.png)
+![包含“添加”按钮的“库存行订单”选项卡和包含“交货日期”和“订单数量”字段的“库存订单”对话框](assets/order-stocks.png)
 
 >[!NOTE]
 >

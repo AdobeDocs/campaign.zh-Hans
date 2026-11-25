@@ -22,9 +22,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '888'
 ht-degree: 0%
 ---
 # 循环和定期活动 {#recurring-and-periodic-campaigns}
@@ -42,11 +42,11 @@ ht-degree: 0%
 要为定期活动创建模板，请执行以下步骤：
 
 1. 打开Campaign资源管理器并浏览到&#x200B;**[!UICONTROL Resources > Templates > Campaign templates]**。
-1. 复制内置&#x200B;**[!UICONTROL Recurring campaign]**&#x200B;模板。
-   ![](assets/recurring-campaign-duplicate.png)
+1. 复制内置&#x200B;**[!UICONTROL Recurring campaign]**模板。
+   ![活动模板列表，在定期活动模板的上下文菜单中选择了“复制”命令。](assets/recurring-campaign-duplicate.png)
 1. 输入模板名称和营销活动的持续时间。
-1. 对于此类型的营销活动，添加了&#x200B;**[!UICONTROL Schedule]**&#x200B;选项卡以创建模板执行计划。 使用此选项卡可根据此模板定义营销活动的执行日期。
-   ![](assets/recurring-campaign-schedule.png)
+1. 对于此类型的营销活动，添加了&#x200B;**[!UICONTROL Schedule]**选项卡以创建模板执行计划。 使用此选项卡可根据此模板定义营销活动的执行日期。
+   ![活动模板的“计划”选项卡，该活动模板具有执行计划列表和日历选择器以设置开始日期。](assets/recurring-campaign-schedule.png)
 
    执行计划的配置模式与工作流的&#x200B;**[!UICONTROL Scheduler]**&#x200B;对象一致。 [了解详情](../workflow/scheduler.md)。
 
@@ -61,7 +61,7 @@ ht-degree: 0%
    >
    >此工作流必须另存为定期工作流模板。 为此，请编辑工作流属性并在&#x200B;**[!UICONTROL Execution]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Recurring workflow template]**&#x200B;选项。
 
-   ![](assets/recurring-campaign-wf-properties.png)
+   ![工作流属性，“执行”选项卡，选择了“定期工作流模板”选项。](assets/recurring-campaign-wf-properties.png)
 
 ### 创建定期活动 {#create-the-recurring-campaign}
 
@@ -81,13 +81,13 @@ ht-degree: 0%
 
 1. 定期工作流是自动从营销策划中存在的工作流模板创建的。 它们在营销活动的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡中可见。
 
-   ![](assets/recurring-wf-created.png)
+   ![定位和工作流选项卡列出了默认工作流及其编号为#1和#2的定期实例。](assets/recurring-wf-created.png)
 
    定期工作流实例的标签由其模板标签和工作流编号组成，其中的#字符介于。
 
    根据计划创建的工作流会自动在&#x200B;**[!UICONTROL Schedule]**&#x200B;选项卡的&#x200B;**[!UICONTROL Workflow]**&#x200B;列中与其关联。
 
-   ![](assets/recurring-wf-schedule-executed.png)
+   ![计划选项卡，其中的“工作流”列将创建的工作流链接到计划行；提前为创建的为15d。](assets/recurring-wf-schedule-executed.png)
 
    可以从此选项卡中编辑每个工作流。
 

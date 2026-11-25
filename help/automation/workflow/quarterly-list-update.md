@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 5%
+source-wordcount: '294'
+ht-degree: 4%
 ---
 # 使用增量查询每季度更新列表 {#quarterly-list-update}
 
@@ -36,11 +36,11 @@ ht-degree: 5%
 
 由于这些促销活动在每个季初启动以提供相关的体育活动，因此这些列表每季度更新一次。 但是，此营销活动只能每9个月定位此处的收件人一次。 这样，您就可以安排收件人的资格频度，并在这些年中针对不同的季节提供活动。
 
-![](assets/incremental_query_example.png)
+![具有增量查询活动的工作流，通过其“结果”过渡链接到“列表”更新活动](assets/incremental_query_example.png)
 
 1. 将增量查询和列表更新活动添加到新工作流中。
 1. 按照[创建查询](query.md#creating-a-query)中指定的方式配置活动的&#x200B;**[!UICONTROL Incremental query]**&#x200B;选项卡。
-1. 选择&#x200B;**[!UICONTROL Scheduling & History]**&#x200B;选项卡，然后指定270天的历史记录。 已定向的收件人在270天（即大约9个月）内将不再被定向。
+1. 在&#x200B;**[!UICONTROL Scheduling & History]**&#x200B;选项卡Select，然后指定270天的历史记录。 已定向的收件人在270天（即大约9个月）内将不再被定向。
 
    然后单击&#x200B;**[!UICONTROL Change...]**&#x200B;按钮。
 

@@ -24,10 +24,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 33%
+source-wordcount: '684'
+ht-degree: 31%
 ---
 # 工作流属性{#workflow-properties}
 
@@ -35,7 +35,7 @@ ht-degree: 33%
 
 工作流中&#x200B;**[!UICONTROL Properties]**&#x200B;窗口的&#x200B;**[!UICONTROL Execution]**&#x200B;选项卡分为3个部分：
 
-![](assets/wf_execution_tab.png)
+![带有工作流属性的“计划程序”、“执行”和“错误管理”部分的“执行”选项卡。](assets/wf_execution_tab.png)
 
 ### 调度程序 {#scheduler}
 
@@ -65,7 +65,7 @@ ht-degree: 33%
 
   当启用该选项时，查询将显示在添加到工作流（活动工作流除外）和&#x200B;**[!UICONTROL Properties]**&#x200B;活动的&#x200B;**[!UICONTROL SQL logs]**&#x200B;选项卡中。 **[!UICONTROL Audit]**&#x200B;选项卡还包括SQL查询。
 
-  ![](assets/wf_tab_log_sql.png)
+  ![带有SQL日志选项卡的工作流窗口在“图表”和“审核”选项卡旁突出显示。](assets/wf_tab_log_sql.png)
 
 * **[!UICONTROL Execute in the engine]**
 
@@ -102,7 +102,7 @@ ht-degree: 33%
 
   如果相关操作员的配置文件中包含电子邮件地址，则会通过电子邮件通知他们。 要定义工作流主管，请转到属性（**[!UICONTROL General]**&#x200B;选项卡）的&#x200B;**[!UICONTROL Supervisor(s)]**&#x200B;字段。
 
-  ![](assets/wf-properties_select-supervisors.png)
+  ![常规选项卡，打开了“主管”下拉列表并突出显示了“工作流主管”。](assets/wf-properties_select-supervisors.png)
 
   **[!UICONTROL Notification to a workflow supervisor]**&#x200B;默认模板包括一个用于通过Web访问Adobe Campaign客户端控制台的链接，以便收件人可以在登录后处理问题。
 

@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 4%
+source-wordcount: '360'
+ht-degree: 3%
 ---
 # 协调数据更新{#coordinating-data-updates}
 
@@ -37,7 +37,7 @@ ht-degree: 4%
 
 目的是检查更新过程是否已在执行另一个更新操作之前结束。 为此，我们将设置一个实例变量，并让工作流测试实例是否正在运行，以决定是否继续执行工作流并执行更新。
 
-![](assets/uc_dataupdate_wkf.png)
+![工作流：调度程序，是否正在运行？ 测试结束日期为“是”或“查询、更新数据和结束2”的结束日期为“否”](assets/uc_dataupdate_wkf.png)
 
 此工作流由以下部分组成：
 
@@ -55,19 +55,19 @@ ht-degree: 4%
    >
    >“isRunning”是我们为本示例选择的实例变量名称。 这不是内置变量。
 
-   ![](assets/uc_dataupdate_test.png)
+   ![正在运行？ 测试活动，其条件为instance.vars.isRunning，默认分支标记为No.](assets/uc_dataupdate_test.png)
 
 1. 将&#x200B;**End**&#x200B;活动添加到&#x200B;**No**&#x200B;分支。 这样，如果工作流已经在执行，则不会执行任何操作。
 1. 将所需的活动添加到&#x200B;**是**&#x200B;分支。 在我们的示例中，**查询**&#x200B;和&#x200B;**更新数据**&#x200B;活动。
 1. 打开第一个活动，然后在&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中添加&#x200B;**instance.vars.isRunning = true**&#x200B;命令。 这样，实例变量将设置为正在运行。
 
-   ![](assets/uc_dataupdate_query.png)
+   ![具有初始化脚本实例.vars.isRunning = true的查询活动的“高级”选项卡。](assets/uc_dataupdate_query.png)
 
 1. 在&#x200B;**[!UICONTROL Yes]**&#x200B;分支的末尾添加&#x200B;**End**&#x200B;活动，然后在&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中添加&#x200B;**instance.vars.isRunning = false**&#x200B;命令。
 
    这样，只要正在执行工作流，就不会执行任何操作。
 
-   ![](assets/uc_dataupdate_end.png)
+   使用初始化脚本实例.vars.isRunning = false的End 2活动的![高级选项卡。](assets/uc_dataupdate_end.png)
 
 **相关主题：**
 

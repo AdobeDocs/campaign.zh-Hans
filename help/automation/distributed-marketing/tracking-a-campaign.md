@@ -18,9 +18,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '581'
 ht-degree: 1%
 ---
 # 跟踪活动{#tracking-a-campaign}
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 在&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡中，您可以显示重组所有现有分布式营销活动的&#x200B;**[!UICONTROL Campaign packages]**&#x200B;列表。 您可以筛选此列表，使其仅显示已发布、延迟、未决批准等的营销活动。为此，请单击此视图上部的链接，或使用&#x200B;**[!UICONTROL Filter list]**&#x200B;链接并选择要显示的促销活动包状态。
 
-![](assets/mkg_dist_catalog_filter.png)
+![营销活动包列表，其状态筛选器处于打开状态：正在编辑、未决批准、已批准、已拒绝等。](assets/mkg_dist_catalog_filter.png)
 
 ## 编辑包 {#edit-packages}
 
@@ -52,21 +52,21 @@ ht-degree: 1%
 
 **[!UICONTROL Campaign orders]**&#x200B;视图也提供了此信息，该视图列出了所有订单。
 
-![](assets/mkg_dist_catalog_op_command_details.png)
+![Campaign订单列表显示每个订单及其本地实体、营销活动和状态（“可用”或“已取消”）。](assets/mkg_dist_catalog_op_command_details.png)
 
 中央操作员可以编辑顺序。 可通过两种方式来做到这一点：
 
 1. 操作员可以单击订单名称对其进行编辑：这将显示订单详细信息。
 
-   ![](assets/mkg_dist_catalog_op_command_edit1.png)
+   ![单击Campaign订单列表中的订单将打开其仪表板，其中包含状态、包、本地实体和批准。](assets/mkg_dist_catalog_op_command_edit1.png)
 
    **[!UICONTROL Edit > General]**&#x200B;选项卡允许您查看本地实体在订购营销活动时输入的信息。
 
-   ![](assets/mkg_dist_catalog_op_command_edit1a.png)
+   ![订单编辑选项卡，常规：标签、组织实体、分配的操作员、状态和来自本地实体的注释。](assets/mkg_dist_catalog_op_command_edit1a.png)
 
 1. 操作员可以单击营销活动包标签以编辑它并更改某些设置。
 
-   ![](assets/mkg_dist_catalog_op_command_edit2.png)
+   ![从列表中打开一个包，然后打开其促销活动订单之一，每个订单都显示其仪表板。](assets/mkg_dist_catalog_op_command_edit2.png)
 
 ## 取消包 {#cancel-a-package}
 
@@ -74,7 +74,7 @@ ht-degree: 1%
 
 在营销活动包&#x200B;**[!UICONTROL Dashboard]**&#x200B;中单击&#x200B;**[!UICONTROL Cancel]**。
 
-![](assets/mkg_dist_cancel_op_from_dashboard.png)
+![包仪表板上的“取消包”按钮打开“包操作”对话框，其中包含“注释”字段。](assets/mkg_dist_cancel_op_from_dashboard.png)
 
 **[!UICONTROL Comment]**&#x200B;字段允许您证明取消的合理性。
 
@@ -84,15 +84,15 @@ ht-degree: 1%
 
 1. 与此包相关的任何订单都将被取消，
 
-   ![](assets/mkg_dist_mutual_op_cancelled.png)
+   ![已取消的程序包仪表板列出其促销活动订单，每个订单的状态为“已取消”。](assets/mkg_dist_mutual_op_cancelled.png)
 
 1. 引用营销活动已取消，所有活动进程（工作流、投放）已停止，
 
-   ![](assets/mkg_dist_mutual_op_cancelled1.png)
+   ![已取消引用营销活动信息板，其电子邮件和短信投放显示为“已停止”。](assets/mkg_dist_mutual_op_cancelled1.png)
 
 1. 向所有有关的本地实体发送通知。
 
-   ![](assets/mkg_dist_mutual_op_cancelled2.png)
+   ![取消程序包电子邮件，通知本地实体该营销活动已集中取消。](assets/mkg_dist_mutual_op_cancelled2.png)
 
 如有必要，中央实体仍可以访问和重新初始化已取消的包（请参阅下文）。 它们仅在获得批准并启动后，才会再次提供给本地实体。 软件包重新初始化过程如下所示。
 
@@ -100,14 +100,14 @@ ht-degree: 1%
 
 已发布的营销活动包可以重新初始化、修改并提供给本地实体。
 
-1. 选择相关的包。
+1. 涉及的Select包。
 1. 单击&#x200B;**[!UICONTROL Reinitialize the package to reuse it]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL OK]**。
 
-   ![](assets/mkg_dist_mutual_op_reinit.png)
+   ![重新初始化包确认对话框：使用“确定”按钮状态变为“正在编辑”。](assets/mkg_dist_mutual_op_reinit.png)
 
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;按钮可批准重新初始化包。
 
-   ![](assets/mkg_dist_mutual_op_reinit2.png)
+   ![已取消包仪表板，突出显示了“保存”按钮以批准重新初始化。](assets/mkg_dist_mutual_op_reinit2.png)
 
 1. 程序包状态更改为&#x200B;**[!UICONTROL Being edited]**。 再次修改、批准并发布它，以将其恢复到Campaign包的列表。
 

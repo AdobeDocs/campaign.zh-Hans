@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 9%
+source-wordcount: '440'
+ht-degree: 8%
 ---
 # 交集{#intersection}
 
@@ -36,13 +36,13 @@ ht-degree: 9%
 
 交集允许您仅提取所有入站活动结果共有的群体。 创建目标时收到所有结果：因此，必须先完成所有先前的活动，然后才能执行交集。 要配置此活动，需要输入其标签以及有关结果的选项。
 
-![](assets/s_user_segmentation_inter.png)
+![协调设置为仅键、结果标签和生成补码选项的交集活动](assets/s_user_segmentation_inter.png)
 
 有关配置和使用交叉点活动的详细信息，请参阅[提取联合数据（交叉点）](targeting-workflows.md#extract-joint-data--intersection-)。
 
 如果要处理剩余群体，请选中&#x200B;**[!UICONTROL Generate complement]**&#x200B;选项。 补集将包含所有集客活动减去交集的结果的并集。 然后，将向活动添加其他叫客过渡，如下所示：
 
-![](assets/s_user_segmentation_inter_compl.png)
+![具有两个叫客过渡的交叉点活动，结果和补码](assets/s_user_segmentation_inter_compl.png)
 
 ## 交集示例 {#intersection-example}
 
@@ -60,7 +60,7 @@ ht-degree: 9%
 
    交集结果将发送到第一个列表更新。 如果您已选择使用补充，它也会发送给第二次列表更新。
 
-   ![](assets/intersection_example.png)
+   ![三个查询馈送其结果和补码转至两个列表更新活动的交集](assets/intersection_example.png)
 
 ## 输入参数 {#input-parameters}
 

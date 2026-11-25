@@ -23,10 +23,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 9%
+source-wordcount: '138'
+ht-degree: 7%
 ---
 # CRM 连接器{#crm-connector}
 
@@ -39,10 +39,10 @@ ht-degree: 9%
 * 导入CRM中删除的对象
 * 删除 CRM 中的对象
 
-![](assets/crm_task_select_op.png)
+![类型列表打开的CRM连接器活动，显示导入、导出和删除选项以及Salesforce CRM帐户](assets/crm_task_select_op.png)
 
-选择与要配置同步的CRM匹配的外部帐户，然后选择要同步的对象（帐户、机会、联系人等）。
+Select与要配置同步的CRM匹配的外部帐户，然后选择要同步的对象（帐户、机会、联系人等）。
 
-![](assets/crm_task_select_obj.png)
+![从CRM导入的CRM连接器活动，远程对象列表打开，联系人突出显示](assets/crm_task_select_obj.png)
 
-有关Adobe Campaign中CRM连接器的详细信息，请参阅[此部分](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-crm/crm.html?lang=zh-Hans){target="_blank"}。
+有关Adobe Campaign中CRM连接器的详细信息，请参阅[此部分](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-crm/crm.html){target="_blank"}。

@@ -23,9 +23,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '1339'
 ht-degree: 1%
 ---
 # 管理营销资源{#managing-marketing-resources}
@@ -43,9 +43,9 @@ ht-degree: 1%
 1. 浏览到&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL Marketing resouces]**。
 
 1. 单击 **[!UICONTROL Create]** 按钮。
-   ![](assets/add-a-mkt-resource.png)
-1. 将该文件拖放到“营销资源”窗口中，以将其上传到Campaign服务器。 您还可以使用&#x200B;**[!UICONTROL Upload file to server...]**&#x200B;链接。
-   ![](assets/mkt-resource-creation.png)
+   ![营销活动选项卡中的营销资源列表，其中突出显示“创建”按钮。](assets/add-a-mkt-resource.png)
+1. 将该文件拖放到“营销资源”窗口中，以将其上传到Campaign服务器。 您还可以使用&#x200B;**[!UICONTROL Upload file to server...]**链接。
+   ![具有上载文件到服务器链接的市场营销资源创建窗口以添加文件。](assets/mkt-resource-creation.png)
 
 上传完成后，资源将添加到可用资源列表中。
 
@@ -53,11 +53,11 @@ ht-degree: 1%
 
 上传后，所有Adobe Campaign操作员都可以使用营销资源。 他们可以查看、制作副本以对其进行修改，或更新服务器上的文件。
 
-![](assets/open-a-marketing-resource.png)
+![营销资源信息板，带有信息板、编辑和预览选项卡、状态、文件和分配的操作员。](assets/open-a-marketing-resource.png)
 
 使用&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Assigned to]**&#x200B;下拉列表选择负责该资源的运算符。
 
-![](assets/assign-a-mkt-resource.png)
+![打开了运算符的“分配给”下拉列表的营销资源的“编辑”选项卡。](assets/assign-a-mkt-resource.png)
 
 您还可以选择负责资源验证和资源发布的操作员或操作员组。 要访问这些选项，请单击&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;链接。
 
@@ -83,18 +83,18 @@ ht-degree: 1%
 
 要锁定资源，必须单击资源仪表板中的&#x200B;**[!UICONTROL Lock]**&#x200B;按钮。
 
-![](assets/lock-a-resource.png)
+![带有指向“锁定”按钮的箭头的营销资源仪表板。](assets/lock-a-resource.png)
 
 
 更新资源后，单击资源仪表板中的&#x200B;**[!UICONTROL Lock]**&#x200B;按钮以再次对所有操作员可用。
 
 一条特殊消息会通知尝试访问它的任何操作员：
 
-![](assets/mkt-resource-locked.png)
+![编辑选项卡消息，指出文件在服务器上，正在由其他操作员编辑。](assets/mkt-resource-locked.png)
 
 **[!UICONTROL Tracking]**&#x200B;选项卡指示锁定资源的操作员的姓名。
 
-![](assets/mkt-resource-audit-tab.png)
+日志中具有验证读取器、可用性日期、所有者和锁定条目的营销资源的![审核选项卡。](assets/mkt-resource-audit-tab.png)
 
 
 >[!NOTE]
@@ -105,7 +105,7 @@ ht-degree: 1%
 
 对于每个资源，**[!UICONTROL Forum]**&#x200B;选项卡允许参与者共享信息。
 
-![](assets/mkt-resource-forum.png)
+有关营销资源的![讨论论坛对话框，主题、消息和操作员将通知字段。](assets/mkt-resource-forum.png)
 
 在[论坛](discussion-forums.md)部分了解详情。
 
@@ -115,13 +115,13 @@ ht-degree: 1%
 
 要批准资源，请单击其仪表板上的&#x200B;**[!UICONTROL Approve the resource]**&#x200B;按钮。
 
-![](assets/mkt-resouce-approve.png)
+![营销资源仪表板，带有指向“批准资源”按钮的箭头。](assets/mkt-resouce-approve.png)
 
 授权操作员随后可以接受或拒绝批准。 此操作可通过以下方式执行：通过发送的电子邮件（单击通知消息中的链接），或通过客户端控制台（单击&#x200B;**[!UICONTROL Approve]** ）按钮。
 
 您可以在批准窗口中输入备注。
 
-![](assets/mkt-resource-approval-confirmation.png)
+![资源对话框上的操作，包括“接受”和“拒绝”选项、“评论”字段和“审批”按钮。](assets/mkt-resource-approval-confirmation.png)
 
 浏览到&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡以检查审批。
 
@@ -135,7 +135,7 @@ ht-degree: 1%
 
 要发布资源，请单击营销资源功能板编辑区域中的&#x200B;**[!UICONTROL Publish]**&#x200B;按钮。
 
-![](assets/mkt-resource-publish.png)
+![已批准营销资源仪表板，其箭头指向“发布”按钮。](assets/mkt-resource-publish.png)
 
 您还可以通过工作流自动发布资源。
 
@@ -143,7 +143,7 @@ ht-degree: 1%
 
 为了发布Adobe Campaign，您需要创建一个足够的工作流并将其链接到资源。 为此，请打开资源的&#x200B;**[!UICONTROL Advanced settings...]**&#x200B;框，然后在&#x200B;**[!UICONTROL Post-processing]**&#x200B;字段中选择所需的工作流。
 
-![](assets/mkt-resource-post-processing-wf.png)
+![高级参数对话框，带有资源发布下的后处理工作流字段。](assets/mkt-resource-post-processing-wf.png)
 
 工作流将执行：
 
@@ -160,7 +160,7 @@ ht-degree: 1%
 
 浏览到Campaign仪表板中的&#x200B;**[!UICONTROL Edit > Documents > Resources]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Add]**&#x200B;以选择相关资源。
 
-![](assets/link-a-mkt-resource-to-a-campaign.png)
+使用“添加”按钮和营销资源选择对话框的营销活动的![资源选项卡。](assets/link-a-mkt-resource-to-a-campaign.png)
 
 您可以按状态、性质或类型过滤资源，或应用个性化过滤器。
 
@@ -170,15 +170,15 @@ ht-degree: 1%
 
 营销资源可以通过投放大纲与投放相关联。
 
-在[本节](../campaigns/marketing-campaign-deliveries.md)中了解有关投放概要的更多信息。
+了解有关[营销活动投放](../campaigns/marketing-campaign-deliveries.md)中的投放概要的更多信息。
 
 为此，请右键单击投放概要，然后选择&#x200B;**新建>资源**。
 
-![](assets/mkt-resource-add-in-del-outline.png)
+![已选择新建和资源选项的“投放”概述上下文菜单。](assets/mkt-resource-add-in-del-outline.png)
 
 输入资源的名称，然后从&#x200B;**营销资源**&#x200B;下拉列表中选择该资源。
 
-![](assets/mkt-resource-select-in-del-outline.png)
+![投放概要营销资源下拉列表，显示可供选择的资源。](assets/mkt-resource-select-in-del-outline.png)
 
 
 ## 库存管理 {#stock-management}
@@ -188,11 +188,11 @@ ht-degree: 1%
 
 要将营销资源与股票相关联，请执行以下步骤：
 
-1. 编辑股票或创建新股票。 在[本节](../campaigns/providers-stocks-and-budgets.md#stock-management)中了解有关股票的更多信息。
+1. 编辑股票或创建新股票。 在[库存管理](../campaigns/providers-stocks-and-budgets.md#stock-management)中了解有关库存的更多信息。
 
 1. 添加库存行，然后选择相应的营销资源。
 
-   ![](assets/mkt-resource-in-a-stock-line.png)
+   带有营销资源字段、初始库存和警报级别的![库存行对话框。](assets/mkt-resource-in-a-stock-line.png)
 
    选择所选资源后，您可以通过位于该资源右侧的&#x200B;**[!UICONTROL Edit the link]**&#x200B;图标来编辑该资源。
 

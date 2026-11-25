@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 1%
+source-wordcount: '404'
+ht-degree: 0%
 ---
 # 差集{#exclusion}
 
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 要配置此活动，请输入其标签并选择主收件人集：通过主集中的群体，可构建结果。 将排除由主集和至少一个进入活动共享的用户档案。
 
-![](assets/s_user_segmentation_exclu.png)
+![具有主集、排除规则、结果标签和生成补码选项的排除活动。](assets/s_user_segmentation_exclu.png)
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ ht-degree: 1%
 
 如果要利用剩余群体，请选中&#x200B;**[!UICONTROL Generate complement]**&#x200B;选项。 补数将包含主传入群体减去传出群体。 然后，将向该活动添加一个额外的输出转换，如下所示：
 
-![](assets/s_user_segmentation_exclu_compl.png)
+![包含两个叫客过渡且标记为“结果”和“补充”的排除活动。](assets/s_user_segmentation_exclu_compl.png)
 
 ## 排除项示例 {#exclusion-examples}
 
@@ -56,7 +56,7 @@ ht-degree: 1%
 1. 批准排除配置，然后为结果插入更新列表活动。 如有必要，您还可以向补码插入其他列表更新。
 1. 执行工作流。 在本例中，结果由18到30岁的收件人组成，但居住在巴黎的人被排除在外，并被发送至补充数据。
 
-   ![](assets/exclusion_example.png)
+   ![工作流程，其中18-30和位于巴黎的查询馈送包含结果的排除项，并补充每个排除项以转到列表更新。](assets/exclusion_example.png)
 
 ## 输入参数 {#input-parameters}
 

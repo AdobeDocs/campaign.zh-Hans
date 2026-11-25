@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 3%
+source-wordcount: '232'
+ht-degree: 2%
 ---
 # 数据加载 (RDBMS){#data-loading-rdbms}
 
@@ -41,17 +41,17 @@ ht-degree: 3%
 
 操作如下：
 
-1. 从列表中选择数据源，然后输入包含要提取的数据的表的名称。
+1. 从列表中Select数据源，并输入包含要提取的数据的表的名称。
 
-   ![](assets/s_advuser_wf_sgbd_sample_1.png)
+   ![数据加载(RDBMS)活动，已选择共享外部数据源且表名为nmsrecipient。](assets/s_advuser_wf_sgbd_sample_1.png)
 
    在相应字段中输入的表的名称将用作在外部数据库中收集数据的模板。 工作流处理的表的名称可以由数据加载活动的集客过渡计算或传递。 要选择要使用的表，请单击&#x200B;**[!UICONTROL Advanced..]**。 链接并选择&#x200B;**[!UICONTROL Specified in the transition]**&#x200B;或&#x200B;**[!UICONTROL Explicit]**&#x200B;选项。
 
-   ![](assets/s_advuser_wf_sgbd_sample_5.png)
+   ![用于表名选择的高级参数：与模板相同，在过渡中指定，显式。](assets/s_advuser_wf_sgbd_sample_5.png)
 
 1. 单击&#x200B;**[!UICONTROL Select the columns to extract...]**&#x200B;链接以选择要在数据库中收集的数据。
 
-   ![](assets/s_advuser_wf_sgbd_sample_2.png)
+   ![Select额外列窗口列出了可用字段和为提取选择的输出列。](assets/s_advuser_wf_sgbd_sample_2.png)
 
 1. 您可以根据此数据定义过滤器。 为此，请单击&#x200B;**[!UICONTROL Edit query....]**&#x200B;链接。
 

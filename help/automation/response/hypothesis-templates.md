@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
     internal-label: Measurement
-source-git-commit: c8cb0f8a3f752a46fae533c8fd0608aa4545d37c
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '1416'
-ht-degree: 2%
+source-wordcount: '1828'
+ht-degree: 1%
 ---
 # 假设验证模板{#hypothesis-templates}
 
@@ -46,14 +46,14 @@ ht-degree: 2%
 
 1. 在Adobe Campaign资源管理器中，单击&#x200B;**[!UICONTROL Resources>Templates>Hypothesis templates]**。
 
-   ![](assets/response_hypothesis_model_creation_001.png)
+   ![资源管理器，其中已选择资源>模板>假设验证模板，并在“常规”选项卡上打开假设验证模板。](assets/response_hypothesis_model_creation_001.png)
 
 1. 单击&#x200B;**[!UICONTROL New]**&#x200B;或右键单击模板列表，然后在下拉列表中选择&#x200B;**[!UICONTROL New]**。
 1. 输入假设验证标签。
 1. 通过&#x200B;**[!UICONTROL Hypothesis type]**&#x200B;指定模板是发往优惠上的假设还是发货。
 1. 对于&#x200B;**[!UICONTROL Delivery]**&#x200B;类型模板，指定是否应在控制组下执行测量。 [了解详情](#properties-of-a-hypothesis-template)
 1. 对于&#x200B;**[!UICONTROL Delivery]**&#x200B;类型模板，您可以选择特定渠道，或决定使用&#x200B;**[!UICONTROL Channel]**&#x200B;下拉列表将该模板应用于Adobe Campaign中的所有可用渠道。 [了解详情](#properties-of-a-hypothesis-template)
-1. 选择要在其中创建并自动执行将从此模板创建的假设的&#x200B;**[!UICONTROL Execution folder]**。
+1. 在&#x200B;**[!UICONTROL Execution folder]**&#x200B;中Select您希望创建并自动执行将从此模板创建的假设验证。
 1. 选择执行设置。 [了解详情](#hypothesis-template-execution-settings)
 1. 指定假设验证计算时段。 [了解详情](#hypothesis-template-execution-settings)
 
@@ -84,11 +84,11 @@ ht-degree: 2%
   >
   >如果模板配置为考虑对照组，但在假设涉及的投放中未定义组，则结果将仅基于目标收件人。
 
-  有关定义和配置控制组的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans#add-a-control-group){target=_blank}。
+  有关定义和配置控制组的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target=_blank}。
 
 * **[!UICONTROL Channel]**：您可以通过选择下拉列表中的&#x200B;**[!UICONTROL All channels]**，选择特定的渠道或使假设验证模板可用于Adobe Campaign控制台中的所有渠道。 如果您为特定渠道配置模板，则可以在创建假设验证时，自动筛选每个渠道的投放。 [了解详情](creating-hypotheses.md)
 
-  ![](assets/response_properties_001.png)
+  ![假设验证模板的“常规”选项卡，其中的“渠道”下拉菜单打开，“所有渠道”突出显示。](assets/response_properties_001.png)
 
 * **[!UICONTROL Execution folder]**：允许您为假设验证指定执行文件夹。
 * **[!UICONTROL Taken into account in campaign ROI calculation]**：在计算相关营销活动的ROI时，将假设验证结果考虑在内。
@@ -99,29 +99,29 @@ ht-degree: 2%
 
 * **[!UICONTROL Schedule execution for a time of low activity]**：允许您计划假设验证启动以优化Adobe Campaign性能。 选中此选项后，营销活动的处理工作流会在停机期间执行假设计算。
 
-  ![](assets/response_exec_settings_002.png)
+  ![已检查假设验证模板执行设置，检查低活动时间内的计划执行。](assets/response_exec_settings_002.png)
 
 * **[!UICONTROL Priority]**：应用于假设验证的级别，用于分隔假设验证计算顺序（如果同时执行）。
 
-  ![](assets/response_exec_settings_003.png)
+  ![假设验证模板优先级下拉列表低、平均和高。](assets/response_exec_settings_003.png)
 
 * **[!UICONTROL Automatic execution]**：如有必要，允许您计划重新计算假设验证（例如，如果您要定期更新指标直到投放结束）。
 
-  ![](assets/response_exec_settings_001.png)
+  ![已使用“执行频率”链接检查自动执行，并使用“更改”按钮检查其“假设”对话框。](assets/response_exec_settings_001.png)
 
   要指定调度，请应用以下进程：
 
   1. 单击&#x200B;**[!UICONTROL Frequency of execution...]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Change...]**&#x200B;按钮。
 
-     ![](assets/response_frequency_execution_001.png)
+     ![说明未定义任务计划的假设验证对话框，使用“更改”按钮定义频率。](assets/response_frequency_execution_001.png)
 
   1. 配置频率、相关事件和有效期。
 
-     ![](assets/response_frequency_execution_002.png)
+     ![计划编辑向导：每周频率，星期三和星期五已选定，有效期为](assets/response_frequency_execution_002.png)。
 
   1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;保存计划。
 
-     ![](assets/response_frequency_execution_003.png)
+     ![使用“完成”按钮计划编辑向导列出启动时间的摘要步骤。](assets/response_frequency_execution_003.png)
 
 * **[!UICONTROL Log SQL queries in journal]**：此函数为专家用户保留。 它允许您向衡量假设验证审核添加选项卡以显示SQL查询。 如果模拟完成时存在错误，这将能够检测可能发生的故障。
 * **[!UICONTROL Keep execution workflow]**：允许您保留假设验证计算开始时自动生成的工作流。 在从选中此选项的模板创建的假设中，生成的工作流可用于跟踪该过程。
@@ -134,7 +134,7 @@ ht-degree: 2%
 
 ### 交易 {#transactions}
 
-此选项卡包含各种字段和表，可让您保存收件人反应的交易历史记录。 有关专用于响应管理的表的详细信息，请参阅此[部分](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/about-schema-reference){target="_blank"}。
+此选项卡包含各种字段和表，可让您保存收件人反应的交易历史记录。 有关专用于响应管理的表的详细信息，请参阅此[部分](https://experienceleague.adobe.com/en/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/about-schema-reference){target="_blank"}。
 
 * **[!UICONTROL Schema (reaction log storage)]**：选择收件人反应表。 Adobe Campaign中的现成表是&#x200B;**NmsRemaMatchRcp**。
 * **[!UICONTROL Transaction schema]**：选择假设将涉及的表，即交易表或购买表。
@@ -146,19 +146,19 @@ ht-degree: 2%
 
   当假设与投放相关联时，会在直邮投放联系日期后几天自动触发测量，或者在电子邮件或短信投放联系日期后自动触发测量。
 
-  ![](assets/response_measurement_001.png)
+  ![带有交易日期字段以及计算开始和计算结束期间的交易选项卡。](assets/response_measurement_001.png)
 
   如果这个假设是动态启动的，那么如果想立即触发它，它将被迫引发。 否则，它会根据配置的计算结束日期（基于假设创建日期）自动触发。 [了解详情](creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery))。
 
 * **[!UICONTROL Transaction/Margin amount]**：这些字段是可选的，可用于自动计算人员调整指标。 [了解详情](hypothesis-tracking.md#indicators)
 * **[!UICONTROL Unit amount]**：允许您设置用于计算收入的金额。 [了解详情](hypothesis-tracking.md#indicators)
 
-  ![](assets/response_transactions_001.png)
+  ![交易选项卡，其交易金额设置为@amount，并且有一个指向单位金额字段的箭头。](assets/response_transactions_001.png)
 
 * **[!UICONTROL Additional measures and data]**：允许您从不同表中的字段指定其他报表度量或轴。
 * **[!UICONTROL Update offer proposition status]**：允许您更改优惠建议状态（如果优惠收件人由假设验证识别）。
 
-  ![](assets/response_offer_status_001.png)
+  ![已选中“更新优惠建议”状态且“状态”下拉列表已打开的“交易”选项卡的“建议”部分。](assets/response_offer_status_001.png)
 
 ### 假设验证周边 {#hypothesis-perimeter}
 
@@ -168,29 +168,29 @@ ht-degree: 2%
 
   1. 单击 **[!UICONTROL Edit query]** 链接。
 
-     ![](assets/response_scope_filtering_001.png)
+     ![带有编辑查询链接的范围选项卡，该链接位于“过滤链接到反应的事务”下。](assets/response_scope_filtering_001.png)
 
   1. 指定筛选条件。
 
-     ![](assets/response_scope_filtering_002.png)
+     ![编辑查询向导：筛选选定的条件，然后编辑表达式按钮和字段选择树。](assets/response_scope_filtering_002.png)
 
-  1. 选择假设将涉及的交易记录。
+  1. Select假设将涉及的交易。
 
-     ![](assets/response_scope_filtering_003.png)
+     ![编辑查询筛选条件：存在采购行，例如，采购等于值列表已打开。](assets/response_scope_filtering_003.png)
 
 * **针对收件人进行筛选**：在&#x200B;**[!UICONTROL Scope]**&#x200B;选项卡中，您可以将假设验证限制为仅包含与消息相关的任何信息（投放、收件人、电子邮件地址、服务等）：
 
   1. 单击&#x200B;**[!UICONTROL Add a filter]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Edit query]**。
 
-     ![](assets/response_scope_filtering_004.png)
+     ![范围选项卡，带有过滤投放邮件下的“添加过滤器”链接和“编辑查询”链接。](assets/response_scope_filtering_004.png)
 
   1. 指定筛选条件。
 
-     ![](assets/response_scope_filtering_005.png)
+     ![电子邮件收件人投放日志架构的编辑查询向导包含筛选条件。](assets/response_scope_filtering_005.png)
 
   1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;保存查询。
 
-     ![](assets/response_scope_filtering_006.png)
+     ![显示已保存投放邮件筛选器的范围选项卡，查询：电子邮件包含，突出显示。](assets/response_scope_filtering_006.png)
 
 * **脚本**：您可以使用JavaScript脚本在执行过程中动态重载假设验证设置。
 
@@ -200,7 +200,7 @@ ht-degree: 2%
   >
   >此选项适用于专家用户。
 
-  ![](assets/response_hypothesis_model_creation_011.png)
+  ![输入了初始化脚本的高级设置对话框，该对话框从“范围”选项卡上的“高级设置”链接打开。](assets/response_hypothesis_model_creation_011.png)
 
 ## 示例：为投放创建假设验证模板 {#example--creating-a-hypothesis-template-on-a-delivery}
 
@@ -209,13 +209,13 @@ ht-degree: 2%
 1. 在Adobe Campaign资源管理器中，转到&#x200B;**[!UICONTROL Resources > Templates > Hypothesis templates]**&#x200B;节点。
 1. 单击&#x200B;**[!UICONTROL New]**&#x200B;创建模板。
 
-   ![](assets/response_hypothesis_model_example_001.png)
+   ![假设验证模板列表突出显示“新建”按钮，并在“常规”选项卡上打开新模板。](assets/response_hypothesis_model_example_001.png)
 
 1. 更改模板标签。
 
-   ![](assets/response_hypothesis_model_example_002.png)
+   ![模板常规选项卡，其标签已更改为“关于购买的假设验证”，并将投放作为假设验证类型。](assets/response_hypothesis_model_example_002.png)
 
-1. 选择&#x200B;**[!UICONTROL Deliveries]**&#x200B;作为假设验证类型。
+1. Select **[!UICONTROL Deliveries]**&#x200B;作为假设验证类型。
 1. 通过选中相关框，指定投放可以包含控制组。
 1. 选择&#x200B;**[!UICONTROL Direct mail]**&#x200B;渠道。
 
@@ -225,33 +225,33 @@ ht-degree: 2%
 
 1. 在&#x200B;**[!UICONTROL Transactions]**&#x200B;选项卡中，选择收件人反应表。
 
-   ![](assets/response_hypothesis_model_example_006.png)
+   ![带有Select的“架构”对话框的“事务”选项卡以及所选收件人架构的反应。](assets/response_hypothesis_model_example_006.png)
 
 1. 在&#x200B;**[!UICONTROL Transactions schema]**&#x200B;字段中，选择您的购买表。
 
-   ![](assets/response_hypothesis_model_example_007.png)
+   ![使用Select的“交易”选项卡按所选购买和购买过滤的文档对话框。](assets/response_hypothesis_model_example_007.png)
 
-1. 在&#x200B;**[!UICONTROL Querying schema]**&#x200B;字段中选择采购行。
+1. **[!UICONTROL Querying schema]**&#x200B;字段中的Select采购订单行。
 
-   ![](assets/response_hypothesis_model_example_008.png)
+   ![查询架构下拉列表列出了收件人的购买行、购买和回应。](assets/response_hypothesis_model_example_008.png)
 
 1. 选择链接到采购表的收件人。
 
-   ![](assets/response_hypothesis_model_example_009.png)
+   ![Select一个表达式对话框，用于链接在“购买”下选择收件人链接的个人。](assets/response_hypothesis_model_example_009.png)
 
-1. 选择链接到购买日期的字段。
+1. Select链接到购买日期的字段。
 
    这允许您为假设定义时间范围。 此阶段不是强制性的，但建议这样做。
 
-   ![](assets/response_hypothesis_model_example_010.png)
+   ![在选择了“购买日期”字段的情况下为交易日期Select表达式对话框。](assets/response_hypothesis_model_example_010.png)
 
 1. 配置计算周期5至25天。
 
-   ![](assets/response_hypothesis_model_example_005.png)
+   ![计算开始设置为5d且计算结束设置为25d的“事务”选项卡突出显示。](assets/response_hypothesis_model_example_005.png)
 
 1. 在&#x200B;**[!UICONTROL Scope]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Edit query]**&#x200B;以创建假设筛选器。
 
-   ![](assets/response_hypothesis_model_example_011.png)
+   ![已单击“编辑查询”的“范围”选项卡，且“编辑查询”向导列出了筛选器类型，已选择按产品筛选。](assets/response_hypothesis_model_example_011.png)
 
    这样，创建的模板允许您对购买表中的产品或文章运行假设。
 

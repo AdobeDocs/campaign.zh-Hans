@@ -27,9 +27,9 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '436'
 ht-degree: 3%
 ---
 # SQL 数据管理{#sql-data-management}
@@ -57,7 +57,7 @@ ht-degree: 3%
 ## 配置SQL数据管理活动 {#configuring-the-sql-data-management-activity}
 
 1. 指定活动&#x200B;**[!UICONTROL Label]**。
-1. 选择要使用的&#x200B;**[!UICONTROL External account]**，然后选择链接到此外部帐户的&#x200B;**[!UICONTROL Outbound schema]**。
+1. Select要使用的&#x200B;**[!UICONTROL External account]**，然后选择链接到此外部帐户的&#x200B;**[!UICONTROL Outbound schema]**。
 
    >[!CAUTION]
    >
@@ -73,7 +73,7 @@ ht-degree: 3%
 
    否则，请在专用区域中键入或复制粘贴您的SQL脚本。
 
-   ![](assets/sql_datamanagement.png)
+   ![SQL数据管理活动，具有出站架构接收者和使用传入转换表名称的SQL脚本](assets/sql_datamanagement.png)
 
    利用活动，可在脚本中使用以下变量：
 

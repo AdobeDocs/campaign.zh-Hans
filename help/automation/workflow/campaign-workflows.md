@@ -30,16 +30,16 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 4%
+source-wordcount: '128'
+ht-degree: 3%
 ---
 # 活动工作流 {#campaign-workflows}
 
 对于每个营销活动，您可以创建要从&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡执行的工作流。 这些工作流特定于营销活动。
 
-![](assets/wf-in-op-edit-delivery-tab.png)
+![营销活动的“定位和工作流”选项卡显示工作流列表以及包含查询、拆分和投放的图表。](assets/wf-in-op-edit-delivery-tab.png)
 
 此选项卡包含与所有工作流相同的活动。 [了解详情](#implementation-steps-)
 
@@ -47,6 +47,6 @@ ht-degree: 4%
 
 所有营销活动工作流都集中在&#x200B;**[!UICONTROL Administration > Production > Objects created automatically > Campaign workflows]**&#x200B;节点下。
 
-![](assets/campaigns_wf.png)
+![资源管理器，带有管理>生产>自动创建的对象>选定的活动工作流节点。](assets/campaigns_wf.png)
 
-[此部分](../campaigns/marketing-campaign-target.md)中详细介绍了营销活动工作流和实施示例。
+[营销活动目标受众](../campaigns/marketing-campaign-target.md)中详细介绍了营销活动工作流和实施示例。

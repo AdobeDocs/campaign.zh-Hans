@@ -17,10 +17,10 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 1%
+source-wordcount: '206'
+ht-degree: 0%
 ---
 # 等待{#wait}
 
@@ -30,7 +30,7 @@ ht-degree: 1%
 
 您可以使用编辑器输入标签和等待时间，如以下示例所示：
 
-![](assets/edit_wait.png)
+![标签为Wait 90s且持续时间为1分钟30s的Wait活动编辑器。](assets/edit_wait.png)
 
 在&#x200B;**[!UICONTROL Duration]**&#x200B;字段中，该值可以按您选择的单位表示：（根据操作员的区域设置）：
 

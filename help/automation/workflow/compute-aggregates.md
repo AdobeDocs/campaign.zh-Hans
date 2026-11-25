@@ -23,9 +23,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '277'
 ht-degree: 0%
 ---
 # 执行聚合计算 {#performing-aggregate-computing}
@@ -48,12 +48,12 @@ ht-degree: 0%
 
 1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;中，定义主键的计数（如上一个示例所示）。 在输出列中添加字段&#x200B;**[!UICONTROL Gender]**。 检查&#x200B;**[!UICONTROL Gender]**&#x200B;列中的&#x200B;**[!UICONTROL Group]**&#x200B;选项。 这样，收件人将按性别分组。
 
-   ![](assets/query_editor_nveau_27.png)
+   ![要通过count（主键）和Gender列提取的数据，Gender的Group设置为Yes。](assets/query_editor_nveau_27.png)
 
 1. 在&#x200B;**[!UICONTROL Sorting]**&#x200B;窗口中，单击&#x200B;**[!UICONTROL Next]**：此处不需要排序。
 1. 配置数据筛选。 在此，您希望将选择限制为居住在伦敦的联系人。
 
-   ![](assets/query_editor_22.png)
+   ![目标元素筛选器：城市（位置/@city）等于伦敦，查询摘要突出显示。](assets/query_editor_22.png)
 
    >[!NOTE]
    >
@@ -64,4 +64,4 @@ ht-degree: 0%
 
    每种按性别排序都有三个单独的值：女性为&#x200B;**2**，男性为&#x200B;**1**，性别未知时为&#x200B;**0**。 在本例中，名单上有10名妇女、16名男子和2名性别不明的妇女。
 
-   ![](assets/query_editor_agregat_04.png)
+   ![数据预览显示性别值2、1和0的计数10、16和2。](assets/query_editor_agregat_04.png)

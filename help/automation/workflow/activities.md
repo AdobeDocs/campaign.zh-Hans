@@ -26,26 +26,26 @@ topic_v2:
     internal-label: Implementation
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 23%
+source-wordcount: '141'
+ht-degree: 15%
 ---
 # 工作流活动{#wf-activities}
 
 工作流活动在四个不同的选项卡中按类别分组。
 
-![](assets/wf-activity-tabs.png)
+![活动调色板，其四个类别选项卡突出显示，且列出了定位活动。](assets/wf-activity-tabs.png)
 
 根据您的权限、实施以及设计工作流的上下文，可用活动可能会有所不同。
 
 例如，在营销活动中创建的工作流具有包含所有渠道的特定&#x200B;**投放**&#x200B;选项卡。 此选项卡在[技术工作流](technical-workflows.md)中不可用。
 
-![](assets/campaign-wf-activities.png)
+活动工作流的![投放选项卡：电子邮件、直邮、移动设备、iOS、Android、其他和定期投放。](assets/campaign-wf-activities.png)
 
 技术工作流具有特定的&#x200B;**事件**&#x200B;选项卡，该选项卡在[营销活动工作流](campaign-workflows.md)中不可用。
 
-![](assets/tech-wf-activities.png)
+技术工作流的![事件选项卡：文件收集器、文件传输、Web下载、入站电子邮件和入站SMS。](assets/tech-wf-activities.png)
 
 以下各章节详细介绍了所有活动：
 

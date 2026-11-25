@@ -17,9 +17,9 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '507'
 ht-degree: 1%
 ---
 # 子工作流{#sub-workflow}
@@ -30,13 +30,13 @@ ht-degree: 1%
 
 您可以在单个工作流中调用多个子工作流。 子工作流被同步执行。
 
-在下面的示例中，主工作流使用跳转调用子工作流。 有关跳转类型图形对象的详细信息，请参阅[本节](jump-start-point-and-end-point.md)。
+在下面的示例中，主工作流使用跳转调用子工作流。 有关跳转类型图形对象的详细信息，请参阅[跳转（起点和终点）](jump-start-point-and-end-point.md)。
 
 1. 创建要用作另一个工作流中的子工作流的工作流。
 1. 在工作流开头插入优先级为1的&#x200B;**[!UICONTROL Jump (end point)]**&#x200B;活动。 如果您有多个“端点”类型跳转，Adobe Campaign将使用编号最低的“端点”跳转。
 1. 在工作流末尾插入优先级为2的&#x200B;**[!UICONTROL Jump (start point)]**&#x200B;活动。 如果您有多个“起点”类型跳转，Adobe Campaign将使用具有最高数字的“起点”跳转。
 
-   ![](assets/subworkflow_jumps.png)
+   ![围绕查询和并集的子工作流图以跳转（端点） 1开头，以跳转（起点） 2结尾。](assets/subworkflow_jumps.png)
 
    >[!NOTE]
    >
@@ -47,14 +47,14 @@ ht-degree: 1%
 1. 完成并保存此“子工作流”。
 1. 创建主工作流。
 1. 插入&#x200B;**[!UICONTROL Sub-workflow]**&#x200B;活动并将其打开。
-1. 从&#x200B;**[!UICONTROL Workflow template]**&#x200B;下拉列表中选择您要使用的工作流。
+1. 从&#x200B;**[!UICONTROL Workflow template]**&#x200B;下拉列表中Select要使用的工作流。
 
-   ![](assets/subworkflow_selection.png)
+   ![子工作流活动包含工作流模板下拉列表列出可用工作流，已选择子工作流(WKF55)。](assets/subworkflow_selection.png)
 
 1. 您还可以添加配置脚本以更改引用的工作流。
 1. 单击 **[!UICONTROL Ok]**。 它会从所选工作流中自动创建标签为&#x200B;**[!UICONTROL Jump (start point)]**&#x200B;活动的叫客过渡。
 
-   ![](assets/subworkflow_outbound.png)
+   ![主工作流，带有调用子工作流和标记为跳转（起点） 2.](assets/subworkflow_outbound.png)的出站过渡
 
 1. 运行工作流。
 
@@ -64,7 +64,7 @@ ht-degree: 1%
 * 无法显示中间群体的计数。
 * 子工作流日志显示在主工作流中。
 
-  ![](assets/subworkflow_logs.png)
+  ![主工作流的“审核”选项卡，显示结果查询的子工作流日志消息。](assets/subworkflow_logs.png)
 
 >[!NOTE]
 >

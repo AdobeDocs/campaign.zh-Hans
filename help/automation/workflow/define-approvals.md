@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 3%
+source-wordcount: '885'
+ht-degree: 2%
 ---
 # 定义审批 {#defining-approvals}
 
@@ -43,11 +43,11 @@ ht-degree: 3%
 
 批准可以包含多个选项供操作员选择。 但是，可以将选择数量限制为一个，以便向操作员提交要执行的任务，例如执行定位。 执行任务后，操作员可以响应（然后恢复流程）。 以下示例说明了这些类型的批准：
 
-![](assets/validation-1.png)
+![传递验证批准的工作流导致发送、通知拒绝和通知修改请求](assets/validation-1.png)
 
 在操作中，所有需要批准的阶段都基于相同的原则。
 
-![](assets/validation-1-in-op.png)
+![活动投放块，带有审批菜单，其中显示审批内容和审批目标，两者都在等待审批](assets/validation-1-in-op.png)
 
 操作员可通过以下两种方式之一进行响应：使用电子邮件中链接的网页进行验证，或通过控制台进行验证。
 
@@ -69,7 +69,7 @@ ht-degree: 3%
 
 对于技术工作流，可以从&#x200B;**[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]**&#x200B;文件夹中的树结构访问用户可以批准的任务。
 
-![](assets/validation-node.png)
+![资源管理器树，带有管理>生产>自动创建的对象>待审批选定项](assets/validation-node.png)
 
 ## 群组 {#groups}
 
@@ -86,7 +86,7 @@ ht-degree: 3%
 
 利用活动审批属性中的第二个选项卡，可定义一个或多个过期。 事实上，您可以定义多种到期类型。
 
-![](assets/expiration.png)
+![包含过期详细信息窗口的“审批过期”选项卡和延迟选项的“过期”类型列表](assets/expiration.png)
 
 若要添加新的过期时间，请单击&#x200B;**[!UICONTROL Add]**。 创建的每个过期都将添加一个过渡。 您可以：
 

@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '2294'
+source-wordcount: '2636'
 ht-degree: 1%
 ---
 # 建立和管理审批流程 {#approval-marketing-campaigns}
@@ -51,25 +51,25 @@ ht-degree: 1%
 操作员可以通过多种方式批准：
 
 * 来自通知消息。 电子邮件中的链接可让操作员通过Web浏览器访问Campaign。 连接后，查看者可以选择是否批准内容。
-  ![](assets/approval-content-email.png)
+  ![包含批准或拒绝投放内容链接和投放详细信息的内容审批通知电子邮件。](assets/approval-content-email.png)
 
 * 从营销活动仪表板。
-  ![](assets/approval-from-dashboard.png)
+  ![客户端控制台中的Campaign仪表板，其审批菜单处于打开状态，且审批定位选项突出显示。](assets/approval-from-dashboard.png)
 
 * 从投放仪表板。
-  ![](assets/approval-from-delivery-dashboard.png)
+  ![传递仪表板，其审批菜单处于打开状态，正在列出提交内容、审批定位和审批预算。](assets/approval-from-delivery-dashboard.png)
 
 操作员可以从审批窗口访问活动和投放。 用户也可以输入评论。
 
-![](assets/approval-target-confirm.png)
+![具有“接受”或“拒绝”选项、“评论”字段和“目标审批”按钮的投放窗口上的操作。](assets/approval-target-confirm.png)
 
 操作员验证后，该信息会显示在营销活动和投放功能板以及日志中。
 
-![](assets/approvals-from-delivery.png)
+![投放仪表板审批部分显示已批准的目标和要审批的预算及其截止日期。](assets/approvals-from-delivery.png)
 
 该信息还可在投放的审批日志和营销策划的审批日志中找到。 通过&#x200B;**[!UICONTROL Edit > Audit > Approvals]**&#x200B;选项卡访问这些日志。
 
-![](assets/approval-logs.png)
+![传递审核审批选项卡，带有审批截止时间计划和用于定向的审批日志条目。](assets/approval-logs.png)
 
 
 ## 启用审批{#enable-approvals}
@@ -84,24 +84,24 @@ ht-degree: 1%
 
 在以下示例中，投放内容不需要审批：
 
-![](assets/approval-not-enabled.png)
+![启用目标和预算审批时，清除“启用内容审批”的投放属性“审批”选项卡。](assets/approval-not-enabled.png)
 
 
 >[!CAUTION]
 >
 >检查审阅人是否具有批准所需的&#x200B;**适当权限**，以及是否正确定义了其安全区域。 [了解详情](#selecting-reviewers)。
 
-在[此部分](#review-and-approve-deliveries)中详细介绍了投放的批准流程。
+在[审阅和批准投放](#review-and-approve-deliveries)中详细介绍了投放的批准流程。
 
-## 选择审阅人 {#select-reviewers}
+## Select审阅者 {#select-reviewers}
 
 对于每种类型的批准，从投放的下拉列表中选择负责批准的操作员或操作员组。 可以使用&#x200B;**[!UICONTROL Edit...]**&#x200B;链接添加更多运算符。 此窗口还允许您编辑审批截止日期。 默认情况下，审阅人从提交日期起有三天时间来批准流程。 要添加自动提醒，请使用&#x200B;**[!UICONTROL Add a reminder]**&#x200B;链接。
 
-![](assets/add-reviewers.png)
+![高级设置的“批准”选项卡和“编辑审阅人”窗口，其中包含其他审阅人，延迟并添加提醒。](assets/add-reviewers.png)
 
 如果未指定审核者，则市场活动责任人负责审批并接收通知。 在营销活动的&#x200B;**[!UICONTROL Edit > Properties]**&#x200B;选项卡中指定营销活动所有者：
 
-![](assets/campaign-owner.png)
+![高亮显示“任务负责人”字段的“营销活动编辑”选项卡以设置营销活动所有者。](assets/campaign-owner.png)
 
 所有其他具有&#x200B;**[!UICONTROL Administrator]**&#x200B;权限的Adobe Campaign操作员也可以批准作业，但他们不会收到通知。
 
@@ -112,7 +112,7 @@ ht-degree: 1%
 
 如果定义了审核者列表，则当审核者批准某个作业后，该作业即会被批准。 然后，审批链接在营销活动和投放仪表板中不再可用。 启用发送通知后，如果其他查看者单击通知消息中的批准链接，则会通知他们其他操作员已批准作业。
 
-![](assets/delivery-target-already-approved.png)
+![通知电子邮件，确认投放目标已被其他操作员批准。](assets/delivery-target-already-approved.png)
 
 
 ## 审阅和批准投放 {#review-and-approve-deliveries}
@@ -132,7 +132,7 @@ ht-degree: 1%
 
 需要批准的阶段将显示在Campaign仪表板上（通过客户端控制台或Web界面）。 它们还会显示在投放跟踪表和投放仪表板中。
 
-![](assets/delivery-approval-actions.png)
+![带有审批菜单的投放摘要列出提交内容、审批目标和审批预算。](assets/delivery-approval-actions.png)
 
 对于活动中的每个投放，您可以批准以下流程：
 
@@ -140,7 +140,7 @@ ht-degree: 1%
 
   在审批设置窗口中选择&#x200B;**[!UICONTROL Enable target approval]**、**[!UICONTROL Enable content approval]**&#x200B;或&#x200B;**[!UICONTROL Enable budget approval]**&#x200B;选项后，相关链接将显示在营销活动和投放功能板中。
 
-  ![](assets/template-activate-6.png)
+  ![高级设置审批选项卡，带有启用内容、目标、预算和提取审批选项及其审阅者。](assets/template-activate-6.png)
 
   >[!NOTE]
   >
@@ -156,7 +156,7 @@ ht-degree: 1%
 
   **[!UICONTROL Approve file]**&#x200B;选项在营销活动和投放功能板上可用。
 
-  ![](assets/approve-file-preview.png)
+  ![包含“批准文件”按钮的Web传递页面，以及“传递操作”窗口，用于接受或拒绝文件。](assets/approve-file-preview.png)
 
   您可以在验证之前预览输出文件。 提取文件预览仅显示数据示例。 未加载整个文件。
 
@@ -164,7 +164,7 @@ ht-degree: 1%
 
   **[!UICONTROL Enable individual approval of each associated delivery]**&#x200B;选项用于与辅助投放相关的一个主投放。 默认情况下，未选中此选项，因此可以对主投放执行整体审批。 如果选择此选项，则必须单独批准每个投放。
 
-  ![](assets/enable-ind-approval.png)
+  ![高级设置的“审批”选项卡，允许单独审批每个选定的关联投放。](assets/enable-ind-approval.png)
 
 
 >[!NOTE]
@@ -252,20 +252,20 @@ ht-degree: 1%
 
 1. 选择 **[!UICONTROL Approve targeting]**。
 
-![](assets/target-validation-from-console.png)
+![打开了“批准”下拉列表的“营销活动”仪表板，并打开了“批准内容”和“批准定位”选项。](assets/target-validation-from-console.png)
 
 1. 在弹出窗口中，检查要批准的信息。
-1. 选择&#x200B;**[!UICONTROL Accept]**&#x200B;或&#x200B;**[!UICONTROL Reject]**，并根据需要输入评论。 此注释将显示在验证日志中。
+1. Select **[!UICONTROL Accept]**&#x200B;或&#x200B;**[!UICONTROL Reject]**，并根据需要输入评论。 此注释将显示在验证日志中。
 1. 使用&#x200B;**[!UICONTROL Target approval]**&#x200B;按钮确认您的选择。
 
-![](assets/confirm-validation-from-console.png)
+![已选择“接受”的投放窗口操作，已输入评论并突出显示目标审批按钮。](assets/confirm-validation-from-console.png)
 
 
 如果某个流程已被其他操作员批准，则批准链接不可用。
 
 如果流程被拒绝，则投放仪表板中会显示以下信息：
 
-![](assets/target-approval-rejected.png)
+![显示“目标”审批的投放仪表板被拒绝，显示“审批定位”按钮和“定位被拒绝”状态。](assets/target-approval-rejected.png)
 
 
 ### 批准通知消息 {#approval-via-notification-messages}
@@ -275,7 +275,7 @@ ht-degree: 1%
 1. 单击通知中的链接。
 1. 登录到Adobe Campaign。
 1. 检查要批准的信息
-1. 选择&#x200B;**[!UICONTROL Accept]**&#x200B;或&#x200B;**[!UICONTROL Reject]**，并根据需要输入评论。
+1. Select **[!UICONTROL Accept]**&#x200B;或&#x200B;**[!UICONTROL Reject]**，并根据需要输入评论。
 1. 验证。 您的选择和注释将显示在验证日志中。
 
 >[!NOTE]
@@ -288,19 +288,19 @@ ht-degree: 1%
 
 * 在营销活动审批日志中，**[!UICONTROL Edit > Audit]**&#x200B;选项卡的&#x200B;**[!UICONTROL Approvals]**&#x200B;子选项卡：
 
-  ![](assets/approval-tracking-from-campaign.png)
+  ![营销活动编辑>审核>审批子选项卡，其中列出了包含投放、操作、类型和审批者的审批日记帐。](assets/approval-tracking-from-campaign.png)
 
 * 在营销活动投放日志中，**[!UICONTROL Edit > Audit]**&#x200B;选项卡的&#x200B;**[!UICONTROL Deliveries]**&#x200B;子选项卡：
 
-  ![](assets/approval-tracking-from-campaign-deliveries.png)
+  ![活动编辑>审核>投放子选项卡，其中列出了每个投放及其定向和内容状态。](assets/approval-tracking-from-campaign-deliveries.png)
 
 * 单击&#x200B;**[!UICONTROL Summary]**&#x200B;选项卡的&#x200B;**[!UICONTROL Hide/display logs]**&#x200B;选项可查看每个投放的批准状态。
 
-  ![](assets/approval-tracking-delivery-dashboard.png)
+  ![突出显示了“隐藏/显示日志”链接的“投放摘要”选项卡，审批日志显示在审批下。](assets/approval-tracking-delivery-dashboard.png)
 
 * 也可以通过每个投放的&#x200B;**[!UICONTROL Audit > Approvals]**&#x200B;选项卡访问此信息：
 
-  ![](assets/approval-tracking-delivery-tab.png)
+  ![投放审核>审批选项卡，其中列出了审批日志，包括日期、操作、类型、审批者和评论。](assets/approval-tracking-delivery-tab.png)
 
 >[!NOTE]
 >
@@ -310,9 +310,9 @@ ht-degree: 1%
 
 在创建定位工作流时，如果批准是自动的（默认模式），Adobe Campaign会显示批准链接，或者在需要批准时立即发送通知。
 
-要选择审批模式（手动或自动），请单击营销活动或营销活动模板的&#x200B;**[!UICONTROL Edit > Properties]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Advanced campaign parameters...]**，最后点击&#x200B;**[!UICONTROL Approvals]**&#x200B;选项卡。
+要选择审批模式（手动或自动），请单击营销活动或营销活动模板的&#x200B;**[!UICONTROL Edit > Properties]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Advanced campaign parameters...]**，最后点击&#x200B;**[!UICONTROL Approvals]**选项卡。
 票面值
-![](assets/approval-mode.png)
+![高级设置审批选项卡，审批模式下拉列表处于打开状态，显示自动和手动。](assets/approval-mode.png)
 
 >[!NOTE]
 >
@@ -338,7 +338,7 @@ ht-degree: 1%
 
 为此，请编辑营销活动或营销活动模板的审批窗口（**[!UICONTROL Edit > Properties]** > **[!UICONTROL Advanced campaign parameters...]** > **[!UICONTROL Approvals]**&#x200B;选项卡）并选择&#x200B;**[!UICONTROL Do not enable notification sending]**。
 
-![](assets/enable-disable-notifications.png)
+![高级设置的“审批”选项卡选中了“不启用通知发送”。](assets/enable-disable-notifications.png)
 
 ### 通知内容 {#notification-content}
 

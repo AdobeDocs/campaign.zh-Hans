@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7e1c567dc2f70e2d9ada67c2ec46918c5821753e
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '1005'
 ht-degree: 4%
 ---
 # 构建工作流 {#build-a-workflow}
@@ -31,7 +31,7 @@ ht-degree: 4%
 
 * 从资源管理器的&#x200B;**[!UICONTROL Profiles and Targets]** > **[!UICONTROL Jobs]** > **[!UICONTROL Targeting workflows]**&#x200B;节点或从主页的&#x200B;**[!UICONTROL Profiles and Targets]**&#x200B;选项卡通过&#x200B;**[!UICONTROL Targeting workflows]**&#x200B;子选项卡创建[定位工作流](#targeting-workflows)。
 
-  ![](assets/create-targeting-wf.png)
+  ![在“配置文件和目标”选项卡上突出显示“创建”按钮的定位工作流列表](assets/create-targeting-wf.png)
 
 * 从营销活动的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡创建[营销活动工作流](#campaign-workflows)
 
@@ -39,7 +39,7 @@ ht-degree: 4%
 
 单击位于工作流列表上方的&#x200B;**[!UICONTROL New]**&#x200B;按钮。
 
-![](assets/create_a_wf_icon.png)
+![使用在列表上方突出显示的“新建”按钮定位工作流列表](assets/create_a_wf_icon.png)
 
 输入标签并单击&#x200B;**[!UICONTROL Save]**。
 
@@ -47,7 +47,7 @@ ht-degree: 4%
 
 您现在必须定义各种活动，并在图表中将它们链接到一起。 在配置的此阶段，我们可以看到图标签和工作流状态（正在编辑）。 窗口的下部仅用于编辑图。 它包含一个工具栏、活动面板（位于左侧）以及图表本身（位于右侧）。
 
-![](assets/new-workflow-2.png)
+![带有标签的工作流编辑器，正在编辑状态，工具栏，活动面板和空图区域](assets/new-workflow-2.png)
 
 >[!NOTE]
 >
@@ -66,17 +66,17 @@ ht-degree: 4%
 
    在关系图上添加&#x200B;**开始**&#x200B;活动，然后添加&#x200B;**投放**&#x200B;活动。
 
-   ![](assets/new-workflow-3.png)
+   ![带有开始活动和投放活动的图表](assets/new-workflow-3.png)
 
 1. 通过将&#x200B;**开始**&#x200B;活动过渡拖放到&#x200B;**投放**&#x200B;活动上，将两个活动链接在一起。
 
-   ![](assets/new-workflow-4.png)
+   ![启动通过过渡到投放活动链接的活动](assets/new-workflow-4.png)
 
    通过将新活动放在过渡的末尾，您可以自动将活动链接到上一个活动。
 
 1. 添加所需的活动并将它们链接在一起，如下图所示。
 
-   ![](assets/new-workflow-5.png)
+   ![链接开始、投放、审批、投放控制和结束的工作流图表为“是”和“否”过渡](assets/new-workflow-5.png)
 
 >[!CAUTION]
 >
@@ -88,11 +88,11 @@ ht-degree: 4%
 
   通过图编辑工具栏，您可以访问工作流的布局和执行功能。
 
-  ![](assets/wf-toolbar.png)
+  ![在包含查询、合并、重复数据删除、拆分和投放的工作流上方高亮显示的图编辑工具栏](assets/wf-toolbar.png)
 
   这使您可以调整编辑工具的布局：面板的显示以及图形对象的概述、大小和对齐方式。
 
-  ![](assets/s_user_segmentation_toolbar.png)
+  ![工具栏组：显示和布局、跟踪和执行，以及“属性”按钮](assets/s_user_segmentation_toolbar.png)
 
   以下各节详细介绍了与进度和日志显示相关的图标：
 
@@ -115,17 +115,17 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->[此部分](activities.md)中详细介绍了活动工作流活动。
+>[关于工作流活动](activities.md)中详细介绍了活动工作流活动。
 
 第一个选项卡包含基本配置。 **[!UICONTROL Advanced]**&#x200B;选项卡包含其他参数，这些参数特别用于定义遇到错误时的行为、指定活动的执行持续时间以及输入初始化脚本。
 
 为了更好地了解活动并改善工作流的易读性，您可以在活动中输入备注。
 
-![](assets/example1-comment.png)
+![在“注释”字段中输入了注释的“查询活动高级”选项卡](assets/example1-comment.png)
 
 当操作员滚动到活动上时，将自动显示这些注释。
 
-![](assets/example2-comment.png)
+![当指针位于图中的拆分活动上时，工具提示中显示的注释文本](assets/example2-comment.png)
 
 
 ## 工作流模板 {#workflow-templates}
@@ -138,7 +138,7 @@ ht-degree: 4%
 
 除了常规工作流属性之外，模板属性还允许您为基于此模板创建的工作流指定执行文件。
 
-![](assets/wf-template-properties.png)
+![工作流属性“常规”选项卡，在“工作流”文件夹中打开“执行”文件夹选择器](assets/wf-template-properties.png)
 
 ## 复制工作流 {#duplicate-workflows}
 
@@ -149,7 +149,7 @@ Adobe建议复制工作流，而不是执行活动的复制/粘贴。 复制活�
 1. 右键单击工作流。
 1. 单击&#x200B;**复制**。
 
-   ![](assets/duplicate-workflows.png)
+   ![打开了右键单击菜单且“复制”选项突出显示的工作流列表](assets/duplicate-workflows.png)
 
 1. 在工作流窗口中，更改工作流标签。
 1. 单击&#x200B;**保存**。

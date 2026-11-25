@@ -28,16 +28,16 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 3%
+source-wordcount: '822'
+ht-degree: 2%
 ---
 # 本地审批{#local-approval}
 
 集成到定位工作流中后，**[!UICONTROL Local approval]**&#x200B;活动允许您在发送投放之前设置收件人审批流程。
 
-![](assets/local_validation_0.png)
+![具有Target审批通知操作、审批管理和生成补充选项的本地审批活动。](assets/local_validation_0.png)
 
 >[!CAUTION]
 >
@@ -47,23 +47,23 @@ ht-degree: 3%
 
 首先为活动和&#x200B;**[!UICONTROL Action to execute]**&#x200B;字段输入标签：
 
-![](assets/local_validation_1.png)
+![本地审批活动标签和要执行的操作：目标审批通知或投放反馈报告。](assets/local_validation_1.png)
 
-* 选择&#x200B;**[!UICONTROL Target approval notification]**&#x200B;选项可在投放之前向本地主管发送通知电子邮件，要求他们批准分配给他们的收件人。
+* Select的&#x200B;**[!UICONTROL Target approval notification]**&#x200B;选项可在投放之前向本地主管发送通知电子邮件，要求他们批准分配给他们的收件人。
 
 * **增量查询**：允许您执行查询并计划其执行。 请参阅[增量查询](incremental-query.md)部分。
 
-  ![](assets/local_validation_intro_3.png)
+  ![本地验证网页，其中包含按性别和状态分类的收件人投放反馈列表：“已发送”、“已打开”、“已单击”](assets/local_validation_intro_3.png)
 
 ## 目标审批通知 {#target-approval-notification}
 
 在这种情况下，**[!UICONTROL Local approval]**&#x200B;活动位于上游定位和投放之间：
 
-![](assets/local_validation_2.png)
+![本地验证活动位于查询1和投放之间的工作流。](assets/local_validation_2.png)
 
 如果收到目标审批通知，则要输入的字段包括：
 
-![](assets/local_validation_3.png)
+![目标审批通知的本地审批字段：分发上下文、审批类型、模板、提醒。](assets/local_validation_3.png)
 
 * **[!UICONTROL Distribution context]**：如果您使用&#x200B;**[!UICONTROL Split]**&#x200B;类型活动来限制目标群体，请选择&#x200B;**[!UICONTROL Specified in the transition]**&#x200B;选项。 在这种情况下，在拆分活动中输入分发模板。 如果不限制定向群体，请在此处选择&#x200B;**[!UICONTROL Explicit]**&#x200B;选项，然后在&#x200B;**[!UICONTROL Data distribution]**&#x200B;字段中输入分发模板。
 
@@ -71,7 +71,7 @@ ht-degree: 3%
 
 * **[!UICONTROL Approval management]**
 
-  * 选择投放模板和将用于电子邮件通知的主题。 默认模板可用： **[!UICONTROL Local approval notification]**。 您还可以添加描述，该描述将显示在审批和反馈通知的收件人列表上方。
+  * Select投放模板和将用于电子邮件通知的主题。 默认模板可用： **[!UICONTROL Local approval notification]**。 您还可以添加描述，该描述将显示在审批和反馈通知的收件人列表上方。
   * 指定与审批截止日期（自审批开始起的日期或截止日期）对应的&#x200B;**[!UICONTROL Approval type]**。 在此日期，工作流将再次启动，并且未在定向中考虑未批准的收件人。 发送通知后，活动将排入队列，以便本地主管批准其联系人。
 
     >[!NOTE]
@@ -90,14 +90,14 @@ ht-degree: 3%
 
 在这种情况下，**[!UICONTROL Local approval]**&#x200B;活动放在投放之后：
 
-![](assets/local_validation_4.png)
+![在投放活动后放置了等待和本地验证2活动的工作流。](assets/local_validation_4.png)
 
 如果是投放反馈报告，则必须输入以下字段：
 
-![](assets/local_validation_workflow_4.png)
+![本地审批设置为传递反馈报告，在过渡传递选项和模板中指定了。](assets/local_validation_workflow_4.png)
 
-* 如果投放是在前一个活动期间输入的，请选择&#x200B;**[!UICONTROL Specified in the transition]**&#x200B;选项。 选择&#x200B;**[!UICONTROL Explicit]**&#x200B;以在本地审批活动中指定投放。
-* 选择投放模板和通知电子邮件的对象。 有一个默认模板： **[!UICONTROL Local approval notification]**。
+* 如果投放是在前一个活动期间输入的，则Select **[!UICONTROL Specified in the transition]**&#x200B;选项。 Select **[!UICONTROL Explicit]**&#x200B;以在本机审批活动中指定投放。
+* Select投放模板和通知电子邮件的对象。 有一个默认模板： **[!UICONTROL Local approval notification]**。
 
 ## 示例：批准工作流投放 {#example--approving-a-workflow-delivery}
 
@@ -111,22 +111,22 @@ ht-degree: 3%
 
   要批准投放，请单击相关链接，然后登录到Adobe Campaign客户端控制台。
 
-  ![](assets/new-workflow-valid-webaccess.png)
+  ![审批请求电子邮件，询问是否批准574位收件人，单击此处回复链接。](assets/new-workflow-valid-webaccess.png)
 
   进行选择并单击&#x200B;**[!UICONTROL Submit]**&#x200B;按钮。
 
-  ![](assets/new-workflow-valid-webaccess-confirm.png)
+  ![包含“备注”字段、“是”和“否”选项以及“提交”按钮的审批网页。](assets/new-workflow-valid-webaccess-confirm.png)
 
 * 通过Client Console审批
 
   在树结构中，**[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]**&#x200B;节点包含要由当前连接的运算符批准的任务的列表。 列表应显示一行。 双击此行以响应。 将显示以下窗口：
 
-![](assets/new-workflow-7.png)
+![在客户端控制台和“任务审批”窗口中选择了“是”和“审批”按钮的“等待审批”节点。](assets/new-workflow-7.png)
 
-选择&#x200B;**是**，然后单击&#x200B;**[!UICONTROL Approve]**。 一条消息将通知您已记录该响应。
+Select **是**，然后单击&#x200B;**[!UICONTROL Approve]**。 一条消息将通知您已记录该响应。
 
 返回工作流屏幕：大约10秒后，图表显示如下：
 
-![](assets/new-workflow-8.png)
+![审批后的工作流图：投放、审批、投放控制和结束，后面是“是”分支。](assets/new-workflow-8.png)
 
 工作流已执行&#x200B;**[!UICONTROL Delivery control]**&#x200B;任务，在本例中，这意味着开始之前创建的投放。 工作流已完成，并且没有错误。

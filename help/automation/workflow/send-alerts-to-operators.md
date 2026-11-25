@@ -17,9 +17,9 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '467'
 ht-degree: 2%
 ---
 # 向操作员发送个性化提醒{#sending-personalized-alerts-to-operators}
@@ -37,7 +37,7 @@ ht-degree: 2%
 1. 使用&#x200B;**[!UICONTROL Test]**&#x200B;活动检查群体计数。
 1. 根据&#x200B;**[!UICONTROL Test]**&#x200B;活动结果，使用&#x200B;**[!UICONTROL Alert]**&#x200B;活动向操作员发送警报。
 
-![](assets/uc_operator_1.png)
+![包含查询、JavaScript代码和测试活动的工作流；True分支导致Alert活动，False到End 2。](assets/uc_operator_1.png)
 
 ## 将群体保存到实例变量 {#saving-the-population-to-the-instance-variable}
 
@@ -60,21 +60,21 @@ var query = xtk.queryDef.create(
 * **[!UICONTROL queryDef schema]**&#x200B;标记应该与查询活动中使用的定向维度的名称相对应。
 * **[!UICONTROL node expr]**&#x200B;标记应该与要检索的字段的名称相对应。
 
-![](assets/uc_operator_3.png)
+![包含queryDef架构temp :query以及高亮显示的target firstName和lastName节点的JavaScript代码脚本。](assets/uc_operator_3.png)
 
 要检索这些信息，请执行以下步骤：
 
 1. 右键单击&#x200B;**[!UICONTROL Query]**&#x200B;活动中的叫客过渡，然后选择&#x200B;**[!UICONTROL Display the target]**。
 
-   ![](assets/uc_operator_4.png)
+   ![右键单击显示选定目标的查询活动出站过渡的菜单。](assets/uc_operator_4.png)
 
 1. 右键单击列表，然后选择&#x200B;**[!UICONTROL Configure list]**。
 
-   ![](assets/uc_operator_5.png)
+   ![打开了右键单击菜单并选定“配置”列表的目标列表的记录。](assets/uc_operator_5.png)
 
 1. 查询定向维度和字段名称显示在列表中。
 
-   ![](assets/uc_operator_6.png)
+   ![配置列表列选项卡，显示高亮显示的查询临时根元素:query及其定向维度字段。](assets/uc_operator_6.png)
 
 ## 测试群体计数 {#testing-the-population-count}
 
@@ -84,7 +84,7 @@ var query = xtk.queryDef.create(
 var.recCount>0
 ```
 
-![](assets/uc_operator_7.png)
+![使用条件vars.recCount>0和默认的False分支测试具有True条件分支的活动。](assets/uc_operator_7.png)
 
 ## 设置警报 {#setting-up-the-alert}
 
@@ -108,4 +108,4 @@ for each (var item in items){
 >**[!UICONTROL <%= item.target.recipient.@fieldName %>]**&#x200B;命令允许您添加通过&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动保存到实例变量的字段之一。\
 >您可以根据需要添加任意数量的字段，但前提是这些字段已插入JavaScript代码中。
 
-![](assets/uc_operator_8.png)
+![将警报活动分配给操作员，其消息循环显示已保存的项目以列出名字和姓氏。](assets/uc_operator_8.png)

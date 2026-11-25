@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 2%
+source-wordcount: '271'
+ht-degree: 1%
 ---
 # 监测营销活动 {#monitor-marketing-campaigns}
 
@@ -38,11 +38,11 @@ ht-degree: 2%
 
 * **[!UICONTROL Audit]**&#x200B;子选项卡显示活动日志。 它包含在Campaign上执行的作业：工作流创建或启动、批准、提取、库存管理等。
 
-  ![](assets/campaign-audit-tab.png)
+  ![活动编辑选项卡，审核部分，日志子选项卡，列出活动日志消息和日志类型](assets/campaign-audit-tab.png)
 
 * **[!UICONTROL Deliveries]**&#x200B;子选项卡包含营销活动的所有投放。 可以从此视图中编辑它们。 为此，请选择投放并单击&#x200B;**[!UICONTROL Detail]**&#x200B;图标。
 
-  ![](assets/campaign-delivery-tab.png)
+  ![营销活动审核部分，投放子选项卡列表渠道、状态、定位状态和内容状态](assets/campaign-delivery-tab.png)
 
 * **[!UICONTROL Approvals]**&#x200B;子选项卡包含营销活动的所有批准流程。 您可以检查详细信息和注释
 
@@ -52,7 +52,7 @@ ht-degree: 2%
 
 可通过营销活动节点的&#x200B;**[!UICONTROL Deliveries]**&#x200B;链接访问投放列表。
 
-![](assets/filter-deliveries-from-homepage.png)
+![主页上的投放列表，带有状态筛选器下拉列表“正在编辑”、“进行中”和“已完成”](assets/filter-deliveries-from-homepage.png)
 
 对于每个投放，此列表可让您访问关键指标：状态、已定向的收件人数量、关联的营销活动等。
 

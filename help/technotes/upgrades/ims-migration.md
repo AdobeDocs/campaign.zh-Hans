@@ -15,9 +15,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: cdc2fbe67fe123c895c8d3d71daffe022ba5c030
 workflow-type: tm+mt
-source-wordcount: '1598'
+source-wordcount: '1763'
 ht-degree: 0%
 ---
 # 将Campaign技术操作员迁移到Adobe Developer Console {#migrate-tech-users-to-ims}
@@ -73,7 +73,7 @@ For this migration, you must add below APIs in your project: **I/O Management AP
 
 要创建新项目，请在Adobe Developer Console的主屏幕中单击&#x200B;**新建项目**。
 
-![](assets/New-Project.png)
+![Adobe Developer Console主页中突出显示了新建项目快速入门选项。](assets/New-Project.png)
 
 您可以使用&#x200B;**编辑项目**&#x200B;按钮重命名此项目。
 
@@ -84,17 +84,17 @@ For this migration, you must add below APIs in your project: **I/O Management AP
 
 要将API添加到项目中，请执行以下步骤：
 
-1. 单击&#x200B;**添加API**&#x200B;以选择要添加到项目中的API。
-   ![](assets/do-not-localize/ims-updates-01.png)
-1. 通过勾选Adobe Campaign卡片右上角的框，选择并将Adobe Campaign API添加到您的项目中，在将鼠标悬停在该卡片上时会显示该框
-   ![](assets/do-not-localize/ims-updates-02.png)
+1. 单击&#x200B;**添加API**以选择要添加到项目中的API。
+   ![在Adobe Developer Console中使用“添加API”、“添加事件”和“添加插件”选项新建空项目页面。](assets/do-not-localize/ims-updates-01.png)
+1. Select ，并通过选中Adobe Campaign卡右上角的框（将鼠标悬停在该卡上时显示）来将Adobe Campaign API添加到您的项目中
+   ![在Experience Cloud和“下一步”按钮下选择Adobe Campaign卡后，添加API屏幕。](assets/do-not-localize/ims-updates-02.png)
 1. 单击屏幕底部的&#x200B;**下一步**。
 
-### 步骤3 — 选择身份验证类型  {#ims-migration-step-3}
+### 步骤3 -Select身份验证类型  {#ims-migration-step-3}
 
 在&#x200B;**配置API**&#x200B;屏幕中，选择所需的身份验证类型。 此项目需要&#x200B;**OAuth服务器到服务器**&#x200B;身份验证。 请确保已选中它，然后单击屏幕底部的&#x200B;**下一步**。
 
-![](assets/do-not-localize/ims-updates-03.png)
+![选择OAuth服务器到服务器来配置API屏幕、凭据名称字段和“下一步”按钮。](assets/do-not-localize/ims-updates-03.png)
 
 <!--
 Once your project is created in the Adobe Developer Console, add an API that uses Server-to-Server authentication. Learn how to set up the OAuth Server-to-Server credential in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/){target="_blank"}.
@@ -102,7 +102,7 @@ Once your project is created in the Adobe Developer Console, add an API that use
 When the API has been successfully connected, you can access the newly generated credentials including Client ID and Client Secret, as well as generate an access token.
 -->
 
-### 第4步 — 选择产品配置文件 {#ims-migration-step-4}
+### 步骤4 -Select产品配置文件 {#ims-migration-step-4}
 
 如先决条件部分中所述，您必须分配项目使用的相应产品配置文件。 在此步骤中，您必须选择要由正在创建的技术帐户使用的产品配置文件。
 
@@ -129,17 +129,17 @@ You can now add your Campaign product profile to the project, as detailed below:
 
 从项目屏幕中，单击&#x200B;**[!UICONTROL + Add to Project]**&#x200B;并选择屏幕左上角的&#x200B;**[!UICONTROL API]**&#x200B;以便能够将I/O管理API添加到此项目。
 
-![](assets/do-not-localize/ims-updates-04.png)
+![Adobe Campaign API页面，打开了“添加到项目”菜单，其中显示API、事件和插件。](assets/do-not-localize/ims-updates-04.png)
 
-在&#x200B;**添加API**&#x200B;屏幕中，向下滚动以查找&#x200B;**I/O管理API**&#x200B;卡。 单击将鼠标悬停在信息卡上时显示的复选框以将其选中。 然后单击屏幕底部的&#x200B;**下一步**。
+在&#x200B;**添加API**&#x200B;屏幕中，向下滚动以查找&#x200B;**I/O管理API**&#x200B;卡。 通过单击将鼠标悬停在信息卡上时显示的复选框，可Select该信息。 然后单击屏幕底部的&#x200B;**下一步**。
 
-![](assets/do-not-localize/ims-updates-05.png)
+![在选择了I/O管理API卡和“下一步”按钮的情况下添加API屏幕。](assets/do-not-localize/ims-updates-05.png)
 
 
 在&#x200B;**配置API**&#x200B;屏幕中，OAuth服务器到服务器身份验证已存在。 单击屏幕底部的&#x200B;**保存配置的API**。
 
 
-![](assets/do-not-localize/ims-updates-06.png)
+![显示现有OAuth服务器到服务器凭据的“配置API”屏幕和“保存配置的API”按钮。](assets/do-not-localize/ims-updates-06.png)
 
 这会将您带回新创建项目的I/O管理API中的项目屏幕。 单击屏幕顶部的痕迹导航中的项目名称，可返回到项目详细信息主页。
 
@@ -148,7 +148,7 @@ You can now add your Campaign product profile to the project, as detailed below:
 
 请检查您的项目，确保它与“产品和服务”部分中显示的&#x200B;**I/O管理API**&#x200B;和&#x200B;**Adobe Campaign API**&#x200B;以及“凭据”部分中的&#x200B;**OAuth服务器到服务器**&#x200B;类似，如下所示。
 
-![](assets/do-not-localize/ims-updates-07.png)
+![项目概述列出了“产品和服务”下的I/O管理API和Adobe Campaign，以及OAuth服务器到服务器。](assets/do-not-localize/ims-updates-07.png)
 
 
 ### 步骤7 — 验证配置 {#ims-migration-step-7}
@@ -222,17 +222,17 @@ curl --location --request POST 'https://<instance_url>/nl/jsp/schemawsdl.jsp?sch
 
 此步骤是可选的，并且仅在营销实例中可用，不能在任何消息中心实例中使用。 如果已经为技术操作员定义了特定文件夹权限或已命名权限，但未通过分配的操作员组。 现在，您需要在Admin Console中更新新创建的技术帐户用户，以授予所需的文件夹权限或命名权限。
 
-请注意，在对Campaign实例至少进行API调用后（IMS届时将在Campaign中创建用户），技术帐户用户才会存在于Adobe Campaign中。 如果您在Campaign中找不到技术用户，请确保能够成功发送API调用，如步骤7[&#128279;](#ims-migration-step-7)中所述。
+请注意，在对Campaign实例至少进行API调用后（IMS届时将在Campaign中创建用户），技术帐户用户才会存在于Adobe Campaign中。 如果您在Campaign中找不到技术用户，请确保能够成功发送API调用，如步骤7](#ims-migration-step-7)中所述[。
 
 1. 要应用新的技术帐户用户所需的更改，请按照电子邮件地址在Campaign客户端控制台中找到它们。 此电子邮件地址是在上述项目创建和身份验证步骤中创建的。
 
    您可以通过单击项目&#x200B;**凭据**&#x200B;部分中的&#x200B;**OAuth服务器到服务器**&#x200B;标题找到此电子邮件地址。
 
-   ![](assets/do-not-localize/ims-updates-07.png)
+   ![具有OAuth服务器到服务器凭据的项目概述可在“凭据”部分中选择。](assets/do-not-localize/ims-updates-07.png)
 
-   在“凭据”屏幕中，向下滚动以找到&#x200B;**技术帐户电子邮件**，然后单击&#x200B;**复制**&#x200B;按钮。
+   在“凭据”屏幕中，向下滚动以找到&#x200B;**技术帐户电子邮件**，然后单击**复制**按钮。
 
-   ![](assets/do-not-localize/ims-updates-08.png)
+   ![包含“生成访问令牌”按钮、客户端ID和客户端密钥的OAuth服务器到服务器凭据详细信息。](assets/do-not-localize/ims-updates-08.png)
 
 1. 您现在需要在Adobe Campaign客户端控制台中更新新创建的技术运算符。 您必须将现有的技术操作员文件夹权限应用到新的技术操作员。
 

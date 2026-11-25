@@ -21,9 +21,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '194'
 ht-degree: 2%
 ---
 # 外部信号{#external-signal}
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 您可以配置此活动，以便在未收到信号时定义事件。 为此，请编辑该活动并单击&#x200B;**[!UICONTROL Expiration]**&#x200B;选项卡。 单击&#x200B;**[!UICONTROL Insert]**&#x200B;按钮创建和配置事件。
 
-![](assets/edit_signal.png)
+![外部信号过期选项卡列出了三个过期日期，过期详细信息窗口打开](assets/edit_signal.png)
 
 [有效期](define-approvals.md)中详细介绍了有效期的配置。
 
@@ -46,4 +46,4 @@ ht-degree: 2%
 
 每行表示一种到期类型，并与过渡一致。
 
-![](assets/external_sign_diag.png)
+![外部信号活动，具有出站过渡到期、到期2、到期3和新](assets/external_sign_diag.png)

@@ -25,10 +25,10 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 8839c1717cb026a38987a745ffc080a79f344bce
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 4%
+source-wordcount: '1529'
+ht-degree: 3%
 ---
 # 创建项目和活动{#create-programs-and-campaigns}
 
@@ -36,9 +36,9 @@ ht-degree: 4%
 
 营销方案由营销活动组成，营销活动由投放、资源等组成。所有与投放、预算、审阅者和链接文档相关的信息均分组到营销活动中。
 
-![](assets/campaigns-create-from-home.png)
+![包含营销活动列表、“创建”按钮和营销活动日历菜单的营销活动主页](assets/campaigns-create-from-home.png)
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现项目和营销活动](#video)
+有关项目和营销策划的视频![播放图标](assets/do-not-localize/how-to-video.png) [在视频中发现项目和营销策划](#video)
 
 ## 使用方案和计划{#work-with-plan-and-program}
 
@@ -50,20 +50,20 @@ ht-degree: 4%
 
 1. 单击主页上的&#x200B;**资源管理器**&#x200B;图标。
 1. 右键单击要在其中创建计划的文件夹。
-1. 选择&#x200B;**添加新文件夹>促销活动管理>计划**。
+1. Select **添加新文件夹>促销活动管理>计划**。
 
-   ![](assets/create-new-plan-folder.png)
+   ![在资源管理器中添加新文件夹菜单，并选择“Campaign管理”>“计划”](assets/create-new-plan-folder.png)
 
 1. 重命名计划。
 1. 右键单击新创建的计划并选择&#x200B;**属性……**。
 1. 在&#x200B;**常规**&#x200B;选项卡中，修改&#x200B;**内部名称**&#x200B;以避免在导出包期间出现重复项。
 
-   ![](assets/plan-properties.png)
+   ![文件夹属性对话框，常规选项卡，带有标签和内部名称字段以及保存按钮](assets/plan-properties.png)
 
 1. 单击&#x200B;**保存**。
 1. 右键单击新创建的计划并选择&#x200B;**创建新的“项目”文件夹**。
 
-   ![](assets/program-folder.png)
+   ![已选择创建新的“Program”文件夹的计划文件夹上的右键单击菜单](assets/program-folder.png)
 
 1. 重复上述步骤以重命名新的程序文件夹及其内部名称。
 
@@ -76,7 +76,7 @@ ht-degree: 4%
 
 * 通过&#x200B;**编辑**&#x200B;选项卡，可对项目进行个性化设置：名称、开始和结束日期、预算、链接文档等。
 
-  ![](assets/new-program-edit-tab.png)
+  ![项目编辑选项卡，带有标签、内部名称、计划日期、相关预算和目标](assets/new-program-edit-tab.png)
 
 ## 使用营销活动{#work-with-campaigns}
 
@@ -86,7 +86,7 @@ ht-degree: 4%
 
 **[!UICONTROL Program]**&#x200B;字段允许您选择营销策划将附加到的项目。 此信息是强制性的。
 
-![](assets/new-campaign-settings.png)
+![包含“模板”、“标签”和“项目”字段以及“确定”按钮的新营销活动对话框](assets/new-campaign-settings.png)
 
 营销策划也可以通过营销策划或项目日历中的创建。 [了解详情](#campaign-calendar)
 
@@ -102,7 +102,7 @@ ht-degree: 4%
 
 所有这些操作都会将您带到活动仪表板。
 
-![](assets/campaigns-dashboard-approve.png)
+![带有投放产品“批准内容”和“批准定位”上“批准”菜单的Campaign仪表板](assets/campaigns-dashboard-approve.png)
 
 访问以下部分，了解如何配置活动：
 
@@ -133,17 +133,17 @@ ht-degree: 4%
 
 对于每个活动，任务、资源和投放都集中在仪表板中。 利用此界面，您可以管理和编排营销操作。
 
-借助Adobe Campaign，您可以设置协作流程，以创建和审批营销活动的各个步骤：审批预算、目标、内容等。此编排在[此部分](marketing-campaign-approval.md)中有详细说明。
+借助Adobe Campaign，您可以设置协作流程，以创建和审批营销活动的各个步骤：审批预算、目标、内容等。此编排在[设置和管理审批流程](marketing-campaign-approval.md)中详述。
 
-![](assets/campaigns-dashboard-approval-tab.png)
+![活动仪表板的投放面板，带有审批菜单、内容和定位状态](assets/campaigns-dashboard-approval-tab.png)
 
 >[!NOTE]
 >
->营销活动中可用的组件取决于其模板。 营销活动模板配置显示在[此部分](marketing-campaign-templates.md#campaign-templates)中。
+>营销活动中可用的组件取决于其模板。 [创建和配置营销活动模板](marketing-campaign-templates.md#campaign-templates)中显示了营销活动模板配置。
 
 营销活动完成后，使用&#x200B;**[!UICONTROL Reports]**&#x200B;链接访问营销活动报告。
 
-![](assets/campaigns-reports-dashboard.png)
+![活动信息板报告选项卡列出了活动报告，如活动费用和投放摘要](assets/campaigns-reports-dashboard.png)
 
 ## 营销活动日历 {#campaign-calendar}
 
@@ -151,11 +151,11 @@ ht-degree: 4%
 
 要编辑计划、项目、营销策划或投放，请在日历中浏览到其名称，然后使用&#x200B;**[!UICONTROL Open]**&#x200B;链接。 然后，它将显示在新选项卡中，如下所示：
 
-![](assets/campaign-calendar.png)
+![促销活动日历，带有显示“打开”链接、计划和状态的促销活动弹出窗口](assets/campaign-calendar.png)
 
 您可以筛选营销活动日历中显示的信息。 为此，请单击&#x200B;**[!UICONTROL Filter]**&#x200B;链接并选择筛选条件。
 
-![](assets/campaign_planning_filter.png)
+![营销活动日历过滤器链接展开营销活动、投放、任务和项目的过滤器选项](assets/campaign_planning_filter.png)
 
 >[!NOTE]
 >
@@ -167,11 +167,11 @@ ht-degree: 4%
 
 要筛选要显示的营销活动，请单击&#x200B;**[!UICONTROL Filter]**&#x200B;链接，然后选择要显示的营销活动状态。
 
-![](assets/calendar-filter-options.png)
+![具有“任务”下拉列表状态（如“正在编辑”、“已开始”和“已完成”）的促销活动日历筛选器](assets/calendar-filter-options.png)
 
 在浏览日历时，您还可以创建项目或营销策划。
 
-![](assets/campaign-create-from-calendar.png)
+![计划计划选项卡，其“添加”菜单提供添加计划和添加营销活动](assets/campaign-create-from-calendar.png)
 
 当您通过项目群的&#x200B;**[!UICONTROL Schedule]**&#x200B;选项卡创建营销策划时，该营销策划会自动链接到相关项目。 在这种情况下，**[!UICONTROL Program]**&#x200B;字段是隐藏的。
 
@@ -183,7 +183,7 @@ ht-degree: 4%
 1. 照常通过https://`<your instance>:<port>/view/home`登录。
 1. 使用菜单访问概述。
 
-   ![](assets/web-access-campaigns.png)
+   ![Web界面中的营销活动列表，带有营销活动状态和“操作”菜单](assets/web-access-campaigns.png)
 
 除了在营销策划之间导航和查看这些营销策划之外，您还可以执行以下类型的任务：
 
@@ -216,13 +216,13 @@ ht-degree: 4%
 
 可以通过Web访问为目标或投放内容进行审批。
 
-![](assets/web-access-approval.png)
+![在Web界面中的传递对话框上执行操作，具有“接受”和“拒绝”选项以及“评论”字段](assets/web-access-approval.png)
 
-您还可以使用通知消息中包含的链接。 如需详细信息，请参阅[此小节](marketing-campaign-approval.md#review-and-approve-deliveries)。
+您还可以使用通知消息中包含的链接。 有关详细信息，请参阅[审阅并批准投放](marketing-campaign-approval.md#review-and-approve-deliveries)。
 
 
 ## 教程视频 {#video}
 
 本视频说明如何创建营销计划、项目和营销活动。
 
->[!VIDEO](https://video.tv.adobe.com/v/3426482?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/333810?quality=12)

@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '573'
 ht-degree: 2%
 ---
 # Web 下载{#web-download}
@@ -47,23 +47,23 @@ ht-degree: 2%
 
    * 要直接输入要下载的文件的URL，请选择&#x200B;**[!UICONTROL Explicit URL]**&#x200B;选项，并在相应的字段中指定URL。 此URL可使用变量数据构建。
 
-     ![](assets/download_web_edit.png)
+     ![已选择“显式URL”选项的Web下载活动和URL字段为空。](assets/download_web_edit.png)
 
    * 要使用&#x200B;**[!UICONTROL External account]**，请从下拉列表中选择帐户，并指定要下载的文件。
 
      从Adobe Campaign树的&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;节点配置外部帐户。 可通过&#x200B;**[!UICONTROL Edit link]**&#x200B;图标编辑帐户参数。
 
-     ![](assets/download_web_edit_external.png)
+     ![Web文件节，已选择外部帐户，并带有要下载的帐户和文件名。](assets/download_web_edit_external.png)
 
    * 要从Adobe Campaign实例下载文件，请选择&#x200B;**[!UICONTROL Adobe Campaign Instance]**&#x200B;选项。
 
-     ![](assets/download_web_edit_instance.png)
+     ![选择了Adobe Campaign实例且文件名使用了变量的Web文件节。](assets/download_web_edit_instance.png)
 
 1. **文件历史化**
 
    **[!UICONTROL File historization settings...]**&#x200B;链接允许您指定文件存储目录和此目录的清除频率。
 
-   ![](assets/download_web_edit_hist.png)
+   ![历史化设置对话框，其中包含存储目录、文件数和最大大小（以MB为单位）清除设置。](assets/download_web_edit_hist.png)
 
    可以使用以下选项：
 
@@ -85,7 +85,7 @@ ht-degree: 2%
    * **[!UICONTROL Add the HTTP headers to the file]**：在某些情况下，您可能希望向文件添加其他HTTP标头。 最常见的是，这些标头将用于提供其他信息以进行故障排除，用于[跨源资源共享(CORS)](https://developer.mozilla.org/docs/Web/HTTP/CORS)，或用于设置特定的缓存指令。
    * **[!UICONTROL Ignore the HTTP return code]**： HTTP返回代码（也称为HTTP状态代码）表示HTTP请求的结果。
 
-   ![](assets/download_web_edit_advanced.png)
+   ![高级参数对话框，包括“遵循重定向”、“将HTTP标头添加到文件”和“忽略HTTP返回代码”。](assets/download_web_edit_advanced.png)
 
    **[!UICONTROL Process errors]**&#x200B;选项在[处理错误](monitor-workflow-execution.md#processing-errors)中有详细说明。
 

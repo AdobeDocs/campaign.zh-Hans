@@ -22,10 +22,10 @@ subfeature_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 7%
+source-wordcount: '1003'
+ht-degree: 6%
 ---
 # 更新数据{#update-data}
 
@@ -43,7 +43,7 @@ ht-degree: 7%
 * **[!UICONTROL Update and merge collections]**：更新数据并选择一个主记录，然后链接链接到此主记录中重复项的元素。 然后，可以删除重复项而不创建孤立的附加元素。
 * **[!UICONTROL Delete]**：删除数据。
 
-![](assets/s_advuser_update_data_1.png)
+![操作类型列表打开时更新数据活动，显示插入或通过“删除”进行更新。](assets/s_advuser_update_data_1.png)
 
 **[!UICONTROL Batch size]**&#x200B;字段允许您选择要更新的集客过渡元素数量。 例如，如果您声明500，则处理的前500条记录将被更新。
 
@@ -57,25 +57,25 @@ ht-degree: 7%
 
 * 否则，请指定一个或多个链接，这些链接将允许识别数据库中的数据或直接使用协调键。
 
-![](assets/s_advuser_update_data_2.png)
+![更新数据活动，记录标识：选择收件人架构作为已更新的维度。](assets/s_advuser_update_data_2.png)
 
 ## 选择要更新的字段 {#selecting-the-fields-to-be-updated}
 
 使用&#x200B;**[!UICONTROL Automatically associate fields with the same name]**&#x200B;选项，以便Adobe Campaign自动标识要更新的字段。
 
-![](assets/s_advuser_update_data_3b.png)
+![用于更新表的字段，该表由自动关联具有相同名称的字段的棒按钮填充。](assets/s_advuser_update_data_3b.png)
 
 您还可以使用&#x200B;**[!UICONTROL Insert]**&#x200B;图标手动选择要更新的数据库字段。
 
-![](assets/s_advuser_update_data_3.png)
+![编辑新字段上的表达式按钮以更新行，打开收件人文档的字段选择器。](assets/s_advuser_update_data_3.png)
 
-选择要更新的所有字段，并根据需要添加条件。 要实现此目的，请使用 **[!UICONTROL Taken into account if]** 列。 条件逐个应用，并与列表中的顺序一致。 使用右侧的箭头可更改更新的顺序。
+Select要更新所有字段，并根据需要添加条件（具体取决于要执行的更新）。 要实现此目的，请使用 **[!UICONTROL Taken into account if]** 列。 条件逐个应用，并与列表中的顺序一致。 使用右侧的箭头可更改更新的顺序。
 
 您可以多次使用同一目标字段。
 
 在&#x200B;**[!UICONTROL Insert or update]**&#x200B;操作中，您可以单独或为每个字段选择要应用的营销活动。 为此，请在&#x200B;**[!UICONTROL Operation]**&#x200B;列中选择所需的值。
 
-![](assets/s_advuser_update_data_5.png)
+![使用“全部”、“插入”和“更新”选项更新表的字段操作列。](assets/s_advuser_update_data_5.png)
 
 **[!UICONTROL modifiedDate]**、**[!UICONTROL modifiedBy]**、**[!UICONTROL createdDate]**&#x200B;和&#x200B;**[!UICONTROL createdBy]**&#x200B;字段在数据更新期间自动更新，除非在字段更新表中专门配置了它们的管理模式。
 
@@ -106,15 +106,15 @@ ht-degree: 7%
 >
 >通过此选项，还可处理对工作流工作表(targetWorkflow)、投放(targetDelivery)和列表(targetList)中辅助记录的引用。 如果需要，这些链接会显示在您选择字段和集合的列表中。
 
-1. 选择&#x200B;**[!UICONTROL Update and merge collections]**&#x200B;操作。
+1. Select **[!UICONTROL Update and merge collections]**&#x200B;操作。
 
-   ![](assets/update_and_merge_collections1.png)
+   ![使用在操作类型列表中选择的更新和合并集合操作类型更新数据活动。](assets/update_and_merge_collections1.png)
 
-1. 选择链接的优先级顺序。 这允许您标识主记录。 可用链接因集客过渡而异。
+1. Select显示链接的优先级顺序。 这允许您标识主记录。 可用链接因集客过渡而异。
 
-   ![](assets/update_and_merge_collections2.png)
+   ![记录标识部分，按优先级列出用于查找主记录的链接。](assets/update_and_merge_collections2.png)
 
-1. 选择要移动到主记录的收藏集和要更新的字段。
+1. Select要移动到主记录的收藏集和要更新的字段。
 
    输入在标识一个或多个辅助记录后应用于这些记录的规则。 为此，您可以使用[表达式生成器](../../v8/start/filter-conditions.md#list-of-functions)。 例如，通过指定该值是必须保留的所有不同记录中最近更新的值。
 
@@ -126,7 +126,7 @@ ht-degree: 7%
 
 1. 通过选择&#x200B;**[!UICONTROL Advanced parameters]** > **[!UICONTROL Duplicates]**，指定您希望处理辅助记录的顺序。
 
-   ![](assets/update_and_merge_collections3.png)
+   ![要更新的目标记录的字段和集合，使用Source表达式和Knowded if columns.](assets/update_and_merge_collections3.png)
 
 如果定义的规则适用，则辅助记录的数据将与主记录关联。 根据所选择的更新类型，可以删除次要记录。
 

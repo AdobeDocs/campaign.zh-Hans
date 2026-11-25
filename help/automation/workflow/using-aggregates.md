@@ -17,10 +17,10 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 3%
+source-wordcount: '682'
+ht-degree: 2%
 ---
 # 使用聚合{#using-aggregates}
 
@@ -37,7 +37,7 @@ ht-degree: 3%
 1. 将每个收件人链接到聚合函数会生成相同的模式。
 1. 通过编辑后的架构使用聚合筛选收件人。
 
-![](assets/datamanagement_usecase_1.png)
+![工作流：收件人和DateMax查询馈送编辑架构活动，然后馈送拆分活动和结束。](assets/datamanagement_usecase_1.png)
 
 ## 步骤1：计算聚合结果 {#step-1--calculating-the-aggregate-result}
 
@@ -46,7 +46,7 @@ ht-degree: 3%
 1. 在打开的窗口中，依次选择&#x200B;**[!UICONTROL Data linked to the filtering dimension]**&#x200B;和&#x200B;**[!UICONTROL Filtering dimension data]**。
 1. 在&#x200B;**[!UICONTROL Data to add]**&#x200B;窗口中，添加计算收件人表中&#x200B;**创建日期**&#x200B;字段最大值的列。 您可以使用表达式编辑器或直接在&#x200B;**[!UICONTROL Expression]**&#x200B;列中的字段中输入&#x200B;**max(@created)**。 然后单击&#x200B;**[!UICONTROL Finish]**&#x200B;按钮。
 
-   ![](assets/datamanagement_usecase_2.png)
+   ![要在“表达式”列和“完成”按钮中添加带有输出列Max（创建日期）的窗口的数据。](assets/datamanagement_usecase_2.png)
 
 1. 单击 **[!UICONTROL Edit additional data]**，然后单击 **[!UICONTROL Advanced parameters...]**。 勾选 **[!UICONTROL Disable automatic adding of the primary keys of the targeting dimension]** 选项。
 
@@ -61,11 +61,11 @@ ht-degree: 3%
 1. 将收件人的查询定义为主集。
 1. 在&#x200B;**[!UICONTROL Links]**&#x200B;选项卡中，添加新链接，并在打开的窗口中输入信息，如下所示：
 
-   * 选择与聚合相关的临时架构。 此架构的数据将添加到主集的成员中。
-   * 选择&#x200B;**[!UICONTROL Use a simple join]**&#x200B;将聚合结果链接到主集的每个收件人。
+   * Select与聚合相关的临时架构。 此架构的数据将添加到主集的成员中。
+   * Select **[!UICONTROL Use a simple join]**&#x200B;将聚合结果链接到主集的每个收件人。
    * 最后，指定链接为&#x200B;**[!UICONTROL Type 11 simple link]**。
 
-   ![](assets/datamanagement_usecase_3.png)
+   ![链接定义与临时架构DateMax，使用简单连接并键入11简单链接已选定。](assets/datamanagement_usecase_3.png)
 
 因此，聚合结果链接到每个收件人。
 
@@ -86,7 +86,7 @@ ht-degree: 3%
    * **[!UICONTROL Expression]**: `toDate([target/@created])`.
    * **[!UICONTROL Value]**： `toDate([datemax/expr####])`，其中expr####与聚合函数查询中指定的聚合相关。
 
-   ![](assets/datamanagement_usecase_4.png)
+   ![目标元素筛选器： ToDate target/@created等于DateOnly(Max(Creation date))。](assets/datamanagement_usecase_4.png)
 
 因此，拆分活动的结果与上次已知创建日期同一天创建的收件人相关。
 

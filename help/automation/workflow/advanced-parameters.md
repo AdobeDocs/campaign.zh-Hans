@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 5%
+source-wordcount: '527'
+ht-degree: 4%
 ---
 # 高级参数{#advanced-parameters}
 
@@ -39,11 +39,11 @@ ht-degree: 5%
 
 * 简化版本（针对实例的&#x200B;**[!UICONTROL Start]**&#x200B;和&#x200B;**[!UICONTROL End]**&#x200B;活动）
 
-  ![](assets/wf-advanced-basic.png)
+  ![包含“名称”、“图像”、“初始化脚本”和“注释”字段的简化的“开始”活动的“高级”选项卡。](assets/wf-advanced-basic.png)
 
 * 更详细的版本（例如&#x200B;**[!UICONTROL Query]**&#x200B;活动的）
 
-  ![](assets/wf-advanced-full.png)
+  ![包含执行、关联、行为、时区和错误管理字段的查询活动的详细高级选项卡。](assets/wf-advanced-full.png)
 
 以下各节详细介绍了要在&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中输入的字段。
 

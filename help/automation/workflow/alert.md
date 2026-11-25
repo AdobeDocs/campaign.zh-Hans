@@ -21,9 +21,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: e13b3537d149f2bdad7e9dd66768837e5c4b595b
 workflow-type: tm+mt
-source-wordcount: '85'
+source-wordcount: '100'
 ht-degree: 3%
 ---
 # 警报{#alert}
@@ -32,6 +32,6 @@ ht-degree: 3%
 
 **警报**&#x200B;活动向操作员组发送消息。 它的操作方式与批准活动相同，但预计在此情况下不会有任何响应。
 
-![](assets/edit_alerte.png)
+![具有任务类型组、任务接受者以及消息标题和正文的警报活动。](assets/edit_alerte.png)
 
 警报不是永久性的，因此从客户端控制台中不可见。 分配的组的操作员必须具有完整的电子邮件地址才能接收通知。 此活动的配置类似于&#x200B;**审批**&#x200B;的配置。 用于提醒操作员的默认投放模板为“alertAssignee”。

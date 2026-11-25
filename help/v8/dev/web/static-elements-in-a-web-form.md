@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 3%
+source-wordcount: '1364'
+ht-degree: 2%
 ---
 # Web 窗体中的静态元素{#static-elements-in-a-web-form}
 
@@ -37,7 +37,7 @@ ht-degree: 3%
 
 您可以在表单的页面中包含用户不会与之交互的元素；这些是静态元素，例如图像、HTML内容、水平条形图或超文本链接。 这些元素是通过工具栏中的第一个按钮创建的，方法是选择&#x200B;**[!UICONTROL Static elements]**。
 
-![](assets/s_ncs_admin_survey_add_static_element.png)
+![静态元素的页面工具栏菜单：值、链接、HTML、图像、水平条、跟踪标记和脚本](assets/s_ncs_admin_survey_add_static_element.png)
 
 以下类型的字段可用：
 
@@ -58,11 +58,11 @@ ht-degree: 3%
 
 您可以直接输入内容并设置其格式，也可以显示源代码窗口以粘贴某些外部内容。 要切换到“源代码”模式，请单击工具栏中的第一个图标：
 
-![](assets/s_ncs_admin_survey_html_editor.png)
+![突出显示了“显示源代码”按钮并显示HTML源代码的页面的HTML编辑器](assets/s_ncs_admin_survey_html_editor.png)
 
 要插入数据库字段，请使用个性化按钮。
 
-![](assets/webapp_perso_button_in_html.png)
+![HTML编辑器个性化菜单，提供名字、姓氏和主键等收件人字段](assets/webapp_perso_button_in_html.png)
 
 >[!NOTE]
 >
@@ -74,14 +74,14 @@ ht-degree: 3%
 
 要添加超文本链接，请转到&#x200B;**[!UICONTROL Static elements]** > **[!UICONTROL Link]**。
 
-![](assets/s_ncs_admin_survey_add_link.png)
+![链接属性：标签、操作设置为URL、mailto URL、窗口、工具提示和显示设置](assets/s_ncs_admin_survey_add_link.png)
 
 * **[!UICONTROL Label]**&#x200B;是超文本链接的内容，因为它将显示在表单页面上。
-* **[!UICONTROL URL]**&#x200B;是所需的地址，例如： [https://www.adobe.com/cn](https://www.adobe.com/cn)网站，或[info@adobe.com](mailto:info@adobe.com)发送消息。
+* **[!UICONTROL URL]**&#x200B;是所需的地址，例如： [https://www.adobe.com](https://www.adobe.com)网站，或[info@adobe.com](mailto:info@adobe.com)发送消息。
 * **[!UICONTROL Window]**&#x200B;字段允许您在站点中选择链接的显示模式。 您可以决定在新窗口、当前窗口或其他窗口中打开链接。
 * 您可以添加工具提示，如下所示：
 
-  ![](assets/s_ncs_admin_survey_send_an_email.png)
+  ![已渲染使用工具提示发送消息链接单击此处向我们发送电子邮件](assets/s_ncs_admin_survey_send_an_email.png)
 
 * 您可以选择将链接显示为按钮或图像。 为此，请在&#x200B;**[!UICONTROL Type]**&#x200B;字段中选择显示类型。
 
@@ -89,7 +89,7 @@ ht-degree: 3%
 
 默认情况下，链接与URL类型操作相关联，以便可以在URL字段中输入链接目标地址。
 
-![](assets/s_ncs_admin_survey_link_url.png)
+![将属性与mailto URL、窗口字段设置为创建新窗口和工具提示](assets/s_ncs_admin_survey_link_url.png)链接
 
 您可以为链接定义其他操作，以便用户可以单击链接执行以下操作：
 
@@ -97,33 +97,33 @@ ht-degree: 3%
 
   为此，请在&#x200B;**[!UICONTROL Action]**&#x200B;字段的下拉框中选择&#x200B;**[!UICONTROL Refresh page]**&#x200B;选项。
 
-  ![](assets/s_ncs_admin_survey_link_refresh.png)
+  ![链接操作下拉列表无、URL、查看、刷新页面、下一页和启用过渡，已选择刷新页面](assets/s_ncs_admin_survey_link_refresh.png)
 
 * 显示下一页/上一页
 
   为此，请在&#x200B;**[!UICONTROL Action]**&#x200B;字段的下拉框中选择&#x200B;**[!UICONTROL Next page]**&#x200B;或&#x200B;**[!UICONTROL Previous page]**&#x200B;选项。
 
-  ![](assets/s_ncs_admin_survey_link_next.png)
+  ![链接操作下拉列表，已为标记为“下一页”的链接选择“下一页”](assets/s_ncs_admin_survey_link_next.png)
 
   如果要将&#x200B;**[!UICONTROL Next]**&#x200B;和/或&#x200B;**[!UICONTROL Back]**&#x200B;按钮替换为链接，则可以隐藏这些按钮。 请参见[此页面](defining-web-forms-page-sequencing.md)。
 
   该链接将替换默认使用的&#x200B;**[!UICONTROL Next]**&#x200B;按钮。
 
-  ![](assets/s_ncs_admin_survey_link_next_ex.png)
+  ![包含名字、姓氏和密码字段的表单页面，以及显示验证工具提示的下一个链接](assets/s_ncs_admin_survey_link_next_ex.png)
 
 * 显示其他页面
 
   使用&#x200B;**[!UICONTROL Enable a transition]**&#x200B;选项，可显示与在&#x200B;**[!UICONTROL Transition]**&#x200B;字段中选择的传出过渡关联的特定页面。
 
-  ![](assets/s_ncs_admin_survey_link_viral.png)
+  ![Link with Action设置为Enable a transition和Transition list offers Next and Sent to a friend](assets/s_ncs_admin_survey_link_viral.png)
 
   默认情况下，页面只有一个输出过渡。 要创建新过渡，请选择页面，然后单击&#x200B;**[!UICONTROL Output transitions]**&#x200B;部分中的&#x200B;**[!UICONTROL Add]**&#x200B;按钮，如下所示：
 
-  ![](assets/s_ncs_admin_survey_add_transition.png)
+  ![启用了出站过渡的欢迎页面属性，列出了下一个和病毒式（发送给朋友）以及“添加”按钮](assets/s_ncs_admin_survey_add_transition.png)
 
   在图中，此添加内容将如下所示：
 
-  ![](assets/s_ncs_admin_survey_add_transition_graph.png)
+  ![Web表单流程，您的合同指向您的帐户，或者通过“发送给朋友以作为发起人”，然后是“存储”和“结束”](assets/s_ncs_admin_survey_add_transition_graph.png)
 
   >[!NOTE]
   >
@@ -133,7 +133,7 @@ ht-degree: 3%
 
 您可以使用上一页记录的数据对表单页面的HTML内容进行个性化设置。 例如，您可以创建一个汽车保险Web窗体，其第一个页面允许您提供联系信息和汽车品牌。
 
-![](assets/s_ncs_admin_survey_tag_ctx_1.png)
+![第1页（共2页），要求输入标题、姓名、电子邮件、标识符和汽车品牌，按“下一步”按钮](assets/s_ncs_admin_survey_tag_ctx_1.png)
 
 使用个性化字段将用户名和选定品牌重新注入下一页。 要使用的语法取决于信息存储模式。 有关详细信息，请参阅[使用收集的信息](web-forms-answers.md#using-collected-information)。
 
@@ -143,7 +143,7 @@ ht-degree: 3%
 
 在我们的示例中，收件人的名字和姓氏存储在数据库的一个字段中，而他们的汽车品牌存储在变量中。 第2页上个性化的消息的语法如下所示：
 
-![](assets/webapp_perso_vars_include.png)
+![个性化消息HTML，包含使用标记语法插入的收件人名字、姓氏和汽车品牌变量](assets/webapp_perso_vars_include.png)
 
 ```xml
 <P>Welcome <%= ctx.recipient.@firstName %> <%= ctx.recipient.@lastName %>,</P>
@@ -152,7 +152,7 @@ ht-degree: 3%
 
 这将产生以下结果：
 
-![](assets/s_ncs_admin_survey_tag_ctx_2.png)
+![第2页（共2页），按姓名和品牌问候收件人，并使用Select提供您的型号和汽车年份列表](assets/s_ncs_admin_survey_tag_ctx_2.png)
 
 ### 使用文本变量 {#using-text-variables}
 
@@ -167,11 +167,11 @@ ht-degree: 3%
 1. 在&#x200B;**[!UICONTROL Identifier]**&#x200B;列中，输入变量的名称
 1. 在&#x200B;**[!UICONTROL Text]**&#x200B;列中，输入默认值。
 
-   ![](assets/s_ncs_admin_survey_html_text.png)
+   ![HTML元素“文本”选项卡列出标识符“国家/地区”和“日期格式”及其文本值](assets/s_ncs_admin_survey_html_text.png)
 
 1. 在HTML内容中，通过&#x200B;**&lt;%= $(Contact) %>**&#x200B;语法插入此文本变量。
 
-   ![](assets/s_ncs_admin_survey_html_content.png)
+   ![HTML内容编辑器，其联系人文本标识符插入到上次修改日期字段的旁边](assets/s_ncs_admin_survey_html_content.png)
 
    >[!CAUTION]
    >
@@ -179,7 +179,7 @@ ht-degree: 3%
 
 1. 打开表单的&#x200B;**[!UICONTROL Preview]**&#x200B;标签以查看在HTML中输入的值：
 
-   ![](assets/s_ncs_admin_survey_html_content_preview.png)
+   ![第2页（共2页），显示上次联系日期，带有已翻译的文本标识符](assets/s_ncs_admin_survey_html_content_preview.png)
 
 使用此操作模式，您可以仅定义Web窗体的文本一次，并使用集成的翻译工具管理翻译。 有关详细信息，请参阅[翻译Web窗体](translating-a-web-form.md)。
 
@@ -191,7 +191,7 @@ ht-degree: 3%
 
 选择要插入的图像的源：该图像可以来自公共资源库，也可以存储在可从外部访问的外部服务器上。
 
-![](assets/s_ncs_admin_survey_add_img.png)
+徽标的![图像元素属性，图像源列表提供库和外部](assets/s_ncs_admin_survey_add_img.png)
 
 如果这是库中的图像，请在字段的组合框中选择它；如果它位于外部文件中，请输入访问路径。 通过将光标悬停在图像上来显示标签（与HTML中的ALT字段一致），或者在图像未显示时显示标签。
 

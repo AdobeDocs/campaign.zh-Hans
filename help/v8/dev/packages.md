@@ -47,9 +47,9 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f89b58e9c7a87b6526dbbf491db67109418f2006
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1963'
+source-wordcount: '2026'
 ht-degree: 1%
 ---
 # 使用数据包{#data-packages}
@@ -128,7 +128,7 @@ XML文档必须以`<package>`元素开始和结束。 后续的任何`<entities>
 1. 通过资源管理器的&#x200B;**[!UICONTROL Tools > Advanced > Export package...]**&#x200B;菜单浏览到资源包导出助手。
 1. 选择[类型的包](#types-of-packages)。
 
-   ![](assets/package_type.png)
+   ![包导出向导，包含用户包、平台包和管理员包选项，已选择用户包](assets/package_type.png)
 
 1. 单击&#x200B;**添加**&#x200B;按钮选择要导出为包的实体。
 
@@ -159,7 +159,7 @@ XML文档必须以`<package>`元素开始和结束。 后续的任何`<entities>
 
 >[!NOTE]
 >
->在Campaign架构[&#128279;](database-links.md)的链接管理中定义了链接到架构元素的完整性类型。
+>在Campaign架构](database-links.md)的[链接管理中定义了链接到架构元素的完整性类型。
 
 #### 导出营销活动 {#export-a-campaign}
 
@@ -241,7 +241,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 要创建包定义，请单击&#x200B;**[!UICONTROL New]**&#x200B;按钮，然后填写包定义常规信息。
 
-![](assets/packagedefinition_create.png)
+![包含“新建”按钮和“常规”选项卡字段的包定义文件夹“标签”、“名称”和“分发服务器”](assets/packagedefinition_create.png)
 
 然后，可以将实体添加到包定义中，并将其导出到XML文件包中。
 
@@ -255,7 +255,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 在&#x200B;**[!UICONTROL Content]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以选择要与包一起导出的实体。 [导出包中的一组对象](#export-a-set-of-objects-in-a-package)中介绍了选择实体时的最佳实践。
 
-![](assets/packagedefinition_addentities.png)
+![包定义的“内容”选项卡，使用“添加”按钮打开“导出实体”对话框并列出架构](assets/packagedefinition_addentities.png)
 
 实体可以直接从其在实例中的位置添加到包定义中。 为此请执行以下操作步骤：
 
@@ -269,7 +269,7 @@ template="xtk:folder" pkgAdmin="@id != 0">
 
 可以从包定义&#x200B;**[!UICONTROL Content]**&#x200B;选项卡配置包生成。 为此，请单击&#x200B;**[!UICONTROL Generation parameters]**&#x200B;链接。
 
-![](assets/packagedefinition_generationparameters.png)
+使用“包括定义”、“包括安装脚本”和“包括默认值”的![生成参数对话框](assets/packagedefinition_generationparameters.png)
 
 * 使用&#x200B;**[!UICONTROL Include the definition]**&#x200B;选项包括当前在包定义中使用的定义。
 * 使用&#x200B;**[!UICONTROL Include an installation script]**&#x200B;选项添加在导入包时执行的javascript脚本。 选中后，**[!UICONTROL Script]**&#x200B;选项卡将添加到包定义屏幕中。

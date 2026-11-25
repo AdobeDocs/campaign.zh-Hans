@@ -19,9 +19,9 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '140'
 ht-degree: 0%
 ---
 # 配置在线调查{#configuring-surveys}
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 可用参数在[此文档](../web/defining-web-forms-properties.md)中有详细说明。
 
-![](assets/s_ncs_admin_survey_properties_general.png)
+![Kids Event Web应用程序的“编辑”选项卡，工作流上方突出显示“属性”按钮。](assets/s_ncs_admin_survey_properties_general.png)
 
 ## 调查数据存储 {#survey-data-storage}
 

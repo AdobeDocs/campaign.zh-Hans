@@ -27,9 +27,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '251'
 ht-degree: 0%
 ---
 # Web应用程序和Web窗体入门{#gs-ac-web}
@@ -38,13 +38,13 @@ ht-degree: 0%
 >
 >对于大多数常见用例，请在Campaign Web用户界面中创建登陆页面，您可以在其中轻松设计和发布这些页面。 如本节所述，在客户端控制台中创建的登陆页面提供了更多设置，并涵盖了更高级的用例。
 >
->[在Campaign Web用户界面中了解有关登陆页面的更多信息](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
+>[在Campaign Web用户界面中了解有关登陆页面的更多信息](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
 
 Adobe Campaign集成了一个图形模块，用于定义和发布&#x200B;**Web窗体**，以创建包含输入和选择字段的页面，其中可能包含来自数据库的数据。 这样，您就可以设计并发布用户可访问的网页，以便查看或输入信息。
 
 了解如何在[Web窗体入门](web/about-web-forms.md)中创建和发布Web窗体。
 
-![](assets/sample.png)
+![电子邮件新闻稿订阅的Web表单示例，其中包含电子邮件、名称和国家/地区字段以及“订阅”按钮。](assets/sample.png)
 
 Adobe Campaign还允许您创建和发布动态和交互式&#x200B;**Web应用程序**，其中包含来自数据库的数据和适合已连接用户权限的内容。
 

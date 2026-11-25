@@ -26,9 +26,9 @@ subfeature_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '623'
 ht-degree: 1%
 ---
 # Web 窗体入门{#about-web-forms}
@@ -55,19 +55,19 @@ Adobe Campaign集成了一个图形模块，用于定义和发布Web窗体，以
 
 要创建Web窗体，请单击Web应用程序列表上方的&#x200B;**[!UICONTROL Create]**&#x200B;按钮。
 
-![](assets/webapp_create_new.png)
+![Web应用程序列在“营销活动”下，突出显示用于启动新Web表单的“创建”按钮。](assets/webapp_create_new.png)
 
 选择Web窗体模板（默认为&#x200B;**[!UICONTROL newWebForm]**）。
 
-![](assets/s_ncs_admin_survey_select_template.png)
+![使用在模板列表中选择的新Web表单(newWebForm)模板创建Web应用程序对话框。](assets/s_ncs_admin_survey_select_template.png)
 
 这会将您引导至表单仪表板。
 
-![](assets/webapp_empty_dashboard.png)
+新Web窗体的![仪表板选项卡，显示其状态、架构、文件夹、公共URL和“发布”按钮。](assets/webapp_empty_dashboard.png)
 
 **[!UICONTROL Edit]**&#x200B;选项卡允许您创建内容。
 
-![](assets/webapp_edit_tab.png)
+![显示活动图（开始、页面、测试、存储、结束）和活动面板的Web窗体的“编辑”选项卡。](assets/webapp_edit_tab.png)
 
 要定义Web窗体的配置和内容，请应用以下步骤：
 
@@ -104,12 +104,12 @@ Adobe Campaign集成了一个图形模块，用于定义和发布Web窗体，以
 
 也可以使用工具栏中的图标或右键单击来插入输入区域。
 
-![](assets/s_ncs_admin_webform_add_selection.png)
+![用于添加输入字段的页面编辑器工具栏菜单：组合框、复选框、单选按钮、多项选择、日期、网格。](assets/s_ncs_admin_webform_add_selection.png)
 
 在本例中，首先选择要添加的字段类型和应答存储模式。
 
-![](assets/s_ncs_admin_webform_select_storage.png)
+![存储对话框：选择“编辑收件人或变量”，然后选择包含“编辑表达式”的数据库字段。](assets/s_ncs_admin_webform_select_storage.png)
 
 单击&#x200B;**[!UICONTROL Ok]**&#x200B;批准选择。
 
-![](assets/s_ncs_admin_webform_confirm_storage.png)
+![在Select中选择Salutation字段，表达式将填充“存储”对话框中的“数据库”字段；单击“确定”。](assets/s_ncs_admin_webform_confirm_storage.png)

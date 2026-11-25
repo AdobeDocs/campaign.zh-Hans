@@ -39,9 +39,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1524'
 ht-degree: 0%
 ---
 # 架构结构{#schema-structure}
@@ -156,7 +156,7 @@ ht-degree: 0%
 
 数据类型是通过&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;元素中的&#x200B;**type**&#x200B;属性输入的。
 
-[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=zh-Hans#configuring-campaign-classic){target="_blank"}中提供了详细列表。
+[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic){target="_blank"}中提供了详细列表。
 
 如果未填充此属性，则&#x200B;**string**&#x200B;是默认的数据类型，除非该元素包含子元素。 如果是，则仅将其用于分层构造元素（示例中为&#x200B;**`<location>`**&#x200B;个元素）。
 
@@ -214,7 +214,7 @@ ht-degree: 0%
 
   可从Adobe Campaign客户端控制台输入表单中看到标签：
 
-  ![](assets/schema_label.png)
+  ![控制台中的电子邮件输入字段，标记为“电子邮件”，带有输入的电子邮件地址。](assets/schema_label.png)
 
 * **desc**&#x200B;属性允许您输入较长的描述。
 
@@ -267,7 +267,7 @@ ht-degree: 0%
 
 这些值显示在输入表单的下拉列表中：
 
-![](assets/schema_user_enum.png)
+输入表单中的![城市字段，显示来自用户枚举值的下拉列表。](assets/schema_user_enum.png)
 
 >[!NOTE]
 >
@@ -281,7 +281,7 @@ ht-degree: 0%
 
 枚举允许用户从下拉列表中选择一个值，而不是在常规输入字段中输入值：
 
-![](assets/schema_enum.png)
+![显示“无”指定值、“男”和“女”值的“性别”下拉列表。](assets/schema_enum.png)
 
 数据架构中的枚举声明示例：
 
@@ -317,7 +317,7 @@ ht-degree: 0%
 
   例如，此枚举用于指定营销活动的性质。
 
-  ![](assets/schema_dbenum.png)
+  ![打开了“自然”下拉菜单的新营销活动对话框，其中显示“无指定”和“再营销”。](assets/schema_dbenum.png)
 
 ### 示例 {#example}
 
@@ -396,7 +396,7 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 
 您可以在Adobe Campaign客户端控制台中通过任何表达式编辑器访问可用函数的列表：
 
-![](assets/schema_function.png)
+![包含聚合、字符串、日期和数字组（如Abs、Ceil和Round）的表达式编辑器函数树。](assets/schema_function.png)
 
 **示例**：
 

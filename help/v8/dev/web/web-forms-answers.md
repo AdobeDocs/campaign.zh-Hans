@@ -21,9 +21,9 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '1069'
 ht-degree: 0%
 ---
 # Web窗体答案{#web-forms-answers}
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 对于表单中的每个输入字段，可以使用以下存储选项：
 
-![](assets/s_ncs_admin_survey_select_storage.png)
+![具有“编辑存储”链接的“姓氏”输入字段，且“存储”对话框显示“编辑收件人和变量”选项。](assets/s_ncs_admin_survey_select_storage.png)
 
 * **[!UICONTROL Edit a recipient]**
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 要将数据保存在数据库的现有字段中，请单击&#x200B;**[!UICONTROL Edit expression]**&#x200B;图标，然后从可用字段列表中选择该数据。
 
-![](assets/s_ncs_admin_survey_storage_type1.png)
+![带有“编辑”表达式的“存储”对话框打开字段选择器，其中选择了“姓氏(@lastName)”。](assets/s_ncs_admin_survey_storage_type1.png)
 
 >[!NOTE]
 >
@@ -61,15 +61,15 @@ ht-degree: 0%
 
 这意味着您可以使用未保存字段的值来授权在页面上显示一组选项。 在下面的页面中，车辆类型未存储在数据库中：
 
-![](assets/s_ncs_admin_survey_no_storage_variable.png)
+![存储设置为变量typeV和编辑存储链接的车组合框的类型。](assets/s_ncs_admin_survey_no_storage_variable.png)
 
 它存储在变量中，创建下拉框或通过&#x200B;**[!UICONTROL Edit storage...]**&#x200B;链接时必须选择该变量。
 
-![](assets/s_ncs_admin_survey_no_storage_variable2.png)
+![带有“变量”选项的“存储”对话框，以及下拉列表中的“车型”、“移动卡车”和“个人车”。](assets/s_ncs_admin_survey_no_storage_variable2.png)
 
 您可以通过&#x200B;**[!UICONTROL Edit variables...]**&#x200B;链接显示现有变量和创建新变量。 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以创建新变量。
 
-![](assets/s_ncs_admin_survey_add_a_variable.png)
+![使用“汽车能源”标签和名称编辑变量列表和“变量”对话框，键入Text以添加变量。](assets/s_ncs_admin_survey_add_a_variable.png)
 
 创建页面的输入字段后，添加的变量将显示在局部变量列表中。
 
@@ -81,19 +81,19 @@ ht-degree: 0%
 
 在上述示例中，仅当从下拉列表中选择&#x200B;**[!UICONTROL Private]**&#x200B;选项时，才会显示包含有关私家车数据的容器，如可见性条件中所示：
 
-![](assets/s_ncs_admin_survey_add_a_condition.png)
+![个人汽车容器可见性条件：汽车类型等于个人。](assets/s_ncs_admin_survey_add_a_condition.png)
 
 如果用户选择私家车，则Web窗体会提供以下选项：
 
-![](assets/s_ncs_admin_survey_no_storage_conda.png)
+![汽车预订表单页面，其中显示了Select、Compact、Intermediate和Standard的“汽车类型”下拉列表。](assets/s_ncs_admin_survey_no_storage_conda.png)
 
 如果选择“专业”选项，则会显示包含有关商用车辆数据的容器，如可见性条件所示：
 
-![](assets/s_ncs_admin_survey_view_a_condition.png)
+![Truck/Van集装箱可见性条件：原点等于Truck。](assets/s_ncs_admin_survey_view_a_condition.png)
 
 这意味着，如果用户选择商业车辆，则表单会提供以下选项：
 
-![](assets/s_ncs_admin_survey_no_storage_condb.png)
+![已选择移动卡车的汽车预订表单和一个班级下拉列表，其中列出了小型巴士、皮卡、货运货车和20卡车。](assets/s_ncs_admin_survey_no_storage_condb.png)
 
 ## 使用收集的信息 {#using-collected-information}
 
@@ -125,7 +125,7 @@ ht-degree: 0%
 
 要保存表单页面中收集的信息，需要在图中放置一个存储框。
 
-![](assets/s_ncs_admin_survey_save_box.png)
+![包含欢迎页面、订阅、存储和结束活动的Web窗体图表，已突出显示“存储”框。](assets/s_ncs_admin_survey_save_box.png)
 
 可通过两种方式使用此框：
 
@@ -139,13 +139,13 @@ ht-degree: 0%
 
 * 要扩充数据库中的收件人数据，请编辑存储框并选择协调密钥。 对于内部使用（通常是Intranet系统）或用于创建新用户档案的表单，您可以选择协调字段。 该框提供在Web应用程序的各个页面中使用的数据库的所有字段：
 
-  ![](assets/s_ncs_admin_survey_save_box_edit.png)
+  ![带有收件人字段和搜索文件夹字段的协调选项树的存储活动对话框。](assets/s_ncs_admin_survey_save_box_edit.png)
 
 默认情况下，数据通过&#x200B;**[!UICONTROL Update or insertion]**&#x200B;操作导入数据库：如果数据库中存在该数据，则会更新元素（例如，所选新闻稿或输入的电子邮件地址）。 如果该文件不存在，则会添加该信息。
 
 但是，您可以更改此行为。 为此，请选择元素的根并从下拉列表中选择要执行的操作：
 
-![](assets/s_ncs_admin_survey_save_operation.png)
+![存储活动操作列表：仅协调、更新或插入、插入、更新和删除。](assets/s_ncs_admin_survey_save_operation.png)
 
 您可以选择协调的搜索文件夹，也可以选择新配置文件的创建文件夹。 如果这些字段为空，则会在运算符的默认文件夹中搜索并创建用户档案。
 
@@ -153,4 +153,4 @@ ht-degree: 0%
 >
 >可能的操作包括： **[!UICONTROL Simple reconciliation]**、**[!UICONTROL Update or insertion]**、**[!UICONTROL Insertion]**、**[!UICONTROL Update]**、**[!UICONTROL Deletion]**。\
 >运算符的默认文件夹是运算符具有写入权限的第一个文件夹。\
->请参阅[此小节](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}。
+>请参阅[此小节](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}。

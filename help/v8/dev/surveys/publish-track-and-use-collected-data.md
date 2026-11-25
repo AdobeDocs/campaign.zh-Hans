@@ -22,10 +22,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 3%
+source-wordcount: '1150'
+ht-degree: 2%
 ---
 # 发布、跟踪和使用收集的数据{#publish-track-and-use-collected-data}
 
@@ -47,7 +47,7 @@ ht-degree: 3%
 
 调查的公共URL将显示在仪表板上：
 
-![](assets/survey_public_url.png)
+![调查仪表板，显示联机状态和指向用于访问调查的公共URL的箭头](assets/survey_public_url.png)
 
 ## 响应跟踪 {#response-tracking}
 
@@ -57,7 +57,7 @@ ht-degree: 3%
 
 对于交付的每个调查，您可以在&#x200B;**[!UICONTROL Logs]**&#x200B;选项卡中跟踪响应。 此选项卡显示已完成调查的用户及其来源的列表：
 
-![](assets/s_ncs_admin_survey_logs.png)
+![调查的“回应”选项卡，其中列出了每个回应的日期、收件人和来源](assets/s_ncs_admin_survey_logs.png)
 
 双击某行以显示由响应者填写的调查表单。 您可以完全浏览调查并完全访问答案。 这些文件可在外部文件中导出。 有关详情，请参阅[导出答案](#exporting-answers)。
 
@@ -75,7 +75,7 @@ ht-degree: 3%
 
 通过仪表板选项卡，可访问调查报表。 单击报表名称可查看它。
 
-![](assets/s_ncs_admin_survey_report_doc.png)
+![调查仪表板的报表视图，包含回复、常规、文档和微型网站分析报表的细目](assets/s_ncs_admin_survey_report_doc.png)
 
 调查的结构在&#x200B;**[!UICONTROL Documentation]**&#x200B;报表中可见。
 
@@ -87,13 +87,13 @@ ht-degree: 3%
 
   常规报表示例：
 
-  ![](assets/s_ncs_admin_survey_report_0.png)
+  ![包含开始日期、响应数和随时间变化的响应图表的一般报告](assets/s_ncs_admin_survey_report_0.png)
 
 * 响应的细分
 
   此报表显示每个问题的回复的细目。 此划分仅适用于为存储在&#x200B;**[!UICONTROL Question]**&#x200B;类型容器中的字段提供的答案。 它仅对选择控件有效（例如，不划分文本字段）。
 
-  ![](assets/s_ncs_admin_survey_report_2.png)
+  ![响应细分报表，其中包含每个问题答案的计数和百分比](assets/s_ncs_admin_survey_report_2.png)
 
 ## 导出答案 {#exporting-answers}
 
@@ -103,13 +103,13 @@ ht-degree: 3%
 
    要导出报表数据，请单击&#x200B;**[!UICONTROL Export]**&#x200B;按钮并选择导出格式。
 
-   有关导出报表数据的更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign){target="_blank"}。
+   有关导出报表数据的更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign-classic/using/reporting/creating-new-reports/about-reports-creation-in-campaign){target="_blank"}。
 
 1. 导出答案
 
    要导出答案，请单击调查的&#x200B;**[!UICONTROL Responses]**&#x200B;选项卡并右键单击。 选择 **[!UICONTROL Export...]**。
 
-   ![](assets/s_ncs_admin_survey_logs_export_menu.png)
+   ![选择所有响应的“响应”选项卡，右键单击菜单显示“导出”选项](assets/s_ncs_admin_survey_logs_export_menu.png)
 
    然后输入要导出的信息和存储文件。
 
@@ -123,7 +123,7 @@ ht-degree: 3%
 
    如果要导出的调查包含多个&#x200B;**[!UICONTROL Multi-line text]**&#x200B;或&#x200B;**[!UICONTROL HTML text]**&#x200B;字段，则必须以&#x200B;**[!UICONTROL XML]**&#x200B;格式导出该调查。 为此，请在&#x200B;**[!UICONTROL Output format]**&#x200B;字段的下拉列表中选择此格式，如下所示：
 
-   ![](assets/s_ncs_admin_survey_logs_export_xml.png)
+   ![导出列表向导，打开了“输出格式”下拉列表并选择XML](assets/s_ncs_admin_survey_logs_export_xml.png)
 
    单击&#x200B;**[!UICONTROL Start]**&#x200B;以运行导出。
 
@@ -137,25 +137,25 @@ ht-degree: 3%
 
 在下面的示例中，我们要专门为五个在在线调查中至少有两个孩子且得分最高的收件人提供网络优惠。 本调查的答案是：
 
-![](assets/s_ncs_admin_survey_responses_wf_box_4.png)
+![调查的“回复”选项卡，其中列出了每个具有分数、子项数和联系人类型的回复](assets/s_ncs_admin_survey_responses_wf_box_4.png)
 
 在定位工作流中，**[!UICONTROL Survey responses]**&#x200B;将按如下方式进行配置：
 
-![](assets/s_ncs_admin_survey_responses_wf_box_1.png)
+![定向工作流中的“调查回复”框，其中选择了调查且链接用于选择要提取的列](assets/s_ncs_admin_survey_responses_wf_box_1.png)
 
 首先，选择相关的调查，然后在窗口的中央部分提取数据。 在这种情况下，我们至少需要提取得分列，因为它将在拆分框中用于取回五个最高分。
 
 通过单击&#x200B;**[!UICONTROL Edit query...]**&#x200B;链接指示答案的过滤条件。
 
-![](assets/s_ncs_admin_survey_responses_wf_box_2.png)
+![具有对子项数进行筛选且分数大于50](assets/s_ncs_admin_survey_responses_wf_box_2.png)的查询回复框
 
 启动定位工作流。 查询恢复了8个收件人。
 
-![](assets/s_ncs_admin_survey_responses_wf_box_5.png)
+![突出显示显示目标选项的工作流结果转换快捷菜单](assets/s_ncs_admin_survey_responses_wf_box_5.png)
 
 右键单击集合框的输出过渡可查看它们。
 
-![](assets/s_ncs_admin_survey_responses_wf_box_6.png)
+![查看人口窗口，其中列出了调查响应查询返回的8位收件人及其分数](assets/s_ncs_admin_survey_responses_wf_box_6.png)
 
 然后，在工作流中放置一个拆分框，以取回得分最高的5位收件人。
 
@@ -163,22 +163,22 @@ ht-degree: 3%
 
 * 首先，在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中选择适当的架构，然后配置子集：
 
-  ![](assets/s_ncs_admin_survey_responses_wf_box_6b.png)
+  ![拆分框的“常规”选项卡，在“调查回复”框后选择“仅使用其他数据”](assets/s_ncs_admin_survey_responses_wf_box_6b.png)
 
 * 转到&#x200B;**[!UICONTROL Sub-sets]**&#x200B;选项卡并选择&#x200B;**[!UICONTROL Limit the selected records]**&#x200B;选项，然后单击&#x200B;**[!UICONTROL Edit...]**&#x200B;链接。
 
-  ![](assets/s_ncs_admin_survey_responses_wf_box_7.png)
+  ![使用“限制所选记录”选项和“编辑”链接的“拆分框子集”选项卡](assets/s_ncs_admin_survey_responses_wf_box_7.png)
 
 * Select **[!UICONTROL Keep only the first records after sorting]**&#x200B;选项并选择排序列。 勾选 **[!UICONTROL Descending sort]** 选项。
 
-  ![](assets/s_ncs_admin_survey_responses_wf_box_8.png)
+  ![记录计数限制向导，其中仅保留排序后的第一笔记录，并对得分](assets/s_ncs_admin_survey_responses_wf_box_8.png)进行降序排序
 
 * 单击&#x200B;**[!UICONTROL Next]**&#x200B;按钮并将记录数限制为5。
 
-  ![](assets/s_ncs_admin_survey_responses_wf_box_9.png)
+  ![最大大小设置为5且“完成”按钮为“记录计数”限制步骤](assets/s_ncs_admin_survey_responses_wf_box_9.png)
 
 * 单击&#x200B;**[!UICONTROL Finish]**，然后重新启动工作流以批准定位。
 
 ## 标准化数据 {#standardizing-data}
 
-可以在Adobe Campaign中为使用别名收集的数据设置标准化流程。 这使您能够标准化存储在数据库中的数据：为此，请在包含相关信息的明细列表中定义别名。 在[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中了解如何&#x200B;**使用枚举**。
+可以在Adobe Campaign中为使用别名收集的数据设置标准化流程。 这使您能够标准化存储在数据库中的数据：为此，请在包含相关信息的明细列表中定义别名。 在[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中了解如何&#x200B;**使用枚举**。

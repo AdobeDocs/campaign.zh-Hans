@@ -38,9 +38,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1376'
 ht-degree: 5%
 ---
 # 使用架构{#gs-ac-schemas}
@@ -97,7 +97,7 @@ Adobe Campaign使用数据架构来：
 >
 >实体的根元素与架构具有相同的名称。
 
-![](assets/schema_and_entity.png)
+![架构定义了收件人数据的XML结构；实体是跟随它的特定记录。](assets/schema_and_entity.png)
 
 **`<element>`**&#x200B;标记定义实体元素的名称。 架构的&#x200B;**`<attribute>`**&#x200B;标记定义&#x200B;**`<element>`**&#x200B;标记中已链接到的属性的名称。
 
@@ -137,7 +137,7 @@ Adobe Campaign使用数据架构来：
 
 有关详细信息，请参阅[创建新架构](create-schema.md)。
 
-![](assets/schemaextension_1.png)
+![数据架构创建向导，架构类型步骤，突出显示了“新建表”和“架构扩展”选项。](assets/schemaextension_1.png)
 
 
 创建或扩展要在其中工作的架构后，最佳做法是按照下面显示的XML内容元素顺序来定义其XML内容元素。
@@ -227,11 +227,11 @@ For more on indexes, refer to the [Indexed fields](database-mapping.md#indexed-f
 
 属性允许您定义组成数据对象的字段。 您可以使用架构版工具栏中的&#x200B;**[!UICONTROL Insert]**&#x200B;按钮，将空属性模板拖放到光标所在的XML中。 请参阅[在Campaign](create-schema.md)中创建新架构以了解详情。
 
-![](assets/schemaextension_2.png)
+![打开“插入”菜单编辑架构步骤以添加String、Boolean、Integer或Date等属性。](assets/schemaextension_2.png)
 
-[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html?lang=zh-Hans#content-model){target="_blank"}的`<attribute>`元素部分中提供了属性的完整列表。 以下是一些更常用的属性： **@advanced**、**@dataPolicy**、**@default**、**@desc**、**@enum**、**@expr**、**@label**、**@length**、**@name**、**@notNull**、**@required**、**@ref**、**@xml**、**@type**。
+[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/attribute.html#content-model){target="_blank"}的`<attribute>`元素部分中提供了属性的完整列表。 以下是一些更常用的属性： **@advanced**、**@dataPolicy**、**@default**、**@desc**、**@enum**、**@expr**、**@label**、**@length**、**@name**、**@notNull**、**@required**、**@ref**、**@xml**、**@type**。
 
-有关每个属性的更多信息，请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html?lang=zh-Hans#configuring-campaign-classic){target="_blank"}中的属性说明。
+有关每个属性的更多信息，请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/schema-reference/elements-attributes/schema-introduction.html#configuring-campaign-classic){target="_blank"}中的属性说明。
 
 ### 示例 {#examples}
 
@@ -311,7 +311,7 @@ XML字段的示例也存储在SQL字段中，该字段具有&#x200B;**@dataPolic
 
 完成并保存更改后，任何可能影响SQL结构的更改都需要应用到数据库。 为此，请使用数据库更新助手。
 
-![](assets/schemaextension_3.png)
+![工具，控制台中的“高级”菜单，已选择“更新”数据库结构以应用架构更改。](assets/schemaextension_3.png)
 
 有关详细信息，请参阅[更新数据库结构](update-database-structure.md)。
 

@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '370'
 ht-degree: 2%
 ---
 # Campaign HTML编辑器入门{#about-campaign-html-editor}
@@ -41,7 +41,7 @@ ht-degree: 2%
 >
 >对于大多数常见用例，请在Campaign Web用户界面中创建登陆页面，您可以在其中轻松设计和发布这些页面。 如本节所述，在客户端控制台中创建的登陆页面提供了更多设置，并涵盖了更高级的用例。
 >
->[在Campaign Web用户界面中了解有关登陆页面的更多信息](https://experienceleague.adobe.com/zh-hans/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
+>[在Campaign Web用户界面中了解有关登陆页面的更多信息](https://experienceleague.adobe.com/en/docs/campaign-web/v8/landing-pages/get-started-lp){target="_blank"}
 
 
 
@@ -51,7 +51,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->如果需要添加服务器端JavaScript代码，请使用个性化块。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hans){target="_blank"}。
+>如果需要添加服务器端JavaScript代码，请使用个性化块。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
 
 >[!CAUTION]
 >
@@ -63,7 +63,7 @@ ht-degree: 2%
 
 一般操作如下：
 
-![](assets/dce_schema.png)
+![登陆页面和电子邮件投放都通过数字内容编辑器，然后发布或发送](assets/dce_schema.png)
 
 要创建简单的&#x200B;**Web应用程序**，您需要：
 

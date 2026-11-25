@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1283'
-ht-degree: 1%
+source-wordcount: '1481'
+ht-degree: 0%
 ---
 # 发布 Web 窗体{#publishing-a-web-form}
 
@@ -49,7 +49,7 @@ ht-degree: 1%
 
 * **[!UICONTROL DES encryption]**
 
-  ![](assets/s_ncs_admin_survey_preload_methods_001.png)
+  ![预加载方法设置为DES加密的Identification部分、DES密钥字段和跳过预加载（如果没有ID）](assets/s_ncs_admin_survey_preload_methods_001.png)
 
   此加密方法使用外部提供的标识符(ID)，该ID链接到Adobe Campaign和外部提供商共享的密钥。 **[!UICONTROL Des key]**&#x200B;字段允许您输入此加密密钥。
 
@@ -57,7 +57,7 @@ ht-degree: 1%
 
   此选项允许您从表单当前上下文中的字段中进行选择，这些字段将用于查找数据库中的相应用户档案。
 
-  ![](assets/s_ncs_admin_survey_preload_methods_002.png)
+  ![使用List of fields方法和选作标识符的电子邮件字段预加载标识部分](assets/s_ncs_admin_survey_preload_methods_002.png)
 
   可以通过&#x200B;**[!UICONTROL Parameters]**&#x200B;选项卡向表单属性添加字段（请参阅[添加参数](defining-web-forms-properties.md#adding-parameters)）。 它们以URL或输入区域的形式放置。
 
@@ -69,11 +69,11 @@ ht-degree: 1%
 
   URL可以包含未加密的电子邮件地址，在这种情况下，用户可以直接访问与其相关的页面。
 
-  ![](assets/s_ncs_admin_survey_preload_methods_003.png)
+  ![包含电子邮件地址的Web窗体URL，直接打开预填的客户端信息窗体](assets/s_ncs_admin_survey_preload_methods_003.png)
 
   否则，将要求他们提供密码。
 
-  ![](assets/s_ncs_admin_survey_preload_methods_004.png)
+  ![不带电子邮件的Web窗体URL，打开要求输入密码的“输入密码”页面](assets/s_ncs_admin_survey_preload_methods_004.png)
 
   >[!CAUTION]
   >
@@ -89,7 +89,7 @@ ht-degree: 1%
 
 例如，您可以预先加载收件人的性别，并通过测试框自动将他们定向到适当的页面。
 
-![](assets/s_ncs_admin_survey_preload_ex.png)
+![预先加载框正在加载性别字段，后跟一个测试框，将收件人发送到匹配页面](assets/s_ncs_admin_survey_preload_ex.png)
 
 ## 管理Web窗体交付和跟踪 {#managing-web-forms-delivery-and-tracking}
 
@@ -137,13 +137,13 @@ ht-degree: 1%
 
 表单的发布状态会显示在表单列表中。
 
-![](assets/s_ncs_admin_survey_status.png)
+![Web应用程序列表，显示每个表单的发布状态，如“在线”和“正在编辑”](assets/s_ncs_admin_survey_status.png)
 
 ### 发布表单 {#publishing-a-form}
 
 要更改表单的状态，您需要发布表单。 为此，请单击Web窗体列表上方的&#x200B;**[!UICONTROL Publication]**&#x200B;按钮，然后在下拉框中选择状态。
 
-![](assets/webapp_publish_webform.png)
+![带有“发布”按钮的Web窗体仪表板，指向带有“开始”按钮的Web应用程序发布对话框](assets/webapp_publish_webform.png)
 
 ### 在线提供表单 {#making-a-form-available-online}
 
@@ -151,11 +151,11 @@ ht-degree: 1%
 
 * 使用&#x200B;**[!UICONTROL Project]**&#x200B;部分中的字段输入表单的开始日期和结束日期。
 
-  ![](assets/webapp_availability_date.png)
+  ![属性的“常规”选项卡，“项目”部分具有“开始”和“结束”日期字段，并且结束日期日历打开](assets/webapp_availability_date.png)
 
 * 单击&#x200B;**[!UICONTROL Personalize the message displayed if the form is closed...]**&#x200B;链接以定义当用户尝试在表单无效时访问表单时显示的错误消息。
 
-  查看表单[&#128279;](defining-web-forms-properties.md#accessibility-of-the-form)的辅助功能。
+  查看表单](defining-web-forms-properties.md#accessibility-of-the-form)的[辅助功能。
 
 ### 通过电子邮件投放表单 {#delivering-a-form-via-email}
 
@@ -169,21 +169,21 @@ ht-degree: 1%
 
 在这种情况下，您需要选中记录框中的&#x200B;**[!UICONTROL Update the preloaded record]**&#x200B;选项。 有关详情，请参阅[保存Web窗体答案](web-forms-answers.md#saving-web-forms-answers)。
 
-![](assets/s_ncs_admin_survey_save_box_option.png)
+选中“更新预加载的记录”选项的![存储框对话框](assets/s_ncs_admin_survey_save_box_option.png)
 
 ### 日志响应 {#log-responses}
 
 可以在专用选项卡中激活响应跟踪，以监控Web表单的影响。 为此，请单击表单属性窗口中的&#x200B;**[!UICONTROL Advanced parameters...]**&#x200B;链接，然后选择&#x200B;**[!UICONTROL Log responses]**&#x200B;选项。
 
-![](assets/s_ncs_admin_survey_trace.png)
+![高级参数对话框，已选中“日志响应”选项，从表单属性打开](assets/s_ncs_admin_survey_trace.png)
 
 **[!UICONTROL Responses]**&#x200B;选项卡允许您查看受访者的身份。
 
-![](assets/s_ncs_admin_survey_trace_tab.png)
+Web表单的![响应选项卡列出了每个表单响应的日期和收件人](assets/s_ncs_admin_survey_trace_tab.png)
 
 选择收件人并单击&#x200B;**[!UICONTROL Detail...]**&#x200B;按钮以查看提供的响应。
 
-![](assets/s_ncs_admin_survey_trace_edit.png)
+![“回应”选项卡上的“详细信息”按钮打开带有收件人输入的答案的表单回应窗口](assets/s_ncs_admin_survey_trace_edit.png)
 
 您可以处理查询中提供的响应日志，例如，在发送提醒时仅定向非回应者，或仅向回应者提供特定通信。
 
@@ -209,7 +209,7 @@ ht-degree: 1%
 
   * 如果在导入包的实例上新增Web窗体，则Web窗体将获得&#x200B;**[!UICONTROL Being edited]**&#x200B;状态。
 
-  * 如果新实例上已存在该Web表单，则这是对现有表单的修改。 如果表单的旧版本为&#x200B;**[!UICONTROL Online]**，则旧版本将保持联机状态，直到表单的新版本在新实例上再次发布为[&#128279;](#publishing-a-form)。
+  * 如果新实例上已存在该Web表单，则这是对现有表单的修改。 如果表单的旧版本为&#x200B;**[!UICONTROL Online]**，则旧版本将保持联机状态，直到表单的新版本在新实例上再次发布为[](#publishing-a-form)。
 
   >[!NOTE]
   >

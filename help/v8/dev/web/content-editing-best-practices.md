@@ -28,10 +28,10 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 4%
+source-wordcount: '599'
+ht-degree: 3%
 ---
 # 内容编辑最佳实践{#content-editing-best-practices}
 
@@ -51,13 +51,13 @@ ht-degree: 4%
 
   **&#39;type&#39;**&#x200B;属性在界面中以下列形式可见：
 
-  ![](assets/dce_sidebar_inputtypechanges.png)
+  ![带有表单数据部分、字段选择器和强制是或否切换的输入区域（电子邮件）侧边栏面板](assets/dce_sidebar_inputtypechanges.png)
 
-  此网站[&#128279;](https://www.w3schools.com/tags/att_input_type.asp)中的提供了“type”属性的正式列表。
+  此网站](https://www.w3schools.com/tags/att_input_type.asp)中的[提供了“type”属性的正式列表。
 
 * 使用DCE模拟结束页面的步骤：
 
-  ![](assets/dce_enchainement.png)
+  ![表单图表，依次具有预加载、页面、存储区和页面2框，模拟结束页面](assets/dce_enchainement.png)
 
 * 确保页面中只有一个`<body> </body>`。
 * 上传CSS或JS文件时，.zip文件中包含的图像不会上传。 因此，不会更新CSS对这些图像的引用。

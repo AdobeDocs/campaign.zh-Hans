@@ -34,9 +34,9 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '866'
 ht-degree: 1%
 ---
 # 用例：创建电子邮件投放{#use-case-creating-an-email-delivery}
@@ -60,15 +60,15 @@ ht-degree: 1%
 
 ## 步骤1 — 创建投放 {#step-1---creating-a-delivery}
 
-要创建新投放，请将光标置于&#x200B;**促销活动**&#x200B;选项卡中，然后单击&#x200B;**投放**。 接下来，单击现有投放列表上方的&#x200B;**创建**&#x200B;按钮。 有关创建投放的详细信息，请参阅[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/about-email-channel){target="_blank"}。
+要创建新投放，请将光标置于&#x200B;**促销活动**&#x200B;选项卡中，然后单击&#x200B;**投放**。 接下来，单击现有投放列表上方的&#x200B;**创建**&#x200B;按钮。 有关创建投放的详细信息，请参阅[此页面](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/about-email-channel){target="_blank"}。
 
-![](assets/delivery_step_1.png)
+![“营销活动”选项卡中的投放列表，其中的“创建”按钮用于启动新投放。](assets/delivery_step_1.png)
 
 ## 第2步 — 选择模板 {#step-2---selecting-a-template}
 
 选择投放模板，然后命名您的投放。 此名称仅对Adobe Campaign控制台的用户可见，收件人不可见；但是，此标题将显示在投放列表中。 单击 **[!UICONTROL Continue]**。
 
-![](assets/dce_delivery_model.png)
+![电子邮件投放模板、“标签”字段和“继续”按钮的投放创建对话框。](assets/dce_delivery_model.png)
 
 ## 步骤3 — 选择内容 {#step-3---selecting-a-content}
 
@@ -76,11 +76,11 @@ ht-degree: 1%
 
 选择要使用的内容模板，然后单击&#x200B;**[!UICONTROL Start with the selected content]**&#x200B;按钮以在创建的投放中显示模板。
 
-![](assets/dce_select_model.png)
+![投放内容步骤列出了内容模板，其名称为“从选定内容开始”按钮。](assets/dce_select_model.png)
 
 您还可以通过选择&#x200B;**[!UICONTROL From a file]**&#x200B;导入在Adobe Campaign之外创建的HTML内容。
 
-![](assets/dce_select_from_file_template.png)
+![突出显示了“从文件”选项的可用内容模板。](assets/dce_select_from_file_template.png)
 
 您可以将此内容另存为模板，以供将来使用。 创建个性化内容模板后，您可以从模板列表中预览该模板。 有关详细信息，请参阅[模板管理](template-management.md)。
 
@@ -94,13 +94,13 @@ ht-degree: 1%
 
   要将收件人的名字和第二个名字插入到投放的文本字段中，请单击您选择的文本字段，然后将光标放在要显示它们的位置。 单击弹出式工具栏中的第一个图标，然后单击&#x200B;**[!UICONTROL Personalization block]**。 选择&#x200B;**[!UICONTROL Greetings]**，然后单击&#x200B;**[!UICONTROL OK]**。
 
-  ![](assets/dce_personalizationblock_greetings.png)
+  ![插入一个元素对话框，其中选定了Greetings个性化块，该块从工具栏菜单打开。](assets/dce_personalizationblock_greetings.png)
 
 * 将链接插入图像
 
   若要通过图像将投放收件人转至外部地址，请单击相关图像以显示弹出工具栏，将光标放在第一个图标上，然后单击&#x200B;**[!UICONTROL Link to an external URL]**。 有关详情，请参阅[添加链接](editing-content.md#adding-a-link)。
 
-  ![](assets/dce_externalpage.png)
+  ![选择了外部URL链接选项的图像工具栏菜单。](assets/dce_externalpage.png)
 
   使用以下格式&#x200B;**https://www.myURL.com**&#x200B;在&#x200B;**URL**&#x200B;字段中输入链接的URL，然后确认。
 
@@ -122,7 +122,7 @@ ht-degree: 1%
 
   单击您希望在其中发布链接的文本字段。 单击弹出式工具栏中的第一个图标，选择&#x200B;**[!UICONTROL Personalization block]**，然后选择&#x200B;**[!UICONTROL Link to Mirror Page (MirrorPage)]**。 单击 **[!UICONTROL Save]** 确认。
 
-  ![](assets/dce_mirrorpage.png)
+  ![文本编辑器中的“工具栏”菜单已选中Personalization块选项。](assets/dce_mirrorpage.png)
 
   >[!CAUTION]
   >
@@ -134,7 +134,7 @@ ht-degree: 1%
 
   为指向Web应用程序的链接选择一个文本字段，然后单击第一个图标。 选择&#x200B;**[!UICONTROL Link to a Web application]**，然后单击&#x200B;**Web应用程序**&#x200B;字段末尾的图标以选择所需的应用程序。
 
-  ![](assets/dce_webapp.png)
+  ![插入链接对话框，其中包含“标签”和Web应用程序字段以及“确定”按钮。](assets/dce_webapp.png)
 
   单击&#x200B;**保存**&#x200B;确认。
 

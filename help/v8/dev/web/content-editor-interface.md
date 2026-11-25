@@ -25,9 +25,9 @@ subfeature_v2:
     internal-label: Landing pages
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
     internal-label: Email design
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '661'
 ht-degree: 3%
 ---
 # 内容编辑器界面{#content-editor-interface}
@@ -38,7 +38,7 @@ ht-degree: 3%
 
 DCE编辑窗口分为三个不同的部分。 它们允许您查看、修改和检查内容的状态。
 
-![](assets/dce_decoupe_window_nb.png)
+![包含三个编号部分的DCE编辑窗口：状态消息、内容区域和右侧选项面板](assets/dce_decoupe_window_nb.png)
 
 1. **top**&#x200B;部分是向用户显示消息的区域。 这些消息指示Web应用程序的状态或正在创建的投放以及与内容相关的警告和错误消息。 有关详细信息，请参阅[HTML内容状态](content-editing-best-practices.md#html-content-statuses)。
 1. 窗口的&#x200B;**左侧**&#x200B;的部分是编辑内容的区域。 在此区域中，用户可以使用弹出式工具栏直接与内容交互：在图像中插入链接、更改字体、删除字段等。有关详细信息，请参阅[编辑表单](editing-content.md#editing-forms)。
@@ -48,17 +48,17 @@ DCE编辑窗口分为三个不同的部分。 它们允许您查看、修改和�
 
 该编辑器的右上部分允许您访问全局选项，以便控制当前创建的内容。
 
-![](assets/dce_global_options.png)
+![编辑器的右上角，块选项面板上方有四个全局选项图标](assets/dce_global_options.png)
 
 它有四个图标：
 
-![](assets/dce_icons_sidebar.png)
+![全局选项图标：显示/隐藏块、选择其他内容、另存为模板和页面的属性](assets/dce_icons_sidebar.png)
 
 * 通过&#x200B;**显示/隐藏块**&#x200B;图标，您可以显示内容块周围的蓝色边框（对应于`<div>`HTML标签）。
 
 * 通过&#x200B;**选择其他内容**&#x200B;图标，用户可以从模板（现有模板或现成模板）加载新内容。
 
-  ![](assets/dce_popup_templatechoice.png)
+  ![使用“从文件”和可用模板（如“联系人”和“点进”）选择内容对话框](assets/dce_popup_templatechoice.png)
 
   >[!CAUTION]
   >
@@ -66,15 +66,15 @@ DCE编辑窗口分为三个不同的部分。 它们允许您查看、修改和�
 
 * 通过&#x200B;**另存为模板**&#x200B;图标，可以将当前内容另存为模板。 必须输入模板的标签和内部名称。 模板存储在&#x200B;**[!UICONTROL Resources > Templates > Content templates]**&#x200B;节点中。
 
-  ![](assets/dce_popup_savetemplate.png)
+  ![保存为模板对话框，其中包含“标签”、“内部名称”和“文件夹”字段](assets/dce_popup_savetemplate.png)
 
   保存后，模板可用，并可在创建新内容时进行选择。
 
-  ![](assets/dce_create_fromtemplate.png)
+  ![电子邮件投放HTML内容选项卡，内容模板中提供了已保存的音乐和艺术模板](assets/dce_create_fromtemplate.png)
 
 * 通过&#x200B;**页面属性**&#x200B;图标，您可以选择HTML页面顶部的内容信息。
 
-  ![](assets/dce_popup_headerhtml.png)
+  ![包含HTML页眉标题、关键词和描述字段的页面对话框属性](assets/dce_popup_headerhtml.png)
 
   >[!NOTE]
   >
@@ -86,7 +86,7 @@ DCE编辑窗口分为三个不同的部分。 它们允许您查看、修改和�
 
 编辑器右侧的部分对主要选项进行了分组，使您能够根据内容进行操作。 要显示这些选项，必须选择一个块：这些选项的性质取决于所选的块。
 
-![](assets/dce_right_section.png)
+![编辑器的右侧部分，带有“块”选项：“可见性”条件、“边框”和“背景”颜色](assets/dce_right_section.png)
 
 您可以：
 

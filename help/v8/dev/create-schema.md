@@ -34,9 +34,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '515'
 ht-degree: 0%
 ---
 # 创建新架构 {#create-new-schema}
@@ -47,11 +47,11 @@ ht-degree: 0%
 >
 >内置数据架构只能由Adobe Campaign控制台的管理员删除。
 
-![](assets/schema_navtree.png)
+![浏览器树，其中的“管理”、“配置”和“数据架构”节点突出显示。](assets/schema_navtree.png)
 
 **[!UICONTROL Edit]**&#x200B;选项卡显示架构的XML内容：
 
-![](assets/schema_edition.png)
+![Source架构编辑器，“编辑”选项卡，显示“名称”和“标签”字段以及架构XML内容。](assets/schema_edition.png)
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 **[!UICONTROL Preview]**&#x200B;选项卡自动生成扩展架构：
 
-![](assets/schema_edition2.png)
+![Source架构编辑器，“预览”选项卡，显示生成的扩展架构XML。](assets/schema_edition2.png)
 
 >[!NOTE]
 >
@@ -76,11 +76,11 @@ ht-degree: 0%
 1. 编辑Adobe Campaign树的&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;节点，然后单击&#x200B;**[!UICONTROL New]**。
 1. 选择&#x200B;**[!UICONTROL Create a new table in the data template]**&#x200B;选项并单击&#x200B;**[!UICONTROL Next]** 。
 
-   ![](assets/create_new_schema.png)
+   ![数据架构向导的架构类型页，其中选定了“在数据模板中创建新表”。](assets/create_new_schema.png)
 
 1. 指定表的名称和命名空间。
 
-   ![](assets/create_new_param.png)
+   ![已填写命名空间cus、名称协定、标签、标签（单数）和说明的架构参数页。](assets/create_new_param.png)
 
    >[!NOTE]
    >
@@ -88,7 +88,7 @@ ht-degree: 0%
 
 1. 创建表的内容。 我们建议使用专用助手以确保不缺少设置。 为此，请单击&#x200B;**[!UICONTROL Insert]**&#x200B;按钮并选择要添加的设置类型。
 
-   ![](assets/create_new_content.png)
+   ![在“插入”菜单打开的情况下编辑架构页，显示诸如String和Integer之类的属性类型。](assets/create_new_content.png)
 
 1. 定义合同表的设置。
 
@@ -138,6 +138,6 @@ ht-degree: 0%
 
 1. 保存架构并单击&#x200B;**[!UICONTROL Structure]**&#x200B;选项卡以生成结构：
 
-   ![](assets/configuration_structure.png)
+   ![合同架构的结构选项卡列出所有者、共同所有者、合同编号和订阅日期属性。](assets/configuration_structure.png)
 
 1. 更新数据库结构以创建将链接架构的表。 有关详细信息，请参阅[更新数据库结构](update-database-structure.md)。

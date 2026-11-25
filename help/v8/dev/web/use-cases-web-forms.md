@@ -25,9 +25,9 @@ subfeature_v2:
     internal-label: Landing pages
   - id: e739ee2b-6228-412e-878f-45de0791417d
     internal-label: Use cases
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '1451'
 ht-degree: 1%
 ---
 # 用例：Web 窗体{#use-cases-web-forms}
@@ -45,13 +45,13 @@ ht-degree: 1%
 
 ### 第1步 — 创建信息服务 {#step-1---creating-information-services}
 
-1. 创建要提供给收件人的新闻稿订阅服务。 有关如何创建新闻稿的更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}。
+1. 创建要提供给收件人的新闻稿订阅服务。 有关如何创建新闻稿的更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}。
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
+   带有标签、内部名称、类型电子邮件和模式新闻稿字段的每周新闻稿服务的![服务对话框。](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
 
 1. 创建第二个信息服务，即链接到投放模板的临时服务，用于发送订阅确认消息。
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_1c.png)
+   ![临时服务(temp_service)仪表板，显示类型电子邮件、模式新闻稿及其文件夹。](assets/s_ncs_admin_survey_double-opt-in_sample_1c.png)
 
 ### 第2步 — 创建确认消息 {#step-2---creating-confirmation-messages}
 
@@ -61,7 +61,7 @@ ht-degree: 1%
 1. 创建用于发送订阅确认消息的投放模板。
 1. 单击&#x200B;**[!UICONTROL Email parameters]**&#x200B;中的&#x200B;**[!UICONTROL To]**&#x200B;按钮，将投放模板与订阅目标映射而不是与收件人关联。
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
+   选择了订阅(nms:subscription)目标映射的投放模板上的![Select目标对话框。](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
 1. 由于此投放的收件人尚未确认其审批，因此他们仍在数据库阻止列表中。 要使其接收此通信，您需要根据此模板授权投放，以在阻止列表上定位收件人。
 
@@ -77,15 +77,15 @@ ht-degree: 1%
 
 1. 将投放个性化，并在消息内容中插入确认链接。 通过此链接，可访问Web表单以记录订阅确认。
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_1b.png)
+   ![投放编辑器中的确认电子邮件，其中包含名字个性化字段和“单击此处”链接。](assets/s_ncs_admin_survey_double-opt-in_sample_1b.png)
 
 1. 使用DCE，将您的URL链接到Web窗体。 由于尚未创建Web窗体，因此请在创建后立即替换该值。
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_3.png)
+   ![超文本链接窗格，其中Web应用程序字段仍然为空，用于确认电子邮件中的“单击此处”链接。](assets/s_ncs_admin_survey_double-opt-in_sample_3.png)
 
 1. 最后，将此模板链接到之前创建的临时服务。
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_3c.png)
+   ![在“订阅”字段中选择了确认投放的“临时服务编辑”选项卡。](assets/s_ncs_admin_survey_double-opt-in_sample_3c.png)
 
 ### 第3步 — 创建订阅表单 {#step-3---creating-the-subscription-form}
 
@@ -93,33 +93,33 @@ Web窗体允许收件人订阅和订阅确认。
 
 Web窗体工作流将包含以下活动：
 
-![](assets/s_ncs_admin_survey_double-opt-in_sample_4c.png)
+![Web窗体工作流：预加载，测试，然后电子邮件空潜在客户到脚本，订阅，存储，结束。](assets/s_ncs_admin_survey_double-opt-in_sample_4c.png)
 
 为此请执行以下操作步骤：
 
 1. 创建Web窗体并选择模板&#x200B;**[!UICONTROL Newsletter subscription (subNewsletter)]**。
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_5a.png)
+   ![选择新闻稿订阅(subNewsletter)模板的“新建Web应用程序”对话框。](assets/s_ncs_admin_survey_double-opt-in_sample_5a.png)
 
 1. 在&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中，我们需要配置现有工作流，因为我们希望向要订阅的收件人添加确认消息。
 
    为此，请双击&#x200B;**[!UICONTROL Preloading]**&#x200B;框并按如下方式对其进行配置。
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_5b.png)
+   ![使用表单中引用的自动加载数据预加载活动对话框，如果没有选择ID，则跳过预加载。](assets/s_ncs_admin_survey_double-opt-in_sample_5b.png)
 
    这意味着如果用户通过确认消息中的链接访问此表单，则将加载其用户档案信息。 如果他们通过网站的某个页面访问Web表单，则不会加载任何信息。
 
 1. 将&#x200B;**[!UICONTROL Test]**&#x200B;活动添加到您的工作流。
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_6e.png)
+   ![具有测试活动的Web窗体工作流，该工作流在电子邮件上的分支为空，指向订阅、存储和结束。](assets/s_ncs_admin_survey_double-opt-in_sample_6e.png)
 
    **[!UICONTROL Test]**&#x200B;活动可能与收件人电子邮件有关。 在本例中，请按照以下方式配置它：
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_6d.png)
+   ![条件@email不为空的测试活动分支编辑器。](assets/s_ncs_admin_survey_double-opt-in_sample_6d.png)
 
 1. 将两个&#x200B;**[!UICONTROL Script]**&#x200B;活动添加到您的工作流。
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
+   ![Web窗体工作流，该工作流在测试活动的每个分支上具有脚本活动。](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
    前&#x200B;**[!UICONTROL Script]**&#x200B;个活动将在阻止列表时添加收件人，直到他们确认订阅新闻稿为止。 其内容必须如下：
 
@@ -127,7 +127,7 @@ Web窗体工作流将包含以下活动：
    ctx.recipient.@blackList=1
    ```
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
+   ![脚本阻止列表活动，其中包含脚本ctx.recipient.@blackList=1.](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
 
    第二个&#x200B;**[!UICONTROL Script]**&#x200B;活动授权要发送给用户的投放，并订阅新闻稿。 最后两行脚本将允许您将收件人从temp文件夹转移到另一个文件夹，并在他们确认订阅后立即与现有配置文件进行协调。
 
@@ -142,17 +142,17 @@ Web窗体工作流将包含以下活动：
    >
    >还可以使用工作流定期清除&#x200B;**[!UICONTROL Temp]**&#x200B;分区。
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_6b.png)
+   ![第二个脚本活动包含取消阻止列表、订阅、文件夹和取消订阅脚本行。](assets/s_ncs_admin_survey_double-opt-in_sample_6b.png)
 
 1. 双击&#x200B;**[!UICONTROL Subscription]**&#x200B;活动以个性化订阅表单，并将复选框与之前创建的临时服务链接。
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_5c.png)
+   ![页面编辑器，带有链接到“服务”字段中的临时服务的同意复选框。](assets/s_ncs_admin_survey_double-opt-in_sample_5c.png)
 
 1. 配置&#x200B;**[!UICONTROL Storage]**&#x200B;活动以保存表单页面中输入的信息。
 
    通过此活动，可在专用的临时文件夹中创建收件人用户档案，将其与数据库中可向其发送通信的收件人用户档案区分开。
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_5g.png)
+   ![存储活动对话框，Temp文件夹设置为创建文件夹。](assets/s_ncs_admin_survey_double-opt-in_sample_5g.png)
 
    >[!NOTE]
    >
@@ -162,75 +162,75 @@ Web窗体工作流将包含以下活动：
 
    订阅完成后，第二个&#x200B;**[!UICONTROL End]**&#x200B;框将显示确认消息。
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_5h.png)
+   ![结束活动对话框，显示消息“您的订阅已完成”。 您很快就会收到我们的新闻稿。](assets/s_ncs_admin_survey_double-opt-in_sample_5h.png)
 
 1. 创建和配置Web表单后，您现在可以在投放模板中引用它以发送确认消息。
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_7b.png)
+   ![使用指向新闻稿订阅双重选择加入Web应用程序的单击此处链接的确认投放。](assets/s_ncs_admin_survey_double-opt-in_sample_7b.png)
 
 ### 第4步 — 发布和测试表单 {#step-4---publishing-and-testing-the-form}
 
 您现在可以发布表单以使其可供用户访问。
 
-![](assets/s_ncs_admin_survey_double-opt-in_sample_8b.png)
+![具有“发布”按钮的Web应用程序仪表板，以及必须发布该仪表板才能联机访问的消息。](assets/s_ncs_admin_survey_double-opt-in_sample_8b.png)
 
 订阅新闻稿涉及以下步骤：
 
 1. 网站用户登录到订阅页面并批准表单。
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_8c.png)
+   ![浏览器中的新闻稿订阅表单（已填写名称并填写电子邮件）、已选中同意框且我已订阅按钮。](assets/s_ncs_admin_survey_double-opt-in_sample_8c.png)
 
    通过浏览器中的消息，通知他们其请求已得到考虑。
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
+   ![浏览器结束页面显示请求已注册，随后将显示一条消息。](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
    该用户已添加到&#x200B;**[!UICONTROL Temp]**&#x200B;文件夹中的Adobe Campaign数据库，并且其配置文件将处于订阅状态，直到他们通过电子邮件确认订阅为止。
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
+   ![已选择新个人资料且不再联系（通过任何渠道）的临时收件人文件夹。](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
 1. 向他们发送确认消息，其中包含批准其订阅的链接。
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_8e.png)
+   ![订阅确认电子邮件，带有“单击此处”链接以确认新闻稿订阅。](assets/s_ncs_admin_survey_double-opt-in_sample_8e.png)
 
 1. 当他们单击此链接时，其浏览器中会显示批准页面。
 
-   ![](assets/s_ncs_admin_survey_double-opt-in_sample_8.png)
+   ![标题为“恭喜”的浏览器页面！ 确认订阅现在处于活动状态。](assets/s_ncs_admin_survey_double-opt-in_sample_8.png)
 
    在Adobe Campaign中，将更新用户配置文件：
 
    * 他们不再在阻止列表上，
    * 他们订阅了信息服务。
 
-     ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
+     ![更新了收件人个人资料，其中不再清除联系人并列出了新闻稿电影订阅。](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
 
 ## 根据选定的值显示不同的选项 {#displaying-different-options-depending-on-the-selected-values}
 
 在以下示例中，要求用户选择一种车辆。 您可以根据所选类型显示可用的车辆类别。 这意味着右侧列中显示的项目取决于用户的选择：
 
-![](assets/s_ncs_admin_survey_condition_sample0.png)
+![Car选择页，其Car类型下拉列表设置为Select。](assets/s_ncs_admin_survey_condition_sample0.png)
 
 * 当用户选择“私家车”时，可以选择“紧凑”和“小货车”。
 
-  ![](assets/s_ncs_admin_survey_condition_sample2.png)
+  ![选择了个人汽车的汽车选择页面，显示“标准”和“紧凑”选项。](assets/s_ncs_admin_survey_condition_sample2.png)
 
 * 当用户选择“商务车辆”时，选择显示在下拉列表中：
 
-  ![](assets/s_ncs_admin_survey_condition_sample1.png)
+  ![已选择移动卡车的车辆选择页面和车辆类型的“类”下拉列表。](assets/s_ncs_admin_survey_condition_sample1.png)
 
 在此示例中，车辆类型未存储在数据库中。 下拉列表的配置如下所示：
 
-![](assets/s_ncs_admin_survey_condition_config1.png)
+![具有Select、Personal car和Moving truck值的汽车组合箱属性的类型。](assets/s_ncs_admin_survey_condition_config1.png)
 
 此信息存储在局部变量中。
 
 在容器中配置了右侧列的条件显示：
 
-![](assets/s_ncs_admin_survey_condition_config1bis.png)
+![存储对话框，为car字段的“类型”选择了“变量”选项。](assets/s_ncs_admin_survey_condition_config1bis.png)
 
 * 私家车字段的条件可见性：
 
-  ![](assets/s_ncs_admin_survey_condition_config2.png)
+  ![个人汽车集装箱的可见性条件：汽车类型等于个人汽车。](assets/s_ncs_admin_survey_condition_config2.png)
 
 * 商用车辆字段的条件可见性：
 
-  ![](assets/s_ncs_admin_survey_condition_config3.png)
+  ![卡车/货车集装箱的可见性条件：车辆类型等于移动卡车。](assets/s_ncs_admin_survey_condition_config3.png)

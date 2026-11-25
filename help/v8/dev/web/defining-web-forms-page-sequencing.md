@@ -21,9 +21,9 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '938'
 ht-degree: 0%
 ---
 # 定义Web窗体页面排序{#defining-web-forms-page-sequencing}
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 对于每个页面，您可以删除&#x200B;**[!UICONTROL Next]**&#x200B;或&#x200B;**[!UICONTROL Previous]**&#x200B;按钮。 为此，请选择相关页面，然后选择选项&#x200B;**[!UICONTROL Disable next page]**&#x200B;或&#x200B;**[!UICONTROL Disallow returning to the previous page]** 。
 
-![](assets/s_ncs_admin_survey_no_next_page.png)
+![页面属性，“常规”选项卡，在“导航”部分中选择了“禁用下一页”选项。](assets/s_ncs_admin_survey_no_next_page.png)
 
 您可以使用链接替换这些按钮。 请参阅[插入HTML内容](static-elements-in-a-web-form.md#inserting-html-content)。
 
@@ -48,19 +48,19 @@ ht-degree: 0%
 
 * 表单的另一页。 为此，请选择&#x200B;**[!UICONTROL Internal activity]**，然后指定所需页面，如下所示：
 
-  ![](assets/s_ncs_admin_jump_param1.png)
+  ![已选择内部活动的“跳转”对话框，活动列表显示了要跳转到的表单页面。](assets/s_ncs_admin_jump_param1.png)
 
 * 另一种形式。 为此，请选择&#x200B;**[!UICONTROL Explicit]**&#x200B;选项并指定目标表单。
 
-  ![](assets/s_ncs_admin_jump_param2.png)
+  ![在“目标Web应用程序”字段中选择了“显式”和“目标表单”的“跳转”对话框。](assets/s_ncs_admin_jump_param2.png)
 
 * 目标可以存储在变量中。 在这种情况下，请从下拉列表中选择它，如下所示：
 
-  ![](assets/s_ncs_admin_jump_param3.png)
+  ![跳转对话框，其中存储在一个选定的变量中，并且打开“局部变量”下拉列表。](assets/s_ncs_admin_jump_param3.png)
 
 * 通过&#x200B;**[!UICONTROL Comment]**&#x200B;选项卡，可输入操作员单击图中的对象时将显示的信息。
 
-  ![](assets/s_ncs_admin_survey_jump_comment.png)
+  ![“跳转”对话框的“注释”选项卡；文本在表单图表中的Jump对象上显示为工具提示。](assets/s_ncs_admin_survey_jump_comment.png)
 
 ## 示例：根据URL的参数访问其他表单 {#example--accessing-another-form-according-to-a-parameter-of-the-url}
 
@@ -68,15 +68,15 @@ ht-degree: 0%
 
 1. 在表单末尾插入跳转：这将替换&#x200B;**[!UICONTROL End]**&#x200B;框。
 
-   ![](assets/s_ncs_admin_survey_jump_sample1.png)
+   ![表单的末尾有一个Jump对象插入到Storage之后，替换End框的表单图表。](assets/s_ncs_admin_survey_jump_sample1.png)
 
 1. 在表单属性中，添加存储在局部变量(**next**)中的参数(**next**)。 在[将数据存储在局部变量](web-forms-answers.md#storing-data-in-a-local-variable)中详细介绍了局部变量。
 
-   ![](assets/s_ncs_admin_survey_jump_sample2.png)
+   ![表单属性“参数”选项卡添加下一个参数，下一个参数存储在本地变量中。](assets/s_ncs_admin_survey_jump_sample2.png)
 
 1. 编辑&#x200B;**[!UICONTROL Jump]**&#x200B;对象，选择&#x200B;**[!UICONTROL Stored in a variable]**&#x200B;选项，然后从下拉框中选择&#x200B;**下一个**&#x200B;变量。
 
-   ![](assets/s_ncs_admin_survey_jump_sample3.png)
+   ![跳转对话框，其中存储在一个选定的变量中，下一个变量在局部变量列表中选定。](assets/s_ncs_admin_survey_jump_sample3.png)
 
 1. 投放URL必须包含目标表单的内部名称，例如：
 
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 例如，您可以为已在线订购的客户显示一个不同的页面，为已下超过10张订单的客户显示另一个页面。 为此，请在表单的第一个页面中插入一个&#x200B;**[!UICONTROL Number]**&#x200B;类型输入字段，以便用户说明他们下了多少订单。
 
-![](assets/s_ncs_admin_survey_test_ex0.png)
+![表单页面您的详细信息和订单，包括标题、姓名、电子邮件字段以及您对Web问题的订购频率。](assets/s_ncs_admin_survey_test_ex0.png)
 
 您可以将此信息存储在数据库的某个字段中，或者使用局部变量。
 
@@ -108,17 +108,17 @@ ht-degree: 0%
 
 在本例中，我们希望使用变量：
 
-![](assets/s_ncs_admin_survey_test_ex1.png)
+![页面的订单计数字段，其存储设置为“变量”选项且选择了变量订单。](assets/s_ncs_admin_survey_test_ex1.png)
 
 在表单的图表中，插入测试框以定义条件。 对于每个条件，都将在测试框的输出中添加一个新分支。
 
-![](assets/s_ncs_admin_survey_test_ex2.png)
+![包含分支订单+10和订单1—>9的测试对话框以及定义其条件的“编辑分支”对话框。](assets/s_ncs_admin_survey_test_ex2.png)
 
 选择&#x200B;**[!UICONTROL Activate the default branching]**&#x200B;选项可添加过渡，以用于所有条件都不为true的情况。 如果定义的条件涵盖了所有可能的情况，则无需使用此选项。
 
 接下来，当以下一个或多个条件为true时，定义页面排序：
 
-![](assets/s_ncs_admin_survey_test_ex3.png)
+![表单图表：订单？ 测试指向新、标准或金页面，这些页面都指向存储和结束。](assets/s_ncs_admin_survey_test_ex3.png)
 
 ### 根据参数显示 {#display-based-on-parameters}
 
@@ -134,7 +134,7 @@ ht-degree: 0%
 
 要个性化此页面，请双击&#x200B;**[!UICONTROL End]**&#x200B;并在中央编辑器中输入该页面的内容。
 
-![](assets/s_ncs_admin_survey_end_page_edit.png)
+![结束与结束页面标题和内容编辑器的对话，其中显示感谢您完成调查的消息。](assets/s_ncs_admin_survey_end_page_edit.png)
 
 * 您可以复制并粘贴现有HTML内容。 为此，请单击&#x200B;**[!UICONTROL Display source code]**&#x200B;并插入HTML代码。
 * 您可以使用外部URL；要实现此目的，请选择相应的选项，然后输入要显示的页面的URL。

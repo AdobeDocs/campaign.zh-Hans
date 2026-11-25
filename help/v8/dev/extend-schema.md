@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 2%
+source-wordcount: '353'
+ht-degree: 1%
 ---
 # 扩展模式{#extend-schemas}
 
@@ -61,23 +61,23 @@ ht-degree: 2%
 1. 在资源管理器中导航到&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;文件夹。
 1. 单击“**新建**”按钮并选择&#x200B;**[!UICONTROL Extend the data in a table using an extension schema]**。
 
-   ![](assets/extend-schema-option.png)
+   ![架构类型步骤，使用选定的扩展架构扩展表中的数据](assets/extend-schema-option.png)
 
 1. 标识要扩展的内置模式并将其选定。
 
-   ![](assets/extend-schema-select.png)
+   ![已根据收件人筛选Source架构选择对话框，已选择收件人(nms)](assets/extend-schema-select.png)
 
    按照惯例，将扩展模式命名为与内置模式相同的名称，并使用自定义命名空间。  请注意，某些命名空间仅是内部命名空间。 [了解详情](schemas.md#reserved-namespaces)
 
-   ![](assets/extend-schema-validate.png)
+   具有命名空间cus、名称收件人和标签收件人的扩展架构的![架构参数步骤](assets/extend-schema-validate.png)
 
 1. 在架构编辑器中，使用上下文菜单添加所需的元素并保存。
 
-   ![](assets/extend-schema-edit.png)
+   ![在Attribute上打开“插入”菜单的架构编辑器，列出字符串、布尔值、整数、日期和其他类型](assets/extend-schema-edit.png)
 
    在以下示例中，我们添加了&#x200B;**MembershipYear**&#x200B;属性，为姓氏设置了长度限制（此限制将覆盖默认长度限制），并从内置架构中删除了出生日期。
 
-   ![](assets/extend-schema-sample.png)
+   ![扩展架构XML添加MembershipYear、50个字符的lastName长度并删除birthDate](assets/extend-schema-sample.png)
 
    ```xml
    <srcSchema created="YYYY-MM-DD" desc="Recipient table" extendedSchema="nms:recipient"
@@ -93,7 +93,7 @@ ht-degree: 2%
 
 1. 断开连接并重新连接到Campaign，以检查&#x200B;**[!UICONTROL Structure]**&#x200B;选项卡中的架构结构更新。
 
-   ![](assets/extend-schema-structure.png)
+   cus:recipient架构列表字段的![结构选项卡，包括自字段](assets/extend-schema-structure.png)以来的新成员
 
 1. 更新数据库结构以应用更改。 [了解详情](update-database-structure.md)
 

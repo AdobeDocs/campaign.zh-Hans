@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '740'
 ht-degree: 2%
 ---
 # 选择退出 Web 应用程序跟踪{#web-application-tracking-opt-out}
@@ -47,13 +47,13 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->当脚本编写始终遵循[安全和隐私核对清单](https://helpx.adobe.com/cn/campaign/kb/acc-security.html#dev)中所述的准则时。
+>当脚本编写始终遵循[安全和隐私核对清单](https://helpx.adobe.com/campaign/kb/acc-security.html#dev)中所述的准则时。
 
 ## 配置横幅 {#configuring-the-banner-}
 
 要在Web应用程序或登陆页面中显示，需要配置横幅。
 
-Adobe Campaign附带一个横幅示例，您必须根据自己的需求进行调整。 此横幅版本在内容模型文件夹中显示为个性化块。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hans){target="_blank"}。
+Adobe Campaign附带一个横幅示例，您必须根据自己的需求进行调整。 此横幅版本在内容模型文件夹中显示为个性化块。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
 
 >[!IMPORTANT]
 >
@@ -66,11 +66,11 @@ Adobe Campaign附带一个横幅示例，您必须根据自己的需求进行调
 * 无横幅。
 * 在每个页面上手动配置横幅：选中此选项并在页面属性中选择每个页面中的横幅。
 
-  ![](assets/pageproperties.png)
+  选中“启用出站过渡”选项的![页面属性对话框标题。](assets/pageproperties.png)
 
 * 自动将横幅添加到所有页面：直接在Web应用程序属性中选择横幅。
 
-  ![](assets/optoutconfig.png)
+  ![带选择退出横幅选项的“Web应用程序属性”的“常规”选项卡：无横幅、每页手动或自动。](assets/optoutconfig.png)
 
 >[!NOTE]
 >

@@ -24,9 +24,9 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1201'
 ht-degree: 0%
 ---
 # 管理优惠演示{#managing-offer-presentation}
@@ -42,24 +42,24 @@ ht-degree: 0%
 1. 转到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]**&#x200B;节点。
 1. 创建分类规则并选择&#x200B;**[!UICONTROL Offer presentation]**&#x200B;类型。
 
-   ![](assets/offer_typology_001.png)
+   ![具有新规则表单的类型规则节点，以及显示优惠呈现的规则类型列表](assets/offer_typology_001.png)
 
 1. 指定应用规则的渠道。
 
-   ![](assets/offer_typology_002.png)
+   ![突出显示所有渠道的分类规则的渠道列表](assets/offer_typology_002.png)
 
 1. 配置规则的应用条件。 有关详细信息，请参阅[演示规则设置](#presentation-rule-settings)。
 1. 转到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign execution]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typologies]**&#x200B;节点并创建将分组所有&#x200B;**[!UICONTROL Offer presentation]**&#x200B;类型规则的分类。
 
-   ![](assets/offer_typology_003.png)
+   ![已选择优惠类型且显示其“常规”选项卡的“类型”节点](assets/offer_typology_003.png)
 
 1. 创建分类后，将光标放在分类规则上，并将它们分组到刚刚创建的分类。
 
-   ![](assets/offer_typology_004.png)
+   使用“添加类型”对话框列出所选优惠类型的![规则的“类型”选项卡](assets/offer_typology_004.png)
 
 1. 在选件环境中，使用下拉列表引用分类。
 
-   ![](assets/offer_typology_005.png)
+   环境的![资格选项卡 — 访客选件环境，包含选件的选件呈现类型列表](assets/offer_typology_005.png)
 
 ## 推荐规则设置 {#presentation-rule-settings}
 
@@ -69,13 +69,13 @@ ht-degree: 0%
 
 1. 在分类规则中，单击&#x200B;**[!UICONTROL Edit the rule application conditions...]**&#x200B;链接以创建查询。
 
-   ![](assets/offer_typology_006.png)
+   ![使用“编辑规则应用条件”链接突出显示的分类规则的“常规”选项卡](assets/offer_typology_006.png)
 
 1. 在查询窗口中，您可以对要应用分类规则的选件应用过滤器。
 
    例如，您可以选择选件类别。
 
-   ![](assets/offer_typology_008.png)
+   ![查询与选件树中所选选选件类别相同的类别](assets/offer_typology_008.png)
 
 ### 优惠维度 {#offer-dimensions}
 
@@ -83,11 +83,11 @@ ht-degree: 0%
 
 **[!UICONTROL Targeting dimension]**&#x200B;与将接收优惠建议的收件人表（默认为： `nms:recipients`）重合。 **[!UICONTROL Storage dimension]**&#x200B;与包含链接到定向维度的建议历史记录的表一致（默认情况下： `nms:propositionRcp`）。
 
-![](assets/offer_typology_009.png)
+![选件演示选项卡，其中的“定位”维度和存储维度字段突出显示](assets/offer_typology_009.png)
 
 >[!NOTE]
 >
->您也可以使用非标准表。 如果要使用特定的定向维度，则需要使用目标映射创建表以及专用环境。 有关更多信息，请参阅[创建选件环境](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"}（Campaign v8文档）。
+>您也可以使用非标准表。 如果要使用特定的定向维度，则需要使用目标映射创建表以及专用环境。 有关更多信息，请参阅[创建选件环境](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"}（Campaign v8文档）。
 
 ### 期间 {#period}
 
@@ -100,7 +100,7 @@ ht-degree: 0%
 
 使用箭头可更改天数或直接输入句点（例如，“2d 6h”）。
 
-![](assets/offer_typology_010.png)
+![包含Sliding period， Period consided field highlighted的优惠呈现选项卡](assets/offer_typology_010.png)
 
 ### 建议的数量 {#number-of-propositions}
 
@@ -108,7 +108,7 @@ ht-degree: 0%
 
 使用箭头可更改优惠建议的数量。
 
-![](assets/offer_typology_011.png)
+![建议最大数量的“优惠演示”选项卡，“数量”字段突出显示](assets/offer_typology_011.png)
 
 ## 定义建议和收件人 {#defining-propositions-and-recipients}
 
@@ -118,7 +118,7 @@ ht-degree: 0%
 
 您可以选择筛选条件，以根据渠道、相关优惠或之前分配的建议状态排除建议。
 
-![](assets/offer_typology_014.png)
+![仅在同一渠道上计入节的建议，优惠和建议状态筛选器突出显示](assets/offer_typology_014.png)
 
 这些标准代表了呈现规则最常见的应用。 要使用其他条件，您可以使用&#x200B;**[!UICONTROL Limit propositions...]**&#x200B;链接创建查询。 有关详细信息，请参阅[创建对命题的查询](#creating-a-query-on-propositions)部分。
 
@@ -164,7 +164,7 @@ ht-degree: 0%
 
 要指定收件人，请单击&#x200B;**[!UICONTROL Edit the query from the targeting dimension...]**&#x200B;链接并选择规则涉及的收件人。
 
-![](assets/offer_typology_012.png)
+![编辑筛选查询向导选择文件夹中包含的收件人作为定向维度查询](assets/offer_typology_012.png)
 
 ### 创建建议查询 {#creating-a-query-on-propositions}
 
@@ -172,4 +172,4 @@ ht-degree: 0%
 
 在以下示例中，两个演示之后要计数的建议是&#x200B;**呼叫中心**&#x200B;空间的&#x200B;**特殊优惠**&#x200B;类别中的建议，其权重低于&#x200B;**20**。
 
-![](assets/offer_typology_013.png)
+![将建议查询的权重、优惠空间以及权重限制在20以下以便建议计数](assets/offer_typology_013.png)

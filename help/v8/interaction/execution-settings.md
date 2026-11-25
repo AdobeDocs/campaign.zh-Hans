@@ -21,10 +21,10 @@ feature_v2:
     internal-label: Interaction
   - id: ea08db70-4682-59a2-9408-9aedd9548e07
     internal-label: Offers
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 4%
+source-wordcount: '154'
+ht-degree: 3%
 ---
 # 执行设置{#execution-settings}
 
@@ -34,7 +34,7 @@ ht-degree: 4%
 
 这些设置稍后可以在模拟窗口的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中更改。
 
-![](assets/offer_simulation_008.png)
+![具有执行设置的模拟的“常规”选项卡：低活动计划、SQL日志记录和优先级列表。](assets/offer_simulation_008.png)
 
 * **[!UICONTROL Schedule execution for a time of low activity]** ：允许您根据选定的优先级（低、平均或高）计划模拟，以优化Adobe Campaign性能。
 * **[!UICONTROL Priority]** ：这是应用于模拟以计划它的级别。 选中&#x200B;**[!UICONTROL Schedule execution for a time of low activity]**&#x200B;选项后，营销活动处理工作流会选择低活动时间来启动营销活动。

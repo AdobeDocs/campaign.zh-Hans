@@ -27,9 +27,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '478'
 ht-degree: 1%
 ---
 # 使用环境{#work-with-environments}
@@ -41,7 +41,7 @@ ht-degree: 1%
 * **[!UICONTROL Design]**&#x200B;选件环境，其中包含正在编辑且可更改的选件。 这些选件尚未经过批准周期，不会发送给联系人。
 * **[!UICONTROL Live]**&#x200B;优惠环境包含向联系人呈现的已批准优惠。 此环境中的选件处于只读状态。
 
-![](assets/offer_environments_overview_001.png)
+![包含设计和实时优惠环境的资源管理器树，每个环境都包含优惠空间和管理文件夹。](assets/offer_environments_overview_001.png)
 
 每个&#x200B;**[!UICONTROL Design]**&#x200B;环境都链接到&#x200B;**[!UICONTROL Live]**&#x200B;环境。 选件完成后，其内容和资格规则需要经过批准周期。 此周期完成后，相关选件将自动部署到&#x200B;**[!UICONTROL Live]**&#x200B;环境。 从现在开始，它将可供交付。
 
@@ -51,7 +51,7 @@ ht-degree: 1%
 >
 >要定位收件人表，您需要使用目标映射助手创建环境。 [了解详情](#creating-an-offer-environment)。
 
-![](assets/offer_environments_overview_002.png)
+![设计环境的“常规”选项卡，其设计类型及其“链接的实时环境”字段突出显示。](assets/offer_environments_overview_002.png)
 
 投放经理只能查看&#x200B;**[!UICONTROL Live]**&#x200B;环境并利用选件进行投放。 优惠经理可以查看和使用&#x200B;**[!UICONTROL Design]**&#x200B;环境，还可以查看&#x200B;**[!UICONTROL Live]**&#x200B;环境。 [了解详情](interaction-operators.md)
 
@@ -63,11 +63,11 @@ ht-degree: 1%
 
 1. 浏览到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**，右键单击要使用的目标映射并选择&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Modify the options of the targeting dimension]**。
 
-   ![](assets/offer_env_anonymous_001.png)
+   ![使用“操作”菜单的“目标映射”列表和修改所选目标维度的选项。](assets/offer_env_anonymous_001.png)
 
 1. 单击&#x200B;**[!UICONTROL Next]**，选择&#x200B;**[!UICONTROL Generate a storage schema for propositions]**&#x200B;选项，然后单击&#x200B;**[!UICONTROL Save]**。
 
-   ![](assets/offer_env_anonymous_002.png)
+   使用为所选建议生成存储架构的向导的![扩展步骤。](assets/offer_env_anonymous_002.png)
 
    >[!NOTE]
    >
@@ -81,7 +81,7 @@ ht-degree: 1%
 
 例如，您可以将收件人环境选件空间（已识别的联系人）链接到与访客环境（未识别的联系人）匹配的选件空间。 这样，根据此联系人是否识别，将向联系人提供不同的选件。 有关详细信息，请参阅[创建优惠空间](interaction-offer-spaces.md)。
 
-![](assets/offer_env_anonymous_003.png)
+![访客设计和实时环境，并选中了专用于传入匿名交互的选项。](assets/offer_env_anonymous_003.png)
 
 >[!NOTE]
 >

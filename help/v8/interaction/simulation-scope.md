@@ -24,9 +24,9 @@ feature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '271'
 ht-degree: 2%
 ---
 # 模拟范围{#simulation-scope}
@@ -50,7 +50,7 @@ ht-degree: 2%
 
   收件人将收到这么多建议。 例如，如果您输入5，则每个收件人将收到最多5个优惠建议。
 
-  ![](assets/offer_simulation_009.png)
+  ![包含联系日期、建议数和文件夹最佳旅行者目标查询的“模拟范围”选项卡](assets/offer_simulation_009.png)
 
 要优化模拟要考虑的优惠，您可以添加一个或多个主题（在类别中预先指定）。
 
@@ -66,4 +66,4 @@ ht-degree: 2%
 
 为此，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并选择相应的字段。 轴将用于计算模拟，并显示在分析报告中。 有关详细信息，请参阅[模拟跟踪](simulation-tracking.md)。
 
-![](assets/offer_simulation_011.png)
+![计算选项卡，Select表达式对话框选择结束日期以添加优惠报表轴](assets/offer_simulation_011.png)

@@ -22,9 +22,9 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '448'
 ht-degree: 0%
 ---
 # 匿名互动 {#anonymous-interactions}
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 出现&#x200B;**[!UICONTROL Visitor folder]**&#x200B;字段。 自动完成以链接到&#x200B;**[!UICONTROL Visitors]**&#x200B;文件夹。 此字段允许您选择存储访客配置文件的位置。
 
-![](assets/anonymous_environment_option.png)
+![优惠环境，其环境专用于选定的传入匿名交互和访客文件夹字段](assets/anonymous_environment_option.png)
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 要运行此分析，请为优惠空间选中&#x200B;**[!UICONTROL Implicitly identify the individual based on their browser history]**&#x200B;选项。
 
-![](assets/identification_anonymous_visitors.png)
+![优惠空间，其中根据选定的浏览器历史记录选项隐式识别个人](assets/identification_anonymous_visitors.png)
 
 ## 处理未识别的匿名访客 {#processing-unidentified-anonymous-visitors}
 
@@ -69,4 +69,4 @@ ht-degree: 0%
 
 为此，请选中&#x200B;**[!UICONTROL Fall back on an anonymous environment if no individuals were identified]**，然后在指定选件空间时在&#x200B;**[!UICONTROL Linked anonymous space]**&#x200B;中指定专用于这些未识别访客的环境。
 
-![](assets/anonymous_to_anonymous_environment.png)
+![已选中“回退到匿名环境”选项和“链接的匿名空间”字段的优惠空间](assets/anonymous_to_anonymous_environment.png)

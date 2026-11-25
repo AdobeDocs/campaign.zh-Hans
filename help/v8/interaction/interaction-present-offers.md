@@ -21,20 +21,20 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 8%
+source-wordcount: '209'
+ht-degree: 0%
 ---
 # 提供最佳优惠{#interaction-present-offers}
 
 可以使用[入站或出站渠道](interaction-architecture.md#interaction-types)在各种优惠空间中显示优惠。 本章详细介绍了入站渠道的一些特定功能。
 
-![](assets/inbound-interactions.png)
+![入站流量：浏览网站，通过Cookie或登录识别访客，选件引擎从目录中选择最佳选件](assets/inbound-interactions.png)
 
 选件引擎要选择选件，该选件必须获得批准并在实时环境中可用。
 
-如需详细信息，请参阅[此小节](approving-and-activating-an-offer.md#approving-offer-content)。
+有关详细信息，请参阅[批准优惠内容](approving-and-activating-an-offer.md#approving-offer-content)。
 
 在入站联系人的上下文中，网站是否可以识别正在浏览页面的用户。 优惠引擎为已识别的用户档案和匿名用户档案提供不同的优惠。
 
@@ -44,4 +44,4 @@ ht-degree: 8%
 >
 >对于入站交互，您必须专门配置选件引擎以呈现和更新一个或多个选件。
 >
->您还必须在优惠空间上启用单一模式。 有关详细信息，请参见[此页面](interaction-offer-spaces.md)。
+>您还必须在优惠空间上启用单一模式。 有关详细信息，请参阅[Campaign交互优惠空间](interaction-offer-spaces.md)。

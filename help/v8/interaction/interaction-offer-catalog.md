@@ -22,10 +22,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 2%
+source-wordcount: '463'
+ht-degree: 1%
 ---
 # 创建产品建议目录
 
@@ -45,15 +45,15 @@ ht-degree: 2%
 
 1. 浏览到&#x200B;**[!UICONTROL Offer catalog]**&#x200B;文件夹。
 
-   ![](assets/offer_cat_create_001.png)
+   ![浏览器树，在“优惠 — 设计和环境 — 收件人”下选择了优惠目录文件夹](assets/offer_cat_create_001.png)
 
 1. 右键单击并从下拉列表中选择&#x200B;**[!UICONTROL Create a new "Offer category" folder]**。
 
-   ![](assets/offer_cat_create_002.png)
+   ![优惠目录上的上下文菜单，其中的“新建优惠类别”文件夹选项突出显示](assets/offer_cat_create_002.png)
 
 1. 重新命名类别。 您稍后可以使用&#x200B;**[!UICONTROL General]**&#x200B;选项卡编辑标签。
 
-   ![](assets/offer_cat_create_003.png)
+   ![名为Neobank的新类别文件夹 — 优惠目录树中的个人银行业务，可重命名](assets/offer_cat_create_003.png)
 
    >[!NOTE]
    >
@@ -63,7 +63,7 @@ ht-degree: 2%
 
    * 从&#x200B;**[!UICONTROL Eligibility]**&#x200B;选项卡分配资格日期。
 
-     ![](assets/offer_cat_create_004.png)
+     ![包含“开始日期”和“结束日期”字段、日历打开和目标筛选器的“编辑查询”链接的资格选项卡](assets/offer_cat_create_004.png)
 
    * **[!UICONTROL Edit query]**&#x200B;以将筛选器应用到优惠目标。
 
@@ -83,4 +83,4 @@ ht-degree: 2%
 1. 单击&#x200B;**[!UICONTROL Eligibility]**&#x200B;选项卡并选择&#x200B;**[!UICONTROL Always include this category in the recommendations]**&#x200B;选项。
 1. 单击 **[!UICONTROL Save]**。
 
-   ![](assets/offer_cat_default_001.png)
+   ![类别资格选项卡，“始终”将此类别包含在所选推荐中](assets/offer_cat_default_001.png)

@@ -26,9 +26,9 @@ feature_v2:
 subfeature_v2:
   - id: e739ee2b-6228-412e-878f-45de0791417d
     internal-label: Use cases
-source-git-commit: 936b7519d13ab54d94df9305ef05d4ceb6d6742d
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '193'
 ht-degree: 3%
 ---
 # 扩展示例{#extension-example}
@@ -41,12 +41,12 @@ ht-degree: 3%
 
   在以下示例中，添加的标准是国家/地区代码和上次访问的页面。
 
-  ![](assets/s_ncs_configuration_offer_schemas.png)
+  ![添加了具有国家/地区代码和上次访问页面属性的交互数据架构。](assets/s_ncs_configuration_offer_schemas.png)
 
 * 然后，您可以在定义资格标准定义时使用之前创建的属性。
 
   在以下示例中，我们可以创建资格标准，以根据用户所在的国家/地区或他们查看的上一个网页来显示选件。
 
-  ![](assets/s_ncs_configuration_offer_context.png)
+  ![合格查询编辑器，其国家/地区代码和上次访问页面交互字段均可选作条件。](assets/s_ncs_configuration_offer_context.png)
 
-* 配置SOAP调用时，插入&#x200B;**上下文** XML元素以引用在交互架构中添加的上下文信息。 有关详细信息，请参阅[通过SOAP集成（服务器端）](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/inbound/interaction-integration){target="_blank"}（Campaign v8文档）。
+* 配置SOAP调用时，插入&#x200B;**上下文** XML元素以引用在交互架构中添加的上下文信息。 有关详细信息，请参阅[通过SOAP集成（服务器端）](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/inbound/interaction-integration){target="_blank"}（Campaign v8文档）。

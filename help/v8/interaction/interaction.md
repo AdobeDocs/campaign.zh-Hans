@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 709e38026d74ed707d10fc8109356289dc9f4ac9
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1636'
 ht-degree: 1%
 ---
 # 管理实时交互
@@ -42,7 +42,7 @@ Campaign附带&#x200B;**交互**&#x200B;模块，您可以在交互期间通过�
 
 通过互动，您可以创建和管理优惠目录，并配置资格规则和与其关联的应用程序主题。 根据所选的渠道，可以借助各种渲染功能对优惠内容进行个性化。 最后，您可以使用模拟模块计算优惠呈现方式的影响。
 
-![](assets/interaction-cycle.png)
+![优惠引擎周期：引擎调用、目录调用、选择和个性化、历史记录、优惠演示](assets/interaction-cycle.png)
 
 首先，客户与公司之间通过通信渠道进行联系：可以是网站（入站交互）、电子邮件、短信、推送通知（出站交互）。 [了解详情](#interaction-types)
 
@@ -76,7 +76,7 @@ Campaign附带&#x200B;**交互**&#x200B;模块，您可以在交互期间通过�
 
 1. 为入站交互配置优惠引擎，以显示和更新一个或多个优惠。
 
-   [此部分](interaction-present-offers.md)中详细介绍了各种集成模式。
+   [提供优惠（入站交互）](interaction-present-offers.md)中详细介绍了各种集成模式。
 
    >[!NOTE]
    >

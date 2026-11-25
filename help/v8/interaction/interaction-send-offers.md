@@ -24,9 +24,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1565'
 ht-degree: 2%
 ---
 # 发送产品建议{#send}
@@ -41,37 +41,37 @@ ht-degree: 2%
 
 1. 在投放窗口中，单击&#x200B;**选件**&#x200B;图标。
 
-   ![](assets/offer_delivery_001.png)
+   ![使用“选件”按钮发送电子邮件投放，打开选件管理对话框，其中显示空的选件空间字段](assets/offer_delivery_001.png)
 
 1. 选择与优惠环境匹配的空间。
 
-   ![](assets/offer_delivery_002.png)
+   ![选件管理对话框中的选件空间下拉列表，其中列出了可用的电子邮件选件空间](assets/offer_delivery_002.png)
 
 1. 要优化引擎的选件选择，请选择要显示的选件所属类别或一个/多个主题。 我们建议一次只使用这些字段之一，以避免超出限制。
 
-   ![](assets/offer_delivery_003.png)
+   ![带有“类别”下拉列表的优惠管理对话框，其中列出了优惠目录类别](assets/offer_delivery_003.png)
 
-   ![](assets/offer_delivery_004.png)
+   ![主题字段已填写的优惠管理对话框](assets/offer_delivery_004.png)
 
 1. 指定要插入到投放主体中的选件数。
 
-   ![](assets/offer_delivery_005.png)
+   ![优惠管理对话框，其中每条消息的建议数量字段设置为2](assets/offer_delivery_005.png)
 
 1. 根据需要选择&#x200B;**[!UICONTROL Exclude non-eligible recipients]**&#x200B;选项。 [了解详情](#parameters-for-calling-offer-engine)
 
-   ![](assets/offer_delivery_006.png)
+   ![选择了“排除不符合条件的收件人”选项的优惠管理对话框](assets/offer_delivery_006.png)
 
 1. 如果需要，请选择&#x200B;**[!UICONTROL Do not display anything if no offers are selected]**&#x200B;选项。 [了解详情](#parameters-for-calling-offer-engine)
 
-   ![](assets/offer_delivery_007.png)
+   ![带有“如果未选择优惠，则不显示任何内容”选项的“优惠管理”对话框](assets/offer_delivery_007.png)
 
 1. 使用合并字段将属性插入投放内容。 可用建议的数目取决于引擎调用的配置方式，其顺序取决于优惠的优先级。
 
-   ![](assets/offer_delivery_008.png)
+   ![投放内容菜单路径建议，建议2，渲染函数，HTML渲染](assets/offer_delivery_008.png)
 
 1. 完成内容，测试并发送投放。
 
-   ![](assets/offer_delivery_010.png)
+   ![具有两个建议的Email投放内容包含脚本和Send按钮突出显示](assets/offer_delivery_010.png)
 
 
 ### 优惠引擎的参数 {#parameters-for-calling-offer-engine}
@@ -93,11 +93,11 @@ ht-degree: 2%
 
 ### 扩充 {#enrichment}
 
-通过&#x200B;**扩充**&#x200B;活动，您可以将优惠或链接添加到投放收件人的优惠中。[了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=zh-Hans){target="_blank"}。
+通过&#x200B;**扩充**&#x200B;活动，您可以将优惠或链接添加到投放收件人的优惠中。[了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}。
 
 例如，您可以在投放之前扩充收件人查询的数据。
 
-![](assets/int_enrichment_offer1.png)
+![包含查询、扩充和直邮投放活动的工作流，这些活动通过结果过渡链接](assets/int_enrichment_offer1.png)
 
 指定优惠建议的方法有两种。
 
@@ -112,18 +112,18 @@ ht-degree: 2%
 1. 在&#x200B;**[!UICONTROL Enrichment]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL Add data]**。
 1. 在要添加的数据类型中选择&#x200B;**[!UICONTROL An offer proposition]**。
 
-   ![](assets/int_enrichment_offer2.png)
+   ![选择了优惠建议选项的其他数据向导](assets/int_enrichment_offer2.png)
 
 1. 指定要添加的建议标识符和标签。
 1. 指定选件选择。 对此有两种可能的选项：
 
    * **[!UICONTROL Search for the best offer in a category]**：选中此选项并指定优惠引擎调用参数（优惠空间、类别或主题、联系日期、要保留的优惠数量）。 引擎将根据这些参数自动计算要添加的选件。 我们建议填写&#x200B;**[!UICONTROL Category]**&#x200B;或&#x200B;**[!UICONTROL Theme]**&#x200B;字段，而不是同时填写两者。
 
-     ![](assets/int_enrichment_offer3.png)
+     ![优惠建议步骤设置为搜索类别中的最佳优惠，并保留空间、类别和优惠](assets/int_enrichment_offer3.png)
 
    * **[!UICONTROL A pre-defined offer]**：选中此选项并指定优惠空间、特定优惠和联系日期，以直接配置要添加的优惠，而无需调用优惠引擎。
 
-     ![](assets/int_enrichment_offer4.png)
+     ![优惠建议步骤设置为预定义的优惠，带有空格和优惠字段](assets/int_enrichment_offer4.png)
 
 1. 然后，配置与您选择的渠道对应的投放活动。 [了解详情](#offer-into-a-delivery)
 
@@ -141,11 +141,11 @@ ht-degree: 2%
 1. 在选择要添加的数据类型的窗口中，选择&#x200B;**[!UICONTROL A link]**。
 1. 选择要建立的链接类型及其目标。 在本例中，目标是选件架构。
 
-   ![](assets/int_enrichment_link1.png)
+   ![链接定义步骤，其中链接的目标始终可用，且营销选件架构作为目标](assets/int_enrichment_link1.png)
 
 1. 指定扩充活动（此处为收件人表）中的集客表数据与选件表之间的联接。 例如，您可以将优惠代码链接到收件人。
 
-   ![](assets/int_enrichment_link2.png)
+   ![将与cryptedId源字段匹配的定义加入条件链接到目标代码字段](assets/int_enrichment_link2.png)
 
 1. 然后，配置与您选择的渠道对应的投放活动。 [了解详情](#offer-into-a-delivery)
 
@@ -166,11 +166,11 @@ ht-degree: 2%
 1. 在查询之后和投放活动之前放置的扩充活动中创建对优惠引擎的调用。 [了解详情](#specifying-an-offer-or-a-call-to-the-offer-engine)
 1. 在活动的主窗口中，选择&#x200B;**[!UICONTROL Edit additional data...]**。
 
-   ![](assets/ita_enrichment_rankweight_1.png)
+   ![突出显示编辑其他数据链接的扩充活动，列出建议数据](assets/ita_enrichment_rankweight_1.png)
 
 1. 为排名添加&#x200B;**[!UICONTROL @rank]**&#x200B;列，为优惠权重添加&#x200B;**[!UICONTROL @weight]**&#x200B;列。
 
-   ![](assets/ita_enrichment_rankweight_2.png)
+   ![Select附加列对话框，该对话框具有在建议](assets/ita_enrichment_rankweight_2.png)下添加的权重和排名输出列
 
 1. 确认添加并保存工作流。
 
@@ -180,11 +180,11 @@ ht-degree: 2%
 
 **[!UICONTROL Offer engine]**&#x200B;活动还允许您在投放之前指定对优惠引擎的调用。
 
-有关&#x200B;**优惠引擎**&#x200B;活动的详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html?lang=zh-Hans){target="_blank"}。
+有关&#x200B;**优惠引擎**&#x200B;活动的详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offer-engine.html){target="_blank"}。
 
 此活动与引擎调用中的&#x200B;**扩充**&#x200B;活动的工作原理相同，即在投放前使用引擎计算的优惠扩充集客群体数据。
 
-![](assets/int_offerengine_activity2.png)
+![包含查询、优惠引擎和直邮投放活动的工作流，这些活动通过结果过渡链接](assets/int_offerengine_activity2.png)
 
 配置&#x200B;**查询**&#x200B;活动后：
 
@@ -195,7 +195,7 @@ ht-degree: 2%
    >
    >如果您使用此活动，则只会存储投放中使用的优惠建议。
 
-   ![](assets/int_offerengine_activity1.png)
+   ![要计算的优惠空间、优惠类别和建议数量的优惠引擎活动](assets/int_offerengine_activity1.png)
 
 1. 然后，配置与您选择的渠道对应的投放活动。 [了解详情](#inserting-an-offer-proposition-into-a-delivery)
 
@@ -203,7 +203,7 @@ ht-degree: 2%
 
 利用&#x200B;**[!UICONTROL Offers by cell]**&#x200B;活动，可将集客群体（例如从查询）分发到多个区段中，并指定要为每个区段呈现的选件。
 
-有关&#x200B;**单元格选件**&#x200B;活动的详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html?lang=zh-Hans){target="_blank"}。
+有关&#x200B;**单元格选件**&#x200B;活动的详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/offers-by-cell.html){target="_blank"}。
 
 为此，请使用以下流程：
 
@@ -214,7 +214,7 @@ ht-degree: 2%
    * 使用可用的筛选和限制规则指定子集群体。
    * 然后，选择要提供给子集的选件。 可用的优惠是在上一步骤中选择的优惠环境中符合条件的优惠。
 
-     ![](assets/int_offer_per_cell1.png)
+     ![包含电子邮件选件空间的子集活动以及列出了可用选件的“选件”下拉列表](assets/int_offer_per_cell1.png)
 
 1. 然后，配置与您选择的渠道对应的投放活动。
 

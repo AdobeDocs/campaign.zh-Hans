@@ -39,16 +39,16 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1448'
-ht-degree: 1%
+source-wordcount: '1524'
+ht-degree: 0%
 ---
 # 架构结构{#schema-structure}
 
 `<srcschema>`的基本结构如下所示：
 
-```
+```xml
 <srcSchema>
     <enumeration>
         ...          //definition of enumerations
@@ -88,7 +88,7 @@ ht-degree: 1%
 
 数据架构的XML文档必须包含具有&#x200B;**名称**&#x200B;和&#x200B;**命名空间**&#x200B;属性的&#x200B;**`<srcschema>`**&#x200B;根元素，才能填充架构名称及其命名空间。
 
-```
+```xml
 <srcSchema name="schema_name" namespace="namespace">
 ...
 </srcSchema>
@@ -96,7 +96,7 @@ ht-degree: 1%
 
 让我们使用以下XML内容来说明数据模式的结构：
 
-```
+```xml
 <recipient email="John.doe@aol.com" created="AAAA/DD/MM" gender="1"> 
   <location city="London"/>
 </recipient>
@@ -104,7 +104,7 @@ ht-degree: 1%
 
 及其相应的数据架构：
 
-```
+```xml
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <attribute name="email"/>
@@ -123,7 +123,7 @@ ht-degree: 1%
 
 在本例中，主元素由以下行表示：
 
-```
+```xml
 <element name="recipient">
 ```
 
@@ -131,7 +131,7 @@ ht-degree: 1%
 
 在我们的示例模式中，这些规则包括：
 
-```
+```xml
 <attribute name="email"/>
 <attribute name="created"/>
 <attribute name="gender"/>
@@ -181,7 +181,7 @@ ht-degree: 1%
 
 以下是输入的类型的模式示例：
 
-```
+```xml
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <attribute name="email" type="string" length="80"/>
@@ -208,13 +208,13 @@ ht-degree: 1%
 
   **示例**：
 
-  ```
+  ```xml
   <attribute name="email" type="string" length="80" label="Email"/>
   ```
 
   可从Adobe Campaign客户端控制台输入表单中看到标签：
 
-  ![](assets/schema_label.png)
+  ![控制台中的电子邮件输入字段，标记为“电子邮件”，带有输入的电子邮件地址。](assets/schema_label.png)
 
 * **desc**&#x200B;属性允许您输入较长的描述。
 
@@ -226,7 +226,7 @@ ht-degree: 1%
 
   **示例**：
 
-  ```
+  ```xml
   <attribute name="email" type="string" length="80" label="Email" desc="Email of recipient"/>
   ```
 
@@ -234,7 +234,7 @@ ht-degree: 1%
 
 **default**&#x200B;属性允许您定义在创建内容时返回默认值的表达式。
 
-该值必须是符合XPath语言的表达式。 如需详细信息，请参阅[此小节](#reference-with-xpath)。
+该值必须是符合XPath语言的表达式。 有关详细信息，请参阅[XPath参考](#reference-with-xpath)。
 
 **示例**：
 
@@ -267,7 +267,7 @@ ht-degree: 1%
 
 这些值显示在输入表单的下拉列表中：
 
-![](assets/schema_user_enum.png)
+输入表单中的![城市字段，显示来自用户枚举值的下拉列表。](assets/schema_user_enum.png)
 
 >[!NOTE]
 >
@@ -281,11 +281,11 @@ ht-degree: 1%
 
 枚举允许用户从下拉列表中选择一个值，而不是在常规输入字段中输入值：
 
-![](assets/schema_enum.png)
+![显示“无”指定值、“男”和“女”值的“性别”下拉列表。](assets/schema_enum.png)
 
 数据架构中的枚举声明示例：
 
-```
+```xml
 <enumeration name="gender" basetype="byte" default="0">    
   <value name="unknown" label="Not specified" value="0"/>    
   <value name="male" label="male" value="1"/>   
@@ -317,13 +317,13 @@ ht-degree: 1%
 
   例如，此枚举用于指定营销活动的性质。
 
-  ![](assets/schema_dbenum.png)
+  ![打开了“自然”下拉菜单的新营销活动对话框，其中显示“无指定”和“再营销”。](assets/schema_dbenum.png)
 
 ### 示例 {#example}
 
 以下是填充了属性的架构示例：
 
-```
+```xml
 <srcSchema name="recipient" namespace="cus">
   <enumeration name="gender" basetype="byte">    
     <value name="unknown" label="Not specified" value="0"/>    
@@ -350,7 +350,7 @@ ht-degree: 1%
 
 **示例**：架构中&#x200B;**`<group>`**&#x200B;集合元素的定义。
 
-```
+```xml
 <element name="group" unbound="true" label="List of groups">
   <attribute name="label" type="string" label="Label"/>
 </element>
@@ -358,7 +358,7 @@ ht-degree: 1%
 
 使用XML内容的投影：
 
-```
+```xml
 <group label="Group1"/>
 <group label="Group2"/>
 ```
@@ -396,7 +396,7 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 
 您可以在Adobe Campaign客户端控制台中通过任何表达式编辑器访问可用函数的列表：
 
-![](assets/schema_function.png)
+![包含聚合、字符串、日期和数字组（如Abs、Ceil和Round）的表达式编辑器函数树。](assets/schema_function.png)
 
 **示例**：
 
@@ -412,7 +412,7 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 
 **示例**：收件人表的计算字符串。
 
-```
+```xml
 <srcSchema name="recipient" namespace="nms">  
   <element name="recipient">
     <compute-string expr="@lastName + ' ' + @firstName +' (' + @email + ')' "/>

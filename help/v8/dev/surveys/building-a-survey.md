@@ -15,10 +15,10 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 3%
+source-wordcount: '996'
+ht-degree: 2%
 ---
 # 设计调查{#building-a-survey}
 
@@ -36,7 +36,7 @@ Web窗体通过树的&#x200B;**[!UICONTROL Resources > Online > Web applications
 
 选择调查模板（默认为&#x200B;**[!UICONTROL newSurvey]**）。
 
-![](assets/s_ncs_admin_survey_select_template.png)
+![打开模板列表以选择调查或Web窗体模板的“新建Web应用程序”对话框。](assets/s_ncs_admin_survey_select_template.png)
 
 表单页面是使用特殊编辑器创建的，允许您定义和配置（文本）输入字段、选择字段（列表、复选框等） 和静态元素（图像、HTML内容等）。 它们可以在“容器”中收集，并根据要求进行布局。 [了解详情](#adding-questions)。
 
@@ -48,7 +48,7 @@ Web窗体通过树的&#x200B;**[!UICONTROL Resources > Online > Web applications
 
 表单中的字段使用户能够输入信息并选择选项。 对于表单中的每个页面，它们是使用&#x200B;**[!UICONTROL Add using the assistant]**&#x200B;菜单通过工具栏中的第一个按钮创建的。
 
-![](assets/s_ncs_admin_survey_add_field_menu.png)
+![使用该向导从“添加”中打开了字段创建向导，其中包含“回答要导入的问题”中的四个字段选项。](assets/s_ncs_admin_survey_add_field_menu.png)
 
 >[!NOTE]
 >
@@ -65,13 +65,13 @@ Web窗体通过树的&#x200B;**[!UICONTROL Resources > Online > Web applications
 
    >[!NOTE]
    >
-   >[此部分](managing-answers.md#storing-collected-answers)中详细介绍了存储模式和字段导入。
+   >存储模式和字段导入在[存储收集的答案](managing-answers.md#storing-collected-answers)中有详细说明。
 
 要添加的字段的性质（下拉列表、文本字段、复选框等） 将适应选定的存储模式。 您可以使用&#x200B;**[!UICONTROL General]**&#x200B;选项卡的&#x200B;**[!UICONTROL Type]**&#x200B;字段更改它，但请确保保持与数据类型一致。
 
-![](assets/s_ncs_admin_survey_change_type.png)
+![打开了“类型”列表的“页面编辑器常规”选项卡，其中显示了“多选”、“组合框”和其他字段类型。](assets/s_ncs_admin_survey_change_type.png)
 
-[此部分](../web/about-web-forms.md)中详细介绍了各种类型的可用字段。
+[Web窗体入门](../web/about-web-forms.md)中详细介绍了各种类型的可用字段。
 
 ## 特定于调查的元素 {#survey-specific-elements}
 
@@ -81,11 +81,11 @@ Web窗体通过树的&#x200B;**[!UICONTROL Resources > Online > Web applications
 
 对于&#x200B;**[!UICONTROL Multiple choice]**&#x200B;类型控件，您可以定义选择的最小和最大数量。 例如，通过此选项，您可以从可用选项中强制选择至少&#x200B;**2**&#x200B;个值和最多&#x200B;**4**&#x200B;个值：
 
-![](assets/s_ncs_admin_survey_multichoice_ex1.png)
+![调查页面请选中复选框，选择三到四个选项，以选择您的兴趣。](assets/s_ncs_admin_survey_multichoice_ex1.png)
 
 如果选择的数量太大或太小，则会显示相应的消息。
 
-![](assets/s_ncs_admin_survey_multichoice_ex2.png)
+![兴趣调查页面显示错误消息请勿选择超过四个兴趣。](assets/s_ncs_admin_survey_multichoice_ex2.png)
 
 >[!NOTE]
 >
@@ -93,11 +93,11 @@ Web窗体通过树的&#x200B;**[!UICONTROL Resources > Online > Web applications
 
 相应的配置如下：
 
-![](assets/s_ncs_admin_survey_multichoice_ex3.png)
+![多选字段设置为允许多选，需要2个选择，允许4个。](assets/s_ncs_admin_survey_multichoice_ex3.png)
 
 此外，此输入字段的存储位置必须是&#x200B;**[!UICONTROL Multiple values]**&#x200B;类型&#x200B;**存档字段**：
 
-![](assets/s_ncs_admin_survey_multiple_values_field.png)
+![新建存档字段对话框，已为“兴趣”字段选中“多个值”选项。](assets/s_ncs_admin_survey_multiple_values_field.png)
 
 >[!CAUTION]
 >
@@ -114,7 +114,7 @@ Web窗体通过树的&#x200B;**[!UICONTROL Resources > Online > Web applications
 >
 >切勿在层次结构中的另一个&#x200B;**问题**&#x200B;容器下插入&#x200B;**问题**&#x200B;容器。
 
-![](assets/s_ncs_admin_question_label.png)
+![选中“以HTML格式输入标题”选项并显示HTML编辑器的“问题容器常规”选项卡。](assets/s_ncs_admin_question_label.png)
 
 在标签字段中输入问题的标签。 在这种情况下，将应用表单样式表中的样式。 选择&#x200B;**[!UICONTROL Enter the title in HTML format]**&#x200B;选项以对其进行个性化。 这将为您提供HTML编辑器的访问权限。
 
@@ -124,11 +124,11 @@ Web窗体通过树的&#x200B;**[!UICONTROL Resources > Online > Web applications
 
 例如：
 
-![](assets/s_ncs_admin_survey_containers_qu_arbo.png)
+![页面树，其中包含电子邮件格式和合同的问题容器，以及页面的“常规”选项卡设置。](assets/s_ncs_admin_survey_containers_qu_arbo.png)
 
 在上述示例中，渲染将如下所示：
 
-![](assets/s_ncs_admin_survey_containers_qu_ex.png)
+![已呈现包含字段的调查页、电子邮件格式下拉列表和合同复选框问题。](assets/s_ncs_admin_survey_containers_qu_ex.png)
 
 >[!NOTE]
 >
@@ -136,11 +136,11 @@ Web窗体通过树的&#x200B;**[!UICONTROL Resources > Online > Web applications
 
 您可以启用Adobe Campaign随机抽取问题。 然后，可以在配置窗口底部的字段中指定要在页面中显示的问题数。
 
-![](assets/s_ncs_admin_survey_containers_qu_display.png)
+![随机选中显示的“页面常规”选项卡，并将要显示的问题数设置为1。](assets/s_ncs_admin_survey_containers_qu_display.png)
 
 渲染将如下所示：
 
-![](assets/s_ncs_admin_survey_containers_qu_display_rendering.png)
+![呈现的页面仅显示两个随机选择的问题：问题2和问题3，带有“下一步”按钮。](assets/s_ncs_admin_survey_containers_qu_display_rendering.png)
 
 刷新页面时，显示的问题不同。
 

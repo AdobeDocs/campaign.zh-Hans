@@ -19,10 +19,10 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 3%
+source-wordcount: '315'
+ht-degree: 2%
 ---
 # SpamAssassin{#spamassassin}
 
@@ -52,7 +52,7 @@ SpamAssassin利用多种垃圾邮件检测技术，包括：
 1. 转到 **[!UICONTROL Preview]** 选项卡。
 1. 选择一个收件人以预览您的投放。
 
-   ![](assets/s_tn_del_preview_spamassassin_recipient.png)
+   ![打开收件人列表的“投放预览”选项卡，以选择用于反垃圾邮件检查的收件人](assets/s_tn_del_preview_spamassassin_recipient.png)
 
    >[!NOTE]
    >
@@ -60,13 +60,13 @@ SpamAssassin利用多种垃圾邮件检测技术，包括：
 
 1. 出现警告消息，给出测试结果。 如果检测到高风险，将显示以下警告消息：
 
-   ![](assets/s_tn_del_preview_spamassassin_ko.png)
+   ![预览选项卡警告：反垃圾邮件检查检测到此电子邮件存在高风险，具有更多链接](assets/s_tn_del_preview_spamassassin_ko.png)
 
 1. 单击警告旁边的&#x200B;**[!UICONTROL More...]**&#x200B;链接。
 1. 选择 **[!UICONTROL Anti-spam checking]** 选项卡。
 1. 转到&#x200B;**[!UICONTROL Points / Rule / Description]**&#x200B;部分查看此风险的原因。
 
-   ![](assets/s_tn_del_msg_spamassassin_ko.png)
+   ![反垃圾邮件检查选项卡，带有垃圾邮件分数、最高授权分数和分数/规则/描述列表](assets/s_tn_del_msg_spamassassin_ko.png)
 
 >[!NOTE]
 >

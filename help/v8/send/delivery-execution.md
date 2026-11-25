@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '820'
 ht-degree: 2%
 ---
 # 发送和监测事务性消息 {#delivery-execution}
@@ -71,7 +71,7 @@ Adobe Campaign提供了多个报表，可让您控制活动并顺利运行执行
 
 可以从&#x200B;**控件实例**&#x200B;的&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡访问这些消息中心报告。
 
-![](assets/mc-reports.png)
+![“报告”选项卡上的“全局报告”页面，其中突出显示了三个消息中心报告](assets/mc-reports.png)
 
 ### 消息中心事件历史记录 {#history-events}
 
@@ -86,7 +86,7 @@ Adobe Campaign提供了多个报表，可让您控制活动并顺利运行执行
 
 **[!UICONTROL Message Center processing time]**&#x200B;报告显示与实时队列相关的主要指标。 还可以通过控件实例上的&#x200B;**[!UICONTROL Monitoring]**&#x200B;选项卡访问此报告。
 
-![](assets/mc-processing-time-report.png)
+![消息中心处理时间报告，包含渠道、实例和期间筛选器、指标和图表](assets/mc-processing-time-report.png)
 
 您可以选择显示全局统计信息或与特定执行实例相关的统计信息。 您还可以按渠道和特定时段过滤数据。
 
@@ -135,4 +135,4 @@ Adobe Campaign提供了多个报表，可让您控制活动并顺利运行执行
 1. 在&#x200B;**执行实例**&#x200B;上打开部署向导，并浏览到&#x200B;**[!UICONTROL Message Center]**&#x200B;页。
 1. 使用箭头可更改阈值。
 
-   ![](assets/mc-thresholds.png)
+   ![消息中心配置向导，包含执行实例设置以及警告和警报阈值](assets/mc-thresholds.png)

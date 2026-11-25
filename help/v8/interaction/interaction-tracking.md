@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 4%
+source-wordcount: '232'
+ht-degree: 2%
 ---
 # 实时互动历史记录和报告
 
@@ -44,15 +44,15 @@ ht-degree: 4%
 
 * 在选件级别的&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Propositions]**。
 
-  ![](assets/offer_followup_006.png)
+  ![优惠的“建议”选项卡，其中列出了为优惠提供的建议，并带有事件日期、空间和状态](assets/offer_followup_006.png)
 
 * 在收件人的配置文件中，单击&#x200B;**[!UICONTROL Propositions]**&#x200B;选项卡。
 
-  ![](assets/offer_followup_002.png)
+  ![收件人个人资料的“建议”选项卡，其中列出了具有事件日期、状态、优惠空间和投放的优惠](assets/offer_followup_002.png)
 
 * 在选件空间级别，单击&#x200B;**[!UICONTROL Propositions]**&#x200B;选项卡。
 
-  ![](assets/offer_space_prop_001_b.png)
+  优惠空间的![建议选项卡，其中列出了使用排名、权重和状态生成的建议](assets/offer_space_prop_001_b.png)
 
 ## 产品建议分析报告{#offer-analysis-report}
 
@@ -62,14 +62,14 @@ ht-degree: 4%
 
 * 按日期：
 
-  ![](assets/offer_report_perdate.png)
+  ![优惠分析报告、按日期的统计数据、建议计数、接受和拒绝率以及图表](assets/offer_report_perdate.png)
 
 * 按空间：
 
-  ![](assets/offer_report_perspaces.png)
+  ![优惠分析报告，每个空间的统计数据，按渠道和条形图显示接受和拒绝率](assets/offer_report_perspaces.png)
 
 * 按投放：
 
-  ![](assets/offer_report_perdeliveries.png)
+  ![优惠分析报告，每次投放的统计数据，包含建议，投放的已接受和已拒绝计数](assets/offer_report_perdeliveries.png)
 
 可基于报表上半部分提供的各种标准筛选数据。 选择所需的标准后，单击&#x200B;**[!UICONTROL Refresh]**&#x200B;链接以将其应用于报表。

@@ -19,10 +19,10 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 1%
+source-wordcount: '1168'
+ht-degree: 0%
 ---
 # 管理答案{#managing-answers}
 
@@ -44,7 +44,7 @@ ht-degree: 1%
 
 通过添加新的存储空间以保存调查中提供的响应，可以轻松扩展数据模板。 为此，请在创建输入字段时选择&#x200B;**[!UICONTROL Store answers to a question]**&#x200B;选项。 单击&#x200B;**[!UICONTROL New field...]**&#x200B;链接并提供其属性：
 
-![](assets/s_ncs_admin_survey_new_space.png)
+![存储对话框，其中显示对选定问题的存储答案，以及合同字段的“新建存档字段”对话框。](assets/s_ncs_admin_survey_new_space.png)
 
 输入字段的标签和名称，然后选择字段类型：文本、布尔值、整数或小数、日期等。
 
@@ -62,15 +62,15 @@ ht-degree: 1%
 
 例如，您可以创建一个下拉列表，让用户选择其母语。 对应的已存档字段可以与包含语言列表的&#x200B;**语言**&#x200B;枚举关联：
 
-![](assets/s_ncs_admin_survey_database_values_2b.png)
+![使用选定的语言枚举并突出显示编辑链接图标的“新建存档字段”对话框。](assets/s_ncs_admin_survey_database_values_2b.png)
 
 通过位于字段右侧的&#x200B;**[!UICONTROL Edit link]**&#x200B;图标，可以编辑此枚举的内容：
 
-![](assets/s_ncs_admin_survey_database_values_2c.png)
+![枚举语言（语言）编辑器，其中列出了英语、法语和德语值。](assets/s_ncs_admin_survey_database_values_2c.png)
 
 在字段的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，**[!UICONTROL Initialize the list of values from the database]**&#x200B;链接允许您自动输入提供的标签列表。
 
-![](assets/s_ncs_admin_survey_database_values_2.png)
+![下拉字段“常规”选项卡，从填充语言标签的数据库链接初始化值列表。](assets/s_ncs_admin_survey_database_values_2.png)
 
 **示例**：将收件人的合同存储在一个字段中
 
@@ -78,31 +78,31 @@ ht-degree: 1%
 
 单击&#x200B;**[!UICONTROL New field...]**&#x200B;链接并输入字段属性。 选择&#x200B;**[!UICONTROL Multiple values]**&#x200B;选项以启用多个要存储的值。
 
-![](assets/s_ncs_admin_survey_storage_multi_ex1.png)
+![为选择了多个值选项的合同创建新的存档字段对话框。](assets/s_ncs_admin_survey_storage_multi_ex1.png)
 
 为其它合同创建录入字段，并将数据存储在同一个存档字段中。
 
-![](assets/s_ncs_admin_survey_storage_multi_ex2.png)
+![存储对话框和字段选择器，将输入字段链接到合约存档字段。](assets/s_ncs_admin_survey_storage_multi_ex2.png)
 
 当用户批准调查时，其答案将存储在&#x200B;**[!UICONTROL Contracts]**&#x200B;字段中。
 
 在我们的示例中，对于以下答案：
 
-![](assets/s_ncs_admin_survey_storage_multi_ex3.png)
+![具有四个合同字段的合同调查页，其中填写了值M、L、T和V。](assets/s_ncs_admin_survey_storage_multi_ex3.png)
 
 答辩人的简介将包含所输入的四份合同。
 
 可以通过显示相关列在调查的&#x200B;**[!UICONTROL Answers]**&#x200B;选项卡中查看这些项目。
 
-![](assets/s_ncs_admin_survey_storage_multi_ex4.png)
+![Answers选项卡列出了响应，其中的Contrat_1列到Contrat_4列显示了多值答案的值。](assets/s_ncs_admin_survey_storage_multi_ex4.png)
 
 您还可以根据答案过滤收件人，以仅显示您感兴趣的用户。 为此，请创建定位工作流并使用&#x200B;**[!UICONTROL Survey responses]**&#x200B;框。
 
-![](assets/s_ncs_admin_survey_read_responses_wf.png)
+![使用从“定位”面板拖入到图中的调查响应活动定位工作流。](assets/s_ncs_admin_survey_read_responses_wf.png)
 
 根据要恢复的用户档案创建查询。 在以下实例中，您可以通过查询选择至少具有两个合同的用户档案，包括A类型合同。
 
-![](assets/s_ncs_admin_survey_read_responses_edit.png)
+![在Contract_1等于E和Contract_2等于R上筛选调查响应活动及其“查询”对话框。](assets/s_ncs_admin_survey_read_responses_edit.png)
 
 对于每个表单，都可以在字段或标签中使用提供的答案。 对存储在已存档字段中的内容使用以下语法：
 
@@ -127,17 +127,17 @@ ht-degree: 1%
 * 通过&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡的&#x200B;**[!UICONTROL Properties]**&#x200B;按钮编辑调查属性。
 * 单击&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;链接并选中&#x200B;**[!UICONTROL Save a copy of raw answers]**&#x200B;选项。
 
-![](assets/s_ncs_admin_survey_xml_archive_option.png)
+![选择了“保存原始答案的副本”选项的“Web应用程序高级参数”对话框。](assets/s_ncs_admin_survey_xml_archive_option.png)
 
 您可以为所有调查默认启用此选项（发布调查时应用此选项）。 为此，请创建&#x200B;**[!UICONTROL NmsWebApp_XmlBackup]**&#x200B;选项并为其分配值&#x200B;**[!UICONTROL 1]**，如下所示：
 
-![](assets/s_ncs_admin_survey_xml_global_option.png)
+在Administration， Platform中使用NmsWebApp_XmlBackup选项创建的![选项节点，其值为1.](assets/s_ncs_admin_survey_xml_global_option.png)
 
 ## 得分管理 {#score-management}
 
 您可以为表单页面中提供的选项分配一个分数。 得分只能链接到已关闭的问题：复选框、下拉列表中的值、订阅等。
 
-![](assets/s_ncs_admin_survey_score_create.png)
+![组合框字段“常规”选项卡列出了忠诚度卡值“标准”到“VIP”，其“得分”列从2.00到10.00。](assets/s_ncs_admin_survey_score_create.png)
 
 当页面得到确认时，即当用户单击&#x200B;**[!UICONTROL Next]**&#x200B;或&#x200B;**[!UICONTROL Finish]**&#x200B;按钮时，将在服务器端累计并保存得分。
 
@@ -153,7 +153,7 @@ ht-degree: 1%
 
 * 要在测试中使用得分，请使用测试计算公式中的&#x200B;**[!UICONTROL Score]**&#x200B;字段，如下所示：
 
-  ![](assets/s_ncs_admin_survey_score_in_a_test.png)
+  ![测试条件分数大于6的活动，从上下文文档中选择“分数”字段。](assets/s_ncs_admin_survey_score_in_a_test.png)
 
 * 您可以在脚本中使用得分。
 
@@ -161,18 +161,18 @@ ht-degree: 1%
 
 * 在调查中，下一页允许您根据在下拉列表中选择的值，为用户分配不同的分数：
 
-  ![](assets/s_ncs_admin_survey_score_exa.png)
+  ![班级下拉字段，学前到大学，分数从2.00到7.00。](assets/s_ncs_admin_survey_score_exa.png)
 
 * 您可以根据所选的选项，将此得分与第二个值组合：
 
-  ![](assets/s_ncs_admin_survey_score_exb.png)
+  ![您所在的多选字段……家长得分7.00，学生得分2.00。](assets/s_ncs_admin_survey_score_exb.png)
 
 * 当用户单击&#x200B;**[!UICONTROL Next]**&#x200B;按钮时，两个值相加。
 
-  ![](assets/s_ncs_admin_survey_score_exe.png)
+  ![在“级别”列表中选择初级中级并在“状态”下选择“父级”选项的“欢迎”页面。](assets/s_ncs_admin_survey_score_exe.png)
 
 * 可以根据得分为要显示的页面应用条件。 其配置如下：
 
-  ![](assets/s_ncs_admin_survey_score_exd.png)
+  ![测试具有编辑分支条件的活动：分数大于7.00。](assets/s_ncs_admin_survey_score_exd.png)
 
-  ![](assets/s_ncs_admin_survey_score_exg.png)
+  ![当得分低于7时，测试活动路由到级别1；当得分等于7时，测试活动路由到级别2；当得分高于7时，测试活动路由到级别3。](assets/s_ncs_admin_survey_score_exg.png)

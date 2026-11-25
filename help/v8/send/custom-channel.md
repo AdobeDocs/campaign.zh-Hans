@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 2%
+source-wordcount: '647'
+ht-degree: 1%
 ---
 # 开始使用自定义渠道 {#gs-custom-channel}
 
@@ -40,11 +40,11 @@ Adobe Campaign允许您创建与第三方集成的自定义外部或API渠道。
 
 以下是在客户端控制台中配置新自定义渠道的步骤。 这些步骤对于自定义外部和API渠道是通用的：
 
-1. 配置架构，[阅读更多](#configure-schema)
-1. 创建新的外部帐户，[了解更多](#create-ext-account)
-1. 创建新投放模板，[了解更多](#create-template)
+1. 配置架构，[配置架构](#configure-schema)
+1. 创建新的外部帐户，[创建新的外部帐户](#create-ext-account)
+1. 创建新的投放模板，[创建新的投放模板](#create-template)
 
-自定义API渠道需要其他配置。 [了解更多信息](#api-additional)
+自定义API渠道需要其他配置。 [自定义API额外配置](#api-additional)
 
 ## 配置架构{#configure-schema}
 
@@ -56,14 +56,14 @@ Adobe Campaign允许您创建与第三方集成的自定义外部或API渠道。
 
    例如：
 
-   ```
+   ```xml
    <enumeration basetype="byte" default="mail" label="Channel" name="messageType">
    <value desc="My Webpush" img="ncm:channels.png" label="My Webpush" name="webpush"
           value="122"/>
    </enumeration>
    ```
 
-   ![](assets/cus-schema.png){zoomable="yes"}
+   ![自定义渠道的messageType枚举突出显示的投放(cus)源架构](assets/cus-schema.png){zoomable="yes"}
 
 ## 创建新的外部帐户{#create-ext-account}
 
@@ -75,7 +75,7 @@ Adobe Campaign允许您创建与第三方集成的自定义外部或API渠道。
 
 1. 选择渠道并更改投放模式。 为自定义外部渠道选择&#x200B;**外部**，为自定义API渠道选择&#x200B;**批量**。
 
-   ![](assets/cus-ext-account.png){zoomable="yes"}
+   ![选择自定义渠道且传递模式设置为外部的路由类型的外部帐户](assets/cus-ext-account.png){zoomable="yes"}
 
 ## 创建新投放模板{#create-template}
 
@@ -87,7 +87,7 @@ Adobe Campaign允许您创建与第三方集成的自定义外部或API渠道。
 
 1. 单击&#x200B;**属性**&#x200B;并选择正确的文件夹和路由。
 
-   ![](assets/cus-template.png){zoomable="yes"}
+   ![传递模板属性，常规选项卡，文件夹和路由字段设置为自定义渠道外部帐户](assets/cus-template.png){zoomable="yes"}
 
 新渠道现已可用。 您可以基于此渠道创建和执行投放。
 
@@ -107,13 +107,13 @@ Adobe Campaign允许您创建与第三方集成的自定义外部或API渠道。
 
 1. 打开&#x200B;**投放**&#x200B;架构，然后单击&#x200B;**屏幕版本**。
 
-   ![](assets/cus-schema2.png){zoomable="yes"}
+   带有屏幕编辑按钮的右上角的![投放(nms)架构页面](assets/cus-schema2.png){zoomable="yes"}
 
 1. 选择与您的渠道对应的选项卡，并定义字段在投放内容屏幕中的显示方式。 有关屏幕编辑的详细信息，请参阅此[页面](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/schemas.html?lang=zh-Hans#fields){target="_blank"}。
 
-   ![](assets/cus-schema3.png){zoomable="yes"}
+   ![屏幕定义对话框，自定义渠道选项卡，列出具有标签、属性、类型和必填选项的自定义字段](assets/cus-schema3.png){zoomable="yes"}
 
-1. 在模拟内容的&#x200B;**预览**&#x200B;部分中，选择专用JSPP。 这是可选的。 这将在投放模拟屏幕中激活预览。 [了解更多信息](#api-additional-preview)
+1. 在模拟内容的&#x200B;**预览**&#x200B;部分中，选择专用JSPP。 这是可选的。 这将在投放模拟屏幕中激活预览。 [配置预览](#api-additional-preview)
 
 ### 配置预览{#api-additional-preview}
 
@@ -128,7 +128,7 @@ Adobe Campaign允许您创建与第三方集成的自定义外部或API渠道。
 
 在客户端控制台中，选择&#x200B;**管理** > **配置** > **动态JavaScript页面**，然后创建新的JSSP。 以下是需要检索的参数示例。
 
-```
+```html
 <%@ page import="xtk:shared/nl.js"
 %><%
   NL.require("/nl/core/shared/core.js")

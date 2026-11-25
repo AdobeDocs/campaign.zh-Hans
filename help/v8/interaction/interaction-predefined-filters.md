@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 7%
+source-wordcount: '244'
+ht-degree: 4%
 ---
 # 创建预定义过滤器{#creating-pre-defined-filters}
 
@@ -45,24 +45,24 @@ ht-degree: 7%
 
 1. 浏览到&#x200B;**[!UICONTROL Administration]**&#x200B;文件夹并选择&#x200B;**[!UICONTROL Pre-defined offer filters]**。
 
-   ![](assets/offer_filter_create_005.png)
+   ![选件 — 在“管理”下选择了“预定义选件过滤器”节点的设计树](assets/offer_filter_create_005.png)
 
 1. 单击 **[!UICONTROL New]**。
 
-   ![](assets/offer_filter_create_001.png)
+   ![预定义的选件筛选器列表，其中突出显示“新建”按钮，并列出“年龄”筛选器](assets/offer_filter_create_001.png)
 
 1. 更改标签以便以后能够识别过滤器。
 
-   ![](assets/offer_filter_create_002.png)
+   ![应用程序筛选器对话框，其“标签”字段设置为“电子邮件渠道”](assets/offer_filter_create_002.png)
 
 1. 选择筛选条件将关注的字段。
 
-   ![](assets/offer_filter_create_003.png)
+   ![使用从收件人字段中选择的Email字段Select表达式对话框](assets/offer_filter_create_003.png)
 
 1. 根据需要选择运算符和值，然后保存查询。
 
-   ![](assets/offer_filter_create_004.png)
+   运算符设置为的电子邮件表达式的![筛选条件不为空](assets/offer_filter_create_004.png)
 
 1. 单击&#x200B;**[!UICONTROL Preview]**&#x200B;查看筛选结果。
 
-   ![](assets/offer_filter_create_006.png)
+   电子邮件渠道筛选器的“预览”选项卡，其中列出了与筛选器匹配的收件人![&#128279;](assets/offer_filter_create_006.png)

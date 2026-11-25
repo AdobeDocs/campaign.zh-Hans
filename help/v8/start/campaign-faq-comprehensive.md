@@ -24,9 +24,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 011875268793bca1a000d745818dbd6c69461227
 workflow-type: tm+mt
-source-wordcount: '11502'
+source-wordcount: '11508'
 ht-degree: 12%
 ---
 # 常见问题解答 {#faq}
@@ -102,7 +102,7 @@ Adobe Campaign v8是一个功能强大的跨渠道营销自动化平台，可帮
 
 +++ 我应该了解哪些 Campaign 用户界面概念?
 
-请参阅[此部分](campaign-ui.md)，了解有关Adobe Campaign用户界面基础知识的更多信息。
+请参阅[探索Campaign用户界面](campaign-ui.md)，了解有关Adobe Campaign用户界面基本知识的更多信息。
 
 从Campaign v8.6版本开始，您还可以访问新的&#x200B;**Campaign Web用户界面**，该界面可通过中心[!DNL CX Enterprise]环境使用。
 
@@ -534,7 +534,7 @@ Campaign跟踪订阅/退订历史记录，并自动管理选择加入/选择退�
 
 +++ 在Campaign中设计电子邮件的最佳实践是什么？
 
-关键准则：确保实现移动响应式设计，将HTML 4.0/XHTML兼容代码与内联CSS一起使用，使用替换文本优化图像（小于100 KB），使用个性化合并字段，在发送之前跨电子邮件客户端进行测试，并包含纯文本版本。 将电子邮件总大小控制在500 KB以下以实现最佳可投放性。
+关键准则：确保实现移动响应式设计，并将HTML 4.0/XHTML兼容代码与内联CSS一起使用。 使用替换文本优化图像（小于100 KB），使用个性化合并字段，在发送之前跨电子邮件客户端进行测试，并包含纯文本版本。 将电子邮件总大小控制在500 KB以下以实现最佳可投放性。
 
 **相关主题：**
 
@@ -1212,7 +1212,7 @@ Campaign控制面板是一个基于Web的管理界面，通过跨Campaign实例�
 Adobe Campaign v8提供了将顶级管理帐户和特权帐户的所有当前设置与推荐的安全默认值进行比较的功能。
 
 * **当前设置（完全可见）：**&#x200B;可以在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Access management]**（客户端控制台或Campaign Web UI）中查看管理员帐户和特权帐户的所有设置： **[!UICONTROL Operators]**、**[!UICONTROL Operator groups]**、**[!UICONTROL Named rights]**（例如管理、审批管理）和文件夹级别的权限。 产品管理员还可以在[Campaign控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans){target="_blank"}中查看实例级设置（IP、URL权限、实例详细信息等）。
-* **推荐的安全默认值：** [安全准则](../config/security.md)为管理和特权帐户定义推荐的安全基线，包括：创建足够的安全组，为每个操作员分配适当的访问权限，以及限制对管理员操作员和管理员组的使用。 如果适用，另请参阅用于网络和加密强化的[增强型安全加载项](../config/enhanced-security.md)。
+* **推荐的安全默认值：** [安全准则](../config/security.md)为管理员和特权帐户定义推荐的安全基线。 他们建议您创建足够的安全组，为每个操作员分配适当的访问权限，并限制管理员操作员和管理员组的使用。 如果适用，另请参阅用于网络和加密强化的[增强型安全加载项](../config/enhanced-security.md)。
 * **比较：**&#x200B;管理员将其当前配置与这些有文档记录的建议进行比较，以找出差距并调整安全默认值。
 
 **相关主题：**

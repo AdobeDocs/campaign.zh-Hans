@@ -26,14 +26,14 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '744'
 ht-degree: 1%
 ---
 # 事件处理 {#event-processing}
 
-在事务性消息传递的上下文中，事件由外部信息系统生成，并通过&#x200B;**[!UICONTROL PushEvent]**&#x200B;和&#x200B;**[!UICONTROL PushEvents]**&#x200B;方法发送到Adobe Campaign。 [本节](event-description.md)中介绍了这些方法。
+在事务性消息传递的上下文中，事件由外部信息系统生成，并通过&#x200B;**[!UICONTROL PushEvent]**&#x200B;和&#x200B;**[!UICONTROL PushEvents]**&#x200B;方法发送到Adobe Campaign。 [了解事件描述](event-description.md)中介绍了这些方法。
 
 此事件包含链接到事件的数据，例如：
 
@@ -43,7 +43,7 @@ ht-degree: 1%
 
 事件数据示例：
 
-![](assets/mc-event-request.png)
+![示例事件XML：ctx元素中的事件数据属性（类型、电子邮件、来源）和个性化事件数据](assets/mc-event-request.png)
 
 要处理事务性消息事件，需对执行实例应用以下步骤：
 
@@ -65,11 +65,11 @@ ht-degree: 1%
 
 收集事件后，在等待链接到[消息模板](transactional-template.md)时，将按照执行实例的实时队列和批处理队列之间的技术工作流对事件进行划分。
 
-![](assets/mc-event-queues.png)
+执行实例上的![消息中心文件夹：默认文件夹下的实时事件和批处理事件](assets/mc-event-queues.png)
 
 >[!NOTE]
 >
->在执行实例上，**[!UICONTROL Real time events]**&#x200B;或&#x200B;**[!UICONTROL Batch events]**&#x200B;文件夹不能设置为视图，因为这会导致访问权限问题。 有关将文件夹设置为视图的详细信息，请参阅[此部分](../audiences/folders-and-views.md#turn-a-folder-to-a-view)。
+>在执行实例上，**[!UICONTROL Real time events]**&#x200B;或&#x200B;**[!UICONTROL Batch events]**&#x200B;文件夹不能设置为视图，因为这会导致访问权限问题。 有关将文件夹设置为视图的详细信息，请参阅[将文件夹转换为视图](../audiences/folders-and-views.md#turn-a-folder-to-a-view)。
 
 ## 将事件传输到模板 {#event-to-template}
 
@@ -79,11 +79,11 @@ ht-degree: 1%
 
 * 在事件本身的属性中指定的事件类型：
 
-  ![](assets/event-type-sample.png)
+  ![事件类型属性设置为purchase_order](assets/event-type-sample.png)的批次事件XML
 
 * 在消息模板属性中指定的事件类型：
 
-  ![](assets/event-type-select.png)
+  ![消息模板向导，其事件类型列表显示purchase和purchase_def](assets/event-type-select.png)
 
 默认情况下，路由依赖以下信息：
 

@@ -25,10 +25,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 10%
+source-wordcount: '577'
+ht-degree: 7%
 ---
 # 管理订阅和退订 {#optin-optout}
 
@@ -40,17 +40,17 @@ ht-degree: 10%
 
 * 手动将服务添加到收件人配置文件：要执行此操作，从其配置文件的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择相关的信息服务。
 
-  ![](assets/subscribe-to-a-service.png)
+  使用Select的收件人配置文件的“订阅”选项卡从“添加”打开的“服务”对话框![](assets/subscribe-to-a-service.png)
 
   请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=zh-Hans#deliveries-tab){target="_blank"}以了解详情
 
 * 自动为一组收件人订阅该服务。 收件人列表可能来自筛选操作、组、文件夹、导入或直接手动选择。 要订阅这些收件人，请选择用户档案并右键单击。 选择 **[!UICONTROL Actions > Subscribe selection to a service...]**。
 
-  ![](assets/subscribe-selection.png)
+  ![右键单击选定收件人的菜单，并显示“操作>订阅选择的服务”](assets/subscribe-selection.png)
 
   选择相关的服务，然后启动操作。
 
-  ![](assets/subscribe-confirm.png)
+  ![服务订阅向导，服务选择步骤，带有发送确认消息选项](assets/subscribe-confirm.png)
 
   请参阅 [Campaign Classic v7 文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/profile-management/editing-a-profile.html?lang=zh-Hans#deliveries-tab){target="_blank"}以了解详情
 
@@ -61,18 +61,18 @@ ht-degree: 10%
 
 * 使用Web窗体，以便收件人可以订阅服务。
 
-  ![](assets/opt-in-webapp.png)
+  ![新闻稿订阅Web应用程序工作流：预加载、订阅、存储和结束](assets/opt-in-webapp.png)
 
   Campaign附带一个默认Web表单以管理选择加入。 您可以对其进行个性化并映射配置文件数据。
 
-  ![](assets/web-app.png)
+  ![包含名称、电子邮件、电话、同意复选框和我的订阅按钮的订阅Web窗体的页面编辑器](assets/web-app.png)
 
-  可在[此部分](../dev/web/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in)中了解详情。
+  请参阅[创建双重选择加入的订阅表单](../dev/web/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in)以了解详情。
 
 
 * 创建定位工作流并使用&#x200B;**[!UICONTROL Subscription service]**&#x200B;活动。
 
-  ![](assets/wf-subscription.png)
+  ![包含读取列表、查询和文件收集器的工作流，用于馈送重复数据删除和订阅服务](assets/wf-subscription.png)
 
   请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html?lang=zh-Hans){target="_blank"}以了解详情。
 

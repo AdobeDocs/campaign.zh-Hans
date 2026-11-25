@@ -23,10 +23,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '1103'
-ht-degree: 82%
+source-wordcount: '1164'
+ht-degree: 76%
 ---
 # 连接到 Adobe Campaign v8{#gs-ac-connect}
 
@@ -93,7 +93,7 @@ Campaign 用户使用其 Adobe ID，通过 Adobe 身份管理系统 (IMS) 连接
 
 1. 启动控制台并浏览右边角的链接以访问连接配置屏幕。
 
-   ![](assets/connectToCampaign.png)
+   ![从登录屏幕打开了“连接”对话框，并选中了“与Adobe ID连接”选项](assets/connectToCampaign.png)
 
 1. 选择您需要登录到的 Campaign 实例。
 
@@ -101,7 +101,7 @@ Campaign 用户使用其 Adobe ID，通过 Adobe 身份管理系统 (IMS) 连接
 
 然后，您可以使用 Adobe ID 登录到 Campaign。
 
-![](assets/adobeID.png)
+使用“电子邮件”字段和“继续”按钮的Campaign客户端控制台的![Adobe ID登录屏幕](assets/adobeID.png)
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ Adobe Campaign 允许您定义和管理分配给各种操作员的权限。
 
 作为 Campaign 管理员，您负责创建操作员并与用户共享其凭据。
 
-要了解有关用户以及如何定义其权限的更多信息，请参阅[本节](gs-permissions.md)。
+在[中了解有关用户以及如何定义其权限的更多信息在Campaign v8](gs-permissions.md)中开始使用权限。
 
 
 ## 使用 Web 浏览器访问 Campaign {#connect-web-ac}
@@ -165,11 +165,11 @@ Web 访问提供了与控制台类似的界面，但是功能有所减少。
 
 例如，针对指定的操作员，控制台中会显示营销活动及以下选项：
 
-![](assets/campaign-from-console.png)
+![客户端控制台中的Campaign仪表板，具有完整的编辑选项卡和可用操作](assets/campaign-from-console.png)
 
 而使用 Web 访问时，选项主要是用于查看：
 
-![](assets/campaign-from-web.png)
+在Web访问中![Campaign仪表板，主要查看选项](assets/campaign-from-web.png)
 
 Web访问也用于验证流程：操作员可以单击审批请求电子邮件，并通过其Web浏览器连接到Campaign，以验证或拒绝投放内容或预算。
 

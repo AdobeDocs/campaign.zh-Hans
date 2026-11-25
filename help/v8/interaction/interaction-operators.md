@@ -27,14 +27,14 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '255'
 ht-degree: 3%
 ---
 # 操作员轮廓 {#operator-profiles}
 
-两种类型的操作员可以使用Campaign交互： **优惠经理**&#x200B;和&#x200B;**投放经理**。 每个用户都有特定的权限和限制。 在[此页面](../start/gs-permissions.md)中了解有关Campaign操作员和权限的更多信息。
+两种类型的操作员可以使用Campaign交互： **优惠经理**&#x200B;和&#x200B;**投放经理**。 每个用户都有特定的权限和限制。 在[中了解有关Campaign操作员和权限的更多信息Campaign v8](../start/gs-permissions.md)中的权限入门。
 
 * **[!UICONTROL Offer manager]**&#x200B;创建和维护选件。
 * **[!UICONTROL Delivery manager]**&#x200B;批准和使用优惠
@@ -44,7 +44,7 @@ ht-degree: 3%
 1. 创建运算符。 [了解详情](../start/manage-permissions.md#add-users)
 1. 浏览到&#x200B;**[!UICONTROL Groups and named rights]**&#x200B;窗口，单击&#x200B;**[!UICONTROL Add]**&#x200B;并选择&#x200B;**[!UICONTROL Offer manager]**&#x200B;组。
 
-[此处](../start/manage-permissions.md#ootb-productprofiles)介绍了与选件管理器关联的权限。
+与选件管理器关联的权限描述为[默认产品配置文件和操作员组](../start/manage-permissions.md#ootb-productprofiles)。
 
 ## 创建投放管理器操作员 {#delivery-manager}
 

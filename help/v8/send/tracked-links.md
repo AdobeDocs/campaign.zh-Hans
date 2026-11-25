@@ -28,9 +28,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '621'
 ht-degree: 6%
 ---
 # 配置跟踪的链接 {#how-to-configure-tracked-links}
@@ -39,17 +39,17 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->电子邮件内容中包含个性化的链接需要跟踪特定语法。 在[本节](personalized-links.md)中了解如何在电子邮件中添加可个性化并支持跟踪的链接的详细信息。
+>电子邮件内容中包含个性化的链接需要跟踪特定语法。 了解如何在电子邮件中添加可个性化并支持在[跟踪个性化链接](personalized-links.md)中跟踪的链接。
 
 默认启用消息跟踪。 要个性化URL的跟踪方式，请执行以下步骤：
 
 1. 在消息内容下方的投放助理的下部Select **[!UICONTROL Display URLs]**&#x200B;选项。
 
-   ![](assets/s_ncs_user_email_del_display_urls.png)
+   ![尚未选择内容下方具有“显示URL”选项的HTML内容投放](assets/s_ncs_user_email_del_display_urls.png)
 
    从跟踪的URL列表中选择URL时，交付内容中将高亮显示该URL — 镜像页面中的链接和默认提供的退订链接除外。
 
-   ![](assets/s_ncs_user_email_del_show_urls.png)
+   ![跟踪的URL列表，其中具有在投放内容中突出显示的选定URL及其匹配链接](assets/s_ncs_user_email_del_show_urls.png)
 
 1. 对于消息的每个URL，选择是否激活跟踪。
 
@@ -67,7 +67,7 @@ ht-degree: 6%
 
 1. 如果需要，请更改跟踪模式，在&#x200B;**[!UICONTROL Tracking]**&#x200B;列中选择与目标链接匹配的新模式，如下所示：
 
-   ![](assets/s_ncs_user_select_tracking_mode.png)
+   ![跟踪列下拉列表，其中列出了URL从“已启用”页面到“镜像”页面的跟踪模式](assets/s_ncs_user_select_tracking_mode.png)
 
    对于每个单独的URL，您可以将跟踪模式设置为以下值之一：
 
@@ -78,7 +78,7 @@ ht-degree: 6%
    * **[!UICONTROL Opt-out]**：将此URL视为选择退出或退订URL。
    * **[!UICONTROL Mirror page]**：将此URL视为镜像页面URL。
 
-1. 此外，您还可以在&#x200B;**[!UICONTROL Category]**&#x200B;列的下拉列表中选择每个跟踪URL的类别。 这些类别可以显示在报表中，例如在&#x200B;**[!UICONTROL URLs and click streams]**&#x200B;报表中（请参阅[此章节](../reporting/delivery-reports.md#urls-and-click-streams)）。 类别在特定枚举中定义： **[!UICONTROL urlCategory]**。 在[本节](../config/enumerations.md)中了解如何使用枚举。
+1. 此外，您还可以在&#x200B;**[!UICONTROL Category]**&#x200B;列的下拉列表中选择每个跟踪URL的类别。 这些类别可以显示在报表中，例如在&#x200B;**[!UICONTROL URLs and click streams]**&#x200B;报表中（请参阅[URL和点击流](../reporting/delivery-reports.md#urls-and-click-streams)）。 类别在特定枚举中定义： **[!UICONTROL urlCategory]**。 了解有关如何使用[管理枚举](../config/enumerations.md)中的枚举的详细信息。
 
 ## URL分隔符的最佳实践 {#url-delimiters}
 

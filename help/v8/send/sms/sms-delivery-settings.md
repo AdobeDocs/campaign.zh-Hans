@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '788'
 ht-degree: 1%
 ---
 # 短信投放设置 {#sms-settings}
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 ## 配置短信选项卡 {#sms-tab}
 
-![](assets/send_settings.png){zoomable="yes"}
+包含常规参数和可选SMPP参数(TLV)表的投放属性的![SMS选项卡](assets/send_settings.png){zoomable="yes"}
 
 以下是填写此表单所需的信息。 每个字段的说明如下：
 

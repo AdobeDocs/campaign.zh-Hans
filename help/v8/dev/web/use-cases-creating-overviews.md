@@ -31,9 +31,9 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '1259'
 ht-degree: 0%
 ---
 # 用例：创建概述页面{#use-cases-creating-overviews}
@@ -48,13 +48,13 @@ ht-degree: 0%
 * 每个链接编辑工具一个过滤器（请参阅[使用链接编辑器创建过滤器](#creating-a-filter-using-a-link-editor)），
 * 刷新链接（请参阅[创建刷新链接](#creating-a-refresh-link)）。
 
-![](assets/s_ncs_configuration_webapp_overview.png)
+![带有标签的Web应用程序概述页面：文件夹筛选器、新建按钮、链接编辑器筛选器、刷新链接、列表、详细信息。](assets/s_ncs_configuration_webapp_overview.png)
 
 ## 创建单页Web应用程序 {#creating-a-single-page-web-application}
 
 1. 创建单个&#x200B;**[!UICONTROL Page]** Web应用程序并禁用出站过渡和到下一页的过渡。
 
-   ![](assets/s_ncs_configuration_webapp_create.png)
+   ![页面属性，“常规”选项卡，选中“禁用下一页”并清除“启用出站过渡”。](assets/s_ncs_configuration_webapp_create.png)
 
 1. 更改页面标题。
 
@@ -62,19 +62,19 @@ ht-degree: 0%
 
 1. 在Web应用程序属性中，通过选择&#x200B;**[!UICONTROL Single-page Web application]**&#x200B;模板来修改应用程序的呈现。
 
-   ![](assets/s_ncs_configuration_webapp_rendering.png)
+   ![“属性”对话框的“渲染”选项卡，在“模板”列表中选择了单页Web应用程序模板。](assets/s_ncs_configuration_webapp_rendering.png)
 
 1. 打开Web应用程序的&#x200B;**[!UICONTROL Page]**&#x200B;活动并打开列表(**[!UICONTROL Static element > List]**)。
 1. 在列表的&#x200B;**[!UICONTROL Data]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL Web applications]**&#x200B;文档的类型以及&#x200B;**[!UICONTROL Label]** 、 **[!UICONTROL Creation date]**&#x200B;和&#x200B;**[!UICONTROL Type of application]**&#x200B;输出列。
 1. 在&#x200B;**[!UICONTROL Filter]**&#x200B;子选项卡中，创建如下所示的以下过滤器，以便仅显示Web应用程序并从视图中排除模板。
 
-   ![](assets/s_ncs_configuration_webapp_filter.png)
+   ![列表数据选项卡，筛选器子选项卡，其条件模板等于“否”且主键不等于0。](assets/s_ncs_configuration_webapp_filter.png)
 
 1. 关闭页面的配置窗口，然后单击&#x200B;**[!UICONTROL Preview]**。
 
    此时将显示数据库中可用的Web应用程序列表。
 
-   ![](assets/s_ncs_configuration_webapp_preview.png)
+   ![Web应用程序的“预览”选项卡，按标签显示Web应用程序列表。](assets/s_ncs_configuration_webapp_preview.png)
 
 ## 在文件夹中添加筛选器 {#adding-a-filter-on-a-folder}
 
@@ -91,15 +91,15 @@ ht-degree: 0%
 
 1. 将&#x200B;**[!UICONTROL XML]**&#x200B;类型应用于变量。
 
-   ![](assets/s_ncs_configuration_webapp_variable_xml.png)
+   ![Select文件夹输入，其中编辑存储打开，编辑分支显示XML类型的文件夹变量。](assets/s_ncs_configuration_webapp_variable_xml.png)
 
-1. 选择&#x200B;**[!UICONTROL Refresh page]**&#x200B;交互。
+1. Select **[!UICONTROL Refresh page]**&#x200B;交互。
 
-   ![](assets/s_ncs_configuration_webapp_variable.png)
+   ![选择了刷新页面操作的文件夹输入，供该操作在选择文件夹时执行。](assets/s_ncs_configuration_webapp_variable.png)
 
 1. 将光标放在列表上，在&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中，引用之前在列表的&#x200B;**[!UICONTROL Folder filter XPath]**&#x200B;选项卡中创建的变量。 必须使用文件夹链接涉及的元素的名称，即&#x200B;**文件夹**。
 
-   ![](assets/s_ncs_configuration_webapp_variable002.png)
+   ![列出高级选项卡，并将文件夹筛选器XPath字段设置为存储/筛选中的文件夹。](assets/s_ncs_configuration_webapp_variable002.png)
 
    >[!NOTE]
    >
@@ -129,7 +129,7 @@ ht-degree: 0%
 
    此样式在之前选择的&#x200B;**[!UICONTROL Single-page Web application]**&#x200B;模板中引用。
 
-   ![](assets/s_ncs_configuration_webapp_link.png)
+   ![新链接元素，其URL用于打开新的Web应用程序表单，且“样式”字段设置为“按钮”。](assets/s_ncs_configuration_webapp_link.png)
 
 ## 向列表添加详细信息 {#adding-detail-to-a-list}
 
@@ -138,17 +138,17 @@ ht-degree: 0%
 1. 将光标放在以前创建的列表元素上。
 1. 在&#x200B;**[!UICONTROL General]**&#x200B;选项卡的下拉列表中选择了&#x200B;**[!UICONTROL Columns and additional detail]**&#x200B;显示模式。
 
-   ![](assets/s_ncs_configuration_webapp_detail.png)
+   ![将“查看”选项设置为“列”和“其他详细信息”的“列出常规”选项卡。](assets/s_ncs_configuration_webapp_detail.png)
 
 1. 在&#x200B;**[!UICONTROL Data]**&#x200B;选项卡中，添加&#x200B;**[!UICONTROL Primary key]**、**[!UICONTROL Internal name]**&#x200B;和&#x200B;**[!UICONTROL Description]**&#x200B;列，并为每个列选择&#x200B;**[!UICONTROL Hidden field]**&#x200B;选项。
 
-   ![](assets/s_ncs_configuration_webapp_detail002.png)
+   ![列出数据选项卡，主键、内部名称和描述输出列标记为隐藏字段。](assets/s_ncs_configuration_webapp_detail002.png)
 
    这样，此信息将仅在每个条目的详细信息中可见。
 
 1. 在&#x200B;**[!UICONTROL Additional detail]**&#x200B;选项卡中，添加以下代码：
 
-   ```
+   ```html
    <div class="detailBox">
      <div class="actionBox">
        <span class="action"><img src="/xtk/img/fileEdit.png"/><a title="Open" class="linkAction" href="xtk://open/?schema=nms:webApp&form=nms:webApp&pk=
@@ -192,22 +192,22 @@ ht-degree: 0%
 1. 将光标置于&#x200B;**[!UICONTROL Page]**&#x200B;元素上并选择&#x200B;**[!UICONTROL Container > Standard]**。
 1. 将列数设置为&#x200B;**2**，以使链接编辑器和链接彼此相邻。
 
-   ![](assets/s_ncs_configuration_webapp_container.png)
+   ![外观样式字段设置为dottedFilter和两列的筛选器容器。](assets/s_ncs_configuration_webapp_container.png)
 
-   有关元素布局的信息，请参阅[此部分](about-web-forms.md)。
+   有关元素布局的信息，请参阅[Web窗体入门](about-web-forms.md)。
 
 1. 应用&#x200B;**dottedFilter**。
 
    此样式在之前选择的&#x200B;**[!UICONTROL Single-page Web application]**&#x200B;模板中引用。
 
-   ![](assets/s_ncs_configuration_webapp_container002.png)
+   ![将“外观样式”字段设置为dottedFilter的“筛选器容器常规”选项卡。](assets/s_ncs_configuration_webapp_container002.png)
 
 ### 使用链接编辑器创建过滤器 {#creating-a-filter-using-a-link-editor}
 
 1. 将光标放在上一阶段创建的容器上，并通过&#x200B;**[!UICONTROL Advanced controls]**&#x200B;菜单插入链接编辑器。
 1. 在自动打开的存储窗口中，选择&#x200B;**[!UICONTROL Variables]**&#x200B;选项，然后单击&#x200B;**[!UICONTROL Edit variables]**&#x200B;链接并创建用于筛选数据的XML变量。
 
-   ![](assets/s_ncs_configuration_webapp_variable003.png)
+   ![链接编辑器输入：“编辑存储”、“编辑变量”和“变量”对话框创建var2 XML变量。](assets/s_ncs_configuration_webapp_variable003.png)
 
 1. 修改标签。
 
@@ -215,7 +215,7 @@ ht-degree: 0%
 
 1. 选择运算符表作为应用程序架构。
 
-   ![](assets/s_ncs_configuration_webapp_linkeditor.png)
+   ![链接编辑器标记为Created by，存储到变量var2，并选择了运算符应用程序架构。](assets/s_ncs_configuration_webapp_linkeditor.png)
 
 1. 将光标放在列表元素上，并通过&#x200B;**[!UICONTROL Data > Filter]**&#x200B;选项卡创建过滤器：
 
@@ -224,7 +224,7 @@ ht-degree: 0%
    * **值：**&#x200B;变量（变量）
    * **考虑条件：**“$(var2/@id)”!=
 
-   ![](assets/s_ncs_configuration_webapp_filter002.png)
+   ![仅在设置var2 id时应用列表筛选条件，包括等于变量的创建者链接键。](assets/s_ncs_configuration_webapp_filter002.png)
 
 >[!CAUTION]
 >
@@ -237,13 +237,13 @@ ht-degree: 0%
 1. 选择 **[!UICONTROL Refresh data in a list]**。
 1. 添加之前创建的列表。
 
-   ![](assets/s_ncs_configuration_webapp_refreshlink.png)
+   ![刷新与列表操作中刷新数据的链接，以及在“列表”下选择要刷新的列表1。](assets/s_ncs_configuration_webapp_refreshlink.png)
 
 1. 在&#x200B;**[!UICONTROL Image]**&#x200B;字段上添加刷新图标： **/xtk/img/refresh.png**。
 1. 使用排序顺序箭头重新组织Web应用程序的各个元素，如下所示。
 
-   ![](assets/s_ncs_configuration_webapp_orderelements.png)
+   ![突出显示排序顺序箭头的页面元素树，以将列表1移动到筛选器元素下方。](assets/s_ncs_configuration_webapp_orderelements.png)
 
 Web应用程序现已配置完成。 您可以单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡进行预览。
 
-![](assets/s_ncs_configuration_webapp_result.png)
+![预览已完成的Web应用程序：文件夹筛选器、新建链接、由筛选器创建、刷新链接和列表。](assets/s_ncs_configuration_webapp_result.png)

@@ -27,9 +27,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '1159'
 ht-degree: 1%
 ---
 # 个性化产品建议券{#personalized-coupons}
@@ -55,12 +55,12 @@ ht-degree: 1%
 
 1. 在营销活动树中，转到&#x200B;**[!UICONTROL Resources > Campaign management > Coupons]**。
 
-   ![](assets/deliv_coup_01.png)
+   ![包含资源的营销活动树，已展开营销活动管理并选择了优惠券节点](assets/deliv_coup_01.png)
 
 1. 单击 **[!UICONTROL New]** 按钮。
 1. 在&#x200B;**[!UICONTROL Label]**&#x200B;字段中输入优惠券的名称。 已在&#x200B;**[!UICONTROL Coupon code]**&#x200B;中自动输入唯一代码。 您可以保留代码或输入新代码。
 
-   ![](assets/deliv_coup_02.png)
+   ![优惠券列表和常规选项卡，包含标签、优惠券代码、优惠券类型、开始日期和结束日期字段](assets/deliv_coup_02.png)
 
 1. 选择&#x200B;**[!UICONTROL Start date]**&#x200B;和&#x200B;**[!UICONTROL End date]**&#x200B;以设置优惠券的有效期限。
 1. 在&#x200B;**[!UICONTROL Coupon type]**&#x200B;中，选择“匿名”或“个人”。
@@ -77,11 +77,11 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >可以批量导入单个优惠券。 有关导入和导出的详细信息，请参阅[此部分](../start/import.md)。
+   >可以批量导入单个优惠券。 有关导入和导出的详细信息，请参阅[用户档案入门](../start/import.md)。
 
 ### 配置单个优惠券 {#configuring-individual-coupons}
 
-![](assets/deliv_coup_03.png)
+优惠券的![优惠券选项卡，其中列出了各个优惠券代码，每个代码均具有“可用”状态](assets/deliv_coup_03.png)
 
 “优惠券”选项卡仅适用于“个人优惠券”。 将优惠券与投放关联后，“优惠券”选项卡会提供以下详细信息：
 
@@ -94,64 +94,64 @@ ht-degree: 1%
 
 ## 在电子邮件投放中插入优惠券 {#inserting-a-coupon-into-an-email-delivery}
 
-在下面的示例中，从主页创建投放。 有关如何创建投放的详细说明，请参阅[此章节](email.md)。
+在下面的示例中，从主页创建投放。 有关如何创建投放的详细说明，请参阅[使用Adobe Campaign发送电子邮件](email.md)。
 1. 转到&#x200B;**[!UICONTROL Campaigns]**&#x200B;并选择&#x200B;**[!UICONTROL Deliveries]**。
 1. 单击 **[!UICONTROL Create]**。
 
-   ![](assets/deliv_coup_04.png)
+   “营销活动”选项卡上的![投放列表，其中突出显示“创建”按钮](assets/deliv_coup_04.png)
 
 1. 在&#x200B;**[!UICONTROL Label]**&#x200B;中输入名称并单击&#x200B;**[!UICONTROL Continue]**。
 1. 单击&#x200B;**[!UICONTROL To]**&#x200B;添加收件人。
 1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;以选择投放的收件人。 选择收件人后，单击&#x200B;**[!UICONTROL Ok]**&#x200B;以返回投放。
 
-   ![](assets/deliv_coup_05.png)
+   在“主目标”选项卡上突出显示“添加”按钮的![Select目标对话框](assets/deliv_coup_05.png)
 
 1. 输入主题并向消息中添加内容。
 
-   ![](assets/deliv_coup_06.png)
+   ![包含优惠券电子邮件主题和HTML内容的投放编辑器](assets/deliv_coup_06.png)
 
 1. 在工具栏中，单击&#x200B;**[!UICONTROL Properties]**&#x200B;并选择&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡。
 1. 单击&#x200B;**[!UICONTROL Coupon management]**&#x200B;的文件夹图标。
 
-   ![](assets/deliv_coup_07.png)
+   ![已突出显示“优惠券管理”中“优惠券”字段旁边的文件夹图标的“传递属性”的“高级”选项卡](assets/deliv_coup_07.png)
 
 1. 选择优惠券并单击&#x200B;**[!UICONTROL Ok]**。 再次单击&#x200B;**[!UICONTROL Ok]**。
 
-   ![](assets/deliv_coup_08.png)
+   ![优惠券选择对话框列出已选择足球优惠券的优惠券文档](assets/deliv_coup_08.png)
 
 1. 单击消息以选择要放置优惠券的位置。
 
-   ![](assets/deliv_coup_09.png)
+   ![将光标放在将插入优惠券代码位置的HTML内容编辑器](assets/deliv_coup_09.png)
 
 1. 单击个性化图标，根据优惠券类型选择以下选项之一：
 
    * 匿名优惠券： **[!UICONTROL Coupon > Coupon code]**
 
-     ![](assets/deliv_coup_10.png)
+     ![Personalization菜单，已选择优惠券，然后选择优惠券代码，用于匿名优惠券](assets/deliv_coup_10.png)
 
    * 单个优惠券： **[!UICONTROL Coupon value > Coupon code]**
 
-     ![](assets/deliv_coup_11.png)
+     ![Personalization菜单，为单个优惠券选择优惠券值，然后选择优惠券代码](assets/deliv_coup_11.png)
 
      优惠券将作为代码插入消息中，而不是插入您分配的名称中。 该代码在Campaign ootb数据模型中使用。
 
-   ![](assets/deliv_coup_12.png)
+   ![包含插入的优惠券代码脚本couponValue.couponCode的电子邮件内容突出显示](assets/deliv_coup_12.png)
 
 1. 运行测试以确认您分配给优惠券的名称。 转到&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡并单击&#x200B;**[!UICONTROL Test personalization]**。 选择测试的收件人。
 
-   ![](assets/deliv_coup_13.png)
+   ![打开“测试个性化”菜单并突出显示“收件人”选项的“预览”选项卡](assets/deliv_coup_13.png)
 
    测试后，优惠券应显示为分配的名称而不是代码。
 
-   ![](assets/deliv_coup_14.png)
+   ![邮件正文中显示优惠券代码为Trynow的电子邮件预览](assets/deliv_coup_14.png)
 
 1. 在工具栏中，单击&#x200B;**[!UICONTROL Send]** （左上方）并选择发送投放的方式。
 
-   ![](assets/deliv_coup_15.png)
+   ![使用“尽快投放”选项和“分析”按钮，发送到主要投放目标对话框](assets/deliv_coup_15.png)
 
 1. 单击 **[!UICONTROL Analyze]**。 如果分析日志确认所有收件人有足够的赠券，请单击&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;发送该赠券。
 
-   ![](assets/deliv_coup_16.png)
+   ![投放分析日志显示2张已回收的优惠券，且“确认投放”按钮可用](assets/deliv_coup_16.png)
 
 >[!NOTE]
 >
@@ -162,7 +162,7 @@ ht-degree: 1%
 1. 转到&#x200B;**[!UICONTROL Explorer > Resources > Campaign management > Coupons]**。
 1. 单击&#x200B;**[!UICONTROL Deliveries]**&#x200B;选项卡。
 
-   ![](assets/deliv_coup_17.png)
+   优惠券的![投放选项卡，其中列出了使用它的投放及其状态和消息计数](assets/deliv_coup_17.png)
 
    成功投放的状态显示为&#x200B;**[!UICONTROL Finished]**。
 
@@ -180,12 +180,12 @@ ht-degree: 1%
 1. 单击 **[!UICONTROL To]**。
 1. 在&#x200B;**[!UICONTROL Select target]**&#x200B;中，转到&#x200B;**[!UICONTROL Exclusions]**&#x200B;选项卡。
 
-   ![](assets/deliv_coup_18.png)
+   ![突出显示了“排除项”选项卡的Select target对话框，以及排除项设置的“编辑”链接](assets/deliv_coup_18.png)
 
 1. 在排除设置部分，单击&#x200B;**[!UICONTROL Edit]**。
 1. 输入要在&#x200B;**[!UICONTROL Limit delivery to...messages]**&#x200B;中发送的邮件数，然后单击&#x200B;**[!UICONTROL Ok]**。 您可以发送投放。
 
-   ![](assets/deliv_coup_19.png)
+   ![排除设置对话框，将“限制投放到”字段设置为20条突出显示的消息](assets/deliv_coup_19.png)
 
 >[!NOTE]
 >

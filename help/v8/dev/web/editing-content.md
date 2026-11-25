@@ -28,9 +28,9 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '1581'
 ht-degree: 0%
 ---
 # 编辑内容{#editing-content}
@@ -43,13 +43,13 @@ ht-degree: 0%
 
 要添加可见性条件，请选择一个块并使用表达式编辑器在&#x200B;**[!UICONTROL Visibility condition]**&#x200B;字段中输入条件。
 
-![](assets/dce_add_condition.png)
+![在右侧的“块选项”面板中突出显示“可见性”条件字段和编辑图标的内容编辑器](assets/dce_add_condition.png)
 
 >[!NOTE]
 >
 >[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"}上提供了高级表达式编辑（Campaign v8文档）。
 
-![](assets/dce_popup_visibilitycondition.png)
+![包含“可用字段”列表、“函数列表”和“插入”按钮的表达式编辑器对话框](assets/dce_popup_visibilitycondition.png)
 
 这些条件采用XTK表达式语法（例如&#x200B;**ctx.recipient.@email !=“**”或&#x200B;**ctx.recipient.@status==“0”**）。 默认情况下，所有字段均可见。
 
@@ -61,11 +61,11 @@ ht-degree: 0%
 
 您可以将&#x200B;**边框**&#x200B;添加到选定块。 使用三个选项定义边框：样式、大小和颜色。
 
-![](assets/dce_popup_border.png)
+![具有“样式”、“大小”、“拾色器”和“具有透明、浅色和深色背景的预览”的“边框”对话框](assets/dce_popup_border.png)
 
 您还可以通过从颜色图表中选择颜色来定义&#x200B;**背景颜色**。
 
-![](assets/dce_popup_background.png)
+![带有拾色器的返回对话框、不透明度滑块以及带有透明、浅色和深色选项的预览](assets/dce_popup_background.png)
 
 ## 编辑窗体 {#editing-forms}
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 您可以将数据库字段与输入区域、单选按钮或复选框类型块链接在一起。
 
-![](assets/dce_sidebar_field.png)
+![输入区域（文本）选项，带有表单数据部分、字段设置为“否”数据以及强制的“是/否”切换](assets/dce_sidebar_field.png)
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 默认情况下，提供的字段是&#x200B;**nms:recipient**&#x200B;表中的字段。
 
-![](assets/dce_field_selection.png)
+收件人对话框的![字段列出了nms:recipient字段，例如电子邮件、名字和姓氏](assets/dce_field_selection.png)
 
 **必填字段**&#x200B;选项允许您仅在用户填写字段后才授权页面审批。 如果未填写必填字段，则会显示错误消息。
 
@@ -95,11 +95,11 @@ ht-degree: 0%
 
 * 单击&#x200B;**[!UICONTROL Edit]**&#x200B;图标。
 
-  ![](assets/dce_sidebar_options.png)
+  ![在“类型”、“字段”和“必需”设置上方突出显示“表单数据”部分及其“编辑”图标的复选框选项](assets/dce_sidebar_options.png)
 
 * 在&#x200B;**[!UICONTROL Value]**&#x200B;字段中输入明细列表值（由选定字段定义）。
 
-  ![](assets/dce_sidebar_completeoptionradio.png)
+  ![表单数据对话框，其中的“值（如果选中）”和“值（如果未选中）”字段突出显示](assets/dce_sidebar_completeoptionradio.png)
 
 ### 修改表单字段 {#modifying-form-fields}
 
@@ -111,13 +111,13 @@ ht-degree: 0%
 * 通过使用&#x200B;**[!UICONTROL Duplicate]**&#x200B;图标创建新块来复制所选字段。
 * 使用&#x200B;**[!UICONTROL Edit]**&#x200B;图标编辑&#x200B;**[!UICONTROL Form data]**&#x200B;窗口以将数据库字段链接到表单区域。
 
-  ![](assets/dce_toolbar_formblock_edition.png)
+  ![表单数据对话框，字段选择器设置为“否”数据，并且必须进行“是/否”切换](assets/dce_toolbar_formblock_edition.png)
 
 ## 向按钮添加操作 {#adding-an-action-to-a-button}
 
 当用户单击按钮时，您可以定义关联的操作。 要实现此目的，请从下拉列表中选择要执行的操作。
 
-![](assets/dce_sidebar_button.png)
+![超文本链接选项，带有要定义的、无、刷新、下一页和上一步骤的“操作”下拉列表](assets/dce_sidebar_button.png)
 
 可用的操作如下：
 
@@ -137,11 +137,11 @@ ht-degree: 0%
 
 要实现此目的，请选择元素，然后使用弹出菜单中的第一个图标。
 
-![](assets/dce_insertlink_icon.png)
+![突出显示插入图标的块工具栏，用于打开链接菜单](assets/dce_insertlink_icon.png)
 
 利用此图标，可访问所有可用类型的链接。
 
-![](assets/dce_insertlink_menu.png)
+![插入包含Personalization字段、Personalization块和链接类型的菜单：外部URL、操作、Web应用程序](assets/dce_insertlink_menu.png)
 
 个性化块和字段只能插入到文本类型块中。
 
@@ -163,7 +163,7 @@ ht-degree: 0%
 
 **链接到外部URL**&#x200B;选项允许您从源内容打开任何URL。
 
-![](assets/dce_toolbar_imgblock_externallink.png)
+![为包含URL和目标字段的外部URL插入链接对话框](assets/dce_toolbar_imgblock_externallink.png)
 
 在&#x200B;**URL**&#x200B;字段中输入相关链接地址。 URL字段应输入为： **https://www.myURL.com**。
 
@@ -171,7 +171,7 @@ ht-degree: 0%
 
 通过&#x200B;**链接到Web应用程序**&#x200B;选项，您可以访问Adobe Campaign Web应用程序。
 
-![](assets/dce_toolbar_imgblock_appweb.png)
+![为具有Web应用程序和目标字段的Web应用程序插入链接对话框](assets/dce_toolbar_imgblock_appweb.png)
 
 从相应的字段中选择Web应用程序。
 
@@ -181,7 +181,7 @@ ht-degree: 0%
 
 通过定义操作&#x200B;**选项的**&#x200B;链接，您可以在单击源元素时配置操作。
 
-![](assets/dce_toolbar_imgblock_action.png)
+![为具有“操作”和“目标”字段的操作插入链接对话框](assets/dce_toolbar_imgblock_action.png)
 
 >[!NOTE]
 >
@@ -202,7 +202,7 @@ ht-degree: 0%
 
 选择文本元素时，可以修改字体属性（样式、格式）。
 
-![](assets/dce_toolbar_txt.png)
+![文本工具栏按钮：放大或缩小字体、粗体、斜体、下划线、对齐、背景颜色和字体颜色](assets/dce_toolbar_txt.png)
 
 可用选项如下：
 
@@ -235,11 +235,11 @@ ht-degree: 0%
 
 要插入图像，请选择图像类型块并单击&#x200B;**图像**&#x200B;图标。
 
-![](assets/dce_insert_image.png)
+![为插入图像而突出显示“图像”图标的图像块工具栏](assets/dce_insert_image.png)
 
-选择本地保存的图像文件。
+Select本地保存的图像文件。
 
-![](assets/dce_popup_imgupload.png)
+使用“浏览”按钮的![图像选择对话框以选择本地图像文件](assets/dce_popup_imgupload.png)
 
 **删除**&#x200B;图标会删除包含该图像的标记。
 
@@ -256,7 +256,7 @@ ht-degree: 0%
 * **题注**&#x200B;允许您定义链接到图像的题注（对应于&#x200B;**alt** HTML属性）。
 * **尺寸**&#x200B;允许您指定图像大小（像素）。
 
-  ![](assets/dce_popup_imgsize.png)
+  ![维度对话框，其中的“宽度”和“高度”字段以像素为单位，均设置为96](assets/dce_popup_imgsize.png)
 
 ## 添加个性化内容 {#adding-personalization-content}
 
@@ -264,7 +264,7 @@ ht-degree: 0%
 
 插入图标的&#x200B;**Personalization字段**&#x200B;选项允许您向内容中添加数据库字段，如收件人的姓名。 此选项仅适用于文本类型块。
 
-![](assets/dce_toolbar_textblock_persofield.png)
+![插入一个元素对话框，其中列出了收件人字段，如电子邮件、名字和姓氏](assets/dce_toolbar_textblock_persofield.png)
 
 默认情况下，提供的字段来自&#x200B;**[!UICONTROL Recipient]**&#x200B;表。 必要时，编辑Web应用程序属性以选择其他表。
 
@@ -276,7 +276,7 @@ ht-degree: 0%
 
 **Personalization块**&#x200B;选项允许您向内容中插入动态和个性化的块。 例如，您可以添加徽标或问候语。 它不适用于文本类型块。
 
-![](assets/dce_toolbar_textblock_persoblock.png)
+![插入一个元素对话框，其中列出了个性化块，如问候语、插入徽标和退订链接](assets/dce_toolbar_textblock_persoblock.png)
 
 插入后，个性化块名称将显示在编辑器中，并以黄色突出显示。 当生成个性化时，它自动适应收件人用户档案。
 

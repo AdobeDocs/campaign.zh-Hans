@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 2%
+source-wordcount: '703'
+ht-degree: 1%
 ---
 # 定义 Web 窗体布局{#defining-web-forms-layout}
 
@@ -36,19 +36,19 @@ ht-degree: 2%
 
 对于表单的每个页面，均通过工具栏的&#x200B;**[!UICONTROL Containers]**&#x200B;按钮创建容器。
 
-![](assets/s_ncs_admin_survey_containers_add.png)
+![打开了“容器”工具栏按钮的Web窗体页面编辑器，提供了“标准容器”选项](assets/s_ncs_admin_survey_containers_add.png)
 
 使用容器对页面的元素进行分组，而无需将标签添加到最终渲染。 元素将分组到容器子树中。 标准容器允许您管理布局。
 
 例如：
 
-![](assets/s_ncs_admin_survey_containers_std_arbo.png)
+![包含两个容器（常规信息和您的合同）的树的页面属性及其表单字段](assets/s_ncs_admin_survey_containers_std_arbo.png)
 
 标签的位置将应用于层次结构中放置在容器下方的元素。 如有必要，可以为每个元素重载。 添加或删除列以更改布局。 请参阅[定位页面上的字段](#positioning-the-fields-on-the-page)。
 
 在上例中，渲染将如下所示：
 
-![](assets/s_ncs_admin_survey_containers_std_ex.png)
+![带有两个容器的已渲染表单页面：个人详细信息字段和合同复选框列表，以及验证按钮](assets/s_ncs_admin_survey_containers_std_ex.png)
 
 ## 将字段放置在页面上 {#positioning-the-fields-on-the-page}
 
@@ -58,33 +58,33 @@ Web窗体的布局在每个容器中逐页定义，并且可以根据需要过�
 
 默认情况下，页面构建在一列上，每个元素占据一个单元格。 这意味着字段会逐行显示，每个字段占一整行，如下所示：
 
-![](assets/s_ncs_admin_survey_container_ex.png)
+![呈现单列表单页面，其中性别、姓名、名字和电子邮件字段栈叠在单独的行上](assets/s_ncs_admin_survey_container_ex.png)
 
 在以下示例中，保留了默认配置。 页面占据一列，其中包含四个容器。
 
-![](assets/s_ncs_admin_survey_container_ex0.png)
+![具有四个容器且列数设置为1的页面属性突出显示](assets/s_ncs_admin_survey_container_ex0.png)
 
 每个容器占据一列，每个元素占据一个单元格：
 
-![](assets/s_ncs_admin_survey_container_ex0a.png)
+![在“显示”设置中将单元格数设置为1的信息元素属性突出显示](assets/s_ncs_admin_survey_container_ex0a.png)
 
 呈现方式如下：
 
-![](assets/s_ncs_admin_survey_container_ex0_rend.png)
+![具有四个容器的单列页面渲染，每个容器有一个垂直栈叠的列](assets/s_ncs_admin_survey_container_ex0_rend.png)
 
 您可以调整显示参数以获得以下渲染：
 
-![](assets/s_ncs_admin_survey_container_ex1_rend.png)
+![两列页面渲染，其中容器1和3填充左列，容器2和4填充右列](assets/s_ncs_admin_survey_container_ex1_rend.png)
 
 在上述渲染示例中，每个输入字段、标题和图像在容器的列中占据一个单元格。
 
 您可以修改每个容器中的格式。 在本例中，您可以将容器4的内容分布到两列上并分发元素。
 
-![](assets/s_ncs_admin_survey_container_ex2_rend.png)
+![包含两列的容器4：标题和组合框各取一个单元格，复选框跨两个单元格](assets/s_ncs_admin_survey_container_ex2_rend.png)
 
 标题和列表分别占据一个单元格（因此是容器的整行），复选框会扩展到两个单元格上。 根据字段类型，归属于输入字段的单元格数定义在&#x200B;**[!UICONTROL General]**&#x200B;选项卡或&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中：
 
-![](assets/s_ncs_admin_survey_container_ex2.png)
+在“显示”设置![&#128279;](assets/s_ncs_admin_survey_container_ex2.png)下将单元格数设置为2的复选框元素的高级选项卡
 
 ## 定义标签位置 {#defining-the-position-of-labels}
 
@@ -94,7 +94,7 @@ Web窗体的布局在每个容器中逐页定义，并且可以根据需要过�
 
 在表单属性框中指定整个表单的全局显示参数。 **[!UICONTROL Rendering]**&#x200B;选项卡允许您选择标签的位置。
 
-![](assets/s_ncs_admin_survey_label_position.png)
+![Web窗体属性对话框，呈现选项卡，带有标签位置列表：已继承、左侧、右侧、上侧、下方、隐藏](assets/s_ncs_admin_survey_label_position.png)
 
 可以通过&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡为每个页面、每个容器和每个字段重载此位置。
 

@@ -35,9 +35,9 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1071'
 ht-degree: 1%
 ---
 # 建议和限制 {#limitations}
@@ -81,7 +81,7 @@ ht-degree: 1%
 
 * 要在REST API负载中使用筛选器，您需要在Campaign v8中编辑这些筛选器，并提供要在负载中使用的名称。 为此，请从&#x200B;**[!UICONTROL Parameters]**&#x200B;选项卡访问过滤器的附加参数，并在&#x200B;**[!UICONTROL Filter name in REST API]**&#x200B;字段中提供所需的名称。
 
-  ![](assets/api-filtering.png)
+  ![REST API字段中的筛选器名称设置为byEmailNotEmpty的预定义筛选器的高级参数对话框](assets/api-filtering.png)
 
 
 * 不再需要使用自定义筛选器所需的“by”前缀。 过滤器名称应按照原样在请求中使用。

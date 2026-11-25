@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '762'
 ht-degree: 1%
 ---
 # 中间源基础设施中的SMS {#sms-mid}
@@ -59,22 +59,22 @@ ht-degree: 1%
 
    请注意，名称（登录）稍后用于在中间服务器中命名您的SMPP外部帐户。
 
-   ![](assets/smsoperator_mid.png){zoomable="yes"}
+   ![中间服务器上新增短信操作员表单，其名称为（登录名）、密码和标签，权限为“添加”按钮](assets/smsoperator_mid.png){zoomable="yes"}
 
 1. 在&#x200B;**[!UICONTROL Groups and named rights]**&#x200B;部分中，单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
 在打开的新窗口中，从&#x200B;**[!UICONTROL Folder]**&#x200B;列表中选择&#x200B;**[!UICONTROL Named rights]**，然后在右侧列表中选择&#x200B;**[!UICONTROL ADMINISTRATION]**。
 
 1. 单击&#x200B;**[!UICONTROL Ok]**&#x200B;按钮。
 
-   ![](assets/smsoperator_rights.png){zoomable="yes"}
+   ![使用ADMINISTRATION named rights selected](assets/smsoperator_rights.png){zoomable="yes"}添加组或命名权限对话框
 
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;按钮以完成短信操作员的创建。
 
-   ![](assets/smsoperator_save.png){zoomable="yes"}
+   添加了![SMS操作员表单，其中的“管理”权限已添加，“保存”按钮已突出显示](assets/smsoperator_save.png){zoomable="yes"}
 
 您现在可以在运算符列表中看到它。
 
-![](assets/smsoperator_list.png){zoomable="yes"}
+![操作员列表显示新的中间短信操作员(smsOperator)](assets/smsoperator_list.png){zoomable="yes"}
 
 ## 在营销服务器上创建短信外部帐户 {#sms-external-account}
 
@@ -86,17 +86,17 @@ ht-degree: 1%
 
 1. 在&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**&#x200B;中，单击&#x200B;**[!UICONTROL New]**&#x200B;图标
 
-   ![](assets/sms_extaccount.png){zoomable="yes"}
+   在“管理”>“平台”中列出了![外部帐户，并突出显示了新图标](assets/sms_extaccount.png){zoomable="yes"}
 
 1. 设置外部帐户的&#x200B;**[!UICONTROL Label]**&#x200B;和&#x200B;**[!UICONTROL Internal name]**。 将帐户类型定义为&#x200B;**[!UICONTROL Routing]**，选中&#x200B;**[!UICONTROL Enabled]**&#x200B;框，为渠道选择&#x200B;**[!UICONTROL Mobile (SMS)]**，为投放模式选择&#x200B;**[!UICONTROL Mid-sourcing]**。
 
-   ![](assets/mid_smsextaccount.png){zoomable="yes"}
+   ![外部帐户“常规”选项卡：路由类型、已启用、移动(SMS)渠道和中间源投放模式](assets/mid_smsextaccount.png){zoomable="yes"}
 
 1. 在&#x200B;**[!UICONTROL Mid-sourcing]**&#x200B;选项卡中，使用中间源服务器URL和之前在中间服务器上创建的SMS运算符填写表单。
 
    单击&#x200B;**[!UICONTROL Test the connection]**&#x200B;按钮确认连接。
 
-   ![](assets/midtab_smsextaccount.png){zoomable="yes"}
+   ![包含服务器URL、SMS操作员帐户、密码和测试连接按钮的中间源选项卡](assets/midtab_smsextaccount.png){zoomable="yes"}
 
 1. 单击 **[!UICONTROL Save]**。
 
@@ -120,13 +120,13 @@ ht-degree: 1%
    >
 
    将帐户类型定义为&#x200B;**[!UICONTROL Routing]**，选中&#x200B;**[!UICONTROL Enabled]**&#x200B;框，为渠道选择&#x200B;**[!UICONTROL Mobile (SMS)]**，为投放模式选择&#x200B;**[!UICONTROL Bulk delivery]**。
-   ![](assets/mid_extaccount.png){zoomable="yes"}
+   ![中间服务器外部帐户“常规”选项卡：路由类型、已启用、移动(SMS)渠道和批量投放模式](assets/mid_extaccount.png){zoomable="yes"}
 
 1. 在&#x200B;**[!UICONTROL Mobile]**&#x200B;选项卡中，将&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;保留在&#x200B;**[!UICONTROL Connector]**&#x200B;下拉列表中。
 
    默认情况下，**[!UICONTROL Send messages through a dedicated process]**&#x200B;框处于选中状态。
 
-   ![](assets/sms_extaccount_connector.png){zoomable="yes"}
+   ![带有扩展通用SMPP连接器的Mobile选项卡，并通过已检查的专用进程发送消息](assets/sms_extaccount_connector.png){zoomable="yes"}
 
    要设置连接，您需要填写此表单的选项卡。 有关详细信息，[了解有关SMPP外部帐户的更多信息](smpp-external-account.md#smpp-connection-settings)。
 
@@ -136,18 +136,18 @@ ht-degree: 1%
 
 在营销服务器上的&#x200B;**[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**&#x200B;中，右键单击现有的Mobile投放模板，然后选择&#x200B;**[!UICONTROL Duplicate]**。
 
-![](assets/sms_template_duplicate.png){zoomable="yes"}
+![在移动（短信）模板的上下文菜单中选择重复项的“投放模板”列表](assets/sms_template_duplicate.png){zoomable="yes"}
 
 更改模板的&#x200B;**[!UICONTROL Label]**&#x200B;和&#x200B;**[!UICONTROL Internal name]**&#x200B;以轻松识别它，然后单击&#x200B;**[!UICONTROL Properties]**&#x200B;按钮。
 
-![](assets/sms_template_name.png){zoomable="yes"}
+![具有“标签”和“内部名称”字段以及“属性”按钮突出显示的重复投放模板](assets/sms_template_name.png){zoomable="yes"}
 
 在&#x200B;**[!UICONTROL General]**&#x200B;选项卡的&#x200B;**[!UICONTROL Routing]**&#x200B;中，选择您的SMPP外部帐户。
 
-![](assets/mid_template.png){zoomable="yes"}
+![路由字段设置为SMPP外部帐户的“传递属性”“常规”选项卡](assets/mid_template.png){zoomable="yes"}
 
 在&#x200B;**[!UICONTROL SMS]**&#x200B;选项卡中，可以向模板添加可选参数。
 
-![](assets/sms_template_properties.png){zoomable="yes"}
+![包含常规参数和可选SMPP参数(TLV)的投放属性SMS选项卡](assets/sms_template_properties.png){zoomable="yes"}
 
 [了解有关此短信选项卡配置的更多信息](sms-delivery-settings.md)。

@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '688'
 ht-degree: 1%
 ---
 # 测试消息跟踪 {#testing-tracking}
@@ -59,7 +59,7 @@ ht-degree: 1%
 1. 设计包含要跟踪的链接的电子邮件内容。 [了解电子邮件内容设计](defining-the-email-content.md)
 1. 在电子邮件内容中添加镜像页面个性化块。 [了解个性化块](personalization-blocks.md)
 
-   ![](assets/mirror-page-insert.png)
+   在电子邮件内容编辑器中选择了![Personalization菜单（包含并链接到镜像页面）](assets/mirror-page-insert.png)
 
 1. 指定将接收电子邮件的用户。 由于此用户必须打开电子邮件并单击它包含的链接，因此请确保选择您控制的测试收件人地址。 [了解测试用户档案](../audiences/test-profiles.md)
 
@@ -71,7 +71,7 @@ ht-degree: 1%
    * 确保选中&#x200B;**[!UICONTROL Activate tracking]**
    * 如果要跟踪打开次数，请确保已选中&#x200B;**[!UICONTROL Opens tracking]**
 
-   ![](assets/s_ncs_user_email_del_tracking_param.png)
+   ![包含“激活跟踪”和“打开次数”跟踪的“跟踪和图像”对话框以及跟踪的URL列表](assets/s_ncs_user_email_del_tracking_param.png)
 
    [了解有关URL跟踪选项的更多信息](url-tracking.md)
 
@@ -85,14 +85,14 @@ ht-degree: 1%
 1. 打开&#x200B;**[!UICONTROL Tracking]**&#x200B;工作流。
 1. 启动工作流，或右键单击&#x200B;**[!UICONTROL Scheduler]**&#x200B;活动并选择&#x200B;**[!UICONTROL Execute pending task now]**。
 1. 请等待大约30秒，工作流才能处理跟踪日志。
-1. 选择工作流的&#x200B;**[!UICONTROL Audit]**&#x200B;选项卡。 确保至少找到一个跟踪日志记录。 如果您没有看到任何新日志，请单击&#x200B;**[!UICONTROL Refresh]**。
+1. Select工作流的&#x200B;**[!UICONTROL Audit]**&#x200B;选项卡。 确保至少找到一个跟踪日志记录。 如果您没有看到任何新日志，请单击&#x200B;**[!UICONTROL Refresh]**。
 
 1. 验证投放中的跟踪日志：
    * 返回您的投放
-   * 选择&#x200B;**[!UICONTROL Tracking]**&#x200B;选项卡
+   * Select **[!UICONTROL Tracking]**&#x200B;选项卡
    * 检查跟踪日志的列表是否随单击URL和其他跟踪事件一起显示
 
-   ![](assets/s_ncs_user_delivery_tracking_tab.png)
+   ![“投放跟踪”选项卡，包含跟踪日志列表，其中显示标签、点击和打开类型以及收件人](assets/s_ncs_user_delivery_tracking_tab.png)
 
 ## 步骤4：检查收件人跟踪选项卡 {#check-recipient-tracking}
 
@@ -101,7 +101,7 @@ ht-degree: 1%
 
 1. 选择 **[!UICONTROL Tracking]** 选项卡。 [了解有关跟踪日志的详细信息](tracking-logs.md)
 
-   ![](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
+   ![收件人用户档案跟踪选项卡列出了包含日期、标签、类型和投放的跟踪日志](assets/s_ncs_user_select_tracking_tab_from_recipient.png)
 
 1. 验证跟踪记录是否与以下内容一起显示：
    * **[!UICONTROL Type]**&#x200B;列中的&#x200B;**[!UICONTROL Mirror Page]**&#x200B;值

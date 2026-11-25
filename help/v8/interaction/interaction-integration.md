@@ -24,9 +24,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1566'
 ht-degree: 0%
 ---
 # 在网页中添加优惠{#add-an-offer-in-web}
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 脚本调用URL如下所示：
 
-```
+```xml
 <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=" type="text/javascript"></script>
 ```
 
@@ -61,13 +61,13 @@ HTML页面必须包含一个元素，该元素的@id属性具有已创建选件�
 
 在我们的示例中，@id属性接收“i_SPC12”值，其中“SPC12”是之前创建的选件空间的内部名称：
 
-```
+```xml
 <div id="i_SPC12"></div>
 ```
 
 在我们的示例中，用于调用脚本的URL如下所示（“OE3”是实时环境的内部名称）：
 
-```
+```xml
 <script id="interactionProposalScript" src="https://instance.adobe.org:8080/nl/interactionProposal.js?env=OE3" type="text/javascript"></script>
 ```
 
@@ -83,7 +83,7 @@ HTML页面必须包含一个元素，该元素的@id属性具有已创建选件�
 
 优惠呈现的内容由优惠引擎返回到HTML页面：
 
-```
+```xml
 <div id="banner_header">
  <div id="i_SPC12">
    <table>
@@ -111,7 +111,7 @@ HTML页面必须包含一个元素，该元素的@id属性具有已创建选件�
 
 在网页的内容中，您需要添加以下脚本，以在调用优惠引擎期间识别联系人：
 
-```
+```xml
 <script type="text/javascript">
   interactionTarget = <contact_identifier>;
 </script>
@@ -119,7 +119,7 @@ HTML页面必须包含一个元素，该元素的@id属性具有已创建选件�
 
 1. 转到网页将调用的优惠空间，单击&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;并添加一个或多个标识键。
 
-   ![](assets/interaction_htmlmode_001.png)
+   ![高级参数“目标标识”选项卡，其键路径@email和姓氏字段被添加为第二个键](assets/interaction_htmlmode_001.png)
 
    在此示例中，标识键是复合键，因为它同时基于电子邮件和收件人名称。
 
@@ -127,7 +127,7 @@ HTML页面必须包含一个元素，该元素的@id属性具有已创建选件�
 
    在以下示例中，联系人已登录到网站，并在致电优惠引擎期间因其电子邮件和姓名而被识别。
 
-   ```
+   ```xml
    <script type="text/javascript">
      interactionTarget = myEmail|myName;
    </script>
@@ -141,7 +141,7 @@ HTML页面必须包含一个元素，该元素的@id属性具有已创建选件�
 1. 选择 **[!UICONTROL Overload the HTML rendering function]**。
 1. 转到&#x200B;**[!UICONTROL HTML rendering]**&#x200B;选项卡，并在选件空间中插入与为选件内容定义的字段匹配的变量。
 
-   ![](assets/interaction_htmlmode_002.png)
+   ![HTML的“优惠空间编辑函数”对话框，带有“重载HTML渲染函数”选项和脚本](assets/interaction_htmlmode_002.png)
 
    在此示例中，选件以横幅的形式显示在网页中，并且由可单击的图像和与选件内容中定义的字段匹配的标题组成。
 
@@ -153,7 +153,7 @@ HTML页面必须包含一个元素，该元素的@id属性具有已创建选件�
 
 对优惠引擎的调用如下所示：
 
-```
+```xml
 <script type="text/javascript" id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=&cb="></script>
 ```
 
@@ -171,7 +171,7 @@ HTML页面必须包含一个元素，该元素的@id属性具有已创建选件�
 
 返回的XML节点如下所示：
 
-```
+```xml
 <propositions>
  <proposition id="" offer-id="" weight="" rank="" space="" div=""> //proposition identifiers
    ...XML content defined in Adobe Campaign...
@@ -184,9 +184,9 @@ HTML页面必须包含一个元素，该元素的@id属性具有已创建选件�
 
 1. **创建环境和优惠空间**
 
-   有关创建环境的详细信息，请参阅[此页面](interaction-env.md)。
+   有关创建环境的详细信息，请参阅[使用Campaign交互环境](interaction-env.md)。
 
-   有关创建优惠空间的详细信息，请参阅[此页面](interaction-offer-spaces.md)。
+   有关创建优惠空间的更多信息，请参阅[Campaign交互优惠空间](interaction-offer-spaces.md)。
 
 1. **扩展优惠架构以添加新字段**
 
@@ -194,7 +194,7 @@ HTML页面必须包含一个元素，该元素的@id属性具有已创建选件�
 
    示例中架构的名称为&#x200B;**cus:offer**
 
-   ```
+   ```xml
    <srcSchema _cs="Marketing offers (cus)" created="2013-01-18 17:14:20.762Z" createdBy-id="0"
               desc="" entitySchema="xtk:srcSchema" extendedSchema="nms:offer" img="nms:offer.png"
               label="Marketing offers" labelSingular="Marketing offers" lastModified="2013-01-18 15:20:18.373Z"
@@ -231,7 +231,7 @@ HTML页面必须包含一个元素，该元素的@id属性具有已创建选件�
 
    在“视图”部分中，插入两个包含以下内容的新字段：
 
-   ```
+   ```xml
    <input label="Title 2" margin-right="5" prebuildSubForm="false" type="subFormLink" xpath="title2_jst">
         <form label="Edit title 2" name="editForm" nothingToSave="true">
             <input nolabel="true" toolbarAlign="horizontal" type="jstEdit" xpath="." xpathInsert="/ignored/customizeTitle2">
@@ -256,7 +256,7 @@ HTML页面必须包含一个元素，该元素的@id属性具有已创建选件�
 
    注释掉目标URL字段：
 
-   ![](assets/interaction_xmlmode_form_001.png)
+   ![带有目标URL输入块的优惠呈现表单XML被注释掉](assets/interaction_xmlmode_form_001.png)
 
    >[!CAUTION]
    >
@@ -264,17 +264,17 @@ HTML页面必须包含一个元素，该元素的@id属性具有已创建选件�
 
    优惠呈现形式中的呈现如下所示：
 
-   ![](assets/interaction_xmlmode_form.png)
+   ![HTML内容编辑器上方具有空标题、目标URL和图像URL字段的“选件内容”选项卡](assets/interaction_xmlmode_form.png)
 
    已添加&#x200B;**[!UICONTROL Title 2]**&#x200B;和&#x200B;**[!UICONTROL Price]**&#x200B;字段，并且不再显示&#x200B;**[!UICONTROL Destination URL]**&#x200B;字段。
 
 1. **创建产品建议**
 
-   有关创建选件的详细信息，请参阅[此页面](interaction-offer.md)。
+   有关创建优惠的详细信息，请参阅[Campaign交互优惠](interaction-offer.md)。
 
    在以下用例中，输入选件如下：
 
-   ![](assets/interaction_xmlmode_offer.png)
+   ![已填写标题、目标URL和图像URL的“选件内容”选项卡，并使用recipient.firstName的HTML内容](assets/interaction_xmlmode_offer.png)
 
 1. **批准选件**
 
@@ -284,7 +284,7 @@ HTML页面必须包含一个元素，该元素的@id属性具有已创建选件�
 
    对HTML页面中选件引擎的调用如下所示：
 
-   ```
+   ```xml
    <script id="interactionProposalScript" src="https://<SERVER_URL>/nl/interactionProposal.js?env=OE7&cb=alert" type="text/javascript">
    ```
 
@@ -294,7 +294,7 @@ HTML页面必须包含一个元素，该元素的@id属性具有已创建选件�
 
    选件引擎返回的XML节点如下所示：
 
-   ```
+   ```xml
    <propositions>
     <proposition id="a28002" offer-id="10322005" weight="1" rank="1" space="SPC14" div="i_SPC14">
      <xmlOfferView>
@@ -320,14 +320,14 @@ HTML页面必须包含一个元素，该元素的@id属性具有已创建选件�
 
    该函数可以如下所示：
 
-   ```
+   ```javascript
    function (proposition) {
      delete proposition.@id;
      proposition.@newAttribute = "newValue";
    } 
    ```
 
-![](assets/interaction_xmlmode_001.png)
+![XML渲染选项卡的“优惠空间编辑函数”对话框，带有“重载XML渲染函数”选项和脚本](assets/interaction_xmlmode_001.png)
 
 ## 设置SOAP集成
 
@@ -367,7 +367,7 @@ HTML页面必须包含一个元素，该元素的@id属性具有已创建选件�
 
 以下是SOAP调用的代码示例：
 
-```
+```html
 <%
   var space = request.parameters.sp
   var cnx = new HttpSoapConnection(

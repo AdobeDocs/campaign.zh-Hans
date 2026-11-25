@@ -29,9 +29,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: df8d8e17c486122e23a6db0e44263f9f9632a204
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1536'
 ht-degree: 1%
 ---
 # 在Campaign和您的CRM之间同步数据 {#data-synchronization}
@@ -40,13 +40,13 @@ Adobe Campaign与CRM之间的数据同步由&#x200B;**CRM Connector**&#x200B;工
 
 例如，要将Microsoft Dynamics数据导入Adobe Campaign，请创建以下类型的工作流：
 
-![](assets/ms-dyn-wf.png)
+![按顺序导入MS Dynamics工作流： CRM连接器、扩充、重复数据删除和更新数据活动](assets/ms-dyn-wf.png)
 
 此工作流通过Microsoft Dynamics导入联系人，将其与现有Adobe Campaign数据同步，删除重复的联系人，并更新Adobe Campaign数据库。
 
 需要配置&#x200B;**[!UICONTROL CRM Connector]**&#x200B;活动以同步数据。
 
-![](assets/crm-connector-ms-dyn.png)
+![CRM Connector活动设置为从CRM导入，具有Microsoft Dynamics CRM、联系人对象和远程字段](assets/crm-connector-ms-dyn.png)
 
 通过此活动，您可以：
 
@@ -55,11 +55,11 @@ Adobe Campaign与CRM之间的数据同步由&#x200B;**CRM Connector**&#x200B;工
 * 导入CRM中删除的对象 — [了解更多](#importing-objects-deleted-in-the-crm)
 * 删除CRM中的对象 — [了解更多](#deleting-objects-in-the-crm)
 
-![](assets/crm-remote-op.png)
+![CRM连接器类型列表，具有从CRM导入、导出到CRM、导入CRM中删除的对象和删除对象](assets/crm-remote-op.png)
 
 选择与要配置同步的CRM匹配的外部帐户，然后选择要同步的对象：帐户、商机、潜在客户、联系人等。
 
-![](assets/crm-remote-obj.png)
+已选择联系人的Salesforce CRM的![CRM连接器远程对象列表](assets/crm-remote-obj.png)
 
 此活动的配置取决于执行的流程。 各种配置详见下文。
 
@@ -67,7 +67,7 @@ Adobe Campaign与CRM之间的数据同步由&#x200B;**CRM Connector**&#x200B;工
 
 要通过Adobe Campaign中的CRM导入数据，您需要创建以下类型的工作流：
 
-![](assets/crm-wf-import.png)
+![使用用户CRM连接器、Select文件夹导入工作流，用户更新并保存上次用户更新活动](assets/crm-wf-import.png)
 
 1. 选择&#x200B;**[!UICONTROL Import from the CRM]**&#x200B;操作。
 1. 在&#x200B;**[!UICONTROL Remote object]**&#x200B;下拉列表中，选择要导入的对象。 此对象与连接器配置期间在Adobe Campaign中创建的表之一匹配。
@@ -75,7 +75,7 @@ Adobe Campaign与CRM之间的数据同步由&#x200B;**CRM Connector**&#x200B;工
 
    要添加字段，请单击工具栏中的&#x200B;**[!UICONTROL Add]**&#x200B;按钮，然后单击&#x200B;**[!UICONTROL Edit expression]**&#x200B;图标。
 
-   如有必要，请使用&#x200B;**[!UICONTROL Conversion]**&#x200B;列的下拉列表更改数据格式。 在[此部分](#data-format)中详细介绍了可能的转换类型。
+   如有必要，请使用&#x200B;**[!UICONTROL Conversion]**&#x200B;列的下拉列表更改数据格式。 以[数据格式](#data-format)详细列出了可能的转换类型。
 
    >[!CAUTION]
    >
@@ -87,21 +87,21 @@ Adobe Campaign与CRM之间的数据同步由&#x200B;**CRM Connector**&#x200B;工
 
    在以下示例中，Adobe Campaign将仅导入自2021年11月1日以来记录了一些活动的联系人。
 
-   ![](assets/crm-task-import-filter.png)
+   ![使用2021年12月1日之后的“上次活动”条件为CRM Connector导入的“编辑筛选器”对话框](assets/crm-task-import-filter.png)
 
    >[!CAUTION]
    >
-   >[此部分](#filtering-data)中详细介绍了与数据过滤模式相关的限制。
+   >在[过滤数据](#filtering-data)中详细说明了与数据过滤模式相关的限制。
 
 1. 选择&#x200B;**[!UICONTROL Use automatic index...]**&#x200B;选项以根据日期及其上次修改自动管理CRM和Adobe Campaign之间的增量对象同步。
 
-   如需详细信息，请参阅[此小节](#variable-management)。
+   有关详细信息，请参阅[管理变量](#variable-management)。
 
 ### 管理变量 {#variable-management}
 
 激活&#x200B;**[!UICONTROL Automatic index]**&#x200B;选项以仅收集自上次导入以来修改的对象。
 
-![](assets/use-auto-index.png)
+![使用自动索引对话框，并带有自动索引选项、选项名称和索引字段LastReferencedDate](assets/use-auto-index.png)
 
 上次同步的日期存储在配置窗口中指定的选项中，默认情况下为： **LASTIMPORT_&lt;%=instance.internalName%>_&lt;%=activityName%>**。
 
@@ -149,7 +149,7 @@ Adobe Campaign与CRM之间的数据同步由&#x200B;**CRM Connector**&#x200B;工
 
 列表中的列顺序是排序顺序：
 
-![](assets/crm-import-order.png)
+![按对话框排序，按C级降序排序__然后MailingCity](assets/crm-import-order.png)
 
 ### 记录标识 {#record-identification}
 
@@ -159,7 +159,7 @@ Adobe Campaign与CRM之间的数据同步由&#x200B;**CRM Connector**&#x200B;工
 
 然后，选择要导入的集客群体的字段，如下所示：
 
-![](assets/use-population-calc-upstream.png)
+![CRM Connector使用群体计算的上游选定字段和远程字段AccountId和ID](assets/use-population-calc-upstream.png)
 
 ## 导出到CRM {#exporting-to-the-crm}
 
@@ -167,7 +167,7 @@ Adobe Campaign与CRM之间的数据同步由&#x200B;**CRM Connector**&#x200B;工
 
 要将数据导出到CRM，请创建以下类型的工作流：
 
-![](assets/crm-export-diagram.png)
+![CRM导出工作流：计划程序，查询要导出的潜在客户，导出潜在客户MsCrm连接器并更新潜在客户](assets/crm-export-diagram.png)
 
 1. 选择&#x200B;**[!UICONTROL Export to CRM]**&#x200B;操作。
 1. 转到&#x200B;**[!UICONTROL Remote object]**&#x200B;下拉列表并选择要导出的对象。 此对象与连接器配置期间在Adobe Campaign中创建的表之一匹配。
@@ -178,7 +178,7 @@ Adobe Campaign与CRM之间的数据同步由&#x200B;**CRM Connector**&#x200B;工
 
 1. 如果您需要执行更快的导出，请选中&#x200B;**[!UICONTROL Export in Batches]**&#x200B;选项。
 
-   ![](assets/crm-export-batch.png)
+   ![CRM连接器设置为“导出到CRM”，并选择了批量导出选项](assets/crm-export-batch.png)
 
 1. 在&#x200B;**[!UICONTROL Mapping]**&#x200B;部分中，单击&#x200B;**[!UICONTROL New]**&#x200B;以指定要导出的字段及其在CRM中的映射。
 
@@ -188,7 +188,7 @@ Adobe Campaign与CRM之间的数据同步由&#x200B;**CRM Connector**&#x200B;工
    >
    >如果没有为字段定义匹配项，则无法更新值：这些值将直接插入您的CRM。
 
-   如有必要，请使用&#x200B;**[!UICONTROL Conversion]**&#x200B;列的下拉列表更改数据格式。 在[此部分](#data-format)中详细介绍了可能的转换类型。
+   如有必要，请使用&#x200B;**[!UICONTROL Conversion]**&#x200B;列的下拉列表更改数据格式。 以[数据格式](#data-format)详细列出了可能的转换类型。
 
    >[!NOTE]
    >
@@ -202,7 +202,7 @@ Adobe Campaign与CRM之间的数据同步由&#x200B;**CRM Connector**&#x200B;工
 
 要实现此目的，请选择要应用于匹配列的转换。
 
-![](assets/crm-task-import.png)
+使用转换列表的![远程字段CreatedDate： Default、Date only、Without time offset、Copy/Paste](assets/crm-task-import.png)
 
 **[!UICONTROL Default]**&#x200B;模式应用自动数据转换，在大多数情况下相当于数据的复制/粘贴。 但是，会应用时区管理。
 
@@ -216,11 +216,11 @@ Adobe Campaign与CRM之间的数据同步由&#x200B;**CRM Connector**&#x200B;工
 
 在数据导入或导出的框架中，您可以将特定进程应用于错误和拒绝。 为此，请在&#x200B;**[!UICONTROL Behavior]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Keep the rejections in a file]**&#x200B;和&#x200B;**[!UICONTROL Process errors]**&#x200B;选项。
 
-![](assets/crm-export-options.png)
+![CRM Connector Behavior选项卡，选择“将拒绝保留在文件中”和“处理”错误](assets/crm-export-options.png)
 
 这些选项可添加相关的输出过渡。
 
-![](assets/crm-export-transitions.png)
+工作流中的![CRM Connector活动具有Error、OK、Reject和Continue出站过渡](assets/crm-export-transitions.png)
 
 然后插入相关活动以处理数据。 例如，添加&#x200B;**等待**&#x200B;活动并安排错误重试。
 

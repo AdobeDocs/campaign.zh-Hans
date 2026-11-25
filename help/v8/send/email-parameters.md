@@ -20,10 +20,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 9%
+source-wordcount: '1048'
+ht-degree: 8%
 ---
 # 电子邮件参数 {#email-parameters}
 
@@ -31,13 +31,13 @@ ht-degree: 9%
 
 ## 使用电子邮件密送 {#email-bcc}
 
-您可以配置Adobe Campaign以保留从您的平台发送的电子邮件副本。 [此页面](email-bcc.md)中详细介绍了此选项。
+您可以配置Adobe Campaign以保留从您的平台发送的电子邮件副本。 [将邮件副本发送到密件抄送地址](email-bcc.md)中详细介绍了此选项。
 
 ## 选择消息格式 {#selecting-message-formats}
 
 您可以更改已发送电子邮件的格式。 为此，请编辑投放属性并单击&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡。
 
-![](assets/email-message-format.png)
+![邮件格式部分突出显示的投放属性的“投放”选项卡和三个格式选项](assets/email-message-format.png)
 
 在窗口的下半部分选择电子邮件的格式：
 
@@ -73,7 +73,7 @@ ht-degree: 9%
 
 为此，请选择&#x200B;**[!UICONTROL Character encoding]**&#x200B;部分中的&#x200B;**[!UICONTROL Force the encoding used for messages]**&#x200B;选项，然后从显示的下拉列表中选择编码。
 
-![](assets/email-smtp-encoding.png)
+![SMTP选项卡，强制为选定的邮件使用编码，且编码下拉列表打开](assets/email-smtp-encoding.png)
 
 ## 管理退回电子邮件 {#managing-bounce-emails}
 
@@ -83,11 +83,11 @@ ht-degree: 9%
 
 * **[!UICONTROL Bounce address]**：您还可以定义将未处理的退回电子邮件转发到的其他地址。 利用此地址，可调查应用程序无法自动限定电子邮件时退回的原因。
 
-其中每个字段都可以使用专用图标进行个性化。 在[本节](personalization-fields.md)中了解个性化字段的更多信息。
+其中每个字段都可以使用专用图标进行个性化。 在[添加个性化字段](personalization-fields.md)中了解关于个性化字段的更多信息。
 
-![](assets/email-smtp-bounce.png)
+突出显示“退回邮件”部分的![SMTP选项卡：“地址错误”和“退回地址”字段](assets/email-smtp-bounce.png)
 
-有关退回邮件管理的详细信息，请参阅[此部分](delivery-failures.md#bounce-mail-qualification)。
+有关退回邮件管理的详细信息，请参阅[退回邮件鉴别](delivery-failures.md#bounce-mail-qualification)。
 
 ## 启用一键式列表取消订阅 {#one-click-list-unsubscribe}
 
@@ -95,7 +95,7 @@ ht-degree: 9%
 
 它在ISP的电子邮件界面中显示为&#x200B;**取消订阅**&#x200B;链接。 例如：
 
-![](assets/email-list-unsubscribe-example.png)
+![电子邮件客户端发件人行，在发件人地址旁边显示取消订阅链接](assets/email-list-unsubscribe-example.png)
 
 必须添加名为List-Unsubscribe的SMTP标头，以确保实现最佳可投放性管理，并可用作“报告为垃圾邮件”图标的替代图标。 事实上，使用此功能可降低投诉率，并有助于保护您的声誉。
 
@@ -109,7 +109,7 @@ ht-degree: 9%
 >
 >默认启用此选项。
 
-![](assets/email-smtp-list-unsubscribe.png)
+![SMTP选项卡，带有One-Click List-Unsubscribe部分和默认选择的标头选项](assets/email-smtp-list-unsubscribe.png)
 
 <!--
 >[!WARNING]
@@ -148,11 +148,11 @@ ht-degree: 9%
 >
 >此脚本的语法必须符合此内容类型的要求：没有未使用的空格，没有空行等。
 
-![](assets/email-smtp-headers.png)
+![SMTP选项卡，突出显示具有其他SMTP标头脚本区域的，使用名称:value格式](assets/email-smtp-headers.png)
 
 
 ## 生成镜像页面 {#generating-mirror-page}
 
 镜像页面是可通过 Web 浏览器在线访问的 HTML 页面。 其内容与电子邮件的内容相同。 如果收件人尝试在收件箱中查看电子邮件时遇到渲染问题或图像损坏，此功能会很有用。
 
-在[本节](mirror-page.md)中了解如何插入指向镜像页面的链接
+了解如何在[添加指向镜像页面的链接](mirror-page.md)中插入指向镜像页面的链接

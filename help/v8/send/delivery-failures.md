@@ -49,9 +49,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '3476'
+source-wordcount: '3478'
 ht-degree: 6%
 ---
 # 了解投放失败 {#delivery-failures}
@@ -714,7 +714,7 @@ SMPP连接器从使用正则表达式（正则表达式）返回的SR（状态�
 
 生成的消息示例：
 
-```
+```text
 SR Generic DELIVRD 000|#MESSAGE#
 ```
 
@@ -750,7 +750,7 @@ SR Generic DELIVRD 000|#MESSAGE#
 
 收件人消息失败，并出现“无法访问”错误，指出：
 
-```
+```text
 Error while compiling script 'content htmlContent' line X: `[table]` is not defined. JavaScript: error while evaluating script 'content htmlContent
 ```
 
@@ -758,13 +758,13 @@ Error while compiling script 'content htmlContent' line X: `[table]` is not defi
 
 **解决方案**：检查工作流和投放内容，明确确定哪些个性化设置试图调用相关表。 然后，在HTML中删除对此表的调用或修复到投放的映射。
 
-在[本节](personalize.md)中了解有关个性化的更多信息。
+在[开始使用个性化](personalize.md)中了解有关个性化的更多信息。
 
 ### 多个个性化值错误 {#multiple-values-error}
 
 投放失败时，投放日志中可能会显示以下错误：
 
-```
+```text
 DLV-XXXX The count of message prepared (123) is greater than the number of messages to send (111). Please contact support.
 ```
 
@@ -776,7 +776,7 @@ DLV-XXXX The count of message prepared (123) is greater than the number of messa
 
 某些投放可能会失败，并出现“Unreachable”（无法访问）错误，并指出：
 
-```
+```text
 Inbound email bounce (rule 'Auto_replies' has matched this bounce).
 ```
 

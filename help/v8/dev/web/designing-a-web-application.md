@@ -28,10 +28,10 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 4%
+source-wordcount: '347'
+ht-degree: 3%
 ---
 # 设计 Web 应用程序{#designing-a-web-application}
 
@@ -47,21 +47,21 @@ ht-degree: 4%
 
 可以在Web应用程序中包含图表。 要执行此操作，请使用任务栏中的图表下拉列表选择要插入的图表类型。
 
-![](assets/s_ncs_admin_webapps_bar_graph.png)
+![页面编辑器工具栏图表下拉列表，其中列出了直方图、饼图、雷达、区域、曲线和Funnel。](assets/s_ncs_admin_webapps_bar_graph.png)
 
 您还可以选择&#x200B;**[!UICONTROL Add a chart]**&#x200B;菜单。
 
-![](assets/s_ncs_admin_webapps_graph.png)
+![包含添加图表子菜单的页面上下文菜单，其中列出了直方图、饼图、雷达、区域、曲线和Funnel。](assets/s_ncs_admin_webapps_graph.png)
 
 ## 在Web应用程序中插入表 {#inserting-tables-in-a-web-application}
 
 要添加表，请使用任务栏中的表下拉列表选择要使用的表类型。
 
-![](assets/s_ncs_admin_webapps_bar_table.png)
+![页面编辑器工具栏表下拉列表，列出透视表、具有组的列表和分发。](assets/s_ncs_admin_webapps_bar_table.png)
 
 您还可以在下拉菜单中选择表类型。
 
-![](assets/s_ncs_admin_webapps_table.png)
+![包含添加表子菜单的页面上下文菜单，该子菜单列出透视表、包含组的列表和分发。](assets/s_ncs_admin_webapps_table.png)
 
 ## 概览类型的Web应用程序 {#overview-type-web-applications}
 

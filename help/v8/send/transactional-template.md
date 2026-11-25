@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 1%
+source-wordcount: '1491'
+ht-degree: 0%
 ---
 # 创建并发布事务性消息传递模板{#template-transactional-messages}
 
@@ -50,16 +50,16 @@ ht-degree: 1%
 1. 转到Adobe Campaign树中的&#x200B;**[!UICONTROL Message Center >Transactional message templates]**&#x200B;文件夹。
 1. 在事务性消息模板列表中，右键单击并在下拉菜单中选择&#x200B;**[!UICONTROL New]**，或单击事务性消息模板列表上方的&#x200B;**[!UICONTROL New]**&#x200B;按钮。
 
-   ![](assets/messagecenter_create_model_001.png)
+   ![事务性消息模板列表中的新按钮，用于创建消息模板](assets/messagecenter_create_model_001.png)
 
 1. 在投放窗口中，选择适用于要使用的渠道的投放模板。
 
-   ![](assets/messagecenter_create_model_002.png)
+   ![包含Android、直邮、电子邮件、iOS和移动事务消息模板的投放模板列表](assets/messagecenter_create_model_002.png)
 
 1. 根据需要更改其标签。
 1. 选择与要发送的消息匹配的事件类型。 必须预先创建预定由Adobe Campaign处理的事件类型。 [了解详情](../send/transactional.md#create-event-types)
 
-   ![](assets/messagecenter_create_model_003.png)
+   ![新事务性消息投放窗口中的事件类型下拉列表，其中列出了购买和命令事件类型](assets/messagecenter_create_model_003.png)
 
    >[!CAUTION]
    >
@@ -80,7 +80,7 @@ ht-degree: 1%
 
 定义消息内容后，您可以将事件信息集成到消息正文中并对其进行个性化。 由于个性化标记，事件信息将插入到文本正文中。
 
-![](assets/messagecenter_create_content.png)
+打开了“消息”菜单的![HTML内容编辑器，以在事务型消息中插入个性化字段](assets/messagecenter_create_content.png)
 
 * 所有个性化字段都来自有效负载。
 * 可以在事务型消息中引用一个或多个个性化块。<!--The block content will be added to the delivery content during the publication to the execution instance.-->
@@ -91,11 +91,11 @@ ht-degree: 1%
 1. 输入消息正文。
 1. 在文本正文中，使用&#x200B;**[!UICONTROL Real time events>Event XML]**&#x200B;菜单插入标记。
 
-   ![](assets/messagecenter_create_custo_1.png)
+   ![实时事件菜单，其中已选择事件XML以在HTML内容中插入事件个性化标记](assets/messagecenter_create_custo_1.png)
 
 1. 使用以下语法填写标记： **element name**.@**attribute name**，如下所示。
 
-   ![](assets/messagecenter_create_custo_2.png)
+   ![HTML内容中的事件个性化标记使用元素名称和属性语法，一个标记下划线](assets/messagecenter_create_custo_2.png)
 
 ## 测试事务性消息模板 {#test-message-template}
 
@@ -105,23 +105,23 @@ ht-degree: 1%
 
 1. 在事务性消息模板中，单击&#x200B;**[!UICONTROL Seed addresses]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
 
-   ![](assets/messagecenter_create_seed_1.png)
+   ![模板的“种子地址”选项卡，“添加”按钮突出显示](assets/messagecenter_create_seed_1.png)
 
 1. 为其分配标签以便稍后轻松选择，然后输入种子地址（电子邮件或移动电话，具体取决于通信渠道）。
 
 1. 输入外部标识符：此可选字段允许您输入业务密钥（唯一ID、名称+电子邮件等） 这是您网站上所有应用程序通用的功能，用于识别您的配置文件。 如果此字段也出现在Adobe Campaign营销数据库中，则之后可以将事件与数据库中的用户档案进行协调。
 
-   ![](assets/messagecenter_create_seed_2.png)
+   ![已填写标签、电子邮件和外部标识符字段的种子地址对话框](assets/messagecenter_create_seed_2.png)
 
 1. 插入测试数据。 [请参阅Campaign Classic v7文档以了解有关个性化数据的更多信息](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
 
-   ![](assets/messagecenter_create_custo_3.png)
+   ![种子地址对话框，内容部分中的测试数据以XML形式写入事件上下文](assets/messagecenter_create_custo_3.png)
 
 1. 单击&#x200B;**[!UICONTROL Ok]**&#x200B;以确认创建种子地址。
 
 1. 重复此过程，根据需要创建所需数量的地址。
 
-   ![](assets/messagecenter_create_seed_6.png)
+   ![种子地址选项卡，其中列出了为购买投放模板创建的三个种子地址](assets/messagecenter_create_seed_6.png)
 
 创建地址后，即可访问其预览和个性化。
 
@@ -150,11 +150,11 @@ This information enables you to personalize message content using personalizatio
 
 1. 在消息模板中，单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡，然后在下拉列表中选择&#x200B;**[!UICONTROL A seed address]**。
 
-   ![](assets/messagecenter_preview_1.png)
+   ![打开测试个性化菜单并选择种子地址的“预览”选项卡](assets/messagecenter_preview_1.png)
 
 1. 选择之前创建的种子地址以显示个性化消息。
 
-   ![](assets/messagecenter_create_seed_7.png)
+   ![种子地址选择对话框和显示个性化消息内容的预览](assets/messagecenter_create_seed_7.png)
 
 ### 发送校样 {#send-proof}
 
@@ -162,7 +162,7 @@ This information enables you to personalize message content using personalizatio
 
 发送验证的过程与发送任何投放的过程相同。
 
-在[本节](../send/preview-and-proof.md#proofs-send)中了解有关校样的更多信息。
+在[发送校样](../send/preview-and-proof.md#proofs-send)中了解有关校样的更多信息。
 
 但是，要发送事务型消息的验证，您需要执行以下操作：
 
@@ -175,15 +175,15 @@ This information enables you to personalize message content using personalizatio
 1. 分析投放。
 1. 更正任何错误并确认投放。
 
-   ![](assets/messagecenter_send_proof_001.png)
+   ![发送验证对话框，显示传递准备完成，其中包含要发送的消息和确认传递按钮](assets/messagecenter_send_proof_001.png)
 
 1. 检查邮件是否已发送到种子地址，以及邮件内容是否符合您的配置。
 
-   ![](assets/messagecenter_send_proof_002.png)
+   ![从下划线的种子地址数据接收到带有个性化值的验证电子邮件](assets/messagecenter_send_proof_002.png)
 
 可通过&#x200B;**[!UICONTROL Audit]**&#x200B;选项卡访问每个模板中的验证。
 
-![](assets/messagecenter_send_proof_003.png)
+模板的![审核选项卡，其中列出了已发送的校样，以及要发送的消息、已处理的消息和成功计数](assets/messagecenter_send_proof_003.png)
 
 #### 从[!DNL Campaign Classic] v7过渡 {#transition-from-v7}
 
@@ -193,7 +193,7 @@ This information enables you to personalize message content using personalizatio
 
 因此，要为事务性消息模板发送验证，必须将路由从内部电子邮件投放更改为&#x200B;**中间源路由帐户**。
 
-![](assets/messagecenter_send_proof_004.png)
+![包含“路由”字段的传递属性“常规”选项卡，以及使用所选中间源帐户的电子邮件路由](assets/messagecenter_send_proof_004.png)
 
 发送校样后，必须先将路由更改回内部电子邮件投放，然后再发布事务型消息模板。
 
@@ -217,11 +217,11 @@ Publication lets you automatically create two message templates on the execution
 1. Select要发布的模板<!--on your execution instances-->。
 1. 单击 **[!UICONTROL Publish]**。
 
-   ![](assets/messagecenter_publish_template.png)
+   ![单击“发布”后，发布包含过程完成和发布日志的模板对话框](assets/messagecenter_publish_template.png)
 
 发布完成后，将在&#x200B;**[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]**&#x200B;文件夹中创建要应用于批次和实时类型事件的消息模板。
 
-![](assets/messagecenter_deployed_model.png)
+![列表中已发布模板，其两个已部署模板位于消息中心执行文件夹](assets/messagecenter_deployed_model.png)
 
 发布模板后，如果触发了相应的事件，Adobe Campaign<!--execution instance-->将收到该事件，将其链接到事务型模板，并将相应的事务型消息发送给每个收件人。
 
@@ -246,11 +246,11 @@ Publication lets you automatically create two message templates on the execution
 要取消发布事务型消息模板，请执行以下步骤。
 
 1. 浏览到&#x200B;**[!UICONTROL Message Center > Transactional message templates]**&#x200B;文件夹。
-1. Select要取消发布的模板。
+1. 选择要取消发布的模板。
 1. 单击 **[!UICONTROL Unpublish]**。
 1. 单击 **[!UICONTROL Start]**。
 
-![](assets/message-center-unpublish.png)
+![使用“开始”按钮取消发布模板对话框，该按钮是从已发布模板的“取消发布”按钮打开的](assets/message-center-unpublish.png)
 
 事务性消息模板状态从&#x200B;**[!UICONTROL Published]**&#x200B;变回&#x200B;**[!UICONTROL Being edited]**。
 

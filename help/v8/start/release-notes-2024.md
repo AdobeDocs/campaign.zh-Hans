@@ -40,14 +40,14 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1662'
-ht-degree: 83%
+source-wordcount: '1687'
+ht-degree: 81%
 ---
 # 2024 年发行说明 {#2024-rn}
 
-此页面列出了 **2024 Campaign v8 版本**&#x200B;中的新增功能、改进和修复。 有关最新版本，请参阅[此页面](release-notes.md)。
+此页面列出了 **2024 Campaign v8 版本**&#x200B;中的新增功能、改进和修复。 有关最新版本，请参阅[Campaign v8发行说明](release-notes.md)。
 
 对于任何新实施或升级到现有环境，请安装[最新版本](release-notes.md)。
 
@@ -74,9 +74,9 @@ _2024 年 9 月 3 日_
 
 ### 新增功能 {#new-8-7-2}
 
-* **新短信发送连接器** - 短信发送连接器经过现代化改造和改进，可启用收发器模式 SMPP 连接、启用持久 SMPP 连接，并确保从 Adobe Campaign Standard 过渡的环境具有更好的兼容性。 新的短信外部帐户现在可用于所有新的短信实施。 现有实施仍受支持，但建议迁移到此新的现代化扩展连接器。 [了解更多信息](../send/sms/sms.md)。
+* **新短信发送连接器** - 短信发送连接器经过现代化改造和改进，可启用收发器模式 SMPP 连接、启用持久 SMPP 连接，并确保从 Adobe Campaign Standard 过渡的环境具有更好的兼容性。 新的短信外部帐户现在可用于所有新的短信实施。 现有实施仍受支持，但建议迁移到此新的现代化扩展连接器。 [使用Adobe Campaign发送短信](../send/sms/sms.md)。
 
-* **富媒体推送通知 (GA)** - 您现在可以发送富媒体推送通知。 富媒体推送通知是移动通知的一种增强形式，它超越了简单的文本消息，融合了图像、交互式按钮或其他富媒体内容等多媒体元素。 在此版本中，您可以为 iOS 和 Android 应用程序提供一组富媒体推送通知模板。 [了解更多信息](../send/rich-push-android.md)。
+* **富媒体推送通知 (GA)** - 您现在可以发送富媒体推送通知。 富媒体推送通知是移动通知的一种增强形式，它超越了简单的文本消息，融合了图像、交互式按钮或其他富媒体内容等多媒体元素。 在此版本中，您可以为 iOS 和 Android 应用程序提供一组富媒体推送通知模板。 [设计Android富推送投放](../send/rich-push-android.md)。
 
 * **品牌化** - 品牌化选项现在可用于所有渠道，包括短信和直邮。 [了解更多信息](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=zh-Hans){target="_blank"}
 
@@ -98,11 +98,11 @@ _2024 年 5 月 2 日_
 
 ### 新增功能 {#new-8-7-1}
 
-* **富媒体推送通知模板** - 您现在可以通过 Android 发送富媒体推送通知。 富媒体推送通知是移动通知的一种增强形式，它超越了简单的文本消息，融合了图像、交互式按钮或其他富媒体内容等多媒体元素。 [了解更多信息](../send/rich-push-ios.md)。
+* **富媒体推送通知模板** - 您现在可以通过 Android 发送富媒体推送通知。 富媒体推送通知是移动通知的一种增强形式，它超越了简单的文本消息，融合了图像、交互式按钮或其他富媒体内容等多媒体元素。 [设计iOS富推送投放](../send/rich-push-ios.md)。
 
 * **品牌化** - 作为 Campaign Standard 迁移用户，您的技术管理员现在可以定义一个或多个品牌，以集中处理影响品牌标识的参数。 其中包括品牌徽标、登陆页面访问 URL 的域名或消息跟踪设置。 您可以创建这些品牌并将它们链接到消息或登陆页面。 此配置在模板中进行管理。 [了解更多信息](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=zh-Hans){target="_blank"}
 
-* **Rest API** - 作为 Campaign Standard 迁移用户，您可以使用 Rest API 为 Adobe Campaign 创建集成，并通过将 Adobe Campaign 与所使用的技术面板连接来构建自己的生态系统。 [了解更多信息](../dev/api/get-started-apis.md)
+* **Rest API** - 作为 Campaign Standard 迁移用户，您可以使用 Rest API 为 Adobe Campaign 创建集成，并通过将 Adobe Campaign 与所使用的技术面板连接来构建自己的生态系统。 [开始使用Campaign REST API](../dev/api/get-started-apis.md)
 
 * **动态报告** - 作为 Campaign Standard 迁移用户，您可以访问动态报告，该功能提供完全可自定义的实时报告来衡量营销活动的影响。 它增加了对轮廓数据的访问，除打开数和点击数等功能性电子邮件营销活动数据外，还支持按轮廓维度（如性别、城市和年龄）进行人口统计分析。 [了解更多信息](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=zh-Hans){target="_blank"}
 
@@ -127,7 +127,7 @@ _2024 年 5 月 2 日_
 
 ### 一般改进 {#improvements-8-7-1}
 
-* 多个架构已从 32 位更改为 64 位。 这仅适用于从 Campaign Standard 迁移的客户。 [了解更多信息](../../technotes/upgrades/64-bit-tables.md)
+* 多个架构已从 32 位更改为 64 位。 这仅适用于从 Campaign Standard 迁移的客户。 [64位架构](../../technotes/upgrades/64-bit-tables.md)
 
 * 在 Campaign 表中，现在默认按服务器日期和时间填充以下属性：`lastModified` 和 `created`。 默认情况下，`createdBy-id` 属性值现在使用当前登录 ID 填充。 将忽略用户在 API 调用中提供的值。<!--This configuration can be changed in the Campaign server configuration file. As a Managed Cloud Services customer, you must reach out to Adobe to change this default configuration.-->
 
@@ -147,7 +147,7 @@ _2024 年 7 月 30 日_
 
 ### 新增功能 {#new-8-6-3}
 
-* **富媒体推送通知** - 您现在可以发送富媒体推送通知。 富媒体推送通知是移动通知的一种增强形式，它超越了简单的文本消息，融合了图像、交互式按钮或其他富媒体内容等多媒体元素。 在此版本中，您可以为 iOS 和 Android 应用程序提供一组富媒体推送通知模板。 [了解更多信息](../send/rich-push-android.md)。
+* **富媒体推送通知** - 您现在可以发送富媒体推送通知。 富媒体推送通知是移动通知的一种增强形式，它超越了简单的文本消息，融合了图像、交互式按钮或其他富媒体内容等多媒体元素。 在此版本中，您可以为 iOS 和 Android 应用程序提供一组富媒体推送通知模板。 [设计Android富推送投放](../send/rich-push-android.md)。
 
 * 从此版本开始，随着 Adobe 弃用服务帐户 (JWT) 凭据，Campaign 与 Adobe 解决方案和应用程序的出站集成现在依赖于 OAuth 服务器到服务器凭据。 [了解详情](release-notes-2024.md#change-8-7-1)
 
@@ -170,7 +170,7 @@ https://jira.corp.adobe.com/issues/?filter=585288&jql=fixVersion%20%3D%208.6.3%2
 
 以下更改已在 5 月发布，现在可供 Campaign v8 用户使用：
 
-* **新的增强安全性加载项**：为了使网络连接更安全并为资源提供更好的安全性，Adobe Campaign 提供了新的增强安全性加载项，其中包括两项功能：安全 CMK 集成和安全 VPN 隧道。 [了解更多信息](../config/enhanced-security.md)
+* **新的增强安全性加载项**：为了使网络连接更安全并为资源提供更好的安全性，Adobe Campaign 提供了新的增强安全性加载项，其中包括两项功能：安全 CMK 集成和安全 VPN 隧道。 [Campaign增强安全性加载项](../config/enhanced-security.md)
 
 ## 版本 8.6.2 {#release-8-6-2}
 

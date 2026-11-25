@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f22ef7562e86372db4c5c05c04acd986d1c557fb
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '664'
 ht-degree: 8%
 ---
 # 工作流入门{#gs-with-workflows}
@@ -126,7 +126,7 @@ To use the **[!UICONTROL Change Data Source]** activity:
 
 从工作流&#x200B;**[!UICONTROL Properties]**&#x200B;的&#x200B;**[!UICONTROL Execution]**&#x200B;选项卡中，您可以选择将工作流链接到不同的仓库并优化工作负载管理。 有关&#x200B;**仓库**&#x200B;的详细信息，请参阅[Snowflake文档](https://docs.snowflake.com/en/user-guide/warehouses-overview.html){target="_blank"}。
 
-![](assets/warehouse.png)
+![打开了“仓库”下拉列表的工作流属性“执行”选项卡：“默认”、“活动”、“导入/导出”和“活动突发”](assets/warehouse.png)
 
 根据工作流的用途，您可以从&#x200B;**[!UICONTROL Warehouse]**&#x200B;下拉列表中选择以下三个仓库：
 
@@ -151,11 +151,11 @@ To use the **[!UICONTROL Change Data Source]** activity:
 
 使用Campaign事务型消息传递可自动执行从信息系统触发的事件生成的消息。 这些事务型消息可以是发票、订单确认、送货确认、密码更改、产品不可用通知、帐户对帐单或网站帐户创建等。 这些消息可以通过电子邮件、短信或推送通知单独或批量发送。
 
-在[本节](../send/transactional.md)中了解有关事务性消息传递功能的更多信息。
+了解有关[Campaign事务性消息传递](../send/transactional.md)中事务性消息传递功能的更多信息。
 
 连接Adobe Campaign和Adobe Analytics以检索用户操作并发送近乎实时的个性化消息。
 
-请参阅[本节](../start/connect.md)以了解如何将Campaign与其他解决方案集成
+了解如何在[连接到Campaign v8](../start/connect.md)中将Campaign与其他解决方案集成
 
 
 ## 工作流端到端用例{#end-to-end-uc}

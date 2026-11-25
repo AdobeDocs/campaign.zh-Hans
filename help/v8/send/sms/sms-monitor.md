@@ -28,9 +28,9 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '311'
 ht-degree: 0%
 ---
 # 监控和跟踪短信
@@ -47,25 +47,25 @@ ht-degree: 0%
 
 在&#x200B;**[!UICONTROL Summary]**&#x200B;选项卡中，您拥有主要数据，如已处理的消息数和成功数。
 
-![](assets/sms_summary.png){zoomable="yes"}
+![SMS投放仪表板摘要选项卡，其中包含要发送的消息、已处理的消息和成功率，以及投放状态](assets/sms_summary.png){zoomable="yes"}
 
 发送短信后，无法再访问与投放内容相关的&#x200B;**[!UICONTROL SMS]**&#x200B;选项卡以进行更改。
 
 在&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡中，您了解有关投放日志的信息。 对于每个联系的地址，您可以查看该短信是否已发送
 
-![](assets/sms_deliverylogs.png){zoomable="yes"}
+![投放选项卡日志列表显示对于每个联系的地址，是否发送了短信，以及状态和原因](assets/sms_deliverylogs.png){zoomable="yes"}
 
 您可以在&#x200B;**[!UICONTROL Exclusions]**&#x200B;选项卡中查看有关为什么从目标中排除某些地址的详细信息。
 
-![](assets/sms_exclusions.png){zoomable="yes"}
+![“传递”选项卡的“排除项”选项卡列出了原因已被忽略的地址，例如地址或Double](assets/sms_exclusions.png){zoomable="yes"}
 
 **[!UICONTROL Tracking]**&#x200B;选项卡与跟踪有关。 以下是短信内容中跟踪的URL示例。
 
-![](assets/sms_trackinglogs.png){zoomable="yes"}
+![跟踪选项卡URL列表，显示来自SMS内容的跟踪URL及其标签、类型和源URL](assets/sms_trackinglogs.png){zoomable="yes"}
 
 最后，**[!UICONTROL Audit]**&#x200B;选项卡包含投放启动期间的所有详细信息：
 
-![](assets/sms_audit.png){zoomable="yes"}
+![审核选项卡日志列出了投放启动期间记录的消息，包含日期和消息列](assets/sms_audit.png){zoomable="yes"}
 
 ## 了解短信故障
 

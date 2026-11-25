@@ -25,9 +25,9 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '748'
 ht-degree: 5%
 ---
 # 投放分析 {#analyze-delivery}
@@ -39,13 +39,13 @@ ht-degree: 5%
 要准备投放，请确保已定义投放内容和目标，然后执行以下步骤：
 
 1. 在投放窗口中，单击&#x200B;**[!UICONTROL Send]**&#x200B;按钮。
-1. 选择&#x200B;**[!UICONTROL Deliver as soon as possible]**&#x200B;以执行受众计算，并准备立即发送的内容。 您还可以将投放推迟到以后的日期，或在不准备内容的情况下获取群体估计。
+1. Select **[!UICONTROL Deliver as soon as possible]**&#x200B;来执行受众计算，并为立即发送做好内容准备。 您还可以将投放推迟到以后的日期，或在不准备内容的情况下获取群体估计。
 
-   ![](assets/delivery-analysis-start.png)
+   ![选择“尽快投放”并加上“分析”按钮，以发送到主投放目标对话框](assets/delivery-analysis-start.png)
 
 1. 单击&#x200B;**[!UICONTROL Analyze]**&#x200B;以手动启动分析。 进度条显示分析的进度。
 
-   在投放分析期间应用一组检查规则。 这些规则是在投放属性的&#x200B;**[!UICONTROL Typology]**&#x200B;选项卡中选择的&#x200B;**类型**&#x200B;中定义的。 在[本节](../../automation/campaign-opt/campaign-typologies.md)中了解有关类型的更多信息。
+   在投放分析期间应用一组检查规则。 这些规则是在投放属性的&#x200B;**[!UICONTROL Typology]**&#x200B;选项卡中选择的&#x200B;**类型**&#x200B;中定义的。 在[中了解有关类型的更多信息开始使用营销活动类型](../../automation/campaign-opt/campaign-typologies.md)。
 
    默认情况下，对于电子邮件，分析涵盖以下几点：
 
@@ -72,7 +72,7 @@ ht-degree: 5%
    * 黄色图标表示非关键处理错误。
    * 红色图标表示阻止发送投放的严重错误。
 
-   ![](assets/delivery-analysis-results.png){width="800"}
+   ![分析结果：准备完成、要发送的22条消息、带警告的日志以及“确认投放”按钮](assets/delivery-analysis-results.png){width="800"}
 
 1. 单击&#x200B;**[!UICONTROL Close]**&#x200B;更正错误（如果有）。 进行更改后，单击&#x200B;**[!UICONTROL Analyze]**&#x200B;重新启动分析。
 
@@ -88,7 +88,7 @@ ht-degree: 5%
 
 浏览到投放属性的&#x200B;**[!UICONTROL Analysis]**&#x200B;选项卡，以定义分析阶段中消息准备的设置。
 
-![](assets/delivery-properties-analysis-tab.png){width="800"}
+![包含标签和代码选项、审批模式设置为手动以及FFDA设置的投放属性“分析”选项卡](assets/delivery-properties-analysis-tab.png){width="800"}
 
 通过此选项卡可访问以下选项：
 

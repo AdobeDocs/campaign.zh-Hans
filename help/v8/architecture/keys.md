@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 3%
+source-wordcount: '682'
+ht-degree: 2%
 ---
 # 密钥管理和唯一性 {#key-management}
 
@@ -73,11 +73,11 @@ Unicity Service附带专用的&#x200B;**[!UICONTROL Unicity alerting]**&#x200B;�
 
 此工作流会检查所有自定义和内置模式以检测重复行。
 
-![](assets/unicity-alerting-wf.png)
+![唯一性警报(ffdaUnicity)工作流：架构检查、检测到的重复行测试、警报、结束和清理活动](assets/unicity-alerting-wf.png)
 
 如果&#x200B;**[!UICONTROL Unicity alerting]** (ffdaUnicity)工作流检测到一些重复的键，则会将它们添加到特定的&#x200B;**Audit Unicity**&#x200B;表中，该表包括架构名称、键类型、受影响的行数和日期。 您可以从&#x200B;**[!UICONTROL Administration > Audit > Key Unicity]**&#x200B;节点访问重复的键。
 
-![](assets/unicity-table.png)
+![键唯一性列表，具有架构Id、键定义、键类型、重复值、重复计数、创建日期](assets/unicity-table.png)
 
 作为数据库管理员，您可以使用SQL活动删除重复项或联系Adobe客户关怀部门以获取更多指导。
 
@@ -85,7 +85,7 @@ Unicity Service附带专用的&#x200B;**[!UICONTROL Unicity alerting]**&#x200B;�
 
 检测到重复的键时，会向&#x200B;**[!UICONTROL Workflow Supervisors]**&#x200B;操作员组发送特定通知。 可以在&#x200B;**[!UICONTROL Unicity alerting]**&#x200B;工作流的&#x200B;**警报**&#x200B;活动中更改此警报的内容和受众。
 
-![](assets/wf-alert-activity.png)
+![&#x200B; Unicity警报中的警报活动，已使用重复的密钥消息分配给工作流主管组](assets/wf-alert-activity.png)
 
 
 ## 附加护栏 {#duplicates-guardrails}
@@ -94,25 +94,25 @@ Campaign提供了一组新护栏，以防止在[!DNL Snowflake]数据库中插�
 
 >[!NOTE]
 >
->从Campaign v8.3开始提供这些护栏。 要检查您的版本，请参阅[此部分](../start/compatibility-matrix.md)
+>从Campaign v8.3开始提供这些护栏。 要检查您的版本，请参阅[Campaign v8兼容性矩阵](../start/compatibility-matrix.md)
 
 ### 投放准备 {#remove-duplicates-delivery-preparation}
 
 在投放准备期间，Adobe Campaign会自动从受众中删除任何重复的UUID。 此机制可防止在准备投放时出现任何错误。 作为最终用户，您可以在投放日志中检查此信息：由于存在重复的键，可以从主目标中排除某些收件人。 在这种情况下，将显示以下警告： `Exclusion of duplicates (based on the primary key or targeted records)`。
 
-![](assets/exclusion-duplicates-log.png)
+![传递日志，带有用箭头](assets/exclusion-duplicates-log.png)突出显示的重复项排除行（基于目标记录的主键）
 
 ### 更新工作流中的数据 {#duplicates-update-data}
 
 在[Enterprise (FFDA)部署](enterprise-deployment.md)的上下文中，不能选择内部密钥(UUID)作为字段来更新工作流中的数据。
 
-![](assets/update-data-no-internal-key.png)
+![使用收件人(nms:recipient)的字段选择器更新数据活动，其中不能选择任何内部键字段](assets/update-data-no-internal-key.png)
 
 ### 查询包含重复项的架构 {#query-with-duplicates}
 
 当工作流开始在架构上运行查询时，Adobe Campaign会检查[审核唯一性表](#unicity-wf)中是否报告了任何重复记录。 如果是这样，工作流会记录一条警告，因为对重复数据的后续操作可能会影响工作流结果。
 
-![](assets/query-with-duplicates.png)
+![违反了警告唯一性约束的工作流日志。 在架构nms:recipient](assets/query-with-duplicates.png)上找到重复的数据
 
 此检查在下列工作流活动中执行：
 

@@ -26,9 +26,9 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1583'
+source-wordcount: '1823'
 ht-degree: 0%
 ---
 # 解释 Web 窗体{#translating-a-web-form}
@@ -57,7 +57,7 @@ Web应用程序采用编辑语言设计：这是用于输入标签和其他要�
 >
 >此窗口还允许您更改默认语言和编辑语言。
 
-![](assets/s_ncs_admin_survey_add_lang.png)
+![Web应用程序属性本地化选项卡，包含设计和默认语言以及其他语言法语和西班牙语](assets/s_ncs_admin_survey_add_lang.png)
 
 为Web应用程序添加翻译语言时（或者当默认语言和编辑语言不同时），**[!UICONTROL Translation]**&#x200B;子选项卡将添加到&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中以管理翻译。
 
@@ -73,7 +73,7 @@ Adobe Campaign包含用于翻译和管理多语言翻译的工具。 通过此�
 
 Adobe Campaign收集在所有静态元素的&#x200B;**[!UICONTROL Texts]**&#x200B;选项卡中定义的字段和字符串的标签：HTML块、Javascript等。静态元素在Web窗体[&#128279;](static-elements-in-a-web-form.md)的静态元素中详细。
 
-![](assets/s_ncs_admin_survey_trad_tab.png)
+![Web应用程序的“翻译”选项卡，其中收集要翻译的字符串链接和要翻译的字符串](assets/s_ncs_admin_survey_trad_tab.png)
 
 >[!CAUTION]
 >
@@ -91,7 +91,7 @@ Adobe Campaign收集在所有静态元素的&#x200B;**[!UICONTROL Texts]**&#x200
 
 默认情况下，将显示Web应用程序的每种翻译语言。 有两种默认筛选器：语言和状态。 单击&#x200B;**[!UICONTROL Filters]**&#x200B;按钮，然后单击&#x200B;**[!UICONTROL By language or status]**&#x200B;以显示匹配的下拉框。 您还可以创建高级过滤器。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
 
-![](assets/s_ncs_admin_survey_trad_tab_en.png)
+![翻译选项卡筛选器菜单，包含按语言或状态筛选，筛选状态为要翻译的法语字符串](assets/s_ncs_admin_survey_trad_tab_en.png)
 
 转到&#x200B;**[!UICONTROL Language]**&#x200B;下拉框以选择翻译语言。
 
@@ -101,7 +101,7 @@ Adobe Campaign收集在所有静态元素的&#x200B;**[!UICONTROL Texts]**&#x200
 
 1. 要翻译单词，请双击字符串列表中的单词。
 
-   ![](assets/s_ncs_admin_survey_trad_tab_add_term.png)
+   ![包含源字符串的翻译对话框、法语翻译、翻译已批准选项并保存](assets/s_ncs_admin_survey_trad_tab_add_term.png)
 
    源字符串显示在窗口的上部。
 
@@ -125,7 +125,7 @@ Adobe Campaign收集在所有静态元素的&#x200B;**[!UICONTROL Texts]**&#x200
 
 1. 选择要导出其字符串的Web应用程序，右键单击，然后选择&#x200B;**[!UICONTROL Actions > Export strings for translation...]**
 
-   ![](assets/s_ncs_admin_survey_trad_export.png)
+   ![Web应用程序列表右键单击“操作”菜单，并突出显示翻译的导出字符串](assets/s_ncs_admin_survey_trad_export.png)
 
 1. 选择&#x200B;**[!UICONTROL Export strategy]** ：
 
@@ -146,7 +146,7 @@ Adobe Campaign收集在所有静态元素的&#x200B;**[!UICONTROL Texts]**&#x200
 1. 然后，选择要记录文件的&#x200B;**[!UICONTROL Target folder]**。
 1. 选择文件格式（ **[!UICONTROL CSV]**&#x200B;或&#x200B;**[!UICONTROL XLIFF]** ）并单击&#x200B;**[!UICONTROL Start]**。
 
-![](assets/s_ncs_admin_survey_trad_export_start.png)
+![导出翻译向导的字符串（每种语言一个文件，目标文件夹，CSV或XLIFF格式，开始）](assets/s_ncs_admin_survey_trad_export_start.png)
 
 >[!NOTE]
 >
@@ -164,11 +164,11 @@ Adobe Campaign收集在所有静态元素的&#x200B;**[!UICONTROL Texts]**&#x200
    >
    >无需选择翻译涉及的Web应用程序。 将光标放置在Web应用程序列表上的任意位置。
 
-   ![](assets/s_ncs_admin_survey_trad_import.png)
+   ![Web应用程序列表右键单击“操作”菜单，突出显示导入翻译字符串](assets/s_ncs_admin_survey_trad_import.png)
 
 1. 选择要导入的文件，然后单击&#x200B;**[!UICONTROL Upload]**。
 
-   ![](assets/s_ncs_admin_survey_trad_import_start.png)
+   ![导入已翻译字符串向导，其中包含已选定进行导入的本地CSV文件以及“上传”按钮](assets/s_ncs_admin_survey_trad_import_start.png)
 
 >[!NOTE]
 >
@@ -434,7 +434,7 @@ Web窗体以Web应用程序属性的&#x200B;**[!UICONTROL Localization]**&#x200B
 
 下列Web表单有四种语言版本：英语、法语、德语和西班牙语。 字符串已全部通过Web窗体的&#x200B;**[!UICONTROL Translation]**&#x200B;选项卡翻译。 由于默认语言是英语，因此在发布调查时，请使用标准URL以英语显示。
 
-![](assets/s_ncs_admin_survey_trad_sample_fr.png)
+![以英语显示的Web窗体欢迎页面，带有标题、姓名、电子邮件、电话和地址字段以及“下一步”按钮](assets/s_ncs_admin_survey_trad_sample_fr.png)
 
 将&#x200B;**？lang=fr**&#x200B;添加到URL的末尾，以法文显示：
 
@@ -442,7 +442,7 @@ Web窗体以Web应用程序属性的&#x200B;**[!UICONTROL Localization]**&#x200B
 >
 >[更改表单显示语言](#changing-forms-display-language)中详细列出了每种语言的符号列表。
 
-![](assets/s_ncs_admin_survey_trad_sample_en.png)
+将lang=fr添加到URL后![同一欢迎页面以法语显示，并且突出显示lang参数](assets/s_ncs_admin_survey_trad_sample_en.png)
 
 您可以添加&#x200B;**？lang=es**&#x200B;或&#x200B;**？lang=de**&#x200B;以西班牙语或德语显示它。
 
@@ -463,18 +463,18 @@ Web窗体以Web应用程序属性的&#x200B;**[!UICONTROL Localization]**&#x200B
 
 如果您将Web应用程序翻译成未翻译系统词典的语言，则会显示一条警告消息，通知您缺少某些翻译。
 
-![](assets/s_ncs_admin_survey_trad_error.png)
+![翻译选项卡中的警告：系统字典中缺少语言es和fr的27个翻译](assets/s_ncs_admin_survey_trad_error.png)
 
 要添加语言，请应用以下步骤：
 
 1. 转到Adobe Campaign树并单击&#x200B;**[!UICONTROL Administration > Configuration > Global dictionary > System dictionary]** 。
 1. 在窗口的上半部分，选择要翻译的系统字符串，然后单击下半部分的&#x200B;**[!UICONTROL Add]**。
 
-   ![](assets/s_ncs_admin_survey_trad_system_translation.png)
+   ![全局词典下的系统词典，已选定诸如buttonPrevious之类的字符串并突出显示添加按钮](assets/s_ncs_admin_survey_trad_system_translation.png)
 
-1. 选择翻译语言并输入字符串的翻译。 您可以通过选中&#x200B;**[!UICONTROL Translation approved]**&#x200B;选项来批准翻译。
+1. Select翻译语言并输入字符串的翻译。 您可以通过选中&#x200B;**[!UICONTROL Translation approved]**&#x200B;选项来批准翻译。
 
-   ![](assets/s_ncs_admin_survey_trad_system_translation2.png)
+   ![按钮的“翻译”对话框选定法文的上一个，已翻译文本和翻译已批准选项](assets/s_ncs_admin_survey_trad_system_translation2.png)
 
    >[!NOTE]
    >
@@ -490,8 +490,8 @@ Web窗体以Web应用程序属性的&#x200B;**[!UICONTROL Localization]**&#x200B
 
 1. 单击Adobe Campaign树的&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;节点，然后从列表中选择&#x200B;**[!UICONTROL Languages available for translation]**。 可用翻译的列表显示在窗口的下部。
 
-   ![](assets/s_ncs_admin_survey_trad_new_itemized_list_1.png)
+   ![已选定可供翻译的语言(dictionaryLocale)的枚举列表，并且突出显示了“添加”按钮](assets/s_ncs_admin_survey_trad_new_itemized_list_1.png)
 
 1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮，然后输入图像的&#x200B;**[!UICONTROL Internal name]**、**[!UICONTROL Label]**&#x200B;和标识符（标志）。 要添加新图像，请联系您的管理员。
 
-   ![](assets/s_ncs_admin_survey_trad_new_itemized_list_2.png)
+   具有内部名称、标签威尔士语和图像字段的新语言的![枚举值对话框](assets/s_ncs_admin_survey_trad_new_itemized_list_2.png)

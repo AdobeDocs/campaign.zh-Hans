@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1417'
 ht-degree: 4%
 ---
 # 隔离 {#quarantine-management}
@@ -103,13 +103,13 @@ Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在�
 * 投放分析期间被隔离的地址数，
 * 投放操作后放置到隔离区的地址数。
 
-在[此章节](../reporting/gs-reporting.md)中详细了解投放报告。
+在[中了解有关投放报告的更多信息开始使用Adobe Campaign报告工具](../reporting/gs-reporting.md)。
 
 ### 无法投放地址和退回地址{#non-deliverable-bounces}
 
 要查看整个平台&#x200B;**的隔离地址**&#x200B;列表，Campaign管理员可以浏览到&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**。 此部分列出了&#x200B;**电子邮件**、**短信**&#x200B;和&#x200B;**推送通知**&#x200B;渠道的隔离元素。
 
-![](assets/tech-quarantine.png)
+![隔离地址记录，具有隔离状态、错误原因、错误文本和投放操作](assets/tech-quarantine.png)
 
 >[!NOTE]
 >
@@ -131,7 +131,7 @@ Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在�
 
 对于每个文件夹，您只能显示其电子邮件地址处于隔离状态的收件人，并具有&#x200B;**[!UICONTROL Quarantined email address]**&#x200B;内置过滤器，如下所示：
 
-![](assets/quarantine-filter.png)
+![已隔离电子邮件地址内置筛选器的收件人列表筛选器菜单突出显示](assets/quarantine-filter.png)
 
 
 ## 删除隔离的地址 {#remove-a-quarantined-address}
@@ -143,7 +143,7 @@ Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在�
 在以下情况下，地址会自动从隔离列表中删除：
 
 * 成功投放后，将从隔离列表中删除处于&#x200B;**[!UICONTROL With errors]**&#x200B;状态的地址。
-* 如果最后一次软退回发生在10天之前，则会从隔离列表中删除处于&#x200B;**[!UICONTROL With errors]**&#x200B;状态的地址。 有关软错误管理的详细信息，请参阅[此部分](#soft-error-management)。
+* 如果最后一次软退回发生在10天之前，则会从隔离列表中删除处于&#x200B;**[!UICONTROL With errors]**&#x200B;状态的地址。 有关软错误管理的详细信息，请参阅[软错误管理](#soft-error-management)。
 * 状态为&#x200B;**[!UICONTROL With errors]**&#x200B;且出现&#x200B;**[!UICONTROL Mailbox full]**&#x200B;错误退回的地址将在30天后从隔离列表中删除。
 
 其状态随后更改为&#x200B;**[!UICONTROL Valid]**。
@@ -156,7 +156,7 @@ Adobe Campaign根据投放失败的类型及其原因管理隔离。 这些在�
 
 您也可以从隔离列表中手动删除地址。 若要手动从隔离中删除地址，可以将其状态从&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**&#x200B;节点更改为&#x200B;**[!UICONTROL Valid]**。
 
-![](assets/tech-quarantine-status.png)
+![地址记录的“状态”下拉列表处于打开状态，并且选择“有效”状态将其从隔离中删除](assets/tech-quarantine-status.png)
 
 ### 批量更新 {#unquarantine-bulk}
 

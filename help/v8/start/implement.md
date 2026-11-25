@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1218'
-ht-degree: 92%
+source-wordcount: '1252'
+ht-degree: 81%
 ---
 # Campaign 实施准则{#gs-implementation}
 
@@ -77,7 +77,7 @@ Adobe Campaign提供的流程和设置允许您按照适用的数据隐私法律
 
   请参阅[Campaign Classic v7隐私文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/privacy/privacy-and-recommendations.html?lang=zh-Hans#consent){target="_blank"}以了解详情
 
-* **隐私和数据保护法规**：请参阅[此部分](privacy.md)，了解有关隐私要求的信息以及这些法规对贵组织和 Adobe Campaign 有何影响。
+* **隐私和数据保护法规**：有关隐私要求以及这些法规对您的组织和Adobe Campaign有何影响的信息，请参阅[在Campaign中管理隐私请求](privacy.md)。
 
 ### 安全性
 
@@ -89,7 +89,7 @@ Adobe Campaign提供的流程和设置允许您按照适用的数据隐私法律
 
 您可以手动将用户添加到 Campaign，并将其与群组关联，与您的角色层级保持一致。 随后，用户将能够登录并获取适合他们的数据和权限。
 
-要了解如何将用户添加到 Adobe Campaign，请参阅[此部分](../start/gs-permissions.md)。
+了解如何在[中向Adobe Campaign添加用户开始使用Campaign v8](../start/gs-permissions.md)中的权限。
 
 ### 安装 Campaign 客户端控制台{#implementation-install-console}
 
@@ -145,17 +145,17 @@ Adobe Campaign提供的流程和设置允许您按照适用的数据隐私法律
 
    请参阅本部分详细了解[营销活动内置数据模型](../dev/datamodel.md)。
 
-   您可以扩展现有架构或从头开始创建新架构。 请参阅[此页面](../dev/customize.md)以了解详情。
+   您可以扩展现有架构或从头开始创建新架构。 请参阅[自定义您的实例](../dev/customize.md)以了解详情。
 
 1. **仪表板和列表**
 
    您可以轻松配置列表，添加和删除字段以及自定义列。
 
-   要了解如何管理 Campaign 中的过滤器和列表，请参阅[此页面](../dev/customize.md#gs-lists-and-filters)。
+   了解如何在[自定义列表和创建筛选器](../dev/customize.md#gs-lists-and-filters)中管理Campaign中的筛选器和列表。
 
    您还可以创建新仪表板，以根据您的需要显示 Campaign 数据。
 
-   请参阅[此页面](../dev/customize.md#gs-custom-dashboards)以了解详情。
+   请参阅[自定义仪表板](../dev/customize.md#gs-custom-dashboards)以了解详情。
 
 1. **报告**
 
@@ -163,7 +163,7 @@ Adobe Campaign提供的流程和设置允许您按照适用的数据隐私法律
 
    除了内置的报告，Adobe Campaign 还可用于在不同的上下文中生成各种报告，以满足不同的需求。 本文档详细介绍了使用原则和实施模式。
 
-   要了解关于 Campaign 报告功能的更多信息，请参阅[此页面](../reporting/gs-reporting.md)。
+   在[开始使用Adobe Campaign报告工具](../reporting/gs-reporting.md)中了解有关Campaign报告功能的更多信息。
 
 
 ## 设置活动自动化{#implementation-automation}
@@ -172,7 +172,7 @@ Adobe Campaign提供的流程和设置允许您按照适用的数据隐私法律
 
 * 使用&#x200B;**工作流**&#x200B;管理流程和数据。 请参阅[此文档](../../automation/workflow/about-workflows.md)以了解详情
 
-* 设置&#x200B;**订阅**&#x200B;流程和&#x200B;**登陆页面**。  请参阅[此页面](../start/subscriptions.md)以了解详情
+* 设置&#x200B;**订阅**&#x200B;流程和&#x200B;**登陆页面**。  请参阅[在Campaign中管理订阅和退订](../start/subscriptions.md)以了解详情
 
 * 配置&#x200B;**类型规则**&#x200B;以定义疲劳和控制管理。  请参阅[此文档](../../automation/campaign-opt/campaign-typologies.md)以了解详情
 
@@ -193,7 +193,7 @@ Adobe Campaign提供的流程和设置允许您按照适用的数据隐私法律
 * Campaign - Analytics Data connectors
 
 
-仅可使用单点登录 (SSO) 连接到 Campaign。 请参阅[此页面](connect.md)以了解详情。
+仅可使用单点登录 (SSO) 连接到 Campaign。 请参阅[连接到Campaign v8](connect.md)以了解详情。
 
 在此页面[&#128279;](../connect/integration.md)中查找可与Adobe 集成的Adobe Campaign解决方案的完整列表。
 
@@ -201,16 +201,16 @@ Adobe Campaign提供的流程和设置允许您按照适用的数据隐私法律
 
 将 Campaign 与第三方系统连接起来，以结合大量功能并实现流程自动化。
 
-要了解关于可用连接器的更多信息，请参阅[此部分](../connect/integration.md)。
+详细了解[Connect Campaign与您的解决方案](../connect/integration.md)中可用的连接器。
 
 **将您的 CRM 连接到 Campaign**
 
 您可以将 Adobe Campaign 平台连接到您的 CRM 第三方系统并同步数据：联系人、帐户、购买等。
 
-要了解如何将您的 CRM 系统连接到 Campaign，请参阅[此部分](../connect/integration.md#gs-crm-connectors)
+了解如何在[与CRM连接器集成](../connect/integration.md#gs-crm-connectors)中将您的CRM系统连接到Campaign
 
 **连接到外部数据库**
 
 您可以通过联合数据访问 (FDA) 模块将 Campaign 云数据库连接到外部系统。
 
-要了解如何配置 Campaign FDA 模块以定义访问参数，请参阅[此部分](../connect/integration.md#gs-fda)
+了解如何配置Campaign FDA模块以在[将第三方与联合数据访问连接](../connect/integration.md#gs-fda)中定义访问参数

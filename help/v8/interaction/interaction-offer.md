@@ -29,10 +29,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: d027f76f86f34524ddf5b620de32cdcc98e60d21
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 5%
+source-wordcount: '1119'
+ht-degree: 2%
 ---
 # 创建产品建议
 
@@ -60,7 +60,7 @@ ht-degree: 5%
 
 在优惠的&#x200B;**[!UICONTROL Eligibility]**&#x200B;选项卡中，定义优惠的资格期限。 使用下拉列表选择日历中的开始日期和结束日期。
 
-![](assets/offer_eligibility_create_002.png)
+![资格选项卡，带有优惠资格期间的开始和结束日期下拉日历。](assets/offer_eligibility_create_002.png)
 
 在此时段之外，将不会选择选件。 如果您还为优惠类别配置了资格日期，则将应用最严格的时段。
 
@@ -70,11 +70,11 @@ ht-degree: 5%
 
 为此，请单击&#x200B;**[!UICONTROL Edit query]**&#x200B;链接，然后选择要应用的筛选器。
 
-![](assets/offer_eligibility_create_003.png)
+![Select定位筛选条件向导，从“资格”选项卡的“编辑查询”链接打开。](assets/offer_eligibility_create_003.png)
 
 如果已经创建了预定义过滤器，则可以从用户过滤器列表中选择它们。 [了解详情](interaction-predefined-filters.md)
 
-![](assets/offer_eligibility_create_004.png)
+![定位向导中的用户筛选器列表，已应用所选筛选器并预览匹配的收件人。](assets/offer_eligibility_create_004.png)
 
 ### 设置优惠权重 {#offer-weight}
 
@@ -92,11 +92,11 @@ ht-degree: 5%
 
 1. 在选件的&#x200B;**[!UICONTROL Eligibility]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Add]**。
 
-   ![](assets/offer_weight_create_001.png)
+   ![包含“添加”按钮的“资格”选项卡打开“权重”对话框以创建优惠权重。](assets/offer_weight_create_001.png)
 
 1. 更改标签并分配权重。 默认值为1。
 
-   ![](assets/offer_weight_create_006.png)
+   ![具有“标签”字段和“仲裁”部分中的“权重”值的“权重”对话框。](assets/offer_weight_create_006.png)
 
    >[!CAUTION]
    >
@@ -104,19 +104,19 @@ ht-degree: 5%
 
 1. 如果要将加权应用于给定期间，请定义资格日期。
 
-   ![](assets/offer_weight_create_002.png)
+   ![在“资格日期”部分中设置了“开始日期”和“结束日期”的“权重”对话框。](assets/offer_weight_create_002.png)
 
 1. 如有必要，请将权重限制为特定优惠空间。
 
-   ![](assets/offer_weight_create_003.png)
+   ![带有优惠空间下拉列表的“权重”对话框，其中列出了限制权重的空间。](assets/offer_weight_create_003.png)
 
 1. 将过滤器应用于目标。
 
-   ![](assets/offer_weight_create_004.png)
+   ![权重对话框，其中带有突出显示的目标筛选器中的“编辑查询”链接。](assets/offer_weight_create_004.png)
 
 1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以保存权重。
 
-   ![](assets/offer_weight_create_005.png)
+   ![资格选项卡权重表列出了新的高级权重及其日期和筛选器。](assets/offer_weight_create_005.png)
 
    >[!NOTE]
    >
@@ -128,13 +128,13 @@ ht-degree: 5%
 
 要查看它，请单击&#x200B;**[!UICONTROL Schedule and eligibility rules]**&#x200B;链接。
 
-![](assets/offer_eligibility_create_005.png)
+![突出显示计划和资格规则链接的优惠仪表板。](assets/offer_eligibility_create_005.png)
 
 ## 创建选件内容 {#creating-the-offer-content}
 
 使用&#x200B;**[!UICONTROL Content]**&#x200B;选项卡定义选件内容。
 
-![](assets/offer_content_create_001.png)
+![包含标题、目标URL、图像URL字段和HTML内容编辑器的选件的“内容”选项卡。](assets/offer_content_create_001.png)
 
 1. 定义选件内容的各种参数。
 
@@ -143,7 +143,7 @@ ht-degree: 5%
    * **[!UICONTROL Image URL]**：指定选件图像的URL或访问路径。
    * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]**：在所需的选项卡中输入选件正文。 要生成跟踪，**[!UICONTROL HTML content]**&#x200B;必须由可以包含在`<div>`类型元素中的HTML元素组成。 例如，HTML页面中`<table>`元素的结果将如下所示：
 
-   ```
+   ```xml
       <div> 
        <table>
         <tr>
@@ -158,13 +158,13 @@ ht-degree: 5%
       </div>
    ```
 
-   在[本节](interaction-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted)中了解如何定义接受URL。
+   了解如何在接受建议时在[优惠状态中定义接受URL](interaction-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted)。
 
-   ![](assets/offer_content_create_002.png)
+   ![内容选项卡已填入标题、目标URL和图像URL以及内容定义链接。](assets/offer_content_create_002.png)
 
    要查找在优惠空间配置期间定义的必填字段，请单击&#x200B;**[!UICONTROL Content definitions]**&#x200B;链接以显示列表。 [了解详情](interaction-offer-spaces.md)
 
-   ![](assets/offer_content_create_003.png)
+   ![内容定义对话框为每个选件空间列出必需的内容字段。](assets/offer_content_create_003.png)
 
    在此示例中，选件必须包含标题、图像、HTML内容和目标URL。
 
@@ -176,11 +176,11 @@ ht-degree: 5%
 
 1. 单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡。
 
-   ![](assets/offer_preview_create_001.png)
+   ![优惠的“预览”选项卡，列出了要预览的每个优惠空间的呈现。](assets/offer_preview_create_001.png)
 
 1. 选择要查看的优惠的表示形式。
 
-   ![](assets/offer_preview_create_002.png)
+   ![展开了Email /clients呈现的“预览”选项卡，以显示呈现的选件内容。](assets/offer_preview_create_002.png)
 
 1. 如果您已个性化优惠内容，请选择优惠目标以查看个性化。
 
@@ -202,13 +202,13 @@ Creating hypotheses is detailed in [this page](../../automation/response/about-r
 
 您现在可以批准并激活选件以使其在&#x200B;**实时**&#x200B;环境中可用。
 
-如需详细信息，请参阅[此小节](approving-and-activating-an-offer.md#approving-offer-content)。
+有关详细信息，请参阅[批准优惠内容](approving-and-activating-an-offer.md#approving-offer-content)。
 
 ## 管理产品建议演示{#offer-presentation}
 
 通过Campaign，您可以使用展示规则控制优惠建议的流程。 这些特定于营销活动交互的规则是&#x200B;**类型规则**。 它们允许您根据已对收件人作出的建议历史记录排除优惠。 它们会在环境中引用。
 
-如需详细信息，请参阅[此小节](managing-offer-presentation.md)。
+有关详细信息，请参阅[管理优惠演示](managing-offer-presentation.md)。
 
 ## 优惠模拟
 
@@ -216,4 +216,4 @@ Creating hypotheses is detailed in [this page](../../automation/response/about-r
 
 模拟会考虑先前应用于优惠的上下文和资格规则及其呈现规则。 这样，您就可以测试和优化各种版本的优惠建议，而无需实际使用优惠或过度/缺征询目标，因为模拟对目标收件人没有影响。
 
-有关选件模拟的详细信息，请参阅[此部分](about-offers-simulation.md)。
+有关优惠模拟的详细信息，请参阅[关于优惠模拟](about-offers-simulation.md)。

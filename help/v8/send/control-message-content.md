@@ -17,9 +17,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '770'
 ht-degree: 5%
 ---
 # 控制消息内容{#control-message-content}
@@ -52,7 +52,7 @@ ht-degree: 5%
 
 为了改善收件人的体验并让他们打开您的电子邮件，Adobe Campaign允许您个性化您的消息。
 
-有关在Adobe Campaign中使用个性化字段的更多信息，请参阅[此部分](personalization-fields.md)。
+有关在Adobe Campaign中使用个性化字段的更多信息，请参阅[添加个性化字段](personalization-fields.md)。
 
 ## 选择退出链接和表单 {#opt-out}
 

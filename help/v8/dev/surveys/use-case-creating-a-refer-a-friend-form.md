@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '820'
 ht-degree: 0%
 ---
 # 用例：创建引用窗体{#use-case-creating-a-refer-a-friend-form}
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 在本例中，我们希望向数据库中的收件人提供一个竞争对手。 在Web窗体中，有一个部分用于输入答案，另一个部分用于通过输入朋友的电子邮件地址来介绍朋友。
 
-![](assets/s_ncs_admin_survey_viral_sample_0.png)
+![包含识别区域、包含随机问题的测验区域以及邀请朋友的邀请区域的竞赛表](assets/s_ncs_admin_survey_viral_sample_0.png)
 
 使用前面描述的过程创建识别块和竞争块。
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 1. 创建竞争Web表单，其中包含各种问题和用于输入朋友联系信息的字段，如下所示：
 
-   ![](assets/s_ncs_admin_survey_viral_sample_2.png)
+   ![包含识别、游戏和推荐部分的竞争表单结构（包含好友联系字段）](assets/s_ncs_admin_survey_viral_sample_2.png)
 
    **您的消息**&#x200B;字段允许您为被推荐人输入消息。 反向链接还必须输入其&#x200B;**姓氏**、**名字**&#x200B;和&#x200B;**电子邮件**。
 
@@ -65,7 +65,7 @@ ht-degree: 0%
    >
    >在本例中，我们要定位收件人，以建议他们参加其反向链接所推荐的竞争。 但是，在本邮件中，我们还希望向他们提供我们的一个信息服务的订购。 如果它们订阅，则它们可以存储在数据库中。
 
-   ![](assets/s_ncs_admin_survey_viral_sample_5.png)
+   ![表单结构在“推荐朋友”部分具有姓氏字段](assets/s_ncs_admin_survey_viral_sample_5.png)
 
    与被推荐人相关的字段内容将在用户档案创建脚本和发送给他们的消息中使用。
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
    它包含以下说明：
 
-   ![](assets/s_ncs_admin_survey_viral_sample_4.png)
+   ![已打开被引用者信息脚本框的表单图表，正在设置访客ID、转发URL和反向链接字段](assets/s_ncs_admin_survey_viral_sample_4.png)
 
    ```javascript
    ctx.recipient.visitor.@id = xtk.session.GetNewIds(1)
@@ -89,23 +89,23 @@ ht-degree: 0%
 
 1. 利用存储框，您可以收集信息并将其存储在数据库中。
 
-   ![](assets/s_ncs_admin_survey_viral_sample_4b.png)
+   带有在协调选项中选择的访客元素的![存储框对话框用于存储被推荐人](assets/s_ncs_admin_survey_viral_sample_4b.png)
 
 1. 然后，创建链接到在步骤1中创建的信息服务的投放模板。 它将在信息服务的&#x200B;**[!UICONTROL Choose scenario]**&#x200B;字段中选择。
 
    用于创建反向链接选件消息的投放模板包含以下信息：
 
-   ![](assets/s_ncs_admin_survey_viral_sample_7.png)
+   ![邀请朋友传递模板，该模板包含使用个性化字段的主题和HTML内容](assets/s_ncs_admin_survey_viral_sample_7.png)
 
    此模板具有以下特性：
 
    * 选择访客表作为目标映射。
 
-     ![](assets/s_ncs_admin_survey_viral_sample_7b.png)
+     ![Select目标对话框，其中包含已选为投放目标映射的访客(nms:visitor)](assets/s_ncs_admin_survey_viral_sample_7b.png)
 
    * 被推荐人的联系信息以及有关反向链接的信息均取自访客表。 可使用个性化按钮插入内容。
 
-     ![](assets/s_ncs_admin_survey_viral_sample_7a.png)
+     投放内容中的![Personalization菜单，访客子菜单列出姓氏、名字、电子邮件和反向链接字段](assets/s_ncs_admin_survey_viral_sample_7a.png)
 
    * 此模板包含竞争表格和订阅链接的链接，供被推荐人订阅新闻稿。
 
@@ -119,7 +119,7 @@ ht-degree: 0%
 
 1. 创建用于投放订阅消息的第二个脚本。
 
-   ![](assets/s_ncs_admin_survey_viral_sample_7c.png)
+   ![脚本框被推荐人存储和消息发送，其代码将推荐电子邮件通知排入被推荐人队列](assets/s_ncs_admin_survey_viral_sample_7c.png)
 
    ```javascript
    // Updtate visitor to have a link to the referrer recipient
@@ -146,10 +146,10 @@ ht-degree: 0%
 
 1. 发布竞争表单并向初始目标的收件人发送邀请。 当其中一个邀请朋友时，将创建基于&#x200B;**反向链接选件**&#x200B;模板的投放。
 
-   ![](assets/s_ncs_admin_survey_viral_sample_8.png)
+   ![已完成的测验页面，其中包含“邀请朋友”部分，且“投放”列表显示该投放正在进行中](assets/s_ncs_admin_survey_viral_sample_8.png)
 
    被推荐人已添加到&#x200B;**[!UICONTROL Administration > Visitors node]**&#x200B;中的访客文件夹：
 
-   ![](assets/s_ncs_admin_survey_viral_sample_9.png)
+   ![访客文件夹列出了被推荐人，访客的“常规”选项卡显示姓名、电子邮件和反向链接](assets/s_ncs_admin_survey_viral_sample_9.png)
 
    其个人资料包含其反向链接输入的信息。 它基于在表单脚本中输入的配置进行存储。 如果他们决定订阅新闻稿，将保存在收件人表中。

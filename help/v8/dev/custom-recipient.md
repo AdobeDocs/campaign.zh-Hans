@@ -35,14 +35,14 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '151'
 ht-degree: 3%
 ---
 # 使用自定义收件人表格{#gs-ac-custom-recipient}
 
-Adobe Campaign附带内置配置文件表： **nmsRecipient**。 此表有许多可以轻松扩展的预定义字段和表。 在[此页面](datamodel.md#ootb-profiles)中了解有关此表的更多信息。
+Adobe Campaign附带内置配置文件表： **nmsRecipient**。 此表有许多可以轻松扩展的预定义字段和表。 在[内置配置文件表](datamodel.md#ootb-profiles)中了解有关此表的详细信息。
 
 内置的表扩展提供了灵活性，但它不允许删除某些未使用的字段或链接。 因此，当数据模型与Campaign内置的收件人表结构存在很大差异，或者您拥有大量用户档案时，使用自定义收件人表可能是一个不错的选择。  但是，此方法在实施时需要遵循一定的预防措施。
 

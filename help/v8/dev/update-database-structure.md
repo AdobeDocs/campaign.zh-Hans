@@ -25,24 +25,24 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '92'
+source-wordcount: '153'
 ht-degree: 0%
 ---
 # 更新数据库结构 {#updating-the-database-structure}
 
 要应用对架构所做的修改，请启动数据库更新向导。 可以通过&#x200B;**[!UICONTROL Tools > Advanced > Update database structure]**&#x200B;访问此助手。 它检查数据库的物理结构是否与其逻辑描述匹配，并执行SQL更新脚本。
 
-![](assets/schema_update.png)
+![数据库更新向导：使用“下一步”按钮启动自动发现进程的“更新参数”页](assets/schema_update.png)
 
 数据库中的模块将自动填充和激活。
 
-![](assets/schema_update_select2.png)
+![数据库更新向导“编辑表”页列出表，CusContracts表设置为同步](assets/schema_update_select2.png)
 
 按照以下步骤操作并查看数据库更新SQL脚本：
 
-![](assets/schema_update2.png)
+![数据库更新向导：使用CusContracts的SQL CREATE TABLE脚本更新脚本页](assets/schema_update2.png)
 
 >[!NOTE]
 >
@@ -50,4 +50,4 @@ ht-degree: 0%
 
 接下来，启动数据库更新：
 
-![](assets/schema_update3.png)
+![数据库更新向导：启动数据库更新页，日志显示更新已在100%](assets/schema_update3.png)完成

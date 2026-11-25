@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '370'
 ht-degree: 2%
 ---
 # Campaign HTML编辑器入门{#about-campaign-html-editor}
@@ -63,7 +63,7 @@ ht-degree: 2%
 
 一般操作如下：
 
-![](assets/dce_schema.png)
+![登陆页面和电子邮件投放都通过数字内容编辑器，然后发布或发送](assets/dce_schema.png)
 
 要创建简单的&#x200B;**Web应用程序**，您需要：
 
@@ -74,7 +74,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->在[此部分](creating-a-landing-page.md)中提供了Web应用程序上下文中的完整实现示例。
+>在[创建登陆页面](creating-a-landing-page.md)中提供了Web应用程序上下文中的完整实施示例。
 
 要创建&#x200B;**电子邮件投放**，您需要：
 

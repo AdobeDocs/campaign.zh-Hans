@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 16%
+source-wordcount: '418'
+ht-degree: 9%
 ---
 # 创建新 Web 应用程序{#creating-a-new-web-application}
 
@@ -43,7 +43,7 @@ ht-degree: 16%
 
 转到&#x200B;**营销活动**&#x200B;选项卡并选择&#x200B;**[!UICONTROL Web Applications]**&#x200B;菜单。 单击 **[!UICONTROL Create]** 按钮。 选择要使用的Web应用程序模板：
 
-![](assets/webapp_create_from_campaign.png)
+![带有“创建”按钮的Web应用程序列表以及包含新登陆页和新Web表单的模板列表](assets/webapp_create_from_campaign.png)
 
 >[!NOTE]
 >
@@ -57,11 +57,11 @@ ht-degree: 16%
 
 1. Web 应用程序
 
-   通过Adobe Campaign，您可以创建在Web平台或外部网中公开的Web应用程序。 这使您可以在Adobe Campaign中编辑数据和记录信息。 在这种情况下，您可以限制用户访问经过身份验证的用户（通过访问控制），并根据各种条件设置数据预加载。 如需详细信息，请参阅[此小节](about-web-applications.md)。
+   通过Adobe Campaign，您可以创建在Web平台或外部网中公开的Web应用程序。 这使您可以在Adobe Campaign中编辑数据和记录信息。 在这种情况下，您可以限制用户访问经过身份验证的用户（通过访问控制），并根据各种条件设置数据预加载。 有关详细信息，请参阅[Web应用程序入门](about-web-applications.md)。
 
 1. 登陆页面
 
-   登陆页面是一个HTML页面，其内容可在网站上找到，允许用户输入存储在Adobe Campaign数据库配置文件中的信息。 此类页面的内容通常由专门的Web机构创建，然后导入Adobe Campaign以供发布、管理和跟进。 有关详细信息，请参见[此页面](creating-a-landing-page.md)。
+   登陆页面是一个HTML页面，其内容可在网站上找到，允许用户输入存储在Adobe Campaign数据库配置文件中的信息。 此类页面的内容通常由专门的Web机构创建，然后导入Adobe Campaign以供发布、管理和跟进。 有关详细信息，请参阅[创建登陆页面](creating-a-landing-page.md)。
 
 1. 调查
 
@@ -79,4 +79,4 @@ ht-degree: 16%
    >
    >**社交营销**&#x200B;是一个可选的Adobe Campaign模块。 请核实您的许可协议。
 
-对于多种Web应用程序类型，页面配置模式以及可用配置可以相同。 如需详细信息，请参阅[此小节](about-web-forms.md)。
+对于多种Web应用程序类型，页面配置模式以及可用配置可以相同。 有关详细信息，请参阅[Web窗体入门](about-web-forms.md)。

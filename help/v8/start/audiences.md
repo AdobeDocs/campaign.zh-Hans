@@ -29,9 +29,9 @@ level_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '541'
 ht-degree: 18%
 ---
 # 在Campaign中使用受众{#gs-ac-audiences}
@@ -44,13 +44,13 @@ ht-degree: 18%
 
 列表是一组静态的联系人，在投放操作中可以定位这些联系人，或在导入或其他工作流操作期间对其进行更新。 例如，通过查询从数据库中提取的群体可以存储为列表。
 
-在[此页面](../audiences/create-audiences.md)中了解如何创建和管理列表。
+了解如何在[在Campaign](../audiences/create-audiences.md)中创建配置文件受众中创建和管理列表。
 
 ## 筛选数据库{#filter-the-database}
 
 筛选器配置允许您从列表&#x200B;**[!UICONTROL dynamically]**&#x200B;中选择数据：修改数据时，将更新过滤的数据。 您可以创建自己的过滤器，也可以使用内置的过滤器来定义目标受众。
 
-了解如何在[此页面](../audiences/create-filters.md)中创建和管理筛选器。
+了解如何在[使用Adobe Campaign中的筛选器](../audiences/create-filters.md)中创建和管理筛选器。
 
 ## 在工作流中创建受众
 

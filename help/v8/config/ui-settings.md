@@ -25,9 +25,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: f22ef7562e86372db4c5c05c04acd986d1c557fb
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1077'
 ht-degree: 20%
 ---
 # Campaign用户界面设置 {#ui-settings}
@@ -45,13 +45,13 @@ ht-degree: 20%
 
 您可以将文件夹添加到Campaign Explorer、创建视图和分配权限。
 
-在[此页面](../audiences/folders-and-views.md)中了解如何管理文件夹和视图
+了解如何管理[文件夹和视图](../audiences/folders-and-views.md)中的文件夹和视图
 
 ## 管理和自定义列表 {#customize-lists}
 
 在Campaign客户端控制台中，数据显示在列表中。 您可以根据自己的需求调整这些列表。 例如，您可以添加列、过滤数据、计算记录、保存和共享设置。
 
-此外，您还可以创建和保存过滤器。  在[此页面](../audiences/create-filters.md)中了解有关筛选器的更多信息。
+此外，您还可以创建和保存过滤器。  了解有关[中筛选器的详细信息](../audiences/create-filters.md)使用Adobe Campaign中的筛选器。
 
 ### 记录数 {#number-of-records}
 
@@ -107,7 +107,7 @@ ht-degree: 20%
 
 您可以使用&#x200B;**[!UICONTROL Distribution of values]**&#x200B;图标查看当前文件夹中选定字段值的重新分区。
 
-![](assets/value-distribution.png)
+![值分布对话框，其中列出了服务和订阅文件夹的每种类型及其计数和百分比](assets/value-distribution.png)
 
 
 ### 新建列 {#create-a-new-column}
@@ -145,7 +145,7 @@ ht-degree: 20%
 1. 单击&#x200B;**[!UICONTROL Advanced settings]**，然后在&#x200B;**[!UICONTROL Configuration]**&#x200B;字段中指定名称。
 1. 单击&#x200B;**[!UICONTROL OK]**，然后单击&#x200B;**[!UICONTROL Save]**。
 
-然后，您可以将此配置应用到相同类型的另一个文件夹。 在[此页面](../audiences/folders-and-views.md)中了解有关文件夹的更多信息。
+然后，您可以将此配置应用到相同类型的另一个文件夹。 了解有关[文件夹和视图](../audiences/folders-and-views.md)中的文件夹的更多信息。
 
 ### 导出列表 {#exporting-a-list}
 

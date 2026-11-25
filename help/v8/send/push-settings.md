@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Measurement
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 011875268793bca1a000d745818dbd6c69461227
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1890'
 ht-degree: 5%
 ---
 # 配置推送通知渠道 {#push-notification-configuration}
@@ -71,7 +71,7 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->推送配置必须由专家用户执行。 根据您的实施模型和此实施中涉及的角色，您可能需要将整套权限分配给单个产品配置文件，或在应用程序开发人员和&#x200B;**Adobe Campaign**&#x200B;管理员之间共享权限。
+>推送配置必须由专家用户执行。 根据您的实施模型和涉及的角色，您可能需要将整套权限分配给单个产品配置文件。 或者，在应用程序开发人员和&#x200B;**Adobe Campaign**&#x200B;管理员之间共享权限。
 
 要分配&#x200B;**属性**&#x200B;和&#x200B;**公司**&#x200B;权限，请执行以下步骤：
 
@@ -182,7 +182,7 @@ To get the SDKs needed for push notification to work you will need the following
 
 ## 在Campaign中配置移动服务 {#push-service}
 
-在[!DNL Adobe Experience Platform Data Collection]中设置移动应用后，您需要创建两个服务（一个用于iOS设备，一个用于Android设备）才能从&#x200B;**[!DNL Adobe Campaign]**&#x200B;发送推送通知。
+在[!DNL Adobe Experience Platform Data Collection]中设置您的移动设备应用程序后，请创建两个服务：一个用于iOS设备，另一个用于Android设备。 这些服务允许您从&#x200B;**[!DNL Adobe Campaign]**&#x200B;发送推送通知。
 
 推送通知通过专用服务发送给您的应用程序用户。 用户安装您的应用程序后，会订阅此服务：Adobe Campaign依赖此服务仅定向应用程序的订阅者。 在此服务中，您需要添加要在iOS和Android设备上发送的iOS和Android应用程序。
 
@@ -190,13 +190,13 @@ To get the SDKs needed for push notification to work you will need the following
 
 1. 浏览到&#x200B;**[!UICONTROL Profiles and Targets > Services and Subscriptions]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Create]**。
 
-   ![](assets/new-service-push.png){width="800"}
+   ![具有移动应用程序类型和订阅者应用程序目标映射的新服务对话框](assets/new-service-push.png){width="800"}
 
 1. 输入&#x200B;**[!UICONTROL Label]**&#x200B;和&#x200B;**[!UICONTROL Internal name]**，然后选择&#x200B;**[!UICONTROL Mobile application]**&#x200B;类型。
 
    >[!NOTE]
    >
-   >默认&#x200B;**[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]**&#x200B;目标映射已链接到收件人表。 如果要使用其他目标映射，则需要创建一个新的目标映射，并在服务的&#x200B;**[!UICONTROL Target mapping]**&#x200B;字段中输入该映射。 在[此页面](../audiences/target-mappings.md)中了解有关目标映射的详细信息。
+   >默认&#x200B;**[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]**&#x200B;目标映射已链接到收件人表。 如果要使用其他目标映射，则需要创建一个新的目标映射，并在服务的&#x200B;**[!UICONTROL Target mapping]**&#x200B;字段中输入该映射。 了解有关[中目标映射的详细信息](../audiences/target-mappings.md)使用目标映射。
 
 1. 然后，使用右侧的&#x200B;**[!UICONTROL Add]**&#x200B;图标定义使用此服务的移动应用程序。
 
@@ -208,14 +208,14 @@ To get the SDKs needed for push notification to work you will need the following
 
 1. 选择 **[!UICONTROL Create an iOS application]** 并单击 **[!UICONTROL Next]**。
 
-   ![](assets/new-ios-app.png){width="600"}
+   ![移动应用程序创建向导，已选中“创建iOS应用程序”和“下一步”按钮](assets/new-ios-app.png){width="600"}
 
 1. 在&#x200B;**[!UICONTROL Label]**&#x200B;字段中输入应用程序的名称。
 1. （可选）您可以使用大约&#x200B;**[!UICONTROL Application variables]**&#x200B;扩充推送消息内容。 这些都是完全可自定义的，并且是发送到移动设备的消息有效负载的一部分。
 
    在以下示例中，添加了&#x200B;**mediaURl**&#x200B;和&#x200B;**mediaExt**&#x200B;变量以创建富推送通知，然后向应用程序提供要在通知中显示的图像。
 
-   ![](assets/ios-app-parameters.png){width="600"}
+   ![将mediaURL和mediaExt作为应用程序变量列出的iOS应用程序向导的常规参数步骤](assets/ios-app-parameters.png){width="600"}
 
 1. 浏览到&#x200B;**[!UICONTROL Subscription parameters]**&#x200B;选项卡以定义扩展名为&#x200B;**[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**&#x200B;架构的映射。
 
@@ -258,7 +258,7 @@ To get the SDKs needed for push notification to work you will need the following
 
 1. 选择 **[!UICONTROL Create an Android application]** 并单击 **[!UICONTROL Next]**。
 
-   ![](assets/new-android-app.png){width="600"}
+   ![移动应用程序创建向导，已选中“创建Android应用程序”和“下一步”按钮](assets/new-android-app.png){width="600"}
 
 1. 在&#x200B;**[!UICONTROL Label]**&#x200B;字段中输入应用程序的名称。
 1. 集成键特定于每个应用程序。 它将移动应用程序链接到Adobe Campaign。

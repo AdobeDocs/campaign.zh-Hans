@@ -24,10 +24,10 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 1%
+source-wordcount: '703'
+ht-degree: 0%
 ---
 # 呈现规则{#presentation-rules}
 
@@ -42,57 +42,57 @@ ht-degree: 1%
 1. 在Adobe Campaign树中，转到&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]**&#x200B;节点。
 1. 创建新的&#x200B;**[!UICONTROL Offer presentation]**&#x200B;类型规则。
 
-   ![](assets/offer_typology_example_001.png)
+   ![规则类型列表已打开且已选择优惠呈现的类型规则创建表单](assets/offer_typology_example_001.png)
 
 1. 根据需要更改其标签及其描述。
 
-   ![](assets/offer_typology_example_002.png)
+   ![类型规则“常规”选项卡，带有标签、优惠呈现类型、电子邮件渠道和输入的描述](assets/offer_typology_example_002.png)
 
 1. 选择&#x200B;**[!UICONTROL All channels]**&#x200B;选项以将规则扩展到所有渠道。
 
-   ![](assets/offer_typology_example_003.png)
+   ![已选择所有渠道的分类规则的渠道列表](assets/offer_typology_example_003.png)
 
 1. 单击&#x200B;**[!UICONTROL Edit expression]**&#x200B;链接并选择&#x200B;**[!UICONTROL Category]**&#x200B;节点作为表达式。
 
-   ![](assets/offer_typology_example_004.png)
+   ![使用Select查询窗口，并打开表达式对话框以选择“类别”字段](assets/offer_typology_example_004.png)
 
 1. 选择与您的加拿大旅行优惠匹配的类别，然后单击&#x200B;**[!UICONTROL OK]**&#x200B;以关闭查询窗口。
 
-   ![](assets/offer_typology_example_005.png)
+   ![在等于加拿大的类别上查询，并在旅行优惠类别树中选择“加拿大”文件夹](assets/offer_typology_example_005.png)
 
 1. 在&#x200B;**[!UICONTROL Offer presentation]**&#x200B;选项卡中，选择与环境中配置的维度相同的维度。
 
-   ![](assets/offer_typology_example_006.png)
+   ![显示与环境匹配的“定位”维度和存储维度的“选件”演示选项卡](assets/offer_typology_example_006.png)
 
 1. 指定应用规则的时段。
 
-   ![](assets/offer_typology_example_007.png)
+   ![包含滑动周期的优惠呈现选项卡，周期考虑字段设置为10d](assets/offer_typology_example_007.png)
 
 1. 将建议限制为一个，以便已拒绝加拿大旅行的收件人不会收到另一个类似的建议。
 
-   ![](assets/offer_typology_example_008.png)
+   ![建议最大数量数量字段设置为1](assets/offer_typology_example_008.png)的优惠呈现选项卡
 
 1. 选择&#x200B;**[!UICONTROL Offers for the same category]**&#x200B;筛选器以排除&#x200B;**加拿大**&#x200B;类别中的所有选件。
 
-   ![](assets/offer_typology_example_020.png)
+   建议中的![选件下拉列表与所选同一类别的选件一起计数](assets/offer_typology_example_020.png)
 
 1. 选择&#x200B;**[!UICONTROL Rejected propositions]**&#x200B;筛选器以仅考虑收件人拒绝的建议。
 
-   ![](assets/offer_typology_example_021.png)
+   在要计算且已选择被拒绝的建议的建议中的![建议状态下拉列表](assets/offer_typology_example_021.png)
 
 1. 选择要应用此规则的收件人。
 
    在本例中，我们将选择&#x200B;**频繁出差者**&#x200B;收件人。
 
-   ![](assets/offer_typology_example_009.png)
+   ![编辑筛选查询向导选择Frequent travelers收件人文件夹作为规则目标](assets/offer_typology_example_009.png)
 
 1. 在优惠类型中引用规则。
 
-   ![](assets/offer_typology_example_013.png)
+   使用“添加类型”对话框列出所选优惠类型的![规则的“类型”选项卡](assets/offer_typology_example_013.png)
 
 1. 转到优惠环境（**环境 — 此示例中为Recipient**）并引用刚刚使用&#x200B;**[!UICONTROL Eligibility]**&#x200B;选项卡中的下拉列表创建的新分类。
 
-   ![](assets/offer_typology_example_014.png)
+   使用优惠呈现类型列表显示优惠的优惠环境的![资格选项卡](assets/offer_typology_example_014.png)
 
 ## 应用呈现规则 {#applying-the-presentation-rule}
 
@@ -104,14 +104,14 @@ ht-degree: 1%
 
    在我们的示例中，**Tim Ramsey**&#x200B;有资格获得属于&#x200B;**美洲**&#x200B;类别的优惠。
 
-   ![](assets/offer_typology_example_015.png)
+   ![收件人建议选项卡，预览子选项卡，列出适用于美洲类别的优惠](assets/offer_typology_example_015.png)
 
 1. 首先，创建电子邮件投放，将选件定位到&#x200B;**频繁出差者**&#x200B;的收件人。
 1. 选择优惠引擎调用参数。
 
    在我们的示例中，选择了&#x200B;**Travel in America**&#x200B;类别，该类别包含&#x200B;**Canada**&#x200B;和&#x200B;**United States**&#x200B;子类别。
 
-   ![](assets/offer_typology_example_016.png)
+   ![具有美洲类别的电子邮件投放的选件管理对话框，每封邮件2个建议](assets/offer_typology_example_016.png)
 
 1. 在消息正文中插入优惠并发送投放。 有关更多信息，请参阅[关于出站渠道](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"}（Campaign v8文档）。
 
@@ -119,10 +119,10 @@ ht-degree: 1%
 
 1. 收件人拒绝了加拿大的报价，如建议历史记录中所示。
 
-   ![](assets/offer_typology_example_018.png)
+   ![加拿大雪地车优惠的收件人建议历史记录处于已拒绝状态](assets/offer_typology_example_018.png)
 
 1. 检查他们现在有资格享受的优惠。
 
    我们可以看到，没有选择加拿大的优惠。
 
-   ![](assets/offer_typology_example_019.png)
+   ![收件人预览选项卡显示纽约和大峡谷的合格优惠，无加拿大优惠](assets/offer_typology_example_019.png)

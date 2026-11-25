@@ -30,9 +30,9 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '957'
 ht-degree: 0%
 ---
 # 链接管理 {#links--relation-between-tables}
@@ -49,14 +49,14 @@ ht-degree: 0%
 
 对于与Campaign表/数据库的连接关系：
 
-* ![](assets/do-not-localize/join_with_campaign11.png)：基数1-1。 例如，在收件人和当前订单之间。 收件人一次只能与当前订单表的一个实例相关。
-* ![](assets/do-not-localize/externaljoin11.png)：基数1-1，外部联接。 例如，在收件人与其国家/地区之间。 收件人只能与表国家/地区的一个匹配项相关。 将不会保存国家表的内容。
-* ![](assets/do-not-localize/join_with_campaign1n.png)：基数1-N。例如，在收件人和订阅表之间。 收件人可能与订阅表中的多次发生次数相关。
+* 1-1基数链接的![图标](assets/do-not-localize/join_with_campaign11.png)：基数1-1。 例如，在收件人和当前订单之间。 收件人一次只能与当前订单表的一个实例相关。
+* 1-1基数外部联接的![图标](assets/do-not-localize/externaljoin11.png)：基数1-1，外部联接。 例如，在收件人与其国家/地区之间。 收件人只能与表国家/地区的一个匹配项相关。 将不会保存国家表的内容。
+* 1-N基数链接的![图标](assets/do-not-localize/join_with_campaign1n.png)：基数1-N。例如，在收件人和订阅表之间。 收件人可能与订阅表中的多次发生次数相关。
 
 对于使用联合数据库访问(FDA)的联接关系：
 
-* ![](assets/do-not-localize/join_fda_11.png)：基数1-1
-* ![](assets/do-not-localize/join_fda_1m.png)：基数1-N
+* 1-1基数链接的![图标](assets/do-not-localize/join_fda_11.png)：基数1-1
+* 1-N基数链接的![图标](assets/do-not-localize/join_fda_1m.png)：基数1-N
 
 有关FDA表的详细信息，请参阅[访问外部数据库](../connect/fda.md)。
 

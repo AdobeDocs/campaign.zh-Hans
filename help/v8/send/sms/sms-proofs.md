@@ -26,9 +26,9 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '303'
 ht-degree: 1%
 ---
 # 发送短信投放的证明 {#sms-proof}
@@ -39,7 +39,7 @@ Adobe强烈建议您设置投放验证周期。 在将内容发送给受众之�
 
 1. 单击&#x200B;**[!UICONTROL Send a proof]**&#x200B;按钮，将打开一个窗口
 
-   ![](assets/proof_targeting.png){zoomable="yes"}
+   ![使用定位模式列表发送验证对话框：特定验证目标、地址替换、种子地址或两者](assets/proof_targeting.png){zoomable="yes"}
 
    您可使用多种模式来发送验证：
 
@@ -53,12 +53,12 @@ Adobe强烈建议您设置投放验证周期。 在将内容发送给受众之�
 
    在以下示例中，我们选择&#x200B;**[!UICONTROL Definition of a specific proof target]**&#x200B;并添加收件人：
 
-   ![](assets/proof_recipient.png){zoomable="yes"}
+   ![在特定验证目标模式的定义中发送验证对话框，添加了一个收件人并显示“分析”按钮](assets/proof_recipient.png){zoomable="yes"}
 
 1. 单击 **[!UICONTROL Analyze]** 按钮。
 Adobe Campaign将在验证验证发送之前执行所有控制。 在分析结束时，**[!UICONTROL Confirm delivery]**&#x200B;按钮将可点击。
 
-   ![](assets/proof_analyze.png){zoomable="yes"}
+   ![分析后发送验证对话框：准备完成，1条要发送的消息，分析日志，并确认投放按钮](assets/proof_analyze.png){zoomable="yes"}
 
 1. 要发送短信投放的证明，请单击&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;按钮。
 

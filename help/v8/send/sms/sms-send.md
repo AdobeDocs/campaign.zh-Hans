@@ -26,10 +26,10 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 3%
+source-wordcount: '143'
+ht-degree: 2%
 ---
 # 向受众发送短信投放 {#sms-send-audience}
 
@@ -40,10 +40,10 @@ ht-degree: 3%
 
    在以下示例中，我们选择&#x200B;**[!UICONTROL Deliver it as soon as possible]**，将显示&#x200B;**[!UICONTROL Analyze]**&#x200B;按钮。 我们单击该&#x200B;**[!UICONTROL Analyze]**&#x200B;按钮。
 
-   ![](assets/send_action.png){zoomable="yes"}
+   ![使用“尽快投放”并突出显示“分析”功能，发送到主要投放目标对话框](assets/send_action.png){zoomable="yes"}
 
    Adobe Campaign将在验证验证发送之前执行所有控制。 您将看到实际受众数量。 在分析结束时，**[!UICONTROL Confirm delivery]**&#x200B;按钮将可点击。
 
-   ![](assets/send_analyze.png){zoomable="yes"}
+   ![已完成传递分析，显示要发送的消息数和确认传递按钮](assets/send_analyze.png){zoomable="yes"}
 
 1. 要将短信投放发送给受众，请单击&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;按钮。

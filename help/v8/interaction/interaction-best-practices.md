@@ -25,9 +25,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1269'
 ht-degree: 0%
 ---
 # 互动最佳实践 {#interaction-best-practices}
@@ -77,13 +77,13 @@ ht-degree: 0%
 
 在以下示例中，投放中选择的优惠空间为&#x200B;**[!UICONTROL Email (Environment - Recipient)]**：
 
-![](assets/Interaction-best-practices-offer-space-selected.png)
+在“优惠空间”字段设置为“电子邮件（环境 — 收件人）”的情况下，投放的![优惠选择部分。](assets/Interaction-best-practices-offer-space-selected.png)
 
 如果您在投放中选择的优惠空间未设置HTML渲染功能，则您将不会在投放菜单中看到该空间，并且将无法选择它。 这与&#x200B;**扩充**&#x200B;活动中选择的优惠空间无关。
 
 在下面的示例中，HTML呈现函数在下拉列表中可用，因为投放中选择的选件空间具有呈现函数：
 
-![](assets/Interaction-best-practices-HTML-rendering.png)
+![突出显示建议、建议和HTML渲染选项的Personalization字段菜单。](assets/Interaction-best-practices-HTML-rendering.png)
 
 此函数插入代码，例如： `<%@ include proposition="targetData.proposition" view="rendering/html" %>`。
 
@@ -99,7 +99,7 @@ ht-degree: 0%
 
 当生成或接受建议时，优惠空间能够在建议表中存储数据：
 
-![](assets/Interaction-best-practices-offer-space-storage.png)
+![优惠空间的“存储”选项卡，带有“开启”建议和“开启”接受状态以及存储路径表达式。](assets/Interaction-best-practices-offer-space-storage.png)
 
 但是，这仅适用于集客交互。
 
@@ -109,15 +109,15 @@ ht-degree: 0%
 
 例如，在&#x200B;**扩充**&#x200B;工作流活动中手动选择选件（无交互）时，标准字段的定义如下：
 
-![](assets/Interaction-best-practices-manual-offer-std-fields.png)
+![使用手动选择的选件的标准字段输出扩充活动的列。](assets/Interaction-best-practices-manual-offer-std-fields.png)
 
 可以添加其他字段，如`@rank`字段：
 
-![](assets/Interaction-best-practices-manual-offer-add-fields.png)
+![扩充活动的输出列，其中为建议添加了排名字段。](assets/Interaction-best-practices-manual-offer-add-fields.png)
 
 由于建议表中有一个名为`@rank`的字段，因此将复制工作流临时表中的值。
 
-有关在建议表中存储其他字段的详细信息，请参阅[此部分](interaction-send-offers.md#storing-offer-rankings-and-weights)。
+有关在建议表中存储其他字段的详细信息，请参阅[存储优惠排名和权重](interaction-send-offers.md#storing-offer-rankings-and-weights)。
 
 对于具有交互功能的叫客优惠，在选择了多个优惠且希望记录它们在电子邮件中的显示顺序时，此功能非常有用。
 
@@ -127,7 +127,7 @@ ht-degree: 0%
 
 在使用交互和手动选择选件时，用户可以同时使用这两种方法。 例如，对于手动选择的选件，用户可手动将`@rank`字段设置为1，并对交互返回的选件使用诸如`"1 + @rank"`之类的表达式。 假设交互选择三个选件，则这两种方法返回的选件将排名第1-4：
 
-![](assets/Interaction-best-practices-manual-offer-combined.png)
+![将选件交互与1 +排名表达式组合在一起以手动设置排名的输出列。](assets/Interaction-best-practices-manual-offer-combined.png)
 
 ### 扩展nms:offer架构 {#extending-nms-offer-schema}
 
@@ -135,7 +135,7 @@ ht-degree: 0%
 * 为`<element name="view">`下的内容存储定义任何新字段。
 * 每个新字段需要定义两次。 一次作为常规XML字段，一次作为CDATA XML字段，并在名称后附加“_jst”。 例如：
 
-  ```
+  ```xml
   <element label="Price" name="price" type="long" xml="true"/>
   <element advanced="true" label="Script price" name="price_jst" type="CDATA" xml="true"/>
   ```

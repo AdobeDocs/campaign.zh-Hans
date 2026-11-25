@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '1382'
-ht-degree: 1%
+source-wordcount: '1710'
+ht-degree: 0%
 ---
 # 定义Web窗体属性{#defining-web-forms-properties}
 
@@ -39,13 +39,13 @@ ht-degree: 1%
 
 可通过Web窗体工具栏中的&#x200B;**[!UICONTROL Properties]**&#x200B;按钮访问属性窗口。 通过此窗口，您可以访问特定于Web窗体的一系列设置。 某些设置可能来自模板配置。
 
-![](assets/s_ncs_admin_survey_properties_general.png)
+![具有“属性”按钮的Web应用程序编辑器，该按钮将打开在工具栏中突出显示的表单属性窗口](assets/s_ncs_admin_survey_properties_general.png)
 
 ## 整体表单属性 {#overall-form-properties}
 
 在属性窗口的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，您可以修改表单的&#x200B;**标签**。 强烈建议不要更改&#x200B;**内部名称**。
 
-![](assets/s_ncs_admin_survey_properties_general_tab.png)
+![表单“属性”窗口的“常规”选项卡，带有“标签”、“内部名称”、“性质”、“状态”、“开始和结束日期”、“访问控制”](assets/s_ncs_admin_survey_properties_general_tab.png)
 
 表单创建期间选择表单模板。 以后无法更改。 有关创建和管理表单模板的更多信息，请参阅[使用Web表单模板](using-a-web-form-template.md)。
 
@@ -63,11 +63,11 @@ ht-degree: 1%
 
 默认情况下，它会显示以下信息：
 
-![](assets/s_ncs_admin_survey_default_error_page.png)
+![浏览器页面显示默认错误消息：发生错误。 如果此问题仍然存在，请与管理员联系](assets/s_ncs_admin_survey_default_error_page.png)
 
 显示的字符串内容在属性窗口的&#x200B;**[!UICONTROL Error page]**&#x200B;选项卡中定义。 **[!UICONTROL HTML]**&#x200B;选项卡显示渲染，**[!UICONTROL Texts]**&#x200B;选项卡允许您修改文本字符串并在必要时添加一些文本：
 
-![](assets/s_ncs_admin_survey_error_page.png)
+属性的![错误页选项卡，文本选项卡列出错误消息的line1和line2字符串](assets/s_ncs_admin_survey_error_page.png)
 
 ## 表单本地化 {#form-localization}
 
@@ -81,7 +81,7 @@ ht-degree: 1%
 
 您可以选择通过链接或按钮进行导航。
 
-![](assets/s_ncs_admin_survey_wz_02_navig_type.png)
+![导航选项：“下一个”按钮和“下一个”链接，两种在表单页面之间移动的方式](assets/s_ncs_admin_survey_wz_02_navig_type.png)
 
 默认情况下，按钮是导航元素。 它们允许您执行以下操作：
 
@@ -101,7 +101,7 @@ ht-degree: 1%
 
 示例渲染显示在属性窗口的下部。 **[!UICONTROL Edit link]**&#x200B;图标允许您查看选定主题的配置。
 
-![](assets/s_ncs_admin_survey_properties_render.png)
+![属性的“渲染”选项卡，带有“使用”按钮或“使用链接”、“标签位置”和带有“编辑”链接图标的“模板”预览](assets/s_ncs_admin_survey_properties_render.png)
 
 ## 表单中的徽标 {#logo-in-the-form}
 
@@ -109,15 +109,15 @@ ht-degree: 1%
 
 在Web应用的&#x200B;**[!UICONTROL Properties]**&#x200B;内的&#x200B;**[!UICONTROL Rendering]**&#x200B;选项卡中，单击模板的玻璃图标：
 
-![](assets/logo_glass.png)
+![属性的“呈现”选项卡，在“模板”字段旁突出显示了放大镜图标，以打开模板](assets/logo_glass.png)
 
 在新窗口中，单击&#x200B;**[!UICONTROL Page layout]**&#x200B;链接：
 
-![](assets/logo_pagelayout.png)
+![突出显示页面布局链接的表单生成模板窗口](assets/logo_pagelayout.png)
 
 您可以在此处更改徽标图像的路径：
 
-![](assets/logo_path.png)
+![突出显示徽标下图像字段的页面布局窗口，保留徽标图像的路径](assets/logo_path.png)
 
 可用的图像位于&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Images]**&#x200B;下。 您可以在此处添加徽标。
 
@@ -141,7 +141,7 @@ ht-degree: 1%
 
 有效期从&#x200B;**[!UICONTROL Start]**&#x200B;日期到&#x200B;**[!UICONTROL End date]**&#x200B;期间运行。 如果未在这些字段中指定日期，则表单具有永久有效性。
 
-![](assets/s_ncs_admin_survey_properties_date.png)
+![属性的“常规”选项卡，其结束日期日历处于打开状态，用于选择表单停止有效的日期](assets/s_ncs_admin_survey_properties_date.png)
 
 >[!NOTE]
 >
@@ -153,17 +153,17 @@ ht-degree: 1%
 
 您可以对表单显示启用访问控制，例如在Intranet站点上提交表单时，以便对用户进行身份验证。 为此，请显示相关表单的&#x200B;**[!UICONTROL Properties]**&#x200B;窗口，然后单击&#x200B;**[!UICONTROL Enable access control]**&#x200B;选项，如下所示：
 
-![](assets/s_ncs_admin_survey_access_ctrl.png)
+在“访问控制”下选择了“启用访问控制”选项的“属性”的![常规选项卡](assets/s_ncs_admin_survey_access_ctrl.png)
 
 在访问页面时，将会出现以下身份验证表单：
 
-![](assets/s_ncs_admin_survey_access_login.png)
+![具有“登录”和“密码”字段以及“登录”按钮的身份验证表单，在启用访问控制时显示](assets/s_ncs_admin_survey_access_login.png)
 
 登录名和密码由Adobe Campaign操作员使用。 如需详细信息，请参阅[此小节](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}。
 
 **[!UICONTROL Use a specific account]**&#x200B;选项允许您限制访问表单的操作员的读取或写入权限。 使用下拉框选择将负责授予这些权限的操作员或操作员组。
 
-![](assets/s_ncs_admin_survey_access_op_select.png)
+![使用已选择的特定帐户选项，使用“运算符”下拉列表从中选择运算符](assets/s_ncs_admin_survey_access_op_select.png)
 
 ## 表单URL参数 {#form-url-parameters}
 
@@ -194,7 +194,7 @@ ht-degree: 1%
 
 可以通过窗体“属性”窗口中的&#x200B;**[!UICONTROL Parameters...]**&#x200B;选项卡添加参数。 可以将它们设为必选项，如下所示：
 
-![](assets/s_ncs_admin_survey_properties_param.png)
+![参数选项卡列出了公司、性别和状态，并且已为状态选中了“必需参数”选项](assets/s_ncs_admin_survey_properties_param.png)
 
 您必须指定从中检索参数值的存储位置。 为此，请选择其中一个存储选项，然后单击&#x200B;**[!UICONTROL Storage]**&#x200B;选项卡以选择相关字段或变量。 [响应存储字段](web-forms-answers.md#response-storage-fields)中详细介绍了存储选项。
 
@@ -202,20 +202,20 @@ ht-degree: 1%
 
 1. 客户主页（**状态=1**）：
 
-   ![](assets/s_ncs_admin_survey_test_client.png)
+   表单的![客户端主页，打开时使用了URL参数status=1和ID字段](assets/s_ncs_admin_survey_test_client.png)
 
 1. 潜在客户主页（**状态=0**）：
 
-   ![](assets/s_ncs_admin_survey_test_prospect.png)
+   ![表单的潜在客户主页，打开时包含URL参数status=0以及名称、电子邮件和验证码字段](assets/s_ncs_admin_survey_test_prospect.png)
 
 1. 其他配置文件的主页（例如，**状态=12**）：
 
-   ![](assets/s_ncs_admin_survey_test_other.png)
+   ![表单的联系人主页，打开时带有URL参数status=12和名称、电子邮件和消息字段](assets/s_ncs_admin_survey_test_other.png)
 
 要配置此表单，请创建一个测试框并将其放在图的开头，如下所示：
 
-![](assets/s_ncs_admin_survey_test.png)
+![Client/Prospect/Contact测试框分支到Prospect、Client和Contact主页的表单图表](assets/s_ncs_admin_survey_test.png)
 
 利用测试框，可配置页面排序条件：
 
-![](assets/s_ncs_admin_survey_test_box.png)
+![具有由状态定义的分支的测试框对话框，其中状态变量是从上下文字段中选择的](assets/s_ncs_admin_survey_test_box.png)

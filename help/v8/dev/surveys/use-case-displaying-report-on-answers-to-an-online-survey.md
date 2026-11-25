@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '657'
 ht-degree: 1%
 ---
 # 用例：显示在线调查的答案报告{#use-case-displaying-report-on-answers-to-an-online-survey}
@@ -63,27 +63,27 @@ ht-degree: 1%
 
 要收集调查的答案，请应用以下步骤：
 
-1. 创建工作流并放置&#x200B;**[!UICONTROL Answers to a survey]**&#x200B;活动。 有关使用此活动的详细信息，请参阅[此部分](publish-track-and-use-collected-data.md#using-the-collected-data)。
+1. 创建工作流并放置&#x200B;**[!UICONTROL Answers to a survey]**&#x200B;活动。 有关使用此活动的详细信息，请参阅[使用收集的数据](publish-track-and-use-collected-data.md#using-the-collected-data)。
 1. 编辑活动并选择要分析其答案的调查。
 1. 启用&#x200B;**[!UICONTROL Select all the answer data]**&#x200B;选项以收集所有信息。
 
-   ![](assets/reporting_usecase_1_01.png)
+   ![在线调查工作流程中的调查回复活动，已选定调查并启用了Select所有回复数据。](assets/reporting_usecase_1_01.png)
 
 1. Select要提取的列（在这种情况下，选择所有已存档字段）。 这些是包含答案的字段。
 
-   ![](assets/reporting_usecase_1_02.png)
+   ![用于选择要添加到输出列的已存档字段的Select额外列对话框。](assets/reporting_usecase_1_02.png)
 
 1. 配置应答收集框后，放置&#x200B;**[!UICONTROL List update]**&#x200B;类型活动以保存数据。
 
-   ![](assets/reporting_usecase_1_04.png)
+   ![具有调查响应活动的工作流，该活动通过结果过渡链接到列表更新活动。](assets/reporting_usecase_1_04.png)
 
    在此活动中，指定要更新的列表并取消选中&#x200B;**[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]**&#x200B;选项：将答案添加到现有表中。 此选项将允许您引用多维数据集中的列表。 每次更新都不会重新生成链接到列表的架构，这保证了使用此列表的多维数据集的完整性。
 
-   ![](assets/reporting_usecase_1_03.png)
+   ![使用“清除”来更新列表对话框，如果存在该列表选项，则重复使用该列表，这样会将答案添加到列表中。](assets/reporting_usecase_1_03.png)
 
 1. 启动工作流以确认其配置。
 
-   ![](assets/reporting_usecase_1_05.png)
+   ![在线调查工作流程图及调查回复已连接到列表更新，准备开始。](assets/reporting_usecase_1_05.png)
 
    将创建指定的列表，该列表包含调查答案的架构。
 
@@ -97,11 +97,11 @@ ht-degree: 1%
 
 在本例中，多维数据集基于先前创建的工作流馈送的列表中的数据。
 
-![](assets/reporting_usecase_2_01.png)
+![Cube对话框回答联机调查使用选定列表和WEB代表列表作为事实列表。](assets/reporting_usecase_2_01.png)
 
 定义要在报告中显示的维度和度量。 在这里，我们要显示合同日期和被申请人的国家/地区。
 
-![](assets/reporting_usecase_2_02.png)
+![包含“国家/地区”和“部门”的“多维数据集维度”选项卡，以及包含“已答复”、2016合同和2017合同的“度量”选项卡。](assets/reporting_usecase_2_02.png)
 
 **[!UICONTROL Preview]**&#x200B;选项卡允许您控制报告的呈现。
 
@@ -109,8 +109,8 @@ ht-degree: 1%
 
 然后，您可以基于此多维数据集创建报告，并处理数据和信息。
 
-![](assets/reporting_usecase_3_01.png)
+![使用“在线调查答案”多维数据集模板和“创建”按钮创建新报告页面。](assets/reporting_usecase_3_01.png)
 
 根据您的需求调整信息以显示。
 
-![](assets/reporting_usecase_3_02.png)
+![按国家/地区列出的2016年和2017年在线调查报告表，行中包含“国家/地区”维度。](assets/reporting_usecase_3_02.png)

@@ -38,14 +38,14 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1521'
 ht-degree: 53%
 ---
 # 2023 年发行说明 {#2023-rn}
 
-此页面列出了 **2023 Campaign v8 版本**&#x200B;中的新增功能、改进和修复。 有关最新版本，请参阅[此页面](release-notes.md)。
+此页面列出了 **2023 Campaign v8 版本**&#x200B;中的新增功能、改进和修复。 有关最新版本，请参阅[Campaign v8发行说明](release-notes.md)。
 
 对于任何新实施或升级到现有环境，请安装[最新版本](release-notes.md)。
 
@@ -105,7 +105,7 @@ Campaign v8.5.1引入了我们最新的推送通知服务，该服务由基于�
 
 * 您现在可以利用Adobe Experience Platform目标连接在Adobe Experience Platform和Campaign v8数据库之间同步配置文件属性，例如选择退出数据。
 * 已跨所有渠道优化投放准备。
-* 除了现有的用户/密码身份验证方法之外，还为SFTP外部帐户添加了基于密钥的新身份验证选项。 用户现在可以使用私钥安全地进行身份验证，从而增强安全性并为SFTP访问提供替代身份验证机制。 可在[此部分](../config/external-accounts.md)中了解详情。
+* 除了现有的用户/密码身份验证方法之外，还为SFTP外部帐户添加了基于密钥的新身份验证选项。 用户现在可以使用私钥安全地进行身份验证，从而增强安全性并为SFTP访问提供替代身份验证机制。 在[Campaign外部帐户](../config/external-accounts.md)中了解详情。
 
 **安全性增强**
 

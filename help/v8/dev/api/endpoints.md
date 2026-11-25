@@ -28,19 +28,19 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 9%
+source-wordcount: '201'
+ht-degree: 0%
 ---
 # 端点 {#endpoints}
 
 Adobe Campaign REST API的可用端点：
 
 * **/profileAndServices**：与开箱即用的字段交互。 不能使用此端点访问扩展字段。
-* **/profileAndServicesExt**：与在Profile或Services自定义资源扩展期间添加的自定义字段交互。 有关自定义资源的详细信息，请参阅[此部分](custom-resources.md)。
-* **/&lt;transactionalAPI>**：与事务性消息API交互（事务性消息API端点的名称取决于您的实例配置）。 如需详细信息，请参阅[此小节](managing-transactional-messages.md)。
-* **/工作流/执行**：与工作流交互。 如需详细信息，请参阅[此小节](controlling-a-workflow.md)。
+* **/profileAndServicesExt**：与在Profile或Services自定义资源扩展期间添加的自定义字段交互。 有关自定义资源的详细信息，请参阅[自定义资源](custom-resources.md)。
+* **/&lt;transactionalAPI>**：与事务性消息API交互（事务性消息API端点的名称取决于您的实例配置）。 有关详细信息，请参阅[管理事务型消息](managing-transactional-messages.md)。
+* **/工作流/执行**：与工作流交互。 有关详细信息，请参阅[控制工作流](controlling-a-workflow.md)。
 
 默认情况下，**profileAndServices**&#x200B;和&#x200B;**profileAndServicesExt** API可用的主要资源包括：
 

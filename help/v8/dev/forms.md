@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '2568'
+source-wordcount: '2820'
 ht-degree: 0%
 ---
 # 输入表单入门 {#gs-ac-forms}
@@ -51,15 +51,15 @@ ht-degree: 0%
 
 从客户端控制台的&#x200B;**[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]**&#x200B;文件夹创建和配置输入表单：
 
-![](assets/form_arbo.png)
+在“配置”下选择了“输入表单”文件夹的![资源管理器树](assets/form_arbo.png)
 
 通过编辑区域，您可以输入输入表单的XML内容：
 
-![](assets/form_edit.png)
+![输入表单编辑器“编辑”选项卡显示“收件人(cus)”表单的XML以及birthDate、性别和电子邮件输入](assets/form_edit.png)
 
 预览会生成输入表单的显示：
 
-![](assets/form_preview.png)
+![收件人(cus)表单的“预览”选项卡，显示“出生日期”、“性别”和“电子邮件”字段](assets/form_preview.png)
 
 ## 窗体结构
 
@@ -93,7 +93,7 @@ ht-degree: 0%
 
 基于示例架构的输入表单：
 
-![](assets/do-not-localize/form_exemple1.png)
+![将性别、出生日期和电子邮件作为三个栈叠字段输入表单](assets/do-not-localize/form_exemple1.png)
 
 ```xml
 <form name="recipient" namespace="cus">
@@ -122,7 +122,7 @@ ht-degree: 0%
 
 要以两列显示上述示例的控件，请执行以下操作：
 
-![](assets/do-not-localize/form_exemple2.png)
+![两列并排输入性别和出生日期的表单，电子邮件低于](assets/do-not-localize/form_exemple2.png)
 
 ```xml
 <form name="recipient" namespace="cus">
@@ -138,7 +138,7 @@ ht-degree: 0%
 
 控件上的&#x200B;**colspan**&#x200B;属性将控件扩展为在其值中输入的列数：
 
-![](assets/do-not-localize/form_exemple3.png)
+![电子邮件字段跨两列扩展的两列输入表单](assets/do-not-localize/form_exemple3.png)
 
 ```xml
 <form name="recipient" namespace="cus">
@@ -152,7 +152,7 @@ ht-degree: 0%
 
 通过填充&#x200B;**type=&quot;frame&quot;**&#x200B;属性，容器将使用&#x200B;**label**&#x200B;属性中包含的标签在子控件周围添加一个框架：
 
-![](assets/do-not-localize/form_exemple4.png)
+![带有性别、出生日期和全形电子邮件字段的双列输入表单，无可见框架](assets/do-not-localize/form_exemple4.png)
 
 ```xml
 <form name="recipient" namespace="cus">
@@ -166,7 +166,7 @@ ht-degree: 0%
 
 **`<static>`**&#x200B;元素可用于设置输入表单的格式：
 
-![](assets/do-not-localize/form_exemple5.png)
+![输入包含性别、日期和电子邮件字段的表单，其下方有一行静态帮助文本](assets/do-not-localize/form_exemple5.png)
 
 ```xml
 <form name="recipient" namespace="cus">
@@ -212,7 +212,7 @@ ht-degree: 0%
 
 使用&#x200B;**笔记本**&#x200B;容器格式化可从选项卡访问的页面中的数据。
 
-![](assets/do-not-localize/form_exemple6.png)
+![在“性别”、“日期”和“电子邮件”字段上方输入带有“常规”和“位置”选项卡的表单](assets/do-not-localize/form_exemple6.png)
 
 ```xml
 <container type="notebook">
@@ -231,7 +231,7 @@ ht-degree: 0%
 
 添加&#x200B;**style=&quot;down&quot;**&#x200B;属性以强制将选项卡标签垂直定位在控件下方。 此属性是可选的。 默认值为&#x200B;**“up”**。
 
-![](assets/do-not-localize/form_exemple7.png)
+![输入表单，在“性别”、“日期”和“电子邮件”字段下放置了“常规”和“位置”选项卡标签](assets/do-not-localize/form_exemple7.png)
 
 `<container style="down" type="notebook">  ... </container>`
 
@@ -239,7 +239,7 @@ ht-degree: 0%
 
 使用此容器可显示垂直图标栏，以允许您选择要显示的页面。
 
-![](assets/do-not-localize/form_exemple8.png)
+![输入表单，在“性别”、“日期”和“电子邮件”字段旁边有一个垂直图标栏，提供“常规”和“位置”页面](assets/do-not-localize/form_exemple8.png)
 
 ```xml
 <container type="iconbox">
@@ -308,7 +308,7 @@ ht-degree: 0%
 
 链接在其输入表单中的编辑控件如下：
 
-![](assets/do-not-localize/form_exemple9.png)
+![公司字段显示链接的下拉编辑控件，并选定Adobe](assets/do-not-localize/form_exemple9.png)
 
 ```xml
 <input xpath="company"/>
@@ -421,7 +421,7 @@ ht-degree: 0%
 
 例如，我们从“cus:recipient”架构的输入表单开始。 该列表必须显示与服务订阅的关联，并且必须允许您通过选择现有服务来添加订阅。
 
-![](assets/do-not-localize/form_exemple12.png)
+![Select“服务”对话框列出黑名单、MobApp、新闻稿和其他服务以添加订阅](assets/do-not-localize/form_exemple12.png)
 
 ```xml
 <input type="linklist" xpath="subscription" xpathChoiceTarget="service" xpathEditTarget="service" zoom="true">
@@ -522,7 +522,7 @@ ht-degree: 0%
 
 “性别”字段示例：
 
-![](assets/do-not-localize/form_exemple16.png)
+![性别字段显示为下拉列表，值为Male](assets/do-not-localize/form_exemple16.png)
 
 ```xml
 <value value="@gender"/>
@@ -541,7 +541,7 @@ ht-degree: 0%
 <input type="RadioButton" xpath="@gender" checkedValue="2" label="Choice 3"/>
 ```
 
-![](assets/do-not-localize/form_exemple17.png)
+![性别字段显示为单选按钮Choice 1、Choice 2和Choice 3，已选择Choice 1](assets/do-not-localize/form_exemple17.png)
 
 ## 添加复选框 {#checkbox}
 
@@ -552,7 +552,7 @@ ht-degree: 0%
 <input xpath="@field1" type="checkbox" checkedValue="Y"/>
 ```
 
-![](assets/do-not-localize/form_exemple20.png)
+![两个未选中的复选框，标记为Boolean1和field1](assets/do-not-localize/form_exemple20.png)
 
 ## 编辑导航层次结构 {#navigation-hierarchy-edit}
 
@@ -573,7 +573,7 @@ ht-degree: 0%
 </input>
 ```
 
-![](assets/do-not-localize/form_exemple18.png)
+![树编辑控件，包含文本字段和布尔字段组，列出text1到text3和Boolean1到Boolean3](assets/do-not-localize/form_exemple18.png)
 
 ## 添加表达式字段 {#expression-field}
 

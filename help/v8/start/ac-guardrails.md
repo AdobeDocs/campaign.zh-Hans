@@ -26,10 +26,10 @@ level_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 78%
+source-wordcount: '265'
+ht-degree: 76%
 ---
 # 产品护栏{#guardrails}
 
@@ -47,4 +47,4 @@ ht-degree: 78%
 * 采用[企业版 (FFDA) 部署](../architecture/enterprise-deployment.md)时，订阅（选择启用）和退订（选择禁用）机制以及移动设备注册是异步流程。 请求是每小时通过特定的技术工作流处理的。 [了解详情](../architecture/replication.md#workflows)
 * 在[企业(FFDA)部署](../architecture/enterprise-deployment.md)的上下文中，重复项需要由最终用户手动处理。 [了解详情](../architecture/keys.md)
 * Adobe Campaign v8 不支持 API 和 Web 应用程序的扩展吞吐量 - 如有特定需求，请联系 Adobe 以获取指导
-* 在[企业(FFDA)部署](../architecture/enterprise-deployment.md)的上下文中，Adobe Campaign优化模块不考虑压力类型规则中的计划投放。 请参阅[此页面](../../automation/campaign-opt/pressure-rules.md)以了解详情
+* 在[企业(FFDA)部署](../architecture/enterprise-deployment.md)的上下文中，Adobe Campaign优化模块不考虑压力类型规则中的计划投放。 在[配置压力规则](../../automation/campaign-opt/pressure-rules.md)中了解详情

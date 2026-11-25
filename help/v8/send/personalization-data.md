@@ -24,9 +24,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '627'
 ht-degree: 0%
 ---
 # Personalization数据源{#personalization-data}
@@ -53,7 +53,7 @@ Personalization数据可从各种类型的源中检索：Campaign数据库数据
 
 可以通过[联合数据访问](../connect/fda.md)从外部表中提取Personalization数据。  如果要使用外部数据库中的数据在投放中进行个性化，请收集要在工作流中使用的数据，以使其在临时表中可用。
 
-要执行此操作，请在定位工作流中添加&#x200B;**查询**&#x200B;活动，并使用&#x200B;**添加数据……**&#x200B;链接选择外部数据库。 详细进程在[此部分](../../automation/workflow/query.md#adding-data)中提供。
+要执行此操作，请在定位工作流中添加&#x200B;**查询**&#x200B;活动，并使用&#x200B;**添加数据……**&#x200B;链接选择外部数据库。 详细进程在[添加数据](../../automation/workflow/query.md#adding-data)中可用。
 
 然后，使用临时表中的数据将投放个性化。 配置查询活动后，从&#x200B;**Target扩展**&#x200B;条目访问个性化选项中的外部数据。
 
@@ -87,4 +87,4 @@ Personalization数据可从各种类型的源中检索：Campaign数据库数据
 
 在工作流上下文中创建投放时，您可以使用临时工作流表中的数据。 存储在工作流临时工作表中的数据可用于个性化任务。 数据可用于个性化字段。
 
-此数据在&#x200B;**[!UICONTROL Target extension]**&#x200B;菜单中分组。 有关详细信息，请参阅[此部分](../../automation/workflow/use-workflow-data.md#target-data)。
+此数据在&#x200B;**[!UICONTROL Target extension]**&#x200B;菜单中分组。 有关详细信息，请参阅[利用目标数据](../../automation/workflow/use-workflow-data.md#target-data)。

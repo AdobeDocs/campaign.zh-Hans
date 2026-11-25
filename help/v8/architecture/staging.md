@@ -34,9 +34,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '345'
 ht-degree: 2%
 ---
 # Campaign API暂存机制
@@ -66,7 +66,7 @@ Campaign Classic v7 API仍然可用，但无法从这种新的暂存机制中获
 
 1. 在Campaign Cloud数据库上创建示例自定义架构。 此步骤未启用暂存。
 
-   ```
+   ```xml
    <srcSchema _cs="Sample Table (dem)" created="YYYY-DD-MM"
            entitySchema="xtk:srcSchema" img="xtk:schema.png" label="Sample Table"
            lastModified="YYYY-DD-MM HH:MM:SS.TZ" mappingType="sql" md5="XXX"
@@ -79,13 +79,13 @@ Campaign Classic v7 API仍然可用，但无法从这种新的暂存机制中获
    </srcSchema>
    ```
 
-   在[此页面](../dev/create-schema.md)中了解有关自定义架构创建的更多信息。
+   了解有关在[中创建自定义架构的详细信息在Campaign](../dev/create-schema.md)中创建新架构。
 
 1. 保存并更新数据库结构。  [了解详情](../dev/update-database-structure.md)
 
 1. 通过添加&#x200B;**autoStg=&quot;true&quot;**&#x200B;参数，在架构定义中启用暂存机制。
 
-   ```
+   ```xml
    <srcSchema _cs="Sample Table (dem)" "YYYY-DD-MM"
            entitySchema="xtk:srcSchema" img="xtk:schema.png" label="Sample Table"
            lastModified="YYYY-DD-MM HH:MM:SS.TZ" mappingType="sql" md5="XXX"
@@ -100,6 +100,6 @@ Campaign Classic v7 API仍然可用，但无法从这种新的暂存机制中获
 
 1. 保存修改。 提供了一个新的暂存架构，它是初始架构的本地副本。
 
-   ![](assets/staging-mechanism.png)
+   为示例表（暂存）生成的暂存架构dem :sampleTableStg的![XML源，初始架构的本地副本](assets/staging-mechanism.png)
 
 1. 更新数据库结构。 将在Campaign本地数据库上创建临时表。

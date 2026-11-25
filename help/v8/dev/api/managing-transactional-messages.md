@@ -25,10 +25,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
 source-wordcount: '744'
-ht-degree: 1%
+ht-degree: 0%
 ---
 # 管理事务型消息 {#managing-transactional-messages}
 
@@ -47,11 +47,11 @@ ht-degree: 1%
 
 事务性事件通过具有以下URL结构的POST请求发送：
 
-```
+```http
 POST https://mc.adobe.io/<ORGANIZATION>/campaign/<transactionalAPI>/<eventID>
 ```
 
-* **&lt;组织>**：您的个人组织ID。 请参阅[此小节](must-read.md)。
+* **&lt;组织>**：您的个人组织ID。 请参阅[必读](must-read.md)。
 
 * **&lt;transactionalAPI>**：事务性消息API端点。
 
@@ -67,7 +67,7 @@ POST https://mc.adobe.io/<ORGANIZATION>/campaign/<transactionalAPI>/<eventID>
 
 您必须添加字符集，例如&#x200B;**utf-8**。 请注意，此值取决于您使用的REST应用程序。
 
-```
+```bash
 -X POST \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
@@ -100,7 +100,7 @@ POST https://mc.adobe.io/<ORGANIZATION>/campaign/<transactionalAPI>/<eventID>
 
 以下示例显示了将触发短信通信的有效负载：
 
-```
+```bash
 curl --location 'https://mc.adobe.io/<ORGANIZATION>/campaign/mcAdobe/EVTcartAbandonment' \
 --header 'Authorization: Bearer <ACCESS_TOKEN>' \
 --header 'Cache-Control: no-cache' \
@@ -135,7 +135,7 @@ POST响应会返回创建时的事务性事件状态。 要检索其当前状态
 
 用于发送事件的POST请求。
 
-```
+```bash
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/mcAdobe/EVTcartAbandonment \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
@@ -161,7 +161,7 @@ POST响应会返回创建时的事务性事件状态。 要检索其当前状态
 
 对POST请求的响应。
 
-```
+```json
 {
   "PKey":"<PKEY>",
   "ctx":

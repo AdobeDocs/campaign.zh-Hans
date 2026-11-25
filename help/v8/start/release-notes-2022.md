@@ -24,10 +24,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '1947'
-ht-degree: 84%
+source-wordcount: '1949'
+ht-degree: 83%
 ---
 # 2022 发行说明{#2022-rn}
 
@@ -106,7 +106,7 @@ _2022 年 9 月 30 日_
 * 此更改仅适用于“获取 URL”。 包括“发布 URL”在内的其他类型操作不会受到影响。
 * 如您使用的是自定义代码，则不会再从“获取 URL”安全令牌参数中检索安全令牌。 您必须使用以下 JSSP 代码生成新的安全令牌：
 
-  ```
+  ```javascript
   getNewSecurityToken(jsspContext.getSessionToken(), jsspContext.getSecurityToken(), true);
   ```
 
@@ -254,14 +254,14 @@ _2022 年 5 月 18 日_
 
 **改进**
 
-* Campaign 现在支持适用于 POP3 的 Microsoft Exchange Online OAuth 2.0 身份验证。 [了解更多信息](../config/external-accounts.md#bounce-mails-external-account)
+* Campaign 现在支持适用于 POP3 的 Microsoft Exchange Online OAuth 2.0 身份验证。 [退回邮件](../config/external-accounts.md#bounce-mails-external-account)
 * 已对 Microsoft Dynamics Connector Web API 应用了以下重要修复。
 * 已添加新的运算符和组架构写入(operatorWrite)命名权限，以允许用户插入、更新和删除运算符(xtk:operator)和运算符组(xtk:group)架构。
   <!--* You can now enable the Email BCC (blind carbon copy) capability to store emails sent by Campaign at the delivery level, through the dedicated option in the delivery properties. [Read more](../config/email-settings.md#email-bcc)-->
   <!--* To ensure better performances, a new "Split" option is now activated by default in the Routing external account. This option allows messages to be automatically split across your mid-sourcing instances in order to be delivered faster to the recipients.-->
 * 现在，可以在单个中间源上配置多个 LINE 活动帐户。
 * Web 进程的默认连接数从 50 个增加到 150 个。
-* Campaign 提供了一组新护栏，以防止在 Snowflake 数据库中插入重复的键。 [了解更多信息](../architecture/keys.md)
+* Campaign 提供了一组新护栏，以防止在 Snowflake 数据库中插入重复的键。 Campaign中的[密钥管理](../architecture/keys.md)
 
 **修复**
 

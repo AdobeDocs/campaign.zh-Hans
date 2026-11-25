@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '2404'
+source-wordcount: '3152'
 ht-degree: 0%
 ---
 # 向 Web 窗体添加字段{#adding-fields-to-a-web-form}
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 使用助理添加字段时，将根据所选字段或存储变量自动检测字段类型。 您可以使用&#x200B;**[!UICONTROL General]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Type]**&#x200B;下拉框对其进行编辑。
 
-![](assets/s_ncs_admin_webform_change_type.png)
+![Page对话框，“常规”选项卡，打开“类型”下拉菜单以将字段从组合框更改为其他字段类型](assets/s_ncs_admin_webform_change_type.png)
 
 使用工具栏中的按钮时，选择要添加的字段类型。
 
@@ -66,23 +66,23 @@ ht-degree: 0%
 
 对于表单的每个页面，您可以通过工具栏中的第一个按钮添加字段。 为此，请转到&#x200B;**[!UICONTROL Add using the assistant]**&#x200B;菜单。
 
-![](assets/s_ncs_admin_survey_add_field_menu.png)
+![字段创建向导提供回答问题、编辑收件人、添加变量和导入现有问题的功能](assets/s_ncs_admin_survey_add_field_menu.png)
 
 选择要创建的字段类型：您可以选择在数据库中添加字段、添加变量，或者导入一组在其他表单中创建并在容器中收集的字段。
 
 单击&#x200B;**[!UICONTROL Next]**&#x200B;并选择要导入的存储字段或变量，或容器。
 
-![](assets/s_ncs_admin_webform_wz_confirm_db.png)
+![字段创建向导，“编辑配置文件”步骤，在单击“完成”之前选择“称呼数据库”字段](assets/s_ncs_admin_webform_wz_confirm_db.png)
 
 单击&#x200B;**[!UICONTROL Finish]**&#x200B;将所选字段插入页面。
 
-![](assets/s_ncs_admin_webform_wz_insert_field.png)
+![页面对话框，其中显示了在向导](assets/s_ncs_admin_webform_wz_insert_field.png)之后插入欢迎页面的“致敬”组合框字段
 
 ## 添加输入字段 {#adding-input-fields}
 
 要添加输入字段，请单击&#x200B;**[!UICONTROL Input control]**&#x200B;按钮并选择要添加的字段类型。
 
-![](assets/s_ncs_admin_webform_select_field.png)
+![输入控件菜单列出文本、数字、密码、多行文本和HTML文本字段类型](assets/s_ncs_admin_webform_select_field.png)
 
 ### 输入字段的类型 {#types-of-input-fields}
 
@@ -90,7 +90,7 @@ ht-degree: 0%
 
 * **文本**：允许用户在一行中输入文本。
 
-  ![](assets/s_ncs_admin_survey_txt_ex.png)
+  ![已渲染的文本字段，标记为“您的姓氏”，包含一行值](assets/s_ncs_admin_survey_txt_ex.png)
 
 * **数字**：允许用户在一行中输入数字。 有关详情，请参阅[添加号码](#adding-numbers)。
 
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 * **密码**：允许用户在一行中输入文本。 在文本输入过程中，字符会被替换为句点：
 
-  ![](assets/s_ncs_admin_survey_passwd_ex.png)
+  ![已渲染的密码字段，标记为“您的密码”，键入的字符被掩饰为圆点](assets/s_ncs_admin_survey_passwd_ex.png)
 
   >[!CAUTION]
   >
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 * **多行文本**：允许用户在多行中输入文本。
 
-  ![](assets/s_ncs_admin_survey_txtmulti_ex.png)
+  ![已渲染的多行文本字段，标有带滚动条和示例文本的您的消息](assets/s_ncs_admin_survey_txtmulti_ex.png)
 
   >[!CAUTION]
   >
@@ -115,21 +115,21 @@ ht-degree: 0%
 
 * **扩充的多行文本**：允许用户输入布局为将以HTML格式存储的文本。
 
-  ![](assets/s_ncs_admin_survey_txthtmli_ex.png)
+  ![呈现的扩充文本编辑器，包含格式工具栏、粗体、链接和插入的图像](assets/s_ncs_admin_survey_txthtmli_ex.png)
 
   您可以选择提供给用户的编辑器类型。 为此，请使用&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中&#x200B;**[!UICONTROL HTML editor]**&#x200B;字段的下拉框。
 
-  ![](assets/webapp_enrich_text_type.png)
+  ![包含HTML编辑器下拉列表的“高级”选项卡，其中列出了“极简型”、“基本”、“中级”和“高级”](assets/webapp_enrich_text_type.png)
 
   显示的图标数因编辑器类型而异。 对于&#x200B;**[!UICONTROL Advanced]**&#x200B;编辑器，渲染将如下所示：
 
-  ![](assets/webapp_enrich_text_max.png)
+  ![表单页面上的高级HTML编辑器，具有完整工具栏且“字体大小”下拉列表打开](assets/webapp_enrich_text_max.png)
 
 ### 配置输入字段 {#configure-input-fields}
 
 可使用以下选项，根据相同的模式配置所有输入字段：
 
-![](assets/s_ncs_admin_survey_txt_param.png)
+![具有“标签”、“必需”、“存储”、“编辑存储”链接和“默认值”的文本输入字段的“常规”选项卡](assets/s_ncs_admin_survey_txt_param.png)
 
 **[!UICONTROL General]**&#x200B;选项卡允许您输入字段名称并在必要时为其赋默认值。
 
@@ -145,17 +145,17 @@ ht-degree: 0%
 
 您可以在调查页面中插入下拉列表。 这允许用户在下拉菜单中选择选件上的值。
 
-![](assets/s_ncs_admin_survey_dropdown_sample.png)
+![已渲染的下拉列表，标签为“标题产品先生、女士和小姐”](assets/s_ncs_admin_survey_dropdown_sample.png)
 
 要将下拉框添加到表单页面，请单击页面编辑器工具栏中的&#x200B;**[!UICONTROL Selection controls > Drop-down list]**&#x200B;按钮。
 
-![](assets/s_ncs_admin_survey_create_dropdown.png)
+![页面编辑器工具栏菜单选择控件，带有组合框、复选框、单选按钮、多选、日期、网格](assets/s_ncs_admin_survey_create_dropdown.png)
 
 选择答案存储模式并确认您的选择。
 
 在&#x200B;**[!UICONTROL General]**&#x200B;选项卡的下部定义列表的标签和值。 如果信息存储在数据库的现有字段中并且是枚举字段，则可以通过单击&#x200B;**[!UICONTROL Initialize the list of values from the database]**&#x200B;自动填写值，如下所示：
 
-![](assets/s_ncs_admin_survey_database_values.png)
+![组合框“常规”选项卡，带有从数据库链接和已填写列表初始化值列表](assets/s_ncs_admin_survey_database_values.png)
 
 >[!NOTE]
 >
@@ -163,11 +163,11 @@ ht-degree: 0%
 
 如果数据存储在链接表中，则可以选择保存列表中建议值的字段。 例如，如果您选择了国家/地区表，请单击&#x200B;**[!UICONTROL Initialize the list of values from the database...]**&#x200B;并选择所需的字段。
 
-![](assets/s_ncs_admin_survey_preload_values.png)
+![Web应用程序对话框，用于从Country表中选取Label字段，并使用Select表达式对话框](assets/s_ncs_admin_survey_preload_values.png)
 
 接下来，单击&#x200B;**[!UICONTROL Load]**&#x200B;链接以检索值：
 
-![](assets/s_ncs_admin_survey_load_button.png)
+单击“加载”后显示![Web应用程序对话框，带有国家/地区标签和值的预览列表](assets/s_ncs_admin_survey_load_button.png)
 
 >[!CAUTION]
 >
@@ -177,7 +177,7 @@ ht-degree: 0%
 
 为了让用户选择选项，您需要使用复选框。
 
-![](assets/s_ncs_admin_survey_check_box.png)
+![已渲染复选框，已选中，带有我想接收您新闻稿的标签](assets/s_ncs_admin_survey_check_box.png)
 
 要将复选框添加到表单，请单击页面编辑器工具栏中的&#x200B;**[!UICONTROL Selection controls > Checkbox...]**&#x200B;图标。
 
@@ -185,33 +185,33 @@ ht-degree: 0%
 
 在&#x200B;**[!UICONTROL General]**&#x200B;选项卡的&#x200B;**[!UICONTROL Label]**&#x200B;字段中输入框的标签。
 
-![](assets/s_ncs_admin_survey_check_box_edit.png)
+![复选框“常规”选项卡，带有标签、存储、默认选中、值和空值字段](assets/s_ncs_admin_survey_check_box_edit.png)
 
 复选框允许您向存储字段（或值）分配值，具体取决于是否勾选该复选框。 **[!UICONTROL Values]**&#x200B;部分允许您输入复选框被选中时要分配的值（在&#x200B;**[!UICONTROL Value]**&#x200B;字段中），以及未选中复选框时要分配的值（在&#x200B;**[!UICONTROL Empty value]**&#x200B;字段中）。 这些值取决于数据存储格式。
 
 如果存储字段（或变量）是布尔值，那么如果未勾选该框，则将自动推导出要分配的值。 在这种情况下，仅提供&#x200B;**[!UICONTROL Value if checked]**&#x200B;字段，如下所示：
 
-![](assets/s_ncs_admin_survey_check_box_enum.png)
+布尔字段的![复选框“常规”选项卡，其中只有“如果选中，则值为”下拉菜单提供“是”和“否”](assets/s_ncs_admin_survey_check_box_enum.png)
 
 ## 示例：如果选中了框，则为字段分配值 {#example--assign-a-value-to-a-field-if-a-box-is-checked}
 
 我们希望在表单中插入复选框以发送维护请求，如下所示：
 
-![](assets/s_ncs_admin_survey_check_box_ex.png)
+![带有产品下拉列表、送货日期字段和已选的“需要维护”框的已渲染表单页面](assets/s_ncs_admin_survey_check_box_ex.png)
 
 该信息将上载到数据库并上载到现有字段（在本例中为&#x200B;**[!UICONTROL Comment]**&#x200B;字段）：
 
-![](assets/s_ncs_admin_survey_check_box_ex_list.png)
+![收件人列表，其注释列显示需要维护或不需要维护](assets/s_ncs_admin_survey_check_box_ex_list.png)
 
 如果选中“需要维护”框，**[!UICONTROL Comment]**&#x200B;列将包含“需要维护”。 如果未勾选该框，列将显示“不需要维护”。 要获得此结果，请将以下配置应用于表单页面上的复选框：
 
-![](assets/s_ncs_admin_survey_check_box_ex_edit.png)
+![存储在评论字段中的“需要维护”复选框，值文本和空值文本](assets/s_ncs_admin_survey_check_box_ex_edit.png)
 
 ## 添加单选按钮 {#adding-radio-buttons}
 
 通过单选按钮，您可以为用户提供一系列独占选项以供选择。 这些是同一字段的不同值。
 
-![](assets/s_ncs_admin_survey_radio_button.png)
+![已渲染单选按钮“先生”、“女士”和“小姐”，已选择“女士”](assets/s_ncs_admin_survey_radio_button.png)
 
 您可以单独创建单选按钮（单一按钮）或通过多选列表创建单选按钮，但由于单选按钮的要点在于选择一个或多个选项，因此我们将始终至少创建一对单选按钮，而不是只创建单个按钮。
 
@@ -223,7 +223,7 @@ ht-degree: 0%
 
 要将单选按钮添加到表单页面，请转到页面编辑器工具栏中的&#x200B;**[!UICONTROL Selection controls > Radio button]**&#x200B;菜单，然后选择存储模式。
 
-![](assets/s_ncs_admin_survey_radio_button_sample.png)
+![单选按钮字段的“常规”选项卡，带有标签选项1、变量存储、默认选定和值](assets/s_ncs_admin_survey_radio_button_sample.png)
 
 单选按钮的配置方式与复选框类似（请参阅[添加复选框](#adding-checkboxes)）。 但是，如果未选择该选项，则不会分配任何值。 为了使多个按钮相互依赖（即选择一个按钮会自动取消选择其他按钮），它们必须存储在同一字段中。 如果它们未存储在数据库中，则必须使用相同的本地变量进行临时存储。 请参阅[响应存储字段](web-forms-answers.md#response-storage-fields)。
 
@@ -231,7 +231,7 @@ ht-degree: 0%
 
 要通过列表添加单选按钮，请转到页面编辑器工具栏中的&#x200B;**[!UICONTROL Selection controls>Multiple choice]**&#x200B;菜单。
 
-![](assets/s_ncs_admin_survey_radio_button_sample2.png)
+![多选字段“常规”选项卡列出了选项1到选项3的值、“已选”和“得分”列](assets/s_ncs_admin_survey_radio_button_sample2.png)
 
 添加任意数量的单选按钮和标签。 此功能的优点是，您可以从现有字段（在逐项列出字段的情况下）导入值，并使用户能够选择一个选项。 但是，按钮的布局不太灵活。
 
@@ -244,15 +244,15 @@ ht-degree: 0%
 
 网格用于在Web应用程序中设计投票页。 这样，您就可以提供用于回答调查或评估类型Web窗体的单选按钮列表，如下所示：
 
-![](assets/s_ncs_admin_survey_vote_param.png)
+![渲染的评级网格，包含视频1到视频3行，单选按钮从1个差到5个优](assets/s_ncs_admin_survey_vote_param.png)
 
 要在表单中使用此类型的元素，请创建一个简单的网格，并为要评估的每个元素添加一行。
 
-![](assets/s_ncs_admin_survey_vote_sample.png)
+![具有Notes简单网格和三个网格线（视频1到视频3，评级值1到5）的页面编辑器](assets/s_ncs_admin_survey_vote_sample.png)
 
 网格每行的单选按钮数量与在简单网格中定义的值的数量匹配。
 
-![](assets/s_ncs_admin_survey_vote_ex.png)
+![呈现的网格具有简单的网格标题行1至5和三条网格行，每行选择一个单选按钮](assets/s_ncs_admin_survey_vote_ex.png)
 
 每个网格线只能选择一个选项。
 
@@ -266,17 +266,17 @@ ht-degree: 0%
 
 ### 添加日期 {#adding-dates}
 
-![](assets/s_ncs_admin_survey_date_calendar.png)
+![日历选取器在2017年1月打开且选定日期的日期字段](assets/s_ncs_admin_survey_date_calendar.png)
 
 要允许用户在表单页面中输入日期，请添加输入字段并选择类型&#x200B;**[!UICONTROL Date...]**。
 
 为字段输入标签并配置数据存储模式。
 
-![](assets/s_ncs_admin_survey_date_edit.png)
+![类型为“日期”的出生日期字段的“常规”选项卡，包含“日期”格式和“时间”格式下拉列表](assets/s_ncs_admin_survey_date_edit.png)
 
 窗口的下部允许您为此字段中存储的值选择日期和时间格式。
 
-![](assets/s_ncs_admin_survey_date_edit_values.png)
+![日期格式下拉列表格式，如12/31/12、2012年12月31日和2012年12月31日](assets/s_ncs_admin_survey_date_edit_values.png)
 
 您还可以选择不显示日期（或时间）。
 
@@ -288,37 +288,37 @@ ht-degree: 0%
 
 但是，在某些情况下（例如，输入出生日期），使用下拉列表可能更容易。
 
-![](assets/s_ncs_admin_survey_date_list_select.png)
+![使用日、月、年的三个下拉列表呈现出生日期字段](assets/s_ncs_admin_survey_date_list_select.png)
 
 为此，请单击&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡，并使用&#x200B;**[!UICONTROL Drop-down lists]**&#x200B;选择输入模式。
 
-![](assets/s_ncs_admin_survey_date_selection.png)
+![使用“输入模式”下拉列表设置的“高级”选项卡，以使用日历或下拉列表选择日期输入](assets/s_ncs_admin_survey_date_selection.png)
 
 然后，可以为列表中提供的值设置限制。
 
-![](assets/s_ncs_admin_survey_date_first_last_y.png)
+![日期字段“常规”选项卡，其中的“第一年”和“去年”框限制列表中提供的年数](assets/s_ncs_admin_survey_date_first_last_y.png)
 
 ### 添加数字 {#adding-numbers}
 
 您可以为数字输入创建合适的字段。
 
-![](assets/s_ncs_admin_survey_number.png)
+![已渲染的数字字段，标记为Points包含值2 500](assets/s_ncs_admin_survey_number.png)
 
 在数字字段中，用户只能输入数字。 在批准页面后，将自动应用登入控制。
 
 根据数据库中存储数据的字段，可能会应用特殊格式或某些限制。 您还可以指定最大值和最小值。 此类型的字段配置如下：
 
-![](assets/s_ncs_admin_survey_number_edit.png)
+![数字字段“常规”选项卡，带有默认值、最小值和最大值审批选项](assets/s_ncs_admin_survey_number_edit.png)
 
 默认值为发布表单时字段中显示的值。 用户可对其进行更正。
 
 您可以通过&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡向数值字段添加前缀和/或后缀，如下所示：
 
-![](assets/s_ncs_admin_survey_number_ex_conf.png)
+![前缀设置为“您”且后缀设置为“点”的数字字段的“高级”选项卡](assets/s_ncs_admin_survey_number_ex_conf.png)
 
 在表单中，渲染将如下所示：
 
-![](assets/s_ncs_admin_survey_number_ex.png)
+![呈现的数字字段，显示您拥有的前缀、值10和后缀点](assets/s_ncs_admin_survey_number_ex.png)
 
 ## “订阅”复选框 {#subscription-checkboxes}
 
@@ -326,7 +326,7 @@ ht-degree: 0%
 
 要创建订阅复选框，请单击&#x200B;**[!UICONTROL Advanced controls>Subscription]**。
 
-![](assets/s_ncs_admin_survey_subscription_edit.png)
+![订阅字段“常规”选项卡，带有服务下拉列表信息服务，可供选择](assets/s_ncs_admin_survey_subscription_edit.png)
 
 指示复选框的标签，然后使用&#x200B;**[!UICONTROL Service]**&#x200B;下拉框选择相关的信息服务。
 
@@ -336,7 +336,7 @@ ht-degree: 0%
 
 用户通过选中相关选项来订阅服务。
 
-![](assets/s_ncs_admin_survey_subscribe.png)
+![已渲染包含新闻稿复选框和验证按钮的确认配置文件和Select新闻稿表单](assets/s_ncs_admin_survey_subscribe.png)
 
 >[!CAUTION]
 >
@@ -352,11 +352,11 @@ ht-degree: 0%
 
 要将验证码插入到表单中，请单击工具栏上的第一个按钮，然后选择&#x200B;**[!UICONTROL Advanced controls>Captcha]**。
 
-![](assets/s_ncs_admin_survey_add_captcha.png)
+![高级控件工具栏菜单列出文件、订阅、常量和验证码，并突出显示验证码](assets/s_ncs_admin_survey_add_captcha.png)
 
 输入字段的标签。 此标签将显示在验证码显示区域的前面。 您可以在&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中更改此标签的位置。
 
-![](assets/s_ncs_admin_survey_captcha_adv.png)
+![Captcha高级选项卡，带有继承的标签位置下拉菜单，左、右、上、下、隐藏](assets/s_ncs_admin_survey_captcha_adv.png)
 
 >[!NOTE]
 >
@@ -364,15 +364,15 @@ ht-degree: 0%
 
 将验证码插入到页面中，并将输入字段置于视觉效果下方。 这两个元素不可分，在页面布局中会被视为单个项目（它们占用一个单元格）。
 
-![](assets/s_ncs_admin_survey_captcha_sample.png)
+![呈现的表单页面，其中包含扭曲字符的验证码图像以及位于](assets/s_ncs_admin_survey_captcha_sample.png)下的输入字段
 
 确认页面后，如果输入的验证码内容不正确，则输入字段将以红色显示。
 
-![](assets/s_ncs_admin_survey_captcha_error.png)
+![表单页面，显示一个红色错误消息，指出输入的字符必须与验证码图像匹配](assets/s_ncs_admin_survey_captcha_error.png)
 
 您可以创建一个要显示的错误消息。 为此，请使用&#x200B;**[!UICONTROL General]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Personalize the message]**&#x200B;链接。
 
-![](assets/s_ncs_admin_survey_captcha_error_msg.png)
+![Captcha的“常规”选项卡，“个性化邮件”链接打开“个性化邮件”对话框](assets/s_ncs_admin_survey_captcha_error_msg.png)
 
 >[!NOTE]
 >
@@ -382,7 +382,7 @@ ht-degree: 0%
 
 您可以向页面添加上载字段。 例如，此功能可用于Intranet文件共享。
 
-![](assets/s_ncs_admin_survey_download_file.png)
+![已渲染的上传字段标记为“使用浏览按钮上传您的图片”](assets/s_ncs_admin_survey_download_file.png)
 
 要将上载字段插入表单页面，请选择页面编辑器工具栏中的&#x200B;**[!UICONTROL Advanced controls > File...]**&#x200B;菜单。
 
@@ -408,4 +408,4 @@ ht-degree: 0%
 
 在以下示例中，只要用户批准此页面，就会自动填写收件人配置文件的&#x200B;**origin**&#x200B;字段。 该常量不显示在页面上。
 
-![](assets/s_ncs_admin_survey_constante.png)
+![名为Origin的常量字段，存储在原始数据库字段中，值为External](assets/s_ncs_admin_survey_constante.png)

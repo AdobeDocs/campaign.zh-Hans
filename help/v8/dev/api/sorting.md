@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
 source-wordcount: '764'
-ht-degree: 2%
+ht-degree: 1%
 ---
 # 其他操作 {#additional-operations}
 
@@ -41,7 +41,7 @@ ht-degree: 2%
 
 默认情况下，排序以升序方式提供。 要按降序排序，请将&#x200B;**%20desc**&#x200B;附加到&#x200B;**_order**&#x200B;参数的值。
 
-要了解某个字段是否可以排序，请将“可排序”参数检查到资源元数据中。 如需详细信息，请参阅[此小节](metadata-mechanism.md)。
+要了解某个字段是否可以排序，请将“可排序”参数检查到资源元数据中。 有关详细信息，请参阅[元数据机制](metadata-mechanism.md)。
 
 <br/>
 
@@ -49,7 +49,7 @@ ht-degree: 2%
 
 * 用于检索数据库中按字母顺序排序的电子邮件的示例GET请求。
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/email?_order=email \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -59,7 +59,7 @@ ht-degree: 2%
 
   对请求的响应。
 
-  ```
+  ```json
   {
   "content": [
       "adam@email.com",
@@ -74,7 +74,7 @@ ht-degree: 2%
 
 * 用于以降序Alpha顺序检索数据库中的电子邮件的示例GET请求。
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/email?_order=email%20desc \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -84,7 +84,7 @@ ht-degree: 2%
 
   对请求的响应。
 
-  ```
+  ```json
   {
   "content": [
       "tombinder@example.com",
@@ -100,7 +100,7 @@ ht-degree: 2%
 
 ### 检索过滤器元数据
 
-每个资源都可以使用过滤器。 要标识与资源关联的过滤器，您需要对资源元数据执行GET请求。 此请求会返回URL，其中为给定资源定义了所有过滤器。 有关元数据的详细信息，请参阅[此章节](metadata-mechanism.md)。
+每个资源都可以使用过滤器。 要标识与资源关联的过滤器，您需要对资源元数据执行GET请求。 此请求会返回URL，其中为给定资源定义了所有过滤器。 有关元数据的详细信息，请参阅[元数据机制](metadata-mechanism.md)。
 
 要识别过滤器的元数据并确定其使用方式，必须对之前返回的URL执行GET请求。
 
@@ -110,7 +110,7 @@ ht-degree: 2%
 
 以下负载示例说明如何为“profile”资源检索“byText”过滤器元数据。 首先对“profile”资源元数据执行GET请求。
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/resourceType/profile \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -120,7 +120,7 @@ ht-degree: 2%
 
 它会返回描述过滤器的URL。
 
-```
+```json
 {
 "filters": {
         "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/resourceType/<PKEY>/filters/"
@@ -130,7 +130,7 @@ ht-degree: 2%
 
 对URL执行GET请求。 它会返回用户档案资源的过滤器列表，其中包含与每个过滤器关联的元数据。
 
-```
+```json
 {
 "birthday": {
         "PKey": "@FL-CbDFXbnHbXcVpeCGWL46VXJLn1LqxLMPagt2vz8sCxQ52lvB15KiUaxXkxJYQw-tZXYrgUWG6K8QcB4gxVY9RKoba5bRFY3294YFshDmorRr8",
@@ -156,7 +156,7 @@ ht-degree: 2%
 
 筛选元数据结构示例：
 
-```
+```json
 "byText": {
         "PKey": "...",
         "category": "99_none",
@@ -184,7 +184,7 @@ ht-degree: 2%
 
 * 用于检索类型为“email”的“service”资源的示例GET请求。
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel?channel=email \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -194,7 +194,7 @@ ht-degree: 2%
 
   对请求的响应。
 
-  ```
+  ```json
   {
       "content": [
           {
@@ -217,7 +217,7 @@ ht-degree: 2%
 * 用于检索中包含“Doe”的“profile”资源的示例GET请求
 电子邮件或姓氏字段（byText过滤器会搜索电子邮件和姓氏字段）。
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/byText?text=Doe \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -227,7 +227,7 @@ ht-degree: 2%
 
   对请求的响应。
 
-  ```
+  ```json
   {
       "content": [
           {
@@ -245,7 +245,7 @@ ht-degree: 2%
 
 * 用于检索类型为“email”且标签为“sport”的服务资源的示例GET请求。
 
-  ```
+  ```bash
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel/byText?channel=email&text=sport \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -255,7 +255,7 @@ ht-degree: 2%
 
   对请求的响应。
 
-  ```
+  ```json
   {
       "content": [
           {
@@ -292,7 +292,7 @@ ht-degree: 2%
 
 用于检索交易额为100$或更大的“profile”资源的示例GET请求。 请注意，“byAmount”过滤器首先是在Adobe Campaign Standard界面中定义，并链接到“Transaction”自定义表。
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/byAmount?amount_parameter=100 \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -356,7 +356,7 @@ Adobe Campaign REST API可以计算请求中的记录数。 为此，请使用&#
 
 要计算&#x200B;**messageType**&#x200B;值等于“sms”的所有服务，请使用&#x200B;**byChannel**&#x200B;过滤器执行GET请求。
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel?channel=sms \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -366,7 +366,7 @@ Adobe Campaign REST API可以计算请求中的记录数。 为此，请使用&#
 
 它会返回与过滤器对应的服务。
 
-```
+```json
 {
     "content": [
         {
@@ -387,7 +387,7 @@ Adobe Campaign REST API可以计算请求中的记录数。 为此，请使用&#
 
 对&#x200B;**count**&#x200B;节点的URL执行GET请求以检索结果数。
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel/_count?channel=sms&_lineStart=@iKTZ2q3IiSEDqZ5Nw1vdoGnQCqF-8DAUJRaVwR9obqqTxhMy \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -397,7 +397,7 @@ Adobe Campaign REST API可以计算请求中的记录数。 为此，请使用&#
 
 它返回记录数。
 
-```
+```json
 {
     "count": 26
 }
@@ -421,7 +421,7 @@ Adobe Campaign REST API可以计算请求中的记录数。 为此，请使用&#
 
 显示配置文件资源1条记录的示例GET请求。
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile?_lineCount=1 \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -431,7 +431,7 @@ Adobe Campaign REST API可以计算请求中的记录数。 为此，请使用&#
 
 响应请求，使用&#x200B;**next**&#x200B;节点执行分页。
 
-```
+```json
 {
     "content": [
         {
@@ -452,7 +452,7 @@ Adobe Campaign REST API可以计算请求中的记录数。 为此，请使用&#
 
 默认情况下，在与具有大量数据的表交互时，**next**&#x200B;节点不可用。 若要执行分页，必须将&#x200B;**_forcePagination=true**&#x200B;参数添加到调用URL中。
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile?_forcePagination=true \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \

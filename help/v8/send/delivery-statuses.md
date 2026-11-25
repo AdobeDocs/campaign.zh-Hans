@@ -35,16 +35,16 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 5%
+source-wordcount: '576'
+ht-degree: 4%
 ---
 # 投放状态 {#delivery-statuses}
 
 发送投放后，投放仪表板会显示一个状态，允许您监测发送是否成功。 可能的状态详见下节。
 
-![](assets/delivery-status.png)
+![状态字段突出显示的投放仪表板摘要，显示已完成和完成日期](assets/delivery-status.png)
 
 有关您可以遇到的不同投放失败以及如何解决这些失败的更多详细信息，请参阅[了解投放失败](delivery-failures.md)。
 
@@ -108,7 +108,7 @@ ht-degree: 5%
  </tbody> 
 </table>
 
-要了解如何优化Adobe Campaign电子邮件的可投放性，请参阅[此部分](about-deliverability.md)。 有关投放能力的更深入探讨，请参阅[Adobe投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)。
+要了解如何优化Adobe Campaign电子邮件的可投放性，请参阅[Campaign中的可投放性入门](about-deliverability.md)。 有关投放能力的更深入探讨，请参阅[Adobe投放能力最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)。
 
 ## 待处理状态 {#pending-status}
 

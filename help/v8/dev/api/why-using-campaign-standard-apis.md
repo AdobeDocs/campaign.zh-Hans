@@ -22,10 +22,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 1%
+source-wordcount: '491'
+ht-degree: 0%
 ---
 # 为何使用Campaign Standard API {#why-using-campaign-standard-apis}
 
@@ -72,7 +72,7 @@ Adobe Campaign Standard提供了API，允许现有系统与Campaign平台集成�
 
    ![替换文本](assets/postman_collection.png)
 
-1. 选择&#x200B;**创建配置文件**&#x200B;请求，然后使用您自己的信息(&lt;ORGANIZATION>、&lt;API_KEY>、&lt;ACCESS_TOKEN>)更新POST请求和&#x200B;**Headers**&#x200B;选项卡。 如需详细信息，请参阅[此小节](setting-up-api-access.md)。
+1. 选择&#x200B;**创建配置文件**&#x200B;请求，然后使用您自己的信息(&lt;ORGANIZATION>、&lt;API_KEY>、&lt;ACCESS_TOKEN>)更新POST请求和&#x200B;**Headers**&#x200B;选项卡。 有关详细信息，请参阅[设置API访问](setting-up-api-access.md)。
 
    ![替换文本](assets/postman_uc1.png)
 

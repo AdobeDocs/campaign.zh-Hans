@@ -21,10 +21,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 6%
+source-wordcount: '262'
+ht-degree: 5%
 ---
 # 使用 Web 窗体模板{#using-a-web-form-template}
 
@@ -38,7 +38,7 @@ ht-degree: 6%
 
 可以将表单更改为模板，并重复使用其配置。 为此，请选择该表单，右键单击并选择&#x200B;**[!UICONTROL Actions > Save as template...]**。
 
-![](assets/s_ncs_admin_survey_saveastemplate.png)
+![Web应用程序列表，右键单击“操作”菜单打开，“另存为模板”突出显示](assets/s_ncs_admin_survey_saveastemplate.png)
 
 此操作将打开用于创建Web应用程序的窗口。 您可以输入模板的名称和说明，并选择要保存该模板的文件夹。
 
@@ -46,11 +46,11 @@ ht-degree: 6%
 
 要创建Web窗体模板，请右键单击Web应用程序模板列表并选择&#x200B;**[!UICONTROL New]**。 您还可以使用模板列表上方的&#x200B;**[!UICONTROL New]**&#x200B;按钮。
 
-![](assets/s_ncs_admin_survey_createtemplate.png)
+浏览器中的![Web应用程序模板文件夹，使用新建按钮创建模板](assets/s_ncs_admin_survey_createtemplate.png)
 
 输入模板的名称。 在&#x200B;**[!UICONTROL Instance folder]**&#x200B;字段中，选择保存基于此模板创建的Web窗体的文件夹。 **[!UICONTROL Nature]**&#x200B;字段允许您添加描述性信息以排序和/或筛选各种Web应用程序模板。
 
-![](assets/s_ncs_admin_survey_createtemplate_details.png)
+![包含“标签”、“调查”和“高级”网站选项、“性质”和“实例”文件夹字段的新Web应用程序对话框](assets/s_ncs_admin_survey_createtemplate_details.png)
 
 单击&#x200B;**[!UICONTROL Save]**&#x200B;按钮以创建模板，然后构建此模板的内容并定义其参数。
 

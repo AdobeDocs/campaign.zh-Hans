@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: f22ef7562e86372db4c5c05c04acd986d1c557fb
 workflow-type: tm+mt
-source-wordcount: '2947'
-ht-degree: 47%
+source-wordcount: '2990'
+ht-degree: 44%
 ---
 # Campaign安全最佳实践 {#ac-security}
 
@@ -82,7 +82,7 @@ Adobe Campaign目前不提供机器可读格式的推荐安全配置指南。 �
 
 ## 隐私
 
-要正确处理隐私和管理个人数据，请在适用于您运营地区的法规范围内开展工作。 Adobe Campaign的功能可帮助您遵守[此页面](../start/privacy.md)中列出的法规
+要正确处理隐私和管理个人数据，请在适用于您运营地区的法规范围内开展工作。 Adobe Campaign的功能可帮助您遵守[在Campaign中管理隐私请求](../start/privacy.md)中列出的法规
 
 ### Adobe Experience Cloud 隐私 {#experience-cloud-privacy}
 
@@ -98,7 +98,7 @@ Adobe Campaign 是 Adobe Experience Cloud 解决方案的一部分。 Campaign �
 
 * **如何使用 Adobe Experience Cloud 收集信息**
 
-  * Adobe Experience Cloud 解决方案使用 cookie 及网络信标（也称为标记或像素）之类的类似技术使您能够收集信息。 有关 Adobe Campaign 的 cookie 和跟踪功能的更多信息，请参阅[此部分](#tracking-capabilities)。
+  * Adobe Experience Cloud 解决方案使用 cookie 及网络信标（也称为标记或像素）之类的类似技术使您能够收集信息。 有关Adobe Campaign的Cookie和跟踪功能的详细信息，请参阅[跟踪功能](#tracking-capabilities)。
   * 您还可以在移动应用程序中使用 Adobe Experience Cloud 技术。 有关使用Campaign发送移动投放的详细信息，请参阅[短信渠道](../send/sms/sms-channel.md)和移动应用渠道。
 
 * **用户对您使用Adobe Experience Cloud的隐私选择**
@@ -142,7 +142,7 @@ Adobe Campaign 是 Adobe Experience Cloud 解决方案的一部分。 Campaign �
 
 * **Adobe Campaign** 是&#x200B;**数据处理者**。
 
-![](assets/privacy-gdpr-flow.png)
+![隐私请求流程： Laura发送请求，Anne查询Adobe Campaign，返回结果，然后Anne响应Laura](assets/privacy-gdpr-flow.png)
 
 以下是此用例的一般流程：
 
@@ -160,19 +160,19 @@ Adobe Campaign 是 Adobe Experience Cloud 解决方案的一部分。 Campaign �
 
 * 始终让收件人同意接收通信。 为此，请尽快保持遵守选择退出请求并通过双重选择加入流程来验证同意。 有关此内容的更多信息，请参阅[使用双重选择加入创建订阅表单](../dev/web/use-cases-web-forms.md)。
 * 请勿导入欺诈性列表，并使用种子地址确认您的客户端文件未被用于欺诈用途。 有关此内容的更多信息，请参阅[关于种子地址](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/using-seed-addresses/about-seed-addresses){target=_blank}。
-* 通过同意和权限管理，您可以跟踪收件人的偏好，以及管理组织内谁可以访问哪些数据。 有关更多信息，请参阅[此章节](#consent)。
-* 促进和管理收件人的隐私请求。 有关更多信息，请参阅[此章节](#privacy-requests)。
+* 通过同意和权限管理，您可以跟踪收件人的偏好，以及管理组织内谁可以访问哪些数据。 要获取与此有关的更多信息，请参阅[同意、保留和角色](#consent)。
+* 促进和管理收件人的隐私请求。 有关此内容的详细信息，请参阅[隐私请求](#privacy-requests)。
 
 ## 隐私管理 {#privacy-management}
 
 隐私管理是指可帮助您遵守隐私法规（GDPR、CCPA等）的所有流程和工具。
 
 Adobe Campaign 为您提供专门用于隐私管理的各种功能集：
-* 同意管理、数据保留和用户角色。 请参阅[此小节](#consent)。
-* 隐私请求（访问权和被遗忘权）。 请参阅[此小节](#privacy-requests)。
+* 同意管理、数据保留和用户角色。 请参阅[同意、保留和角色](#consent)。
+* 隐私请求（访问权和被遗忘权）。 请参阅[隐私请求](#privacy-requests)。
 * 选择退出个人信息销售（特定于 CCPA）
 
-[此部分](#personal-data)介绍了 Campaign 的主要隐私功能以及所涉及用户画像的示例。
+Campaign中的主要隐私功能以及所涉及角色的示例在[个人数据和角色](#personal-data)中介绍。
 
 ### 同意、保留和角色 {#consent}
 
@@ -190,9 +190,9 @@ Adobe Campaign 提供其他功能来促使您作为数据控制者为特定隐�
 
 * **被遗忘权**（删除请求）允许数据主体通过数据控制者擦除其个人数据。
 
-**访问**&#x200B;和&#x200B;**删除**&#x200B;请求将显示在[此部分](../start/privacy.md)中。
+**访问**&#x200B;和&#x200B;**删除**&#x200B;请求显示在Campaign的[管理隐私请求](../start/privacy.md)中。
 
-[此部分](../start/privacy.md)中详细描述了创建这些请求的实施步骤。
+创建这些请求的实施步骤详见[Campaign中的管理隐私请求](../start/privacy.md)。
 
 ## 跟踪功能 {#tracking-capabilities}
 
@@ -214,13 +214,13 @@ Adobe Campaign 提供其他功能来促使您作为数据控制者为特定隐�
 
 通过Adobe Campaign，您可以跟踪已发送的电子邮件和投放收件人的行为：打开、单击链接、取消订阅等。有关此内容的详细信息，请参阅[关于邮件](../start/gs-message.md)。
 
-为此，请在您的消息中添加跟踪链接，以便在投放仪表板的Tracking选项卡中衡量您的投放产生的影响以及投放对象的行为。 跟踪数据会在跟踪指标报告中得到说明。 若要了解有关跟踪的更多信息，请参阅[此页面](../send/tracking.md)。
+为此，请在您的消息中添加跟踪链接，以便在投放仪表板的Tracking选项卡中衡量您的投放产生的影响以及投放对象的行为。 跟踪数据会在跟踪指标报告中得到说明。 若要了解有关跟踪的更多信息，请参阅[开始邮件跟踪](../send/tracking.md)。
 
 ### Web 跟踪 {#web-tracking}
 
 >[!AVAILABILITY]
 >
->Web跟踪在Campaign v8中不可用。 在[此页面](../start/v7-to-v8.md#gs-unavailable-features)中了解有关不可用功能的详细信息。
+>Web跟踪在Campaign v8中不可用。 详细了解[不可用功能](../start/v7-to-v8.md#gs-unavailable-features)中的不可用功能。
 
 ## 数据和PII保护 {#data-and-pii-protection}
 
@@ -248,7 +248,7 @@ Adobe Campaign 提供其他功能来促使您作为数据控制者为特定隐�
 * **一致地使用产品配置文件** — 首选在Admin Console中将用户分配给产品配置文件（操作员组）；保持命名一致（例如`campaign - <instance> - <group>`）。 请参阅[权限入门](../start/gs-permissions.md)。
 * **控制面板访问权限** — 在Campaign v8中，名称包含“管理员”的产品配置文件或命名权限可授予对Campaign控制面板的访问权限。 避免在配置文件或组名称中使用“管理员”，除非这些用户应具有控制面板访问权限。
 
-可在[此部分](../start/gs-permissions.md)中详细了解权限。
+在[中了解有关权限的更多信息Campaign v8](../start/gs-permissions.md)中的权限入门。
 
 ## 身份验证和会话 {#authentication-and-session}
 
@@ -292,7 +292,7 @@ Adobe Campaign 提供其他功能来促使您作为数据控制者为特定隐�
 
 您必须确保低权限验证用户无法访问加密的密码。 要执行此操作，主要有两种方法：限制仅访问密码字段或访问整个实体。
 
-此限制允许您删除密码字段，但允许所有用户从界面访问外部帐户。 请参阅[此页面](../dev/restrict-pi-view.md)以了解详情。
+此限制允许您删除密码字段，但允许所有用户从界面访问外部帐户。 在[限制PI视图](../dev/restrict-pi-view.md)中了解详情。
 
 1. 前往&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**。
 
@@ -304,7 +304,7 @@ Adobe Campaign 提供其他功能来促使您作为数据控制者为特定隐�
 
    您可以通过以下方式替换主元素(`<element name="extAccount" ... >`)：
 
-   ```
+   ```xml
    <element name="extAccount">
        <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>
        <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="clientSecret"/>
@@ -325,7 +325,7 @@ Adobe Campaign 提供其他功能来促使您作为数据控制者为特定隐�
 
    因此，您的扩展srcSchema可能如下所示：
 
-   ```
+   ```xml
    <...>
        <element name="extAccount">
            <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>

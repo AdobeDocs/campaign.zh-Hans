@@ -26,10 +26,10 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 7%
+source-wordcount: '524'
+ht-degree: 6%
 ---
 # 选择短信投放的受众 {#sms-audience}
 
@@ -45,7 +45,7 @@ ht-degree: 7%
 
 1. 由于受众存储在Adobe Campaign数据库中，因此请在&#x200B;**[!UICONTROL Main target]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Defined in the database]**&#x200B;选项。
 
-   ![](assets/audience_to.png){zoomable="yes"}
+   ![选择“在数据库中定义”选项的Select目标对话框，从“收件人”链接打开](assets/audience_to.png){zoomable="yes"}
 
 1. 在下拉列表中选择&#x200B;**[!UICONTROL Target mapping]**。 Adobe Campaign默认目标映射为收件人，基于&#x200B;**[!UICONTROL nms:recipient]**&#x200B;架构。
 
@@ -55,7 +55,7 @@ ht-degree: 7%
 
    然后，您可以选择要应用的筛选类型：
 
-   ![](assets/audience_filters.png){zoomable="yes"}
+   ![Select目标元素对话框，其中列出了目标类型和用户筛选器以供选择](assets/audience_filters.png){zoomable="yes"}
 
    若要使用目标类型，请选择它并单击&#x200B;**[!UICONTROL Next]**&#x200B;按钮。
 
@@ -74,7 +74,7 @@ ht-degree: 7%
 
 1. 在标签字段中输入受众的名称，然后单击&#x200B;**[!UICONTROL Finish]**&#x200B;按钮以验证受众。
 
-   ![](assets/audience_finish.png){zoomable="yes"}
+   ![带有标签mobile的Target元素定义不为空，移动设备上的筛选条件和“完成”突出显示](assets/audience_finish.png){zoomable="yes"}
 
    再次单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮可根据需要添加任意数量的目标群体。 您也可以通过单击标签后面的十字来删除某些标签。
 
@@ -88,7 +88,7 @@ ht-degree: 7%
 
 1. 选择 **[!UICONTROL Defined in an external file]** 选项。
 
-   ![](assets/audience_externalfile.png){zoomable="yes"}
+   ![已选中“在外部文件中定义”选项且文件格式定义链接的Select目标对话框](assets/audience_externalfile.png){zoomable="yes"}
 
 1. 默认情况下，会在数据库中导入收件人。 在这种情况下，您需要选择&#x200B;**[!UICONTROL Target mapping]**。 有关目标映射的详细信息，请参阅[使用目标映射](../../audiences/target-mappings.md)。
 

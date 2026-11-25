@@ -24,16 +24,16 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 64aef99ddbae2debf7d5e637f9de43a19931be90
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '603'
 ht-degree: 4%
 ---
 # 事务性消息设置 {#mc-settings}
 
-事务性消息（消息中心）是用于管理触发消息的Campaign模块。 在[本节](../send/transactional.md)中了解有关事务性消息传递的更多信息。
+事务性消息（消息中心）是用于管理触发消息的Campaign模块。 在[Campaign事务性消息传递](../send/transactional.md)中了解有关事务性消息传递的更多信息。
 
-了解[此页面](../architecture/architecture.md#transac-msg-archi)中的事务性消息架构。
+了解[消息中心架构](../architecture/architecture.md#transac-msg-archi)中的事务性消息架构。
 
 
 >[!NOTE]

@@ -26,10 +26,10 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 2%
+source-wordcount: '1298'
+ht-degree: 1%
 ---
 # 窗体渲染{#form-rendering}
 
@@ -39,17 +39,17 @@ ht-degree: 2%
 
 利用表单设置，可选择用于生成页面的模板。 要访问它们，请单击表单详细信息工具栏中的&#x200B;**[!UICONTROL Properties]**&#x200B;按钮，然后选择&#x200B;**[!UICONTROL Rendering]**&#x200B;选项卡。 默认情况下，有许多模板（样式表）可用。
 
-![](assets/s_ncs_admin_survey_rendering_select.png)
+![表单属性呈现选项卡，模板列表处于打开状态，显示标准表单和主题1到主题7。](assets/s_ncs_admin_survey_rendering_select.png)
 
 该编辑器的底部部分允许您查看所选模板的渲染。
 
 缩放功能允许您编辑选定的模板。
 
-![](assets/s_ncs_admin_survey_render_edit.png)
+![包含页面布局链接和CSS设置的表单生成模板主题5对话框。](assets/s_ncs_admin_survey_render_edit.png)
 
 您可以修改或覆盖这些模板。 为此，请单击&#x200B;**[!UICONTROL Page layout...]**&#x200B;链接并个性化信息。
 
-![](assets/s_ncs_admin_survey_render_edit_param.png)
+![页面布局对话框，“属性”选项卡，带有徽标图像、宽度和高度以及预览图像路径。](assets/s_ncs_admin_survey_render_edit_param.png)
 
 您可以：
 
@@ -58,19 +58,19 @@ ht-degree: 2%
 
 **[!UICONTROL Headers/Footers]**&#x200B;选项卡允许您使用此模板更改每个表单页面页眉和页脚中显示的信息。
 
-![](assets/s_ncs_admin_survey_render_edit_header.png)
+![页面布局对话框，“页眉/页脚”选项卡，具有页眉、页脚行和位置字段。](assets/s_ncs_admin_survey_render_edit_header.png)
 
 **[!UICONTROL Page headers]**&#x200B;和&#x200B;**[!UICONTROL Page footers]**&#x200B;部分的每一行都对应于HTML页面中的一行。 单击&#x200B;**[!UICONTROL Add]**&#x200B;以创建新行。
 
 选择现有行并单击&#x200B;**[!UICONTROL Detail]**&#x200B;按钮对其进行个性化。
 
-![](assets/s_ncs_admin_survey_render_edit_header_detail.png)
+![包含页面布局、边框和字体选项卡以及左右区域内容的页眉详细信息对话框。](assets/s_ncs_admin_survey_render_edit_header_detail.png)
 
 您可以通过相关选项卡更改线条内容、添加边框和更改字体属性。 单击&#x200B;**[!UICONTROL OK]**&#x200B;以确认这些更改。
 
 **[!UICONTROL Position]**&#x200B;字段允许您定义页眉和页脚中元素的位置。
 
-![](assets/s_ncs_admin_survey_render_edit_header_position.png)
+![页眉/页脚选项卡，页眉和页脚的位置列表为页眉和页脚，提供“隐藏”、“页外”、“在页面中”。](assets/s_ncs_admin_survey_render_edit_header_position.png)
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ ht-degree: 2%
 
 为此，请使用&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡。
 
-![](assets/s_ncs_admin_survey_advanced_tab.png)
+![具有显示设置（如单元格数和垂直对齐）的表单元素的“高级”选项卡。](assets/s_ncs_admin_survey_advanced_tab.png)
 
 它允许您定义以下属性：
 
@@ -98,7 +98,7 @@ ht-degree: 2%
 * **[!UICONTROL Lines]**： **[!UICONTROL Multi-line text]**&#x200B;类型区域的行数，
 * **[!UICONTROL Style inline]**：允许您使用其他设置重载CSS样式表。 这些字符使用&#x200B;**；**&#x200B;字符分隔，如以下示例所示：
 
-  ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
+  ![高级选项卡，“样式”内联值设置为font-size：16pt； background： blue.](assets/s_ncs_admin_survey_advanced_tab_inline.png)
 
 ### 定义页眉和页脚 {#defining-headers-and-footers}
 
@@ -106,7 +106,7 @@ ht-degree: 2%
 
 必须在表单属性窗口的&#x200B;**[!UICONTROL Page]**&#x200B;选项卡中输入窗口标题。 您还可以向页眉和页脚添加设置的内容（此信息将显示在每个页面上）。 此内容输入到&#x200B;**[!UICONTROL Texts]**&#x200B;选项卡的匹配部分中，如下所示：
 
-![](assets/s_ncs_admin_survey_titles_config.png)
+![表单属性页选项卡，带有窗口标题、页眉和页脚内容。](assets/s_ncs_admin_survey_titles_config.png)
 
 ### 向HTML标题添加元素 {#adding-elements-to-html-header}
 
@@ -114,7 +114,7 @@ ht-degree: 2%
 
 这允许您引用将显示在页面标题栏中的图标，例如。
 
-![](assets/webform_header_page_tab.png)
+![带有快捷方式图标链接元素的“页眉”选项卡已添加到HTML页眉。](assets/webform_header_page_tab.png)
 
 ## 定义控制设置 {#defining-control-settings}
 
@@ -124,19 +124,19 @@ ht-degree: 2%
 
 要将某些字段设为必填字段，请在创建字段时选择此选项。
 
-![](assets/s_ncs_admin_survey_required_field.png)
+![针对“姓氏”字段选中了“必填”选项的“字段常规”选项卡。](assets/s_ncs_admin_survey_required_field.png)
 
 如果用户未输入字段即批准此页面，则将显示以下消息：
 
-![](assets/s_ncs_admin_survey_required_default_msg.png)
+![显示默认错误消息字段“姓氏”的表单页面是必填的，空字段突出显示。](assets/s_ncs_admin_survey_required_default_msg.png)
 
 您可以通过单击&#x200B;**[!UICONTROL Personalize this message]**&#x200B;链接将此邮件个性化。
 
-![](assets/s_ncs_admin_survey_required_custom_msg.png)
+![从“使用空必填字段的自定义文本对邮件进行个性化”中打开了邮件个性化对话框。](assets/s_ncs_admin_survey_required_custom_msg.png)
 
 如果用户未输入字段即批准此页面，则将显示以下消息：
 
-![](assets/s_ncs_admin_survey_required_custom_msg2.png)
+![表单页面在突出显示的空字段上方显示自定义必填字段消息。](assets/s_ncs_admin_survey_required_custom_msg2.png)
 
 ### 检查数据格式 {#checking-data-format}
 
@@ -146,7 +146,7 @@ ht-degree: 2%
 
 例如，如果创建&#x200B;**[!UICONTROL Number]**&#x200B;检查以存储客户端编号，如下所示：
 
-![](assets/s_ncs_admin_survey_choose_format.png)
+![Number type字段将其值存储在客户端变量中，“存储”和“编辑”分支对话框显示Integer类型。](assets/s_ncs_admin_survey_choose_format.png)
 
 用户必须在表单字段中输入整数。
 
@@ -156,13 +156,13 @@ ht-degree: 2%
 
 对于页面的每个元素，**[!UICONTROL Visibility]**&#x200B;部分允许您定义显示条件。
 
-![](assets/s_ncs_admin_survey_condition_edit.png)
+![包含“可见性编辑”链接的“容器常规”选项卡，用于打开“可见性条件”对话框。](assets/s_ncs_admin_survey_condition_edit.png)
 
 条件可能与数据库字段或变量的值有关。
 
 在字段选择窗口中，可以从以下数据中选择：
 
-![](assets/s_ncs_admin_survey_condition_select.png)
+![Select显示上下文树的字段对话框，其中包含“标识符”、“语言”、“来源”、“收件人”和“变量”。](assets/s_ncs_admin_survey_condition_select.png)
 
 * 主树包含表单上下文的参数。 默认参数是Identifier（与收件人的加密标识符匹配）、Language和Origin。
 
@@ -186,11 +186,11 @@ ht-degree: 2%
 
 1. 编辑要向其中插入一个或多个元素的页面，然后单击工具栏中的&#x200B;**[!UICONTROL Import an existing block]**。
 
-   ![](assets/s_ncs_admin_survey_import_block.png)
+   ![突出显示导入现有块按钮的页面编辑器工具栏。](assets/s_ncs_admin_survey_import_block.png)
 
 1. 选择包含要导入的字段的Web窗体，然后选择要导入的容器和字段。
 
-   ![](assets/s_ncs_admin_survey_import_block_selection.png)
+   ![导入现有块对话框，其中包含源Web应用程序和要导入的块已选中。](assets/s_ncs_admin_survey_import_block_selection.png)
 
    >[!NOTE]
    >
@@ -198,4 +198,4 @@ ht-degree: 2%
 
 1. 单击&#x200B;**[!UICONTROL Ok]**&#x200B;确认插入。
 
-   ![](assets/s_ncs_admin_survey_import_block_rendering.png)
+   导入后![页面树，现在包含姓氏、国家/地区、帐户号和电子邮件字段。](assets/s_ncs_admin_survey_import_block_rendering.png)

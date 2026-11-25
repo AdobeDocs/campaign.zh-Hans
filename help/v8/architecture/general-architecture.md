@@ -50,9 +50,9 @@ topic_v2:
     internal-label: Personalization
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '1180'
 ht-degree: 7%
 ---
 # 一般架构{#general-architecture}
@@ -128,7 +128,7 @@ Adobe Campaign是一个使用不同应用程序的平台，用于创建开放且
 
 您可以使用预定义的数据库和架构部署Adobe Campaign，如果需要，可以扩展此预定义的环境。 Adobe Campaign通过SQL调用访问数据集市中的所有数据。 Adobe Campaign还提供了提取转换和加载(ETL)工具的完整补充，用于执行数据导入和导出到系统中的数据。
 
-![](assets/data-flow-diagram.png)
+![客户端计算机、具有跟踪和MTA的前端服务器、应用程序服务器、数据库、退回邮箱之间的流量](assets/data-flow-diagram.png)
 
 
 >[!CAUTION]

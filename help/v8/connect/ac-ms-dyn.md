@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: df8d8e17c486122e23a6db0e44263f9f9632a204
 workflow-type: tm+mt
-source-wordcount: '1432'
+source-wordcount: '1472'
 ht-degree: 2%
 ---
 # 使用Campaign和Microsoft Dynamics 365{#crm-ms-dynamics}
@@ -102,7 +102,7 @@ ht-degree: 2%
 
 例如：
 
-```
+```bash
 - openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout '<'private key name'>' -out '<'public certificate name'>
 ```
 
@@ -173,7 +173,7 @@ ht-degree: 2%
 1. 在&#x200B;**类型**&#x200B;部分中选择&#x200B;**[!UICONTROL Microsoft Dynamics CRM]**&#x200B;外部帐户。
 1. 在&#x200B;**[!UICONTROL CRM O-Auth type]**&#x200B;下拉列表中Select身份验证方法。
 
-   ![](assets/ms-dyn-external-account.png)
+   ![Microsoft Dynamics CRM外部帐户，具有服务器、帐户、CRM O-Auth类型、密码和CRM版本](assets/ms-dyn-external-account.png)
 
    1. 要将Microsoft Dynamics CRM外部帐户配置为使用&#x200B;**密码凭据**&#x200B;与Adobe Campaign连接，请提供以下详细信息：
 
@@ -186,10 +186,10 @@ ht-degree: 2%
    1. 要将Microsoft Dynamics CRM外部帐户配置为使用&#x200B;**证书**&#x200B;与Adobe Campaign连接，请提供以下详细信息：
 
       * **服务器**： Microsoft CRM服务器的URL。 要查找您的Microsoft CRM服务器URL，请访问您的Microsoft Dynamics CRM帐户，然后单击Dynamics 365并选择您的应用程序。 然后，您可以在浏览器的地址栏中找到服务器URL，例如https://myserver.crm.dynamics.com/。
-      * **私钥**：复制/粘贴私钥，以base64编码，如[此部分](#config-certificate-key-id)中所述。
-      * **密钥ID**：在应用程序的&#x200B;**清单**&#x200B;选项卡中可用的密钥，如[此部分](#config-certificate-key-id)中所述。
-      * **自定义密钥标识符**：在应用程序的&#x200B;**清单**&#x200B;选项卡中可用的标识符，如[此部分](#config-certificate-key-id)中所述。
-      * **客户端标识符**：可以从Microsoft Azure管理门户找到的应用程序（客户端）ID，如[此部分](#get-client-id-microsoft)中所述。
+      * **私钥**：复制/粘贴私钥，其编码为base64，如[生成Microsoft Dynamics证书密钥标识符和密钥ID](#config-certificate-key-id)中所述。
+      * **密钥ID**：在应用程序的&#x200B;**清单**&#x200B;选项卡中可用的密钥，如[生成Microsoft Dynamics证书密钥标识符和密钥ID](#config-certificate-key-id)中所述。
+      * **自定义密钥标识符**：在应用程序的&#x200B;**清单**&#x200B;选项卡中可用的标识符，如[生成Microsoft Dynamics证书密钥标识符和密钥ID](#config-certificate-key-id)中所述。
+      * **客户端标识符**：可以从Microsoft Azure管理门户找到的应用程序（客户端）ID，如[获取Dynamics 365客户端ID](#get-client-id-microsoft)中所述。
       * **CRM版本**：选择Dynamics CRM 365 CRM版本。
 
 1. 选择&#x200B;**启用**&#x200B;选项以在Campaign中激活帐户。

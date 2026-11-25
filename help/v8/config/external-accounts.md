@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d84cdb408568bebaf60d85c2d0cdd08c569afc06
+source-git-commit: f22ef7562e86372db4c5c05c04acd986d1c557fb
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2303'
 ht-degree: 1%
 ---
 # 配置外部帐户 {#config-external-accounts}
@@ -47,7 +47,7 @@ Adobe Campaign提供了一组预定义的外部帐户。 要设置与外部系�
 
 您可以从Adobe Campaign **[!UICONTROL Explorer]**&#x200B;访问外部帐户：浏览到&#x200B;**[!UICONTROL Administration]** `>` **[!UICONTROL Platform]** `>` **[!UICONTROL External accounts]**。
 
-![](assets/external-accounts.png)
+![外部帐户列在“管理”>“平台”下，在“常规”选项卡上打开Android路由帐户](assets/external-accounts.png)
 
 
 >[!CAUTION]
@@ -65,14 +65,14 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
 >[!NOTE]
 >
->从Campaign v8.3开始，提供了适用于POP3功能的Microsoft Exchange Online OAuth 2.0身份验证。 要检查您的版本，请参阅[此部分](../start/compatibility-matrix.md)。
+>从Campaign v8.3开始，提供了适用于POP3功能的Microsoft Exchange Online OAuth 2.0身份验证。 要检查您的版本，请参阅[Campaign v8兼容性矩阵](../start/compatibility-matrix.md)。
 >
 
 **退回邮件**&#x200B;外部帐户指定要用于连接到电子邮件服务的外部POP3帐户。 所有配置为POP3访问的服务器都可以接收回邮。
 
 在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=zh-Hans){target="_blank"}中了解有关入站电子邮件的更多信息。
 
-![](assets/bounce_external_1.png)
+![包含服务器、端口、帐户、密码、加密和函数字段的退回邮件(POP3)外部帐户](assets/bounce_external_1.png)
 
 要配置&#x200B;**[!UICONTROL Bounce mails (defaultPopAccount)]**&#x200B;外部帐户：
 
@@ -88,7 +88,7 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
 * **[!UICONTROL Function]** — 入站电子邮件或SOAP路由器。
 
-![](assets/bounce_external_2.png)
+![已选中Microsoft OAuth 2.0并退回邮件外部帐户，其中显示了Azure租户、客户端ID、密码和URL字段](assets/bounce_external_2.png)
 
 >[!CAUTION]
 >
@@ -111,17 +111,17 @@ Adobe Campaign使用以下技术帐户来启用和执行特定流程。
 
 **[!UICONTROL Routing]**&#x200B;外部帐户允许您根据安装的包配置Adobe Campaign中可用的每个渠道。
 
-在[本节](../architecture/architecture.md#split)中了解有关外部帐户管理和投放执行的更多信息。
+了解有关[拆分投放执行](../architecture/architecture.md#split)中的外部帐户管理和投放执行的更多信息。
 
 ### 执行实例 {#execution-instance}
 
-在事务型消息传递的上下文中，执行实例与控制实例链接并连接它们。 将事务性消息模板部署到执行实例。 在[此页面](../architecture/architecture.md#transac-msg-archi)中了解有关消息中心架构的更多信息。
+在事务型消息传递的上下文中，执行实例与控制实例链接并连接它们。 将事务性消息模板部署到执行实例。 在[消息中心架构](../architecture/architecture.md#transac-msg-archi)中了解有关消息中心架构的更多信息。
 
 ## 访问外部系统外部帐户 {#external-syst-external-accounts}
 
 ### 联合数据访问 (FDA) {#fda-external-accounts}
 
-**外部数据库**&#x200B;类型的外部帐户用于通过联合数据访问(FDA)连接到外部数据库。 在[本节](../connect/fda.md)中了解联合数据访问(FDA)选项的更多信息。
+**外部数据库**&#x200B;类型的外部帐户用于通过联合数据访问(FDA)连接到外部数据库。 了解有关[使用Campaign和外部数据库(FDA)](../connect/fda.md)中的联合数据访问(FDA)选项的更多信息。
 
 >[!NOTE]
 >
@@ -182,7 +182,7 @@ Snowflake FDA连接使用Snowflake ODBC驱动程序。 从Campaign v8.9.1开始�
 
 1. 然后，您可以使用以下代码查询客户端ID和客户端密钥：
 
-   ```
+   ```sql
    select system$show_oauth_client_secrets('OAUTH_INTEGRATION_ABC'); // use uppercase letters
    ```
 
@@ -204,22 +204,22 @@ Snowflake FDA连接使用Snowflake ODBC驱动程序。 从Campaign v8.9.1开始�
 
 ### X（以前称为Twitter） {#twitter-external-account}
 
-**Twitter**&#x200B;类型外部帐户用于将Campaign连接到您的X帐户，以代表您发布消息。 在[本节](../connect/ac-tw.md)中了解有关X集成的更多信息。
+**Twitter**&#x200B;类型外部帐户用于将Campaign连接到您的X帐户，以代表您发布消息。 了解有关[使用Campaign和X (Twitter)](../connect/ac-tw.md)中的X集成的更多信息。
 
 ## Adobe解决方案集成外部帐户 {#adobe-integration-external-accounts}
 
-* **Adobe Experience Cloud** - **[!UICONTROL Adobe Experience Cloud]**&#x200B;外部帐户用于实施Adobe Identity Management服务(IMS)以连接到Adobe Campaign。 在[此部分](../start/connect.md#logon-to-ac)中了解有关Adobe Identity Management服务(IMS)的更多信息。
+* **Adobe Experience Cloud** - **[!UICONTROL Adobe Experience Cloud]**&#x200B;外部帐户用于实施Adobe Identity Management服务(IMS)以连接到Adobe Campaign。 在[登录Adobe Identity Management](../start/connect.md#logon-to-ac)中了解有关Adobe Campaign服务(IMS)的更多信息。
 
-* **网站分析** - **[!UICONTROL Web Analytics (Adobe Analytics)]**&#x200B;外部帐户用于配置从Adobe Analytics到Adobe Campaign的数据传输。 在[此页面](../connect/ac-aa.md)中了解有关Adobe Campaign - Adobe Analytics集成的更多信息。
+* **网站分析** - **[!UICONTROL Web Analytics (Adobe Analytics)]**&#x200B;外部帐户用于配置从Adobe Analytics到Adobe Campaign的数据传输。 详细了解[使用Campaign和Adobe Analytics](../connect/ac-aa.md)中的Adobe Campaign - Adobe Analytics集成。
 
-* **Adobe Experience Manager** - **[!UICONTROL AEM]**&#x200B;外部帐户允许您直接在Adobe Experience Manager中管理电子邮件投放的内容以及表单。 在[此页面](../connect/ac-aem.md)中了解有关Adobe Campaign - Adobe Experience Manager集成的更多信息。
+* **Adobe Experience Manager** - **[!UICONTROL AEM]**&#x200B;外部帐户允许您直接在Adobe Experience Manager中管理电子邮件投放的内容以及表单。 详细了解[使用Campaign和Adobe Experience Manager](../connect/ac-aem.md)中的Adobe Campaign - Adobe Experience Manager集成。
 
 
 ## CRM连接器外部帐户 {#crm-external-accounts}
 
-* **Microsoft Dynamics CRM** - **[!UICONTROL Microsoft Dynamics CRM]**&#x200B;外部帐户允许您将Microsoft Dynamics数据导入和导出到Adobe Campaign。 在[本页](../connect/ac-ms-dyn.md)中了解有关Adobe Campaign - Microsoft Dynamics CRM集成的更多信息。
+* **Microsoft Dynamics CRM** - **[!UICONTROL Microsoft Dynamics CRM]**&#x200B;外部帐户允许您将Microsoft Dynamics数据导入和导出到Adobe Campaign。 详细了解[使用Campaign和Microsoft Dynamics](../connect/ac-ms-dyn.md)中的Microsoft Dynamics - Adobe Campaign CRM集成。
 
-* **Salesforce.com** - **[!UICONTROL Salesforce CRM]**&#x200B;外部帐户允许您将Salesforce数据导入和导出到Adobe Campaign。 在[此页面](../connect/ac-sfdc.md)中了解有关Adobe Campaign - Salesforce.com CRM集成的更多信息。
+* **Salesforce.com** - **[!UICONTROL Salesforce CRM]**&#x200B;外部帐户允许您将Salesforce数据导入和导出到Adobe Campaign。 详细了解Adobe Campaign - Salesforce.com [使用Campaign和SFDC](../connect/ac-sfdc.md)中的CRM集成。
 
 ## 传输数据外部帐户 {#transfer-data-external-accounts}
 

@@ -28,9 +28,9 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '532'
 ht-degree: 1%
 ---
 # 自定义表情符号列表 {#customize-emoticons}
@@ -55,7 +55,7 @@ ht-degree: 1%
    >
    >现成的枚举只能由Adobe Campaign Classic控制台的管理员管理。
 
-   ![](assets/emoticon_1.png)
+   ![选择了管理、平台和明细列表，并突出显示表情符号列表明细列表的](assets/emoticon_1.png)
 
 1. 单击 **[!UICONTROL Add]**。
 
@@ -66,7 +66,7 @@ ht-degree: 1%
 
    * **[!UICONTROL Label]**：您新表情符号的标签。
 
-   ![](assets/emoticon_5.png)
+   ![包含新表情符号的U+代码和标签字段的枚举值对话框](assets/emoticon_5.png)
 
 1. 配置完成后，单击&#x200B;**[!UICONTROL Ok]**，然后单击&#x200B;**[!UICONTROL Save]**。
 你的新表情符号会自动放在商店里。
@@ -77,7 +77,7 @@ ht-degree: 1%
 
    <br>在本例中，我们选择了显示订单号61，这意味着如果某个条目已具有此订单，则它会自动移至商店，并且我们的新条目将在枚举列表中占据其位置。
 
-   ![](assets/emoticon_2.png)
+   ![枚举值对话框，U+代码、标签和显示顺序字段设置为61](assets/emoticon_2.png)
 
 1. 您的新表情符号现已添加到&#x200B;**[!UICONTROL Insert emoticon list]**&#x200B;现成枚举。 您可以随时更改其&#x200B;**[!UICONTROL Display order]**，如果不再需要它，可将其移至商店。
 
@@ -85,8 +85,8 @@ ht-degree: 1%
 
 1. 现在，您可以在投放的第61个位置的&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;弹出窗口中找到新表情符号，如前面的步骤中所配置。 有关如何在投放中使用表情符号的更多信息，请参阅此[部分](defining-the-email-content.md#inserting-emoticons)。
 
-   ![](assets/emoticon_4.png)
+   ![插入表情符号弹出窗口，其中新表情符号已添加到最后一个位置](assets/emoticon_4.png)
 
 1. 如果&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;弹出窗口中显示以下表情符号，则表示未正确配置这些表情符号。 检查&#x200B;**[!UICONTROL Emoticon list]**&#x200B;中您的&#x200B;**[!UICONTROL U+]**&#x200B;代码或&#x200B;**[!UICONTROL Display order]**&#x200B;是否正确。
 
-   ![](assets/emoticon_6.png)
+   ![插入带有两个红色十字图标的表情符号弹出窗口，标记配置错误的表情符号](assets/emoticon_6.png)

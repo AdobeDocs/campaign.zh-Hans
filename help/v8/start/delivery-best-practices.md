@@ -43,9 +43,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d027f76f86f34524ddf5b620de32cdcc98e60d21
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '3162'
+source-wordcount: '3182'
 ht-degree: 2%
 ---
 # 投放最佳实践 {#delivery-best-practices}
@@ -60,7 +60,7 @@ ht-degree: 2%
 
 以下几个因素可能会直接影响服务器性能并拖慢Campaign平台的运行速度：
 
-* [个性化](../send/personalize.md)元素的数量和类型：电子邮件中的个性化会从数据库中提取每个收件人的数据。 对于许多个性化元素，准备投放所需的数据量会更高。 这会降低平台的运行速度。 在[本节](../send/personalize.md#perso-guardrails)中了解有关个性化护栏的更多信息。
+* [个性化](../send/personalize.md)元素的数量和类型：电子邮件中的个性化会从数据库中提取每个收件人的数据。 对于许多个性化元素，准备投放所需的数据量会更高。 这会降低平台的运行速度。 在[护栏和推荐](../send/personalize.md#perso-guardrails)中了解有关个性化护栏的更多信息。
 
 * 服务器负载：当营销服务器同时处理多个不同的任务时，可能会降低性能。 营销服务器需要协调所有投放的所有传入和传出数据，以确保数据正确且及时。
 要避免这种情况，请与团队的其他成员协调投放计划，以确保最佳性能。
@@ -143,7 +143,7 @@ Adobe Campaign会根据返回的错误类型管理错误地址。 [了解有关�
 
 ### 设置对照组 {#set-up-control-group}
 
-发送投放后，您可以将排除的收件人的行为与接收投放的收件人的行为进行比较。 然后，您可以衡量营销活动的效率。 在[本节](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group)中了解有关控制组的更多信息。
+发送投放后，您可以将排除的收件人的行为与接收投放的收件人的行为进行比较。 然后，您可以衡量营销活动的效率。 在[添加控制组](../../automation/campaigns/marketing-campaign-target.md#add-a-control-group)中了解有关控制组的更多信息。
 
 ### 使用类型应用过滤器或控制规则 {#create-typologies}
 
@@ -153,13 +153,13 @@ Adobe Campaign会根据返回的错误类型管理错误地址。 [了解有关�
 
 例如，为了更好地控制出站流量，您可以通过定义每个子域的一个关联并为每个关联创建一个类型来定义可以使用的IP地址。 相关性在实例的配置文件中定义。 联系Adobe Campaign管理员。
 
-有关类型的详细信息，请参阅[此部分](../../automation/campaign-opt/campaign-typologies.md)。
+有关类型的详细信息，请参阅[开始使用营销活动类型](../../automation/campaign-opt/campaign-typologies.md)。
 
 ## 优化您的内容 {#optimize-content}
 
 ### 生成个性化内容 {#perso-content}
 
-要个性化您的消息，您可以使用存储在数据库中的收件人数据，或通过跟踪、登陆页面、订阅等收集的数据。[本节](../send/personalize.md)中介绍了Personalization的基础知识。
+要个性化您的消息，您可以使用存储在数据库中的收件人数据，或通过跟踪、登陆页面、订阅等收集的数据。Personalization基础知识在[个性化入门](../send/personalize.md)中介绍。
 
 +++ **阅读一些最佳实践**
 
@@ -171,9 +171,9 @@ Adobe Campaign会根据返回的错误类型管理错误地址。 [了解有关�
   %>
   &grave;&grave;
 
-  有关个性化块的更多信息，请参阅[此章节](../send/personalization-blocks.md)。
+  有关个性化块的详细信息，请参阅[使用个性化块](../send/personalization-blocks.md)。
 
-* 准备个性化数据 — 您可以在工作流中准备个性化数据，以改进投放准备分析。 如果个性化数据来自通过联合数据访问(FDA)的外部表，则尤其应使用此字段。 [此部分](../send/personalization-data.md#optimize-personalization)中介绍了此选项
+* 准备个性化数据 — 您可以在工作流中准备个性化数据，以改进投放准备分析。 如果个性化数据来自通过联合数据访问(FDA)的外部表，则尤其应使用此字段。 在[优化个性化](../send/personalization-data.md#optimize-personalization)中描述了此选项
 +++
 
 ### 构建优化内容 {#build-optimized-content}
@@ -215,7 +215,7 @@ Adobe Campaign会根据返回的错误类型管理错误地址。 [了解有关�
 
 ### 镜像页面 {#mirror-page-check}
 
-始终包含镜像页面链接。 首选位置位于电子邮件的顶部。 在[此页面](../send/mirror-page.md)中了解有关镜像页面的更多信息
+始终包含镜像页面链接。 首选位置位于电子邮件的顶部。 在[中添加指向镜像页面的链接](../send/mirror-page.md)中了解有关镜像页面的更多信息
 
 ### 退订链接 {#unsub-link-check}
 
@@ -320,7 +320,7 @@ Adobe建议预览您的消息以检查其个性化设置以及收件人如何看
 
 ## 定义正确的受众 {#define-the-right-audience}
 
-目标群体是关键：仔细构建列表，在常用的电子邮件客户端和移动设备上测试电子邮件，并确保电子邮件列表是最新的（不含未知或过时的地址）。 您还可以发送校样来帮助设置完整的验证周期。 在[此章节](../audiences/gs-audiences.md)中详细了解受众。
+目标群体是关键：仔细构建列表，在常用的电子邮件客户端和移动设备上测试电子邮件，并确保电子邮件列表是最新的（不含未知或过时的地址）。 您还可以发送校样来帮助设置完整的验证周期。 在[中了解有关受众的更多信息在Campaign](../audiences/gs-audiences.md)中开始使用用户档案和受众。
 
 ### 定位正确的受众 {#target-the-right-audience}
 

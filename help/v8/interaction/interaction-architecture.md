@@ -25,9 +25,9 @@ level_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1417'
 ht-degree: 0%
 ---
 # 了解Campaign交互环境和架构
@@ -57,7 +57,7 @@ Adobe Campaign交互模块提出了两种类型的交互：
 
 一旦能够或必须提供选件（根据执行的配置），选件引擎就会充当中介角色：它通过组合接收到的有关联系人的数据和可在应用程序中应用的不同规则，自动计算可用联系人中可能的最佳选件。
 
-![](assets/architecture_interaction2.png)
+![优惠引擎流程：出站批量投放，已识别与其目录的统一和匿名统一交互](assets/architecture_interaction2.png)
 
 ## 分布式架构
 
@@ -66,7 +66,7 @@ Adobe Campaign交互模块提出了两种类型的交互：
 * 一个或多个专用于出站渠道并包含营销和环境设计基础的控制实例
 * 专用于入站渠道的一个或多个执行实例
 
-![](assets/interaction_powerbooster_schema.png)
+![控制实例将设计选件部署到实时环境，并将包发送到发布到网站的执行实例](assets/interaction_powerbooster_schema.png)
 
 执行实例专用于入站渠道，并包含目录的在线版本。 每个执行实例都是独立的，并且专用于一个联系区段（例如，每个国家/地区一个执行实例）。 对选件引擎的调用必须在执行上直接执行（每个执行实例一个特定URL）。 由于实例之间的同步不是自动的，来自同一联系人的交互必须通过同一实例发送。
 
@@ -82,7 +82,7 @@ Adobe Campaign交互模块提出了两种类型的交互：
 
 在所有联机实例上，将禁用在设计环境中删除的选件。 在清除时段（在每个实例的部署助理中指定）和滑动时段（在传入命题的类型规则中指定）之后，所有实例上都会自动删除过时的命题和选件。
 
-![](assets/interaction_powerbooster_schema2.png)
+![在控制实例和每个执行实例之间双向同步的优惠建议](assets/interaction_powerbooster_schema2.png)
 
 将为每个环境和外部帐户创建工作流，以进行建议同步。 可以为每个环境和外部帐户调整同步频率。
 
@@ -110,7 +110,7 @@ Adobe Campaign交互模块提出了两种类型的交互：
 
 1. 为每个执行实例创建一个外部帐户：
 
-   ![](assets/interaction_powerbooster1.png)
+   ![具有已启用、连接、消息中心和交互选项的执行实例的外部帐户表单](assets/interaction_powerbooster1.png)
 
    * 填写标签并添加一个简短且明确的内部名称。
    * 选择 **[!UICONTROL Execution instance]**。
@@ -131,7 +131,7 @@ Adobe Campaign交互模块提出了两种类型的交互：
 
 1. 配置环境：
 
-   ![](assets/interaction_powerbooster2.png)
+   ![环境常规选项卡按国家/地区列出具有更新频率和建议筛选的执行实例](assets/interaction_powerbooster2.png)
 
    * 添加执行实例列表。
    * 对于每个事件，指定同步周期和过滤条件（例如，按国家/地区）。
@@ -142,7 +142,7 @@ Adobe Campaign交互模块提出了两种类型的交互：
 
 如果出于优化原因，在执行实例上仅复制部分营销数据库，则可以指定链接到环境的受限架构，以允许用户仅使用执行实例上可用的数据。 您可以使用执行实例上不可用的数据创建选件。 为此，您必须通过在出站频道（**[!UICONTROL Taken into account if]**&#x200B;字段）上限制此规则，在其他频道上取消激活该规则。
 
-![](assets/ita_filtering.png)
+![在国家/地区中填充项目筛选器以及渠道的Taken into account if字段](assets/ita_filtering.png)
 
 ### 维护选项 {#maintenance-options}
 

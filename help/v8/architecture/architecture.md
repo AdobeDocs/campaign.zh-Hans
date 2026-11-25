@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 10%
+source-wordcount: '1166'
+ht-degree: 9%
 ---
 # Campaign架构快速入门{#gs-ac-archi}
 
@@ -62,7 +62,7 @@ Campaign可用作单个实例，每个实例代表一个完整的Campaign环境�
 在其[FDA部署](fda-deployment.md)中，[!DNL Adobe Campaign] v8可以连接到[!DNL Snowflake]以通过联合数据访问功能访问数据：您可以访问和处理存储在[!DNL Snowflake]数据库中的外部数据和信息，而无需更改Adobe Campaign数据的结构。 PostgreSQL是主数据库，您可以将Snowflake用作辅助数据库，以扩展数据模型并将数据存储到Snowflake中。 随后，您可以对具有出色性能的大型数据集运行ETL、分段和报告。
 
 
-![](assets/P1-P3-architecture.png){zoomable="yes"}
+![Campaign v8 FDA架构：应用程序服务器、Postgres和Snowflake数据库、实时和批量投放服务器](assets/P1-P3-architecture.png){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ Campaign可用作单个实例，每个实例代表一个完整的Campaign环境�
 
 Campaign v8 企业版引入了&#x200B;**完全联合数据访问** (FFDA) 概念：所有数据现在都位于云数据库上的远程位置。 凭借这种新架构，Campaign v8 企业版 (FFDA) 部署简化了数据管理：云数据库上不需要索引。 您只需创建表格、复制数据即可开始。 云数据库技术无需特定的维护来保证性能级别。
 
-![](assets/P4-architecture.png){zoomable="yes"}
+![Campaign v8 FFDA架构：应用程序服务器、具有Snowflake的云数据库、Postgres复制、投放服务器](assets/P4-architecture.png){zoomable="yes"}
 
 
 ## 拆分投放执行 {#split}
@@ -97,7 +97,7 @@ Campaign v8 企业版引入了&#x200B;**完全联合数据访问** (FFDA) 概念
 * 拆分提交 — iOS (splitDeliveryIOS)
 * 拆分交付 — Android (splitDeliveryAndroid)
 
-![](assets/splitted-delivery.png)
+![外部帐户拆分投放 — 电子邮件：路由类型、电子邮件渠道、中间源投放模式、名称splitDeliveryEmail](assets/splitted-delivery.png)
 
 >[!IMPORTANT]
 >
@@ -109,11 +109,11 @@ Campaign v8 企业版引入了&#x200B;**完全联合数据访问** (FFDA) 概念
 
 1. 导航到&#x200B;**[!UICONTROL Resources]** / **[!UICONTROL Templates]** / **[!UICONTROL Delivery templates]**&#x200B;文件夹，然后打开所需的投放模板。 在本例中，我们要编辑电子邮件投放模板。
 
-   ![](assets/split-default-list.png)
+   ![资源、模板中的投放模板列表，已选择电子邮件投放模板（邮件）](assets/split-default-list.png)
 
 1. 单击&#x200B;**[!UICONTROL Properties]**&#x200B;按钮并将路由提供程序更改为相应的拆分投放外部帐户。
 
-   ![](assets/split-default-delivery.png)
+   ![传递属性对话框，其中包含“路由”字段和显示SplitEmail的外部帐户列表](assets/split-default-delivery.png)
 
 1. 保存您的更改。 默认情况下，使用模板发送的所有投放现在都将使用拆分路由模式。
 
@@ -127,7 +127,7 @@ In addition, you can select split external accounts as the default routing provi
 
 事务性消息（消息中心）是用于管理触发消息的 Campaign 模块。
 
-在[本节](../send/transactional.md)中了解如何发送事务性消息。
+了解如何在[Campaign事务性消息](../send/transactional.md)中发送事务性消息。
 
 响应客户在网站上的操作，通过REST API将事件发送到Campaign，并用通过API调用提供的信息或数据填充消息模板，并将事务型消息实时发送给客户。 这些消息可以通过电子邮件、短信或推送通知单独或批量发送。
 
@@ -135,7 +135,7 @@ In addition, you can select split external accounts as the default routing provi
 
 * **控制实例**（或营销实例）由营销人员和IT团队用于创建、配置和发布消息模板。 此实例还集中了事件监控和历史记录。
 
-  在[本节](../send/transactional.md)中了解如何创建和发布消息模板。
+  了解如何在[Campaign事务性消息传递](../send/transactional.md)中创建和发布消息模板。
 
 * **执行实例**&#x200B;检索传入事件（例如密码重置或网站订单）并发送个性化消息。 可以有多个执行实例用于通过负载平衡器处理消息，并缩放要处理的事件数量以实现最大可用性。
 
@@ -143,7 +143,7 @@ In addition, you can select split external accounts as the default routing provi
 >
 >控制实例和执行实例必须安装在不同的计算机上。 他们不能共享同一个Campaign实例。
 
-![](assets/messagecenter_diagram.png)
+![消息中心：网站事件到达控制实例P和执行实例E1到EN，这些实例将发送消息](assets/messagecenter_diagram.png)
 
 ### 身份验证
 
@@ -156,4 +156,4 @@ In addition, you can select split external accounts as the default routing provi
 * 多个执行实例
 在负载均衡器后有多个执行实例的多小区执行体系结构中，外部应用程序调用的登录方法正在通过负载均衡器：因此，无法使用基于令牌的身份验证。 需要基于用户/密码的身份验证。
 
-在[此页面](../send/event-processing.md)中了解有关事务性消息事件的更多信息。
+在[收集和处理事件](../send/event-processing.md)中了解有关事务性消息传递事件的更多信息。

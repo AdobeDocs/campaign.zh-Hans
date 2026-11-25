@@ -23,20 +23,20 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '849'
 ht-degree: 1%
 ---
 # 使用日本手机发送电子邮件 {#sending-emails-on-japanese-mobiles}
 
 ## 日本手机版的电子邮件格式 {#email-formats-for-japanese-mobiles}
 
-Adobe Campaign为手机上的电子邮件管理三种特定的日文格式：**装饰邮件** (DoCoMo mobiles)、**装饰邮件** (Softbank mobiles)和&#x200B;**装饰邮件** (KDDI AU mobiles)。 这些格式施加特定的编码、结构和大小限制。 在[本节](#limitations-and-recommendations)中了解关于限制和建议的更多信息。
+Adobe Campaign为手机上的电子邮件管理三种特定的日文格式：**装饰邮件** (DoCoMo mobiles)、**装饰邮件** (Softbank mobiles)和&#x200B;**装饰邮件** (KDDI AU mobiles)。 这些格式施加特定的编码、结构和大小限制。 了解有关[限制和推荐](#limitations-and-recommendations)中的限制和推荐的更多信息。
 
 为了让收件人正确接收这些格式之一的邮件，我们建议在相应的用户档案中选择&#x200B;**[!UICONTROL Deco-mail (DoCoMo)]**、**[!UICONTROL Decore Mail (Softbank)]**&#x200B;或&#x200B;**[!UICONTROL Decoration Mail (KDDI AU)]**：
 
-![](assets/deco-mail_03.png)
+打开电子邮件格式列表的![收件人“常规”选项卡：未知、文本、HTML、装饰邮件、装饰邮件](assets/deco-mail_03.png)
 
 但是，如果您将&#x200B;**[!UICONTROL Email format]**&#x200B;选项保留为&#x200B;**[!UICONTROL Unknown]**、**[!UICONTROL HTML]**&#x200B;或&#x200B;**[!UICONTROL Text]**，Adobe Campaign将自动检测（发送电子邮件时）要使用的日语格式，以便正确显示邮件。
 
@@ -73,7 +73,7 @@ Adobe Campaign允许您检查消息格式是否适合发送到日本移动设备
 * 检查消息中的图像数量是否未超过格式所施加的限制（20个图像）
 * 检查邮件总大小（小于100kB）
 
-  ![](assets/deco-mail_06.png)
+  ![预览结果窗口，其中的Deco-mail诊断选项卡列出了不支持的标记和100 kB大小限制的警告](assets/deco-mail_06.png)
 
 ### 运行类型规则 {#running-typology-rule}
 
@@ -91,14 +91,14 @@ Adobe Campaign允许您检查消息格式是否适合发送到日本移动设备
 
 例如，如果事先在&#x200B;**[!UICONTROL Decore Mail (Softbank)]**&#x200B;上定义了此配置文件的电子邮件格式，则可以使用test@softbank.ne.jp替换此配置文件的地址。
 
-![](assets/deco-mail_05.png)
+![使用映射到配置文件的softbank.ne.jp测试地址替换地址模式发送验证对话框](assets/deco-mail_05.png)
 
 ## 发送消息 {#sending-messages}
 
 要使用Campaign向日语电子邮件格式的收件人发送电子邮件，可以使用两个选项：
 
-* 创建两个投放：一个仅用于日本收件人，另一个用于其他收件人 — 请参阅[此章节](#designing-a-specific-delivery-for-japanese-formats)。
-* 创建一个投放，Adobe Campaign将自动检测要使用的格式 — 请参阅[此章节](#designing-a-delivery-for-all-formats)。
+* 创建两个投放：一个仅用于日语收件人，另一个用于其他收件人 — 请参阅[为日语格式设计特定投放](#designing-a-specific-delivery-for-japanese-formats)。
+* 创建一个传递，Adobe Campaign将自动检测要使用的格式 — 请参阅[为所有格式设计传递](#designing-a-delivery-for-all-formats)。
 
 ### 为日语格式设计特定投放 {#designing-a-specific-delivery-for-japanese-formats}
 
@@ -106,9 +106,9 @@ Adobe Campaign允许您检查消息格式是否适合发送到日本移动设备
 
 为此，请在工作流中使用&#x200B;**[!UICONTROL Split]**&#x200B;活动，并将日文电子邮件格式（装饰邮件、装饰邮件和装饰邮件）定义为筛选条件。
 
-![](assets/deco-mail_08.png)
+![筛选对话框，其中包含三个电子邮件格式条件，这些条件组合为Or：装饰邮件、装饰邮件和装饰邮件](assets/deco-mail_08.png)
 
-![](assets/deco-mail_07.png)
+![工作流：查询、重复数据删除，然后按电子邮件格式拆分到日文手机投放和标准投放](assets/deco-mail_07.png)
 
 ### 为所有格式设计投放 {#designing-a-delivery-for-all-formats}
 
@@ -118,4 +118,4 @@ Adobe Campaign允许您检查消息格式是否适合发送到日本移动设备
 
 >[!IMPORTANT]
 >
->请确保遵守与每种日语电子邮件格式（装饰邮件、装饰邮件和装饰邮件）相关的特殊功能。 有关限制的更多信息，请参阅[此章节](#limitations-and-recommendations)。
+>请确保遵守与每种日语电子邮件格式（装饰邮件、装饰邮件和装饰邮件）相关的特殊功能。 有关限制的更多信息，请参阅[限制和建议](#limitations-and-recommendations)。

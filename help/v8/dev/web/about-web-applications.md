@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 12%
+source-wordcount: '886'
+ht-degree: 10%
 ---
 # Web 应用程序入门{#about-web-applications}
 
@@ -61,7 +61,7 @@ Adobe Campaign允许您创建和发布动态的交互式Web应用程序，其中
 
 这可以是订阅表单，其中包含已使用Adobe Campaign数据库中所包含的信息预加载的数据，如下所示：
 
-![](assets/webapp_form_sample.png)
+![预加载了带有“订阅”按钮的电子邮件、姓名和国家/地区的订阅表单。](assets/webapp_form_sample.png)
 
 本章概述了如何管理Web应用程序。
 
@@ -101,7 +101,7 @@ Adobe Campaign中的Web应用程序提供对以下功能的访问：
 >
 >[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/content/surveys/about-surveys){target="_blank"}中详细介绍了调查（Campaign v8文档）。
 >
->在[此部分](about-web-forms.md)中详细介绍了Adobe Campaign中Web窗体的总体功能。
+>在[Web窗体入门](about-web-forms.md)中详细介绍了Adobe Campaign中Web窗体的总体功能。
 
 ## Web应用程序实施 {#web-application-implementation}
 
@@ -109,7 +109,7 @@ Adobe Campaign中的Web应用程序提供对以下功能的访问：
 
 1. 创建内容（字段、列表、表格、图形等）。
 
-   您还可以查看详细说明表单可用字段的部分：所有这些字段也可用于Web应用程序。 此信息在[此页面](adding-fields-to-a-web-form.md)中可用。
+   您还可以查看详细说明表单可用字段的部分：所有这些字段也可用于Web应用程序。 此信息在[向Web窗体添加字段](adding-fields-to-a-web-form.md)中可用。
 
 1. 根据需要，您可以添加预加载、测试和保存步骤，并配置访问控制系统（主要在外联网发布的框架内）。
 1. 发布Web应用程序以使其在外联网或Adobe Campaign中可用。
@@ -120,7 +120,7 @@ Web应用程序是通过&#x200B;**[!UICONTROL Campaigns]**&#x200B;和&#x200B;**[
 
 Web应用程序存储在Adobe Campaign树的&#x200B;**[!UICONTROL Resources > Online > Web Applications]**&#x200B;节点中。 配置在以下文件夹中细分：
 
-* **[!UICONTROL Administration > Configuration > Form renderings]**：包含Web窗体演示的渲染模板（应用程序和调查）。 使用该模板可以生成表单。 它还使用CSS样式表。 可在模板级别重载此样式表。 有关详细信息，请参见[此页面](form-rendering.md#selecting-the-form-rendering-template)。
+* **[!UICONTROL Administration > Configuration > Form renderings]**：包含Web窗体演示的渲染模板（应用程序和调查）。 使用该模板可以生成表单。 它还使用CSS样式表。 可在模板级别重载此样式表。 有关详细信息，请参阅[选择表单渲染模板](form-rendering.md#selecting-the-form-rendering-template)。
 * **[!UICONTROL Resources > Templates > Web application templates]**：包含表单模板。 要创建表单或Web应用程序，必须从模板开始。
 
 ## Web 应用程序模板 {#web-application-templates}
@@ -135,7 +135,7 @@ Web应用程序存储在Adobe Campaign树的&#x200B;**[!UICONTROL Resources > On
 
 创建助手允许您选择要启用的选项，如下所示。
 
-![](assets/webapp_create_template.png)
+![要启用的“调查”和“高级网站（外联网）”选项的“新Web应用程序”对话框。](assets/webapp_create_template.png)
 
 >[!CAUTION]
 >

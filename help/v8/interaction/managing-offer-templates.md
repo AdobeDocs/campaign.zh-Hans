@@ -23,10 +23,10 @@ feature_v2:
     internal-label: Offers
   - id: baf8e746-117b-5e73-b179-0a83edc0295f
     internal-label: Templates
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 2%
+source-wordcount: '211'
+ht-degree: 1%
 ---
 # 管理优惠模板{#managing-offer-templates}
 
@@ -41,7 +41,7 @@ Adobe Campaign中提供了现成的选件模板。 您可以在创建选件、�
 1. 转到&#x200B;**资源** > **模板** > **优惠模板**。
 1. 单击&#x200B;**新建**&#x200B;图标。
 
-   ![](assets/offer_model_001.png)
+   在资源管理器中的![选件模板文件夹中突出显示“新建”按钮和新选件“常规”选项卡](assets/offer_model_001.png)
 
 1. 通过应用与普通选件相同的流程来配置模板，然后单击&#x200B;**保存**&#x200B;以保存模板。
 
@@ -52,10 +52,10 @@ Adobe Campaign中提供了现成的选件模板。 您可以在创建选件、�
 1. 转到&#x200B;**资源>模板>选件模板**。
 1. 使用鼠标右键单击要复制的模板，然后从下拉菜单中选择&#x200B;**复制**。
 
-   ![](assets/offer_model_002.png)
+   ![突出显示了“重复”命令的选件模板上下文菜单](assets/offer_model_002.png)
 
 1. 如有必要，请配置您希望该模板中显示的设置，然后单击&#x200B;**保存**&#x200B;保存该模板。
 
 现在，创建选件时将提供此模板。
 
-![](assets/offer_modelcreated_001.png)
+![选件模板文件夹中的营销选件选择对话框，其中列出了两个选件模板](assets/offer_modelcreated_001.png)

@@ -25,9 +25,9 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '227'
 ht-degree: 1%
 ---
 # 元数据机制 {#metadata-mechanism}
@@ -49,7 +49,7 @@ ht-degree: 1%
     如果“type”以值“link”或“collection”结束，则resTarget值是链接所定向资源的名称。
     如果“type”以“enumeration”值完成，则会添加“values”字段，并在&#x200B;**values**&#x200B;节点中详细说明每个枚举值。
 
-* **筛选器**&#x200B;节点返回用于检索关联筛选器的URL。 有关筛选器的详细信息，请参阅[此部分](sorting.md#filtering)。
+* **筛选器**&#x200B;节点返回用于检索关联筛选器的URL。 有关筛选器的详细信息，请参阅[筛选](sorting.md#filtering)。
 
 <!-- créer une section au même niveau sur les liens -->
 <!--
@@ -64,7 +64,7 @@ si on prend l'exemple de l'org unit, on aura un bon exemple lien
 
 对资源执行GET请求。
 
-```
+```bash
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/resourceType/profile \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -74,7 +74,7 @@ si on prend l'exemple de l'org unit, on aura un bon exemple lien
 
 它会返回用户档案资源的完整描述。
 
-```
+```json
 {
 ...
 "content": {

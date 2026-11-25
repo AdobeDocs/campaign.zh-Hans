@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '541'
 ht-degree: 3%
 ---
 # 调查入门{#about-surveys}
@@ -49,7 +49,7 @@ Adobe Campaign包括一个用于定义和发布Web应用程序的图形模块。
 
 本章详细介绍如何创建和管理&#x200B;**调查**、字段和页面管理、存储模式和记录。
 
-在[此页面](getting-started-with-surveys.md)中了解如何创建您的第一个调查。
+了解如何在[创建调查的关键步骤](getting-started-with-surveys.md)中创建您的第一个调查。
 
 >[!NOTE]
 >

@@ -26,10 +26,10 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 6db6c9152f6060b40596bd65a2ce705f916401be
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 2%
+source-wordcount: '1044'
+ht-degree: 1%
 ---
 # 创建登陆页面{#creating-a-landing-page}
 
@@ -54,26 +54,26 @@ ht-degree: 2%
 要创建新的登陆页类型Web应用程序，请执行以下步骤：
 
 1. 转到&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡并单击&#x200B;**[!UICONTROL Web application]**&#x200B;链接，然后单击&#x200B;**[!UICONTROL Create]**&#x200B;按钮。
-1. 选择&#x200B;**[!UICONTROL New landing page]**&#x200B;模板并输入标签，然后单击&#x200B;**[!UICONTROL Save]**。
+1. Select **[!UICONTROL New landing page]**&#x200B;模板并输入标签，然后单击&#x200B;**[!UICONTROL Save]**。
 
-   ![](assets/dce_uc1_newlandingpage.png)
+   ![包含新建登陆页模板、标签和Web应用程序文件夹的“新建Web应用程序”对话框](assets/dce_uc1_newlandingpage.png)
 
 1. 单击&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡。
 1. 删除&#x200B;**结束**&#x200B;活动。
 1. 在&#x200B;**[!UICONTROL Storage]**&#x200B;活动后添加&#x200B;**[!UICONTROL Page]**&#x200B;活动。
 1. 编辑&#x200B;**页面2**&#x200B;活动，然后在&#x200B;**[!UICONTROL Properties]**&#x200B;选项卡中取消选中&#x200B;**[!UICONTROL Activate outbound transitions]**&#x200B;选项。
 
-   ![](assets/dce_uc1_transition.png)
+   ![名为“页面2”且“启用出站过渡”已清除的“页面活动属性”选项卡](assets/dce_uc1_transition.png)
 
 1. 保存更改。
 
 然后，您将获得以下排序：
 
-![](assets/dce_uc1_edition_activity.png)
+![Web应用程序流：预加载、页面、存储和页面2活动按顺序连接](assets/dce_uc1_edition_activity.png)
 
 >[!NOTE]
 >
->有关创建Web应用程序的详细信息，请参阅[此部分](creating-a-new-web-application.md)。
+>有关创建Web应用程序的详细信息，请参阅[创建新的Web应用程序](creating-a-new-web-application.md)。
 
 ## 第1步 — 选择和加载模板 {#step-1---selecting-and-loading-templates}
 
@@ -88,18 +88,18 @@ ht-degree: 2%
 要在第一页上加载模板，请应用以下步骤：
 
 1. 打开Web应用程序的前&#x200B;**[!UICONTROL Page]**&#x200B;个活动。
-1. 选择&#x200B;**[!UICONTROL From a file]**&#x200B;以提取您的内容模板。
+1. Select **[!UICONTROL From a file]**&#x200B;以获取您的内容模板。
 
-   ![](assets/dce_uc1_selectmodel.png)
+   ![选择一个内容对话框并列出模板：从文件、联系人、详细点进、点进和客户获取](assets/dce_uc1_selectmodel.png)
 
-1. 选择要使用的HTML文件。
+1. Select要使用的HTML文件。
 1. 单击&#x200B;**打开**&#x200B;开始导入。
 
    在加载过程中，将显示共享文件列表。 导入系统检查链接到所选HTML的所有文件（CSS、图像等）是否都存在。
 
    导入完成后，单击&#x200B;**[!UICONTROL Close]**&#x200B;按钮。
 
-   ![](assets/dce_uc1_import.png)
+   ![正在发布已上传CSS、图像和脚本文件的资源日志，以100%成功消息结尾](assets/dce_uc1_import.png)
 
    >[!CAUTION]
    >
@@ -108,7 +108,7 @@ ht-degree: 2%
 1. 单击&#x200B;**[!UICONTROL Properties]**&#x200B;选项卡。
 1. 为每个页面输入&#x200B;**标签**（例如：页面1=收集，页面2=感谢）。
 
-   ![](assets/dce_uc1_pagelabel.png)
+   ![选择标签为“集合”和“启用出站过渡”的“页面活动属性”选项卡](assets/dce_uc1_pagelabel.png)
 
 对Web应用程序中插入的每个页面应用这些步骤。
 
@@ -120,7 +120,7 @@ ht-degree: 2%
 
 在本节中，我们将调整导入的内容，并将数据库的字段链接到网页的形式。 以前创建的Web应用程序是：
 
-![](assets/dce_uc1_lp_enchainement.png)
+![预加载、收集、存储和感谢活动的Web应用程序流](assets/dce_uc1_lp_enchainement.png)
 
 ### 修改内容 {#modifying-content}
 
@@ -132,11 +132,11 @@ ht-degree: 2%
 1. 选择新的背景颜色。
 1. 单击&#x200B;**确定**&#x200B;确认更改。
 
-   ![](assets/dce_uc1_changecolor.png)
+   ![带有拾色器对话框的页面编辑器更改所选超文本链接按钮的背景颜色](assets/dce_uc1_changecolor.png)
 
 1. 应用这些相同的进程以更改按钮的颜色
 
-   ![](assets/dce_uc1_finalcolor.png)
+   ![包含FirstName、电子邮件、电话和地址字段以及重新录制的SEND IT按钮的结果注册表单页面](assets/dce_uc1_finalcolor.png)
 
 ### 链接表单字段 {#linking-form-fields}
 
@@ -146,13 +146,13 @@ ht-degree: 2%
 1. 编辑编辑器右侧的&#x200B;**[!UICONTROL Field]**&#x200B;部分。
 1. 选择要链接到所选字段的数据库字段。
 
-   ![](assets/dce_uc1_mapping.png)
+   ![选择名字的收件人对话框字段，以将输入区域映射到数据库字段](assets/dce_uc1_mapping.png)
 
 1. 对页面上的每个字段重复此过程。
 
 您可以将字段设为必填字段：例如，单击&#x200B;**[!UICONTROL Email]**&#x200B;字段，然后启用&#x200B;**必填字段**&#x200B;选项。
 
-![](assets/dce_uc1_fieldmandatory.png)
+![表单数据部分中“必需”选项设置为“是”的页面编辑器输入区域设置](assets/dce_uc1_fieldmandatory.png)
 
 ### 创建指向下一页的链接 {#creating-a-link-to-the-next-page}
 
@@ -162,7 +162,7 @@ ht-degree: 2%
 1. 单击&#x200B;**[!UICONTROL Action]**&#x200B;下拉菜单。
 1. 选择&#x200B;**[!UICONTROL Next page]**&#x200B;操作。
 
-   ![](assets/dce_uc1_actionbouton.png)
+   ![打开“操作”下拉菜单并选择下一页的超文本链接设置](assets/dce_uc1_actionbouton.png)
 
 ### 插入个性化字段 {#inserting-a-personalization-field}
 
@@ -173,21 +173,21 @@ ht-degree: 2%
 1. 在工具栏的&#x200B;**[!UICONTROL Insert]**&#x200B;菜单中选择&#x200B;**[!UICONTROL Personalization field]**。
 1. 选择名字。
 
-   ![](assets/dce_uc1_persochamp.png)
+   ![在“插入元素”对话框中选择了Personalization字段和名字字段的情况下插入菜单](assets/dce_uc1_persochamp.png)
 
 个性化字段在编辑器中具有黄色背景。
 
-![](assets/dce_uc1_edit_champperso.png)
+![感谢您使用以黄色突出显示的名字个性化字段的页面标题](assets/dce_uc1_edit_champperso.png)
 
 ## 步骤3 — 发布内容 {#step-3---publishing-content}
 
 内容从Web应用程序仪表板发布。 单击&#x200B;**[!UICONTROL Publish]**&#x200B;按钮以运行它。
 
-![](assets/dce_uc1_pub_dashboard.png)
+![带有“发布”按钮的Web应用程序仪表板，以及必须发布该应用程序的消息](assets/dce_uc1_pub_dashboard.png)
 
 在发布期间，将显示日志。 发布系统分析Web应用程序中的所有内容
 
-![](assets/dce_uc1_pub_dashboard_journal.png)
+![Web应用程序发布日志，以“处理完成”（出现警告）和“关闭”按钮结尾](assets/dce_uc1_pub_dashboard_journal.png)
 
 >[!NOTE]
 >

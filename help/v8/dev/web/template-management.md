@@ -25,10 +25,10 @@ subfeature_v2:
     internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
     internal-label: Landing pages
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 5%
+source-wordcount: '148'
+ht-degree: 4%
 ---
 # 模板管理{#template-management}
 
@@ -38,7 +38,7 @@ ht-degree: 5%
 
 创建登陆页类型的Web应用程序时，用户可以选择其中一个模板。 您还可以导入在Adobe Campaign之外创建的HTML模板。
 
-![](assets/dce_popup_templatechoice.png)
+![选择一个内容对话框，其中列出了可用的内容模板，例如从文件、联系人和点进](assets/dce_popup_templatechoice.png)
 
 要添加模板，请参阅[全局选项](content-editor-interface.md#global-options)。
 
@@ -48,6 +48,6 @@ ht-degree: 5%
 
 在&#x200B;**营销活动**&#x200B;选项卡中，打开所选投放。 单击&#x200B;**另存为模板**&#x200B;按钮，命名模板，然后保存。
 
-![](assets/dce_save_model.png)
+![右侧工具栏中突出显示“另存为模板”图标的HTML内容编辑器](assets/dce_save_model.png)
 
 新模板保存在资源管理器中的&#x200B;**资源>模板>内容模板**&#x200B;节点下。

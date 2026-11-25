@@ -32,10 +32,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7fd43a8d3d6afe9f4d3fb000d925cc6185ba9f40
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 9%
+source-wordcount: '212'
+ht-degree: 3%
 ---
 # 配置 URL 跟踪选项 {#personalizing-url-tracking}
 
@@ -45,7 +45,7 @@ ht-degree: 9%
 >
 >此窗口中还配置了电子邮件中的图像管理。 请参阅[添加图像](defining-the-email-content.md#adding-images)。
 
-![](assets/s_ncs_user_email_del_tracking_ico.png)
+![在工具栏中突出显示“跟踪和图像”图标的电子邮件投放](assets/s_ncs_user_email_del_tracking_ico.png)
 
 您可以配置跟踪选项：
 
@@ -57,15 +57,15 @@ ht-degree: 9%
 
 * 激活/停用消息打开跟踪功能。
 
-![](assets/s_ncs_user_email_del_tracking_param.png)
+![跟踪和图像窗口，跟踪选项卡，带有激活跟踪和打开跟踪选项以及跟踪的URL树](assets/s_ncs_user_email_del_tracking_param.png)
 
 跟踪的URL以树形式列在中心窗口中。
 
-您可以为消息的每个URL单独激活或取消激活跟踪。 如需详细信息，请参阅[此小节](tracked-links.md)。
+您可以为消息的每个URL单独激活或取消激活跟踪。 有关详细信息，请参阅[配置跟踪的链接](tracked-links.md)。
 
 通过&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡，可将跟踪URL和开始URL的计算公式个性化。
 
-![](assets/s_ncs_user_email_del_tracking_param_adv.png)
+![跟踪和图像窗口，高级选项卡，带有跟踪的URL和打开的URL计算公式](assets/s_ncs_user_email_del_tracking_param_adv.png)
 
 >[!CAUTION]
 >

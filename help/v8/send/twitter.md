@@ -24,10 +24,10 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 3%
+source-wordcount: '895'
+ht-degree: 2%
 ---
 # 使用Adobe Campaign在X (Twitter)上发布消息 {#post-tw-messages}
 
@@ -40,7 +40,7 @@ Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X（
 * 通过恢复用户档案数据来收集新联系人，这使您能够执行定向活动，并在可能的情况下实施跨渠道策略。 此操作需要用户同意。
 
 
-[本页](../connect/ac-tw.md)介绍了将X帐户与Adobe Campaign集成的配置步骤。
+[使用Campaign和X (Twitter)](../connect/ac-tw.md)中介绍了将X帐户与Adobe Campaign集成的配置步骤。
 
 ## 创建和发布X帖子 {#publish-on-tw}
 
@@ -50,20 +50,20 @@ Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X（
 
    基于&#x200B;**[!UICONTROL Tweet (twitter)]**&#x200B;投放模板创建新投放。
 
-   ![](assets/tw-new-delivery.png)
+   ![模板列表中选定了Tweet (twitter)投放模板的“新建投放”对话框](assets/tw-new-delivery.png)
 
-1. 选择主目标
+1. Select作为主要目标
 
-   选择要向其发送帖子的帐户。
+   Select要将帖子发送到的帐户。
 
-   ![](assets/tw-define-target.png)
+   在“主目标”选项卡上显示![Select目标对话框，其中Twitter帐户目标和“添加”按钮突出显示](assets/tw-define-target.png)
 
    1. 单击 **[!UICONTROL To]** 链接。
    1. 单击 **[!UICONTROL Add]** 按钮。
    1. 选择 **[!UICONTROL A Twitter account]**。
    1. 在&#x200B;**[!UICONTROL Folder]**&#x200B;字段中，选择包含X帐户的服务文件夹。 然后，选择要将您的推文发送到的X帐户。
 
-1. 选择验证目标
+1. Select作为验证目标
 
    **[!UICONTROL Target of the proofs]**&#x200B;选项卡允许您定义在最终投放之前用于测试投放的X帐户。
 
@@ -77,7 +77,7 @@ Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X（
 
    在&#x200B;**[!UICONTROL Content]**&#x200B;选项卡中输入帖子内容。
 
-   ![](assets/tw-delivery-content.png)
+   ![已输入帖子文本和个性化字段的推文投放的“内容”选项卡](assets/tw-delivery-content.png)
 
    >[!CAUTION]
    >
@@ -91,7 +91,7 @@ Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X（
 
    浏览&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡以检查帖子的呈现。
 
-   ![](assets/tw-delivery-preview.png)
+   ![Tweet投放的“预览”选项卡，其中显示具有服务名称的呈现的帖子文本](assets/tw-delivery-preview.png)
 
    1. 单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡。
    1. 单击&#x200B;**[!UICONTROL Test personalization]**&#x200B;下拉菜单并选择&#x200B;**[!UICONTROL Service]**。
@@ -104,7 +104,7 @@ Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X（
 1. 发布消息
 
    1. 内容获得批准后，单击&#x200B;**[!UICONTROL Send]**&#x200B;按钮。
-   1. 选择&#x200B;**[!UICONTROL Deliver as soon as possible]**&#x200B;并单击&#x200B;**[!UICONTROL Analyze]**&#x200B;按钮。
+   1. Select **[!UICONTROL Deliver as soon as possible]**&#x200B;并单击&#x200B;**[!UICONTROL Analyze]**&#x200B;按钮。
    1. 分析完成后，检查结果。
    1. 单击&#x200B;**[!UICONTROL Confirm delivery]**，然后单击&#x200B;**[!UICONTROL Yes]**。
 
@@ -116,19 +116,19 @@ Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X（
 
 1. 基于&#x200B;**[!UICONTROL Tweet (Direct Message)]**&#x200B;内置投放模板创建X投放。
 
-1. 选择主目标
+1. Select作为主要目标
 
-   ![](assets/tw-dm-define-target.png)
+   ![Select target对话框，其中包含访客订阅映射和为直接消息突出显示的“添加”按钮](assets/tw-dm-define-target.png)
 
-   1. 选择&#x200B;**[!UICONTROL To]**&#x200B;链接和&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
+   1. Select **[!UICONTROL To]**&#x200B;链接和&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
 
    1. 选择定位类型
 
-      * 选择&#x200B;**[!UICONTROL Twitter subscribers]**&#x200B;向所有关注者发送私信。
+      * Select **[!UICONTROL Twitter subscribers]**&#x200B;向所有关注者发送私信。
 
-      * 选择&#x200B;**[!UICONTROL Filter conditions]**&#x200B;以定义查询并查看其结果。 在[本节](../audiences/create-filters.md#advanced-filters)中了解如何创建筛选器。
+      * Select **[!UICONTROL Filter conditions]**&#x200B;定义查询并查看其结果。 了解如何在[高级筛选器](../audiences/create-filters.md#advanced-filters)中创建筛选器。
 
-1. 从&#x200B;**[!UICONTROL Target of the proofs]**&#x200B;选项卡中选择验证目标：此帐户将收到您的私信的验证。
+1. 从&#x200B;**[!UICONTROL Target of the proofs]**&#x200B;选项卡的Select验证目标：此帐户将收到您私信的验证。
 
    正如[配置步骤](../connect/ac-tw.md#tw-test-account)中详述的那样，您必须创建一个专用于发送校样的专用测试X帐户。
 
@@ -139,15 +139,15 @@ Adobe Campaign附带&#x200B;**社交营销**&#x200B;模块，可让您通过X（
 
 1. 在&#x200B;**[!UICONTROL Content]**&#x200B;选项卡中输入消息的内容。
 
-   ![](assets/tw-dm-content.png)
+   包含个性化消息文本的Twitter直接消息投放的![内容选项卡](assets/tw-dm-content.png)
 
-   个性化字段的用法可与电子邮件投放相同，例如，在消息正文中添加关注者的姓名。 可在[此部分](../send/personalize.md)中了解详情。
+   个性化字段的用法可与电子邮件投放相同，例如，在消息正文中添加关注者的姓名。 在[个性化入门](../send/personalize.md)中了解详情。
 
 1. 预览消息
 
    浏览&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡以检查帖子的呈现。
 
-   ![](assets/tw-dm-preview.png)
+   ![显示选定订阅者的个性化文本的Twitter私信的“预览”选项卡](assets/tw-dm-preview.png)
 
    1. 单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡。
    1. 单击&#x200B;**[!UICONTROL Test personalization]**&#x200B;下拉菜单并选择&#x200B;**[!UICONTROL Visitor Subscription]**。

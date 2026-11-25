@@ -24,16 +24,16 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 17%
+source-wordcount: '689'
+ht-degree: 16%
 ---
 # 使用个性化块{#personalization-blocks}
 
 个性化块是动态内容，其中包含您可以插入到投放中的特定渲染。 例如，您可以添加徽标、问候语消息或指向镜像页面的链接。
 
-要访问个性化的内容块，请浏览到资源管理器的&#x200B;**[!UICONTROL Resources > Campaign Management > Personalization blocks]**&#x200B;节点。 [此部分](#ootb-personalization-blocks)中列出了内置个性化块。
+要访问个性化的内容块，请浏览到资源管理器的&#x200B;**[!UICONTROL Resources > Campaign Management > Personalization blocks]**&#x200B;节点。 内置个性化块在[内置个性化块](#ootb-personalization-blocks)中列出。
 
 您还可以定义新块以优化投放个性化。 [了解详情](#create-custom-personalization-blocks)。
 
@@ -44,7 +44,7 @@ ht-degree: 17%
 1. 在投放向导的内容编辑器中，单击个性化图标并选择&#x200B;**[!UICONTROL Include]**&#x200B;菜单。
 1. 从列表中选择个性化块，或单击&#x200B;**[!UICONTROL Other...]**&#x200B;菜单访问完整列表。
 
-   ![](assets/perso-content-block.png)
+   ![在个性化菜单中包含子菜单，该菜单列出块（如镜像页面的链接），末尾是“其他……”](assets/perso-content-block.png)
 
 1. 个性化块随后将作为脚本插入。 当生成个性化时，它自动适应收件人用户档案。
 1. 浏览到&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡并选择收件人以查看特定收件人的此块的内容。
@@ -82,14 +82,14 @@ ht-degree: 17%
 1. 浏览到Campaign资源管理器的&#x200B;**[!UICONTROL Resources > Campaign Management > Personalization blocks]**&#x200B;文件夹。
 1. 在内置块列表上方，单击&#x200B;**[!UICONTROL New]**。
 
-   ![](assets/perso-new-block.png)
+   ![个性化阻止在Campaign资源管理器中的“新建”按钮上使用箭头列出](assets/perso-new-block.png)
 
 1. 填写个性化块的设置：
 
-   ![](assets/perso-custom-block.png)
+   ![新的个性化块表单，带有选择退出链接的标签、内部名称、内容类型和脚本内容](assets/perso-custom-block.png)
 
    * 输入块的标签。 此标签显示在个性化字段插入窗口中。
-   * 选择&#x200B;**投放**&#x200B;内容类型。
+   * Select a **投放**&#x200B;内容类型。
    * 启用&#x200B;**[!UICONTROL Visible in the customization menus]**&#x200B;选项，以便通过个性化字段插入图标访问此块。
    * 如有必要，请启用&#x200B;**[!UICONTROL The content of the personalization block depends upon the format]**&#x200B;选项，为HTML和文本电子邮件定义两个不同的块。
    * 输入内容（在HTML、文本、JavaScript等） 个性化块的，然后单击&#x200B;**[!UICONTROL Save]**。

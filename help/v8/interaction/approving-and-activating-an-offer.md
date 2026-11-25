@@ -21,9 +21,9 @@ feature_v2:
     internal-label: Interaction
   - id: ea08db70-4682-59a2-9408-9aedd9548e07
     internal-label: Offers
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 8bfb312d62f56f19899a83de6b0dd58c56e04ab2
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '848'
 ht-degree: 0%
 ---
 # 批准和激活优惠{#approving-and-activating-an-offer}
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 优惠仪表板上的横幅会告知您优惠是否需要经历批准周期。
 
-![](assets/offer_validate_001.png)
+![优惠仪表板横幅，表明优惠正在等待审批，带有“审批”按钮。](assets/offer_validate_001.png)
 
 ## 批准优惠内容 {#approving-offer-content}
 
@@ -52,15 +52,15 @@ ht-degree: 0%
 
 1. 单击&#x200B;**[!UICONTROL Approval]**&#x200B;按钮并在弹出窗口中选择&#x200B;**[!UICONTROL Approve content]**。
 
-   ![](assets/offer_validate_002.png)
+   ![审批菜单，已选择审批内容，打开优惠对话框上的操作。](assets/offer_validate_002.png)
 
 1. 使用下拉列表，选择要继续编辑的演示文稿或要发布到实时环境的演示文稿，然后单击&#x200B;**[!UICONTROL Content approval]**。
 
-   ![](assets/offer_validate_003.png)
+   ![优惠对话框上的操作：选择“继续编辑”或“启用”，添加评论，单击“内容审批”。](assets/offer_validate_003.png)
 
    批准优惠内容后，将更新优惠仪表板表格中的信息。
 
-   ![](assets/offer_validate_004.png)
+   ![批准后的优惠仪表板：呈现显示“已启用”，而“批准”部分显示已批准的内容。](assets/offer_validate_004.png)
 
    >[!NOTE]
    >
@@ -76,33 +76,33 @@ ht-degree: 0%
 
 * 单击&#x200B;**[!UICONTROL Schedule and eligibility rules]**&#x200B;可以查看规则的完整列表。
 
-  ![](assets/offer_validate_005.png)
+  ![计划和资格规则列表，带有权重和日期范围，从审批对话框打开。](assets/offer_validate_005.png)
 
 * 要更改资格规则，请单击&#x200B;**[!UICONTROL Reject]**，然后单击&#x200B;**[!UICONTROL Eligibility approval]**。
 
-  ![](assets/offer_validate_007.png)
+  ![资格审批对话框，其中已选择“拒绝”、注释和“资格审批”按钮。](assets/offer_validate_007.png)
 
   优惠仪表板上的各种状态都会更新。
 
-  ![](assets/offer_validate_006.png)
+  ![拒绝后的仪表板：资格审批被拒绝横幅，提交资格按钮，资格被拒绝。](assets/offer_validate_006.png)
 
 * 要接受优惠资格，请单击&#x200B;**[!UICONTROL Approve eligibility]**。
 
-  ![](assets/offer_validate_008.png)
+  ![提交资格按钮使用“批准”和“拒绝”选项打开优惠对话框上的操作。](assets/offer_validate_008.png)
 
   批准资格，根据需要添加评论，然后单击&#x200B;**[!UICONTROL Eligibility approval]**。
 
-  ![](assets/offer_validate_009.png)
+  ![资格审批对话框，其中包含已选择的审批、已输入的评论和资格审批按钮。](assets/offer_validate_009.png)
 
   优惠仪表板上的各种状态都会更新。
 
-  ![](assets/offer_validate_010.png)
+  ![仪表板显示将优惠等待部署到Live环境，资格已批准，内容已批准。](assets/offer_validate_010.png)
 
 ## 审批跟踪 {#approval-tracking}
 
 审批跟踪在优惠仪表板上可用。 单击&#x200B;**[!UICONTROL Hide/display logs]**&#x200B;以访问它。
 
-![](assets/offer_validate_012.png)
+![在单击“隐藏/显示日志”、列出操作、类型和审批者后显示审批日志的选件仪表板。](assets/offer_validate_012.png)
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ ht-degree: 0%
 1. 在出现的&#x200B;**[!UICONTROL Edit]**&#x200B;窗口中，选择要重新启动的审批，然后单击&#x200B;**[!UICONTROL Re-initialize approval to submit it again]**。
 1. 单击&#x200B;**[!UICONTROL Ok]**&#x200B;确认。
 
-![](assets/offer_validate_013.png)
+![在“编辑”窗口中审批包含重新初始化审批的日记账，以再次提交该日记账。](assets/offer_validate_013.png)
 
 ## 发布优惠 {#publishing-the-offer}
 
@@ -124,11 +124,11 @@ ht-degree: 0%
 
 设计环境中可用选件的功能板包含有关发布的信息，包括实时环境中匹配选件的名称。
 
-![](assets/offer_golive_001.png)
+![设计优惠仪表板：部署日期横幅，具有已发布状态的优惠在线链接，在线实时呈现。](assets/offer_golive_001.png)
 
 要显示实时环境中可用的选件，请单击选件标签：实时选件具有一个包含其所有相关信息的功能板。
 
-![](assets/offer_golive_002.png)
+![指向实时优惠仪表板的链接，该仪表板显示在线状态、环境及其计划和资格规则。](assets/offer_golive_002.png)
 
 ## 禁用选件 {#disabling-an-offer}
 
@@ -142,4 +142,4 @@ ht-degree: 0%
 >
 >在设计环境中删除选件后，该选件会在链接的在线环境中自动停用。 在建议保留期过后，将从在线环境中删除停用的优惠。
 
-![](assets/offer_preview_deactivate.png)
+![优惠仪表板待部署，并且禁用优惠按钮用于停用优惠。](assets/offer_preview_deactivate.png)

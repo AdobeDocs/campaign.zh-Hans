@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: f058ae441fff4b10bcffd84e1b7e44f00e4828a8
+source-git-commit: 9d4ec9f8454acd6a939221075251c265a1ffd672
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '849'
 ht-degree: 2%
 ---
 # 数据复制 {#wf-data-replication}
@@ -97,7 +97,7 @@ Campaign v8依靠特定的技术工作流来管理计划的数据复制。 这�
   nms.replicationStrategy.StartReplicateStagingData("dem:sampleTable")
   ```
 
-  ![](assets/jscode.png)
+  ![使用脚本nms.replicationStrategy.StartReplicateStagingData for dem:sampleTable](assets/jscode.png)的JavaScript代码活动
 
 * 使用以下命令添加特定&#x200B;**nlmodule**&#x200B;活动：
 
@@ -105,7 +105,7 @@ Campaign v8依靠特定的技术工作流来管理计划的数据复制。 这�
   nlserver ffdaReplicateStaging -stagingSchema -instance:acc1
   ```
 
-  ![](assets/nlmodule.png)
+  带有参数ffdaReplicateStaging -stagingSchema -instance的![nlserver模块活动:acc1](assets/nlmodule.png)
 
 +++
 

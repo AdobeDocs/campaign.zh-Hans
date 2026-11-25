@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: df8d8e17c486122e23a6db0e44263f9f9632a204
 workflow-type: tm+mt
-source-wordcount: '1592'
-ht-degree: 50%
+source-wordcount: '1833'
+ht-degree: 44%
 ---
 # 使用Campaign和Adobe Analytics {#ac-aa}
 
@@ -77,17 +77,17 @@ ht-degree: 50%
 
 1. 在 [!DNL Adobe Analytics] 中，选择 **[!UICONTROL Admin tab]**，然后单击 **[!UICONTROL All admin]**。
 
-   ![](assets/analytics_connnector_1.png)
+   ![Adobe Analytics管理员菜单，所有管理员均突出显示](assets/analytics_connnector_1.png)
 
 1. 单击 **[!UICONTROL Report suites]**。
 
-   ![](assets/analytics_connnector_2.png)
+   在Adobe Analytics中使用![突出显示报表包链接的“管理员”页面](assets/analytics_connnector_2.png)
 
 1. 在 **[!UICONTROL Report suite manager]** 页面中，依次单击 **[!UICONTROL Create new]** 和 **[!UICONTROL Report suite]**。
 
    有关创建&#x200B;**[!UICONTROL Report suite]**&#x200B;的详细过程，请参阅[Adobe Analytics文档](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite#prerequisites){target="_blank"}。
 
-   ![](assets/analytics_connnector_3.png)
+   ![打开了“创建新菜单”并显示“报表包”选项的“报表包管理器”](assets/analytics_connnector_3.png)
 
 1. 选择模板。
 
@@ -99,7 +99,7 @@ ht-degree: 50%
    * **[!UICONTROL Go Live Date]**
    * **[!UICONTROL Estimated Page Views Per Day]**
 
-   ![](assets/analytics_connnector_4.png)
+   ![使用ID、网站标题、时区、上线日期和页面查看次数配置您的新报表包表单](assets/analytics_connnector_4.png)
 
 1. 配置后，单击 **[!UICONTROL Create report suite]**。
 
@@ -111,19 +111,19 @@ ht-degree: 50%
 
 1. 在 **[!UICONTROL Edit settings]** 按钮中，选择 **[!UICONTROL Conversion]** > **[!UICONTROL Conversion variables]**。
 
-   ![](assets/analytics_connnector_5.png)
+   ![突出显示了“转化”>“转化变量”的“编辑设置”菜单](assets/analytics_connnector_5.png)
 
 1. 单击 **[!UICONTROL Add new]** 以创建评测电子邮件营销活动影响所需的标识符，即内部营销活动名称 (cid) 和 iNmsBroadlog (bid) 表 ID。
 
    要了解如何编辑&#x200B;**[!UICONTROL Conversion variables]**，请参阅此[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html?lang=zh-Hans#admin-tools){target="_blank"}。
 
-   ![](assets/analytics_connnector_6.png)
+   ![具有名为Campaign ID的eVar 5和名为Broadlog ID的eVar 6的转化变量列表](assets/analytics_connnector_6.png)
 
 1. 完成后单击 **[!UICONTROL Save]**。
 
 1. 然后，要创建 **[!UICONTROL Success events]**，请在 **[!UICONTROL Edit settings]** 按钮中选择 **[!UICONTROL Conversion]** > **[!UICONTROL Success events]**。
 
-   ![](assets/analytics_connnector_7.png)
+   ![突出显示了“转化”>“成功事件”的“编辑设置”菜单](assets/analytics_connnector_7.png)
 
 1. 单击 **[!UICONTROL Add new]** 以配置以下 **[!UICONTROL Success events]**：
 
@@ -140,7 +140,7 @@ ht-degree: 50%
 
    要了解如何配置&#x200B;**[!UICONTROL Success events]**，请参阅此[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event.html?lang=zh-Hans)
 
-   ![](assets/analytics_connnector_8.png)
+   ![启用了事件7至16的自定义成功事件列表：“已单击”、“已打开”、“已发送”、“已取消订阅”](assets/analytics_connnector_8.png)
 
 1. 完成后单击 **[!UICONTROL Save]**。
 
@@ -152,11 +152,11 @@ ht-degree: 50%
 
 1. 从[!DNL Adobe Analytics]顶部菜单栏中选择&#x200B;**[!UICONTROL Components]** > **[!UICONTROL Classification sets]**，然后单击&#x200B;**[!UICONTROL New]**。
 
-   ![](assets/analytics_connnector_16.png)
+   突出显示分类集的![Adobe Analytics组件菜单](assets/analytics_connnector_16.png)
 
 1. 在&#x200B;**[!UICONTROL Add New Classification Set]**&#x200B;对话框中：
 
-   ![](assets/analytics_connnector_17.png)
+   ![添加新的分类集对话框，其中包含名称、主要类型、通知和报告包订阅](assets/analytics_connnector_17.png)
 
    * 输入分类集的&#x200B;**[!UICONTROL Name]**。
    * 将&#x200B;**[!UICONTROL Type]**&#x200B;设置为&#x200B;**[!UICONTROL Primary]**。
@@ -179,11 +179,11 @@ ht-degree: 50%
 
 1. 浏览到Adobe Campaign资源管理器树的&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External accounts]**&#x200B;文件夹，然后单击&#x200B;**[!UICONTROL New]**。
 
-   ![](assets/analytics_connnector_9.png)
+   在Campaign Explorer中显示![外部帐户列表，并显示“新建”按钮](assets/analytics_connnector_9.png)
 
 1. 使用下拉列表从 **[!UICONTROL Integration]** 下拉列表中选择 **[!UICONTROL Web Analytics]** 类型和 **[!UICONTROL Adobe Analytics]**。
 
-   ![](assets/analytics_connnector_10.png)
+   ![具有Web Analytics类型和Adobe Analytics集成的新外部帐户，配置链接](assets/analytics_connnector_10.png)
 
 1. 单击 **[!UICONTROL Integration]** 下拉列表旁边的 **[!UICONTROL Configure]**。
 
@@ -201,7 +201,7 @@ ht-degree: 50%
    >
    >营销活动ID和Broadlog ID字段是通过JavaScript在登陆页面上或通过处理规则收集的。 [了解有关处理规则的更多信息](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)
 
-   ![](assets/analytics_connnector_11.png)
+   ![配置与Adobe Analytics选项卡映射报表包、eVar和成功事件的集成](assets/analytics_connnector_11.png)
 
 1. 在 **[!UICONTROL Events]** 类别中，映射在 [!DNL Adobe Analytics] 中配置的十个 **[!UICONTROL Success events]**。
 
@@ -213,7 +213,7 @@ ht-degree: 50%
 
    使用 **[!UICONTROL Sync]** 按钮，[!DNL Adobe Campaign] 将会同步在 [!DNL Adobe Analytics] 中完成的名称变更。 如果组件在 [!DNL Adobe Analytics] 中被删除，则将在 [!DNL Adobe Campaign] 中删除该组件，或显示&#x200B;**未找到**&#x200B;消息。
 
-   ![](assets/analytics_connnector_12.png)
+   ![“数据设置”选项卡列出了集成eVar、事件和分类，带有“同步”按钮](assets/analytics_connnector_12.png)
 
    >[!NOTE]
    >
@@ -221,15 +221,15 @@ ht-degree: 50%
 
 1. 在 **[!UICONTROL External account]** 中，单击 **[!UICONTROL Enrich the formula...]** 链接以更改 URL 计算公式，以指定网站分析工具集成信息（活动 ID）以及必须跟踪其活动的网站域名。
 
-   ![](assets/analytics_connnector_13.png)
+   ![外部帐户，突出显示了“扩充公式”链接](assets/analytics_connnector_13.png)
 
 1. 指明网站的域名。
 
-   ![](assets/analytics_connnector_14.png)
+   ![使用域字段](assets/analytics_connnector_14.png)扩充跟踪URL对话框的计算公式
 
 1. 单击 **[!UICONTROL Next]** 并确保域名已保存。
 
-   ![](assets/analytics_connnector_15.png)
+   ![包含Overload the formula选项和跟踪脚本的计算公式编辑器](assets/analytics_connnector_15.png)
 
 1. 如有必要，您可以让计算公式过载运行。 要实现此目的，请勾选方框并直接在窗口中编辑公式。
 
@@ -252,7 +252,7 @@ Adobe Campaign和Adobe Analytics之间的数据交换由作为后台任务运行
 
 此工作流可在Campaign Explorer树的&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]** > **[!UICONTROL Web analytics process]**&#x200B;文件夹下使用。
 
-![](assets/webanalytics_workflows.png)
+![Web Analytics处理技术工作流，包括信号、增量计算和指示器发送步骤](assets/webanalytics_workflows.png)
 
 **[!UICONTROL Sending of indicators and campaign attributes]**&#x200B;工作流允许您使用Adobe Analytics Connector通过Adobe Campaign将电子邮件营销活动指标发送到[!DNL CX Enterprise]。 此工作流在每天凌晨 4 点触发，可能需要 24 小时才能将数据发送到 Analytics。
 
@@ -292,12 +292,12 @@ Adobe Campaign和Adobe Analytics之间的数据交换由作为后台任务运行
 
 1. 打开要跟踪的营销活动的投放。
 
-   ![](assets/webanalytics_delivery_properties_003.png)
+   ![活动工作流中的电子邮件投放，带有指向投放属性按钮的箭头](assets/webanalytics_delivery_properties_003.png)
 
 1. 打开投放属性。
 1. 转到 **[!UICONTROL Web Analytics]** 选项卡，然后选择之前创建的外部帐户。 请参阅[在Adobe Campaign中配置外部帐户](#external-account-ac)。
 
-   ![](assets/webanalytics_delivery_properties_002.png)
+   ![传递属性Web Analytics选项卡，其中Web Analytics帐户列表显示Adobe Analytics集成](assets/webanalytics_delivery_properties_002.png)
 
 1. 您现在可以发送投放，并在 Adobe Analytics 中访问其报表。
 

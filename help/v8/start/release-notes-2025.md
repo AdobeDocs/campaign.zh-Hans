@@ -38,14 +38,14 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '3608'
-ht-degree: 31%
+source-wordcount: '3632'
+ht-degree: 30%
 ---
 # 2025 年发行说明 {#2025-rn}
 
-此页面列出了 **2025 Campaign v8 版本**&#x200B;中的新增功能、改进和修复。 有关最新版本，请参阅[此页面](release-notes.md)。
+此页面列出了 **2025 Campaign v8 版本**&#x200B;中的新增功能、改进和修复。 有关最新版本，请参阅[Campaign v8发行说明](release-notes.md)。
 
 对于任何新实施或升级到现有环境，请安装[最新版本](release-notes.md)。
 
@@ -112,7 +112,7 @@ _2025年7月9日_
 
 以前为少数客户发布的以下功能现在可用于所有Campaign FDA环境：
 
-* **新SMS发送连接器** - SMS发送连接器已进行现代化和改进，以启用收发器模式SMPP连接、启用永久性SMPP连接并确保更好的兼容性。 新的短信外部帐户现在可用于所有新的短信实施。 现有实施仍受支持，但建议迁移到此新的现代化扩展连接器。 如果要过渡到新连接器，请联系Adobe 。 [了解更多信息](../send/sms/sms.md)
+* **新SMS发送连接器** - SMS发送连接器已进行现代化和改进，以启用收发器模式SMPP连接、启用永久性SMPP连接并确保更好的兼容性。 新的短信外部帐户现在可用于所有新的短信实施。 现有实施仍受支持，但建议迁移到此新的现代化扩展连接器。 如果要过渡到新连接器，请联系Adobe 。 [使用Adobe Campaign发送短信](../send/sms/sms.md)
 
   >[!NOTE]
   >
@@ -169,13 +169,13 @@ ACC - Dynamic Reporting - As a Campaign Standard migrated user, you can access D
 * **Dynamic Reporting for Multilingual** - Dynamic reporting is now available for multilingual email deliveries. For more information, refer to the [detailed documentation](../reporting/global-reports.md).
 -->
 
-* **Rest API** — 您现在可以使用Rest API为Adobe Campaign创建集成，并通过将Adobe Campaign与您使用的技术面板连接来构建您自己的生态系统。 事务性消息传递REST API也可用于SMS渠道。 当负载中同时存在电子邮件和移动电话时，您可以使用“wishedChannel”字段来指定渠道。 如果未提供，则默认使用电子邮件，除非 wishedChannel 明确请求 SMS。 基于事件的事务型API也可用于电子邮件。 [了解更多信息](../dev/api/get-started-apis.md)
+* **Rest API** — 您现在可以使用Rest API为Adobe Campaign创建集成，并通过将Adobe Campaign与您使用的技术面板连接来构建您自己的生态系统。 事务性消息传递REST API也可用于SMS渠道。 当负载中同时存在电子邮件和移动电话时，您可以使用“wishedChannel”字段来指定渠道。 如果未提供，则默认使用电子邮件，除非 wishedChannel 明确请求 SMS。 基于事件的事务型API也可用于电子邮件。 [开始使用Campaign REST API](../dev/api/get-started-apis.md)
 
   >[!NOTE]
   >
   >此功能&#x200B;**不**&#x200B;可用于[Campaign FFDA部署](../architecture/enterprise-deployment.md)。
 
-* **一键式列表取消订阅** — 由于主要ISP要求发件人允许收件人通过一次单击立即选择退出，您现在可以直接从电子邮件模板或投放属性在用户界面中启用“一键式列表取消订阅”标头。 默认启用此选项。 [了解更多信息](../send/email-parameters.md#one-click-list-unsubscribe)
+* **一键式列表取消订阅** — 由于主要ISP要求发件人允许收件人通过一次单击立即选择退出，您现在可以直接从电子邮件模板或投放属性在用户界面中启用“一键式列表取消订阅”标头。 默认启用此选项。 [启用一键式列表取消订阅](../send/email-parameters.md#one-click-list-unsubscribe)
 
 <!--
 ACC - Rest APIs - As a Campaign Standard migrated user, you can use Rest APIs to create integrations for Adobe Campaign and build your own ecosystem by interfacing Adobe Campaign with the panel of technologies that you use. Read more
@@ -196,11 +196,11 @@ ACC * **Transactional messaging REST APIs** - Event-based Transactional APIs are
 
 ### 一般改进 {#improvements-8-8-1}
 
-* Microsoft结构现在支持作为具有Adobe Campaign联合数据访问(FDA)的外部数据库。 [了解更多信息](../config/external-accounts.md#transfer-data-external-accounts)
-* 现在，Campaign v8支持在Android 15和iOS 18上使用“推送通知”。 [了解更多信息](../start/compatibility-matrix.md#MobileSDK)
-* 除了用于安全虚拟专用网络隧道的内部部署数据库外，现在还支持云数据库。 [了解更多信息](../config/enhanced-security.md#vpn-databases)
-* 在SMS 2.0连接器的“传入流量”部分中添加了一组新的“提供程序ID”字段。 [了解更多信息](../send/sms/smpp-external-account.md#incoming-traffic)
-* 通过“mailto”List-Unsubscribe方法取消订阅的收件人不再被隔离。 它们或者取消订阅与投放关联的服务，或者发送到（用户档案的“不再联系”部分）（如果未定义投放服务）。 [了解更多信息](../send/quarantines.md)
+* Microsoft结构现在支持作为具有Adobe Campaign联合数据访问(FDA)的外部数据库。 [传输数据外部帐户](../config/external-accounts.md#transfer-data-external-accounts)
+* 现在，Campaign v8支持在Android 15和iOS 18上使用“推送通知”。 [移动SDK](../start/compatibility-matrix.md#MobileSDK)
+* 除了用于安全虚拟专用网络隧道的内部部署数据库外，现在还支持云数据库。 [支持的数据库和设备](../config/enhanced-security.md#vpn-databases)
+* 在SMS 2.0连接器的“传入流量”部分中添加了一组新的“提供程序ID”字段。 [传入流量](../send/sms/smpp-external-account.md#incoming-traffic)
+* 通过“mailto”List-Unsubscribe方法取消订阅的收件人不再被隔离。 它们或者取消订阅与投放关联的服务，或者发送到（用户档案的“不再联系”部分）（如果未定义投放服务）。 Campaign中的[隔离管理](../send/quarantines.md)
 * Adobe Campaign客户端控制台中现在提供了收件箱呈现报告的修订版本。
 * 已将`setup-client.exe`文件替换为`ac-client.msi`文件，为管理员提供了无需用户干预即可执行批量升级的更简单方法。
 
@@ -312,7 +312,7 @@ _2025 年 4 月 25 日_
 
 ### 新增功能 {#features-8-6-5}
 
-**新短信发送连接器** - 短信发送连接器经过现代化改造和改进，可启用收发器模式 SMPP 连接、启用持久 SMPP 连接，并确保从 Adobe Campaign Standard 过渡的环境具有更好的兼容性。 新的短信外部帐户现在可用于所有新的短信实施。 现有实施仍受支持，但建议迁移到此新的现代化扩展连接器。 [了解更多信息](../send/sms/sms.md)。
+**新短信发送连接器** - 短信发送连接器经过现代化改造和改进，可启用收发器模式 SMPP 连接、启用持久 SMPP 连接，并确保从 Adobe Campaign Standard 过渡的环境具有更好的兼容性。 新的短信外部帐户现在可用于所有新的短信实施。 现有实施仍受支持，但建议迁移到此新的现代化扩展连接器。 [使用Adobe Campaign发送短信](../send/sms/sms.md)。
 
 ### 一般改进 {#improvements-8-6-5}
 
@@ -364,7 +364,7 @@ _2025 年 2 月 14 日_
 
 * **事务性消息的动态报告** - 您现在可以在动态报告用户界面中监控事务性消息。 通过这些报表，营销人员能够实时查看事务型消息的所有报表量度和维度，以及通过模板发送的投放的细分。 [了解更多信息](https://experienceleague.adobe.com/docs/campaign-web/v8/reports/dynamic-reporting/get-started-reporting.html?lang=zh-Hans){target="_blank"}
 
-* **事务性消息传递 REST API** - 现在可以对电子邮件使用基于事件的事务性 API。 [了解更多信息](../dev/api/get-started-apis.md)
+* **事务性消息传递 REST API** - 现在可以对电子邮件使用基于事件的事务性 API。 [开始使用Campaign REST API](../dev/api/get-started-apis.md)
 
 ### 修复 {#fixes-8-7-3}
 
@@ -380,8 +380,8 @@ _2025 年 1 月 15 日_
 
 * 在[企业 (FFDA) 部署](../../v8/architecture/enterprise-deployment.md)环境中的投放分析期间，Campaign 应用程序的稳定性得到了改进。
 * 此版本附带改进和增强的 FFDA 架构机制，包括密钥管理、暂存和数据复制。
-* 已为[企业 (FFDA) 部署](../../v8/architecture/enterprise-deployment.md)引入新的技术工作流。 这些工作流通过将并行复制请求集中到相应的表中，来复制投放和相关数据。 这些工作流以`Replicate nms`开头。 [了解更多信息](../architecture/replication.md)
-* 工作流属性中现在有新的 **Enable watchdog supervisor to keep workflow running permanently** 选项。 启用此选项后，工作流会在发生错误后自动重新启动。 如果工作流仍然出错，将默认每 30 秒重新启动一次。 要调整此间隔，您可以创建一个新的 `XtkWorkflow_WatchdogRestartTimerTimeout` 选项并设置整数数据类型以指定新延迟。 此选项只应在技术工作流中启用。 [了解更多信息](../../automation/workflow/workflow-properties.md#execution)
+* 已为[企业 (FFDA) 部署](../../v8/architecture/enterprise-deployment.md)引入新的技术工作流。 这些工作流通过将并行复制请求集中到相应的表中，来复制投放和相关数据。 这些工作流以`Replicate nms`开头。 [数据复制](../architecture/replication.md)
+* 工作流属性中现在有新的 **Enable watchdog supervisor to keep workflow running permanently** 选项。 启用此选项后，工作流会在发生错误后自动重新启动。 如果工作流仍然出错，将默认每 30 秒重新启动一次。 要调整此间隔，您可以创建一个新的 `XtkWorkflow_WatchdogRestartTimerTimeout` 选项并设置整数数据类型以指定新延迟。 此选项只应在技术工作流中启用。 [执行](../../automation/workflow/workflow-properties.md#execution)
 
 ### 安全性改进 {#security-8-6-4}
 

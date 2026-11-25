@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '513'
 ht-degree: 1%
 ---
 # 自定义实例 {#gs-ac-custom}
@@ -67,7 +67,7 @@ Adobe Campaign利用数据架构来：
 
   请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/configuring-campaign-classic/editing-schemas/new-field-wizard.html?lang=zh-Hans#configuring-campaign-classic){target="_blank"}以了解如何在Campaign中快速添加新字段
 
-* 通过扩展模式，以编程方式实现。 在[本节](../dev/extend-schema.md)中了解如何扩展现有架构。
+* 通过扩展模式，以编程方式实现。 了解如何在[扩展Campaign架构](../dev/extend-schema.md)中扩展现有架构。
 
 您还可以在Campaign数据库中创建新表并扩展内置数据模型。
 
@@ -84,7 +84,7 @@ Adobe Campaign利用数据架构来：
 
 Campaign输入表单可进行调整以适合您的实施。 您可以通过修改XML内容来添加或删除表单字段。
 
-了解如何在[本节](../dev/forms.md)中修改现有的输入表单或创建新表单。
+了解如何在[Campaign输入表单](../dev/forms.md)中修改现有输入表单或创建新表单。
 
 ## 自定义仪表板{#gs-custom-dashboards}
 
@@ -92,7 +92,7 @@ Adobe Campaign界面使用许多Web应用程序来访问、管理收件人、投
 
 内置Web应用程序存储在资源管理器的&#x200B;**管理>配置> Web应用程序**&#x200B;文件夹中。
 
-在[本节](web/use-cases-creating-overviews.md#creating-a-single-page-web-application)中了解如何在Campaign中创建概述页面
+了解如何在[创建单页Web应用程序](web/use-cases-creating-overviews.md#creating-a-single-page-web-application)的Campaign中创建概述页面
 
 
 ## 自定义列表和创建过滤器 {#gs-lists-and-filters}
@@ -101,8 +101,8 @@ Adobe Campaign界面使用许多Web应用程序来访问、管理收件人、投
 
 在Adobe Campaign资源管理器树中导航时，数据库中包含的数据将显示在列表中。 您可以筛选这些列表、运行搜索、添加信息、筛选和排序数据。
 
-了解如何在[此页面](../start/campaign-ui.md)中配置列表并保存列表配置。
+了解如何在[发现Campaign用户界面](../start/campaign-ui.md)中配置列表并保存列表配置。
 
 您可以对这些列表应用过滤器，以仅显示运算符所需的数据。 然后，可以对过滤的数据执行操作。 筛选器配置允许您从列表中选择动态数据。 如果修改了数据，则更新过滤的数据。
 
-在[此页面](../audiences/create-filters.md)中了解有关筛选选项的更多信息。
+了解有关[中的筛选选项的更多信息在Adobe Campaign中使用筛选器](../audiences/create-filters.md)。

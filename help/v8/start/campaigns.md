@@ -27,10 +27,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 78%
+source-wordcount: '929'
+ht-degree: 70%
 ---
 # 开始使用营销活动 {#gs-ac-campaigns}
 
@@ -42,7 +42,7 @@ Adobe Campaign 提供了一套解决方案，可帮助您在所有线上和线�
 
 您可以利用 Adobe Campaign 在多个渠道上设计和编排有针对性的个性化活动：电子邮件、直邮、SMS、推送通知等。 通过单个界面为您提供计划、编排、配置、个性化、自动化、执行和衡量所有活动和通信所需的全部功能。
 
-![](assets/campaign-tab.png)
+主页的![营销活动选项卡，其中列出了营销活动，以及状态、日期和创建按钮](assets/campaign-tab.png)
 
 ### 核心概念{#ac-core-concepts}
 
@@ -64,7 +64,7 @@ Adobe Campaign 提供了一套解决方案，可帮助您在所有线上和线�
 
 Adobe Campaign 允许您从一个统一的控制中心创建、配置、执行和分析所有营销活动。
 
-![](assets/calendar.png)
+![营销活动日历，按时间线显示营销活动和投放，并弹出忠诚度计划详细信息](assets/calendar.png)
 
 在[此部分](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans){target="_blank"}中了解如何访问和实施营销活动。
 
@@ -88,7 +88,7 @@ Adobe Campaign 允许您从一个统一的控制中心创建、配置、执行�
 
    您可以在工作流程中构建受众或选择现有群组，如收件人列表、新闻稿订阅者、以前投放的收件人或任何筛选条件。
 
-   ![](assets/campaign-wf.png)
+   ![营销活动工作流：查询和读取列表馈送夏季优惠投放，然后是等待和移动投放](assets/campaign-wf.png)
 
    请参阅[此页面](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans){target="_blank"}以了解如何定义消息的受众。
 
@@ -96,11 +96,11 @@ Adobe Campaign 允许您从一个统一的控制中心创建、配置、执行�
 
    选择渠道、定义消息内容并开始投放。
 
-   ![](assets/campaign-dashboard.png)
+   ![包含状态、计划、文档、操作和投放列表及其状态的营销活动仪表板](assets/campaign-dashboard.png)
 
-   要了解如何创建和开始营销活动投放，请参阅[此页面](../../automation/campaigns/marketing-campaign-deliveries.md)。
+   了解如何在[创建投放](../../automation/campaigns/marketing-campaign-deliveries.md#create-deliveries)和[开始投放](../../automation/campaigns/marketing-campaign-deliveries.md#start-a-delivery)中创建和开始营销活动投放。
 
-   您可以将各种文档与活动关联：报表、照片、网页、图表等。在[此页面](../../automation/campaigns/marketing-campaign-assets.md)中了解有关关联文档的更多信息。
+   您可以将各种文档与活动关联：报表、照片、网页、图表等。在[营销活动资源、文档和投放概要](../../automation/campaigns/marketing-campaign-assets.md)中了解有关关联文档的更多信息。
 
 1. **设置审批流程**
 
@@ -115,7 +115,7 @@ Adobe Campaign提供了一个&#x200B;**分布式营销**&#x200B;附加功能，�
 
 >[!NOTE]
 >
->从Campaign v8.3开始提供此功能。 要检查您的版本，请参阅[此部分](compatibility-matrix.md)
+>从Campaign v8.3开始提供此功能。 要检查您的版本，请参阅[Campaign v8兼容性矩阵](compatibility-matrix.md)
 
 了解如何在[此页面](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=zh-Hans){target="_blank"}中配置和使用Campaign分布式营销功能。
 
@@ -125,6 +125,6 @@ Adobe Campaign 提供&#x200B;**响应管理**&#x200B;附加功能，可让您衡
 
 >[!NOTE]
 >
->从Campaign v8.3开始提供此功能。 要检查您的版本，请参阅[此部分](compatibility-matrix.md)
+>从Campaign v8.3开始提供此功能。 要检查您的版本，请参阅[Campaign v8兼容性矩阵](compatibility-matrix.md)
 
 [&#128279;](../assets/do-not-localize/book.png)请参阅[Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/response-manager/about-response-manager.html?lang=zh-Hans){target="_blank"}以了解如何配置并使用Campaign响应管理器。

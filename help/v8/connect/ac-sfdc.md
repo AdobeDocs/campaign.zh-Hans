@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 211c0ee8403987c0f93ca7e0e0a62c51e11d9664
+source-git-commit: df8d8e17c486122e23a6db0e44263f9f9632a204
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 3%
+source-wordcount: '403'
+ht-degree: 2%
 ---
 # 使用 Campaign 和 SFDC{#crm-sfdc}
 
@@ -59,7 +59,7 @@ ht-degree: 3%
 1. 在&#x200B;**类型**&#x200B;部分中选择&#x200B;**[!UICONTROL Salesforce.com]**&#x200B;外部帐户。
 1. 输入设置以启用连接。
 
-   ![](assets/sfdc-external-account.png)
+   ![包含帐户、密码、安全令牌和API版本字段的Salesforce CRM外部帐户](assets/sfdc-external-account.png)
 
    要将Salesforce CRM外部帐户配置为与Adobe Campaign配合使用，您需要提供以下详细信息：
 
@@ -85,7 +85,7 @@ ht-degree: 3%
 
    在Campaign中导入的&#x200B;**Salesforce**&#x200B;架构示例：
 
-   ![](assets/sfdc-schemas.png)
+   ![在salesforce上过滤的数据架构列表显示导入的Salesforce CRM源架构](assets/sfdc-schemas.png)
 
 ## 同步枚举{#sfdc-enum-sync}
 
@@ -95,11 +95,11 @@ ht-degree: 3%
 1. 选择与Adobe Campaign枚举匹配的Salesforce枚举。
 您可以将Adobe Campaign枚举的所有值替换为CRM的值：要实现此目的，请在&#x200B;**[!UICONTROL Replace]**&#x200B;列中选择&#x200B;**[!UICONTROL Yes]**。
 
-   ![](assets/sfdc-enum.png)
+   ![同步枚举对话框使用“替换”列将CRM枚举映射到Campaign枚举](assets/sfdc-enum.png)
 
 1. 单击&#x200B;**[!UICONTROL Next]**，然后单击&#x200B;**[!UICONTROL Start]**&#x200B;以开始导入枚举。
 
-1. 浏览&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;节点以检查导入的值。 在[此页面](../config/ui-settings.md)中了解有关枚举的更多信息。
+1. 浏览&#x200B;**[!UICONTROL Administration > Platform > Enumerations]**&#x200B;节点以检查导入的值。 在[Campaign界面设置](../config/ui-settings.md)中了解有关枚举的更多信息。
 
 Adobe Campaign和Salesforce.com现已连接。 您可以设置两个系统之间的数据同步。
 

@@ -32,10 +32,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: d3b34546c1b08190772154efe6f818b98cc1094c
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 4%
+source-wordcount: '511'
+ht-degree: 3%
 ---
 # 跟踪 Web 应用程序访问{#tracking-a-web-application}
 
@@ -50,11 +50,11 @@ Adobe Campaign允许您通过插入跟踪标记来跟踪和测量Web应用程序
 * 可以在同一页面上插入多个跟踪标记，以便简化导航路径定义（例如购买、订阅、返回等）。
 * 在Web应用程序仪表板中查看不同页面的导航路径和跟踪标记。
 
-  ![](assets/trackers_1.png)
+  ![Web应用程序仪表板，带有跟踪标记部分，列出了转化路径和每个页面上的跟踪标记阶段](assets/trackers_1.png)
 
 * 生成完整的跟踪报表。
 
-  ![](assets/trackers_5.png)
+  ![跟踪标记分析报表包含总访问次数、独特访客数、转化率、跳出率和访问图表](assets/trackers_5.png)
 
   主要指标如下：
 
@@ -71,7 +71,7 @@ Adobe Campaign允许您通过插入跟踪标记来跟踪和测量Web应用程序
 1. 发送特定投放以授予对Web应用程序页面的访问权限：在这种情况下，流量源为此投放，
 1. 将Web应用程序关联到专用流量源：在这种情况下，它必须是外部“流量源”类型的投放。 可以从Web应用程序属性或目标映射中选择它。
 
-   ![](assets/trackers_6.png)
+   ![Web应用程序属性的高级参数对话框，流量源字段设置为Web投放](assets/trackers_6.png)
 
 为了识别Web应用程序中的流量源，Adobe Campaign会依次查找以下信息：
 
@@ -85,14 +85,14 @@ Adobe Campaign允许您通过插入跟踪标记来跟踪和测量Web应用程序
 
 ## 使用数字内容编辑器(DCE)设计的Web应用程序 {#web-applications-designed-with-digital-content-editor--dce-}
 
-使用HTML内容编辑器 — **数字内容编辑器(DCE)**&#x200B;创建Web应用程序时 — 将从编辑器的&#x200B;**[!UICONTROL Properties]**&#x200B;选项卡插入跟踪标记。 有关数字内容编辑器(DCE)的详细信息，请参阅[此部分](about-campaign-html-editor.md)。
+使用HTML内容编辑器 — **数字内容编辑器(DCE)**&#x200B;创建Web应用程序时 — 将从编辑器的&#x200B;**[!UICONTROL Properties]**&#x200B;选项卡插入跟踪标记。 有关数字内容编辑器(DCE)的更多信息，请参阅[Campaign HTML编辑器入门](about-campaign-html-editor.md)。
 
-![](assets/trackers_2.png)
+![DCE页面属性选项卡，其中为跟踪标记分配了目标，例如订阅、转化或更新](assets/trackers_2.png)
 
 使用Web界面时，必须从页面属性插入跟踪标记。
 
-![](assets/trackers_3.png)
+![页面对话框的属性，跟踪标记选项卡，列出每个标记及其暂存和目标操作](assets/trackers_3.png)
 
 通过&#x200B;**[!UICONTROL Display blocks]**&#x200B;图标，可查看为页面定义的跟踪标记数量。
 
-![](assets/trackers_4.png)
+![在Web编辑器中显示块图标，工具提示指示页面中的2个跟踪标记](assets/trackers_4.png)

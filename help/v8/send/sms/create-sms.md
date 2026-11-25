@@ -26,10 +26,10 @@ level_v2:
     internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: c4f3ffbf421621fa15b1b4d56480bd0ff9304254
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 8%
+source-wordcount: '208'
+ht-degree: 7%
 ---
 # 创建您的第一个短信投放 {#sms-delivery}
 
@@ -37,9 +37,9 @@ ht-degree: 8%
 
 1. 创建新投放并选择您为短信发送创建的[短信投放模板](sms-mid-sourcing.md#sms-delivery-template)。
 
-   ![](assets/sms_create.png){zoomable="yes"}
+   ![新投放的投放模板列表，短信模板“发送到手机(SMPP)”突出显示](assets/sms_create.png){zoomable="yes"}
 
-   [此页面](../../start/create-message.md)中详细介绍了投放创建步骤。
+   [创建您的第一个投放](../../start/create-message.md)中详细介绍了投放创建步骤。
 
 <!--
  * For standalone instance,  [learn more here](sms-standalone-instance.md#sms-delivery-template).
@@ -52,13 +52,13 @@ ht-degree: 8%
 
 1. 您可以签入&#x200B;**[!UICONTROL Properties]**&#x200B;按钮，确认所有设置都已根据需要完成。 [了解有关短信选项卡的更多信息](sms-delivery-settings.md#sms-tab)
 
-   ![](assets/sms_settings.png){zoomable="yes"}
+   ![短信投放的投放属性，其中的“常规”选项卡、“路由”字段和“短信”选项卡突出显示](assets/sms_settings.png){zoomable="yes"}
 
 1. [定义投放的内容](sms-content.md)。
 
 1. [选择受众](sms-audience.md)。
 
-定义受众的步骤详见[此页面](../../audiences/create-audiences.md)。
+有关定义受众的步骤详情，请参阅[在Campaign](../../audiences/create-audiences.md)中创建配置文件受众。
 
 ## 验证并发送短信 {#sms-validate}
 

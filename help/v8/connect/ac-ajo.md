@@ -43,7 +43,7 @@ Adobe Campaign与Adobe Journey Optimizer之间的集成允许您在Adobe Journey
 使用ActionCampaign_v8操作及其电子邮件、名字和订单参数的![Journey Optimizer历程画布](assets/ajo-integration.png)
 
 
-[在此端到端示例中发现此集成](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/connect-systems/adobe-solutions/acc-action){target="_blank"}。
+[在此端到端示例中发现此集成](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/connect-systems/adobe-solutions/acc-action){target="_blank"}。
 
 
-[请参阅Journey Optimizer文档以了解详情](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-v7-v8){target="_blank"}。
+[请参阅Journey Optimizer文档以了解详情](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-adobe-campaign-v7-v8){target="_blank"}。

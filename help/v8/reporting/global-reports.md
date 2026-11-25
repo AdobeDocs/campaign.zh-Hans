@@ -31,20 +31,20 @@ topic_v2:
     internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: 63e73a31c5c46cb7544917557c3a0670d7ac91c9
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 8%
+source-wordcount: '1984'
+ht-degree: 7%
 ---
 # 全局报告 {#global-reports}
 
 这些报告涉及整个数据库中的数据活动。 要查看报告仪表板，请转到&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡。
 
-![](assets/reports-tab.png)
+Adobe Campaign主页的![报告选项卡，显示带有报告图块的全局报告仪表板](assets/reports-tab.png)
 
 要显示报表，请单击其名称。 默认情况下，可以使用以下报表：
 
-![](assets/report-global-list.png)
+![显示默认报告的全局报告列表，例如用户活动、投放吞吐量和浏览器](assets/report-global-list.png)
 
 >[!NOTE]
 >
@@ -68,13 +68,13 @@ ht-degree: 8%
 
 此报表包含有关给定时段内整个平台的投放吞吐量的信息。 用于衡量邮件传送速度的标准是每小时发送的邮件数和邮件大小（以位/秒为单位）。 在下面的示例中，第一个图表用蓝色显示成功投放，用橙色显示错误投放的数量。
 
-![](assets/report-toolbar.png)
+![传递吞吐量报告，带有参数时间范围、刷新链接和每小时成功和错误图表](assets/report-toolbar.png)
 
 您可以通过更改时间刻度来配置显示的值： 1小时视图、3小时视图、24小时视图等。单击&#x200B;**[!UICONTROL Refresh]**&#x200B;确认您的选择。
 
 >[!NOTE]
 >
->您还可以使用[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=zh-Hans){target="_blank"}监控每小时发送的投放数量。
+>您还可以使用[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}监控每小时发送的投放数量。
 >
 >所有管理员用户都可访问控制面板。 [此页面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel){target="_blank"}详细介绍了授予用户管理员访问权限的步骤。
 >
@@ -139,11 +139,11 @@ ht-degree: 8%
 
 您可以通过单击[+]符号打开值表的每一行。 对于每个域类型，您可以按错误类型显示错误消息的细目。
 
-![](assets/errors-report-details.png)
+![每个域表的错误划分，可展开的域行显示按错误类型划分的错误计数](assets/errors-report-details.png)
 
 >[!NOTE]
 >
->此报告中显示的域名在多维数据集级别定义。 要更改这些值，请编辑&#x200B;**[!UICONTROL Delivery logs (broadlogrcp)]**&#x200B;多维数据集。 如需详细信息，请参阅[此小节](gs-cubes.md)。 **[!UICONTROL Others]**&#x200B;类别包括不属于特定类的域名。
+>此报告中显示的域名在多维数据集级别定义。 要更改这些值，请编辑&#x200B;**[!UICONTROL Delivery logs (broadlogrcp)]**&#x200B;多维数据集。 有关详细信息，请参阅[Adobe Campaign Analytics报告入门](gs-cubes.md)。 **[!UICONTROL Others]**&#x200B;类别包括不属于特定类的域名。
 
 ## 浏览器 {#browsers}
 
@@ -157,7 +157,7 @@ ht-degree: 8%
 
 有关浏览器使用的全局统计信息以值表和图表的形式显示。
 
-![](assets/browser-report.png)
+![Internet浏览器报告包含访客表、每个浏览器的查看页面和使用率以及圆环图](assets/browser-report.png)
 
 使用以下指示器：
 
@@ -169,7 +169,7 @@ ht-degree: 8%
 
 在全局统计值表中，可以单击每个浏览器名称查看它们的使用情况统计信息。
 
-![](assets/browser-report-info.png)
+![一个浏览器的统计信息，带有历史记录曲线、按版本划分图表以及全局速率和相对速率](assets/browser-report-info.png)
 
 统计以曲线、图表和值表的形式呈现。
 
@@ -247,7 +247,7 @@ The following indicators are used:
 
 操作系统的全局使用情况统计信息以值表和图表的形式呈现。
 
-![](assets/os-report.png)
+![操作系统报表包含访客表、每个系统的查看页面和使用率表以及圆环图](assets/os-report.png)
 
 使用以下指示器：
 
@@ -259,7 +259,7 @@ The following indicators are used:
 
 在全局统计信息值表中，单击每个操作系统的名称可查看每个操作系统的统计信息。
 
-![](assets/os-report-details.png)
+![Windows统计信息页，其中包含“历史记录”曲线、“按版本细分”图表以及“全局比率”和“每个版本的相对比率”](assets/os-report-details.png)
 
 统计以曲线、图表和值表的形式呈现。
 
@@ -276,11 +276,11 @@ The following indicators are used:
 
 通过此报告，您可以监视信息服务的订阅。 它显示订阅和退订。
 
-![](assets/service-report.png)
+![包含订阅表整体演变和订阅演变曲线的订阅跟踪报告](assets/service-report.png)
 
-可以通过单击主页或资源管理器的&#x200B;**[!UICONTROL Profiles and targets > Services and subscriptions]**&#x200B;节点来显示订阅的日志。 选择所需的订阅，然后单击&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡。 **[!UICONTROL Subscriptions tracking]**&#x200B;报告默认可用。 通过它，可查看一段时间内的订阅和退订趋势以及忠诚度比率。 您可以通过下拉列表配置此数据的表示形式。 单击&#x200B;**[!UICONTROL Refresh]**&#x200B;以验证所选配置。
+可以通过单击主页或资源管理器的&#x200B;**[!UICONTROL Profiles and targets > Services and subscriptions]**&#x200B;节点来显示订阅的日志。 Select所需的订阅，然后单击&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡。 **[!UICONTROL Subscriptions tracking]**&#x200B;报告默认可用。 通过它，可查看一段时间内的订阅和退订趋势以及忠诚度比率。 您可以通过下拉列表配置此数据的表示形式。 单击&#x200B;**[!UICONTROL Refresh]**&#x200B;以验证所选配置。
 
-如需详细信息，请参阅[此页面](../start/subscriptions.md)。
+有关详细信息，请参阅[在Campaign中管理订阅和退订](../start/subscriptions.md)。
 
 **[!UICONTROL Number subscribed to date]**&#x200B;表示当前订阅的总人数。
 
@@ -302,7 +302,7 @@ The following indicators are used:
 
 此报表可按Internet域、已处理和发送的所有消息、硬退信和软退信、打开次数、点击次数和退订次数显示细分。
 
-![](assets/broadcast-report.png)
+![显示每个电子邮件域已处理电子邮件、已投放、退回、打开、点击和取消订阅的投放统计报告](assets/broadcast-report.png)
 
 使用以下指示器：
 
@@ -313,7 +313,7 @@ The following indicators are used:
 
   >[!NOTE]
   >
-  >有关硬退回和软退回的详细信息，请参阅[此页面](../send/quarantines.md)。
+  >有关硬退回和软退回的详细信息，请参阅Campaign](../send/quarantines.md)中的[隔离管理。
 
 * **[!UICONTROL Opens]**：与成功处理的邮件数相比，至少打开过一次邮件的目标收件人数的百分比。
 * **[!UICONTROL Clicks]**：与成功处理的邮件数相比，至少点击过一次投放的用户数的百分比。
@@ -323,9 +323,9 @@ The following indicators are used:
 
 此报表显示相关期间按操作系统、设备和浏览器划分的打开次数。 为每个类别使用了两个图表。 第一个图表显示有关计算机和移动设备上的打开的统计数据。 第二个图表显示仅与移动设备上的打开有关的统计数据。
 
-打开数对应于打开的邮件总数。 文本格式的电子邮件不计算在内。 有关跟踪打开的详细信息，请参阅[此部分](metrics-calculation.md#tracking-opens-)。
+打开数对应于打开的邮件总数。 文本格式的电子邮件不计算在内。 有关跟踪打开的详细信息，请参阅[跟踪打开](metrics-calculation.md#tracking-opens-)。
 
-![](assets/user-agent-report.png)
+![打开报告的划分，其中显示所有打开和移动设备打开的操作系统、设备和浏览器的饼图](assets/user-agent-report.png)
 
 >[!NOTE]
 >

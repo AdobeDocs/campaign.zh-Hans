@@ -27,10 +27,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: 63e73a31c5c46cb7544917557c3a0670d7ac91c9
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 2%
+source-wordcount: '1786'
+ht-degree: 1%
 ---
 # 自定义多维数据集{#cube-custom}
 
@@ -46,7 +46,7 @@ ht-degree: 2%
 
 要启用量化，请在创建尺寸时选中相应的复选框。
 
-![](assets/cube-class.png)
+![Dimension创建对话框，其中在“配置量化”下选择了“启用量化”选项。](assets/cube-class.png)
 
 您可以手动创建二进制文件或者将其链接到现有的[枚举](../config/enumerations.md)。
 
@@ -56,15 +56,15 @@ Adobe Campaign还提供了自动绑定的助手：可以将值划分为N组，�
 
 要单独创建每个bin，请选择&#x200B;**[!UICONTROL Define each bin]**&#x200B;选项，然后使用该表创建各个bin。
 
-![](assets/cube-binning.png)
+![已选择“定义每个量化”选项的Dimension量化设置和一个空的量化表。](assets/cube-binning.png)
 
 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以创建新量化，并列出将分组到量化量化指标中的值。
 
-![](assets/cube-add-new-bin.png)
+![包含值列表（法语和意大利语）的新框对话框，以及用于列出更多值的“添加”按钮。](assets/cube-add-new-bin.png)
 
 在下列例子中，语文分为三类：英语/德语/荷兰语、法语/意大利语/西班牙语和其他语。
 
-![](assets/cube-add-new-bin-2.png)
+![语言维度，具有两个二进制文件：法语、意大利语、西班牙语和英语、德语、荷兰语；其他值标记为“其他”。](assets/cube-add-new-bin-2.png)
 
 可以使用SQL掩码将多个值组合到一个过滤器中。 为此，请检查&#x200B;**[!UICONTROL Use an SQL mask]**&#x200B;列中的&#x200B;**[!UICONTROL Yes]**&#x200B;并输入要应用于&#x200B;**[!UICONTROL Value or expression]**&#x200B;列的SQL筛选器。
 
@@ -79,11 +79,11 @@ Adobe Campaign还提供了自动绑定的助手：可以将值划分为N组，�
 1. 创建新维度并启用量化。
 1. 选择&#x200B;**[!UICONTROL Dynamically link the values to an enumeration]**&#x200B;选项并选择匹配的枚举。
 
-   ![](assets/cube-link-to-enum.png)
+   ![将值动态链接到选定的枚举选项，并打开可用枚举列表。](assets/cube-link-to-enum.png)
 
    每当更新枚举值时，将自动调整匹配的量化。
 
-   在[此页面](../config/enumerations.md)中了解有关枚举的更多信息。
+   在[管理枚举](../config/enumerations.md)中了解有关枚举的更多信息。
 
 ### 创建值范围 {#create-value-ranges}
 
@@ -115,11 +115,11 @@ Adobe Campaign还提供了自动绑定的助手：可以将值划分为N组，�
 
 Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所有联系人的电子邮件域列表，如以下示例所示：
 
-![](assets/nmx_report_sample.png)
+![具有按ISP分组的电子邮件域(AOL、Free、Gmail、Microsoft、Yahoo、Others)的“客户来源”和“电子邮件域”报告。](assets/nmx_report_sample.png)
 
 它是使用以下模板构建的：
 
-![](assets/nmx_enum_domain.png)
+![域枚举设置为Reserved at binning，其值为(AOL、Free、Gmail、Microsoft、Yahoo)和域别名。](assets/nmx_enum_domain.png)
 
 若要使用此枚举创建报告，请使用&#x200B;**[!UICONTROL Email domain]**&#x200B;维度创建多维数据集。 选择&#x200B;**[!UICONTROL Enable binning]**&#x200B;选项，然后选择&#x200B;**[!UICONTROL Dynamically link the values to an enumeration]**。 然后选择如上所示的&#x200B;**域**&#x200B;枚举。 所有没有指定别名的值都将重新分组到&#x200B;**其他**&#x200B;标签下。
 
@@ -127,13 +127,13 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
 您只需修改枚举即可更新相关报告。 例如，创建&#x200B;**Adobe**&#x200B;值并添加&#x200B;**adobe.com**&#x200B;别名，报表将自动更新为枚举级别的Adobe值。
 
-![](assets/nmx_add_alias.png)
+![将neolane.com别名添加到域枚举，这会在报表中添加一行Neolane。](assets/nmx_add_alias.png)
 
 **[!UICONTROL Domains]**&#x200B;枚举用于生成显示域列表的内置报告。 要调整这些报表的内容，可以编辑此列表。
 
 您可以创建为量化保留的其他枚举，并在其他多维数据集中使用它们：所有别名值将在第一个枚举选项卡中指定的二进制文件中重新分组。
 
-在[此页面](../../v8/config/ui-settings.md)中了解有关枚举的更多信息。
+在[Campaign界面设置](../../v8/config/ui-settings.md)中了解有关枚举的更多信息。
 
 ## 多维数据集中的聚合 {#calculate-and-use-aggregates}
 
@@ -143,7 +143,7 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
 聚合在每个多维数据集的相关选项卡中定义。
 
-![](assets/cube-agregate.png)
+![Explorer中多维数据集的“聚合”选项卡，使用“添加”按钮列出多维数据集聚合。](assets/cube-agregate.png)
 
 >[!NOTE]
 >
@@ -156,7 +156,7 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 1. Select一个维度和一个级别。 对每个维度和每个级别重复此过程。
 1. 单击&#x200B;**[!UICONTROL Workflow]**&#x200B;选项卡以创建聚合工作流。
 
-   * **[!UICONTROL Scheduler]**&#x200B;活动允许您定义计算更新的频率。 计划程序在[此部分](../../automation/workflow/scheduler.md)中有详细说明。
+   * **[!UICONTROL Scheduler]**&#x200B;活动允许您定义计算更新的频率。 [配置调度程序活动](../../automation/workflow/scheduler.md#configuring-scheduler-activity)中详细介绍了调度程序。
    * **[!UICONTROL Aggregate update]**&#x200B;活动允许您选择要应用的更新模式：全部或部分。
 
      默认情况下，在每次计算期间都会执行完全更新。 要启用部分更新，请选择相关选项并定义更新条件。
@@ -171,15 +171,15 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
 1. 单击度量列表上方的&#x200B;**[!UICONTROL Add]**&#x200B;按钮，然后选择要计算的度量类型和公式。
 
-   ![](assets/cube-create-a-measure.png)
+   ![运算符列表打开的“度量值创建”对话框： Count、Sum、Minimum、Maximum、Average等。](assets/cube-create-a-measure.png)
 
 1. 如有必要，根据运算符选择操作涉及的表达式。
 
-   **[!UICONTROL Advanced selection]**&#x200B;按钮允许您创建复杂的计算公式。 如需详细信息，请参阅[此小节](../../automation/workflow/query.md)。
+   **[!UICONTROL Advanced selection]**&#x200B;按钮允许您创建复杂的计算公式。 有关详情，请参阅[查询](../../automation/workflow/query.md)。
 
 1. **[!UICONTROL Filter the measure data...]**&#x200B;链接允许您限制计算字段，并仅将其应用于数据库中的特定数据。
 
-   ![](assets/cube-create-measure-2.png)
+   ![在BasketMusic表达式上打开运算符列表的情况下筛选度量的条件。](assets/cube-create-measure-2.png)
 
 1. 输入度量的标签并添加说明，然后单击&#x200B;**[!UICONTROL Finish]**&#x200B;以创建该标签。
 
@@ -197,7 +197,7 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
 移动线条以更改显示顺序。 在以下示例中，将法语数据移动到列表底部：这意味着它将显示在最后一列。
 
-![](assets/cube-in-report-settings.png)
+![配置度量窗口，其中将法语度量拖动到结尾会将它的列移动到报告中的最后一个。](assets/cube-in-report-settings.png)
 
 ### 配置显示 {#configuring-the-display}
 
@@ -207,17 +207,17 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
   您可以选择是否显示度量的标签以及配置其布局（行或列）。
 
-![](assets/cube-pivot-table-config-details.png)
+![包含方向列表（行中、列中）、标签、对齐和标题选项的数据透视表配置对话框。](assets/cube-pivot-table-config-details.png)
 
 利用颜色选项，可突出显示重要值以方便阅读。
 
-![](assets/cube-pivot-table-color.png)
+具有着色节的![透视表配置：激活、使用的度量值、下限、上限和色阶。](assets/cube-pivot-table-color.png)
 
 ### 更改显示的度量类型 {#changing-the-type-of-measure-displayed}
 
 在每个度量中，您可以定义要应用的单位和格式。
 
-![](assets/cube-pivot-table-config-units.png)
+![为度量配置带有标签、格式、小数位数、单位和单位位置的度量窗口。](assets/cube-pivot-table-config-units.png)
 
 ## 共享报告 {#share-a-report}
 
@@ -225,7 +225,7 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
 为此，请单击&#x200B;**[!UICONTROL Show the report properties]**&#x200B;图标并启用&#x200B;**[!UICONTROL Share this report]**&#x200B;选项。
 
-![](assets/cube_share_option.png)
+![报告属性对话框，其中“共享报告”选项设置为“是”，以及“类别”和“相关性”字段。](assets/cube_share_option.png)
 
 指定报告所属的类别及其相关性。<!--For more on this, refer in [this page](../../reporting/using/configuring-access-to-the-report.md#report-display-context) to the **Display sequence** and **Defining the filtering options** sections.-->
 
@@ -239,13 +239,13 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
 1. 单击&#x200B;**[!UICONTROL Add a filter]**&#x200B;图标。
 
-   ![](assets/cube_add_filter.png)
+   ![报表工具栏，在“每个公司的客户端”数据透视表上方突出显示了“添加筛选器”图标。](assets/cube_add_filter.png)
 
 1. Select过滤器涉及的维度
 
-1. Select过滤器的类型及其精度级别。
+1. 选择过滤器的类型及其精度级别。
 
-   ![](assets/cube_ceate_filter.png)
+   ![添加带有复选框的筛选器对话框以选择要保留的值范围，如年龄范围。](assets/cube_ceate_filter.png)
 
 1. 创建过滤器后，该过滤器将显示在报表上方。
 
@@ -253,7 +253,7 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
    您可以合并所需数量的过滤器：它们全部将显示在此区域中。
 
-   ![](assets/cube_multiple_filters.png)
+   ![报告上方显示三个组合筛选器的筛选器区域：“城市”、“公司”和“年龄”。](assets/cube_multiple_filters.png)
 
 每次修改（添加、删除、更改）过滤器时，都必须重新计算报表。
 
@@ -261,8 +261,8 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
 要选择行、列或单元格，请左键单击它。 要取消选择，请再次单击。
 
-![](assets/cube_create_filter_from_selection.png)
+![我的客户报表，其中选定了LONDON行，并突出显示了“选择上的筛选器”图标。](assets/cube_create_filter_from_selection.png)
 
 过滤器将自动应用并添加到报表上方的过滤器区域。
 
-![](assets/cube_create_filter_display.png)
+![报告已在伦敦过滤，在报告上方的过滤区域中显示“城市=伦敦”过滤器。](assets/cube_create_filter_display.png)

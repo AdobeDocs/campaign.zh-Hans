@@ -113,7 +113,7 @@ ht-degree: 0%
 
    ![已填写标签、电子邮件和外部标识符字段的种子地址对话框](assets/messagecenter_create_seed_2.png)
 
-1. 插入测试数据。 [请参阅Campaign Classic v7文档以了解有关个性化数据的更多信息](https://experienceleague.adobe.com/en/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
+1. 插入测试数据。 [请参阅Campaign Classic v7文档以了解有关个性化数据的更多信息](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/transactional-messaging/message-templates/testing-message-templates#personalization-datal){target="_blank"}
 
    ![种子地址对话框，内容部分中的测试数据以XML形式写入事件上下文](assets/messagecenter_create_custo_3.png)
 

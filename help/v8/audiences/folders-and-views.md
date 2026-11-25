@@ -39,9 +39,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '793'
 ht-degree: 1%
 ---
 # 管理文件夹和视图 {#folders-and-views}
@@ -74,13 +74,13 @@ Campaign文件夹是资源管理器树中的节点。 它们根据其类型，�
 
 要创建与所选文件夹相同的文件夹类型，请选择上下文菜单中的第一个选项。 例如，从“收件人”文件夹中，选择&#x200B;**[!UICONTROL Create a new 'Recipients' folder]**。
 
-![](assets/create-recipient-folder.png)
+![突出显示了“收件人”文件夹新建选项的收件人文件夹上下文菜单](assets/create-recipient-folder.png)
 
 您可以根据需要拖放新文件夹以整理Campaign资源管理器树。
 
 要创建其他类型的文件夹，请右键单击现有文件夹并选择&#x200B;**[!UICONTROL Add new folder]**。 您可以根据要存储的数据创建所有类型的文件夹。
 
-![](assets/add-new-folder.png)
+![添加新的文件夹菜单，显示选定了“列表”文件夹类型的“数据库”子菜单](assets/add-new-folder.png)
 
 >[!CAUTION]
 >
@@ -109,15 +109,15 @@ Campaign文件夹是资源管理器树中的节点。 它们根据其类型，�
 1. 右键单击此文件夹并选择&#x200B;**[!UICONTROL Properties...]**。
 1. 在&#x200B;**[!UICONTROL Restriction]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL This folder is a view]**。 随后将显示数据库中的所有投放。
 
-   ![](assets/this-folder-is-a-view.png)
+   ![在“限制”选项卡中选择了此文件夹的美国传递的文件夹属性](assets/this-folder-is-a-view.png)
 
 1. 从窗口中央部分的查询编辑器定义筛选条件：文件夹中仅显示与筛选条件对应的投放。
 
-   ![](assets/filter-view.png)
+   ![将视图定义为内部名称的限制选项卡筛选条件以US开头](assets/filter-view.png)
 
    >[!NOTE]
    >
-   >在[此页面](create-filters.md#advanced-filters)中了解如何设计查询
+   >了解如何在[高级筛选器](create-filters.md#advanced-filters)中设计查询
 
 
 >[!CAUTION]
@@ -132,7 +132,7 @@ Campaign文件夹是资源管理器树中的节点。 它们根据其类型，�
 
 您可以使用右侧的箭头移动文件夹，或选择&#x200B;**[!UICONTROL Sort the sub-folders in alphabetical order]**&#x200B;选项以自动对它们进行排序。
 
-![](assets/sort-folders.png)
+![文件夹属性的“子文件夹”选项卡，使用“下移”箭头和按字母顺序排序选项](assets/sort-folders.png)
 
 
 ## 过滤文件夹中的数据{#filter-data-in-a-folder}
@@ -141,9 +141,9 @@ Campaign文件夹是资源管理器树中的节点。 它们根据其类型，�
 
 例如，下面的文件夹将仅包含具有电子邮件地址且其来源未标记为“外部”的联系人 — 或为空。
 
-![](assets/add-a-filter-to-a-folder.png)
+按内部名称筛选的“美国投放”文件夹属性的![限制选项卡以“美国”开头](assets/add-a-filter-to-a-folder.png)
 
 
 ## 限制对文件夹的访问{#restrict-access-to-a-folder}
 
-使用文件夹的权限可组织和控制对Campaign数据的访问。 在[本节](../start/folder-permissions.md)中了解有关文件夹权限的详细信息。
+使用文件夹的权限可组织和控制对Campaign数据的访问。 了解有关[授予和限制Campaign文件夹](../start/folder-permissions.md)中文件夹权限的详细信息。

@@ -25,10 +25,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 3%
+source-wordcount: '134'
+ht-degree: 2%
 ---
 # 手动创建轮廓{#create-profiles-manual}
 
@@ -38,15 +38,15 @@ ht-degree: 3%
 
 1. 浏览到&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;选项卡并选择&#x200B;**[!UICONTROL Recipients]**&#x200B;类别。
 
-   ![](assets/profiles-and-targets.png)
+   ![在主页中选择了“配置文件和目标”选项卡，其中包含“收件人”列表和“创建”按钮。](assets/profiles-and-targets.png)
 
    默认情况下，收件人存储在树的&#x200B;**[!UICONTROL Profiles and Targets > Recipients]**&#x200B;节点中。 您还可以从此视图创建收件人。
 
 1. 单击&#x200B;**[!UICONTROL Create button]**。
 1. 输入用户档案的数据。
 
-   ![](assets/new-recipient.png)
+   ![填写了“常规”选项卡的收件人表单：名字、姓氏、电子邮件、状态和来源，以及保存并取消。](assets/new-recipient.png)
 
-   在[此页面](view-profiles.md#edit-a-profiles)中了解有关收件人内置表单的更多信息。
+   在[编辑个人资料](view-profiles.md#edit-a-profiles)中了解有关收件人内置表单的更多信息。
 
 1. 单击&#x200B;**[!UICONTROL Save]**：配置文件已添加到Campaign的默认收件人文件夹中。

@@ -32,10 +32,10 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ba520da057d2568b2ef65042342301f5ad5eacd8
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 14%
+source-wordcount: '304'
+ht-degree: 13%
 ---
 # 从文件导入轮廓{#create-profiles}
 
@@ -47,13 +47,13 @@ ht-degree: 14%
 
 ### 使用列表中的数据：读取列表 {#data-from-read-list}
 
-在文件中准备和构建数据，以使用工作流导入数据。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=zh-Hans){target="_blank"}。
+在文件中准备和构建数据，以使用工作流导入数据。 [了解详情](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"}。
 
 ### 从文件加载数据 {#data-from-a-file}
 
-可在工作流中处理的数据可从结构化文件中提取，以便将其导入Adobe Campaign。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file){target="_blank"}。
+可在工作流中处理的数据可从结构化文件中提取，以便将其导入Adobe Campaign。 [了解详情](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file){target="_blank"}。
 
-收集数据后，您可以在工作流中使用该数据，例如，扩充投放或更新数据库。 如需详细信息，请参阅[此小节](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=zh-Hans){target="_blank"}。
+收集数据后，您可以在工作流中使用该数据，例如，扩充投放或更新数据库。 如需详细信息，请参阅[此小节](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html){target="_blank"}。
 
 ## 一次性导入{#import-jobs}
 
@@ -61,6 +61,6 @@ Adobe Campaign提供了一般导入功能，例如，可让您提取随后将成
 
 通用导入通过Adobe Campaign主页的&#x200B;**[!UICONTROL Profiles and Targets > Jobs]**&#x200B;菜单进行管理。
 
-![](assets/new-import-job.png)
+![在“配置文件和目标”下，打开“创建”菜单以进行“新建导入”和“新建导出”的“作业”列表。](assets/new-import-job.png)
 
 [Campaign Classic v7文档](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/importing-and-exporting-data/generic-imports-exports/about-generic-imports-exports.html?lang=zh-Hans){target="_blank"}中详细介绍了执行通用导入的步骤。

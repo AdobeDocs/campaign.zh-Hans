@@ -29,15 +29,15 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 2ac66c0844ec361de9a1658f666c190fcfac8ffa
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 24%
+source-wordcount: '100'
+ht-degree: 19%
 ---
 # 使用Web窗体收集和更新用户档案
 
 使用Campaign创建Web窗体，轻松高效地收集和管理用户档案数据。 您可以将这些表单共享到您的网站中，这样您的联系人就可以轻松地提供其信息。 数据会发送到Campaign以创建或更新其用户档案。
 
-![](assets/web-form-page.png)
+![Web应用程序工作流的页面活动，显示带有电子邮件字段和“发送”按钮的Luma新闻稿表单。](assets/web-form-page.png)
 
-在[本节](../dev/web/about-web-forms.md)中了解如何创建Web窗体。
+了解如何在[中创建Web窗体](../dev/web/about-web-forms.md)入门。

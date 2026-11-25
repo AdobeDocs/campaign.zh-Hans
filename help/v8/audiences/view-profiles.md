@@ -31,10 +31,10 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d7b0f2882114b0d5c88e438af5018a962deeb141
+source-git-commit: bf608c313c238d3ba16f9fe6902bb66bb2b90d98
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 6%
+source-wordcount: '582'
+ht-degree: 3%
 ---
 # 查看现有配置文件 {#view-profiles}
 
@@ -42,11 +42,11 @@ ht-degree: 6%
 
 在此页面中，您可以[创建新收件人](create-profiles.md)，编辑现有收件人并访问其个人资料详细信息。
 
-![](assets/profiles-and-targets.png)
+Campaign主页的![用户档案和目标选项卡，显示带有“创建”按钮的收件人列表](assets/profiles-and-targets.png)
 
 有关更高级的配置文件操作，请从Adobe Campaign主页上的&#x200B;**[!UICONTROL Explorer]**&#x200B;链接访问Campaign树。
 
-![](assets/recipients-in-explorer.png)
+![资源管理器树，其中选定了“收件人”文件夹、收件人列表和选定收件人的详细信息](assets/recipients-in-explorer.png)
 
 
 >[!CAUTION]
@@ -56,9 +56,9 @@ ht-degree: 6%
 
 ## 编辑轮廓 {#edit-a-profiles}
 
-Select配置文件，以在新选项卡中显示详细信息。
+选择配置文件以在新选项卡中显示详细信息。
 
-![](assets/edit-a-profile.png)
+![包含“常规”、“联系信息”、“其他”、“订阅”、“投放”和“跟踪”部分的“收件人配置文件”选项卡](assets/edit-a-profile.png)
 
 用户档案相关数据被分组放在多个选项卡中。 这些选项卡及其内容取决于您的特定设置和已安装的包。
 
@@ -66,7 +66,7 @@ Select配置文件，以在新选项卡中显示详细信息。
 
 * **[!UICONTROL General]**，适用于所有常规配置文件数据。 特别是，它包含姓氏、名字、电子邮件地址、电子邮件格式等。
 
-  此选项卡还存储配置文件的&#x200B;**选择退出**&#x200B;标记：选择&#x200B;**[!UICONTROL No longer contact (by any channel)]**&#x200B;选项后，配置文件将处于状态。 例如，如果收件人点击了新闻稿中的退订链接，则此信息会添加到联系人数据中。 任何渠道（电子邮件、直邮等）不再定向此类收件人。 有关详细信息，请参见[此页面](../send/quarantines.md)。
+  此选项卡还存储配置文件的&#x200B;**选择退出**&#x200B;标记：选择&#x200B;**[!UICONTROL No longer contact (by any channel)]**&#x200B;选项后，配置文件将处于状态。 例如，如果收件人点击了新闻稿中的退订链接，则此信息会添加到联系人数据中。 任何渠道（电子邮件、直邮等）不再定向此类收件人。 有关详细信息，请参阅Campaign](../send/quarantines.md)中的[隔离管理。
 
 * **联系信息**，其中包含所选配置文件的直邮地址。
 
@@ -76,15 +76,15 @@ Select配置文件，以在新选项卡中显示详细信息。
 
   使用&#x200B;**[!UICONTROL Field properties…]**&#x200B;上下文菜单更改字段名称并定义其格式。
 
-  ![](assets/other-tab-field-properties.png)
+  ![在Boolean 1字段的上下文菜单中选择了Field properties选项的收件人的Other选项卡](assets/other-tab-field-properties.png)
 
   输入新设置，如下所示：
 
-  ![](assets/change-field-properties.png)
+  ![字段属性对话框，其中标签字段设置为Luma Gold Program并且描述字段已填写](assets/change-field-properties.png)
 
   在UI中检查更新：
 
-  ![](assets/other-tab-updated.png)
+  ![收件人的其他选项卡，其中Boolean 1字段现在显示为Luma Gold Program，值为“是”或“否”](assets/other-tab-updated.png)
 
 
   >[!CAUTION]
@@ -94,13 +94,13 @@ Select配置文件，以在新选项卡中显示详细信息。
 
 * **订阅**，适用于所有活动的服务订阅。 使用&#x200B;**历史记录**&#x200B;选项卡访问此联系人的订阅和退订的详细信息。
 
-  ![](assets/subscription-tab.png)
+  ![收件人的“订阅”选项卡，该选项卡列出了活动的订阅，带有“活动订阅”和“历史记录”选项卡](assets/subscription-tab.png)
 
-  在本节[&#128279;](../start/subscriptions.md)中了解有关订阅的更多信息。
+  在本节](../start/subscriptions.md)中了解有关订阅[的更多信息。
 
 * 针对所选用户档案的所有投放日志，**投放**。 使用此选项卡可访问联系人的营销历史记录：通过所有渠道针对用户档案的所有投放操作的标签、日期和状态。
 
 
 * **跟踪**，针对选定配置文件的所有跟踪日志。 此信息用于跟踪投放后的用户档案行为。 此选项卡显示投放中跟踪的所有URL的累积总数。 该列表是可配置的，通常包含：点击的URL、点击的日期和时间，以及包含该URL的文档
 
-  在本节[&#128279;](../send/tracking.md)中了解有关跟踪的更多信息。
+  在本节](../send/tracking.md)中了解有关跟踪[的更多信息。

@@ -332,7 +332,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[此页面](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions){target="_blank"}中详细介绍了信息服务。
+>[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/managing-subscriptions){target="_blank"}中详细介绍了信息服务。
 
 用户通过选中相关选项来订阅服务。
 

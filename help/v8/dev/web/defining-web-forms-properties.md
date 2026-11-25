@@ -159,7 +159,7 @@ ht-degree: 0%
 
 ![具有“登录”和“密码”字段以及“登录”按钮的身份验证表单，在启用访问控制时显示](assets/s_ncs_admin_survey_access_login.png)
 
-登录名和密码由Adobe Campaign操作员使用。 如需详细信息，请参阅[此小节](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}。
+登录名和密码由Adobe Campaign操作员使用。 如需详细信息，请参阅[此小节](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}。
 
 **[!UICONTROL Use a specific account]**&#x200B;选项允许您限制访问表单的操作员的读取或写入权限。 使用下拉框选择将负责授予这些权限的操作员或操作员组。
 

@@ -153,4 +153,4 @@ ht-degree: 0%
 >
 >可能的操作包括： **[!UICONTROL Simple reconciliation]**、**[!UICONTROL Update or insertion]**、**[!UICONTROL Insertion]**、**[!UICONTROL Update]**、**[!UICONTROL Deletion]**。\
 >运算符的默认文件夹是运算符具有写入权限的第一个文件夹。\
->请参阅[此小节](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}。
+>请参阅[此小节](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/getting-started/permissions/access-management){target="_blank"}。

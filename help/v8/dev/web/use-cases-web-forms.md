@@ -45,7 +45,7 @@ ht-degree: 1%
 
 ### 第1步 — 创建信息服务 {#step-1---creating-information-services}
 
-1. 创建要提供给收件人的新闻稿订阅服务。 有关如何创建新闻稿的更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}。
+1. 创建要提供给收件人的新闻稿订阅服务。 有关如何创建新闻稿的更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/sending-messages/subscriptions-and-referrals/about-services-and-subscriptions){target="_blank"}。
 
    带有标签、内部名称、类型电子邮件和模式新闻稿字段的每周新闻稿服务的![服务对话框。](assets/s_ncs_admin_survey_double-opt-in_sample_1.png)
 

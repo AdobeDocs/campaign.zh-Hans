@@ -263,7 +263,7 @@ Select用于显示其定义的过滤器。
 
 1. 为当前默认预定义过滤器取消选中相同选项。
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以应用筛选器。
-1. 浏览到“收件人”文件夹，然后单击当前筛选器右侧的&#x200B;**[!UICONTROL Remove this filter]**图标：新的默认筛选器可用。
+1. 浏览到“收件人”文件夹，然后单击当前筛选器右侧的&#x200B;**[!UICONTROL Remove this filter]**&#x200B;图标：新的默认筛选器可用。
    ![收件人列表，带有订阅默认筛选器及其服务字段下拉列表](assets/updated-default-filter.png)
 
 

@@ -45,7 +45,7 @@ ht-degree: 12%
 
 >[!CAUTION]
 >
->仅支持“平面”结构文件（例如CSV、TXT等）。 不建议使用XML格式。 使用客户端控制台，您可以加载最大大小为150 MB的文件。 在Web用户界面中，加载文件活动的限制为50MB。 [了解详情](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html){target="_blank"}
+>仅支持“平面”结构文件（例如CSV、TXT等）。 不建议使用XML格式。 使用客户端控制台，您可以加载最大大小为150 MB的文件。 在Web用户界面中，加载文件活动的限制为50MB。 [了解详情](https://experienceleague.adobe.com/docs/campaign-web/v8/wf/design-workflows/load-file.html?lang=zh-Hans){target="_blank"}
 
 ![使用示例文件加载（文件）数据活动、列预览、文件名选项和拒绝管理。](assets/s_advuser_wf_etl_file.png)
 

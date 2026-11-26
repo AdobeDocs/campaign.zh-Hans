@@ -43,14 +43,14 @@ topic_v2:
     internal-label: Customer journeys
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
+source-git-commit: 7d3481d1a8453d0663d67765c664c60ed988aee6
 workflow-type: tm+mt
-source-wordcount: '1057'
-ht-degree: 66%
+source-wordcount: '1059'
+ht-degree: 63%
 ---
 # 消息入门 {#gs-ac-msg}
 
-借助 Adobe Campaign，您可以发送跨渠道活动内容，包括电子邮件、短信、推送通知和直邮，并使用各种专门的报告衡量其有效性。 这些消息通过投放进行设计和发送，并且可以为每位收件人进行个性化定制。
+借助Adobe Campaign，您可以发送跨渠道活动内容，包括电子邮件、短信、LINE消息、推送通知和直邮，并使用各种专门的报告衡量其有效性。 这些消息通过投放进行设计和发送，并且可以为每位收件人进行个性化定制。
 
 核心功能包括定位、消息定义和个性化、通信执行和相关的运营报告。
 

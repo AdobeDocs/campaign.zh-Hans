@@ -27,10 +27,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
+source-git-commit: 7d3481d1a8453d0663d67765c664c60ed988aee6
 workflow-type: tm+mt
-source-wordcount: '929'
-ht-degree: 70%
+source-wordcount: '933'
+ht-degree: 67%
 ---
 # 开始使用营销活动 {#gs-ac-campaigns}
 
@@ -40,7 +40,7 @@ Adobe Campaign 提供了一套解决方案，可帮助您在所有线上和线�
 
 ## 跨渠道营销活动编排{#cross-channel-orchestration}
 
-您可以利用 Adobe Campaign 在多个渠道上设计和编排有针对性的个性化活动：电子邮件、直邮、SMS、推送通知等。 通过单个界面为您提供计划、编排、配置、个性化、自动化、执行和衡量所有活动和通信所需的全部功能。
+Adobe Campaign允许您在多个渠道上设计和编排有针对性的个性化活动：电子邮件、直邮、短信、推送通知、LINE和自定义渠道。 通过单个界面为您提供计划、编排、配置、个性化、自动化、执行和衡量所有活动和通信所需的全部功能。
 
 主页的![营销活动选项卡，其中列出了营销活动，以及状态、日期和创建按钮](assets/campaign-tab.png)
 

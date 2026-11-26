@@ -51,10 +51,10 @@ topic_v2:
     internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 8ab3ced33b95f977032d9f0ffccd1dc50c7a59e8
+source-git-commit: 7d3481d1a8453d0663d67765c664c60ed988aee6
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 71%
+source-wordcount: '1103'
+ht-degree: 68%
 ---
 # Adobe Campaign 入门{#gs-ac-v8}
 
@@ -99,7 +99,7 @@ Adobe Campaign 具有功能强大且易于使用的市场细分和定位功能�
 
 ## 跨渠道营销活动编排 {#cross-channel-campaign-orchestration}
 
-您可以利用 Adobe Campaign 在多个渠道上设计和编排有针对性的个性化活动：电子邮件、直邮、SMS、推送通知等。 通过单个界面为您提供计划、编排、配置、个性化、自动化、执行和衡量所有活动和通信所需的全部功能。
+Adobe Campaign允许您在多个渠道上设计和编排有针对性的个性化活动：电子邮件、直邮、短信、推送通知、LINE和自定义渠道。 通过单个界面为您提供计划、编排、配置、个性化、自动化、执行和衡量所有活动和通信所需的全部功能。
 
 在[营销活动入门](campaigns.md)中了解如何设计、计划和执行营销活动。
 

@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: 6a24d7e3aeb7dad381478821a50835b985e34b62
+source-git-commit: 765af3342eb29f27dafa12f72634f5d91361bed5
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 12%
+source-wordcount: '489'
+ht-degree: 11%
 ---
 # 将Campaign与您的解决方案配合使用{#gs-ac-connectors}
 
@@ -49,7 +49,7 @@ Campaign v8可与以下Adobe解决方案配合使用。 浏览链接以了解有
 
 * Adobe Analytics。 [了解详情](../connect/ac-aa.md)
 * Adobe Experience Cloud触发器。 [了解详情](../connect/ac-triggers.md)
-* Adobe Experience Manager。 [了解详情](../connect/ac-aem.md)
+* Adobe Experience Manager，包括Campaign Web用户界面中的Adobe Experience Manager as a Cloud Service资源和模板。 [了解详情](../connect/ac-aem.md)
 * Adobe Experience Platform。 [了解详情](../connect/ac-aep.md)
 * Adobe Journey Optimizer。 [了解详情](../connect/ac-ajo.md)
 * Adobe Target。 [了解详情](../connect/ac-at.md)
